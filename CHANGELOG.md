@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Zygor Guides Viewer
 
 ### Changed
-- Zygor Guides   
+- Zygor Guides :  
 -"Order Hall Quests - Fix for error that would occur when loading the guide on Death Knights (and possibly other classes)."
 
 - Dugi Guides :   
