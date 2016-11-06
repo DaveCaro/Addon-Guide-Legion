@@ -1,0 +1,12 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+	<Script file="Followers.lua"/>
+	<Script file="Pets.lua"/>
+	<Script file="Mounts.lua"/>
+	<Script file="Bosses.lua"/>
+	<Script file="NPC.lua"/>
+	<Script file="Custom1.lua"/>
+	<Script file="Custom2.lua"/>
+	<Script file="Custom3.lua"/>
+	<Script file="Custom4.lua"/>
+	<Script file="Custom5.lua"/>
+</Ui>
