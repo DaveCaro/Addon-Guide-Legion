@@ -4,17 +4,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
-- Dynasty Suite (Tycoon, Impulse, Booster, Edge)
-- WowPro
-
-### Added
-- Dugi Guides
-- Zygor Guides Viewer
-
 ### Changed
-- Zygor Guides :  
--"Order Hall Quests - Fix for error that would occur when loading the guide on Death Knights (and possibly other classes)."
+- Zygor Guides : 
 
-- Dugi Guides :   
--"Not Available"
+- "WORLD QUESTS :
+
+Added "Safe Keeping" world quest."
+
+- "PROFESSIONS : 
+
+Added "Archaeology Quest Line" guide.
+
+Added "Archaeology 700-800" guide.
+
+Added "First Aid Quest Line" guide.
+
+Added "First Aid 700-800" guide.
+
+Added "Shal'dorei Silk" farming guide.
+
+Added "Silver Mackerel" farming guide."
+
+- "TRAVEL SYSTEM :
+
+Fix for instance start point errors."
