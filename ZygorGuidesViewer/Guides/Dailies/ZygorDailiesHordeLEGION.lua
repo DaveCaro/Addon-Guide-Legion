@@ -3675,6 +3675,20 @@ click Fjarnskaggl Cluster
 Gather the Fjarnskaggl Cluster |q 41296/1 |goto Stormheim/0 55.29,31.08
 |next "Court_Of_Farondis_WQ"
 step
+label quest-44799
+Run down the stairs |goto Suramar/0 46.00,66.43 < 20 |only if walking
+accept Safe Keeping##44799 |goto Suramar/0 46.81,69.83
+|tip You will accept this quest automatically.
+step
+Cross the bridge |goto 47.03,75.61 < 20 |only if walking
+Follow the path up |goto 45.56,76.98 < 20 |only if walking
+talk Desperate Refugee##115705+
+|tip They look like scared or kneeling npc's all around this area.
+|tip Any nearby enemies will attack you after talking to Desperate Refugees.
+|tip They will follow you. Bring them to this building to rescue them.
+Rescue #5# Desperate Refugees |q 44799/1 |goto 45.96,79.77
+|next "Court_Of_Farondis_WQ"
+step
 label quest-44815
 accept Sick of the Sycophants##44815 |goto Suramar/0 54.27,59.86
 |tip You will accept this quest automatically.

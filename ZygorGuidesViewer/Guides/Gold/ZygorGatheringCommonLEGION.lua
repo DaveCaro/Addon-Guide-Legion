@@ -327,7 +327,6 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Leystone Ore & Felslate (Mining 
 ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Felslate (Killing & Mining Enemies)",{
 	meta={goldtype="route",skillreq={mining=1},levelreq=100},
 	items={{123919,50}},
-	maps={"Val'sharah"},
 	},[[
 	step
 	label "Start_Farming_Felslate"
@@ -376,20 +375,18 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Felslate (Killing & Mining Enemi
 -----------------------
 ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Shal'dorei Silk",{
 	meta={goldtype="route",levelreq=100},
-	items={{124437,400}},
-	maps={"Highmountain"},
+	items={{124437,300}},
+	maps={"Val'sharah"},
 	},[[
 	step
 	label "Start_Farming_Shaldorei_Silk"
-		Follow the path down |goto Highmountain/0 39.83,37.65 < 30 |only if walking
-		Follow the path |goto Highmountain/0 42.02,35.37 < 30 |only if walking
-		Continue following the path |goto Highmountain/0 42.50,32.05 < 30 |only if walking
-		Follow the path |goto Highmountain/0 45.08,29.32 < 30 |only if walking
-		Follow the path |goto Highmountain/0 43.92,26.95 < 30 |only if walking
-		Follow the path down |goto Highmountain/31 37.41,46.67 < 20 |walk
-		Follow the path down |goto Highmountain/31 58.46,41.58 < 30 |walk
-		kill Deepcavern Murloc##95753+
-		goldcollect 400 Shal'dorei Silk##124437 |n |goto Highmountain/31 68.83,47.36
+		Follow the path down |goto Val'sharah/0 68.40,50.58 < 20 |only if walking
+		Kill Wormtalon enemies around this area
+		|tip Enchant your shoulders with the "Enchant Shoulder - Boon of the Scavenger" enchant.
+		|tip This will allow Scavenged Cloth packs to drop for you, which contain a good amount of Shal'dorei Silk.
+		|tip You can create the enchant, if you have Enchanting.
+		|tip You can also purchase it from the Auction House.
+		goldcollect 300 Shal'dorei Silk##124437 |n |goto Val'sharah/0 67.13,51.97
 		goldtracker
 		|tip
 		_Ready to Sell?_
@@ -410,8 +407,9 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Shal'dorei Silk",{
 -----    FOOD    -----
 ----------------------
 ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Wildfowl Egg",{
-	author="support@zygorguides.com",
-	startlevel=100.0,
+	meta={goldtype="route",levelreq=100},
+	items={{124121,400}},
+	maps={"Stormheim"},
 	},[[
 	step
 	label "Start_Farming_Wildfowl_Egg"
@@ -442,8 +440,9 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Wildfowl Egg",{
 ]])
 
 ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Big Gamy Ribs",{
-	author="support@zygorguides.com",
-	startlevel=100.0,
+	meta={goldtype="route",levelreq=100},
+	items={{124119,400}},
+	maps={"Highmountain"},
 	},[[
 	step
 	label "Start_Farming_Big_Gamy_Ribs"
@@ -465,8 +464,9 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Big Gamy Ribs",{
 ]])
 
 ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Lean Shank",{
-	author="support@zygorguides.com",
-	startlevel=100.0,
+	meta={goldtype="route",levelreq=100},
+	items={{124117,200}},
+	maps={"Highmountain"},
 	},[[
 	step
 	label "Start_Farming_Lean_Shank"
@@ -488,8 +488,9 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Lean Shank",{
 ]])
 
 ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Fatty Bearsteak",{
-	author="support@zygorguides.com",
-	startlevel=100.0,
+	meta={goldtype="route",levelreq=100},
+	items={{124118,400}},
+	maps={"Stormheim"},
 	},[[
 	step
 	label "Start_Farming_Fatty_Bearsteak"
@@ -514,8 +515,9 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Fatty Bearsteak",{
 ]])
 
 ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Leyblood",{
-	author="support@zygorguides.com",
-	startlevel=100.0,
+	meta={goldtype="route",levelreq=100},
+	items={{124120,300}},
+	maps={"Azsuna"},
 	},[[
 	step
 	label "Start_Farming_Leyblood"
@@ -542,8 +544,9 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Leyblood",{
 -----    FISH    -----
 ----------------------
 ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Highmountain Salmon",{
-	author="support@zygorguides.com",
-	startlevel=100.0,
+	meta={goldtype="route",levelreq=100},
+	items={{124109,60}},
+	maps={"Highmountain"},
 	},[[
 	step
 	label "Start_Farming_Highmountain_Salmon"
@@ -565,8 +568,9 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Highmountain Salmon",{
 ]])
 
 ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Black Barracuda",{
-	author="support@zygorguides.com",
-	startlevel=100.0,
+	meta={goldtype="route",levelreq=100},
+	items={{124112,200}},
+	maps={"Suramar"},
 	},[[
 	step
 	label "Start_Farming_Black_Barracuda"
@@ -592,4 +596,27 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Black Barracuda",{
 		|tip
 		_Want to Farm More?_
 		Click Here to Farm Black Barracuda |confirm |next "Start_Farming_Black_Barracuda"
+]])
+
+ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Silver Mackerel",{
+	meta={goldtype="route",levelreq=100},
+	items={{133607,200}},
+	maps={"Azsuna"},
+	},[[
+	step
+	label "Start_Farming_Silver_Mackerel"
+		Fish in the water
+		goldcollect 200 Silver Mackerel##133607 |n |goto Azsuna/0 52.47,31.86
+		goldtracker
+		|tip
+		_Ready to Sell?_
+		Click Here to Sell Your Items on the Auction House |confirm |next "Silver_Mackerel_Sell"
+	step
+	label "Silver_Mackerel_Sell"
+		talk Auctioneer Fitch##8719 |goto Stormwind City/0 61.1,70.6 |n |only Alliance
+		talk Auctioneer Drezmit##44866 |goto Orgrimmar/1 54.08,73.36 |n |only Horde
+		|tip List the items you want to sell on the Auction House.
+		|tip
+		_Want to Farm More?_
+		Click Here to Farm Highmountain Salmon |confirm |next "Start_Farming_Silver_Mackerel"
 ]])

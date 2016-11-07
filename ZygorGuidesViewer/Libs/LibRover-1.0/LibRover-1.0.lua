@@ -256,6 +256,9 @@ do
 
 		local function AddNode(node,dontlink)
 			--if not self.nodes[node.l[1]] then self.nodes[node.l[1]]={} end
+
+			if node.m and not node.x then return nil end
+
 			table.insert(allnodes,node)
 			if (node.type) then
 				if not Lib.nodes[node.type] then Lib.nodes[node.type]={} --[[setmetatable(Lib.nodes[node.type],{__mode="v"}) --]] end
