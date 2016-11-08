@@ -1,0 +1,34 @@
+## Interface: 70000
+## Title: |cFF07AACBDy|cFFFFFFFFnasty|r - Tycoon
+## Version: 6
+## SavedVariables: DynastyTycoon_GSaved
+## SavedVariablesPerCharacter: DynastyTycoon_Saved
+## Author: Dynasty Addons
+## DefaultState: Enabled
+## LoadOnDemand: 1
+## Dependencies: DynastyCore
+
+Common.lua
+
+AucDB.lua
+Recorder.lua
+Scanner.lua
+Appraiser.lua
+Shopper.lua
+GUI.lua
+ValueSources.lua
+LootDB.lua
+
+Main.lua
+
+Modules\Auctions.lua
+Modules\Farming.lua
+Modules\Crafting.lua
+Modules\Professions.lua
+Modules\Dungeons.lua
+
+Data\CreatureLoot.lua
+Data\FarmingRoutes.lua
+Data\DungeonRoutes.lua
+Data\CraftingInfo.lua
+Data\VendorItems.lua
