@@ -131,6 +131,11 @@ function GearFinder:IsValidDungeonItem(itemlink)
 			return false, ItemScore.SC_NOTFORU,"|cffff88ff holiday dungeons not supported"
 		elseif dungeondata.expansionLevel>GetExpansionLevel() then
 			return false, ItemScore.SC_NOTFORU, "don't have expansion"
+		elseif dungeondata.attunement_achieve then
+			local _,_,_,complete = GetAchievementInfo(dungeondata.attunement_achieve)
+			if not complete then return false, ItemScore.SC_NOTFORU, "attunement needed" end
+		elseif dungeondata.attunement_quest and not IsQuestFlaggedCompleted(dungeondata.attunement_quest) then
+			return false, ItemScore.SC_NOTFORU, "attunement needed"
 		else
 			return true
 		end
@@ -571,7 +576,7 @@ local function getItemButton(name,parent)
 				local dmap = p.dungeonData and p.dungeonData.map
 				local dlfg = p.dungeonData and p.dungeonData.id
 				if dmap or dlfg then
-					if dmap then
+					if dmap and not type(lfgid)=="string" then
 						for g,guide in ipairs(ZGV.registeredguides) do -- check by lfg codes first, for winded instances
 							if tonumber(guide.lfgid)==tonumber(dlfg) then ZGV:SetGuide(guide) return end
 						end
@@ -976,8 +981,11 @@ function GearFinder:ParseItemDatabase()
 						special = itemset.special,
 						diff = data.diff,
 						encounterId = itemset.encounterId,
-						instanceId = data.instanceId
+						instanceId = data.instanceId,
+						attunemode = data.attunemode,
+						attuneid = data.attuneid
 					}
+
 
 					-- hack to update dungeons
 					if lfgid and data.dungeonmap then

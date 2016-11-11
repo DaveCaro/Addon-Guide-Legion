@@ -64,6 +64,7 @@ local hardcoded_dungeons = {
 	["e_767"]  = {expansionLevel=6, minLevel=110, min_ilevel=795, difficulty=23, name="Neltharion's Lair"},
 	["e_726"]  = {expansionLevel=6, minLevel=110, min_ilevel=795, difficulty=23, name="The Arcway"},
 	["e_707"]  = {expansionLevel=6, minLevel=110, min_ilevel=795, difficulty=23, name="Vault of the Wardens"},
+	["e_860"]  = {expansionLevel=6, minLevel=110, min_ilevel=795, difficulty=23, name="Return to Karazhan", attunement_achieve=11547},
 }
 
 setmetatable(Dungeons,{
@@ -73,10 +74,10 @@ setmetatable(Dungeons,{
 
 		if type(id)=="string" and not hardcoded_dungeons[id] then return end   -- error("No function Dungeons."..id)   -- don't error, this breaks Spoo.
 
-		local name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday, min_ilevel
+		local name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday, min_ilevel, attunement_achieve, attunement_quest
 		if hardcoded_dungeons[id] then
 			local d=hardcoded_dungeons[id]
-			name,expansionLevel,minLevel,min_ilevel,difficulty = d.name,d.expansionLevel,d.minLevel,d.min_ilevel,d.difficulty
+			name,expansionLevel,minLevel,min_ilevel,difficulty,attunement_achieve,attunement_quest = d.name,d.expansionLevel,d.minLevel,d.min_ilevel,d.difficulty,d.attunement_achieve,d.attunement_quest
 		else
 			name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday = GetLFGDungeonInfo(id)
 		end
@@ -90,6 +91,8 @@ setmetatable(Dungeons,{
 			dungeon.isHoliday = isHoliday
 			dungeon.minLevel = minLevel
 			dungeon.expansionLevel = expansionLevel
+			dungeon.attunement_achieve=attunement_achieve
+			dungeon.attunement_quest=attunement_quest
 
 			local map = ZGV.LibRover.data.MapIDsByName[DungeonNamesToMapNames[name]]
 			dungeon.map=map

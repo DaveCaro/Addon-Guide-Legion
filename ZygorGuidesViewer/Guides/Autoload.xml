@@ -129,6 +129,10 @@
 		<Script file="Dailies\ZygorDailiesHordeLEGION.lua"/>
 		<Script file="Dailies\ZygorDailiesHordeLEGIONTrial.lua"/>
 
+		<Script file="Dailies\ZygorDailiesBothLEGION_MASTER.lua"/>
+		<Script file="Dailies\ZygorDailiesBothLEGION.lua"/>
+		<Script file="Dailies\ZygorDailiesBothLEGIONTrial.lua"/>
+
 	<!-- DUNGEONS -->
 		<!-- MOP -->
 		<Script file="Dungeons\ZygorDungeonAllianceMOP_MASTER.lua"/>

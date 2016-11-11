@@ -1904,11 +1904,13 @@ GOALTYPES['killboss'] = {
 	parse = function(self,params,step)
 		self.dungeon,self.bossbit = strsplit("/",params)
 		if not tonumber(self.dungeon) then self.dungeon=dungeons[(self.dungeon or ""):lower()] end
-		if not tonumber(self.bossbit) then self.bossbit=bosses[(self.bossbit or ""):lower()] or 0 end
+		if not tonumber(self.bossbit) then self.bossbit=bosses[(self.bossbit or ""):lower()] end
+		self.dungeon=tonumber(self.dungeon)
+		self.bossbit=tonumber(self.bossbit)
 		if not self.dungeon or not self.bossbit then return false,"killboss needs a dungeon and bossbit." end
 	end,
 	iscomplete = function(self)
-		return ZGV.IsSavedBossDead(self.dungeon,self.boss), true
+		return ZGV.IsSavedBossDead(self.dungeon,self.bossbit), true
 	end,
 	gettext = function(self)
 		return "** kill boss bit "..self.bossbit.." in instance "..self.dungeon

@@ -1498,7 +1498,9 @@ function ZGV.softassert(cond,msg)
 	return cond
 end
 
+-- /run for i=0,12 do  local link="\124Hinstancelock:"..UnitGUID("player")..":1651:0:"..(2^i).."\124h[Karazhan boss "..(2^i).."]\124h"  print(link) end
 function ZGV.IsSavedBossDead(instanceid,bossbit)
+	RequestRaidInfo()
 	for i=1,GetNumSavedInstances() do
 		local link = GetSavedInstanceChatLink(i)
 		local instance,bits = link:match(":(%d+):%d+:(%d+)\124h")

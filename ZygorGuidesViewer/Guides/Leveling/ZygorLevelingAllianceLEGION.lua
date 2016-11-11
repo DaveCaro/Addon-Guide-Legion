@@ -10394,14 +10394,17 @@ Slay #25# Legion |q 39983/2 |goto Azshara L/0 30.00,41.83
 step
 Follow the path |goto 29.94,40.50 < 20 |walk
 talk Unng Ak##97891
+|tip Do not click the arrow to leave the vehicle before turning in the quests.
 turnin Huln's War - The Arrival##39983 |goto 29.45,39.32
 accept Huln's War - Malorne's Favored##40112 |goto 29.45,39.32
 step
 talk Eche'ro##98794
+|tip Do not click the arrow to leave the vehicle before turning in the quests.
 turnin Huln's War - Malorne's Favored##40112 |goto 27.95,47.35
 accept Huln's War - Stormrage##39988 |goto 27.95,47.35
 step
 talk Malfurion Stormrage##97892
+|tip Do not click the arrow to leave the vehicle before turning in the quests.
 turnin Huln's War - Stormrage##39988 |goto 27.89,51.77
 accept Huln's War - Reinforcements##39990 |goto 27.89,51.77
 step
@@ -10409,10 +10412,12 @@ Kill the enemies coming through the portal
 Defend Malfurion |q 39990/1 |goto 25.02,51.37
 step
 talk Malfurion Stormrage##97892
+|tip Do not click the arrow to leave the vehicle before turning in the quests.
 turnin Huln's War - Reinforcements##39990 |goto 27.89,51.77
 accept Huln's War - Shadowsong##40388 |goto 27.89,51.77
 step
 talk Jarod Shadowsong##97903
+|tip Do not click the arrow to leave the vehicle before turning in the quests.
 turnin Huln's War - Shadowsong##40388 |goto 31.35,52.47
 accept Huln's War - The Nathrezim##39992 |goto 31.35,52.47
 step
@@ -15707,6 +15712,107 @@ Ride Deline's Gondola |q 44814/1 |goto 24.56,88.98
 step
 talk Silgryn##114948
 turnin Waning Refuge##44814 |goto 52.38,80.18
+step
+talk First Arcanist Thalyssra##115736
+accept A Message From Ly'leth##45262 |goto 36.50,46.73 |region suramar_shalaran
+step
+Use the Fruit of the Arcan'dor on a Suramar Refugee |use Fruit of the Arcan'dor##143597
+|tip There are Suramar Refugees all around inside the cave.
+Cure a Suramar Refugee |q 45262/1 |goto 37.49,47.44 |region suramar_shalaran
+step
+talk First Arcanist Thalyssra##115736
+turnin A Message From Ly'leth##45262 |goto 36.50,46.73 |region suramar_shalaran
+accept Tavernkeeper's Fate##44742 |goto 36.50,46.73 |region suramar_shalaran
+step
+click Portal to Lunastre Estate
+Take the Portal to Lunastre Estate |q 44742/1 |goto 36.15,45.05 |region suramar_shalaran
+step
+Watch the dialogue
+Learn of Vanthir's Fate |q 44742/2 |goto 43.29,78.76
+step
+talk Ly'leth Lunastre##115247
+turnin Tavernkeeper's Fate##44742 |goto 43.29,78.76
+step
+talk First Arcanist Thalyssra##115248
+accept Essence Triangulation##44752 |goto 43.32,78.79
+step
+Follow the path |goto 42.74,78.51 < 20 |only if walking
+Follow the path |goto 42.91,76.82 < 20 |only if walking
+Jump down here |goto 41.99,71.58 < 30 |only if walking
+Follow the path |goto 41.41,69.97 < 20 |only if walking
+click Echo of Vanthir##115258
+|tip Inside the building.
+Watch the dialogue
+Collect the Promenade Essence |q 44752/1 |goto 41.75,69.77
+step
+click Portal to Sanctum of Order |goto 36.69,44.66 |n |region suramar_shalaran
+Teleport to the Sanctum of Order |goto 43.40,60.72 < 20 |noway |c |q 44752
+step
+Run down the stairs |goto 46.01,66.45 < 20 |only if walking
+Cross the bridge |goto 45.35,67.88 < 20 |only if walking
+click Echo of Vanthir##115259
+Watch the dialogue
+Collect the Shimmershade Garden Essence |q 44752/2 |goto 45.56,72.23
+step
+Cross the bridge |goto 44.88,73.17 < 20 |only if walking
+Follow the path up |goto 45.55,77.04 < 20 |only if walking
+Cross the bridge |goto 46.46,79.69 < 20 |only if walking
+Follow the path |goto 48.07,80.89 < 20 |only if walking
+Follow the path |goto 49.68,80.51 < 20 |only if walking
+Run up the stairs |goto 50.55,79.76 < 20 |only if walking
+click Echo of Vanthir##115260
+|tip Inside the building.
+Watch the dialogue
+Collect the Evermoon Bazaar Essence |q 44752/3 |goto 50.86,79.20
+step
+Run down the stairs |goto 51.02,78.58 < 20 |only if walking
+Walk onto the teleport pad |goto 51.55,78.96 < 7 |only if walking
+talk First Arcanist Thalyssra##115248
+|tip At the top of the tower.
+turnin Essence Triangulation##44752 |goto 52.09,79.18
+accept On Public Display##44753 |goto 52.09,79.18
+step
+talk First Arcanist Thalyssra##115557
+Talk to Thalyssra |q 44753/1 |goto 52.23,79.04
+step
+Watch the dialogue
+click Echo of Vanthir##115584
+|tip Click all of them that appear nearby as First Arcanist Thalyssra talks.
+Track Vanthir's Location |q 44753/2 |goto 52.29,79.01
+step
+talk First Arcanist Thalyssra##115557
+turnin On Public Display##44753 |goto 52.23,79.04
+accept Waxing Crescent##44754 |goto 52.23,79.04
+step
+click Portal to Sanctum of Order |goto 36.69,44.66 |n |region suramar_shalaran
+Teleport to the Sanctum of Order |goto 43.40,60.72 < 20 |noway |c |q 44754
+step
+kill Thoramir##115607
+|tip Allies will appear to help you fight him.
+collect Thoramir's Control Orb##142281 |q 44754/1 |goto 46.96,65.46
+step
+click Containment Field
+Free Vanthir |q 44754/2 |goto 48.89,67.10
+step
+talk Vanthir##115604
+turnin Waxing Crescent##44754 |goto 48.89,67.10
+step
+Watch the dialogue
+talk Vanthir##115604
+accept Sign of the Dusk Lily##44756 |goto 48.87,67.08
+step
+click Dusk Lily Sigil
+Place the Dusk Lily Sigil |q 44756/1 |goto 48.89,67.10
+step
+talk First Arcanist Thalyssra##115736
+turnin Sign of the Dusk Lily##44756 |goto 36.50,46.73 |region suramar_shalaran
+accept Stabilizing Suramar##45316 |goto 36.50,46.73 |region suramar_shalaran
+step
+Complete #10# World Quests in Suramar |q 45316/1
+|tip Use the "World Quests" guide to accomplish this.
+step
+talk First Arcanist Thalyssra##115736
+turnin Stabilizing Suramar##45316 |goto 36.50,46.73 |region suramar_shalaran
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Legion (100-110)\\Order Hall Quests",{
 author="support@zygorguides.com",
