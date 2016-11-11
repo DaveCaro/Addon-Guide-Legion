@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Zygor Guides : 
 
+- WORLD QUESTS
+
+Fix for an issue that was causing an issue detecting when a world quest was selected on the map.
+
 - LEVELING : 
 
 Added tips to stay in vehicle for steps during "Huln's War - The Arrival" quest in Highmountain leveling guide.
