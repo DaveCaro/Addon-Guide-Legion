@@ -11,24 +11,18 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Zygor Guides : 
 
-- "WORLD QUESTS :
+- LEVELING : 
 
-Added "Safe Keeping" world quest."
+Added tips to stay in vehicle for steps during "Huln's War - The Arrival" quest in Highmountain leveling guide.
 
-- "PROFESSIONS : 
+Extended Suramar guide with new quests.
 
-Added "Archaeology Quest Line" guide.
+ - DAILIES : 
+ 
+Added quest line to unlock Helarjar world quests (find this in the "World Quests Unlock Quest Line" guide).
 
-Added "Archaeology 700-800" guide.
+Added "DANGER: Achronos" world quest.
 
-Added "First Aid Quest Line" guide.
+Changed some travel lines for steps during "Claws for Alarm!" world quest, due to game changes.
 
-Added "First Aid 700-800" guide.
-
-Added "Shal'dorei Silk" farming guide.
-
-Added "Silver Mackerel" farming guide."
-
-- "TRAVEL SYSTEM :
-
-Fix for instance start point errors."
+Changed "Withered Wrangling: Ambervale" world quest location, due to game changes.
