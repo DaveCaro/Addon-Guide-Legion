@@ -5725,7 +5725,7 @@ end
 function ZGV:SuggestWorldQuestGuide(object)
 	if not object.worldQuest then return end
 
-	local guidetitle = "Dailies Guides\\Legion\\Legion World Quests"
+	local guidetitle = "Dailies Guides\\Legion\\World Quests"
 
 	if IsWorldQuestWatched(object.questID) then
 		local guide = self:GetGuideByTitle(guidetitle)

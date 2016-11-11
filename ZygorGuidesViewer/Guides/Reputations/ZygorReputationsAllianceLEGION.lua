@@ -67,5 +67,5 @@ endlevel=110.0,
 },[[
 step
 Reputation with The Wardens can be earned by completing The Wardens world and emissary quests.
-Click here to load the World Quests Guide |confirm always |next "Zygor's Alliance Dailies Guides\\Legion\\Legion World Quests"
+Click here to load the World Quests Guide |confirm always |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests"
 ]])

@@ -14,7 +14,7 @@ label "Choose_World_Quest"
 |tip You will only be able to accept quests in Aszuna for this trial.
 |tip
 Choose a World Quest to Complete |confirm
-|tip With the "Legion World Quests" guide loaded, open your world map.
+|tip With the "World Quests" guide loaded, open your world map.
 |tip Left-click on a world quest icon to select that world quest.
 |tip The guide will automatically load the steps for that world quest.
 step

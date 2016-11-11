@@ -14741,7 +14741,7 @@ turnin Mangelrath##41309 |goto 35.78,72.41
 step
 Reach Honored Reputation with the Nightfallen Faction |condition rep("The Nightfallen")>=Honored
 |tip Use "The Nightfallen Reputation" guide to accomplish this.
-|tip Use the "Legion World Quests" guide and complete Suramar world quests to accomplish this.
+|tip Use the "World Quests" guide and complete Suramar world quests to accomplish this.
 step
 talk Valewalker Farodin##107126
 turnin Seed of Hope##44561 |goto 36.85,46.55 |region suramar_shalaran
@@ -15039,7 +15039,7 @@ turnin And They Will Tremble##44052 |goto 36.89,46.61 |region suramar_shalaran
 step
 Reach 8000 Honored Reputation with the Nightfallen Faction |condition repval("The Nightfallen","Honored")>=8000
 |tip Use "The Nightfallen Reputation" guide to accomplish this.
-|tip Use the "Legion World Quests" guide and complete Suramar world quests to accomplish this.
+|tip Use the "World Quests" guide and complete Suramar world quests to accomplish this.
 step
 talk First Arcanist Thalyssra##97140
 accept The Perfect Opportunity##43309 |goto 36.88,46.61 |region suramar_shalaran
@@ -15213,7 +15213,7 @@ turnin Beware the Fury of a Patient Elf##43314 |goto Suramar/0 36.51,46.76 |regi
 step
 Reach Revered Reputation with the Nightfallen Faction |condition rep("The Nightfallen")>=Revered
 |tip Use "The Nightfallen Reputation" guide to accomplish this.
-|tip Use the "Legion World Quests" guide and complete Suramar world quests to accomplish this.
+|tip Use the "World Quests" guide and complete Suramar world quests to accomplish this.
 step
 talk Valewalker Farodin##107126
 turnin Growing Strong##44562 |goto 36.54,46.81 |region suramar_shalaran
@@ -15221,7 +15221,7 @@ accept Redemption for the Fallen##44563 |goto 36.54,46.81 |region suramar_shalar
 step
 Reach 7000 Revered Reputation with the Nightfallen Faction |condition repval("The Nightfallen","Revered")>=7000
 |tip Use "The Nightfallen Reputation" guide to accomplish this.
-|tip Use the "Legion World Quests" guide and complete Suramar world quests to accomplish this.
+|tip Use the "World Quests" guide and complete Suramar world quests to accomplish this.
 step
 talk Valewalker Farodin##107126
 accept A Growing Crisis##44152 |goto 36.53,46.81 |region suramar_shalaran
@@ -15282,7 +15282,7 @@ turnin The Stuff of Dreams##43362 |goto Suramar/0 36.53,46.81 |region suramar_sh
 step
 Reach 20000 Revered Reputation with the Nightfallen Faction |condition repval("The Nightfallen","Revered")>=20000
 |tip Use "The Nightfallen Reputation" guide to accomplish this.
-|tip Use the "Legion World Quests" guide and complete Suramar world quests to accomplish this.
+|tip Use the "World Quests" guide and complete Suramar world quests to accomplish this.
 step
 talk Valewalker Farodin##107126
 accept A Change of Seasons##43502 |goto 36.85,46.55 |region suramar_shalaran
@@ -15383,7 +15383,7 @@ turnin Bring Home the Beacon##43565 |goto 37.13,46.62 |region suramar_shalaran
 step
 Reach Exalted Reputation with the Nightfallen Faction |condition rep("The Nightfallen")>=Exalted
 |tip Use "The Nightfallen Reputation" guide to accomplish this.
-|tip Use the "Legion World Quests" guide and complete Suramar world quests to accomplish this.
+|tip Use the "World Quests" guide and complete Suramar world quests to accomplish this.
 step
 talk Valewalker Farodin##107126
 |tip Upstairs.

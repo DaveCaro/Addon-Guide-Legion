@@ -5638,7 +5638,7 @@ Click Here to Continue |confirm
 step
 Reach Honored Reputation with the Dreamweavers Faction |condition rep("Dreamweavers")>=Honored
 |tip Use the "Val'sharah" Leveling guide to accomplish this.
-|tip Use the "Legion World Quests" guide and complete Val'sharah world quests to accomplish this.
+|tip Use the "World Quests" guide and complete Val'sharah world quests to accomplish this.
 step
 talk Ildine Sorrowspear##93530
 |tip Inside the building.
@@ -5675,7 +5675,7 @@ Learn the Rank 2 Formula for Enchant Ring - Binding of Haste |learn Enchant Ring
 step
 Reach Exalted Reputation with the Dreamweavers Faction |condition rep("Dreamweavers")>=Exalted
 |tip Use the "Val'sharah" Leveling guide to accomplish this.
-|tip Use the "Legion World Quests" guide and complete Val'sharah world quests to accomplish this.
+|tip Use the "World Quests" guide and complete Val'sharah world quests to accomplish this.
 step
 talk Sylvia Hartshorn##106901
 buy Formula: Enchant Ring - Binding of Haste##128601 |n
@@ -7344,7 +7344,7 @@ Learn the Rank 2 Design for Skystone Loop |learn Skystone Loop##195903 |goto 40.
 step
 Reach Honored Reputation with the Highmountain Tribe Faction |condition rep("Highmountain Tribe")>=Honored
 |tip Use the "Highmountain" Leveling guide to accomplish this.
-|tip Use the "Legion World Quests" guide and complete Highmountain world quests to accomplish this.
+|tip Use the "World Quests" guide and complete Highmountain world quests to accomplish this.
 step
 talk Ransa Greyfeather##106902
 buy 1 Design: Skystone Loop##137839 |n
@@ -7382,7 +7382,7 @@ Learn the Rank 2 Design for Azsunite Pendant |learn Azsunite Pendant##195907 |go
 step
 Complete the _"Work Order: Azsunite Pendant"_ World Quest
 |tip This world quest appears in Azsuna when it is available.
-|tip Use the Legion World Quests guide to accomplish this.
+|tip Use the World Quests guide to accomplish this.
 collect Design: Azsunite Pendant##137843 |n
 |tip This design can only be obtained from this world quest.
 Use the Design: Azsunite Pendant |use Design: Azsunite Pendant##137843
