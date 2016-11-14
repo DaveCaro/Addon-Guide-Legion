@@ -170,6 +170,7 @@ do
 		local area_maps_table=GetAreaMaps()
 
 		local function getdist(node1,node2)
+			if not node1.x or not node2.x then return 99999999 end
 			local dist,xd,yd = HBD:GetZoneDistance(node1.m,node1.f,node1.x,node1.y,node2.m,node2.f,node2.x,node2.y)
 			if dist==0 and node1.c~=node2.c or (node1.c==node2.c and node1.c==-1 and node1.m~=node2.m) then dist=nil end   -- the latter condition shouldn't matter anymore, since we moved to Astrolabe systems instead of continents
 			return dist or 99999999,xd,yd
@@ -3606,6 +3607,7 @@ do
 						if ZGunitOnTaxi then moved=true end -- force slight move
 						if not moved then
 							local x,y,m,f = HBD:GetPlayerZonePosition(true)
+							if not x or not y then return end -- we're NOT working in mapless places.
 							local dist = HBD:GetZoneDistance(m,f,x,y,lam,laf,lax,lay)
 							if dist and dist>50 then
 								--self:Debug("Player moved above %d yd!",dist)
@@ -3628,6 +3630,7 @@ do
 					self:Debug("Updating because forced.")
 					-- self.quiet=false -- leave it to the caller to set.
 					local x,y,m,f = HBD:GetPlayerZonePosition(true)
+					if not x or not y then return end -- we're NOT working in mapless places.
 					self:FindPath(m,f,x,y,lbm,lbf,lbx,lby,self.PathFoundHandler, self.extradata,nil, self.quiet)
 					lastupdate=0
 				end
@@ -4361,6 +4364,7 @@ do
 
 			function TWP:FindNearestTaxis(zone)
 				local x,y,m,f = ZGV.HBD:GetPlayerZonePosition(true)
+				if not x or not y then return end -- we're NOT working in mapless places.
 
 				local taxidists={}
 				self.pm,self.pf,self.px,self.py = m,f,x,y
@@ -4384,6 +4388,7 @@ do
 				if not self.ready then return nil end
 				local taxidists = self:FindNearestTaxis(zone)
 				self.taxidists = taxidists
+				if not taxidists then self.predicted_taxi=nil return end
 				
 				local taxidists_thiszone = {}
 				local zone = zone or self.pm

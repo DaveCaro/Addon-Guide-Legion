@@ -3,69 +3,134 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("ReputationsHLEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "LEG"
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Reputations Guides\\Legion\\Court of Farondis",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Legion\\Court of Farondis",{
 author="support@zygorguides.com",
+startlevel=100.0,
+keywords={"Court","Farondis"},
+description="This guide will walk you through gaining reputation with the \"Court of Farondis\" faction.",
 },[[
 step
-Reputation with the Court of Farondis can be earned by completing the Aszuna Leveling Guide
-Click here to load the Aszuna Leveling Guide |confirm always |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Azsuna"
+Gain Exalted Reputation with Court of Farondis |condition rep("Court of Farondis")>=Exalted
+|tip Use the "Azsuna" leveling guide to accomplish this.
+|tip Complete world quests in Azsuna.
+|tip Use the "World Quests" dailies guide to accomplish this.
+step
+_Congratulations!_
+You earned Exalted reputation with the "Court of Farondis" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Reputations Guides\\Legion\\Dreamweavers",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Legion\\Dreamweavers",{
 author="support@zygorguides.com",
+startlevel=100.0,
+keywords={"Dreamweavers"},
+description="This guide will walk you through gaining reputation with the \"Dreamweavers\" faction.",
 },[[
 step
-Reputation with the Dreamweavers can be earned by completing the Val'sharah Leveling Guide
-Click here to load the Val'sharah Leveling Guide |confirm always |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Val'sharah"
+Gain Exalted Reputation with Dreamweavers |condition rep("Dreamweavers")>=Exalted
+|tip Use the "Val'sharah" leveling guide to accomplish this.
+|tip Complete world quests in Val'sharah.
+|tip Use the "World Quests" dailies guide to accomplish this.
+step
+_Congratulations!_
+You earned Exalted reputation with the "Dreamweavers" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Reputations Guides\\Legion\\Highmountain Tribe",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Legion\\Highmountain Tribe",{
 author="support@zygorguides.com",
+startlevel=100.0,
+keywords={"Highmountain","Tribe"},
+description="This guide will walk you through gaining reputation with the \"Highmountain Tribe\" faction.",
 },[[
 step
-Reputation with the Highmountain Tribe can be earned by completing the Highmountain Leveling Guide
-Click here to load the Highmountain Leveling Guide |confirm always |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Highmountain"
+Gain Exalted Reputation with Highmountain Tribe |condition rep("Highmountain Tribe")>=Exalted
+|tip Use the "Highmountain" leveling guide to accomplish this.
+|tip Complete world quests in Highmountain.
+|tip Use the "World Quests" dailies guide to accomplish this.
+step
+_Congratulations!_
+You earned Exalted reputation with the "Highmountain Tribe" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Reputations Guides\\Legion\\Valarjar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Legion\\Valarjar",{
 author="support@zygorguides.com",
+startlevel=100.0,
+keywords={"Valarjar"},
+description="This guide will walk you through gaining reputation with the \"Valarjar\" faction.",
 },[[
 step
-Reputation with the Valarjar can be earned by completing the Stormheim Leveling Guide
-Click here to load the Stormheim Leveling Guide |confirm always |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Stormheim"
+Gain Exalted Reputation with Valarjar |condition rep("Valarjar")>=Exalted
+|tip Use the "Stormheim" leveling guide to accomplish this.
+|tip Complete world quests in Stormheim.
+|tip Use the "World Quests" dailies guide to accomplish this.
+step
+_Congratulations!_
+You earned Exalted reputation with the "Valarjar" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Reputations Guides\\Legion\\The Nightfallen",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Legion\\The Nightfallen",{
 author="support@zygorguides.com",
 startlevel=110.0,
-endlevel=110.0,
+keywords={"Nightfallen"},
+description="This guide will walk you through gaining reputation with \"The Nightfallen\" faction.",
 },[[
 step
-_Before using this guide:_
-|tip Use the "Suramar (110)" leveling/questing guide at least up to the point when it tells you
-|tip to reach Friendly reputation with the Nightfallen faction.
-.
+Gain Exalted Reputation with The Nighfallen |condition rep("The Nighfallen")>=Exalted |goto Suramar/0 36.51,46.80 |region suramar_shalaran
+|tip Use the "Suramar (110)" leveling guide to accomplish this.
+|tip Complete world quests in Suramar.
+|tip Use the "World Quests" dailies guide to accomplish this.
+|tip
 _About Ancient Mana:_
-|tip Click Ancient Mana crystals, as well as other various objects, to collect Ancient Mana.
-|tip The objects are all around the Suramar zone, and you can track them on your minimap.
-|tip You can also kill enemies in Suramar to collect Ancient Mana.
-Click Here to Continue |confirm
+|tip Click various objects on the ground all around Suramar to collect Ancient Mana.
+|tip You can track the objects on your minimap by using the Mana Divining Stone.
+|tip You get the Mana Divining Stone as a quest reward shortly into the Suramar (110) leveling guide.
+|tip The best area of Suramar to collect Ancient Mana is Twilight Vineyards.
+|tip
+_Feed Ancient Mana to These Nightfallen NPC's:_
+|tip First Arcanist Thalyssra
+|tip Arcanist Valtrois
+|tip Chief Telemancer Oculeth
+|tip Their locations change as you complete quests in the Suramar (110) leveling guide.
 step
-label "Start_Nightfallen_Rep"
-talk First Arcanist Thalyssra##97140
-|tip This requires you to have 50 Ancient Mana.
-accept Feed Thalyssra##43994 |instant |goto Suramar/0 36.88,46.61
-step
-talk Arcanist Valtrois##103155
-|tip This requires you to have 50 Ancient Mana.
-accept Feed Valtrois##43995 |instant |goto 37.00,46.34
-step
-talk Chief Telemancer Oculeth##98548
-|tip This requires you to have 50 Ancient Mana.
-accept Feed Oculeth##43106 |instant |goto 36.28,44.98
+_Congratulations!_
+You earned Exalted reputation with "The Nightfallen" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Reputations Guides\\Legion\\The Wardens",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Legion\\The Wardens",{
 author="support@zygorguides.com",
 startlevel=110.0,
-endlevel=110.0,
+keywords={"Wardens"},
+description="This guide will walk you through gaining reputation with \"The Wardens\" faction.",
 },[[
 step
-Reputation with The Wardens can be earned by completing The Wardens world and emissary quests.
-Click here to load the World Quests Guide |confirm always |next "Zygor's Horde Dailies Guides\\Legion\\World Quests"
+Gain Exalted Reputation with The Wardens |condition rep("The Wardens")>=Exalted
+|tip Complete world quests in all zones that are labeled as "The Wardens".
+|tip Look under the world quest title in the tooltip when you hover over a world quest on the map.
+|tip Use the "World Quests" dailies guide to accomplish this.
+step
+_Congratulations!_
+You earned Exalted reputation with "The Wardens" faction.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Legion\\Conjurer Margoss",{
+author="support@zygorguides.com",
+startlevel=100.0,
+keywords={"Conjurer","Margoss"},
+description="This guide will walk you through gaining reputation with the \"Conjurer Margoss\" faction.",
+},[[
+step
+collect Goblin Glider Kit##109076 |c |condition rep("Conjurer Margoss")>=BestFriend
+|tip You can create these, if you have Engineering.
+|tip You can also purchase them from the Auction House.
+step
+Follow the path |goto Dalaran L/10 38.13,45.34 < 20 |only if walking
+Follow the path |goto Dalaran L/10 30.75,32.64 < 20 |only if walking
+Jump off toward the floating island |goto Dalaran L/10 26.22,20.40 < 20 |only if walking
+|tip Use the Goblin Glider Kit immediately after jumping.
+Fish in the Water
+collect Mark of Aquaos##141975 |n
+|tip There's a chance to get these when fishing here.
+Use the Mark of Aquaos |use Mark of Aquaos##141975
+|tip This will summon Aquaos the Unleashed in the pond.
+|tip Killing him will buff the pond to have a 100% catch chance for Drowned Mana for about 2-3 minutes.
+collect Drowned Mana##138777 |n
+talk Conjurer Margoss##108825
+|tip Use the dialogue options to give him the Drowned Mana.
+Gain Best Friend Reputation with Conjurer Margoss |condition rep("Conjurer Margoss")>=BestFriend |goto Dalaran L/10 23.10,-11.40 |region dalaran_margosss_retreat
+step
+_Congratulations!_
+You earned Best Friend reputation with the "Conjurer Margoss" faction.
 ]])

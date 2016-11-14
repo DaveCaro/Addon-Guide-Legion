@@ -202,12 +202,12 @@ Reach Level 110 |ding 110
 |tip Use the Leveling guides to accomplish this.
 step
 Unlock World Quests |condition completedq(43341)
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 step
 _Complete a "Felhide" World Quest:_
 |tip Look on your world map in all of the Legion zones.
 |tip The world quest will have a Skinning icon.
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 kill Felhide Gargantuan##103675
 |tip Loot and skin it.
 accept Felhide Sample##40156
@@ -937,12 +937,12 @@ talk Kuhuine Tenderstride##92464
 turnin The Spade's Blade##40037 |goto Dalaran L/10 43.02,33.37
 step
 Unlock World Quests |condition completedq(43341)
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 step
 _Complete a "Felwort" World Quest:_
 |tip Look on your world map in all of the Legion zones.
 |tip The world quest will have an Herbalism icon.
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 accept Felwort Sample##40040
 |tip You will automatically accept this quest after gathering.
 step
@@ -975,7 +975,7 @@ step
 _Complete "Felwort" World Quests:_
 |tip Look on your world map in all of the Legion zones.
 |tip The world quests will have an Herbalism icon.
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 Reach 800 Herbalism |skill Herbalism,800
 step
 map Azsuna/0
@@ -1415,7 +1415,7 @@ Reach Level 110 |ding 110
 |tip Use the Leveling guides to accomplish this.
 step
 Unlock World Quests |condition completedq(43341)
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 step
 click Leystone Seams
 click Felslate Seams
@@ -1729,7 +1729,7 @@ step
 _Complete a "Brimstone Destroyer" World Quest:_
 |tip Look on your world map in all of the Legion zones.
 |tip The world quest will have a Mining icon.
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 accept Infernal Brimstone Sample##38806
 |tip You will automatically accept this quest after gathering.
 step
@@ -1946,7 +1946,7 @@ step
 _Complete "Brimstone Destroyer" World Quests:_
 |tip Look on your world map in all of the Legion zones.
 |tip The world quests will have a Mining icon.
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 Reach Level 800 Mining |skill Mining,800
 step
 _Congratulations!_
@@ -2538,7 +2538,7 @@ Reach Level 110 |ding 110
 |tip Use the Leveling guides to accomplish this.
 step
 Unlock World Quests |condition completedq(43341)
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 step
 _Using the Suramar Questing Guide:_
 |tip Use the Suramar questing guide to complete quests until you complete the quest titled "Masquerade".
@@ -2987,7 +2987,7 @@ Reach Level 110 |ding 110
 |tip Use the Leveling guides to accomplish this.
 step
 Unlock World Quests |condition completedq(43341)
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 step
 talk Deucus Valdera##92458
 |tip Inside the building.
@@ -3017,12 +3017,12 @@ collect Blood of Sargeras##124124 |q 39340/1
 step
 collect Felhide##124116 |q 39340/2
 |tip You can get these by completing "Felhide" Skinning world quests, if you have Skinning.
-|tip Use the "World Quests" guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 |tip You can also purchase them from the Auction House.
 step
 collect 2 Felwort##124106 |q 39340/3
 |tip You can get these by completing "Felwort" Herbalism world quests, if you have Herbalism.
-|tip Use the "World Quests" guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 |tip You can also purchase them from the Auction House.
 step
 collect 105 Yseralline Seed##128304 |q 39341 |future
@@ -3934,7 +3934,7 @@ Reach Level 110 |ding 110
 |tip Use the Leveling guides to accomplish this.
 step
 Unlock World Quests |condition completedq(43341)
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 step
 talk Alard Schmied##92183
 |tip Inside the building.
@@ -4644,7 +4644,7 @@ Reach Level 110 |ding 110
 |tip Use the Leveling guides to accomplish this.
 step
 Unlock World Quests |condition completedq(43341)
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 step
 talk Tanithria##93542
 |tip Inside the building.
@@ -5512,7 +5512,7 @@ Reach Level 110 |ding 110
 |tip Use the Leveling guides to accomplish this.
 step
 Unlock World Quests |condition completedq(43341)
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 step
 _Using the Suramar Questing Guide:_
 |tip Use the Suramar questing guide to complete quests until you complete the quest titled "Masquerade".
@@ -6094,7 +6094,7 @@ Reach Level 110 |ding 110
 |tip Use the Leveling guides to accomplish this.
 step
 Unlock World Quests |condition completedq(43341)
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 step
 talk Hobart Grapplehammer##93539
 |tip Inside the building.
@@ -6598,7 +6598,7 @@ Reach Level 110 |ding 110
 |tip Use the Leveling guides to accomplish this.
 step
 Unlock World Quests |condition completedq(43341)
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 step
 talk Professor Pallin##92195
 |tip Inside the building.
@@ -7175,7 +7175,7 @@ Reach Level 110 |ding 110
 |tip Use the Leveling guides to accomplish this.
 step
 Unlock World Quests |condition completedq(43341)
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 step
 _Using the Suramar Questing Guide:_
 |tip Use the Suramar questing guide to complete quests until you complete the quest titled "Masquerade".
@@ -7382,7 +7382,7 @@ Learn the Rank 2 Design for Azsunite Pendant |learn Azsunite Pendant##195907 |go
 step
 Complete the _"Work Order: Azsunite Pendant"_ World Quest
 |tip This world quest appears in Azsuna when it is available.
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 collect Design: Azsunite Pendant##137843 |n
 |tip This design can only be obtained from this world quest.
 Use the Design: Azsunite Pendant |use Design: Azsunite Pendant##137843
@@ -7447,7 +7447,7 @@ _Complete "Brimstone Destroyer" World Quests:_
 |tip These world quests require you to have the Mining profession.
 |tip Look on your world map in all of the Legion zones.
 |tip The world quest will have a Mining icon.
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 collect 60 Infernal Brimstone##124444
 |tip You can also purchase them from the Auction House.
 |only if skill("Jewelcrafting") < 800
@@ -7524,6 +7524,80 @@ Reach Level 800 Fishing |skill Fishing,800 |goto 22.99,-14.30
 step
 _Congratulations!_
 You reached level 800 with the Fishing profession.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Profession Guides\\Fishing\\Legion\\Underlight Angler (Fishing Artifact)",{
+author="support@zygorguides.com",
+startlevel=110.0,
+},[[
+step
+Earn the "A Cast Above the Rest" Achievement |condition achieved(10595)
+|tip Use the "A Cast Above the Rest" achievement guide to accomplish this.
+step
+Earn the "Bigger Fish to Fry" Achievement |condition achieved(10596)
+|tip Use the "Bigger Fish to Fry" achievement guide to accomplish this.
+step
+Follow the path down |goto Suramar/0 64.28,43.04 < 30 |only if walking
+Follow the path down |goto Suramar/0 67.43,44.64 < 20 |only if walking
+Continue down the path |goto Suramar/0 68.43,45.91 < 20 |only if walking
+Follow the path down |goto Suramar/0 68.16,48.54 < 30 |only if walking
+Follow the path |goto Suramar/0 69.70,47.92 < 30 |only if walking
+Follow the path down |goto Suramar/0 71.37,47.01 < 30 |only if walking
+Fish in Black Barracuda Schools
+|tip They look like small circular swirling spots in the water along the coast.
+|tip Follow the beach east from this spot.
+collect Luminous Pearl##133887|n
+|tip You will accept this quest automatically.
+accept Luminous Pearl##40960 |goto Suramar/0 74.20,49.90
+step
+talk Archmage Khadgar##90417
+turnin Luminous Pearl##40960 |goto Dalaran L/10 28.48,48.33
+accept The Dalaran Fountain##40961 |goto Dalaran L/10 28.48,48.33
+step
+talk Marcia Chase##95844
+turnin The Dalaran Fountain##40961 |goto 52.84,65.62
+step
+_Walk around Dalaran:_
+talk Nat Pagle##102639
+|tip He will eventually appear next to you.
+accept Fish Frenzy##41010
+step
+_Next to you:_
+talk Nat Pagle##102639
+Speak with Nat Pagle in Dalaran |q 41010/1
+step
+Begin the Scenario |scenariostart |q 41010
+step
+Kill enemies around this area
+Slay All of the Murlocs on the Island |scenariostage 1 |goto Gloaming Reef/0 42.45,50.38 |q 41010
+step
+Fish in Frenzied Fish Pools
+|tip Underlight Deepfeeder murlocs will sometimes spawn and attack you.
+kill Underlight Deepfeeder##102511+
+collect 15 Gloaming Frenzy##138114 |scenariogoal 2/30403 |goto 47.25,36.94 |q 41010
+step
+talk Nat Pagle##107804
+Watch the dialogue
+Give Nat your Gloaming Frenzies |scenariostage 3 |goto 36.42,54.63 |q 41010
+step
+Fish in the Roiling Whirlpool
+Fish Up What's Been Disturbing the Frenzies |scenariostage 4 |goto 36.41,55.52 |q 41010
+step
+kill Mglrrp##102517
+Slay Mglrrp |scenarioend |goto 35.05,57.15 |q 41010
+Dispatch the Gloaming Reef Fish |q 41010/2 |goto 35.05,57.15
+step
+Watch the dialogue
+click Boat the Dalaran
+Return to Marcia in Dalaran |q 41010/3 |goto 36.94,58.76
+step
+talk Marcia Chase##95844
+turnin Fish Frenzy##41010 |goto Dalaran L/10 52.84,65.62
+step
+_Congratulations!_
+You earned the Underlight Angler fishing artifact.
+|tip To gain Artifact power for the Underlight Angler:
+|tip Continue fishing rare fish, like you did while earning the "Bigger Fish to Fry" achievement.
+|tip Each rare fish will give 50 Artifact Power.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Profession Guides\\Cooking\\Legion\\Cooking Quest Line",{
 author="support@zygorguides.com",
@@ -7737,7 +7811,7 @@ Reach Level 110 |ding 110
 |tip Use the Leveling guides to accomplish this.
 step
 Unlock World Quests |condition completedq(43341)
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 step
 _Using the Suramar Questing Guide:_
 |tip Use the Suramar questing guide to complete quests until you complete the quest titled "Survey Says...".
@@ -7886,7 +7960,7 @@ Reach Level 110 |ding 110
 |tip Use the Leveling guides to accomplish this.
 step
 Unlock World Quests |condition completedq(43341)
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 step
 talk Angelique Butler##93528
 |tip Inside the building.
@@ -8317,7 +8391,7 @@ Reach Level 110 |ding 110
 |tip Use the Leveling guides to accomplish this.
 step
 Unlock World Quests |condition completedq(43341)
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 step
 label "Accept_Archaeology_Quest"
 talk Dariness the Learned##93538

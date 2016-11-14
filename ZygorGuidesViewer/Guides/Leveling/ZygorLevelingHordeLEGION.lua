@@ -15762,7 +15762,7 @@ turnin Sign of the Dusk Lily##44756 |goto 36.50,46.73 |region suramar_shalaran
 accept Stabilizing Suramar##45316 |goto 36.50,46.73 |region suramar_shalaran
 step
 Complete #10# World Quests in Suramar |q 45316/1
-|tip Use the "World Quests" guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 step
 talk First Arcanist Thalyssra##115736
 turnin Stabilizing Suramar##45316 |goto 36.50,46.73 |region suramar_shalaran
@@ -16350,7 +16350,7 @@ collect Greater Demonic Runestone##139453 |q 43506/1
 step
 label "World_Quests_Warrior"
 Complete #30# World Quests |q 44667/1
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 |only Warrior
 step
 talk Odyn##96469
@@ -17287,7 +17287,7 @@ turnin Blood of Sargeras##43534 |goto Eastern Plaguelands/20 52.30,78.05
 step
 label "World_Quests_Paladin"
 Complete #30# World Quests |q 43699/1
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 |only Paladin
 step
 talk Lord Grayson Shadowbreaker##90250
@@ -18244,7 +18244,7 @@ stickystart "Arkhana_Hunter"
 stickystart "Arcane_Vessel_Fragments_Hunter"
 step
 Complete #30# World Quests |q 44680/1
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 |only Hunter
 step
 label "Arkhana_Hunter"
@@ -19220,7 +19220,7 @@ Click Here After You Start the Mission |confirm |goto 37.41,44.25 |q 43469
 stickystart "Where_Mathias_Rogue"
 step
 Complete #30# World Quests |q 43470/1
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 |only Rogue
 step
 label "Where_Mathias_Rogue"
@@ -19240,7 +19240,7 @@ step
 Complete a "Rare Elite" World Quest |q 43479/1
 |tip They are randomly available world quests.
 |tip On the world map, their icon looks like a blue circle with a yellow exclamation mark in it, with a golden dragon wrapping around the circle.
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 |only Rogue
 step
 Click the Torch and run through the doorway |goto 45.02,54.87 < 10 |walk
@@ -20318,7 +20318,7 @@ turnin Elixirs of Aid##43832 |goto 51.57,47.84
 step
 label "World_Quests_Priest"
 Complete #30# World Quests |q 43399/1
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 |only Priest
 step
 label "Lumenstones_Priest"
@@ -21235,7 +21235,7 @@ turnin In the House of Light and Shadow##44448 |goto Dalaran L/10 28.46,48.31
 step
 label "World_Quests_Shaman"
 Complete #30# World Quests |q 42988/1
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 |only Shaman
 step
 talk Advisor Sevel##96746
@@ -22229,7 +22229,7 @@ accept The Might of the Tirisgarde##44689 |goto Hall of the Guardian/2 71.82,54.
 |only Mage
 step
 Complete #30# World Quests |q 44689/1
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 |only Mage
 step
 talk Archmage Khadgar##107351
@@ -23303,7 +23303,7 @@ Complete the "Preparations for Invasion: Where Are the Felsouls?" Mission |q 426
 step
 label "World_Quests_DemonHunter"
 Complete #30# World Quests |q 44694/1
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 |only DemonHunter
 step
 Follow the path down |goto 68.46,66.55 < 15 |walk
@@ -24356,7 +24356,7 @@ collect Felsworn Heart##138989 |q 42660/1
 step
 label "World_Quests_Warlock"
 Complete #30# World Quests |q 44682/1
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 |only Warlock
 step
 label "One_Who's_Worthy_Warlock"
@@ -25391,7 +25391,7 @@ turnin Odyn's Cauldron##41059 |goto The Wandering Isle L/0 51.41,48.39
 step
 label "World_Quests_Monk"
 Complete #30# World Quests |q 41086/1
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 |only Monk
 step
 talk Iron-Body Ponshu##64975
@@ -26317,7 +26317,7 @@ collect 10 Blood of Sargeras##124124 |c |q 42365
 step
 label "World_Quests_Druid"
 Complete #30# World Quests |q 43403/1
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 |only Druid
 step
 talk Rensar Greathoof##101195
@@ -27179,7 +27179,7 @@ stickystart "Aggregates_Of_Anguish_DeathKnight"
 step
 label "World_Quests_DeathKnight"
 Complete #30# World Quests |q 43573/1
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 |only DeathKnight
 step
 talk Siouxsie the Banshee##93568

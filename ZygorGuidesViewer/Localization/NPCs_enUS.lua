@@ -26740,7 +26740,6 @@ ZygorGuidesViewer_L("NPCs", "enUS", function() return {
 [95937]="Hill Ettin|",
 [30108]="Hill Prince Ruggu|",
 [105739]="Sanaar|",
-
 [97516]="Foothills Greatstag|",
 [108740]="Velimar|",
 [103160]="Nythendra|",
@@ -27054,4 +27053,8 @@ ZygorGuidesViewer_L("NPCs", "enUS", function() return {
 [115604]="Vanthir|",
 [30108]="Vagnhild|",
 [115291]="Helarjar Soulthief|",
+[102359]="Landlocked Shark|",
+[102374]="Ravenous Fly|",
+[102511]="Underlight Deepfeeder|",
+[102517]="Mglrrp|",
 } end)
