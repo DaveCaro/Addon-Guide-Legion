@@ -26,3 +26,11 @@ Added "DANGER: Achronos" world quest.
 Changed some travel lines for steps during "Claws for Alarm!" world quest, due to game changes.
 
 Changed "Withered Wrangling: Ambervale" world quest location, due to game changes.
+
+ - ERROR FIX : 
+ 
+Fixed more errors in Travel System not operating in dungeons, caused by lack of map coordinates.
+
+- Dugi Guides : 
+
+TBA
