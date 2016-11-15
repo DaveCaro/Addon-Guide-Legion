@@ -2118,7 +2118,9 @@ Follow the path |goto 57.94,86.59 < 30 |only if walking
 accept WANTED: Skul'vrax##43456 |goto Val'sharah/0 60.95,87.91
 |tip You will accept this quest automatically.
 step
-clicknpc Elindya Featherlight##92334 |goto 60.42,90.72
+clicknpc Elindya Featherlight##92334
+Watch the dialogue
+|tip Follow Elindya Featherlight when she walks away.
 kill Skul'vrax##93654 |q 43456/1 |goto 60.42,90.72
 |next "Court_Of_Farondis_WQ"
 step
@@ -2131,6 +2133,9 @@ Follow the path down |goto 59.49,86.11 < 30 |only if walking
 accept WANTED: Skul'vrax##43631 |goto Val'sharah/0 60.23,87.23
 |tip You will accept this quest automatically.
 step
+clicknpc Elindya Featherlight##92334
+Watch the dialogue
+|tip Follow Elindya Featherlight when she walks away.
 kill Skul'vrax##93654 |q 43631/1 |goto Val'sharah/0 60.87,87.69
 |next "Court_Of_Farondis_WQ"
 step
@@ -2719,6 +2724,16 @@ click Wax Ingots
 |tip They look like little wax bars on the ground.
 Kill enemies around this area
 Purge the Kobold Nest |q 41127/1 |goto 53.26,81.12
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44746
+Follow the path |goto Highmountain/0 40.71,12.02 < 30 |only if walking
+accept Helarjar Landing: Rockaway Coast##44746 |goto Highmountain/0 39.15,14.43
+|tip You will accept this quest automatically.
+step
+kill Helarjar Ritualist##115132+
+|tip There are 4 of them channeling around the water.
+Defeat the Helarjar Ritualists |q 44746/1 |goto 39.15,14.43
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42064
@@ -4929,9 +4944,8 @@ Slay #10# Dread-Rider Forsaken |q 42183/1 |goto 74.31,61.20
 step
 label quest-41930
 Follow the path |goto Stormheim/0 60.25,53.61 < 20 |only if walking
-Follow the path |goto 62.76,57.85 < 30 |only if walking
-Follow the path |goto 60.25,53.61 < 20 |only if walking
-Follow the path |goto 65.63,62.32 < 30 |only if walking
+Follow the path |goto Stormheim/0 62.76,57.85 < 30 |only if walking
+Follow the path |goto Stormheim/0 65.63,62.32 < 30 |only if walking
 accept Valor Calls##41930 |goto Stormheim/0 68.01,65.83
 |tip You will accept this quest automatically.
 step

@@ -3064,7 +3064,7 @@ function ZGV:UpdateFrameCurrent()
 								vis=true
 
 							elseif goal.petaction then
-								local num,name,subtext,tex = FindPetActionInfo(goal.petaction)
+								local num,name,subtext,tex = ZGV.FindPetActionInfo(goal.petaction)
 								if num then
 									petaction:SetID(num)
 									petaction.tooltipName=name

@@ -15766,6 +15766,128 @@ Complete #10# World Quests in Suramar |q 45316/1
 step
 talk First Arcanist Thalyssra##115736
 turnin Stabilizing Suramar##45316 |goto 36.50,46.73 |region suramar_shalaran
+step
+talk First Arcanist Thalyssra##115736
+accept Eating Before the Meeting##45263 |goto 36.50,46.72 |region suramar_shalaran
+step
+Use the Fruit of the Arcan'dor on a Suramar Refugee |use Fruit of the Arcan'dor##143597
+|tip There are Suramar Refugees all around inside the cave.
+Cure a Suramar Refugee |q 45263/1 |goto 37.49,47.44 |region suramar_shalaran
+step
+talk First Arcanist Thalyssra##115736
+turnin Eating Before the Meeting##45263 |goto 36.50,46.73 |region suramar_shalaran
+accept Take Me To Your Leader##40391 |goto 36.50,46.73 |region suramar_shalaran
+step
+Cross the bridge |goto 34.42,49.99 < 20 |only if walking
+Run up the stairs |goto 35.29,50.86 < 20 |only if walking
+Cross the bridge |goto 36.30,50.61 < 20 |only if walking
+Follow the path |goto 37.42,49.52 < 20 |only if walking
+Follow the road |goto 39.46,49.49 < 30 |only if walking
+talk Archmage Khadgar##114909
+turnin Take Me To Your Leader##40391 |goto 41.65,51.64
+step
+talk First Arcanist Thalyssra##114908
+accept A Better Future##41916 |goto 41.60,51.65
+step
+talk Tyrande Whisperwind##114838
+accept Down to Business##43810 |goto 41.63,51.48
+step
+talk Vereesa Windrunner##114963
+accept Taking a Promenade##44831 |goto 41.70,51.54
+stickystart "Slay_Suramar_Defenders"
+stickystart "Rally_Shaldorei_Insurgents"
+step
+Follow the path |goto 42.37,53.84 < 30 |only if walking
+Follow the path |goto 40.90,57.15 < 30 |only if walking
+Find Sentinel Moonshade |q 44831/1 |goto 40.62,64.48
+step
+talk Sentinel Moonshade##115521
+accept Crystal Clearing##44843 |goto 40.62,64.48
+accept Powering Down the Portal##44844 |goto 40.62,64.48
+stickystart "Destroy_Portal_Crystals"
+step
+kill Overseer Ingra##107217 |q 44844/1 |goto 40.95,66.34
+step
+label "Destroy_Portal_Crystals"
+click Portal Crystals
+|tip They look like big green floating crystals around this area.
+Destroy #4# Portal Crystals |q 44843/1 |goto 40.40,65.85
+step
+talk Sentinel Moonshade##115521
+turnin Crystal Clearing##44843 |goto 40.63,64.48
+turnin Powering Down the Portal##44844 |goto 40.63,64.48
+step
+label "Rally_Shaldorei_Insurgents"
+talk Shal'dorei Insurgent##115279+
+|tip They look like nightfallen NPC's around this area.
+|tip You may have to search a bit for them.
+Rally #8# Shal'dorei Insurgents |q 41916/1 |goto 40.42,66.17
+step
+Follow the path |goto 42.39,59.31 < 30 |only if walking
+Follow the path |goto 45.28,55.75 < 20 |only if walking
+Find Magus Sendath |q 44831/2 |goto 46.44,58.17
+step
+talk Magus Sendath##115517
+accept Nullified##44834 |goto 46.44,58.17
+stickystart "Volatile_Construct_Core"
+step
+Follow the path |goto 46.55,55.65 < 20 |only if walking
+Follow the path |goto 45.94,53.62 < 20 |only if walking
+click Charged Arcshaper Staff
+collect Charged Arcshaper Staff##142245 |q 44834/2 |goto 45.47,52.28
+step
+label "Volatile_Construct_Core"
+kill Arcane Sentinel##114926+
+collect Volatile Construct Core##142244 |q 44834/1 |goto 45.98,53.88
+step
+label "Slay_Suramar_Defenders"
+Kill enemies around this area
+Slay #15# Suramar Defenders |q 43810/1 |goto 45.98,53.88
+step
+Follow the path |goto 45.28,55.75 < 20 |only if walking
+talk Magus Sendath##115517
+turnin Nullified##44834 |goto 46.44,58.17
+accept Shield, Meet Spell##44842 |goto 46.44,58.17
+step
+Follow the path |goto 45.98,56.61 < 20 |only if walking
+Follow the path |goto 45.13,54.58 < 20 |only if walking
+Use the Arcane Nullifier on Arcshaper Thorendis |use Arcane Nullifier##142260
+kill Arcshaper Thorendis##115526 |q 44842/1 |goto 44.48,53.61
+step
+Follow the path |goto 45.12,54.61 < 20 |only if walking
+Follow the path |goto 45.28,55.75 < 20 |only if walking
+talk Magus Sendath##115517
+turnin Shield, Meet Spell##44842 |goto 46.44,58.17
+step
+Follow the path |goto 45.94,56.56 < 20 |only if walking
+Follow the path |goto 44.92,56.00 < 20 |only if walking
+Follow the path |goto 42.39,53.87 < 20 |only if walking
+talk First Arcanist Thalyssra##114908
+turnin A Better Future##41916 |goto 41.60,51.65
+step
+talk Tyrande Whisperwind##114838
+turnin Down to Business##43810 |goto 41.64,51.48
+step
+talk Vereesa Windrunner##114963
+turnin Taking a Promenade##44831 |goto 41.70,51.54
+step
+talk First Arcanist Thalyssra##114908
+accept Break An Arm##44845 |goto 41.60,51.65
+step
+Follow the path |goto 44.54,51.65 < 30 |only if walking
+Cross the bridge |goto 46.16,50.71 < 30 |only if walking
+Cross the bridge |goto 49.76,49.59 < 30 |only if walking
+Follow the path |goto 55.04,49.44 < 30 |only if walking
+kill Arm of the Magistrix##116068 |q 44845/1 |goto 56.94,49.01
+|tip He walks around this small area.
+|tip You may need help, this is a group quest.
+step
+Follow the path |goto 56.56,50.37 < 30 |only if walking
+Cross the bridge |goto 51.63,49.59 < 30 |only if walking
+Cross the bridge |goto 47.82,50.04 < 30 |only if walking
+Follow the path |goto 44.17,51.54 < 30 |only if walking
+talk First Arcanist Thalyssra##114908
+turnin Break An Arm##44845 |goto 41.61,51.65
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Legion (100-110)\\Order Hall Quests",{
 author="support@zygorguides.com",
@@ -17276,7 +17398,7 @@ stickystart "Lumenstones_Paladin"
 step
 collect 10 Blood of Sargeras##124124 |q 43534/1
 |tip Complete world quests and kill bosses in dungeons.
-|tip Use the World Quests guide to complete world quests.
+|tip Use the "World Quests" guide to complete world quests.
 |tip Use the Dungeon guides to complete dungeons.
 |tip If you have a Gathering profession leveled to at least Rank 2, you can get them from gathering.
 |only Paladin
@@ -21191,7 +21313,7 @@ stickystart "Return_To_The_Firelands_Shaman"
 step
 collect 10 Blood of Sargeras##124124 |c |q 42989
 |tip Complete world quests and kill bosses in dungeons.
-|tip Use the World Quests guide to complete world quests.
+|tip Use the "World Quests" guide to complete world quests.
 |tip Use the Dungeon guides to complete dungeons.
 |tip If you have a Gathering profession leveled to at least Rank 2, you can get them from gathering.
 |only Shaman
@@ -26310,7 +26432,7 @@ step
 label "Blood_Of_Sargeras_Druid"
 collect 10 Blood of Sargeras##124124 |c |q 42365
 |tip Complete world quests and kill bosses in dungeons.
-|tip Use the World Quests guide to complete world quests.
+|tip Use the "World Quests" guide to complete world quests.
 |tip Use the Dungeon guides to complete dungeons.
 |tip If you have a Gathering profession leveled to at least Rank 2, you can get them from gathering.
 |only Druid
@@ -27211,7 +27333,7 @@ turnin Maul of the Dead##43574 |goto 36.20,56.03
 step
 collect 10 Blood of Sargeras##124124 |c |q 44690 |future
 |tip Complete world quests and kill bosses in dungeons.
-|tip Use the World Quests guide to complete world quests.
+|tip Use the "World Quests" guide to complete world quests.
 |tip Use the Dungeon guides to complete dungeons.
 |tip If you have a Gathering profession leveled to at least Rank 2, you can get them from gathering.
 |only DeathKnight
