@@ -19,7 +19,9 @@ Extended Suramar (110) guide with new quests.
 - Dailies : 
 
 Improved "WANTED: Skul'vrax" world quest.
+
 Added "Helarjar Landing: Rockaway Coast" world quest.
+
 Improved "Valor Calls" world quest.
 
 - Dugi Guides : 
