@@ -1834,7 +1834,7 @@ function NPCJournalFrame:Initialize()
 				,Wood            = 0 
 			}
 			
-			self.scrollframe.scrollBar:SetPoint("TOPLEFT", self.mainFrame, "TOPLEFT", 302 + shiftX[border], -61)
+			self.scrollframe.scrollBar:SetPoint("TOPLEFT", self.mainFrame, "TOPLEFT", 300 + shiftX[border], -61)
 		end
 			   
 		

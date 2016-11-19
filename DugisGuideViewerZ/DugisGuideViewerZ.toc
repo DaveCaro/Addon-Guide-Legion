@@ -1,7 +1,7 @@
 ## Interface: 70100
-## Title: DugiGuidesViewer |cffffffff8.147|r
+## Title: DugiGuidesViewer |cffffffff8.148|r
 ## Notes: In-Game Guide Viewer. Copyright 2010-2016 UltimateWoWGuide.com
-## Version: 8.147
+## Version: 8.148
 ## X-Website: http://www.ultimatewowguide.com/
 ## X-Email: support@ultimatewowguide.com
 ## X-Category: Quest
