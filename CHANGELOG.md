@@ -4,26 +4,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-### Added 
-
-- Zygor Guides for ESO 
-
 ### Changed
-
-- Zygor Guides : 
-
-- Leveling : 
-
-Extended Suramar (110) guide with new quests.
-
-- Dailies : 
-
-Improved "WANTED: Skul'vrax" world quest.
-
-Added "Helarjar Landing: Rockaway Coast" world quest.
-
-Improved "Valor Calls" world quest.
 
 - Dugi Guides : 
 
-TBA
+Improved Suggest Guide result format
+
+- Leveling Addon : 
+
+Added new Insurrection quest line for November 22
+
+Fixed step detection issue with Val'Sharah guide
+
+Various waypoint fixes for Legion leveling guides
+
+- Daily Addon : 
+
+Fixed Shattrath fixing daily waypoints
