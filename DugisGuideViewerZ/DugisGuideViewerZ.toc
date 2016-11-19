@@ -1,7 +1,7 @@
 ## Interface: 70100
-## Title: DugiGuidesViewer |cffffffff8.146|r
+## Title: DugiGuidesViewer |cffffffff8.147|r
 ## Notes: In-Game Guide Viewer. Copyright 2010-2016 UltimateWoWGuide.com
-## Version: 8.146
+## Version: 8.147
 ## X-Website: http://www.ultimatewowguide.com/
 ## X-Email: support@ultimatewowguide.com
 ## X-Category: Quest
@@ -50,6 +50,7 @@ Localization\NPCs_itIT.lua
 
 # Implementation
 
+MacroData.lua
 Guides.lua
 Widget.lua
 MapUtils.lua
@@ -87,6 +88,7 @@ MapPreview.lua
 WorldMapTracking.lua
 WorldMapTrackingPoints.lua
 ExtendedTrackingPoints.lua
+ExtraExtendedTrackingPoints.lua
 ExplorationTrackingPoints.lua
 Taxi.lua
 TaxiDB.lua
@@ -101,6 +103,7 @@ Record.lua
 WorldMapTrackingCollection.lua
 
 TomTomEmulation.lua
+
 NPCJournalFrame\NPCJournalFrameData.lua
 NPCJournalFrame\MountData.lua
 NPCJournalFrame\PetData.lua

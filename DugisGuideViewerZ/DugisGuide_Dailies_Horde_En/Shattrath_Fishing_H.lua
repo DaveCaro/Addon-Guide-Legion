@@ -11,7 +11,7 @@ A Shrimpin' Ain't Easy |O| |N|(npc:25580) (38.7, 12.8)| |QID|11668| |D| |NPC|255
 A The One That Got Away |O| |N|(npc:25580) (38.7, 12.8)| |QID|11667| |D| |NPC|25580| |Z|478|
 A Crocolisks in the City |O| |N|(npc:25580) (38.7, 12.8)| |QID|11665| |D| |NPC|25580| |Z|478|
 
-C Bait Bandits |O| |N|Catch (item:34865) in the small pond by {Shattrath} entrance (32.25, 22.12)| |QID|11666| |D| |W| |Z|465|
+C Bait Bandits |O| |N|Catch (item:34865) in {Terokkar Forest} (51.8,37.2)| |QID|11666| |D| |W| |Z|478|
 C Felblood Fillet |O| |N|Catch (item:34867) in the {Pools of Aggonar} (43.12, 29.84)| |QID|11669| |D| |W| |Z|465|
 C Shrimpin' Ain't Easy |O| |N|Catch (item:35313) and open them until you collect 10 (item:34866) in {Umbrafen Lake} (76.1, 78)| |QID|11668| |D| |W| |Z|467| |U|35313|
 C The One That Got Away |O| |N|Catch the (item:34868) in lake Sunspring, (34.4, 49.7) make sure sure it says Lake Sunpring in your minimap where you're standing| |QID|11667| |D| |W| |Z|477|

@@ -9,11 +9,41 @@ local BFR = BF:GetReverseLookupTable()
 
 DGV.Guides = Guides
 
+local AceGUI = LibStub("AceGUI-3.0")
+
 guidePercentagesCache = {}
 
 function Guides:Initialize()
-
     guidesMainScroll = GUIUtils:CreateScrollFrame(DugisMain)
+    
+    --Preparing data for macros
+    macrosDataDefaults = LuaUtils:clone(macrosData)
+
+    if not DugisGuideUser.macrosData then 
+        DugisGuideUser.macrosData = LuaUtils:clone(macrosData)
+    else
+        LuaUtils:foreach(macrosData, function(categoryData, categoryName)
+            if not DugisGuideUser.macrosData[categoryName] then
+                DugisGuideUser.macrosData[categoryName] = LuaUtils:clone(categoryData)
+            else
+                local userCategoryData = DugisGuideUser.macrosData[categoryName]
+                LuaUtils:foreach(categoryData, function(macroData, index)
+                
+                    local alreadyExistsInUserData = false
+                    LuaUtils:foreach(userCategoryData, function(userMacroData, index1)
+                        if userMacroData.name == macroData.name and not userMacroData.isEditable then
+                            alreadyExistsInUserData = true
+                        end
+                    end)
+                
+                    if not alreadyExistsInUserData then
+                        userCategoryData[#userCategoryData + 1] = LuaUtils:clone(macroData)
+                    end
+                end)
+            end
+        end)
+    end
+    
 
 	DGU = DugisGuideUser
     if DGU.RecentGuides == nil then
@@ -117,8 +147,9 @@ function Guides:Initialize()
 		[16] = {text = "Clear Guide",		title = "Clear the loaded guide from the Small Frame",									LeftFrame = DGVHomeFrame,		RightFrame = DGVScrollFrame16,	icon="Interface\\Buttons\\UI-GroupLoot-Pass-Up"},		
         [17] = {text = "Recent Guides", title = "Recent Guides", 		LeftFrame = DGVHomeFrame, 		RightFrame = DGVScrollFrame17, 	icon="Interface\\Icons\\Spell_shadow_unstableaffliction_1", rightShouldScroll = false},
         [18] = {text = "Followers", title = "Followers", guidetype = "Followers", LeftFrame = DGVHomeFrame, 		RightFrame = DGVScrollFrame18, 	icon="Interface\\Icons\\achievement_garrisonfollower_rare", rightShouldScroll = false},
+     --   [19] = {text = "Macros", title = "Macro guide", LeftFrame = DGVHomeFrame, 		RightFrame = DGVScrollFrame18, 	icon="Interface\\Icons\\INV_Misc_Orb_05", rightShouldScroll = false},
         }
-	local SEARCH_TAB, SUGGEST_TAB, RECENT_TAB = 1,4,17
+	local SEARCH_TAB, SUGGEST_TAB, RECENT_TAB, MACROS_TAB = 1,4,17,19
 	local currentGuideTabInfo = tabs[2]
 	
 	local function AccessValue(valueOrAccessor)
@@ -180,7 +211,7 @@ function Guides:Initialize()
                        return DGV.ProcessNPCLeafColor(oryginalText, self.guidetype)
                    end
                  end,
-                 function(newHeight)
+                 function(self, newHeight)
                     local newMax = newHeight - 100
                     if newMax < 1 then
                         newMax = 1
@@ -189,7 +220,7 @@ function Guides:Initialize()
                  end,
                  function(self, delta)
                     guidesMainScroll.scrollBar:SetValue(guidesMainScroll.scrollBar:GetValue() - delta * 44)  
-                 end)  
+                 end)
 
             if DugisMain then
                 wrapper:SetParent(DugisMain)
@@ -265,7 +296,7 @@ function Guides:Initialize()
                     guidesMainScroll.scrollBar:Hide()
                 end
                 
-                guidesMainScroll.scrollBar:SetPoint("TOPLEFT", guidesMainScroll.frame, "TOPLEFT", 354, -11)
+                guidesMainScroll.scrollBar:SetPoint("TOPLEFT", guidesMainScroll.frame, "TOPLEFT", 352, -15)
             else
                 guideategorieswrapper:SetWidth(405)
                 if self.text == "Help" then
@@ -274,7 +305,8 @@ function Guides:Initialize()
                     guidesMainScroll.frame:SetParent( DugisMain)
                     guidesMainScroll.frame:SetPoint("TOPLEFT", DugisMain, 370, -40)
                     guidesMainScroll.frame:Show()
-                    guidesMainScroll.scrollBar:SetPoint("TOPLEFT", guidesMainScroll.frame, "TOPLEFT", 414, -21)
+                    guidesMainScroll.scrollBar:SetPoint("TOPLEFT", guidesMainScroll.frame, "TOPLEFT", 412, -20)
+                    guidesMainScroll.scrollBar:SetHeight(289)
                     guidesMainScroll.frame:SetWidth(600)
                     DugisMainLeftScrollFrame.currentGuideIcon:Hide()
                     DugisMainLeftScrollFrame.guideType:Hide()
@@ -469,6 +501,509 @@ function Guides:Initialize()
             guideategorieswrapper:SaveExpansionState(self.text)
             guideategorieswrapper:LoadExpansionState(lastClickedTab)
             guidesMainScroll.scrollBar:SetValue(0)
+        end
+        
+        if self.text == "Macros" then
+            DugisGuideViewer.DeselectTopTabs()
+            
+            tabs[MACROS_TAB].treeData = {}
+            guideategorieswrapper:UpdateTreeVisualization()
+            TabInfoActivate(tabs[MACROS_TAB])
+        
+            DGVHomeFrame:Hide()
+            guidesMainScroll.frame:Hide()
+            
+            local textEditor, cancelButton, textCancel, editNameButton, editDescriptionButton, editCodeButton, deleteMacroButton
+            
+            function GetAllMacros()
+                local result = {}
+                
+                for i = 1, MAX_ACCOUNT_MACROS do
+                    local name, texture, body = GetMacroInfo(i)
+                    if name and body then
+                        result[#result + 1] = {index = i, name = name, body = body, texture = texture}
+                    else
+                        break
+                    end 
+                end
+                
+                for i = MAX_ACCOUNT_MACROS + 1, (MAX_ACCOUNT_MACROS + MAX_CHARACTER_MACROS) do
+                    local name, texture, body = GetMacroInfo(i)
+                    if name and body then
+                        result[#result + 1] = {index = i, name = name, body = body, texture = texture}
+                    else
+                        break
+                    end 
+                end
+            
+                return result
+            end
+            
+            function MacroBody2MacroIndex(body)
+                body = LuaUtils:trim(body)
+            
+                local result = nil
+                LuaUtils:foreach(GetAllMacros(), function(macroInfo)
+                    if LuaUtils:trim(macroInfo.body) == body then
+                        result = macroInfo.index
+                    end
+                end)
+                return result
+            end
+
+            if DGV.Guides.currentSelectedMacroData == nil then
+                DGV.Guides.currentSelectedMacroData = DugisGuideUser.macrosData.general[1]
+            end
+            
+            if DGV.Guides.currentSelectedCategory == nil then
+                DGV.Guides.currentSelectedCategory = "general"
+            end
+            
+            local defaultMacroIcon = [[Interface/ICONS/misc_arrowright]]
+            
+        
+            local MacroEditor = DugisMain.MacrosWrapper.MacroEditor
+            local MacroName = MacroEditor.MacroName
+            local MacroDescription = MacroEditor.MacroDescription
+            local MacroCode = MacroEditor.MacroCode
+            
+            MacroEditor.AddToSlotButton:SetScript("OnClick", function()
+                SlashCmdList["MACRO"]()
+                local name = DGV.Guides.currentSelectedMacroData.name
+                local body = DGV.Guides.currentSelectedMacroData.data.macroCode
+                local icon = DGV.Guides.currentSelectedMacroData.icon
+                
+                if type(DGV.Guides.currentSelectedMacroData.icon) == "string" then
+                    icon = icon:gsub([[Interface/ICONS/]], "")
+                end
+                
+                local numAccountMacros, numCharacterMacros = GetNumMacros();
+                
+                if numAccountMacros >= MAX_ACCOUNT_MACROS then
+                    print("|cff11ff11This account has already 120 macros.|r")
+                    return
+                end
+                
+                local index = CreateMacro(name, icon, body, false)
+                MacroFrame_SelectMacro(index)
+            
+                MacroFrame_Update()
+            end)
+        
+            function UpdateTexts()
+                MacroName:SetText(DGV.Guides.currentSelectedMacroData.name)
+                MacroDescription:SetText(DGV.Guides.currentSelectedMacroData.data.macroDescription)
+                MacroCode:SetText(DGV.Guides.currentSelectedMacroData.data.macroCode)
+            end
+            
+            function UpdateIcons()
+                LuaUtils:foreach(DugisGuideUser.macrosData, function(value, key)
+                    LuaUtils:foreach(DugisGuideUser.macrosData[key], function(node)
+                        if not node.isPlusButton then
+                            local body = node.data.macroCode
+                            local icon = MacroBody2MacroIcon(body)
+                            if icon then
+                                node.icon = icon
+                            else
+                                node.icon = defaultMacroIcon
+                            end
+                        end
+                    end)
+                end)
+                
+                RefreshMacrosList()
+            end            
+            
+            MacroEditor.ResetToDefault:SetScript("OnClick", function()
+                local name = DGV.Guides.currentSelectedMacroData.name
+                local body = DGV.Guides.currentSelectedMacroData.data.macroCode
+                local icon = DGV.Guides.currentSelectedMacroData.icon
+                
+                
+                if not DGV.Guides.currentSelectedMacroData or not DGV.Guides.currentSelectedCategory or not DugisGuideUser.macrosData[DGV.Guides.currentSelectedCategory] then
+                    return
+                end
+                
+                local macroData = DugisGuideUser.macrosData[DGV.Guides.currentSelectedCategory]
+                local macroIndex = nil
+                
+                LuaUtils:foreach(macrosDataDefaults[DGV.Guides.currentSelectedCategory], function(defaultMacroData, index)
+                    if defaultMacroData.name == name then
+                        macroIndex = index
+                    end 
+                end)
+                
+                if not macroIndex then
+                    return 
+                end
+                
+                local defaultBody = macrosDataDefaults[DGV.Guides.currentSelectedCategory][macroIndex].data.macroCode
+                local defaultDescription = macrosDataDefaults[DGV.Guides.currentSelectedCategory][macroIndex].data.macroDescription
+                local defaultName = macrosDataDefaults[DGV.Guides.currentSelectedCategory][macroIndex].name
+                
+                DGV.Guides.currentSelectedMacroData.data.macroCode = defaultBody
+                DGV.Guides.currentSelectedMacroData.data.macroDescription = defaultDescription
+                DGV.Guides.currentSelectedMacroData.name = defaultName
+                UpdateTexts()
+                UpdateIcons()
+            end)
+            
+             --local textEditor, cancelButton, textCancel, editNameButton, editDescriptionButton, editCodeButton
+             
+             function UpdateMacroButtonsVisibility()
+                local currentMacroData = DGV.Guides.currentSelectedMacroData
+                local isEditable = currentMacroData.isEditable
+                
+                if isEditable then
+                    editNameButton.button:Show()
+                    editDescriptionButton.button:Show()
+                    editCodeButton.button:Show()
+                   Guides.deleteMacroButton.button:Show()
+                   MacroEditor.ResetToDefault:Hide()
+                  
+                else
+                    editNameButton.button:Hide()
+                    editDescriptionButton.button:Show()
+                    editCodeButton.button:Show()
+                    MacroEditor.ResetToDefault:Show()
+                    Guides.deleteMacroButton.button:Hide()
+                end
+                
+             end
+        
+            function RefreshMacrosList()
+                local macroData =  DugisGuideUser.macrosData[DGV.Guides.currentSelectedCategory]
+                
+                if not macroData then
+                    DugisGuideUser.macrosData[DGV.Guides.currentSelectedCategory] = {}
+                    macroData = DugisGuideUser.macrosData[DGV.Guides.currentSelectedCategory]
+                end
+                
+                if #macroData == 0 or not macroData[#macroData].isPlusButton then
+                    macroData[#macroData + 1] = {name = "New macro", textColor = {r=1, g=1, b=1}, isPlusButton = true, nodeTextY = -3, nodeTextX = 23
+                    , icon = [[Interface/AddOns/DugisGuideViewerZ/Artwork/plus16px]], iconSize = 16
+                    , data = {macroCode = "",  macroDescription = ""}}
+                end
+                
+                Guides.macrolist = SetScrollableTreeFrame(DugisMain.MacrosWrapper, "macrosubcategories", macroData or {}, 10, -86, -10, 330, 308, function(visualNode)
+                    if not visualNode.nodeData.isPlusButton then
+                        DGV.Guides.currentSelectedMacroData = visualNode.nodeData
+                        UpdateTexts()
+                        MacroEditor:Show()
+                        UpdateMacroButtonsVisibility()
+                    else
+                        if DGV.Guides.currentSelectedCategory then
+                            local macros = DugisGuideUser.macrosData[DGV.Guides.currentSelectedCategory]
+
+                            macros[#macros + 1] = {isEditable = true, name = "My new macro", icon = defaultMacroIcon, data = {macroCode = "/say Hello World!",  macroDescription = "description"}}
+                            DGV.Guides.currentSelectedMacroData = macros[#macros]
+
+                            UpdateIcons()
+                            UpdateTexts()
+                            MacroEditor:Show()
+                            UpdateMacroButtonsVisibility()
+                           
+                            if Guides.macrolist.scrollBar:IsVisible() then
+                                local val = Guides.macrolist.frame:GetVerticalScrollRange()
+                                Guides.macrolist.scrollBar:SetValue(val - 102)
+                            end
+                        end 
+                    end
+                end, 22, 24, function(visualNode)
+                    local body = visualNode.nodeData.data.macroCode
+                    local macroIndex = MacroBody2MacroIndex(body)
+                    if macroIndex then
+                        PickupMacro(macroIndex)
+                    end
+                end, nil, nil, 30)
+                
+                
+                
+                if not Guides.macrolist.scrollBar.bkg then
+                    local tex = Guides.macrolist.scrollBar:CreateTexture("BACKGROUND")
+                    tex:SetColorTexture(0, 0, 0)
+                    tex:SetAllPoints()
+                    tex:SetAlpha(0.1)
+                    tex:Show()
+                    Guides.macrolist.scrollBar.bkg = tex
+                end
+                
+                Guides.macrolist.scrollBar:SetPoint("TOPLEFT", DugisMain.MacrosWrapper, "TOPLEFT", 302, -61)
+                Guides.macrolist.scrollBar:SetParent(DugisMain.MacrosWrapper)
+                Guides.macrolist.scrollBar:SetHeight(320)
+                Guides.macrolist.scrollBar:SetScript("OnValueChanged",
+                function (self, value)
+                    Guides.macrolist.frame:SetVerticalScroll(value)
+                end)
+                
+                table.remove(macroData, #macroData)
+            end
+            
+            function RefreshMacrosCategories()
+                SetScrollableTreeFrame(DugisMain.MacrosWrapper, "macrocategories", macroCategories, 10, -86, -10, 330, 308, function(visualNode)
+                    DGV.Guides.currentSelectedCategory = visualNode.nodeData.data.categoryName
+                    RefreshMacrosList()   
+                    macrocategorieswrapper:Hide()
+                    Guides.macrolist.frame:Show()
+                    
+                    DugisMain.MacrosWrapper.MacroInfo.CategoryIcon:SetTexture(visualNode.nodeData.icon)
+                    DugisMain.MacrosWrapper.MacroInfo.CategoryIcon:SetPoint("TOPLEFT", 49, -49)
+                    DugisMain.MacrosWrapper.MacroInfo.CategoryName:SetText(visualNode.nodeData.name)
+                    
+                    DugisMain.MacrosWrapper.BackToCategoriesButton:Show()
+                    
+                    
+                    Guides.macrolist.scrollBar:SetValue(0)
+                    
+                end, 25, 27, nil, true, 120, 30)
+                
+                RefreshMacrosList()
+            end
+            
+            function MacroBody2MacroIcon(body)
+                local index = MacroBody2MacroIndex(body)
+
+                if index then
+                    local _, texture, _ = GetMacroInfo(index)
+                    return texture
+                end
+            end            
+
+            DugisMain.MacrosWrapper:Show()
+            
+            if not Guides.uiInitialized then
+                RefreshMacrosCategories()    
+                UpdateTexts()
+                
+                UpdateIcons()
+            
+                Guides.macrolist.frame:Hide()
+                
+                MacroEditor:Hide()
+            end
+                
+            local initializeMacroHooksTimer    
+            initializeMacroHooksTimer = C_Timer.NewTicker(1, function()
+                if not Guides.hookedMacroFramefunctions and MacroFrame_Update then
+                    hooksecurefunc("MacroFrame_Update", function()
+                        UpdateIcons()
+                    end)   
+                    
+                    hooksecurefunc("MacroFrame_Show", function()
+                        UpdateIcons()
+                    end)    
+                    
+                    hooksecurefunc("MacroFrameSaveButton_OnClick", function()
+                        UpdateIcons()
+                    end)   
+                    
+                    hooksecurefunc("MacroFrame_DeleteMacro", function()
+                        UpdateIcons()
+                    end)  
+                                  
+                    hooksecurefunc("RefreshPlayerSpellIconInfo", function()
+                        UpdateIcons()
+                    end)  
+                    
+                    hooksecurefunc("MacroFrame_SaveMacro", function()
+                        UpdateIcons()
+                    end)  
+                    
+                    initializeMacroHooksTimer:Cancel()
+                    Guides.hookedMacroFramefunctions = true
+                end
+            end)
+            
+            if not Guides.uiInitialized then
+                textEditor = AceGUI:Create("MultiLineEditBox")
+                textEditor.frame:SetParent(DugisMain.MacrosWrapper)
+                textEditor.editBox:SetCountInvisibleLetters(true)
+                textEditor.frame:SetPoint("TOPLEFT", DugisMain.MacrosWrapper, "TOPLEFT", 380, -60)
+                textEditor.frame:SetWidth(370)
+                textEditor.frame:SetHeight(320)
+                Guides.textEditor = textEditor
+                Guides.macrolist.scrollBar:Hide()
+            else
+                textEditor = Guides.textEditor
+            end
+            
+            if not Guides.uiInitialized then
+                cancelButton = CreateFrame("Button", nil , textEditor.frame, "UIPanelButtonTemplate" or "UIPanelButtonTemplate2")
+                cancelButton:SetPoint("TOPLEFT", textEditor.button, "TOPRIGHT", 10, 0)
+                cancelButton:SetHeight(22)
+                cancelButton:SetWidth(textEditor.label:GetStringWidth() + 24)
+                cancelButton:SetText("Cancel")
+                cancelButton:Show()
+                
+                cancelButton:SetScript("OnClick", function()
+                    textEditor.frame:Hide()
+                    MacroEditor:Show()
+                end)
+                Guides.cancelButton = cancelButton
+            else
+                cancelButton = Guides.cancelButton
+            end
+            
+            if not Guides.uiInitialized then
+                textCancel = cancelButton:GetFontString()
+                textCancel:ClearAllPoints()
+                textCancel:SetPoint("TOPLEFT", cancelButton, "TOPLEFT", 5, -5)
+                textCancel:SetPoint("BOTTOMRIGHT", cancelButton, "BOTTOMRIGHT", -5, 1)
+                textCancel:SetJustifyV("MIDDLE")
+                Guides.textCancel = textCancel
+            else
+                textCancel = Guides.textCancel
+            end
+            
+            textEditor.editBox:HookScript("OnTextChanged", function()
+                  local text = textEditor.editBox:GetText()
+            end)
+            
+            textEditor.button:HookScript("OnClick", function()
+              if textEditor.onAccept then
+                 textEditor.onAccept()
+              end
+            end)
+            
+            local function EditText(caption, initialText, onAccept)
+                textEditor.frame:Show()
+                MacroEditor:Hide()
+                
+                textEditor.label:SetText(caption)
+                textEditor.editBox:SetText(initialText)
+                textEditor.onAccept = function()
+                    textEditor.frame:Hide()
+                    MacroEditor:Show()
+                    
+                    onAccept()
+                end  
+            end
+            
+            local function ShowInfo(parent, text)
+                GameTooltip:SetOwner(DugisMain, "ANCHOR_BOTTOMRIGHT")
+                GameTooltip:AddLine(text, 1, 1, 1, 1, true)
+                GameTooltip:Show()
+                GameTooltip:ClearAllPoints()
+                GameTooltip:SetPoint("BOTTOMRIGHT", DugisMain, "BOTTOMRIGHT", 6, -42)            
+            end
+            
+            local function CreateEditButton(onClick, infoText)
+                local button = GUIUtils:AddButton(MacroEditor, "", 0,  0, 16, 16, 16, 16, onClick
+                , [[Interface/AddOns/DugisGuideViewerZ/Artwork/pen16px.tga]]
+                , [[Interface/AddOns/DugisGuideViewerZ/Artwork/pen16px.tga]]
+                , [[Interface/AddOns/DugisGuideViewerZ/Artwork/pen16px.tga]]
+                )
+                
+                button.button:Show()
+                button.button:ClearAllPoints()
+                
+                button.button:SetScript("OnEnter", function()
+                    ShowInfo(button.button, infoText or "Edit")
+                end)
+                
+                button.button:SetScript("OnLeave", function() GameTooltip:Hide() end)                
+            
+                return button
+            end 
+
+            local function CreateDeleteButton(onClick, infoText)
+                local button = GUIUtils:AddButton(MacroEditor, "", 0,  0, 32, 32, 32, 32, onClick
+                , [[Interface/AddOns/DugisGuideViewerZ/Artwork/trash32px.tga]]
+                , [[Interface/AddOns/DugisGuideViewerZ/Artwork/trash32px.tga]]
+                , [[Interface/AddOns/DugisGuideViewerZ/Artwork/trash32px.tga]]
+                )
+                
+                button.button:Show()
+                button.button:ClearAllPoints()
+                
+                button.button:SetScript("OnEnter", function()
+                    ShowInfo(button.button, infoText or "Delete")
+                end)
+                
+                button.button:SetScript("OnLeave", function() GameTooltip:Hide() end)    
+            
+                return button
+            end  
+
+            if not Guides.uiInitialized then
+                editNameButton = CreateEditButton(function()
+                    textEditor.editBox:SetMaxLetters(30)
+                    EditText("Edit macro name", MacroName:GetText(), function()
+                        local text = textEditor.editBox:GetText()
+                        
+                        DGV.Guides.currentSelectedMacroData.name = text
+                        MacroName:SetText(text)
+                        RefreshMacrosList() 
+                    end)
+                end, "Edit macro name")
+                editNameButton.button:SetPoint("BOTTOMRIGHT", MacroName, "BOTTOMRIGHT", 20, 0)
+                Guides.editNameButton = editNameButton
+            else
+                editNameButton = Guides.editNameButton
+            end
+            
+            if not Guides.uiInitialized then
+                editDescriptionButton = CreateEditButton(function()
+                    textEditor.editBox:SetMaxLetters(500)
+                    EditText("Edit macro '"..MacroName:GetText().."' description", MacroDescription:GetText(), function()
+                        local text = textEditor.editBox:GetText()
+                        DGV.Guides.currentSelectedMacroData.data.macroDescription = text
+                        MacroDescription:SetText(text)
+                        RefreshMacrosList() 
+                    end)
+                end, "Edit macro description")
+                editDescriptionButton.button:SetPoint("BOTTOMRIGHT", MacroDescription, "BOTTOMRIGHT", 20, 0)
+                Guides.editDescriptionButton = editDescriptionButton
+            else
+                editDescriptionButton = Guides.editDescriptionButton
+            end
+            
+            if not Guides.uiInitialized then
+                editCodeButton = CreateEditButton(function()
+                    textEditor.editBox:SetMaxLetters(255)
+                    EditText("Edit macro '"..MacroName:GetText().."' code", MacroCode:GetText(), function()
+                        local text = textEditor.editBox:GetText()
+                        MacroCode:SetText(text)
+                        DGV.Guides.currentSelectedMacroData.data.macroCode = text
+                        RefreshMacrosList() 
+                        UpdateIcons()
+                    end)
+                end, "Edit macro code")
+                editCodeButton.button:SetPoint("BOTTOMRIGHT", MacroCode, "BOTTOMRIGHT", 20, 0)
+                Guides.editCodeButton = editCodeButton
+            else
+                editCodeButton = Guides.editCodeButton
+            end     
+            
+            if not Guides.uiInitialized then
+                deleteMacroButton = CreateDeleteButton(function()
+                    if DGV.Guides.currentSelectedCategory then
+                        local macros = DugisGuideUser.macrosData[DGV.Guides.currentSelectedCategory]
+                        local index = LuaUtils:indexOf(DGV.Guides.currentSelectedMacroData, macros) 
+                        table.remove(macros, index)
+                        RefreshMacrosList()
+                        MacroEditor:Hide()
+                        if Guides.macrolist.scrollBar:IsVisible() then
+                            local val = Guides.macrolist.frame:GetVerticalScrollRange()
+                            Guides.macrolist.scrollBar:SetValue(val - 150)
+                        else
+                            Guides.macrolist.scrollBar:SetValue(0)
+                        end
+                        
+                    end
+                    
+                end, "Delete this macro")
+                deleteMacroButton.button:SetPoint("BOTTOMRIGHT", MacroEditor, "BOTTOMRIGHT", -30, 20)
+                Guides.deleteMacroButton = deleteMacroButton
+            else
+                deleteMacroButton = Guides.deleteMacroButton
+            end
+            
+            Guides.uiInitialized = true
+
+		else
+            DugisMain.MacrosWrapper:Hide()
+            
         end
         
         lastClickedTab = self.text
@@ -4107,7 +4642,7 @@ function Guides:Initialize()
         --Categories Level 0
         if not currentNode and guideTypeAsTopCategory then
             local key = currentGuideType
-            currentNode = {name=guideType2GuideTitle[currentGuideType], nodes={}, data={}}
+            currentNode = {name=guideType2GuideTitle[currentGuideType], textColor={r=1, g=1, b=1}, expandedByDefault=true, disabledMouse=true, nodes={}, data={}}
             guideType2Node[key] = currentNode
             treeData[#treeData + 1] = currentNode
         end

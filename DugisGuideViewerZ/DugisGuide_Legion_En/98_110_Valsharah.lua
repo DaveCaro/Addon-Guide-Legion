@@ -216,12 +216,15 @@ A The Demon's Trail |QID|38753| |N|(npc:92710) in {Moonrest} (65.03, 61.25)| |Z|
 R Andu'talah |QID|38753| |N|Travel to {Andu'talah} (66.99, 60.26) (67.36, 56.45)| |Z|1018 0|
 C The Demon's Trail |QID|38753| |N|Find (npc:111203) in {Andu'talah} (67.36, 56.45)| |Z|1018 0| |NPC|111203|
 T The Demon's Trail |QID|38753| |N|(npc:102938) in {Andu'talah} (67.42, 56.16)| |Z|1018 0| |NPC|102938|
-A Love Lost |QID|41056| |N|(npc:102938) in {Andu'talah} (67.42, 56.16)| |Z|1018 0| |NPC|102938|
+A Love Lost |QID|41056| |N|(npc:102938) in {Andu'talah} (67.42, 56.16)| |Z|1018 0| |NPC|102938| |FAC|Alliance|
+A Love Lost |QID|41054| |N|(npc:102938) in {Andu'talah} (67.42, 56.16)| |Z|1018 0| |NPC|102938| |FAC|Horde|
 
 R Starsong Refuge |QID|41056| |N|Travel to the {Starsong Refuge} (68.99, 50.85)| |Z|1018 0|
 f Starsong Refuge |QID|41056| |N|Grab the flight path for {Starsong Refuge} from (npc:100468) (68.99, 50.85)| |Z|1018 0| |NPC|100468|
-T Love Lost |QID|41056| |N|(npc:103022) at the {Starsong Refuge} (69.51, 49.52)| |Z|1018 0| |NPC|103022|
-A Dark Side of the Moon |QID|41708| |N|(npc:103022) at the {Starsong Refuge} (69.52, 49.51)| |Z|1018 0| |NPC|103022|
+T Love Lost |QID|41056| |N|(npc:103022) at the {Starsong Refuge} (69.51, 49.52)| |Z|1018 0| |NPC|103022| |FAC|Alliance|
+T Love Lost |QID|41054| |N|(npc:103022) at the {Starsong Refuge} (69.51, 49.52)| |Z|1018 0| |NPC|103022| |FAC|Horde|
+A Dark Side of the Moon |QID|41708| |N|(npc:103022) at the {Starsong Refuge} (69.52, 49.51)| |Z|1018 0| |NPC|103022| |FAC|Alliance|
+A Dark Side of the Moon |QID|41890| |N|(npc:103022) at the {Starsong Refuge} (69.52, 49.51)| |Z|1018 0| |NPC|103022| |FAC|Horde|
 A Lost in Retreat |QID|38671| |N|(npc:94863) at the {Starsong Refuge} (69.48, 49.42)| |Z|1018 0| |NPC|94863|
 A Wormtalon Wreckage |QID|41707| |N|(npc:95117) at the {Starsong Refuge} (69.48, 49.42)| |Z|1018 0| |NPC|95117|
 
@@ -229,43 +232,60 @@ R Shadowfen |QID|38671| |N|Travel to {Shadowfen} (65.94, 51.00)| |Z|1018 0|
 C Lost in Retreat |QID|38671| |N|Retrieve 5 (item:136272) in {Shadowfen} (65.94, 51.00)| |Z|1018 0|
 C Wormtalon Wreckage |QID|41707| |N|Slay 15 (npc:95138) or (npc:95152) in {Shadowfen} (65.72, 51.62)| |Z|1018 0| |NPC|95138, 95152|
 N (npc:104728) |QID|41708.1| |N|Meet (npc:104728) in {Shadowfen} (67.02, 50.41)| |Z|1018 0| |NPC|104728|
-C Dark Side of the Moon |QID|41708.2| |N|Speak to (npc:104739) and guard her during her vigil in {Shadowfen} (66.86, 50.27)| |Z|1018 0| |NPC|104739|
-T Dark Side of the Moon |QID|41708| |N|(npc:104885) in {Shadowfen} (66.90, 50.13)| |Z|1018 0| |NPC|104885|
+C Dark Side of the Moon |QID|41708.2| |N|Speak to (npc:104739) and guard her during her vigil in {Shadowfen} (66.86, 50.27)| |Z|1018 0| |NPC|104739|  |FAC|Alliance|
+C Dark Side of the Moon |QID|41890.2| |N|Speak to (npc:104739) and guard her during her vigil in {Shadowfen} (66.86, 50.27)| |Z|1018 0| |NPC|104739|  |FAC|Horde|
+T Dark Side of the Moon |QID|41708| |N|(npc:104885) in {Shadowfen} (66.90, 50.13)| |Z|1018 0| |NPC|104885| |FAC|Alliance|
+T Dark Side of the Moon |QID|41890| |N|(npc:104885) in {Shadowfen} (66.90, 50.13)| |Z|1018 0| |NPC|104885| |FAC|Horde|
 A Regroup at the Refuge |QID|43576| |N|(npc:104885) in {Shadowfen} (66.90, 50.13)| |Z|1018 0| |NPC|104885|
 
 R Starsong Refuge |QID|38671| |N|Travel to the {Starsong Refuge} (68.99, 50.85)| |Z|1018 0|
 T Lost in Retreat |QID|38671| |N|(npc:94863) at the {Starsong Refuge} (69.45, 49.41)| |Z|1018 0| |NPC|94863|
 T Wormtalon Wreckage |QID|41707| |N|(npc:95117) at the {Starsong Refuge} (69.45, 49.41)| |Z|1018 0| |NPC|95117|
 T Regroup at the Refuge |QID|43576| |N|(npc:103022) at the {Starsong Refuge} (69.51, 49.51)| |Z|1018 0| |NPC|103022|
-A Heart of the Nightmare |QID|41724| |N|(npc:103022) at the {Starsong Refuge} (69.51, 49.51)| |Z|1018 0| |NPC|103022|
+A Heart of the Nightmare |QID|41724| |N|(npc:103022) at the {Starsong Refuge} (69.51, 49.51)| |Z|1018 0| |NPC|103022| |FAC|Alliance|
+A Heart of the Nightmare |QID|38675| |N|(npc:103022) at the {Starsong Refuge} (69.51, 49.51)| |Z|1018 0| |NPC|103022| |FAC|Horde|
 
 R Dreadroot |QID|43241| |N|Travel to {Dreadroot} (66.18, 44.87)| |Z|1018 0|
-C Heart of the Nightmare |QID|41724| |N|Track Malfurion's path through the Nightmare in {Dreadroot} (66.18, 44.87)| |Z|1018 0|
-T Heart of the Nightmare |QID|41724| |N|(npc:104728) in {Dreadroot} (66.18, 44.78)| |Z|1018 0| |NPC|104728|
+C Heart of the Nightmare |QID|41724| |N|Track Malfurion's path through the Nightmare in {Dreadroot} (66.18, 44.87)| |Z|1018 0| |FAC|Alliance|
+C Heart of the Nightmare |QID|38675| |N|Track Malfurion's path through the Nightmare in {Dreadroot} (66.18, 44.87)| |Z|1018 0| |FAC|Horde|
+T Heart of the Nightmare |QID|41724| |N|(npc:104728) in {Dreadroot} (66.18, 44.78)| |Z|1018 0| |NPC|104728| |FAC|Alliance|
+T Heart of the Nightmare |QID|38675| |N|(npc:104728) in {Dreadroot} (66.18, 44.78)| |Z|1018 0| |NPC|104728| |FAC|Horde|
 A Reading the Leaves |QID|38684| |N|(npc:92783) in {Dreadroot} (66.18, 44.67)| |Z|1018 0| |NPC|92783|
-A Given to Corruption |QID|41893| |N|(npc:92783) in {Dreadroot} (66.18, 44.67)| |Z|1018 0| |NPC|92783|
+A Given to Corruption |QID|41893| |N|(npc:92783) in {Dreadroot} (66.18, 44.67)| |Z|1018 0| |NPC|92783| |FAC|Alliance|
+A Given to Corruption |QID|41749| |N|(npc:92783) in {Dreadroot} (66.18, 44.67)| |Z|1018 0| |NPC|92783| |FAC|Horde|
 C Flow of the Nightmare |QID|43241| |N|Kill any NPCs and destroy corrupted flowers in {Dreadroot} (62.77, 48.70) to complete this bonus objective.<br/><br/>Tip: Corrupted flowers give an insane amount of completion points| |Z|1018 0| |PL|110| -- Bonus Objective
 
 R Ash'theran |QID|38684| |N|Travel to {Ash'theran} (67.38, 39.09)| |Z|1018 0|
 C Reading the Leaves |QID|38684| |N|Kill (npc:97338) and collect 5 (item:136391) in {Ash'theran} (67.38, 39.09)| |Z|1018 0| |NPC|97338|
-C Given to Corruption |QID|41893| |N|Kill (npc:92989) in the {Cavern of the Keeper} (66.56, 36.77) (68.65, 35.33)| |Z|1018 0| |NPC|92989|
+C Given to Corruption |QID|41893| |N|Kill (npc:92989) in the {Cavern of the Keeper} (66.56, 36.77) (68.65, 35.33)| |Z|1018 0| |NPC|92989| |FAC|Alliance|
+C Given to Corruption |QID|41749| |N|Kill (npc:92989) in the {Cavern of the Keeper} (66.56, 36.77) (68.65, 35.33)| |Z|1018 0| |NPC|92989| |FAC|Horde|
 
 R Dreadroot |QID|38684| |N|Travel to {Dreadroot} (66.18, 44.87)| |Z|1018 0|
 T Reading the Leaves |QID|38684| |N|(npc:92783) in {Dreadroot} (66.18, 44.64)| |Z|1018 0| |NPC|92783|
-T Given to Corruption |QID|41893| |N|(npc:92783) in {Dreadroot} (66.18, 44.64)| |Z|1018 0| |NPC|92783|
+T Given to Corruption |QID|41893| |N|(npc:92783) in {Dreadroot} (66.18, 44.64)| |Z|1018 0| |NPC|92783| |FAC|Alliance|
+T Given to Corruption |QID|41749| |N|(npc:92783) in {Dreadroot} (66.18, 44.64)| |Z|1018 0| |NPC|92783| |FAC|Horde|
 A Softening the Target |QID|43702| |N|(npc:104728) in {Dreadroot} (66.19, 44.76)| |Z|1018 0| |NPC|104728|
 C Softening the Target |QID|43702| |N|Slay 50 Nightmare Creatures in Shala'nir riding the (npc:111359) in {Dreadroot} (66.30, 44.85)| |Z|1018 0| |NPC|111359|
 
 R Shala'nir |QID|43702| |N|Travel to {Shala'nir} (63.23, 42.23)| |Z|1018 0|
 T Softening the Target |QID|43702| |N|(npc:104728) in {Shala'nir} (63.23, 42.23)| |Z|1018 0| |NPC|104728|
-A Close Enough to Touch |QID|38687| |N|(npc:104728) in {Shala'nir} (63.23, 42.23)| |Z|1018 0| |NPC|104728|
-N (npc:104728) |QID|38687.1| |N|Follow (npc:104728) into {Shala'nir} (63.25, 41.29)| |Z|1018 0| |NPC|104728|
-N Search the Inn |QID|38687.2| |N|Search for (npc:111258) at the Inn in {Shala'nir} (62.95, 36.87)| |Z|1018 0| |NPC|111258|
-N Search the Lake |QID|38687.3| |N|Search for (npc:111260) near the Lake in {Shala'nir} (62.37, 33.23)| |Z|1018 0| |NPC|111260|
-N Search the Village |QID|38687.4| |N|Search for (npc:111260) in the Village in {Shala'nir} (59.15, 32.55)| |Z|1018 0| |NPC|111260|
-N (npc:111260) |QID|38687.5| |N|Find (npc:111260) in {Shala'nir} (58.22, 37.45)| |Z|1018 0| |NPC|111260|
+A Close Enough to Touch |QID|38687| |N|(npc:104728) in {Shala'nir} (63.23, 42.23)| |Z|1018 0| |NPC|104728| |FAC|Alliance|
+N (npc:104728) |QID|38687.1| |N|Follow (npc:104728) into {Shala'nir} (62.74, 39.01)| |Z|1018 0| |NPC|104728| |FAC|Alliance|
+N Search the Inn |QID|38687.2| |N|Search for (npc:111258) at the Inn in {Shala'nir} (62.95, 36.87)| |Z|1018 0| |NPC|111258| |FAC|Alliance|
+N Search the Lake |QID|38687.3| |N|Search for (npc:111260) near the Lake in {Shala'nir} (62.37, 33.23)| |Z|1018 0| |NPC|111260| |FAC|Alliance|
+N Search the Village |QID|38687.4| |N|Search for (npc:111260) in the Village in {Shala'nir} (59.15, 32.55)| |Z|1018 0| |NPC|111260| |FAC|Alliance|
+N (npc:111260) |QID|38687.5| |N|Find (npc:111260) in {Shala'nir} (58.22, 37.45)| |Z|1018 0| |NPC|111260| |FAC|Alliance|
+
+A Close Enough to Touch |QID|41763| |N|(npc:104728) in {Shala'nir} (63.23, 42.23)| |Z|1018 0| |NPC|104728| |FAC|Horde|
+N (npc:104728) |QID|41763.1| |N|Follow (npc:104728) into {Shala'nir} (62.74, 39.01)| |Z|1018 0| |NPC|104728| |FAC|Horde|
+N Search the Inn |QID|41763.2| |N|Search for (npc:111258) at the Inn in {Shala'nir} (62.95, 36.87)| |Z|1018 0| |NPC|111258| |FAC|Horde|
+N Search the Lake |QID|41763.3| |N|Search for (npc:111260) near the Lake in {Shala'nir} (62.37, 33.23)| |Z|1018 0| |NPC|111260| |FAC|Horde|
+N Search the Village |QID|41763.4| |N|Search for (npc:111260) in the Village in {Shala'nir} (59.15, 32.55)| |Z|1018 0| |NPC|111260| |FAC|Horde|
+N (npc:111260) |QID|41763.5| |N|Find (npc:111260) in {Shala'nir} (58.22, 37.45)| |Z|1018 0| |NPC|111260| |FAC|Horde|
+
 C Ruins of Shala'nir |QID|38748| |N|Kill any NPCs and destroy Nightmare Totems in {Shala'nir} to complete this bonus objective (61.65, 35.11)| |Z|1018 0| |PL|110| -- Bonus Objective
-T Close Enough to Touch |QID|38687| |N|(npc:104799) in {Shala'nir} (57.83, 38.58)| |Z|1018 0| |NPC|104799|
+T Close Enough to Touch |QID|38687| |N|(npc:104799) in {Shala'nir} (57.83, 38.58)| |Z|1018 0| |NPC|104799| |FAC|Alliance|
+T Close Enough to Touch |QID|41763| |N|(npc:104799) in {Shala'nir} (57.83, 38.58)| |Z|1018 0| |NPC|104799| |FAC|Horde|
 A The Fate of Val'sharah |QID|38743| |N|(npc:104799) in {Shala'nir} (57.83, 38.58)| |Z|1018 0| |NPC|104799|
 
 R Temple of Elune |QID|38743.1| |N|Speak to (npc:104799) in {Shala'nir} for free ride to the {Temple of Elune} (57.83, 38.58)| |Z|1018 0| |NPC|104799|

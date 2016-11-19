@@ -1,4 +1,4 @@
-﻿local DGV = DugisGuideViewer
+local DGV = DugisGuideViewer
 if not DGV then return end
 local L = DugisLocals
 local _

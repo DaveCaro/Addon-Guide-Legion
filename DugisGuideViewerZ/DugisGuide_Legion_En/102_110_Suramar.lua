@@ -1095,8 +1095,8 @@ C Essence Triangulation |QID|44752| |N|Help Thalyssra collect 3 of Vanthir's Arc
 R Evermoon Terrace |TID|44723| |N|Use the teleporter to the get to the top of the  {Evermoon Terrace} (51.5,79.0) (52.05,79.15)| |Z|1033 0| |REACH| |PRE|44814|
 T Essence Triangulation |QID|44752| |N|(npc:97140) in  {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|97140| |PRE|44814|
 A On Public Display |QID|44753| |N|(npc:97140) in  {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|97140| |PRE|44814|
-N (npc:97140) |QID|44753.1| |N|Speak to (npc:97140) in  {Evermoon Terrace}, and say "I am ready, Thalyssra"| |Z|1033 0| |NPC|97140| |PRE|44814| |POI|
-C On Public Display |QID|44753.2| |N|Track Vanthir's Location. Wait for the dialog to end| |Z|1033 0| |NPC|97140| |PRE|44814| |POI|
+N (npc:97140) |QID|44753.1| |N|Speak to (npc:97140) in  {Evermoon Terrace}, and say "I am ready, Thalyssra" (52.23,79.04)| |Z|1033 0| |NPC|97140| |PRE|44814| |POI|
+C On Public Display |QID|44753.2| |N|Track Vanthir's Location. Wait for the dialog to end (52.29,79.01)| |Z|1033 0| |NPC|97140| |PRE|44814| |POI|
 T On Public Display |QID|44753| |N|(npc:97140) in  {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|97140| |PRE|44814|
 A Waxing Crescent |QID|44754| |N|(npc:97140) in  {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|97140| |PRE|44814|
 K (npc:115607) |QID|44754.1| |N|Kill (npc:115607) and collect (item:142281) in {Terrace of Order}| |Z|1033 0| |NPC|115607| |PRE|44814| |POI|
@@ -1127,9 +1127,9 @@ N (npc:115521) |QID|44831.1| |N|Find (npc:115521) in {The Grand Promenade} (40.6
 A Crystal Clearing |QID|44843| |N|(npc:115521) in {The Grand Promenade} (40.65, 64.49)| |Z|1033 0| |NPC|115521| |PRE|44756|
 A Powering Down the Portal |QID|44844| |N|(npc:115521) in {The Grand Promenade} (40.65, 64.49)| |Z|1033 0| |NPC|115521| |PRE|44756|
 N As you go...  |AYG|44844| |N|Rally on 8 (npc:115279) in {The Grand Promenade}| |NPC|115279| |PRE|44756| |QID|41916|
-K (npc:107217) |QID|44844.1| |N|Kill (npc:107217) in {The Grand Promenade}| |Z|1033 0| |NPC|107217| |PRE|44756| |POI|
+K (npc:107217) |QID|44844.1| |N|Kill (npc:107217) in {The Grand Promenade} (40.95,66.34)| |Z|1033 0| |NPC|107217| |PRE|44756| |POI|
 N (npc:111318) |QID|45056| |N|Find (npc:111318) inside the house in {The Grand Promenade}| |Z|1033 0| |NPC|111318| |PRE|44756| |POI|
-C Powering Down the Portal |QID|44844| |N|Click on the green floating crystal to destroy 4 portals in {The Grand Promenade}| |Z|1033 0| |PRE|44756| |POI|
+C Powering Down the Portal |QID|44844| |N|Click on the green floating crystal to destroy 4 portals in {The Grand Promenade} (40.40,65.85)| |Z|1033 0| |PRE|44756| |POI|
 T Crystal Clearing |QID|44843| |N|(npc:115521) in {The Grand Promenade} (40.65, 64.49)| |Z|1033 0| |NPC|115521| |PRE|44756|
 T Powering Down the Portal |QID|44844| |N|(npc:115521) in {The Grand Promenade} (40.65, 64.49)| |Z|1033 0| |NPC|115521| |PRE|44756|
 C A Better Future |QID|41916| |N|Rally on 8 (npc:115279) in {The Grand Promenade}| |NPC|115279| |POI| |PRE|44756|
@@ -1144,7 +1144,7 @@ A Shield, Meet Spell |QID|44842| |N|(npc:115517) in {Suramar City} (46.48, 58.21
 K (npc:116043) |N|Use the (item:142260) to break the shield and kill (npc:116043) in {The Grand Promenade}| |POI| |NPC|116043| |PRE|44756|
 T Shield, Meet Spell |QID|44842| |N|(npc:115517) in {Suramar City} (46.48, 58.21) |Z|1033 0| |NPC|115517| |PRE|44756|
 
-R Meredil |N|Travel to {Meredil} (42.90, 51.45)| |Z|1033 0| |PRE|44756|
+R Meredil |QID|44845| |N|Travel to {Meredil} (42.90, 51.45)| |Z|1033 0| |PRE|44756|
 T Taking a Promenade |QID|44831| |N|(npc:70360) in {Meredil} (42.90, 51.45)| |Z|1033 0| |NPC|70360| |PRE|44756|
 T Down to Business |QID|43810| |N|(npc:104799) in {Meredil} (41.68, 51.63)| |Z|1033 0| |NPC|104799| |PRE|44756|
 T A Better Future |QID|41916| |N|(npc:97140) in {Meredil} (41.68, 51.63)| |Z|1033 0| |NPC|97140| |PRE|44756|
@@ -1156,6 +1156,65 @@ T Break an Arm |QID|44845| |N|(npc:97140) in {Meredil} (41.68, 51.63)| |Z|1033 0
 C Stabilizing Suramar |QID|45316| |N|Complete 10 World Quests in (map:1033)| |Z|1033 0| |NPC|97140| |PRE|44756|
 T Stabilizing Suramar |QID|45316| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44756|
 
+--Crafting War
+
+A Feeding the Rebellion |QID|45265| |N|(npc:97140) in {Shal'Aran}<br/><br/>This quest is not available until November 22 (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|45316|
+C Feeding the Rebellion |QID|45265| Use (item:143597) on a (npc:111901) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|111901| |PRE|45316| |U|143597|
+T Feeding the Rebellion |QID|45265| |N|(npc:97140) in {Shal'Aran}<br/><br/>This quest is not available until November 22 (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|45316|
+
+A Tyrande's Command |QID|44743| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|45316| |OID|44859|
+A Liadrin's Command |QID|44859| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|45316| |OID|44743|
+A Mouths to Feed |QID|44870| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|45316|
+T Mouths to Feed |QID|44870| |N|(npc:115371) in {Shal'Aran} (37.06,46.58)| |Z|1033 0| |NPC|115092| |PRE|45316|
+A Oculeth Ex Machina |QID|44873| |N|(npc:115371) in {Shal'Aran} (37.06,46.58)| |Z|1033 0| |NPC|115092| |PRE|45316|
+N (npc:(npc:101499)) |QID|44873| |N|Speak with (npc:101499) in {Shal'Aran} to teleport (37.12,46.61)| |Z|1033 0| |NPC|115092| |PRE|45316| |POI|
+
+T Oculeth Ex Machina |QID|44873| |N|(npc:115371) in {Ley-Ruins of Zarkhenar} (59.79,13.83)| |Z|1015 0| |NPC|115092| |PRE|45316| |POI|
+A Unbeleyvable |QID|44874| |N|(npc:115371) in {Ley-Ruins of Zarkhenar} (59.79,13.83)| |Z|1015 0| |NPC|115092| |PRE|45316| 
+C Unbeleyvable |QID|44874| |N|Follow (npc:115371) and click on the ley line taps in {Ley-Ruins of Zarkhenar} (59.79,13.83)| |Z|1015 0| |NPC|115092| |PRE|45316| |POI|
+T Unbeleyvable |QID|44874| |N|(npc:115371) in {Ley-Ruins of Zarkhenar} (60.11,13.95)| |Z|1015 0| |NPC|115092| |PRE|45316| 
+A The Art of Flow |QID|44875| |N|(npc:115371) in {Ley-Ruins of Zarkhenar} (60.11,13.95)| |Z|1015 0| |NPC|115092| |PRE|45316| 
+C The Art of Flow |QID|44875| |N|Speak to (npc:115371) to start the ritual in {Ley-Ruins of Zarkhenar} and protect him until the ritual is complete<br/><br/>Complete 3 rituals| |Z|1015 0| |NPC|115092| |PRE|45316| |POI|
+T The Art of Flow |QID|44875| |N|(npc:115371) in {Ley-Ruins of Zarkhenar} (59.82,14.13)| |Z|1015 0| |NPC|115092| |PRE|45316| 
+A A Dance With Dragons |QID|44876| |N|(npc:115701) in {Ley-Ruins of Zarkhenar} (59.82,14.13)| |Z|1015 0| |NPC|115701| |PRE|45316| 
+
+R Meredil |TID|44928| |N|Speak with (npc:90859) to ride back to {Meredil} (59.19, 12.93)| |Z|1015 0| |NPC|90859| |PRE|45316| |V|
+T Tyrande's Command |QID|44743| |N|(npc:114838) in {Meredil} (41.64, 51.51)| |Z|1033 0| |NPC|114838| |PRE|45316| |OID|44859|
+T Liadrin's Command |QID|44859| |N|(npc:114838) in {Meredil} (41.64, 51.51)| |Z|1033 0| |NPC|114838| |PRE|45316| |OID|44743|
+A Trolling Them |QID|44858| |N|(npc:114838) in {Meredil} (41.64, 51.51)| |Z|1033 0| |NPC|114838| |PRE|45316| |OID|44860|
+A Trolling Them |QID|44860| |N|(npc:114838) in {Meredil} (41.64, 51.51)| |Z|1033 0| |NPC|114838| |PRE|45316| |OID|44858|
+A Something's Not Quite Right... |QID|44928| |N|(npc:108089) in {Meredil} (41.68, 51.64)| |NPC|108089| |Z|1033 0| |PRE|45316|
+C Something's Not Quite Right... |QID|44928| |N|Look for shadowy (npc:114865) figure and use the (item:142375) to expose and kill then| |NPC|114865| |Z|1033 0| |PRE|45316| |POI|
+C Trolling Them |QID|44858| |N|Click on 5 insult objects on the ground in {Meredil}| |Z|1033 0| |NPC|114838| |PRE|45316| |OID|44860| |POI|
+C Trolling Them |QID|44860| |N|Click on 5 insult objects on the ground in {Meredil}| |Z|1033 0| |NPC|114838| |PRE|45316| |OID|44858| |POI|
+T Trolling Them |QID|44858| |N|(npc:114838) in {Meredil} (41.64, 51.51)| |Z|1033 0| |NPC|114838| |PRE|45316| |OID|44860|
+T Trolling Them |QID|44860| |N|(npc:114838) in {Meredil} (41.64, 51.51)| |Z|1033 0| |NPC|114838| |PRE|45316| |OID|44858|
+T Something's Not Quite Right... |QID|44928| |N|(npc:108089) in {Meredil} (41.68, 51.64)| |NPC|108089| |Z|1033 0| |PRE|45316|
+
+A Arming the Rebels |QID|44861| |N|(npc:114838) in {Meredil} (41.64, 51.51)| |Z|1033 0| |NPC|114838| |PRE|45316| |OID|44862|
+A Arming the Rebels |QID|44862| |N|(npc:114838) in {Meredil} (41.64, 51.51)| |Z|1033 0| |NPC|114838| |PRE|45316| |OID|44861|
+T Arming the Rebels |QID|44861| |N|(npc:116256) in {Meredil} (39.67, 51.00)| |Z|1033 0| |NPC|116256| |PRE|45316| |OID|44862| |POI|
+T Arming the Rebels |QID|44862| |N|(npc:116256) in {Meredil} (39.67, 51.00)| |Z|1033 0| |NPC|116256| |PRE|45316| |OID|44861| |POI|
+
+A Citizens' Army |QID|44827| |N|(npc:116256) in {Meredil} (39.67, 51.00)| |Z|1033 0| |NPC|116256| |PRE|45316|
+A We Need Weapons |QID|44829| |N|(npc:101782) in {Meredil} (39.88, 51.53)| |Z|1033 0| |NPC|101782| |PRE|45316|
+A Learning From the Dead |QID|44830| |N|(npc:107997) in {Meredil} (39.83, 51.29)| |Z|1033 0| |NPC|107997| |PRE|45316|
+
+R Black Rook Hold |QID|44827| |N|Travel to {Black Rook Hold} (39.35, 52.57)| |Z|1018 0| |PRE|45316|
+N As you go... |AYG|44829| |N|Collect 5 (item:142258) from the ground in {Black Rook Hold}| |QID|44827| |PRE|45316|
+C We Need Weapons |QID|44829| |N|Collect 3 Weapon Caches at {Black Rook Hold}| |Z|1033 0| |PRE|45316| |POI|
+C Learning From the Dead |QID|44830| |N|Collect 5 (item:142258) from the ground in {Black Rook Hold}| |Z|1033 0| |PRE|45316| |POI|
+C Citizens' Army |QID|44827| |N|Kill any 20 of Ravencrest's forces in {Black Rook Hold}| |Z|1033 0| |PRE|45316| |POI|
+
+R Meredil |QID|44790| |N|Travel to {Meredil} (39.67, 51.00)| |Z|1033 0| |PRE|45316|
+T Citizens' Army |QID|44827| |N|(npc:116256) in {Meredil} (39.67, 51.00)| |Z|1033 0| |NPC|116256| |PRE|45316|
+T We Need Weapons |QID|44829| |N|(npc:101782) in {Meredil} (39.88, 51.53)| |Z|1033 0| |NPC|101782| |PRE|45316|
+T Learning From the Dead |QID|44830| |N|(npc:107997) in {Meredil} (39.83, 51.29)| |Z|1033 0| |NPC|107997| |PRE|45316|
+A Trial by Demonfire |QID|44790| |N|(npc:107997) in {Meredil} (39.83, 51.29)| |Z|1033 0| |NPC|107997| |PRE|45316|
+C Trial by Demonfire |QID|44790| |N|Follow (npc:107997) and kill (npc:116257) in {Meredil}| |Z|1033 0| |NPC|116257| |PRE|45316| |POI|
+T Trial by Demonfire |QID|44790| |N|(npc:107997) in {Meredil}| |Z|1033 0| |NPC|107997| |PRE|45316| |POI|
+T A Dance With Dragons |QID|44876| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |PRE|45316|
+		
 N Gain Reputation |N|You will need 7000/21000 Revered status with (fac:1859) faction to continue| |OID|44152| 
 N Gain Reputation |N|You will need 20000/21000 Revered status with (fac:1859) faction to continue| |OID|43502| 
 C Redemption for the Fallen |QID|44563| |N|Reach Exalted status with with (fac:1859)|
