@@ -273,8 +273,8 @@ EDGE:Register('DRUID:Leveling:Feral' ,{
 		return EDGE:FillTemplate(f,'TalentsAndGlyphs',nil,nil,Talents,nil,nil)
 	end},
 	{'Rotation', function(f)
-		local SingleTargetRotation = "- Rake to DOT target and make Shred do 20% more damage\n- Shred as your main damage ability and build combo points\n3 - Rip if target has a lot of health, otherwise Ferocious Bite\n- Ferocious Bite refreshes Rip.\n\n- Prowl for 20% damage boost on opening move\n- Tiger's Fury for energy and damage boost\n- Berserk ";
-		local MultiTargetRotation = "3+ Targets:\n- Use Bear Form.\n- Thrash to apply dots\n- Swipe";
+		local SingleTargetRotation = "1 - Rake to DOT target and make Shred do 20% more damage\n2 - Shred as your main damage ability and build combo points\n3 - Rip if target has a lot of health, otherwise Ferocious Bite\n\n- Prowl for 20% damage boost on opening move\n- Tiger's Fury for energy and damage boost\n- Berserk ";
+		local MultiTargetRotation = "- Thrash to apply dots\n- Swipe";
 		return EDGE:FillTemplate(f,'PlayStyles',SingleTargetRotation,MultiTargetRotation,nil)
 	end},
 	{'Buffs', function(f)

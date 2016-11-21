@@ -273,8 +273,8 @@ EDGE:Register('ROGUE:Leveling:Outlaw' ,{
 		return EDGE:FillTemplate(f,'TalentsAndGlyphs',nil,nil,Talents,nil,nil)
 	end},
 	{'Rotation', function(f)
-		local SingleTargetRotation = "- Saber slash to build combo points. Then use either Roll the Bones or Run Through as your finisher.\n- Pistol Shot only when Saber Slash procs.\n- If your constantly fighting mobs then go for a 5 point Roll the Bones. Otherwise use just enough combo points so your buffs end when the mob dies.\n - Marked for Death your target when possible\n- Do not use Roll the Bones to hunt for the best buffs.";
-		local MultiTargetRotation = "2+ Targets:\n- Single target rotation.\n- Cannonball Barrage for big bursts.\n\n3+ Targets:\n- Activate Blade Flurry\n- Cannonball Barrage for big bursts.";
+		local SingleTargetRotation = "- Marked for Death target\n- Do not use Roll the Bones to hunt for the best buffs\n- Cannonball Barrage for big burst";
+		local MultiTargetRotation = "";
 		local EffectiveCooldowns = "";
 		return EDGE:FillTemplate(f,'PlayStyles',SingleTargetRotation,MultiTargetRotation,nil)
 	end},

@@ -273,8 +273,8 @@ EDGE:Register('MAGE:Leveling:Fire' ,{
 		return EDGE:FillTemplate(f,'TalentsAndGlyphs',nil,nil,Talents,nil,nil)
 	end},
 	{'Rotation', function(f)
-		local SingleTargetRotation = "\n- Combustion and Time Warp before battles\n- Use Living Bomb to begin. \n- Follow up with Phoenix's Flames and Fire Blast\n- Use Hot Streak Procs on Pyroblast or Flamestrike if 3+ targets.\n- Use Dragon's Breath and Cinderstorm even on 1 target\n- Fireball as your filler\n- Scorch if you need to run.\n- Use Ice Barrier long before your next fight so when the shield breaks you have another one ready.";
-		local MultiTargetRotation = "\n- Fire Mage has great AoE damage. You can comfortably deal with 3 mobs at once.";
+		local SingleTargetRotation = "1 - Rune of Power\n2 - Combustion\n3 - Pyroblast (with Hot Streak)\n4 - Flame On\n5 - Dragon's Breath\n6 - Fire Blast\n7 - Fireball\n8 - Scorch";
+		local MultiTargetRotation = "";
 		return EDGE:FillTemplate(f,'PlayStyles',SingleTargetRotation,MultiTargetRotation,nil)
 	end},
 	{'Buffs',function(f)

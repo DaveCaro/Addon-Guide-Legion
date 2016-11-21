@@ -180,15 +180,15 @@ EDGE:Register('SHAMAN:Leveling:Enhancement' ,{
 			196884, -- Feral Lunge*
 			192058, -- Lightning Surge Totem
 			192087, -- Ancestral Swiftness*
-			210731, -- Empowered Stormlash
+			17364, -- Stormstrike*
 			192246, -- Crashing Storm
 			197992, -- Landslide
 		};
 		return EDGE:FillTemplate(f,'TalentsAndGlyphs',nil,nil,Talents,nil,nil)
 	end},
 	{'Rotation', function(f)
-		local SingleTargetRotation = "1 - Boulderfist and Landslide buffs\n2 - Frostbrand for Hailstorm buff\n3 - Flametongue buff\n4 - Feral Spirit\n5 - Stormstrike\n- Crash Lightning for buff\n6 - Lava Lash";
-		local MultiTargetRotation = "- Boulderfist for buff and Maelstrom.\n- Crash Lightning for AoE and to make Stormstrike and Lava Lash hit multiple targets.\n- Stormstrike and Lava Lash.";
+		local SingleTargetRotation = "1 - Boulderfist and Landslide buffs\n2 - Frostbrand for Hailstorm buff\n3 - Flametongue buff\n4 - Feral Spirit\n5 - Stormstrike with Stormbringer procs\n6 - Crash Lightning\n7 - Lava Lash \n9 - Flametongue";
+		local MultiTargetRotation = "";
 		local EffectiveCooldowns = "";
 		return EDGE:FillTemplate(f,'PlayStyles',SingleTargetRotation,MultiTargetRotation,nil)
 	end},
@@ -280,7 +280,7 @@ EDGE:Register('SHAMAN:PvE:Enhancement' ,{
 		return EDGE:FillTemplate(f,'TalentsAndGlyphs',nil,nil,Talents,nil,nil)
 	end},
 	{'Rotation', function(f)
-		local SingleTargetRotation = "1 - Boulderfist and Landslide buffs\n2 - Frostbrand for Hailstorm buff\n4 - Flametongue buff\n5 - Feral Spirit\n6 - Stormstrike\n7 - Crash Lightning\n8 - Lava Lash";
+		local SingleTargetRotation = "1 - Boulderfist and Landslide buffs\n2 - Frostbrand for Hailstorm buff\n3 - Boulderfist (if less than 130 Maelstrom and you have 2 charges)\n4 - Flametongue buff\n5 - Feral Spirit\n6 - Stormstrike with Stormbringer procs\n7 - Crash Lightning\n8 - Lava Lash with 110+ Maelstrom\n9 - Boulderfist\n10 - Flametongue";
 		local MultiTargetRotation = "";
 		local EffectiveCooldowns = "";
 		return EDGE:FillTemplate(f,'PlayStyles',SingleTargetRotation,MultiTargetRotation,nil)

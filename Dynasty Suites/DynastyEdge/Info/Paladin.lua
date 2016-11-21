@@ -187,8 +187,8 @@ EDGE:Register('PALADIN:Leveling:Retribution' ,{
 		return EDGE:FillTemplate(f,'TalentsAndGlyphs',nil,nil,Talents,nil,nil)
 	end},
 	{'Rotation', function(f)
-		local SingleTargetRotation = "- Judgement > Zeal > Blade of Wrath > Templar's Verdict > Zeal > Blade of Wrath \n- Wake of Ashes when possible.\n- Justicar's Vengeance instead of Templar's Verdict if you have low health.\n- Lay on Hands or Bubble if about to die.";
-		local MultiTargetRotation = "- 3+ Targets: Judgement > Zeal > Blade of Wrath > Zeal > Divine Storm /n- Continue using Zeal and Blade of Wrath to build Holy Power and use Divine Storm\n- Wake of Ashes when possible.";
+		local SingleTargetRotation = "1 - Zeal and Blade of Wrath for Holy Power\n2 - Judgment to debuff\n4 - Templar's Verdict\n5 - Justicar's Vengeance with proc";
+		local MultiTargetRotation = "";
 		local EffectiveCooldowns = "";
 		return EDGE:FillTemplate(f,'PlayStyles',SingleTargetRotation,MultiTargetRotation,no)
 	end},

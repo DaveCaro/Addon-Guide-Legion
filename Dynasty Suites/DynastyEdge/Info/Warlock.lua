@@ -273,8 +273,8 @@ EDGE:Register('WARLOCK:Leveling:Affliction' ,{
 		return EDGE:FillTemplate(f,'TalentsAndGlyphs',nil,nil,Talents,nil,nil)
 	end},
 	{'Rotation', function(f)
-		local SingleTargetRotation = "- Agony > Corruption > Siphon Life > Drain Soul.\n- Unstable Affliction as Soul Shard dump.\n- Phantom Singularity when possible.\n- Reap Souls when possible.";
-		local MultiTargetRotation = "- Agony > Corruption > Siphon Life all targets\n- Phantom Sigularity when possible.\n- Unstable affliction as filler.\n- Drain Soul if taking too much damage.";
+		local SingleTargetRotation = "- DOT your targets with Agony, Corruption and Siphon Life\n- Unstable Affliction for extra damage\n- Drain Soul for soul shards\n- Phantom Singularity for multi target";
+		local MultiTargetRotation = "";
 		local EffectiveCooldowns = "";
 		return EDGE:FillTemplate(f,'PlayStyles',SingleTargetRotation,MultiTargetRotation,nil)
 	end},

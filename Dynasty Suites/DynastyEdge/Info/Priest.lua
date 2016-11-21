@@ -186,8 +186,8 @@ EDGE:Register('PRIEST:Leveling:Shadow' ,{
 	
 	end},
 	{'Rotation', function(f)
-		local SingleTargetRotation = "- Begin with Vampiric Touch > Shadow Word: Pain > Mind Blast.\n- Mind Flay filler.\n- Void Eruption then Void Torrent when Insanity reaches 70.\n- Vampiric Embrace when life gets low.";
-		local MultiTargetRotation = "- Shadow Word: Pain and Vampiric Touch all targets.\n- Try to Void Eruption with both Vampiric Touch and Shadow Word: Pain on all targets.\n- Mind Sear instead of Mind Flay if 2+ targets";
+		local SingleTargetRotation = "1 - Void Eruption\n2 - Mind Blast\n3 - Shadow Word: Pain\n4 - Vampiric Touch\n5 - Mind Flay\n6 - Void Bolt\n7 - Shadowfiend\n8 - Shadow Word: Death\n9 - Mind Blast\n10 - Mind Flay";
+		local MultiTargetRotation = "";
 		local EffectiveCooldowns = "";
 		return EDGE:FillTemplate(f,'PlayStyles',SingleTargetRotation,MultiTargetRotation,nil)
 	

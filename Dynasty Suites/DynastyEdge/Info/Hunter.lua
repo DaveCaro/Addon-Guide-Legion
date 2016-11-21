@@ -258,17 +258,17 @@ EDGE:Register('HUNTER:PvP:Survival' ,{
 	
 });
 ]]
-EDGE:Register('HUNTER:Leveling:Beast Mastery' ,{
-	{'Stat Priority', "Agility\nHaste\nVersatility\nMastery\nCritical Strike"},
+EDGE:Register('HUNTER:Leveling:Marksmanship' ,{
+	{'Stat Priority', "Agility\nMastery\nHaste\nVersatility\nCritical Strike"},
 	{'Talents', function(f)
 		local Talents = {
-			155228, -- Way of the Cobra*
-			217200, -- Dire Frenzy*
+			155228, -- Lone Wolf
+			194599, -- Black Arrow*
 			109215, -- Posthaste
-			130392, -- Blink Strikes*
-			24394, -- Intimidation*
-			120360, -- Barrage*
-			199532, -- Killer Cobra*
+			213423, -- Patient Sniper
+			199483, -- Camouflage*
+			120360, -- Barrage
+			214579, -- Sidewinders
 		};
 		return EDGE:FillTemplate(f,'TalentsAndGlyphs',nil,nil,Talents,nil,nil)
 	end},

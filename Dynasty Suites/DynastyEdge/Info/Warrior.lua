@@ -216,7 +216,7 @@ EDGE:Register('WARRIOR:PvP:Protection' ,{
 });
 ]]
 EDGE:Register('WARRIOR:Leveling:Fury' ,{
-	{'Stat Priority', "1 - Strength\n2 - Haste (38%)\n3 - Critical Strike (30%)\n4 - Mastery\n5 - Versatility\n6 - Haste\n7 - Critical Strike"},
+	{'Stat Priority', "1 - Strenght\n2 - Haste (38%)\n3 - Critical Strike (30%)\n4 - Mastery\n5 - Versatility\n6 - Haste\n7 - Critical Strike"},
 	{'Talents', function(f)
 		local Talents = {
 			215556, -- War Machine*
@@ -230,17 +230,8 @@ EDGE:Register('WARRIOR:Leveling:Fury' ,{
 		return EDGE:FillTemplate(f,'TalentsAndGlyphs',nil,nil,Talents,nil,nil)
 	end},
 	{'Rotation', function(f)
-		local SingleTargetRotation = "- Charge > Raging Blow > Bloodthirst is usual opener.\n- Furious Slash as filler.\n- Whirlwind on Wrecking Ball procs.\n- Bloodthirst after a charge for 300% healing.";
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		local MultiTargetRotation = "- Whirlwind will be your main dps.\n- Use a whirlwind before a Bloodthirst or Rampage to make them hit 4 other targets. Ideally Whirlwind > Bloodthirst > Whirlwind > Rampage\n- Odyn's Fury for large amounts of AoE damage.\n ";
+		local SingleTargetRotation = "- Odyn's Fury for large amounts of AoE damage. Combine with Battle Cry for more damage.\n- Whirlwind for Meat Cleaver";
+		local MultiTargetRotation = "";
 		local EffectiveCooldowns = "";
 		return EDGE:FillTemplate(f,'PlayStyles',SingleTargetRotation,MultiTargetRotation,nil)
 	end},
