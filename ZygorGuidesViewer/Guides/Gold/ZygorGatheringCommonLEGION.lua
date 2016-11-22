@@ -380,13 +380,17 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Shal'dorei Silk",{
 	},[[
 	step
 	label "Start_Farming_Shaldorei_Silk"
-		Follow the path down |goto Val'sharah/0 68.40,50.58 < 20 |only if walking
-		Kill Wormtalon enemies around this area
+		map Highmountain/0
+		path	follow smart; loop off; ants curved; dist 30
+		path	52.31,36.51	52.74,35.07	52.50,34.00
+		path	51.76,34.16	50.53,33.75	49.71,35.51
+		path	48.89,36.53	46.51,37.97	45.37,38.88
+		kill Crawliac Hagfeather##95266+, Crawliac Deathscreamer##95265+, Skywhisker Loyalist##95277+
 		|tip Enchant your shoulders with the "Enchant Shoulder - Boon of the Scavenger" enchant.
 		|tip This will allow Scavenged Cloth packs to drop for you, which contain a good amount of Shal'dorei Silk.
 		|tip You can create the enchant, if you have Enchanting.
 		|tip You can also purchase it from the Auction House.
-		goldcollect 300 Shal'dorei Silk##124437 |n |goto Val'sharah/0 67.13,51.97
+		goldcollect 300 Shal'dorei Silk##124437 |n
 		goldtracker
 		|tip
 		_Ready to Sell?_

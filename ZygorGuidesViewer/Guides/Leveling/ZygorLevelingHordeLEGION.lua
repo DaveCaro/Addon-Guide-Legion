@@ -488,8 +488,8 @@ Take the Portal to Dalaran over Karazhan in the Cleft of Shadow |q 44184/1 |goto
 step
 Enter the building |goto Deadwind Pass/21 45.72,43.28 < 10
 Watch the dialogue
-Witness Dalaran's Teleportation |q 44663/1 |goto Deadwind Pass/21 49.15,47.86 |only if havequest(44663) or completedq(44663)
-Witness Dalaran's Teleportation |q 44184/1 |goto Deadwind Pass/21 49.15,47.86 |only if havequest(44184) or completedq(44184)
+Witness Dalaran's Teleportation |q 44663/2 |goto Deadwind Pass/21 49.15,47.86 |only if havequest(44663) or completedq(44663)
+Witness Dalaran's Teleportation |q 44184/2 |goto Deadwind Pass/21 49.15,47.86 |only if havequest(44184) or completedq(44184)
 step
 talk Emissary Auldbridge##111109
 turnin In the Blink of an Eye##44663 |goto Dalaran L/10 57.57,45.75 |only if havequest(44663) or completedq(44663)
@@ -2116,8 +2116,8 @@ Take the Portal to Dalaran over Karazhan in the Cleft of Shadow |q 44184/1 |goto
 step
 Enter the building |goto Deadwind Pass/21 45.72,43.28 < 10
 Watch the dialogue
-Witness Dalaran's Teleportation |q 44663/1 |goto Deadwind Pass/21 49.15,47.86 |only if havequest(44663) or completedq(44663)
-Witness Dalaran's Teleportation |q 44184/1 |goto Deadwind Pass/21 49.15,47.86 |only if havequest(44184) or completedq(44184)
+Witness Dalaran's Teleportation |q 44663/2 |goto Deadwind Pass/21 49.15,47.86 |only if havequest(44663) or completedq(44663)
+Witness Dalaran's Teleportation |q 44184/2 |goto Deadwind Pass/21 49.15,47.86 |only if havequest(44184) or completedq(44184)
 step
 talk Emissary Auldbridge##111109
 turnin In the Blink of an Eye##44663 |goto Dalaran L/10 57.57,45.75 |only if havequest(44663) or completedq(44663)
@@ -2183,7 +2183,7 @@ Go to the Great Mead Hall |q 39654/2 |goto 58.45,76.79
 step
 _Choose What to Do Next:_
 |tip Click the line below for the activity you would like to do.
-Pursue Artifact Weapons |confirm |next "Artifacts_Warrior" |only if level >= 102
+Pursue Artifact Weapons |confirm |next "Artifacts_Warrior"
 Choose Next Leveling Zone |confirm |next "Choose_Leveling_Zone_Warrior"
 |only if raceclass("Warrior") and level >= 101
 step
@@ -2201,8 +2201,8 @@ Now you will Choose Your Artifact Weapon:
 |tip Choose Protection if your Warrior has the Protection specialization.
 |tip Choose Fury if your Warrior has the Fury specialization.
 Choose your Artifact |q 40579/1 |goto 58.35,84.67 |only if havequest(40579)
-Choose your Artifact |q 43949/1 |goto 58.35,84.67 |only if havequest(43949)
-Choose your Artifact |q 44417/1 |goto 58.35,84.67 |only if havequest(44417)
+Choose your Artifact |q 43949/1 |goto 58.35,84.67 |only if havequest(43949) and level >= 102
+Choose your Artifact |q 44417/1 |goto 58.35,84.67 |only if havequest(44417) and level >= 102
 |only Warrior
 step
 talk Odyn##96469
@@ -2482,7 +2482,7 @@ Gather Orik Trueheart |q 38710/2 |goto 41.57,37.37
 step
 _Choose What to Do Next:_
 |tip Click the line below for the activity you would like to do.
-Pursue Artifact Weapons |confirm |next "Artifacts_Paladin" |only if level >= 102
+Pursue Artifact Weapons |confirm |next "Artifacts_Paladin"
 Choose Next Leveling Zone |confirm |next "Choose_Leveling_Zone_Paladin"
 |only if raceclass("Paladin") and level >= 101
 step
@@ -2499,8 +2499,8 @@ Now you will Choose Your Artifact Weapon:
 |tip Choose Protection if your Paladin has the Protection specialization.
 |tip Choose Retribution if your Paladin has the Retribution specialization.
 Choose your Artifact Weapon |q 40408/1 |goto Dalaran L/10 74.93,48.24 |only if havequest(40408)
-Choose your Artifact Weapon |q 44063/1 |goto Eastern Plaguelands/20 49.84,72.31 |only if havequest(44063)
-Choose your Artifact Weapon |q 44370/1 |goto Eastern Plaguelands/20 49.84,72.31 |only if havequest(44370)
+Choose your Artifact Weapon |q 44063/1 |goto Eastern Plaguelands/20 49.84,72.31 |only if havequest(44063) and level >= 102
+Choose your Artifact Weapon |q 44370/1 |goto Eastern Plaguelands/20 49.84,72.31 |only if havequest(44370) and level >= 102
 |only Paladin
 step
 talk Lord Maxwell Tyrosus##90369
@@ -3045,7 +3045,7 @@ Speak to Courier Larkspur |q 41415/2 |goto 42.3,56.6
 step
 _Choose What to Do Next:_
 |tip Click the line below for the activity you would like to do.
-Pursue Artifact Weapons |confirm |next "Artifacts_Hunter" |only if level >= 102
+Pursue Artifact Weapons |confirm |next "Artifacts_Hunter"
 Choose Next Leveling Zone |confirm |next "Choose_Leveling_Zone_Hunter"
 |only if raceclass("Hunter") and level >= 101
 step
@@ -3063,8 +3063,8 @@ Now you will Choose Your Artifact Weapon:
 |tip Choose Survival if your Hunter has the Survival specialization.
 |tip Choose Marksmanship if your Hunter has the Marksmanship specialization.
 Choose your Artifact Weapon |q 40618/1 |goto Dalaran L/10 60.0,53.4 |only if havequest(40618)
-Choose a Second Artifact to Pursue |q 44043/1 |goto Trueshot Lodge/0 43.40,26.31 |only if havequest(44043)
-Choose a Third Artifact to Pursue |q 44366/1 |goto Trueshot Lodge/0 43.40,26.31 |only if havequest(44366)
+Choose a Second Artifact to Pursue |q 44043/1 |goto Trueshot Lodge/0 43.40,26.31 |only if havequest(44043) and level >= 102
+Choose a Third Artifact to Pursue |q 44366/1 |goto Trueshot Lodge/0 43.40,26.31 |only if havequest(44366) and level >= 102
 |only Hunter
 step
 talk Emmarel Shadewarden##102478
@@ -3537,7 +3537,7 @@ Get Inducted into the Uncrowned |q 40839/2 |goto 42.31,77.13
 step
 _Choose What to Do Next:_
 |tip Click the line below for the activity you would like to do.
-Pursue Artifact Weapons |confirm |next "Artifacts_Rogue" |only if level >= 102
+Pursue Artifact Weapons |confirm |next "Artifacts_Rogue"
 Choose Next Leveling Zone |confirm |next "Choose_Leveling_Zone_Rogue"
 |only if raceclass("Rogue") and level >= 101
 step
@@ -3567,8 +3567,8 @@ Now you will Choose Your Artifact Weapon:
 |tip Choose Outlaw if your Rogue has the Outlaw specialization.
 |tip Choose Subtlety if your Rogue has the Subtlety specialization.
 Choose your Artifact Weapon |q 40840/4 |goto 41.39,78.10 |only if havequest(40840)
-Choose a Second Artifact to Pursue |q 44034/1 |goto 41.39,78.10 |only if havequest(44034)
-Choose a Third Artifact to Pursue |q 44375/1 |goto 41.39,78.10 |only if havequest(44375)
+Choose a Second Artifact to Pursue |q 44034/1 |goto 41.39,78.10 |only if havequest(44034) and level >= 102
+Choose a Third Artifact to Pursue |q 44375/1 |goto 41.39,78.10 |only if havequest(44375) and level >= 102
 |only Rogue
 step
 talk Lord Jorach Ravenholdt##101513
@@ -4066,7 +4066,7 @@ Listen to Alonsus Faol |q 40705/3 |goto Tirisfal Glades/0 79.09,41.05
 step
 _Choose What to Do Next:_
 |tip Click the line below for the activity you would like to do.
-Pursue Artifact Weapons |confirm |next "Artifacts_Priest" |only if level >= 102
+Pursue Artifact Weapons |confirm |next "Artifacts_Priest"
 Choose Next Leveling Zone |confirm |next "Choose_Leveling_Zone_Priest"
 |only if raceclass("Priest") and level >= 101
 step
@@ -4083,8 +4083,8 @@ Now you will Choose Your Artifact Weapon:
 |tip Choose Shadow if your Priest has the Shadow specialization.
 |tip Choose Discipline if your Priest has the Discipline specialization.
 Choose your Artifact |q 40706/1 |goto Tirisfal Glades/0 78.95,40.99 |only if havequest(40706)
-Choose your Artifact |q 43935/1 |goto Netherlight Temple/1 51.62,47.79 |only if havequest(43935)
-Choose your Artifact |q 44407/1 |goto Netherlight Temple/1 51.62,47.79 |only if havequest(44407)
+Choose your Artifact |q 43935/1 |goto Netherlight Temple/1 51.62,47.79 |only if havequest(43935) and level >= 102
+Choose your Artifact |q 44407/1 |goto Netherlight Temple/1 51.62,47.79 |only if havequest(44407) and level >= 102
 |only Priest
 step
 talk Alonsus Faol##101314
@@ -4606,7 +4606,7 @@ Aid the Shaman at the Maelstrom |q 39746/2 |goto 30.01,77.45
 step
 _Choose What to Do Next:_
 |tip Click the line below for the activity you would like to do.
-Pursue Artifact Weapons |confirm |next "Artifacts_Shaman" |only if level >= 102
+Pursue Artifact Weapons |confirm |next "Artifacts_Shaman"
 Choose Next Leveling Zone |confirm |next "Choose_Leveling_Zone_Shaman"
 |only if raceclass("Shaman") and level >= 101
 step
@@ -4626,8 +4626,8 @@ Now you will Choose Your Artifact Weapon:
 |tip Choose Elemental if your Shaman has the Elemental specialization.
 |tip Choose Restoration if your Shaman has the Restoration specialization.
 Choose your Artifact |q 41335/1 |goto The Maelstrom L A/0 36.12,74.96 |only if havequest(41335)
-Choose a Second Artifact to Pursue |q 43945/1 |goto The Maelstrom L/0 36.15,80.09 |only if havequest(43945)
-Choose a Third Artifact to Pursue |q 44006/1 |goto The Maelstrom L/0 36.15,80.09 |only if havequest(44006)
+Choose a Second Artifact to Pursue |q 43945/1 |goto The Maelstrom L/0 36.15,80.09 |only if havequest(43945) and level >= 102
+Choose a Third Artifact to Pursue |q 44006/1 |goto The Maelstrom L/0 36.15,80.09 |only if havequest(44006) and level >= 102
 |only Shaman
 step
 talk Thrall##96527
@@ -5118,7 +5118,7 @@ Listen to Meryl |q 41036/3 |goto Hall of the Guardian/2 59.66,46.46
 step
 _Choose What to Do Next:_
 |tip Click the line below for the activity you would like to do.
-Pursue Artifact Weapons |confirm |next "Artifacts_Mage" |only if level >= 102
+Pursue Artifact Weapons |confirm |next "Artifacts_Mage"
 Choose Next Leveling Zone |confirm |next "Choose_Leveling_Zone_Mage"
 |only if raceclass("Mage") and level >= 101
 step
@@ -5136,8 +5136,8 @@ Now you will Choose Your Artifact Weapon:
 |tip Choose Fire if your Mage has the Fire specialization.
 |tip Choose Frost if your Mage has the Frost specialization.
 Choose your Artifact |q 41085/1 |goto 61.24,25.63 |only if havequest(41085)
-Choose a Second Artifact to Pursue |q 43441/1 |goto 55.29,38.16 |only if havequest(43441)
-Select your Final Artifact to Pursue |q 44310/1 |goto 55.29,38.16 |only if havequest(44310)
+Choose a Second Artifact to Pursue |q 43441/1 |goto 55.29,38.16 |only if havequest(43441) and level >= 102
+Select your Final Artifact to Pursue |q 44310/1 |goto 55.29,38.16 |only if havequest(44310) and level >= 102
 |only Mage
 step
 talk Meryl Felstorm##102700
@@ -5775,7 +5775,7 @@ Escape from Jagganoth's Lair |q 40729/2 |goto 74.36,38.08
 step
 _Choose What to Do Next:_
 |tip Click the line below for the activity you would like to do.
-Pursue Artifact Weapons |confirm |next "Artifacts_Warlock" |only if level >= 102
+Pursue Artifact Weapons |confirm |next "Artifacts_Warlock"
 Choose Next Leveling Zone |confirm |next "Choose_Leveling_Zone_Warlock"
 |only if raceclass("Warlock") and level >= 101
 step
@@ -5792,8 +5792,8 @@ Now you will Choose Your Artifact Weapon:
 |tip Choose Demonology if your Warlock has the Demonology specialization.
 |tip Choose Destruction if your Warlock has the Destruction specialization.
 Choose your Artifact |q 40684/1 |goto Dalaran L/11 |only if havequest(40684)
-Choose a Second Artifact to Pursue |q 43984/1 |goto Dreadscar Rift/0 37.65,31.23 |only if havequest(43984)
-Choose your Artifact |q 44089/1 |goto Dreadscar Rift/0 37.65,31.23 |only if havequest(44089)
+Choose a Second Artifact to Pursue |q 43984/1 |goto Dreadscar Rift/0 37.65,31.23 |only if havequest(43984) and level >= 102
+Choose your Artifact |q 44089/1 |goto Dreadscar Rift/0 37.65,31.23 |only if havequest(44089) and level >= 102
 |only Warlock
 step
 talk Calydus##101097
@@ -6357,7 +6357,7 @@ Establish the Order of the Broken Temple |q 40236/2 |goto 51.45,48.56
 step
 _Choose What to Do Next:_
 |tip Click the line below for the activity you would like to do.
-Pursue Artifact Weapons |confirm |next "Artifacts_Monk" |only if level >= 102
+Pursue Artifact Weapons |confirm |next "Artifacts_Monk"
 Choose Next Leveling Zone |confirm |next "Choose_Leveling_Zone_Monk"
 |only if raceclass("Monk") and level >= 101
 step
@@ -6374,8 +6374,8 @@ Now you will Choose Your Artifact Weapon:
 |tip Choose Mistweaver if your Monk has the Mistweaver specialization.
 |tip Choose Windwalker if your Monk has the Windwalker specialization.
 Choose your Artifact Weapon |q 40636/1 |goto 51.41,48.38 |only if havequest(40636)
-Choose a Second Artifact to Pursue |q 43973/1 |goto 51.41,48.38 |only if havequest(43973)
-Choose a Third Artifact to Pursue |q 44424/1 |goto 51.41,48.38 |only if havequest(44424)
+Choose a Second Artifact to Pursue |q 43973/1 |goto 51.41,48.38 |only if havequest(43973) and level >= 102
+Choose a Third Artifact to Pursue |q 44424/1 |goto 51.41,48.38 |only if havequest(44424) and level >= 102
 |only Monk
 step
 talk Iron-Body Ponshu##100356
@@ -6812,7 +6812,7 @@ Meet the Archdruid |q 40645/5 |goto The Dreamgrove/0 44.46,51.09
 step
 _Choose What to Do Next:_
 |tip Click the line below for the activity you would like to do.
-Pursue Artifact Weapons |confirm |next "Artifacts_Druid" |only if level >= 102
+Pursue Artifact Weapons |confirm |next "Artifacts_Druid"
 Choose Next Leveling Zone |confirm |next "Choose_Leveling_Zone_Druid"
 |only if raceclass("Druid") and level >= 101
 step
@@ -6831,9 +6831,9 @@ Now you will Choose Your Artifact Weapon:
 |tip Choose Guardian if your Druid has the Guardian specialization.
 |tip Choose Restoration if your Druid has the Restoration specialization.
 Choose your Artifact Weapon |q 40646/1 |goto 44.46,51.09 |only if havequest(40646)
-Choose a Second Artifact to Pursue |q 43980/1 |goto 44.65,51.98 |only if havequest(43980)
-Choose a Third Artifact to Pursue |q 44431/1 |goto 44.65,51.98 |only if havequest(44431)
-Choose a Fourth Artifact to Pursue |q 44443/1 |goto 44.65,51.98 |only if havequest(44443)
+Choose a Second Artifact to Pursue |q 43980/1 |goto 44.65,51.98 |only if havequest(43980) and level >= 102
+Choose a Third Artifact to Pursue |q 44431/1 |goto 44.65,51.98 |only if havequest(44431) and level >= 102
+Choose a Fourth Artifact to Pursue |q 44443/1 |goto 44.65,51.98 |only if havequest(44443) and level >= 102
 |only Druid
 step
 talk Rensar Greathoof##101195
@@ -7470,7 +7470,7 @@ accept The Call To War##40714 |goto Dalaran L/10 57.57,45.75
 step
 _Choose What to Do Next:_
 |tip Click the line below for the activity you would like to do.
-Pursue Artifact Weapons |confirm |next "Artifacts_DeathKnight" |only if level >= 102
+Pursue Artifact Weapons |confirm |next "Artifacts_DeathKnight"
 Choose Next Leveling Zone |confirm |next "Choose_Leveling_Zone_DeathKnight"
 |only if raceclass("DeathKnight") and level >= 101
 step
@@ -7487,8 +7487,8 @@ Now you will Choose Your Artifact Weapon:
 |tip Choose Frost if your Death Knight has the Frost specialization.
 |tip Choose Unholy if your Death Knight has the Unholy specialization.
 Choose your Artifact Weapon |q 40715/1 |goto Dalaran L/10 73.06,46.54 |only if havequest(40715)
-Choose a Second Artifact to Pursue |q 43962/1 |goto Broken Shore/1 57.79,60.33 |only if havequest(43962)
-Choose a Third Artifact to Pursue |q 44401/1 |goto Broken Shore/1 57.79,60.33 |only if havequest(44401)
+Choose a Second Artifact to Pursue |q 43962/1 |goto Broken Shore/1 57.79,60.33 |only if havequest(43962) and level >= 102
+Choose a Third Artifact to Pursue |q 44401/1 |goto Broken Shore/1 57.79,60.33 |only if havequest(44401) and level >= 102
 |only DeathKnight
 step
 talk Duke Lankral##101441
@@ -22944,6 +22944,11 @@ Begin the "Additional Accoutrements" Mission
 Complete the "Additional Accoutrements" Mission |q 42682/1 |goto 58.72,53.09
 |only DemonHunter
 step
+Reach Level 103 |ding 103
+|tip You must be at least level 103 to continue this questline.
+|tip Use the Leveling guides to accomplish this.
+|only DemonHunter
+step
 talk Kor'vas Bloodthorn##103761
 turnin Additional Accoutrements##42682 |goto 59.34,57.62
 accept The Blood of Demons##37447 |goto 59.34,57.62
@@ -22986,11 +22991,6 @@ Follow the path |goto Mardum, the Shattered Abyss/1 68.51,66.34 < 15 |walk
 talk Kayn Sunfury##108572
 |tip It may be Altruis the Sufferer.
 turnin Leader of the Illidari##42522 |goto 58.66,57.93
-|only DemonHunter
-step
-Reach Level 103 |ding 103
-|tip You must be at least level 103 to continue this questline.
-|tip Use the Leveling guides to accomplish this.
 |only DemonHunter
 step
 talk Matron Mother Malevolence##98632

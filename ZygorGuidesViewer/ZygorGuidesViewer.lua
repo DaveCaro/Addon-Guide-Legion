@@ -30,7 +30,7 @@ ZGV.Vars={}
 
 --if addonName:find("DEV") then ZGV.DEV=true end
 if addonName:find("BETA") then ZGV.BETA=true end
-if addonName:find("BETA") then ZGV.DEV=true  if ZygorGuidesViewerFrame_DevLabel then ZygorGuidesViewerFrame_DevLabel:SetText("BETA") end  end
+if addonName:find("BETA") then ZGV.DEV=true end
 
 -- Time to add some testing. ~~ Jeremiah
 ZGV.TestFramework = {}
@@ -419,6 +419,8 @@ function ZGV:OnEnable()
 	-- waiting for QUEST_LOG_UPDATE for true initialization...
 
 	if ZGV_DEV then ZGV_DEV() end
+	if ZGV.db.profile.debug_beta then ZGV.BETA=true end
+	if ZGV.BETA and ZygorGuidesViewerFrame_DevLabel then ZygorGuidesViewerFrame_DevLabel:SetText("BETA") end
 
 	if self.db.profile.frame_anchor then
 		self.db.profile.frame_anchor[2]=UIParent
@@ -451,7 +453,7 @@ function ZGV:Startup_LoadGuides_Threaded()
 		local newreg = {}
 		for i=1,#self.registeredguides do
 			local guide=self.registeredguides[i]
-			if self.GuideFuncs:IsGuideBanned(guide.title) then
+			if self.GuideFuncs:IsGuideBanned(guide.title) or (guide.beta and not ZGV.BETA) then
 				self.registeredguides[i]=nil
 			else
 				tinsert(newreg,guide)
@@ -1303,6 +1305,11 @@ function ZGV:FocusStep(num,forcefocus)
 	--self:TryToDisplayCreature()
 	--self:UpdateMinimapArrow(true)
 
+	--Hide goal image popup if it exists
+	if ZGV.GoalPopupImageFrame then
+		ZGV.GoalPopupImageFrame:Hide()
+	end
+
 	--self:AnimateGears()
 	if ZGV.Gold.Appraiser and ZGV.Gold.Appraiser.Loaded and ZGV.Gold.Appraiser.AddGuideItemsToBuy then
 		ZGV.Gold.Appraiser:AddGuideItemsToBuy()
@@ -1630,6 +1637,7 @@ end
 -- 09-09-24:
 local lastcompletion=0
 local lastnextsuggested
+local justcompletedgoals={}
 function ZGV:TryToCompleteStep(force)
 	if not self.CurrentStep or not self.CurrentGuide then return end
 
@@ -1693,11 +1701,17 @@ function ZGV:TryToCompleteStep(force)
 
 	local confirmcompleted = false
 	local confirmfound = false
+	wipe(justcompletedgoals)
 	for i,goal in ipairs(self.CurrentStep.goals) do
 		local iscomplete = goal:IsComplete()
 		if iscomplete and not self.recentlyCompletedGoals[goal] then
 			self.recentlyCompletedGoals[goal] = true
+			justcompletedgoals[goal] = true
 			goal:OnCompleted()
+		elseif not iscomplete and self.recentlyCompletedGoals[goal] then
+			self.recentlyCompletedGoals[goal] = false
+			justcompletedgoals[goal] = false
+			goal:OnUncompleted()
 		end
 
 		if goal.action == "confirm" and goal.always then
@@ -1973,6 +1987,7 @@ local actionicon={
 	["poiannounce"]=0,
 	["poiaccess"]=0,
 	["poicurrency"]=0,
+	["image"]=9,
 }
 setmetatable(actionicon,{__index=function() return 2 end})
 
@@ -2302,7 +2317,8 @@ function ZGV:UpdateFrame(full,onupdate)
 
 						if self.recentlyChangedGoals[goal] ~= status then  -- TODO: move all "goal changes state" code here?
 							self.recentlyChangedGoals[goal] = status
-							if goal.x then do_showwaypoints = true end -- in case we need to advance to an incomplete point. May be overkill, but why not.
+							--if goal.x then do_showwaypoints = true end -- in case we need to advance to an incomplete point. May be overkill, but why not.
+							-- sinus 2016-11-16 20:21:08 - no, let's only advance from goals being completed, in goal:OnComplete.
 						end
 
 						if status=="hidden" and not self.db.profile.showwrongsteps then
@@ -2335,7 +2351,7 @@ function ZGV:UpdateFrame(full,onupdate)
 							if self.db.profile.showwrongsteps and status=="hidden" then goaltxt = "|cff880000[*BAD*]|r "..goaltxt end
 
 							if goaltxt~="?" and goaltxt~="" and frame.lines[line] then -- Why is frame.lines[line] sometimes missing? ~~Jeremiah
-								local link = ((goal.tooltip and not self.db.profile.tooltipsbelow) or (goal.x and not self.db.profile.windowlocked) or goal.image) and " |cffdd44ff*|r" or ""  -- goto asterisk
+								local link = ((goal.tooltip and not self.db.profile.tooltipsbelow) or (goal.x and not self.db.profile.windowlocked)) and " |cffdd44ff*|r" or ""  -- goto asterisk
 								if stepdata:IsCurrentlySticky() then link="" end
 								if not frame.lines[line] then error ("line does not exist") end
 								if not frame.lines[line].label then error ("label does not exist") end
@@ -2574,12 +2590,7 @@ function ZGV:UpdateFrame(full,onupdate)
 
 						-- set justCompleted only once per completion
 						-- except if this is the goal that when completed makes guide progress to 
-						local justCompleted = false
-						if status=="complete" and not self.recentlyCompletedGoals[goal] then
-							self.recentlyCompletedGoals[goal] = true
-							justCompleted = true
-							goal:OnCompleted()
-						end
+						local justCompleted = justcompletedgoals[goal]
 
 						-- ICONS
 
@@ -2596,8 +2607,10 @@ function ZGV:UpdateFrame(full,onupdate)
 							elseif status=="passive" then
 
 								if goal.action=="talk" or goal.action=="from" or goal.action=="goto" or
-								goal.action=="goldcollect" or goal.action=="goldtracker" then
+								goal.action=="goldcollect" or goal.action=="goldtracker" or (goal.action=="image" and not goal.inline) then
 									icon:SetIcon(actionicon[goal.action])
+								elseif (goal.action=="image" and goal.inline) then
+									icon:SetIcon(0)
 								else
 									icon:SetIcon(1)
 								end
@@ -4638,7 +4651,16 @@ function ZGV:RegisterGuide(title,data,extra)
 
 	local guide = ZGV.GuideProto:New(title,data,extra)
 
+	if ZGV.BETAguides then guide.beta=true end
+
 	tinsert(self.registeredguides,guide)
+end
+
+function ZGV.BETASTART()
+	ZGV.BETAguides=true
+end
+function ZGV.BETAEND()
+	ZGV.BETAguides=false
 end
 
 ZGV.registered_mapspotset_groups = { groups={},guides={}}

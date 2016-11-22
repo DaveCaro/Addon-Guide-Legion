@@ -533,6 +533,8 @@ end
 Parser.MakeCondition=MakeCondition
 --local yield=coroutine.yield
 
+local ZGV_IS_BETA = ZGV.DIR:find("-BETA")
+
 --- parse ONE guide section into usable arrays.
 function Parser:ParseEntry(guide,fully_parse,lastparsed)
 	local text = guide.rawdata
@@ -573,6 +575,8 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 	--if text:find("goto The Exodar,44.9,24.2") then debug=true end
 
 	local last5lines = {}
+
+	if ZGV.db.profile.debug_beta then ZGV_IS_BETA=true end
 
 	local function parseerror(msg)
 		local chunk = ""
@@ -655,6 +659,8 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 		return a
 	end
 
+	local betasection = false
+
 	--[[
 	STICKY MECHANICS: 2013-04-18 ~sinus
 
@@ -678,10 +684,10 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 
 	--]]
 
-	while (index<#text) do
+	while (index<#text) do  repeat
 		local st,en,line=strfind(text,"%s*(.-)%s*\n",index)
 		--if debug then print(line) end
-		if not en then break end
+		if not en then  index=#text  break  end  -- really break
 		index = en + 1
 
 		linecount=linecount+1
@@ -705,8 +711,12 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 		lastparsed.linenum=linecount
 		lastparsed.linedata=line
 
-		line = line:gsub("%s*%-%-.*","",1) :gsub("%s*//.*","",1)
+		if line:find("--@@BETASTART") then  betasection=true  break  end
+		if line:find("--@@BETAEND") then  betasection=false  break  end
 
+		if betasection and not ZGV.BETA then  break  end  --continue; beta lines available only in beta addons.
+
+		line = line:gsub("%s*%-%-.*","",1) :gsub("%s*//.*","",1)  -- remove comments
 
 		-- Process the line!
 		-- it's supposedly left- and right-trimmed by the find above.
@@ -1212,8 +1222,8 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 
 							goal.tooltip = LG[params]
 
-						elseif cmd=="image" then
-							goal.image = params
+						--elseif cmd=="image" then
+						--	goal.image = params
 
 
 						elseif cmd=="model" then
@@ -1386,7 +1396,7 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 
 			if breakout then break end
 		end
-	end
+	until true  end
 
 	
 	if guide.type=="MACRO" then
@@ -1611,7 +1621,6 @@ function Parser:ParseHeader(guide)
 		end
 	end
 end
-
 
 
 local s=string local c=string.char

@@ -545,6 +545,7 @@ function Pointer:SetWaypoint (m,f,x,y,data,arrow)
 
 	if arrow==nil then arrow=true end
 	if arrow and (waypoint.type=="manual" or waypoint.type=="way" or waypoint.type=="route" or waypoint.type=="corpse") then
+		self.DestinationWaypoint = waypoint
 		self:ShowArrow(waypoint)
 	end
 
@@ -1498,13 +1499,7 @@ function Pointer.frame_minimap_functions.OnClick(self,button)
 
 	Pointer:Debug("Clicked way %d type %s",self.waypoint.num,self.waypoint.type)
 	if self.waypoint.type=="way" or self.waypoint.type=="path" then ZGV.Pointer:ClearWaypoints("manual") end
-	if ZGV.db.profile.pathfinding then
-		ZGV.Pointer:Debug("MMB_OnClick calling FindTravelPath:")
-		ZGV.Pointer:FindTravelPath(self.waypoint)
-	else
-		ZGV.Pointer:ShowArrow(self.waypoint)
-	end
-
+	ZGV.Pointer:FindTravelPath(self.waypoint)
 end
 
 -- temporarily unused
@@ -2448,12 +2443,15 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 	local text = override_text or waypoint:GetArrowTitle() or waypoint:GetTitle() or waypoint.arrowtitle or waypoint.title
 
 	if ZGV.db.profile.debug then
-		text = (text or "")..("\n[rad: %s%s%s%s%s]"):format(
+		text = (text or "")..("\n|cffff55dd[rad: %s%s%s%s%s%s]"):format(
 			waypoint.radius or "",
 			waypoint.radius and "" or ("%d (def)"):format(self:GetDefaultStepDist()),
 			waypoint.noskip and ", noskip" or "",
 			waypoint.pathnode and ", node#"..waypoint.pathnode.num or "",
-			waypoint.goal and ", goal#"..waypoint.goal.num or "")
+			waypoint.goal and ", goal#"..waypoint.goal.num or "",
+			(self.DestinationWaypoint and self.DestinationWaypoint~=waypoint and ("\nTo: ".. self.DestinationWaypoint.title
+				.. (self.DestinationWaypoint.goal and self.DestinationWaypoint.goal.num and " (goal#".. self.DestinationWaypoint.goal.num..")" or "")) or "")
+			)
 	end
 
 	-- spew it out.
@@ -4251,14 +4249,18 @@ end
 -- Finds an optimal travel route. Or, just a beeline, if options say so.
 function Pointer:FindTravelPath(way)
 	if not way then return end
-	if way.pathnode and way.pathnode.player then return end -- no pointing to self
+	if way.pathnode and way.pathnode.player then return end -- no routing to parts of a route
 
-	if UnitOnTaxi("player") then return end
+	if not ZGV.db.profile.pathfinding then  -- no travel, beeline!
+		self.DestinationWaypoint = way
+		self:ShowArrow(way)
+		return
+	end
 
 	if type(way)=="table" then
 		--self:ShowArrow(way) --#optimizetravel
 		if way.type=="route" then return end
-		ZGV.Pointer.DestinationWaypoint = way
+		self.DestinationWaypoint = way
 		local display_zone = way.waypoint_minizone or way.waypoint_subzone
 		ZGV:Debug("&pointer FindTravelPath to %s",waypoint_tostring(way))
 		LibRover:Abort("before QFP","quiet")
@@ -4378,7 +4380,7 @@ function Pointer:CycleWaypoint(delta,nocycle,step)
 
 	--local CS=ZGV.CurrentStep
 	--local CW = ZGV.Pointer.current_waypoint
-	local CW = ZGV.Pointer.ArrowFrame.waypoint
+	local CW = ZGV.Pointer.DestinationWaypoint
 	local CS = step
 		or (CW and CW.goal and CW.goal.parentStep)
 		or (CW and CW.pathnode and CW.pathnode.waypoint and CW.pathnode.waypoint.goal and CW.pathnode.waypoint.goal.parentStep)
@@ -4417,14 +4419,7 @@ function Pointer:CycleWaypoint(delta,nocycle,step)
 	if self.waypoints then
 		for wi,way in ipairs(self.waypoints) do
 			if way.goal==goal then
-				--self:ShowArrow(way)
-				if ZGV.db.profile.pathfinding then
-					ZGV:Debug("CycleWaypoint: running FindTravelPath")
-					self:FindTravelPath(way)
-				else
-					ZGV:Debug("CycleWaypoint: just pointing")
-					self:ShowArrow(way)
-				end
+				self:FindTravelPath(way)
 				if WorldMapFrame:IsShown() and (GetCurrentMapAreaID()~=way.m or GetCurrentMapDungeonLevel()~=way.f) then SetMapByID(way.m) SetDungeonMapLevel(way.f or 1) end
 				break
 			end
@@ -4454,6 +4449,11 @@ function Pointer:CycleWaypointTo(goalnum)
 	if not CS then return end
 	CS.current_waypoint_goal_num=goalnum and (goalnum-1) or 0
 	Pointer:CycleWaypoint(1,"nocycle",CS) -- Force waypoint to cycle to first one.
+end
+
+function Pointer:CycleWaypointFrom(goalnum,step)
+	step.current_waypoint_goal_num = goalnum
+	self:CycleWaypoint(1,"nocycle",step)
 end
 
 function Pointer:SetWaypointToGoal(goal)

@@ -488,8 +488,8 @@ Take the Portal to Dalaran over Karazhan in the Cleft of Shadow |q 44184/1 |goto
 step
 Enter the building |goto Deadwind Pass/21 45.72,43.28 < 10
 Watch the dialogue
-Witness Dalaran's Teleportation |q 44663/1 |goto Deadwind Pass/21 49.15,47.86 |only if havequest(44663) or completedq(44663)
-Witness Dalaran's Teleportation |q 44184/1 |goto Deadwind Pass/21 49.15,47.86 |only if havequest(44184) or completedq(44184)
+Witness Dalaran's Teleportation |q 44663/2 |goto Deadwind Pass/21 49.15,47.86 |only if havequest(44663) or completedq(44663)
+Witness Dalaran's Teleportation |q 44184/2 |goto Deadwind Pass/21 49.15,47.86 |only if havequest(44184) or completedq(44184)
 step
 talk Emissary Auldbridge##111109
 turnin In the Blink of an Eye##44663 |goto Dalaran L/10 57.57,45.75 |only if havequest(44663) or completedq(44663)
@@ -1662,8 +1662,8 @@ Take the Portal to Dalaran over Karazhan in the Cleft of Shadow |q 44184/1 |goto
 step
 Enter the building |goto Deadwind Pass/21 45.72,43.28 < 10
 Watch the dialogue
-Witness Dalaran's Teleportation |q 44663/1 |goto Deadwind Pass/21 49.15,47.86 |only if havequest(44663) or completedq(44663)
-Witness Dalaran's Teleportation |q 44184/1 |goto Deadwind Pass/21 49.15,47.86 |only if havequest(44184) or completedq(44184)
+Witness Dalaran's Teleportation |q 44663/2 |goto Deadwind Pass/21 49.15,47.86 |only if havequest(44663) or completedq(44663)
+Witness Dalaran's Teleportation |q 44184/2 |goto Deadwind Pass/21 49.15,47.86 |only if havequest(44184) or completedq(44184)
 step
 talk Emissary Auldbridge##111109
 turnin In the Blink of an Eye##44663 |goto Dalaran L/10 57.57,45.75 |only if havequest(44663) or completedq(44663)

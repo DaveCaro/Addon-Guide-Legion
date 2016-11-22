@@ -97,7 +97,7 @@ ZygorGuidesViewer:RegisterInclude("Alliance_Battlepet_Quests",[[
 		talk Lindsay##65651
 		Tell her _"Let's fight!"_
 		Defeat Lindsay |q 31725/1 |goto Redridge Mountains 33.3,52.6
-		|tip Lindsay has a team full of Rabbits. Use battle pets strong against Beasts, if you can. Your pets should be around level 7 for this fight.
+		|tip Lindsay has a team full of Rabbits. Use battle pets strong against Critters, if you can. Your pets should be around level 7 for this fight.
 	step
 		talk Lindsay##65651
 		turnin Lindsay##31725 |goto Redridge Mountains 33.3,52.6

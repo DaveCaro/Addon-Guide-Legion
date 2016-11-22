@@ -1567,7 +1567,7 @@ function ZGV:Options_DefineOptionTables()
 			name="",
 			values = function()
 				local t={}
-				local name,tag,id = GetClassInfo(ZGV.db.profile.gear_selected_class)
+				local name,tag,id = GetClassInfo(ZGV.db.profile.gear_selected_class or 1)
 				for specnum,specdata in pairs(ZGV.ItemScore.Defaults[tag]) do
 					t[specnum] = ZGV.SpecByNumber[tag][specnum] -- values taken from parser.lua classtalents
 				end
@@ -1659,8 +1659,8 @@ function ZGV:Options_DefineOptionTables()
 		})
 			AddOption("gearimport",{
 				name = function() 
-					local name,tag,id = GetClassInfo(ZGV.db.profile.gear_selected_class)
-					local specname = ZGV.SpecByNumber[tag][ZGV.db.profile.gear_selected_spec] -- values taken from parser.lua classtalents
+					local name,tag,id = GetClassInfo(ZGV.db.profile.gear_selected_class or 1)
+					local specname = ZGV.SpecByNumber[tag][ZGV.db.profile.gear_selected_spec or 1] -- values taken from parser.lua classtalents
 					return "Process data for "..specname.." "..name
 				end,
 				type = 'input',
@@ -2541,6 +2541,8 @@ function ZGV:Options_DefineOptionTables()
 
 			AddOption('fpsgraph',{ name="FPS Graph", desc="Show a detailed FPS graph. Max=100fps.", type = 'toggle', width = "full", _default=false, set = function(i,v) Setter_Simple(i,v)  ZGV:StartFPSFrame() end, })
 			--AddOption('npcdebugauto',{ name = "Automatically add current npcs to list", type="toggle", width = "full", })
+
+			AddOption('debug_beta',{ name = "Pretend this is Beta", type="toggle", width = "full", disabled=function() return ZGV.DIR:find("-BETA") end, get = function(i,v) if ZGV.DIR:find("-BETA") then return true else return Getter_Simple(i,v) end end })
 		end
 
 		AddOptionGroup("debugdig","DebugDig","zgdebugdig", { name="Debug: data digging", hidden = function() return not self.db.profile.debug end, })

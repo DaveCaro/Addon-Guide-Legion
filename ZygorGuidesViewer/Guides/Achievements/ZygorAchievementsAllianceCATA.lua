@@ -1833,8 +1833,8 @@ talk Innkeeper Francis##49688
 buy 1 Tropical Sunfruit##58278 |condition itemcount(58278) >= 1 |goto Twilight Highlands 79.4,78.5
 only if not achieved(5754)
 step
-#include "innkeeper_dwarven"
-buy 1 Highland Pomegranate##58265 |condition itemcount(58265) >= 1
+talk Innkeeper Allison##6740
+buy 1 Highland Pomegranate##58265 |condition itemcount(58265) >= 1 |goto Stormwind City 60.4,75.3
 next "CookYourself"
 only if not achieved(5754)
 step

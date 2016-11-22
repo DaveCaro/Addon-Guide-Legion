@@ -3761,13 +3761,13 @@ ZygorGuidesViewer:RegisterInclude("Pilgrims_Bounty_Achievements_Horde",[[
 		clicknpc The Turkey Chair##34812
 		Eat each type of food 5 times in a row
 		|tip You can see how many times you've eaten the food by looking at it's buff that it gives you next to your mini map.
-		Gain the Spirit of Sharing |achieve 3557/4 |goto Eversong Woods 55.7,53.2
-		Earn the Pilgrim's Paunch Achievement |achieve 3557/4 |goto Eversong Woods 55.7,53.2
+		Gain the Spirit of Sharing |achieve 3557/2 |goto Eversong Woods 55.7,53.2
+		Earn the Pilgrim's Paunch Achievement |achieve 3557/2 |goto Eversong Woods 55.7,53.2
 	step
 		While still at the table, go to each of the chairs
 		While in each of the chairs, press 1
-		Pass the Candied Sweet Potatoes |achieve 3558/2
-		Pass the Cranberry Chutney |achieve 3558/1
+		Pass the Candied Sweet Potatoes |achieve 3558/1
+		Pass the Cranberry Chutney |achieve 3558/2
 		Pass the Pumpkin Pie |achieve 3558/3
 		Pass the Slow-Roasted Turkey |achieve 3558/4
 		Pass the Spice Bread Stuffing |achieve 3558/5
@@ -3886,42 +3886,42 @@ ZygorGuidesViewer:RegisterInclude("Pilgrims_Bounty_Achievements_Horde",[[
 		clicknpc The Turkey Chair##34812
 		Eat each type of food 5 times in a row
 		|tip You can see how many times you've eaten the food by looking at it's buff that it gives you next to your mini map.
-		Acquire the Spirit of Sharing |achieve 3557/3 |goto Durotar 46.4,14.6
+		Acquire the Spirit of Sharing |achieve 3557/1 |goto Durotar 46.4,14.6
 	step
 		clicknpc The Turkey Chair##34812
 		Eat each type of food 5 times in a row
 		|tip You can see how many times you've eaten the food by looking at it's buff that it gives you next to your mini map.
-		Acquire the Spirit of Sharing |achieve 3557/2 |goto Thunder Bluff 29.1,62.5
+		Acquire the Spirit of Sharing |achieve 3557/3 |goto Thunder Bluff 29.1,62.5
 	step
 		clicknpc The Turkey Chair##34812
 		Eat each type of food 5 times in a row
 		|tip You can see how many times you've eaten the food by looking at it's buff that it gives you next to your mini map.
-		Acquire the Spirit of Sharing |achieve 3557/4 |goto Eversong Woods/0 55.5,53.1
+		Acquire the Spirit of Sharing |achieve 3557/2 |goto Eversong Woods/0 55.5,53.1
 	step
 		clicknpc The Turkey Chair##34812
 		Eat each type of food 5 times in a row
 		|tip You can see how many times you've eaten the food by looking at it's buff that it gives you next to your mini map.
-		Acquire the Spirit of Sharing |achieve 3557/1 |goto Undercity/0 67.6,14.5
+		Acquire the Spirit of Sharing |achieve 3557/4 |goto Undercity/0 67.6,14.5
 	step
 		Earn the Pilgrim's Paunch Achievement |achieve 3557
 	step
 		You should have a few _Turkey Shooters_ from your daily quests, if you don't, you will need to do more dailies when possible for more
 		use Turkey Shooter##44812
 		|tip While in Dun Morogh, shoot Alliance Rogues with your Turkey Shooter.
-		Shoot a Dwarf Rogue |achieve 3559/5 |goto Dun Morogh 54.0,48.0
-		Shoot a Gnome Rogue |achieve 3559/6 |goto Dun Morogh 54.0,48.0
-		Shoot a Human Rogue |achieve 3559/1 |goto Dun Morogh 54.0,48.0
-		Shoot a Night Elf Rogue |achieve 3559/7 |goto Dun Morogh 54.0,48.0
+		Shoot a Dwarf Rogue |achieve 3559/2 |goto Dun Morogh 54.0,48.0
+		Shoot a Gnome Rogue |achieve 3559/3 |goto Dun Morogh 54.0,48.0
+		Shoot a Human Rogue |achieve 3559/5 |goto Dun Morogh 54.0,48.0
+		Shoot a Night Elf Rogue |achieve 3559/6 |goto Dun Morogh 54.0,48.0
 		Shoot a Worgen Rogue |achieve 3559/10 |goto Dun Morogh 54.0,48.0
 	step 
 		You should have a few _Turkey Shooters_ from your daily quests, if you don't, you will need to do more daily's when possible for more
 		use Turkey Shooter##44812
 		|tip While in Durotar, shoot Horde Rogues with your Turkey Shooter.
-		Shoot a Blood Elf Rogue |achieve 3559/8 |goto Durotar 46.2,15.1
-		Shoot a Orc Rogue |achieve 3559/2 |goto Durotar 46.2,15.1
-		Shoot a Troll Rogue |achieve 3559/3 |goto Durotar 46.2,15.1
-		Shoot a Undead Rogue |achieve 3559/4 |goto Durotar 46.2,15.1
-		Shoot a Goblin Rogue |achieve 3559/9 |goto Durotar 46.2,15.1
+		Shoot a Blood Elf Rogue |achieve 3559/1 |goto Durotar 46.2,15.1
+		Shoot a Orc Rogue |achieve 3559/7 |goto Durotar 46.2,15.1
+		Shoot a Troll Rogue |achieve 3559/8 |goto Durotar 46.2,15.1
+		Shoot a Undead Rogue |achieve 3559/9 |goto Durotar 46.2,15.1
+		Shoot a Goblin Rogue |achieve 3559/4 |goto Durotar 46.2,15.1
 	step
 		_Ride_ the boat to the Exodar |goto Teldrassil 52.0,89.0 < 20 |walk
 		clicknpc The Turkey Chair##34812
@@ -3929,14 +3929,14 @@ ZygorGuidesViewer:RegisterInclude("Pilgrims_Bounty_Achievements_Horde",[[
 		Equip Pilgrim's Dress |equipped Pilgrim's Dress##44785 |use Pilgrim's Dress##44785 |or
 		Equip Pilgrim's Robe |equipped Pilgrim's Robe##46824 |use Pilgrim's Robe##46824 |or
 		Equip Pilgrim's Hat |equipped Pilgrim's Hat##46723 |use Pilgrim's Hat##46723
-		Take a Seat at the Exodar's Bountiful Table |achieve 3581/1 |goto The Exodar 75.7,52.3
+		Take a Seat at the Exodar's Bountiful Table |achieve 3581/2 |goto The Exodar 75.7,52.3
 	step
 		clicknpc The Turkey Chair##34812
 		Equip Pilgrim's Attire |equipped Pilgrim's Attire##46800 |use Pilgrim's Attire##46800 |or
 		Equip Pilgrim's Dress |equipped Pilgrim's Dress##44785 |use Pilgrim's Dress##44785 |or
 		Equip Pilgrim's Robe |equipped Pilgrim's Robe##46824 |use Pilgrim's Robe##46824 |or
 		Equip Pilgrim's Hat |equipped Pilgrim's Hat##46723 |use Pilgrim's Hat##46723
-		Take a Seat at Darnassus' Bountiful Table |achieve 3581/2 |goto Darnassus 62.8,48.2
+		Take a Seat at Darnassus' Bountiful Table |achieve 3581/1 |goto Darnassus 62.8,48.2
 	step
 		clicknpc The Turkey Chair##34812
 		Equip Pilgrim's Attire |equipped Pilgrim's Attire##46800 |use Pilgrim's Attire##46800 |or

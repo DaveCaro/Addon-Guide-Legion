@@ -52,6 +52,21 @@ label "Cove Skrog"
 kill 6 Cove Skrog##89097 |q 42024/3
 |next "Court_Of_Farondis_WQ"
 step
+label quest-43803
+Follow the path |goto Eye of Azshara Map/0 42.13,45.22 < 30 |only if walking
+Follow the path |goto 47.08,45.46 < 30 |only if walking
+Enter the cave |goto 59.61,39.34 < 20 |only if walking
+Follow the path |goto 63.61,40.60 < 20 |only if walking
+Follow the path |goto 66.98,41.61 < 20 |only if walking
+accept A Giant Murloc Problem##43803 |goto 69.22,44.79
+|tip You will accept this quest automatically.
+stickystart "Saltscale"
+step
+kill Skrog Wavecrasher##111646 |q 43803/1 |goto 61.45,50.57
+step
+label "Saltscale"
+kill Saltscale Lurker##111645 |q 43803/2 |goto 69.22,44.79
+step
 label quest-42014
 accept A Tainted Vintage##42014 |goto Azsuna/0 40.83,9.11
 |tip You will accept this quest automatically.
@@ -121,13 +136,51 @@ label "Shellback turtles"
 kill 6 Wandering Shellback##111633 |q 43805/2 |goto Eye of Azshara Map/0 52.18,63.34
 |next "Court_Of_Farondis_WQ"
 step
+label quest-42165
+accept Azsuna Specimens##42165 |goto Azsuna/0 34.02,45.19
+|tip You will accept this quest automatically.
+step
+Follow the path |goto 32.97,46.17 < 20 |only if walking
+click Felspider##97323
+Defeat or Capture a Felspider |q 42165/1 |goto 34.02,45.19
+|tip You may have to search a large area around here to find one.
+|next "Court_Of_Farondis_WQ"
+step
 label quest-44894
-Drop down |goto 39.78,7.47 < 30 |only if walking
-accept Bloodgazer Swarm!##44894 |goto Azsuna/0 38.68,7.12
+Drop down |goto Azsuna/0 39.78,7.47 < 30 |only if walking
+accept Bloodgazer Swarm!##44894 |goto 38.68,7.12
 |tip You will accept this quest automatically.
 step
 Slay the Bloodgazers around this area
 Cull the Bloodgazer Falcosaurs |q 44894/1 |goto Azsuna/0 36.60,6.31
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41495
+Follow the path |goto Azsuna/0 63.39,25.54 < 25 |only if walking
+Follow the path |goto 60.38,20.69 < 20 |only if walking
+Follow the path |goto 57.26,18.00 < 25 |only if walking
+accept Brilliant Leystone Seams##41495 |goto 56.25,17.11
+|tip You will accept this quest automatically.
+step
+click Brilliant Leystone Seam##0
+collect 6 Brilliant Leystone Ore##141228 |q 41495/1 |goto 56.25,17.11
+|tip You will find Brilliant Leystone Seams all over this area.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41481
+Follow the path |goto Azsuna/0 47.53,29.14 < 25 |only if walking
+Follow the path |goto 44.75,31.83 < 25 |only if walking
+Follow the path |goto 41.21,35.34 < 25 |only if walking
+Follow the path up |goto 39.19,32.73 < 20 |only if walking
+Follow the path |goto 37.81,31.79 < 10 |only if walking
+Follow the path up |goto 37.52,29.46 < 15 |only if walking
+Follow the path |goto 39.11,27.03 < 15 |only if walking
+accept Brimstone Destroyer##41481 |goto 38.62,25.38
+|tip You will accept this quest automatically.
+step
+kill Brimstone Destroyer##93237
+click Brimstone Destroyer Core##195122
+Brimstone Destroyer Core mined |q 41481/1 |goto 38.62,25.38
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41482
@@ -171,8 +224,31 @@ kill Calamir##109331 |q 43193/1 |goto 56.42,67.31
 |tip Avoid the Arcanopulse areas.
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41438
+Follow the path |goto Azsuna/0 45.14,43.69 < 20 |only if walking
+Follow the path down |goto 47.83,45.19 < 20 |only if walking
+accept Charged Leystone Deposits##41438 |goto 49.07,47.61
+|tip You will accept this quest automatically.
+step
+click Charged Leystone Deposit##195122
+|tip These are located all around the area.
+collect 10 Charged Leystone Ore##141238 |q 41438/1 |goto 49.02,47.03
+|next "Court_Of_Farondis_WQ"
+step
+label quest-43091
+Follow the path |goto Azsuna/0 50.66,30.05 < 25 |only if walking
+Follow the path |goto 50.91,22.58 < 20 |only if walking
+Follow the path |goto 51.81,16.12 < 25 |only if walking
+Follow the path |goto 53.78,13.91 < 25 |only if walking
+Follow the path |goto 55.96,12.91 < 15 |only if walking
+accept DANGER: Arcanor Prime##43091 |goto 56.67,11.09
+|tip You will accept this quest automatically.
+step
+kill Arcanor Prime##109641 |q 43091/1 |goto 56.67,11.09
+|next "Court_Of_Farondis_WQ"
+step
 label quest-44189
-Follow the path |goto Azsuna/0 49.40,14.98 < 30 |only if walking
+Follow the path |goto Azsuna/0 46.99,73.10 < 20 |only if walking
 Follow the path |goto 44.15,76.99 < 30 |only if walking
 Follow the path |goto 44.21,81.99 < 30 |only if walking
 Follow the path to Bestrix's lair |goto Azsuna/0 42.76,85.14 < 30
@@ -180,6 +256,30 @@ accept DANGER: Bestrix##44189 |goto Azsuna/0 41.79,88.35
 |tip You will accept this quest automatically.
 step
 kill Bestrix##111454 |q 44189/1 |goto 41.79,88.35
+|next "Court_Of_Farondis_WQ"
+step
+label quest-43121
+Follow the path |goto Azsuna/0 55.92,60.20 < 25 |only if walking
+Follow the path |goto 57.90,63.64 < 25 |only if walking
+Follow the path |goto 59.09,67.14 < 25 |only if walking
+Follow the path |goto 60.44,69.11 < 25 |only if walking
+Follow the path |goto 60.11,74.50 < 20 |only if walking
+accept DANGER: Chief Treasurer Jabrill##43121 |goto 59.29,77.04
+|tip You will accept this quest automatically.
+step
+kill Chief Treasurer Jabrill##109677 |q 43121/1 |goto 59.29,77.04
+|next "Court_Of_Farondis_WQ"
+step
+label quest-43059
+Follow the path |goto Azsuna/0 63.39,30.66 < 25 |only if walking
+Follow the path |goto 63.83,34.57 < 25 |only if walking
+Follow the path down |goto 65.21,37.83 < 20 |only if walking
+Follow the path |goto 60.44,69.11 < 25 |only if walking
+Follow the path |goto 60.11,74.50 < 20 |only if walking
+accept DANGER: Fjordun##43059 |goto 66.12,40.10
+|tip You will accept this quest automatically.
+step
+kill Fjordun##109584 |q 43059/1 |goto 66.12,40.10
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43079
@@ -587,6 +687,16 @@ collect Leystone-Encrusted Spike##134104 |q 41500/1 |goto 50.26,21.67
 |tip Mine the corpses.
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41598
+Follow the path |goto Azsuna/0 43.03,43.17 < 20 |only if walking
+accept Lively Cursed Queenfish##41598 |goto 40.01,41.79
+|tip You will accept this quest automatically.
+step
+Fish from Lively Cursed Queenfish Schools |cast Fishing##7620
+|tip You will find these all around the water.
+collect 10 Lively Cursed Queenfish##134564 |q 41598/1 |goto 40.01,41.79
+|next "Court_Of_Farondis_WQ"
+step
 label quest-43327
 Follow the path |goto Azsuna/0 50.19,30.38 < 30 |only if walking
 Go to the beach |goto Azsuna/0 52.06,34.66 < 30 |only if walking
@@ -597,6 +707,27 @@ talk Archmage Kesalon##110915
 click Arcane Artifact
 |tip Stay inside the bubbles as they float to reach the Arcane Artifact on top of the building.
 Find the Item |q 43327/1 |goto 54.06,39.03
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44786
+Follow the path |goto Azsuna/0 49.85,29.75 < 30 |only if walking
+Follow the path down |goto 51.19,32.65 < 30 |only if walking
+Cross the water |goto 52.09,34.70 < 30 |only if walking
+Follow the path |goto 53.34,37.72 < 30 |only if walking
+Enter the building |goto Azsuna/17 53.77,40.31
+accept Midterm: Rune Aptitude##44786 |goto 62.86,86.74
+|tip You will accept this quest automatically.
+step
+Follow the path down |goto 58.11,68.23
+Go through the Academy Door |goto 50.40,50.09
+Arcane Rune drawn |q 44786/1 |goto 32.59,42.69
+|tip Walk over the lines on the ground to trace the rune.
+step
+Fire Rune drawn |q 44786/2 |goto 32.59,42.69
+|tip Walk over the lines on the ground to trace the rune.
+step
+Frost Rune drawn |q 44786/3 |goto 32.59,42.69
+|tip Walk over the lines on the ground to trace the rune.
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42105
@@ -755,16 +886,40 @@ kill Equine Sunrunner##91308+
 collect 8 Smooth Sunrunner Hide##137628 |q 41582/1 |goto Azsuna/0 60.66,24.83
 |next "Court_Of_Farondis_WQ"
 step
-label quest-41327
-Follow the path |goto Azsuna/0 45.45,42.28 < 30 |only if walking
-accept Supplies Needed: Stormscales##41327 |goto Azsuna/0 46.99,40.67
+label quest-41288
+Follow the path up |goto Azsuna/0 45.44,42.33 < 30 |only if walking
+accept Supplies Needed: Aethril##41288 |goto 46.99,40.67
 |tip You will accept this quest automatically.
 step
-collect 40 Stormscale##124115 |q 41327/1
-|tip These can either be farmed with the skinning profession or you can buy them from the AH.
+collect 40 Aethril##124101
+|tip You can farm these with Herbalism or purchase them from the Auction House.
 step
 talk Veridis Fallon##107376
-turnin Supplies Needed: Stormscales##41327 |goto Azsuna/0 46.91,41.41
+turnin Supplies Needed: Aethril##41288 |goto 46.99,40.67
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41315
+Follow the path up |goto Azsuna/0 45.44,42.33 < 30 |only if walking
+accept Supplies Needed: Leystone##41315 |goto 46.99,40.67
+|tip You will accept this quest automatically.
+step
+collect 40 Leystone##123918
+|tip You can farm these with Mining or purchase them from the Auction House.
+step
+talk Veridis Fallon##107376
+turnin Supplies Needed: Leystone##41315 |goto 46.99,40.67
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41327
+Follow the path up |goto Azsuna/0 45.44,42.33 < 30 |only if walking
+accept Supplies Needed: Stormscales##41327 |goto 46.99,40.67
+|tip You will accept this quest automatically.
+step
+collect 40 Stormscale##124115
+|tip You can farm these with Skinning or purchase them from the Auction House.
+step
+talk Veridis Fallon##107376
+turnin Supplies Needed: Stormscales##41327 |goto 46.99,40.67
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43192

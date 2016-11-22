@@ -909,7 +909,7 @@ ZGV.WaypointFunctions['internal'] = {
 				ZGV.Pointer.PathFoundHandler("failure")
 			end
 		else
-			self.Pointer:ShowArrow (arrowpoint)
+			self.Pointer:FindTravelPath (arrowpoint)
 		end
 
 

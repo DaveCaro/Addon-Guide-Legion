@@ -1273,8 +1273,8 @@ step
 Click here to farm the pet yourself. |confirm |next "farm"
 Click here to be taken to the Auctioneer to purchase it. |confirm |next "buy"
 |tip This pet can be farmed, or purchased from the Auction House.
-label "farm"
 step
+label "farm"
 |tip This pet requires you complete the Mastering the Menagerie daily after gaining Menagerie Level 3.
 |tip The daily reward will be a Big Bag of Pet Supplies from which you have a chance of getting this pet.
 confirm

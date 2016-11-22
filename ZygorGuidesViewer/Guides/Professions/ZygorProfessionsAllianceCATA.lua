@@ -2129,7 +2129,7 @@ kill Boulderfist Mystic##17135+, Boulderfist Crusher##17134+
 collect 18 Netherweave Cloth##21877 |goto Nagrand,73.3,69.7 |condition skill("Engineering")>=350
 |tip You can also buy these materials from the Auction House.
 step
-#include "trainer_Blacksmithing_Shatt"
+#include "maincity_anvil"
 create Fel Iron Bar##29356,Mining,110 total |condition skill("Engineering")>=350
 create Adamantite Bar##29358,Mining,40 total |condition skill("Engineering")>=350
 create Eternium Bar##29359,Mining,20 total |condition skill("Engineering")>=350

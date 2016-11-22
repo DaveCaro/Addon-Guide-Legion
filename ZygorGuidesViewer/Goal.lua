@@ -321,6 +321,14 @@ end
 
 function Goal:OnCompleted()
 	if self.oncompletefun then self.oncompletefun() end
+	if ZGV.Pointer.DestinationWaypoint and ZGV.Pointer.DestinationWaypoint.goal == self then  -- this waypoint is "complete", in whatever manner
+		ZGV:Debug("Goal: cycling waypoint from completed goal ".. self.num)
+		ZGV.Pointer:CycleWaypointFrom(self.num,self.parentStep)
+	end
+end
+
+function Goal:OnUncompleted()
+	-- formality. May be important at some point.
 end
 
 function Goal:GetTooltip()
@@ -1917,6 +1925,95 @@ GOALTYPES['killboss'] = {
 	end
 }
 
+GOALTYPES['image'] = {
+	parse = function(self,params,step)
+		self.image,self.full_w,self.full_h,self.inline,self.inline_w,self.inline_h = strsplit(",",params)
+		if not self.image then return false,"image name missing." end
+		self.image = ZGV.DIR.."\\Guides\\Images\\"..self.image
+
+		if self.inline then
+			self.inline_w = math.min(self.inline_w or 260,260)
+			self.inline_h = self.inline_h or (self.full_h*260/self.full_w)
+			self.strict_text=true 
+		end
+	end,
+	gettext = function(self)
+		if self.inline then
+			return ("|T%s:%s:%s:0:0:1024:1024:0:%d:0:%d|t"):format(self.image,self.inline_h,self.inline_w,self.full_w,self.full_h)
+		else
+			return "Click to show image"
+		end
+	end,
+	onclick = function(self)
+		if not self.inline then
+			ZGV.GoalPopupImage(self.image,self.full_w,self.full_h)
+		end
+	end,
+}
+
+local function GoalPopupImage_DragStopHandler() 
+	ZGV.GoalPopupImageFrame:StopMovingOrSizing()
+	ZGV.db.profile.goalpopup_frame_anchor = {ZGV.GoalPopupImageFrame:GetPoint()} 
+end
+
+function ZGV.GoalPopupImage(image,w,h)
+	if not ZGV.GoalPopupImageFrame then
+		local CHAIN=ZGV.ChainCall
+		local ui = ZGV.UI
+		local SkinData = ui.SkinData
+
+		ZGV.GoalPopupImageFrame = CHAIN(ui:Create("Frame",UIParent,"ZGV_GoalPopupImageFrame"))
+			:SetFrameStrata("HIGH")
+			:SetToplevel(enable)
+			:SetBackdropColor(ZGV.HTMLColor("#222222ff"))
+			:SetPoint("TOPLEFT",UIParent,50,50)
+			:CanDrag(true)
+			:SetScript("OnDragStop",GoalPopupImage_DragStopHandler)
+		.__END
+		local MF=ZGV.GoalPopupImageFrame
+		tinsert(UISpecialFrames, "ZGV_GoalPopupImageFrame") -- allows the frame to be closable with ESC keypress
+
+		MF.HeaderFrame = CHAIN(ui:Create("Frame",MF,nil))
+			:SetPoint("TOPLEFT",1,-1)
+			:SetPoint("TOPRIGHT",-1,-1)
+			:SetHeight(27)
+			:SetFrameStrata("HIGH")
+			:SetFrameLevel(MF:GetFrameLevel()+2)
+			:SetBackdropColor(0,0,0,1)
+			:SetBackdropBorderColor(0,0,0,0)
+			:SetToplevel(enable)
+			.__END
+
+			MF.HeaderFrame.Logo = CHAIN(MF.HeaderFrame:CreateTexture())
+				:SetPoint("TOP",MF.HeaderFrame,"TOP",0,-3) 
+				:SetSize(100,25)
+				:SetTexture(SkinData("TitleLogo"))
+			.__END
+
+			MF.HeaderFrame.close = CHAIN(CreateFrame("Button",nil,MF.HeaderFrame))
+				:SetPoint("TOPRIGHT",-5,-5)
+				:SetSize(17,17)
+				:SetScript("OnClick", function() ZGV.GoalPopupImageFrame:Hide() end)
+				.__END
+			ZGV.AssignButtonTexture(MF.HeaderFrame.close,(SkinData("TitleButtons")),6,32)
+		MF.ImageTexture = CHAIN(MF:CreateTexture())
+				:SetPoint("TOPLEFT",MF.HeaderFrame,"BOTTOMLEFT",1,-1) 
+				:SetPoint("BOTTOMRIGHT",MF,"BOTTOMRIGHT",-1,1) 
+		.__END
+	end
+
+	if ZGV.db.profile.goalpopup_frame_anchor then
+		ZGV.db.profile.goalpopup_frame_anchor[2]=UIParent
+		ZGV.GoalPopupImageFrame:ClearAllPoints()
+		ZGV.GoalPopupImageFrame:SetPoint(unpack(ZGV.db.profile.goalpopup_frame_anchor))
+	end
+
+	ZGV.GoalPopupImageFrame:SetSize(w+2,h+29)
+	ZGV.GoalPopupImageFrame:SetScale(ZGV.db.profile.framescale)
+	ZGV.GoalPopupImageFrame:Show()
+	ZGV.GoalPopupImageFrame.ImageTexture:SetTexture(image)
+	ZGV.GoalPopupImageFrame.ImageTexture:SetTexCoord(0,w/1024,0,h/1024)
+end
 
 GOALTYPES['debugvar'] = { -- use for debugging step/goal completion. 
 	parse = function(self,params,step)

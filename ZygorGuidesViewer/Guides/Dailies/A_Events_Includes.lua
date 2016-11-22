@@ -2299,13 +2299,13 @@ ZygorGuidesViewer:RegisterInclude("Pilgrims_Bounty_Quests_Alliance",[[
 		accept Candied Sweet Potatoes##14033 |goto Darnassus,61.5,49.0
 	step
 		talk Ikaneba Summerset##34681
-		buy 5 Teldrassil Sweet Potato##44855 |condition itemcount(44855 ) >= 5 |goto 62.1,46.0
-		buy 5 Honey##44853 |condition itemcount(44853) >= 5 |goto 62.1,46.0
-		buy 5 Autumnal Herbs##44835 |condition itemcount(44835) >= 5 |goto 62.1,46.0
+		buy 5 Teldrassil Sweet Potato##44855 |condition itemcount(44855 ) >= 5 |goto 61.5,49.0
+		buy 5 Honey##44853 |condition itemcount(44853) >= 5 |goto 61.5,49.0
+		buy 5 Autumnal Herbs##44835 |condition itemcount(44835) >= 5 |goto 61.5,49.0
 	step
 		Cook next to the Pilgrim's Bounty Cooking Fire
-		create 5 Candied Sweet Potatoes##62051,Cooking,5 total |q 14033/1 |goto 61.6,49.1
-		collect 5 Candied Sweet Potatoes |q 14033/2 |goto 61.6,49.1
+		create 5 Candied Sweet Potatoes##62051,Cooking,5 total |q 14033/1 |goto 62.10,48.99
+		collect 5 Candied Sweet Potatoes |q 14033/2 |goto 62.10,48.99
 		create 5 Candied Sweet Potatoes##62051,Cooking,280
 		If you need to train your Cooking skill to allow a higher max level, talk to Mary Allerton _Click Here_ |goto 66.5,35.1
 	step
@@ -2318,7 +2318,7 @@ ZygorGuidesViewer:RegisterInclude("Pilgrims_Bounty_Quests_Alliance",[[
 	step
 		kill Wild Turkey##32820+ 
 		|tip You can find these all around Elwynn Forest, so you are not limited to staying in this area. Ride around Elwynn Forest and look for Wild Turkeys, you should be able to find them easily if you ride around.
-		collect 20 Wild Turkey##44834 |q 14035 |goto 42.5,62.8
+		collect 5 Wild Turkey##44834 |q 14035 |goto 42.5,62.8
 	step
 		talk Wilmina Holbeck##34682
 		buy 10 Honey##44853 |condition itemcount(44853) >= 10 |goto 34.1,51.5
@@ -2356,14 +2356,14 @@ ZygorGuidesViewer:RegisterInclude("Pilgrims_Bounty_Dailies_Alliance",[[
 		Start a Food Fight! |achieve 3579 |goto Elwynn Forest 34.3,51.1
 		Use the other abilities on your hotbar to eat the food 
 		|tip You will only be able to eat certain foods at each place on the table. Once you eat the foods available to your spot 5 times, click the red arrow above your action bar to get out of the Turkey Chair. Then, go sit in another Turkey Chair that has a type of food you haven't eaten yet.
-		Earn the Pilgrims Paunch in Stormwind |achieve 3556/2 |goto Elwynn Forest 34.3,51.1
+		Earn the Pilgrims Paunch in Stormwind |achieve 3556/4 |goto Elwynn Forest 34.3,51.1
 	step
 		While still at the table, go to each of the chairs
 		While in each of the chairs, press 1
 		Pass the Candied Sweet Potatoes |achieve 3558/1 |goto Elwynn Forest 34.3,51.1
-		Pass the Cranberry Chutney |achieve 3558/4 |goto Elwynn Forest 34.3,51.1
+		Pass the Cranberry Chutney |achieve 3558/2 |goto Elwynn Forest 34.3,51.1
 		Pass the Pumpkin Pie |achieve 3558/3 |goto Elwynn Forest 34.3,51.1
-		Pass the Slow-Roasted Turkey |achieve 3558/2 |goto Elwynn Forest 34.3,51.1
+		Pass the Slow-Roasted Turkey |achieve 3558/4 |goto Elwynn Forest 34.3,51.1
 		Pass the Spice Bread Stuffing |achieve 3558/5 |goto Elwynn Forest 34.3,51.1
 		Earn the Sharing is Caring Achievement |achieve 3558 |goto Elwynn Forest 34.3,51.1
 	step
@@ -2392,7 +2392,7 @@ ZygorGuidesViewer:RegisterInclude("Pilgrims_Bounty_Dailies_Alliance",[[
 		|tip You will only be able to eat certain foods at each place on the table. Once you eat the foods available to your spot 5 times, click the red arrow above your action bar to get out of the Turkey Chair. Then, go sit in another Turkey Chair that has a type of food you haven't eaten yet.
 		Eat each type of food 5 times in a row 
 		|tip You can see how many times you've eaten the food by looking at it's buff that it gives you next to your mini map.
-		Earn the Pilgrims Paunch in Darnassus |achieve 3556/3 |goto Darnassus,62.8,48.2
+		Earn the Pilgrims Paunch in Darnassus |achieve 3556/1 |goto Darnassus,62.8,48.2
 	step
 		talk Ikaneba Summerset##34681
 		buy 20 Teldrassil Sweet Potato##44855 |condition itemcount(44855) >= 20 |goto 61.7,49.1
@@ -2419,7 +2419,7 @@ ZygorGuidesViewer:RegisterInclude("Pilgrims_Bounty_Dailies_Alliance",[[
 		|tip You will only be able to eat certain foods at each place on the table. Once you eat the foods available to your spot 5 times, click the red arrow above your action bar to get out of the Turkey Chair.  Then, go sit in another Turkey Chair that has a type of food you haven't eaten yet.
 		Eat each type of food 5 times in a row 
 		|tip You can see how many times you've eaten the food by looking at it's buff that it gives you next to your mini map.
-		Earn the Pilgrims Paunch in The Exodar |achieve 3556/1 |goto The Exodar,75.7,52.3
+		Earn the Pilgrims Paunch in The Exodar |achieve 3556/2 |goto The Exodar,75.7,52.3
 	step
 		talk Caitrin Ironkettle##34708
 		accept Don't Forget The Stuffing!##14051 |goto Dun Morogh,60.1,34.3
@@ -2431,7 +2431,7 @@ ZygorGuidesViewer:RegisterInclude("Pilgrims_Bounty_Dailies_Alliance",[[
 		|tip You will only be able to eat certain foods at each place on the table. Once you eat the foods available to your spot 5 times, click the red arrow above your action bar to get out of the Turkey Chair.  Then, go sit in another Turkey Chair that has a type of food you haven't eaten yet.
 		Eat each type of food 5 times in a row 
 		|tip You can see how many times you've eaten the food by looking at it's buff that it gives you next to your mini map.
-		Earn the Pilgrims Paunch in Ironforge |achieve 3556/4 |goto Dun Morogh,59.9,34.6
+		Earn the Pilgrims Paunch in Ironforge |achieve 3556/3 |goto Dun Morogh,59.9,34.6
 		Earn the Pilgrims Paunch Achievement! |achieve 3556 |goto Dun Morogh,59.9,34.6
 	step
 		talk Elizabeth Barker Winslow##34645
