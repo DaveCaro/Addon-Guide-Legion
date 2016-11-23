@@ -50,8 +50,8 @@ T Pumpkin Pie |N|(npc:34679) (46.6, 13.8)| |QID|14040| |Z|4| |NPC|34679|
 A Cranberry Chutney |N|(npc:34679) (46.6, 13.8)| |QID|14041| |Z|4| |NPC|34679|
 U (item:46805) |N|Learn (item:46805)| |O| |U|46805| |QID|14041|
 
-N 160-220 (item:66035) |CO| |N|65 (item:46793), 65 (item:44853) purchasable from (npc:34685) (46.47, 13.79)| |NPC|34685| |P|Cooking 220| |Z|4|
-N 25 (item:66035) |CO| |N|25 (item:46793), 25 (item:44853) purchasable from (npc:34685) (46.47, 13.79)| |NPC|34685| |QID|14041| |Z|4|
+N 160-220 (item:44840) |CO| |N|65 (item:46793), 65 (item:44853) purchasable from (npc:34685) (46.47, 13.79)| |NPC|34685| |P|Cooking 220| |Z|4|
+N 25 (item:44840) |CO| |N|25 (item:46793), 25 (item:44853) purchasable from (npc:34685) (46.47, 13.79)| |NPC|34685| |QID|14041| |Z|4|
 
 N Train Artisan Cooking |N|(npc:34713) (46.4, 13.9)| |Z|4| |PM|Cooking|300| |NPC|34713|
 N Pilgrim's Paunch (Orgrimmar) |N|Eat 5 helpings of each food until you get the spirit of sharing buff for the achievement Pilgrim's Paunch (46.6, 13.8)| |AID|3557| |AC|1| |Z|4|
@@ -60,7 +60,7 @@ R Thunder Bluff |N|Travel to {Thunder Bluff} (30.82, 69.80)| |WR| |Z|362| |QID|1
 A Easy As Pie |QID|14060| |N|(npc:34714) (30.82, 69.80)| |NPC|34714| |D| |Z|362|
 N 20 (item:44836) |CO| |N|20 (item:46796), 20 (item:44853) purchasable from (npc:34684) (30.8, 64.6)| |Z|362| |QID|14060| |NPC|34684| |Z|362| |D|
 T Easy As Pie |QID|14060| |N|(npc:34714) (30.82, 69.80)| |NPC|34714| |D| |Z|362|
-C Cranberry Chutney |N|Cook and bring 5 servings of (item:66035) to Dokin Farplain outside of {Thunder Bluff} (30.79, 63.71)| |QID|14041| |Z|362|
+C Cranberry Chutney |N|Cook and bring 5 servings of (item:44840) to Dokin Farplain outside of {Thunder Bluff} (30.79, 63.71)| |QID|14041| |Z|362|
 T Cranberry Chutney |N|(npc:34678) (30.79, 63.71)| |NPC|34678| |QID|14041| |Z|362|
 A Candied Sweet Potatoes |N|Dokin Farplain (30.79, 63.71)| |QID|14043| |Z|362|
 U (item:46806) |N|Learn (item:46806)| |O| |QID|14043| |U|46806|
@@ -74,10 +74,10 @@ T Candied Sweet Potatoes |N| Francis Eaton (46.6, 13.8)| |QID|14043| |Z|4| |NPC|
 A Undersupplied in the Undercity |N|(npc:34679) (46.6, 13.8)| |Z|4| |QID|14044| |NPC|34679|
 
 R Tirisfal Glade |N|Tale the Zeppelin to {Undercity} (50.90, 55.64)| |QID|14047| |WR| |Z|321|
-C Undersupplied in the Undercity |N|Cook and bring 5 (item:44837) and 5 (item:66035) to (npc:34677) (64.06, 11.10) in {Undercity}'s courtyard (the {Ruins of Lordaeron}).| |Z|382| |QID|14044| |NPC|34677|
+C Undersupplied in the Undercity |N|Cook and bring 5 (item:44837) and 5 (item:44840) to (npc:34677) (64.06, 11.10) in {Undercity}'s courtyard (the {Ruins of Lordaeron}).| |Z|382| |QID|14044| |NPC|34677|
 T Undersupplied in the Undercity |N|(npc:34677) (64.06, 11.10)| |Z|382| |QID|14044| |NPC|34677|
 
-N 20 (item:66035) |CO| |N|20 (item:46793), 20 (item:44853) purchasable from (npc:34683) (64.06, 11.10)| |NPC|34683| |QID|14059| |D| |Z|382|
+N 20 (item:44840) |CO| |N|20 (item:46793), 20 (item:44853) purchasable from (npc:34683) (64.06, 11.10)| |NPC|34683| |QID|14059| |D| |Z|382|
 T We're Out of Cranberry Chutney Again? |N|(npc:34712) (63.20, 8.97)| |QID|14059| |D| |NPC|34712| |Z|382|
 N 20 (item:44839) |CO| |N|20 (item:46797), 20 (item:44853), 20 (item:44835) purchasable from (npc:34683) (64.06, 11.10)| |QID|14058| |Z|382| |NPC|34683| |D|
 T She Says Potato |N|(npc:34768) (65.25, 14.20)| |QID|14058| |Z|382| |NPC|34768| |D|

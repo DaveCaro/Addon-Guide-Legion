@@ -48,14 +48,14 @@ T Pumpkin Pie |N|Edward Winslow (59.8, 34.3)| |QID|14024| |Z|27|
 A Cranberry Chutney |N|Edward Winslow (59.8, 34.3)| |QID|14028| |Z|27|
 U (item:44858) |N|Learn (item:44858)| |O| |U|44858| |QID|14028|
 
-N 160-220 (item:66035) |CO| |N|65 (item:44854), 65 (item:44853) purchasable from (npc:34645) (59.8, 34.2)| |NPC|34645| |P|Cooking 220| |Z|27|
-N 25 (item:66035) |CO| |N|25 (item:44854), 25 (item:44853) purchasable from (npc:34645) (59.8, 34.2)| |NPC|34645| |QID|14028| |Z|27|
+N 160-220 (item:44840) |CO| |N|65 (item:44854), 65 (item:44853) purchasable from (npc:34645) (59.8, 34.2)| |NPC|34645| |P|Cooking 220| |Z|27|
+N 25 (item:44840) |CO| |N|25 (item:44854), 25 (item:44853) purchasable from (npc:34645) (59.8, 34.2)| |NPC|34645| |QID|14028| |Z|27|
 N Pilgrim's Paunch (Ironforge) |N|Eat 5 helpings of each food until you get the spirit of sharing buff for the achievement Pilgrim's Paunch (59.8, 34.2)| |AID|3556| |AC|3| |Z|27|
 
 R Elwynn Forest |N|Travel to {Stormwind City} to {Elwynn Forest} (33.9, 50.9)| |QID|14033| |Z|30|
-N 20 (item:66035) |CO| |N|20 (item:44854), 20 (item:44853) purchasable from (npc:34682) (34.1, 51.5)| |NPC|34682| |QID|14028| |Z|30| |D|
+N 20 (item:44840) |CO| |N|20 (item:44854), 20 (item:44853) purchasable from (npc:34682) (34.1, 51.5)| |NPC|34682| |QID|14028| |Z|30| |D|
 T We're Out of Cranberry Chutney Again? |QID|14053| |N|(npc:34710) (33.70, 50.64)| |NPC|34710| |D| |Z|30|
-C Cranberry Chutney |N|Cook and bring 5 servings of (item:66035) to (npc:34744) at the gates of {Stormwind City} (33.9, 50.9)| |QID|14028| |Z|30| |NPC|34744|
+C Cranberry Chutney |N|Cook and bring 5 servings of (item:44840) to (npc:34744) at the gates of {Stormwind City} (33.9, 50.9)| |QID|14028| |Z|30| |NPC|34744|
 T Cranberry Chutney |N|(npc:34744) (33.9, 50.9)| |QID|14028| |Z|30| |NPC|34744|
 A They're Ravenous In Darnassus |N|(npc:34744) (33.9, 50.9)| |Z|30| |QID|14030| |NPC|34744|
 
