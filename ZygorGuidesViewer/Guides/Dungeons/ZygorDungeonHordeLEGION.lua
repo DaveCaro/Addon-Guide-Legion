@@ -1216,3 +1216,695 @@ step
 _Congratulations!_
 You completed the Court of Stars dungeon!
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Legion Dungeons\\Karazhan\\Attunement",{
+condition_suggested="level>=110 and _G.GetAverageItemLevel()>840",
+keywords={"Karazhan Kara"},
+author="support@zygorguides.com",
+description="This guide will walk you through the Attunement for the Karazhan dungeon.",
+},[[
+step
+talk Archmage Khadgar##90417
+accept Edict of the God-King##45422 |goto Dalaran L/10 28.59,48.39
+step
+Enter the Halls of Valor on Mythic difficulty
+kill God-King Skovald##95675 |q 45422/1 |goto Halls of Valor/3 51.44,88.83
+step
+click the Quest Completion box
+turnin Edict of the God-King##45422
+accept Unwanted Evidence##44886
+step
+talk Archmage Khadgar##90417
+turnin Unwanted Evidence##44886 |goto Dalaran L/10 28.59,48.39
+accept Uncovering Orders##44887 |goto Dalaran L/10 28.59,48.39
+step
+Enter the Vault of the Wardens on Mythic difficulty
+kill Inquisitor Tormentorum##96015
+|tip This is the 2nd boss in the instance.
+collect Fragment of Torment |q 44887/3
+step
+Enter the Violet Hold on Mythic difficulty
+Kill the first boss in this instance it can be one of 6 different bosses
+collect Fragment of Power |q 44887/2
+step
+Enter the Black Rook Hold on Mythic difficulty
+kill Smashspite the Hateful
+|tip This is the 3rd boss in this instance.
+collect Fragment of Spite |q 44887/1
+step
+talk Archmage Khadgar##90417
+turnin Uncovering Orders##44887 |goto Dalaran L/10 28.59,48.39
+accept Aura of Uncertainty##44944 |goto Dalaran L/10 28.59,48.39
+step
+talk Archmage Khadgar##90417
+Tell him "Let's us begin." |goto Dalaran L/10 28.59,48.39
+Watch the Dialogue
+Unravel the Mystery |q 44944/1 |goto Dalaran L/10 28.59,48.39
+step
+talk Archmage Khadgar##90417
+turnin Aura of Uncertainty##44944 |goto Dalaran L/10 28.59,48.39
+accept Return to Karazhan##44556 |goto Dalaran L/10 28.59,48.39
+step
+click Portal to Karazhan |goto Dalaran L/10 29.51,46.87
+Take the Portal to Karazhan |q 44556/1
+step
+talk Archmage Khadgar##114310
+turnin Return to Karazhan##44556 |goto Deadwind Pass/0 47.03,75.28
+accept Finite Numbers##44557 |goto Deadwind Pass/0 47.03,75.28
+accept Holding the Lines##44683 |goto Deadwind Pass/0 47.03,75.28
+step
+talk Archmage Karlain##114631
+accept Corruption Runs Deep##44684 |goto Deadwind Pass/0 46.95,75.40
+stickystart "Demons!"
+step
+Enter the Eastern Caverns beneath Deadwind Pass |goto Deadwind Pass/0 48.62,78.85
+click the Fel Spreader
+Secure the Eastern Ley Line |q 44683/1 |goto Deadwind Pass/22 57.81,38.59
+step
+click Legion Portal
+Disable the Legion Portal |q 44557/1 |count 1 |goto Deadwind Pass/22 58.60,23.16
+step
+Use your Arcane-Infused Vial to get a sample of the soil |use Arcane-infused Vial##141878
+Collect a Corrupted Essence of Soil |q 44684/1 |goto Deadwind Pass/22 59.88,13.72
+step
+click Legion Portal
+Disable the Legion Portal |q 44557/1 |count 2 |goto Deadwind Pass/22 63.43,31.56
+step
+click Legion Portal
+Disable the Legion Portal |q 44557/1 |count 3 |goto Deadwind Pass/22 64.02,45.88
+step
+click Legion Portal
+Disable the Legion Portal |q 44557/1 |count 4 |goto Deadwind Pass/22 55.81,88.83
+step
+Exit the Masters Cellar |goto Deadwind Pass/22 36.90,35.82
+Enter the Weastern Caverns beneath Deadwind Pass |goto Deadwind Pass/0 47.80,78.25
+click the Fel Spreader
+Secure the Western Ley Line |q 44683/2 |goto Deadwind Pass/24 54.69,87.29
+step
+Use your Arcane-Infused Vial to get a sample of the water |use Arcane-infused Vial##141878
+Collect a Corrupted Essence of Water |q 44684/2 |goto Deadwind Pass/24 53.76,81.35
+step
+label "Demons!"
+Slay 20 Legion Forces |q 44557/2
+step
+Exit the Masters Cellar |goto Deadwind Pass/23 73.79,80.09
+talk Archmage Khadgar##114310
+turnin Finite Numbers##44557 |goto Deadwind Pass/0 47.03,75.28
+turnin Holding the Lines##44683 |goto Deadwind Pass/0 47.03,75.28
+step
+talk Archmage Karlain##114631
+turnin Corruption Runs Deep##44684 |goto Deadwind Pass/0 46.95,75.40
+accept Thought Collection##44686 |goto Deadwind Pass/0 46.95,75.40
+step
+talk Archmage Khadgar##114310
+accept Reclaiming the Ramparts##44685 |goto Deadwind Pass/0 47.03,75.28
+step
+Stand in the Blue Arcane Circle on the ground
+Place the Empowered arcane ward |use Empowered Arcane Ward##142213
+Plant the Southern Ward |q 44685/2 |goto Deadwind Pass/0 44.62,76.79
+|tip It's up on top of the building you have to fly up to it.
+step
+Stand in the Blue Arcane Circle on the ground
+Place the Empowered arcane ward |use Empowered Arcane Ward##142213
+Plant the Northern Ward |q 44685/1 |goto Deadwind Pass/0 47.26,69.52
+|tip It's on the bridge, you will need to fly up to it.
+step
+talk Captured Wyrmtongue##114822
+Interrogate the captured Wyrmtongue |q 44686/1 |goto Deadwind Pass/0 48.70,69.54
+|tip Keep going through the speech suggestions until this is completed.
+|tip He is on top of this building you can fly to him.
+step
+Stand in the Blue Arcane Circle on the ground
+Place the Empowered arcane ward |use Empowered Arcane Ward##142213
+Plant the Eastern Ward |q 44685/3 |goto Deadwind Pass/0 47.34,71.79
+|tip It's at the top of this building, you will need to fly up to it.
+step
+talk Archmage Khadgar##114310
+turnin Reclaiming the Ramparts##44685 |goto Deadwind Pass/0 47.03,75.28
+step
+talk Archmage Karlain##114631
+turnin Thought Collection##44686 |goto Deadwind Pass/0 46.95,75.40
+accept Demon in Disguise##44764 |goto Deadwind Pass/0 46.95,75.40
+step
+talk Archmage Khadgar##114310
+turnin Demon in Disguise##44764 |goto Deadwind Pass/0 47.03,75.28
+accept The Power of Corruption##44733 |goto Deadwind Pass/0 47.03,75.28
+step
+Use your Essence of the Wyrmtongue |use Essence of Wyrmtongue##142208
+Enter the Masters Cellar |goto Deadwind Pass/0 47.76,78.28
+Stand on this green platform |goto Deadwind Pass/24 45.47,51.53
+Obtain Chamber Access |q 44733/1
+step
+_REMOVE YOUR DISGUISE_ once inside
+kill Thar'zul##115172 |q 44733/2 |goto Deadwind Pass/24 41.22,17.09
+kill Elux'ara Darkscorn##115179 |q 44733/3 |goto Deadwind Pass/24 45.14,11.15
+step
+Exit the Masters Cellar |goto Deadwind Pass/23 73.79,80.09
+talk Archmage Khadgar##114310
+turnin The Power of Corruption##44733 |goto Deadwind Pass/0 47.03,75.28
+accept In the Eye of the Beholder##44735 |goto Deadwind Pass/0 47.03,75.28
+accept Fragments of the Past##44734 |goto Deadwind Pass/0 47.03,75.28
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Legion Dungeons\\Karazhan\\Return to Karazhan",{
+mapid=1115,
+condition_suggested="level>=110 and _G.GetAverageItemLevel()>855",
+keywords={"Karazhan Kara"},
+author="support@zygorguides.com",
+description="This guide will walk you through the Return to Karazhan dungeon.",
+},[[
+step
+Enter Return to Karazhan |goto Deadwind Pass/0 46.74,70.22
+|tip This is a 5 man Mythic Dungeon, it may take a while to complete.
+confirm
+step
+Click here if you would like to do a Normal clear of the instance |next "Normal Clear"
+Click here if you would like to do the Nightbane instance clear |next "Nightbane Clear"
+|tip The Nightbane Clear is considered a speed run to summon him and Nightbane itself is significantly harder then the rest of the instance.
+confirm
+step
+label "Nightbane Clear"
+_Warning_
+To get to summon Nightbane you must collect all 5 Soul Fragments in a short amount of time
+You will have 8 minuites once inside to click the first Soul Fragment, once the first one is clicked within the required time you will recieve a 6 minuite buff, for each crystal after that you will get 5 more minuites added on
+Your group will need a little more gear to complete this speed run and to kill Nightbane suggesting an itemlevel of _865_
+confirm
+step
+Once Inside go to your right and follow the stairs down to the Opera room clearing trash along the way
+map Karazhan L/6
+path follow loose; loop off; ants curved; dist 20
+path	48.8,47.1	42.4,34.7	41.2,13.0
+path	Karazhan L/5 67.0,32.3	Karazhan L/5 67.1,81.1	Karazhan L/5 43.1,82.9
+|tip Opening the world map will display an ant trail guiding you through
+talk Barnes##114339 |goto Karazhan L/4 21.2,35.4
+|tip This will begin the event.
+The Opera Event can be one of 3 bosses
+Click here for the Opera Hall: Wikket |next "Wikket 2"
+Click here for the Opera Hall: Westfall Story |next "Westfall Story 2"
+Click here for the Opera Hall: Beautiful Beast |next "Beautiful Beast 2"
+confirm
+step
+label "Wikket 2"
+kill Elfyra##114284
+kill Galindre##114251
+_Everyone_
+|tip These bosses have shared Health so if you damage one you damage them both
+|tip Elfyra will cast a spell called Defy Gravity which will put a swirling purple circle on the ground, keep away from these until Galindra casts Magic Magnificent
+|tip You will need the Defy Gravity debuff when the Magic Magnificent cast is completed to prevent death
+|tip Galindra will cast a spell called Wondrious Radiance, this will appear as a big purple circle, never stand in this
+_Damage_
+|tip Elfyra will periodically summon monkey adds be sure to switch to them and kill them fast
+|tip Interrupt any casts you can from either of the bosses
+_Healer_
+|tip When adds are out be wary of your group as they have no aggro table and randomly attack members of your team
+|tip Be sure to pop cooldowns if any of your team is not able to get the Defy Gravity debuff when Magic Magnificent is cast
+_Tank_
+|tip Try to move the bosses away from any of the purple swirls on the ground
+|tip When the adds are out try to move the bosses on top of them so they can be cleaved down
+Defeat the Wikket Event |killboss 1651/2
+|next "first crystal 2"
+step
+label "Westfall Story 2"
+kill Toe Knee##114261
+kill Mrrgria##114260
+There are 3 phases in this fight in each phase there will be 2 bosses and in the last phase there will be one from each of the previous 2 phases
+_Everyone_
+|tip Avoid Flaming Gate and Burning Leg Sweep casted by Toe Knee, he will be in phases 1 and 3.
+|tip Avoid Wash Away which will send waves across the room, this will be created by Mrrgria and he will be in phases 2 and 3.
+|tip When Mrrgria casts Thunder Ritual on all players in your group be sure to spread out.
+_Damage_
+|tip Be sure to interrupt Bubble Blast, Shoreline Tidespeaker will cast this and these are active in phase 2.
+_Healer_
+|tip Heal any player inflicted by Poisonous Shank, healers that can dispell poisons should dispell this.
+_Tank_
+|tip Be sure to pick up the enemies as they come up in each phase.
+|tip Move the bosses out of any Waves or Tornados that they might be in.
+Defeat the Westfall Story Event |killboss 1651/2
+|next "first crystal 2"
+step
+label "Beautiful Beast 2"
+kill Coggleston##114328
+You must defeat all 3 mini bosses before you can attack Coggleston
+_Everyone_
+|tip Whenever one of these mini bosses die they will buff the damage of the other enemies by 25 percent.
+|tip When fixated by Babblet do not lead it into Burning Blaze this will buff its movement speed making it impossible to run away.
+|tip If you have the Drenched debuff you are able to clear patches of Burning Blaze.
+|tip When Mrs. Cauldrons casts Leftovers get 10 yards away from it, or Interrupt it.
+|tip If fixated by Babblet you must run away from it and try not to get hit, if hit it will deal damage and blind you for 4 seconds.
+_Damage_
+|tip Interrupt Luminore's Heat Wave ability if it is not interrupted it will do high damage to the entire group.
+|tip Try to kill all 3 mini bosses at once to prevent them from getting buffed.
+_Healer_
+|tip Watch the tank during this encounter they will be taking a lot of damage.
+_Tank_
+|tip Interrupt Dinner Bell! this is casted by Coggleston, if let off it will increase the haste of all allies by 100 percent.
+Defeat the Beautiful Beast Event |killboss 1651/2
+|next "first crystal 2"
+step
+label "first crystal 2"
+map Karazhan L/4
+path follow loose; loop off; ants curved; dist 20
+path	21.4,27.4	12.7,26.1	11.3,41.8
+path	20.0,42.6	24.6,25.8	28.5,23.8
+Follow this path through the back stage to get to the audience room
+The First Crystal is in the Audience after killing the Opera event
+Aquire the Opera Hall Soul Fragment |goto Karazhan L/4 26.4,36.0
+|tip Opening the world map will display an ant trail guiding you through
+confirm
+step
+map Karazhan L/4
+path follow loose; loop off; ants curved; dist 20
+path	40.8,38.8	56.2,37.5	62.0,31.6
+path	76.0,38.3
+The Second Crystal is in the left most room just before Maiden of Virtue
+Aquire the Guest Chambers Soul Fragment |goto Karazhan L/4 82.4,22.9
+|tip Opening the world map will display an ant trail guiding you through
+confirm
+step
+map Karazhan L/4
+path follow loose; loop off; ants curved; dist 20
+path	76.0,38.3	62.0,31.6	56.6,36.8
+path	44.0,49.4
+Jump Down here |goto Karazhan L/4 44.0,49.4
+|tip Opening the world map will display an ant trail guiding you through
+confirm
+step
+kill Moroes##15687 |goto Karazhan L/3 27.1,63.5
+_Everyone_
+|tip Use Ghost Traps on Moroes's Dinner Guests, these can be found in this room. They look like grey traps with lights on the sides that are able to be picked up.
+|tip Use these traps and decided which of his dinner guests you would like to Crowdcontrol first and kill later.
+|tip Kill all the Dinner Guests before kill Moroes.
+|tip If you get Garrote be sure to use your personal cooldowns as this debuff doesn't disappear until the fight is over.
+_Damage_
+|tip Interrupt and kill all of the dinner guests before killing Moroes.
+_Healer_
+|tip Keep the people with Garrote up, once it is applied on someone it doesn't go away until the fight is completed.
+|tip Keep the tank up when they get the debuff Coat Check, this is applied by Moroes and reduces their protection by 75 percent.
+_Tank_
+|tip Use cooldowns when Coat Check is applied to you.
+Defeat Moroes |killboss 1651/16
+step
+Once Moroes is defeated he will drop his Rusty Keys
+Be sure to pick these up
+confirm
+step
+The Third Crystal is located behind Moroes
+Aquire the Banquet Hall Soul Fragment |goto Karazhan L/3 22.4,63.0
+confirm
+step
+map Karazhan L/3
+path follow loose; loop off; ants curved; dist 20
+path	47.1,57.8	52.3,66.1	52.5,89.5
+path	Karazhan L/1 58.9,69.1	Karazhan L/1 57.7,58.1	Karazhan L/1 56.0,49.0
+path	Karazhan L/1 59.3,36.4	Karazhan L/1 60.5,23.2	Karazhan L/1 74.1,20.8
+The Fourth Crystal is located in a room filled with spiders to the north of Attumen the Huntsman
+Aquire the Servent's Quarters Soul Fragment |goto Karazhan L/1 74.1,20.8
+Once this is obtained click the portal to Karazhan's Entrance right next to this Fragment
+|tip Opening the world map will display an ant trail guiding you through
+confirm
+step
+map Karazhan L/6
+path follow loose; loop off; ants curved; dist 20
+path	Karazhan L/6 55.4,74.7	Karazhan L/6 66.0,66.5	Karazhan L/7 57.7,24.3
+path	Karazhan L/7 48.8,62.0	Karazhan L/8 58.6,53.9	Karazhan L/8 44.0,42.0
+path	Karazhan L/8 45.9,75.6	Karazhan L/8 45.9,27.5	Karazhan L/9 62.4,29.5
+path	Karazhan L/9 39.7,29.5	Karazhan L/9 32.2,39.2
+Follow this path that leads back to The Curator	|goto Karazhan L/9 32.2,39.2
+|tip Opening the world map will display an ant trail guiding you through
+confirm
+step
+kill Curator##114247 |goto Karazhan L/9 49.3,71.3
+_Everyone_
+|tip Don't stand in Power Discharge this ability creates a large blue circle on the ground that does damage on impact and stays there for the entire fight if stood in at any point will continue dealing daamge to you.
+_Damage_
+|tip This is an add control fight whenever a Volatile Energy spawns they need to be switched to and killed asap.
+|tip When The Curator gets to 0 percent mana he will Evocate increasing his damage taken by 100 percent this is where you must use your cooldowns.
+_Healer_
+|tip After The Curator finishes casting Evocation he will explode doing high damage to the group be ready for this.
+_Tank_
+|tip When Power Discharge it will leave a pool on the ground be sure to move the boss to places away from these so your team doesnt run into them.
+Defeat the Curator |killboss 1651/32
+step
+Curator will drop the last Soul Fragment
+Aquire the Menagerie Soul Fragment |goto Karazhan L/9 49.3,71.3
+confirm
+step
+map Karazhan L/9
+path follow loose; loop off; ants curved; dist 20
+path	32.2,39.2	39.7,29.5	62.4,29.5
+path	Karazhan L/8 45.9,27.5	Karazhan L/8 49.7,46.4
+Jump down here |goto Karazhan L/8 49.7,46.4
+Jump down a second time to get back to the entrance quickly |goto Karazhan L/7 49.1,34.7
+|tip Opening the world map will display an ant trail guiding you through
+confirm
+step
+Enter Nightbanes room |goto Karazhan L/6 59.0,78.9
+If you collected all 5 Soul Fragments Medivh should be on this balcony waiting for you.
+Talk to him to begin the fight
+|tip If you wipe don't worry he will be there waiting for you everytime once summoned.
+kill Nightbane##114895 |goto Karazhan L/6 45.8,92.5
+_Everyone_
+|tip Ignite Soul, when this is targeted on a player you must run into the fire patches that are on the ground and get to around 20 percent hp before it goes off.
+|tip This debuff will explode hitting everyone in the group once the timer expires equal to the current health of the target.
+|tip During phase 3 Nightbane will gain a spell, this spell will periodically fear the entire group for 3 seconds use your personal cooldowns for this.
+_Damage_
+|tip Interrupt Reverberating Shadows this will happen every 12 or so seconds.
+|tip If there are any adds out during any phase cleave off the boss or the big add to kill them.
+|tip If you are a ranged class stand in the ranged on one side of the room to place Charred Earth.
+|tip Save your cooldowns for the air phase(phase 2) the Bonecurse needs to die asap.
+|tip Never stand directly behind Hightbane or directly infront of him, he has a tail swipe and a breathe.
+_Healer_
+|tip Stand in the ranged on one side of the room to place Charred Earth.
+|tip Periodically players will get a debuff called Burning Bones, this wil ldeal high damage for the entire time it is on a player, this can be dispelled but only when needed.
+|tip The longer this debuff is on a player the less mobs will spawn when it is dispelled. If it just expirers it will still spawn one add.
+|tip DO NOT heal players with the debuff Ignite Soul unless they are going to die.
+|tip During the 2nd phase the Bonecurse will spawn the longer this is up the more stacks of Jagged Shards will be put on the entire group, this debuff lasts the rest of the encounter.
+|tip Jagged Shards deals damage when applied and deals damage every 3 seconds after that, it also applies a movement speed debuff.
+|tip During Phase 2 adds will spawn and put a debuff on players called Absorb Vitality this debuff will absorb the next 1 million + healing on them and they will also take damage over time, this needs to be healed through to be taken off.
+|tip Never stand directly behind Hightbane or directly infront of him, he has a tail swipe and a breathe.
+_Tank_
+|tip Interrupt Reverberating Shadows this will happen every 12 or so seconds.
+|tip Never have Nightbanes tail or head toward the group.
+|tip Use cooldowns when he gains the buff Concentrated Power.
+|tip Pick up any adds that spawn during each phase.
+Defeat Nightbane |killboss 1651/128
+|next "Congrats 2"
+step
+label "Normal Clear"
+Once Inside go to your right and follow the stairs down to the Opera room clearing trash along the way
+map Karazhan L/6
+path follow loose; loop off; ants curved; dist 20
+path	48.8,47.1	42.4,34.7	41.2,13.0
+path	Karazhan L/5 67.0,32.3	Karazhan L/5 67.1,81.1	Karazhan L/5 43.1,82.9
+|tip Opening the world map will display an ant trail guiding you through
+talk Barnes##114339 |goto Karazhan L/4 21.2,35.4
+|tip This will begin the event.
+The Opera Event can be one of 3 bosses
+Click here for the Opera Hall: Wikket |next "Wikket 1"
+Click here for the Opera Hall: Westfall Story |next "Westfall Story 1"
+Click here for the Opera Hall: Beautiful Beast |next "Beautiful Beast 1"
+confirm
+step
+label "Wikket 1"
+kill Elfyra##114284
+kill Galindre##114251
+_Everyone_
+|tip These bosses have shared Health so if you damage one you damage them both
+|tip Elfyra will cast a spell called Defy Gravity which will put a swirling purple circle on the ground, keep away from these until Galindra casts Magic Magnificent
+|tip You will need the Defy Gravity debuff when the Magic Magnificent cast is completed to prevent death
+|tip Galindra will cast a spell called Wondrious Radiance, this will appear as a big purple circle, never stand in this
+_Damage_
+|tip Elfyra will periodically summon monkey adds be sure to switch to them and kill them fast
+|tip Interrupt any casts you can from either of the bosses
+_Healer_
+|tip When adds are out be wary of your group as they have no aggro table and randomly attack members of your team
+|tip Be sure to pop cooldowns if any of your team is not able to get the Defy Gravity debuff when Magic Magnificent is cast
+_Tank_
+|tip Try to move the bosses away from any of the purple swirls on the ground
+|tip When the adds are out try to move the bosses on top of them so they can be cleaved down
+Defeat the Wikket Event |killboss 1651/2
+|next "first crystal 1"
+step
+label "Westfall Story 1"
+kill Toe Knee##114261
+kill Mrrgria##114260
+There are 3 phases in this fight in each phase there will be 1 boss and in the last phase there will be one from each of the previous 2 phases
+_Everyone_
+|tip Avoid Flaming Gate and Burning Leg Sweep casted by Toe Knee, he will be in phases 1 and 3.
+|tip Avoid Wash Away which will send waves across the room, this will be created by Mrrgria and he will be in phases 2 and 3.
+|tip When Mrrgria casts Thunder Ritual on all players in your group be sure to spread out.
+_Damage_
+|tip Be sure to interrupt Bubble Blast, Shoreline Tidespeaker will cast this and these are active in phase 2.
+_Healer_
+|tip Heal any player inflicted by Poisonous Shank, healers that can dispell poisons should dispell this.
+_Tank_
+|tip Be sure to pick up the enemies as they come up in each phase.
+|tip Move the bosses out of any Waves or Tornados that they might be in.
+Defeat the Westfall Story Event |killboss 1651/2
+|next "first crystal 1"
+step
+label "Beautiful Beast 1"
+kill Coggleston##114328
+You must defeat all 3 mini bosses before you can attack Coggleston
+_Everyone_
+|tip Whenever one of these mini bosses die they will buff the damage of the other enemies by 25 percent.
+|tip When fixated by Babblet do not lead it into Burning Blaze this will buff its movement speed making it impossible to run away.
+|tip If you have the Drenched debuff you are able to clear patches of Burning Blaze.
+|tip When Mrs. Cauldrons casts Leftovers get 10 yards away from it, or Interrupt it.
+|tip If fixated by Babblet you must run away from it and try not to get hit, if hit it will deal damage and blind you for 4 seconds.
+_Damage_
+|tip Interrupt Luminore's Heat Wave ability if it is not interrupted it will do high damage to the entire group.
+|tip Try to kill all 3 mini bosses at once to prevent them from getting buffed.
+_Healer_
+|tip Watch the tank during this encounter they will be taking a lot of damage.
+_Tank_
+|tip Interrupt Dinner Bell! this is casted by Coggleston, if let off it will increase the haste of all allies by 100 percent.
+Defeat the Beautiful Beast Event |killboss 1651/2
+|next "first crystal 1"
+step
+label "first crystal 1"
+map Karazhan L/4
+path follow loose; loop off; ants curved; dist 20
+path	21.4,27.4	12.7,26.1	11.3,41.8
+path	20.0,42.6	24.6,25.8	28.5,23.8
+Follow this path through the back stage to get to the audience room |goto 28.5,23.8
+|tip Opening the world map will display an ant trail guiding you through
+confirm
+step
+The First Crystal is in the Audience after killing the Opera event
+Aquire the Opera Hall Soul Fragment |q 44734/4 |goto Karazhan L/4 26.4,36.0
+|only if havequest(44734)
+step
+map Karazhan L/4
+path follow loose; loop off; ants curved; dist 20
+path	40.8,38.8	56.2,37.5	62.0,31.6
+path	76.0,38.3
+Follow this path to the Maidan of Virtue |goto 76.0,38.3
+|tip Opening the world map will display an ant trail guiding you through
+confirm
+step
+The Second Crystal is in the left most room just before Maiden of Virtue
+Aquire the Guest Chambers Soul Fragment |q 44734/1 |goto Karazhan L/4 82.4,22.9
+|only if havequest(44734)
+step
+|tip This is an optional boss
+kill Maidan of Virtue##113971 |goto Karazhan L/4 83.7,50.0
+_Everyone_
+|tip If you get the Sacred Ground be sure to run to the outside of the room to place it down then immediatly run out so you don't get any stacks.
+|tip When she casts Mass Repentance be sure to run in and only get one stack from the Sacred Ground puddles to prevent from being stunned for 30 seconds.
+|tip Once Mass Repentance is completed she will then cast Holy Wrath, this needs to be interrupted but first the group must do 4.6 million damage to destroy the shield she gets.
+|tip Be sure to be at least 6 yards away from anyone else in the group so that Holy Bolt doesn't bounce to your team.
+_Damage_
+|tip Interrupt Holy Shock, none should get through as the debuff it applies lasts the entire fight.
+|tip Use your cooldowns to destroy her shield while she is casting Holy Wrath, once her shield is destroyed interrupt Holy Wrath.
+_Healer_
+|tip When people get the Sacred Ground debuff they will take a large amount of ticking damage every 2 seconds be sure to keep these people up.
+|tip Watch out for people if they get the Holy Shock debuff they will take increased damage from every spell.
+_Tank_
+|tip Interrupt Holy Shock, none should get through as the debuff it applies lasts the entire fight.
+Defeat the Maiden of Virtue |killboss 1651/1
+step
+map Karazhan L/4
+path follow loose; loop off; ants curved; dist 20
+path	76.0,38.3	62.0,31.6	56.2,37.5
+path	44.0,49.4
+Jump Down here |goto 44.0,49.4
+|tip Opening the world map will display an ant trail guiding you through
+confirm
+step
+kill Moroes##15687 |goto Karazhan L/3 27.1,63.5
+_Everyone_
+|tip Use Ghost Traps on Moroes's Dinner Guests, these can be found in this room. They look like grey traps with lights on the sides that are able to be picked up.
+|tip Use these traps and decide which of his dinner guests you would like to Crowdcontrol first and kill later.
+|tip Kill all the Dinner Guests before kill Moroes.
+|tip If you get Garrote be sure to use your personal cooldowns as this debuff doesn't disappear until the fight is over.
+_Damage_
+|tip Interrupt and kill all of the dinner guests before killing Moroes.
+_Healer_
+|tip Keep the people with Garrote up, once it is applied on someone it doesn't go away until the fight is completed.
+|tip Keep the tank up when they get the debuff Coat Check, this is applied by Moroes and reduces their protection by 75 percent.
+_Tank_
+|tip Use cooldowns when Coat Check is applied to you.
+Defeat Moroes |killboss 1651/16
+step
+Once Moroes is defeated he will drop his Rusty Keys
+Be sure to pick these up
+confirm
+step
+The Third Crystal is located behind Moroes
+Aquire the Banquet Hall Soul Fragment |q 44734/2 |goto Karazhan L/3 22.4,63.0
+|only if havequest(44734)
+step
+map Karazhan L/3
+path follow loose; loop off; ants curved; dist 20
+path	40.0,82.0	Karazhan L/2 42.6,37.7	Karazhan L/2 52.5,64.3
+path	Karazhan L/2 29.6,81.2	Karazhan L/1 39.8,77.3	Karazhan L/1 42.4,80.2
+Follow this path that leads to Attumen the Huntsman |goto Karazhan L/1 42.4,80.2
+|tip Opening the world map will display an ant trail guiding you through
+confirm
+step
+Be sure to kill all of the mobs surrounding Attumen before starting the fight, they will pull with the boss if they are not killed
+|tip This is an optional boss.
+kill Attumen the Huntsman##114262 |goto Karazhan L/1 45.3,82.3
+_Everyone_
+|tip When the boss casts Mighty Stomp be sure to stop casting or you will get interrupted. This happens when they are Horse and Rider as One
+|tip They will summon Spectral Charge these will be lines of horses that need to be dodged. This happens when they are Horse and Rider as One.
+|tip DO NOT stand in Mezair it will be a cone of fire that Midnight will run through. This is when they are Fighting on Foot.
+|tip Everyone must stand in Shared Suffering this will deal a huge amount of damage split between everyone in the ability. This is when they are Fighting on Foot.
+_Damage_
+|tip Kill which ever one is targetable.
+_Healer_
+|tip An ability called Intangible Presense will put a debuff on everyone in the group
+|tip This debuff will also mark one person and that marked person needs to be the one dispelled or it will deal a huge amount of damage to the entire group.
+|tip Keep the tank up when Mortal Strike and Sharded Suffering goes out.
+_Tank_
+|tip Use your cooldowns for when Sharded Suffering is going out you may still have Mortal Strike on you.
+Defeat Attumen the Huntsman |killboss 1651/8
+step
+map Karazhan L/1
+path follow loose; loop off; ants curved; dist 20
+path	50.4,72.8	58.9,69.1	57.7,58.1
+path	56.0,49.0	59.3,36.4	60.5,23.2
+path	74.1,20.8
+The Fourth Crystal is located in a room filled with spiders to the north of Attumen the Huntsman
+Aquire the Servent's Quarters Soul Fragment |q 44734/3 |goto Karazhan L/1 74.1,20.8
+Once this is obtained click the portal to Karazhan's Entrance right next to this Fragment
+|tip Opening the world map will display an ant trail guiding you through
+|only if havequest(44734)
+step
+map Karazhan L/1
+path follow loose; loop off; ants curved; dist 20
+path	39.8,77.3	Karazhan L/2 29.6,81.2	Karazhan L/2 44.5,84.9
+path	Karazhan L/6 58.9,81.5
+Follow this path back up to the Entrance |goto Karazhan L/6 58.9,81.5
+|tip Opening the world map will display an ant trail guiding you through
+confirm
+|only if not havequest(44734)
+step
+map Karazhan L/6
+path follow loose; loop off; ants curved; dist 20
+path	Karazhan L/6 55.4,74.7	Karazhan L/6 66.0,66.5	Karazhan L/7 57.7,24.3
+path	Karazhan L/7 48.8,62.0	Karazhan L/8 58.6,53.9	Karazhan L/8 44.0,42.0
+path	Karazhan L/8 45.9,75.6	Karazhan L/8 45.9,27.5	Karazhan L/9 62.4,29.5
+path	Karazhan L/9 39.7,29.5	Karazhan L/9 32.2,39.2
+Follow this path that leads to The Curator |goto Karazhan L/9 32.2,39.2
+|tip Opening the world map will display an ant trail guiding you through
+confirm
+step
+Before starting this fight kill all of the trash mobs in this room, you will need the space
+kill Curator##114247 |goto Karazhan L/9 49.3,71.3
+_Everyone_
+|tip Don't stand in Power Discharge this ability creates a large blue circle on the ground that does damage on impact and stays there for the entire fight if stood in at any point will continue dealing daamge to you.
+_Damage_
+|tip This is an add control fight whenever a Volatile Energy spawns they need to be switched to and killed asap.
+|tip When The Curator gets to 0 percent mana he will Evocate increasing his damage taken by 100 percent this is where you must use your cooldowns.
+_Healer_
+|tip After The Curator finishes casting Evocation he will explode doing high damage to the group be ready for this.
+_Tank_
+|tip When Power Discharge it will leave a pool on the ground be sure to move the boss to places away from these so your team doesnt run into them.
+Defeat the Curator |killboss 1651/32
+step
+Curator will drop the last Soul Fragment
+Aquire the Menagerie Soul Fragment |q 44734/5 |goto Karazhan L/9 49.3,71.3
+|only if havequest(44734)
+step
+Enter the portal |goto Karazhan L/9 49.3,71.3
+map Karazhan L/10
+path follow loose; loop off; ants curved; dist 20
+path	23.2,23.8	22.9,40.7	27.1,46.6
+path	41.6,46.4	66.8,45.7
+Follow this path to the Shade of Medivhs room. |goto Karazhan L/10 66.8,45.7
+|tip Opening the world map will display an ant trail guiding you through
+confirm
+step
+kill Shade of Medivh##114350 |goto Karazhan L/10 66.8,45.7
+_Everyone_
+|tip When Flame Wreath goes out DO NOT MOVE until it is over.
+|tip When Ceaseless Winter is active keep moving around despite what Medivh says.
+|tip Be sure to spread out
+_Damage_
+|tip Interrupt Frostbite.
+|tip When Guardian's Image is out kill all 3 of the Guardian's Images quickly.
+_Healer_
+|tip Watch out for people targeted by Piercing Missiles this will do a high amount of damage.
+|tip Watch out for people If they get multiple stacks of Inferno Bolt.
+_Tank_
+|tip Interrupt Frostbite.
+Defeat the Shade of Medivh |killboss 1651/256
+step
+Jump down here and enjoy the scenery |goto Karazhan L/10 73.1,59.6
+confirm
+step
+Jump down the stacks of books to get to the bottom
+kill Mana Devourer##114252 |goto Karazhan L/11 58.3,25.8
+_Everyone_
+|tip If the Boss gets to 100 percent mana it will instant wipe the group.
+|tip When Loose Mana is out, these are arcane orbs spread across the area, they need to all be absorbed before they hit the boss.
+|tip Each stack of Loose Mana that is absorbed will apply a stack of Unstable Mana, to remove this debuff the player will need to stand in the Energy Voids until the debuff is gone.
+_Healer_
+|tip Watch people that get to many stacks of Unstable Mana, they will be taking a lot of ticking damage until they remove it.
+|tip Keep the raid up as it will cast Energy Discharge throughout the fight dealing a high amount of damage to the entire group.
+Defeat the Mana Devourer |killboss 1651/4
+step
+kill 10 Mana Devourer##116494 |q 45291/1 |goto Karazhan L/12 20.8,31.4
+|only if havequest(45291)
+step
+Run up the stairs |goto Karazhan L/12 22.6,19.5
+Check upstairs for escaping books |q 45291/2
+|only if havequest(45291)
+step
+click Flying Book
+|tip All these flying books are up the stairs on the 2nd floor.
+Shelve 5 Flying Books |q 45291/3 |goto Karazhan L/12 20.1,25.7
+|only if havequest(45291)
+step
+Follow the path to the Chess event
+map Karazhan L/12
+path follow loose; loop off; ants curved; dist 20
+path	23.8,26.2	59.6,25.8	57.3,82.5
+This is Chess event, it is just trash but there are a few things you need to do and look out for.
+|tip Opening the world map will display an ant trail guiding you through
+_Everyone_
+|tip Move out of any glowing colored squares these will one shot.
+|tip Killing the king will defeat the trash, but to attack the king you must kill one of his pieces first.
+|tip When a piece dies the King becomes vulnerable for a short time, kill one piece attack the king until the debuff wears off then kill another piece and keep doing this until the king is dead.
+Defeat the Chess Event |goto Karazhan L/13 48.2,36.6
+confirm
+step
+Follow the path into the Netherspace |goto Karazhan L/14 37.4,53.0
+kill Viz'aduum the Watcher##114790 |goto Karazhan L/14 41.4,81.2
+This is a 3 phase fight
+_Everyone_
+|tip Everyone must run through the Green Portal that spawns when phase 2 and 3 start.
+|tip If you are targeted by Disintegrate move out of the way, this will do a lot of damage and knock you back this will be fatal in phases 2 and 3.
+|tip When people that are effected by Chaotic Shadows blow up Explosive Shadows will come out from every direction from themselves these need to be dodged.
+|tip In Phase 2 when you arrive on the first ship you must run through the guantlet avoiding Disintegrate and the green lasors on the sides.
+|tip In all phases dodge the infernal circles that appear on the ground.
+|tip If you are targeted by Fel Beam run away and don't move it into your group.
+_Damage_
+|tip In Phase 3 you must kill the adds once they are dead activate the boss.
+|tip Save heroism for the last phase.
+|tip Interrupt Burning Blast.
+_Healer_
+|tip Heal people effected by Chaotic Shadows, this can be dispelled early but during later phases you can not dispell them all before the timer runs out.
+|tip Dispelling these players will still activate Explosive Shadows so do not dispell when that player is in a bad place.
+_Tank_
+|tip In phase 3 pick up the adds and kill them before activating the boss.
+|tip Interrupt Burning Blast.
+Defeat Viz'aduum the Watcher |q 44735/1 |only if havequest(44735)
+Defeat Viz'aduum the Watcher |killboss 1651/64
+|next "Congrats 1"
+step
+label "Congrats 2"
+Congratulations you have Defeated Nightbane the secret boss in Return to Karazhan!
+step
+label "Congrats 1"
+Congratulations you have completed the Return to Karazhan Mythic Dungeon!
+|next "Turnin Quests"
+step
+label "Turnin Quests"
+Archmage Khadgar will appear after you defeat Viz'aduum
+talk Archmage Khadgar##115497
+turnin In the Eye of the Beholder##44735 |goto Karazhan L/14 41.4,81.2
+turnin Fragments of the Past##44734 |goto Karazhan L/14 41.4,81.2
+|only if havequest(44735)
+|only if havequest(44734)
+]])

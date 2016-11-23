@@ -7340,20 +7340,3 @@ talk Warmage Silva##32725 |only if ZGV.questsbyid[43179] and ZGV.questsbyid[4317
 turnin The Kirin Tor of Dalaran##43179 |goto Dalaran L/10 33.44,47.35 |only if ZGV.questsbyid[43179] and ZGV.questsbyid[43179].complete
 |next "Choose_World_Quest"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dailies Guides\\Legion\\Test",{
-author="support@zygorguides.com",
-startlevel=110.0,
-},[[
-step
-label quest-43059
-Follow the path |goto Azsuna/0 63.39,30.66 < 25 |only if walking
-Follow the path |goto 63.83,34.57 < 25 |only if walking
-Follow the path down |goto 65.21,37.83 < 20 |only if walking
-Follow the path |goto 60.44,69.11 < 25 |only if walking
-Follow the path |goto 60.11,74.50 < 20 |only if walking
-accept DANGER: Fjordun##43059 |goto 66.12,40.10
-|tip You will accept this quest automatically.
-step
-kill Fjordun##109584 |q 43059/1 |goto 66.12,40.10
-|next "Court_Of_Farondis_WQ"
-]])

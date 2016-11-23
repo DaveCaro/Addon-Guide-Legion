@@ -15888,6 +15888,161 @@ Cross the bridge |goto 47.82,50.04 < 30 |only if walking
 Follow the path |goto 44.17,51.54 < 30 |only if walking
 talk First Arcanist Thalyssra##114908
 turnin Break An Arm##44845 |goto 41.61,51.65
+step
+talk First Arcanist Thalyssra##115736
+accept Feeding the Rebellion##45265 |goto 36.50,46.72 |region suramar_shalaran
+step
+Use the Fruit of the Arcan'dor on a Suramar Refugee |use Fruit of the Arcan'dor##143597
+|tip There are Suramar Refugees all around inside the cave.
+Cure a Suramar Refugee |q 45265/1 |goto 37.49,47.44 |region suramar_shalaran
+step
+talk First Arcanist Thalyssra##115736
+turnin Feeding the Rebellion##45265 |goto 36.50,46.72 |region suramar_shalaran
+accept Tyrande's Command##44743 |goto 36.50,46.72 |region suramar_shalaran
+accept Mouths to Feed##44870 |goto 36.50,46.72 |region suramar_shalaran
+step
+Go down the stairs |goto 36.58,46.65 |region suramar_shalaran
+talk Arcanist Valtrois##115371
+turnin Mouths to Feed##44870 |goto 37.08,46.56 |region suramar_shalaran
+accept Oculeth Ex Machina##44873 |goto 37.08,46.56 |region suramar_shalaran
+step
+talk Chief Telemancer Oculeth##115710
+Tell him _"Let's Go!"_
+Speak with Oculeth |q 44873/1 |goto 37.13,46.60 |region suramar_shalaran
+step
+talk Arcanist Valtrois##115693
+turnin Oculeth Ex Machina##44873 |goto Azsuna/0 59.81,14.07
+step
+Watch the Dialogue
+talk Arcanist Valtrois##115693
+accept Unbeleyvable##44874 |goto Azsuna/0 59.81,14.07
+step
+click Ley Line Tap##6478
+Place the Ley Line Tap |q 44874/1 |goto 59.93,14.34
+step
+click Ley Line Tap##6478
+Place the Ley Line Tap |q 44874/6 |goto 60.21,14.39
+step
+click Ley Line Tap##6478
+Place the Ley Line Tap |q 44874/8 |goto 60.14,13.97
+step
+talk Arcanist Valtrois##115693
+turnin Unbeleyvable##44874 |goto 60.14,13.97
+accept The Art of Flow##44875 |goto 60.14,13.97
+step
+talk Arcanist Valtrois##115693
+Tell him _"I am ready, Valtrois."_
+Kill the Wave of enemies that come
+Complete the First beacon ritual |q 44875/1 |goto 60.14,13.97
+step
+talk Arcanist Valtrois##115693
+Tell him _"I am ready, Valtrois."_
+Kill the Wave of enemies that come
+Complete the Second beacon ritual |q 44875/2 |goto 60.22,14.44
+step
+talk Arcanist Valtrois##115693
+Tell him _"I am ready, Valtrois."_
+Kill the Wave of enemies that come
+Complete the Third beacon ritual |q 44875/3 |goto 59.93,14.33
+step
+talk Arcanist Valtrois##115693
+turnin The Art of Flow##44875 |goto 59.83,14.06
+step
+talk Stellagosa##115701
+accept A Dance With Dragons##44876 |goto 59.82,14.01
+step
+Leave the cave |goto 59.42,13.19
+Speak with Stellagosa to ride back to Shal'aran |goto 59.21,12.92
+talk First Arcanist Thalyssra##115736
+turnin A Dance With Dragons##44876 |goto Suramar/0 36.48,46.74 |region suramar_shalaran
+step
+talk Tyrande Whisperwind##114838
+turnin Tyrande's Command##44743 |goto 41.61,51.45
+accept Trolling Them##44858 |goto 41.61,51.45
+step
+talk Archmage Khadgar##114909
+accept Something's Not Quite Right...##44928 |goto 41.65,51.62
+stickystart "Dispelling Crystal"
+step
+click "Your Ancestors"
+Remove the First Insult |goto 42.56,51.30 |count 1 |q 44858/1
+step
+click "Just wanted you to feel at home, mon."
+Remove the Second Insult |goto 42.01,51.02 |count 2 |q 44858/1
+step
+click "We found your mounts..."
+Remove the Third Insult |goto 40.61,51.80 |count 3 |q 44858/1
+step
+click "Didn't want you to get the shakes."
+Remove the Fourth Insult |goto 40.30,52.05 |count 4 |q 44858/1
+step
+click Replacement Sunwell
+Remove the Fifth Insult |goto 40.83,53.31 |count 5 |q 44858/1
+step
+label "Dispelling Crystal"
+Use your Dispelling Crystal to remove the disguises of Infiltrators |use Dispelling Crystal##142375
+|tip Use this item when around units inside the camp.
+Discover Shal'dorei Infiltrators |q 44928/1 |goto 40.79,52.73
+step
+talk Tyrande Whisperwind##114838
+turnin Trolling Them##44858 |goto 41.61,51.45
+step
+talk Archmage Khadgar##114909
+turnin Something's Not Quite Right...##44928 |goto 41.65,51.62
+step
+talk Tyrande Whisperwind##114838
+accept Arming the Rebels##44861 |goto 41.61,51.45
+step
+talk Victoire##116256
+turnin Arming the Rebels##44861 |goto 39.76,51.37
+accept Citizens' Army##44827 |goto 39.76,51.37
+step
+talk Chief Telemancer Oculeth##115342
+accept We Need Weapons##44829 |goto 39.90,51.39
+step
+talk Silgryn##107997
+accept Learning From the Dead##44830 |goto 39.93,50.97
+step
+click Dusktalon##115500 |goto 39.98,51.20
+Arrive at Black Rook Hold |goto Val'sharah/0 44.09,50.32
+confirm
+stickystart "Book of Tactics"
+stickystart "Black Rook Army"
+step
+click Weapon Cache
+Place the First Telemancy Beacon |count 1 |q 44829/1 |goto 44.60,49.31
+step
+click Weapon Cache
+Place the Second Telemancy Beacon |count 2 |q 44829/1 |goto 41.61,49.53
+step
+click Weapon Cache
+Place the Third Telemancy Beacon |count 3 |q 44829/1 |goto 40.01,53.97
+step
+label "Book of Tactics"
+Click the books scattered around Black Rook Hold
+|tip These can be found all around this area.
+collect 5 Book of Tactics##142258 |q 44830/1 |goto 42.87,51.59
+step
+label "Black Rook Army"
+kill Risen Soldier##92954+, Black Rook Spectral Officer##95247+, Servant of Ravencrest##95430+
+|tip These enemies can be found all around this area.
+Slay 20 Black Rook Forces |q 44827/1 |goto 42.87,51.59
+step
+talk Chief Telemancer Oculeth##115342
+turnin We Need Weapons##44829 |goto Suramar/0 39.90,51.39
+step
+talk Victoire##116256
+turnin Citizens' Army##44827 |goto 39.76,51.37
+step
+talk Silgryn##107997
+turnin Learning From the Dead##44830 |goto 39.93,50.97
+accept Trial by Demonfire##44790 |goto 39.93,50.97
+step
+Follow Silgryn back to Meredil
+kill Rozzeleth##116257 |q 44790/1 |goto 33.52,48.61
+step
+talk Silgryn##107997
+turnin Trial by Demonfire##44790 |goto 39.93,50.97
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Legion (100-110)\\Order Hall Quests",{
 author="support@zygorguides.com",

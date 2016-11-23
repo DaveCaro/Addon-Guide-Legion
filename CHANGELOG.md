@@ -6,18 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
-- Dugi Guides : 
+- Zygor Guide : 
 
-Improved Suggest Guide result format
+- LEVELING : 
 
-- Leveling Addon : 
+Suramar - Extended Insurrection quest line for week 5.
 
-Added new Insurrection quest line for November 22
+- DUNGEONS : 
 
-Fixed step detection issue with Val'Sharah guide
-
-Various waypoint fixes for Legion leveling guides
-
-- Daily Addon : 
-
-Fixed Shattrath fixing daily waypoints
+Return to Karazhan - Added Karazhan attunement and dungeon guide.

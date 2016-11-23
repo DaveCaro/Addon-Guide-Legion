@@ -1216,7 +1216,6 @@ step
 _Congratulations!_
 You completed the Court of Stars dungeon!
 ]])
-ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Legion Dungeons\\Karazhan\\Attunement",{
 condition_suggested="level>=110 and _G.GetAverageItemLevel()>840",
 keywords={"Karazhan Kara"},
@@ -1909,4 +1908,3 @@ turnin Fragments of the Past##44734 |goto Karazhan L/14 41.4,81.2
 |only if havequest(44735)
 |only if havequest(44734)
 ]])
-ZGV.BETAEND()

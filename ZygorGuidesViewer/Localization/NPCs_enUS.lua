@@ -27073,4 +27073,8 @@ ZygorGuidesViewer_L("NPCs", "enUS", function() return {
 [114926]="Arcane Sentinel|",
 [115526]="Arcshaper Thorendis|",
 [116068]="Arm of the Magistrix|",
+[115371]="Arcanist Valtrois|",
+[115693]="Arcanist Valtrois|",
+[115701]="Stellagosa|",
+[115342]="Chief Telemancer Oculeth|",
 } end)
