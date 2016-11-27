@@ -1,10 +1,24 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/">	
+
+
+
+	<Script file="..\DugisGuide_Ach_Legion\A_Glorious_Campaign.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Broken_Isles_Pathfinder_Part_One.lua"/>
+
 	<Script file="..\DugisGuide_Ach_Legion\Broken_Isles_Explorer.lua"/>
 	<Script file="..\DugisGuide_Ach_Legion\Explore_Azsuna.lua"/>
 	<Script file="..\DugisGuide_Ach_Legion\Explore_Highmountain.lua"/>
 	<Script file="..\DugisGuide_Ach_Legion\Explore_Stormheim.lua"/>
 	<Script file="..\DugisGuide_Ach_Legion\Explore_Suramar.lua"/>
 	<Script file="..\DugisGuide_Ach_Legion\Explore_Valsharah.lua"/>
+	
+	<Script file="..\DugisGuide_Ach_Legion\A_Cast_Above_the_Rest.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Bigger_Fish_to_Fry.lua"/>	
+
+	<Script file="..\DugisGuide_Ach_Legion\Broken_Isles_Diplomat.lua"/>	
+	
+	<Script file="..\DugisGuide_Ach_Legion\Loremaster_of_Legion.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Variety_is_the_Spice_of_Life.lua"/>	
 
 	<Script file="Tiny_Terrors_Tanaan_A.lua"/>
 	<Script file="Big_Adventure_A.lua"/>

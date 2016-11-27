@@ -559,7 +559,7 @@ function Guides:Initialize()
                 DGV.Guides.currentSelectedCategory = "general"
             end
             
-            local defaultMacroIcon = [[Interface/ICONS/misc_arrowright]]
+            local defaultMacroIcon = [[Interface/ICONS/INV_Misc_QuestionMark]]
             
         
             local MacroEditor = DugisMain.MacrosWrapper.MacroEditor
@@ -4657,7 +4657,7 @@ function Guides:Initialize()
                 treeData[#treeData + 1] = currentNode
             end
         else
-            local key = currentHeadingL1
+            local key = currentGuideType..currentHeadingL1
             
             local currentL1Node = headerL1Title2Node[key]
             if not currentL1Node then
