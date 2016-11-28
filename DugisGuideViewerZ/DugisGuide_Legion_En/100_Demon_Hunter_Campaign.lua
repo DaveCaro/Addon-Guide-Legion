@@ -213,8 +213,6 @@ N Loramus' story |QID|42683.1| |N|Speak to (npc:110599) in {The Fel Hammer} (55.
 N Class Hall Upgrade |QID|42683.2| |N|Choose a class hall upgrade with (npc:110599) in {The Fel Hammer} (55.44, 62.09)| |Z|1052 2|
 T Demonic Improvements |QID|42683| |N|(npc:98632) in {The Fel Hammer} (60.01, 49.52)| |Z|1052 1| |NPC|98632|
 A Additional Accoutrements |QID|42682| |N|(npc:98632) in {The Fel Hammer} (59.84, 49.54)| |Z|1052 1| |NPC|98632|
-C Additional Accoutrements |QID|42682| |N|Use the Scouting Map and complete the mission, (mission:1155) in {The Fel Hammer}. This is a 4 hours mission so come back later to complete this quest. (58.67, 53.46)| |Z|1052 1|
-T Additional Accoutrements |QID|42682| |N|(npc:103761) in {The Fel Hammer} (59.42, 57.71)| |Z|1052 1| |NPC|103761|
 
 N Level 102 Required |N|You need to be at least level 102 to continue with the class campaign quest line| |PL|102|
 
@@ -270,11 +268,23 @@ C Bringer of the Light |QID|44004| |N|Discover the purpose of the (item:140574) 
 R The Violet Citadel |TID|44004| |N|Travel to {The Violet Citadel} (28.46, 48.29)| |Z|1014 10|
 T Bringer of the Light |QID|44004| |N|(npc:90417) in {The Violet Citadel} (28.46, 48.29)| |Z|1014 10| |NPC|90417|
 A Light's Charge |QID|44153| |N|(npc:90417) in {The Violet Citadel} (28.46, 48.29)| |Z|1014 10| |NPC|90417|
-C Light's Charge |QID|44153| |N|Place Light's Heart in your Order Hall| |POI|
-T Light's Charge |QID|44153| |N|Class Order Hall| |POI|
+C Light's Charge |QID|44153| |N|Place Light's Heart in your Order Hall| |Z|1052 1|
+T Light's Charge |QID|44153| |N|(npc:44153) in class Order Hall (58.64,43.14)| |Z|1052 1| |NPC|44153|
+C Additional Accoutrements |QID|42682| |N|Use the Scouting Map and complete the mission, (mission:1155) in {The Fel Hammer}. This is a 4 hours mission so come back later to complete this quest. (58.67, 53.46)| |Z|1052 1|
+T Additional Accoutrements |QID|42682| |N|(npc:103761) in {The Fel Hammer} (59.42, 57.71)| |Z|1052 1| |NPC|103761|
 
 N Level 103 Required |N|You need to be at least level 103 to continue with the class campaign quest line| |PL|103|
 
+A The Blood of Demons |QID|37447| |N|(npc:103761) in {The Fel Hammer} (59.34,57.62)| |Z|1052 1| |NPC|103761|
+
+R Azsuna |QID|37447| |N|Travel to {Azsuna} (43.27,44.21)| |Z|1015 0|
+C The Blood of Demons |QID|37447| |N|Kill any demons in {Azsuna} and collect 100 (item:137677) (43.27,44.21)| |Z|1015 0|
+
+R The Fel Hammer |OID|42593| |N|Travel to {The Fel Hammer} (59.19,85.76)| |Z|1052 1| 
+T The Blood of Demons |QID|37447| |N|(npc:95240) or (npc:95237) in {The Fel Hammer} (58.39,51.56)| |Z|1052 2| |NPC|95240, 95237|
+A Immortal Soul |QID|42510| |N|(npc:95240) or (npc:95237) in {The Fel Hammer} (58.39,51.56)| |Z|1052 2| |NPC|95240, 95237|
+C Immortal Soul |QID|42510| |N|Use the (item:137690) in {The Fel Hammer} (58.39,51.56)| |Z|1052 2|
+T Immortal Soul |QID|42510| |N|(npc:95240) or (npc:95237) in {The Fel Hammer} (58.39,51.56)| |Z|1052 2| |NPC|95240, 95237|
 A Leader of the Illidari |QID|42522| |N|(npc:95240) or (npc:95237) in {The Fel Hammer} (58.32, 51.93)| |Z|1052 2| |NPC|95240, 95237|
 T Leader of the Illidari |QID|42522| |N|(npc:95240) or (npc:95237) in {The Fel Hammer} (58.40, 58.28)| |Z|1052 1| |NPC|95240, 95237|
 
