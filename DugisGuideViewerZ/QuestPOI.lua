@@ -248,9 +248,11 @@ end
 
 local CurrentMap
 
---hooksecurefunc("TaskPOI_OnClick", function(self) --not needed already triggered with hooksecurefunc "WorldMap_SetupWorldQuestButton" --still need this for bonus quest
---    onPOIClick(self)
---end)
+hooksecurefunc("TaskPOI_OnClick", function(self) --not needed already triggered with hooksecurefunc "WorldMap_SetupWorldQuestButton" --still need this for bonus quest
+	if not QuestUtils_IsQuestWorldQuest(self.questID) then
+	    onPOIClick(self)
+	end
+end)
 
 hooksecurefunc("QuestPOIButton_OnClick", function(self)
     onPOIClick(self)

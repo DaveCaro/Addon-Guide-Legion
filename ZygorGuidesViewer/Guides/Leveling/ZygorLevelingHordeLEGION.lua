@@ -9594,11 +9594,11 @@ accept The Temple of Elune##38641 |goto 52.47,63.39
 step
 Follow the path up |goto 55.02,63.90 < 20 |only if walking
 Follow the road |goto 56.64,62.29 < 20 |only if walking
-talk Darcy Heathrow##92688
-accept A Village in Peril##38643 |goto 54.78,52.77
-step
 talk Brinlanya Moonstone##100459
 fpath Garden of the Moon |goto 56.74,57.72
+step
+talk Darcy Heathrow##92688
+accept A Village in Peril##38643 |goto 54.78,52.77
 step
 Run up the stairs |goto 55.19,54.84 < 15 |only if walking
 Enter the building |goto 52.40,56.52 < 15 |only if walking
@@ -15901,30 +15901,46 @@ turnin Feeding the Rebellion##45265 |goto 36.50,46.72 |region suramar_shalaran
 accept Tyrande's Command##44743 |goto 36.50,46.72 |region suramar_shalaran
 accept Mouths to Feed##44870 |goto 36.50,46.72 |region suramar_shalaran
 step
-Go down the stairs |goto 36.58,46.65 |region suramar_shalaran
 talk Arcanist Valtrois##115371
-turnin Mouths to Feed##44870 |goto 37.08,46.56 |region suramar_shalaran
-accept Oculeth Ex Machina##44873 |goto 37.08,46.56 |region suramar_shalaran
+|tip Downstairs.
+turnin Mouths to Feed##44870 |goto 37.07,46.59 |region suramar_shalaran
+accept Oculeth Ex Machina##44873 |goto 37.07,46.59 |region suramar_shalaran
 step
 talk Chief Telemancer Oculeth##115710
-Tell him _"Let's Go!"_
-Speak with Oculeth |q 44873/1 |goto 37.13,46.60 |region suramar_shalaran
+Tell him _"Let's go!"_
+Watch the dialogue
+Speak with Oculeth |q 44873/1 |goto 37.12,46.63 |region suramar_shalaran
 step
 talk Arcanist Valtrois##115693
 turnin Oculeth Ex Machina##44873 |goto Azsuna/0 59.81,14.07
 step
-Watch the Dialogue
+Watch the dialogue
 talk Arcanist Valtrois##115693
-accept Unbeleyvable##44874 |goto Azsuna/0 59.81,14.07
+accept Unbeleyvable##44874 |goto 59.81,14.07
 step
-click Ley Line Tap##6478
-Place the Ley Line Tap |q 44874/1 |goto 59.93,14.34
+click Ley Line Tap
+Place the Ley Line Tap |q 44874/1 |goto 59.90,14.34
 step
-click Ley Line Tap##6478
-Place the Ley Line Tap |q 44874/6 |goto 60.21,14.39
+Watch the dialogue
+Follow Valtrois |q 44874/2 |goto 60.22,14.39
 step
-click Ley Line Tap##6478
-Place the Ley Line Tap |q 44874/8 |goto 60.14,13.97
+Watch the dialogue
+Place the Ley Line Tap |q 44874/3 |goto 60.22,14.39
+step
+Watch the dialogue
+Place the Ley Line Tap |q 44874/4 |goto 60.22,14.39
+step
+Watch the dialogue
+Place the Ley Line Tap |q 44874/5 |goto 60.22,14.39
+step
+click Ley Line Tap
+Place the Ley Line Tap |q 44874/6 |goto 60.22,14.39
+step
+Watch the dialogue
+Follow Valtrois |q 44874/7 |goto 60.14,13.94
+step
+click Ley Line Tap
+Place the Ley Line Tap |q 44874/8 |goto 60.14,13.94
 step
 talk Arcanist Valtrois##115693
 turnin Unbeleyvable##44874 |goto 60.14,13.97
@@ -15932,68 +15948,77 @@ accept The Art of Flow##44875 |goto 60.14,13.97
 step
 talk Arcanist Valtrois##115693
 Tell him _"I am ready, Valtrois."_
-Kill the Wave of enemies that come
-Complete the First beacon ritual |q 44875/1 |goto 60.14,13.97
+Watch the dialogue
+Kill the enemies that attack
+Complete the First Beacon Ritual |q 44875/1 |goto 60.14,13.97
 step
 talk Arcanist Valtrois##115693
 Tell him _"I am ready, Valtrois."_
-Kill the Wave of enemies that come
-Complete the Second beacon ritual |q 44875/2 |goto 60.22,14.44
+Kill the enemies that attack
+Complete the Second Beacon Ritual |q 44875/2 |goto 60.20,14.44
 step
 talk Arcanist Valtrois##115693
 Tell him _"I am ready, Valtrois."_
-Kill the Wave of enemies that come
-Complete the Third beacon ritual |q 44875/3 |goto 59.93,14.33
+Kill the enemies that attack
+Complete the Third Beacon Ritual |q 44875/3 |goto 59.93,14.33
 step
 talk Arcanist Valtrois##115693
-turnin The Art of Flow##44875 |goto 59.83,14.06
+turnin The Art of Flow##44875 |goto 59.81,14.05
 step
 talk Stellagosa##115701
-accept A Dance With Dragons##44876 |goto 59.82,14.01
+accept A Dance With Dragons##44876 |goto 59.81,13.99
 step
-Leave the cave |goto 59.42,13.19
-Speak with Stellagosa to ride back to Shal'aran |goto 59.21,12.92
+Follow the path up |goto 59.66,13.43 < 20 |walk |n
+Leave the cave |goto 59.33,13.11 < 15 |walk |n
+talk Stellagosa##89794 |goto 59.18,12.94 |n
+Speak with Stellagosa to Ride Back to Shal'aran |goto 59.18,12.94 > 150 |noway |c |q 44876
+step
 talk First Arcanist Thalyssra##115736
-turnin A Dance With Dragons##44876 |goto Suramar/0 36.48,46.74 |region suramar_shalaran
+turnin A Dance With Dragons##44876 |goto Suramar/0 36.50,46.72 |region suramar_shalaran
+step
+Run up the stairs |goto 35.29,50.88 < 20 |only if walking
+Cross the bridge |goto 36.31,50.61 < 20 |only if walking
+Follow the path |goto 37.40,49.54 < 20 |only if walking
+talk Absolon##101848
+accept Noressa##45056 |goto 39.52,51.17
 step
 talk Tyrande Whisperwind##114838
-turnin Tyrande's Command##44743 |goto 41.61,51.45
-accept Trolling Them##44858 |goto 41.61,51.45
+turnin Tyrande's Command##44743 |goto 41.63,51.47
+accept Trolling Them##44858 |goto 41.63,51.47
 step
 talk Archmage Khadgar##114909
 accept Something's Not Quite Right...##44928 |goto 41.65,51.62
-stickystart "Dispelling Crystal"
+stickystart "Discover_Shaldorei_Infiltrators"
 step
 click "Your Ancestors"
-Remove the First Insult |goto 42.56,51.30 |count 1 |q 44858/1
+Remove the Insult |q 44858/1 |count 1 |goto 42.59,51.33
 step
 click "Just wanted you to feel at home, mon."
-Remove the Second Insult |goto 42.01,51.02 |count 2 |q 44858/1
+Remove the Insult |q 44858/1 |count 2 |goto 41.99,50.99
 step
 click "We found your mounts..."
-Remove the Third Insult |goto 40.61,51.80 |count 3 |q 44858/1
+Remove the Insult |q 44858/1 |count 3 |goto 40.61,51.86
 step
 click "Didn't want you to get the shakes."
-Remove the Fourth Insult |goto 40.30,52.05 |count 4 |q 44858/1
+Remove the Insult |q 44858/1 |count 4 |goto 40.29,52.07
 step
 click Replacement Sunwell
-Remove the Fifth Insult |goto 40.83,53.31 |count 5 |q 44858/1
+Remove the Insult |q 44858/1 |count 5 |goto 40.81,53.33
 step
-label "Dispelling Crystal"
-Use your Dispelling Crystal to remove the disguises of Infiltrators |use Dispelling Crystal##142375
-|tip Use this item when around units inside the camp.
-Discover Shal'dorei Infiltrators |q 44928/1 |goto 40.79,52.73
-step
-talk Tyrande Whisperwind##114838
-turnin Trolling Them##44858 |goto 41.61,51.45
+label "Discover_Shaldorei_Infiltrators"
+Use your Dispelling Crystal on Infiltrators |use Dispelling Crystal##142375
+|tip They look like npc's engulfed in purple fire around this area.
+Discover #5# Shal'dorei Infiltrators |q 44928/1 |goto 41.63,51.13
 step
 talk Archmage Khadgar##114909
 turnin Something's Not Quite Right...##44928 |goto 41.65,51.62
 step
 talk Tyrande Whisperwind##114838
+turnin Trolling Them##44858 |goto 41.63,51.47
 accept Arming the Rebels##44861 |goto 41.61,51.45
 step
 talk Victoire##116256
+|tip She walks back and forth.
 turnin Arming the Rebels##44861 |goto 39.76,51.37
 accept Citizens' Army##44827 |goto 39.76,51.37
 step
@@ -16003,46 +16028,158 @@ step
 talk Silgryn##107997
 accept Learning From the Dead##44830 |goto 39.93,50.97
 step
-click Dusktalon##115500 |goto 39.98,51.20
-Arrive at Black Rook Hold |goto Val'sharah/0 44.09,50.32
-confirm
-stickystart "Book of Tactics"
-stickystart "Black Rook Army"
+click Dusktalon##115500 |goto 39.96,51.20 |n
+Fly to Black Rook Hold |goto 39.96,51.20 > 100 |noway |c |q 44829
+stickystart "Books_of_Tactics"
+stickystart "Slay_Black_Rook_Forces"
 step
+Follow the path |goto Val'sharah/0 44.28,50.01 < 15 |only if walking
 click Weapon Cache
-Place the First Telemancy Beacon |count 1 |q 44829/1 |goto 44.60,49.31
+Place the Telemancy Beacon |q 44829/1 |count 1 |goto Val'sharah/0 44.60,49.31
 step
+Follow the path |goto 44.28,49.85 < 15 |only if walking
+Run down the stairs |goto 44.41,52.17 < 15 |only if walking
+Continue down the stairs |goto 44.60,51.32 < 10 |only if walking
+Continue down the stairs |goto 44.54,50.32 < 10 |only if walking
+Follow the path |goto 43.70,50.07 < 20 |only if walking
 click Weapon Cache
-Place the Second Telemancy Beacon |count 2 |q 44829/1 |goto 41.61,49.53
+Place the Telemancy Beacon |q 44829/1 |count 2 |goto 41.61,49.53
 step
+Follow the path |goto 42.87,50.19 < 20 |only if walking
+Run up the stairs |goto 41.81,52.99 < 20 |only if walking
 click Weapon Cache
-Place the Third Telemancy Beacon |count 3 |q 44829/1 |goto 40.01,53.97
+Place the Telemancy Beacon |q 44829/1 |count 3 |goto 40.01,53.97
 step
-label "Book of Tactics"
-Click the books scattered around Black Rook Hold
-|tip These can be found all around this area.
-collect 5 Book of Tactics##142258 |q 44830/1 |goto 42.87,51.59
+label "Books_of_Tactics"
+click Various Books
+|tip They look like dark colored closed books sitting on objects around this area.
+|tip They all have different names.
+Collect #5# Books of Tactics |q 44830/1 |goto 41.03,53.12
 step
-label "Black Rook Army"
-kill Risen Soldier##92954+, Black Rook Spectral Officer##95247+, Servant of Ravencrest##95430+
-|tip These enemies can be found all around this area.
-Slay 20 Black Rook Forces |q 44827/1 |goto 42.87,51.59
+label "Slay_Black_Rook_Forces"
+Kill enemies around this area
+Slay #20# Black Rook Forces |q 44827/1 |goto 41.03,53.12
+step
+Run up the stairs |goto Suramar/0 35.29,50.88 < 20 |only if walking
+Cross the bridge |goto Suramar/0 36.31,50.61 < 20 |only if walking
+Follow the path |goto Suramar/0 37.40,49.54 < 20 |only if walking
+talk Victoire##116256
+|tip She walks back and forth.
+turnin Citizens' Army##44827 |goto 39.76,51.37
 step
 talk Chief Telemancer Oculeth##115342
 turnin We Need Weapons##44829 |goto Suramar/0 39.90,51.39
-step
-talk Victoire##116256
-turnin Citizens' Army##44827 |goto 39.76,51.37
 step
 talk Silgryn##107997
 turnin Learning From the Dead##44830 |goto 39.93,50.97
 accept Trial by Demonfire##44790 |goto 39.93,50.97
 step
-Follow Silgryn back to Meredil
+Follow the path |goto 37.84,49.47 < 20 |only if walking
+Cross the bridge |goto 36.91,49.84 < 20 |only if walking
+Run down the stairs |goto 35.61,51.12 < 20 |only if walking
 kill Rozzeleth##116257 |q 44790/1 |goto 33.52,48.61
 step
+Run up the stairs |goto 35.29,50.88 < 20 |only if walking
+Cross the bridge |goto 36.31,50.61 < 20 |only if walking
+Follow the path |goto 37.40,49.54 < 20 |only if walking
 talk Silgryn##107997
 turnin Trial by Demonfire##44790 |goto 39.93,50.97
+step
+Follow the path |goto 42.38,53.84 < 20 |only if walking
+Cross the bridge |goto 39.70,59.73 < 20 |only if walking
+Follow the path |goto 39.65,65.05 < 30 |only if walking
+talk Noressa##115951
+|tip Inside the building.
+Find Noressa |q 45056/1 |goto 40.88,69.63
+step
+talk Absolon##101848
+turnin Noressa##45056 |goto 37.73,47.85 |region suramar_shalaran
+step
+talk First Arcanist Thalyssra##115736
+accept A United Front##45266 |goto 36.50,46.72 |region suramar_shalaran
+step
+Use the Fruit of the Arcan'dor on a Suramar Refugee |use Fruit of the Arcan'dor##143597
+|tip There are Suramar Refugees all around inside the cave.
+Cure a Suramar Refugee |q 45266/1 |goto 37.49,47.44 |region suramar_shalaran
+step
+talk First Arcanist Thalyssra##115736
+turnin A United Front##45266 |goto 36.50,46.72 |region suramar_shalaran
+accept Ready for Battle##44739 |goto 36.50,46.72 |region suramar_shalaran
+step
+Run up the stairs |goto 35.29,50.88 < 20 |only if walking
+Cross the bridge |goto 36.31,50.61 < 20 |only if walking
+Follow the path |goto 37.40,49.54 < 20 |only if walking
+talk Lady Liadrin##114841
+Speak to Lady Liadrin |q 44739/3 |goto 40.49,53.07
+step
+talk Tyrande Whisperwind##114838
+Speak to Tyrande Whisperwind |q 44739/2 |goto 41.63,51.48
+step
+talk Vereesa Windrunner##114963
+Speak to Vereesa Windrunner |q 44739/1 |goto 42.96,51.42
+step
+talk Archmage Khadgar##114909
+turnin Ready for Battle##44739 |goto 41.07,51.79
+accept Full Might of the Elves##44738 |goto 41.07,51.79
+step
+Begin the Siege of Suramar Scenario |scenariostart |goto 42.26,53.64 |q 44738
+step
+Kill enemies around this area
+|tip Kill all of them.
+Defeat the Promenade Defenders |scenariogoal 1/34580 |goto 43.60,55.67 |q 44738
+Defeat the Promenade Vanguard |scenariogoal 1/34581 |goto 43.60,55.67 |q 44738
+step
+kill Ancient Shieldguard##115271
+|tip It appears after you kill all of the enemies.
+Defeat the Ancient Shieldguard |scenariostage 2 |goto 44.02,56.28 |q 44738
+step
+Run down the stairs |goto 44.27,57.40 < 30 |only if walking
+Run down the stairs |goto 46.89,61.10 < 20 |only if walking
+Kill enemies around this area
+|tip Kill all of them.
+Defeat the Concourse Defenders |scenariostage 3 |goto 49.70,64.89 |q 44738
+step
+click Telemancy Trap
+Place the Telemancy Trap |scenarioend |goto 50.75,66.42 |q 44738
+March on Suramar City |q 44738/1 |goto 50.75,66.42
+step
+talk Archmage Khadgar##115039
+turnin Full Might of the Elves##44738 |goto 52.24,68.73
+accept Staging Point##44740 |goto 52.24,68.73
+step
+Follow the path |goto 52.87,69.30 < 20 |walk
+click Telemancy Beacon
+Activate the Telemancy Beacon |q 44740/1 |goto 54.47,69.44
+step
+Follow the path |goto 54.61,72.01 < 20 |walk
+talk Archmage Khadgar##115039
+turnin Staging Point##44740 |goto 54.89,72.87
+accept Fighting on All Fronts##45317 |goto 54.89,72.87
+step
+click Eye of Odyn |goto Skyhold/1 59.21,13.44 |only Warrior
+click Scouting Map |goto Eastern Plaguelands/20 53.49,78.43 |only Paladin
+click Scouting Map |goto Trueshot Lodge/0 42.49,46.59 |only Hunter
+click Scouting Map |goto Dalaran L/4 37.37,44.15 |only Rogue
+click Command Map |goto Netherlight Temple/1 50.54,48.23 |only Priest
+click Scouting Map |goto The Maelstrom L/0 33.49,59.35 |only Shaman
+click Scouting Map |goto Hall of the Guardian/1 81.36,60.95 |only Mage
+click Scouting Map |goto Mardum, the Shattered Abyss/1 58.88,54.94 |only DemonHunter
+click Dreadscar Battle Plans |goto Dreadscar Rift/0 66.26,46.95 |only Warlock
+click Scouting Map |goto The Wandering Isle L/0 52.92,60.16 |only Monk
+click Scouting Map |goto The Dreamgrove/0 52.65,51.18 |only Druid
+click Scouting Map |goto Broken Shore/2 49.87,51.41 |only DeathKnight
+|tip You can also use the Legion Companion smartphone app to complete the missions.
+Begin Order Hall Missions
+|tip Any order hall missions will count, so just complete whichever ones you want to.
+Complete #5# Missions |q 45317/1
+step
+Cross the water |goto 52.40,77.48 < 30 |only if walking
+Leave the water |goto 52.79,74.31 < 20 |only if walking
+Follow the path |goto 52.85,73.50 < 20 |only if walking
+Walk onto the teleport pad |goto 53.12,71.50 < 7 |only if walking
+Follow the path |goto 54.46,72.23 < 20 |only if walking
+talk Archmage Khadgar##115039
+turnin Fighting on All Fronts##45317 |goto 54.89,72.87
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Legion (100-110)\\Order Hall Quests",{
 author="support@zygorguides.com",
@@ -17971,7 +18108,7 @@ accept Rising Troubles##42386 |goto Val'sharah/0 41.70,60.00
 |only Hunter
 stickystart "Risen_Hounds"
 step
-Use your Flare ability
+Use the Stealth Trap quest item to place a trap and then use your Flare ability
 |tip Inside the building.
 kill Captain Tevaris##109189 |q 42387/1 |goto 39.56,61.64
 |only Hunter
@@ -20806,13 +20943,13 @@ Witness Illidan's Resilience |q 44480/1 |goto Azshara/0 34.83,49.90
 |only Priest
 step
 click Light's Heart
-turnin In My Father's House##44480 |goto The Maelstrom L/0 32.48,32.81
+turnin In My Father's House##44480 |goto Netherlight Temple/1 49.79,26.28
 |only Priest
 step
 click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
-accept Destiny Unfulfilled##44496 |goto The Maelstrom L/0 32.48,32.81
+accept Destiny Unfulfilled##44496 |goto Netherlight Temple/1 49.79,26.28
 |only Priest
 step
 Use the Call to Xe'ra ability
@@ -27323,6 +27460,7 @@ Reach Level 110 |ding 110
 step
 talk Highlord Darion Mograine##93437
 accept The Scarlet Assault##42818 |goto Broken Shore/2 50.96,50.71
+|tip You may need to relog to get this quest to show up.
 |only DeathKnight
 step
 talk Archmage Khadgar##113686

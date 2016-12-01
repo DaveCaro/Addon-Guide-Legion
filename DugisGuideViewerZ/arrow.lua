@@ -893,11 +893,11 @@ function DugisArrow:Initialize()
 		if not wp or wp.guideIndex or not wp.questId then return end
 		
 		if IsLegionPatch then 
-			if QuestUtils_IsQuestWorldQuest(wp.questId) and IsWorldQuestWatched(wp.questId) then 
+			if (QuestUtils_IsQuestWorldQuest(wp.questId) and IsWorldQuestWatched(wp.questId)) or select(2, GetTaskInfo(wp.questId)) then 
 				return 
 			end		
 		else
-			if QuestMapFrame_IsQuestWorldQuest(wp.questId) and IsWorldQuestWatched(wp.questId) then 
+			if (QuestMapFrame_IsQuestWorldQuest(wp.questId) and IsWorldQuestWatched(wp.questId)) or select(2, GetTaskInfo(wp.questId)) then 
 				return 
 			end
 		end

@@ -1216,7 +1216,7 @@ step
 _Congratulations!_
 You completed the Court of Stars dungeon!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Legion Dungeons\\Karazhan\\Attunement",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Legion Dungeons\\Karazhan\\Karazhan Attunement",{
 condition_suggested="level>=110 and _G.GetAverageItemLevel()>840",
 keywords={"Karazhan Kara"},
 author="support@zygorguides.com",

@@ -430,7 +430,7 @@ T All That Glitters |QID|41307| |N|(npc:103175) in {The Grand Promenade} (41.51,
 T Pry It From Their Cold, Feral Claws |QID|41320| |N|(npc:103175) in {The Grand Promenade} (41.51, 71.21)| |Z|1033 0| |NPC|103175|
 A Estate Jewelry: A Braggart's Brooch |QID|41465| |N|(npc:103175) in {The Grand Promenade} (41.51, 71.21)| |Z|1033 0| |NPC|103175|
 A Estate Jewelry: Haute Claw-ture |QID|41466| |N|(npc:103175) in {The Grand Promenade} (41.51, 71.21)| |Z|1033 0| |NPC|103175|
-C Estate Jewelry: Haute Claw-ture |QID|41466| |N|Speak to (npc:104369) and defeat him, then you can collect Lespin's "Art" from Mornath's Curio Chest in {Lunastre Estate} (42.40, 76.87)| |Z|1033 0| |NPC|104369|
+C Estate Jewelry: Haute Claw-ture |QID|41466| |N|Speak to (npc:104369) and defeat him, then you can collect Lespin's "Art" from Mornath's Curio Chest in {Lunastre Estate} (41.25, 64.75)| |Z|1033 0| |NPC|104369| |POI|
 T Estate Jewelry: Haute Claw-ture |QID|41466| |N|(npc:103175) in {The Grand Promenade} (41.52, 71.21)| |Z|1033 0| |NPC|103175|
 
 N (npc:104544) |QID|41465.1| |N|Speak with (npc:104544) in {The Grand Promenade} (40.42, 57.55)| |Z|1033 0| |NPC|104544|
@@ -1159,7 +1159,7 @@ T Stabilizing Suramar |QID|45316| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |
 --Crafting War
 
 A Feeding the Rebellion |QID|45265| |N|(npc:97140) in {Shal'Aran}<br/><br/>This quest is not available until November 22 (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|45316|
-C Feeding the Rebellion |QID|45265| Use (item:143597) on a (npc:111901) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|111901| |PRE|45316| |U|143597|
+C Feeding the Rebellion |QID|45265| |N|Use (item:143597) on a (npc:111901) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|111901| |PRE|45316| |U|143597|
 T Feeding the Rebellion |QID|45265| |N|(npc:97140) in {Shal'Aran}<br/><br/>This quest is not available until November 22 (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|45316|
 
 A Tyrande's Command |QID|44743| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|45316| |OID|44859|
@@ -1167,7 +1167,7 @@ A Liadrin's Command |QID|44859| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|
 A Mouths to Feed |QID|44870| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|45316|
 T Mouths to Feed |QID|44870| |N|(npc:115371) in {Shal'Aran} (37.06,46.58)| |Z|1033 0| |NPC|115092| |PRE|45316|
 A Oculeth Ex Machina |QID|44873| |N|(npc:115371) in {Shal'Aran} (37.06,46.58)| |Z|1033 0| |NPC|115092| |PRE|45316|
-N (npc:(npc:101499)) |QID|44873| |N|Speak with (npc:101499) in {Shal'Aran} to teleport (37.12,46.61)| |Z|1033 0| |NPC|115092| |PRE|45316| |POI|
+N (npc:101499) |QID|44873| |N|Speak with (npc:101499) in {Shal'Aran} to teleport (37.12,46.61)| |Z|1033 0| |NPC|115092| |PRE|45316| |POI|
 
 T Oculeth Ex Machina |QID|44873| |N|(npc:115371) in {Ley-Ruins of Zarkhenar} (59.79,13.83)| |Z|1015 0| |NPC|115092| |PRE|45316| |POI|
 A Unbeleyvable |QID|44874| |N|(npc:115371) in {Ley-Ruins of Zarkhenar} (59.79,13.83)| |Z|1015 0| |NPC|115092| |PRE|45316| 
@@ -1214,7 +1214,29 @@ A Trial by Demonfire |QID|44790| |N|(npc:107997) in {Meredil} (39.83, 51.29)| |Z
 C Trial by Demonfire |QID|44790| |N|Follow (npc:107997) and kill (npc:116257) in {Meredil}| |Z|1033 0| |NPC|116257| |PRE|45316| |POI|
 T Trial by Demonfire |QID|44790| |N|(npc:107997) in {Meredil}| |Z|1033 0| |NPC|107997| |PRE|45316| |POI|
 T A Dance With Dragons |QID|44876| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |PRE|45316|
-		
+
+--March on Suramar
+T Insurrection: March on Suramar |QID|45281| |N|(npc:97140) in {Shal'Aran}<br/><br/>This quest is not available until November 22 (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44876| |O|
+A A United Front |QID|45266| |N|(npc:97140) in {Shal'Aran}<br/><br/>This quest is not available until November 29 (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44876| |O|
+C A United Front |QID|45266| |N|Use (item:143597) on a (npc:111901) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|111901| |PRE|44876| |U|143597|
+T A United Front |QID|45266| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44876|
+A Ready for Battle |QID|44739| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44876|
+
+R Meredil |QID|44739| |N|Travel to {Meredil} (42.90, 51.45)| |Z|1033 0| |PRE|44876|
+N (npc:114841) |QID|44739.3| |N|Speak to (npc:114841) in {Meredil} (40.50, 53.08)| |Z|1033 0| |NPC|114841| |PRE|44876|
+N (npc:114838) |QID|44739.2| |N|Speak to (npc:114838) in {Meredil} (41.65, 51.52)| |Z|1033 0| |NPC|114838| |PRE|44876|
+N (npc:114963) |QID|44739.1| |N|Speak to (npc:114963) in {Meredil} (42.94, 51.47)| |Z|1033 0| |NPC|114963| |PRE|44876|
+T Ready for Battle |QID|44739| |N|(npc:107966) in {Shal'Aran} (41.02, 51.77)| |Z|1033 0| |NPC|107966| |PRE|44876|
+A Full Might of the Elves |QID|44738| |N|(npc:107966) in {Shal'Aran} (41.02, 51.77)| |Z|1033 0| |NPC|107966| |PRE|44876|
+C Secure the Promenade |SID|0|1| |N|Kill the Promenade defenders and vanguard in {The Grand Promenade} (44.26, 56.71)| |Z|1033 0| |QID|44738| 
+C Defeat the Ancient Shieldguard |SID|0|2| |N|Kill (npc:115271) in {The Grand Promenade} (44.26, 56.71)| |Z|1033 0| |NPC|115271| |QID|44738| 
+C Secure the Concourse of Destiny |SID|0|3| |N|Follow (npc:114838) defeat Concourse defenders in {Concourse of Destiny} (53.48, 70.44)| |Z|1033 0| |NPC|114838| |QID|44738| 
+C Trigger the Telemancy Trap |SID|0|4| |N|Click on telemancy trap in {Concourse of Destiny} (50.73, 66.40)| |Z|1033 0| |QID|44738| 
+T Full Might of the Elves |QID|44738| |N|(npc:107966) in {Astravar Harbor} (52.21, 68.69)| |Z|1033 0| |NPC|107966| |PRE|44876|
+A Staging Point |QID|44740| |N|(npc:107966) in {Astravar Harbor} (52.21, 68.69)| |Z|1033 0| |NPC|107966| |PRE|44876|
+C Staging Point |QID|44740| |N|Click on the telemancy beacon in {Astravar Harbor} (54.46, 69.43)| |Z|1033 0| |NPC|107966| |PRE|44876|
+T Staging Point |QID|44740| |N|(npc:107966) in {Astravar Harbor} (54.92, 72.80)| |Z|1033 0| |NPC|107966| |PRE|44876|
+
 N Gain Reputation |N|You will need 7000/21000 Revered status with (fac:1859) faction to continue| |OID|44152| 
 N Gain Reputation |N|You will need 20000/21000 Revered status with (fac:1859) faction to continue| |OID|43502| 
 C Redemption for the Fallen |QID|44563| |N|Reach Exalted status with with (fac:1859)|

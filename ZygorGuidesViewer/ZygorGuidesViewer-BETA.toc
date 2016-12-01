@@ -1,5 +1,5 @@
 ## Interface: 70100
-## Title: Zygor Guides Viewer 7.0 (BETA)
+## Title: Zygor Guides Viewer 6.0 (BETA)
 ## Author: Sinus Pi for Zygor Guides
 ## DefaultState: enabled
 ## LoadOnDemand: 0

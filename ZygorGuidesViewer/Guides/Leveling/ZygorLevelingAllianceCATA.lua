@@ -17674,7 +17674,7 @@ kill Darkcrest Slaver##19946+,Darkcrest Sorceress##19947+
 collect 10 Unidentified Plant Parts|q 9802/1 |goto 70.9,82.1
 collect 30 Naga Claws|q 9728/1 |goto 70.9,82.1
 You can find more Naga |goto 73.4,82.3
-Also some more can be founs |goto 72.2,75.8
+Also some more can be found here |goto 72.2,75.8
 step
 talk Windcaller Blackhoof##18070
 turnin Safeguarding the Watchers##9894 |goto 80.4,64.7

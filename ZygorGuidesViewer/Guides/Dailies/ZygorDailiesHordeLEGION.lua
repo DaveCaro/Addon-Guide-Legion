@@ -900,6 +900,17 @@ label "Llothien_Prowlers"
 kill 10 Llothien Prowler##90313+ |q 42123/1 |goto 54.52,29.01
 |next "Court_Of_Farondis_WQ"
 step
+label quest-42063
+Follow the path |goto Azsuna/0 63.38,30.69 < 25 |only if walking
+Follow the path |goto 63.84,34.56 < 25 |only if walking
+Follow the path down |goto 65.17,37.86 < 15 |only if walking
+accept Size Doesn't Matter##42063 |goto 65.63,41.01
+|tip You will accept this quest automatically.
+step
+click Blottis##105898
+Defeat Blottis |q 42063/1 |goto 65.63,41.01
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41259
 Follow the path |goto Azsuna/0 43.63,42.24 < 30 |only if walking
 Follow the path |goto 39.92,37.45 < 30 |only if walking
@@ -946,6 +957,36 @@ step
 kill Equine Sunrunner##91308+
 |tip Loot and skin them.
 collect 8 Smooth Sunrunner Hide##137628 |q 41582/1 |goto Azsuna/0 60.66,24.83
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44847
+Follow the path |goto Azsuna/0 63.42,25.55 < 25 |only if walking
+Follow the path |goto 61.28,21.90 < 25 |only if walking
+Follow the path |goto 58.67,19.20 < 25 |only if walking
+accept Straight From the Source##44847 |goto 58.32,14.33
+|tip You will accept this quest automatically.
+stickystart "Overseer"
+step
+Go around the wall |goto 58.32,14.33 < 10 |only if walking
+Disable eastern Mana Pylon |q 44847/5 |goto 57.90,14.84
+|tip Use the special action button that appears on your screen.
+step
+Go up the steps |goto 57.62,15.48 < 20 |only if walking
+Go up the rocks |goto 56.82,16.80 < 20 |only if walking
+Go down the steps |goto 55.67,15.75 < 20  |only if walking
+Disable southern Mana Pylon |q 44847/2 |goto 56.56,15.46
+|tip Use the special action button that appears on your screen.
+step
+Disable central Mana Pylon |q 44847/3 |goto 55.89,14.16
+|tip Use the special action button that appears on your screen.
+step
+Follow the path |goto 55.98,12.99 < 20 |only if walking
+Disable northwestern Mana Pylon |q 44847/4 |goto 56.30,11.92
+|tip Use the special action button that appears on your screen.
+step
+label "Overseer"
+kill Nightfallen Overseer##90616 |q 44847/1 |goto 55.69,14.16
+|tip These can be difficult to find on busy days. Search around this area for them.
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41288
@@ -1264,6 +1305,34 @@ step
 kill Normantis the Deposed##90217 |q 43612/1 |goto 49.49,8.77
 |next "Court_Of_Farondis_WQ"
 step
+label quest-43613
+Follow the path |goto Azsuna/0 56.87,57.19 < 30 |only if walking
+Follow the path |goto 58.45,51.48 < 30 |only if walking
+Follow the path |goto 61.39,50.85 < 30 |only if walking
+Follow the path |goto 64.11,50.92 < 30 |only if walking
+Follow the path up |goto 65.63,51.24 < 20 |only if walking
+Follow the path |goto 66.86,52.05 < 15 |only if walking
+accept WANTED: Syphonus##43613 |goto Azsuna/0 49.49,8.77
+|tip You will accept this quest automatically.
+step
+kill Syphonus##90505 |q 43613/1 |goto 67.16,51.64
+|tip Inside the building.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-43429
+Follow the path |goto Azsuna/0 56.87,57.19 < 30 |only if walking
+Follow the path |goto 58.45,51.48 < 30 |only if walking
+Follow the path |goto 61.39,50.85 < 30 |only if walking
+Follow the path |goto 64.11,50.92 < 30 |only if walking
+Follow the path up |goto 65.63,51.24 < 20 |only if walking
+Follow the path |goto 66.86,52.05 < 15 |only if walking
+accept WANTED: Syphonus##43429 |goto Azsuna/0 49.49,8.77
+|tip You will accept this quest automatically.
+step
+kill Syphonus##90505 |q 43429/1 |goto 67.16,51.64
+|tip Inside the building.
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42633
 Cross the crater |goto Azsuna/0 42.04,44.41 < 30 |only if walking
 Follow the path |goto 40.20,45.32 < 30 |only if walking
@@ -1304,6 +1373,19 @@ accept WANTED: Warbringer Mox'na##43431 |goto Azsuna/0 47.78,53.37
 step
 kill Warbringer Mox'na##90164 |q 43615/1 |goto 47.78,53.37
 |tip He walks along this road, so you may need to search for him.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-43802
+accept Watery Graves##43802 |goto Eye of Azshara Map/0 43.14,50.75
+|tip You will accept this quest automatically.
+stickystart "Droplet"
+step
+kill Restless Tides##111644+ |q 43802/1 |goto 43.14,50.75
+|tip These are located randomly along the shore.
+step
+label "Droplet"
+kill Saltsea Droplet##111641+ |q 43802/2 |goto 43.14,50.75
+|tip These are located randomly along the shore.
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42148
@@ -1626,6 +1708,10 @@ step
 Kill enemies around this area
 |tip Use the abilities on your action bar.
 Defeat the Demons |q 42174/2 |goto Azshara L/0 25.60,48.36
+step
+kill 2 Infernal Siegebreaker##97808 |q 42174/3 |goto 29.48,52.47
+step
+kill 1 Pit Lord##98757 |q 42174/4 |goto 29.48,52.47
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43738
@@ -2306,6 +2392,21 @@ label "Ancient_Annihilator"
 kill Ancient Annihilator##110896 |q 41980/3 |goto 56.08,53.93
 |next "Court_Of_Farondis_WQ"
 step
+label quest-40279
+Follow the path |goto Val'sharah/0 55.76,56.77 < 20 |only if walking
+Follow the path |goto 54.97,53.49 < 20 |only if walking
+Follow the path |goto 53.28,50.09 < 25 |only if walking
+Follow the path |goto 52.44,46.30 < 25 |only if walking
+Follow the path |goto 50.86,42.88 < 20 |only if walking
+Follow the path |goto 48.79,40.41 < 25 |only if walking
+accept Training with Durian##40279 |goto 46.95,39.70
+|tip You will accept this quest automatically.
+step
+talk Durian Strongfruit##99035
+Tell him: "_Let's do battle!_"
+Defeat Durian Strongfruit |q 40279/1 |goto 46.95,39.70
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41992
 Follow the path |goto Val'sharah/0 68.15,48.50 < 30 |only if walking
 Follow the path up |goto 65.62,43.13 < 30 |only if walking
@@ -2935,6 +3036,19 @@ step
 kill Brimstone Destroyer##93237
 click Brimstone Destroyer Core##195122
 Brimstone Destroyer Core mined |q 41209/1 |goto 45.20,53.66
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41706
+Follow the path |goto Highmountain/0 42.62,10.18 < 25 |only if walking
+Follow the path |goto 44.63,9.25 < 25 |only if walking
+Follow the path |goto 46.78,10.41 < 25 |only if walking
+Follow the path |goto 48.52,10.25 < 25 |only if walking
+accept Briny Waters##41706 |goto 51.69,11.48
+|tip You will accept this quest automatically.
+step
+kill Clackbrine Matron##104590+, Clackbrine Snapper##104582+, Clackbrine Pincer##104589+
+Clackbrine Clean-up |q 41706/1 |goto 51.69,11.48
+|tip Use the abilities on your hotbar to complete the objective.
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41623
@@ -5050,6 +5164,35 @@ step
 kill Crimson Rockshell##107667+
 |tip Loot and Skin them.
 collect 8 Solid Crabshell Fragment##134817 |q 41343/1 |goto Stormheim/0 59.39,20.50
+|next "Court_Of_Farondis_WQ"
+step
+label quest-42269
+Follow the path up |goto Stormheim/0 90.60,9.94 < 20 |only if walking
+Follow the path |goto 88.69,9.19 < 20 |only if walking
+Follow the path down |goto 86.07,7.80 < 25 |only if walking
+Enter the tomb |goto 83.86,9.49 < 10 |walk
+Follow the path |goto Stormheim/1 63.95,55.58 < 15 |walk
+Follow the path |goto 50.72,51.85 < 10 |walk
+accept The Soultakers##42269 |goto 27.91,45.14
+|tip You will accept this quest automatically.
+step
+_DAMAGE:_
+|tip During Seadog's Scuttle, don't stand between Jdorn and his target.
+|tip Kill Cursed Crewman quickly.
+|tip Don't stand in rifts during Soul Rend.
+|tip
+_HEALER:_
+|tip During Seadog's Scuttle, don't stand between Jdorn and his target.
+|tip Don't stand in rifts during Soul Rend.
+|tip
+_TANK:_
+|tip During Seadog's Scuttle, don't stand between Jdorn and his target.
+|tip Pick up Cursed Crewman quickly.
+|tip Don't stand in rifts during Soul Rend.
+|tip
+kill Captain Hring##106981 |q 42269/1 |goto 27.91,45.14
+kill Reaver Jdorn##106982 |q 42269/3 |goto 27.91,45.14
+kill Soultrapper Mevra##106984 |q 42269/2 |goto 27.91,45.14
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43827

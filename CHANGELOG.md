@@ -6,28 +6,34 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
-- DUGI ADDON :
+- Zygor Guide :
 
-Fixed random error
+LEVELING : 
 
-Fixed Suggest Guide for Legion Dungeon
+Polished week 5 Suramar Insurrection questline steps in Suramar guide.
 
-Fixed Addon blocked issue when queuing for PVP
+Added week 6 Suramar Insurrection questline steps to Suramar guide.
 
-Seperated Find Nearest, Tracked Pets, Achievement, Rare NPC tracking from the Minimap menu to prevent tainting
+Zangarmarsh - Fixed a small typo in the Zangarmarsh Alliance leveling guide.
 
-- Achievement Guides : 
+Val'sharah - Switched steps 99 and 100 in the guide. Now you don't have to run past the flight path to pick up a quest, then run all the way back to get the flight path.
 
-New A Cast Above the Rest
+Order Halls - Various fixes to select order halls guides.
 
-New A Glorious Campaign
+World Quests - Added additional quests.
 
-New Bigger Fish to Fry
+Legion Intro and Artifacts - Corrected a quest objective number.
 
-New Broken Isles Diplomat
+GOLD GUIDE : 
 
-New Broken Isles Pathfinder Part One
+Volatile Fire - Corrected the NPC's listed for farming.
 
-New Loremaster of Legion
+Shal'dorei Silk - Moved the farming spot to Highmountain.
 
-New Variety is the Spice of Life
+PROFESSIONS : 
+
+Engineering 1-600 - Changed a step to direct players to the main city anvil instead of the Shattrath city anvil, to match the following step.
+
+- Dugi Guide : 
+
+TBA
