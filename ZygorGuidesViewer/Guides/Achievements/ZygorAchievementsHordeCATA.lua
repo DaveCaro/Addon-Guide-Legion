@@ -12867,7 +12867,7 @@ step
 label	end
 Congratulations! You have earned the Achievement Zen Master Medic_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Cataclysm Raider Achievements\\Parasite Evening",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Cataclysm Raider Achievements\\Parasite Evening",{
 condition_end="achieved(5306)",
 description="Defeat Magmaw in Blackwing Descent without anyone in the raid becoming infected with a parasite.",
 },[[
@@ -12884,7 +12884,7 @@ Earn the Parasite Evening Achievement |achieve 5306 |goto Blackwing Descent/1 27
 step
 Congratulations, you have earned the Parasite Evening Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Cataclysm Raider Achievements\\Achieve-a-tron",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Cataclysm Raider Achievements\\Achieve-a-tron",{
 condition_end="achieved(5307)",
 description="Defeat the Omnotron Defense System in Blackwing Descent while neutralizing the following attacks.",
 },[[
@@ -12906,7 +12906,7 @@ Earn the Achieve-a-Tron Achievement |achieve 5307 |goto Blackwing Descent/1 65.4
 step
 Congratulations, you have earned the Achieve-a-tron Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Cataclysm Raider Achievements\\Silence is Golden",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Cataclysm Raider Achievements\\Silence is Golden",{
 condition_end="achieved(5308)",
 description="Defeat Atramedes in Blackwing Descent without any raid member's sound bar going over 50%.",
 },[[
@@ -12930,7 +12930,7 @@ Earn the Silence is Golden Achievement |achieve 5308 |goto Blackwing Descent/2 4
 step
 Congratulations, you  have earned the Silence is Golden Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Cataclysm Raider Achievements\\Aberrant Behavior",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Cataclysm Raider Achievements\\Aberrant Behavior",{
 condition_end="achieved(5310)",
 description="Kill 12 Aberrations within 10 seconds on the Maloriak encounter in Blackwing Descent and then defeat Maloriak.",
 },[[
@@ -12951,7 +12951,7 @@ Earn the Aberrant Behavior Achievement |achieve 5310 |goto Blackwing Descent/2 7
 step
 Congratulations, you have earned the Aberrant Behavior Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Cataclysm Raider Achievements\\Full of Sound and Fury",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Cataclysm Raider Achievements\\Full of Sound and Fury",{
 condition_end="achieved(5309)",
 description="Defeat Chimaeron in Blackwing Descent with no more than 2 raid member deaths.",
 },[[
@@ -12972,7 +12972,7 @@ Earn the Full of Sound and Fury Achievement |achieve 5309 |goto Blackwing Descen
 step
 Congratulations, you have earned the Full of Sound and Fury Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Cataclysm Raider Achievements\\Keeping it in the Family",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Cataclysm Raider Achievements\\Keeping it in the Family",{
 condition_end="achieved(4849)",
 description="Damage Nefarian below 50% health before he lands for the final confrontation and then defeat Nefarian in Blackwing Descent.",
 },[[
@@ -12997,7 +12997,7 @@ Earn the Keeping it in the Family Achievement |achieve 4849 |goto Blackwing Desc
 step
 Congratulations, you have earned the Keeping it in the Family Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Cataclysm Raider Achievements\\The Only Escape",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Cataclysm Raider Achievements\\The Only Escape",{
 condition_end="achieved(5300)",
 description="Defeat Halfus Wyrmbreaker after defeating two drakes within 10 seconds of each other. The Emerald Whelp pack counts as one drake for this purpose.",
 },[[
@@ -13019,7 +13019,7 @@ Earn The Only Escape Achievement |achieve 5300 |goto The Bastion of Twilight/1 5
 step
 Congratulations, you have earned The Only Escape Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Cataclysm Raider Achievements\\Double Dragon",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Cataclysm Raider Achievements\\Double Dragon",{
 condition_end="achieved(4852)",
 description="Kill 6 Twilight Fiends in the Twilight Realm and then defeat Valiona and Theralion in the Bastion of Twilight.",
 },[[
@@ -13044,7 +13044,7 @@ Earn the Double Dragon Achievement |achieve 4852 |goto The Bastion of Twilight/1
 step
 Congratulations, you have earned the Double Dragon Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Cataclysm Raider Achievements\\Elementary",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Cataclysm Raider Achievements\\Elementary",{
 condition_end="achieved(5311)",
 description="Defeat the Elementium Monstrosity in the Bastion of Twilight while only allowing it to create a single Liquid Ice patch.",
 },[[
@@ -13072,7 +13072,7 @@ Earn the Elementary Achievement |achieve 5311 |goto The Bastion of Twilight/2 42
 step
 Congratulations, you have earned the Elementary Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Cataclysm Raider Achievements\\The Abyss Will Gaze Back Into You",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Cataclysm Raider Achievements\\The Abyss Will Gaze Back Into You",{
 condition_end="achieved(5312)",
 description="Defeat Cho'gall in the Bastion of Twilight before any raid member earns more than 30% Corrupted Blood.",
 },[[
@@ -13094,7 +13094,7 @@ Earn The Abyss Will Gaze Back Into You Achievement |achieve 5312 |goto The Basti
 step
 Congratulations, you have earned The Abyss Will Gaze Back Into You Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Cataclysm Raider Achievements\\Stay Chill",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Cataclysm Raider Achievements\\Stay Chill",{
 condition_end="achieved(5304)",
 description="Defeat the Conclave of Wind in the Throne of the Four Winds while everyone in the raid has at least 7 stacks of Wind Chill.",
 },[[
@@ -13112,7 +13112,7 @@ Earn the Stay Chill Achievement |achieve 5304 |goto Throne of the Four Winds/1 4
 step
 Congratulations, you have earned the Stay Chill Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Cataclysm Raider Achievements\\Four Play",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Cataclysm Raider Achievements\\Four Play",{
 condition_end="achieved(5305)",
 description="Defeat Al'Akir in the Throne of the Four Winds while he is affected by Feedback.",
 },[[
@@ -13127,7 +13127,7 @@ Earn the Four Play Achievement |achieve 5305 |goto Throne of the Four Winds/1 47
 step
 Congratulations, you have earned the Four Play Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Firelands Raider Achievements\\Death From Above",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Firelands Raider Achievements\\Death From Above",{
 condition_end="achieved(5821)",
 description="Only kill Cinderweb Drones while they are atop the web canopy during the Beth'tilac encounter in Firelands.",
 },[[
@@ -13150,7 +13150,7 @@ Earn the Death From Above Achievement |achieve 5821 |goto Firelands/1 20.8,32
 step
 Congratulations, you have earned the Death From Above Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Firelands Raider Achievements\\Not an Ambi-Turner",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Firelands Raider Achievements\\Not an Ambi-Turner",{
 condition_end="achieved(5810)",
 description="Defeat Lord Rhyolith in the Firelands without ever causing him to turn left while his armor is intact.",
 },[[
@@ -13170,7 +13170,7 @@ Earn the Not an Ambi-Turner Achievement |achieve 5810 |goto Firelands/1 65.6,75.
 step
 Congratulations, you have earned the Not an Ambi-Turner Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Firelands Raider Achievements\\Do a Barrel Roll!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Firelands Raider Achievements\\Do a Barrel Roll!",{
 condition_end="achieved(5813)",
 description="Defeat Alysrazor in the Firelands without any raid member getting hit by the following attacks.",
 },[[
@@ -13191,7 +13191,7 @@ Earn the Do a Barrel Roll! Achievement |achieve 5813 |goto Firelands/1 64,39
 step
 Congratulations, you  have earned the Do a Barrel Roll! Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Firelands Raider Achievements\\Bucket List",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Firelands Raider Achievements\\Bucket List",{
 condition_end="achieved(5829)",
 description="During a single engagement, bring Shannox to each of the following locations in the Firelands before dispatching him.",
 },[[
@@ -13217,7 +13217,7 @@ Earn the Bucket List Achievement |achieve 5829 |goto Firelands/1 49.2,46
 step
 Congratulations, you have earned the Bucket List Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Firelands Raider Achievements\\Share the Pain",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Firelands Raider Achievements\\Share the Pain",{
 condition_end="achieved(5830)",
 description="Defeat Baleroc in the Firelands without allowing any member of your raid to suffer Torment more than three times.",
 },[[
@@ -13238,7 +13238,7 @@ Earn the Share the Pain Achievement |achieve 5830 |goto Firelands/1 49.2,32.8
 step
 Congratulations, you have earned the Share the Pain Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Firelands Raider Achievements\\Only the Penitent...",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Firelands Raider Achievements\\Only the Penitent...",{
 condition_end="achieved(5799)",
 description="Activate both of Fandral's Flames at once in Firelands without any raid member getting hit by Kneel to the Flame!",
 },[[
@@ -13264,7 +13264,7 @@ Orb 2 |goto 53.31,74.66 < 10
 step
 Congratulations, you have earned the Only the Penitent Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Firelands Raider Achievements\\Heroic: Fandral Staghelm",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Firelands Raider Achievements\\Heroic: Fandral Staghelm",{
 condition_end="achieved(5975)",
 description="Activate both of Fandral's Flames at once in Firelands without any raid member getting hit by Kneel to the Flame!",
 },[[
@@ -13282,7 +13282,7 @@ Right click your character portrait and make sure that you are doing Heroic Fire
 step
 Congratulations, you have earned the Heroic: Fandral Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (10 Player) Achievements\\Boned (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Icecrown Raider (10 Player) Achievements\\Boned (10 player)",{
 condition_end="achieved(4534)",
 description="Defeat Lord Marrowgar without any raid member remaining impaled for more than 8 seconds in 10-player mode.",
 },[[
@@ -13299,7 +13299,7 @@ People who have been hit by that will not be able to be impaled
 step
 Congratulations, you have earned the Boned (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (10 Player) Achievements\\Full House (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Icecrown Raider (10 Player) Achievements\\Full House (10 player)",{
 condition_end="achieved(4535)",
 description="Defeat Lady Deathwhisper with at least five different types of Cultists active at the time of her demise in 10-player mode.",
 },[[
@@ -13318,7 +13318,7 @@ Defeat Lady Deathwhisper while 5 different type of cultists are active |achieve 
 step
 Congratulations, you have earned the Full House (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (10 Player) Achievements\\I'm on a Boat (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Icecrown Raider (10 Player) Achievements\\I'm on a Boat (10 player)",{
 condition_end="achieved(4536)",
 description="Claim victory in the Gunship Battle without any raid member visiting the enemy gunship more than twice in 10-player mode.",
 },[[
@@ -13330,7 +13330,7 @@ This achievement is still currently bugged, so as you spam 1 and 2 while in the 
 step
 Congratulations, you have earned the I'm on a Boat (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (10 Player) Achievements\\I've Gone and Made a Mess (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Icecrown Raider (10 Player) Achievements\\I've Gone and Made a Mess (10 player)",{
 condition_end="achieved(4537)",
 description="Defeat the Deathbringer before Mark of the Fallen Champion is cast three times in 10-player mode.",
 },[[
@@ -13342,7 +13342,7 @@ Defeat the Deathbringer before Mark of the Fallen Champion is cast three times |
 step
 Congratulations, you have earned the I've Gone and Made a Mess Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (10 Player) Achievements\\Flu Shot Shortage (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Icecrown Raider (10 Player) Achievements\\Flu Shot Shortage (10 player)",{
 condition_end="achieved(4577)",
 description="Defeat Festergut while none of the players in your raid group ever had 3 stacks of Inoculated in 10-player mode.",
 },[[
@@ -13354,7 +13354,7 @@ Defeat Festergut without being Inoculated twice |achieve 4577 |goto Icecrown Cit
 step
 Congratulations, you have earned the Flu Shot Shortage (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (10 Player) Achievements\\Dances with Oozes(10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Icecrown Raider (10 Player) Achievements\\Dances with Oozes(10 player)",{
 condition_end="achieved(4538)",
 description="Defeat Rotface without a Big Ooze casting Unstable Ooze Explosion in 10-player mode.",
 },[[
@@ -13367,7 +13367,7 @@ Otherwise, you will have to use all cooldowns available and just burn the boss
 step
 Congratulations, you have earned the achievement Dances with Oozes(10 player)!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (10 Player) Achievements\\Nausea, Heartburn, Indigestion... (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Icecrown Raider (10 Player) Achievements\\Nausea, Heartburn, Indigestion... (10 player)",{
 condition_end="achieved(4578)",
 description="Defeat Professor Putricide without using Regurgitated Ooze on the Abomination in 10-player mode.",
 },[[
@@ -13378,7 +13378,7 @@ To earn this achievement, don't drink any of the Ooze provided for the encounter
 step
 Congratulations, you have earned the Nausea, Heartburn, Indigestion... (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (10 Player) Achievements\\The Orb Whisperer (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Icecrown Raider (10 Player) Achievements\\The Orb Whisperer (10 player)",{
 condition_end="achieved(4582)",
 description="Defeat the Blood Council without anyone in the raid taking more than 23,000 spell damage in a single hit in 10-player mode.",
 },[[
@@ -13394,7 +13394,7 @@ Defeat the Blood Council without anyone in the raid taking 23,000 or more in one
 step
 Congratulations, you have earned The Orb Whisperer (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (10 Player) Achievements\\Once Bitten, Twice Shy (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Icecrown Raider (10 Player) Achievements\\Once Bitten, Twice Shy (10 player)",{
 condition_end="achieved(4539)",
 description="Defeat Professor Putricide without using Regurgitated Ooze on the Abomination in 10-player mode.",
 },[[
@@ -13409,7 +13409,7 @@ If you are wanting to defeat her without becoming a vampire, you may want to bri
 step
 Congratulations, you have earned the Once Bitten, Twice Shy (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (10 Player) Achievements\\Portal Jockey (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Icecrown Raider (10 Player) Achievements\\Portal Jockey (10 player)",{
 condition_end="achieved(4579)",
 description="Enter every portal spawned by Valithria Dreamwalker before healing her to full health in 10-player mode.",
 },[[
@@ -13421,7 +13421,7 @@ Enter every portal spawned during the encounter |achieve 4579 |goto Icecrown Cit
 step
 Congratulations, you have earned the Portal Jockey Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (10 Player) Achievements\\All You Can Eat (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Icecrown Raider (10 Player) Achievements\\All You Can Eat (10 player)",{
 condition_end="achieved(4580)",
 description="Defeat Sindragosa in 10-player mode without any member of your raid receiving more than 5 stacks of Mystic Buffet.",
 },[[
@@ -13433,7 +13433,7 @@ Defeat Sindragosa without gaining more than 5 stacks of Mystic Buffet |achieve 4
 step
 Congratulations, you have earned the All You Can Eat (10 Player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (10 Player) Achievements\\Been Waiting a Long Time for This (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Icecrown Raider (10 Player) Achievements\\Been Waiting a Long Time for This (10 player)",{
 condition_end="achieved(4601)",
 description="Allow Necrotic Plague to stack to 30 before defeating the Lich King in 10-player mode.",
 },[[
@@ -13448,7 +13448,7 @@ Defeat the Lich King having allowed a stack of Necrotic Plague to reach 30 |achi
 step
 Congratualtions, you have earned the Been Waiting a Long Time for This (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (10 Player) Achievements\\Orbit-uary (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Ulduar Raider (10 Player) Achievements\\Orbit-uary (10 player)",{
 condition_end="achieved(3056)",
 description="Defeat Flame Leviathan with all 4 Orbital Defense Systems active in 10-player mode.",
 },[[
@@ -13470,7 +13470,7 @@ If your vehicle ends up being destroyed, make sure that you never hold still or 
 step
 Congratulations, you have earned the Orbit-uary (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (10 Player) Achievements\\Stokin' the Furnace (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Ulduar Raider (10 Player) Achievements\\Stokin' the Furnace (10 player)",{
 condition_end="achieved(3056)",
 description="Defeat Ignis the Furnace Master in 4 minutes in 10-player mode.",
 },[[
@@ -13487,7 +13487,7 @@ This achievement is simple at level cap, simply DPS Ignis down in under 4 minute
 step
 Congratulations, you have earned the Stokin' the Furnace (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (10 Player) Achievements\\Iron Dwarf, Medium Rare (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Ulduar Raider (10 Player) Achievements\\Iron Dwarf, Medium Rare (10 player)",{
 condition_end="achieved(2923)",
 description="Defeat 25 Dark Rune Guardian Dwarves with Razorscale's Flame Breath in 10-player mode.",
 },[[
@@ -13509,7 +13509,7 @@ only if not achieved(2923)
 step
 Congratualtions, you have earned the Iron Dwarf, Medium Rare (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (10 Player) Achievements\\Heartbreaker (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Ulduar Raider (10 Player) Achievements\\Heartbreaker (10 player)",{
 condition_end="achieved(3058)",
 description="Defeat XT-002 Deconstructor after destroying his heart in 10-player mode.",
 },[[
@@ -13530,7 +13530,7 @@ Kill the heart, then XT-002
 step
 Congratulations, you have earned the Heartbreaker (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (10 Player) Achievements\\I Choose You, Steelbreaker (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Ulduar Raider (10 Player) Achievements\\I Choose You, Steelbreaker (10 player)",{
 condition_end="achieved(2941)",
 description="Defeat the Assembly of Iron with Steelbreaker as the last member alive in 10-player mode.",
 },[[
@@ -13556,7 +13556,7 @@ For this, kill Stormcaller Brundir, then Runemaster Molgeim then finally, Steelb
 step
 Congratulations, you have earned the I Choose You, Steelbreaker (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (10 Player) Achievements\\Disarmed (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Ulduar Raider (10 Player) Achievements\\Disarmed (10 player)",{
 condition_end="achieved(2953)",
 description="Destroy both of Kologarn's arms and then Kologarn himself within 12 seconds in 10-player mode.",
 },[[
@@ -13584,7 +13584,7 @@ Finish the boss off immidiately after
 step
 Congratulations, you have earned the Disarmed (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (10 Player) Achievements\\Crazy Cat Lady (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Ulduar Raider (10 Player) Achievements\\Crazy Cat Lady (10 player)",{
 condition_end="achieved(3006)",
 description="Defeat Auriaya without destroying her Sanctum Sentries in 10-player mode.",
 },[[
@@ -13612,7 +13612,7 @@ For this achievement, simply avoid using any AoE and kill Auriaya
 step
 Congratulations, you have earned the Crazy Cat Lady (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (10 Player) Achievements\\Knock, Knock, Knock on Wood (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Ulduar Raider (10 Player) Achievements\\Knock, Knock, Knock on Wood (10 player)",{
 condition_end="achieved(3179)",
 description="Defeat Freya while leaving all 3 Elders alive in 10-player mode.",
 },[[
@@ -13645,7 +13645,7 @@ Go directly to Freya and just single target DPS her down
 step
 Congratulations, you have earned the Knock, Knock, Knock on Wood (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (10 Player) Achievements\\Lose Your Illusion (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Ulduar Raider (10 Player) Achievements\\Lose Your Illusion (10 player)",{
 condition_end="achieved(3176)",
 description="Defeat Thorim while Sif is present in 10-player mode.",
 },[[
@@ -13685,7 +13685,7 @@ Kill Thorim
 step
 Congratulations, you have earned the Lose Your Illusion (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (10 Player) Achievements\\I Could Say That This Cache Was Rare (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Ulduar Raider (10 Player) Achievements\\I Could Say That This Cache Was Rare (10 player)",{
 condition_end="achieved(3182)",
 description="Defeat Hodir before he shatters his rare cache in 10-player mode.",
 },[[
@@ -13716,7 +13716,7 @@ Pop all cooldowns that increase your damage and defeat Hodir
 step
 Congratulations, you have earned the I Could Say That This Cache Was Rare (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (10 Player) Achievements\\Firefighter (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Ulduar Raider (10 Player) Achievements\\Firefighter (10 player)",{
 condition_end="achieved(3180)",
 description="Defeat Mimiron after activating his Self-Destruct mechanism in 10-player mode.",
 },[[
@@ -13742,7 +13742,7 @@ Once you've clicked it, wait for his dialogue then kill him
 step
 Congratulations, you have earned the Firefighter (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (10 Player) Achievements\\I Love the Smell of Saronite in the Morning (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Ulduar Raider (10 Player) Achievements\\I Love the Smell of Saronite in the Morning (10 player)",{
 condition_end="achieved(3181)",
 description="Defeat General Vezax after defeating the Saronite Animus in 10-player mode.",
 },[[
@@ -13773,7 +13773,7 @@ Kill the Saronite Animus, then General Vazax
 step
 Congratulations, you have earned the I Love the Smell of Saronite in the Morning (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (10 Player) Achievements\\One Light in the Darkness (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Ulduar Raider (10 Player) Achievements\\One Light in the Darkness (10 player)",{
 condition_end="achieved(3158)",
 description="Defeat Yogg-Saron with the assistance of one or fewer Keepers in 10-player mode.",
 },[[
@@ -13792,7 +13792,7 @@ If you do use a keeper, we would suggest that you speak with Freya.
 step
 Congratulations, you have earned the One Light in the Darkness (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (10 player)\\The Twilight Zone, Gonna Go When the Volcano Blows (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Raider (10 player)\\The Twilight Zone, Gonna Go When the Volcano Blows (10 player)",{
 condition_end="achieved(2051) and achieved(2047)",
 description="With all three Twilight Drakes still alive, engage and defeat Sartharion the Onyx Guardian in 10-player mode.",
 },[[
@@ -13804,7 +13804,7 @@ If he lasts long enough to do Lava Strike, avoid the area he casts it in
 step
 Congratulations, you have earned The Twilight Zone and Gonna Go When the Volcano Blows (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (10 player)\\The Dedicated Few (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Raider (10 player)\\The Dedicated Few (10 player)",{
 condition_end="achieved(578)",
 description="With all three Twilight Drakes still alive, engage and defeat Sartharion the Onyx Guardian in 10-player mode.",
 },[[
@@ -13828,7 +13828,7 @@ Maexxna |acheive 578/14
 step
 Congratulations, you have earned The Dedicated Few (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (10 player)\\Make Quick Werk of Him (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Raider (10 player)\\Make Quick Werk of Him (10 player)",{
 condition_end="achieved(1856)",
 description="Defeat Patchwerk in Naxxramas in 3 minutes or less in 10-player mode.",
 },[[
@@ -13846,7 +13846,7 @@ To earn this achievement, defeat Patchwerk within the 3 mintue mark
 step
 Congratulations, you have earned the Make Quick Werk of Him Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (10 player)\\Subtraction, Shocking!(10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Raider (10 player)\\Subtraction, Shocking!(10 player)",{
 condition_end="achieved(2180) and achieved(2178)",
 description="Defeat Thaddius in Naxxramas with less than 9 players in 10-player mode.",
 },[[
@@ -13873,7 +13873,7 @@ Burn Thaddius as fast as you can to earn the Shocking! achievement
 |achieve 2180 |goto 26.38,14.66
 |achieve 2178 |goto 26.38,14.66
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (10 player)\\Arachnophobia, Momma Said Knock You Out (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Raider (10 player)\\Arachnophobia, Momma Said Knock You Out (10 player)",{
 condition_end="achieved(1858) and achieved(1997)",
 description="Defeat Maexxna in Naxxramas within 20 minutes of Anub'Rekhan's death in 10-player mode.",
 },[[
@@ -13915,7 +13915,7 @@ Simply kill Maexxna within the allotted time
 step
 Congratulations, you have earned the Arachnophobia and Momma Said Knock You Out Achievements!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (10 player)\\Safety Dance(10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Raider (10 player)\\Safety Dance(10 player)",{
 condition_end="achieved(1996)",
 description="Defeat Heigan the Unclean in Naxxramas without anyone in the raid dying in 10 player mode.",
 },[[
@@ -13940,7 +13940,7 @@ For this achievement, simply jump up onto the platform Heigan is standing on and
 step
 Congratulations, you have earned the Saftey Dance (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (10 player)\\Spore Loser(10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Raider (10 player)\\Spore Loser(10 player)",{
 condition_end="achieved(2182)",
 description="Defeat Loatheb in Naxxramas without killing any spores in 10-player mode.",
 },[[
@@ -13973,7 +13973,7 @@ _Avoid using AoE_
 step
 Congratulations, you have earned the Spore Loser (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (10 player)\\And They Would All Go Down Together (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Raider (10 player)\\And They Would All Go Down Together (10 player)",{
 condition_end="achieved(2184)",
 description="Defeat the 4 Horsemen in Naxxramas, ensuring that they all die within 15 seconds of each other in 10-player mode.",
 },[[
@@ -14015,7 +14015,7 @@ Try as best you can to get them together and use powerful AoEs to kill them
 step
 Congratulations, you have earned the And They Would All Go Down Together (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (10 player)\\The Hundred Club (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Raider (10 player)\\The Hundred Club (10 player)",{
 condition_end="achieved(2146)",
 description="Defeat Sapphiron in Naxxramas without any member of the raid having a frost resist value over 100 in 10-player mode.",
 },[[
@@ -14031,7 +14031,7 @@ With the resistance stat being removed, you will earn this achievement no matter
 step
 Congratulations, you have earned the The Hundred Club (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (10 player)\\Just Can't Get Enough (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Raider (10 player)\\Just Can't Get Enough (10 player)",{
 condition_end="achieved(2184)",
 description="Defeat Kel'Thuzad in Naxxramas while killing at least 18 abominations in his chamber in 10 player mode.",
 },[[
@@ -14057,7 +14057,7 @@ That said, _you absolutely NEED ranged dps_ in order to pull the Abominations or
 step
 Congratulations, you have earned the Just Can't Get Enough (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (10 player)\\You Don't Have an Eternity, A Poke in the Eye, Denying the Scion, The Spellweaver's Downfall (10 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Raider (10 player)\\You Don't Have an Eternity, A Poke in the Eye, Denying the Scion, The Spellweaver's Downfall (10 player)",{
 condition_end="achieved(622) and achieved(1869) and achieved(218) and achieved(2148)",
 description="Defeat Malygos in 6 minutes or less in 10-player mode.",
 },[[
@@ -14076,7 +14076,7 @@ _Also, invite a friend and turn the party into a raid with less than 8 people to
 step
 Congratulation, you have earned the You Don't Have an Eternity, A Poke in the Eye, Denying the Scion, The Spellweaver's Downfall(10 player) Achievements!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Dragon Soul Raider\\Don't Stand So Close To Me",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Dragon Soul Raider\\Don't Stand So Close To Me",{
 condition_end="achieved(6174)",
 description="Defeat Morchok in Dragon Soul on Normal or Heroic Difficulty without any two players (three players on 25-player mode) ever being within 5 yards of each other while Morchok is channeling Black Blood of the Earth.",
 },[[
@@ -14089,7 +14089,7 @@ If you kill the boss within a minute, you will be able to earn the achievement b
 step
 Congratulations, you have earned the Don't Stand So Close To Me Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Dragon Soul Raider\\Taste the Rainbow!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Dragon Soul Raider\\Taste the Rainbow!",{
 condition_end="achieved(6129) and achieved(6111)",
 description="Experience the following color combinations, and then defeat Yor'sahj the Unsleeping on Normal or Heroic Difficulty.",
 },[[
@@ -14111,7 +14111,7 @@ Purple and Yellow |achieve 6129/4 |goto Dragon Soul/3 45.29,53.86
 step
 Congratulations, you have earned the Taste the Rainbow! Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Dragon Soul Raider\\Ping Pong Champion",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Dragon Soul Raider\\Ping Pong Champion",{
 condition_end="achieved(6128) and achieved(6110)",
 description="Bounce the Void of the Unmaking 10 times off of players, and then defeat Warlord Zon'ozz on Normal or Heroic Difficulty.",
 },[[
@@ -14133,7 +14133,7 @@ _If it hits the boss, it will disappear and you will have to try again!_
 step
 Congratulations, you have earned the Ping Pong Champ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Dragon Soul Raider\\Heroic: Hagara the Stormbinder",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Dragon Soul Raider\\Heroic: Hagara the Stormbinder",{
 condition_end="achieved(6112) and achieved(6113)",
 description="Defeat Ultraxion in Dragon Soul on Normal or Heroic Difficulty without any raid member being hit by Hour of Twilight more than once.",
 },[[
@@ -14152,7 +14152,7 @@ kill Hagara the Stormbinder##55689
 step
 Congatulations, you have earned the Heroic: Hagara the Stormbinder Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Dragon Soul Raider\\Minutes to Midnight",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Dragon Soul Raider\\Minutes to Midnight",{
 condition_end="achieved(6084)",
 description="Defeat Ultraxion in Dragon Soul on Normal or Heroic Difficulty without any raid member being hit by Hour of Twilight more than once.",
 },[[
@@ -14170,7 +14170,7 @@ You should be able to kill Ultraxion before he even casts one Hour of Twilight
 step
 Congratulations, you have earned the Minutes to Midnight Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Dragon Soul Raider\\Deck Defender",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Dragon Soul Raider\\Deck Defender",{
 condition_end="achieved(6105) and achieved(6114)",
 description="Defeat Warmaster Blackhorn on Normal or Heroic Difficulty without allowing any Twilight Barrages to damage the Skyfire.",
 },[[
@@ -14195,7 +14195,7 @@ When Blackhorn lands on the ship, burn him down as fast as possible
 step
 Congratulations, you have earned the Deck Defender Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Dragon Soul Raider\\Maybe He'll Get Dizzy...",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Dragon Soul Raider\\Maybe He'll Get Dizzy...",{
 condition_end="achieved(6133)",
 description="Defeat the Spine of Deathwing encounter on Normal or Heroic Difficulty after tricking Deathwing into performing the following roll sequence: Left, Right, Left, Right.",
 },[[
@@ -14217,7 +14217,7 @@ Stack corrupted blood as usual, so that the Abberations have 9 counts of Corrupt
 step
 Congratulations, you have earned the Maybe He'll Get Dizzy Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Dragon Soul Raider\\Chromatic Champion",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Dragon Soul Raider\\Chromatic Champion",{
 condition_end="achieved(6180)",
 description="Destroy Deathwing in Dragon Soul on Normal or Heroic Difficulty after beginning the encounter on each Aspect's platform and allowing Deathwing to assault that Aspect:",
 },[[
@@ -14244,7 +14244,7 @@ Once you have done so, kill Deathwing for the acheivement
 step
 Congratulations, you have earned the Chromatic Champion Acheiveemnt!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (25 Player) Achievements\\Boned (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Icecrown Raider (25 Player) Achievements\\Boned (25 player)",{
 condition_end="achieved(4610)",
 description="Defeat Lord Marrowgar without any raid member remaining impaled for more than 8 seconds in 25-player mode.",
 },[[
@@ -14260,7 +14260,7 @@ People who have been hit by that will not be able to be impaled |achieve 4610 |g
 step
 Congratulations, you have earned the Boned (25 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (25 Player) Achievements\\Full House (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Icecrown Raider (25 Player) Achievements\\Full House (25 player)",{
 condition_end="achieved(4611)",
 description="Defeat Lady Deathwhisper with at least five different types of Cultists active at the time of her demise in 25-player mode.",
 },[[
@@ -14279,7 +14279,7 @@ Defeat Lady Deathwhisper while 5 different type of cultists are active |achieve 
 step
 Congratulations, you have earned the Full House (25 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (25 Player) Achievements\\I'm on a Boat (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Icecrown Raider (25 Player) Achievements\\I'm on a Boat (25 player)",{
 condition_end="achieved(4612)",
 description="Claim victory in the Gunship Battle without any raid member visiting the enemy gunship more than twice in 25-player mode.",
 },[[
@@ -14291,7 +14291,7 @@ This achievement is still currently bugged, so as you spam 1 and 2 while in the 
 step
 Congratulations, you have earned the I'm on a Boat (25 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (25 Player) Achievements\\I've Gone and Made a Mess (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Icecrown Raider (25 Player) Achievements\\I've Gone and Made a Mess (25 player)",{
 condition_end="achieved(4613)",
 description="Defeat the Deathbringer before Mark of the Fallen Champion is cast five times in 25-player mode.",
 },[[
@@ -14303,7 +14303,7 @@ Defeat the Deathbringer before Mark of the Fallen Champion is cast three times |
 step
 Congratulations, you have earned the I've Gone and Made a Mess Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (25 Player) Achievements\\Flu Shot Shortage (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Icecrown Raider (25 Player) Achievements\\Flu Shot Shortage (25 player)",{
 condition_end="achieved(4615)",
 description="Defeat Festergut while none of the players in your raid group ever had 3 stacks of Inoculated in 25-player mode.",
 },[[
@@ -14315,7 +14315,7 @@ Defeat Festergut without being Inoculated twice |achieve 4615 |goto Icecrown Cit
 step
 Congratulations, you have earned the Flu Shot Shortage (25 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (25 Player) Achievements\\Dances with Oozes(25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Icecrown Raider (25 Player) Achievements\\Dances with Oozes(25 player)",{
 condition_end="achieved(4614)",
 description="Defeat Rotface without a Big Ooze casting Unstable Ooze Explosion in 25-player mode.",
 },[[
@@ -14328,7 +14328,7 @@ Otherwise, you will have to use all cooldowns available and just burn the boss
 step
 Congratulations, you have earned the achievement Dances with Oozes(25 player)!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (25 Player) Achievements\\Nausea, Heartburn, Indigestion... (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Icecrown Raider (25 Player) Achievements\\Nausea, Heartburn, Indigestion... (25 player)",{
 condition_end="achieved(4616)",
 description="Defeat Professor Putricide without using Regurgitated Ooze on the Abomination in 25-player mode.",
 },[[
@@ -14339,7 +14339,7 @@ To earn this achievement, don't drink any of the Ooze provided for the encounter
 step
 Congratulations, you have earned the Nausea, Heartburn, Indigestion... (25 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (25 Player) Achievements\\The Orb Whisperer (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Icecrown Raider (25 Player) Achievements\\The Orb Whisperer (25 player)",{
 condition_end="achieved(4617)",
 description="Defeat the Blood Council without anyone in the raid taking more than 25,000 spell damage in a single hit in 25-player mode.",
 },[[
@@ -14355,7 +14355,7 @@ Defeat the Blood Council without anyone in the raid taking 25,000 or more in one
 step
 Congratulations, you have earned The Orb Whisperer (25 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (25 Player) Achievements\\Once Bitten, Twice Shy (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Icecrown Raider (25 Player) Achievements\\Once Bitten, Twice Shy (25 player)",{
 condition_end="achieved(4618)",
 description="Defeat Professor Putricide without using Regurgitated Ooze on the Abomination in 25-player mode.",
 },[[
@@ -14370,7 +14370,7 @@ If you are wanting to defeat her without becoming a vampire, you may want to bri
 step
 Congratulations, you have earned the Once Bitten, Twice Shy (25 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (25 Player) Achievements\\Portal Jockey (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Icecrown Raider (25 Player) Achievements\\Portal Jockey (25 player)",{
 condition_end="achieved(4619)",
 description="Enter every portal spawned by Valithria Dreamwalker before healing her to full health in 25-player mode.",
 },[[
@@ -14382,7 +14382,7 @@ Enter every portal spawned during the encounter |achieve 4619 |goto Icecrown Cit
 step
 Congratulations, you have earned the Portal Jockey (25 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (25 Player) Achievements\\All You Can Eat (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Icecrown Raider (25 Player) Achievements\\All You Can Eat (25 player)",{
 condition_end="achieved(4620)",
 description="Defeat Sindragosa in 25-player mode without any member of your raid receiving more than 5 stacks of Mystic Buffet.",
 },[[
@@ -14394,7 +14394,7 @@ Defeat Sindragosa without gaining more than 5 stacks of Mystic Buffet |achieve 4
 step
 Congratulations, you have earned the All You Can Eat (25 Player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (25 Player) Achievements\\Been Waiting a Long Time for This (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Icecrown Raider (25 Player) Achievements\\Been Waiting a Long Time for This (25 player)",{
 condition_end="achieved(4621)",
 description="Allow Necrotic Plague to stack to 30 before defeating the Lich King in 25-player mode.",
 },[[
@@ -14409,7 +14409,7 @@ Defeat the Lich King having allowed a stack of Necrotic Plague to reach 30 |achi
 step
 Congratualtions, you have earned the Been Waiting a Long Time for This (25 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (25 Player) Achievements\\Orbit-uary (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Ulduar Raider (25 Player) Achievements\\Orbit-uary (25 player)",{
 condition_end="achieved(3057)",
 description="Defeat Flame Leviathan with all 4 Orbital Defense Systems active in 25-player mode.",
 },[[
@@ -14431,7 +14431,7 @@ If your vehicle ends up being destroyed, make sure that you never hold still or 
 step
 Congratulations, you have earned the Orbit-uary (25 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (25 Player) Achievements\\Stokin' the Furnace (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Ulduar Raider (25 Player) Achievements\\Stokin' the Furnace (25 player)",{
 condition_end="achieved(2929)",
 description="Defeat Ignis the Furnace Master in 4 minutes in 25-player mode.",
 },[[
@@ -14448,7 +14448,7 @@ This achievement is simple at level cap, simply DPS Ignis down in under 4 minute
 step
 Congratulations, you have earned the Stokin' the Furnace (25 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (25 Player) Achievements\\Iron Dwarf, Medium Rare (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Ulduar Raider (25 Player) Achievements\\Iron Dwarf, Medium Rare (25 player)",{
 condition_end="achieved(2924)",
 description="Defeat 25 Dark Rune Guardian Dwarves with Razorscale's Flame Breath in 25-player mode.",
 },[[
@@ -14470,7 +14470,7 @@ only if not achieved(2924)
 step
 Congratualtions, you have earned the Iron Dwarf, Medium Rare (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (25 Player) Achievements\\Heartbreaker (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Ulduar Raider (25 Player) Achievements\\Heartbreaker (25 player)",{
 condition_end="achieved(3059)",
 description="Defeat XT-002 Deconstructor after destroying his heart in 25-player mode.",
 },[[
@@ -14491,7 +14491,7 @@ Kill the heart, then XT-002
 step
 Congratulations, you have earned the Heartbreaker (25 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (25 Player) Achievements\\I Choose You, Steelbreaker (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Ulduar Raider (25 Player) Achievements\\I Choose You, Steelbreaker (25 player)",{
 condition_end="achieved(2944)",
 description="Defeat the Assembly of Iron with Steelbreaker as the last member alive in 25-player mode.",
 },[[
@@ -14517,7 +14517,7 @@ For this, kill Stormcaller Brundir, then Runemaster Molgeim then finally, Steelb
 step
 Congratulations, you have earned the I Choose You, Steelbreaker (25 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (25 Player) Achievements\\Disarmed (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Ulduar Raider (25 Player) Achievements\\Disarmed (25 player)",{
 condition_end="achieved(2954)",
 description="Destroy both of Kologarn's arms and then Kologarn himself within 12 seconds in 25-player mode.",
 },[[
@@ -14545,7 +14545,7 @@ Finish the boss off immidiately after
 step
 Congratulations, you have earned the Disarmed (25 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (25 Player) Achievements\\Crazy Cat Lady (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Ulduar Raider (25 Player) Achievements\\Crazy Cat Lady (25 player)",{
 condition_end="achieved(3007)",
 description="Defeat Auriaya without destroying her Sanctum Sentries in 25-player mode.",
 },[[
@@ -14573,7 +14573,7 @@ For this achievement, simply avoid using any AoE and kill Auriaya
 step
 Congratulations, you have earned the Crazy Cat Lady (25 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (25 Player) Achievements\\Knock, Knock, Knock on Wood (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Ulduar Raider (25 Player) Achievements\\Knock, Knock, Knock on Wood (25 player)",{
 condition_end="achieved(3187)",
 description="Defeat Freya while leaving all 3 Elders alive in 25 player mode.",
 },[[
@@ -14606,7 +14606,7 @@ Go directly to Freya and just single target DPS her down
 step
 Congratulations, you have earned the Knock, Knock, Knock on Wood (25 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (25 Player) Achievements\\Lose Your Illusion (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Ulduar Raider (25 Player) Achievements\\Lose Your Illusion (25 player)",{
 condition_end="achieved(3183)",
 description="Defeat Thorim while Sif is present in 25-player mode.",
 },[[
@@ -14646,7 +14646,7 @@ Kill Thorim
 step
 Congratulations, you have earned the Lose Your Illusion (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (25 Player) Achievements\\I Could Say That This Cache Was Rare (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Ulduar Raider (25 Player) Achievements\\I Could Say That This Cache Was Rare (25 player)",{
 condition_end="achieved(3184)",
 description="Defeat Hodir before he shatters his rare cache in 25 player mode.",
 },[[
@@ -14677,7 +14677,7 @@ Pop all cooldowns that increase your damage and defeat Hodir
 step
 Congratulations, you have earned the I Could Say That This Cache Was Rare (25 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (25 Player) Achievements\\Firefighter (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Ulduar Raider (25 Player) Achievements\\Firefighter (25 player)",{
 condition_end="achieved(3189)",
 description="Defeat Mimiron after activating his Self-Destruct mechanism in 25-player mode.",
 },[[
@@ -14703,7 +14703,7 @@ Once you've clicked it, wait for his dialogue then kill him
 step
 Congratulations, you have earned the Firefighter (25 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (25 Player) Achievements\\I Love the Smell of Saronite in the Morning (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Ulduar Raider (25 Player) Achievements\\I Love the Smell of Saronite in the Morning (25 player)",{
 condition_end="achieved(3188)",
 description="Defeat General Vezax after defeating the Saronite Animus in 25 player mode.",
 },[[
@@ -14734,7 +14734,7 @@ Kill the Saronite Animus, then General Vazax
 step
 Congratulations, you have earned the I Love the Smell of Saronite in the Morning (25 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (25 Player) Achievements\\One Light in the Darkness (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Ulduar Raider (25 Player) Achievements\\One Light in the Darkness (25 player)",{
 condition_end="achieved(3163)",
 description="Defeat Yogg-Saron with the assistance of one or fewer Keepers in 25-player mode.",
 },[[
@@ -14753,7 +14753,7 @@ If you do use a keeper, we would suggest that you speak with Freya.
 step
 Congratulations, you have earned the One Light in the Darkness (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (25 player)\\The Twilight Zone, Gonna Go When the Volcano Blows (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Raider (25 player)\\The Twilight Zone, Gonna Go When the Volcano Blows (25 player)",{
 condition_end="achieved(2051) and achieved(2047)",
 description="With all three Twilight Drakes still alive, engage and defeat Sartharion the Onyx Guardian in 10-player mode.",
 },[[
@@ -14765,7 +14765,7 @@ If he lasts long enough to do Lava Strike, avoid the area he casts it in
 step
 Congratulations, you have earned The Twilight Zone and Gonna Go When the Volcano Blows (25 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (25 player)\\The Dedicated Few (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Raider (25 player)\\The Dedicated Few (25 player)",{
 condition_end="achieved(579)",
 description="Defeat the bosses of Naxxramas with less than 21 people in the zone in 25-player mode.",
 },[[
@@ -14789,7 +14789,7 @@ Maexxna |acheive 579/14
 step
 Congratulations, you have earned The Dedicated Few (25 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (25 player)\\Make Quick Werk of Him (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Raider (25 player)\\Make Quick Werk of Him (25 player)",{
 condition_end="achieved(1857)",
 description="Defeat Patchwerk in Naxxramas in 3 minutes or less in 25-player mode.",
 },[[
@@ -14807,7 +14807,7 @@ To earn this achievement, defeat Patchwerk within the 3 mintue mark
 step
 Congratulations, you have earned the Make Quick Werk of Him Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (25 player)\\Subtraction, Shocking!(25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Raider (25 player)\\Subtraction, Shocking!(25 player)",{
 condition_end="achieved(2181) and achieved(2179)",
 description="Defeat Thaddius in Naxxramas with less than 21 players in 25-player mode.",
 },[[
@@ -14834,7 +14834,7 @@ Burn Thaddius as fast as you can to earn the Shocking! achievement
 |achieve 2181 |goto 26.38,14.66
 |achieve 2179 |goto 26.38,14.66
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (25 player)\\Arachnophobia, Momma Said Knock You Out (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Raider (25 player)\\Arachnophobia, Momma Said Knock You Out (25 player)",{
 condition_end="achieved(1859) and achieved(2140)",
 description="Defeat Maexxna in Naxxramas within 20 minutes of Anub'Rekhan's death in 25-player mode.",
 },[[
@@ -14876,7 +14876,7 @@ Simply kill Maexxna within the allotted time
 step
 Congratulations, you have earned the Arachnophobia and Momma Said Knock You Out Achievements!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (25 player)\\Safety Dance(25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Raider (25 player)\\Safety Dance(25 player)",{
 condition_end="achieved(2139)",
 description="Defeat Heigan the Unclean in Naxxramas without anyone in the raid dying in 25 player mode.",
 },[[
@@ -14901,7 +14901,7 @@ For this achievement, simply jump up onto the platform Heigan is standing on and
 step
 Congratulations, you have earned the Safety Dance (25 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (25 player)\\Spore Loser (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Raider (25 player)\\Spore Loser (25 player)",{
 condition_end="achieved(2183)",
 description="Defeat Loatheb in Naxxramas without killing any spores in 25-player mode.",
 },[[
@@ -14934,7 +14934,7 @@ _Avoid using AoE_
 step
 Congratulations, you have earned the Spore Loser (25 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (25 player)\\And They Would All Go Down Together (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Raider (25 player)\\And They Would All Go Down Together (25 player)",{
 condition_end="achieved(2177)",
 description="Defeat the 4 Horsemen in Naxxramas, ensuring that they all die within 15 seconds of each other in 25-player mode.",
 },[[
@@ -14976,7 +14976,7 @@ Try as best you can to get them together and use powerful AoEs to kill them
 step
 Congratulations, you have earned the And They Would All Go Down Together (25 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (25 player)\\The Hundred Club (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Raider (25 player)\\The Hundred Club (25 player)",{
 condition_end="achieved(2147)",
 description="Defeat Sapphiron in Naxxramas without any member of the raid having a frost resist value over 100 in 25-player mode.",
 },[[
@@ -14992,7 +14992,7 @@ With the resistance stat being removed, you will earn this achievement no matter
 step
 Congratulations, you have earned the The Hundred Club (25 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (25 player)\\Just Can't Get Enough (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Raider (25 player)\\Just Can't Get Enough (25 player)",{
 condition_end="achieved(2185)",
 description="Defeat Kel'Thuzad in Naxxramas while killing at least 18 abominations in his chamber in 25 player mode.",
 },[[
@@ -15018,7 +15018,7 @@ That said, _you absolutely NEED ranged dps_ in order to pull the Abominations or
 step
 Congratulations, you have earned the Just Can't Get Enough (10 player) Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (25 player)\\You Don't Have an Eternity, A Poke in the Eye, Denying the Scion, The Spellweaver's Downfall (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Raider (25 player)\\You Don't Have an Eternity, A Poke in the Eye, Denying the Scion, The Spellweaver's Downfall (25 player)",{
 condition_end="achieved(1394) and achieved(1870) and achieved(623) and achieved(1875)",
 description="Defeat Malygos in 6 minutes or less in 25-player mode.",
 },[[
@@ -15037,7 +15037,7 @@ _Also, invite a friend and turn the party into a raid with less than 8 people to
 step
 Congratulation, you have earned the You Don't Have an Eternity, A Poke in the Eye, Denying the Scion, The Spellweaver's Downfall(10 player) Achievements!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (25 player)\\The Twilight Zone, Gonna Go When the Volcano Blows (25 player)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeons & Raids\\Glory of the Raider (25 player)\\The Twilight Zone, Gonna Go When the Volcano Blows (25 player)",{
 condition_end="achieved(2054) and achieved(2047)",
 description="With all three Twilight Drakes still alive, engage and defeat Sartharion the Onyx Guardian in 10-player mode.",
 },[[

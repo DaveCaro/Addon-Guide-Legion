@@ -271,7 +271,7 @@ startlevel=110.0,
 keywords={"bloodfang","widow","ground","mount"},
 condition_end="hasmount(213115)",
 model={2891},
-description="This guide will help you acquire the Arcadian War Turtle Mount.",
+description="This guide will help you acquire the Bloodfang Widow Mount.",
 },[[
 step
 To aqcuire this mount, you will need _2,000,000 gold_
@@ -286,7 +286,7 @@ Congratulations, you have learned the Bloodfang Widow Mount!
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Fathom Dweller",{
 author="support@zygorguides.com",
 startlevel=110.0,
-keywords={"bloodfang","widow","ground","mount"},
+keywords={"fathom","dweller","ground","mount"},
 condition_end="hasmount(223018)",
 model={2891},
 description="This guide will help you acquire the Fathom Dweller Mount.",
@@ -432,10 +432,10 @@ Learn the Fathom Dweller Mount |learnpet 223018
 step
 Congratulations, you have learned the Fathom Dweller Mount!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Long-Forgotten Hippogryphr",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Long-Forgotten Hippogryph",{
 author="support@zygorguides.com",
 startlevel=110.0,
-keywords={"bloodfang","widow","ground","mount"},
+keywords={"long","forgotten","ground","hippogryph","mount"},
 condition_end="hasmount(215159)",
 model={2891},
 description="This guide will help you acquire the Long-Forgotten Hippogryph Mount.",

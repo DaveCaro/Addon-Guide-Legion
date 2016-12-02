@@ -1264,6 +1264,44 @@ step
 kill Normantis the Deposed##90217 |q 43612/1 |goto 49.49,8.77
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41703
+Follow the path up |goto Highmountain/0 49.88,63.56 < 25 |only if walking
+Follow the path |goto 51.42,62.93 < 25 |only if walking
+Enter the cave |goto 52.34,58.55 < 15 |only if walking
+accept DANGER: Ormagrogg##41703 |goto 52.67,58.31
+|tip You will accept this quest automatically.
+step
+kill Ormagrogg##104524 |q 41703/1 |goto 52.67,58.31
+|next "Court_Of_Farondis_WQ"
+step
+label quest-43613
+Follow the path |goto Azsuna/0 56.87,57.19 < 30 |only if walking
+Follow the path |goto 58.45,51.48 < 30 |only if walking
+Follow the path |goto 61.39,50.85 < 30 |only if walking
+Follow the path |goto 64.11,50.92 < 30 |only if walking
+Follow the path up |goto 65.63,51.24 < 20 |only if walking
+Follow the path |goto 66.86,52.05 < 15 |only if walking
+accept WANTED: Syphonus##43613 |goto Azsuna/0 49.49,8.77
+|tip You will accept this quest automatically.
+step
+kill Syphonus##90505 |q 43613/1 |goto 67.16,51.64
+|tip Inside the building.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-43429
+Follow the path |goto Azsuna/0 56.87,57.19 < 30 |only if walking
+Follow the path |goto 58.45,51.48 < 30 |only if walking
+Follow the path |goto 61.39,50.85 < 30 |only if walking
+Follow the path |goto 64.11,50.92 < 30 |only if walking
+Follow the path up |goto 65.63,51.24 < 20 |only if walking
+Follow the path |goto 66.86,52.05 < 15 |only if walking
+accept WANTED: Syphonus##43429 |goto Azsuna/0 49.49,8.77
+|tip You will accept this quest automatically.
+step
+kill Syphonus##90505 |q 43429/1 |goto 67.16,51.64
+|tip Inside the building.
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42633
 Cross the crater |goto Azsuna/0 42.04,44.41 < 30 |only if walking
 Follow the path |goto 40.20,45.32 < 30 |only if walking
@@ -6726,6 +6764,14 @@ accept Fight Night: Rats!##41886 |goto Dalaran L/10 29.31,29.24
 step
 click Splint Jr.##105241
 Defeat Splint Jr. |q 41886/1 |goto Dalaran L/10 28.28,24.04
+|next "Court_Of_Farondis_WQ"
+step
+label quest-40298
+accept Fight Night: Sir Galveston##40298 |goto Dalaran L/10 29.31,29.24
+|tip You will accept this quest automatically.
+step
+click Sir Galveston##99182
+Defeat Sir Galveston |q 40298/1 |goto 28.28,24.04
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42062

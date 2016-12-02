@@ -11,7 +11,7 @@
 ## X-eMail: zygor@zygorguides.com
 ## X-Website: http://zygorguides.com/
 ## X-License: GPL
-## Version: 5.0
+## Version: 6.0
 
 Libs\Libs.xml
 

@@ -11937,6 +11937,9 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Karazhan Raid.",
 },[[
 step
+Enter Karazhan |goto Deadwind Pass/0 46.97,74.91 < 5
+confirm
+step
 map Karazhan/1
 path loop off
 path	50.0,72.3	49.1,84.9	42.3,86.2
@@ -12254,6 +12257,9 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Sunwell Plateau Raid.",
 },[[
 step
+Enter Sunwell Plateau |goto Isle of Quel'Danas/0 44.26,45.56 < 5
+confirm
+step
 map Sunwell Plateau/1
 path loop off
 path	33.9,43.3	36.6,51.5	33.7,58.3
@@ -12447,6 +12453,12 @@ Follow the Custodian of Time as she travels around the Cavern. |q 10277/1 |goto 
 |modelnpc Custodian of Time##20129
 |only if havequest(10277)
 step
+Enter Hyjal Summit |goto Tanaris/18 35.90,15.68 < 5
+confirm
+step
+Enter the first portal on the left
+confirm
+step
 talk Lady Jaina Proudmoore##17772 |goto Hyjal Summit 10.5,63.8
 Tell her "My companions and I are with you."
 |tip This will start the first boss fight, so make sure you are ready.
@@ -12619,6 +12631,9 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Gruul's Lair Raid.",
 },[[
 step
+Enter Gruul's Lair |goto Blade's Edge Mountains/0 69.29,23.75 < 5
+confirm
+step
 kill High King Maulgar##18831 |goto Gruul's Lair 55,57
 |tip Arcing Smash deals damage to the target and any raid members near the target. It hits as a cleave, so make sure the tank is the only one in front of Maulgar when this happens.
 |tip Berserker Charge causes Maulgar to charge his current target, an additional 300 damage and knocking them back.
@@ -12659,6 +12674,9 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Magtheridon's Lair Raid.",
 },[[
 step
+Enter Magtheridon's Lair |goto Hellfire Peninsula/0 47.49,52.10 < 5
+confirm
+step
 map Magtheridon's Lair
 path loop off
 path	68.4,25.6	68.6,48.0	63.6,59.3
@@ -12678,12 +12696,12 @@ confirm
 step
 You may have looted a quest item from Magtheridon.
 Click Magtheridon's Head in your bags |use Magtheridon's Head##32385
-accept The Fall of Magtheridon##11003
-only if not completedq(11003)
+accept The Fall of Magtheridon##11002
+only if not completedq(11002)
 step
 talk Nazgrel##3230
-turnin The Fall of Magtheridon##11003 |goto Hellfire Peninsula 55.0,36.0
-only if not completedq(11003)
+turnin The Fall of Magtheridon##11002 |goto Hellfire Peninsula 55.0,36.0
+only if not completedq(11002)
 step
 Congratulations, you have finished the Magtheridon's Lair raid guide!
 ]])
@@ -12692,6 +12710,9 @@ mapid=780,
 author="support@zygorguides.com",
 description="This guide will walk you through the Serpentshrine Cavern Raid.",
 },[[
+step
+Enter the Serpentshrine Cavern |indoors Coilfang Reservoir |goto Zangarmarsh/0 51.90,32.99 < 5
+confirm
 step
 Take the elevator down |goto Serpentshrine Cavern 13.5,58.9 <5 |c
 step
@@ -12838,6 +12859,9 @@ author="support@zygorguides.com",
 description="This guide will walk you through The Eye Raid.",
 },[[
 step
+Enter The Eye |goto Netherstorm/0 73.65,63.73
+confirm
+step
 map Tempest Keep
 path loop off
 path	50.0,87.6	50.1,75.6	50.1,65.5
@@ -12939,6 +12963,9 @@ mapid=796,
 author="support@zygorguides.com",
 description="This guide will walk you through the Black Temple Raid.",
 },[[
+step
+Enter Black Temple |goto Shadowmoon Valley/0 71.03,46.36 < 5
+confirm
 step
 map Black Temple/2
 path loop off; dist 15
@@ -13170,6 +13197,10 @@ mapid=535,
 author="support@zygorguides.com",
 description="This guide will walk you through the Naxxramas Raid.",
 },[[
+step
+Enter Naxxramas |goto Dragonblight/0 87.41,51.10 < 5
+|tip The entrance is in the building up in the air.
+confirm
 step
 This raid has 5 different sections. You can start at any of them.
 Click here to start in the Arachnid Quarter |next "arachnidstart" |confirm
@@ -13981,6 +14012,9 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Eye of Eternity Raid.",
 },[[
 step
+Enter The Eye of Eternity |goto Borean Tundra/0 27.59,26.56 < 5
+confirm
+step
 Click the Focusing Iris to start the fight. |goto The Eye of Eternity/1 37.7,50.7
 |confirm
 step
@@ -14056,6 +14090,9 @@ mapid=529,
 author="support@zygorguides.com",
 description="This guide will walk you through the Ulduar Raid.",
 },[[
+step
+Enter Ulduar |goto The Storm Peaks/0 41.55,17.96 < 5
+confirm
 step
 talk Brann Bronzebeard##33579 |goto Ulduar/1 49.9,86.0
 Tell him "We're ready. Begin the assault!"
@@ -14746,6 +14783,9 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Trial of the Crusader Raid.",
 },[[
 step
+Enter Trial of the Crusader |goto Icecrown/0 75.10,21.82 < 5
+confirm
+step
 talk Barrett Ramsey##34816 |goto Trial of the Crusader/1 64.8,54.1
 Tell him "Yes. We are prepared for the challenges ahead of us."
 This will start the first boss fight, make sure you are ready.
@@ -15013,6 +15053,9 @@ mapid=543,
 author="support@zygorguides.com",
 description="This guide will walk you through the Trial of the Grand Crusader Raid.",
 },[[
+step
+Enter Trial of the Grand Crusader |goto Icecrown/0 75.10,21.82 < 5
+confirm
 step
 The major difference between this raid and the Trial of the Crusader is the Argent Crusade Tribute Chest.
 All boss encounters in this raid are in Heroic Mode and the raid is given 50 attempts to complete it.
@@ -15290,12 +15333,15 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Icecrown Citadel Raid.",
 },[[
 step
+Enter Icecrown Citadel |goto Icecrown/0 53.79,87.04 < 5
+confirm
+step
 map Icecrown Citadel/1
 path loop off
 path	38.9,29.2	38.9,36.3	39.0,52.4
 Follow the path, clearing trash as you make your way to the first boss, Lord Marrowgar. |goto 39.0,52.4 <5 |noway |c
 step
-_Lord Marrowgar man_ |goto Icecrown Citadel 38.9,59.8
+_Lord Marrowgar_ |goto Icecrown Citadel 38.9,59.8
 Click here for 10 man abilities. |next "marr10" |confirm
 Click here for 25 man abilities. |next "marr25" |confirm
 step
@@ -15898,6 +15944,9 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Blackwing Descent Raid.",
 },[[
 step
+Enter Blackwing Descent |goto Burning Steppes/0 23.17,26.40 < 5
+confirm
+step
 map Blackwing Descent/1
 path loop off
 path	42.6,59.9	36.1,59.7	31.5,56.9
@@ -16064,6 +16113,9 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Bastion of Twilight Raid.",
 },[[
 step
+Enter The Bastion of Twilight |goto Twilight Highlands/0 34.01,77.88 < 5
+confirm
+step
 map The Bastion of Twilight/1
 path loop off
 path	39.6,42.7	39.6,19.8	46.6,19.4
@@ -16215,6 +16267,9 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Firelands Raid.",
 },[[
 step
+Enter Firelands |goto Mount Hyjal/0 47.58,77.90 < 5
+confirm
+step
 map Firelands/1
 path loop off
 path	33.2,77.0	41.7,70.4	32.9,52.8
@@ -16350,6 +16405,10 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Throne of the Four Winds Raid.",
 },[[
 step
+Enter Throne of the Four Winds |goto Uldum/0 38.45,80.57 < 5
+|tip The entrance to this raid is located on a platform high in the air.
+confirm
+step
 _Conclave of Wind_ |goto Throne of the Four Winds/1 47.5,26
 _Anshal_
 _Soothing Winds_ summons a green circle on a random player. This heals all players inside it for 20,000 health every second, but also silencing and pacifying them.
@@ -16412,6 +16471,9 @@ mapid=824,
 author="support@zygorguides.com",
 description="This guide will walk you through the Dragon Soul Raid.",
 },[[
+step
+Enter Dragon Soul |goto Tanaris/18 61.97,26.96 < 5
+confirm
 step
 _Morchok_ |goto Dragon Soul/1 50.6,69.6
 _Phase 1_
@@ -16530,10 +16592,13 @@ confirm
 step
 Congratulations, you have finished the _Dragon Soul_ raid guide!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Raids\\Pandaria (LFR)\\Guardians of Mogu'shan (LFR)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Raids\\Pandaria\\Mogu'shan Vaults",{
 author="support@zygorguides.com",
-description="This guide will walk you through the Guardians of Mogu'shan Raid.",
+description="This guide will walk you through the Mogu'shan Vaults Raid.",
 },[[
+step
+Enter Mogu'shan Vaults |goto Kun-Lai Summit/0 59.61,39.17 < 5
+confirm
 step
 map Mogu'shan Vaults/1
 path loop off
@@ -16591,22 +16656,15 @@ _Voodoo Doll_ damage received is duplicated to all other Voodoo Dolls.
 |modelnpc Gara'jal the Spiritbinder##60143
 |confirm
 step
-Congratulations, you have finished this section of the Mogu'shan Vaults raid!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Raids\\Pandaria (LFR)\\The Vault of Mysteries (LFR)",{
-author="support@zygorguides.com",
-description="This guide will walk you through the Vault of Mysteries Raid.",
-},[[
-step
 map Mogu'shan Vaults/2
 path loop off
 path	45.3,34.5	33.8,29.9	33.9,43.0
-Follow the path as you make your way towards the first boss. |goto 33.9,43.0 <5 |noway |c
+Follow the path as you make your way towards the next boss. |goto 33.9,43.0 <5 |noway |c
 step
 map Mogu'shan Vaults/2
 path loop off
 path 31.7,69.3	24.2,66.5
-Follow this path, clearing trash to the first boss, the Spirit Kings. |goto 24.2,66.5 <5 |noway |c
+Follow this path, clearing trash to the next boss, the Spirit Kings. |goto 24.2,66.5 <5 |noway |c
 step
 _The Spirit Kings_ |goto 18.3,52.0
 _Qiang the Merciless_
@@ -16635,12 +16693,12 @@ _Shield of Darkness_ is only used in Heroic mode. Any damage dealt to Zian will 
 |modelnpc Zian of the Endless Shadow##6070
 |confirm
 step
-map Mogu'shan Vaults/3
+map Mogu'shan Vaults/2
 path loop off
-path	Mogu'shan Vaults/2 24.7,69.6	Mogu'shan Vaults/2 33.3,69.7	Mogu'shan Vaults/2 27.1,51.6
-path	61.0,12.4	62.0,21.7	68.7,26.8
-path	66.0,41.4	57.7,41.4	49.2,43.6
-path	44.5,51.3	30.0,51.3
+path	24.7,69.6	33.3,69.7	27.1,51.6
+path	Mogu'shan Vaults/3 61.0,12.4	Mogu'shan Vaults/3 62.0,21.7	Mogu'shan Vaults/3 68.7,26.8
+path	Mogu'shan Vaults/3 66.0,41.4	Mogu'shan Vaults/3 57.7,41.4	Mogu'shan Vaults/3 49.2,43.6
+path	Mogu'shan Vaults/3 44.5,51.3	Mogu'shan Vaults/3 30.0,51.3
 Follow the path, clearing trash as you make your way to the next boss, Elegon. |goto 30.0,51.3 <5 |noway |c
 step
 _Elegon_ |goto Mogu'shan Vaults/3 22.7,51.7
@@ -16668,13 +16726,14 @@ Stomp_ inflicts 150,000 Physical damage and stuns nearby enemies for 2 seconds.
 |modelnpc Qin-xi##60399
 |modelnpc Jan-xi##60400
 |confirm
-step
-Congratulations, you have finished this section of the Mogu'shan Vault raid!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Raids\\Pandaria (LFR)\\The Dread Approach (LFR)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Raids\\Pandaria\\Heart of Fear",{
 author="support@zygorguides.com",
-description="This guide will walk you through the Dread Approach Raid.",
+description="This guide will walk you through the Heart of Fear Raid.",
 },[[
+step
+Enter Heart of Fear |goto Dread Wastes/0 38.95,34.99 < 5
+confirm
 step
 map Heart of Fear/1
 path loop off
@@ -16731,17 +16790,10 @@ _Enrage_ occurs after 7 minutes of combat. It will greatly increase his attack s
 |modelnpc Garalon##63191
 |confirm
 step
-Congratulations, you have finished this section of the Heart of Fear raid!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Raids\\Pandaria (LFR)\\Nightmare of Shek'zeer (LFR)",{
-author="support@zygorguides.com",
-description="This guide will walk you through the Nightmare of Shek'zeer Raid.",
-},[[
-step
 map Heart of Fear/2
 path loop off
 path	68.3,26.3	69.2,37.8	66.8,38.0
-Follow the path to the first boss, Wind Lord Mel'jarak. |goto 66.8,38.0 <5 |noway |c
+Follow the path to the next boss, Wind Lord Mel'jarak. |goto 66.8,38.0 <5 |noway |c
 step
 3 different types of adds spawn throughout this fight.
 _Priests:_ heal and buff their damage.
@@ -16786,14 +16838,15 @@ _Consuming Terror_ inflicts 200,000 Shadow damage and Fears players in a _cone_ 
 After 150 seconds the boss will disappear and summon a group of adds. These are usually tanked apart so they don't increase each others' damage.
 |modelnpc Grand Empress Shek'zeer##62837
 |confirm
-step
-Congratulations, you have finished this section of the Heart of Fear raid!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Raids\\Pandaria (LFR)\\Terrace of Endless Spring (LFR)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Raids\\Pandaria\\Terrace of Endless Spring",{
 mapid=886,
 author="support@zygorguides.com",
 description="This guide will walk you through the Terrace of Endless Spring Raid.",
 },[[
+step
+Enter Terrace of Endless Spring |goto The Veiled Stair/0 48.46,61.43 < 5
+confirm
 step
 map Terrace of Endless Spring
 path loop off
@@ -16852,10 +16905,13 @@ _Fearless_ is a buff applied to players killing the corrupted guardian in one of
 step
 Congratulations, you have finished the Terrace of Endless Spring raid!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Raids\\Pandaria (LFR)\\Last Stand of the Zandalari (LFR)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Raids\\Pandaria\\Throne of Thunder",{
 author="support@zygorguides.com",
-description="This guide will walk you through the Last Stand of the Zandalari Raid.",
+description="This guide will walk you through the Throne of Thunder Raid.",
 },[[
+step
+Enter Throne of Thunder |goto Isle of Thunder/0 63.61,32.44 < 5
+confirm
 step
 map Throne of Thunder/1
 path loop off
@@ -16921,13 +16977,6 @@ _Twisted Fate_ links 2 players' souls together, dealing 250,000 Shadow damage ev
 |modelnpc High Priestess Mar'li##69132
 |confirm
 step
-Congratulations, you have finished this section of the Throne of Thunder raid!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Raids\\Pandaria (LFR)\\Forgotten Depths (LFR)",{
-author="support@zygorguides.com",
-description="This guide will walk you through the Forgotten Depths Raid.",
-},[[
-step
 map Throne of Thunder/3
 path loop off
 path	20.3,82.0	24.6,82.5
@@ -16944,10 +16993,12 @@ step
 map Throne of Thunder/3
 path loop off
 path	32.8,80.9	33.1,72.3	33.7,62.5
-path	41.7,58.7	38.3,48.6	41.0,38.9
+path	41.7,58.7	38.3,48.6	31.8,45.2
 path	43.3,16.9	52.5,40.0	58.9,50.5
-path	63.4,57.5	69.6,48.8	70.2,37.7
+path	55.2,71.0	63.4,57.5	69.6,48.8
+path	70.2,37.7
 Follow the path, clearing trash as you make your way to the next boss, Magaera. |goto 70.2,37.7 <5 |noway |c
+|tip You must click the 3 gongs along this path to summon Magaera.
 step
 _Magaera_ |goto 72.1,25.3
 The only way to damage Magaera is to kill the Flaming, Frozen, and Venemous Heads that spawn.
@@ -16967,14 +17018,14 @@ _Megaera's Rage_ occurs if no player is within melee range. It deals 250,000 Nat
 |modelnpc Venemous Head##70247
 |confirm
 step
-map Throne of Thunder/4
+map Throne of Thunder/3
 path loop off
-path	Throne of Thunder/3 66.8,39.2	Throne of Thunder/3 66.4,43.4	Throne of Thunder/3 72.7,53.1
-path	22.0,35.3	15.6,55.5	23.5,64.4
-path	31.6,65.8	40.4,74.6	42.8,76.6
-path	43.4,84.5	54.3,90.0	65.9,86.1
-path	72.0,81.5	74.9,67.3	62.7,57.5
-path	53.8,52.0
+path	66.8,39.2	66.4,43.4	72.7,53.1
+path	Throne of Thunder/4 22.0,35.3	Throne of Thunder/4 15.6,55.5	Throne of Thunder/4 23.5,64.4
+path	Throne of Thunder/4 31.6,65.8	Throne of Thunder/4 40.4,74.6	Throne of Thunder/4 42.8,76.6
+path	Throne of Thunder/4 43.4,84.5	Throne of Thunder/4 54.3,90.0	Throne of Thunder/4 65.9,86.1
+path	Throne of Thunder/4 72.0,81.5	Throne of Thunder/4 74.9,67.3	Throne of Thunder/4 62.7,57.5
+path	Throne of Thunder/4 53.8,52.0
 Follow the path, clearing trash as you make your way to the final boss, Ji-Kun. |goto 53.8,52.0 <5 |noway |c
 step
 _Ji-Kun_ |goto 49.7,41.6
@@ -16985,13 +17036,6 @@ _Infected Talons_ DoT that inflicts 30,000 Nature damage every 3 seconds.
 _Quils_ deals 65,000 damage every second to all players.
 |modelnpc Ji-Kun##69712
 |confirm
-step
-Congratulations, you have finished this section of the Throne of Thunder raid!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Raids\\Pandaria (LFR)\\Halls of Flesh-Shaping (LFR)",{
-author="support@zygorguides.com",
-description="This guide will walk you through the Halls of Flesh-Shaping Raid.",
-},[[
 step
 map Throne of Thunder/5
 path loop off
@@ -17046,13 +17090,6 @@ _Interrupting Jolt_ deals 400,000 Nature damage and inerrupts the raid's spellca
 |modelnpc Dark Animus##69427
 |confirm
 step
-Congratulations, you have finished this section of the Throne of Thunder raid!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Raids\\Pandaria (LFR)\\Pinnacle of Storms (LFR)",{
-author="support@zygorguides.com",
-description="This guide will walk you through the Pinnacle of Storms Raid.",
-},[[
-step
 map Throne of Thunder/5
 path loop off
 path	35.1,43.1	33.3,38.9	33.5,32.5
@@ -17105,8 +17142,6 @@ _Decapitate_ usually affects the tank, dealing up to 3,000,000 damage. The damag
 _Thunderstruck_ is an AoE that deals 1,000,000 damage to all players in the targeted area. Damage dealt is decreased the further away the area is from Lei Shen.
 |modelnpc Lei Shen##68397
 |confirm
-step
-Congratulations, you have finished this section of the Throne of Thunder raid!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Raids\\Pandaria (LFR)\\Vale of Eternal Sorrows (LFR)",{
 author="support@zygorguides.com",

@@ -27086,4 +27086,5 @@ ZygorGuidesViewer_L("NPCs", "enUS", function() return {
 [114841]="Lady Liadrin|",
 [115271]="Ancient Shieldguard|",
 [115039]="Archmage Khadgar|",
+[112967]="Valewalker Farodin|",
 } end)

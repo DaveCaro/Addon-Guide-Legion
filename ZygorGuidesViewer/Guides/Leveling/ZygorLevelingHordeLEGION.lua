@@ -15789,8 +15789,8 @@ step
 talk First Arcanist Thalyssra##114908
 accept A Better Future##41916 |goto 41.60,51.65
 step
-talk Tyrande Whisperwind##114838
-accept Down to Business##43810 |goto 41.63,51.48
+talk Lady Liadrin##114841
+accept Down to Business##43812 |goto 40.60,53.00
 step
 talk Vereesa Windrunner##114963
 accept Taking a Promenade##44831 |goto 41.70,51.54
@@ -15865,8 +15865,8 @@ Follow the path |goto 42.39,53.87 < 20 |only if walking
 talk First Arcanist Thalyssra##114908
 turnin A Better Future##41916 |goto 41.60,51.65
 step
-talk Tyrande Whisperwind##114838
-turnin Down to Business##43810 |goto 41.64,51.48
+talk Lady Liadrin##114841
+turnin Down to Business##43812 |goto 40.50,53.07
 step
 talk Vereesa Windrunner##114963
 turnin Taking a Promenade##44831 |goto 41.70,51.54
@@ -15898,7 +15898,7 @@ Cure a Suramar Refugee |q 45265/1 |goto 37.49,47.44 |region suramar_shalaran
 step
 talk First Arcanist Thalyssra##115736
 turnin Feeding the Rebellion##45265 |goto 36.50,46.72 |region suramar_shalaran
-accept Tyrande's Command##44743 |goto 36.50,46.72 |region suramar_shalaran
+accept Liadrin's Command##44859 |goto 36.50,46.72 |region suramar_shalaran
 accept Mouths to Feed##44870 |goto 36.50,46.72 |region suramar_shalaran
 step
 talk Arcanist Valtrois##115371
@@ -15982,28 +15982,28 @@ Follow the path |goto 37.40,49.54 < 20 |only if walking
 talk Absolon##101848
 accept Noressa##45056 |goto 39.52,51.17
 step
-talk Tyrande Whisperwind##114838
-turnin Tyrande's Command##44743 |goto 41.63,51.47
-accept Trolling Them##44858 |goto 41.63,51.47
+talk Lady Liadrin##114841
+turnin Liadrin's Command##44859 |goto 40.50,53.07
+accept Trolling Them##44860 |goto 40.50,53.07
 step
 talk Archmage Khadgar##114909
 accept Something's Not Quite Right...##44928 |goto 41.65,51.62
 stickystart "Discover_Shaldorei_Infiltrators"
 step
 click "Your Ancestors"
-Remove the Insult |q 44858/1 |count 1 |goto 42.59,51.33
+Remove the Insult |q 44860/1 |count 1 |goto 42.59,51.33
 step
 click "Just wanted you to feel at home, mon."
-Remove the Insult |q 44858/1 |count 2 |goto 41.99,50.99
+Remove the Insult |q 44860/1 |count 2 |goto 41.99,50.99
 step
 click "We found your mounts..."
-Remove the Insult |q 44858/1 |count 3 |goto 40.61,51.86
+Remove the Insult |q 44860/1 |count 3 |goto 40.61,51.86
 step
 click "Didn't want you to get the shakes."
-Remove the Insult |q 44858/1 |count 4 |goto 40.29,52.07
+Remove the Insult |q 44860/1 |count 4 |goto 40.29,52.07
 step
 click Replacement Sunwell
-Remove the Insult |q 44858/1 |count 5 |goto 40.81,53.33
+Remove the Insult |q 44860/1 |count 5 |goto 40.81,53.33
 step
 label "Discover_Shaldorei_Infiltrators"
 Use your Dispelling Crystal on Infiltrators |use Dispelling Crystal##142375
@@ -16013,13 +16013,13 @@ step
 talk Archmage Khadgar##114909
 turnin Something's Not Quite Right...##44928 |goto 41.65,51.62
 step
-talk Tyrande Whisperwind##114838
-turnin Trolling Them##44858 |goto 41.63,51.47
-accept Arming the Rebels##44861 |goto 41.61,51.45
+talk Lady Liadrin##114841
+turnin Trolling Them##44860 |goto 40.50,53.07
+accept Arming the Rebels##44862 |goto 40.50,53.07
 step
 talk Victoire##116256
 |tip She walks back and forth.
-turnin Arming the Rebels##44861 |goto 39.76,51.37
+turnin Arming the Rebels##44862 |goto 39.76,51.37
 accept Citizens' Army##44827 |goto 39.76,51.37
 step
 talk Chief Telemancer Oculeth##115342
