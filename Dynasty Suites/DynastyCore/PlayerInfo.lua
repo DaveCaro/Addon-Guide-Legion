@@ -33,9 +33,6 @@ local MapChanged = false;
 
 local function UpdatePosition()
 	local y,x = UnitPosition('Player');
-	if not (x and y) then
-		x,y = 0,0;
-	end
 	Info.X, Info.Y = x,y;
 	--Info.MapX, Info.MapY = MapData:GetMapPosition(Info.Map,Info.Floor,x,y); -- too slow (can speed it up by cacheing map data;
 	--if MapData:SaveMapState() then
@@ -46,7 +43,7 @@ local function UpdatePosition()
 end
 
 local function UpdateFacing()
-	Info.Facing = GetPlayerFacing() or 0;
+	Info.Facing = GetPlayerFacing();
 	Info.FacingDeg = 360*(Info.Facing/TAU);
 	Info.FacingNormal = PI-((Info.Facing+PI)%TAU);
 	if not Info.Moving then return end

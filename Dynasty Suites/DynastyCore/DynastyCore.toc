@@ -1,4 +1,4 @@
-## Interface: 70100
+## Interface: 70000
 ## Title: |cFF07AACBDy|cFFFFFFFFnasty Addons|r
 ## Version: 9
 ## Author: Dynasty Addons
