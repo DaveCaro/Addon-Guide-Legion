@@ -20988,6 +20988,11 @@ function NPC:Initialize()
 [115693]="Arcanist Valtrois",
 [115701]="Stellagosa",
 [115342]="Chief Telemancer Oculeth",
+
+[114841]="Lady Liadrin",
+[114838]="Tyrande Whisperwind",
+[114963]="Vereesa Windrunner",
+[115271]="Ancient Shieldguard",
 }
 	end
 

@@ -36,4 +36,4 @@ Engineering 1-600 - Changed a step to direct players to the main city anvil inst
 
 - Dugi Guide : 
 
-TBA
+Fixed World Quest and Bonus Objectives map waypoints

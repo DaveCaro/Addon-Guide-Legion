@@ -1110,9 +1110,9 @@ T Sign of the Dusk Lily |QID|44756| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)|
 
 --An Elven Problem
 A Eating Before the Meeting |QID|45263| |N|(npc:97140) in {Shal'Aran}<br/><br/>This quest is not available until November 15 (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44756|
-A Stabilizing Suramar |QID|45316| |N|(npc:97140) in {Shal'Aran}<br/><br/>This quest is not available until November 15 (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44756|
 C Eating Before the Meeting |QID|45262| |N|Use (item:143597) on a (npc:111901) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|111901| |PRE|44756| |U|143597|
 T Eating Before the Meeting |QID|45263| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44756|
+A Stabilizing Suramar |QID|45316| |N|(npc:97140) in {Shal'Aran}| |Z|1033 0| |NPC|97140| |PRE|44756|
 A Take Me To Your Leader |QID|40391| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44756|
 
 R Meredil |QID|45056| |N|Travel to {Meredil} (39.50, 51.08)| |Z|1033 0| |PRE|44756|
@@ -1236,6 +1236,42 @@ T Full Might of the Elves |QID|44738| |N|(npc:107966) in {Astravar Harbor} (52.2
 A Staging Point |QID|44740| |N|(npc:107966) in {Astravar Harbor} (52.21, 68.69)| |Z|1033 0| |NPC|107966| |PRE|44876|
 C Staging Point |QID|44740| |N|Click on the telemancy beacon in {Astravar Harbor} (54.46, 69.43)| |Z|1033 0| |NPC|107966| |PRE|44876|
 T Staging Point |QID|44740| |N|(npc:107966) in {Astravar Harbor} (54.92, 72.80)| |Z|1033 0| |NPC|107966| |PRE|44876|
+A Fighting on All Fronts |QID|45317| |N|(npc:107966) in {Astravar Harbor} (54.92, 72.80)| |Z|1033 0| |NPC|107966| |PRE|44876|
+
+--Elisande's Retort
+
+A Before the Siege |QID|45267| |N|(npc:97140) in {Shal'Aran}<br/><br/>This quest is not available until December 6 (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44740| |O|
+C Before the Siege |QID|45267| |N|Use (item:143597) on a (npc:111901) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|111901| |PRE|44740| |U|143597|
+T Before the Siege |QID|45267| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44740|
+A Gates of the Nighthold |QID|44736| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|97140| |PRE|44740|
+
+R Astravar Harbor |QID|44736| |N|Take the portal to {Astravar Harbor} (36.75, 45.05)| |Z|1033 0| |PRE|44740|
+N (npc:107966) |QID|44736| |N|Speak to (npc:107966) in {Astravar Harbor} to start the siege (54.92, 72.80)| |Z|1033 0| |NPC|107966| |PRE|44740|
+T Gates of the Nighthold |QID|44736| |N|(npc:107966) in {Astravar Harbor} (54.92, 72.80)| |Z|1033 0| |NPC|107966| |PRE|44740|
+A Temporal Investigations |QID|44822| |N|(npc:107966) in {Astravar Harbor} (54.92, 72.80)| |Z|1033 0| |NPC|107966| |PRE|44740|
+C Temporal Investigations |QID|44822| |N|Follow (npc:107966) to investigate the time lock (54.92, 72.80)| |Z|1033 0| |NPC|107966| |PRE|44740| |POI|
+T Temporal Investigations |QID|44822| |N|(npc:107966) in {Astravar Harbor} (54.92, 72.80)| |Z|1033 0| |NPC|107966| |PRE|44740|
+A Those Scrying Eyes |QID|45209| |N|(npc:97140) in {Astravar Harbor} (54.91, 72.81)| |Z|1033 0| |NPC|97140| |PRE|44740|
+C Those Scrying Eyes |QID|45209| |N|Click on 4 Duskwatch Scrying Orb, it looks like an Orb on a pedestal defended by a couple of npcs| |Z|1033 0| |PRE|44740|
+T Those Scrying Eyes |QID|45209| |N|(npc:97140) in {Shal'Aran} (36.49, 45.82)| |Z|1033 0| |NPC|97140| |PRE|44740|
+A Scouting the Breach |QID|44832| |N|(npc:97140) in {Shal'Aran} (36.49, 45.82)| |Z|1033 0| |NPC|97140| |PRE|44740|
+
+R Sanctum of Order |QID|44832| |N|Take the portal to the {Sanctum of Order} (36.68, 44.69)| |Z|1033 0|
+N (npc:112145) |QID|44832.2| |N|Meet with (npc:112145) below the Sanctum of Order (42.62, 60.79)| |Z|1033 0| |NPC|112145|
+C Scouting the Breach |QID|44832.3| |N|Clear a path to the barrier beneath the Sanctum of Order (42.06, 60.43) (42.75, 58.95) (44.12, 59.86)| |Z|1033 0|
+N (npc:112145) |QID|44832.4| |N|Wait with (npc:112145) while she examines the barrier (44.12, 59.86)| |Z|1033 0| |NPC|112145|
+T Scouting the Breach |QID|44832| |N|(npc:97140) in {Sanctum Depths} (44.04, 59.75)| |Z|1033 0| |NPC|97140| |PRE|44740|
+A The Seal's Power |QID|44833| |N|(npc:97140) in {Sanctum Depths} (44.04, 59.75)| |Z|1033 0| |NPC|97140| |PRE|44740|
+
+R Kel'balor |QID|44833| |N|Travel to {Kel'balor} (59.29, 42.81)| |Z|1033 0|
+N (npc:112145) |QID|44833.1| |N|Meet with (npc:112145) in {Kel'balor} (41.92, 52.96)| |Z|1033 35| |NPC|112145|
+N (npc:112145) |QID|44833| |N|Protect npc:112145) while she investigates the ley line device in {Kel'balor} (52.15, 45.58)| |Z|1033 35|
+
+R Shal'Aran |TID|44833| |N|(npc:97140) in {Shal'Aran} (36.49, 45.82)| |Z|1033 0| |NPC|97140| |PRE|44740|
+T The Seal's Power |QID|44833| |N|(npc:97140) in {Shal'Aran} (36.49, 45.82)| |Z|1033 0| |NPC|97140| |PRE|44740|
+
+C Fighting on All Fronts |QID|45317| |N|Complete 5 missions from your Order Hall. Any order hall missions will count, so just complete whichever ones you want to.| |Z|1033 0| |PRE|44876| |POI|
+T Fighting on All Fronts |QID|45317| |N|(npc:107966) in {Astravar Harbor} (54.92, 72.80)| |Z|1033 0| |NPC|107966| |PRE|44876|
 
 N Gain Reputation |N|You will need 7000/21000 Revered status with (fac:1859) faction to continue| |OID|44152| 
 N Gain Reputation |N|You will need 20000/21000 Revered status with (fac:1859) faction to continue| |OID|43502| 
