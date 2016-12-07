@@ -37,3 +37,7 @@ Engineering 1-600 - Changed a step to direct players to the main city anvil inst
 - Dugi Guide : 
 
 Fixed World Quest and Bonus Objectives map waypoints
+
+### Removed 
+
+- WowPro 7.1
