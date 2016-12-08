@@ -273,6 +273,7 @@ accept Calamitous Intent##43193 |goto Azsuna/0 56.42,67.31
 |tip You will accept this quest automatically.
 step
 kill Calamir##109331 |q 43193/1 |goto 56.42,67.31
+|tip
 |tip DPS:
 |tip Run away when Calamir casts Howling Gale.
 |tip Avoid other players when you get the Burning Bomb debuff.
@@ -621,6 +622,19 @@ Follow the beach |goto 61.53,72.00 < 30 |only if walking
 Follow the beach |goto 59.32,72.84 < 30 |only if walking
 Follow the path |goto 58.12,74.09 < 30 |only if walking
 kill Quartermaster Zolix##108186 |q 42624/4 |goto 57.44,75.32
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44737
+Follow the path |goto Azsuna/0 43.59,42.16 < 20 |only if walking
+Follow the path |goto 40.68,37.76 < 25 |only if walking
+Follow the path |goto 36.51,37.52 < 25 |only if walking
+Follow the path |goto 33.41,35.29 < 25 |only if walking
+accept Helarjar Landing: Grey Shoals##44737 |goto 31.94,28.78
+|tip You will accept this quest automatically.
+step
+click Kvaldir Weapon Rack##8386
+kill Helhound##115026+, Cursed Rigger##115031+, Helarjar Raider##115025+
+Disrupt the Helarjar Landing |q 44737/1 |goto 31.94,28.78
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42154
@@ -1591,6 +1605,36 @@ talk Veridis Fallon##107376
 turnin Work Order: Word of Critical Strike##41669 |goto Azsuna/0 46.91,41.41
 |next "Court_Of_Farondis_WQ"
 step
+label quest-44788
+Follow the path |goto Azsuna/0 49.85,29.75 < 30 |only if walking
+Follow the path down |goto 51.19,32.65 < 30 |only if walking
+Cross the water |goto 52.09,34.70 < 30 |only if walking
+Follow the path |goto 53.34,37.72 < 30 |only if walking
+Enter the building |goto 53.77,40.31
+accept Work Study: Bestiaries of Azsuna##44788 |goto Azsuna/17 62.86,86.74
+|tip You will accept this quest automatically.
+step
+Follow the path down |goto 58.11,68.23
+Go through the Academy Door |goto 50.40,50.09
+click Incredible Monsters and Where to Locate Them##6478
+collect Incredible Monsters and Where to Locate ##142238 |q 44788/1 |goto 26.23,46.91
+step
+click Sythorne's Podium##0 |q 44788/2 |goto 30.21,44.86
+kill Hydra Drawing##115460 |q 44788/3 |goto 32.84,42.63
+step
+click Handbook of Feathery Friends##6478
+collect Handbook of Feathery Friends##142239 |q 44788/4 |goto 26.23,46.91
+step
+click Sythorne's Podium##0 |q 44788/5 |goto 30.21,44.86
+kill Harpy Drawing##115461 |q 44788/6 |goto 32.84,42.63
+step
+click Draconic Compendium, Volume IV##6478
+collect Draconic Compendium, Volume IV##142240 |q 44788/7 |goto 27.14,45.94
+step
+click Sythorne's Podium##0 |q 44788/8 |goto 30.21,44.86
+kill Squallhunter Drawing##115462 |q 44788/9 |goto 32.84,42.63
+|next "Court_Of_Farondis_WQ"
+step
 label quest-44033
 accept Aw, Nuts!##44033 |goto Val'sharah/0 54.52,72.91
 |tip You will accept this quest automatically.
@@ -2131,12 +2175,14 @@ Follow the path |goto 23.46,69.63 < 20 |only if walking
 accept Pocket Wizard##42819 |goto 24.54,69.47
 |tip You will accept this quest automatically.
 step
-kill 1 Humongris##108879 |q 42819/1 |goto 24.00,69.87
+kill Humongris##108879 |q 42819/1 |goto 24.00,69.87
 |tip
 |tip DPS:
 |tip Spread out to minimize damage from Fire Boom and Ice Fist.
+|tip
 |tip HEALER:
 |tip Spread out to minimize damage from Fire Boom and Ice Fist.
+|tip
 |tip TANK:
 |tip Move away from the raid when affected by You Go Bang!
 |next "Court_Of_Farondis_WQ"
@@ -3876,6 +3922,19 @@ Follow the path up |goto 46.34,24.98 < 30 |only if walking
 Cross the bridge |goto 47.16,24.96 < 30 |only if walking
 click Unstable Legion Portal
 Disable the Unstable Legion Portal |q 41428/2 |goto 48.55,27.27
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41665
+accept Vantus Rune Work Order: Ursoc##41665 |goto Thunder Totem/0 38.06,46.04
+|tip You will accept this quest automatically.
+step
+Open Your Inscription Crafting Panel:
+_<Create 1 Vantus Rune: Ursoc>_
+collect 1 Vantus Rune: Ursoc##128987 |goto 38.06,46.04
+|tip You can purchase one of these from the Auction House if you don't have the technique.
+step
+talk Ransa Greyfeather##106902
+turnin Vantus Rune Work Order: Ursoc##41665 |goto 38.06,46.04
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41824
@@ -6220,6 +6279,37 @@ step
 Produce Unfortified Arcwine |q 42880/2 |goto 60.52,56.50
 |tip Click the 3 objects on the table when Vintner Iltheux tells you to add certain ingredients.
 |tip Jump repeatedly in the tub nearby when she tells you to.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-43513
+Follow the path |goto Suramar/0 25.19,32.79 < 25 |only if walking
+Follow the path |goto 25.73,37.91 < 25 |only if walking
+Follow the path |goto 23.15,39.86 < 20 |only if walking
+Follow the path |goto 21.09,39.06 < 20 |only if walking
+Follow the path |goto 19.44,41.44 < 20 |only if walking
+Drop off the ledge into the water |goto 20.39,42.16 < 10 |only if walking
+Enter the tunnels |goto Suramar/33 46.56,42.76 < 200 |noway |c
+step
+Follow the path |goto 40.18,42.24 < 15 |only if walking
+Follow the path |goto 44.85,55.14 < 15 |only if walking
+Follow the path |goto 41.18,68.30 < 15 |only if walking
+accept Na'zak the Fiend##43513 |goto 41.18,68.30
+|tip You will accept this quest automatically.
+step
+kill Na'zak the Fiend##110321 |q 43513/1 |goto 41.18,68.30
+|tip
+|tip DPS:
+|tip Avoid standing infront of Na'zak during Corroding Spray.
+|tip Collect rubble on the ground before Na'zak can absorb them.
+|tip Free allies by attacking Web Wrap.
+|tip
+|tip HEALER:
+|tip Avoid standing infront of Na'zak during Corroding Spray.
+|tip Collect rubble on the ground before Na'zak can absorb them.
+|tip Be prepared for big heals during Ley Infusion.
+|tip
+|tip TANK:
+|tip Face Na'zak away from the raid during Corroding Spray.
 |next "Court_Of_Farondis_WQ"
 step
 label quest-44857

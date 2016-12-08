@@ -211,6 +211,7 @@ accept Calamitous Intent##43193 |goto Azsuna/0 56.42,67.31
 |tip You will accept this quest automatically.
 step
 kill Calamir##109331 |q 43193/1 |goto 56.42,67.31
+|tip
 |tip DPS:
 |tip Run away when Calamir casts Howling Gale.
 |tip Avoid other players when you get the Burning Bomb debuff.
@@ -559,6 +560,19 @@ Follow the beach |goto 61.53,72.00 < 30 |only if walking
 Follow the beach |goto 59.32,72.84 < 30 |only if walking
 Follow the path |goto 58.12,74.09 < 30 |only if walking
 kill Quartermaster Zolix##108186 |q 42624/4 |goto 57.44,75.32
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44737
+Follow the path |goto Azsuna/0 43.59,42.16 < 20 |only if walking
+Follow the path |goto 40.68,37.76 < 25 |only if walking
+Follow the path |goto 36.51,37.52 < 25 |only if walking
+Follow the path |goto 33.41,35.29 < 25 |only if walking
+accept Helarjar Landing: Grey Shoals##44737 |goto 31.94,28.78
+|tip You will accept this quest automatically.
+step
+click Kvaldir Weapon Rack##8386
+kill Helhound##115026+, Cursed Rigger##115031+, Helarjar Raider##115025+
+Disrupt the Helarjar Landing |q 44737/1 |goto 31.94,28.78
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42154

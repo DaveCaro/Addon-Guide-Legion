@@ -14,6 +14,7 @@ description="This guide will walk you through the Assault on Violet Hold dungeon
 step
 Enter the Assault on Violet Hold Dungeon |goto Dalaran L/10 67.29,69.63 |scenariostart
 |tip Use the Group Finder to enter the dungeon.
+confirm
 step
 label "First_Bosses"
 Kill enemies around this area
@@ -153,6 +154,7 @@ description="This guide will walk you through the Black Rook Hold dungeon.",
 step
 Enter the Black Rook Hold Dungeon |goto Val'sharah/0 37.13,50.19 |scenariostart
 |tip Use the Group Finder to enter the dungeon.
+confirm
 step
 map Black Rook Hold/1
 path follow loose; loop off; ants curved; dist 20
@@ -289,6 +291,7 @@ description="This guide will walk you through the Darkheart Thicket dungeon.",
 step
 Enter the Darkheart Thicket Dungeon |goto Val'sharah/0 59.03,31.17 |scenariostart
 |tip Use the Group Finder to enter the dungeon.
+confirm
 step
 map Darkheart Thicket/0
 path follow loose; loop off; ants curved; dist 20
@@ -378,6 +381,7 @@ description="This guide will walk you through the Eye of Azshara dungeon.",
 step
 Enter the Eye of Azshara Dungeon |goto Azsuna/0 61.12,41.12 |scenariostart
 |tip Use the Group Finder to enter the dungeon.
+confirm
 step
 map 1046/1
 path follow loose; loop off; ants curved; dist 20
@@ -496,6 +500,7 @@ description="This guide will walk you through the Halls of Valor dungeon.",
 step
 Enter the Halls of Valor Dungeon |goto Stormheim/0 72.64,70.54 |scenariostart
 |tip Use the Group Finder to enter the dungeon.
+confirm
 step
 map Halls of Valor/2
 path follow loose; loop off; ants curved; dist 20
@@ -634,8 +639,9 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Maw of Souls dungeon.",
 },[[
 step
-Enter the _Maw of Souls_ dungeon |goto Stormheim/0 52.47,45.22 |scenariostart
+Enter the Maw of Souls dungeon |goto Stormheim/0 52.47,45.22 |scenariostart
 |tip Use the Group Finder to enter the dungeon.
+confirm
 step
 kill Ymiron, the Fallen King##96756
 _EVERYONE:_
@@ -702,6 +708,7 @@ description="This guide will walk you through the Neltharion's Lair dungeon.",
 step
 Enter the Neltharion's Lair Dungeon |goto Highmountain/0 49.57,68.69 |scenariostart
 |tip Use the Group Finder to enter the dungeon.
+confirm
 step
 Jump down the hole |condition not _G.HasFullControl()
 step
@@ -801,6 +808,7 @@ description="This guide will walk you through the Vault of the Wardens dungeon."
 step
 Enter the Vault of the Wardens Dungeon |goto Azsuna/0 48.29,80.22 |scenariostart
 |tip Use the Group Finder to enter the dungeon.
+confirm
 step
 map 1045/1
 path follow loose; loop off; ants curved; dist 20

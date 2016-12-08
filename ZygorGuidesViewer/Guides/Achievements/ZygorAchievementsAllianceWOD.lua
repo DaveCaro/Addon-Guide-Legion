@@ -5034,93 +5034,93 @@ description="Take a picture with the S.E.L.F.I.E. camera in various locations.",
 },[[
 stickystart "Camera"
 step
-Take a S.E.L.F.I.E. in Moonglade |achieve 9924/30 |goto Moonglade/0 48.0,67.2
+Take a S.E.L.F.I.E. in Moonglade |achieve 9924/29 |goto Moonglade/0 48.0,67.2
 step
-Take a S.E.L.F.I.E. in Nordrasil |achieve 9924/18 |goto Mount Hyjal/0 62.2,21.6
+Take a S.E.L.F.I.E. in Nordrasil |achieve 9924/17 |goto Mount Hyjal/0 62.2,21.6
 step
-Take a S.E.L.F.I.E. in the Echo Isles |achieve 9924/36 |goto Echo Isles/0 38.6,46.5
+Take a S.E.L.F.I.E. in the Echo Isles |achieve 9924/35 |goto Echo Isles/0 38.6,46.5
 step
 Take a S.E.L.F.I.E. in Onyxia's Lair |achieve 9924/1 |goto Onyxia's Lair/1 34.3,20.9
 step
-Take a S.E.L.F.I.E. in The Shaper's Terrace |achieve 9924/22 |goto Un'Goro Crater/0 48.2,8.2
+Take a S.E.L.F.I.E. in The Shaper's Terrace |achieve 9924/21 |goto Un'Goro Crater/0 48.2,8.2
 step
-Take a S.E.L.F.I.E. in the Caverns of Time |achieve 9924/32 |goto Tanaris/0 64.1,50.2
+Take a S.E.L.F.I.E. in the Caverns of Time |achieve 9924/31 |goto Tanaris/0 64.1,50.2
 step
-Take a S.E.L.F.I.E. in the Halls of Origination |achieve 9924/43 |goto Halls of Origination/1 49.9,93.7
+Take a S.E.L.F.I.E. in the Halls of Origination |achieve 9924/42 |goto Halls of Origination/1 49.9,93.7
 step
-Take a S.E.L.F.I.E. at the Scarab Dais |achieve 9924/34 |goto Silithus/0 33.3,81.2
+Take a S.E.L.F.I.E. at the Scarab Dais |achieve 9924/33 |goto Silithus/0 33.3,81.2
 step
-Take a S.E.L.F.I.E. at The Twin Colossals |achieve 9924/28 |goto Feralas/0 46.4,16.8
+Take a S.E.L.F.I.E. at The Twin Colossals |achieve 9924/27 |goto Feralas/0 46.4,16.8
 step
-Take a S.E.L.F.I.E. at Light's Hope Chapel |achieve 9924/19 |goto Eastern Plaguelands/0 75.3,52.8
+Take a S.E.L.F.I.E. at Light's Hope Chapel |achieve 9924/18 |goto Eastern Plaguelands/0 75.3,52.8
 step
-Take a S.E.L.F.I.E. at Hearthglen |achieve 9924/11 |goto Western Plaguelands/0 44.7,16.9
+Take a S.E.L.F.I.E. at Hearthglen |achieve 9924/9 |goto Western Plaguelands/0 44.7,16.9
 step
-Take a S.E.L.F.I.E. at Uther's Tomb |achieve 9924/37 |goto Western Plaguelands/0 52.1,83.2
+Take a S.E.L.F.I.E. at Uther's Tomb |achieve 9924/36 |goto Western Plaguelands/0 52.1,83.2
 step
-Take a S.E.L.F.I.E. at Ravenholdt Manor |achieve 9924/35 |goto Hillsbrad Foothills/0 71.0,45.0
+Take a S.E.L.F.I.E. at Ravenholdt Manor |achieve 9924/34 |goto Hillsbrad Foothills/0 71.0,45.0
 step
 Take a S.E.L.F.I.E. at Thandol Span |achieve 9924/10 |goto Wetlands/0 50.9,8.8
 step
-Take a S.E.L.F.I.E. at the Valley of Kings |achieve 9924/25 |goto Loch Modan/0 21.1,76.2
+Take a S.E.L.F.I.E. at the Valley of Kings |achieve 9924/24 |goto Loch Modan/0 21.1,76.2
 step
-Take a S.E.L.F.I.E. at Blackrock Mountain |achieve 9924/33 |goto Searing Gorge/0 34.8,84.3
+Take a S.E.L.F.I.E. at Blackrock Mountain |achieve 9924/32 |goto Searing Gorge/0 34.8,84.3
 step
-Take a S.E.L.F.I.E. in Stormwind |achieve 9924/2 |goto Stormwind City/0 66.5,34.8
+Take a S.E.L.F.I.E. in Stormwind |achieve 9924/43 |goto Stormwind City/0 66.5,34.8
 step
-Take a S.E.L.F.I.E. at the Deeprun Tram |achieve 9924/9 |goto Deeprun Tram/1 42.5,13.3
+Take a S.E.L.F.I.E. at the Deeprun Tram |achieve 9924/8 |goto Deeprun Tram/1 42.5,13.3
 step
-Take a S.E.L.F.I.E. at the Westfall Lighthouse |achieve 9924/26 |goto Westfall/0 29.9,85.8
+Take a S.E.L.F.I.E. at the Westfall Lighthouse |achieve 9924/25 |goto Westfall/0 29.9,85.8
 step
-Take a S.E.L.F.I.E. in The Deadmines |achieve 9924/14 |goto The Deadmines/1 26.5,13.4
+Take a S.E.L.F.I.E. in The Deadmines |achieve 9924/13 |goto The Deadmines/1 26.5,13.4
 step
-Take a S.E.L.F.I.E. in Darkshire |achieve 9924/21 |goto Duskwood/0 74.7,46.9
+Take a S.E.L.F.I.E. in Darkshire |achieve 9924/20 |goto Duskwood/0 74.7,46.9
 step
-Take a S.E.L.F.I.E. in Karazhan |achieve 9924/12 |goto Karazhan/1 58.8,76.1
+Take a S.E.L.F.I.E. in Karazhan |achieve 9924/11 |goto Karazhan/1 58.8,76.1
 step
-Take a S.E.L.F.I.E. at The Dark Portal |achieve 9924/4 |goto Blasted Lands/0 54.6,50.6
+Take a S.E.L.F.I.E. at The Dark Portal |achieve 9924/3 |goto Blasted Lands/0 54.6,50.6
 step
-Take a S.E.L.F.I.E. in the Battle Ring, Gurubashi Arena |achieve 9924/13 |goto The Cape of Stranglethorn/0 46.5,26.2
+Take a S.E.L.F.I.E. in the Battle Ring, Gurubashi Arena |achieve 9924/12 |goto The Cape of Stranglethorn/0 46.5,26.2
 step
-Take a S.E.L.F.I.E. at Janerio's Point |achieve 9924/6 |goto The Cape of Stranglethorn/0 35.7,63.8
+Take a S.E.L.F.I.E. at Janerio's Point |achieve 9924/5 |goto The Cape of Stranglethorn/0 35.7,63.8
 step
-Take a S.E.L.F.I.E. at the Throne of Kil'jaeden |achieve 9924/39 |goto Hellfire Peninsula/0 63.3,16.6
+Take a S.E.L.F.I.E. at the Throne of Kil'jaeden |achieve 9924/38 |goto Hellfire Peninsula/0 63.3,16.6
 step
-Take a S.E.L.F.I.E. at the Stormspire |achieve 9924/31 |goto Netherstorm/0 45.1,36.0
+Take a S.E.L.F.I.E. at the Stormspire |achieve 9924/30 |goto Netherstorm/0 45.1,36.0
 step
-Take a S.E.L.F.I.E. at the Throne of the Elements |achieve 9924/27 |goto Nagrand/0 60.7,22.4
+Take a S.E.L.F.I.E. at the Throne of the Elements |achieve 9924/26 |goto Nagrand/0 60.7,22.4
 step
-Take a S.E.L.F.I.E. in Shattrath City |achieve 9924/17 |goto Shattrath City/0 60.1,40.1
+Take a S.E.L.F.I.E. in Shattrath City |achieve 9924/16 |goto Shattrath City/0 60.1,40.1
 step
-Take a S.E.L.F.I.E. in Dalaran |achieve 9924/5 |goto Dalaran/1 49.0,48.6
+Take a S.E.L.F.I.E. in Dalaran |achieve 9924/4 |goto Dalaran/1 49.0,48.6
 step
 You must fight through the Icecrown Citadel raid in order to access the Lich King's Frozen Throne
-Take a S.E.L.F.I.E. on The Frozen Throne |achieve 9924/3 |goto Icecrown Citadel/7 49.8,52.2
+Take a S.E.L.F.I.E. on The Frozen Throne |achieve 9924/2 |goto Icecrown Citadel/7 49.8,52.2
 step
-Take a S.E.L.F.I.E. in Wintergrasp Fortress |achieve 9924/23 |goto Wintergrasp/0 50.0,19.4
+Take a S.E.L.F.I.E. in Wintergrasp Fortress |achieve 9924/22 |goto Wintergrasp/0 50.0,19.4
 step
-Take a S.E.L.F.I.E. at Wyrmrest Temple |achieve 9924/16 |goto Dragonblight/0 59.8,54.2
+Take a S.E.L.F.I.E. at Wyrmrest Temple |achieve 9924/15 |goto Dragonblight/0 59.8,54.2
 step
-Take a S.E.L.F.I.E. in Naxxramas |achieve 9924/15 |goto Naxxramas/5 54.3,49.7
+Take a S.E.L.F.I.E. in Naxxramas |achieve 9924/14 |goto Naxxramas/5 54.3,49.7
 step
-Take a S.E.L.F.I.E. at Daggercap Bay |achieve 9924/38 |goto Howling Fjord/0 60.1,56.3
+Take a S.E.L.F.I.E. at Daggercap Bay |achieve 9924/37 |goto Howling Fjord/0 60.1,56.3
 step
 You can take this shot anywhere in Vashj'ir
-Take a S.E.L.F.I.E. in Vashj'ir |achieve 9924/24 |goto Vashj'ir/0 60.1,56.3
+Take a S.E.L.F.I.E. in Vashj'ir |achieve 9924/23 |goto Vashj'ir/0 60.1,56.3
 step
-Take a S.E.L.F.I.E. at Deathwing's Fall |achieve 9924/20 |goto Deepholm/0 59.5,61.1
+Take a S.E.L.F.I.E. at Deathwing's Fall |achieve 9924/19 |goto Deepholm/0 59.5,61.1
 step
-Take a S.E.L.F.I.E. at Turtle Beach |achieve 9924/41 |goto Krasarang Wilds/0 72.3,31.4
+Take a S.E.L.F.I.E. at Turtle Beach |achieve 9924/40 |goto Krasarang Wilds/0 72.3,31.4
 step
-Take a S.E.L.F.I.E. at Sunsong Ranch |achieve 9924/40 |goto Valley of the Four Winds/0 52.2,48.5
+Take a S.E.L.F.I.E. at Sunsong Ranch |achieve 9924/39 |goto Valley of the Four Winds/0 52.2,48.5
 step
-Take a S.E.L.F.I.E. in Vale of Eternal Blossoms |achieve 9924/7 |goto Vale of Eternal Blossoms/0 61.7,36.7
+Take a S.E.L.F.I.E. in Vale of Eternal Blossoms |achieve 9924/6 |goto Vale of Eternal Blossoms/0 61.7,36.7
 step
-Take a S.E.L.F.I.E. at Mount Neverest |achieve 9924/29 |goto Kun-Lai Summit/0 41.0,50.1
+Take a S.E.L.F.I.E. at Mount Neverest |achieve 9924/28 |goto Kun-Lai Summit/0 41.0,50.1
 step
-Take a S.E.L.F.I.E. in Auchindoun |achieve 9924/42 |goto Auchindoun/1 49.7,90.2
+Take a S.E.L.F.I.E. in Auchindoun |achieve 9924/41 |goto Auchindoun/1 49.7,90.2
 step
-Take a S.E.L.F.I.E. at the Temple of Karabor |achieve 9924/8 |goto Shadowmoon Valley D/0 71.2,46.6
+Take a S.E.L.F.I.E. at the Temple of Karabor |achieve 9924/7 |goto Shadowmoon Valley D/0 71.2,46.6
 step "Camera"
 Use your Camera to take a Selfie |use SELFIE Camera MKI##122637
 step

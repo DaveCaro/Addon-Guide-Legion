@@ -1400,7 +1400,7 @@ kill Shalehide Basilisk##43181+
 collect 1 Basilisk "Liver"##62783 |achieve 5753 |goto Deepholm/0 41.12,32.78
 step
 talk Bario Matalli##49701 |only if skill("Cooking")>=450
-buy 1 Recipe: Broiled Mountain Trout##65411 |condition itemcount(65411) >= 1 |achieve 5753 |goto 50.42,71.87 |only if skill("Cooking")>=450
+buy 1 Recipe: Broiled Mountain Trout##65411 |condition itemcount(65411) >= 1 |achieve 5753 |goto Stormwind City/0 50.42,71.87 |only if skill("Cooking")>=450
 |tip This recipe costs 3 Epicurean's Awards. These are obtained by doing cooking dailies. |only if skill("Cooking")>=450
 Your cooking skill is not high enough (450) to use this recipe. Reach at least 450 cooking |achieve 5753 |confirm |only if skill("Cooking") <= 449
 |tip You can also buy Broiled Mountain Trout from the Auction House.
@@ -1477,11 +1477,24 @@ buy 1 Recipe: Whitecrest Gumbo##65406 |condition itemcount(65406) >= 1 |achieve 
 Your cooking skill is not high enough (450) to use this recipe. Reach at least 450 cooking |achieve 5753 |confirm |only if skill("Cooking") <= 449
 |tip You can also buy Whitecrest Gumbo from the Auction House.
 step
+Click here if you would like to farm for this Blood Shrimp |next "Farm Blood Shrimp"
+Click here if you would like to attempt to recieve these Blood Shrimp through collecting Tasty Meat Crates through the Cataclysm Cooking dailies |next "Tasty Meat"
+confirm
+step
+label "Farm Blood Shrimp"
+kill Zin'jatar Raider##39313+
+collect Abyssal Clam##52340+ |use Abyssal Clam##52340 |n
+collect 1 Blood Shrimp##62791 |achieve 5753 |goto Kelp'thar Forest/0 39.98,30.87
+|next "Whitecrest"
+step
+label "Tasty Meat"
 talk Bario Matalli##49701
 buy 1 Crate of Tasty Meat##65513 |n
 |tip These cost 2 Epicurean's Awards each. They have a chance to contain Blood Shrimp.
-collect 1 Blood Shrimp##62791 |achieve 5753 |goto 50.42,71.87
+collect 1 Blood Shrimp##62791 |achieve 5753 |goto Stormwind City/0 50.42,71.87
+|next "Whitecrest"
 step
+label "Whitecrest"
 learn Whitecrest Gumbo##88047 |use Recipe: Whitecrest Gumbo##65406 |achieve 5753
 Create a cooking fire |cast Cooking Fire##818
 create Whitecrest Gumbo##88047,Cooking,1 total |achieve 5753

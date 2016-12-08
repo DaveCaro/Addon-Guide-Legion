@@ -13952,6 +13952,41 @@ kill Sartharion##28860 |goto 53.3,47.8
 step
 Congratulations, you have finished the Obsidian Sanctum raid guide!
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Raids\\Northrend\\Onyxia's Lair",{
+author="support@zygorguides.com",
+description="This guide will walk you through the Onyxia's Lair Raid.",
+},[[
+step
+Enter Onyxia's Lair |goto Dustwallow Marsh/0 52.86,77.40
+confirm
+step
+kill 1 Onyxian Warder##12129
+map Onyxia's Lair/1
+path follow smart; loop off; ants curved; dist 15
+path	39.7,23.8	41.3,32.9	43.9,56.8
+path	54.0,76.6	65.9,81.8	67.5,59.7
+Follow the path, killing the Onyxian Warders as you go |goto 67.5,59.7 < 8 |noway |c
+step
+kill 1 Onyxia##10184
+modelnpc Onyxian Whelp##11262
+modelnpc Onyxian Lair Guard##36561
+_Phase 1_:
+Onyxia will use _Flame Breath_, dealing fire damage in a frontal cone
+_Cleave_ deals damage to anyone standing in front of her
+_Wing Buffet_ will deal damage and knock the tank back
+Avoid standing behind her or _Tail Sweep_ may knock you into the whelp caves
+_Phase 2_:
+At 65%, she will take flight
+During this time, she will use _Fireball_ and _Breath_. Watch for her flight path to avoid the wave of fire from _Breath_
+She will occasionally spawn Lair Guards and Whelps. Burn these down quickly.
+_Phase 3_:
+This phase is the same as phase 1, with the additon of _Bellowing Roar_ (Fear) and _Eruption_
+_Eruption_ will deal fire damage to anyone near the cracks in the floor. This follows _Bellowing Roar_
+Small numbers of Onyxian Whelps will spawn randomly
+confirm
+step
+Congratulations! You have completed Onyxia's Lair.
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Raids\\Northrend\\The Ruby Sanctum",{
 mapid=609,
 author="support@zygorguides.com",
@@ -14050,40 +14085,6 @@ _Surge of Power_ affects a random raid member. Malygos shoots a beam at them, de
 |confirm
 step
 Congratulations, you have finished the Eye of Eternity raid guide!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Raids\\Northrend\\Onyxia's Lair",{
-author="support@zygorguides.com",
-description="This guide will walk you through the Onyxia's Lair Raid.",
-},[[
-step
-Enter Onyxia's Lair |goto Onyxia's Lair/1 34.3,20.9 |c
-step
-kill 1 Onyxian Warder##12129
-map Onyxia's Lair/1
-path follow smart; loop off; ants curved; dist 15
-path	39.7,23.8	41.3,32.9	43.9,56.8
-path	54.0,76.6	65.9,81.8	67.5,59.7
-Follow the path, killing the Onyxian Warders as you go |goto 67.5,59.7 < 8 |noway |c
-step
-kill 1 Onyxia##10184
-modelnpc Onyxian Whelp##11262
-modelnpc Onyxian Lair Guard##36561
-_Phase 1_:
-Onyxia will use _Flame Breath_, dealing fire damage in a frontal cone
-_Cleave_ deals damage to anyone standing in front of her
-_Wing Buffet_ will deal damage and knock the tank back
-Avoid standing behind her or _Tail Sweep_ may knock you into the whelp caves
-_Phase 2_:
-At 65%, she will take flight
-During this time, she will use _Fireball_ and _Breath_. Watch for her flight path to avoid the wave of fire from _Breath_
-She will occasionally spawn Lair Guards and Whelps. Burn these down quickly.
-_Phase 3_:
-This phase is the same as phase 1, with the additon of _Bellowing Roar_ (Fear) and _Eruption_
-_Eruption_ will deal fire damage to anyone near the cracks in the floor. This follows _Bellowing Roar_
-Small numbers of Onyxian Whelps will spawn randomly
-confirm
-step
-Congratulations! You have completed Onyxia's Lair.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Raids\\Northrend\\Ulduar",{
 mapid=529,
@@ -15907,6 +15908,9 @@ step
 This raid can only be completed if your faction controls Baradin Hold, the main fortress on Tol Barad.
 |confirm
 step
+Enter Baradin Hold |goto Tol Barad/0 47.69,52.58 < 5
+confirm
+step
 map Baradin Hold/1
 path loop off
 path	48.0,72.5	54.6,62.9	70.8,62.9
@@ -16114,6 +16118,7 @@ description="This guide will walk you through the Bastion of Twilight Raid.",
 },[[
 step
 Enter The Bastion of Twilight |goto Twilight Highlands/0 34.01,77.88 < 5
+|tip The instance portal is located high up in the air.
 confirm
 step
 map The Bastion of Twilight/1
@@ -16472,9 +16477,21 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Dragon Soul Raid.",
 },[[
 step
+Click here if you are doing the normal clear of the instance |next "Normal DS"
+Click here if you are doing the LFR wings of the instance |next "LFR DS Index"
+confirm
+step
+label "LFR DS Index"
+talk Auridormi##80675 |goto Tanaris/18 63.06,27.35
+Click here if you are queueing for the First wing of Dragon Soul (Siege of Wyrmrest Temple) |next "First_Wing_DS"
+Click here if you are queueing for the Second wing of Dragon Soul (Moments Preceding the Fall of Deathwing) |next "Second_Wing_DS"
+confirm
+step
+label "Normal DS"
 Enter Dragon Soul |goto Tanaris/18 61.97,26.96 < 5
 confirm
 step
+label "First_Wing_DS"
 _Morchok_ |goto Dragon Soul/1 50.6,69.6
 _Phase 1_
 |tip Stomp deals 750,000 total Physical damage split between all affected players. Morchok's target and their closest ally take a double portion of the damage.
@@ -16511,8 +16528,10 @@ _Hagara the Stormbinder_ |goto Dragon Soul/4 52.7,52
 |tip Lightning Storm deals 11,000 Nature damage to all nearby players.
 |tip Shattered Ice deals 54,000-63,000 Frost damage to a player and reduces their movement speed for 4 seconds.
 modelnpc Hagara the Stormbinder##55689
+|tip If you are doing this on LFR this is the end of wing 1.
 confirm
 step
+label "Second_Wing_DS"
 _Ultraxion_ |goto Dragon Soul/1 49.9,45.7
 |tip Unstable Monstrosity Twilight energry erupts from Ultraxion's hide, dealing 300,000 total Shadow damage every 6 secondsm split between all players in the Twilight Realm and within 30 yards of the target. Every minute Ultraxion is engaged in combat it reduces the time between arcs by 1 second.
 |tip Heroic Will pulls the player from the Twilight realm for up to 5 seconds, but they are unable to attack, cast, or move while concentrating.
@@ -16588,6 +16607,7 @@ _Phase 2_
 |tip Elementium Terror Deathwing's armor chips off, forming Elementium Terrors that deal 60,000 Physical damage and an additional 20,000 Physical damage every second.
 |tip Corrupted Blood deals Fire damage every 2 seconds, the damage increasing as Deathwing's health lowers.
 modelnpc Deathwing##46471
+|tip If you are doing this on LFR this is the end of wing 2.
 confirm
 step
 Congratulations, you have finished the _Dragon Soul_ raid guide!
@@ -16597,9 +16617,21 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Mogu'shan Vaults Raid.",
 },[[
 step
+Click here if you are doing a normal clear of the instance |next "Normal MSV"
+Click here if you are doing LFR wings of this instance |next "LFR index"
+confirm
+step
+label "LFR index"
+talk Lorewalker Han##80633 |goto Vale of Eternal Blossoms/0 83.13,30.61
+Click here if you are queueing for the First wing of Mogu'shan Vaults (Guardians of Mogu'shan) |next "First Wing MSV"
+Click here if you are queueing for the Second wing of Mogu'shan Vaults (Vault of Mysteries) |next "Second Wing MSV"
+confirm
+step
+label "Normal MSV"
 Enter Mogu'shan Vaults |goto Kun-Lai Summit/0 59.61,39.17 < 5
 confirm
 step
+label "First Wing MSV"
 map Mogu'shan Vaults/1
 path loop off
 path	68.4,64.2	54.8,64.2	50.4,64.3
@@ -16654,8 +16686,10 @@ _Final Destination_ Gara'jal harnesses his great power and rips the souls from a
 _Summon Spirit Totem_ summons a totem that provides a conduit between this world and the spirit world.
 _Voodoo Doll_ damage received is duplicated to all other Voodoo Dolls.
 |modelnpc Gara'jal the Spiritbinder##60143
+|tip If you are doing this on LFR this is the end of wing 1.
 |confirm
 step
+label "Second Wing MSV"
 map Mogu'shan Vaults/2
 path loop off
 path	45.3,34.5	33.8,29.9	33.9,43.0
@@ -16725,6 +16759,7 @@ _Jan-xi_
 Stomp_ inflicts 150,000 Physical damage and stuns nearby enemies for 2 seconds.
 |modelnpc Qin-xi##60399
 |modelnpc Jan-xi##60400
+|tip If you are doing this on LFR this is the end of wing 2.
 |confirm
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Raids\\Pandaria\\Heart of Fear",{
@@ -16732,9 +16767,21 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Heart of Fear Raid.",
 },[[
 step
+Click here if you are doing a normal clear of Heart of Fear |next "Normal HoF"
+Click here if you are doing LFR wings of Heart of Fear |next "LFR Index"
+confirm
+step
+label "LFR Index"
+talk Lorewalker Han##80633
+Click here if you are queueing for the First wing of Heart of Fear (Dread Approach to the Heart of Fear) |next "First_Wing_HoF"
+Click here if you are queueing for the Second wing of Heart of Fear (Nightmare of Shek'zeer) |next "Second_Wing_HoF"
+confirm
+step
+label "Normal HoF"
 Enter Heart of Fear |goto Dread Wastes/0 38.95,34.99 < 5
 confirm
 step
+label "First_Wing_HoF"
 map Heart of Fear/1
 path loop off
 path	34.3,76.4	41.3,61.5	50.6,61.4
@@ -16788,8 +16835,10 @@ _Pheromones_ is a debuff that deals 15,000 Nature damage every 2 seconds to the 
 _Crush_ deals 150,000 damage to the raid and knocks them down for 2 seconds. Any player underneath Garalon when this occurs takes an additional 800,000 damage.
 _Enrage_ occurs after 7 minutes of combat. It will greatly increase his attack speed and damage. This is designed to wipe the raid. Kill him before he reaches this stage to avoid death.
 |modelnpc Garalon##63191
+|tip If you are doing this on LFR this is the end of wing 1.
 |confirm
 step
+label "Second_Wing_HoF"
 map Heart of Fear/2
 path loop off
 path	68.3,26.3	69.2,37.8	66.8,38.0
@@ -16837,6 +16886,7 @@ _Visions of Demise_ is a debuff that affects 2 random players. After 4 seconds t
 _Consuming Terror_ inflicts 200,000 Shadow damage and Fears players in a _cone_ in front of Shek'zeer.
 After 150 seconds the boss will disappear and summon a group of adds. These are usually tanked apart so they don't increase each others' damage.
 |modelnpc Grand Empress Shek'zeer##62837
+|tip If you are doing this on LFR this is the end of wing 2.
 |confirm
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Raids\\Pandaria\\Terrace of Endless Spring",{
@@ -16910,9 +16960,23 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Throne of Thunder Raid.",
 },[[
 step
+Click here if you are doing a normal clear of the instance |next "Normal ToT"
+Click here if you are doing LFR wings of this instance |next "LFR ToT Index"
+confirm
+step
+label "LFR ToT Index"
+talk Lorewalker Han##80633
+Click here if you are queueing for the First wing of Throne of Thunder (Last Stand of the Zandalari) |next "First_Wing_ToT"
+Click here if you are queueing for the Second wing of Throne of Thunder (Forgotten Depths beneath the Throne of Thunder) |next "Second_Wing_ToT"
+Click here if you are queueing for the Third wing of Throne of Thunder (Twisted Mogu Halls of Flesh-Shaping) |next "Third_Wing_ToT"
+Click here if you are queueing for the Fourth wing of Throne of Thunder (Lei Shen's Pinnacle of Storms) |next "Fourth_Wing_ToT"
+confirm
+step
+label "Normal ToT"
 Enter Throne of Thunder |goto Isle of Thunder/0 63.61,32.44 < 5
 confirm
 step
+label "First_Wing_ToT"
 map Throne of Thunder/1
 path loop off
 path	34.9,23.7	39.8,23.8	46.2,25.8
@@ -16975,8 +17039,10 @@ _Twisted Fate_ links 2 players' souls together, dealing 250,000 Shadow damage ev
 |modelnpc Sul the Sandcrawler##69078
 |modelnpc Frost King Malakk##69131
 |modelnpc High Priestess Mar'li##69132
+|tip If you are doing this on LFR this is the end of wing 1.
 |confirm
 step
+label "Second_Wing_ToT"
 map Throne of Thunder/3
 path loop off
 path	20.3,82.0	24.6,82.5
@@ -17035,8 +17101,10 @@ _Down Draft_ summons a powerful draft of air that pushes players off the platfor
 _Infected Talons_ DoT that inflicts 30,000 Nature damage every 3 seconds.
 _Quils_ deals 65,000 damage every second to all players.
 |modelnpc Ji-Kun##69712
+|tip If you are doing this on LFR this is the end of wing 2.
 |confirm
 step
+label "Third_Wing_ToT"
 map Throne of Thunder/5
 path loop off
 path	77.0,10.6	71.1,12.9	71.2,15.8
@@ -17088,8 +17156,10 @@ _Anima Font_ affects a player with Touch of the Animus, causing them to shoot An
 _Anima Ring_ summons spheres in a circle around the taget, moving inward. Players that touch the spheres consume it, increasing melee damage taken by 200% per stack.
 _Interrupting Jolt_ deals 400,000 Nature damage and inerrupts the raid's spellcasting.
 |modelnpc Dark Animus##69427
+|tip If you are doing this on LFR this is the end of wing 3.
 |confirm
 step
+label "Fourth_Wing_ToT"
 map Throne of Thunder/5
 path loop off
 path	35.1,43.1	33.3,38.9	33.5,32.5
@@ -17141,13 +17211,28 @@ _Diffusion Chain_ deals 75,000 damage to the targeted player, then jumps to near
 _Decapitate_ usually affects the tank, dealing up to 3,000,000 damage. The damage dealt is decreased the further away the target is from Lei Shen.
 _Thunderstruck_ is an AoE that deals 1,000,000 damage to all players in the targeted area. Damage dealt is decreased the further away the area is from Lei Shen.
 |modelnpc Lei Shen##68397
+|tip If you are doing this on LFR this is the end of wing 4.
 |confirm
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Raids\\Pandaria (LFR)\\Vale of Eternal Sorrows (LFR)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Raids\\Pandaria\\Siege of Orgrimmar",{
 author="support@zygorguides.com",
-description="This guide will walk you through the Vale of Eternal Sorrows Raid.",
+description="This guide will walk you through the Siege of Orgrimmar Raid.",
 },[[
 step
+Click here if you are doing a normal clear of the instance |next "Normal SoO"
+Click here if you are doing LFR wings of the instance |next "LFR SoO Index"
+step
+label "LFR SoO Index"
+Click here if you are queueing for the First wing of Siege of Orgrimmar (Vale of Eternal Sorrows) |next "First_Wing_SoO"
+Click here if you are queueing for the Second wing of Siege of Orgrimmar (Gates of Retribution) |next "Second_Wing_SoO"
+Click here if you are queueing for the Third wing of Siege of Orgrimmar (Underhold beneath Orgrimmar) |next "Third_Wing_SoO"
+Click here if you are queueing for the Fourth wing of Siege of Orgrimmar (Downfall of Garrosh Hellscream) |next "Fourth_Wing_SoO"
+step
+label "Normal SoO"
+Enter Siege of Orgrimar |goto Vale of Eternal Blossoms/0 73.91,42.21
+confirm
+step
+label "First_Wing_SoO"
 map Siege of Orgrimmar/2
 path loop off
 path	89.3,45.2	79.3,57.3	59.1,49.6
@@ -17220,15 +17305,10 @@ _Wounded Pride_ applies a debuff to the target that causes them to gain 5 Pride 
 _Self-Reflection_ causes 5 players to spawn a reflection of themselves, creating 5 Reflection adds.
 _Unleashed_ occurs when Sha of Pride reaches 30% health. It deals 245,000 Shadow damage to the raid every 10 seconds for the rest of the fight. Kill the Sha of Pride as fast as possible to avoid death.
 modelnpc Sha of Pride##71734
+|tip If you are doing this on LFR this is the end of wing 1.
 confirm
 step
-Congratulations, you have finished this section of the Siege of Orgrimmar raid!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Raids\\Pandaria (LFR)\\Gates of Retribution (LFR)",{
-author="support@zygorguides.com",
-description="This guide will walk you through the Gates of Retribution Raid.",
-},[[
-step
+label "Second_Wing_SoO"
 map Siege of Orgrimmar/4
 path loop off
 path	84.0,28.6	76.7,30.8	79.8,38.5
@@ -17302,15 +17382,10 @@ _Kor'kron Banner_ summons a banner that causes Nazgrim's allies to generate addi
 _War Song_ deals damage to the entire raid, equal to 50% of each player's maximum health.
 _Ravager_ Nazgrim throws his sword, dealing 370,000-430,000 damage to players within 6 yards every second and granting Nazgrim 5 Rage for each player hit.
 modelnpc General Nazgrim##71515
+|tip If you are doing this on LFR this is the end of wing 2.
 confirm
 step
-Congratulations, you have finished this section of the Siege of Orgrimmar raid!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Raids\\Pandaria (LFR)\\The Underhold (LFR)",{
-author="support@zygorguides.com",
-description="This guide will walk you through the Underhold Raid.",
-},[[
-step
+label "Third_Wing_SoO"
 map Siege of Orgrimmar/8
 path loop off
 path	20.4,66.3	23.2,60.9	28.3,60.6
@@ -17364,15 +17439,10 @@ _Panic_ deals 200,000 damage in a _frontal cone_.
 _Scorching Breath_ deals 200,000 Fire damage in a _frontal cone_.
 _Tail Lash_ deals 200,000 damage to players behind Thok, also stunning them for 2 seconds.
 modelnpc Thok the Bloodthirsty##71529
+|tip If you are doing this on LFR this is the end of wing 3.
 confirm
 step
-Congratulations, you have finished this section of the Siege of Orgrimmar raid!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Raids\\Pandaria (LFR)\\Downfall (LFR)",{
-author="support@zygorguides.com",
-description="This guide will walk you through the Downfall Raid.",
-},[[
-step
+label "Fourth_Wing_SoO"
 map Siege of Orgrimmar/8
 path loop off
 path	73.0,43.4	82.2,58.6	89.9,62.0

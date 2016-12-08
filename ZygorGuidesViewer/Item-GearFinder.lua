@@ -73,7 +73,7 @@ function GearFinder:GetGearFinderItemScore(itemlink,invslot,verbose)
 
 	-- get true can equip status - ItemScore.SC_NOTYET,ItemScore.SC_BADPARAM,ItemScore.SC_LEVELREQ,ItemScore.SC_BADITEM
 	local cei_isvalid, cei_code, cei_desc, cei_restricted, cei_restrictInfo = ItemScore:CanEquipItem(itemlink)
-	if not cei_isvalid and cei_code~=ItemScore.SC_LEVELREQ then
+	if cei_isvalid=="REJECT" and cei_code~=ItemScore.SC_LEVELREQ then
 		-- if we cannot equip for reason other then level, abort
 		return -1,cei_code,cei_desc
 	end
@@ -82,17 +82,20 @@ function GearFinder:GetGearFinderItemScore(itemlink,invslot,verbose)
 	local gis_score, gis_code, gis_desc = ZGV.ItemScore:GetItemScore(itemlink,invslot,true,verbose)
 
 	if not ivd_isvalid then
+		-- item is not valid due to dungeon restrictions
 		if cei_restricted=="level" and cei_restrictInfo>ivd_restrictInfo then
+			-- item has lvl requirement, so use them
 			return gis_score, ivd_code, ivd_desc, cei_restricted, cei_restrictInfo
 		else
+			-- use dungeon lvl reqs
 			return gis_score, ivd_code, ivd_desc, ivd_restricted, ivd_restrictInfo
 		end
-	elseif not cei_isvalid then
+	elseif cei_isvalid=="REJECT" then
+		-- item failed for reason other than lvl reqs
 		return gis_score, cei_code, cei_desc, cei_restricted, cei_restrictInfo
-	else
-		return gis_score, gis_code, gis_desc
 	end
-	return score,code,desc,restricted,restrictInfo
+	-- item seems to be good/r
+	return gis_score, gis_code, gis_desc
 end
 
 

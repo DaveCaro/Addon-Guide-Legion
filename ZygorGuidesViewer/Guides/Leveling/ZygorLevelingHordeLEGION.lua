@@ -16180,6 +16180,89 @@ Walk onto the teleport pad |goto 53.12,71.50 < 7 |only if walking
 Follow the path |goto 54.46,72.23 < 20 |only if walking
 talk Archmage Khadgar##115039
 turnin Fighting on All Fronts##45317 |goto 54.89,72.87
+step
+talk First Arcanist Thalyssra##115736
+accept Before the Siege##45267 |goto Suramar/0 36.48,46.75 |region suramar_shalaran
+step
+Use the Fruit of the Arcan'dor on a Suramar Refugee |use Fruit of the Arcan'dor##143597
+|tip There are Suramar Refugees all around inside the cave.
+Cure a Suramar Refugee |q 45267/1 |goto 37.49,47.44 |region suramar_shalaran
+step
+talk First Arcanist Thalyssra##115736
+turnin Before the Siege##45267 |goto Suramar/0 36.48,46.75 |region suramar_shalaran
+accept Gates of the Nighthold##44736 |goto Suramar/0 36.48,46.75 |region suramar_shalaran
+step
+click Portal to Astravar Harbor |goto 36.74,45.05 |region suramar_shalaran
+talk Archmage Khadgar##115039
+Tell him "I'm ready for the siege."
+Speak with Archmage Khadgar at Astravar Harbor |q 44736/1 |goto 54.88,72.84
+step
+talk Archmage Khadgar##115039
+turnin Gates of the Nighthold##44736 |goto 54.88,72.84
+accept Temporal Investigations##44822 |goto 54.88,72.84
+step
+Watch the Dialogue
+Run through the Time Lock with Khadgar by your side killing any enemies down the line
+Help Khadgar investigate the time lock |q 44822/1 |goto 56.64,75.43
+step
+talk Archmage Khadgar##115039
+turnin Temporal Investigations##44822 |goto 54.88,72.84
+step
+talk First Arcanist Thalyssra##115506
+accept Those Scrying Eyes##45209 |goto 54.97,72.76
+step
+Follow the path around |goto 54.81,72.52 < 20 |only if walking
+Follow the path around |goto 52.45,68.95 < 20 |only if walking
+Follow the path |goto 47.88,62.12 < 20 |only if walking
+Follow the path |goto 46.70,59.92 < 20 |only if walking
+Follow the path down the stairs |goto 47.24,59.36 < 20 |only if walking
+Continue following the path down the stairs |goto 48.50,62.10 < 20 |only if walking
+click Duskwatch Scrying Orb
+Inspect the First Duskwatch Scrying Orb |q 45209/1 |count 1 |goto 49.95,61.99
+|tip Inside the building.
+step
+Inspect the Second Duskwatch Scrying Orb |q 45209/1 |count 2 |goto 50.39,63.15
+|tip Inside the building.
+step
+Inspect the Third Duskwatch Scrying Orb |q 45209/1 |count 3 |goto 51.31,62.31
+|tip Inside the building.
+step
+Inspect the Third Duskwatch Scrying Orb |q 45209/1 |count 4 |goto 50.88,61.17
+|tip Inside the building.
+step
+talk First Arcanist Thalyssra##115736
+turnin Those Scrying Eyes##45209 |goto 36.49,45.85 |region suramar_shalaran
+accept Scouting the Breach##44832 |goto 36.49,45.85 |region suramar_shalaran
+step
+click Portal to Sanctum of Order
+Take the Sanctum of Order Teleporter |q 44832/1 |goto 36.69,44.74 |region suramar_shalaran
+step
+Meet with Valtrois below the Sanctum of Order |q 44832/2 |goto 42.65,60.96 |region suramar_sanctum_of_order
+step
+Kill all enemies while following this path down
+Follow the path down the stairs |goto 42.04,60.50 < 5 |region suramar_sanctum_depths
+Continue following the path down the stairs |goto 42.82,58.83 < 5 |region suramar_sanctum_depths
+Clear a path to the barrier beneath the Sanctum of Order |q 44832/3 |goto 43.93,59.80 |region suramar_sanctum_depths
+step
+Watch the Dialogue
+Wait with Valtrois while she examines the barrier |q 44832/4 |goto 44.06,59.96 |region suramar_sanctum_depths
+step
+talk Arcanist Valtrois##115524
+turnin Scouting the Breach##44832 |goto 44.01,59.76 |region suramar_sanctum_depths
+accept The Seal's Power##44833 |goto 44.01,59.76 |region suramar_sanctum_depths
+step
+Follow the path |goto 63.63,43.09 < 20 |only if walking
+Continue following the path |goto 61.90,45.82 < 20 |only if walking
+Follow the path |goto 59.12,44.80 < 20 |only if walking
+Follow the path down the stairs |goto 59.28,42.85 < 20 |only if walking
+Enter the building |goto 59.28,42.85 < 5
+Meet Valtrois in Kel'balor |q 44833/1 |goto Suramar/35 42.43,54.44
+step
+Kill the enemies that run up
+Protect Valtrois while she investigates the ley line device |q 44833/2 |goto Suramar/35 50.46,44.36
+step
+talk First Arcanist Thalyssra##115736
+turnin The Seal's Power##44833 |goto 36.49,45.85 |region suramar_shalaran
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Legion (100-110)\\Order Hall Quests",{
 author="support@zygorguides.com",
@@ -19606,8 +19689,8 @@ collect The Raven's Eye##139319 |q 42678/1
 |only Rogue
 step
 talk Valeera Sanguinar##110164
-turnin Into Black Rook Hold##42678 |goto 40.43,52.87
-accept Deciphering the Letter##42680 |goto 40.43,52.87
+turnin Into Black Rook Hold##42678 |goto Dalaran L/4 40.79,75.43
+accept Deciphering the Letter##42680 |goto Dalaran L/4 40.79,75.43
 |only Rogue
 step
 click The Raven's Eye
@@ -27652,6 +27735,7 @@ accept The Frozen Soul##44282 |goto 58.19,31.17
 step
 talk Highlord Darion Mograine##93437
 accept The Fourth Horseman##43686 |goto 51.03,50.45
+|tip You may need to relog to get this quest to show up.
 |only DeathKnight
 step
 Arrive at Light's Hope Chapel |q 43686/1 |goto Eastern Plaguelands/0 71.35,48.13

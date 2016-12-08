@@ -161,7 +161,7 @@ path	49.1,33.6	49.1,33.7	49.4,24.5
 path	58.8,23.3
 Follow the path |goto Bloodmaul Slag Mines/1 58.8,23.3 < 10 |noway |c
 step "Head"
-from Bloodmaul Slaver##75191+, Bloodmaul Enforcer##84978+, Bloodmaul Overseer##75193+, Bloodmaul Geomancer##75198+, Bloodmaul Ogre Mage##75272+, Bloodmaul Warder##75210+
+kill Bloodmaul Slaver##75191+, Bloodmaul Enforcer##84978+, Bloodmaul Overseer##75193+, Bloodmaul Geomancer##75198+, Bloodmaul Ogre Mage##75272+, Bloodmaul Warder##75210+
 collect Giant Ogre Head ##118534 |q A Fruitful Proposition##37228/1 |only if havequest(37228)
 collect Giant Ogre Head ##118534 |q Cro's Revenge##37152/1 |only if havequest(37152)
 |tip This has a chance to drop off of ogres in the instance.
@@ -1147,7 +1147,9 @@ description="This guide will walk you through the Highmaul - Walled City raid.",
 lfgid=849,
 },[[
 step
-Press _I_ and queue for Highmaul - Walled City |goto Highmaul/2 36.5,35.5 |noway |c
+talk Seer Kazal##94870 |goto Frostwall/0 41.44,47.10
+Queue yourself for Wailed City
+Enter the first wing of Highmaul |goto Highmaul/2 36.5,35.5 |noway |c
 confirm
 step
 talk Gharg##84971
@@ -1245,7 +1247,9 @@ description="This guide will walk you through the Highmaul - Arcane Sanctum raid
 lfgid=850,
 },[[
 step
-Press _I_ and queue for Highmaul - Arcane Sanctum |goto Highmaul/3 38.9,38.7 |noway |c
+talk Seer Kazal##94870 |goto Frostwall/0 41.44,47.10
+Queue yourself for Arcane Sanctum
+Enter the Second wing of Highmaul |goto Highmaul/3 38.9,38.7 |noway |c
 confirm
 step
 map Highmaul/1
@@ -1351,7 +1355,9 @@ description="This guide will walk you through the Highmaul - Imperator's Rise ra
 lfgid=851,
 },[[
 step
-Press _I_ and queue for Highmaul - Imperator's Rise |goto Highmaul/6 47.1,29.5 |noway |c
+talk Seer Kazal##94870 |goto Frostwall/0 41.44,47.10
+Queue yourself for Imperator's Rise
+Enter the Third wing of Highmaul - Imperator's Rise |goto Highmaul/6 47.1,29.5 |noway |c
 confirm
 step
 _Go through_ the doors |goto Highmaul/6 45.8,60.6 < 12 |noway |c
@@ -1391,7 +1397,9 @@ description="This guide will walk you through the Blackrock Foundry - Slagworks 
 lfgid=847,
 },[[
 step
-Press _I_ and queue for Blackrock Foundry - Slagworks |goto Blackrock Foundry/3 40.9,86.4 |noway |c
+talk Seer Kazal##94870 |goto Frostwall/0 41.44,47.10
+Queue yourself for Slagworks
+Enter the First wing of Blackrock Foundry |goto Blackrock Foundry/3 40.9,86.4 |noway |c
 confirm
 step
 map Blackrock Foundry/3
@@ -1501,7 +1509,9 @@ description="This guide will walk you through the Blackrock Foundry - The Black 
 lfgid=846,
 },[[
 step
-Press _I_ and queue for Blackrock Foundry - The Black Forge |goto Blackrock Foundry/3 40.9,86.4 |noway |c
+talk Seer Kazal##94870 |goto Frostwall/0 41.44,47.10
+Queue yourself for The Black Forge
+Enter the Second wing of Blackrock Foundry |goto Blackrock Foundry/3 40.9,86.4 |noway |c
 confirm
 step
 map Blackrock Foundry/3
@@ -1611,7 +1621,9 @@ description="This guide will walk you through the Blackrock Foundry - Iron Assem
 lfgid=848,
 },[[
 step
-Press _I_ and queue for Blackrock Foundry - Iron Assembly |goto Blackrock Foundry/3 40.9,86.4 |noway |c
+talk Seer Kazal##94870 |goto Frostwall/0 41.44,47.10
+Queue yourself for Iron Assembly
+Enter the Third wing of Blackrock Foundry |goto Blackrock Foundry/3 40.9,86.4 |noway |c
 confirm
 step
 map Blackrock Foundry/3
@@ -1733,7 +1745,9 @@ description="This guide will walk you through the Blackrock Foundry - Blackhand'
 lfgid=823,
 },[[
 step
-Press _I_ and queue for Blackrock Foundry - Blackhand's Crucible |goto Blackrock Foundry/3 40.9,86.4 |noway |c
+talk Seer Kazal##94870 |goto Frostwall/0 41.44,47.10
+Queue yourself for Blackhand's Crucible
+Enter the Fourth wing of Blackrock Foundry |goto Blackrock Foundry/3 40.9,86.4 |noway |c
 confirm
 step
 map Blackrock Foundry/3
@@ -1790,7 +1804,9 @@ description="This guide will walk you through the Hellfire Citadel - Hellbreach 
 lfgid=982,
 },[[
 step
-Press _I_ and queue for Hellfire Citadel - Hellbreach |goto Hellfire Citadel/1 69.6,43.5 |noway |c
+talk Seer Kazal##94870 |goto Frostwall/0 41.44,47.10
+Queue yourself for Hellbreach
+Enter the First wing of Hellfire Citadel |goto Hellfire Citadel/1 69.6,43.5 |noway |c
 confirm
 step
 kill Siegemaster Mar'tak##95068 |goto Hellfire Citadel/1 55.2,48.1
@@ -1881,7 +1897,9 @@ description="This guide will walk you through the Hellfire Citadel - Halls of Bl
 lfgid=983,
 },[[
 step
-Press _I_ and queue for Hellfire Citadel - Halls of Blood |goto Hellfire Citadel/5 81.6,11.8 |noway |c
+talk Seer Kazal##94870 |goto Frostwall/0 41.44,47.10
+Queue yourself for Halls of Blood
+Enter the Second wing of Hellfire Citadel |goto Hellfire Citadel/5 81.6,11.8 |noway |c
 confirm
 step
 map Hellfire Citadel/5
@@ -1999,7 +2017,9 @@ description="This guide will walk you through the Hellfire Citadel - Bastion of 
 lfgid=984,
 },[[
 step
-Press _I_ and queue for Hellfire Citadel - Bastion of Shadows |goto Hellfire Citadel/6 62.1,76.8 |noway |c
+talk Seer Kazal##94870 |goto Frostwall/0 41.44,47.10
+Queue yourself for Bastion of Shadows
+Enter the Third wing of Hellfire Citadel |goto Hellfire Citadel/6 62.1,76.8 |noway |c
 confirm
 step
 kill Shadow-Lord Iskar##90316 |goto Hellfire Citadel/6 38.9,76.6
@@ -2082,7 +2102,9 @@ description="This guide will walk you through the Hellfire Citadel - Destructor'
 lfgid=985,
 },[[
 step
-Press _I_ and queue for Hellfire Citadel - Hellbreach |goto Hellfire Citadel/6 44.4,48.2 |noway |c
+talk Seer Kazal##94870 |goto Frostwall/0 41.44,47.10
+Queue yourself for Destructor's Rise
+Enter the Fourth wing of Hellfire Citadel |goto Hellfire Citadel/6 44.4,48.2 |noway |c
 confirm
 step
 map Hellfire Citadel/6
@@ -2184,7 +2206,9 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Hellfire Citadel - The Black Gate raid.",
 },[[
 step
-Press _I_ and queue for Hellfire Citadel - The Black Gate |goto Hellfire Citadel/10 40.1,51.0 < 100 |noway |c
+talk Seer Kazal##94870 |goto Frostwall/0 41.44,47.10
+Queue yourself for The Black Gate
+Enter the Fifth wing of Hellfire Citadel |goto Hellfire Citadel/10 40.1,51.0 < 100 |noway |c
 confirm
 step
 kill Archimonde##91331 |goto Hellfire Citadel/10 58.4,53.3
@@ -2272,7 +2296,8 @@ keywords={"HM","IR","High","Maul","LFR"},
 description="This guide will walk you through the Normal and Heroic versions of the Highmaul raid.",
 },[[
 step
-Enter Highmaul with your group |goto Highmaul/2 36.4,35.3 < 50 |c
+Enter Highmaul |goto Nagrand D/0 32.98,38.37 < 5
+confirm
 step
 talk Gharg##84971 |goto Highmaul/2 46.5,47.2 < 10
 Tell him _"We are ready, Gharg!"_
@@ -2498,9 +2523,9 @@ keywords={"HM","IR","High","Maul","Mythic"},
 description="This guide will walk you through the Mythic version of the Highmaul raid.",
 },[[
 step
-Enter Highmaul with your group |goto Highmaul/2 36.4,35.3 < 50 |c
-|tip This is the hardest difficulty in the game, and to kill these bosses you will need a high item level and you will need to perform the mechanics flawlessly.
+Enter Highmaul |goto Nagrand D/0 32.98,38.37 < 5
 |tip Some bosses are easier than others, and this is the suggested route to take for progression, going from easiest to hardest: Kargath Bladefist, Twin Ogron, Tectus, Brackenspore, Ko'ragh, Butcher, then Imperator Mar'gok.
+confirm
 step
 talk Gharg##84971 |goto Highmaul/2 46.5,47.2 < 10
 Tell him _"We are ready, Gharg!"_
@@ -2796,7 +2821,8 @@ keywords={"BRF","BC","Normal","Heroic","LFR"},
 description="This guide will walk you through the Normal and Heroic versions of the Blackrock Foundry raid.",
 },[[
 step
-Enter Blackrock Foundry with your group |goto Blackrock Foundry/3 40.9,86.4 < 10 |c
+Enter Blackrock Foundry |goto Gorgrond/0 51.55,27.27 < 10
+confirm
 step
 map Blackrock Foundry/3
 path follow smart; loop off; ants curved; dist 15
@@ -3173,9 +3199,9 @@ keywords={"BRF","BC","Mythic"},
 description="This guide will walk you through the Mythic version of the Blackrock Foundry raid.",
 },[[
 step
-Enter Blackrock Foundry with your group |goto Blackrock Foundry/3 40.9,86.4 < 10 |c
-|tip This is the hardest difficulty in the game, and to kill these bosses you will need a high item level and you will need to perform the mechanics flawlessly.
+Enter Blackrock Foundry with your group |goto Gorgrond/0 51.55,27.27 < 10
 |tip Some bosses are easier than others, and this is the suggested route to take for progression, going from easiest to hardest: Beastlord Darmac, Oregorger, Hans'gar and Franzok, Flamebender Ka'graz, Gruul, Kromog, Operator Thogar, The Iron Maidens, The Blast Furnace, and Blackhand.
+confirm
 step
 map Blackrock Foundry/3
 path follow smart; loop off; ants curved; dist 15
@@ -3671,7 +3697,8 @@ keywords={"HFC","LFR"},
 description="This guide will walk you through the Normal and Heroic versions of the Hellfire Citadel raid.",
 },[[
 step
-Enter Hellfire Citadel with your group |goto Hellfire Citadel/1 69.6,43.5 < 10 |c
+Enter Hellfire Citadel |goto Tanaan Jungle/0 45.60,53.57 < 10
+confirm
 step
 kill Siegemaster Mar'tak##95068 |goto Hellfire Citadel/1 55.2,48.1
 _Tanks:_ |only if grouprole("TANK")
@@ -4171,9 +4198,9 @@ keywords={"HFC","Mythic"},
 description="This guide will walk you through the Mythic version of the Hellfire Citadel raid.",
 },[[
 step
-Enter Hellfire Citadel with your group |goto Hellfire Citadel/1 69.6,43.5 < 10 |c
-|tip This is the hardest difficulty in the game, and to kill these bosses you will need a high item level and you will need to perform the mechanics flawlessly.
+Enter Hellfire Citadel |goto Tanaan Jungle/0 45.60,53.57 < 10
 |tip Some bosses are easier than others, and this is the suggested route to take for progression, going from easiest to hardest: Hellfire Assault, Iron Reaver, Kormrok, Hellfire High Council, Kilrogg Deadeye, Gorefiend(this is a very hard boss but is required to advance), Shadow-Lord Iskar, Socrethar the Eternal, Fel Lord Zakuun, Tyrant Velhari, Xhul'horac, Mannoroth, and Archimonde.
+confirm
 step
 kill Siegemaster Mar'tak##95068 |goto Hellfire Citadel/1 55.2,48.1
 |tip There should be 2 groups one for each side these groups should consist of 1 tank, 2 healers, 7 dps.

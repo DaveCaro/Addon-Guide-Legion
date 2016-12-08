@@ -4403,17 +4403,17 @@ step
 Click here to proceed to the Detention Block section |confirm |or
 Click here to skip to the Upper City section |confirm |next "Prospect" |or
 step
-talk Jalinda Sprig##45892
-accept Into the Prison##27565 |goto Blackrock Depths 36.2,77.3
-only if not completedq(27565)
+talk Thal'trak Proudtusk##45821
+accept Into the Prison##27579 |goto Blackrock Depths 36.2,77.3
+only if not completedq(27579)
 step
 talk Tinkee Steamboil##45849
 accept The Sealed Gate##27603 |goto 37.3,80.1
 only if not completedq(27603)
 step
-talk Oralius##45891
-accept Infiltrating Shadowforge City##27568 |goto 36.7,74.5
-only if not completedq(27568)
+talk Galamav the Marksman##45839
+accept Infiltrating Shadowforge City##27582 |goto 36.7,74.5
+only if not completedq(27582)
 step
 kill Lord Roccor##9025
 |tip As you follow the path, keep an eye out for Roccor.
@@ -4433,19 +4433,7 @@ kill Houndmaster Grebmar##9319 |goto Blackrock Depths/1 50.7,63.0
 |tip Kill the wolves first, and quickly. Bloodlust will increase their damage and make them much more deadly
 |tip At 15% health, Grebmar will attempt to Run Away! Run Away!. Kill him before he can flee
 confirm |or
-Click here to skip Houndmaster Grebmar |confirm |next "NoGrembar" |or
-step
-label "NoGrembar"
-kill Lord Roccor##9025
-|tip As you follow the path, keep an eye out for Roccor.
-map Blackrock Depths/1
-path follow smart; loop off; ants curved; dist 15
-path	39.3,75.6	42.6,72.1	46.5,61.9
-path	48.6,56.8	52.7,56.5	56.6,61.7
-path	56.1,66.7	53.8,70.7	48.2,72.5
-Follow the path |goto 48.2,72.5 < 10 |noway |c |next "DawsonsCreek" |or
-Click here to skip all optional bosses and kill High Interrogator Gerstahn |confirm |next "DawsonsCreek"
-Proceeding to Ring of Law |goto Blackrock Depths/1 51.6,70.5 < 15 |noway |c |next "RoL" |or |'
+Click here to skip Houndmaster Grebmar |confirm |next "RoL" |or
 step
 label "RoL"
 You will have to clear a few waves of trash and a minor mini-boss
@@ -4456,23 +4444,13 @@ You will have to clear a few waves of trash and a minor mini-boss
 |tip Hedrum the Creeper: Crazed will cause Hedrum to drop threat periodically
 |tip Gorosh the Dervish: Whirlwind will hit anyone within 8 yards. Dispel Bloodlust
 scenariogoal 25074 |goto Blackrock Depths/1 50.5,62.9 |or
-Click here to skip the Ring of Law |confirm |next "NoRoL" |or
-step
-label "NoRoL"
-kill Lord Roccor##9025 |tip As you follow the path, keep an eye out for Roccor.
-map Blackrock Depths/1
-path follow smart; loop off; ants curved; dist 15
-path	39.3,75.6	42.6,72.1	46.5,61.9
-path	48.6,56.8	52.7,56.5	56.6,61.7
-path	56.1,66.7	53.8,70.7	48.2,72.5
-Follow the path |goto 48.2,72.5 < 10 |noway |c |next "DawsonsCreek" |or
-Click here to skip all optional bosses and kill High Interrogator Gerstahn |confirm |next "DawsonsCreek"
+Click here to skip the Ring of Law |confirm |next "DawsonsCreek" |or
 step
 label "DawsonsCreek"
-talk Kevin Dawson##45898
-turnin Into the Prison##27565 |goto 44.31,77.84
-accept Twilight?! No!##27567 |goto 44.42,77.75
-only if not completedq(27567)
+talk Lexlort##45818
+turnin Into the Prison##27579 |goto 44.31,77.84
+accept Twilight?! No!##27581 |goto 44.42,77.75
+only if not completedq(27581)
 step
 map Blackrock Depths/1
 path follow smart; loop off; ants curved; dist 15
@@ -4480,20 +4458,23 @@ path	45.2,80.0	46.1,85.2	47.0,90.3
 Follow the path |goto 47.0,90.3 < 8 |noway |c
 tip Be careful, the side rooms are full of enemies and will most likely aggro.
 step
-kill High Interrogator Gerstahn##9018
+kill High Interrogator Gerstahn##9018 |goto Blackrock Depths/1 47.6,93.2
 Interrupt _Mana Burn_
 Stay at distance to avoid being feared by _Psychic Scream_ (8 yards)
 Dispel _Shadow Word: Pain_ and _Shadow Shield_
-scenariogoal 25075 |goto Blackrock Depths/1 47.6,93.2
+scenariogoal 1/25075
+step
+Slay High Interrogator Gerstahn |q 27581/1 |goto Blackrock Depths/1 47.6,93.2
+only if not completedq(27581)
 step
 map Blackrock Depths/1
 path follow smart; loop off; ants curved; dist 15
 path	47.0,90.3	46.1,85.2	45.2,80.0
 Follow the path |goto 45.2,80.0 < 8 |noway |c
 step
-talk Kevin Dawson##45898
-turnin Twilight?! No!##27567 |goto 44.42,77.75
-only if not completedq(27567)
+talk Lexlort##45818
+turnin Twilight?! No!##27581 |goto 44.42,77.75
+only if not completedq(27581)
 step
 map Blackrock Depths/1
 path follow smart; loop off; ants curved; dist 15
@@ -4588,10 +4569,10 @@ path	39.5,66.8
 Follow the path |goto Blackrock Depths/1 39.5,66.8 |noway |c
 step
 label "Prospect"
-talk Prospector Seymour##45894
-turnin Infiltrating Shadowforge City##27568 |goto 40.95,67.21
-accept Dark Iron Tacticians##27569 |goto 40.95,67.21
-only if not completedq(27569)
+talk Razal'blade##45820
+turnin Infiltrating Shadowforge City##27582 |goto 40.95,67.21
+accept The 109th Division##27585 |goto 40.95,67.21
+only if not completedq(27585)
 step
 Click the Shadowforge Lock |goto Blackrock Depths/2 41.4,88.3 |scenariogoal 25080
 step
@@ -4621,10 +4602,10 @@ path follow smart; loop off; ants curved; dist 15
 path	36.6,69.6	40.0,68.8	46.8,65.2
 Follow the path |goto Blackrock Depths/2 46.8,65.2 < 10 |noway |c
 step
-talk Mayara Brightwing##45888
-turnin Dark Iron Tacticians##27569 |goto 46.88,66.11
-accept The Grim Guzzler##27571 |goto 46.88,66.12
-only if not completedq(27571)
+talk Hierophant Theodora Mulvadania
+turnin The 109th Division##27585 |goto 46.88,66.11
+accept The Grim Guzzler##27589 |goto 46.88,66.12
+only if not completedq(27589)
 step
 click Thunderbrew Lager Keg##8386
 |tip Destroy all 3 kegs.
@@ -4675,10 +4656,10 @@ path	53.4,62.4	Blackrock Depths/1 54.0,27.0
 path	51.7,53.5
 Follow the path |goto Blackrock Depths/2 51.7,53.5 < 8 |noway |c
 step
-talk Mountaineer Orfus##45899
-turnin The Grim Guzzler##27571 |goto 50.76,52.64
-accept The Dark Iron Pact##27573 |goto 50.76,52.64
-only if not completedq(27573)
+talk Thunderheart##45824
+turnin The Grim Guzzler##27589 |goto 50.76,52.64
+accept The Dark Iron Pact##27591 |goto 50.76,52.64
+only if not completedq(27591)
 step
 kill Ambassador Flamelash##9156
 |tip Flamelash will summon Burning Spirits from the runes around the room
@@ -4698,10 +4679,10 @@ Tell him: "_Your bondage is at an end, Doom'rel. I challenge you!_"
 |tip One of the Seven will attack at a time until they are all dead
 scenariogoal 25078 |goto Blackrock Depths/2 56.7,21.8
 step
-talk Marshal Maxwell##45890
-turnin The Dark Iron Pact##27573 |goto 58.08,22.23
-accept Morgan's Fruition##27578 |goto 58.08,22.23
-only if not completedq(27578)
+talk Warlord Goretooth##45840
+turnin The Dark Iron Pact##27591 |goto 58.08,22.23
+accept Rebirth of the K.E.F.##27593 |goto 58.08,22.23
+only if not completedq(27593)
 step
 kill Shadowforge Flame Keeper##9956
 |tip These guys wander all around The Lyceum. You will need to kill them and collect 2 Shadowforge Torches.
@@ -4728,9 +4709,9 @@ map Blackrock Depths/2
 path follow smart; loop off; ants curved; dist 15
 path	85.1,11.9	74.8,12.9	70.3,16.9
 path	62.0,17.1	60.0,19.9
-talk Marshal Maxwell##45890
-turnin Morgan's Fruition##27578 |goto 58.08,22.25
-only if havequest(27578)
+talk Warlord Goretooth##45840
+turnin Rebirth of the K.E.F.##27593 |goto 58.08,22.25
+only if havequest(27593)
 step
 Congratulations, you have completed Blackrock Depths!
 ]])
@@ -11570,6 +11551,9 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Karazhan Raid.",
 },[[
 step
+Enter Karazhan |goto Deadwind Pass/0 46.97,74.91 < 5
+confirm
+step
 map Karazhan/1
 path loop off
 path	50.0,72.3	49.1,84.9	42.3,86.2
@@ -11886,6 +11870,9 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Sunwell Plateau Raid.",
 },[[
 step
+Enter Sunwell Plateau |goto Isle of Quel'Danas/0 44.26,45.56 < 5
+confirm
+step
 map Sunwell Plateau/1
 path loop off
 path	33.9,43.3	36.6,51.5	33.7,58.3
@@ -12079,6 +12066,9 @@ Follow the Custodian of Time as she travels around the Cavern. |q 10277/1 |goto 
 |modelnpc Custodian of Time##20129
 |only if havequest(10277)
 step
+Enter Hyjal Summit |goto Tanaris/18 35.90,15.68 < 5
+confirm
+step
 talk Lady Jaina Proudmoore##17772 |goto Hyjal Summit 10.5,63.8
 Tell her "My companions and I are with you."
 |tip This will start the first boss fight, so make sure you are ready.
@@ -12251,6 +12241,9 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Gruul's Lair Raid.",
 },[[
 step
+Enter Gruul's Lair |goto Blade's Edge Mountains/0 69.29,23.75 < 5
+confirm
+step
 kill High King Maulgar##18831 |goto Gruul's Lair 55,57
 |tip Arcing Smash deals damage to the target and any raid members near the target. It hits as a cleave, so make sure the tank is the only one in front of Maulgar when this happens.
 |tip Berserker Charge causes Maulgar to charge his current target, an additional 300 damage and knocking them back.
@@ -12291,6 +12284,9 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Magtheridon's Lair Raid.",
 },[[
 step
+Enter Magtheridon's Lair |goto Hellfire Peninsula/0 47.49,52.10 < 5
+confirm
+step
 map Magtheridon's Lair
 path loop off
 path	68.4,25.6	68.6,48.0	63.6,59.3
@@ -12324,6 +12320,9 @@ mapid=780,
 author="support@zygorguides.com",
 description="This guide will walk you through the Serpentshrine Cavern Raid.",
 },[[
+step
+Enter the Serpentshrine Cavern |indoors Coilfang Reservoir |goto Zangarmarsh/0 51.90,32.99 < 5
+confirm
 step
 Take the elevator down |goto Serpentshrine Cavern 13.5,58.9 <5 |c
 step
@@ -12470,6 +12469,9 @@ author="support@zygorguides.com",
 description="This guide will walk you through The Eye Raid.",
 },[[
 step
+Enter The Eye |goto Netherstorm/0 73.65,63.73
+confirm
+step
 map Tempest Keep
 path loop off
 path	50.0,87.6	50.1,75.6	50.1,65.5
@@ -12571,6 +12573,9 @@ mapid=796,
 author="support@zygorguides.com",
 description="This guide will walk you through the Black Temple Raid.",
 },[[
+step
+Enter Black Temple |goto Shadowmoon Valley/0 71.03,46.36 < 5
+confirm
 step
 map Black Temple/2
 path loop off; dist 15
@@ -12802,6 +12807,10 @@ mapid=535,
 author="support@zygorguides.com",
 description="This guide will walk you through the Naxxramas Raid.",
 },[[
+step
+Enter Naxxramas |goto Dragonblight/0 87.41,51.10 < 5
+|tip The entrance is in the building up in the air.
+confirm
 step
 This raid has 5 different sections. You can start at any of them.
 Click here to start in the Arachnid Quarter |next "arachnidstart" |confirm
@@ -13558,7 +13567,8 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Onyxia's Lair Raid.",
 },[[
 step
-Enter Onyxia's Lair |goto Onyxia's Lair/1 34.3,20.9 |c
+Enter Onyxia's Lair |goto Dustwallow Marsh/0 52.86,77.40
+confirm
 step
 kill 1 Onyxian Warder##12129
 map Onyxia's Lair/1
@@ -13647,6 +13657,9 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Eye of Eternity Raid.",
 },[[
 step
+Enter The Eye of Eternity |goto Borean Tundra/0 27.59,26.56 < 5
+confirm
+step
 Click the Focusing Iris to start the fight. |goto The Eye of Eternity/1 37.7,50.7
 |confirm
 step
@@ -13688,6 +13701,9 @@ mapid=529,
 author="support@zygorguides.com",
 description="This guide will walk you through the Ulduar Raid.",
 },[[
+step
+Enter Ulduar |goto The Storm Peaks/0 41.55,17.96 < 5
+confirm
 step
 talk Brann Bronzebeard##33579 |goto Ulduar/1 49.9,86.0
 Tell him "We're ready. Begin the assault!"
@@ -14378,6 +14394,9 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Trial of the Crusader Raid.",
 },[[
 step
+Enter Trial of the Crusader |goto Icecrown/0 75.10,21.82 < 5
+confirm
+step
 talk Barrett Ramsey##34816 |goto Trial of the Crusader/1 64.8,54.1
 Tell him "Yes. We are prepared for the challenges ahead of us."
 This will start the first boss fight, make sure you are ready.
@@ -14645,6 +14664,9 @@ mapid=543,
 author="support@zygorguides.com",
 description="This guide will walk you through the Trial of the Grand Crusader Raid.",
 },[[
+step
+Enter Trial of the Crusader |goto Icecrown/0 75.10,21.82 < 5
+confirm
 step
 The major difference between this raid and the Trial of the Crusader is the Argent Crusade Tribute Chest.
 All boss encounters in this raid are in Heroic Mode and the raid is given 50 attempts to complete it.
@@ -14921,6 +14943,9 @@ mapid=604,
 author="support@zygorguides.com",
 description="This guide will walk you through the Icecrown Citadel Raid.",
 },[[
+step
+Enter Icecrown Citadel |goto Icecrown/0 53.79,87.04 < 5
+confirm
 step
 map Icecrown Citadel/1
 path loop off
@@ -15487,6 +15512,9 @@ step
 This raid can only be completed if your faction controls Baradin Hold, the main fortress on Tol Barad.
 |confirm
 step
+Enter Baradin Hold |goto Tol Barad/0 47.69,52.58 < 5
+confirm
+step
 map Baradin Hold/1
 path loop off
 path	48.0,72.5	54.6,62.9	70.8,62.9
@@ -15523,6 +15551,9 @@ mapid=754,
 author="support@zygorguides.com",
 description="This guide will walk you through the Blackwing Descent Raid.",
 },[[
+step
+Enter Blackwing Descent |goto Burning Steppes/0 23.17,26.40 < 5
+confirm
 step
 map Blackwing Descent/1
 path loop off
@@ -15690,6 +15721,10 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Bastion of Twilight Raid.",
 },[[
 step
+Enter The Bastion of Twilight |goto Twilight Highlands/0 34.01,77.88 < 5
+|tip The instance portal is located high up in the air.
+confirm
+step
 map The Bastion of Twilight/1
 path loop off
 path	39.6,42.7	39.6,19.8	46.6,19.4
@@ -15841,6 +15876,9 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Firelands Raid.",
 },[[
 step
+Enter Firelands |goto Mount Hyjal/0 47.58,77.90 < 5
+confirm
+step
 map Firelands/1
 path loop off
 path	33.2,77.0	41.7,70.4	32.9,52.8
@@ -15976,6 +16014,10 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Throne of the Four Winds Raid.",
 },[[
 step
+Enter Throne of the Four Winds |goto Uldum/0 38.45,80.57 < 5
+|tip The entrance to this raid is located on a platform high in the air.
+confirm
+step
 Conclave of Wind |goto Throne of the Four Winds/1 47.5,26
 _Anshal_
 |tip Soothing Winds summons a green circle on a random player. This heals all players inside it for 20,000 health every second, but also silencing and pacifying them.
@@ -16039,7 +16081,22 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Dragon Soul Raid.",
 },[[
 step
-kill Morchok |goto Dragon Soul/1 50.6,69.6
+Click here if you are doing the normal clear of the instance |next "Normal DS"
+Click here if you are doing the LFR wings of the instance |next "LFR DS Index"
+confirm
+step
+label "LFR DS Index"
+talk Auridormi##80675 |goto Tanaris/18 63.06,27.35
+Click here if you are queueing for the First wing of Dragon Soul (Siege of Wyrmrest Temple) |next "First_Wing_DS"
+Click here if you are queueing for the Second wing of Dragon Soul (Moments Preceding the Fall of Deathwing) |next "Second_Wing_DS"
+confirm
+step
+label "Normal DS"
+Enter Dragon Soul |goto Tanaris/18 61.97,26.96 < 5
+confirm
+step
+label "First_Wing_DS"
+_Morchok_ |goto Dragon Soul/1 50.6,69.6
 _Phase 1_
 |tip Stomp deals 750,000 total Physical damage split between all affected players. Morchok's target and their closest ally take a double portion of the damage.
 |tip Crush Armor deals 120% melee damage and reducing their armor by 10% for 20 seconds and stacking up to 10 times.
@@ -16052,7 +16109,7 @@ _Phase 2_
 modelnpc Morchok##55265
 confirm
 step
-kill Warlord Zon'ozz |goto Dragon Soul/2 50.9,53
+_Warlord Zon'ozz_ |goto Dragon Soul/2 50.9,53
 |tip Black Blood of Go'rath deals 9000 damage every second.
 |tip Phychic Drain channels phychic force in a cone in front of Zon'ozz, dealing 83,000-96,750 Shadow damage.
 |tip Disrupting Shadows deals 25,000-30,000 Shadow damage every 2 seconds.
@@ -16060,14 +16117,14 @@ kill Warlord Zon'ozz |goto Dragon Soul/2 50.9,53
 modelnpc Warlord Zon'ozz##55308
 confirm
 step
-kill Yor'sahj the Unsleeping |goto Dragon Soul/3 46.8,49.9
+_Yor'sahj the Unsleeping_ |goto Dragon Soul/3 46.8,49.9
 |tip Searing Blood hits random players, dealing increased damage the farther away from Yor'sahj the targets are.
 |tip Deep Corruption receiving healing or absorption effects will trigger an explosion at 5 stacks.
 |tip Void Bolt hurls a shadow bolt at a player, dealing Shadow damage.
 modelnpc Yor'sahj the Unsleeping##55312
 confirm
 step
-kill Hagara the Stormbinder |goto Dragon Soul/4 52.7,52
+_Hagara the Stormbinder_ |goto Dragon Soul/4 52.7,52
 |tip Focused Assault slices rapidly at the target, dealing 50% weapon damage.
 |tip Feedback increases damage taken by 100% for 15 seconds.
 |tip Ice Tomb conjures spheres of ice to entomb players in blocks of ice.
@@ -16075,9 +16132,11 @@ kill Hagara the Stormbinder |goto Dragon Soul/4 52.7,52
 |tip Lightning Storm deals 11,000 Nature damage to all nearby players.
 |tip Shattered Ice deals 54,000-63,000 Frost damage to a player and reduces their movement speed for 4 seconds.
 modelnpc Hagara the Stormbinder##55689
+|tip If you are doing this on LFR this is the end of wing 1.
 confirm
 step
-kill Ultraxion |goto Dragon Soul/1 49.9,45.7
+label "Second_Wing_DS"
+_Ultraxion_ |goto Dragon Soul/1 49.9,45.7
 |tip Unstable Monstrosity Twilight energry erupts from Ultraxion's hide, dealing 300,000 total Shadow damage every 6 secondsm split between all players in the Twilight Realm and within 30 yards of the target. Every minute Ultraxion is engaged in combat it reduces the time between arcs by 1 second.
 |tip Heroic Will pulls the player from the Twilight realm for up to 5 seconds, but they are unable to attack, cast, or move while concentrating.
 |tip Fading Light sucks the light from the targeted player and a random player, drawing them into the Twilight over 5-10 seconds. Upon expiration, players in the Twilight realm die.
@@ -16086,16 +16145,16 @@ kill Ultraxion |goto Dragon Soul/1 49.9,45.7
 modelnpc Ultraxion##55294
 confirm
 step
-kill Warmaster Blackhorn |goto Dragon Soul/5 48.3,16.8
+_Warmaster Blackhorn_ |goto Dragon Soul/5 48.3,16.8
 |tip Shockwave deals 100,000 Physical damage to players in a 80-yard _cone_ in front of the caster, stunning them for 4 seconds.
 |tip Siphon Vitality deals damage equal to 20% of the target's remaining health, also healing the caster.
 |tip Devastate deals 120% weapon damage and applying Sunder Armor.
 |tip Sunder Armor reduces the target's armor by 20% per stack, applying up to 5 times and lasting 30 seconds.
 |tip Disrupting Roar deals 50,000 Physical damage to all players and interrupting their spellcasting within 10 yards for 8 seconds.
-modelnpc Warmaster Blackhorn##56427
-confirm
+|modelnpc Warmaster Blackhorn##56427
+|confirm
 step
-kill Spine of Deathwing |goto Dragon Soul/6 33.2,85.2
+_Spine of Deathwing_ |goto Dragon Soul/6 33.2,85.2
 |tip If all players are on one side of Deathwing, he will do a barrel roll, attempting to throw off any players not attached to his back.
 _Corruption_ adds
 |tip Searing Plasma debuff that absorbs 200,000 healing from the target and dealing 7500 Physical damage periodically.
@@ -16105,10 +16164,10 @@ _Hideous Amalgamation_
 |tip These should be tanked and dragged through the residue created after killing Corrupted Blood, giving it a stack of Absorbed Blood. At 10 stacks, the Amalgamation explodes, removing a nearby armor plate from Deathwing, and likely killing any nearby players.
 |tip Seal Armor Breach occurs after a Hideous Amalgamation explodes and removes one of Deathwing's armor plates. If this cast is completed, the armor plate is re-sealed.
 |tip This fight ends after 3 armor plates are successfully removed, sending Deathwing down into the Maelstrom.
-modelnpc Deathwing##56173
-confirm
+|modelnpc Deathwing##56173
+|confirm
 step
-kill Madness of Deathwing - Aspects |goto Dragon Soul/7 47.8,53.8
+_Madness of Deathwing - Aspects_ |goto Dragon Soul/7 47.8,53.8
 Aspects
 _Alexstrasza_
 |tip Alexstrasza's Presence increases the player's maximum health by 20%.
@@ -16125,9 +16184,9 @@ _Kalecgos_
 _Thrall_
 |tip Carrying Winds takes players between adjacent platforms and increases their movement speed by 60% for 10 seconds. This effect is stackable.
 modelnpc Deathwing##46471
-confirm
+|confirm
 step
-kill Madness of Deathwing |goto Dragon Soul/7 47.8,53.8
+_Madness of Deathwing_ |goto Dragon Soul/7 47.8,53.8
 _Phase 1_
 |tip Assault Aspect Deathwing attacks the platform with the largest number of players and an attached limb.
 |tip Cataclysm Deathwing attempts to bring forth a 2nd cataclysm, dealing 1,500,000 Fire damage to all players.
@@ -16145,202 +16204,227 @@ _Mutated Corruption_
 modelnpc Deathwing##46471
 Click here to advance to Phase 2. |confirm
 step
-kill Madness of Deathwing |goto Dragon Soul/7 47.8,53.8
+_Madness of Deathwing_ |goto Dragon Soul/7 47.8,53.8
 _Phase 2_
 |tip Congealing Blood Deathwing begins to hemorrhage, creating Congealing Blood at a nearby location. These move toward him, healing him for 1% of his health if they reach him.
 |tip Elementium Fragment Deathwing's armor chips off, forming Elementium Fragments that deal 200,000 Physical damage to random players.
 |tip Elementium Terror Deathwing's armor chips off, forming Elementium Terrors that deal 60,000 Physical damage and an additional 20,000 Physical damage every second.
 |tip Corrupted Blood deals Fire damage every 2 seconds, the damage increasing as Deathwing's health lowers.
 modelnpc Deathwing##46471
+|tip If you are doing this on LFR this is the end of wing 2.
 confirm
 step
 Congratulations, you have finished the _Dragon Soul_ raid guide!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Raids\\Pandaria (LFR)\\Guardians of Mogu'shan (LFR)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Raids\\Pandaria\\Mogu'shan Vaults",{
 author="support@zygorguides.com",
-description="This guide will walk you through the Guardians of Mogu'shan Raid.",
+description="This guide will walk you through the Mogu'shan Vaults Raid.",
 },[[
 step
+Click here if you are doing a normal clear of the instance |next "Normal MSV"
+Click here if you are doing LFR wings of this instance |next "LFR index"
+confirm
+step
+label "LFR index"
+talk Lorewalker Han##80633 |goto Vale of Eternal Blossoms/0 83.13,30.61
+Click here if you are queueing for the First wing of Mogu'shan Vaults (Guardians of Mogu'shan) |next "First Wing MSV"
+Click here if you are queueing for the Second wing of Mogu'shan Vaults (Vault of Mysteries) |next "Second Wing MSV"
+confirm
+step
+label "Normal MSV"
+Enter Mogu'shan Vaults |goto Kun-Lai Summit/0 59.61,39.17 < 5
+confirm
+step
+label "First Wing MSV"
 map Mogu'shan Vaults/1
 path loop off
 path	68.4,64.2	54.8,64.2	50.4,64.3
 Follow the path, clearing trash as you make your way to the Stone Guard. |goto 50.4,64.3 <5 |noway |c
 step
-Stone Guard |goto 45.6,64.5
+_Stone Guard_ |goto 45.6,64.5
 _Amethyst Guardian_
-|tip Amethyst Petrification attempts to turn its enemies to amethyst, reducing Shadow damage they take by 90% and progressively slowing their movement speed.
-|tip Amethyst Pool deals 60,000 every second to players who enter the area.
+_Amethyst Petrification_ attempts to turn its enemies to amethyst, reducing Shadow damage they take by 90% and progressively slowing their movement speed.
+_Amethyst Pool_ deals 60,000 every second to players who enter the area.
 _Cobalt Guardian_
-|tip Cobalt Petrification attempts to turn its enemies to cobalt, reducing Arcane damage they take by 90% and slowing their movement speed.
-|tip Rend Flesh deals 50,000 Physical damage every second for 15 seconds.
+_Cobalt Petrification_ attempts to turn its enemies to cobalt, reducing Arcane damage they take by 90% and slowing their movement speed.
+_Rend Flesh_ deals 50,000 Physical damage every second for 15 seconds.
 _Jade Guardian_
-|tip Jade Petrification attempts to turn its enemies to jade, reducing Nature damage they take by 90% and slowing their movement speed.
-|tip Jade Shards inflicts 50,000 Nature damage to all players.
-|tip Rend Flesh deals 50,000 Physical damage every second for 15 seconds.
+_Jade Petrification_ attempts to turn its enemies to jade, reducing Nature damage they take by 90% and slowing their movement speed.
+_Jade Shards_ inflicts 50,000 Nature damage to all players.
+_Rend Flesh_ deals 50,000 Physical damage every second for 15 seconds.
 _Jasper Guardian_
-|tip Jesper Petrification attempts to turn its enemies to jesper, reducing Fire damage they take by 90% and slowing their movement speed.
-|tip Jesper Chains links 2 players together. While they are over 10 yards apart they both take 35,000 Fire damage every second, increasing by 15% per second.
-|tip Rend Flesh deals 50,000 Physical damage every second for 15 seconds.
-modelnpc Amethyst Guardian##60047
-modelnpc Cobalt Guardian##60051
-modelnpc Jade Guardian##60043
-modelnpc Jasper Guardian##59915
-confirm
+_Jesper Petrification_ attempts to turn its enemies to jesper, reducing Fire damage they take by 90% and slowing their movement speed.
+_Jesper Chains_ links 2 players together. While they are over 10 yards apart they both take 35,000 Fire damage every second, increasing by 15% per second.
+_Rend Flesh_ deals 50,000 Physical damage every second for 15 seconds.
+|modelnpc Amethyst Guardian##60047
+|modelnpc Cobalt Guardian##60051
+|modelnpc Jade Guardian##60043
+|modelnpc Jasper Guardian##59915
+|confirm
 step
 map Mogu'shan Vaults/1
 path loop off
 path	38.0,64.4	32.8,64.3	32.1,52.1
 path	32.1,42.4
-Follow the path, clearing trash as you make your way to the first boss, Feng the Accursed. |goto 32.1,42.4 < 5 |noway |c
+Follow the path, clearing trash as you make your way to the first boss, Feng the Accursed. |goto 32.1,42.4 <5 |noway |c
 step
 _Feng the Accursed_ |goto 32.1,33.2
-|tip Arcane Resonance charges random players with Arcane Resonance, which deals 30,000 Arcane damage to all other players within 6 yards, amplfying the damage by 30,000.
-Arcane Shock hits the targeted player for 29,000 Arcane damage every 2 seconds for 20 seconds.
-Chains of Shadow deals Shadow damage to the target, jumping to up to 3 additional targets.
-Flaming Spear sears the flesh of a player, inflicting normal weapon damage plus 30,000 Fire damage every 2 seconds for 20 seconds.
-Lightning Fists slams a lightning fist into the ground, causing a shockwave that deals damage to players in front of Feng.
-Wildfire Spark ignites a random player, causing them to explode after 5 seconds and igniting a wildfire at their location.
-modelnpc Feng the Accursed##60009
-confirm
+_Arcane Resonance_ charges random players with Arcane Resonance, which deals 30,000 Arcane damage to all other players within 6 yards, amplfying the damage by 30,000.
+_Arcane Shock_ hits the targeted player for 29,000 Arcane damage every 2 seconds for 20 seconds.
+_Chains of Shadow_ deals Shadow damage to the target, jumping to up to 3 additional targets.
+_Flaming Spear_ sears the flesh of a player, inflicting normal weapon damage plus 30,000 Fire damage every 2 seconds for 20 seconds.
+_Lightning Fists_ slams a lightning fist into the ground, causing a shockwave that deals damage to players in front of Feng.
+_Wildfire Spark_ ignites a random player, causing them to explode after 5 seconds and igniting a wildfire at their location.
+|modelnpc Feng the Accursed##60009
+|confirm
 step
 map Mogu'shan Vaults/1
 path loop off
 path	32.2,23.2	32.2,13.2	Mogu'shan Vaults/2 77.6,67.1
 path	Mogu'shan Vaults/2 77.7,47.3
-Follow the path, clearing trash as you make your way to the second boss, Gara'jal the Spiritbinder. |goto Mogu'shan Vaults/2 77.7,47.3 < 5 |noway |c
+Follow the path, clearing trash as you make your way to the second boss, Gara'jal the Spiritbinder. |goto Mogu'shan Vaults/2 77.7,47.3 <5 |noway |c
 step
 _Gara'jal the Spiritbinder_ |goto 77.0,35.9
-|tip Banishment banishes the target to the spirit world.
-|tip Final Destination Gara'jal harnesses his great power and rips the souls from all raid members.
-|tip Summon Spirit Totem summons a totem that provides a conduit between this world and the spirit world.
-|tip Voodoo Doll damage received is duplicated to all other Voodoo Dolls.
-modelnpc Gara'jal the Spiritbinder##60143
-confirm
+_Banishment_ banishes the target to the spirit world.
+_Final Destination_ Gara'jal harnesses his great power and rips the souls from all raid members.
+_Summon Spirit Totem_ summons a totem that provides a conduit between this world and the spirit world.
+_Voodoo Doll_ damage received is duplicated to all other Voodoo Dolls.
+|modelnpc Gara'jal the Spiritbinder##60143
+|tip If you are doing this on LFR this is the end of wing 1.
+|confirm
 step
-Congratulations, you have finished this section of the Mogu'shan Vaults raid!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Raids\\Pandaria (LFR)\\The Vault of Mysteries (LFR)",{
-author="support@zygorguides.com",
-description="This guide will walk you through the Vault of Mysteries Raid.",
-},[[
-step
+label "Second Wing MSV"
 map Mogu'shan Vaults/2
 path loop off
 path	45.3,34.5	33.8,29.9	33.9,43.0
-Follow the path as you make your way towards the first boss. |goto 33.9,43.0 < 5 |noway |c
+Follow the path as you make your way towards the next boss. |goto 33.9,43.0 <5 |noway |c
 step
 map Mogu'shan Vaults/2
 path loop off
 path 31.7,69.3	24.2,66.5
-Follow this path, clearing trash to the first boss, the Spirit Kings. |goto 24.2,66.5 < 5 |noway |c
+Follow this path, clearing trash to the next boss, the Spirit Kings. |goto 24.2,66.5 <5 |noway |c
 step
-The Spirit Kings |goto 18.3,52.0
+_The Spirit Kings_ |goto 18.3,52.0
 _Qiang the Merciless_
-|tip Annihilate inflicts a total of 1,500,000 damage to players in front of Qiang within melee range.
-|tip Flanking Orders calls in a wave of Mogu adds.
-|tip Massive Attacks deals a total of 800,000 damage split among all players hit.
-|tip Impervious Shield makes Qiang with a shield, making him immune to damage. If damaged while this shield is up, he retaliates, dealing damage to the raid.
+_Annihilate_ inflicts a total of 1,500,000 damage to players in front of Qiang within melee range.
+_Flanking Orders_ calls in a wave of Mogu adds.
+_Massive Attacks_ deals a total of 800,000 damage split among all players hit.
+_Impervious Shield_ makes Qiang with a shield, making him immune to damage. If damaged while this shield is up, he retaliates, dealing damage to the raid.
 _Subetai the Swift_
-|tip Pillage affects a random player and all other players within 8 yards of them, reducing damage, healing done and armor by 50%.
-|tip Sleight of Hand  damaging Subetai while this is up causes Robbed Blind. Subetai can be stunned during this.
-|tip Robbed Blind debuff that reduces the target's damage and healing done by 50% and increasing their Physical damage taken by 50%.
-|tip Volley inflicts 92,000-103,000 Physical damage to players in a cone in front of Subetai.
+_Pillage_ affects a random player and all other players within 8 yards of them, reducing damage, healing done and armor by 50%.
+_Sleight of Hand_  damaging Subetai while this is up causes _Robbed Blind_. Subetai can be stunned during this.
+_Robbed Blind_ debuff that reduces the target's damage and healing done by 50% and increasing their Physical damage taken by 50%.
+_Volley_ inflicts 92,000-103,000 Physical damage to players in a _cone_ in front of Subetai.
 _Meng the Demented_
-|tip Cowardice increases Meng's insanity level every 0.5 seconds. Once fully insane he switches personalities. Also reflects a portion of damage back at attacking players.
-|tip Crazed increases Meng's insanity level every 0.5 seconds. Once fully insane he switches personalities. Also reflects a portion of damage back at attacking players.
-|tip Delirious doubles Meng's sanity gains.
-|tip Maddening Shout AoE that deals 63,000-66,000 Shadow damage every 3 seconds and causing players to hate each other. Players regain their sanity after taking 30,000 damage from another raid member.
+_Cowardice_ increases Meng's insanity level every 0.5 seconds. Once fully insane he switches personalities. Also reflects a portion of damage back at attacking players.
+_Crazed_ increases Meng's insanity level every 0.5 seconds. Once fully insane he switches personalities. Also reflects a portion of damage back at attacking players.
+_Delirious_ doubles Meng's sanity gains.
+_Maddening Shout_ AoE that deals 63,000-66,000 Shadow damage every 3 seconds and causing players to hate each other. Players regain their sanity after taking 30,000 damage from another raid member.
 _Zian the Endless Shadow_
-|tip Charged Shadows inflicts 97,500-102,500 Shadow damage to enemies standing within 8 yards of each other.
-|tip Shadow Blast deals 100,000 Shadow damage to enemies within 8 yards of the targeted player.
-|tip Undying Shadows creates an Undying Shadow at the targeted area, dealing 30,000 Shadow damage every second to players within 10 yards.
-|tip Shield of Darkness is only used in Heroic mode. Any damage dealt to Zian will deal 300,000 Shadow damage to the raid.
-modelnpc Qiang the Merciless##60709
-modelnpc Subetai the Swift##60710
-modelnpc Meng the Demented##60708
-modelnpc Zian of the Endless Shadow##6070
-confirm
+_Charged Shadows_ inflicts 97,500-102,500 Shadow damage to enemies standing within 8 yards of each other.
+_Shadow Blast_ deals 100,000 Shadow damage to enemies within 8 yards of the targeted player.
+_Undying Shadows_ creates an Undying Shadow at the targeted area, dealing 30,000 Shadow damage every second to players within 10 yards.
+_Shield of Darkness_ is only used in Heroic mode. Any damage dealt to Zian will deal 300,000 Shadow damage to the raid.
+|modelnpc Qiang the Merciless##60709
+|modelnpc Subetai the Swift##60710
+|modelnpc Meng the Demented##60708
+|modelnpc Zian of the Endless Shadow##6070
+|confirm
 step
-map Mogu'shan Vaults/3
+map Mogu'shan Vaults/2
 path loop off
-path	Mogu'shan Vaults/2 24.7,69.6	Mogu'shan Vaults/2 33.3,69.7	Mogu'shan Vaults/2 27.1,51.6
-path	61.0,12.4	62.0,21.7	68.7,26.8
-path	66.0,41.4	57.7,41.4	49.2,43.6
-path	44.5,51.3	30.0,51.3
-Follow the path, clearing trash as you make your way to the next boss, Elegon. |goto 30.0,51.3 < 5 |noway |c
+path	24.7,69.6	33.3,69.7	27.1,51.6
+path	Mogu'shan Vaults/3 61.0,12.4	Mogu'shan Vaults/3 62.0,21.7	Mogu'shan Vaults/3 68.7,26.8
+path	Mogu'shan Vaults/3 66.0,41.4	Mogu'shan Vaults/3 57.7,41.4	Mogu'shan Vaults/3 49.2,43.6
+path	Mogu'shan Vaults/3 44.5,51.3	Mogu'shan Vaults/3 30.0,51.3
+Follow the path, clearing trash as you make your way to the next boss, Elegon. |goto 30.0,51.3 <5 |noway |c
 step
 _Elegon_ |goto Mogu'shan Vaults/3 22.7,51.7
-|tip Catastrophic Anomaly causes the Engine of Nalak'sha to explode and deal 90,200-100,000 Arcane damage to the raid.
-|tip Celestial Breath applies a DoT to players in a cone in front of Elegon that deals Arcane damage.
-|tip Draw Power_ Elegon creates 6 Energy Cores and increasing his damage taken by 10%.
-|tip Radiating Energies applies an Arcane DoT to the entire raid.
-|tip Unstable Energy occurs if the Empyreal Fosuses are active. Elegon becomes immune to damage and deals 175,000 damage to the raid.
-modelnpc Elegon##60410+
-confirm
+_Catastrophic Anomaly_ causes the Engine of Nalak'sha to explode and deal 90,200-100,000 Arcane damage to the raid.
+_Celestial Breath_ applies a DoT to players in a _cone_ in front of Elegon that deals Arcane damage.
+_Draw Power_ Elegon creates 6 Energy Cores and increasing his damage taken by 10%.
+_Radiating Energies_  applies an Arcane DoT to the entire raid.
+_Unstable Energy_ occurs if the Empyreal Fosuses are active. Elegon becomes immune to damage and deals 175,000 damage to the raid.
+|modelnpc Elegon##60410+
+|confirm
 step
 map Mogu'shan Vaults/3
 path loop off
 path	45.4,51.5	65.3,41.4	68.7,56.2
-Follow the path towards the final boss, the Will of the Emperor. |goto 68.7,56.2 < 5 |noway |c
+Follow the path towards the final boss, the Will of the Emperor. |goto 68.7,56.2 <5 |noway |c
 step
-Take these stairs down to the lower platform. |goto Mogu'shan Vaults/3 72.0,66.8 < 5 |c
+Take these stairs down to the lower platform. |goto Mogu'shan Vaults/3 72.0,66.8 <5 |c
 step
 _Will of the Emperor_ |goto 68.6,82.2
-|tip Adds continuously spawn during this fight. They should be killed off while damaging the bosses.
+Adds continuously spawn during this fight. They should be killed off while damaging the bosses.
 _Qin-xi_
-|tip Stomp inflicts 150,000 Physical damage and stuns nearby enemies for 2 seconds.
+_Stomp_ inflicts 150,000 Physical damage and stuns nearby enemies for 2 seconds.
 _Jan-xi_
-|tip Stomp inflicts 150,000 Physical damage and stuns nearby enemies for 2 seconds.
-modelnpc Qin-xi##60399
-modelnpc Jan-xi##60400
-confirm
-step
-Congratulations, you have finished this section of the Mogu'shan Vault raid!
+Stomp_ inflicts 150,000 Physical damage and stuns nearby enemies for 2 seconds.
+|modelnpc Qin-xi##60399
+|modelnpc Jan-xi##60400
+|tip If you are doing this on LFR this is the end of wing 2.
+|confirm
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Raids\\Pandaria (LFR)\\The Dread Approach (LFR)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Raids\\Pandaria\\Heart of Fear",{
 author="support@zygorguides.com",
-description="This guide will walk you through the Dread Approach Raid.",
+description="This guide will walk you through the Heart of Fear Raid.",
 },[[
 step
+Click here if you are doing a normal clear of Heart of Fear |next "Normal HoF"
+Click here if you are doing LFR wings of Heart of Fear |next "LFR Index"
+confirm
+step
+label "LFR Index"
+talk Lorewalker Han##80633
+Click here if you are queueing for the First wing of Heart of Fear (Dread Approach to the Heart of Fear) |next "First_Wing_HoF"
+Click here if you are queueing for the Second wing of Heart of Fear (Nightmare of Shek'zeer) |next "Second_Wing_HoF"
+confirm
+step
+label "Normal HoF"
+Enter Heart of Fear |goto Dread Wastes/0 38.95,34.99 < 5
+confirm
+step
+label "First_Wing_HoF"
 map Heart of Fear/1
 path loop off
 path	34.3,76.4	41.3,61.5	50.6,61.4
 path	54.6,54.0	61.4,62.5
-Follow the path, clearing trash as you make your way to the first boss, Imperial Vizier Zor'lok. |goto 61.4,62.5 < 5 |noway |c
+Follow the path, clearing trash as you make your way to the first boss, Imperial Vizier Zor'lok. |goto 61.4,62.5 <5 |noway |c
 step
-Imperial Vizier Zor'lok |goto 62.8,66.3
+_Imperial Vizier Zor'lok_ |goto 62.8,66.3
 _Phase 1_
-|tip After engaged, Zor'lok will fly to a randomly chosen platform. He will move to another platform at 80% and 60% health. Each platform gives him a different buff.
-|tip Left Platform: Attenuation creates moving circles, sonic rings. These deal a moderate amount of damage and can be avoided.
-|tip Middle Platform: Convert Zor'lok mind controls random players. These players must be brought down to 50% health.
-|tip Right Platform: Force and Verve creates 3 shields which can protect raid members by reducing their damage taken by 40%. Zor'lok then releases a violent burst of sound, damaging the entire raid every second for 10 seconds.
-|tip Inhale increases the damage of Exhale by 50%.
-|tip Exhale deals a large amount of damage to a random player, also stunning them for 6 seconds.
+After engaged, Zor'lok will fly to a randomly chosen platform. He will move to another platform at 80% and 60% health. Each platform gives him a different buff.
+_Left Platform:_ _Attenuation_ creates moving circles, sonic rings. These deal a moderate amount of damage and can be avoided.
+_Middle Platform:_ _Convert_ Zor'lok mind controls random players. These players must be brought down to 50% health.
+_Right Platform:_ _Force and Verve_ creates 3 shields which can protect raid members by reducing their damage taken by 40%. Zor'lok then releases a violent burst of sound, damaging the entire raid every second for 10 seconds.
+_Inhale_ increases the damage of _Exhale_ by 50%.
+_Exhale_ deals a large amount of damage to a random player, also stunning them for 6 seconds.
 _Phase 2_
-|tip Phase 2 starts when Zor'lok reaches 40% health. He flies to the center of the room and uses all the abilities from Phase 1.
-|tip He also gains Pheromoes of Zeal, increasing his damage by 10% and haste by 20. Kill him as quickly as possible to avoid death.
-modelnpc Imperial Vizier Zor'lok##62980
-confirm
+Phase 2 starts when Zor'lok reaches 40% health. He flies to the center of the room and uses all the abilities from Phase 1.
+He also gains _Pheromoes of Zeal_, increasing his damage by 10% and haste by 20. Kill him as quickly as possible to avoid death.
+|modelnpc Imperial Vizier Zor'lok##62980
+|confirm
 step
 map Heart of Fear/1
 path loop off
 path	57.8,58.2	55.4,52.4	59.9,43.8
 path	68.0,34.6	51.9,35.9	59.8,28.8
-Follow the path, clearing trash as you make your way to the next boss, Blade Lord Ta'yak. |goto 59.8,28.8 < 5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Blade Lord Ta'yak. |goto 59.8,28.8 <5 |noway |c
 step
-Blade Lord Ta'yak |goto 59.8,22.3
+_Blade Lord Ta'yak_ |goto 59.8,22.3
 _Phase 1_
-|tip Phase 1 ends when Ta'yak reaches 20% health.
-|tip Tempest Slash creates a tornado that moves around, dealing 75,000 Nature damage and a knockback if touched.
-|tip Overwhelming Assault stacking debuff used on tanks, dealing 150% weapon damage and increasing further damage from Overwhelming Assault by 100%.
-|tip Wind Step Ta'yak teleports to a random player, applying a DoT to all players within 10 yards that deals 55,000 damage every 2 seconds for 30 seconds.
-|tip Unseen Strike occurs after Ta'yak vanishes. After 5 seconds it deals 3,000,000 total Physical damage and a knockback to the target and players in a 15 yard _cone_ in front of him. This damage is split between all players affected.
+Phase 1 ends when Ta'yak reaches 20% health.
+_Tempest Slash_ creates a tornado that moves around, dealing 75,000 Nature damage and a knockback if touched.
+_Overwhelming Assault_ stacking debuff used on tanks, dealing 150% weapon damage and increasing further damage from Overwhelming Assault by 100%.
+_Wind Step_ Ta'yak teleports to a random player, applying a DoT to all players within 10 yards that deals 55,000 damage every 2 seconds for 30 seconds.
+_Unseen Strike_ occurs after Ta'yak vanishes. After 5 seconds it deals 3,000,000 total Physical damage and a knockback to the target and players in a 15 yard _cone_ in front of him. This damage is split between all players affected.
 _Phase 2_
-|tip Ta'yak pushes the raid to one end of the room and then flies to the other end and starts spamming the raid with a strong wind and tornados that knock them back to the opposite end of the room. The goal is to get back to Ta'yak by avoiding the tornadoes and then finish him off.
-|tip Intensify is a stacking buff that deals 15,000 damage to the raid and increases his damage and haste by 5% per stack.
-|tip At 10% health, Ta'yak changes sides, going to the opposite end of the room and coninues creating wind and tornadoes.
-modelnpc Blade Lord Ta'yak##62543
-confirm
+Ta'yak pushes the raid to one end of the room and then flies to the other end and starts spamming the raid with a strong wind and tornados that knock them back to the opposite end of the room. The goal is to get back to Ta'yak by avoiding the tornadoes and then finish him off.
+_Intensify_ is a stacking buff that deals 15,000 damage to the raid and increases his damage and haste by 5% per stack.
+At 10% health, Ta'yak _changes sides_, going to the opposite end of the room and coninues creating wind and tornadoes.
+|modelnpc Blade Lord Ta'yak##62543
+|confirm
 step
 map Heart of Fear/1
 path loop off
@@ -16349,170 +16433,184 @@ path	Heart of Fear/2 66.2,20.2
 Follow the path, clearing trash as you make your way to the final boss, Garalon. |goto Heart of Fear/2 66.2,20.2 <5 |noway |c
 step
 _Garalon_ |goto Heart of Fear/2 66.3,16.7
-|tip Killing Garalon's legs takes priority, as killing them slows Garalon by 15% and reduces his health by 3%. Mend Leg causes a random leg to respawn.
-|tip Furious Swipe deals damage to all players in a _cone_ in front of Garalon. If he doesn't hit at least 2 players, he will gain Fury, a stacking buff that increases his damage and movement speed by 10% for 30 seconds.
-|tip Pheromones is a debuff that deals 15,000 Nature damage every 2 seconds to the raid and creates a Pheromone Trail that increases Pheromones damage by 10% per stack.
-|tip Crush deals 150,000 damage to the raid and knocks them down for 2 seconds. Any player underneath Garalon when this occurs takes an additional 800,000 damage.
-|tip Enrage occurs after 7 minutes of combat. It will greatly increase his attack speed and damage. This is designed to wipe the raid. Kill him before he reaches this stage to avoid death.
-modelnpc Garalon##63191
-confirm
+Killing Garalon's legs takes priority, as killing them slows Garalon by 15% and reduces his health by 3%. _Mend Leg_ causes a random leg to respawn.
+_Furious Swipe_ deals damage to all players in a _cone_ in front of Garalon. If he doesn't hit at least 2 players, he will gain Fury, a stacking buff that increases his damage and movement speed by 10% for 30 seconds.
+_Pheromones_ is a debuff that deals 15,000 Nature damage every 2 seconds to the raid and creates a Pheromone Trail that increases Pheromones damage by 10% per stack.
+_Crush_ deals 150,000 damage to the raid and knocks them down for 2 seconds. Any player underneath Garalon when this occurs takes an additional 800,000 damage.
+_Enrage_ occurs after 7 minutes of combat. It will greatly increase his attack speed and damage. This is designed to wipe the raid. Kill him before he reaches this stage to avoid death.
+|modelnpc Garalon##63191
+|tip If you are doing this on LFR this is the end of wing 1.
+|confirm
 step
-Congratulations, you have finished this section of the Heart of Fear raid!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Raids\\Pandaria (LFR)\\Nightmare of Shek'zeer (LFR)",{
-author="support@zygorguides.com",
-description="This guide will walk you through the Nightmare of Shek'zeer Raid.",
-},[[
-step
+label "Second_Wing_HoF"
 map Heart of Fear/2
 path loop off
 path	68.3,26.3	69.2,37.8	66.8,38.0
-Follow the path to the first boss, Wind Lord Mel'jarak. |goto 66.8,38.0 <5 |noway |c
+Follow the path to the next boss, Wind Lord Mel'jarak. |goto 66.8,38.0 <5 |noway |c
 step
-3 different types of adds spawn throughout this fight. |goto 66.4,31.8
-|tip Priests: heal and buff their damage.
-|tip Warriors: charge their target.
-|tip Hunters: apply debuffs to the raid.
-_Wind Lord Mel'jarak_
-|tip Rain of Blades deals raid-wide Physical damage every 0.5 second.
-|tip Whirling Blade deals 120,000 Physical damage to all players in its path. Upon reaching its target, it returns to Mel'jarak, inflicting another 120,000 damage to anyone in its return path.
-|tip Wind Bomb throws a bomb at a player, dealing 100,000 Nature damage to players within 5 yards of where it lands. After 3 seconds, it arms and will detonate if any player comes within 6 yards, usually wiping the raid.
-modelnpc Wind Lord Mel'jarak##62397
-confirm
+3 different types of adds spawn throughout this fight.
+_Priests:_ heal and buff their damage.
+_Warriors:_ charge their target.
+_Hunters:_ apply debuffs to the raid.
+_Wind Lord Mel'jarak_ |goto 66.4,31.8
+_Rain of Blades_ deals raid-wide Physical damage every 0.5 second.
+_Whirling Blade_ deals 120,000 Physical damage to all players in its path. Upon reaching its target, it returns to Mel'jarak, inflicting another 120,000 damage to anyone in its return path.
+_Wind Bomb_ throws a bomb at a player, dealing 100,000 Nature damage to players within 5 yards of where it lands. After 3 seconds, it arms and will detonate if any player comes within 6 yards, usually wiping the raid.
+|modelnpc Wind Lord Mel'jarak##62397
+|confirm
 step
 map Heart of Fear/2
 path loop off
 path	66.2,40.3	66.2,47.1	66.0,52.5
 path	66.2,64.6	60.2,73.8	55.1,73.7
 path	50.7,74.0	47.6,78.9	47.4,68.5
-Follow the path, clearing trash as you make your way to the next boss,  Amber-Shaper Un'sok. |goto 47.4,68.5 < 5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss,  Amber-Shaper Un'sok. |goto 47.4,68.5 <5 |noway |c
 step
 _Amber-Shaper Un'sok_ |goto 45.5,73.8
-|tip Amber Scalpel targets a random player with a beam that deals large damage and leaves a trail of amber that forms Living Amber adds.
-|tip Parasitic Growth is a DoT that deals increasing damage as the affected player is healed.
-|tip Reshape Life turns the targeted player into a Mutated Construct.
+_Amber Scalpel_ targets a random player with a beam that deals large damage and leaves a trail of amber that forms Living Amber adds.
+_Parasitic Growth_ is a DoT that deals increasing damage as the affected player is healed.
+_Reshape Life_ turns the targeted player into a Mutated Construct.
 _Mutated Construct_
-|tip Amber Strike does a large amount of damage to the target and increases their damage taken by 10% for 15 seconds as well as interrupting them.
-|tip Struggle for Control a small self-stun used to prevent _Amber Explosion_ from being cast. Costs willpower.
-|tip Consume Amber heals yourself for 2,000,000, increases your maximum health and restores 20 willpower.
-|tip Break Free frees you from the Construct. Can only be used while under 20% health.
+_Amber Strike_ does a large amount of damage to the target and increases their damage taken by 10% for 15 seconds as well as interrupting them.
+_Struggle for Control_ a small self-stun used to prevent _Amber Explosion_ from being cast. Costs willpower.
+_Consume Amber_ heals yourself for 2,000,000, increases your maximum health and restores 20 willpower.
+_Break Free_ frees you from the Construct. Can only be used while under 20% health.
 |modelnpc Amber-Shaper Un'sok##62511
 |confirm
 step
 map Heart of Fear/2
 path loop off
 path	42.1,73.8	34.8,77.8	30.9,75.2
-Follow the path, clearing trash as you make your way to the final boss, Grand Empress Shek'zeer. |goto 30.9,75.2 < 5 |noway |c
+Follow the path, clearing trash as you make your way to the final boss, Grand Empress Shek'zeer. |goto 30.9,75.2 <5 |noway |c
 step
 _Grand Empress Shek'zeer_ |goto 28.9,73.9
-|tip Dissonance Field creates 2 vortexes which explode after 60 seconds, dealing 200,000 damage to the entire raid. Players standing in a vortex cannot receive healing and casting spells inside it reduces the explosion timer.
-|tip Cry of Terror is a debuff applied to a random player, dealing 45,000 Shadow damage to the rest of the raid every 2 seconds. Standing in the vortex negates this damage.
-|tip Visions of Demise is a debuff that affects 2 random players. After 4 seconds they are Feared and will deal damage to everyone around them.
-|tip Consuming Terror inflicts 200,000 Shadow damage and Fears players in a cone in front of Shek'zeer.
-|tip After 150 seconds the boss will disappear and summon a group of adds. These are usually tanked apart so they don't increase each others' damage.
-modelnpc Grand Empress Shek'zeer##62837
-confirm
-step
-Congratulations, you have finished this section of the Heart of Fear raid!
+_Dissonance Field_ creates 2 vortexes which explode after 60 seconds, dealing 200,000 damage to the entire raid. Players standing in a vortex cannot receive healing and casting spells inside it reduces the explosion timer.
+_Cry of Terror_ is a debuff applied to a random player, dealing 45,000 Shadow damage to the rest of the raid every 2 seconds. Standing in the vortex negates this damage.
+_Visions of Demise_ is a debuff that affects 2 random players. After 4 seconds they are Feared and will deal damage to everyone around them.
+_Consuming Terror_ inflicts 200,000 Shadow damage and Fears players in a _cone_ in front of Shek'zeer.
+After 150 seconds the boss will disappear and summon a group of adds. These are usually tanked apart so they don't increase each others' damage.
+|modelnpc Grand Empress Shek'zeer##62837
+|tip If you are doing this on LFR this is the end of wing 2.
+|confirm
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Raids\\Pandaria (LFR)\\Terrace of Endless Spring (LFR)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Raids\\Pandaria\\Terrace of Endless Spring",{
 mapid=886,
 author="support@zygorguides.com",
 description="This guide will walk you through the Terrace of Endless Spring Raid.",
 },[[
 step
+Enter Terrace of Endless Spring |goto The Veiled Stair/0 48.46,61.43 < 5
+confirm
+step
 map Terrace of Endless Spring
 path loop off
 path	80.5,38.4	76.1,59.9
-Follow the path, clearing trash around the first boss, the Protectors of the Endless. |goto 76.1,59.9 < 5 |noway |c
+Follow the path, clearing trash around the first boss, the Protectors of the Endless. |goto 76.1,59.9 <5 |noway |c
 step
-Protectors of the Endless |goto 78.5,48.9
+_Protectors of the Endless_ |goto 78.5,48.9
 _Elder Regail_
-|tip Lightning Bolt inflicts 125,000-145,000 Nature damage to the targeted player.
-|tip Lightning Prison stuns 2 players and deals 28,000 Nature damage to all players within 7 yards.
-|tip Lightning Storm is an AoE, starting from Regail's location and pulsing outward in 3 pulses, dealing high Nature damage.
+_Lightning Bolt_ inflicts 125,000-145,000 Nature damage to the targeted player.
+_Lightning Prison_ stuns 2 players and deals 28,000 Nature damage to all players within 7 yards.
+_Lightning Storm_ is an AoE, starting from Regail's location and pulsing outward in 3 pulses, dealing high Nature damage.
 _Elder Asani_
-|tip Water Bolt deals 100,000 Nature damage to the target and all additional players within 3 yards of that target.
-|tip Cleansing Waters is a buff that heals Asani's allies and can be dispelled.
-|tip Corrupted Waters spawns an orb in the center of the room, increasing the Protectors' attack and casting speeds by 50%. When destroyed it increases players' attack and casting speed by 25% for 20 seconds when standing in the inner circle.
+_Water Bolt_ deals 100,000 Nature damage to the target and all additional players within 3 yards of that target.
+_Cleansing Waters_ is a buff that heals Asani's allies and can be dispelled.
+_Corrupted Waters_ spawns an orb in the center of the room, increasing the Protectors' attack and casting speeds by 50%. When destroyed it increases players' attack and casting speed by 25% for 20 seconds when standing in the inner circle.
 _Protector Kaolan_
-|tip Touch of Sha occurs if you kill Kaolan last. It deals 38,000 Shadow damage every 3 seconds to a targeted player for the entire fight.
-|tip Defiled Ground are summoned under the tank, dealing 110,000 Shadow damage every second and does not despawn.
-|tip Expel Corruption is an AoE that deals up to 195,000 Shadow damage to all players within 30 yards. Damage is decreased the further away a player is from Kaolan when this occurs.
+_Touch of Sha_ occurs if you kill Kaolan last. It deals 38,000 Shadow damage every 3 seconds to a targeted player for the entire fight.
+_Defiled Ground_ are summoned under the tank, dealing 110,000 Shadow damage every second and does not despawn.
+_Expel Corruption_ is an AoE that deals up to 195,000 Shadow damage to all players within 30 yards. Damage is decreased the further away a player is from Kaolan when this occurs.
 |modelnpc Elder Regail##60585
 |modelnpc Elder Asani##60586
 |modelnpc Protector Kaolan##60583
 |confirm
 step
-Tsulong |goto 78.5,48.9
+_Tsulong_ |goto 78.5,48.9
 _Night Phases_
-|tip Damage Tsulong as much as possible in these phases.
-|tip Shadow Breath frontal cone ability, dealing 240,000 Shadow damage and increasing Shadow damage taken by 100% for 30 seconds.
-|tip Dread Shadows is a stacking DoT that deals 30,000 Shadow damage and increases damage from Dread Shadows by 10% per stack. This is removed by running through a Sunbeam Tsulong creates.
-|tip Nightmares inflicts 110,000 Shadow damage and Fears all players within 8 yards in the targeted area.
+Damage Tsulong as much as possible in these phases.
+_Shadow Breath_ _frontal cone_ ability, dealing 240,000 Shadow damage and increasing Shadow damage taken by 100% for 30 seconds.
+_Dread Shadows_ is a stacking DoT that deals 30,000 Shadow damage and increases damage from Dread Shadows by 10% per stack. This is removed by running through a _Sunbeam_ Tsulong creates.
+_Nightmares_ inflicts 110,000 Shadow damage and Fears all players within 8 yards in the targeted area.
 _Day Phases_
-|tip Heal Tsulong as much as possible in these phases. He is friendly, and helps kill the Sha that spawn by using Sun Breath. This is a cone that also restores 25% maximum mana to every player in front of him.
-|tip During these phases, Tsulong is not attackable and summons waves of Sha to attack the raid.
-|tip Embodied Terror: Sha with large amounts of health. Terrorize deals high damage and should be dispelled.
-|tip Fright Spawn: spawn when an Embodied Terror is killed. Fright deals high damage and a Fear to players within 30 yards.
-|tip Unstable Sha: spawn in the outer areas of the room and move toward Tsulong. If they reach Tsulong they explode.
-modelnpc Tsulong##62442
-confirm
+Heal Tsulong as much as possible in these phases. He is friendly, and helps kill the Sha that spawn by using _Sun Breath_. This is a cone that also restores 25% maximum mana to every player in front of him.
+During these phases, Tsulong is not attackable and summons waves of Sha to attack the raid.
+_Embodied Terror:_ Sha with large amounts of health. _Terrorize_ deals high damage and should be dispelled.
+_Fright Spawn:_ spawn when an Embodied Terror is killed. _Fright_ deals high damage and a Fear to players within 30 yards.
+_Unstable Sha:_ spawn in the outer areas of the room and move toward Tsulong. If they reach Tsulong they explode.
+|modelnpc Tsulong##62442
+|confirm
 step
 _Lei Shi_ |goto 58.6,48.6
-|tip Hide Lei Shi vanishes, hiding from players. AoE attacks can hit her to make her reveal herself.
-|tip Get Away is an AoE that pushes the raid back, away from Lei Shi and deals 90,000 Shadow damage. Running towards Lei Shi halves the damage it deals every second.
-|tip Protect Lei Shi shields herself, becoming immune to damage and summoning elementals to attack the raid. Ends after 1 elemental is killed.
-|tip Spray water bursts from the ground at the targeted player's location, dealing 110,000 Frost damage to all players within 2.5 yards and increasing their Frost damage taken by 16% for 10 seconds.
-modelnpc Lei Shi##62983
-confirm
+_Hide_ Lei Shi vanishes, hiding from players. AoE attacks can hit her to make her reveal herself.
+_Get Away_ is an AoE that pushes the raid back, away from Lei Shi and deals 90,000 Shadow damage. Running towards Lei Shi halves the damage it deals every second.
+_Protect_ Lei Shi shields herself, becoming immune to damage and summoning elementals to attack the raid. Ends after 1 elemental is killed.
+_Spray_ water bursts from the ground at the targeted player's location, dealing 110,000 Frost damage to all players within 2.5 yards and increasing their Frost damage taken by 16% for 10 seconds.
+|modelnpc Lei Shi##62983
+|confirm
 step
 _Sha of Fear_ |goto 39.2,48.6
-|tip Breath of Fear occurs about every 30 seconds. when Sha of Fear gains a full energy bar. It deals 500,000 Shadow damage and a Fear to all players. Those standing in the glowing light spot in the middle of the room will be unaffected by this.
-|tip Terror Spawn group of 2 adds that spawn. They can only be damaged from behind.
-|tip Eerie Skull deals 74,000-90,000 Shadow damage to a random raid member.
-|tip Ominous Cackle occurs every 90 seconds. It takes 5 random players to an outer shrine where they must kill the corrupted guardian, granting Fearless.
-|tip Fearless is a buff applied to players killing the corrupted guardian in one of the outer shrines. It increases damage and healing done by 60%, makes you immune to Breath of Fear, and greatly increases movement speed.
-modelnpc Sha of Fear##60999
-confirm
+_Breath of Fear_ occurs about every 30 seconds. when Sha of Fear gains a full energy bar. It deals 500,000 Shadow damage and a Fear to all players. Those standing in the glowing light spot in the middle of the room will be unaffected by this.
+_Terror Spawn_ group of 2 adds that spawn. They can only be damaged from behind.
+_Eerie Skull_ deals 74,000-90,000 Shadow damage to a random raid member.
+_Ominous Cackle_ occurs every 90 seconds. It takes 5 random players to an outer shrine where they must kill the corrupted guardian, granting _Fearless_.
+_Fearless_ is a buff applied to players killing the corrupted guardian in one of the outer shrines. It increases damage and healing done by 60%, makes you immune to Breath of Fear, and greatly increases movement speed.
+|modelnpc Sha of Fear##60999
+|confirm
 step
 Congratulations, you have finished the Terrace of Endless Spring raid!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Raids\\Pandaria (LFR)\\Last Stand of the Zandalari (LFR)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Raids\\Pandaria\\Throne of Thunder",{
 author="support@zygorguides.com",
-description="This guide will walk you through the Last Stand of the Zandalari Raid.",
+description="This guide will walk you through the Throne of Thunder Raid.",
 },[[
 step
+Click here if you are doing a normal clear of the instance |next "Normal ToT"
+Click here if you are doing LFR wings of this instance |next "LFR ToT Index"
+confirm
+step
+label "LFR ToT Index"
+talk Lorewalker Han##80633
+Click here if you are queueing for the First wing of Throne of Thunder (Last Stand of the Zandalari) |next "First_Wing_ToT"
+Click here if you are queueing for the Second wing of Throne of Thunder (Forgotten Depths beneath the Throne of Thunder) |next "Second_Wing_ToT"
+Click here if you are queueing for the Third wing of Throne of Thunder (Twisted Mogu Halls of Flesh-Shaping) |next "Third_Wing_ToT"
+Click here if you are queueing for the Fourth wing of Throne of Thunder (Lei Shen's Pinnacle of Storms) |next "Fourth_Wing_ToT"
+confirm
+step
+label "Normal ToT"
+Enter Throne of Thunder |goto Isle of Thunder/0 63.61,32.44 < 5
+confirm
+step
+label "First_Wing_ToT"
 map Throne of Thunder/1
 path loop off
 path	34.9,23.7	39.8,23.8	46.2,25.8
 path	53.4,25.8
-Follow the path, clearing trash as you make your way to the first boss, Jin'rokh the Breaker. |goto 53.4,25.8 < 5 |noway |c
+Follow the path, clearing trash as you make your way to the first boss, Jin'rokh the Breaker. |goto 53.4,25.8 <5 |noway |c
 step
 _Jin'rokh the Breaker_ |goto 59.5,25.8
-|tip Thundering Throw is usually used on the tank, throwing them at a Mogu statue, inflicting 250,000 Physical damage and dealing 200,000 Nature damage and a 5 second stun to players within an 8 yard area.
-|tip Conductive Water is a pool formed at the base of broken statues. Standing in the water increases healing by 60% and damage by 40%, but also increases damage taken from Jin'rokh's abilities by 50%.
-|tip Lightning Storm deals 70,000 damage to the raid every second for 15 seconds. Also turns Conductive Water to _Electrified Water_, quickly killing anyone still standing in it.
-|tip Static Burst deals 95,000-105,000 Nature damage to the raid. After 3 seconds it applies 10 stacks of Static Wounds to his current target.
-|tip Static Wound is a debuff that deals 20,000 Nature damage per stack to the affected player each time he takes melee damage. Also deals a third of this damage to nearby players.
-|tip Focused Lightning_ occurs on a healer or ranged DPS. Lightning moves towards the targeted player and deals 175,000 Nature damage upon reaching them, also damaging all other players within 8 yards of the initial explosion.
-modelnpc Jin'rokh the Breaker##69465
-confirm
+_Thundering Throw_ is usually used on the tank, throwing them at a Mogu statue, inflicting 250,000 Physical damage and dealing 200,000 Nature damage and a 5 second stun to players within an 8 yard area.
+_Conductive Water_ is a pool formed at the base of broken statues. Standing in the water increases healing by 60% and damage by 40%, but also increases damage taken from Jin'rokh's abilities by 50%.
+_Lightning Storm_ deals 70,000 damage to the raid every second for 15 seconds. Also turns _Conductive Water_ to _Electrified Water_, quickly killing anyone still standing in it.
+_Static Burst_ deals 95,000-105,000 Nature damage to the raid. After 3 seconds it applies 10 stacks of _Static Wounds_ to his current target.
+_Static Wound_ is a debuff that deals 20,000 Nature damage per stack to the affected player each time he takes melee damage. Also deals a third of this damage to nearby players.
+_Focused Lightning_ occurs on a healer or ranged DPS. Lightning moves towards the targeted player and deals 175,000 Nature damage upon reaching them, also damaging all other players within 8 yards of the initial explosion.
+|modelnpc Jin'rokh the Breaker##69465
+|confirm
 step
 map Throne of Thunder/1
 path loop off
 path	59.5,25.8	59.5,43.6	59.5,53.5
 path	59.6,74.9	62.1,79.8	76.0,79.6
 path	83.1,79.6
-Follow the path, clearing trash as you make your way to the next boss, Horridon. |goto 83.1,79.6 < 5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Horridon. |goto 83.1,79.6 <5 |noway |c
 step
 Waves of adds are spawned throughout this fight. It is recommended the raid kills them and then goes back to attacking Horridon.
-|tip When a Dinomancer dies it drops an Orb of Control. Clicking this will destroy the gate and stop the adds spawning for a short time.
+When a Dinomancer dies it drops an Orb of Control. Clicking this will destroy the gate and stop the adds spawning for a short time.
 _Horridon_ |goto 26.8,78.7
-|tip Triple Puncture deals 370,000-430,000 damage to the target and increases their damage taken from Triple Puncture by 10% per stack. Lasts 90 seconds.
-|tip Double Swipe is a frontal and rear cone attack. Avoid this by standing at Horridon's sides.
-|tip Charge is used on random players. Horridon charges at the target, immediately follwed by Double Swipe.
-|tip When Horridon is at 30% health he spawns War-God Jalak. Kill them both as fast as possible to avoid death.
+_Triple Puncture_ deals 370,000-430,000 damage to the target and increases their damage taken from Triple Puncture by 10% per stack. Lasts 90 seconds.
+_Double Swipe_ is a _frontal and rear cone_ attack. Avoid this by standing at Horridon's sides.
+_Charge_ is used on random players. Horridon charges at the target, immediately follwed by _Double Swipe_.
+When Horridon is at 30% health he spawns War-God Jalak. Kill them both as fast as possible to avoid death.
 |modelnpc Horridon##68476
 |confirm
 step
@@ -16521,104 +16619,96 @@ path loop off
 path	27.2,68.4	27.1,47.4	27.2,35.4
 path	27.2,26.0	33.5,19.4	38.0,19.4
 path	45.1,14.1
-Follow the path, clearing trash as you make your way to the final boss, the Council of Elders. |goto 45.1,14.1 < 5 |noway |c
+Follow the path, clearing trash as you make your way to the final boss, the Council of Elders. |goto 45.1,14.1 <5 |noway |c
 step
-Council of Elders |goto 50.1,18.4
+_Council of Elders_ |goto 50.1,18.4
 _Kazra'jin_
-|tip Discharge Kazra'jin stuns himself for 20 seconds, reflecting 5% damage back to attackers.
-|tip Overload Kazra'jin stuns himself for 20 seconds, reflecting 40% damage back to atteckers.
-|tip Reckless Charge deals 90,000 Nature damage to the target and all players inbetween and knocking back all players within 5 yards of where he lands.
+_Discharge_ Kazra'jin stuns himself for 20 seconds, reflecting 5% damage back to attackers.
+_Overload_ Kazra'jin stuns himself for 20 seconds, reflecting 40% damage back to atteckers.
+_Reckless Charge_ deals 90,000 Nature damage to the target and all players inbetween and knocking back all players within 5 yards of where he lands.
 _Sul the Sandcrawler_
-|tip Quicksand spawns a pool of quicksand under the targeted player's feet, rooting them in place and dealing Nature damage every second.
-|tip Sand Bolt inflicts 150,000-175,000 Nature damage to the target and all players within 5 yards of that target.
-|tip Sandstorm summons a sandstorm that deals 38,500 damage every second for 8 seconds.
+_Quicksand_ spawns a pool of quicksand under the targeted player's feet, rooting them in place and dealing Nature damage every second.
+_Sand Bolt_ inflicts 150,000-175,000 Nature damage to the target and all players within 5 yards of that target.
+_Sandstorm_ summons a sandstorm that deals 38,500 damage every second for 8 seconds.
 _Frost King Malakk_
-|tip Biting Cold blasts the target with ice, inflicting 95,000 Frost damage.
-|tip Frostbite deals 110,000 Frost damage and applies 5 stacks of Frostbite.
-|tip Frigid Assault imbues Malakk's axes with ice, dealing an additional 75,000 damage to his target and stunning them if it reaches 15 stacks.
+_Biting Cold_ blasts the target with ice, inflicting 95,000 Frost damage.
+_Frostbite_ deals 110,000 Frost damage and applies 5 stacks of Frostbite.
+_Frigid Assault_ imbues Malakk's axes with ice, dealing an additional 75,000 damage to his target and stunning them if it reaches 15 stacks.
 _High Priestess Mar'li_
-|tip Blessed Loa Spirit summons a Blessed Loa Spirit add that moves towards the council member with the lowest health. If reached, they are healed for 5% of their maximum health.
-|tip Shadowed Loa Spirit summons a Shadowed Loa Spirit that follows a random player. If it gets within 6 yards of them it instantly kills them.
-|tip Wrath of the Loa hits the targeted player for 150,000-160,000 damage.
-|tip Twisted Fate links 2 players' souls together, dealing 250,000 Shadow damage every 3 seconds. The damage dealt is reduces the further apart the players are.
-modelnpc Kazra'jin##69134
-modelnpc Sul the Sandcrawler##69078
-modelnpc Frost King Malakk##69131
-modelnpc High Priestess Mar'li##69132
-confirm
+_Blessed Loa Spirit_ summons a Blessed Loa Spirit add that moves towards the council member with the lowest health. If reached, they are healed for 5% of their maximum health.
+_Shadowed Loa Spirit_ summons a Shadowed Loa Spirit that follows a random player. If it gets within 6 yards of them it instantly kills them.
+_Wrath of the Loa_ hits the targeted player for 150,000-160,000 damage.
+_Twisted Fate_ links 2 players' souls together, dealing 250,000 Shadow damage every 3 seconds. The damage dealt is reduces the further apart the players are.
+|modelnpc Kazra'jin##69134
+|modelnpc Sul the Sandcrawler##69078
+|modelnpc Frost King Malakk##69131
+|modelnpc High Priestess Mar'li##69132
+|tip If you are doing this on LFR this is the end of wing 1.
+|confirm
 step
-Congratulations, you have finished this section of the Throne of Thunder raid!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Raids\\Pandaria (LFR)\\Forgotten Depths (LFR)",{
-author="support@zygorguides.com",
-description="This guide will walk you through the Forgotten Depths Raid.",
-},[[
-step
+label "Second_Wing_ToT"
 map Throne of Thunder/3
 path loop off
 path	20.3,82.0	24.6,82.5
-Follow the path, clearing trash as you make your way to the first boss, Tortos. |goto 24.6,82.5 < 5 |noway |c
+Follow the path, clearing trash as you make your way to the first boss, Tortos. |goto 24.6,82.5 <5 |noway |c
 step
 _Tortos_ |goto 31.5,82.0
-|tip Call of Tortos summons smaller turtle adds to attack the raid. They spin around, dealing damage and a knockback to those near them.
-|tip Furious Stone Breath deals 150,000 Nature damage to the raid every 0.5 seconds for 4.5 seconds. Can be interrupted by kicking shells from dead turtle adds.
-|tip Quake Stomp  Tortos stuns the raid for 1 second, inflicting damage equal to 65% of their maximum health. This also increases the requency of Rockfalls for 8 seconds.
-|tip Snapping Bite Tortos snaps his jaws closed, dealing 510,000-540,000 damage.
-modelnpc Tortos##67977
-confirm
+_Call of Tortos_ summons smaller turtle adds to attack the raid. They spin around, dealing damage and a knockback to those near them.
+_Furious Stone Breath_ deals 150,000 Nature damage to the raid every 0.5 seconds for 4.5 seconds. Can be interrupted by kicking shells from dead turtle adds.
+_Quake Stomp_  Tortos stuns the raid for 1 second, inflicting damage equal to 65% of their maximum health. This also increases the requency of Rockfalls for 8 seconds.
+_Snapping Bite_ Tortos snaps his jaws closed, dealing 510,000-540,000 damage.
+|modelnpc Tortos##67977
+|confirm
 step
 map Throne of Thunder/3
 path loop off
 path	32.8,80.9	33.1,72.3	33.7,62.5
-path	41.7,58.7	38.3,48.6	41.0,38.9
+path	41.7,58.7	38.3,48.6	31.8,45.2
 path	43.3,16.9	52.5,40.0	58.9,50.5
-path	63.4,57.5	69.6,48.8	70.2,37.7
-Follow the path, clearing trash as you make your way to the next boss, Magaera. |goto 70.2,37.7 < 5 |noway |c
+path	55.2,71.0	63.4,57.5	69.6,48.8
+path	70.2,37.7
+Follow the path, clearing trash as you make your way to the next boss, Magaera. |goto 70.2,37.7 <5 |noway |c
+|tip You must click the 3 gongs along this path to summon Magaera.
 step
 _Magaera_ |goto 72.1,25.3
-|tip The only way to damage Magaera is to kill the Flaming, Frozen, and Venemous Heads that spawn.
+The only way to damage Magaera is to kill the Flaming, Frozen, and Venemous Heads that spawn.
 _Flaming Head_
-|tip Cinders_targets a player, dealing 105,000 Fire damage and an additional 75,00 Fire damage every second for 30 seconds. If removed, a pool of flames is created, dealing 105,000 Fire damage every second to all players within 5 yards.
-|tip Ignite Flesh_ _frontal cone_ attack that deals 125,000 Fire damage every second for 3 seconds. Also applies a DoT that burns for 30,00 Fire damage every second for 45 seconds.
-|tip Magaera's Rage_ occurs if no player is within melee range. It deals 250,000 Fire damage to all players within 5 yards of the targeted area.
+_Cinders_targets a player, dealing 105,000 Fire damage and an additional 75,00 Fire damage every second for 30 seconds. If removed, a pool of flames is created, dealing 105,000 Fire damage every second to all players within 5 yards.
+_Ignite Flesh_ _frontal cone_ attack that deals 125,000 Fire damage every second for 3 seconds. Also applies a DoT that burns for 30,00 Fire damage every second for 45 seconds.
+_Magaera's Rage_ occurs if no player is within melee range. It deals 250,000 Fire damage to all players within 5 yards of the targeted area.
 _Frozen Head_
-|tip Arctic Freeze frontal con_ that deals 125,000 Frost damage every seconds for 3 seconds. Players hit by this also get a debuff that stuns them for 20 seconds if it reaches 5 stacks.
-|tip Megaera's Rage occurs if no player is within melee range. It deals 250,000 Frost damage to all players within 5 yards of the targeted area.
-|tip Torrent of Ice channels a beam of ice at a player, inflicting 60,000 Frost damage every 0.5 seconds for 8 seconds and slowing movement speed of anyone who touches it.
+_Arctic Freeze_ _frontal cone_ that deals 125,000 Frost damage every seconds for 3 seconds. Players hit by this also get a debuff that stuns them for 20 seconds if it reaches 5 stacks.
+_Megaera's Rage_ occurs if no player is within melee range. It deals 250,000 Frost damage to all players within 5 yards of the targeted area.
+_Torrent of Ice_ channels a beam of ice at a player, inflicting 60,000 Frost damage every 0.5 seconds for 8 seconds and slowing movement speed of anyone who touches it.
 _Venemous Heads_
-|tip Rot Armor frontal cone that deals 127,500 Nature damage every second for 3 seconds and increases the damage taken of those affected by 10% for 45 seconds.
-|tip Megaera's Rage occurs if no player is within melee range. It deals 250,000 Nature damage to all players within 5 yards of the targeted area.
-modelnpc Flaming Head##70212
-modelnpc Frozen Head##70235
-modelnpc Venemous Head##70247
-confirm
+_Rot Armor_ _frontal cone_ that deals 127,500 Nature damage every second for 3 seconds and increases the damage taken of those affected by 10% for 45 seconds.
+_Megaera's Rage_ occurs if no player is within melee range. It deals 250,000 Nature damage to all players within 5 yards of the targeted area.
+|modelnpc Flaming Head##70212
+|modelnpc Frozen Head##70235
+|modelnpc Venemous Head##70247
+|confirm
 step
-map Throne of Thunder/4
+map Throne of Thunder/3
 path loop off
-path	Throne of Thunder/3 66.8,39.2	Throne of Thunder/3 66.4,43.4	Throne of Thunder/3 72.7,53.1
-path	22.0,35.3	15.6,55.5	23.5,64.4
-path	31.6,65.8	40.4,74.6	42.8,76.6
-path	43.4,84.5	54.3,90.0	65.9,86.1
-path	72.0,81.5	74.9,67.3	62.7,57.5
-path	53.8,52.0
-Follow the path, clearing trash as you make your way to the final boss, Ji-Kun. |goto 53.8,52.0 < 5 |noway |c
+path	66.8,39.2	66.4,43.4	72.7,53.1
+path	Throne of Thunder/4 22.0,35.3	Throne of Thunder/4 15.6,55.5	Throne of Thunder/4 23.5,64.4
+path	Throne of Thunder/4 31.6,65.8	Throne of Thunder/4 40.4,74.6	Throne of Thunder/4 42.8,76.6
+path	Throne of Thunder/4 43.4,84.5	Throne of Thunder/4 54.3,90.0	Throne of Thunder/4 65.9,86.1
+path	Throne of Thunder/4 72.0,81.5	Throne of Thunder/4 74.9,67.3	Throne of Thunder/4 62.7,57.5
+path	Throne of Thunder/4 53.8,52.0
+Follow the path, clearing trash as you make your way to the final boss, Ji-Kun. |goto 53.8,52.0 <5 |noway |c
 step
 _Ji-Kun_ |goto 49.7,41.6
-|tip Caw Ji-Kun releases concentrated sound waves at multiple players. When they reach their targets they explode and deal 270,000-330,000 damage to all players within 8 yards.
-|tip Feed Young summons pools of food for the young, dealing damage to players standing in it.
-|tip Down Draft summons a powerful draft of air that pushes players off the platform.
-|tip Infected Talons DoT that inflicts 30,000 Nature damage every 3 seconds.
-|tip Quils deals 65,000 damage every second to all players.
-modelnpc Ji-Kun##69712
-confirm
+_Caw_ Ji-Kun releases concentrated sound waves at multiple players. When they reach their targets they explode and deal 270,000-330,000 damage to all players within 8 yards.
+_Feed Young_ summons pools of food for the young, dealing damage to players standing in it.
+_Down Draft_ summons a powerful draft of air that pushes players off the platform.
+_Infected Talons_ DoT that inflicts 30,000 Nature damage every 3 seconds.
+_Quils_ deals 65,000 damage every second to all players.
+|modelnpc Ji-Kun##69712
+|tip If you are doing this on LFR this is the end of wing 2.
+|confirm
 step
-Congratulations, you have finished this section of the Throne of Thunder raid!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Raids\\Pandaria (LFR)\\Halls of Flesh-Shaping (LFR)",{
-author="support@zygorguides.com",
-description="This guide will walk you through the Halls of Flesh-Shaping Raid.",
-},[[
-step
+label "Third_Wing_ToT"
 map Throne of Thunder/5
 path loop off
 path	77.0,10.6	71.1,12.9	71.2,15.8
@@ -16626,13 +16716,13 @@ path	73.9,20.4	71.4,30.8
 Follow the path, clearing trash as you make your way to the first boss, Durumu the Forgotten. |goto 71.4,30.8 <5 |noway |c
 step
 _Durumu the Forgotten_ |goto 71.1,34.4
-|tip Disentigration Beam fires of beam of energy towards the edge of the platform, killing any player it touches.
-|tip Arterial Cut_applies a bleed DoT to the target.
-|tip Gaze deals 50% weapon damage to the entire raid.
-|tip Hard Stare deals 135%-165% weapon damage and applies _Serious Wound_ to the target.
-|tip Serious Wound debuff that reduces the target's healing received by 10%.
-modelnpc Durumu the Forgotten##68036
-confirm
+_Disentigration Beam_ fires of beam of energy towards the edge of the platform, killing any player it touches.
+_Arterial Cut_ applies a bleed DoT to the target.
+_Gaze_ deals 50% weapon damage to the entire raid.
+_Hard Stare_ deals 135%-165% weapon damage and applies _Serious Wound_ to the target.
+_Serious Wound_ debuff that reduces the target's healing received by 10%.
+|modelnpc Durumu the Forgotten##68036
+|confirm
 step
 map Throne of Thunder/5
 path loop off
@@ -16642,43 +16732,38 @@ path	57.2,78.1
 Follow the path, clearing trash as you make your way to the next boss, Primordius. |goto 57.2,78.1 <5 |noway |c
 step
 _Primordius_ |goto 57.2,78.2
-|tip Primordial Strike is a frontal cone. The tank should be the only one in front of Primordius when this occurs.
-|tip Malformed Blood is a stacking debuff usually applied to the tank. It deals 20,000 damage per stack every tick.
-|tip Each time Primordius energy reaches 100% he gains a stacking buff that increases damage done by 10% per stack and giving additional abilities.
-|tip Erupting Pustules deals 120,000 Nature damage to players within 2.5 yards of the targeted area.
-|tip Metabolic Boost increases Primordius' attack speed by 50% and decreases his cooldowns by 50%.
-|tip Volatile Pathogen deals 60,000 damage every second for 10 seconds.
-|tip Acidic Spines deals 100,000 Nature damage to all players within 5 yards of the Primordius' target.
-|tip Caustic Gas is a cone that deals 800,000 total Nature damage split between all players affected.
-|tip Ventral Sacs deals 22,000 damage every second to the entire raid.
-modelnpc Primordius##69017
-confirm
+_Primordial Strike_ is a _frontal cone_. The tank should be the only one in front of Primordius when this occurs.
+_Malformed Blood_ is a stacking debuff usually applied to the tank. It deals 20,000 damage per stack every tick.
+Each time Primordius' energy reaches 100% he gains a stacking buff that increases damage done by 10% per stack and giving additional abilities.
+_Erupting Pustules_ deals 120,000 Nature damage to players within 2.5 yards of the targeted area.
+_Metabolic Boost_ increases Primordius' attack speed by 50% and decreases his cooldowns by 50%.
+_Volatile Pathogen_ deals 60,000 damage every second for 10 seconds.
+_Acidic Spines_ deals 100,000 Nature damage to all players within 5 yards of the Primordius' target.
+_Caustic Gas_ is a _cone_ that deals 800,000 total Nature damage split between all players affected.
+_Ventral Sacs_ deals 22,000 damage every second to the entire raid.
+|modelnpc Primordius##69017
+|confirm
 step
 map Throne of Thunder/5
 path loop off
 path	50.9,78.0	39.9,78.1	42.8,72.2
 path	42.5,61.1
-Follow the path, clearing trash as you make your way to the final boss, Dark Animus. |goto 42.5,61.1 < 5 |noway |c
+Follow the path, clearing trash as you make your way to the final boss, Dark Animus. |goto 42.5,61.1 <5 |noway |c
 step
-Adds spawn throughout the fight. |goto 43.0,57.1
-|tip Anima Golem: weak mobs, don't require anything special.
-|tip Large Anima Golem: needs to be tanked.
-|tip Massive Anima Golem should be tanked, has a large frontal cleave.
-_Dark Animus_
-|tip Touch of the Animus affects a random player, inflicting 30,000 Fire damage every 4 seconds for the rest of the fight.
-|tip Anima Font affects a player with Touch of the Animus, causing them to shoot Anima bolts from nearby locations that deal 250,000 Fire damage.
-|tip Anima Ring summons spheres in a circle around the taget, moving inward. Players that touch the spheres consume it, increasing melee damage taken by 200% per stack.
-|tip Interrupting Jolt deals 400,000 Nature damage and inerrupts the raid's spellcasting.
-modelnpc Dark Animus##69427
-confirm
+Adds spawn throughout the fight.
+_Anima Golem:_ weak mobs, don't require anything special.
+_Large Anima Golem:_ needs to be tanked.
+_Massive Anima Golem_ should be tanked, has a large _frontal cleave_.
+_Dark Animus_ |goto 43.0,57.1
+_Touch of the Animus_ affects a random player, inflicting 30,000 Fire damage every 4 seconds for the rest of the fight.
+_Anima Font_ affects a player with Touch of the Animus, causing them to shoot Anima bolts from nearby locations that deal 250,000 Fire damage.
+_Anima Ring_ summons spheres in a circle around the taget, moving inward. Players that touch the spheres consume it, increasing melee damage taken by 200% per stack.
+_Interrupting Jolt_ deals 400,000 Nature damage and inerrupts the raid's spellcasting.
+|modelnpc Dark Animus##69427
+|tip If you are doing this on LFR this is the end of wing 3.
+|confirm
 step
-Congratulations, you have finished this section of the Throne of Thunder raid!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Raids\\Pandaria (LFR)\\Pinnacle of Storms (LFR)",{
-author="support@zygorguides.com",
-description="This guide will walk you through the Pinnacle of Storms Raid.",
-},[[
-step
+label "Fourth_Wing_ToT"
 map Throne of Thunder/5
 path loop off
 path	35.1,43.1	33.3,38.9	33.5,32.5
@@ -16687,31 +16772,31 @@ path	Throne of Thunder/6 25.5,64.5
 Follow the path, clearing trash as you make your way to the first boss, Iron Qon. |goto Throne of Thunder/6 25.5,64.5 <5 |noway |c
 step
 _Iron Qon_ |goto Throne of Thunder/6 34.6,58.9
-|tip Impale is a stacking debuff that deals normal weapon damage plus 40,000 bleeding damage every 2 seconds.
-|tip Rising Anger increases Qon's damage and attack speed by 10%.
-|tip Qon throws out lines of ice, fire, and lightning during the fight, avoid standing in these as well as tornadoes and goo.
-modelnpc Iron Qon##68078
-confirm
+_Impale_ is a stacking debuff that deals normal weapon damage plus 40,000 bleeding damage every 2 seconds.
+_Rising Anger_ increases Qon's damage and attack speed by 10%.
+Qon throws out lines of ice, fire, and lightning during the fight, avoid standing in these as well as tornadoes and goo.
+|modelnpc Iron Qon##68078
+|confirm
 step
 map Throne of Thunder/6
 path loop off
 path	40.1,59.0	62.2,58.9	69.1,51.3
 path	73.8,44.3
-Follow the path, clearing trash as you make your way to the next boss, the Twin Consorts. |goto 73.8,44.3 < 5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, the Twin Consorts. |goto 73.8,44.3 <5 |noway |c
 step
-Twin Consorts |goto Throne of Thunder/6 78.7,38.0
+_Twin Consorts_ |goto Throne of Thunder/6 78.7,38.0
 _Lu'lin_
-|tip Beast of Nightmares summons a Beast of Nightmares add that can only be damaged by Lu'lin's target.
-|tip Bloom Moon Lotus summons a Moon Lotus flower, which puts nearby players to sleep for 5 seconds.
-|tip Cosmic Barrage deals 175,000 damage every 0.5 seconds for 2 seconds.
+_Beast of Nightmares_ summons a Beast of Nightmares add that can only be damaged by Lu'lin's target.
+_Bloom Moon Lotus_ summons a Moon Lotus flower, which puts nearby players to sleep for 5 seconds.
+_Cosmic Barrage_ deals 175,000 damage every 0.5 seconds for 2 seconds.
 _Suen_
-|tip Fan of Flames deals a large amount of damage to the target, also increasing Fire damage they take by 25%.
-|tip Blazing Radiance deals 35,000 Fire damage to the raid and increasing their Fire damage taken by 5%.
-|tip Flames of Passion Suen leaps at a player, dealing 46,000-54,000 Fire damage and knocking all nearby players back.
-|tip Nuclear Inferno deals 100,000 Fire damage every second for 4 seconds. While channeling, her spell deflection and dodge chance are both 100%.
-modelnpc Lu'lin <Mistress of Solitude>##68905
-modelnpc Suen <Mistress of Anger>##68904
-confirm
+_Fan of Flames_ deals a large amount of damage to the target, also increasing Fire damage they take by 25%.
+_Blazing Radiance_ deals 35,000 Fire damage to the raid and increasing their Fire damage taken by 5%.
+_Flames of Passion_ Suen leaps at a player, dealing 46,000-54,000 Fire damage and knocking all nearby players back.
+_Nuclear Inferno_ deals 100,000 Fire damage every second for 4 seconds. While channeling, her spell deflection and dodge chance are both 100%.
+|modelnpc Lu'lin <Mistress of Solitude>##68905
+|modelnpc Suen <Mistress of Anger>##68904
+|confirm
 step
 map Throne of Thunder/6
 path loop off
@@ -16719,37 +16804,50 @@ path	84.9,48.2	87.0,57.0	85.0,65.7
 path	87.4,74.1
 Follow the path, clearing trash as you make your way to the final boss, Lei Shen. |goto 87.4,74.1 <5 |noway |c
 step
-goto Throne of Thunder/7 49.8,15.4 |n
+|goto Throne of Thunder/7 49.8,15.4 |n
 Click and use the Displacement Pad here. |goto Throne of Thunder/7 50.7,50.9 <5 |noway |c
 step
 _Lei Shen_ |goto 50.7,51.0
-|tip Overcharge charges the targeted player with lightning, placing a ring of lightning at their feet, with a safe spot in the very center. Players within 5-40 yards take 100,000 Nature damage and are stunned for 3 seconds.
-|tip Static Shock places a blue arrow above the targeted player and deals 400,000 total damage after 8 seconds, split between all players within 8 yards of the targeted player.
-|tip Bouncing Bolt Lei Shen throws a bolt of lightning across the platform. It creates a blue circle where it lands, spawning an add if a player doesn't stand in the circle in time.
-|tip Diffusion Chain deals 75,000 damage to the targeted player, then jumps to nearby players. Each time this hits a player it will also spawn a Diffused Lightning add.
-|tip Decapitate usually affects the tank, dealing up to 3,000,000 damage. The damage dealt is decreased the further away the target is from Lei Shen.
-|tip Thunderstruck is an AoE that deals 1,000,000 damage to all players in the targeted area. Damage dealt is decreased the further away the area is from Lei Shen.
-modelnpc Lei Shen##68397
-confirm
-step
-Congratulations, you have finished this section of the Throne of Thunder raid!
+_Overcharge_ charges the targeted player with lightning, placing a ring of lightning at their feet, with a safe spot in the very center. Players within 5-40 yards take 100,000 Nature damage and are stunned for 3 seconds.
+_Static Shock_ places a blue arrow above the targeted player and deals 400,000 total damage after 8 seconds, split between all players within 8 yards of the targeted player.
+_Bouncing Bolt_ Lei Shen throws a bolt of lightning across the platform. It creates a blue circle where it lands, spawning an add if a player doesn't stand in the circle in time.
+_Diffusion Chain_ deals 75,000 damage to the targeted player, then jumps to nearby players. Each time this hits a player it will also spawn a Diffused Lightning add.
+_Decapitate_ usually affects the tank, dealing up to 3,000,000 damage. The damage dealt is decreased the further away the target is from Lei Shen.
+_Thunderstruck_ is an AoE that deals 1,000,000 damage to all players in the targeted area. Damage dealt is decreased the further away the area is from Lei Shen.
+|modelnpc Lei Shen##68397
+|tip If you are doing this on LFR this is the end of wing 4.
+|confirm
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Raids\\Pandaria (LFR)\\Vale of Eternal Sorrows (LFR)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Raids\\Pandaria\\Siege of Orgrimmar",{
 author="support@zygorguides.com",
-description="This guide will walk you through the Vale of Eternal Sorrows Raid.",
+description="This guide will walk you through the Siege of Orgrimmar Raid.",
 },[[
 step
+Click here if you are doing a normal clear of the instance |next "Normal SoO"
+Click here if you are doing LFR wings of the instance |next "LFR SoO Index"
+step
+label "LFR SoO Index"
+Click here if you are queueing for the First wing of Siege of Orgrimmar (Vale of Eternal Sorrows) |next "First_Wing_SoO"
+Click here if you are queueing for the Second wing of Siege of Orgrimmar (Gates of Retribution) |next "Second_Wing_SoO"
+Click here if you are queueing for the Third wing of Siege of Orgrimmar (Underhold beneath Orgrimmar) |next "Third_Wing_SoO"
+Click here if you are queueing for the Fourth wing of Siege of Orgrimmar (Downfall of Garrosh Hellscream) |next "Fourth_Wing_SoO"
+step
+label "Normal SoO"
+Enter Siege of Orgrimar |goto Vale of Eternal Blossoms/0 73.91,42.21
+confirm
+step
+label "First_Wing_SoO"
 map Siege of Orgrimmar/2
 path loop off
 path	89.3,45.2	79.3,57.3	59.1,49.6
 path	48.1,51.1
-Follow the path, clearing trash as you make your way to the first boss, Immerseus. |goto 48.1,51.1 < 5 |noway |c
+Follow the path, clearing trash as you make your way to the first boss, Immerseus. |goto 48.1,51.1 <5 |noway |c
 step
 _Immerseus_ |goto 41.8,45.6
-|tip Corrosive Blast is a cone attack that deals 585,000-612,000 Shadow damage to the target and additional nearby players. Make sure the tank is the only one in front of Immerseus when this occurs.
-Sha Bolt deals 15,000 Shadow damage to all players within 5 yards of the target, also forming a Sha Pool.
-Sha Pool summons a swirling pool at multiple players' feet, dealing 10,000 Shadow damage every second for 10 seconds.
-Swirl creates moving void zones that deal move towards players, dealing damage every second. Immerseus then faces a random direction, rotating half-way around the room and casting a large torrent that deals 60,000 Shadow damage per second.
+_Corrosive Blast_ is a _cone_ attack that deals 585,000-612,000 Shadow damage to the target and additional nearby players. Make sure the tank is the only one in front of Immerseus when this occurs.
+_Sha Bolt_ deals 15,000 Shadow damage to all players within 5 yards of the target, also forming a _Sha Pool_.
+_Sha Pool_ summons a swirling pool at multiple players' feet, dealing 10,000 Shadow damage every second for 10 seconds.
+_Swirl_ creates moving void zones that deal move towards players, dealing damage every second. Immerseus then faces a random direction, rotating half-way around the room and casting a large torrent that deals 60,000 Shadow damage per second.
 Adds spawn throughout the fight, they should be killed when they appear.
 |modelnpc Immerseus##71543
 |confirm
@@ -16758,27 +16856,27 @@ map Siege of Orgrimmar/2
 path loop off
 path	31.7,45.4	16.8,44.9	11.7,52.7
 path	11.8,69.6
-Follow the path, clearing trash as you make your way to the next boss, the Fallen Protectors. |goto 11.8,69.6 < 5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, the Fallen Protectors. |goto 11.8,69.6 <5 |noway |c
 step
-Fallen Protectors |goto Siege of Orgrimmar/1 27.0,18.0
+_Fallen Protectors_ |goto Siege of Orgrimmar/1 27.0,18.0
 _Rook Stonetoe_
-|tip Vengeful Strikes is a cone that stuns all affected targets and deals 180,000 damage twice every second for 3 seconds. Make sure the tank is the only one in front of him when this occurs.
-|tip Corrupted Brew inflicts 115,000-132,000 Shadow damage to players within 5 yards of the target and reducing their movement speeds by 50%.
-|tip Corruption Kick spins rapidly in a circle, rooting himself in place dealing 117,000-125,000 Physical damage to targets within 10 yards every second for 4 seconds and applying a DoT that deals 70,000 Shadow damage every 2 seconds for 6 seconds.
+_Vengeful Strikes_ is a _cone_ that stuns all affected targets and deals 180,000 damage twice every second for 3 seconds. Make sure the tank is the only one in front of him when this occurs.
+_Corrupted Brew_ inflicts 115,000-132,000 Shadow damage to players within 5 yards of the target and reducing their movement speeds by 50%.
+_Corruption Kick_ spins rapidly in a circle, rooting himself in place dealing 117,000-125,000 Physical damage to targets within 10 yards every second for 4 seconds and applying a DoT that deals 70,000 Shadow damage every 2 seconds for 6 seconds.
 _He Softfoot_
-|tip Shadowstep applies a DoT to the target that deals 80,000 Physical damage every 2 seconds.
-|tip Instant Poison deals an additional 73,000-77,000 additional Nature damage on a successful melee attack. This effect has a 3 second cooldown.
-|tip Noxious Poison causes successful melee attacks to create pools of poison that deal 85,000 Nature damage every second. This effect has a 3 second cooldown.
-|tip Gouge stuns the target for 4 seconds if they are facing Softfoot.
+_Shadowstep_ applies a DoT to the target that deals 80,000 Physical damage every 2 seconds.
+_Instant Poison_ deals an additional 73,000-77,000 additional Nature damage on a successful melee attack. This effect has a 3 second cooldown.
+_Noxious Poison_ causes successful melee attacks to create pools of poison that deal 85,000 Nature damage every second. This effect has a 3 second cooldown.
+_Gouge_ stuns the target for 4 seconds if they are facing Softfoot.
 _Sun Tenderheart_
-|tip Sha Sear deals Shadow damage every second to the target and all players within 5 yards around them.
-|tip Shadow Word: Bane debuff that deals 100.000 Shadow damage every 3 seconds for 18 seconds. Each time it deals damage it will jump to an additional target, jumping up to 3 times.
-|tip Calamity deals damage to the entire raid, hitting for 30% of each player's maximum health.
-|tip Whenever one of the three bosses reach 66% or 33% health they will summon adds to attack the raid. These should be killed off when they appear.
-modelnpc Rook Stonetoe##71475
-modelnpc He Softfoot##71479
-modelnpc Sun Tenderheart##71480
-confirm
+_Sha Sear_ deals Shadow damage every second to the target and all players within 5 yards around them.
+_Shadow Word: Bane_ debuff that deals 100.000 Shadow damage every 3 seconds for 18 seconds. Each time it deals damage it will jump to an additional target, jumping up to 3 times.
+_Calamity_ deals damage to the entire raid, hitting for 30% of each player's maximum health.
+Whenever one of the three bosses reach 66% or 33% health they will summon adds to attack the raid. These should be killed off when they appear.
+|modelnpc Rook Stonetoe##71475
+|modelnpc He Softfoot##71479
+|modelnpc Sun Tenderheart##71480
+|confirm
 step
 map Siege of Orgrimmar/1
 path loop off
@@ -16788,12 +16886,12 @@ path	Siege of Orgrimmar/3 56.7,30.2	Siege of Orgrimmar/3 70.3,35.9	Siege of Orgr
 Follow the path, clearing trash as you make your way to the next boss, Norushen. |goto Siege of Orgrimmar/3 70.2,54.1 <5 |noway |c
 step
 _Norushen_ |goto 54.2,59.2
-|tip Corruption is applied to the raid and has a unique bar for each player. Increased Corruption reduces the player's damage dealt to the boss. This can be cleansed by using a Purifying Light orb at the edge of the room, which takes the player to a unique, role-specific solo phase.
-|tip Adds will spawn throughout the fight, they should be killed as soon as they appear. Killing these, however, form void zones that increase players' corruption.
-|tip Self Doubt increases the damage the target takes from by next Unleashed Anger by 40%.
-|tip Unleashed Anger deals 400,000 Physical damage to the target.
-|modelnpc Norushen##72276
-|confirm
+Corruption is applied to the raid and has a unique bar for each player. Increased Corruption reduces the player's damage dealt to the boss. This can be cleansed by using a Purifying Light orb at the edge of the room, which takes the player to a unique, role-specific solo phase.
+Adds will spawn throughout the fight, they should be killed as soon as they appear. Killing these, however, form void zones that increase players' corruption.
+_Self Doubt_ increases the damage the target takes from by next _Unleashed Anger_ by 40%.
+_Unleashed Anger_ deals 400,000 Physical damage to the target.
+modelnpc Norushen##72276
+confirm
 step
 map Siege of Orgrimmar/3
 path loop off
@@ -16802,38 +16900,33 @@ path	27.6,54.3
 Follow the path, clearing trash as you make your way to the final boss, the Sha of Pride. |goto 27.6,54.3 <5 |noway |c
 step
 _Sha of Pride_ |goto 29.5,67.2
-|tip Pride is the main mechanic of this fight, each player has a unique bar. Every 60 seconds Sha of Pride uses Swelling Pride, which causes a raide-wide effect based on each player's level of Pride.
-|tip Bursting Pride: 25-49 Pride forms Sha energy at the target's location and explodes after 3 seconds, dealing 300,000 Shadow damage to all players within 4 yards.
-|tip Projection: 50-74 Pride causes a projection to appear at a nearby location from the target, dealing 225,000 Shadow damage to all players after 8 seconds unless the targeted player is standing within it.
-|tip Aura of Pride: 75-99 Pride creates an aura around the target, inflicting 250,000 Shadow damage to other nearby players within 4.5 yards every second.
-|tip Overcome: 100 Pride players become mind controlled and attack other raid members, increasing their damage and healing by 50%. If another Swelling Pride is cast while mind controlled, the players are mind controlled for the rest of the fight.
-|tip Wounded Pride applies a debuff to the target that causes them to gain 5 Pride whenever they take melee damage from the boss.
-|tip Self-Reflection causes 5 players to spawn a reflection of themselves, creating 5 Reflection adds.
-|tip Unleashed occurs when Sha of Pride reaches 30% health. It deals 245,000 Shadow damage to the raid every 10 seconds for the rest of the fight. Kill the Sha of Pride as fast as possible to avoid death.
+Pride is the main mechanic of this fight, each player has a unique bar. Every 60 seconds Sha of Pride uses _Swelling Pride_, which causes a raide-wide effect based on each player's level of Pride.
+_Bursting Pride: 25-49 Pride_ forms Sha energy at the target's location and explodes after 3 seconds, dealing 300,000 Shadow damage to all players within 4 yards.
+_Projection: 50-74 Pride_ causes a projection to appear at a nearby location from the target, dealing 225,000 Shadow damage to all players after 8 seconds unless the targeted player is standing within it.
+_Aura of Pride: 75-99 Pride_ creates an aura around the target, inflicting 250,000 Shadow damage to other nearby players within 4.5 yards every second.
+_Overcome: 100 Pride_ players become mind controlled and attack other raid members, increasing their damage and healing by 50%. If another Swelling Pride is cast while mind controlled, the players are mind controlled for the rest of the fight.
+_Wounded Pride_ applies a debuff to the target that causes them to gain 5 Pride whenever they take melee damage from the boss.
+_Self-Reflection_ causes 5 players to spawn a reflection of themselves, creating 5 Reflection adds.
+_Unleashed_ occurs when Sha of Pride reaches 30% health. It deals 245,000 Shadow damage to the raid every 10 seconds for the rest of the fight. Kill the Sha of Pride as fast as possible to avoid death.
 modelnpc Sha of Pride##71734
+|tip If you are doing this on LFR this is the end of wing 1.
 confirm
 step
-Congratulations, you have finished this section of the Siege of Orgrimmar raid!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Raids\\Pandaria (LFR)\\Gates of Retribution (LFR)",{
-author="support@zygorguides.com",
-description="This guide will walk you through the Gates of Retribution Raid.",
-},[[
-step
+label "Second_Wing_SoO"
 map Siege of Orgrimmar/4
 path loop off
 path	84.0,28.6	76.7,30.8	79.8,38.5
 path	81.4,40.7	81.6,48.8
 Follow the path, destroying cannons along the beach. |goto 81.6,48.8 <5 |noway |c
 step
-talk Lady Jaina Proudmoore##72302
-Tell her" By your command." |goto 77.0,29.3
+talk Lady Jaina Proudmoore##72302 |goto 77.0,29.3
+Tell her" By your command."
 This will start the first boss fight, make sure you are ready.
 confirm
 step
-You will need to split your group into two, one group will need to clear the towers, and then use the two turrets on top of them to shoot down Galakras. |goto 77.2,29.6
-_Galakras_
-|tip Pulsing Flames deals 30,000 Fire damage. Each pulse increases Fire damage taken by 3%.
+You will need to split your group into two, one group will need to clear the towers, and then use the two turrets on top of them to shoot down Galakras.
+_Galakras_ |goto 77.2,29.6
+_Pulsing Flames_ deals 30,000 Fire damage. Each pulse increases Fire damage taken by 3%.
 modelnpc Galakras##72249
 confirm
 step
@@ -16844,11 +16937,11 @@ path	44.5,68.9	35.1,70.9	33.6,53.6
 Follow the path to the next boss, the Iron Juggernaut. |goto 33.6,53.6 <5 |noway |c
 step
 _Iron Juggernaut_ |goto 32.9,48.5
-|tip Shock Pulse releases a seismic eruption that knocks all nearby players back and deals 73,000-76,000 Nature damage.
-|tip Seismic Activity causes an earthquake that deals 40,000 Nature damage every second.
-|tip Ignite Armor deals 30,000 Fire damage every second and increases Fire damage they take by 10% for 30 seconds.
-|tip Flame Vents  deals 300,000 Fire damage in a cone in front of the boss. Make sure the tank is the only one in front of the Iron Juggernaut when this occurs.
-|tip Explosive Tar summons tar at the targeted location that deals 20,000 Nature damage every second and reduces movement speed by 30%.
+_Shock Pulse_ releases a seismic eruption that knocks all nearby players back and deals 73,000-76,000 Nature damage.
+_Seismic Activity_ causes an earthquake that deals 40,000 Nature damage every second.
+_Ignite Armor_ deals 30,000 Fire damage every second and increases Fire damage they take by 10% for 30 seconds.
+_Flame Vents_  deals 300,000 Fire damage in a _cone_ in front of the boss. Make sure the tank is the only one in front of the Iron Juggernaut when this occurs.
+_Explosive Tar_ summons tar at the targeted location that deals 20,000 Nature damage every second and reduces movement speed by 30%.
 modelnpc Iron Juggernaut##71466
 confirm
 step
@@ -16857,19 +16950,19 @@ path loop off
 path	Siege of Orgrimmar/4 30.5,36.0	Siege of Orgrimmar/4 31.1,29.6	Siege of Orgrimmar/4 34.8,22.7
 path	Siege of Orgrimmar/5 51.4,75.2	Siege of Orgrimmar/5 52.1,64.0	Siege of Orgrimmar/5 49.0,66.6
 path	Siege of Orgrimmar/5 47.9,71.7
-Follow the path, clearing trash at each point around the next boss, the Kor'kron Dark Shaman. |goto Siege of Orgrimmar/5 47.9,71.7 < 5 |noway |c
+Follow the path, clearing trash at each point around the next boss, the Kor'kron Dark Shaman. |goto Siege of Orgrimmar/5 47.9,71.7 <5 |noway |c
 step
 _Kor'kron Dark Shaman_ |goto 48.4,64.3
-|tip The bosses are inside the building here, and will need to be pulled outside. A Hunter/Rogue can aggro them and then Feign Death/ Vanish to do this.
+The bosses are inside the building here, and will need to be pulled outside. A Hunter/Rogue can aggro them and then Feign Death/ Vanish to do this.
 _Earthbreaker Haromm_
-|tip Froststorm Strike_ deals 300,000 Frost damage and increases damage taken from this attack by 25% for 30 seconds.
-|tip Toxic Mist creates a toxic pool that deals 80,000 Nature damage every 3 seconds.
-|tip Foul Stream deals 300,000 Nature damage to all players in a line in front of Haromm.
-|tip Ashen Wall summons Ash Elementals to attack the raid. They automatically die after a set amount of time.
+_Froststorm Strike_ deals 300,000 Frost damage and increases damage taken from this attack by 25% for 30 seconds.
+_Toxic Mist_ creates a toxic pool that deals 80,000 Nature damage every 3 seconds.
+_Foul Stream_ deals 300,000 Nature damage to all players in a line in front of Haromm.
+_Ashen Wall_ summons Ash Elementals to attack the raid. They automatically die after a set amount of time.
 _Wavebinder Kardris_
-|tip Toxic Storm creates a storm that deals 300,000 Nature damage to players within 9 yards every 2 seconds. Also sometimes creates toxic tornadoes.
-|tip Foul Geyser creates water that deals 300,000 Nature damage every 0.5 seconds for 8 seconds to players within 4 yards of the area.
-|tip Falling Ash summons ash to fall on the targeted area, dealing 999,999 Fire damage to all players within 17 yards and 300,000 Fire damage at the moment of impact.
+_Toxic Storm_ creates a storm that deals 300,000 Nature damage to players within 9 yards every 2 seconds. Also sometimes creates toxic tornadoes.
+_Foul Geyser_ creates water that deals 300,000 Nature damage every 0.5 seconds for 8 seconds to players within 4 yards of the area.
+_Falling Ash_ summons ash to fall on the targeted area, dealing 999,999 Fire damage to all players within 17 yards and 300,000 Fire damage at the moment of impact.
 modelnpc Earthbreaker Haromm##71859
 modelnpc Wavebinder Kardris##71858
 confirm
@@ -16880,44 +16973,39 @@ path	51.4,60.7	51.8,48.4	54.2,47.6
 path	61.2,43.2	60.8,33.0	55.8,28.9
 path	Siege of Orgrimmar/6 67.2,36.2	Siege of Orgrimmar/6 67.7,50.8	Siege of Orgrimmar/7 41.5,28.3
 path	Siege of Orgrimmar/7 53.0,56.4
-Follow the path, clearing trash as you make your way to the final boss, General Nazgrim. |goto Siege of Orgrimmar/7 53.0,56.4 < 5 |noway |c
+Follow the path, clearing trash as you make your way to the final boss, General Nazgrim. |goto Siege of Orgrimmar/7 53.0,56.4 <5 |noway |c
 step
 _General Nazgrim_ |goto Siege of Orgrimmar/7 65.2,73.5
-|tip Battle Stance generates 1 Rage per seconds.
-|tip Berserker Stance Nazgrim deals extra damage, but also takes extra damage.
-|tip Defensive Stance reduces his damage taken, and increases Rage generated. DPS should stop damaging Nazgrim when he is in this stance.
-|tip Sundering Blow deals 600,000 Physical damage and reduces the target's armor by 10% for 30 seconds.
-|tip Bonecracker reduces the target's maximum health by 10% and causes them to bleed for 40,000 damage every second.
-|tip Heroic Shockwave deals 300,000 Physical damage to players within 10 yards of the targeted area.
-|tip Kor'kron Banner summons a banner that causes Nazgrim's allies to generate additional Rage for him.
-|tip War Song deals damage to the entire raid, equal to 50% of each player's maximum health.
-|tip Ravager Nazgrim throws his sword, dealing 370,000-430,000 damage to players within 6 yards every second and granting Nazgrim 5 Rage for each player hit.
-|modelnpc General Nazgrim##71515
-|confirm
+_Battle Stance_ generates 1 Rage per seconds.
+_Berserker Stance_ Nazgrim deals extra damage, but also takes extra damage.
+_Defensive Stance_ reduces his damage taken, and increases Rage generated. DPS should stop damaging Nazgrim when he is in this stance.
+_Sundering Blow_ deals 600,000 Physical damage and reduces the target's armor by 10% for 30 seconds.
+_Bonecracker_ reduces the target's maximum health by 10% and causes them to bleed for 40,000 damage every second.
+_Heroic Shockwave_ deals 300,000 Physical damage to players within 10 yards of the targeted area.
+_Kor'kron Banner_ summons a banner that causes Nazgrim's allies to generate additional Rage for him.
+_War Song_ deals damage to the entire raid, equal to 50% of each player's maximum health.
+_Ravager_ Nazgrim throws his sword, dealing 370,000-430,000 damage to players within 6 yards every second and granting Nazgrim 5 Rage for each player hit.
+modelnpc General Nazgrim##71515
+|tip If you are doing this on LFR this is the end of wing 2.
+confirm
 step
-Congratulations, you have finished this section of the Siege of Orgrimmar raid!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Raids\\Pandaria (LFR)\\The Underhold (LFR)",{
-author="support@zygorguides.com",
-description="This guide will walk you through the Underhold Raid.",
-},[[
-step
+label "Third_Wing_SoO"
 map Siege of Orgrimmar/8
 path loop off
 path	20.4,66.3	23.2,60.9	28.3,60.6
 path	34.0,59.3	38.4,57.5	41.4,62.9
 path	51.3,61.1	57.2,55.5	53.4,66.1
 path	47.5,55.3	44.2,48.0
-Follow the path, clearing trash as you make your way to the first boss, Malkorok. |goto 44.2,48.0 < 5 |noway |c
+Follow the path, clearing trash as you make your way to the first boss, Malkorok. |goto 44.2,48.0 <5 |noway |c
 step
 _Malkorok_ |goto 41.6,42.3
-|tip Ancient Miasma is cast while Malkorok's energy builds up to 100. It converts all healing to absorption shields and deals 30,000 Shadow damage to the raid every 2 seconds.
-|tip Seismic Slam deals 500,000 damage in a 5 yard area around a random player, knocking all affected players into the air.
-|tip Arcing Smash deals 600,000 damage to all players in a cone. Make sure the tank is the only one in front of Malkorok when this occurs.
-|tip Imploding Energy creates pools of energy that deal 450,000 Shadow damage after 4 seconds to players within 5 yards. If no players are damaged by the initial explosion, it instead deals 510,000 Shadow damage to the entire raid.
-|tip Breath of Y'sharrj causes the areas recently hit by Arcing Smash/Seismic Slam to explode, dealing 1,200,000 Shadow damage.
-|tip Blood Rage causes Malkorok's attack to now deal 1,800,000 total Physical damage, split between all players hit by the cone.
-|tip Displaced Energy deals 250,000 Shadow damage to the target every 3 seconds for 9 seconds. Upon expiring, it explodes and deals an additional 450,000 Shadow damage to all players within 8 yards.
+_Ancient Miasma_ is cast while Malkorok's energy builds up to 100. It converts all healing to absorption shields and deals 30,000 Shadow damage to the raid every 2 seconds.
+_Seismic Slam_ deals 500,000 damage in a 5 yard area around a random player, knocking all affected players into the air.
+_Arcing Smash_ deals 600,000 damage to all players in a _cone_. Make sure the tank is the only one in front of Malkorok when this occurs.
+_Imploding Energy_ creates pools of energy that deal 450,000 Shadow damage after 4 seconds to players within 5 yards. If no players are damaged by the initial explosion, it instead deals 510,000 Shadow damage to the entire raid.
+_Breath of Y'sharrj_ causes the areas recently hit by Arcing Smash/Seismic Slam to explode, dealing 1,200,000 Shadow damage.
+_Blood Rage_ causes Malkorok's attack to now deal 1,800,000 total Physical damage, split between all players hit by the _cone_.
+_Displaced Energy_ deals 250,000 Shadow damage to the target every 3 seconds for 9 seconds. Upon expiring, it explodes and deals an additional 450,000 Shadow damage to all players within 8 yards.
 modelnpc Malkorok##71454
 confirm
 step
@@ -16930,11 +17018,11 @@ path	Siege of Orgrimmar/9 55.4,26.0
 Follow the path, clearing trash as you make your way to the next boss, the Spoils of Pandaria. |goto Siege of Orgrimmar/9 55.4,26.0 <5 |noway |c
 step
 _Spoils of Pandaria_ |goto 52.7,29.2
-|tip The objective of this fight is to open all of the boxes in the rooms before the timer runs out. Opening a box spawns a group of adds that must be killed.
+The objective of this fight is to open all of the boxes in the rooms before the timer runs out. Opening a box spawns a group of adds that must be killed.
 _Mantid Adds_
-|tip Commanders are kill priority. Avoid the tornadoes they spawn and kill off priests.
+_Commanders_ are kill priority. Avoid the tornadoes they spawn and kill off priests.
 _Mogu Adds_
-|tip Statue are kill priority, but can be left if LFR. One person should stand in the beams they cast. Dispell Ritualists.
+_Statue_ are kill priority, but can be left if LFR. One person should stand in the beams they cast. Dispell Ritualists.
 modelnpc Spoils of Pandaria##71889
 confirm
 step
@@ -16945,25 +17033,20 @@ path	46.3,70.7	46.9,76.2
 Follow the path, clearing trash around the final boss, Thok the Bloodthirsty. |goto 46.9,76.2 <5 |noway |c
 step
 _Thok the Bloodthirsty_ |goto 51.3,82.1
-|tip Acid Breath inflicts 485,000-512,00 Nature damage in a frontal cone. Make sure the tank is the only one in front of Thok when this occurs.
-|tip Blood Frenzy is a buff that slowly increases Thok's damage and movement speed.
-|tip Deafening Screech inflicts 243,000-255,000 Physical damage to the raid and interrupting spellcasting for 2 seconds.
-|tip Fearsome Roar deals 200,000 Physical damage in a frontal cone and increasing damage taken by those affected by 25%. Make sure the tank is the only one in front of Thok when this occurs.
-|tip Freezing Breath deals 200,000 Frost damage in a frontal cone. After 5 stacks the target will be frozen solid in a tomb of ice and stunned.
-|tip Mending heals Thok for 8% of his maximum health.
-|tip Panic deals 200,000 damage in a _frontal cone.
-|tip Scorching Breath deals 200,000 Fire damage in a frontal cone.
-|tip Tail Lash deals 200,000 damage to players behind Thok, also stunning them for 2 seconds.
+_Acid Breath_ inflicts 485,000-512,00 Nature damage in a _frontal cone_. Make sure the tank is the only one in front of Thok when this occurs.
+_Blood Frenzy_ is a buff that slowly increases Thok's damage and movement speed.
+_Deafening Screech_ inflicts 243,000-255,000 Physical damage to the raid and interrupting spellcasting for 2 seconds.
+_Fearsome Roar_ deals 200,000 Physical damage in a _frontal cone_ and increasing damage taken by those affected by 25%. Make sure the tank is the only one in front of Thok when this occurs.
+_Freezing Breath_ deals 200,000 Frost damage in a _frontal cone_. After 5 stacks the target will be frozen solid in a tomb of ice and stunned.
+_Mending_ heals Thok for 8% of his maximum health.
+_Panic_ deals 200,000 damage in a _frontal cone_.
+_Scorching Breath_ deals 200,000 Fire damage in a _frontal cone_.
+_Tail Lash_ deals 200,000 damage to players behind Thok, also stunning them for 2 seconds.
 modelnpc Thok the Bloodthirsty##71529
+|tip If you are doing this on LFR this is the end of wing 3.
 confirm
 step
-Congratulations, you have finished this section of the Siege of Orgrimmar raid!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Raids\\Pandaria (LFR)\\Downfall (LFR)",{
-author="support@zygorguides.com",
-description="This guide will walk you through the Downfall Raid.",
-},[[
-step
+label "Fourth_Wing_SoO"
 map Siege of Orgrimmar/8
 path loop off
 path	73.0,43.4	82.2,58.6	89.9,62.0
@@ -16971,22 +17054,22 @@ path	Siege of Orgrimmar/10 36.4,69.8
 Follow the path, clearing trash as you make your way to the first boss, Siegecrafter Blackfuse. |goto Siege of Orgrimmar/10 36.4,69.8 <5 |noway |c
 step
 Kill the waves of enemies that spawn here. |goto Siege of Orgrimmar/10 40.3,65.7
-|confirm
+confirm
 step
 Jump onto this large pipe once all the waves of enemies have been defeated. |goto Siege of Orgrimmar/10 46.3,59.5 <5 |c
 step
 _Siegecrafter Blackfuse_ |goto 58.7,46.5
-|tip It helps if 2 teams are assigned to kill the Disassembled Weapon adds that spawn every 30 seconds. The groups will have to alternate between spawns.
-|tip If a Weapon add is not killed before they reach the northeastern wall, Blackfuse will gain Energized Defensive Matrix.
-|tip Energized Defense Matrix reduces Blackfuse's damage taken by 90%.
-|tip Matter Purification Beam inflicts 475,000 Fire damage.
-|tip Launch Sawblade fires a blade at the target, knocking away all players in its path upon firing and dealing 41,000-48,000 damage every second.
-|tip Electrostatic Charge deals 250,000 Nature damage and increases the target's damage taken from Electrostatic Charge by 100% and Reactive Armor by 200%.
-|tip Reactive Armor reduces damage taken by 80%. Adds that have this buff should be kited through AoEs on the ground, as they still take normal damage from environmental effects.
-|tip Protective Frenzy is a buff that increases damage by 100%, health by 250% and granting immunity to immobolize, stun, and slow effects.
-|tip Automatic Repair Beam Blackfuse heals one of his allies for 5% of their maximum health every 3 seconds. Because of this, adds should be tanked at least 35 yards away from him.
-|modelnpc Siegecrafter Blackfuse##71504
-|confirm
+It helps if 2 teams are assigned to kill the Disassembled Weapon adds that spawn every 30 seconds. The groups will have to alternate between spawns.
+If a Weapon add is not killed before they reach the northeastern wall, Blackfuse will gain _Energized Defensive Matrix_.
+_Energized Defense Matrix_ reduces Blackfuse's damage taken by 90%.
+_Matter Purification Beam_ inflicts 475,000 Fire damage.
+_Launch Sawblade_ fires a blade at the target, knocking away all players in its path upon firing and dealing 41,000-48,000 damage every second.
+_Electrostatic Charge_ deals 250,000 Nature damage and increases the target's damage taken from Electrostatic Charge by 100% and Reactive Armor by 200%.
+_Reactive Armor_ reduces damage taken by 80%. Adds that have this buff should be kited through AoEs on the ground, as they still take normal damage from environmental effects.
+_Protective Frenzy_ is a buff that increases damage by 100%, health by 250% and granting immunity to immobolize, stun, and slow effects.
+_Automatic Repair Beam_ Blackfuse heals one of his allies for 5% of their maximum health every 3 seconds. Because of this, adds should be tanked at least 35 yards away from him.
+modelnpc Siegecrafter Blackfuse##71504
+confirm
 step
 Jump onto this large pipe |goto Siege of Orgrimmar/10 50.2,55.6 <5 |c
 step
@@ -17000,35 +17083,35 @@ Follow the path, clearing trash as you make your way to the next boss, the Parag
 step
 The Paragons join the fight in a certain order, as listed. Upon killing a Paragon, the others return to 100% health. |goto 68.3,35.3
 _Rik'kal the Dissector_, _Skeer the Bloodseeker_, and _Hisek the Swarmkeeper_.
-|tip Injection deals 40,000 Nature damage every second for 12 seconds.
-|tip Mutate turns the target into a mantic scorpion. The transformation deals 150,000 Fire damage to all nearby players within 3 yards and an additional 50,000 Fire damage every second to the original target.
-|tip Bloodletting causes Skeer's target to bleed, flinging globules of their blood onto the floor around the room that move to a nearby Paragon and heal them.
-|tip Multi-Shot Hisek shoots at 3 players at once.
-|tip Rapid Fire Hisek fires out multiple Sonic Pulses that deal 300,000 Physical damage every second to all players caught in their path.
+_Injection_ deals 40,000 Nature damage every second for 12 seconds.
+_Mutate_ turns the target into a mantic scorpion. The transformation deals 150,000 Fire damage to all nearby players within 3 yards and an additional 50,000 Fire damage every second to the original target.
+_Bloodletting_ causes Skeer's target to bleed, flinging globules of their blood onto the floor around the room that move to a nearby Paragon and heal them.
+_Multi-Shot_ Hisek shoots at 3 players at once.
+_Rapid Fire_ Hisek fires out multiple _Sonic Pulses_ that deal 300,000 Physical damage every second to all players caught in their path.
 _Ka'roz the Locust_
-|tip Caustic Amber AoE that deals 138,000-160,000 Nature damage every second.
+_Caustic Amber_ AoE that deals 138,000-160,000 Nature damage every second.
 _Korven the Prime_
-|tip Encase in Amber encased one of Koven's allies in an amber shield, absorbing all damage for 10 seconds. If the shield is not destroyed in this time that ally's health is restored to 100%.
-|tip Shield Bash is a 6 second stun, followed by a frontal cleave
+_Encase in Amber_ encased one of Koven's allies in an amber shield, absorbing all damage for 10 seconds. If the shield is not destroyed in this time that ally's health is restored to 100%.
+_Shield Bash_ is a 6 second stun, followed by a _frontal cleave_
 _Iyyokuk the Lucid_
-|tip Insane Calculation: Fiery Edge fires a beam of fire between multiple players, dealing increased damage the closer the targets are to each other.
+_Insane Calculation: Fiery Edge_ fires a beam of fire between multiple players, dealing increased damage the closer the targets are to each other.
 _Xaril the Poisoned Mind_
-|tip Caustic Blood deals 500,000 Nature damage every second and stacks up to 10 times.
-|tip Tenderizing Strikes is a debuff that increases the target's damage taken from Kil'ruk the Wind-Reaver.
+_Caustic Blood_ deals 500,000 Nature damage every second and stacks up to 10 times.
+_Tenderizing Strikes_ is a debuff that increases the target's damage taken from Kil'ruk the Wind-Reaver.
 _Kaz'tik the Manipulator_
-|tip Mesmerize forces the targeted player to walk toward a nearby Hungry Kunchong.
+_Mesmerize_ forces the targeted player to walk toward a nearby Hungry Kunchong.
 _Kil'ruk the Wind-Reaver_
-|tip Death From Above deals damageto all players within 8 yards.
-|modelnpc Rik'kal the Dissector##71158
-|modelnpc Skeer the Bloodseeker##71152
-|modelnpc Hisek the Swarmkeeper##71153
-|modelnpc Ka'roz the Locust##71154
-|modelnpc Korven the Prime##71155
-|modelnpc Iyyokuk the Lucid##71160
-|modelnpc Xaril the Poisoned Mind##71157
-|modelnpc Kaz'tik the Manipulator##71156
-|modelnpc Kil'ruk the Wind-Reaver##71161
-|confirm
+_Death From Above_ deals damageto all players within 8 yards.
+modelnpc Rik'kal the Dissector##71158
+modelnpc Skeer the Bloodseeker##71152
+modelnpc Hisek the Swarmkeeper##71153
+modelnpc Ka'roz the Locust##71154
+modelnpc Korven the Prime##71155
+modelnpc Iyyokuk the Lucid##71160
+modelnpc Xaril the Poisoned Mind##71157
+modelnpc Kaz'tik the Manipulator##71156
+modelnpc Kil'ruk the Wind-Reaver##71161
+confirm
 step
 map Siege of Orgrimmar/11
 path loop off
@@ -17036,29 +17119,29 @@ path	72.6,45.3	77.4,56.2	76.7,71.4
 path	68.2,81.4	64.9,92.6	Siege of Orgrimmar/12 51.2,45.9
 Follow the path, clearing trash as you make your way to the final boss, Garrosh Hellscream. |goto Siege of Orgrimmar/12 51.2,45.9 <5 |noway |c
 step
-_Garrosh Hellscream_ |goto Siege of Orgrimmar/12 50.1,60.5
-|tip An Engineer add spawns on both sides of the room after Garrosh throws a whirling axe at the raid with Desecrate. They cast Iron Star, which will release a large rolling wheel into the room that kills any raid members it crushes. A DPS should be assigned to kill an Engineer while the raid stays protected on the safe side of the room, free of the Iron Star wheel.
-|tip In between main phases the raid will get teleported to 1 of 3 possible zones. Kill the adds in the zone and rush Garrosh, continuing to damage him as much as possible.
-|tip Desecrate Garrosh throws a whirling axe at the raid, dealing damage on impact and spawning a void zone that deals 75,000 damage every second to all players inside it. Destroying the axe will remove the void zone.
-|tip Whirling Corruption deals 105,000 Shadow damage to nearby players every 0.5 seconds. The damage decreases the farther away you are from Garrosh.
-|tip Touch of Y'Shaarj mind controls the targeted player, making them attack other raid members. Bringing them down to 20% health will break the mind control.
-|tip In Phase 3 Garrosh gains Heart of the Y'Shaarj and takes on a Sha-like appearance. The axes from Desecrate can no longer be destroyed and should simply be avoided while continuing to damage Garrosh. Kill him as fast as possible to avoid death.
+_Garrosh Hellscream_  |goto Siege of Orgrimmar/12 50.1,60.5
+An Engineer add spawns on both sides of the room after Garrosh throws a whirling axe at the raid with _Desecrate_. They cast Iron Star, which will release a large rolling wheel into the room that kills any raid members it crushes. A DPS should be assigned to kill an Engineer while the raid stays protected on the safe side of the room, free of the Iron Star wheel.
+In between main phases the raid will get teleported to 1 of 3 possible zones. Kill the adds in the zone and rush Garrosh, continuing to damage him as much as possible.
+_Desecrate_ Garrosh throws a whirling axe at the raid, dealing damage on impact and spawning a void zone that deals 75,000 damage every second to all players inside it. Destroying the axe will remove the void zone.
+_Whirling Corruption_ deals 105,000 Shadow damage to nearby players every 0.5 seconds. The damage decreases the farther away you are from Garrosh.
+_Touch of Y'Shaarj_ mind controls the targeted player, making them attack other raid members. Bringing them down to 20% health will break the mind control.
+In Phase 3 Garrosh gains Heart of the Y'Shaarj and takes on a Sha-like appearance. The axes from _Desecrate_ can no longer be destroyed and should simply be avoided while continuing to damage Garrosh. Kill him as fast as possible to avoid death.
 modelnpc Garrosh Hellscream##71865
 confirm
 step
 Click on Fading Breah
 accept The Last Gasp of Y'Shaarj##33147 |goto Siege of Orgrimmar/12 47.8,65.7
 modelnpc Fading Breath##73335
-|only if not completedq(33147)
+only if not completedq(33147)
 step
 talk Lorewalker Cho##73318
-turnin The Last Gasp of Y'Shaarj##33147
+turnin The Last Gasp of Y'Shaarj##33147 |goto Siege of Orgrimmar/12 50.2,56.9
 accept Why Do We Fight?##33138 |goto Siege of Orgrimmar/12 50.2,56.9
-|only if not completedq(33138)
+only if not completedq(33138)
 step
 talk Lorewalker Cho##73136
 turnin Why Do We Fight?##33138 |goto Vale of Eternal Blossoms/0 67.4,45.7
-|only if not completedq(33138)
+only if not completedq(33138)
 step
 Congratulations, you have finished the Siege of Orgrimmar raid and witnessed the downfall of Garrosh Hellscream!
 ]])

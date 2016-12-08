@@ -27087,4 +27087,10 @@ ZygorGuidesViewer_L("NPCs", "enUS", function() return {
 [115271]="Ancient Shieldguard|",
 [115039]="Archmage Khadgar|",
 [112967]="Valewalker Farodin|",
+[80633]="Lorewalker Han|",
+[80675]="Auridormi|",
+[97342]="Salan Sunthread|",
+[94870]="Seer Kazal|",
+[115524]="Arcanist Valtrois|",
+[115506]="First Arcanist Thalyssra|",
 } end)

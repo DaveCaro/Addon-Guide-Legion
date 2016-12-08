@@ -408,32 +408,6 @@ step
 _Congratulations!_
 You earned the "A Glorious Campaign" achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Class Hall\\Broken Isles Pathfinder, Part One",{
-condition_end="achieved(11190)",
-author="support@zygorguides.com",
-startlevel=100,
-keywords={"Broken","Isles","Pathfinder","Part","One"},
-description="This guide will walk you through completing the \"Broken Isles Pathfinder, Part One\" Achievement.",
-},[[
-step
-Earn the "Broken Isles Explorer" Achievement |achieve 11190/1
-|tip Use the "Broken Isles Explorer" achievement guide to accomplish this.
-step
-Earn the "Loremaster of Legion" Achievement |achieve 11190/2
-|tip Use the "Loremaster of Legion" achievement guide to accomplish this.
-step
-Earn the "Variety is the Spice of Life" Achievement |achieve 11190/3
-|tip Use the "Variety is the Spice of Life" achievement guide to accomplish this.
-step
-Earn the "Broken Isles Diplomat" Achievement |achieve 11190/4
-|tip Use the "Broken Isles Diplomat" achievement guide to accomplish this.
-step
-Earn the "A Glorious Campaign" Achievement |achieve 11190/5
-|tip Use the "A Glorious Campaign" achievement guide to accomplish this.
-step
-_Congratulations!_
-You earned the "Broken Isles Pathfinder, Part One" achievement.
-]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Exploration\\Legion\\Explore Azsuna",{
 condition_end="achieved(10665)",
 author="support@zygorguides.com",
@@ -832,6 +806,32 @@ Explore Tel'anor |achieve 10669/11 |goto 42.17,35.38
 step
 _Congratulations!_
 You earned the "Explore Suramar" achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Class Hall\\Broken Isles Pathfinder, Part One",{
+condition_end="achieved(11190)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"Broken","Isles","Pathfinder","Part","One"},
+description="This guide will walk you through completing the \"Broken Isles Pathfinder, Part One\" Achievement.",
+},[[
+step
+Earn the "Broken Isles Explorer" Achievement |achieve 11190/1
+|tip Use the "Broken Isles Explorer" achievement guide to accomplish this.
+step
+Earn the "Loremaster of Legion" Achievement |achieve 11190/2
+|tip Use the "Loremaster of Legion" achievement guide to accomplish this.
+step
+Earn the "Variety is the Spice of Life" Achievement |achieve 11190/3
+|tip Use the "Variety is the Spice of Life" achievement guide to accomplish this.
+step
+Earn the "Broken Isles Diplomat" Achievement |achieve 11190/4
+|tip Use the "Broken Isles Diplomat" achievement guide to accomplish this.
+step
+Earn the "A Glorious Campaign" Achievement |achieve 11190/5
+|tip Use the "A Glorious Campaign" achievement guide to accomplish this.
+step
+_Congratulations!_
+You earned the "Broken Isles Pathfinder, Part One" achievement.
 ]])
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\What a Ripoff!",{
@@ -2232,7 +2232,6 @@ Follow the path |goto 67.27,62.82 < 35 |only if walking
 Follow the path |goto 70.01,62.10 < 35 |only if walking
 Follow the path |goto 71.63,60.13 < 35 |only if walking
 kill Reef Lord Raj'his |achieve 11265/7 |goto 75.4,57.5
-|tip The faggot swims around.
 step
 kill Rok'nash##103183 |achieve 11265/4 |goto Suramar/0 80.3,69.9
 step
@@ -2825,6 +2824,337 @@ Run up to the door _but do NOT open it!_
 Earn the Dropping Some Eaves achievement |achieve 10611
 step
 Congratulations, you have earned the Dropping Some Eaves Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Reputation\\Legion\\Friends in a Broken Land",{
+condition_end="achieved(11159)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"Nightfallen"},
+description="This guide will walk you through earning Exalted Status with The Nightfallen",
+},[[
+step
+To earn this achievement, you will need to become exalted with one of the 6 starter factions for legion, listed below:
+Become Exalted with the Wardens |achieve 11159/1 |or
+Become Exalted with the Highmountain Tribe |achieve 11159/2 |or
+Become Exalted with the Court of Farondis |achieve 11159/3 |or
+Become Exalted with The Nightfallen |achieve 11159/4 |or
+Become Exalted with The Dreamweavers |achieve 11159/5 |or
+Become Exalted with The Valarjar |achieve 11159/6 |or
+|tip To achieve this, complete a leveling guide of the associated faction as well as use our World Quest gudie.
+step
+Congratulations, you have earned the Friends in a Broken Land Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Collections\\Legion\\Fashionista: Wrist",{
+condition_end="achieved(10688)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"Fashionista","Wrist"},
+description="This Guide will explain how to attain 100 Different Wrist Appearances",
+},[[
+step
+For this achievement, you will need to collect 100 different appearances for the _Wrist_ slot of your character sheet
+We suggest that you run old dungeons for appearances
+Also, _equip bind on equip items_ that you haven't collected the appearance for yet
+_Keep in mind:_
+Death Knights, Paladins and Warriors can only learn _Plate_ transmogs
+Hunters and Shaman can only learn _Mail_ transmogs
+Demon Hunters, Druids, Monks and Rogues can only learn _Leather_ transmogs
+Mage, Priest and Warlock can only learn _Cloth_ transmogs
+You can use multiple characters to tally towards this achievement
+Earn the Fashionista: Wrist Achievement |achieve 10688/1
+step
+Congratulations, you have earned the Fashionista: Wrist Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Collections\\Legion\\Fashionista: Back",{
+condition_end="achieved(10687)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"Fashionista","Wrist"},
+description="This Guide will explain how to attain 100 Different Back Appearances",
+},[[
+step
+For this achievement, you will need to collect 100 different appearances for the _Back_ slot of your character sheet
+We suggest that you run old dungeons for appearances
+Also, _equip bind on equip items_ that you haven't collected the appearance for yet
+_Keep in mind:_
+Death Knights, Paladins and Warriors can only learn _Plate_ transmogs
+Hunters and Shaman can only learn _Mail_ transmogs
+Demon Hunters, Druids, Monks and Rogues can only learn _Leather_ transmogs
+Mage, Priest and Warlock can only learn _Cloth_ transmogs
+You can use multiple characters to tally towards this achievement
+Earn the Fashionista: Back Achievement |achieve 10687/1
+step
+Congratulations, you have earned the Fashionista: Back Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Collections\\Legion\\Fashionista: Waist",{
+condition_end="achieved(10686)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"Fashionista","Wrist"},
+description="This Guide will explain how to attain 100 Different Waist Appearances",
+},[[
+step
+For this achievement, you will need to collect 100 different appearances for the _Waist_ slot of your character sheet
+We suggest that you run old dungeons for appearances
+Also, _equip bind on equip items_ that you haven't collected the appearance for yet
+_Keep in mind:_
+Death Knights, Paladins and Warriors can only learn _Plate_ transmogs
+Hunters and Shaman can only learn _Mail_ transmogs
+Demon Hunters, Druids, Monks and Rogues can only learn _Leather_ transmogs
+Mage, Priest and Warlock can only learn _Cloth_ transmogs
+You can use multiple characters to tally towards this achievement
+Earn the Fashionista: Waist Achievement |achieve 10686/1
+step
+Congratulations, you have earned the Fashionista: Back Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Collections\\Legion\\Fashionista: Hand",{
+condition_end="achieved(10693)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"Fashionista","Wrist"},
+description="This Guide will explain how to attain 100 Different Hand Appearances",
+},[[
+step
+For this achievement, you will need to collect 100 different appearances for the _Hand_ slot of your character sheet
+We suggest that you run old dungeons for appearances
+Also, _equip bind on equip items_ that you haven't collected the appearance for yet
+_Keep in mind:_
+Death Knights, Paladins and Warriors can only learn _Plate_ transmogs
+Hunters and Shaman can only learn _Mail_ transmogs
+Demon Hunters, Druids, Monks and Rogues can only learn _Leather_ transmogs
+Mage, Priest and Warlock can only learn _Cloth_ transmogs
+You can use multiple characters to tally towards this achievement
+Earn the Fashionista: Hand Achievement |achieve 10693/1
+step
+Congratulations, you have earned the Fashionista: Hand Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Collections\\Legion\\Fashionista: Shoulder",{
+condition_end="achieved(10692)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"Fashionista","Wrist"},
+description="This Guide will explain how to attain 100 Different Shoulder Appearances",
+},[[
+step
+For this achievement, you will need to collect 100 different appearances for the _Shoulder_ slot of your character sheet
+We suggest that you run old dungeons for appearances
+Also, _equip bind on equip items_ that you haven't collected the appearance for yet
+_Keep in mind:_
+Death Knights, Paladins and Warriors can only learn _Plate_ transmogs
+Hunters and Shaman can only learn _Mail_ transmogs
+Demon Hunters, Druids, Monks and Rogues can only learn _Leather_ transmogs
+Mage, Priest and Warlock can only learn _Cloth_ transmogs
+You can use multiple characters to tally towards this achievement
+Earn the Fashionista: Shoulder Achievement |achieve 10692/1
+step
+Congratulations, you have earned the Fashionista: Shoulder Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Collections\\Legion\\Fashionista: Feet",{
+condition_end="achieved(10685)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"Fashionista","Wrist"},
+description="This Guide will explain how to attain 100 Different Feet Appearances",
+},[[
+step
+For this achievement, you will need to collect 100 different appearances for the _Feet_ slot of your character sheet
+We suggest that you run old dungeons for appearances
+Also, _equip bind on equip items_ that you haven't collected the appearance for yet
+_Keep in mind:_
+Death Knights, Paladins and Warriors can only learn _Plate_ transmogs
+Hunters and Shaman can only learn _Mail_ transmogs
+Demon Hunters, Druids, Monks and Rogues can only learn _Leather_ transmogs
+Mage, Priest and Warlock can only learn _Cloth_ transmogs
+You can use multiple characters to tally towards this achievement
+Earn the Fashionista: Feet Achievement |achieve 10685/1
+step
+Congratulations, you have earned the Fashionista: Feet Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Collections\\Legion\\Fashionista: Legs",{
+condition_end="achieved(10684)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"Fashionista","Wrist"},
+description="This Guide will explain how to attain 100 Different Legs Appearances",
+},[[
+step
+For this achievement, you will need to collect 100 different appearances for the _Legs_ slot of your character sheet
+We suggest that you run old dungeons for appearances
+Also, _equip bind on equip items_ that you haven't collected the appearance for yet
+_Keep in mind:_
+Death Knights, Paladins and Warriors can only learn _Plate_ transmogs
+Hunters and Shaman can only learn _Mail_ transmogs
+Demon Hunters, Druids, Monks and Rogues can only learn _Leather_ transmogs
+Mage, Priest and Warlock can only learn _Cloth_ transmogs
+You can use multiple characters to tally towards this achievement
+Earn the Fashionista: Legs Achievement |achieve 10684/1
+step
+Congratulations, you have earned the Fashionista: Legs Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Collections\\Legion\\Fashionista: Chest",{
+condition_end="achieved(10682)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"Fashionista","Wrist"},
+description="This Guide will explain how to attain 100 Different Chest Appearances",
+},[[
+step
+For this achievement, you will need to collect 100 different appearances for the _Chest_ slot of your character sheet
+We suggest that you run old dungeons for appearances
+Also, _equip bind on equip items_ that you haven't collected the appearance for yet
+_Keep in mind:_
+Death Knights, Paladins and Warriors can only learn _Plate_ transmogs
+Hunters and Shaman can only learn _Mail_ transmogs
+Demon Hunters, Druids, Monks and Rogues can only learn _Leather_ transmogs
+Mage, Priest and Warlock can only learn _Cloth_ transmogs
+You can use multiple characters to tally towards this achievement
+Earn the Fashionista: Chest Achievement |achieve 10682/1
+step
+Congratulations, you have earned the Fashionista: Chest Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Collections\\Legion\\Fashionista: Head",{
+condition_end="achieved(10681)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"Fashionista","Wrist"},
+description="This Guide will explain how to attain 100 Different Head Appearances",
+},[[
+step
+For this achievement, you will need to collect 100 different appearances for the _Head_ slot of your character sheet
+We suggest that you run old dungeons for appearances
+Also, _equip bind on equip items_ that you haven't collected the appearance for yet
+_Keep in mind:_
+Death Knights, Paladins and Warriors can only learn _Plate_ transmogs
+Hunters and Shaman can only learn _Mail_ transmogs
+Demon Hunters, Druids, Monks and Rogues can only learn _Leather_ transmogs
+Mage, Priest and Warlock can only learn _Cloth_ transmogs
+You can use multiple characters to tally towards this achievement
+Earn the Fashionista: Head Achievement |achieve 10681/1
+step
+Congratulations, you have earned the Fashionista: Chest Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Collections\\Legion\\Fashionista: Weapon & Off Hand",{
+condition_end="achieved(10689)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"Fashionista","Wrist"},
+description="This Guide will explain how to attain 100 Different Weapon & Off Hand Appearances",
+},[[
+step
+For this achievement, you will need to collect 100 different appearances for the _Weapon & Off Hand_ slot of your character sheet
+We suggest that you run old dungeons for appearances
+Also, _equip bind on equip items_ that you haven't collected the appearance for yet
+_Keep in mind:_
+Death Knights, Paladins and Warriors can only learn _Plate_ transmogs
+Hunters and Shaman can only learn _Mail_ transmogs
+Demon Hunters, Druids, Monks and Rogues can only learn _Leather_ transmogs
+Mage, Priest and Warlock can only learn _Cloth_ transmogs
+You can use multiple characters to tally towards this achievement
+Earn the Fashionista: Weapon & Off Hand Achievement |achieve 10689/1
+step
+Congratulations, you have earned the Fashionista: Weapon & Off Hand Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Collections\\Legion\\Fashionista: Shirt",{
+condition_end="achieved(10691)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"Fashionista","Wrist"},
+description="This Guide will explain how to attain 100 Different Shirt Appearances",
+},[[
+step
+For this achievement, you will need to collect 15 different appearances for the _Shirt_ slot of your character sheet
+You will be spending roughly 600 gold follwing the guide
+Click here to continue |confirm |or |next "hello"
+Earn the Fashionista: Shirt Achievement |achieve 10691 |or |next congrats
+step
+label "hello"
+talk Salan Sunthread##97342
+buy Amber Filigreed Doublet##42365 |n
+Equip the Amber Filligreed Doublet |equipped Amber Filigreed Doublet##42365 |use Amber Filigreed Doublet##42365 |future |achieve 10691
+step
+talk Salan Sunthread##97342
+buy Cerulean Filigreed Doublet##42361 |n
+Equip Cerulean Filigreed Doublet |equipped Cerulean Filigreed Doublet##42361 |use Cerulean Filigreed Doublet##42361 |future |achieve 10691
+step
+talk Salan Sunthread##97342
+buy Ebon Filigreed Doublet##42360 |n
+Equip Ebon Filigreed Doublet |equipped Ebon Filigreed Doublet##42360 |use Ebon Filigreed Doublet##42360 |future |achieve 10691
+step
+talk Salan Sunthread##97342
+buy Golden Filigreed Doublet##42363 |n
+Equip Golden Filigreed Doublet |equipped Golden Filigreed Doublet##42363 |use Golden Filigreed Doublet##42363 |future |achieve 10691
+step
+talk Salan Sunthread##97342
+buy Scarlet Filigreed Doublet##42368 |n
+Equip Scarlet Filigreed Doublet |equipped Scarlet Filigreed Doublet##42368 |use Scarlet Filigreed Doublet##42368 |future |achieve 10691
+step
+talk Salan Sunthread##97342
+buy Amber Filigreed Shirt##42371 |n
+Equip Amber Filigreed Shirt |equipped Amber Filigreed Shirt##42371 |use Amber Filigreed Shirt##42371 |future |achieve 10691
+step
+talk Salan Sunthread##97342
+buy Cerulean Filigreed Shirt##42370 |n
+Equip Cerulean Filigreed Shirt |equipped Cerulean Filigreed Shirt##42370 |use Cerulean Filigreed Shirt##42370 |future |achieve 10691
+step
+talk Salan Sunthread##97342
+buy Ebon Filigreed Shirt##42369 |n
+Equip Ebon Filigreed Shirt |equipped Ebon Filigreed Shirt##42369 |use Ebon Filigreed Shirt##42369 |future |achieve 10691
+step
+talk Salan Sunthread##97342
+buy Golden Filigreed Shirt##42373 |n
+Equip Golden Filigreed Shirt |equipped Golden Filigreed Shirt##42373 |use Golden Filigreed Shirt##42373 |future |achieve 10691
+step
+talk Salan Sunthread##97342
+buy Scarlet Filigreed Shirt##42372 |n
+Equip Scarlet Filigreed Shirt |equipped Scarlet Filigreed Shirt##42372 |use Scarlet Filigreed Shirt##42372 |future |achieve 10691
+step
+talk Salan Sunthread##97342
+buy Blue Martial Shirt##42374 |n
+Equip Blue Martial Shirt |equipped Blue Martial Shirt##42374 |use Blue Martial Shirt##42374 |future |achieve 10691
+step
+talk Salan Sunthread##97342
+buy Green Martial Shirt##42375 |n
+Equip Green Martial Shirt |equipped Green Martial Shirt##42375 |use Green Martial Shirt##42375 |future |achieve 10691
+step
+talk Salan Sunthread##97342
+buy Purple Martial Shirt##42377 |n
+Equip Purple Martial Shirt |equipped Purple Martial Shirt##42377 |use Purple Martial Shirt##42377 |future |achieve 10691
+step
+talk Salan Sunthread##97342
+buy Red Martial Shirt##42378 |n
+Equip Red Martial Shirt |equipped Red Martial Shirt##42378 |use Red Martial Shirt##42378 |future |achieve 10691
+step
+talk Salan Sunthread##97342
+buy Yellow Martial Shirt##42376 |n
+Equip Yellow Martial Shirt |equipped Yellow Martial Shirt##42376 |use Yellow Martial Shirt##42376 |future |achieve 10691
+step
+label "congrats"
+Congratulations, you have earned the Fashionista: Shirt Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Collections\\Legion\\Fashionista: Tabard",{
+condition_end="achieved(10690)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"Fashionista","Wrist"},
+description="This Guide will explain how to attain 100 Different Shirt Appearances",
+},[[
+step
+For this achievement, you will need to collect 15 different appearances for the _Tabard_ slot of your character sheet
+You will be spending roughly 600 gold follwing the guide
+Click here to continue |confirm |or |next "hello"
+Earn the Fashionista: Tabard Achievement |achieve 10690 |or |next congrats
+step
+label "hello"
+talk Captain Lancy Revshon##49877
+buy Stormwind Tabard##45574 |goto Stormwind City/0 67.77,73.09 |n
+Equip the Stormwind Tabard |equipped Stormwind Tabard##45574 |use Stormwind Tabard##45574 |future |achieve 10690
+step
+talk Captain Stonehelm##50309
+buy Ironforge Tabard##45577 |goto Ironforge/0 55.64,47.40 |n
+Equip the Ironforge Tabard |equipped Ironforge Tabard##45577 |use Ironforge Tabard##45577 |future |achieve 10690
+step
+label "congrats"
+Congratulations, you have earned the Fashionista: Tabard Achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Toys\\Legion\\Rocfeather Skyhorn Kite",{
 condition_end="_G.PlayerHasToy(131811)",

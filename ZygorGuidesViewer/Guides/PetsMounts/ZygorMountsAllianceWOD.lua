@@ -1610,24 +1610,7 @@ condition_end="hasmount(189999)",
 description="This guide will help you acquire the Grove Warden mount.",
 },[[
 step
-This mount is obtained by killing Archimonde on Heroic difficulty or higher. Once Archimonde is dead the player will receive an item which starts a short quest line.
-confirm
-step
-kill Archimonde##91331 |goto Hellfire Citadel/10 58.4,53.3
-collect Remnant of Chaos##133762 |use Remnant of Chaos##133762
-accept Shadow of the Defiler##40904 |goto Hellfire Citadel/10 58.4,53.3
-step
-talk Malfurion Stormrage##102432
-turnin Shadow of the Defiler##40904 |goto Moonglade 36.4,41.6
-accept Dark Waters##40962 |goto Moonglade 36.4,41.6
-step
-Follow Malfurion to the crystal waters.
-|tip He does a little bit of dialog before allowing you to turn in the quest.
-turnin Dark Waters##40962 |goto Moonglade 40.4,48.4
-collect Reins of the Grove Warden##128422
-learnmount Grove Warden##189999 |use Grove Warden#128422
-step
-Congratulations, you have attained the _Grove Warden_ mount!
+This mount is no longer obtainable.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Flying Mounts\\Profession Mounts\\Tailoring\\Creeping Carpet",{
 keywords={"tailoring","creeping","carpet","flying","mount"},
