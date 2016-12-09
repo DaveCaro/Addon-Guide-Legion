@@ -72,7 +72,7 @@ Updated the Cataclysmically Delicious achievement adding in an either or to obta
 
 Fixed Incorrect Achievement ID for Lock, Stock, and Two Smoking Goblins Achievement, Both
 
--GENERAL : 
+- GENERAL : 
 
 (Travel) Added portals to and from Astravar Harbor in Suramar to Travel System.
 
