@@ -1627,6 +1627,20 @@ function DugisArrow:Initialize()
 		end
 
 	end
+    
+	function DugisArrow:DidPlayerReachPlace(x, y, m, f)
+		local dist
+		local minimumdist = 15 
+
+        local dist = DugisGuideViewer:GetDistanceFromPlayer(m, f, x, y)
+        
+        if dist and dist < minimumdist then
+            local _, pfloor = DGV:GetPlayerPosition()
+            if pfloor == f then
+                return true
+            end
+        end
+    end
 
 	function DugisArrow:GetDistanceToWaypoint(waypoint)
 		return DugisGuideViewer.astrolabe:GetDistanceToIcon(waypoint.minimap)

@@ -202,13 +202,13 @@ A Tech It Up a Notch |QID|42850| |N|(npc:90250) in {Sanctum of Light} (52.17, 78
 C Tech It Up a Notch |QID|42850| |N|Speak to (npc:109901) and choose a class hall upgrade. in {Sanctum of Light} (39.16, 56.51)| |Z|23 20| |NPC|109901|
 T Tech It Up a Notch |QID|42850| |N|(npc:90250) in {Sanctum of Light} (52.17, 78.00)| |Z|23 20| |NPC|90250|
 
-A Meeting of the Silver Hand |QID|42867| |N|(npc:90259) in {Light's Hope Chapel} (43.31, 87.50)| |Z|23 20| |NPC|90259|
+A Meeting of the Silver Hand |QID|42867| |N|(npc:90250) in {Light's Hope Chapel} (52.28, 78.08)| |Z|23 20| |NPC|90250|
 N (npc:99995) |QID|42867.1| |N|Speak to (npc:99995) in {Light's Hope Chapel} (72.75, 54.60)| |Z|23 0| |NPC|99995|
 N (npc:92346) |QID|42867.3| |N|Speak to (npc:92346) in {Sanctum of Light} (39.17, 63.45)| |Z|23 20| |NPC|92346|
 N (npc:94175) |QID|42867.2| |N|Speak to (npc:94175) in {Armory of the Silver Hand} (52.32, 60.62)| |Z|23 20| |NPC|94175|
 N (npc:90251) |QID|42867.4|  |N|Speak to (npc:90251) in {Armory of the Silver Hand} (49.32, 52.04)| |Z|23 20| |NPC|90251|
 N (npc:99997) |QID|42867.5| |N|Speak to (npc:99997) in {Hall of Champions} (67.67, 17.25)| |Z|23 20| |NPC|99997|
-T Meeting of the Silver Hand |QID|42867| |N|(npc:90259) in {Light's Hope Chapel} (43.31, 87.50)| |Z|23 20| |NPC|90259|
+T Meeting of the Silver Hand |QID|42867| |N|(npc:90259) in {Light's Hope Chapel} (49.87, 72.35)| |Z|23 20| |NPC|90259|
 A The Scion's Legacy |QID|42919| |N|(npc:90259) in {Light's Hope Chapel} (43.31, 87.50)| |Z|23 20| |NPC|90259|
 C The Scion's Legacy |QID|42919| |N|Listen to the leaders of the council| |POI|
 T The Scion's Legacy |QID|42919| |N|(npc:90259) in {Light's Hope Chapel} (43.31, 87.50)| |Z|23 20| |NPC|90259|

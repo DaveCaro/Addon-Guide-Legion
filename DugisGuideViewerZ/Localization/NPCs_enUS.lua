@@ -20993,6 +20993,8 @@ function NPC:Initialize()
 [114838]="Tyrande Whisperwind",
 [114963]="Vereesa Windrunner",
 [115271]="Ancient Shieldguard",
+[107574]="King Anduin Wrynn",
+[112145]="Arcanist Valtrois",
 }
 	end
 

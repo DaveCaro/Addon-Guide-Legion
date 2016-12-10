@@ -202,8 +202,8 @@ T Survey Alcaz Island |QID|27239| |N|(npc:4968) (65.55, 48.34) (66.21, 48.98) in
 A Proof of Treachery |QID|27240| |N|(npc:4968) (66.21, 48.98) in {Theramore Isle}| |NPC|4968|
 
 R Stormwind City |N|Talk to Jaina to send you to {Stormwind} (66.21, 48.98) in {Theramore Isle}| |QID|27241| |NPC|4968| |WR|
-T Proof of Treachery |QID|27240| |N|(npc:29611) (85.60, 31.90) in {Stormwind Keep}| |Z|301| |NPC|29611|
-A Return to Jaina |QID|27241| |N|(npc:29611) (85.60, 31.90) in {Stormwind Keep}| |Z|301| |NPC|29611|
+T Proof of Treachery |QID|27240| |N|(npc:107574) (85.60, 31.90) in {Stormwind Keep}| |Z|301| |NPC|107574|
+A Return to Jaina |QID|27241| |N|(npc:107574) (85.60, 31.90) in {Stormwind Keep}| |Z|301| |NPC|107574|
 
 R Theramore Isle |N|Travel to {Theramore Isle} (66.56, 45.27)| |QID|27241|
 T Return to Jaina |QID|27241| |N|(npc:4968) (66.23, 48.95) in {Theramore Isle}| |NPC|4968|

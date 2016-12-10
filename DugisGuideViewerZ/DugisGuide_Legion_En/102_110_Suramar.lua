@@ -137,8 +137,15 @@ C Oculeth's Workshop |QID|40011| |N|Use the (item:132883) with (npc:101499) in {
 T Oculeth's Workshop |QID|40011| |N|(npc:101499) in {Oculeth's Workshop} (49.65, 48.13)| |Z|1033 0| |NPC|101499|
 A The Delicate Art of Telemancy |QID|40747| |N|(npc:101499) in {Oculeth's Workshop} (49.65, 48.13)| |Z|1033 0| |NPC|101499|
 N Use Teleporter |QID|40747.1| |N|Use teleporter at {Oculeth's Workshop} (49.56, 46.81)| |Z|1033 0|
-N (item:132894) |QID|40747.3| |N|Collect the (item:132894) from the ground in {Warpwind Cliffs}<br/><b>You can reach this area by teleporting from the Workshop > Garden > Warp Lab (53.16, 46.79)| |Z|1033 0|
+R Garden |QID|40747.2| |N|Activate the Garden teleporter then step on the portal in {Oculeth's Workshop} (49.58, 46.78)| |Z|1033 0| |REACH|55.79,39.73|
+R Fountain |QID|40747.2| |N|Activate the Fountain teleporter then step on the portal in {Warpwind Cliffs} (55.80,39.43)| |Z|1033 0| |REACH|54.24,44.46|
+R Telemetry Lab |QID|40747.2| |N|Activate the Telemetry Lab teleporter then step on the portal in {Warpwind Cliffs} (54.32, 44.21)| |Z|1033 0| |REACH|53.07,36.80|
 N (item:132893) |QID|40747.2| |N|Collect (item:132893) <br/><b>You can reach this area from Workshop > Garden > Fountain > Telemetry Lab (51.91, 35.02)| |Z|1033 0|
+R Fountain |QID|40747.3|| |N|Activate the Fountain teleporter then step on the portal in {Warpwind Cliffs} (53.01,37.08)| |Z|1033 0| |REACH|54.24,44.46|
+R Garden |QID|40747.3| |N|Activate the Garden teleporter then step on the portal in {Oculeth's Workshop} (54.16,44.69)| |Z|1033 0| |REACH|55.79,39.73|
+R Warp Lab |QID|40747.3| |N|Activate the Garden teleporter then step on the portal in {Warpwind Cliffs} (55.82, 39.98)| |Z|1033 0| |REACH|52.13,45.12|
+N (item:132894) |QID|40747.3| |N|Collect the (item:132894) from the ground in {Warpwind Cliffs}<br/><b>You can reach this area by teleporting from the Fountain > Garden > Warp Lab (53.16, 46.79)| |Z|1033 0|
+R Workshop |TID|40747| |N|Activate the Workshop teleporter then step on the portal in {Warpwind Cliffs} (52.13, 44.83)| |Z|1033 0| |REACH|49.40,46.89|
 T The Delicate Art of Telemancy |QID|40747| |N|(npc:101499) in {Oculeth's Workshop}<br/><b>To return with the teleporter use the Fountain > Garden > Warp Lab > Workshop (49.32, 47.11)| |Z|1033 0| |NPC|101499|
 A Network Security |QID|40748| |N|(npc:101499) in {Oculeth's Workshop} (49.32, 47.11)| |Z|1033 0| |NPC|101499|
 N Test Chamber teleporter |QID|40748.1| |N|Use the Test Chamber teleporter to teleport to {Oculeth's Test Chamber} (49.37, 47.13)| |Z|1033 0|

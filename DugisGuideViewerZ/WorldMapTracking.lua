@@ -1201,6 +1201,11 @@ function WMT:Initialize()
 				x, y, DataProviders:GetTooltipText(nil, unpack(nearest, 3)),
 				map, level)
 		end
+        
+        DropDownList1.showTimer = 1
+        Lib_DropDownList1.showTimer = 1
+        Lib_HideDropDownMenu(1)
+        Lib_HideDropDownMenu(2)
 	end
 
 	local function IterateDropdownLevel(level)
@@ -1393,8 +1398,7 @@ function WMT:Initialize()
             local nearestOptions = {} 
             local petsOptions = {} 
             local menu = {
-                { text = "Dugi Guides", isTitle = true, isNotRadio = true, notCheckable = true,
-                    menuList = nearestOptions
+                { text = "Dugi Guides", isTitle = true, isNotRadio = true, notCheckable = true
                 },
                 { text = "Find nearest", hasArrow = true, isNotRadio = true, notCheckable = true,
                     menuList = nearestOptions
@@ -1556,6 +1560,11 @@ function WMT:Initialize()
                    
                    allTrackingPoints = nil
                 end)
+                
+                Lib_DropDownList1:HookScript("OnHide", function()
+                    DropDownList1.showTimer = 0.1
+                end)
+                
             end
         end)
 

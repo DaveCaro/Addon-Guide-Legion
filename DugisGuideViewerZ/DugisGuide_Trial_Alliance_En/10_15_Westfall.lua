@@ -12,12 +12,14 @@ A Me Brother, Nipsy |QID|6662| |N|(npc:12997) in {Deeprun Tram}| |R|Dwarf, Gnome
 T Me Brother, Nipsy |QID|6662| |N|Use the tram to get to the other side and find (npc:13018)| |R|Dwarf, Gnome| |NPC|13018| |PL|15|
 R Stormwind City |QID|26378| |N|Use the tram to get to the other side and exit to {Stormwind City}| |R|Dwarf, Gnome| |WR| |PL|15|
 
-R Goldshire |N|Travel to {Goldshire} (41.69, 64.65)| |Z|30| |QID|26378|
-f Goldshire |N|Grab {Goldshire} flight path (41.69, 64.65)| |Z|30| |QID|26378| |NPC|42983| |PL|5|
-A Hero's Call: Westfall! |QID|26378| |N|Marshall Dughan in {Goldshire} (42.11, 65.94)| |Z|30| |NPC|240|
+R Goldshire |N|Travel to {Goldshire} (41.69, 64.65)| |Z|30| |QID|26378| |OID|28562|
+f Goldshire |N|Grab {Goldshire} flight path (41.69, 64.65)| |Z|30| |QID|26378| |NPC|42983| |OID|28562|
+A Hero's Call: Westfall! |QID|26378| |N|Marshall Dughan in {Goldshire} (42.11, 65.94)| |Z|30| |NPC|240| |OID|28562|
+
 R Westfall |N|Travel to {The Jansen Stead} (60.08, 19.34)| |QID|26209| 
 R The Jansen Stead |N|Travel to {The Jansen Stead} (60.08, 19.34)| |QID|26209| 
 T Hero's Call: Westfall! |QID|26378| |N|(npc:42308) (60.08, 19.34) in {The Jansen Stead}| |O| |NPC|42308|
+T Hero's Call: Westfall! |QID|28562| |N|(npc:42308) (60.08, 19.34) in {The Jansen Stead}| |O| |NPC|42308|
 A Murder Was The Case That They Gave Me |QID|26209| |N|(npc:42308) (60.08, 19.34) in {The Jansen Stead}| |NPC|42308|
 T Furlbrow's Deed |QID|184| |N|(npc:42308) (60.08, 19.34) in {The Jansen Stead}| |O| |NPC|42308|
 N Obtain Clue #1 |QID|26209.1| |N|Speak to the various homeless people occupying the Jansen Stead to gather clues. Find clue #1 here in {The Jansen Stead} (58.79, 18.37)|
@@ -151,8 +153,8 @@ A Rise of the Brotherhood |QID|26322| |N|(npc:234) (56.25, 47.57) in {Sentinel T
 C Rise of the Brotherhood |QID|26322| |N|Witness the Rise of the Brotherhood in {Sentinel Tower} (56.34, 47.64)|
 
 R Stormwind City |QID|26322| |N|Travel to {Stormwind City} (56.65, 49.28)| |NPC|523| |Z|301|
-T Rise of the Brotherhood |QID|26322| |N|(npc:29611) (85.67, 31.87) in {Stormwind City}'s {Stormwind Keep}| |Z|301| |NPC|29611|
-A Return to Sentinel Hill |QID|26370| |N|(npc:29611) (85.67, 31.87) in {Stormwind City}'s {Stormwind Keep}| |Z|301| |NPC|29611|
+T Rise of the Brotherhood |QID|26322| |N|(npc:107574) (85.67, 31.87) in {Stormwind City}'s {Stormwind Keep}| |Z|301| |NPC|107574|
+A Return to Sentinel Hill |QID|26370| |N|(npc:107574) (85.67, 31.87) in {Stormwind City}'s {Stormwind Keep}| |Z|301| |NPC|107574|
 
 R Sentinel Hill |N|Travel to {Sentinel Hill} (56.34, 49.54)| |NPC|352|
 T Return to Sentinel Hill |QID|26370| |N|(npc:234) (56.34, 49.54) in {Sentinel Hill}| |NPC|234|

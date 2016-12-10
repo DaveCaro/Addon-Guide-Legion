@@ -271,7 +271,6 @@ allWorldQuestButtons = {}
 
 hooksecurefunc("WorldMap_SetupWorldQuestButton", function(button, worldQuestType, rarity, isElite, tradeskillLineIndex, inProgress, selected, isCriteria, isSpellTarget)
     if not button.alreadyHooked then
-        allWorldQuestButtons[#allWorldQuestButtons + 1] = button
     
         button:HookScript("OnClick", function(self)
             if self.questID then
@@ -287,6 +286,11 @@ hooksecurefunc("WorldMap_SetupWorldQuestButton", function(button, worldQuestType
                 onPOIClick(self)
             end
         end)
+        
+        if button:GetParent():GetName() == "WorldMapPOIFrame" then
+            allWorldQuestButtons[#allWorldQuestButtons + 1] = button
+        end
+        
     end
     
     --Support for WorldQuestTracker

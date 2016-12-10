@@ -325,12 +325,12 @@ C A New Fate |QID|31450| |N|Speak to the (npc:56013), and choose whether to join
 T A New Fate |QID|31450| |N|(npc:60566) (74.23, 92.42) at {Valley Of Heroes} in {Stormwind City}| |REP|1353, 5| |Z|301| |NPC|60566|
 A Joining the Alliance |QID|30987| |N|(npc:60566) (74.23, 92.42) at {Valley Of Heroes} in {Stormwind City}| |REP|1353, 5| |Z|301| |NPC|60566| |OID|31012|
 T Joining the Alliance |QID|30987| |N|(npc:29611) (85.68, 31.68) in {Stormwind City}| |REP|1353, 5| |Z|301| |NPC|29611| |OID|31012|
-A The Alliance Way |QID|30988| |N|(npc:29611) (85.68, 31.68) in {Stormwind City}| |REP|1353, 5| |Z|301| |NPC|29611| |OID|31012|
+A The Alliance Way |QID|30988| |N|(npc:107574) (85.68, 31.68) in {Stormwind City}| |REP|1353, 5| |Z|301| |NPC|107574| |OID|31012|
 C The Alliance Way |QID|30988| |N|Walk with (npc:61796) in {Stormwind City} (82.64, 27.91)| |REP|1353, 5| |Z|301| |NPC|61796| |OID|31012|
 T The Alliance Way |QID|30988| |N|(npc:61796) (82.65, 27.91) in {Stormwind City}| |REP|1353, 5| |Z|301| |NPC|61796| |OID|31012|
 A An Old Pit Fighter |QID|30989| |N|(npc:61796) (82.65, 27.91) in {Stormwind City}| |REP|1353, 5| |Z|301| |NPC|61796| |OID|31012|
 C An Old Pit Fighter |QID|30989| |N|Fight with (npc:61796) in {Stormwind City} (82.40, 28.15)| |REP|1353, 5| |Z|301| |NPC|61796| |OID|31012|
-T An Old Pit Fighter |QID|30989| |N|(npc:29611) (85.63, 31.68) in {Stormwind City}| |Z|301| |REP|1353, 5| |NPC|29611| |OID|31012|
+T An Old Pit Fighter |QID|30989| |N|(npc:107574) (85.63, 31.68) in {Stormwind City}| |Z|301| |REP|1353, 5| |NPC|107574| |OID|31012|
 
 T A New Fate |QID|31450| |N|(npc:60570) (45.60, 12.55) in {The Dranosh'ar Blockade}| |REP|1352, 5| |Z|4| |NPC|60570|
 A Joining the Horde |QID|31012| |N|(npc:60570) (45.60, 12.55) in {The Dranosh'ar Blockade}| |REP|1352, 5| |Z|4| |NPC|60570| |OID|30987|

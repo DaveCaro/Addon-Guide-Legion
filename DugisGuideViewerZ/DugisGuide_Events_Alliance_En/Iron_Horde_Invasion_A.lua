@@ -63,7 +63,7 @@ T Gar'mak Bladetwist |QID|35500| |N|(npc:84929) (51.94, 28.61)| |Z|19| |NPC|8492
 A Report to the King |QID|36941| |N|(npc:84929) (51.94, 28.61)| |Z|19| |NPC|84929|
 
 R Stormwind City |N|Use the portal to {Stormwind City} (66.37, 28.01)| |Z|19|
-T Report to the King |QID|36941| |N|(npc:29611) in {Stormwind Keep} (85.78, 31.74)| |Z|301| |NPC|29611|
+T Report to the King |QID|36941| |N|(npc:29611) in {Stormwind Keep} (85.78, 31.74)| |Z|301| |NPC|29611| |POI|
 
 N Guide Complete
 

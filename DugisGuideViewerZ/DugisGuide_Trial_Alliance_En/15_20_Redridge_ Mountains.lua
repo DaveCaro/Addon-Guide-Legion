@@ -3,13 +3,13 @@ function Guide:Initialize()
 	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Eastern Kingdoms|r ", "36(14-20)#36(15-21)#36(15-22)", "34(19-24)#34(20-26)#34(21-27)", "Alliance", nil, "L", nil, function()
 return [[
 
-R Stormwind City |N|Travel to {Stormwind City} (85.6, 31.8)| |QID|26266| |Z|301|
-R Stormwind Keep |N|Travel to {Stormwind Keep} (85.6, 31.8)| |QID|26266| |Z|301|
-A Hero's Call: Redridge Mountains! |N|(npc:29611) (85.6, 31.8) in {Stormwind City}| |QID|26365| |Z|301| |NPC|29611|
+R Stormwind City |N|Travel to {Stormwind City} (85.6, 31.8)| |QID|26266| |Z|301| |OID|26365| 
+A Hero's Call: Redridge Mountains! |QID|28563| |N|Hero's call board (85.6, 31.8) in {Stormwind City}| |OID|26365| |Z|301| |NPC|29611|
 
 R Redridge Mountains |N|Travel to {Redridge Mountains} (12.37, 64.77)| |QID|26503|
 R Tower Watch |N|Travel to {Tower Watch} (15.30, 64.77)| |QID|26503|
-T Hero's Call: Redridge Mountains! |QID|26365| |N|(npc:464) (15.30, 64.77) in {Tower Watch}| |NPC|464|
+T Hero's Call: Redridge Mountains! |QID|28563| |N|(npc:464) (15.30, 64.77) in {Tower Watch}| |NPC|464| |OID|26365|
+T Hero's Call: Redridge Mountains! |QID|26365| |N|(npc:464) (15.30, 64.77) in {Tower Watch}| |NPC|464| |OID|28563|
 A Still Assessing the Threat |QID|26503| |N|(npc:464) (15.31, 64.86) in {Tower Watch}| |NPC|464|
 A Franks and Beans |QID|26506| |N|(npc:379) (15.73, 65.25) in {Tower Watch}| |NPC|379|
 A Wanted: Redridge Gnolls |QID|26504| |N|Wanted! (16.17, 64.67) in {Three Corners}| |OBJ|156|

@@ -198,7 +198,7 @@ A Where Kings Walk |N|(npc:31084) (83.42, 49.42)| |QID|13188| |Z|23| |NPC|31084|
 
 R Elwynn Forest |N|Use the portal to travel to {Stormwind City} (83.66, 51.33)| |Z|23| |WR|
 R Stormwind Keep |N|Travel to {Stormwind Keep} (85.6, 31.8)| |Z|301|
-T Where Kings Walk |N|Take the portal and talk to (npc:29611), he's located in {Stormwind Keep} (63, 71.7) (85.6, 31.8)| |Z|301| |QID|13188| |NPC|29611|
+T Where Kings Walk |N|Take the portal and talk to (npc:107574), he's located in {Stormwind Keep} (63, 71.7) (85.6, 31.8)| |Z|301| |QID|13188| |NPC|107574|
 
 N Guide Complete |N|Tick to continue to (guide:"465(58-60)#465(59-62)#465(60-64)")| 
 

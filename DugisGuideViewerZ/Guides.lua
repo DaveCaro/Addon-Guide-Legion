@@ -2624,13 +2624,50 @@ function Guides:Initialize()
 
 	local function CheckForWaypointLocation(indx)
 		if CurrentTitle ~= nil then 
-			if DGU.CurrentQuestIndex and indx == DGU.CurrentQuestIndex and DGV.tags[DGU.CurrentQuestIndex] and DGV.tags[DGU.CurrentQuestIndex]:match("(|REACH|)") then 
-				if DGV.DugisArrow.waypoints and #DGV.DugisArrow.waypoints==1 and 
-					DGV.DugisArrow:getFirstWaypoint()==DGV.DugisArrow:DidPlayerReachWaypoint() then
-					return true
-
-				end
+        
+			if DGU.CurrentQuestIndex and indx == DGU.CurrentQuestIndex and DGV.tags[DGU.CurrentQuestIndex] then 
+            
+                local tag = DGV.tags[DGU.CurrentQuestIndex]
+            
+                -- Case: |REACH|22,22|   
+                local coordinates = tag:match("|REACH|[^|0-9]*([0-9]+[^|]*)|")
+                
+                if coordinates then
+                    local x, y, m, f = unpack(LuaUtils:split(coordinates, ","))
+                    x, y, m, f = tonumber(x), tonumber(y), tonumber(m), tonumber(f)
+                    
+                    if not m or not f then
+                        local mapID, mapFloor = DGV:ReturnTag("Z", DGU.CurrentQuestIndex)
+                        m = m or mapID
+                        f = f or mapFloor
+                    end
+                    
+                    if not m or not f then
+                        local qid = DGV.qid[DGU.CurrentQuestIndex]
+                        local mapID, mapFloor = LuaUtils:DugiGetQuestWorldMapAreaID(qid), GetCurrentMapDungeonLevel()
+                        m = m or mapID
+                        f = f or mapFloor
+                    end
+                    
+                    if not m or not f then
+                        local pmap, pfloor = DGV:GetPlayerPosition()
+                        m = m or pmap
+                        f = f or pfloor
+                    end
+                    
+                    if DGV.DugisArrow:DidPlayerReachPlace(x, y, m, f) then
+                        return true
+                    end
+                else
+                    -- Case: |REACH|
+                    if tag:match("(|REACH|)") and DGV.DugisArrow.waypoints and #DGV.DugisArrow.waypoints==1 and 
+                    DGV.DugisArrow:getFirstWaypoint()==DGV.DugisArrow:DidPlayerReachWaypoint() then
+                        return true
+                    end
+                end
+             
 			end
+            
 		end 
 	end
 
@@ -4587,7 +4624,10 @@ function Guides:Initialize()
                 
                 local zone = tonumber(guide:match("^(%d+)"))
                 if not zone then
-                    zone = tonumber(DGV:GetMapIDFromName(guide:match("^(.-)%s?%(")))
+					zone = guide:match("^(.-)%s?%(")
+					if zone then 
+	                    zone = tonumber(DGV:GetMapIDFromName(zone))
+					end 
                 end            
             
                 if zone == currentZone   then
@@ -5788,7 +5828,7 @@ function Guides:Initialize()
 				return profession, tonumber(maxlevel)
 			elseif tag == "Z" then --ex: |Z|mapID mapFloor|
 				local mapID, mapFloor = tags:match("|Z|(%d+)%s?(%d*)|")
-				return tonumber(mapID), tonumber(mapFloor)
+				return tonumber(mapID), tonumber(mapFloor)			
 			elseif tag == "F" then --ex: |F|mapID mapFloor|
 				local mapID, mapFloor = tags:match("|F|(%d+)%s?(%d*)|")
 				return tonumber(mapID), tonumber(mapFloor)

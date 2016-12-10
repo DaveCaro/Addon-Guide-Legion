@@ -141,17 +141,17 @@ A The Call of Battle |QID|43750| |N|(npc:100635) in {Skyhold} (59.4, 13.6)| |Z|1
 T The Call of Battle |QID|43750| |N|(npc:107987) in {Skyhold} (55.96, 84.43)| |Z|1035 1| |NPC|107987|
 A The Gjallarhorn |QID|42193| |N|(npc:107987) in {Skyhold} (55.96, 84.43)| |Z|1035 1| |NPC|107987|
 
-R Stormheim |QID|42194| |N|Travel to {Stormheim} (63.89,47.29)| |Z|1017 1|
-T The Gjallarhorn |QID|42193| |N|(npc:106720) in {Stormheim} (60.58,52.10) (62.58,52.11) (63.89,47.29)| |Z|1017 1| |NPC|106720|
-A Stolen Honor |QID|42194| |N|(npc:106720) in {Stormheim} (63.89,47.29)| |Z|1017 1| |NPC|106720|
-K (npc:107401) |QID|42194.3| |N|Kill (npc:107401) and collect (item:137184) (63.83,51.36) | |Z|1017 1| |NPC|107401|
-K (npc:107403) |QID|42194.1| |N|Kill (npc:107403) and collect (item:137182) (69.52,51.56)| |Z|1017 1|  |NPC|107403|
-K (npc:107400) |QID|42194.2| |N|Kill (npc:107400) and collect (item:137183) (69.55,51.05) (73.53,46.15)| |Z|1017 1|  |NPC|107400|
-T Stolen Honor |QID|42194| |N|(npc:106720) in {Stormheim} (63.89,47.29)| |Z|1017 1| |NPC|106720|
-A Break the Bonds |QID|42650| |N|(npc:106720) in {Stormheim} (63.89,47.29)| |Z|1017 1| |NPC|106720|
-C Break the Bonds |QID|42650| |N|Use (item:138204) into the Soul Pyre and complete the Ritual of Unbinding (70.81,38.13)| |POI|
-T Break the Bonds |QID|42650| |N|(npc:106720) (70.85,38.19)| |NPC|106720|
-A Svergan's Promise |QID|42651| |N|(npc:106720)  (70.85,38.19)| |NPC|106720|
+R Stormheim |QID|42194| |N|Travel to {Stormheim} (63.89,47.29)| |Z|1017 0|
+T The Gjallarhorn |QID|42193| |N|(npc:106720) in {Stormheim} (60.58,52.10) (62.58,52.11) (63.89,47.29)| |Z|1017 0| |NPC|106720|
+A Stolen Honor |QID|42194| |N|(npc:106720) in {Stormheim} (63.89,47.29)| |Z|1017 0| |NPC|106720|
+K (npc:107401) |QID|42194.3| |N|Kill (npc:107401) and collect (item:137184) (63.83,51.36) | |Z|1017 0| |NPC|107401|
+K (npc:107403) |QID|42194.1| |N|Kill (npc:107403) and collect (item:137182) (69.52,51.56)| |Z|1017 0|  |NPC|107403|
+K (npc:107400) |QID|42194.2| |N|Kill (npc:107400) and collect (item:137183) (69.55,51.05) (73.53,46.15)| |Z|1017 0|  |NPC|107400|
+T Stolen Honor |QID|42194| |N|(npc:106720) in {Stormheim} (63.89,47.29)| |Z|1017 0| |NPC|106720|
+A Break the Bonds |QID|42650| |N|(npc:106720) in {Stormheim} (63.89,47.29)| |Z|1017 0| |NPC|106720|
+C Break the Bonds |QID|42650| |N|Use (item:138204) into the Soul Pyre and complete the Ritual of Unbinding (70.81,38.13)| |Z|1017 0| |POI|
+T Break the Bonds |QID|42650| |N|(npc:106720) (70.85,38.19)| |Z|1017 0| |NPC|106720|
+A Svergan's Promise |QID|42651| |N|(npc:106720)  (70.85,38.19)| |Z|1017 0| |NPC|106720|
 
 R Skyhold |TID|42651| |N|Travel to {Skyhold} (56.2, 83.0)| |Z|1035 1| 
 T Svergan's Promise |QID|42651| |N|(npc:107987) in {Skyhold} (56.2, 83.0)| |Z|1035 1| |NPC|107987|
