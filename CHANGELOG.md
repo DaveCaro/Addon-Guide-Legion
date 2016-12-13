@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Zygor Viewer Guide Beta
 
+Gold/Leveling Guide for Various Game.
+
 ### Changed 
 
 - BETA
