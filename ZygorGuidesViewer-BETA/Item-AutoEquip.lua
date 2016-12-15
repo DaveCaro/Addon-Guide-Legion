@@ -131,6 +131,7 @@ function AutoEquip:ScanBagsForUpgrades(verbose,noreport,noblock)
 	for bag=0, NUM_BAG_SLOTS do for bagslot=1, GetContainerNumSlots(bag) do repeat
 		local itemid = GetContainerItemID(bag,bagslot)
 		if not itemid then break end
+		if itemid==82800 then break end -- caged pet, we will never equip it anyway
 
 		if self:TestForBadUpgrade(itemid) then
 			if self.verbose then verboseDebug("%s %s removed because it is in BadUpgrades.",itemlink,itemlink:match("item[:%d%-]+")) end

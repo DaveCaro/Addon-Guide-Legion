@@ -625,7 +625,7 @@ Explore Sylvan Falls |achieve 10667/12 |goto 35.91,65.97
 step
 Explore Thunder Totem |achieve 10667/13 |goto Thunder Totem/0 45.69,38.89 |region thunder_totem_circle_platform
 step
-Follow the path up |goto 40.51,51.52 < 30 |only if walking
+Follow the path up |goto Highmountain/0 40.51,51.52 < 30 |only if walking
 Continue following the path up |goto 38.88,48.30 < 30 |only if walking
 Follow the path up |goto 37.87,48.14 < 20 |only if walking
 Follow the path |goto 36.93,45.85 < 20 |only if walking

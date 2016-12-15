@@ -1758,8 +1758,7 @@ ZygorGuidesViewer:RegisterInclude("Cooking_Brew",[[
 		create Jade Witch Brew##124053,Way of the Brew,576
 	step
 		You will need _65 Striped Melon_ as well as _13 Jade Lungfish_
-		Click here if you want to farm _Iron Paw Tokens_ |confirm |condition skill("Way of the Brew")>=600
-		Click here if you want to buy the items from the _Auction House_ |confirm |next "brew2"
+		Click here to start farming for the _Iron Paw Tokens_ |confirm |condition skill("Way of the Brew")>=600
 	step
 		You will need _11 Ironpaw Tokens_ in order to reach 600 Cooking
 		talk Merchant Cheng##64940
@@ -1783,14 +1782,19 @@ ZygorGuidesViewer:RegisterInclude("Cooking_Brew",[[
 	step
 		talk Nam Ironpaw##64395
 		buy 3 100 Year Soy Sauce##74853 |condition itemcount(74853)>=3 or skill("Way of the Brew")>=600
+		|tip You can also buy these from the Auction House.
 	step
+		talk Nam Ironpaw##64395
 		buy Sack of Witchberries##87712 |n
 		use Sack of Witchberries##87712
 		collect 100 Witchberries##74846 |goto Valley of the Four Winds/0 53.5,51.2 |condition itemcount(74846)>=100 or skill("Way of the Brew")>=600
+		|tip You can also buy these from the Auction House.
 	step
+		talk Nam Ironpaw##64395
 		buy Sack of Green Cabbage##87706 |n
 		use Sack of Green Cabbages##87706
 		collect 100 Green Cabbage##74840 |goto Valley of the Four Winds/0 53.5,51.2 |condition itemcount(74840)>=100 or skill("Way of the Brew")>=600
+		|tip You can also buy these from the Auction House.
 	step
 		talk Bobo Ironpaw##58717
 		learn Great banquet of the Brew##125603 |goto Valley of the Four Winds 53.0,52.0

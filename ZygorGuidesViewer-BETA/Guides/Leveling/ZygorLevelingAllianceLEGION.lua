@@ -13518,9 +13518,11 @@ talk Valewalker Farodin##107126
 accept Seed of Hope##44561 |goto 36.85,46.56 |region suramar_shalaran
 step
 talk Arcanist Valtrois##103155
+|tip She will need to be fed in order for you to attain this quest. It costs 50 mana.
 accept Leyline Apprentice##44492 |goto 37.00,46.35 |region suramar_shalaran
 step
 talk Arcanist Valtrois##103155
+|tip She will need to be fed in order for you to attain this quest. It costs 50 mana.
 turnin Leyline Apprentice##44492 |goto 37.00,46.35 |region suramar_shalaran
 step
 talk Mayruna Moonwing##103568
@@ -13827,12 +13829,15 @@ Watch the dialogue
 Abandon the Stronghold |q 40972/1 |goto 30.08,10.34
 step
 talk First Arcanist Thalyssra##97140
+|tip She will need to be fed in order for you to attain this quest. It costs 50 mana.
 turnin Last Stand of the Moon Guard##40972 |goto 36.88,46.61 |region suramar_shalaran
 step
 talk Arcanist Valtrois##103155
+|tip She will need to be fed in order for you to attain this quest. It costs 50 mana.
 accept Leyline Proficiency##44493 |goto 37.00,46.35 |region suramar_shalaran
 step
 talk Arcanist Valtrois##103155
+|tip She will need to be fed in order for you to attain this quest. It costs 50 mana.
 turnin Leyline Proficiency##44493 |goto 37.00,46.35 |region suramar_shalaran
 step
 Run up the stairs |goto 35.27,50.86 < 20 |only if walking
@@ -14153,12 +14158,15 @@ click Leyline Feed
 turnin Leyline Feed: Elor'shan##43587 |goto 46.93,47.17
 step
 talk First Arcanist Thalyssra##97140
+|tip She will need to be fed in order for you to attain this quest. It costs 50 mana.
 accept Lady Lunastre##41877 |goto Suramar/0 36.88,46.61 |region suramar_shalaran
 step
 talk Arcanist Valtrois##103155
+|tip She will need to be fed in order for you to attain this quest. It costs 50 mana.
 accept Leyline Master##44495 |goto 37.00,46.35 |region suramar_shalaran
 step
 talk Arcanist Valtrois##103155
+|tip She will need to be fed in order for you to attain this quest. It costs 50 mana.
 turnin Leyline Master##44495 |goto 37.00,46.35 |region suramar_shalaran
 step
 Run up the stairs |goto 35.26,50.85 < 20 |only if walking
@@ -14308,11 +14316,13 @@ click Portal to Shal'Aran |goto 47.73,81.35 |n
 Travel to Shal'Aran |goto 36.40,45.09 > 700 |noway |c |q 42487
 step
 talk First Arcanist Thalyssra##97140
+|tip She will need to be fed in order for you to attain this quest. It costs 50 mana.
 Choose _<Offer the Gift-Wrapped Arcwine Bottle.>_
 Watch the dialogue
 Deliver Vanthir's Gift to Thalyssra |q 42487/2 |goto 36.89,46.61 |region suramar_shalaran
 step
 talk First Arcanist Thalyssra##97140
+|tip She will need to be fed in order for you to attain this quest. It costs 50 mana.
 turnin Friends On the Outside##42487 |goto 36.89,46.61 |region suramar_shalaran
 accept Thalyssra's Abode##42488 |goto 36.89,46.61 |region suramar_shalaran
 step
@@ -14374,13 +14384,16 @@ click Unpowered Telemancy Beacon
 turnin Felsoul Teleporter Online!##41575 |goto 53.61,36.78
 step
 talk First Arcanist Thalyssra##97140
+|tip She will need to be fed in order for you to attain this quest. It costs 50 mana.
 Report to Thalyssra |q 40470/3 |goto Suramar/0 36.89,46.61 |region suramar_shalaran
 step
 talk First Arcanist Thalyssra##97140
+|tip She will need to be fed in order for you to attain this quest. It costs 50 mana.
 turnin Quality of Life##40470 |goto 36.89,46.61 |region suramar_shalaran
 accept Building an Army##44636 |goto 36.88,46.61 |region suramar_shalaran
 step
 talk First Arcanist Thalyssra##97140
+|tip She will need to be fed in order for you to attain this quest. It costs 50 mana.
 Tell her _"I've come to help the withered with their combat training."_
 Speak with Thalyssra to Start Training your Withered |q 44636/1 |goto 36.88,46.60 |region suramar_shalaran
 step
@@ -14441,6 +14454,7 @@ Use the Amplifier Fragments |use Amplifier Fragment##138392
 collect Arcane Amplifier##138391 |q 42488/1 |goto 66.88,62.74
 step
 talk First Arcanist Thalyssra##97140
+|tip She will need to be fed in order for you to attain this quest. It costs 50 mana.
 turnin Thalyssra's Drawers##42489 |goto 36.89,46.61 |region suramar_shalaran
 turnin Thalyssra's Abode##42488 |goto 36.89,46.61 |region suramar_shalaran
 step
@@ -14953,6 +14967,8 @@ talk Sylverin##108870
 turnin Balance to Spare##42837 |goto 61.39,55.10
 turnin Silkwing Sabotage##42836 |goto 61.39,55.10
 accept Reversal##42838 |goto 61.39,55.10
+step
+Find Margaux |q 42838/1 |goto Suramar/0 60.43,54.93
 step
 talk Sylverin##108870
 turnin Reversal##42838 |goto 61.39,55.10
@@ -16268,7 +16284,7 @@ Continue down the stairs |goto 47.27,59.43 < 15 |only if walking
 Follow the path |goto 48.72,62.28 < 20 |only if walking
 click Duskwatch Scrying Orb
 |tip Inside the building.
-Inspect the Duskwatch Scrying Orb |q 45209/1 |count 1 |goto 49.96,62.04.
+Inspect the Duskwatch Scrying Orb |q 45209/1 |count 1 |goto 49.96,62.04
 step
 click Duskwatch Scrying Orb
 |tip Inside the building.
@@ -16319,6 +16335,136 @@ Protect Valtrois While She Investigates the Ley Line Device |q 44833/2 |goto Sur
 step
 talk First Arcanist Thalyssra##115736
 turnin The Seal's Power##44833 |goto Suramar/0 36.49,45.85 |region suramar_shalaran
+step
+talk First Arcanist Thalyssra##115736
+accept The Advisor and the Arcanist##45268 |goto 36.49,45.83 |region suramar_shalaran
+step
+Use the Fruit of the Arcan'dor on a Suramar Refugee |use Fruit of the Arcan'dor##143597
+|tip There are Suramar Refugees all around inside the cave.
+Cure a Suramar Refugee |q 45268/1 |goto 37.49,47.44 |region suramar_shalaran
+step
+talk First Arcanist Thalyssra##115736
+turnin The Advisor and the Arcanist##45268 |goto 36.49,45.83 |region suramar_shalaran
+accept A Message From Our Enemies##44918 |goto 36.49,45.83 |region suramar_shalaran
+step
+click Mysterious Crystal
+Listen to Andaris's Message |q 44918/1 |goto 36.47,45.79 |region suramar_shalaran
+step
+Watch the dialogue
+talk First Arcanist Thalyssra##115736
+turnin A Message From Our Enemies##44918 |goto 36.49,45.83 |region suramar_shalaran
+accept A Challenge From Our Enemies##44919 |goto 36.49,45.83 |region suramar_shalaran
+step
+click Portal to Lunastre Estate
+Take the Lunastre Estate Teleporter |q 44919/1 |goto 36.16,45.05 |region suramar_shalaran
+step
+Watch the dialogue
+Confront Andaris |q 44919/2 |goto 43.43,78.92
+step
+Follow the path |goto 42.73,78.55 < 20 |only if walking
+Follow the path |goto 42.25,77.17 < 20 |only if walking
+Talk to Terrified Lunastre NPC's
+|tip They look like cowering nightfallen NPC's all around this area.
+Rescue #6# Terrified Citizens |q 44919/3 |goto 42.04,74.83
+step
+talk First Arcanist Thalyssra##115736
+turnin A Challenge From Our Enemies##44919 |goto 36.49,45.83 |region suramar_shalaran
+accept The Felsoul Experiments##45063 |goto 36.49,45.83 |region suramar_shalaran
+accept Telemantic Expanse##45067 |goto 36.49,45.83 |region suramar_shalaran
+step
+talk Chief Telemancer Oculeth##115710
+turnin Telemantic Expanse##45067 |goto 36.62,45.09 |region suramar_shalaran
+accept Survey the City##45065 |goto 36.62,45.09 |region suramar_shalaran
+step
+Cross the bridge |goto 34.45,50.02 < 20 |only if walking
+Follow the path up |goto 34.08,54.36 < 20 |only if walking
+Follow the path |goto 33.10,56.55 < 30 |only if walking
+Follow the path down |goto 33.02,58.64 < 20 |only if walking
+Use the Experimental Targeting Orb near the Felsoul Shard |use use Experimental Targeting Orb##142399
+Destroy the Felsoul Shard |q 45063/1 |count 1 |goto 30.90,65.41
+step
+Use the Experimental Targeting Orb near the Felsoul Shard |use use Experimental Targeting Orb##142399
+Destroy the Felsoul Shard |q 45063/1 |count 2 |goto 32.06,66.45
+step
+Follow the path up |goto 30.64,65.10 < 20 |only if walking
+Use the Experimental Targeting Orb near the Felsoul Shard |use use Experimental Targeting Orb##142399
+Destroy the Felsoul Shard |q 45063/1 |count 3 |goto 28.43,61.23
+step
+Click the Complete Quest Box:
+turnin The Felsoul Experiments##45063
+accept Resisting Arrest##45062
+step
+Follow the path |goto 30.05,61.77 < 30 |only if walking
+Follow the path |goto 31.49,63.51 < 20 |only if walking
+Enter the building |goto 33.98,66.99 < 20 |only if walking
+Use the Advanced Targeting Orb near the Fel Power Source |use Advanced Targeting Orb##142400
+|tip Inside the building.
+Disable the Power Source |q 45062/1 |goto 34.62,67.64
+step
+talk First Arcanist Thalyssra##115736
+turnin Resisting Arrest##45062 |goto 36.49,45.83 |region suramar_shalaran
+step
+Use the Advanced Telemancy Beacon |use Advanced Telemancy Beacon##142405
+|tip WARNING: Using this item will remove your Masquerade disguise, so be careful.
+|tip Use the item multiple times.
+|tip You can run behind the beacon as you survey to make it survey for longer, so you get it done faster.
+Survey the Terrace of Order #100# Times |q 45065/1 |goto 46.06,64.66
+step
+talk Chief Telemancer Oculeth##115710
+turnin Survey the City##45065 |goto 36.62,45.08 |region suramar_shalaran
+accept Experimental Instability##45066 |goto 36.62,45.08 |region suramar_shalaran
+step
+Cross the bridge |goto 34.43,50.00 < 20 |only if walking
+Run up the stairs |goto 35.27,50.87 < 20 |only if walking
+Cross the bridge |goto 36.32,50.59 < 20 |only if walking
+Follow the path |goto 37.53,49.51 < 20 |only if walking
+Follow the path |goto 44.16,51.67 < 30 |only if walking
+Cross the bridge |goto 46.07,50.75 < 20 |only if walking
+Follow the path up |goto 48.55,49.26 < 20 |only if walking
+Follow the path |goto 48.66,47.16 < 20 |only if walking
+Take the Portal to Oculeth's Test Chamber |q 45066/1 |goto 49.37,48.35
+|tip Inside the building.
+step
+click Discarded Orb
+Collect the Discarded Orb |q 45066/3 |count 1 |goto 58.76,37.75
+step
+click Discarded Orb
+Collect the Discarded Orb |q 45066/3 |count 2 |goto 58.33,37.99
+step
+click Discarded Orb
+Collect the Discarded Orb |q 45066/3 |count 3 |goto 58.15,37.54
+step
+click Discarded Orb
+Collect the Discarded Orb |q 45066/3 |count 4 |goto 58.11,37.14
+step
+click Telemancy Notes
+Collect the Telemancy Notes |q 45066/2 |goto 58.48,35.71
+step
+click Portal to Shal'Aran
+Take the Portal to Shal'Aran |q 45066/4 |goto 59.06,36.16
+step
+talk Chief Telemancer Oculeth##115710
+turnin Experimental Instability##45066 |goto 36.62,45.08 |region suramar_shalaran
+step
+talk First Arcanist Thalyssra##115736
+accept Felborne No More##45064 |goto 36.49,45.83 |region suramar_shalaran
+stickystart "Slay_Felbourne"
+step
+Follow the path down |goto 64.22,43.12 < 20 |only if walking
+Continue down the path |goto 64.51,46.72 < 30 |only if walking
+Follow the path up |goto 65.20,52.24 < 20 |only if walking
+Follow the path |goto 65.09,53.65 < 20 |only if walking
+Run up the stairs |goto 65.59,55.45 < 20 |only if walking
+kill Valthis Ama'ran##115954 |q 45064/1 |goto 66.05,55.98
+step
+label "Slay_Felbourne"
+Kill enemies around this area
+Use the Experimental Telemancy Orb |use Experimental Telemancy Orb##142491
+|tip Withered allies will spawn to help you fight.
+Slay #8# Felbourne |q 45064/2 |goto 65.48,55.02
+step
+talk First Arcanist Thalyssra##115736
+turnin Felborne No More##45064 |goto 36.49,45.83 |region suramar_shalaran
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Legion (100-110)\\Order Hall Quests",{
 author="support@zygorguides.com",
@@ -17018,6 +17164,7 @@ click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept An Unclear Path##44466 |goto 45.32,30.12
+|tip You will need Artifact Knowledge Rank 2 in order to accept this.
 |only Warrior
 step
 Follow the path |goto Val'sharah/0 54.96,53.43 < 20 |only if walking
@@ -17957,6 +18104,7 @@ click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept An Unclear Path##44466 |goto 52.20,69.51
+|tip You will need Artifact Knowledge Rank 2 in order to accept this.
 |only Paladin
 step
 Follow the path |goto Val'sharah/0 54.96,53.43 < 20 |only if walking
@@ -18983,6 +19131,7 @@ click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept An Unclear Path##44466 |goto 47.42,43.49
+|tip You will need Artifact Knowledge Rank 2 in order to accept this.
 |only Hunter
 step
 Follow the path |goto Val'sharah/0 54.96,53.43 < 20 |only if walking
@@ -19983,6 +20132,7 @@ click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept An Unclear Path##44466 |goto 40.79,54.82
+|tip You will need Artifact Knowledge Rank 2 in order to accept this.
 |only Rogue
 step
 Follow the path |goto Val'sharah/0 54.96,53.43 < 20 |only if walking
@@ -20980,6 +21130,7 @@ click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept An Unclear Path##44466 |goto 49.81,26.41
+|tip You will need Artifact Knowledge Rank 2 in order to accept this.
 |only Priest
 step
 Follow the path |goto Val'sharah/0 54.96,53.43 < 20 |only if walking
@@ -21930,6 +22081,7 @@ click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept An Unclear Path##44466 |goto 32.48,32.81
+|tip You will need Artifact Knowledge Rank 2 in order to accept this.
 |only Shaman
 step
 Follow the path |goto Val'sharah/0 54.96,53.43 < 20 |only if walking
@@ -22918,6 +23070,7 @@ click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept An Unclear Path##44466 |goto Hall of the Guardian/1 83.77,32.70
+|tip You will need Artifact Knowledge Rank 2 in order to accept this.
 |only Mage
 step
 Follow the path |goto Val'sharah/0 54.96,53.43 < 20 |only if walking
@@ -24174,6 +24327,7 @@ click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept An Unclear Path##44466 |goto 58.65,43.40
+|tip You will need Artifact Knowledge Rank 2 in order to accept this.
 |only DemonHunter
 step
 Follow the path |goto Val'sharah/0 54.96,53.43 < 20 |only if walking
@@ -25066,6 +25220,7 @@ click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept An Unclear Path##44466 |goto 53.17,32.63
+|tip You will need Artifact Knowledge Rank 2 in order to accept this.
 |only Warlock
 step
 Follow the path |goto Val'sharah/0 54.96,53.43 < 20 |only if walking
@@ -26053,6 +26208,7 @@ click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept An Unclear Path##44466 |goto 51.80,48.16
+|tip You will need Artifact Knowledge Rank 2 in order to accept this.
 |only Monk
 step
 Follow the path |goto Val'sharah/0 54.96,53.43 < 20 |only if walking
@@ -27012,6 +27168,7 @@ click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept An Unclear Path##44466 |goto 60.06,52.14
+|tip You will need Artifact Knowledge Rank 2 in order to accept this.
 |only Druid
 step
 Follow the path |goto Val'sharah/0 54.96,53.43 < 20 |only if walking
@@ -27919,6 +28076,7 @@ click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept An Unclear Path##44466 |goto 54.24,74.13
+|tip You will need Artifact Knowledge Rank 2 in order to accept this.
 |only DeathKnight
 step
 Follow the path |goto Val'sharah/0 54.96,53.43 < 20 |only if walking

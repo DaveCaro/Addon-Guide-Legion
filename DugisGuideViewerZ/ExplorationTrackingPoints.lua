@@ -369,10 +369,10 @@ tappend(points["StranglethornJungle:0"],
 	"A:57.00,21.00:781:11",	--"Exploration Eastern Kingdom"
 	"A:42.00,41.00:781:10",	--"Exploration Eastern Kingdom"
 	"A:46.00,53.00:781:3",	--"Exploration Eastern Kingdom"
-	"A:65.00,50.00 :781:12",	--"Exploration Eastern Kingdom"
+	"A:65.00,50.00:781:12",	--"Exploration Eastern Kingdom"
 	"A:51.00,33.00:781:9",	--"Exploration Eastern Kingdom"
 	"A:34.00,36.00:781:6",	--"Exploration Eastern Kingdom"
-	"A:29.00,42.00 :781:7",	--"Exploration Eastern Kingdom"
+	"A:29.00,42.00:781:7",	--"Exploration Eastern Kingdom"
 	"A:25.00,21.00:781:2",	--"Exploration Eastern Kingdom"
 	"A:67.00,32.00:781:8"	--"Exploration Eastern Kingdom"
 )

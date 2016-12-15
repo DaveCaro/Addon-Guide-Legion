@@ -487,7 +487,8 @@ Cross the bridge |goto Azsuna/0 56.48,62.04 < 30 |only if walking
 accept The Eternal Mages##42711 |goto 56.33,65.90
 |tip You will accept this quest automatically.
 step
-kill Ancient Flamecaller##108339 |q 42711/1 |goto 56.33,65.90
+Kill enemies around this area
+Slay #15# Ghost Mages |q 42711/1 |goto 57.03,65.17
 |next "Court_Of_Farondis_WQ"
 step
 label quest-44049
@@ -1020,7 +1021,7 @@ Follow the path up |goto Azsuna/0 45.44,42.33 < 30 |only if walking
 accept Supplies Needed: Leystone##41315 |goto 46.99,40.67
 |tip You will accept this quest automatically.
 step
-collect 40 Leystone##123918
+collect 40 Leystone Ore##123918
 |tip You can farm these with Mining or purchase them from the Auction House.
 step
 talk Veridis Fallon##107376
@@ -1472,7 +1473,7 @@ turnin Work Order: Aethril##41287 |goto 46.90,41.44
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41651
-Follow the path up |goto Azsuna/0 45.44,42.33 < 30 |only if walking
+Follow the path up |goto Azsuna/0 45.44,42.33 < 20 |only if walking
 accept Work Order: Azsunite Pendant##41651 |goto 46.91,41.43
 |tip You will accept this quest automatically.
 step
@@ -1544,7 +1545,7 @@ Follow the path up |goto Azsuna/0 45.47,42.25 < 30 |only if walking
 accept Work Order: Leystone##41311 |goto 46.99,40.26
 |tip You will accept this quest automatically.
 step
-collect 40 Leystone##123918
+collect 40 Leystone Ore##123918
 |tip You can farm these with Mining or purchase them from the Auction House.
 step
 talk Veridis Fallon##107376
@@ -4445,7 +4446,8 @@ turnin Work Order: Word of Strength##41671 |goto 38.08,46.05
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43964
-Follow the path |goto Stormheim/0 44.80,56.52 < 30 |only if walking
+Cross the bridge |goto Stormheim/0 40.02,62.82 < 20 |only if walking
+Follow the path |goto 42.96,58.94 < 30 |only if walking
 Follow the path up |goto 44.06,53.76 < 30 |only if walking
 Follow the path up |goto 41.35,53.11 < 30 |only if walking
 accept A Jarl's Feast##43964 |goto Stormheim/0 38.61,55.19
@@ -4464,9 +4466,13 @@ Engage in the Revelry |q 43964/1 |goto 38.61,55.19
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42067
-Follow the path |goto Stormheim/0 38.22,32.03 < 20 |only if walking
-Follow the path down |goto 39.95,30.15 < 30 |only if walking
-Follow the path |goto 38.00,29.15 < 30 |only if walking
+Follow the path up |goto Stormheim/0 49.20,31.30 < 20 |only if walking
+Follow the path up |goto 48.22,30.10 < 15 |only if walking
+Follow the path |goto 47.24,32.34 < 20 |only if walking
+Follow the path down |goto 45.58,31.20 < 20 |only if walking
+Follow the path down |goto 41.87,27.91 < 20 |only if walking
+Follow the path down |goto 40.24,29.36 < 30 |only if walking
+Follow the path down |goto 38.15,29.51 < 30 |only if walking
 accept All Howl, No Bite##42067 |goto Stormheim/0 38.35,27.38
 |tip You will accept this quest automatically.
 step
@@ -4476,9 +4482,10 @@ Defeat Chromadon |q 42067/1 |goto Stormheim/0 38.35,27.38
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41948
-Follow the path |goto Stormheim/0 54.82,70.83 < 20 |only if walking
-Cross the water |goto 58.01,67.50 < 30 |only if walking
-Go over the rocks |goto 59.66,66.24 < 20 |only if walking
+Follow the path |goto Stormheim/0 70.74,60.35 < 20 |only if walking
+Follow the path |goto 68.01,61.92 < 20 |only if walking
+Follow the path |goto 64.03,63.37 < 10 |only if walking
+Follow the path |goto Stormheim/0 60.89,65.29 < 30 |only if walking
 Follow the stairs up |goto Stormheim/0 61.74,67.90 < 30 |only if walking
 accept All Pets Go to Heaven##41948 |goto Stormheim/0 62.68,67.36
 |tip You will accept this quest automatically.
@@ -4489,8 +4496,8 @@ Defeat Envoy of the Hunt |q 41948/1 |goto Stormheim/0 62.68,67.36
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43951
-Cross the bridge |goto Stormheim/0 44.15,60.38 < 20 |only if walking
-click Grapple Point |goto 44.91,63.99 < 10 |only if walking
+Follow the path |goto Stormheim/0 39.10,63.96 < 30 |only if walking
+click Grapple Point |goto 42.88,64.85 < 10 |only if walking
 |tip It's a grey hook on top of the wall. |only if walking
 accept An Overdue Debt##43951 |goto Stormheim/0 44.48,69.07
 |tip You will accept this quest automatically.
@@ -4501,8 +4508,8 @@ Rescue #6# Highmountain Prisoners |q 43951/1 |goto 44.48,69.07
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41451
-Cross the bridge |goto Stormheim/0 44.15,60.38 < 20 |only if walking
-click Grapple Point |goto 44.91,63.99 < 10 |only if walking
+Follow the path |goto Stormheim/0 39.10,63.96 < 30 |only if walking
+click Grapple Point |goto 42.88,64.85 < 10 |only if walking
 |tip It's a grey hook on top of the wall. |only if walking
 accept Assault on Hrydshal##41451 |goto Stormheim/0 44.35,68.56
 |tip You will accept this quest automatically.
@@ -4585,18 +4592,20 @@ kill 4 Helmouth Mistcaller##105502 |q 41984/1 |goto 59.93,43.99
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41950
-accept Cry More Thunder##41950 |goto Stormheim/0 44.67,59.51
+accept Cry More Thunder##41950 |goto Stormheim/0 37.47,64.20 |only Alliance
+accept Cry More Thunder##41950 |goto Stormheim/0 44.67,59.51 |only Horde
 |tip You will accept this quest automatically.
 step
 talk Vethir##97979
-Begin the Assault on Hrydshal |q 41950/1 |goto 37.47,64.20
+Begin the Assault on Hrydshal |q 41950/1 |goto 37.47,64.20 |only Alliance
+Begin the Assault on Hrydshal |q 41950/1 |goto 44.67,59.51 |only Horde
 step
 Kill the enemies on the ground as you fly
 |tip Use the abilities on your action bar.
 |tip Use the Storm's Fury ability to kill the enemies that grapple onto you.
 Slay #150# God-King's Minions |q 41950/2 |goto 45.35,70.18
 step
-Return to Hrydshal Overlook |q 41950/3 |goto 43.73,60.35
+Return to Hrydshal Overlook |q 41950/3 |goto 43.73,60.36
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43745

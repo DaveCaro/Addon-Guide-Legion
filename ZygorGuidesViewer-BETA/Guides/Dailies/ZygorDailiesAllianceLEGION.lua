@@ -487,7 +487,8 @@ Cross the bridge |goto Azsuna/0 56.48,62.04 < 30 |only if walking
 accept The Eternal Mages##42711 |goto 56.33,65.90
 |tip You will accept this quest automatically.
 step
-kill Ancient Flamecaller##108339 |q 42711/1 |goto 56.33,65.90
+Kill enemies around this area
+Slay #15# Ghost Mages |q 42711/1 |goto 57.03,65.17
 |next "Court_Of_Farondis_WQ"
 step
 label quest-44049
@@ -4591,11 +4592,13 @@ kill 4 Helmouth Mistcaller##105502 |q 41984/1 |goto 59.93,43.99
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41950
-accept Cry More Thunder##41950 |goto Stormheim/0 37.47,64.20
+accept Cry More Thunder##41950 |goto Stormheim/0 37.47,64.20 |only Alliance
+accept Cry More Thunder##41950 |goto Stormheim/0 44.67,59.51 |only Horde
 |tip You will accept this quest automatically.
 step
 talk Vethir##97979
-Begin the Assault on Hrydshal |q 41950/1 |goto 37.47,64.20
+Begin the Assault on Hrydshal |q 41950/1 |goto 37.47,64.20 |only Alliance
+Begin the Assault on Hrydshal |q 41950/1 |goto 44.67,59.51 |only Horde
 step
 Kill the enemies on the ground as you fly
 |tip Use the abilities on your action bar.

@@ -1277,6 +1277,60 @@ N (npc:112145) |QID|44833| |N|Protect npc:112145) while she investigates the ley
 R Shal'Aran |TID|44833| |N|(npc:97140) in {Shal'Aran} (36.49, 45.82)| |Z|1033 0| |NPC|97140| |PRE|44740|
 T The Seal's Power |QID|44833| |N|(npc:97140) in {Shal'Aran} (36.49, 45.82)| |Z|1033 0| |NPC|97140| |PRE|44740|
 
+--Breaking the Nighthold
+
+A The Advisor and the Arcanist |QID|45268| |N|(npc:115736) in {Shal'Aran}<br/><br/>This quest is not available until December 13 (36.49,45.83)| |Z|1033 0| |NPC|115736|
+C The Advisor and the Arcanist |QID|45268| |N|Use (item:143597) on a (npc:111901) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|111901| |PRE|44740| |U|143597|
+T The Advisor and the Arcanist |QID|45268| |N|(npc:115736) in {Shal'Aran} (36.49,45.83)| |Z|1033 0| |NPC|115736|
+A A Message From Our Enemies |QID|44918| |N|(npc:115736) in {Shal'Aran} (36.49,45.83)| |Z|1033 0| |NPC|115736|
+C A Message From Our Enemies |QID|44918.1| |N|click Mysterious Crystal and Listen to Andaris's Message (36.47,45.79)| |Z|1033 0| 
+T A Message From Our Enemies |QID|44918| |N|(npc:115736) in {Shal'Aran} (36.49,45.83)| |Z|1033 0| |NPC|115736|
+A A Challenge From Our Enemies |QID|44919| |N|(npc:115736) in {Shal'Aran} (36.49,45.83)| |Z|1033 0| |NPC|115736|
+
+R Lunastre Estate |QID|44919.1| |N|Take the Lunastre Estate Teleporter (36.16,45.05)| |Z|1033 0|
+N Confront Andaris |QID|44919.2| |N|Watch the dialogue to confront Andaris (43.43,78.92)| |Z|1033 0|
+C A Challenge From Our Enemies |QID|44919.3| |N|Rescue 6 (npc:115825) or (npc:115826) in {Lunastre Estate} (42.73,78.55) (42.25,77.17) (42.04,74.83)| |NPC|115825, 115826|
+
+R Shal'Aran |TID|44919| |N|Take the portal back to {Shal'Aran} (36.49,45.83)| |Z|1033 0| 
+T A Challenge From Our Enemies |QID|44919| |N|(npc:115736) in {Shal'Aran} (36.49,45.83)| |Z|1033 0| |NPC|115736|
+A The Felsoul Experiments |QID|45063| |N|(npc:115736) in {Shal'Aran} (36.49,45.83)| |Z|1033 0| |NPC|115736|
+A Telemantic Expanse |QID|45067| |N|(npc:115736) in {Shal'Aran} (36.49,45.83)| |Z|1033 0| |NPC|115736|
+T Telemantic Expanse |QID|45067| |N|(npc:115710) in {Shal'Aran} (36.62,45.09)| |Z|1033 0| |NPC|115710|
+A Survey the City |QID|45065| |N|(npc:115710) in {Shal'Aran} (36.62,45.09)| |Z|1033 0| |NPC|115710|
+
+R Felsoul Hold |QID|45063| |N|Trave to {Felsoul Hold} (34.45,50.02) (34.08,54.36) (33.10,56.55) (33.02,58.64)| |Z|1033 0|
+C The Felsoul Experiments |QID|45063| |N|Use the (item:142399) near the Felsoul Shard| |POI|  |U|142399|
+T The Felsoul Experiments |QID|45063| |N|Auto turn in|
+A Resisting Arrest |QID|45062| |N|Auto quest|
+N Disable the Power Source |QID|45062| |N|Use the Advanced Targeting Orb near the Fel Power Source (30.05,61.77) (31.49,63.51) (33.98,66.99) (34.62,67.64)| |Z|1033 0| |U|142400|
+
+R Shal'Aran |TID|45062| |N|Travel to {Shal'Aran} (36.49,45.83)| |Z|1033 0| 
+T Resisting Arrest |QID|45062| |N|(npc:115736) in {Shal'Aran} (36.49,45.83)| |Z|1033 0| |NPC|115736|
+
+R Evermoon Terrace |QID|45065| |N|Take the portal to {Evermoon Terrace} (36.50, 44.78)| |Z|1033 0|
+
+R Terrace of Order |QID|45065| |N|Travel to {Terrace of Order} (46.06,64.66)| |Z|1033 0|
+C Survey the City |QID|45065| |N|Use (item:142405)  to Survey the Terrace of Order<br/><br/>You can run behind the beacon as you survey to make it survey for longer, so you get it done faster. (46.06,64.66)| |Z|1033 0|
+
+R Shal'Aran |TID|45062| |N|Travel to {Shal'Aran} (36.49,45.83)| |Z|1033 0| 
+T Survey the City |QID|45065| |N|(npc:115710) in {Shal'Aran} (36.62,45.08)| |Z|1033 0|
+A Experimental Instability |QID|45066| |N|(npc:115710) in {Shal'Aran} (36.62,45.08)| |Z|1033 0|
+
+R Oculeth's Test Chamber |QID|45066.1| |N|Take the portal to {Oculeth's Test Chamber} (34.43,50.00) (35.27,50.87) (36.32,50.59) (37.53,49.51) (44.16,51.67) (46.07,50.75) (48.55,49.26) (48.66,47.16) (49.37,48.35)| |Z|1033 0|
+N Discarded Orbs |QID|45066.3| |N|Collect 4  Discarded Orbs from the ground in {Oculeth's Test Chamber} (58.76,37.75) (58.33,37.99) (58.15,37.54) (58.11,37.14)| |Z|1033 0|
+N Telemancy Notes |QID|45066.2| |N|Collect the Telemancy Notes in {Oculeth's Test Chamber}  (58.48,35.71)| |Z|1033 0|
+
+R Shal'Aran |QID|45066.4| |N|Take the Portal to {Shal'Aran} (59.06,36.16)| |Z|1033 0| 
+T Experimental Instability |QID|45066| |N|(npc:115710) in {Shal'Aran}  (36.62,45.08)| |Z|1033 0|
+A Felborne No More |QID|45064| |N|(npc:115736) in {Shal'Aran} (36.49,45.83)| |Z|1033 0| |NPC|115736|
+
+R Estate of the First Arcanist |QID|45064| |N|Take the {Twilight Vineyards} portal (36.94, 45.01)| |Z|1033 0|
+K (npc:115954) |QID|45064.1| |N|kill (npc:115954) in {Twilight Vineyards}<br/><br/>Use the (item:142491) to help you (66.05,55.98)| |Z|1033 0| |NPC|115954| |U|142491|
+C Felborne No More |QID|45064.2| |N|Kill any 8 Felborne NPC in {Twilight Vineyards}<br/><br/>Use the (item:142491) to help you (65.48,55.02)| |Z|1033 0| |U|142491|
+
+R Shal'Aran |TID|45064| |N|Travel to {Shal'Aran} (36.49,45.83)| |Z|1033 0|
+T Felborne No More |QID|45064| |N|(npc:115736) in {Shal'Aran} (36.49,45.83)| |Z|1033 0| |NPC|115736|
+
 C Fighting on All Fronts |QID|45317| |N|Complete 5 missions from your Order Hall. Any order hall missions will count, so just complete whichever ones you want to.| |Z|1033 0| |PRE|44876| |POI|
 T Fighting on All Fronts |QID|45317| |N|(npc:107966) in {Astravar Harbor} (54.92, 72.80)| |Z|1033 0| |NPC|107966| |PRE|44876|
 

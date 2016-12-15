@@ -27091,4 +27091,7 @@ ZygorGuidesViewer_L("NPCs", "enUS", function() return {
 [94870]="Seer Kazal|",
 [115524]="Arcanist Valtrois|",
 [115506]="First Arcanist Thalyssra|",
+[115825]="Terrified Lunastre Attendant|",
+[115954]="Valthis Ama'ran|",
+[114883]="Grand Magister Rommath|",
 } end)

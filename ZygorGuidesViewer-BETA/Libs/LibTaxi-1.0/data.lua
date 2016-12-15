@@ -5783,6 +5783,7 @@ data.flightcost = {
 			tag = "246:-913",
 			name = "Eye of Azshara, Azsuna",
 			neighbors = {
+				["308:-326"] = 0, -- Dalaran
 				["460:-252"] = 0, -- Illidari Camp, Broken Shore
 			},
 		},
@@ -5797,7 +5798,7 @@ data.flightcost = {
 				["303:571"] = 51, -- Obsidian Overlook, Highmountain
 				["308:-326"] = 64, -- Dalaran
 				["382:579"] = 58, -- Ironhorn Enclave, Highmountain
-				["449:318"] = 43, -- Crimson Thicket, Suramar
+				["449:319"] = 43, -- Crimson Thicket, Suramar
 				["460:-252"] = 0, -- Illidari Camp, Broken Shore
 			},
 		},
@@ -5836,7 +5837,7 @@ data.flightcost = {
 				["254:253"] = 51, -- Meredil, Suramar
 				["299:849"] = 49, -- Thunder Totem, Highmountain
 				["382:579"] = 39, -- Ironhorn Enclave, Highmountain
-				["449:318"] = 55, -- Crimson Thicket, Suramar
+				["449:319"] = 55, -- Crimson Thicket, Suramar
 			},
 		},
 		{
@@ -5846,8 +5847,9 @@ data.flightcost = {
 				["059:-548"] = 68, -- Watchers' Aerie, Azsuna
 				["093:-308"] = 60, -- Shackle's Den, Azsuna
 				["152:004"] = 52, -- Felblaze Ingress, Azsuna
+				["246:-913"] = 0, -- Eye of Azshara, Azsuna
 				["254:253"] = 64, -- Meredil, Suramar
-				["449:318"] = 77, -- Crimson Thicket, Suramar
+				["449:319"] = 77, -- Crimson Thicket, Suramar
 				["460:-252"] = 0, -- Illidari Camp, Broken Shore
 				["599:296"] = 96, -- Hafr Fjall, Stormheim
 			},
@@ -5877,7 +5879,7 @@ data.flightcost = {
 				["303:571"] = 39, -- Obsidian Overlook, Highmountain
 				["347:1008"] = 51, -- Skyhorn, Highmountain
 				["402:787"] = 32, -- Stonehoof Watch, Highmountain
-				["449:318"] = 77, -- Crimson Thicket, Suramar
+				["449:319"] = 77, -- Crimson Thicket, Suramar
 				["451:629"] = 42, -- Skyfire Triage Camp, Stormheim
 				["470:810"] = 56, -- Forsaken Foothold, Stormheim
 				["477:509"] = 51, -- Lorna's Watch, Stormheim
@@ -5911,7 +5913,7 @@ data.flightcost = {
 			},
 		},
 		{
-			tag = "449:318",
+			tag = "449:319",
 			name = "Crimson Thicket, Suramar",
 			neighbors = {
 				["254:253"] = 43, -- Meredil, Suramar
@@ -5942,7 +5944,7 @@ data.flightcost = {
 				["246:-913"] = 0, -- Eye of Azshara, Azsuna
 				["254:253"] = 0, -- Meredil, Suramar
 				["308:-326"] = 0, -- Dalaran
-				["449:318"] = 0, -- Crimson Thicket, Suramar
+				["449:319"] = 0, -- Crimson Thicket, Suramar
 				["599:296"] = 0, -- Hafr Fjall, Stormheim
 			},
 		},
@@ -5963,7 +5965,7 @@ data.flightcost = {
 			name = "Lorna's Watch, Stormheim",
 			neighbors = {
 				["382:579"] = 51, -- Ironhorn Enclave, Highmountain
-				["449:318"] = 45, -- Crimson Thicket, Suramar
+				["449:319"] = 45, -- Crimson Thicket, Suramar
 				["451:629"] = 20, -- Skyfire Triage Camp, Stormheim
 				["576:774"] = 40, -- Stormtorn Foothills, Stormheim
 				["599:296"] = 46, -- Hafr Fjall, Stormheim
@@ -5976,7 +5978,7 @@ data.flightcost = {
 			neighbors = {
 				["382:579"] = 49, -- Ironhorn Enclave, Highmountain
 				["402:787"] = 45, -- Stonehoof Watch, Highmountain
-				["449:318"] = 38, -- Crimson Thicket, Suramar
+				["449:319"] = 38, -- Crimson Thicket, Suramar
 				["470:810"] = 34, -- Forsaken Foothold, Stormheim
 				["576:774"] = 36, -- Stormtorn Foothills, Stormheim
 				["593:427"] = 29, -- Dreadwake's Landing, Stormheim
@@ -6012,7 +6014,7 @@ data.flightcost = {
 			name = "Hafr Fjall, Stormheim",
 			neighbors = {
 				["308:-326"] = 96, -- Dalaran
-				["449:318"] = 48, -- Crimson Thicket, Suramar
+				["449:319"] = 48, -- Crimson Thicket, Suramar
 				["460:-252"] = 0, -- Illidari Camp, Broken Shore
 				["477:509"] = 46, -- Lorna's Watch, Stormheim
 				["593:427"] = 22, -- Dreadwake's Landing, Stormheim

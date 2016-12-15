@@ -14,73 +14,17 @@ Gold/Leveling Guide for Various Game.
 
 - BETA
 
-Added draft of The Nightfallen Alliance Achievement
-
-Added draft of Friends in a Broken Land Alliance Achievement
-
-Added draft of Fashionista: Wrist Alliance Achievement
-
-Added draft of Fashionista: Back Alliance Achievement
-
-Added draft of Fashionista: Waist Alliance Achievement
-
-Added draft of Fashionista: Hand Alliance Achievement
-
-Added draft of Fashionista: Shoulder Alliance Achievement
-
-Added draft of Fashionista: Feet Alliance Achievement
-
-Added draft of Fashionista: Legs Alliance Achievement
-
-Added draft of Fashionista: Chest Alliance Achievement
-
-Added draft of Fashionista: Head Alliance Achievement
-
-Added draft of Fashionista: Weapon &amp; Off Hand Alliance Achievement
-
-Added draft of Added Fashionista: Shirt Alliance Achievement
-
-Added draft of Added Fashionista: Tabard Alliance Achievement
-
 - LEVELING : 
 
-Suramar Insurrection - Updated Suramar guides for Insurrection Week 7.
+Suramar - Fixed a few issues in the Insurrection quest line.
 
-- ORDER HALLS : 
-
-Death Knight - Added a tip indicating that a relog may be required to accept the quest "The Fourth Horseman.
-
-Rogue - Updated some coordinates in the guide.
-
-- WORLD QUESTS : 
-
-Azsuna: Added Helarjar Landing: Grey Shoals, Work Study: Bestiaries of Azsuna
-
-Suramar: Added Na'zak the Fiend
-
-- DUNGEON : 
-
-BRD - Updated the Detention Block BRD guide to properly show the horde npc and quests in the steps.
-
-- MOUNTS : 
-
-Grove Warden - Updated the guide telling players that it is no longer obtainable.
+Added tips for NPCs that need to be fed.
 
 - ACHIEVEMENTS : 
 
-Field Photographer - Updated the achievement ID numbers.
+Fixed some exploration guides objective numbers.
 
-Updated the Cataclysmically Delicious achievement adding in an either or to obtaining Blood Shrimp.
-
-Fixed Incorrect Achievement ID for Lock, Stock, and Two Smoking Goblins Achievement, Both
-
--GENERAL : 
-
-(Travel) Added portals to and from Astravar Harbor in Suramar to Travel System.
-
-GearFinder: Fix for classic dungeons quest gear being suggested for incorrect classes
-
-### Dugi Guides : 
+Fixed a small issue with the legion exploration guide directing players to the wrong area for Trueshot Lodge.
 
 - Dugi Addon :  
 

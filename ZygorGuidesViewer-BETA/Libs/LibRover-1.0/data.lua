@@ -4,7 +4,7 @@ local data={}
 addon.LibRoverData = data
 
 data.version={
-	nodes_version = 17,  -- Increase this when working on the nodes. Bake the connections using ZGV.Testing.NeighbourCache:DumpNeighbours() when you're done.
+	nodes_version = 18,  -- Increase this when working on the nodes. Bake the connections using ZGV.Testing.NeighbourCache:DumpNeighbours() when you're done.
 }
 
 -- These are kept strictly unique. Make up bogus names if you need to.
@@ -2499,6 +2499,15 @@ data.basenodes.travel = {
     -------------------
     ---  Stormheim  ---
     -------------------
+    -- NEUTRAL
+	-- Portal from Stormheim to Helheim
+		"Stormheim/0 73.70,39.29 -to- Helheim/0 66.25,47.63 (A:PORTAL)"..
+			"{template:custom} {atob:Enter the Swirling Portal} {cond:PlayerCompletedQuest(39855)}",
+
+	-- Portal from Helheim to Stormheim
+		"Helheim/0 66.83,48.14 -to- Stormheim/0 73.54,39.51 (A:PORTAL)"..
+			"{template:custom} {atob:Enter the Swirling Portal} {cond:PlayerCompletedQuest(39855)}",
+
     -- ALLIANCE
 	-- Vethir Flight to Top of Galebroken Path
 		"Stormheim/0 37.48,64.23 -to- Stormheim/0 44.83,77.39 (A:PORTAL)"..
