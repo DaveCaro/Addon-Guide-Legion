@@ -425,7 +425,8 @@ Cross the bridge |goto Azsuna/0 56.48,62.04 < 30 |only if walking
 accept The Eternal Mages##42711 |goto 56.33,65.90
 |tip You will accept this quest automatically.
 step
-kill Ancient Flamecaller##108339 |q 42711/1 |goto 56.33,65.90
+Kill enemies around this area
+Slay #15# Ghost Mages |q 42711/1 |goto 57.03,65.17
 |next "Court_Of_Farondis_WQ"
 step
 label quest-44049
@@ -958,7 +959,7 @@ Follow the path up |goto Azsuna/0 45.44,42.33 < 30 |only if walking
 accept Supplies Needed: Leystone##41315 |goto 46.99,40.67
 |tip You will accept this quest automatically.
 step
-collect 40 Leystone##123918
+collect 40 Leystone Ore##123918
 |tip You can farm these with Mining or purchase them from the Auction House.
 step
 talk Veridis Fallon##107376

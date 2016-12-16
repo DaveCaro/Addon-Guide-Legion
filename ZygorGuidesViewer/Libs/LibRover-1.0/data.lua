@@ -4,7 +4,7 @@ local data={}
 addon.LibRoverData = data
 
 data.version={
-	nodes_version = 14,  -- Increase this when working on the nodes. Bake the connections using ZGV.Testing.NeighbourCache:DumpNeighbours() when you're done.
+	nodes_version = 18,  -- Increase this when working on the nodes. Bake the connections using ZGV.Testing.NeighbourCache:DumpNeighbours() when you're done.
 }
 
 -- These are kept strictly unique. Make up bogus names if you need to.
@@ -1718,6 +1718,9 @@ data.basenodes.advanced = {
 
 	-- Suramar Sanctum of Order
 		{"REGION",name="suramar_sanctum_of_order",mapzone=1033,zonematch="*/*/*/Sanctum of Order",nofly=1},
+
+	-- Suramar Sanctum Depths (Sanctum of Order)
+		{"REGION",name="suramar_sanctum_depths",mapzone=1033,zonematch="*/*/*/Sanctum Depths",nofly=1},
 		
 	-- Dalaran (Margoss's Retreat) - Fishing Reputation, Floating Island next to Dalaran
 		{"REGION",name="dalaran_margosss_retreat",mapzone=1014,zonematch="*/*/*/Margoss's Retreat",nofly=0},
@@ -2475,13 +2478,36 @@ data.basenodes.travel = {
 	-- Portal from Evermoon Terrace to Shal'Aran
 		"Suramar/0 51.98,78.75 -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> (B:PORTAL)"..
 			"{template:custom} {atob:Click the Portal to Shal'Aran\nat the Top of the Tower}"..
-			"{cond:PlayerCompletedQuest(42889)}",
+			"{cond:PlayerCompletedQuest(42889)}",	
+	
+	-- Portal from Shal'Aran to Astravar Harbor
+		"Suramar/0 36.77,45.04 <region:suramar_shalaran> -to- Suramar/0 54.41,69.53 (B:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Astravar Harbor\ninside the Shal'Aran Cave}"..
+			"{cond:PlayerCompletedQuest(45317)}",	
+	
+	-- Portal from Evermoon Terrace to Shal'Aran
+		"Suramar/0 54.48,69.43 -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> (B:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Shal'Aran\nupstairs inside the building}"..
+			"{cond:PlayerCompletedQuest(45317)}",
+
+	-- Sanctum of Order (region) to Sactum Depths (region)
+		"Suramar/0 42.06,60.85 <region:suramar_sanctum_depths> -x- Suramar/0 42.72,61.13 <region:suramar_sanctum_of_order> {template:custom}"..
+			"{atob:Follow the path} {btoa:Follow the path}",
 
 
 
     -------------------
     ---  Stormheim  ---
     -------------------
+    -- NEUTRAL
+	-- Portal from Stormheim to Helheim
+		"Stormheim/0 73.70,39.29 -to- Helheim/0 66.25,47.63 (A:PORTAL)"..
+			"{template:custom} {atob:Enter the Swirling Portal} {cond:PlayerCompletedQuest(39855)}",
+
+	-- Portal from Helheim to Stormheim
+		"Helheim/0 66.83,48.14 -to- Stormheim/0 73.54,39.51 (A:PORTAL)"..
+			"{template:custom} {atob:Enter the Swirling Portal} {cond:PlayerCompletedQuest(39855)}",
+
     -- ALLIANCE
 	-- Vethir Flight to Top of Galebroken Path
 		"Stormheim/0 37.48,64.23 -to- Stormheim/0 44.83,77.39 (A:PORTAL)"..

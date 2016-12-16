@@ -4947,179 +4947,177 @@ achieveid={1264,1263,1265,1266,1267,1268,1457,1269,1270},
 description="Explore the regions of Northrend.",
 },[[
 step
-_Discover_ Valiance Keep |achieve 1264/12 |goto Borean Tundra 57.7,69.3
+_Discover_ Valiance Keep |achieve 1264/11 |goto Borean Tundra 57.7,69.3
 step
-_Discover_ Warsong Hold |achieve 1264/11 |goto Borean Tundra 43.4,53.2
+_Discover_ Warsong Hold |achieve 1264/10 |goto Borean Tundra 43.4,53.2
 step
-_Discover_ Riplash Stand |achieve 1264/5 |goto Borean Tundra 47.4,81.1
+_Discover_ Riplash Stand |achieve 1264/3 |goto Borean Tundra 47.4,81.1
 step
-_Discover_ Garrosh's Landing |achieve 1264/3 |goto Borean Tundra 27.9,51.6
+_Discover_ Garrosh's Landing |achieve 1264/5 |goto Borean Tundra 27.9,51.6
 step
-_Discover_ Coldarra |achieve 1264/13 |goto Borean Tundra 25.8,38.4
+_Discover_ Coldarra |achieve 1264/7 |goto Borean Tundra 25.8,38.4
 step
-_Discover_ Amber Ledge |achieve 1264/10 |goto Borean Tundra 46.1,34.8
+_Discover_ Amber Ledge |achieve 1264/9 |goto Borean Tundra 46.1,34.8
 step
-_Discover_ Steeljaw's Carvan |achieve 1264/7 |goto Borean Tundra 50.2,24.3
+_Discover_ Steeljaw's Carvan |achieve 1264/2 |goto Borean Tundra 50.2,24.3
 step
-_Discover_ Bor'gorok Outpost |achieve 1264/4 |goto Borean Tundra 50.2,10.3
+_Discover_ Bor'gorok Outpost |achieve 1264/8 |goto Borean Tundra 50.2,10.3
 step
-_Discover_ The Geyser Fields |achieve 1264/2 |goto Borean Tundra 66.3,28.5
+_Discover_ The Geyser Fields |achieve 1264/12 |goto Borean Tundra 66.3,28.5
 step
-_Discover_ Kaskala |achieve 1264/8 |goto Borean Tundra 66.2,51.1
+_Discover_ Kaskala |achieve 1264/4 |goto Borean Tundra 66.2,51.1
 step
-_Discover_ Death's Stand |achieve 1264/9 |goto Borean Tundra 82.4,46.4
+_Discover_ Death's Stand |achieve 1264/6 |goto Borean Tundra 82.4,46.4
 step
 _Discover_ Temple City of En'kilah |achieve 1264/1 |goto Borean Tundra 87.6,25.1
 step
-_Discover_ The Dens of the Dying |achieve 1264/6 |goto Borean Tundra 76.4,16.4
+_Discover_ The Dens of the Dying |achieve 1264/13 |goto Borean Tundra 76.4,16.4
 step
 _Explore_ Borean Tundra |achieve 1264
 step
-_Discover_ Makers' Overlook |achieve 1268/7 |goto Sholazar Basin 81.0,55.4
+_Discover_ Makers' Overlook |achieve 1268/4 |goto Sholazar Basin 81.0,55.4
 step
-_Discover_ The Lifeblood Pillar |achieve 1268/1 |goto Sholazar Basin 65.9,60.1
+_Discover_ The Lifeblood Pillar |achieve 1268/8 |goto Sholazar Basin 65.9,60.1
 step
-_Discover_ Rainspeaker Canopy |achieve 1268/10 |goto Sholazar Basin 53.7,52.5
+_Discover_ Rainspeaker Canopy |achieve 1268/7 |goto Sholazar Basin 53.7,52.5
 step
-_Discover_ River's Heart |achieve 1268/4 |goto Sholazar Basin 48.0,63.2
+_Discover_ River's Heart |achieve 1268/1 |goto Sholazar Basin 48.0,63.2
 step
-_Discover_ The Mosslight Pillar |achieve 1268/9 |goto Sholazar Basin 36.0,75.3
+_Discover_ The Mosslight Pillar |achieve 1268/3 |goto Sholazar Basin 36.0,75.3
 step
 _Discover_ Kartak's Hold |achieve 1268/11 |goto Sholazar Basin 24.3,81.7
 step
-_Discover_ The Suntouched Pillar |achieve 1268/2 |goto Sholazar Basin 33.3,52.3
+_Discover_ The Suntouched Pillar |achieve 1268/6 |goto Sholazar Basin 33.3,52.3
 step
-_Discover_ Makers' Perch |achieve 1268/6 |goto Sholazar Basin 29.7,40.1
+_Discover_ Makers' Perch |achieve 1268/5 |goto Sholazar Basin 29.7,40.1
 step
 _Discover_ The Stormwright's Shelf |achieve 1268/12 |goto Sholazar Basin 24.5,33.5
 step
-_Discover_ The Savage Thicket |achieve 1268/8 |goto Sholazar Basin 46.8,26.1
+_Discover_ The Savage Thicket |achieve 1268/2 |goto Sholazar Basin 46.8,26.1
 step
-_Discover_ The Glimmering Pillar |achieve 1268/3 |goto Sholazar Basin 50.0,36.0
+_Discover_ The Glimmering Pillar |achieve 1268/10 |goto Sholazar Basin 50.0,36.0
 step
-_Discover_ The Avalanche |achieve 1268/5 |goto Sholazar Basin 74.5,34.6
+_Discover_ The Avalanche |achieve 1268/9 |goto Sholazar Basin 74.5,34.6
 step
 _Explore_ Sholazar Basin |achieve 1268
 step
-_Discover_ Onslaught Harbor |achieve 1270/15 |goto Icecrown 8.9,42.9
+_Discover_ Onslaught Harbor |achieve 1270/3 |goto Icecrown 8.9,42.9
 step
-_Discover_ Jotunheim |achieve 1270/10 |goto Icecrown 27.1,39.0
+_Discover_ Jotunheim |achieve 1270/13 |goto Icecrown 27.1,39.0
 step
-_Discover_ Valhalas |achieve 1270/4 |goto Icecrown 36.5,24.1
+_Discover_ Valhalas |achieve 1270/8 |goto Icecrown 36.5,24.1
 step
-_Discover_ The Shadow Vault |achieve 1270/12 |goto Icecrown 44.4,22.6
+_Discover_ The Shadow Vault |achieve 1270/15 |goto Icecrown 44.4,22.6
 step
-_Discover_ Aldur'thar: The Desolation Gate |achieve 1270/14 |goto Icecrown 52.8,30.6
+_Discover_ Aldur'thar: The Desolation Gate |achieve 1270/6 |goto Icecrown 52.8,30.6
 step
 _Discover_ The Bombardment |achieve 1270/1 |goto Icecrown 63.7,44.0
 step
-_Discover_ Sindragosa's Fall |achieve 1270/3 |goto Icecrown 74.0,37.7
+_Discover_ Sindragosa's Fall |achieve 1270/7 |goto Icecrown 74.0,37.7
 step
-_Discover_ Scourgeholme |achieve 1270/11 |goto Icecrown 78.4,60.2
+_Discover_ Scourgeholme |achieve 1270/14 |goto Icecrown 78.4,60.2
 step
-_Discover_ Valley of Echoes |achieve 1270/7 |goto Icecrown 83.8,73.4
+_Discover_ Valley of Echoes |achieve 1270/9 |goto Icecrown 83.8,73.4
 step
-_Discover_ The Broken Front |achieve 1270/5 |goto Icecrown 69.2,64.4
+_Discover_ The Broken Front |achieve 1270/4 |goto Icecrown 69.2,64.4
 step
-_Discover_ Ymirheim |achieve 1270/8 |goto Icecrown 54.9,56.2
+_Discover_ Ymirheim |achieve 1270/10 |goto Icecrown 54.9,56.2
 step
-_Discover_ The Conflagration |achieve 1270/9 |goto Icecrown 43.6,56.5
+_Discover_ The Conflagration |achieve 1270/11 |goto Icecrown 43.6,56.5
 step
-_Discover_ The Fleshwerks |achieve 1270/6 |goto Icecrown 33.1,66.4
+_Discover_ The Fleshwerks |achieve 1270/5 |goto Icecrown 33.1,66.4
 step
-_Discover_ Corp'rethar: The Horror Gate |achieve 1270/2 |goto Icecrown 48.4,70.6
+_Discover_ Corp'rethar: The Horror Gate |achieve 1270/12 |goto Icecrown 48.4,70.6
 step
-_Discover_ Icecrown Citadel |achieve 1270/13 |goto Icecrown 54.2,85.8
+_Discover_ Icecrown Citadel |achieve 1270/2 |goto Icecrown 54.2,85.8
 step
 _Explore_ Icecrown |achieve 1270
 step
-_Discover_ Angrathar the Wrath Gate |achieve 1265/13 |goto Dragonblight 36.0,15.0
+_Discover_ Angrathar the Wrath Gate |achieve 1265/10 |goto Dragonblight 36.0,15.0
 step
-_Discover_ Obsidian Dragonshrine |achieve 1265/16 |goto Dragonblight 38.4,31.9
+_Discover_ Obsidian Dragonshrine |achieve 1265/3 |goto Dragonblight 38.4,31.9
 step
-_Discover_ Icemist Village |achieve 1265/4 |goto Dragonblight 25.1,43.2
+_Discover_ Icemist Village |achieve 1265/7 |goto Dragonblight 25.1,43.2
 step
-_Discover_ Westwind Refugee Camp |achieve 1265/6 |goto Dragonblight 13.8,46.2
+_Discover_ Westwind Refugee Camp |achieve 1265/13 |goto Dragonblight 13.8,46.2
 step
-_Discover_ Agmar's Hammer |achieve 1265/1 |goto Dragonblight 36.9,47.8
+_Discover_ Agmar's Hammer |achieve 1265/11 |goto Dragonblight 36.9,47.8
 step
-_Discover_ Lake Indu'le |achieve 1265/8 |goto Dragonblight 39.7,67.0
+_Discover_ Lake Indu'le |achieve 1265/2 |goto Dragonblight 39.7,67.0
 step
-_Discover_ Ruby Dragonshrine |achieve 1265/3 |goto Dragonblight 47.3,48.7
+_Discover_ Galakrond's Rest |achieve 1265/1 |goto Dragonblight 54.9,32.7
 step
-_Discover_ Galakrond's Rest |achieve 1265/5 |goto Dragonblight 54.9,32.7
+_Discover_ Wyrmrest Temple |achieve 1265/12 |goto Dragonblight 59.7,49.8
 step
-_Discover_ Wyrmrest Temple |achieve 1265/17 |goto Dragonblight 59.7,49.8
+_Discover_ Emerald Dragonshrine |achieve 1265/8 |goto Dragonblight 63.5,72.7
 step
-_Discover_ Emerald Dragonshrine |achieve 1265/7 |goto Dragonblight 63.5,72.7
-step
-_Discover_ New Hearthglen |achieve 1265/9 |goto Dragonblight 71.0,75.2
+_Discover_ New Hearthglen |achieve 1265/4 |goto Dragonblight 71.0,75.2
 step
 _Discover_ Venomspite |achieve 1265/14 |goto Dragonblight 77.1,60.0
 step
-_Discover_ The Forgotten Shore |achieve 1265/2 |goto Dragonblight 82.5,70.7
+_Discover_ The Forgotten Shore |achieve 1265/15 |goto Dragonblight 82.5,70.7
 step
-_Discover_ Naxxramas |achieve 1265/10 |goto Dragonblight 88.9,44.0
+_Discover_ Naxxramas |achieve 1265/5 |goto Dragonblight 88.9,44.0
 step
-_Discover_ Light's Trust |achieve 1265/11 |goto Dragonblight 83.6,25.6
+_Discover_ Light's Trust |achieve 1265/6 |goto Dragonblight 83.6,25.6
 step
-_Discover_ Scarlet Point |achieve 1265/15 |goto Dragonblight 72.7,25.6
+_Discover_ Scarlet Point |achieve 1265/17 |goto Dragonblight 72.7,25.6
 step
-_Discover_ The Crystal Vice |achieve 1265/3 |goto Dragonblight 61.8,19.5
+_Discover_ The Crystal Vice |achieve 1265/16 |goto Dragonblight 61.8,19.5
 step
-_Discover_ Coldwind Heights |achieve 1265/12 |goto Dragonblight 50.0,17.5
+_Discover_ Coldwind Heights |achieve 1265/9 |goto Dragonblight 50.0,17.5
 step
 _Explore_ Dragonblight |achieve 1265
 step
-_Discover_ The Azure Front |achieve 1457/8 |goto Crystalsong Forest 26.4,61.4
+_Discover_ The Azure Front |achieve 1457/1 |goto Crystalsong Forest 26.4,61.4
 step
-_Discover_ Violet Stand |achieve 1457/3 |goto Crystalsong Forest 14.5,44.1
+_Discover_ Violet Stand |achieve 1457/7 |goto Crystalsong Forest 14.5,44.1
 step
-_Discover_ The Great Tree |achieve 1457/2 |goto Crystalsong Forest 13.1,33.9
+_Discover_ The Great Tree |achieve 1457/6 |goto Crystalsong Forest 13.1,33.9
 step
-_Discover_ The Decrepit Flow |achieve 1457/5 |goto Crystalsong Forest 16.0,15.4
+_Discover_ The Decrepit Flow |achieve 1457/2 |goto Crystalsong Forest 16.0,15.4
 step
-_Discover_ Forlorn Woods |achieve 1457/6 |goto Crystalsong Forest 43.0,42.5
+_Discover_ Forlorn Woods |achieve 1457/4 |goto Crystalsong Forest 43.0,42.5
 step
-_Discover_ The Unbound Thicket |achieve 1457/1 |goto Crystalsong Forest 64.7,60.4
+_Discover_ The Unbound Thicket |achieve 1457/8 |goto Crystalsong Forest 64.7,60.4
 step
-_Discover_ Windrunner's Overlook |achieve 1457/4 |goto Crystalsong Forest 75.2,83.0
+_Discover_ Windrunner's Overlook |achieve 1457/5 |goto Crystalsong Forest 75.2,83.0
 step
-_Discover_ Sunreaver's Command |achieve 1457/7 |goto Crystalsong Forest 76.9,46.3
+_Discover_ Sunreaver's Command |achieve 1457/3 |goto Crystalsong Forest 76.9,46.3
 step
 _Explore_ Crystalsong Forest |achieve 1457
 step
-_Discover_ Sparksocket Minefield |achieve 1269/14 |goto The Storm Peaks 35.1,84.0
+_Discover_ Sparksocket Minefield |achieve 1269/7 |goto The Storm Peaks 35.1,84.0
 step
-_Discover_ Bor's Breath |achieve 1269/6 |goto The Storm Peaks 35.3,68.7
+_Discover_ Bor's Breath |achieve 1269/4 |goto The Storm Peaks 35.3,68.7
 step
-_Discover_ Temple of Storms |achieve 1269/5 |goto The Storm Peaks 35.9,58.0
+_Discover_ Temple of Storms |achieve 1269/12 |goto The Storm Peaks 35.9,58.0
 step
-_Discover_ Frosthold |achieve 1269/12 |goto The Storm Peaks 29.4,73.8
+_Discover_ Frosthold |achieve 1269/15 |goto The Storm Peaks 29.4,73.8
 step
-_Discover_ Valkyrion |achieve 1269/4 |goto The Storm Peaks 24.0,60.5
+_Discover_ Valkyrion |achieve 1269/5 |goto The Storm Peaks 24.0,60.5
 step
-_Discover_ Nidavelir |achieve 1269/1 |goto The Storm Peaks 23.9,50.1
+_Discover_ Nidavelir |achieve 1269/16 |goto The Storm Peaks 23.9,50.1
 step
-_Discover_ Snowdrift Plains |achieve 1269/10 |goto The Storm Peaks 27.3,41.9
+_Discover_ Snowdrift Plains |achieve 1269/13 |goto The Storm Peaks 27.3,41.9
 step
-_Discover_ Narvir's Cradle |achieve 1269/13 |goto The Storm Peaks 32.2,39.6
+_Discover_ Narvir's Cradle |achieve 1269/2 |goto The Storm Peaks 32.2,39.6
 step
-_Discover_ Ulduar |achieve 1269/8 |goto The Storm Peaks 41.3,17.4
+_Discover_ Ulduar |achieve 1269/10 |goto The Storm Peaks 41.3,17.4
 step
-_Discover_ Terrace of the Makers |achieve 1269/2 |goto The Storm Peaks 50.3,44.7
+_Discover_ Terrace of the Makers |achieve 1269/6 |goto The Storm Peaks 50.3,44.7
 step
-_Discover_ Temple of Life |achieve 1269/15 |goto The Storm Peaks 64.8,44.8
+_Discover_ Temple of Life |achieve 1269/9 |goto The Storm Peaks 64.8,44.8
 step
-_Discover_ Thunderfall |achieve 1269/9 |goto The Storm Peaks 72.9,48.5
+_Discover_ Thunderfall |achieve 1269/11 |goto The Storm Peaks 72.9,48.5
 step
-_Discover_ Dun Niffelem |achieve 1269/16 |goto The Storm Peaks 64.4,59.1
+_Discover_ Dun Niffelem |achieve 1269/3 |goto The Storm Peaks 64.4,59.1
 step
-_Discover_ Engine of the Makers |achieve 1269/7 |goto The Storm Peaks 40.9,57.2
+_Discover_ Engine of the Makers |achieve 1269/8 |goto The Storm Peaks 40.9,57.2
 step
-_Discover_ Brunnhildar Village |achieve 1269/3 |goto The Storm Peaks 47.8,68.2
+_Discover_ Brunnhildar Village |achieve 1269/1 |goto The Storm Peaks 47.8,68.2
 step
-_Discover_ Garm's Bane |achieve 1269/11 |goto The Storm Peaks 47.1,81.6
+_Discover_ Garm's Bane |achieve 1269/14 |goto The Storm Peaks 47.1,81.6
 step
 _Explore_ The Storm Peaks |achieve 1269
 step
@@ -5502,515 +5500,295 @@ achieveid={862,863,867,866,865,843,864},
 description="Explore the regions of Outlands.",
 },[[
 step
-_Discover_ The Stair of Destiny |achieve 862/15 |goto Hellfire Peninsula 87.7,50.3
+_Discover_ The Stair of Destiny |achieve 862/1 |goto Hellfire Peninsula 87.7,50.3
 step
-_Discover_ Throne of Kil'jaeden |achieve 862/3 |goto Hellfire Peninsula 62.0,17.8
+_Discover_ Throne of Kil'jaeden |achieve 862/12 |goto Hellfire Peninsula 62.0,17.8
 step
-_Discover_ Forge Camp: Mageddon |achieve 862/12 |goto Hellfire Peninsula 58.9,31.2
+_Discover_ Forge Camp: Mageddon |achieve 862/18 |goto Hellfire Peninsula 58.9,31.2
 step
-_Discover_ Thrallmar |achieve 862/4 |goto Hellfire Peninsula 55.4,38.7
+_Discover_ Thrallmar |achieve 862/11 |goto Hellfire Peninsula 55.4,38.7
 step
-_Discover_ The Legion Front |achieve 862/14 |goto Hellfire Peninsula 70.0,50.4
+_Discover_ The Legion Front |achieve 862/10 |goto Hellfire Peninsula 70.0,50.4
 step
-_Discover_ Void Ridge |achieve 862/8 |goto Hellfire Peninsula 79.1,72.9
+_Discover_ Void Ridge |achieve 862/16 |goto Hellfire Peninsula 79.1,72.9
 step
-_Discover_ Zeth'Gor |achieve 862/5 |goto Hellfire Peninsula 70.1,73.6
+_Discover_ Zeth'Gor |achieve 862/13 |goto Hellfire Peninsula 70.1,73.6
 step
-_Discover_ Expedition Armory |achieve 862/11 |future |goto Hellfire Peninsula 54.3,84.3
+_Discover_ Expedition Armory |achieve 862/2 |goto Hellfire Peninsula 54.3,84.3
 step
-_Discover_ The Warp Fields |achieve 862/9 |goto Hellfire Peninsula 45.3,82.5
+_Discover_ The Warp Fields |achieve 862/17 |goto Hellfire Peninsula 45.3,82.5
 step
-_Discover_ Honor Hold |achieve 862/17 |goto Hellfire Peninsula 54.8,64.5
+_Discover_ Honor Hold |achieve 862/5 |goto Hellfire Peninsula 54.8,64.5
 step
-_Discover_ Hellfire Citadel |achieve 862/16 |goto Hellfire Peninsula 47.2,52.9
+_Discover_ Hellfire Citadel |achieve 862/4 |goto Hellfire Peninsula 47.2,52.9
 step
-_Discover_ Pools of Aggonar |achieve 862/18 |goto Hellfire Peninsula 41.2,32.6
+_Discover_ Pools of Aggonar |achieve 862/7 |goto Hellfire Peninsula 41.2,32.6
 step
-_Discover_ Mag'har Post |achieve 862/2 |goto Hellfire Peninsula 31.3,26.9
+_Discover_ Mag'har Post |achieve 862/6 |goto Hellfire Peninsula 31.3,26.9
 step
-_Discover_ Temple of Telhamat |achieve 862/10 |goto Hellfire Peninsula 23.5,40.0
+_Discover_ Temple of Telhamat |achieve 862/9 |goto Hellfire Peninsula 23.5,40.0
 step
-_Discover_ Falcon Watch |achieve 862/1 |goto Hellfire Peninsula 26.9,62.3
+_Discover_ Falcon Watch |achieve 862/3 |goto Hellfire Peninsula 26.9,62.3
 step
-_Discover_ Den of Haal'esh |achieve 862/6 |goto Hellfire Peninsula 27.5,77.0
+_Discover_ Den of Haal'esh |achieve 862/14 |goto Hellfire Peninsula 27.5,77.0
 step
-_Discover_ Fallen Sky Ridge |achieve 862/7 |goto Hellfire Peninsula 14.3,41.0
+_Discover_ Fallen Sky Ridge |achieve 862/15 |goto Hellfire Peninsula 14.3,41.0
 step
-_Discover_ Ruins of Sha'naar |achieve 862/13 |goto Hellfire Peninsula 13.3,59.4
+_Discover_ Ruins of Sha'naar |achieve 862/8 |goto Hellfire Peninsula 13.3,59.4
 step
 _Explore_ Hellfire Peninsula |achieve 862
 step
-_Discover_ Razorthorn Shelf |achieve 867/20 |goto Terokkar Forest 55.0,20.0
+_Discover_ Razorthorn Shelf |achieve 867/11 |goto Terokkar Forest 55.0,20.0
 step
-_Discover_ Tuurem |achieve 867/4 |goto Terokkar Forest 53.0,29.1
+_Discover_ Tuurem |achieve 867/7 |goto Terokkar Forest 53.0,29.1
 step
-_Discover_ Cenarion Thicket |achieve 867/8 |goto Terokkar Forest 43.8,20.2
+_Discover_ Cenarion Thicket |achieve 867/3 |goto Terokkar Forest 43.8,20.2
 step
-_Discover_ Shattrath City |achieve 867/5 |goto Terokkar Forest 29.1,23.3
+_Discover_ Shattrath City |achieve 867/8 |goto Terokkar Forest 29.1,23.3
 step
-_Discover_ The Barrier Hills |achieve 867/11 |goto Terokkar Forest 22.4,10.5
+_Discover_ The Barrier Hills |achieve 867/10 |goto Terokkar Forest 22.4,10.5
 step
-_Discover_ Bleeding Hollow Ruins |achieve 867/9 |goto Terokkar Forest 17.8,65.4
+_Discover_ Bleeding Hollow Ruins |achieve 867/1 |goto Terokkar Forest 17.8,65.4
 step
-_Discover_ Veil Rhaze |achieve 867/13 |goto Terokkar Forest 24.4,59.9
+_Discover_ Veil Rhaze |achieve 867/19 |goto Terokkar Forest 24.4,59.9
 step
-_Discover_ Shadow Tomb |achieve 867/15 |goto Terokkar Forest 31.3,52.5
+_Discover_ Shadow Tomb |achieve 867/17 |goto Terokkar Forest 31.3,52.5
 step
-_Discover_ Refugee Caravan |achieve 867/7 |goto Terokkar Forest 37.5,49.6
+_Discover_ Refugee Caravan |achieve 867/15 |goto Terokkar Forest 37.5,49.6
 step
-_Discover_ Carrion Hill |achieve 867/17 |goto Terokkar Forest 42.9,51.0
+_Discover_ Carrion Hill |achieve 867/14 |goto Terokkar Forest 42.9,51.0
 step
-_Discover_ Grangol'var Village |achieve 867/16 |goto Terokkar Forest 39.5,39.4
+_Discover_ Grangol'var Village |achieve 867/5 |goto Terokkar Forest 39.5,39.4
 step
-_Discover_ Stonebreaker Hold |achieve 867/3 |goto Terokkar Forest 46.6,43.0
+_Discover_ Stonebreaker Hold |achieve 867/6 |goto Terokkar Forest 46.6,43.0
 step
-_Discover_ Raastok Glade |achieve 867/10 |goto Terokkar Forest 60.6,40.2
+_Discover_ Raastok Glade |achieve 867/9 |goto Terokkar Forest 60.6,40.2
 step
-_Discover_ Firewing Point |achieve 867/1 |goto Terokkar Forest 71.7,34.7
+_Discover_ Firewing Point |achieve 867/4 |goto Terokkar Forest 71.7,34.7
 step
-_Discover_ Bonechewer Ruins |achieve 867/6 |goto Terokkar Forest 66.5,52.3
+_Discover_ Bonechewer Ruins |achieve 867/12 |goto Terokkar Forest 66.5,52.3
 step
-_Discover_ Allerian Stronghold |achieve 867/18 |goto Terokkar Forest 57.1,56.6
+_Discover_ Allerian Stronghold |achieve 867/2 |goto Terokkar Forest 57.1,56.6
 step
-_Discover_ Writhing Mound |achieve 867/14 |goto Terokkar Forest 49.1,66.0
+_Discover_ Writhing Mound |achieve 867/20 |goto Terokkar Forest 49.1,66.0
 step
-_Discover_ Ring of Observance |achieve 867/21 |goto Terokkar Forest 39.5,65.5
+_Discover_ Ring of Observance |achieve 867/16 |goto Terokkar Forest 39.5,65.5
 step
-_Discover_ Auchenai Grounds |achieve 867/12 |goto Terokkar Forest 33.0,71.8
+_Discover_ Auchenai Grounds |achieve 867/13 |goto Terokkar Forest 33.0,71.8
 step
-_Discover_ Derelict Caravan |achieve 867/19 |goto Terokkar Forest 43.9,76.1
+_Discover_ Derelict Caravan |achieve 867/18 |goto Terokkar Forest 43.9,76.1
 step
-_Discover_ Skettis |achieve 867/2 |goto Terokkar Forest 58.9,76.4
+_Discover_ Skettis |achieve 867/21 |goto Terokkar Forest 58.9,76.4
 step
 _Explore_ terokkar Forest |achieve 867
 step
-_Discover_ Legion Hold |achieve 864/7 |goto Shadowmoon Valley 24.1,39.2
+_Discover_ Legion Hold |achieve 864/3 |goto Shadowmoon Valley 24.1,39.2
 step
-_Discover_ Illidari Point |achieve 864/10 |goto Shadowmoon Valley 29.8,52.3
+_Discover_ Illidari Point |achieve 864/12 |goto Shadowmoon Valley 29.8,52.3
 step
-_Discover_ Wildhammer Stronghold |achieve 864/13 |goto Shadowmoon Valley 35.5,60.2
+_Discover_ Wildhammer Stronghold |achieve 864/10  |goto Shadowmoon Valley 35.5,60.2
 step
 _Discover_ Eclipse Point |achieve 864/2 |goto Shadowmoon Valley 44.9,66.8
 step
-_Discover_ Netherwing Ledge |achieve 864/3 |goto Shadowmoon Valley 70.8,85.7
+_Discover_ Netherwing Ledge |achieve 864/4 |goto Shadowmoon Valley 70.8,85.7
 step
-_Discover_ Netherwing Fields |achieve 864/6 |goto Shadowmoon Valley 64.2,58.5
+_Discover_ Netherwing Fields |achieve 864/13 |goto Shadowmoon Valley 64.2,58.5
 step
-_Discover_ Warden's Cage |achieve 864/12 |goto Shadowmoon Valley 57.3,50.1
+_Discover_ Warden's Cage |achieve 864/9 |goto Shadowmoon Valley 57.3,50.1
 step
-_Discover_ The Hand of Gul'dan |achieve 864/5 |goto Shadowmoon Valley 49.8,41.2
+_Discover_ The Hand of Gul'dan |achieve 864/8 |goto Shadowmoon Valley 49.8,41.2
 step
-_Discover_ The Deathforge |achieve 864/11 |goto Shadowmoon Valley 39.6,39.6
+_Discover_ The Deathforge |achieve 864/7 |goto Shadowmoon Valley 39.6,39.6
 step
-_Discover_ Shadowmoon Village |achieve 864/4 |goto Shadowmoon Valley 29.4,26.1
+_Discover_ Shadowmoon Village |achieve 864/5 |goto Shadowmoon Valley 29.4,26.1
 step
 _Discover_ Coilskar Point |achieve 864/1 |goto Shadowmoon Valley 45.3,26.3
 step
-_Discover_ Altar of Sha'tar |achieve 864/9 |goto Shadowmoon Valley 61.5,26.1
+_Discover_ Altar of Sha'tar |achieve 864/11 |goto Shadowmoon Valley 61.5,26.1
 step
-_Discover_ The Black Temple |achieve 864/8 |goto Shadowmoon Valley 77.6,40.6
+_Discover_ The Black Temple |achieve 864/6 |goto Shadowmoon Valley 77.6,40.6
 step
 _Explore_ Shadowmoon Valley |achieve 864
 step
-_Discover_ Windyreed Village |achieve 866/12 |future |goto Nagrand 74.3,52.9
+_Discover_ Windyreed Village |achieve 866/18 |goto Nagrand 74.3,52.9
 step
-_Discover_ Burning Blade Ruins |achieve 866/17 |goto Nagrand 75.1,66.8
+_Discover_ Burning Blade Ruins |achieve 866/12 |goto Nagrand 75.1,66.8
 step
-_Discover_ Kil'sorrow Fortress |achieve 866/16 |goto Nagrand 68.9,79.9
+_Discover_ Kil'sorrow Fortress |achieve 866/4 |goto Nagrand 68.9,79.9
 step
-_Discover_ Clan Watch |achieve 866/9 |goto Nagrand 62.5,64.3
+_Discover_ Clan Watch |achieve 866/13 |goto Nagrand 62.5,64.3
 step
-_Discover_ The Ring of Trials |achieve 866/7 |goto Nagrand 65.8,54.0
+_Discover_ The Ring of Trials |achieve 866/9 |goto Nagrand 65.8,54.0
 step
-_Discover_ Southwind Cleft |achieve 866/18 |goto Nagrand 49.8,55.9
+_Discover_ Southwind Cleft |achieve 866/15 |goto Nagrand 49.8,55.9
 step
-_Discover_ Telaar |achieve 866/14 |goto Nagrand 52.8,69.1
+_Discover_ Telaar |achieve 866/8 |goto Nagrand 52.8,69.1
 step
-_Discover_ Spirit Fields |achieve 866/1 |goto Nagrand 42.0,71.8
+_Discover_ Spirit Fields |achieve 866/6 |goto Nagrand 42.0,71.8
 step
-_Discover_ Halaa |achieve 866/5 |goto Nagrand 42.5,44.0
+_Discover_ Halaa |achieve 866/3 |goto Nagrand 42.5,44.0
 step
-_Discover_ Sunspring Post |achieve 866/2 |goto Nagrand 33.5,44.7
+_Discover_ Sunspring Post |achieve 866/7 |goto Nagrand 33.5,44.7
 step
-_Discover_ Forge Camp: Fear |achieve 866/3 |goto Nagrand 20.6,51.3
+_Discover_ Forge Camp: Fear |achieve 866/1 |goto Nagrand 20.6,51.3
 step
-_Discover_ The Twilight Ridge |achieve 866/19 |goto Nagrand 10.8,39.2
+_Discover_ The Twilight Ridge |achieve 866/16 |goto Nagrand 10.8,39.2
 step
-_Discover_ Forge Camp: Hate |achieve 866/10 |goto Nagrand 25.9,37.1
+_Discover_ Forge Camp: Hate |achieve 866/14 |goto Nagrand 25.9,37.1
 step
-_Discover_ Warmaul Hill |achieve 866/8 |goto Nagrand 29.7,24.6
+_Discover_ Warmaul Hill |achieve 866/11 |goto Nagrand 29.7,24.6
 step
-_Discover_ Zangar Ridge |achieve 866/11 |goto Nagrand 33.9,18.4
+_Discover_ Zangar Ridge |achieve 866/19 |goto Nagrand 33.9,18.4
 step
-_Discover_ Laughing Skull Ruins |achieve 866/6 |goto Nagrand 46.9,18.9
+_Discover_ Laughing Skull Ruins |achieve 866/5 |goto Nagrand 46.9,18.9
 step
-_Discover_ Garadar |achieve 866/4 |goto Nagrand 56.1,36.4
+_Discover_ Garadar |achieve 866/2 |goto Nagrand 56.1,36.4
 step
-_Discover_ Throne of the Elements |achieve 866/15 |goto Nagrand 60.8,21.1
+_Discover_ Throne of the Elements |achieve 866/10 |goto Nagrand 60.8,21.1
 step
-_Discover_ Windyreed Pass |achieve 866/13 |goto Nagrand 72.4,36.3
+_Discover_ Windyreed Pass |achieve 866/17 |goto Nagrand 72.4,36.3
 step
 _Explore_ Nagrand |achieve 866
 step
-_Discover_ Darkcrest Shore |achieve 863/10 |goto Zangarmarsh 70.6,79.9
+_Discover_ Darkcrest Shore |achieve 863/18 |goto Zangarmarsh 70.6,79.9
 step
-_Discover_ Umbrafen Village |achieve 863/6 |goto Zangarmarsh 83.5,82.0
+_Discover_ Umbrafen Village |achieve 863/11 |goto Zangarmarsh 83.5,82.0
 step
-_Discover_ Cenarion Refuge |achieve 863/4 |goto Zangarmarsh 81.1,63.4
+_Discover_ Cenarion Refuge |achieve 863/1 |goto Zangarmarsh 81.1,63.4
 step
-_Discover_ The Dead Mire |achieve 863/11 |goto Zangarmarsh 82.5,37.5
+_Discover_ The Dead Mire |achieve 863/8 |goto Zangarmarsh 82.5,37.5
 step
-_Discover_ Telredor |achieve 863/3 |goto Zangarmarsh 68.5,49.2
+_Discover_ Teredor |achieve 863/7 |goto Zangarmarsh 68.5,49.2
 step
-_Discover_ Bloodscale Grounds |achieve 863/16 |goto Zangarmarsh 62.7,41.2
+_Discover_ Bloodscale Grounds |achieve 863/14 |goto Zangarmarsh 62.7,41.2
 step
-_Discover_ The Lagoon |achieve 863/2 |goto Zangarmarsh 58.6,61.8
+_Discover_ The Lagoon |achieve 863/9 |goto Zangarmarsh 58.6,61.8
 step
-_Discover_ Twin Spire Ruins |achieve 863/12 |goto Zangarmarsh 47.8,51.7
+_Discover_ Twin Spire Ruins |achieve 863/10 |goto Zangarmarsh 47.8,51.7
 step
-_Discover_ Feralfen Village |achieve 863/5 |goto Zangarmarsh 44.9,66.3
+_Discover_ Feralfen Village |achieve 863/3 |goto Zangarmarsh 44.9,66.3
 step
 _Discover_ Zabra'jin |achieve 863/17 |goto Zangarmarsh 31.8,52.3
 step
-_Discover_ Quagg Ridge |achieve 863/1 |goto Zangarmarsh 29.0,60.7
+_Discover_ Quagg Ridge |achieve 863/6 |goto Zangarmarsh 29.0,60.7
 step
-_Discover_ The Spawning Glen |achieve 863/9 |goto Zangarmarsh 14.5,61.9
+_Discover_ The Spawning Glen |achieve 863/16 |goto Zangarmarsh 14.5,61.9
 step
-_Discover_ Sporeggar |achieve 863/7 |goto Zangarmarsh 17.8,49.6
+_Discover_ Sporeggar |achieve 863/12 |goto Zangarmarsh 17.8,49.6
 step
-_Discover_ Marshlight Lake |achieve 863/14 |goto Zangarmarsh 21.7,39.6
+_Discover_ Marshlight Lake |achieve 863/5 |goto Zangarmarsh 21.7,39.6
 step
-_Discover_ Ango'rosh Grounds |achieve 863/13 |goto Zangarmarsh 18.0,23.1
+_Discover_ Ango'rosh Grounds |achieve 863/2 |goto Zangarmarsh 18.0,23.1
 step
-_Discover_ Ango'rosh Stronghold |achieve 863/15 |goto Zangarmarsh 18.6,8.0
+_Discover_ Ango'rosh Stronghold |achieve 863/13 |goto Zangarmarsh 18.6,8.0
 step
-_Discover_ Hewn Bog |achieve 863/18 |goto Zangarmarsh 33.6,35.3
+_Discover_ Hewn Bog |achieve 863/4 |goto Zangarmarsh 33.6,35.3
 step
-_Discover_ Orebor Harborage |achieve 863/8 |goto Zangarmarsh 44.9,25.2
+_Discover_ Orebor Harborage |achieve 863/15 |goto Zangarmarsh 44.9,25.2
 step
 _Explore_ Zangarmarsh |achieve 863
 step
-_Discover_ Forge Camp: Terror |achieve 865/26 |goto Blade's Edge Mountains 29.1,81.0
+_Discover_ Forge Camp: Terror |achieve 865/10 |goto Blade's Edge Mountains 29.1,81.0
 step
-_Discover_ Vortex Summit |achieve 865/9 |goto Blade's Edge Mountains 30.5,59.5
+_Discover_ Vortex Summit |achieve 865/26 |goto Blade's Edge Mountains 30.5,59.5
 step
-_Discover_ Forge Camp: Wrath |achieve 865/14 |goto Blade's Edge Mountains 33.5,41.1
+_Discover_ Forge Camp: Wrath |achieve 865/11 |goto Blade's Edge Mountains 33.5,41.1
 step
-_Discover_ Raven's Wood |achieve 865/21 |goto Blade's Edge Mountains 31.9,27.5
+_Discover_ Raven's Wood |achieve 865/16 |goto Blade's Edge Mountains 31.9,27.5
 step
-_Discover_ Grishnath |achieve 865/24 |goto Blade's Edge Mountains 39.6,19.9
+_Discover_ Grishnath |achieve 865/12 |goto Blade's Edge Mountains 39.6,19.9
 step
-_Discover_ Bash'ir Landing |achieve 865/3 |goto Blade's Edge Mountains 51.7,16.7
+_Discover_ Bash'ir Landing |achieve 865/1 |goto Blade's Edge Mountains 51.7,16.7
 step
-_Discover_ Crystal Spine |achieve 865/7 |goto Blade's Edge Mountains 68.0,10.8
+_Discover_ Crystal Spine |achieve 865/21 |goto Blade's Edge Mountains 68.0,10.8
 step
-_Discover_ Broken Wilds |achieve 865/16 |goto Blade's Edge Mountains 77.9,25.9
+_Discover_ Broken Wilds |achieve 865/6 |goto Blade's Edge Mountains 77.9,25.9
 step
-_Discover_ Skald |achieve 865/23 |goto Blade's Edge Mountains 72.0,22.9
+_Discover_ Skald |achieve 865/19 |goto Blade's Edge Mountains 72.0,22.9
 step
-_Discover_ Gruul's Lair |achieve 865/10 |goto Blade's Edge Mountains 67.7,23.5
+_Discover_ Gruul's Lair |achieve 865/13 |goto Blade's Edge Mountains 67.7,23.5
 step
-_Discover_ Bloodmaul Camp |achieve 865/5 |goto Blade's Edge Mountains 55.6,26.2
+_Discover_ Bloodmaul Camp |achieve 865/4 |goto Blade's Edge Mountains 55.6,26.2
 step
-_Discover_ Bladespire Hold |achieve 865/13 |goto Blade's Edge Mountains 40.7,53.0
+_Discover_ Bladespire Hold |achieve 865/3 |goto Blade's Edge Mountains 40.7,53.0
 step
-_Discover_ Sylvanaar |achieve 865/22 |goto Blade's Edge Mountains 37.0,65.4
+_Discover_ Sylvanaar |achieve 865/20 |goto Blade's Edge Mountains 37.0,65.4
 step
-_Discover_ Veil Lashh |achieve 865/8 |goto Blade's Edge Mountains 36.4,78.7
+_Discover_ Veil Lashh |achieve 865/23 |goto Blade's Edge Mountains 36.4,78.7
 step
-_Discover_ Bloodmaul Outpost |achieve 865/25 |goto Blade's Edge Mountains 46.3,77.2
+_Discover_ Bloodmaul Outpost |achieve 865/5 |goto Blade's Edge Mountains 46.3,77.2
 step
-_Discover_ Jagged Ridge |achieve 865/11 |goto Blade's Edge Mountains 48.0,64.9
+_Discover_ Jagged Ridge |achieve 865/14 |goto Blade's Edge Mountains 48.0,64.9
 step
-_Discover_ Razors Ridge |achieve 865/15 |goto Blade's Edge Mountains 56.0,69.0
+_Discover_ Razor Ridge |achieve 865/17 |goto Blade's Edge Mountains 56.0,69.0
 step
-_Discover_ Death's Door |achieve 865/18 |goto Blade's Edge Mountains 64.2,61.0
+_Discover_ Death's Door |achieve 865/8 |goto Blade's Edge Mountains 64.2,61.0
 step
-_Discover_ Thunderlord Stronghold |achieve 865/1 |goto Blade's Edge Mountains 53.1,54.7
+_Discover_ Thunderlord Stronghold |achieve 865/22 |goto Blade's Edge Mountains 53.1,54.7
 step
-_Discover_ Circle of Blood |achieve 865/17 |goto Blade's Edge Mountains 53.6,43.9
+_Discover_ Circle of Blood |achieve 865/7 |goto Blade's Edge Mountains 53.6,43.9
 step
-_Discover_ Ruuan Weald |achieve 865/6 |goto Blade's Edge Mountains 61.2,36.5
+_Discover_ Ruuan Weald |achieve 865/18 |goto Blade's Edge Mountains 61.2,36.5
 step
-_Discover_ Veil Ruuan |achieve 865/12 |goto Blade's Edge Mountains 65.1,31.6
+_Discover_ Veil Ruuan |achieve 865/24 |goto Blade's Edge Mountains 65.1,31.6
 step
-_Discover_ Bladed Gulch |achieve 865/4 |goto Blade's Edge Mountains 65.9,36.8
+_Discover_ Bladed Gulch |achieve 865/2 |goto Blade's Edge Mountains 65.9,36.8
 step
-_Discover_ Forge Camp: Anger |achieve 865/19 |goto Blade's Edge Mountains 74.7,41.8
+_Discover_ Forge Camp: Anger |achieve 865/9 |goto Blade's Edge Mountains 74.7,41.8
 step
-_Discover_ Mok'Nathal Village |achieve 865/20 |goto Blade's Edge Mountains 73.9,62.6
+_Discover_ Mok'Nathal Village |achieve 865/15 |goto Blade's Edge Mountains 73.9,62.6
 step
-_Discover_ Vekhaar Stand |achieve 865/2 |goto Blade's Edge Mountains 77.1,75.2
+_Discover_ Vekhaar Stand |achieve 865/25 |goto Blade's Edge Mountains 77.1,75.2
 step
 _Explore_ Blade's Edge Mountains |achieve 865
 step
-_Discover_ Manaforge B'naar |achieve 843/3 |goto Netherstorm 23.5,72.9
+_Discover_ Manaforge B'naar |achieve 843/2 |goto Netherstorm 23.5,72.9
 step
-_Discover_ The Heap |achieve 843/5 |goto Netherstorm 28.4,77.5
+_Discover_ The Heap |achieve 843/9 |goto Netherstorm 28.4,77.5
 step
-_Discover_ Area 52 |achieve 843/15 |goto Netherstorm 33.5,66.0
+_Discover_ Area 52 |achieve 843/1 |goto Netherstorm 33.5,66.0
 step
-_Discover_ Arklon Ruins |achieve 843/17 |goto Netherstorm 39.7,73.5
+_Discover_ Arklon Ruins |achieve 843/10 |goto Netherstorm 39.7,73.5
 step
-_Discover_ Manaforge Coruu |achieve 843/1 |goto Netherstorm 48.8,84.5
+_Discover_ Manaforge Coruu |achieve 843/3 |goto Netherstorm 48.8,84.5
 step
-_Discover_ Kirin'Var Village |achieve 843/9 |goto Netherstorm 57.1,88.5
+_Discover_ Kirin'Var Village |achieve 843/12 |goto Netherstorm 57.1,88.5
 step
-_Discover_ Sunfury Hold |achieve 843/6 |goto Netherstorm 56.0,77.8
+_Discover_ Sunfury Hold |achieve 843/15 |goto Netherstorm 56.0,77.8
 step
-_Discover_ Maforge Duro |achieve 843/18 |goto Netherstorm 59.6,68.2
+_Discover_ Manaforge Duro |achieve 843/4 |goto Netherstorm 59.6,68.2
 step
 _Discover_ Tempest Keep |achieve 843/8 |goto Netherstorm 75.8,62.5
 step
-_Discover_ Celestial Ridge |achieve 843/21 |goto Netherstorm 72.5,38.7
+_Discover_ Celestial Ridge |achieve 843/11 |goto Netherstorm 72.5,38.7
 step
-_Discover_ Manaforge Ultris |achieve 843/16 |goto Netherstorm 61.7,38.2
+_Discover_ Manaforge Ultris |achieve 843/6 |goto Netherstorm 61.7,38.2
 step
-_Discover_ Ethereum Staging Grounds |achieve 843/20 |goto Netherstorm 55.1,43.5
+_Discover_ Ethereum Staging Grounds |achieve 843/19 |goto Netherstorm 55.1,43.5
 step
-_Discover_ Ruins of Farahlon |achieve 843/4 |goto Netherstorm 54.4,21.3
+_Discover_ Ruins of Farahlon |achieve 843/7 |goto Netherstorm 54.4,21.3
 step
-_Discover_ Netherstone |achieve 843/22 |goto Netherstorm 49.5,17.0
+_Discover_ Netherstone |achieve 843/13 |goto Netherstorm 49.5,17.0
 step
-_Discover_ Eco-Dome Farfield |achieve 843/10 |goto Netherstorm 46.1,9.6
+_Discover_ Eco-Dome Farfield |achieve 843/18 |goto Netherstorm 46.1,9.6
 step
-_Discover_ Socrethar's Seat |achieve 843/14 |goto Netherstorm 29.9,16.0
+_Discover_ Socrethar's Seat |achieve 843/20 |goto Netherstorm 29.9,16.0
 step
-_Discover_ Forge Base: Oblivion |achieve 843/11 |goto Netherstorm 37.5,26.4
+_Discover_ Forge Base: Oblivion |achieve 843/21 |goto Netherstorm 37.5,26.4
 step
-_Discover_ The Stormspire |achieve 843/7 |goto Netherstorm 45.1,35.8
+_Discover_ The Stormspire |achieve 843/16 |goto Netherstorm 45.1,35.8
 step
-_Discover_ Eco-Dome Midrealm |achieve 843/13 |goto Netherstorm 45.3,53.7
+_Discover_ Eco-Dome Midrealm |achieve 843/21 |goto Netherstorm 45.3,53.7
 step
-_Discover_ Ruins of Enkaat |achieve 843/19 |goto Netherstorm 32.9,54.9
+_Discover_ Ruins of Enkaat |achieve 843/14 |goto Netherstorm 32.9,54.9
 step
-_Discover_ Gyro-Plank Bridge |achieve 843/12 |goto Netherstorm 23.2,55.9
+_Discover_ Gyro-Plank Bridge |achieve 843/17 |goto Netherstorm 23.2,55.9
 step
-_Discover_ Manaforge Ara |achieve 843/2 |goto Netherstorm 26.8,39.3
+_Discover_ Manaforge Ara |achieve 843/5 |goto Netherstorm 26.8,39.3
 step
 _Explore_ Netherstorm |achieve 843
 step
 Congratulations, you have _earned_ the _Explore Outlands_ Achievement!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Explore Pandaria",{
-condition_end="achieved(6974)",
-achieveid={6351,6975,6977,6979,6969,6978,6976},
-description="Explore the regions of Pandaria.",
-},[[
-step
-_Discover_ Nectarbreeze Orchard |achieve 6351/8 |goto The Jade Forest 40.0,73.0
-step
-_Discover_ Garrosh'ar Point |achieve 6351/15 |goto The Jade Forest 46.0,90.0
-step
-_Discover_ Dreamer's Pavillion |achieve 6351/3 |goto The Jade Forest 52.1,90.8
-step
-_Discover_ Slingtail Pits |achieve 6351/12 |goto The Jade Forest 52.0,82.0
-step
-_Discover_ Pearl Lake |achieve 6351/5 |goto The Jade Forest 58.0,80.0
-step
-_Discover_ Temple of the Jade Serpent |achieve 6351/13 |goto The Jade Forest 57.0,57.0
-step
-_Discover_ Serpent's Heart |achieve 6351/11 |goto The Jade Forest 47.0,60.0
-step
-_Discover_ Dawn's Blossom |achieve 6351/1 |goto The Jade Forest 48.0,45.0
-step
-_Discover_ The Arboretum |achieve 6351/14 |goto The Jade Forest 57.0,44.0
-step
-_Discover_ Windward Isle |achieve 6351/16 |goto The Jade Forest 65.0,30.0
-step
-_Discover_ Emperor's Omen |achieve 6351/4 |goto The Jade Forest 50.0,26.2
-step
-_Discover_ Greenstone Quarry |achieve 6351/7 |goto The Jade Forest 46.0,29.0
-step
-_Discover_ Tian Monastery |achieve 6351/2 |goto The Jade Forest 41.2,21.5
-step
-_Discover_ Terrace of Ten Thunders |achieve 6351/10 |goto The Jade Forest 40.0,13.0
-step
-_Discover_ Honeydew Village |achieve 6351/17 |goto The Jade Forest 29.0,13.0
-step
-_Discover_ Camp Nooka Nooka |achieve 6351/9 |goto The Jade Forest 25.0,37.0
-step
-_Discover_ Grookin Hill |achieve 6351/6 |goto The Jade Forest 25.0,48.0
-step
-_Explore_ The Jade Forest |achieve 6351
-step
-_Discover_ Thunderfoot Ranch |achieve 6969/17 |goto Valley of the Four Winds 75.7,24.9
-step
-_Discover_ Pools of Purity |achieve 6969/11 |goto Valley of the Four Winds 60.7,27.6
-step
-_Discover_ Mudmug's Place |achieve 6969/8 |goto Valley of the Four Winds 68.6,43.3
-step
-_Discover_ Zhu's Watch |achieve 6969/18 |goto Valley of the Four Winds 81.53,47.92
-step
-_Discover_ Rumbling Terrace |achieve 6969/12 |goto Valley of the Four Winds 73.2,58.3
-step
-_Discover_ Silken Fields |achieve 6969/13 |goto Valley of the Four Winds 65.2,57.4
-step
-_Discover_ Halfhill |achieve 6969/5 |goto Valley of the Four Winds 56.1,49.8
-step
-_Discover_ Gilded Fan |achieve 6969/3 |goto Valley of the Four Winds 54.2,38.7
-step
-_Discover_ Heartland |achieve 6969/16 |goto Valley of the Four Winds 40.4,43.1
-step
-_Discover_ Kunzen Village |achieve 6969/7 |goto Valley of the Four Winds 33.1,23.5
-step
-_Discover_ Paoquan Hollow |achieve 6969/10 |goto Valley of the Four Winds 16.6,38.7
-step
-_Discover_ Singing Marshes |achieve 6969/14 |goto Valley of the Four Winds 25.0,43.6
-step
-_Discover_ Stoneplow |achieve 6969/6 |goto Valley of the Four Winds 19.0,57.0
-step
-_Discover_ Dustback Gorge |achieve 6969/2 |goto Valley of the Four Winds 13.0,75.5
-step
-_Discover_ Nesingwary Safari |achieve 6969/9 |goto Valley of the Four Winds 16.1,82.7
-step
-_Discover_ Stormstout Brewery |achieve 6969/15 |goto Valley of the Four Winds 35.9,68.0
-step
-_Discover_ The Imperial Granary |achieve 6969/4 |goto Valley of the Four Winds 52.4,63.0
-step
-_Discover_ Winds' Edge |achieve 6969/1 |goto Valley of the Four Winds 50.1,75.1
-step
-_Explore_ Valley of the Four Winds |achieve 6969
-step
-_Discover_ Zhu's Watch |achieve 6969/18 |goto Valley of the Four Winds 81.53,47.92
-step
-_Discover_ Krasarang Cove |achieve 6975/5 |goto Krasarang Wilds 80.6,25.6
-step
-_Discover_ The Krasari Ruins |achieve 6975/6 |goto Krasarang Wilds 68.5,22.8
-step
-_Discover_ Dojani River |achieve 6975/3 |goto Krasarang Wilds 65.3,32.9
-step
-_Discover_ Anglers Wharf |achieve 6975/1 |goto Krasarang Wilds 68.0,44.2
-step
-_Discover_ Ruins of Dojan |achieve 6975/9 |goto Krasarang Wilds 53.9,37.4
-step
-_Discover_ The Deepwild |achieve 6975/12 |goto Krasarang Wilds 45.5,31.8
-step
-_Discover_ Crane Wing Refuge |achieve 6975/8 |goto Krasarang Wilds 40.0,32.5
-step
-_Discover_ Temple of the Red Crane |achieve 6975/11 |goto Krasarang Wilds 39.1,56.8
-step
-_Discover_ Unga Ingoo |achieve 6975/15 |goto Krasarang Wilds 43.3,90.2
-step
-_Discover_ Nayeli Lagoon |achieve 6975/7 |goto Krasarang Wilds 40.7,82.9
-step
-_Discover_ Cradle of Chi-Ji |achieve 6975/2 |goto Krasarang Wilds 31.2,63.2
-step
-_Discover_ The Southern Isle |achieve 6975/14 |goto Krasarang Wilds 12.7,59.9
-step
-_Discover_ Ruins of Korja |achieve 6975/10 |goto Krasarang Wilds 24.0,47.1
-step
-_Discover_ Fallsong Village |achieve 6975/4 |goto Krasarang Wilds 30.2,38.3
-step
-_Discover_ The Forbidden Jungle |achieve 6975/13 |future |goto Krasarang Wilds 14.1,39.0
-step
-_Explore_ Krasarang Wilds |achieve 6975
-step
-_Discover_ Binan Village |achieve 6976/1 |goto Kun-Lai Summit 71.8,92.2
-step
-_Discover_ Muskpaw Ranch |achieve 6976/8 |goto Kun-Lai Summit 68.1,73.2
-step
-_Discover_ Temple of the White Tiger |achieve 6976/11 |goto Kun-Lai Summit 68.6,46.6
-step
-_Discover_ Isle of Reckoning |achieve 6976/4 |goto Kun-Lai Summit 75.5,11.9
-step
-_Discover_ Zouchin Village |achieve 6976/14 |goto Kun-Lai Summit 62.4,29.4
-step
-_Discover_ Valley of Emperors |achieve 6976/13 |goto Kun-Lai Summit 53.4,48.3
-step
-_Discover_ Peak of Serenity |achieve 6976/9 |goto Kun-Lai Summit 49.3,42.9
-step
-_Discover_ Shado-Pan Monastery |achieve 6976/10 |goto Kun-Lai Summit 36.7,47.9
-step
-_Discover_ Mount Neverest |achieve 6976/7 |goto Kun-Lai Summit 44.5,55.9
-step
-_Discover_ Burlap Trail |achieve 6976/12 |goto Kun-Lai Summit 55.4,65.9
-step
-_Discover_ Mogujia |achieve 6976/6 |goto Kun-Lai Summit 58.0,74.8
-step
-_Discover_ Gate of the August Celestials |achieve 6976/3 |goto Kun-Lai Summit 55.5,92.0
-step
-_Discover_ Firebough Nook |achieve 6976/2 |goto Kun-Lai Summit 45.4,86.2
-step
-_Discover_ Kota Peak |achieve 6976/5 |goto Kun-Lai Summit 38.0,75.1
-step
-_Explore_ Kun-Lai Summit |achieve 6976
-step
-_Discover_ Fire Camp Osul |achieve 6977/5 |goto Townlong Steppes 67.3,44.9
-step
-_Discover_ Kri'vess |achieve 6977/2 |goto Townlong Steppes 56.1,53.5
-step
-_Discover_ Niuzao Temple |achieve 6977/4 |goto Townlong Steppes 39.3,62.0
-step
-_Discover_ Shan'ze Dao |achieve 6977/8 |goto Townlong Steppes 28.6,25.8
-step
-_Discover_ Sra'vess |achieve 6977/11 |goto Townlong Steppes 26.3,39.1
-step
-_Discover_ Shado-Pan Garrison |achieve 6977/7 |goto Townlong Steppes 49.2,71.0
-step
-_Discover_ Sik'vess |achieve 6977/9 |goto Townlong Steppes 44.6,77.5
-step
-_Discover_ Rensai's Watchpost |achieve 6977/3 |goto Townlong Steppes 54.3,79.0
-step
-_Discover_ Slumprushes |achieve 6977/10 |goto Townlong Steppes 71.3,70.5
-step
-_Discover_ Hatred's Vice |achieve 6977/6 |goto Townlong Steppes 82.5,72.4
-step
-_Discover_ Gao-Ran Battlefront |achieve 6977/1 |future |goto Townlong Steppes 75.5,82.5
-step
-_Explore_ Townlong Steppes |achieve 6977
-step
-_Discover_ Kypari Vor |achieve 6978/3 |goto Dread Wastes 63.2,18.4
-step
-_Discover_ The Sunset Brewgarden |achieve 6978/10 |goto Dread Wastes 50.5,12.2
-step
-_Discover_ Rikkitun Village |achieve 6978/5 |goto Dread Wastes 34.6,20.0
-step
-_Discover_ Heart of Fear |achieve 6978/1 |goto Dread Wastes 39.6,35.0
-step
-_Discover_ The Clutches of Shek'zeer |achieve 6978/9 |goto Dread Wastes 46.2,34.5
-step
-_Discover_ Klaxxi'vess |achieve 6978/2 |goto Dread Wastes 53.6,34.9
-step
-_Discover_ The Briny Muck |achieve 6978/8 |goto Dread Wastes 38.7,62.2
-step
-_Discover_ Zan'vess |achieve 6978/12 |goto Dread Wastes 30.5,73.6
-step
-_Discover_ Soggy's Gamble |achieve 6978/6 |goto Dread Wastes 55.9,70.3
-step
-_Discover_ Kypari Zar |achieve 6978/4 |goto Dread Wastes 59.2,60.6
-step
-_Discover_ Writhingwood |achieve 6978/11 |goto Dread Wastes 66.0,42.2
-step
-_Discover_ Terace of Gurthan |achieve 6978/7 |goto Dread Wastes 68.3,30.4
-step
-_Explore_ Dread Wastes |achieve 6978
-step
-_Discover_ Shrine of Seven Stars |achieve 6979/6 |goto Vale of Eternal Blossoms 86.4,62.5
-step
-_Discover_ Mogu'shan Palace |achieve 6979/3 |goto Vale of Eternal Blossoms 79.1,36.1
-step
-_Discover_ Shrine of Two Moons |achieve 6979/9 |goto Vale of Eternal Blossoms 62.0,22.6
-step
-_Discover_ The Golden Pagoda |achieve 6979/7 |goto Vale of Eternal Blossoms 56.7,43.2
-step
-_Discover_ The Golden Stair |achieve 6979/5 |goto Vale of Eternal Blossoms 44.2,15.2
-step
-_Discover_ Whitepetal Lake |achieve 6979/10 |goto Vale of Eternal Blossoms 40.5,47.0
-step
-_Discover_ Ruins of Guo-Lai |achieve 6979/1 |goto Vale of Eternal Blossoms 26.6,37.2
-step
-_Discover_ The Five Sisters |achieve 6979/11 |goto Vale of Eternal Blossoms 17.4,47.9
-step
-_Discover_ Setting Sun Garrison |achieve 6979/4 |goto Vale of Eternal Blossoms 18.5,71.7
-step
-_Discover_ Mistfall Village |achieve 6979/2 |goto Vale of Eternal Blossoms 36.3,72.0
-step
-_Discover_ Tu Shen Burial Ground |achieve 6979/8 |goto Vale of Eternal Blossoms 48.3,69.1
-step
-_Explore_ Vale of Eternal Blossoms |achieve 6979
-step
-Congratulations, you have _earned_ the _Explore Pandaria_ Achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\King of Dire Maul",{
 condition_end="achieved(644)",

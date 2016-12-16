@@ -487,7 +487,8 @@ Cross the bridge |goto Azsuna/0 56.48,62.04 < 30 |only if walking
 accept The Eternal Mages##42711 |goto 56.33,65.90
 |tip You will accept this quest automatically.
 step
-kill Ancient Flamecaller##108339 |q 42711/1 |goto 56.33,65.90
+Kill enemies around this area
+Slay #15# Ghost Mages |q 42711/1 |goto 57.03,65.17
 |next "Court_Of_Farondis_WQ"
 step
 label quest-44049
@@ -1356,6 +1357,19 @@ accept WANTED: Warbringer Mox'na##43431 |goto Azsuna/0 47.78,53.37
 step
 kill Warbringer Mox'na##90164 |q 43615/1 |goto 47.78,53.37
 |tip He walks along this road, so you may need to search for him.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-43802
+accept Watery Graves##43802 |goto Eye of Azshara Map/0 43.14,50.75
+|tip You will accept this quest automatically.
+stickystart "Droplet"
+step
+kill Restless Tides##111644+ |q 43802/1 |goto 43.14,50.75
+|tip These are located randomly along the shore.
+step
+label "Droplet"
+kill Saltsea Droplet##111641+ |q 43802/2 |goto 43.14,50.75
+|tip These are located randomly along the shore.
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42148
@@ -4505,11 +4519,13 @@ kill 4 Helmouth Mistcaller##105502 |q 41984/1 |goto 59.93,43.99
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41950
-accept Cry More Thunder##41950 |goto Stormheim/0 37.47,64.20
+accept Cry More Thunder##41950 |goto Stormheim/0 37.47,64.20 |only Alliance
+accept Cry More Thunder##41950 |goto Stormheim/0 44.67,59.51 |only Horde
 |tip You will accept this quest automatically.
 step
 talk Vethir##97979
-Begin the Assault on Hrydshal |q 41950/1 |goto 37.47,64.20
+Begin the Assault on Hrydshal |q 41950/1 |goto 37.47,64.20 |only Alliance
+Begin the Assault on Hrydshal |q 41950/1 |goto 44.67,59.51 |only Horde
 step
 Kill the enemies on the ground as you fly
 |tip Use the abilities on your action bar.

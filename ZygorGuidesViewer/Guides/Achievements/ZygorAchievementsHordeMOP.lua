@@ -166,6 +166,226 @@ step
 Congratulations, you have obtained the To All the Squirrels I Once Caressed? achievement! |only if achieved(6350)
 Still more love required. Routing to the guide start |next "start" |only if not achieved(6350)
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Explore Pandaria",{
+condition_end="achieved(6974)",
+achieveid={6351,6975,6977,6979,6969,6978,6976},
+description="Explore the regions of Pandaria.",
+},[[
+step
+_Discover_ Nectarbreeze Orchard |achieve 6351/8 |goto The Jade Forest 40.0,73.0
+step
+_Discover_ Garrosh'ar Point |achieve 6351/15 |goto The Jade Forest 46.0,90.0
+step
+_Discover_ Dreamer's Pavillion |achieve 6351/3 |goto The Jade Forest 52.1,90.8
+step
+_Discover_ Slingtail Pits |achieve 6351/12 |goto The Jade Forest 52.0,82.0
+step
+_Discover_ Pearl Lake |achieve 6351/5 |goto The Jade Forest 58.0,80.0
+step
+_Discover_ Temple of the Jade Serpent |achieve 6351/13 |goto The Jade Forest 57.0,57.0
+step
+_Discover_ Serpent's Heart |achieve 6351/11 |goto The Jade Forest 47.0,60.0
+step
+_Discover_ Dawn's Blossom |achieve 6351/1 |goto The Jade Forest 48.0,45.0
+step
+_Discover_ The Arboretum |achieve 6351/14 |goto The Jade Forest 57.0,44.0
+step
+_Discover_ Windward Isle |achieve 6351/16 |goto The Jade Forest 65.0,30.0
+step
+_Discover_ Emperor's Omen |achieve 6351/4 |goto The Jade Forest 50.0,26.2
+step
+_Discover_ Greenstone Quarry |achieve 6351/7 |goto The Jade Forest 46.0,29.0
+step
+_Discover_ Tian Monastery |achieve 6351/2 |goto The Jade Forest 41.2,21.5
+step
+_Discover_ Terrace of Ten Thunders |achieve 6351/10 |goto The Jade Forest 40.0,13.0
+step
+_Discover_ Honeydew Village |achieve 6351/17 |goto The Jade Forest 29.0,13.0
+step
+_Discover_ Camp Nooka Nooka |achieve 6351/9 |goto The Jade Forest 25.0,37.0
+step
+_Discover_ Grookin Hill |achieve 6351/6 |goto The Jade Forest 25.0,48.0
+step
+_Explore_ The Jade Forest |achieve 6351
+step
+_Discover_ Thunderfoot Ranch |achieve 6969/17 |goto Valley of the Four Winds 75.7,24.9
+step
+_Discover_ Pools of Purity |achieve 6969/11 |goto Valley of the Four Winds 60.7,27.6
+step
+_Discover_ Mudmug's Place |achieve 6969/8 |goto Valley of the Four Winds 68.6,43.3
+step
+_Discover_ Zhu's Watch |achieve 6969/18 |goto Valley of the Four Winds 81.53,47.92
+step
+_Discover_ Rumbling Terrace |achieve 6969/12 |goto Valley of the Four Winds 73.2,58.3
+step
+_Discover_ Silken Fields |achieve 6969/13 |goto Valley of the Four Winds 65.2,57.4
+step
+_Discover_ Halfhill |achieve 6969/5 |goto Valley of the Four Winds 56.1,49.8
+step
+_Discover_ Gilded Fan |achieve 6969/3 |goto Valley of the Four Winds 54.2,38.7
+step
+_Discover_ Heartland |achieve 6969/16 |goto Valley of the Four Winds 40.4,43.1
+step
+_Discover_ Kunzen Village |achieve 6969/7 |goto Valley of the Four Winds 33.1,23.5
+step
+_Discover_ Paoquan Hollow |achieve 6969/10 |goto Valley of the Four Winds 16.6,38.7
+step
+_Discover_ Singing Marshes |achieve 6969/14 |goto Valley of the Four Winds 25.0,43.6
+step
+_Discover_ Stoneplow |achieve 6969/6 |goto Valley of the Four Winds 19.0,57.0
+step
+_Discover_ Dustback Gorge |achieve 6969/2 |goto Valley of the Four Winds 13.0,75.5
+step
+_Discover_ Nesingwary Safari |achieve 6969/9 |goto Valley of the Four Winds 16.1,82.7
+step
+_Discover_ Stormstout Brewery |achieve 6969/15 |goto Valley of the Four Winds 35.9,68.0
+step
+_Discover_ The Imperial Granary |achieve 6969/4 |goto Valley of the Four Winds 52.4,63.0
+step
+_Discover_ Winds' Edge |achieve 6969/1 |goto Valley of the Four Winds 50.1,75.1
+step
+_Explore_ Valley of the Four Winds |achieve 6969
+step
+_Discover_ Zhu's Watch |achieve 6969/18 |goto Valley of the Four Winds 81.53,47.92
+step
+_Discover_ Krasarang Cove |achieve 6975/5 |goto Krasarang Wilds 80.6,25.6
+step
+_Discover_ The Krasari Ruins |achieve 6975/6 |goto Krasarang Wilds 68.5,22.8
+step
+_Discover_ Dojani River |achieve 6975/3 |goto Krasarang Wilds 65.3,32.9
+step
+_Discover_ Anglers Wharf |achieve 6975/1 |goto Krasarang Wilds 68.0,44.2
+step
+_Discover_ Ruins of Dojan |achieve 6975/9 |goto Krasarang Wilds 53.9,37.4
+step
+_Discover_ The Deepwild |achieve 6975/12 |goto Krasarang Wilds 45.5,31.8
+step
+_Discover_ Crane Wing Refuge |achieve 6975/8 |goto Krasarang Wilds 40.0,32.5
+step
+_Discover_ Temple of the Red Crane |achieve 6975/11 |goto Krasarang Wilds 39.1,56.8
+step
+_Discover_ Unga Ingoo |achieve 6975/15 |goto Krasarang Wilds 43.3,90.2
+step
+_Discover_ Nayeli Lagoon |achieve 6975/7 |goto Krasarang Wilds 40.7,82.9
+step
+_Discover_ Cradle of Chi-Ji |achieve 6975/2 |goto Krasarang Wilds 31.2,63.2
+step
+_Discover_ The Southern Isle |achieve 6975/14 |goto Krasarang Wilds 12.7,59.9
+step
+_Discover_ Ruins of Korja |achieve 6975/10 |goto Krasarang Wilds 24.0,47.1
+step
+_Discover_ Fallsong Village |achieve 6975/4 |goto Krasarang Wilds 30.2,38.3
+step
+_Discover_ The Forbidden Jungle |achieve 6975/13 |future |goto Krasarang Wilds 14.1,39.0
+step
+_Explore_ Krasarang Wilds |achieve 6975
+step
+_Discover_ Binan Village |achieve 6976/1 |goto Kun-Lai Summit 71.8,92.2
+step
+_Discover_ Muskpaw Ranch |achieve 6976/8 |goto Kun-Lai Summit 68.1,73.2
+step
+_Discover_ Temple of the White Tiger |achieve 6976/11 |goto Kun-Lai Summit 68.6,46.6
+step
+_Discover_ Isle of Reckoning |achieve 6976/4 |goto Kun-Lai Summit 75.5,11.9
+step
+_Discover_ Zouchin Village |achieve 6976/14 |goto Kun-Lai Summit 62.4,29.4
+step
+_Discover_ Valley of Emperors |achieve 6976/13 |goto Kun-Lai Summit 53.4,48.3
+step
+_Discover_ Peak of Serenity |achieve 6976/9 |goto Kun-Lai Summit 49.3,42.9
+step
+_Discover_ Shado-Pan Monastery |achieve 6976/10 |goto Kun-Lai Summit 36.7,47.9
+step
+_Discover_ Mount Neverest |achieve 6976/7 |goto Kun-Lai Summit 44.5,55.9
+step
+_Discover_ Burlap Trail |achieve 6976/12 |goto Kun-Lai Summit 55.4,65.9
+step
+_Discover_ Mogujia |achieve 6976/6 |goto Kun-Lai Summit 58.0,74.8
+step
+_Discover_ Gate of the August Celestials |achieve 6976/3 |goto Kun-Lai Summit 55.5,92.0
+step
+_Discover_ Firebough Nook |achieve 6976/2 |goto Kun-Lai Summit 45.4,86.2
+step
+_Discover_ Kota Peak |achieve 6976/5 |goto Kun-Lai Summit 38.0,75.1
+step
+_Explore_ Kun-Lai Summit |achieve 6976
+step
+_Discover_ Fire Camp Osul |achieve 6977/5 |goto Townlong Steppes 67.3,44.9
+step
+_Discover_ Kri'vess |achieve 6977/2 |goto Townlong Steppes 56.1,53.5
+step
+_Discover_ Niuzao Temple |achieve 6977/4 |goto Townlong Steppes 39.3,62.0
+step
+_Discover_ Shan'ze Dao |achieve 6977/8 |goto Townlong Steppes 28.6,25.8
+step
+_Discover_ Sra'vess |achieve 6977/11 |goto Townlong Steppes 26.3,39.1
+step
+_Discover_ Shado-Pan Garrison |achieve 6977/7 |goto Townlong Steppes 49.2,71.0
+step
+_Discover_ Sik'vess |achieve 6977/9 |goto Townlong Steppes 44.6,77.5
+step
+_Discover_ Rensai's Watchpost |achieve 6977/3 |goto Townlong Steppes 54.3,79.0
+step
+_Discover_ Slumprushes |achieve 6977/10 |goto Townlong Steppes 71.3,70.5
+step
+_Discover_ Hatred's Vice |achieve 6977/6 |goto Townlong Steppes 82.5,72.4
+step
+_Discover_ Gao-Ran Battlefront |achieve 6977/1 |future |goto Townlong Steppes 75.5,82.5
+step
+_Explore_ Townlong Steppes |achieve 6977
+step
+_Discover_ Kypari Vor |achieve 6978/3 |goto Dread Wastes 63.2,18.4
+step
+_Discover_ The Sunset Brewgarden |achieve 6978/10 |goto Dread Wastes 50.5,12.2
+step
+_Discover_ Rikkitun Village |achieve 6978/5 |goto Dread Wastes 34.6,20.0
+step
+_Discover_ Heart of Fear |achieve 6978/1 |goto Dread Wastes 39.6,35.0
+step
+_Discover_ The Clutches of Shek'zeer |achieve 6978/9 |goto Dread Wastes 46.2,34.5
+step
+_Discover_ Klaxxi'vess |achieve 6978/2 |goto Dread Wastes 53.6,34.9
+step
+_Discover_ The Briny Muck |achieve 6978/8 |goto Dread Wastes 38.7,62.2
+step
+_Discover_ Zan'vess |achieve 6978/12 |goto Dread Wastes 30.5,73.6
+step
+_Discover_ Soggy's Gamble |achieve 6978/6 |goto Dread Wastes 55.9,70.3
+step
+_Discover_ Kypari Zar |achieve 6978/4 |goto Dread Wastes 59.2,60.6
+step
+_Discover_ Writhingwood |achieve 6978/11 |goto Dread Wastes 66.0,42.2
+step
+_Discover_ Terace of Gurthan |achieve 6978/7 |goto Dread Wastes 68.3,30.4
+step
+_Explore_ Dread Wastes |achieve 6978
+step
+_Discover_ Shrine of Seven Stars |achieve 6979/6 |goto Vale of Eternal Blossoms 86.4,62.5
+step
+_Discover_ Mogu'shan Palace |achieve 6979/3 |goto Vale of Eternal Blossoms 79.1,36.1
+step
+_Discover_ Shrine of Two Moons |achieve 6979/9 |goto Vale of Eternal Blossoms 62.0,22.6
+step
+_Discover_ The Golden Pagoda |achieve 6979/7 |goto Vale of Eternal Blossoms 56.7,43.2
+step
+_Discover_ The Golden Stair |achieve 6979/5 |goto Vale of Eternal Blossoms 44.2,15.2
+step
+_Discover_ Whitepetal Lake |achieve 6979/10 |goto Vale of Eternal Blossoms 40.5,47.0
+step
+_Discover_ Ruins of Guo-Lai |achieve 6979/1 |goto Vale of Eternal Blossoms 26.6,37.2
+step
+_Discover_ The Five Sisters |achieve 6979/11 |goto Vale of Eternal Blossoms 17.4,47.9
+step
+_Discover_ Setting Sun Garrison |achieve 6979/4 |goto Vale of Eternal Blossoms 18.5,71.7
+step
+_Discover_ Mistfall Village |achieve 6979/2 |goto Vale of Eternal Blossoms 36.3,72.0
+step
+_Discover_ Tu Shen Burial Ground |achieve 6979/8 |goto Vale of Eternal Blossoms 48.3,69.1
+step
+_Explore_ Vale of Eternal Blossoms |achieve 6979
+step
+Congratulations, you have _earned_ the _Explore Pandaria_ Achievement!
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Ballad of Liu Lang",{
 condition_end="achieved(6856)",
 description="This guide will walk you through discovering each of the lore objects in Pandaria that tell the tale of Liu Lang.",
@@ -2240,15 +2460,6 @@ Follow the path up |goto The Jade Forest 32.8,33.8 < 30
 click Broken Incense Burner |achieve 7381 |goto The Jade Forest 34.1,33.5
 step
 Congratulations, you have obtained the Restore Balance achievement!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Explorer Achievement\\Pandaria",{
-achieveid={6978,6351,6975,6977,6979,6969,6976},
-condition_end="achieved(6974) and achieved(46)",
-description="This guide will walk you through obtaining The Explorer Achievement",
-},[[
-#include "Explorer_Pandaria"
-step
-Congratulations, you have earned The Explorer Achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Is Another Man's Treasure",{
 condition_end="achieved(7284)",

@@ -126,6 +126,8 @@ function ItemScore:SetFilters(playerclass,playerspec,playerlevel)
 	self.playerclass = playerclass or (select(2,UnitClass("player")))
 	self.playerclassName = (select(1,UnitClass("player")))
 	self.playerspec = playerspec or GetSpecialization() or 1 -- Returns nil if < level 10
+	self.playerspecName = (select(2,GetSpecializationInfo(self.playerspec)))
+
 	self.playerlevel = playerlevel or UnitLevel("player")
 
 
@@ -357,7 +359,12 @@ function ItemScore:GetItemScore(itemlink, invslot, allowbad, verbose)
 			if not line:match(self.playerclassName) then
 				return 0,ItemScore.SC_OK,"wrong class"
 			end
-			break
+		end
+
+		if line:match( gsub(ITEM_REQ_SPECIALIZATION,"%%s","(.*)")) then
+			if not line:match(self.playerclassName) then
+				return 0,ItemScore.SC_OK,"wrong spec"
+			end
 		end
 	end
 
