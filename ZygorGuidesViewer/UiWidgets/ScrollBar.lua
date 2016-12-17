@@ -113,7 +113,7 @@ function ScrollBar:AddButtons()
 		:SetScript("OnMouseDown", function(me,but) But_OnMouseDown(me,but,1) end)
 		:SetScript("OnMouseUp", But_OnMouse_Up)
 	.__END
-	ZGV.AssignButtonTexture(self.upbut,(SkinData("TitleButtons")),19,32,1)
+	ZGV.F.AssignButtonTexture(self.upbut,(SkinData("TitleButtons")),19,32,1)
 
 	self.downbut = CHAIN(CreateFrame("Button",self:GetName() and self:GetName().."_Down" or nil,self.barframe))
 		:SetPoint("BOTTOMLEFT")
@@ -124,7 +124,7 @@ function ScrollBar:AddButtons()
 		:SetScript("OnMouseDown",function(me,but) But_OnMouseDown(me,but,-1) end)
 		:SetScript("OnMouseUp", But_OnMouse_Up)
 	.__END
-	ZGV.AssignButtonTexture(self.downbut,(SkinData("TitleButtons")),19,32)
+	ZGV.F.AssignButtonTexture(self.downbut,(SkinData("TitleButtons")),19,32)
 
 	-- If we have buttons then change the bar to not be the complete height.
 	CHAIN(self.bar)
@@ -133,7 +133,7 @@ function ScrollBar:AddButtons()
 		:SetPoint("BOTTOMRIGHT",self.downbut,"TOPRIGHT")
 end
 
-function ScrollBar:SetHideWhenUnless(bool)
+function ScrollBar:SetHideWhenUseless(bool)
 	self.hidewhenuseless = bool
 
 	self:RefreshScroller()

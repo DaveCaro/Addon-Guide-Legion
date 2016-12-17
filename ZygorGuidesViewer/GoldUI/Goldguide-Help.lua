@@ -420,7 +420,7 @@ function Goldguide:CreateHelpPopup()
 				popup:Close() 
 			end)
 			.__END
-		ZGV.AssignButtonTexture(popup.close,(SkinData("TitleButtons")),6,32)
+		ZGV.F.AssignButtonTexture(popup.close,(SkinData("TitleButtons")),6,32)
 
 	popup.header = CHAIN(popup:CreateFontString())
 		:SetPoint("TOPLEFT",popup,"TOPLEFT",5,-5)

@@ -53,6 +53,7 @@
 	<Script file="PetBattle.lua"/>
 
 	<Script file="Config.lua"/>
+	<!--<Script file="ConfigNew.lua"/>-->
 	<Script file="Tutorial.lua"/>
 	
 	<Script file="Achievement.lua"/>
@@ -84,7 +85,10 @@
 	<!-- <Script file="ZygorGuidesViewerOptions.lua"/> -->
 	<Include file="ZygorMapIcon.xml" />
 	<!-- <Include file="ZygorGuidesViewerMiniFrame.xml"/> -->
-	<Include file="GuideMenu.lua" />
+	<!-- <Include file="GuideMenu.lua" /> -->	
+	<Include file="GuideMenuNew.lua" />
+	<Include file="GuideMenuNew-View.lua" />
+	<Include file="GuideMenuNew-Home.lua" />
 
 	<Include file="Templates.xml" />
 		

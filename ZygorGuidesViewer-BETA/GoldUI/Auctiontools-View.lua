@@ -122,7 +122,7 @@ function Appraiser:CreateMainFrame()
 		:SetFrameStrata("HIGH")
 		:SetFrameLevel(AuctionFrame:GetFrameLevel()+1)
 		:SetToplevel(enable)
-		:SetBackdropColor(ZGV.HTMLColor("#222222ff"))
+		:SetBackdropColor(ZGV.F.HTMLColor("#222222ff"))
 		.__END
 
 
@@ -161,7 +161,7 @@ function Appraiser:CreateMainFrame()
 			:SetSize(17,17)
 			:SetScript("OnClick", function() CloseAuctionHouse() end)
 			.__END
-		ZGV.AssignButtonTexture(MF.HeaderFrame.close,(SkinData("TitleButtons")),6,32)
+		ZGV.F.AssignButtonTexture(MF.HeaderFrame.close,(SkinData("TitleButtons")),6,32)
 
 		--[[
 		MF.HeaderFrame.info = CHAIN(CreateFrame("Button",nil,MF.HeaderFrame))
@@ -169,7 +169,7 @@ function Appraiser:CreateMainFrame()
 			:SetSize(17,17)
 			:SetScript("OnClick", function() Appraiser:ToggleHelpPage() end)
 			.__END
-		ZGV.AssignButtonTexture(MF.HeaderFrame.info,(SkinData("TitleButtons")),18,32)
+		ZGV.F.AssignButtonTexture(MF.HeaderFrame.info,(SkinData("TitleButtons")),18,32)
 		--]]
 
 		MF.HeaderFrame.goldguide = CHAIN(CreateFrame("Button", "ZA_Menu_GoldGuide" , MF.HeaderFrame))
@@ -187,7 +187,7 @@ function Appraiser:CreateMainFrame()
 			end)
 			:Show()
 		.__END
-		ZGV.AssignButtonTexture(MF.HeaderFrame.goldguide,(SkinData("TitleButtons")),22,32)
+		ZGV.F.AssignButtonTexture(MF.HeaderFrame.goldguide,(SkinData("TitleButtons")),22,32)
 
 
 	MF.ContentFrame = CHAIN(CreateFrame("Frame", "ZygorAppraiserContent", MF))
@@ -225,7 +225,7 @@ function Appraiser:CreateMainFrame()
 			:SetSize(15,15)
 			:SetScript("OnClick",function() ZGV:OpenOptions() end)
 		.__END
-		ZGV.AssignButtonTexture(MF.FooterSettingsButton,(SkinData("TitleButtons")),5,32)
+		ZGV.F.AssignButtonTexture(MF.FooterSettingsButton,(SkinData("TitleButtons")),5,32)
 
 		MF.progressFrame = CHAIN(CreateFrame("Frame","progressFrame",MF.FooterFrame))
 			:SetBackdrop(SkinData("ProgressBarBackdrop"))

@@ -6,25 +6,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 
-Zygor Viewer Guide Beta
+Zygor Viewer Guide :
 
-Gold/Leveling Guide for Various Game.
+- GENERAL : 
 
-### Changed 
+Completely rebuilt guide menu.
 
-- BETA
+Options simplified, reorganized, and integrated into guide menu.
 
-- LEVELING : 
+- EVENTS : 
 
-Suramar - Fixed a few issues in the Insurrection quest line.
-
-Added tips for NPCs that need to be fed.
-
-- ACHIEVEMENTS : 
-
-Fixed some exploration guides objective numbers.
-
-Fixed a small issue with the legion exploration guide directing players to the wrong area for Trueshot Lodge.
+Updated Winter Veil - Updated quests, dailies, and achievements for the 2016 version of the event.
 
 - Dugi Addon :  
 

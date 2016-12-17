@@ -16,13 +16,13 @@ local HTMLColor=ZGV.HTMLColor
 -- Basics
 -- Black frame with a lightborder
 STYLE.MainBackdrop={bgFile=SKINSDIR.."white",edgeFile=SKINSDIR.."white",tile = true, edgeSize=1, tileSize = 20, insets = { left = 0, right = 0, top = 0, bottom = 0 }}
-STYLE.MainBackdropColor={HTMLColor("#000000ff")}
-STYLE.MainBackdropBorderColor={HTMLColor("#7d7d7dff")}
+STYLE.MainBackdropColor={ZGV.F.HTMLColor("#000000ff")}
+STYLE.MainBackdropBorderColor={ZGV.F.HTMLColor("#7d7d7dff")}
 
 STYLE.NewToggle={bgFile=SKINSDIR.."white",edgeFile=SKINSDIR.."white",tile = true, edgeSize=1, tileSize = 10, insets = { left = 3, right = 3, top = 3, bottom = 3 }}
-STYLE.NewToggleBackdropColor={HTMLColor("#22201fff")}
-STYLE.NewToggleBorderColor={HTMLColor("#898989ff")}
-STYLE.NewToggleInactiveColor={HTMLColor("#00000000")}
+STYLE.NewToggleBackdropColor={ZGV.F.HTMLColor("#22201fff")}
+STYLE.NewToggleBorderColor={ZGV.F.HTMLColor("#898989ff")}
+STYLE.NewToggleInactiveColor={ZGV.F.HTMLColor("#00000000")}
 
 STYLE.RadioOn= {bgFile=SKINSDIR.."radiobutton-on", edgeFile=nil,tile = false, edgeSize=0, tileSize = 32, insets = { left = 0, right = 0, top = 0, bottom = 0 }}
 STYLE.RadioOff={bgFile=SKINSDIR.."radiobutton-off",edgeFile=nil,tile = false, edgeSize=0, tileSize = 32, insets = { left = 0, right = 0, top = 0, bottom = 0 }}
@@ -30,50 +30,50 @@ STYLE.RadioOff={bgFile=SKINSDIR.."radiobutton-off",edgeFile=nil,tile = false, ed
 
 -- Dark gray without border
 STYLE.SecBackdrop={bgFile=SKINSDIR.."white",tile = true, edgeSize=0, tileSize = 20, insets = { left = 0, right = 0, top = 0, bottom = 0 }}
-STYLE.SecBackdropColor={HTMLColor("#222222ff")}
+STYLE.SecBackdropColor={ZGV.F.HTMLColor("#222222ff")}
 
 -- Lighter gray
-STYLE.TriBackdropColor={HTMLColor("#333333ff")}
+STYLE.TriBackdropColor={ZGV.F.HTMLColor("#333333ff")}
 
 -- Dark border
-STYLE.DarkBorder={HTMLColor("#000000ff")}
+STYLE.DarkBorder={ZGV.F.HTMLColor("#000000ff")}
 
-STYLE.AccentColor={HTMLColor("#e5661aff")}
+STYLE.AccentColor={ZGV.F.HTMLColor("#e5661aff")}
 
 -- Widget colors!
 -- TODO These are stealth only at the moment. Need to support midnight. Maybe?
 STYLE.ButtonBackdrop1=STYLE.MainBackdrop
 STYLE.ButtonColor1=STYLE.TriBackdropColor
-STYLE.ButtonBorderColor1={HTMLColor("#808080ff")}
-STYLE.ButtonHighlightColor1={HTMLColor("#444444ff")}
+STYLE.ButtonBorderColor1={ZGV.F.HTMLColor("#808080ff")}
+STYLE.ButtonHighlightColor1={ZGV.F.HTMLColor("#444444ff")}
 STYLE.ButtonBackdrop2=STYLE.SecBackdrop
 STYLE.ButtonColor2=STYLE.AccentColor
-STYLE.ButtonHighlightColor2={HTMLColor("#ea8548")}
+STYLE.ButtonHighlightColor2={ZGV.F.HTMLColor("#ea8548")}
 
 
-STYLE.ToggleButtonBackdropColor={HTMLColor("#666666ff")}
+STYLE.ToggleButtonBackdropColor={ZGV.F.HTMLColor("#666666ff")}
 STYLE.ToggleButtonHighlightColor=STYLE.ButtonHighlightColor1
 
-STYLE.TabDefaultColor={HTMLColor("#666666ff")}
-STYLE.TabSelectedColor={HTMLColor("#ffffffff")}
+STYLE.TabDefaultColor={ZGV.F.HTMLColor("#666666ff")}
+STYLE.TabSelectedColor={ZGV.F.HTMLColor("#ffffffff")}
 
 STYLE.DropDownBackdrop1=STYLE.SecBackdrop
 STYLE.DropDownBackdrop1Color=STYLE.TriBackdropColor
 STYLE.DropDownBackdrop2=STYLE.MainBackdrop
 STYLE.DropDownBackdrop2Color=STYLE.DropDownBackdrop1Color
-STYLE.DropDownBackdrop2BorderColor={HTMLColor("#777777ff")}
+STYLE.DropDownBackdrop2BorderColor={ZGV.F.HTMLColor("#777777ff")}
 STYLE.DropDownButtonBackdrop2=STYLE.SecBackdrop
 STYLE.DropDownButtonBackdrop2Color=STYLE.DropDownBackdrop2BorderColor
 
 STYLE.DropDownPulloutBackdrop=STYLE.MainBackdrop
-STYLE.DropDownPulloutColor={HTMLColor("#000000e6")}
+STYLE.DropDownPulloutColor={ZGV.F.HTMLColor("#000000e6")}
 STYLE.DropDownPulloutBorderColor=STYLE.MainBackdropBorderColor
 
 STYLE.DropDownItemBackdrop=STYLE.SecBackdrop
 STYLE.DropDownItemColor=STYLE.ToggleButtonBackdropColor
 
 STYLE.ScrollBackColor=STYLE.TriBackdropColor
-STYLE.ScrollBarColor={HTMLColor("#666666ff")}
+STYLE.ScrollBarColor={ZGV.F.HTMLColor("#666666ff")}
 
 -- Specifics
 STYLE.Backdrop=STYLE.MainBackdrop

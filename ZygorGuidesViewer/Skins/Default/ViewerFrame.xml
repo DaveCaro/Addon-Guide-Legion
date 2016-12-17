@@ -692,7 +692,7 @@
                 <Size x="20" y="20"/>
 				
                 <Frames>
-					<Frame name="$parent_GuideBack">
+					<Frame name="$parent_GuideBack" parentKey="GuideBack">
 						<Size x="1" y="1"/>
 						<Layers>
 							<Layer level="OVERLAY">

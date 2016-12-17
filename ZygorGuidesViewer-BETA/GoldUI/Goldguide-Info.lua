@@ -74,15 +74,15 @@ local function GetInfoFrame(parentFrame)
 	-- Pro/Con
 	local PRO_N_CON_SQUARE_SIZE = 10
 	local PRO_N_CON_VERT_PADDING = 7
-	local PRO_SQ_COLOR = {HTMLColor("#00a1fe")}
-	local CON_SQ_COLOR = {HTMLColor("#ff0000")}
+	local PRO_SQ_COLOR = {ZGV.F.HTMLColor("#00a1fe")}
+	local CON_SQ_COLOR = {ZGV.F.HTMLColor("#ff0000")}
 	
 	local PROGRESS_BAR_HEIGHT = 12
 	local PROGRESS_BAR_WIDTH = 300
 	-- Progress Bar Colors
-	local DIFF_COLOR_1 = {HTMLColor("#00ff00")}
-	local DIFF_COLOR_2 = {HTMLColor("#ffff00")}
-	local DIFF_COLOR_3 = {HTMLColor("#ff0000")}
+	local DIFF_COLOR_1 = {ZGV.F.HTMLColor("#00ff00")}
+	local DIFF_COLOR_2 = {ZGV.F.HTMLColor("#ffff00")}
+	local DIFF_COLOR_3 = {ZGV.F.HTMLColor("#ff0000")}
 	
 	local name = parentFrame:GetName().."InfoFrame"
 	local contentwidth

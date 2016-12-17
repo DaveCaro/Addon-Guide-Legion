@@ -88,7 +88,7 @@ function Mailtools:CreateMainFrame()
 		:SetSize(17,17)
 		:SetScript("OnClick", function() CloseMail() end)
 		.__END
-	ZGV.AssignButtonTexture(MF.close,(SkinData("TitleButtons")),6,32)
+	ZGV.F.AssignButtonTexture(MF.close,(SkinData("TitleButtons")),6,32)
 
 
 	-- Footer
@@ -97,7 +97,7 @@ function Mailtools:CreateMainFrame()
 		:SetSize(15,15)
 		:SetScript("OnClick",function() ZGV:OpenOptions() end)
 	.__END
-	ZGV.AssignButtonTexture(MF.FooterSettingsButton,(SkinData("TitleButtons")),5,32)
+	ZGV.F.AssignButtonTexture(MF.FooterSettingsButton,(SkinData("TitleButtons")),5,32)
 
 	MF.FooterStatus = CHAIN(MF:CreateFontString())
 		:SetPoint("BOTTOMLEFT",5,5)
@@ -120,7 +120,7 @@ function Mailtools:MakeCollectorTable()
 	local frame = CHAIN(ui:Create("Frame",self.MainFrame ,"ZM_Collector_Frame"))
 		:SetPoint("TOPLEFT",1,-SUBFRAME_HEADER)
 		:SetPoint("BOTTOMRIGHT",-1,SUBFRAME_FOOTER+1)
-		:SetBackdropColor(HTMLColor("#222222ff"))
+		:SetBackdropColor(ZGV.F.HTMLColor("#222222ff"))
 		:SetBackdropBorderColor(0,0,0,0)
 		.__END
 
@@ -155,7 +155,7 @@ function Mailtools:MakeCollectorTable()
 	-- Content
 	frame.maillist = CHAIN(ui:Create("ScrollTable",frame,"ZM_Collector_Frame",COLLECTOR_COLUMNS,COLLECTOR_DATA))
 		:SetBackdropBorderColor(0,0,0,0)
-		:SetBackdropColor(HTMLColor("#222222ff"))
+		:SetBackdropColor(ZGV.F.HTMLColor("#222222ff"))
 		.__END
 
 	frame.maillist:SetScript("OnMouseWheel", function(self,delta)
@@ -239,7 +239,7 @@ function Mailtools:MakeSenderTable()
 	local frame = CHAIN(ui:Create("Frame",self.MainFrame ,"ZM_Sender_Frame"))
 		:SetPoint("TOPLEFT",1,-SUBFRAME_HEADER)
 		:SetPoint("BOTTOMRIGHT",-1,SUBFRAME_FOOTER+1)
-		:SetBackdropColor(HTMLColor("#222222ff"))
+		:SetBackdropColor(ZGV.F.HTMLColor("#222222ff"))
 		:SetBackdropBorderColor(0,0,0,0)
 		.__END
 
@@ -293,7 +293,7 @@ function Mailtools:MakeSenderTable()
 	-- Content
 	frame.itemlist = CHAIN(ui:Create("ScrollTable",frame,"ZM_Sender_Itemlist",SENDER_COLUMNS,SENDER_DATA))
 		:SetBackdropBorderColor(0,0,0,0)
-		:SetBackdropColor(HTMLColor("#222222ff"))
+		:SetBackdropColor(ZGV.F.HTMLColor("#222222ff"))
 		.__END
 
 	frame.itemlist:SetScript("OnMouseWheel", function(self,delta)

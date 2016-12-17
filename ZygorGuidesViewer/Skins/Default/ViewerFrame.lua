@@ -531,109 +531,6 @@ local function SpotLabel_OnHyperlinkLeave(self,linkdata,link)
 	ZGV.hasTooltipOverSpotLink=nil
 end
 
-function ZygorGuidesViewerFrame_Spot_Setup(num)
-	local function obj(name) return _G['ZygorGuidesViewerFrame_Spot'..num..(name and '_'..name or '')] end
-
-	local spotname = 'ZygorGuidesViewerFrame_Spot'..num
-	local spot = _G[spotname]
-
-	spot.lines={}
-
-	spot:SetBackdrop({bgFile = ZGV.DIR.."\\Skins\\white", edgeFile=ZGV.DIR.."\\Skins\\Default\\midnight\\roundcorners", tile = true, edgeSize=8, tileSize = 8, insets = { left = 8, right = 8, top = 8, bottom = 8 }})
-
-	--spot.border:SetAllPoints()
-	--spot.border:SetBackdrop({ edgeFile = ZGV.DIR.."\\Skins\\popup_border", edgeSize = 16 })
-
-	spot:EnableMouse(true)
-	spot:SetScript("OnClick", Spot_OnClick)
-	spot:SetScript("OnUpdate", Spot_OnUpdate)
-	spot:RegisterForDrag("LeftButton")
-	spot:RegisterForClicks("LeftButtonUp","RightButtonUp")
-
-	ZGV.spotframes[num] = spot
-
-	for i=1,LINES_PER_STEP do
-		local line = obj("Line"..i)
-		local label = line.label
-		if not label then break end
-
-		--local icon = obj("Line"..i.."Icon")
-		--local clicker = obj("Line"..i.."Clicker")
-
-		line:ClearAllPoints()
-		if i==1 then
-			-- overridden in ZGV:UpdateFrame anyway
-			--line:SetPoint("TOPLEFT",step,ZGV.STEPMARGIN_X,-ZGV.STEPMARGIN_Y)
-			--line:SetPoint("TOPRIGHT",step,-ZGV.STEPMARGIN_X,-ZGV.STEPMARGIN_Y)
-		else
-			line:SetPoint("TOPLEFT",obj("Line"..(i-1)),"BOTTOMLEFT",0,0)
-			line:SetPoint("TOPRIGHT",obj("Line"..(i-1)),"BOTTOMRIGHT",0,0)
-		end
-		line:SetHeight(12)
-		line.num = i
-
-		--label:SetMultilineIndent(true)
-
-		label:ClearAllPoints()
-		label:SetPoint("TOPLEFT",0,0)
-		label:SetPoint("TOPRIGHT",0,0)
-
-		label:SetHyperlinksEnabled(true)
-		label:SetScript("OnHyperlinkEnter", SpotLabel_OnHyperlinkEnter)
-		label:SetScript("OnHyperlinkLeave", SpotLabel_OnHyperlinkLeave)
-		label:SetScript("OnLeave", SpotLabel_OnHyperlinkLeave)
-		label:SetShadowColor(0,0,0,1)
-		label:SetShadowOffset(0.5,-0.5)
-
-		spot.arrow:SetTexture(ZGV.DIR.."\\Arrows\\Midnight\\arrow")
-		spot.arrowdist:SetFont(STANDARD_TEXT_FONT,9)
-
-		spot.lines[i]=line
-
-		--[[
-		icon:ClearAllPoints()
-		icon:SetPoint("TOPLEFT",0,1)
-		icon:SetTexture(ZGV.DIR.."\\Skins\\icons")
-		icon.SetIcon = icon_seticon
-		icon:SetIcon(1)
-
-		back:ClearAllPoints()
-		back:SetPoint("TOPLEFT")
-		back:SetPoint("BOTTOMRIGHT")
-
-		clicker:ClearAllPoints()
-		clicker:SetPoint("TOPLEFT")
-		clicker:SetPoint("BOTTOMRIGHT")
-		--clicker.num = i
-		--clicker:RegisterForClicks("LeftButtonUp","RightButtonUp")
-		clicker:SetScript("OnClick",clicker_onclick)
-		clicker:SetScript("OnEnter",clicker_onenter)
-		clicker:SetScript("OnLeave",clicker_onleave)
-		clicker:EnableMouse(false)
-		--]]
-
-		--line.icon=icon
-		--line.back=back
-		--line.clicker=clicker
-		--line.anim_w2g = obj("Line"..i.."Back_white2green")
-		--line.anim_w2r = obj("Line"..i.."Back_white2rgba")
-
-	end
-
-	-- lay them out
-
-	spot:ClearAllPoints()
-	if num==1 then
-		spot:SetPoint("TOPLEFT","ZygorGuidesViewerFrame_ScrollChild","TOPLEFT",0,0)
-		spot:SetPoint("TOPRIGHT","ZygorGuidesViewerFrame_ScrollChild","TOPRIGHT",0,0)
-	else
-		spot:SetPoint("TOPLEFT",_G['ZygorGuidesViewerFrame_Spot'..(num-1)],"BOTTOMLEFT",0,-ZGV.STEP_SPACING)
-		spot:SetPoint("TOPRIGHT",_G['ZygorGuidesViewerFrame_Spot'..(num-1)],"BOTTOMRIGHT",0,-ZGV.STEP_SPACING)
-		--frame:SetPoint("TOPLEFT",getglobal("ZygorGuidesViewerFrame_Step"..(stepnum-1)),"BOTTOMLEFT",0,-STEP_SPACING)
-		--frame:SetPoint("TOPRIGHT",getglobal("ZygorGuidesViewerFrame_Step"..(stepnum-1)),"BOTTOMRIGHT",0,-STEP_SPACING)
-	end
-end
-
 function ZygorGuidesViewerFrame_ActionButton_OnEnter(self)
 	--if InCombatLockdown() then return end
 	--self:SetFrameStrata("DIALOG")
@@ -790,13 +687,6 @@ function ZygorGuidesViewerFrame_OnLoad(self)
 		ZGV:AddActionButtons(1,i)
 	end
 
-	--[[
-	-- Map spots are DOWN for now. TODO skinify! Naaah, ignore.
-	for i=1,20 do
-		ZygorGuidesViewerFrame_Spot_Setup(i)
-	end
-	--]]
-
 
 	-- scrollbar
 
@@ -943,7 +833,7 @@ function ZygorGuidesViewerFrame_OnUpdate(self,elapsed)
 			self.mouseCount = self.mouseCount+elapsed
 			self.leftCount=0
 			if self.mouseCount>ZGV.db.profile.bordershowdelay then
-				UIFrameFadeIn(Border,fadespeed,0.0,profile.opacitymain)
+				UIFrameFadeIn(Border,fadespeed,0.0,1.0)
 				ZGV.borderfadedout=nil
 			end
 			GuideButton.delay=-2
@@ -955,7 +845,7 @@ function ZygorGuidesViewerFrame_OnUpdate(self,elapsed)
 			self.mouseCount=0
 			--print("Mouseout", self.leftCount, ZGV.db.profile.borderhidedelay, ZGV.borderfadedout)
 			if self.leftCount>ZGV.db.profile.borderhidedelay and Border:GetAlpha()>0.05 and not ZGV.borderfadedout then
-				UIFrameFadeOut(Border,fadespeed,profile.opacitymain,0.0)
+				UIFrameFadeOut(Border,fadespeed,1.0,0.0)
 				ZGV.borderfadedout=true
 			end
 		end
@@ -1205,7 +1095,7 @@ end
 
 function ZygorGuidesViewerFrame_LockButton_OnClick(self,button)
 	ZygorGuidesViewer:SetOption("Display","windowlocked")
-	if ZGV.optionpanels['display']:IsVisible() then ZGV:OpenOptions('display') end
+	ZGV.GuideMenu:RefreshOptions("ZygorGuidesViewer-Display")
 	self:GetScript("OnEnter")(self)
 end
 
@@ -1219,7 +1109,7 @@ end
 -------------------
 
 function ZygorGuidesViewerFrame_SettingsButton_OnClick(self,button)
-	ZygorGuidesViewer:OpenOptions("display")
+	ZygorGuidesViewer:OpenOptions()
 end
 
 function ZygorGuidesViewerFrame_SettingsButton_OnEnter(self)
@@ -2020,7 +1910,8 @@ end
 --------------------
 
 function ZygorGuidesViewerFrame_Guides_MiniButton_OnClick(self,button)
-	ZygorGuidesViewer:SetOption("Display","hideinlinetravel")
+	ZygorGuidesViewer:SetOption("Display","showinlinetravel")
+	ZGV.GuideMenu:RefreshOptions("ZygorGuidesViewer-Display")
 	--if ZGV.optionpanels['display']:IsVisible() then ZGV:OpenOptions('display') end
 	--ZGV:UpdateMiniMode()
 
@@ -2037,7 +1928,7 @@ end
 
 function ZGV:Guides_Mini_to_Full()
 	ZygorGuidesViewer:SetOption("Display","dispmodepri")
-	if ZGV.optionpanels['display']:IsVisible() then ZGV:OpenOptions('display') end
+	--if ZGV.optionpanels['display']:IsVisible() then ZGV:OpenOptions('display') end
 	ZygorGuidesViewer:ReanchorFrame()
 	ZygorGuidesViewer:AlignFrame()
 end
@@ -2045,8 +1936,8 @@ end
 
 function ZygorGuidesViewerFrame_Guides_MiniButton_OnEnter(self,button)
 	GameTooltip:SetOwner(ZGV.Frame, "ANCHOR_TOP")
-	GameTooltip:SetText(L[ZGV.db.profile.hideinlinetravel and 'frame_hideinlinetravel_off' or 'frame_hideinlinetravel_on'])
-	GameTooltip:AddLine(L[ZGV.db.profile.hideinlinetravel and 'frame_hideinlinetravel_goon' or 'frame_hideinlinetravel_gooff'],0,1,0)
+	GameTooltip:SetText(L[ZGV.db.profile.showinlinetravel and 'frame_showinlinetravel_on' or 'frame_showinlinetravel_off'])
+	GameTooltip:AddLine(L[ZGV.db.profile.showinlinetravel and 'frame_showinlinetravel_gooff' or 'frame_showinlinetravel_goon'],0,1,0)
 	--GameTooltip:AddLine(L['frame_minright'],0,1,0)
 	GameTooltip:Show()
 end
@@ -2056,15 +1947,15 @@ end
 function ZygorGuidesViewerFrame_Guides_GuideButton_OnClick(self,button)
 	local path
 	if (ZGV.Menu and ZGV.Menu.Frame and ZGV.Menu.Frame:IsVisible() and ((button=="RightButton")==(ZGV.Menu.path=="SUGGESTED"))) then
-		ZGV.Menu:Hide()
+		ZGV.GuideMenu:Hide()
 	else
 		if button=="RightButton" and self.suggestedguide then
 			ZGV:SetGuide(self.suggestedguide)
 		else
 			if button=="RightButton" then
-				ZGV:OpenGuideMenu("SUGGESTED")
-			else
-				ZGV:OpenGuideMenu("HOME")
+				ZGV.GuideMenu:Show("Suggested")
+		else
+				ZGV.GuideMenu:Show()
 			end
 		end
 		--[[

@@ -64,8 +64,8 @@ function Achievement:IconSetup()
 	for g,guide in ipairs(ZGV.registeredguides) do
 		if guide.headerdata.achieveid then
 			if type(guide.headerdata.achieveid) == "table" then
-				local id,i
-				for id,i in pairs(guide.headerdata.achieveid) do
+				local id
+				for _,id in pairs(guide.headerdata.achieveid) do
 					self.AvailGuides[id]=guide 
 				end
 			elseif type(guide.headerdata.achieveid) == "number" then

@@ -24,22 +24,22 @@ STYLE.SecBackdrop={bgFile = SKINSDIR.."white"}
 STYLE.SecBackdropColor={0,0,0,0.5}
 
 -- Lighter gray
-STYLE.TriBackdropColor={HTMLColor("#333333ff")}
+STYLE.TriBackdropColor={ZGV.F.HTMLColor("#333333ff")}
 
 -- Dark border
-STYLE.DarkBorder={HTMLColor("#000000ff")}
+STYLE.DarkBorder={ZGV.F.HTMLColor("#000000ff")}
 
-STYLE.AccentColor={HTMLColor("#e5661aff")}
+STYLE.AccentColor={ZGV.F.HTMLColor("#e5661aff")}
 
 -- Widget colors!
 -- TODO These are stealth only at the moment. Need to support midnight. Maybe?
 STYLE.ButtonBackdrop1=STYLE.MainBackdrop
 STYLE.ButtonColor1=STYLE.TriBackdropColor
-STYLE.ButtonBorderColor1={HTMLColor("#808080ff")}
-STYLE.ButtonHighlightColor1={HTMLColor("#444444ff")}
+STYLE.ButtonBorderColor1={ZGV.F.HTMLColor("#808080ff")}
+STYLE.ButtonHighlightColor1={ZGV.F.HTMLColor("#444444ff")}
 STYLE.ButtonBackdrop2=STYLE.MainBackdrop
 STYLE.ButtonColor2=STYLE.TriBackdropColor
-STYLE.ButtonHighlightColor2={HTMLColor("#444444ff")}
+STYLE.ButtonHighlightColor2={ZGV.F.HTMLColor("#444444ff")}
 
 STYLE.DropDownBackdrop1=STYLE.SecBackdrop
 STYLE.DropDownBackdrop1Color=STYLE.TriBackdropColor
@@ -49,14 +49,14 @@ STYLE.DropDownButtonBackdrop2=STYLE.SecBackdrop
 STYLE.DropDownButtonBackdrop2Color=STYLE.DropDownBackdrop2Color
 
 STYLE.DropDownPulloutBackdrop=STYLE.MainBackdrop
-STYLE.DropDownPulloutColor={HTMLColor("#000000e6")}
+STYLE.DropDownPulloutColor={ZGV.F.HTMLColor("#000000e6")}
 STYLE.DropDownPulloutBorderColor=STYLE.MainBackdropBorderColor
 
 STYLE.DropDownItemBackdrop=STYLE.SecBackdrop
 STYLE.DropDownItemColor=STYLE.TriBackdropColor
 
 STYLE.ScrollBackColor=STYLE.TriBackdropColor
-STYLE.ScrollBarColor={HTMLColor("#666666ff")}
+STYLE.ScrollBarColor={ZGV.F.HTMLColor("#666666ff")}
 
 STYLE.Backdrop=STYLE.MainBackdrop
 STYLE.BackdropColor=STYLE.MainBackdropColor

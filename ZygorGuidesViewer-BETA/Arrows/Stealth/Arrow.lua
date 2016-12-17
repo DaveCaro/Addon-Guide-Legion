@@ -26,12 +26,6 @@ function arrow:CreateFrame()
 	return self.frame
 end
 
-local function BetterTexCoord(obj,x,w,y,h)  -- aka  n,w,h
-	if not h then  x,w,y,h=(x or 0),w,nil,y  y=math.floor(x/w)+1  x=(x%w)+1  end
-	obj:SetTexCoord((x-1)/w,x/w,(y-1)/h,y/h)
-end
-
-
 ------------ color
 local ar,ag,ab = 1.0,0.0,0.0
 local br,bg,bb = 0.8,0.7,0.0

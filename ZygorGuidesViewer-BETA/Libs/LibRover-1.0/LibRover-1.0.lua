@@ -236,12 +236,13 @@ do
 
 
 
-		function Lib:UpdateConfig(v)
-			v = v or ZGV.db.profile.pathfinding_mode
-			if v=="1fastest" then Lib.cfg.use_hearth=true Lib.cfg.use_ghearth=true Lib.cfg.use_item_teleports=true Lib.cfg.use_astral_recall=true Lib.cfg.prefer_taxi=false Lib.cfg.frown_on_short_portals=false
-			elseif v=="2nocd" then Lib.cfg.use_hearth=false Lib.cfg.use_ghearth=false Lib.cfg.use_item_teleports=false Lib.cfg.use_astral_recall=false Lib.cfg.prefer_taxi=false Lib.cfg.frown_on_short_portals=false
-			elseif v=="3lazy" then Lib.cfg.use_hearth=true Lib.cfg.use_ghearth=true Lib.cfg.use_item_teleports=true Lib.cfg.use_astral_recall=true Lib.cfg.prefer_taxi=true Lib.cfg.frown_on_short_portals=true
-			end
+		function Lib:UpdateConfig(profile)
+			Lib.cfg.use_hearth=profile.travelusehs
+			Lib.cfg.use_ghearth=profile.traveluseghs
+			Lib.cfg.use_item_teleports=profile.traveluseitems
+			Lib.cfg.use_astral_recall=profile.travelusespells
+			Lib.cfg.prefer_taxi=profile.travelprefertaxi
+			Lib.cfg.frown_on_short_portals=profile.travelusespells
 		end
 
 
@@ -1444,7 +1445,7 @@ do
 			LibRover_NodeSetHeap:InterfaceWithLib(Lib)
 			LibRover_Region:InterfaceWithLib(Lib)
 
-			self:UpdateConfig()
+			self:UpdateConfig(ZGV.db.profile)
 			if self.F then return end
 			self.F=CreateFrame("FRAME")
 			self.F:Show()

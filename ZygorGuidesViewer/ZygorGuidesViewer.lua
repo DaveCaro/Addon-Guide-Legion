@@ -396,6 +396,7 @@ function ZGV:OnEnable()
 
 	self:AddEvent("COMBAT_LOG_EVENT_UNFILTERED")
 	self:AddEvent("LOADING_SCREEN_DISABLED")
+	self:AddEvent("LOADING_SCREEN_ENABLED")
 
 	self:AddEvent("TAXIMAP_OPENED")
 
@@ -860,6 +861,10 @@ function ZGV:LOADING_SCREEN_DISABLED()
 	self.loading_screen_disabled=true
 end
 
+function ZGV:LOADING_SCREEN_ENABLED()
+	self:Debug("&startup LOADING_SCREEN_ENABLED Freeze!")
+	self.loading_screen_disabled=false
+end
 
 -- my event handling. Multiple handlers allowed, just for the heck of it.
 
@@ -971,6 +976,7 @@ ZGV.GuideTitles = {
 	["DUNGEONS"]=L['guidepicker_dungeon'] ,
 	["GEAR"]=L['guidepicker_gear'] ,
 }
+setmetatable(ZGV.GuideTitles,{__index=function(i,v) return v end})
 
 function ZGV:GetGuideByTitle(title)
 	if not title then return end
@@ -1031,7 +1037,7 @@ function ZGV:SetGuide(name,step,hack) --hack used for testing
 				end
 
 				self.BadGuidePopup.OnDecline = function(self)
-					ZGV.Menu:Show(self.guide)
+					ZGV.GuideMenu:OpenGuide(self.guide)
 				end
 
 				self.BadGuidePopup.noMinimize = 1 --Can not minimize this one
@@ -1639,6 +1645,7 @@ local lastcompletion=0
 local lastnextsuggested
 local justcompletedgoals={}
 function ZGV:TryToCompleteStep(force)
+	if not self.loading_screen_disabled then return end
 	if not self.CurrentStep or not self.CurrentGuide then return end
 
 	if self.BUTTONS_INLINE then
@@ -1804,7 +1811,7 @@ function ZGV:MaybeSuggestNextGuide()
 	if nextguide then
 		local nextsuggested = (nextguide:GetStatus()=="SUGGESTED")
 		ZGV.suggesting = nextsuggested
-		if not lastnextsuggested and nextsuggested and self.db.profile.n_popup_sis then -- plain guide popup block is in AWP
+		if not lastnextsuggested and nextsuggested and self.db.profile.n_popup_guides then -- plain guide popup block is in AWP
 			nextguide:AdvertiseWithPopup()
 		end
 		lastnextsuggested = nextsuggested
@@ -2229,8 +2236,8 @@ function ZGV:UpdateFrame(full,onupdate)
 						frame.lines[line].icon:Hide()
 						frame.lines[line].back:Show()
 						-- TODO how about we let skin decide?
-						frame.lines[line].back:SetBackdropColor(0,0,0,0.3)
-						frame.lines[line].back:SetBackdropBorderColor(0,0,0,0.3)
+						frame.lines[line].back:SetBackdropColor(0,0,0,0.3*ZGV.db.profile.opacitymain)
+						frame.lines[line].back:SetBackdropBorderColor(0,0,0,0.3*ZGV.db.profile.opacitymain)
 						frame.lines[line].isheader=true
 						line=line+1
 						did_header=true
@@ -2278,7 +2285,7 @@ function ZGV:UpdateFrame(full,onupdate)
 					if not goals then goals=stepdata.goals end
 
 					local canhidetravel=false
-					if self.db.profile.hideinlinetravel then for i,goal in ipairs(goals) do if not goal:IsInlineTravel() then canhidetravel=true end end end
+					if not self.db.profile.showinlinetravel then for i,goal in ipairs(goals) do if not goal:IsInlineTravel() then canhidetravel=true end end end
 
 
 					local hadstickies
@@ -2350,11 +2357,11 @@ function ZGV:UpdateFrame(full,onupdate)
 
 							if self.db.profile.showwrongsteps and status=="hidden" then goaltxt = "|cff880000[*BAD*]|r "..goaltxt end
 
-							if goaltxt~="?" and goaltxt~="" and frame.lines[line] then -- Why is frame.lines[line] sometimes missing? ~~Jeremiah
+							if goaltxt~="?" and goaltxt~="" and frame.lines[line] then
 								local link = ((goal.tooltip and not self.db.profile.tooltipsbelow) or (goal.x and not self.db.profile.windowlocked)) and " |cffdd44ff*|r" or ""  -- goto asterisk
 								if stepdata:IsCurrentlySticky() then link="" end
-								if not frame.lines[line] then error ("line does not exist") end
-								if not frame.lines[line].label then error ("label does not exist") end
+								if not frame.lines[line] then error ("line "..line.." does not exist") end
+								if not frame.lines[line].label then error ("label in line "..line.." does not exist") end
 								if not goal or not goal.action then error("invalid goal") end
 								frame.lines[line].label:SetFont(FONT,round(goal.action~="info" and self.db.profile.fontsize + (self.CurrentSkinStyle.StepFontSizeMod or 0) or self.db.profile.fontsecsize)) -- TODO skindata() friendly?
 								frame.lines[line].label:SetText(indent..goaltxt..link)
@@ -2376,6 +2383,20 @@ function ZGV:UpdateFrame(full,onupdate)
 								frame.lines[line].special = (goal.parentStep.is_sticky and goal.parentStep~=ZGV.CurrentStep and "stickyline")
 									 or (goal.parentStep.is_poi and goal.parentStep~=ZGV.CurrentStep and "poiline")
 								line=line+1
+							end
+							if goal.loadguideZZZZ then
+								frame.lines[line].label:SetFont(FONT,round(self.db.profile.fontsecsize))
+								local guide = goal.loadguide:match("\\([^\\]+)$")
+								if guide then
+									local g,step = guide:match("(.*)::(%d+)")
+									if g then guide=g end
+									frame.lines[line].label:SetText(indent.."|cffeeeecc".. guide .."|r")
+									--frame.lines[line].label:SetMultilineIndent(1)
+									frame.lines[line].goal = goal
+									--frame.lines[line].special = (goal.parentStep.is_sticky and goal.parentStep~=ZGV.CurrentStep and "stickyline")
+									--	 or (goal.parentStep.is_poi and goal.parentStep~=ZGV.CurrentStep and "poiline")
+									line=line+1
+								end
 							end
 						end
 					end
@@ -2557,6 +2578,9 @@ function ZGV:UpdateFrame(full,onupdate)
 				-- POI COLORS
 				local pr,pg,pb,pa = 0.4,0.4,0.4,0.5
 
+				sa = sa * self.db.profile.opacitymain
+				pa = pa * self.db.profile.opacitymain
+
 				if frame.is_sticky and self.db.profile.stickydisplay==3 then
 					frame:SetBackdropBorderColor(sr,sg,sb,1)
 				elseif frame.is_poi then
@@ -2600,7 +2624,7 @@ function ZGV:UpdateFrame(full,onupdate)
 							icon:SetSize(self.CurrentSkinStyle.StepLineIconSize * self.db.profile.fontsize,self.CurrentSkinStyle.StepLineIconSize * self.db.profile.fontsize) -- TODO SkinData friendly?
 							icon:Show()
 
-							if goal.next then
+							if goal.next or goal.loadguide then
 								icon:SetIcon(actionicon.next)
 							elseif poi_actions[goal.action] then
 								icon:SetIcon(actionicon[goal.action])
@@ -2692,6 +2716,8 @@ function ZGV:UpdateFrame(full,onupdate)
 							end
 
 							-- FLASHES
+
+							a = a * ZGV.db.profile.opacitymain
 
 							if status=="incomplete" and (goal.action~="goto" and goal.action~="fly") and self.db.profile.goalupdateflash and progress>(self.recentGoalProgress[goal] or 1) and self.frameNeedsResizing==0 and stepdata==self.CurrentStep then
 
@@ -2791,7 +2817,7 @@ function ZGV:UpdateFrame(full,onupdate)
 					currentBackdropColor[1] = min(1,currentBackdropColor[1] + 0.3)
 					currentBackdropColor[2] = min(1,currentBackdropColor[2] + 0.3)
 					currentBackdropColor[3] = min(1,currentBackdropColor[3] + 0.3)
-					currentBackdropColor[4] = 1
+					currentBackdropColor[4] = ZGV.db.profile.opacitymain
 					frame.lines[ZGV.CurrentStep.current_waypoint_goal].back:SetBackdropColor(unpack(currentBackdropColor))
 				end
 				
@@ -2837,7 +2863,7 @@ function ZGV:UpdateFrame(full,onupdate)
 				--]]
 
 				-- TODO this is really dirty
-				self.db.profile.stepbackalpha=1.0
+				self.db.profile.stepbackalpha=1.0 * ZGV.db.profile.opacitymain * ZGV.db.profile.opacitymain  -- twice, to make it more transparent, as it's overlaid on normal window background anyway.
 				if stepdata:AreRequirementsMet() then
 					if stepdata:IsComplete() then
 						frame:SetBackdropColor(fromRGBmul_a(self.db.profile.goalbackcomplete,0.5,self.db.profile.stepbackalpha))
@@ -3385,7 +3411,7 @@ local spamthrot
 function ZGV:Print(s,ifdebug,force)
 	if ifdebug then self:Debug(s) end
 
-	if self.db.profile.quiet and not force then return end
+	if not self.db.profile.noisy and not force then return end
 
 	if not ZGV.DEV and not ZGV.db.profile.debug and not force then  -- spam throttle on clients only
 		if s==spamthrot_last then
@@ -3643,13 +3669,13 @@ function ZGV:PLAYER_REGEN_DISABLED()
 	self:UpdateCooldowns()
 	if self.db.profile.hideincombat then
 		if self.Frame:IsVisible() then
-			ZGV.UIFrameFade.UIFrameFadeOut(self.Frame,0.5,ZGV.db.profile.opacitymain,0.0)
+			ZGV.UIFrameFade.UIFrameFadeOut(self.Frame,0.5,1.0,0.0)
 			self.hiddenincombat = true
 		end
 
 		--[[ CreatureViewer removal, 7.0
 		if self.CV.Frame:IsVisible() then
-			ZGV.UIFrameFade.UIFrameFadeOut(self.CV.Frame,0.5,ZGV.db.profile.opacitymain,0.0)
+			ZGV.UIFrameFade.UIFrameFadeOut(self.CV.Frame,0.5,1.0,0.0)
 			self.cvhiddenincombat = true
 		end
 		--]]
@@ -3672,13 +3698,13 @@ function ZGV:PLAYER_REGEN_ENABLED()
 	self:UpdateCooldowns()
 
 	if self.hiddenincombat then
-		ZGV.UIFrameFade.UIFrameFadeIn(self.Frame,0.5,0.0,ZGV.db.profile.opacitymain)
+		ZGV.UIFrameFade.UIFrameFadeIn(self.Frame,0.5,0.0,1.0)
 		self.hiddenincombat = nil
 	end
 
 	--[[ CreatureViewer removal, 7.0
 	if self.cvhiddenincombat then
-		ZGV.UIFrameFade.UIFrameFadeIn(self.CV.Frame,0.5,0.0,ZGV.db.profile.opacitymain) --This will fade the creature viewer to the same level as the window. Not a bad thing imo
+		ZGV.UIFrameFade.UIFrameFadeIn(self.CV.Frame,0.5,0.0,1.0) --This will fade the creature viewer to the same level as the window. Not a bad thing imo
 		self.cvhiddenincombat = nil
 	end
 	--]]
@@ -3774,6 +3800,8 @@ end
 ZGV.CurrentMapID,ZGV.CurrentMapFloor = 0,0
 
 function ZGV:CacheCurrentMapID()
+	if not self.loading_screen_disabled then return end
+
 	local _,_,m,f=HBD:GetPlayerZonePosition(true)
 	if m and m~=0 and m~=13 and m~=14 and m~=-1 and m~=485 and m~=466 and m~=613 and m~=862 and m~=962      -- multi-zone, whole-continent maps
 	then
@@ -4120,7 +4148,7 @@ function ZGV:GetMostRecentGuide(gtype)
 
 end
 
-
+-- RETIRE AFTER NEW MENU
 function ZGV:GetGuidesHistory(gtype)
 	local unwrapped={}
 	for gi,guide_and_step in ipairs(self.db.char.guides_history) do
@@ -4138,11 +4166,11 @@ end
 function ZGV:OpenGuideMenu(path)
 	if self.Menu then 
 		if path=="HOME" and ZGV.CurrentGuide and not ZGV.CurrentGuideName:match("GOLD\\") and not ZGV.CurrentGuideName:match("PETSMOUNTS\\Pets") then
-			ZGV.Menu:Show()
-			ZGV.Menu:NavigateToGuide(ZGV.CurrentGuide)
+			ZGV.GuideMenu:Show()
+			ZGV.GuideMenu:Open("Current")
 			return
 		end
-		ZGV.Menu:Show(path)
+		ZGV.GuideMenu:Show(path)
 	end
 end
 

@@ -238,7 +238,7 @@ function PopupHandler:CreatePopup(name,skin)
 		:CanDrag(1)
 		:SetAlpha(ZGV.db.profile.opacitymain) --This only gets set once per popup. --TODO it should be able to change dynamically.
 		:SetPoint("TOP",0,-50)
-		:SetFrameStrata("HIGH")
+		:SetFrameStrata("DIALOG")
 		:Hide() -- Done before script is set. After self.private is not intialized yet.
 		:SetScript("OnShow", function(self)
 			self:AdjustSize()
@@ -301,7 +301,7 @@ function PopupHandler:CreatePopup(name,skin)
 		:SetScript("OnEnter",function(self) CHAIN(GameTooltip):SetOwner(popup,"ANCHOR_BOTTOM") :SetText(L['static_settings_tip']) :Show() end)
 		:SetScript("OnLeave",function(self) GameTooltip:Hide() end)
 	.__END
-	ZGV.AssignButtonTexture(popup.settings,(SkinData("TitleButtons")),5,32)
+	ZGV.F.AssignButtonTexture(popup.settings,(SkinData("TitleButtons")),5,32)
 
 	popup.text3checkbox = CHAIN(ui:Create("ToggleButton",popup,"Checkboxers"))
 		:SetPoint("BOTTOMLEFT",popup,"BOTTOMLEFT",13,30)
@@ -310,7 +310,7 @@ function PopupHandler:CreatePopup(name,skin)
 		:SetToggle(true)
 		--:SetScript("OnClick",function(me) me:Toggle(not me.curToggle) ZGV.GuideProto:prepareGuideToTurnInsOnly(ZGV.CurrentGuide.title) end) --Not needed in most popups, but is used in SIS
 	.__END
-	--ZGV.AssignButtonTexture(popup.text3checkbox,(SkinData("TitleButtons")),11,32)
+	--ZGV.F.AssignButtonTexture(popup.text3checkbox,(SkinData("TitleButtons")),11,32)
 
 	popup.minimize = CHAIN(CreateFrame("Button",nil,popup))
 			:SetPoint("TOPRIGHT",popup,"TOPRIGHT",-5,-5) :SetSize(15,15)
@@ -318,7 +318,7 @@ function PopupHandler:CreatePopup(name,skin)
 			:SetScript("OnEnter",function(self) CHAIN(GameTooltip):SetOwner(popup,"ANCHOR_BOTTOM") :SetText(L['static_minimize_tip']) :Show() end)
 			:SetScript("OnLeave",function(self) GameTooltip:Hide() end)
 	.__END
-	ZGV.AssignButtonTexture(popup.minimize,(SkinData("TitleButtons")),6,32)
+	ZGV.F.AssignButtonTexture(popup.minimize,(SkinData("TitleButtons")),6,32)
 
 	hooksecurefunc("StaticPopup_EscapePressed",function() popup.private:Escape(popup) end)
 

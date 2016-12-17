@@ -1,4 +1,4 @@
---[[ $Id: AceGUIWidget-DropDown.lua 1101 2013-10-25 12:46:47Z nevcairiel $ ]]--
+--[[ $Id: AceGUIWidget-DropDown.lua 1116 2014-10-12 08:15:46Z nevcairiel $ ]]--
 local AceGUI = LibStub("AceGUI-3.0")
 
 -- Lua APIs
@@ -39,7 +39,7 @@ end
 
 do
 	local widgetType = "Dropdown-Pullout"
-	local widgetVersion = 3
+	local widgetVersion = 1003
 	
 	--[[ Static data ]]--
 	
@@ -177,9 +177,21 @@ do
 		
 		item.frame:SetPoint("LEFT", self.itemFrame, "LEFT")
 		item.frame:SetPoint("RIGHT", self.itemFrame, "RIGHT")
-		
+
 		item:SetPullout(self)
 		item:SetOnEnter(OnEnter)
+
+		if item.SetFontObject then
+			item:SetFontObject(self.itemFontObject)
+		end
+	end
+
+	-- exported
+	local function SetItemFontObject(self, font)
+		for k,item in pairs(self.items) do
+			item:SetFontObject(font)
+			item:SetTextColor(font:GetTextColor())
+		end
 	end
 		
 	-- exported
@@ -282,6 +294,8 @@ do
 		self.SetMaxHeight = SetMaxHeight
 		self.GetRightBorderWidth = GetRightBorderWidth
 		self.GetLeftBorderWidth = GetLeftBorderWidth
+
+		self.SetItemFontObject = SetItemFontObject
 		
 		self.items = {}
 		
@@ -356,18 +370,26 @@ end
 
 do
 	local widgetType = "Dropdown"
-	local widgetVersion = 29
+	local widgetVersion = 1030
 	
 	--[[ Static data ]]--
 	
 	--[[ UI event handler ]]--
 	
 	local function Control_OnEnter(this)
-		this.obj.button:LockHighlight()
 		this.obj:Fire("OnEnter")
 	end
 	
 	local function Control_OnLeave(this)
+		this.obj:Fire("OnLeave")
+	end
+
+	local function Button_OnEnter(this)
+		this.obj.button:LockHighlight()
+		this.obj:Fire("OnEnter")
+	end
+	
+	local function Button_OnLeave(this)
 		this.obj.button:UnlockHighlight()
 		this.obj:Fire("OnLeave")
 	end
@@ -465,6 +487,8 @@ do
 		self:SetWidth(200)
 		self:SetLabel()
 		self:SetPulloutWidth(nil)
+		self:SetLabelFontObject()
+		self:SetValueFontObject()
 	end
 	
 	-- exported, AceGUI callback
@@ -494,10 +518,12 @@ do
 		if disabled then
 			self.text:SetTextColor(0.5,0.5,0.5)
 			self.button:Disable()
+			self.button_cover:Disable()
 			self.label:SetTextColor(0.5,0.5,0.5)
 		else
 			self.button:Enable()
-			self.label:SetTextColor(1,.82,0)
+			self.button_cover:Enable()
+			self.label:SetTextColor(self.label:GetFontObject():GetTextColor())
 			self.text:SetTextColor(1,1,1)
 		end
 	end
@@ -519,9 +545,9 @@ do
 		if text and text ~= "" then
 			self.label:SetText(text)
 			self.label:Show()
-			self.dropdown:SetPoint("TOPLEFT",self.frame,"TOPLEFT",-15,-14)
-			self:SetHeight(40)
-			self.alignoffset = 26
+			self.dropdown:SetPoint("TOPLEFT",self.frame,"TOPLEFT",-15,-19)
+			self:SetHeight(45)
+			self.alignoffset = 31
 		else
 			self.label:SetText("")
 			self.label:Hide()
@@ -576,6 +602,9 @@ do
 		item.userdata.obj = self
 		item.userdata.value = value
 		item:SetCallback("OnValueChanged", OnItemValueChanged)
+		if item.SetFontObject then
+			item:SetFontObject(self.itemFontObject)
+		end
 		self.pullout:AddItem(item)
 	end
 	
@@ -641,13 +670,32 @@ do
 	
 	local function SetPulloutWidth(self, width)
 		self.pulloutWidth = width
+		if not width then
+			self.dropdown:SetPoint("BOTTOMRIGHT",self.frame,"BOTTOMRIGHT",17,0)
+		else
+			self.dropdown:SetPoint("BOTTOMRIGHT",self.frame,"BOTTOMLEFT",width+17,0)
+		end
+	end
+	
+	local function SetLabelFontObject(self, font)
+		font = font or GameFontNormal
+		self.label:SetFontObject(font)
+		self.label:SetTextColor(font:GetTextColor())
+	end
+	
+	local function SetValueFontObject(self, font)
+		font = font or GameFontHighlightSmall
+		self.text:SetFontObject(font)
+		self.text:SetTextColor(font:GetTextColor())
+		self.pullout.itemFontObject = font
+		self.pullout:SetItemFontObject(font)
 	end
 	
 	--[[ Constructor ]]--
 	
 	local function Constructor()
 		local count = AceGUI:GetNextWidgetNum(widgetType)
-		local frame = CreateFrame("Frame", nil, UIParent)
+		local frame = CreateFrame("Frame", "AceGUI30DropDown"..count.."Frame", UIParent)
 		local dropdown = CreateFrame("Frame", "AceGUI30DropDown"..count, frame, "UIDropDownMenuTemplate")
 		
 		local self = {}
@@ -675,10 +723,16 @@ do
 		self.SetItemValue = SetItemValue
 		self.SetItemDisabled = SetItemDisabled
 		self.SetPulloutWidth = SetPulloutWidth
+
+		self.SetLabelFontObject = SetLabelFontObject
+		self.SetValueFontObject = SetValueFontObject
+
 		
 		self.alignoffset = 26
 		
 		frame:SetScript("OnHide",Dropdown_OnHide)
+		frame:SetScript("OnEnter",Control_OnEnter)
+		frame:SetScript("OnLeave",Control_OnLeave)
 
 		dropdown:ClearAllPoints()
 		dropdown:SetPoint("TOPLEFT",frame,"TOPLEFT",-15,0)
@@ -699,16 +753,17 @@ do
 		local button = _G[dropdown:GetName() .. "Button"]
 		self.button = button
 		button.obj = self
-		button:SetScript("OnEnter",Control_OnEnter)
-		button:SetScript("OnLeave",Control_OnLeave)
+		button:SetScript("OnEnter",Button_OnEnter)
+		button:SetScript("OnLeave",Button_OnLeave)
 		button:SetScript("OnClick",Dropdown_TogglePullout)
 		
 		local button_cover = CreateFrame("BUTTON",nil,self.frame)
+		self.button_cover = button_cover
 		button_cover.obj = self
 		button_cover:SetPoint("TOPLEFT",self.frame,"BOTTOMLEFT",0,25)
 		button_cover:SetPoint("BOTTOMRIGHT",self.frame,"BOTTOMRIGHT")
-		button_cover:SetScript("OnEnter",Control_OnEnter)
-		button_cover:SetScript("OnLeave",Control_OnLeave)
+		button_cover:SetScript("OnEnter",Button_OnEnter)
+		button_cover:SetScript("OnLeave",Button_OnLeave)
 		button_cover:SetScript("OnClick",Dropdown_TogglePullout)
 		
 		local text = _G[dropdown:GetName() .. "Text"]

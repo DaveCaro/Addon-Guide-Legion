@@ -913,7 +913,7 @@ local function CreateMainFrameText(self)
 		:RegisterForClicks("LeftButtonUp")
 		:SetScript("OnClick",function() parent:GetParent():Hide() ZGV.db.profile.petbattleframe=false end)
 	.__END
-	ZGV.AssignButtonTexture(parent.Close,ui.SkinData("TitleButtons"),6,32)
+	ZGV.F.AssignButtonTexture(parent.Close,ui.SkinData("TitleButtons"),6,32)
 
 	PetBattle:MakeFontStrings(parent,"Round","Round:",nil,175,70)
 
@@ -994,7 +994,7 @@ local function CreateEnemyFrameText(self)
 			 :RegisterForClicks("LeftButtonUp")
 			:SetScript("OnClick",function() parent:GetParent():Hide() ZGV.db.profile.petbattleframe=false end)
 	.__END
-	ZGV.AssignButtonTexture(parent.Close,ui.SkinData("TitleButtons"),6,32)
+	ZGV.F.AssignButtonTexture(parent.Close,ui.SkinData("TitleButtons"),6,32)
 
 	PetBattle:MakeFontStrings(parent,"Round","Round:",nil,175,70)
 
@@ -1049,7 +1049,7 @@ local function CreateAllyFrameText(self)
 			 :RegisterForClicks("LeftButtonUp")
 			:SetScript("OnClick",function() parent:GetParent():Hide() ZGV.db.profile.petbattleframe=false end)
 	.__END
-	ZGV.AssignButtonTexture(parent.Close,ui.SkinData("TitleButtons"),6,32)
+	ZGV.F.AssignButtonTexture(parent.Close,ui.SkinData("TitleButtons"),6,32)
 
 	PetBattle:MakeFontStrings(parent,"Round","Round:",nil,175,70)
 

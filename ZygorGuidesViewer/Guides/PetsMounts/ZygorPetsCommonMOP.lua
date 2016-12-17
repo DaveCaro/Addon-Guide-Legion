@@ -663,7 +663,7 @@ step
 label "end"
 You have reached the end of the guide.
 Please click here to return to the beginning of the guide. |confirm |next "menu"
-Become _Best Friends_ with Sho |rep ("Sho")==BestFriend |next
+Become _Best Friends_ with Sho |rep("Sho")==BestFriend |next
 step
 learnpet Red Cricket##63370 |use Red Cricket##85222
 modeldisplay 46385

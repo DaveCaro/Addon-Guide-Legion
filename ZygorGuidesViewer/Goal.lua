@@ -3215,6 +3215,10 @@ function Goal:OnClick(button)
 		end
 		--]]
 	end
+
+	if self.loadguide then
+		ZGV:SetGuide(self.loadguide,self.loadguidestep)
+	end
 	
 	--[[
 	-- This cost me 2h of sleep. Thanks to whoever wrote that. >:[  ~~sinus

@@ -250,7 +250,7 @@ local function ViewList_Create()
 		:Hide()
 	.__END
 
-	ZGV.AssignButtonTexture(VIEWLIST.SwitchRecentButton,ZGV.SkinDir.."titlebuttons",16,32)
+	ZGV.F.AssignButtonTexture(VIEWLIST.SwitchRecentButton,ZGV.SkinDir.."titlebuttons",16,32)
 
 	VIEWLIST.GuideTitle = CHAIN(VIEWLIST:CreateFontString())
 		:SetPoint("TOPLEFT",VIEWLIST,"TOPLEFT",300,-10) :SetPoint("TOPRIGHT",VIEWLIST,"TOPRIGHT",-15,-10)
@@ -261,7 +261,7 @@ local function ViewList_Create()
 	VIEWLIST.GuideScroll = CHAIN(ui:Create("ScrollChild",VIEWLIST,FR:GetName().."_ScrollChild"))
 		:SetPoint("TOPLEFT",VIEWLIST,300,-30)
 		:SetPoint("BOTTOMRIGHT",VIEWLIST,-15,30)
-		:SetHideWhenUnless(1)
+		:SetHideWhenUseless(1)
 	.__END
 
 	VIEWLIST.GuideData = CHAIN(VIEWLIST.GuideScroll.child:CreateFontString())
@@ -587,7 +587,7 @@ local function ViewList_Show(path,flatgroup)
 
 		s = s .. "\n"
 
-		s = s .. (Menu.selectedguide.description or "")
+		s = s .. (Menu.selectedguide.headerdata.description or "")
 
 		if g.macro then s = s.."\n\n"..L['guidepicker_macro_code'].."\n"..g.macro.body end
 
@@ -885,7 +885,7 @@ function Menu:CreateFrame()
 		:SetPoint("TOPRIGHT",FR,"TOPRIGHT",-5,-5) :SetSize(15,15)
 		:SetScript("OnClick",function() Menu:Hide() end)
 	.__END
-	ZGV.AssignButtonTexture(FR.CloseButton,ZGV.SkinDir.."titlebuttons",6,32)
+	ZGV.F.AssignButtonTexture(FR.CloseButton,ZGV.SkinDir.."titlebuttons",6,32)
 
 	FR.GuidesButton = CHAIN(CreateFrame("Button", "ZGV_Menu_Guides", FR)) :SetPoint("TOPLEFT",FR,"TOPLEFT",10,-10) :SetSize(80,40)
 		:SetScript("OnClick",function() Menu:NavigateTo() end)
@@ -927,7 +927,7 @@ function Menu:CreateFrame()
 		:SetSize(15,15)
 		:SetScript("OnClick",function() ZygorGuidesViewer:OpenOptions("display"); Menu:Hide() end)
 		.__END
-	ZGV.AssignButtonTexture(FR.SettingButton,ZGV.SkinDir.."titlebuttons",5,32)
+	ZGV.F.AssignButtonTexture(FR.SettingButton,ZGV.SkinDir.."titlebuttons",5,32)
 
 	-- SEARCH
 
@@ -947,7 +947,7 @@ function Menu:CreateFrame()
 		--:SetScript("OnClick",function() self:ClearSearch(true) end)
 		:SetText("O")
 	.__END
-	ZGV.AssignButtonTexture(FR.SearchResetButton,ZGV.SkinDir.."titlebuttons",6,32)
+	ZGV.F.AssignButtonTexture(FR.SearchResetButton,ZGV.SkinDir.."titlebuttons",6,32)
 	--]]
 	FR.SearchLabel = CHAIN(FR:CreateFontString())
 		:SetFont(FONTBOLD,13)
@@ -980,7 +980,7 @@ function Menu:CreateFrame()
 		:SetSize(14,14)
 		:SetScript("OnClick",function() Menu:NavigateBack() end)
 	.__END
-	ZGV.AssignButtonTexture(FR.BackButton,ZGV.SkinDir.."titlebuttons",9,32)
+	ZGV.F.AssignButtonTexture(FR.BackButton,ZGV.SkinDir.."titlebuttons",9,32)
 
 	--[[
 	FR.PathIcon = CHAIN(FR.GuidesBox:CreateTexture())

@@ -354,6 +354,10 @@ local ConditionEnv = {
 
 	-- independent data feeds
 	rep = function(faction)
+		if not faction then 
+			ZGV:Debug("&parser reputation missing")
+			return "Error, no faction given" 
+		end
 		if ZGV:GetReputation(faction).friendship then --dummy proof this.
 			return ZGV:GetReputation(faction).friendship
 		end
@@ -533,8 +537,6 @@ end
 Parser.MakeCondition=MakeCondition
 --local yield=coroutine.yield
 
-local ZGV_IS_BETA = ZGV.DIR:find("-BETA")
-
 --- parse ONE guide section into usable arrays.
 function Parser:ParseEntry(guide,fully_parse,lastparsed)
 	local text = guide.rawdata
@@ -575,8 +577,6 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 	--if text:find("goto The Exodar,44.9,24.2") then debug=true end
 
 	local last5lines = {}
-
-	if ZGV.db.profile.debug_beta then ZGV_IS_BETA=true end
 
 	local function parseerror(msg)
 		local chunk = ""
@@ -1172,6 +1172,14 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 							if params=="" then params="+1" end
 							goal.next=params
 
+						elseif cmd=="loadguide" then
+							params = params:gsub("^\"(.-)\"$","%1")
+							local guide,step = params:match("(.*)::(.*)")
+							if not step then guide=params end
+							guide = ZGV:SanitizeGuideTitle(guide)
+							goal.loadguide = params
+							goal.loadguidestep = tonumber(step) or step or 1
+
 						elseif cmd=="autoscript" then
 							goal.autoscript = params
 						elseif cmd=="n" then
@@ -1502,6 +1510,7 @@ function Parser:ParseHeader(guide)
 			if not header then header=params end
 
 			local group = ZGV:FindOrCreateGroup(ZGV.registered_groups,"SUGGESTED\\"..(folder or header)) or ZGV.registered_groups
+			group.category=header
 			local found
 			-- Make sure no duplicates show up
 			for i,g in ipairs(group.guides) do
@@ -1533,11 +1542,12 @@ function Parser:ParseHeader(guide)
 					ZGV.CreatureDetector:RegisterMountSpell(tonumber(id),guide) -- TODO mark duplicates
 				end
 			end)
-											--Checking for achievements to get the achievement number
+			
+			--Checking for achievements to get the achievement number
 			if params:find("achieved") then
 				if not guide.headerdata.achieveid then guide.headerdata.achieveid = {} end
-				tinsert(guide.headerdata.achieveid,params:match("%d+"),1)
-				guide.achieved=guide.headerdata.achieveid
+				tinsert(guide.headerdata.achieveid,tonumber(params:match("%d+")))
+				guide.achieved={[1]=tonumber(params:match("%d+"))}
 			end
 
 			guide['condition_'..case..'_raw']=params

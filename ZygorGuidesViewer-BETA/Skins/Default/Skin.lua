@@ -26,6 +26,7 @@ function Skin:CreateFrame()
 	assert(self.frame,"Skin "..self.name.." cannot create its frame!")
 
 	ZGV.Frame = self.frame
+	ZGV.Frame.stepframes = ZGV.stepframes  -- convenience
 
 	ZGV.Frame:Hide()
 
@@ -38,6 +39,10 @@ end
 
 local FONT = ZGV.Font
 
+local function set_alpha(new_a,r,g,b,a)
+	return r,g,b,new_a
+end
+
 function Skin:UpdateSkin()
 	local SKINDIR = ZGV.SkinDir
 	local function SkinData(property)
@@ -48,14 +53,14 @@ function Skin:UpdateSkin()
 
 	-- Setting up border
 	self.Border:SetBackdrop(SkinData("Backdrop"))
-	self.Border:SetBackdropColor(unpack(SkinData("BackdropColor")))
-	self.Border:SetBackdropBorderColor(unpack(SkinData("BackdropBorderColor")))
+	self.Border:SetBackdropColor(set_alpha(ZGV.db.profile.opacitymain,unpack(SkinData("BackdropColor"))))
+	self.Border:SetBackdropBorderColor(set_alpha(ZGV.db.profile.opacitymain,unpack(SkinData("BackdropBorderColor"))))
 	self.Border.TitleBar.Logo:SetTexture(SkinData("TitleLogo"))
 
 	-- Applying button textures
 	local count=32
 	local BUTTONTEXTURE = SkinData("TitleButtons")
-	local AssignButtonTexture = ZGV.AssignButtonTexture
+	local AssignButtonTexture = ZGV.F.AssignButtonTexture
 	AssignButtonTexture(ZygorGuidesViewerFrame_CloseButton,BUTTONTEXTURE,6,count)
 	AssignButtonTexture(ZygorGuidesViewerFrame_LockButton,BUTTONTEXTURE,4,count)
 	AssignButtonTexture(ZygorGuidesViewerFrame_HelpButton,BUTTONTEXTURE,1,count)
@@ -87,8 +92,8 @@ function Skin:UpdateSkin()
 	local a = CHAIN(ZygorGuidesViewerFrame_Border_Guides_GuideButton.blink:CreateAnimation("Alpha")) :SetToAlpha(1) :SetDuration(0.2) :SetScript("OnPlay",function(self) CHAIN(self:GetRegionParent()):SetAlpha(0):Show() end) .__END
 	CHAIN(ZygorGuidesViewerFrame_Border_Guides_GuideBack)
 		:SetBackdrop(SkinData("GuideBackdrop"))
-		:SetBackdropColor(unpack(SkinData("GuideBackdropColor")))
-		:SetBackdropBorderColor(unpack(SkinData("GuideBackdropBorderColor")))
+		:SetBackdropColor(set_alpha(ZGV.db.profile.opacitymain*ZGV.db.profile.opacitymain,unpack(SkinData("GuideBackdropColor"))))
+		:SetBackdropBorderColor(set_alpha(ZGV.db.profile.opacitymain*ZGV.db.profile.opacitymain,unpack(SkinData("GuideBackdropBorderColor"))))
 		:ClearAllPoints()
 		:SetPoint("TOPLEFT",ZygorGuidesViewerFrame_Border_Guides,"TOPLEFT",unpack(SkinData("GuideBackdropTopLeft")))
 		:SetPoint("BOTTOMRIGHT",ZygorGuidesViewerFrame_Border_Guides,"BOTTOMRIGHT",unpack(SkinData("GuideBackdropBottomRight")))
@@ -116,10 +121,10 @@ function Skin:UpdateSkin()
 	ZygorGuidesViewerFrame_ScrollScrollBarScrollDownButton:SetSize(unpack(SkinData("ScrollBarButtonSize")))
 
 
-	ZGV.SetNPHtx(ZygorGuidesViewerMapIcon,ZGV.DIR.."\\Skins\\zglogo")
+	ZGV.F.SetNPHtx(ZygorGuidesViewerMapIcon,ZGV.DIR.."\\Skins\\zglogo")
 	ZygorGuidesViewerMapIcon.back:SetTexture(ZGV.DIR.."\\Skins\\zglogo-back")
 
-	--ZGV.SetNPHtx(ZygorGuidesViewerFrame_Border_Guides_GuideButton,SKINDIR.."\\leavesofsteel_dropdown_up",SKINDIR.."\\leavesofsteel_dropdown_down",SKINDIR.."\\leavesofsteel_dropdown_hi")
+	--ZGV.F.SetNPHtx(ZygorGuidesViewerFrame_Border_Guides_GuideButton,SKINDIR.."\\leavesofsteel_dropdown_up",SKINDIR.."\\leavesofsteel_dropdown_down",SKINDIR.."\\leavesofsteel_dropdown_hi")
 
 	--ZygorGuidesViewerFrame_Border_Top:SetTexture(SKINDIR.."\\leavesofsteel_top")
 
@@ -136,8 +141,8 @@ function Skin:UpdateSkin()
 
 		-- The step itself
 		step:SetBackdrop(SkinData("StepBackdrop"))
-		step:SetBackdropColor(unpack(SkinData("StepBackdropColor")))
-		step:SetBackdropBorderColor(unpack(SkinData("StepBackdropBorderColor")))
+		step:SetBackdropColor(set_alpha(ZGV.db.profile.opacitymain*ZGV.db.profile.opacitymain,unpack(SkinData("StepBackdropColor"))))
+		step:SetBackdropBorderColor(set_alpha(ZGV.db.profile.opacitymain*ZGV.db.profile.opacitymain,unpack(SkinData("StepBackdropBorderColor"))))
 		step.border:SetBackdrop(SkinData("StepBorderBackdrop"))
 
 		-- Lines/goals
@@ -147,8 +152,8 @@ function Skin:UpdateSkin()
 			local clicker = line.clicker
 			clicker:SetBackdrop(SkinData("StepLineClickerBackdrop"))
 			back:SetBackdrop(SkinData("StepLineBackBackdrop"))
-			back:SetBackdropColor(unpack(SkinData("StepLineBackBackdropColor")))
-			back:SetBackdropBorderColor(unpack(SkinData("StepLineBackBackdropBorderColor")))
+			back:SetBackdropColor(set_alpha(ZGV.db.profile.opacitymain*ZGV.db.profile.opacitymain,unpack(SkinData("StepLineBackBackdropColor"))))
+			back:SetBackdropBorderColor(set_alpha(ZGV.db.profile.opacitymain*ZGV.db.profile.opacitymain,unpack(SkinData("StepLineBackBackdropBorderColor"))))
 			line.icon:SetTexture(SkinData("StepLineIcons"))
 			line.icon:SetSize(SkinData("StepLineIconSize"),SkinData("StepLineIconSize"))
 		end
@@ -156,7 +161,7 @@ function Skin:UpdateSkin()
 
 	ZygorGuidesViewer_ProgressBar_Texture:SetColorTexture(unpack(SkinData("ProgressBarTexture")))
 	ZygorGuidesViewer_ProgressBar:SetBackdrop(SkinData("ProgressBarBackdrop"))
-	ZygorGuidesViewer_ProgressBar:SetBackdropColor(unpack(SkinData("ProgressBarBackdropColor")))
+	ZygorGuidesViewer_ProgressBar:SetBackdropColor(set_alpha(ZGV.db.profile.opacitymain*ZGV.db.profile.opacitymain,unpack(SkinData("ProgressBarBackdropColor"))))
 	ZygorGuidesViewer_ProgressBar:SetBackdropBorderColor(unpack(SkinData("ProgressBarBackdropBorderColor")))
 	ZygorGuidesViewer_ProgressBar_Texture:SetHeight(SkinData("ProgressBarTextureHeight"))
 	ZygorGuidesViewer_ProgressBar_Texture:SetPoint("LEFT",ZygorGuidesViewer_ProgressBar,"LEFT",SkinData("ProgressBarInset"),0)
@@ -207,9 +212,9 @@ function Skin:UpdateLocking()
 	-- lock button
 	local lockbut = ZygorGuidesViewerFrame_LockButton
 	if ZGV.db.profile["windowlocked"] then
-		ZGV.AssignButtonTexture(ZygorGuidesViewerFrame_LockButton,BUTTONTEXTURE,4,32)
+		ZGV.F.AssignButtonTexture(ZygorGuidesViewerFrame_LockButton,BUTTONTEXTURE,4,32)
 	else
-		ZGV.AssignButtonTexture(ZygorGuidesViewerFrame_LockButton,BUTTONTEXTURE,3,32)
+		ZGV.F.AssignButtonTexture(ZygorGuidesViewerFrame_LockButton,BUTTONTEXTURE,3,32)
 	end
 end
 
@@ -256,7 +261,6 @@ function Skin:AlignFrame()
 	if self.temp_aligncounter==1 then a=1/nil end
 	--]]
 
-	frame:SetAlpha(ZGV.db.profile.opacitymain)
 	--[[
 	if ZGV.CV.Frame then
 		ZGV.CV.Frame:SetAlpha(ZGV.db.profile.opacitymain)

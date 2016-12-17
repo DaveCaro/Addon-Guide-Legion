@@ -2621,19 +2621,21 @@ ZygorGuidesViewer:RegisterInclude("Feast of Winter Veil Quests",[[
 ]])
 ZygorGuidesViewer:RegisterInclude("Feast of Winter Veil Achievements",[[
 		Kiss a Winter Reveler every hour |goto Ironforge 19.9,53.8 |script DoEmote("KISS") 
-		collect 10 Handful of Snowflakes##34191 |n
-		collect 8 Mistletoe##21519 |n
-		collect 1 Fresh Holly##21212 |n
+		collect 10 Handful of Snowflakes##34191 |condition itemcount(34191) >= 10 |n
+		collect 8 Mistletoe##21519 |condition itemcount(21519) >= 8 |n
+		collect 1 Fresh Holly##21212 |condition itemcount(21212) >= 1 |n
 		|tip You can only use this once per hour. The items you get are random.
 		Once you've collected these items, click here to proceed |confirm
 		modelnpc 15760
 	step
 		talk Wulmort Jinglepocket##13433
-		buy 1 Recipe: Hot Apple Cider##34413 |n
-		buy 1 Recipe: Egg Nog##17201 |n
-		learn Recipe: Hot Apple Cider##45022 |goto Ironforge 33.7,67.3 |use Recipe: Hot Apple Cider##34413
+		buy 1 Recipe: Hot Apple Cider##34413 |condition itemcount(34413) >= 1 |n |goto Ironforge 33.7,67.3
+		buy 1 Recipe: Egg Nog##17201 |condition itemcount(17201) >= 1 |n |goto Ironforge 33.7,67.3
+		Click the Apple Cider recipe in your bags |use Recipe: Hot Apple Cider##34413
+		learn Recipe: Hot Apple Cider##45022 
 		|tip Hot Apple Cider requires a cooking level of 325 to learn.
-		learn Recipe: Egg Nog##21144 |goto Ironforge,33.7,67.3 |use Recipe: Egg Nog##17201
+		Click the Egg Nog recipe in your bags |use Recipe: Egg Nog##17201
+		learn Recipe: Egg Nog##21144 
 	step
 		#include "auctioneer_ironforge"
 		buy 1 Small Egg##6889 |condition itemcount(6889) >= 1
@@ -2642,7 +2644,7 @@ ZygorGuidesViewer:RegisterInclude("Feast of Winter Veil Achievements",[[
 	step
 	label "farm"
 		kill Young Fleshripper##199+, Greater Fleshripper##154+
-		collect 1 Small Egg##6889 |goto Westfall 50.8,24.4
+		collect 1 Small Egg##6889 |condition itemcount(6889) >= 1 |goto Westfall 50.8,24.4
 	step
 	label "eggsdone"
 		talk Wulmort Jinglepocket##13433
@@ -2801,9 +2803,9 @@ ZygorGuidesViewer:RegisterInclude("Feast of Winter Veil Achievements",[[
 		Earn 50 honorable kills as a Little Helper from the Winter Wondervolt machine |goto Dun Morogh 60.3,33.9 |achieve 252
 	step
 		Make sure you have the following in your bags:
-		collect 10 Handful of Snowflakes##34191
-		collect 8 Mistletoe##21519
-		collect Preserved Holly##21213
+		collect 10 Handful of Snowflakes##34191 |condition itemcount(34191) >= 10 |n
+		collect 8 Mistletoe##21519 |condition itemcount(21519) >= 8 |n
+		collect 1 Fresh Holly##21212 |condition itemcount(21212) >= 1 |n
 		You can get more of these items by using /kiss on Winter Revelers once an hour at |goto Ironforge 19.9,53.8
 		confirm
 	step
@@ -2964,19 +2966,15 @@ ZygorGuidesViewer:RegisterInclude("Feast of Winter Veil Achievements",[[
 		buy 1 Red Rider Air Rifle Ammo##48601 |condition itemcount(48601) >= 1 |goto Stormwind City 64.8,61.7
 		|tip He pats around the inner section of Stormwind.
 	step
-		Use your Red Rider Air Rifle on Vol'jin |use Red Rider Air Rifle##46725 |achieve 4436/1 |goto Orgrimmar/1 48.4,71.3
-		|tip This is a horde leader located in the horde city Orgimmar, be careful when completing this achievement.
-		modelnpc 86832
-	step
-		Use your Red Rider Air Rifle on Baine Bloodhoof |use Red Rider Air Rifle##46725 |achieve 4436/4 |goto Thunder Bluff 58.8,51.7
+		Use your Red Rider Air Rifle on Baine Bloodhoof |use Red Rider Air Rifle##46725 |achieve 4436/1 |goto Thunder Bluff 58.8,51.7
 		|tip This is a horde leader located in the horde city Thunderbluff, be careful when completing this achievement.
 		modelnpc 36648
 	step
-		Use your Red Rider Air Rifle on Lor'themar Theron |use Red Rider Air Rifle##46725 |achieve 4436/2 |goto Silvermoon City/0 54.5,21.1
+		Use your Red Rider Air Rifle on Lor'themar Theron |use Red Rider Air Rifle##46725 |achieve 4436/3 |goto Silvermoon City/0 54.5,21.1
 		|tip This is a horde leader located in the horde city Silvermoon, be careful when completing this achievement.
 		modelnpc 16802
 	step
-		Use your Red Rider Air Rifle on Lady Sylvanas Windrunner |use Red Rider Air Rifle##46725 |achieve 4436/3 |goto Undercity 56.4,91.1
+		Use your Red Rider Air Rifle on Lady Sylvanas Windrunner |use Red Rider Air Rifle##46725 |achieve 4436/2 |goto Undercity 56.4,91.1
 		|tip This is a horde leader located in the horde city Undercity, be careful when completing this achievement.
 		modelnpc 10181
 	step

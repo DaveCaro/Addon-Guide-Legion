@@ -582,7 +582,7 @@ step
 talk Fo Fook##60675
 turnin Piranha!##30763 |goto 67.2,41.2
 turnin Viseclaw Soup##30701 |goto 67.2,41.2
-next "DStart" |only if rep("The Anglers")<=Honoroed
+next "DStart" |only if rep("The Anglers")<=Honored
 next |only if default |only if rep("The Anglers")<=Honored
 step
 talk Nat Pagle##63721

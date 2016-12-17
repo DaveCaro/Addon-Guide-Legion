@@ -473,7 +473,7 @@ function Tutorial:CreateFrame()
 		:SetScript("OnClick",function() Tutorial:Close() end) :RegisterForClicks("LeftButtonUp")
 	.__END
 
-	ZGV.AssignButtonTexture(F.Close,SkinData("TitleButtons"),6,32)
+	ZGV.F.AssignButtonTexture(F.Close,SkinData("TitleButtons"),6,32)
 end
 
 function Tutorial:GetDimensions(ZGVF)

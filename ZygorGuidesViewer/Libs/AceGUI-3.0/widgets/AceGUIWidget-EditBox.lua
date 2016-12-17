@@ -1,7 +1,7 @@
 --[[-----------------------------------------------------------------------------
 EditBox Widget
 -------------------------------------------------------------------------------]]
-local Type, Version = "EditBox", 25
+local Type, Version = "EditBox", 1026
 local AceGUI = LibStub and LibStub("AceGUI-3.0", true)
 if not AceGUI or (AceGUI:GetWidgetVersion(Type) or 0) >= Version then return end
 
@@ -39,11 +39,13 @@ end
 local function ShowButton(self)
 	if not self.disablebutton then
 		self.button:Show()
+		if self.buttonStatic then return end
 		self.editbox:SetTextInsets(0, 20, 3, 3)
 	end
 end
 
 local function HideButton(self)
+	if self.buttonStatic then return end
 	self.button:Hide()
 	self.editbox:SetTextInsets(0, 0, 3, 3)
 end
@@ -132,6 +134,14 @@ local methods = {
 		self:SetText()
 		self:DisableButton(false)
 		self:SetMaxLetters(0)
+		self:SetLabelFontObject()
+		self:SetEditFontObject()
+		self:SetButtonNormalFontObject()
+		self:SetButtonHighlightFontObject()
+		self:SetButtonText()
+		self:SetButtonWidth()
+		self:SetButtonStatic()
+		HideButton(self)
 	end,
 
 	["OnRelease"] = function(self)
@@ -200,7 +210,52 @@ local methods = {
 		if not self.frame:IsShown() then
 			self.frame:SetScript("OnShow", Frame_OnShowFocus)
 		end
-	end
+	end,
+
+	["HighlightText"] = function(self, from, to)
+		self.editbox:HighlightText(from, to)
+	end,
+
+	["SetLabelFontObject"] = function(self, font)
+		self.label:SetFontObject(font or GameFontNormalSmall)
+	end,
+
+	["SetEditFontObject"] = function(self, font)
+		self.editbox:SetFontObject(font or ChatFontNormal)
+	end,
+
+	["SetButtonNormalFontObject"] = function(self, font)
+		self.button:SetNormalFontObject(font or ChatFontNormal)
+	end,
+
+	["SetButtonHighlightFontObject"] = function(self, font)
+		self.button:SetHighlightFontObject(font or ChatFontNormal)
+	end,
+
+	["SetButtonText"] = function(self, text)
+		self.button:SetText(text or "Accept")
+	end,
+
+	["SetButtonWidth"] = function(self, width)
+		self.button:SetWidth(width or 40)
+	end,
+	["SetButtonHeight"] = function(self, height)
+		self.button:SetHeight(height or 20)
+	end,
+
+	["SetButtonStatic"] = function(self, value)
+		self.buttonStatic = value
+		if value then 
+			self.button:ClearAllPoints()
+			self.button:SetPoint("TOPLEFT", self.editbox, "BOTTOMLEFT", -7, 0)
+			self.button:SetPoint("TOPRIGHT", self.editbox, "BOTTOMRIGHT", 0, 0)
+			self.button:Show()
+		else
+			self.button:ClearAllPoints()
+			self.button:SetPoint("RIGHT", -2, 0)
+			self.button:Hide()
+		end
+	end,
 }
 
 --[[-----------------------------------------------------------------------------

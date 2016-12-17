@@ -3,6 +3,8 @@ if not ZGV then return end
 
 local tinsert,twipe,tsort=tinsert,table.wipe,table.sort
 
+ZGV.F = {}
+
 function ZGV.TableKeys (tab)
 	local t={},k,v
 	for k,v in pairs(tab) do table.insert(t,k) end
@@ -86,23 +88,27 @@ end
 
 -- Ported from Skins.lua
 -- set textures in a button that has its normal/pushed/hilite textures named ntx,ptx,htx  - this was more useful some time ago...
-function ZGV.SetNPHtx(but,n,p,h)
+function ZGV.F.SetNPHtx(but,n,p,h)
 	assert(but,"How am I to set textures in a nil!?")
 	but.ntx:SetTexture(n)
 	but.ptx:SetTexture(p or n)
 	but.htx:SetTexture(h or n)
 end
 
-function ZGV.BetterTexCoord(obj,x,w,y,h)
+-- set sprite from texture:
+-- SetSpriteTexCoord(textureobject,2,4,3,8) -- sets texture coords on textureobject to crop to sprite in the 2nd of 4 columns, 1st of 8 rows.
+-- SetSpriteTexCoord(textureobject,10,4,8) -- to crop to 11th sprite in a 4x8 setup, counting left to right, top to bottom. Equivalent to the above.
+function ZGV.F.SetSpriteTexCoord(obj,x,w,y,h)
+	if not h then  x,w,y,h=(x or 0),w,nil,y  y=math.floor(x/w)+1  x=(x%w)+1  end
 	obj:SetTexCoord((x-1)/w,x/w,(y-1)/h,y/h)
 end
 
 local function CreateTexWithCoordsNum(obj,tx,x,w,y,h,flip)
-	--return CreateTextureWithCoords(obj,tx,(x-1)/w,x/w-(w/h)*0.0004,(y-1)/h,y/h-(w/h)*0.0004,blend,flip) ~~ Why is there -(w/h)*0.0004? It just clips icons strangely. ~~ Jeremiah  
 	return CreateTextureWithCoords(obj,tx,(x-1)/w,x/w,(y-1)/h,y/h,blend,flip)
 end
 
-function ZGV.AssignButtonTexture(obj,tx,num,total,flip)
+-- Assign four button sprites from an Nx4 texture, arranged in N columns of 4 rows of button states, left to right.
+function ZGV.F.AssignButtonTexture(obj,tx,num,total,flip)
 	ZGV.ChainCall(obj):SetNormalTexture(CreateTexWithCoordsNum(obj,tx,num,total,1,4,flip))
 		:SetPushedTexture(CreateTexWithCoordsNum(obj,tx,num,total,2,4,flip))
 		:SetHighlightTexture(CreateTexWithCoordsNum(obj,tx,num,total,3,4,flip))
@@ -219,12 +225,16 @@ function ZGV:IsPlayerInCombat()
 	return self.db.profile.fakecombat or UnitAffectingCombat("player")
 end
 
-function ZGV.FormatLevel(l)
+function ZGV.FormatLevel(l,mono)
 	local int = math.floor(l)
 	local frac = l-int
 	frac=math.round(frac*20)
 	if frac>0 then
-		return ("%d |cffbbbbbb(+%d bars)|r"):format(int,frac)
+		if mono then
+			return ("%d (+%d bars)|r"):format(int,frac)
+		else
+			return ("%d |cffbbbbbb(+%d bars)|r"):format(int,frac)
+		end
 		--return ("%d |cffbbbbbb+%d|r|T"..ZGV.DIR.."\\Skins\\levelbar:8:16|t"):format(int,frac)
 	else
 		return tostring(int)
@@ -252,7 +262,7 @@ end
 
 -- HAR HAR we can into hexaccurate colors não
 -- at least we're as precise as WoW lua allows us to
-function ZGV.HTMLColor(code)
+function ZGV.F.HTMLColor(code)
 	assert(code:match("#[0-9A-Fa-f]+$") and (#code==7 or #code==9),"Bogus code given: \""..code.."\")")
 	local r,g,b,a=tonumber("0x"..code:sub(2,3))/0xff,
 				  tonumber("0x"..code:sub(4,5))/0xff,
@@ -1345,6 +1355,10 @@ function ZGV.MinimizeStack(stack)
 		stack = stack:gsub(truncated,"[ZGV]")
 	end
 	return stack
+end
+
+function ZGV.F.SetVisible(f,isvisible)
+	if isvisible then f:Show() else f:Hide() end
 end
 
 

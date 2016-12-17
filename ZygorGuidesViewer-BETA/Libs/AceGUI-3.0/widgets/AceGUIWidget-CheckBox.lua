@@ -1,7 +1,7 @@
 --[[-----------------------------------------------------------------------------
 Checkbox Widget
 -------------------------------------------------------------------------------]]
-local Type, Version = "CheckBox", 23  -- sinus@zygor
+local Type, Version = "CheckBox", 1022  -- sinus@zygor
 local AceGUI = LibStub and LibStub("AceGUI-3.0", true)
 if not AceGUI or (AceGUI:GetWidgetVersion(Type) or 0) >= Version then return end
 
@@ -83,6 +83,7 @@ local methods = {
 		self:SetImage()
 		self:SetDisabled(nil)
 		self:SetDescription(nil)
+		self:SetFontObject(GameFontHighlight)  -- NO. Setting it once again in the same frame would fail. WTF Blizz...
 	end,
 
 	-- ["OnRelease"] = nil,
@@ -227,6 +228,7 @@ local methods = {
 			self.desc:Show()
 			--self.text:SetFontObject(GameFontNormal)
 			self.desc:SetText(desc)
+			self:SetDescriptionFont(self.descFont,self.descFontSize)
 			self:SetHeight(28 + self.desc:GetHeight())
 		else
 			if self.desc then
@@ -251,14 +253,26 @@ local methods = {
 			end
 		end
 		AlignImage(self)
-	end
+	end,
+
+	["SetFontObject"] = function(self, font)
+		font = font or GameFontNormal
+		self.text:SetFontObject(font)
+		self.text:SetTextColor(font:GetTextColor())
+	end,
+
+	["SetDescriptionFontObject"] = function(self, font)
+		if not self.desc then return end
+		self.desc:SetFontObject(font)
+		self.desc:SetTextColor(font:GetTextColor())
+	end,
 }
 
 --[[-----------------------------------------------------------------------------
 Constructor
 -------------------------------------------------------------------------------]]
 local function Constructor()
-	local frame = CreateFrame("Button", nil, UIParent)
+	local frame = CreateFrame("Button", "AceGUI30CheckBox" .. AceGUI:GetNextWidgetNum(Type), UIParent)
 	frame:Hide()
 
 	frame:EnableMouse(true)

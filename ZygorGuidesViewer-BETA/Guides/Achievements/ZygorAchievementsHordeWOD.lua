@@ -2580,6 +2580,22 @@ Temple of Sha'naar |achieve 10075/7
 step
 Congratulations, you earned the _Draenor's Last Stand_ achievement!
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quests\\The Loremaster\\Loremaster of Draenor",{
+condition_end="achieved(9923)",
+description="Complete all the storyline achievements in all the zones of the game.",
+},[[
+step
+Use the Draenor Leveling Guides to complete Loremaster:
+|tip The Leveling guides cover all required questlines for Loremaster.
+|tip Click one of the lines below to load the Leveling guide for that zone.
+Frostfire Ridge Quests |achieve 8671 |loadguide "Zygor's Horde Leveling Guides\\Draenor (90-100)\\Frostfire Ridge (90-92)"
+Gorgrond Quests |achieve 8924 |loadguide "Zygor's Horde Leveling Guides\\Draenor (90-100)\\Gorgrond (92-94)"
+Talador Quests |achieve 8919 |loadguide "Zygor's Horde Leveling Guides\\Draenor (90-100)\\Talador (94-96)"
+Spires of Arak Quests |achieve 8926 |loadguide "Zygor's Horde Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-98)"
+Nagrand Quests |achieve 8928 |loadguide "Zygor's Horde Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)"
+step
+Congratulations, you have _earned_ the _Loremaster of Draenor_ achievement!
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Draenor\\Reputation Achievements\\Arakkoa Outcasts",{
 condition_end="achieved(9469)",
 description="Earn Exalted status with the Arakkoa Outcasts.",

@@ -853,6 +853,17 @@ label "Llothien_Prowlers"
 kill 10 Llothien Prowler##90313+ |q 42123/1 |goto 54.52,29.01
 |next "Court_Of_Farondis_WQ"
 step
+label quest-42063
+Follow the path |goto Azsuna/0 63.38,30.69 < 25 |only if walking
+Follow the path |goto 63.84,34.56 < 25 |only if walking
+Follow the path down |goto 65.17,37.86 < 15 |only if walking
+accept Size Doesn't Matter##42063 |goto 65.63,41.01
+|tip You will accept this quest automatically.
+step
+click Blottis##105898
+Defeat Blottis |q 42063/1 |goto 65.63,41.01
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41259
 Follow the path |goto Azsuna/0 43.63,42.24 < 30 |only if walking
 Follow the path |goto 39.92,37.45 < 30 |only if walking
@@ -899,6 +910,36 @@ step
 kill Equine Sunrunner##91308+
 |tip Loot and skin them.
 collect 8 Smooth Sunrunner Hide##137628 |q 41582/1 |goto Azsuna/0 60.66,24.83
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44847
+Follow the path |goto Azsuna/0 63.42,25.55 < 25 |only if walking
+Follow the path |goto 61.28,21.90 < 25 |only if walking
+Follow the path |goto 58.67,19.20 < 25 |only if walking
+accept Straight From the Source##44847 |goto 58.32,14.33
+|tip You will accept this quest automatically.
+stickystart "Overseer"
+step
+Go around the wall |goto 58.32,14.33 < 10 |only if walking
+Disable eastern Mana Pylon |q 44847/5 |goto 57.90,14.84
+|tip Use the special action button that appears on your screen.
+step
+Go up the steps |goto 57.62,15.48 < 20 |only if walking
+Go up the rocks |goto 56.82,16.80 < 20 |only if walking
+Go down the steps |goto 55.67,15.75 < 20  |only if walking
+Disable southern Mana Pylon |q 44847/2 |goto 56.56,15.46
+|tip Use the special action button that appears on your screen.
+step
+Disable central Mana Pylon |q 44847/3 |goto 55.89,14.16
+|tip Use the special action button that appears on your screen.
+step
+Follow the path |goto 55.98,12.99 < 20 |only if walking
+Disable northwestern Mana Pylon |q 44847/4 |goto 56.30,11.92
+|tip Use the special action button that appears on your screen.
+step
+label "Overseer"
+kill Nightfallen Overseer##90616 |q 44847/1 |goto 55.69,14.16
+|tip These can be difficult to find on busy days. Search around this area for them.
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41288

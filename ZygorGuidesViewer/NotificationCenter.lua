@@ -190,7 +190,7 @@ function Notification.AddButton(id, title, text, texture, texcoords, onClick, to
 		
 		local count=32
 		local BUTTONTEXTURE = SkinData("TitleButtons")
-		ZGV.AssignButtonTexture(button.arrowButton,BUTTONTEXTURE,11,count)
+		ZGV.F.AssignButtonTexture(button.arrowButton,BUTTONTEXTURE,11,count)
 
 		button.frame = frame
 		button.texcoords = texcoords

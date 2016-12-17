@@ -108,10 +108,10 @@ function DropDown:New(parent,style,frameLevel)
 		:SetPoint("TOPRIGHT",dropdownFrame,"TOPRIGHT")
 	
 	if style == 1 then
-		ZGV.AssignButtonTexture(dropdownButton,SkinData("TitleButtons"),11,32)
+		ZGV.F.AssignButtonTexture(dropdownButton,SkinData("TitleButtons"),11,32)
 	elseif style == 2 then
 		-- Gets a texture then a gray backdrop
-		ZGV.AssignButtonTexture(dropdownButton,SkinData("TitleButtons"),19,32)
+		ZGV.F.AssignButtonTexture(dropdownButton,SkinData("TitleButtons"),19,32)
 
 		CHAIN(dropdownButton)
 			:SetBackdrop(SkinData("DropDownButtonBackdrop2"))

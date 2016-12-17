@@ -594,7 +594,7 @@ local function getItemButton(name,parent)
 				end
 			end)
 		.__END
-		ZGV.AssignButtonTexture(but.Dungeon,ZGV.SkinDir.."titlebuttons",11,32)
+		ZGV.F.AssignButtonTexture(but.Dungeon,ZGV.SkinDir.."titlebuttons",11,32)
 
 	-- Item Label
 		but.Label = CHAIN(CreateFrame("Frame",name.."Label",but))
@@ -744,7 +744,7 @@ local function SetUp_ZygorGearFinderFrame()
 			:SetSize(15,15)
 			:SetScript("OnClick",function() ZGV:OpenOptions("gear") end)
 		.__END
-		ZGV.AssignButtonTexture(gearFrame.overlaySettingsButton ,(SkinData("TitleButtons")),5,32)
+		ZGV.F.AssignButtonTexture(gearFrame.overlaySettingsButton ,(SkinData("TitleButtons")),5,32)
 		gearFrame.overlayIcon = CHAIN(CreateFrame("Button", nil , gearFrame.overlay))
 			:SetSize(64,64)
 			:SetPoint("CENTER")
@@ -787,7 +787,7 @@ local function SetUp_ZygorGearFinderFrame()
 		:SetSize(15,15)
 		:SetScript("OnClick",function() ZGV:OpenOptions("gear") end)
 	.__END
-	ZGV.AssignButtonTexture(gearFrame.SettingsButton ,(SkinData("TitleButtons")),5,32)
+	ZGV.F.AssignButtonTexture(gearFrame.SettingsButton ,(SkinData("TitleButtons")),5,32)
 
 	local bestdungbutton = getItemButton("ZygorGearFinderFrame_BestDungeon",gearFrame.ScrollChild)
 	bestdungbutton:SetPoint("TOPLEFT",gearFrame.ScrollChild,"TOPLEFT",0,-gearFrame.Header:GetHeight()-5)

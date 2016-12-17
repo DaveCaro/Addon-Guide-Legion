@@ -3186,6 +3186,22 @@ kill 10 Darkwing Adolescents##85357 |achieve 9481 |goto Shadowmoon Valley D 57.6
 step
 Congratulations, you have _earned_ the You Have Been Rylakinated! Achievement!
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Quests\\The Loremaster\\Loremaster of Draenor",{
+condition_end="achieved(9833)",
+description="Complete all the storyline achievements in all the zones of the game.",
+},[[
+step
+Use the Draenor Leveling Guides to complete Loremaster:
+|tip The Leveling guides cover all required questlines for Loremaster.
+|tip Click one of the lines below to load the Leveling guide for that zone.
+Shadowmoon Valley Quests |achieve 8845 |loadguide "Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Shadowmoon Valley (90-92)"
+Gorgrond Quests |achieve 8923 |loadguide "Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Gorgrond (92-94)"
+Talador Quests |achieve 8920 |loadguide "Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Talador (94-96)"
+Spires of Arak Quests |achieve 8925 |loadguide "Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-98)"
+Nagrand Quests |achieve 8927 |loadguide "Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)"
+step
+Congratulations, you have _earned_ the _Loremaster of Draenor_ achievement!
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Exploration\\Draenor\\Draenor Pathfinder",{
 condition_end="achieved(10018)",
 description="This guide will walk you through completing the Draenor Pathfinder Achievement.",

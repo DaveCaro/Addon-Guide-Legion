@@ -62,8 +62,23 @@ function Button:New(parent,name,style)
 		:SetText(" ") -- Creates the fontstring for a button. Can't be nil or ""
 		:RegisterForClicks("LeftButtonUp")
 		-- No Highlight texture because it looks funny with text on the button.
-		:SetScript("OnEnter",function(self) self:SetBackdropColor(unpack(self.bdhcolor or SkinData(buttonHighlightColor))) end)
-		:SetScript("OnLeave",function(self) self:SetBackdropColor(unpack(self.bdcolor or SkinData(buttonBackdropColor))) end)
+		:EnableMouse(true)
+		:SetScript("OnEnter",function(self)
+			self:SetBackdropColor(unpack(self.bdhcolor or SkinData(buttonHighlightColor)))
+			if self.tooltip then
+				GameTooltip:SetOwner(self,"ANCHOR_BOTTOMLEFT")
+				GameTooltip:ClearAllPoints()
+				GameTooltip:ClearLines()
+				GameTooltip:SetText(type(self.tooltip)=="function" and self.tooltip(self) or self.tooltip)
+				GameTooltip:Show()
+				GameTooltip:SetWidth(300)
+				GameTooltip:Show()
+			end
+		end)
+		:SetScript("OnLeave",function(self)
+			self:SetBackdropColor(unpack(self.bdcolor or SkinData(buttonBackdropColor)))
+			if self.tooltip then GameTooltip:Hide() end
+		end)
 	.__END
 
 	if buttonBackdropEdgeColor then button:SetBackdropBorderColor(unpack(SkinData(buttonBackdropEdgeColor))) end
@@ -107,6 +122,9 @@ function Button:SetHighlightBackdropColor(r,g,b,a)
 	self.bdhcolor[4] = a
 end
 
+function Button:SetTooltip(tooltip)
+	self.tooltip=tooltip
+end
 
 
 -- This can be used to make the button just big enough to hold the text. Updates the button size on text change.

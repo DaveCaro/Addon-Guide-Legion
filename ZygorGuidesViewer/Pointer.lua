@@ -950,8 +950,8 @@ end
 function markerproto:UpdateMiniMapIcon(m,f)
 	if not m then m,f=GetCurrentMapAreaID(),GetCurrentMapDungeonLevel() end
 	m = zone_aliases[m] or m
-	if ZGV.db.profile.minicons
-	and not self.hidden
+
+	if not self.hidden
 	--and not (GetInstanceInfo()==BZL["Deeprun Tram"])
 	and
 	(
@@ -1367,10 +1367,12 @@ function Pointer.frame_minimap_functions.OnUpdate(self,elapsed)
 	self.minimap_count = 0
 
 	--if GetInstanceInfo()==BZL['Deeprun Tram']
+	--[[
 	if not ZGV.db.profile.minicons
 	then -- We're in a mapless place. Tough luck.
 		self.icon:Hide() self.arrow:Hide() return
 	end
+	--]]
 
 	local dist,x,y = HBDPins:GetDistanceToIcon(self)  -- ADDED by our own HBDragons.lua
 	if not dist --[[or IsInInstance()--]] then self.icon:Hide() self.arrow:Hide() return end
@@ -2566,7 +2568,7 @@ function Pointer.ArrowFrame_ShowMenu()
 				tooltipText = L['pointer_arrowmenu_route_enable_desc'],
 				tooltipOnButton=1,
 				--checked = function() return ZGV.db.profile.pathfinding end,
-				func = function() ZGV:SetOption("Travelsystem","pathfinding on") end,
+				func = function() ZGV:SetOption("Navi","pathfinding on") end,
 				notCheckable=1,
 				isNotRadio=1,
 			})
@@ -2643,7 +2645,7 @@ function Pointer.ArrowFrame_ShowMenu()
 			if self.waypoint.type=="route" and self.waypoint.pathnode.type=="taxi" then
 				tinsert(menu,{
 						text = L['opt_autotaxi'],
-						func = function() ZGV:SetOption("Travelsystem","autotaxi") end,
+						func = function() ZGV:SetOption("Navi","autotaxi") end,
 						checked = function() return ZGV.db.profile.autotaxi end,
 						isNotRadio=1,
 					})
@@ -2695,7 +2697,7 @@ function Pointer.ArrowFrame_ShowMenu()
 					tooltipText = L['opt_pathfinding_mode_'..v..'_desc'],
 					tooltipOnButton=1,
 					checked = function() return ZGV.db.profile.pathfinding_mode==v end,
-					func = function() ZGV:SetOption("Travelsystem","pathfinding_mode "..v) end,
+					func = function() ZGV:SetOption("Navi","pathfinding_mode "..v) end,
 				})
 		end
 
@@ -2705,7 +2707,7 @@ function Pointer.ArrowFrame_ShowMenu()
 				tooltipText = L['pointer_arrowmenu_route_disable_desc'],
 				tooltipOnButton=1,
 				--checked = function() return ZGV.db.profile.pathfinding end,
-				func = function() ZGV:SetOption("Travelsystem","pathfinding off") end,
+				func = function() ZGV:SetOption("Navi","pathfinding off") end,
 				notCheckable=1,
 				isNotRadio=1,
 			})
@@ -2813,7 +2815,7 @@ function Pointer.Overlay_OnUpdate(frame,but,...)
 		local m,f = GetCurrentMapAreaID(),GetCurrentMapDungeonLevel()
 		local px, py, pm, pf = HBD:GetPlayerZonePosition(true)
 		px, py, pm, pf, m, f = (px or 0), (py or 0), (pm or 0), (pf or 0), (m or 0), (f or 0)
-		frame.ZygorCoordsDEV:SetText(("Zone: \"%s\" %d / %d\n Player: %.1f,%.1f\nCursor: %.1f,%.1f\nDistance: %.1f yd"):format(ZGV.Pointer.GetMapNameByID2(m),m,f,px*100,py*100,mx*100,my*100,HBD:GetZoneDistance(pm, pf,px, py,m,f,mx,my) or 0))	
+		frame.ZygorCoordsDEV:SetText(("Zone: \"%s\" %d / %d\n Player: %.1f,%.1f\nCursor: %.1f,%.1f\nDistance: %.1f yd"):format(ZGV.Pointer.GetMapNameByID2(m),m,f,px*100,py*100,mx*100,my*100,HBD:GetZoneDistance(pm, pf,px, py,m,f,mx,my) or 0))
 	end
 
 	if IsMouseButtonDown("LeftButton") and (IsShiftKeyDown() and not IsControlKeyDown() and not IsAltKeyDown() or ZGV.db.profile.no_shift_for_waypoints) then

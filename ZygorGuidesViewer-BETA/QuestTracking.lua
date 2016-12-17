@@ -127,6 +127,7 @@ function ZGV:GetQuest(indexortitle)
 end
 
 function ZGV:QuestTracking_CacheQuestLog(from)
+	if not self.loading_screen_disabled then return end
 	--self:Debug('CacheQuestLog')
 	--if not zone or zone=='' then return nil end
 

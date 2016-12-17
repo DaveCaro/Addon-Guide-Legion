@@ -2272,8 +2272,8 @@ ZygorGuidesViewer:RegisterInclude("H_Winterveil_Achievements",[[
 		only if not achieved(1688)
 	step
 		talk Penney Copperpinch##13420
-		buy Recipe: Winter Veil Egg Nog##17201 |n
-		buy Recipe: Hot Apple Cider##34413 |n
+		buy Recipe: Winter Veil Egg Nog##17201 |condition itemcount(17201) >= 1 |n
+		buy Recipe: Hot Apple Cider##34413 |condition itemcount(34413) >= 1 |n
 		buy 10 Holiday Spices##17194 |condition itemcount(17194) >= 10
 		buy 2 Holiday Spirits##17196 |condition itemcount(17196) >= 2
 		learn Recipe: Hot Apple Cider##45022 |use Recipe: Hot Apple Cider##34413 |goto Orgrimmar 52.7,77.3

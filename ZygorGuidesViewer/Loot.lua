@@ -86,7 +86,7 @@ function Loot:CreateFrame()
 		:SetScript("OnClick",function() Loot:CloseFrame() end) 
 		:Hide()
 	.__END
-	ZGV.AssignButtonTexture(F.Close,ZGV.CurrentSkinStyle:SkinData("TitleButtons"),6,32)
+	ZGV.F.AssignButtonTexture(F.Close,ZGV.CurrentSkinStyle:SkinData("TitleButtons"),6,32)
 end
 
 function Loot:ToggleFrame()
@@ -111,7 +111,7 @@ function Loot:UpdateSkin()
 	self.GreyFrame:SetBackdrop(SkinData("MoneyBackdrop"))
 	self.GreyFrame:SetBackdropColor(unpack(SkinData("MoneyBackdropColor")))
 	self.GreyFrame:SetBackdropBorderColor(unpack(SkinData("MoneyBackdropBorderColor")))
-	ZGV.AssignButtonTexture(self.GreyFrame.Close,ZGV.CurrentSkinStyle:SkinData("TitleButtons"),6,32)
+	ZGV.F.AssignButtonTexture(self.GreyFrame.Close,ZGV.CurrentSkinStyle:SkinData("TitleButtons"),6,32)
 end
 
 function Loot:SellGreyItems() --Auto Sell Grey Items

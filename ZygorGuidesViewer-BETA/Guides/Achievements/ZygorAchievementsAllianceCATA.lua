@@ -3127,6 +3127,111 @@ turnin Overstock##12833 |goto 40.9,85.3
 step
 Complete a daily quest every day for 5 consecutive days |achieve 31
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Quests\\The Loremaster\\Loremaster of Eastern Kingdoms",{
+condition_end="achieved(1676)",
+description="Complete all the storyline achievements in all the zones of the game.",
+},[[
+step
+Use the Eastern Kingdoms Leveling Guides to complete Loremaster:
+|tip The Leveling guides cover all required questlines for Loremaster.
+|tip Click one of the lines below to load the Leveling guide for that zone.
+Arathi Highlands Quests |achieve 4896 |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Arathi Highlands (26-30)\\Arathi Highlands (26-27)"
+Badlands Quests |achieve 4900 |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Badlands (44-46)\\Badlands (44-46)"
+Blasted Lands Quests |achieve 4909 |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Blasted Lands (58-60)\\Blasted Lands (58-60)"
+Burning Steppes Quests |achieve 4901  |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Burning Steppes (49-52)\\Burning Steppes (49-52)"
+Cape of Stranglethorn Quests |achieve 4905  |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\The Cape of Stranglethorn (32-36)\\The Cape of Stranglethorn (32-36)"
+Duskwood Quests |achieve 4903  |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Duskwood (21-26)\\Duskwood (21-26)"
+Eastern Plaguelands Quests |achieve 4892  |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Eastern Plaguelands (39-44)\\Eastern Plaguelands (39-44)"
+Hinterlands Quests |achieve 4897  |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\The Hinterlands (30-34)\\The Hinterlands (30-31)"
+Loch Modan Quests |achieve 4899  |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Loch Modan (10-19)\\Loch Modan (10-12)"
+Northern Stranglethorn Quests |achieve 4906  |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Northern Stranglethorn (26-32)\\Northern Stranglethorn (26-32)"
+Redridge Quests |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Redridge Mountains (15-21)\\Redridge Mountains (16-21)" |achieve 4902
+Searing Gorge Quests |achieve 4910  |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Searing Gorge (46-49)\\Searing Gorge (46-49)"
+Swamp of Sorrows Quests |achieve 4904  |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Swamp of Sorrows (52-54)\\Swamp of Sorrows (52-54)"
+Western Plaguelands Quests |achieve 4893  |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Western Plaguelands (34-39)\\Western Plaguelands (34-39)"
+Westfall Quests |achieve 4903  |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Westfall (10-15)\\Westfall (10-15)"
+Wetlands Quests |achieve 4899  |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Wetlands (19-26)\\Wetlands (19-21)"
+step
+Congratulations, you have _earned_ the _Loremaster of Eastern Kingdoms_ achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Quests\\The Loremaster\\Loremaster of Kalimdor",{
+condition_end="achieved(7520)",
+description="Complete all the storyline achievements in all the zones of the game.",
+},[[
+step
+Use the Kalimdor Leveling Guides to complete Loremaster:
+|tip The Leveling guides cover all required questlines for Loremaster.
+|tip Click one of the lines below to load the Leveling guide for that zone.
+Ashenvale Quests |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Ashenvale (21-27)\\Ashenvale (21-27)" |achieve 4925
+Bloodmyst Quests |achieve 4926 |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Bloodmyst Isle (11-20)\\Bloodmyst Isle (11-12)"
+Darkshore Quests |achieve 4928  |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Darkshore (11-21)\\Darkshore (11-16)"
+Desolace Quests |achieve 4930  |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Desolace (33-37)\\Desolace (33-35)"
+Dustwallow March Quests |loadguide 4929  |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Dustwallow Marsh (37-41)\\Dustwallow Marsh (37-41)"
+Felwood Quests |achieve 4931  |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Felwood (48-51)\\Felwood (48-49)"
+Feralas Quests |achieve 4932  |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Feralas (37-41)\\Feralas (37-41)"
+Silithus Quests |achieve 4934  |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Silithus (55-56)\\Silithus (55-56)"
+Southern Barrens Quests |achieve 4937  |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Southern Barrens (33-37)\\Southern Barrens (33-35)"
+Stonetalon Mountains Quests |achieve 4936  |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Stonetalon Mountains (27-33)\\Stonetalon Mountains (27-33)"
+Tanaris Quests |achieve 4935 |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Tanaris (45-48)\\Tanaris (45-47)"
+Thousand Needles Quests |achieve 4938  |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Thousand Needles (41-45)\\Thousand Needles (41-45)"
+Un'Goro Crater Quests |achieve 4939  |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Un'Goro Crater (55-58)\\Un'Goro Crater (55-58)"
+Winterspring Quests |achieve 4940  |loadguide "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Winterspring (51-55)\\Winterspring (51-52)"
+step
+Congratulations, you have _earned_ the _Loremaster of Kalimdor_ achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Quests\\The Loremaster\\Loremaster of Outland",{
+condition_end="achieved(1262)",
+description="Complete all the storyline achievements in all the zones of the game.",
+},[[
+step
+Use the Outland Leveling Guides to complete Loremaster:
+|tip The Leveling guides cover all required questlines for Loremaster.
+|tip Click one of the lines below to load the Leveling guide for that zone.
+Hellfire Peninsula Quests |achieve 1189 |loadguide "Zygor's Alliance Leveling Guides\\The Burning Crusade (60-70)\\Hellfire Peninsula (60-62)"
+Zangarmarsh Quests |achieve 1190 |loadguide "Zygor's Alliance Leveling Guides\\The Burning Crusade (60-70)\\Zangarmarsh (62-64)"
+Terrokar Forest Quests |achieve 1191  |loadguide "Zygor's Alliance Leveling Guides\\The Burning Crusade (60-70)\\Terokkar Forest (64-65)"
+Nagrand Quests |achieve 1192  |loadguide "Zygor's Alliance Leveling Guides\\The Burning Crusade (60-70)\\Nagrand (65-67)"
+Blades Edge Mountains March Quests |achieve 1193  |loadguide "Zygor's Alliance Leveling Guides\\The Burning Crusade (60-70)\\Blade's Edge Mountains (67-68)"
+Netherstorm Quests |achieve 1194  |loadguide "Zygor's Alliance Leveling Guides\\The Burning Crusade (60-70)\\Netherstorm (68-70)"
+Shadowmoon Valley Quests |achieve 1195  |loadguide "Zygor's Alliance Leveling Guides\\The Burning Crusade (60-70)\\Shadowmoon Valley (68-70)"
+step
+Congratulations, you have _earned_ the _Loremaster of Outland_ achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Quests\\The Loremaster\\Loremaster of Northrend",{
+condition_end="achieved(41)",
+description="Complete all the storyline achievements in all the zones of the game.",
+},[[
+step
+Use the Northrend Leveling Guides to complete Loremaster:
+|tip The Leveling guides cover all required questlines for Loremaster.
+|tip Click one of the lines below to load the Leveling guide for that zone.
+Borean Tundra Quests |achieve 33 |loadguide "Zygor's Alliance Leveling Guides\\Wrath of the Lich King (70-80)\\Borean Tundra (70-72)"
+Howling Fjord Quests |achieve 34 |loadguide "Zygor's Alliance Leveling Guides\\Wrath of the Lich King (70-80)\\Howling Fjord (70-72)"
+Grizzly Hills Quests |achieve 35 |loadguide "Zygor's Alliance Leveling Guides\\Wrath of the Lich King (70-80)\\Grizzly Hills (74-75)"
+Dragonblight Quests |achieve 35 |loadguide "Zygor's Horde Leveling Guides\\Wrath of the Lich King (70-80)\\Dragonblight (71-74)"
+Zul'drak Quests |achieve 36 |loadguide "Zygor's Alliance Leveling Guides\\Wrath of the Lich King (70-80)\\Zul'Drak (75-77)"
+Sholazar Basin Quests |achieve 39 |loadguide "Zygor's Alliance Leveling Guides\\Wrath of the Lich King (70-80)\\Sholazar Basin (77-78)"
+Storm Peaks Quests |achieve 38 |loadguide "Zygor's Alliance Leveling Guides\\Wrath of the Lich King (70-80)\\The Storm Peaks (78-80)"
+Icecrown Valley Quests |achieve 40 |loadguide "Zygor's Alliance Leveling Guides\\Wrath of the Lich King (70-80)\\Icecrown (78-80)"
+step
+Congratulations, you have _earned_ the _Loremaster of Northrend_ achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Quests\\The Loremaster\\Loremaster of Cataclysm",{
+condition_end="achieved(4875)",
+description="Complete all the storyline achievements in all the zones of the game.",
+},[[
+step
+Use the Cataclysm Leveling Guides to complete Loremaster:
+|tip The Leveling guides cover all required questlines for Loremaster.
+|tip Click one of the lines below to load the Leveling guide for that zone.
+Mount Hyjal Quests |achieve 4870 |loadguide "Zygor's Alliance Leveling Guides\\Cataclysm (80-85)\\Mount Hyjal (80-82)"
+Vashj'ir Quests |achieve 4869 |loadguide "Zygor's Alliance Leveling Guides\\Cataclysm (80-85)\\Vashj'ir (80-82)"
+Deepholm Quests |achieve 4871  |loadguide "Zygor's Alliance Leveling Guides\\Cataclysm (80-85)\\Deepholm (82-83)"
+Uldum Quests |achieve 4872  |loadguide "Zygor's Alliance Leveling Guides\\Cataclysm (80-85)\\Uldum (83-84)"
+Twilight Highlands Quests |achieve 4873  |loadguide "Zygor's Alliance Leveling Guides\\Cataclysm (80-85)\\Twilight Highlands (84-85)"
+step
+Congratulations, you have _earned_ the _Loremaster of Cataclysm_ achievement!
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Quests\\Eastern Kingdoms\\Full Caravan",{
 condition_end="achieved(5442)",
 description="Recruit all 8 characters into Fiona's travelling party in Eastern Plaguelands.",

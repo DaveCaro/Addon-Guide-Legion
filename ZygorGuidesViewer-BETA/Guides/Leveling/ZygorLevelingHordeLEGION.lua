@@ -14933,6 +14933,7 @@ Cross the bridge |goto 61.32,56.21 < 20 |only if walking
 Escape the Vineyard |q 44084/2 |goto 64.00,60.43
 step
 talk First Arcanist Thalyssra##97140
+|tip She will need to be fed in order for you to attain this quest. It costs 50 mana.
 turnin Vengeance for Margaux##44084 |goto 36.88,46.61 |region suramar_shalaran
 accept Seek the Unsavory##42839 |goto 36.88,46.61 |region suramar_shalaran
 stickystart "Shadowbloom"
@@ -15051,6 +15052,7 @@ turnin Make Your Mark##42792 |goto 48.40,83.29
 accept And They Will Tremble##44052 |goto 48.40,83.29
 step
 talk First Arcanist Thalyssra##97140
+|tip She will need to be fed in order for you to attain this quest. It costs 50 mana.
 turnin And They Will Tremble##44052 |goto 36.89,46.61 |region suramar_shalaran
 step
 Reach 8000 Honored Reputation with the Nightfallen Faction |condition repval("The Nightfallen","Honored")>=8000
@@ -15058,6 +15060,7 @@ Reach 8000 Honored Reputation with the Nightfallen Faction |condition repval("Th
 |tip Use the "World Quests" guide and complete Suramar world quests to accomplish this.
 step
 talk First Arcanist Thalyssra##97140
+|tip She will need to be fed in order for you to attain this quest. It costs 50 mana.
 accept The Perfect Opportunity##43309 |goto 36.88,46.61 |region suramar_shalaran
 step
 Follow the path |goto 47.53,83.29 < 15 |only if walking
@@ -15179,11 +15182,13 @@ talk Lunastre Attendant##111903
 accept Friends With Benefits##44053 |goto 47.80,82.86
 step
 talk First Arcanist Thalyssra##97140
+|tip She will need to be fed in order for you to attain this quest. It costs 50 mana.
 turnin Friends With Benefits##44053 |goto 36.51,46.76 |region suramar_shalaran
 accept Opening the Arcway##42490 |goto 36.51,46.76 |region suramar_shalaran
 accept Beware the Fury of a Patient Elf##43314 |goto 36.51,46.76 |region suramar_shalaran
 step
 talk Arcanist Valtrois##103155
+|tip She will need to be fed in order for you to attain this quest. It costs 50 mana.
 |tip Downstairs.
 accept Long Buried Knowledge##42491 |goto 37.01,46.23 |region suramar_shalaran
 step
@@ -15276,9 +15281,11 @@ turnin Another Arcan'dor Closes...##44156 |goto 36.54,46.81 |region suramar_shal
 accept The Stuff of Dreams##43362 |goto 36.54,46.81 |region suramar_shalaran
 step
 talk First Arcanist Thalyssra##97140
+|tip She will need to be fed in order for you to attain this quest. It costs 50 mana.
 accept Branch of the Arcan'dor##40125 |goto 36.51,46.75 |region suramar_shalaran
 step
 talk First Arcanist Thalyssra##97140
+|tip She will need to be fed in order for you to attain this quest. It costs 50 mana.
 turnin Branch of the Arcan'dor##40125 |goto 36.51,46.75 |region suramar_shalaran
 step
 Enter the Emerald Nightmare Raid |goto The Emerald Nightmare/12 36.52,78.53 < 10000 |noway |c |q 43362
@@ -15304,6 +15311,7 @@ talk Valewalker Farodin##107126
 accept A Change of Seasons##43502 |goto 36.85,46.55 |region suramar_shalaran
 step
 talk Arcanist Valtrois##103155
+|tip She will need to be fed in order for you to attain this quest. It costs 50 mana.
 |tip Downstairs.
 turnin A Change of Seasons##43502 |goto 37.02,46.23 |region suramar_shalaran
 accept Giving It All We've Got##43562 |goto 37.02,46.23 |region suramar_shalaran
@@ -15330,17 +15338,20 @@ Activate the Halls of the Eclipse Leyline |q 43562/7
 |tip You accomplished this earlier in the Suramar questing guide.
 step
 talk Arcanist Valtrois##103155
+|tip She will need to be fed in order for you to attain this quest. It costs 50 mana.
 Tell her _"All the conduits are active. Can you amplify the feed?"_
 Ask Valtrois to Amplify the Feed |q 43562/8 |goto 37.02,46.23 |region suramar_shalaran
 step
 Watch the dialogue
 talk Arcanist Valtrois##103155
+|tip She will need to be fed in order for you to attain this quest. It costs 50 mana.
 |tip Downstairs.
 turnin Giving It All We've Got##43562 |goto 37.09,46.56 |region suramar_shalaran
 accept Ephemeral Manastorm Projector##43563 |goto 37.09,46.56 |region suramar_shalaran
 accept Flow Control##43564 |goto 37.09,46.56 |region suramar_shalaran
 step
 talk Chief Telemancer Oculeth##98548
+|tip He will need to be fed in order for you to attain this quest. It costs 50 mana.
 |tip Downstairs.
 accept Bring Home the Beacon##43565 |goto 37.14,46.62 |region suramar_shalaran
 step
@@ -15389,11 +15400,13 @@ click Arcway Outlet##3365
 Seal the Midnight Court Outlet |q 43564/3 |goto 59.89,59.20
 step
 talk Arcanist Valtrois##103155
+|tip She will need to be fed in order for you to attain this quest. It costs 50 mana.
 |tip Downstairs.
 turnin Ephemeral Manastorm Projector##43563 |goto 37.09,46.56 |region suramar_shalaran
 turnin Flow Control##43564 |goto 37.09,46.56 |region suramar_shalaran
 step
 talk Chief Telemancer Oculeth##98548
+|tip He will need to be fed in order for you to attain this quest. It costs 50 mana.
 |tip Downstairs.
 turnin Bring Home the Beacon##43565 |goto 37.13,46.62 |region suramar_shalaran
 step
@@ -15406,6 +15419,7 @@ talk Valewalker Farodin##107126
 turnin Redemption for the Fallen##44563 |goto 36.86,46.55 |region suramar_shalaran
 step
 talk First Arcanist Thalyssra##97140
+|tip She will need to be fed in order for you to attain this quest. It costs 50 mana.
 |tip Downstairs.
 accept All In##43567 |goto 37.13,46.55 |region suramar_shalaran
 step
@@ -15445,16 +15459,19 @@ turnin All In##43567 |goto 36.84,46.53 |region suramar_shalaran
 accept Arcan'dor, Gift of the Ancient Magi##43568 |goto 36.84,46.53 |region suramar_shalaran
 step
 talk Chief Telemancer Oculeth##112147
+|tip He will need to be fed in order for you to attain this quest. It costs 50 mana.
 |tip Click the blue Fruit of the Arcan'dor hanging on the tree nearby to get the fruit.
 Watch the dialogue
 Share the Fruit with Oculeth |q 43568/1 |goto 36.49,46.77 |region suramar_shalaran
 step
 talk Arcanist Valtrois##112145
+|tip She will need to be fed in order for you to attain this quest. It costs 50 mana.
 |tip Click the blue Fruit of the Arcan'dor hanging on the tree nearby to get the fruit.
 Watch the dialogue
 Share the Fruit with Valtrois |q 43568/2 |goto 36.52,46.84 |region suramar_shalaran
 step
 talk First Arcanist Thalyssra##112146
+|tip She will need to be fed in order for you to attain this quest. It costs 50 mana.
 |tip Click the blue Fruit of the Arcan'dor hanging on the tree nearby to get the fruit.
 Watch the dialogue
 Share the Fruit with Thalyssra |q 43568/3 |goto 36.53,46.79 |region suramar_shalaran

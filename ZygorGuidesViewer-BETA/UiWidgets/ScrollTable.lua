@@ -36,10 +36,11 @@ local DEFAULT_DATA = {
 	FONT = FONT,
 	FONTBOLD = FONTBOLD,
 	STRATA = "MEDIUM",
-	BACKGROUND = {HTMLColor("#2f2f2fff")},
+	BACKGROUND = {ZGV.F.HTMLColor("#2f2f2fff")},
 	BORDER = {0,0,0,1},
 	ROWHIGHLIGHT = false,
 	ROWBACKGROUND = false,
+	HIDESCROLLBAR = false,
 }
 
 --[[
@@ -92,7 +93,7 @@ function ScrollTable:New(parent,name,COLUMNS,DATA,useparent)
 	-- Fill in defaults
 	for i,v in pairs(DEFAULT_DATA) do if not DATA[i] then DATA[i]=v end end 
 	if not DATA.ROW_HEIGHT then DATA.ROW_HEIGHT = (DATA.LIST_HEIGHT-DATA.ROW_HEADER)/DATA.ROW_COUNT end
-	if not DATA.ROW_WIDTH then DATA.ROW_WIDTH = DATA.LIST_WIDTH-SCROLL_WIDTH-DATA.ROW_PADDING end
+	if not DATA.ROW_WIDTH then DATA.ROW_WIDTH = DATA.LIST_WIDTH-DATA.ROW_PADDING end
 
 	local frame, offset_from_parent
 	
@@ -116,10 +117,10 @@ function ScrollTable:New(parent,name,COLUMNS,DATA,useparent)
 	frame.DATA	     = DATA
 
 	frame.scrollbar = CHAIN(ui:Create("ScrollItems",frame,name.."Scroll"))
-		:SetPoint("TOPLEFT",frame,"TOPRIGHT",-SCROLL_WIDTH-1+(offset_from_parent and DATA.POSX or 0),-DATA.ROW_HEADER+1+(offset_from_parent and DATA.POSY or 0))
-		:SetPoint("BOTTOMRIGHT",frame,"BOTTOMRIGHT",-SCROLL_WIDTH-1,1)
+		:SetPoint("TOPLEFT",frame,"TOPRIGHT",-SCROLL_WIDTH+(offset_from_parent and DATA.POSX or 0),-DATA.ROW_HEADER+1+(offset_from_parent and DATA.POSY or 0))
+		:SetPoint("BOTTOMRIGHT",frame,"BOTTOMRIGHT",-SCROLL_WIDTH,1)
 		:MaxValueAtOnce(DATA.ROW_COUNT)
-		:SetHideWhenUnless(1)
+		:SetHideWhenUseless(DATA.HIDESCROLLBAR)
 	.__END
 	
 	
@@ -212,6 +213,7 @@ function ScrollTable:New(parent,name,COLUMNS,DATA,useparent)
 					:SetFont(col.font,col.fontsize or DATA.ROW_FONTSIZE)
 					:SetText(col.title)
 					:RegisterForClicks("AnyUp")
+					:SetFrameLevel(row:GetFrameLevel()+3)
 					:SetBackdropColor(0,0,0,0)
 					:SetBackdropBorderColor(0,0,0,0)
 					:SetNormalBackdropColor(0,0,0,0)
@@ -258,6 +260,8 @@ function ScrollTable:New(parent,name,COLUMNS,DATA,useparent)
 					widget:SetNormalTexture(col.texture)
 					if col.textureoffset then widget:GetNormalTexture():SetTexCoord(unpack(col.textureoffset)) end
 					if col.texturecolor then widget:GetNormalTexture():SetVertexColor(unpack(col.texturecolor)) end
+					if col.highlighttextureoffset or col.highlighttexture then widget:SetHighlightTexture(col.highlighttexture or col.texture)  if col.highlighttextureoffset then widget:GetHighlightTexture():SetTexCoord(unpack(col.highlighttextureoffset)) end  end
+					if col.tooltip then widget:SetTooltip(col.tooltip) end
 				elseif col.type=="icon" then
 					widget:SetTexture(col.texture)
 					if col.textureoffset then widget:SetTexCoord(unpack(col.textureoffset)) end
@@ -326,4 +330,21 @@ end
 
 function ScrollTable:CountRows()
 	return self.DATA.ROW_COUNT
+end
+
+function ScrollTable:TotalValue(count)
+	self.scrollbar:TotalValue(count)
+	if count<self.DATA.ROW_COUNT then
+		for _,row in pairs(self.rows) do
+			row:SetPoint("RIGHT",self)
+		end
+	else
+		for _,row in pairs(self.rows) do
+			row:SetPoint("RIGHT",self.scrollbar.barframe,"LEFT")
+		end
+	end
+end
+
+function ScrollTable:SetValue(count)
+	self.scrollbar:SetValue(count)
 end

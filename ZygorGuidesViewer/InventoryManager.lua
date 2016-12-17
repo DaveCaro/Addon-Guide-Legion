@@ -746,7 +746,7 @@ function IM:CreateFrames()
 	IM.ConfigButton.icon = CHAIN(IM.ConfigButton:CreateTexture()) :SetPoint("CENTER",IM.ConfigButton,"CENTER",0,0)
 		:SetSize(16,16)
 		:SetTexture(ZGV.DIR.."\\Skins\\Default\\Stealth\\titlebuttons")
-		--ZGV.AssignButtonTexture(IM.ConfigButton.icon,(SkinData("TitleButtons")),5,32)
+		--ZGV.F.AssignButtonTexture(IM.ConfigButton.icon,(SkinData("TitleButtons")),5,32)
 		--:SetTexture()
 		:SetTexCoord(4/32,5/32,0,1/4)
 	.__END

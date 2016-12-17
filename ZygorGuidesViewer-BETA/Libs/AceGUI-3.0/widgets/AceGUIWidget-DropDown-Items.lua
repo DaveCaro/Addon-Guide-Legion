@@ -1,6 +1,8 @@
---[[ $Id: AceGUIWidget-DropDown-Items.lua 996 2010-12-01 18:34:17Z nevcairiel $ ]]--
+--[[ $Id: AceGUIWidget-DropDown-Items.lua 1137 2016-05-15 10:57:36Z nevcairiel $ ]]--
 
 local AceGUI = LibStub("AceGUI-3.0")
+
+local IsLegion = select(4, GetBuildInfo()) >= 70000
 
 -- Lua APIs
 local select, assert = select, assert
@@ -41,7 +43,7 @@ local ItemBase = {
 	-- NOTE: The ItemBase version is added to each item's version number
 	--       to ensure proper updates on ItemBase changes.
 	--       Use at least 1000er steps.
-	version = 1000,
+	version = 2000,
 	counter = 0,
 }
 
@@ -147,6 +149,12 @@ function ItemBase.SetOnEnter(self, func)
 	self.specialOnEnter = func
 end
 
+function ItemBase.SetFontObject(self, font)
+	font = font or GameFontHighlightSmall
+	self.text:SetFontObject(font)
+	self.text:SetTextColor(font:GetTextColor())
+end
+
 function ItemBase.Create(type)
 	-- NOTE: Most of the following code is copied from AceGUI-3.0/Dropdown widget
 	local count = AceGUI:GetNextWidgetNum(type)
@@ -208,6 +216,8 @@ function ItemBase.Create(type)
 	self.SetPoint   = ItemBase.SetPoint
 	self.Show       = ItemBase.Show
 	self.Hide       = ItemBase.Hide
+
+	self.SetFontObject       = ItemBase.SetFontObject
 	
 	self.SetOnLeave = ItemBase.SetOnLeave
 	self.SetOnEnter = ItemBase.SetOnEnter
@@ -440,7 +450,7 @@ end
 -- A single line to separate items
 do
 	local widgetType = "Dropdown-Item-Separator"
-	local widgetVersion = 1
+	local widgetVersion = 2
 	
 	-- exported, override
 	local function SetDisabled(self, disabled)
@@ -455,7 +465,11 @@ do
 		
 		local line = self.frame:CreateTexture(nil, "OVERLAY")
 		line:SetHeight(1)
-		line:SetTexture(.5, .5, .5)
+		if IsLegion then
+			line:SetColorTexture(.5, .5, .5)
+		else
+			line:SetTexture(.5, .5, .5)
+		end
 		line:SetPoint("LEFT", self.frame, "LEFT", 10, 0)
 		line:SetPoint("RIGHT", self.frame, "RIGHT", -10, 0)
 		

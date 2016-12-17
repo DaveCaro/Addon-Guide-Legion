@@ -4817,54 +4817,6 @@ step
 talk Kil'ruk the Wind-Reaver##62538
 turnin The Scent of Blood##31179 |goto 55.0,35.9
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Loremaster Guides\\Pandaria (85-90)\\The Jade Forest",{
-author="support@zygorguides.com",
-image=ZGV.DIR.."\\Guides\\Images\\JadeForest",
-condition_end="achieved(6534)",
-},[[
-step
-next "Zygor's Horde Leveling Guides\\Pandaria (85-90)\\The Jade Forest (85-86)"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Loremaster Guides\\Pandaria (85-90)\\Valley of the Four Winds",{
-author="support@zygorguides.com",
-image=ZGV.DIR.."\\Guides\\Images\\ValleyOfTheFourWinds",
-condition_end="achieved(6301)",
-},[[
-step
-next "Zygor's Horde Leveling Guides\\Pandaria (85-90)\\Valley of the Four Winds (86-87)"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Loremaster Guides\\Pandaria (85-90)\\Krasarang Wilds",{
-author="support@zygorguides.com",
-image=ZGV.DIR.."\\Guides\\Images\\KrasarangWilds",
-condition_end="achieved(6536)",
-},[[
-step
-next "Zygor's Horde Leveling Guides\\Pandaria (85-90)\\Krasarang Wilds (87)"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Loremaster Guides\\Pandaria (85-90)\\Kun-Lai Summit",{
-author="support@zygorguides.com",
-image=ZGV.DIR.."\\Guides\\Images\\KunLai",
-condition_end="achieved(6538)",
-},[[
-step
-next "Zygor's Horde Leveling Guides\\Pandaria (85-90)\\Kun-Lai Summit (87-88)"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Loremaster Guides\\Pandaria (85-90)\\Townlong Steppes",{
-author="support@zygorguides.com",
-image=ZGV.DIR.."\\Guides\\Images\\TownlongSteppes",
-condition_end="achieved(6539)",
-},[[
-step
-next "Zygor's Horde Leveling Guides\\Pandaria (85-90)\\Townlong Steppes (88-89)"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Loremaster Guides\\Pandaria (85-90)\\Dread Wastes",{
-author="support@zygorguides.com",
-image=ZGV.DIR.."\\Guides\\Images\\DreadWastes",
-condition_end="achieved(6540)",
-},[[
-step
-next "Zygor's Horde Leveling Guides\\Pandaria (85-90)\\Dread Wastes (89-90)"
-]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Pandaria (85-90)\\Monk Dailies\\Monk Daily",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\WanderingIsle",
