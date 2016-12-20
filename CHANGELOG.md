@@ -18,6 +18,10 @@ Options simplified, reorganized, and integrated into guide menu.
 
 Updated Winter Veil - Updated quests, dailies, and achievements for the 2016 version of the event.
 
+- ERROR FIX : 
+
+Fix: an addon conflict and a leftover debug message were resolved in our custom Ace libraries.
+
 - Dugi Addon :  
 
 Updated NPC names database

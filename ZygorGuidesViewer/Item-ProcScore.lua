@@ -173,8 +173,8 @@ function ProcScore:ParseEffect(data)
 		end
 
 		variables.orgstat = variables.stat
-		if ProcScore.Keywords[variables.stat] then
-			variables.stat = ProcScore.Keywords[variables.stat] -- no conversion needed, just fix name
+		if ProcScore.KeywordsMerged[variables.stat] then
+			variables.stat = ProcScore.KeywordsMerged[variables.stat] -- no conversion needed, just fix name
 			if variables.amount and variables.amount:match("%%") then -- if percentage, then grab proper stat and calculate value
 				if ProcScore.PlayerStats[variables.stat] then
 					variables.amount = tonumber((variables.amount:gsub("%%","")))/100 * ProcScore.PlayerStats[variables.stat]
@@ -222,7 +222,12 @@ function ProcScore:ParseEffect(data)
 		end
 		variables = ProcScore:ProcessEffect(effectmode,variables)
 
-		return true,variables
+		if type(variables.amount)~="number" then
+			-- fallback rules failed to grab anything that made sense, don't score this effect
+			return false,variables
+		else
+			return true,variables
+		end
 	end
 
 	return false,variables

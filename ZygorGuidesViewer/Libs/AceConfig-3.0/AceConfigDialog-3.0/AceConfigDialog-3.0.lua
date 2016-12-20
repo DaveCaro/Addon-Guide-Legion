@@ -1098,7 +1098,8 @@ local function FeedOptions(appName, options,container,rootframe,path,group,inlin
 
 					if v.marginTop then GroupContainer.marginTop=v.marginTop end
 					
-					GroupContainer:SetWidth(v.width or "fill")
+					GroupContainer.width = v.width or "fill"
+					if (tonumber(v.width)) then GroupContainer:SetWidth(v.width) end
 					GroupContainer:SetLayout(v.useLayout or "flow")
 					container:AddChild(GroupContainer)
 					FeedOptions(appName,options,GroupContainer,rootframe,path,v,true)
@@ -1572,7 +1573,6 @@ local function TreeOnButtonEnter(widget, event, uniquevalue, button)
 end
 
 local function TreeOnButtonLeave(widget, event, value, button)
-print("TEREEONBUTTONLEAVE TOOLTIP HIDE")
 	GameTooltip:Hide()
 end
 
