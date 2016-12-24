@@ -468,8 +468,8 @@ function GuideMenu:CreateFrames()
 			:Hide()
 			.__END
 
-		MF.WideColumnOptions.AceContainer = LibStub:GetLibrary("AceGUI-3.0"):Create("ScrollFrame")
-		MF.WideColumnOptions.AceContainer.type="SimpleGroup"  -- I hate myself. AceConfigDialog would make a new ScrollFrame inside our perfectly good ScrollFrame, breaking it to hell, because it's not a *Group. So... this ScrollFrame has to masquerade as a SimpleGroup.
+		MF.WideColumnOptions.AceContainer = LibStub("AceGUI-3.0-Z"):Create("ScrollFrame-Z")
+		MF.WideColumnOptions.AceContainer.type="SimpleGroup-Z"  -- I hate myself. AceConfigDialog would make a new ScrollFrame inside our perfectly good ScrollFrame, breaking it to hell, because it's not a *Group. So... this ScrollFrame has to masquerade as a SimpleGroup.
 		MF.WideColumnOptions.AceContainer.frame:SetParent(MF.WideColumnOptions)
 		MF.WideColumnOptions.AceContainer.frame:SetPoint("TOPLEFT",MF.WideColumnOptions,"TOPLEFT",10,0)
 		MF.WideColumnOptions.AceContainer.frame:SetPoint("BOTTOMRIGHT")
@@ -586,7 +586,7 @@ end
 
 function GuideMenu:MakeMenuButton(name,caption,texture,x,w,y,h)
 	local parent = GuideMenu.MainFrame.MenuGuides
-
+	local header = nil
 	local but = CHAIN(CreateFrame("Button",name,header))
 		:SetSize(200,18)
 		:SetFrameStrata("HIGH")
@@ -821,7 +821,7 @@ local function OptionButton_OnClick(button)
 	GuideMenu.MainFrame.WideColumnOptions.AceContainer.optiontable = button.optiontable
 	GuideMenu.MainFrame.WideColumnOptions.AceContainer.groupname = button.optiongroupblizname
 	GuideMenu.MainFrame.WideColumn.Name:SetText(button.optiontable.name)
-	LibStub:GetLibrary("AceConfigDialog-3.0"):Open(button.optiongroupblizname,GuideMenu.MainFrame.WideColumnOptions.AceContainer)
+	LibStub("AceConfigDialog-3.0-Z"):Open(button.optiongroupblizname,GuideMenu.MainFrame.WideColumnOptions.AceContainer)
 	GuideMenu:HighlightOptionButton(button.optiongroupblizname)
 end
 

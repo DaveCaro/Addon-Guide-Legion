@@ -663,7 +663,7 @@ map Frostfire Ridge
 path follow loose; loop; ants curved
 path	16.6,39.2	12.8,47.2	15.4,52.6
 path	26.0,45.6	19.6,39.4
-kill Nok-Karosh##81001 |goto Talador/0 79.4,58.4
+kill Nok-Karosh##81001
 collect Garn Nighthowl##116794
 next "done"
 step

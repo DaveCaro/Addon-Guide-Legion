@@ -956,6 +956,18 @@ function ZGV:Options_DefineOptionTables()
 		})
 		AddOptionSep()
 
+		AddOption('antspacing',{
+			type = 'toggle',
+			get = function() return ZGV.db.profile.antspacing==100 end,
+			set = function(i,v) 
+				local vol=v and 100 or 0
+				Setter_Simple(i,vol)  self.Pointer:SetAntSpacing(vol) 
+				--self:ShowWaypoints() 
+			end,
+			_default = 100
+		})
+
+
 		--[[ hidden --]] AddOption('corpsearrow',{
 			type = 'toggle',
 			disabled = function() return self.db.profile.waypointaddon=="none" end,
@@ -2602,14 +2614,6 @@ function ZGV:Options_DefineOptionTables()
 					end
 				end
 
-				AddOption('antspacing',{
-					type = 'select',
-					disabled = function() return self.db.profile.waypointaddon~="internal" and self.db.profile.waypointaddon~="tomtom" end,
-					values={ [0]=L["opt_antspacing_0"], [50]=L["opt_antspacing_yd"]:format(50), [100]=L["opt_antspacing_yd_def"]:format(100), [200]=L["opt_antspacing_yd"]:format(200), [300]=L["opt_antspacing_yd"]:format(300) },
-					set = function(i,v) Setter_Simple(i,v)  self.Pointer:SetAntSpacing(v) self:ShowWaypoints() end,
-					_default = 100
-				})
-
 				AddOption('antspeed',{
 					type = 'select',
 					disabled = function() return self.db.profile.waypointaddon~="internal" and self.db.profile.waypointaddon~="tomtom" end,
@@ -3179,7 +3183,7 @@ function ZGV:Options_GrabDefaults(options_tab,defaults)
 	end
 end
 
-local AceConfigRegistry = LibStub("AceConfigRegistry-3.0")
+local AceConfigRegistry = LibStub("AceConfigRegistry-3.0-Z")
 function ZGV:Options_ResetToDefaults(blizname)
 	for opttab,optblizname in pairs(self.optiontables_bliznames) do
 		if optblizname==blizname then
@@ -3191,7 +3195,7 @@ function ZGV:Options_ResetToDefaults(blizname)
 end
 
 function ZGV:Options_SetupConfig()
-	local AceConfig = LibStub("AceConfig-3.0")
+	local AceConfig = LibStub("AceConfig-3.0-Z")
 
 	for i,v in ipairs(self.optiontables_ordered) do
 		AceConfig:RegisterOptionsTable(v.blizname, self.optiontables[v.name], v.slash );
@@ -3199,13 +3203,13 @@ function ZGV:Options_SetupConfig()
 end
 
 function ZGV:Options_SetupPanels() -- Unused!
-	local AceConfigDialog = LibStub("AceConfigDialog-3.0")
-	local AceGUI = LibStub("AceGUI-3.0")
+	local AceConfigDialog = LibStub("AceConfigDialog-3.0-Z")
+	local AceGUI = LibStub("AceGUI-3.0-Z")
 
 	self.optionpanels = {}
 	for i,v in ipairs(self.optiontables_ordered) do
 		if v.name~="dev" and not self.optiontables[v.name].guiHidden then
-			local group = gui:Create("ScrollFrame")
+			local group = gui:Create("ScrollFrame-Z")
 			group:SetName(name or appName, parent)
 			--panel:SetTitle(name or appName)
 			--group:SetUserData("appName", appName)
@@ -3226,7 +3230,7 @@ function ZGV:Options_SetupPanels() -- Unused!
 end
 
 function ZGV:Options_SetupBlizConfig()
-	local AceConfigDialog = LibStub("AceConfigDialog-3.0")
+	local AceConfigDialog = LibStub("AceConfigDialog-3.0-Z")
 
 	InterfaceOptionsFrame:GetRegions():SetColorTexture(0,0,0,0.9) -- make the whole options pane a bit transparent
 	AceConfigDialog:SetDefaultSize("ZygorGuidesViewer", 600, 400)
@@ -3262,7 +3266,7 @@ end
 
 
 function ZGV:SetOption(cat,cmd)
-	LibStub("AceConfigCmd-3.0").HandleCommand(self, "zygor", "ZygorGuidesViewer"..(cat~="" and "-"..cat or ""), cmd)
+	LibStub("AceConfigCmd-3.0-Z").HandleCommand(self, "zygor", "ZygorGuidesViewer"..(cat~="" and "-"..cat or ""), cmd)
 end
 
 
@@ -3276,10 +3280,10 @@ function ZGV:OPTTEST()
 
 	local F = ZGV.OPTTEST_F
 	local C = F.Content
-	local SCRF=LibStub("AceGUI-3.0"):Create("ScrollFrame")  SCRF.frame:SetParent(C)  SCRF.frame:SetAllPoints()
+	local SCRF=LibStub("AceGUI-3.0-Z"):Create("ScrollFrame-Z")  SCRF.frame:SetParent(C)  SCRF.frame:SetAllPoints()
 	
 
-	local AceConfigDialog = LibStub("AceConfigDialog-3.0")
+	local AceConfigDialog = LibStub("AceConfigDialog-3.0-Z")
 	local function B_Click(self)
 		print("clicked",self.opt_blizname)
 		AceConfigDialog:Open(self.opt_blizname,SCRF)

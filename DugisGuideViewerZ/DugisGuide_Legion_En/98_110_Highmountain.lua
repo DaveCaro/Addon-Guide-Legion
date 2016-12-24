@@ -424,14 +424,14 @@ C Moose on the Loose |QID|39178| |N|Kill (npc:94694) and collect (item:127767) i
 R Nesingwary's Retreat |QID|40228| |N|Travel to {Nesingwary's Retreat} (40.07, 52.24)| |Z|1024 0|
 T Scout It Out |QID|40228| |N|(npc:94409) at {Nesingwary's Retreat} (40.07, 52.25)| |Z|1024 0| |NPC|94409|
 A Procuring a Prototype |QID|39386| |N|(npc:94409) at {Nesingwary's Retreat} (40.07, 52.25)| |Z|1024 0|
-A That Guy in the Costume |QID|40244| |N|(npc:94409) at {Nesingwary's Retreat} (40.07, 52.25)| |Z|1024 0| |NPC|94409|
+A That Guy in the Costume |QID|40244| |N|(npc:94409) at {Nesingwary's Retreat} (40.07, 52.25)| |Z|1024 0| |NPC|94409| |OID|40045|
 T Moose on the Loose |QID|39178| |N|(npc:94101) at {Nesingwary's Retreat} (40.03, 52.23)| |Z|1024 0| |NPC|94101|
 T I'm Not Lion! |QID|39867| |N|(npc:95438) at {Nesingwary's Retreat} (40.01, 52.31)| |Z|1024 0| |NPC|95438|
 h Nesingwary's Retreat |QID|40244| |N|Speak to (npc:94099) and set your hearth to {Nesingwary's Retreat} (40.00, 52.47)| |Z|1024 0| |NPC|94099|
-C That Guy in the Costume |QID|40244| |N|Speak to (npc:94973) at {Nesingwary's Retreat} and fly to {Shipwreck Cove} (40.24, 52.62)| |Z|1024 0| |NPC|94973|
+C That Guy in the Costume |QID|40244| |N|Speak to (npc:94973) at {Nesingwary's Retreat} and fly to {Shipwreck Cove} (40.24, 52.62)| |Z|1024 0| |NPC|94973| |OID|40045|
 
-f Shipwreck Cove |QID|40244| |N|Grab the flight path for {Shipwreck Cove} from (npc:98066) (41.88, 10.51)| |Z|1024 0| |NPC|98066|
-T That Guy in the Costume |QID|40244| |N|(npc:98067) in {Shipwreck Cove} (42.69, 10.90)| |Z|1024 0| |NPC|98067|
+f Shipwreck Cove |QID|40244| |N|Grab the flight path for {Shipwreck Cove} from (npc:98066) (41.88, 10.51)| |Z|1024 0| |NPC|98066| |OID|40045|
+T That Guy in the Costume |QID|40244| |N|(npc:98067) in {Shipwreck Cove} (42.69, 10.90)| |Z|1024 0| |NPC|98067| |OID|40045|
 A Nature vs. Nurture |QID|40045| |N|(npc:98067) in {Shipwreck Cove} (42.69, 10.90)| |Z|1024 0| |NPC|98067|
 A I'll Huff, I'll Puff... |QID|40047| |N|(npc:98067) in {Shipwreck Cove} (42.69, 10.90)| |Z|1024 0| |NPC|98067|
 A Slime Time |QID|40049| |N|(npc:98067) in {Shipwreck Cove} (42.69, 10.90)| |Z|1024 0| |NPC|98067|

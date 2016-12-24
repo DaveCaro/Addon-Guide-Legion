@@ -36,7 +36,7 @@ do
 	local LIB_MAJOR, LIB_MINOR = "LibRover-1.0", 1
 
 	local Lib = LibStub:NewLibrary(LIB_MAJOR, LIB_MINOR)
-	LibStub("AceTimer-3.0"):Embed(Lib)
+	AceTimer:Embed(Lib)
 	local LibRover=Lib
 	_G['LibRover']=LibRover
 

@@ -4,7 +4,7 @@ local data={}
 addon.LibRoverData = data
 
 data.version={
-	nodes_version = 18,  -- Increase this when working on the nodes. Bake the connections using ZGV.Testing.NeighbourCache:DumpNeighbours() when you're done.
+	nodes_version = 19,  -- Increase this when working on the nodes. Bake the connections using ZGV.Testing.NeighbourCache:DumpNeighbours() when you're done.
 }
 
 -- These are kept strictly unique. Make up bogus names if you need to.
@@ -1140,6 +1140,10 @@ data.basenodes.MapsWithExplicitFloors = {
 				"Suramar/0 42.80,61.84 -x- Suramar/0 43.57,62.50 <region:suramar_sanctum_of_order> {template:custom}"..
 					"{atob:Enter the Sanctum of Order (Top Floor)}"..
 					"{btoa:Leave the Sanctum of Order (Top Floor)}",
+
+			-- Teloth'aran Entrance
+				"Suramar/0 54.65,46.32 <radius:20> -x- Suramar/22 39.41,83.43 <radius:20>"..
+					"{template:custom} {atob:Enter the cave} {btoa:Leave the cave}",
 		},
 
 		

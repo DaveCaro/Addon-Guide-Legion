@@ -2685,23 +2685,6 @@ function Pointer.ArrowFrame_ShowMenu()
 		end
 
 		tinsert(menu,{
-				text = L['opt_pathfinding_mode']..":",
-				tooltipTitle = L['opt_pathfinding_mode'],
-				tooltipText = L['opt_pathfinding_mode_desc'],
-				isTitle=1, isNotRadio=1, notCheckable=1,
-			})
-		for k,v in pairs{"1fastest","2nocd","3lazy"} do
-			tinsert(menu,{
-					text = L['opt_pathfinding_mode_'..v],
-					tooltipTitle = L['opt_pathfinding_mode_'..v],
-					tooltipText = L['opt_pathfinding_mode_'..v..'_desc'],
-					tooltipOnButton=1,
-					checked = function() return ZGV.db.profile.pathfinding_mode==v end,
-					func = function() ZGV:SetOption("Navi","pathfinding_mode "..v) end,
-				})
-		end
-
-		tinsert(menu,{
 				text = L['pointer_arrowmenu_route_disable'],
 				tooltipTitle = L['pointer_arrowmenu_route_disable'],
 				tooltipText = L['pointer_arrowmenu_route_disable_desc'],
@@ -2722,6 +2705,7 @@ function Pointer.ArrowFrame_ShowMenu()
 			menuList = arrowoptions,
 			notCheckable=true,
 		})
+
 	tinsert(arrowoptions,{
 			text = L['pointer_arrowmenu_hide'],
 			tooltipTitle = L['pointer_arrowmenu_hide'],
@@ -2739,33 +2723,20 @@ function Pointer.ArrowFrame_ShowMenu()
 			func = function()  ZGV:SetOption("Arrow","arrowfreeze "..(ZGV.db.profile.arrowfreeze and "off" or "on"))  end,
 			notCheckable=1,
 		})
-	tinsert(arrowoptions,{
-			text = L['pointer_arrowmenu_opacity'],
-			hasArrow = true,
-			menuList = {
-				{ text = "100%", checked = function() return (ZGV.db.profile.arrowalpha>0.95) end, func = ZGV.Pointer.ArrowFrame_SetAlpha, arg1=1 },
-				{ text = "75%",  checked = function() return (ZGV.db.profile.arrowalpha>0.70 and ZGV.db.profile.arrowalpha<0.80) end, func = ZGV.Pointer.ArrowFrame_SetAlpha, arg1=0.75 },
-				{ text = "50%",  checked = function() return (ZGV.db.profile.arrowalpha>0.45 and ZGV.db.profile.arrowalpha<0.55) end, func = ZGV.Pointer.ArrowFrame_SetAlpha, arg1=0.5 },
-			},
-			notCheckable=1,
-		})
+
 	tinsert(arrowoptions,{
 			text = L['pointer_arrowmenu_scale'],
 			hasArrow = true,
 			menuList = {
-				{ text = "200%", checked = function() return (ZGV.db.profile.arrowscale>1.90) end, func = ZGV.Pointer.ArrowFrame_SetScale, arg1=2 },
-				{ text = "175%", checked = function() return (ZGV.db.profile.arrowscale>1.65 and ZGV.db.profile.arrowscale<1.85) end, func = ZGV.Pointer.ArrowFrame_SetScale, arg1=1.75 },
-				{ text = "150%", checked = function() return (ZGV.db.profile.arrowscale>1.40 and ZGV.db.profile.arrowscale<1.60) end, func = ZGV.Pointer.ArrowFrame_SetScale, arg1=1.50 },
-				{ text = "125%", checked = function() return (ZGV.db.profile.arrowscale>1.15 and ZGV.db.profile.arrowscale<1.35) end, func = ZGV.Pointer.ArrowFrame_SetScale, arg1=1.25 },
-				{ text = "100%", checked = function() return (ZGV.db.profile.arrowscale>0.90 and ZGV.db.profile.arrowscale<1.10) end, func = ZGV.Pointer.ArrowFrame_SetScale, arg1=1.00 },
-				{ text = "80%",  checked = function() return (ZGV.db.profile.arrowscale>0.75 and ZGV.db.profile.arrowscale<0.85) end, func = ZGV.Pointer.ArrowFrame_SetScale, arg1=0.80 },
-				{ text = "60%",  checked = function() return (ZGV.db.profile.arrowscale>0.55 and ZGV.db.profile.arrowscale<0.65) end, func = ZGV.Pointer.ArrowFrame_SetScale, arg1=0.60 },
+				{ text = L["opt_viewerscale_small"], checked = function() return (ZGV.db.profile.arrowscale<1) end, func = ZGV.Pointer.ArrowFrame_SetScale, arg1=1 },
+				{ text = L["opt_viewerscale_normal"], checked = function() return (ZGV.db.profile.arrowscale==1) end, func = ZGV.Pointer.ArrowFrame_SetScale, arg1=2 },
+				{ text = L["opt_viewerscale_large"], checked = function() return (ZGV.db.profile.arrowscale>1) end, func = ZGV.Pointer.ArrowFrame_SetScale, arg1=3 },
 			},
 			notCheckable=1,
 		})
 	tinsert(arrowoptions,{
 			text = L['pointer_arrowmenu_options'],
-			func = function() InterfaceOptionsFrame_OpenToCategory(ZGV.optionpanels['arrow']) end,
+			func = function() ZGV.GuideMenu:Show("Options","navi") end,
 			notCheckable=1,
 		})
 		
@@ -2774,11 +2745,12 @@ function Pointer.ArrowFrame_ShowMenu()
 end
 
 function Pointer.ArrowFrame_SetAlpha(but,v)
-	ZGV:SetOption("Arrow","arrowalpha "..v)
+	ZGV:SetOption("Navi","arrowalpha "..v)
 end
 
 function Pointer.ArrowFrame_SetScale(but,v)
-	ZGV:SetOption("Arrow","arrowscale "..v)
+	ZGV:SetOption("Navi","arrowscale_s "..v)
+	ZGV.Pointer:SetupArrow()
 end
 
 local leftbutdown,downx,downy

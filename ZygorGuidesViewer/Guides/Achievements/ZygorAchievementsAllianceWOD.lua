@@ -15781,7 +15781,7 @@ This toy is only available during the "Love is in the Air" Event
 talk Lovely Merchant##37674
 buy 1 Romantic Picnic Basket##34480 |use Romantic Picnic Basket##34480
 |tip This toy costs 10 Love Tokens, these can be obtained by completing the dailies during this event.
-Learn the _Romantic Picnic Basket_ toy |toy Romantic Picnic Basket##34480 |goto IronForge/0 33.8,66.6
+Learn the _Romantic Picnic Basket_ toy |toy Romantic Picnic Basket##34480 |goto Ironforge/0 33.8,66.6
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Toys\\Legion\\Rocfeather Skyhorn Kite",{
 condition_end="_G.PlayerHasToy(131811)",

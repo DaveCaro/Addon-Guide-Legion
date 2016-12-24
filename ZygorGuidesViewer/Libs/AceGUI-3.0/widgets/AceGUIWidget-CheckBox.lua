@@ -1,8 +1,8 @@
 --[[-----------------------------------------------------------------------------
 Checkbox Widget
 -------------------------------------------------------------------------------]]
-local Type, Version = "CheckBox", 1022  -- sinus@zygor
-local AceGUI = LibStub and LibStub("AceGUI-3.0", true)
+local Type, Version = "CheckBox-Z", 22
+local AceGUI = LibStub and LibStub("AceGUI-3.0-Z", true)
 if not AceGUI or (AceGUI:GetWidgetVersion(Type) or 0) >= Version then return end
 
 -- Lua APIs
@@ -228,7 +228,7 @@ local methods = {
 			self.desc:Show()
 			--self.text:SetFontObject(GameFontNormal)
 			self.desc:SetText(desc)
-			self:SetDescriptionFont(self.descFont,self.descFontSize)
+			self:SetDescriptionFontObject(self.descFont)
 			self:SetHeight(28 + self.desc:GetHeight())
 		else
 			if self.desc then
@@ -272,7 +272,7 @@ local methods = {
 Constructor
 -------------------------------------------------------------------------------]]
 local function Constructor()
-	local frame = CreateFrame("Button", "AceGUI30CheckBox" .. AceGUI:GetNextWidgetNum(Type), UIParent)
+	local frame = CreateFrame("Button", AceGUI.Prefix.."CheckBox" .. AceGUI:GetNextWidgetNum(Type), UIParent)
 	frame:Hide()
 
 	frame:EnableMouse(true)

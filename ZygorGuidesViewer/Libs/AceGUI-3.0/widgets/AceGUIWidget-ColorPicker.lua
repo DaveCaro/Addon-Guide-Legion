@@ -1,8 +1,8 @@
 --[[-----------------------------------------------------------------------------
 ColorPicker Widget
 -------------------------------------------------------------------------------]]
-local Type, Version = "ColorPicker", 1023
-local AceGUI = LibStub and LibStub("AceGUI-3.0", true)
+local Type, Version = "ColorPicker-Z", 23
+local AceGUI = LibStub and LibStub("AceGUI-3.0-Z", true)
 if not AceGUI or (AceGUI:GetWidgetVersion(Type) or 0) >= Version then return end
 
 local IsLegion = select(4, GetBuildInfo()) >= 70000

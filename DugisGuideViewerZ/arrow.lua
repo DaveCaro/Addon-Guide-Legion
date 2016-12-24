@@ -1602,7 +1602,7 @@ function DugisArrow:Initialize()
 		for _, waypoint in pairs(DugisArrow.waypoints) do
 			dist = DugisGuideViewer:GetDistanceFromPlayer(waypoint.map, waypoint.floor, waypoint.x, waypoint.y)
 			--if dist then DebugPrint("dist="..dist) end
-			if waypoint.isWTag then minimumdist = 90 end
+			if waypoint.isWTag then minimumdist = 30 end
 			
 			if dist and dist < minimumdist and 
 				not waypoint.flightMasterID and 

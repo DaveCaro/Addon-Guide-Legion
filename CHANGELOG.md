@@ -8,48 +8,32 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Zygor Viewer Guide :
 
-- GENERAL : 
+- LEVELING : 
 
-Completely rebuilt guide menu.
+Added new quests to Suramar guide for Insurrection questline.
 
-Options simplified, reorganized, and integrated into guide menu.
+- Dailies : 
 
-- EVENTS : 
+Updated Champions of Highmountain world quest due to game changes.
 
-Updated Winter Veil - Updated quests, dailies, and achievements for the 2016 version of the event.
+- ACHIEVEMENTS : 
 
-- ERROR FIX : 
+"All Toys" Achievement - Fixed a bad map name causing "no valid steps" error.
 
-Fix: an addon conflict and a leftover debug message were resolved in our custom Ace libraries.
+- MOUNTS :
 
-- Dugi Addon :  
+Fixed the location to obtain the Garn Nighthowl
 
-Updated NPC names database
+- GENERAL :
 
-Updated Suramar portals for Taxi system
+Added NPC's for localization.
 
-Fixed Map Preview bug not hiding POIs correctly
+(Travel) Added Teloth'aran Suramar cave entrance to travel system.
 
-WorldQuestTracker bar is now hidden during Pap Preview
+Pointer: Updated arrow menu to use new settings
 
-Fixed conflict with CarBags-Nivaya addon
+Navigation: Added option to disable ant trails
 
-Fixed red flightmaster highlight bug
+DUGI GUIDE : 
 
-Fixed extra minimap tracking menu with Atlas addon
-
-Improved CPU usage for Taxi system 
-
-Added extra location detections to automatically tick steps for guides.
-
-- Dungeon Guides : 
-
-Added Karazhan Attunement Guide
-
-- Leveling Guides : 
-
-Improved "The Delicate Art of Telemancy" quest line in Suramar guide
-
-Fixed missing Demon Hunter Campaign pre-quests
-
-Fixed bad waypoints in Warrior Campaign guide
+- TBA

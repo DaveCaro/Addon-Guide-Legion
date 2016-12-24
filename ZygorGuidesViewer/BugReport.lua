@@ -7,7 +7,7 @@ local table,string,tonumber,tostring,ipairs,pairs,setmetatable = table,string,to
 local FONT=ZGV.Font
 local FONTBOLD=ZGV.FontBold
 local CHAIN = ZGV.ChainCall
-local AceGUI = LibStub("AceGUI-3.0")
+local AceGUI = LibStub("AceGUI-3.0-Z")
 local ui = ZGV.UI
 
 local BZL,BZR=ZGV.BZL,ZGV.BZR

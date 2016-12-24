@@ -3115,9 +3115,22 @@ step
 talk Spiritwalker Graysky##104518
 Speak with Spiritwalker Graysky |q 41623/1 |goto Thunder Totem/6 67.57,74.32
 step
+talk Spiritwalker Graysky##104518
+Enter the Vision |invehicle |goto 67.57,74.32 |q 41623
+stickystart "Slay_Infernal_Siegebreakers_Champions_of_Highmountain"
+step
 Kill enemies around this area
 |tip Use the abilities on your action bar to kill enemies.
-Assault the Demons |q 41623/2 |goto Azshara L/0 36.17,40.15
+Assault the Demons |q 41623/2 |goto Azshara L/0 29.49,42.30
+step
+label "Slay_Infernal_Siegebreakers_Champions_of_Highmountain"
+kill 2 Infernal Siegebreaker##97808+ |q 41623/3 |goto 29.49,42.30
+step
+Follow the path down |goto 29.44,44.22 < 30 |only if walking
+kill Pit Lord##98757 |q 41623/4 |goto 30.56,46.19
+step
+Leave the Vision |outvehicle
+|tip Click the yellow arrow on your action bar.
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41699
@@ -3423,6 +3436,19 @@ click Mana Saber##110903
 |tip Ride through the blue circles with blue light beaming upward out of them all around this whole area.
 |tip Don't worry about getting too far away, you will teleport back when you complete the quest.
 Collect Ley Line Energy |q 43764/1 |goto 32.39,60.15
+|next "Court_Of_Farondis_WQ"
+step
+label quest-45049
+Follow the path |goto Stormheim/0 44.80,56.52 < 30 |only if walking
+accept Like the Wind##45032
+|tip You will accept this quest automatically.
+step
+Goal Reached |q 45049/1 |goto 40.61,62.29
+|tip To reach the goal, you must use the crystals to increase your vertical elevation.
+|tip Purple orbs will instantly reset your dash cooldown.
+|tip Avoid orange orbs, as they will stun you.
+|tip Aim for the glowing blue platforms. These act as checkpoints.
+|tip Dropping a long distance without dashing will cause you to fail.
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41089
@@ -4684,6 +4710,17 @@ kill Lagertha##109015 |q 42964/1 |goto Stormheim/0 62.27,73.41
 |tip This is an elite enemy and you will need a group to kill it.
 |next "Court_Of_Farondis_WQ"
 step
+label quest-42963
+Follow the path |goto Stormheim/0 88.72,9.25 < 15 |only if walking
+Follow the path |goto 86.38,7.68 < 25 |only if walking
+Enter the tomb |goto 83.86,9.48 < 10 |only if walking
+Follow the path |goto Stormheim/1 57.94,53.88 < 15 |only if walking
+accept DANGER: Rulf Bonesnapper##42963 |goto 50.34,79.37
+|tip You will accept this quest automatically.
+step
+kill Rulf Bonesnapper##109317 |q 42963/1 |goto 50.34,79.37
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42991
 Follow the path up |goto Stormheim/0 90.62,10.07 < 20 |only if walking
 Follow the path |goto 88.57,9.02 < 20 |only if walking
@@ -4891,6 +4928,25 @@ kill Helarjar Mystcaller##111325+, Helarjar Berserker##111332+, Hellarjar Soulhu
 Slay 15 Helarjar Kvaldirs |q 43721/1 |goto Stormheim/0 85.09,10.89
 |next "Court_Of_Farondis_WQ"
 step
+label quest-44923
+Follow the path |goto Stormheim/0 72.17,59.32 < 20 |only if walking
+Follow the path |goto 74.17,56.72 < 30 |only if walking
+Follow the path |goto 78.94,57.93 < 30 |only if walking
+Follow the path |goto 81.00,63.90 < 20 |only if walking
+Follow the shore |goto 79.83,70.18 < 30 |only if walking
+Follow the shore |goto 77.90,79.54 < 30 |only if walking
+accept Helarjar Landing: Vrekt##44923 |goto Stormheim/0 73.09,88.90
+|tip You will accept this quest automatically.
+stickystart "killHel"
+step
+Follow the path up |goto 73.41,87.61 < 20 |only if walking
+kill Vaettfang##115846 |q 44923/2 |goto 73.74,86.67
+step
+label "killHel"
+Kill enemies around this area
+kill Cursed Sea Dog##116600+, Helhound##115026+, Mist Seer##116180+, Helarjar Marauder##116601+ |q 44923/1 |goto 73.09,88.90
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42013
 click Grapple Point |only if walking
 |tip It's a grey hook. |only if walking
@@ -4956,6 +5012,22 @@ step
 kill Leystone Basilisk##103514
 collect 40 Leystone-Encrusted Spike##134104 |q 41506/1 |goto 58.18,87.69
 |tip Mine the basilisk corpses.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-45049
+Follow the path |goto Stormheim/0 39.62,63.29 < 30 |only if walking
+Follow the path |goto 43.85,58.14 < 30 |only if walking
+Follow the path |goto 41.49,53.02 < 30 |only if walking
+Follow the path |goto 39.50,55.22 < 20 |only if walking
+accept Like the Wind##45032
+|tip You will accept this quest automatically.
+step
+Goal Reached |q 45049/1 |goto 40.61,62.29
+|tip To reach the goal, you must use the crystals to increase your vertical elevation.
+|tip Purple orbs will instantly reset your dash cooldown.
+|tip Avoid orange orbs, as they will stun you.
+|tip Aim for the glowing blue platforms. These act as checkpoints.
+|tip Dropping a long distance without dashing will cause you to fail.
 |next "Court_Of_Farondis_WQ"
 step
 label quest-40278

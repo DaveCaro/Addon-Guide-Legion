@@ -961,21 +961,21 @@ R Temple of Fal'adora |N|Use the portal to {Temple of Fal'adora} (35.89,45.56)| 
 T A Growing Crisis |QID|44152| |N|(npc:107126) in {Temple of Fal'adora} (42.33,14.91)| |Z|1033 32| |NPC|107126| |FS|1859, 28000|
 A Fragments of Disaster |QID|43361| |N|(npc:107126) in {Temple of Fal'adora} (42.33,14.91)| |Z|1033 32| |NPC|107126| |FS|1859, 28000|
 A The Shardmaidens |QID|43360| |N|(npc:107126) in {Temple of Fal'adora} (42.33,14.91)| |Z|1033 32| |NPC|107126| |FS|1859, 28000|
-N (item:139340) |QID|43361.1| |N|Collect 5 (item:139340) from the ground in {Temple of Fal'adora} (43.02,30.32) (37.12,46.77)| |Z|1033 32|  |FS|1859, 28000|
+N (item:139340) |QID|43361.1| |N|Collect 5 (item:139340) from the ground in {Temple of Fal'adora} (43.02,30.32) (37.12,46.77)| |Z|1033 32| |FS|1859, 28000|
 C The Shardmaidens |QID|105554| |QID|43360.1| |N|Kill 6 (npc:105554) in {Temple of Fal'adora} (37.12,46.77)| |Z|1033 32| |NPC|105554| |FS|1859, 28000|
 N Return to the Temple of Fal'adora |QID|43361.2| |N|Return to the Temple of Fal'adora (37.76,43.50) (42.82,30.45) (41.45,15.59)| |Z|1033 32| |FS|1859, 28000|
 T Fragments of Disaster |QID|43361| |N|(npc:112967) in {Temple of Fal'adora} (42.33,14.91)| |Z|1033 32| |NPC|112967| |FS|1859, 28000|
 T The Shardmaidens |QID|43360| |N|(npc:112967) in {Temple of Fal'adora} (42.33,14.91)| |Z|1033 32| |NPC|112967| |FS|1859, 28000|
 A Another Arcan'dor Closes... |QID|44156| |N|(npc:112967) in {Temple of Fal'adora} (42.33,14.91)| |Z|1033 32| |NPC|112967| |FS|1859, 28000|
 
-R Shal'Aran |QID|44156| |N|Use the portal to return to {Shal'Aran} (40.91,13.73)| |Z|1033 32|  |FS|1859, 28000|
+R Shal'Aran |QID|44156| |N|Use the portal to return to {Shal'Aran} (40.91,13.73)| |Z|1033 32| |FS|1859, 28000|
 T Another Arcan'dor Closes... |QID|44156| |N|(npc:107126) in {Shal'Aran} (36.53,46.81)| |Z|1033 0| |NPC|107126| |FS|1859, 28000|
 A The Stuff of Dreams |QID|43362| |N|(npc:107126) in {Shal'Aran} (36.53,46.81)| |Z|1033 0| |NPC|107126| |FS|1859, 28000|
 A Branch of the Arcan'dor |QID|40125| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |FS|1859, 28000|
 T Branch of the Arcan'dor |QID|40125| |N|(npc:97140) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |FS|1859, 28000|
 
 A The Stuff of Dreams |QID|43362| |N|(npc:107126) in {Shal'Aran} (36.53,46.81)| |Z|1033 0| |NPC|107126| |FS|1859, 28000|
-C The Stuff of Dreams |QID|43362| |N|Enter the Emerald Nightmare Raid and kill (npc:30108) and collect (item:43362)|  |NPC|30108| |FS|1859, 28000|
+C The Stuff of Dreams |QID|43362| |N|Enter the Emerald Nightmare Raid and kill (npc:30108) and collect (item:43362)| |NPC|30108| |FS|1859, 28000|
 T The Stuff of Dreams |QID|43362| |N|(npc:107126) in {Shal'Aran} (36.53,46.81)| |Z|1033 0| |NPC|107126| |FS|1859, 28000|
 
 A Change of Seasons |QID|43502| |N|(npc:107126) in {Shal'Aran} (36.53,46.81)| |Z|1033 0| |NPC|107126| |FS|1859, 41000|
@@ -986,7 +986,7 @@ T Giving It All We've Got |QID|43562| |N|(npc:103155) in {Shal'Aran} (37.00,46.2
 A Ephemeral Manastorm Projector |QID|43563| |N|(npc:103155) in {Shal'Aran} (37.00,46.24)| |Z|1033 0| |NPC|103155| |FS|1859, 41000|
 C Ephemeral Manastorm Projector |QID|43563| |N|Kill (npc:109670) collect 4 (item:139689) in {Suramar City}| |Z|1033 0| |NPC|109670| |FS|1859, 41000| |POI|
 
-R Shal'Aran |TID|43563| |N|Travel to {Shal'Aran} (37.00,46.24)| |Z|1033 0|  |FS|1859, 41000|
+R Shal'Aran |TID|43563| |N|Travel to {Shal'Aran} (37.00,46.24)| |Z|1033 0| |FS|1859, 41000|
 T Ephemeral Manastorm Projector |QID|43563| |N|(npc:103155) in {Shal'Aran} (37.00,46.24)| |Z|1033 0| |NPC|103155| |FS|1859, 41000|
 A Flow Control |QID|43564| |N|(npc:103155) in {Shal'Aran} (37.00,46.24)| |Z|1033 0| |NPC|103155| |FS|1859, 41000|
 C Flow Control |QID|43564| |N|Seal off the Arcway Outlets in Lunastre Lane, The Parade Grounds, and the Midnight Court| |Z|1033 0| |NPC|103155| |FS|1859, 41000| |POI|
@@ -999,7 +999,7 @@ N Survey Evermoon Commons |QID|43565.1| |N|Use the (item:140257) to survey Everm
 N Survey Evermoon Bazaar |QID|43565.2| |N|Use the (item:140257) to survey Evermoon Bazaar (50.0,76.0)| |Z|1033 0| |FS|1859, 41000|
 N Survey Siren's Vigil |QID|43565.3| |N|Use the (item:140257) to survey Siren's Vigil (51.0,83.0)| |Z|1033 0| |FS|1859, 41000|
 
-R Shal'Aran |TID|43565| |N|Travel to {Shal'Aran} (37.00,46.24)| |Z|1033 0|  |FS|1859, 41000|
+R Shal'Aran |TID|43565| |N|Travel to {Shal'Aran} (37.00,46.24)| |Z|1033 0| |FS|1859, 41000|
 T Bring Home the Beacon |QID|43565| |N|(npc:98548) in {Shal'Aran} (36.59, 46.95)| |Z|1033 0| |NPC|98548| |FS|1859, 41000|
 A All In |QID|43567| |N|(npc:103155) in {Shal'Aran} (37.00,46.24)| |Z|1033 0| |NPC|103155| |FS|1859, 41000|
 N Hitting the Books |SID|0|1| |N|Wait for the dialog and you will automatically ported to the Arcway scenario<br/><br/>Kill 3 (npc:113191) in {Forgotten Library}, you should see them as yellow dot on your minimap| |QID|43567| |NPC|113191| |FS|1859, 41000|
@@ -1066,10 +1066,10 @@ T Disillusioned Defector |QID|44722| |N|(npc:107997) in {Evermoon Terrace} (52.0
 A Missing Persons |QID|44724| |N|(npc:107997) in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|107997| |PRE|44955|
 A More Like Me |QID|44723| |N|(npc:116256) in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|116256| |PRE|44955|
 N (spell:202477) |QID|44724| |N|Use the (spell:202477) ability to disguise yourself| |BUFF|Interface\Icons\INV_Helm_Mask_FittedAlpha_B_01_Nightborne_02| |PRE|44955|
-C More Like Me |QID|44723| |N|Use the (item:142065) on (npc:114958) to identify 5 Deserters.  in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|114958| |PRE|44955| |U|142065| |POI|
+C More Like Me |QID|44723| |N|Use the (item:142065) on (npc:114958) to identify 5 Deserters. in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|114958| |PRE|44955| |U|142065| |POI|
 C Missing Persons |QID|44724| |N|Kill demons in {Astravar Harbor} until you collect (item:142066)| |Z|1033 0| |NPC|107997| |PRE|44955| |POI|
 
-R Evermoon Terrace |TID|44723| |N|Use the teleporter to the get to the top of the  {Evermoon Terrace} (51.5,79.0) (52.05,79.15)| |Z|1033 0| |REACH| |PRE|44955|
+R Evermoon Terrace |TID|44723| |N|Use the teleporter to the get to the top of the {Evermoon Terrace} (51.5,79.0) (52.05,79.15)| |Z|1033 0| |REACH| |PRE|44955|
 T Missing Persons |QID|44724| |N|(npc:107997) in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|107997| |PRE|44955|
 T More Like Me |QID|44723| |N|(npc:116256) in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|116256| |PRE|44955|
 A Hostage Situation |QID|44725| |N|(npc:107997) in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|107997| |PRE|44955|
@@ -1099,13 +1099,13 @@ T Tavernkeeper's Fate |QID|44742| |N|(npc:107632) in {Lunastre Estate}| |Z|1033 
 A Essence Triangulation |QID|44752| |N|(npc:97140) in {Lunastre Estate}| |Z|1033 0| |NPC|107632| |PRE|44814|
 C Essence Triangulation |QID|44752| |N|Help Thalyssra collect 3 of Vanthir's Arcane Essences. Click on the Echo of Vanthir npcs| |Z|1033 0| |NPC|107632| |PRE|44814| |POI|
 
-R Evermoon Terrace |TID|44723| |N|Use the teleporter to the get to the top of the  {Evermoon Terrace} (51.5,79.0) (52.05,79.15)| |Z|1033 0| |REACH| |PRE|44814|
-T Essence Triangulation |QID|44752| |N|(npc:97140) in  {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|97140| |PRE|44814|
-A On Public Display |QID|44753| |N|(npc:97140) in  {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|97140| |PRE|44814|
-N (npc:97140) |QID|44753.1| |N|Speak to (npc:97140) in  {Evermoon Terrace}, and say "I am ready, Thalyssra" (52.23,79.04)| |Z|1033 0| |NPC|97140| |PRE|44814| |POI|
+R Evermoon Terrace |TID|44723| |N|Use the teleporter to the get to the top of the {Evermoon Terrace} (51.5,79.0) (52.05,79.15)| |Z|1033 0| |REACH| |PRE|44814|
+T Essence Triangulation |QID|44752| |N|(npc:97140) in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|97140| |PRE|44814|
+A On Public Display |QID|44753| |N|(npc:97140) in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|97140| |PRE|44814|
+N (npc:97140) |QID|44753.1| |N|Speak to (npc:97140) in {Evermoon Terrace}, and say "I am ready, Thalyssra" (52.23,79.04)| |Z|1033 0| |NPC|97140| |PRE|44814| |POI|
 C On Public Display |QID|44753.2| |N|Track Vanthir's Location. Wait for the dialog to end (52.29,79.01)| |Z|1033 0| |NPC|97140| |PRE|44814| |POI|
-T On Public Display |QID|44753| |N|(npc:97140) in  {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|97140| |PRE|44814|
-A Waxing Crescent |QID|44754| |N|(npc:97140) in  {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|97140| |PRE|44814|
+T On Public Display |QID|44753| |N|(npc:97140) in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|97140| |PRE|44814|
+A Waxing Crescent |QID|44754| |N|(npc:97140) in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|97140| |PRE|44814|
 K (npc:115607) |QID|44754.1| |N|Kill (npc:115607) and collect (item:142281) in {Terrace of Order}| |Z|1033 0| |NPC|115607| |PRE|44814| |POI|
 N (npc:107598) |QID|44754.2| |N|Click on the containment field and free (npc:107598) in {Terrace of Order}| |Z|1033 0| |NPC|107598| |PRE|44814| |POI|
 T Waxing Crescent |QID|44754| |N|(npc:107598) in {Terrace of Order}| |Z|1033 0| |NPC|107598| |PRE|44814| |POI|
@@ -1129,11 +1129,11 @@ A A Better Future |QID|41916| |N|(npc:97140) in {Meredil} (41.68, 51.63)| |Z|103
 A Down to Business |QID|43810| |N|(npc:104799) in {Meredil} (41.68, 51.63)| |Z|1033 0| |NPC|104799| |PRE|44756|
 A Taking a Promenade |QID|44831| |N|(npc:70360) in {Meredil} (42.90, 51.45)| |Z|1033 0| |NPC|70360| |PRE|44756|
 
-N As you go...  |AYG|44831| |N|Rally on 8 (npc:115279) in {The Grand Promenade}| |NPC|115279| |PRE|44756| |QID|41916|
+N As you go... |AYG|44831| |N|Rally on 8 (npc:115279) in {The Grand Promenade}| |NPC|115279| |PRE|44756| |QID|41916|
 N (npc:115521) |QID|44831.1| |N|Find (npc:115521) in {The Grand Promenade} (40.65, 64.49)| |Z|1033 0| |NPC|115521| |PRE|44756|
 A Crystal Clearing |QID|44843| |N|(npc:115521) in {The Grand Promenade} (40.65, 64.49)| |Z|1033 0| |NPC|115521| |PRE|44756|
 A Powering Down the Portal |QID|44844| |N|(npc:115521) in {The Grand Promenade} (40.65, 64.49)| |Z|1033 0| |NPC|115521| |PRE|44756|
-N As you go...  |AYG|44844| |N|Rally on 8 (npc:115279) in {The Grand Promenade}| |NPC|115279| |PRE|44756| |QID|41916|
+N As you go... |AYG|44844| |N|Rally on 8 (npc:115279) in {The Grand Promenade}| |NPC|115279| |PRE|44756| |QID|41916|
 K (npc:107217) |QID|44844.1| |N|Kill (npc:107217) in {The Grand Promenade} (40.95,66.34)| |Z|1033 0| |NPC|107217| |PRE|44756| |POI|
 N (npc:111318) |QID|45056| |N|Find (npc:111318) inside the house in {The Grand Promenade}| |Z|1033 0| |NPC|111318| |PRE|44756| |POI|
 C Powering Down the Portal |QID|44844| |N|Click on the green floating crystal to destroy 4 portals in {The Grand Promenade} (40.40,65.85)| |Z|1033 0| |PRE|44756| |POI|
@@ -1144,7 +1144,7 @@ C Down to Business |QID|43810| |N|Kill any 8 Suramar defenders in {The Grand Pro
 
 N (npc:115517) |QID|44831.2| |N|Find (npc:115517) in {Suramar City} (46.48, 58.21) |Z|1033 0| |NPC|115517| |PRE|44756|
 A Nullified |QID|44834| |N|(npc:115517) in {Suramar City} (46.48, 58.21) |Z|1033 0| |NPC|115517| |PRE|44756|
-K (npc:99755) |QID|44834.1| |N|Kill (npc:99755) until you find a (item:142244)| |NPC|99755| |POI|  |L|142244| |PRE|44756|
+K (npc:99755) |QID|44834.1| |N|Kill (npc:99755) until you find a (item:142244)| |NPC|99755| |POI| |L|142244| |PRE|44756|
 N (item:142245) |QID|44834.1| |N|Collect (item:142245) from the ground in {The Grand Promenade}| |NPC|99755| |POI| |L|142244| |PRE|44756|
 T Nullified |QID|44834| |N|(npc:115517) in {Suramar City} (46.48, 58.21) |Z|1033 0| |NPC|115517| |PRE|44756|
 A Shield, Meet Spell |QID|44842| |N|(npc:115517) in {Suramar City} (46.48, 58.21) |Z|1033 0| |NPC|115517| |PRE|44756|
@@ -1274,13 +1274,13 @@ R Kel'balor |QID|44833| |N|Travel to {Kel'balor} (59.29, 42.81)| |Z|1033 0|
 N (npc:112145) |QID|44833.1| |N|Meet with (npc:112145) in {Kel'balor} (41.92, 52.96)| |Z|1033 35| |NPC|112145|
 N (npc:112145) |QID|44833| |N|Protect npc:112145) while she investigates the ley line device in {Kel'balor} (52.15, 45.58)| |Z|1033 35|
 
-R Shal'Aran |TID|44833| |N|(npc:97140) in {Shal'Aran} (36.49, 45.82)| |Z|1033 0| |NPC|97140| |PRE|44740|
-T The Seal's Power |QID|44833| |N|(npc:97140) in {Shal'Aran} (36.49, 45.82)| |Z|1033 0| |NPC|97140| |PRE|44740|
+R Shal'Aran |TID|44833| |N|(npc:97140) in {Shal'Aran} (36.49, 45.82)| |Z|1033 0| |NPC|97140| 
+T The Seal's Power |QID|44833| |N|(npc:97140) in {Shal'Aran} (36.49, 45.82)| |Z|1033 0| |NPC|97140| 
 
---Breaking the Nighthold
+--As strong as our will 
 
 A The Advisor and the Arcanist |QID|45268| |N|(npc:115736) in {Shal'Aran}<br/><br/>This quest is not available until December 13 (36.49,45.83)| |Z|1033 0| |NPC|115736|
-C The Advisor and the Arcanist |QID|45268| |N|Use (item:143597) on a (npc:111901) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|111901| |PRE|44740| |U|143597|
+C The Advisor and the Arcanist |QID|45268| |N|Use (item:143597) on a (npc:111901) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|111901| |U|143597|
 T The Advisor and the Arcanist |QID|45268| |N|(npc:115736) in {Shal'Aran} (36.49,45.83)| |Z|1033 0| |NPC|115736|
 A A Message From Our Enemies |QID|44918| |N|(npc:115736) in {Shal'Aran} (36.49,45.83)| |Z|1033 0| |NPC|115736|
 C A Message From Our Enemies |QID|44918.1| |N|click Mysterious Crystal and Listen to Andaris's Message (36.47,45.79)| |Z|1033 0| 
@@ -1299,7 +1299,7 @@ T Telemantic Expanse |QID|45067| |N|(npc:115710) in {Shal'Aran} (36.62,45.09)| |
 A Survey the City |QID|45065| |N|(npc:115710) in {Shal'Aran} (36.62,45.09)| |Z|1033 0| |NPC|115710|
 
 R Felsoul Hold |QID|45063| |N|Trave to {Felsoul Hold} (34.45,50.02) (34.08,54.36) (33.10,56.55) (33.02,58.64)| |Z|1033 0|
-C The Felsoul Experiments |QID|45063| |N|Use the (item:142399) near the Felsoul Shard| |POI|  |U|142399|
+C The Felsoul Experiments |QID|45063| |N|Use the (item:142399) near the Felsoul Shard| |POI| |U|142399|
 T The Felsoul Experiments |QID|45063| |N|Auto turn in|
 A Resisting Arrest |QID|45062| |N|Auto quest|
 N Disable the Power Source |QID|45062| |N|Use the Advanced Targeting Orb near the Fel Power Source (30.05,61.77) (31.49,63.51) (33.98,66.99) (34.62,67.64)| |Z|1033 0| |U|142400|
@@ -1310,18 +1310,18 @@ T Resisting Arrest |QID|45062| |N|(npc:115736) in {Shal'Aran} (36.49,45.83)| |Z|
 R Evermoon Terrace |QID|45065| |N|Take the portal to {Evermoon Terrace} (36.50, 44.78)| |Z|1033 0|
 
 R Terrace of Order |QID|45065| |N|Travel to {Terrace of Order} (46.06,64.66)| |Z|1033 0|
-C Survey the City |QID|45065| |N|Use (item:142405)  to Survey the Terrace of Order<br/><br/>You can run behind the beacon as you survey to make it survey for longer, so you get it done faster. (46.06,64.66)| |Z|1033 0|
+C Survey the City |QID|45065| |N|Use (item:142405) to Survey the Terrace of Order<br/><br/>You can run behind the beacon as you survey to make it survey for longer, so you get it done faster. (46.06,64.66)| |Z|1033 0|
 
 R Shal'Aran |TID|45062| |N|Travel to {Shal'Aran} (36.49,45.83)| |Z|1033 0| 
 T Survey the City |QID|45065| |N|(npc:115710) in {Shal'Aran} (36.62,45.08)| |Z|1033 0|
 A Experimental Instability |QID|45066| |N|(npc:115710) in {Shal'Aran} (36.62,45.08)| |Z|1033 0|
 
 R Oculeth's Test Chamber |QID|45066.1| |N|Take the portal to {Oculeth's Test Chamber} (34.43,50.00) (35.27,50.87) (36.32,50.59) (37.53,49.51) (44.16,51.67) (46.07,50.75) (48.55,49.26) (48.66,47.16) (49.37,48.35)| |Z|1033 0|
-N Discarded Orbs |QID|45066.3| |N|Collect 4  Discarded Orbs from the ground in {Oculeth's Test Chamber} (58.76,37.75) (58.33,37.99) (58.15,37.54) (58.11,37.14)| |Z|1033 0|
-N Telemancy Notes |QID|45066.2| |N|Collect the Telemancy Notes in {Oculeth's Test Chamber}  (58.48,35.71)| |Z|1033 0|
+N Discarded Orbs |QID|45066.3| |N|Collect 4 Discarded Orbs from the ground in {Oculeth's Test Chamber} (58.76,37.75) (58.33,37.99) (58.15,37.54) (58.11,37.14)| |Z|1033 0|
+N Telemancy Notes |QID|45066.2| |N|Collect the Telemancy Notes in {Oculeth's Test Chamber} (58.48,35.71)| |Z|1033 0|
 
 R Shal'Aran |QID|45066.4| |N|Take the Portal to {Shal'Aran} (59.06,36.16)| |Z|1033 0| 
-T Experimental Instability |QID|45066| |N|(npc:115710) in {Shal'Aran}  (36.62,45.08)| |Z|1033 0|
+T Experimental Instability |QID|45066| |N|(npc:115710) in {Shal'Aran} (36.62,45.08)| |Z|1033 0|
 A Felborne No More |QID|45064| |N|(npc:115736) in {Shal'Aran} (36.49,45.83)| |Z|1033 0| |NPC|115736|
 
 R Estate of the First Arcanist |QID|45064| |N|Take the {Twilight Vineyards} portal (36.94, 45.01)| |Z|1033 0|
@@ -1333,6 +1333,37 @@ T Felborne No More |QID|45064| |N|(npc:115736) in {Shal'Aran} (36.49,45.83)| |Z|
 
 C Fighting on All Fronts |QID|45317| |N|Complete 5 missions from your Order Hall. Any order hall missions will count, so just complete whichever ones you want to.| |Z|1033 0| |PRE|44876| |POI|
 T Fighting on All Fronts |QID|45317| |N|(npc:107966) in {Astravar Harbor} (54.92, 72.80)| |Z|1033 0| |NPC|107966| |PRE|44876|
+
+-- Breaking the Nighthold
+A A Taste of Freedom |QID|45269| |N|(npc:115736) in {Shal'Aran}<br/><br/>This quest is not available until December 20 (36.49,45.83)| |Z|1033 0| |NPC|115736|
+C A Taste of Freedom |QID|45269| |N|Use (item:143597) on a (npc:111901) in {Shal'Aran} (36.51,46.75)| |Z|1033 0| |NPC|111901| |U|143597|
+T A Taste of Freedom |QID|45269| |N|(npc:115736) in {Shal'Aran} (36.49,45.83)| |Z|1033 0| |NPC|115736|
+A I'll Just Leave This Here |QID|44964| |N|(npc:115736) in {Shal'Aran} (36.49,45.83)| |Z|1033 0| |NPC|115736|
+
+R Elor'shan |QID|44964.3| |N|Travel to {Elor'shan} (65.00,41.70)| |Z|1033 0| |REACH|
+N Place the Elor'shan Disruptor |QID|44964.3| |N|Click on the Energy disruptor to place the Elor'shan Disruptor (49.74,75.14) (52.85,59.06) (50.17,42.89) (52.94,33.08) (46.28,16.31)| |Z|1033 34| 
+
+R Kel'balor |QID|44964.2| |N|Travel to {Kel'balor} (65.46,43.52) (63.71,42.71) (61.65,45.94) (59.23,44.59) (61.65,45.94) (59.23,44.59)| |Z|1033 0| |REACH|
+N Place the Kel'balor Disruptor |QID|44964.2| |N|Click on the Energy disruptor to place the Kel'balor Disruptor (50.67,70.28) (56.30,58.64) (56.19,42.58) (61.19,33.56) (54.39,14.11)| |Z|1033 35| 
+
+R Teloth'aran |QID|44964.1| |N|Travel to {Teloth'aran} (59.10,44.80) (58.07,46.58) (54.95,47.28)| |Z|1033 0|
+N Place the Teloth'aran Disruptor |QID|44964.1| |N|Click on the Energy disruptor to place the Place the Teloth'aran Disruptor (42.96,75.85) (58.10,77.76) (62.42,54.51) (57.26,33.13) (49.26,47.97)| |Z|1033 22|
+
+R Shal'Aran |OID|44719| |N|Travel to {Shal'Aran} (36.49,45.83)| |Z|1033 0|
+T I'll Just Leave This Here |QID|44964| |N|(npc:115736) in {Shal'Aran} (36.49,45.83)| |Z|1033 0| |NPC|115736|
+A Breaching the Sanctum |QID|44719| |N|(npc:115710) in {Shal'Aran} (36.62,45.09)| |Z|1033 0| |NPC|115710|
+N (npc:115710) |QID|44719.1| |N|Speak with (npc:115710) in {Shal'Aran} and tell him "I'm ready to enter the sanctum" (36.62,45.09)| |Z|1033 0| |NPC|115710|
+N Enter the Portal |QID|44719.2| |N|Click Portal to Sanctum of Order (36.66,45.04)| |Z|1033 0| 
+C The New Plan |SID|0|1| |N|Find a Way Into the Sanctum of Order<br/><br/>Use the (item:142118) to help you (46.31,66.88) (45.92,66.06)| |Z|1033 0| |QID|44719| |U|142118|
+C Magic Bars the Way |SID|0|2| |N|Kill all 4 (npc:114911) in {Terrace of Order} (47.11,65.75)| |Z|1033 0| |NPC|114911| |U|142118| |QID|44719|
+C Breaking The Barrier |SID|0|3| |N|Kill all 4 (npc:114911) in {Terrace of Order} to Shut Down the Mana Generator (47.11,65.75) (48.06,68.11) (49.24,67.49)| |Z|1033 0| |NPC|114911| |U|142118| |QID|44719|
+K (npc:114914) |SID|0|4| |N|Kill (npc:114914) in {Terrace of Order} (46.00,64.60)| |Z|1033 0| |QID|44719| |NPC|114914|
+C Breaking Through |SID|0|5| |N|Follow the path to reach the Bottom of the Sanctum of Order (45.57,63.53) (44.74,63.45) (43.63,62.54)| |QID|44719| |Z|1033 0|
+C Finally Andaris |SID|0|6| |N|Use the (item:142118) to Drain Andaris's Shield (43.63,62.54)| |QID|44719| |Z|1033 0| |U|142118|
+K (npc:114915) |SID|0|7| |N|Kill (npc:114915) in {Sanctum of Order} (43.72,62.19) (43.44,61.52) (42.60,61.63)| |QID|44719| |Z|1033 0| |NPC|114915| |U|142118|
+C The Nighthold Beckons |SID|0|8| |N|Meet with (npc:115736) and follow here to reach the Entrance to the Nighthold (42.33,61.42) (42.12,60.27) (43.05,59.04)| |QID|44719| |Z|1033 0| |NPC|114915| |U|142118|
+T Breaching the Sanctum |QID|44719| |N|(npc:115367) in {Sanctum Depths} (44.19,60.13)| |Z|1033 0| |NPC|115367|
+A Lord of the Shadow Council |QID|45417| |N|(npc:115367) in {Sanctum Depths} (44.19,60.13)| |Z|1033 0| |NPC|115367|
 
 N Gain Reputation |N|You will need 7000/21000 Revered status with (fac:1859) faction to continue| |OID|44152| 
 N Gain Reputation |N|You will need 20000/21000 Revered status with (fac:1859) faction to continue| |OID|43502| 

@@ -2,8 +2,8 @@
 TabGroup Container
 Container that uses tabs on top to switch between groups.
 -------------------------------------------------------------------------------]]
-local Type, Version = "TabGroup", 35
-local AceGUI = LibStub and LibStub("AceGUI-3.0", true)
+local Type, Version = "TabGroup-Z", 35
+local AceGUI = LibStub and LibStub("AceGUI-3.0-Z", true)
 if not AceGUI or (AceGUI:GetWidgetVersion(Type) or 0) >= Version then return end
 
 -- Lua APIs

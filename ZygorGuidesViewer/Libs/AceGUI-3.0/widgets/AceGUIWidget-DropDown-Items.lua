@@ -1,6 +1,6 @@
 --[[ $Id: AceGUIWidget-DropDown-Items.lua 1137 2016-05-15 10:57:36Z nevcairiel $ ]]--
 
-local AceGUI = LibStub("AceGUI-3.0")
+local AceGUI = LibStub("AceGUI-3.0-Z")
 
 local IsLegion = select(4, GetBuildInfo()) >= 70000
 
@@ -158,7 +158,7 @@ end
 function ItemBase.Create(type)
 	-- NOTE: Most of the following code is copied from AceGUI-3.0/Dropdown widget
 	local count = AceGUI:GetNextWidgetNum(type)
-	local frame = CreateFrame("Button", "AceGUI30DropDownItem"..count)
+	local frame = CreateFrame("Button", AceGUI.Prefix.."DropDownItem"..count)
 	local self = {}
 	self.frame = frame
 	frame.obj = self
@@ -255,7 +255,7 @@ end
 -- A single text entry.
 -- Special: Different text color and no highlight
 do
-	local widgetType = "Dropdown-Item-Header"
+	local widgetType = "Dropdown-Item-Header-Z"
 	local widgetVersion = 1
 	
 	local function OnEnter(this)
@@ -304,7 +304,7 @@ end
 -- Item: Execute
 -- A simple button
 do
-	local widgetType = "Dropdown-Item-Execute"
+	local widgetType = "Dropdown-Item-Execute-Z"
 	local widgetVersion = 1
 	
 	local function Frame_OnClick(this, button)
@@ -332,7 +332,7 @@ end
 -- Some sort of checkbox for dropdown menus.
 -- Does not close the pullout on click.
 do
-	local widgetType = "Dropdown-Item-Toggle"
+	local widgetType = "Dropdown-Item-Toggle-Z"
 	local widgetVersion = 3
 	
 	local function UpdateToggle(self)
@@ -392,7 +392,7 @@ end
 -- Shows a submenu on mouse over
 -- Does not close the pullout on click
 do
-	local widgetType = "Dropdown-Item-Menu"
+	local widgetType = "Dropdown-Item-Menu-Z"
 	local widgetVersion = 2
 	
 	local function OnEnter(this)
@@ -449,7 +449,7 @@ end
 -- Item: Separator
 -- A single line to separate items
 do
-	local widgetType = "Dropdown-Item-Separator"
+	local widgetType = "Dropdown-Item-Separator-Z"
 	local widgetVersion = 2
 	
 	-- exported, override

@@ -590,7 +590,7 @@ If you're new to the guides, or have only started using them on this character, 
 
 		["opt_travel_system_advanced"] = "Show Advanced Customization Options",
 
-		['opt_antspacing'] = "Ant density",			['opt_antspacing_desc'] = "Sets how dense are 'ant trails' displayed on navigation paths.\n\nDense ant trails cause a heavier performance hit.",
+		['opt_antspacing'] = "Enable ant trails",			['opt_antspacing_desc'] = "Sets how dense are 'ant trails' displayed on navigation paths.\n\nDense ant trails cause a heavier performance hit.",
 		['opt_antspacing_0'] = "Ants off",
 		['opt_antspacing_yd'] = "%d yd apart",
 		['opt_antspacing_yd_def'] = "%d yd apart (default)",

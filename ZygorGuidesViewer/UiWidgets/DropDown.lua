@@ -8,7 +8,7 @@ local FONT=ZGV.Font
 local FONTBOLD=ZGV.FontBold
 local L = ZGV.L
 local CHAIN = ZGV.ChainCall
-local AceGUI = LibStub("AceGUI-3.0")
+local AceGUI = LibStub("AceGUI-3.0-Z")
 
 local DropDown = {}
 local private = {}
@@ -46,7 +46,7 @@ local DEFAULTWIDTH = 150
 function DropDown:New(parent,style,frameLevel)
 	style = style or 1
 
-	local dropdownObj = CHAIN(AceGUI:Create("Dropdown"))
+	local dropdownObj = CHAIN(AceGUI:Create("Dropdown-Z"))
 		:SetWidth(DEFAULTWIDTH)
 		:SetText("Dropdown Text")
 	.__END
@@ -145,12 +145,12 @@ function DropDown:AddItem(obj,value,callback, tooltip)
 	local item
 	if type(obj) == "number" then obj = tostring(obj) end
 	if type(obj) == "string" then
-		item = AceGUI:Create("Dropdown-Item-Toggle")
+		item = AceGUI:Create("Dropdown-Item-Toggle-Z")
 		item:SetText(obj)
-	elseif type(obj) == "table" and obj.type == "Dropdown-Item-Toggle" then
+	elseif type(obj) == "table" and obj.type == "Dropdown-Item-Toggle-Z" then
 		item = obj
 	else
-		error("Can not add to dropdown. Needs to be string or Dropdown-Item-Toggle.")
+		error("Can not add to dropdown. Needs to be string or Dropdown-Item-Toggle-Z.")
 	end
 
 	-- Overwrite default because default does not close pullout and allows for multiple clicks at once, which we don't want.
@@ -267,7 +267,7 @@ function DropDown:GetCurrentSelectedItemValue()
 end
 
 function DropDown:SetCurrentSelectedItem(item)
-	assert(item and item.type=="Dropdown-Item-Toggle", "Invalid item")
+	assert(item and item.type=="Dropdown-Item-Toggle-Z", "Invalid item")
 
 	if item.disabled then return end
 

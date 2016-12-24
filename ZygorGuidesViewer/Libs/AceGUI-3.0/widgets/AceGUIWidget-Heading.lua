@@ -1,8 +1,8 @@
 --[[-----------------------------------------------------------------------------
 Heading Widget
 -------------------------------------------------------------------------------]]
-local Type, Version = "Heading", 1020
-local AceGUI = LibStub and LibStub("AceGUI-3.0", true)
+local Type, Version = "Heading-Z", 20
+local AceGUI = LibStub and LibStub("AceGUI-3.0-Z", true)
 if not AceGUI or (AceGUI:GetWidgetVersion(Type) or 0) >= Version then return end
 
 -- Lua APIs

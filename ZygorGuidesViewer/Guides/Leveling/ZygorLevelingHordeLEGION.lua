@@ -16434,6 +16434,122 @@ Slay #8# Felbourne |q 45064/2 |goto 65.48,55.02
 step
 talk First Arcanist Thalyssra##115736
 turnin Felborne No More##45064 |goto 36.49,45.83 |region suramar_shalaran
+step
+talk First Arcanist Thalyssra##115736
+accept A Taste of Freedom##45269 |goto 36.49,45.83 |region suramar_shalaran
+step
+Use the Fruit of the Arcan'dor on a Suramar Refugee |use Fruit of the Arcan'dor##143597
+|tip There are Suramar Refugees all around inside the cave.
+Cure a Suramar Refugee |q 45269/1 |goto 37.49,47.44 |region suramar_shalaran
+step
+talk First Arcanist Thalyssra##115736
+turnin A Taste of Freedom##45269 |goto 36.49,45.83 |region suramar_shalaran
+accept I'll Just Leave This Here##44964 |goto 36.49,45.83 |region suramar_shalaran
+step
+Follow the path |goto 65.00,41.70 < 20 |only if walking
+Follow the path |goto Suramar/34 49.74,75.14 < 15 |walk
+Follow the path |goto Suramar/34 52.85,59.06 < 15 |walk
+Follow the path |goto Suramar/34 50.17,42.89 < 15 |walk
+Follow the path |goto Suramar/34 52.94,33.08 < 15 |walk
+click Energy Disruptor
+Place the Elor'shan Disruptor |q 44964/3 |goto Suramar/34 46.28,16.31
+step
+Follow the path up |goto Suramar/0 65.46,43.52 < 20 |only if walking
+Follow the road |goto Suramar/0 63.71,42.71 < 20 |only if walking
+Continue following the road |goto Suramar/0 61.65,45.94 < 20 |only if walking
+Run down the stairs |goto Suramar/0 59.23,44.59 < 20 |only if walking
+Follow the path |goto Suramar/35 50.67,70.28 < 15 |walk
+Follow the path |goto Suramar/35 56.30,58.64 < 15 |walk
+Follow the path |goto Suramar/35 56.19,42.58 < 15 |walk
+Follow the path |goto Suramar/35 61.19,33.56 < 15 |walk
+click Energy Disruptor
+|tip Wait for breaks in the pink energy lines.  They deal massive damage.
+Place the Kel'balor Disruptor |q 44964/2 |goto Suramar/35 54.39,14.11
+step
+Follow the path |goto Suramar/0 59.10,44.80 < 20 |only if walking
+Follow the path |goto Suramar/0 58.07,46.58 < 20 |only if walking
+Follow the road |goto Suramar/0 54.95,47.28 < 20 |only if walking
+Follow the path |goto Suramar/22 42.96,75.85 < 15 |walk
+Follow the path |goto Suramar/22 58.10,77.76 < 15 |walk
+Run down the stairs |goto Suramar/22 62.42,54.51 < 15 |walk
+Follow the path |goto Suramar/22 57.26,33.13 < 15 |walk
+click Energy Disruptor
+Place the Teloth'aran Disruptor |q 44964/1 |goto Suramar/22 49.26,47.97
+step
+talk First Arcanist Thalyssra##115736
+turnin I'll Just Leave This Here##44964 |goto Suramar/0 36.64,44.97 |region suramar_shalaran
+step
+talk Chief Telemancer Oculeth##115710
+accept Breaching the Sanctum##44719 |goto 36.62,45.09 |region suramar_shalaran
+step
+talk Chief Telemancer Oculeth##115710
+Tell him _"I am ready to enter the Sanctum."_
+Watch the dialogue
+Speak with Oculeth |q 44719/1 |goto 36.62,45.09 |region suramar_shalaran
+step
+click Portal to Sanctum of Order
+Enter the Portal |q 44719/2 |goto 36.66,45.04 |region suramar_shalaran
+step
+Begin the Assault of the Sanctum of Order Scenario |scenariostart |q 44719
+step
+Run up the stairs |goto 46.31,66.88 < 20 |only if walking
+Use the Telemancy Orbs |use Telemancy Orbs##142118
+|tip Angry Withered will spawn to help you fight.
+Find a Way Into the Sanctum of Order |scenariostage 1 |goto 45.92,66.06 |q 44719
+step
+Use the Telemancy Orbs |use Telemancy Orbs##142118
+|tip Angry Withered will spawn to help you fight.
+kill Duskwatch Warcaster##114911+
+|tip Kill all 4 of them at this location.
+Find a Weakness to the Barrier |scenariostage 2 |goto 47.11,65.75 |q 44719
+step
+Use the Telemancy Orbs |use Telemancy Orbs##142118
+|tip Angry Withered will spawn to help you fight.
+kill Duskwatch Warcaster##114911+
+|tip Kill all 4 of them at this location.
+Shut Down the Mana Generator |scenariogoal 3/34584 |count 2 |goto 48.06,68.11 |q 44719
+step
+Use the Telemancy Orbs |use Telemancy Orbs##142118
+|tip Angry Withered will spawn to help you fight.
+kill Duskwatch Warcaster##114911+
+|tip Kill all 4 of them at this location.
+Shut Down the Mana Generator |scenariogoal 3/34584 |count 3 |goto 49.24,67.49 |q 44719
+step
+Use the Telemancy Orbs |use Telemancy Orbs##142118
+|tip Angry Withered will spawn to help you fight.
+kill Dalion##114914 |scenariostage 4 |goto 46.00,64.60 |q 44719
+step
+Follow the path |goto 45.57,63.53 < 20 |region suramar_sanctum_of_order
+Follow the path |goto 44.74,63.45 < 20 |region suramar_sanctum_of_order
+Use the Telemancy Orbs |use Telemancy Orbs##142118
+|tip Angry Withered will spawn to help you fight.
+Reach the Bottom of the Sanctum of Order |scenariostage 5 |goto 43.63,62.54 |region suramar_sanctum_of_order |q 44719
+step
+Use the Telemancy Orbs |use Telemancy Orbs##142118
+|tip Angry Withered will spawn to help you fight.
+|tip Use the Telemancy Orbs repeatedly to drain Andaris's Shield.
+Use the Withered to Drain Andaris's Shield |scenariostage 6 |goto 43.63,62.54 |region suramar_sanctum_of_order |q 44719
+step
+Run down the stairs |goto 43.72,62.19 < 15 |walk |region suramar_sanctum_of_order
+Follow the path |goto 43.44,61.52 < 20 |walk |region suramar_sanctum_of_order
+Use the Telemancy Orbs |use Telemancy Orbs##142118
+|tip Angry Withered will spawn to help you fight.
+kill Andaris Narassin##114915 |scenariostage 7 |goto 42.60,61.63 |region suramar_sanctum_of_order |q 44719
+step
+Meet with Thalyssra |goto 42.33,61.42 < 20 |noway |c |region suramar_sanctum_of_order |q 44719
+step
+Watch the dialogue |goto 42.33,61.42 |n |region suramar_sanctum_of_order
+Begin Following Thalyssra |goto 42.33,61.42 > 25 |noway |c |region suramar_sanctum_of_order |q 44719
+step
+Run down the ramp |goto 42.12,60.27 < 20 |region suramar_sanctum_depths
+Continue down the ramp |goto 43.05,59.04 < 20 |region suramar_sanctum_depths
+Watch the dialogue
+Reach the Entrance to the Nighthold |scenarioend |goto 44.10,59.99 |region suramar_sanctum_depths |q 44719
+Secure the Breach |q 44719/3 |goto 44.10,59.99 |region suramar_sanctum_depths
+step
+talk Archmage Khadgar##115367
+turnin Breaching the Sanctum##44719 |goto 44.19,60.13 |region suramar_sanctum_depths
+accept Lord of the Shadow Council##45417 |goto 44.19,60.13 |region suramar_sanctum_depths
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Legion (100-110)\\Order Hall Quests",{
 author="support@zygorguides.com",

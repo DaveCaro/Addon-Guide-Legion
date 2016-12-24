@@ -1,4 +1,4 @@
-local AceGUI = LibStub("AceGUI-3.0")
+local AceGUI = LibStub("AceGUI-3.0-Z")
 
 -- Lua APIs
 local pairs, assert, type = pairs, assert, type
@@ -20,7 +20,7 @@ local CreateFrame, UIParent = CreateFrame, UIParent
 
 ]]
 do
-	local Type = "Window"
+	local Type = "Window-Z"
 	local Version = 4
 
 	local function frameOnClose(this)
@@ -153,7 +153,7 @@ do
 	local function Constructor()
 		local frame = CreateFrame("Frame",nil,UIParent)
 		local self = {}
-		self.type = "Window"
+		self.type = Type
 		
 		self.Hide = Hide
 		self.Show = Show

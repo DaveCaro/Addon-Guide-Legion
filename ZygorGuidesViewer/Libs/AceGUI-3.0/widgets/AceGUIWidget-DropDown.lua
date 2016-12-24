@@ -1,5 +1,5 @@
 --[[ $Id: AceGUIWidget-DropDown.lua 1116 2014-10-12 08:15:46Z nevcairiel $ ]]--
-local AceGUI = LibStub("AceGUI-3.0")
+local AceGUI = LibStub("AceGUI-3.0-Z")
 
 -- Lua APIs
 local min, max, floor = math.min, math.max, math.floor
@@ -38,8 +38,8 @@ local function fixstrata(strata, parent, ...)
 end
 
 do
-	local widgetType = "Dropdown-Pullout"
-	local widgetVersion = 1003
+	local widgetType = "Dropdown-Pullout-Z"
+	local widgetVersion = 3
 	
 	--[[ Static data ]]--
 	
@@ -270,7 +270,7 @@ do
 	
 	local function Constructor()
 		local count = AceGUI:GetNextWidgetNum(widgetType)
-		local frame = CreateFrame("Frame", "AceGUI30Pullout"..count, UIParent)
+		local frame = CreateFrame("Frame", AceGUI.Prefix.."Pullout"..count, UIParent)
 		local self = {}
 		self.count = count
 		self.type = widgetType
@@ -323,7 +323,7 @@ do
 		scrollFrame.obj = self
 		itemFrame.obj = self
 		
-		local slider = CreateFrame("Slider", "AceGUI30PulloutScrollbar"..count, scrollFrame)
+		local slider = CreateFrame("Slider", AceGUI.Prefix.."PulloutScrollbar"..count, scrollFrame)
 		slider:SetOrientation("VERTICAL")
 		slider:SetHitRectInsets(0, 0, -10, 0)
 		slider:SetBackdrop(sliderBackdrop)
@@ -369,8 +369,8 @@ do
 end
 
 do
-	local widgetType = "Dropdown"
-	local widgetVersion = 1030
+	local widgetType = "Dropdown-Z"
+	local widgetVersion = 30
 	
 	--[[ Static data ]]--
 	
@@ -439,7 +439,7 @@ do
 	local function ShowMultiText(self)
 		local text
 		for i, widget in self.pullout:IterateItems() do
-			if widget.type == "Dropdown-Item-Toggle" then
+			if widget.type == "Dropdown-Item-Toggle-Z" then
 				if widget:GetValue() then
 					if text then
 						text = text..", "..widget:GetText()
@@ -475,7 +475,7 @@ do
 	
 	-- exported, AceGUI callback
 	local function OnAcquire(self)
-		local pullout = AceGUI:Create("Dropdown-Pullout")
+		local pullout = AceGUI:Create("Dropdown-Pullout-Z")
 		self.pullout = pullout
 		pullout.userdata.obj = self
 		pullout:SetCallback("OnClose", OnPulloutClose)
@@ -593,7 +593,7 @@ do
 	end
 	
 	local function AddListItem(self, value, text, itemType)
-		if not itemType then itemType = "Dropdown-Item-Toggle" end
+		if not itemType then itemType = "Dropdown-Item-Toggle-Z" end
 		local exists = AceGUI:GetWidgetVersion(itemType)
 		if not exists then error(("The given item type, %q, does not exist within AceGUI-3.0"):format(tostring(itemType)), 2) end
 
@@ -610,7 +610,7 @@ do
 	
 	local function AddCloseButton(self)
 		if not self.hasClose then
-			local close = AceGUI:Create("Dropdown-Item-Execute")
+			local close = AceGUI:Create("Dropdown-Item-Execute-Z")
 			close:SetText(CLOSE)
 			self.pullout:AddItem(close)
 			self.hasClose = true
@@ -695,8 +695,8 @@ do
 	
 	local function Constructor()
 		local count = AceGUI:GetNextWidgetNum(widgetType)
-		local frame = CreateFrame("Frame", "AceGUI30DropDown"..count.."Frame", UIParent)
-		local dropdown = CreateFrame("Frame", "AceGUI30DropDown"..count, frame, "UIDropDownMenuTemplate")
+		local frame = CreateFrame("Frame", AceGUI.Prefix.."DropDown"..count.."Frame", UIParent)
+		local dropdown = CreateFrame("Frame", AceGUI.Prefix.."DropDown"..count, frame, "UIDropDownMenuTemplate")
 		
 		local self = {}
 		self.type = widgetType

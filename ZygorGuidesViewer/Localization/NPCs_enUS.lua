@@ -27101,4 +27101,10 @@ ZygorGuidesViewer_L("NPCs", "enUS", function() return {
 [115825]="Terrified Lunastre Attendant|",
 [115954]="Valthis Ama'ran|",
 [114883]="Grand Magister Rommath|",
+[98757]="Pit Lord|",
+[115372]="First Arcanist Thalyssra|",
+[114911]="Duskwatch Warcaster|",
+[114914]="Dalion|",
+[114915]="Andaris Narassin|",
+[115367]="Archmage Khadgar|",
 } end)

@@ -1,5 +1,5 @@
-local Type, Version = "MultiLineEditBox", 1028 -- based on 28 -- Shooter@Zygor
-local AceGUI = LibStub and LibStub("AceGUI-3.0", true)
+local Type, Version = "MultiLineEditBox-Z", 28
+local AceGUI = LibStub and LibStub("AceGUI-3.0-Z", true)
 if not AceGUI or (AceGUI:GetWidgetVersion(Type) or 0) >= Version then return end
 
 -- Lua APIs

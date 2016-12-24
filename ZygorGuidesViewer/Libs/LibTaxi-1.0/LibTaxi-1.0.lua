@@ -929,6 +929,9 @@ do
 	function Lib:TestAllFlights()
 		local s = ""
 
+		local BZ = LibStub("LibBabble-SubZone-3.0")
+		local BZL,BZR = BZ:GetUnstrictLookupTable(),BZ:GetReverseLookupTable()
+
 		for i=1,NumTaxiNodes() do
 			local x,y=TaxiNodePosition(i)
 			x,y=floor(x*1000),floor(y*1000)
@@ -937,8 +940,6 @@ do
 			local name=TaxiNodeName(i)
 			local ttag = x..":"..y
 
-			local BZ = LibStub("LibBabble-SubZone-3.0")
-			local BZL,BZR = BZ:GetUnstrictLookupTable(),BZ:GetReverseLookupTable()
 
 			local tagmatch = Lib:FindTaxiByTag(GetCurrentMapContinent(),ttag)
 
