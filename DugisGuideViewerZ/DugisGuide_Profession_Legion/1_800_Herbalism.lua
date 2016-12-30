@@ -61,8 +61,10 @@ A Ragged Strips of Silk |QID|40015| |N|Auto quest while gathering (item:124101)<
 
 R Dalaran |TID|40035| |N|Travel to {Dalaran} (42.94, 33.44)| |Z|1014 10| 
 T Ragged Strips of Silk |QID|40015| |N|(npc:92464) in {Magus Commerce Exchange} (42.94, 33.44)| |Z|1014 10| |NPC|92464|
-A Desperation Breeds Ingenuity |QID|40016| |N|Kill Withered enemies around this area and collect 6 (item:129153) (45.66,15.15)| |Z|1015 0| |NPC|92464| |POI|
-C Desperation Breeds Ingenuity |QID|40016| |N|(npc:92464) in {Magus Commerce Exchange} (42.94, 33.44)| |Z|1014 10| |NPC|92464|
+A Desperation Breeds Ingenuity |QID|40016| |N|(npc:92464) in {Magus Commerce Exchange} (42.94, 33.44)| |Z|1014 10| |NPC|92464| |POI|
+
+R Azsuna |QID|40016| |N|Travel to {Azsuna} (45.66,15.15)| |Z|1015 0| 
+C Desperation Breeds Ingenuity |QID|40016| |N|Kill Withered enemies around this area and collect 6 (item:129153) (45.66,15.15)| |Z|1015 0| |NPC|92464|
 
 R Dalaran |TID|40016| |N|Travel to {Dalaran} (42.94, 33.44)| |Z|1014 10| 
 T Desperation Breeds Ingenuity |QID|40016| |N|(npc:92464) in {Magus Commerce Exchange} (42.94, 33.44)| |Z|1014 10| |NPC|92464|

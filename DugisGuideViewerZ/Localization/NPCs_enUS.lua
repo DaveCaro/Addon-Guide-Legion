@@ -20995,6 +20995,12 @@ function NPC:Initialize()
 [115271]="Ancient Shieldguard",
 [107574]="King Anduin Wrynn",
 [112145]="Arcanist Valtrois",
+[115825]="Terrified Lunastre Attendant",
+[115826]="Terrified Lunastre Noble",
+[114914]="Dallion",
+[114911]="Duskwatch Warcaster",
+[114915]="Andaris Narassin",
+[115367]="Archmage Khadgar",
 }
 	end
 

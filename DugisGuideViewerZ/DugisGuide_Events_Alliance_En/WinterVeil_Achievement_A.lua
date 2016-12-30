@@ -32,7 +32,7 @@ R Rebel Camp |N|Travel to {Rebel Camp} in {Northern Stranglethorn} (47.2, 11.0)|
 N Brother Nimetz |N|Use Mistletoe on (npc:739) in {Northern Stranglethorn} (47.2, 11.0)| |U|21519| |AID|1686| |AC|1| |Z|37| |NPC|739|
 
 R Theramore Isle |N|Travel to {Theramore Isle} (41.1, 66.0)| |Z|141| |NPC|16227| |AID|1686|
-N Brother Karman |N|Use Mistletoe on (npc:8140) in {Dustwallow Marsh} (41.1, 66.0)| |U|21519| |AID|1686| |AC|3| |Z|141| |NPC|8140|
+N Brother Karman |N|Use Mistletoe on (npc:8140) in {Dustwallow Marsh} (67.39, 47.40)| |U|21519| |AID|1686| |AC|3| |Z|141| |NPC|8140|
 
 R Dalaran |N|Travel to Dalaran (59.0, 68.3)| |Z|504| |AID|1690| |NPC|26879|
 N (item:17712) |T| |N|Get the Winter Veil Disguise Kit from your mailbox, It should arrive within 24 hours after completing the Feast of Winter Veil quest section of this guide| |L|17712| |AID|1690|

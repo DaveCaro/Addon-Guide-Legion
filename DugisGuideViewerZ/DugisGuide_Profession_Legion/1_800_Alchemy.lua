@@ -184,10 +184,10 @@ T Channeling Our Efforts |QID|39347| |N|(npc:92457) in {Dalaran} (44.17,28.71)| 
 A The Prime Ingredient |QID|39348| |N|(npc:92457) in {Dalaran} (44.17,28.71)| |Z|1014 10| |NPC|92457| 
 A A Hope in Helheim |QID|39350| |N|(npc:92457) in {Dalaran} (44.17,28.71)| |Z|1014 10| |NPC|92457| 
 A Heavy, But Helpful |QID|39349| |N|(npc:92457) in {Dalaran} (44.17,28.71)| |Z|1014 10| |NPC|92457| 
-B (item:127912) |OID|39351| |N|Buy (item:127912) from (npc:96784) in {Dalaran} (52.6, 35.1)| |Z|1014 10| |NPC|96784| |L|127912|
-B (item:127913) |OID|39351| |N|Buy (item:127913) from (npc:96784) in {Dalaran} (52.6, 35.1)| |Z|1014 10| |NPC|96784| |L|127913|
-B (item:127914) |OID|39351| |N|Buy (item:127914) from (npc:96784) in {Dalaran} (52.6, 35.1)| |Z|1014 10| |NPC|96784| |L|127914|
-B (item:3371) |OID|39351| |N|Buy 3 (item:3371) from (npc:96784) in {Dalaran} (52.6, 35.1)| |Z|1014 10| |NPC|96784| |L|3371 3|
+B (item:127912) |OID|39351| |N|Buy (item:127912) from (npc:92457) in {The Agronomical Apothecary} (42.13, 32.38)| |Z|1014 10| |NPC|96784| |L|127912|
+B (item:127913) |OID|39351| |N|Buy (item:127913) from (npc:92457) in {The Agronomical Apothecary} (42.13, 32.38)| |Z|1014 10| |NPC|96784| |L|127913|
+B (item:127914) |OID|39351| |N|Buy (item:127914) from (npc:92457) in {The Agronomical Apothecary} (42.13, 32.38)| |Z|1014 10| |NPC|96784| |L|127914|
+B (item:3371) |OID|39351| |N|Buy 3 (item:3371) (npc:92457) in {The Agronomical Apothecary} (42.13, 32.38)| |Z|1014 10| |NPC|96784| |L|3371 3|
 N Materials Required |OID|39351| |N|<b>20 (item:124101)<br/><b>10 (item:124102)<br/><b>20 (item:124103)<br/><b>10 (item:124104)<br/><b>21 (item:124105)<br/><br/>You can collect it with Herbalism or purchase from the Auction| |L|124101 20|
 N Materials Required |OID|39351| |N|<b>20 (item:124101)<br/><b>10 (item:124102)<br/><b>20 (item:124103)<br/><b>10 (item:124104)<br/><b>21 (item:124105)<br/><br/>You can collect it with Herbalism or purchase from the Auction| |L|124102 10|
 N Materials Required |OID|39351| |N|<b>20 (item:124101)<br/><b>10 (item:124102)<br/><b>20 (item:124103)<br/><b>10 (item:124104)<br/><b>21 (item:124105)<br/><br/>You can collect it with Herbalism or purchase from the Auction| |L|124103 20|

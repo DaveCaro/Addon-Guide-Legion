@@ -16,9 +16,16 @@
 	<Script file="..\DugisGuide_Ach_Legion\Bigger_Fish_to_Fry.lua"/>	
 
 	<Script file="..\DugisGuide_Ach_Legion\Broken_Isles_Diplomat.lua"/>	
+	<Script file="..\DugisGuide_Ach_Legion\Rep_Conjurer_Margoss.lua"/>	
+	<Script file="..\DugisGuide_Ach_Legion\Rep_Court_of_Farondis.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Rep_Dreamweavers.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Rep_Highmountain_Tribe.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Rep_The_Nightfallen.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Rep_The_Wardens.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Rep_Valarjar.lua"/>
 	
 	<Script file="..\DugisGuide_Ach_Legion\Loremaster_of_Legion.lua"/>
-	<Script file="..\DugisGuide_Ach_Legion\Variety_is_the_Spice_of_Life.lua"/>	
+	<Script file="..\DugisGuide_Ach_Legion\Variety_is_the_Spice_of_Life.lua"/>
 
 	<Script file="Tiny_Terrors_Tanaan_A.lua"/>
 	<Script file="Big_Adventure_A.lua"/>

@@ -98,6 +98,11 @@ function TaxiDB:Initialize()
                                         if i == pinSlot then
                                             pin.Icon:SetTexture("Interface\\TaxiFrame\\UI-Taxi-Icon-Red")
                                         end
+                                        
+                                        pin:HookScript("OnLeave", function()
+                                            HighlightFlightmasterDestination()
+                                        end)
+                                        
                                     end
                                 else
                                     local btn = _G["TaxiButton"..i]

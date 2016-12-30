@@ -3,6 +3,18 @@ function Guide:Initialize()
 	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Legion|r", "Class Campaign (98-110)", nil, nil, "DRUID", "L", nil, function()
 return [[
 
+R Stormwind City |QID|44663| |N|Travel to {Stormwind City} (80.28, 35.06)| |Z|301 0| |FAC|Alliance|
+A In the Blink of an Eye |QID|44663| |N|(npc:114562) should appear next to you in {Stormwind City} or speak to (npc:107934) to get the quest (36.8, 43.2)| |Z|301 0| |NPC|114562, 107934| |FAC|Alliance|
+N Take the Portal to Dalaran |QID|44663.1| |N|Take the Portal to Dalaran in {Petitioner's Chamber} (80.28, 35.06)| |Z|301 0| |FAC|Alliance|
+C In the Blink of an Eye |QID|44663.2| |N|Speak to (npc:113986) to witness Dalaran's teleportation in {Chamber of the Guardian} (49.67, 48.14)| |Z|32 21| |NPC|113986| |FAC|Alliance| 
+T In the Blink of an Eye |QID|44663| |N|(npc:111109), in {Dalaran} (57.56, 45.84)| |Z|1014 10| |NPC|111109| |FAC|Alliance|
+
+R Orgrimmar |QID|44184| |N|Travel to {Orgrimmar} (46.82, 68.24)| |Z|321 1| |FAC|Horde|
+A In the Blink of an Eye |QID|44184| |N|(npc:114562) should appear next to you in {Valley of Strength} or speak to (npc:4311) to get the quest (46.0, 13.0)| |Z|4| |NPC|114562, 4311| |FAC|Horde|
+N Take the Portal to Dalaran |QID|44184.1| |N|Take the Portal to Dalaran in {Cleft of Shadow} (36.26, 71.07)| |Z|321 2| |FAC|Horde|
+C In the Blink of an Eye |QID|44184.2| |N|Speak to (npc:113986) to witness Dalaran's teleportation in {Chamber of the Guardian} (49.67, 48.14)| |Z|32 21| |NPC|113986| |FAC|Horde|
+T In the Blink of an Eye |QID|44184| |N|(npc:111109) in {Dalaran} (57.95, 45.66)| |Z|1014 10| |NPC|111109| |FAC|Horde|
+
 A A Summons From Moonglade |QID|40643| |N|(npc:101061) in {Dalaran} (57.85, 45.59)| |Z|1014 10| |NPC|101061|
 
 R Moonglade |QID|40643| |N|Travel to {Moonglade} (56.25, 32.22)| |Z|241 0|
@@ -10,7 +22,7 @@ T A Summons From Moonglade |QID|40643| |N|(npc:101064) in {Nighthaven} (56.25, 3
 A Call of the Wilds |QID|41106| |N|(npc:101064) in {Nighthaven} (56.25, 32.22)| |Z|241 0| |NPC|101064|
 N Zen'tabra |QID|41106.1| |N|Speak to (npc:103136) in {Lake Elune'ara} (43.68, 53.25)| |Z|241 0| |NPC|103136|
 N Naralex's Camp |QID|41106.2| |N|Find (npc:103133)'s Camp in {Lake Elune'ara} (55.12, 70.79)| |Z|241 0| |NPC|103133|
-C  Call of the Wilds |QID|41106.3| |N|Follow the scent trail to find and speak to (npc:103133) in {Moonglade} (40.17, 70.70)| |Z|241 0| |NPC|103133|
+C Call of the Wilds |QID|41106.3| |N|Follow the scent trail to find and speak to (npc:103133) in {Moonglade} (40.17, 70.70)| |Z|241 0| |NPC|103133|
 T Call of the Wilds |QID|41106| |N|(npc:101064) in {Nighthaven} (56.14, 31.78)| |Z|241 0| |NPC|101064|
 A The Dreamway |QID|40644| |N|(npc:101064) in {Nighthaven} (56.14, 31.78)| |Z|241 0| |NPC|101064|
 N (npc:101064) |QID|40644.1| |N|Accompany (npc:101064) at the {Stormrage Barrow Dens} (64.95, 60.50)| |Z|241 0| |NPC|101064|

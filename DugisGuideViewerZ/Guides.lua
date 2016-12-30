@@ -205,7 +205,7 @@ function Guides:Initialize()
         
         if treeData then
             local wrapper = GUIUtils:SetTreeData(guidesMainScroll.frame, nil, "guideategories", 
-                treeData, nil, nil, nil, nil, 400, -30, nil, nil
+                treeData, nil, nil, nil, nil, 400, -30, 5, -5
                 ,function(oryginalText)
                    if DGV.ProcessNPCLeafColor then
                        return DGV.ProcessNPCLeafColor(oryginalText, self.guidetype)
@@ -232,7 +232,7 @@ function Guides:Initialize()
             end
             
             if self.text == "Recent Guides" then
-                if #DGV:GetFlatternRecentGuides() > 0 then
+                if tabs[RECENT_TAB].treeData and #tabs[RECENT_TAB].treeData > 0 then
                     recentGuidesLabel:Show()
                 else
                     recentGuidesLabel:Hide()
@@ -353,7 +353,7 @@ function Guides:Initialize()
 			PopulateRecentGuides()
             
             if recentGuidesLabel then
-                if #DGV:GetFlatternRecentGuides() > 0 then
+                if tabs[RECENT_TAB].treeData and #tabs[RECENT_TAB].treeData > 0 then
                     recentGuidesLabel:Show()
                 else
                     recentGuidesLabel:Hide()
@@ -4664,7 +4664,15 @@ function Guides:Initialize()
             guideType2GuideTitle[tab.guidetype] = tab.title
         end
     end)
-
+    
+    local guideType2Icon = {}
+    
+    LuaUtils:foreach(tabs, function(tab)
+        if tab.guidetype then
+            guideType2Icon[tab.guidetype] = tab.icon
+        end
+    end)
+    
     function AddGuideToTreeData(treeData, guideTitle, guideType, guideTypeAsTopCategory)
         local currentHeadingL1 = DGV.headings[guideTitle]
         local currentHeadingL2 = DGV.hedingsL2[guideTitle]
@@ -4683,6 +4691,18 @@ function Guides:Initialize()
         if not currentNode and guideTypeAsTopCategory then
             local key = currentGuideType
             currentNode = {name=guideType2GuideTitle[currentGuideType], textColor={r=1, g=1, b=1}, expandedByDefault=true, disabledMouse=true, nodes={}, data={}}
+            
+            if guideType2Icon[currentGuideType] then
+                currentNode.icon=guideType2Icon[currentGuideType]
+                if type(currentNode.icon) == "function" then
+                    currentNode.icon = currentNode.icon()
+                end
+                
+                currentNode.iconSize = 20
+                currentNode.iconDY = 1                
+                currentNode.iconDX = -3                
+           end
+            
             guideType2Node[key] = currentNode
             treeData[#treeData + 1] = currentNode
         end
