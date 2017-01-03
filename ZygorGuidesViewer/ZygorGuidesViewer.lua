@@ -2,7 +2,7 @@ assert(not _G['ZGV'],"Two ZygorGuideViewers loaded!\nWe're doomed!")
 
 local addonName,ZygorGuidesViewer = ...
 
-ZygorGuidesViewer = LibStub("AceAddon-3.0"):NewAddon(ZygorGuidesViewer,addonName, "AceConsole-3.0","AceEvent-3.0","AceTimer-3.0")
+ZygorGuidesViewer = LibStub("AceAddon-3.0"):NewAddon(ZygorGuidesViewer,addonName, "AceConsole-3.0","AceEvent-3.0","AceTimer-3.0","AceHook-3.0")
 
 local ZGV=ZygorGuidesViewer
 --global exports
@@ -346,9 +346,6 @@ function ZGV:OnInitialize()
 	ZGV.db.char.questrewards=ZGV.db.char.questrewards or {}
 	hooksecurefunc("SendQuestChoiceResponse",function(...) ZGV:QuestRewardSelect(...) end)
 
-	if TaskPOI_OnClick then hooksecurefunc("TaskPOI_OnClick", function(self,button) ZGV:SuggestWorldQuestGuide(self) end) end
-
-
 	if self.DEV then
 		ZGV.DebugFrame = ZGV.ChainCall(CreateFrame("FRAME","ZygorDebugFrame",UIParent)) :SetPoint("TOPLEFT") :SetSize(1,1) .__END
 		ZGV.DebugFrame.text1 = ZGV.ChainCall(ZGV.DebugFrame:CreateFontString()) :SetPoint("TOPLEFT") :SetFontObject(SystemFont_Tiny) .__END
@@ -411,6 +408,16 @@ function ZGV:OnEnable()
 		
 
 	self:Hook_QuestChoice()
+
+	if WorldQuestTrackerAddon then
+		if WorldQuestTrackerAddon.db.profile.use_tracker then
+			local WQT=LibStub ("AceAddon-3.0"):GetAddon("WorldQuestTrackerAddon")
+			ZGV:Hook(WQT,"OnQuestClicked", ZGV.WQTwrapper)
+			self:AddEvent("SUPER_TRACKED_QUEST_CHANGED") -- legion popups
+		end
+	else
+		if TaskPOI_OnClick then hooksecurefunc("TaskPOI_OnClick", function(self,button) ZGV:SuggestWorldQuestGuide(self) end) end
+	end
 
 	--self.Localizers:PruneNPCs()  -- off until we start doing it by data, not by name. ~sinus 2013-04-09
 
@@ -5772,40 +5779,51 @@ function ZGV:PLAYER_LEVEL_UP(event,level)
 	end
 end
 
-function ZGV:SuggestWorldQuestGuide(object)
-	if not object.worldQuest then return end
+function ZGV:SUPER_TRACKED_QUEST_CHANGED()
+	ZGV:SuggestWorldQuestGuide(nil,GetSuperTrackedQuestID(),"force")
+end
+
+function ZGV.WQTwrapper(object)
+	if not WorldQuestTrackerAddon.IsQuestBeingTracked(object.questID) then
+		ZGV:SuggestWorldQuestGuide(nil,object.questID,"force")
+	end
+end
+
+function ZGV:SuggestWorldQuestGuide(object,questID,force)
+	local questID = object and object.worldQuest and object.questID or questID
+	if not questID then return end
 
 	local guidetitle = "Dailies Guides\\Legion\\World Quests"
 
-	if IsWorldQuestWatched(object.questID) then
+	if IsWorldQuestWatched(questID) or force then
 		local guide = self:GetGuideByTitle(guidetitle)
 		if not guide then return end
 		if not guide.parsed then guide:Parse(true) end
 		local labelstep
 		for labelname,labeldata in pairs(guide.steplabels) do
-			if labelname == "quest-"..object.questID then
+			if labelname == "quest-"..questID then
 				labelstep = labeldata[1]
 				break
 			end
 		end
 
 		if not labelstep then
-			ZGV:Debug("&_SUB &worldquests no label for "..object.questID)
+			ZGV:Debug("&_SUB &worldquests no label for "..questID)
 			return
 		end
 		
-		local questTitle = C_TaskQuest.GetQuestInfoByQuestID(object.questID)
+		local questTitle = C_TaskQuest.GetQuestInfoByQuestID(questID)
 
 		if not questTitle then 
-			ZGV:Debug("&_SUB &worldquests no title for "..object.questID)
+			ZGV:Debug("&_SUB &worldquests no title for "..questID)
 			return
 		end
 
 		if ZGV.CurrentGuide==guide then
-			ZGV:Debug("&_SUB &worldquests switching to "..object.questID)
+			ZGV:Debug("&_SUB &worldquests switching to "..questID)
 			ZGV:SetGuide(guidetitle,labelstep)
 		else
-			ZGV:Debug("&_SUB &worldquests popup for "..object.questID)
+			ZGV:Debug("&_SUB &worldquests popup for "..questID)
 			ZGV.NotificationCenter.AddButton(
 			"worldquest",
 			questTitle,

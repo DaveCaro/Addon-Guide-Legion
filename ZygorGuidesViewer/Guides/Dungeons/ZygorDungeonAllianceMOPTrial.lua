@@ -10,8 +10,8 @@ description="This guide will walk you through the Deadmines dungeon.",
 },[[
 step
 label "start"
-Press _I_ and queue for Deadmines or enter the dungeon with your group |goto The Deadmines/1 26.5,13.4 |c |or
-'| |confirm |or
+Press _I_ and queue for Deadmines or enter the dungeon with your group |goto Westfall/17 25.80,50.93 |c |or
+|confirm |or
 step
 talk Lieutenant Horatio Laine##46612
 accept The Foreman##27756 |goto The Deadmines 30.3,28.6
@@ -21,7 +21,8 @@ map The Deadmines/1
 path follow loose; loop off; ants curved
 path	27.8,24.6	24.8,35.0	29.6,43.3
 path	28.7,53.3	34.0,59.8
-Follow the path |goto The Deadmines/1 34.0,59.8 |c |noway
+Follow the path |goto The Deadmines/1 34.0,59.8
+confirm
 step
 kill 1 Glubtok##47162 |n |goto 37.7,61.2
 kill 1 Glubtok##47162 |q Only the Beginning##27842/1 |goto 37.7,61.2 |only if havequest(27842)
@@ -37,20 +38,26 @@ _Phase 2:_
 Defeat Glubtok |scenariogoal 24941 |goto 37.7,61.2
 step
 Click the Quest Completion Box that pops up.
-turnin Only the Beginning##27842
-accept Good Intentions...Poor Execution##27848
-only if not completedq(27848)
+turnin The Foreman##27756
+only if not completedq(27756)
 step
 map The Deadmines/1
 path follow loose; loop off; ants curved
 path	41.7,60.0	47.4,61.3	46.5,67.7
 path	43.9,72.7	43.8,79.7
-Follow the path |goto The Deadmines/1 43.8,79.7 < 5 |noway
+Follow the path |goto The Deadmines/1 43.8,79.7 < 5
+confirm
+step
 click Heavy Door##400
-Open the door and walk inside |goto 43.7,81.6 < 5 |c |noway
+Open the door and walk inside |goto 43.7,81.6 < 5
+confirm
+step
+Click the Quest Acception box that pops up
+accept The Carpenter##27758
+only if not completedq(27758)
 step
 kill 1 Helix Gearbreaker##47296 |n |goto 49.0,87.4
-kill 1 Helix Gearbreaker##47296 |q Traitors!!!##27844/1 |goto 49.0,87.4 |only if havequest(27844)
+kill 1 Helix Gearbreaker##47296 |q 27758/1 |goto 49.0,87.4 |only if havequest(27758)
 _Phase 1:_
 |tip Sticky Bombs will explode if players are within 1 yard of them
 |tip The Lumbering Oaf will use Oaf Smash, picking up a random player and running into the wall. |only if not heroic_dung()
@@ -62,23 +69,34 @@ _Phase 2:_
 |tip Helix will continue to attach _Chest Bomb_ to targets |only if heroic_dung()
 Defeat Helix Gearbreaker |scenariogoal 24942 |goto 49.0,87.4
 step
+Click the Quest Completion Box that pops up.
+turnin The Carpenter##27758
+only if not completedq(27758)
+step
 map The Deadmines/1
 path follow loose; loop off; ants curved
 path	53.7,87.3	59.1,87.9	63.5,91.5
 path	64.8,85.9	61.0,80.6
-Follow the path |goto 61.0,80.6 < 5 |c |noway
+Follow the path |goto 61.0,80.6 < 5
+confirm
 step
 click Heavy Door##400
-Open the door and walk inside |goto 61.0,73.6 < 5 |c
+Open the door and walk inside |goto 61.0,73.6 < 5
+confirm
+step
+Click the Quest Acception box that pops up
+accept The Machination##27781
+only if not completedq(27781)
 step
 map The Deadmines/1
 path follow loose; loop off; ants curved
 path	59.6,71.4	56.5,65.1	58.5,59.1
 path	63.5,58.6	66.2,64.7	The Deadmines/2 14.6,89.8
-_Follow_ the winding ramp down |goto The Deadmines/2 14.6,89.8 |c |noway
+_Follow_ the winding ramp down |goto The Deadmines/2 14.6,89.8
+confirm
 step
 kill 1 Foe Reaper 5000##43778 |n |goto The Deadmines/2 10.4,82.8
-kill 1 Foe Reaper 5000##43778 |q Not Quite There##27847/1 |goto The Deadmines/2 10.4,82.8 |only if havequest(27847)
+kill 1 Foe Reaper 5000##43778 |q 27781/1 |goto The Deadmines/2 10.4,82.8 |only if havequest(27781)
 If you're the _Prototype Reaper_ pilot, click here. |confirm |next "Proto_Reap" |only if heroic_dung()
 |tip Foe Reaper 5000 will use Reaper Strike, cleaving anyone in front of it
 |tip When Overdrive is cast, run away and keep moving until it ends
@@ -98,29 +116,40 @@ Repeat this until the Molten Slag dies
 Defeat the Foe Reaper 5000 |scenariogoal 24944 |goto The Deadmines/2 10.4,82.8
 step
 label "canon_blast"
+Click the Quest Completion box that pops up
+turnin The Machination##27781
+only if not completedq(27781)
+step
 click Defias Cannon##245
 map The Deadmines/2
 path follow loose; loop off; ants curved
 path	12.6,70.3	13.1,60.4	22.9,58.0
 path	28.0,52.5	33.4,48.9
-Use the cannon to blow open the door and walk inside |goto The Deadmines/2 33.4,48.9 < 8 |c |noway
+Use the cannon to blow open the door and walk inside |goto The Deadmines/2 33.4,48.9 < 8
+confirm
+step
+Click the Quest Acception box that pops up
+accept The Admiral##27785
+only if not completedq(27785)
 step
 map The Deadmines/2
 path follow loose; loop off; ants curved
 path	34.3,48.8	41.1,47.8	41.7,30.3
 path	50.5,18.1	56.6,27.5	53.1,40.1
 path	54.9,55.5
-Proceed along the docks avoiding the cannonballs that are being shot at the ground. |goto 54.9,55.5 <8 |noway|c
+Proceed along the docks avoiding the cannonballs that are being shot at the ground. |goto 54.9,55.5 <8
+confirm
 step
 map The Deadmines/2
 path follow loose; loop off; ants curved
 path	54.2,54.7	51.9,45.7	53.6,46.4
 path	55.6,50.9	57.3,49.2	54.8,39.8
 path	56.3,32.2
-Follow the ramp up to the top of the ship. |goto 56.3,32.2 <5 |c |noway
+Follow the ramp up to the top of the ship. |goto 56.3,32.2 <5
+confirm
 step
 kill 1 Admiral Ripsnarl##47626 |n |goto 63.9,39.5
-kill 1 Admiral Ripsnarl##47626 |q Good Intentions...Poor Execution##27848/1 |goto 63.9,39.5 |only if havequest(27848)
+kill 1 Admiral Ripsnarl##47626 |q 27785/1 |goto 63.9,39.5 |only if havequest(27785)
 |tip Ripsnarl will use Swipe, cleaving in a frontal cone. Avoid standing in front of him
 |tip Ripsnarl will gain Thirst for Blood, moving faster and gaining attack speed each time he hits (stacking up to 20 times)
 |tip At 75%, 50% and 25% He will summon a fog
@@ -132,16 +161,16 @@ _Healer:_ |only if heroic_dung()
 Defeat Admiral Ripsnarl |scenariogoal 24943 |goto 63.9,39.5
 step
 Click the Quest Completion Box that pops up.
-turnin Good Intentions...Poor Execution##27848 |only if havequest(27848)
-accept The Defias Kingpin##27850
-only if not completedq(27850)
+turnin The Admiral##27785 |only if havequest(27785)
+accept The Defias Kingpin##27790
+only if not completedq(27790)
 step
-kill 1 "Captain" Cookie##47739 |goto 63.9,39.5 |only if completedq(27850)
-kill 1 "Captain" Cookie##47739 |q The Defias Kingpin##27850/1 |goto 63.9,39.5 |only if not completedq(27850)
+kill 1 "Captain" Cookie##47739 |goto 63.9,39.5 |only if completedq(27790)
+kill 1 "Captain" Cookie##47739 |q 27790/1 |goto 63.9,39.5 |only if not completedq(27790)
 |tip Cookie will throw regular food and rotten food on the ground. Rotten food will deal damage to anyone standing nearby
 |tip Eating good food will remove a stack of bad food and grant a stacking haste buff
 |tip Your group must balance eating bad food and good food to keep the deck clear
-Defeat "Captain" Cookie |scenariogoal 18522 |goto 60.6,44.5
+Defeat "Captain" Cookie |scenariogoal 34437 |goto 60.6,44.5
 step
 A note will appear on the ground
 |tip Don't click it until your group is ready, it will start the Vanessa VanCleef event.
@@ -233,6 +262,9 @@ description="This guide will walk you through the Wailing Caverns dungeon.",
 },[[
 step
 label "start"
+Press _I_ and queue for Wailing Caverns or enter the dungeon with your group |goto Northern Barrens/20 54.91,66.26 |c |or
+confirm |or
+step
 talk Ebru##5768
 accept Cleansing the Caverns##26870 |goto Wailing Caverns 46.6,59.2
 only if not completedq(26870)
@@ -248,8 +280,8 @@ path follow loose; loop off; ants curved
 path	45.6,53.0	41.4,51.6	35.0,51.5
 path	35.5,49.1	37.8,44.2	36.9,39.8
 path	32.9,40.3
-_Follow_ the path |goto 32.9,40.3 < 8 |c |noway |or
-confirm |or
+Follow the path |goto 32.9,40.3 < 8
+confirm
 step
 kill 1 Lady Anacondra##3671 |only if havequest(26870) |only if default
 kill 1 Lady Anacondra##3671 |q Cleansing the Caverns##26870/2 |only if havequest(26870)
@@ -262,7 +294,8 @@ _Healer:_
 |tip Keep the tank topped off in case you get put to sleep
 Defeat Lady Anacondra |scenariogoal 24764 |goto 30.5,43.2
 step
-_Jump down_ here |goto 30.3,40.1 |c
+Jump down here |goto 30.3,40.1 < 5
+confirm
 step
 map Wailing Caverns/1
 path follow loose; loop off; ants curved
@@ -270,7 +303,8 @@ path	28.2,40.1	25.1,46.3	20.5,45.3
 path	14.4,43.6	8.9,33.6	11.4,29.3
 path	12.1,32.4	12.9,33.5	14.7,34.3
 path	15.8,39.0
-_Jump in the water_ and follow this path |goto 15.8,39.0 < 8 |c |noway
+Jump in the water and follow this path |goto 15.8,39.0 < 8
+confirm
 step
 kill 1 Lord Pythas##3670 |only if default
 kill 1 Lord Pythas##3670 |q Cleansing the Caverns##26870/3 |only if havequest(26870)
@@ -289,7 +323,8 @@ path follow loose; loop off; ants curved
 path	18.6,35.6	17.3,27.2	16.1,24.4
 path	11.9,24.9	5.6,30.2	7.6,38.2
 path	8.3,44.3	12.7,52.4	15.7,53.7
-_Follow_ the path |goto 15.7,53.7 < 8 |c |noway
+Follow the path |goto 15.7,53.7 < 8
+confirm
 step
 kill 1 Lord Cobrahn##3669 |only if default
 kill 1 Lord Cobrahn##3669 |q Cleansing the Caverns##26870/1 |only if havequest(26870)
@@ -304,7 +339,8 @@ _Healer:_
 Defeat Lord Cobrahn |scenariogoal 24770 |goto Wailing Caverns/1 15.6,58.5
 step
 Jump down here |goto 15.8,51.8 |n
-|tip You will take some fall damage |goto 16.1,49.2 <5 |noway |c
+|tip You will take some fall damage |goto 16.1,49.2 < 5
+confirm
 step
 map Wailing Caverns/1
 path follow loose; loop off; ants curved
@@ -316,10 +352,12 @@ path	58.5,67.0
 kill Kresh##3653
 If you haven't already killed Kresh, then you will find him walking in this little river.
 Defeat Kresh |scenariogoal 24772
-_Follow_ the path |goto 58.5,67.0 < 15 |c |noway
+Follow the path |goto 58.5,67.0 < 15
+confirm
 step
-from Skum##3674 |goto 60.7,72.1
-|confirm
+kill Skum##3674
+Defeat Skum |scenariogoal 24773 |goto 60.7,72.1
+confirm
 step
 map Wailing Caverns/1
 path follow loose; loop off; ants curved
@@ -330,16 +368,19 @@ path	52.4,66.9	50.4,62.4	52.0,60.0
 path	55.9,56.8	64.4,59.7	68.6,62.2
 path	71.6,64.7	73.2,69.2	72.4,76.5
 path	68.2,84.2	62.5,82.8
-_Follow_ this path |goto 62.5,82.8 < 5 |noway |c
+Follow this path |goto 62.5,82.8 < 5
+confirm
 step
 Go to the ledge |goto 60.4,81.2
-_Jump across_ the gap |goto 59.2,79.8 < 5 |c |noway
+Jump across the gap |goto 59.2,79.8 < 5
+confirm
 step
 map Wailing Caverns/1
 path follow loose; loop off; ants curved
 path	56.7,78.0	54.4,76.5	53.6,69.9
 path	53.0,63.8	54.4,60.6	58.4,56.7
-_Follow_ the path |goto 58.4,56.7 |c |noway
+Follow the path |goto 58.4,56.7
+confirm
 step
 kill Lord Serpentis##3673 |only if default
 kill Lord Serpentis##3673 |q 26870/4 |only if havequest(26870)
@@ -350,7 +391,7 @@ _DPS/Tank:_
 |tip Be sure to save an interrupt for Healing Touch. Interrupt Druid's Slumber whenever possible
 _Healer:_
 |tip Keep the tank topped off in case you get put to sleep
-Defeat Lord Serpentis |scenariogoal 24771 |goto 62.6,53.3
+Defeat Lord Serpentis |scenariogoal 1/24771 |goto 62.6,53.3
 step
 kill 1 Verdan the Everliving##5775 |goto 56.4,47.5
 |tip Verdan the Everliving has one ability, Grasping Vines
@@ -360,11 +401,12 @@ _Tanks:_
 |tip Make use of defenisive cooldowns, especially during Grasping Vines
 _Healer:_
 |tip Be prepared, Verdan the Everliving may deal significant damage to undergeared tanks
-|confirm
+Defeat Verdan the Everliving |scenariogoal 24787
+confirm
 step
 Walk to the edge of the pit |goto 55.3,42.8 |n
-Jump down this hole |goto 54.5,39.5 <5 |noway |c |or
-|confirm |or
+Jump down this hole |goto 54.5,39.5 < 5
+confirm
 step
 map Wailing Caverns/1
 path follow loose; loop off; ants curved
@@ -372,8 +414,8 @@ path	54.1,43.4	50.5,43.1	44.6,38.7
 path	41.0,37.8	38.1,38.3	37.6,44.9
 path	35.5,48.5	35.4,50.9	37.8,51.7
 path	44.2,52.5
-_Follow_ the path |goto 44.2,52.5 < 8 |c |noway |or
-|confirm |or
+Follow the path |goto 44.2,52.5 < 8
+confirm
 step "Quests"
 clicknpc Serpentbloom##13891
 Kill Deviate mobs for Deviate Hides
@@ -390,7 +432,8 @@ turnin Preemptive Methods##26873 |goto 46.6,58.4
 only if not completedq(26872) or not completedq(26873)
 step
 talk Muyoh##3678 |goto 46.5,56.0
-Tell him _"Let the event begin!"_ and start following |goto 45.3,53.3 < 8 |c |noway
+Tell him _"Let the event begin!"_ and start following |goto 45.3,53.3 < 8
+confirm
 step
 map Wailing Caverns/1
 path follow loose; loop off; ants curved
@@ -401,14 +444,14 @@ path	28.1,41.8	26.6,39.4	27.9,34.0
 path	32.6,29.4	37.7,24.8	37.6,21.6
 path	34.5,15.9
 There will be 2 waves of mobs that attack him, then the boss will appear.
-Escort and Protect Muyoh until you get to the boss |scenariogoal 24776 |goto 34.5,15.9 <5 |noway
+Escort and Protect Muyoh until you get to the boss |scenariogoal 2/24776 |goto 34.5,15.9 < 5
 step
 kill 1 Mutanus the Devourer##3654
 _DPS/Tank:_
 |tip Interrupt Naralex's Nightmare. This will put players to sleep for 8 seconds
 |tip Mutanus will Terrify random players. Dispel this if possible
 |tip Occasionally, Mutanus will use Thundercrack, dealing damage to all players within 10 yards and stunning them
-Defeat Mutanus the Devourer |scenariogoal 18524 |goto 34.0,15.6
+Defeat Mutanus the Devourer |scenariogoal 2/34405 |goto 34.0,15.6
 step
 Congratulations, you have completed Wailing Caverns!
 ]])

@@ -5365,59 +5365,38 @@ pet=116,
 description="This guide will walk you through obtaining\nthe Mechanical pet: Tranquil Mechanical Yeti",
 },[[
 step
-Use the Engineering profession section of this guide to level your Engineering to 250  |next "Profession Guides\\Engineering\\Engineering 1-600 Leveling Guide" |only if skill("Engineering")>1 and skill("Engineering")<250 |only if ZGV.guidesets["ProfessionsA"]
-|tip You learn this recipe by completing the quest _"Are We There Yeti"_ from _Umi Rumplesnicker_ in _Everlook_, then complete the quest _"A Yeti of Your Own"_ and she will _teach_ you how to make it |only if skill("Engineering")>=250
-learn Tranquil Mechanical Yeti##26011 |only if skill("Engineering")>=250 |next make
-Click here if you do not wish to learn this recipe |confirm |only if skill("Engineering")>1
-_ Auto skipping_ to next step |next |only if skill("Engineering")<1
+The recipe to make this was removed with the quest line back in 2014.
+Old Engineers may still have this recipe you can either find one of these or purchase it from the AH.
+confirm
 step
-You can either bu_ this item from the Auction House or farm for it:
-buy 1 Tranquil Mechanical Yeti##21277 |next "bought"
-Click here to make the Tranquil Mechanical Yeti |confirm
+Click here to _buy_ the _Tranquil Mechanical Yeti_ from the AH |next "AH Yeti"
+Click here to _make_ the _Tranquil Mechanical Yeti_ |next "make"
+|confirm
 step
-label make
-You can either buy these items from the Auction House or farm for them:
+label "AH Yeti"
+Go to one of your main cities and talk to an Auctioneer
+|tip These may be somewhat expensive as the recipe has been removed from the game.
+buy 1 Tranquil Mechanical Yeti##21277 |n
+learnpet Tranquil Mechanical Yeti##15699 |use Tranquil Mechanical Yeti##21277
+|next "Tranquil Yeti"
+step
+label "make"
+You can buy these items from the Auction House
 collect 1 Cured Rugged Hide##15407
 collect 4 Thorium Widget##15994
 collect 2 Globe of Water##7079
 collect 2 Truesilver Transformer##18631
 collect 1 Gold Power Core##10558
-Click here for farming paths. |confirm
-step
-map Winterspring
-path	22.6,58.2	22.3,62.4	26.6,57.6
-path	32.7,57.6	31.5,53.5	29.1,52.2
-path	27.3,48.0	23.5,46.1	23.6,50.0
-Follow the provided path, mining _Truesilver_ and _Thorium_ ore.
-collect 16 Thorium Ore##10620
-collect 4 Truesilver Ore##7911
-step
-map Felwood
-path	60.4,21.9	55.7,18.6	44.5,16.2
-path	40.5,26.6	39.6,33.7	37.9,43.3
-path	45.6,46.0	47.2,41.3	51.9,34.3
-path	56.8,28.9
-Follow the provided path, mining _Gold_ ore.
-collect 1 Gold Ore##2776
-step
-create Thorium Bar##16153,Mining,16 total |goto Orgrimmar/1 45.0,77.8
-create Truesilver Bar##10098,Mining,4 total |goto Orgrimmar/1 45.0,77.8
-create Gold Bar##3308,Mining,1 total |n
-step
-talk Auctioneer Ralinza##44867
-buy 4 Runecloth##14047 |goto 53.9,73.1
-buy 4 Elemental Earth##7067 |goto 53.9,73.1
-buy 2 Elemental Air##7069 |goto 53.9,73.1
-buy 1 Cured Rugged Hide##15407 |goto 53.9,73.1
 step
 Have an Engineer make this pet for you
 |tip Ask in your guild or in trade chat |only if knowspell(26011)==false
 create Tranquil Mechanical Yeti##26011,Engineering,1 total |only if knowspell(26011)==true
-collect 1 Tranquil Mechanical Yeti##21277
-modeldisplay 934
-step
-label bought
+collect 1 Tranquil Mechanical Yeti##21277 |n
 learnpet Tranquil Mechanical Yeti##15699 |use Tranquil Mechanical Yeti##21277
+|next "Tranquil Yeti"
+step
+label "Tranquil Yeti"
+Congratulations you are now the proud owner of a _Tranquil Mechanical Yeti_
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Porcupette",{
 pet=381,

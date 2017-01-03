@@ -1297,4 +1297,28 @@ Once this achievement is complete this pet should be in your mail box.
 collect Zoom##137298
 learnpet Zoom##212749 |use Zoom##137298
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Blorp's Bubble",{
+pet=1666,
+description="This guide will walk you through obtaining the Critter pet: Blorp's Bubble",
+},[[
+step
+talk Galissa Sundew##55103
+buy 1 Blorp's Bubble##126925 |goto Darkmoon Island/0 52.52,88.59
+|tip This pet costs 50 Darkmoon Daggermaw.
+|tip These can either be bought from the auction house or farmed for by fishing in the water on darkmoon Island.
+collect Blorp's Bubble##126925
+learnpet Blorp's Bubble##93814 |use Blorp's Bubble##126925
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Translucent Shell",{
+pet=1665,
+description="This guide will walk you through obtaining the Critter pet: Translucent Shell",
+},[[
+step
+talk Galissa Sundew##55103
+buy 1 Translucent Shell##126926 |goto Darkmoon Island/0 52.52,88.59
+|tip This pet costs 100 Darkmoon Daggermaw.
+|tip These can either be bought from the auction house or farmed for by fishing in the water on darkmoon Island.
+collect Translucent Shell##126926
+learnpet Translucent Shell##93808 |use Translucent Shell##126926
+]])
 ZGV.BETAEND()

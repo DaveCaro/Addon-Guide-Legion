@@ -109,6 +109,15 @@ Use your extra action ability on the Wand Targets
 Hit 6 Wand Targets |q 44784/1 |goto Azsuna/17 33.62,42.69
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41545
+accept Aethril Cluster##41545 |goto Azsuna/0 40.03,9.73
+|tip You will accept this quest automatically.
+step
+kill Lost Gatherer##109070
+click Aethril Cluster##0
+Aethril Cluster gathered |q 41545/1 |goto 40.03,9.73
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42652
 Cross the bridge |goto Azsuna/0 56.49,62.07 < 30 |only if walking
 Follow the path up |goto 55.77,65.84 < 30 |only if walking
@@ -144,6 +153,20 @@ Follow the path |goto 32.97,46.17 < 20 |only if walking
 click Felspider##97323
 Defeat or Capture a Felspider |q 42165/1 |goto 34.02,45.19
 |tip You may have to search a large area around here to find one.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-45069
+Follow the path |goto Azsuna/0 45.25,43.77 < 25 |only if walking
+Follow the path |goto 46.24,44.66 < 25 |only if walking
+Follow the path |goto 46.28,51.43 < 25 |only if walking
+accept Barrels o' Fun##45069 |goto 47.03,53.56
+|tip You will accept this quest automatically.
+step
+click Barrel##0
+Game Completed |q 45069/1 |goto 46.97,53.80
+|tip Use the special action button on your screen to begin the game.
+|tip Watch the barrel that lights up yellow closely. You will need to select it when the barrels stop moving.
+|tip More barrels will spawn, making the game more complex.
 |next "Court_Of_Farondis_WQ"
 step
 label quest-44894
@@ -370,6 +393,16 @@ kill Torrentius##102064 |q 44194/1 |goto 37.26,83.41
 |tip This is an elite enemy you will need a group to kill him.
 |next "Court_Of_Farondis_WQ"
 step
+label quest-43040
+Follow the path |goto Azsuna/0 63.41,25.55 < 25 |only if walking
+Follow the path |goto 61.12,21.68 < 25 |only if walking
+Follow the path |goto 59.17,22.78 < 25 |only if walking
+accept DANGER: Valakar the Thirsty##43040 |goto 58.25,21.31
+|tip You will accept this quest automatically.
+step
+kill Valakar the Thirsty##109575 |q 43040/1 |goto 58.25,21.31
+|next "Court_Of_Farondis_WQ"
+step
 label quest-43072
 Follow the path |goto Azsuna/0 41.50,10.70 < 30 |only if walking
 Follow the path |goto Azsuna/0 42.61,9.60 < 30 |only if walking
@@ -533,6 +566,18 @@ collect Fine Leystone Ore##141225 |q 41437/1 |goto 41.85,34.47
 |tip These are located all around the area.
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41455
+Follow the path |goto Azsuna/0 57.20,59.04 < 25 |only if walking
+Follow the path |goto 58.95,60.11 < 25 |only if walking
+Follow the path |goto 60.93,60.00 < 25 |only if walking
+accept Gleaming Leystone Outcropping##41455 |goto 62.12,60.33
+|tip You will accept this quest automatically.
+step
+click Gleaming Leystone Outcropping##195122
+|tip It's underwater.
+collect 1 Gleaming Leystone Ore##141229 |q 41455/1 |goto 62.12,60.33
+|next "Court_Of_Farondis_WQ"
+step
 label quest-43804
 accept Hate the Hatecoil##43804 |goto Eye of Azshara Map/0 38.45,46.16
 |tip You will accept this quest automatically.
@@ -584,6 +629,16 @@ accept Help a Whelp##42154 |goto 53.22,16.18
 step
 click Wounded Azurewing Whelpling
 Defeat the Scavenging Critters |q 42154/1 |goto Azsuna/0 53.22,16.18
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41611
+Follow the path |goto Azsuna/0 44.97,46.19 < 25 |only if walking
+Follow the path |goto 44.57,51.26 < 25 |only if walking
+accept Huge Cursed Queenfish##41611 |goto 43.33,56.15
+|tip You will accept this quest automatically.
+step
+Fish from the Huge Cursed Queenfish School |cast Fishing##131474
+collect 10 Huge Cursed Queenfish##134565 |q 41611/1 |goto 43.57,56.02
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42277
@@ -702,6 +757,14 @@ collect Leystone-Encrusted Spike##134104 |q 41500/1 |goto 50.26,21.67
 |tip Mine the corpses.
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41527
+accept Lively Aethril##41527 |goto Azsuna/0 61.70,23.35
+|tip You will accept this quest automatically.
+step
+click Lively Aethril##248019
+collect 10 Lively Aethril##140948 |q 41527/1 |goto 61.70,23.35
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41598
 Follow the path |goto Azsuna/0 43.03,43.17 < 20 |only if walking
 accept Lively Cursed Queenfish##41598 |goto 40.01,41.79
@@ -710,6 +773,20 @@ step
 Fish from Lively Cursed Queenfish Schools |cast Fishing##7620
 |tip You will find these all around the water.
 collect 10 Lively Cursed Queenfish##134564 |q 41598/1 |goto 40.01,41.79
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41454
+Follow the path |goto Azsuna/0 63.42,25.51 < 25 |only if walking
+Follow the path |goto 60.28,20.57 < 25 |only if walking
+Follow the path |goto 59.22,17.21 < 25 |only if walking
+Drop down |goto 58.68,14.22 < 10 |only if walking
+accept Luminous Leystone Outcropping##41454 |goto 58.63,13.67
+|tip You will accept this quest automatically.
+step
+Drop down |goto 58.68,14.22 < 10 |only if walking
+kill Withered Ravager##8092
+click Luminous Leystone Outcropping##195122
+collect 1 Luminous Leystone Ore##141226 |q 41454/1 |goto 58.63,13.67
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43327
@@ -819,6 +896,29 @@ Kill enemies around this area
 Slay #12# Dread Pirates |q 42623/1 |goto 60.32,69.34
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41268
+Follow the path |goto Azsuna/0 49.28,29.28 < 25 |only if walking
+accept Queen Queenfish##41268 |goto 52.74,31.23
+|tip You will accept this quest automatically.
+step
+kill Queen Queenfish##104258 |q 41268/1 |goto 52.74,31.23
+|tip Queen Queenfish swims up and down the river. Follow the river north to find it.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41266
+Follow the path |goto Azsuna/0 57.25,59.04 < 25 |only if walking
+Follow the path |goto 60.00,58.11 < 25 |only if walking
+Follow the path |goto 62.99,56.35 < 25 |only if walking
+Follow the path |goto 65.09,54.84 < 25 |only if walking
+accept Raft Fishing##41266 |goto 67.32,54.99
+|tip You will accept this quest automatically.
+step
+talk Alynrus Nightcast##109735
+Ask him: "_Do you happen to have an extra raft I can borrow?_"
+Fish from Blue Barracude schools |cast Fishing##131474
+collect 10 Blue Barracuda##134566 |q 41266/1 |goto 68.02,55.78
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42108
 Follow the path up |goto Azsuna/0 45.48,42.20 < 30 |only if walking
 Cross the water |goto 46.42,40.50 < 30 |only if walking
@@ -888,6 +988,18 @@ accept Slab of Bacon##41551 |goto 33.65,11.35
 step
 kill Well-Fed Lion Seal##103784
 collect collect Thick Slab of Bacon##135511 |q 41551/1 |goto Azsuna/0 33.65,11.35
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41552
+Follow the path |goto Azsuna/0 57.66,59.03 < 25 |only if walking
+Follow the path |goto 60.14,62.33 < 25 |only if walking
+Follow the path |goto 62.00,65.73 < 25 |only if walking
+Follow the path |goto 64.97,68.86 < 25 |only if walking
+accept Slab of Bacon##41552 |goto 65.05,71.49
+|tip You will accept this quest automatically.
+step
+kill Well-Fed Lion Seal##103784
+collect 1 Thick Slab of Bacon##135511 |q 41552/1 |goto 65.05,71.49
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41435

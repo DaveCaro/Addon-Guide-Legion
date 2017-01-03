@@ -491,17 +491,6 @@ collect Mageroyal##785 |n
 collect Bruiseweed##2453 |n
 collect Briarthorn##2450 |n
 skill Herbalism,125
-step
-map Hillsbrad Foothills
-path follow loose;loop;ants straight;dist 60
-path	47.6,18.8	51.3,22.6	53.5,30.3
-path	48.6,33.7	47.0,35.8	43.2,41.1
-path	39.1,33.7	40.1,28.5	43.2,20.9
-path	47.6,18.1
-#include "follow_path_herbs"
-Click Frozen Herb
-|tip They look like herbs frozen in ice around this area.
-skill Herbalism,150
 #include end_of_prof_trial_150
 ]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Inscription 1-600 Leveling Guide",{

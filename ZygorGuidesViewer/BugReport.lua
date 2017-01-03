@@ -891,16 +891,13 @@ function ZGV:Serialize(val,lev)
 				else s = s .. '[' .. escape(k) .. ']'
 				end
 			end
-			s = s .. " = "
-			if type(v)=="number" then s = s .. tostring(v)
-			elseif type(v)=="string" then s = s .. escape(v)
-			elseif type(v)=="table" then s = s .. ZGV:Serialize(v,lev+1)
-			end
-			s = s .. ","
+			s = s .. " = " .. self:Serialize(v,lev+1) .. ","
 		end
 		s = s .. "\n" .. indent .. "}"
 	elseif type(val)=="nil" then
 		s = "nil"
+	elseif type(val)=="boolean" then
+		s = tostring(val)
 	end
 
 	return s

@@ -1690,9 +1690,9 @@ create 10 Enchant Bracer - Brawn##27899,Enchanting,320
 |tip You can keep enchanting the same item repeatedly.
 step
 #include "trainer_Enchanting"
-learn Enchant Chest - Major Spirit##33990 |condition skill("Enchanting")>=351
+learn Enchant Chest - Major Versatility##33990 |condition skill("Enchanting")>=351
 step
-create 10 Enchant Chest - Major Spirit##33990,Enchanting,330
+create 10 Enchant Chest - Major Versatility##33990,Enchanting,330
 |tip You can keep enchanting the same item repeatedly.
 step
 #include "trainer_Enchanting"
@@ -2693,17 +2693,6 @@ collect Bruiseweed##2453 |n
 collect Briarthorn##2450 |n
 skill Herbalism,125
 step
-map Hillsbrad Foothills
-path follow loose;loop;ants straight;dist 60
-path	47.6,18.8	51.3,22.6	53.5,30.3
-path	48.6,33.7	47.0,35.8	43.2,41.1
-path	39.1,33.7	40.1,28.5	43.2,20.9
-path	47.6,18.1
-#include "follow_path_herbs"
-Click Frozen Herb
-|tip They look like herbs frozen in ice around this area.
-skill Herbalism,150
-step
 #include "trainer_Herbalism"
 skillmax Herbalism,225
 step
@@ -2726,16 +2715,16 @@ skillmax Herbalism,300
 step
 map Western Plaguelands
 path follow loose;loop;ants straight;dist 60
-path	31.8,59.3	36.9,57.1	43.5,53.2
-path	45.9,44.7	45.2,35.2	49.5,35.1
-path	51.0,47.4	55.2,51.3	61.8,52.0
-path	67.2,44.5	63.6,56.0	56.6,60.1
-path	52.6,67.5	49.2,59.4	45.6,57.6
-path	37.9,62.2	33.7,62.7
+path	32.29,67.51	34.15,69.05	37.72,68.67
+path	39.01,73.99	43.24,75.29	47.27,73.61
+path	50.96,70.89	56.20,69.13	62.13,63.79
+path	67.86,62.48	62.26,82.75	57.56,80.20
+path	54.19,74.69	50.00,72.33	46.39,78.06
+path	40.17,77.54	35.38,73.50	30.74,70.77
 #include "follow_path_herbs"
-collect Kingsblood##3356 |n
-collect Khadgar's Whisker##3358 |n
-skill Herbalism,230
+collect Blindweed##195114 |n
+collect liferoot##3357 |n
+skill Herbalism,215
 step
 map Searing Gorge
 path follow loose;loop;ants straight;dist 60
@@ -2747,6 +2736,7 @@ path	53.5,35.4	77.0,19.0
 #include "follow_path_herbs"
 collect Firebloom##4625 |n
 collect Sungrass##8838 |n
+|tip Firebloom goes grey at 280, so Sungrass will be the only herb available here to get the last 5 points.
 skill Herbalism,285
 step
 #include trainer_Herbalism
@@ -2824,6 +2814,7 @@ path	32.1,48.5	26.6,55.4	23.7,60.3
 #include "follow_path_herbs"
 collect Goldclover##36901 |n
 collect Tiger Lily##36904 |n
+collect Adder's Tongue Stem##108353 |n
 skill Herbalism,425
 step
 #include "trainer_Herbalism"

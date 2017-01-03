@@ -1454,7 +1454,7 @@ GOALTYPES['goto'] = {
 		-- don't complete anything while we are flying, to avoid completing a point we flew over
 		if UnitOnTaxi("Player") then return false,true end
 
-		if self.x then
+		if self.x and not ZGV.LibRover.data.DungeonMaps[gm] then
 			local cx,cy,cm,cf=HBD:GetPlayerZonePosition(true)
 			local gx,gy,dist = self.x,self.y,self.dist or 30
 			if not cx then return false,true end

@@ -171,6 +171,15 @@ Use your extra action ability on the Wand Targets
 Hit 6 Wand Targets |q 44784/1 |goto Azsuna/17 33.62,42.69
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41545
+accept Aethril Cluster##41545 |goto Azsuna/0 40.03,9.73
+|tip You will accept this quest automatically.
+step
+kill Lost Gatherer##109070
+click Aethril Cluster##0
+Aethril Cluster gathered |q 41545/1 |goto 40.03,9.73
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42652
 Cross the bridge |goto Azsuna/0 56.49,62.07 < 30 |only if walking
 Follow the path up |goto 55.77,65.84 < 30 |only if walking
@@ -206,6 +215,20 @@ Follow the path |goto 32.97,46.17 < 20 |only if walking
 click Felspider##97323
 Defeat or Capture a Felspider |q 42165/1 |goto 34.02,45.19
 |tip You may have to search a large area around here to find one.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-45069
+Follow the path |goto Azsuna/0 45.25,43.77 < 25 |only if walking
+Follow the path |goto 46.24,44.66 < 25 |only if walking
+Follow the path |goto 46.28,51.43 < 25 |only if walking
+accept Barrels o' Fun##45069 |goto 47.03,53.56
+|tip You will accept this quest automatically.
+step
+click Barrel##0
+Game Completed |q 45069/1 |goto 46.97,53.80
+|tip Use the special action button on your screen to begin the game.
+|tip Watch the barrel that lights up yellow closely. You will need to select it when the barrels stop moving.
+|tip More barrels will spawn, making the game more complex.
 |next "Court_Of_Farondis_WQ"
 step
 label quest-44894
@@ -432,6 +455,16 @@ kill Torrentius##102064 |q 44194/1 |goto 37.26,83.41
 |tip This is an elite enemy you will need a group to kill him.
 |next "Court_Of_Farondis_WQ"
 step
+label quest-43040
+Follow the path |goto Azsuna/0 63.41,25.55 < 25 |only if walking
+Follow the path |goto 61.12,21.68 < 25 |only if walking
+Follow the path |goto 59.17,22.78 < 25 |only if walking
+accept DANGER: Valakar the Thirsty##43040 |goto 58.25,21.31
+|tip You will accept this quest automatically.
+step
+kill Valakar the Thirsty##109575 |q 43040/1 |goto 58.25,21.31
+|next "Court_Of_Farondis_WQ"
+step
 label quest-43072
 Follow the path |goto Azsuna/0 41.50,10.70 < 30 |only if walking
 Follow the path |goto Azsuna/0 42.61,9.60 < 30 |only if walking
@@ -595,6 +628,18 @@ collect Fine Leystone Ore##141225 |q 41437/1 |goto 41.85,34.47
 |tip These are located all around the area.
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41455
+Follow the path |goto Azsuna/0 57.20,59.04 < 25 |only if walking
+Follow the path |goto 58.95,60.11 < 25 |only if walking
+Follow the path |goto 60.93,60.00 < 25 |only if walking
+accept Gleaming Leystone Outcropping##41455 |goto 62.12,60.33
+|tip You will accept this quest automatically.
+step
+click Gleaming Leystone Outcropping##195122
+|tip It's underwater.
+collect 1 Gleaming Leystone Ore##141229 |q 41455/1 |goto 62.12,60.33
+|next "Court_Of_Farondis_WQ"
+step
 label quest-43804
 accept Hate the Hatecoil##43804 |goto Eye of Azshara Map/0 38.45,46.16
 |tip You will accept this quest automatically.
@@ -646,6 +691,16 @@ accept Help a Whelp##42154 |goto 53.22,16.18
 step
 click Wounded Azurewing Whelpling
 Defeat the Scavenging Critters |q 42154/1 |goto Azsuna/0 53.22,16.18
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41611
+Follow the path |goto Azsuna/0 44.97,46.19 < 25 |only if walking
+Follow the path |goto 44.57,51.26 < 25 |only if walking
+accept Huge Cursed Queenfish##41611 |goto 43.33,56.15
+|tip You will accept this quest automatically.
+step
+Fish from the Huge Cursed Queenfish School |cast Fishing##131474
+collect 10 Huge Cursed Queenfish##134565 |q 41611/1 |goto 43.57,56.02
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42277
@@ -764,6 +819,14 @@ collect Leystone-Encrusted Spike##134104 |q 41500/1 |goto 50.26,21.67
 |tip Mine the corpses.
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41527
+accept Lively Aethril##41527 |goto Azsuna/0 61.70,23.35
+|tip You will accept this quest automatically.
+step
+click Lively Aethril##248019
+collect 10 Lively Aethril##140948 |q 41527/1 |goto 61.70,23.35
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41598
 Follow the path |goto Azsuna/0 43.03,43.17 < 20 |only if walking
 accept Lively Cursed Queenfish##41598 |goto 40.01,41.79
@@ -772,6 +835,20 @@ step
 Fish from Lively Cursed Queenfish Schools |cast Fishing##7620
 |tip You will find these all around the water.
 collect 10 Lively Cursed Queenfish##134564 |q 41598/1 |goto 40.01,41.79
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41454
+Follow the path |goto Azsuna/0 63.42,25.51 < 25 |only if walking
+Follow the path |goto 60.28,20.57 < 25 |only if walking
+Follow the path |goto 59.22,17.21 < 25 |only if walking
+Drop down |goto 58.68,14.22 < 10 |only if walking
+accept Luminous Leystone Outcropping##41454 |goto 58.63,13.67
+|tip You will accept this quest automatically.
+step
+Drop down |goto 58.68,14.22 < 10 |only if walking
+kill Withered Ravager##8092
+click Luminous Leystone Outcropping##195122
+collect 1 Luminous Leystone Ore##141226 |q 41454/1 |goto 58.63,13.67
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43327
@@ -881,6 +958,29 @@ Kill enemies around this area
 Slay #12# Dread Pirates |q 42623/1 |goto 60.32,69.34
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41268
+Follow the path |goto Azsuna/0 49.28,29.28 < 25 |only if walking
+accept Queen Queenfish##41268 |goto 52.74,31.23
+|tip You will accept this quest automatically.
+step
+kill Queen Queenfish##104258 |q 41268/1 |goto 52.74,31.23
+|tip Queen Queenfish swims up and down the river. Follow the river north to find it.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41266
+Follow the path |goto Azsuna/0 57.25,59.04 < 25 |only if walking
+Follow the path |goto 60.00,58.11 < 25 |only if walking
+Follow the path |goto 62.99,56.35 < 25 |only if walking
+Follow the path |goto 65.09,54.84 < 25 |only if walking
+accept Raft Fishing##41266 |goto 67.32,54.99
+|tip You will accept this quest automatically.
+step
+talk Alynrus Nightcast##109735
+Ask him: "_Do you happen to have an extra raft I can borrow?_"
+Fish from Blue Barracude schools |cast Fishing##131474
+collect 10 Blue Barracuda##134566 |q 41266/1 |goto 68.02,55.78
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42108
 Follow the path up |goto Azsuna/0 45.48,42.20 < 30 |only if walking
 Cross the water |goto 46.42,40.50 < 30 |only if walking
@@ -950,6 +1050,18 @@ accept Slab of Bacon##41551 |goto 33.65,11.35
 step
 kill Well-Fed Lion Seal##103784
 collect collect Thick Slab of Bacon##135511 |q 41551/1 |goto Azsuna/0 33.65,11.35
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41552
+Follow the path |goto Azsuna/0 57.66,59.03 < 25 |only if walking
+Follow the path |goto 60.14,62.33 < 25 |only if walking
+Follow the path |goto 62.00,65.73 < 25 |only if walking
+Follow the path |goto 64.97,68.86 < 25 |only if walking
+accept Slab of Bacon##41552 |goto 65.05,71.49
+|tip You will accept this quest automatically.
+step
+kill Well-Fed Lion Seal##103784
+collect 1 Thick Slab of Bacon##135511 |q 41552/1 |goto 65.05,71.49
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41435
@@ -1405,11 +1517,11 @@ accept Watery Graves##43802 |goto Eye of Azshara Map/0 43.14,50.75
 |tip You will accept this quest automatically.
 stickystart "Droplet"
 step
-kill Restless Tides##111644+ |q 43802/1 |goto 43.14,50.75
+kill 3 Restless Tides##111644 |q 43802/1 |goto 43.14,50.75
 |tip These are located randomly along the shore.
 step
 label "Droplet"
-kill Saltsea Droplet##111641+ |q 43802/2 |goto 43.14,50.75
+kill 20 Saltsea Droplet##111641 |q 43802/2 |goto 43.14,50.75
 |tip These are located randomly along the shore.
 |next "Court_Of_Farondis_WQ"
 step
@@ -1651,6 +1763,18 @@ click Acorns
 Crack #15# Nuts |q 44033/2 |goto 54.59,72.92
 |next "Court_Of_Farondis_WQ"
 step
+label quest-45070
+Follow the path |goto Val'sharah/0 55.06,55.23 < 25 |only if walking
+accept Barrels o' Fun##45070 |goto 52.09,56.68
+|tip You will accept this quest automatically.
+step
+click Barrel##0
+Game Completed |q 45070/1 |goto 52.30,56.59
+|tip Use the special action button on your screen to begin the game.
+|tip Watch the barrel that lights up yellow closely. You will need to select it when the barrels stop moving.
+|tip More barrels will spawn, making the game more complex.
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42080
 accept Bastion of Bradensbrook##42080 |goto Val'sharah/0 38.36,61.76
 |tip You will accept this quest automatically.
@@ -1733,7 +1857,7 @@ step
 label quest-41484
 Follow the path |goto Val'sharah/0 55.64,56.23 < 30 |only if walking
 Follow the path |goto 54.96,53.33 < 30 |only if walking
-Follow the path |53.27,50.07 < 30 |only if walking
+Follow the path |goto 53.27,50.07 < 30 |only if walking
 accept Brimstone Destroyer##41484 |goto Val'sharah/0 53.37,45.46
 |tip You will accept this quest automatically.
 step
@@ -1749,6 +1873,33 @@ step
 kill Brimstone Destroyer##93237
 click Brimstone Destroyer Core##195122
 Brimstone Destroyer Core mined |q 41486/1 |goto 38.19,68.86
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41487
+Follow the path |goto Val'sharah/0 43.70,59.07 < 25 |only if walking
+Follow the path |goto 46.95,55.35 < 25 |only if walking
+accept Brimstone Destroyer##41487 |goto 48.91,56.13
+|tip You will accept this quest automatically.
+step
+kill Brimstone Destroyer##93237
+|tip It wanders a small area around the rocks.
+click Brimstone Destroyer Core##195122
+Brimstone Destroyer Core mined |q 41487/1 |goto 48.91,56.13
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41273
+Follow the path |goto Val'sharah/0 38.85,57.91 < 25 |only if walking
+Follow the path |goto 37.75,54.80 < 25 |only if walking
+Follow the path |goto 34.62,52.19 < 25 |only if walking
+Follow the path |goto 31.46,49.53 < 25 |only if walking
+accept Buoy Fishing##41273 |goto 28.66,49.46
+|tip You will accept this quest automatically.
+step
+talk Luraura Nightcast##109760
+Tell her: "_I'm ready. Give me the buoys._"
+click Enormous Sea Crab##109752
+|tip They swim below the boat on the ocean floor.
+Use the Satchel of Buoys on #15# Enormous Sea Crabs |use Satchel of Buoys##139044 |q 41273/1 |goto 28.66,49.46
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42174
@@ -1920,6 +2071,21 @@ click Dreamleaf Cluster##0
 Dreamleaf Cluster gathered |q 41546/1 |goto 53.76,87.32
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41295
+Follow the path |goto Val'sharah/0 55.00,74.49 < 25 |only if walking
+Follow the path |goto 57.69,76.14 < 25 |only if walking
+Follow the path |goto 56.34,81.14 < 25 |only if walking
+Follow the path |goto 57.82,86.75 < 25 |only if walking
+accept Dreamleaf-Covered Ancient##41295 |goto 61.77,82.78
+|tip You will accept this quest automatically.
+step
+click Dreamleaf Bloom##0
+|tip The blooms are located on the Ancient walking around.
+|tip The Owlbeasts will attack and kill the ancient, so you may have to wait for it to respawn.
+|tip There is a bloom inside the Ancient's mouth. Zoom in, it can be difficult to click.
+Dreamleaf Bloom gathered |q 41295/1 |goto 61.77,82.78
+|next "Court_Of_Farondis_WQ"
+step
 label quest-43756
 Follow the path |goto Val'sharah/0 54.98,53.49 < 30 |only if walking
 Follow the path |goto 53.27,50.01 < 30 |only if walking
@@ -1934,6 +2100,14 @@ click Puzzle Box
 |tip Memorize the patterns of the tiles on the ground.
 |tip When the grid appears, walk on the tiles illustrated in the patterns.
 Solve the Enigma |q 43756/1 |goto 45.52,41.61
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41439
+accept Exquisite Leystone Deposits##41439 |goto 67.40,52.09
+|tip You will accept this quest automatically.
+step
+click Exquisite Leystone Deposit##195122
+collect 10 Exquisite Leystone Ore##141233 |q 41439/1 |goto 67.40,52.09
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41567
@@ -1966,6 +2140,19 @@ accept Felwort##41518 |goto 37.93,62.23
 step
 click Felwort##195114
 collect Felwort |q 41518/1 |goto 37.93,62.23
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41517
+Follow the path |goto Val'sharah/0 68.17,48.54 < 25 |only if walking
+Follow the path |goto 65.18,43.62 < 25 |only if walking
+Follow the path |goto 63.29,42.27 < 25 |only if walking
+Follow the path |goto 61.68,43.65 < 25 |only if walking
+Follow the path |goto 60.19,40.97 < 25 |only if walking
+accept Felwort##41517 |goto Val'sharah/0 58.81,39.45
+|tip You will accept this quest automatically.
+step
+click Felwort##195114
+Felwort gathered |q 41517/1 |goto 58.81,39.45
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42087
@@ -2079,6 +2266,22 @@ kill Leystone Basilisk##103514+
 collect 40 Leystone-Encrusted Spike##134104 |q 41504/1 |goto Val'sharah/0 59.92,60.66
 |next "Court_Of_Farondis_WQ"
 step
+label quest-45047
+Follow the path |goto Val'sharah/0 43.12,59.03 < 20 |only if walking
+Follow the path |goto 47.92,53.89 < 30 |only if walking
+accept Like the Wind##45047
+|tip You will accept this quest automatically.
+step
+Goal Reached |q 45047/1 |goto 40.61,62.29
+|tip To reach the goal, you must use the crystals to increase your vertical elevation.
+|tip Purple orbs will instantly reset your dash cooldown.
+|tip Avoid orange orbs, as they will stun you.
+|tip Aim for the glowing blue platforms. These act as checkpoints.
+|tip Dropping a long distance without dashing will cause you to fail.
+|tip You must go under the closest passage in the bridge, then the farthest on the opposite side.
+|tip The goal is through the middle passage, on the far side of the yellow wall.
+|next "Court_Of_Farondis_WQ"
+step
 label quest-44011
 Follow the path down |goto Val'sharah/0 56.71,62.57 < 30 |only if walking
 Follow the path up |goto 53.91,64.33 < 30 |only if walking
@@ -2127,6 +2330,16 @@ talk Archmage Kesalon##110915
 click Arcane Artifact
 |tip Stay inside the bubbles as they float to reach the Arcane Artifact under the bridge.
 Find the Item |q 43755/1 |goto 46.31,50.30
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41861
+Follow the path |goto Val'sharah/0 68.36,48.89 < 25 |only if walking
+Follow the path |goto 65.62,44.11 < 25 |only if walking
+accept Meet The Maw##41861 |goto 66.03,39.14
+|tip You will accept this quest automatically.
+step
+click The Maw##104992
+Defeat The Maw |q 41861/1 |goto 66.03,39.14
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41862
@@ -2237,16 +2450,10 @@ Follow the path down |goto 57.44,78.32 < 30 |only if walking
 Follow the path down |goto 58.57,80.36 < 30 |only if walking
 accept Rage of the Owlbeasts##43324 |goto Val'sharah/0 60.58,81.90
 |tip You will accept this quest automatically.
-stickystart "Undulating Boneslime"
-stickystart "Moonlost Owlbeast"
 step
-click 5 Sister of the Moon##108600 |q 43324/1 |goto Val'sharah/0 59.20,81.60
-step
-label "Undulating Boneslime"
-kill 8 Undulating Boneslime##108327 |q 43324/3 |goto Val'sharah/0 59.20,81.60
-step
-label "Moonlost Owlbeast"
-kill Moonlost Owlbeast##108259 |q 43324/2 |goto Val'sharah/0 59.20,81.60
+click Sister of the Moon##108600
+kill Undulating Boneslime##108327+, Moonlost Owlbeast##108259+
+Save Lostlight Grotto |q 43324/1 |goto Val'sharah/0 59.20,81.60
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41496
@@ -3009,6 +3216,17 @@ kill the enemies around this area
 Cleanse the Burial Grounds  |q 41026/1 |goto Highmountain/0 26.11,43.06
 |next "Court_Of_Farondis_WQ"
 step
+label quest-45071
+accept Barrels o' Fun##45071 |goto Highmountain/0 55.48,85.67
+|tip You will accept this quest automatically.
+step
+click Barrel##0
+Game Completed |q 45071/1 |goto 55.22,85.81
+|tip Use the special action button on your screen to begin the game.
+|tip Watch the barrel that lights up yellow closely. You will need to select it when the barrels stop moving.
+|tip More barrels will spawn, making the game more complex.
+|next "Court_Of_Farondis_WQ"
+step
 label quest-40978
 accept Bears Behaving Badly##40978 |goto Highmountain/0 37.09,43.29
 |tip You will accept this quest automatically.
@@ -3093,6 +3311,18 @@ step
 kill Brimstone Destroyer##93237
 click Brimstone Destroyer Core##195122
 Brimstone Destroyer Core mined |q 41209/1 |goto 45.20,53.66
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41210
+Follow the path |goto Highmountain/0 58.54,64.44 < 15 |only if walking
+Follow the path |goto 56.10,63.54 < 25 |only if walking
+Follow the path |goto 54.66,66.80 < 25 |only if walking
+accept Brimstone Destroyer##41210 |goto 45.20,53.66
+|tip You will accept this quest automatically.
+step
+kill Brimstone Destroyer##93237
+click Brimstone Destroyer Core##195122
+Brimstone Destroyer Core mined |q 41210/1 |goto 45.20,53.66
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41706
@@ -3226,6 +3456,17 @@ accept DANGER: Mawat'aki##41696 |goto 58.52,72.40
 |tip You will accept this quest automatically.
 step
 kill Mawat'aki##104517 |q 41696/1 |goto 58.52,72.40
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41686
+Follow the path |goto Highmountain/0 40.72,12.33 < 25 |only if walking
+Follow the path |goto 38.04,14.77 < 25 |only if walking
+Follow the path |goto 35.58,17.58 < 25 |only if walking
+Follow the path up |goto Highmountain/0 58.88,68.99 < 30 |only if walking
+accept DANGER: Olokk the Shipbreaker##41686 |goto 33.74,20.61
+|tip You will accept this quest automatically.
+step
+kill Olokk the Shipbreaker##104484 |q 41686/1 |goto 33.74,20.61
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41013
@@ -3416,6 +3657,15 @@ kill Helarjar Ritualist##115132+
 Defeat the Helarjar Ritualists |q 44746/1 |goto 39.15,14.43
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41609
+Follow the path |goto Highmountain/0 38.38,40.95 < 25 |only if walking
+accept Huge Highmountain Salmon##41609 |goto 36.96,44.92
+|tip You will accept this quest automatically.
+step
+Fish from the Huge Highmountain Salmon School |cast Fishing##7620
+collect 10 Huge Highmountain Salmon##134399 |q 41609/1 |goto 36.96,44.92
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42064
 accept It's Illid... Wait.##42064 |goto Highmountain/0 43.09,7.66
 |tip You will accept this quest automatically.
@@ -3449,6 +3699,14 @@ Goal Reached |q 45048/1 |goto 35.50,36.73
 |tip Avoid orange orbs, as they will stun you.
 |tip Aim for the glowing blue platforms. These act as checkpoints.
 |tip Dropping a long distance without dashing will cause you to fail.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41597
+accept Lively Highmountain Salmon##41597 |goto Highmountain/0 33.04,64.58
+|tip You will accept this quest automatically.
+step
+Fish from Lively Highmountain Salmon Schools |cast Fishing##7620
+collect 10 Lively Highmountain Salmon##134400 |q 41597/1 |goto 33.04,64.58
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41089
@@ -3788,6 +4046,16 @@ kill Well-Fed Ironhorn Bull##103681
 collect Thick Slab of Bacon##135511 |q 41549/1 |goto Highmountain/0 42.00,49.36
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41550
+Follow the path |goto Highmountain/0 58.47,64.35 < 25 |only if walking
+Follow the path |goto 56.42,63.58 < 25 |only if walking
+accept Slab of Bacon##41550 |goto 57.49,60.51
+|tip You will accept this quest automatically.
+step
+kill Well-Fed Ironhorn Bull##103681
+collect 1 Thick Slab of Bacon##135511 |q 41550/1 |goto 57.49,60.51
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41687
 Follow the path down |goto Highmountain/0 38.96,38.80 < 30 |only if walking
 Follow the path |goto 41.38,35.90 < 30 |only if walking
@@ -3978,6 +4246,24 @@ accept WANTED: Arru##44289 |goto Highmountain/0 48.64,50.06
 step
 kill Arru##97220 |q 44289/1 |goto Highmountain/0 49.08,49.85
 |tip Inside the cave.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41836
+Follow the path |goto Highmountain/0 40.82,11.92 < 25 |only if walking
+Follow the path |goto 38.19,14.79 < 25 |only if walking
+accept WANTED: Bodash the Hoarder##41836 |goto 36.67,16.36
+|tip You will accept this quest automatically.
+step
+kill Bodash the Hoarder##98299 |q 41836/1 |goto 36.67,16.36
+|next "Court_Of_Farondis_WQ"
+step
+label quest-43616
+Follow the path |goto Highmountain/0 40.82,11.92 < 25 |only if walking
+Follow the path |goto 38.19,14.79 < 25 |only if walking
+accept WANTED: Bodash the Hoarder##43616 |goto 36.67,16.36
+|tip You will accept this quest automatically.
+step
+kill Bodash the Hoarder##98299 |q 43616/1 |goto 36.67,16.36
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41828
@@ -4561,6 +4847,17 @@ Kill Storm's Reach enemies around this area
 Conquer Beasts or Slay Enemies |q 42025/1 |goto 59.84,26.43
 |next "Court_Of_Farondis_WQ"
 step
+label quest-45072
+accept Barrels o' Fun##45072 |goto Stormheim/0 57.69,49.85
+|tip You will accept this quest automatically.
+step
+click Barrel##0
+Game Completed |q 45072/1 |goto 57.71,50.17
+|tip Use the special action button on your screen to begin the game.
+|tip Watch the barrel that lights up yellow closely. You will need to select it when the barrels stop moving.
+|tip More barrels will spawn, making the game more complex.
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41935
 accept Beasts of Burden##41935 |goto Stormheim/0 62.10,52.09
 |tip You will accept this quest automatically.
@@ -4758,6 +5055,15 @@ step
 kill Soulbinder Halldora##109195 |q 42953/1 |goto 58.53,16.25
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41444
+Follow the path |goto Stormheim/0 35.71,30.94 < 25 |only if walking
+accept Dark Leystone Deposits##41444 |goto 33.54,32.96
+|tip You will accept this quest automatically.
+step
+click Dark Leystone Deposits##247917
+collect 10 Dark Leystone Ore##141244 |q 41444/1 |goto 33.54,32.96
+|next "Court_Of_Farondis_WQ"
+step
 label quest-43710
 Follow the path |goto Stormheim/0 60.66,52.14 < 20 |only if walking
 Follow the path |goto 64.18,48.53 < 30 |only if walking
@@ -4768,6 +5074,19 @@ step
 click Dark Runes
 |tip They look like small grey spikes on the ground around this area.
 Destroy #12# Dark Runes |q 43710/1 |goto 70.03,44.42
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41459
+Follow the path |goto Stormheim/0 38.16,32.11 < 25 |only if walking
+Follow the path |goto 40.08,30.17 < 25 |only if walking
+Follow the path |goto 36.86,26.88 < 25 |only if walking
+Follow the path |goto 37.00,21.96 < 25 |only if walking
+Follow the path |goto 36.26,17.19 < 25 |only if walking
+accept Dense Leystone Outcropping##41459 |goto 34.14,13.01
+|tip You will accept this quest automatically.
+step
+click Dense Leystone Outcropping##195122
+collect 1 Dense Leystone Ore##141242 |q 41459/1 |goto 34.14,13.01
 |next "Court_Of_Farondis_WQ"
 step
 label quest-44893
@@ -4998,6 +5317,22 @@ Fish from the giant fishing pool |cast Fishing##131474
 collect 10 Huge Stormray##134571 |q 41615/1 |goto Stormheim/0 62.57,81.02
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41614
+click Grapple Point |only if walking
+|tip It's a grey hook on top of the wall. |only if walking
+Click the first hook |goto Stormheim/0 58.53,48.86 < 6 |only if walking
+Click the second hook |goto 58.64,48.56 < 6 |only if walking
+Click the third hook |goto 58.16,47.81 < 6 |only if walking
+Click the fourth hook |goto 57.65,48.50 < 6 |only if walking
+Drop down |goto 57.52,47.55 < 20 |only if walking
+Follow the path |goto 55.22,45.96 < 25 |only if walking
+accept Huge Stormrays##41614 |goto 53.89,47.83
+|tip You will accept this quest automatically.
+step
+Fish from the Huge Fever of Stormrays |cast Fishing##131474
+collect 10 Huge Stormray##134571 |q 41614/1
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41944
 click Grapple Point |only if walking
 |tip It's a grey hook. |only if walking
@@ -5025,6 +5360,22 @@ collect 40 Leystone-Encrusted Spike##134104 |q 41506/1 |goto 58.18,87.69
 |tip Mine the basilisk corpses.
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41505
+Follow the path |goto Stormheim/0 60.68,52.30 < 15 |only if walking
+Follow the path |goto 65.24,54.58 < 30 |only if walking
+Follow the path |goto 70.21,58.70 < 20 |only if walking
+Drop down |goto 70.98,57.66 < 10 |only if walking
+Follow the path |goto 72.50,57.41 < 25 |only if walking
+Follow the path |goto 75.87,56.91 < 25 |only if walking
+Follow the path |goto 79.31,59.47 < 25 |only if walking
+accept Leystone Basilisks##41505 |goto 80.39,66.52
+|tip You will accept this quest automatically.
+step
+kill Leystone Basilisk##103514+
+|tip Mine the corpses.
+collect 60 Leystone-Encrusted Spike##134104 |q 41505/1 |goto 80.39,66.52
+|next "Court_Of_Farondis_WQ"
+step
 label quest-45049
 Follow the path |goto Stormheim/0 44.80,56.52 < 30 |only if walking
 Follow the path |goto 43.85,58.14 < 30 |only if walking
@@ -5039,6 +5390,37 @@ Goal Reached |q 45049/1 |goto 40.61,62.29
 |tip Avoid orange orbs, as they will stun you.
 |tip Aim for the glowing blue platforms. These act as checkpoints.
 |tip Dropping a long distance without dashing will cause you to fail.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41274
+Follow the path |goto Stormheim/0 44.81,56.46 < 25 |only if walking
+Follow the path |goto 45.05,54.29 < 25 |only if walking
+Follow the path |goto 41.47,52.97 < 25 |only if walking
+Follow the path |goto 40.73,55.27 < 10 |only if walking
+click Grapple Point |goto 39.37,56.16 < 10 |only if walking
+|tip It's a grey hook. |only if walking
+Follow the path |goto 37.75,56.53 < 10 |only if walking
+accept Lively Stormrays##41274 |goto 34.75,53.25
+|tip You will accept this quest automatically.
+step
+Fish from the Lively Stormray schools |cast Fishing##131474
+collect 10 Lively Stormray##134570 |q 41274/1 |goto 36.34,55.98
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41602
+click Grapple Point |only if walking
+|tip It's a grey hook. |only if walking
+Click the first hook |goto Stormheim/0 58.53,48.86 < 6 |only if walking
+Click the second hook |goto 58.64,48.56 < 6 |only if walking
+Click the third hook |goto 58.16,47.81 < 6 |only if walking
+Click the fourth hook |goto 57.65,48.50 < 6 |only if walking
+Drop down |goto 57.52,47.55 < 20 |only if walking
+Follow the path |goto 56.89,46.29 < 25 |only if walking
+accept Lively Stormrays##41602 |goto 56.27,41.84
+|tip You will accept this quest automatically.
+step
+Fish from the Lively Stormray schools |cast Fishing##131474
+collect 10 Lively Stormray##134570 |q 41602/1 |goto 56.27,41.84
 |next "Court_Of_Farondis_WQ"
 step
 label quest-40278
@@ -5131,6 +5513,19 @@ click Raven Nests
 |tip Use the Grapple Points to reach nests.
 |tip The Grapple Points look like metal hooks up on the rocks around this area.
 Remove #5# Raven Nests |q 43786/1 |goto 69.55,45.45
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41535
+Follow the path |goto Stormheim/0 60.68,52.30 < 15 |only if walking
+Follow the path |goto 65.24,54.58 < 30 |only if walking
+Follow the path |goto 70.21,58.70 < 20 |only if walking
+Drop down |goto 70.98,57.66 < 10 |only if walking
+Follow the path |goto 72.50,57.41 < 25 |only if walking
+accept Prickly Fjarnskaggl##41535 |goto 79.93,61.92
+|tip You will accept this quest automatically.
+step
+click Prickly Fjarnskaggl##195114
+collect 10 Prickly Fjarnskaggl##140960 |q 41535/1 |goto 79.93,61.92
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41925
@@ -5770,6 +6165,17 @@ talk Valdemar Stormseeker##106904
 turnin Work Order: Gunpack##41678 |goto 60.26,51.39
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41313
+accept Work Order: Leystone##41313 |goto Stormheim/0 60.26,51.39
+|tip You will accept this quest automatically.
+step
+collect 40 Leystone Ore##123918
+|tip You can farm these with Mining or purchase them from the Auction House.
+step
+talk Valdemar Stormseeker##106904
+turnin Work Order: Leystone##41313 |goto 60.26,51.39
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41636
 accept Work Order: Leystone Breastplate##41636 |goto Stormheim/0 60.26,51.39
 |tip You will accept this quest automatically.
@@ -5972,6 +6378,17 @@ Use the Nightborne Armaments near Rebellious Citizens |use Nightborne Armaments#
 Arm #6# Rebellious Citizens |q 44769/1 |goto 51.25,78.79
 |next "Court_Of_Farondis_WQ"
 step
+label quest-45068
+accept Barrels o' Fun##45068 |goto Suramar/0 36.02,47.07
+|tip You will accept this quest automatically.
+step
+click Barrel##0
+Game Completed |q 45068/1 |goto 36.02,47.07
+|tip Use the special action button on your screen to begin the game.
+|tip Watch the barrel that lights up yellow closely. You will need to select it when the barrels stop moving.
+|tip More barrels will spawn, making the game more complex.
+|next "Court_Of_Farondis_WQ"
+step
 label quest-43435
 accept The Battle Rages On##43435 |goto Suramar/0 34.19,20.54
 |tip You will accept this quest automatically.
@@ -6071,6 +6488,23 @@ kill Garion##112530  |q 44067/2 |goto 61.93,60.92
 |tip Inside the building.
 |next "Court_Of_Farondis_WQ"
 step
+label quest-44816
+Follow the path |goto Suramar/0 33.04,53.03 < 25 |only if walking
+Follow the path |goto 33.10,56.69 < 25 |only if walking
+accept Continued Exposure##44816 |goto 32.53,59.01
+|tip You will accept this quest automatically.
+step
+Follow the path down |goto 32.53,59.01 < 15 |only if walking
+Follow the path |goto 31.82,63.52 < 25 |only if walking
+Follow the path |goto 30.78,69.21 < 25 |only if walking
+Follow the path |goto 29.96,78.92 < 25 |only if walking
+Follow the path |goto 32.92,82.24 < 25 |only if walking
+click Volatile Fel##116084
+|tip They look like green spheres floating in the air.
+Use the targeting orb to expose Withered mobs to the fel |use Withered Targeting Orb##142509
+Withered Exposed to Volatile Fel |q 44816/1 |goto 34.25,80.92
+|next "Court_Of_Farondis_WQ"
+step
 label quest-44856
 Cross the bridge |goto Suramar/0 24.26,31.92 < 30 |only if walking
 accept Cut the Cattitude##44856 |goto Suramar/0 22.40,30.22
@@ -6108,6 +6542,16 @@ accept DANGER: Az'jatar##44121 |goto Suramar/0 80.70,60.72
 step
 kill Az'jatar##112759 |q 44121/1 |goto 81.32,62.73
 |tip This is a group quest, you will likely need help to kill him.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41697
+Follow the path |goto Suramar/0 33.11,52.91 < 25 |only if walking
+Follow the path |goto 29.89,53.68 < 25 |only if walking
+Follow the path |goto 27.53,53.74 < 25 |only if walking
+accept DANGER: Colerian, Alteria, and Selenyi##41697 |goto 24.40,54.36
+|tip You will accept this quest automatically.
+step
+kill Colerian##104519, Alteria##104521, Selenyi##104522 |q 41697/1 |goto 24.40,54.36
 |next "Court_Of_Farondis_WQ"
 step
 label quest-44114
@@ -6212,6 +6656,14 @@ Kill Fal'dorei enemies around this area
 Kill #10# Fal'dorei |q 42089/1 |goto Suramar/33 46.56,43.32
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41573
+accept Felhide##41573
+|tip You will accept this quest automatically.
+step
+kill Felhide Gargantuan##103675
+Skin the Felhide Gargantuan |q 41573/1
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41508
 accept Felslate Basilisks##41508 |goto Suramar/0 31.99,54.70
 |tip You will accept this quest automatically.
@@ -6220,6 +6672,17 @@ kill Felslate Basilisk##114113+
 click Felslate Basilisk##114113
 |tip Mine the basilisk corpses.
 collect Felslate-Encrusted Spike##134105 |q 41508/1 |goto 31.99,54.70
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41522
+Follow the path |goto Suramar/0 32.92,47.16 < 25 |only if walking
+Follow the path |goto 31.14,41.93 < 25 |only if walking
+Follow the path |goto 31.71,36.32 < 25 |only if walking
+accept Felled Experiment##41522 |goto Suramar/0 33.26,33.34
+|tip You will accept this quest automatically.
+step
+click Felwort##0
+Felwort gathered |q 41522/1 |goto Suramar/0 33.26,33.34
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43930
@@ -6233,6 +6696,20 @@ step
 label "Slay_Disturbed_Spirits"
 Kill Disturbed enemies around this area
 Slay #10# Disturbed Spirits |q 43930/2 |goto 45.61,36.58
+|next "Court_Of_Farondis_WQ"
+step
+label quest-40337
+Follow the path |goto Suramar/0 33.02,53.00 < 25 |only if walking
+Follow the path |goto 30.30,53.55 < 25 |only if walking
+Follow the path |goto 25.85,55.11 < 25 |only if walking
+Follow the path |goto 24.30,59.20 < 25 |only if walking
+Drop down to the ledge below |goto 24.77,62.79 < 25 |only if walking
+accept Flummoxed##40337 |goto 25.20,62.49
+|tip You will accept this quest automatically.
+step
+talk Master Tamer Flummox##97709
+Tell him "Let's do battle!"
+Defeat Master Tamer Flummox |q 40337/1 |goto 25.20,62.49
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43932
@@ -6329,6 +6806,16 @@ Follow the path |goto 49.34,76.27 < 20 |only if walking
 Follow the path |goto 49.85,74.84 < 20 |only if walking
 Kill enemies around this area
 Defend the Arcwine Distribution |q 44744/1 |goto 49.27,71.30
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41279
+Follow the path |goto Suramar/0 34.83,50.52 < 25 |only if walking
+Follow the path |goto 36.78,52.83 < 20 |only if walking
+accept Lively Runescale Koi##41279 |goto 37.42,55.66
+|tip You will accept this quest automatically.
+step
+Fish from the Lively Runescale Koi schools |cast Fishing##131474
+collect 10 Lively Runescale Koi##134573 |q 41279/1 |goto 37.42,55.66
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43777
@@ -6517,6 +7004,17 @@ kill Baconlisk##103787
 collect Thick Slab of Bacon##135511 |q 41557/1 |goto Suramar/0 38.94,29.54
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41558
+Follow the path |goto Suramar/0 32.74,48.46 < 25 |only if walking
+Follow the path |goto 29.23,47.76 < 25 |only if walking
+Follow the path |goto 25.38,51.82 < 25 |only if walking
+accept Slab of Bacon##41558 |goto 24.53,49.49
+|tip You will accept this quest automatically.
+step
+kill Baconlisk##103787
+collect 1 Thick Slab of Bacon##135511 |q 41558/1 |goto 24.53,49.49
+|next "Court_Of_Farondis_WQ"
+step
 label quest-43959
 accept Stelleris Shakedown##43959 |goto Suramar/0 54.27,59.86
 |tip You will accept this quest automatically.
@@ -6528,6 +7026,24 @@ kill Stelleris Libertine##112005+
 Persuade a Stelleris Libertine |q 43959/1 |goto 59.78,60.43
 step
 kill Corvelyn##112016 |q 43959/2 |goto 55.38,65.15
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44817
+Follow the path |goto Suramar/0 64.38,43.17 < 25 |only if walking
+Follow the path |goto 64.52,46.87 < 25 |only if walking
+Follow the path |goto 63.72,50.95 < 25 |only if walking
+accept Stirring the Swarm##44817 |goto 62.01,52.28
+|tip You will accept this quest automatically.
+stickystart "Duskwatch"
+step
+click Leypulse Beacon##116529
+East Beacon Activated |q 44817/1 |goto 62.71,52.86
+step
+click Leypulse Beacon##116529
+West Beacon Activated |q 44817/2 |goto 61.18,51.20
+step
+label "Duskwatch"
+kill Duskwatch Spellfury##116555 |q 44817/3 |goto 62.01,52.28
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42082

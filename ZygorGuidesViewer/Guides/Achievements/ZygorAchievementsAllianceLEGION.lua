@@ -3152,25 +3152,157 @@ condition_end="achieved(10690)",
 author="support@zygorguides.com",
 startlevel=100,
 keywords={"Fashionista","Wrist"},
-description="This Guide will explain how to attain 100 Different Shirt Appearances",
+description="This Guide will explain how to attain 15 Different Tabard Appearances",
 },[[
 step
 For this achievement, you will need to collect 15 different appearances for the _Tabard_ slot of your character sheet
 You will be spending roughly 600 gold follwing the guide
 Click here to continue |confirm |or |next "hello"
 Earn the Fashionista: Tabard Achievement |achieve 10690 |or |next congrats
+stickystart "Horde"
 step
 label "hello"
 talk Captain Lancy Revshon##49877
-buy Stormwind Tabard##45574 |goto Stormwind City/0 67.77,73.09 |n
-Equip the Stormwind Tabard |equipped Stormwind Tabard##45574 |use Stormwind Tabard##45574 |future |achieve 10690
+buy Stormwind Tabard##45574 |condition itemcount(45574) ==1 |goto Stormwind City/0 67.77,73.09
+step
+talk Adherent Hanjun##69334
+buy Tushui Tabard##83079 |condition itemcount(83079) ==1 |goto 68.0,17.0
 step
 talk Captain Stonehelm##50309
-buy Ironforge Tabard##45577 |goto Ironforge/0 55.64,47.40 |n
-Equip the Ironforge Tabard |equipped Ironforge Tabard##45577 |use Ironforge Tabard##45577 |future |achieve 10690
+buy Ironforge Tabard##45577 |condition itemcount(45574) ==1 |goto Ironforge/0 55.64,47.40
+step
+talk Master Tinker Trini##50308
+buy Gnomeregan Tabard##45578 |condition itemcount(45578) ==1 |goto 55.26,48.08
+step
+talk Lord Candren##50307
+buy Gilneas Tabard##64882 |condition itemcount(64882) ==1 |goto Darnassus/0 37.15,47.45
+step
+talk Moon Priestess##50305
+buy Darnassus Tabard##45579 |condition itemcount(45579) ==1 |goto 36.15,48.49
+step
+talk Kadu##50306
+buy Exodar Tabard##45580 |condition itemcount(45580) ==1 |goto The Exodar/0 54.82,36.87
+step
+kill Val'zareq the Conqueror##21979
+|tip He patrols the path.
+collect The Journal of Val'zareq##31345 |use The Journal of Val'zareq##31345 |n |goto Shadowmoon Valley/0 53.2,60.2
+accept The Journal of Val'zareq: Portends of War##10793 |goto 52.16,68.09
+step
+click Crystal Prison
+turnin The Journal of Val'zareq: Portends of War##10793 |goto 51.42,72.82
+accept Battle of the Crimson Watch##10781 |goto 51.43,72.80
+step
+kill Torloth the Magnificent##22076
+Crimson Sigil Forces Annihilated |q 10781/1 |goto 51.79,72.85
+|tip Kill the enemies that spawn.
+step
+talk A'dal##18481
+turnin Battle of the Crimson Watch##10781 |goto Shattrath City/0 54.08,44.76
+collect Green Trophy Tabard of the Illidari##31404 |condition itemcount(31404) ==1 |goto 54.08,44.76
+collect Purple Trophy Tabard of the Illidari##31405 |condition itemcount(31405) ==1 |goto 54.08,44.76
+confirm always
+step
+talk Rebecca Laughlin##5193
+buy Guild Tabard##5976 |condition itemcount(5976) ==1 |goto Stormwind City/0 64.04,77.44
+buy Private's Tabard##15196 |condition itemcount(15196) ==1 |goto Stormwind City/0 64.04,77.44
+buy Knight's Colors##15198 |condition itemcount(15198) ==1 |goto Stormwind City/0 64.04,77.44
+buy Silverwing Battle Tabard##19506 |condition itemcount(19506) ==1 |goto Stormwind City/0 64.04,77.44
+buy Stormpike Battle Tabard##19032 |condition itemcount(19032) ==1 |goto Stormwind City/0 64.04,77.44
+For the Private's, Knights, Silverwing and Stormpike Battle Tabard, you will need to farm 22 Marks of Honor
+step
+talk Rebecca Laughlin##5193
+buy Illustrious Guild Tabard##69209 |condition itemcount(69209) ==1 |goto 64.04,77.44
+You will need to be in a guild and friendly with the guild in order to buy this tabard
+step "Horde"
+If you don't want to have to farm reputation for additional tabards, you can also buy the 7 Horde faction tabards
+If you wish to do this, use the Horde Variant of the Fashionista: Tabard guide on a horde character
+|tip This achievement is account bound, so any Tabard you obtain will count towards the achievement.
 step
 label "congrats"
 Congratulations, you have earned the Fashionista: Tabard Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Collections\\Legion\\The Tangerine Traveler",{
+condition_end="achieved(10770)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"Tangerine","Traveler"},
+description="This guide will show you the various locations that you are able to find Pepe wearing Traveler Goggles.",
+},[[
+step
+Enter the building |goto Dalaran L/10 58.61,51.37 < 10
+click Traveller Pepe
+Find Traveller Pepe |achieve 10770 |goto 59.94,52.65 |next "end"
+Click here if Traveller Pepe isn't here |confirm
+step
+click Traveller Pepe
+|tip Check around the cart.
+Find Traveller Pepe |achieve 10770 |goto 57.20,52.40 |next "end"
+confirm
+step
+Follow the path |goto 56.72,56.80 < 20
+Follow the path |goto 60.82,61.65 < 20
+click Traveller Pepe
+Find Traveller Pepe |achieve 10770 |goto 64.78,54.38 |next "end"
+Click here if Traveller Pepe isn't here |confirm
+step
+click Traveller Pepe
+|tip Will be sitting on the post if available at this location.
+Find Traveller Pepe|achieve 10770 |goto 59.01,42.39 |next "end"
+confirm
+step
+goto 54.56,44.52
+confirm always
+step
+goto 48.35,38.72
+confirm always
+step
+goto 48.08,31.72
+confirm always
+step
+goto 52.31,17.68
+confirm always
+step
+goto 45.01,22.00
+confirm always
+step
+goto 44.86,28.76
+confirm always
+step
+goto 39.99,27.90
+confirm always
+step
+goto 34.98,28.01
+confirm always
+step
+goto 32.19,31.22
+confirm always
+step
+goto 34.08,34.20
+confirm always
+step
+goto 36.24,37.58
+confirm always
+step
+goto 39.88,35.21
+confirm always
+step
+goto 40.89,33.23
+confirm always
+step
+goto 39.70,42.80
+confirm always
+step
+goto 35.46,49.73
+confirm always
+step
+goto 32.78,45.18
+confirm always
+step
+goto 42.65,57.17
+confirm always
+step
+label "end"
+Congratz
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Toys\\Legion\\Rocfeather Skyhorn Kite",{
 condition_end="_G.PlayerHasToy(131811)",

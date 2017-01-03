@@ -586,8 +586,7 @@ end
 
 function GuideMenu:MakeMenuButton(name,caption,texture,x,w,y,h)
 	local parent = GuideMenu.MainFrame.MenuGuides
-	local header = nil
-	local but = CHAIN(CreateFrame("Button",name,header))
+	local but = CHAIN(CreateFrame("Button"))
 		:SetSize(200,18)
 		:SetFrameStrata("HIGH")
 		:SetFrameLevel(4)

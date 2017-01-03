@@ -27107,4 +27107,5 @@ ZygorGuidesViewer_L("NPCs", "enUS", function() return {
 [114914]="Dalion|",
 [114915]="Andaris Narassin|",
 [115367]="Archmage Khadgar|",
+[109735]="Alynrus Nightcast|",
 } end)

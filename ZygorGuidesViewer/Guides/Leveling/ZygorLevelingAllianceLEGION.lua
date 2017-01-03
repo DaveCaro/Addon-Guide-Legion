@@ -9207,7 +9207,7 @@ accept Archdruid of Lore##44106 |goto 54.38,73.56 |or
 step
 Enter the building |goto 55.28,73.13 < 10 |walk
 talk Feonir Cloudthistle##93460
-home The Traveler's Den |goto 56.07,73.50
+home The Traveler's Den |goto 56.07,73.50 |q 38842 |future
 step
 accept Faerie Fracas##38842 |goto 54.15,79.64
 |tip You will accept this quest automatically.
@@ -9717,7 +9717,7 @@ talk Aldos Duskwing##95117
 accept Wormtalon Wreckage##41707 |goto 69.48,49.33
 step
 talk Faeolas Nightwhisper##95118
-home Starsong Refuge |goto 69.57,49.42
+home Starsong Refuge |goto 69.57,49.42 |q 41707 |future
 stickystart "Shadowfen_Heirlooms"
 stickystart "Wormtalon_Harpies"
 step
@@ -19246,7 +19246,7 @@ click Light's Heart
 |tip Inside the building.
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
-accept Awakenings##44464 |goto 47.49,43.51
+accept Awakenings##44464 |goto 47.31,43.44
 |only Hunter
 step
 Use the Call to Xe'ra ability
@@ -19256,14 +19256,14 @@ Witness the Awakening of Illidan Stormrage |q 44464/1 |goto Val'sharah/0 54.40,7
 step
 click Light's Heart
 |tip Inside the building.
-turnin Awakenings##44464 |goto Trueshot Lodge/0 47.49,43.51
+turnin Awakenings##44464 |goto Trueshot Lodge/0 47.31,43.44
 |only Hunter
 step
 click Light's Heart
 |tip Inside the building.
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
-accept An Unclear Path##44466 |goto 47.42,43.49
+accept An Unclear Path##44466 |goto 47.31,43.44
 |tip You will need Artifact Knowledge Rank 2 in order to accept this.
 |only Hunter
 step
@@ -19277,14 +19277,14 @@ Witness Illidan's Resilience |q 44466/1 |goto Val'sharah/0 45.54,34.75
 step
 click Light's Heart
 |tip Inside the building.
-turnin An Unclear Path##44466 |goto Trueshot Lodge/0 47.42,43.49
+turnin An Unclear Path##44466 |goto Trueshot Lodge/0 47.31,43.44
 |only Hunter
 step
 click Light's Heart
 |tip Inside the building.
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
-accept Ravencrest's Legacy##44479 |goto Trueshot Lodge/0 47.42,43.49
+accept Ravencrest's Legacy##44479 |goto Trueshot Lodge/0 47.31,43.44
 |only Hunter
 step
 Follow the path |goto Val'sharah/0 54.96,53.43 < 20 |only if walking
@@ -19354,14 +19354,14 @@ Return to Val'sharah |goto Val'sharah/0 41.44,45.63 < 10000 |noway |c |q 44479
 step
 click Light's Heart
 |tip Inside the building.
-turnin Ravencrest's Legacy##44479 |goto Trueshot Lodge/0 47.42,43.49
+turnin Ravencrest's Legacy##44479 |goto Trueshot Lodge/0 47.31,43.44
 |only Hunter
 step
 click Light's Heart
 |tip Inside the building.
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
-accept In My Father's House##44480 |goto 34.44,51.14
+accept In My Father's House##44480 |goto 47.31,43.44
 |tip You will need Artifact Knowledge Rank 5 in order to accept this.
 |only Hunter
 step
@@ -19372,14 +19372,14 @@ Witness Illidan's Resilience |q 44480/1 |goto Azshara/0 34.83,49.90
 step
 click Light's Heart
 |tip Inside the building.
-turnin In My Father's House##44480 |goto Trueshot Lodge/0 34.44,51.14
+turnin In My Father's House##44480 |goto Trueshot Lodge/0 47.31,43.44
 |only Hunter
 step
 click Light's Heart
 |tip Inside the building.
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
-accept Destiny Unfulfilled##44496 |goto Trueshot Lodge/0 34.44,51.14
+accept Destiny Unfulfilled##44496 |goto Trueshot Lodge/0 47.31,43.44
 |only Hunter
 step
 Use the Call to Xe'ra ability
@@ -19419,13 +19419,13 @@ Experience True Betrayal |q 44496/1 |goto 52.70,71.25
 step
 click Light's Heart
 |tip Inside the building.
-turnin Destiny Unfulfilled##44496 |goto Trueshot Lodge/0 34.44,51.14
+turnin Destiny Unfulfilled##44496 |goto Trueshot Lodge/0 47.31,43.44
 |only Hunter
 step
 click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
-accept The Hunt for Illidan Stormrage##45174 |goto 34.44,51.14
+accept The Hunt for Illidan Stormrage##45174 |goto 47.31,43.44
 |tip You will need Artifact Knowledge Rank 5 in order to accept this.
 |only Hunter
 step
@@ -24153,7 +24153,6 @@ turnin Preparations for Invasion##42669 |goto Mardum, the Shattered Abyss/2 56.4
 turnin One Battle at a Time##44694 |goto Mardum, the Shattered Abyss/2 56.46,60.39
 accept We'll Need Some Obliterum##44616 |goto Mardum, the Shattered Abyss/2 59.71,53.12
 accept A Very Special Kind of Fuel##42733 |goto Mardum, the Shattered Abyss/2 59.71,53.12
-accept Deadlier Warglaives##42732 |goto Mardum, the Shattered Abyss/2 59.71,53.12
 |only DemonHunter
 stickystart "Sovereign_Souls_DemonHunter"
 step
@@ -24175,6 +24174,12 @@ step
 talk Camille Kleister##97429
 turnin Fire!##39838 |goto 39.64,30.80
 |only DemonHunter
+step
+Follow the path down |goto Mardum, the Shattered Abyss/1 68.46,66.55 < 15 |walk
+Follow the path down |goto Mardum, the Shattered Abyss/2 68.35,53.61 > 10000 |walk
+talk Allari the Souleater##98648
+|tip She walks around.
+accept Deadlier Warglaives##42732 |goto 59.71,53.12
 step
 collect 1 Obliterum##124125 |q 42732/1
 |tip Buy these from the Auction House.

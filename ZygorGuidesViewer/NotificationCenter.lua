@@ -133,6 +133,8 @@ function Notification.AddButton(id, title, text, texture, texcoords, onClick, to
 
 	local button
 
+	if not frame then return end
+
 	if not frame.buttons[id] then
 		button = CHAIN(CreateFrame("Button", "", frame))
 			:SetPoint("TOPLEFT", frame, "TOPLEFT", 0,0)

@@ -3001,8 +3001,8 @@ ZygorGuidesViewer:RegisterInclude("Feast of Winter Veil Achievements",[[
 	step
 		Congratulations, you now have the achievement _A-Caroling We Will Go_!
 	step
-		talk Blax Bottlerocket##52809
-		buy 1 Blue Crashin' Thrashin' Racer Controller##54343 |condition itemcount(54343) >= 1 |goto Dalaran 59.0,52.8
+		talk Jepetto Joybuzz##29478
+		buy 1 Blue Crashin' Thrashin' Racer Controller##54343 |condition itemcount(54343) >= 1 |goto Dalaran/1 44.75,45.70
 		|tip He pats around this area.
 	step
 		To complete this achievement you will need to destroy 25 other racers while controling your own

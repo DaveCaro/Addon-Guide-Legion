@@ -2960,6 +2960,80 @@ step
 label "congrats"
 Congratulations, you have earned the Fashionista: Shirt Achievement!
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Collections\\Legion\\Fashionista: Tabard",{
+condition_end="achieved(10690)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"Fashionista","Wrist"},
+description="This Guide will explain how to attain 15 Different Tabard Appearances",
+},[[
+step
+For this achievement, you will need to collect 15 different appearances for the _Tabard_ slot of your character sheet
+You will be spending roughly 600 gold follwing the guide
+Click here to continue |confirm |or |next "hello"
+Earn the Fashionista: Tabard Achievement |achieve 10690 |or |next congrats
+stickystart "Alliance"
+step
+label "hello"
+talk Stone Guard Nargol##50488
+buy Orgrimmar Tabard##45581 |condition itemcount(45581) ==1 |goto Orgrimmar/1 50.38,58.40
+step
+talk Champion Uru'zin##50477
+buy Darkspear Tabard##45582 |condition itemcount(45582) ==1 |goto 50.04,58.18
+step
+talk Frizzo Villamar##50323
+buy Bilgewater Cartel Tabard##64884 |condition itemcount(64884) ==1 |goto 49.8,58.6
+step
+talk Disciple Jusi##69333
+buy Huojin Tabard##83080 |condition itemcount(83080) ==1 |goto 68.6,40.6
+step
+talk Brave Tuho##50483
+buy Thunder Bluff Tabard##45584 |condition itemcount(45584) ==1 |goto Thunder Bluff/0 46.8,50.0
+step
+talk Captain Donald Adams##50304
+buy Undercity Tabard##45583 |condition itemcount(45583) ==1 |goto Undercity/0 63.6,48.8
+step
+talk Magistrix Nizara##50484
+buy Silvermoon City Tabard##45585 |condition itemcount(45585) ==1 |goto Eversong Woods/0 54.2,50.8
+step
+kill Val'zareq the Conqueror##21979
+|tip He patrols the path.
+collect The Journal of Val'zareq##31345 |use The Journal of Val'zareq##31345 |n |goto Shadowmoon Valley/0 53.2,60.2
+accept The Journal of Val'zareq: Portends of War##10793 |goto 52.16,68.09
+step
+click Crystal Prison
+turnin The Journal of Val'zareq: Portends of War##10793 |goto 51.42,72.82
+accept Battle of the Crimson Watch##10781 |goto 51.43,72.80
+step
+kill Torloth the Magnificent##22076
+Crimson Sigil Forces Annihilated |q 10781/1 |goto 51.79,72.85
+|tip Kill the enemies that spawn.
+step
+talk A'dal##18481
+turnin Battle of the Crimson Watch##10781 |goto Shattrath City/0 54.08,44.76
+collect Green Trophy Tabard of the Illidari##31404 |condition itemcount(31404) ==1 |goto 54.08,44.76
+collect Purple Trophy Tabard of the Illidari##31405 |condition itemcount(31405) ==1 |goto 54.08,44.76
+confirm always
+step
+talk Garyl##5188
+buy Guild Tabard##5976 |condition itemcount(5976) ==1 |goto Orgrimmar/1 47.62,74.77
+buy Scout's Tabard##15197 |condition itemcount(15197) ==1 |goto 47.62,74.77
+buy Stone Guard's Herald##15199 |condition itemcount(15199) ==1 |goto 47.62,74.77
+buy Warsong Battle Tabard##19505 |condition itemcount(19505) ==1 |goto 47.62,74.77
+buy Frostwolf Battle Tabard##19031 |condition itemcount(19031) ==1 |goto 47.62,74.77
+For the Scout's Tabard, Stone Guard's Herald, Warsong Battle Tabard and Frostwolf Battle Tabard you will need to farm 22 Marks of Honor
+step
+talk Rebecca Laughlin##5193
+buy Illustrious Guild Tabard##69209 |condition itemcount(69209) ==1 |goto 47.62,74.77
+You will need to be in a guild and friendly with the guild in order to buy this tabard
+step "Alliance"
+If you don't want to have to farm reputation for additional tabards, you can also buy the 7 Alliance Faction Tabards
+If you wish to do this, use the Alliance Variant of the Fashionista: Tabard guide on a horde character
+|tip This achievement is account bound, so any Tabard you obtain will count towards the achievement.
+step
+label "congrats"
+Congratulations, you have earned the Fashionista: Tabard Achievement!
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Toys\\Legion\\Rocfeather Skyhorn Kite",{
 condition_end="_G.PlayerHasToy(131811)",
 author="support@zygorguides.com",

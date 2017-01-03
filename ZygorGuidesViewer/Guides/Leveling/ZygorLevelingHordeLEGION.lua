@@ -3663,36 +3663,36 @@ accept Preparation##42568
 step
 talk Garona Halforcen##107979
 turnin Preparation##42568 |goto Elwynn Forest/0 36.78,52.57
-accept The Unseen Blade##42504 |goto Elwynn Forest/0 36.77,52.62
+accept The Unseen Blade##42627 |goto Elwynn Forest/0 36.77,52.62
 |only Rogue
 step
-Begin the Scenario |scenariostart |q 42504
+Begin the Scenario |scenariostart |q 42627
 |only Rogue
 step
 Watch the dialogue
-Confront Mathias Shaw |scenariostage 1 |goto 32.17,49.43 |q 42504
+Confront Mathias Shaw |scenariostage 1 |goto 32.17,49.43 |q 42627
 |only Rogue
 step
 Follow the path |goto 69.37,79.17 < 15
 |tip Sneak passed the enemies, be careful.
 click Smoke Bombs
 |tip Upstairs inside the building.
-Obtain a Smoke Bomb from Elling Trias |scenariostage 2 |goto Stormwind City/0 66.18,74.43 |q 42504
+Obtain a Smoke Bomb from Elling Trias |scenariostage 2 |goto Stormwind City/0 66.18,74.43 |q 42627
 |only Rogue
 step
 Follow the path |goto 63.83,75.02 < 10
 |tip Sneak passed the enemies, be careful.
 Use the Smoke Bomb
 |tip Click the Smoke Bomb ability button in the quest goal tracker.
-Use the Smoke Bomb in the Trader's Hall |scenariostage 3 |goto 61.43,71.82 |q 42504
+Use the Smoke Bomb in the Trader's Hall |scenariostage 3 |goto 61.43,71.82 |q 42627
 |only Rogue
 step
-Pickpocket Guards until you Find Information |scenariogoal 4/30966 |goto 62.12,74.36 |q 42504
+Pickpocket Guards until you Find Information |scenariogoal 4/30966 |goto 62.12,74.36 |q 42627
 |tip All around this area. The ones holding the item you need will be glowing.
 |only Rogue
 step
 _Move to a safe location:_
-Read the Coded Message |scenariostage 4 |q 42504
+Read the Coded Message |scenariostage 4 |q 42627
 |tip Click the Read Coded Message ability button in the quest goal tracker.
 |only Rogue
 step
@@ -3701,16 +3701,16 @@ Follow the path |goto 64.26,66.58 < 15
 Cross the bridge |goto 67.07,64.67 < 15
 Follow the path |goto 69.87,62.44 < 15
 Follow the path |goto 71.36,59.53 < 15
-Meet Garona at the Pig and Whistle Tavern |scenariostage 5 |goto 74.93,55.78 |q 42504
+Meet Garona at the Pig and Whistle Tavern |scenariostage 5 |goto 74.93,55.78 |q 42627
 |only Rogue
 step
 click Door##214836
-Open the Tavern Door |scenariogoal 6/30480 |goto 75.06,55.34 |q 42504
+Open the Tavern Door |scenariogoal 6/30480 |goto 75.06,55.34 |q 42627
 |only Rogue
 step
 kill Sister Althea Ebonlocke##108218
 Watch the dialogue
-Make Althea Ebonlocke Talk |scenariostage 6 |goto 75.35,54.07 |q 42504
+Make Althea Ebonlocke Talk |scenariostage 6 |goto 75.35,54.07 |q 42627
 |only Rogue
 step
 Follow the path |goto 71.50,55.79 < 15
@@ -3720,25 +3720,25 @@ Sneak up on the rail |goto 74.93,42.69 < 10
 Follow the path |goto 80.54,37.95 < 15
 Sprint through here |goto 84.36,31.47 < 15
 |tip When Lucas Severing throws down his hammer and the light starts pulsing, wait for a break in the pulse, then run through quickly, and then Vanish on the other side of the guards.
-Find the Herald in Stormwind Keep |scenariostage 7 |goto 83.53,29.84 |q 42504
+Find the Herald in Stormwind Keep |scenariostage 7 |goto 83.53,29.84 |q 42627
 |only Rogue
 step
 kill Melris Malagan##107831
-Assassinate Melris Malagan |scenariostage 8 |goto 82.40,28.12 |q 42504
+Assassinate Melris Malagan |scenariostage 8 |goto 82.40,28.12 |q 42627
 |only Rogue
 step
 click The Kingslayers
-Wield the Kingslayers |scenariostage 9 |goto 82.83,27.94 |q 42504
+Wield the Kingslayers |scenariostage 9 |goto 82.83,27.94 |q 42627
 |only Rogue
 step
 click Portal to Dalaran
-Take the Portal to Dalaran |scenarioend |goto 86.94,37.30 |q 42504
+Take the Portal to Dalaran |scenarioend |goto 86.94,37.30 |q 42627
 Obtain the Kingslayers |q 42504/1 |goto 82.83,27.94
 |only Rogue
 step
 talk "Red" Jack Findle##97004 |goto Dalaran L/10 53.21,71.08 < 5
 _<Lay your Insignia on the table.>_
-Return to the Hall of Shadows |q 42504/2 |goto 53.18,69.94
+Return to the Hall of Shadows |q 42627/2 |goto 53.18,69.94
 |only Rogue
 step
 Run down the stairs |goto Dalaran L/4 82.87,81.59 < 15
@@ -3747,7 +3747,7 @@ Follow the path |goto Dalaran L/4 79.08,65.53 < 20
 Cross the bridge |goto Dalaran L/4 49.14,35.73 < 20
 Click the Torch and go through the doorway |goto Dalaran L/4 44.85,55.02 < 15
 talk Garona Halforcen##94141
-turnin The Unseen Blade##42504 |goto Dalaran L/4 42.42,74.62 |next "AllRogues"
+turnin The Unseen Blade##42627 |goto Dalaran L/4 42.42,74.62 |next "AllRogues"
 |only Rogue
 step
 label "Subtlety_Artifact"
@@ -9183,7 +9183,7 @@ accept Archdruid of Lore##44106 |goto 54.38,73.56 |or
 step
 Enter the building |goto 55.28,73.13 < 10 |walk
 talk Feonir Cloudthistle##93460
-home The Traveler's Den |goto 56.07,73.50
+home The Traveler's Den |goto 56.07,73.50 |q 38842 |future
 step
 accept Faerie Fracas##38842 |goto 54.15,79.64
 |tip You will accept this quest automatically.
@@ -9693,7 +9693,7 @@ talk Aldos Duskwing##95117
 accept Wormtalon Wreckage##41707 |goto 69.48,49.33
 step
 talk Faeolas Nightwhisper##95118
-home Starsong Refuge |goto 69.57,49.42
+home Starsong Refuge |goto 69.57,49.42 |q 41707 |future
 stickystart "Shadowfen_Heirlooms"
 stickystart "Wormtalon_Harpies"
 step
@@ -19198,7 +19198,7 @@ click Light's Heart
 |tip Inside the building.
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
-accept Awakenings##44464 |goto 47.49,43.51
+accept Awakenings##44464 |goto 47.31,43.44
 |only Hunter
 step
 Use the Call to Xe'ra ability
@@ -19208,14 +19208,14 @@ Witness the Awakening of Illidan Stormrage |q 44464/1 |goto Val'sharah/0 54.40,7
 step
 click Light's Heart
 |tip Inside the building.
-turnin Awakenings##44464 |goto Trueshot Lodge/0 47.49,43.51
+turnin Awakenings##44464 |goto Trueshot Lodge/0 47.31,43.44
 |only Hunter
 step
 click Light's Heart
 |tip Inside the building.
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
-accept An Unclear Path##44466 |goto 47.42,43.49
+accept An Unclear Path##44466 |goto 47.31,43.44
 |tip You will need Artifact Knowledge Rank 2 in order to accept this.
 |only Hunter
 step
@@ -19229,14 +19229,14 @@ Witness Illidan's Resilience |q 44466/1 |goto Val'sharah/0 45.54,34.75
 step
 click Light's Heart
 |tip Inside the building.
-turnin An Unclear Path##44466 |goto Trueshot Lodge/0 47.42,43.49
+turnin An Unclear Path##44466 |goto Trueshot Lodge/0 47.31,43.44
 |only Hunter
 step
 click Light's Heart
 |tip Inside the building.
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
-accept Ravencrest's Legacy##44479 |goto Trueshot Lodge/0 47.42,43.49
+accept Ravencrest's Legacy##44479 |goto Trueshot Lodge/0 47.31,43.44
 |only Hunter
 step
 Follow the path |goto Val'sharah/0 54.96,53.43 < 20 |only if walking
@@ -19306,14 +19306,14 @@ Return to Val'sharah |goto Val'sharah/0 41.44,45.63 < 10000 |noway |c |q 44479
 step
 click Light's Heart
 |tip Inside the building.
-turnin Ravencrest's Legacy##44479 |goto Trueshot Lodge/0 47.42,43.49
+turnin Ravencrest's Legacy##44479 |goto Trueshot Lodge/0 47.31,43.44
 |only Hunter
 step
 click Light's Heart
 |tip Inside the building.
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
-accept In My Father's House##44480 |goto 34.44,51.14
+accept In My Father's House##44480 |goto 47.31,43.44
 |tip You will need Artifact Knowledge Rank 5 in order to accept this.
 |only Hunter
 step
@@ -19324,14 +19324,14 @@ Witness Illidan's Resilience |q 44480/1 |goto Azshara/0 34.83,49.90
 step
 click Light's Heart
 |tip Inside the building.
-turnin In My Father's House##44480 |goto Trueshot Lodge/0 34.44,51.14
+turnin In My Father's House##44480 |goto Trueshot Lodge/0 47.31,43.44
 |only Hunter
 step
 click Light's Heart
 |tip Inside the building.
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
-accept Destiny Unfulfilled##44496 |goto Trueshot Lodge/0 34.44,51.14
+accept Destiny Unfulfilled##44496 |goto Trueshot Lodge/0 47.31,43.44
 |only Hunter
 step
 Use the Call to Xe'ra ability
@@ -19371,13 +19371,13 @@ Experience True Betrayal |q 44496/1 |goto 52.70,71.25
 step
 click Light's Heart
 |tip Inside the building.
-turnin Destiny Unfulfilled##44496 |goto Trueshot Lodge/0 34.44,51.14
+turnin Destiny Unfulfilled##44496 |goto Trueshot Lodge/0 47.31,43.44
 |only Hunter
 step
 click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
-accept The Hunt for Illidan Stormrage##45174 |goto 34.44,51.14
+accept The Hunt for Illidan Stormrage##45174 |goto 47.31,43.44
 |tip You will need Artifact Knowledge Rank 5 in order to accept this.
 |only Hunter
 step
@@ -24105,7 +24105,6 @@ turnin Preparations for Invasion##42669 |goto Mardum, the Shattered Abyss/2 56.4
 turnin One Battle at a Time##44694 |goto Mardum, the Shattered Abyss/2 56.46,60.39
 accept We'll Need Some Obliterum##44616 |goto Mardum, the Shattered Abyss/2 59.71,53.12
 accept A Very Special Kind of Fuel##42733 |goto Mardum, the Shattered Abyss/2 59.71,53.12
-accept Deadlier Warglaives##42732 |goto Mardum, the Shattered Abyss/2 59.71,53.12
 |only DemonHunter
 stickystart "Sovereign_Souls_DemonHunter"
 step
@@ -24127,6 +24126,12 @@ step
 talk Camille Kleister##97429
 turnin Fire!##39838 |goto 39.64,30.80
 |only DemonHunter
+step
+Follow the path down |goto Mardum, the Shattered Abyss/1 68.46,66.55 < 15 |walk
+Follow the path down |goto Mardum, the Shattered Abyss/2 68.35,53.61 > 10000 |walk
+talk Allari the Souleater##98648
+|tip She walks around.
+accept Deadlier Warglaives##42732 |goto 59.71,53.12
 step
 collect 1 Obliterum##124125 |q 42732/1
 |tip Buy these from the Auction House.

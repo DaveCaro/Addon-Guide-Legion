@@ -9,7 +9,7 @@ author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"spirit","eche'ro","archaeology","ground","mount"},
 condition_end="hasmount(196681)",
-model={28918,28919},
+model={70874},
 description="This guide will help you acquire Spirit of Eche'ro Mount",
 },[[
 step
@@ -36,7 +36,7 @@ author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"great","northern","elderhorn","leatherworking","ground","mount"},
 condition_end="hasmount(196681)",
-model={28918,28919},
+model={67042},
 description="This guide will help you acquire the Great Northern Elderhorn Mount.",
 },[[
 step
@@ -67,12 +67,12 @@ step
 talk Namha Moonwater##93523
 turnin Mounting Made Easy##40215 |goto Dalaran L/10 35.01,29.40
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Legion\\Llothian Prowler",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Legion\\Llothien Prowler",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"llothian","prowler","world","quest","ground","mount"},
 condition_end="hasmount(171850)",
-model={2891},
+model={68851},
 description="This guide will help you acquire the Llothian Prowler Mount.",
 },[[
 step
@@ -178,7 +178,7 @@ author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"brinedeep","bottom","feeder","quest","ground","mount"},
 condition_end="hasmount(214791)",
-model={2891},
+model={68849},
 description="This guide will help you acquire the Brinedeep Bottom-Feeder Mount.",
 },[[
 step
@@ -218,7 +218,7 @@ author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"ratstallion","quest","ground","mount"},
 condition_end="hasmount(215558)",
-model={2891},
+model={70619},
 description="This guide will help you acquire the Ratstallion Mount.",
 },[[
 step
@@ -249,7 +249,7 @@ author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"arcadian","war","turtle","quest","ground","mount"},
 condition_end="hasmount(227956)",
-model={2891},
+model={68848},
 description="This guide will help you acquire the Arcadian War Turtle Mount.",
 },[[
 step
@@ -270,7 +270,7 @@ author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"bloodfang","widow","ground","mount"},
 condition_end="hasmount(213115)",
-model={2891},
+model={69276},
 description="This guide will help you acquire the Bloodfang Widow Mount.",
 },[[
 step
@@ -288,7 +288,7 @@ author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"fathom","dweller","ground","mount"},
 condition_end="hasmount(223018)",
-model={2891},
+model={71939},
 description="This guide will help you acquire the Fathom Dweller Mount.",
 },[[
 step
@@ -437,7 +437,7 @@ author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"long","forgotten","ground","hippogryph","mount"},
 condition_end="hasmount(215159)",
-model={2891},
+model={29361},
 description="This guide will help you acquire the Long-Forgotten Hippogryph Mount.",
 },[[
 step
@@ -466,5 +466,21 @@ collect Reins of the Long-Forgotten Hippogryph##138258
 step
 Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
 Learn the Long-Forgotten Hippogryph |learnpet 215159
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Legion\\Darkwater Skate",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"darkwater","darkmoon","faire","water","mount","skate"},
+condition_end="hasmount(228919)",
+model={73254},
+description="This guide will help you acquire the Darkwater Skate.",
+},[[
+step
+talk Galissa Sundew##55103
+buy 1 Darkwater Skate##142398 |goto Darkmoon Island/0 52.52,88.59
+|tip This mount costs 500 Darkmoon Daggermaw.
+|tip These can either be bought from the auction house or farmed for by fishing in the water on darkmoon Island.
+Use the Darkwater Skate |use Darkwater Skate##142398
+Learn the Darkwater Skate |learnpet 228919
 ]])
 ZGV.BETAEND()

@@ -1575,7 +1575,7 @@ function ZGV:Options_DefineOptionTables()
 					end
 				end, _default = true, descStyle="inline", })
 				AddOption('autoscan',{ type = 'toggle',_default=false,width="full",disabled=function() return not ZGV.db.profile.auction_enable end})
-				--AddOption('auction_autoshow_tab',{ type = 'toggle',_default=false,width="double",disabled=function() return not ZGV.db.profile.auction_enable end})
+				AddOption('auction_autoshow_tab',{ type = 'toggle',_default=false,width="double",disabled=function() return not ZGV.db.profile.auction_enable end})
 				--[[hidden--]] AddOption('smartstack',{ type = 'toggle',_default=true, hidden=true,})
 
 				AddOptionSep()
@@ -1615,9 +1615,9 @@ function ZGV:Options_DefineOptionTables()
 				--]]
 
 				AddOptionSep()
-				--[[ hidden --]] AddOption('gold_reset_hidden',{
+				AddOption('gold_reset_hidden',{
 					type = 'execute',
-					hidden=true,
+					--hidden=true,
 					width = "double",
 					func = function()
 						ZGV.db.char.AThiddenitems = {}
@@ -1635,10 +1635,10 @@ function ZGV:Options_DefineOptionTables()
 					end
 				end
 			end, _default = true, descStyle="inline", })
-			--[[ hidden --]] AddOption('mail_reset_hidden',{
+			AddOption('mail_reset_hidden',{
 				type = 'execute',
 				width = "double",
-				hidden=true,
+				--hidden=true,
 				func = function()
 					ZGV.db.char.MThiddenitems = {}
 					ZGV.Mailtools:GetListOfInventory()

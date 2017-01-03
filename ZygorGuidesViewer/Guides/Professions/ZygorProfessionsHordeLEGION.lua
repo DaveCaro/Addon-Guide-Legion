@@ -7644,44 +7644,38 @@ turnin The Prodigal Sous Chef##40989 |goto Dalaran L/10 69.76,38.76 |only if hav
 accept A Good Recipe List##40990 |goto Dalaran L/10 69.76,38.76
 |only Horde
 step
-talk Nomi##101846
-|tip Inside the building.
-buy Recipe: Barracuda Mrglgagh##133818 |n
+collect 1 Recipe: Barracuda Mrglgagh##133818 |n
+|tip Work through the Highmountain leveling guide until you finish the quest "Murlocs: The Next Generation."
 Use the Recipe: Barracuda Mrglgagh |use Recipe: Barracuda Mrglgagh##133818
 Learn the Recipe for Barracuda Mrglgagh |learn Barracuda Mrglgagh##201496 |goto 40.16,65.95 |only Alliance
 Learn the Recipe for Barracuda Mrglgagh |learn Barracuda Mrglgagh##201496 |goto 69.76,38.76 |only Horde
 step
-talk Nomi##101846
-|tip Inside the building.
-buy Recipe: Deep-Fried Mossgill##133812 |n
+collect 1 Recipe: Deep-Fried Mossgill##133812 |n
+|tip Work through the Val'sharah leveling guide until you finish the quest "Shriek No More."
 Use the Recipe: Deep-Fried Mossgill |use Recipe: Deep-Fried Mossgill##133812
 Learn the Recipe for Deep-Fried Mossgill |learn Deep-Fried Mossgill##201496 |goto 40.16,65.95 |only Alliance
 Learn the Recipe for Deep-Fried Mossgill |learn Deep-Fried Mossgill##201496 |goto 69.76,38.76 |only Horde
 step
-talk Nomi##101846
-|tip Inside the building.
-buy Recipe: Faronaar Fizz##133814 |n
+collect 1 Recipe: Faronaar Fizz##133814 |n
+|tip Work through the Azsuna leveling guide until you finish the quest "The Magister of Mixology."
 Use the Recipe: Faronaar Fizz |use Recipe: Faronaar Fizz##133814
 Learn the Recipe for Faronaar Fizz |learn Faronaar Fizz##201498 |goto 40.16,65.95 |only Alliance
 Learn the Recipe for Faronaar Fizz |learn Faronaar Fizz##201498 |goto 69.76,38.76 |only Horde
 step
-talk Nomi##101846
-|tip Inside the building.
-buy Recipe: Fighter Chow##133828 |n
+collect 1 Recipe: Fighter Chow##133828 |n
+|tip Work through the Azsuna leveling guide until you finish the quest "Morale Booster."
 Use the Recipe: Fighter Chow |use Recipe: Fighter Chow##133828
 Learn the Recipe for Fighter Chow |learn Fighter Chow##201514 |goto 40.16,65.95 |only Alliance
 Learn the Recipe for Fighter Chow |learn Fighter Chow##201514 |goto 69.76,38.76 |only Horde
 step
-talk Nomi##101846
-|tip Inside the building.
-buy Recipe: Pickled Stormray##133813 |n
+collect 1 Recipe: Pickled Stormray##133813 |n
+|tip Work through the Stormheim leveling guide until you finish the quest "A Heavy Burden."
 Use the Recipe: Pickled Stormray |use Recipe: Pickled Stormray##133813
 Learn the Recipe for Pickled Stormray |learn Pickled Stormray##201497 |goto 40.16,65.95 |only Alliance
 Learn the Recipe for Pickled Stormray |learn Pickled Stormray##201497 |goto 69.76,38.76 |only Horde
 step
-talk Nomi##101846
-|tip Inside the building.
-buy Recipe: Salt and Pepper Shank##133810 |n
+collect 1 Recipe: Salt and Pepper Shank##133810 |n
+|tip Work through the Highmountain leveling guide until you finish the quest "I'm Not Lion!"
 Use the Recipe: Salt and Pepper Shank |use Recipe: Salt and Pepper Shank##133810
 Learn the Recipe for Salt and Pepper Shank |learn Salt and Pepper Shank##201413 |goto 40.16,65.95 |only Alliance
 Learn the Recipe for Salt and Pepper Shank |learn Salt and Pepper Shank##201413 |goto 69.76,38.76 |only Horde

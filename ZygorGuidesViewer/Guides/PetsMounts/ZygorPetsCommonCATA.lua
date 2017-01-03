@@ -5322,18 +5322,23 @@ pet=116,
 description="This guide will walk you through obtaining\nthe Mechanical pet: Tranquil Mechanical Yeti",
 },[[
 step
-Use the _Engineering profession_ section of this guide to level your _Engineering to 250_ |only if skill("Engineering")>1 and skill("Engineering")<250
-You learn this recipe by completing the quest _"Are We There Yeti"_ from _Umi Rumplesnicker_ in _Everlook_, then complete the quest _"A Yeti of Your Own"_ and she will _teach_ you how to make it |only if skill("Engineering")>=250
-learn Tranquil Mechanical Yeti##26011 |only if skill("Engineering")>=250 |next make
-Click here if you do not wish to learn this recipe |confirm |only if skill("Engineering")>1
-_ Auto skipping_ to next step |next |only if skill("Engineering")<1
+The recipe to make this was removed with the quest line back in 2014.
+Old Engineers may still have this recipe you can either find one of these or purchase it from the AH.
+confirm
 step
-You can either buy this item from the Auction House or farm for it
-buy 1 Tranquil Mechanical Yeti##21277 |next "bought"
-Click here to _make_ the _Tranquil Mechanical Yeti_ |confirm
+Click here to _buy_ the  _Tranquil Mechanical Yeti_ from the AH |next "AH Yeti"
+Click here to _make_ the _Tranquil Mechanical Yeti_ |next "make"
+|confirm
 step
-label make
-You can either buy these items from the Auction House or farm for them:
+label "AH Yeti"
+Go to one of your main cities and talk to an Auctioneer
+|tip These may be somewhat expensive as the recipe has been removed from the game.
+buy 1 Tranquil Mechanical Yeti##21277 |n
+learnpet Tranquil Mechanical Yeti##15699 |use Tranquil Mechanical Yeti##21277
+|next "Tranquil Yeti"
+step
+label "make"
+You can buy these items from the Auction House
 collect 1 Cured Rugged Hide##15407
 collect 4 Thorium Widget##15994
 collect 2 Globe of Water##7079
@@ -5343,11 +5348,12 @@ step
 Have an Engineer make this pet for you
 |tip Ask in your guild or in trade chat |only if knowspell(26011)==false
 create Tranquil Mechanical Yeti##26011,Engineering,1 total |only if knowspell(26011)==true
-collect 1 Tranquil Mechanical Yeti##21277
-modeldisplay 934
-step
-label bought
+collect 1 Tranquil Mechanical Yeti##21277 |n
 learnpet Tranquil Mechanical Yeti##15699 |use Tranquil Mechanical Yeti##21277
+|next "Tranquil Yeti"
+step
+label "Tranquil Yeti"
+Congratulations you are now the proud owner of a _Tranquil Mechanical Yeti_
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Tree Frog",{
 pet=65,

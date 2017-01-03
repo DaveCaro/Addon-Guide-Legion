@@ -4,35 +4,55 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-### Added
+### Changed
 
 Zygor Viewer Guide :
 
-- LEVELING : 
+- ORDER HALLS : 
 
-Added new quests to Suramar guide for Insurrection questline.
+Fixed a quest id in the rogue class hall guide.
 
-- Dailies : 
+Moved the quest "Deadlier Warglaives" to be positioned after completing the quest "Fire!"
 
-Updated Champions of Highmountain world quest due to game changes.
+Fixed bad coordinates for the Light's Heart object in the Trueshot Lodge.
 
-- ACHIEVEMENTS : 
+- DAILIES : 
 
-"All Toys" Achievement - Fixed a bad map name causing "no valid steps" error.
+New World Quests added.
 
-- MOUNTS :
+Fixed a count issue with the world quest "Watery Graves"
 
-Fixed the location to obtain the Garn Nighthowl
+Added tips to the rest of the Barrel O Mugs world quests that were missing their descriptions.
+
+- PROFESSIONS :
+
+Fixed a small typo in the Enchanting professions leveling guides.
+
+Added "Obliterum Forge Questline"
+
+Updated the 1-700 Herbalism profession guide removing the step to collect Frozen Herb. Changed the location and what to gather to get to skill level 215.
+
+Added a tip instructing users to progress through the leveling guides for each recipe, as they can no longer be purchased from Nomi.
+
+- PETS/MOUNTS :
+
+Updated the pet Tranquil Mechanical yeti, informing players that the recipe to make this pet is no longer obtainable in the game.
+
+Updated the Model IDs for the legion mounts section to properly display the correct model for each mount.
 
 - GENERAL :
 
-Added NPC's for localization.
+ItemScore: Prevent errors when unknown item effect was only partially parsed
 
-(Travel) Added Teloth'aran Suramar cave entrance to travel system.
+Removed a debug message in AceConfigDialog.
+
+Band-aided a "SetWidth" error in AceConfigDialog appearing in other addons using the Ace libs.
 
 Pointer: Updated arrow menu to use new settings
 
-Navigation: Added option to disable ant trails
+Options: Restored option to disable ant trails
+
+Added limited compatibility with third party addon WorldQuestTracker.
 
 DUGI GUIDE : 
 
