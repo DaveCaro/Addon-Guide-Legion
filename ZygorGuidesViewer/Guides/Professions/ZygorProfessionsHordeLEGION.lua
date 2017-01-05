@@ -9014,3 +9014,453 @@ step
 Fish in the water
 collect Silver Mackerel##133607 |n |goto Azsuna/0 52.47,31.86
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Profession Guides\\Legion\\Obliterum Forge Questline",{
+author="support@zygorguides.com",
+image=ZGV.DIR.."image_path_here",
+next="path\\guide",
+startlevel=100.0,
+},[[
+step
+talk Camille Kleister##97429
+accept Fire!##39838 |goto Dalaran L/10 39.64,30.80
+step
+click Water Bucket##97430
+Extinguish #8# fires |q 39838/1 |goto 38.30,29.89
+|tip Use the water buckets to put out the wagon fire.
+step
+click Water Bucket##97430
+Extinguish #10# fel fires |q 39838/2 |goto 38.30,29.89
+|tip Use the water buckets to put out the fires on the wagon and buildings.
+step
+talk Camille Kleister##97429
+turnin Fire!##39838 |goto 39.64,30.80
+step
+click Mysterious Dust##0
+accept Mysterious Dust##39839 |goto 37.99,29.73
+step
+talk Trader Caelen##97421
+Interrogate Trader Caelen |q 39839/1 |goto 37.63,31.13
+step
+Enter _The Agronomical Apothecary_ |goto 41.12,31.37 < 6 |walk
+talk Deucus Valdera##92458
+Consult Deucus Valdera |q 39839/3 |goto 41.30,33.41
+step
+Enter _The Scribe's Sacellum_ |goto 42.26,38.13 < 6 |walk
+talk Professor Pallin##92195
+Consult Professor Pallin |q 39839/2 |goto 41.30,37.02
+step
+Enter the _Simply Enchanting_ building |goto 39.85,42.43 |walk
+talk Enchanter Nalthanis##93531
+turnin Mysterious Dust##39839 |goto 38.32,40.35
+step
+talk Vanessa Sellers##97718
+accept Trial By Fel Fire##39863 |goto 37.77,41.26
+step
+The following items may be purchased from the Auction House or crafted with professions:
+collect 1 Demonsteel Armguards##123917 |q 39863/4 |goto 37.77,41.26
+|tip These can be crafted with Blacksmithing for 35-55 Demonsteel Bars and 0-80 Stormscales.
+collect 1 Dreadleather Bindings##128891 |q 39863/2 |goto 37.77,41.26
+|tip These can be crafted with Leatherworking for 110-165 Stonehide Leather and 0-80 Stormscales.
+collect 1 Gravenscale Armbands##128907 |q 39863/3 |goto 37.77,41.26
+|tip These can be crafted with Leatherworking for 110-250 Stormscales.
+collect 1 Imbued Silkweave Bracers##127002 |q 39863/1 |goto 37.77,41.26
+|tip These can be crafted with Tailoring for 55-85 Imbued Silkweave, 0-80 Stormscales, and 1 Runic Catgut.
+step
+talk Vanessa Sellers##97718
+turnin Trial By Fel Fire##39863 |goto 37.77,41.26
+accept The Council's Approval##39840 |goto 37.77,41.26
+step
+talk Archmage Khadgar##90417
+|tip Watch the dialogue.
+Gain approval to build an Obliterum Forge |q 39840/1 |goto 28.49,48.31
+step
+talk Archmage Karlain##90463
+turnin The Council's Approval##39840 |goto 28.57,47.75
+accept Friends in Low Places##39841 |goto 28.57,47.75
+step
+Follow the path |goto 37.72,50.15 < 20 |only if walking
+Follow the path |goto 50.57,61.70 < 20 |only if walking
+Follow the path |goto 60.14,48.24 < 10 |only if walking
+Follow the path |goto Dalaran L/11 76.61,69.17 < 10 |walk
+Follow the path |goto 64.93,55.80 < 10 |walk
+Follow the path |goto 59.79,39.31 < 6 |walk
+talk Oxana Demonslay##97361
+turnin Friends in Low Places##39841 |goto 66.89,17.59
+accept Cold Hard Coin##39844 |goto 66.89,17.59
+accept One Mage's Trash##39842 |goto 66.89,17.59
+accept The Muck Stops Here##39843 |goto 66.89,17.59
+stickystart "Spellsludge"
+stickystart "Sightless"
+step
+Follow the path |goto 66.69,26.27 < 6 |walk
+click Decommissioned Calefactor##192528
+collect 1 Decommissioned Calefactor##128924 |q 39842/3 |goto 57.55,36.93
+|tip This can only be looted while the guards are off duty.
+|tip By talking to Raethan near the east entrance, you can hire a guard to protect you for 5 gold.
+step
+Follow the path |goto 55.12,48.02 < 6 |walk
+click Spellbound Insulation##192528
+collect 1 Spellbound Insulation##128923 |q 39842/2 |goto 53.44,70.18
+|tip This can only be looted while the guards are off duty.
+|tip By talking to Raethan near the east entrance, you can hire a guard to protect you for 5 gold.
+step
+Go up the steps |goto 59.41,76.62 < 10 |walk
+Go down the steps |goto 68.57,80.14 < 6 |walk
+click Alchemical Flame##192528
+collect 1 Alchemical Flame##128922 |q 39842/1 |goto 80.06,84.83
+|tip This can only be looted while the guards are off duty.
+|tip By talking to Raethan near the east entrance, you can hire a guard to protect you for 5 gold.
+step
+label "Spellsludge"
+collect 20 Spellsludge##128921 |q 39843/1 |goto 57.84,43.16
+|tip You can loot Spellsludge from rares that spawn.
+|tip These can only be looted while the guards are on duty.
+step
+label "Sightless"
+Collect 100 Sightless Eyes |q 39844/1 |goto 57.84,43.16
+|tip These can be looted from objects, NPC's, and players.
+step
+Follow the path |goto 57.58,43.53 < 6 |walk
+talk Oxana Demonslay##97361
+turnin Cold Hard Coin##39844 |goto 66.89,17.59
+turnin The Muck Stops Here##39843 |goto 66.89,17.59
+turnin One Mage's Trash##39842 |goto 66.89,17.59
+accept The Obliterum Forge##39845 |goto 66.89,17.59
+step
+Follow the path |goto 59.79,39.31 < 6 |walk
+Follow the path |goto 64.93,55.80 < 10 |walk
+Follow the path |goto 76.61,69.17 < 10 |walk
+Follow the path |goto Dalaran L/10 60.14,48.24 < 10 |only if walking
+Follow the path |goto 50.40,35.45 < 20 |only if walking
+Follow the path |goto 43.84,32.17 < 15 |only if walking
+click Finalize Obliterum Forge##3365
+Finalize the Obliterum Forge |q 39845/1 |goto 42.41,28.03
+step
+talk Archmage Karlain##90463
+turnin The Obliterum Forge##39845 |goto 42.68,28.38
+accept Fire it Up##41778 |goto 42.68,28.38
+step
+click Obliterum Forge##0
+|tip Place Archmage Karlain's Imbued Silkweave Robe in the panel that pops up and click the Obliterate button.
+Use the Obliterum Forge to obliterate Archmage Karlain's Imbued Silkweave Robes |q 41778/1 |goto 42.72,27.03
+step
+talk Archmage Karlain##90463
+turnin Fire it Up##41778 |goto 42.68,28.38
+step
+Congratulations, you have unlocked the Obliterum Forge!
+]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Profession Guides\\Farming\\Legion\\Fishing\\Fishing Pools",{
+author="support@zygorguides.com",
+startlevel=100.0,
+},[[
+step
+label "Fishing_Pools"
+Azsuna |confirm |next "Azsuna"
+Coastal Waters |confirm |next "Coastal"
+Highmountain |confirm |next "Highmountain"
+Stormheim |confirm |next "Stormheim"
+Suramar |confirm |next "Suramar"
+Val'sharah |confirm |next "Val'sharah"
+step
+label "Azsuna"
+map Azsuna/0
+path follow loose; loop on; ants curved; dist 25
+path	51.11,37.90	52.73,35.36	55.17,36.56
+path	55.78,39.43	54.39,41.75	52.31,41.41
+Use your fishing ability to fish from pools |cast Fishing##131474
+|tip You can catch three rare fish in these pools: Leyshimmer Blenny, Nar'thalas Hermit, and Ghostly Queenfish.
+Click here to select a different location |confirm |next "Fishing_Pools"
+step
+label "Coastal"
+Go up and down the beach, using your fishing ability to fish the pools |cast Fishing##131474 |goto Suramar/0 24.92,86.74
+|tip You can catch three rare fish in these pools: Seabottom Squid, Axefish, and Ancient Black Barracuda.
+Click here to select a different location |confirm |next "Fishing_Pools"
+step
+label "Highmountain"
+map Highmountain/0
+path follow loose; loop on; ants curved; dist 25
+path	Thunder Totem/0 49.60,30.78	Thunder Totem/0 39.70,33.68	Thunder Totem/0 31.65,48.28
+path	Thunder Totem/0 28.78,60.92	Thunder Totem/0 21.32,75.43	42.28,63.47
+path	41.13,64.06	39.21,65.07	38.25,66.68
+path	35.92,66.26	35.16,67.78	35.12,70.97
+path	34.60,74.65	34.32,76.42	33.81,73.63
+path	34.22,70.83	34.10,69.03	33.31,66.17
+path	32.12,65.35	30.66,62.94	32.33,61.32
+path	34.27,63.61	35.71,64.45	37.53,64.07
+path	39.20,63.05	40.94,60.60	40.67,58.35
+path	42.21,55.58	44.43,55.95
+Use your fishing ability to fish from pools |cast Fishing##131474
+|tip You can catch three rare fish in these pools: Ancient Highmountain Salmon, Coldriver Carp, and Mountain Puffer.
+Click here to select a different location |confirm |next "Fishing_Pools"
+step
+label "Stormheim"
+map Stormheim/0
+path follow loose; loop on; ants curved; dist 25
+path	57.53,64.90	58.96,68.77	61.09,73.74
+path	59.86,74.87	57.41,71.96	55.36,69.09
+path	53.44,68.08	52.35,64.83
+Use your fishing ability to fish from pools |cast Fishing##131474
+|tip You can catch three rare fish in these pools: Thundering Stormray, Oodelfjisk, and Graybelly Lobster.
+Click here to select a different location |confirm |next "Fishing_Pools"
+step
+label "Suramar"
+map Suramar/0
+path follow loose; loop on; ants curved; dist 25
+path	23.58,29.62	24.32,27.45	26.66,27.24
+path	28.05,26.94	26.98,28.96	25.79,29.88
+path	24.77,31.29	23.24,34.13	21.39,34.93
+path	21.90,32.78
+Use your fishing ability to fish from pools |cast Fishing##131474
+|tip You can catch three rare fish in these pools: Tainted Runescale Koi, Seerspine Puffer, and Magic-Eater Frog.
+Click here to select a different location |confirm |next "Fishing_Pools"
+step
+label "Val'sharah"
+map Val'sharah/0
+path follow loose; loop off; ants curved; dist 25
+path	66.15,44.24	64.27,46.40	61.69,49.53
+path	61.03,52.65	60.85,55.97	61.32,60.73
+Use your fishing ability to fish from pools along the river |cast Fishing##131474
+|tip You can catch three rare fish in these pools: Ancient Mossgill, Terrorfin, and Thorned Flounder.
+Click here to select a different location |confirm |next "Fishing_Pools"
+.' |goto 61.32,60.73 < 25 |c |noway |next "Val'sharah_2"
+step
+label "Val'sharah_2"
+map Val'sharah/0
+path follow loose; loop off; ants curved; dist 25
+path	61.32,60.73	60.85,55.97	61.03,52.65
+path	61.69,49.53	64.27,46.40	66.15,44.24
+Use your fishing ability to fish from pools along the river |cast Fishing##131474
+|tip You can catch three rare fish in these pools: Ancient Mossgill, Terrorfin, and Thorned Flounder.
+Click here to select a different location |confirm |next "Fishing_Pools"
+.' |goto 66.15,44.24 < 25 |c |noway |next "Val'sharah"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Profession Guides\\Jewelcrafting\\Legion\\Jewelcrafting Rank 3",{
+author="support@zygorguides.com",
+startlevel=100.0,
+},[[
+step
+talk Tiffany Cartier##93526
+buy 1 Design: Raging Furystone Gorget##137836 |n
+|tip It costs 35 gold.
+Use the Design: Azsunite Pendant |use Design: Raging Furystone Gorget##137836
+Learn the Rank 2 Design for Raging Furystone Gorget |learn Raging Furystone Gorget##195921 |goto Dalaran L/10 40.26,34.68
+step
+Complete the "_Work Order: Azsunite Loop_" world quest
+|tip This world quest requires you to turn in an Azsunite Loop.
+collect Design: Azsunite Loop##137840 |n
+Use the Design: Azsunite Loop |use Design: Azsunite Loop##137840
+Learn the Rank 3 Design for Azsunite Loop |learn Azsunite Loop##195925 |goto Azsuna/0 46.91,41.44
+step
+Complete the "_Work Order: Deep Amber Loop_" world quest
+|tip This world quest requires you to turn in a Deep Amber Loop.
+collect Design: Deep Amber Loop##137838 |n
+Use the Design: Deep Amber Loop |use Design: Deep Amber Loop##137838
+Learn the Rank 3 Design for Deep Amber Loop |learn Deep Amber Loop##195923 |goto Val'sharah/0 54.70,73.24
+step
+Complete the "_Work Order: Queen's Opal Loop_" world quest
+|tip This world quest requires you to turn in a Queen's Opal Loop.
+collect Design: Queen's Opal Loop##137865 |n
+Use the Design: Queen's Opal Loop |use Design: Queen's Opal Loop##137865
+Learn the Rank 3 Design for Queen's Opal Loop |learn Queen's Opal Loop##209609 |goto Stormheim/0 60.26,51.39
+step
+Gain Honored reputation with the Highmountain Tribe |condition rep("Highmountain Tribe")>=Honored
+talk Ransa Greyfeather##106902
+buy 1 Design: Skystone Loop##137839 |n
+|tip It costs 550 gold, modified by reputation.
+Use the Design: Skystone Loop |use Design: Skystone Loop##137839
+Learn the Rank 3 Design for Skystone Loop |learn Skystone Loop##195924 |goto Thunder Totem/0 38.07,46.05
+step
+Gain Exalted reputation with the Highmountain Tribe |condition rep("Highmountain Tribe")>=Exalted
+talk Ransa Greyfeather##106902
+buy 1 Design: Dawnlight Band##137846 |n
+|tip It costs 3,000 gold, modified by reputation.
+Use the Design: Dawnlight Band |use Design: Dawnlight Band##137846
+Learn the Rank 3 Design for Dawnlight Band |learn Dawnlight Band##195931 |goto Thunder Totem/0 38.07,46.05
+step
+Fish in the waters of Suramar |cast Fishing##131474
+|tip Equip your fishing gear.
+|tip It is recommended that you have at least 700 fishing.
+collect Design: Maelstrom Band##137845 |n
+Use the Design: Maelstrom Band |use Design: Maelstrom Band##137845
+Learn the Rank 3 Design for Maelstrom Band |learn Maelstrom Band##195930 |goto Suramar/0 24.42,31.10
+step
+Gain Exalted reputation with the Highmountain Tribe |condition rep("Highmountain Tribe")>=Exalted
+talk Ransa Greyfeather##106902
+buy 1 Design: Prophetic Band##137844 |n
+|tip It costs 3,000 gold, modified by reputation.
+Use the Design: Prophetic Band |use Design: Prophetic Band##137844
+Learn the Rank 3 Design for Prophetic Band |learn Prophetic Band##195929 |goto Thunder Totem/0 38.07,46.05
+step
+Survey dig sites in Highmountain |cast Survey##80451
+|tip This design has a chance to drop from any Archaeology dig site in Highmountain.
+collect Design: Shadowruby Band##137867 |n
+Use the Design: Shadowruby Band |use Design: Shadowruby Band##137867
+Learn the Rank 3 Design for Shadowruby Band |learn Shadowruby Band##209611 |goto Highmountain/0 45.16,55.29
+step
+Complete the "_Work Order: Queen's Opal Pendant_" world quest
+|tip This world quest requires you to turn in a Queen's Opal Pendant.
+collect Design: Queen's Opal Pendant##137866 |n
+Use the Design: Queen's Opal Pendant |use Design: Queen's Opal Pendant##137866
+Learn the Rank 3 Design for Queen's Opal Pendant |learn Queen's Opal Pendant##209610 |goto Suramar/0 36.55,46.89
+step
+Complete the "_Work Order: Azsunite Pendant_" world quest
+|tip This world quest requires you to turn in an Azsunite Pendant.
+collect Design: Azsunite Pendant##137843 |n
+Use the Design: Azsunite Pendant |use Design: Azsunite Pendant##137843
+Learn the Rank 3 Design for Azsunite Pendant |learn Azsunite Pendant##195928 |goto Azsuna/0 46.90,41.43
+step
+This design is a zone drop in Suramar
+|tip Kill any mobs in Suramar until you get it to drop.
+collect Design: Deep Amber Pendant##137841 |n
+Use the Design: Deep Amber Pendant |use Design: Deep Amber Pendant##137841
+Learn the Rank 3 Design for Deep Amber Pendant |learn Deep Amber Pendant##195926 |goto Suramar/0 33.84,49.38
+step
+Complete the "_Work Order: Skystone Pendant_" world quest
+|tip This world quest requires you to turn in a Skystone Pendant.
+collect Design: Skystone Pendant##137842 |n
+Use the Design: Skystone Pendant |use Design: Skystone Pendant##137842
+Learn the Rank 3 Design for Skystone Pendant |learn Skystone Pendant##195927 |goto Thunder Totem/0 38.08,46.05
+step
+Enter the Black Rook Hold dungeon
+kill Dantalionax##99611
+collect Design: Grim Furystone Gorget##137858 |n
+Use the Design: Grim Furystone Gorget |use Design: Grim Furystone Gorget##137858
+Learn the Rank 3 Design for Grim Furystone Gorget |learn Grim Furystone Gorget##195943 |goto Black Rook Hold/6 37.4,45.3
+step
+Grim Furystone Gorget Rank 3
+confirm
+step
+Vindictive Pandemonite Choker Rank 3
+confirm
+step
+Sylvan Maelstrom Amulet Rank 3
+confirm
+step
+Intrepid Necklace of Prophecy Rank 3
+confirm
+step
+Sorcerous Shadowruby Pendant Rank 3
+confirm
+step
+Tranquil Necklace of Prophecy Rank 3
+confirm
+step
+Righteous Dawnlight Medallion Rank 3
+confirm
+step
+Blessed Dawnlight Medallion Rank 3
+confirm
+step
+Subtle Shadoruby Pendant Rank 3
+confirm
+step
+Ancient Maelstrom Amulet Rank 3
+confirm
+step
+Twisted Pandemonite Choker Rank 3
+confirm
+step
+Raging Furystone Gorget Rank 3
+confirm
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Profession Guides\\Leatherworking\\Legion\\Leatherworking Rank 3 Patterns",{
+author="support@zygorguides.com",
+image=ZGV.DIR.."image_path_here",
+next="path\\guide",
+startlevel=100.0,
+},[[
+step
+Complete the Leatherworking 700-800 guide before starting this guide.
+confirm
+step
+The Dreadleather Bindings rank 3 pattern is located within small chests in the Withered Army Training event in Suramar
+This pattern has a small chance to drop within chests in this scenario
+click Small Treasure Chest
+collect Recipe: Dreadleather Bindings##137892 |n |condition itemcount(137892) >= 1
+learn Dreadleather Bindings##194727
+step
+The Dreadleather Footpads, Pants, and Mask patrerns can be bought from the Dreamweavers quartmaster after obtaining Exalted reputation |condition rep("Dreamweavers")>=Exalted
+talk Sylvia Hartshorn##106901
+buy 1 Recipe: Dreadleather Footpads##137898 |n |condition itemcount(137898) >= 1 |goto Val'sharah/0 54.69,73.24
+buy 1 Recipe: Dreadleather Pants##137895 |n |condition itemcount(137895) >= 1 |goto Val'sharah/0 54.69,73.24
+buy 1 Recipe: Dreadleather Mask##137896 |n |condition itemcount(137896) >= 1 |goto Val'sharah/0 54.69,73.24
+|tip These patterns cost 2,700 gold each.
+learn Dreadleather Footpads##194733
+learn Dreadleather Pants##194730
+learn Dreadleather Mask##194731
+step
+The Dreadleather Jerkin comes from the last boss in Maw of Souls on mythic difficulty only.
+This pattern has a small chance to drop and mythic difficulty is on a weekly cooldown
+Enter the Maw of Souls dungeon
+|tip You can not queue for this dungeon by normal means you must create or join a group.
+kill Helya##96759
+collect Recipe: Dreadleather Jerkin##137899 |n |condition itemcount(137899)
+learn Dreadleather Jerkin##194734
+step
+The Dreadleather Shoulderguard pattern has a chance to come from winning a rated battleground
+collect Recipe: Dreadleather Shoulderguard##137894 |n |condition itemcount(137894) >= 1
+learn Dreadleather Shoulderguard##194729
+step
+The Dreadleather Gloves pattern comes from the last boss in The Arcway on mythic difficulty only.
+This pattern has a small chance to drop and mythic difficulty is on a weekly cooldown.
+|tip To enter the Arcway you must be attuned, this can be accomplished through our Suramar guide.
+Enter The Arcway
+|tip You can not queue for this dungeon by normal means you must create or join a group.
+kill Advisor Vandros##98208
+collect Recipe: Dreadleather Gloves##137897 |n |condition itemcount(137897) >= 1
+learn Dreadleather Gloves##194732
+step
+The Gravenscale Armband pattern comes from killing enemies in the Eye of Azshara, not to be confused with the dungeon, this area is found on an island south of Dalarn.
+The mobs on this island are elites and a group might be required to farm for this pattern
+collect Recipe: Gravenscale Armbands##137924 |n |condition itemcount(137924) >= 1
+learn Gravenscale Armbands##194767
+step
+The Gravenscale Girdle pattern can be bought from a vendor in the Underbelly, be careful this can be a pvp ffa zone at times
+If the Guards are active in the Underbelly kill any and all rare mobs, these will give you a chunk of Sightless Eyes
+|tip Rare spawns are indicated by a star on your map.
+If the Guards are not active this area becomes a Free-For-All PvP zone, you can still get eyes through killing players or collecting chests
+talk Strap Bucklebolt##107760
+|tip He is in the Underbelly of Dalaran
+buy 1 Recipe: Gravenscale Girdle##137925 |n |condition itemcount(137925) >= 1 |goto Dalaran L/11 66.04,81.11
+|tip This pattern costs 500 Sightless eyes and 1,250 gold.
+learn Gravenscale Girdle##194768
+step
+The Gravenscale Hauberk patten comes from the last boss in Black Rook Hold on mythic difficulty only.
+This pattern has a small chance to drop and mythic difficulty is on a weekly cooldown.
+Enter the Black Rook Hold
+|tip You can not queue for this dungeon by normal means you must create or join a group.
+kill Lord Kur'talos Ravencrest##94923
+collect Recipe: Gravenscale Hauberk##137931 |n |condition itemcount(137931) >= 1
+learn Gravenscale Hauberk##194774
+step
+The Gravenscale Spaulders pattern has a chance to come from winning a rated battleground
+collect Recipe: Gravenscale Spaulders##137926 |n |condition itemcount(137926) >= 1
+learn Gravenscale Spaulders##194769
+step
+The Gravenscale Warhelm and Leggings patterns can be bought from the Valarjar quartermaster after obtaining Exalted reputation. |condition rep("Valarjar")>=Exalted
+talk Valdemar Stormseeker##106904
+buy 1 Recipe: Gravenscale Leggings##137927 |n |condition itemcount(137927) >= 1 |goto Stormheim/0 60.28,51.36
+buy 1 Recipe: Gravenscale Warhelm##137928 |n |condition itemcount(137928) >= 1 |goto Stormheim/0 60.28,51.36
+|tip These patterns cost 2,700 gold each.
+learn Gravenscale Leggings##194770
+learn Gravenscale Warhelm##194771
+step
+The Gravenscale Treads pattern comes from the last boss in Vault of the Wardens on mythic difficulty only.
+This pattern has a small chance to drop and mythic difficulty is on a weekly cooldown.
+Enter the Vault of the Wardens
+|tip you can not queue for this dungeon by normal means you must create or join a group.
+kill Cordana Felsong##95888
+collect Recipe: Gravenscale Treads##137930 |n |condition itemcount(137930) >= 1
+learn Gravenscale Treads##194773
+step
+The Gravenscale Gripe pattern comes from the last boss in the Court of Stars on mythic difficulty only.
+This pattern has a small cahnce to drop and mythic difficulty is on a weekly cooldown.
+|tip You must be attuned to this instance to enter, this can be accomplished through our Suramar guide.
+Enter the Court of Stars
+|tip You can not queue for this dungeon by normal means you must create or join a group.
+kill Advisor Melandrus <First Blade of Elisande>##104218
+collect Recipe: Gravenscale Grips##137929 |n |condition itemcount(137929) >= 1
+learn Gravenscale Grips##194772
+]])
+ZGV.BETAEND()
