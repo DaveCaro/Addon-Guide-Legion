@@ -1586,6 +1586,8 @@ do
 					end
 				end
 				Lib:Debug("|cffff8844 No idea where player's hearthstone is bound to: |cffff8800%s",bind)
+				ZGV.FAILEDHEARTH = bind
+				if ZGV.DEV then geterrorhandler()("Travel has no idea where player's hearthstone is bound to: "..bind) end
 				return nil
 			end
 
@@ -1599,7 +1601,7 @@ do
 						return node
 					end
 				end
-				Lib:Debug("|cffff8844 No idea where player's garrison hearthstone is bound to: |cffff8800%s",bind)
+				Lib:Debug("|cffff8844 No idea where player's garrison hearthstone is bound to!")
 				return nil
 			end
 

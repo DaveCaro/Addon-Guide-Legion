@@ -3,120 +3,6 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("DungeonHMOP") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Classic Dungeons\\Ragefire Chasm (RFC) 15-18",{
-mapid=680,
-achieveid={629},
-author="support@zygorguides.com",
-description="This guide will walk you through the Ragefire Chasm dungeon.",
-},[[
-step
-label "start"
-Press _I_ and queue for Ragefire Chasm or enter the dungeon with your group |goto Ragefire Chasm/1 62.4,7.9 |c |or
-|confirm |or
-step
-talk Invoker Xorenth##61716
-accept A New Enemy##30969 |goto Ragefire Chasm/1 67.8,11.4
-accept The Dark Shaman##30983 |goto Ragefire Chasm/1 67.8,11.4
-step
-talk Commander Bagran##61724
-accept No Orc Left Behind##30984 |goto 68.3,12.8
-step
-map Ragefire Chasm/1
-path follow loose; loop off; ants curved
-path	66.0,21.5	66.1,35.3	65.8,47.0
-path	66.2,57.1
-Follow this path down, but look out for rising lava. If you see lava rising up, wait for it to go back down before crossing |goto 66.2,57.1 < 8 |c |noway
-stickystart "corruptinsig"
-step
-kill Mature Flame Hound##61658 |n
-Rescue the first Kor'kron Scout |q No Orc Left Behind##30984/1 |count 1 |goto 68.0,60.4
-only if not completedq(30984)
-step
-kill Adarogg##61408 |n
-Avoid standing in the area targeted by Adarogg's _Inferno Charge_. It will deal physical damage to all nearby players
-_Healer:_
-|tip Adarogg will periodically use Flame Breath on a random player dealing fire damage to them. This will need to be healed
-Defeat Adarogg |scenariogoal 24759
-step
-talk Suspecious Rock##61780
-Tell it: _"It's Safe to come out now."_
-Rescue the second Kor'kron Scout |q No Orc Left Behind##30984/1 |count 2 |goto 65.0,70.8
-only if not completedq(30984)
-step
-map Ragefire Chasm/1
-path follow loose; loop off; ants curved
-path	60.5,68.2	60.6,50.5	59.8,45.1
-Follow this path up, but look out for rising lava. If you see lava rising up, wait for it to go back down before crossing. |goto 59.8,45.1 |c |noway
-step
-clicknpc Kor'kron Scout##61680
-Rescue the third Kor'kron Scout |q No Orc Left Behind##30984/1 |count 3 |goto 60.8,43.2
-only if not completedq(30984)
-step
-map Ragefire Chasm/1
-path follow loose; loop off; ants curved
-path	59.3,42.1	60.2,36.2	55.9,28.9
-Follow the path |goto 55.9,28.9 |c |noway
-step
-kill Dark Shaman Koranthal##61412 |n |only if default
-kill Dark Shaman Koranthal##61412 |q The Dark Shaman##30983/1 |only if havequest(30983)
-When Koranthal begins casts _Shadow Storm_, the dark impacts on the ground will deal damage to anyone within 2 yards. Avoid these areas
-_Tank:_
-|tip Interrupt Twisted Elements
-_DPS:_
-|tip Interrupt Twisted Elements
-_Healers:_
-|tip Be prepared to heal targets of Twisted Elements and those taking damage during Shadow Storm
-Defeat Dark Shaman Koranthal |scenariogoal 24761 |goto 51.8,31.7
-step
-talk Inconspicous Crate##61790
-Tell it: _"It's Safe to come out now."_
-Rescue the fourth Kor'kron Scout |q No Orc Left Behind##30984/1 |count 4 |goto 52.0,26.2
-only if not completedq(30984)
-step
-map Ragefire Chasm/1
-path follow loose; loop off; ants curved
-path	51.1,37.6	50.0,47.6	40.2,46.4
-path	41.2,57.0
-Follow the path |goto 41.2,57.0 |c |noway
-step
-kill Slagmaw##61463 |n
-Slagmaw will randomly _Lava Spit_ at a player's location. Avoid standing within 3 yards of other players
-|tip Slagmaw will periodically Submerge, reappearing at a random location.
-_Healers:_
-|tip Be prepared to heal group members who are hit by Lava Spit, especially following Submerge
-Defeat Slagmaw |scenariogoal 24763
-step
-clicknpc Kor'kron Scout##61680
-Rescue the last Kor'kron Scout |q No Orc Left Behind##30984/1 |count 5 |goto 42.8,66.5
-only if not completedq(30984)
-step
-map Ragefire Chasm/1
-path follow loose; loop off; ants curved
-path	39.5,68.1	32.4,68.3	31.3,74.0
-Follow the path |goto 31.3,74.0 |c |noway
-step
-kill Lava Guard Gordoth##61528 |n |only if default
-kill Lava Guard Gordoth##61528 |q The Dark Shaman##30983/2 |only if havequest(30983)
-Gordoth will periodically cast _Seismic Slam_, dealing damage to all players within 25 yards and knocking them back
-|tip Gordoth will target random players with Ground Rupture, dealing damage and knocking them back
-|tip At 30%, Gordoth will Enrag_. Save DPS cooldowns and finish him off quickly
-_Healers:_
-|tip Keep the party as close to full health as possible. Knockback may interrupt your cast
-Defeat Lava Guard Gordoth |scenariogoal 19213 |goto 33.7,81.4
-step "corruptinsig"
-_As you go through this Dungeon:_
-kill Corrupted Houndmaster##61666+, Corrupted Flamecaller##61705+, Dark Shaman Acolyte##61672+, Corrupted Reaver##61678+
-Collect 5 Corrupted Insignias |q A New Enemy##30969/1
-step
-talk Invoker Xorenth##61716
-turnin A New Enemy##30969 |goto 33.5,80.6
-turnin The Dark Shaman##30983 |goto 33.5,80.6
-step
-talk Commander Bagran##61724
-turnin No Orc Left Behind##30984 |goto 31.7,76.5
-step
-Congratulations, you have completed Ragefire Chasm
-]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Classic Dungeons\\Deadmines (DM) 15-18",{
 mapid=756,
 achieveid={628},
@@ -124,8 +10,7 @@ description="This guide will walk you through the Deadmines dungeon.",
 },[[
 step
 label "start"
-Press _I_ and queue for Deadmines or enter the dungeon with your group |goto Westfall/17 25.80,50.93 |c |or
-confirm |or
+Press _I_ and queue for Deadmines or enter the dungeon with your group |goto The Deadmines/1 26.5,13.4 |c
 step
 talk Kagtha##46889
 accept Only the Beginning##27842 |goto The Deadmines/1 29.3,27.2
@@ -144,6 +29,7 @@ path follow loose; loop off; ants curved
 path	27.8,24.6	24.8,35.0	29.6,43.3
 path	28.7,53.3	34.0,59.8
 Follow the path |goto The Deadmines/1 34.0,59.8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Glubtok##47162 |n |goto 37.7,61.2
@@ -169,6 +55,7 @@ path follow loose; loop off; ants curved
 path	41.7,60.0	47.4,61.3	46.5,67.7
 path	43.9,72.7	43.8,79.7
 Follow the path |goto The Deadmines/1 43.8,79.7 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 click Heavy Door##400
@@ -193,6 +80,7 @@ path follow loose; loop off; ants curved
 path	53.7,87.3	59.1,87.9	63.5,91.5
 path	64.8,85.9	61.0,80.6
 Follow the path |goto 61.0,80.6 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 click Heavy Door##400
@@ -203,7 +91,8 @@ map The Deadmines/1
 path follow loose; loop off; ants curved
 path	59.6,71.4	56.5,65.1	58.5,59.1
 path	63.5,58.6	66.2,64.7	The Deadmines/2 14.6,89.8
-_Follow_ the winding ramp down |goto The Deadmines/2 14.6,89.8
+Follow the winding ramp down |goto The Deadmines/2 14.6,89.8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Foe Reaper 5000##43778 |n |goto The Deadmines/2 10.4,82.8
@@ -233,6 +122,7 @@ path follow loose; loop off; ants curved
 path	12.6,70.3	13.1,60.4	22.9,58.0
 path	28.0,52.5	33.4,48.9
 Use the cannon to blow open the door and walk inside |goto The Deadmines/2 33.4,48.9 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 map The Deadmines/2
@@ -240,7 +130,8 @@ path follow loose; loop off; ants curved
 path	34.3,48.8	41.1,47.8	41.7,30.3
 path	50.5,18.1	56.6,27.5	53.1,40.1
 path	54.9,55.5
-Proceed along the docks avoiding the cannonballs that are being shot at the ground. |goto 54.9,55.5 <8
+Proceed along the docks avoiding the cannonballs that are being shot at the ground. |goto 54.9,55.5 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 map The Deadmines/2
@@ -248,7 +139,8 @@ path follow loose; loop off; ants curved
 path	54.2,54.7	51.9,45.7	53.6,46.4
 path	55.6,50.9	57.3,49.2	54.8,39.8
 path	56.3,32.2
-Follow the ramp up to the top of the ship. |goto 56.3,32.2 <5
+Follow the ramp up to the top of the ship. |goto 56.3,32.2 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Admiral Ripsnarl##47626 |n |goto 63.9,39.5
@@ -290,7 +182,8 @@ path follow loose; loop off; ants curved
 path	57.9,70.3	55.7,65.6	57.6,61.8
 path	58.2,57.7	61.7,56.8	65.2,60.1
 path	64.8,64.0
-_Jump down_ at the end of the ramp, avoiding the fire and blizzard areas |goto The Deadmines/2 15.2,81.7
+Jump down at the end of the ramp, avoiding the fire and blizzard areas |goto The Deadmines/2 15.2,81.7
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 only if heroic_dung()
 step
@@ -298,7 +191,8 @@ map The Deadmines/2
 path follow loose; loop off; ants curved
 path	14.0,89.9	10.9,89.9	6.9,81.1
 path	9.9,77.6
-_Follow_ the path, avoiding the fire and blizzard areas |goto The Deadmines/2 9.9,77.6
+Follow the path, avoiding the fire and blizzard areas |goto The Deadmines/2 9.9,77.6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 only if heroic_dung()
 step
@@ -314,6 +208,7 @@ map The Deadmines/2
 path follow loose; loop off; ants curved
 path	12.0,60.7	23.3,57.5	26.5,51.3
 Follow the path |goto 26.5,51.3 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 only if heroic_dung()
 step
@@ -330,6 +225,7 @@ Follow the deck onto the ship
 |tip You will need to save Emma Harrington, Erik Harrington and Calissa Harrington from the worgen
 |tip Kill any packs of Worgen that you see
 Proceed along the docks, avoiding the sparks |goto 54.9,55.5 <8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 only if heroic_dung()
 step
@@ -341,7 +237,8 @@ path	56.3,32.2
 You will need to save _Emma Harrington_, _Erik Harrington_ and _Calissa Harrington_ from the worgen.
 |tip Kill any packs of Worgen that you see.
 |tip Once you're at Calissa Harrington, burn down Admiral Ripsnarl fast.
-Follow the ramp up to the top of the ship. |goto 56.3,32.2 <5
+Follow the ramp up to the top of the ship. |goto 56.3,32.2 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 |only if heroic_dung()
 step
@@ -397,6 +294,7 @@ path	45.6,53.0	41.4,51.6	35.0,51.5
 path	35.5,49.1	37.8,44.2	36.9,39.8
 path	32.9,40.3
 Follow the path |goto 32.9,40.3 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Lady Anacondra##3671 |only if havequest(26870) |only if default
@@ -420,6 +318,7 @@ path	14.4,43.6	8.9,33.6	11.4,29.3
 path	12.1,32.4	12.9,33.5	14.7,34.3
 path	15.8,39.0
 Jump in the water and follow this path |goto 15.8,39.0 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Lord Pythas##3670 |only if default
@@ -440,6 +339,7 @@ path	18.6,35.6	17.3,27.2	16.1,24.4
 path	11.9,24.9	5.6,30.2	7.6,38.2
 path	8.3,44.3	12.7,52.4	15.7,53.7
 Follow the path |goto 15.7,53.7 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Lord Cobrahn##3669 |only if default
@@ -469,6 +369,7 @@ kill Kresh##3653
 If you haven't already killed Kresh, then you will find him walking in this little river.
 Defeat Kresh |scenariogoal 24772
 Follow the path |goto 58.5,67.0 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill Skum##3674 |goto 60.7,72.1
@@ -484,6 +385,7 @@ path	55.9,56.8	64.4,59.7	68.6,62.2
 path	71.6,64.7	73.2,69.2	72.4,76.5
 path	68.2,84.2	62.5,82.8
 Follow this path |goto 62.5,82.8 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 Go to the ledge |goto 60.4,81.2
@@ -495,6 +397,7 @@ path follow loose; loop off; ants curved
 path	56.7,78.0	54.4,76.5	53.6,69.9
 path	53.0,63.8	54.4,60.6	58.4,56.7
 Follow the path |goto 58.4,56.7
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill Lord Serpentis##3673 |only if default
@@ -529,6 +432,7 @@ path	41.0,37.8	38.1,38.3	37.6,44.9
 path	35.5,48.5	35.4,50.9	37.8,51.7
 path	44.2,52.5
 Follow the path |goto 44.2,52.5 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step "Quests"
 clicknpc Serpentbloom##13891
@@ -559,6 +463,7 @@ path	32.6,29.4	37.7,24.8	37.6,21.6
 path	34.5,15.9
 There will be 2 waves of mobs that attack him, then the boss will appear.
 Escort and Protect Muyoh until you get to the boss |scenariogoal 2/24776 |goto 34.5,15.9 <5 |noway
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 step
 kill 1 Mutanus the Devourer##3654
 _DPS/Tank:_

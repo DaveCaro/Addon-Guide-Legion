@@ -6,7 +6,7 @@
 ## LoadOnDemand: 0
 ## SavedVariables: ZygorGuidesViewerSettings
 ## - SavedVariablesPerCharacter: ZygorGuidesViewerSettingsChar
-## OptionalDeps: Cartographer, Cartographer3, TomTom
+## OptionalDeps: Cartographer, Cartographer3, TomTom, WorldQuestTracker
 ## X-Category: 
 ## X-Credits: 
 ## X-eMail: zygor@zygorguides.com

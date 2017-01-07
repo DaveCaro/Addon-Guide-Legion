@@ -4,7 +4,7 @@ local data={}
 addon.LibRoverData = data
 
 data.version={
-	nodes_version = 19,  -- Increase this when working on the nodes. Bake the connections using ZGV.Testing.NeighbourCache:DumpNeighbours() when you're done.
+	nodes_version = 20,  -- Increase this when working on the nodes. Bake the connections using ZGV.Testing.NeighbourCache:DumpNeighbours() when you're done.
 }
 
 -- These are kept strictly unique. Make up bogus names if you need to.
@@ -3169,6 +3169,17 @@ data.basenodes.travel = {
 		"Eastern Plaguelands/0 26.51,11.67 -x- Stratholme/1 64.46,88.52 {style:portal_dungeon}",
 		-- STRATHOLME: SERVICE ENTRACE
 		"Eastern Plaguelands/0 43.82,17.42 -x- Stratholme/2 67.74,86.29 {style:portal_dungeon}",
+		--SUNKEN TEMPLE
+		"Swamp of Sorrows/0 69.33,55.62 <title:Enter the building>",
+		"@+ -x- Swamp of Sorrows/0 70.10,51.03 <dark:1> <onlyhardwire:1> <title:Run down the stairs>",
+		"@+ -x- Swamp of Sorrows/0 70.54,48.47 <radius:15> <dark:1> <onlyhardwire:1> <title:Swim under the water>",
+		"@+ -x- Swamp of Sorrows/0 70.94,45.95 <radius:15> <dark:1> <onlyhardwire:1> <title:Continue swimming>",
+		"@+ -x- Swamp of Sorrows/0 71.57,43.49 <dark:1> <onlyhardwire:1> <title:Follow the path>",
+		"@+ -x- Swamp of Sorrows/0 72.89,43.97 <dark:1> <onlyhardwire:1> <title:Follow the stairs down>",
+		"@+ -x- Swamp of Sorrows/0 73.94,44.38 <dark:1> <onlyhardwire:1> <title:Follow the path>",
+		"@+ -x- Swamp of Sorrows/0 75.00,45.44 <dark:1> <onlyhardwire:1> <title:Continue following the path>",
+		"@+ -x- Swamp of Sorrows/0 75.97,45.21 <dark:1> <onlyhardwire:1> <title:Go through the portal>",
+		"@+ -x- The Temple of Atal'Hakkar/1 50.0,15.8 <title:You're inside>",
 
 		--Scarlet Halls
 		"Tirisfal Glades/13 78.5,58.2 -x- Scarlet Halls/1 34.3,90.1 {style:portal_dungeon}",
@@ -3200,7 +3211,7 @@ data.basenodes.travel = {
 		-- BLACKROCK CAVERNS
 		"Burning Steppes/15 70.0,53.3 -x- Blackrock Caverns 32.02,70.10 {style:portal_dungeon}",
 		
-		-- BLACKROCK SPIRE
+		-- LOWER BLACKROCK SPIRE
 		"Burning Steppes/14 80.4,41.3 -x- Blackrock Spire/4 37.9,43.3 {style:portal_dungeon}",
 		-- UPPER BLACKROCK SPIRE
 		"Burning Steppes/14 79.0,34.0 -x- Upper Blackrock Spire 2/1 37.2,32.5 {style:portal_dungeon}",
@@ -3481,7 +3492,7 @@ data.basenodes.inns = {
 		{name="Lor'danel",faction="A",npc="Innkeeper Kyteran",npcid=43420,x=50.92,y=18.63},
 	},
 	['Ironforge']={
-		{name="Ironforge",faction="A",npc="Innkeeper Firebrew",npcid=5111,x=18.6,y=51.6},
+		{name="The Commons",faction="A",npc="Innkeeper Firebrew",npcid=5111,x=18.6,y=51.6},
 	},
 	['Stormwind City']={
 		--{name="Stormwind",faction="A",npc="Innkeeper Allison",npcid=6740,x=60.8,y=74.8},  -- why the double? ~sinus

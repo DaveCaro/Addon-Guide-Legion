@@ -1769,6 +1769,8 @@ GOALTYPES['poiname'] = {
 			return "Pet: "..self.parentStep.poiname 
 		elseif self.parentStep.poitype == "achivement" then
 			return "Achivement: "..self.parentStep.poiname 
+		elseif self.parentStep.poitype == "questobjective" then
+			return "Quest: "..self.parentStep.poiname 
 		else 
 			return "POI: "..self.parentStep.poiname 
 		end
@@ -1849,6 +1851,16 @@ GOALTYPES['poi_achievement'] = {
 		step.poiname = params
 		self.poiname = params
 		step.poitype = "achievement"
+	end,
+	gettext = GOALTYPES['poiname'].gettext,
+	onclick = GOALTYPES['poiname'].onclick,
+}
+
+GOALTYPES['poi_questobjective'] = {
+	parse = function(self,params,step)
+		step.poiname = params
+		self.poiname = params
+		step.poitype = "questobjective"
 	end,
 	gettext = GOALTYPES['poiname'].gettext,
 	onclick = GOALTYPES['poiname'].onclick,

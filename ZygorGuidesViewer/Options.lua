@@ -132,11 +132,13 @@ function ZGV:Options_DefineOptionTables()
 		if optdata.type=="color" then  optdata.font = optdata.font or ZGV.font_dialog  end
 		if optdata.type=="input" then  optdata.font = optdata.font or ZGV.font_dialogsmall  optdata.labelFont = optdata.labelFont or ZGV.font_dialogsmall  optdata.buttonNormalFont = optdata.buttonNormalFont or ZGV.font_dialog    end
 		if optdata.type=="range" then  optdata.labelFont = ZGV.font_dialog  optdata.rangeFont = ZGV.font_dialogsmall  optdata.valueFont = ZGV.font_dialogsmall    end
-		if optdata.type=="select" and not optdata.hidden and not optdata.guiHidden and not optdata._inline then
-			AddOptionSep()
+		if optdata.type=="select"  then
 			--AddOption("", { type="description", name=optdata.name or optname, width="full", font=ZGV.font_dialog })
 			--optdata.name=""
 			optdata.labelFont = optdata.labelFont or ZGV.font_dialog  optdata.valueFont = optdata.valueFont or ZGV.font_dialogsmall
+		end
+		if optdata.type=="select" and not optdata.hidden and not optdata.guiHidden and not optdata._inline then
+			AddOptionSep()
 		end
 
 		optdata._inline=nil
@@ -551,20 +553,46 @@ function ZGV:Options_DefineOptionTables()
 			_default = false,
 		})
 		AddOptionSpace()
-		AddOption('viewerscale',{
+
+		local framescales={0.8,1.0,1.2,1.4,1.6}
+		AddOption('framescale_s',{
 			type = 'select',
-			values = {[1]=L["opt_viewerscale_small"],[2]=L["opt_viewerscale_normal"],[3]=L["opt_viewerscale_large"]},
+			values = {[1]=L["opt_framescale_s_small"],[2]="||",[3]="'",[4]="'",[5]=L["opt_framescale_s_large"]},
 			style = 'slider',
 			set = function(i,v)
 				Setter_Simple(i,v)
-				local framescales={0.9,1.0,1.2}
 				self.db.profile.framescale = framescales[v]
 				self.Frame:SetScale(ZGV.db.profile.framescale)
 				self:AlignFrame()
 				self:UpdateFrame()
 			end,
+			get = function(i,v)
+				for k,v in ipairs(framescales) do if self.db.profile.framescale==v then return k end end
+				return 2
+			end,
 			_default=2,
 			width="single", 
+			_inline=true,
+		})
+		AddOption('',{ type = 'description', name="  ", width=30})
+		local fontsizes={9,11,13,15,17}
+		AddOption('fontsize_s',{
+			type = 'select',
+			values = {[1]=L["opt_framescale_s_small"],[2]="||",[3]="'",[4]="'",[5]=L["opt_framescale_s_large"]},
+			style = 'slider',
+			set = function(i,v)
+				Setter_Simple(i,v)
+				self.db.profile.fontsize = fontsizes[v]
+				self.db.profile.fontsecsize = fontsizes[v]*0.9
+				self:UpdateFrame()
+			end,
+			get = function(i,v)
+				for k,v in ipairs(fontsizes) do if self.db.profile.fontsize==v then return k end end
+				return 2
+			end,
+			_default=2,
+			width="single",
+			_inline=true,
 		})
 		AddOptionSpace()
 		AddOption('showcountsteps',{  type = "select",  values={  [0]=L["opt_showcountsteps_all"], [1]="1 (default)", [2]="2",[3]="3",[4]="4",[5]="5" } ,
@@ -871,6 +899,7 @@ function ZGV:Options_DefineOptionTables()
 		AddOption('arrowshow',{  width="double", type = 'toggle', set = function(i,v) Setter_Simple(i,v)  self.Pointer:UpdateArrowVisibility() end, _default=true, })
 		AddOption('arrowfreeze',{ type = 'toggle', set = function(i,v) Setter_Simple(i,v)  self.Pointer:SetupArrow() end, _default=false, })
 		AddOptionSep()
+		AddOptionSep()  -- to match POI layout... ugly but hey.
 
 		--[[
 			AddOption('arrowskin',{
@@ -925,24 +954,44 @@ function ZGV:Options_DefineOptionTables()
 			_default = 1.0,
 			hidden = true,
 		})
+
+
+		local arrowscales={0.8,1.0,1.2,1.4,1.6}
 		AddOption('arrowscale_s',{
 			type = 'select',
-			values = {[1]=L["opt_viewerscale_small"],[2]=L["opt_viewerscale_normal"],[3]=L["opt_viewerscale_large"]},
+			values = {[1]=L["opt_framescale_s_small"],[2]="||",[3]="'",[4]="'",[5]=L["opt_framescale_s_large"]},
 			style = 'slider',
-			get = function() if self.db.profile.arrowscale<1 then return 1 elseif self.db.profile.arrowscale>1 then return 3 else return 2 end end,
-			set = function(i,v) Setter_Simple(i,v)  local framescales={0.9,1.0,1.2}  self.db.profile.arrowscale = framescales[v]  ZGV.Pointer:SetupArrow()  end,
+			set = function(i,v)
+				Setter_Simple(i,v)
+				self.db.profile.arrowscale = arrowscales[v]
+				ZGV.Pointer:SetupArrow()
+			end,
+			get = function(i,v)
+				for k,v in ipairs(arrowscales) do if self.db.profile.arrowscale==v then return k end end
+				return 2
+			end,
 			_default=2,
 			width="single", 
+			_inline=true,
 		})
-		AddOptionSpace()
+		AddOption('',{ type = 'description', name="  ", width=30})
+		local arrowfontsizes={8,10,12,14,16}
 		AddOption('arrowfontsize_s',{
 			type = 'select',
-			values = {[1]=L["opt_viewerscale_small"],[2]=L["opt_viewerscale_normal"],[3]=L["opt_viewerscale_large"]},
+			values = {[1]=L["opt_framescale_s_small"],[2]="||",[3]="'",[4]="'",[5]=L["opt_framescale_s_large"]},
 			style = 'slider',
-			get = function() if self.db.profile.arrowfontsize==9 then return 1 elseif self.db.profile.arrowfontsize==12 then return 3 else return 2 end end,
-			set = function(i,v) Setter_Simple(i,v)  local fontscales={9,10,12}  self.db.profile.arrowfontsize = fontscales[v]  ZGV.Pointer:SetFontSize(self.db.profile.arrowfontsize)  end,
+			set = function(i,v)
+				Setter_Simple(i,v)
+				self.db.profile.arrowfontsize = arrowfontsizes[v]
+				ZGV.Pointer:SetFontSize(self.db.profile.arrowfontsize)
+			end,
+			get = function(i,v)
+				for k,v in ipairs(arrowfontsizes) do if self.db.profile.arrowfontsize==v then return k end end
+				return 2
+			end,
 			_default=2,
-			width="single", 
+			width="single",
+			_inline=true,
 		})
 		AddOptionSpace()
 
@@ -1110,7 +1159,7 @@ function ZGV:Options_DefineOptionTables()
 		AddOption('poisize',{
 			type = 'select',
 			style = 'slider',
-			values = { [17] = L["opt_viewerscale_small"], [20] = L["opt_viewerscale_normal"], [23] = L["opt_viewerscale_large"] },
+			values = { [17] = L["opt_framescale_s_small"], [20] = L["opt_framescale_s_normal"], [23] = L["opt_framescale_s_large"] },
 			set = function(i,v) Setter_Simple(i,v) ZGV.Pointer:RefreshDynamicValues() end,
 			_default = 20,
 			disabled = function() return not self.db.profile.poienabled end,
@@ -1185,6 +1234,19 @@ function ZGV:Options_DefineOptionTables()
 				hidden = function() return not ZGV.Poi.OwnedTypes.treasure end,
 				_default = true,
 			})
+
+			AddOption('poishow_questobjective',{
+				name = L['opt_poishow_questobjective'],
+				desc = L['opt_poishow_questobjective_desc'],
+				type = 'toggle',
+				set = function(i,v) Setter_Simple(i,v) ZGV.db.profile.hideguide.questobjective=not v ZGV.Poi:ChangeState(true) end,
+				get = function() return not ZGV.db.profile.hideguide.questobjective end,
+				disabled = function() return not self.db.profile.poienabled or not ZGV.Poi.OwnedTypes.questobjective end,
+				hidden = function() return not ZGV.Poi.OwnedTypes.questobjective end,
+				_default = true,
+			})
+
+			
 			AddOptionSep()
 		--EndSubgroup()
 
@@ -3124,9 +3186,6 @@ function ZGV:Options_RegisterDefaults()
 	self.db.profile.gold_tooltips_shift = true
 	self.db.profile.gold_tooltips_guide = 1
 	self.db.profile.gold_profitlevel = 0.25
-
-	self.db.profile.fontsize = 11
-	self.db.profile.fontsecsize = 10
 
 	self.db.profile.auction_autoshow_tab = true
 

@@ -641,6 +641,17 @@ Fish from the Huge Cursed Queenfish School |cast Fishing##131474
 collect 10 Huge Cursed Queenfish##134565 |q 41611/1 |goto 43.57,56.02
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41610
+Follow the path |goto Azsuna/0 49.30,29.02 < 25 |only if walking
+Follow the path |goto 51.39,30.73 < 25 |only if walking
+Follow the path |goto 53.12,32.10 < 25 |only if walking
+accept Huge Cursed Queenfish##41610 |goto 54.87,37.76
+|tip You will accept this quest automatically.
+step
+Fish from the Huge Cursed Queenfish School |cast Fishing##131474
+collect 10 Huge Cursed Queenfish##134565 |q 41610/1 |goto 54.87,37.76
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42277
 accept Interlopers1!##42277 |goto Azsuna/0 31.53,46.76
 |tip You will accept this quest automatically.
@@ -757,6 +768,23 @@ collect Leystone-Encrusted Spike##134104 |q 41500/1 |goto 50.26,21.67
 |tip Mine the corpses.
 |next "Court_Of_Farondis_WQ"
 step
+label quest-45046
+Follow the path |goto Azsuna/0 55.90,60.10 < 25 |only if walking
+Follow the path |goto 56.36,65.74 < 25 |only if walking
+Follow the path |goto 55.23,69.08 < 25 |only if walking
+Follow the path |goto 56.04,71.63 < 25 |only if walking
+Follow the path |goto 57.27,72.13 < 10 |only if walking
+accept Like the Wind##45046 |goto 57.14,73.13
+|tip You will accept this quest automatically.
+step
+Goal Reached |q 45046/1 |goto 57.14,73.13
+|tip To reach the goal, you must use the crystals to increase your vertical elevation.
+|tip Purple orbs will instantly reset your dash cooldown.
+|tip Avoid orange orbs, as they will stun you.
+|tip Aim for the glowing blue platforms. These act as checkpoints.
+|tip Dropping a long distance without dashing will cause you to fail.
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41527
 accept Lively Aethril##41527 |goto Azsuna/0 61.70,23.35
 |tip You will accept this quest automatically.
@@ -773,6 +801,19 @@ step
 Fish from Lively Cursed Queenfish Schools |cast Fishing##7620
 |tip You will find these all around the water.
 collect 10 Lively Cursed Queenfish##134564 |q 41598/1 |goto 40.01,41.79
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41599
+Follow the path |goto Azsuna/0 55.38,59.90 < 25 |only if walking
+Follow the path |goto 54.11,61.28 < 25 |only if walking
+Follow the path |goto 53.02,61.04 < 15 |only if walking
+Follow the path |goto 50.65,62.75 < 25 |only if walking
+accept Lively Cursed Queenfish##41599 |goto 51.14,66.02
+|tip You will accept this quest automatically.
+step
+Fish from Lively Cursed Queenfish Schools |cast Fishing##7620
+|tip You will find these all around the water.
+collect 10 Lively Cursed Queenfish##134564 |q 41599/1 |goto 51.14,66.02
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41454

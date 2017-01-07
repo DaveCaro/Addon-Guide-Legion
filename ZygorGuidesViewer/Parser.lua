@@ -1063,6 +1063,8 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 						elseif cmd=="indoors" then
 							goal.waypoint_minizone = params -- if nil, then it's ignored.
 							goal.waypoint_indoors = 1 -- if nil, then it's ignored.
+						elseif cmd=="notravel" then
+							goal.waypoint_notravel = true
 
 						elseif cmd=="path" then
 

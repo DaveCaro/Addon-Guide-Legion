@@ -441,31 +441,580 @@ model={29361},
 description="This guide will help you acquire the Long-Forgotten Hippogryph Mount.",
 },[[
 step
+label "Loop"
 This Mount is hard to attain
-You _absolutely have to_ collect Ephemeral Crystals throughout Azsuna
-You _CANNOT DIE_ or you will have to restart collecting the crystals
+You collect Ephemeral Crystals found in Azsuna, that spawn at random locations
+You _MUST NOT DIE_ or you will have to collect the Crystals all over
+You _MUST NOT_ Log Off, or you will have to start over
+You _MUT NOT_ Leave Azsuna, or you will have to start over
 Note that if another player gets the spawn before you, you will have to wait for the crystals to reset
 Click here to continue |confirm
+stickystart "Crystal"
 step
-_When you have collected 5 Ephemeral Crystals, you will get a message across the screen_
 click Ephemeral Crystal
-Oceanus cove crystal |goto Azsuna/0 47,62
-The Ruined sanctum west crystal |goto Azsuna/0 60,53
-Felblaze Ingress east crystal |goto Azsuna/0 67,33
-In a cave crystal |goto Azsuna/0 61,30
-Hatecoil warcamp crystal |goto Azsuna/0 59,38
-Nar'thalas academy crystal |goto Azsuna/0 54,33
-Liothien crystal |goto Azsuna/0 53,28
-Azurewing repose cave crystal |goto Azsuna/0 50,20
-Azurewing repose south crystal |goto Azsuna/0 47,33
-Nor'danil wellspring north crystal |goto Azsuna/0 37,32
-Nor'danil wellspring south crystal |goto Azsuna/0 34,35
-Lost Orchard crystal |goto Azsuna/0 42,8
-collect Reins of the Long-Forgotten Hippogryph##138258
-|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-step
+|tip It's a purple-ish blue object.
+Collect the Ephemeral Crystal |n |goto Azsuna/0 45.5,45.4
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
 Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
-Learn the Long-Forgotten Hippogryph |learnpet 215159
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+click Ephemeral Crystal
+|tip It's a purple-ish blue object.
+Collect the Ephemeral Crystal |goto 46.95,48.93
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Carefully jump down |goto 48.27,47.63 < 5 |only if walking
+Continue jumping down the ledge |goto 48.31,48.29 < 5 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object.
+Collect the Ephemeral Crystal |goto 48.7,48.5
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Enter the cave |goto 50.11,48.88 < 10 |walk
+click Ephemeral Crystal
+|tip It's a purple-ish blue object.
+Collect the Ephemeral Crystal |goto 50.73,49.89
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Leave the cave |goto 50.19,49.12 < 10 |walk
+Follow the path |goto 48.29,45.89 < 20 |only if walking
+Follow the path |goto 46.35,45.77 < 25 |only if walking
+Follow the path |goto 46.29,50.36 < 25 |only if walking
+Carefully jump down |goto 45.45,53.95 < 10 |only if walking
+Follow the path |goto 44.76,58.47 < 25 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object.
+Collect the Ephemeral Crystal |goto 44.1,59.8
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Follow the path |goto 45.46,58.68 < 20 |only if walking
+Follow the path |goto 46.84,59.88 < 20 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object.
+Collect the Ephemeral Crystal |goto 47.1,61.7
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Follow the path |goto 48.56,61.09 < 30 |only if walking
+Follow the path |goto 50.70,60.66 < 5 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object.
+Collect the Ephemeral Crystal |goto 51,61
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Follow the path |goto 52.47,62.39 < 25 |only if walking
+Follow the path |goto 53.89,65.87 < 25 |only if walking
+Follow the path |goto 52.98,67.64 < 25 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object.
+Collect the Ephemeral Crystal |goto 52,71
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+fpath Wardens' Redoubt |goto 48.19,72.96
+step
+Follow the path |goto 57.30,56.49 < 25 |only if walking
+Follow the path |goto 58.61,54.15 < 25 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object.
+Collect the Ephemeral Crystal |goto 60,54
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+click Ephemeral Crystal
+|tip It's a purple-ish blue object.
+Collect the Ephemeral Crystal |goto 60.1,53.2
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+click Ephemeral Crystal
+|tip It's a purple-ish blue object.
+Collect the Ephemeral Crystal |goto 62,54
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+click Ephemeral Crystal
+|tip It's a purple-ish blue object.
+Collect the Ephemeral Crystal |goto 62.53,52.36
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Follow the path |goto 61.58,50.98 < 30 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object.
+Collect the Ephemeral Crystal |goto 60,49
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Follow the path |goto 61.46,50.96 < 30 |only if walking
+Follow the path |goto 63.55,51.24 < 30 |only if walking
+Follow the path |goto 66.55,51.60 < 5 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object.
+Collect the Ephemeral Crystal |goto 67,52
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Follow the path |goto 65.87,48.45 < 30 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object.
+Collect the Ephemeral Crystal |goto 67,46
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Follow the path down |goto Azsuna/0 65.97,42.66 < 10 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object.
+Collect the Ephemeral Crystal |goto 65.49,42.47
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Follow the path up |goto 65.11,38.93 < 15 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object.
+Collect the Ephemeral Crystal |goto 64.8,37.9
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+click Ephemeral Crystal
+|tip It's a purple-ish blue object.
+Collect the Ephemeral Crystal |goto 67,33.7
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Follow the path |goto 67.15,32.32 < 20 |only if walking
+Follow the path |goto 68.39,29.33 < 20 |only if walking
+Follow the path |goto 68.67,26.91 < 20 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object.
+Collect the Ephemeral Crystal |goto 68.19,24.03
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+click Ephemeral Crystal
+|tip It's a purple-ish blue object.
+Collect the Ephemeral Crystal |goto 68,23
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+click Ephemeral Crystal
+|tip It's a purple-ish blue object.
+Collect the Ephemeral Crystal |goto 65.4,29.5
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Follow the path |goto 63.48,31.76 < 25 |only if walking
+Follow the path |goto 61.37,34.64 < 25 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object.
+Collect the Ephemeral Crystal |goto 59.37,38.33
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+click Ephemeral Crystal
+|tip It's a purple-ish blue object.
+Collect the Ephemeral Crystal |goto 59.7,38.6
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+click Ephemeral Crystal
+|tip It's a purple-ish blue object.
+Collect the Ephemeral Crystal |goto 61.1,38.9
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Follow the path |goto 59.18,42.32 < 20 |only if walking
+Follow the path |goto 61.12,45.12 < 20 |only if walking
+Follow the path |goto 62.43,47.27 < 20 |only if walking
+Follow the path |goto 61.08,46.68 < 20 |only if walking
+Follow the path |goto 59.88,48.78 < 20 |only if walking
+Follow the path |goto 58.41,48.70 < 20 |only if walking
+Carefully jump down |goto 58.91,45.66 < 5 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object.
+Collect the Ephemeral Crystal |goto 58.7,45
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+click Ephemeral Crystal
+|tip It's a purple-ish blue object.
+Collect the Ephemeral Crystal |goto 59.08,44.88
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Carefully drop down |goto 58.58,45.19 < 5 |only if walking
+Jump down |goto 57.26,46.99 < 10
+click Ephemeral Crystal
+|tip It's a purple-ish blue object.
+Collect the Ephemeral Crystal |goto 57.9,42.6
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Jump down |goto 58.70,42.87 < 15 |only if walking
+Follow the path |goto 57.05,41.27 < 30 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object, under water.
+Collect the Ephemeral Crystal |goto 56,40
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Follow the path |goto 54.82,39.12 < 20 |only if walking
+Follow the path |goto 53.16,37.67 < 20 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object, under water.
+Collect the Ephemeral Crystal |goto 51.4,37.6
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+click Ephemeral Crystal
+|tip It's a purple-ish blue object, under water.
+Collect the Ephemeral Crystal |goto 53.08,36.03
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+click Ephemeral Crystal
+|tip It's a purple-ish blue object.
+Collect the Ephemeral Crystal |goto 54.5,33.5
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Follow the path |goto 54.84,33.35 < 20 |only if walking
+Follow the path |goto 56.21,33.12 < 25 |only if walking
+Follow the path |goto 59.24,31.08 < 25 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object, inside of the cave.
+Collect the Ephemeral Crystal |goto 61.15,30.42
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Follow the path |goto 59.55,29.48 < 20 |only if walking
+Follow the path |goto 58.31,27.92 < 20 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object, inside of the cave.
+Collect the Ephemeral Crystal |goto 57.5,26.6
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+click Ephemeral Crystal
+|tip It's a purple-ish blue object, inside of the cave.
+Collect the Ephemeral Crystal |goto 54.1,27.6
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+click Ephemeral Crystal
+|tip It's a purple-ish blue object, inside of the cave.
+Collect the Ephemeral Crystal |goto 53.4,27.9
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Follow the path |goto 52.95,28.46 < 20 |only if walking
+Follow the path |goto 51.72,26.63 < 20 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object, inside of the cave.
+Collect the Ephemeral Crystal |goto 52.29,25.24
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Follow the path |goto 51.06,24.49 < 20 |only if walking
+Follow the path |goto 50.86,22.63 < 20 |only if walking
+Follow the path |goto 50.77,19.94 < 20 |only if walking
+Follow the path |goto 51.15,15.75 < 20 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object, inside of the cave.
+Collect the Ephemeral Crystal |goto 52.41,13.44
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Follow the path |goto 51.32,10.70 < 20 |only if walking
+Follow the path |goto 50.18,8.75 < 20 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object, inside of the cave.
+Collect the Ephemeral Crystal |goto 50.4,7.8
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Follow the path up |goto 49.37,7.22 < 20 |only if walking
+Follow the path |goto 48.58,10.76 < 20 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object, inside of the cave.
+Collect the Ephemeral Crystal |goto 45.7,9.2
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+click Ephemeral Crystal
+|tip It's a purple-ish blue object, inside of the cave.
+Collect the Ephemeral Crystal |goto 45.5,17.2
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Enter the cave |goto 44.15,17.57 < 20 |walk
+click Ephemeral Crystal
+|tip It's a purple-ish blue object, inside of the cave.
+Collect the Ephemeral Crystal |goto 43.0,18.0
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Leave the cave |goto Azsuna/0 44.16,17.61 |walk
+Follow the path |goto Azsuna/0 43.04,10.96 < 20 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object, inside of the cave.
+Collect the Ephemeral Crystal |goto 42.4,8.8
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+click Ephemeral Crystal
+|tip It's a purple-ish blue object, inside of the cave.
+Collect the Ephemeral Crystal |goto 42.2,8.5
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Follow the path |goto 40.74,10.36 < 20 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object, inside of the cave.
+Collect the Ephemeral Crystal |goto 38.76,9.29
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Follow the path |goto 38.41,12.52 < 20 |only if walking
+Follow the path |goto 37.8,14.8 < 20 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object, inside of the cave.
+Collect the Ephemeral Crystal |goto 34.85,17.14
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+click Ephemeral Crystal
+|tip It's a purple-ish blue object, inside of the cave.
+Collect the Ephemeral Crystal |goto 35,22
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Follow the path |goto 35.41,26.83 < 20 |only if walking
+Follow the path |goto 32.89,30.60 < 20 |only if walking
+Follow the path |goto 31.68,33.59 < 20 |only if walking
+Follow the path |goto 30.51,35.39 < 20 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object, inside of the cave.
+Collect the Ephemeral Crystal |goto 29.9,36.0
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Follow the path |goto 30.98,34.37 < 20 |only if walking
+Enter the cave |goto 32.94,34.38 < 20 |walk
+click Ephemeral Crystal
+|tip It's a purple-ish blue object, inside of the cave.
+Collect the Ephemeral Crystal |goto 34.8,35.3
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Leave the cave |goto 34.37,36.00 < 20 |walk
+Follow the path |goto 34.5,36.7 < 20 |only if walking
+Follow the path |goto 38.1,37.9 < 20 |only if walking
+Follow the path |goto 41.4,35.5 < 20 |only if walking
+Follow the path up |goto 40.6,34.6 < 20 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object, inside of the cave.
+Collect the Ephemeral Crystal |goto 40.3,32.8
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+click Ephemeral Crystal
+|tip It's a purple-ish blue object, inside of the cave.
+Collect the Ephemeral Crystal |goto 37.4,32.2
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Follow the path up |goto 39.53,34.34 < 20 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object, inside of the cave.
+Collect the Ephemeral Crystal |goto 36.0,36.0
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Follow the path |goto 42.09,34.06 < 20 |only if walking
+Follow the path |goto 44.18,32.17 < 20 |only if walking
+click Ephemeral Crystal
+|tip It's a purple-ish blue object, inside of the cave.
+Collect the Ephemeral Crystal |goto 47.2,33.0
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+click Ephemeral Crystal
+|tip It's a purple-ish blue object, inside of the cave.
+Collect the Ephemeral Crystal |goto 49.93,32.95
+collect Reins of the Long-Forgotten Hippogryph##138258 |n
+Use the Reins of the Long-Forgotten Hippogryph |use Reins of the Long-Forgotten Hippogryph##138258
+Learn the Long-Forgotten Hippogryph |learnpet 215159 |next "Crystal"
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click here if there isn't an Ephemeral Crystal Present |confirm
+step
+Click here to return to the start |confirm |next "Loop"
+step "Crystal"
+When you, or another player have collected 5 Ephemeral Crystals, the following message appears:
+_You hear a faint caw in the distance and then silence._
+You will have to wait at least 4 hours before the Crystals respawn
+step
+Congratulations, you have earned the Long-Forgotten Hippogryph Mount!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Darkwater Skate",{
 author="support@zygorguides.com",

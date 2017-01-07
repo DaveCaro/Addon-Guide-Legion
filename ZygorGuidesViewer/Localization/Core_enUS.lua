@@ -361,11 +361,12 @@ ZygorGuidesViewer_L("Main", "enUS", function() local f = {
 
 		["opt_opacitytoggle"] = "Make viewer transparent",
 		["opt_opacitytoggle_desc"] = "Makes the Viewer window slightly see-through.",
-		["opt_viewerscale"] = "Viewer size:",
-		["opt_viewerscale_desc"] = "You can resize the window to match your preferences.",
-		["opt_viewerscale_small"] = "Small",
-		["opt_viewerscale_normal"] = "Normal",
-		["opt_viewerscale_large"] = "Large",
+		["opt_framescale_s"] = "Viewer size:",
+		["opt_framescale_s_desc"] = "You can resize the window to match your preferences.",
+		["opt_framescale_s_small"] = "Small",
+		["opt_framescale_s_normal"] = "Normal",
+		["opt_framescale_s_large"] = "Large",
+		['opt_fontsize_s'] = "Font size:",			['opt_fontsize_s_desc'] = "Set the size of step text font.",
 
 		['opt_windowlocked'] = "Lock viewer in place",
 		['opt_windowlocked_desc'] = "Prevents the window from being dragged with the mouse.",

@@ -8,51 +8,27 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Zygor Viewer Guide :
 
-- ORDER HALLS : 
+- GENERAL : 
 
-Fixed a quest id in the rogue class hall guide.
+Enhanced support with World Quest Tracker addon.
 
-Moved the quest "Deadlier Warglaives" to be positioned after completing the quest "Fire!"
+Note: If a quest is already being tracked in WQT and you click the icon to load the guide for it the first click will actually remove it from WQT and not jump to the guide. You will need to click the icon a second time to re-add it to WQT and load the guide.
 
-Fixed bad coordinates for the Light's Heart object in the Trueshot Lodge.
+- LEVELING :
 
-- DAILIES : 
+Added in the Heros call/warchiefs quest for swamp of sorrows into the swamp of sorrows guide, and removed the turnin for "Not Fireflies, Flameflies" as it is turned in already in a previous guide for Horde.
 
-New World Quests added.
+- WORLD QUESTS :
 
-Fixed a count issue with the world quest "Watery Graves"
+Additional world quests added.
 
-Added tips to the rest of the Barrel O Mugs world quests that were missing their descriptions.
+- DUNGEONS :
 
-- PROFESSIONS :
+Updates to Classic dungeons in response to Blizzard disabling Waypoint Arrows in them. Better pathing directions being added in to navigate players via text.
 
-Fixed a small typo in the Enchanting professions leveling guides.
+- OPTIONS : 
 
-Added "Obliterum Forge Questline"
-
-Updated the 1-700 Herbalism profession guide removing the step to collect Frozen Herb. Changed the location and what to gather to get to skill level 215.
-
-Added a tip instructing users to progress through the leveling guides for each recipe, as they can no longer be purchased from Nomi.
-
-- PETS/MOUNTS :
-
-Updated the pet Tranquil Mechanical yeti, informing players that the recipe to make this pet is no longer obtainable in the game.
-
-Updated the Model IDs for the legion mounts section to properly display the correct model for each mount.
-
-- GENERAL :
-
-ItemScore: Prevent errors when unknown item effect was only partially parsed
-
-Removed a debug message in AceConfigDialog.
-
-Band-aided a "SetWidth" error in AceConfigDialog appearing in other addons using the Ace libs.
-
-Pointer: Updated arrow menu to use new settings
-
-Options: Restored option to disable ant trails
-
-Added limited compatibility with third party addon WorldQuestTracker.
+Additional options added for Guide Viewer, Waypoint Arrow, and text sizing.
 
 DUGI GUIDE : 
 

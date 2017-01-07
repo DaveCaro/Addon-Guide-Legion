@@ -7144,15 +7144,20 @@ dynamic=true,
 },[[
 step
 talk Kibler##10260
-turnin Not Fireflies, Flameflies##28491 |goto Burning Steppes 54.9,22.5
-accept The Bogpaddle Bullet##28570 |goto Burning Steppes 54.9,22.5
+accept The Bogpaddle Bullet##28570 |goto Burning Steppes 54.9,22.5 |or
+click Warchief'c Command Board
+accept Warchief's Command: Swamp of Sorrows!##28677 |goto Undercity/0 65.95,49.81 |or
 step
-talk Sharon Boomgetter##48948 |goto 78.3,58.8
-Tell her _"Alright! Let's head down to the Swamp of Sorrows!"_
-Ride the Rocket to Swamp of Sorrows |goto Swamp of Sorrows 75.3,13.3 < 10 |noway |q 28570
+talk Sharon Boomgetter##48948
+Tell her let's head down to the Swamp of Sorrows |goto Burning Steppes 78.3,58.8
+Ride the rocket to Swamp of Sorrows |goto Swamp of Sorrows,75.3,13.3 < 5
+confirm
 step
 talk Trade Baron Silversnap##45786
-turnin The Bogpaddle Bullet##28570 |goto Swamp of Sorrows 73.2,14.9
+turnin The Bogpaddle Bullet##28570 |goto Swamp of Sorrows 73.2,14.9 |or
+turnin Warchief's Command: Swamp of Sorrows!##28677 |goto Swamp of Sorrows 73.2,14.9 |or
+step
+talk Trade Baron Silversnap##45786
 accept Maliciously Delicious##27587 |goto Swamp of Sorrows 73.2,14.9
 collect Silversnap Swim Tonic##62795 |q 27587
 step

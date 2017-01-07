@@ -409,14 +409,12 @@ function ZGV:OnEnable()
 
 	self:Hook_QuestChoice()
 
+	if TaskPOI_OnClick then hooksecurefunc("TaskPOI_OnClick", function(self,button) ZGV:SuggestWorldQuestGuide(self) end) end
+
 	if WorldQuestTrackerAddon then
-		if WorldQuestTrackerAddon.db.profile.use_tracker then
-			local WQT=LibStub ("AceAddon-3.0"):GetAddon("WorldQuestTrackerAddon")
-			ZGV:Hook(WQT,"OnQuestClicked", ZGV.WQTwrapper)
-			self:AddEvent("SUPER_TRACKED_QUEST_CHANGED") -- legion popups
-		end
-	else
-		if TaskPOI_OnClick then hooksecurefunc("TaskPOI_OnClick", function(self,button) ZGV:SuggestWorldQuestGuide(self) end) end
+		local WQT=LibStub ("AceAddon-3.0"):GetAddon("WorldQuestTrackerAddon")
+		ZGV:Hook(WQT,"OnQuestClicked", ZGV.WQTwrapper)
+		self:AddEvent("SUPER_TRACKED_QUEST_CHANGED") -- legion popups
 	end
 
 	--self.Localizers:PruneNPCs()  -- off until we start doing it by data, not by name. ~sinus 2013-04-09
@@ -995,6 +993,9 @@ end
 
 function ZGV:SetGuide(name,step,hack) --hack used for testing
 	if not name then return end
+	-- record if previous active guide had any points of interest
+	local was_poi = self.CurrentGuide and self.CurrentGuide.poi
+
 	step=step or 1
 	--self:Debug("SetGuide "..name.." ("..tostring(step)..")")
 
@@ -1060,7 +1061,8 @@ function ZGV:SetGuide(name,step,hack) --hack used for testing
 			return "BAD"
 		end
 
-		if self.CurrentGuide then self.CurrentGuide:Unload() end
+		-- unload guides, unless they have points of interest
+		if self.CurrentGuide and not self.CurrentGuide.poi then self.CurrentGuide:Unload() end
 
 		guide:Parse(true)
 
@@ -1130,6 +1132,11 @@ function ZGV:SetGuide(name,step,hack) --hack used for testing
 	
 	--ZGV.Pointer:SetWaypointToFirst()
 	ZGV.Pointer:SetArrowToFirstCompletableGoal()
+
+	--If needed, refresh POIs to show/hide guide specific points
+	if ZGV.Poi.Ready and (was_poi or self.CurrentGuide.poi) then
+		ZGV.Poi:RegisterPoints()
+	end
 
 	ZygorGuidesViewer_ProgressBar_Update()
 end
@@ -1998,6 +2005,7 @@ local actionicon={
 	["next"]=14,
 	["poi_treasure"]=15,
 	["poi_rare"]=16,
+	["poi_questobjective"]=8,
 	["poiannounce"]=0,
 	["poiaccess"]=0,
 	["poicurrency"]=0,
@@ -2005,7 +2013,7 @@ local actionicon={
 }
 setmetatable(actionicon,{__index=function() return 2 end})
 
-local poi_actions = {poi_treasure=1, poi_rare=1, poiannounce=1, poiaccess=1, poicurrency=1}
+local poi_actions = {poi_treasure=1, poi_rare=1, poi_questobjective=1, poiannounce=1, poiaccess=1, poicurrency=1}
 
 local goals_temp = {}
 
@@ -5780,10 +5788,15 @@ function ZGV:PLAYER_LEVEL_UP(event,level)
 end
 
 function ZGV:SUPER_TRACKED_QUEST_CHANGED()
+	if not WorldQuestTrackerAddon then return end
+	if not WorldQuestTrackerAddon.db.profile.use_tracker then return end
+	if not WorldQuestTrackerAddon.IsQuestBeingTracked(GetSuperTrackedQuestID()) then return end
 	ZGV:SuggestWorldQuestGuide(nil,GetSuperTrackedQuestID(),"force")
 end
 
 function ZGV.WQTwrapper(object)
+	if not WorldQuestTrackerAddon.db.profile.use_tracker then return end
+	
 	if not WorldQuestTrackerAddon.IsQuestBeingTracked(object.questID) then
 		ZGV:SuggestWorldQuestGuide(nil,object.questID,"force")
 	end
@@ -5848,7 +5861,7 @@ local function SimpleThreadFrame_OnUpdate(frame,elapsed)
 	for thread,tparm in pairs(frame.threads) do
 		if coroutine.status(thread)~="dead" then
 			local ok,err = coroutine.resume(thread,unpack(tparm))
-			if not ok then self:Error("Timerize error: "..tostring(err)) end
+			if not ok then ZGV:Error("Timerize error: "..tostring(err)) end
 		else
 			frame.threads[thread]=nil
 			if next(frame.threads)==nil then SimpleThreadFrame:SetScript("OnUpdate",nil) end

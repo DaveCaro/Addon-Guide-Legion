@@ -4239,7 +4239,7 @@ function Pointer:FindTravelPath(way)
 		ZGV:Debug("&pointer FindTravelPath to %s",waypoint_tostring(way))
 		LibRover:Abort("before QFP","quiet")
 		LibRover:QueueFindPath(0,0,0,0,way.m,way.f,way.x,way.y, PathFoundHandler,
-			{title=way.title .. (display_zone and ("\n(in %s)"):format(display_zone) or ""), waypoint=way, direct=not ZGV.db.profile.pathfinding,
+			{title=way.title .. (display_zone and ("\n(in %s)"):format(display_zone) or ""), waypoint=way, direct=not ZGV.db.profile.pathfinding or (way.goal and way.goal.waypoint_notravel),
 			waypoint_zone=way.waypoint_zone, waypoint_realzone=way.waypoint_realzone, waypoint_subzone=way.waypoint_subzone, waypoint_minizone=way.waypoint_minizone,
 			waypoint_region=way.waypoint_region, waypoint_indoors = way.waypoint_indoors
 			}

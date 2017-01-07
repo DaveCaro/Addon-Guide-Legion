@@ -7635,15 +7635,20 @@ endlevel=54
 },[[
 step
 talk Oralius##9177
-accept The Bogpaddle Bullet##28569 |goto Burning Steppes 71.9,68.0
+accept The Bogpaddle Bullet##28569 |goto Burning Steppes 71.9,68.0 |or
+click Hero's Call Board##470
+accept Hero's Call: Swamp of Sorrows!##28675 |goto Stormwind City/0 62.92,71.72 |or
 step
 talk Sharon Boomgetter##48948
-Tell her let's head down to the Swamp of Sorrows |goto 78.3,58.8
+Tell her let's head down to the Swamp of Sorrows |goto Burning Steppes 78.3,58.8
 Ride the rocket to Swamp of Sorrows |goto Swamp of Sorrows,75.3,13.3 < 5
 confirm
 step
 talk Trade Baron Silversnap##45786
-turnin The Bogpaddle Bullet##28569 |goto Swamp of Sorrows,73.2,14.9
+turnin The Bogpaddle Bullet##28569 |goto Swamp of Sorrows,73.2,14.9 |or
+turnin Hero's Call: Swamp of Sorrows!##28675 |goto Swamp of Sorrows,73.2,14.9 |or
+step
+talk Trade Baron Silversnap##45786
 accept Maliciously Delicious##27587 |goto Swamp of Sorrows,73.2,14.9
 step
 talk Cap'n Geech##47334

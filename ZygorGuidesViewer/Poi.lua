@@ -19,6 +19,7 @@ local POI_TYPES = {
 	[2] = {keyword="battlepet",display="Battle pets"},
 	[3] = {keyword="rare",display="Rares"},
 	[4] = {keyword="treasure",display="Treasures"},
+	[5] = {keyword="questobjective",display="Quest Objective"},
 	}
 
 Poi.OwnedTypes = {}
@@ -42,7 +43,7 @@ function Poi:RegisterPoiGuide()
 	ZGV:SendMessage("ZYGOR_POI_REGISTERED_GUIDE", "done")
 end
 
-function Poi:CheckValidity(poistep)
+function Poi:CheckValidity(poistep,register)
 	if ZGV.db.profile.hideguide[poistep.poitype] then
 		return false -- poi type hidden
 	end
@@ -63,6 +64,14 @@ function Poi:CheckValidity(poistep)
 			local temp = {GetAchievementInfo(poistep.poiachieve)}
 			return not (select(4,GetAchievementInfo(poistep.poiachieve)))
 		end
+	elseif poistep.poitype=="questobjective" then
+		if register then 
+			-- we want to register the poi regardless of what guide is loaded
+			return true
+		else
+			-- but after that, it is valid if its parent guide is active
+			return poistep.parentGuide.title==ZGV.CurrentGuide.title
+		end
 	else
 		return true
 	end
@@ -77,7 +86,7 @@ function Poi:RegisterPoints()
 	for j,guide in pairs(Poi.Guides) do
 		for i,step in pairs(guide.steps) do
 			if step.poiname then
-				local valid_poi = Poi:CheckValidity(step)
+				local valid_poi = Poi:CheckValidity(step,true)
 				if not step:AreRequirementsMet() then valid_poi = false end
 
 				Poi.OwnedTypes[step.poitype]=true
@@ -103,7 +112,7 @@ function Poi:RegisterPoints()
 					previndex = false
 				end
 			else
-				if previndex then
+				if previndex and Poi.Points[previndex] then
 					Poi.Points[previndex].stepend = i
 				end
 			end
@@ -331,6 +340,8 @@ function Poi:DisplayPois(forceRefresh)
 	--if not ZGV.DEV then ZGV.Poi.Waypoints={} return end  --devwall
 	if not ZGV.db.profile.poienabled then return end
 	if not ZGV.Poi.Waypoints then return end
+
+	Poi.Ready = true
 
 	local mapid,_ = GetCurrentMapAreaID()
 

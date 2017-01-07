@@ -2,7 +2,7 @@
 Slider Widget
 Graphical Slider, like, for Range values.
 -------------------------------------------------------------------------------]]
-local Type, Version = "SliderLabeled-Z", 1
+local Type, Version = "SliderLabeled-Z", 3
 local AceGUI = LibStub and LibStub("AceGUI-3.0-Z", true)
 if not AceGUI or (AceGUI:GetWidgetVersion(Type) or 0) >= Version then return end
 
@@ -89,6 +89,8 @@ local methods = {
 		self:SetValue('a')
 		self.slider:EnableMouseWheel(false)
 
+		self:SetLabelFontObject()
+		self:SetValueFontObject()
 		SL = self
 	end,
 
@@ -175,9 +177,10 @@ local methods = {
 	end,
 
 	["UpdateLabels"] = function (self, width)
-		local margin=20
+		local leftmargin=15
+		local rightmargin=22
 		local width=width or self.slider:GetWidth()
-		local midwidth=width-2*margin
+		local sliderwidth=width-leftmargin-rightmargin
 		for i,label in ipairs(self.labels) do
 			local anchor = "TOP"
 			local space=-2
@@ -191,7 +194,7 @@ local methods = {
 				label:Show()
 			elseif i<#self.values then
 				label:ClearAllPoints()
-				local x = margin + midwidth*(i-1)/(#self.values-1)
+				local x = leftmargin + sliderwidth*(i-1)/(#self.values-1)
 				label:SetPoint("TOP",self.slider,"BOTTOMLEFT",x,space)
 				label:Show()
 			else
