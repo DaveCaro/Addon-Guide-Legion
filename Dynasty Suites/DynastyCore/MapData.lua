@@ -174,7 +174,7 @@ end
 
 function MapData:Translate( map,floor,x,y ) 
 	local d = map and floor and data[map] and data[map][floor];
-	if d then
+	if d and d[2] and d[3] then
 		local mx, my = d[2], d[3];
 		return mx+(d[4]-mx)*x,my+(d[5]-my)*y;
 	end
