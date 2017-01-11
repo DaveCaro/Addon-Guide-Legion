@@ -32,17 +32,17 @@ Added a demon hunter only tag to the Deadlier Warglaives quest step.
 
 Added the following World Quests:
 
-Azsuna :
+### Azsuna :
 
 DANGER: Deepclaw
 
 Flourishing Aethril
 
-Dalaran :
+### Dalaran :
 
 Gemcutter Needed
 
-Highmountain :
+### Highmountain :
 
 Gemcutter Needed
 
@@ -58,17 +58,17 @@ Felwort (41512)
 
 Lively Highmountain Salmon
 
-Suramar :
+### Suramar :
 
 Starlight Rose Cluster
 
 Like the Wind
 
--DUNGEONS : 
+- DUNGEONS : 
 
 Updates to Classic dungeons in response to Blizzard disabling Waypoint Arrows in them. Better pathing directions being added in to navigate players via text.
 
--REPUTATIONS : 
+- REPUTATIONS : 
 
 Fixed the Netherwing Egg Guide so that the waypoints show up correctly.
 
