@@ -60,141 +60,141 @@ ItemScore.rules = {
 		--PLATE is at 1 because DKs start at level 55
 		[1] = { --BLOOD
 			itemtypes={ TH_POLE=1, TH_AXE=1, TH_MACE=1, TH_SWORD=1, PLATE=1 },
-			stats = { ARMOR={weight=12.07}, STAMINA={weight=12.07}, STRENGTH={weight=9.07}, HASTE={weight=7.57}, CRIT={weight=6.07}, MASTERY={weight=4.57}, VERSATILITY={weight=3.07} },
+			stats = { STAMINA={weight=12.06}, STRENGTH={weight=9.06}, HASTE={weight=7.56}, VERSATILITY={weight=6.06}, MASTERY={weight=4.56}, CRIT={weight=3.06} },
 		},
 		[2] = { --FROST
 			itemtypes={ AXE=1, SWORD=1, MACE=1, PLATE=1 },
-			stats = { STRENGTH={weight=9.07}, CRIT={weight=7.57}, HASTE={weight=6.82}, MASTERY={weight=4.57}, VERSATILITY={weight=3.07} },
+			stats = { STRENGTH={weight=9.06}, HASTE={weight=7.57}, CRIT={weight=6.07}, VERSATILITY={weight=4.57}, MASTERY={weight=3.07} },
 		},
 		[3] = { --UNHOLY
 			itemtypes={ TH_POLE=1, TH_AXE=1, TH_MACE=1, TH_SWORD=1, PLATE=1 },
-			stats = { STRENGTH={weight=9.02}, HASTE={weight=7.52}, CRIT={weight=6.02}, MASTERY={weight=4.52}, VERSATILITY={weight=3.02} },
+			stats = { STRENGTH={weight=9.07}, CRIT={weight=7.57}, HASTE={weight=6.07}, MASTERY={weight=4.57}, VERSATILITY={weight=3.07} },
 		}
 	},
 	["DEMONHUNTER"] = {
 		[1] = { -- HAVOC
 			itemtypes={ WARGLAIVE=1, DAGGER=1, FIST=1, AXE=1, MACE=1, SWORD=1, CLOTH=1, LEATHER=1 },
-			stats = {AGILITY={weight=9.03}, CRIT={weight=7.53}, VERSATILITY={weight=6.03}, HASTE={weight=4.53}, MASTERY={weight=3.03} },
+			stats = { CRIT={weight=9.08}, MASTERY={weight=7.58}, AGILITY={weight=6.08}, HASTE={weight=4.58}, VERSATILITY={weight=3.08} },
 		},
 		[2] = { -- VENGEANCE
 			itemtypes={ WARGLAIVE=1,DAGGER=1, FIST=1, AXE=1, MACE=1, SWORD=1, CLOTH=1, LEATHER=1 },
-			stats = {STAMINA={weight=15.06}, ARMOR={weight=12.06}, AGILITY={weight=12.06}, VERSATILITY={weight=9.06}, HASTE={weight=7.56}, MASTERY={weight=6.06}, CRIT={weight=4.56} },
+			stats = {STAMINA={weight=15.07}, AGILITY={weight=12.07}, VERSATILITY={weight=9.07}, MASTERY={weight=7.57}, HASTE={weight=7.57}, CRIT={weight=4.57} },
 		},
 	},
 	["DRUID"] = {
 		[1] = { --BALANCE
 			itemtypes={ DAGGER=1, MACE=1, MISCARM=1, TH_STAFF=1, LEATHER=1 },
-			stats = { INTELLECT={weight=12.07}, HASTE={weight=10.57}, CRIT={weight=9.07}, MASTERY={weight=7.57}, VERSATILITY={weight=7.57} },
+			stats = { HASTE={weight=12.08}, INTELLECT={weight=10.58}, MASTERY={weight=9.08}, CRIT={weight=7.58}, VERSATILITY={weight=7.58} },
 		},
 		[2] = { --FERAL
 			itemtypes={ TH_POLE=1, TH_STAFF=1, TH_MACE=1, LEATHER=1 },
-			stats = { AGILITY={weight=12.08}, CRIT={weight=10.58}, VERSATILITY={weight=9.08}, MASTERY={weight=7.58}, HASTE={weight=6.08} },
+			stats = { AGILITY={weight=12.05}, MASTERY={weight=10.55}, CRIT={weight=9.05}, VERSATILITY={weight=7.55}, HASTE={weight=6.05} },
 		},
 		[3] = { --GUARDIAN
 			itemtypes={ TH_POLE=1,TH_STAFF=1, TH_MACE=1, LEATHER=1 },
-			stats = { STAMINA={weight=18.05}, ARMOR={weight=18.05}, MASTERY={weight=15.05}, HASTE={weight=13.55}, VERSATILITY={weight=12.05}, AGILITY={weight=10.55}, CRIT={weight=9.05} },
+			stats = { STAMINA={weight=18.03}, VERSATILITY={weight=14.28}, MASTERY={weight=13.53}, HASTE={weight=12.03}, AGILITY={weight=10.53}, CRIT={weight=9.03} },
 		},
 		[4] = { --RESTORATION
 			itemtypes={ DAGGER=1,MACE=1,MISCARM=1, TH_STAFF=1, LEATHER=1 },
-			stats = { INTELLECT={weight=9.08}, HASTE={weight=7.58}, CRIT={weight=6.08}, MASTERY={weight=4.58}, VERSATILITY={weight=3.08} },
+			stats = { INTELLECT={weight=9.05}, HASTE={weight=7.55}, CRIT={weight=6.05}, MASTERY={weight=4.55}, VERSATILITY={weight=3.05} },
 		}
 	},
 	["HUNTER"] = {
 		[1] = { -- BEAST MASTERY
 			itemtypes={BOW=1, CROSSBOW=1, GUN=1, MAIL=1 },
-			stats = { AGILITY={weight=9.05}, MASTERY={weight=7.55}, CRIT={weight=6.05}, VERSATILITY={weight=4.55}, HASTE={weight=3.05} },
+			stats = { AGILITY={weight=9.07}, MASTERY={weight=7.57}, HASTE={weight=6.07}, CRIT={weight=4.57}, VERSATILITY={weight=3.07} },
 		},
 		[2] = { -- MARKSMANSHIP
 			itemtypes={BOW=1, CROSSBOW=1, GUN=1, MAIL=1 },
-			stats = { AGILITY={weight=9.03}, MASTERY={weight=7.53}, HASTE={weight=6.03}, VERSATILITY={weight=4.53}, CRIT={weight=3.03} },
+			stats = { MASTERY={weight=9.07}, AGILITY={weight=7.57}, CRIT={weight=6.07}, HASTE={weight=4.57}, VERSATILITY={weight=3.07} },
 		},
 		[3] = { -- SURVIVAL
 			itemtypes={AXE=1, SWORD=1, DAGGER=1, FIST=1, TH_AXE=1, TH_SWORD=1, TH_STAFF=1, TH_POLE=1, MAIL=1 },
-			stats = { AGILITY={weight=9.03}, VERSATILITY={weight=7.53}, CRIT={weight=6.03}, HASTE={weight=4.53}, MASTERY={weight=3.03} },
+			stats = { AGILITY={weight=9.02}, VERSATILITY={weight=7.52}, HASTE={weight=6.02}, CRIT={weight=4.52}, MASTERY={weight=3.02} },
 		},
 	},
 	["MAGE"] = {
 		[1] = { -- Arcane
 			itemtypes={ TH_STAFF=2, WAND=1, MISCARM=1, SWORD=1, DAGGER=1, CLOTH=1 },
-			stats = { INTELLECT={weight=9.08}, MASTERY={weight=7.58}, CRIT={weight=6.08}, VERSATILITY={weight=4.58}, HASTE={weight=3.08} },
+			stats = { INTELLECT={weight=9.02}, MASTERY={weight=7.52}, CRIT={weight=6.02}, VERSATILITY={weight=4.52}, HASTE={weight=3.02} },
 		},
 		[2] = { -- Fire
 			itemtypes={ TH_STAFF=2, WAND=1, MISCARM=1, SWORD=1, DAGGER=1, CLOTH=1 },
-			stats = { INTELLECT={weight=9.03}, CRIT={weight=7.53}, MASTERY={weight=6.03}, HASTE={weight=4.53}, VERSATILITY={weight=3.03} },
+			stats = { INTELLECT={weight=9.06}, CRIT={weight=7.56}, MASTERY={weight=6.06}, HASTE={weight=4.56}, VERSATILITY={weight=3.06} },
 		},
 		[3] = { -- Frost
 			itemtypes={ TH_STAFF=2, WAND=1, MISCARM=1, SWORD=1, DAGGER=1, CLOTH=1 },
-			stats = { INTELLECT={weight=9.05}, HASTE={weight=7.55}, CRIT={weight=6.05}, VERSATILITY={weight=4.55}, MASTERY={weight=3.05} },
+			stats = { INTELLECT={weight=9.01}, HASTE={weight=7.51}, CRIT={weight=6.01}, VERSATILITY={weight=4.51}, MASTERY={weight=3.01} },
 		}
 	},
 	["MONK"] = {
 		[1] = { --BREWMASTER-TANK
 			itemtypes={ TH_POLE=1, TH_STAFF=1, FIST=1, AXE=1, SWORD=1, MACE=1, LEATHER=1 },
-			stats = { STAMINA={weight=12.01}, ARMOR={weight=12.01}, HASTE={weight=9.01}, MASTERY={weight=7.51}, CRIT={weight=7.51}, AGILITY={weight=6.01}, VERSATILITY={weight=4.51} },
+			stats = { STAMINA={weight=15.03}, AGILITY={weight=12.03}, HASTE={weight=9.03}, CRIT={weight=7.53}, MASTERY={weight=6.03}, VERSATILITY={weight=4.53} },
 		},
 		[2] = { --MISTWEAVER-HEAL
 			itemtypes={ TH_POLE=1, TH_STAFF=1, FIST=1, AXE=1, SWORD=1, MACE=1, LEATHER=1 },
-			stats = { INTELLECT={weight=9.06}, CRIT={weight=7.56}, VERSATILITY={weight=6.06}, MASTERY={weight=4.56}, HASTE={weight=3.06} },
+			stats = { INTELLECT={weight=9.02}, VERSATILITY={weight=7.52}, CRIT={weight=6.02}, HASTE={weight=4.52}, MASTERY={weight=3.02} },
 		},
 		[3] = { --WINDWALKER-DPS
 			itemtypes={ FIST=1, AXE=1, SWORD=1, MACE=1, LEATHER=1 },
-			stats = { AGILITY={weight=9.05}, MASTERY={weight=7.55}, CRIT={weight=6.05}, HASTE={weight=6.05}, VERSATILITY={weight=6.05} },
+			stats = { AGILITY={weight=9.03}, MASTERY={weight=7.53}, CRIT={weight=6.03}, VERSATILITY={weight=4.53}, HASTE={weight=3.03} },
 		}
 	},
 	["PALADIN"] = {
 		[1] = { --HOLY
 			itemtypes={ TH_POLE=1, TH_AXE=1, TH_MACE=1, TH_SWORD=1, AXE=1, MACE=1, SWORD=1, MISCARM=1, PLATE=1 },
-			stats = { INTELLECT={weight=9.02}, CRIT={weight=7.52}, MASTERY={weight=6.02}, VERSATILITY={weight=4.52}, HASTE={weight=3.02} },
+			stats = { INTELLECT={weight=9.03}, CRIT={weight=7.53}, VERSATILITY={weight=6.03}, MASTERY={weight=4.53}, HASTE={weight=3.03} },
 		},
 		[2] = { --PROTECTION
 			itemtypes={ TH_POLE=1, TH_AXE=1, TH_MACE=1, TH_SWORD=1, AXE=1, MACE=1, SWORD=1, SHIELD=1, PLATE=1 },
-			stats = { STAMINA={weight=12.07}, ARMOR={weight=12.07}, VERSATILITY={weight=9.07}, HASTE={weight=7.57}, MASTERY={weight=6.07}, CRIT={weight=4.57}, STRENGTH={weight=3.07} },
+			stats = { STAMINA={weight=15.08}, STRENGTH={weight=12.08}, HASTE={weight=9.08}, VERSATILITY={weight=7.58}, MASTERY={weight=6.08}, CRIT={weight=4.58} },
 		},
 		[3] = { --RETRIBUTION
 			itemtypes={ TH_POLE=1, TH_AXE=1, TH_MACE=1, TH_SWORD=1, PLATE=1 },
-			stats = { STRENGTH={weight=9.08}, HASTE={weight=7.58}, CRIT={weight=6.08}, MASTERY={weight=4.58}, VERSATILITY={weight=3.08} },
+			stats = { STRENGTH={weight=9.03}, HASTE={weight=7.53}, CRIT={weight=6.03}, VERSATILITY={weight=6.03}, MASTERY={weight=4.53}  },
 		}
 	},
 	["PRIEST"] = {
 		[1] = { -- DISCIPLINE
 			itemtypes={ DAGGER=1, MACE=1, TH_STAFF=2, WAND=1, MISCARM=1, CLOTH=1 },
-			stats = {  INTELLECT={weight=9.02}, HASTE={weight=7.52}, CRIT={weight=6.02}, MASTERY={weight=4.52}, VERSATILITY={weight=3.02} },
+			stats = {  INTELLECT={weight=9.03}, HASTE={weight=7.53}, CRIT={weight=6.03}, MASTERY={weight=4.53}, VERSATILITY={weight=3.03} },
 		},
 		[2] = { -- HOLY
 			itemtypes={ DAGGER=1, MACE=1, TH_STAFF=2, WAND=1, MISCARM=1, CLOTH=1 },
-			stats = { INTELLECT={weight=9.07}, MASTERY={weight=7.57}, CRIT={weight=6.07}, HASTE={weight=4.57}, VERSATILITY={weight=3.07} },
+			stats = { INTELLECT={weight=9.05}, MASTERY={weight=7.55}, CRIT={weight=6.05}, HASTE={weight=4.55}, VERSATILITY={weight=3.05} },
 		},
 		[3] = { --SHADOW
 			itemtypes={ DAGGER=1, MACE=1, TH_STAFF=2, WAND=1, MISCARM=1, CLOTH=1 },
-			stats = { INTELLECT={weight=9.02}, HASTE={weight=7.52}, CRIT={weight=6.02}, VERSATILITY={weight=4.52}, MASTERY={weight=3.02} },
+			stats = { INTELLECT={weight=9.06}, CRIT={weight=7.56}, HASTE={weight=6.06}, MASTERY={weight=4.56}, VERSATILITY={weight=3.06} },
 		}
 	},
 	["ROGUE"] = {
 		[1] = { --ASSASSINATION
 			itemtypes={ DAGGER=2,LEATHER=1 },
-			stats = { AGILITY={weight=9.06}, VERSATILITY={weight=7.56}, CRIT={weight=6.06}, MASTERY={weight=4.56}, HASTE={weight=3.06} },
+			stats = { AGILITY={weight=9.01}, MASTERY={weight=7.51}, CRIT={weight=6.01}, VERSATILITY={weight=4.51}, HASTE={weight=3.01} },
 		},
-		[2] = { --COMBAT
+		[2] = { --OUTLAW
 			itemtypes={ DAGGER=2,FIST=2,AXE=2,MACE=2,SWORD=2, LEATHER=1 },
-			stats = { AGILITY={weight=9.01}, VERSATILITY={weight=7.51}, HASTE={weight=6.01}, MASTERY={weight=4.51}, CRIT={weight=3.01} },
+			stats = { AGILITY={weight=9.07}, VERSATILITY={weight=7.57}, CRIT={weight=6.07}, MASTERY={weight=4.57}, HASTE={weight=3.07} },
 		},
 		[3] = { --SUBTLETY
 			itemtypes={ DAGGER=2,FIST=2,AXE=2,MACE=2,SWORD=2, LEATHER=1 },
-			stats = { AGILITY={weight=9.01}, MASTERY={weight=7.51}, VERSATILITY={weight=6.01}, CRIT={weight=4.51}, HASTE={weight=3.01} },
+			stats = { AGILITY={weight=9.05}, MASTERY={weight=7.55}, VERSATILITY={weight=6.05}, CRIT={weight=4.55}, HASTE={weight=3.05} },
 		}
 	},
 	["SHAMAN"] = {
 		[1] = { -- ELEMENTAL
 			itemtypes={ DAGGER=1, FIST=1, AXE=1, MACE=1, TH_STAFF=1, MISCARM=1, SHIELD=1, LEATHER=1, MAIL=1 },
-			stats = { INTELLECT={weight=9.02}, CRIT={weight=7.52}, HASTE={weight=6.02}, VERSATILITY={weight=4.52}, MASTERY={weight=3.02} },
+			stats = { INTELLECT={weight=9.02}, MASTERY={weight=7.52}, CRIT={weight=6.02}, HASTE={weight=4.52}, VERSATILITY={weight=3.02} },
 		},
 		[2] = { -- ENHANCEMENT:
 			itemtypes={ DAGGER=2, FIST=2, AXE=2, MACE=2, MISCARM=1, LEATHER=1, MAIL=1 },
-			stats = { AGILITY={weight=9.03}, HASTE={weight=7.53}, MASTERY={weight=6.03}, CRIT={weight=4.53}, VERSATILITY={weight=3.03} },
+			stats = { AGILITY={weight=9.05}, MASTERY={weight=7.55}, HASTE={weight=6.05}, VERSATILITY={weight=4.55}, CRIT={weight=3.05} },
 		},
 		[3] = { -- RESTORATION
 			itemtypes={ DAGGER=1, FIST=1, AXE=1, MACE=1, TH_STAFF=1, MISCARM=1, SHIELD=1, LEATHER=1, MAIL=1 },
-			stats = { INTELLECT={weight=9.04}, MASTERY={weight=7.54}, CRIT={weight=6.04}, HASTE={weight=4.54}, VERSATILITY={weight=3.04} },
+			stats = { INTELLECT={weight=9.01}, MASTERY={weight=7.51}, CRIT={weight=6.01}, HASTE={weight=4.51}, VERSATILITY={weight=3.01} },
 		}
 	},
 	["WARLOCK"] = {
@@ -204,25 +204,25 @@ ItemScore.rules = {
 		},
 		[2] = { --DEMONOLOGY
 			itemtypes={ SWORD=1, DAGGER=1, TH_STAFF=1, WAND=1, MISCARM=1, CLOTH=1 },
-			stats = { INTELLECT={weight=9.03}, HASTE={weight=7.53}, CRIT={weight=6.03}, MASTERY={weight=6.03},  VERSATILITY={weight=3.03} },
+			stats = { INTELLECT={weight=9.08}, HASTE={weight=7.58}, CRIT={weight=6.08}, MASTERY={weight=4.58},  VERSATILITY={weight=3.08} },
 		},
 		[3] = { --DESTRUCTION
 			itemtypes={ SWORD=1, DAGGER=1, TH_STAFF=1, WAND=1, MISCARM=1, CLOTH=1 },
-			stats = { INTELLECT={weight=9.02}, HASTE={weight=7.52}, CRIT={weight=6.02}, VERSATILITY={weight=4.52}, MASTERY={weight=3.02} },
+			stats = { INTELLECT={weight=9.06}, HASTE={weight=7.56}, CRIT={weight=6.06}, VERSATILITY={weight=4.56}, MASTERY={weight=3.06} },
 		}
 	},
 	["WARRIOR"] = {
 		[1] = { --ARMS
 			itemtypes={ TH_POLE=1, TH_AXE=1, TH_MACE=1, TH_SWORD=1, PLATE=1 },
-			stats = { STRENGTH={weight=9.05}, HASTE={weight=7.55}, MASTERY={weight=6.05}, VERSATILITY={weight=4.55}, CRIT={weight=3.05} },
+			stats = { MASTERY={weight=9.03}, HASTE={weight=7.53}, STRENGTH={weight=6.03}, VERSATILITY={weight=4.53}, CRIT={weight=3.03} },
 		},
 		[2] = { --FURY
 			itemtypes={ TH_AXE=10, TH_MACE=10, TH_SWORD=10, DAGGER=1, FIST=1, AXE=1, MACE=1, SWORD=1, PLATE=1 },  -- duals...
-			stats = { STRENGTH={weight=9.07}, HASTE={weight=7.57}, CRIT={weight=6.07}, MASTERY={weight=4.57}, VERSATILITY={weight=3.07} },
+			stats = { HASTE={weight=9.06}, MASTERY={weight=7.56}, STRENGTH={weight=6.06}, VERSATILITY={weight=4.56}, CRIT={weight=3.06} },
 		},
 		[3] = { --PROT
 			itemtypes={ DAGGER=1, FIST=1, AXE=1, MACE=1, SWORD=1, SHIELD=1, PLATE=1, SHIELD=1 },
-			stats = { STAMINA={weight=12.05}, ARMOR={weight=12.05}, HASTE={weight=9.05}, MASTERY={weight=7.55}, VERSATILITY={weight=6.05}, STRENGTH={weight=4.55}, CRIT={weight=3.05} },
+			stats = { STAMINA={weight=12.01}, STRENGTH={weight=9.01}, HASTE={weight=7.51}, MASTERY={weight=6.01}, VERSATILITY={weight=4.51}, CRIT={weight=3.01} },
 		}
 	},
 }

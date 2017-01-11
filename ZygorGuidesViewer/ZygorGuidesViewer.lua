@@ -30,7 +30,7 @@ ZGV.Vars={}
 
 --if addonName:find("DEV") then ZGV.DEV=true end
 if addonName:find("BETA") then ZGV.BETA=true end
-if addonName:find("BETA") then ZGV.DEV=true end
+--if addonName:find("BETA") then ZGV.DEV=true end
 
 -- Time to add some testing. ~~ Jeremiah
 ZGV.TestFramework = {}

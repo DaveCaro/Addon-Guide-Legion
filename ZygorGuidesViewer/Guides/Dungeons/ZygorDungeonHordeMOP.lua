@@ -3982,9 +3982,8 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Hellfire Citadel: Hellfire Ramparts dungeon.",
 },[[
 step
-label	"start"
-Press _I_ and queue for Hellfire Ramparts or enter the dungeon with your group |goto Hellfire Ramparts/1 50.1,70.4 |c |or
-|confirm |or
+label "start"
+Press _I_ and queue for Hellfire Ramparts or enter the dungeon with your group |goto Hellfire Ramparts/1 50.1,70.4 |c
 step
 talk Advance Scout Chadwick##54603
 accept War on the Ramparts##29528 |goto Hellfire Ramparts,48.5,68.1
@@ -3998,7 +3997,9 @@ path follow smart; loop off; ants curved; dist 15
 path	47.0,64.9	45.5,55.3	51.7,46.9
 path	59.5,48.5	65.6,55.4	72.0,52.4
 path	75.9,43.7
-Follow the path |goto Hellfire Ramparts/1 75.9,43.7 |c |noway
+Follow the path |goto Hellfire Ramparts/1 75.9,43.7
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Hellfire Watcher##17309
 |tip Kill the Hellfire Watchers first. Interrupt their Heal spell.
@@ -4014,7 +4015,9 @@ path	69.7,41.7	68.4,48.1	65.1,45.2
 path	59.9,45.9	56.0,52.6	57.2,57.6
 path	54.3,61.2	51.5,56.9	47.0,43.7
 path	43.3,31.9
-Follow the path |goto Hellfire Ramparts/1 43.3,31.9 < 7 |noway |c
+Follow the path |goto Hellfire Ramparts/1 43.3,31.9 < 7
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Omor the Unscarred##17308
 |tip Treacherous Aura will do shadow damage to anyone within 15 yards every second. Periodically, Omor will summon a Fiendish Hound.
@@ -4031,14 +4034,16 @@ map Hellfire Ramparts/1
 path follow smart; loop off; ants curved; dist 15
 path	40.9,25.0	45.7,39.5	51.9,56.4
 path	44.0,68.2
-Follow the path |goto Hellfire Ramparts/1 44.0,68.2 < 8 |noway |c
+Follow the path |goto Hellfire Ramparts/1 44.0,68.2 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Vazruden the Herald##17537
 |tip Players targeted by Vazruden's Mark should keep moving to avoid being hit by fireballs.
 kill Nazan##17536
 |tip When Vazruden dies, Nazan lands and attacks. Avoid standing in front of Nazan or you will be hit by Cone of Fire.
 Loot Nazan's Head |q 29528/2 |goto 36.2,79.3 |only if havequest(29528)
-scenariogoal 24933 |goto 36.2,79.3
+Defeat Nazan |scenariogoal 1/34435 |goto 36.2,79.3
 step
 click Reinforced Fel Iron Chest##5744 |goto 31.3,86.4
 |tip Loot your items for clearing this dungeon.
@@ -4060,9 +4065,8 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Hellfire Citadel dungeon.",
 },[[
 step
-label	"start"
-Press _I_ and queue for The Blood Furnace or enter the dungeon with your group |goto The Blood Furnace/1 47.8,90.6 |c |or
-|confirm |or
+label "start"
+Press _I_ and queue for The Blood Furnace or enter the dungeon with your group |goto The Blood Furnace/1 47.8,90.6 |c
 step
 talk Caza'rez##54636
 accept Make Them Bleed##29535 |goto The Blood Furnace 51.4,90.0
@@ -4076,8 +4080,10 @@ path follow smart; loop off; ants curved; dist 15
 path	52.0,90.0	58.2,89.5	58.1,76.6
 path	58.1,66.4	58.1,56.1	53.1,53.0
 path	49.7,46.8	47.3,41.2	45.0,41.2
-Follow the path |goto The Blood Furnace/1 45.0,41.2 < 6 |noway |c
+Follow the path |goto The Blood Furnace/1 45.0,41.2 < 6
 |tip Be wary of stealthed Laughing Skull Rogues
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill The Maker##17381
 _Domination_
@@ -4091,8 +4097,10 @@ map The Blood Furnace/1
 path follow smart; loop off; ants curved; dist 15
 path	35.8,41.3	31.7,42.1	30.8,30.6
 path	31.9,21.1	35.5,22.0
-Follow the path |goto The Blood Furnace/1 35.5,22.0 < 5 |noway |c
+Follow the path |goto The Blood Furnace/1 35.5,22.0 < 5
 |tip Be wary of stealthed Laughing Skull Rogues
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 click Cell Door Lever##6899
 |tip This will start the boss fight. You will have 4 cell doors open and have to fight Orcs until all 4 waves are complete.
@@ -4105,9 +4113,11 @@ path follow smart; loop off; ants curved; dist 15
 path	44.7,22.0	58.1,21.4	58.6,27.5
 path	62.6,29.0	65.8,33.2	67.8,41.0
 path	65.4,41.2
-Follow the path |goto The Blood Furnace/1 65.4,41.2 < 5 |noway |c
+Follow the path |goto The Blood Furnace/1 65.4,41.2 < 5
 |tip Be wary of stealthed Laughing Skull Rogues
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 Investigate The Blood Furnace |q 29536/1 |only if havequest(29536)
+confirm
 step
 kill Shadowmoon Channeler##17653
 |tip After the Channelers die, Keli'dan will activate.
@@ -4124,8 +4134,9 @@ map The Blood Furnace/1
 path follow smart; loop off; ants curved; dist 15
 path	62.3,47.2	63.4,63.4	63.5,78.4
 path	62.8,90.6	55.5,89.7
-Follow the path |goto The Blood Furnace/1 55.5,89.7 < 8 |noway |c
-|tip Be wary of stealthed Laughing Skull Rogues
+Follow the path |goto The Blood Furnace/1 55.5,89.7 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 only if not completedq(29535) or not completedq(29536) or not completedq(29537)
 step
 talk Caza'rez##54636
@@ -4143,9 +4154,8 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Coilfang Reservoir: Slave Pens dungeon.",
 },[[
 step
-label	"start"
-Press _I_ and queue for The Slave Pens or enter the dungeon with your group |goto The Slave Pens/1 20.0,13.4 |c |or
-|confirm |or
+label "start"
+Press _I_ and queue for The Slave Pens or enter the dungeon with your group |goto The Slave Pens/1 20.0,13.4 |c
 step
 talk Watcher Jhang##54667
 accept Lost in Action##29563 |goto The Slave Pens 18.9,11.3
@@ -4162,7 +4172,9 @@ path	16.9,15.1	10.2,29.8	6.3,45.9
 path	8.7,53.2	13.9,51.8	23.8,50.3
 path	33.5,50.7	41.3,52.8	42.4,41.9
 path	40.3,34.8	42.8,21.3
-Follow the path |goto The Slave Pens/1 42.8,21.3 < 6 |noway |c
+Follow the path |goto The Slave Pens/1 42.8,21.3 < 6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Mennu the Betrayer##17941
 |tip Killing the Corrupted Nova Totem is top priority, followed by Mennu's Healing Ward.
@@ -4172,10 +4184,12 @@ map The Slave Pens/1
 path follow smart; loop off; ants curved; dist 15
 path	48.8,23.6	48.8,13.0	45.5,22.1
 path	45.3,35.9	48.8,44.2	48.8,53.8
-Follow the path |goto The Slave Pens/1 48.8,53.8 < 8 |noway |c
+Follow the path |goto The Slave Pens/1 48.8,53.8 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
-Jump down here |goto 52.2,65.4 < 5 |c |or
-|confirm |or
+Jump down here |goto 52.2,65.4 < 5
+confirm
 step
 talk Weeder Greenthumb##17890
 Discover Weeder Greenthumb |q 29563/2 |goto 48.9,83.4
@@ -4185,7 +4199,9 @@ map The Slave Pens/1
 path follow loose; loop off; ants curved; dist 15
 path	50.0,66.6	48.8,71.0	51.3,75.3
 path	55.1,74.2	57.2,61.2	58.9,53.2
-Follow the path |goto The Slave Pens/1 58.9,53.2 < 6 |noway |c
+Follow the path |goto The Slave Pens/1 58.9,53.2 < 6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Rokmar the Crackler##17991
 _Grievous Wound_
@@ -4199,7 +4215,9 @@ map The Slave Pens/1
 path follow smart; loop off; ants curved; dist 15
 path	59.4,48.6	67.5,45.5	74.7,51.0
 path	88.0,47.7	90.5,53.3
-Follow the path |goto The Slave Pens/1 90.5,53.3 < 6 |noway |c
+Follow the path |goto The Slave Pens/1 90.5,53.3 < 6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 talk Naturalist Bite##17893
 Discover Naturalist Bite |q 29563/1 |goto 95.7,66.2
@@ -4218,7 +4236,7 @@ _Poison Bolt Volley_
 _Uppercut_
 |tip This ability deals physical damage and knocked the affected player up in the air.
 Loot The Slave Master's Eye |q 29565/2 |goto The Slave Pens 86.2,67.9 |only if havequest(29565)
-scenariogoal 3240 |goto The Slave Pens 86.2,67.9
+scenariogoal 1/34433 |goto The Slave Pens 86.2,67.9
 step
 map The Slave Pens/1
 path follow smart; loop off; ants curved; dist 15
@@ -4227,7 +4245,8 @@ path	77.0,50.4	67.7,47.7	59.1,49.3
 path	52.3,48.8	45.0,48.1	39.0,54.2
 path	29.3,50.2	17.6,50.8	7.5,52.8
 path	6.9,42.5	11.1,27.2	17.9,12.2
-Follow the path back to the beginning of the dungeon |goto The Slave Pens/1 17.9,12.2 < 10 |noway |c
+Follow the path back to the beginning of the dungeon |goto The Slave Pens/1 17.9,12.2 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 talk Nahuud##54668
 turnin A Brother Betrayed##29564 |goto The Slave Pens 17.9,12.2
 |tip You can also Right Click the dungeon finder icon on your mini map, teleport out of the dungeon, then teleport back in to the entrance.
@@ -4247,9 +4266,8 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Coilfang Reservoir: Underbog dungeon.",
 },[[
 step
-label	"start"
-Press _I_ and queue for the Underbog or enter the dungeon with your group |goto The Underbog/1 29.7,67.9 |c |or
-|confirm |or
+label "start"
+Press _I_ and queue for the Underbog or enter the dungeon with your group |goto The Underbog/1 29.7,67.9 |c
 step
 talk Naturalist Bite##54678
 accept A Necessary Evil##29568 |goto The Underbog 29.5,64.7
@@ -4267,7 +4285,9 @@ path follow smart; loop off; ants curved; dist 15
 path	31.9,62.5	37.0,60.3	44.2,61.4
 path	51.5,69.2	56.9,82.0	59.1,87.8
 path	56.2,89.7
-Follow the path |goto The Underbog/1 56.2,89.7 |noway |c
+Follow the path |goto The Underbog/1 56.2,89.7
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Hungarfen##17770
 |tip Stay away from Underbog Mushrooms. They explode after 20 seconds leaving a nasty DoT.
@@ -4280,15 +4300,20 @@ path follow smart; loop off; ants curved; dist 15
 path	70.3,87.7	70.2,76.5	61.4,68.1
 path	59.8,56.2	70.7,55.9	74.4,43.9
 path	68.5,36.6	69.1,30.7
-Follow the path |goto The Underbog/1 69.1,30.7 |noway |c
+Follow the path |goto The Underbog/1 69.1,30.7
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Ghaz'an##18105
 |tip Stand off to Ghaz'an's sides or you will be hit with Acid Breath or Tail Sweep.
 scenariogoal 24905 |goto The Underbog/1 78.3,28.0
 step
-Jump down in the water here  |goto 78.9,24.5 < 5 |c
+Jump down in the water here  |goto 78.9,24.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
-Swim across the water and jump down here |goto 79.6,15.2 < 5 |c
+Swim across the water and jump down here |goto 79.6,15.2 < 5
+confirm
 step
 talk Earthbinder Rayge##17885
 Discover Earthbinder Rayge |q 29570/1 |goto 67.4,21.3
@@ -4298,7 +4323,9 @@ map The Underbog/1
 path follow smart; loop off; ants curved; dist 15
 path	79.7,11.6	71.6,14.1	62.0,20.0
 path	57.1,26.1	45.9,28.1
-Follow the path |goto The Underbog/1 45.9,28.1 < 8 |noway |c
+Follow the path |goto The Underbog/1 45.9,28.1 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Swamplord Musel'ek##17826, Claw##17827
 |tip Spread out to minimize damage from Volley.
@@ -4314,14 +4341,16 @@ map The Underbog/1
 path follow smart; loop off; ants curved; dist 15
 path	41.5,28.3	40.6,42.5	35.8,43.1
 path	30.8,34.8	26.9,36.1
-Follow the path |goto The Underbog/1 26.9,36.1 < 10 |noway |c
+Follow the path |goto The Underbog/1 26.9,36.1 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill The Black Stalker##17882
 |tip Stay spread out to minimize Chain Lightning damage.
 _Static Charge_
 |tip If you are affected by this debuff, move away from allies or they will take damage too.
 Loot the Black Stalker's Brain |q 29567/1 |goto The Underbog 25.9,45.5 |only if havequest(29567)
-scenariogoal 3243 |goto The Underbog 25.9,45.5
+scenariogoal 1/34432 |goto The Underbog 25.9,45.5
 step "sanguinehibiscus"
 click Sanguine Hibiscus##5031
 |tip These can be found throughout the dungeon.
@@ -4347,9 +4376,8 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Auchindoun: Mana-Tombs dungeon.",
 },[[
 step
-label	"start"
-Press _I_ and queue for the Mana-Tombs or enter the dungeon with your group |goto Mana-Tombs/1 33.5,17.3 |c |or
-|confirm |or
+label "start"
+Press _I_ and queue for the Mana-Tombs or enter the dungeon with your group |goto Mana-Tombs/1 33.5,17.3 |c
 step
 talk Mamdy the "Ologist"##54694
 accept Intriguing Specimens##29574 |goto Mana-Tombs 32.7,19.4
@@ -4371,7 +4399,9 @@ map Mana-Tombs/1
 path follow smart; loop off; ants curved; dist 15
 path	47.0,28.7	55.8,28.8	60.0,33.5
 path	60.7,43.7	60.7,52.3	56.0,65.0
-Follow the path |goto Mana-Tombs/1 56.0,65.0 < 15 |noway |c
+Follow the path |goto Mana-Tombs/1 56.0,65.0 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Tavarok##18343
 _Crystal Prison_
@@ -4386,17 +4416,21 @@ path follow smart; loop off; ants curved; dist 15
 path	60.7,74.9	60.8,83.8	50.0,84.3
 path	39.2,84.3	32.6,84.0	32.6,74.0
 path	32.6,61.2
-Follow the path |goto Mana-Tombs/1 32.6,61.2 < 10 |noway |c
+Follow the path |goto Mana-Tombs/1 32.6,61.2 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Nexus-Prince Shaffar##18344
 Loot Shaffar's Wrappings |q 29575/1 |goto 32.4,50.7 |only if havequest(29575)
-scenariogoal 3241 |goto 32.4,50.7
+scenariogoal 1/34431 |goto 32.4,50.7
 step
 map Mana-Tombs/1
 path follow smart; loop off; ants curved; dist 15
 path	32.5,46.5	32.6,34.6	41.4,34.1
 path	38.6,28.6	33.8,25.2
-Follow the path |goto Mana-Tombs/1 33.8,25.2 < 8 |noway |c
+Follow the path |goto Mana-Tombs/1 33.8,25.2 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 only if not completedq(29573) or not completedq(29575) or not completedq(29574)
 step
 talk Artificer Morphalius##54692
@@ -4417,9 +4451,8 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Auchindoun: Auchenai Crypts dungeon.",
 },[[
 step
-label	"start"
-Press _I_ and queue for the Mana-Tombs or enter the dungeon with your group |goto Auchenai Crypts/1 44.1,75.1 |c |or
-|confirm |or
+label "start"
+Press _I_ and queue for the Mana-Tombs or enter the dungeon with your group |goto Auchenai Crypts/1 44.1,75.1 |c
 step
 talk Draenei Spirit##54725
 accept The Dead Watcher##29590 |goto Auchenai Crypts/1 44.3,72.6
@@ -4431,7 +4464,9 @@ path	44.1,69.5	43.4,54.6	43.5,41.5
 path	44.1,27.6	44.5,17.3	Auchenai Crypts/2 22.4,11.9
 path	Auchenai Crypts/2 22.8,23.3	Auchenai Crypts/2 29.2,22.8
 path	Auchenai Crypts/2 31.6,17.5	Auchenai Crypts/2 41.8,17.6
-Follow the path |goto Auchenai Crypts/2 41.8,17.6 < 6 |noway |c
+Follow the path |goto Auchenai Crypts/2 41.8,17.6 < 6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 talk Tormented Soulpriest##54698
 accept Raging Spirits##29591 |goto Auchenai Crypts/2 51.0,17.9
@@ -4439,8 +4474,10 @@ step
 map Auchenai Crypts/2
 path follow smart; loop off; ants curved; dist 15
 path	46.2,23.0	46.2,41.3	46.2,56.9
-Follow the path |goto Auchenai Crypts/2 46.2,56.9 < 6 |noway |c
-tip Beware of invisible Raging Souls on the bridge.
+Follow the path |goto Auchenai Crypts/2 46.2,56.9 < 6
+|tip Beware of invisible Raging Souls on the bridge.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Shirrak the Dead Watcher##18371
 |tip Casters need to stay at max range to minimize casting speed reduction caused by Inhibit Magic.
@@ -4454,7 +4491,9 @@ path follow smart; loop off; ants curved; dist 15
 path	46.2,77.6	46.9,88.0	52.8,88.0
 path	58.7,85.8	66.3,88.1	73.6,88.0
 path	73.7,78.3
-Follow the path |goto Auchenai Crypts/2 73.7,78.3 < 6 |noway |c
+Follow the path |goto Auchenai Crypts/2 73.7,78.3 < 6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Exarch Maladaar##18373
 _Soul Scream_
@@ -4463,7 +4502,7 @@ _Stolen Soul_
 |tip Stolen Soul makes a copy of a random player, lowering their damage and healing and attacking them for 2 minutes.
 _Summon Avatar_
 |tip This occurs at 25% health. This avatar needs to be picked up and deals heavy physical damage.
-scenariogoal 3244 |goto 74.2,49.9
+scenariogoal 1/34430 |goto 74.2,49.9
 step "Spirits"
 kill 5 Angered Skeleton##18524+ |q 29591/1
 kill 5 Raging Skeleton##18524+ |q 29591/2
@@ -4489,7 +4528,9 @@ path	64.5,87.7	55.8,87.7	46.5,87.7
 path	46.2,71.2	46.2,51.2	46.2,34.7
 path	46.3,25.6	42.1,17.6	30.4,17.6
 path	Auchenai Crypts/1 44.1,26.3	Auchenai Crypts/1 44.1,57.6
-Follow the path to the beginning of the dungeon |goto Auchenai Crypts/1 44.1,57.6 < 30 |noway |c
+Follow the path to the beginning of the dungeon |goto Auchenai Crypts/1 44.1,57.6 < 30
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 only if not completedq(29590) or not completedq(29596)
 step
 talk Draenei Spirit##54725
@@ -4506,30 +4547,34 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Caverns of Time: Escape from Durnholde Keep dungeon.",
 },[[
 step
-label	"start"
-Press _I_ and queue for the Escape from Durnholde Keep or enter the dungeon with your group |goto Old Hillsbrad Foothills/0 23.2,24.8 |c |or
-|confirm |or
+label "start"
+Press _I_ and queue for the Escape from Durnholde Keep or enter the dungeon with your group |goto Old Hillsbrad Foothills/0 23.2,24.8 |c
 step
 map Old Hillsbrad Foothills/0
 path follow smart; loop off; ants curved; dist 15
 path	23.2,24.8	24.0,28.9	26.2,32.2
 path	26.7,38.7	25.8,43.9	27.5,47.0
-Follow the path |goto Old Hillsbrad Foothills/0 27.5,47.0 < 6 |noway |c
+Follow the path |goto Old Hillsbrad Foothills/0 27.5,47.0 < 6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 talk Erozion##18723
 accept Taretha's Diversion##29598 |goto Old Hillsbrad Foothills 28.9,48.3 |only if not completedq(29598)
 collect Pack of Incendiary Bombs##25853 |goto Old Hillsbrad Foothills 28.9,48.3
 step
 talk Brazen##18725 |goto 29.2,47.9
-Tell him: "_I'm ready to go to Durnholde Keep._" |goto 69.3,71.5 < 5 |noway |c
+Tell him: "_I'm ready to go to Durnholde Keep._" |goto 69.3,71.5 < 5 \
+confirm
 step
 map Old Hillsbrad Foothills/0
 path follow smart; loop off; ants curved; dist 15
 path	69.3,71.6	70.4,67.4	72.5,63.3
 path	74.3,63.2	76.3,61.8	78.0,62.2
-Follow the path |goto Old Hillsbrad Foothills/0 78.0,62.2 < 10 |noway |c
+Follow the path |goto Old Hillsbrad Foothills/0 78.0,62.2 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
-click Barrels##334+ |goto 67.9,59.7 < 10 |c |noway
+click Barrels##334+ |goto 67.9,59.7 < 10
 |tip You will need to set all 5 bombs inside the barrels.
 Location of Barrel 1 |goto 77.5,65.7 < 10
 Location of Barrel 2 |goto 76.2,68.1 < 10
@@ -4537,6 +4582,7 @@ Location of Barrel 3 |goto 74.3,68.2 < 10
 Location of Barrel 4 |goto 68.9,62.1 < 10
 Location of Barrel 5 |goto 68.4,59.1 < 10
 Set 5 Internment Lodges on Fire |q 29598/1 |only if havequest(29598)
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm |only if not havequest(29598) or completedq(29598)
 step
 kill Lieutenant Drake##17848
@@ -4548,9 +4594,12 @@ path follow smart; loop off; ants curved; dist 10
 path	75.7,64.5	76.3,63.0	74.5,62.8
 path	73.2,61.3	74.0,59.1	75.0,59.5
 path	74.6,58.4	74.5,57.7
-Follow the path |goto Old Hillsbrad Foothills/0 74.5,57.7 < 5 |noway |c
+Follow the path |goto Old Hillsbrad Foothills/0 74.5,57.7 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
-talk Thrall##17876 |tip He is in the basement.
+talk Thrall##17876
+|tip He is in the basement.
 turnin Taretha's Diversion##29598 |goto 74.5,57.7
 accept Escape from Durnholde##29599 |goto 74.5,57.7
 only if not completedq(29599)
@@ -4581,7 +4630,7 @@ confirm
 step
 kill Epoch Hunter##18096 |goto Old Hillsbrad Foothills/0 50.2,31.5
 |tip Follow Thrall outside and you will have to fight a few waves of dragonkin. The Boss will come down to fight once you have killed enough mobs.
-scenariogoal 3242
+scenariogoal 1/34429
 Fulfill Thrall's Destiny |goto Old Hillsbrad Foothills/0 50.2,31.5 |q 29599/1 |only if havequest(29599)
 |tip You will have to wait a short time for the dialogue to complete
 step
@@ -4670,17 +4719,17 @@ kill Talon King Ikiss##18473
 _Arcane Explosion_
 |tip Just before this is cast, Ikiss will Slow the whole party. Stay close to a pillar. |only if heroic_dung()
 Loot Terokk's Quill |q 29606/2 |goto 32.2,29.5 |only if havequest(29606)
-scenariogoal 3245 |goto 32.2,29.5
+scenariogoal 1/34428 |goto 32.2,29.5
 step "Serpent"
 kill Cobalt Serpent##19428+
 |tip Do this as you run through the next part of the dungeon.
 collect 3 Cobalt Eye |q 29607/1
 only if havequest(29607)
 step
-map Sethekk Halls/1
+map Sethekk Halls/2
 path follow smart; loop off; ants curved; dist 12
-path	Sethekk Halls/2 32.5,27.5	Sethekk Halls/2 40.7,27.5
-path	54.3,27.5	64.3,27.8	72.5,27.9
+path	32.5,27.5	40.7,27.5
+path	Sethekk Halls/1 54.3,27.5	Sethekk Halls/1 64.3,27.8	Sethekk Halls/1 72.5,27.9
 Follow the path back to the quest giver |goto Sethekk Halls/1 72.5,27.9 < 10 |noway |c
 talk Isfar##54840
 turnin Brother Against Brother##29605 |goto 72.2,35.5 |noway
@@ -4706,9 +4755,8 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Auchindoun: Shadow Labyrinth dungeon.",
 },[[
 step
-label	"start"
-Press _I_ and queue for Shadow Labyrinth or enter the dungeon with your group |goto Shadow Labyrinth/1 22.0,12.4 |c |or
-|confirm |or
+label "start"
+Press _I_ and queue for Shadow Labyrinth or enter the dungeon with your group |goto Shadow Labyrinth/1 22.0,12.4 |c
 step
 talk Spy Grik'tha##54891
 accept Find Spy To'gun##29640 |goto Shadow Labyrinth 22.6,12.5
@@ -4723,7 +4771,9 @@ map Shadow Labyrinth/1
 path follow smart; loop off; ants curved; dist 15
 path	21.9,14.9	28.2,20.3	35.4,22.6
 path	38.9,32.6	34.0,39.1
-Follow the path |goto Shadow Labyrinth/1 34.0,39.1 < 10 |noway |c
+Follow the path |goto Shadow Labyrinth/1 34.0,39.1 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 12 Cabal Ritualist##18794+ |q 29645/1 |goto 29.5,39.1
 |tip Kill all the Ritualists in this room to activate the boss.
@@ -4736,6 +4786,7 @@ step
 map Shadow Labyrinth/1
 path follow smart; loop off; ants curved; dist 12
 path	19.2,39.2	14.5,31.4	17.0,22.4
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 talk Spy To'gun##18891
 turnin Find Spy To'gun##29640 |goto 17.0,22.4 |noway
 accept The Soul Devices##29641 |goto 17.0,22.4 |noway
@@ -4745,7 +4796,9 @@ map Shadow Labyrinth/1
 path follow smart; loop off; ants curved; dist 12
 path	16.3,23.5	14.5,31.4	19.2,39.2
 path	26.6,45.6	26.5,51.3
-Follow the path |goto Shadow Labyrinth/1 26.5,51.3 < 10 |noway |c
+Follow the path |goto Shadow Labyrinth/1 26.5,51.3 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 stickystart "souldevice"
 step
 kill Blackheart the Inciter##18667
@@ -4760,7 +4813,9 @@ map Shadow Labyrinth/1
 path follow smart; loop off; ants curved; dist 12
 path	26.5,72.3	27.0,88.1	34.0,88.1
 path	46.0,88.1	53.0,87.9	53.4,78.8
-Follow the path |goto Shadow Labyrinth/1 53.4,78.8 < 10 |noway |c
+Follow the path |goto Shadow Labyrinth/1 53.4,78.8 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Grandmaster Vorpil##18732
 |tip If you do not clear the room first, all the mobs will attack you when you fight the boss.
@@ -4780,7 +4835,9 @@ step
 map Shadow Labyrinth/1
 path follow smart; loop off; ants curved; dist 12
 path	53.3,52.7	53.3,39.2	59.4,39.2
-Follow the path |goto Shadow Labyrinth/1 59.4,39.2 < 10 |noway |c
+Follow the path |goto Shadow Labyrinth/1 59.4,39.2 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Murmur##18708
 |tip If you do not clear the room first, all the mobs will attack you when you fight the boss.
@@ -4788,7 +4845,7 @@ _Murmur's Touch_ |only if heroic_dung()
 |tip This ability will deal damage to nearby party memebers, so stay spread out. |only if heroic_dung()
 _Thundering Storm_
 |tip Thundering Storm will hit all players if they are more than 25 yards away.
-scenariogoal 3246 |goto 80.8,39.1
+scenariogoal 1/34420 |goto 80.8,39.1
 step "souldevice"
 click Soul Device##7010+
 |tip Collect these as you traverse the Shadow Labyrinth.
@@ -4803,7 +4860,8 @@ path	53.3,86.2	46.0,88.1	36.0,87.9
 path	27.8,87.9	26.6,68.3	26.6,45.3
 path	34.4,39.2	38.7,30.7	34.1,22.3
 path	23.3,17.8	22.0,13.9
-Follow the path back to the start of the dungeon |goto Shadow Labyrinth/1 22.0,13.9 < 40 |noway |c
+Follow the path back to the start of the dungeon |goto Shadow Labyrinth/1 22.0,13.9 < 40
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 |tip You can Right Click the dungeon finder icon on your mini map, teleport out of the dungeon, then teleport back in to the entrance.
 talk Field Commander Mahfuun##54890
 turnin Into the Heart of the Labyrinth##29644 |goto 21.3,13.1 |noway
@@ -4823,7 +4881,7 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Tempest Keep: The Mechanar dungeon.",
 },[[
 step
-label	"start"
+label "start"
 Press _I_ and queue for The Mechanar or enter the dungeon with your group |goto The Mechanar/1 49.4,83.5 |c |or
 |confirm |or
 step
@@ -4842,7 +4900,9 @@ map The Mechanar/1
 path follow strict; loop off; ants curved; dist 10
 path	37.8,51.3	39.1,36.4	42.4,44.2
 path	48.4,46.3
-Follow the path |goto The Mechanar/1 48.4,46.3 < 10 |c |noway
+Follow the path |goto The Mechanar/1 48.4,46.3 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Mechano-Lord Capacitus##19219 |only if not havequest(29657)
 kill Mechano-Lord Capacitus##19219 |q 29657/1 |only if havequest(29657)
@@ -4861,10 +4921,12 @@ map The Mechanar/1
 path follow loose; loop off; ants curved; dist 10
 path	51.4,36.4	47.1,47.2	42.2,43.0
 path	38.7,27.9
-Follow the path to the Cash of the Legion |goto The Mechanar/1 38.7,27.9 < 5 |c |noway
+Follow the path to the Cash of the Legion |goto The Mechanar/1 38.7,27.9 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 click Cache of the Legion##7216 |goto 39.4,28.3 < 5 |noway
 |tip Loot the items inside.
 collect Blinding Fury |q 29659/1 |goto 39.4,28.3 |noway |only if havequest(29659)
+confirm
 step
 Click the Quest Complete Box in the top right corner of your screen
 turnin Lost Treasure##29659
@@ -4872,7 +4934,9 @@ step
 map The Mechanar/1
 path follow loose; loop off; ants curved; dist 10
 path	41.7,21.4	The Mechanar/2 41.7,33.6
-Ride the elevator up to the Calculation Chamber |goto The Mechanar/2 41.7,33.6 |c |noway
+Ride the elevator up to the Calculation Chamber |goto The Mechanar/2 41.7,33.6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Nethermancer Sepethrea##19221
 |tip If you do not clear the room first, all the mobs will attack you when you fight the boss.
@@ -4886,7 +4950,9 @@ path follow loose; loop off; ants curved; dist 10
 path	52.8,36.4	52.6,50.9	49.6,58.1
 path	38.5,60.9
 kill Bloodwarder Centurion##19510+, Sunseeker Astromage##19168+, Tempest-Forge Destroyer##19735+
-Follow the long hallway and kill the mobs that spawn in groups |goto 38.5,60.9 < 10 |c
+Follow the long hallway and kill the mobs that spawn in groups |goto 38.5,60.9 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Pathaleon the Calculator##19220 |only if not havequest(29658)
 kill Pathaleon the Calculator##19220 |q 29658/1 |only if havequest(29658)
@@ -4894,7 +4960,7 @@ _Domination_
 |tip This ability will Mind Control a party member for 5 seconds.
 _Frenzy_
 |tip Frenzy increases Pathaleon's attack speed by 60% and physical damage by 75.
-scenariostage 1 |goto 27.8,61.4
+scenariogoal 1/34425 |goto 27.8,61.4
 step
 Click the Quest Complete Box in the top right corner
 turnin The Calculator##29658 |only if havequest(29658)
@@ -4908,9 +4974,8 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Tempest Keep: Botanica dungeon.",
 },[[
 step
-label	"start"
-Press _I_ and queue for Botanica or enter the dungeon with your group |goto The Botanica/1 89.6,41.1 |c |or
-|confirm |or
+label "start"
+Press _I_ and queue for Botanica or enter the dungeon with your group |goto The Botanica/1 89.6,41.1 |c
 step
 Click the Accept Quest box on the right side of your screen
 accept Saving the Botanica##29660 |goto The Botanica 85.5,47.3
@@ -4919,7 +4984,9 @@ map The Botanica
 path follow loose; loop off
 path	79.3,49.4	53.0,51.0	48.8,56.6
 path	47.8,43.3
-Follow the path through the halls |goto 47.7,43.4 < 5 |noway |c
+Follow the path through the halls |goto 47.7,43.4 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Commander Sarannis##17976 |only if not havequest(29660)
 kill Commander Sarannis##17976 |q 29660/1 |only if havequest(29660)
@@ -4930,7 +4997,9 @@ step
 map The Botanica
 path follow loose; loop off; dist 10
 path	25.6,16.8	20.5,15.2	22.1,19.7
-Follow the path |goto The Botanica 22.1,19.7 < 10 |c |noway
+Follow the path |goto The Botanica 22.1,19.7 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill High Botanist Freywinn##17975 |only if not havequest(29660)
 kill High Botanist Freywinn##17975 |q 29660/2 |only if havequest(29660)
@@ -4941,7 +5010,9 @@ step
 map The Botanica
 path follow loose; loop off; dist 10
 path	19.6,22.5	 20.3,45.2	12.5,46.4
-Follow the path |goto The Botanica 12.5,46.4 < 10 |c |noway
+Follow the path |goto The Botanica 12.5,46.4 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Thorngrin the Tender##17978 |only if not havequest(29660)
 kill Thorngrin the Tender##17978 |q 29660/3 |only if havequest(29660)
@@ -4973,7 +5044,7 @@ kill Warp Splinter##17977 |only if not havequest(29669)
 kill Warp Splinter##17977 |q 29669/1 |only if havequest(29669)
 _Summon Saplings_
 |tip This ability summons 6 Sapling adds. After 25 seconds they will sacrifice themselves and heal Warp Splinter equal to their remaining health. These should be killed off as fast as possible.
-scenariogoal 3251 |goto 34.1,35.8
+scenariogoal 1/34423 |goto 34.1,35.8
 step
 Click the Complete Quest box at the top right of the screen
 turnin A Most Somber Task##29669
@@ -4987,9 +5058,8 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Tempest Keep: The Arcatraz dungeon.",
 },[[
 step
-label	"start"
-Press _I_ and queue for Arcatraz or enter the dungeon with your group |goto The Arcatraz/1 41.3,81.7 |c |or
-|confirm |or
+label "start"
+Press _I_ and queue for Arcatraz or enter the dungeon with your group |goto The Arcatraz/1 41.3,81.7 |c
 step
 Click the Quest Accept Box that pops up
 accept Unbound Darkness##29674 |goto The Arcatraz/1 41.3,73.7
@@ -4998,7 +5068,9 @@ map The Arcatraz/1
 path follow loose; loop off; dist 10
 path	41.2,57.3	41.3,49.1	45.6,39.5
 path	57.3,39.6
-Follow the path |goto The Arcatraz/1 57.3,39.6 < 10 |c |noway
+Follow the path |goto The Arcatraz/1 57.3,39.6 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Zereketh the Unbound##20870 |only if not havequest(29674)
 kill Zereketh the Unbound##20870  |q 29674/1 |only if havequest(29674)
@@ -5015,7 +5087,9 @@ path follow loose; loop off; dist 10
 path	 The Arcatraz/1 63.4,35.4	The Arcatraz/1 66.3,35.4	85.3,38.7
 path	61.4,38.6	41.1,29.3	28.1,40.3
 path	28.3,57.0
-Follow the path up the stairs and through the halls |goto The Arcatraz/2 28.3,57.0 < 10 |c |noway
+Follow the path up the stairs and through the halls |goto The Arcatraz/2 28.3,57.0 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Wrath-Scryer Soccothrates##20886 |only if not havequest(29675)
 kill Wrath-Scryer Soccothrates##20886 |q 29675/1 |only if havequest(29675)
@@ -5040,19 +5114,23 @@ step
 map The Arcatraz/2
 path follow loose; loop off; dist 10
 path	29.9,57.1	38.3,57.2
-Follow the path |goto The Arcatraz/2 38.3,57.2 < 10 |c |noway
+Follow the path |goto The Arcatraz/2 38.3,57.2 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map The Arcatraz/3
 path follow loose; loop off; dist 10
 path	27.4,88.4	30.0,57.4	30.1,40.0
 path	40.1,30.6	51.3,31.6
-Follow the path |goto The Arcatraz/3 51.3,31.6 < 10 |c |noway
+Follow the path |goto The Arcatraz/3 51.3,31.6 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Harbinger Skyriss##20912 |only if not havequest(29681)
 |tip Attack Warden Mellichar to get the fight stared. He will unleash several monsters and then Harbinger Skyriss.
 kill Harbinger Skyriss##20912 |q 29681/1 |only if havequest(29681)
 |tip Attack Warden Mellichar to get the fight stared. He will unleash several monsters and then Harbinger Skyriss.
-scenariogoal 3252 |goto The Arcatraz/3 58.2,30.5
+scenariogoal 1/34427 |goto The Arcatraz/3 58.2,30.5
 modelnpc Warden Mellichar##20904
 step
 Click the Quest Turnin Box that pops up
@@ -5067,7 +5145,9 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Cavern's of Time: Opening the Dark Portal dungeon.",
 },[[
 step
-label	"start"
+label "start"
+Press _I_ and queue for Caverns of Time: Opening the Dark Portal or enter the dungeon with your group |goto The Black Morass/0 51.7,0.5 |c
+step
 talk Sa'at##20201
 accept The Opening of the Dark Portal##10297 |goto The Black Morass 49.3,6.4
 collect Chrono-Beacon##24289
@@ -5078,6 +5158,7 @@ Protect Medivh while he attempts to open the Dark Portal.
 |tip To stop the flow of monsters you have to kill the Rift Lords summmoning the portals.
 kill Rift Lord##17839+
 |tip Every 6 waves a boss will spawn. Simply kill these like you did the Rift Lords.
+confirm
 step
 Wave 6
 kill Chrono Lord Deja##17879
@@ -5096,6 +5177,7 @@ Continue to protect Medivh while he attempts to open the Dark Portal.
 |tip Monsters will appear randomly in the swamp out of yellow portals.
 |tip To stop the flow of monsters you have to kill the Rift Lords summmoning the portals.
 kill Rift Lord##17839+
+confirm
 step
 Wave 12
 kill Temporus##17880
@@ -5112,6 +5194,7 @@ Continue to protect Medivh while he attempts to open the Dark Portal.
 |tip Monsters will appear randomly in the swamp out of yellow portals.
 |tip To stop the flow of monsters you have to kill the Rift Lords summmoning the portals.
 kill Rift Lord##17839+
+confirm
 step
 Wave 18
 kill Aeonus##17881+
@@ -5121,7 +5204,7 @@ _Cleave_:
 |tip Deals damage to anyone in front of Aeonus.
 _Enrage_:
 |tip Increases Aeonus' attack speed. Save a cooldown for this.
-scenariogoal 3247 |goto The Black Morass/0 48.6,73.6
+scenariogoal 1/34422 |goto The Black Morass/0 48.6,73.6
 Open the Dark Portal |q 10297/1 |only if havequest(10297) |goto 48.9,71.8
 step
 talk Sa'at##20201
@@ -5134,9 +5217,8 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Hellfire Citadel: Shattered Halls dungeon.",
 },[[
 step
-label	"start"
-Press _I_ and queue for Shattered Halls or enter the dungeon with your group |goto The Shattered Halls/1 61.1,92.8 |c |or
-|confirm |or
+label "start"
+Press _I_ and queue for Shattered Halls or enter the dungeon with your group |goto The Shattered Halls/1 61.1,92.8 |c
 step
 talk Gunny##54934
 accept One Last Favor##29652 |goto The Shattered Halls 58.6,88.5
@@ -5154,7 +5236,9 @@ path follow smart; loop off; ants curved; dist 15
 path	59.2,88.4	59.0,78.5	55.1,77.2
 path	46.9,77.1	34.6,77.2	34.4,69.7
 path	38.5,69.7	42.8,65.6	37.5,61.7
-Follow the path |goto The Shattered Halls/1 37.5,61.7 < 15 |noway |c
+Follow the path |goto The Shattered Halls/1 37.5,61.7 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Grand Warlock Nethekurse##16807
 _Shadow Cleave_:
@@ -5176,7 +5260,9 @@ map The Shattered Halls/1
 path follow smart; loop off; ants curved; dist 15
 path	34.4,59.0	34.1,52.6	29.6,49.7
 path	29.6,37.0	29.6,18.7
-Follow the path |goto The Shattered Halls/1 29.6,18.7 < 15 |noway |c
+Follow the path |goto The Shattered Halls/1 29.6,18.7 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 only if heroic_dung()
 step
 kill Blood Guard Porung##20923
@@ -5189,7 +5275,9 @@ map The Shattered Halls/1
 path follow smart; loop off; ants curved; dist 15
 path	29.8,14.2	36.5,14.0	45.4,13.9
 path	53.6,14.6	53.9,24.6
-Follow the path |goto The Shattered Halls/1 53.9,24.6 < 15 |noway |c
+Follow the path |goto The Shattered Halls/1 53.9,24.6 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 only if heroic_dung()
 step
 map The Shattered Halls/1
@@ -5198,7 +5286,9 @@ path	34.4,59.0	34.1,52.6	29.6,49.7
 path	29.6,37.0	29.6,18.7	29.8,14.2
 path	36.5,14.0	45.4,13.9	53.6,14.6
 path	53.9,24.6
-Follow the path |goto The Shattered Halls/1 53.9,24.6 < 15 |noway |c
+Follow the path |goto The Shattered Halls/1 53.9,24.6 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 only if not heroic_dung()
 step
 kill Warbringer O'mrogg##16809
@@ -5229,7 +5319,7 @@ _Charge_:
 _The Warchief's Guard_:
 |tip Bladefist summons random reinforcements that need to be picked up by the tank and killed.
 Loot Warchief Kargath's Fist |q 29654/1 |only if havequest(29654)
-scenariogoal 3249 |goto 67.8,55.3
+scenariogoal 1/34421 |goto 67.8,55.3
 step "Kills"
 kill 4 Shattered Hand Legionnaire##16700+ |q 29652/1
 kill 2 Shattered Hand Champion##17671+ |q 29652/3
@@ -5252,9 +5342,8 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Coilfang Reservoir: The Steamvault dungeon.",
 },[[
 step
-label	"start"
-Press _I_ and queue for The Steamvault or enter the dungeon with your group |goto The Steamvault/1 17.6,29.8 |c |or
-|confirm |or
+label "start"
+Press _I_ and queue for The Steamvault or enter the dungeon with your group |goto The Steamvault/1 17.6,29.8 |c
 step
 talk Watcher Jhang##54848
 accept A Proper Fate##29613 |goto The Steamvault 17.9,27.3
@@ -5271,7 +5360,9 @@ path follow smart; loop off; ants curved; dist 15
 path	20.1,28.0	25.2,27.6	30.8,29.4
 path	32.3,39.6	38.4,34.4	44.9,28.4
 path	49.4,23.7
-Follow the path |goto The Steamvault/1 49.4,23.7 < 15 |noway |c
+Follow the path |goto The Steamvault/1 49.4,23.7 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Hydromancer Thespia##17797
 _Enveloping Winds_:
@@ -5293,7 +5384,9 @@ path follow smart; loop off; ants curved; dist 15
 path	53.7,17.7	46.7,24.9	42.4,34.0
 path	44.9,40.4	56.0,45.8	50.6,55.1
 path	48.2,61.5	41.1,67.3
-Follow the path |goto The Steamvault/1 41.1,67.3 < 15 |noway |c
+Follow the path |goto The Steamvault/1 41.1,67.3 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Mekgineer Steamrigger##17796
 _Electrified Net_:
@@ -5316,7 +5409,9 @@ map The Steamvault/1
 path follow smart; loop off; ants curved; dist 15
 path	32.9,82.4	39.9,68.4	46.6,66.5
 path	49.5,56.8	56.7,43.5	68.6,43.4
-Follow the path |goto The Steamvault/1 68.6,43.4 < 15 |noway |c
+Follow the path |goto The Steamvault/1 68.6,43.4 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Warlord Kalithresh##17798
 _Naga Distiller_:
@@ -5332,7 +5427,9 @@ path follow smart; loop off; ants curved; dist 15
 path	76.5,43.5	67.1,43.5	48.0,42.6
 path	42.2,32.9	32.4,39.5	28.1,28.4
 path	23.2,28.1
-Follow the path |goto The Steamvault/1 23.2,28.1 < 15 |noway |c
+Follow the path |goto The Steamvault/1 23.2,28.1 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step "Kills"
 kill 3 Bog Overlord##21694+|q 29614/1
 kill 6 Coilfang Leper##21338+ |q 29614/2

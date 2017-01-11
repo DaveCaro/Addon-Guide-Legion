@@ -321,7 +321,7 @@ _Congratulations!_
 You earned the "Broken Isles Explorer" achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\Loremaster of Legion",{
-condition_end="achieved(10790)",
+condition_end="achieved(11157)",
 author="support@zygorguides.com",
 startlevel=100,
 keywords={"Loremaster","Legion"},
@@ -834,6 +834,201 @@ _Congratulations!_
 You earned the "Broken Isles Pathfinder, Part One" achievement.
 ]])
 ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\General\\Legion\\Brokenly Superior",{
+condition_end="achieved(10764)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"World","Quests"},
+description="This guide will walk you through completing the Level 110 Achievement.",
+},[[
+step
+For this, you can run normal dungeons at level 110 to acquire 805 gear
+Press _"I"_ to queue up for a random dungeon
+Alternatively, World quests will eventually reward you with 795+ gear
+Refer to our World Quest Guide if you prefer that route, and search for ones that Reward gear
+The weekly world boss also has a chance for an 860 gearscore piece to drop, regardless of what yours is
+|achieve 10764
+step
+Congratulations, you have earned the Brokenly Superior Achievement!!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\Level 110",{
+condition_end="achieved(10671)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"World","Quests"},
+description="This guide will walk you through completing the Level 110 Achievement.",
+},[[
+step
+To earn this, use our _Legion Intro & Artifacts_ guide to gain access to Legion Questing Content
+Then, refer to the _Azsuna, Val'sharah, Highmountain or Stormheim_ Leveling Guides
+|achieve 10671
+step
+Congratulations, you have earned the Level 110 Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\50 World Quests Completed",{
+condition_end="achieved(11126)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"World","Quests"},
+description="This guide will walk you through completing the 50 World Quests Completed Achievement.",
+},[[
+step
+To earn this, use our _World Quests Unlock Quest Line_ guide to gain access to World Quests
+Then, use the _World Quest_ guide
+|achieve 11126
+step
+Congratulations, you have earned the 50 World Quests Completed Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\200 World Quests Completed",{
+condition_end="achieved(11127)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"World","Quests"},
+description="This guide will walk you through completing the 200 World Quests Completed Achievement.",
+},[[
+step
+To earn this, use our _World Quests Unlock Quest Line_ guide to gain access to World Quests
+Then, use the _World Quest_ guide
+|achieve 11127
+step
+Congratulations, you have earned the 200 World Quests Completed Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\500 World Quests Completed",{
+condition_end="achieved(11128)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"World","Quests"},
+description="This guide will walk you through completing the 500 World Quests Completed Achievement.",
+},[[
+step
+To earn this, use our _World Quests Unlock Quest Line_ guide to gain access to World Quests
+Then, use the _World Quest_ guide
+|achieve 11128
+step
+Congratulations, you have earned the 500 World Quests Completed Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\1000 World Quests Completed",{
+condition_end="achieved(11129)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"World","Quests"},
+description="This guide will walk you through completing the 1000 World Quests Completed Achievement.",
+},[[
+step
+To earn this, use our _World Quests Unlock Quest Line_ guide to gain access to World Quests
+Then, use the _World Quest_ guide
+|achieve 11129
+step
+Congratulations, you have earned the 1000 World Quests Completed Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\2500 World Quests Completed",{
+condition_end="achieved(11130)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"World","Quests"},
+description="This guide will walk you through completing the 2500 World Quests Completed Achievement.",
+},[[
+step
+To earn this, use our _World Quests Unlock Quest Line_ guide to gain access to World Quests
+Then, use the _World Quest_ guide
+|achieve 11130
+step
+Congratulations, you have earned the 2500 World Quests Completed Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\5000 World Quests Completed",{
+condition_end="achieved(11131)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"World","Quests"},
+description="This guide will walk you through completing the 5000 World Quests Completed Achievement.",
+},[[
+step
+To earn this, use our _World Quests Unlock Quest Line_ guide to gain access to World Quests
+Then, use the _World Quest_ guide
+|achieve 11131
+step
+Congratulations, you have earned the 5000 World Quests Completed Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\10,000 World Quests Completed",{
+condition_end="achieved(11132)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"World","Quests"},
+description="This guide will walk you through completing the 10,000 World Quests Completed Achievement.",
+},[[
+step
+To earn this, use our _World Quests Unlock Quest Line_ guide to gain access to World Quests
+Then, use the _World Quest_ guide
+|achieve 11132
+step
+Congratulations, you have earned the 10,000 World Quests Completed Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\Nightfallen But Not Forgotten",{
+condition_end="achieved(10617)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"World","Quests"},
+description="This guide will walk you through earning the Nightfallen But Not Forgotten Achievement.",
+},[[
+step
+To earn this achievement, refer to our _Suramar_ guide
+|achieve 10617
+step
+Congratulations, you have earned the Nightfallen But Not Forgotten Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\No Shellfish Endeavor",{
+condition_end="achieved(11427)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"World","Quests"},
+description="This guide will walk you through completing the No Shellfish Endeavor Achievement.",
+},[[
+step
+To earn this achievement, you will need to complete 3 World quests involving Murky's Egg
+Here is the location, followed by the quest name:
+_Stormheim_ Now That's Just Clawful! |achieve 11427/1
+_Suramar_ Claws for Alarm! |achieve 11427/3
+_Highmountain_ Oh, the Clawdacity! |achieve 11427/2
+If the quests are available, refer to our World Quest guide
+step
+Congratulations, you have earned the No Shellfish Endeavor Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\Leyline Bling",{
+condition_end="achieved(10756)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"World","Quests"},
+description="This guide will walk you through completing the Leyline Bling Achievement.",
+},[[
+step
+To earn this achievement, you will need to activate _8_ Leylines found in Suramar
+To do so, refer to our Suramar Guide
+Leylines Activated:
+Anora Hollow |achieve 10756/1
+Elor'shan |achieve 10756/2
+Kel'balor |achieve 10756/3
+Moonwhisper Gulch |achieve 10756/4
+Falanaar North |achieve 10756/5
+Falanaar South |achieve 10756/6
+Halls of the Eclipse |achieve 10756/7
+Moon Guard |achieve 10756/8
+step
+Congatulations, you have earned the Leyllne Bling Achievement!!!!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\Now You're Thinking With Portals",{
+condition_end="achieved(11125)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"World","Quests"},
+description="This guide will walk you through completing the Now You're Thinking With Portals Achievement.",
+},[[
+step
+To earn this achievement, you will need to activate _9_ portals in Suramar
+To do so, refer to our Suramar Guide
+|achieve 11125
+step
+Congratulations, you have earned the Now You're Thinking With Portals Achievement!
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\What a Ripoff!",{
 condition_end="achieved(10793)",
 author="support@zygorguides.com",
@@ -936,7 +1131,7 @@ step
 Congratulations, you have completed the Azsuna Matata Achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\Ain't No Mountain High Enough",{
-condition_end="achieved(10763)",
+condition_end="achieved(10059)",
 author="support@zygorguides.com",
 startlevel=100,
 endlevel=110,
@@ -957,7 +1152,7 @@ step
 Congratulations, you have completed the Ain't No Mountain High Enough Achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\That's Val'sharah Folks!",{
-condition_end="achieved(10763)",
+condition_end="achieved(10698)",
 author="support@zygorguides.com",
 startlevel=100,
 endlevel=110,
@@ -3229,80 +3424,117 @@ keywords={"Tangerine","Traveler"},
 description="This guide will show you the various locations that you are able to find Pepe wearing Traveler Goggles.",
 },[[
 step
+For this guide, you will need to search various locations around Dalaran to find Pepe
+It may take a moment for it to appear again once you've completed a loop, so try and be patient
+Click here to continue |confirm
+step
+label "Loop"
 Enter the building |goto Dalaran L/10 58.61,51.37 < 10
 click Traveller Pepe
-Find Traveller Pepe |achieve 10770 |goto 59.94,52.65 |next "end"
+Find Traveller Pepe |achieve 10770 |goto 59.94,52.65
 Click here if Traveller Pepe isn't here |confirm
 step
 click Traveller Pepe
 |tip Check around the cart.
-Find Traveller Pepe |achieve 10770 |goto 57.20,52.40 |next "end"
-confirm
+Find Traveller Pepe |achieve 10770 |goto 57.20,52.40
+Click here if Traveller Pepe isn't here |confirm
 step
 Follow the path |goto 56.72,56.80 < 20
 Follow the path |goto 60.82,61.65 < 20
 click Traveller Pepe
-Find Traveller Pepe |achieve 10770 |goto 64.78,54.38 |next "end"
+Find Traveller Pepe |achieve 10770 |goto 64.78,54.38
 Click here if Traveller Pepe isn't here |confirm
 step
 click Traveller Pepe
 |tip Will be sitting on the post if available at this location.
-Find Traveller Pepe|achieve 10770 |goto 59.01,42.39 |next "end"
-confirm
+Find Traveller Pepe |achieve 10770 |goto 59.01,42.39
+Click here if Traveller Pepe isn't here |confirm
 step
-goto 54.56,44.52
-confirm always
+Enter the building |goto 57.17,46.89 < 10
+click Traveller Pepe
+Find Traveller Pepe |achieve 10770 |goto 54.03,45.03
+Click here if Traveller Pepe isn't here |confirm
 step
-goto 48.35,38.72
-confirm always
+Leave the building |goto 57.08,46.80 < 10
+Enter the building |goto 49.89,37.80 < 5
+click Traveller Pepe
+Find Traveller Pepe |achieve 10770 |goto 48.35,38.72
+Click here if Traveller Pepe isn't here |confirm
 step
-goto 48.08,31.72
-confirm always
+Leave the building |goto 49.88,37.71 < 5
+click Traveller Pepe
+Find Traveller Pepe |achieve 10770 |goto 48.08,31.72
+Click here if Traveller Pepe isn't here |confirm
 step
-goto 52.31,17.68
-confirm always
+click Traveller Pepe
+Find Traveller Pepe |achieve 10770 |goto 51.03,15.81
+Click here if Traveller Pepe isn't here |confirm
 step
-goto 45.01,22.00
-confirm always
+click Traveller Pepe
+Find Traveller Pepe |achieve 10770 |goto 45.01,22.00
+Click here if Traveller Pepe isn't here |confirm
 step
-goto 44.86,28.76
-confirm always
+Enter the building |goto 46.56,28.40 < 5
+click Traveller Pepe
+Find Traveller Pepe |achieve 10770 |goto 44.86,28.76
+Click here if Traveller Pepe isn't here |confirm |or
 step
-goto 39.99,27.90
-confirm always
+Leave the building |goto 44.02,29.91 < 5
+click Traveller Pepe
+Find Traveller Pepe |achieve 10770 |goto 39.99,27.90
+Click here if Traveller Pepe isn't here |confirm |or
 step
-goto 34.98,28.01
-confirm always
+Enter the building |goto Dalaran L/10 36.19,29.87 < 5
+click Traveller Pepe
+Find Traveller Pepe |achieve 10770 |goto 34.98,28.01
+Click here if Traveller Pepe isn't here |confirm |or
 step
-goto 32.19,31.22
-confirm always
+Enter the building |goto 36.89,33.30 < 5
+click Traveller Pepe
+Find Traveller Pepe |achieve 10770 |goto 34.08,34.20
+Click here if Traveller Pepe isn't here |confirm |or
 step
-goto 34.08,34.20
-confirm always
+Leave the building |goto 36.72,33.24 < 5
+Enter the building |goto 37.09,36.82 < 5
+click Traveller Pepe
+Find Traveller Pepe |achieve 10770 |goto 36.24,37.58
+Click here if Traveller Pepe isn't here |confirm |or
 step
-goto 36.24,37.58
-confirm always
+Leave the building |goto 37.14,36.82 < 5
+Enter the building |goto 38.90,35.05 < 5
+click Traveller Pepe
+Find Traveller Pepe |achieve 10770 |goto 39.88,35.21
+Click here if Traveller Pepe isn't here |confirm |or
 step
-goto 39.88,35.21
-confirm always
+Leave the building |goto 38.92,35.23 < 5
+Follow the path |goto 39.58,38.51 < 5
+Enter the building |goto 43.36,35.07 < 5
+click Traveller Pepe
+Find Traveller Pepe |achieve 10770 |goto 41.84,34.17
+Click here if Traveller Pepe isn't here |confirm |or
 step
-goto 40.89,33.23
-confirm always
+click Traveller Pepe
+Find Traveller Pepe |achieve 10770 |goto 39.70,42.80
+Click here if Traveller Pepe isn't here |confirm |or
 step
-goto 39.70,42.80
-confirm always
+Follow the path |goto 36.03,42.65
+click Traveller Pepe
+Find Traveller Pepe |achieve 10770 |goto 32.19,31.22
+Click here if Traveller Pepe isn't here |confirm |or
 step
-goto 35.46,49.73
-confirm always
+Follow the path |goto Dalaran L/10 34.33,39.75
+Follow the path up |goto 36.24,49.72
+click Traveller Pepe
+Find Traveller Pepe |achieve 10770 |goto 32.78,45.18
+Click here if Traveller Pepe isn't here |confirm |or
 step
-goto 32.78,45.18
-confirm always
-step
-goto 42.65,57.17
-confirm always
+Follow the path |goto 36.68,50.01 < 10
+click Traveller Pepe
+Find Traveller Pepe |achieve 10770 |goto 42.65,57.17
+Click here if Traveller Pepe isn't here |confirm |next "Loop" |or
 step
 label "end"
-Congratz
+Congratulations, you have earned The Tangerine Traveler Achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Toys\\Legion\\Rocfeather Skyhorn Kite",{
 condition_end="_G.PlayerHasToy(131811)",

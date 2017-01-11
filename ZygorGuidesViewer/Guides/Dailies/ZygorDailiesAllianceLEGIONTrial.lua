@@ -294,6 +294,16 @@ step
 kill Chief Treasurer Jabrill##109677 |q 43121/1 |goto 59.29,77.04
 |next "Court_Of_Farondis_WQ"
 step
+label quest-43175
+Follow the path |goto Azsuna/0 55.85,60.01 < 25 |only if walking
+Drop down |goto 56.09,62.29 < 25 |only if walking
+accept DANGER: Deepclaw##43175 |goto 56.09,62.29
+|tip You will accept this quest automatically.
+step
+kill Deepclaw##109702 |q 43175/1 |goto 56.09,62.29
+|tip Deepclaw is inside the little cave.
+|next "Court_Of_Farondis_WQ"
+step
 label quest-43059
 Follow the path |goto Azsuna/0 63.39,30.66 < 25 |only if walking
 Follow the path |goto 63.83,34.57 < 25 |only if walking
@@ -564,6 +574,16 @@ step
 click Fine Leystone Deposit##195122
 collect Fine Leystone Ore##141225 |q 41437/1 |goto 41.85,34.47
 |tip These are located all around the area.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41289
+Follow the path |goto Azsuna/0 45.43,42.38 < 25 |only if walking
+Follow the path |goto 46.52,40.45 < 25 |only if walking
+accept Flourishing Aethril##41289 |goto 46.69,36.72
+|tip You will accept this quest automatically.
+step
+click Flourishing Aethril##195114
+collect 10 Flourishing Aethril##140947 |q 41289/1 |goto 46.69,36.72
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41455

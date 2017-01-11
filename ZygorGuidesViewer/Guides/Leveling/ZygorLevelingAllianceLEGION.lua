@@ -24180,6 +24180,7 @@ Follow the path down |goto Mardum, the Shattered Abyss/2 68.35,53.61 > 10000 |wa
 talk Allari the Souleater##98648
 |tip She walks around.
 accept Deadlier Warglaives##42732 |goto 59.71,53.12
+|only DemonHunter
 step
 collect 1 Obliterum##124125 |q 42732/1
 |tip Buy these from the Auction House.

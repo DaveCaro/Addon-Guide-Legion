@@ -3918,7 +3918,7 @@ data.basenodes.inns = {
 		{name="Beastwatch",faction="H",npc="Durotan",npcid=74594,x=46.0,y=69.7},
 	},
 	['Nagrand D']={
-		{name="Trading Post",faction="A",npc="Caregiver Felaani",npcid=80006,x=63.6,y=62.5},
+		{name="Telaari Station",faction="A",npc="Caregiver Felaani",npcid=80006,x=63.6,y=62.5},
 		{name="Yrel's Watch",faction="A",npc="Amma Stouthearth",npcid=81249,x=62.2,y=40.0},
 		{name="Wor'var",faction="H",npc="Elathriel Sunstriker",npcid=82345,x=82.6,y=45.4},
 		{name="Riverside Post",faction="H",npc="Mrs. Winterby",npcid=82341,x=48.5,y=47.3},

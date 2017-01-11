@@ -100,6 +100,11 @@ function Poi:RegisterPoints()
 					--]]
 					if step.poipet then Poi.ModelTooltip:SetCreature(step.poipet) end -- request model from server
 
+					if step.poitype=="questobjective" then 
+						-- default quest markers to switch guide to proper step, rather than show poi as sticky
+						step.poiquestmode = step.poiquestmode or "inline"
+					end
+
 					step.stepstart = i
 					step.stepend = i
 					step.ident = j.."_"..i
@@ -122,13 +127,15 @@ function Poi:RegisterPoints()
 end
 
 function Poi:RefreshMapIcons()
+	local cdb = ZGV.db.char
 	for i,point in pairs(ZGV.Pointer.waypoints) do
 		if point.poiNum and point.storedData then
-			local active = ZGV.db.char.ActivatedPois[point.poiNum] and "_on" or ""	
+			local active = (cdb.ActivatedPois[point.poiNum] or cdb.ActivatedInlinePois[point.poiNum]) and "_on" or ""	
 			point:SetIcon(ZGV.Pointer.Icons[(ZGV.Poi.Points[point.poiNum].poitype)..active]) 
 
 			if not Poi:CheckValidity(point.storedData) then
-				ZGV.db.char.ActivatedPois[point.poiNum] = nil
+				cdb.ActivatedPois[point.poiNum] = nil
+				cdb.ActivatedInlinePois[point.poiNum] = nil
 				ZGV.Pointer:RemoveWaypoint(i)
 			end
 		end
@@ -138,22 +145,41 @@ end
 function Poi.Waypoint_OnClick(way,button)
 	if UnitAffectingCombat("player") then return end
 
+	local poi = way.waypoint.storedData
+
 	if button=="LeftButton" then
 		-- deactive all current pois
-		ZGV.db.char.ActivatedPois = {}
+		if poi.poitype=="questobjective" and poi.poiquestmode=="inline" then
+			table.wipe(ZGV.db.char.ActivatedInlinePois)
+		else
+			table.wipe(ZGV.db.char.ActivatedPois)
+		end
+
 		local currentState = way.waypoint.isActivated
 		for i,point in pairs(ZGV.Pointer.pointsets["zgv_poi_"..Poi.DisplayedPoiSet].points) do
 			point.isActivated = false
 		end
 
 		way.waypoint.isActivated = not currentState
-		ZGV.db.char.ActivatedPois[way.waypoint.poiNum]=way.waypoint.isActivated 
-		if way.waypoint.isActivated then
-			ZGV:SetStepFocus(way.waypoint.storedData)
-			way.waypoint:SetIcon(ZGV.Pointer.Icons[way.waypoint.storedData.poitype.."_on"])
-		elseif not way.waypoint.isNear then
-			ZGV.Poi.Points[way.waypoint.poiNum].is_expanded = false
-			way.waypoint:SetIcon(ZGV.Pointer.Icons[way.waypoint.storedData.poitype])
+
+		if poi.poitype=="questobjective" and poi.poiquestmode=="inline" then
+			ZGV.db.char.ActivatedInlinePois[way.waypoint.poiNum]=way.waypoint.isActivated 
+			if way.waypoint.isActivated then
+				ZGV:FocusStep(poi.stepstart)
+				way.waypoint:SetIcon(ZGV.Pointer.Icons.questobjective_on)
+			else
+				ZGV:FocusStep(1)
+				way.waypoint:SetIcon(ZGV.Pointer.Icons.questobjective)
+			end
+		else
+			ZGV.db.char.ActivatedPois[way.waypoint.poiNum]=way.waypoint.isActivated 
+			if way.waypoint.isActivated then
+				ZGV:SetStepFocus(way.waypoint.storedData)
+				way.waypoint:SetIcon(ZGV.Pointer.Icons[way.waypoint.storedData.poitype.."_on"])
+			elseif not way.waypoint.isNear then
+				ZGV.Poi.Points[way.waypoint.poiNum].is_expanded = false
+				way.waypoint:SetIcon(ZGV.Pointer.Icons[way.waypoint.storedData.poitype])
+			end
 		end
 		Poi:RefreshMapIcons()
 		ZGV:UpdateFrame(true)
@@ -735,6 +761,7 @@ end
 
 tinsert(ZGV.startups,{"POI hooks",function(self)
 	ZGV.db.char.ActivatedPois = ZGV.db.char.ActivatedPois or {}
+	ZGV.db.char.ActivatedInlinePois = ZGV.db.char.ActivatedInlinePois or {}
 	ZGV.db.profile.hideguide = ZGV.db.profile.hideguide or {}
 	ZGV:AddMessage("ZYGOR_GUIDES_PARSED",EventHandler)
 	ZGV:AddMessage("ZYGOR_POI_REGISTERED_GUIDE",EventHandler)

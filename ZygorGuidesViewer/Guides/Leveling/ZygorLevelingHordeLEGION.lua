@@ -19034,7 +19034,7 @@ Complete #30# World Quests |q 44680/1
 |only Hunter
 step
 label "Arkhana_Hunter"
-collect 20 Arkhana##124440 |q 42408/1
+collect 20 Arkhana##124440 |q 42408/1 |goto Orgrimmar/1 53.99,73.26
 |tip Buy it from the auction house.
 |tip If you are an Enchanter, you can disenchant Uncommon (green) Legion gear items to get it.
 |only Hunter
@@ -19634,7 +19634,7 @@ Begin a "Throwing SI:7 Off the Trail" Mission
 Click Here After You Start the Mission |confirm |goto 37.46,44.21 |q 42684
 |only Rogue
 step
-collect 20 Aethril##124101 |q 42730/1 |goto Stormwind City/0 61.19,70.99
+collect 20 Aethril##124101 |q 42730/1 |goto Orgrimmar/1 53.99,73.26
 |tip Buy it from the auction house.
 |tip If you have the Herbalism profession, you can gather it in Azsuna.
 |only Rogue
@@ -24132,6 +24132,7 @@ Follow the path down |goto Mardum, the Shattered Abyss/2 68.35,53.61 > 10000 |wa
 talk Allari the Souleater##98648
 |tip She walks around.
 accept Deadlier Warglaives##42732 |goto 59.71,53.12
+|only DemonHunter
 step
 collect 1 Obliterum##124125 |q 42732/1
 |tip Buy these from the Auction House.

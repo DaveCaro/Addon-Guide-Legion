@@ -812,7 +812,7 @@ function GA:Initialize()
 		if specId == 269 then switchId = 270 end
 		if specId == 270 then switchId = 269 end
 
-        local id, name, description, icon, background, role, class = GetSpecializationInfoByID(switchId)
+        local id, name, description, icon, role, class = GetSpecializationInfoByID(switchId)
 
         if (class ~= nil) then
             if GA.classIdentifier2SpecializationsMap[class] == nil then

@@ -215,16 +215,16 @@ Pointer.Icons = {
 	ant_flying = { tex=ZGV.DIR.."\\Skins\\minimaparrow-ant", r=1,   g=0.8, b=0, alpha=0.8, size=30, minisize=20, rotates=false, edgetex=nil, edgesize=1 },
 
 	-- Dynamic values are handled in RefreshDynamicValues()
-	treasure    = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,			coords={0,1/4,0,1/2} },
-	treasure_on = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,			coords={0,1/4,1/2,1} },
-	rare    = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, minimap_alpha=0.5, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,	coords={1/4,2/4,0,1/2} },
-	rare_on = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, minimap_alpha=0.5, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,	coords={1/4,2/4,1/2,1} },
-	battlepet    = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,	coords={2/4,3/4,0,1/2} },
-	battlepet_on = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,	coords={2/4,3/4,1/2,1} },
-	achievement    = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, minimap_alpha=0.5, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,	coords={3/4,1,0,1/2} },
-	achievement_on = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, minimap_alpha=0.5, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,	coords={3/4,1,1/2,1} },
-	--battlepet    = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,	coords={0,1/2,0,1/2} },
-	--battlepet_on = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1, coords={0,1/2,1/2,1} },
+	treasure    = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,				coords={0,   1/8, 0,   1/2} },
+	treasure_on = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,				coords={0,   1/8, 1/2, 1  } },
+	rare    = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, minimap_alpha=0.5, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,		coords={1/8, 2/8, 0,   1/2} },
+	rare_on = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, minimap_alpha=0.5, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,		coords={1/8, 2/8, 1/2, 1  } },
+	battlepet    = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,				coords={2/8, 3/8, 0,   1/2} },
+	battlepet_on = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,				coords={2/8, 3/8, 1/2, 1  } },
+	achievement    = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, minimap_alpha=0.5, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,		coords={3/8, 4/8, 0,   1/2} },
+	achievement_on = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, minimap_alpha=0.5, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,		coords={3/8, 4/8, 1/2, 1  } },
+	questobjective    = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, minimap_alpha=0.5, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,	coords={4/8, 5/8, 0,   1/2} },
+	questobjective_on = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, minimap_alpha=0.5, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,	coords={4/8, 5/8, 1/2, 1  } },
 
 	none = { tex="", alpha=0.0, size=1, minisize=1, rotates=false, edgetex=nil, edgesize=1 },
 

@@ -356,6 +356,16 @@ step
 kill Chief Treasurer Jabrill##109677 |q 43121/1 |goto 59.29,77.04
 |next "Court_Of_Farondis_WQ"
 step
+label quest-43175
+Follow the path |goto Azsuna/0 55.85,60.01 < 25 |only if walking
+Drop down |goto 56.09,62.29 < 25 |only if walking
+accept DANGER: Deepclaw##43175 |goto 56.09,62.29
+|tip You will accept this quest automatically.
+step
+kill Deepclaw##109702 |q 43175/1 |goto 56.09,62.29
+|tip Deepclaw is inside the little cave.
+|next "Court_Of_Farondis_WQ"
+step
 label quest-43059
 Follow the path |goto Azsuna/0 63.39,30.66 < 25 |only if walking
 Follow the path |goto 63.83,34.57 < 25 |only if walking
@@ -626,6 +636,16 @@ step
 click Fine Leystone Deposit##195122
 collect Fine Leystone Ore##141225 |q 41437/1 |goto 41.85,34.47
 |tip These are located all around the area.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41289
+Follow the path |goto Azsuna/0 45.43,42.38 < 25 |only if walking
+Follow the path |goto 46.52,40.45 < 25 |only if walking
+accept Flourishing Aethril##41289 |goto 46.69,36.72
+|tip You will accept this quest automatically.
+step
+click Flourishing Aethril##195114
+collect 10 Flourishing Aethril##140947 |q 41289/1 |goto 46.69,36.72
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41455
@@ -3625,6 +3645,18 @@ kill Felhide Gargantuan##103675
 collect Felhide##124116 |q 41239/1 |goto Highmountain/0 42.39,42.04
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41561
+Follow the path |goto Highmountain/0 49.87,63.55 < 25 |only if walking
+Follow the path |goto 50.85,64.04 < 25 |only if walking
+Follow the path |goto 47.81,68.95 < 25 |only if walking
+Follow the path |goto 49.06,69.30 < 10 |only if walking
+accept Felhide##41561 |goto 47.63,71.78
+|tip You will accept this quest automatically.
+step
+kill Felhide Gargantuan##103675
+Skin the Felhide Gargantuan |q 41561/1 |goto 47.63,71.78
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42086
 Follow the path down |goto Highmountain/0 30.77,39.10 < 30 |only if walking
 Follow the path down |goto 30.86,36.13 < 30 |only if walking
@@ -3644,6 +3676,14 @@ step
 label "Slay_Feltotem_Tribesman"
 Kill enemies around this area
 Slay #12# Feltotem Tribesman |q 42086/4 |goto 30.16,29.27
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41512
+accept Felwort##41512 |goto Highmountain/0 33.11,64.72
+|tip You will accept this quest automatically.
+step
+click Felwort##195114
+Felwort gathered |q 41512/1 |goto 33.11,64.72
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41544
@@ -3808,6 +3848,18 @@ accept Lively Highmountain Salmon##41596 |goto 51.84,64.11
 step
 Fish from Lively Highmountain Salmon Schools |cast Fishing##7620
 collect 10 Lively Highmountain Salmon##134400 |q 41596/1 |goto 51.84,64.11
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41244
+Follow the path |goto Highmountain/0 38.95,38.95 < 25 |only if walking
+Follow the path |goto 40.85,36.38 < 25 |only if walking
+Follow the path |goto 42.56,33.87 < 25 |only if walking
+Follow the path |goto 43.78,29.79 < 25 |only if walking
+accept Lively Highmountain Salmon##41244 |goto 45.44,27.37
+|tip You will accept this quest automatically.
+step
+Fish from Lively Highmountain Salmon Schools |cast Fishing##7620
+collect 10 Lively Highmountain Salmon##134400 |q 41244/1 |goto 45.44,27.37
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41089
@@ -4091,6 +4143,18 @@ click Rocko##98572
 Defeat Rocko |q 41624/1 |goto Highmountain/21 60.35,44.00
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41200
+Follow the path |goto Highmountain/0 59.44,68.29 < 25 |only if walking
+Follow the path |goto 58.25,70.96 < 25 |only if walking
+Follow the path |goto 57.99,73.74 < 25 |only if walking
+Follow the path |goto 56.82,71.66 < 25 |only if walking
+accept Rough Leystone Outcropping##41200 |goto 56.09,69.25
+|tip You will accept this quest automatically.
+step
+click Massive Leystone Deposit##195122
+collect 1 Rough Leystone Ore##141219 |q 41200/1 |goto 56.09,69.25
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41691
 Follow the path down |goto Highmountain/0 38.86,39.39 < 30 |only if walking
 Follow the path |goto 39.26,37.96 < 30 |only if walking
@@ -4109,6 +4173,15 @@ kill 6 Witchwood Hag##95310 |q 41691/1 |goto 40.90,32.08
 step
 label "Bewitched_Bears"
 kill 4 Bewitched Bear##95270 |q 41691/3 |goto 40.90,32.08
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41234
+accept Shaggy Saber Hide##41234 |goto Highmountain/0 40.65,50.10
+|tip You will accept this quest automatically.
+step
+kill Pinerock Prowler##94149+, Pinerock Stalker##99481+
+|tip Skin the corpses.
+collect 12 Shaggy Saber Hide##134130 |q 41234/1 |goto 40.65,50.10
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41692
@@ -4721,6 +4794,14 @@ accept Wildlife Protection Force##41766 |goto Highmountain/0 56.40,53.06
 step
 click Hungry Icefang##104782
 Defeat the Hungry Icefang |q 41766/1 |goto Highmountain/0 56.30,53.18
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41525
+accept Wispy Foxflower##41525
+|tip You will accept this quest automatically.
+step
+click Wispy Foxflower##0
+collect 10 Wispy Foxflower##140987 |q 41525/1
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41677
@@ -5492,7 +5573,7 @@ Follow the path |goto Stormheim/0 44.80,56.52 < 30 |only if walking
 Follow the path |goto 43.85,58.14 < 30 |only if walking
 Follow the path |goto 41.49,53.02 < 30 |only if walking
 Follow the path |goto 39.50,55.22 < 20 |only if walking
-accept Like the Wind##45032
+accept Like the Wind##45049 |goto 38.14,56.72
 |tip You will accept this quest automatically.
 step
 Goal Reached |q 45049/1 |goto 40.61,62.29
@@ -6983,6 +7064,22 @@ Kill enemies around this area
 Defend the Arcwine Distribution |q 44744/1 |goto 49.27,71.30
 |next "Court_Of_Farondis_WQ"
 step
+label quest-45032
+Follow the path |goto Suramar/0 30.97,9.45 < 25 |only if walking
+Follow the path |goto 32.75,9.19 < 10 |only if walking
+Follow the path |goto 36.73,12.62 < 25 |only if walking
+Follow the path |goto 40.40,16.58 < 25 |only if walking
+accept Like the Wind##45032 |goto 41.21,21.40
+|tip You will accept this quest automatically.
+step
+Goal Reached |q 45032/1 |goto 40.87,21.38
+|tip To reach the goal, you must use the crystals to increase your vertical elevation.
+|tip Purple orbs will instantly reset your dash cooldown.
+|tip Avoid orange orbs, as they will stun you.
+|tip Aim for the glowing blue platforms. These act as checkpoints.
+|tip Dropping a long distance without dashing will cause you to fail.
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41279
 Follow the path |goto Suramar/0 34.83,50.52 < 25 |only if walking
 Follow the path |goto 36.78,52.83 < 20 |only if walking
@@ -7222,6 +7319,18 @@ accept Slab of Bacon##41262 |goto 75.89,50.12
 step
 kill Baconlisk##103787
 collect 1 Thick Slab of Bacon##135511 |q 41262/1 |goto 75.89,50.12
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41301
+Follow the path |goto Suramar/0 33.18,47.79 < 25 |only if walking
+Follow the path |goto 32.53,46.40 < 25 |only if walking
+Follow the path |goto 35.14,43.33 < 25 |only if walking
+Follow the path |goto 34.45,39.31 < 25 |only if walking
+accept Starlight Rose Cluster##41301 |goto 35.59,38.35
+|tip You will accept this quest automatically.
+step
+click Starlight Rose Cluster##0
+Starlight Rose Cluster gathered |q 41301/1 |goto 35.59,38.35
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43959
@@ -7823,6 +7932,16 @@ step
 talk Tiffany Nelson##97804
 Tell her "Let's do battle!"
 Defeat Tiffany Nelson |q 40277/1 |goto Dalaran L/10 28.28,24.04
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46135
+accept Gemcutter Needed##46135 |goto Dalaran L/10 40.27,34.68
+|tip You will accept this quest automatically.
+step
+click Tiffany's Carving Machine##0
+|tip Use the abilities on your action bar to rotate the gem.
+|tip Right-click the jagged shards to cut the gem.
+Create a _red_ gem |q 46135/1 |goto 40.06,34.37
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41668
