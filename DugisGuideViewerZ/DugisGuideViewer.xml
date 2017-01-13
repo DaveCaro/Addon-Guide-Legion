@@ -1709,6 +1709,7 @@
 							   </Anchors>
 						   </Button>	
                             <Button name="$parentSelection15" inherits="DugisSelectionTemplate" id="15" parentKey="selection15" >
+                            <Size x="160" y="32" />
 							   <Anchors>
 								   <Anchor point="TOPLEFT" relativeTo="$parentSelection12" relativePoint="BOTTOMLEFT">
 										<Offset>

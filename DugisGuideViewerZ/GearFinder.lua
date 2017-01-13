@@ -6,7 +6,7 @@ local CALCULATIONS_TIME_FOR_EMPTY_CACHE = 5  --Used in case new character was cr
 --higher value => longer processing =>  higher FPS
 local CALCULATIONS_TIME_FOR_FILLED_CACHE = 1  --For the same player level
 
---To check the performance on level change you can  run: /run DugisCharacterCache.CalculateScore_cache_v10 = {}    and then   /reload
+--To check the performance on level change you can  run: /run DugisCharacterCache.CalculateScore_cache_v11 = {}    and then   /reload
 
 local gearFinderDebug = false
 local listItemsLimit = 6
@@ -133,7 +133,7 @@ function GearFinderModule:Unload()
         wipe(DGF.retryCounter)
         wipe(DGF.GeadAdvisorItemIterator_cache)
         wipe(DGF.itemsCache)
-        wipe(DugisCharacterCache.CalculateScore_cache_v10)
+        wipe(DugisCharacterCache.CalculateScore_cache_v11)
         wipe(DGF.IsQuestCompleted_cache)
 
         DGF.gearId2GearInfos_map = {}
@@ -149,7 +149,7 @@ function GearFinderModule:Unload()
         DGF.GeadAdvisorItemIterator_cache = {}
         DGF.itemsCache = {}
         DGF.IsQuestCompleted_cache = {}
-        DugisCharacterCache.CalculateScore_cache_v10 = {}
+        DugisCharacterCache.CalculateScore_cache_v11 = {}
         CacheItemsForGearFinder_invoked = false
 
         collectgarbage("step", 100000)
@@ -570,7 +570,11 @@ function DGF:GetCreateGuideBox(parent, x, y, layout, index, reuseItems)
                 end
 
                 if guideTitleFormatted then
-                    GameTooltip:AddLine("Found In: |cFFFFFFFF"..guideTitleFormatted.."|r" , 1, 0.8, 0.0)
+                    if gearInfo.reputationId then
+                        GameTooltip:AddLine("Reputation With: |cFFFFFFFF"..guideTitleFormatted.."|r" , 1, 0.8, 0.0)
+                    else
+                        GameTooltip:AddLine("Found In: |cFFFFFFFF"..guideTitleFormatted.."|r" , 1, 0.8, 0.0)
+                    end
                 end
 
                 if gearInfo.bossId then
@@ -1234,6 +1238,11 @@ end
 
 function DGF:CanBeGearObtaind(gearId)
     if not DGF.gearId2DroppedByBoss_map[gearId] then
+    
+        if DugisGearFinder.gearId2LevelRange[gearId] then
+            return true
+        end
+    
         --Checking if all quests are not completed
         local allRelatedQuests = DGF.gearId2Quests_map[gearId]
         local allQuestsCompleted = true
@@ -1719,9 +1728,9 @@ function DGF:GetSuggesedGearBySlot(invslot, yields, slotButton)
             end
 
             --Filtering by option "Search for quest gears"
-            local passedByQuestsGears = itemId ~= nil and DGF.gearId2Quests_map[itemId] and (DGF.gearId2Quests_map == nil or (
+            local passedByQuestsGears = itemId ~= nil and ((DGF.gearId2Quests_map[itemId] and (DGF.gearId2Quests_map == nil or (
             DGV:UserSetting(DGV_GEARS_FROM_QUEST_GUIDES) == true
-            or not DGF.gearId2Quests_map[itemId].amountMoreThan0))  
+            or not DGF.gearId2Quests_map[itemId].amountMoreThan0)) ) or DGF.gearId2isReputation[itemId] == true )  
 
             --Filtering by already existing the best score
 
@@ -1852,7 +1861,7 @@ function DGF:SetSuggestedItemGuides()
     GearFinderPreloader.TexWrapper.Text:SetText("Searching for gears")
 
     local yields = CALCULATIONS_TIME_FOR_FILLED_CACHE
-    if not DugisCharacterCache.CalculateScore_cache_v10.hasItems then
+    if not DugisCharacterCache.CalculateScore_cache_v11.hasItems then
         yields = CALCULATIONS_TIME_FOR_EMPTY_CACHE
     end
 

@@ -382,7 +382,7 @@ function NPCJournalFrame:Initialize()
 		  end
 	end
 
-	function NPCJournalFrame:ReplaceWaypointTags(text, smallframe)
+	function NPCJournalFrame:ReplaceWaypointTags(text, smallframe, forWhatsNew)
 			local buttonId = 0
 
 			-- greendot waypoints:   (x.x, y.y, mapid) 
@@ -413,7 +413,11 @@ function NPCJournalFrame:Initialize()
 			if smallframe then 
 				return '|Hwaypoint:'..x..':'..y..':'..mapId..':'..description..':'..floorId..':'..buttonId..'|h|T'..buttonImage..':11:11:0:-2|t|h|r'
 			else
-				return '|Hwaypoint:'..x..':'..y..':'..mapId..':'..description..':'..floorId..':'..buttonId..'|h|T'..buttonImage..':11:11:0:-3|t|h|r'
+                if forWhatsNew then
+                    return '|Hwaypoint:'..x..':'..y..':'..mapId..':'..description..':'..floorId..':'..(buttonId + 1000)..'|h|T'..buttonImage..':11:11:0:-3|t|h|r'
+                else
+                    return '|Hwaypoint:'..x..':'..y..':'..mapId..':'..description..':'..floorId..':'..buttonId..'|h|T'..buttonImage..':11:11:0:-3|t|h|r'
+                end
 			end
 		end) 
 		
@@ -580,6 +584,56 @@ function NPCJournalFrame:Initialize()
 		
 		return result
 	end		
+    
+    function NPCJournalFrame:GetAllChoicesFromText(text)
+        local allChoices = {}
+        
+        if text then
+            for match_ in string.gmatch(text, '%([%s]*choice:[%s]*[^%)]*[%s]*%)') do 
+                table.insert(allChoices, match_) 
+            end
+            
+            if #allChoices > 0 then
+                LuaUtils:foreach(allChoices, function(choice, index)
+                    local choice = string.gsub(choice, '%)', '')
+                    choice = string.gsub(choice, '%(', '')
+                    local tag_id_description = LuaUtils:split(choice, ':')
+                    local choiceId = LuaUtils:trim(tag_id_description[2])
+                    
+                    allChoices[index] = choiceId
+                end)
+            end
+        end
+        
+        return allChoices
+    end
+
+	function NPCJournalFrame:ReplaceChoiceTags(text)
+        local allChoices = NPCJournalFrame:GetAllChoicesFromText(text)
+        local allChoicesText = ""
+      
+        if #allChoices > 0 then
+            allChoicesText = ":"..table.concat(allChoices, ":")
+        end
+        
+		local result = string.gsub(text, '%([%s]*choice:[%s]*[^%)]*[%s]*%)', function(choice) 
+			local choice = string.gsub(choice, '%)', '')
+			choice = string.gsub(choice, '%(', '')
+			local tag_id_description = LuaUtils:split(choice, ':')
+			local choiceId = LuaUtils:trim(tag_id_description[2])
+			local choiceDescription = LuaUtils:trim(tag_id_description[3])
+			
+			return '|Hchoice:'..choiceId..allChoicesText..'|h|TInterface\\Tooltips\\ReforgeGreenArrow:14:14:0:-1|t|cff66ff00 '..LuaUtils:trim(choiceDescription)..'|r|h'
+		end) 
+        
+        local extraAddon = ""
+        
+        if #allChoices > 0 then
+            extraAddon = '|HALLCHOICES'..table.concat(allChoices, ":")..'END|h |h'
+        end
+		
+        return result .. extraAddon
+	end
 
 	function NPCJournalFrame:ReplaceItemTags(text, smallframe, guideIndex, title)
 		
@@ -831,6 +885,7 @@ function NPCJournalFrame:Initialize()
 		local result = self:ReplaceSpellTags(text, smallframe, guideIndex, title)
 		result = self:ReplaceItemTags(result, smallframe, guideIndex, title)
 		result = self:ReplaceNPCTags(result)
+		result = self:ReplaceChoiceTags(result)
 		result = self:ReplaceWaypointTags(result, smallframe)
 		result = self:ReplaceAchievementTags(result, smallframe, guideIndex, title)
 		result = self:ReplaceSpeciesTags(result, smallframe, guideIndex, title)
@@ -1464,10 +1519,31 @@ function NPCJournalFrame:Initialize()
             return math.sqrt(a*a + b*b) < 2
         end
         
-		NPCJournalFrame.OnHyperlinkEnter = function(self, linkData, link, button, smallFrameAsOwner, stickyFrameAsOwner)
+        
+        local function SetTooltipOwner(tooltipFrame, smallFrameAsOwner, stickyFrameAsOwner, dugisMainAsOwner)
+            if smallFrameAsOwner then
+                tooltipFrame:SetOwner(DGV.SmallFrame.Frame, "ANCHOR_LEFT", 0, -100)
+                return
+            end
+
+            if stickyFrameAsOwner then
+                tooltipFrame:ClearAllPoints();
+                tooltipFrame:SetOwner(DugisGuideViewer.Modules.StickyFrame.Frame, "ANCHOR_LEFT", 0, -100)
+                return
+            end
+
+            if dugisMainAsOwner then
+                tooltipFrame:SetOwner(DugisMain, "ANCHOR_BOTTOMRIGHT", 10, 380)
+                return
+            end
+
+            tooltipFrame:SetOwner(NPCJournalFrame.mainFrame, "ANCHOR_LEFT", 0, -200)
+        end
+        
+		NPCJournalFrame.OnHyperlinkEnter = function(self, linkData, link, button, smallFrameAsOwner, stickyFrameAsOwner, dugisMainAsOwner)
 			local tag = LuaUtils:split(linkData, ':')
 			local tagType = tag[1]
-
+            
             if WasWaypointHoveredLastTimeOnTextChange() and tagType ~= "waypoint" then
                 return
             end
@@ -1475,26 +1551,24 @@ function NPCJournalFrame:Initialize()
 			hintFrame:SetMode(GUIUtils.HINT_WINDOW_TEXT_WITH_ICON_MODE)
 			
 			if tagType == "spell" then
-				if smallFrameAsOwner then
-					GameTooltip:SetOwner(DGV.SmallFrame.Frame, "ANCHOR_LEFT", 0, -100)
-				else
-                    if not stickyFrameAsOwner then
-                        GameTooltip:SetOwner(NPCJournalFrame.mainFrame, "ANCHOR_LEFT", 0, -200)
-                    else
-                         GameTooltip:SetOwner(DugisGuideViewer.Modules.StickyFrame.Frame, "ANCHOR_LEFT", 0, -100)
-                    end
-				end  
-				GameTooltip:SetSpellByID(tag[2])
+            
+                SetTooltipOwner(DugisGuideTooltip, smallFrameAsOwner, stickyFrameAsOwner, dugisMainAsOwner)
+				DugisGuideTooltip:SetSpellByID(tag[2])
 			end
 			
 			if tagType == "garrfollowerability" then
+            
+                GarrisonFollowerAbilityTooltip:ClearAllPoints()
+            
 				if smallFrameAsOwner then
-					GarrisonFollowerAbilityTooltip:ClearAllPoints()
-					GarrisonFollowerAbilityTooltip:SetPoint("TOPRIGHT", DGV.SmallFrame.Fram, "TOPLEFT", 0, 0)
+					GarrisonFollowerAbilityTooltip:SetPoint("TOPRIGHT", DGV.SmallFrame.Frame, "TOPLEFT", 0, 0)
 				else
-					GarrisonFollowerAbilityTooltip:ClearAllPoints()
                     if not stickyFrameAsOwner then
-                        GarrisonFollowerAbilityTooltip:SetPoint("TOPRIGHT", NPCJournalFrame.mainFrame, "TOPLEFT", 0, -100)
+                        if dugisMainAsOwner then
+                            GarrisonFollowerAbilityTooltip:SetPoint("TOPLEFT", DugisMain, "TOPRIGHT", 10, -20)
+                        else                        
+                            GarrisonFollowerAbilityTooltip:SetPoint("TOPRIGHT", NPCJournalFrame.mainFrame, "TOPLEFT", 0, -100)
+                        end
                     else
                         GarrisonFollowerAbilityTooltip:SetPoint("TOPRIGHT", DugisGuideViewer.Modules.StickyFrame.Frame, "TOPLEFT", 0, 0)
                     end                    
@@ -1505,11 +1579,15 @@ function NPCJournalFrame:Initialize()
 			if tagType == "garrmission" then
 				if smallFrameAsOwner then
 					FloatingGarrisonMissionTooltip:ClearAllPoints()
-					FloatingGarrisonMissionTooltip:SetPoint("TOPRIGHT", DGV.SmallFrame.Fram, "TOPLEFT", 0, 0)
+					FloatingGarrisonMissionTooltip:SetPoint("TOPRIGHT", DGV.SmallFrame.Frame, "TOPLEFT", 0, 0)
 				else
 					FloatingGarrisonMissionTooltip:ClearAllPoints()
                     if not stickyFrameAsOwner then
-                        FloatingGarrisonMissionTooltip:SetPoint("TOPRIGHT", NPCJournalFrame.mainFrame, "TOPLEFT", 0, -100)
+                        if dugisMainAsOwner then
+                            FloatingGarrisonMissionTooltip:SetPoint("TOPLEFT", DugisMain, "TOPRIGHT", 10, -20)
+                        else
+                            FloatingGarrisonMissionTooltip:SetPoint("TOPRIGHT", NPCJournalFrame.mainFrame, "TOPLEFT", 0, -100)
+                        end
                     else
                         FloatingGarrisonMissionTooltip:SetPoint("TOPRIGHT", DugisGuideViewer.Modules.StickyFrame.Frame, "TOPLEFT", 0, 0)
                     end  
@@ -1518,16 +1596,8 @@ function NPCJournalFrame:Initialize()
 			end				
 			
 			if tagType == "item" then
-				if smallFrameAsOwner then
-					GameTooltip:SetOwner(DGV.SmallFrame.Frame, "ANCHOR_LEFT", 0, -150)
-				else
-                    if not stickyFrameAsOwner then
-                        GameTooltip:SetOwner(NPCJournalFrame.mainFrame, "ANCHOR_LEFT", 0, -200)
-                    else
-                        GameTooltip:SetOwner(DugisGuideViewer.Modules.StickyFrame.Frame, "ANCHOR_LEFT", 0, -150)
-                    end 
-				end  
-				GameTooltip:SetItemByID(tag[2])
+                SetTooltipOwner(DugisGuideTooltip, smallFrameAsOwner, stickyFrameAsOwner, dugisMainAsOwner)
+				DugisGuideTooltip:SetItemByID(tag[2])
 			end
 			
 			if tagType == "waypoint" then
@@ -1550,7 +1620,11 @@ function NPCJournalFrame:Initialize()
 					hintFrame.frame:SetPoint("TOPRIGHT", DGV.SmallFrame.Frame, "TOPLEFT", 3, 12)
 				else
                     if not stickyFrameAsOwner then
-                        hintFrame.frame:SetPoint("TOPRIGHT", NPCJournalFrame.mainFrame, "TOPLEFT", 0, -83)
+                        if dugisMainAsOwner then
+                            hintFrame.frame:SetPoint("TOPLEFT", DugisMain, "TOPRIGHT", 10, -20)
+                        else                    
+                            hintFrame.frame:SetPoint("TOPRIGHT", NPCJournalFrame.mainFrame, "TOPLEFT", 0, -83)
+                        end
                     else
                         hintFrame.frame:SetPoint("TOPRIGHT", DugisGuideViewer.Modules.StickyFrame.Frame, "TOPLEFT", 0, 27)
                     end                 
@@ -1570,42 +1644,19 @@ function NPCJournalFrame:Initialize()
 			end
 			
 			if tagType == "achievement" then
-				if smallFrameAsOwner then
-					GameTooltip:SetOwner(DGV.SmallFrame.Frame, "ANCHOR_LEFT", 0, -200)
-				else
-                    if not stickyFrameAsOwner then
-                        GameTooltip:SetOwner(NPCJournalFrame.mainFrame, "ANCHOR_LEFT", 0, -200)
-                    else
-                        GameTooltip:SetOwner(DugisGuideViewer.Modules.StickyFrame.Frame, "ANCHOR_LEFT", 0, -200)
-                    end                 
-				end            
-				GameTooltip:SetAchievementByID(tag[2]) 
+                SetTooltipOwner(DugisGuideTooltip, smallFrameAsOwner, stickyFrameAsOwner, dugisMainAsOwner)
+				DugisGuideTooltip:SetAchievementByID(tag[2]) 
 			end
 			
 			if tagType == "quest" then
-				if smallFrameAsOwner then
-					GameTooltip:SetOwner(DGV.SmallFrame.Frame, "ANCHOR_LEFT", 0, -100)
-				else
-                    if not stickyFrameAsOwner then
-                        GameTooltip:SetOwner(NPCJournalFrame.mainFrame, "ANCHOR_LEFT", 0, -200)
-                    else
-                        GameTooltip:SetOwner(DugisGuideViewer.Modules.StickyFrame.Frame, "ANCHOR_LEFT", 0, -100)
-                    end                  
-				end
-				
-				GameTooltip:SetHyperlink(("quest:%s"):format(tostring(tag[2])))
+                SetTooltipOwner(DugisGuideTooltip, smallFrameAsOwner, stickyFrameAsOwner, dugisMainAsOwner)
+				DugisGuideTooltip:SetHyperlink(("quest:%s"):format(tostring(tag[2])))
 			end
 			
 			if tagType == "guide" then
-				if smallFrameAsOwner then
-					GameTooltip:SetOwner(DGV.SmallFrame.Frame, "ANCHOR_LEFT", 0, -100)
-				else
-                    if not stickyFrameAsOwner then
-                        GameTooltip:SetOwner(NPCJournalFrame.mainFrame, "ANCHOR_LEFT", 0, -200)
-                    else
-                        GameTooltip:SetOwner(DugisGuideViewer.Modules.StickyFrame.Frame, "ANCHOR_LEFT", 0, -100)
-                    end                  
-				end
+            
+                SetTooltipOwner(DugisGuideTooltip, smallFrameAsOwner, stickyFrameAsOwner, dugisMainAsOwner)
+                
 				local guideTitle = tag[2]
 				guideTitle = DGV:GetFormattedTitle(guideTitle)
 				
@@ -1614,26 +1665,19 @@ function NPCJournalFrame:Initialize()
 				--Please uncomment those lines if you want to the tooltip to be sticked to cursor
 				--GameTooltip:SetOwner(self, "ANCHOR_CURSOR")
 				--GameTooltip:SetAnchorType("ANCHOR_CURSOR")
-				GameTooltip:ClearLines()
-				GameTooltip:AddLine("Click here to load the guide\n|cff44ff44"..guideTitle.."|r", 1, 1, 1)
-				GameTooltipTextLeft1:SetFont(filename, DGV_SmallFrameFontSize)
-				GameTooltip:Show()
+				DugisGuideTooltip:ClearLines()
+				DugisGuideTooltip:AddLine("Click here to load the guide\n|cff44ff44"..guideTitle.."|r", 1, 1, 1)
+				DugisGuideTooltipTextLeft1:SetFont(filename, DGV_SmallFrameFontSize)
+				DugisGuideTooltip:Show()
 			end	
 
 			if tagType == "faction" then
 				--hintFrame:SetMode(GUIUtils.HINT_WINDOW_TEXT_WITH_NO_ICON_MODE)
 				local name, description, standingID  = GetFactionInfoByID(tag[2])
-				GameTooltip:ClearAllPoints() 
-				if smallFrameAsOwner then
-					GameTooltip:SetOwner(DGV.SmallFrame.Frame, "ANCHOR_LEFT", 0, -100)
-				else
-                    if not stickyFrameAsOwner then
-                        GameTooltip:SetOwner(NPCJournalFrame.mainFrame, "ANCHOR_LEFT", 0, -200)
-                    else
-                        GameTooltip:SetOwner(DugisGuideViewer.Modules.StickyFrame.Frame, "ANCHOR_LEFT", 0, -100)
-                    end                 
-				end
-				
+				DugisGuideTooltip:ClearAllPoints() 
+                
+                SetTooltipOwner(DugisGuideTooltip, smallFrameAsOwner, stickyFrameAsOwner, dugisMainAsOwner)
+                
 				--hintFrame:SetTitle("|cffffd200"..name.."|r")
 				
 				local text = ""
@@ -1649,13 +1693,13 @@ function NPCJournalFrame:Initialize()
 				end
 
 				local DGV_SmallFrameFontSize = DGV:GetDB(DGV_SMALLFRAMEFONTSIZE)
-				local filename, _, _ = GameTooltipTextLeft1:GetFont()				
+				local filename, _, _ = DugisGuideTooltipTextLeft1:GetFont()				
 				
-				GameTooltip:ClearLines()
-				GameTooltip:AddLine("|cffffd200"..name.."|r"..text, 1, 1, 1, true)
-				GameTooltipTextLeft1:SetFont(filename, DGV_SmallFrameFontSize)
-				GameTooltip:Show()				
-				GameTooltip:SetWidth(250)
+				DugisGuideTooltip:ClearLines()
+				DugisGuideTooltip:AddLine("|cffffd200"..name.."|r"..text, 1, 1, 1, true)
+				DugisGuideTooltipTextLeft1:SetFont(filename, DGV_SmallFrameFontSize)
+				DugisGuideTooltip:Show()				
+				DugisGuideTooltip:SetWidth(250)
 				
 				--[[
 				hintFrame:SetText(text)
@@ -1671,16 +1715,8 @@ function NPCJournalFrame:Initialize()
 			end
 
 			if tagType == "currency" then
-				if smallFrameAsOwner then
-					GameTooltip:SetOwner(DGV.SmallFrame.Frame, "ANCHOR_LEFT", 0, -100)
-				else
-                    if not stickyFrameAsOwner then
-                        GameTooltip:SetOwner(NPCJournalFrame.mainFrame, "ANCHOR_LEFT", 0, -200)
-                    else
-                        GameTooltip:SetOwner(DugisGuideViewer.Modules.StickyFrame.Frame, "ANCHOR_LEFT", 0, -100)
-                    end                  
-				end
-				GameTooltip:SetCurrencyByID(tag[2])
+                SetTooltipOwner(DugisGuideTooltip, smallFrameAsOwner, stickyFrameAsOwner, dugisMainAsOwner)
+				DugisGuideTooltip:SetCurrencyByID(tag[2])
 			end			
 						
 		end
@@ -1695,7 +1731,7 @@ function NPCJournalFrame:Initialize()
             end
 
             hintFrame.frame:Hide()
-            GameTooltip:Hide()
+            DugisGuideTooltip:Hide()
 			GarrisonFollowerAbilityTooltip:Hide()
 			FloatingGarrisonMissionTooltip:Hide()
             hintFrame:SetMode(GUIUtils.HINT_WINDOW_TEXT_WITH_ICON_MODE)
@@ -1753,10 +1789,23 @@ function NPCJournalFrame:Initialize()
                 DugisGuideViewer:DisplayViewTab(guideTitle, true)
 				print("|cff11ff11Dugi Guides: |r"..DGV:GetFormattedTitle(guideTitle).."|cff11ff11 selected.|r")
 				return;
+			end        
+            
+			if tagType == "choice" then
+				local choiceId = tag[2]
+                
+                local allChoices = {select(3, unpack(tag))}
+                
+                LuaUtils:foreach(allChoices, function(choiceId_)
+                    if choiceId_ ~= choiceId then
+                        DGV:MarkStepsByChoiceId(choiceId_, true)
+                    end
+                end)
+                
+                DGV:GoToChoice(choiceId)
+				return
 			end            
-						
 		end
-
 		
 		LuaUtils:foreach({self.strategyContent, self.guideContent, self.dPSContent, self.healContent, self.tankContent}, function(item)
 			item:SetScript("OnHyperlinkClick", NPCJournalFrame.OnHyperlinkClick)    

@@ -173,14 +173,24 @@ function Guides:Initialize()
     
         DGV:AddGuideToRecentGuides(CurrentTitle)
         
-        PopulateRecentGuides()
+        if DGV:UserSetting(SHOW_WHATS_NEW) then
+            tabs[RECENT_TAB].treeData = {}
+        else
+            PopulateRecentGuides()
+        end
+        
         
         if DGV:isValidGuide(CurrentTitle) and (not CurrentTitle or not GetCurrentGuideTypeTabInfo().leftShouldScroll) and self.text and self.text ~= "Current Guide" then
             guidesMainScroll.frame:Hide()
         else
             guidesMainScroll.frame:Show()
         end
-    
+        
+        if whatsNewFrame then
+            whatsNewFrame:Hide()
+            whatsNewFrame.title:Hide()
+        end
+        
         if NPCJournalFrame then
             NPCJournalFrame.playersMounts = nil
             NPCJournalFrame.playersPets = nil
@@ -204,6 +214,11 @@ function Guides:Initialize()
         end
         
         if treeData then
+        
+            if guideategorieswrapper then
+                guideategorieswrapper:ClearAllPoints() 
+            end            
+        
             local wrapper = GUIUtils:SetTreeData(guidesMainScroll.frame, nil, "guideategories", 
                 treeData, nil, nil, nil, nil, 400, -30, 5, -5
                 ,function(oryginalText)
@@ -217,6 +232,11 @@ function Guides:Initialize()
                         newMax = 1
                     end
                     guidesMainScroll.scrollBar:SetMinMaxValues(1, newMax)
+                    
+                    if whatsNewFrame and whatsNewFrame:IsVisible() and DGV:UserSetting(SHOW_WHATS_NEW) then
+                        guidesMainScroll.scrollBar:SetMinMaxValues(1, whatsNewFrame:GetRegions():GetHeight())
+                    end
+                    
                  end,
                  function(self, delta)
                     guidesMainScroll.scrollBar:SetValue(guidesMainScroll.scrollBar:GetValue() - delta * 44)  
@@ -231,20 +251,7 @@ function Guides:Initialize()
                 guideategorieswrapper:CreateFontString("recentGuidesLabel", "ARTWORK", "GameFontNormalLarge")
             end
             
-            if self.text == "Recent Guides" then
-                if tabs[RECENT_TAB].treeData and #tabs[RECENT_TAB].treeData > 0 then
-                    recentGuidesLabel:Show()
-                else
-                    recentGuidesLabel:Hide()
-                end 
-                
-                recentGuidesLabel:SetText(L["Recent Guides"])
-                recentGuidesLabel:SetPoint("TOPLEFT", guideategorieswrapper, "TOPLEFT", 3, -5)
-                recentGuidesLabel:SetParent(guideategorieswrapper)
-                guideategorieswrapper.indernalDeltaX = 0
-                guideategorieswrapper.internalDeltaY = -25
-                guideategorieswrapper:UpdateTreeVisualization()
-            end	
+    
 
             if #treeData == 0 then
                 noGuideLoaded:Show()
@@ -254,6 +261,30 @@ function Guides:Initialize()
             else
                 noGuideLoaded:Hide()
             end
+            
+            if self.text == "Recent Guides" then
+                if DGV:UserSetting(SHOW_WHATS_NEW) then
+                    tabs[RECENT_TAB].treeData = {}
+                    
+                    recentGuidesLabel:Hide()
+                    noGuideLoaded:Hide()
+                else
+                    if tabs[RECENT_TAB].treeData and #tabs[RECENT_TAB].treeData > 0 then
+                        recentGuidesLabel:Show()
+                    else
+                        recentGuidesLabel:Hide()
+                    end 
+                    
+                    recentGuidesLabel:SetText(L["Recent Guides"])
+                end
+                
+                recentGuidesLabel:SetParent(guideategorieswrapper)
+                recentGuidesLabel:SetPoint("TOPLEFT", guideategorieswrapper, "TOPLEFT", 3, -5)
+                guideategorieswrapper.indernalDeltaX = 0
+                guideategorieswrapper.internalDeltaY = -25
+                guideategorieswrapper:UpdateTreeVisualization()
+                
+            end	            
         end
         
         guidesMainScroll.frame.content = guideategorieswrapper
@@ -353,7 +384,7 @@ function Guides:Initialize()
 			PopulateRecentGuides()
             
             if recentGuidesLabel then
-                if tabs[RECENT_TAB].treeData and #tabs[RECENT_TAB].treeData > 0 then
+                if tabs[RECENT_TAB].treeData and #tabs[RECENT_TAB].treeData > 0 and not DGV:UserSetting(SHOW_WHATS_NEW) then
                     recentGuidesLabel:Show()
                 else
                     recentGuidesLabel:Hide()
@@ -1006,6 +1037,86 @@ function Guides:Initialize()
             
         end
         
+        function UpdateWhatsNewText()
+            if DGV:UserSetting(SHOW_WHATS_NEW) then
+                local text = NPCJournalFrame:ReplaceSpecialTags(whatsNewText)
+                whatsNewFrame:SetText(text)
+            end
+        end
+        
+        if self.text == "Recent Guides" then
+            if not whatsNewFrame and DGV:UserSetting(SHOW_WHATS_NEW)  then
+                CreateFrame("SimpleHTML", "whatsNewFrame", guideategorieswrapper)
+                CreateFrame("SimpleHTML", "whatsNewFrame_EventHandler", whatsNewFrame)
+                
+                whatsNewFrame_EventHandler:SetScript("OnHyperlinkClick", function(...)
+                    DugisGuideViewer.NPCJournalFrame.OnHyperlinkClick(...)
+                end) 
+                
+                whatsNewFrame_EventHandler:SetScript("OnHyperlinkEnter", function(self, linkData, link, button)
+                    DugisGuideViewer.NPCJournalFrame.OnHyperlinkEnter(self, linkData, link, button, false, false, true)
+                    NPCJournalFrame.needToUpdateWaypointButtonsWN = true
+                end)     
+                
+                whatsNewFrame_EventHandler:SetScript("OnHyperlinkLeave", function(...)
+                    DugisGuideViewer.NPCJournalFrame.OnHyperlinkLeave(...)
+                    NPCJournalFrame.needToUpdateWaypointButtonsWN = true
+                end) 
+                
+                --Whats new configuration
+                
+                local whatsNewTitleYOffset = -9
+                local whatsNewTitleFont = "GameFontNormalLarge"
+                local whatsNewTitleColor = {1, 0.82, 0, 1}
+                local whatsNewContentYOffset = -40
+                local whatsNewContentFont = GameFontHighlight
+
+
+                local title = guideategorieswrapper:CreateFontString(guideategorieswrapper, "ARTWORK", whatsNewTitleFont)
+                whatsNewFrame.title = title
+                title:SetText("What's new")
+                title:SetTextColor(unpack(whatsNewTitleColor))
+                title:SetPoint("TOPLEFT", guideategorieswrapper, "TOPLEFT", 20, whatsNewTitleYOffset)
+                title:Show()
+                
+                whatsNewFrame:SetFontObject(whatsNewContentFont)
+                whatsNewFrame:EnableMouse(false)
+                whatsNewFrame:SetHyperlinksEnabled(false) 
+                whatsNewFrame:SetWidth(362)
+                whatsNewFrame:SetHeight(282)
+                whatsNewFrame:SetJustifyH("CENTER")
+                whatsNewFrame:SetJustifyV("TOP")    
+                whatsNewFrame:SetPoint("TOPLEFT", guideategorieswrapper, "TOPLEFT", 20, whatsNewContentYOffset) 
+                whatsNewFrame:SetSpacing(2)
+                whatsNewFrame:SetFrameLevel(51)
+                
+                whatsNewFrame_EventHandler:SetFontObject(whatsNewContentFont)
+                whatsNewFrame_EventHandler:EnableMouse(true)
+                whatsNewFrame_EventHandler:SetWidth(362)
+                whatsNewFrame_EventHandler:SetHeight(282)
+                whatsNewFrame_EventHandler:SetJustifyH("CENTER")
+                whatsNewFrame_EventHandler:SetJustifyV("TOP")    
+                whatsNewFrame_EventHandler:SetFrameLevel(50)
+                whatsNewFrame_EventHandler:SetPoint("TOPLEFT", guideategorieswrapper, "TOPLEFT", 20, whatsNewContentYOffset) 
+                whatsNewFrame_EventHandler:SetSpacing(2)
+                whatsNewFrame_EventHandler:SetAlpha(0.1)
+            end
+            
+            if DGV:UserSetting(SHOW_WHATS_NEW) then
+                whatsNewFrame:Show()
+                whatsNewFrame.title:Show()
+                whatsNewFrame_EventHandler:Show()
+                whatsNewFrame_EventHandler:SetAllPoints(whatsNewFrame)
+                
+                local text = NPCJournalFrame:ReplaceSpecialTags(whatsNewText)
+                whatsNewFrame_EventHandler:SetText(text)
+                
+                guidesMainScroll.scrollBar:Show()  
+          
+                UpdateWhatsNewText()
+            end
+        end	        
+        
         lastClickedTab = self.text
 	end
 	
@@ -1056,7 +1167,35 @@ function Guides:Initialize()
 		DGV:MoveToNextQuest(1)
 		DGV:AutoScroll(0)
 	end
+    
+    --choiceId - textual or numeric value
+    function DGV:GoToChoice(choiceId)
+        DGV:SetChkToComplete(DugisGuideUser.CurrentQuestIndex)
+    
+		for i = 1, #visualRows do
+            local currentChoiceId = DGV:ReturnTag("CHOICE", i)
+            if currentChoiceId and tostring(currentChoiceId) == tostring(choiceId) then
+                DugisGuideViewer:MoveToNextQuest(i + 1)
+                return
+            end
+		end  
+    end
 
+    --choiceId - textual or numeric value
+    function DGV:MarkStepsByChoiceId(choiceId, asCompleted)
+		for i = 1, #visualRows do
+            choiceGuideIndex = i + 1
+            local currentChoiceId = DGV:ReturnTag("CHOICE", i)
+            if currentChoiceId and tostring(currentChoiceId) == tostring(choiceId) then
+                if asCompleted then
+                    DGV:SetChkToComplete(i)
+                else
+                    DGV:SetChkToNotComplete(i)
+                end
+            end
+		end  
+    end
+    
 	function DGV:GetQuestState(index, guideName)
         local questIndex = string.format("%s:%d", guideName or CurrentTitle, index)
 		return DGU.QuestState[questIndex]
@@ -2195,8 +2334,23 @@ function Guides:Initialize()
                 DGV:ClrChk(i)
                 
                 if oldChk == "X" then
-                DGV:UnSkipQuest(i)
+                    DGV:UnSkipQuest(i)
                 end
+                
+                local questDesc  = DGV.quests2[i]
+                
+                local allChoicesText = ""
+                
+                for match_ in string.gmatch(questDesc, 'ALLCHOICES(.+)END') do 
+                    allChoicesText = match_
+                end                    
+                
+                local allChoices = LuaUtils:split(allChoicesText, ':')
+                
+                LuaUtils:foreach(allChoices, function(choiceId)
+                    DGV:MarkStepsByChoiceId(choiceId, false)
+                end)
+                
                 
                 --If CQI just got unchecked (either by user or because it has same QID as another user unchecked)
                 local nextindex = DGV:FindNextUnchecked()
@@ -3112,6 +3266,15 @@ function Guides:Initialize()
 				coroutine.resume(thread)
 			end
 		end
+
+        if NPCJournalFrame.needToUpdateWaypointButtonsWN then
+            UpdateWhatsNewText()
+            NPCJournalFrame.needToUpdateWaypointButtonsWN = nil
+        end
+        
+        if whatsNewFrame and whatsNewFrame:IsVisible() and guideategorieswrapper and DGV:UserSetting(SHOW_WHATS_NEW) then
+            guideategorieswrapper:SetHeight(whatsNewFrame:GetRegions():GetHeight() + 100)
+        end  
 	end)
     
 	local searchThreadFrame = CreateFrame("Frame")
@@ -5560,7 +5723,7 @@ function Guides:Initialize()
 		end
 		
 		function DGV:PLAYER_LEVEL_UP(self, level)
-            DugisCharacterCache.CalculateScore_cache_v10 = {}
+            DugisCharacterCache.CalculateScore_cache_v11 = {}
         
 			--skip quest that is grey ! or too high level, and check again on playerlevel up event to see if they can pick them up
 			if not InCombatLockdown() then		
@@ -5860,6 +6023,9 @@ function Guides:Initialize()
 				if npc4 == "" then npc4 = nil end
 				if npc5 == "" then npc5 = nil end
 				return npc1, npc2, npc3, npc4, npc5
+			elseif tag == "CHOICE" then --ex: |CHOICE|2|      |CHOICE|some textual id|
+				local id = tags:match("|CHOICE|([^%)]+)|")
+				return id
 			elseif tag == "OBJ" then --ex: |OBJ|37087| or |OBJ|708, 704, 705|
 				local obj1, obj2, obj3, obj4, obj5 = tags:match("|OBJ|(%d+),?%s?(%d*),?%s?(%d*),?%s?(%d*),?%s?(%d*)|")
 				if obj1 == "" then obj1 = nil end
