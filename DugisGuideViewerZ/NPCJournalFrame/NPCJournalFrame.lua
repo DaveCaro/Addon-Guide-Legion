@@ -795,7 +795,14 @@ function NPCJournalFrame:Initialize()
 		return result
 	end
     
-	function NPCJournalFrame:ReplaceGuideTags(text, smallframe, guideIndex, title)
+	function NPCJournalFrame:ReplaceGuideTags(text, smallframe, guideIndex, title, forWhatsNew)
+    
+        local forWhatsNewText = ""
+        
+        if forWhatsNew then
+            forWhatsNewText = ":whatsnew"
+        end
+        
 		local result = string.gsub(text, '%([%s]*guide:[%s]*["][^"]*["][%s]*%)', function(textFound) 
 			local newText = string.gsub(textFound, '%)$', '')
 			newText = string.gsub(newText, '^%(', '')
@@ -803,7 +810,7 @@ function NPCJournalFrame:Initialize()
 			local tag_id = LuaUtils:split(newText, ':')
 			local guideRawTitle = tag_id[2]
             local formattedTitle = DugisGuideViewer:GetFormattedTitle(guideRawTitle)
-			return '|Hguide:'..guideRawTitle..'|h|cff44ff44['..formattedTitle..']|r|h'
+			return '|Hguide:'..guideRawTitle..forWhatsNewText..'|h|cff44ff44['..formattedTitle..']|r|h'
 
 		end) 
 		return result
@@ -877,7 +884,7 @@ function NPCJournalFrame:Initialize()
 		return result
 	end
 
-	function NPCJournalFrame:ReplaceSpecialTags(text, smallframe, guideIndex, title)
+	function NPCJournalFrame:ReplaceSpecialTags(text, smallframe, guideIndex, title, forWhatsNew)
 		if not text then
 			return text
 		end
@@ -890,7 +897,7 @@ function NPCJournalFrame:Initialize()
 		result = self:ReplaceAchievementTags(result, smallframe, guideIndex, title)
 		result = self:ReplaceSpeciesTags(result, smallframe, guideIndex, title)
 		result = self:ReplaceQuestTags(result, smallframe, guideIndex, title)
-		result = self:ReplaceGuideTags(result, smallframe, guideIndex, title)
+		result = self:ReplaceGuideTags(result, smallframe, guideIndex, title, forWhatsNew)
 		result = self:ReplaceCurrencyTags(result, smallframe, guideIndex, title)
 		result = self:ReplaceFactionTags(result)
 		result = self:ReplaceMapTags(result)
@@ -1786,7 +1793,17 @@ function NPCJournalFrame:Initialize()
             
 			if tagType == "guide" then
 				local guideTitle = tag[2]
-                DugisGuideViewer:DisplayViewTab(guideTitle, true)
+                local forWhatsNew = tag[3]
+                
+                if forWhatsNew == "whatsnew" then
+                    DugisGuideViewer:DisplayViewTab(guideTitle, true)
+                    if CurrentTitle == guideTitle then
+                        DugisMainCurrentGuideTab:Click()
+                    end
+                else
+                    DugisGuideViewer:DisplayViewTab(guideTitle, true)
+                end
+
 				print("|cff11ff11Dugi Guides: |r"..DGV:GetFormattedTitle(guideTitle).."|cff11ff11 selected.|r")
 				return;
 			end        

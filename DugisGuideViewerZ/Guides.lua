@@ -173,11 +173,7 @@ function Guides:Initialize()
     
         DGV:AddGuideToRecentGuides(CurrentTitle)
         
-        if DGV:UserSetting(SHOW_WHATS_NEW) then
-            tabs[RECENT_TAB].treeData = {}
-        else
-            PopulateRecentGuides()
-        end
+        PopulateRecentGuides()
         
         
         if DGV:isValidGuide(CurrentTitle) and (not CurrentTitle or not GetCurrentGuideTypeTabInfo().leftShouldScroll) and self.text and self.text ~= "Current Guide" then
@@ -231,12 +227,13 @@ function Guides:Initialize()
                     if newMax < 1 then
                         newMax = 1
                     end
-                    guidesMainScroll.scrollBar:SetMinMaxValues(1, newMax)
                     
-                    if whatsNewFrame and whatsNewFrame:IsVisible() and DGV:UserSetting(SHOW_WHATS_NEW) then
-                        guidesMainScroll.scrollBar:SetMinMaxValues(1, whatsNewFrame:GetRegions():GetHeight())
+                    if whatsNewFrame and whatsNewFrame:IsVisible() and whatsNewFrame:GetRegions() and whatsNewFrame:GetRegions():GetHeight() then
+                        newMax = newMax + whatsNewFrame:GetRegions():GetHeight()
                     end
-                    
+
+                    guidesMainScroll.scrollBar:SetMinMaxValues(1, newMax)
+                    UpdateWhatsNewFramePositions()
                  end,
                  function(self, delta)
                     guidesMainScroll.scrollBar:SetValue(guidesMainScroll.scrollBar:GetValue() - delta * 44)  
@@ -263,20 +260,16 @@ function Guides:Initialize()
             end
             
             if self.text == "Recent Guides" then
-                if DGV:UserSetting(SHOW_WHATS_NEW) then
-                    tabs[RECENT_TAB].treeData = {}
                     
-                    recentGuidesLabel:Hide()
-                    noGuideLoaded:Hide()
+                recentGuidesLabel:Hide()
+                noGuideLoaded:Hide()
+                if tabs[RECENT_TAB].treeData and #tabs[RECENT_TAB].treeData > 0 then
+                    recentGuidesLabel:Show()
                 else
-                    if tabs[RECENT_TAB].treeData and #tabs[RECENT_TAB].treeData > 0 then
-                        recentGuidesLabel:Show()
-                    else
-                        recentGuidesLabel:Hide()
-                    end 
-                    
-                    recentGuidesLabel:SetText(L["Recent Guides"])
-                end
+                    recentGuidesLabel:Hide()
+                end 
+                
+                recentGuidesLabel:SetText(L["Recent Guides"])
                 
                 recentGuidesLabel:SetParent(guideategorieswrapper)
                 recentGuidesLabel:SetPoint("TOPLEFT", guideategorieswrapper, "TOPLEFT", 3, -5)
@@ -384,7 +377,7 @@ function Guides:Initialize()
 			PopulateRecentGuides()
             
             if recentGuidesLabel then
-                if tabs[RECENT_TAB].treeData and #tabs[RECENT_TAB].treeData > 0 and not DGV:UserSetting(SHOW_WHATS_NEW) then
+                if tabs[RECENT_TAB].treeData and #tabs[RECENT_TAB].treeData > 0 then
                     recentGuidesLabel:Show()
                 else
                     recentGuidesLabel:Hide()
@@ -1038,14 +1031,30 @@ function Guides:Initialize()
         end
         
         function UpdateWhatsNewText()
-            if DGV:UserSetting(SHOW_WHATS_NEW) then
-                local text = NPCJournalFrame:ReplaceSpecialTags(whatsNewText)
-                whatsNewFrame:SetText(text)
-            end
+            local text = NPCJournalFrame:ReplaceSpecialTags(whatsNewText, nil, nil, nil, true)
+            whatsNewFrame:SetText(text)
+        end
+        
+        function UpdateWhatsNewFramePositions()
+            if whatsNewFrame and whatsNewFrame:IsVisible() then
+                guidesMainScroll.scrollBar:SetMinMaxValues(1, whatsNewFrame:GetRegions():GetHeight())
+                
+                local extraOffset = -10
+                local parentHeight = guideategorieswrapper.height
+                
+                if parentHeight == 0 then
+                    extraOffset = 20
+                end
+                
+                local whatsNewLeft = 5
+                
+                whatsNewFrame:SetPoint("TOPLEFT", guideategorieswrapper, "TOPLEFT", whatsNewLeft, -parentHeight -70 + extraOffset) 
+                whatsNewFrame.title:SetPoint("TOPLEFT", guideategorieswrapper, "TOPLEFT", whatsNewLeft, -parentHeight -40 + extraOffset) 
+            end            
         end
         
         if self.text == "Recent Guides" then
-            if not whatsNewFrame and DGV:UserSetting(SHOW_WHATS_NEW)  then
+            if not whatsNewFrame then
                 CreateFrame("SimpleHTML", "whatsNewFrame", guideategorieswrapper)
                 CreateFrame("SimpleHTML", "whatsNewFrame_EventHandler", whatsNewFrame)
                 
@@ -1070,11 +1079,15 @@ function Guides:Initialize()
                 local whatsNewTitleColor = {1, 0.82, 0, 1}
                 local whatsNewContentYOffset = -40
                 local whatsNewContentFont = GameFontHighlight
-
+                
+                guidesMainScroll.frame:EnableMouseWheel(true)
+                guidesMainScroll.frame:SetScript("OnMouseWheel", function(self, delta)
+                    guidesMainScroll.scrollBar:SetValue(guidesMainScroll.scrollBar:GetValue() - delta * 44)  
+                end)  
 
                 local title = guideategorieswrapper:CreateFontString(guideategorieswrapper, "ARTWORK", whatsNewTitleFont)
                 whatsNewFrame.title = title
-                title:SetText("What's new")
+                title:SetText("What's new|TInterface\\AddOns\\DugisGuideViewerZ\\Artwork\\highlight.tga:1:100:-80:10|t")
                 title:SetTextColor(unpack(whatsNewTitleColor))
                 title:SetPoint("TOPLEFT", guideategorieswrapper, "TOPLEFT", 20, whatsNewTitleYOffset)
                 title:Show()
@@ -1086,7 +1099,7 @@ function Guides:Initialize()
                 whatsNewFrame:SetHeight(282)
                 whatsNewFrame:SetJustifyH("CENTER")
                 whatsNewFrame:SetJustifyV("TOP")    
-                whatsNewFrame:SetPoint("TOPLEFT", guideategorieswrapper, "TOPLEFT", 20, whatsNewContentYOffset) 
+                
                 whatsNewFrame:SetSpacing(2)
                 whatsNewFrame:SetFrameLevel(51)
                 
@@ -1102,19 +1115,19 @@ function Guides:Initialize()
                 whatsNewFrame_EventHandler:SetAlpha(0.1)
             end
             
-            if DGV:UserSetting(SHOW_WHATS_NEW) then
-                whatsNewFrame:Show()
-                whatsNewFrame.title:Show()
-                whatsNewFrame_EventHandler:Show()
-                whatsNewFrame_EventHandler:SetAllPoints(whatsNewFrame)
-                
-                local text = NPCJournalFrame:ReplaceSpecialTags(whatsNewText)
-                whatsNewFrame_EventHandler:SetText(text)
-                
-                guidesMainScroll.scrollBar:Show()  
-          
-                UpdateWhatsNewText()
-            end
+            whatsNewFrame:Show()
+            whatsNewFrame.title:Show()
+            whatsNewFrame_EventHandler:Show()
+            whatsNewFrame_EventHandler:SetAllPoints(whatsNewFrame)
+            
+            local text = NPCJournalFrame:ReplaceSpecialTags(whatsNewText, nil, nil, nil, true)
+            whatsNewFrame_EventHandler:SetText(text)
+            
+            guidesMainScroll.scrollBar:Show()  
+      
+            UpdateWhatsNewText()
+            
+            UpdateWhatsNewFramePositions()
         end	        
         
         lastClickedTab = self.text
@@ -3272,7 +3285,7 @@ function Guides:Initialize()
             NPCJournalFrame.needToUpdateWaypointButtonsWN = nil
         end
         
-        if whatsNewFrame and whatsNewFrame:IsVisible() and guideategorieswrapper and DGV:UserSetting(SHOW_WHATS_NEW) then
+        if whatsNewFrame and whatsNewFrame:IsVisible() and guideategorieswrapper then
             guideategorieswrapper:SetHeight(whatsNewFrame:GetRegions():GetHeight() + 100)
         end  
 	end)
@@ -5451,6 +5464,8 @@ function Guides:Initialize()
 			DugisMainBorder:SetHeight(420)
             
             DugisGuideViewer:UpdateCurrentGuideExpanded()
+            
+            UpdateWhatsNewFramePositions()
 		end
 		
 		function DGV:CheckForFloorChange()

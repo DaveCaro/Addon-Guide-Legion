@@ -258,7 +258,6 @@ local function LoadSettings()
 	DGV_WAYPOINT_PING = 79
     
     DGV_HIDE_MODELS_IN_WORLDMAP = 80
-    SHOW_WHATS_NEW = 81 
 
     
 	--Sliders
@@ -311,7 +310,7 @@ local function LoadSettings()
 					SettingsRevision = 0,
 					WatchFrameSnapped = true,
 					GuideOn = true,
-					sz = 81, --Num check boxes
+					sz = 80, --Num check boxes
 					[DGV_QUESTLEVELON]			= { category = "Other",	text = "Display Quest Level", 	checked = false,	tooltip = "Show the quest level on the large and small frames", module = "Guides"},
 					[DGV_QUESTCOLORON] 		= { category = "Other",	text = "Color Code Quest", 	checked = true,		tooltip = "Color code quest against your character's level", module = "Guides"},
 					[DGV_LOCKSMALLFRAME] 		= { category = "Frames",	text = "Lock Small Frame", 	checked = false,	tooltip = "Lock small frame into place", module = "SmallFrame"},
@@ -359,7 +358,6 @@ local function LoadSettings()
 					[DGV_MAPPREVIEWHIDEBORDER]	= { category = "Map Preview",	text = "Hide Border",		checked = true,		tooltip = "Hides the minimized map border when map preview is on.",},
 					[DGV_AUTOQUESTITEMLOOT]	= { category = "Questing",	text = "Auto Loot Quest Item",	checked = true,		tooltip = "Automatically loot quest items.",},
 					[DGV_ACCOUNTWIDEACH]		= { category = "Other",text = "Account Wide Achievement",	checked = false,		tooltip = "Detects account wide achievements completion.", module = "Guides"},
-					[SHOW_WHATS_NEW]		= { category = "Other",text = "Show What's New",	checked = true,		tooltip = "", module = "Guides"},
 					[DGV_EMBEDDEDTOOLTIP]		= { category = "Display",	text = "Embedded Tooltip",	checked = true,	tooltip = "Displays tooltip information under guide step", module = "Guides"},
 					[DGV_FIXEDWIDTHSMALL]		= { category = "Display",	text = "Fixed Width Small Frame",	checked = true,	tooltip = "Floating Small Frame won't adjust size horizontally and remain the same width as the Objective Tracker.", module = "Guides"},
 					[DGV_OBJECTIVECOUNTER]		= { category = "Display",	text = "Show Quest Objectives",	checked = true,		tooltip = "Display quest objectives in small/anchored frame instead of the watch frame", module = "Guides"},

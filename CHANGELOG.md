@@ -74,29 +74,4 @@ Fixed the Netherwing Egg Guide so that the waypoints show up correctly.
 
 DUGI GUIDE : 
 
-Added "What's New" section as the default view for the Home tab
-
-Fixed overlapping "Recent Guides" and "No Guide Loaded" labels
-
-Improved Suggest Guides button with corresponding icon
-
-Fixed Gear Advisor error with patch 7.1.5
-
-Updated Gear Advisor default weight score for patch 7.1.5  
-
-- Achievements : 
-
-### New Guides
-Why Can't I Hold All This Mana?
-
-What a Ripoff!
-
-Ain't No Mountain High Enough
-
-Azsuna Matata
-
-Good Suramaritan
-
-That's Valsharah Folks
-
-Vrykul Story Bro
+- TBA
