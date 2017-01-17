@@ -1538,6 +1538,11 @@ function WMT:Initialize()
 
             MinimapExtraMenuFrame.point = "TOPRIGHT"
             MinimapExtraMenuFrame.relativePoint = "BOTTOMRIGHT"
+
+            if DropDownList1:GetTop() < GetScreenHeight() * 0.5 then
+                MinimapExtraMenuFrame.point = "BOTTOMRIGHT"
+                MinimapExtraMenuFrame.relativePoint = "TOPRIGHT"
+            end
             
             Lib_EasyMenu(menu, MinimapExtraMenuFrame, DropDownList1, 0 , 0, "MENU");
             
