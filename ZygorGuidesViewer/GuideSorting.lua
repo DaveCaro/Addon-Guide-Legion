@@ -38,7 +38,8 @@ ZygorGuidesViewer:RegisterGuideSorting({
 	"Pandaria (85-90)",
 	"Draenor (90-100)",
 	"Legion (100-110)",
-	"Peak of Serenity"})
+	"Peak of Serenity",
+	"The Loremaster"})
 
 -- Leveling alliance starters
 ZygorGuidesViewer:RegisterGuideSorting({

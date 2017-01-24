@@ -7651,3 +7651,21 @@ turnin A Message of Terrible Import##38578 |goto Tanaan Jungle/0 47.3,70.5
 step
 Congratulations, you've completed the Tanaan Jungle Main Questline!
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Rhe Loremaster\\Loremaster of Draenor",{
+condition_end="achieved(9923)",
+sugGroup="ACHIEVEMENTS\\Draenor Pathfinder",
+description="Complete the Draenor quest achievements.",
+},[[
+step
+Use these Draenor Leveling Guides to complete Loremaster:
+|tip The Leveling guides cover all required questlines for Loremaster.
+|tip Click one of the lines below to load the Leveling guide for that zone.
+condition achieved(9923) |next
+Frostfire Ridge |condition achieved(9923,4) |confirm always |next "Zygor's Horde Leveling Guides\\Draenor (90-100)\\Frostfire Ridge (90-92)"
+Gorgrond |condition achieved(9923,5) |confirm always |next "Zygor's Horde Leveling Guides\\Draenor (90-100)\\Gorgrond (92-94)"
+Talador |condition achieved(9923,1) |confirm always |next "Zygor's Horde Leveling Guides\\Draenor (90-100)\\Talador (94-96)"
+Spires of Arak |condition achieved(9923,2) |confirm always |next "Zygor's Horde Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-98)"
+Nagrand |condition achieved(9923,3) |confirm always |next "Zygor's Horde Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)"
+step
+Congratulations, you earned the _Loremaster of Draenor_ Achievement!
+]])

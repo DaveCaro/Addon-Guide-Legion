@@ -3078,24 +3078,26 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Main Quest",[[
 		turnin The Lunar Festival##8870 |goto Ironforge 28.8,16.2
 		accept Lunar Fireworks##8867 |goto Ironforge 28.8,16.2
 	step
-		talk Lunar Festival Vendor##15898 |goto Ironforge 29.9,14.2
-		buy 8 Small Blue Rocket##21558 |condition itemcount(21558) >= 8
-		buy 2 Blue Rocket Cluster##21571 |condition itemcount(21571) >= 2
+		talk Lunar Festival Vendor##15898 
+		buy 8 Small Blue Rocket##21558 |condition itemcount(21558) >= 8 |goto Ironforge 29.9,14.2
+		buy 2 Blue Rocket Cluster##21571 |condition itemcount(21571) >= 2 |goto Ironforge 29.9,14.2
+		only if not completedq(8867)
 	step
-		_Use_ Small Blue Rockets |use Small Blue Rocket##21558
-		_Use_ Blue Rocket Clusters |use Blue Rocket Cluster##21571
-		_Fire_ #8# Lunar Fireworks |q Lunar Fireworks##8867/1 |goto Ironforge 30.6,17.8 
+		Use Small Blue Rockets |use Small Blue Rocket##21558
+		Use Blue Rocket Clusters |use Blue Rocket Cluster##21571
+		Fire #8# Lunar Fireworks |q Lunar Fireworks##8867/1 |goto Ironforge 30.6,17.8 
 		|tip The firework launchers are large single-barrel tubes in the Mystic Ward pool
-		_Fire_ #2# Lunar Fireworks Clusters |q Lunar Fireworks##8867/2 |goto Ironforge 30.6,17.8 
+		Fire #2# Lunar Fireworks Clusters |q Lunar Fireworks##8867/2 |goto Ironforge 30.6,17.8 
 		|tip The cluster launchers are large quad-barrel tubes in the Mystic Ward pool
 	step
 		talk Lunar Festival Harbinger##15895
 		turnin Lunar Fireworks##8867 |goto Ironforge 28.8,16.2
 		accept Valadar Starsong##8883 |goto Ironforge 28.8,16.2
 	step
-		_Use_ the Lunar Festival Invitation while _standing in the beam of light_ |use Lunar Festival Invitation##21711 |goto Ironforge 30.6,17.8<5 
+		Use the Lunar Festival Invitation while standing in the beam of light |use Lunar Festival Invitation##21711 |goto Ironforge 30.6,17.8<5 
 		|tip The beam of light is in the center of the Mystic Ward pool
-		_Go to_ the Moonglade |goto Moonglade/0 36.6,58.6 < 5 |walk
+		Go to the Moonglade |goto Moonglade/0 36.6,58.6 < 5 |q 8883
+	step
 		talk Valadar Starsong##15864
 		turnin Valadar Starsong##8883 |goto Moonglade 53.6,35.3
 ]])
@@ -3128,7 +3130,8 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Elder Path",[[
 		path follow loose;loop off;ants straight
 		path	66.2,76.8	67.3,58.1	60.1,48.7
 		path	59.9,31.9	68.3,22.9	78.7,22.1
-		_Follow_ the path to Elder Farwhisper
+		Follow the path to Elder Farwhisper
+		|tip Opening the world map will display an ant trail guiding you through the current floor.
 		talk Elder Farwhisper##15607
 		accept Farwhisper the Elder##8727 |instant
 	step
@@ -3153,10 +3156,22 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Elder Path",[[
 		talk Elder Ironband##15567
 		accept Ironband the Elder##8651 |goto Searing Gorge 21.3,79.1 |instant
 	step
+		_Go through_ the passage |goto Blackrock Spire/4 40.6,48.0 < 15
+		_Go down_ the ramp |goto Blackrock Spire/3 49.0,40.6 < 20
+		_Cross_ the bridge |goto 60.0,43.0 < 20
+		|tip Opening the world map will display an ant trail guiding you through the current floor.
 		talk Elder Stonefort##15560
 		accept Stonefort the Elder##8644 |goto Blackrock Spire/3 61.8,40.0 |instant
 	step
-		_Follow the path_ around and up to Elder Morndeep |goto Blackrock Depths/1 51.2,70.8 < 10 |only if walking
+		_Cross_ the bridge |goto 60.0,43.0 < 20
+		_Go through_ the passage |goto Blackrock Spire/4 40.6,48.0 < 15
+		_Leave_ the dungeon |goto Blackrock Spire/4 37.9,41.2 < 10
+		_Go down_ the ramp |goto Burning Steppes/14 66.4,41.6 < 15
+		_Go through_ the door |goto Burning Steppes/16 55.0,84.5 < 20
+		_Enter_ Blackrock Depths here |goto Searing Gorge/16 39.1,18.2 < 15
+		_Go through_ the opening |goto Blackrock Depths/1 38.6,76.0 < 20
+		_Go up_ the ramp |goto 51.5,69.4 < 20
+		|tip Opening the world map will display an ant trail guiding you through the current floor.
 		talk Elder Morndeep##15549
 		accept Morndeep the Elder##8619 |goto Blackrock Depths/1 50.5,62.9 |instant
 	step
@@ -3190,9 +3205,6 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Elder Path",[[
 		talk Elder Bellowrage##15563
 		accept Bellowrage the Elder##8647 |goto Blasted Lands 54.3,49.5 |instant
 	step
-		Follow the winding stairs _all the way down_ and swim under water |goto Swamp of Sorrows/0 69.7,53.5 < 10 |only if walking //travel system did not guide to the instance portal
-		Let the hallways _guide you_ to the Instance portal |goto Swamp of Sorrows/0 71.0,45.9 < 10 |only if walking
-		Enter the Instance _here_ |goto Swamp of Sorrows/0 76.0,45.2 < 10 |walk
 		talk Elder Starsong##15593
 		accept Starsong the Elder##8713 |goto The Temple of Atal'Hakkar/1 62.9,34.4 |instant
 	step
@@ -3225,7 +3237,8 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Elder Path",[[
 		path	44.5,60.2	44.6,54.6	40.8,64.2
 		path	45.7,67.3	44.4,76.0	44.5,82.2
 		path	51.5,93.8
-		_Follow_ the path to Elder Splitrock
+		Follow the path to Elder Splitrock
+		|tip Opening the world map will display an ant trail guiding you through the current floor.
 		talk Elder Splitrock##15556
 		accept Splitrock the Elder##8635 |instant
 	step
@@ -3326,7 +3339,8 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Elder Path",[[
 		path	36.8,81.4	45.5,68.3	51.5,63.2
 		path	53.9,54.2	64.1,53.1	64.0,61.8
 		path	55.5,64.9
-		_Follow_ the path to Elder Igasho
+		Follow the path to Elder Igasho
+		|tip Opening the world map will display an ant trail guiding you through the current floor.
 		talk Elder Igasho##30536
 		accept Igasho the Elder##13021 |instant
 	step
@@ -3344,7 +3358,8 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Elder Path",[[
 		path	25.8,35.5	54.2,45.3	89.0,44.9
 		path	66.2,26.1	Azjol-Nerub/2 53.8,11.0
 		path	Azjol-Nerub/2 46.3,68.4	Azjol-Nerub/1 21.8,43.6
-		_Follow_ the path to Elder Nurgen
+		Follow the path to Elder Nurgen
+		|tip Opening the world map will display an ant trail guiding you through the current floor.
 		talk Elder Nurgen##30533
 		accept Nurgen the Elder##13022 |instant
 	step
@@ -3370,7 +3385,8 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Elder Path",[[
 		path follow strict; loop off; ants straight
 		path	45.1,37.2	50.1,45.3	48.8,53.5
 		path	34.3,51.6	29.4,62.1
-		_Follow_ the path to Elder Yurauk
+		Follow the path to Elder Yurauk
+		|tip Opening the world map will display an ant trail guiding you through the current floor.
 		talk Elder Yurauk##30535
 		accept Yurauk the Elder##13066 |instant
 	step
@@ -3381,7 +3397,8 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Elder Path",[[
 		path follow strict; loop off; ants straight
 		path	59.1,49.2	58.2,68.5	50.9,73.6
 		path	46.5,71.5	45.6,61.5
-		_Follow_ the path to Elder Ohanzee
+		Follow the path to Elder Ohanzee
+		|tip Opening the world map will display an ant trail guiding you through the current floor.
 		talk Elder Ohanzee##30537
 		accept Ohanzee the Elder##13065 |instant
 	step
@@ -3395,7 +3412,8 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Elder Path",[[
 		path	67.2,18.1	63.2,32.3	68.2,40.2
 		path	67.8,55.0	60.6,57.8	55.8,59.2
 		path	55.5,77.4	63.6,77.1	68.9,79.1
-		_Follow_ the path to Elder Kilias
+		Follow the path to Elder Kilias
+		|tip Opening the world map will display an ant trail guiding you through the current floor.
 		talk Elder Kilias##30534
 		accept Kilias the Elder##13023 |instant
 	step
@@ -3414,7 +3432,8 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Elder Path",[[
 		path	43.8,27.7	23.6,38.5	26.4,52.5
 		path	21.8,78.7	28.7,89.1	49.5,82.6
 		path	47.5,70.0
-		_Follow_ the path to Elder Jarten
+		Follow the path to Elder Jarten
+		|tip Opening the world map will display an ant trail guiding you through the current floor.
 		talk Elder Jarten##30531
 		accept Jarten the Elder##13017 |instant
 	step
@@ -3428,7 +3447,8 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Elder Path",[[
 		path	Utgarde Pinnacle/2 68.6,69.9	Utgarde Pinnacle/2 68.4,37.1
 		path	Utgarde Pinnacle/2 61.6,36.7	Utgarde Pinnacle/2 56.3,36.8
 		path	Utgarde Pinnacle/1 56.3,21.3	Utgarde Pinnacle/1 48.7,23.1
-		_Follow_ the path to Chogan'gada
+		Follow the path to Chogan'gada
+		|tip Opening the world map will display an ant trail guiding you through the current floor.
 		talk Elder Chogan'gada##30538
 		accept Chogan'gada the Elder##13067 |instant
 ]])
@@ -3442,36 +3462,38 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Achievement",[[
 		You can drag the Festival Firecrackers onto your action bar 
 		|tip You will need to click the ground where you want to throw them.
 		use Festival Firecracker##21747
-		Earn the _Frienzied Firecracker_ Achievement |achieve 1552 |goto Ironforge 30.7,18.8
+		Earn the Frienzied Firecracker Achievement |achieve 1552 |goto Ironforge 30.7,18.8
 	step
-		Drag the _Red Rocket Clusters_ to you action bar
-		You will need to _spam whatever button_ the Red Rocket Cluster is assigned to
+		Drag the Red Rocket Clusters to you action bar
+		You will need to spam whatever button the Red Rocket Cluster is assigned to
 		use Red Rocket Cluster##21576
-		Earn _The Rockets Red Glare_ Achievement |achieve 1281 |goto Ironforge 30.6,18.9
+		Earn The Rockets Red Glare Achievement |achieve 1281 |goto Ironforge 30.6,18.9
 	step
-		_Use_ the Lunar Festival Invitation while _standing in the beam of light_ |use Lunar Festival Invitation##21711 |goto Ironforge 30.6,17.8 < 5 |only if walking
+		Use the Lunar Festival Invitation while standing in the beam of light |use Lunar Festival Invitation##21711 |goto Ironforge 30.6,17.8 < 5 |only if walking
 		|tip The beam of light is in the center of the Mystic Ward pool.
-		_Go to_ the Moonglade |goto Moonglade/0 36.6,58.6 < 5 |only if walking
+		Go to the Moonglade |goto Moonglade/0 36.6,58.6 < 5 |only if walking
 		talk Valadar Starsong##15864
-		_Buy one_ of the following items
+		Buy one of the following items
 		buy Festive Green Dress##21157 |n
 		buy Festive Pink Dress##21538 |n
 		buy Festive Purple Dress##21539 |n
 		buy Festive Black Pant Suit##21541 |n
 		buy Festive Blue Pant Suit##21544 |n
 		buy Festive Teal Pant Suit##21543 |n
-		Earn the _Lunar Festival Finery_ Achievement |achieve 626 |goto Moonglade 53.6,35.3
+		Earn the Lunar Festival Finery Achievement |achieve 626 |goto Moonglade 53.6,35.3
 	step
 		talk Valadar Starsong##15864
 		accept Elune's Blessing##8868 |goto Moonglade 53.6,35.3
 	step
 		talk Lunar Festival Vendor##15898
-		buy 1 Green Rocket Cluster##21574 |condition itemcount(21574) >= 1 |goto Moonglade 36.6,58.3
+		buy 36 Green Rocket Cluster##21574 |condition itemcount(21574) >= 36 |goto Moonglade 36.6,58.3 
+		|tip You may need more or less to summon Omen.
+		only if not completedq(8868)
 	step
-		Use your Green Rocket Clusters _until Omen spawns_ |use Green Rocket Cluster##21574
+		Use your Green Rocket Clusters until Omen spawns |use Green Rocket Cluster##21574 |goto Moonglade 63.7,62.4
 		kill Omen##15467 
 		|tip You will need a group of 4 or 5 to beat him. If he has already been engaged in combat you can participate anyway just make sure to stand in the light after he is defeated.
-		Receive _Elune's Blessing_ |q Elune's Blessing##8868/1 |goto Moonglade 63.7,62.4
+		Receive _Elune's Blessing_ |q 8868/1 
 	step
 		talk Valadar Starsong##15864
 		turnin Elune's Blessing##8868 |goto Moonglade 53.6,35.3

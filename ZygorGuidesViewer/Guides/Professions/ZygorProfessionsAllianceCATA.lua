@@ -4441,18 +4441,15 @@ skillmax Skinning,375
 |tip You must be at least level 55 to learn this skill.
 step
 map Hellfire Peninsula
-path follow loose;loop;ants straight;dist 60
-path	62.0,56.6	60.6,56.8	58.9,56.1
-path	57.2,56.0	56.2,54.3	58.2,54.2
-path	59.9,54.6	66.6,61.4	69.1,61.6
-path	70.3,63.7	70.6,66.4	69.3,66.5
-path	68.0,65.2	66.5,62.5	65.3,61.0
-path	64.0,60.1	62.4,57.4
+path follow strict;loop;ants straight;dist 60
+path 	55.73,55.25		57.68,54.49	59.67,53.75
+path 	61.42,54.52		62.04,56.58	59.44,57.60
+path	56.91,56.86		55.36,56.16
 Kill any beasts you see and skin them
 skill Skinning,305
 step
 map Hellfire Peninsula
-path follow loose;loop;ants straight;dist 60
+path follow strict;loop;ants straight;dist 60
 path	40.7,85.6	37.6,86.1	34.9,88.8
 path	32.7,91.5	33.6,92.4	35.9,91.2
 path	37.8,89.9	39.2,88.5	40.7,86.6

@@ -5190,3 +5190,20 @@ step
 talk Master Hight##66260
 turnin Complete Your Training: The Final Test##31844 |goto 48.6,42.7
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\The Loremaster\\Loremaster of Pandaria",{
+condition_end="achieved(6541)",
+description="Complete all the storyline achievements in all the zones of the game.",
+},[[
+step
+Use the Pandaria Leveling Guides to complete Loremaster:
+|tip The Leveling guides cover all required questlines for Loremaster.
+|tip Click one of the lines below to load the Leveling guide for that zone.
+Jade Forest Quests |achieve 6534 |loadguide "Zygor's Horde Leveling Guides\\Pandaria (85-90)\\The Jade Forest (85-86)"
+Valley of the Four Winds Quests |achieve 6301 |loadguide "Zygor's Horde Leveling Guides\\Pandaria (85-90)\\Valley of the Four Winds (86-87)"
+Townlong Steppes Quests |achieve 6539 |loadguide "Zygor's Horde Leveling Guides\\Pandaria (85-90)\\Townlong Steppes (88-89)"
+Dread Wastes Quests |achieve 6540 |loadguide "Zygor's Horde Leveling Guides\\Pandaria (85-90)\\Dread Wastes (89-90)"
+Krasarang Wilds Quests |achieve 6536 |loadguide "Zygor's Horde Leveling Guides\\Pandaria (85-90)\\Krasarang Wilds (87)"
+Kun-Lai Summit Quests |achieve 6538 |loadguide "Zygor's Horde Leveling Guides\\Pandaria (85-90)\\Kun-Lai Summit (87-88)"
+step
+Congratulations, you have _earned_ the _Loremaster of Pandaria_ achievement!
+]])

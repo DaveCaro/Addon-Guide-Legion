@@ -61,7 +61,7 @@ confirm
 step
 kill Dark Shaman Koranthal##61412 |n |only if default
 kill Dark Shaman Koranthal##61412 |q The Dark Shaman##30996/1 |only if havequest(30996)
-|tip When Koranthal begins casts Shadow Storm, the dark impacts on the ground will deal damage to anyone within 2 yards. Avoid these areas.
+|tip When Koranthal begins casts _Shadow Storm_, the dark impacts on the ground will deal damage to anyone within 2 yards. Avoid these areas.
 _Tank:_
 |tip Interrupt Twisted Elements.
 _DPS:_

@@ -4,7 +4,7 @@ local data={}
 addon.LibRoverData = data
 
 data.version={
-	nodes_version = 20,  -- Increase this when working on the nodes. Bake the connections using ZGV.Testing.NeighbourCache:DumpNeighbours() when you're done.
+	nodes_version = 21,  -- Increase this when working on the nodes. Bake the connections using ZGV.Testing.NeighbourCache:DumpNeighbours() when you're done.
 }
 
 -- These are kept strictly unique. Make up bogus names if you need to.
@@ -2837,8 +2837,8 @@ data.basenodes.travel = {
 	"Blasted Lands,55.0,54.2 <override_text:You must be at least 90 to enter Draenor.> <override_icon:error> -to- Warspear,44,35 (H:PORTAL) {cond:UnitLevel('player')<90} {template:darkportal} {cost:999}", -- Dark Portal now leads to Ashran
 
 	-- Ally
-	"Stormwind City 49.94,87.03 -to- @hfp_port_dst_a (A:PORTAL) {cond:UnitLevel('player')>=58} {template:custom}"..
-		"{atob:Click the Portal to Hellfire Peninsula\nupstairs inside the Mage Tower}",
+	-- "Stormwind City 49.94,87.03 -to- @hfp_port_dst_a (A:PORTAL) {cond:UnitLevel('player')>=58} {template:custom}"..
+	--	"{atob:Click the Portal to Hellfire Peninsula\nupstairs inside the Mage Tower}", -- This doesn't exist.
 
 	"Stormwind City 49.94,87.03 <override_text:You must be at least 58 to enter Outland.> <override_icon:error> -to- @hfp_port_dst_a (A:PORTAL) {cond:UnitLevel('player')<58} {cost:999}",
 	"Ironforge,27.2,7.0 -to- @hfp_port_dst_a (A:PORTAL) {cond:UnitLevel('player')>=58}",
