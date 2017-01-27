@@ -334,7 +334,7 @@ local function LoadSettings()
 					[DGV_AUTOFLIGHTPATHSELECT]			= { category = "Waypoints",	showOnRightColumn = true,	text = "Auto Select Flight Path",	checked = false,	tooltip = "Automatically select the suggested flight path after opening the flightmaster map",},
 					[DGV_USETAXISYSTEM]			= { category = "Waypoints",	showOnRightColumn = true,	text = "Use Taxi System",	checked = true,	tooltip = "Taxi system will find the fastest route to get to your destination with the use of portals, teleports, vehicles etc. Disabling this option will give you a direct waypoint instead.",},
 					[DGV_AUTOREPAIRGUILD]		= { category = "Other",		text = "Use Guild Bank",    	checked = false,   	tooltip = "Use guild funds when repairing automatically", indent=true,},
-					[DGV_AUTO_QUEST_TRACK] 		= { category = "Questing",	text = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0:0:0:-1|tAuto Quest Tracking",	checked = true,		tooltip = "Automatically add quest to the Objective Tracker on accept or objective update", module = "Guides", indent=false},
+					[DGV_AUTO_QUEST_TRACK] 		= { category = "Questing",	text = "Auto Quest Tracking",	checked = true,		tooltip = "Automatically add quest to the Objective Tracker on accept or objective update", module = "Guides", indent=false},
 					[DGV_GUIDESUGGESTMODE] 		= { category = "Questing",	text = "Guide Suggest Mode",	showOnRightColumn = true, checked = true,		tooltip = "Suggest guides for your player on level up", module = "Guides", indent=false,},
 					[DGV_SMALLFRAMEBORDER] 		= { category = "Borders",	text = "Small Frame Border",	checked = true,		tooltip = "Use the same border that is selected for the large frame", module = "SmallFrame"},
 					[DGV_WATCHFRAMEBORDER] 		= { category = "Borders",	text = "Objective Tracker Frame Border",	checked = true,		tooltip = "Add a border for the Objective Tracker Frame", module = "DugisWatchFrame"},
@@ -670,8 +670,8 @@ function DugisGuideViewer:OnInitialize()
 	CATEGORY_TREE = { 
 
 		{ value = "Search Locations", 	text = L["Search Locations"], 	icon = nil },
-		{ value = "Questing", 	text = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0:0:0:-1|t"..L["Questing"], 	icon = nil },
-		{ value = "Waypoints", 	text = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0:0:0:-1|t"..L["Waypoints"], icon = nil },
+		{ value = "Questing", 	text = L["Questing"], 	icon = nil },
+		{ value = "Waypoints", 	text = L["Waypoints"], icon = nil },
 		{ value = "Display", 	text = L["Display"], 	icon = nil },
 		{ value = "Borders", 	text = L["Borders"], 	icon = nil },
 		{ value = "Frames", 	text = L["Frames"], 	icon = nil },
@@ -680,7 +680,7 @@ function DugisGuideViewer:OnInitialize()
 		{ value = "Target",		text = L["Target Button"],	icon = nil },
 		{ value = "Tooltip", 	text = L["Tooltip"], 	icon = nil },
 		{ value = "Gear Set",		text = L["Gear Set"],		icon = nil },		
-		{ value = "Gear Scoring",		text = L["Gear Scoring"],		icon = nil },
+		{ value = "Gear Scoring",		text = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0:0:0:-1|t"..L["Gear Scoring"],		icon = nil },
 		{ value = "Gear Finder",		text = L["Gear Finder"],		icon = nil },
 		{ value = "Memory", 	text = L["Memory"], 	icon = nil },
 		{ value = "Other", 		text = L["Other"], 	icon = nil },
@@ -1575,11 +1575,11 @@ local function GetSettingsCategoryFrame(category, parent)
 			DugisGuideViewer.Modules.GearAdvisor.scrollFrame.scrollBar:SetValue(DugisGuideViewer.Modules.GearAdvisor.scrollFrame.scrollBar:GetValue() - delta * 24)  
 		end)          
         
-        scrollFrame.frame:SetPoint("TOPLEFT", frame,"TOPLEFT", 300, -44)
+        scrollFrame.frame:SetPoint("TOPLEFT", frame,"TOPLEFT", 300, -15)
         
         scrollFrame.scrollBar:SetHeight(250)
         scrollFrame.scrollBar:ClearAllPoints()
-        scrollFrame.scrollBar:SetPoint("TOPLEFT", frame, "TOPLEFT", 552, -57)
+        scrollFrame.scrollBar:SetPoint("TOPLEFT", frame, "TOPLEFT", 552, -27)
         
         local content = CreateFrame("Frame", nil, scrollFrame.frame)
         content:ClearAllPoints()
@@ -1641,6 +1641,60 @@ local function GetSettingsCategoryFrame(category, parent)
 		button:SetScript("OnClick", function() 
             DugisGuideViewer.Modules.GearAdvisor:ApplyWeights()
 		end)
+
+		local button = CreateFrame("Button", "GA_ImportWeightsButton", frame, "UIPanelButtonTemplate")
+		local btnText = L["|TInterface\\AddOns\\DugisGuideViewerZ\\Artwork\\UpgradeArrow.tga:0:0:0:0|t Import Scores"]
+		local fontwidth = DugisGuideViewer:GetFontWidth(btnText, "GameFontHighlight")
+		button:SetText(btnText)
+		button:SetWidth(fontwidth + 20)
+		button:SetHeight(22)
+		button:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -22, 13)
+		button:RegisterForClicks("LeftButtonUP")
+        
+        StaticPopupDialogs["SCORES_IMPORT_DIALOG"] = {
+            text = "Paste below scores from another addon and press Import.",
+            button1 = "Import",
+            button2 = "Cancel",
+            editBoxWidth = 400,
+            OnShow = function(self)
+                local textEditor = AceGUI:Create("MultiLineEditBox")
+                textEditor.frame:SetParent(self)
+                textEditor.editBox:SetCountInvisibleLetters(true)
+                textEditor.frame:SetPoint("TOPLEFT", self, "TOPLEFT", 50, -40)
+                textEditor.frame:SetWidth(370)
+                textEditor.frame:SetHeight(170) 
+                textEditor:SetFocus()
+                self:SetHeight(320) 
+                textEditor.frame:Show()
+                textEditor.button:Hide()
+                textEditor.label:Hide()
+                
+                self.insertedFrame = textEditor.frame
+                self.textEditorObject = textEditor
+                DugisGuideViewer:SetFrameBackdrop(self,  "Interface\\DialogFrame\\UI-DialogBox-Background-Dark", DugisGuideViewer:GetBorderPath(), 10, 4, 12, 5)
+                
+                self:ClearAllPoints()
+                self:SetParent(GA_ImportWeightsButton:GetParent())
+                self:SetPoint("TOPLEFT", GA_ImportWeightsButton:GetParent(), "TOPLEFT", 70, -40)
+                self:SetFrameStrata("TOOLTIP")
+                self:SetFrameLevel(1000)
+            end,
+            OnHide = function()
+            end,
+            OnAccept = function(self)
+                local text = self.textEditorObject:GetText()
+                DugisGuideViewer.Modules.GearAdvisor:ImportScoresFromText(text)
+            end,
+            timeout = 0,
+            whileDead = true,
+            hideOnEscape = true,
+            preferredIndex = 3,
+        }
+
+		button:SetScript("OnClick", function() 
+            StaticPopup_Show ("SCORES_IMPORT_DIALOG")
+		end)	 
+        
 	end
     
     if category == "Gear Scoring" then
@@ -1649,6 +1703,8 @@ local function GetSettingsCategoryFrame(category, parent)
             TryToSetCurrentSpecialization()
             DugisGuideViewer.Modules.GearAdvisor:UpdateWeightsTextboxes()    
         end
+        
+        StaticPopup_Hide("SCORES_IMPORT_DIALOG")
     end
     
     

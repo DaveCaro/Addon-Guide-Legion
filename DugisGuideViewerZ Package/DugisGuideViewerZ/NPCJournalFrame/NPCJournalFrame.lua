@@ -796,7 +796,7 @@ function NPCJournalFrame:Initialize()
 	end
     
 	function NPCJournalFrame:ReplaceGuideTags(text, smallframe, guideIndex, title, forWhatsNew)
-    
+        local uniqueGuideLinkID = 0
         local forWhatsNewText = ""
         
         if forWhatsNew then
@@ -804,13 +804,19 @@ function NPCJournalFrame:Initialize()
         end
         
 		local result = string.gsub(text, '%([%s]*guide:[%s]*["][^"]*["][%s]*%)', function(textFound) 
+            uniqueGuideLinkID = uniqueGuideLinkID + 1
+        
 			local newText = string.gsub(textFound, '%)$', '')
 			newText = string.gsub(newText, '^%(', '')
 			newText = string.gsub(newText, '["]', '')
 			local tag_id = LuaUtils:split(newText, ':')
 			local guideRawTitle = tag_id[2]
+
+			local color = "ff44ff44"		
+
             local formattedTitle = DugisGuideViewer:GetFormattedTitle(guideRawTitle)
-			return '|Hguide:'..guideRawTitle..forWhatsNewText..'|h|cff44ff44['..formattedTitle..']|r|h'
+            
+			return '|Hguide:'..guideRawTitle..forWhatsNewText..":"..uniqueGuideLinkID..'|h|c'..color..'['..formattedTitle..']|r|h'
 
 		end) 
 		return result
@@ -1665,8 +1671,11 @@ function NPCJournalFrame:Initialize()
                 SetTooltipOwner(DugisGuideTooltip, smallFrameAsOwner, stickyFrameAsOwner, dugisMainAsOwner)
                 
 				local guideTitle = tag[2]
+				local uniqueGuideLinkID = tag[3]
 				guideTitle = DGV:GetFormattedTitle(guideTitle)
-				
+
+                NPCJournalFrame.hoveredGuideLinkId = uniqueGuideLinkID
+ 
 				local DGV_SmallFrameFontSize = DGV:GetDB(DGV_SMALLFRAMEFONTSIZE)
 				local filename, _, _ = GameTooltipTextLeft1:GetFont()	
 				--Please uncomment those lines if you want to the tooltip to be sticked to cursor
@@ -1732,6 +1741,8 @@ function NPCJournalFrame:Initialize()
             linkData = linkData or ""
             local tag = LuaUtils:split(linkData, ':')
 			local tagType = tag[1]
+            
+            NPCJournalFrame.hoveredGuideLinkId = nil
             
             if WasWaypointHoveredLastTimeOnTextChange() and tagType ~= "waypoint" then
                 return
@@ -1802,6 +1813,10 @@ function NPCJournalFrame:Initialize()
                     end
                 else
                     DugisGuideViewer:DisplayViewTab(guideTitle, true)
+                end
+                
+                if DugisGuideTooltip then
+                    DugisGuideTooltip:Hide()
                 end
 
 				print("|cff11ff11Dugi Guides: |r"..DGV:GetFormattedTitle(guideTitle).."|cff11ff11 selected.|r")

@@ -54613,6 +54613,9 @@ guideName2LevelRange["The Nighthold (Raid Finder)"] = {110,113}
     --Calculated based on all related guideTitles 
     --{[gearId] = {59, 90}, ..}
     local gearId2LevelRange = {}
+    
+    local gearId2isReputation = {}  
+    
      
     local allGearGuides = {}
     
@@ -54627,6 +54630,7 @@ guideName2LevelRange["The Nighthold (Raid Finder)"] = {110,113}
     DugisGearFinder.gearId2PossibleDifficulties_map = gearId2PossibleDifficulties_map  
     DugisGearFinder.allGearIds = allGearIds  
     DugisGearFinder.gearId2LevelRange = gearId2LevelRange  
+    DugisGearFinder.gearId2isReputation = gearId2isReputation  
     
     local i = 1
     
@@ -54729,6 +54733,7 @@ guideName2LevelRange["The Nighthold (Raid Finder)"] = {110,113}
             local dungeon = guideInfo.dungeon
             local instanceId = guideInfo.instanceId
 			local heroic = guideInfo.heroic
+			local reputationId = guideInfo.reputationId
             
             --Difficulty
             local difficulty = guideInfo.diff
@@ -54759,31 +54764,48 @@ guideName2LevelRange["The Nighthold (Raid Finder)"] = {110,113}
             
                     local correctCurrentFaction = true
                     
-                    local alliance_horde = questIds
-                    
-                    if alliance_horde then
-                        if englishFaction == "alliance" and alliance_horde[1] == "none" then
-                            correctCurrentFaction = false
-                        end
+                    if reputationId == nil then
+                        local alliance_horde = questIds
                         
-                        if englishFaction == "horde" and alliance_horde[2] == "none" then
-                            correctCurrentFaction = false
-                        end
-                        
-                        if correctCurrentFaction then
-                            if englishFaction == "alliance" then
+                        if alliance_horde then
+                            if englishFaction == "alliance" and alliance_horde[1] == "none" then
+                                correctCurrentFaction = false
+                            end
+                            
+                            if englishFaction == "horde" and alliance_horde[2] == "none" then
+                                correctCurrentFaction = false
+                            end
+                            
+                            if correctCurrentFaction then
+                                if englishFaction == "alliance" then
+                                    questId = alliance_horde[1]
+                                end
+                                
+                                if englishFaction == "horde" then
+                                    questId = alliance_horde[2]
+                                end
+                            end  
+
+                            if includedGuidesForPandaren[orgGuideTitle] then
                                 questId = alliance_horde[1]
                             end
                             
-                            if englishFaction == "horde" then
-                                questId = alliance_horde[2]
-                            end
-                        end  
-
-                        if includedGuidesForPandaren[orgGuideTitle] then
-                            questId = alliance_horde[1]
+                        end
+                    else
+                  
+                        local faction = guideInfoPropertyName
+                        
+                        if englishFaction == "alliance" and faction == "horde" then
+                            correctCurrentFaction = false
                         end
                         
+                        if englishFaction == "horde" and faction == "alliance" then
+                            correctCurrentFaction = false
+                        end
+                        
+                        if not correctCurrentFaction then
+                            gearIds = {}
+                        end
                     end
                    
                     LuaUtils:foreach(gearIds, function(value, index)
@@ -54797,11 +54819,16 @@ guideName2LevelRange["The Nighthold (Raid Finder)"] = {110,113}
                         if (class == nil or class == classID or class == ANY) and valueType ~= "table" and index ~= "boss" and index ~= "encounterId" and index ~= "quest" and index ~= "class" then
                         
                             local gearId = value
+                            
+                            if reputationId then
+                                gearId2isReputation[gearId] = true
+                            end
                         
                             local gearInfo = {}
                             
                             gearInfo.gearId = gearId
                             gearInfo.bossId = boss
+                            gearInfo.reputationId = reputationId
                             gearInfo.encounterId = encounterId
                             if questId then
                                 gearInfo.questIds = {questId}
@@ -54823,7 +54850,7 @@ guideName2LevelRange["The Nighthold (Raid Finder)"] = {110,113}
                            
                             --If there is no related quest nor boss then there is no point to add the gear (the current faction might be other than related to quest)
                             --Preventing adding data relevant only for other faction
-                            if questId or boss then
+                            if questId or boss or reputationId then
                             
                                 gearInfo.guideTitle = guideTitle
                                 gearInfo.dungeonmap = dungeonmap
@@ -54853,9 +54880,10 @@ guideName2LevelRange["The Nighthold (Raid Finder)"] = {110,113}
                                 
                                 if questId and not gearId2Quests_map[gearId]  then
                                     gearId2Quests_map[gearId] = {}
-                                    
-                                    
-                                    --Adding data to allGearIds
+                                end
+                                
+                                --Adding data to allGearIds
+                                if not allGearIdsPresents[gearId] then
                                     allGearIds[#allGearIds + 1] = gearId
                                     
                                     --todo remove if not used

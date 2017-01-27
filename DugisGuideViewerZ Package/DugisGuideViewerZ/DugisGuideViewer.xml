@@ -45,7 +45,7 @@
 						<Anchor point="TOP" relativeTo = "$parent"/>
 					</Anchors>
 				</FontString>			
-				<FontString name="$parentDesc" parentKey="Desc" inherits="GameFontHighlightSmall" wraponspaces="true" wordwrap="true" justifyH="LEFT" justifyV="TOP" text="" visible ="false">
+				<FontString name="$parentDesc" parentKey="Desc" inherits="GameFontHighlightSmall" wraponspaces="true" wordwrap="true" justifyH="LEFT" frameLevel="10" enableMouse='false' justifyV="TOP" text="" visible ="false">
 					<Anchors>
 						<Anchor point="LEFT" relativeTo="$parent" relativePoint="LEFT">
 							<Offset>
@@ -64,6 +64,25 @@
 						</Anchor>
 					</Anchors>
 				</FontString>
+				<FontString name="$parentDescEventHandler" parentKey="DescEventHandler" frameLevel="11" inherits="GameFontHighlightSmall" wraponspaces="true" alpha="0"  wordwrap="true" justifyH="LEFT" justifyV="TOP" text="" visible ="true">
+					<Anchors>
+						<Anchor point="LEFT" relativeTo="$parent" relativePoint="LEFT">
+							<Offset>
+								<AbsDimension x="16" y="0"/>
+							</Offset>
+						</Anchor>	
+						<Anchor point="TOP" relativeTo="$parentText" relativePoint="BOTTOM">
+							<Offset>
+								<AbsDimension x="0" y="-8"/>
+							</Offset>
+						</Anchor>
+						<Anchor point="RIGHT" relativeTo="$parent" relativePoint="RIGHT">
+							<Offset>
+								<AbsDimension x="-16" y="0"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>                
 				<!--<FontString name="$parentObjectives" parentKey="Objectives" inherits="WatchFontTemplate">
 					<Size x="160" y="0"/>
 					<Anchors>
@@ -1642,7 +1661,7 @@
 							   <Anchors>
 								   <Anchor point="TOPLEFT" relativeTo="$parentSelection1" relativePoint="TOPRIGHT">
 										<Offset>
-											<AbsDimension x="6" /> 
+											<AbsDimension x="-6" /> 
 										</Offset>
 									</Anchor>
 							   </Anchors>
@@ -1821,6 +1840,7 @@
 								PlaySound("igCharacterInfoTab");
                                 DugisGuideViewer.currentTabText = "Settings"
                                 DugisGuideViewer:UpdateCurrentGuideExpanded()
+                                StaticPopup_Hide("SCORES_IMPORT_DIALOG")
 							</OnClick>
 						</Scripts>
 					</CheckButton>

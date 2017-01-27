@@ -139,7 +139,7 @@ function Guides:Initialize()
 		[8] = {text = "Events",		title = "Event Guides", 	guidetype = "E",	LeftFrame = DGVHomeFrame,		RightFrame = DGVScrollFrame7,	icon=SetCurrentEventIcon, rightShouldScroll = false},
 		[9] = {text = "Achievements",	title = "Achievement Guides", guidetype = "A",LeftFrame = DGVHomeFrame,		RightFrame = DGVScrollFrame8,	icon="Interface\\Icons\\ACHIEVEMENT_GUILDPERK_HONORABLEMENTION", rightShouldScroll = false},
 		[10] = {text = "Professions", 	title = "Profession Guides", guidetype = "P",LeftFrame = DGVHomeFrame,		RightFrame = DGVScrollFrame9,	icon="Interface\\Icons\\INV_Scroll_11", rightShouldScroll = false},
-		[4] = {text = "Suggest Guides", title = "Suggested Guides", 				LeftFrame = DGVHomeFrame, 		RightFrame = DGVScrollFrame10, 	icon="Interface\\Icons\\INV_Misc_Orb_01", rightShouldScroll = false},
+		[4] = {text = "Suggest", title = "Suggested Guides", 				LeftFrame = DGVHomeFrame, 		RightFrame = DGVScrollFrame10, 	icon="Interface\\Icons\\INV_Misc_Orb_01", rightShouldScroll = false},
         [12] = {text = "Elites", 	title = "Elites Guides", guidetype = "NPC", LeftFrame = DGVHomeFrame,		RightFrame = DGVScrollFrame12,	icon="Interface\\Icons\\spell_shadow_deathscream", rightShouldScroll = false},
         [13] = {text = "Mounts", 	title = "Mounts Guides", guidetype = "Mounts", LeftFrame = DGVHomeFrame,		RightFrame = DGVScrollFrame13,	icon="Interface\\Icons\\Ability_mount_ridingelekk", rightShouldScroll = false},
         [14] = {text = "Pets", 	title = "Companions Guides", guidetype = "Pets", LeftFrame = DGVHomeFrame,		RightFrame = DGVScrollFrame14,	icon="Interface\\Icons\\Ability_racial_bearform", rightShouldScroll = false},
@@ -2680,6 +2680,20 @@ function Guides:Initialize()
 		if (useitem and uinbag) then haveu = true else haveu = false end 
 		return haveu
 	end
+    
+    function DGV:IsQuestInObjectiveTracker(questId)
+        if IsWorldQuestWatched(questId) then
+            return true
+        end
+    end    
+  
+    hooksecurefunc("BonusObjectiveTracker_UntrackWorldQuest", function()
+        DugisGuideViewer:MoveToPrevQuest()
+    end)   
+    
+    hooksecurefunc("BonusObjectiveTracker_TrackWorldQuest", function()
+        DugisGuideViewer:MoveToPrevQuest()
+    end)      
 
 	function DGV:CheckForSkip(indx) 
 		--local lootitem			 	= DGV:ReturnTag("L", indx)
@@ -2695,7 +2709,18 @@ function Guides:Initialize()
 		local pha					= DGV:ReturnTag("PHA", indx)
 		local map1, map2, map3, map4 = DGV:ReturnTag("MAP", indx)
 		local tid					= DGV:ReturnTag("TID", indx)
+		local questId				= DGV:ReturnTag("QID", indx)
+		local WQ					= DGV:ReturnTag("WQ", indx)
 		local tidInlog
+       
+        if questId and LuaUtils:trim(questId) ~= "" then
+            local isWOrldQuest = QuestUtils_IsQuestWorldQuest(questId)
+            if WQ or isWOrldQuest then
+                if not DGV:IsQuestInObjectiveTracker(questId) then
+                    return true
+                end
+            end
+        end
 		
 		if tid then tidInlog = DGV:GetQuestLogIndexByQID(tonumber(tid)) end
 		

@@ -30,7 +30,7 @@ A Stocking Up |O| |N|(npc:4156) (49, 61)| |QID|29323| |Z|381| |D| |NPC|4156|
 A The Sister's Pendant |O| |N|(npc:4156) (49, 61)| |QID|29324| |Z|381| |D| |NPC|4156|
 
 C Remembering the Ancestors |O| |N|Collect the Blessed Rice Cakes from the {Temple of the Moon} (43.2, 78.4)| |QID|29314| |Z|381| |D| |OBJ|5493|
-T Remembering the Ancestors |N|Shrine of the Ancestors (69.2, 39.9)| |QID|29314| |Z|381| |D| |OBJ|2048|
+T Remembering the Ancestors |O| |N|Shrine of the Ancestors (69.2, 39.9)| |QID|29314| |Z|381| |D| |OBJ|2048|
 
 C A Slippery Snack |O| |N|Gather 6 (item:69915) from the shallow water near {Rut'theran Village}, you have to swim down and get it underwater without fishing (56.2, 93)| |QID|29325| |Z|41| |D| |NPC|53522|
 C An Old Favorite |O| |N|Catch 8 Kaldorei Herring by fishing in {Rut'theran Village} (56.2, 93)| |QID|29359| |Z|41| |D|
@@ -38,7 +38,7 @@ C Happy as a Clam Digger |O| |N|Gather 10 (item:69910) from the shores near {Rut
 C Stocking Up |O| |N|Catch 5 (item:69912) by fishing in {Darnassus} (50.7, 61.9)| |QID|29323| |Z|381| |D|
 C The Sister's Pendant |O| |N|Catch a (item:69914) by fishing in {Darnassus} and use it to find (item:69913) (50.7, 61.9)| |QID|29324| |Z|381| |D| |U|69914|
 
-T A Slippery Snack |N|(npc:4156) (49, 61)| |QID|29325| |Z|381| |D| |NPC|4156|
+T A Slippery Snack |O| |N|(npc:4156) (49, 61)| |QID|29325| |Z|381| |D| |NPC|4156|
 T An Old Favorite |O| |N|(npc:4156) (49, 61)| |QID|29359| |Z|381| |D| |NPC|4156|
 T Happy as a Clam Digger |O| |N|(npc:4156) (49, 61)| |QID|29321| |Z|381| |D| |NPC|4156|
 T Stocking Up |O| |N|(npc:4156) (49, 61)| |QID|29323| |Z|381| |D| |NPC|4156|

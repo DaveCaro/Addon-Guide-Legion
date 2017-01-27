@@ -233,6 +233,7 @@ function SmallFrame:Initialize()
 		local DGV_SmallFrameFontSize = DGV:GetDB(DGV_SMALLFRAMEFONTSIZE)
 		local filename, _, _ = frame.Text:GetFont() -- needed so that it doesn't overwrite font style when using other addons. 
 		frame.Desc:SetFont(filename, DGV_SmallFrameFontSize - 1)
+		frame.DescEventHandler:SetFont(filename, DGV_SmallFrameFontSize - 1)
 		frame.Text:SetFont(filename, DGV_SmallFrameFontSize)
 
 		if frame.objectiveLines and frame.objectiveLines.usedFrames then
@@ -263,6 +264,7 @@ function SmallFrame:Initialize()
 
 			--set padding values
 			frame.Desc:SetPoint("TOP", frame.Text, "BOTTOM", 0, -ANCHORED_STATUS_FRAME_TEXT_DESC_PADDING)
+			frame.DescEventHandler:SetPoint("TOP", frame.Text, "BOTTOM", 0, -ANCHORED_STATUS_FRAME_TEXT_DESC_PADDING)
 			
 			--measure height
 			--set height
@@ -292,6 +294,7 @@ function SmallFrame:Initialize()
 			
 			--set padding values
 			frame.Desc:SetPoint("TOP", frame.Text, "BOTTOM", 0, -FLOATING_STATUS_FRAME_TEXT_DESC_PADDING)
+			frame.DescEventHandler:SetPoint("TOP", frame.Text, "BOTTOM", 0, -FLOATING_STATUS_FRAME_TEXT_DESC_PADDING)
 			
 			--measure height
 			--set height
@@ -303,6 +306,7 @@ function SmallFrame:Initialize()
 		local name = "DGVRow"..frame.guideIndex.."Desc"
 		local text = _G[name]
 		local descriptionText = text:GetText()
+        local rawText = descriptionText
 		
 		--[[
 		if descriptionText and not DugisGuideViewer:GetDB(DGV_DISPLAYCOORDINATES) then
@@ -315,7 +319,7 @@ function SmallFrame:Initialize()
 			end
 		end
 		
-		return descriptionText
+		return descriptionText, rawText
 	end
 	--[[
 	local function ColorIsConstant(constant, r, g, b)
@@ -454,19 +458,31 @@ function SmallFrame:Initialize()
 			frame.Text:SetText(qName)
 			frame.Text:SetPoint("LEFT", 65, 0)
 			if IsTooltipEmbedded() then
-				frame.Desc:SetText(StatusFrame_GetDescriptionText(frame))
+                local text, rawText = StatusFrame_GetDescriptionText(frame)
+				frame.Desc:SetText(text)
+                frame.Desc.rawText = rawText
+				frame.DescEventHandler:SetText(text)
+                frame.DescEventHandler:SetTextColor(1, 0, 0)
+                frame.DescEventHandler:SetAlpha(0)
 				frame.Desc:Show()		
+				frame.DescEventHandler:Show()           
 			else
 				frame.Desc:SetText("")
+				frame.DescEventHandler:SetText("")
 				frame.Desc:Hide()
+				frame.DescEventHandler:Hide()
 			end
             
             if not frame.Desc.isHtml then
                 frame.Desc:Hide()
+                frame.DescEventHandler:Hide()
             end
             
             if frame.htmlDesc == nil then
                 frame.htmlDesc = CreateFrame("SimpleHTML",nil, frame)
+                
+                frame.htmlDesc:EnableMouse(false)  
+                frame.htmlDesc:SetHyperlinksEnabled(false) 
 
                 frame.htmlDesc:SetFontObject(frame.Desc:GetFontObject())
                 frame.htmlDesc:SetWidth(222)
@@ -482,6 +498,7 @@ function SmallFrame:Initialize()
                 end
                 
                 frame.htmlDesc:SetText('<html><body><p align="left">'..text..'<br/><br/></p></body></html>')     
+                frame.htmlDesc.rawText = frame.Desc.rawText
                 frame.htmlDesc:Show()   
 
                 frame.htmlDesc:SetScript("OnHyperlinkClick", DugisGuideViewer.NPCJournalFrame.OnHyperlinkClick) 
@@ -489,6 +506,42 @@ function SmallFrame:Initialize()
                     DugisGuideViewer.NPCJournalFrame.OnHyperlinkEnter(self, linkData, link, button, true)
                 end) 
                 frame.htmlDesc:SetScript("OnHyperlinkLeave", DugisGuideViewer.NPCJournalFrame.OnHyperlinkLeave) 
+                
+                frame.htmlDescEventHandler = CreateFrame("SimpleHTML",nil, frame)
+
+                frame.htmlDescEventHandler:SetFontObject(frame.Desc:GetFontObject())
+                frame.htmlDescEventHandler:SetWidth(222)
+                frame.htmlDescEventHandler:SetHeight(50)
+                frame.htmlDescEventHandler:SetPoint("LEFT", frame, "LEFT", 16, 0)    
+                frame.htmlDescEventHandler:SetPoint("TOP", frame.Text, "BOTTOM", 0, -8)    
+                frame.htmlDescEventHandler:SetPoint("RIGHT", frame, "RIGHT", -16, 0)    
+                
+                local text = frame.Desc:GetText()
+                
+                if text == nil then
+                    text = ""
+                end
+                
+                frame.htmlDescEventHandler:SetText('<html><body><p align="left">'..text..'<br/><br/></p></body></html>')     
+                frame.htmlDescEventHandler:Show()   
+
+                frame.htmlDescEventHandler:SetScript("OnHyperlinkClick", function(...)
+                    DugisGuideViewer.NPCJournalFrame.OnHyperlinkClick(...)
+                end) 
+                
+                frame.htmlDescEventHandler:SetScript("OnHyperlinkEnter", function(self, linkData, link, button)
+                    DugisGuideViewer.NPCJournalFrame.OnHyperlinkEnter(self, linkData, link, button, true)
+                    UpdateSmallFrameBlocksContent()
+                end)     
+                
+                frame.htmlDescEventHandler:SetScript("OnHyperlinkLeave", function(...)
+                    DugisGuideViewer.NPCJournalFrame.OnHyperlinkLeave(...)
+                    UpdateSmallFrameBlocksContent()
+                end) 
+                
+                frame.DescEventHandler = frame.htmlDescEventHandler
+                frame.DescEventHandler.isHtml = true
+                
                 frame.Desc = frame.htmlDesc
                 frame.Desc.isHtml = true
                 
@@ -618,6 +671,29 @@ function SmallFrame:Initialize()
 			frame.Objectives:SetHeight(StatusFrame_GetObjectivesHeight(frame))
 		end
 	end
+    
+    function UpdateSmallFrameBlocksContent()
+        local blocks = {DugisSmallFrameContainer:GetChildren()}
+        
+        LuaUtils:foreach(blocks, function(frame)
+            if frame.Desc then
+                local text = DGV.NPCJournalFrame:ReplaceSpecialTags(frame.Desc.rawText, true)
+                
+                --Changing color
+                text = string.gsub(text, '(|Hguide:)([^|]*:)([0-9]*)(|h|c)(........)([^|]*|r|h)', function(a, b, uniqueID, c, color, d) 
+                    if DGV.NPCJournalFrame.hoveredGuideLinkId == uniqueID then
+                        color = "ffffffff"
+                    else
+                        color = "ff44ff44"
+                    end
+                    
+                    return a..b..uniqueID..c..color..d
+                end) 
+                
+                frame.Desc:SetText(text)
+            end
+        end)
+    end
 
 	function SmallFrame:AnchorSmallFrame (anchor)
 		SmallFrame.Frame:RegisterForDrag(nil)

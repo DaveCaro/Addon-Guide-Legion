@@ -1730,7 +1730,7 @@ function DGF:GetSuggesedGearBySlot(invslot, yields, slotButton)
             --Filtering by option "Search for quest gears"
             local passedByQuestsGears = itemId ~= nil and ((DGF.gearId2Quests_map[itemId] and (DGF.gearId2Quests_map == nil or (
             DGV:UserSetting(DGV_GEARS_FROM_QUEST_GUIDES) == true
-            or not DGF.gearId2Quests_map[itemId].amountMoreThan0)) ) or DGF.gearId2isReputation[itemId] == true )  
+            or not DGF.gearId2Quests_map[itemId].amountMoreThan0)) ) or (DGF.gearId2isReputation and DGF.gearId2isReputation[itemId] == true) )  
 
             --Filtering by already existing the best score
 
