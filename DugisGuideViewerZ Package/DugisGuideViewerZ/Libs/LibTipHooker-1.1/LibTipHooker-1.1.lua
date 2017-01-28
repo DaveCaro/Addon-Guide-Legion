@@ -7,7 +7,7 @@ Email: hotdogee [at] gmail [dot] com
 LastUpdate: $Date: 2012-10-15 13:57:28 +0000 (Mon, 15 Oct 2012) $
 Website:
 Documentation:
-SVN: $URL $
+SVN: $URL 67750$
 License: LGPL v3
 ]]
 

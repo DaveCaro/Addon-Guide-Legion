@@ -272,7 +272,7 @@ A An Offering of Ammo |QID|40217| |N|(npc:99905) in {Thunder Totem} (42.28, 46.6
 R Mucksnout Den |QID|39764| |N|Travel to the {Mucksnout Den} (41.72, 47.07) (51.66, 82.00)| |Z|1024 16|
 A Shiny, But Deadly |QID|39764| |N|(npc:97094) in the {Mucksnout Den} (51.66, 82.00)| |Z|1024 16| |NPC|97094|
 A The Soulkeeper's Fate |QID|39773| |N|(npc:97094) in the {Mucksnout Den} (51.66, 82.00)| |Z|1024 16| |NPC|97094|
-C The Soulkeeper's Fate |QID|39773| |N|Find (npc:97095) within the {Mucksnout Den} (30.78, 61.75)| |Z|1024 16| |NPC|97095|
+C The Soulkeeper's Fate |QID|39773| |N|Find (npc:97095) within the {Mucksnout Den}<br/><br/>Head down the hill and not over the bridge (30.78, 61.75)| |Z|1024 16| |NPC|97095|
 T The Soulkeeper's Fate |QID|39773| |N|(npc:97846) in the {Mucksnout Den} (30.41, 62.68)| |Z|1024 16| |NPC|97846|
 C Shiny, But Deadly |QID|39764| |N|Collect (item:128752) from (npc:97103), (npc:97813) and (npc:97064) within the {Mucksnout Den} (38.11, 71.91)| |Z|1024 16| |NPC|97103, 97813, 97064|
 T Shiny, But Deadly |QID|39764| |N|(npc:97846) in the {Mucksnout Den} (30.44, 63.05)| |Z|1024 16| |NPC|97846|

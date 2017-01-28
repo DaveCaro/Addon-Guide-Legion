@@ -779,7 +779,7 @@ N Brambley's Left Arm |QID|41214.2| |N|Collect Brambley's Left Arm in {Felmaw Ca
 N Brambley's Tibia |QID|41214.4| |N|Collect Brambley's Tibia in {Felmaw Cavern} (35.74,72.47)| |Z|1033 0|
 N Brambley's Right Arm |QID|41214.3| |N|Collect Brambley's Right Arm in {Felmaw Cavern} (36.22,73.27) (37.18,72.34)| |Z|1033 0|
 N Brambley's Femur |QID|41214.5| |N|Collect Brambley's Femur in {Felmaw Cavern} (36.87,72.42) (36.48,71.20)| |Z|1033 0|
-N Brambley's Dagger |QID|41214/6| |N|Collect Brambley's Dagger in {Felmaw Cavern} (35.77,70.75)| |Z|1033 0|
+N Brambley's Dagger |QID|41214.6| |N|Collect Brambley's Dagger in {Felmaw Cavern} (35.77,70.75)| |Z|1033 0|
 
 T Parts Unknown |QID|41214| |N|(npc:103437) next to you (35.77,70.75)| |Z|1033 0| |NPC|103437|
 A Mangelrath |QID|41309| |N|(npc:103437) next to you (35.77,70.75)| |Z|1033 0| |NPC|103437|

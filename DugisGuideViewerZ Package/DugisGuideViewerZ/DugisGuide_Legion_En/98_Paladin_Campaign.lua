@@ -406,7 +406,7 @@ T Blood of Sargeras |QID|43534| |N|(npc:90250) in the {Sanctum of Light} (52.04,
 ----
 A An Unclear Path |QID|44466| |N|(npc:113857) in {Sanctum of Light} (52.19,69.55)| |Z|23 20| |NPC|113857|
 
-R Val'Shara |QID|44466| |N|Travel to {Val'Shara}  (54.96,53.43) (53.29,49.94) (52.11,43.99)| |Z|1018 0|
+R Val'Shara |QID|44466| |N|Travel to {Val'Shara}  (54.96,53.43) (53.29,49.94) (52.11,43.99)| |Z|1018 0| |REACH|
 N Witness Illidan's Resilience |QID|44466.1| |N|Use (spell:226956) to witness the awakening of Illidan Resilience (45.54,34.75)| |Z|1018 0|
 
 T An Unclear Path |QID|44466| |N|(npc:113857) in {Sanctum of Light} (52.19,69.55)| |Z|23 20| |NPC|113857|
@@ -463,7 +463,7 @@ T A Hero's Weapon |QID|43424| |N|(npc:90259) in {Light's Hope Chapel} (72.69,25.
 A Champion: Arator the Redeemer |QID|43785| |N|Speak to (npc:99997) to recruit as a follower (71.31,23.69)| |Z|23 20| |NPC|99997| |E|
 A Champion: Lothraxion |QID|43701| |N|Speak to (npc:109105) to recruit as a follower (73.05,23.02)| |Z|23 20| |NPC|109105| |E|
 ----
-A In My Father's House |QID|44480| |N|(npc:113857) in {Sanctum of Light} (52.19,69.55)| |Z|23 20| |NPC|113857|
+A In My Father's House |QID|44480| |N|(npc:113857) in {Sanctum of Light}<br/><br/>This quest's availability is determined by your Order Hall Artifact Research. If the quest isn't available, talk to the Head Archivist in your Order Hall to get more (item:139390) (52.19,69.55)| |Z|23 20| |NPC|113857|
 
 R Temple of Zin-Malor |QID|44480| |N|Travel to {Temple of Zin-Malor} (35.11, 49.88)| |Z|181 0|
 C In My Father's House |QID|44480| |N|Use (spell:226956) witness Illidan's Sacrifice in Azshara on the continent of Kalimdor (35.11, 49.88) | |Z|816 0|

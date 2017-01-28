@@ -312,12 +312,12 @@ A Goddess Watch Over You |QID|44338| |N|(npc:113686) will appear next to you| |N
 N Switch Guide |QID|40890| |N|Complete the (guide:"1018(98-110)#1018(98-110)#1018(98-110)") until you complete the quest (qid:40890)|
 
 T Walk This Way |QID|44233| |N|(npc:103693) in {Trueshot Lodge} (44.54,48.87)| |Z|1072 0| |NPC|103693|
-A Highmountain Hunters |QID|42403| |N|(npc:103023) at the {Trueshot Lodge} (43.11, 46.94)| |Z|1072 0| |NPC|103023|
+A Highmountain Hunters |QID|42403| |N|(npc:103023) at the {Trueshot Lodge} (43.11, 46.94)| |Z|1072 0| |NPC|103023| |OID|42413|
 A Hitting the Books |QID|43880| |N|(npc:98737) in {Trueshot Lodge} (52.54,54.40)| |Z|1072 0| |NPC|98737|
 C Hitting the Books |QID|43880| |N|Speak to (npc:98737) and start a Research Work Order in {Trueshot Lodge} (52.54,54.40)| |Z|1072 0| |NPC|98737|
 T Hitting the Books |QID|43880| |N|(npc:98737) in {Trueshot Lodge} (52.54,54.40)| |Z|1072 0| |NPC|98737|
 
-T Highmountain Hunters |QID|42403| |N|(npc:94409) at {Nesingwary's Retreat} (40.04,52.24)| |Z|1024 0| |NPC|94409|
+T Highmountain Hunters |QID|42403| |N|(npc:94409) at {Nesingwary's Retreat} (40.04,52.24)| |Z|1024 0| |NPC|94409| |OID|42413|
 A Champion: Hemet Nesingwary |QID|42413| |N|(npc:94409) at {Nesingwary's Retreat} (40.04,52.24)| |Z|1024 0| |NPC|94409| |E|
 A Champion: Addie Fizzlebog |QID|42414| |N|(npc:99095) at {Nesingwary's Retreat} (39.92,52.23)| |Z|1024 0| |NPC|99095| |E|
 
@@ -424,7 +424,7 @@ T Same Day Delivery |QID|42133| |N|(npc:107973) in {Trueshot Lodge} (43.41,26.33
 ----
 A An Unclear Path |QID|44466| |N|(npc:113857) in {Trueshot Lodge} (47.42,43.49)| |Z|1072 0| |NPC|113857|
 
-R Val'Shara |QID|44466| |N|Travel to {Val'Shara}  (54.96,53.43) (53.29,49.94) (52.11,43.99)| |Z|1018 0|
+R Val'Shara |QID|44466| |N|Travel to {Val'Shara}  (54.96,53.43) (53.29,49.94) (52.11,43.99)| |Z|1018 0| |REACH|
 N Witness Illidan's Resilience |QID|44466.1| |N|Use (spell:226956) to witness the awakening of Illidan Resilience (45.54,34.75)| |Z|1018 0|
 
 R Trueshot Lodge |OID|44479| |N|Travel to {Trueshot Lodge} (47.42,43.49)| |Z|1072 0|
@@ -478,7 +478,7 @@ A A Hero's Weapon |QID|43423| |N|(npc:110505) in {Trueshot Lodge} (47.63,49.35)|
 C A Hero's Weapon |QID|43423| |N|Use the Commander's Valor ability to infuse your artifact (47.63,49.35)| |Z|1072 0|
 T A Hero's Weapon |QID|43423| |N|(npc:110505) in {Trueshot Lodge} (47.63,49.35)| |Z|1072 0| |NPC|110505|
 ----
-A In My Father's House |QID|44480| |N|(npc:113857) in {Trueshot Lodge} (47.42,43.49)| |Z|1072 0| |NPC|113857|
+A In My Father's House |QID|44480| |N|(npc:113857) in {Trueshot Lodge}<br/><br/>This quest's availability is determined by your Order Hall Artifact Research. If the quest isn't available, talk to the Head Archivist in your Order Hall to get more (item:139390) (47.42,43.49)| |Z|1072 0| |NPC|113857|
 
 R Temple of Zin-Malor |QID|44480| |N|Travel to {Temple of Zin-Malor} (35.11, 49.88)| |Z|181 0|
 C In My Father's House |QID|44480| |N|Use (spell:226956) witness Illidan's Sacrifice in Azshara on the continent of Kalimdor (35.11, 49.88) | |Z|816 0|

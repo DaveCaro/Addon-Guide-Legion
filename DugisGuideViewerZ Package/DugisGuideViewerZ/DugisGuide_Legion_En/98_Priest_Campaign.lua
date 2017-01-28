@@ -416,7 +416,7 @@ T Awakenings |QID|44464| |N|(npc:113857) in {The Hall of Balance} (49.81,26.41)|
 ----
 A An Unclear Path |QID|44466| |N|(npc:113857) in {The Hall of Balance} (49.81,26.41)| |Z|1040 1| |NPC|113857|
 
-R Val'Shara |QID|44466| |N|Travel to {Val'Shara} (54.96,53.43) (53.29,49.94) (52.11,43.99)| |Z|1018 0|
+R Val'Shara |QID|44466| |N|Travel to {Val'Shara} (54.96,53.43) (53.29,49.94) (52.11,43.99)| |Z|1018 0| |REACH|
 N Witness Illidan's Resilience |QID|44466.1| |N|Use (spell:226956) to witness the awakening of Illidan Resilience (45.54,34.75)| |Z|1018 0|
 
 R The Hall of Balance |OID|44479| |N|Travel to {The Hall of Balance} (45.32,30.18)| |Z|1040 1|
@@ -447,7 +447,7 @@ C When Good Men Do Nothing |SID|33186| |N|Enter Raven's Glory and use (spell:227
 
 R The Hall of Balance |OID|44480| |N|Travel to {The Hall of Balance} (45.32,30.18)| |Z|1040 1|
 T Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {The Hall of Balance} (49.81,26.41)| |Z|1040 1| |NPC|113857|
-A In My Father's House |QID|44480| |N|(npc:113857) in {The Hall of Balance} (49.81,26.41)| |Z|1040 1| |NPC|113857|
+A In My Father's House |QID|44480| |N|(npc:113857) in {The Hall of Balance}<br/><br/>This quest's availability is determined by your Order Hall Artifact Research. If the quest isn't available, talk to the Head Archivist in your Order Hall to get more (item:139390) (49.81,26.41)| |Z|1040 1| |NPC|113857|
 
 R Temple of Zin-Malor |QID|44480| |N|Travel to {Temple of Zin-Malor} (35.11, 49.88)| |Z|181 0|
 C In My Father's House |QID|44480| |N|Use (spell:226956) witness Illidan's Sacrifice in Azshara on the continent of Kalimdor (35.11, 49.88) | |Z|816 0|

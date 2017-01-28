@@ -8,7 +8,7 @@ WoW 5.0 Contribuiter: Gathirer
 Last Update: $Date: 2012-12-01 11:46:50 +0000 (Sat, 01 Dec 2012) $
 Website:
 Documentation:
-SVN: $URL $
+SVN: $URL 67750$
 Dependencies: UTF8
 License: LGPL v3
 Features:
