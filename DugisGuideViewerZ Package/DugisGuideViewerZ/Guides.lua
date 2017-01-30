@@ -2984,6 +2984,9 @@ function Guides:Initialize()
 
 	function DGV:MoveToPrevQuest()
 			local checkMoved = DGU.CurrentQuestIndex
+            if not checkMoved then
+                return
+            end
 			visualRows[DGU.CurrentQuestIndex]:SetNormalTexture("")
 			
 			local nextindex = DGV:FindNextUnchecked()

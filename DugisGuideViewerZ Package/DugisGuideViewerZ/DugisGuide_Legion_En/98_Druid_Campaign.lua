@@ -403,7 +403,7 @@ T Teensy Weensies! |QID|42042| |N|(npc:106136) in {Emerald Dreamway} (45.09,32.5
 T Enduring the Nightmare |QID|42041| |N|(npc:106204) in {Emerald Dreamway} (43.37,30.63)| |Z|1048 0| |NPC|106204|
 T Cleaning Up |QID|42043| |N|(npc:106135) in {Emerald Dreamway} (42.98,30.26)| |Z|1048 0| |NPC|106135|
 A A Dying Dream |QID|42044| |N|(npc:106204) in {Emerald Dreamway} (43.37,30.63)| |Z|1048 0| |NPC|106204|
-K (npc:106222) |QID|106222)| |QID|42044.1| |N|Kill (npc:106222) in {Emerald Dreamway} (63.73,40.81)| |Z|1048 0| |NPC|106222|
+K (npc:106222) |QID|106222| |QID|42044.1| |N|Kill (npc:106222) in {Emerald Dreamway} (63.73,40.81)| |Z|1048 0| |NPC|106222|
 T A Dying Dream |QID|42044| |N|(npc:106204) in {Emerald Dreamway} (43.37,30.63)| |Z|1048 0| |NPC|106204|
 A Communing With Malorne |QID|42045| |N|(npc:106204) in {Emerald Dreamway} (43.37,30.63)| |Z|1048 0| |NPC|106204|
 

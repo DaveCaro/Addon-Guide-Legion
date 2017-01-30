@@ -422,7 +422,7 @@ R Soul Engine: Apocalypse |QID|42754| |N|Travel to {Soul Engine: Apocalypse} (32
 N (item:138485) |QID|42754.6| |N|Collect (item:138485) in {Soul Engine: Apocalypse} (32.43,53.81)| |Z|1015 0|
 
 R The Soulrender |QID|42754.4| |N|Travel to {The Soulrender} (26.78,49.04)| |Z|1015 0|
-N (item:139404) |QID|42754/5| |N|Collect (item:139404) in {The Soulrender} (27.63,52.23) (28.43,52.20)| |Z|1015 0|
+N (item:139404) |QID|42754.5| |N|Collect (item:139404) in {The Soulrender} (27.63,52.23) (28.43,52.20)| |Z|1015 0|
 
 R The Fel Hammer |TID|42754| |N|Travel to {The Fel Hammer} (59.05,75.15)| |Z|1052 2| 
 T Jump-Capable |QID|42754| |N|(npc:98646) in {The Fel Hammer} (59.05,75.15)| |Z|1052 2| |NPC|98648|

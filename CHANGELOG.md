@@ -26,15 +26,7 @@ Tightened up 2 skinning paths in the Outland section of the Skinning Leveling gu
 
 DUGI GUIDE : 
 
-Adjusted Objective Frame border to fit item buttons position change in patch 7.1
-
-New "Import Scores" button in the gear scoring option. You can use this to import scale values from Pawn addon
-
-Adjusted Home tab buttons
-
-- Daily Guide :
-
-Fixed Darnassus Cooking & Fishing (Daily) guide
+- TBA
 
 Zygor Viewer Guide ESO : 
 
