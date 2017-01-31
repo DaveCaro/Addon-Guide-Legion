@@ -12,17 +12,11 @@ Macro Bank (Dugi's Special)
 
 Zygor Viewer Guide :
 
-- LOREMASTER : 
+- EVENTS :
 
-Added a new section to the Leveling Guides explaining how to use the Leveling guides to earn Loremaster.
+Lunar Festival -  Fixed a coordinate issue with the Horde Elder Guide
 
-- EVENTS : 
-
-Updated the Lunar Festival event
-
-- PROFESSIONS : 
-
-Tightened up 2 skinning paths in the Outland section of the Skinning Leveling guide.
+Lunar Festival - Updated the Elder Path
 
 DUGI GUIDE : 
 

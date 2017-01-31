@@ -3103,99 +3103,21 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Main Quest",[[
 ]])
 ZygorGuidesViewer:RegisterInclude("Lunar Festival Elder Path",[[
 // EASTERN KINGDOMS
-		talk Elder Obsidian##15561
-		accept Obsidian the Elder##8645 |goto Silverpine Forest 45.0,41.1 |instant
-	step
-		talk Elder Graveborn##15568
-		accept Graveborn the Elder##8652 |goto Tirisfal Glades 61.9,53.9 |instant
-	step
-		talk Elder Darkcore##15564
-		accept Darkcore the Elder##8648 |goto Undercity 66.6,38.2 |instant 
-		|tip If you die trying to leave Undercity just resurrect at the spirit healer you get sent to.
-	step
-		talk Elder Moonstrike##15594
-		accept Moonstrike the Elder##8714 |goto Western Plaguelands 69.2,73.3 |instant
-	step
-		talk Elder Meadowrun##15602 |indoors The Weeping Cave
-		accept Meadowrun the Elder##8722 |goto Western Plaguelands 63.5,36.1 |indoors The Weeping Cave |instant 
-		|tip She is inside of the cave.
-	step
-		talk Elder Windrun##15592
-		accept Windrun the Elder##8688 |goto Eastern Plaguelands 35.6,68.8 |instant
-	step
-		talk Elder Snowcrown##15566
-		accept Snowcrown the Elder##8650 |goto Eastern Plaguelands 75.7,54.6 |instant
-	step
-		map Stratholme
-		path follow loose;loop off;ants straight
-		path	66.2,76.8	67.3,58.1	60.1,48.7
-		path	59.9,31.9	68.3,22.9	78.7,22.1
-		Follow the path to Elder Farwhisper
-		|tip Opening the world map will display an ant trail guiding you through the current floor.
-		talk Elder Farwhisper##15607
-		accept Farwhisper the Elder##8727 |instant
-	step
-		talk Elder Highpeak##15559
-		accept Highpeak the Elder##8643 |goto The Hinterlands 50.0,48.0 |instant
-	step
-		talk Elder Firebeard##55219
-		accept Firebeard the Elder##29737 |goto Twilight Highlands 50.9,70.5 |instant
-	step
-		talk Elder Darkfeather##55218
-		accept Darkfeather the Elder##29736 |goto Twilight Highlands 51.9,33.1 |instant
-	step
-		talk Elder Silvervein##15558
-		accept Silvervein the Elder##8642 |goto Loch Modan 33.3,46.5 |instant
-	step
-		talk Elder Bronzebeard##15871
-		accept Bronzebeard the Elder##8866 |goto Ironforge 28.1,17.0 |instant
-	step
-		talk Elder Goldwell##15569
-		accept Goldwell the Elder##8653 |goto Dun Morogh 53.9,49.9 |instant
-	step
-		talk Elder Ironband##15567
-		accept Ironband the Elder##8651 |goto Searing Gorge 21.3,79.1 |instant
-	step
-		_Go through_ the passage |goto Blackrock Spire/4 40.6,48.0 < 15
-		_Go down_ the ramp |goto Blackrock Spire/3 49.0,40.6 < 20
-		_Cross_ the bridge |goto 60.0,43.0 < 20
-		|tip Opening the world map will display an ant trail guiding you through the current floor.
-		talk Elder Stonefort##15560
-		accept Stonefort the Elder##8644 |goto Blackrock Spire/3 61.8,40.0 |instant
-	step
-		_Cross_ the bridge |goto 60.0,43.0 < 20
-		_Go through_ the passage |goto Blackrock Spire/4 40.6,48.0 < 15
-		_Leave_ the dungeon |goto Blackrock Spire/4 37.9,41.2 < 10
-		_Go down_ the ramp |goto Burning Steppes/14 66.4,41.6 < 15
-		_Go through_ the door |goto Burning Steppes/16 55.0,84.5 < 20
-		_Enter_ Blackrock Depths here |goto Searing Gorge/16 39.1,18.2 < 15
-		_Go through_ the opening |goto Blackrock Depths/1 38.6,76.0 < 20
-		_Go up_ the ramp |goto 51.5,69.4 < 20
-		|tip Opening the world map will display an ant trail guiding you through the current floor.
-		talk Elder Morndeep##15549
-		accept Morndeep the Elder##8619 |goto Blackrock Depths/1 50.5,62.9 |instant
-	step
-		talk Elder Dawnstrider##15585
-		accept Dawnstrider the Elder##8683 |goto Burning Steppes 52.4,23.9 |instant
-	step
-		talk Elder Rumblerock##15557
-		accept Rumblerock the Elder##8636 |goto Burning Steppes 70.1,45.4 |instant
+		talk Elder Hammershout##15562
+		accept Hammershout the Elder##8646 |goto Elwynn Forest 34.5,50.3 |instant
 	step
 		talk Elder Stormbrow##15565
 		accept Stormbrow the Elder##8649 |goto Elwynn Forest 39.8,63.7 |instant
 	step
-		talk Elder Hammershout##15562
-		accept Hammershout the Elder##8646 |goto Elwynn Forest 34.5,50.3 |instant
-	step
-		talk Innkeeper Allison##6740 
-		home Trade District |goto Stormwind City 60.4,75.3
-	step
-		talk Elder Moonlance##55228
-		accept Moonlance the Elder##29738 |goto Shimmering Expanse 57.3,86.2 |instant
-	step
 		talk Elder Skychaser##15577
 		accept Skychaser the Elder##8675 |goto Westfall 56.6,47.1 |instant
 		|tip She is at the top of the tower.
+	step
+		talk Elder Winterhoof##15576
+		accept Winterhoof the Elder##8674 |goto The Cape of Stranglethorn 40.0,72.5 |instant
+	step
+		talk Elder Starglade##15596
+		accept Starglade the Elder##8716 |goto Northern Stranglethorn 71.0,34.3 |instant
 	step
 		talk Zidormi##88206 |goto Blasted Lands/0 48.1,7.3
 		Tell her "_Show me the Blasted Lands before the invasion._"
@@ -3205,15 +3127,152 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Elder Path",[[
 		talk Elder Bellowrage##15563
 		accept Bellowrage the Elder##8647 |goto Blasted Lands 54.3,49.5 |instant
 	step
+		_Enter_ the dungeon |goto Swamp of Sorrows 76.00,45.27 < 10 |walk
 		talk Elder Starsong##15593
-		accept Starsong the Elder##8713 |goto The Temple of Atal'Hakkar/1 62.9,34.4 |instant
+		accept Starsong the Elder##8713 |goto The Temple of Atal'Hakkar 62.9,34.4
 	step
-		talk Elder Starglade##15596
-		accept Starglade the Elder##8716 |goto Northern Stranglethorn 71.0,34.3 |instant
+		talk Elder Rumblerock##15557
+		accept Rumblerock the Elder##8636 |goto Burning Steppes 70.1,45.4 |instant
 	step
-		talk Elder Winterhoof##15576
-		accept Winterhoof the Elder##8674 |goto The Cape of Stranglethorn 40.0,72.5 |instant
+		talk Elder Dawnstrider##15585
+		accept Dawnstrider the Elder##8683 |goto Burning Steppes 52.4,23.9 |instant
+	step
+		Enter the gates |goto Burning Steppes/0 21.09,38.28 < 10
+		Follow the path |goto Burning Steppes/14 46.07,80.53 < 10
+		Follow the path |goto 66.08,41.58 < 10
+		Enter Blackrock Spire |goto 80.44,40.99 < 10
+		Click here to continue |confirm
+	step
+		map Blackrock Spire/4
+		path follow loose; loop off; ants curved; dist 20
+		path	40.6,48.0
+		map Blackrock Spire/3
+		path	49.0,40.6	60.0,43.0
+		Follow the path through Blackrock Spire 
+		|tip Opening the world map will display an ant trail guiding you through the current floor.
+		talk Elder Stonefort##15560
+		accept Stonefort the Elder##8644 |goto Blackrock Spire/3 62.0,40.0
+	step
+		Enter the passage |goto Burning Steppes/16 55.32,84.22 < 10
+		Follow the path |goto 49.75,69.85 < 20
+		Follow the path |goto Searing Gorge/16 42.16,60.85 < 20
+		Follow the path |goto 38.28,48.86 < 20
+		Follow the path |goto 36.66,28.92 < 20
+		Enter Blackrock Depths |goto 39.26,18.11 < 10
+		Click here to continue |confirm
+	step
+		map Blackrock Depths/1
+		path follow loose; loop off; ants curved; dist 20
+		path	38.6,76.0	51.5,69.4
+		Follow the path through Blackrock Depths 
+		|tip Opening the world map will display an ant trail guiding you through the current floor.
+		|tip Opening the world map will display an ant trail guiding you through the current floor.
+		talk Elder Morndeep##15549
+		accept Morndeep the Elder##8619 |goto 50.5,62.9
+	step
+		Follow the path |goto Searing Gorge/16 36.71,27.38 < 20
+		Follow the path |goto 37.45,43.96 < 20
+		Follow the path |goto 42.22,61.47 < 20
+		Follow the path |goto Burning Steppes/16 49.08,68.79 < 20
+		Follow the path |goto 55.46,84.16 < 20
+		Follow the path |goto Burning Steppes/14 45.79,80.72 < 20
+		Follow the path |goto Burning Steppes/0 21.04,38.15 < 20
+		talk Elder Ironband##15567
+		accept Ironband the Elder##8651 |goto Searing Gorge 21.3,79.1 |instant
+	step
+		talk Elder Goldwell##15569
+		accept Goldwell the Elder##8653 |goto Dun Morogh 53.9,49.9 |instant
+	step
+		talk Elder Bronzebeard##15871
+		accept Bronzebeard the Elder##8866 |goto Ironforge 28.1,17.0 |instant
+	step
+		talk Elder Silvervein##15558
+		accept Silvervein the Elder##8642 |goto Loch Modan 33.3,46.5 |instant
+	step
+		talk Elder Firebeard##55219
+		accept Firebeard the Elder##29737 |goto Twilight Highlands 50.9,70.5 |instant
+	step
+		talk Elder Darkfeather##55218
+		accept Darkfeather the Elder##29736 |goto Twilight Highlands 51.9,33.1 |instant
+	step
+		talk Elder Highpeak##15559
+		accept Highpeak the Elder##8643 |goto The Hinterlands 50.0,48.0 |instant
+	step
+		talk Elder Windrun##15592
+		accept Windrun the Elder##8688 |goto Eastern Plaguelands 35.6,68.8 |instant
+	step
+		talk Elder Snowcrown##15566
+		accept Snowcrown the Elder##8650 |goto Eastern Plaguelands 75.7,54.6 |instant
+	step
+		Enter Stratholme |goto Eastern Plaguelands/0 27.63,11.62 < 10
+		Click here to continue |confirm
+	step 
+		map Stratholme/1
+		path follow loose; loop off; ants curved; dist 20
+		path	66.4,74.2	59.8,54.6	60.0,41.6 
+		path	71.0,21.9
+		Follow the path through Statholme 
+		|tip Opening the world map will display an ant trail guiding you through the current floor.
+		talk Elder Farwhisper##15607
+		accept Farwhisper the Elder##8727 |goto Stratholme/1 78.6,22.2
+	step
+		talk Elder Meadowrun##15602 |indoors The Weeping Cave
+		accept Meadowrun the Elder##8722 |goto Western Plaguelands 63.5,36.1 |indoors The Weeping Cave |instant 
+		|tip She is inside of the cave.
+	step
+		talk Elder Moonstrike##15594
+		accept Moonstrike the Elder##8714 |goto Western Plaguelands 69.2,73.3 |instant
+	step
+		talk Elder Graveborn##15568
+		accept Graveborn the Elder##8652 |goto Tirisfal Glades 61.9,53.9 |instant
+	step
+		talk Elder Darkcore##15564
+		accept Darkcore the Elder##8648 |goto Undercity 66.6,38.2 |instant 
+		|tip If you die trying to leave Undercity just resurrect at the spirit healer you get sent to.
+	step
+		talk Elder Obsidian##15561
+		accept Obsidian the Elder##8645 |goto Silverpine Forest 45.0,41.1 |instant
+	step
+		talk Elder Moonlance##55228
+		accept Moonlance the Elder##29738 |goto Shimmering Expanse 57.3,86.2 |instant
 // KALIMDOR
+	step
+		talk Elder Bladeswift##15598
+		accept Bladeswift the Elder##8718 |goto Darnassus 38.8,32.3 |instant
+	step
+		talk Elder Bladeleaf##15595
+		accept Bladeleaf the Elder##8715 |goto Teldrassil 56.9,53.1 |instant
+	step
+		talk Elder Starweave##15601
+		accept Starweave the Elder##8721 |goto Darkshore 49.5,18.9 |instant
+	step
+		talk Elder Nightwind##15603
+		accept Nightwind the Elder##8723 |goto Felwood 38.4,52.9 |instant
+	step
+		talk Elder Riversong##15605
+		accept Riversong the Elder##8725 |goto Ashenvale 35.4,48.9 |instant
+	step
+		talk Elder Windsong##55224
+		accept Windsong the Elder##29739 |goto Mount Hyjal 26.7,62.0 |instant
+	step
+		talk Elder Evershade##55227
+		accept Evershade the Elder##29740 |goto Mount Hyjal 62.5,22.8 |instant
+	step
+		talk Elder Brightspear##15606
+		accept Brightspear the Elder##8726 |goto Winterspring 53.2,56.6 |instant
+	step
+		talk Elder Stonespire##15574
+		accept Stonespire the Elder##8672 |goto Winterspring 60.0,49.9 |instant
+	step
+		talk Elder Skygleam##15600
+		accept Skygleam the Elder##8720 |goto Azshara 64.7,79.3 |instant
+	step
+		talk Elder Darkhorn##15579
+		accept Darkhorn the Elder##8677 |goto Orgrimmar 52.3,60.0 |instant 
+		|tip If you die trying to leave Orgrimmar just resurrect at the spirit healer you get sent to.
+	step
+		talk Elder Runetotem##15572
+		accept Runetotem the Elder##8670 |goto Durotar 53.2,43.6 |instant
 	step
 		talk Elder Windtotem##15582
 		accept Windtotem the Elder##8680 |goto Northern Barrens 68.4,70.0 |instant
@@ -3230,6 +3289,16 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Elder Path",[[
 		talk Elder Ezra Wheathoof##15580
 		accept Wheathoof the Elder##8678 |goto Thunder Bluff 73.0,23.3 |instant 
 		|tip If you die trying to leave Thunder Bluff just resurrect at the spirit healer you get sent to.
+	step
+		Enter the gates |goto Desolace/0 29.15,62.54 < 15
+		Follow the path |goto Desolace/21 21.68,52.27 < 15
+		Follow the path |goto 14.68,47.50 < 15
+		Follow the path |goto 19.77,45.20 < 15
+		Follow the path |goto 29.57,42.88 < 15
+		Follow the path |goto Desolace/22 55.12,79.97 < 15
+		Follow the path |goto 47.59,72.02 < 15
+		Enter Maraudon |goto 44.23,77.11 < 10
+		Click here to continue |confirm
 	step
 		map Maraudon/2
 		path follow smart; loop off; ants straight
@@ -3248,14 +3317,23 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Elder Path",[[
 		talk Elder Grimtotem##15581
 		accept Grimtotem the Elder##8679 |goto Feralas 76.7,37.9 |instant
 	step
-		talk Elder Bladesing##15599
-		accept Bladesing the Elder##8719 |goto Silithus 53.0,35.5 |instant
+		talk Elder Skyseer##15584
+		accept Skyseer the Elder##8682 |goto Thousand Needles 46.3,51.0 |instant
 	step
-		talk Elder Primestone##15570
-		accept Primestone the Elder##8654 |goto Silithus 30.8,13.3 |instant
+		talk Elder Morningdew##15604
+		accept Morningdew the Elder##8724 |goto Thousand Needles 77.1,75.6 |instant
 	step
-		talk Elder Sekhemi##55210
-		accept Sekhemi the Elder##29741 |goto Uldum 31.6,63.0 |instant
+		Enter Zul'Farrak |goto Tanaris/0 39.21,21.26 < 15
+		Click here to continue |confirm
+	step
+		talk Elder Wildmane##15578
+		accept Wildmane the Elder##8676 |goto Zul'Farrak 34.5,39.4 |instant
+	step
+		talk Elder Dreamseer##15586
+		accept Dreamseer the Elder##8684 |goto Tanaris 51.4,28.8 |instant
+	step
+		talk Elder Ragetotem##15573
+		accept Ragetotem the Elder##8671 |goto Tanaris 37.2,79.1 |instant
 	step
 		talk Elder Menkhaf##55211
 		accept Menkhaf the Elder##29742 |goto Uldum 65.5,18.7 |instant
@@ -3263,77 +3341,29 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Elder Path",[[
 		talk Elder Thunderhorn##15583
 		accept Thunderhorn the Elder##8681 |goto Un'Goro Crater 50.4,76.2 |instant
 	step
-		talk Elder Ragetotem##15573
-		accept Ragetotem the Elder##8671 |goto Tanaris 37.2,79.1 |instant
+		talk Elder Sekhemi##55210
+		accept Sekhemi the Elder##29741 |goto Uldum 31.6,63.0 |instant
 	step
-		talk Elder Dreamseer##15586
-		accept Dreamseer the Elder##8684 |goto Tanaris 51.4,28.8 |instant
+		talk Elder Bladesing##15599
+		accept Bladesing the Elder##8719 |goto Silithus 53.0,35.5 |instant
 	step
-		talk Elder Wildmane##15578
-		accept Wildmane the Elder##8676 |goto Zul'Farrak 34.5,39.4 |instant
-	step
-		talk Elder Morningdew##15604
-		accept Morningdew the Elder##8724 |goto Thousand Needles 77.1,75.6 |instant
-	step
-		talk Elder Skyseer##15584
-		accept Skyseer the Elder##8682 |goto Thousand Needles 46.3,51.0 |instant
-	step
-		talk Elder Runetotem##15572
-		accept Runetotem the Elder##8670 |goto Durotar 53.2,43.6 |instant
-	step
-		talk Elder Darkhorn##15579
-		accept Darkhorn the Elder##8677 |goto Orgrimmar 52.3,60.0 |instant 
-		|tip If you die trying to leave Orgrimmar just resurrect at the spirit healer you get sent to.
-	step
-		talk Elder Skygleam##15600
-		accept Skygleam the Elder##8720 |goto Azshara 64.7,79.3 |instant
-	step
-		talk Elder Stonespire##15574
-		accept Stonespire the Elder##8672 |goto Winterspring 60.0,49.9 |instant
-	step
-		talk Elder Brightspear##15606
-		accept Brightspear the Elder##8726 |goto Winterspring 53.2,56.6 |instant
-	step
-		talk Elder Evershade##55227
-		accept Evershade the Elder##29740 |goto Mount Hyjal 62.5,22.8 |instant
-	step
-		talk Elder Windsong##55224
-		accept Windsong the Elder##29739 |goto Mount Hyjal 26.7,62.0 |instant
-	step
-		talk Elder Riversong##15605
-		accept Riversong the Elder##8725 |goto Ashenvale 35.4,48.9 |instant
-	step
-		talk Elder Nightwind##15603
-		accept Nightwind the Elder##8723 |goto Felwood 38.4,52.9 |instant
-	step
-		talk Elder Starweave##15601
-		accept Starweave the Elder##8721 |goto Darkshore 49.5,18.9 |instant
-	step
-		talk Elder Bladeleaf##15595
-		accept Bladeleaf the Elder##8715 |goto Teldrassil 56.9,53.1 |instant
-	step
-		talk Elder Bladeswift##15598
-		accept Bladeswift the Elder##8718 |goto Darnassus 38.8,32.3 |instant
-	step
-		talk Elder Stonebrand##55217
-		accept Stonebrand the Elder##29735 |goto Deepholm 49.7,54.9 |instant
-	step
-		talk Elder Deepforge##55216
-		accept Deepforge the Elder##29734 |goto Deepholm 27.7,69.2 |instant
-// NORTHREND
-	step
-		talk Elder Sardis##30348
-		accept Sardis the Elder##13012 |goto Borean Tundra 59.1,65.6 |instant
-	step
-		talk Elder Arp##30364
-		accept Arp the Elder##13033 |goto Borean Tundra 57.4,43.7 |instant
+		talk Elder Primestone##15570
+		accept Primestone the Elder##8654 |goto Silithus 30.8,13.3 |instant
+//Northrend
 	step
 		talk Elder Pamuya##30371
-		accept Pamuya the Elder##13029 |goto Borean Tundra 42.9,49.6 |instant
+		accept Pamuya the Elder##13029 |instant |goto Borean Tundra 42.9,49.6
+	step
+		talk Elder Sardis##30348
+		accept Sardis the Elder##13012 |instant |goto 59.1,65.6
+	step
+		talk Elder Arp##30364
+		accept Arp the Elder##13033 |instant |goto 57.4,43.7
 	step
 		talk Elder Northal##30360
-		accept Northal the Elder##13016 |goto Borean Tundra 33.8,34.4 |instant
+		accept Northal the Elder##13016 |instant |goto 33.8,34.4
 	step
+		Enter the Nexus |goto 27.51,26.02 < 10
 		map The Nexus/1
 		path follow smart; loop off; ants straight
 		path	36.8,81.4	45.5,68.3	51.5,63.2
@@ -3342,17 +3372,20 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Elder Path",[[
 		Follow the path to Elder Igasho
 		|tip Opening the world map will display an ant trail guiding you through the current floor.
 		talk Elder Igasho##30536
-		accept Igasho the Elder##13021 |instant
+		accept Igasho the Elder##13021 |goto The Nexus/1 55.5,64.9
 	step
 		talk Elder Sandrene##30362
-		accept Sandrene the Elder##13018 |goto Sholazar Basin 49.8,63.6 |instant
+		accept Sandrene the Elder##13018 |instant |goto Sholazar Basin 49.8,63.6
 	step
 		talk Elder Wanikaya##30365
-		accept Wanikaya the Elder##13024 |goto Sholazar Basin 63.8,49.0 |instant
+		accept Wanikaya the Elder##13024 |instant |goto 63.8,49.0
 	step
 		talk Elder Bluewolf##30368
-		accept Bluewolf the Elder##13026 |goto Wintergrasp 49.0,13.9 |instant
+		|tip You can only get to this NPC when your faction controls Wintergrasp.
+		accept Bluewolf the Elder##13026 |instant |goto Wintergrasp 49.0,13.9
+		If your faction does not control Wintergrasp, click here to continue |confirm
 	step
+		Enter Azjol-Nerub |goto Dragonblight/0 25.96,50.83 < 10 
 		map  Azjol-Nerub/3
 		path follow strict; loop off; ants straight
 		path	25.8,35.5	54.2,45.3	89.0,44.9
@@ -3361,50 +3394,18 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Elder Path",[[
 		Follow the path to Elder Nurgen
 		|tip Opening the world map will display an ant trail guiding you through the current floor.
 		talk Elder Nurgen##30533
-		accept Nurgen the Elder##13022 |instant
+		accept Nurgen the Elder##13022 |goto Azjol-Nerub/1 21.8,43.6
 	step
 		talk Elder Morthie##30358
-		accept Morthie the Elder##13014 |goto Dragonblight 29.7,55.9 |instant
+		accept Morthie the Elder##13014 |instant |goto Dragonblight 29.7,55.9
 	step
 		talk Elder Skywarden##30373
-		accept Skywarden the Elder##13031 |goto Dragonblight 35.1,48.3 |instant
+		accept Skywarden the Elder##13031 |instant |goto  35.1,48.3
 	step
 		talk Elder Thoim##30363
-		accept Thoim the Elder##13019 |goto Dragonblight 48.8,78.2 |instant
+		accept Thoim the Elder##13019 |instant |goto 48.8,78.2
 	step
-		talk Elder Graymane##30370
-		accept Graymane the Elder##13028 |goto The Storm Peaks 41.2,84.7 |instant
-	step
-		talk Elder Fargal##30359
-		accept Fargal the Elder##13015 |goto The Storm Peaks 28.9,73.7 |instant
-	step
-		talk Elder Stonebeard##30375
-		accept Stonebeard the Elder##13020 |goto The Storm Peaks 31.3,37.6 |instant
-	step
-		map  Halls of Stone/1
-		path follow strict; loop off; ants straight
-		path	45.1,37.2	50.1,45.3	48.8,53.5
-		path	34.3,51.6	29.4,62.1
-		Follow the path to Elder Yurauk
-		|tip Opening the world map will display an ant trail guiding you through the current floor.
-		talk Elder Yurauk##30535
-		accept Yurauk the Elder##13066 |instant
-	step
-		talk Elder Muraco##30374
-		accept Muraco the Elder##13032 |goto The Storm Peaks 64.6,51.3 |instant
-	step
-		map Gundrak/1
-		path follow strict; loop off; ants straight
-		path	59.1,49.2	58.2,68.5	50.9,73.6
-		path	46.5,71.5	45.6,61.5
-		Follow the path to Elder Ohanzee
-		|tip Opening the world map will display an ant trail guiding you through the current floor.
-		talk Elder Ohanzee##30537
-		accept Ohanzee the Elder##13065 |instant
-	step
-		talk Elder Tauros##30369
-		accept Tauros the Elder##13027 |goto Zul'Drak 58.9,56.0 |instant
-	step
+		Enter Drak'Tharon Keep |goto Zul'Drak/0 28.51,86.92 < 10 
 		map Drak'Tharon Keep/1
 		path follow strict; loop off; ants straight
 		path	33.1,78.5	40.7,87.1	47.5,79.3
@@ -3415,17 +3416,54 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Elder Path",[[
 		Follow the path to Elder Kilias
 		|tip Opening the world map will display an ant trail guiding you through the current floor.
 		talk Elder Kilias##30534
-		accept Kilias the Elder##13023 |instant
+		accept Kilias the Elder##13023 |instant |goto Drak'Tharon Keep 68.9,79.1
+	step
+		talk Elder Graymane##30370
+		accept Graymane the Elder##13028 |instant |goto The Storm Peaks 41.2,84.7
+	step 
+		talk Elder Fargal##30359
+		accept Fargal the Elder##13015 |instant |goto 28.9,73.7
+	step
+		Enter the building |goto The Storm Peaks/0 30.6,37.0 < 15 |walk
+		talk Elder Stonebeard##30375
+		accept Stonebeard the Elder##13020 |instant |goto 31.3,37.6
+	step
+		Enter the Halls of Stone |goto The Storm Peaks/0 39.50,26.88
+		map  Halls of Stone/1
+		path follow strict; loop off; ants straight
+		path	45.1,37.2	50.1,45.3	48.8,53.5
+		path	34.3,51.6	29.4,62.1
+		Follow the path to Elder Yurauk
+		|tip Opening the world map will display an ant trail guiding you through the current floor.
+		talk Elder Yurauk##30535
+		accept Yurauk the Elder##13066 |goto Halls of Stone 29.4,62.1
+	step
+		talk Elder Muraco##30374
+		accept Muraco the Elder##13032 |instant |goto The Storm Peaks/0 64.6,51.3
+	step
+		Enter Gundrak |goto Zul'Drak/0 76.11,20.94
+		map Gundrak/1
+		path follow strict; loop off; ants straight
+		path	59.1,49.2	58.2,68.5	50.9,73.6
+		path	46.5,71.5	45.6,61.5
+		Follow the path to Elder Ohanzee
+		|tip Opening the world map will display an ant trail guiding you through the current floor.
+		talk Elder Ohanzee##30537
+		accept Ohanzee the Elder##13065	|goto Gundrak/1 45.7,61.6
+	step
+		talk Elder Tauros##30369
+		accept Tauros the Elder##13027 |instant |goto Zul'Drak 58.9,56.0
 	step
 		talk Elder Beldak##30357
-		accept Beldak the Elder##13013 |goto Grizzly Hills 60.6,27.7 |instant
-	step
-		talk Elder Lunaro##30367
-		accept Lunaro the Elder##13025 |goto Grizzly Hills 80.5,37.1 |instant
+		accept Beldak the Elder##13013 |instant |goto Grizzly Hills 60.6,27.7
 	step
 		talk Elder Whurain##30372
-		accept Whurain the Elder##13030 |goto Grizzly Hills 64.2,47.0 |instant
+		accept Whurain the Elder##13030 |instant |goto 64.2,47.0
 	step
+		talk Elder Lunaro##30367
+		accept Lunaro the Elder##13025 |instant |goto 80.5,37.1
+	step
+		Enter Utgarde Keep |goto Howling Fjord/0 57.29,46.75 < 10
 		map Utgarde Keep/1
 		path follow strict; loop off; ants straight
 		path	62.4,40.5	65.0,28.7	49.9,28.4
@@ -3435,8 +3473,9 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Elder Path",[[
 		Follow the path to Elder Jarten
 		|tip Opening the world map will display an ant trail guiding you through the current floor.
 		talk Elder Jarten##30531
-		accept Jarten the Elder##13017 |instant
+		accept Jarten the Elder##13017 |instant |goto Utgarde Keep/1 47.5,70.0
 	step
+		Enter Utgarde Pinnacle |goto Howling Fjord/0 57.26,46.70
 		map Utgarde Pinnacle/2
 		path follow strict; loop off; ants straight
 		path	44.3,36.0	33.9,36.5	34.6,69.0
@@ -3450,8 +3489,33 @@ ZygorGuidesViewer:RegisterInclude("Lunar Festival Elder Path",[[
 		Follow the path to Chogan'gada
 		|tip Opening the world map will display an ant trail guiding you through the current floor.
 		talk Elder Chogan'gada##30538
-		accept Chogan'gada the Elder##13067 |instant
+		accept Chogan'gada the Elder##13067 |goto Utgarde Pinnacle 48.7,23.1
+	step
+		talk Elder Stonebrand##55217
+		accept Stonebrand the Elder##29735 |instant |goto Deepholm 49.7,54.9
+	step
+		talk Elder Deepforge##55216
+		accept Deepforge the Elder##29734 |instant |goto 27.7,69.2
 ]])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ZygorGuidesViewer:RegisterInclude("Lunar Festival Achievement",[[
 		talk Lunar Festival Vendor##15898 |goto Ironforge 29.9,14.2
 		buy 10 Festival Firecracker##21747 |condition itemcount(21747) >= 10

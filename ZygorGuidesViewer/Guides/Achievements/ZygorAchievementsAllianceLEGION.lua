@@ -3055,6 +3055,86 @@ Become Exalted with The Valarjar |achieve 11159/6 |or
 step
 Congratulations, you have earned the Friends in a Broken Land Achievement!
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Dungeons\\Legion\\Heroic: Darkheart Thicket",{
+condition_end="achieved(10784)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Darkheart","Thicket","Dungeon","Glory","Legion","Hero"},
+description="This guide will walk you through attaining the Heroic: Darkheart Thicket Achievement.",
+},[[
+step
+For this, complete Darkheart Thicket on Heroic or higher difficulty
+Click here to load the Darkheart Thicket dungeon guide |confirm |next "Zygor's Alliance Dungeon Guides\\Legion Dungeons\\Darkheart Thicket"
+Defeat Shade of Xavius in Darkheart Thicket on Heroic difficulty or higher |achieve 10784
+step
+_Congratulations!_
+You earned the "Heroic: Darkheart Thicket" achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Dungeons\\Legion\\Heroic: Halls of Valor",{
+condition_end="achieved(10788)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Halls","of","Valor","Dungeon","Glory","Legion","Hero"},
+description="This guide will walk you through attaining the Heroic: Halls of Valor Achievement.",
+},[[
+step
+For this, complete Halls of Valor on Heroic or higher difficulty
+Click here to load the Halls of Valor dungeon guide |confirm |next "Zygor's Alliance Dungeon Guides\\Legion Dungeons\\Halls of Valor"
+Defeat Odyn in Halls of Valor on Heroic difficulty or higher |achieve 10788
+step
+_Congratulations!_
+You earned the "Heroic: Halls of Valor" achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Dungeons\\Legion\\Heroic: Neltharion's Lair",{
+condition_end="achieved(10796)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Neltharion","Lair","Dungeon","Heroic","Legion"},
+description="This guide will walk you through attaining the Heroic: Neltharion's Lair Achievement.",
+},[[
+step
+For this, complete Neltharion's Lair on Heroic or higher difficulty
+Click here to load Neltharion's Lair dungeon guide |confirm |next "Zygor's Alliance Dungeon Guides\\Legion Dungeons\\Neltharion's Lair"
+Defeat Dargrul in Neltharion's Lair on Heroic difficulty or higher |achieve 10796
+step
+_Congratulations!_
+You earned the "Heroic: Neltharion's Lair" achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Dungeons\\Legion\\Heroic: Assault on Violet Hold",{
+condition_end="achieved(10799)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Assault","on","Violet","Hold","Dungeon","Heroic","Legion"},
+description="This guide will walk you through attaining the Heroic: Assault on Violet Hold Achievement.",
+},[[
+step
+For this, complete Assault on Violet Hold on Heroic or higher difficulty
+Click here to load the Assault on Violet Hold dungeon guide |confirm |next "Zygor's Alliance Dungeon Guides\\Legion Dungeons\\Assault on Violet Hold"
+Defeat the leader of the Assault on Violet Hold on Heroic difficulty or higher |achieve 10799
+step
+_Congratulations!_
+You earned the "Heroic: Assault on Violet Hold" achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Dungeons\\Legion\\Heroic: Black Rook Hold",{
+condition_end="achieved(10805)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Black","Rook","Hold","Dungeon","Heroic","Legion"},
+description="This guide will walk you through attaining the Heroic: Black Rook Hold Achievement.",
+},[[
+step
+For this, complete Black Rook Hold on Heroic or higher difficulty
+Click here to load the Black Rook Hold dungeon guide |confirm |next "Zygor's Alliance Dungeon Guides\\Legion Dungeons\\Black Rook Hold"
+Defeat Lord Kur'talos Ravencrest in Black Rook Hold on Heroic difficulty or higher |achieve 10805
+step
+_Congratulations!_
+You earned the "Heroic: Black Rook Hold" achievement.
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Collections\\Legion\\Fashionista: Wrist",{
 condition_end="achieved(10688)",
 author="support@zygorguides.com",
