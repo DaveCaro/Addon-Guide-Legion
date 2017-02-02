@@ -297,9 +297,3 @@ label "end"
 You have reached the end of the guide for today
 Click here to go back to the beginning of the dailies |confirm |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Brawler's Guild\\Bizmo's Brawlpub", {
-startlevel=90,
-description="This guide will help you achieve rank 10 in the Brawler's Guild.",
-},[[
-#include "A_Brawl"
-]])

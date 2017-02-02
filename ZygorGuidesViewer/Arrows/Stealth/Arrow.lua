@@ -193,7 +193,7 @@ function arrowframeproto:ShowTraveling (elapsed,angle,dist)
 
 end
 
-local specials={"here","waiting","upstairs","downstairs","error"}
+local specials={"here","waiting","upstairs","downstairs","error","instance","instancehide"}
 function arrowframeproto:ShowSpecial(spec)
 	if spec==nil or not self.special[spec] then self.arrow:Hide() self.special:Hide() return end
 	self.arrow:Hide() self.special:Show()
@@ -216,6 +216,14 @@ end
 
 function arrowframeproto:ShowError()
 	self:ShowSpecial("error")
+end
+
+function arrowframeproto:ShowInstance()
+	self:ShowSpecial("instance")
+end
+
+function arrowframeproto:HideInstance()
+	self:ShowSpecial("instancehide")
 end
 
 function arrowframeproto:ShowWarning()

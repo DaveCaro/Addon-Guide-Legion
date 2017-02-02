@@ -22,6 +22,10 @@ local split = function (div,text)
 	return unpack(res)
 end
 
+local function decolor(text)
+	return text:gsub("|c........",""):gsub("|r",""):gsub("|n","; "):gsub("|","||")
+end
+
 function Goal:New(data)
 	setmetatable(data,ZGV.GoalProto_mt)
 	return data
@@ -139,6 +143,12 @@ function Goal:IsVisible()
 	--if ZGV.db.profile.showwrongsteps then return true end
 	if not self:IsFitting() then return false end
 	if self.hidden then return false end
+	if self.grouprole and self.grouprole~="EVERYONE" and not ZGV.db.profile.showallroles and UnitGroupRolesAssigned("Player")~="NONE" then
+		local role,role2 = self.grouprole,self.grouprole2
+		if role=="DPS" or role=="DAMAGE" then role="DAMAGER" end
+		if role2=="DPS" or role2=="DAMAGE" then role2="DAMAGER" end
+		if UnitGroupRolesAssigned("Player")~=role and UnitGroupRolesAssigned("Player")~=role2 then return false end
+	end
 	if self.condition_visible then
 		if self.condition_visible_raw=="default" then
 			-- oo, special case: show this only if no others are visible!
@@ -334,6 +344,7 @@ end
 function Goal:GetTooltip()
 	local gettooltip = GOALTYPES[self.action].gettooltip
 	if gettooltip then return gettooltip(self) end
+	if self.grouprole then return "|cff00ff00Shift-click|r to share this tip to fellow players." end
 end
 
 
@@ -2361,7 +2372,7 @@ Goal.CraftingErrorMsgs = {
 
 setmetatable(Goal.CraftingErrorMsgs,{__index=function(t,index) return "Unknown status: "..index end}) 
 
-function Goal:GetText(showcompleteness,brief,showtotals)
+function Goal:GetText(showcompleteness,brief,showtotals,nocolor)
 	if not self.prepared then self:Prepare() end
 	--if type(goal)=="number" then goal=self.CurrentStep.goals[goal] end
 
@@ -2843,6 +2854,10 @@ function Goal:GetText(showcompleteness,brief,showtotals)
 		elseif goalcountneeded and goalcountneeded==0 then progtext=L["completion_count"]:format(goalcountnow)
 		end
 
+		if self.action=='skill' then
+			local currentskill = ZGV:GetSkill(self.skill).level
+			progtext=L["completion_goal"]:format(currentskill,self.skilllevel)
+		end
 
 		if zgv_gold_achieves[self.achieveid] then
 			local goldowned = ZGV.GetMoneyString(math.floor(goalcountnow or 0))
@@ -2861,7 +2876,11 @@ function Goal:GetText(showcompleteness,brief,showtotals)
 		end
 	end
 	
-	return text .. (extramsg and "\n "..extramsg or "")
+	text = text .. (extramsg and "\n "..extramsg or "")
+
+	if nocolor then text=decolor(text) end
+
+	return text
 end
 
 function Goal:GetString()
@@ -3231,6 +3250,10 @@ function Goal:OnClick(button)
 	if self.loadguide then
 		ZGV:SetGuide(self.loadguide,self.loadguidestep)
 	end
+
+	if IsShiftKeyDown() then
+		self:ShareToChat(ZGV.db.profile.share_target or "SAY","brand","withtips")
+	end
 	
 	--[[
 	-- This cost me 2h of sleep. Thanks to whoever wrote that. >:[  ~~sinus
@@ -3303,4 +3326,42 @@ function Goal:GetDebugDump()
 		end
 	end
 	return ret
+end
+
+function Goal:GetTextForSharing(withtip)
+	local text = self:GetText(false and "showcomplete",false and "brief",true or "totals",true or "stripcolor")
+	if text=="?" then text="" end
+	if self.tooltip and withtip then
+		if #text>0 then text=text.."\n" end
+		text=text .. decolor(self.tooltip)
+	end
+	return text
+end
+
+function Goal:GetTextForSharingWithAllTips()
+	local begin_num = self.num
+	if not self.text then
+		while begin_num>1 do  begin_num=begin_num-1  if self.parentStep.goals[begin_num].action == "text" then break end  end
+		if begin_num<1 then begin_num=1 end
+	end
+	local end_num = self.num
+	while end_num<#self.parentStep.goals do  end_num=end_num+1  if self.parentStep.goals[end_num].action or not self.parentStep.goals[end_num].tooltip then end_num=end_num-1 break end  end
+	if end_num>#self.parentStep.goals then end_num=#self.parentStep.goals end
+	
+	local lines={}
+	for i=begin_num,end_num do
+		local goal=self.parentStep.goals[i]
+		if goal:IsVisible() then
+			tinsert(lines,self.parentStep.goals[i]:GetTextForSharing("withtip"))
+		end
+	end
+
+	return lines
+end
+
+function Goal:ShareToChat(target,brand,withtips)
+	if target=="PARTY" and not IsInGroup() then ZGV:Error(ERR_NOT_IN_GROUP) return end
+	if target=="RAID" and not IsInRaid() then ZGV:Error(ERR_NOT_IN_RAID) return end
+	if brand and not ZGV.step_share_onceflag then  ZGV.step_share_onceflag=true  SendChatMessage(L['goalshare_brand']:format(self.parentStep.parentGuide.title_short,self.parentStep.num),target) end
+	for i,line in ipairs(self:GetTextForSharingWithAllTips()) do  SendChatMessage(line,target)  end
 end

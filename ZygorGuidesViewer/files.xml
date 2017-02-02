@@ -63,6 +63,7 @@
 	<Script file="NotificationCenter.lua"/>
 
 	<Script file="Pointer.lua"/>
+	<Script file="PointerMap.lua"/>
 	<Include file="PointerMarkerTemplates.xml" />
 	<Include file="Arrows\Arrows.xml" />
 

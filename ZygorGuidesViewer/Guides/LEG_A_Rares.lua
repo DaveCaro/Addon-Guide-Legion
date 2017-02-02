@@ -11,7 +11,7 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\POI Legion Ra
 	poitype=rare,
 },[[
 --//Azsuna\\--
-step
+step //1
 	|poi_rare Cailyn Paledoom
 	|poilvl 100
 	|poispot Azsuna 52.38,23.04
@@ -20,7 +20,7 @@ step
 	|poiitem 129063
 	Follow the path up |goto Azsuna/0 52.02,17.67 < 10
 	kill Cailyn Paledoom##91289 |q 38268 |future |goto Azsuna 52.38,23.04
-step
+step //2
 	|poi_rare Doomlord Kazrok
 	|poilvl 100
 	|poispot Azsuna 43.17,28.13
@@ -29,7 +29,7 @@ step
 	|poiitem 129056
 	Go up the path |goto Azsuna/0 46.47,27.73 < 10
 	kill Doomlord Kazrok##91579 |q 38352 |future |goto Azsuna 43.17,28.13
-step
+step //3
 	|poi_rare Arcanist Shal'iman
 	|poilvl 100
 	|poispot Azsuna 34.96,33.91
@@ -38,7 +38,7 @@ step
 	|poiitem 141868
 	Follow the path |goto Azsuna 41.1,35.3
 	kill Arcanist Shal'iman##107657 |q 42505 |future |goto Azsuna 34.96,33.91
-step
+step //4
 	|poi_rare Houndmaster Stroxis
 	|poilvl 100
 	|poispot Azsuna 30.77,47.99
@@ -55,7 +55,7 @@ step //5
 	|poiitem 129079
 	Go up the path |goto Azsuna/0 29.40,53.30 < 10
 	kill Bilebrain##107327 |q 42417 |future |goto Azsuna 29.27,53.66
-step
+step //6
 	|poi_rare Vorthax
 	|poilvl 100
 	|poispot Azsuna 37.37,43.18
@@ -64,7 +64,7 @@ step
 	|poiitem 141875
 	Go up the ramp |goto Azsuna/0 36.57,44.05 < 10
 	kill Vorthax##107113 |q 42280 |future |goto Azsuna 37.37,43.18
-step
+step //7
 	|poi_rare Beacher
 	|poilvl 100
 	|poispot Azsuna 32.29,29.72
@@ -73,7 +73,7 @@ step
 	|poiitem 129067
 	kill Beacher##91187 |q 38238 |future |goto Azsuna 32.29,29.72
 	|tip He walks up and down the beach and may not be in this exact spot.
-step
+step //8
 	|poi_rare Warbringer Mox'na
 	|poilvl 100
 	|poispot Azsuna 49.10,55.19
@@ -81,7 +81,7 @@ step
 	|poicurrency OR
 	|poiitem 129069
 	kill Warbringer Mox'na##90164 |q 37909 |future |goto Azsuna 49.10,55.19
-step
+step //9
 	|poi_rare Normantis the Deposed
 	|poilvl 100
 	|poispot Azsuna 49.50,08.80
@@ -98,7 +98,7 @@ step //10
 	|poicurrency OR
 	|poiitem 138395
 	kill Pridelord Meowl##90901 |q 38061 |future |goto Azsuna 56.10,29.06
-step
+step //11
 	|poi_rare Infernal Lord
 	|poilvl 100
 	|poispot Azsuna 35.30,50.30
@@ -106,7 +106,7 @@ step
 	|poicurrency OR
 	|poiitem 129083
 	kill Infernal Lord##90803 |q 38037 |future |goto Azsuna 35.30,50.30
-step
+step //12
 	|poi_rare Ragemaw
 	|poilvl 100
 	|poispot Azsuna 32.60,48.80
@@ -115,14 +115,14 @@ step
 	|poiitem 129075
 	Enter the cave |goto Azsuna 34.8,49.8 < 10 |walk
 	kill Ragemaw##109504 |q 44108 |future |goto Azsuna 32.60,48.80
-step
+step //13
 	|poi_rare Valyaka the Stormbringer
 	|poilvl 100
 	|poispot Azsuna 47.30,34.60
 	|poiquest 37726
 	|poiitem 129082
 	kill Valyaka the Stormbringer##???? |q 37726 |future |goto Azsuna 47.30,34.60
-step
+step //14
 	|poi_rare Daggerbeak
 	|poilvl 100
 	|poispot Azsuna 51.08,31.69
@@ -139,7 +139,7 @@ step //15
 	|poiitem 129085
 	kill Rift Wyrm##90242+
 	kill Arcavellus##90244 |q 37932 |future |goto Azsuna/0 59.84,12.08
-step
+step //16
 	|poi_rare Flog the Captain-Eater
 	|poilvl 100
 	|poispot Azsuna 45.30,57.80
@@ -148,7 +148,7 @@ step
 	|poiitem 129090
 	kill Flog the Captain-Eater##89884 |q 37824 |future |goto Azsuna 45.30,57.80
 	|tip You may need a group to defeat him.
-step
+step //17
 	|poi_rare Chief Bitterbrine
 	|poilvl 100
 	|poispot Azsuna 65.54,56.79
@@ -158,14 +158,14 @@ step
 	Swim through a window underwater |goto Azsuna/0 65.24,56.80 < 6 |walk
 	kill Chief Bitterbrine##106990 |q 42221 |future |goto Azsuna 65.54,56.79
 	|tip He is underwater in the back of the ship.
-step
+step //18
 	|poi_rare Tide Behemoth
 	|poilvl 100
 	|poispot Azsuna 61.30,62.00
 	|poiquest 38217
 	|poiitem 129062
 	kill Tide Behemoth##91113 |q 38217 |future |goto Azsuna 61.30,62.00
-step
+step //19
 	|poi_rare The Oracle
 	|poilvl 100
 	|poispot Azsuna 59.70,55.20
@@ -182,21 +182,21 @@ step //20
 	|poicurrency OR
 	|poiitem 129080
 	kill Ravyn-Drath##89016 |q 37537 |future |goto Azsuna 41.05,41.78
-step
+step //21
 	|poi_rare Syphonus/Leodrath
 	|poilvl 100
 	|poispot Azsuna 67.10,51.40
 	|poiquest 37989
 	|poiitem 129064
 	kill Syphonus/Leodrath##???? |q 37989 |future |goto Azsuna 67.10,51.40
-step
+step //22
 	|poi_rare Mrrgrl the Tidereaver
 	|poilvl 100
 	|poispot Azsuna 50.00,34.40
 	|poiquest 37823
 	|poiitem 129072
 	kill Mrrgrl the Tidereaver##???? |q 37823 |future |goto Azsuna 50.00,34.40
-step
+step //23
 	|poi_rare Captain Volo'ren
 	|poilvl 100
 	|poispot Azsuna 53.40,44.00
@@ -206,7 +206,7 @@ step
 	Go up the stairs |goto Azsuna/0 51.61,44.69 < 10
 	Cross the bridge |goto 52.80,45.32 < 5
 	kill Captain Volo'ren##89846 |q 37821 |future |goto Azsuna 53.40,44.00
-step
+step //24
 	|poi_rare Brawlgoth
 	|poilvl 100
 	|poispot Azsuna 55.10,45.90
@@ -225,7 +225,7 @@ step //25
 	click Horn of the Siren
 	kill Hatecoil Deepsinger##90774+, Hatecoil Reservist##90778+
 	kill Golza the Iron Fin##89816 |q 37820 |future |goto Azsuna 65.16,40.00
-step
+step //26
 	|poi_rare Brogozog
 	|poilvl 100
 	|poispot Azsuna 59.30,46.30
@@ -235,7 +235,7 @@ step
 	Go up the path |goto Azsuna 58.9,50.0 < 10
 	talk Tehd Shoemaker##91097 |goto Azsuna/0 59.30,46.42 < 5
 	kill Brogozog##91100 |q 38212 |future |goto Azsuna 59.30,46.30
-step
+step //27
 	|poi_rare Broodmother Lizax
 	|poilvl 100
 	|poispot Azsuna 33.40,41.20
@@ -244,7 +244,7 @@ step
 	|poiitem 141869
 	Enter the cave |goto Azsuna/0 33.32,42.50 < 10 |walk
 	kill Broodmother Lizax##107105 |q 44670 |future |goto Azsuna 33.40,41.20
-step
+step //28
 	|poi_rare Felwing
 	|poilvl 100
 	|poispot Azsuna 43.57,24.44
@@ -255,7 +255,7 @@ step
 	Go up the stairs |goto 43.62,24.03 < 10
 	talk Tehd Shoemaker##91097 |goto 43.56,24.48 < 5
 	kill Felwing##105197 |q 42069 |future |goto Azsuna 43.57,24.44
-step
+step //29
 	|poi_rare Coura, Mistress of Arcana
 	|poilvl 100
 	|poispot Azsuna/19 62.52,30.72
@@ -275,7 +275,7 @@ step //30
 	Go down the path |goto Azsuna/0 27.56,52.19 < 10
 	kill Inquisitor Tivos##107269 |q 42376 |future |goto Azsuna/0 28.4,52.1
 --//Val'sharah\\--
-step
+step //31
 	|poi_rare Elindya Featherlight
 	|poilvl 100
 	|poispot Val'sharah 60.42,90.72
@@ -284,7 +284,7 @@ step
 	clicknpc Elindya Featherlight##92334 |goto Val'sharah 60.42,90.72 < 5 |walk
 	|tip Follow Elindya as she walks.
 	kill Skul'vrax##93654 |q 38887 |future |goto Val'sharah 60.88,87.91
-step
+step //32
 	|poi_rare Gorebeak
 	|poilvl 100
 	|poispot Val'sharah 59.75,77.59
@@ -294,7 +294,7 @@ step
 	talk Lorel Sagefeather##92111 |goto Val'sharah/0 59.80,77.37 < 5 |walk
 	kill Gorebeak##92117 |q 38468 |future |goto Val'sharah 59.75,77.59
 	|tip You may need a group to defeat him.
-step
+step //33
 	|poi_rare Shivering Ashmaw Cub
 	|poilvl 100
 	|poispot Val'sharah 52.78,87.50
@@ -303,8 +303,9 @@ step
 	Enter the cave |goto Val'sharah/0 53.07,87.78 < 10 |walk
 	talk Shivering Ashmaw Cub##93677
 	|tip Defeat the waves of enemies that come.
-	Defend the Cub |q 38889 |future |goto Val'sharah 52.78,87.50
-step
+	accept Adopting the Adorable##38889 |future |goto Val'sharah 52.78,87.50
+	
+step //34
 	|poi_rare Grelda the Hag
 	|poilvl 100
 	|poispot Val'sharah 65.80,53.44
@@ -321,7 +322,7 @@ step //35
 	|poicurrency OR
 	|poiitem 130121
 	kill Thondrax##93205 |q 38780 |future |goto Val'sharah 62.60,47.50
-step
+step //36
 	|poi_rare Dreadbog
 	|poilvl 100
 	|poispot Val'sharah 60.31,44.27
@@ -329,7 +330,7 @@ step
 	|poicurrency OR
 	|poiitem 130125
 	kill Dreadbog##97517 |q 39858 |future |goto Val'sharah 60.31,44.27
-step
+step //37
 	|poi_rare Darkshade
 	|poilvl 100
 	|poispot Val'sharah 44.14,52.09
@@ -340,14 +341,14 @@ step
 	Enter Black Rook Hold |goto Val'sharah/0 39.00,53.73 < 10 |walk
 	kill Darkshade##92965 |q 38767 |future |goto Val'sharah 44.14,52.09
 	|tip He walks around this area.
-step
+step //38
 	|poi_rare Perrexx
 	|poilvl 100
 	|poispot Val'sharah 61.05,69.40
 	|poiquest 39596
 	|poiitem 130137
 	kill Perrexx##95318 |q 39596 |future |goto Val'sharah 61.05,69.40
-step
+step //39
 	|poi_rare Bahagar
 	|poilvl 100
 	|poispot Val'sharah 45.59,88.79
@@ -367,7 +368,7 @@ step //40
 	Step into the Old Bear Trap
 	kill Mad Henryk##95221 |q 39357 |future |goto Val'sharah 47.22,58.02
 	|tip When he summons copies of himself walk into them to find the real one.
-step
+step //41
 	|poi_rare Kiranys Duskwhisper
 	|poilvl 100
 	|poispot Val'sharah 34.42,58.28
@@ -377,14 +378,14 @@ step
 	Go up the path |goto Val'sharah/0 35.03,59.57 < 10
 	click Vibrating Arcane Trap
 	kill Kiranys Duskwhisper##94414 |q 39121 |future |goto Val'sharah 34.42,58.28
-step
+step //42
 	|poi_rare Ironbranch
 	|poilvl 100
 	|poispot Val'sharah 58.77,34.02
 	|poiquest 40080
 	|poicurrency 1220
 	kill Ironbranch##93030 |q 40080 |future |goto Val'sharah 58.77,34.02
-step
+step //43
 	|poi_rare Lyrath Moonfeather
 	|poilvl 100
 	|poispot Val'sharah 61.79,29.54
@@ -392,7 +393,7 @@ step
 	|poicurrency OR
 	|poiitem 130118
 	kill Lyrath Moonfeather##98241 |q 40079 |future |goto Val'sharah 61.79,29.54
-step
+step //44
 	|poi_rare Wraithtalon
 	|poilvl 100
 	|poispot Val'sharah 66.87,36.86
@@ -411,7 +412,7 @@ step //45
 	kill Frantic Stag##109695, Crazed Undergrell##109714, Frantic Mauler##109694
 	|tip Defeat the enemies that attack in waves.
 	kill Undergrell Ringleader##109708 |q 43176 |future |goto Val'sharah 67.03,69.58
-step
+step //46
 	|poi_rare Theryssia
 	|poilvl 100
 	|poispot Val'sharah 38.06,52.81
@@ -420,7 +421,7 @@ step
 	|poiitem 130136
 	clicknpc Theryssia##94194 |goto Val'sharah/0 37.95,52.81 < 5 |walk
 	kill Theryssia##92423 |q 38772 |future |goto Val'sharah 38.06,52.81
-step
+step //47
 	|poi_rare Seersei
 	|poilvl 100
 	|poispot Val'sharah 41.64,78.27
@@ -428,7 +429,7 @@ step
 	|poicurrency OR
 	|poiitem 130171
 	kill Seersei##92180 |q 38479 |future |goto Val'sharah 41.64,78.27
-step
+step //48
 	|poi_rare Pollous the Fetid
 	|poilvl 100
 	|poispot Val'sharah 67.50,45.10
@@ -437,7 +438,7 @@ step
 	|poiitem 130168
 	kill Pollous the Fetid##94485 |q 39130 |future |goto Val'sharah 67.50,45.10
 --//Highmountain\\--
-step
+step //49
 	|poi_rare Devouring Darkness
 	|poilvl 100
 	|poispot Highmountain 54.44,41.25
@@ -455,11 +456,12 @@ step //50
 	|poispot Highmountain 53.75,51.23
 	|poiquest 39872
 	|poiitem 131800
+	Follow the path |goto Highmountain/0 55.41,47.46 < 10 |only if walking
 	Enter the cave |goto Highmountain/0 54.20,50.73 < 10 |walk
 	talk Taurson##97653
 	kill Taurson##97653
 	click Taurson's Prize##3365 |q 39872 |future |goto Highmountain 53.75,51.23
-step
+step //51
 	|poi_rare Slumber
 	|poilvl 100
 	|poispot Highmountain 41.51,31.84
@@ -467,7 +469,7 @@ step
 	|poicurrency OR
 	|poiitem 131921
 	kill Slumber##98890 |q 40175 |future |goto Highmountain 41.51,31.84
-step
+step //52
 	|poi_rare Majestic Elderhorn
 	|poilvl 100
 	|poispot Highmountain 46.64,31.44
@@ -475,7 +477,8 @@ step
 	|poicurrency OR
 	|poiitem 131900
 	kill Majestic Elderhorn##96410 |q 39646 |future |goto Highmountain 46.64,31.44
-step
+	|tip Majestic Elderhorn runs around a large area. It is easiest to stand in this spot and wait.
+step //53
 	|poi_rare Mellok, Son of Torok
 	|poilvl 100
 	|poispot Highmountain 49.20,27.09
@@ -484,7 +487,7 @@ step
 	|poiitem 131808
 	Go up the path |goto Highmountain/0 47.49,29.16 < 10
 	kill Mellok, Son of Torok##96621 |q 40242 |future |goto Highmountain 49.20,27.09
-step
+step //54
 	|poi_rare Flamescale
 	|poilvl 100
 	|poispot Highmountain 40.97,57.75
@@ -501,7 +504,7 @@ step //55
 	|poicurrency OR
 	|poiitem 131730
 	kill Sekhan##101077 |q 40681 |future |goto Highmountain 45.70,55.00
-step
+step //56
 	|poi_rare Hartli the Snatcher
 	|poilvl 100
 	|poispot Highmountain 51.07,48.25
@@ -510,7 +513,7 @@ step
 	|poiitem 138783
 	Follow the path up Windripper Peak |goto Highmountain/0 53.20,48.01 < 10
 	kill Hartli the Snatcher##97326 |q 39802 |future |goto Highmountain 51.07,48.25
-step
+step //57
 	|poi_rare Amateur Hunters
 	|poilvl 100
 	|poispot Highmountain 43.16,48.00
@@ -519,15 +522,17 @@ step
 	Enter the cave |goto Highmountain 43.16,48.00 < 10 |walk
 	kill Dargok Thunderuin##100231, "Sure-Shot" Arnie##100230, Ryael Dawndrifter##100232
 	click Battered Chest##245479 |q 40413 |future |goto Highmountain/0 43.46,47.37
-step
+step //58
 	|poi_rare Frostshard
 	|poilvl 110
 	|poispot Highmountain 54.44,74.54
 	|poiquest 40773
 	|poicurrency OR
+	Follow the path |goto Highmountain/0 54.52,73.19 < 25 |only if walking
 	kill Frostshard##101649 |q 40773 |future |goto Highmountain 54.44,74.54
+	|tip He patrols up and down the ravine.
 	|tip You may need a group to defeat him.
-step
+step //59
 	|poi_rare Skullhat
 	|poilvl 100
 	|poispot Highmountain 51.46,31.89
@@ -546,7 +551,7 @@ step //60
 	Follow the path |goto Highmountain 44.44,32.34 < 10
 	Continue on the path up the mountain |goto Highmountain/0 44.66,35.44 < 10
 	kill Tenpak Flametotem##97203 |q 39782 |future |goto Highmountain 41.94,41.49
-step
+step //61
 	|poi_rare Beastmaster Pao'lek
 	|poilvl 100
 	|poispot Highmountain 48.60,50.00
@@ -555,7 +560,7 @@ step
 	Go up the steep mountain path |goto Highmountain/0 46.56,49.68 < 10
 	talk Beastmaster Pao'lek##97215 |goto Highmountain 48.65,50.09 < 5 |walk
 	kill Arru##97220 |q 39784 |future |goto Highmountain 48.91,49.93
-step
+step //62
 	|poi_rare Bristlemaul
 	|poilvl 100
 	|poispot Highmountain 38.08,45.59
@@ -564,7 +569,7 @@ step
 	|poiitem 131761
 	Enter the cave |goto Highmountain 37.70,45.70 < 10 |walk
 	kill Bristlemaul##97449 |q 40405 |future |goto Highmountain/0 38.08,45.59
-step
+step //63
 	|poi_rare Crab Rider Grmlrml
 	|poilvl 100
 	|poispot Highmountain 44.20,12.10
@@ -572,7 +577,7 @@ step
 	|poicurrency OR
 	|poiitem 131798
 	kill Crab Rider Grmlrml##97933 |q 39994 |future |goto Highmountain 44.20,12.10
-step
+step //64
 	|poi_rare Mrrklr
 	|poilvl 100
 	|poispot Highmountain 46.50,07.44
@@ -590,7 +595,7 @@ step //65
 	|poiitem 131775
 	kill Gurbog da Basher##96590 |q 40347 |future |goto Highmountain 56.40,60.50
 	|tip He walks around the area and might not be in this exact spot.
-step
+step //66
 	|poi_rare Brogul the Mighty
 	|poilvl 100
 	|poispot Highmountain 56.35,72.50
@@ -599,7 +604,7 @@ step
 	Follow the path up |goto Highmountain/0 58.97,68.79 < 10
 	Continue up the mountain |goto 57.98,73.73 < 10
 	kill Brogul the Mighty##94877 |q 39235 |future |goto Highmountain 56.35,72.50
-step
+step //67
 	|poi_rare Bodash the Hoarder
 	|poilvl 100
 	|poispot Highmountain 36.74,16.35
@@ -607,7 +612,7 @@ step
 	|poicurrency OR
 	|poiitem 131799
 	kill Bodash the Hoarder##98299 |q 40084 |future |goto Highmountain 36.74,16.35
-step
+step //68
 	|poi_rare Majestic Elderhorn
 	|poilvl 100
 	|poispot Highmountain 48.50,25.46
@@ -616,7 +621,7 @@ step
 	|poiitem 131900
 	kill Majestic Elderhorn##96410 |q 39646 |future |goto Highmountain 48.50,25.46
 	|tip It runs around the area and may not be in this exact spot.
-step
+step //69
 	|poi_rare Shara Felbreath
 	|poilvl 100
 	|poispot Highmountain 51.06,25.70
@@ -633,7 +638,7 @@ step //70
 	|poiitem 131809
 	Go up the path |goto Highmountain/0 49.50,39.71 < 10
 	kill Crawshuk the Hungry##97345 |q 39806 |future |goto Highmountain 48.41,40.15
-step
+step //71
 	|poi_rare Mynta Talonscreech
 	|poilvl 100
 	|poispot Highmountain 54.50,40.60
@@ -644,7 +649,7 @@ step
 	talk Scout Harefoot##97579 |goto Highmountain/0 54.54,40.63 < 5 |walk
 	kill Vilewing Ambusher##97591+
 	kill Mynta Talonscreech##97593 |q 39866 |future |goto Highmountain 54.50,40.60
-step
+step //72
 	|poi_rare Luggut the Eggeater
 	|poilvl 100
 	|poispot Highmountain 50.80,34.60
@@ -655,7 +660,7 @@ step
 	Jump down here |goto Highmountain/0 50.63,35.91 < 10 |walk
 	kill Luggut the Eggeater##98024 |q 40406 |future |goto Highmountain 50.80,34.60
 	|tip It is at the bottom of the cave.
-step
+step //73
 	|poi_rare Unethical Adventurers
 	|poilvl 100
 	|poispot Highmountain 52.56,58.38
@@ -665,7 +670,7 @@ step
 	click Seemingly Unguarded Treasure##6478 |goto Highmountain/0 52.76,58.18 < 5 |walk
 	kill Xaander##109498, Zenobia##100303, Puck##100302, Darkful##109501, Jak##109500
 	Defeat the Unethical Adventurers |q 40423 |future |goto Highmountain 52.56,58.38
-step
+step //74
 	|poi_rare Oubdob Da Smasher
 	|poilvl 100
 	|poispot Highmountain 47.6,73.8
@@ -686,7 +691,7 @@ step //75
 	Enter the building |goto Stormheim/0 42.18,70.92 < 10 |walk
 	kill Erling the Lightningborn##91893, Asger Jarlborn##91895, Strider Cuyler##91894 |goto Stormheim/0 41.18,71.89 < 5 |walk
 	kill Thane Irglov the Merciless##91892 |q 38424 |future |goto Stormheim 40.67,72.38
-step
+step //76
 	|poi_rare Bloodstalker Alpha
 	|poilvl 100
 	|poispot Stormheim 38.45,43.05
@@ -695,7 +700,7 @@ step
 	|poiitem 129101
 	kill Bloodstalker Alpha##92599 |q 38626 |future |goto Stormheim 38.45,43.05
 	|tip It runs around the area and may not be in this exact spot.
-step
+step //77
 	|poi_rare Starbuck
 	|poilvl 100
 	|poispot Stormheim 54.80,29.41
@@ -703,7 +708,7 @@ step
 	|poicurrency OR
 	|poiitem 130132
 	kill Starbuck##107487 |q 42437 |future |goto Stormheim 54.80,29.41
-step
+step //78
 	|poi_rare Inquisitor Ernstenbok
 	|poilvl 100
 	|poispot Stormheim 63.70,74.22
@@ -712,7 +717,7 @@ step
 	|poiitem 140686
 	Enter the cave |goto Stormheim/0 62.35,75.01 < 10 |walk
 	kill Inquisitor Ernstenbok##90139 |q 37908 |future |goto Stormheim 63.70,74.22
-step
+step //79
 	|poi_rare Kottr Vondyr
 	|poilvl 100
 	|poispot Stormheim 73.45,47.63
@@ -729,7 +734,7 @@ step //80
 	|poicurrency OR
 	|poiitem 138421
 	kill Grrvrgull the Conqueror##98503 |q 40113 |future |goto Stormheim 78.62,61.16
-step
+step //81
 	|poi_rare Whitewater Typhoon
 	|poilvl 100
 	|poispot Stormheim 36.49,51.75
@@ -737,7 +742,7 @@ step
 	|poicurrency OR
 	|poiitem 138418
 	kill Whitewater Typhoon##92152 |q 38472 |future |goto Stormheim 36.49,51.75
-step
+step //82
 	|poi_rare Tiptog the Lost
 	|poilvl 100
 	|poispot Stormheim 47.17,49.83
@@ -746,7 +751,7 @@ step
 	|poiitem 129163
 	kill Tiptog the Lost##93166 |q 38774 |future |goto Stormheim 47.17,49.83
 	|tip He walks around the area and may not be in this exact spot.
-step
+step //83
 	|poi_rare Fathnyr
 	|poilvl 100
 	|poispot Stormheim 46.82,84.06
@@ -757,7 +762,7 @@ step
 	Enter the cave |goto 46.29,82.87 < 10 |walk
 	kill Fathnyr##91803 |q 38425 |future |goto Stormheim 46.82,84.06
 	|tip It is inside the cave at the top of Thorim's Peak.
-step
+step //84
 	|poi_rare Urgev the Flayer
 	|poilvl 100
 	|poispot Stormheim 64.80,51.76
@@ -775,7 +780,7 @@ step //85
 	kill Dread-Rider Cortis##94347 |q 43343 |future |goto Stormheim 73.90,60.60
 	|tip He flies around the area on a large bat.
 	only Alliance
-step
+step //86
 	|poi_rare Isel the Hammer
 	|poilvl 100
 	|poispot Stormheim 62.03,60.49
@@ -784,7 +789,7 @@ step
 	|poiitem 129133
 	Enter the building |goto Stormheim 61.8,60.9 < 10 |walk
 	kill Isel the Hammer##94413 |q 39120 |future |goto Stormheim 62.03,60.49
-step
+step //87
 	|poi_rare Ivory Sentinel
 	|poilvl 100
 	|poispot Stormheim 59.82,68.07
@@ -792,7 +797,7 @@ step
 	|poicurrency OR
 	|poiitem 132895
 	kill Ivory Sentinel##92751 |q 39031 |future |goto Stormheim 59.82,68.07
-step
+step //88
 	|poi_rare Glimar Ironfist
 	|poilvl 100
 	|poispot Stormheim 41.47,67.02
@@ -801,12 +806,13 @@ step
 	|poiitem 129291
 	click Grapple Point |goto Stormheim/0 41.43,65.67 < 5
 	kill Glimar Ironfist##91529 |q 38333 |future |goto Stormheim/0 41.55,66.56
-step
+step //89
 	|poi_rare Stormwing Matriarch
 	|poilvl 100
 	|poispot Stormheim 49.50,71.75
 	|poiquest 38423
 	|poiitem 129208
+	Follow the path up |goto Stormheim/0 51.58,76.58 < 25 |only if walking
 	kill Stormwing Matriarch##91795 |q 38423 |future |goto Stormheim 49.50,71.75
 step //90
 	|poi_rare Hannval the Butcher
@@ -818,7 +824,7 @@ step //90
 	Follow the path |goto Stormheim/0 56.55,75.63 < 10
 	Continue up the path |goto Stormheim/0 57.35,79.10 < 10
 	kill Hannval the Butcher##107926 |q 42591 |future |goto Stormheim 51.60,74.65
-step
+step //91
 	|poi_rare Bladesquall
 	|poilvl 100
 	|poispot Stormheim 45.87,77.36
@@ -828,7 +834,7 @@ step
 	click Grapple Point |goto Stormheim/0 46.36,74.37 < 5
 	Follow the narrow path up |goto 46.68,75.28 < 10
 	kill Bladesquall##91874 |q 38431 |future |goto Stormheim 45.87,77.36
-step
+step //92
 	|poi_rare Tarben
 	|poilvl 100
 	|poispot Stormheim 61.53,43.33
@@ -838,15 +844,17 @@ step
 	click Grapple Point |goto Stormheim/0 60.37,43.81 < 5
 	click Grapple Point |goto 60.90,43.91 < 5
 	kill Tarben##98268 |q 40081 |future |goto Stormheim 61.53,43.33
-step
+step //93
 	|poi_rare Captain Brvet
 	|poilvl 100
 	|poispot Stormheim 58.00,45.16
 	|poiquest 38642
 	|poicurrency OR
 	|poiitem 129123
+	click Horn of the Hellmouth
 	kill Captain Brvet##92685 |q 38642 |future |goto Stormheim 58.00,45.16
-step
+	|tip You will need to kill two raiders before Brvet leaves the boat.
+step //94
 	|poi_rare Roteye
 	|poilvl 100
 	|poispot Stormheim 58.35,33.92
@@ -854,6 +862,7 @@ step
 	|poicurrency OR
 	|poiitem 139387
 	Enter the cave |goto Stormheim 57.7,34.8 < 10 |walk
+	|tip It's down in Tideskorn Harbor.
 	kill Roteye##110363 |q 43342 |future |goto Stormheim 58.35,33.92
 step //95
 	|poi_rare Mordvigbjorn
@@ -863,7 +872,7 @@ step //95
 	|poicurrency OR
 	|poiitem 129035
 	kill Mordvigbjorn##93371 |q 38837 |future |goto Stormheim 72.50,49.91
-step
+step //96
 	|poi_rare The Nameless King
 	|poilvl 100
 	|poispot Stormheim 67.30,39.90
@@ -872,7 +881,7 @@ step
 	|poiitem 129041
 	click Offering Shrine##6478
 	kill The Nameless King##92763 |q 38685 |future |goto Stormheim 67.30,39.90
-step
+step //97
 	|poi_rare Egyl the Enduring
 	|poilvl 100
 	|poispot Stormheim 41.77,34.11
@@ -881,7 +890,7 @@ step
 	|poiitem 132898
 	Enter the cave |goto Stormheim 41.4,31.9 < 10 |walk
 	kill Egyl the Enduring##98188 |q 40068 |future |goto Stormheim 41.77,34.11
-step
+step //98
 	|poi_rare Fenri
 	|poilvl 100
 	|poispot Helheim/0 84.83,49.86
@@ -892,7 +901,7 @@ step
 	Use the portal back to Helheim |goto Stormheim 73.64,39.36 < 10 |only if completedq(39855)
 	Enter the cave |goto Helheim/0 82.02,43.54 < 10 |walk
 	kill Fenri##92040 |q 38461 |future |goto Helheim/0 84.83,49.86
-step
+step //99
 	|poi_rare Soulthirster
 	|poilvl 100
 	|poispot Helheim/0 28.69,63.65
@@ -908,19 +917,14 @@ step //100
 	|poispot Stormheim 44.20,22.96
 	|poiquest 38630
 	|poiitem 129266
+	Follow the path up |goto Stormheim/0 49.15,31.35 < 20 |only if walking
+	Follow the path |goto 47.59,32.28 < 20 |only if walking
+	Drop down |goto 43.01,27.99 < 10 |only if walking
+	Follow the path |goto 43.78,25.32 < 20 |only if walking
 	kill Deathguard Adams##92626, Dark Ranger Jess##92631, Apothecary Perez##92634, Assassin Huwe##92633
 	Defeat the Horde Kill Squad |q 38630 |future |goto Stormheim 44.20,22.96
 	only Alliance
-step
-	|poi_rare Worgen Stalkers
-	|poilvl 100
-	|poispot Stormheim 44.20,22.96
-	|poiquest 38627
-	|poiitem 129264
-	kill Ambusher Daggerfang##92611, Priestess Liza##92613, Tracker Jack##92609, Champion Elodie##92604
-	Defeat the Worgen Stalkers |q 38627 |future |goto Stormheim 44.20,22.96
-	only Horde
-step
+step //101
 	|poi_rare Hook and Sinker
 	|poilvl 100
 	|poispot Stormheim 42.01,57.67
@@ -929,17 +933,8 @@ step
 	kill Hook##92590, Sinker##92591
 	Defeat Hook and Sinker |q 38625 |future |goto Stormheim 42.01,57.67
 	only Alliance
-step
-	|poi_rare Houndmaster Ely
-	|poilvl 100
-	|poispot Stormheim 47.20,57.10
-	|poiquest 38712
-	|poicurrency OR
-	|poiitem 129037
-	kill Houndmaster Ely##92951 |q 38712 |future |goto Stormheim 47.20,57.10
-	only Horde
 --//Suramar\\--
-step
+step //102
 	|poi_rare Maia the White
 	|poilvl 110
 	|poispot Suramar 24.39,35.17
@@ -947,7 +942,7 @@ step
 	|poiitem 139897
 	|poicurrency OR
 	kill Maia the White##112497 |q 44071 |future |goto Suramar 24.39,35.17
-step //105
+step //103
 	|poi_rare Shadowquill
 	|poilvl 110
 	|poispot Suramar 16.70,27.04
@@ -955,7 +950,7 @@ step //105
 	|poicurrency AM
 	|poiitem 140401
 	kill Shadowquill##103841 |q 43996 |future |goto Suramar 16.70,27.04
-step
+step //104
 	|poi_rare Mar'tura
 	|poilvl 110
 	|poispot Suramar 13.53,53.44
@@ -963,7 +958,7 @@ step
 	|poicurrency AM
 	|poiitem 140949
 	kill Mar'tura##112802 |q 44124 |future |goto Suramar 13.53,53.44
-step
+step //105
 	|poi_rare Tideclaw
 	|poilvl 110
 	|poispot Suramar/0 18.55,61.14
@@ -971,7 +966,7 @@ step
 	|poicurrency AM
 	|poiitem 140399
 	kill Tideclaw##110824 |q 43542 |future |goto Suramar/0 18.55,61.14
-step
+step //106
 	|poi_rare Matron Hagatha
 	|poilvl 110
 	|poispot Suramar 36.18,33.81
@@ -981,7 +976,7 @@ step
 	Follow the path |goto Suramar 40.3,26.2 < 10
 	Enter the cave |goto Suramar/0 35.87,34.54 < 10 |walk
 	kill Matron Hagatha##111329 |q 43718 |future |goto Suramar 36.18,33.81
-step
+step //107
 	|poi_rare Artificer Lothaire
 	|poilvl 110
 	|poispot Suramar 33.78,15.09
@@ -991,7 +986,7 @@ step
 	kill Damaged Spell Seeker Construct##106349+
 	|tip Kill the constructs as they become active.
 	kill Artificer Lothaire##106351 |q 43717 |future |goto Suramar 33.78,15.09
-step //110
+step //108
 	|poi_rare Reef Lord Raj'his
 	|poilvl 110
 	|poispot Suramar 75.52,57.29
@@ -999,7 +994,7 @@ step //110
 	|poicurrency AM
 	|poiitem 121801
 	kill Reef Lord Raj'his##103575 |q 44003 |future |goto Suramar 75.52,57.29
-step
+step //109
 	|poi_rare Rok'nash
 	|poilvl 110
 	|poispot Suramar 80.15,70.00
@@ -1007,7 +1002,7 @@ step
 	|poicurrency AM
 	|poiitem 140019
 	kill Rok'nash##103183 |q 40680 |future |goto Suramar 80.15,70.00
-step
+step //110
 	|poi_rare Har'kess the Insatiable
 	|poilvl 110
 	|poispot Suramar 67.67,71.06
@@ -1016,7 +1011,7 @@ step
 	|poiitem 140381
 	Enter the cave |goto Suramar 72.39,68.08 < 10 |walk
 	kill Har'kess the Insatiable##103214 |q 41136 |future |goto Suramar 67.67,71.06
-step
+step //111
 	|poi_rare Degren
 	|poilvl 110
 	|poispot Suramar 54.43,56.12
@@ -1025,7 +1020,7 @@ step
 	|poiitem 121808
 	kill Degren##111651 |q 43792 |future |goto Suramar 54.43,56.12
 	|tip Clear the area of enemies before pulling Degren.
-step
+step //112
 	|poi_rare Ambassador D'vwinn
 	|poilvl 110
 	|poispot Suramar 54.80,63.76
@@ -1035,7 +1030,7 @@ step
 	Go up the stairs |goto Suramar/0 55.78,62.39 < 10
 	kill Ambassador D'vwinn##111649 |q 43794 |future |goto Suramar 54.80,63.76
 	|tip He is surrounded by enemies, you will probably need a group to defeat him.
-step //115
+step //113
 	|poi_rare Mal'Dreth the Corruptor
 	|poilvl 110
 	|poispot Suramar 34.17,60.99
@@ -1043,7 +1038,7 @@ step //115
 	|poicurrency AM
 	|poiitem 140386
 	kill Mal'Dreth the Corruptor##110024 |q 43351 |future |goto Suramar 34.17,60.99
-step
+step //114
 	|poi_rare Cadraeus
 	|poilvl 110
 	|poispot Suramar 62.56,48.08
@@ -1051,7 +1046,7 @@ step
 	|poicurrency AM
 	|poiitem 139969
 	kill Cadraeus##110726 |q 43495 |future |goto Suramar 62.56,48.08
-step
+step //115
 	|poi_rare Hertha Grimdottir
 	|poilvl 110
 	|poispot Suramar 61.66,39.58
@@ -1060,7 +1055,7 @@ step
 	|poiitem 121737
 	Enter the cave |goto Suramar/0 61.75,39.59 < 10 |walk
 	kill Hertha Grimdottir##103223 |q 43993 |future |goto Suramar 61.66,39.58
-step
+step //116
 	|poi_rare Cora'Kar
 	|poilvl 110
 	|poispot Suramar 68.17,58.96
@@ -1069,7 +1064,7 @@ step
 	|poicurrency OR
 	Enter the cave |goto Suramar 70.0,56.9 < 10 |walk
 	kill Cora'Kar##100864 |q 41135 |future |goto Suramar 68.17,58.96
-step
+step //117
 	|poi_rare Pinchshank
 	|poilvl 110
 	|poispot Suramar 66.65,67.13
@@ -1077,7 +1072,7 @@ step
 	|poicurrency AM
 	|poiitem 140314
 	kill Pinchshank##107846 |q 43968 |future |goto Suramar 66.65,67.13
-step //120
+step //118
 	|poi_rare Myonix
 	|poilvl 110
 	|poispot Suramar 40.96,32.82
@@ -1085,7 +1080,7 @@ step //120
 	|poicurrency AM
 	|poiitem 121739
 	kill Myonix##110340 |q 43358 |future |goto Suramar 40.96,32.82
-step
+step //119
 	|poi_rare Anax
 	|poilvl 110
 	|poispot Suramar 33.72,51.23
@@ -1093,7 +1088,7 @@ step
 	|poicurrency AM
 	|poiitem 140934
 	kill Anax##111197 |q 43954 |future |goto Suramar 33.72,51.23
-step
+step //120
 	|poi_rare Shal'an
 	|poilvl 110
 	|poispot Suramar 26.24,41.19
@@ -1102,7 +1097,7 @@ step
 	|poiitem 139926
 	Enter the building |goto Suramar/0 25.94,40.82 < 10 |walk
 	kill Shal'an##109054 |q 42831 |future |goto Suramar 26.24,41.19
-step
+step //121
 	|poi_rare Oreth the Vile
 	|poilvl 110
 	|poispot Suramar 24.57,47.40
@@ -1110,7 +1105,7 @@ step
 	|poicurrency AM
 	|poiitem 140388
 	kill Oreth the Vile##110577 |q 43449 |future |goto Suramar 24.57,47.40
-step
+step //122
 	|poi_rare Elfbane
 	|poilvl 110
 	|poispot Suramar 22.13,51.78
@@ -1119,7 +1114,7 @@ step
 	|poiitem 121806
 	kill Elfbane##99792 |q 41319 |future |goto Suramar 22.13,51.78
 	|tip You may need a group to defeat him.
-step //125
+step //123
 	|poi_rare King Morgalash
 	|poilvl 110
 	|poispot Suramar 87.45,62.35
@@ -1130,7 +1125,7 @@ step //125
 	kill Sashj'tar Wave Crusher##103930+, Sashj'tar Wave Breaker##103929+, Elder Trenchwalker##103932+
 	|tip Kill the enemies that attack in waves.
 	kill King Morgalash##103827 |q 41786 |future |goto Suramar 87.45,62.35
-step
+step //124
 	|poi_rare Siegemaster Aedrin
 	|poilvl 110
 	|poispot Suramar 37.14,21.37
@@ -1139,7 +1134,7 @@ step
 	|poiitem 140406
 	Cross the bridge |goto Suramar/0 39.19,24.51 < 10
 	kill Siegemaster Aedrin##110438 |q 43369 |future |goto Suramar 37.14,21.37
-step
+step //125
 	|poi_rare Garvrulg
 	|poilvl 110
 	|poispot Suramar 53.19,30.21
@@ -1151,7 +1146,7 @@ step
 	Continue up the path |goto 51.01,30.67 < 10 |walk
 	Follow the path around |goto 50.94,29.94 < 10 |walk
 	kill Garvrulg##99610 |q 40897 |future |goto Suramar 53.19,30.21
-step
+step //126
 	|poi_rare Apothecary Faldren
 	|poilvl 110
 	|poispot Suramar 42.17,56.41
@@ -1159,7 +1154,7 @@ step
 	|poicurrency AM
 	|poiitem 121754
 	kill Apothecary Faldren##110870 |q 43580 |future |goto Suramar 42.17,56.41
-step
+step //127
 	|poi_rare Lieutenant Strathmar
 	|poilvl 110
 	|poispot Suramar 48.53,56.68
@@ -1168,7 +1163,7 @@ step
 	|poiitem 121735
 	Enter the building |goto Suramar/0 47.70,54.52 < 10 |walk
 	kill Lieutenant Strathmar##102303 |q 40905 |future |goto Suramar 48.53,56.68
-step //130
+step //128
 	|poi_rare Gorgroth
 	|poilvl 110
 	|poispot Suramar 27.77,65.47
@@ -1177,7 +1172,7 @@ step //130
 	|poiitem 121747
 	click Portal Key |goto Suramar 27.77,65.47 < 5 |walk
 	kill Gorgroth##110832 |q 43992 |future |goto Suramar 27.29,66.02
-step
+step //129
 	|poi_rare Miasu
 	|poilvl 110
 	|poispot Suramar 62.50,63.69
@@ -1186,7 +1181,7 @@ step
 	|poicurrency OR
 	Go up the stairs |goto Suramar/0 61.16,63.11 < 10
 	kill Miasu##111653 |q 43793 |future |goto Suramar 62.50,63.69
-step
+step //130
 	|poi_rare Arcanist Lylandre
 	|poilvl 110
 	|poispot Suramar 65.57,59.14
@@ -1199,7 +1194,7 @@ step
 	click Lylandre's Fel Crystal |goto 65.67,59.38 < 5 |walk
 	click Lylandre's Frost Crystal |goto 65.42,59.25 < 5 |walk
 	kill Arcanist Lylandre##110656 |q 43481 |future |goto Suramar 65.57,59.14
-step
+step //131
 	|poi_rare Guardian Thor'el
 	|poilvl 110
 	|poispot Suramar 61.01,52.98
@@ -1208,7 +1203,7 @@ step
 	|poiitem 140404
 	kill Guardian Thor'el##110944 |q 43597 |future |goto Suramar 61.01,52.98
 	|tip He patrols up and down this road, and may not be in this exact spot.
-step
+step //132
 	|poi_rare Randril
 	|poilvl 110
 	|poispot Suramar 49.60,79.00
@@ -1218,7 +1213,7 @@ step
 	Go up the stairs |goto Suramar/0 46.72,76.99 < 10
 	Cross the bridge |goto 48.31,77.46 < 10
 	kill Randril##111007 |q 43603 |future |goto Suramar 49.60,79.00
-step //135
+step //133
 	|poi_rare Rauren
 	|poilvl 110
 	|poispot Suramar 24.05,25.42
@@ -1226,7 +1221,7 @@ step //135
 	|poicurrency AM
 	|poiitem 121759
 	kill Rauren##105547 |q 43484 |future |goto Suramar 24.05,25.42
-step
+step //134
 	|poi_rare Magister Phaedris
 	|poilvl 110
 	|poispot Suramar 42.05,80.05
@@ -1235,7 +1230,7 @@ step
 	|poiitem 140405
 	Go up the stairs |goto Suramar/0 41.54,78.75 < 10
 	kill Magister Phaedris##109954 |q 43348 |future |goto Suramar 42.05,80.05
-step
+step //135
 	|poi_rare Llorian
 	|poilvl 110
 	|poispot Suramar 29.39,53.30
@@ -1248,7 +1243,7 @@ step
 	Select _<Feed Llorian 25 Ancient Mana.>_
 	|tip Defeat the waves of enemies that attack.
 	click Llorian's Supplies##255341 |q 44676 |future |goto Suramar 29.39,53.30
-step
+step //136
 	|poi_rare Lady Rivantas
 	|poilvl 110
 	|poispot Suramar 35.23,67.23
@@ -1259,7 +1254,7 @@ step
 	Go up the stairs |goto 34.25,68.58 < 10 |walk
 	kill Lady Rivantas##106526 |q 44675 |future |goto Suramar 35.23,67.23
 --//Mardum, the Shattered Abyss\\--
-step
+step //137
 	|poi_rare Count Nefarious
 	|poilvl 98
 	|poispot Mardum, the Shattered Abyss C/0 63.6,23.6
@@ -1268,21 +1263,21 @@ step
 	Go up the path |goto Mardum, the Shattered Abyss C/0 63.40,25.82 < 10
 	kill Count Nefarious##97058 |q 40231 |future |goto Mardum, the Shattered Abyss C/2 51.43,56.25
 	|tip Clicking the Wells of Souls in this room will stun Nefarious for a few seconds.
-step //140
+step //138
 	|poi_rare General Volroth
 	|poilvl 98
 	|poispot Mardum, the Shattered Abyss C/0 68.6,27.6
 	|poiquest 40234
 	|poiitem 128947
 	kill General Volroth##97370 |q 40234 |future |goto Mardum, the Shattered Abyss C/0 68.6,27.6
-step
+step //139
 	|poi_rare Overseer Brutarg
 	|poilvl 98
 	|poispot Mardum, the Shattered Abyss C/0 80.8,41.6
 	|poiquest 40233
 	|poiitem 133580
 	kill Overseer Brutarg##97057 |q 40233 |future |goto Mardum, the Shattered Abyss C/0 80.8,41.6
-step
+step //140
 	|poi_rare King Voras
 	|poilvl 98
 	|poispot Mardum, the Shattered Abyss C/0 74.4,57.2
@@ -1290,7 +1285,7 @@ step
 	|poiitem 128944
 	Go up the path |goto Mardum, the Shattered Abyss C/0 73.32,56.05 < 10
 	kill King Voras##97059 |q 40232 |future |goto Mardum, the Shattered Abyss C/0 74.4,57.2
-step
+step //141
 	|poi_rare Wrath-Lord Lekos
 	|poilvl 98
 	|poispot Vault of the Wardens/1 69.0,26.8
@@ -1298,7 +1293,7 @@ step
 	|poiitem 128958
 	kill Wrath-Lord Lekos##97069 |q 40301 |future |goto Vault of the Wardens/1 69.0,26.8
 	only if havequest(38672) or completedq(38672)
-step
+step //142
 	|poi_rare Kethrazor
 	|poilvl 98
 	|poispot Vault of the Wardens/1 48.8,31.4
@@ -1308,4 +1303,4 @@ step
 	kill Kethrazor##96997 |q 40251 |future |goto Vault of the Wardens/1 48.8,31.4
 	only if havequest(38672) or completedq(38672)
 ]])
-ZGV.BETAEND()   
+ZGV.BETAEND()

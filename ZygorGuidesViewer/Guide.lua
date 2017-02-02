@@ -579,6 +579,13 @@ function Guide:tostring()
 	return self.title_short
 end
 
+function Guide:GetParentFolder()
+	local path,guide = self.title:match("^(.+)\\(.-)$")
+	local _,parent = path:match("^(.+)\\(.-)$")
+
+	return parent,path
+end
+
 function GuideFuncs:AskReload() --reload after a panda has choosen a faction.
 	if not self.ReloadPopup then
 		self.ReloadPopup = ZGV.PopupHandler:NewPopup("ZygorReloadPopup","default")

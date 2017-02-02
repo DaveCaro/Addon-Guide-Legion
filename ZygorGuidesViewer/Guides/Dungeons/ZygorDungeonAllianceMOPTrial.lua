@@ -95,6 +95,7 @@ path follow loose; loop off; ants curved
 path	59.6,71.4	56.5,65.1	58.5,59.1
 path	63.5,58.6	66.2,64.7	The Deadmines/2 14.6,89.8
 Follow the winding ramp down |goto The Deadmines/2 14.6,89.8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Foe Reaper 5000##43778 |n |goto The Deadmines/2 10.4,82.8
@@ -103,10 +104,10 @@ If you're the _Prototype Reaper_ pilot, click here. |confirm |next "Proto_Reap" 
 |tip Foe Reaper 5000 will use Reaper Strike, cleaving anyone in front of it
 |tip When Overdrive is cast, run away and keep moving until it ends
 |tip Occasionally a party member will be targeted with Harvest. Avoid being in front of the Foe Reaper as he moves to the target
-_Tank:_ |only if heroic_dung()
-|tip Pull the Foe Reaper to the top of the ramp |only if heroic_dung()
-_Healer:_
-|tip Be prepared for party members to take damage during Overdrive
+_TANK:_ |only if heroic_dung() |grouprole TANK
+|tip Pull the Foe Reaper to the top of the ramp |only if heroic_dung() |grouprole TANK
+_HEALER:_ |grouprole HEALER
+|tip Be prepared for party members to take damage during Overdrive |grouprole HEALER
 Defeat the Foe Reaper 5000 |scenariogoal 24944 |goto The Deadmines/2 10.4,82.8
 next "canon_blast"
 step
@@ -161,8 +162,8 @@ kill 1 Admiral Ripsnarl##47626 |q 27785/1 |goto 63.9,39.5 |only if havequest(277
 |tip During the fog, he will Summon Vapors which need to be killed as soon as possible. They will grow larger before they explode, potentially killing anyone nearby
 |tip He will use Go For the Throat through the entire fight. It damages then stuns targets for 2 seconds. |only if heroic_dung()
 |tip When the fog ends, Ripsnarl will randomly target someone with Go for the Throat, stunning them and dealing damage
-_Healer:_ |only if heroic_dung()
-|tip Ripsnarl will use _Go for the Throat_ through the entire encounter. Prepare to heal accordingly |only if heroic_dung()
+_HEALER:_ |only if heroic_dung() |grouprole HEALER
+|tip Ripsnarl will use _Go for the Throat_ through the entire encounter. Prepare to heal accordingly |only if heroic_dung() |grouprole HEALER
 Defeat Admiral Ripsnarl |scenariogoal 24943 |goto 63.9,39.5
 step
 Click the Quest Completion Box that pops up.
@@ -257,9 +258,9 @@ kill 1 Vanessa VanCleef##49541
 |tip She will use Deadly Blades, randomly attack party members
 |tip She will use Backslash dealing 9k to 10k damage
 |tip At 50%, she will use Fiery Blaze which deals 46k to 53k fire damage every second. When this happens, ropes will appear at the end of the deck. Click them to avoid the damage
-_Tank:_
-|tip VanCleef will summon Defias Shadowguard and Defias Blood Wizards. These need to be picked up quickly
-|tip When Vanessa is at 1% of her total health, she will use Powder Explosion, Move as far away from her as possible to avoid death
+_TANK:_ |grouprole TANK
+|tip VanCleef will summon Defias Shadowguard and Defias Blood Wizards. These need to be picked up quickly |grouprole TANK
+|tip When Vanessa is at 1% of her total health, she will use Powder Explosion, Move as far away from her as possible to avoid death |grouprole TANK
 Defeat Vanessa VanCleef |scenariogoal 24945
 only if heroic_dung()
 step
@@ -277,11 +278,10 @@ description="This guide will walk you through the Wailing Caverns dungeon.",
 },[[
 step
 label "start"
-Press _I_ and queue for Wailing Caverns or enter the dungeon with your group |goto Northern Barrens/20 54.91,66.26 |c |or
-confirm |or
+Press _I_ and queue for Wailing Caverns or enter the dungeon with your group |goto Wailing Caverns/1 45.9,59.7 |c
 step
 talk Ebru##5768
-accept Cleansing the Caverns##26870 |goto Wailing Caverns 46.6,59.2
+accept Cleansing the Caverns##26870 |goto Wailing Caverns/1 46.6,59.2
 only if not completedq(26870)
 step
 talk Nalpak##5767
@@ -304,10 +304,10 @@ kill 1 Lady Anacondra##3671 |q Cleansing the Caverns##26870/2 |only if havequest
 |tip Lady Anacondra will cast Lightning Bolt on her current target
 |tip She will also put random players to sleep using Druid's Slumber
 |tip Anacondra will periodically attempt to heal herself or an ally with Healing Touch
-_DPS/Tank:_
-|tip Be sure to save an interrupt for Healing Touch. Interrupt Druid's Slumber whenever possible
-_Healer:_
-|tip Keep the tank topped off in case you get put to sleep
+_TANK/DAMAGE:_ |grouprole TANK or DAMAGE
+|tip Be sure to save an interrupt for Healing Touch. Interrupt Druid's Slumber whenever possible |grouprole TANK or DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Keep the tank topped off in case you get put to sleep |grouprole HEALER
 Defeat Lady Anacondra |scenariogoal 24764 |goto 30.5,43.2
 step
 Jump down here |goto 30.3,40.1 < 5
@@ -329,10 +329,10 @@ kill 1 Lord Pythas##3670 |q Cleansing the Caverns##26870/3 |only if havequest(26
 |tip He will also put random players to sleep using Druid's Slumber
 |tip Pythas will periodically attempt to heal himself or an ally with Healing Touch
 |tip Players within 10 yards will occasionally take nature damage and suffer reduced attack speed from Thunder Clap
-_DPS/Tank:_
-|tip Be sure to save an interrupt for Healing Touch. Interrupt Druid's Slumber whenever possible
-_Healer:_
-|tip Keep the tank topped off in case you get put to sleep
+_TANK/DAMAGE:_ |grouprole TANK or DAMAGE
+|tip Be sure to save an interrupt for Healing Touch. Interrupt Druid's Slumber whenever possible |grouprole TANK or DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Keep the tank topped off in case you get put to sleep |grouprole HEALER
 Defeat Lord Pythas |scenariogoal 24769 |goto Wailing Caverns/1 20.1,41.6
 step
 map Wailing Caverns
@@ -350,10 +350,10 @@ kill 1 Lord Cobrahn##3669 |q Cleansing the Caverns##26870/1 |only if havequest(2
 |tip He will also put random players to sleep using Druid's Slumber
 |tip Cobrahn will periodically attempt to heal himself or an ally with Healing Touch
 |tip At 45% health, Cobrahn will gain Serpent Form. He will begin using Poison on players. Dispel this when possible
-_DPS/Tank:_
-|tip Be sure to save an interrupt for Healing Touch. Interrupt Druid's Slumber whenever possible
-_Healer:_
-|tip Keep the tank topped off in case you get put to sleep
+_TANK/DAMAGE:_ |grouprole TANK or DAMAGE
+|tip Be sure to save an interrupt for Healing Touch. Interrupt Druid's Slumber whenever possible |grouprole TANK or DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Keep the tank topped off in case you get put to sleep |grouprole HEALER
 Defeat Lord Cobrahn |scenariogoal 24770 |goto Wailing Caverns/1 15.6,58.5
 step
 Jump down here |goto 15.8,51.8 |n
@@ -408,20 +408,20 @@ kill Lord Serpentis##3673 |q 26870/4 |only if havequest(26870)
 |tip Lord Serpentis will cast Lightning Bolt on his current target
 |tip He will also put random players to sleep using Druid's Slumber
 |tip Serpentis will periodically attempt to heal himself or an ally with Healing Touch
-_DPS/Tank:_
-|tip Be sure to save an interrupt for Healing Touch. Interrupt Druid's Slumber whenever possible
-_Healer:_
-|tip Keep the tank topped off in case you get put to sleep
+_TANK/DAMAGE:_ |grouprole TANK or DAMAGE
+|tip Be sure to save an interrupt for Healing Touch. Interrupt Druid's Slumber whenever possible |grouprole TANK or DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Keep the tank topped off in case you get put to sleep |grouprole HEALER
 Defeat Lord Serpentis |scenariogoal 1/24771 |goto 62.6,53.3
 step
 kill 1 Verdan the Everliving##5775 |goto 56.4,47.5
 |tip Verdan the Everliving has one ability, Grasping Vines
 _Grasping Vines_
 |tip This will periodically knock down players within 10 yards and immobilize them for 5 seconds
-_Tanks:_
-|tip Make use of defenisive cooldowns, especially during Grasping Vines
-_Healer:_
-|tip Be prepared, Verdan the Everliving may deal significant damage to undergeared tanks
+_TANK:_ |grouprole TANK
+|tip Make use of defenisive cooldowns, especially during Grasping Vines |grouprole TANK
+_HEALER:_ |grouprole HEALER
+|tip Be prepared, Verdan the Everliving may deal significant damage to undergeared tanks |grouprole HEALER
 Defeat Verdan the Everliving |scenariogoal 24787
 confirm
 step
@@ -470,10 +470,10 @@ Escort and Protect Muyoh until you get to the boss |scenariogoal 2/24776 |goto 3
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 step
 kill 1 Mutanus the Devourer##3654
-_DPS/Tank:_
-|tip Interrupt Naralex's Nightmare. This will put players to sleep for 8 seconds
-|tip Mutanus will Terrify random players. Dispel this if possible
-|tip Occasionally, Mutanus will use Thundercrack, dealing damage to all players within 10 yards and stunning them
+_TANK/DAMAGE:_ |grouprole TANK or DAMAGE
+|tip Interrupt Naralex's Nightmare. This will put players to sleep for 8 seconds |grouprole TANK or DAMAGE
+|tip Mutanus will Terrify random players. Dispel this if possible |grouprole TANK or DAMAGE
+|tip Occasionally, Mutanus will use Thundercrack, dealing damage to all players within 10 yards and stunning them |grouprole TANK or DAMAGE
 Defeat Mutanus the Devourer |scenariogoal 2/34405 |goto 34.0,15.6
 step
 Congratulations, you have completed Wailing Caverns!

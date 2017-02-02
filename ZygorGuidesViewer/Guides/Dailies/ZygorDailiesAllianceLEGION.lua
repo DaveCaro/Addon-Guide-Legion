@@ -297,17 +297,15 @@ accept Calamitous Intent##43193 |goto Azsuna/0 56.42,67.31
 step
 kill Calamir##109331 |q 43193/1 |goto 56.42,67.31
 |tip
-|tip DPS:
-|tip Run away when Calamir casts Howling Gale.
-|tip Avoid other players when you get the Burning Bomb debuff.
-|tip
-|tip HEALER:
-|tip Dispel the Burning Bomb debuff from other players.
-|tip Avoid the Arcanopulse areas.
-|tip
-|tip TANK:
-|tip Run away when Calamir casts Howling Gale.
-|tip Avoid the Arcanopulse areas.
+_DAMAGE:_ |only if grouprole("DAMAGE")
+|tip Run away when Calamir casts Howling Gale. |only if grouprole("DAMAGE")
+|tip Avoid other players when you get the Burning Bomb debuff. |only if grouprole("DAMAGE")
+_HEALER:_ |only if grouprole("HEALER")
+|tip Dispel the Burning Bomb debuff from other players. |only if grouprole("HEALER")
+|tip Avoid the Arcanopulse areas. |only if grouprole("HEALER")
+_TANK:_ |only if grouprole("TANK")
+|tip Run away when Calamir casts Howling Gale. |only if grouprole("TANK")
+|tip Avoid the Arcanopulse areas. |only if grouprole("TANK")
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41438
@@ -660,6 +658,19 @@ click Gleaming Leystone Outcropping##195122
 collect 1 Gleaming Leystone Ore##141229 |q 41455/1 |goto 62.12,60.33
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41434
+Follow the path |goto Azsuna/0 53.86,58.73 < 25 |only if walking
+Follow the path |goto 52.00,59.91 < 25 |only if walking
+Follow the path |goto 51.28,56.16 < 25 |only if walking
+Follow the path |goto 49.42,55.46 < 25 |only if walking
+accept Glowing Leystone Deposits##41434 |goto Azsuna/18 70.94,71.58
+|tip You will accept this quest automatically.
+step
+click Glowing Leystone Deposit##195122
+|tip These can be found all around the cave.
+collect 10 Glowing Leystone Ore##141223 |q 41434/1 |goto 70.94,71.58
+|next "Court_Of_Farondis_WQ"
+step
 label quest-43804
 accept Hate the Hatecoil##43804 |goto Eye of Azshara Map/0 38.45,46.16
 |tip You will accept this quest automatically.
@@ -732,6 +743,18 @@ accept Huge Cursed Queenfish##41610 |goto 54.87,37.76
 step
 Fish from the Huge Cursed Queenfish School |cast Fishing##131474
 collect 10 Huge Cursed Queenfish##134565 |q 41610/1 |goto 54.87,37.76
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41265
+Follow the path |goto Azsuna/0 46.21,44.61 < 25 |only if walking
+Follow the path |goto 47.61,43.87 < 25 |only if walking
+Follow the path |goto 48.94,42.71 < 25 |only if walking
+Follow the path |goto 48.98,41.29 < 25 |only if walking
+accept Huge Cursed Queenfish##41265 |goto 50.98,42.05
+|tip You will accept this quest automatically.
+step
+Fish from the Huge Cursed Queenfish School |cast Fishing##131474
+collect 10 Huge Cursed Queenfish##134565 |q 41265/1 |goto 63.01,26.88
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42277
@@ -896,6 +919,16 @@ step
 Fish from Lively Cursed Queenfish Schools |cast Fishing##7620
 |tip You will find these all around the water.
 collect 10 Lively Cursed Queenfish##134564 |q 41599/1 |goto 51.14,66.02
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41264
+accept Lively Cursed Queenfish##41264 |goto Azsuna/0 63.01,26.88
+|tip You will accept this quest automatically.
+step
+Fish from Lively Cursed Queenfish Schools |cast Fishing##131474
+|tip You will find these all around the water.
+More schools can be found _here_ |goto 63.91,22.58
+collect 10 Lively Cursed Queenfish##134564 |q 41264/1 |goto 63.01,26.88
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41454
@@ -1076,6 +1109,16 @@ label "Llothien_Prowlers"
 kill 10 Llothien Prowler##90313+ |q 42123/1 |goto 54.52,29.01
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41324
+Follow the path |goto Azsuna/0 50.36,30.27 < 25 |only if walking
+accept Silky Prowler Fur##41324 |goto 54.53,29.01
+|tip You will accept this quest automatically.
+step
+kill Llothien Prowler##90313+
+|tip Skin the corpses.
+collect 12 Silky Prowler Fur##134808 |q 41324/1
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42063
 Follow the path |goto Azsuna/0 63.38,30.69 < 25 |only if walking
 Follow the path |goto 63.84,34.56 < 25 |only if walking
@@ -1219,12 +1262,11 @@ accept Terror of the Deep##43192 |goto 43.39,66.65
 |tip You will accept this quest automatically.
 step
 kill Levantus##108829 |q 43192/1 |goto 43.39,66.65
-|tip ALL:
+_TANK:_ |only if grouprole("TANK")
+|tip Stay in melee range as much as possible or Levantus will use Rampaging Torrent, causing massive raid damage. |only if grouprole("TANK")
+_EVERYONE:_
 |tip Move into the swirling tornados to gain the Waterwalking buff to move around easier.
 |tip Move around Levantus as she casts Massive Spout to avoid heavy damage.
-|tip
-|tip TANK:
-|tip Stay in melee range as much as possible or Levantus will use Rampaging Torrent, causing massive raid damage.
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42018
@@ -2015,6 +2057,18 @@ step
 kill Harbinger of Screams##110361 |q 43345/1 |goto 70.45,52.36
 |next "Court_Of_Farondis_WQ"
 step
+label quest-42870
+Follow the path |goto Val'sharah/0 53.52,73.94 < 25 |only if walking
+Follow the path |goto 51.51,75.65 < 25 |only if walking
+Follow the path |goto 49.78,78.81 < 25 |only if walking
+Follow the path |goto 48.80,82.93 < 25 |only if walking
+Follow the path |goto 46.98,83.36 < 25 |only if walking
+accept DANGER: Kathaw the Savage##42870 |goto 45.38,83.79
+|tip You will accept this quest automatically.
+step
+kill Kathaw the Savage##109125 |q 42870/1 |goto 45.38,83.79
+|next "Court_Of_Farondis_WQ"
+step
 label quest-43152
 Follow the path |goto Val'sharah/0 41.53,59.96 < 30 |only if walking
 Follow the path |goto 39.48,59.68 < 30 |only if walking
@@ -2197,6 +2251,14 @@ kill Felhide Gargantuan##103675
 Skin the Felhide Gargantuan |q 41567/1 |goto 46.36,42.42
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41566
+accept Felhide##41566 |goto Val'sharah/0 29.94,71.35
+|tip You will accept this quest automatically.
+step
+kill Felhide Gargantuan##103675
+Skin the Felhide Gargantuan |q 41566/1 |goto 29.94,71.35
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41516
 accept Felwort##41516 |goto Val'sharah/0 30.00,71.16
 |tip You will accept this quest automatically.
@@ -2355,6 +2417,16 @@ Goal Reached |q 45047/1 |goto 40.61,62.29
 |tip The goal is through the middle passage, on the far side of the yellow wall.
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41600
+Follow the path |goto Val'sharah/0 68.43,48.60 < 25 |only if walking
+Follow the path |goto 73.16,42.70 < 25 |only if walking
+accept Lively Mossgill Perch##41600 |goto 73.18,35.79
+|tip You will accept this quest automatically.
+step
+Fish from the Lively Mossgill Perch schools |cast Fishing##131474
+collect 10 Lively Mossgill Perch##134567 |q 41600/1 |goto 73.18,35.79
+|next "Court_Of_Farondis_WQ"
+step
 label quest-44011
 Follow the path down |goto Val'sharah/0 56.71,62.57 < 30 |only if walking
 Follow the path up |goto 53.91,64.33 < 30 |only if walking
@@ -2425,6 +2497,8 @@ accept Musky Bear Hide##41334 |goto 69.50,34.49
 |tip You will accept this quest automatically.
 step
 kill Vale Bear##106467+
+|tip Skin the corpses.
+|tip If you click the Needlers to knock them off the bears, you will be able to kill the bear they are riding.
 collect 12 Musky Bear Hide##134811 |q 41334/1 |goto 68.36,33.62
 |next "Court_Of_Farondis_WQ"
 step
@@ -2477,14 +2551,12 @@ accept Pocket Wizard##42819 |goto 24.54,69.47
 step
 kill Humongris##108879 |q 42819/1 |goto 24.00,69.87
 |tip
-|tip DPS:
-|tip Spread out to minimize damage from Fire Boom and Ice Fist.
-|tip
-|tip HEALER:
-|tip Spread out to minimize damage from Fire Boom and Ice Fist.
-|tip
-|tip TANK:
-|tip Move away from the raid when affected by You Go Bang!
+_DAMAGE:_ |only if grouprole("DAMAGE")
+|tip Spread out to minimize damage from Fire Boom and Ice Fist. |only if grouprole("DAMAGE")
+_HEALER:_ |only if grouprole("HEALER")
+|tip Spread out to minimize damage from Fire Boom and Ice Fist. |only if grouprole("HEALER")
+_TANK:_ |only if grouprole("TANK")
+|tip Move away from the raid when affected by You Go Bang! |only if grouprole("TANK")
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41964
@@ -2658,16 +2730,14 @@ Enter the Tangled Cleft |goto 57.32,46.31 < 30 |only if walking
 accept The Sleeping Corruption##42779 |goto 55.32,43.12
 |tip You will accept this quest automatically.
 step
-kill 1 Shar'thos##108678 |q 42779/1 |goto 55.32,43.12
+kill Shar'thos##108678 |q 42779/1 |goto 55.32,43.12
 |tip
-_DAMAGE:_
-|tip Spread out to avoid chaining Dread Flame to party members.
-|tip
-_HEALER:_
-|tip Spread out to avoid chaining Dread Flame to party members.
-|tip
-_TANK:_
-|tip Keep Shar'thos' head and tail pointed away from raid members.
+_DAMAGE:_ |only if grouprole("DAMAGE")
+|tip Spread out to avoid chaining Dread Flame to party members. |only if grouprole("DAMAGE")
+_HEALER:_ |only if grouprole("HEALER")
+|tip Spread out to avoid chaining Dread Flame to party members. |only if grouprole("HEALER")
+_TANK:_ |only if grouprole("TANK")
+|tip Keep Shar'thos' head and tail pointed away from raid members. |only if grouprole("TANK")
 step
 label quest-41855
 Follow the path |goto Val'sharah/0 54.97,74.44 < 30 |only if walking
@@ -3273,19 +3343,17 @@ accept A Dark Tide##43985 |goto Highmountain/0 49.15,7.66
 step
 kill Flotsam##99929 |q 43985/1 |goto 49.15,7.66
 |tip
-|tip DPS:
-|tip Move out of Jetsam.
-|tip Avoid standing infront of Flotsam.
-|tip Kill the Regurgiated Marshstompers quickly.
-|tip
-|tip HEALER:
-|tip Move out of Jetsam.
-|tip Avoid standing infront of Flotsam.
-|tip The raid will take heavy damage from Getsam.
-|tip
-|tip TANK:
-|tip Face Flotsam away from the raid during Yaksam.
-|tip Move away from Flotsam during Breaksam.
+_DAMAGE:_ |only if grouprole("DAMAGE")
+|tip Move out of Jetsam. |only if grouprole("DAMAGE")
+|tip Avoid standing infront of Flotsam. |only if grouprole("DAMAGE")
+|tip Kill the Regurgiated Marshstompers quickly. |only if grouprole("DAMAGE")
+_HEALER:_ |only if grouprole("HEALER")
+|tip Move out of Jetsam. |only if grouprole("HEALER")
+|tip Avoid standing infront of Flotsam. |only if grouprole("HEALER")
+|tip The raid will take heavy damage from Getsam. |only if grouprole("HEALER")
+_TANK:_ |only if grouprole("TANK")
+|tip Face Flotsam away from the raid during Yaksam. |only if grouprole("TANK")
+|tip Move away from Flotsam during Breaksam. |only if grouprole("TANK")
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41705
@@ -3424,6 +3492,15 @@ click Brimstone Destroyer Core##195122
 Brimstone Destroyer Core mined |q 41210/1 |goto 45.20,53.66
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41203
+Enter the cave |goto Highmountain/0 49.99,53.81 < 15 |walk
+accept Bright Leystone Deposits##41203 |goto 51.41,52.41
+|tip You will accept this quest automatically.
+step
+click Bright Leystone Deposit##195122
+collect 10 Bright Leystone Ore##141231 |q 41203/1 |goto 52.82,53.51
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41706
 Follow the path |goto Highmountain/0 42.62,10.18 < 25 |only if walking
 Follow the path |goto 44.63,9.25 < 25 |only if walking
@@ -3435,6 +3512,14 @@ step
 kill Clackbrine Matron##104590+, Clackbrine Snapper##104582+, Clackbrine Pincer##104589+
 Clackbrine Clean-up |q 41706/1 |goto 51.69,11.48
 |tip Use the abilities on your hotbar to complete the objective.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41526
+accept Bushy Foxflower##41526 |goto Highmountain/0 37.20,43.53
+|tip You will accept this quest automatically.
+step
+click Bushy Foxflower##0
+collect 10 Bushy Foxflower##140988 |q 41526/1 |goto 37.20,43.53
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41623
@@ -3660,6 +3745,18 @@ kill Felhide Gargantuan##103675
 Skin the Felhide Gargantuan |q 41561/1 |goto 47.63,71.78
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41560
+Follow the path |goto Highmountain/0 39.07,38.55 < 25 |only if walking
+Follow the path |goto 42.49,34.48 < 25 |only if walking
+Follow the path |goto 45.05,29.32 < 25 |only if walking
+Follow the path |goto 44.94,25.14 < 25 |only if walking
+accept Felhide##41560 |goto 43.54,24.63
+|tip You will accept this quest automatically.
+step
+kill Felhide Gargantuan##103675
+Skin the Felhide Gargantuan |q 41560/1 |goto 43.54,24.63
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42086
 Follow the path down |goto Highmountain/0 30.77,39.10 < 30 |only if walking
 Follow the path down |goto 30.86,36.13 < 30 |only if walking
@@ -3689,6 +3786,14 @@ click Felwort##195114
 Felwort gathered |q 41512/1 |goto 33.11,64.72
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41219
+accept Flourishing Foxflower##41219 |goto Highmountain/0 55.55,45.44
+|tip You will accept this quest automatically.
+step
+click Flourishing Foxflower##195114
+collect 10 Flourishing Foxflower##140986 |q 41219/1 |goto 55.55,45.44
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41544
 Follow the path down |goto Highmountain/0 38.99,38.71 < 20 |only if walking
 Follow the path |goto 40.92,36.35 < 25 |only if walking
@@ -3709,18 +3814,16 @@ accept The Frozen King##43448 |goto Highmountain/0 58.04,72.37
 step
 kill Drugon the Frostblood##110378 |q 43448/1 |goto 58.04,72.37
 |tip
-_DAMAGE:_
-|tip Do not stand in front of Drugon during Snow Plow.
-|tip Move out of Avalanche.
-|tip
-_HEALER:_
-|tip Frozen allies take increased damage.
-|tip Allies gripped by Snow Plow will need healing.
-|tip Move out of Avalanche.
-|tip
-_TANK:_
-|tip Face Drugon away from the group to prevent excess damage from Snow Crash.
-|tip Do not stand in front of Drugon during Snow Plow.
+_DAMAGE:_ |only if grouprole("DAMAGE")
+|tip Do not stand in front of Drugon during Snow Plow. |only if grouprole("DAMAGE")
+|tip Move out of Avalanche. |only if grouprole("DAMAGE")
+_HEALER:_ |only if grouprole("HEALER")
+|tip Frozen allies take increased damage. |only if grouprole("HEALER")
+|tip Allies gripped by Snow Plow will need healing. |only if grouprole("HEALER")
+|tip Move out of Avalanche. |only if grouprole("HEALER")
+_TANK:_ |only if grouprole("TANK")
+|tip Face Drugon away from the group to prevent excess damage from Snow Crash. |only if grouprole("TANK")
+|tip Do not stand in front of Drugon during Snow Plow. |only if grouprole("TANK")
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41014
@@ -3821,6 +3924,18 @@ click Mana Saber##110903
 |tip Ride through the blue circles with blue light beaming upward out of them all around this whole area.
 |tip Don't worry about getting too far away, you will teleport back when you complete the quest.
 Collect Ley Line Energy |q 43764/1 |goto 32.39,60.15
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41196
+Follow the path |goto Highmountain/0 56.63,85.00 < 25 |only if walking
+Follow the path |goto 54.71,89.81 < 25 |only if walking
+Follow the path |goto 55.09,90.40 < 25 |only if walking
+accept Leystone Basilisks##41196 |goto 56.35,89.95
+|tip You will accept this quest automatically.
+step
+kill Leystone Basilisk##103514+
+|tip Mine the corpses.
+collect 60 Leystone-Encrusted Spike##134104 |q 41196/1 |goto 57.01,92.33
 |next "Court_Of_Farondis_WQ"
 step
 label quest-45048
@@ -4305,6 +4420,15 @@ talk Ransa Greyfeather##106902
 turnin Supplies Needed: Stonehide Leather##41237 |goto 38.07,46.01
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41232
+accept Thick Ironhorn Hide##41232 |goto Highmountain/0 42.00,47.96
+|tip You will accept this quest automatically.
+step
+kill Pinerock Elderhorn##94151+
+|tip Skin the corpses.
+collect 12 Thick Ironhorn Hide##134129 |q 41232/1 |goto Highmountain/0 42.00,47.96
+|next "Court_Of_Farondis_WQ"
+step
 label quest-40896
 Follow the path |goto Highmountain/0 29.88,40.88 < 30 |only if walking
 Follow the path |goto 27.43,41.50 < 30 |only if walking
@@ -4787,6 +4911,27 @@ kill Twilight Shardkeeper##103876+, Bound Elemental##104243+, Twilight Orelifter
 collect Impure Elementium Ore##134837 |q 41414/1 |goto 51.22,79.32
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41525
+Follow the path |goto Highmountain/0 51.99,44.69 < 25 |only if walking
+Follow the path |goto 50.58,43.61 < 25 |only if walking
+Follow the path |goto 48.33,45.22 < 10 |only if walking
+accept Wispy Foxflower##41525 |goto 46.31,46.10
+|tip You will accept this quest automatically.
+step
+click Wispy Foxflower##195114
+collect 10 Wispy Foxflower##140987 |q 41525/1 |goto 46.31,46.10
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41252
+accept Wild Northern Barracuda##41252 |goto Highmountain/0 40.53,10.69
+|tip You will accept this quest automatically.
+step
+talk Nacea Shorewalker##103727 |goto 40.52,10.69
+Ask her: _"Can you bless me with the gift of water walking?"_
+Fish from Wild Northern Barracuda Schools |cast Fishing##7620
+collect 10 Wild Northern Barracuda##134547 |q 41252/1 |goto 39.22,10.22
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41766
 Follow the path |goto Highmountain/0 53.57,46.91 < 30 |only if walking
 Cross the bridge |goto 54.46,48.21 < 10 |only if walking
@@ -4797,17 +4942,6 @@ accept Wildlife Protection Force##41766 |goto Highmountain/0 56.40,53.06
 step
 click Hungry Icefang##104782
 Defeat the Hungry Icefang |q 41766/1 |goto Highmountain/0 56.30,53.18
-|next "Court_Of_Farondis_WQ"
-step
-label quest-41525
-Follow the path |goto Highmountain/0 51.99,44.69 < 25 |only if walking
-Follow the path |goto 50.58,43.61 < 25 |only if walking
-Follow the path |goto 48.33,45.22 < 10 |only if walking
-accept Wispy Foxflower##41525 |goto 46.31,46.10
-|tip You will accept this quest automatically.
-step
-click Wispy Foxflower##195114
-collect 10 Wispy Foxflower##140987 |q 41525/1 |goto 46.31,46.10
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41677
@@ -5606,6 +5740,21 @@ Fish from the Lively Stormray schools |cast Fishing##131474
 collect 10 Lively Stormray##134570 |q 41602/1 |goto 56.27,41.84
 |next "Court_Of_Farondis_WQ"
 step
+label quest-43771
+Follow the path |goto Stormheim/0 51.04,33.59 < 25 |only if walking
+Follow the path |goto 48.74,36.31 < 25 |only if walking
+click Grapple Point |goto 45.30,36.32 < 5 |only if walking
+|tip It looks like a bit grey metal hook on the deck of the ship. |only if walking
+click Grapple Point |goto 45.09,35.54 < 5 |only if walking
+accept The Magic of Flight##43771 |goto 45.09,35.54
+|tip You will accept this quest automatically.
+step
+click Arcane Artifact
+|tip The item is on top the the giant statue's axe.
+|tip Jump up into a floating bubble and swim in the bubbles to reach the item.
+Find the Item |q 43771/1 |goto 42.47,31.27
+|next "Court_Of_Farondis_WQ"
+step
 label quest-40278
 Follow the path |goto Stormheim/0 72.52,57.39 < 30 |only if walking
 Follow the path |goto 75.89,56.93 < 30 |only if walking
@@ -5815,17 +5964,16 @@ accept Scourge of the Skies##42270 |goto Stormheim/0 46.53,29.95
 |tip You will accept this quest automatically.
 step
 kill Nithogg##107023 |q 42270/1 |goto 46.53,29.95
+|tip
+_DAMAGE:_ |only if grouprole("DAMAGE")
+|tip Stay away from Static Sparks when they die. |only if grouprole("DAMAGE")
+|tip Avoid standing in front of or behind Nithogg. |only if grouprole("DAMAGE")
+_HEALER:_ |only if grouprole("HEALER")
+|tip Avoid standing in front of or behind Nithogg. |only if grouprole("HEALER")
+_TANK:_ |only if grouprole("TANK")
+|tip Face Nithogg away from the raid. |only if grouprole("TANK")
+_EVERYONE:_
 |tip Every 20% health Nithogg loses, avoid standing in Crackling Jolt.
-|tip
-|tip DPS:
-|tip Stay away from Static Sparks when they die.
-|tip Avoid standing in front of or behind Nithogg.
-|tip
-|tip HEALER:
-|tip Avoid standing in front of or behind Nithogg.
-|tip
-|tip TANK:
-|tip Face Nithogg away from the raid.
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42178
@@ -5841,6 +5989,17 @@ Kill enemies around this area
 Walk on Blue Lightning
 |tip These are small patches of electricity on the ground throughout the cave.
 Charge the Transponder |q 42178/1 |goto Stormheim/9 69.07,63.63
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41300
+Follow the path |goto Stormheim/0 65.20,54.55 < 25 |only if walking
+Follow the path |goto 66.75,48.86 < 25 |only if walking
+accept Singed Fjarnskaggl##41300 |goto 71.39,42.61
+|tip You will accept this quest automatically.
+step
+click Singed Fjarnskaggl##195114
+|tip They're burning in the braziers around the area.
+collect 10 Singed Fjarnskaggl##135500 |q 41300/1 |goto 71.39,42.61
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41555
@@ -5863,6 +6022,27 @@ accept Slab of Bacon##41556 |goto Stormheim/0 34.18,45.68
 step
 kill Well-Fed Musken##103786
 collect Thick Slab of Bacon##135511 |q 41556/1 |goto Stormheim/0 34.18,45.68
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41278
+click Grapple Point |only if walking
+|tip It's a grey hook. |only if walking
+Click the first hook |goto Stormheim/0 58.53,48.86 < 6 |only if walking
+Click the second hook |goto 58.64,48.56 < 6 |only if walking
+Click the third hook |goto 58.16,47.81 < 6 |only if walking
+Click the fourth hook |goto 57.65,48.50 < 6 |only if walking
+Drop down |goto 57.52,47.55 < 20 |only if walking
+Follow the path |goto 56.89,46.29 < 25 |only if walking
+accept Slippery Stormrays##41278 |goto 56.09,40.45
+|tip You will accept this quest automatically.
+step
+click Boom Bait##6478
+collect 1 Boom Bait##135496 |q 41278/1 |goto 56.09,40.45
+step
+click Stunned Stormray##0
+|tip Use the special action button on your screen and target Slippery Stormray Schools in the water.
+|tip The fish will land near your feet, so you can stand on land.
+Collect #24# Stunned Stormrays |q 41278/2 |goto 56.09,40.45
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41343
@@ -5889,23 +6069,21 @@ Follow the path |goto 50.72,51.85 < 10 |walk
 accept The Soultakers##42269 |goto 27.91,45.14
 |tip You will accept this quest automatically.
 step
-_DAMAGE:_
-|tip During Seadog's Scuttle, don't stand between Jdorn and his target.
-|tip Kill Cursed Crewman quickly.
-|tip Don't stand in rifts during Soul Rend.
-|tip
-_HEALER:_
-|tip During Seadog's Scuttle, don't stand between Jdorn and his target.
-|tip Don't stand in rifts during Soul Rend.
-|tip
-_TANK:_
-|tip During Seadog's Scuttle, don't stand between Jdorn and his target.
-|tip Pick up Cursed Crewman quickly.
-|tip Don't stand in rifts during Soul Rend.
-|tip
 kill Captain Hring##106981 |q 42269/1 |goto 27.91,45.14
 kill Reaver Jdorn##106982 |q 42269/3 |goto 27.91,45.14
 kill Soultrapper Mevra##106984 |q 42269/2 |goto 27.91,45.14
+|tip
+_DAMAGE:_ |only if grouprole("DAMAGE")
+|tip During Seadog's Scuttle, don't stand between Jdorn and his target. |only if grouprole("DAMAGE")
+|tip Kill Cursed Crewman quickly. |only if grouprole("DAMAGE")
+|tip Don't stand in rifts during Soul Rend. |only if grouprole("DAMAGE")
+_HEALER:_ |only if grouprole("HEALER")
+|tip During Seadog's Scuttle, don't stand between Jdorn and his target. |only if grouprole("HEALER")
+|tip Don't stand in rifts during Soul Rend. |only if grouprole("HEALER")
+_TANK:_ |only if grouprole("TANK")
+|tip During Seadog's Scuttle, don't stand between Jdorn and his target. |only if grouprole("TANK")
+|tip Pick up Cursed Crewman quickly. |only if grouprole("TANK")
+|tip Don't stand in rifts during Soul Rend. |only if grouprole("TANK")
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43827
@@ -6542,6 +6720,28 @@ Kill the enemies on the ground as you fly
 Slay #100# Nightborne |q 43445/1 |goto 27.43,21.83
 |next "Court_Of_Farondis_WQ"
 step
+label quest-43512
+Follow the path |goto Suramar/0 34.14,54.10 < 25 |only if walking
+Follow the path |goto 33.13,56.57 < 25 |only if walking
+Follow the path down |goto 32.46,59.13 < 25 |only if walking
+Follow the path |goto 32.08,63.67 < 25 |only if walking
+accept Ana-Mouz##43512 |goto 31.11,65.96
+|tip You will accept this quest automatically.
+step
+kill Ana-Mouz##109943 |q 43512/1 |goto 31.11,65.96
+|tip
+_DAMAGE:_ |only if grouprole("DAMAGE")
+|tip Avoid standing in front of Ana-Mouz. |only if grouprole("DAMAGE")
+|tip Kill Lesser Minions spawned by Gaseous Breath. |only if grouprole("DAMAGE")
+_HEALER:_ |only if grouprole("HEALER")
+|tip Avoid standing in front of Ana-Mouz. |only if grouprole("HEALER")
+|tip Dispel Mother's Embrace. |only if grouprole("HEALER")
+_TANK:_ |only if grouprole("TANK")
+|tip Don't face Ana-Mouz towards the raid. |only if grouprole("TANK")
+_EVERYONE:_
+|tip Avoid standing in Fel Geyser.
+|next "Court_Of_Farondis_WQ"
+step
 label quest-44802
 accept Ancient Guidance##44802 |goto Suramar/0 30.83,11.03
 |tip You will accept this quest automatically.
@@ -6552,6 +6752,17 @@ Go up the stairs |goto 34.01,10.48 < 15 |only if walking
 Follow the path |goto 36.68,12.57 < 15 |only if walking
 Follow the path |goto 39.17,14.85 < 25 |only if walking
 kill Vis'ileth##115881 |q 44802/1 |goto 41.44,18.42
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41283
+Follow the path |goto Suramar/0 25.29,28.06 < 25 |only if walking
+Follow the path |goto 27.05,21.31 < 25 |only if walking
+Follow the path |goto 24.55,19.88 < 25 |only if walking
+accept The Angler Mangler##41283 |goto 25.87,15.81
+|tip You will accept this quest automatically.
+step
+kill Gobo##104331 |q 41283/1 |goto 25.87,15.81
+|tip Gobo swims up and down the river.
 |next "Court_Of_Farondis_WQ"
 step
 label quest-44769
@@ -6623,6 +6834,19 @@ step
 kill Brimstone Destroyer##93237
 click Brimstone Destroyer Core##195122
 Brimstone Destroyer Core mined |q 41492/1 |goto 29.01,91.15
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41491
+Follow the path |goto Suramar/0 32.57,48.48 |only if walking
+Follow the path |goto 29.05,47.94 < 25 |only if walking
+Follow the path |goto 25.56,52.01 < 25 |only if walking
+Follow the path |goto 23.29,57.91 < 25 |only if walking
+accept Brimstone Destroyer##41491 |goto 23.10,61.27
+|tip You will accept this quest automatically.
+step
+kill Brimstone Destroyer##93237
+click Brimstone Destroyer Core##195122
+Brimstone Destroyer Core mined |q 41491/1 |goto 23.10,61.27
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41990
@@ -6884,6 +7108,20 @@ kill Felhide Gargantuan##103675
 Skin the Felhide Gargantuan |q 41573/1 |goto 73.56,47.46
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41572
+Follow the path |goto Suramar/0 32.91,47.17 < 25 |only if walking
+Follow the path |goto 34.53,42.43 < 25 |only if walking
+Follow the path |goto 32.88,40.16 < 25 |only if walking
+Follow the path |goto 33.62,39.26 < 18 |only if walking
+Follow the path |goto 32.98,34.61 < 25 |only if walking
+Follow the path |goto 35.15,30.23 < 25 |only if walking
+accept Felhide##41572 |goto 36.84,30.30
+|tip You will accept this quest automatically.
+step
+kill Felhide Gargantuan##103675
+Skin the Felhide Gargantuan |q 41572/1 |goto 36.84,30.30
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41508
 accept Felslate Basilisks##41508 |goto Suramar/0 31.99,54.70
 |tip You will accept this quest automatically.
@@ -6892,6 +7130,22 @@ kill Felslate Basilisk##114113+
 click Felslate Basilisk##114113
 |tip Mine the basilisk corpses.
 collect Felslate-Encrusted Spike##134105 |q 41508/1 |goto 31.99,54.70
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41352
+Follow the path |goto Suramar/0 34.14,54.10 < 25 |only if walking
+Follow the path |goto 33.13,56.57 < 25 |only if walking
+Follow the path down |goto 32.46,59.13 < 25 |only if walking
+Follow the path |goto 32.08,63.67 < 25 |only if walking
+Follow the path down |goto 30.53,69.66 < 25 |only if walking
+Follow the path |goto 30.28,79.47 < 25 |only if walking
+Follow the path |goto 35.67,78.51 < 25 |only if walking
+accept Felslate Basilisks##41352 |goto 33.22,76.04
+|tip You will accept this quest automatically.
+step
+kill Felslate Basilisk##114113+
+|tip Mine the corpses.
+collect 60 Felslate-Encrusted Spike##134105 |q 41352/1
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41522
@@ -7078,6 +7332,17 @@ click Arcane Artifact
 Find the Item |q 43777/1 |goto 38.47,23.53
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41931
+Follow the path |goto Suramar/0 24.44,32.07 < 25 |only if walking
+Follow the path |goto 22.69,30.51 < 25 |only if walking
+Follow the path |goto 20.99,32.70 < 25 |only if walking
+accept Mana Tap##41931 |goto 19.95,35.26
+|tip You will accept this quest automatically.
+step
+Click Surging Mana Crystal##0
+Defeat the Manafiends |q 41931/1 |goto 19.95,35.26
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41895
 accept The Master of Pets##41895 |goto Suramar/0 51.99,54.89
 |tip You will accept this quest automatically.
@@ -7117,18 +7382,16 @@ accept Na'zak the Fiend##43513 |goto 41.18,68.30
 step
 kill Na'zak the Fiend##110321 |q 43513/1 |goto 41.18,68.30
 |tip
-|tip DPS:
-|tip Avoid standing infront of Na'zak during Corroding Spray.
-|tip Collect rubble on the ground before Na'zak can absorb them.
-|tip Free allies by attacking Web Wrap.
-|tip
-|tip HEALER:
-|tip Avoid standing infront of Na'zak during Corroding Spray.
-|tip Collect rubble on the ground before Na'zak can absorb them.
-|tip Be prepared for big heals during Ley Infusion.
-|tip
-|tip TANK:
-|tip Face Na'zak away from the raid during Corroding Spray.
+_DAMAGE:_ |only if grouprole("DAMAGE")
+|tip Avoid standing infront of Na'zak during Corroding Spray. |only if grouprole("DAMAGE")
+|tip Collect rubble on the ground before Na'zak can absorb them. |only if grouprole("DAMAGE")
+|tip Free allies by attacking Web Wrap. |only if grouprole("DAMAGE")
+_HEALER:_ |only if grouprole("HEALER")
+|tip Avoid standing infront of Na'zak during Corroding Spray. |only if grouprole("HEALER")
+|tip Collect rubble on the ground before Na'zak can absorb them. |only if grouprole("HEALER")
+|tip Be prepared for big heals during Ley Infusion. |only if grouprole("HEALER")
+_TANK:_ |only if grouprole("TANK")
+|tip Face Na'zak away from the raid during Corroding Spray. |only if grouprole("TANK")
 |next "Court_Of_Farondis_WQ"
 step
 label quest-44857
@@ -7308,6 +7571,18 @@ accept Starlight Rose Cluster##41301 |goto 35.59,38.35
 step
 click Starlight Rose Cluster##0
 Starlight Rose Cluster gathered |q 41301/1 |goto 35.59,38.35
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41548
+Follow the path |goto Suramar/0 32.69,48.44 < 25 |only if walking
+Follow the path |goto 28.89,45.53 < 25 |only if walking
+Follow the path |goto 27.38,48.68 < 25 |only if walking
+accept Starlight Rose Cluster##41548 |goto 25.63,50.53
+|tip You will accept this quest automatically.
+step
+click Starlight Rose Cluster##0
+|tip A Starlight Saber will jump out of the tree and attack you.
+Starlight Rose Cluster gathered |q 41548/1 |goto 25.63,50.53
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43959
@@ -7573,6 +7848,15 @@ accept WANTED: Oreth the Vile##44010 |goto Suramar/0 24.57,47.41
 |tip You will accept this quest automatically.
 step
 kill Oreth the Vile##110577 |q 44010/1 |goto 24.57,47.41
+|tip IHe walks around inside the building.
+|tip You may need help to kill him.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44025
+accept WANTED: Oreth the Vile##44025 |goto Suramar/0 24.57,47.41
+|tip You will accept this quest automatically.
+step
+kill Oreth the Vile##110577 |q 44025/1 |goto 24.57,47.41
 |tip IHe walks around inside the building.
 |tip You may need help to kill him.
 |next "Court_Of_Farondis_WQ"
@@ -7919,6 +8203,26 @@ click Tiffany's Carving Machine##0
 |tip Use the abilities on your action bar to rotate the gem.
 |tip Right-click the jagged shards to cut the gem.
 Create a _red_ gem |q 46135/1 |goto 40.06,34.37
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46138
+accept Gemcutter Needed##46138 |goto Dalaran L/10 40.27,34.68
+|tip You will accept this quest automatically.
+step
+click Tiffany's Carving Machine##0
+|tip Use the abilities on your action bar to rotate the gem.
+|tip Right-click the jagged shards to cut the gem.
+Create a _blue_ gem |q 46138/1 |goto 40.06,34.37
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46136
+accept Gemcutter Needed##46136 |goto Dalaran L/10 40.27,34.68
+|tip You will accept this quest automatically.
+step
+click Tiffany's Carving Machine##0
+|tip Use the abilities on your action bar to rotate the gem.
+|tip Right-click the jagged shards to cut the gem.
+Create a _yellow_ gem |q 46136/1 |goto 40.06,34.37
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41668
@@ -8514,4 +8818,517 @@ label "The_Kirin_Tor_Of_Dalaran_WQ"
 talk Warmage Silva##32725 |only if ZGV.questsbyid[43179] and ZGV.questsbyid[43179].complete
 turnin The Kirin Tor of Dalaran##43179 |goto Dalaran L/10 33.44,47.35 |only if ZGV.questsbyid[43179] and ZGV.questsbyid[43179].complete
 |next "Choose_World_Quest"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Brawler's Guild\\Legion Brawler's Guild", {
+startlevel=110,
+description="This guide will help you achieve rank 8 in the Brawler's Guild.",
+},[[
+step
+kill Helarjar Priest##111326+, Helarjar Mystcaller##111325+, Helarjar Soulhunter##111328+
+|tip Kill any and all of the elite mobs on this island.
+|tip You may need a group to accomplish this.
+collect 1 Blood-Soaked Invitation##144363 |goto Stormheim/0 85.32,11.34 |n
+click Blood-Soaked Invitation##144363 |use Blood-Soaked Invitation##144363
+Earn the Achievement "The First Rule of Brawler's Guild" |achieve 11558
+step
+talk Quackenbush##68363 |goto Deeprun Tram/2 54.4,26.8 |
+|tip We also suggest that you purchase potions from Quackenbush, located here. Once you have the potions, use the buff of your choice right before the fight, and then again during the fight to maximize your dps.
+_WARNING_
+|tip There is an enrage timer on all Brawler's Guild fights. You have 2 minutes to kill the current opponent before it activates. If it does, a wall of unavoidable meteors sweeps across the arena, killing you. Remember this as you go through this guide!
+Click here after buying potions
+|tip You can only have a maximum of 10 potions of each at a time.
+|confirm
+step
+talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
+Tell him _"Yes, sign me up for a fight"_
+Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
+_WHEN THE FIGHT BEGINS_
+|tip When Oso begins casting Shotgun Blast move out from in front of him
+|tip He may occasionally knock you back and then cast Grizzly Leap run out of this circle
+only if ZGV:GetReputation(2011).friendRep<250
+step
+kill Oso##117753
+|tip When Oso begins casting Shotgun Blast move out from in front of him
+|tip He may occasionally knock you back and then cast Grizzly Leap run out of this circle
+Defeat Oso |condition ZGV:GetReputation(2011).friendRep>=250
+step
+talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
+Tell him _"Yes, sign me up for a fight"_
+Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
+_WHEN THE FIGHT BEGINS_
+|tip Do Not step on the Luckydont dolls that he places around the room, these will be red and white
+|tip The Blue Luckydo dolls will give a health boost, these are ok to run over
+|tip When he reached 50 percent HP he will knock you back, be sure your back is not facing any of these bad dolls.
+|tip After he hits 50 percent he will start summoning the white Luckydonts, this will hop toward you, be sure not to hit any of these.
+|tip Interrupt Cantata of Flooting this is a channel that will heal him every .5 seconds.
+only if ZGV:GetReputation(2011).friendRep<500
+step
+kill Grandpa Grumplefloot##70678
+|tip Do Not step on the Luckydont dolls that he places around the room, these will be red and white
+|tip The Blue Luckydo dolls will give a health boost, these are ok to run over
+|tip When he reached 50 percent HP he will knock you back, be sure your back is not facing any of these bad dolls.
+|tip After he hits 50 percent he will start summoning the white Luckydonts, this will hop toward you, be sure not to hit any of these.
+|tip Interrupt Cantata of Flooting this is a channel that will heal him every .5 seconds.
+Defeat Grandpa Grumplefloot |condition ZGV:GetReputation(2011).friendRep>=500
+step
+talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
+Tell him _"Yes, sign me up for a fight"_
+Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
+_WHEN THE FIGHT BEGINS_
+|tip Run away from him when he casts Horrific Pursuit this will one shot you
+only if ZGV:GetReputation(2011).friendRep<750
+step
+kill Ooliss##117133
+|tip Run away from him when he casts Horrific Pursuit this will one shot you
+Defeat Ooliss |condition ZGV:GetReputation(2011).friendRep>=750
+step
+talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
+Tell him _"Yes, sign me up for a fight"_
+Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
+_WHEN THE FIGHT BEGINS_
+|tip Move out of Molten Slag.
+|tip If Arstad the Wild finishes his Lightning Crash cast he will jump on where you are and stun you for 3 seconds, be sure to keep moving while the cast is about to complete
+|tip There will be 3 enemies in this fight, but they all share the same health pool.
+only if ZGV:GetReputation(2011).friendRep<1000
+step
+kill Altor Direvith##115294, Arstad the Wild##115295, Ulrich Forgeworth##115292
+|tip Move out of Molten Slag
+|tip If Arstad the Wild finishes his Lightning Crash cast he will jump on where you are and stun you for 3 seconds, be sure to keep moving while the cast is about to complete
+|tip There will be 3 enemies in this fight, but they all share the same health pool.
+Defeat The Warhammer Council |condition ZGV:GetReputation(2011).friendRep>=1000
+step
+talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
+Tell him _"Yes, sign me up for a fight"_
+Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
+_WHEN THE FIGHT BEGINS_
+|tip Dippy has a melee ability called Peck. If you are in melee range when the cast is finished, it will kill you
+|tip When Dippy takes damage, he is knocked back
+|tip You should prioritize fast attacks
+only if ZGV:GetReputation(2011).friendRep<1250
+step
+kill Dippy##68255
+|tip Dippy has a melee ability called Peck. If you are in melee range when the cast is finished, it will kill you
+|tip When Dippy takes damage, he is knocked back
+|tip You should prioritize fast attacks
+Defeat Dippy |condition ZGV:GetReputation(2011).friendRep>=1250
+step
+talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
+Tell him _"Yes, sign me up for a fight"_
+Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
+_WHEN THE FIGHT BEGINS_
+|tip Bill will cast Summon Broom if this cast goes off he will one of 2 brooms.
+|tip Boom Broom will have a explosion timer and if it is near you when it runs out you will die.
+|tip These can be slowed and stunned
+only if ZGV:GetReputation(2011).friendRep<1500
+step
+kill Bill the Janitor##117077
+|tip Bill will cast Summon Broom if this cast goes off he will one of 2 brooms.
+|tip Boom Broom will have a explosion timer and if it is near you when it runs out you will die.
+|tip These can be slowed and stunned
+Defeat Bill the janitor |condition ZGV:GetReputation(2011).friendRep>=1500
+step
+talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
+Tell him _"Yes, sign me up for a fight"_
+Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
+_WHEN THE FIGHT BEGINS_
+|tip Avoid Sanoriak's Firewall ability. There is always a safe opening to run through
+|tip Always Interrupt Pyroblast
+only if ZGV:GetReputation(2011).friendRep<1750
+step
+kill Sanoriak##67268
+|tip Avoid Sanoriak's Firewall ability. There is always a safe opening to run through
+|tip Always Interrupt Pyroblast
+Defeat Sanoriak |condition ZGV:GetReputation(2011).friendRep>=1750
+step
+talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
+Tell him _"Yes, sign me up for a fight"_
+Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
+_WHEN THE FIGHT BEGINS_
+|tip Once the fight begins your character will continuously run forward
+|tip You gain a buff that allows you to cast while running.
+|tip Run through the maze without hitting any of the blue tiles
+|tip While Whirling Kick is active you can not damage the monks, to cancel this collect one of the Yellow Orbs around the room
+only if ZGV:GetReputation(2011).friendRep<2000
+step
+kill Master Paku##115645
+|tip Once the fight begins your character will continuously run forward
+|tip You gain a buff that allows you to cast while running.
+|tip Run through the maze without hitting any of the blue tiles
+|tip While Whirling Kick is active you can not damage the monks, to cancel this collect one of the Yellow Orbs around the room
+Defeat Master Paku |condition ZGV:GetReputation(2011).friendRep>=2000
+step
+talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
+Tell him _"Yes, sign me up for a fight"_
+Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
+_WHEN THE FIGHT BEGINS_
+|tip He doesn't do anything special, just auto attacks
+only if ZGV:GetReputation(2011).friendRep<2250
+step
+kill Doomflipper##117145
+|tip He doesn't do anything special, just auto attacks
+Defeat Doomflipper |condition ZGV:GetReputation(2011).friendRep>=2250
+step
+talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
+Tell him _"Yes, sign me up for a fight"_
+Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
+_WHEN THE FIGHT BEGINS_
+|tip As the fight goes on, Splat will make copies of himself. These copies move slow and die when Splat dies
+|tip Avoid the copies of Splat and kill him before the copies overwhelm you
+only if ZGV:GetReputation(2011).friendRep<2500
+step
+kill Splat##70736
+|tip As the fight goes on, Splat will make copies of himself. These copies move slow and die when Splat dies
+|tip Avoid the copies of Splat and kill him before the copies overwhelm you
+Defeat Splat |condition ZGV:GetReputation(2011).friendRep>=2500
+step
+talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
+Tell him _"Yes, sign me up for a fight"_
+Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
+_WHEN THE FIGHT BEGINS_
+|tip Shadowmaster will cast 2 spells Shadow Torch and Shadow Blast
+|tip His Shadow Torch ability will put a torch on the ground
+|tip His Shadow Blast ability will create a ball of energy that travels toward a Shadow Torch
+|tip Be sure not to stand in these Shadow Blasts by not standing in between Shadow Torches
+only if ZGV:GetReputation(2011).friendRep<2750
+step
+kill Shadowmaster Aameen##116743
+|tip Shadowmaster will cast 2 spells Shadow Torch and Shadow Blast
+|tip His Shadow Torch ability will put a torch on the ground
+|tip His Shadow Blast ability will create a ball of energy that travels toward a Shadow Torch
+|tip Be sure not to stand in these Shadow Blasts by not standing in between Shadow Torches
+Defeat Shadowmaster Aameen |condition ZGV:GetReputation(2011).friendRep>=2750
+step
+talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
+Tell him _"Yes, sign me up for a fight"_
+Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
+_WHEN THE FIGHT BEGINS_
+|tip Johnny Awesome will have a pet called, Dazzle
+|tip To kill his pet put his pet inbetween yourself and Johnny Awesome while he is casting Powershot
+|tip Once his pet is dead Johnny will start casting Revive Dazzle
+|tip This is a long cast and he will stop all other abilities to do this, also he will take 100 percent more damage when casting the revive ability.
+|tip Don't stand in Rain of Arrows indicated by green circles on the ground
+|tip Don't stand in front of him when he casts Volley
+only if ZGV:GetReputation(2011).friendRep<3000
+step
+kill Johnny Awesome##115058
+|tip Johnny Awesome will have a pet called, Dazzle
+|tip To kill his pet put his pet inbetween yourself and Johnny Awesome while he is casting Powershot
+|tip Once his pet is dead Johnny will start casting Revive Dazzle
+|tip This is a long cast and he will stop all other abilities to do this, also he will take 100 percent more damage when casting the revive ability.
+|tip Don't stand in Rain of Arrows indicated by green circles on the ground
+|tip Don't stand in front of him when he casts Volley
+Defeat Johnny Awesome |condition ZGV:GetReputation(2011).friendRep>=3000
+step
+talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
+Tell him _"Yes, sign me up for a fight"_
+Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
+_WHEN THE FIGHT BEGINS_
+|tip This is the first damage test of Brawler's Guild!
+|tip Burnstachio will have a buff called Ember Shield preventing all damage except players with the Water Shield buff
+|tip You must obtain the Water Shield by following the rain clouds that make a path rhough the fire
+|tip This is a RNG type fight.
+|tip Once you gain the Water Shield buff you will be immune to the fire and able to attack Burnstachio for 15 seconds.
+|tip Hitting the fire without the Water Shield buff will one shot you.
+|tip You will need to find a new rain cloud path before the buff runs out as a new Water Shield bubble will not spawn until your buff runs out.
+only if ZGV:GetReputation(2011).friendRep<3250
+step
+kill Burnstachio##115023
+|tip This is the first damage test of Brawler's Guild!
+|tip Burnstachio will have a buff called Ember Shield preventing all damage except players with the Water Shield buff
+|tip You must obtain the Water Shield by following the rain clouds that make a path rhough the fire
+|tip This is a RNG type fight.
+|tip Once you gain the Water Shield buff you will be immune to the fire and able to attack Burnstachio for 15 seconds.
+|tip Hitting the fire without the Water Shield buff will one shot you.
+|tip You will need to find a new rain cloud path before the buff runs out as a new Water Shield bubble will not spawn until your buff runs out.
+Defeat Burnstachio |condition ZGV:GetReputation(2011).friendRep>=3250
+step
+talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
+Tell him _"Yes, sign me up for a fight"_
+Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
+_WHEN THE FIGHT BEGINS_
+|tip Meatball has a 60 second enrage timer
+|tip Meatball drops purple orbs which will increase your damage and heal you
+|tip Stacking these orbs is the only way to defeat him before the enrage timer
+|tip Spend the first 30-45 seconds colleting these orbs
+only if ZGV:GetReputation(2011).friendRep<3500
+step
+kill Meatball##67573
+|tip Meatball has a 60 second enrage timer
+|tip Meatball drops purple orbs which will increase your damage and heal you
+|tip Stacking these orbs is the only way to defeat him before the enrage timer
+|tip Spend the first 30-45 seconds colleting these orbs
+Defeat Meatball |condition ZGV:GetReputation(2011).friendRep>=3500
+step
+talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
+Tell him _"Yes, sign me up for a fight"_
+Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
+_WHEN THE FIGHT BEGINS_
+|tip Max Megablast will spam Goblin Rocket Barrage
+|tip Avoid these rockets and lead Bo Bobble into them
+|tip Periodically, Bo will retreat to a corner and put up a shield. Stand under the shield so Goblin Rocket Barrage will hit it
+|tip 3 rockets will disable the shield
+|tip These 2 share one Health Pool.
+only if ZGV:GetReputation(2011).friendRep<3750
+step
+kill Max Megablast##67488, Bo Bobble##67487
+|tip Max Megablast will spam Goblin Rocket Barrage
+|tip Avoid these rockets and lead Bo Bobble into them
+|tip Periodically, Bo will retreat to a corner and put up a shield. Stand under the shield so Goblin Rocket Barrage will hit it
+|tip 3 rockets will disable the shield
+|tip These 2 share one Health Pool.
+Defeat GG Engineering |condition ZGV:GetReputation(2011).friendRep>=3750
+step
+talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
+Tell him _"Yes, sign me up for a fight"_
+Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
+_WHEN THE FIGHT BEGINS_
+|tip Stiches will cast Stiches' Hook when the player is not in melee range
+|tip This will also apply a stack of Hooked which reduces movement speed by 10 percent per stack.
+|tip Surronding Stiches is an Aura of Rot, this applies a debuff every second or 2 increasing damage per stack.
+|tip Do not get to 10 stacks or it will instantly kill you
+|tip At around 7 or 8 stacks run out of the Aura asap, once out he will cast Stiches' Hook to bring you back in.
+|tip Keep repeating this process, save your movement speed increases for when you have higher stacks of Hooked.
+only if ZGV:GetReputation(2011).friendRep<4000
+step
+kill Stiches##117275
+|tip Stiches will cast Stiches' Hook when the player is not in melee range
+|tip This will also apply a stack of Hooked which reduces movement speed by 10 percent per stack.
+|tip Surronding Stiches is an Aura of Rot, this applies a debuff every second or 2 increasing damage per stack.
+|tip Do not get to 10 stacks or it will instantly kill you
+|tip At around 7 or 8 stacks run out of the Aura asap, once out he will cast Stiches' Hook to bring you back in.
+|tip Keep repeating this process, save your movement speed increases for when you have higher stacks of Hooked.
+Defeat Stiches |condition ZGV:GetReputation(2011).friendRep>=4000
+step
+talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
+Tell him _"Yes, sign me up for a fight"_
+Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
+_WHEN THE FIGHT BEGINS_
+|tip You will be fighting Wes and Sunny along with a few dancers
+|tip Throughout the fight Sunny will cast Sit Down, this can be interrupted, but if it goes off it will root you for 3 seconds
+|tip There will be Jukeboxes in the back that will shoot out Sound Waves which can be dodged or waves of Drop the Bass! which can be jumped over.
+|tip These 2 abilities do about 50k-100k damage per hit, you will want to avoid these, so you will want to also interrupt every Sit Down cast.
+only if ZGV:GetReputation(2011).friendRep<4250
+step
+kill Wes##114945, Sonny##114944
+|tip You will be fighting Wes and Sunny along with a few dancers
+|tip Throughout the fight Sunny will cast Sit Down, this can be interrupted, but if it goes off it will root you for 3 seconds
+|tip There will be Jukeboxes in the back that will shoot out Sound Waves which can be dodged or waves of Drop the Bass! which can be jumped over.
+|tip These 2 abilities do about 50k-100k damage per hit, you will want to avoid these, so you will want to also interrupt every Sit Down cast.
+Defeat Thwack U |condition ZGV:GetReputation(2011).friendRep>=4250
+step
+talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
+Tell him _"Yes, sign me up for a fight"_
+Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
+_WHEN THE FIGHT BEGINS_
+|tip Razorgrin will flop around on the ground going toward the player, simply kite him if you are a ranged.
+|tip If you are a melee you will need to get behind him and stay behind him at all times
+|tip This is the next dps check in the Brawler's Guild.
+only if ZGV:GetReputation(2011).friendRep<4500
+step
+kill Razorgrin##71085
+|tip Razorgrin will flop around on the ground going toward the player, simply kite him if you are a ranged.
+|tip If you are a melee you will need to get behind him and stay behind him at all times
+|tip This is the next dps check in the Brawler's Guild.
+Defeat Razorgrin |condition ZGV:GetReputation(2011).friendRep>=4500
+step
+talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
+Tell him _"Yes, sign me up for a fight"_
+Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
+_WHEN THE FIGHT BEGINS_
+|tip When the gnomes spawn, Wheezy is the only one at full health
+|tip Attack Queasy first, followed by the next lowest health gnome
+|tip AoE damage is beneficial for this encounter, helping to beat the enrage timer
+only if ZGV:GetReputation(2011).friendRep<4750
+step
+kill Fleasy##67515, Greazy##67514, Sleazy##67513, Wheezy##67516, Queasy##67511
+|tip When the gnomes spawn, Wheezy is the only one at full health
+|tip Attack Queasy first, followed by the next lowest health gnome
+|tip AoE damage is beneficial for this encounter, helping to beat the enrage timer
+Defeat Leper Gnome Quintet |condition ZGV:GetReputation(2011).friendRep>=4750
+step
+talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
+Tell him _"Yes, sign me up for a fight"_
+Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
+_WHEN THE FIGHT BEGINS_
+|tip There will be a row of Cannons in the back of the room and long fuses going toward each one.
+|tip When a Lit Fuse reaches a cannon that cannon will fire, if you are in the row of that cannon its an instant kill
+|tip You will need to side step to safe areas, those being lit fuses still going toward the cannons.
+only if ZGV:GetReputation(2011).friendRep<5000
+step
+kill Blackmange##114902
+|tip There will be a row of Cannons in the back of the room and long fuses going toward each one.
+|tip When a Lit Fuse reaches a cannon that cannon will fire, if you are in the row of that cannon its an instant kill
+|tip You will need to side step to safe areas, those being lit fuses still going toward the cannons.
+Defeat Blackmange |condition ZGV:GetReputation(2011).friendRep>=5000
+step
+talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
+Tell him _"Yes, sign me up for a fight"_
+Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
+_WHEN THE FIGHT BEGINS_
+|tip Topps will charge around the room, Dino Dash, when dodged, will either give him a debuff called Dino Daze or will cast Dino Dash again.
+|tip Simply dodge Dino Dash and save your cooldowns for when he is Dino Dazed.
+|tip Everytime Topps Dashes he will gain a buff making his next Dashes cast faster, this stacks.
+|tip This fight is more difficult for melee as you can not damage Topps when he is charging or about to charge.
+|tip This is another DPS check and requires a minimum of 410k DPS to kill it before the enrage.
+only if ZGV:GetReputation(2011).friendRep<5250
+step
+kill Topps##116539
+|tip Topps will charge around the room, Dino Dash, when dodged, will either give him a debuff called Dino Daze or will cast Dino Dash again.
+|tip Simply dodge Dino Dash and save your cooldowns for when he is Dino Dazed.
+|tip Everytime Topps Dashes he will gain a buff making his next Dashes cast faster, this stacks.
+|tip This fight is more difficult for melee as you can not damage Topps when he is charging or about to charge.
+|tip This is another DPS check and requires a minimum of 410k DPS to kill it before the enrage.
+Defeat Topps |condition ZGV:GetReputation(2011).friendRep>=5250
+step
+talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
+Tell him _"Yes, sign me up for a fight"_
+Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
+_WHEN THE FIGHT BEGINS_
+|tip When Millie casts Megafantastic Discombobumorphanator get ready to run into Electric Dynamite
+|tip Electric Dynamite will put a lightning circle on the ground.
+|tip When the cast of Megafantastic Discombobumorphanator is almost finished, step into Electric Dynamite.
+|tip Use defensive cooldowns to help mitigate Photoplasm Buster Ray
+only if ZGV:GetReputation(2011).friendRep<5500
+step
+kill Millie Watt##67591
+|tip When Millie casts Megafantastic Discombobumorphanator get ready to run into Electric Dynamite
+|tip Electric Dynamite will put a lightning circle on the ground.
+|tip When the cast of Megafantastic Discombobumorphanator is almost finished, step into Electric Dynamite.
+|tip Use defensive cooldowns to help mitigate Photoplasm Buster Ray
+Defeat Millie Watt |condition ZGV:GetReputation(2011).friendRep>=5500
+step
+talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
+Tell him _"Yes, sign me up for a fight"_
+Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
+_WHEN THE FIGHT BEGINS_
+|tip Carl is a giant worm that will Burrow across the room
+|tip Periodicaly he will spawn Lava Pools at a random location, when these spawn they will shot out Lava Waves in 4 directions
+|tip If one of these Lava Waves hits another Lava Pool it will spawn another 2 waves out of that pool
+only if ZGV:GetReputation(2011).friendRep<5750
+step
+kill Carl##115233
+|tip Carl is a giant worm that will Burrow across the room
+|tip Periodicaly he will spawn Lava Pools at a random location, when these spawn they will shot out Lava Waves in 4 directions
+|tip If one of these Lava Waves hits another Lava Pool it will spawn another 2 waves out of that pool
+Defeat Carl |condition ZGV:GetReputation(2011).friendRep>=5750
+step
+talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
+Tell him _"Yes, sign me up for a fight"_
+Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
+_WHEN THE FIGHT BEGINS_
+|tip There will be 3 bosses Hudson, Dupree, and Stuffshrew
+|tip Hudson will put up a Barrier which will need to be destroyed just by dealing damage and he will also cast Tesla Cannon
+|tip Interrupt Tesla Cannon.
+|tip Dupree will only cast High Noon the entire fight you will need to kill him before this finishes casting
+|tip Stuffshrew will cast Maniacal Laugh which when completed will explode dealing a high amount of damage and knock you back if you are within 6 yards.
+|tip Run away from Stuffshrew when he casts this.
+|tip Stuffshrew will also put 3 bombs on the ground indicated by red circles, avoid standing in these
+only if ZGV:GetReputation(2011).friendRep<6000
+step
+kill Dupree##114955, Hudson##114951, Stuffshrew##114941
+|tip There will be 3 bosses Hudson, Dupree, and Stuffshrew
+|tip Hudson will put up a Barrier which will need to be destroyed just by dealing damage and he will also cast Tesla Cannon
+|tip Interrupt Tesla Cannon.
+|tip Dupree will only cast High Noon the entire fight you will need to kill him before this finishes casting
+|tip Stuffshrew will cast Maniacal Laugh which when completed will explode dealing a high amount of damage and knock you back if you are within 6 yards.
+|tip Run away from Stuffshrew when he casts this.
+|tip Stuffshrew will also put 3 bombs on the ground indicated by red circles, avoid standing in these
+Defeat Ogrewatch |condition ZGV:GetReputation(2011).friendRep>=6000
+step
+talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
+Tell him _"Yes, sign me up for a fight"_
+Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
+_WHEN THE FIGHT BEGINS_
+|tip Nibbleh will leave green pools on the ground. Each time he contacts a pool, he will gain increased damage and take less damage.
+|tip Melee will need to constantly backpedal and kite him in a circle around the room.
+|tip Kite Nibbleh and DPS him quickly before his stacks get to high
+only if ZGV:GetReputation(2011).friendRep<6250
+step
+kill Nibbleh##70656
+|tip Nibbleh will leave green pools on the ground. Each time he contacts a pool, he will gain increased damage and take less damage.
+|tip Melee will need to constantly backpedal and kite him in a circle around the room.
+|tip Kite Nibbleh and DPS him quickly before his stacks get to high
+Defeat Nibbleh |condition ZGV:GetReputation(2011).friendRep>=6250
+step
+talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
+Tell him _"Yes, sign me up for a fight"_
+Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
+_WHEN THE FIGHT BEGINS_
+|tip Serpent of Old will Spawn 4 Totems you will need to kite him to each of the totems around the room getting just enough stacks on each to where when you get back to the first those stacks will reset
+|tip Around 12 stacks on each totem.
+|tip If you have less dps and more defensives try to get more stacks of either the damage buff totem or the haste buff totem.
+|tip Totem of Ferocity This will give him a stacking damage bonus. 1% per stack
+|tip Warding Totem This will give him buff reducing his damage taken. 1% per stack
+|tip Healing Flume Totem This will give him a stacking healing buff. .01% per stack
+|tip Invigorating Totem This will give him a stacking buff increasing his haste and movement speed. 6% haste and 2% movement speed per stack
+|tip There will also be green barrels placed at your location throughout the fight, be sure to stay clear of these.
+only if ZGV:GetReputation(2011).friendRep<6500
+step
+kill Serpent of Old##116692
+|tip Serpent of Old will Spawn 4 Totems you will need to kite him to each of the totems around the room getting just enough stacks on each to where when you get back to the first those stacks will reset
+|tip Around 12 stacks on each totem.
+|tip If you have less dps and more defensives try to get more stacks of either the damage buff totem or the haste buff totem.
+|tip Totem of Ferocity This will give him a stacking damage bonus. 1% per stack
+|tip Warding Totem This will give him buff reducing his damage taken. 1% per stack
+|tip Healing Flume Totem This will give him a stacking healing buff. .01% per stack
+|tip Invigorating Totem This will give him a stacking buff increasing his haste and movement speed. 6% haste and 2% movement speed per stack
+|tip There will also be green barrels placed at your location throughout the fight, be sure to stay clear of these.
+Defeat Serpent of Old |condition ZGV:GetReputation(2011).friendRep>=6500
+step
+talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
+Tell him _"Yes, sign me up for a fight"_
+Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
+_WHEN THE FIGHT BEGINS_
+|tip Throughout the entire fight he will put sound wave circles all over the room, avoid these at all costs
+|tip Periodically he will cast Destructolaser which will follow you around, avoid getting hit by this.
+|tip He will also cast Blue Crush this needs to be interrupted asap.
+|tip This is another high dps check and requires a minimum of 490k dps to beat the enrage timer.
+only if ZGV:GetReputation(2011).friendRep<6750
+step
+kill Epicus Maximus##67490
+|tip Throughout the entire fight he will put sound wave circles all over the room, avoid these at all costs
+|tip Periodically he will cast Destructolaser which will follow you around, avoid getting hit by this.
+|tip He will also cast Blue Crush this needs to be interrupted asap.
+|tip This is another high dps check and requires a minimum of 490k dps to beat the enrage timer.
+Defeat Epicus Maximus |condition ZGV:GetReputation(2011).friendRep>=6750
+step
+talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
+Tell him _"Yes, sign me up for a fight"_
+Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
+_WHEN THE FIGHT BEGINS_
+|tip This boss will transform into multiple different bosses from the raid Hellfire Citadel
+|tip Siegemaster Mar'tak will cast Shockwave this need to be avoided at all costs
+|tip Kormrok will cast Grasping Hand you will need switch to this and destroy it asap, if it is up to long you may need to use a defensive cooldown
+|tip Gurtogg Bloodboil will apply Acidic Wound which will deal 40k damage every 2 seconds and reduce your armor by 100 percent for 2 minuites which is the rest of the encounter.
+|tip Watch your health and use your defensive cooldowns when needed.
+|tip Kilrogg Deadeye will cast Death Throes just side step these green circles
+|tip Gorefiend will cast Crushing Darkness just side step these purple circles
+|tip Fel Lord Zakuun will cast Fel Crystal try to place these in one of the 4 corners, and then run to the opposite side of the room
+|tip The _Fel Crystal will continiously spawn Fel Waves that need to be dodged.
+|tip Tyrant Velhari will cast Gavel of the Tyrant, you will need to use an immunity or a big defensive before this goes off
+|tip Xhul'horacthat will cast Black Hole stay completly clear of this when it is put down
+|tip Mannoroth will cast Fel Imp-losion this will need to be interrupted
+|tip Archimonde will cast Shadowfel Burst this will knock you up high in the air
+|tip You will need a minimum of 550k dps to beat the enrage timer.
+only if ZGV:GetReputation(2011).friendRep<7000
+step
+kill Ray D. Tear##115040
+|tip This boss will transform into multiple different bosses from the raid Hellfire Citadel
+|tip Siegemaster Mar'tak will cast Shockwave this need to be avoided at all costs
+|tip Kormrok will cast Grasping Hand you will need switch to this and destroy it asap, if it is up to long you may need to use a defensive cooldown
+|tip Gurtogg Bloodboil will apply Acidic Wound which will deal 40k damage every 2 seconds and reduce your armor by 100 percent for 2 minuites which is the rest of the encounter.
+|tip Watch your health and use your defensive cooldowns when needed.
+|tip Kilrogg Deadeye will cast Death Throes just side step these green circles
+|tip Gorefiend will cast Crushing Darkness just side step these purple circles
+|tip Fel Lord Zakuun will cast Fel Crystal try to place these in one of the 4 corners, and then run to the opposite side of the room
+|tip The Fel Crystal will continiously spawn Fel Waves that need to be dodged.
+|tip Tyrant Velhari will cast Gavel of the Tyrant, you will need to use an immunity or a big defensive before this goes off
+|tip Xhul'horacthat will cast Black Hole stay completly clear of this when it is put down
+|tip Mannoroth will cast Fel Imp-losion this will need to be interrupted
+|tip Archimonde will cast Shadowfel Burst this will knock you up high in the air
+|tip You will need a minimum of 550k dps to beat the enrage timer.
+Defeat Ray D. Tear |condition ZGV:GetReputation(2011).friendRep>=7000
+step
+Congratulations you are now Rank 8 in the new Brawler's Guild!
+Earn the Achievement "King of the Guild" |achieve 11565
 ]])

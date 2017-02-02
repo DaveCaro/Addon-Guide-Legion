@@ -3,6 +3,22 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("PetsALEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "LEG"
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Tylarr Gronnden",{
+author="support@zygorguides.com",
+pet=2022,
+description="This guide will help you acquire the Humanoid pet: Tylarr Gronnden.",
+},[[
+step
+You will need to gain _Rank 4_ with the Legion Brawler's Guild
+Click here to be taken to the Brawler's guild event guide, this will show you strategys on how to defeat each boss |confirm |next "Zygor's Alliance Events Guides\\Brawler's Guild\\Legion Brawler's Guild"
+confirm
+only if ZGV:GetReputation(2011).friendRep<7000
+step
+talk Quackenbush##68363
+buy 1 Tylarr Gronnden##144394 |goto Deeprun Tram/2 54.22,25.36 |n
+|tip This pet costs 400 gold.
+learnpet Tylarr Gronnden##119040 |use Tylarr Gronnden##144394
+]])
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Ashmaw Cub",{
 pet=1706,

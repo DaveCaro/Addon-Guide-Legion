@@ -16551,7 +16551,7 @@ talk Archmage Khadgar##115367
 turnin Breaching the Sanctum##44719 |goto 44.19,60.13 |region suramar_sanctum_depths
 accept Lord of the Shadow Council##45417 |goto 44.19,60.13 |region suramar_sanctum_depths
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Legion (100-110)\\Order Hall Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Legion (100-110)\\Order Hall Quests",{
 author="support@zygorguides.com",
 startlevel=101.0,
 },[[
@@ -21978,7 +21978,7 @@ accept Ma'haat the Indomitable##42989 |goto 29.43,77.88
 stickystart "World_Quests_Shaman"
 stickystart "Return_To_The_Firelands_Shaman"
 step
-collect 10 Blood of Sargeras##124124 |c |q 42989
+collect 5 Blood of Sargeras##124124 |c |q 42989
 |tip Complete world quests and kill bosses in dungeons.
 |tip Use the "World Quests" guide to complete world quests.
 |tip Use the Dungeon guides to complete dungeons.
@@ -25790,6 +25790,10 @@ talk Felguard Invader##104758
 turnin The Defense of Tian Monastery##41728 |goto 38.96,24.96
 accept Desperate Strike##41730 |goto 38.96,24.96
 accept Desperate Strike##41730 |goto 38.96,24.96
+|only Monk
+step
+talk Taran Zhu##104784
+accept Storm, Earth, and Fire##41731 |goto The Jade Forest/0 38.99,24.94
 |only Monk
 stickystart "Fel_Spikes_Monk"
 stickystart "Fel_Fires_Monk"

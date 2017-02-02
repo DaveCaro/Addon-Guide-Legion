@@ -667,16 +667,8 @@ model={48858},
 description="This guide will help you acquire the Brawler's Burly Mushan Beast mount.",
 },[[
 step
-This mount is obtained through the Brawler's Guild. You must reach rank 10 in the Brawler's Guild to purchase this mount.
-Click here to be taken to the Achievement guide containing the information needed to reach rank 10. |confirm |next "Zygor's Horde Achievements Guides\\Events\\Brawler's Guild Achievements\\I've Got the Biggest Brawls of Them All" |only if ZGV.guidesets['AchievementsHMOP']
-Click here to be taken to the World Event guide containing the information needed to reach rank 10. |confirm |next "Zygor's Horde Events Guides\\Brawler's Guild\\Brawl'gar Arena" |only if ZGV.guidesets['DailiesHMOP']
-confirm |only if not ZGV.guidesets ['DailiesHMOP'] and not ZGV.guidesets['AchievementsHMOP']
-only if ZGV:GetReputation(1374).friendRep<9000
-step
-talk Paul North##68364
-buy 1 Brawler's Burly Mushan Beast##98405 |goto Brawl'gar Arena 52.0,32.6
-step
-learnmount Brawler's Burly Mushan Beast##142641 |use Brawler's Burly Mushan Beast##98405
+This mount was obtained through the old Brawler's Guild. You had to reach rank 10 in the old Brawler's Guild to purchase this mount.
+This mount is no long available in-game
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Ashhide Mushan Beast",{
 keywords={"ashhide","mushan","beast","ground","mount"},

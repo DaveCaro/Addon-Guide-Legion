@@ -12,6 +12,9 @@ talk Kondal Huntsworn##93541
 |tip Inside the building.
 Learn the Skinning Profession |condition skill("Skinning")>=1 |goto Dalaran L/10 36.04,27.96
 step
+Reach Level 675 Skinning |skill Skinning,675
+|tip Use the Skinning 1-700 guide to accomplish this.
+step
 Kill Beast enemies around this area
 |tip Loot and skin them.
 accept Stonehide Leather Sample##40131 |goto Highmountain/0 55.89,61.97
@@ -410,6 +413,10 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Skinning\\L
 author="support@zygorguides.com",
 startlevel=100.0,
 },[[
+step
+_Before Starting This Guide:_
+Complete the "Skinning Quest Line" Guide
+Click Here to Continue |confirm
 step
 _Which Leather Do You Prefer to Farm While Leveling Skinning?_
 |tip In terms of leveling Skinning, it doesn't matter which you choose, just preference.

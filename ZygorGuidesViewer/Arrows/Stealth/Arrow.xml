@@ -39,6 +39,12 @@
 						<AnimationGroup parentKey="error" looping="LOOP">
 							<Translation duration="10.0" order="1"><Scripts><OnPlay>local me=self:GetRegionParent() ; me:SetSize(40,40)  me:SetTexCoord(0.50,0.75,0.0,0.5)</OnPlay></Scripts></Translation>
 						</AnimationGroup>
+						<AnimationGroup parentKey="instance" looping="LOOP">
+							<Translation duration="10.0" order="1"><Scripts><OnPlay>local me=self:GetRegionParent() ; me:SetSize(40,40)  me:SetTexCoord(0.75,1,0.0,0.5)</OnPlay></Scripts></Translation>
+						</AnimationGroup>
+						<AnimationGroup parentKey="instancehide" looping="LOOP">
+							<Translation duration="10.0" order="1"><Scripts><OnPlay>local me=self:GetRegionParent() ; me:SetSize(40,40)  me:SetTexCoord(0.75,1,0.5,1.0)</OnPlay></Scripts></Translation>
+						</AnimationGroup>
 					</Animations>
 				</Texture>
 			</Layer>

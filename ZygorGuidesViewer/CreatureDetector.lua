@@ -55,7 +55,7 @@ end
 function CreatureDetector:Detect(force)
 	self.RecentlyDetectedGuide=nil
 
-	if not UnitExists("target") or InCombatLockdown() then  return  end
+	if not UnitExists("target") or InCombatLockdown() then return  end
 
 	-- WARNING: Unit GUID completely changes in Warlord of Draenor, it's a
 	-- string similar to an item link, not a hexidecimal value.
@@ -64,9 +64,9 @@ function CreatureDetector:Detect(force)
 	--local unitType = bit.band(first3,0x00f)
 	if UnitIsPlayer("target") then -- Screw the IDs this one is safer
 		return self:DetectMount(not force)
-	elseif (UnitCreatureType("target") == "Non-Combat Pet") then -- TODO: Localize
+	elseif (UnitCreatureType("target") == "Non-combat Pet") then -- TODO: Localize
 		return self:DetectMinipet(not force)
-	elseif (string.find(UnitGUID("target"),"Pet:")) then
+	elseif (string.find(UnitGUID("target"),"Pet-")) then
 		return self:DetectPet(not force)
 	else
 		return nil
@@ -84,7 +84,8 @@ function CreatureDetector:DetectPet(silent_mode)
 
 	if guid==UnitGUID("pet") then return  end  -- own pet.
 
-	if not guid or not UnitExists("target") or not (bit.band(tonumber(strsub(guid, 3,5),16),0x00f)==0x004) then -- "If that's not a pet"
+	--if not guid or not UnitExists("target") or not (bit.band(tonumber(strsub(guid, 3,5),16),0x00f)==0x004) then -- "If that's not a pet"
+	if not guid or not UnitExists("target") then
 		if not silent_mode then  ZGV:Print("Incorrect target.")  end
 		return  -- not a pet, whatever, bail out
 	end
@@ -101,20 +102,22 @@ function CreatureDetector:DetectPet(silent_mode)
 	self.PetMirror:SetUnit("target")
 
 	-- Perfect, so what's the deal?
-	local modelid = self.PetMirror:GetModel()
-	local model
+	local modelid = self.PetMirror:GetDisplayInfo()
+	local fileid = self.PetMirror:GetModelFileID()
+	local guide
 
-	if self.modelDatabase[modelid] then
-		model = self.modelDatabase[modelid][1] --Only one guide per pet is possible. Or if there are more then we only need one.
+	if self.modelDatabase[fileid] then
+		guide = self.modelDatabase[fileid][1] --Only one guide per pet is possible. Or if there are more then we only need one.
 	end
 
 	self.PetMirror:Hide() -- and stay low
 
-	if model then
-		self:AddGuideToDetectedGuides(model) -- TODO insert the actual guide and make sure it is not a duplicate.
+	if guide then
+		self:AddGuideToDetectedGuides(guide) -- TODO insert the actual guide and make sure it is not a duplicate.
 		ZGV:Debug("Hunter Pet Detected")
 		--if not silent_mode and ZGV.GuidePicker then ZGV.GuidePicker:NavigateTo("DETECTOR") end
-		return model
+		guide.is_hunter_pet=true
+		return guide
 	else
 		ZGV:Debug("Hunter Pet Guide not found")
 		return
@@ -127,7 +130,8 @@ function CreatureDetector:DetectMinipet(silent_mode)
 	local guid=UnitGUID("target")
 	local npcid=ZGV.GetTargetId()
 
-	if not guid or not UnitExists("target") or not (bit.band(tonumber(strsub(guid, 3,5),16),0x00f)==0x003) then -- "If that's not a NPC
+	--if not guid or not UnitExists("target") or not (bit.band(tonumber(strsub(guid, 3,5),16),0x00f)==0x003) then -- "If that's not a NPC
+	if not guid or not UnitExists("target") then -- "If that's not a NPC
 		if not silent_mode then  ZGV:Print("Incorrect target.")  end
 		return
 	end
@@ -153,6 +157,7 @@ function CreatureDetector:DetectMinipet(silent_mode)
 	if found then
 		ZGV:Debug("Mini Pet Detected")
 		self:AddGuideToDetectedGuides(found)
+		found.is_battle_pet=true
 		return found
 	-- If not, compose a report
 	elseif not silent_mode then
@@ -217,6 +222,7 @@ function CreatureDetector:DetectMount(silent_mode)
 	-- If found, point at it
 	if found then
 		ZGV:Debug("Mount Detected")
+		found.is_mount=true
 		self:AddGuideToDetectedGuides(found)
 		--if not silent_mode and ZGV.GuidePicker then ZGV.GuidePicker:NavigateTo("DETECTOR") end
 		return found
@@ -283,8 +289,8 @@ function CreatureDetector:RegisterPetID(petid,guide)
 end
 
 -- Registers a correspondence between a model and a guide to obtain it
-function CreatureDetector:RegisterGuideModel(modelfile,guide)
-	registerIn(self.modelDatabase,modelfile,guide)
+function CreatureDetector:RegisterGuideModel(displayid,guide,fileid)
+	registerIn(self.modelDatabase,fileid,guide)
 end
 
 
@@ -296,23 +302,39 @@ function CreatureDetector:ShowTooltip(guide,parent,position,x,y)
 	if guide then
 		-- single guide
 		local status,txt = guide:GetStatus()
-		GameTooltip:SetText(guide.title_short,1,0.9,0.4,1)
+		local parent,path = guide:GetParentFolder()
+		GameTooltip:SetText(parent,1,0.9,0.4,1)
+
 		if status=="COMPLETE" then
-			if UnitIsPlayer("target") then  GameTooltip:AddLine(L['You already have this mount.'],0.5,1,0.3,1)
-			else  GameTooltip:AddLine(L['You already have this pet.'],0.5,1,0.3,1)
+			if guide.is_mount then 
+				GameTooltip:AddLine(L['You already have this mount.'],0.5,1,0.3,1)
+			else
+				GameTooltip:AddLine(L['You already have this pet.'],0.5,1,0.3,1)
 			end
 		elseif status=="INVALID" then
-			if UnitIsPlayer("target") then  GameTooltip:AddLine(L['This mount is not available.'].." "..txt,1,0,0,1)
-			else  GameTooltip:AddLine(L['This pet is not available.'].." "..txt,1,0,0,1)
+			if guide.is_mount then 
+				GameTooltip:AddLine(L['This mount is not available.'].." "..txt,1,0,0,1)
+			else
+				GameTooltip:AddLine(L['This pet is not available.'].." "..txt,1,0,0,1)
 			end
 		else
-			GameTooltip:AddLine(L[UnitIsPlayer("target") and 'detector_mount_tooltip' or 'detector_pet_tooltip'],1,0.7,0)
+			if guide.is_hunter_pet then
+				GameTooltip:AddLine(L['detector_pet_tooltip'],1,0.7,0)
+			elseif guide.is_mount then 
+				GameTooltip:AddLine(L['detector_mount_tooltip'],1,0.7,0)
+			else
+				GameTooltip:AddLine(L['detector_battlepet_tooltip'],1,0.7,0)
+			end
 		end
 	else
 		-- multiple
 		--GameTooltip:SetText(L[UnitIsPlayer("target") and 'detector_mount_tooltip' or 'detector_pet_tooltip'])
 	end
-	GameTooltip:AddLine(L['detector_tooltip_click'],0,1,0,1)
+	if guide and guide.is_hunter_pet then
+		GameTooltip:AddLine(L['detector_tooltip_hunter_click'],0,1,0,1)
+	else
+		GameTooltip:AddLine(L['detector_tooltip_click'],0,1,0,1)
+	end
 	GameTooltip:SetToplevel(true)
 	GameTooltip:Show()
 end
@@ -371,18 +393,32 @@ function CreatureDetector:OnEvent(event)
 	if event=="PLAYER_TARGET_CHANGED" then --Can it be something else?
 		button:Hide() --Hide until shown otherwise
 
-		if ZGV.db.profile.detectcreatures and (ZGV.guidesets['PetsMountsA'] or ZGV.guidesets['PetsMountsH']) then
+		if ZGV.db.profile.n_popup_pet and (ZGV.guidesets['PetsMountsA'] or ZGV.guidesets['PetsMountsH']) then
 			self.RecentlyDetectedGuide = self:Detect()
+		else
 		end
 
-		if self.RecentlyDetectedGuide and ZGV.db.profile.detectcreatures then
+		if self.RecentlyDetectedGuide and ZGV.db.profile.n_popup_pet then
 			if ZGV.db.profile.n_nc_enabled and ZGV.NotificationCenter then
+				local is_hunter_pet=self.RecentlyDetectedGuide.is_hunter_pet
+
 				local onClick = function(self)
-					ZGV:SetGuide(CreatureDetector.DetectedGuides[self.id])
+					if is_hunter_pet then
+						local _,path = CreatureDetector.DetectedGuides[self.id]:GetParentFolder()
+						ZGV.GuideMenu:Show(path)
+					else
+						ZGV:SetGuide(CreatureDetector.DetectedGuides[self.id])
+					end
 				end
 				local onEnter = function(self)
 					local position,x,y = ZGV.NotificationCenter:GetTooltipPosition()
 					CreatureDetector:ShowTooltip(CreatureDetector.DetectedGuides[self.id],self,position,x,y)
+				end
+
+				local display_title=self.RecentlyDetectedGuide.title_short
+				if is_hunter_pet then
+					local path,_ = self.RecentlyDetectedGuide.title:match("^(.+)\\(.-)$")
+					_,display_title = path:match("^(.+)\\(.-)$")
 				end
 	
 				--(id, text, texture, texcoords, onClick, tooltip, priority, poptime, removetime, quiet, OnOpen, popupType )
@@ -391,7 +427,7 @@ function CreatureDetector:OnEvent(event)
 					self.RecentlyDetectedGuide.title,
 					ZGV.L['notifcenter_pet_title'],
 					--ZGV.L['notifcenter_pet_text']:format(ZGV.Menu:GetStatusColor(self.RecentlyDetectedGuide:GetStatus()).hex,self.RecentlyDetectedGuide.title_short),
-					ZGV.L['notifcenter_pet_text']:format("ff00e9ff",self.RecentlyDetectedGuide.title_short),
+					ZGV.L['notifcenter_pet_text']:format("ff00e9ff",display_title),
 					_petguidetexture,
 					_petguidetexturecoords,
 					onClick,

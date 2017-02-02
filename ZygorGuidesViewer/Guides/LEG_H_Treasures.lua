@@ -11,7 +11,7 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\POI Legion Treas
 	poitype=treasure,
 },[[
 --//Azsuna\\--
-step
+step //1
 	|poi_treasure Treasure Chest
 	|poispot Azsuna 58.38,12.29
 	|poiquest 37980
@@ -21,14 +21,14 @@ step
 	Cross the bridge |goto 58.35,15.28 < 8
 	click Ley Portal |goto 58.69,14.13 < 5 |walk
 	click Treasure Chest##251751 |q 37980 |future |goto Azsuna 58.38,12.29
-step
+step //2
 	|poi_treasure Treasure Chest
 	|poispot Azsuna 57.88,12.23
 	|poiquest 37958
 	|poiitem 138783
 	Enter the building |goto Azsuna/0 57.29,12.97 < 10 |walk
 	click Treasure Chest##251751 |q 37958 |future |goto Azsuna 57.88,12.23
-step
+step //3
 	|poi_treasure Treasure Chest
 	|poispot Azsuna 51.50,24.35
 	|poiquest 42289
@@ -37,7 +37,7 @@ step
 	Enter the cave |goto Azsuna 47.8,23.7 < 10
 	click Treasure Chest##251751 |q 42289 |future |goto Azsuna 51.50,24.35
 	|tip It is all the way in the back of the cave.
-step
+step //4
 	|poi_treasure Treasure Chest
 	|poispot Azsuna 56.44,34.81
 	|poiquest 38251
@@ -52,7 +52,7 @@ step //5
 	|poicurrency OR
 	|poiitem 131795
 	click Glimmering Treasure Chest##240637 |q 37830 |future |goto Azsuna 58.36,43.78
-step
+step //6
 	|poi_treasure Small Treasure Chest
 	|poispot Azsuna 53.54,39.82
 	|poiquest 42284
@@ -61,25 +61,26 @@ step
 	Enter the Academy |goto Azsuna/0 53.76,40.29 < 10 |walk
 	Jump into the water below |goto Azsuna/17 61.77,81.69 < 8 |walk
 	click Small Treasure Chest##233107 |q 42284 |future |goto Azsuna/17 62.06,84.00
-step
+step //7
 	|poi_treasure Small Treasure Chest
 	|poispot Azsuna 53.88,40.35
 	|poiquest 42285
 	|poicurrency OR
 	|poiitem 140310
+	_NOTE:_ You must quest through Azsuna until you accept the quest "The Tidestone: Shattered" |only if not havequest(37469) or not completedq(37469)
 	Enter the Academy |goto Azsuna/0 53.76,40.29 < 10 |walk
 	Jump into the water below |goto Azsuna/17 61.77,81.69 < 8 |walk
 	Go down the stairs |goto Azsuna/17 57.98,67.46 < 8 |walk
 	click Tidestone Vault Door |goto Azsuna/17 56.29,46.80 < 6 |walk
 	click Small Treasure Chest##233107 |q 42285 |future |goto Azsuna/17 71.62,21.74
-step
+step //8
 	|poi_treasure Treasure Chest
 	|poispot Azsuna 42.60,08.10
 	|poiquest 38367
 	|poiitem 138783
 	|poicurrency OR
 	click Treasure Chest##251751 |q 38367 |future |goto Azsuna 42.60,08.10
-step
+step //9
 	|poi_treasure Disputed Treasure
 	|poispot Azsuna 55.90,56.90
 	|poiquest 38365
@@ -94,7 +95,8 @@ step //10
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 42273 |future |goto Azsuna 62.38,58.41
-step
+	|tip It's in the eye socket of the fish skeleton.
+step //11
 	|poi_treasure Small Treasure Chest
 	|poispot Azsuna 63.00,54.20
 	|poiquest 42278
@@ -102,7 +104,7 @@ step
 	|poiitem 140310
 	Enter the cave |goto Azsuna 64.0,52.9 < 10 |walk
 	click Small Treasure Chest##233107 |q 42278 |future |goto Azsuna 63.00,54.20
-step
+step //12
 	|poi_treasure Small Treasure Chest
 	|poispot Azsuna 65.47,29.55
 	|poiquest 42958
@@ -110,7 +112,7 @@ step
 	|poiitem 140310
 	click Small Treasure Chest##233107 |q 42958 |future |goto Azsuna 65.47,29.55
 	|tip It is underneath the trunk of the fallen tree.
-step
+step //13
 	|poi_treasure Small Treasure Chest
 	|poispot Azsuna 53.50,45.45
 	|poiquest 42283
@@ -118,7 +120,7 @@ step
 	|poiitem 138783
 	Go up the stairs |goto Azsuna/0 51.60,44.63 < 10
 	click Small Treasure Chest##233107 |q 42283 |future |goto Azsuna 53.50,45.45
-step
+step //14
 	|poi_treasure Small Treasure Chest
 	|poispot Azsuna 47.86,07.73
 	|poiquest 42295
@@ -135,7 +137,7 @@ step //15
 	Enter the tower |goto Azsuna/0 55.67,18.22 < 10 |walk
 	click Ley Portal |goto Azsuna/0 55.54,18.63 < 5 |walk
 	click Treasure Chest##251751 |q 40711 |future |goto Azsuna 55.63,18.50
-step
+step //16
 	|poi_treasure Small Treasure Chest
 	|poispot Azsuna 53.61,18.13
 	|poiquest 44104
@@ -143,14 +145,14 @@ step
 	|poiitem 138783
 	Enter the cave |goto Azsuna/0 53.95,17.90 < 5 |walk
 	click Small Treasure Chest##233107 |q 44104 |future |goto Azsuna 53.61,18.13
-step
+step //17
 	|poi_treasure Treasure Chest
 	|poispot Azsuna 63.23,15.21
 	|poiquest 37832
 	|poiitem 138783
 	|poicurrency OR
 	click Treasure Chest##251751 |q 37832 |future |goto Azsuna 63.23,15.21
-step
+step //18
 	|poi_treasure Small Treasure Chest
 	|poispot Azsuna 68.87,29.73
 	|poiquest 44103
@@ -158,7 +160,7 @@ step
 	|poiitem 138783
 	Enter the underwater cave |goto Azsuna/0 69.70,29.52 < 10 |walk
 	click Small Treasure Chest##233107 |q 44103 |future |goto Azsuna 68.87,29.73
-step
+step //19
 	|poi_treasure Small Treasure Chest
 	|poispot Azsuna 57.18,25.23
 	|poiquest 42338
@@ -173,28 +175,29 @@ step //20
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 42288 |future |goto Azsuna 55.36,27.74
-step
+step //21
 	|poi_treasure Treasure Chest
 	|poispot Azsuna 57.15,31.06
 	|poiquest 38419
 	|poiitem 138783
 	|poicurrency OR
 	click Treasure Chest##251751 |q 38419 |future |goto Azsuna 57.15,31.06
-step
+step //22
 	|poi_treasure Small Treasure Chest
 	|poispot Azsuna 54.40,36.35
 	|poiquest 42287
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 42287 |future |goto Azsuna 54.40,36.35
-step
+	|tip It's underwater.
+step //23
 	|poi_treasure Small Treasure Chest
 	|poispot Azsuna 53.03,37.26
 	|poiquest 37596
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 37596 |future |goto Azsuna 53.03,37.26
-step
+step //24
 	|poi_treasure Small Treasure Chest
 	|poispot Azsuna 66.06,43.45
 	|poiquest 40751
@@ -209,7 +212,7 @@ step //25
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 42294 |future |goto Azsuna 62.81,44.79
 	|tip It is inside the small tent.
-step
+step //26
 	|poi_treasure Trecherous Stallions
 	|poispot Azsuna 50.46,52.11
 	|poiquest 44081
@@ -219,14 +222,14 @@ step
 	click Ley Portal |goto Azsuna 60.28,46.18 < 5 |walk
 	kill Devious Sunrunner##112637, Sinister Leyrunner##112636
 	click Treasure Chest##3365 |q 44081 |future |goto Azsuna 50.46,52.11
-step
+step //27
 	|poi_treasure Small Treasure Chest
 	|poispot Azsuna 58.64,53.40
 	|poiquest 40752
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 40752 |future |goto Azsuna 58.64,53.40
-step
+step //28
 	|poi_treasure Small Treasure Chest
 	|poispot Azsuna 59.87,63.16
 	|poiquest 42272
@@ -234,7 +237,7 @@ step
 	|poiitem 138783
 	Go up the path |goto Azsuna/0 59.42,61.98 < 10
 	click Small Treasure Chest##233107 |q 42272 |future |goto Azsuna 59.87,63.16
-step
+step //29
 	|poi_treasure Seemingly Unguarded Treasure
 	|poispot Azsuna 65.06,69.78
 	|poiquest 38239
@@ -249,14 +252,14 @@ step //30
 	|poiquest 37829
 	|poiitem 138783
 	click Treasure Chest##251751 |q 37829 |future |goto Azsuna 53.17,64.44
-step
+step //31
 	|poi_treasure Treasure Chest
 	|poispot Azsuna 49.41,58.00
 	|poiquest 38370
 	|poiitem 141882
 	|poicurrency OR
 	click Treasure Chest##251751 |q 38370 |future |goto Azsuna 49.41,58.00
-step
+step //32
 	|poi_treasure Small Treasure Chest
 	|poispot Azsuna 54.87,52.14
 	|poiquest 44405
@@ -265,14 +268,14 @@ step
 	Enter the cave |goto Azsuna/0 54.61,52.52 < 5 |walk
 	click Small Treasure Chest##233107 |q 44405 |future |goto Azsuna 54.87,52.14
 	|tip All the NPC's in this small camp will become aggressive.
-step
+step //33
 	|poi_treasure Treasure Chest
 	|poispot Azsuna 49.38,45.36
 	|poiquest 37828
 	|poiitem 122681
 	|poicurrency OR
 	click Treasure Chest##251751 |q 37828 |future |goto Azsuna 49.38,45.36
-step
+step //34
 	|poi_treasure Small Treasure Chest
 	|poispot Azsuna 50.21,50.29
 	|poiquest 42290
@@ -287,7 +290,7 @@ step //35
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 42281 |future |goto Azsuna 52.00,42.10
-step
+step //36
 	|poi_treasure Small Treasure Chest
 	|poispot Azsuna 53.62,44.14
 	|poiquest 42282
@@ -295,21 +298,21 @@ step
 	|poiitem 138783
 	Enter the broken building |goto Azsuna/0 52.53,44.26 < 10 |walk
 	click Small Treasure Chest##233107 |q 42282 |future |goto Azsuna 53.62,44.14
-step
+step //37
 	|poi_treasure Small Treasure Chest
 	|poispot Azsuna 63.65,39.19
 	|poiquest 42293
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 42293 |future |goto Azsuna 63.65,39.19
-step
+step //38
 	|poi_treasure Small Treasure Chest
 	|poispot Azsuna 49.65,34.48
 	|poiquest 37831
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 37831 |future |goto Azsuna 49.65,34.48
-step
+step //39
 	|poi_treasure Small Treasure Chest
 	|poispot Azsuna 44.47,39.46
 	|poiquest 37713
@@ -323,7 +326,7 @@ step //40
 	|poiitem 138783
 	|poicurrency OR
 	click Treasure Chest##251751 |q 38316 |future |goto Azsuna 40.57,57.67
-step
+step //41
 	|poi_treasure Small Treasure Chest
 	|poispot Azsuna 26.25,47.13
 	|poiquest 44105
@@ -331,7 +334,7 @@ step
 	|poiitem 138783
 	Enter the cave |goto Azsuna/0 26.60,47.07 < 10 |walk
 	click Small Treasure Chest##233107 |q 44105 |future |goto Azsuna 26.25,47.13
-step
+step //42
 	|poi_treasure Treasure Chest
 	|poispot Azsuna 41.39,30.75
 	|poiquest 42292
@@ -339,7 +342,7 @@ step
 	|poicurrency OR
 	Enter the cave |goto Azsuna/0 41.56,31.24 < 10 |walk
 	click Treasure Chest##251751 |q 42292 |future |goto Azsuna 41.39,30.75
-step
+step //43
 	|poi_treasure Small Treasure Chest
 	|poispot Azsuna 34.58,35.56
 	|poiquest 44102
@@ -347,7 +350,7 @@ step
 	|poiitem 138783
 	Enter the cave |goto Azsuna/0 34.37,36.06 < 10 |walk
 	click Small Treasure Chest##233107 |q 44102 |future |goto Azsuna 34.58,35.56
-step
+step //44
 	|poi_treasure Glimmering Treasure Chest
 	|poiaccess Completionist
 	|poispot Azsuna 43.39,22.42
@@ -366,32 +369,35 @@ step //45
 	|poiquest 42339
 	|poiitem 138783
 	|poicurrency OR
+	Follow the path up |goto Azsuna/0 51.91,17.58 < 20 |only if walking
 	Enter the cave |goto Azsuna 53.95,22.43 < 10 |walk
 	|tip Move carefully between the sleeping bears so you don't wake them up.
 	click Treasure Chest##251751 |q 42339 |future |goto Azsuna 52.84,20.59
 --//Val'sharah\\--
-step
+step //46
 	|poi_treasure Small Treasure Chest
 	|poispot Val'sharah 65.86,79.18
 	|poiquest 38391
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 38391 |future |goto Val'sharah 65.86,79.18
-step
+	|tip Between the two trees.
+step //47
 	|poi_treasure Small Treasure Chest
 	|poispot Val'sharah 56.00,83.76
 	|poiquest 38861
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 38861 |future |goto Val'sharah 56.00,83.76
-step
+	|tip It's inside the cave.
+step //48
 	|poi_treasure Small Treasure Chest
 	|poispot Val'sharah 56.22,57.30
 	|poiquest 39072
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 39072 |future |goto Val'sharah 56.22,57.30
-step
+step //49
 	|poi_treasure Small Treasure Chest
 	|poispot Val'sharah 62.79,70.32
 	|poiquest 39069
@@ -408,14 +414,14 @@ step //50
 	|poiitem 138783
 	Enter the Den of Claws |goto Val'sharah/0 62.35,76.36 < 10 |walk
 	click Small Treasure Chest##233107 |q 39070 |future |goto Val'sharah 63.03,76.96
-step
+step //51
 	|poi_treasure Small Treasure Chest
 	|poispot Val'sharah 61.65,73.72
 	|poiquest 39087
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 39087 |future |goto Val'sharah 61.65,73.72
-step
+step //52
 	|poi_treasure Small Treasure Chest
 	|poispot Val'sharah 38.45,65.30
 	|poiquest 39080
@@ -423,7 +429,7 @@ step
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 39080 |future |goto Val'sharah 38.45,65.30
 	|tip It is down inside the cellar. You must have the quest "The Farmsteads" to access it.
-step
+step //53
 	|poi_treasure Small Treasure Chest
 	|poispot Val'sharah 45.10,61.14
 	|poiquest 39083
@@ -432,7 +438,7 @@ step
 	Jump to the tree from here |goto Val'sharah/0 44.81,61.49 < 5
 	click Small Treasure Chest##233107 |q 39083 |future |goto Val'sharah 45.10,61.14
 	|tip It is up on the tree.
-step
+step //54
 	|poi_treasure Small Treasure Chest
 	|poispot Val'sharah 63.90,45.56
 	|poiquest 44139
@@ -448,7 +454,7 @@ step //55
 	|poicurrency OR
 	Enter the cave |goto Val'sharah/0 54.11,61.03 < 10 |walk
 	click Treasure Chest##251751 |q 39097 |future |goto Val'sharah 54.50,60.48
-step
+step //56
 	|poi_treasure Small Treasure Chest
 	|poispot Val'sharah 54.18,70.61
 	|poiquest 39093
@@ -456,7 +462,7 @@ step
 	|poiitem 138783
 	Enter the cave |goto Val'sharah/0 54.03,70.00 < 10 |walk
 	click Small Treasure Chest##233107 |q 39093 |future |goto Val'sharah 54.18,70.61
-step
+step //57
 	|poi_treasure Small Treasure Chest
 	|poispot Val'sharah 54.41,74.19
 	|poiquest 38359
@@ -465,7 +471,7 @@ step
 	Enter the house |goto Val'sharah/0 54.53,73.68 < 10 |walk
 	click Small Treasure Chest##233107 |q 38359 |future |goto Val'sharah 54.41,74.19
 	|tip It is inside the house, behind the wooden curtain.
-step
+step //58
 	|poi_treasure Small Treasure Chest
 	|poispot Val'sharah 51.49,77.76
 	|poiquest 38388
@@ -473,7 +479,7 @@ step
 	|poiitem 138783
 	Enter the cave |goto Val'sharah 50.9,77.0 < 10 |walk
 	click Small Treasure Chest##233107 |q 38388 |future |goto Val'sharah 51.49,77.76
-step
+step //59
 	|poi_treasure Small Treasure Chest
 	|poispot Val'sharah 54.95,80.54
 	|poiquest 38861
@@ -489,14 +495,14 @@ step //60
 	|poiitem 138783
 	Enter the cave |goto Val'sharah/0 49.30,85.59 < 10 |walk
 	click Small Treasure Chest##233107 |q 38886 |future |goto Val'sharah 48.99,86.15
-step
+step //61
 	|poi_treasure Small Treasure Chest
 	|poispot Val'sharah 46.44,86.30
 	|poiquest 38277
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 38277 |future |goto Val'sharah 46.44,86.30
-step
+step //62
 	|poi_treasure Treasure Chest
 	|poispot Val'sharah 44.35,82.57
 	|poiquest 38387
@@ -504,20 +510,21 @@ step
 	|poicurrency OR
 	Enter the cave |goto Val'sharah/0 44.37,83.28 < 10 |walk
 	click Treasure Chest##251751 |q 38387 |future |goto Val'sharah 44.35,82.57
-step
+step //63
 	|poi_treasure Treasure Chest
 	|poispot Val'sharah 43.06,88.22
 	|poiquest 44138
 	|poiitem 138783
 	Enter the cave |goto Val'sharah 43.7,89.9 < 10 |walk
 	click Treasure Chest##251751 |q 44138 |future |goto Val'sharah 43.06,88.22
-step
+step //64
 	|poi_treasure Small Treasure Chest
 	|poispot Val'sharah 48.68,73.79
 	|poiquest 38366
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 38366 |future |goto Val'sharah 48.68,73.79
+	|tip It's behind the tree roots.
 step //65
 	|poi_treasure Small Treasure Chest
 	|poispot Val'sharah 43.39,75.89
@@ -525,14 +532,14 @@ step //65
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 38363 |future |goto Val'sharah 43.39,75.89
-step
+step //66
 	|poi_treasure Treasure Chest
 	|poispot Val'sharah 33.81,58.26
 	|poiquest 39081
 	|poiitem 138783
 	Enter the building |goto Val'sharah/0 34.11,58.19 < 10 |walk
 	click Treasure Chest##251751 |q 39081 |future |goto Val'sharah 33.81,58.26
-step
+step //67
 	|poi_treasure Small Treasure Chest
 	|poispot Val'sharah 42.66,58.01
 	|poiquest 39077
@@ -540,7 +547,7 @@ step
 	|poiitem 138783
 	Enter the small house |goto Val'sharah/0 42.76,58.45 < 5 |walk
 	click Small Treasure Chest##233107 |q 39077 |future |goto Val'sharah 42.66,58.01
-step
+step //68
 	|poi_treasure Small Treasure Chest
 	|poispot Val'sharah 38.62,67.18
 	|poiquest 39079
@@ -548,7 +555,7 @@ step
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 39079 |future |goto Val'sharah 38.62,67.18
 	|tip It is up on the cliff, next to the big water wheel.
-step
+step //69
 	|poi_treasure Treasure Chest
 	|poiaccess Completionist
 	|poispot Val'sharah 43.22,54.88
@@ -566,7 +573,7 @@ step //70
 	|poiitem 138783
 	Go up the stairs |goto Val'sharah/0 39.74,53.03 < 10
 	click Small Treasure Chest##233107 |q 38369 |future |goto Val'sharah 39.94,54.60
-step
+step //71
 	|poi_treasure Small Treasure Chest
 	|poiaccess Completionist
 	|poispot Val'sharah 41.40,45.60
@@ -580,7 +587,7 @@ step
 	Jump down to the water below |goto 40.56,44.97 < 5
 	click Small Treasure Chest##233107 |q 39085 |future |goto Val'sharah/13 41.97,88.20
 	|tip It is in the water at the bottom of the tower staircase.
-step
+step //72
 	|poi_treasure Glimmering Treasure Chest
 	|poiaccess Completionist
 	|poispot Val'sharah 41.92,45.57
@@ -592,7 +599,7 @@ step
 	Go through the doorway |goto Val'sharah/13 45.70,78.55 < 5
 	Go up the stairs |goto 39.53,43.80 < 5
 	click Glimmering Treasure Chest##240637 |q 39086 |future |goto Val'sharah/13 51.07,52.05
-step
+step //73
 	|poi_treasure Unguarded Thistlemaw Treasure
 	|poispot Val'sharah 55.55,77.62
 	|poiquest 38466
@@ -601,7 +608,7 @@ step
 	click Unguarded Thistleleaf Treasure##241128
 	kill Thistleleaf Rascal##92104+
 	click Unguarded Thistleleaf Treasure##241128 |q 38466 |future |goto Val'sharah 55.55,77.62
-step
+step //74
 	|poi_treasure Treasure Chest
 	|poispot Val'sharah 61.07,34.21
 	|poiquest 39088
@@ -617,15 +624,16 @@ step //75
 	|poiitem 138783
 	Enter the house |goto Val'sharah/0 68.20,40.11 < 10 |walk
 	click Small Treasure Chest##233107 |q 39073 |future |goto Val'sharah 68.33,40.60
-step
+step //76
 	|poi_treasure Treasure Chest
 	|poispot Val'sharah 66.55,40.90
 	|poiquest 39108
 	|poiitem 138783
 	|poicurrency OR
+	Follow the path |goto Val'sharah/0 67.51,40.52 < 15 |only if walking
 	click Treasure Chest##251751 |q 39108 |future |goto Val'sharah 66.55,40.90
 	|tip It is on an outcropping at the top of the hill, next to the base of a tree.
-step
+step //77
 	|poi_treasure Treasure Chest
 	|poispot Val'sharah 67.21,59.28
 	|poiquest 38782
@@ -633,19 +641,20 @@ step
 	|poicurrency OR
 	Enter the cave |goto Val'sharah 65.9,56.3 < 10 |walk
 	click Treasure Chest##251751 |q 38782 |future |goto Val'sharah 67.21,59.28
-step
+step //78
 	|poi_treasure Small Treasure Chest
 	|poispot Val'sharah 70.22,57.04
 	|poiquest 38783
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 38783 |future |goto Val'sharah 70.22,57.04
-step
+step //79
 	|poi_treasure Small Treasure Chest
 	|poispot Val'sharah 69.47,59.99
 	|poiquest 38781
 	|poicurrency OR
 	|poiitem 138783
+	Follow the path |goto Val'sharah/0 68.88,60.66 < 10 |only if walking
 	Enter the cave |goto Val'sharah/0 69.82,60.44 < 10 |walk
 	click Small Treasure Chest##233107 |q 38781 |future |goto Val'sharah 69.47,59.99
 step //80
@@ -657,7 +666,7 @@ step //80
 	Enter the building |goto Val'sharah/0 66.98,52.71 < 10 |walk
 	Go upstairs |goto 67.06,53.36 < 5 |walk
 	click Small Treasure Chest##233107 |q 38386 |future |goto Val'sharah 67.39,53.42
-step
+step //81
 	|poi_treasure Small Treasure Chest
 	|poispot Val'sharah 64.71,51.26
 	|poiquest 38355
@@ -665,7 +674,7 @@ step
 	|poiitem 138783
 	Enter the house |goto Val'sharah/0 65.12,51.28 < 5 |walk
 	click Small Treasure Chest##233107 |q 38355 |future |goto Val'sharah 64.71,51.26
-step
+step //82
 	|poi_treasure Glimmering Treasure Chest
 	|poiaccess Completionist
 	|poispot Val'sharah 54.00,34.89
@@ -675,15 +684,16 @@ step
 	Enter the cave |goto Val'sharah 53.2,38.0 < 10 |walk
 	|tip Avoid the red spots on the ground that are dropped by the elite mobs. Standing in them will teleport you from the cave.
 	click Glimmering Treasure Chest##240637 |q 38390 |future |goto Val'sharah 54.00,34.89
-step
+step //83
 	|poi_treasure Treasure Chest
 	|poispot Val'sharah 62.07,67.37
 	|poiquest 39071
 	|poiitem 138783
 	|poicurrency OR
+	Follow the path |goto Val'sharah/0 59.66,70.99 < 10 |only if walking
 	Go through the waterfall and into the cave |goto Val'sharah/0 62.00,68.10 < 10 |walk
 	click Treasure Chest##251751 |q 39071 |future |goto Val'sharah 62.07,67.37
-step
+step //84
 	|poi_treasure Treasure Chest
 	|poispot Val'sharah 63.27,74.01
 	|poiquest 39102
@@ -698,7 +708,7 @@ step //85
 	|poicurrency OR
 	|poiitem 138783
 	click Glimmering Treasure Chest##240637 |q 39089 |future |goto Val'sharah 61.01,79.17
-step
+step //86
 	|poi_treasure Small Treasure Chest
 	|poispot Val'sharah 62.70,85.26
 	|poiquest 44136
@@ -706,7 +716,7 @@ step
 	|poiitem 138783
 	Enter the cave |goto Val'sharah/0 62.49,85.98 < 10 |walk
 	click Small Treasure Chest##233107 |q 44136 |future |goto Val'sharah 62.70,85.26
-step
+step //87
 	|poi_treasure Treasure Chest
 	|poispot Val'sharah 64.60,85.46
 	|poiquest 38900
@@ -714,15 +724,15 @@ step
 	|poicurrency OR
 	Enter the building |goto Val'sharah/0 64.35,84.38 < 10 |walk
 	click Treasure Chest##251751 |q 38900 |future |goto Val'sharah 64.60,85.46
-step
+step //88
 	|poi_treasure Small Treasure Chest
 	|poispot Val'sharah 60.49,82.16
 	|poiquest 38893
 	|poicurrency OR
 	|poiitem 138783
-	Enter the cave |goto Val'sharah 62.1,86.16 < 5 |walk
+	Enter the cave |goto Val'sharah/0 61.13,85.17 < 5 |walk
 	click Small Treasure Chest##233107 |q 38893 |future |goto Val'sharah 60.49,82.16
-step
+step //89
 	|poi_treasure Treasure Chest
 	|poispot Val'sharah 65.39,86.29
 	|poiquest 39074
@@ -739,7 +749,7 @@ step //90
 	Enter the building |goto Val'sharah/0 60.33,71.38 < 5 |walk
 	Go up the stairs |goto Val'sharah 60.00,71.73 < 5 |walk
 	click Small Treasure Chest##233107 |q 38943 |future |goto Val'sharah 59.88,72.28
-step
+step //91
 	|poi_treasure Small Treasure Chest
 	|poispot Val'sharah 73.83,54.37
 	|poiquest 44135
@@ -747,21 +757,21 @@ step
 	|poiitem 138783
 	Enter the cave |goto Val'sharah/0 73.20,53.85 < 5 |walk
 	click Small Treasure Chest##233107 |q 44135 |future |goto Val'sharah 73.83,54.37
-step
+step //92
 	|poi_treasure Small Treasure Chest
 	|poispot Val'sharah 73.80,32.27
 	|poiquest 38371
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 38371 |future |goto Val'sharah 73.80,32.27
-step
+step //93
 	|poi_treasure Small Treasure Chest
 	|poispot Val'sharah 63.37,88.41
 	|poiquest 38389
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 38389 |future |goto Val'sharah 63.37,88.41
-step
+step //94
 	|poi_treasure Small Treasure Chest
 	|poispot Val'sharah 42.01,88.49
 	|poiquest 39085
@@ -776,7 +786,7 @@ step //95
 	|poiitem 138783
 	click Glimmering Treasure Chest##240637 |q 39086 |future |goto Val'sharah 50.90,51.68
 --//Highmountain\\--
-step
+step //96
 	|poi_treasure Glimmering Treasure Chest
 	|poispot Highmountain 54.17,41.59
 	|poiquest 40483
@@ -786,14 +796,14 @@ step
 	Follow the path around |goto Highmountain/0 55.12,41.95 < 10 |walk
 	click Glimmering Treasure Chest##240637 |q 40483 |future |goto Highmountain 54.17,41.59
 	|tip It is at the very top of the cave.
-step
+step //97
 	|poi_treasure Treasure Chest
 	|poispot Highmountain 52.02,32.41
 	|poiquest 40505
 	|poiitem 138783
 	|poicurrency OR
 	click Treasure Chest##251751 |q 40505 |future |goto Highmountain 52.02,32.41
-step
+step //98
 	|poi_treasure Floating Treasure
 	|poispot Highmountain 40.10,48.91
 	|poiquest 39494
@@ -801,7 +811,7 @@ step
 	|poicurrency OR
 	click Floating Treasure##95958 |q 39494 |future |goto Highmountain 40.10,48.91
 	|tip It floats down the river. You may have to wait for it to appear.
-step
+step //99
 	|poi_treasure Small Treasure Chest
 	|poispot Highmountain 55.13,49.65
 	|poiquest 40487
@@ -810,14 +820,14 @@ step
 	click Small Treasure Chest##233107 |q 40487 |future |goto Highmountain 55.13,49.65
 step //100
 	|poi_treasure Treasure Chest
-	|poispot Highmountain 43.58,25.10
+	|poispot Highmountain/31 43.58,25.10
 	|poiquest 40478
 	|poiitem 138783
 	|poicurrency OR
 	Enter the cave |goto Highmountain 42.58,25.30 < 10 |walk
 	Follow the path around |goto Highmountain/31 56.89,41.12 < 10 |walk
 	click Treasure Chest##251751 |q 40478 |future |goto Highmountain/31 36.04,72.70
-step
+step //101
 	|poi_treasure Treasures of Deathwing
 	|poispot Highmountain/29 51.99,28.72
 	|poiquest 39606
@@ -831,35 +841,37 @@ step
 	kill Titan Defender##96300+ |goto Highmountain/29 60.20,37.64 < 10 |walk
 	|tip Kill the Titan Defenders that spawn.
 	click Glimmering Treasure Chest##3365 |q 39606 |future |goto Highmountain/29 59.30,41.47 < 2
-step
+step //102
 	|poi_treasure Treasure Chest
 	|poispot Highmountain 39.37,62.29
 	|poiquest 40474
 	|poiitem 138783
 	|poicurrency OR
 	click Treasure Chest##251751 |q 40474 |future |goto Highmountain 39.37,62.29
-step
-	|poi_treasure Small Treasure Chest
-	|poispot Highmountain 53.03,52.24
-	|poiquest 40493
-	|poicurrency OR
-	|poiitem 138783
-	click Small Treasure Chest##233107 |q 40493 |future |goto Highmountain 53.03,52.24
-step
+--step
+--	|poi_treasure Small Treasure Chest
+--	|poispot Highmountain 53.03,52.24
+--	|poiquest 40493
+--	|poicurrency OR
+--	|poiitem 138783
+--	click Small Treasure Chest##233107 |q 40493 |future |goto Highmountain 53.03,52.24
+step //103
 	|poi_treasure Small Treasure Chest
 	|poispot Highmountain 53.45,43.52
 	|poiquest 40484
 	|poicurrency OR
 	|poiitem 138783
+	Follow the path |goto Highmountain/0 55.10,44.21 < 20 |only if walking
+	Follow the path |goto 54.50,42.35 < 20 |only if walking
 	click Small Treasure Chest##233107 |q 40484 |future |goto Highmountain 53.45,43.52
-step //105
+step //104
 	|poi_treasure Small Treasure Chest
 	|poispot Highmountain 53.06,39.46
 	|poiquest 40499
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 40499 |future |goto Highmountain 53.06,39.46
-step
+step //105
 	|poi_treasure Treasure Chest
 	|poispot Highmountain 50.98,38.80
 	|poiquest 40498
@@ -867,14 +879,14 @@ step
 	|poicurrency OR
 	click Treasure Chest##251751 |q 40498 |future |goto Highmountain 50.98,38.80
 	|tip It is inside the tent.
-step
+step //106
 	|poi_treasure Treasure Chest
-	|poispot Highmountain 50.01,37.14
+	|poispot Highmountain 49.63,37.75
 	|poiquest 39466
 	|poiitem 131927
-	Enter Rockcrawler Chasm |goto Highmountain/0 51.59,37.43 < 10
-	click Treasure Chest##251751 |q 39466 |future |goto Highmountain 50.01,37.14
-step
+	Follow the path |goto Highmountain/0 49.49,36.84 < 10
+	click Treasure Chest##251751 |q 39466 |future |goto Highmountain 49.63,37.75
+step //107
 	|poi_treasure Small Treasure Chest
 	|poispot Highmountain 42.49,35.03
 	|poiquest 40480
@@ -882,7 +894,7 @@ step
 	|poiitem 138783
 	Run across the tree trunk |goto Highmountain/0 42.01,34.69 < 10
 	click Small Treasure Chest##233107 |q 40480 |future |goto Highmountain 42.49,35.03
-step
+step //108
 	|poi_treasure Small Treasure Chest
 	|poispot Highmountain 37.35,33.81
 	|poiquest 40477
@@ -890,35 +902,37 @@ step
 	|poiitem 138783
 	Follow the path through the camp |goto Highmountain/0 39.46,35.03 < 10
 	click Small Treasure Chest##233107 |q 40477 |future |goto Highmountain 37.35,33.81
-step //110
+step //109
 	|poi_treasure Small Treasure Chest
 	|poispot Highmountain 45.57,34.62
 	|poiquest 40481
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 40481 |future |goto Highmountain 45.57,34.62
-step
+step //110
 	|poi_treasure Small Treasure Chest
 	|poispot Highmountain 55.13,49.64
 	|poiquest 40487
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 40487 |future |goto Highmountain 55.13,49.64
-step
+step //111
 	|poi_treasure Treasure Chest
 	|poispot Highmountain 39.30,76.21
 	|poiquest 40473
 	|poiitem 138783
 	|poicurrency OR
 	click Treasure Chest##251751 |q 40473 |future |goto Highmountain 39.30,76.21
-step
-	|poi_treasure Treasure Chest
-	|poispot Highmountain 46.22,73.40
-	|poiquest 40489
-	|poiitem 138783
-	|poicurrency OR
-	click Treasure Chest##251751 |q 40489 |future |goto Highmountain 46.22,73.40
-step
+--step
+--	|poi_treasure Treasure Chest
+--	|poispot Highmountain 46.22,73.40
+--	|poiquest 40489
+--	|poiitem 138783
+--	|poicurrency OR
+--	Follow the path |goto Highmountain/0 47.95,69.03 < 20 |only if walking
+--	Follow the path |goto 48.58,71.17 < 25 |only if walking
+--	click Treasure Chest##251751 |q 40489 |future |goto Highmountain 46.22,73.40
+step //112
 	|poi_treasure Small Treasure Chest
 	|poispot Highmountain 43.75,72.75
 	|poiquest 40510
@@ -926,14 +940,14 @@ step
 	|poiitem 138783
 	Go up the path |goto Highmountain/0 41.94,70.97 < 10
 	click Small Treasure Chest##233107 |q 40510 |future |goto Highmountain 43.75,72.75
-step //115
+step //113
 	|poi_treasure Treasure Chest
 	|poispot Highmountain 36.61,62.13
 	|poiquest 40488
 	|poiitem 138783
 	|poicurrency OR
 	click Treasure Chest##251751 |q 40488 |future |goto Highmountain 36.61,62.13
-step
+step //114
 	|poi_treasure Small Treasure Chest
 	|poispot Highmountain 53.41,48.68
 	|poiquest 40500
@@ -941,7 +955,7 @@ step
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 40500 |future |goto Highmountain 53.41,48.68
 	|tip It is inside the small tent.
-step
+step //115
 	|poi_treasure Totally Safe Treasure Chest
 	|poiaccess Completionist
 	|poispot Highmountain 52.30,51.41
@@ -953,14 +967,14 @@ step
 	click Totally Safe Treasure Chest##244429
 	kill Ram'Pag##97102
 	click Actually Safe Treasure Chest##3365 |q 39766 |future |goto Highmountain 52.30,51.41
-step
+step //116
 	|poi_treasure Treasure Chest
 	|poispot Highmountain 42.21,27.30
 	|poiquest 40479
 	|poiitem 138783
 	|poicurrency OR
 	click Treasure Chest##251751 |q 40479 |future |goto Highmountain 42.21,27.30
-step
+step //117
 	|poi_treasure Small Treasure Chest
 	|poispot Highmountain 45.19,27.46
 	|poiquest 44279
@@ -968,7 +982,7 @@ step
 	|poiitem 138783
 	Enter the underwater cave |goto Highmountain/0 45.84,27.37 < 10 |walk
 	click Small Treasure Chest##233107 |q 44279 |future |goto Highmountain 45.19,27.46
-step //120
+step //118
 	|poi_treasure Glimmering Treasure Chest
 	|poispot Highmountain 46.68,28.10
 	|poiquest 40482
@@ -978,7 +992,7 @@ step //120
 	Cross the bridge |goto 47.21,25.09 < 10
 	Jump up the rocks |goto 47.59,27.47 < 5
 	click Glimmering Treasure Chest##240637 |q 40482 |future |goto Highmountain 46.68,28.10
-step
+step //119
 	|poi_treasure Treasure Chest
 	|poispot Highmountain 50.98,36.47
 	|poiquest 40496
@@ -987,7 +1001,7 @@ step
 	Enter Rockcrawler Chasm |goto Highmountain/0 51.54,37.41 < 10
 	Cross the bridge |goto Highmountain/0 50.28,35.63 < 10
 	click Treasure Chest##251751 |q 40496 |future |goto Highmountain 50.98,36.47
-step
+step //120
 	|poi_treasure Small Treasure Chest
 	|poispot Highmountain 50.24,38.61
 	|poiquest 40497
@@ -998,7 +1012,7 @@ step
 	Cross the next bridge |goto 49.39,37.97 < 10
 	Go up the pathway |goto 49.93,40.15 < 5
 	click Small Treasure Chest##233107 |q 40497 |future |goto Highmountain 50.24,38.61
-step
+step //121
 	|poi_treasure Small Treasure Chest
 	|poispot Highmountain 50.81,35.04
 	|poiquest 40506
@@ -1007,14 +1021,15 @@ step
 	Follow the path up |goto Highmountain/0 51.94,34.09 < 10
 	Reach the top |goto 49.66,35.55 < 5
 	click Small Treasure Chest##233107 |q 40506 |future |goto Highmountain 50.81,35.04
-step
+step //122
 	|poi_treasure Small Treasure Chest
 	|poispot Highmountain 46.81,40.13
 	|poiquest 40507
 	|poicurrency OR
 	|poiitem 138783
+	Follow the path |goto Highmountain/0 46.63,39.53 < 10 |only if walking
 	click Small Treasure Chest##233107 |q 40507 |future |goto Highmountain 46.81,40.13
-step //125
+step //123
 	|poi_treasure Treasure Chest
 	|poispot Highmountain 47.64,44.06
 	|poiquest 39503
@@ -1022,7 +1037,7 @@ step //125
 	|poicurrency OR
 	Go up the path |goto Highmountain/0 47.38,44.59 < 10
 	click Treasure Chest##251751 |q 39503 |future |goto Highmountain 47.64,44.06
-step
+step //124
 	|poi_treasure Treasure Chest
 	|poiaccess Completionist
 	|poispot Highmountain 53.61,51.03
@@ -1032,7 +1047,7 @@ step
 	Follow the path along the mountain |goto Highmountain/0 55.34,52.70 < 10
 	Jump onto the rock and branch below |goto Highmountain 53.48,51.38 < 5
 	click Treasure Chest##251751 |q 39824 |future |goto Highmountain 53.61,51.03
-step
+step //125
 	|poi_treasure Whitewater Wash Treasure
 	|poispot Highmountain 39.55,57.44
 	|poiquest 39812
@@ -1040,7 +1055,7 @@ step
 	|poicurrency OR
 	Enter the cave |goto Highmountain/0 39.99,57.89 < 5 |walk
 	click Treasure Chest##3365 |q 39812 |future |goto Highmountain 39.55,57.44
-step
+step //126
 	|poi_treasure Phoenix Peak Treasure
 	|poispot Highmountain 51.17,53.05
 	|poiquest 39471
@@ -1049,7 +1064,7 @@ step
 	Go up the hill |goto Highmountain/0 53.11,48.14 < 10
 	Follow the narrow path along the mountain |goto 50.62,51.71 < 5
 	click Glimmering Treasure Chest##3365 |q 39471 |future |goto Highmountain 51.17,53.05
-step
+step //127
 	|poi_treasure Treasure Chest
 	|poispot Highmountain 41.57,46.86
 	|poiquest 40494
@@ -1059,21 +1074,22 @@ step
 	Cross the bridge |goto Highmountain/16 47.93,50.60 < 10
 	Go down the path here |goto 50.70,28.81 < 10
 	click Treasure Chest##251751 |q 40494 |future |goto 60.67,25.00
-step //130
+step //128
 	|poi_treasure A Steamy Jewelry Box
 	|poispot Thunder Totem/0 63.45,59.34
 	|poiquest 39531
 	|poiitem 141322
 	Enter the tent |goto Thunder Totem/0 61.88,62.06 < 5 |walk
 	click A Steamy Jewelry Box##243798 |q 39531 |future |goto Thunder Totem/0 63.45,59.34
-step
+step //129
 	|poi_treasure Treasure Chest
 	|poispot Thunder Totem/0 32.18,41.74
 	|poiquest 44352
 	|poiitem 138783
 	|poicurrency OR
 	click Treasure Chest##251751 |q 44352 |future |goto Thunder Totem/0 32.18,41.74
-step
+	|tip It's in the canoe.
+step //130
 	|poi_treasure Treasure Chest
 	|poispot Thunder Totem/0 32.03,38.27
 	|poiquest 40471
@@ -1081,14 +1097,14 @@ step
 	|poicurrency OR
 	Enter the underwater cave |goto Thunder Totem/0 32.01,45.25 < 5 |walk
 	click Treasure Chest##251751 |q 40471 |future |goto Thunder Totem/0 32.03,38.27
-step
+step //131
 	|poi_treasure Small Treasure Chest
 	|poispot Thunder Totem/0 13.68,55.41
 	|poiquest 40491
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 40491 |future |goto Thunder Totem/0 13.68,55.41
-step
+step //132
 	|poi_treasure Small Treasure Chest
 	|poispot Thunder Totem/0 50.66,75.30
 	|poiquest 40472
@@ -1096,7 +1112,7 @@ step
 	|poiitem 138783
 	Cross the bridge |goto Thunder Totem/0 57.77,67.65 < 10
 	click Small Treasure Chest##233107 |q 40472 |future |goto Thunder Totem/0 50.66,75.30
-step //135
+step //133
 	|poi_treasure Thunder Totem Stolen Goods
 	|poispot Highmountain 49.20,49.78
 	|poiquest 40475
@@ -1107,7 +1123,7 @@ step //135
 	click Thunder Totem Stolen Goods##244473 |q 40475 |future |goto Highmountain 49.20,49.78
 	|tip You must have the BeastMaster Pao'lek quest in your log or have already completed it to get this treasure.
 	only if havequest(39784) or completedq(39784)
-step
+step //134
 	|poi_treasure Neltharion's Vault Treasure Chest
 	|poispot Highmountain/29 40.63,50.23
 	|poiquest 40509
@@ -1116,7 +1132,7 @@ step
 	Go to the Path of Huln |goto Highmountain/0 47.59,84.22 < 10
 	Enter Neltharion's Vault |goto Highmountain/30 45.59,15.89 < 10
 	click Treasure Chest##251751 |q 40509 |future |goto Highmountain/29 40.63,50.23
-step
+step //135
 	|poi_treasure Neltharion's Vault Small Treasure Chest
 	|poispot Highmountain/29 60.45,54.53
 	|poiquest 40508
@@ -1126,15 +1142,15 @@ step
 	Enter Neltharion's Vault |goto Highmountain/30 45.59,15.89 < 10
 	click Small Treasure Chest##233107 |q 40508 |future |goto Highmountain/29 60.45,54.53
 --//Stormheim\\--
-step
+step //136
 	|poi_treasure Treasure Chest
 	|poispot Stormheim 35.72,54.07
 	|poiquest 38677
 	|poiitem 138783
 	|poicurrency OR
 	click Treasure Chest##251751 |q 38677 |future |goto Stormheim 35.72,54.07
-	|tip It is in the water, underneath the wrecked ship.
-step
+	|tip It on the rail of the wrecked ship.
+step //137
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 31.10,56.00
 	|poiquest 38676
@@ -1143,7 +1159,7 @@ step
 	Cross the bridge |goto Stormheim/0 31.72,54.78 < 10
 	click Small Treasure Chest##233107 |q 38676 |future |goto Stormheim 31.10,56.00
 	|tip It is on the first floor of the wrecked ship.
-step //140
+step //138
 	|poi_treasure Treasure Chest
 	|poispot Stormheim 27.33,57.49
 	|poiquest 38529
@@ -1153,18 +1169,17 @@ step //140
 	Enter the cave |goto Stormheim 31.4,57.1 < 10 |walk
 	Follow the path around |goto Stormheim/9 28.79,33.52 < 10 |walk
 	click Treasure Chest##251751 |q 38529 |future |goto Stormheim/9 20.04,41.07
-step
+step //139
 	|poi_treasure Treasure Chest
 	|poispot Stormheim 32.05,47.19
 	|poiquest 43196
 	|poiitem 138783
 	|poicurrency OR
-	Follow the path |goto Stormheim/0 35.26,47.09 < 10
-	Go up the hill |goto 34.72,45.74 < 10
+	Go up the hill |goto Stormheim/0 34.72,45.74 < 10
 	Continue up the path |goto 33.31,47.62 < 10
 	Enter the cave |goto 32.75,47.96 < 10 |walk
 	click Treasure Chest##251751 |q 43196 |future |goto Stormheim 32.05,47.19
-step
+step //140
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 41.74,46.04
 	|poiquest 38488
@@ -1172,7 +1187,7 @@ step
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 38488 |future |goto Stormheim 41.74,46.04
 	|tip It is inside the tent.
-step
+step //141
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 50.31,41.00
 	|poiquest 38483
@@ -1180,14 +1195,14 @@ step
 	|poiitem 138783
 	Enter the cave |goto Stormheim/0 50.10,42.26 < 10 |walk
 	click Small Treasure Chest##233107 |q 38483 |future |goto Stormheim 50.31,41.00
-step
+step //142
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 48.13,74.21
 	|poiquest 38476
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 38476 |future |goto Stormheim 48.13,74.21
-step //145
+step //143
 	|poi_treasure Treasure Chest
 	|poispot Stormheim 42.61,65.79
 	|poiquest 38474
@@ -1195,7 +1210,7 @@ step //145
 	|poicurrency OR
 	click Treasure Chest##251751 |q 38474 |future |goto Stormheim 42.61,65.79
 	|tip It is inside the building here.
-step
+step //144
 	|poi_treasure Treasure Chest
 	|poispot Stormheim 46.76,80.40
 	|poiquest 38481
@@ -1209,7 +1224,7 @@ step
 	Grapple to the second rock |goto 46.91,80.39 < 5
 	click Treasure Chest##251751 |q 38481 |future |goto Stormheim 46.76,80.40
 	|tip It is up on a high rock ledge.
-step
+step //145
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 61.40,44.40
 	|poiquest 40093
@@ -1217,28 +1232,32 @@ step
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 40093 |future |goto Stormheim 61.40,44.40
 	|tip It is behind the house.
-step
+step //146
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 60.83,42.73
 	|poiquest 40094
 	|poicurrency OR
 	|poiitem 138783
+	click Grapple Point
 	click Small Treasure Chest##233107 |q 40094 |future |goto Stormheim 60.83,42.73
-step
+	|tip It's on the beam just behind the hook.
+step //147
 	|poi_treasure Treasure Chest
 	|poispot Stormheim 55.00,47.16
 	|poiquest 40095
 	|poiitem 138783
 	|poicurrency OR
 	click Treasure Chest##251751 |q 40095 |future |goto Stormheim 55.00,47.16
-step //150
+	|tip It's under the water in the ship wreckage.
+step //148
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 67.93,57.74
 	|poiquest 40083
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 40083 |future |goto Stormheim 67.93,57.74
-step
+	|tip It's inside the building
+step //149
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 69.14,44.78
 	|poiquest 38637
@@ -1247,21 +1266,22 @@ step
 	click Grapple Point
 	Grapple up the rock |goto Stormheim/0 69.34,44.96 < 5
 	click Small Treasure Chest##233107 |q 38637 |future |goto Stormheim 69.14,44.78
-step
+step //150
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 73.33,41.50
 	|poiquest 40085
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 40085 |future |goto Stormheim 73.33,41.50
-step
+step //151
 	|poi_treasure Treasure Chest
 	|poispot Stormheim 61.83,62.89
 	|poiquest 40089
 	|poiitem 138783
 	|poicurrency OR
 	click Treasure Chest##251751 |q 40089 |future |goto Stormheim 61.83,62.89
-step
+	|tip It's inside the building.
+step //152
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 57.94,63.34
 	|poiquest 40090
@@ -1269,7 +1289,7 @@ step
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 40090 |future |goto Stormheim 57.94,63.34
 	|tip It is under the table.
-step //155
+step //153
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 49.77,78.01
 	|poiquest 38485
@@ -1279,14 +1299,14 @@ step //155
 	click Grapple Point
 	Grapple to the ledge |goto Stormheim/0 49.78,77.85 < 5
 	click Small Treasure Chest##233107 |q 38485 |future |goto Stormheim 49.77,78.01
-step
+step //154
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 65.36,43.10
 	|poiquest 43205
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 43205 |future |goto Stormheim 65.36,43.10
-step
+step //155
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 52.01,80.58
 	|poiquest 38480
@@ -1296,14 +1316,14 @@ step
 	Follow the rock path |goto 53.54,83.37 < 10
 	Pass through the gap here |goto 53.01,82.18 < 10
 	click Small Treasure Chest##233107 |q 38480 |future |goto Stormheim 52.01,80.58
-step
+step //156
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 72.13,54.89
 	|poiquest 42628
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 42628 |future |goto Stormheim 72.13,54.89
-step
+step //157
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 65.58,57.37
 	|poiquest 43187
@@ -1311,16 +1331,17 @@ step
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 43187 |future |goto Stormheim 65.58,57.37
 	|tip It is on the table inside the tent.
-step //160
+step //158
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 62.66,73.62
 	|poiquest 40091
 	|poicurrency OR
 	|poiitem 138783
-	Enter the tower |goto Stormheim/0 62.36,73.59 < 5 |walk
+	Follow the path up |goto Stormheim/0 60.93,71.99 < 15 |only if walking
+	Enter the tower |goto 62.36,73.59 < 5 |walk
 	click Small Treasure Chest##233107 |q 40091 |future |goto Stormheim 62.66,73.62
 	|tip It is at the very top of the tower.
-step
+step //159
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 39.57,19.34
 	|poiquest 38498
@@ -1328,29 +1349,31 @@ step
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 38498 |future |goto Stormheim 39.57,19.34
 	|tip It is under the stairs on the deck of the ship.
-step
+step //160
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 35.92,47.92
 	|poiquest 38680
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 38680 |future |goto Stormheim 35.92,47.92
-step
+step //161
 	|poi_treasure Treasure Chest
 	|poispot Stormheim 33.14,36.07
 	|poiquest 38495
 	|poiitem 138783
 	|poicurrency OR
+	Follow the path |goto Stormheim/0 35.52,38.40 < 25 |only if walking
 	click Treasure Chest##251751 |q 38495 |future |goto Stormheim 33.14,36.07
-step
+step //162
 	|poi_treasure Treasure Chest
 	|poispot Stormheim 35.03,36.60
 	|poiquest 38487
 	|poiitem 138783
 	|poicurrency OR
+	Follow the path |goto Stormheim/0 36.29,34.58 < 10 |only if walking
 	Enter the cave |goto Stormheim/0 34.81,34.29 < 10 |walk
 	click Treasure Chest##251751 |q 38487 |future |goto Stormheim 35.03,36.60
-step //165
+step //163
 	|poi_treasure Treasure Chest
 	|poispot Stormheim 32.74,27.91
 	|poiquest 38490
@@ -1358,7 +1381,7 @@ step //165
 	|poicurrency OR
 	Enter the cave |goto Stormheim 33.65,27.35 < 10 |walk
 	click Treasure Chest##251751 |q 38490 |future |goto Stormheim 32.74,27.91
-step
+step //164
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 43.16,40.49
 	|poiquest 43238
@@ -1369,7 +1392,7 @@ step
 	click Grapple Point
 	Grapple to the rock ledge |goto 43.23,40.51 < 5
 	click Small Treasure Chest##233107 |q 43238 |future |goto Stormheim 43.16,40.49
-step
+step //165
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 44.98,38.23
 	|poiquest 43240
@@ -1379,7 +1402,7 @@ step
 	Grapple to the first rock |goto Stormheim/0 44.26,37.94 < 5
 	Grapple up to the second rock |goto 44.80,37.91 < 5
 	click Small Treasure Chest##233107 |q 43240 |future |goto Stormheim 44.98,38.23
-step
+step //166
 	|poi_treasure Small Treasure Chest
 	|poiaccess Completionist
 	|poispot Stormheim 47.46,34.12
@@ -1393,7 +1416,7 @@ step
 	Grapple up the third rock |goto 46.49,34.09 < 5
 	Grapple across |goto 47.40,34.08 < 5
 	click Treasure Chest##3365 |q 43255 |future |goto Stormheim 47.46,34.12
-step
+step //167
 	|poi_treasure Treasure Chest
 	|poispot Stormheim 42.47,34.07
 	|poiquest 43189
@@ -1403,21 +1426,23 @@ step
 	Enter the statue |goto Stormheim 42.24,34.87 < 5
 	Go up the tower |goto Stormheim/0 42.65,33.66 < 5
 	click Glimmering Treasure Chest##3365 |q 43189 |future |goto Stormheim 42.47,34.07
-step //170
+step //168
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 37.18,38.65
 	|poiquest 43208
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 43208 |future |goto Stormheim 37.18,38.65
-step
+	|tip The chest is between the rocks.
+step //169
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 61.95,32.25
 	|poiquest 38744
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 38744 |future |goto Stormheim 61.95,32.25
-step
+	|tip It's against the rocks next to the wrecked ship.
+step //170
 	|poi_treasure Treasure Chest
 	|poiaccess Completionist
 	|poispot Stormheim 68.46,29.59
@@ -1431,7 +1456,7 @@ step
 	Grapple to the second rock |goto 69.43,23.08 < 5
 	Carefully cross the small bridge |goto Stormheim/0 68.72,29.24 < 5
 	click Glimmering Treasure Chest##3365 |q 40108 |future |goto Stormheim 68.46,29.59
-step
+step //171
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 58.04,47.51
 	|poiquest 40082
@@ -1440,7 +1465,7 @@ step
 	Enter the tower |goto Stormheim/0 58.16,47.55 < 5
 	click Small Treasure Chest##233107 |q 40082 |future |goto Stormheim 58.04,47.51
 	|tip It is at the top of the tower.
-step
+step //172
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 64.29,39.56
 	|poiquest 43302
@@ -1448,7 +1473,7 @@ step
 	|poiitem 138783
 	Follow the narrow path |goto Stormheim/0 64.22,41.63 < 5
 	click Small Treasure Chest##233107 |q 43302 |future |goto Stormheim 64.29,39.56
-step //175
+step //173
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 68.97,41.83
 	|poiquest 40086
@@ -1456,7 +1481,8 @@ step //175
 	|poiitem 138783
 	Enter the crypt |goto Stormheim/0 69.96,42.66 < 5 |walk
 	click Small Treasure Chest##233107 |q 40086 |future |goto Stormheim 68.97,41.83
-step
+	|tip It's behind the pillar in the corner of the room.
+step //174
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 74.41,41.82
 	|poiquest 43306
@@ -1464,7 +1490,7 @@ step
 	|poiitem 138783
 	click Grapple Point |goto Stormheim/0 74.12,42.43 < 5
 	click Small Treasure Chest##233107 |q 43306 |future |goto Stormheim 74.41,41.82
-step
+step //175
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 71.92,44.25
 	|poiquest 43305
@@ -1473,7 +1499,7 @@ step
 	click Grapple Point |goto Stormheim/0 72.24,43.75 < 5
 	Grapple to the second point |goto 71.91,44.07 < 5
 	click Small Treasure Chest##233107 |q 43305 |future |goto Stormheim 71.92,44.25
-step
+step //176
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 73.15,45.70
 	|poiquest 43194
@@ -1481,7 +1507,7 @@ step
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 43194 |future |goto Stormheim 73.15,45.70
 	|tip It is inside the house.
-step
+step //177
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 73.96,52.23
 	|poiquest 42632
@@ -1491,7 +1517,7 @@ step
 	|tip It is up on the rock.
 	Grapple to the next rock |goto 73.97,52.17 < 5
 	click Small Treasure Chest##233107 |q 42632 |future |goto Stormheim 73.96,52.23
-step //180
+step //178
 	|poi_treasure Treasure Chest
 	|poispot Stormheim 75.16,49.49
 	|poiquest 42629
@@ -1501,14 +1527,14 @@ step //180
 	Grapple to the top of the mast |goto Stormheim/0 75.18,49.52 < 5
 	|tip It is all the way at the top of the sail.
 	click Treasure Chest##251751 |q 42629 |future |goto Stormheim 75.16,49.49
-step
+step //179
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 73.97,58.58
 	|poiquest 43237
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 43237 |future |goto Stormheim 73.97,58.58
-step
+step //180
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 75.67,60.60
 	|poiquest 43304
@@ -1516,21 +1542,23 @@ step
 	|poiitem 138783
 	click Grapple Point |goto Stormheim/0 75.59,60.56 < 5
 	click Small Treasure Chest##233107 |q 43304 |future |goto Stormheim 75.67,60.60
-step
+step //181
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 82.40,54.51
 	|poiquest 43191
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 43191 |future |goto Stormheim 82.40,54.51
-step
+step //182
 	|poi_treasure Treasure Chest
 	|poispot Stormheim 81.87,67.50
 	|poiquest 40099
 	|poiitem 138783
 	|poicurrency OR
+	Follow the path |goto Stormheim/0 80.98,63.92 < 25 |only if walking
+	Follow the path |goto 80.30,66.79 < 25 |only if walking
 	click Treasure Chest##251751 |q 40099 |future |goto Stormheim 81.87,67.50
-step //185
+step //183
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 69.98,67.19
 	|poiquest 43188
@@ -1538,7 +1566,7 @@ step //185
 	|poiitem 138783
 	Cross the bridge |goto Stormheim/0 64.34,60.37 < 10
 	click Small Treasure Chest##233107 |q 43188 |future |goto Stormheim 69.98,67.19
-step
+step //184
 	|poi_treasure Treasure Chest
 	|poispot Stormheim 59.30,58.46
 	|poiquest 40088
@@ -1546,7 +1574,7 @@ step
 	|poicurrency OR
 	Enter the tower |goto Stormheim/0 59.46,58.77 < 10 |walk
 	click Treasure Chest##251751 |q 40088 |future |goto Stormheim 59.30,58.46
-step
+step //185
 	|poi_treasure Treasure Chest
 	|poiaccess Completionist
 	|poispot Stormheim 78.42,71.38
@@ -1562,7 +1590,7 @@ step
 	Run up the rocks |goto 77.75,69.86 < 5
 	click Grapple Point |goto 78.57,70.33 < 5
 	click Treasure Chest##251751 |q 43307 |future |goto Stormheim 78.42,71.38
-step
+step //186
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 50.55,41.25
 	|poiquest 43246
@@ -1573,14 +1601,14 @@ step
 	click Grapple Point |goto 50.14,40.77 < 5
 	click Grapple Point |goto 50.43,41.25 < 5
 	click Small Treasure Chest##233107 |q 43246 |future |goto Stormheim 50.55,41.25
-step
+step //187
 	|poi_treasure Treasure Chest
 	|poispot Stormheim 39.48,65.18
 	|poiquest 38486
 	|poiitem 138783
 	|poicurrency OR
 	click Treasure Chest##251751 |q 38486 |future |goto Stormheim 39.48,65.18
-step //190
+step //188
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 35.17,68.98
 	|poiquest 38478
@@ -1590,7 +1618,7 @@ step //190
 	Go up the ramps |goto Stormheim/0 34.84,68.94 < 5 |walk
 	click Small Treasure Chest##233107 |q 38478 |future |goto Stormheim 35.17,68.98
 	|tip It is at the top of the tower.
-step
+step //189
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 40.65,68.52
 	|poiquest 38475
@@ -1599,7 +1627,7 @@ step
 	click Grapple Point |goto Stormheim/0 39.73,67.42 < 5
 	click Grapple Point |goto 40.32,67.84 < 5
 	click Small Treasure Chest##233107 |q 38475 |future |goto Stormheim 40.65,68.52
-step
+step //190
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 44.16,69.97
 	|poiquest 38489
@@ -1608,7 +1636,7 @@ step
 	click Grapple Point |goto Stormheim/0 44.00,70.12 < 5
 	|tip It is on top of this building.
 	click Small Treasure Chest##233107 |q 38489 |future |goto Stormheim 44.16,69.97
-step
+step //191
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 43.70,80.09
 	|poiquest 43239
@@ -1618,14 +1646,15 @@ step
 	click Grapple Point |goto 43.14,80.46 < 5
 	click Grapple Point |goto 43.54,80.20 < 5
 	click Small Treasure Chest##233107 |q 43239 |future |goto Stormheim 43.70,80.09
-step
+step //192
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 42.33,61.12
 	|poiquest 38477
 	|poicurrency OR
 	|poiitem 138783
+	Follow the path |goto Stormheim/0 43.19,60.04 < 20 |only if walking
 	click Small Treasure Chest##233107 |q 38477 |future |goto Stormheim 42.33,61.12
-step //195
+step //193
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 46.60,64.96
 	|poiquest 38681
@@ -1633,14 +1662,14 @@ step //195
 	|poiitem 138783
 	Enter the cave |goto Stormheim 48.16,65.24 < 10 |walk
 	click Small Treasure Chest##233107 |q 38681 |future |goto Stormheim 46.60,64.96
-step
+step //194
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 49.08,59.99
 	|poiquest 43207
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 43207 |future |goto Stormheim 49.08,59.99
-step
+step //195
 	|poi_treasure Treasure Chest
 	|poispot Stormheim 47.98,62.37
 	|poiquest 38738
@@ -1648,14 +1677,14 @@ step
 	|poicurrency OR
 	click Treasure Chest##251751 |q 38738 |future |goto Stormheim 47.98,62.37
 	|tip It is at the bottom of the large waterfall.
-step
+step //196
 	|poi_treasure Treasure Chest
 	|poispot Stormheim 50.06,18.16
 	|poiquest 43195
 	|poiitem 138783
 	|poicurrency OR
 	click Treasure Chest##251751 |q 43195 |future |goto Stormheim 50.06,18.16
-step
+step //197
 	|poi_treasure Glimmering Treasure Chest
 	|poispot Stormheim 49.69,47.31
 	|poiquest 38763
@@ -1666,22 +1695,26 @@ step
 	click Glimmering Treasure Chest##240637
 	kill Vault Keeper##93110+
 	click Glimmering Treasure Chest##240637 |q 38763 |future |goto Stormheim 49.69,47.31
-step //200
+step //198
 	|poi_treasure Small Treasure Chest
 	|poispot Stormheim 53.22,93.14
 	|poiquest 43190
 	|poicurrency OR
 	|poiitem 138783
-	click Small Treasure Chest##233107 |q 43190 |future |goto Stormheim 53.22,93.14
+	Follow the path down |goto Stormheim/0 55.67,85.89 < 25 |only if walking
+	Follow the path down |goto 59.36,86.81 < 15 |only if walking
+	Follow the path |goto 57.83,89.36 < 25 |only if walking
+	Follow the path |goto 52.74,90.48 < 25 |only if walking
+	click Small Treasure Chest##233107 |q 43190 |future |goto 53.22,93.14
 --//Suramar\\--
-step
+step //199
 	|poi_treasure Small Treasure Chest
 	|poispot Suramar 23.41,48.80
 	|poiquest 43842
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 43842 |future |goto Suramar 23.41,48.80
-step
+step //200
 	|poi_treasure Small Treasure Chest
 	|poispot Suramar 25.95,85.48
 	|poiquest 43831
@@ -1690,7 +1723,7 @@ step
 	Enter the Halls of the Eclipse |goto Suramar/0 29.01,84.85 < 10 |walk
 	Follow the path back |goto 28.33,85.26 < 10 |walk
 	click Small Treasure Chest##233107 |q 43831 |future |goto Suramar 25.95,85.48
-step
+step //201
 	|poi_treasure Shimmering Ancient Mana Cluster
 	|poispot Suramar 29.74,88.00
 	|poiquest 43748
@@ -1698,21 +1731,22 @@ step
 	Enter the Halls of the Eclipse |goto Suramar/0 29.01,84.85 < 10 |walk
 	Go down the stairs |goto 27.07,87.23 < 10 |walk
 	click Shimmering Ancient Mana Cluster##252432 |q 43748 |future |goto Suramar 29.74,88.00
-step
+step //202
 	|poi_treasure Small Treasure Chest
 	|poispot Suramar 38.13,87.12
 	|poiquest 43830
 	|poicurrency OR
 	|poiitem 138783
+	Follow the path |goto Suramar/0 40.77,78.85 < 25 |only if walking
 	click Small Treasure Chest##233107 |q 43830 |future |goto Suramar 38.13,87.12
-step //205
+step //203
 	|poi_treasure Small Treasure Chest
 	|poispot Suramar 51.50,38.59
 	|poiquest 43855
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 43855 |future |goto Suramar 51.50,38.59
-step
+step //204
 	|poi_treasure Shimmering Ancient Mana Cluster
 	|poispot Suramar 46.55,25.99
 	|poiquest 43744
@@ -1720,7 +1754,7 @@ step
 	|poicurrency AM
 	click Shimmering Ancient Mana Cluster##252432 |q 43744 |future |goto Suramar 46.55,25.99
 	|tip It is underwater at the bottom of the waterfall.
-step
+step //205
 	|poi_treasure Dusty Coffer
 	|poispot Suramar 52.73,31.30
 	|poiquest 40767
@@ -1732,7 +1766,7 @@ step
 	Go up the path |goto 51.04,29.83 < 5 |walk
 	Cross the bridge |goto 52.20,32.68 < 5 |walk
 	click Dusty Coffer##246254 |q 40767 |future |goto Suramar 52.73,31.30
-step
+step //206
 	|poi_treasure Treasure Chest
 	|poispot Suramar 44.30,22.89
 	|poiquest 43850
@@ -1740,14 +1774,14 @@ step
 	|poicurrency OR
 	Go up the path |goto Suramar/0 45.40,26.69 < 10
 	click Treasure Chest##251751 |q 43850 |future |goto Suramar 44.30,22.89
-step
+step //207
 	|poi_treasure Small Treasure Chest
 	|poispot Suramar 16.60,29.74
 	|poiquest 43846
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 43846 |future |goto Suramar 16.60,29.74
-step //210
+step //208
 	|poi_treasure Small Treasure Chest
 	|poispot Suramar 23.09,36.09
 	|poiquest 43838
@@ -1758,13 +1792,14 @@ step //210
 	Go down the stairs |goto Suramar/32 45.8,32.1 < 10 |walk
 	click Small Treasure Chest##3365 |q 43838 |future |goto Suramar/32 38.65,54.05
 	|tip It is on the bottom floor, underneath the stairs.
-step
+step //209
 	|poi_treasure Kel'danath's Manaflask
 	|poispot Suramar 21.42,54.46
 	|poiquest 42842
 	|poiitem 136269
-	click Kel'danath's Manaflask##248407 |q 42842 |future |goto Suramar 21.42,54.46
-step
+	click Kel'danath's Manaflask##248407
+	use Kel'danath's Manaflask##136269 |q 42842 |future |goto Suramar 21.42,54.46
+step //210
 	|poi_treasure Treasure Chest
 	|poispot Suramar 17.27,54.62
 	|poiquest 43844
@@ -1772,7 +1807,7 @@ step
 	|poicurrency OR
 	Go up the stairs |goto Suramar/0 16.94,54.44 < 5
 	click Treasure Chest##251751 |q 43844 |future |goto Suramar 17.27,54.62
-step
+step //211
 	|poi_treasure Glimmering Treasure Chest
 	|poispot Suramar 44.05,31.94
 	|poiquest 43856
@@ -1781,7 +1816,7 @@ step
 	Enter the cave |goto Suramar/0 42.25,29.97 < 10 |walk
 	|tip It is behind the waterfall.
 	click Glimmering Treasure Chest##240637 |q 43856 |future |goto Suramar 44.05,31.94
-step
+step //212
 	|poi_treasure Treasure Chest
 	|poiaccess Completionist
 	|poispot Suramar 29.27,16.22
@@ -1794,7 +1829,7 @@ step
 	Cross the bridge |goto 32.82,17.97 < 10
 	Enter the tower |goto 30.48,15.94 < 10 |walk
 	click Treasure Chest##251751 |q 43848 |future |goto Suramar 29.27,16.22
-step //215
+step //213
 	|poi_treasure Arcane Power Unit
 	|poiaccess Completionist
 	|poispot Suramar 35.56,12.09
@@ -1803,7 +1838,7 @@ step //215
 	Go up the stairs |goto Suramar/0 31.11,9.12 < 10
 	click Arcane Power Unit##254023
 	use Infinite Stone##140329 |q 43989 |future |goto Suramar 35.56,12.09
-step
+step //214
 	|poi_treasure Shimmering Ancient Mana Cluster
 	|poiaccess Completionist
 	|poispot Suramar 41.96,19.19
@@ -1812,7 +1847,7 @@ step
 	Go up the stairs |goto Suramar/0 31.11,9.12 < 10
 	Cross the bridge |goto Suramar/0 36.70,12.59 < 10
 	click Shimmering Ancient Mana Cluster##252432 |q 43746 |future |goto Suramar 41.96,19.19
-step
+step //215
 	|poi_treasure Glimmering Treasure Chest
 	|poiaccess Completionist
 	|poispot Suramar 42.48,20.48
@@ -1825,7 +1860,7 @@ step
 	Go up the path |goto 41.57,21.22 < 5
 	Jump up here |goto 42.35,20.93 < 5
 	click Glimmering Treasure Chest##240637 |q 43849 |future |goto Suramar 42.48,20.48
-step
+step //216
 	|poi_treasure Small Treasure Chest
 	|poispot Suramar 26.83,16.96
 	|poiquest 43847
@@ -1833,27 +1868,29 @@ step
 	|poiitem 138783
 	Enter the Lower Gardens |goto Suramar/0 27.84,20.51 < 10
 	click Small Treasure Chest##233107 |q 43847 |future |goto Suramar 26.83,16.96
-step
+step //217
 	|poi_treasure Small Treasure Chest
 	|poispot Suramar 48.14,33.99
 	|poiquest 43853
 	|poicurrency OR
 	Enter the building |goto Suramar/0 48.20,34.67 < 10 |walk
 	click Small Treasure Chest##233107 |q 43853 |future |goto Suramar 48.14,33.99
-step //220
+step //218
 	|poi_treasure Treasure Chest
 	|poispot Suramar 67.31,55.11
 	|poiquest 43858
 	|poiitem 138783
 	|poicurrency OR
 	click Treasure Chest##251751 |q 43858 |future |goto Suramar 67.31,55.11
-step
+	|tip It's inside the little building.
+step //219
 	|poi_treasure Shimmering Ancient Mana Cluster
 	|poispot Suramar 79.64,72.89
 	|poiquest 43741
 	|poiitem 141655
 	click Shimmering Ancient Mana Cluster##252432 |q 43741 |future |goto Suramar 79.64,72.89
-step
+	|tip It's underwater on the ocean floor.
+step //220
 	|poi_treasure Treasure Chest
 	|poispot Suramar 83.12,69.33
 	|poiquest 43863
@@ -1861,14 +1898,14 @@ step
 	|poicurrency OR
 	Enter the cave |goto Suramar/0 82.85,67.85 < 10 |walk
 	click Treasure Chest##251751 |q 43863 |future |goto Suramar 83.12,69.33
-step
+step //221
 	|poi_treasure Treasure Chest
 	|poispot Suramar 83.97,57.64
 	|poiquest 43862
 	|poiitem 138783
 	|poicurrency OR
 	click Treasure Chest##251751 |q 43862 |future |goto Suramar 83.97,57.64
-step
+step //222
 	|poi_treasure Treasure Chest
 	|poispot Suramar 61.36,55.50
 	|poiquest 43872
@@ -1876,7 +1913,7 @@ step
 	|poicurrency OR
 	Enter the building |goto Suramar/0 61.16,55.50 < 5 |walk
 	click Treasure Chest##251751 |q 43872 |future |goto Suramar 61.36,55.50
-step //225
+step //223
 	|poi_treasure Treasure Chest
 	|poispot Suramar 54.32,60.33
 	|poiquest 43875
@@ -1884,7 +1921,7 @@ step //225
 	|poicurrency OR
 	click Treasure Chest##251751 |q 43875 |future |goto Suramar 54.32,60.33
 	|tip It is by the canal behind the buildings.
-step
+step //224
 	|poi_treasure Treasure Chest
 	|poispot Suramar 57.68,61.97
 	|poiquest 43874
@@ -1892,14 +1929,14 @@ step
 	|poicurrency OR
 	Enter the building |goto Suramar/0 57.76,62.40 < 10 |walk
 	click Treasure Chest##251751 |q 43874 |future |goto Suramar 57.68,61.97
-step
+step //225
 	|poi_treasure Treasure Chest
 	|poispot Suramar 57.32,60.39
 	|poiquest 43873
 	|poiitem 138783
 	Go up the stairs |goto Suramar/0 56.86,57.85 < 10
 	click Treasure Chest##251751 |q 43873 |future |goto Suramar 57.32,60.39
-step
+step //226
 	|poi_treasure Glimmering Treasure Chest
 	|poispot Suramar 60.35,68.51
 	|poiquest 43876
@@ -1909,7 +1946,7 @@ step
 	kill Imperial Arcbinder##108188
 	|tip The chest is guarded by a level 100 Elite.
 	click Glimmering Treasure Chest##240637 |q 43876 |future |goto Suramar 60.35,68.51
-step
+step //227
 	|poi_treasure Small Treasure Chest
 	|poispot Suramar 49.98,84.93
 	|poiquest 43864
@@ -1919,7 +1956,7 @@ step
 	click Grapple Point |goto Suramar 50.06,84.46 < 5
 	|tip It is up on top of the building.
 	click Small Treasure Chest##233107 |q 43864 |future |goto Suramar 49.98,84.93
-step //230
+step //228
 	|poi_treasure Small Treasure Chest
 	|poispot Suramar 48.11,73.21
 	|poiquest 43865
@@ -1928,7 +1965,7 @@ step //230
 	click Grapple Point |goto Suramar/0 48.50,73.27 < 5
 	|tip It is up on top of the building.
 	click Small Treasure Chest##233107 |q 43865 |future |goto Suramar 48.11,73.21
-step
+step //229
 	|poi_treasure Small Treasure Chest
 	|poispot Suramar 48.28,82.61
 	|poiquest 43866
@@ -1938,7 +1975,7 @@ step
 	click Grapple Point |goto Suramar 48.39,82.23 < 5
 	|tip It is up on top of the building.
 	click Small Treasure Chest##233107 |q 43866 |future |goto Suramar 48.28,82.61
-step
+step //230
 	|poi_treasure Treasure Chest
 	|poispot Suramar 48.95,73.79
 	|poiquest 43867
@@ -1947,7 +1984,7 @@ step
 	Enter the building |goto Suramar/0 48.72,73.92 < 5 |walk
 	Go up the right staircase |goto 48.88,74.08 < 5 |walk
 	click Treasure Chest##251751 |q 43867 |future |goto Suramar 48.95,73.79
-step
+step //231
 	|poi_treasure Treasure Chest
 	|poispot Suramar 51.90,82.14
 	|poiquest 43868
@@ -1955,7 +1992,8 @@ step
 	|poicurrency OR
 	|poicurrency AM
 	click Treasure Chest##251751 |q 43868 |future |goto Suramar 51.90,82.14
-step
+	|tip It's on the boat.
+step //232
 	|poi_treasure Small Treasure Chest
 	|poispot Suramar 44.38,75.87
 	|poiquest 43869
@@ -1963,7 +2001,7 @@ step
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 43869 |future |goto Suramar 44.38,75.87
 	|tip It has multiple Elite enemies around it.
-step //235
+step //233
 	|poi_treasure Small Treasure Chest
 	|poispot Suramar 42.57,76.68
 	|poiquest 43870
@@ -1973,7 +2011,7 @@ step //235
 	Enter the building |goto 42.45,76.48 < 5 |walk
 	Go up the stairs |goto 42.64,76.92 < 5 |walk
 	click Small Treasure Chest##233107 |q 43870 |future |goto Suramar 42.57,76.68
-step
+step //234
 	|poi_treasure Treasure Chest
 	|poispot Suramar 48.58,72.17
 	|poiquest 44323
@@ -1983,7 +2021,7 @@ step
 	Enter the building |goto Suramar/0 48.22,72.19 < 5 |walk
 	Go upstairs |goto 48.42,71.97 < 5 |walk
 	click Treasure Chest##251751 |q 44323 |future |goto Suramar 48.58,72.17
-step
+step //235
 	|poi_treasure Treasure Chest
 	|poispot Suramar 50.06,80.61
 	|poiquest 44325
@@ -1993,7 +2031,7 @@ step
 	Enter the building |goto Suramar/0 50.29,80.28 < 5 |walk
 	Go upstairs |goto 50.32,80.57 < 5 |walk
 	click Treasure Chest##251751 |q 44325 |future |goto Suramar 50.06,80.61
-step
+step //236
 	|poi_treasure Treasure Chest
 	|poispot Suramar 48.29,71.21
 	|poiquest 44324
@@ -2001,11 +2039,9 @@ step
 	|poicurrency OR
 	|poicurrency AM
 	Enter the building |goto Suramar/0 48.23,71.38 < 5 |walk
-	Jump onto the bookcase |goto Suramar/0 48.30,71.14 < 5 |walk
-	Zoom your camera out
-	|tip Zoom out and you can click the chest through the floor.
-	click Treasure Chest##251751 |q 44324 |future |goto Suramar 48.29,71.21
-step
+	click Treasure Chest##251751 |q 44324 |future |goto 48.53,71.61
+	|tip Go up the steps on the right side.
+step //237
 	|poi_treasure Small Treasure Chest
 	|poiaccess Completionist
 	|poispot Suramar 55.68,54.80
@@ -2015,20 +2051,21 @@ step
 	Go up the stairs |goto Suramar/0 53.77,52.13 < 5
 	Cross the bridges |goto 49.97,53.78 < 10
 	click Small Treasure Chest##233107 |q 43871 |future |goto Suramar 55.68,54.80
-step //240
+step //238
 	|poi_treasure Small Treasure Chest
 	|poispot Suramar 31.95,62.49
 	|poiquest 43831
 	|poicurrency OR
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 43831 |future |goto Suramar 31.95,62.49
-step
-	|poi_treasure Enchanted Burial Urn
-	|poispot Suramar 44.80,31.00
-	|poiquest 43986
-	|poiitem 140326
-	click Enchanted Burial Urn##254006 |q 43986 |future |goto Suramar 44.80,31.00
-step
+	|tip It's on the far side of the fel pool.
+--step
+--	|poi_treasure Enchanted Burial Urn
+--	|poispot Suramar 44.80,31.00
+--	|poiquest 43986
+--	|poiitem 140326
+--	click Enchanted Burial Urn##254006 |q 43986 |future |goto Suramar 44.80,31.00
+step //239
 	|poi_treasure Kyrtos's Research Notes
 	|poispot Suramar 26.87,70.73
 	|poiquest 43987
@@ -2037,7 +2074,7 @@ step
 	Enter the cave |goto Suramar 27.29,72.87 < 10 |walk
 	click Kyrtos's Research Notes##254008
 	use Kyrtos's Research Notes##140327 |q 43987 |future |goto Suramar 26.87,70.73
-step
+step //240
 	|poi_treasure Small Treasure Chest
 	|poispot Suramar 76.87,61.50
 	|poiquest 43860
@@ -2045,7 +2082,7 @@ step
 	|poiitem 138783
 	click Small Treasure Chest##233107 |q 43860 |future |goto Suramar 76.87,61.50
 	|tip It is on the seafloor in a wrecked ship.
-step
+step //241
 	|poi_treasure Small Treasure Chest
 	|poispot Suramar 71.46,49.75
 	|poiquest 43859
@@ -2054,14 +2091,14 @@ step
 	Enter the tower |goto Suramar/0 71.54,49.76 < 10 |walk
 	Go up the stairs |goto 71.82,49.69 < 5 |walk
 	click Small Treasure Chest##233107 |q 43859 |future |goto Suramar 71.46,49.75
-step //245
-	|poi_treasure Small Treasure Chest
-	|poispot Suramar 52.29,29.90
-	|poiquest 43854
-	|poicurrency OR
-	|poiitem 138783
-	click Small Treasure Chest##233107 |q 43854 |future |goto Suramar 52.29,29.90
-step
+--step
+--	|poi_treasure Small Treasure Chest
+--	|poispot Suramar 52.29,29.90
+--	|poiquest 43854
+--	|poicurrency OR
+--	|poiitem 138783
+--	click Small Treasure Chest##233107 |q 43854 |future |goto Suramar 52.29,29.90
+step //242
 	|poi_treasure Small Treasure Chest
 	|poispot Suramar 81.96,57.45
 	|poiquest 43861
@@ -2069,14 +2106,15 @@ step
 	|poiitem 138783
 	Enter the underwater cave |goto Suramar 79.3,57.4 < 10 |walk
 	click Small Treasure Chest##233107 |q 43861 |future |goto Suramar 81.96,57.45
-step
+step //243
 	|poi_treasure Small Treasure Chest
 	|poispot Suramar 63.65,49.11
 	|poiquest 43857
 	|poicurrency OR
 	|poiitem 138783
-	click Small Treasure Chest##233107 |q 43857 |future |goto Suramar 63.65,49.11
-step
+	Enter the cave |goto Suramar/0 63.52,49.08 < 5 |only if walking
+	click Small Treasure Chest##233107 |q 43857 |future |goto 63.03,49.12
+step //244
 	|poi_treasure Small Treasure Chest
 	|poispot Suramar 19.79,16.04
 	|poiquest 43845
@@ -2085,7 +2123,7 @@ step
 	Enter the cave |goto Suramar 19.4,19.4 < 10 |walk
 	Jump up the rocks |goto Suramar/0 19.70,16.26 < 5 |walk
 	click Small Treasure Chest##233107 |q 43845 |future |goto Suramar 19.79,16.04
-step
+step //245
 	|poi_treasure Treasure Chest
 	|poispot Suramar 32.27,77.08
 	|poiquest 43834
@@ -2094,14 +2132,15 @@ step
 	click Legion Portal |goto Suramar 31.0,85.1 < 5 |walk
 	click Treasure Chest##251751 |q 43834 |future |goto Suramar 32.27,77.08
 	only if completedq(40412)
-step //250
+step //246
 	|poi_treasure Ancient Mana Chunk
 	|poispot Suramar 26.35,41.27
 	|poiquest 42827
 	|poicurrency AM
 	|poiitem 139890
 	click Ancient Mana Chunk##251416 |q 42827 |future |goto Suramar 26.35,41.27
-step
+	|tip Inside the building behind the rare spawn Shal'an.
+step //247
 	|poi_treasure Small Treasure Chest
 	|poispot Suramar/23 40.52,28.99
 	|poiquest 40902
@@ -2109,7 +2148,7 @@ step
 	|poiitem 138783
 	|poicurrency AM
 	click Small Treasure Chest##233107 |q 40902 |future |goto Suramar/23 40.52,28.99
-step
+step //248
 	|poi_treasure Protected Treasure Chest
 	|poispot Suramar/24 38.15,42.41
 	|poiquest 43835
@@ -2122,7 +2161,7 @@ step
 	|tip It will knock you back but if you hit the wall instead you can run through.
 	Squeeze through the second gap |goto 41.06,57.00 < 5 |walk
 	click Protected Treasure Chest##258034 |q 43835 |future |goto Suramar/24 38.15,42.41
-step
+step //249
 	|poi_treasure Shimmering Ancient Mana Cluster
 	|poispot Suramar/33 35.49,32.40
 	|poiquest 43747
@@ -2132,7 +2171,7 @@ step
 	Keep following the path |goto 42.08,65.32 < 10 |walk
 	Go down the stairs |goto 43.32,49.82 < 10 |walk
 	click Shimmering Ancient Mana Cluster |q 43747 |future |goto Suramar/33 35.49,32.40
-step
+step //250
 	|poi_treasure Small Treasure Chest
 	|poispot Suramar/33 48.63,42.65
 	|poiquest 43839
@@ -2141,13 +2180,13 @@ step
 	Jump onto the big spiderweb |goto Suramar/33 49.16,46.99 < 10 |walk
 	Follow the web and jump onto the top of the stone legde |goto 50.56,41.70 < 5 |walk
 	click Small Treasure Chest##233107 |q 43839 |future |goto Suramar/33 48.63,42.65
-step //255
+step //251
 	|poi_treasure Treasure Chest
 	|poispot Suramar 23.35,48.15
 	|poiquest 43840
 	|poiitem 138783
 	click Treasure Chest##251751 |q 43840 |future |goto Suramar 23.35,48.15
-step
+step //252
 	|poi_treasure Volatile Leyline Crystal
 	|poispot Suramar/32 35.32,52.73
 	|poiquest 43988
@@ -2157,80 +2196,87 @@ step
 	click Volatile Leyline Crystal##254009 |goto Suramar/32 35.32,52.73 < 5 |walk
 	|tip It is on the bottom of this building.
 	use Volatile Leyline Crystal##140328 |q 43988 |future |goto Suramar/32 35.32,52.73
-step--
-	|poi_treasure Glimmering Treasure Chest
-	|poispot Azsuna 69.29,48.39
-	|poiquest 37649
-	|poicurrency OR
-	|poiitem 138783
-	click Glimmering Treasure Chest##240637 |q 37649 |future |goto Azsuna 69.29,48.39
-step--
-	|poi_treasure Small Treasure Chest
-	|poispot Azsuna 45.34,66.86
-	|poiquest 42291
-	|poicurrency OR
-	|poiitem 138783
-	click Small Treasure Chest##233107 |q 42291 |future |goto Azsuna 45.34,66.86
-step--
-	|poi_treasure Glimmering Treasure Chest
-	|poispot Highmountain 53.10,23.92
-	|poiquest 40476
-	|poicurrency OR
-	|poiitem 138783
-	click Glimmering Treasure Chest##240637 |q 40476 |future |goto Highmountain 53.10,23.92
-step--
+--step
+--	|poi_treasure Glimmering Treasure Chest
+--	|poispot Azsuna 69.29,48.39
+--	|poiquest 37649
+--	|poicurrency OR
+--	|poiitem 138783
+--	click Glimmering Treasure Chest##240637 |q 37649 |future |goto Azsuna 69.29,48.39
+--step
+--	|poi_treasure Small Treasure Chest
+--	|poispot Azsuna 45.34,66.86
+--	|poiquest 42291
+--	|poicurrency OR
+--	|poiitem 138783
+--	click Small Treasure Chest##233107 |q 42291 |future |goto Azsuna 45.34,66.86
+--step
+--	|poi_treasure Glimmering Treasure Chest
+--	|poispot Highmountain 53.10,23.92
+--	|poiquest 40476
+--	|poicurrency OR
+--	|poiitem 138783
+--	click Glimmering Treasure Chest##240637 |q 40476 |future |goto Highmountain 53.10,23.92
+step //253
 	|poi_treasure Treasure Chest
-	|poispot Stormheim 79.84,24.71
+	|poispot Helheim 79.84,24.71
 	|poiquest 38510
 	|poiitem 138783
-	click Treasure Chest##251751 |q 38510 |future |goto Stormheim 79.84,24.71
-step--
+	click Treasure Chest##251751 |q 38510 |future |goto Helheim 79.84,24.71
+	|tip It's on the deck of the ship.
+step //254
 	|poi_treasure Treasure Chest
-	|poispot Stormheim 83.32,24.56
+	|poispot Helheim 83.32,24.56
 	|poiquest 38503
 	|poiitem 138783
-	click Treasure Chest##251751 |q 38503 |future |goto Stormheim 83.32,24.56
-step--
+	Follow the path |goto Helheim/0 82.15,20.33 < 5 |only if walking
+	click Treasure Chest##251751 |q 38503 |future |goto Helheim 83.32,24.56
+	|tip It's inside the sunken ship.
+step //255
 	|poi_treasure Treasure Chest
-	|poispot Stormheim 60.84,53.32
+	|poispot Helheim 60.84,53.32
 	|poiquest 38383
 	|poiitem 138783
-	click Treasure Chest##251751 |q 38383 |future |goto Stormheim 60.84,53.32
-step--
+	click Treasure Chest##251751 |q 38383 |future |goto Helheim 60.84,53.32
+step //256
 	|poi_treasure Treasure Chest
-	|poispot Stormheim 19.63,46.98
+	|poispot Helheim 19.63,46.98
 	|poiquest 38516
 	|poiitem 138783
-	click Treasure Chest##251751 |q 38516 |future |goto Stormheim 19.63,46.98
+	Follow the path |goto Helheim/0 55.41,32.04 < 25 |only if walking
+	Follow the path |goto 46.43,32.51 < 25 |only if walking
+	Follow the path |goto 35.04,48.90 < 25 |only if walking
+	Follow the path |goto 25.21,52.15 < 20 |only if walking
+	click Treasure Chest##251751 |q 38516 |future |goto Helheim/0 19.63,46.98
 --//Mardum, the Shattered Abyss\\--
-step
+step //257
 	|poi_treasure Small Treasure Chest
 	|poispot Mardum, the Shattered Abyss C/0 34.85,70.20
 	|poiquest 39970
 	|poiitem 129210
 	Enter the house |goto Mardum, the Shattered Abyss C/0 34.03,70.06 < 5 |walk
 	click Small Treasure Chest##233107 |q 39970 |future |goto Mardum, the Shattered Abyss C/0 34.85,70.20
-step
+step //258
 	|poi_treasure Small Treasure Chest
 	|poispot Mardum, the Shattered Abyss C/0 45.01,77.85
 	|poiquest 39971
 	|poiitem 129192
 	click Small Treasure Chest##233107 |q 39971 |future |goto Mardum, the Shattered Abyss C/0 45.01,77.85
-step
+step //259
 	|poi_treasure Small Treasure Chest
 	|poispot Mardum, the Shattered Abyss C/0 41.76,37.61
 	|poiquest 40759
 	|poicurrency OR
 	|poiitem 129196
 	click Small Treasure Chest##233107 |q 40759 |future |goto Mardum, the Shattered Abyss C/0 41.76,37.61
-step
+step //260
 	|poi_treasure Small Treasure Chest
 	|poispot Mardum, the Shattered Abyss C/0 51.13,50.79
 	|poiquest 40743
 	|poiitem 129210
 	click Small Treasure Chest##233107 |q 40743 |future |goto Mardum, the Shattered Abyss C/0 51.13,50.79
 	|tip Avoid the Fel bombardment.
-step
+step //261
 	|poi_treasure Small Treasure Chest
 	|poispot Mardum, the Shattered Abyss C/0 76.24,38.99
 	|poiquest 40338
@@ -2239,34 +2285,34 @@ step
 	|poiitem 129196
 	Enter the cave |goto Mardum, the Shattered Abyss C/0 77.0,41.4 < 10 |walk
 	click Small Treasure Chest##233107 |q 40338 |future |goto Mardum, the Shattered Abyss C/0 76.24,38.99
-step
+step //262
 	|poi_treasure Small Treasure Chest
 	|poispot Mardum, the Shattered Abyss C/0 82.07,50.43
 	|poiquest 40820
 	|poiitem 129196
 	Enter the cave |goto Mardum, the Shattered Abyss C/0 80.32,48.16 < 10 |walk
 	click Small Treasure Chest##233107 |q 40820 |future |goto Mardum, the Shattered Abyss C/0 82.07,50.43
-step
+step //263
 	|poi_treasure Small Treasure Chest
 	|poispot Mardum, the Shattered Abyss C/0 78.75,50.47
 	|poiquest 40274
 	|poiitem 129210
 	Enter the cave |goto Mardum, the Shattered Abyss C/0 78.30,49.99 < 10 |walk
 	click Small Treasure Chest##233107 |q 40274 |future |goto Mardum, the Shattered Abyss C/0 78.75,50.47
-step
+step //264
 	|poi_treasure Small Treasure Chest
 	|poispot Mardum, the Shattered Abyss C/0 73.49,48.92
 	|poiquest 39975
 	|poiitem 129195
 	click Small Treasure Chest##233107 |q 39975 |future |goto Mardum, the Shattered Abyss C/0 73.49,48.92
-step
+step //265
 	|poi_treasure Small Treasure Chest
 	|poispot Mardum, the Shattered Abyss C/0 42.19,49.16
 	|poiquest 40223
 	|poiitem 129210
 	Enter the cave |goto Mardum, the Shattered Abyss C/0 41.59,48.61 < 10 |walk
 	click Small Treasure Chest##233107 |q 40223 |future |goto Mardum, the Shattered Abyss C/0 42.19,49.16
-step
+step //266
 	|poi_treasure Small Treasure Chest
 	|poispot Mardum, the Shattered Abyss C/0 23.06,53.89
 	|poiquest 40797
@@ -2274,14 +2320,14 @@ step
 	|poiitem 129210
 	Enter the cave |goto Mardum, the Shattered Abyss C/0 23.58,54.23 < 10 |walk
 	click Small Treasure Chest##233107 |q 40797 |future |goto Mardum, the Shattered Abyss C/0 23.06,53.89
-step
+step //267
 	|poi_treasure Small Treasure Chest
 	|poispot Mardum, the Shattered Abyss C/0 66.92,27.67
 	|poiquest 39974
 	|poiitem 129210
 	Enter the cave |goto Mardum, the Shattered Abyss C/0 66.98,24.87 < 10 |walk
 	click Small Treasure Chest##233107 |q 39974 |future |goto Mardum, the Shattered Abyss C/0 68.08,23.68
-step
+step //268
 	|poi_treasure Small Treasure Chest
 	|poispot Mardum, the Shattered Abyss 74.28,54.53
 	|poiquest 39977
@@ -2289,7 +2335,7 @@ step
 	|poiitem 129210
 	Enter the cave |goto Mardum, the Shattered Abyss C/0 70.97,54.13 < 10 |walk
 	click Small Treasure Chest##233107 |q 39977 |future |goto Mardum, the Shattered Abyss C/0 74.28,54.53
-step
+step //269
 	|poi_treasure Small Treasure Chest
 	|poispot Mardum, the Shattered Abyss C/0 69.70,42.40
 	|poiquest 39976
@@ -2297,7 +2343,7 @@ step
 	|poiitem 129210
 	Enter the cave |goto Mardum, the Shattered Abyss C/0 70.69, 53.97 < 10 |walk
 	click Small Treasure Chest##233107 |q 39976 |future |goto Mardum, the Shattered Abyss C/0 69.70,42.40
-step
+step //270
 	|poi_treasure Small Treasure Chest
 	|poispot Mardum, the Shattered Abyss C/1 48.75,15.68
 	|poiquest 39972
@@ -2306,7 +2352,7 @@ step
 	Enter the cave |goto Mardum, the Shattered Abyss C/0 63.77,53.62 < 10 |walk
 	click Small Treasure Chest##233107 |q 39972 |future |goto Mardum, the Shattered Abyss C/1 48.75,15.68
 	|tip This cave is only accessible after you have completed the Give Me Sight Beyond Sight quest.
-step
+step //271
 	|poi_treasure Small Treasure Chest
 	|poispot Mardum, the Shattered Abyss C/1 54.91,58.28
 	|poiquest 39973
@@ -2316,7 +2362,7 @@ step
 	Follow the path up |goto Mardum, the Shattered Abyss C/1 31.57,62.60 < 10 |walk
 	click Small Treasure Chest##233107 |q 39973 |future |goto Mardum, the Shattered Abyss C/1 54.91,58.28
 	|tip This cave is only accessible after you have completed the Give Me Sight Beyond Sight quest.
-step
+step //272
 	|poi_treasure Small Treasure Chest
 	|poispot Mardum, the Shattered Abyss C/3 50.19,49.31
 	|poiquest 40772
@@ -2325,7 +2371,7 @@ step
 	Go up the path here |goto Mardum, the Shattered Abyss C/2 55.50,76.33 < 10
 	Go up the stairs in the tower |goto Mardum, the Shattered Abyss C/2 49.49,41.45 < 10 |walk
 	click Small Treasure Chest##233107 |q 40772 |future |goto Mardum, the Shattered Abyss C/3 50.19,49.31
-step
+step //273
 	|poi_treasure Small Treasure Chest
 	|poispot Vault of the Wardens/1 58.70,34.88
 	|poiquest 40909
@@ -2333,7 +2379,7 @@ step
 	|poiitem 129210
 	click Small Treasure Chest##233107 |q 40909 |future |goto Vault of the Wardens/1 58.70,34.88
 	|tip This treasure is only available after the Return to the Black Temple quest.
-step
+step //274
 	|poi_treasure Small Treasure Chest
 	|poispot Vault of the Wardens/1 47.38,54.80
 	|poiquest 38690
@@ -2341,7 +2387,7 @@ step
 	|poiitem 129210
 	click Small Treasure Chest##233107 |q 38690 |future |goto Vault of the Wardens/1 47.38,54.80
 	|tip This treasure is only available after the Return to the Black Temple quest.
-step
+step //275
 	|poi_treasure Small Treasure Chest
 	|poispot Vault of the Wardens/2 32.10,48.19
 	|poiquest 40911
@@ -2349,7 +2395,7 @@ step
 	|poiitem 129196
 	click Small Treasure Chest##233107 |q 40911 |future |goto Vault of the Wardens/2 32.10,48.19
 	|tip This treasure is only available after completing the Grand Theft Felbat quest.
-step
+step //276
 	|poi_treasure Small Treasure Chest
 	|poispot Vault of the Wardens/2 41.67,63.57
 	|poiquest 40914
@@ -2358,7 +2404,7 @@ step
 	Go through the doorway |goto Vault of the Wardens/2 45.41,63.55 < 5
 	click Small Treasure Chest##233107 |q 40914 |future |goto Vault of the Wardens/2 41.67,63.57
 	|tip This treasure is only available after completing the Grand Theft Felbat quest.
-step
+step //277
 	|poi_treasure Small Treasure Chest
 	|poispot Vault of the Wardens/2 57.02,40.25
 	|poiquest 40913
@@ -2367,7 +2413,7 @@ step
 	Go through the doorway |goto Vault of the Wardens/2 57.03,46.39 < 5
 	click Small Treasure Chest##233107 |q 40913 |future |goto Vault of the Wardens/2 57.02,40.25
 	|tip This treasure is only available after completing the Grand Theft Felbat quest.
-step
+step //278
 	|poi_treasure Small Treasure Chest
 	|poispot Vault of the Wardens/2 41.42,32.84
 	|poiquest 40912
@@ -2376,7 +2422,7 @@ step
 	Go through the doorway |goto Vault of the Wardens/2 45.16,32.86 < 5
 	click Small Treasure Chest##233107 |q 40912 |future |goto Vault of the Wardens/2 41.42,32.84
 	|tip This treasure is only available after completing the Grand Theft Felbat quest.
-step
+step //279
 	|poi_treasure Small Treasure Chest
 	|poispot Vault of the Wardens/3 24.45,10.16
 	|poiquest 40915
@@ -2384,7 +2430,7 @@ step
 	|poiitem 129210
 	click Small Treasure Chest##233107 |q 40915 |future |goto Vault of the Wardens/3 24.45,10.16
 	|tip This treasure is only available after you have the All The Way Up quest.
-step
+step //280
 	|poi_treasure Small Treasure Chest
 	|poispot Vault of the Wardens/3 23.30,81.43
 	|poiquest 40916

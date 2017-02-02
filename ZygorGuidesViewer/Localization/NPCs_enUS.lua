@@ -27108,4 +27108,13 @@ ZygorGuidesViewer_L("NPCs", "enUS", function() return {
 [114915]="Andaris Narassin|",
 [115367]="Archmage Khadgar|",
 [109735]="Alynrus Nightcast|",
+[118898]="Ulaani|",
+[118904]="Gooch Goldsprocket|",
+[68365]="Lord Winifred Browne|",
+[115797]="Tiana Nevermorn|",
+[68372]="Pit Boss Buxdoggle|",
+[68424]="Slick Bixi|",
+[119040]="Tylarr Gronnden|",
+[213209]="Steelbound Devourer|",
+[103727]="Nacea Shorewalker|",
 } end)

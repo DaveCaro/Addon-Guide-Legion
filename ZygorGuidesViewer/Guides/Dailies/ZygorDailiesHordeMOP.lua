@@ -294,9 +294,3 @@ label "end"
 You have reached the end of the guide for today.
 Click here to go back to the beginning of the dailies. |confirm |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Events Guides\\Brawler's Guild\\Brawl'gar Arena", {
-startlevel=90,
-description="This guide will help you achieve rank 10 in the Brawler's Guild.",
-},[[
-#include "H_Brawl"
-]])

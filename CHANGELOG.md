@@ -12,11 +12,43 @@ Macro Bank (Dugi's Special)
 
 Zygor Viewer Guide :
 
+-NEW FEATURES :
+
+Map Preview - Due to Blizzard disabling the ability to detect player location in dungeons the arrow now gets replaced with a map icon that when clicked will open a special version of the map that allows you to see your characters position, waypoint makers to guide locations, and ant trails for navigation. This map can be fully customized to your liking under Options / Navigation - Map Preview section.
+
+Guide Tip Sharing - You can now share the dungeon guide tips and strategies with the members of your group/party to make sure everyone knows what to do. You can so this by shift clicking individual lines or right clicking and selecting "Share this steps tips". You can also configure which channel to send tips to in the right click menu.
+
+General fixes and improvements across guides.
+
+Improvements to the Travel System for connections and hearthstone detection.
+
+Creature Detector: Fixed mounts and companion pets detection
+
+- WORLD QUESTS : 
+
+Additional world quests added.
+
+-DUNGEONS : 
+
+Ongoing updates to the Dungeon guides to make them work better with the lack of arrow and new Map Preview and Guide Tip Sharing features.
+
 - EVENTS :
 
-Lunar Festival -  Fixed a coordinate issue with the Horde Elder Guide
+Updated Brawlers Guild Guide.
 
-Lunar Festival - Updated the Elder Path
+- PETS/MOUNTS : 
+
+Updated the Mushan Beast telling players that it is no longer available to obtain.
+
+Added the new brawlers guild pet: Tylarr Gronnden
+
+Added the new Brawlers guild mount: Brawler's Burly Basilisk
+
+- BETA : 
+
+New Legion achievements added.
+
+Added the Steelbound Devourer mount
 
 DUGI GUIDE : 
 

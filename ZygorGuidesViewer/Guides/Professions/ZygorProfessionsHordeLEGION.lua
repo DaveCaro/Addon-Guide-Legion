@@ -7468,7 +7468,7 @@ step
 _Congratulations!_
 You reached level 800 with the Jewelcrafting profession.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Fishing\\Legion\\Fishing Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Profession Guides\\Fishing\\Legion\\Fishing Quest Line",{
 author="support@zygorguides.com",
 startlevel=100.0,
 },[[
@@ -7502,7 +7502,7 @@ step
 _Congratulations!_
 You completed the Fishing questline.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Fishing\\Legion\\Fishing 700-800",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Profession Guides\\Fishing\\Legion\\Fishing 700-800",{
 author="support@zygorguides.com",
 startlevel=100.0,
 },[[

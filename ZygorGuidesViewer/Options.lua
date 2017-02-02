@@ -617,7 +617,8 @@ function ZGV:Options_DefineOptionTables()
 			width="full", 
 		})
 		AddOption('showinlinetravel',{ type = 'toggle', width = "full", _default=true, })
-		AddOption('hideincombat',{ type = 'toggle', _default = false, width="full", })
+		AddOption('showallroles',{ type = 'toggle', width = "full", desc = function() return L['opt_showallroles_desc'] .. (UnitGroupRolesAssigned("Player")=="NONE" and "\n"..L['opt_showallroles_descwarnnone'] or "") end, _default=true, })
+		AddOption('hideincombat',{ type = 'toggle', width="full", _default = false, })
 
 		AddOptionSep()
 
@@ -1001,10 +1002,9 @@ function ZGV:Options_DefineOptionTables()
 				[1]="yards / miles",
 				[2]="kilometers / meters",
 			},
-			width="full", pulloutWidth="single", 
+			width="single", pulloutWidth="single", 
 		})
-		AddOptionSep()
-
+		AddOption('',{ type = 'description', name="  ", width=30})
 		AddOption('antspacing',{
 			type = 'toggle',
 			get = function() return ZGV.db.profile.antspacing==100 end,
@@ -1066,7 +1066,66 @@ function ZGV:Options_DefineOptionTables()
 			hidden=true,
 			_default = 15
 		})
-		
+
+		AddOptionSep()
+		AddOptionSpace()
+		AddOption('',{ type = 'description', name=L['opt_preview_title'], font=ZGV.font_dialog_gray})
+		AddOption('preview',     { 
+			desc = L['opt_preview_desc'],
+			type = 'toggle', 
+			width = "single", 
+			get = Getter_Simple, 
+			set = Setter_Simple, 
+			_default=true,  })
+		AddOptionSep()
+		AddOption('preview_scale',{
+			type = 'select',
+			style = 'slider',
+			values = { [0.5] = L["opt_preview_scale_small"], [0.7] = L["opt_preview_scale_normal"], [1] = L["opt_preview_scale_full"] },
+			set = function(i,v) Setter_Simple(i,v) ZGV.PointerMap:UpdateSettings() end,
+			_default = 1,
+			disabled = function() return not self.db.profile.preview end,
+			width="single", 
+			_inline=true,
+		})
+		AddOption('',{ type = 'description', name="  ", width=30})
+		AddOption('preview_alpha',{
+			type = 'select',
+			style = 'slider',
+			values = { [0.5] = L["opt_preview_alpha_low"], [0.7] = L["opt_preview_alpha_normal"], [1] = L["opt_preview_alpha_high"] },
+			set = function(i,v) Setter_Simple(i,v) ZGV.PointerMap:UpdateSettings() end,
+			_default = 0.7,
+			disabled = function() return not self.db.profile.preview end,
+			width="single", 
+			_inline=true,
+			--hidden=true,
+		})
+		AddOption('',{ type = 'description', name="  ", width=30})
+		AddOptionSep()
+		AddOption('preview_duration',{
+			type = 'select',
+			values = { [0] = L["opt_preview_duration_perm"], [3] = L["opt_preview_duration_3"], [5] = L["opt_preview_duration_5"], [10] = L["opt_preview_duration_10"] },
+			set = function(i,v) Setter_Simple(i,v) ZGV.PointerMap:UpdateSettings() end,
+			_default = 0,
+			disabled = function() return not self.db.profile.preview end,
+			width="single",
+			_inline=true,
+		})
+		AddOption('',{ type = 'description', name="  ", width=30})
+		AddOption('preview_control',{
+			type = 'select',
+			values = { 
+				manual = L["opt_preview_control_manual"], 
+				step = L["opt_preview_control_step"],
+				--stepnc = L["opt_preview_control_stepnc"],
+			},
+			set = Setter_Simple,
+			_default = "manual",
+			disabled = function() return not self.db.profile.preview end,
+			width="single",
+			_inline=true,
+		})
+
 		-- make the WHOLE group obey 'pathfinding' for visibility.
 		--for k,opt in pairs(self.optiontables['travelsystem']['args']) do if k~="pathfinding" and not opt.hidden then opt.hidden=function() return not self.db.profile.pathfinding end end end
 
@@ -1937,6 +1996,8 @@ function ZGV:Options_DefineOptionTables()
 
 		--[[hidden--]] AddOption('audiocues',{ type = 'toggle', width = "full", _default = false, hidden=true })
 		--[[hidden--]] AddOption('minimapzoom',{ type = 'toggle', width = "full", set = function(i,v) Setter_Simple(i,v)  self.Pointer:MinimapZoomChanged() end, _default = false, hidden=true, })
+
+		--[[hidden--]] AddOption('share_target',{ hidden=true, type = 'select', _default="SAY", width="single", values = {['SAY']="/say",['PARTY']="/party",['RAID']="/raid"}})
 
 		--[[  --tweaks
 			AddOptionSep()

@@ -370,6 +370,9 @@ ZygorGuidesViewer_L("Main", "enUS", function() local f = {
 
 		['opt_windowlocked'] = "Lock viewer in place",
 		['opt_windowlocked_desc'] = "Prevents the window from being dragged with the mouse.",
+		['opt_showallroles'] = "Show instructions for all roles in dungeons",
+		['opt_showallroles_desc'] = "Displays dungeon boss strategies for all roles (DPS, tank, healer), not just yours.",
+		['opt_showallroles_descwarnnone'] = "|cffffa500Note:|r |cffffdd88 You don't have a group role assigned at this moment. Switching this option now won't have any apparent effect.",
 		["opt_hideincombat"] = "Hide viewer during combat",
 		["opt_hideincombat_desc"] = "Hide all guide windows when entering combat, if your screen gets too cramped.",
 
@@ -578,6 +581,31 @@ If you're new to the guides, or have only started using them on this character, 
 		['opt_traveluseitems'] = "Use misc. items",
 		['opt_travelprefertaxi'] = "Prefer flight paths",
 		['opt_autotaxi'] = "Take flights automatically",
+
+
+		["opt_preview_title"] = "Map Preview",
+		["opt_preview"] = "Enable Map Preview",
+		["opt_preview_desc"] = "Use Map Preview in dungeons.\nDisplays a customizable map to help with navigation due to addon limitations preventing use of the waypoint arrow inside dungeons.",
+		["opt_preview_scale"] = "Scale:",
+		["opt_preview_scale_small"] = "Small", 
+		["opt_preview_scale_normal"] = "Medium", 
+		["opt_preview_scale_full"] = "Full",
+
+		["opt_preview_alpha"] = "Opacity:",
+		["opt_preview_alpha_low"] = "Low",
+		["opt_preview_alpha_normal"] = "Medium",
+		["opt_preview_alpha_high"] = "High",
+
+		["opt_preview_duration"] = "Duration:",
+		["opt_preview_duration_perm"] = "No duration",
+		["opt_preview_duration_3"] = "3s",
+		["opt_preview_duration_5"] = "5s",
+		["opt_preview_duration_10"] = "10s",
+
+		["opt_preview_control"] = "Preview control:",
+		["opt_preview_control_manual"] = "Manual",
+		["opt_preview_control_step"] = "Automatically activate on each step",
+		["opt_preview_control_stepnc"] = "Automatically activate on each step, hide in combat",
 
 		['opt_ants'] = "Animated map dots (\"ant trails\")",
 		--['opt_customcolorants'] = "Customize ant colors",		['opt_customcolorants_desc'] = "Choose your own ant colors",
@@ -999,6 +1027,14 @@ If you're new to the guides, or have only started using them on this character, 
 		['qmenu_border_restore'] = "Switch to full mode",
 		['qmenu_border_restore_desc'] = "Switch to \"Full Mode\", showing guide window controls.",
 
+		['qmenu_share_allgrouproles'] = "Share this step's tips",
+		['qmenu_shareto'] = "Share tips to:",
+		['qmenu_shareto_say'] = "/say",
+		['qmenu_shareto_party'] = "/party",
+		['qmenu_shareto_raid'] = "/raid",
+
+		['qmenu_close'] = "- Cancel -",
+
 	--["mainframe_guide"] = "Select a guide:",
 	--["mainframe_notloaded"] = "No leveling guides are loaded.|n|nPlease go to http://zygorguides.com to purchase Zygor's 1-80 Leveling Guides, or load some third-party guides.|n|nIf you're sure you have installed some guides, ask their authors for installation troubleshooting.",
 	--["mainframe_notselected"] = "%d guides are loaded.|nPlease select a guide from the list above.",
@@ -1016,8 +1052,10 @@ If you're new to the guides, or have only started using them on this character, 
 	["minimap_tooltip_ex2"] = COLOR_TIP_MOUSE.."Ctrl+Alt+Right-click|r to stop profiling|n",
 
 	["detector_mount_tooltip"] = "A Zygor Guide to obtaining this player's mount is available.",
-	["detector_pet_tooltip"] = "A Zygor Guide to obtaining this pet is available.",
+	["detector_battlepet_tooltip"] = "A Zygor Guide to obtaining this pet is available.",
+	["detector_pet_tooltip"] = "Zygor Guides for that pet family are available.",
 	["detector_tooltip_click"] = "<<Click>> to open the corresponding guide.",
+	["detector_tooltip_hunter_click"] = "<<Click>> to open the list of guides.",
 
 	["waypointaddon_set"] = "Waypointing addon selected: %s",
 	["waypointaddon_detecting"] = "Attempting to auto-detect waypointing addon...",
@@ -2029,6 +2067,8 @@ If you're new to the guides, or have only started using them on this character, 
 	loot_autobuynoroom = "Not enough room for %d stacks.",
 	loot_autobuypoor = "You do not have enough money to buy all items. |cffffdd00%s|r is needed.",
 	loot_autobuyframetext = "Would you like to buy\n%sfor\n|cffffdd00%s|r",
+
+	goalshare_brand = "Zygor Guides Dungeon Tips:",
 	
 	bugreport_header = "Uh oh....did something go wrong?",
 	bugreport_bugtype = "Select Bug Type",
@@ -2080,6 +2120,7 @@ local plurals = {
 	Honey=1,
 	Ichor=1,
 	Infantry=1,
+	Insignia=1,
 	Kingsblood=1,
 	Leather=1,
 	Lumber=1,

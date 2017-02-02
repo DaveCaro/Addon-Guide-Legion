@@ -1,5 +1,5 @@
 ## Interface: 70100
-## Title: Zygor Guides Viewer 6.1 (BETA)
+## Title: Zygor Guides Viewer 6.5 (BETA)
 ## Author: Sinus Pi for Zygor Guides
 ## DefaultState: enabled
 ## LoadOnDemand: 0
@@ -11,7 +11,7 @@
 ## X-eMail: zygor@zygorguides.com
 ## X-Website: http://zygorguides.com/
 ## X-License: GPL
-## Version: 6.1
+## Version: 6.5
 
 Libs\Libs.xml
 

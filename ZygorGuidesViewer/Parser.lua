@@ -485,7 +485,8 @@ local ConditionEnv = {
 	end,
 
 	grouprole = function(role)
-		return UnitGroupRolesAssigned("Player")==role
+		if role=="DPS" then role="DAMAGER" end
+		return ZGV.db.profile.showallroles or UnitGroupRolesAssigned("Player")=="NONE" or UnitGroupRolesAssigned("Player")==role
 	end,
 	raiddiff = function(diffname)
 		local _,_,diff = GetInstanceInfo()
@@ -1167,6 +1168,16 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 								end
 							end
 
+						elseif cmd=="grouprole" then
+							-- |grouprole DPS
+							-- |grouprole TANK or HEALER
+							local role1,role2 = params:match("([A-Z]*)\s+[oO][rR]\s+([A-Z]*)")
+							if role1 then
+								goal.grouprole,goal.grouprole2 = role1,role2
+							else
+								goal.grouprole = params
+							end
+
 						-- extra tags
 
 						elseif cmd=="next" then
@@ -1230,7 +1241,14 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 							--params = params:gsub("_(.-)_","|cffffee88%1|r")
 							-- or not, since it reverts to white.
 
-							goal.tooltip = LG[params]
+							local text = params
+
+							-- highlight _text_
+							text = text:gsub("_(.-)_","|cffffee88%1|r")
+
+							text = LG[text]
+
+							goal.tooltip = text
 
 						--elseif cmd=="image" then
 						--	goal.image = params
@@ -1597,7 +1615,6 @@ function Parser:ParseHeader(guide)
 
 		elseif cmd=="model" then
 			-- guide-wide
-			--[[
 			if not ZGV.CreatureDetector.PetMirror then
 				ZGV.CreatureDetector.PetMirror=CreateFrame("PlayerModel")
 			end
@@ -1615,8 +1632,9 @@ function Parser:ParseHeader(guide)
 					params[i]=num
 					ZGV.CreatureDetector.PetMirror:SetDisplayInfo(num)
 					local model=ZGV.CreatureDetector.PetMirror:GetDisplayInfo()
+					local file=ZGV.CreatureDetector.PetMirror:GetModelFileID()
 					if model then
-						ZGV.CreatureDetector:RegisterGuideModel(model,guide)
+						ZGV.CreatureDetector:RegisterGuideModel(model,guide,file)
 					else
 						ZGV:Debug("Unknown model "..num)
 					end
@@ -1625,7 +1643,6 @@ function Parser:ParseHeader(guide)
 			guide.model = params
 
 			ZGV.CreatureDetector.PetMirror:Hide() -- and stay low
-			--]]
 		elseif cmd=="icon" then
 			guide.icon= { texname=params, coords={ 0,1,0,1 } }
 		else

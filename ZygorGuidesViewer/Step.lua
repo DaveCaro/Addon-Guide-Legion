@@ -622,3 +622,17 @@ function Step:IsCurrentlySticky()
 	for k,v in ipairs(ZGV.CurrentStickies) do if v==self then return true end end
 	return false
 end
+
+function Step:ShareToChat(target,sharesource,brand)
+	if target=="PARTY" and not IsInGroup() then ZGV:Error(ERR_NOT_IN_GROUP) return end
+	if target=="RAID" and not IsInRaid() then ZGV:Error(ERR_NOT_IN_RAID) return end
+	local goals
+	if sharesource=="rolegoals" then
+		for i,g in ipairs(self.goals) do  if g.grouprole and g:IsVisible() then   goals=goals or {}  tinsert(goals,g)  end end
+	end
+	if not goals then return end
+	if brand and not ZGV.step_share_onceflag then  ZGV.step_share_onceflag=true  SendChatMessage(L['goalshare_brand']:format(self.parentGuide.title_short,self.num),target) end
+	for i,g in ipairs(goals) do
+		SendChatMessage(g:GetTextForSharing("withtip"),target)
+	end
+end

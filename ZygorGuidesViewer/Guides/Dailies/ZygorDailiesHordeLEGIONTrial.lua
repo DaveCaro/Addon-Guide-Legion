@@ -235,17 +235,15 @@ accept Calamitous Intent##43193 |goto Azsuna/0 56.42,67.31
 step
 kill Calamir##109331 |q 43193/1 |goto 56.42,67.31
 |tip
-|tip DPS:
-|tip Run away when Calamir casts Howling Gale.
-|tip Avoid other players when you get the Burning Bomb debuff.
-|tip
-|tip HEALER:
-|tip Dispel the Burning Bomb debuff from other players.
-|tip Avoid the Arcanopulse areas.
-|tip
-|tip TANK:
-|tip Run away when Calamir casts Howling Gale.
-|tip Avoid the Arcanopulse areas.
+_DAMAGE:_ |only if grouprole("DAMAGE")
+|tip Run away when Calamir casts Howling Gale. |only if grouprole("DAMAGE")
+|tip Avoid other players when you get the Burning Bomb debuff. |only if grouprole("DAMAGE")
+_HEALER:_ |only if grouprole("HEALER")
+|tip Dispel the Burning Bomb debuff from other players. |only if grouprole("HEALER")
+|tip Avoid the Arcanopulse areas. |only if grouprole("HEALER")
+_TANK:_ |only if grouprole("TANK")
+|tip Run away when Calamir casts Howling Gale. |only if grouprole("TANK")
+|tip Avoid the Arcanopulse areas. |only if grouprole("TANK")
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41438
@@ -598,6 +596,19 @@ click Gleaming Leystone Outcropping##195122
 collect 1 Gleaming Leystone Ore##141229 |q 41455/1 |goto 62.12,60.33
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41434
+Follow the path |goto Azsuna/0 53.86,58.73 < 25 |only if walking
+Follow the path |goto 52.00,59.91 < 25 |only if walking
+Follow the path |goto 51.28,56.16 < 25 |only if walking
+Follow the path |goto 49.42,55.46 < 25 |only if walking
+accept Glowing Leystone Deposits##41434 |goto Azsuna/18 70.94,71.58
+|tip You will accept this quest automatically.
+step
+click Glowing Leystone Deposit##195122
+|tip These can be found all around the cave.
+collect 10 Glowing Leystone Ore##141223 |q 41434/1 |goto 70.94,71.58
+|next "Court_Of_Farondis_WQ"
+step
 label quest-43804
 accept Hate the Hatecoil##43804 |goto Eye of Azshara Map/0 38.45,46.16
 |tip You will accept this quest automatically.
@@ -670,6 +681,18 @@ accept Huge Cursed Queenfish##41610 |goto 54.87,37.76
 step
 Fish from the Huge Cursed Queenfish School |cast Fishing##131474
 collect 10 Huge Cursed Queenfish##134565 |q 41610/1 |goto 54.87,37.76
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41265
+Follow the path |goto Azsuna/0 46.21,44.61 < 25 |only if walking
+Follow the path |goto 47.61,43.87 < 25 |only if walking
+Follow the path |goto 48.94,42.71 < 25 |only if walking
+Follow the path |goto 48.98,41.29 < 25 |only if walking
+accept Huge Cursed Queenfish##41265 |goto 50.98,42.05
+|tip You will accept this quest automatically.
+step
+Fish from the Huge Cursed Queenfish School |cast Fishing##131474
+collect 10 Huge Cursed Queenfish##134565 |q 41265/1 |goto 63.01,26.88
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42277
@@ -834,6 +857,16 @@ step
 Fish from Lively Cursed Queenfish Schools |cast Fishing##7620
 |tip You will find these all around the water.
 collect 10 Lively Cursed Queenfish##134564 |q 41599/1 |goto 51.14,66.02
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41264
+accept Lively Cursed Queenfish##41264 |goto Azsuna/0 63.01,26.88
+|tip You will accept this quest automatically.
+step
+Fish from Lively Cursed Queenfish Schools |cast Fishing##131474
+|tip You will find these all around the water.
+More schools can be found _here_ |goto 63.91,22.58
+collect 10 Lively Cursed Queenfish##134564 |q 41264/1 |goto 63.01,26.88
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41454
@@ -1014,6 +1047,16 @@ label "Llothien_Prowlers"
 kill 10 Llothien Prowler##90313+ |q 42123/1 |goto 54.52,29.01
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41324
+Follow the path |goto Azsuna/0 50.36,30.27 < 25 |only if walking
+accept Silky Prowler Fur##41324 |goto 54.53,29.01
+|tip You will accept this quest automatically.
+step
+kill Llothien Prowler##90313+
+|tip Skin the corpses.
+collect 12 Silky Prowler Fur##134808 |q 41324/1
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42063
 Follow the path |goto Azsuna/0 63.38,30.69 < 25 |only if walking
 Follow the path |goto 63.84,34.56 < 25 |only if walking
@@ -1157,12 +1200,11 @@ accept Terror of the Deep##43192 |goto 43.39,66.65
 |tip You will accept this quest automatically.
 step
 kill Levantus##108829 |q 43192/1 |goto 43.39,66.65
-|tip ALL:
+_TANK:_ |only if grouprole("TANK")
+|tip Stay in melee range as much as possible or Levantus will use Rampaging Torrent, causing massive raid damage. |only if grouprole("TANK")
+_EVERYONE:_
 |tip Move into the swirling tornados to gain the Waterwalking buff to move around easier.
 |tip Move around Levantus as she casts Massive Spout to avoid heavy damage.
-|tip
-|tip TANK:
-|tip Stay in melee range as much as possible or Levantus will use Rampaging Torrent, causing massive raid damage.
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42018

@@ -22026,7 +22026,7 @@ accept Ma'haat the Indomitable##42989 |goto 29.43,77.88
 stickystart "World_Quests_Shaman"
 stickystart "Return_To_The_Firelands_Shaman"
 step
-collect 10 Blood of Sargeras##124124 |c |q 42989
+collect 5 Blood of Sargeras##124124 |c |q 42989
 |tip Complete world quests and kill bosses in dungeons.
 |tip Use the "World Quests" guide to complete world quests.
 |tip Use the Dungeon guides to complete dungeons.

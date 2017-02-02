@@ -277,7 +277,8 @@ path	86.8,64.5	86.5,62.2	85.2,61.3
 path	84.5,60.3	83.4,59.9	82.6,59.8
 path	82.5,59.1	82.7,57.6	83.5,56.4
 path	82.2,53.9	81.8,50.5	81.2,48.8
-Kill and skin beasts from around the outlined area until 700 |goto Nagrand D 81.1,62.6
+Kill and skin beasts from around the outlined area |goto Nagrand D 81.1,62.6
+Reach Level 700 Skinning |skill Skinning,700 |goto Azsuna/0 32.93,18.07
 |tip Breezestrider Colts and Tenderhoof Meadowstompers cannot be skinned.
 ]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Fishing 600-700 Leveling Guide",{},[[

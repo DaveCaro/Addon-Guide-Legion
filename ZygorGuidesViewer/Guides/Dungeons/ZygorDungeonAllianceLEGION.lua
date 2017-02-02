@@ -33,80 +33,80 @@ Anub'esset |confirm |next "Anub'esset"
 step
 label "Festerface"
 kill Festerface##101995
-_DAMAGE:_
-|tip Stay behind Festerface to avoid Congealing Vomit.
-|tip Kill the Congealing Goo that spawns after Congealing Vomit.
-_HEALER:_
-|tip Group members standing near Congealing Goo will take damage every 2 seconds.
-_TANK:_
-|tip Move Festerface to a Recongealing Goo after the DPS kill it, so that he eats it.
+_DAMAGE:_ |grouprole DAMAGE
+|tip Stay behind Festerface to avoid Congealing Vomit. |grouprole DAMAGE
+|tip Kill the Congealing Goo that spawns after Congealing Vomit. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Group members standing near Congealing Goo will take damage every 2 seconds. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Move Festerface to a Recongealing Goo after the DPS kill it, so that he eats it. |grouprole TANK
 Defeat the First Escaped Prisoner |scenariostage 1 |goto Violet Hold/1 38.09,33.30 |next "First_Bosses" |only if _G.select(2,_G.C_Scenario.GetInfo())==1
 Defeat the Second Escaped Prisoner |scenariostage 2 |goto 38.09,33.30 |next "Final_Boss" |only if _G.select(2,_G.C_Scenario.GetInfo())==2
 step
 label "Shivermaw"
 kill Shivermaw##101951
-_EVERYONE:_
-|tip Move away from the center of the room and up the stairs when Shivermaw starts to cast Ice Bomb.
-_DAMAGE:_
-|tip Attack Shivermaw from the sides to avoid its Wing Buffet and Tail Sweep.
-|tip Free players from Ice Blocks if they fail to move from the center of the room during Ice Bomb.
-_HEALER:_
-|tip Large AoE heals will be needed for Ice Bomb.
-|tip If possible, remove Frost Breath from the Tank.
-_TANK:_
-|tip Face Shivermaw away from the group.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Move away from the center of the room and up the stairs when Shivermaw starts to cast Ice Bomb. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Attack Shivermaw from the sides to avoid its Wing Buffet and Tail Sweep. |grouprole DAMAGE
+|tip Free players from Ice Blocks if they fail to move from the center of the room during Ice Bomb. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Large AoE heals will be needed for Ice Bomb. |grouprole HEALER
+|tip If possible, remove Frost Breath from the Tank. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Face Shivermaw away from the group. |grouprole TANK
 Defeat the First Escaped Prisoner |scenariostage 1 |goto 62.22,62.76 |next "First_Bosses" |only if _G.select(2,_G.C_Scenario.GetInfo())==1
 Defeat the Second Escaped Prisoner |scenariostage 2 |goto 62.22,62.76 |next "Final_Boss" |only if _G.select(2,_G.C_Scenario.GetInfo())==2
 step
 label "Blood-Princess Thal'ena"
 kill Blood-Princess Thal'ena##102431
-_DAMAGE:_
-|tip Save your cooldowns for the Essence of the Blood Princess buff.
-_HEALER:_
-|tip As your group becomes infected with Essence of the Blood Princess, group members who aren't
-|tip afflicted will take more damage from Shroud of Sorrow.
-_TANK:_
-|tip Move Blood-Princess Thal'ena out of the Blood pool when she casts Blood Swarm.
+_DAMAGE:_ |grouprole DAMAGE
+|tip Save your cooldowns for the Essence of the Blood Princess buff. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip As your group becomes infected with Essence of the Blood Princess, group members who aren't  |grouprole HEALER
+|tip afflicted will take more damage from Shroud of Sorrow. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Move Blood-Princess Thal'ena out of the Blood pool when she casts Blood Swarm. |grouprole TANK
 Defeat the First Escaped Prisoner |scenariostage 1 |goto 34.16,55.11 |next "First_Bosses" |only if _G.select(2,_G.C_Scenario.GetInfo())==1
 Defeat the Second Escaped Prisoner |scenariostage 2 |goto 34.16,55.11 |next "Final_Boss" |only if _G.select(2,_G.C_Scenario.GetInfo())==2
 step
 label "Mindflayer Kaahrj"
 kill Mindflayer Kaahrj##101950
-_EVERYONE:_
-|tip Move out of Shadow Crash when you see the swirl on the ground.
-_DAMAGE:_
-|tip Kill Faceless Tendrils when they spawn from Eternal Darkness.
-_HEALER:_
-|tip The Tank will take massive damage when Mindflayer Kaahrj casts Doom.
-_TANK:_
-|tip Try to use damage mitigating abilities when Mindflayer Kaahrj casts Doom.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Move out of Shadow Crash when you see the swirl on the ground. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Kill Faceless Tendrils when they spawn from Eternal Darkness. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip The Tank will take massive damage when Mindflayer Kaahrj casts Doom. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Try to use damage mitigating abilities when Mindflayer Kaahrj casts Doom. |grouprole TANK
 Defeat the First Escaped Prisoner |scenariostage 1 |goto 68.99,46.39 |next "First_Bosses" |only if _G.select(2,_G.C_Scenario.GetInfo())==1
 Defeat the Second Escaped Prisoner |scenariostage 2 |goto 68.99,46.39 |next "Final_Boss" |only if _G.select(2,_G.C_Scenario.GetInfo())==2
 step
 label "Millificent Manastorm"
 kill Millificent Manastorm##101976
-_EVERYONE:_
-|tip Disarm Elementium Squirrel Bombs as they appear.
-_DAMAGE:_
-|tip Kill the Thorium Rocket Chickens as they appear.
-_HEALER:_
-|tip Avoid Rocket Chicken Rockets.
-_TANK:_
-|tip Kill the Thorium Rocket Chickens as they appear.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Disarm Elementium Squirrel Bombs as they appear. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Kill the Thorium Rocket Chickens as they appear. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Avoid Rocket Chicken Rockets. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Kill the Thorium Rocket Chickens as they appear. |grouprole TANK
 Defeat the First Escaped Prisoner |scenariostage 1 |goto 40.26,41.12 |next "First_Bosses" |only if _G.select(2,_G.C_Scenario.GetInfo())==1
 Defeat the Second Escaped Prisoner |scenariostage 2 |goto 40.26,41.12 |next "Final_Boss" |only if _G.select(2,_G.C_Scenario.GetInfo())==2
 step
 label "Anub'esset"
 kill Anub'esset##102246
-_EVERYONE:_
-|tip When you are targeted by Impale, move away from other players.
-_DAMAGE:_
-|tip Kill the Spitting Scarabs that spawn after Call of the Swarm.
-_HEALER:_
-|tip Mandible Strike reduces healing to the Tank and deals heavy damage, so be ready to use large heals.
-|tip Be ready for AoE heals if the Spitting Scarabs don't get killed quickly.
-_TANK:_
-|tip Avoid standing in front of Anub'esset when he casts Impale.
+_EVERYONE:_ |grouprole EVERYONE
+|tip When you are targeted by Impale, move away from other players. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Kill the Spitting Scarabs that spawn after Call of the Swarm. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Mandible Strike reduces healing to the Tank and deals heavy damage, so be ready to use large heals. |grouprole HEALER
+|tip Be ready for AoE heals if the Spitting Scarabs don't get killed quickly. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Avoid standing in front of Anub'esset when he casts Impale. |grouprole TANK
 Defeat the First Escaped Prisoner |scenariostage 1 |goto 62.89,30.46 |next "First_Bosses" |only if _G.select(2,_G.C_Scenario.GetInfo())==1
 Defeat the Second Escaped Prisoner |scenariostage 2 |goto 62.89,30.46 |next "Final_Boss" |only if _G.select(2,_G.C_Scenario.GetInfo())==2
 step
@@ -124,17 +124,17 @@ Fel Lord Betrug |next "Fel Lord Betrug" |confirm
 step
 label "Sael'orn"
 kill Sael'orn##102387
-|tip EVERYONE:
-|tip Turn to face Phase Spiders that are targeting you with Creeping Slaughter to stop them from approaching.
+|tip EVERYONE: |grouprole EVERYONE
+|tip Turn to face Phase Spiders that are targeting you with Creeping Slaughter to stop them from approaching. |grouprole EVERYONE
 Defeat the Invasion Commander |scenarioend |goto 51.19,36.08
 |next "Congrats"
 step
 label "Fel Lord Betrug"
 kill Fel Lord Betrug##102446
-|tip EVERYONE:
-|tip Avoid players targeted by Fel Slash.
-|tip If you are targeted by Fel Slash, move away from other players.
-|tip When Fel Lord Betrug begins to Execute an ally, run up the platform and free them.
+|tip EVERYONE: |grouprole EVERYONE
+|tip Avoid players targeted by Fel Slash. |grouprole EVERYONE
+|tip If you are targeted by Fel Slash, move away from other players. |grouprole EVERYONE
+|tip When Fel Lord Betrug begins to Execute an ally, run up the platform and free them. |grouprole EVERYONE
 Defeat the Invasion Commander |scenarioend |goto 51.19,36.08
 |next "Congrats"
 step
@@ -163,17 +163,17 @@ Go through whichever gate is open and follow the corridor to the first boss
 confirm
 step
 kill Amalgam of Souls##98542
-_EVERYONE:_
-|tip Move away from other players if you become afflicted by Soul Echoes.
-|tip Keep your distance, if possible, to avoid bouncing damage from Glaive Toss.
-|tip Move away from other players if you are targeted with Swirling Scythe.
-_DAMAGE:_
-|tip Try to spread out around the boss if you're melee.
-_HEALER:_
-|tip Try to keep the tank at full health.
-|tip Be prepared for big heals when the boss uses Reap Soul.
-_TANK:_
-|tip Try to use cooldowns to decrease incoming damage of Reap Soul, it deals massive damage.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Move away from other players if you become afflicted by Soul Echoes. |grouprole EVERYONE
+|tip Keep your distance, if possible, to avoid bouncing damage from Glaive Toss. |grouprole EVERYONE
+|tip Move away from other players if you are targeted with Swirling Scythe. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Try to spread out around the boss if you're melee. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Try to keep the tank at full health. |grouprole HEALER
+|tip Be prepared for big heals when the boss uses Reap Soul. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Try to use cooldowns to decrease incoming damage of Reap Soul, it deals massive damage. |grouprole TANK
 Defeat the Amalgam of Souls |scenariogoal 1/29464
 step
 Go up the stairs |goto 49.71,73.86 < 20
@@ -201,16 +201,16 @@ Go through the gate on the right and to the top of the stairs
 confirm
 step
 kill Illysanna Ravencrest##98696
-_EVERYONE:_
-|tip If targeted by Dark Rush, gather with other players so less Felblazed Ground appears on the ground.
-|tip Spread out to avoid Brutal Glaive bouncing between group members.
-_DAMAGE:_
-|tip Interrupt Arcane Blitz.
-_HEALER:_
-|tip Be ready for big heals when Illysanna uses Vengeful Shear.
-_TANK:_
-|tip Gain threat on the Risen Vanguards that spawn.
-|tip Use cooldowns to mitigate damage from Illysanna uses Vengeful Shear.
+_EVERYONE:_ |grouprole EVERYONE
+|tip If targeted by Dark Rush, gather with other players so less Felblazed Ground appears on the ground. |grouprole EVERYONE
+|tip Spread out to avoid Brutal Glaive bouncing between group members. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Interrupt Arcane Blitz. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Be ready for big heals when Illysanna uses Vengeful Shear. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Gain threat on the Risen Vanguards that spawn. |grouprole TANK
+|tip Use cooldowns to mitigate damage from Illysanna uses Vengeful Shear. |grouprole TANK
 Defeat Illysanna Ravencrest |scenariogoal 1/29465
 step
 map Black Rook Hold/2
@@ -237,13 +237,13 @@ Go through the first room on the right to Rook's Roost
 confirm
 step
 kill Smashspite the Hateful##98949
-_EVERYONE:_
-|tip Stand between Smashspite and his target for Hateful Charge, if the target has the debuff from intercepting already.
-_HEALER:_
-|tip When he uses Earthshaking Stomp, be prepared to use AoE Healing.
-|tip Tank will need heavy healing after he uses Brutal Haymaker.
-_TANK:_
-|tip Use cooldowns if Smashspite is allowed to gain Brutality and use Brutal Haymaker.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Stand between Smashspite and his target for Hateful Charge, if the target has the debuff from intercepting already. |grouprole EVERYONE
+_HEALER:_ |grouprole HEALER
+|tip When he uses Earthshaking Stomp, be prepared to use AoE Healing. |grouprole HEALER
+|tip Tank will need heavy healing after he uses Brutal Haymaker. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Use cooldowns if Smashspite is allowed to gain Brutality and use Brutal Haymaker. |grouprole TANK
 Defeat Smashspite the Hateful |scenariogoal 1/29466
 step
 map Black Rook Hold/4
@@ -263,16 +263,16 @@ confirm
 step
 kill Kur'talos Ravencrest##113046
 kill Dantalionax##99611
-_EVERYONE:_
-|tip Move along the edges in a circular motion when Dantalionax casts Dark Obliteration.
-_DAMAGE:_
-|tip Kill Stinging Swarms as they spawn.
-_HEALER:_
-|tip Dispel Cloud of Hynosis.
-|tip Prepare big heals for the Tank when Unerring Shear is used.
-_TANK:_
-|tip Use cooldowns to mitigate damage from Unerring Shear.
-|tip Kill Stinging Swarms as they spawn.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Move along the edges in a circular motion when Dantalionax casts Dark Obliteration. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Kill Stinging Swarms as they spawn. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Dispel Cloud of Hynosis. |grouprole HEALER
+|tip Prepare big heals for the Tank when Unerring Shear is used. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Use cooldowns to mitigate damage from Unerring Shear. |grouprole TANK
+|tip Kill Stinging Swarms as they spawn. |grouprole TANK
 Redeem Lord Ravencrest |scenarioend
 step
 _Congratulations!_
@@ -301,13 +301,13 @@ When you reach the Rotting Grotto, continue down the path to the right towards t
 confirm
 step
 kill Archdruid Glaidalis##96512
-_DAMAGE:_
-|tip Stay behind him.
-_HEALER:_
-|tip Stand behind him while he casts Primal Rampage.
-|tip Heal allies afflicted by Grevious Tear.
-_TANK:_
-|tip Keep him facing away from the group.
+_DAMAGE:_ |grouprole DAMAGE
+|tip Stay behind him. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Stand behind him while he casts Primal Rampage. |grouprole HEALER
+|tip Heal allies afflicted by Grevious Tear. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Keep him facing away from the group. |grouprole TANK
 Defeat Archdruid Glaidalis |scenariogoal 1/29271 |goto 24.70,62.11
 step
 map Darkheart Thicket/0
@@ -320,14 +320,14 @@ Follow the stone path as it curves left to the first boss
 confirm
 step
 kill Oakheart##103344
-_DAMAGE:_
-|tip Stay behind him to avoid taking damage from Nightmare Breath.
-_HEALER:_
-|tip Stay behind him to avoid taking damage from Nightmare Breath.
-|tip Be ready to heal the Tank when Oakheart uses Crushing Grip.
-_TANK:_
-|tip Keep him facing away from the group.
-|tip Use cooldowns to mitigate the incoming damage when Oakheart uses Crushing Grip.
+_DAMAGE:_ |grouprole DAMAGE
+|tip Stay behind him to avoid taking damage from Nightmare Breath. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Stay behind him to avoid taking damage from Nightmare Breath. |grouprole HEALER
+|tip Be ready to heal the Tank when Oakheart uses Crushing Grip. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Keep him facing away from the group. |grouprole TANK
+|tip Use cooldowns to mitigate the incoming damage when Oakheart uses Crushing Grip. |grouprole TANK
 Defeat Oakheart |scenariogoal 1/30602 |goto 44.07,45.75
 step
 map Darkheart Thicket/0
@@ -341,11 +341,11 @@ Take the northeast passage and follow the water to the second boss
 confirm
 step
 kill Dresaron##99200
-_EVERYONE:_
-|tip Run towards the boss when he uses Down Draft to avoid spawning Hatch Whelplings.
-|tip Hatch Whelpings spawn when you get too close to the eggs.
-_TANK:_
-|tip Try to keep him at the center of the room, so allies aren't blown into eggs when he uses Down Draft.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Run towards the boss when he uses Down Draft to avoid spawning Hatch Whelplings. |grouprole EVERYONE
+|tip Hatch Whelpings spawn when you get too close to the eggs. |grouprole EVERYONE
+_TANK:_ |grouprole TANK
+|tip Try to keep him at the center of the room, so allies aren't blown into eggs when he uses Down Draft. |grouprole TANK
 Defeat Dresaron |scenariogoal 1/29274 |goto 65.7,46.1
 step
 map Darkheart Thicket/0
@@ -359,9 +359,9 @@ Drop down again into the ravine and follow it south to reach the last boss
 confirm
 step
 kill Shade of Xavius##101403
-_EVERYONE:_
-|tip Stay away from allies if you are afflicted by Induced Paranoia.
-|tip Move next to an ally if you are afflicted by Waking Nightmare.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Stay away from allies if you are afflicted by Induced Paranoia. |grouprole EVERYONE
+|tip Move next to an ally if you are afflicted by Waking Nightmare. |grouprole EVERYONE
 Defeat Shade of Xavius |scenarioend |goto 82.80,87.15
 step
 _Congratulations!_
@@ -388,14 +388,14 @@ Follow the path forward to the first boss
 confirm
 step
 kill Warlord Parjesh##91784
-_DAMAGE:_
-|tip Kill adds as they spawn after he uses Call Reinforcements.
-|tip Stay behind him at all times.
-|tip Position an enemy between yourself and the red arrow if you are targeted with Impaling Spear.
-_HEALER:_
-|tip Position an enemy between yourself and the red arrow if you are targeted with Impaling Spear.
-_TANK:_
-|tip Gain threat on the adds after he uses Call Reinforcements.
+_DAMAGE:_ |grouprole DAMAGE
+|tip Kill adds as they spawn after he uses Call Reinforcements. |grouprole DAMAGE
+|tip Stay behind him at all times. |grouprole DAMAGE
+|tip Position an enemy between yourself and the red arrow if you are targeted with Impaling Spear. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Position an enemy between yourself and the red arrow if you are targeted with Impaling Spear. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Gain threat on the adds after he uses Call Reinforcements. |grouprole TANK
 kill Warlord Parjesh##91784 |q 38286/2 |goto 54.39,68.18 |only if havequest(38286) or completedq(38286)
 Defeat Warlord Parjesh |scenariogoal 1/28776 |goto 54.39,68.18
 step
@@ -409,28 +409,28 @@ Follow the path to the west and continue north
 confirm
 step
 kill Lady Hatecoil##91789
-_EVERYONE:_
-|tip Move onto the mounds when she begins to cast Static Nova.
-|tip Move away from mounds when she casts Focused Lightning, so they won't be destroyed.
-|tip Move away from the group if you get the Curse of the Witch debuff.
-_HEALER:_
-|tip People who get Curse of the Witch will need extra healing.
-|tip Be prepared for any player getting knocked out of Hatecoil's arena, as they will take massive damage.
-_TANK:_
-|tip When Lady Hatecoil casts Beckon Storm, gain threat on the adds that spawn.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Move onto the mounds when she begins to cast Static Nova. |grouprole EVERYONE
+|tip Move away from mounds when she casts Focused Lightning, so they won't be destroyed. |grouprole EVERYONE
+|tip Move away from the group if you get the Curse of the Witch debuff. |grouprole EVERYONE
+_HEALER:_ |grouprole HEALER
+|tip People who get Curse of the Witch will need extra healing. |grouprole HEALER
+|tip Be prepared for any player getting knocked out of Hatecoil's arena, as they will take massive damage. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip When Lady Hatecoil casts Beckon Storm, gain threat on the adds that spawn. |grouprole TANK
 Defeat Lady Hatecoil |scenariogoal 1/28777 |goto 46.49,49.88
 step
 Go northeast to Serpentrix's island
 kill Serpentrix##91808
 |tip Kill all the enemies around Serpentix before attacking Serpentix.
-_EVERYONE:_
-|tip Move away from other players if you are targeted with Toxic Wound.
-|tip Stand behind him when he casts Poison Spit.
-_DAMAGE:_
-|tip Interrupt Rampage.
-|tip Kill Blazing Hydras when they spawn.
-_TANK:_
-|tip Gain threat on Blazing Hydras when they spawn.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Move away from other players if you are targeted with Toxic Wound. |grouprole EVERYONE
+|tip Stand behind him when he casts Poison Spit. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Interrupt Rampage. |grouprole DAMAGE
+|tip Kill Blazing Hydras when they spawn. |grouprole DAMAGE
+_TANK:_ |grouprole TANK
+|tip Gain threat on Blazing Hydras when they spawn. |grouprole TANK
 Defeat Serpentrix |scenariogoal 1/28779 |goto 52.59,35.50
 step
 map 1046/1
@@ -443,16 +443,16 @@ Curve around to the southwest and kill the two Skrog giants
 confirm
 step
 kill King Deepbeard##91797
-_EVERYONE:_
-|tip Move out of the circles that appear on the ground.
-|tip If you get a bubble cast on from Gaseous Bubbles, stand in the AoE damage spots on the ground to remove the bubble.
-_DAMAGE:_
-|tip Move away from him when he casts Call the Seas.
-|tip Move away from the cracks on the ground after he uses Quake.
-_HEALER:_
-|tip Stay very close to him to avoid Quake.
-_TANK:_
-|tip Try to keep him from attacking the Healer.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Move out of the circles that appear on the ground. |grouprole EVERYONE
+|tip If you get a bubble cast on from Gaseous Bubbles, stand in the AoE damage spots on the ground to remove the bubble. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Move away from him when he casts Call the Seas. |grouprole DAMAGE
+|tip Move away from the cracks on the ground after he uses Quake. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Stay very close to him to avoid Quake. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Try to keep him from attacking the Healer. |grouprole TANK
 Defeat King Deepbeard |scenariogoal 1/28778 |goto 66.32,50.04
 step
 map 1046/1
@@ -463,17 +463,17 @@ confirm
 step
 kill Wrath of Azshara##96028
 |tip Kill the enemies channeling him before attacking him.
-_EVERYONE:_
-|tip Move away from the circle on the ground for Arcane Bomb.
-_DAMAGE:_
-|tip Do not stand in front of him.
-|tip Try not to stand too close to other players.
-|tip When Mystic Tornado is cast, avoid running into other players.
-_HEALER:_
-|tip Dispell Arcane Bomb when it's cast on an ally.
-|tip Prepare big AoE heals when he starts casting Heaving Sands.
-_TANK:_
-|tip Stay right on top of the boss. It will cause AoE damage if you don't.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Move away from the circle on the ground for Arcane Bomb. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Do not stand in front of him. |grouprole DAMAGE
+|tip Try not to stand too close to other players. |grouprole DAMAGE
+|tip When Mystic Tornado is cast, avoid running into other players. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Dispell Arcane Bomb when it's cast on an ally. |grouprole HEALER
+|tip Prepare big AoE heals when he starts casting Heaving Sands. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Stay right on top of the boss. It will cause AoE damage if you don't. |grouprole TANK
 kill Wrath of Azshara##96028 |q 38286/3 |goto 54.57,55.16 |only if  havequest(38286) or completedq(38286)
 Defeat Wrath of Azshara |scenarioend |goto 54.57,55.16
 step
@@ -505,15 +505,15 @@ Follow the bridge to the first boss
 confirm
 step
 kill Hymdall##94960
-_EVERYONE:_
-|tip Stay away from Dancing Blade when he throws it at a random player.
-|tip Avoid the blue lightning that appears on the ground after he uses the Horn of Valor.
-_DAMAGE:_
-|tip Stay behind him.
-_HEALER:_
-|tip Stay behind him.
-_TANK:_
-|tip Face him away from the group.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Stay away from Dancing Blade when he throws it at a random player. |grouprole EVERYONE
+|tip Avoid the blue lightning that appears on the ground after he uses the Horn of Valor. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Stay behind him. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Stay behind him. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Face him away from the group. |grouprole TANK
 Defeat Hymdall |scenariogoal 1/28994
 step
 Continue forward and enter the Hearth of Revelry
@@ -539,12 +539,12 @@ step
 kill Olmyr the Enlightened##97202
 kill Solsten##97219
 kill Hyrja##96646
-_EVERYONE:_
-|tip Stay away from other players when you are afflicted with Expel Light.
-|tip Avoid the yellow swirls after Sanctify is cast.
-|tip Stay inside the blue bubble that appears when Eye of the Storm is being cast.
-_TANK:_
-|tip Move Hyrja so that only one NPC is channeling her.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Stay away from other players when you are afflicted with Expel Light. |grouprole EVERYONE
+|tip Avoid the yellow swirls after Sanctify is cast. |grouprole EVERYONE
+|tip Stay inside the blue bubble that appears when Eye of the Storm is being cast. |grouprole EVERYONE
+_TANK:_ |grouprole TANK
+|tip Move Hyrja so that only one NPC is channeling her. |grouprole TANK
 Defeat Hyrja |scenariogoal 1/28995 |goto 63.56,85.03 |next "Hearth_Of_Revelry"
 step
 label "Fenryr_Start"
@@ -557,15 +557,15 @@ DPS Fenryr until he runs away. Then, follow his bloody trail
 confirm
 step
 kill Fenryr##99868
-_EVERYONE:_
-|tip Avoid allies being targeted by Ravenous Leap.
-_DAMAGE:_
-|tip Melee: Stay close to other melee damage dealers to split the damage of Claw Frenzy among you.
-_HEALER:_
-|tip Stay at least 12 yard back from the boss.
-|tip Run away if you are targeted by Scent of Blood.
-_TANK:_
-|tip Fenryr uses Scent of Blood, which causes him to attack a random party member and you won't be able to interrupt it.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Avoid allies being targeted by Ravenous Leap. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Melee: Stay close to other melee damage dealers to split the damage of Claw Frenzy among you. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Stay at least 12 yard back from the boss. |grouprole HEALER
+|tip Run away if you are targeted by Scent of Blood. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Fenryr uses Scent of Blood, which causes him to attack a random party member and you won't be able to interrupt it. |grouprole TANK
 Defeat Fenryr |scenariogoal 1/28996
 step
 Retrace your steps and walk through the portal |goto 66.56,27.21 |n
@@ -591,25 +591,25 @@ Kill the 4 enemies in the room
 Click Here After You Kill Them All |confirm
 step
 kill God-King Skovald##95675
-_EVERYONE:_
-|tip Click the Aegis of Aggramar shield that he drops on the ground to survive Ragnarok.
-_DAMAGE:_
-|tip Stay away from allies when Skovald casts Felblaze Rush.
-_HEALER:_
-|tip Stay away from allies when Skovald casts Felblaze Rush.
-_TANK:_
-|tip Use cooldowns to mitigate the incoming damage of Savage Blade.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Click the Aegis of Aggramar shield that he drops on the ground to survive Ragnarok. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Stay away from allies when Skovald casts Felblaze Rush. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Stay away from allies when Skovald casts Felblaze Rush. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Use cooldowns to mitigate the incoming damage of Savage Blade. |grouprole TANK
 click Aegis of Aggramar |only if havequest(40072)
 |tip It looks like a golden shield that appears on the ground while fighting God-King Skovald. |only if havequest(40072)
 Claim the Aegis of Aggramar |q 40072/1 |goto 51.44,88.83 |only if havequest(40072)
 Defeat God-King Skovald |scenariogoal 1/28997
 step
 kill Odyn##95676
-_EVERYONE:_
-|tip Run away when he starts casting Radiant Tempest.
-|tip When you are afflicted by Runic Brand, run to the rune on the floor that matches the rune floating above your head.
-|tip Avoid the circles on the ground.
-|tip Avoid the glowing orbs that appear after he casts Shatter Spears.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Run away when he starts casting Radiant Tempest. |grouprole EVERYONE
+|tip When you are afflicted by Runic Brand, run to the rune on the floor that matches the rune floating above your head. |grouprole EVERYONE
+|tip Avoid the circles on the ground. |grouprole EVERYONE
+|tip Avoid the glowing orbs that appear after he casts Shatter Spears. |grouprole EVERYONE
 Defeat Odyn |q 40072/2 |goto 51.44,88.83 |only if havequest(40072)
 Defeat Odyn |scenarioend
 step
@@ -638,13 +638,13 @@ Press _I_ and queue for Maw of Souls or enter the dungeon with your group |goto 
 |confirm |or
 step
 kill Ymiron, the Fallen King##96756
-_EVERYONE:_
-|tip Avoid the circle that appears beneath him when he starts casting Screams of the Dead.
-|tip Avoid the purple orbs after he casts Bane.
-_HEALER:_
-|tip Be ready to heal after he casts Bane.
-_TANK:_
-|tip Be prepared to use cooldowns when Ymiron's mana bar fills up.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Avoid the circle that appears beneath him when he starts casting Screams of the Dead. |grouprole EVERYONE
+|tip Avoid the purple orbs after he casts Bane. |grouprole EVERYONE
+_HEALER:_ |grouprole HEALER
+|tip Be ready to heal after he casts Bane. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Be prepared to use cooldowns when Ymiron's mana bar fills up. |grouprole TANK
 Defeat Ymiron |scenariogoal 1/29340 |goto Helmouth Cliffs/1 52.89,27.62
 step
 Click the horn on the hill behind where Ymiron spawned
@@ -659,15 +659,15 @@ Cross the ship and go up the stairs to the top deck
 confirm
 step
 kill Harbaron##96754
-_EVERYONE:_
-|tip Avoid Cosmic Scythe.
-_DAMAGE:_
-|tip Interrupt Void Snap. Establish an interrupt order with other players, if you need to.
-|tip Kill Shackled Servitors and Destroy Soul Fragments as they appear.
-_Healers:_
-|tip Players with Fragment cast on them will need lots of healing.
-_Tanks:_
-|tip Interrupt Void Snap. Coordinate with your group so interrupts aren't wasted.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Avoid Cosmic Scythe. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Interrupt Void Snap. Establish an interrupt order with other players, if you need to. |grouprole DAMAGE
+|tip Kill Shackled Servitors and Destroy Soul Fragments as they appear. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Players with Fragment cast on them will need lots of healing. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Interrupt Void Snap. Coordinate with your group so interrupts aren't wasted. |grouprole TANK
 Defeat Harbaron |scenariogoal 1/29341 |goto 1042/3 74.58,56.22
 step
 map Helmouth Cliffs/3
@@ -678,14 +678,14 @@ Cross the top deck of the ship, killing trash on one side
 confirm
 step
 kill Helya##96759
-_EVERYONE:_
-|tip When Helya starts to cast Corrupted Bellow, quickly move away from the area she's facing.
-_DAMAGE:_
-|tip Quickly kill Destructor and Grasping Tentacles as the appear.
-_HEALER:_
-|tip Players afflicted with Taint of the Sea will take damage.
-_TANK:_
-|tip Gain threat on Tentacles as the spawn.
+_EVERYONE:_ |grouprole EVERYONE
+|tip When Helya starts to cast Corrupted Bellow, quickly move away from the area she's facing. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Quickly kill Destructor and Grasping Tentacles as the appear. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Players afflicted with Taint of the Sea will take damage. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Gain threat on Tentacles as the spawn. |grouprole TANK
 Defeat Helya |scenarioend |goto 16.97,60.04
 step
 _Congratulations!_
@@ -715,12 +715,12 @@ Jump off the platform at the end into the water below
 confirm
 step
 kill Rokmora##91003
-_DAMAGE:_
-|tip Kill the Blightshard Skitters as they spawn. Be sure to kill them before Rokmora casts Shatter.
-_HEALER:_
-|tip Be ready for AoE heals when Rokmora casts Shatter.
-_TANK:_
-|tip Make sure to face Rokmora away from the party, or they will take damage from Razor Shards.
+_DAMAGE:_ |grouprole DAMAGE
+|tip Kill the Blightshard Skitters as they spawn. Be sure to kill them before Rokmora casts Shatter. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Be ready for AoE heals when Rokmora casts Shatter. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Make sure to face Rokmora away from the party, or they will take damage from Razor Shards. |grouprole TANK
 Defeat Rokmora |scenariogoal 1/28560 |goto 66.50,50.14
 step
 click Empty Barrel
@@ -737,13 +737,13 @@ Continue forward and go up the ramp
 confirm
 step
 kill Ularogg Cragshaper##105300
-_DAMAGE:_
-|tip Kill Bellowing Idols quickly to prevent damage from Falling Debris.
-_HEALER:_
-|tip When Ularogg uses Sunder, be ready to use heavy healing on the Tank.
-|tip The longer Ularogg is in the Bellowing Idol, the more damage over time he will increase to your party.
-_TANK:_
-|tip Use your cooldowns to mitigate damage from Sunder.
+_DAMAGE:_ |grouprole DAMAGE
+|tip Kill Bellowing Idols quickly to prevent damage from Falling Debris. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip When Ularogg uses Sunder, be ready to use heavy healing on the Tank. |grouprole HEALER
+|tip The longer Ularogg is in the Bellowing Idol, the more damage over time he will increase to your party. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Use your cooldowns to mitigate damage from Sunder. |grouprole TANK
 Defeat Ularogg Cragshaper |scenariogoal 1/28561 |goto 44.52,50.90
 step
 map Neltharion's Lair/0
@@ -756,13 +756,13 @@ Continue through the dungeon, following the path as it curves to the left
 confirm
 step
 kill Naraxas##91005
-_EVERYONE:_
-|tip Make sure at least 1 group member in melee range, if possible, or the group will take damage from Putrid Skies.
-|tip Avoid the green circles and green gas on the ground.
-_HEALER:_
-|tip Be ready to heal the Tank when Naraxas uses Spiked Tongue.
-_TANK:_
-|tip When Naraxas uses Spiked Tongue, move away as far as you can.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Make sure at least 1 group member in melee range, if possible, or the group will take damage from Putrid Skies. |grouprole EVERYONE
+|tip Avoid the green circles and green gas on the ground. |grouprole EVERYONE
+_HEALER:_ |grouprole HEALER
+|tip Be ready to heal the Tank when Naraxas uses Spiked Tongue. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip When Naraxas uses Spiked Tongue, move away as far as you can. |grouprole TANK
 Defeat Naraxas |scenariogoal 1/28562
 step
 Jump down the hole |goto 33.50,37.59 |condition not _G.HasFullControl()
@@ -776,15 +776,15 @@ Continue straight ahead towards the final boss
 confirm
 step
 kill Dargrul the Underking##91007
-_EVERYONE:_
-|tip Take cover behind Crystal Spikes to avoid taking damage from Magma Wave.
-_DAMAGE:_
-|tip Kill Molten Charskins as they spawn.
-_HEALER:_
-|tip Molten Crash will cause heavy damage to the entire group.
-|tip If left alone, Molten Charskins will AoE damage the group as they walk around.
-_TANK:_
-|tip Mitigate damage from Molten Crash with defensive abilities.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Take cover behind Crystal Spikes to avoid taking damage from Magma Wave. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Kill Molten Charskins as they spawn. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Molten Crash will cause heavy damage to the entire group. |grouprole HEALER
+|tip If left alone, Molten Charskins will AoE damage the group as they walk around. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Mitigate damage from Molten Crash with defensive abilities. |grouprole TANK
 Defeat Dargrul the Underking |scenarioend |goto 17.46,62.50
 step
 _Congratulations!_
@@ -812,16 +812,16 @@ Enter the Warden's Court
 confirm
 step
 kill Tirathon Saltheril##99198
-_EVERYONE:_
-|tip This fight requires a lot of interrupts, so coordinate with your group so interrupts don't get wasted.
-_DAMAGE:_
-|tip Interrupt Dark Energies.
-|tip Note: You must interrupt Darkstrikes to be able to interrupt Dark Energies.
-_HEALER:_
-|tip If Furious Blast isn't interrupted, be prepared to use AoE heals.
-|tip If Metamorphoses isn't interrupted, be prepared to use AoE heals.
-_TANK:_
-|tip Use damage mitigation abilities when he activates Darkstrikes.
+_EVERYONE:_ |grouprole EVERYONE
+|tip This fight requires a lot of interrupts, so coordinate with your group so interrupts don't get wasted. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Interrupt Dark Energies.  |grouprole DAMAGE
+|tip Note: You must interrupt Darkstrikes to be able to interrupt Dark Energies. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip If Furious Blast isn't interrupted, be prepared to use AoE heals. |grouprole HEALER
+|tip If Metamorphoses isn't interrupted, be prepared to use AoE heals. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Use damage mitigation abilities when he activates Darkstrikes. |grouprole TANK
 Defeat Tirathon Saltheril |scenariogoal 1/29369
 step
 map 1045/1
@@ -834,16 +834,16 @@ confirm
 step
 kill Inquisitor Tormentorum##96015
 |tip He may be in a different spot in this room.
-_EVERYONE:_
-|tip If you get afflicted by Sapped Soul, the next ability you use will have its cooldown increased by 10 seconds.
-_DAMAGE:_
-|tip Interrupt Sap Soul.
-|tip Kill adds as they spawn.
-_HEALER:_
-|tip If you are afflicted by Sapped Soul, only use abilities that are unimportant.
-_TANK:_
-|tip Interrupt Sap Soul.
-|tip Gain threat on the enemies he releases when he is at 70% and 40% health.
+_EVERYONE:_ |grouprole EVERYONE
+|tip If you get afflicted by Sapped Soul, the next ability you use will have its cooldown increased by 10 seconds. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Interrupt Sap Soul. |grouprole DAMAGE
+|tip Kill adds as they spawn. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip If you are afflicted by Sapped Soul, only use abilities that are unimportant. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Interrupt Sap Soul. |grouprole TANK
+|tip Gain threat on the enemies he releases when he is at 70% and 40% health. |grouprole TANK
 Defeat Inquisitor Tormentorum |scenariogoal 1/29528
 step
 label "Vault_Of_Wardens_Router"
@@ -862,14 +862,14 @@ Enter the Vault of Mirrors to the east
 confirm
 step
 kill Glazer##99865
-_DAMAGE:_
-|tip Glazer will cast Pulse, which bounce off the walls towards the nearest player.
-|tip Use the Mirrors along the edge of the platform to reflect the blue Focused beam onto Glazer's back.
-_HEALER:_
-|tip You will need AoE healing until the blue Focused beam phase.
-|tip The group will take damage from Radiation as long as Glazer is focusing his beam.
-_TANK:_
-|tip Help direct the mirrors when he focuses his beam.
+_DAMAGE:_ |grouprole DAMAGE
+|tip Glazer will cast Pulse, which bounce off the walls towards the nearest player. |grouprole DAMAGE
+|tip Use the Mirrors along the edge of the platform to reflect the blue Focused beam onto Glazer's back. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip You will need AoE healing until the blue Focused beam phase. |grouprole HEALER
+|tip The group will take damage from Radiation as long as Glazer is focusing his beam. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Help direct the mirrors when he focuses his beam. |grouprole TANK
 Defeat Glazer |scenariogoal 1/29371
 |next "Vault_Of_Wardens_Router"
 step
@@ -882,18 +882,18 @@ Enter the Vault of Ice to the south
 confirm
 step
 kill Ash'Golm##95886
-_EVERYONE:_
-|tip Walk on the moving orange lava patches, if necessary, to avoid letting the Ember adds touch them.
-|tip Ember adds will explode if they touch lava patches.
-|tip Avoid the circles on the ground if you are at range.
-_DAMAGE:_
-|tip Save damage increasing cooldowns for when Ash'golm or his adds are frozen.
-|tip Quickly kill the adds that spawn.
-_HEALER:_
-|tip If Ash'Golm doesn't get frozen midway through the fight, the whole group will take damage from Smoldering.
-_TANK:_
-|tip Help direct the aim of Ash'golm's Fissure, so it doesn't hit other players.
-|tip You cannot tank the Ember adds that spawn, and they attack random players.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Walk on the moving orange lava patches, if necessary, to avoid letting the Ember adds touch them. |grouprole EVERYONE
+|tip Ember adds will explode if they touch lava patches. |grouprole EVERYONE
+|tip Avoid the circles on the ground if you are at range. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Save damage increasing cooldowns for when Ash'golm or his adds are frozen. |grouprole DAMAGE
+|tip Quickly kill the adds that spawn. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip If Ash'Golm doesn't get frozen midway through the fight, the whole group will take damage from Smoldering. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Help direct the aim of Ash'golm's Fissure, so it doesn't hit other players. |grouprole TANK
+|tip You cannot tank the Ember adds that spawn, and they attack random players. |grouprole TANK
 Defeat Ash'Golm |scenariogoal 1/29370
 |next "Vault_Of_Wardens_Router"
 step
@@ -924,18 +924,18 @@ Enter the Vault of the Betrayer to the south
 confirm
 step
 kill Cordana Felsong##95888
-_EVERYONE:_
-|tip Avoid Creeping Doom spirits, which are invisible unless revealed by Elune's Light.
-|tip If you pick up Elune's Light, use the ability that appears as a button on the screen to dispel Creeping Doom.
-|tip Use Elune's Light to remove the Deepening Shadows spreading patch that forms on the ground.
-|tip Use Elune's Light to reveal her when she disappears.  She goes to a random location around the edge of the platform.
-_DAMAGE:_
-|tip Use Elune's Light to reveal Avatars of Vengeance which are found around the Sentries in the corners.
-_HEALER:_
-|tip Allies caught by the green spinning projectiles will take more damage.
-_TANK:_
-|tip Avoid the green spinning projectiles she throws.
-|tip Gain threat on the Avatars of Vengeance once they are revealed with Elune's Light.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Avoid Creeping Doom spirits, which are invisible unless revealed by Elune's Light. |grouprole EVERYONE
+|tip If you pick up Elune's Light, use the ability that appears as a button on the screen to dispel Creeping Doom. |grouprole EVERYONE
+|tip Use Elune's Light to remove the Deepening Shadows spreading patch that forms on the ground. |grouprole EVERYONE
+|tip Use Elune's Light to reveal her when she disappears.  She goes to a random location around the edge of the platform. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Use Elune's Light to reveal Avatars of Vengeance which are found around the Sentries in the corners. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Allies caught by the green spinning projectiles will take more damage. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Avoid the green spinning projectiles she throws. |grouprole TANK
+|tip Gain threat on the Avatars of Vengeance once they are revealed with Elune's Light. |grouprole TANK
 Defeat Cordana |scenarioend
 step
 talk Robert Newhearth##112441
@@ -974,15 +974,15 @@ Make a right and go down the hall to the first boss
 confirm
 step
 kill General Xakal##98206
-_EVERYONE:_
-|tip Move out of the way when you are targeted with Shadow Slash.
-|tip Avoid the green Fel Fissure circles on the ground.
-|tip You will get knocked back when he casts Wicked Slam, so be careful to position
-|tip yourself so you don't land on the green circles.
-_HEALER:_
-|tip Be ready for big heals when he casts Wicked Slam.
-_TANK:_
-|tip Make sure to taunt the Dread Felbats that appear.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Move out of the way when you are targeted with Shadow Slash. |grouprole EVERYONE
+|tip Avoid the green Fel Fissure circles on the ground. |grouprole EVERYONE
+|tip You will get knocked back when he casts Wicked Slam, so be careful to position |grouprole EVERYONE
+|tip yourself so you don't land on the green circles. |grouprole EVERYONE
+_HEALER:_ |grouprole HEALER
+|tip Be ready for big heals when he casts Wicked Slam. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Make sure to taunt the Dread Felbats that appear. |grouprole TANK
 Defeat General Xakal |scenariogoal 2/29147 |goto 77.08,49.99
 step
 map The Arcway/1
@@ -995,12 +995,12 @@ Go up the stairs on the left and go into the next room
 confirm
 step
 kill Nal'tira##98207
-_EVERYONE:_
-|tip If you get tethered to another player with Tangled Web, run away from each other to break it.
-|tip Avoid the yellow patches that appear on the ground.
-|tip Move out of the way if you are targeted by Blink Strikes.
-_HEALER:_
-|tip Be ready for big heals when she casts Temporal Displacement.
+_EVERYONE:_ |grouprole EVERYONE
+|tip If you get tethered to another player with Tangled Web, run away from each other to break it. |grouprole EVERYONE
+|tip Avoid the yellow patches that appear on the ground. |grouprole EVERYONE
+|tip Move out of the way if you are targeted by Blink Strikes. |grouprole EVERYONE
+_HEALER:_ |grouprole HEALER
+|tip Be ready for big heals when she casts Temporal Displacement. |grouprole HEALER
 Defeat Nal'tira |scenariogoal 2/29148 |goto 61.66,74.80
 step
 map The Arcway/1
@@ -1015,15 +1015,15 @@ Enter the first room on your left
 confirm
 step
 kill Corstilax##98205
-_EVERYONE:_
-|tip Click the huge crystal that appears when players are targeted by Quarantine to free them.
-|tip Avoid the swirling circles on the ground when he casts Suppression Protocol.
-|tip Walk into the purple patches of Nightwell Energy to increase your haste by 15% per stack.
-|tip Run against Cleansing Force. He does an AoE blast when he finishes casting it, which deal heavy damage.
-|tip Cleansing Force removes Nightwell Energy haste buff stacks. If you have have any left when he finishes casting it,
-|tip and you get hit by the AoE blast, you will get stunned.
-_HEALER:_
-|tip Be alert when he casts Suppression Protocol, the group can take a good amount of damage.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Click the huge crystal that appears when players are targeted by Quarantine to free them. |grouprole EVERYONE
+|tip Avoid the swirling circles on the ground when he casts Suppression Protocol. |grouprole EVERYONE
+|tip Walk into the purple patches of Nightwell Energy to increase your haste by 15% per stack. |grouprole EVERYONE
+|tip Run against Cleansing Force. He does an AoE blast when he finishes casting it, which deal heavy damage. |grouprole EVERYONE
+|tip Cleansing Force removes Nightwell Energy haste buff stacks. If you have have any left when he finishes casting it, |grouprole EVERYONE
+|tip and you get hit by the AoE blast, you will get stunned. |grouprole EVERYONE
+_HEALER:_ |grouprole HEALER
+|tip Be alert when he casts Suppression Protocol, the group can take a good amount of damage. |grouprole HEALER
 Defeat Corstilax |scenariogoal 2/29146 |goto 39.17,77.70
 step
 map The Arcway/1
@@ -1034,14 +1034,14 @@ Go through the northwest passage and enter the first room on your left
 confirm
 step
 kill Ivanyr##98203
-_EVERYONE:_
-|tip Move away from other players if you are afflicted by Volatile Magic.
-|tip Run toward each other if you are targeted by Nether Link.
-|tip The space between players linked by Nether Link becomes a damage patch on the ground when Nether Link expires.
-_DAMAGE:_
-|tip Interrupt him when he starts casting Overcharge Mana.
-_HEALER:_
-|tip Be ready when he casts Volatile Magic, it hits the target hard, as well as allies near the target when it expires.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Move away from other players if you are afflicted by Volatile Magic. |grouprole EVERYONE
+|tip Run toward each other if you are targeted by Nether Link. |grouprole EVERYONE
+|tip The space between players linked by Nether Link becomes a damage patch on the ground when Nether Link expires. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Interrupt him when he starts casting Overcharge Mana. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Be ready when he casts Volatile Magic, it hits the target hard, as well as allies near the target when it expires. |grouprole HEALER
 Defeat Ivanyr |scenariogoal 2/29145 |goto 18.56,74.01
 step
 map The Arcway/1
@@ -1058,16 +1058,16 @@ Go down the stairs and into the left room at the bottom of the stairs
 confirm
 step
 kill Advisor Vandros##98208
-_EVERYONE:_
-|tip Avoid the blue floating Chrono Shards, they explode after 8 seconds.
-|tip Avoid the purple orb Force Bombs, they explode.
-|tip Run through the shock waves after the Force Bombs explode.
-|tip You will get teleported away midway through the fight when he casts Banish In Time.
-|tip The place you get teleported to is random. Make your way back to him within 2 minutes, or you die.
-_DAMAGE:_
-|tip Make sure to interrupt Accelerating Blast as often as you can.
-_HEALER:_
-|tip Be ready when he casts Force Bombs, it can deal heavy damage to the whole group.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Avoid the blue floating Chrono Shards, they explode after 8 seconds. |grouprole EVERYONE
+|tip Avoid the purple orb Force Bombs, they explode. |grouprole EVERYONE
+|tip Run through the shock waves after the Force Bombs explode. |grouprole EVERYONE
+|tip You will get teleported away midway through the fight when he casts Banish In Time. |grouprole EVERYONE
+|tip The place you get teleported to is random. Make your way back to him within 2 minutes, or you die. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Make sure to interrupt Accelerating Blast as often as you can. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Be ready when he casts Force Bombs, it can deal heavy damage to the whole group. |grouprole HEALER
 Defeat Advisor Vandros |scenarioend |goto 48.04,42.48
 step
 _Congratulations!_
@@ -1126,16 +1126,16 @@ kill Patrol Captain Gerdo##104215
 |tip If you have a Rogue or Alchemist in your group, get them to click the Flask of the Solemn Night before engaging him.
 |tip The flask is located on the circular bar area in the middle of the courtyard.
 |tip This will poison the flask and he will die instantly upon drinking it during the fight.
-_EVERYONE:_
-|tip When you get the Arcane Lockdown debuff, jump multiple times to remove the stacks of it.
-|tip Triangle patches appear on the ground in front and behind him when he casts Resonant Slash. Move to his left or right.
-_DAMAGE:_
-|tip Kill the enemies quickly that appear to help him.
-_HEALER:_
-|tip When he is at low health, he will run to drink his Flask of the Solemn Night.
-|tip After drinking, he will deal more damage.
-_TANK:_
-|tip Gain threat on the enemies quickly that appear to help him.
+_EVERYONE:_ |grouprole EVERYONE
+|tip When you get the Arcane Lockdown debuff, jump multiple times to remove the stacks of it. |grouprole EVERYONE
+|tip Triangle patches appear on the ground in front and behind him when he casts Resonant Slash. Move to his left or right. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Kill the enemies quickly that appear to help him. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip When he is at low health, he will run to drink his Flask of the Solemn Night. |grouprole HEALER
+|tip After drinking, he will deal more damage. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Gain threat on the enemies quickly that appear to help him. |grouprole TANK
 Defeat Patrol Captain Gerdo |scenariogoal 1/29612 |goto 34.28,28.10
 step
 map Court of Stars/1
@@ -1165,15 +1165,15 @@ Click Here After Defeating All Three Enemies |confirm |goto 47.70,60.07
 step
 Go to the front of the Jeweled Estate
 kill Talixae Flamewreath##104217
-_EVERYONE:_
-|tip Group together when she starts casting Infernal Eruption, Infernal Imps spawn at the location of all players.
-|tip Keep the Infernal Imps grouped together and kill them with AoE damage as fast as possible.
-_DAMAGE:_
-|tip Quickly kill the Infernal Imps that spawn after she cass Infernal Eruption.
-_HEALER:_
-|tip The Infernal Imps hit hard and can be hard to keep focused on the tank, so be ready for big heals when they spawn.
-_TANK:_
-|tip Gain threat on the Infernal Imps that spawn after she cass Infernal Eruption.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Group together when she starts casting Infernal Eruption, Infernal Imps spawn at the location of all players. |grouprole EVERYONE
+|tip Keep the Infernal Imps grouped together and kill them with AoE damage as fast as possible. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Quickly kill the Infernal Imps that spawn after she cass Infernal Eruption. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip The Infernal Imps hit hard and can be hard to keep focused on the tank, so be ready for big heals when they spawn. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Gain threat on the Infernal Imps that spawn after she cass Infernal Eruption. |grouprole TANK
 Defeat Talixae Flamewreath |scenariogoal 1/29613 |goto 34.28,28.10
 step
 talk Ly'leth Lunastre##106468
@@ -1204,13 +1204,13 @@ Exit the terrace and go to the southeast door
 |tip Click the big Skyward Terrace door to open it.
 Watch the dialogue
 kill Advisor Melandrus##104218
-_EVERYONE:_
-|tip He will cast Blade Surge on a random player and rush to their location, leaving a copy of himself at that location.
-|tip These copies cast his abilities when he does, so he becomes more difficult in longer fights, due to these copies.
-|tip Distance yourself from other players, if possible, to avoid Blade Surge damaging multiple players at once.
-|tip Avoid the grey lines on the ground when he casts Piercing Gale.
-_HEALER:_
-|tip Be ready to big heals if the fight takes a long time, since his abilities increase in damage as the fight progresses.
+_EVERYONE:_ |grouprole EVERYONE
+|tip He will cast Blade Surge on a random player and rush to their location, leaving a copy of himself at that location. |grouprole EVERYONE
+|tip These copies cast his abilities when he does, so he becomes more difficult in longer fights, due to these copies. |grouprole EVERYONE
+|tip Distance yourself from other players, if possible, to avoid Blade Surge damaging multiple players at once. |grouprole EVERYONE
+|tip Avoid the grey lines on the ground when he casts Piercing Gale. |grouprole EVERYONE
+_HEALER:_ |grouprole HEALER
+|tip Be ready to big heals if the fight takes a long time, since his abilities increase in damage as the fight progresses. |grouprole HEALER
 Defeat Advisor Melandrus |scenarioend |goto 65.85,78.15
 step
 _Congratulations!_
@@ -1406,20 +1406,20 @@ step
 label "Wikket 2"
 kill Elfyra##114284
 kill Galindre##114251
-_Everyone_
-|tip These bosses have shared Health so if you damage one you damage them both
-|tip Elfyra will cast a spell called Defy Gravity which will put a swirling purple circle on the ground, keep away from these until Galindra casts Magic Magnificent
-|tip You will need the Defy Gravity debuff when the Magic Magnificent cast is completed to prevent death
-|tip Galindra will cast a spell called Wondrious Radiance, this will appear as a big purple circle, never stand in this
-_Damage_
-|tip Elfyra will periodically summon monkey adds be sure to switch to them and kill them fast
-|tip Interrupt any casts you can from either of the bosses
-_Healer_
-|tip When adds are out be wary of your group as they have no aggro table and randomly attack members of your team
-|tip Be sure to pop cooldowns if any of your team is not able to get the Defy Gravity debuff when Magic Magnificent is cast
-_Tank_
-|tip Try to move the bosses away from any of the purple swirls on the ground
-|tip When the adds are out try to move the bosses on top of them so they can be cleaved down
+_EVERYONE:_ |grouprole EVERYONE
+|tip These bosses have shared Health so if you damage one you damage them both |grouprole EVERYONE
+|tip Elfyra will cast a spell called Defy Gravity which will put a swirling purple circle on the ground, keep away from these until Galindra casts Magic Magnificent |grouprole EVERYONE
+|tip You will need the Defy Gravity debuff when the Magic Magnificent cast is completed to prevent death |grouprole EVERYONE
+|tip Galindra will cast a spell called Wondrious Radiance, this will appear as a big purple circle, never stand in this |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Elfyra will periodically summon monkey adds be sure to switch to them and kill them fast |grouprole DAMAGE
+|tip Interrupt any casts you can from either of the bosses |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip When adds are out be wary of your group as they have no aggro table and randomly attack members of your team |grouprole HEALER
+|tip Be sure to pop cooldowns if any of your team is not able to get the Defy Gravity debuff when Magic Magnificent is cast |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Try to move the bosses away from any of the purple swirls on the ground |grouprole TANK
+|tip When the adds are out try to move the bosses on top of them so they can be cleaved down |grouprole TANK
 Defeat the Wikket Event |killboss 1651/2
 |next "first crystal 2"
 step
@@ -1427,36 +1427,36 @@ label "Westfall Story 2"
 kill Toe Knee##114261
 kill Mrrgria##114260
 There are 3 phases in this fight in each phase there will be 2 bosses and in the last phase there will be one from each of the previous 2 phases
-_Everyone_
-|tip Avoid Flaming Gate and Burning Leg Sweep casted by Toe Knee, he will be in phases 1 and 3.
-|tip Avoid Wash Away which will send waves across the room, this will be created by Mrrgria and he will be in phases 2 and 3.
-|tip When Mrrgria casts Thunder Ritual on all players in your group be sure to spread out.
-_Damage_
-|tip Be sure to interrupt Bubble Blast, Shoreline Tidespeaker will cast this and these are active in phase 2.
-_Healer_
-|tip Heal any player inflicted by Poisonous Shank, healers that can dispell poisons should dispell this.
-_Tank_
-|tip Be sure to pick up the enemies as they come up in each phase.
-|tip Move the bosses out of any Waves or Tornados that they might be in.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Avoid Flaming Gate and Burning Leg Sweep casted by Toe Knee, he will be in phases 1 and 3. |grouprole EVERYONE
+|tip Avoid Wash Away which will send waves across the room, this will be created by Mrrgria and he will be in phases 2 and 3. |grouprole EVERYONE
+|tip When Mrrgria casts Thunder Ritual on all players in your group be sure to spread out. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Be sure to interrupt Bubble Blast, Shoreline Tidespeaker will cast this and these are active in phase 2. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Heal any player inflicted by Poisonous Shank, healers that can dispell poisons should dispell this. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Be sure to pick up the enemies as they come up in each phase. |grouprole TANK
+|tip Move the bosses out of any Waves or Tornados that they might be in. |grouprole TANK
 Defeat the Westfall Story Event |killboss 1651/2
 |next "first crystal 2"
 step
 label "Beautiful Beast 2"
 kill Coggleston##114328
 You must defeat all 3 mini bosses before you can attack Coggleston
-_Everyone_
-|tip Whenever one of these mini bosses die they will buff the damage of the other enemies by 25 percent.
-|tip When fixated by Babblet do not lead it into Burning Blaze this will buff its movement speed making it impossible to run away.
-|tip If you have the Drenched debuff you are able to clear patches of Burning Blaze.
-|tip When Mrs. Cauldrons casts Leftovers get 10 yards away from it, or Interrupt it.
-|tip If fixated by Babblet you must run away from it and try not to get hit, if hit it will deal damage and blind you for 4 seconds.
-_Damage_
-|tip Interrupt Luminore's Heat Wave ability if it is not interrupted it will do high damage to the entire group.
-|tip Try to kill all 3 mini bosses at once to prevent them from getting buffed.
-_Healer_
-|tip Watch the tank during this encounter they will be taking a lot of damage.
-_Tank_
-|tip Interrupt Dinner Bell! this is casted by Coggleston, if let off it will increase the haste of all allies by 100 percent.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Whenever one of these mini bosses die they will buff the damage of the other enemies by 25 percent. |grouprole EVERYONE
+|tip When fixated by Babblet do not lead it into Burning Blaze this will buff its movement speed making it impossible to run away. |grouprole EVERYONE
+|tip If you have the Drenched debuff you are able to clear patches of Burning Blaze. |grouprole EVERYONE
+|tip When Mrs. Cauldrons casts Leftovers get 10 yards away from it, or Interrupt it. |grouprole EVERYONE
+|tip If fixated by Babblet you must run away from it and try not to get hit, if hit it will deal damage and blind you for 4 seconds. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Interrupt Luminore's Heat Wave ability if it is not interrupted it will do high damage to the entire group. |grouprole DAMAGE
+|tip Try to kill all 3 mini bosses at once to prevent them from getting buffed. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Watch the tank during this encounter they will be taking a lot of damage. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Interrupt Dinner Bell! this is casted by Coggleston, if let off it will increase the haste of all allies by 100 percent. |grouprole TANK
 Defeat the Beautiful Beast Event |killboss 1651/2
 |next "first crystal 2"
 step
@@ -1489,18 +1489,18 @@ Jump Down here |goto Karazhan L/4 44.0,49.4
 confirm
 step
 kill Moroes##15687 |goto Karazhan L/3 27.1,63.5
-_Everyone_
-|tip Use Ghost Traps on Moroes's Dinner Guests, these can be found in this room. They look like grey traps with lights on the sides that are able to be picked up.
-|tip Use these traps and decided which of his dinner guests you would like to Crowdcontrol first and kill later.
-|tip Kill all the Dinner Guests before kill Moroes.
-|tip If you get Garrote be sure to use your personal cooldowns as this debuff doesn't disappear until the fight is over.
-_Damage_
-|tip Interrupt and kill all of the dinner guests before killing Moroes.
-_Healer_
-|tip Keep the people with Garrote up, once it is applied on someone it doesn't go away until the fight is completed.
-|tip Keep the tank up when they get the debuff Coat Check, this is applied by Moroes and reduces their protection by 75 percent.
-_Tank_
-|tip Use cooldowns when Coat Check is applied to you.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Use Ghost Traps on Moroes's Dinner Guests, these can be found in this room. They look like grey traps with lights on the sides that are able to be picked up. |grouprole EVERYONE
+|tip Use these traps and decided which of his dinner guests you would like to Crowdcontrol first and kill later. |grouprole EVERYONE
+|tip Kill all the Dinner Guests before kill Moroes. |grouprole EVERYONE
+|tip If you get Garrote be sure to use your personal cooldowns as this debuff doesn't disappear until the fight is over. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Interrupt and kill all of the dinner guests before killing Moroes. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Keep the people with Garrote up, once it is applied on someone it doesn't go away until the fight is completed. |grouprole HEALER
+|tip Keep the tank up when they get the debuff Coat Check, this is applied by Moroes and reduces their protection by 75 percent. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Use cooldowns when Coat Check is applied to you. |grouprole TANK
 Defeat Moroes |killboss 1651/16
 step
 Once Moroes is defeated he will drop his Rusty Keys
@@ -1533,15 +1533,15 @@ Follow this path that leads back to The Curator	|goto Karazhan L/9 32.2,39.2
 confirm
 step
 kill Curator##114247 |goto Karazhan L/9 49.3,71.3
-_Everyone_
-|tip Don't stand in Power Discharge this ability creates a large blue circle on the ground that does damage on impact and stays there for the entire fight if stood in at any point will continue dealing daamge to you.
-_Damage_
-|tip This is an add control fight whenever a Volatile Energy spawns they need to be switched to and killed asap.
-|tip When The Curator gets to 0 percent mana he will Evocate increasing his damage taken by 100 percent this is where you must use your cooldowns.
-_Healer_
-|tip After The Curator finishes casting Evocation he will explode doing high damage to the group be ready for this.
-_Tank_
-|tip When Power Discharge it will leave a pool on the ground be sure to move the boss to places away from these so your team doesnt run into them.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Don't stand in Power Discharge this ability creates a large blue circle on the ground that does damage on impact and stays there for the entire fight if stood in at any point will continue dealing daamge to you. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip This is an add control fight whenever a Volatile Energy spawns they need to be switched to and killed asap. |grouprole DAMAGE
+|tip When The Curator gets to 0 percent mana he will Evocate increasing his damage taken by 100 percent this is where you must use your cooldowns. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip After The Curator finishes casting Evocation he will explode doing high damage to the group be ready for this. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip When Power Discharge it will leave a pool on the ground be sure to move the boss to places away from these so your team doesnt run into them. |grouprole TANK
 Defeat the Curator |killboss 1651/32
 step
 Curator will drop the last Soul Fragment
@@ -1562,30 +1562,30 @@ If you collected all 5 Soul Fragments Medivh should be on this balcony waiting f
 Talk to him to begin the fight
 |tip If you wipe don't worry he will be there waiting for you everytime once summoned.
 kill Nightbane##114895 |goto Karazhan L/6 45.8,92.5
-_Everyone_
-|tip Ignite Soul, when this is targeted on a player you must run into the fire patches that are on the ground and get to around 20 percent hp before it goes off.
-|tip This debuff will explode hitting everyone in the group once the timer expires equal to the current health of the target.
-|tip During phase 3 Nightbane will gain a spell, this spell will periodically fear the entire group for 3 seconds use your personal cooldowns for this.
-_Damage_
-|tip Interrupt Reverberating Shadows this will happen every 12 or so seconds.
-|tip If there are any adds out during any phase cleave off the boss or the big add to kill them.
-|tip If you are a ranged class stand in the ranged on one side of the room to place Charred Earth.
-|tip Save your cooldowns for the air phase(phase 2) the Bonecurse needs to die asap.
-|tip Never stand directly behind Hightbane or directly infront of him, he has a tail swipe and a breathe.
-_Healer_
-|tip Stand in the ranged on one side of the room to place Charred Earth.
-|tip Periodically players will get a debuff called Burning Bones, this wil ldeal high damage for the entire time it is on a player, this can be dispelled but only when needed.
-|tip The longer this debuff is on a player the less mobs will spawn when it is dispelled. If it just expirers it will still spawn one add.
-|tip DO NOT heal players with the debuff Ignite Soul unless they are going to die.
-|tip During the 2nd phase the Bonecurse will spawn the longer this is up the more stacks of Jagged Shards will be put on the entire group, this debuff lasts the rest of the encounter.
-|tip Jagged Shards deals damage when applied and deals damage every 3 seconds after that, it also applies a movement speed debuff.
-|tip During Phase 2 adds will spawn and put a debuff on players called Absorb Vitality this debuff will absorb the next 1 million + healing on them and they will also take damage over time, this needs to be healed through to be taken off.
-|tip Never stand directly behind Hightbane or directly infront of him, he has a tail swipe and a breathe.
-_Tank_
-|tip Interrupt Reverberating Shadows this will happen every 12 or so seconds.
-|tip Never have Nightbanes tail or head toward the group.
-|tip Use cooldowns when he gains the buff Concentrated Power.
-|tip Pick up any adds that spawn during each phase.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Ignite Soul, when this is targeted on a player you must run into the fire patches that are on the ground and get to around 20 percent hp before it goes off.  |grouprole EVERYONE
+|tip This debuff will explode hitting everyone in the group once the timer expires equal to the current health of the target. |grouprole EVERYONE
+|tip During phase 3 Nightbane will gain a spell, this spell will periodically fear the entire group for 3 seconds use your personal cooldowns for this. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Interrupt Reverberating Shadows this will happen every 12 or so seconds. |grouprole DAMAGE
+|tip If there are any adds out during any phase cleave off the boss or the big add to kill them. |grouprole DAMAGE
+|tip If you are a ranged class stand in the ranged on one side of the room to place Charred Earth. |grouprole DAMAGE
+|tip Save your cooldowns for the air phase(phase 2) the Bonecurse needs to die asap.|grouprole DAMAGE
+|tip Never stand directly behind Hightbane or directly infront of him, he has a tail swipe and a breathe. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Stand in the ranged on one side of the room to place Charred Earth. |grouprole HEALER
+|tip Periodically players will get a debuff called Burning Bones, this wil ldeal high damage for the entire time it is on a player, this can be dispelled but only when needed. |grouprole HEALER
+|tip The longer this debuff is on a player the less mobs will spawn when it is dispelled. If it just expirers it will still spawn one add. |grouprole HEALER
+|tip DO NOT heal players with the debuff Ignite Soul unless they are going to die. |grouprole HEALER
+|tip During the 2nd phase the Bonecurse will spawn the longer this is up the more stacks of Jagged Shards will be put on the entire group, this debuff lasts the rest of the encounter. |grouprole HEALER
+|tip Jagged Shards deals damage when applied and deals damage every 3 seconds after that, it also applies a movement speed debuff. |grouprole HEALER
+|tip During Phase 2 adds will spawn and put a debuff on players called Absorb Vitality this debuff will absorb the next 1 million + healing on them and they will also take damage over time, this needs to be healed through to be taken off. |grouprole HEALER
+|tip Never stand directly behind Hightbane or directly infront of him, he has a tail swipe and a breathe. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Interrupt Reverberating Shadows this will happen every 12 or so seconds. |grouprole TANK
+|tip Never have Nightbanes tail or head toward the group. |grouprole TANK
+|tip Use cooldowns when he gains the buff Concentrated Power. |grouprole TANK
+|tip Pick up any adds that spawn during each phase. |grouprole TANK
 Defeat Nightbane |killboss 1651/128
 |next "Congrats 2"
 step
@@ -1607,20 +1607,20 @@ step
 label "Wikket 1"
 kill Elfyra##114284
 kill Galindre##114251
-_Everyone_
-|tip These bosses have shared Health so if you damage one you damage them both
-|tip Elfyra will cast a spell called Defy Gravity which will put a swirling purple circle on the ground, keep away from these until Galindra casts Magic Magnificent
-|tip You will need the Defy Gravity debuff when the Magic Magnificent cast is completed to prevent death
-|tip Galindra will cast a spell called Wondrious Radiance, this will appear as a big purple circle, never stand in this
-_Damage_
-|tip Elfyra will periodically summon monkey adds be sure to switch to them and kill them fast
-|tip Interrupt any casts you can from either of the bosses
-_Healer_
-|tip When adds are out be wary of your group as they have no aggro table and randomly attack members of your team
-|tip Be sure to pop cooldowns if any of your team is not able to get the Defy Gravity debuff when Magic Magnificent is cast
-_Tank_
-|tip Try to move the bosses away from any of the purple swirls on the ground
-|tip When the adds are out try to move the bosses on top of them so they can be cleaved down
+_EVERYONE:_ |grouprole EVERYONE
+|tip These bosses have shared Health so if you damage one you damage them both |grouprole EVERYONE
+|tip Elfyra will cast a spell called Defy Gravity which will put a swirling purple circle on the ground, keep away from these until Galindra casts Magic Magnificent |grouprole EVERYONE
+|tip You will need the Defy Gravity debuff when the Magic Magnificent cast is completed to prevent death |grouprole EVERYONE
+|tip Galindra will cast a spell called Wondrious Radiance, this will appear as a big purple circle, never stand in this |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Elfyra will periodically summon monkey adds be sure to switch to them and kill them fast |grouprole DAMAGE
+|tip Interrupt any casts you can from either of the bosses |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip When adds are out be wary of your group as they have no aggro table and randomly attack members of your team |grouprole HEALER
+|tip Be sure to pop cooldowns if any of your team is not able to get the Defy Gravity debuff when Magic Magnificent is cast |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Try to move the bosses away from any of the purple swirls on the ground |grouprole TANK
+|tip When the adds are out try to move the bosses on top of them so they can be cleaved down |grouprole TANK
 Defeat the Wikket Event |killboss 1651/2
 |next "first crystal 1"
 step
@@ -1628,36 +1628,36 @@ label "Westfall Story 1"
 kill Toe Knee##114261
 kill Mrrgria##114260
 There are 3 phases in this fight in each phase there will be 1 boss and in the last phase there will be one from each of the previous 2 phases
-_Everyone_
-|tip Avoid Flaming Gate and Burning Leg Sweep casted by Toe Knee, he will be in phases 1 and 3.
-|tip Avoid Wash Away which will send waves across the room, this will be created by Mrrgria and he will be in phases 2 and 3.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Avoid Flaming Gate and Burning Leg Sweep casted by Toe Knee, he will be in phases 1 and 3. |grouprole EVERYONE
+|tip Avoid Wash Away which will send waves across the room, this will be created by Mrrgria and he will be in phases 2 and 3. |grouprole EVERYONE
 |tip When Mrrgria casts Thunder Ritual on all players in your group be sure to spread out.
-_Damage_
-|tip Be sure to interrupt Bubble Blast, Shoreline Tidespeaker will cast this and these are active in phase 2.
-_Healer_
-|tip Heal any player inflicted by Poisonous Shank, healers that can dispell poisons should dispell this.
-_Tank_
-|tip Be sure to pick up the enemies as they come up in each phase.
-|tip Move the bosses out of any Waves or Tornados that they might be in.
+_DAMAGE:_ |grouprole DAMAGE
+|tip Be sure to interrupt Bubble Blast, Shoreline Tidespeaker will cast this and these are active in phase 2. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Heal any player inflicted by Poisonous Shank, healers that can dispell poisons should dispell this. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Be sure to pick up the enemies as they come up in each phase. |grouprole TANK
+|tip Move the bosses out of any Waves or Tornados that they might be in. |grouprole TANK
 Defeat the Westfall Story Event |killboss 1651/2
 |next "first crystal 1"
 step
 label "Beautiful Beast 1"
 kill Coggleston##114328
 You must defeat all 3 mini bosses before you can attack Coggleston
-_Everyone_
-|tip Whenever one of these mini bosses die they will buff the damage of the other enemies by 25 percent.
-|tip When fixated by Babblet do not lead it into Burning Blaze this will buff its movement speed making it impossible to run away.
-|tip If you have the Drenched debuff you are able to clear patches of Burning Blaze.
-|tip When Mrs. Cauldrons casts Leftovers get 10 yards away from it, or Interrupt it.
-|tip If fixated by Babblet you must run away from it and try not to get hit, if hit it will deal damage and blind you for 4 seconds.
-_Damage_
-|tip Interrupt Luminore's Heat Wave ability if it is not interrupted it will do high damage to the entire group.
-|tip Try to kill all 3 mini bosses at once to prevent them from getting buffed.
-_Healer_
-|tip Watch the tank during this encounter they will be taking a lot of damage.
-_Tank_
-|tip Interrupt Dinner Bell! this is casted by Coggleston, if let off it will increase the haste of all allies by 100 percent.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Whenever one of these mini bosses die they will buff the damage of the other enemies by 25 percent. |grouprole EVERYONE
+|tip When fixated by Babblet do not lead it into Burning Blaze this will buff its movement speed making it impossible to run away. |grouprole EVERYONE
+|tip If you have the Drenched debuff you are able to clear patches of Burning Blaze. |grouprole EVERYONE
+|tip When Mrs. Cauldrons casts Leftovers get 10 yards away from it, or Interrupt it. |grouprole EVERYONE
+|tip If fixated by Babblet you must run away from it and try not to get hit, if hit it will deal damage and blind you for 4 seconds. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Interrupt Luminore's Heat Wave ability if it is not interrupted it will do high damage to the entire group. |grouprole DAMAGE
+|tip Try to kill all 3 mini bosses at once to prevent them from getting buffed. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Watch the tank during this encounter they will be taking a lot of damage. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Interrupt Dinner Bell! this is casted by Coggleston, if let off it will increase the haste of all allies by 100 percent. |grouprole TANK
 Defeat the Beautiful Beast Event |killboss 1651/2
 |next "first crystal 1"
 step
@@ -1688,19 +1688,19 @@ Aquire the Guest Chambers Soul Fragment |q 44734/1 |goto Karazhan L/4 82.4,22.9
 step
 |tip This is an optional boss
 kill Maidan of Virtue##113971 |goto Karazhan L/4 83.7,50.0
-_Everyone_
-|tip If you get the Sacred Ground be sure to run to the outside of the room to place it down then immediatly run out so you don't get any stacks.
-|tip When she casts Mass Repentance be sure to run in and only get one stack from the Sacred Ground puddles to prevent from being stunned for 30 seconds.
-|tip Once Mass Repentance is completed she will then cast Holy Wrath, this needs to be interrupted but first the group must do 4.6 million damage to destroy the shield she gets.
-|tip Be sure to be at least 6 yards away from anyone else in the group so that Holy Bolt doesn't bounce to your team.
-_Damage_
-|tip Interrupt Holy Shock, none should get through as the debuff it applies lasts the entire fight.
-|tip Use your cooldowns to destroy her shield while she is casting Holy Wrath, once her shield is destroyed interrupt Holy Wrath.
-_Healer_
-|tip When people get the Sacred Ground debuff they will take a large amount of ticking damage every 2 seconds be sure to keep these people up.
-|tip Watch out for people if they get the Holy Shock debuff they will take increased damage from every spell.
-_Tank_
-|tip Interrupt Holy Shock, none should get through as the debuff it applies lasts the entire fight.
+_EVERYONE:_ |grouprole EVERYONE
+|tip If you get the Sacred Ground be sure to run to the outside of the room to place it down then immediatly run out so you don't get any stacks. |grouprole EVERYONE
+|tip When she casts Mass Repentance be sure to run in and only get one stack from the Sacred Ground puddles to prevent from being stunned for 30 seconds. |grouprole EVERYONE
+|tip Once Mass Repentance is completed she will then cast Holy Wrath, this needs to be interrupted but first the group must do 4.6 million damage to destroy the shield she gets. |grouprole EVERYONE
+|tip Be sure to be at least 6 yards away from anyone else in the group so that Holy Bolt doesn't bounce to your team. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Interrupt Holy Shock, none should get through as the debuff it applies lasts the entire fight. |grouprole DAMAGE
+|tip Use your cooldowns to destroy her shield while she is casting Holy Wrath, once her shield is destroyed interrupt Holy Wrath. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip When people get the Sacred Ground debuff they will take a large amount of ticking damage every 2 seconds be sure to keep these people up. |grouprole HEALER
+|tip Watch out for people if they get the Holy Shock debuff they will take increased damage from every spell. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Interrupt Holy Shock, none should get through as the debuff it applies lasts the entire fight. |grouprole TANK
 Defeat the Maiden of Virtue |killboss 1651/1
 step
 map Karazhan L/4
@@ -1712,18 +1712,18 @@ Jump Down here |goto 44.0,49.4
 confirm
 step
 kill Moroes##15687 |goto Karazhan L/3 27.1,63.5
-_Everyone_
-|tip Use Ghost Traps on Moroes's Dinner Guests, these can be found in this room. They look like grey traps with lights on the sides that are able to be picked up.
-|tip Use these traps and decide which of his dinner guests you would like to Crowdcontrol first and kill later.
-|tip Kill all the Dinner Guests before kill Moroes.
-|tip If you get Garrote be sure to use your personal cooldowns as this debuff doesn't disappear until the fight is over.
-_Damage_
-|tip Interrupt and kill all of the dinner guests before killing Moroes.
-_Healer_
-|tip Keep the people with Garrote up, once it is applied on someone it doesn't go away until the fight is completed.
-|tip Keep the tank up when they get the debuff Coat Check, this is applied by Moroes and reduces their protection by 75 percent.
-_Tank_
-|tip Use cooldowns when Coat Check is applied to you.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Use Ghost Traps on Moroes's Dinner Guests, these can be found in this room. They look like grey traps with lights on the sides that are able to be picked up. |grouprole EVERYONE
+|tip Use these traps and decide which of his dinner guests you would like to Crowdcontrol first and kill later. |grouprole EVERYONE
+|tip Kill all the Dinner Guests before kill Moroes. |grouprole EVERYONE
+|tip If you get Garrote be sure to use your personal cooldowns as this debuff doesn't disappear until the fight is over. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Interrupt and kill all of the dinner guests before killing Moroes. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Keep the people with Garrote up, once it is applied on someone it doesn't go away until the fight is completed. |grouprole HEALER
+|tip Keep the tank up when they get the debuff Coat Check, this is applied by Moroes and reduces their protection by 75 percent. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Use cooldowns when Coat Check is applied to you. |grouprole TANK
 Defeat Moroes |killboss 1651/16
 step
 Once Moroes is defeated he will drop his Rusty Keys
@@ -1745,19 +1745,19 @@ step
 Be sure to kill all of the mobs surrounding Attumen before starting the fight, they will pull with the boss if they are not killed
 |tip This is an optional boss.
 kill Attumen the Huntsman##114262 |goto Karazhan L/1 45.3,82.3
-_Everyone_
-|tip When the boss casts Mighty Stomp be sure to stop casting or you will get interrupted. This happens when they are Horse and Rider as One
-|tip They will summon Spectral Charge these will be lines of horses that need to be dodged. This happens when they are Horse and Rider as One.
-|tip DO NOT stand in Mezair it will be a cone of fire that Midnight will run through. This is when they are Fighting on Foot.
-|tip Everyone must stand in Shared Suffering this will deal a huge amount of damage split between everyone in the ability. This is when they are Fighting on Foot.
-_Damage_
-|tip Kill which ever one is targetable.
-_Healer_
-|tip An ability called Intangible Presense will put a debuff on everyone in the group
-|tip This debuff will also mark one person and that marked person needs to be the one dispelled or it will deal a huge amount of damage to the entire group.
-|tip Keep the tank up when Mortal Strike and Sharded Suffering goes out.
-_Tank_
-|tip Use your cooldowns for when Sharded Suffering is going out you may still have Mortal Strike on you.
+_EVERYONE:_ |grouprole EVERYONE
+|tip When the boss casts Mighty Stomp be sure to stop casting or you will get interrupted. This happens when they are Horse and Rider as One |grouprole EVERYONE
+|tip They will summon Spectral Charge these will be lines of horses that need to be dodged. This happens when they are Horse and Rider as One. |grouprole EVERYONE
+|tip DO NOT stand in Mezair it will be a cone of fire that Midnight will run through. This is when they are Fighting on Foot. |grouprole EVERYONE
+|tip Everyone must stand in Shared Suffering this will deal a huge amount of damage split between everyone in the ability. This is when they are Fighting on Foot. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Kill which ever one is targetable. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip An ability called Intangible Presense will put a debuff on everyone in the group |grouprole HEALER
+|tip This debuff will also mark one person and that marked person needs to be the one dispelled or it will deal a huge amount of damage to the entire group. |grouprole HEALER
+|tip Keep the tank up when Mortal Strike and Sharded Suffering goes out. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Use your cooldowns for when Sharded Suffering is going out you may still have Mortal Strike on you. |grouprole TANK
 Defeat Attumen the Huntsman |killboss 1651/8
 step
 map Karazhan L/1
@@ -1792,15 +1792,15 @@ confirm
 step
 Before starting this fight kill all of the trash mobs in this room, you will need the space
 kill Curator##114247 |goto Karazhan L/9 49.3,71.3
-_Everyone_
-|tip Don't stand in Power Discharge this ability creates a large blue circle on the ground that does damage on impact and stays there for the entire fight if stood in at any point will continue dealing daamge to you.
-_Damage_
-|tip This is an add control fight whenever a Volatile Energy spawns they need to be switched to and killed asap.
-|tip When The Curator gets to 0 percent mana he will Evocate increasing his damage taken by 100 percent this is where you must use your cooldowns.
-_Healer_
-|tip After The Curator finishes casting Evocation he will explode doing high damage to the group be ready for this.
-_Tank_
-|tip When Power Discharge it will leave a pool on the ground be sure to move the boss to places away from these so your team doesnt run into them.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Don't stand in Power Discharge this ability creates a large blue circle on the ground that does damage on impact and stays there for the entire fight if stood in at any point will continue dealing daamge to you. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip This is an add control fight whenever a Volatile Energy spawns they need to be switched to and killed asap. |grouprole DAMAGE
+|tip When The Curator gets to 0 percent mana he will Evocate increasing his damage taken by 100 percent this is where you must use your cooldowns. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip After The Curator finishes casting Evocation he will explode doing high damage to the group be ready for this. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip When Power Discharge it will leave a pool on the ground be sure to move the boss to places away from these so your team doesnt run into them. |grouprole TANK
 Defeat the Curator |killboss 1651/32
 step
 Curator will drop the last Soul Fragment
@@ -1817,18 +1817,18 @@ Follow this path to the Shade of Medivhs room. |goto Karazhan L/10 66.8,45.7
 confirm
 step
 kill Shade of Medivh##114350 |goto Karazhan L/10 66.8,45.7
-_Everyone_
-|tip When Flame Wreath goes out DO NOT MOVE until it is over.
-|tip When Ceaseless Winter is active keep moving around despite what Medivh says.
-|tip Be sure to spread out
-_Damage_
-|tip Interrupt Frostbite.
-|tip When Guardian's Image is out kill all 3 of the Guardian's Images quickly.
-_Healer_
-|tip Watch out for people targeted by Piercing Missiles this will do a high amount of damage.
-|tip Watch out for people If they get multiple stacks of Inferno Bolt.
-_Tank_
-|tip Interrupt Frostbite.
+_EVERYONE:_ |grouprole EVERYONE
+|tip When Flame Wreath goes out DO NOT MOVE until it is over. |grouprole EVERYONE
+|tip When Ceaseless Winter is active keep moving around despite what Medivh says. |grouprole EVERYONE
+|tip Be sure to spread out |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Interrupt Frostbite. |grouprole DAMAGE
+|tip When Guardian's Image is out kill all 3 of the Guardian's Images quickly. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Watch out for people targeted by Piercing Missiles this will do a high amount of damage. |grouprole HEALER
+|tip Watch out for people If they get multiple stacks of Inferno Bolt. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Interrupt Frostbite. |grouprole TANK
 Defeat the Shade of Medivh |killboss 1651/256
 step
 Jump down here and enjoy the scenery |goto Karazhan L/10 73.1,59.6
@@ -1836,13 +1836,13 @@ confirm
 step
 Jump down the stacks of books to get to the bottom
 kill Mana Devourer##114252 |goto Karazhan L/11 58.3,25.8
-_Everyone_
-|tip If the Boss gets to 100 percent mana it will instant wipe the group.
-|tip When Loose Mana is out, these are arcane orbs spread across the area, they need to all be absorbed before they hit the boss.
-|tip Each stack of Loose Mana that is absorbed will apply a stack of Unstable Mana, to remove this debuff the player will need to stand in the Energy Voids until the debuff is gone.
-_Healer_
-|tip Watch people that get to many stacks of Unstable Mana, they will be taking a lot of ticking damage until they remove it.
-|tip Keep the raid up as it will cast Energy Discharge throughout the fight dealing a high amount of damage to the entire group.
+_EVERYONE:_ |grouprole EVERYONE
+|tip If the Boss gets to 100 percent mana it will instant wipe the group. |grouprole EVERYONE
+|tip When Loose Mana is out, these are arcane orbs spread across the area, they need to all be absorbed before they hit the boss. |grouprole EVERYONE
+|tip Each stack of Loose Mana that is absorbed will apply a stack of Unstable Mana, to remove this debuff the player will need to stand in the Energy Voids until the debuff is gone. |grouprole EVERYONE
+_HEALER:_ |grouprole HEALER
+|tip Watch people that get to many stacks of Unstable Mana, they will be taking a lot of ticking damage until they remove it. |grouprole HEALER
+|tip Keep the raid up as it will cast Energy Discharge throughout the fight dealing a high amount of damage to the entire group. |grouprole HEALER
 Defeat the Mana Devourer |killboss 1651/4
 step
 kill 10 Mana Devourer##116494 |q 45291/1 |goto Karazhan L/12 20.8,31.4
@@ -1863,33 +1863,33 @@ path follow loose; loop off; ants curved; dist 20
 path	23.8,26.2	59.6,25.8	57.3,82.5
 This is Chess event, it is just trash but there are a few things you need to do and look out for.
 |tip Opening the world map will display an ant trail guiding you through
-_Everyone_
-|tip Move out of any glowing colored squares these will one shot.
-|tip Killing the king will defeat the trash, but to attack the king you must kill one of his pieces first.
-|tip When a piece dies the King becomes vulnerable for a short time, kill one piece attack the king until the debuff wears off then kill another piece and keep doing this until the king is dead.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Move out of any glowing colored squares these will one shot. |grouprole EVERYONE
+|tip Killing the king will defeat the trash, but to attack the king you must kill one of his pieces first. |grouprole EVERYONE
+|tip When a piece dies the King becomes vulnerable for a short time, kill one piece attack the king until the debuff wears off then kill another piece and keep doing this until the king is dead. |grouprole EVERYONE
 Defeat the Chess Event |goto Karazhan L/13 48.2,36.6
 confirm
 step
 Follow the path into the Netherspace |goto Karazhan L/14 37.4,53.0
 kill Viz'aduum the Watcher##114790 |goto Karazhan L/14 41.4,81.2
 This is a 3 phase fight
-_Everyone_
-|tip Everyone must run through the Green Portal that spawns when phase 2 and 3 start.
-|tip If you are targeted by Disintegrate move out of the way, this will do a lot of damage and knock you back this will be fatal in phases 2 and 3.
-|tip When people that are effected by Chaotic Shadows blow up Explosive Shadows will come out from every direction from themselves these need to be dodged.
-|tip In Phase 2 when you arrive on the first ship you must run through the guantlet avoiding Disintegrate and the green lasors on the sides.
-|tip In all phases dodge the infernal circles that appear on the ground.
-|tip If you are targeted by Fel Beam run away and don't move it into your group.
-_Damage_
-|tip In Phase 3 you must kill the adds once they are dead activate the boss.
-|tip Save heroism for the last phase.
-|tip Interrupt Burning Blast.
-_Healer_
-|tip Heal people effected by Chaotic Shadows, this can be dispelled early but during later phases you can not dispell them all before the timer runs out.
-|tip Dispelling these players will still activate Explosive Shadows so do not dispell when that player is in a bad place.
-_Tank_
-|tip In phase 3 pick up the adds and kill them before activating the boss.
-|tip Interrupt Burning Blast.
+_EVERYONE:_ |grouprole EVERYONE
+|tip Everyone must run through the Green Portal that spawns when phase 2 and 3 start. |grouprole EVERYONE
+|tip If you are targeted by Disintegrate move out of the way, this will do a lot of damage and knock you back this will be fatal in phases 2 and 3. |grouprole EVERYONE
+|tip When people that are effected by Chaotic Shadows blow up Explosive Shadows will come out from every direction from themselves these need to be dodged. |grouprole EVERYONE|grouprole EVERYONE
+|tip In Phase 2 when you arrive on the first ship you must run through the guantlet avoiding Disintegrate and the green lasors on the sides. |grouprole EVERYONE
+|tip In all phases dodge the infernal circles that appear on the ground. |grouprole EVERYONE
+|tip If you are targeted by Fel Beam run away and don't move it into your group. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip In Phase 3 you must kill the adds once they are dead activate the boss. |grouprole DAMAGE
+|tip Save heroism for the last phase. |grouprole DAMAGE
+|tip Interrupt Burning Blast. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Heal people effected by Chaotic Shadows, this can be dispelled early but during later phases you can not dispell them all before the timer runs out. |grouprole HEALER
+|tip Dispelling these players will still activate Explosive Shadows so do not dispell when that player is in a bad place. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip In phase 3 pick up the adds and kill them before activating the boss. |grouprole TANK
+|tip Interrupt Burning Blast. |grouprole TANK
 Defeat Viz'aduum the Watcher |q 44735/1 |only if havequest(44735)
 Defeat Viz'aduum the Watcher |killboss 1651/64
 |next "Congrats 1"

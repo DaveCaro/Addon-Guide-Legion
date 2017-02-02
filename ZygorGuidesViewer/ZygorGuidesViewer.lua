@@ -195,6 +195,8 @@ function ZGV:OnInitialize()
 	ZGV.db.global.gii_cache=ZGV.db.global.gii_cache or {}
 	gii_cache=ZGV.db.global.gii_cache
 
+	ZGV.db.global.sv_version = tonumber(ZGV.db.global.sv_version) or 1  + 1
+
 	self:WarnAboutDebugSettings()
 
 	assert(ZGV.version,"Ver.lua missing!")
@@ -1204,6 +1206,7 @@ function ZGV:ClearRecentActivities()
 		wipe(self.recentKills)
 		-- self.completedQuestTitles = {} -- let's not use this anymore, with GetQuestID available
 	end
+	self.step_share_onceflag = nil
 end
 
 function ZGV:FocusStep(num,forcefocus)
@@ -1328,6 +1331,11 @@ function ZGV:FocusStep(num,forcefocus)
 	--Hide goal image popup if it exists
 	if ZGV.GoalPopupImageFrame then
 		ZGV.GoalPopupImageFrame:Hide()
+	end
+
+	--Maybe show map preview
+	if (not GetPlayerFacing() or ZGV.db.char.fakeinstance) and ZGV.db.profile.preview_control=="step" then
+		ZGV.PointerMap:ShowPreview()
 	end
 
 	--self:AnimateGears()
@@ -2394,6 +2402,7 @@ function ZGV:UpdateFrame(full,onupdate)
 								frame.lines[line].label:SetText(indent.."|cffeeeecc".. goal.tooltip.."|r")
 								--frame.lines[line].label:SetMultilineIndent(1)
 								frame.lines[line].goal = nil
+								frame.lines[line].tipgoal = goal
 								frame.lines[line].briefhidden = true
 								frame.lines[line].special = (goal.parentStep.is_sticky and goal.parentStep~=ZGV.CurrentStep and "stickyline")
 									 or (goal.parentStep.is_poi and goal.parentStep~=ZGV.CurrentStep and "poiline")
@@ -3992,7 +4001,7 @@ function ZGV:GoalOnClick(goalframe,button)
 	self.GoalClickedTime = curTime
 	goalframe = goalframe:GetParent()
 	local stepframe = goalframe:GetParent()
-	local goal = goalframe.goal
+	local goal = goalframe.goal or goalframe.tipgoal
 
 	if not goal then return end
 
@@ -4020,7 +4029,7 @@ function ZGV:GoalOnClick(goalframe,button)
 end
 
 function ZGV:GoalOnEnter(goalframe)
-	local goal = goalframe:GetParent().goal
+	local goal = goalframe:GetParent().goal or goalframe:GetParent().tipgoal
 	if not goal then return end
 
 	local step = goal.parentStep
@@ -4325,7 +4334,7 @@ function ZGV:OpenQuickStepMenu(stepframe,goalframe)
 	ZGVFMenu.goalframe=goalframe
 
 	local step = stepframe.step
-	local goal = goalframe.goal
+	local goal = goalframe.goal or goalframe.tipgoal
 
 	local menu = {
 		{
@@ -4379,26 +4388,26 @@ function ZGV:OpenQuickStepMenu(stepframe,goalframe)
 		})
 	end
 
-	local id = goal.npcid or (goal.mobs and goal.mobs[1] and goal.mobs[1].id) or (goal.action=="kill" and goal.targetid)
 	--[[ CreatureViewer removal, 7.0
-	if id then
-		local name = self.Localizers:GetTranslatedNPC(id) or "(creature)"
-		tinsert(menu,{
-			text = L['qmenu_goal_creature_data']:format(name),
-			tooltipTitle = L['qmenu_goal_creature'],
-			tooltipTitleText = L['qmenu_goal_creature_desc']:format(name),
-			tooltipOnButton = true,
-			func = function()
-				self.db.profile.viewcreature=true
-				self.CreatureViewer:ShowCreature(id,name)
-				if self.CreatureViewer.failed then
-					self:Print("Creature is not yet available - too far.")
-				end
-			end,
-			--Try both and hopefully one works.
-			isNotRadio=true,
-		})
-	end
+		local id = goal.npcid or (goal.mobs and goal.mobs[1] and goal.mobs[1].id) or (goal.action=="kill" and goal.targetid)
+		if id then
+			local name = self.Localizers:GetTranslatedNPC(id) or "(creature)"
+			tinsert(menu,{
+				text = L['qmenu_goal_creature_data']:format(name),
+				tooltipTitle = L['qmenu_goal_creature'],
+				tooltipTitleText = L['qmenu_goal_creature_desc']:format(name),
+				tooltipOnButton = true,
+				func = function()
+					self.db.profile.viewcreature=true
+					self.CreatureViewer:ShowCreature(id,name)
+					if self.CreatureViewer.failed then
+						self:Print("Creature is not yet available - too far.")
+					end
+				end,
+				--Try both and hopefully one works.
+				isNotRadio=true,
+			})
+		end
 	--]]
 
 	if goal:IsCompleteable() then
@@ -4527,6 +4536,26 @@ function ZGV:OpenQuickStepMenu(stepframe,goalframe)
 			isNotRadio=true,
 		})
 	end
+
+	tinsert(menu,{
+		text = L['qmenu_shareto'],
+		hasArrow = true,
+		menuList = {
+			{ text = L['qmenu_shareto_party'], checked = function() return self.db.profile.share_target=="PARTY" end, func = function() self.db.profile.share_target="PARTY"  CloseDropDownForks() end },
+			{ text = L['qmenu_shareto_raid'], checked = function() return self.db.profile.share_target=="RAID" end, func = function() self.db.profile.share_target="RAID" CloseDropDownForks() end },
+			{ text = L['qmenu_shareto_say'], checked = function() return self.db.profile.share_target=="SAY" end, func = function() self.db.profile.share_target="SAY" CloseDropDownForks() end },
+		}
+	})
+
+	local rolegoals
+	for i,g in ipairs(step.goals) do  if g.grouprole then   rolegoals=true  break  end end
+	if rolegoals then
+		tinsert(menu,{
+			text = L['qmenu_share_allgrouproles'],
+			func = function() step:ShareToChat(self.db.profile.share_target or "SAY","rolegoals","brand") end,
+		})
+	end
+
 	--[[
 		{
 			text = L['opt_miniresizeup'],
@@ -4563,7 +4592,14 @@ function ZGV:OpenQuickStepMenu(stepframe,goalframe)
 			func = function() ZGV:SearchForCompleteableGoal() end
 		}
 	--]]
-	EasyFork(menu,ZGVFMenu,goalframe:GetName(),0,0,"MENU",3)
+
+	tinsert(menu,{
+		text = L['qmenu_close'],
+		hasArrow = false,
+		func = function()  CloseDropDownForks() end,
+	})
+
+	EasyFork(menu,ZGVFMenu,goalframe:GetName(),0,0,"MENU",3)  -- replacement for EasyMenu, just not as insecure.
 end
 
 --[[

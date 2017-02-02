@@ -5327,6 +5327,230 @@ accept Jorus the Cobalt Netherwing Drake##11109 |goto 66.8,17.6 |instant |or
 step
 Congratulations, you are now the proud owner of a Netherdrake Mount!  Enjoy!
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dailies Guides\\Outland\\Netherwing Egg Hunting - Optimized Path", {
+author="support@zygorguides.com",
+startlevel=80,
+description="This guide section will walk you through an optimized path of collecting Netherwing Eggs,\nwhich you can turn in for 250 Netherwing rep each.\nYou must have completed the Netherwing Reputation (Neutral) - Pre-Quests guide section\nin order to be able to collect and turn in the Netherwing Eggs you find using this guide section.",
+},[[
+step
+There can be an egg here |goto Shadowmoon Valley,69.4,63.6 < 5 |c
+|tip At the top of the stairs inside this tower.
+step
+There can be an egg here |goto Shadowmoon Valley,70.1,62.0 < 5 |c
+|tip In this tiny hallway of the lookout point on the top level of the Dragonmaw Fortress.
+step
+There can be an egg here |goto Shadowmoon Valley,71.4,60.7 < 5 |c
+|tip Sitting on the middle of this small round table inside this big room on the bottom level of the Dragonmaw Fortress.
+step
+There can be an egg here |goto Shadowmoon Valley,70.9,62.6 < 5 |c
+|tip Sitting on the floor next to this small fire brazier inside this big room on the bottom level of the Dragonmaw Fortress.
+step
+There can be an egg here |goto Shadowmoon Valley,71.3,62.6 < 5 |c
+|tip Sitting on the floor next to the wall inside this big room on the top level of the Dragonmaw Fortress.
+step
+There can be an egg here |goto Shadowmoon Valley,71.4,60.8 < 5 |c
+|tip Sitting on the floor inside this tiny room on the top level of the Dragonmaw Fortress.
+step
+There can be an egg here |goto Shadowmoon Valley,70.0,60.3 < 5  |c
+|tip In this tiny hallway of the lookout point on the top level of the Dragonmaw Fortress.
+step
+There can be an egg here |goto Shadowmoon Valley,69.7,58.5 < 5 |c
+|tip Sitting on the ground in this pen area amongst the baby netherdrakes.
+step
+There can be an egg here |goto Shadowmoon Valley,68.1,59.7 < 5 |c
+|tip In this tiny hallway of the lookout point on the top level of the Dragonmaw Fortress.
+step
+There can be an egg here |goto Shadowmoon Valley,68.3,59.8 < 5 |c
+|tip Sitting on the ground in this corner.
+step
+There can be an egg here |goto Shadowmoon Valley,68.5,61.2 < 5 |c
+|tip Sitting on the ground in this stall inside the stable.
+step
+There can be an egg here |goto Shadowmoon Valley,67.2,61.3 < 5 |c
+|tip Sitting in this wooden wagon.
+step
+There can be an egg here |goto Shadowmoon Valley,67.2,62.3 < 5 |c
+|tip In this tiny hallway of the lookout point on the top level of the Dragonmaw Fortress.
+step
+There can be an egg here |goto Shadowmoon Valley,68.9,62.5 < 5 |c
+|tip Sitting on the ground inside this half burned down hut.
+step
+There can be an egg here |goto Shadowmoon Valley,76.0,81.2 < 5 |c
+|tip Sitting on the corner edge of this wooden landing dock.
+step
+There can be an egg here |goto Shadowmoon Valley,75.2,82.3 < 5 |c
+|tip Sitting on the ground next to this big bunch of blue crystals.
+step
+There can be an egg here |goto Shadowmoon Valley,73.7,82.3 < 5 |c
+|tip Sitting on top of this small mountain peak.
+step
+There can be an egg here |goto Shadowmoon Valley,73.0,84.0 < 5 |c
+|tip Sitting on the edge of this small cliff, between 2 bunchs of big blue crystals.
+step
+There can be an egg here |goto Shadowmoon Valley,71.0,81.5 < 5 |c
+|tip Sitting on top of this tall mountain peak.
+step
+There can be an egg here |goto Shadowmoon Valley,68.2,81.7 < 5 |c
+|tip Sitting on top of this tall mountain peak.
+step
+There can be an egg here |goto Shadowmoon Valley,66.2,83.8 < 5 |c
+|tip Sitting on top of this tall mountain peak.
+step
+There can be an egg here |goto Shadowmoon Valley,65.7,84.2 < 5 |c
+|tip Sitting at the very tip of this huge crystal.
+step
+There can be an egg here |goto Shadowmoon Valley,63.3,81.5 < 5 |c
+|tip Sitting on top of this tall mountain peak.
+step
+There can be an egg here |goto Shadowmoon Valley,65.4,76.5 < 5 |c
+|tip Sitting on this big floating rock.
+step
+There can be an egg here |goto Shadowmoon Valley,63.2,75.6 < 5 |c
+|tip Sitting on this big floating rock.
+step
+There can be an egg here |goto Shadowmoon Valley,62.2,74.2 < 5 |c
+|tip Sitting on this small floating rock.  You have to fly down to it.
+step
+There can be an egg here |goto Shadowmoon Valley,61.7,73.3 < 5 |c
+|tip Sitting on this big floating rock.  You have to fly down to it.
+step
+There can be an egg here |goto Shadowmoon Valley,63.0,71.6 < 5 |c
+|tip Sitting on this big floating rock.  You have to fly up to it.
+step
+There can be an egg here |goto Shadowmoon Valley,61.3,70.7 < 5 |c
+|tip Sitting on this big floating rock.
+step
+There can be an egg here |goto Shadowmoon Valley,60.6,73.4 < 5 |c
+|tip Sitting on this big floating rock.
+step
+There can be an egg here |goto Shadowmoon Valley,59.3,74.1 < 5 |c
+|tip Sitting on this big floating rock.
+step
+There can be an egg here |goto Shadowmoon Valley,60.0,76.7 < 5 |c
+|tip Sitting on this big floating rock.
+step
+There can be an egg here |goto Shadowmoon Valley,59.6,78.3 < 5 |c
+|tip Sitting on this big floating rock.
+step
+There can be an egg here |goto Shadowmoon Valley,61.2,77.3 < 5 |c
+|tip Sitting on this big floating rock.  You have to fly up to it.
+step
+There can be an egg here |goto Shadowmoon Valley,62.2,77.8 < 5 |c
+|tip Sitting on this big floating rock.
+step
+There can be an egg here |goto Shadowmoon Valley,63.3,81.5 < 5 |c
+|tip Sitting on top of this tall mountain peak.
+step
+There can be an egg here |goto Shadowmoon Valley,63.0,83.7 < 5 |c
+|tip Sitting on top of this tall mountain peak.
+step
+There can be an egg here |goto Shadowmoon Valley,63.5,84.8 < 5 |c
+|tip Sitting on top of this tall mountain peak.
+step
+There can be an egg here |goto Shadowmoon Valley,65.5,84.9 < 5 |c
+|tip Sitting on the ground next to this bunch of big blue crystals.
+step
+talk Yarzill the Merc##23141
+Turn in all of the Netherwing Eggs you have collected |collect 0! Netherwing Egg##32506 |goto 66.0,86.5
+step
+There can be an egg here |goto Shadowmoon Valley,64.0,86.1 < 5 |c
+|tip Sitting on the ground next to this bunch of big blue crystals.  This one is pretty well hidden, so pay close attention to this one or you might pass it up.
+step
+There can be an egg here |goto Shadowmoon Valley,62.5,84.9 < 5 |c
+|tip Sitting on the ground next to this bunch of big blue crystals.
+step
+There can be an egg here |goto Shadowmoon Valley,60.2,87.1 < 5 |c
+|tip Sitting on this big floating rock.
+step
+There can be an egg here |goto Shadowmoon Valley,62.1,89.5 < 5 |c
+|tip Sitting on this big floating rock.  You have to fly up to it.
+step
+There can be an egg here |goto Shadowmoon Valley,64.9,90.8 < 5 |c
+|tip Sitting on the ground near this bunch of big blue crystals.
+step
+Go inside the mine
+There can be an egg here |goto Shadowmoon Valley,64.8,87.2 < 5 |c
+|tip Netherwing Eggs can spawn in various places in this entry hallway in the mines, so look around before moving on.
+step
+Jump down off the mine cart track here |goto Shadowmoon Valley,68.3,84.0 < 5 |c
+step
+There can be an egg here |goto Shadowmoon Valley,68.8,86.1 < 5 |c
+|tip Netherwing Eggs can spawn in various places all around this room, so make sure to check thoroughly in each small side space.
+step
+There can be an egg here |goto Shadowmoon Valley,72.3,87.3 < 5 |c
+|tip Netherwing Eggs can spawn in various places all around this room with the big blue ghost dragon, so make sure to check thoroughly.
+step
+There can be an egg here |goto Shadowmoon Valley,69.9,85.8 < 5 |c
+|tip Go back to the mine cart track and follow the track on the right side.
+step
+There can be an egg here |goto Shadowmoon Valley,73.6,85.2 < 5 |c
+|tip Follow the path in the cave to this spot.  Netherwing Eggs can spawn in various places all around this room, so make sure to check thoroughly in each small side space.  Also, be sure to keep an eye out for eggs all around as you run through the mine to this spot.
+step
+There can be an egg here |goto Shadowmoon Valley,73.0,89.3 < 5 |c
+|tip Follow the path in the cave to this spot.  Netherwing Eggs can spawn in various places all around this room, so make sure to check thoroughly in each small side space.  Also, be sure to keep an eye out for eggs all around as you run through the mine to this spot.
+step
+There can be an egg here |goto Shadowmoon Valley,73.6,85.2 < 5 |c
+|tip Follow the path in the cave to this spot.  Netherwing Eggs can spawn in various places all around this room, so make sure to check thoroughly in each small side space.  Also, be sure to keep an eye out for eggs all around as you run through the mine to this spot.
+step
+There can be an egg here |goto Shadowmoon Valley,68.5,81.6 < 5 |c
+|tip Follow the path in the cave to this spot.  Netherwing Eggs can spawn in various places all around this room, so make sure to check thoroughly in each small side space.  Also, be sure to keep an eye out for eggs all around as you run through the mine to this spot.
+step
+There can be an egg here |goto Shadowmoon Valley,64.8,83.0 < 5 |c
+|tip Follow the path in the cave to this spot.  Netherwing Eggs can spawn in various places all around this room, so make sure to check thoroughly in each small side space.  Also, be sure to keep an eye out for eggs all around as you run through the mine to this spot.
+step
+Jump over the wooden rail in this spot to get down to the hallway below |goto Shadowmoon Valley,65.2,84.2 < 5 |c
+step
+Leave the cave |goto Shadowmoon Valley,65.3,90.2 < 5 |c
+|tip Make sure to keep an eye out for Netherwing Eggs as you run through the entrance hallway to leave the cave.
+step
+There can be an egg here |goto Shadowmoon Valley,65.5,94.2 < 5 |c
+|tip Sitting on this big floating rock.  You have to fly up to it.
+step
+There can be an egg here |goto Shadowmoon Valley,68.0,94.9 < 5 |c
+|tip Sitting on this big floating rock.
+step
+There can be an egg here |goto Shadowmoon Valley,69.6,91.8 < 5 |c
+|tip Sitting on the ground next to this bunch of big blue crystals.
+step
+There can be an egg here |goto Shadowmoon Valley,70.9,89.2 < 5 |c
+|tip Sitting on top of this tall mountain peak.
+step
+There can be an egg here |goto Shadowmoon Valley,71.4,86.6 < 5 |c
+|tip Sitting on the ground next to this bunch of big blue crystals, up on the top of this mountain.
+step
+There can be an egg here |goto Shadowmoon Valley,72.2,87.1 < 5 |c
+|tip Sitting on top of this tall mountain peak.
+step
+There can be an egg here |goto Shadowmoon Valley,73.4,90.3 < 5 |c
+|tip Sitting on top of this tall mountain peak.
+step
+There can be an egg here |goto Shadowmoon Valley,75.8,91.6 < 5 |c
+|tip Sitting on this small floating rock.
+step
+There can be an egg here |goto Shadowmoon Valley,77.6,92.6 < 5 |c
+|tip Sitting on this big floating rock.
+step
+There can be an egg here |goto Shadowmoon Valley,77.4,95.7 < 5 |c
+|tip Sitting on this big floating rock.
+step
+There can be an egg here |goto Shadowmoon Valley,77.3,85.9 < 5 |c
+|tip Sitting on top of this tall mountain peak.
+step
+There can be an egg here |goto Shadowmoon Valley,76.5,83.3 < 5 |c
+|tip Sitting on the ground inside this netherdrake skeleton's mouth.
+step
+There can be an egg here |goto Shadowmoon Valley,78.9,83.3 < 5 |c
+|tip Sitting right next to this bunch of big blue crystals on the side of this cliff.  You have to fly down to it.
+step
+There can be an egg here |goto Shadowmoon Valley,78.1,81.2 < 5 |c
+|tip Sitting on top of this tall mountain peak.  You have to fly up to it.
+step
+There can be an egg here |goto Shadowmoon Valley,78.8,79.6 < 5 |c
+|tip Sitting at the very tip of this huge crystal.
+step
+This is the end of the path.
+Click here to go back to the beginning of the path. |confirm |next "start"
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dailies Guides\\Outland (60 - 70)\\Shattrath Cooking Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the Cooking daily quests to earn Shattrath Cooking Awards",

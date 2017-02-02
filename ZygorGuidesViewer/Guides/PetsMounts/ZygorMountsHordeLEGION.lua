@@ -3,6 +3,26 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("PetsMountsHLEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "LEG"
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Legion\\Brawler's Burly Basilisk",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"guild","brawler","burly","ground","mount","basilisk"},
+condition_end="hasmount(230844)",
+model={73248},
+description="This guide will help you acquire the Brawler's Burly Basilisk.",
+},[[
+step
+You will need to gain _Rank 8_ with the Legion Brawler's Guild
+Click here to be taken to the Brawler's guild event guide, this will show you strategys on how to defeat each boss |confirm |next "Zygor's Horde Events Guides\\Brawler's Guild\\Legion Brawler's Guild"
+confirm
+only if ZGV:GetReputation(2010).friendRep<7000
+step
+talk Paul North##68364
+buy 1 Brawler's Burly Basilisk##142403 |goto Brawl'gar Arena/1 50.79,28.44
+|tip This mount costs 3,200 gold.
+step
+learnmount Brawler's Burly Basilisk##230844 |use Brawler's Burly Basilisk##142403
+]])
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Legion\\Spirit of Eche'ro",{
 author="support@zygorguides.com",
@@ -446,7 +466,7 @@ This Mount is hard to attain
 You collect Ephemeral Crystals found in Azsuna, that spawn at random locations
 You _MUST NOT DIE_ or you will have to collect the Crystals all over
 You _MUST NOT_ Log Off, or you will have to start over
-You _MUT NOT_ Leave Azsuna, or you will have to start over
+You _MUST NOT_ Leave Azsuna, or you will have to start over
 Note that if another player gets the spawn before you, you will have to wait for the crystals to reset
 Click here to continue |confirm
 stickystart "Crystal"
@@ -1031,5 +1051,47 @@ buy 1 Darkwater Skate##142398 |goto Darkmoon Island/0 52.52,88.59
 |tip These can either be bought from the auction house or farmed for by fishing in the water on darkmoon Island.
 Use the Darkwater Skate |use Darkwater Skate##142398
 Learn the Darkwater Skate |learnpet 228919
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Legion\\Steelbound Devourer",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"steelbound","devourer","ground","mount"},
+condition_end="hasmount(213209)",
+model={70099},
+description="This guide will help you acquire the Steelbound Devourer.",
+},[[
+step
+Click here if you are a Blacksmith and would like to make this mount |next "Steelbound"
+Click here if you would like to buy this mount from the AH |next "AH Mount"
+confirm
+step
+label "Steelbound"
+The recipe for this mount drops off Tichondrius and does not have a 100 percent chance to drop
+Enter the Nighthold with your group |goto The Nighthold/1 23.9,91.1 |c
+|tip This recipe can only drop from normal difficulty or higher.
+|tip You do not need 800 blacksmithing to receive this recipe but you do need 800 blacksmithing to learn it.
+step
+kill Tichondrius##103685
+|tip This boss can be found half way through the instance.
+collect 1 Recipe: Fel Core Hound Harness##137687 |n
+learn Fel Core Hound Harness##213916 |use Recipe: Fel Core Hound Harness##137687
+step
+You will now need the materials to make this mount
+collect 100 Demonsteel Bar##124461
+collect 50 Blood of Sargeras##124124
+collect 10 Infernal Brimstone##124444
+collect 10 Felhide##124116
+confirm
+step
+create 1 Fel Core Hound Harness##213916
+learnmount Steelbound Devourer##213209 |use Steelbound Harness##137686 |next "Steelbound Grats"
+step
+label "AH Mount"
+talk Auctioneer Drezmit##44866
+buy 1 Steelbound Harness##137686 |n |goto Orgrimmar/1 54.06,73.33
+learnmount Steelbound Devourer##213209 |use Steelbound Harness##137686 |next "Steelbound Grats"
+step
+label "Steelbound Grats"
+Congratulations you are now the proud owner of the _Steelbound Devourer_!
 ]])
 ZGV.BETAEND()
