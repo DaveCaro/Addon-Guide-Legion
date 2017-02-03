@@ -196,7 +196,7 @@ local function CreateDumpFrameReport()
 		frame.scroll1 = CHAIN(ui:Create("ScrollChild",frame,name.."Scroll1","editbox"))
 			:SetBackdrop(SkinData("BugBackdrop"))
 			:SetBackdropColor(unpack(SkinData("BugBackdropColor")))
-			:SetHideWhenUseless(1)
+			--:SetHideWhenUseless(1)
 			:SetSize(480,135)
 			:SetPoint("TOPLEFT", frame.header1, "BOTTOMLEFT", 0, -10)
 			:MySetPoint("BOTTOMRIGHT", frame, "RIGHT", -10, 0)
@@ -223,7 +223,7 @@ local function CreateDumpFrameReport()
 		frame.scroll2 = CHAIN(ui:Create("ScrollChild",frame,name.."Scroll2","editbox"))
 			:SetBackdrop(SkinData("BugBackdrop"))
 			:SetBackdropColor(unpack(SkinData("BugBackdropColor")))
-			:SetHideWhenUnless(1)
+			--:SetHideWhenUnless(1)
 			:SetSize(480,135)
 			:SetPoint("TOPLEFT", frame.header2, "BOTTOMLEFT", 0, -10)
 			:MySetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -10, 35)
@@ -354,7 +354,7 @@ function ZGV:GetBugReport(maint)
 		local maptex,mapx,mapy,ismicro,microname = GetMapInfo()
 		microname=microname or ""
 		s = s .. ("Position: |cffffeeaa%s /%s %.2f,%.2f|r (#%s, zone:'%s', realzone:'%s', subzone:'%s', minimapzone:'%s', micro:'%s', texture:'%s')\n"):format(
-		 ZGV.Pointer.GetMapNameByID2(ZGV.CurrentMapID or 0) or "?",ZGV.CurrentMapFloor or "?", x*100,y*100,
+		 ZGV.Pointer.GetMapNameByID2(ZGV.CurrentMapID or 0) or "?",ZGV.CurrentMapFloor or "?", (x or 0)*100,(y or 0)*100,
 		 ZGV.CurrentMapID or "?",GetZoneText(),GetRealZoneText(),GetSubZoneText(),GetMinimapZoneText(),microname,maptex)
 		if GetLocale()~="enUS" then
 			--s = s .. ("    enUS: realzone:'%s' zone:'%s' subzone:'%s' minimapzone:'%s')\n"):format(tostring(BZR[GetRealZoneText()]),tostring(BZR[GetZoneText()]),BZR[GetSubZoneText()] or "("..GetSubZoneText()..")",BZR[GetMinimapZoneText()] or "("..GetMinimapZoneText()..")")

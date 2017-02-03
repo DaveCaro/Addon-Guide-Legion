@@ -4,7 +4,6 @@ if UnitFactionGroup("player")~="Alliance" then return end
 
 ZygorGuidesViewer.GuideMenuTier = "LEG"
 
-ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\POI Legion Treasures",{
 	hidden=true,
 	poi=true,
@@ -2439,4 +2438,3 @@ step //280
 	click Small Treasure Chest##233107 |q 40916 |future |goto Vault of the Wardens/3 23.30,81.43
 	|tip This treasure is only available after completing the All The Way Up quest.
 ]])
-ZGV.BETAEND()

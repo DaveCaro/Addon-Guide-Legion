@@ -1922,7 +1922,7 @@ function ZGV:Options_DefineOptionTables()
 		AddOption('autoacceptturnin',{ type = 'toggle', _default=false, width="full", set=function(k,v) Setter_Simple(k,v) self.db.profile.autoaccept=v self.db.profile.autoturnin=v end})
 		--AddOption('autoturnin',{ type = 'toggle', name=L['opt_autoturnin'], _default=false, width="full" })
 
-			--AddSubgroup('autoquest',{width='triple'})
+			AddSubgroup('autoquest',{width='triple'})
 				--AddOption('autoaccept',{ type = 'toggle', name=function() return L['opt_autoaccept'] end, desc=function() return L['opt_autoaccept_desc'] end, })
 				--AddOption('autoturnin',{ type = 'toggle', name=function() return L['opt_autoturnin'] end, desc=function() return L['opt_autoturnin_desc'] end, })
 				--AddOptionSep()
@@ -1943,7 +1943,7 @@ function ZGV:Options_DefineOptionTables()
 				--]]
 				--AddOption('autoacceptshowobjective',{ type = 'toggle', width="full", disabled=function() return not self.db.profile.autoaccept end })
 				--AddOptionSep()
-			--EndSubgroup()
+			EndSubgroup()
 
 		--AddOption('autoselectitem',{ type = 'toggle', _default=false, disabled = function() return not (self.db.profile.autoturnin and self.db.profile.questitemselector) end, width="full"})
 		AddOption('autoselectitem',{ type = 'toggle', _default=false, width="full"})
@@ -1998,6 +1998,8 @@ function ZGV:Options_DefineOptionTables()
 		--[[hidden--]] AddOption('minimapzoom',{ type = 'toggle', width = "full", set = function(i,v) Setter_Simple(i,v)  self.Pointer:MinimapZoomChanged() end, _default = false, hidden=true, })
 
 		--[[hidden--]] AddOption('share_target',{ hidden=true, type = 'select', _default="SAY", width="single", values = {['SAY']="/say",['PARTY']="/party",['RAID']="/raid"}})
+
+		AddOption('analyzereps',{ type = 'toggle', width = "full", _default=false })
 
 		--[[  --tweaks
 			AddOptionSep()
@@ -2986,7 +2988,6 @@ function ZGV:Options_DefineOptionTables()
 				end
 			})
 
-			AddOption('analyzereps',{ type = 'toggle', width = "full", _default=false })
 			AddOption('foglightdebug',{
 				name = "(Debug) Check fog",
 				desc = "Check foglighting for the current map",

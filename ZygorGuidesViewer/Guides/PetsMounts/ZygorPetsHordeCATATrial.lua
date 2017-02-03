@@ -12,7 +12,6 @@ step
 #include "auctioneer"
 buy 1 Rabbit Crate (Snowshoe)##8497
 |tip This pet must be bought with an Alliance character or through the Auction House
-modeldisplay 16191
 step
 learnpet Snowshoe Rabbit##7560 |use Rabbit Crate (Snowshoe)##8497
 ]])
@@ -33,7 +32,6 @@ step
 #include "auctioneer"
 buy 1 Cat Carrier (Bombay)##8485
 |tip This pet must be bought with an Alliance character or through the Auction House
-modeldisplay 5556
 step
 learnpet Bombay Cat##7385  |use Cat Carrier (Bombay)##8485
 ]])
@@ -45,7 +43,6 @@ step
 #include "auctioneer"
 buy 1 Cat Carrier (Cornish Rex)##8486
 |tip This pet must be bought with an Alliance character or through the Auction House
-modeldisplay 5586
 step
 learnpet Cornish Rex Cat##7384 |use Cat Carrier (Cornish Rex)##8486
 ]])
@@ -66,7 +63,6 @@ step
 #include "auctioneer"
 buy 1 Cat Carrier (Orange Tabby)##8487
 |tip This pet must be bought with an Alliance character or through the Auction House
-modeldisplay 5554
 step
 learnpet Orange Tabby Cat##7382 |use Cat Carrier (Orange Tabby)##8487
 ]])
@@ -78,7 +74,6 @@ step
 #include "auctioneer"
 buy 1 Cat Carrier (Silver Tabby)##8488
 tip This pet must be bought with an Alliance character or through the Auction House
-modeldisplay 5555
 step
 learnpet Silver Tabby Cat##7381 |use Cat Carrier (Silver Tabby)##8488
 ]])

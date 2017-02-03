@@ -11,7 +11,6 @@ description="This guide will walk you through obtaining\nthe Critter pet: Snowsh
 step
 talk Yarlyn Amberstill##1263
 buy 1 Rabbit Crate (Snowshoe)##8497 |goto Dun Morogh 70.6,49.0
-modeldisplay 16191
 step
 learnpet Snowshoe Rabbit##7560 |use Rabbit Crate (Snowshoe)##8497
 ]])
@@ -31,7 +30,6 @@ description="This guide will walk you through obtaining\nthe Beast pet: Bombay C
 step
 talk Donni Anthania##6367
 buy 1 Cat Carrier (Bombay)##8485 |goto Elwynn Forest,44.2,53.2
-modeldisplay 5556
 step
 learnpet Bombay Cat##7385 |use Cat Carrier (Bombay)##8485
 ]])
@@ -42,7 +40,6 @@ description="This guide will walk you through obtaining\nthe Beast pet: Cornish 
 step
 talk Donni Anthania##6367
 buy 1 Cat Carrier (Cornish Rex)##8486 |goto Elwynn Forest,44.2,53.2
-modeldisplay 5586
 step
 learnpet Cornish Rex Cat##7384 |use Cat Carrier (Cornish Rex)##8486
 ]])
@@ -53,7 +50,6 @@ description="This guide will walk you through obtaining\nthe Beast pet: Orange T
 step
 talk Donni Anthania##6367
 buy 1 Cat Carrier (Orange Tabby)##8487 |goto Elwynn Forest,44.2,53.2
-modeldisplay 5554
 step
 learnpet Orange Tabby Cat##7382 |use Cat Carrier (Orange Tabby)##8487
 ]])
@@ -64,7 +60,6 @@ description="This guide will walk you through obtaining\nthe Beast pet: Silver T
 step
 talk Donni Anthania##6367
 buy 1 Cat Carrier (Silver Tabby)##8488 |goto Elwynn Forest,44.2,53.2
-modeldisplay 5555
 step
 learnpet Silver Tabby Cat##7381 |use Cat Carrier (Silver Tabby)##8488
 ]])
@@ -89,5 +84,4 @@ step
 Challenge one to a pet battle and capture it
 |tip The Undercity Rats are level 2.
 learnpet Undercity Rat##61889 |goto Undercity 70.9,35.4
-modeldisplay 1141
 ]])

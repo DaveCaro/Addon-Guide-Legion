@@ -11,7 +11,6 @@ step
 Challenge one to a pet battle and capture it
 |tip The Alpine Foxlings are around level 23-24.
 learnpet Alpine Foxling##63550 |goto Kun-Lai Summit 38.4,75.6
-modeldisplay 36388
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Alpine Foxling Kit",{
 pet=725,
@@ -21,7 +20,6 @@ step
 Challenge one to a pet battle and capture it
 |tip The Alpine Foxling Kits are around level 23.
 learnpet Alpine Foxling Kit##63551 |goto Kun-Lai Summit 39.8,67.8
-modeldisplay 42757
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Amber Moth",{
 pet=732,
@@ -31,7 +29,6 @@ step
 Challenge one to a pet battle and capture it
 |tip The Amber Moths in this area are level 23-25.
 learnpet Amber Moth##65187 |goto Townlong Steppes 47.3,78.7
-modeldisplay 36944
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Amethyst Spiderling",{
 pet=716,
@@ -41,7 +38,6 @@ step
 Challenge one to a pet battle and capture it
 |tip The Amethyst Spiderling is level 23.
 learnpet Amethyst Spiderling##63288 |goto Krasarang Wilds 34.6,79.2
-modeldisplay 42988
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Amorous Rooster",{
 pet=705,
@@ -51,7 +47,6 @@ step
 Challenge one to a pet battle and capture it
 |tip The Amorous Roosters are around level 24.
 learnpet Amorous Rooster##65029 |goto Valley of the Four Winds 32.2,52.3
-modeldisplay 304
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Aqua Strider",{
 pet=836,
@@ -62,7 +57,6 @@ kill Nalash Verdantis##50776+
 collect Hollow Reed##86563 |goto Dread Wastes 64.2,58.5
 step
 learnpet Aqua Strider##64633 |use Hollow Reed##86563
-modeldisplay 44657
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Bandicoon",{
 pet=706,
@@ -72,7 +66,6 @@ step
 Challenge one to a pet battle and capture it
 |tip The Bandicoon is level 23 or 24.
 learnpet Bandicoon##63062 |goto Valley of the Four Winds 54.1,67.1
-modeldisplay 40089
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Bandicoon Kit",{
 pet=707,
@@ -82,7 +75,6 @@ step
 Challenge a Bandicoon to a pet battle and capture the Banidcoon Kit that is with it
 |tip The Bandicoon Kit is level 23 or 24.
 learnpet Bandicoon Kit##63064 |goto Valley of the Four Winds 54.1,67.1
-modeldisplay 41834
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Bucktooth Flapper",{
 pet=380,
@@ -92,7 +84,6 @@ step
 Challenge one to a pet battle and capture it
 |tip The Bucktooth Flapper is level 23 or 24
 learnpet Bucktooth Flapper##62992 |goto The Jade Forest 54.7,78.1
-modeldisplay 40713
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Cinder Kitten",{
 pet=1117,
@@ -116,7 +107,6 @@ step
 Challenge one to a pet battle and capture it
 |tip The Clouded Hedgehogs are around level 24.
 learnpet Clouded Hedgehog##64242 |goto Dread Wastes 33.1,24.3
-modeldisplay 40120
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Coral Adder",{
 pet=562,
@@ -126,7 +116,6 @@ step
 Challenge one to a pet battle and capture it
 |tip The Coral Adder is level 23 or 24.
 learnpet Coral Adder##62991 |goto The Jade Forest 67.0,83.0
-modeldisplay 36544
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Crunchy Scorpion",{
 pet=745,
@@ -136,7 +125,6 @@ step
 Challenge one to a pet battle and capture it
 |tip The Crunchy Scorpions are around level 24.
 learnpet Crunchy Scorpion##63548 |goto Dread Wastes 65.6,40.6
-modeldisplay 15469
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Effervescent Glowfly",{
 pet=747,
@@ -146,7 +134,6 @@ step
 Challenge one to a pet battle and capture it
 |tip The Effervescent Glowflies are around level 24.
 learnpet Effervescent Glowfly##63850 |goto Vale of Eternal Blossoms 22.8,28.8
-modeldisplay 46000
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Emperor Crab",{
 pet=746,
@@ -156,7 +143,6 @@ step
 Challenge one to a pet battle and capture it
 |tip The Emperor Crabs are around level 24.
 learnpet Emperor Crab##65203 |goto Dread Wastes 34.0,62.0
-modeldisplay 9573
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Eternal Strider",{
 pet=383,
@@ -168,7 +154,6 @@ Challenge one to a pet battle and capture it
 You can find more [Vale of Eternal Blossoms 69.0,43.8]
 [Vale of Eternal Blossoms 72.4,27.6]
 learnpet Eternal Strider##61088 |goto Vale of Eternal Blossoms 87.6,45.0
-modeldisplay 43798
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Feverbite Hatchling",{
 pet=714,
@@ -178,7 +163,6 @@ step
 Challenge one to a pet battle and capture it
 |tip The Feverbite Hatchlings in this area are around level 24.
 learnpet Feverbite Hatchling##65054 |goto Krasarang Wilds 18.0,43.9
-modeldisplay 44816
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Garden Frog",{
 pet=569,
@@ -188,7 +172,6 @@ step
 Challenge one to a pet battle and capture it
 |tip The Garden Frog is level 23 or 24.
 learnpet Garden Frog##63002 |goto The Jade Forest 54.7,42.9
-modeldisplay 38831
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Garden Moth",{
 pet=753,
@@ -198,7 +181,6 @@ step
 Challenge one to a pet battle and capture it
 |tip The Garden Moth is level 23 or 24.
 learnpet Garden Moth##65215 |goto The Jade Forest 54.1,45.9
-modeldisplay 36671
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Electrified Razortooth",{
 pet=1179,
@@ -219,7 +201,6 @@ step
 Challenge one to a pet battle and capture it
 |tip The Emerald Turtle is level 23 or 24..
 learnpet Emerald Turtle##62994 |goto The Jade Forest 45.0,36.7
-modeldisplay 27883
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Gilded Moth",{
 pet=748,
@@ -229,7 +210,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Gilded Moths in this area are level 24.
 learnpet Gilded Moth##63838 |goto Vale of Eternal Blossoms 33.2,65.1
-modeldisplay 36956
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Golden Civet",{
 pet=749,
@@ -239,7 +219,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Golden Civets are around level 23.
 learnpet Golden Civet##63841 |goto Vale of Eternal Blossoms 37.7,31.2
-modeldisplay 43428
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Golden Civet Kitten",{
 pet=750,
@@ -249,7 +228,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Golden Civet Kittens are around level 24.
 learnpet Golden Civet Kitten##63842 |goto Vale of Eternal Blossoms 39.8,57.6
-modeldisplay 43259
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Grassland Hopper",{
 pet=733,
@@ -259,7 +237,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Grassland Hoppers in this area are level 24-25.
 learnpet Grassland Hopper##63549 |goto Townlong Steppes 41.7,86.6
-modeldisplay 43344
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Grinder",{
 pet=834,
@@ -269,7 +246,6 @@ step
 kill Karr the Darkener##50347
 |tip He is a level 90 Rare Elite, so you may need to bring a friend or two for help.
 collect 1 Imbued Jade Fragment##86564 |goto Dread Wastes 71.9,37.8
-modeldisplay 45938
 step
 learnpet Grinder##64634 |use Imbued Jade Fragment##86564
 ]])
@@ -281,7 +257,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Grove Viper is level 23 or 24.
 learnpet Grove Viper##63004 |goto The Jade Forest 36.5,53.1
-modeldisplay 35802
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Gusting Grimoire",{
 pet=1174,
@@ -394,7 +369,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Jumping Spider is level 23 or 24.
 learnpet Jumping Spider##63715 |goto The Jade Forest 46.8,32.2
-modeldisplay 43797
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Jungle Darter",{
 pet=565,
@@ -404,7 +378,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Jungle Darter is level 23 or 24.
 learnpet Jungle Darter##62997 |goto The Jade Forest 52.3,67.9
-modeldisplay 6297
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Jungle Grub",{
 pet=678,
@@ -414,7 +387,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Jungle Grubs are level 23.
 learnpet Jungle Grub##63304 |goto Krasarang Wilds 77.8,13.2
-modeldisplay 40226
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Kuitan Mongoose",{
 pet=680,
@@ -433,7 +405,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Leopard Tree Frog is level 23 or 24.
 learnpet Leopard Tree Frog##63919 |goto The Jade Forest 45.1,60.3
-modeldisplay 6296
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Living Sandling",{
 pet=1177,
@@ -452,7 +423,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Luyu Moths are level 23.
 learnpet Luyu Moth##65124 |goto Krasarang Wilds 82.3,20.3
-modeldisplay 36955
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Malayan Quillrat",{
 pet=708,
@@ -462,7 +432,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Malayan Quillrat is level 23 or 24.
 learnpet Malayan Quillrat##63094 |goto Valley of the Four Winds 74.4,40.9
-modeldisplay 40124
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Malayan Quillrat Pup",{
 pet=709,
@@ -472,7 +441,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Malayan Quillrat Pup is level 23 or 24.
 learnpet Malayan Quillrat Pup##63095 |goto Valley of the Four Winds 74.4,40.9
-modeldisplay 42870
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Marsh Fiddler",{
 pet=710,
@@ -482,7 +450,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Marsh Fiddler is level 23.
 learnpet Marsh Fiddler##63096 |goto Valley of the Four Winds 22.4,44.6
-modeldisplay 43360
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Masked Tanuki",{
 pet=570,
@@ -492,7 +459,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Masked Tanuki is level 23 or 24.
 learnpet Masked Tanuki##63003 |goto The Jade Forest 51.5,74.0
-modeldisplay 40093
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Masked Tanuki Pup",{
 pet=703,
@@ -502,7 +468,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Masked Tanuki Pup is level 23 or 24.
 learnpet Masked Tanuki Pup##63716 |goto The Jade Forest 51.5,74.0
-modeldisplay 43194
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Mei Li Sparkler",{
 pet=722,
@@ -512,7 +477,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Mei Li Sparklers are level 23.
 learnpet Mei Li Sparkler##65185 |goto Krasarang Wilds 39.5,32.4
-modeldisplay 28434
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Mirror Strider",{
 pet=566,
@@ -522,7 +486,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Mirror Striders are level 23-24.
 learnpet Mirror Strider##62998 |goto The Jade Forest 57.9,78.4
-modeldisplay 40584
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Mongoose",{
 pet=737,
@@ -532,7 +495,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Mongooses are level 23-24.
 learnpet Mongoose##65190 |goto Townlong Steppes 38.5,85.4
-modeldisplay 43347
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Mongoose Pup",{
 pet=739,
@@ -542,7 +504,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Mongoose Pups are around level 24.
 learnpet Mongoose Pup##63954 |goto Townlong Steppes 21.0,57.6
-modeldisplay 43346
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Plains Monitor",{
 pet=726,
@@ -552,7 +513,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Plains Monitors in this area are level 23-24.
 learnpet Plains Monitor##63547 |goto Kun-Lai Summit 67.0,75.2
-modeldisplay 43221
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Prairie Mouse",{
 pet=727,
@@ -562,7 +522,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Prairie Mouse is level 23.
 learnpet Prairie Mouse##59702 |goto Kun-Lai Summit 71.6,94.7
-modeldisplay 4959
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Rapana Whelk",{
 pet=743,
@@ -572,7 +531,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Rapana Whelks are around level 24.
 learnpet Rapana Whelk##64352 |goto Dread Wastes 54.3,74.6
-modeldisplay 38380
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Red Cricket",{
 pet=1042,
@@ -602,7 +560,6 @@ _ |only if rep("Sho")<BestFriend
 Click here to gather gifts to raise your reputation. |confirm |next gifts |only if rep("Sho")<BestFriend
 You have maxed out your reputation with this individual. Please select a different guide. |only if rep("Sho")==BestFriend
 confirm |next "end" |only if rep("Sho")==BestFriend
-modelnpc Sho##58708
 step
 label cooking
 Click here to continue |confirm |next eternal_blossom
@@ -666,7 +623,6 @@ Please click here to return to the beginning of the guide. |confirm |next "menu"
 Become _Best Friends_ with Sho |rep("Sho")==BestFriend |next
 step
 learnpet Red Cricket##63370 |use Red Cricket##85222
-modeldisplay 46385
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Resilient Roach",{
 pet=744,
@@ -676,7 +632,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Resilient Roaches are around level 24.
 learnpet Resilient Roach##64238 |goto Dread Wastes 41.9,34.8
-modeldisplay 3233
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Sandy Petrel",{
 pet=573,
@@ -686,7 +641,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip Sandy Petrel are level 23 or 24.
 learnpet Sandy Petrel##63006 |goto The Jade Forest 66.2,25.3
-modeldisplay 34160
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Savory Beetle",{
 pet=717,
@@ -696,7 +650,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Savory Beetles are level 23.
 learnpet Savory Beetle##63291 |goto Krasarang Wilds 27.8,50.6
-modeldisplay 42987
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Shrine Fly",{
 pet=754,
@@ -706,7 +659,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Shrine Flies in this area are around level 24.
 learnpet Shrine Fly##65216 |goto The Jade Forest 33.4,50.6
-modeldisplay 20042
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Shy Bandicoon",{
 pet=677,
@@ -716,7 +668,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Shy Bandicoon is level 23 or 24.
 learnpet Shy Bandicoon##64246 |goto Valley of the Four Winds 21.7,47.5
-modeldisplay 40089
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Sifang Otter",{
 pet=711,
@@ -726,7 +677,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Sifang Otter is level 23 or 24.
 learnpet Sifang Otter##63057 |goto Valley of the Four Winds 31.2,72.6
-modeldisplay 42856
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Sifang Otter Pup",{
 pet=712,
@@ -736,7 +686,6 @@ step
 Challenge a Sifang Otter to a pet battle and capture the Sifang Otter Pup that helps it.
 |tip The Sifang Otter Pup is level 23 or 24.
 learnpet Sifang Otter Pup##63358 |goto Valley of the Four Winds 31.2,72.6
-modeldisplay 42983
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Silent Hedgehog",{
 pet=741,
@@ -746,7 +695,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Silent Hedgehogs are around level 24.
 learnpet Silent Hedgehog##64804 |goto Dread Wastes 26.9,29.4
-modeldisplay 40120
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Silkbead Snail",{
 pet=568,
@@ -756,7 +704,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Silkbead Snails are around level 24.
 learnpet Silkbead Snail##63001 |goto The Jade Forest 50.4,90.6
-modeldisplay 38380
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Softshell Snapling",{
 pet=713,
@@ -766,7 +713,6 @@ step
 Challenge the Softshell Snapling to a pet battle and capture it.
 |tip The Softshell Snapling is level 23.
 learnpet Softshell Snapling##63060 |goto Valley of the Four Winds 67.8,38.6
-modeldisplay 27679
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Son of Animus",{
 pet=1183,
@@ -802,7 +748,6 @@ confirm
 step
 Check your in-game mail for your Spectral Cub!
 collect 1 Spectral Cub##90953
-modeldisplay 30409
 step
 learnpet Spectral Cub##68502 |use Spectral Cub##90953
 ]])
@@ -835,7 +780,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Spiny Terrapins are level 23.
 learnpet Spiny Terrapin##63293 |goto Krasarang Wilds 81.4,23.4
-modeldisplay 42859
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Spirebound Crab",{
 pet=572,
@@ -845,7 +789,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Spirebound Crabs are level 23 or 24.
 learnpet Spirebound Crab##63005 |goto The Jade Forest 66.2,27.0
-modeldisplay 45880
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Summit Kid",{
 pet=679,
@@ -855,7 +798,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Simmit Kids are around level 23.
 learnpet Summit Kid##64248 |goto Kun-Lai Summit 40.5,83.5
-modeldisplay 43485
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Sunreaver Micro-Sentry",{
 pet=1178,
@@ -881,7 +823,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Szechuan Chickens are around level 24.
 learnpet Szechuan Chicken##63585 |goto Kun-Lai Summit 60.2,88.6
-modeldisplay 304
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Temple Snake",{
 pet=567,
@@ -891,7 +832,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Temple Snake is level 23 or 24.
 learnpet Temple Snake##62999 |goto The Jade Forest 55.3,62.2
-modeldisplay 2955
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Terrible Turnip",{
 pet=650,
@@ -966,7 +906,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Tolai Hares are around level 23.
 learnpet Tolai Hare##63557 |goto Kun-Lai Summit 55.5,63.6
-modeldisplay 6302
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Tolai Hare Pup",{
 pet=730,
@@ -976,7 +915,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Tolai Hare Pups are around level 23.
 learnpet Tolai Hare Pup##63558 |goto Kun-Lai Summit 55.5,63.6
-modeldisplay 28998
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Wanderer's Festival Hatchling",{
 pet=1013,
@@ -989,7 +927,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Wanderer's Festival Hatchlings in this area are around level 23.
 learnpet Wanderer's Festival Hatchling##67022 |goto Krasarang Wilds 78.0,24.0
-modeldisplay 44779
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Wild Crimson Hatchling",{
 pet=819,
@@ -1000,7 +937,6 @@ Challenge one to a pet battle and capture it.
 |tip The Wild Crimson Hatchlings are around level 24.
 |tip In order to capture this pet, you must be Exalted with the Order of the Cloud Serpent.
 learnpet Wild Crimson Hatchling##65321 |goto The Jade Forest 56.5,42.8
-modeldisplay 43874
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Wild Golden Hatchling",{
 pet=818,
@@ -1011,7 +947,6 @@ Challenge one to a pet battle and capture it.
 |tip The Wild Golden Hatchlings are around level 24.
 |tip In order to capture this pet, you must be Exalted with the Order of the Cloud Serpent.
 learnpet Wild Golden Hatchling##65324 |goto The Jade Forest 56.5,42.8
-modeldisplay 45064
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Wild Jade Hatchling",{
 pet=817,
@@ -1022,7 +957,6 @@ Challenge one to a pet battle and capture it.
 |tip The Wild Jade Hatchlings are around level 24.
 |tip In order to capture this pet, you must be Exalted with the Order of the Cloud Serpent.
 learnpet Wild Jade Hatchling##65323 |goto The Jade Forest 56.5,42.8
-modeldisplay 43875
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Wild Silkworm",{
 pet=715,
@@ -1033,7 +967,6 @@ Break open the Diminutive Cocoons around this area. |modelnpc Diminutive Cocoon#
 When you find a Wild Silkworm Challenge one to a pet battle and capture it.
 |tip A Wild Silkworm can be level 23 or 24.
 learnpet Wild Silkworm##65099 |goto Valley of the Four Winds 66.0,58.2
-modeldisplay 40630
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Yakrat",{
 pet=740,
@@ -1043,7 +976,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Yakrats are level 24.
 learnpet Yakrat##63957 |goto Townlong Steppes 83.9,76.8
-modeldisplay 4959
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Yellow-Bellied Bullfrog",{
 pet=752,
@@ -1053,7 +985,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Yellow-Bellied Bullfrogs are around level 24.
 learnpet Yellow-Bellied Bullfrog##63849 |goto Vale of Eternal Blossoms 88.6,50.3
-modeldisplay 6297
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Zandalari Anklerender",{
 pet=1211,
@@ -1127,7 +1058,6 @@ step
 Challenge one to a pet battle and capture it
 |tip The Zooey Snakes are level 24..
 learnpet Zooey Snake##63555 |goto Kun-Lai Summit 66.3,87.3
-modeldisplay 4440
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Direhorn Runt",{
 pet=1205,
@@ -1328,163 +1258,136 @@ Challenge it to a pet battle and capture it
 |tip The Unborn Val'kyr is level 23.
 learnpet Unborn Val'kyr##71163 |goto Borean Tundra 32.6,60.0 |next "end"
 Click here if the pet is not available at this location. |confirm
-modeldisplay 48650
 step
 Challenge it to a pet battle and capture it
 |tip The Unborn Val'kyr is level 23.
 learnpet Unborn Val'kyr##71163 |goto Borean Tundra 80.8,48.2 |next "end"
 Click here if the pet is not available at this location. |confirm
-modeldisplay 48650
 step
 Challenge it to a pet battle and capture it
 |tip The Unborn Val'kyr is level 23.
 learnpet Unborn Val'kyr##71163 |goto Borean Tundra 47.8,8.0 |next "end"
 Click here if the pet is not available at this location. |confirm
-modeldisplay 48650
 step
 Challenge it to a pet battle and capture it
 |tip The Unborn Val'kyr is level 23.
 learnpet Unborn Val'kyr##71163 |goto Sholazar Basin 44.6,69.2 |next "end"
 Click here if the pet is not available at this location. |confirm
-modeldisplay 48650
 step
 Challenge it to a pet battle and capture it
 |tip The Unborn Val'kyr is level 23.
 learnpet Unborn Val'kyr##71163 |goto Sholazar Basin 36.8,19.4 |next "end"
 Click here if the pet is not available at this location. |confirm
-modeldisplay 48650
 step
 Challenge it to a pet battle and capture it
 |tip The Unborn Val'kyr is level 23.
 learnpet Unborn Val'kyr##71163 |goto Sholazar Basin 58.5,22.0 |next "end"
 Click here if the pet is not available at this location. |confirm
-modeldisplay 48650
 step
 Challenge it to a pet battle and capture it
 |tip The Unborn Val'kyr is level 23.
 learnpet Unborn Val'kyr##71163 |goto Icecrown 44.2,33.4 |next "end"
 Click here if the pet is not available at this location. |confirm
-modeldisplay 48650
 step
 Challenge it to a pet battle and capture it
 |tip The Unborn Val'kyr is level 23.
 learnpet Unborn Val'kyr##71163 |goto Icecrown 47.9,86.6 |next "end"
 Click here if the pet is not available at this location. |confirm
-modeldisplay 48650
 step
 Challenge it to a pet battle and capture it
 |tip The Unborn Val'kyr is level 23.
 learnpet Unborn Val'kyr##71163 |goto Icecrown 73.8,64.5 |next "end"
 Click here if the pet is not available at this location. |confirm
-modeldisplay 48650
 step
 Challenge it to a pet battle and capture it
 |tip The Unborn Val'kyr is level 23.
 learnpet Unborn Val'kyr##71163 |goto Crystalsong Forest 17.6,57.2 |next "end"
 Click here if the pet is not available at this location. |confirm
-modeldisplay 48650
 step
 Challenge it to a pet battle and capture it
 |tip The Unborn Val'kyr is level 23.
 learnpet Unborn Val'kyr##71163 |goto Dragonblight 26.8,54.0 |next "end"
 Click here if the pet is not available at this location. |confirm
-modeldisplay 48650
 step
 Challenge it to a pet battle and capture it
 |tip The Unborn Val'kyr is level 23.
 learnpet Unborn Val'kyr##71163 |goto Dragonblight 82.2,65.8 |next "end"
 Click here if the pet is not available at this location. |confirm
-modeldisplay 48650
 step
 Challenge it to a pet battle and capture it
 |tip The Unborn Val'kyr is level 23.
 learnpet Unborn Val'kyr##71163 |goto Dragonblight 65.6,35.8 |next "end"
 Click here if the pet is not available at this location. |confirm
-modeldisplay 48650
 step
 Challenge it to a pet battle and capture it
 The Unborn Val'kyr is level 23.
 learnpet Unborn Val'kyr##71163 |goto Crystalsong Forest 43.4,44.0 |next "end"
 Click here if the pet is not available at this location. |confirm
-modeldisplay 48650
 step
 Challenge it to a pet battle and capture it
 The Unborn Val'kyr is level 23.
 learnpet Unborn Val'kyr##71163 |goto Crystalsong Forest 68.2,49.6 |next "end"
 Click here if the pet is not available at this location. |confirm
-modeldisplay 48650
 step
 Challenge it to a pet battle and capture it
 |tip The Unborn Val'kyr is level 23.
 learnpet Unborn Val'kyr##71163 |goto The Storm Peaks 42.5,78.5 |next "end"
 Click here if the pet is not available at this location. |confirm
-modeldisplay 48650
 step
 Challenge it to a pet battle and capture it
 |tip The Unborn Val'kyr is level 23.
 learnpet Unborn Val'kyr##71163 |goto The Storm Peaks 29.0,51.4 |next "end"
 Click here if the pet is not available at this location. |confirm
-modeldisplay 48650
 step
 Challenge it to a pet battle and capture it
 |tip The Unborn Val'kyr is level 23.
 learnpet Unborn Val'kyr##71163 |goto The Storm Peaks 65.2,41.8 |next "end"
 Click here if the pet is not available at this location. |confirm
-modeldisplay 48650
 step
 Challenge it to a pet battle and capture it
 |tip The Unborn Val'kyr is level 23.
 learnpet Unborn Val'kyr##71163 |goto Zul'Drak 75.0,22.8 |next "end"
 Click here if the pet is not available at this location. |confirm
-modeldisplay 48650
 step
 Challenge it to a pet battle and capture it
 |tip The Unborn Val'kyr is level 23.
 learnpet Unborn Val'kyr##71163 |goto Zul'Drak 57.0,39.8 |next "end"
 Click here if the pet is not available at this location. |confirm
-modeldisplay 48650
 step
 Challenge it to a pet battle and capture it
 |tip The Unborn Val'kyr is level 23.
 learnpet Unborn Val'kyr##71163 |goto Zul'Drak 24.6,64.0 |next "end"
 Click here if the pet is not available at this location. |confirm
-modeldisplay 48650
 step
 Challenge it to a pet battle and capture it
 |tip The Unborn Val'kyr is level 23.
 learnpet Unborn Val'kyr##71163 |goto Grizzly Hills 25.8,56.8 |next "end"
 Click here if the pet is not available at this location. |confirm
-modeldisplay 48650
 step
 Challenge it to a pet battle and capture it
 |tip The Unborn Val'kyr is level 23.
 learnpet Unborn Val'kyr##71163 |goto Grizzly Hills 61.4,18.2 |next "end"
 Click here if the pet is not available at this location. |confirm
-modeldisplay 48650
 step
 Challenge it to a pet battle and capture it
 |tip The Unborn Val'kyr is level 23.
 learnpet Unborn Val'kyr##71163 |goto Grizzly Hills 79.6,51.8 |next "end"
 Click here if the pet is not available at this location. |confirm
-modeldisplay 48650
 step
 Challenge it to a pet battle and capture it
 |tip The Unborn Val'kyr is level 23.
 learnpet Unborn Val'kyr##71163 |goto Howling Fjord 71.8,43.0 |next "end"
 Click here if the pet is not available at this location. |confirm
-modeldisplay 48650
 step
 Challenge it to a pet battle and capture it
 |tip The Unborn Val'kyr is level 23.
 learnpet Unborn Val'kyr##71163 |goto Howling Fjord 68.0,67.6 |next "end"
 Click here if the pet is not available at this location. |confirm
-modeldisplay 48650
 step
 Challenge it to a pet battle and capture it
 |tip The Unborn Val'kyr is level 23.
 learnpet Unborn Val'kyr##71163 |goto Howling Fjord 46.0,43.0 |next "end"
 Click here if the pet is not available at this location. |confirm |next "start"
-modeldisplay 48650
 step
 label "end"
 Congratulations, you have obtained the _Unborn Val'kyr_ pet!
@@ -1862,7 +1765,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Ashwing Moths in this area are level 25.
 learnpet Ashwing Moth##73542 |goto Townlong Steppes 47.3,78.7
-modeldisplay 51305
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Flamering Moth",{
 pet=1325,
@@ -1872,7 +1774,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Flamering Moths in this area are level 25.
 learnpet Flamering Moth##73543 |goto Timeless Isle/0 55.7,60.8
-modeldisplay 51305
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Skywisp Moth",{
 pet=1326,
@@ -1882,7 +1783,6 @@ step
 Challenge one to a pet battle and capture it.
 |tip The Skywisp Moths in this area are level 25.
 learnpet Skywisp Moth##73368 |goto Timeless Isle/0 65.3,23.3
-modeldisplay 51305
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Bonkers",{
 pet=1343,

@@ -16,7 +16,6 @@ click White Murloc Egg
 collect White Murloc Egg##22780 |goto Borean Tundra/0 54.6,89.3
 use White Murloc Egg##22780
 learnpet Terky##16445
-modelnpc Terky##16445
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Brightpaw",{
 pet=1466,
@@ -25,7 +24,6 @@ description="This guide will walk you through obtaining the Magic pet: Brightpaw
 step
 This pet will be a blizzard in-store pet.
 learnpet Brightpaw##85283
-modelnpc Brightpaw##85283
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Murkidan",{
 pet=1454,
@@ -34,7 +32,6 @@ description="This guide will walk you through obtaining the Humaniod pet: Murkid
 step
 This pet is a reward from ordering a blizzcon 2015 virtual ticket.
 learnpet Murkidan##85009
-modelnpc Murkidan##85009
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Nibbles",{
 pet=1691,
@@ -43,7 +40,6 @@ description="This guide will walk you through obtaining the Critter pet: Nibbles
 step
 This pet is a reward from ordering the Legion Collector's Edition.
 learnpet Nibbles##95841
-modelnpc Nibbles##95841
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Baby Winston",{
 pet=1828,
@@ -52,7 +48,6 @@ description="This guide will walk you through obtaining the Humaniod pet: Baby W
 step
 This pet is a reward from ordering the Overwatch Collector's Edition.
 learnpet Baby Winston##103159
-modelnpc Baby Winston##103159
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Grumpling",{
 pet=1725,
@@ -61,7 +56,6 @@ description="This guide will walk you through obtaining the Humaniod pet: Grumpl
 step
 This pet will be part of the 2015 Feast of Winter Vale event.
 learnpet Grumpling##97229
-modelnpc Grumpling##97229
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Zerador",{
 pet=1255,
@@ -70,7 +64,6 @@ description="This guide will walk you through obtaining the Magic pet: Zerador",
 step
 This pet is a reward for ordering the Starcraft 2: Legacy of the Void Collector's Edition.
 learnpet Zerador##71655
-modelnpc Zerador##71655
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Blazing Firehawk",{
 pet=1693,

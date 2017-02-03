@@ -3,8 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 
 ZygorGuidesViewer.GuideMenuTier = "LEG"
-
-ZGV.BETASTART()   
+ 
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\POI Legion Rares",{
 	hidden=true,
 	poi=true,
@@ -1297,5 +1296,4 @@ step //142
 	Go up the path |goto Vault of the Wardens/1 46.14,34.80 < 10
 	kill Kethrazor##96997 |q 40251 |future |goto Vault of the Wardens/1 48.8,31.4
 	only if havequest(38672) or completedq(38672)
-]])
-ZGV.BETAEND()   
+]])  

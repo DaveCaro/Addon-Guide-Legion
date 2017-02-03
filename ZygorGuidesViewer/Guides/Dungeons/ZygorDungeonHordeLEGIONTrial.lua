@@ -12,8 +12,7 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Darkheart Thicket dungeon.",
 },[[
 step
-Press _I_ and queue for Darkheart Thicket or enter the dungeon with your group |goto Val'sharah/0 59.03,31.17 |c |or
-|confirm |or
+Press _I_ and queue for Darkheart Thicket or enter the dungeon with your group |goto Darkheart Thicket/0 36.6,14.1 < 100 |c
 step
 map Darkheart Thicket/0
 path follow loose; loop off; ants curved; dist 20
@@ -101,8 +100,7 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Eye of Azshara dungeon.",
 },[[
 step
-Press _I_ and queue for Eye of Azshara or enter the dungeon with your group |goto Azsuna/0 61.12,41.12 |c |or
-|confirm |or
+Press _I_ and queue for Eye of Azshara or enter the dungeon with your group |goto Eye of Azshara/1 47.4,87.5 < 100 |c
 step
 map 1046/1
 path follow loose; loop off; ants curved; dist 20

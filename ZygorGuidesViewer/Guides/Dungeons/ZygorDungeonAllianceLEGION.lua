@@ -12,8 +12,7 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Assault on Violet Hold dungeon.",
 },[[
 step
-Press _I_ and queue for Assault on Violet Hold or enter the dungeon with your group |goto Dalaran L/10 67.29,69.63 |c |or
-|confirm |or
+Press _I_ and queue for Assault on Violet Hold or enter the dungeon with your group |goto Violet Hold/1 57.5,70.2 < 100 |c
 step
 label "First_Bosses"
 Kill enemies around this area
@@ -151,8 +150,7 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Black Rook Hold dungeon.",
 },[[
 step
-Press _I_ and queue for Black Rook Hold or enter the dungeon with your group |goto Val'sharah/0 37.13,50.19 |c |or
-|confirm |or
+Press _I_ and queue for Black Rook Hold or enter the dungeon with your group |goto Black Rook Hold/1 29.6,16.3 < 100 |c
 step
 map Black Rook Hold/1
 path follow loose; loop off; ants curved; dist 20
@@ -287,8 +285,7 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Darkheart Thicket dungeon.",
 },[[
 step
-Press _I_ and queue for Darkheart Thicket or enter the dungeon with your group |goto Val'sharah/0 59.03,31.17 |c |or
-|confirm |or
+Press _I_ and queue for Darkheart Thicket or enter the dungeon with your group |goto Darkheart Thicket/0 36.6,14.1 < 100 |c
 step
 map Darkheart Thicket/0
 path follow loose; loop off; ants curved; dist 20
@@ -376,8 +373,7 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Eye of Azshara dungeon.",
 },[[
 step
-Press _I_ and queue for Eye of Azshara or enter the dungeon with your group |goto Azsuna/0 61.12,41.12 |c |or
-|confirm |or
+Press _I_ and queue for Eye of Azshara or enter the dungeon with your group |goto Eye of Azshara/1 47.4,87.5 < 100 |c
 step
 map 1046/1
 path follow loose; loop off; ants curved; dist 20
@@ -494,8 +490,7 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Halls of Valor dungeon.",
 },[[
 step
-Press _I_ and queue for Halls of Valor or enter the dungeon with your group |goto Stormheim/0 72.64,70.54 |c |or
-|confirm |or
+Press _I_ and queue for Halls of Valor or enter the dungeon with your group |goto Halls of Valor/2 47.6,8.6 < 100 |c
 step
 map Halls of Valor/2
 path follow loose; loop off; ants curved; dist 20
@@ -634,8 +629,7 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Maw of Souls dungeon.",
 },[[
 step
-Press _I_ and queue for Maw of Souls or enter the dungeon with your group |goto Stormheim/0 52.47,45.22 |c |or
-|confirm |or
+Press _I_ and queue for Maw of Souls or enter the dungeon with your group |goto Helmouth Cliffs/1 46.8,79.0 < 100 |c
 step
 kill Ymiron, the Fallen King##96756
 _EVERYONE:_ |grouprole EVERYONE
@@ -700,8 +694,7 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Neltharion's Lair dungeon.",
 },[[
 step
-Press _I_ and queue for Neltharion's Lair or enter the dungeon with your group |goto Highmountain/0 49.57,68.69 |c |or
-|confirm |or
+Press _I_ and queue for Neltharion's Lair or enter the dungeon with your group |goto Neltharion's Lair/0 96.6,40.0 < 100 |c
 step
 Jump down the hole |condition not _G.HasFullControl()
 step
@@ -1372,10 +1365,9 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Return to Karazhan dungeon.",
 },[[
 step
-Enter the dungeon with your group |goto Deadwind Pass/0 46.74,70.22 |c |or
+Enter the dungeon with your group |goto Karazhan L/6 63.9,61.3 |c
 |tip You cannot use the Group Finder to enter this dungeon, since this is a Mythic dungeon.
 |tip You will need to create a group yourself, composed of friends or guildmates, etc.
-|confirm |or
 step
 Click here if you would like to do a Normal clear of the instance |next "Normal Clear"
 Click here if you would like to do the Nightbane instance clear |next "Nightbane Clear"

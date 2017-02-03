@@ -744,8 +744,7 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Shadowmoon Burial Grounds dungeon.",
 },[[
 step
-Enter the _Shadowmoon Burial Grounds_ dungeon |goto Shadowmoon Burial Grounds/1 12.0,68.4 < 20 |c |noway |or
-|confirm |or
+Press _I_ and queue for Shadowmoon Burial Grounds or enter the dungeon with your group |goto Shadowmoon Burial Grounds/1 12.0,68.4 < 20 |c
 stickystart "Binding"
 step
 map Shadowmoon Burial Grounds/1
@@ -753,7 +752,9 @@ path follow loose;loop off;ants straight
 path	12.0,68.4	13.8,65.6	16.2,55.5
 path	23.4,50.8	37.6,50.9	38.4,37.6
 path	45.6,28.9	52.6,24.1	52.6,21.7
-Drop down at the end of the path |goto Shadowmoon Burial Grounds/1 46.9,51.0 |c |noway
+Drop down at the end of the path |goto Shadowmoon Burial Grounds/1 46.9,51.0
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step "Binding"
 click Dark Parchment##
 collect Dark Parchment##118625 |q Secrets of Soulbinding##37238/1 |goto Shadowmoon Burial Grounds/1 29.4,43.4 |only if havequest(37238)
@@ -766,7 +767,9 @@ map Shadowmoon Burial Grounds/1
 path follow loose;loop off;ants straight
 path	52.6,21.7	52.6,34.8	42.3,36.1
 path	42.5,50.8	47.9,50.9
-Follow the path |goto Shadowmoon Burial Grounds/1 47.9,50.9 < 8 |c |noway
+Follow the path |goto Shadowmoon Burial Grounds/1 47.9,50.9 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step "Whispers"
 click Void-Gate Key##
 collect the Void-Gate Key##118651 |q Whispers in the Darkness##37245/1 |goto Shadowmoon Burial Grounds/1 37.4,51.6
@@ -790,7 +793,9 @@ map Shadowmoon Burial Grounds/1
 path follow loose;loop off;ants straight
 path	52.6,51.0	65.3,50.9	72.7,51.7
 path	77.9,55.9	78.2,62.4
-Follow the path |goto Shadowmoon Burial Grounds/1 78.2,62.4 < 8 |c |noway
+Follow the path |goto Shadowmoon Burial Grounds/1 78.2,62.4 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 modelnpc Nhallish##75829
 _TANK:_ |grouprole TANK
@@ -815,7 +820,9 @@ step
 map Shadowmoon Burial Grounds/1
 path follow loose;loop off;ants straight
 path	79.0,72.9	84.4,72.5	87.6,60.4
-Follow the path |goto Shadowmoon Burial Grounds/1 87.6,60.4 |c |noway
+Follow the path |goto Shadowmoon Burial Grounds/1 87.6,60.4
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Shadowmoon Burial Grounds/2
 path follow loose;loop off;ants straight
@@ -823,7 +830,9 @@ path	7.0,65.5	7.3,60.9	10.6,58.9
 path	15.5,58.1	21.3,61.7	22.2,66.8
 path	20.2,71.5	17.3,70.9	16.9,66.9
 path	18.8,62.2	25.7,59.5
-Follow the path |goto Shadowmoon Burial Grounds/2 25.7,59.5 |c |noway
+Follow the path |goto Shadowmoon Burial Grounds/2 25.7,59.5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 modelnpc Bonemaw##86236
 _TANK:_ |grouprole TANK
@@ -841,7 +850,9 @@ map Shadowmoon Burial Grounds/2
 path follow loose;loop off;ants straight
 path	39.1,50.9	49.4,57.6	56.9,62.3
 path	64.8,67.1
-Follow the path |goto Shadowmoon Burial Grounds/3 38.5,36.9 < 20 |c |noway
+Follow the path |goto Shadowmoon Burial Grounds/3 38.5,36.9 < 20
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 modelnpc Ner'zhul##76268
 _TANK:_ |grouprole TANK
@@ -854,7 +865,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip During Ritual of Bones, focus dps on a single skeleton to break a safe zone in the chain. |grouprole EVERYONE
 |tip When Ritual of Bones is active don't stand in the purple area created by the skeletons. |grouprole EVERYONE
 |tip Everyone should move away from Omen of Death quickly to avoid taking too much damage from close proximity. |grouprole EVERYONE
-|scenariogoal 24995 |goto Shadowmoon Burial Grounds/3 48.1,47.1
+|scenariogoal 1/34454 |goto Shadowmoon Burial Grounds/3 48.1,47.1
 Slay Ner'zhul |q Secrets of Soulbinding##37238/2 |goto Shadowmoon Burial Grounds/3 48.1,47.1 |only if havequest(37238)
 Slay Ner'zhul |q Whispers in the Darkness##37245/2 |goto Shadowmoon Burial Grounds/3 48.1,47.1 |only if havequest(37245)
 Slay Ner'zhul |q Fate of the Fallen##37239/2 |goto Shadowmoon Burial Grounds/3 48.1,47.1 |only if havequest(37239)
@@ -1035,8 +1046,7 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Upper Blackkrock Spire dungeon.",
 },[[
 step
-Enter the _Upper Blackrock Spire_ dungeon |goto Upper Blackrock Spire 2/1 37.3,29.1 < 100 |c |noway |or
-|confirm |or
+Press _I_ and queue for Upper Blackrock Spire or enter the dungeon with your group |goto Upper Blackrock Spire 2/1 37.3,29.1 < 100 |c
 stickystart "Flamefly"
 step
 map Upper Blackrock Spire 2/1
@@ -1044,7 +1054,9 @@ path follow loose;loop off;ants straight
 path	37.2,30.0	36.6,18.3	33.5,15.8
 path	32.9,13.2	30.6,13.3	Upper Blackrock Spire 2/2 30.4,19.6
 Clear the rooms to break the seals
-Follow the path |goto Upper Blackrock Spire 2/2 30.4,19.6 < 5|c |noway
+Follow the path |goto Upper Blackrock Spire 2/2 30.4,19.6 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step "Flamefly"
 click Bottled Flamefly##11285
 collect Spire Flamefly##118650 |q Flamefly Trap##37244/1 |goto Upper Blackrock Spire 2/1 36.1,17.1 |only if havequest(37244)
@@ -1070,6 +1082,8 @@ map Upper Blackrock Spire 2/2
 path follow loose;loop off;ants straight
 path	30.3,27.0	30.6,36.4	32.0,37.8
 Follow the path |goto Upper Blackrock Spire 2/2 32.0,37.8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 modelnpc Kyrak##86250
 _TANK:_ |grouprole TANK
@@ -1096,14 +1110,17 @@ step
 map Upper Blackrock Spire 2/2
 path follow loose;loop off;ants straight
 path	36.2,37.6	30.3,39.5
-Follow the path |goto Upper Blackrock Spire 2/2 30.3,39.5 |c |noway
+Follow the path |goto Upper Blackrock Spire 2/2 30.3,39.5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Upper Blackrock Spire 2/3
 path follow loose;loop off;ants straight
 path	28.6,41.1	28.4,34.1	36.4,34.0
 path	36.4,27.8	42.2,28.3	45.8,28.0
-Follow the path |goto Upper Blackrock Spire 2/3 45.8,28.0 < 8 |c |noway |or
-Enter the next floor |confirm |or
+Follow the path |goto Upper Blackrock Spire 2/3 45.8,28.0 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 modelnpc Commander Tharbek##86251
 _TANK:_ |grouprole TANK
@@ -1122,7 +1139,9 @@ map Upper Blackrock Spire 2/3
 path follow loose;loop off;ants straight
 path	48.5,27.3	48.7,35.8	54.7,35.8
 path	54.7,45.7
-Follow the path |goto Upper Blackrock Spire 2/3 54.7,45.7 < 20 |c |noway
+Follow the path |goto Upper Blackrock Spire 2/3 54.7,45.7 < 20
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 modelnpc Son of the Beast##77927
 Son of the Beast is an optional mini boss. |goto Upper Blackrock Spire 2/3 62.2,41.4 |confirm
@@ -1134,7 +1153,9 @@ step
 map Upper Blackrock Spire 2/3
 path follow loose;loop off;ants straight
 path	61.8,45.6	58.1,47.0	50.6,45.7
-Follow the path |goto Upper Blackrock Spire 2/3 50.6,45.7 |c |noway
+Follow the path |goto Upper Blackrock Spire 2/3 50.6,45.7
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 modelnpc Ragewing##76585
 _TANK:_ |grouprole TANK
@@ -1157,7 +1178,9 @@ path follow loose;loop off;ants straight
 path	46.7,45.6	39.8,45.9	36.3,51.4
 path	28.9,51.5	21.4,49.6	18.8,47.6
 path	16.7,47.4
-Follow the path |goto Upper Blackrock Spire 2/3 16.7,47.4 < 8 |c |noway
+Follow the path |goto Upper Blackrock Spire 2/3 16.7,47.4 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step "Proto"
 click Shed Proto-Dragon Claw##7922
 collect Shed Proto-Dragon Claw##118624 |q A Hero's Quest is Never Complete##37237/1 |goto Upper Blackrock Spire 2/3 48.4,20.1 |only if havequest(37237)
@@ -1178,7 +1201,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Throughout the fight, Proto-Drakes will lay down lines of Burning Breath. Move out of the path. |grouprole EVERYONE
 _Heroic Difficulty_: |only if heroic_dung()
 |tip Zaela gains_Destructive Smite, dealing massive damage to the current target and knocking them back. |only if heroic_dung()
-|scenariogoal 24981 |goto Upper Blackrock Spire 2/3 14.4,47.7
+|scenariogoal 2/34401 |goto Upper Blackrock Spire 2/3 14.4,47.7
 Slay Warlord Zaela |q Flamefly Trap##37244/2 |goto Upper Blackrock Spire 2/3 14.4,47.7 |only if havequest(37244)
 Slay Warlord Zaela |q Like Father, Like Son##37236/2 |goto Upper Blackrock Spire 2/3 14.4,47.7 |only if havequest(37236)
 Slay Warlord Zaela |q A Hero's Quest is Never Complete##37237/2 |goto Upper Blackrock Spire 2/3 14.4,47.7 |only if havequest(37237)
@@ -1235,7 +1258,9 @@ map Highmaul/3
 path follow smart; loop off; ants curved; dist 15
 path	49.2,51.3	Highmaul/1 55.2,74.4
 path	Highmaul/1 55.4,67.1	Highmaul/1 56.3,62.3
-_Follow_ the path, dropping down |goto Highmaul/1 56.3,62.3 |noway |c
+Follow the path, dropping down |goto Highmaul/1 56.3,62.3
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill The Butcher##77404 |goto Highmaul/1 57.80,55.0
 _TANK:_ |grouprole TANK
@@ -1260,7 +1285,9 @@ map Highmaul/1
 path follow smart; loop off; ants curved; dist 15
 path	55.2,53.3	49.4,48.4	49.1,41.6
 path	52.0,35.0	51.6,26.1
-_Follow_ the path |goto Highmaul/1 51.6,26.1 < 10 |noway |c
+Follow the path |goto Highmaul/1 51.6,26.1 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Brackenspore##78491 |goto Highmaul/1 50.80,16.40
 _TANK:_ |grouprole TANK
@@ -1309,7 +1336,9 @@ map Highmaul/1
 path follow smart; loop off; ants curved; dist 20
 path	54.8,74.3	49.1,86.8	44.2,86.0
 path	40.0,81.5
-_Follow_ the path |goto Highmaul/1 40.0,81.5 < 10 |noway |c
+Follow the path |goto Highmaul/1 40.0,81.5 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Tectus##78948 |goto Highmaul/1 37.00,74.80
 _TANK:_ |grouprole TANK
@@ -1335,13 +1364,17 @@ map Highmaul/1
 path follow smart; loop off; ants curved; dist 20
 path	36.0,73.7	35.0,67.1	36.4,60.7
 path	30.5,60.5
-_Follow_ the path and enter the portal |goto Highmaul/4 82.9,90.3 |noway |c
+Follow the path and enter the portal |goto Highmaul/4 82.9,90.3
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Highmaul/4
 path follow smart; loop off; ants curved; dist 20
 path	82.9,90.3	87.0,75.2	83.6,62.3
 path	68.0,42.6
-_Follow_ the path |goto Highmaul/4 68.0,42.6 < 10 |noway |c
+Follow the path |goto Highmaul/4 68.0,42.6 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Pol##78238 |goto Highmaul/4 55.10,36.30
 kill Phemos##78237 |goto Highmaul/4 55.10,36.30
@@ -1371,7 +1404,9 @@ map Highmaul/4
 path follow smart; loop off; ants curved; dist 20
 path	56.0,34.5	51.4,41.7	40.4,37.2
 path	40.0,43.3	46.3,50.7	43.9,55.0
-_Follow_ the path |goto Highmaul/4 43.9,55.0 < 10 |noway |c
+Follow the path |goto Highmaul/4 43.9,55.0 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Ko'ragh##79015 |goto Highmaul/4 37.80,65.4
 _TANK:_ |grouprole TANK
@@ -1460,13 +1495,17 @@ path follow smart; loop off; ants curved; dist 15
 path	40.9,86.4	40.9,63.4	44.8,54.9
 path	51.8,54.6	56.8,60.2	54.1,68.4
 path	47.4,68.4
-_Follow_ the path |goto Blackrock Foundry/3 47.4,68.4 < 8 |noway |c
+Follow the path |goto Blackrock Foundry/3 47.4,68.4 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Blackrock Foundry/2
 path follow smart; loop off; ants curved; dist 15
 path	62.3,53.7	54.9,53.7	55.5,64.4
 path	56.0,79.3	52.4,83.5	47.5,83.9
-_Follow_ the path |goto Blackrock Foundry/2 47.5,83.9 < 12 |noway |c
+Follow the path |goto Blackrock Foundry/2 47.5,83.9 < 12
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Oregorger##77182 |goto Blackrock Foundry/2 37.10,82.30
 _TANK:_ |grouprole TANK
@@ -1494,7 +1533,9 @@ path follow smart; loop off; ants curved; dist 15
 path	46.5,84.0	51.7,83.9	55.5,79.6
 path	55.0,62.0	55.0,47.6	56.5,28.6
 path	49.9,24.3
-_Follow_ the path |goto Blackrock Foundry/2 49.9,24.3 < 12 |noway |c
+Follow the path |goto Blackrock Foundry/2 49.9,24.3 < 12
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Gruul##76877 |goto Blackrock Foundry/2 39.3,20.5
 _TANK:_ |grouprole TANK
@@ -1521,7 +1562,9 @@ path follow smart; loop off; ants curved; dist 15
 path	44.5,23.6	56.0,28.1	55.4,44.1
 path	55.1,53.5	60.1,53.7	61.1,64.1
 path	67.0,63.8	67.5,54.8	60.7,53.4
-_Follow_ the path |goto Blackrock Foundry/2 60.7,53.4 < 8 |noway |c
+Follow the path |goto Blackrock Foundry/2 60.7,53.4 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Heart of the Mountain##76806 |goto Blackrock Foundry/2 46.1,53.7
 _TANK:_ |grouprole TANK
@@ -1571,7 +1614,9 @@ map Blackrock Foundry/3
 path follow smart; loop off; ants curved; dist 15
 path	40.9,86.4	40.9,62.9	32.9,53.8
 path	28.6,53.7
-_Follow_ the path, riding the elevator to the bottom floor |goto Blackrock Foundry/1 46.9,57.2 < 8 |noway |c
+Follow the path, riding the elevator to the bottom floor |goto Blackrock Foundry/1 46.9,57.2 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Go through_ the door |goto Blackrock Foundry/1 47.5,67.1 < 8 |noway |c
 step
@@ -1602,7 +1647,9 @@ path follow smart; loop off; ants curved; dist 15
 path	47.6,66.0	46.7,61.4	44.2,57.5
 path	40.7,58.7	40.5,73.8	35.1,76.7
 path	31.0,76.8	25.0,76.8
-_Follow_ the path |goto Blackrock Foundry/1 25.0,76.8 < 15 |noway |c
+Follow the path |goto Blackrock Foundry/1 25.0,76.8 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Flamebender Ka'graz##76814 |goto Blackrock Foundry/1 18.8,76.8
 _TANK:_ |grouprole TANK
@@ -1641,7 +1688,9 @@ map Blackrock Foundry/1
 path follow smart; loop off; ants curved; dist 15
 path	21.6,76.7	31.1,76.6	31.1,71.1
 path	33.1,66.4	33.1,52.2
-_Follow_ the path |goto Blackrock Foundry/1 33.1,52.2 < 8 |noway |c
+Follow the path |goto Blackrock Foundry/1 33.1,52.2 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Kromog##77692 |goto Blackrock Foundry/1 33.1,41.3
 _TANK:_ |grouprole TANK
@@ -1683,13 +1732,17 @@ map Blackrock Foundry/3
 path follow smart; loop off; ants curved; dist 15
 path	40.9,86.4	41.0,62.4	53.0,42.6
 path	57.0,42.2
-_Follow_ the path |goto Blackrock Foundry/3 57.0,42.2 < 15 |noway |c
+Follow the path |goto Blackrock Foundry/3 57.0,42.2 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Blackrock Foundry/4
 path follow smart; loop off; ants curved; dist 15
 path	42.8,84.0	45.7,83.9	45.7,71.7
 path	52.3,71.8
-_Follow_ the path |goto Blackrock Foundry/4 52.3,71.8 < 8 |noway |c
+Follow the path |goto Blackrock Foundry/4 52.3,71.8 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Beastlord Darmac##76865 |goto Blackrock Foundry/4 62.8,71.8
 _TANK:_ |grouprole TANK
@@ -1722,7 +1775,9 @@ step
 map Blackrock Foundry/4
 path follow smart; loop off; ants curved; dist 15
 path	56.3,71.8	46.4,71.5	45.7,55.6
-_Follow_ the path |goto Blackrock Foundry/4 45.7,55.6 |noway |c
+Follow the path |goto Blackrock Foundry/4 45.7,55.6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Operator Thogar##76906 |goto Blackrock Foundry/4 45.7,19.4
 _TANK:_ |grouprole TANK
@@ -1751,7 +1806,9 @@ map Blackrock Foundry/4
 path follow smart; loop off; ants curved; dist 15
 path	45.7,24.2	45.7,43.7	52.1,49.0
 path	56.4,49.0
-_Follow_ the path and jump down the hole |goto Blackrock Foundry/1 74.9,24.5 |noway |c
+Follow the path and jump down the hole |goto Blackrock Foundry/1 74.9,24.5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Admiral Gar'an##77557 |goto Blackrock Foundry/1 85.6,28.1
 kill Enforcer Sorka##77231 |goto Blackrock Foundry/1 85.6,28.1
@@ -1806,13 +1863,17 @@ step
 map Blackrock Foundry/3
 path follow smart; loop off; ants curved; dist 15
 path	40.9,86.4	40.9,15.9	33.6,15.3
-_Follow_ the path |goto Blackrock Foundry/3 33.6,15.3 < 10 |noway |c
+Follow the path |goto Blackrock Foundry/3 33.6,15.3 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Blackrock Foundry/5
 path follow smart; loop off; ants curved; dist 15
 path	53.2,92.2	48.5,92.4	48.6,76.4
 path	48.6,69.2
-_Follow_ the path and ride the lift |goto Blackrock Foundry/5 48.6,69.2 < 5 |noway |c
+Follow the path and ride the lift |goto Blackrock Foundry/5 48.6,69.2 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 1 Blackhand##77325 |goto Blackrock Foundry/5 48.8,34.4
 _TANK:_ |grouprole TANK
@@ -1916,7 +1977,9 @@ path	49.5,50.6	36.6,50.9	Hellfire Citadel/2 78.7,45.9
 path	Hellfire Citadel/2 77.8,34.4	Hellfire Citadel/2 72.1,21.4
 path	Hellfire Citadel/3 65.2,78.5	Hellfire Citadel/3 51.0,72.3
 path	Hellfire Citadel/4 60.4,89.2
-_Follow_ the path |goto Hellfire Citadel/4 60.4,89.2 < 10 |noway |c
+Follow the path |goto Hellfire Citadel/4 60.4,89.2 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Kormrok##90776 |goto Hellfire Citadel/4 52.3,48.8
 _TANK:_ |grouprole TANK
@@ -1959,7 +2022,9 @@ map Hellfire Citadel/5
 path follow smart; loop off; ants curved; dist 15
 path	81.6,11.8	80.7,33.1	72.9,33.8
 path	71.3,43.3
-_Follow_ the path |goto Hellfire Citadel/5 71.3,43.3 < 5 |noway |c
+Follow the path |goto Hellfire Citadel/5 71.3,43.3 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Gurtogg Bloodboil##92146 |goto Hellfire Citadel/5 71.5,80.1
 kill Dia Darkwhisper##92144 |goto Hellfire Citadel/5 71.5,80.1
@@ -1991,7 +2056,9 @@ path follow smart; loop off; ants curved; dist 15
 path	65.8,72.6	57.7,79.6	46.4,79.6
 path	45.9,67.7	40.0,64.5	17.3,64.9
 path	12.0,56.5	12.2,36.1	24.2,34.2
-_Follow_ the path |goto Hellfire Citadel/5 24.2,34.2 < 8 |noway |c
+Follow the path |goto Hellfire Citadel/5 24.2,34.2 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Kilrogg Deadeye##90378 |goto Hellfire Citadel/5 51.0,33.7
 _TANK:_ |grouprole TANK
@@ -2024,14 +2091,18 @@ step
 map Hellfire Citadel/5
 path follow smart; loop off; ants curved; dist 15
 path	53.4,33.6	66.7,33.6	80.9,33.6
-_Follow_ the path |goto Hellfire Citadel/5 80.9,33.6 < 8 |noway |c
+Follow the path |goto Hellfire Citadel/5 80.9,33.6 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Hellfire Citadel/2
 path follow smart; loop off; ants curved; dist 15
 path	72.4,71.5	77.8,59.6	78.1,46.3
 path	65.3,41.8	55.1,47.6	38.7,48.0
 path	30.7,63.1	19.2,64.6
-_Follow_ the path |goto Hellfire Citadel/2 19.2,64.6 < 12 |noway |c
+Follow the path |goto Hellfire Citadel/2 19.2,64.6 < 12
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Gorefiend##91809 |goto Hellfire Citadel/2 17.3,44.5
 _TANK:_ |grouprole TANK
@@ -2095,14 +2166,17 @@ step
 map Hellfire Citadel/6
 path follow smart; loop off; ants curved; dist 15
 path	45.2,76.9	57.3,76.7	61.8,83.1
-_Follow_ the path |goto Hellfire Citadel/6 61.8,83.1 < 8 |noway |c
+Follow the path |goto Hellfire Citadel/6 61.8,83.1 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Hellfire Citadel/8
 path follow smart; loop off; ants curved; dist 15
 path	42.3,8.1	42.5,25.7	52.2,25.5
 path	61.1,26.5	61.0,41.7
-_Follow_ the path |goto Hellfire Citadel/8 61.0,41.7 < 5 |noway |c |or
-_Follow_ the path |goto Hellfire Citadel/8 56.8,41.4 < 5 |noway |c |' |or
+Follow the path |goto Hellfire Citadel/8 61.0,41.7 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Soulbound Construct##90296 |goto Hellfire Citadel/8 59.0,54.1
 _TANK:_ |grouprole TANK
@@ -2129,7 +2203,9 @@ map Hellfire Citadel/8
 path follow smart; loop off; ants curved; dist 15
 path	56.8,58.9	56.8,69.1	55.5,80.8
 path	45.9,81.0	42.5,74.2	37.5,70.0
-_Follow_ the path |goto Hellfire Citadel/8 37.5,70.0 < 5 |noway |c |or
+Follow the path |goto Hellfire Citadel/8 37.5,70.0 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Tyrant Velhari##93439 |goto Hellfire Citadel/8 29.3,50.4
 _TANK:_ |grouprole TANK
@@ -2163,7 +2239,9 @@ step
 map Hellfire Citadel/6
 path follow smart; loop off; ants curved; dist 15
 path	44.4,48.3	47.2,43.4	50.0,32.6
-Follow the path |goto Hellfire Citadel/6 50.0,32.6 < 10 |noway |c
+Follow the path |goto Hellfire Citadel/6 50.0,32.6 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Fel Lord Zakuun##89890 |goto Hellfire Citadel/6 50.0,19.9
 _TANK:_ |grouprole TANK
@@ -2192,7 +2270,9 @@ path follow smart; loop off; ants curved; dist 15
 path	49.8,27.5	50.4,39.8	57.4,46.5
 path	68.1,44.6	78.7,44.4	88.1,51.3
 path	Hellfire Citadel/7 40.1,50.7
-Follow the path |goto Hellfire Citadel/7 40.1,50.7 < 10 |noway |c
+Follow the path |goto Hellfire Citadel/7 40.1,50.7 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Xhul'horac##93068 |goto Hellfire Citadel/7 53.2,50.9
 _TANK:_ |grouprole TANK
@@ -2384,7 +2464,9 @@ map Highmaul/3
 path follow smart; loop off; ants curved; dist 15
 path	49.2,51.3	Highmaul/1 55.2,74.4
 path	Highmaul/1 55.4,67.1	Highmaul/1 56.3,62.3
-_Follow_ the path, dropping down |goto Highmaul/1 56.3,62.3 |noway |c
+Follow the path, dropping down |goto Highmaul/1 56.3,62.3
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill The Butcher##77404 |goto Highmaul/1 57.80,55.0
 _TANK:_ |grouprole TANK
@@ -2412,7 +2494,9 @@ map Highmaul/1
 path follow smart; loop off; ants curved; dist 15
 path	55.2,53.3	49.4,48.4	49.1,41.6
 path	52.0,35.0	51.6,26.1
-_Follow_ the path |goto Highmaul/1 51.6,26.1 < 10 |noway |c
+Follow the path |goto Highmaul/1 51.6,26.1 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Brackenspore##78491 |goto Highmaul/1 50.80,16.40
 _TANK:_ |grouprole TANK
@@ -2447,7 +2531,9 @@ map Highmaul/1
 path follow smart; loop off; ants curved; dist 20
 path	51.6,27.8	50.9,37.7	45.1,50.2
 path	39.7,59.2	35.9,63.3	34.9,69.4
-_Follow_ the path |goto Highmaul/1 40.0,81.5 < 10 |noway |c
+Follow the path |goto Highmaul/1 40.0,81.5 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Tectus##78948 |goto Highmaul/1 37.00,74.80
 _TANK:_ |grouprole TANK
@@ -2473,13 +2559,17 @@ map Highmaul/1
 path follow smart; loop off; ants curved; dist 20
 path	36.0,73.7	35.0,67.1	36.4,60.7
 path	30.5,60.5
-_Follow_ the path and enter the portal |goto Highmaul/4 82.9,90.3 |noway |c
+Follow the path and enter the portal |goto Highmaul/4 82.9,90.3
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Highmaul/4
 path follow smart; loop off; ants curved; dist 20
 path	82.9,90.3	87.0,75.2	83.6,62.3
 path	68.0,42.6
-_Follow_ the path |goto Highmaul/4 68.0,42.6 < 10 |noway |c
+Follow the path |goto Highmaul/4 68.0,42.6 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Pol##78238 |goto Highmaul/4 55.10,36.30
 kill Phemos##78237 |goto Highmaul/4 55.10,36.30
@@ -2510,7 +2600,9 @@ map Highmaul/4
 path follow smart; loop off; ants curved; dist 20
 path	56.0,34.5	51.4,41.7	40.4,37.2
 path	40.0,43.3	46.3,50.7	43.9,55.0
-_Follow_ the path |goto Highmaul/4 43.9,55.0 < 10 |noway |c
+Follow the path |goto Highmaul/4 43.9,55.0 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Ko'ragh##79015 |goto Highmaul/4 37.80,65.4
 _TANK:_ |grouprole TANK
@@ -2538,11 +2630,13 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Avoid standing in Suppression Fields. |grouprole EVERYONE
 confirm
 step
-_Go up the stairs_  |goto Highmaul/4 30.9,56.1 < 10
+Go up the stairs |goto Highmaul/4 30.9,56.1 < 10
 map Highmaul/5
 path follow smart; loop off; ants curved; dist 20
 path	34.5,60.5	44.9,56.6	54.6,61.6
 path	55.6,54.5	51.9,38.7	45.1,27.0
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Go through_ the doors |goto Highmaul/6 45.8,60.6 < 12 |noway |c
 step
@@ -2617,7 +2711,9 @@ map Highmaul/3
 path follow smart; loop off; ants curved; dist 15
 path	49.2,51.3	Highmaul/1 55.2,74.4
 path	Highmaul/1 55.4,67.1	Highmaul/1 56.3,62.3
-_Follow_ the path, dropping down |goto Highmaul/1 56.3,62.3 |noway |c
+Follow the path, dropping down |goto Highmaul/1 56.3,62.3
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill The Butcher##77404 |goto Highmaul/1 57.80,55.0
 Night-Twisted Cadavar
@@ -2651,7 +2747,9 @@ map Highmaul/1
 path follow smart; loop off; ants curved; dist 15
 path	55.2,53.3	49.4,48.4	49.1,41.6
 path	52.0,35.0	51.6,26.1
-_Follow_ the path |goto Highmaul/1 51.6,26.1 < 10 |noway |c
+Follow the path |goto Highmaul/1 51.6,26.1 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Brackenspore##78491 |goto Highmaul/1 50.80,16.40
 Exploding Fongus and Call of the Tides.
@@ -2692,7 +2790,9 @@ map Highmaul/1
 path follow smart; loop off; ants curved; dist 20
 path	51.6,27.8	50.9,37.7	45.1,50.2
 path	39.7,59.2	35.9,63.3	34.9,69.4
-_Follow_ the path |goto Highmaul/1 40.0,81.5 < 10 |noway |c
+Follow the path |goto Highmaul/1 40.0,81.5 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Tectus##78948 |goto Highmaul/1 37.00,74.80
 Hollowed Heart of the Mountain and Hollowed Shard of the Mountain
@@ -2723,13 +2823,17 @@ map Highmaul/1
 path follow smart; loop off; ants curved; dist 20
 path	36.0,73.7	35.0,67.1	36.4,60.7
 path	30.5,60.5
-_Follow_ the path and enter the portal |goto Highmaul/4 82.9,90.3 |noway |c
+Follow the path and enter the portal |goto Highmaul/4 82.9,90.3
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Highmaul/4
 path follow smart; loop off; ants curved; dist 20
 path	82.9,90.3	87.0,75.2	83.6,62.3
 path	68.0,42.6
-_Follow_ the path |goto Highmaul/4 68.0,42.6 < 10 |noway |c
+Follow the path |goto Highmaul/4 68.0,42.6 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Pol##78238 |goto Highmaul/4 55.10,36.30
 kill Phemos##78237 |goto Highmaul/4 55.10,36.30
@@ -2770,7 +2874,9 @@ map Highmaul/4
 path follow smart; loop off; ants curved; dist 20
 path	56.0,34.5	51.4,41.7	40.4,37.2
 path	40.0,43.3	46.3,50.7	43.9,55.0
-_Follow_ the path |goto Highmaul/4 43.9,55.0 < 10 |noway |c
+Follow the path |goto Highmaul/4 43.9,55.0 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Ko'ragh##79015 |goto Highmaul/4 37.80,65.4
 Expel Magic Fel
@@ -2806,11 +2912,13 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Avoid standing in Suppression Fields. |grouprole EVERYONE
 confirm
 step
-_Go up the stairs_  |goto Highmaul/4 30.9,56.1 < 10
+Go up the stairs |goto Highmaul/4 30.9,56.1 < 10
 map Highmaul/5
 path follow smart; loop off; ants curved; dist 20
 path	34.5,60.5	44.9,56.6	54.6,61.6
 path	55.6,54.5	51.9,38.7	45.1,27.0
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Go through_ the doors |goto Highmaul/6 45.8,60.6 < 12 |noway |c
 step
@@ -2882,13 +2990,17 @@ path follow smart; loop off; ants curved; dist 15
 path	40.9,86.4	40.9,63.4	44.8,54.9
 path	51.8,54.6	56.8,60.2	54.1,68.4
 path	47.4,68.4
-_Follow_ the path |goto Blackrock Foundry/3 47.4,68.4 < 8 |noway |c
+Follow the path |goto Blackrock Foundry/3 47.4,68.4 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Blackrock Foundry/2
 path follow smart; loop off; ants curved; dist 15
 path	62.3,53.7	54.9,53.7	55.5,64.4
 path	56.0,79.3	52.4,83.5	47.5,83.9
-_Follow_ the path |goto Blackrock Foundry/2 47.5,83.9 < 12 |noway |c
+Follow the path |goto Blackrock Foundry/2 47.5,83.9 < 12
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Oregorger##77182 |goto Blackrock Foundry/2 37.10,82.30
 _TANK:_ |grouprole TANK
@@ -2916,7 +3028,9 @@ path follow smart; loop off; ants curved; dist 15
 path	46.5,84.0	51.7,83.9	55.5,79.6
 path	55.0,62.0	55.0,47.6	56.5,28.6
 path	49.9,24.3
-_Follow_ the path |goto Blackrock Foundry/2 49.9,24.3 < 12 |noway |c
+Follow the path |goto Blackrock Foundry/2 49.9,24.3 < 12
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Gruul##76877 |goto Blackrock Foundry/2 39.3,20.5
 _TANK:_ |grouprole TANK
@@ -2943,7 +3057,9 @@ path follow smart; loop off; ants curved; dist 15
 path	44.5,23.6	56.0,28.1	55.4,44.1
 path	55.1,53.5	60.1,53.7	61.1,64.1
 path	67.0,63.8	67.5,54.8	60.7,53.4
-_Follow_ the path |goto Blackrock Foundry/2 60.7,53.4 < 8 |noway |c
+Follow the path |goto Blackrock Foundry/2 60.7,53.4 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Heart of the Mountain##76806 |goto Blackrock Foundry/2 46.1,53.7
 _TANK:_ |grouprole TANK
@@ -2984,7 +3100,9 @@ map Blackrock Foundry/3
 path follow smart; loop off; ants curved; dist 15
 path	55.4,66.5	53.0,54.5	32.9,53.8
 path	28.6,53.7
-_Follow_ the path, riding the elevator to the bottom floor |goto Blackrock Foundry/1 46.9,57.2 < 8 |noway |c
+Follow the path, riding the elevator to the bottom floor |goto Blackrock Foundry/1 46.9,57.2 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Go through_ the door |goto Blackrock Foundry/1 47.5,67.1 < 8 |noway |c
 step
@@ -3014,7 +3132,9 @@ path follow smart; loop off; ants curved; dist 15
 path	47.6,66.0	46.7,61.4	44.2,57.5
 path	40.7,58.7	40.5,73.8	35.1,76.7
 path	31.0,76.8	25.0,76.8
-_Follow_ the path |goto Blackrock Foundry/1 25.0,76.8 < 15 |noway |c
+Follow the path |goto Blackrock Foundry/1 25.0,76.8 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Flamebender Ka'graz##76814 |goto Blackrock Foundry/1 18.8,76.8
 _TANK:_ |grouprole TANK
@@ -3052,7 +3172,9 @@ map Blackrock Foundry/1
 path follow smart; loop off; ants curved; dist 15
 path	21.6,76.7	31.1,76.6	31.1,71.1
 path	33.1,66.4	33.1,52.2
-_Follow_ the path |goto Blackrock Foundry/1 33.1,52.2 < 8 |noway |c
+Follow the path |goto Blackrock Foundry/1 33.1,52.2 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Kromog##77692 |goto Blackrock Foundry/1 33.1,41.3
 _TANK:_ |grouprole TANK
@@ -3081,19 +3203,25 @@ path follow smart; loop off; ants curved; dist 15
 path	39.5,44.2	47.1,44.5	48.9,36.2
 path	54.0,36.1	56.5,50.1	60.7,52.3
 path	58.7,57.3	51.6,57.1
-_Follow_ the path, riding the elevator to the top floor |goto Blackrock Foundry/1 46.9,57.2 < 8 |noway |c
+Follow the path, riding the elevator to the top floor |goto Blackrock Foundry/1 46.9,57.2 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Blackrock Foundry/3
 path follow smart; loop off; ants curved; dist 15
 path	53.0,42.6
 path	57.0,42.2
-_Follow_ the path |goto Blackrock Foundry/3 57.0,42.2 < 15 |noway |c
+Follow the path |goto Blackrock Foundry/3 57.0,42.2 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Blackrock Foundry/4
 path follow smart; loop off; ants curved; dist 15
 path	42.8,84.0	45.7,83.9	45.7,71.7
 path	52.3,71.8
-_Follow_ the path |goto Blackrock Foundry/4 52.3,71.8 < 8 |noway |c
+Follow the path |goto Blackrock Foundry/4 52.3,71.8 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Beastlord Darmac##76865 |goto Blackrock Foundry/4 62.8,71.8
 _TANK:_ |grouprole TANK
@@ -3126,7 +3254,9 @@ step
 map Blackrock Foundry/4
 path follow smart; loop off; ants curved; dist 15
 path	56.3,71.8	46.4,71.5	45.7,55.6
-_Follow_ the path |goto Blackrock Foundry/4 45.7,55.6 |noway |c
+Follow the path |goto Blackrock Foundry/4 45.7,55.6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Operator Thogar##76906 |goto Blackrock Foundry/4 45.7,19.4
 _TANK:_ |grouprole TANK
@@ -3155,7 +3285,9 @@ map Blackrock Foundry/4
 path follow smart; loop off; ants curved; dist 15
 path	45.7,24.2	45.7,43.7	52.1,49.0
 path	56.4,49.0
-_Follow_ the path and jump down the hole |goto Blackrock Foundry/1 74.9,24.5 |noway |c
+Follow the path and jump down the hole |goto Blackrock Foundry/1 74.9,24.5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Admiral Gar'an##77557 |goto Blackrock Foundry/1 85.6,28.1
 kill Enforcer Sorka##77231 |goto Blackrock Foundry/1 85.6,28.1
@@ -3197,7 +3329,9 @@ path follow smart; loop off; ants curved; dist 15
 path	80.6,33.4	78.0,38.1	73.0,43.0
 path	68.7,50.4	63.0,50.6	58.9,57.0
 path	51.5,57.1	46.7,57.3
-Go up the elevator |goto Blackrock Foundry/1 46.7,57.3 < 5 |noway |c
+Go up the elevator |goto Blackrock Foundry/1 46.7,57.3 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Blackrock Foundry/3
 path follow smart; loop off; ants curved; dist 15
@@ -3205,12 +3339,16 @@ path	30.5,53.7	33.3,53.7	40.8,52.9
 path	40.9,40.7	40.8,25.8	40.9,15.3
 path	33.8,15.1	Blackrock Foundry/5 52.6,92.0
 path	Blackrock Foundry/5 48.7,92.0	 Blackrock Foundry/5 48.7,77.4
-Go up the elevator |goto Blackrock Foundry/5 48.7,77.4 < 5 |noway |c
+Go up the elevator |goto Blackrock Foundry/5 48.7,77.4 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Blackrock Foundry/5
 path follow smart; loop off; ants curved; dist 15
 path	48.7,71.8	48.6,64.8
-Follow the path |goto Blackrock Foundry/5 48.6,64.8 < 5 |noway |c
+Follow the path |goto Blackrock Foundry/5 48.6,64.8 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 1 Blackhand##77325 |goto Blackrock Foundry/5 48.8,34.4
 _TANK:_ |grouprole TANK
@@ -3261,13 +3399,17 @@ path follow smart; loop off; ants curved; dist 15
 path	40.9,86.4	40.9,63.4	44.8,54.9
 path	51.8,54.6	56.8,60.2	54.1,68.4
 path	47.4,68.4
-_Follow_ the path |goto Blackrock Foundry/3 47.4,68.4 < 8 |noway |c
+Follow the path |goto Blackrock Foundry/3 47.4,68.4 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Blackrock Foundry/2
 path follow smart; loop off; ants curved; dist 15
 path	62.3,53.7	54.9,53.7	55.5,64.4
 path	56.0,79.3	52.4,83.5	47.5,83.9
-_Follow_ the path |goto Blackrock Foundry/2 47.5,83.9 < 12 |noway |c
+Follow the path |goto Blackrock Foundry/2 47.5,83.9 < 12
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Oregorger##77182 |goto Blackrock Foundry/2 37.10,82.30
 Unstable Slag Explosion
@@ -3298,7 +3440,9 @@ path follow smart; loop off; ants curved; dist 15
 path	46.5,84.0	51.7,83.9	55.5,79.6
 path	55.0,62.0	55.0,47.6	56.5,28.6
 path	49.9,24.3
-_Follow_ the path |goto Blackrock Foundry/2 49.9,24.3 < 12 |noway |c
+Follow the path |goto Blackrock Foundry/2 49.9,24.3 < 12
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Gruul##76877 |goto Blackrock Foundry/2 39.3,20.5
 Flare
@@ -3330,7 +3474,9 @@ path follow smart; loop off; ants curved; dist 15
 path	44.5,23.6	56.0,28.1	55.4,44.1
 path	55.1,53.5	60.1,53.7	61.1,64.1
 path	67.0,63.8	67.5,54.8	60.7,53.4
-_Follow_ the path |goto Blackrock Foundry/2 60.7,53.4 < 8 |noway |c
+Follow the path |goto Blackrock Foundry/2 60.7,53.4 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Heart of the Mountain##76806 |goto Blackrock Foundry/2 46.1,53.7
 |tip To get out of phase 1 the raid will need 25 bombs to explode on each side to destroy the furnaces.
@@ -3378,7 +3524,9 @@ map Blackrock Foundry/3
 path follow smart; loop off; ants curved; dist 15
 path	55.4,66.5	53.0,54.5	32.9,53.8
 path	28.6,53.7
-_Follow_ the path, riding the elevator to the bottom floor |goto Blackrock Foundry/1 46.9,57.2 < 8 |noway |c
+Follow the path, riding the elevator to the bottom floor |goto Blackrock Foundry/1 46.9,57.2 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Go through_ the door |goto Blackrock Foundry/1 47.5,67.1 < 8 |noway |c
 step
@@ -3413,7 +3561,9 @@ path follow smart; loop off; ants curved; dist 15
 path	47.6,66.0	46.7,61.4	44.2,57.5
 path	40.7,58.7	40.5,73.8	35.1,76.7
 path	31.0,76.8	25.0,76.8
-_Follow_ the path |goto Blackrock Foundry/1 25.0,76.8 < 15 |noway |c
+Follow the path |goto Blackrock Foundry/1 25.0,76.8 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Flamebender Ka'graz##76814 |goto Blackrock Foundry/1 18.8,76.8
 _TANK:_ |grouprole TANK
@@ -3452,7 +3602,9 @@ map Blackrock Foundry/1
 path follow smart; loop off; ants curved; dist 15
 path	21.6,76.7	31.1,76.6	31.1,71.1
 path	33.1,66.4	33.1,52.2
-_Follow_ the path |goto Blackrock Foundry/1 33.1,52.2 < 8 |noway |c
+Follow the path |goto Blackrock Foundry/1 33.1,52.2 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Kromog##77692 |goto Blackrock Foundry/1 33.1,41.3
 Rune of Trembling Earth
@@ -3490,19 +3642,25 @@ path follow smart; loop off; ants curved; dist 15
 path	39.5,44.2	47.1,44.5	48.9,36.2
 path	54.0,36.1	56.5,50.1	60.7,52.3
 path	58.7,57.3	51.6,57.1
-_Follow_ the path, riding the elevator to the top floor |goto Blackrock Foundry/1 46.9,57.2 < 8 |noway |c
+Follow the path, riding the elevator to the top floor |goto Blackrock Foundry/1 46.9,57.2 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Blackrock Foundry/3
 path follow smart; loop off; ants curved; dist 15
 path	53.0,42.6
 path	57.0,42.2
-_Follow_ the path |goto Blackrock Foundry/3 57.0,42.2 < 15 |noway |c
+Follow the path |goto Blackrock Foundry/3 57.0,42.2 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Blackrock Foundry/4
 path follow smart; loop off; ants curved; dist 15
 path	42.8,84.0	45.7,83.9	45.7,71.7
 path	52.3,71.8
-_Follow_ the path |goto Blackrock Foundry/4 52.3,71.8 < 8 |noway |c
+Follow the path |goto Blackrock Foundry/4 52.3,71.8 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Beastlord Darmac##76865 |goto Blackrock Foundry/4 62.8,71.8
 _Faultline_
@@ -3550,7 +3708,9 @@ step
 map Blackrock Foundry/4
 path follow smart; loop off; ants curved; dist 15
 path	56.3,71.8	46.4,71.5	45.7,55.6
-_Follow_ the path |goto Blackrock Foundry/4 45.7,55.6 |noway |c
+Follow the path |goto Blackrock Foundry/4 45.7,55.6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Operator Thogar##76906 |goto Blackrock Foundry/4 45.7,19.4
 |tip To complete this fight the raid will need a path to take for the fight, all trains are predetermined except for the random train phases.
@@ -3588,7 +3748,9 @@ map Blackrock Foundry/4
 path follow smart; loop off; ants curved; dist 15
 path	45.7,24.2	45.7,43.7	52.1,49.0
 path	56.4,49.0
-_Follow_ the path and jump down the hole |goto Blackrock Foundry/1 74.9,24.5 |noway |c
+Follow the path and jump down the hole |goto Blackrock Foundry/1 74.9,24.5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Admiral Gar'an##77557 |goto Blackrock Foundry/1 85.6,28.1
 kill Enforcer Sorka##77231 |goto Blackrock Foundry/1 85.6,28.1
@@ -3656,7 +3818,9 @@ path follow smart; loop off; ants curved; dist 15
 path	80.6,33.4	78.0,38.1	73.0,43.0
 path	68.7,50.4	63.0,50.6	58.9,57.0
 path	51.5,57.1	46.7,57.3
-Go up the elevator |goto Blackrock Foundry/1 46.7,57.3 < 5 |noway |c
+Go up the elevator |goto Blackrock Foundry/1 46.7,57.3 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Blackrock Foundry/3
 path follow smart; loop off; ants curved; dist 15
@@ -3664,12 +3828,16 @@ path	30.5,53.7	33.3,53.7	40.8,52.9
 path	40.9,40.7	40.8,25.8	40.9,15.3
 path	33.8,15.1	Blackrock Foundry/5 52.6,92.0
 path	Blackrock Foundry/5 48.7,92.0	 Blackrock Foundry/5 48.7,77.4
-Go up the elevator |goto Blackrock Foundry/5 48.7,77.4 < 5 |noway |c
+Go up the elevator |goto Blackrock Foundry/5 48.7,77.4 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Blackrock Foundry/5
 path follow smart; loop off; ants curved; dist 15
 path	48.7,71.8	48.6,64.8
-Follow the path |goto Blackrock Foundry/5 48.6,64.8 < 5 |noway |c
+Follow the path |goto Blackrock Foundry/5 48.6,64.8 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 1 Blackhand##77325 |goto Blackrock Foundry/5 48.8,34.4
 _Phase 1_

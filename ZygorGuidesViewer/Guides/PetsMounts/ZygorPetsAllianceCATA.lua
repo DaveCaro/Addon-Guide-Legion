@@ -12,7 +12,6 @@ step
 Challenge one to a pet battle and capture it
 |tip The Mountain Cottontails in this area are level 4-5.
 learnpet Mountain Cottontail##61167 |goto Redridge Mountains 42.1,68.8
-modeldisplay 328
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Snowshoe Rabbit",{
 pet=72,
@@ -21,7 +20,6 @@ description="This guide will walk you through obtaining\nthe Critter pet: Snowsh
 step
 talk Yarlyn Amberstill##1263
 buy 1 Rabbit Crate (Snowshoe)##8497 |goto Dun Morogh 70.6,49.0
-modeldisplay 16191
 step
 learnpet Snowshoe Rabbit##7560 |use Rabbit Crate (Snowshoe)##8497
 ]])
@@ -49,7 +47,6 @@ step
 talk Vin##54117
 accept Blown Away##29412 |goto Stormwind City,58.8,52.8
 collect 1 Alliance Balloon##72042 |goto Stormwind City,58.8,52.8
-modeldisplay 38343
 step
 learnpet Alliance Balloon##54539 |use Alliance Balloon##72042
 ]])
@@ -188,7 +185,6 @@ If you don't meet both of these requirements go back to step 1 of the guide.
 step
 talk Irisee##33657
 buy 1 Ammen Vale Lashling##44984 |goto Icecrown,76.2,19.2
-modeldisplay 29169
 step
 learnpet Ammen Vale Lashling##33205 |use Ammen Vale Lashling##44984
 ]])
@@ -205,7 +201,6 @@ step
 label done
 Use the _Argent Tournament_ _Valiant_ section of our daily guides to complete the quest _A Champion Rises_ to receive your _Argent Squire_
 collect 1 Argent Gruntling##44998
-modeldisplay 28946
 step
 learnpet Argent Squire##33238 |use Argent Squire##44998
 ]])
@@ -215,7 +210,6 @@ description="This guide will walk you through obtaining\nthe Humanoid pet: Argen
 },[[
 step
 This pet is only available to Horde Characters
-modeldisplay 29148
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Black Kingsnake",{
 pet=75,
@@ -224,7 +218,6 @@ description="This guide will walk you through obtaining the Beast pet: Black Kin
 step
 #include "auctioneer"
 buy 1 Black Kingsnake##10360
-modeldisplay 4268
 |tip This pet must be bought with a Horde character or through the Auction House.
 step
 learnpet Black Kingsnake##7565 |use Black Kingsnake##10360
@@ -909,8 +902,6 @@ turnin Vigilance on Wings##29177 |goto 37.2,56.2
 |tip You may choose only one Jouster.
 collect Blue Mini Jouster##65661 |goto 37.2,56.2 |or
 collect Gold Mini Jouster##65662 |goto 37.2,56.2 |or
-modeldisplay 31979
-modeldisplay 31981
 step
 learnpet Blue Mini Jouster##42177 |use Blue Mini Jouster##65661 |or
 learnpet Gold Mini Jouster##42183 |use Gold Mini Jouster##65662 |or
@@ -922,7 +913,6 @@ description="This guide will walk you through obtaining\nthe Flying pet: Yellow 
 step
 talk Sixx##21019
 buy 1 Yellow Moth Egg##29903 |goto The Exodar 30.8,34.6
-modeldisplay 19999
 step
 learnpet Yellow Moth##21008 |use Yellow Moth Egg##29903
 ]])
@@ -933,7 +923,6 @@ description="This guide will walk you through obtaining\nthe Flying pet: Blue Mo
 step
 talk Sixx##21019
 buy 1 Blue Moth Egg##29901 |goto The Exodar 30.8,34.6
-modeldisplay 17798
 step
 learnpet Blue Moth##21010 |use Blue Moth Egg##29901
 ]])
@@ -944,7 +933,6 @@ description="This guide will walk you through obtaining\nthe Beast pet: Bombay C
 step
 talk Donni Anthania##6367
 buy 1 Cat Carrier (Bombay)##8485 |goto Elwynn Forest,44.2,53.2
-modeldisplay 5556
 step
 learnpet Bombay Cat##7385 |use Cat Carrier (Bombay)##8485
 ]])
@@ -955,7 +943,6 @@ description="This guide will walk you through obtaining the Critter pet: Brown P
 step
 #include "auctioneer"
 buy 1 Prairie Dog Whistle##10394
-modeldisplay 1072
 |tip This pet must be bought with a Horde character or through the Auction House.
 step
 learnpet Brown Prairie Dog##14421 |use Prairie Dog Whistle##10394
@@ -967,7 +954,6 @@ description="This guide will walk you through obtaining the Beast pet: Brown Sna
 step
 #include "auctioneer"
 buy 1 Brown Snake##10361
-modeldisplay 2957
 |tip This pet must be bought with a Horde character or through the Auction House.
 step
 learnpet Brown Snake##7562 |use Brown Snake##10361
@@ -1016,7 +1002,6 @@ Use your Survey ability inside the dig site area |cast Survey##80451
 |tip Click the Archaeology Fragments that spawn on the ground
 You're looking for a _rare artifact_ in the _"Dwarf"_ tab called _"Clockwork Gnome"_. Solve this Archaeology puzzle
 collect 1 Clockwork Gnome##64372
-modeldisplay 28943
 step
 learnpet Clockwork Gnome##48609 |use Clockwork Gnome##64372
 ]])
@@ -1038,7 +1023,6 @@ Use your Survey ability inside the dig site area |cast Survey##80451
 |tip Click the Archaeology Fragments that spawn on the ground
 You're looking for a _rare artifact_ in the _"Tol'vir"_ tab called _"Crawling Claw"_. Solve this Archaeology puzzle
 collect 1 Crawling Claw##60847
-modeldisplay 34262
 step
 learnpet Crawling Claw##45128 |use Crawling Claw##60847
 ]])
@@ -1049,7 +1033,6 @@ description="This guide will walk you through obtaining\nthe Beast pet: Cornish 
 step
 talk Donni Anthania##6367
 buy 1 Cat Carrier (Cornish Rex)##8486 |goto Elwynn Forest,44.2,53.2
-modeldisplay 5586
 step
 learnpet Cornish Rex Cat##7384 |use Cat Carrier (Cornish Rex)##8486
 ]])
@@ -1192,7 +1175,6 @@ step
 Click Anson's Crate
 turnin The Creepy Crate##29413 |goto 60.1,75.1
 collect Creepy Crate##71076 |goto 60.1,75.1
-modeldisplay 38638
 step
 learnpet Creepy Crate##54128 |use Creepy Crate##71076
 ]])
@@ -1203,7 +1185,6 @@ description="This guide will walk you through obtaining\nthe Beast pet: Crimson 
 step
 talk Dealer Rashaad##20980
 buy Crimson Snake##10392 |goto Netherstorm,43.4,35.2
-modeldisplay 6303
 step
 learnpet Crimson Snake##7567 |use Crimson Snake##10392
 ]])
@@ -1219,7 +1200,6 @@ Your guild needs have the achievement "United Nations"
 step
 talk Shay Pressler##46602
 buy 1 Dark Phoenix Hatchling##63138 |goto Stormwind City,64.6,76.8
-modeldisplay 37136
 step
 learnpet Dark Phoenix Hatchling##47944 |use Dark Phoenix Hatchling##63138
 ]])
@@ -1357,7 +1337,6 @@ If you don't meet both of these requirements go back to step 1 of the guide.
 step
 talk Derrick Brindlebeard##33310
 buy 1 Dun Morogh Cub##44970 |goto Icecrown,76.4,19.4
-modeldisplay 28489
 step
 learnpet Dun Morogh Cub##33194 |use Dun Morogh Cub##44970
 ]])
@@ -1369,7 +1348,6 @@ step
 #include "auctioneer"
 buy 1 Durotar Scorpion##44973
 |tip This pet must be bought with a Horde character or through the Auction House.
-modeldisplay 32055
 step
 learnpet Durotar Scorpion##33198 |use Durotar Scorpion##44973
 ]])
@@ -1386,7 +1364,6 @@ confirm
 step
 collect 1 Egbert's Egg##32616
 |tip Warden of the Alliance
-modeldisplay 21382
 step
 learnpet Egbert##23258 |use Egbert's Egg##32616 |tip Warden of the Alliance
 ]])
@@ -1521,7 +1498,6 @@ If you don't meet both of these requirements go back to step 1 of the guide.
 step
 talk Corporal Arthur Flew##33307
 buy 1 Elwynn Lamb##44974 |goto Icecrown,76.4,19.2
-modeldisplay 16205
 step
 learnpet Elwynn Lamb##33200 |use Elwynn Lamb##44974
 ]])
@@ -1532,7 +1508,6 @@ description="This guide will walk you through obtaining the Magic pet: Enchanted
 step
 #include "auctioneer"
 buy 1 Enchanted Broom##44982
-modeldisplay 16910
 |tip This pet must be bought with a Horde character or through the Auction House.
 step
 learnpet Enchanted Broom##33227 |use Enchanted Broom##44982
@@ -1544,7 +1519,6 @@ description="This guide will walk you through obtaining the Magic pet:Enchanted 
 step
 #include "auctioneer"
 buy 1 Enchanted Lantern##67274
-modeldisplay 36902
 |tip This pet must be bought with a Horde character or through the Auction House.
 step
 label "bought"
@@ -1559,7 +1533,6 @@ These pets are only availiable during the Winter Veil Holiday
 |tip You receive Gaily Wrapped Presents by clicking the presents underneath the Christmas Tree in Ironforge.
 use Gaily Wrapped Present##21310
 collect 1 Green Helper Box##21301
-modeldisplay 15795
 step
 learnpet Father Winter's Helper##15698 |use Green Helper Box##21301
 ]])
@@ -1572,7 +1545,6 @@ These pets are only availiable during the Winter Veil Holiday
 |tip Receive Gaily Wrapped Presents by clicking the presents underneath the Christmas Tree in Ironforge.
 use Gaily Wrapped Present##21310
 collect 1 Rotten Helper Box##104317
-modeldisplay 51505
 step
 learnpet Rotten Little Helper##73741 |use Rotten Helper Box##104317
 ]])
@@ -1586,7 +1558,6 @@ collect 150 Tricky Treat##33226
 step
 talk Dorothy##53728
 buy Feline Familiar##70908 |goto Elwynn Forest,31.8,50.0
-modeldisplay 38539
 step
 learnpet Feline Familiar##53884 |use Feline Familiar##70908
 ]])
@@ -1608,7 +1579,6 @@ step
 label "vendor"
 talk Valadar Starsong##15864
 buy Festival Lantern##74611 |goto Moonglade,54.0,35.0
-modeldisplay 39333
 step
 learnpet Festival Lantern##55574 |use Festival Lantern##74611
 ]])
@@ -1629,7 +1599,6 @@ Use your Survey ability inside the dig site area |cast Survey##80451
 |tip Click the Archaeology Fragments that spawn on the ground
 You're looking for a _rare artifact_ in the _"Fossil"_ tab called _"Fossilized Hatchling"_. Solve this Archaeology puzzle
 collect 1 Fossilized Hatchling##60955
-modeldisplay 34413
 step
 learnpet Fossilized Hatchling##45340 |use Fossilized Hatchling##60955
 ]])
@@ -1641,7 +1610,6 @@ step
 talk Will Larsons##63083
 Tell him you are interested in capturing rare pets.
 learnpet Gilnean Raven##63098 |goto Darkshore 50.2,20.1
-modeldisplay 42872
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Gold Mini Jouster",{
 pet=260,
@@ -2323,8 +2291,6 @@ turnin Vigilance on Wings##29177 |goto 37.2,56.2
 |tip You may choose only one Jouster.
 collect Blue Mini Jouster##65661 |goto 37.2,56.2 |or
 collect Gold Mini Jouster##65662 |goto 37.2,56.2 |or
-modeldisplay 31979
-modeldisplay 31981
 step
 learnpet Blue Mini Jouster##42177 |use Blue Mini Jouster##65661 |or
 learnpet Gold Mini Jouster##42183 |use Gold Mini Jouster##65662 |or
@@ -2336,7 +2302,6 @@ description="This guide will walk you through obtaining the Dragonkin pet: Golde
 step
 #include "auctioneer"
 buy 1 Golden Dragonhawk Hatchling##29953
-modeldisplay 28401
 |tip This pet must be bought with a Horde character or through the Auction House.
 step
 learnpet Golden Dragonhawk Hatchling##21055 |use Golden Dragonhawk Hatchling##29953
@@ -2348,7 +2313,6 @@ description="This guide will walk you through obtaining\nthe Flying pet: Great H
 step
 talk Shylenai##8665
 buy 1 Great Horned Owl##8500 |goto Darnassus 64.0,53.6
-modeldisplay 4566
 step
 learnpet Great Horned Owl##7553 |use Great Horned Owl##8500
 ]])
@@ -2362,7 +2326,6 @@ Your guild needs have the achievement "Profit Sharing"
 step
 talk Shay Pressler##46602
 buy 1 Guild Herald##65363 |goto Stormwind City,64.6,76.8
-modeldisplay 37198
 step
 learnpet Guild Herald##49587 |use Guild Herald##65363
 ]])
@@ -2372,7 +2335,6 @@ description="This guide will walk you through obtaining\nthe Humanoid pet: Guild
 },[[
 step
 This pet model is only available to Horde characters.
-modeldisplay 37196
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Guild Page",{
 pet=280,
@@ -2384,7 +2346,6 @@ Complete the Slayer guild achievements |achieve 5031
 step
 talk Shay Pressler##46602
 buy 1 Guild Page##65361 |goto Stormwind City,64.6,76.8
-modeldisplay 37200
 step
 learnpet Guild Page##49586 |use Guild Page##65361
 ]])
@@ -2394,7 +2355,6 @@ description="This guide will walk you through obtaining\nthe Humanoid pet: Guild
 },[[
 step
 This pet model is only available to Horde Characters.
-modeldisplay 37199
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Hare",{
 pet=448,
@@ -2412,7 +2372,6 @@ description="This guide will walk you through obtaining\nthe Flying pet: Hawk Ow
 step
 talk Shylenai##8665
 buy 1 Hawk Owl##8501 |goto Darnassus 64.0,53.6
-modeldisplay 6299
 step
 learnpet Hawk Owl##7555 |use Hawk Owl##8501
 ]])
@@ -2891,7 +2850,6 @@ step
 Talk to Lashtail Hatchling
 turnin An Old Friend##29208 |goto 61.2,81.6
 collect 1 Lashtail Hatchling##69251 |goto 61.2,81.6
-modeldisplay 38209
 step
 learnpet Lashtail Hatchling##52894 |use Lashtail Hatchling##69251
 ]])
@@ -2905,7 +2863,6 @@ This pet requires that your guild_ has the achievement "Dragonwrath, Tarecgosa's
 step
 talk Shay Pressler##46602
 buy 1 Lil' Tarecgosa##71033 |goto Stormwind City,64.6,76.8
-modeldisplay 38632
 step
 learnpet Lil' Tarecgosa##54027 |use Lil' Tarecgosa##71033
 ]])
@@ -2928,7 +2885,6 @@ turnin You're a Mean One...##7043 |goto Ironforge,33.7,67.3
 collect 1 Stolen Present##73792 |goto Ironforge,33.7,67.3
 Open your Stolen Present |use Stolen Present##73792
 collect 1 Lump of Coal##73797 |goto Ironforge,33.7,67.3
-modeldisplay 35015
 step
 learnpet Lumpy##55215 |use Lump of Coal##73797
 ]])
@@ -2950,7 +2906,6 @@ step
 label "vendor"
 talk Valadar Starsong##15864
 buy Lunar Lantern##74610 |goto Moonglade,54.0,35.0
-modeldisplay 39163
 step
 learnpet Lunar Lantern##55571 |use Lunar Lantern##74610
 ]])
@@ -2974,7 +2929,6 @@ collect 4 Greater Celestial Essence##52719+
 collect 1 Maelstrom Crystal##52722
 Click here if you have the means to farm these materials yourself. |confirm
 next farmed |only if default
-modeldisplay 36901
 step
 Farm Maelstrom Crystals from the dungeons _Zul'Aman, End Time, Zul'Gurub, Hour of Twilight and Well of Eternity_.
 Breaking down Maelstrom Crystals will net you 2 Heavenly Shards.
@@ -2993,7 +2947,6 @@ Have an _Enchanter make this pet_ for you
 |tip Ask in your guild or in Trade Chat |only if _G.IsSpellKnown(93843)==false
 create Magic Lamp##93843,Enchanting,1 total |only if _G.IsSpellKnown(93843)==true
 collect 1 Magic Lamp##67275
-modeldisplay 36901
 step
 label bought
 learnpet Magic Lamp##50545 |use Magic Lamp##67275
@@ -3137,7 +3090,6 @@ If you don't meet both of these requirements go back to step 1 of the guide.
 step
 talk Rillie Spindlenut##33650
 buy 1 Mechanopeep##45002 |goto Icecrown,76.4,19.6
-modeldisplay 28539
 step
 learnpet Mechanopeep##33274 |use Mechanopeep##45002
 ]])
@@ -3151,7 +3103,6 @@ This pet can be purchased for $10.00 on the official Blizzard Store.
 collect Moonkin Egg##68384
 Open the Moonkin Egg |use Moonkin Egg##68384
 collect Moonkin Hatchling##68618
-modeldisplay 37526
 step
 learnpet Moonkin Hatchling##51601 |use Moonkin Hatchling##68618
 ]])
@@ -3161,7 +3112,6 @@ description="This guide will walk you through obtaining\nthe Humanoid pet: Moonk
 },[[
 step
 This pet model is only available to Horde characters.
-modeldisplay 37527
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Mr. Wiggles",{
 pet=126,
@@ -3176,7 +3126,6 @@ confirm
 step
 collect 1 Piglet's Collar##23007
 |tip Warden of the Alliance
-modeldisplay 27680
 step
 learnpet Mr. Wiggles##16548 |use Piglet's Collar##23007
 |tip Warden of the Alliance
@@ -3188,7 +3137,6 @@ description="This guide will walk you through obtaining the Critter pet: Mulgore
 step
 #include "auctioneer"
 buy 1 Mulgore Hatcling##44980
-modeldisplay 6476
 |tip This pet must be bought with a Horde character or through the Auction House.
 step
 learnpet Mulgore Hatchling##33219 |use Mulgore Hatchling##44980
@@ -3200,7 +3148,6 @@ description="This guide will walk you through obtaining\nthe Beast pet: Orange T
 step
 talk Donni Anthania##6367
 buy 1 Cat Carrier (Orange Tabby)##8487 |goto Elwynn Forest,44.2,53.2
-modeldisplay 5554
 step
 learnpet Orange Tabby Cat##7382 |use Cat Carrier (Orange Tabby)##8487
 ]])
@@ -4165,7 +4112,6 @@ step
 label "buy"
 Check your _mailbox_ for your _prize_!
 collect 1 Pebble##60869
-modeldisplay 33254
 step
 learnpet Pebble##45247 |use Pebble##60869
 ]])
@@ -4183,7 +4129,6 @@ step
 Go to Dun Morogh and talk to Belbi Quikswitch
 talk Belbi Quikswitch##23710
 buy 1 Pint-Sized Pink Pachyderm##46707
-modeldisplay 22629
 step
 learnpet Pint-Sized Pink Pachyderm##24753 |use Pint-Sized Pink Pachyderm##46707
 ]])
@@ -4217,7 +4162,6 @@ A telescope will appear, follow the direction it points in and continue using yo
 Click the Archaeology Fragments that spawn on the ground
 You're looking for a _rare artifact_ in the _"Fossil"_ tab called _"Pterrordax Hatchling"_. Solve this Archaeology puzzle
 collect 1 Pterrordax Hatchling##69821
-modeldisplay 38229
 step
 learnpet Pterrordax Hatchling##53225 |use Pterrordax Hatchling##69821
 ]])
@@ -4228,7 +4172,6 @@ description="This guide will walk you through obtaining\nthe Dragonkin pet:Red D
 step
 You will have to buy this from a neutral Auction House, as it is not available to Alliance characters
 buy 1 Red Dragonhawk Hatchling##29956
-modeldisplay 29363
 step
 learnpet Red Dragonhawk Hatchling##21064 |use Red Dragonhawk Hatchling##29956
 ]])
@@ -4464,7 +4407,6 @@ step
 label "buy"
 talk Quartermaster Brazie##47328
 buy 1 Rustberg Gull##63355 |goto Tol Barad Peninsula,72.6,62.6
-modeldisplay 36499
 step
 learnpet Rustberg Gull##48107 |use Rustberg Gull##63355
 ]])
@@ -4481,7 +4423,6 @@ confirm
 step
 collect 1 Snail Shell##66073
 |tip Warden of the Alliance
-modeldisplay 32663
 step
 learnpet Scooter the Snail##51635 |use Snail Shell##66073
 |tip Warden of the Alliance
@@ -4497,7 +4438,6 @@ step
 Follow the Path to the Darkmoon Faire |goto Darkmoon Island,56.0,52.9,1 |walk
 This pet can be caught by fishing the waters around Darkmoon Island.
 collect Sea Pony##73953
-modeldisplay 39109
 step
 learnpet Sea Pony##55386 |use Sea Pony##73953
 ]])
@@ -4508,7 +4448,6 @@ description="This guide will walk you through obtaining the Undead pet: Sen'jin 
 step
 #include "auctioneer"
 buy 1 Sen'jin Fetish##45606
-modeldisplay 29189
 tip This pet must be bought with a Horde character or through the Auction House.
 step
 learnpet Sen'jin Fetish##33810 |use Sen'jin Fetish##45606
@@ -4536,7 +4475,6 @@ step
 label buy
 talk Hiren Loresong##34881
 buy 1 Shimmering Wyrmling##46821 |goto Icecrown,76.2,19.6
-modeldisplay 29372
 step
 learnpet Shimmering Wyrmling##34724 |use Shimmering Wyrmling##46821
 ]])
@@ -4557,7 +4495,6 @@ description="This guide will walk you through obtaining the Dragonkin pet: Silve
 step
 #include "auctioneer"
 buy 1 Silver Dragonhawk##29957
-modeldisplay 29362
 |tip This pet must be bought with a Horde character or through the Auction House.
 step
 learnpet Silver Dragonhawk Hatchling##21063 |use Silver Dragonhawk##29957
@@ -4569,7 +4506,6 @@ description="This guide will walk you through obtaining\nthe Beast pet: Silver T
 step
 talk Donni Anthania##6367
 buy 1 Cat Carrier (Silver Tabby)##8488 |goto Elwynn Forest,44.2,53.2
-modeldisplay 5555
 step
 learnpet Silver Tabby Cat##7381 |use Cat Carrier (Silver Tabby)##8488
 ]])
@@ -4664,7 +4600,6 @@ label "use2"
 use Bag of Fishing Treasures##46007
 collect 1 Strand Crawler##44983 |next "use"
 Click here to go to the beginning of this daily guide. |next "select" |confirm
-modeldisplay 1307
 step
 label "swfish"
 In order to earn the achievement Fish or Cut Bait: Stormwind, you will need to complete 5 daily quests from the NPC Catherine Leland.
@@ -4714,7 +4649,6 @@ turnin Thunder Falls##26536 |goto Stormwind City,55.0,69.7 |or
 step
 use Bag of Shiny Things##67414
 collect 1 Strand Crawler##44983 |next "use"
-modeldisplay 1307
 Click here to go to the beginning of this daily guide. |next "select" |confirm
 step
 label "use"
@@ -4851,7 +4785,6 @@ If you don't meet both of these requirements go back to step 1 of the guide.
 step
 talk Rook Hawkfist##33653
 buy 1 Teldrassil Sproutling##44965 |goto Icecrown,76.2,19.2
-modeldisplay 28482
 step
 learnpet Teldrassil Sproutling##33188 |use Teldrassil Sproutling##44965
 ]])
@@ -4865,7 +4798,6 @@ confirm
 step
 talk Shay Pressler##46602
 buy 1 Thundering Serpent Hatchling##85513 |goto Stormwind City 64.6,76.8
-modeldisplay 43865
 step
 learnpet Thundering Serpent Hatchling##65313 |use Thundering Serpent Hatchling##85513
 ]])
@@ -5168,7 +5100,6 @@ step
 clicknpc Flamefly##48671
 collect 7 Flamefly |q 28415/1
 collect 1 Tiny Flamefly##66080
-modeldisplay 28435
 step
 learnpet Tiny Flamefly##51632 |use Tiny Flamefly##66080
 ]])
@@ -5181,7 +5112,6 @@ These pets are only availiable during the _Winter Veil_ Holiday
 |tip You receive Gaily Wrapped Presents by clicking the presents underneath the Christmas Tree in Ironforge.
 use Gaily Wrapped Present##21310
 collect 1 Snowman Kit##21309
-modeldisplay 13610
 step
 learnpet Tiny Snowman##15710 |use Snowman Kit##21309
 ]])
@@ -5192,7 +5122,6 @@ description="This guide will walk you through obtaining the Flying pet: Tirisfal
 step
 #include "auctioneer"
 buy 1 Tirisfal Batling##44971
-modeldisplay 28499
 |tip This pet must be bought with a Horde character or through the Auction House.
 step
 learnpet Tirisfal Batling##33197 |use Tirisfal Batling##44971
@@ -5204,7 +5133,6 @@ description="This guide will walk you through obtaining\nthe Critter pet: Underc
 step
 talk Dealer Rashaad##20980
 buy 1 Undercity Cockroach##10393 |goto Netherstorm 43.4,35.2
-modeldisplay 2177
 step
 learnpet Undercity Cockroach##7395 |use Undercity Cockroach##10393
 ]])
@@ -5220,7 +5148,6 @@ step
 Challenge one to a pet battle and capture it
 |tip The Undercity Rats are level 2.
 learnpet Undercity Rat##61889 |goto Undercity 70.9,35.4
-modeldisplay 1141
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Voodoo Figurine",{
 pet=310,
@@ -5241,7 +5168,6 @@ Use your Survey ability inside the dig site area |cast Survey##80451
 |tip Click the Archaeology Fragments that spawn on the ground
 |tip You're looking for a rare artifact in the "Troll" tab called "Voodoo Figurine". Solve this Archaeology puzzle
 collect 1 Voodoo Figurine##69824
-modeldisplay 38232
 step
 learnpet Voodoo Figurine##53232 |use Voodoo Figurine##69824
 ]])
@@ -5262,7 +5188,6 @@ talk Chicken##620
 turnin CLUCK!##3861
 step
 Click on the Chicken Egg on the ground to loot your new pet
-modeldisplay 304
 learnpet Westfall Chicken##30379
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Whiskers the Rat",{
@@ -5277,7 +5202,6 @@ For the Shattrath Daily set, click here. |next "Zygor's Alliance Events Guides\\
 confirm
 step
 collect 1 Rat Cage##23015 |tip Warden of the Alliance
-modeldisplay 2176
 step
 learnpet Whiskers the Rat##16549 |use Rat Cage##23015
 |tip Warden of the Alliance
@@ -5298,7 +5222,6 @@ This pet is purchesed from _Lil Timmy_, who patrols around Stormwind.
 Follow the path to find him.
 talk Lil Timmy##8666
 buy 1 Cat Carrier (White Kitten)##8489
-modeldisplay 9989
 step
 learnpet White Kitten##7386 |use Cat Carrier (White Kitten)##8489
 ]])
@@ -5309,7 +5232,6 @@ description="This guide will walk you through obtaining\nthe Flying pet:White Mo
 step
 talk Sixx##21019
 buy 1 White Moth Egg##29904 |goto The Exodar 30.8,34.6
-modeldisplay 19771
 step
 learnpet White Moth##21018 |use White Moth Egg##29904
 ]])
@@ -5322,7 +5244,6 @@ These pets are only availiable during the _Winter Veil_ Holiday
 |tip You receive Gaily Wrapped Presents by clicking the presents underneath the Christmas Tree in Ironforge.
 use Gaily Wrapped Present##21310
 collect 1 Jingling Bell##21308
-modeldisplay 15902
 step
 learnpet Winter Reindeer##15706 |use Jingling Bell##21308
 ]])
@@ -5335,7 +5256,6 @@ These pets are only availiable during the _Winter Veil_ Holiday
 |tip You receive Gaily Wrapped Presents by clicking the presents underneath the Christmas Tree in Ironforge.
 use Gaily Wrapped Present##21310
 collect 1 Red Helper Box##21305
-modeldisplay 15663
 step
 learnpet Winter's Little Helper##15705 |use Red Helper Box##21305
 ]])
@@ -5688,7 +5608,6 @@ step
 talk Cerellean Whiteclaw##32959
 accept Remembrance of Auberdine##13570 |goto 50.1,19.5 |instant
 collect 1 Withers##46325 |goto 50.1,19.5
-modeldisplay 29184
 step
 learnpet Withers##34278 |use Withers##46325
 ]])
@@ -5723,7 +5642,6 @@ _50,000_ critters killed |achieve 5144
 step
 talk Shay Pressler##46602
 buy 1 Armadillo Pup##63398 |goto Stormwind City 64.6,76.8
-modeldisplay 36591
 step
 learnpet Armadillo Pup##48242 |use Armadillo Pup##63398
 ]])
@@ -5740,7 +5658,6 @@ confirm
 step
 collect 1 Curious Oracle Hatchling##46545
 |tip Back to the Orphanage (Dalaran)
-modeldisplay 25924
 step
 learnpet Curious Oracle Hatchling##33530 |use Curious Oracle Hatchling##46545 |tip Back to the Orphanage (Dalaran)
 ]])
@@ -5756,7 +5673,6 @@ confirm
 step
 collect 1 Curious Wolvar Pup##46544
 |tip Back to the Orphanage (Dalaran)
-modeldisplay 25394
 step
 learnpet Curious Wolvar Pup##33529 |use Curious Wolvar Pup##46544 |tip Back to the Orphanage (Dalaran)
 ]])
@@ -5774,7 +5690,6 @@ step
 label "buy"
 talk Lhara##148465
 buy 1 Darkmoon Balloon##73762 |goto Darkmoon Island,48.2,69.6
-modeldisplay 38344
 step
 learnpet Darkmoon Balloon##55187 |use Darkmoon Balloon##73762
 ]])
@@ -5786,7 +5701,6 @@ step
 Challenge one to a pet battle and capture it
 |tip The Dung Beetle is level 1.
 learnpet Dung Beetle##62115 |goto Uldum 64.6,28.0
-modeldisplay 7511
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Willy",{
 pet=157,
@@ -5802,7 +5716,6 @@ talk Orphan Matron Mercy##22819
 turnin Back to the Orphanage##10966 |goto Shattrath City 74.9,47.9
 collect 1 Sleepy Willy##32617
 |tip This pet will arrive in the mail after completing the Event questline.
-modeldisplay 21381
 step
 learnpet Willy##23231 |use Sleepy Willy##32617
 ]])
@@ -5819,7 +5732,6 @@ confirm
 step
 collect 1 Turtle Box##23002
 |tip Back to the Orphanage (Shattrath)
-modeldisplay 37810
 step
 learnpet Speedy##16547 |use Turtle Box##23002 |tip Back to the Orphanage (Shattrath)
 ]])
@@ -5845,7 +5757,6 @@ step
 use Zen'Vorka's Cache##71631
 collect 1 Scorched Stone##34955
 |tip If you don't get this the first time you will have to earn 30 more Marks of the World Tree to try again
-modeldisplay 33427
 step
 learnpet Searing Scorchling##25706 |use Scorched Stone##34955
 ]])
@@ -5866,7 +5777,6 @@ turnin Calling the Ancients##29283 |goto Mount Hyjal 26.0,61.2
 step
 talk Varlan Highbough##53882
 buy 1 Hyjal Bear Cub##70140 |goto Molten Front,44.8,89.8
-modeldisplay 36863
 step
 learnpet Hyjal Bear Cub##53658 |use Hyjal Bear Cub##70140
 ]])
@@ -6135,7 +6045,6 @@ Have an _Engineer create this pet_ for you
 |tip Ask in your guild or in Trade Chat |only if knowspell(15628)==false
 create Pet Bombling##15628,Engineering,1 total |only if knowspell(15628)==true
 collect 1 Pet Bombling##11825
-modeldisplay 19139
 step
 label bought
 learnpet Pet Bombling##9656 |use Pet Bombling##11825
@@ -6179,7 +6088,6 @@ Have an _Engineer create this pet_ for you
 |tip Ask in your guild or in Trade Chat |only if knowspell(84412)==false
 create Personal World Destroyer##84412,Engineering,1 total |only if knowspell(84412)==true
 collect 1 Personal World Destroyer##59597
-modeldisplay 33512
 step
 label bought
 learnpet Personal World Destroyer##43800 |use Personal World Destroyer##59597
@@ -6197,7 +6105,6 @@ step
 step
 talk Sairuk##32763
 buy 1 Nurtured Penguin Egg##44723 |goto Dragonblight 48.6,75.6
-modeldisplay 27433
 step
 learnpet Pengu##32595 |use Nurtured Penguin Egg##44723
 ]])
@@ -6214,7 +6121,6 @@ confirm
 step
 talk Lovely Merchant##37674
 buy 1 Truesilver Shafted Arrow##22235
-modeldisplay 15992
 step
 learnpet Peddlefeet##16085 |use Truesilver Shafted Arrow##22235
 ]])
@@ -6231,7 +6137,6 @@ confirm
 step
 collect 1 Elekk Training Collar##32622
 |tip Back to the Orphanage (Shattrath)
-modeldisplay 23437
 step
 learnpet Peanut##23266 |use Elekk Training Collar##32622
 |tip Back to the Orphanage (Shattrath)
@@ -6275,7 +6180,6 @@ Have an _Engineer_ make this pet for you
 |tip Ask in your guild or in trade chat |only if knowspell(3928)==false
 create Mechanical Squirrel Box##3928,Engineering,1 total |only if knowspell(3928)==true
 collect 1 Mechanical Squirrel Box##4401
-modeldisplay 26532
 step
 label bought
 learnpet Mechanical Squirrel##2671 |use Mechanical Squirrel Box##4401
@@ -6385,7 +6289,6 @@ Have an _Engineer create this pet_ for you
 |tip Ask in your guild or in Trade Chat |only if knowspell(15633)==false
 create Lil' Smoky##15633,Engineering,1 total |only if knowspell(15633)==true
 collect 1 Lil' Smoky##11826
-modeldisplay 24752
 step
 label bought
 learnpet Lil' Smoky##9657 |use Lil' Smoky##11826
@@ -6441,7 +6344,6 @@ Have an _Engineer create this pet_ for you
 |tip Ask in your guild or in Trade Chat |only if knowspell(84413)==false
 create De-Weaponized Mechanical Companion##84413,Engineering,1 total |only if knowspell(84413)==true
 collect 1 De-Weaponized Mechanical Companion##60216
-modeldisplay 33559
 step
 learnpet De-Weaponized Mechanical Companion##43916 |use De-Weaponized Mechanical Companion##60216
 ]])
@@ -6468,7 +6370,6 @@ step
 label buy
 talk Auctioneer Chilton##8670
 collect 1 Elementium Geode##67282 |goto Stormwind City/0 60.7,70.8
-modeldisplay 37178
 step
 label last
 learnpet Elementium Geode##50722 |use Elementium Geode##67282
@@ -6486,7 +6387,6 @@ confirm
 step
 collect 1 Turtle Box##23002
 |tip Back to the Orphanage (Shattrath)
-modeldisplay 37810
 step
 learnpet Speedy##16547 |use Turtle Box##23002
 |tip Back to the Orphanage (Shattrath)
@@ -6504,7 +6404,6 @@ confirm
 step
 collect 1 Legs##69648
 |tip Back to the Orphanage (Shattrath)
-modeldisplay 38134
 step
 learnpet Legs##53048 |use Legs##69648
 |tip Back to the Orphanage (Shattrath)
@@ -6559,7 +6458,6 @@ Have an _Engineer_ make this _pet_ for you
 |tip Ask in your guild or in trade chat |only if knowspell(19793)==false
 create Lifelike Mechanical Toad##19793,Engineering,1 total |only if knowspell(19793)==true
 collect 1 Lifelike Mechanical Toad##15996
-modeldisplay 14936
 step
 label "bought"
 learnpet Lifelike Toad##12419 |use Lifelike Mechanical Toad##15996

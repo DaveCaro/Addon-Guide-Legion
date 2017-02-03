@@ -743,7 +743,6 @@ step
 Queue up for _The Everbloom_.
 click Rustling Peachick Nest## |goto The Everbloom 55.8,22.1
 collect Tiny Peachick Hatchling##118652
-modeldisplay 237483
 step
 talk Mylune##88025
 turnin For the Birds##37150 |goto 33.76,50.72
@@ -1702,7 +1701,6 @@ This pet is only available during the Halloween event.
 |tip After you activate this decoration this and 2 other pets will start spawning in your garrison.
 Battle Ghastly Rat and capture it once it's weakened
 learnpet Ghastly Rat##97568 |goto Frostwall 52.2,49.5
-modelnpc Ghastly Rat##97568
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Spectral Spinner",{
 pet=1730,
@@ -1714,7 +1712,6 @@ This pet is only available during the Halloween event.
 |tip After you activate this decoration this and 2 other pets will start spawning in your garrison.
 Battle and capture it once it's weakened
 learnpet Spectral Spinner##97324 |goto Frostwall 50.6,38.2
-modelnpc Spectral Spinner##97324
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Ghost Maggot",{
 pet=1740,
@@ -1726,5 +1723,4 @@ This pet is only available during the Halloween event.
 |tip After you activate this decoration this and 2 other pets will start spawning in your garrison.
 Battle and capture it once it's weakened
 learnpet Ghost Maggot##97569 |goto Frostwall 58.5,40.3
-modelnpc Ghost Maggot##97569
 ]])

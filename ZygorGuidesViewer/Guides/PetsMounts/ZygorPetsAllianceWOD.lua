@@ -740,7 +740,6 @@ step
 Queue up for _The Everbloom_.
 click Rustling Peachick Nest##
 collect Tiny Peachick Hatchling##118652
-modeldisplay 237483
 step
 talk Mylune##88025
 turnin For the Birds##37150 |goto Lunarfall 33.76,50.72
@@ -970,7 +969,6 @@ confirm
 step
 click Silver-Lined Arrow##237471 |goto Shadowmoon Burial Grounds 84.1,80.7
 collect Silver-Lined Arrow##118626
-modeldisplay 237471
 step
 talk Sentinel's Companion##88225
 turnin The Huntresses##37164 |goto Lunarfall 33.76,50.72
@@ -1725,7 +1723,6 @@ This pet is only available during the Halloween event.
 |tip After you activate this decoration this and 2 other pets will start spawning in your garrison.
 Battle and capture it once it's weakened
 learnpet Ghastly Rat##97568 |goto Lunarfall 44.5,55.8
-modelnpc Ghastly Rat##97568
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Spectral Spinner",{
 pet=1730,
@@ -1737,7 +1734,6 @@ This pet is only available during the Halloween event.
 |tip After you activate this decoration this and 2 other pets will start spawning in your garrison.
 Battle and capture it once it's weakened
 learnpet Spectral Spinner##97324 |goto Lunarfall 48.8,52.2
-modelnpc Spectral Spinner##97324
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Ghost Maggot",{
 pet=1740,
@@ -1749,5 +1745,4 @@ This pet is only available during the Halloween event.
 |tip After you activate this decoration this and 2 other pets will start spawning in your garrison.
 Battle and capture it once it's weakened
 learnpet Ghost Maggot##97569 |goto Lunarfall 45.2,47.8
-modelnpc Ghost Maggot##97569
 ]])
