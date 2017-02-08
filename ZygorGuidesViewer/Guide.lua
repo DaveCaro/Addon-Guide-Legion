@@ -149,13 +149,13 @@ function Guide:GetStatus(detailed)
 	end
 end
 
-function Guide:GetCompletion()
+function Guide:GetCompletion(mode)
 	self.completionmode = self.completionmode
 		or (self.type=="LOREMASTER" and "quests")
 		or (self.type=="LEVELING" and "quests")
 		or (self.type=="ACHIEVEMENTS" and self.achieved and "achievement")
 		or "steps"
-	local mode = self.completionmode
+	local mode = mode or self.completionmode
 
 	if mode=="macro" then
 		local acc=self.macro:MacroExists("account")
@@ -236,35 +236,39 @@ function Guide:GetCompletion()
 			end
 		end
 		return crit_completed/crit_needed,crit_completed,crit_needed
+	elseif mode=="inventory" then
+		return 0
 	end
 	-- other completions might not need a full parse.
 	return "error","we don't know if this guide completes or not"
 end
 
-function Guide:GetCompletionText()
-	local comp,a,b,c,d = self:GetCompletion()
+function Guide:GetCompletionText(mode)
+	local mode = mode or self.completionmode
+	local comp,a,b,c,d = self:GetCompletion(mode)
 	assert(comp) -- Sanity!
 	if comp=="loading" then return "...","(loading)" end
 	if comp=="error" or type(comp)~="number" then return "?",("(an error occurred: %s)"):format(a or "black magic") end
 
-	if self.completionmode=="none" then
+
+	if mode=="none" then
 		return "-", "This guide does not complete."
-	elseif self.completionmode=="skill" then
+	elseif mode=="skill" then
 		local skill = ZGV:GetSkill(self.completionparams[1])
 		--return ("%d/%d"):format(a,b), ("%s skill: %d/%d"):format(ZGV.LocaleSkills[self.completionparams[1]],a,b)
 		return math.floor(comp*100).."%", ("%s skill: %d/%d"):format(ZGV.LocaleSkills[self.completionparams[1]],a,b)
-	elseif self.completionmode=="quests" then
+	elseif mode=="quests" then
 		return math.floor(comp*100).."%", ("Quests completed: %d/%d"):format(a,b)
-	elseif self.completionmode=="level" then
+	elseif mode=="level" then
 		-- Changed the rounding to try to get more accurate results.
 		-- http://www.zygorguides.com/forum/showthread.php?16059-Experience-Bar-Is-Off&p=93935#post93935
 		-- Old equation: (self.endlevel-math.floor(self.endlevel))*20
 		-- New equation: floor((self.endlevel-math.floor(self.endlevel))*20+0.05)
 		-- ~~ Jeremiah
 		return math.floor(comp*100).."%", ("Level %3d (+%d bars) reached: %d%%"):format(self.endlevel,floor((self.endlevel-math.floor(self.endlevel))*20+0.05),math.floor(comp*100))
-	elseif self.completionmode=="steps" then
+	elseif mode=="steps" then
 		return math.floor(comp*100).."%", ("Steps completed: %d/%d"):format(a,b)
-	elseif self.completionmode=="macro" then
+	elseif mode=="macro" then
 		return comp~=0 and "+" or "—",comp~=0 and L["macro_status_yes"]:format((a and b) and L["macro_both"] or (a and L["macro_acc"] or L["macro_char"])) or L["macro_status_no"]
 	else
 		return math.floor(comp*100).."%", ""

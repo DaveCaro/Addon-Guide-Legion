@@ -3522,6 +3522,15 @@ click Bushy Foxflower##0
 collect 10 Bushy Foxflower##140988 |q 41526/1 |goto 37.20,43.53
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41238
+accept Calcified Wormscales##41238 |goto Highmountain/0 39.83,65.41
+|tip You will accept this quest automatically.
+step
+kill Infectious Worm##94687+, Overgrown Larva##94691+
+|tip Skin the corpses.
+collect 12 Calcified Wormscale##134132 |q 41238/1 |goto 39.83,65.41
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41623
 accept Champions of Highmountain##41623 |goto Thunder Totem/6 67.57,74.32
 |tip You will accept this quest automatically.
@@ -5193,6 +5202,15 @@ Tell him "Let's do battle!"
 Defeat Andurs |q 41935/1 |goto Stormheim/0 62.18,52.03
 |next "Court_Of_Farondis_WQ"
 step
+label quest-42861
+Follow the path |goto Stormheim/0 35.45,31.03 < 25 |only if walking
+Follow the path |goto 32.82,32.29 < 25 |only if walking
+accept DANGER: Boulderfall, the Eroded##42861 |goto 30.96,33.85
+|tip You will accept this quest automatically.
+step
+kill Boulderfall, the Eroded##109113 |q 42861/1 |goto 30.96,33.85
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41336
 accept Bristly Musken Hide##41336 |goto Stormheim/0 59.84,52.91
 |tip You will accept this quest automatically.
@@ -6195,31 +6213,19 @@ collect 12 Thick Bear Hide##134816 |q 41342/1 |goto 70.66,52.25
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42182
-Follow the path |goto Stormheim/0 60.69,52.23 < 15 |only if walking
-Follow the path |goto 62.31,54.09 < 30 |only if walking
-Follow the path |goto 65.24,54.58 < 30 |only if walking
-Follow the path |goto 68.24,58.35 < 20 |only if walking
-Follow the path |goto 69.08,61.51 < 20 |only if walking
-Follow the path |goto 71.54,62.05 < 30 |only if walking
-accept To Battle!##42182 |goto Stormheim/0 74.31,61.20
+accept To Battle!##42182 |goto Stormheim/0 56.37,74.08
 |tip You will accept this quest automatically.
 step
 Kill enemies around this area
-Slay #10# Dread-Rider Forsaken |q 42182/1 |goto 74.31,61.20
+Slay #10# Dread-Rider Forsaken |q 42182/1 |goto 56.38,74.07
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42183
-Follow the path |goto Stormheim/0 60.69,52.23 < 15 |only if walking
-Follow the path |goto 62.31,54.09 < 30 |only if walking
-Follow the path |goto 65.24,54.58 < 30 |only if walking
-Follow the path |goto 68.24,58.35 < 20 |only if walking
-Follow the path |goto 69.08,61.51 < 20 |only if walking
-Follow the path |goto 71.54,62.05 < 30 |only if walking
-accept To Battle!##42183 |goto Stormheim/0 74.31,61.20
+accept To Battle!##42183 |goto Stormheim/0 56.37,74.08
 |tip You will accept this quest automatically.
 step
 Kill enemies around this area
-Slay #10# Dread-Rider Forsaken |q 42183/1 |goto 74.31,61.20
+Slay #10# Greywatch Infiltrators |q 42183/1 |goto 56.38,74.07
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41930
@@ -6959,6 +6965,16 @@ Follow the path |goto 60.75,61.30 < 30 |only if walking
 Use the Nightblade Pendant on Garion |use Nightblade Pendant##141253
 kill Garion##112530  |q 44067/2 |goto 61.93,60.92
 |tip Inside the building.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44867
+Follow the path |goto Suramar/0 64.59,44.54 < 25 |only if walking
+Follow the path |goto 65.10,51.10 < 25 |only if walking
+accept Contain their Advance##44867 |goto 66.29,54.85
+|tip You will accept this quest automatically.
+step
+kill Scathing Felbeast##115755+, Felblade Protector##115738+, Felborne Marauder##115724+, Felborne Energist##116119+, Felborne Magus##115691+
+Felborne Outpost Assaulted |q 44867/1 |goto 66.29,54.85
 |next "Court_Of_Farondis_WQ"
 step
 label quest-44816
@@ -8363,6 +8379,20 @@ talk Warmage Silva##32725
 turnin Work Order: Word of Intellect##41674 |goto 33.47,47.38
 |next "Court_Of_Farondis_WQ"
 step
+label quest-43640
+_Enter The Arcway Dungeon:_
+|tip You can only complete this dungeon on Mythic difficulty.
+accept The Arcway: Creeping Suspicions##43640 |goto Suramar/0 50.92,65.57
+|tip You will accept this quest automatically.
+step
+kill Creepier Crate##98779
+|tip You will encounter this NPC somewhere randomly in the dungeon.
+collect 1 Nightforged Keystone##139618 |q 43640/1
+|tip Currently, looting is a bit buggy. Loot the keystone quickly after killing.
+step
+kill Advisor Vandros##98208 |q 43640/2 |goto The Arcway/1 48.04,42.48
+|next "Court_Of_Farondis_WQ"
+step
 label quest-43711
 _Enter the Black Rook Hold Dungeon:_
 |tip Use the Group Finder to enter the dungeon.
@@ -8804,6 +8834,16 @@ Kill #5# Understone Lashers |q 41857/1
 |tip You will find these as you progress through the instance.
 step
 kill Dargrul##91007 |q 41857/2
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44934
+_Enter The Nighthold raid:_
+|tip You must completed this on normal difficulty or higher.
+accept The Nighthold: Creepy Crawlers##44934 |goto Suramar/0 44.15,59.74
+|tip You will accept this quest automatically.
+step
+kill Kar'zun##116008 |q 44934/1
+|tip Kar'zun is directly upstairs from Trilliax.
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42926

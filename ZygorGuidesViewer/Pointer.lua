@@ -4051,7 +4051,7 @@ function Pointer:ShowSet(waypath,name)
 
 	local t1=debugprofilestop()
 
-	if waypath and #waypath.coords>1 then  -- show ants, or just the path, anyway.
+	if waypath and waypath.coords and #waypath.coords>1 then  -- show ants, or just the path, anyway.
 
 		-- SHOW IT NOW, please. Also add it to set.
 		set_waypoints(waypath.coords,nil,nil,waypath.coords[1].type or "path",name)
@@ -4067,7 +4067,7 @@ function Pointer:ShowSet(waypath,name)
 		--globalize position! fill gm,gx,gy with world-global values. Otherwise ants can't travel over zone crossings.
 		for wpi,wp in ipairs(points) do
 			if not wp.gx and wp.m then  move_point_to_global(wp)  end
-			if (wpi%50==0) and coroutine.running() then coroutine.yield() end
+			if (wpi%50==0) and Pointer.showset_timer then coroutine.yield() end
 		end
 
 		-- calculate path arrow angles
@@ -4097,7 +4097,7 @@ function Pointer:ShowSet(waypath,name)
 				icon=point.icon or self.Icons.greendot
 			end
 			point:SetIcon(icon)
-			if (k%50==0) and coroutine.running() then coroutine.yield() end
+			if (k%50==0) and Pointer.showset_timer then coroutine.yield() end
 		end
 
 		-- Get all the other fields
@@ -4113,9 +4113,11 @@ function Pointer:ShowSet(waypath,name)
 end
 
 function Pointer:Thread_ShowSet(waypath,name)
+	if Pointer.showset_timer then ZGV:CancelTimer(Pointer.showset_timer) end
 	local thread = coroutine.create(function() Pointer:ShowSet(waypath,name) end)
 	Pointer.showset_timer = ZGV:ScheduleRepeatingTimer(function()
-		coroutine.resume(thread)
+		local ok,ret = coroutine.resume(thread)
+		if not ok then Pointer:Debug("Showing set failed: "..ret) end
 		if coroutine.status(thread)=="dead" then ZGV:CancelTimer(Pointer.showset_timer) end
 	end,
 	0.01)

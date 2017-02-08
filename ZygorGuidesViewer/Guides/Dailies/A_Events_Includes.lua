@@ -3578,18 +3578,18 @@ ZygorGuidesViewer:RegisterInclude("Love is in the Air Main Quest",[[
 		turnin Something Stinks##24655 |goto Stormwind City 61.6,75.3
 		accept Pilfering Perfume##24656 |goto Stormwind City 61.6,75.3
 	step
-		_Start running_ through Stormwind |goto Stormwind City/0 63.8,73.1 < 20 |only if walking
-		Head _towards the gate_ |goto 69.2,79.5 < 20 |only if walking
-		_Exit_ Stormwind |goto 69.8,84.0 < 20 |only if walking
-		_Run out_ to Elwynn Forest |goto Elwynn Forest/0 32.6,49.3 < 20 |only if walking
-		_Turn Left_ towards the Goblins |goto 33.9,47.7 < 20 |only if walking
+		Start running through Stormwind |goto Stormwind City/0 63.8,73.1 < 20 |only if walking
+		Head towards the gate |goto 69.2,79.5 < 20 |only if walking
+		Exit Stormwind |goto 69.8,84.0 < 20 |only if walking
+		Run out to Elwynn Forest |goto Elwynn Forest/0 32.6,49.3 < 20 |only if walking
+		Turn Left towards the Goblins |goto 33.9,47.7 < 20 |only if walking
 		While disguised as a package-runner, RUN to the Crown Chemical Company's stockpile outside the gates of Stormwind
 		Get the Crown Chemical Co. Package |havebuff INV_Crate_03 |q Pilfering Perfume##24656 |goto Elwynn Forest 34.0,47.4,0.3
 	step
-		_Run back_ to the gates |goto 32.1,49.4 < 20 |only if walking
-		_Enter_ Stormwind |goto Stormwind City/0 67.7,83.9 < 20 |only if walking
-		_Go through_ the tunnel |goto 67.6,79.8 < 20 |only if walking
-		Use the _alley_ as a shortcut |goto 63.8,75.1 < 20 |only if walking
+		Run back to the gates |goto 32.1,49.4 < 20 |only if walking
+		Enter Stormwind |goto Stormwind City/0 67.7,83.9 < 20 |only if walking
+		Go through the tunnel |goto 67.6,79.8 < 20 |only if walking
+		Use the alley as a shortcut |goto 63.8,75.1 < 20 |only if walking
 		Quickly return the package they toss you to Inspector Snip Snagglebolt in Stormwind
 		Deliver the package in time |condition ZGV.questsbyid[24656] and ZGV.questsbyid[24656].complete |q Pilfering Perfume##24656 |goto Stormwind City 61.6,75.3,0.3
 		If you lose your disguise, ask the Inspector for another one and repeat the run
@@ -3598,30 +3598,30 @@ ZygorGuidesViewer:RegisterInclude("Love is in the Air Main Quest",[[
 		turnin Pilfering Perfume##24656 |goto Stormwind City 61.6,75.3
 		accept Fireworks At The Gilded Rose##24848 |goto Stormwind City 61.6,75.3
 	step
-		_Enter_ the inn |goto Stormwind City/0 60.7,75.0 < 10 |walk
-		Go _upstairs_ |goto 59.4,76.0 < 10 |only if walking
+		Enter the inn |goto Stormwind City/0 60.7,75.0 < 10 |walk
+		Go upstairs |goto 59.4,76.0 < 10 |only if walking
 		talk Marion Sutton##38325
 		turnin Fireworks At The Gilded Rose##24848 |goto Stormwind City 60.6,76.4
 		accept Hot On The Trail##24849 |goto Stormwind City 60.6,76.4
 	step
-		Go _downstairs_ |goto 59.4,76.0 < 10 |only if walking
-		_Exit_ the inn |goto Stormwind City/0 60.7,75.0 < 10 |only if walking
+		Go downstairs |goto 59.4,76.0 < 10 |only if walking
+		Exit the inn |goto Stormwind City/0 60.7,75.0 < 10 |only if walking
 		Search the Stormwind Counting House |q Hot On The Trail##24849/1 |goto Stormwind City 63.2,79.1
 	step
 		Search the Stormwind Auction House |q Hot On The Trail##24849/2 |goto Stormwind City 61.2,70.9
 	step
 		Search the Stormwind Barber Shop |q Hot On The Trail##24849/3 |goto Stormwind City 61.3,65.0
 	step
-		_Enter_ the inn |goto Stormwind City/0 60.7,75.0 < 10 |walk
-		Go _upstairs_ |goto 59.4,76.0 < 10 |only if walking
+		Enter the inn |goto Stormwind City/0 60.7,75.0 < 10 |walk
+		Go upstairs |goto 59.4,76.0 < 10 |only if walking
 		talk Marion Sutton##38325
 		turnin Hot On The Trail##24849 |goto Stormwind City 60.6,76.4
 		accept A Friendly Chat...##24657 |goto Stormwind City 60.6,76.4
 	step
-		Go _downstairs_ |goto 59.4,76.0 < 10 |only if walking
-		_Exit_ the inn |goto Stormwind City/0 60.7,75.0 < 10 |walk
+		Go downstairs |goto 59.4,76.0 < 10 |only if walking
+		Exit the inn |goto Stormwind City/0 60.7,75.0 < 10 |walk
 		talk Snivel Rustrocket##37715
-		Tell him "_I have a rocket here with your mark on it. Snivel._"
+		Tell him "I have a rocket here with your mark on it. Snivel."
 		Talk to him until he gives you Snivel's Ledger
 		collect Snivel's Ledger##49915 |q A Friendly Chat...##24657/1 |goto Stormwind City 27.43,34.8
 	step
@@ -3630,16 +3630,8 @@ ZygorGuidesViewer:RegisterInclude("Love is in the Air Main Quest",[[
 ]])
 ZygorGuidesViewer:RegisterInclude("Love is in the Air Dailies",[[
 		talk Inspector Snip Snagglebolt##38066
-		You have to be at least level 5 to accept a quest from him
-		accept Crushing the Crown##24658 |only if level >= 5 and level < 14 |goto Stormwind City 61.6,75.3
-		accept Crushing the Crown##24659 |only if level >= 14 and level < 23 |goto Stormwind City 61.6,75.3
-		accept Crushing the Crown##24660 |only if level >= 23 and level < 32 |goto Stormwind City 61.6,75.3
-		accept Crushing the Crown##24662 |only if level >= 32 and level < 41 |goto Stormwind City 61.6,75.3
-		accept Crushing the Crown##24663 |only if level >= 41 and level < 51 |goto Stormwind City 61.6,75.3
-		accept Crushing the Crown##24664 |only if level >= 51 and level < 61 |goto Stormwind City 61.6,75.3
-		accept Crushing the Crown##24665 |only if level >= 61 and level < 71 |goto Stormwind City 61.6,75.3
-		accept Crushing the Crown##24666 |only if level >= 71 and level < 81 |goto Stormwind City 61.6,75.3
-		accept Crushing the Crown##28934 |only if level >= 81 |goto Stormwind City 61.6,75.3
+		You have to be at least level 20 to accept a quest from him
+		accept Crushing the Crown##44558 |only if level >= 20 |goto Stormwind City 61.6,75.3
 	step
 		talk Public Relations Agent##37675
 		accept A Perfect Puff of Perfume##24629 |or |goto Stormwind City 62.4,75.4
@@ -3664,12 +3656,37 @@ ZygorGuidesViewer:RegisterInclude("Love is in the Air Dailies",[[
 		|tip You can do this around the whole city of Stormwind
 		only if havequest(24636)
 	step
-		kill 5 Crown Lackey |q Crushing the Crown##24658/2 |goto Elwynn Forest 29.3,65.4
-		Use Snagglebolt's Khorium Bomb next to the big shaking Chemical Wagon |use Snagglebolt's Khorium Bomb##50130
-		Destroy the Chemical Wagon |q Crushing the Crown##24658/1 |goto Elwynn Forest 29.3,65.4
-		modelnpc Chemical Wagon##38035
-		only if level >= 5 and level < 14
-		only if havequest(24658)
+	stickystart "Crown Chemical"
+		Throw the Khorium bomb and destroy the Chemical Wagon |use Snagglebolt's Khorium bomb##50130
+		Chemical Wagon Destroyed |q 44558/1 |goto Silverpine Forest/0 45.78,73.39
+		only if havequest(44558)
+	step
+		click Love Potion Recipe
+		accept Follow the Recipe##44560 |goto Silverpine Forest/0 45.24,73.87
+	step
+		Enter the building |goto Silverpine Forest/0 46.23,73.45
+		Run up the stairs |goto 46.65,73.32
+		click Recipe Fragment##6478 
+		collect the 1st Fragment |q 44560/1 |goto 46.30,73.47
+		|only if havequest(44560)
+	step
+		Enter the building |goto 44.98,71.71
+		click Recipe Fragment##6478 
+		collect the 2nd Fragment |q 44560/2 |goto 45.09,71.50
+		|only if havequest(44560)
+	step
+		click Recipe Fragment##6478
+		collect the 3rd Fragment |q 44560/3 |goto 42.73,71.16
+		|only if havequest(44560)
+	step
+	label "Crown Chemical"
+		kill Crown Supply Guard##114278+, Test Subject##116285+, Exploited Crown Intern##114279+,
+		Slay 12 Crown Chemical Co. Employees |q 44558/2 |goto Silverpine Forest/0 45.78,73.39
+		only if havequest(44558)
+	step
+		talk Inspector Snip Snagglebolt##38066
+		turnin Crushing the Crown##44558 |goto Stormwind City 61.5,75.3
+		turnin Follow the Recipe##44560 |goto Stormwind City 61.5,75.3
 	step
 		#include "auctioneer"
 		collect 4 Lovely Charm Bracelet##4991 |next "charm" |or
@@ -3683,24 +3700,20 @@ ZygorGuidesViewer:RegisterInclude("Love is in the Air Dailies",[[
 		collect 4 Lovely Charm Bracelet##49916
 	step
 	label "charm"
-		talk Inspector Snip Snagglebolt##38066
-		turnin Crushing the Crown##24658 |goto Stormwind City 61.6,75.3
-		only if level >= 5 and level < 14
-	step
 		talk Public Relations Agent##37675
 		turnin A Perfect Puff of Perfume##24629 |only if havequest(24629) |goto Stormwind City 62.4,75.4
 		turnin A Cloudlet of Classy Cologne##24635 |only if havequest(24635) |goto Stormwind City 62.4,75.4
 		turnin Bonbon Blitz##24636 |only if havequest(24636) |goto Stormwind City 62.4,75.4
 	step
-		_Enter_ the Stormwind Keep |goto Stormwind City/0 80.5,38.0 < 10 |walk
+		Enter the Stormwind Keep |goto Stormwind City/0 80.5,38.0 < 10 |walk
 		talk King Varian Wrynn##29611
 		turnin A Gift for the King of Stormwind##24597 |goto Stormwind City 85.8,31.7
 	step
 		talk Kwee Q. Peddlefeet##16075
 		accept A Gift for the High Priestess of Elune##24610 |goto Darnassus 45.4,57.8
 	step
-		_Run up_ the stone ramp |goto Darnassus/0 43.8,85.2 < 10 |only if walking
-		_Continue_ to the left around the ledge |goto 46.1,82.6 < 10 |only if walking
+		Run up the stone ramp |goto Darnassus/0 43.8,85.2 < 10 |only if walking
+		Continue to the left around the ledge |goto 46.1,82.6 < 10 |only if walking
 		talk Tyrande Whisperwind##7999
 		turnin A Gift for the High Priestess of Elune##24610 |goto Darnassus 43.0,78.0
 	step
@@ -3713,85 +3726,10 @@ ZygorGuidesViewer:RegisterInclude("Love is in the Air Dailies",[[
 		talk King Varian Wrynn##29611
 		turnin A Gift for the King of Stormwind##24597 |goto Stormwind City 80,38.4
 	step
-		talk Inspector Snip Snagglebolt##38066
-		turnin Crushing the Crown##24659 |goto Stormwind City 61.6,75.3
-		only if level >= 14 and level < 23
-	step
-		kill 5 Crown Duster |q Crushing the Crown##24660/2 |goto Hillsbrad Foothills 34.5,58.4
-		Use Snagglebolt's Khorium Bomb next to the big shaking Chemical Wagon |use Snagglebolt's Khorium Bomb##50130
-		Destroy the Chemical Wagon |q Crushing the Crown##24660/1 |goto Hillsbrad Foothills 34.5,58.4
-		modelnpc Chemical Wagon##38035
-		only if level >= 23 and level < 32
-		only if havequest(24660)
-	step
-		kill 5 Crown Hoodlum |q Crushing the Crown##24662/2 |goto Dustwallow Marsh 60.8,38.2
-		Use Snagglebolt's Khorium Bomb next to the big shaking Chemical Wagon |use Snagglebolt's Khorium Bomb##50130
-		Destroy the Chemical Wagon |q Crushing the Crown##24662/1 |goto Dustwallow Marsh 60.8,38.2
-		modelnpc Chemical Wagon##38035
-		only if level >= 32 and level < 41
-		only if havequest(24662)
-	step
-		kill 5 Crown Agent |q Crushing the Crown##24663/2 |goto The Hinterlands 23.6,53.7
-		Use Snagglebolt's Khorium Bomb next to the big shaking Chemical Wagon |use Snagglebolt's Khorium Bomb##50130
-		Destroy the Chemical Wagon |q Crushing the Crown##24663/1 |goto The Hinterlands 23.6,53.7
-		modelnpc Chemical Wagon##38035
-		only if level >= 41 and level < 51
-		only if havequest(24663)
-	step
-		talk Inspector Snip Snagglebolt##38066
-		turnin Crushing the Crown##24660 |only if level >= 23 and level < 32 |goto Stormwind City 61.6,75.3
-		turnin Crushing the Crown##24662 |only if level >= 32 and level < 41 |goto Stormwind City 61.6,75.3
-		turnin Crushing the Crown##24663 |only if level >= 41 and level < 51 |goto Stormwind City 61.6,75.3
-		only if level >= 23 and level < 51
-	step
-		kill 5 Crown Sprinkler |q Crushing the Crown##24664/2 |goto Winterspring 63.6,49.4
-		Use Snagglebolt's Khorium Bomb next to the big shaking Chemical Wagon |use Snagglebolt's Khorium Bomb##50130
-		Destroy the Chemical Wagon |q Crushing the Crown##24664/1 |goto Winterspring 63.6,49.4
-		modelnpc Chemical Wagon##38035
-		only if level >= 51 and level < 61
-		only if havequest(24664)
-	step
-		talk Inspector Snip Snagglebolt##38066
-		turnin Crushing the Crown##24664 |goto Stormwind City 61.6,75.3
-		only if level >= 51 and level < 61
-	step
-		kill 5 Crown Underling |q Crushing the Crown##24665/2 |goto Terokkar Forest 41.4,22.5
-		Use Snagglebolt's Khorium Bomb next to the big shaking Chemical Wagon |use Snagglebolt's Khorium Bomb##50130
-		Destroy the Chemical Wagon |q Crushing the Crown##24665/1 |goto Terokkar Forest 41.4,22.5
-		modelnpc Chemical Wagon##38035
-		only if level >= 61 and level < 71
-		only if havequest(24665)
-	step
-		talk Inspector Snip Snagglebolt##38066
-		turnin Crushing the Crown##24665 |goto Stormwind City 61.6,75.3
-		only if level >= 61 and level < 71
-	step
-		kill 5 Crown Sprayer |q Crushing the Crown##24666/2 |goto Crystalsong Forest 49.0,47.8
-		Use Snagglebolt's Khorium Bomb next to the big shaking Chemical Wagon |use Snagglebolt's Khorium Bomb##50130
-		Destroy the Chemical Wagon |q Crushing the Crown##24666/1 |goto Crystalsong Forest 49.0,47.8
-		modelnpc Chemical Wagon##38035
-		only if level >= 71 and level <=81
-		only if havequest(24666)
-	step
-		talk Inspector Snip Snagglebolt##38066
-		turnin Crushing the Crown##24666 |goto Stormwind City 61.6,75.3
-		only if level >= 71 and level <=81
-	step
-		kill 5 Crown Technician##51613+ |q Crushing the Crown##28934/2 |goto Uldum 67.9,19.8
-		Use Snagglebolt's Khorium Bomb near the Chemical Wagon |use Snagglebolt's Khorium Bomb##50130
-		Chemical Wagon Destroyed |q Crushing the Crown##28934/1 |goto Uldum 67.9,19.8
-		modelnpc Chemical Wagon##38035
-		only if level >=81
-		only if havequest(28934)
-	step
-		talk Inspector Snip Snagglebolt##38066
-		turnin Crushing the Crown##28934 |goto Stormwind City 61.5,75.3
-		only if level >= 81
-	step
 		talk Kwee Q. Peddlefeet##16075
 		accept A Gift for the Lord of Ironforge##24609 |goto Ironforge 33.5,65.6
 	step
-		_Enter_ the tunnel |goto Ironforge/0 38.5,71.4 < 10 |walk
+		Enter the tunnel |goto Ironforge/0 38.5,71.4 < 10 |walk
 		talk King Magni Bronzebeard##2784
 		turnin A Gift for the Lord of Ironforge##24609 |goto Ironforge 40.0,55.1
 ]])
@@ -3810,24 +3748,24 @@ ZygorGuidesViewer:RegisterInclude("Love is in the Air Achievement",[[
 		use Bag of Heart Candies##21813
 		_Open the Bag_ to get the 8 different types of Heart Candy |use Bag of Heart Candies##21813
 		_Congratulations!_ You have earned the achievement for this step |condition not default |only if default
-		Be Mine |collect 1 Heart Candy##21816 |only if not achieved(1701,6)
+		Be Mine |collect 1 Heart Candy##21816 |only if not achieved(1701,1)
 		I'll follow you all around Azeroth |collect 1 Heart Candy##21818 |only if not achieved(1701,2)
-		All yours |collect 1 Heart Candy##21819 |only if not achieved(1701,1)
+		All yours |collect 1 Heart Candy##21819 |only if not achieved(1701,3)
 		I'm all yours |collect 1 Heart Candy##21821 |only if not achieved(1701,4)
-		Hot Lips |collect 1 Heart Candy##21823 |only if not achieved(1701,8)
-		You're Mine |collect 1 Heart Candy##21822 |only if not achieved(1701,5)
-		You're the best |collect 1 Heart Candy##21820 |only if not achieved(1701,3)
-		I LOVE YOU |collect 1 Heart Candy##21817 |only if not achieved(1701,7)
+		Hot Lips |collect 1 Heart Candy##21823 |only if not achieved(1701,5)
+		You're Mine |collect 1 Heart Candy##21822 |only if not achieved(1701,6)
+		You're the best |collect 1 Heart Candy##21820 |only if not achieved(1701,7)
+		I LOVE YOU |collect 1 Heart Candy##21817 |only if not achieved(1701,8)
 	step
 		Eat the 8 different type of Heart Candy
-		Be Mine |achieve 1701/6 |use 1 Heart Candy##21816
+		Be Mine |achieve 1701/1 |use 1 Heart Candy##21816
 		I'll follow you all around Azeroth |achieve 1701/2 |use 1 Heart Candy##21818
-		All yours |achieve 1701/1 |use 1 Heart Candy##21819
+		All yours |achieve 1701/3 |use 1 Heart Candy##21819
 		I'm all yours |achieve 1701/4 |use 1 Heart Candy##21821
-		Hot Lips |achieve 1701/8 |use 1 Heart Candy##21823
-		You're Mine |achieve 1701/5 |use 1 Heart Candy##21822
-		You're the best |achieve 1701/3 |use 1 Heart Candy##21820
-		I LOVE YOU |achieve 1701/7 |use 1 Heart Candy##21817
+		Hot Lips |achieve 1701/5 |use 1 Heart Candy##21823
+		You're Mine |achieve 1701/6 |use 1 Heart Candy##21822
+		You're the best |achieve 1701/7 |use 1 Heart Candy##21820
+		I LOVE YOU |achieve 1701/8 |use 1 Heart Candy##21817
 	step
 		talk Lovely Merchant##37674
 		buy 10 Silver Shafted Arrow##22200 |n
@@ -3838,11 +3776,11 @@ ZygorGuidesViewer:RegisterInclude("Love is in the Air Achievement",[[
 		buy 1 Box of Chocolates##49909 |n
 		Use your Box of Chocolates and get all the chocolate contained inside of it |use Box of Chocolates##49909
 		Eat each type of chocolate
-		Sweet Surprise |achieve 1702/1 |use Sweet Surprise##22239
+		Sweet Surprise |achieve 1702/3 |use Sweet Surprise##22239
 		Very Berry Cream |achieve 1702/4 |use Very Berry Cream##22238
-		Buttermilk Delight |achieve 1702/2 |use Buttermilk Delight##22236  
+		Buttermilk Delight |achieve 1702/1 |use Buttermilk Delight##22236  
 		|tip Save the remaining Buttermilk Delights for a later achievement.
-		Dark Desire |achieve 1702/3 |use Dark Desire##22237
+		Dark Desire |achieve 1702/2 |use Dark Desire##22237
 	step
 		talk Lovely Merchant##37674
 		buy 10 Love Rocket##34258 |n
@@ -3866,17 +3804,17 @@ ZygorGuidesViewer:RegisterInclude("Love is in the Air Achievement",[[
 		Use your Handful of Rose Petals on the follow race/class combinations |use Handful of Rose Petals##22218 
 		|tip Save any extra Handfuls of Rose Petals you have, you'll need one later.
 		We will direct you to Stormwind, but you can look wherever you choose to find the classes you need
-		Gnome Warlock |achieve 1699/7 |goto Stormwind City 62.6,73.0
+		Gnome Warlock |achieve 1699/1 |goto Stormwind City 62.6,73.0
 		Orc Death Knight |achieve 1699/2 |goto Stormwind City 62.6,73.0
-		Human Death Knight |achieve 1699/8 |goto Stormwind City 62.6,73.0
-		Night Elf Priest |achieve 1699/3 |goto Stormwind City 62.6,73.0
-		Orc Shaman |achieve 1699/4 |goto Stormwind City 62.6,73.0
-		Tauren Druid |achieve 1699/5 |goto Stormwind City 62.6,73.0
-		Undead Warrior |achieve 1699/6 |goto Stormwind City 62.6,73.0
-		Troll Rogue |achieve 1699/1 |goto Stormwind City 62.6,73.0
+		Human Death Knight |achieve 1699/3 |goto Stormwind City 62.6,73.0
+		Night Elf Priest |achieve 1699/4 |goto Stormwind City 62.6,73.0
+		Orc Shaman |achieve 1699/5 |goto Stormwind City 62.6,73.0
+		Tauren Druid |achieve 1699/6 |goto Stormwind City 62.6,73.0
+		Undead Warrior |achieve 1699/7 |goto Stormwind City 62.6,73.0
+		Troll Rogue |achieve 1699/8 |goto Stormwind City 62.6,73.0
 		Blood Elf Mage |achieve 1699/9 |goto Stormwind City 62.6,73.0
-		Draenei Paladin |achieve 1699/11 |goto Stormwind City 62.6,73.0
-		Dwarf Hunter |achieve 1699/10 |goto Stormwind City 62.6,73.0
+		Draenei Paladin |achieve 1699/10 |goto Stormwind City 62.6,73.0
+		Dwarf Hunter |achieve 1699/11 |goto Stormwind City 62.6,73.0
 		only if not achieved(1699)
 	step
 		In Dalaran
@@ -3887,7 +3825,7 @@ ZygorGuidesViewer:RegisterInclude("Love is in the Air Achievement",[[
 	step
 		Go to Wintergrasp in Northrend
 		Use your Love Fool anywhere inside Wintergrasp |use Love Fool##22261
-		Target the Love Fool and Pity it |script DoEmote("PITY") |achieve 1704/2
+		Target the Love Fool and Pity it |script DoEmote("PITY") |achieve 1704/1
 		only if not achieved(1704)
 	step
 		Find Sraaz 
@@ -3902,22 +3840,22 @@ ZygorGuidesViewer:RegisterInclude("Love is in the Air Achievement",[[
 		Go to the Gurubashi Arena in The Cape of Stranglethorn: 
 		|tip The Cape of Stranglethorn is the southern-most zone on the Eastern Kingdoms continent
 		Use your Love Fool anywhere inside the Gurubashi Arena |use Love Fool##22261
-		Target the Love Fool and Pity it |script DoEmote("PITY") |achieve 1704/5
+		Target the Love Fool and Pity it |script DoEmote("PITY") |achieve 1704/2
 		only if not achieved(1704)
 	step
 		Enter the Arathi Basin PvP Battleground
 		Use your Love Fool inside the Blacksmith subzone inside Arathi Basin |use Love Fool##22261
-		Target the Love Fool and Pity it |script DoEmote("PITY") |achieve 1704/4
+		Target the Love Fool and Pity it |script DoEmote("PITY") |achieve 1704/3
 		only if not achieved(1704)
 	step
 		Enter the Culling of Stratholme dungeon
 		Use your Love Fool anywhere inside the Culling of Stratholme dungeon |use Love Fool##22261
-		Target the Love Fool and Pity it |script DoEmote("PITY") |achieve 1704/1
+		Target the Love Fool and Pity it |script DoEmote("PITY") |achieve 1704/4
 		only if not achieved(1704)
 	step
 		Enter the Naxxramas raid
 		Use your Love Fool anywhere inside the Naxxramas raid |use Love Fool##22261
-		Target the Love Fool and Pity it |script DoEmote("PITY") |achieve 1704/3
+		Target the Love Fool and Pity it |script DoEmote("PITY") |achieve 1704/5
 		only if not achieved(1704)
 	step
 		Go to a place where the mobs are at least green to you, they cannot be grey to you, or they won't drop the items you need

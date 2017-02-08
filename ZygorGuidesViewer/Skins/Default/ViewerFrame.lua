@@ -99,7 +99,7 @@ function ZygorGuidesViewer_ProgressBar_Update()
 	if not ZGV.db.char.maint_enableprogressbar then return end
 	if not ZGV.CurrentGuide or not ZGV.CurrentGuide.CurrentStepNum or not ZGV.db.profile.progress then return end
 	local TotalSize=ZygorGuidesViewerFrame_Step1:GetWidth()
-	local percent,num = ZGV.CurrentGuide:GetCompletion()
+	local percent,num = ZGV.CurrentGuide:GetCompletion(ZGV.db.profile.levelprogbar)
 
 	local progressbar=ZGV.Frame.Border.ProgressBar
 	local progresstex=ZGV.Frame.Border.ProgressBar.tex
@@ -147,7 +147,7 @@ function ZygorGuidesViewer_ProgressBar_Refresh()
 	local progressbar=ZGV.Frame.Border.ProgressBar
 	local progresstex=ZGV.Frame.Border.ProgressBar.tex
 
-	if ZGV.db.profile.levelprogbar == "level" then
+	if ZGV.db.profile.levelprogbar == "level" or ZGV.db.profile.levelprogbar == "quests" then
 		progresstex:SetVertexColor(unpack(ZGV.CurrentSkinStyle:SkinData("ProgressBarColor2") or {0.53,0.81,0.98,1}))
 	elseif ZGV.db.profile.levelprogbar == "steps" then
 		progresstex:SetVertexColor(unpack(ZGV.CurrentSkinStyle:SkinData("ProgressBarColor") or {0,1,0,1}))
@@ -170,8 +170,8 @@ end
 
 function ZygorGuidesViewer_ProgressBar_OnEnter()
 	if not ZGV.CurrentGuide then return end
-	local percent,num = ZGV.CurrentGuide:GetCompletion()
-	local _,compText=ZGV.CurrentGuide:GetCompletionText()
+	local percent,num = ZGV.CurrentGuide:GetCompletion(ZGV.db.profile.levelprogbar)
+	local _,compText=ZGV.CurrentGuide:GetCompletionText(ZGV.db.profile.levelprogbar)
 
 
 	local progressbar=ZGV.Frame.Border.ProgressBar
@@ -255,27 +255,30 @@ function ZygorGuidesViewer_ProgressBar_OnExit()
 end
 
 function ZygorGuidesViewer_ProgressBar_OnClick()
+	-- quests > level if set > steps > inventory
 	if ZGV.CurrentGuide.endlevel then
 		if ZGV.db.profile.levelprogbar == "level" then
 			ZGV.db.profile.levelprogbar = "steps"
 		elseif ZGV.db.profile.levelprogbar == "steps" then
+			ZGV.db.profile.levelprogbar = "quests"
+		elseif ZGV.db.profile.levelprogbar == "quests" then
 			ZGV.db.profile.levelprogbar = "inventory"
 		elseif ZGV.db.profile.levelprogbar == "inventory" then
 			ZGV.db.profile.levelprogbar = "level"
-		else -- backwards compatibility ~~ Jeremiah
-			ZGV.db.profile.levelprogbar = "steps"
+		else
+			ZGV.db.profile.levelprogbar = "quests"
 		end
 		ZygorGuidesViewer_ProgressBar_OnEnter()
 		ZygorGuidesViewer_ProgressBar_Update()
 	else
-		if ZGV.db.profile.levelprogbar == "level" then
+		if ZGV.db.profile.levelprogbar == "quests" then
 			ZGV.db.profile.levelprogbar = "steps"
 		elseif ZGV.db.profile.levelprogbar == "steps" then
 			ZGV.db.profile.levelprogbar = "inventory"
 		elseif ZGV.db.profile.levelprogbar == "inventory" then
-			ZGV.db.profile.levelprogbar = "steps" -- Not level based, don't go back to level.
-		else -- backwards compatibility ~~ Jeremiah
-			ZGV.db.profile.levelprogbar = "steps"
+			ZGV.db.profile.levelprogbar = "quests"
+		else
+			ZGV.db.profile.levelprogbar = "quests"
 		end
 		ZygorGuidesViewer_ProgressBar_OnEnter()
 		ZygorGuidesViewer_ProgressBar_Update()

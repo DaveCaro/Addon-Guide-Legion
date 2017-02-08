@@ -51,7 +51,7 @@ function Poi:CheckValidity(poistep,register)
 	if poistep.poitype == "battlepet" then
 		return not ZGV.PetBattle:HasPetByDisplay(poistep.poipet)
 	elseif poistep.poitype=="treasure" or poistep.poitype=="rare" then
-		return not ZGV.completedQuests[poistep.poiquest]
+		return not IsQuestFlaggedCompleted(poistep.poiquest)
 	elseif poistep.poitype=="achievement" then
 		if poistep.poisubachieve then
 			if GetAchievementNumCriteria(poistep.poiachieve) < poistep.poisubachieve then -- Causes errors when blizzard changes crap.
@@ -136,7 +136,7 @@ function Poi:RefreshMapIcons()
 			if not Poi:CheckValidity(point.storedData) then
 				cdb.ActivatedPois[point.poiNum] = nil
 				cdb.ActivatedInlinePois[point.poiNum] = nil
-				ZGV.Pointer:RemoveWaypoint(i)
+				ZGV.Pointer:RemoveWaypoint(point)
 			end
 		end
 	end

@@ -14,13 +14,9 @@ Zygor Viewer Guide :
 
 - GENERAL :
 
-Bug report function fixed.
+What's New Home menu updated.
 
-Detailed reputation gains" option restored.
-
-- POINTS OF INTEREST :
-
-Treasures and rare spawn POI's added for all Legion zones.
+Banner image updated.
 
 DUGI GUIDE : 
 

@@ -76,6 +76,7 @@ function Auctions:CalculateDetails(refresh)
 	local auctions = ZGV.db.realm.gold_scan_data[1][id]
 	local trends = ZGV.Gold.servertrends.items[id]
 	local tooltip = self.tooltip
+	table.wipe(tooltip)
 
 	local _,class,subclass  = GetItemInfoInstant(id)
 

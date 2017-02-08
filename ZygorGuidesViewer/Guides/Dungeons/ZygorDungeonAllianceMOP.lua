@@ -2634,7 +2634,7 @@ Or
 Click here to do a tribute run |confirm |next "Tribute"
 step
 label "Normal"
-Press _I_ and queue for Dire Maul: Gordock Commons or enter the dungeon with your group |goto Dire Maul/1 71.1,93.5
+Press _I_ and queue for Dire Maul: Gordock Commons or enter the dungeon with your group |goto Dire Maul/1 71.1,93.5 |c
 step
 talk Druid of the Talon##45040
 accept King of the Gordok##27125 |goto Dire Maul 71.7,92.2
@@ -2778,7 +2778,7 @@ only if not completedq(27125)
 |next "end"
 step
 label "Tribute"
-Press _I_ and queue for Dire Maul: Gordock Commons or enter the dungeon with your group |goto Dire Maul/1 71.1,93.5
+Press _I_ and queue for Dire Maul: Gordock Commons or enter the dungeon with your group |goto Dire Maul/1 71.1,93.5 |c
 step
 talk Druid of the Talon##45040
 accept King of the Gordok##27125 |goto Dire Maul 71.7,92.2
@@ -4152,13 +4152,12 @@ path	58.1,66.4	58.1,56.1	53.1,53.0
 path	49.7,46.8	47.3,41.2	45.0,41.2
 Follow the path |goto The Blood Furnace/1 45.0,41.2 < 6
 |tip Be wary of stealthed Laughing Skull Rogues
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill The Maker##17381
-_Domination_
-|tip This ability mind controls a party member for 10 seconds.
-_Exploding Breaker_
-|tip Deals nature damage to the player targeted and anyone within 8 yards. Stay spread out to minimize party damage.
+|tip Domination mind controls a party member for 10 seconds, crowd control this party member.
+|tip Exploding Breaker deals nature damage to the player targeted and anyone within 8 yards. Stay spread out to minimize party damage.
 Loot the Fel Infusion Rod |q 29538/2 |goto The Blood Furnace 36.6,40.7 |only if havequest(29538)
 scenariogoal 24911 |goto The Blood Furnace 36.6,40.7
 step
@@ -4168,13 +4167,13 @@ path	35.8,41.3	31.7,42.1	30.8,30.6
 path	31.9,21.1	35.5,22.0
 Follow the path |goto The Blood Furnace/1 35.5,22.0 < 5
 |tip Be wary of stealthed Laughing Skull Rogues
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 click Cell Door Lever##6899
 |tip This will start the boss fight. You will have 4 cell doors open and have to fight Orcs until all 4 waves are complete.
 kill Broggok##17380
-_DPS_ |grouprole DAMAGE
-|tip Stay behind Broggok to avoid damage from Slime Spray. |grouprole DAMAGE
+|tip DPS should stay behind Broggok to avoid damage from Slime Spray.
 scenariogoal 24913 |goto 43.4,21.9
 step
 map The Blood Furnace/1
@@ -4184,6 +4183,7 @@ path	62.6,29.0	65.8,33.2	67.8,41.0
 path	65.4,41.2
 Follow the path |goto The Blood Furnace/1 65.4,41.2 < 5
 |tip Be wary of stealthed Laughing Skull Rogues
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 Investigate The Blood Furnace |q 29539/1 |only if havequest(29539)
 step
@@ -4203,6 +4203,7 @@ path follow smart; loop off; ants curved; dist 15
 path	62.3,47.2	63.4,63.4	63.5,78.4
 path	62.8,90.6	55.5,89.7
 Follow the path |goto The Blood Furnace/1 55.5,89.7 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 only if not completedq(29538) or not completedq(29539) or not completedq(29540)
 step
@@ -4273,9 +4274,7 @@ Follow the path |goto The Slave Pens/1 58.9,53.2 < 6
 confirm
 step
 kill Rokmar the Crackler##17991
-_Grievous Wound_
-|tip This will bleed all party members until they are healed to full health.
-_Frenzy_
+|tip Grievous Wound will bleed all party members until they are healed to full health.
 |tip Frenzy causes Rokmar to gain increased physical damage and 60% increased attack speed.
 Loot The Invader's Claw |q 29565/1 |only if havequest(29565)
 scenariogoal 24908 |goto 57.3,45.4
@@ -4300,10 +4299,8 @@ Tell him: "_Naturalist, please grant me your boon_" |havebuff Interface\Icons\Ab
 step
 kill Quagmirran##17942
 |tip Avoid standing in front of Quagmirran or you will be hit with Acid Spray and Cleave.
-_Poison Bolt Volley_
-|tip Deals nature damage to all party members.
-_Uppercut_
-|tip This ability deals physical damage and knocked the affected player up in the air.
+|tip Poison Bolt Volley Deals nature damage to all party members.
+|tip Uppercut deals physical damage and knocked the affected player up in the air.
 Loot The Slave Master's Eye |q 29565/2 |goto The Slave Pens 86.2,67.9 |only if havequest(29565)
 scenariogoal 1/34433 |goto The Slave Pens 86.2,67.9
 step
@@ -4360,8 +4357,7 @@ confirm
 step
 kill Hungarfen##17770
 |tip Stay away from Underbog Mushrooms. They explode after 20 seconds leaving a nasty DoT.
-_Foul Spores_
-|tip This is cast at 20% health, leeching health from anyone within 15 yards.
+|tip Foul Spores is cast at 20% health, leeching health from anyone within 15 yards.
 scenariogoal 24904 |goto The Underbog/1 70.2,91.4
 step
 map The Underbog/1
@@ -4398,8 +4394,7 @@ confirm
 step
 kill Swamplord Musel'ek##17826, Claw##17827
 |tip Spread out to minimize damage from Volley.
-_Knock Away_
-|tip This ability will knock the targeted player back and deal physical damage.
+|tip Knock Away will knock the targeted player back and deal physical damage.
 scenariogoal 24906 |goto 41.5,25.4
 step
 Talk to Windcaller Claw
@@ -4416,8 +4411,7 @@ confirm
 step
 kill The Black Stalker##17882
 |tip Stay spread out to minimize Chain Lightning damage.
-_Static Charge_
-|tip If you are affected by this debuff, move away from allies or they will take damage too.
+|tip If you are affected by Static Charge, move away from allies or they will take damage too.
 Loot the Black Stalker's Brain |q 29567/1 |goto The Underbog 25.9,45.5 |only if havequest(29567)
 scenariogoal 1/34432 |goto The Underbog 25.9,45.5
 step "sanguinehibiscus"
@@ -4459,8 +4453,7 @@ only if not completedq(29573) or not completedq(29575)
 step
 kill Pandemonius##18341
 |tip Clear out this room before you pull the boss, they will aggro with him.
-_Dark Shell_
-|tip When this is cast, STOP ATTACKING. You will kill yourself if you don't.
+|tip When Dark Shell is cast, STOP ATTACKING. You will kill yourself if you don't.
 Loot Pandemonius' Essence |q 29574/1 |goto 48.2,27.7 |only if havequest(29574)
 scenariogoal 24894 |goto 48.2,27.7
 step
@@ -4473,9 +4466,7 @@ Follow the path |goto Mana-Tombs/1 56.0,65.0 < 15
 confirm
 step
 kill Tavarok##18343
-_Crystal Prison_
-|tip This ability will trap a random player and deal 10% of the maximum health every second for 5 seconds.
-_Arcing Smash_
+|tip Crystal Prison will trap a random player and deal 10% of the maximum health every second for 5 seconds.
 |tip Arcing Smash will damage anyone standing in front of him.
 Loot Tavarok's Heart |q 29574/2 |goto Mana-Tombs/1 60.6,74.9 |only if havequest(29574)
 scenariogoal 24895 |goto 61.3,74.0
@@ -4550,8 +4541,7 @@ confirm
 step
 kill Shirrak the Dead Watcher##18371
 |tip Casters need to stay at max range to minimize casting speed reduction caused by Inhibit Magic.
-_Attract Magic_
-|tip This ability will Death Grip the party to Shirrak.
+|tip Attract Magic will Death Grip the party to Shirrak.
 scenariogoal 24893 |goto 46.2,68.7
 Defeat Shirrak the Dead Watcher |q 29590/1 |only if havequest(29590)
 stickystart "Spirits"
@@ -4566,12 +4556,9 @@ Follow the path |goto Auchenai Crypts/2 73.7,78.3 < 6
 confirm
 step
 kill Exarch Maladaar##18373
-_Soul Scream_
-|tip This will disorient anyone within 10 yards for 2 seconds.
-_Stolen Soul_
+|tip Soul Scream will disorient anyone within 10 yards for 2 seconds.
 |tip Stolen Soul makes a copy of a random player, lowering their damage and healing and attacking them for 2 minutes.
-_Summon Avatar_
-|tip This occurs at 25% health. This avatar needs to be picked up and deals heavy physical damage.
+|tip Summon Avatar occurs at 25% health. This avatar needs to be picked up and deals heavy physical damage.
 scenariogoal 1/34430 |goto 74.2,49.9
 step "Spirits"
 kill 5 Angered Skeleton##18524+ |q 29591/1
@@ -4739,8 +4726,7 @@ confirm
 step
 kill Darkweaver Syth##18472
 |tip At 90%, 55%, and 15% health, Syth will summon four elementals. AoE these quickly.
-_Chain Lightning_
-|tip This deals AoE damage so try and spread out.
+|tip Chain Lightning deals AoE damage so try and spread out.
 Loot Terokk's Mask |q 29606/1 |goto 48.6,67.5 |only if havequest(29606)
 scenariogoal 24889 |goto 48.6,67.5
 step
@@ -4782,18 +4768,14 @@ only if heroic_dung()
 step
 kill Anzu##23035
 |tip At 75% and 35% health, Anzu will become immune and summon his brood. AoE the birds and continue with Anzu.
-_Paralyzing Screech_
-|tip This ability will stun everyone for 6 seconds.
-_Dive_
-|tip Causes Anzu to charge a player and knock them back.
-_Spell Bomb_
-|tip This should be dispelled whenever possible.
+|tip Paralyzing Screech will stun everyone for 6 seconds.
+|tip Dive Causes Anzu to charge a player and knock them back.
+|tip Spell Bomb should be dispelled whenever possible.
 scenariogoal 24890 |goto Sethekk Halls/2 32.4,56.0
 only if heroic_dung()
 step
 kill Talon King Ikiss##18473 |tip At 80%, 50%, and 25% health, Ikiss will used Arcane Explosion. Hide behind a pillar.
-_Arcane Explosion_
-|tip Just before this is cast, Ikiss will Slow the whole party. Stay close to a pillar. |only if heroic_dung()
+|tip Just before Arcane Explosion is cast, Ikiss will Slow the whole party. Stay close to a pillar. |only if heroic_dung()
 Loot Terokk's Quill |q 29606/2 |goto 32.2,29.5 |only if havequest(29606)
 scenariogoal 1/34428 |goto 32.2,29.5
 step "Serpent"
@@ -4857,7 +4839,7 @@ kill 12 Cabal Ritualist##18794+ |q 29645/1 |goto 29.5,39.1
 |tip Kill all the Ritualists in this room to activate the boss.
 kill Ambassador Hellmaw##18731
 |tip Stay behind Hellmaw to avoid damage from Corrosive Acid.
-_Fear_ |tip Fear will periodically be cast, Fearing the party for 6 seconds.
+|tip Fear will periodically be cast, Fearing the party for 6 seconds.
 scenariogoal 24863 |goto Shadow Labyrinth/1 21.4,39.1
 step
 map Shadow Labyrinth/1
@@ -4880,10 +4862,8 @@ stickystart "souldevice"
 step
 kill Blackheart the Inciter##18667
 |tip If you do not clear the room first, all the mobs will attack you when you fight the boss.
-_Incite Chaos_
-|tip This will cause all party members to attack each other for 30 seconds.
-_War Stomp_
-|tip This ability will deal damage and knock back anyone within 20 yards of Blackheart.
+|tip Incite Chaos will cause all party members to attack each other for 30 seconds.
+|tip War Stomp will deal damage and knock back anyone within 20 yards of Blackheart.
 scenariogoal 24868 |goto 26.2,68.2
 step
 map Shadow Labyrinth/1
@@ -4896,12 +4876,9 @@ confirm
 step
 kill Grandmaster Vorpil##18732
 |tip If you do not clear the room first, all the mobs will attack you when you fight the boss.
-_Draw Shadows_
-|tip This ability will teleport everyone to Vorpil's platform into Rain of Fire, move out.
-_Void Travelers_
-|tip These adds will be summoned by portals, kill them before they reach Vorpil.
-_Banish_
-|tip Vorpil will cast this on a player randomly |only if heroic_dung()
+|tip Draw Shadows will teleport everyone to Vorpil's platform into Rain of Fire, move out.
+|tip Void Travelers will be summoned by portals, kill them before they reach Vorpil.
+|tip Vorpil will cast Banish on a player randomly |only if heroic_dung()
 scenariogoal 24866 |goto 53.3,56.5
 step
 click Codex of Blood##6892
@@ -4918,9 +4895,7 @@ confirm
 step
 kill Murmur##18708
 |tip If you do not clear the room first, all the mobs will attack you when you fight the boss.
-_Murmur's Touch_
-|tip This ability will deal damage to nearby party memebers, so stay spread out. |only if heroic_dung()
-_Thundering Storm_
+|tip Murmur's Touch will deal damage to nearby party memebers, so stay spread out. |only if heroic_dung()
 |tip Thundering Storm will hit all players if they are more than 25 yards away.
 scenariogoal 1/34420 |goto 80.8,39.1
 step "souldevice"
@@ -5016,8 +4991,7 @@ confirm
 step
 kill Nethermancer Sepethrea##19221
 |tip If you do not clear the room first, all the mobs will attack you when you fight the boss.
-_Raging Flames_
-|tip These will be summoned throughout the fight, try to avoid them and their AoE spells. They are not hard to avoid.
+|tip Raging Flames will be summoned throughout the fight, try to avoid them and their AoE spells. They are not hard to avoid.
 scenariogoal 24882 |goto 47.6,20.8
 modelnpc Raging Flames##20481+
 step
@@ -5032,11 +5006,9 @@ confirm
 step
 kill Pathaleon the Calculator##19220 |only if not havequest(29658)
 kill Pathaleon the Calculator##19220 |q 29658/1 |only if havequest(29658)
-_Domination_
-|tip This ability will Mind Control a party member for 5 seconds.
-_Frenzy_
+|tip Domination will Mind Control a party member for 5 seconds.
 |tip Frenzy increases Pathaleon's attack speed by 60% and physical damage by 75.
-scenariostage 1 |goto 27.8,61.4
+scenariogoal 1/34425 |goto 27.8,61.4
 step
 Click the Quest Complete Box in the top right corner
 turnin The Calculator##29658 |only if havequest(29658)
@@ -5066,7 +5038,6 @@ confirm
 step
 kill Commander Sarannis##17976 |only if not havequest(29660)
 kill Commander Sarannis##17976 |q 29660/1 |only if havequest(29660)
-_Summon Reinforcements_
 |tip Sarannis casts Summon Reinforcements at 55% health, summoning 3 Bloodwarder Reservists and a Bloodwarder Mender. Focus the Mender down first.
 scenariogoal 24871 |goto 47.4,18.2
 step
@@ -5079,8 +5050,7 @@ confirm
 step
 kill High Botanist Freywinn##17975 |only if not havequest(29660)
 kill High Botanist Freywinn##17975 |q 29660/2 |only if havequest(29660)
-_Nature's Will_
-|tip This ability causes Freywinn to turn into a tree, healing his nearby allies and summong 3 Frayer Protectors.
+|tip Nature's Will causes Freywinn to turn into a tree, healing his nearby allies and summong 3 Frayer Protectors.
 scenariogoal 24872 |goto 25.9,25.5
 step
 map The Botanica
@@ -5092,9 +5062,7 @@ confirm
 step
 kill Thorngrin the Tender##17978 |only if not havequest(29660)
 kill Thorngrin the Tender##17978 |q 29660/3 |only if havequest(29660)
-_Sacrifice_
-|tip This ability teleports a player, stunning them and leeching health every second for 8 seconds.
-_Hellfire_
+|tip Sacrifice teleports a player, stunning them and leeching health every second for 8 seconds.
 |tip Hellfire deals area damage around Thorngrin, lasting 6 seconds. Move away from him.
 scenariogoal 24873 |goto 8.2,47.6
 step
@@ -5118,8 +5086,7 @@ accept A Most Somber Task##29669
 step
 kill Warp Splinter##17977 |only if not havequest(29669)
 kill Warp Splinter##17977 |q 29669/1 |only if havequest(29669)
-_Summon Saplings_
-|tip This ability summons 6 Sapling adds. After 25 seconds they will sacrifice themselves and heal Warp Splinter equal to their remaining health. These should be killed off as fast as possible.
+|tip Summon Saplings summons 6 Sapling adds. After 25 seconds they will sacrifice themselves and heal Warp Splinter equal to their remaining health. These should be killed off as fast as possible.
 scenariogoal 1/34423 |goto 34.1,35.8
 step
 Click the Complete Quest box at the top right of the screen
@@ -5150,8 +5117,7 @@ confirm
 step
 kill Zereketh the Unbound##20870 |only if not havequest(29674)
 kill Zereketh the Unbound##20870  |q 29674/1 |only if havequest(29674)
-_Void Zone_
-|tip This ability summons an AoE that damages anyone standing in it.
+|tip Void Zone summons an AoE that damages anyone standing in it.
 scenariogoal 24886 |goto 61.6,24.8
 step
 Click the Quest Accept Box that pops up
@@ -5169,18 +5135,14 @@ confirm
 step
 kill Wrath-Scryer Soccothrates##20886 |only if not havequest(29675)
 kill Wrath-Scryer Soccothrates##20886 |q 29675/1 |only if havequest(29675)
-_Fel Immolation_
-|tip This deals damage to players within 15 yards of Soccothrates.
-_Felfire_
+|tip Fel Immolation deals damage to players within 15 yards of Soccothrates.
 |tip Avoid the Felfire AoE left by this ability.
 scenariogoal 24888 |goto The Arcatraz/2 21.4,77.0
 step
 kill Dalliah the Doomsayer##20885 |only if not havequest(29675)
 kill Dalliah the Doomsayer##20885 |q 29675/2 |only if havequest(29675)
-_Whirlwind_
-|tip This ability deals damage to players within 8 yards. Move away when this is cast.
-_Gift of the Doomsayer_
-|tip This debuff causes heals cast on the affected player to heal Dalliah instead.
+|tip Whirlwind deals damage to players within 8 yards. Move away when this is cast.
+|tip Gift of the Doomsayer causes heals cast on the affected player to heal Dalliah instead.
 scenariogoal 24887 |goto 35.7,78.4
 step
 Click the Quest Turnin Box that pops up
@@ -5238,14 +5200,10 @@ confirm
 step
 Wave 6
 kill Chrono Lord Deja##17879
-_Arcane Blast_:
-|tip Deals arcane damage and knocks a player back.
-_Time Lapse_:
-|tip Slows a players attack and movement speed, dispel.
-_Arcane Discharge_:
-|tip Deals arcane damage to everyone within 50 yards.
-_Attraction_:
-|tip Pulls all players within 50 yards to Deja.
+|tip Arcane Blast deals arcane damage and knocks a player back.
+|tip Time Lapse slows a players attack and movement speed, dispel.
+|tip Arcane Discharge deals arcane damage to everyone within 50 yards.
+|tip Attraction pulls all players within 50 yards to Deja.
 scenariogoal 24869 |goto The Black Morass/0 48.6,73.6
 step
 Continue to protect Medivh while he attempts to open the Dark Portal.
@@ -5257,12 +5215,9 @@ confirm
 step
 Wave 12
 kill Temporus##17880
-_Hasten_:
-|tip Increases Temporus' attack speed and movement speed, dispel quickly.
-_Wing Buffet_:
-|tip Deals damage and knocks back anyone within 15 yards.
-_Spell Reflection_:
-|tip Stop casting when this is active.
+|tip Hasten increases Temporus' attack speed and movement speed, dispel quickly.
+|tip Wing Buffet deals damage and knocks back anyone within 15 yards.
+|tip Stop casting when Spell Reflection is active.
 scenariogoal 24870 |goto The Black Morass/0 48.6,73.6
 step
 Continue to protect Medivh while he attempts to open the Dark Portal.
@@ -5274,12 +5229,9 @@ confirm
 step
 Wave 18
 kill Aeonus##17881+
-_Sand Breath_:
-|tip Deals damage and slows anyone in front of Aeonus.
-_Cleave_:
-|tip Deals damage to anyone in front of Aeonus.
-_Enrage_:
-|tip Increases Aeonus' attack speed. Save a cooldown for this.
+|tip Sand Breath deals damage and slows anyone in front of Aeonus.
+|tip Cleave deals damage to anyone in front of Aeonus.
+|tip Enrage increases Aeonus' attack speed. Save a cooldown for this.
 scenariogoal 1/34422 |goto The Black Morass/0 48.6,73.6
 Open the Dark Portal |q 10297/1 |only if havequest(10297) |goto 48.9,71.8
 step
@@ -5317,13 +5269,9 @@ Follow the path |goto The Shattered Halls/1 37.5,61.7 < 15
 confirm
 step
 kill Grand Warlock Nethekurse##16807
-_Shadow Cleave_:
-|tip Cleaves up to 3 nearby targets.
-_Death Coil_:
-|tip Fears a player for 4 seconds and deals shadow damage.
-_Lesser Shadow Fissure_:
-|tip Move out of these immediately, they deal shadow damage.
-_Dark Spin_:
+|tip Shadow Cleave will cleave up to 3 nearby targets.
+|tip Death Coil fears a player for 4 seconds and deals shadow damage.
+|tip Move out of the Lesser Shadow Fissures immediately, they deal shadow damage.
 |tip At 25% health, Dark Spin deals physical damage to anyone within 5 yards and shadow damage to everyone. Kill him quickly.
 collect 1 Grand Warlock's Amulet##23735 |only if havequest(29649)
 scenariogoal 24864 |goto 34.6,62.1
@@ -5342,8 +5290,7 @@ confirm
 only if heroic_dung()
 step
 kill Blood Guard Porung##20923
-_Cleave_:
-|tip Deals physical damage to anyone in front of Porung.
+|tip Cleave deals physical damage to anyone in front of Porung.
 scenariogoal 24867 |goto The Shattered Halls/1 29.7,14.7
 only if heroic_dung()
 step
@@ -5368,14 +5315,10 @@ confirm
 only if not heroic_dung()
 step
 kill Warbringer O'mrogg##16809
-_Beatdown_:
 |tip O'mrogg chooses a random target and applies threat to them, dealing damage.
-_Fear_:
 |tip Fears all nearby players for 3 seconds.
-_Burning Maul_:
-|tip Adds fire damage to his attacks for 18 seconds. Save a cooldown for this.
-_Blast Wave_:
-|tip Deals fire damage to anyone nearby and slows movement speed.
+|tip Burning Maul adds fire damage to his attacks for 18 seconds. Save a cooldown for this.
+|tip Blast Wave deals fire damage to anyone nearby and slows movement speed.
 Loot O'mrogg's Warcloth |q 29656/1 |only if havequest(29656)
 scenariogoal 24865 |goto 53.9,34.1
 step
@@ -5388,13 +5331,9 @@ Follow the path |goto The Shattered Halls/1 67.2,46.7 < 15
 confirm
 step
 kill Warchief Kargath Bladefist##16808
-_Sweeping Strikes_:
-|tip Causes the next 5 attacks to hit a nearby player.
-_Blade Dance_:
-|tip Deals physical damage to random players in the room. Spread out.
-_Charge_: |only if heroic_dung()
+|tip Sweeping Strikes causes the next 5 attacks to hit a nearby player.
+|tip Blade Dance deals physical damage to random players in the room. Spread out.
 |tip Charges a random player |only if heroic_dung()
-_The Warchief's Guard_:
 |tip Bladefist summons random reinforcements that need to be picked up by the tank and killed.
 Loot Warchief Kargath's Fist |q 29654/1 |only if havequest(29654)
 scenariogoal 1/34421 |goto 67.8,55.3
@@ -5443,14 +5382,10 @@ Follow the path |goto The Steamvault/1 49.4,23.7 < 15
 confirm
 step
 kill Hydromancer Thespia##17797
-_Enveloping Winds_:
-|tip Traps a player in a cyclone, stunning them for 6 seconds.
-_Lightning Cloud_:
-|tip Deals nature damage to anyone standing in the cloud. Move out.
-_Lung Burst_:
-|tip Deals nature damage every 2 seconds for 10 seconds. Dispel whenever possible.
-_Water Elementals_:
-|tip Interrupt Water Bolt Volley and kill them quickly.
+|tip Enveloping Winds traps a player in a cyclone, stunning them for 6 seconds.
+|tip Lightning Cloud deals nature damage to anyone standing in the cloud. Move out.
+|tip Lung Burst deals nature damage every 2 seconds for 10 seconds. Dispel whenever possible.
+|tip Water Elementals will spawn, Interrupt Water Bolt Volley and kill them quickly.
 scenariogoal 24884 |goto The Steamvault 54.3,12.4
 step
 click Main Chambers Access Panel##7147 |goto 54.2,10.6
@@ -5467,14 +5402,10 @@ Follow the path |goto The Steamvault/1 41.1,67.3 < 15
 confirm
 step
 kill Mekgineer Steamrigger##17796
-_Electrified Net_:
-|tip Immobilizes and deals nature damage over 6 seconds.
-_Super Shrink Ray_:
-|tip Frontal cone attack that reduces damage dealt by 35%. Avoid standing in front.
-_Saw Blade_:
-|tip Spread out to avoid multiple players being hit by the blade.
-_Mechanics_:
-|tip These spawn in 25% health intervals and heal the boss. Kill them quickly.
+|tip Electrified Net immobilizes and deals nature damage over 6 seconds.
+|tip Super Shrink Ray is a rontal cone attack that reduces damage dealt by 35%. Avoid standing in front.
+|tip Spread out to avoid multiple players being hit by the Saw Blade.
+|tip Mechanics spawn in 25% health intervals and heal the boss. Kill them quickly.
 Loot the Irradiated Gear |q 29614/3 |only if havequest(29614)
 scenariogoal 24885 |goto The Steamvault 33.6,81.2
 modelnpc Steamrigger Mechanic##17951
@@ -5492,12 +5423,9 @@ Follow the path |goto The Steamvault/1 68.6,43.4 < 15
 confirm
 step
 kill Warlord Kalithresh##17798
-_Naga Distiller_:
-|tip When Kalithresh channels on one of these, kill it within 12 seconds or he will Enrage.
-_Spell Reflection_:
-|tip Stop casting during this.
-_Impale_:
-|tip Bleeds a player over 12 seconds.
+|tip When Kalithresh channels on a Naga Distiller, kill it within 12 seconds or he will Enrage.
+|tip Stop casting during Spell Reflection.
+|tip Impale bleeds a player over 12 seconds.
 scenariogoal 3248 |goto 78.7,43.3
 step
 map The Steamvault/1
@@ -6691,14 +6619,14 @@ Follow the path |goto Gundrak/1 25.0,64.5 < 6
 confirm
 only if heroic_dung()
 step
-kill Eck the Ferocious##29932
+kill Eck the Ferocious##29932 |goto Gundrak/1 25.3,70.2
 _Eck Spit_:
 |tip Deals nature damage and drains mana in a frontal cone. Stay behind Eck.
 _Eck Spring_:
 |tip Leaps on a distant player.
 _Eck Berserk_:
 |tip After 90 seconds, Eck gains 150% attack speed and 500% increased damage. Hard enrage timer.
-scenariogoal 5053 |goto Gundrak/1 25.3,70.2
+confirm
 only if heroic_dung()
 step
 map Gundrak/1
@@ -6847,7 +6775,8 @@ confirm
 step
 talk Brann Bronzebeard##28070 |goto Halls of Stone/1 49.9,28.7
 Tell Brann: "_We're with you Brann! Open it!_"
-Then, walk inside |goto Halls of Stone/1 49.9,22.8 < 10 |noway |c
+Then, walk inside |goto Halls of Stone/1 49.9,22.8 < 10
+confirm
 step "Giants"
 kill 3 Dark Rune Giant##27969 |q 29850/1 |goto 46.0,36.0
 only if havequest(29850)
@@ -6886,7 +6815,7 @@ achieveid={479},
 description="This guide will walk you through the Caverns of Time: The Culling of Stratholme dungeon.",
 },[[
 step
-label  "start"
+label "start"
 Press _I_ and queue for The Culling of Stratholme or enter the dungeon with your group |goto The Culling of Stratholme/1 87.5,71.2 |c
 step
 map The Culling of Stratholme/1
@@ -6904,8 +6833,10 @@ path follow smart; loop off; ants curved; dist 15
 path	83.9,59.1	81.2,59.7	77.8,54.9
 path	73.4,55.0	70.1,51.2
 Use your Arcane Disruptor on the 5 Suspicious Grain Crates at the waypoints. |use Arcane Disruptor##37888
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 Plague Grain Crates Dispelled |q 13149/1 |only if havequest(13149)
 Click here when you have all 5 Dispelled |confirm |only if not havequest(13149)
+confirm
 step
 map The Culling of Stratholme/1
 path follow smart; loop off; ants curved; dist 15
@@ -7192,7 +7123,7 @@ _Touch the Nightmare_:
 |tip Damages you in order to reduce your enemies damage output. It should be used on Ley-Guardian Eregos only, however DO NOT SPAM this ability.
 _Dream Funnel_:
 |tip Transfers 5% of your health to a friendly target. This along with Leeching Poison is what you should be using the most.
-scenariogoal 27929 |goto The Oculus/0 49.6,49.2
+scenariogoal 1/27929 |goto The Oculus/0 49.6,49.2
 next "turnin"
 step
 label "ruby"
@@ -7204,7 +7135,7 @@ _Evasive Aura_:
 |tip An ability that gives you a charge whenever you're damaged. The charge is used for your 3rd ability.
 _Evasive Maneuvers_:
 |tip An ability that allows you to dodge all incoming damage.
-scenariogoal 27929 |goto The Oculus/0 49.6,49.2
+scenariogoal 1/27929 |goto The Oculus/0 49.6,49.2
 next "turnin"
 step
 label "amber"
@@ -7216,7 +7147,7 @@ _Stop Time_:
 |tip An important ability, freezing all enemy targets when used. It is important to use this when Ley-Guardian Eregos uses Enraged Assault.
 _Temporal Rift_:
 |tip Channeled ability, which should be used until you have 10 Shock Charges, at which point you will want to use Shock Lance.
-scenariogoal 27929 |goto The Oculus/0 49.6,49.2
+scenariogoal 1/27929 |goto The Oculus/0 49.6,49.2
 next "turnin"
 step
 label "turnin"
@@ -7585,7 +7516,7 @@ _Reflective Shield_:
 |tip Active on Paletress while the Memory is alive. Absorbs all damage and reflects 25% of it back.
 scenariogoal 2/25313 |goto Trial of the Champion/1 46.0,52.6
 step
-label	"Black_Knight"
+label "Black_Knight"
 talk Arelas Brightstar##35005 |goto 51.0,53.1
 Tell him: "_I am ready._"
 confirm

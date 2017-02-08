@@ -8742,27 +8742,27 @@ label	"elwynn"
 _Skipping_ to the next part of guide |next "+burning" |only if step:Find("+elwynn1"):IsComplete()
 _Proceeding_ to the next step |next |only if default
 step
-_Discover_ Eastvale Logging Camp |achieve 776/7 |goto Elwynn Forest 83.5,66.9
+_Discover_ Eastvale Logging Camp |achieve 776/8 |goto Elwynn Forest 83.5,66.9
 step
-_Discover_ Ridgepoint Tower |achieve 776/8 |goto Elwynn Forest 84.8,79.4
+_Discover_ Ridgepoint Tower |achieve 776/9 |goto Elwynn Forest 84.8,79.4
 step
-_Discover_ Brackwell Pumpkin Patch |achieve 776/3 |goto Elwynn Forest 69.4,79.4
+_Discover_ Brackwell Pumpkin Patch |achieve 776/7 |goto Elwynn Forest 69.4,79.4
 step
-_Discover_ Tower of Azora |achieve 776/4 |goto Elwynn Forest 64.6,69.3
+_Discover_ Tower of Azora |achieve 776/6 |goto Elwynn Forest 64.6,69.3
 step
-_Discover_ Crystal Lake |achieve 776/1 |goto Elwynn Forest 52.9,66.2
+_Discover_ Crystal Lake |achieve 776/10 |goto Elwynn Forest 52.9,66.2
 step
-_Discover_ Jerod's Landing |achieve 776/10 |goto Elwynn Forest 48.5,85.8
+_Discover_ Jerod's Landing |achieve 776/5 |goto Elwynn Forest 48.5,85.8
 step
-_Discover_ Fargodeep Mine |achieve 776/6 |goto Elwynn Forest 39.5,80.3
+_Discover_ Fargodeep Mine |achieve 776/4 |goto Elwynn Forest 39.5,80.3
 step
-_Discover_ Westbrook Garrison |achieve 776/11 |goto Elwynn Forest 24.5,73.3
+_Discover_ Westbrook Garrison |achieve 776/2 |goto Elwynn Forest 24.5,73.3
 step
-_Discover_ Goldshire |achieve 776/5 |goto Elwynn Forest 42.1,64.7
+_Discover_ Goldshire |achieve 776/3 |goto Elwynn Forest 42.1,64.7
 step
-_Discover_ Northshire Valley |achieve 776/9 |goto Elwynn Forest 50.4,42.5
+_Discover_ Northshire Valley |achieve 776/1 |goto Elwynn Forest 50.4,42.5
 step
-_Discover_ Stone Cairn Lake |achieve 776/2 |goto Elwynn Forest 74.0,51.5
+_Discover_ Stone Cairn Lake |achieve 776/11 |goto Elwynn Forest 74.0,51.5
 step
 label	"elwynn1"
 _Explore_ Elwynn Forest |achieve 776
@@ -9092,33 +9092,33 @@ label	"silver"
 _Skipping_ to the next part of guide |next "+tirisfal" |only if step:Find("+silver1"):IsComplete()
 _Proceeding_ to the next step |next |only if default
 step
-_Discover_ The Battlefront |achieve 769/13 |goto Silverpine Forest 46.1,79.5
+_Discover_ The Battlefront |achieve 769/1 |goto Silverpine Forest 46.1,79.5
 step
-_Discover_ Shadowfang Keep |achieve 769/7 |goto Silverpine Forest 42.2,63.2
+_Discover_ Shadowfang Keep |achieve 769/12 |goto Silverpine Forest 42.2,63.2
 step
-_Discover_ The Forsaken Front |achieve 769/4 |goto Silverpine Forest 50.9,66.6
+_Discover_ The Forsaken Front |achieve 769/3 |goto Silverpine Forest 50.9,66.6
 step
-_Discover_ Ambermill |achieve 769/12 |goto Silverpine Forest 61.2,62.4
+_Discover_ Ambermill |achieve 769/11 |goto Silverpine Forest 61.2,62.4
 step
-_Discover_ Olsen's Farthing |achieve 769/11 |goto Silverpine Forest 46.1,51.0
+_Discover_ Olsen's Farthing |achieve 769/10 |goto Silverpine Forest 46.1,51.0
 step
-_Discover_ The Sepulcher |achieve 769/10 |goto Silverpine Forest 45.0,40.0
+_Discover_ The Sepulcher |achieve 769/8 |goto Silverpine Forest 45.0,40.0
 step
-_Discover_ North Tide's Beachead |achieve 769/14 |goto Silverpine Forest 37.3,28.0
+_Discover_ North Tide's Beachead |achieve 769/5 |goto Silverpine Forest 37.3,28.0
 step
-_Discover_ The Skittering Dark |achieve 769/5 |goto Silverpine Forest 34.8,12.4
+_Discover_ The Skittering Dark |achieve 769/4 |goto Silverpine Forest 34.8,12.4
 step
 _Discover_ Forsaken Rear Guard |achieve 769/15 |goto Silverpine Forest 44.9,18.8
 step
-_Discover_ Valgan's Field |achieve 769/9 |goto Silverpine Forest 53.2,25.6
+_Discover_ Valgan's Field |achieve 769/7 |goto Silverpine Forest 53.2,25.6
 step
-_Discover_ The Decrepit Fields |achieve 769/3 |goto Silverpine Forest 56.5,34.7
+_Discover_ The Decrepit Fields |achieve 769/2 |goto Silverpine Forest 56.5,34.7
 step
-_Discover_ Deep Elem Mine |achieve 769/6 |goto Silverpine Forest 59.3,45.4
+_Discover_ Deep Elem Mine |achieve 769/9 |goto Silverpine Forest 59.3,45.4
 step
-_Discover_ Fenris Isle |achieve 769/2 |goto Silverpine Forest 69.1,26.8
+_Discover_ Fenris Isle |achieve 769/6 |goto Silverpine Forest 69.1,26.8
 step
-_Discover_ Forsaken High Command |achieve 769/1 |goto Silverpine Forest 62.0,8.7
+_Discover_ Forsaken High Command |achieve 769/13 |goto Silverpine Forest 62.0,8.7
 step
 label	"silver1"
 _Explore_ Silverpine Forest |achieve 769
@@ -9127,31 +9127,35 @@ label	"tirisfal"
 _Skipping_ to the next part of guide |next "+w_plague" |only if step:Find("+tirisfal1"):IsComplete()
 _Proceeding_ to the next step |next |only if default
 step
-_Discover_ Deathknell |achieve 768/10 |goto Tirisfal Glades 32.2,63.8
+_Discover_ Deathknell |achieve 768/1 |goto Tirisfal Glades 32.2,63.8
 step
-_Discover_ Nightmare Vale |achieve 768/9 |goto Tirisfal Glades 45.1,65.4
+_Discover_ Nightmare Vale |achieve 768/4 |goto Tirisfal Glades 45.1,65.4
 step
 _Discover_ Cold Hearth Manor |achieve 768/5 |goto Tirisfal Glades 53.8,58.7
 step
 _Discover_ Calston Estate |achieve 768/16 |goto Tirisfal Glades 46.2,51.4
 step
-_Discover_ Solliden Farmstead |achieve 768/3 |goto Tirisfal Glades 38.4,48.9
+_Discover_ Solliden Farmstead |achieve 768/2 |goto Tirisfal Glades 38.4,48.9
 step
-_Discover_ Agamand Mills |achieve 768/11 |goto Tirisfal Glades 45.6,32.9
+_Discover_ Agamand Mills |achieve 768/3 |goto Tirisfal Glades 45.6,32.9
 step
-_Discover_ Garren's Haunt |achieve 768/6 |goto Tirisfal Glades 56.9,35.6
+_Discover_ Garren's Haunt |achieve 768/7 |goto Tirisfal Glades 56.9,35.6
 step
-_Discover_ Brill |achieve 768/12 |goto Tirisfal Glades 59.7,50.9
+_Discover_ Brill |achieve 768/6 |goto Tirisfal Glades 59.7,50.9
 step
-_Discover_ Brightwater Lake |achieve 768/4 |goto Tirisfal Glades 68.3,45.0
+_Discover_ Brightwater Lake |achieve 768/8 |goto Tirisfal Glades 68.3,45.0
 step
-_Discover_ Scarlet Watch Post |achieve 768/2 |goto Tirisfal Glades 78.4,26.9
+_Discover_ Scarlet Watch Post |achieve 768/11 |goto Tirisfal Glades 78.4,26.9
 step
-_Discover_ Venomweb Vale |achieve 768/1 |goto Tirisfal Glades 87.00,47.2
+_Discover_ Scarlet Monastery Entrance |achieve 768/14 |goto Tirisfal Glades 85.08,31.34
 step
-_Discover_ Crusader Outpost |achieve 768/8 |goto Tirisfal Glades 79.1,54.7
+_Discover_ Venomweb Vale |achieve 768/12 |goto Tirisfal Glades 87.00,47.2
 step
-_Discover_ Balnir Farmstead |achieve 768/7 |goto Tirisfal Glades 73.7,60.0
+_Discover_ Crusader Outpost |achieve 768/10 |goto Tirisfal Glades 79.1,54.7
+step
+_Discover_ Balnir Farmstead |achieve 768/9 |goto Tirisfal Glades 73.7,60.0
+step
+_Discover_ Ruins of Lordaeron |achieve 768/13 |goto Tirisfal Glades 61.87,67.55
 step
 _Discover_ The Bulwark |achieve 768/15 |goto Tirisfal Glades 84.9,69.4
 step

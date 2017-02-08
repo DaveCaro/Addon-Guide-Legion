@@ -3367,6 +3367,7 @@ data.basenodes.travel = {
 		"Highmountain/0 49.56,68.66 -x- Neltharion's Lair/0 96.35,40.19 {style:portal_dungeon}",
 		--Vault of the Wardens
 		"Azsuna/0 48.30,80.23 -x- Vault of the Wardens/1 70.28,77.60 {style:portal_dungeon}",
+		"Azsuna/0 48.30,80.23 -x- 1045/1 70.28,77.60 {style:portal_dungeon}",
 -- RAID ENTRANCE/EXITS
 	--Molten Core
 	"Blackrock Depths/2 68.8,38.2 -to- Molten Core/1 26.6,25.0 <template:portaldungeon>",

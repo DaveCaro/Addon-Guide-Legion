@@ -526,11 +526,6 @@
 	<Script file="LEG_A_Treasures.lua" />
 	<Script file="LEG_H_Treasures.lua" />
 
-	<Script file="LEG_A_Rares.lua" />
-	<Script file="LEG_H_Rares.lua" />
-	<Script file="LEG_A_Treasures.lua" />
-	<Script file="LEG_H_Treasures.lua" />
-
 	<Include file="Autoload-dev.xml" />
 
 	<!-- user guides -->

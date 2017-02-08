@@ -4730,7 +4730,7 @@ function ZGV:RegisterGuide(title,data,extra)
 
 	local guide = ZGV.GuideProto:New(title,data,extra)
 
-	if ZGV.BETAguides then guide.beta=true end
+	if ZGV.BETAguides and guide then guide.beta=true end
 
 	tinsert(self.registeredguides,guide)
 end
@@ -5870,7 +5870,7 @@ function ZGV:SuggestWorldQuestGuide(object,questID,force)
 
 		if ZGV.CurrentGuide==guide then
 			ZGV:Debug("&_SUB &worldquests switching to "..questID)
-			ZGV:SetGuide(guidetitle,labelstep)
+			ZGV:FocusStep(labelstep,true)
 		else
 			ZGV:Debug("&_SUB &worldquests popup for "..questID)
 			ZGV.NotificationCenter.AddButton(

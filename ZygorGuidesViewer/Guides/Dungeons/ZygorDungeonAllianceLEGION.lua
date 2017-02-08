@@ -792,8 +792,7 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Vault of the Wardens dungeon.",
 },[[
 step
-Press _I_ and queue for Vault of the Wardens or enter the dungeon with your group |goto Azsuna/0 48.29,80.22 |c |or
-|confirm |or
+Press _I_ and queue for Vault of the Wardens or enter the dungeon with your group |goto 1045 70.4,77.8 |c
 step
 map 1045/1
 path follow loose; loop off; ants curved; dist 20

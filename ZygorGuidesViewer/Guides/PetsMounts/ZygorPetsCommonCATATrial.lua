@@ -33,7 +33,7 @@ Challenge one to a pet battle and capture it
 |tip The Fawn is level 1.
 learnpet Fawn##61165 |goto Elwynn Forest 45.1,67.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Critter Pet\\Prairie Dog",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Critter Pets\\Prairie Dog",{
 model={1072},
 pet=386,
 description="This guide will walk you through obtaining the Critter pet: Prairie Dog",
@@ -105,7 +105,7 @@ Challenge one to a pet battle and capture it.
 |tip The Creepy Crawly is level 1.
 learnpet Creepy Crawly##62116 |goto Durotar 50.0,29.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Flying Pet\\Crested Owl",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Flying Pets\\Crested Owl",{
 model={6300},
 pet=507,
 description="This guide will walk you through obtaining the Flying pet: Crested Owl",
@@ -195,7 +195,8 @@ Challenge one to a pet battle and capture it
 |tip The Spiny Lizards in this area are level 1-2.
 learnpet Spiny Lizard##62114 |goto Durotar 45.8,20.5
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Water Snake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Beast Pets\\Water Snake",{
+model={1986},
 pet=418,
 description="This guide will walk you through obtaining the Beast pet: Water Snake",
 },[[
