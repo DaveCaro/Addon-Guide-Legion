@@ -24,135 +24,102 @@ DUGI GUIDE :
 
 Zygor Viewer Guide ESO : 
 
- - LEVELING :
+- LEVELING:
 
-Daggerfall Covenant Guide Fully Updated
+Aldermi Dominion Guide Fully Updated
 
-- Stros M'kai :
+Khenarthi's Roost:
 
-Added missing map name
+Corrected quest objectives to allow proper tracking
 
-Corrected a dialogue option that was changed
+Added travel lines
 
-Removed a duplicate step
-
-- Glenumbra :
-
-Added helpful tip
-
-Added missing kill lines
-
-Corrected a few steps not correctly tracking the quest objective
-
-Fixed typo causing a step to be grey
-
-Added missing dialogue instructions
-
-Removed a step that was unnecessary
-
--Stormhaven :
-
-Corrected a travel step not working properly
-
-Added missing travel step
-
-Added missing kill lines
-
-Corrected a turnin typo
-
-Corrected coordinates for an accept step
-
-Added a |future tag to a travel step so it would turn red instead of being grey
-
-Corrected a step not tracking the quest properly
-
-Added a tip
-
-Corrected quest objective text to allow proper tracking
-
-- Rivenspire :
-Added a tip
-
-Added a travel line
-
-Removed a travel line
-
-Added a missing kill lines
-
-Corrected coordinates
-
-Corrected an item name
-
-Corrected a typo
-
-Moved a Lorebook further back in the guide, as it wasn't appearing in our original location
-
-Removed an unnecessary step
-
-Corrected a "step" typo that was causing two steps to be combined into one
-
-Corrected typo causing an objective to be grey
-
-Added travel step
-
-- Alik'r Desert :
-
-Added a travel line
-
-Corrected an NPC name
-
-Added missing coordinates
-
-Removed travel step
+Added "future" tags to correct a few steps being grey
 
 Corrected quest coordinates
 
-Added a few tips
+Auridon:
 
-Removed a step that was in the wrong spot
+Added missing quest objective to allow proper tracking
 
-- Bangkorai :
-
-Corrected an NPC name
-
-Corrected a few steps that weren't working properly
-
-Removed a tip
-
-Corrected a quest objective not tracking correctly
-
-Added a few tips
-
-Corrected NPC coordinates
-
-Added a travel line
-
-Added a future tag to mark a travel step red
+Corrected quest objectives to allow proper tracking
 
 Corrected quest coordinates
-
-Added missing kill lines
-
--Coldharbour :
-
-Corrected object name
-
-Corrected step not tracking properly
-
-Removed tip
-
-Corrected coordinates
-
-Added missing kill lines
-
-Corrected a quest objective, allowing it to complete and not have to be advanced manually
-
-Added tips
 
 Added missing click
 
-Added missing coordinates
+Added missing kill lines
 
-- GENERAL : 
+Added travel lines
 
-"Next guide" popup now makes it clear that zone have no level restrictions anymore.
+Added "future" tag to correct a step being grey
+
+Grahtwood:
+
+Corrected quest objective not tracking properly
+
+Added "future" tags to correct travel steps being grey
+
+Added player tips
+
+Corrected typo
+
+Added missing quest objective
+
+Corrected quest coordinates
+
+Added missing kill line
+
+Greenshade:
+
+Added player tips
+
+Updated a few object names
+
+Corrected quest objectives not tracking properly
+
+Corrected quest coordinates
+
+Removed unnecessary step
+
+Removed tip
+
+Malabal Tor:
+
+Added player tips
+
+Corrected quest coordinates
+
+Corrected a few steps not working properly
+
+Added missing kill lines
+
+Corrected a turnin coordinate and moved it back in the guide to improve guide flow
+
+Removed redundant step
+
+Added missing quest step
+
+Reaper's March:
+
+Corrected quest instructions
+
+Corrected a few steps not tracking properly
+
+Added missing kill lines
+
+Corrected object names
+
+Corrected quest coordinates
+
+Added missing quest accept step
+
+Coldharbour:
+
+Corrected quest coordinates
+
+Added missing kill lines
+
+Corrected object name
+
+Added a travel line
