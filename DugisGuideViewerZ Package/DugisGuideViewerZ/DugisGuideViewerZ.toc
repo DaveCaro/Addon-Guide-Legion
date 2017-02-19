@@ -1,7 +1,7 @@
 ## Interface: 70100
-## Title: DugiGuidesViewer |cffffffff8.214|r
+## Title: DugiGuidesViewer |cffffffff8.218|r
 ## Notes: In-Game Guide Viewer. Copyright 2010-2017 UltimateWoWGuide.com
-## Version: 8.214
+## Version: 8.218
 ## X-Website: http://www.ultimatewowguide.com/
 ## X-Email: support@ultimatewowguide.com
 ## X-Category: Quest
@@ -120,10 +120,10 @@ DugisGuide_Ach_Alliance_En\Guides.xml
 DugisGuide_Ach_Horde_En\Guides.xml
 DugisGuide_Prof_Alliance_En\Guides.xml
 DugisGuide_Prof_Horde_En\Guides.xml
-DugisGuide_Dailies_Horde_En\Guides.xml
 DugisGuide_Dailies_Alliance_En\Guides.xml
-DugisGuide_Events_Horde_En\Guides.xml
+DugisGuide_Dailies_Horde_En\Guides.xml
 DugisGuide_Events_Alliance_En\Guides.xml
+DugisGuide_Events_Horde_En\Guides.xml
 DugisGuide_Dungeons_Alliance_En\Guides.xml
 DugisGuide_Dungeons_Horde_En\Guides.xml
 CustomGuide\Guides.xml

@@ -335,6 +335,13 @@ kill Jade Darkhaven##34914 |q 44190/1 |goto 40.30,76.57
 |tip He is all the way at the top of the tower.
 |next "Court_Of_Farondis_WQ"
 step
+label quest-43798
+accept DANGER: Kosumoth the Hungering##43798 |goto Eye of Azshara Map/0 46.46,50.10
+|tip You will accept this quest automatically.
+step
+kill Kosumoth the Hungering##111573 |q 43798/1 |goto 46.46,50.10
+|next "Court_Of_Farondis_WQ"
+step
 label quest-44192
 Follow the path up |goto Azsuna/0 46.90,73.13 < 20 |only if walking
 Follow the path up |goto Azsuna/0 44.24,75.43 < 20 |only if walking

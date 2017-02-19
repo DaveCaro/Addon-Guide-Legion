@@ -912,38 +912,41 @@ end
 
 local mix4=ZGV.mix4
 function markerproto:UpdateWorldMapIcon(m,f)
-	local self_f=self.f
-	if self.type=="ant" and ZGV.HBD.mapData[m] and ZGV.HBD.mapData[m][1]~=0 then self_f=nil end -- use no floor to make ants show up between floors and in dala/orgri. DON'T in off-world maps that don't have base coords (only floors).
-
 	-- bandaid: prevent updates if coords are missing
 	if not self.m or not self.x or not self.y then return end
 
 	-- hide markers that are zone limited, and we are viewing something else
-	if (self.onworldmap=="zone" and m~=self.m) then self:Hide() return end	
+	if (self.onworldmap=="zone" and phasedMaps[m]~=phasedMaps[self.m]) then self:Hide() return end
 
-	HBDPins:AddWorldMapIconMF(Pointer, self.frame_worldmap, self.m, self_f, self.x, self.y)
+	-- convert to world coordinates
+	local xCoord, yCoord, instanceID = HBD:GetWorldCoordinatesFromZone(self.x, self.y, self.m, self.f)
+	if not xCoord then return end
+
+	HBDPins:AddWorldMapIconWorld(Pointer, self.frame_worldmap, instanceID, xCoord, yCoord)
 
 	if self.type=="ant" then
-		if not m then m,f=cm,GetCurrentMapDungeonLevel() end
+		if not m then m,f=GetCurrentMapAreaID(),GetCurrentMapDungeonLevel() end
 		m = zone_aliases[m] or m
 		-- fuck. Ants are system-mapped. Check their parents?
-		if self.p1m==m and self.p2m==m then
+		local phm_m=phasedMaps[m]
+		if phasedMaps[self.p1m]==phm_m and phasedMaps[self.p2m]==phm_m then
+			local p1f,p2f=self.p1f,self.p2f
 			-- gradual fading, if one of floors is current
-			if self.p1f==f and self.p2f~=f then
-				self.frame_worldmap:SetAlpha(1-self.ant_dist*0.7)
-			elseif self.p1f~=f and self.p2f==f then
-				self.frame_worldmap:SetAlpha(0.3+self.ant_dist*0.7)
-			elseif self.p1f==f and self.p2f==f then
-				self.frame_worldmap:SetAlpha(1.0)
+			if p1f==f and p2f~=f then
+				self.frame_worldmap:SetAlpha(1-self.ant_dist*0.7)  -- fade out
+			elseif p1f~=f and p2f==f then
+				self.frame_worldmap:SetAlpha(0.3+self.ant_dist*0.7)  -- fade in
+			elseif p1f==f and p2f==f then
+				self.frame_worldmap:SetAlpha(1.0)  -- same floor, full vis
 			else
-				self.frame_worldmap:SetAlpha(0.3)
+				self.frame_worldmap:SetAlpha(0.3)  -- other floor, transparent
 			end
 		else
-			self.frame_worldmap:SetAlpha(1.0)
+			self.frame_worldmap:SetAlpha(1.0)  -- another map, full
 		end
 	else
 		-- normal waypts
-		self.frame_worldmap:SetAlpha((self.m==m and self.f~=f) and 0.3 or 1.0)
+		self.frame_worldmap:SetAlpha((phasedMaps[self.m]==phasedMaps[m] and self.f~=f) and 0.3 or 1.0)
 	end
 end
 
@@ -957,13 +960,14 @@ function markerproto:UpdateMiniMapIcon(m,f)
 	(
 	 self.onminimap=="always" or
 	 ZGV.Pointer.ArrowFrame.waypoint==self or
-	 ((self.onminimap=="zone" or self.onminimap=="zonedistance") and m==self.m)
+	 ((self.onminimap=="zone" or self.onminimap=="zonedistance") and phasedMaps[m]==phasedMaps[self.m])
 	) then
-		local self_f=self.f
-		if self.type=="ant" and ZGV.HBD.mapData[m] and ZGV.HBD.mapData[m][1]~=0 then self_f=nil end -- use no floor to make ants show up between floors and in dala/orgri. DON'T in off-world maps that don't have base coords (only floors).
-		-- bandaid: prevent showing if coords are missing
 		if not self.m or not self.x or not self.y then return end
-		local r = HBDPins:AddMinimapIconMF(Pointer, self.frame_minimap, self.m, self_f, self.x, self.y)
+		-- convert to world coordinates
+		local xCoord, yCoord, instanceID = HBD:GetWorldCoordinatesFromZone(self.x, self.y, self.m, self.f)
+		if not xCoord then return end
+
+		local r = HBDPins:AddMinimapIconWorld(Pointer, self.frame_minimap, instanceID, xCoord, yCoord, self.showonedge)
 	else
 		HBDPins:RemoveMinimapIcon(Pointer,self.frame_minimap)
 	end

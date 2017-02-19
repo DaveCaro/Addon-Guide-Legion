@@ -466,7 +466,7 @@ function Guide:AdvertiseWithPopup(nodelay)
 		-- text,title,tooltipText,priority,poptime,removetime,quiet = returnMinimizeSettings()
 
 		dialog.returnMinimizeSettings = function(self)
-			local notifcationText = L['notifcenter_nextguide_text']:format(GuideMenu.STATUS_COLORS[self.guide:GetStatus()].hex,self.guide.title_short)
+			local notifcationText = L['notifcenter_nextguide_text']:format(ZGV.GuideMenu.STATUS_COLORS[self.guide:GetStatus()].hex,self.guide.title_short)
 			local tooltipText = L['notifcenter_gen_popup_tooltip']
 
 			local priority = 10 --this seems important.
@@ -646,7 +646,7 @@ function GuideFuncs:SuggestDungeonGuide(dungeonguide)
 			:HookScript("OnLeave",function(self) GameTooltip:Hide() end)
 
 		self.DungPopup.returnMinimizeSettings = function(self)
-			local notifcationText = L['notifcenter_dungeon_text']:format(GuideMenu.STATUS_COLORS[self.guide:GetStatus()].hex,self.guide.title_short)
+			local notifcationText = L['notifcenter_dungeon_text']:format(ZGV.GuideMenu.STATUS_COLORS[self.guide:GetStatus()].hex,self.guide.title_short)
 			local tooltipText = L['notifcenter_gen_popup_tooltip']
 
 			return notifcationText,L['notifcenter_dungeon_title'],tooltipText,nil,nil,nil,nil,OnOpen,{guide=self.guide}
@@ -726,7 +726,7 @@ function GuideFuncs:MonkQuest(level)
 		-- text,title,tooltipText,priority,poptime,removetime,quiet = returnMinimizeSettings()
 
 		self.MonkPopup.returnMinimizeSettings = function(self)
-			local notifcationText = L['notifcenter_monk_text']:format(GuideMenu.STATUS_COLORS[self.guide:GetStatus()].hex,self.guide.title_short)
+			local notifcationText = L['notifcenter_monk_text']:format(ZGV.GuideMenu.STATUS_COLORS[self.guide:GetStatus()].hex,self.guide.title_short)
 			local tooltipText = L['notifcenter_gen_popup_tooltip']
 
 			return notifcationText,L['notifcenter_monk_title'],tooltipText,nil,nil,nil,nil,OnOpen,{guide=self.guide}

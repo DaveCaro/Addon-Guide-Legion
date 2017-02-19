@@ -521,12 +521,14 @@ function Appraiser:MakeInventoryTable()
 			:SetScript("OnClick", function() Appraiser:SetMaxStackCount() end)
 			.__END
 
+	local initial_mode = ZGV.db.profile.aucmode or "unit"
+
 	container.bidlabel = CHAIN(container.details:CreateFontString())
 		:SetFont(FONT,12)
 		:SetPoint("TOPLEFT",0,-54)
 		:SetJustifyH("LEFT")
 		:SetWidth(110)
-		:SetText("Bid / unit")
+		:SetText("Bid / "..initial_mode)
 		.__END
 		container.bidgold = CHAIN(ui:Create("EditBox",container.details))
 			:SetSize(47,17)
@@ -570,7 +572,7 @@ function Appraiser:MakeInventoryTable()
 		:SetPoint("TOPLEFT",0,-76)
 		:SetJustifyH("LEFT")
 		:SetWidth(110)
-		:SetText("Buyout / unit")
+		:SetText("Buyout / "..initial_mode)
 		.__END
 		container.buyoutgold = CHAIN(ui:Create("EditBox",container.details))
 			:SetSize(47,17)

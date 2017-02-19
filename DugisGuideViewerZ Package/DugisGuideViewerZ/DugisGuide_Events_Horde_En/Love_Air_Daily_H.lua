@@ -15,6 +15,8 @@ A Crushing the Crown |QID|24649| |N|(npc:37172) (50.82, 75.20)| |Z|321| |O| |D| 
 A Crushing the Crown |QID|24650| |N|(npc:37172) (50.82, 75.20)| |Z|321| |O| |D| |NPC|37172|
 A Crushing the Crown |QID|24651| |N|(npc:37172) (50.82, 75.20)| |Z|321| |O| |D| |NPC|37172|
 A Crushing the Crown |QID|24652| |N|(npc:37172) (50.82, 75.20)| |Z|321| |O| |D| |NPC|37172|
+A Crushing the Crown |QID|24652| |N|(npc:37172) (50.82, 75.20)| |Z|321| |O| |D| |NPC|37172|
+A Crushing the Crown |QID|44546| |N|(npc:37172) (50.82, 75.20)| |Z|321| |O| |D| |NPC|37172|
 
 N Accept 1 Daily Quest |N|Accept 1 of 3 random Daily Quest from Public Relations Agent (53.00, 77.16)| |Z|321| |NPC|37675| |MD|
 A A Perfect Puff of Perfume |QID|24629| |D| |N|Public Relations Agent (53.00, 77.16)| |Z|321| |O| |NPC|37675|
@@ -30,39 +32,47 @@ T A Perfect Puff of Perfume |QID|24629| |D| |N|Public Relations Agent (53.00, 77
 T A Cloudlet of Classy Cologne |QID|24635| |D| |N| Public Relations Agent (53.00, 77.16)| |Z|321| |O| |NPC|37675|
 T Bonbon Blitz |QID|24636| |D| |N|Public Relations Agent (53.00, 77.16)| |Z|321| |O| |NPC|37675|
 
-R Durotar |N|Travel to {Durotar} (40.2, 15.4)| |QID|24638| |O| |D|
-N Destroy Chemical Wagon |QID|24638.1| |N|Use Snagglebolt's Khorium Bomb next to the big shaking (npc:38035) (40.2, 15.4)| |Z|4| |O| |D| |NPC|38035|
+R Durotar |N|Travel to {Durotar} (40.2, 15.4)|  |Z|4| |QID|24638| |O| |D|
+N Destroy Chemical Wagon |QID|24638.1| |N|Use (item:50130) next to the big shaking (npc:38035) (40.2, 15.4)| |Z|4| |O| |D| |NPC|38035|
 K 5 (npc:37214) |QID|24638.2| |N|Kill 5 (npc:37214) (40.2, 15.4)| |Z|4| |O| |D| |NPC|37214|
 
 R Tirisfal Glades |N|Take the Zeppelin to travel to {Tirisfal Glades} (51, 55.6)| |Z|321| |QID|24647| |O| |D|
-R Silverpine Forest |N|Travel to {Silverpine Forest} (54.7, 61.3)| |QID|24645| |D| |O|
-N Destroy Chemical Wagon |QID|24645.1| |N|Use Snagglebolt's Khorium Bomb next to the big shaking (npc:38035) (54.7, 61.3)| |Z|21| |O| |D| |NPC|38035|
+R Silverpine Forest |N|Travel to {Silverpine Forest} (54.7, 61.3)| |Z|21| |QID|24645| |D| |O|
+N Destroy Chemical Wagon |QID|24645.1| |N|Use (item:50130) next to the big shaking (npc:38035) (54.7, 61.3)| |Z|21| |O| |D| |NPC|38035|
 K 5 (npc:37917) |QID|24645.2| |N|Kill 5 (npc:37917) (54.7, 61.3)| |Z|21| |O| |D| |NPC|37917|
+
+A Follow the Recipe |QID|44559| |N|Love Potion Recipe in {Silverpine Forest}. Requires level 20 or above (45.26,73.88)| |Z|21| |D|
+N Collect 1st Fragment |QID|44559.1| |N|Click 1st Fragment upstairs inside of the building in {Silverpine Forest}(46.26,73.50)| |Z|21| |D|
+N Collect 2nd Fragment |QID|44559.2| |N|Click 1st Fragment in {Silverpine Forest}(45.15,71.51)| |Z|21| |D|
+N Collect 3rd Fragment |QID|44559.3| |N|Click 1st Fragment in {Silverpine Forest}(42.70,71.15)| |Z|21| |D|
+
+N Destroy Chemical Wagon |QID|44546.1| |N|Use (item:50130) next to the big shaking (npc:38035) (44.0,72.2)| |Z|21| |O| |D| |NPC|38035|
+K 5 (npc:37917) |QID|44546.2| |N|Kill 5 (npc:37917) (44.0,72.2)| |Z|21| |O| |D| |NPC|37917|
 
 R Tirisfal Glades |N|Take the Zeppelin to travel to {Tirisfal Glades} (51, 55.6)| |Z|321| |QID|24647| |O| |D|
 R Hillsbrad Foothills |N|Fly to {Hillsbrad Foothills} (54.7, 61.3)| |Z|24| |QID|24647| |O| |D|
-N Destroy Chemical Wagon |QID|24647.1| |N|Use Snagglebolt's Khorium Bomb next to the big shaking (npc:38035) (54.7, 61.3)| |Z|24| |O| |D| |NPC|38035|
+N Destroy Chemical Wagon |QID|24647.1| |N|Use (item:50130) next to the big shaking (npc:38035) (54.7, 61.3)| |Z|24| |O| |D| |NPC|38035|
 K 5 (npc:37984) |QID|24647.2| |N|Kill 5 (npc:37984) (54.7, 61.3)| |Z|24| |O| |D| |NPC|37984|
 
 R Dustwallow Marsh |N|Travel to {Dustwallow Marsh} (60.8, 38.2)| |Z|141| |O| |D| |QID|24648| 
-N Destroy Chemical Wagon |QID|24648.1| |N|Use Snagglebolt's Khorium Bomb next to the big shaking (npc:38035) (60.8, 38.2)| |Z|141| |O| |D| |NPC|38035|
+N Destroy Chemical Wagon |QID|24648.1| |N|Use (item:50130) next to the big shaking (npc:38035) (60.8, 38.2)| |Z|141| |O| |D| |NPC|38035|
 K 5 (npc:38006) |QID|24648.2| |N|Kill 5 (npc:38006) (60.8, 38.2)| |Z|141| |O| |D| |NPC|38006|
 
 R Tirisfal Glades |N|Take the Zeppelin to travel to {Tirisfal Glades} (51, 55.6)| |Z|321| |QID|24648| |O| |D|
 R The Hinterlands |N|Fly to {The Hinterlands} (23.3, 53.7)| |Z|26| |QID|24648| |O| |D|
-N Destroy Chemical Wagon |QID|24649.1| |N|Use Snagglebolt's Khorium Bomb next to the big shaking (npc:38035) (23.3, 53.7)| |Z|26| |O| |D| |NPC|38035|
+N Destroy Chemical Wagon |QID|24649.1| |N|Use (item:50130) next to the big shaking (npc:38035) (23.3, 53.7)| |Z|26| |O| |D| |NPC|38035|
 K 5 (npc:38016) |QID|24649.2| |N|Kill 5 (npc:38016) (23.3, 53.7)| |Z|26| |O| |D| |NPC|38016|
 
 R Winterspring |N|Travel to {Everlook} (64.6, 37.4)| |QID|24650| |D| |O| |Z|281|
-N Destroy Chemical Wagon |QID|24650.1| |N|Use Snagglebolt's Khorium Bomb next to the big shaking (npc:38035) (64.6, 37.4)| |Z|281| |O| |D| |NPC|38035|
+N Destroy Chemical Wagon |QID|24650.1| |N|Use (item:50130) next to the big shaking (npc:38035) (64.6, 37.4)| |Z|281| |O| |D| |NPC|38035|
 K 5 (npc:38023) |QID|24650.2| |N|Kill 5 (npc:38023) (64.6, 37.4)| |Z|281| |O| |D| |NPC|38023|
 
 R Terokkar Forest |N|Travel to {Terokkar Forest} (41.4, 22.5)| |Z|478| |QID|24651| |O| |D|
-N Destroy Chemical Wagon |QID|24651.1| |N|Use Snagglebolt's Khorium Bomb next to the big shaking (npc:38035) (41.4, 22.5)| |Z|478| |O| |D| |NPC|38035|
+N Destroy Chemical Wagon |QID|24651.1| |N|Use (item:50130) next to the big shaking (npc:38035) (41.4, 22.5)| |Z|478| |O| |D| |NPC|38035|
 K 5 (npc:38030) |QID|24651.2| |N|Kill 5 (npc:38030) (41.4, 22.5)| |Z|478| |O| |D| |NPC|38030|
 
 R Crystalsong Forest |N|Travel to {Crystalsong Forest} (49.0, 47.8)| |QID|24652| |Z|510| |O| |D|
-N Destroy Chemical Wagon |QID|24652.1| |N|Use Snagglebolt's Khorium Bomb next to the big shaking (npc:38035) (49.0, 47.8)| |Z|510| |O| |D| |NPC|38035|
+N Destroy Chemical Wagon |QID|24652.1| |N|Use (item:50130) next to the big shaking (npc:38035) (49.0, 47.8)| |Z|510| |O| |D| |NPC|38035|
 K 5 (npc:38032) |QID|24652.2| |N|Kill 5 (npc:38032) (49.0, 47.8)| |Z|510| |O| |D| |NPC|38032|
 
 N (item:49916) |N|Create (item:49916) by combining 10 (item:49655) dropped from NPCs that give you experience or you can also buy it from the Auction House, you can turn in up to 4 Dailies, one in each major city so you might want to stock up on at least 4 (item:49916) or just do one, the choice is yours. tick this step| |T| |U|49655|
@@ -76,6 +86,7 @@ T Crushing the Crown |QID|24649| |N|(npc:37172) (50.82, 75.20)| |Z|321| |O| |D| 
 T Crushing the Crown |QID|24650| |N|(npc:37172) (50.82, 75.20)| |Z|321| |O| |D| |NPC|37172|
 T Crushing the Crown |QID|24651| |N|(npc:37172) (50.82, 75.20)| |Z|321| |O| |D| |NPC|37172|
 T Crushing the Crown |QID|24652| |N|(npc:37172) (50.82, 75.20)| |Z|321| |O| |D| |NPC|37172|
+T Follow the Recipe |QID|44559| |N|(npc:37172) (50.82, 75.20)| |Z|321| |O| |D| |NPC|37172|
 C A Gift for the Warchief |QID|24612| |D| |N|Create (item:49916) by combining 10 (item:49655) dropped from NPCs that give you experience or you can also buy it from the Auction House|
 T A Gift for the Warchief |QID|24612| |D| |N|(npc:14720) in {Grommash Hold} (48.28, 71.01)| |Z|321| |NPC|14720|
 

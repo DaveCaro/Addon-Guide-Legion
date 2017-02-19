@@ -3,23 +3,137 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("PetsHLEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "LEG"
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Tylarr Gronnden",{
-author="support@zygorguides.com",
-pet=2022,
-description="This guide will help you acquire the Humanoid pet: Tylarr Gronnden.",
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Aquatic Pets\\Lagan",{
+model={71980},
+pet=1930,
+description="This guide will walk you through obtaining the Aquatic pet: Lagan",
 },[[
 step
-You will need to gain _Rank 4_ with the Legion Brawler's Guild
-Click here to be taken to the Brawler's guild event guide, this will show you strategys on how to defeat each boss |confirm |next "Zygor's Horde Events Guides\\Brawler's Guild\\Legion Brawler's Guild"
-confirm
-only if ZGV:GetReputation(2010).friendRep<7000
+This pet is a reward for completing the dungeon achievement _Poor Unfortunate Souls_
+Click here to go to the guide for this achievement |next "Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Poor Unfortunate Souls" |confirm
+Click here to continue |confirm
 step
-talk Paul North##68364
-buy 1 Tylarr Gronnden##144394 |goto Brawl'gar Arena/1 50.79,28.44 |n
-|tip This pet costs 400 gold.
-learnpet Tylarr Gronnden##119040 |use Tylarr Gronnden##144394
+Once this achievement is complete, this pet will be in your mailbox
+collect Lagan##140323 |n
+learnpet Lagan##112167 |use Lagan##140323
+step
+_Congratulations!_
+You collected the _Lagan_ battle pet
 ]])
-ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Ridgeback Piglet",{
+model={65667},
+pet=1756,
+description="This guide will walk you through obtaining the Beast pet: Ridgeback Piglet",
+},[[
+step
+label "Start"
+This pet is crafted by players with the _Alchemy_ profession
+|tip You can either make this pet with the Alchemy profession or buy it from the Auction House.
+Click here if you have Alchemy and want to craft this pet |next "Alchemy Pet" |confirm
+|tip If you are going the Alchemy way, it takes 7 days before it can be opened.
+|tip There is a chance for this pet to be inside.
+Click here if you would like to purchase this from the Auction House |next "AH Ridgeback" |confirm
+step
+label "Alchemy Pet"
+First you will need to learn the _Transmute: Meat to Pet_ recipe
+|tip This recipe is learned randomly through Alchemy crafting.
+Once this recipe is learned, you will need to collect the following items:
+collect 3 Fatty Bearsteak##124118 |c
+collect 20 Unbroken Claw##124438 |c
+collect 20 Unbroken Tooth##124439 |c
+collect 1 Viscous Transmutagen##137595 |c
+collect 1 Black Transmutagen##137596 |c
+collect 1 Oily Transmutagen##137597 |c
+step
+Open Your Alchemy Crafting Panel:
+_<Craft 1 Transmute: Meat to Pet>_
+collect 1 Pulsating Sac##137599 |c
+|tip Once created, you must wait 7 days before it can be opened.
+|only if itemcount(137599) < 1
+step
+Open the Growling Sac |use Growling Sac##137608
+|tip There is a chance for this pet to be in the sac.
+collect 1 Ridgeback Piglet##136905 |c
+Click here if you did not receive a Ridgeback Piglet |next "Start" |confirm
+|next "Congratz"
+step
+label "AH Ridgeback"
+talk Auctioneer Drezmit##44866
+buy 1 Ridgeback Piglet##136905 |n
+collect 1 Ridgeback Piglet##136905 |c |goto Orgrimmar/1 54.06,73.34
+|tip This may be a little on the expensive side as it takes awhile to get.
+|only if itemcount(136905) < 1
+step
+label "Congratz"
+learnpet Ridgeback Piglet##98172 |use Ridgeback Piglet##136905
+step
+_Congratulations!_
+You collected the _Ridgeback Piglet_ battle pet
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Thaumaturgical Piglet",{
+model={65671},
+pet=1759,
+description="This guide will walk you through obtaining the Beast pet: Thaumaturgical Piglet",
+},[[
+step
+label "Start"
+This pet is crafted by players with the _Alchemy_ profession
+|tip You can either make this pet with the Alchemy profession or buy it from the Auction House.
+Click here if you have Alchemy and want to craft this pet |next "Alchemy Pet 2" |confirm
+|tip If you are going the Alchemy way, it takes 7 days before it can be opened.
+|tip There is a chance for this pet to be inside.
+Click here if you would like to purchase this from the Auction House |next "AH Thaumaturgical" |confirm
+step
+label "Alchemy Pet 2"
+First you will need to learn the _Transmute: Meat to Pet_ recipe
+|tip This recipe is learned randomly through Alchemy crafting.
+Once this recipe is learned, you will need to collect the following items:
+collect 3 Fatty Bearsteak##124118 |c
+collect 20 Unbroken Claw##124438 |c
+collect 20 Unbroken Tooth##124439 |c
+collect 1 Viscous Transmutagen##137595 |c
+collect 1 Black Transmutagen##137596 |c
+collect 1 Oily Transmutagen##137597 |c
+step
+Open Your Alchemy Crafting Panel:
+_<Craft 1 Transmute: Meat to Pet>_
+collect 1 Pulsating Sac##137599 |c
+|tip Once created, you must wait 7 days before it can be opened.
+|only if itemcount(137599) < 1
+step
+Open the Growling Sac |use Growling Sac##137608
+|tip There is a chance for this pet to be in the sac.
+collect 1 Thaumaturgical Piglet##136908 |c
+Click here if you did not receive a Thaumaturgical Piglet |next "Start" |confirm
+|next "Congratz 2"
+step
+label "AH Thaumaturgical"
+talk Auctioneer Drezmit##44866
+buy 1 Thaumaturgical Piglet##136908 |n
+collect 1 Thaumaturgical Piglet##136908 |c |goto Orgrimmar/1 54.06,73.34
+|tip This may be a little on the expensive side as it takes awhile to get.
+|only if itemcount(136908) < 1
+step
+label "Congratz 2"
+learnpet Thaumaturgical Piglet##98183 |use Thaumaturgical Piglet##136908
+step
+_Congratulations!_
+You collected the _Thaumaturgical Piglet_ battle pet
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Dragonkin Pets\\Emmigosa",{
+model={65120},
+pet=1720,
+description="This guide will walk you through obtaining the Dragonkin pet: Emmigosa",
+},[[
+step
+This pet is a reward for completing the quest _On the Brink_ in Azsuna.
+Click here to proceed to the Azsuna quest guide |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Azsuna" |confirm
+collect Emmigosa##129178 |n
+learnpet Emmigosa##97207 |use Emmigosa##129178
+step
+_Congratulations!_
+You collected the _Emmigosa_ battle pet
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Humanoid Pets\\Alliance Enthusiast",{
 model={71002},
 pet=1918,
@@ -40,6 +154,29 @@ collect Strange Crate##139777 |n
 Open the Strange Crate |use Strange Crate##139777
 collect Horde Fanatic##139776 |n
 learnpet Horde Fanatic##111296 |use Horde Fanatic##139776
+step
+_Congratulations!_
+You collected the _Horde Fanatic_ battle pet
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Humanoid Pets\\Tylarr Gronnden",{
+author="support@zygorguides.com",
+model={59026},
+pet=2022,
+description="This guide will help you acquire the Humanoid pet: Tylarr Gronnden",
+},[[
+step
+You will need to gain _Rank 4_ with the Legion Brawler's Guild
+Click here to be taken to the Brawler's guild event guide. |confirm |next "Zygor's Horde Events Guides\\Brawler's Guild\\Legion Brawler's Guild"
+|tip This will show you strategies on how to defeat each boss.
+only if ZGV:GetReputation(2010).friendRep<7000
+step
+talk Paul North##68364
+buy 1 Tylarr Gronnden##144394 |goto Brawl'gar Arena/1 50.79,28.44 |n
+|tip This pet costs 400 gold.
+learnpet Tylarr Gronnden##119040 |use Tylarr Gronnden##144394
+step
+_Congratulations!_
+You collected the _Tylarr Gronnden_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Magic Pets\\Enchanted Cauldron",{
 model={69490},
@@ -74,6 +211,9 @@ collect 1 Enchanted Cauldron##128533 |c |goto Orgrimmar/1 54.06,73.34
 step
 label "end cauldron"
 learnpet Enchanted Cauldron##96403 |use Enchanted Cauldron##128533
+step
+_Congratulations!_
+You collected the _Enchanted Cauldron_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Magic Pets\\Enchanted Pen",{
 model={69488},
@@ -108,6 +248,9 @@ collect 1 Enchanted Pen##128535 |c |goto Orgrimmar/1 54.06,73.34
 step
 label "end pen"
 learnpet Enchanted Pen##96405 |use Enchanted Pen##128535
+step
+_Congratulations!_
+You collected the _Enchanted Pen_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Magic Pets\\Enchanted Torch",{
 model={69489},
@@ -142,98 +285,9 @@ collect 1 Enchanted Pen##128534 |c |goto Orgrimmar/1 54.06,73.34
 step
 label "end torch"
 learnpet Enchanted Torch##96404 |use Enchanted Torch##128534
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Ridgeback Piglet",{
-model={65667},
-pet=1756,
-description="This guide will walk you through obtaining the Beast pet: Ridgeback Piglet",
-},[[
 step
-label "Start"
-This pet comes from the _Alchemy_ profession
-If you would like to buy this pet from the Auction House, click here |next "AH Ridgeback" |confirm
-If you would like to collect it through Alchemy, click here |next "Alchemy Pet" |confirm
-|tip If you are going the Alchemy way, it takes 7 days before it can be opened.
-|tip There is a chance for this pet to be inside.
-step
-label "Alchemy Pet"
-First you will need to learn the _Transmute: Meat to Pet_ recipe
-|tip This recipe is learned randomly through Alchemy crafting.
-Once this recipe is learned, you will need to collect the following items:
-collect 3 Fatty Bearsteak##124118 |c
-collect 20 Unbroken Claw##124438 |c
-collect 20 Unbroken Tooth##124439 |c
-collect 1 Viscous Transmutagen##137595 |c
-collect 1 Black Transmutagen##137596 |c
-collect 1 Oily Transmutagen##137597 |c
-step
-Open Your Alchemy Crafting Panel:
-_<Craft 1 Transmute: Meat to Pet>_
-collect 1 Pulsating Sac##137599 |c
-|tip Once created, you must wait 7 days before it can be opened.
-|only if itemcount(137599) < 1
-step
-Open the Growling Sac |use Growling Sac##137608
-|tip There is a chance for this pet to be in the sac.
-collect 1 Ridgeback Piglet##136905 |c
-Click here if you did not receive a Ridgeback Piglet |next "Start" |confirm
-|next "Congratz"
-step
-label "AH Ridgeback"
-talk Auctioneer Drezmit##44866
-buy 1 Ridgeback Piglet##136905 |n
-collect 1 Ridgeback Piglet##136905 |c |goto Orgrimmar/1 54.06,73.34
-|tip This may be a little on the expensive side as it takes awhile to get.
-|only if itemcount(136905) < 1
-step
-label "Congratz"
-learnpet Ridgeback Piglet##98172 |use Ridgeback Piglet##136905
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Thaumaturgical Piglet",{
-model={65671},
-pet=1759,
-description="This guide will walk you through obtaining the Beast pet: Thaumaturgical Piglet",
-},[[
-step
-label "Start"
-This pet comes from the _Alchemy_ profession
-If you would like to buy this pet from the Auction House, click here |next "AH Thaumaturgical" |confirm
-If you would like to collect it through Alchemy, click here |next "Alchemy Pet 2" |confirm
-|tip If you are going the Alchemy way, it takes 7 days before it can be opened.
-|tip There is a chance for this pet to be inside.
-step
-label "Alchemy Pet 2"
-First you will need to learn the _Transmute: Meat to Pet_ recipe
-|tip This recipe is learned randomly through Alchemy crafting.
-Once this recipe is learned, you will need to collect the following items:
-collect 3 Fatty Bearsteak##124118 |c
-collect 20 Unbroken Claw##124438 |c
-collect 20 Unbroken Tooth##124439 |c
-collect 1 Viscous Transmutagen##137595 |c
-collect 1 Black Transmutagen##137596 |c
-collect 1 Oily Transmutagen##137597 |c
-step
-Open Your Alchemy Crafting Panel:
-_<Craft 1 Transmute: Meat to Pet>_
-collect 1 Pulsating Sac##137599 |c
-|tip Once created, you must wait 7 days before it can be opened.
-|only if itemcount(137599) < 1
-step
-Open the Growling Sac |use Growling Sac##137608
-|tip There is a chance for this pet to be in the sac.
-collect 1 Thaumaturgical Piglet##136908 |c
-Click here if you did not receive a Thaumaturgical Piglet |next "Start" |confirm
-|next "Congratz 2"
-step
-label "AH Thaumaturgical"
-talk Auctioneer Drezmit##44866
-buy 1 Thaumaturgical Piglet##136908 |n
-collect 1 Thaumaturgical Piglet##136908 |c |goto Orgrimmar/1 54.06,73.34
-|tip This may be a little on the expensive side as it takes awhile to get.
-|only if itemcount(136908) < 1
-step
-label "Congratz 2"
-learnpet Thaumaturgical Piglet##98183 |use Thaumaturgical Piglet##136908
+_Congratulations!_
+You collected the _Enchanted Torch_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Magic Pets\\Transmutant",{
 model={71828},
@@ -242,11 +296,12 @@ description="This guide will walk you through obtaining the Magic pet: Transmuta
 },[[
 step
 label "Start"
-This pet comes from the _Alchemy_ profession
-If you would like to buy this pet from the Auction House, click here |next "AH Transmutant" |confirm
-If you would like to collect it through Alchemy, click here |next "Alchemy Pet 3" |confirm
+This pet is crafted by players with the _Alchemy_ profession
+|tip You can either make this pet with the Alchemy profession or buy it from the Auction House.
+Click here if you have Alchemy and want to craft this pet |next "Alchemy Pet 3" |confirm
 |tip If you are going the Alchemy way, it takes 7 days before it can be opened.
 |tip There is a chance for this pet to be inside.
+Click here if you would like to purchase this from the Auction House |next "AH Transmutant" |confirm
 step
 label "Alchemy Pet 3"
 First you will need to learn the _Transmute: Meat to Pet_ recipe
@@ -281,6 +336,25 @@ collect 1 Transmutant##139789 |c |goto Orgrimmar/1 54.06,73.34
 step
 label "Congratz 3"
 learnpet Transmutant##111425 |use Transmutant##139789
+step
+_Congratulations!_
+You collected the _Transmutant_ battle pet
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Magic Pets\\Untethered Wyrmling",{
+model={71827},
+pet=1921,
+description="This guide will walk you through obtaining the Magic pet: Untethered Wyrmling",
+},[[
+step
+This pet is a reward for completing the quest _Balance to Spare_ in Suramar
+|tip This quest requires you to be Honored with The Nightfallen before being able to start it.
+Reach Honored with The Nightfallen |condition rep("The Nightfallen")>=Honored
+Click here to proceed to the Suramar Quest guide |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Suramar (110)" |confirm
+collect Untethered Wyrmling##139790 |n
+learnpet Untethered Wyrmling##111423 |use Untethered Wyrmling##139790
+step
+_Congratulations!_
+You collected the _Untethered Wyrmling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Mechanical Pets\\Trigger",{
 model={68666},
@@ -288,9 +362,10 @@ pet=1886,
 description="This guide will walk you through obtaining the Mechanical pet: Trigger",
 },[[
 step
-This pet comes from the _Engineering_ profession
-If you would like to buy this pet from the Auction House, click here |next "AH Trigger" |confirm
-If you would like to collect it through Engineering, click here |next "Engineering Pet" |confirm
+This pet is crafted by players with the _Engineering_ profession
+|tip You can either make this pet with the Engineering profession or buy it from the Auction House.
+Click here if you have Engineering and want to craft this pet |next "Engineering Pet" |confirm
+Click here if you would like to purchase this from the Auction House |next "AH Trigger" |confirm
 step
 label "Engineering Pet"
 To obtain the schematic to make this pet, click here to go to our Engineering Quest Line guide |next "Zygor's Alliance Profession Guides\\Engineering\\Legion\\Engineering Quest Line" |confirm |or
@@ -322,59 +397,7 @@ collect 1 Trigger##136921 |c |goto Orgrimmar/1 54.06,73.34
 step
 label "Congrats"
 learnpet Trigger##210696 |use Trigger##136921
+step
+_Congratulations!_
+You collected the _Trigger_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Humanoid Pets\\Tylarr Gronnden",{
-author="support@zygorguides.com",
-model={59026},
-pet=2022,
-description="This guide will help you acquire the Humanoid pet: Tylarr Gronnden.",
-},[[
-step
-You will need to gain _Rank 4_ with the Legion Brawler's Guild
-Click here to be taken to the Brawler's guild event guide. This will show you strategies on how to defeat each boss |confirm |next "Zygor's Horde Events Guides\\Brawler's Guild\\Legion Brawler's Guild"
-only if ZGV:GetReputation(2010).friendRep<7000
-step
-talk Paul North##68364
-buy 1 Tylarr Gronnden##144394 |goto Brawl'gar Arena/1 50.79,28.44 |n
-|tip This pet costs 400 gold.
-learnpet Tylarr Gronnden##119040 |use Tylarr Gronnden##144394
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Aquatic Pets\\Lagan",{
-model={71980},
-pet=1930,
-description="This guide will walk you through obtaining the Aquatic pet: Lagan",
-},[[
-step
-This pet is a reward for completing the dungeon achievement _Poor Unfortunate Souls_
-Click here to go to the guide for this achievement |next "Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Poor Unfortunate Souls" |confirm |or
-Click here to continue |confirm |or
-step
-Once this achievement is complete, this pet will be in your mailbox
-collect Lagan##140323 |n
-learnpet Lagan##112167 |use Lagan##140323
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Dragonkin Pets\\Emmigosa",{
-model={65120},
-pet=1720,
-description="This guide will walk you through obtaining the Dragonkin pet: Emmigosa",
-},[[
-step
-This pet is a reward for completing the quest _On the Brink_ in Azsuna.
-Click here to proceed to the Azsuna quest guide |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Azsuna" |confirm
-collect Emmigosa##129178 |n
-learnpet Emmigosa##97207 |use Emmigosa##129178
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Magic Pets\\Untethered Wyrmling",{
-model={71827},
-pet=1921,
-description="This guide will walk you through obtaining the Magic pet: Untethered Wyrmling",
-},[[
-step
-This pet is a reward for completing the quest _Balance to Spare_ in Suramar
-|tip This quest requires you to be honored with The Nightfallen before being able to start it.
-Reach Honored with The Nightfallen |condition rep("The Nightfallen")>=Honored
-Click here to proceed to the Suramar quest guide |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Suramar (110)" |confirm
-collect Untethered Wyrmling##139790 |n
-learnpet Untethered Wyrmling##111423 |use Untethered Wyrmling##139790
-]])
-ZGV.BETAEND()

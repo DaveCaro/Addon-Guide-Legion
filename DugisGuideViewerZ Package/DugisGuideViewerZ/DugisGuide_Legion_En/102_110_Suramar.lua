@@ -441,7 +441,7 @@ C Estate Jewelry: Haute Claw-ture |QID|41466| |N|Speak to (npc:104369) and defea
 T Estate Jewelry: Haute Claw-ture |QID|41466| |N|(npc:103175) in {The Grand Promenade} (41.52, 71.21)| |Z|1033 0| |NPC|103175|
 
 N (npc:104544) |QID|41465.1| |N|Speak with (npc:104544) in {The Grand Promenade} (40.42, 57.55)| |Z|1033 0| |NPC|104544|
-K (npc:105292) |QID|41465.2| |N|Kill (npc:105292) and collect (item:135508) in {The Grand Promenade} (42.18, 57.97)| |Z|1033 0| |NPC|105292|
+K (npc:105292) |QID|41465.2| |N|Kill (npc:105292) and collect (item:135508) in {The Grand Promenade} (41.28, 64.73)| |Z|1033 0| |NPC|105292|
 
 T Estate Jewelry: A Braggart's Brooch |QID|41465| |N|(npc:103175) in {The Grand Promenade} (41.51, 71.23)| |Z|1033 0| |NPC|103175|
 A Elegant Design |QID|41146| |N|(npc:103175) in {The Grand Promenade} (41.51, 71.23)| |Z|1033 0| |NPC|103175|

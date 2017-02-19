@@ -862,6 +862,23 @@ _Congratulations!_
 You earned the "Broken Isles Pathfinder, Part One" achievement.
 ]])
 ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Reputation\\Legion\\The Nightfallen",{
+condition_end="achieved(10778)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"The","Nightfallen"},
+description="This guide will walk you through completing the \"The Nightfallen\" Achievement.",
+},[[
+step
+For this, you will need to become exalted with The Nightfallen
+Refer to the Suramar Guide as well complete World Quests in Suramar to accomplish this
+Click here to load the Suramar guide |confirm |next |next "Zygor's Alliance Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the World Quests guide |confirm |next |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests"
+Become Exalted with The Nightfallen |achieve 10778
+step
+_Congratulations!_
+You have earned "The Nightfallen" Achievement!
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\General\\Wrath of the Lich King\\It's Over Nine Thousand!",{
 condition_end="achieved(4496)",
 author="support@zygorguides.com",
@@ -1234,7 +1251,7 @@ condition_end="achieved(11132)",
 author="support@zygorguides.com",
 startlevel=110,
 keywords={"World","Quests"},
-description="This guide will walk you through completing the 10,000 World Quests Completed Achievement.",
+description="This guide will walk you through completing the \"10,000 World Quests\" Achievement.",
 },[[
 step
 You will need to do the following to complete 10000 World Quests:
@@ -2771,7 +2788,7 @@ author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
 keywords={"Higher","Dimensional","Learning"},
-description="This guide will walk you through completing the Higher Dimensional Learning Achievement.",
+description="This guide will walk you through completing the \"Higher Dimensional Learning\" Achievement.",
 },[[
 step
 label "start"
@@ -2837,7 +2854,7 @@ author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
 keywords={"But","you","Say","He's","Just","Friend"},
-description="This guide will walk you through completing the But you Say He's Just a Friend Glory of the Legion Hero Meta Achievement.",
+description="This guide will walk you through completing the \"But you Say He's Just a Friend\" Achievement.",
 },[[
 step
 To earn this achievement, you will have to kill Warlord Parjesh _WITHOUT_ killing any Hatecoil Shellbreakers (Melee) enemies during the fight
@@ -2854,7 +2871,7 @@ author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
 keywords={"Stay","Salty"},
-description="This guide will walk you through completing the Stay Salty Glory of the Legion Hero Meta Achievement.",
+description="This guide will walk you through completing the \"Stay Salty\" Achievement.",
 },[[
 step
 For this acheivement, you will need to kill 11 Saltbrine Globules before defeating Lady Hatecoil
@@ -2873,7 +2890,7 @@ author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
 keywords={"Ready","for","Raiding","V"},
-description="This guide will walk you through completing the Ready for Raiding V Glory of the Legion Hero Meta Achievement.",
+description="This guide will walk you through completing the \"Ready for Raiding V\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to avoid being hit by Massive Deluge or Raging Storm during the Wrath of Azshara encounter
@@ -2891,7 +2908,7 @@ author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
 keywords={"Egg","cellent"},
-description="This guide will walk you through completing the Egg-cellent! Glory of the Legion Hero Meta Achievement.",
+description="This guide will walk you through completing the \"Egg-Cellent!\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to kill Dresaron after defeating the Hatespawn Abomination on Mythic Difficulty
@@ -2911,7 +2928,7 @@ author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
 keywords={"Burning","Down","the","House"},
-description="This guide will walk you through completing the Burning Down the House Glory of the Legion Hero Meta Achievement.",
+description="This guide will walk you through completing the \"Burning Down the House\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to kill Shade of Xavius while he has 10 stacks of Apocalyptic Empowerment
@@ -2930,7 +2947,7 @@ author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
 keywords={"Got","to","Ketchum","All"},
-description="This guide will walk you through completing the Got to Ketchum All Glory of the Legion Hero Meta Achievement.",
+description="This guide will walk you through completing the \"Got to Ketchum All\" Achievement.",
 },[[
 step
 To complete this achievement, there will be a number snails located throughout the instance
@@ -2949,7 +2966,7 @@ author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
 keywords={"Can't","Eat","Just","One"},
-description="This guide will walk you through completing the Can't Eat Just One Glory of the Legion Hero Meta Achievement.",
+description="This guide will walk you through completing the \"Can't Eat Just One\" Achievement.",
 },[[
 step
 For this achievement, Naraxas needs to gain 6 stacks of Ravenous before you defeat her
@@ -2968,7 +2985,7 @@ author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
 keywords={"Stag","Party"},
-description="This guide will walk you through completing the Stag Party Glory of the Legion Hero Meta Achievement.",
+description="This guide will walk you through completing the \"Stag Party\" Achievement.",
 },[[
 step
 map Halls of Valor/1
@@ -2994,7 +3011,7 @@ author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
 keywords={"I","Got","What","You","Mead"},
-description="This guide will walk you through completing the I Got What You Mead Glory of the Legion Hero Meta Achievement.",
+description="This guide will walk you through completing the \"I Got What You Mead\" Achievement.",
 },[[
 step
 For this achievement, you will need to throw four Mugs of Mead at the four Vrykul Kings
@@ -3019,7 +3036,7 @@ author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
 keywords={"Surge","Protector"},
-description="This guide will walk you through completing the Surge Protector Glory of the Legion Hero Meta Achievement.",
+description="This guide will walk you through completing the \"Surge Protector\" Achievement.",
 },[[
 step
 For this achievement, you will need to defeat Odyn without spells being cast throughout the duration of the Odyn encounter
@@ -3035,7 +3052,7 @@ author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
 keywords={"I","Made","a","Food!"},
-description="This guide will walk you through completing the I Made a Food! Glory of the Legion Hero Meta Achievement.",
+description="This guide will walk you through completing the \"I Made a Food!\" Achievement.",
 },[[
 step
 For this achievement, you will need to defeat Festerface after killing the Black Bile
@@ -3053,7 +3070,7 @@ author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
 keywords={"You're","Just","Making","It","Worse"},
-description="This guide will walk you through completing the You're Just Making It WORSE! Glory of the Legion Hero Meta Achievement.",
+description="This guide will walk you through completing the \"You're Just Making It WORSE!\" Achievement.",
 },[[
 step
 Refer to the _Follower Millhouse Manastorm_ guide in order to attain the Manastorm's Duplicator
@@ -3074,7 +3091,7 @@ author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
 keywords={"I","Ain't","Even","Cold"},
-description="This guide will walk you through completing the I Ain't Even Cold Glory of the Legion Hero Meta Achievement.",
+description="This guide will walk you through completing the \"I Ain't Even Cold\" Achievement.",
 },[[
 step
 For this achievement, you will have to defeat Ash'Golm with every party member being _Fired Up_ buff
@@ -3095,7 +3112,7 @@ author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
 keywords={"Who's","Afraid","of","the","Dark"},
-description="This guide will walk you through completing the Who's Afraid of the Dark Glory of the Legion Hero Meta Achievement.",
+description="This guide will walk you through completing the \"Who's Afraid of the Dark\" Achievement.",
 },[[
 step
 For this achievement, you will need to defeat Cordana without being hit with Creeping Doom
@@ -3116,7 +3133,7 @@ author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
 keywords={"A","Specter","Illuminated"},
-description="This guide will walk you through attaining the A Specter, Illuminated Glory of the Legion Hero Meta Achievement.",
+description="This guide will walk you through completing the \"A Specter, Illuminated\" Achievement.",
 },[[
 step
 For this achievement, you will need to pick up _Elune's Light_ once more after defeating Cordana
@@ -3135,7 +3152,7 @@ author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
 keywords={"You","Used","to","Scrawl","Me","In","Your","Fel","Tome"},
-description="This guide will walk you through attaining the You Used to Scrawl Me In Your Fel Tome Achievement.",
+description="This guide will walk you through completing the \"You Used to Scrawl Me In Your Fel Tome\" Achievement.",
 },[[
 step
 label "Begin"
@@ -3184,7 +3201,7 @@ author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
 keywords={"Black","Rook","Moan"},
-description="This guide will walk you through attaining the Black Rook Moan Glory of the Legion Hero Meta Achievement.",
+description="This guide will walk you through completing the \"Black Rook Moan\" Achievement.",
 },[[
 step
 For this, you will need to defeat the Amalgam of Souls after killing a Frustrated Soul
@@ -3203,7 +3220,7 @@ author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
 keywords={"Adds?","More","Like","Bads"},
-description="This guide will walk you through attaining the Adds? More Like Bads Glory of the Legion Hero Meta Achievement.",
+description="This guide will walk you through completing the \"Adds? More Like Bads\" Achievement.",
 },[[
 step
 For this, you will need to keep any adds that spawn during the Illysanna Ravencrest encounter alive!
@@ -3222,7 +3239,7 @@ author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
 keywords={"Instant","Karma"},
-description="This guide will walk you through attaining Instant Karma Glory of the Legion Hero Meta Achievement.",
+description="This guide will walk you through completing the \"Instant Karma\" Achievement.",
 },[[
 step
 For this achievement, you will need to have a Seacursed Soulkeeper slay 6 Risen Warriors during the Ymiron encounter
@@ -3240,7 +3257,7 @@ author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
 keywords={"Helheim","Hath","No","Fury"},
-description="This guide will walk you through attaining Helheim Hath No Fury Glory of the Legion Hero Meta Achievement.",
+description="This guide will walk you through completing the \"Helheim Hath No Fury\" Achievement.",
 },[[
 step
 For this, you will have to kill the boss before a Val'kyr dies after entering the jail of the ship
@@ -3263,7 +3280,7 @@ author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
 keywords={"Poor","Unfortunate","Souls"},
-description="This guide will walk you through attaining Helheim Hath No Fury Glory of the Legion Hero Meta Achievement.",
+description="This guide will walk you through completing the \"Poor Unfortunate Souls\" Achievement.",
 },[[
 step
 There will be a series of steps to follow in order to earn this achievement
@@ -3307,7 +3324,7 @@ author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
 keywords={"No","Time","To","Waste"},
-description="This guide will walk you through attaining No Time to Waste Glory of the Legion Hero Meta Achievement.",
+description="This guide will walk you through completing the \"No Time to Waste\" Achievement.",
 },[[
 step
 For this, you will need to defeat Advisor Vandros without killing Timeless Wraiths
@@ -3322,12 +3339,12 @@ _Congratulations!_
 You have earned the "No Time to Waste" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Dungeons\\Legion\\Clean House",{
-condition_end="achieved(10776)",
+condition_end="achieved(10775)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
 keywords={"Clean","House"},
-description="This guide will walk you through attaining Clean House Glory of the Legion Hero Meta Achievement.",
+description="This guide will walk you through completing the \"Clean House\" Achievement.",
 },[[
 step
 For this achievement, Corstilax will throw out these faint blue circles on the ground throughout the area
@@ -3344,8 +3361,8 @@ condition_end="achieved(10773)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
-keywords={"Clean","House","The","Arcway","Mythic","Dungeon","Glory","Legion","Hero"},
-description="This guide will walk you through attaining Clean House Glory of the Legion Hero Meta Achievement.",
+keywords={"Arcanic","Cling"},
+description="This guide will walk you through completing the \"Arcanic Cling\" Achievement.",
 },[[
 step
 For this achievement, you will need to defeat Ivanyr without taking any damage from Charged Bolt
@@ -3353,15 +3370,16 @@ _Ivanyr will run over to a Crystal and begin casting Unstable Mana, which will b
 Orbs will spawn from the crystal, simply avoid them for the achievemenet
 Defeat Ivanyr while avoiding damage from Charged Bolt |achieve 10773
 step
-Congratulations, you have earned the Arcanic Cling Achievement!
+_Congratulations!_
+You have earned the "Arcanic Cling" Achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Dungeons\\Legion\\Waiting for Gerdo",{
 condition_end="achieved(10610)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
-keywords={"Waiting","For","Gerdo","The","Arcway","Mythic","Dungeon","Glory","Legion","Hero"},
-description="This guide will walk you through attaining Clean House Glory of the Legion Hero Meta Achievement.",
+keywords={"Waiting","for","Gerdo"},
+description="This guide will walk you through completing the \"Waiting for Gerdo\" Achievement.",
 },[[
 step
 For this, you will need to
@@ -3374,15 +3392,16 @@ DPS them down quickly, then have each group member channel a beacon
 After the channel is finished, kill Gerdo
 Earn the Waiting for Gerdo Achievmeent |achieve 10610
 step
-Congratulations, you have earend the Waiting for Gerdo Achievement!
+_Congratulations!_
+You have earend the "Waiting for Gerdo" Achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Dungeons\\Legion\\Dropping Some Eaves",{
 condition_end="achieved(10611)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
-keywords={"Dropping","Some","Eaves","The","Arcway","Mythic","Dungeon","Glory","Legion","Hero"},
-description="This guide will walk you through attaining Clean House Glory of the Legion Hero Meta Achievement.",
+keywords={"Dropping","Some","Eaves"},
+description="This guide will walk you through completing the \"Dropping Some Eaves\" Achievement.",
 },[[
 step
 This achievement is _extremely random_, so despite what you end up doing, the achievemenet _may not_ be available
@@ -3396,14 +3415,15 @@ Follow the noble then defeat them
 Run up to the door _but do NOT open it!_
 Earn the Dropping Some Eaves achievement |achieve 10611
 step
-Congratulations, you have earned the Dropping Some Eaves Achievement!
+_Congratulations!_
+You have earned the "Dropping Some Eaves" Achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Reputation\\Legion\\Friends in a Broken Land",{
 condition_end="achieved(11159)",
 author="support@zygorguides.com",
 startlevel=100,
-keywords={"Nightfallen"},
-description="This guide will walk you through earning Exalted Status with The Nightfallen",
+keywords={"Friends","in","a","Broken","Land"},
+description="This guide will walk you through completing the \"Friends in a Broken Land\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to become exalted with one of the 6 starter factions for legion, listed below:
@@ -3422,15 +3442,16 @@ Click here to complete The Valarjar Quests |confirm |next "Zygor's Alliance Leve
 |tip To achieve this, complete a leveling guide of the associated faction as well as use our World Quest gudie.
 step
 label "end"
-Congratulations, you have earned the Friends in a Broken Land Achievement!
+_Congratulations!_
+You have earned the "Friends in a Broken Land" Achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Dungeons\\Legion\\Heroic: Darkheart Thicket",{
 condition_end="achieved(10784)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
-keywords={"Darkheart","Thicket","Dungeon","Glory","Legion","Hero"},
-description="This guide will walk you through attaining the Heroic: Darkheart Thicket Achievement.",
+keywords={"Heroic","Darkheart","Thicket"},
+description="This guide will walk you through completing the \"Heroic: Darkheart Thicket\" Achievement.",
 },[[
 step
 For this, complete Darkheart Thicket on Heroic or higher difficulty
@@ -3445,8 +3466,8 @@ condition_end="achieved(10788)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
-keywords={"Halls","of","Valor","Dungeon","Glory","Legion","Hero"},
-description="This guide will walk you through attaining the Heroic: Halls of Valor Achievement.",
+keywords={"Heroic","Halls","of","Valor"},
+description="This guide will walk you through completing the \"Heroic: Halls of Valor\" Achievement.",
 },[[
 step
 For this, complete Halls of Valor on Heroic or higher difficulty
@@ -3461,8 +3482,8 @@ condition_end="achieved(10796)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
-keywords={"Neltharion","Lair","Dungeon","Heroic","Legion"},
-description="This guide will walk you through attaining the Heroic: Neltharion's Lair Achievement.",
+keywords={"Heroic","Neltharion","Lair"},
+description="This guide will walk you through completing the \"Heroic: Neltharion's Lair\" Achievement.",
 },[[
 step
 For this, complete Neltharion's Lair on Heroic or higher difficulty
@@ -3477,8 +3498,8 @@ condition_end="achieved(10799)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
-keywords={"Assault","on","Violet","Hold","Dungeon","Heroic","Legion"},
-description="This guide will walk you through attaining the Heroic: Assault on Violet Hold Achievement.",
+keywords={"Heroic","Assault","on","Violet","Hold","Dungeon","Heroic","Legion"},
+description="This guide will walk you through completing the \"Heroic: Assault on Violet Hold\" Achievement.",
 },[[
 step
 For this, complete Assault on Violet Hold on Heroic or higher difficulty
@@ -3493,8 +3514,8 @@ condition_end="achieved(10805)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
-keywords={"Black","Rook","Hold","Dungeon","Heroic","Legion"},
-description="This guide will walk you through attaining the Heroic: Black Rook Hold Achievement.",
+keywords={"Heroic","Black","Rook","Hold"},
+description="This guide will walk you through completing the \"Heroic: Black Rook Hold\" Achievement.",
 },[[
 step
 For this, complete Black Rook Hold on Heroic or higher difficulty
@@ -3509,8 +3530,8 @@ condition_end="achieved(10808)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
-keywords={"Maw","of","Souls","Dungeon","Heroic","Legion"},
-description="This guide will walk you through attaining the Heroic: Maw of Souls Achievement.",
+keywords={"Heroic","Maw","of","Souls"},
+description="This guide will walk you through completing the \"Heroic: Maw of Souls\" Achievement.",
 },[[
 step
 For this, complete Maw of Souls on Heroic or higher difficulty
@@ -3525,8 +3546,8 @@ condition_end="achieved(10781)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
-keywords={"Eye","of","Azshara","Dungeon","Heroic","Legion"},
-description="This guide will walk you through attaining the Heroic: Eye of Azshara Achievement.",
+keywords={"Heroic","Eye","of","Azshara"},
+description="This guide will walk you through completing the \"Heroic: Eye of Azshara\" Achievement.",
 },[[
 step
 For this, complete Eye of Azshara on Heroic or higher difficulty
@@ -3541,8 +3562,8 @@ condition_end="achieved(10802)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
-keywords={"Eye","of","Azshara","Dungeon","Heroic","Legion"},
-description="This guide will walk you through attaining the Heroic: Vault of the Wardens Achievement.",
+keywords={"Heroic","Eye","of","Azshara"},
+description="This guide will walk you through completing the \"Heroic: Vault of the Wardens\" Achievement.",
 },[[
 step
 For this, complete Vault of the Wardens on Heroic or higher difficulty
@@ -3557,8 +3578,8 @@ condition_end="achieved(11429)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
-keywords={"Return","to","Karazhan","Dungeon","Legion"},
-description="This guide will walk you through attaining the Return to Karazhan Achievement.",
+keywords={"Return","to","Karazhan"},
+description="This guide will walk you through completing the \"Return to Karazhan\" Achievement.",
 },[[
 step
 For this, you will need to complete the Karazhan Attunement guide
@@ -3576,8 +3597,8 @@ condition_end="achieved(10785)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
-keywords={"Darkheart","Thicket","Dungeon","Glory","Legion","Hero"},
-description="This guide will walk you through attaining the Mythic: Darkheart Thicket Achievement.",
+keywords={"Mythic","Darkheart","Thicket"},
+description="This guide will walk you through completing the \"Mythic: Darkheart Thicket\" Achievement.",
 },[[
 step
 For this, complete Darkheart Thicket on Mythic difficulty
@@ -3593,8 +3614,8 @@ condition_end="achieved(10789)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
-keywords={"Halls","of","Valor","Dungeon","Glory","Legion","Hero"},
-description="This guide will walk you through attaining the Mythic: Halls of Valor Achievement.",
+keywords={"Mythic","Halls","of","Valor"},
+description="This guide will walk you through completing the \"Mythic: Halls of Valor\" Achievement.",
 },[[
 step
 For this, complete Halls of Valor on Mythic difficulty
@@ -3610,8 +3631,8 @@ condition_end="achieved(10797)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
-keywords={"Neltharion","Lair","Dungeon","Heroic","Legion"},
-description="This guide will walk you through attaining the Mythic: Neltharion's Lair Achievement.",
+keywords={"Mythic","Neltharion","Lair"},
+description="This guide will walk you through completing the \"Mythic: Neltharion's Lair\" Achievement.",
 },[[
 step
 For this, complete Neltharion's Lair on Mythic difficulty
@@ -3627,8 +3648,8 @@ condition_end="achieved(10800)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
-keywords={"Assault","on","Violet","Hold","Dungeon","Mythic","Legion"},
-description="This guide will walk you through attaining the Mythic: Assault on Violet Hold Achievement.",
+keywords={"Mythic","Assault","on","Violet","Hold"},
+description="This guide will walk you through completing the \"Mythic: Assault on Violet Hold\" Achievement.",
 },[[
 step
 For this, complete Assault on Violet Hold on Mythic difficulty
@@ -3644,8 +3665,8 @@ condition_end="achieved(10806)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
-keywords={"Black","Rook","Hold","Dungeon","Mythic","Legion"},
-description="This guide will walk you through attaining the Mythic: Black Rook Hold Achievement.",
+keywords={"Mythic","Black","Rook","Hold"},
+description="This guide will walk you through completing the \"Mythic: Black Rook Hold\" Achievement.",
 },[[
 step
 For this, complete Black Rook Hold on Mythic difficulty
@@ -3661,8 +3682,8 @@ condition_end="achieved(10809)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
-keywords={"Maw","of","Souls","Dungeon","Mythic","Legion"},
-description="This guide will walk you through attaining the Mythic: Maw of Souls Achievement.",
+keywords={"Mythic","Maw","of","Souls"},
+description="This guide will walk you through completing the \"Mythic: Maw of Souls\" Achievement.",
 },[[
 step
 For this, complete Maw of Souls on Mythic difficulty
@@ -3678,8 +3699,8 @@ condition_end="achieved(10782)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
-keywords={"Eye","of","Azshara","Dungeon","Heroic","Legion"},
-description="This guide will walk you through attaining the Mythic: Eye of Azshara Achievement.",
+keywords={"Mythic","Eye","of","Azshara"},
+description="This guide will walk you through completing the \"Mythic: Eye of Azshara\" Achievement.",
 },[[
 step
 For this, complete Eye of Azshara on Mythic difficulty
@@ -3695,8 +3716,8 @@ condition_end="achieved(10803)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
-keywords={"Eye","of","Azshara","Dungeon","Mythic","Legion"},
-description="This guide will walk you through attaining the Mythic: Vault of the Wardens Achievement.",
+keywords={"Mythic","Eye","of","Azshara"},
+description="This guide will walk you through completing the \"Mythic: Vault of the Wardens\" Achievement.",
 },[[
 step
 For this, complete Vault of the Wardens on Mythic
@@ -3712,8 +3733,8 @@ condition_end="achieved(11183)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
-keywords={"Keystone","Initiate","Mythic","Dungeon","Legion"},
-description="This guide will walk you through attaining the Keystone Initiate Achievement.",
+keywords={"Keystone","Initiate","Mythic","Dungeon"},
+description="This guide will walk you through completing the \"Keystone Initiate\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to complete a dungeon on _Mythic Difficulty_
@@ -3733,8 +3754,8 @@ condition_end="achieved(11184)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
-keywords={"Keystone","Challenger","Mythic","Dungeon","Legion"},
-description="This guide will walk you through attaining the Keystone Challenger Achievement.",
+keywords={"Keystone","Challenger","Mythic","Dungeon"},
+description="This guide will walk you through completing the \"Keystone Challenger\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to complete a dungeon on _Mythic+ 4 Difficulty_
@@ -3754,8 +3775,8 @@ condition_end="achieved(11185)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
-keywords={"Keystone","Conqueror","Mythic","Dungeon","Legion"},
-description="This guide will walk you through attaining the Keystone Conqueror Achievement.",
+keywords={"Keystone","Conqueror","Mythic","Dungeon"},
+description="This guide will walk you through completing the \"Keystone Conqueror\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to complete a dungeon on _Mythic+ 9 Difficulty_
@@ -3775,8 +3796,8 @@ condition_end="achieved(11162)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
-keywords={"Keystone","Master","Mythic","Dungeon","Legion"},
-description="This guide will walk you through attaining the Keystone Master Achievement.",
+keywords={"Keystone","Master","Mythic","Dungeon"},
+description="This guide will walk you through completing the \"Keystone Master\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to complete a dungeon on _Mythic+ 14 Difficulty_
@@ -3796,8 +3817,8 @@ condition_end="achieved(11181)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
-keywords={"Broken","Isles","Keymaster","Mythic","Dungeon","Legion"},
-description="This guide will walk you through attaining the Broken Isles Keymaster Achievement.",
+keywords={"Broken","Isles","Keymaster","Mythic","Dungeon"},
+description="This guide will walk you through completing the \"Broken Isles Keymaster\" Achievement.",
 },[[
 step
 To earn this, you will need to complete the following dungeons using a Mythic Kystone:
@@ -3815,33 +3836,13 @@ step
 _Congratulations!_
 You earned the "Broken Isles Keymaster" achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Dungeons\\Legion\\Clean House",{
-condition_end="achieved(10775)",
-author="support@zygorguides.com",
-startlevel=110,
-endlevel=110,
-keywords={"Clean","House","Dungeon","Legion"},
-description="This guide will walk you through attaining the Clean House Achievement.",
-},[[
-step
-For this, you will need to _defeat Corstilax without any pools of the Nightwell Energy expiring_
-Corstilax will spawn 4 to 5 pools each time it's cast
-|tip They will lok like large blue circles on the ground.
-Have your group members run into them so they are absorbed
-Once the first cast is cast, use Blood Lust / Time Warp and any other dps cooldowns
-If additional pools are able to spawn, absorb them the same way
-Defeat Corstilax without any pools of Nightwell Energy expiring in the Arcway on Mythic difficulty |achieve 10775
-step
-_Congratulations!_
-You earned the "Clean House" achievement.
-]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Dungeons\\Legion\\Burn After Reading",{
 condition_end="achieved(11433)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
-keywords={"Burn","After","Reading","Dungeon","Legion"},
-description="This guide will walk you through attaining the Burn After Reading Achievement.",
+keywords={"Burn","After","Reading"},
+description="This guide will walk you through completing the \"Burn After Reading\" Achievement.",
 },[[
 step
 After defeating the _Mana Devourer_, go into nxt room
@@ -3856,32 +3857,13 @@ step
 _Congratulations!_
 You earned the "Burn After Reading" achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Dungeons\\Legion\\Season Tickets",{
-condition_end="achieved(11335)",
-author="support@zygorguides.com",
-startlevel=110,
-endlevel=110,
-keywords={"Season","Tickets","Reading","Dungeon","Legion"},
-description="This guide will walk you through attaining the Season Tickets Achievement.",
-},[[
-step
-You will need to run Return to Karazhan a minimum of 3 times to earn this achievement
-The event that happens is random so it may take more than 3 clears with bad luck
-Complete each of the following Opera Hall plays in Return to Karazhan:
-Wikket |achieve 11335/1
-Westfall Story |achieve 11335/2
-Beautiful Beast |achieve 11335/3
-step
-_Congratulations!_
-You earned the "Season Tickets" achievement.
-]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Dungeons\\Legion\\Dine and Bash",{
 condition_end="achieved(11338)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
 keywords={"Dine","and","Bash","Reading","Dungeon","Legion"},
-description="This guide will walk you through attaining the Dine and Bash Achievement.",
+description="This guide will walk you through completing the \"Dine and Bash\" Achievement.",
 },[[
 step
 For this, defeat the 4 dinner guests within 10 seconds of each other
@@ -3894,13 +3876,32 @@ step
 _Congratulations!_
 You earned the "Dine and Bash" achievement.
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Dungeons\\Legion\\Season Tickets",{
+condition_end="achieved(11335)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Season","Tickets","Reading","Dungeon","Legion"},
+description="This guide will walk you through completing the \"Season Tickets\" Achievement.",
+},[[
+step
+You will need to run Return to Karazhan a minimum of 3 times to earn this achievement
+The event that happens is random so it may take more than 3 clears with bad luck
+Complete each of the following Opera Hall plays in Return to Karazhan:
+Wikket |achieve 11335/1
+Westfall Story |achieve 11335/2
+Beautiful Beast |achieve 11335/3
+step
+_Congratulations!_
+You earned the "Season Tickets" achievement.
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Dungeons\\Legion\\Scared Straight",{
 condition_end="achieved(11432)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
 keywords={"Scared","Straight","Dungeon","Legion"},
-description="This guide will walk you through attaining the Scared Straight Achievement.",
+description="This guide will walk you through completing the \"Scared Straight\" Achievement.",
 },[[
 step
 For this, before you encounter the Shade of Medivh, you will need to read a book called "Terrifying Stories to Tell at Night"
@@ -3916,7 +3917,7 @@ author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
 keywords={"The","Rat","Pack","Dungeon","Legion"},
-description="This guide will walk you through attaining The Rat Pack Achievement.",
+description="This guide will walk you through completing the \"The Rat Pack\" Achievement.",
 },[[
 step
 Before you start, you will not be able to earn this achievement if:
@@ -3938,7 +3939,7 @@ author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
 keywords={"One","Night","in","Karazhan","Dungeon","Legion"},
-description="This guide will walk you through attaining One Night in Karazhan Achievement.",
+description="This guide will walk you through completing the \"One Night in Karazhan\" Achievement.",
 },[[
 step
 This achievement will take some planning
@@ -3965,7 +3966,7 @@ condition_end="achieved(10688)",
 author="support@zygorguides.com",
 startlevel=100,
 keywords={"Fashionista","Wrist"},
-description="This Guide will explain how to attain 100 Different Wrist Appearances",
+description="This guide will walk you through completing the \"Fashionista: Wrist\" Achievement.",
 },[[
 step
 For this achievement, you will need to collect 100 different appearances for the _Wrist_ slot of your character sheet
@@ -3979,14 +3980,15 @@ Mage, Priest and Warlock can only learn _Cloth_ transmogs
 You can use multiple characters to tally towards this achievement
 Earn the Fashionista: Wrist Achievement |achieve 10688/1
 step
-Congratulations, you have earned the Fashionista: Wrist Achievement!
+_Congratulations!_
+You have earned the "Fashionista: Wrist" Achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Collections\\Legion\\Fashionista: Back",{
 condition_end="achieved(10687)",
 author="support@zygorguides.com",
 startlevel=100,
-keywords={"Fashionista","Wrist"},
-description="This Guide will explain how to attain 100 Different Back Appearances",
+keywords={"Fashionista","Back"},
+description="This guide will walk you through completing the \"Fashionista: Back\" Achievement.",
 },[[
 step
 For this achievement, you will need to collect 100 different appearances for the _Back_ slot of your character sheet
@@ -4000,14 +4002,15 @@ Mage, Priest and Warlock can only learn _Cloth_ transmogs
 You can use multiple characters to tally towards this achievement
 Earn the Fashionista: Back Achievement |achieve 10687/1
 step
-Congratulations, you have earned the Fashionista: Back Achievement!
+_Congratulations!_
+You have earned the "Fashionista: Back" Achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Collections\\Legion\\Fashionista: Waist",{
 condition_end="achieved(10686)",
 author="support@zygorguides.com",
 startlevel=100,
-keywords={"Fashionista","Wrist"},
-description="This Guide will explain how to attain 100 Different Waist Appearances",
+keywords={"Fashionista","Waist"},
+description="This guide will walk you through completing the \"Fashionista: Waist\" Achievement.",
 },[[
 step
 For this achievement, you will need to collect 100 different appearances for the _Waist_ slot of your character sheet
@@ -4021,14 +4024,15 @@ Mage, Priest and Warlock can only learn _Cloth_ transmogs
 You can use multiple characters to tally towards this achievement
 Earn the Fashionista: Waist Achievement |achieve 10686/1
 step
-Congratulations, you have earned the Fashionista: Back Achievement!
+_Congratulations!_
+You have earned the "Fashionista: Waist" Achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Collections\\Legion\\Fashionista: Hand",{
 condition_end="achieved(10693)",
 author="support@zygorguides.com",
 startlevel=100,
-keywords={"Fashionista","Wrist"},
-description="This Guide will explain how to attain 100 Different Hand Appearances",
+keywords={"Fashionista","Hand"},
+description="This guide will walk you through completing the \"Fashionista: Hand\" Achievement.",
 },[[
 step
 For this achievement, you will need to collect 100 different appearances for the _Hand_ slot of your character sheet
@@ -4042,14 +4046,15 @@ Mage, Priest and Warlock can only learn _Cloth_ transmogs
 You can use multiple characters to tally towards this achievement
 Earn the Fashionista: Hand Achievement |achieve 10693/1
 step
-Congratulations, you have earned the Fashionista: Hand Achievement!
+_Congratulations!_
+You have earned the "Fashionista: Hand" Achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Collections\\Legion\\Fashionista: Shoulder",{
 condition_end="achieved(10692)",
 author="support@zygorguides.com",
 startlevel=100,
-keywords={"Fashionista","Wrist"},
-description="This Guide will explain how to attain 100 Different Shoulder Appearances",
+keywords={"Fashionista","Shoulder"},
+description="This guide will walk you through completing the \"Fashionista: Shoulder\" Achievement.",
 },[[
 step
 For this achievement, you will need to collect 100 different appearances for the _Shoulder_ slot of your character sheet
@@ -4063,14 +4068,15 @@ Mage, Priest and Warlock can only learn _Cloth_ transmogs
 You can use multiple characters to tally towards this achievement
 Earn the Fashionista: Shoulder Achievement |achieve 10692/1
 step
-Congratulations, you have earned the Fashionista: Shoulder Achievement!
+_Congratulations!_
+You have earned the "Fashionista: Shoulder" Achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Collections\\Legion\\Fashionista: Feet",{
 condition_end="achieved(10685)",
 author="support@zygorguides.com",
 startlevel=100,
-keywords={"Fashionista","Wrist"},
-description="This Guide will explain how to attain 100 Different Feet Appearances",
+keywords={"Fashionista","Feet"},
+description="This guide will walk you through completing the \"Fashionista: Feet\" Achievement.",
 },[[
 step
 For this achievement, you will need to collect 100 different appearances for the _Feet_ slot of your character sheet
@@ -4084,14 +4090,15 @@ Mage, Priest and Warlock can only learn _Cloth_ transmogs
 You can use multiple characters to tally towards this achievement
 Earn the Fashionista: Feet Achievement |achieve 10685/1
 step
-Congratulations, you have earned the Fashionista: Feet Achievement!
+_Congratulations!_
+You have earned the "Fashionista: Feet" Achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Collections\\Legion\\Fashionista: Legs",{
 condition_end="achieved(10684)",
 author="support@zygorguides.com",
 startlevel=100,
-keywords={"Fashionista","Wrist"},
-description="This Guide will explain how to attain 100 Different Legs Appearances",
+keywords={"Fashionista","Leg"},
+description="This guide will walk you through completing the \"Fashionista: Legs\" Achievement.",
 },[[
 step
 For this achievement, you will need to collect 100 different appearances for the _Legs_ slot of your character sheet
@@ -4105,14 +4112,15 @@ Mage, Priest and Warlock can only learn _Cloth_ transmogs
 You can use multiple characters to tally towards this achievement
 Earn the Fashionista: Legs Achievement |achieve 10684/1
 step
-Congratulations, you have earned the Fashionista: Legs Achievement!
+_Congratulations!_
+You have earned the "Fashionista: Legs" Achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Collections\\Legion\\Fashionista: Chest",{
 condition_end="achieved(10682)",
 author="support@zygorguides.com",
 startlevel=100,
-keywords={"Fashionista","Wrist"},
-description="This Guide will explain how to attain 100 Different Chest Appearances",
+keywords={"Fashionista","Chest"},
+description="This guide will walk you through completing the \"Fashionista: Chest\" Achievement.",
 },[[
 step
 For this achievement, you will need to collect 100 different appearances for the _Chest_ slot of your character sheet
@@ -4126,14 +4134,15 @@ Mage, Priest and Warlock can only learn _Cloth_ transmogs
 You can use multiple characters to tally towards this achievement
 Earn the Fashionista: Chest Achievement |achieve 10682/1
 step
-Congratulations, you have earned the Fashionista: Chest Achievement!
+_Congratulations!_
+You have earned the "Fashionista: Chest" Achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Collections\\Legion\\Fashionista: Head",{
 condition_end="achieved(10681)",
 author="support@zygorguides.com",
 startlevel=100,
-keywords={"Fashionista","Wrist"},
-description="This Guide will explain how to attain 100 Different Head Appearances",
+keywords={"Fashionista","Head"},
+description="This guide will walk you through completing the \"Fashionista: Head\" Achievement.",
 },[[
 step
 For this achievement, you will need to collect 100 different appearances for the _Head_ slot of your character sheet
@@ -4147,14 +4156,15 @@ Mage, Priest and Warlock can only learn _Cloth_ transmogs
 You can use multiple characters to tally towards this achievement
 Earn the Fashionista: Head Achievement |achieve 10681/1
 step
-Congratulations, you have earned the Fashionista: Chest Achievement!
+_Congratulations!_
+You have earned the "Fashionista: Head" Achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Collections\\Legion\\Fashionista: Weapon & Off Hand",{
 condition_end="achieved(10689)",
 author="support@zygorguides.com",
 startlevel=100,
-keywords={"Fashionista","Wrist"},
-description="This Guide will explain how to attain 100 Different Weapon & Off Hand Appearances",
+keywords={"Fashionista","Weapon","Off","Hand"},
+description="This guide will walk you through completing the \"Fashionista: Weapon & Off Hand\" Achievement.",
 },[[
 step
 For this achievement, you will need to collect 100 different appearances for the _Weapon & Off Hand_ slot of your character sheet
@@ -4168,14 +4178,15 @@ Mage, Priest and Warlock can only learn _Cloth_ transmogs
 You can use multiple characters to tally towards this achievement
 Earn the Fashionista: Weapon & Off Hand Achievement |achieve 10689/1
 step
-Congratulations, you have earned the Fashionista: Weapon & Off Hand Achievement!
+_Congratulations!_
+You have earned the "Fashionista: Weapon & Off Hand" Achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Collections\\Legion\\Fashionista: Shirt",{
 condition_end="achieved(10691)",
 author="support@zygorguides.com",
 startlevel=100,
-keywords={"Fashionista","Wrist"},
-description="This Guide will explain how to attain 100 Different Shirt Appearances",
+keywords={"Fashionista","Shirt"},
+description="This guide will walk you through completing the \"Fashionista: Shirt\" Achievement.",
 },[[
 step
 For this achievement, you will need to collect 15 different appearances for the _Shirt_ slot of your character sheet
@@ -4245,14 +4256,15 @@ buy Yellow Martial Shirt##42376 |n
 Equip Yellow Martial Shirt |equipped Yellow Martial Shirt##42376 |use Yellow Martial Shirt##42376 |future |achieve 10691
 step
 label "congrats"
-Congratulations, you have earned the Fashionista: Shirt Achievement!
+_Congratulations!_
+You have earned the "Fashionista: Shirt" Achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Collections\\Legion\\Fashionista: Tabard",{
 condition_end="achieved(10690)",
 author="support@zygorguides.com",
 startlevel=100,
-keywords={"Fashionista","Wrist"},
-description="This Guide will explain how to attain 15 Different Tabard Appearances",
+keywords={"Fashionista","Tabard"},
+description="This guide will walk you through completing the \"Fashionista: Tabard\" Achievement.",
 },[[
 step
 For this achievement, you will need to collect 15 different appearances for the _Tabard_ slot of your character sheet
@@ -4319,14 +4331,15 @@ If you wish to do this, use the Horde Variant of the Fashionista: Tabard guide o
 |tip This achievement is account bound, so any Tabard you obtain will count towards the achievement.
 step
 label "congrats"
-Congratulations, you have earned the Fashionista: Tabard Achievement!
+_Congratulations!_
+You have earned the "Fashionista: Tabard" Achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Collections\\Legion\\The Tangerine Traveler",{
 condition_end="achieved(10770)",
 author="support@zygorguides.com",
 startlevel=100,
 keywords={"Tangerine","Traveler"},
-description="This guide will show you the various locations that you are able to find Pepe wearing Traveler Goggles.",
+description="This guide will walk you through completing the \"The Tangerine Traveler\" Achievement.",
 },[[
 step
 For this guide, you will need to search various locations around Dalaran to find Pepe
@@ -4439,7 +4452,8 @@ Find Traveller Pepe |achieve 10770 |goto 42.65,57.17 |next "end" |or
 Click here if Traveller Pepe isn't here |confirm |next "Loop" |or
 step
 label "end"
-Congratulations, you have earned The Tangerine Traveler Achievement!
+_Congratulations!_
+You have earned "The Tangerine Traveler" Achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Toys\\Legion\\Rocfeather Skyhorn Kite",{
 condition_end="_G.PlayerHasToy(131811)",
@@ -4496,6 +4510,8 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Class Hall
 condition_end="achieved(10994)",
 author="support@zygorguides.com",
 startlevel=110,
+keywords={"A","Glorious","Campaign"},
+description="This guide will walk you through completing the \"A Glorious Campaign\" Achievement.",
 },[[
 step
 For this achievement, you will need to complete an Order Hall Campaign on a single character
@@ -4509,6 +4525,8 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Class Hall
 condition_end="achieved(11135)",
 author="support@zygorguides.com",
 startlevel=110,
+keywords={"A","Heroic","Campaign"},
+description="This guide will walk you through completing the \"A Heroic Campaign\" Achievement.",
 },[[
 step
 For this achievement, you will need to complete the Order Hall Campaigns on _3 different characters_
@@ -4522,6 +4540,8 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Class Hall
 condition_end="achieved(11136)",
 author="support@zygorguides.com",
 startlevel=110,
+keywords={"An","Epic","Campaign"},
+description="This guide will walk you through completing the \"An Epic Campaign\" Achievement.",
 },[[
 step
 For this achievement, you will need to complete the Order Hall Campaigns on _5 different characters_
@@ -4535,6 +4555,8 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Class Hall
 condition_end="achieved(11223)",
 author="support@zygorguides.com",
 startlevel=110,
+keywords={"Legendary","Research"},
+description="This guide will walk you through completing the \"Legendary Research\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to research 6 Upgrades to your Order Hall Advancement
@@ -4554,6 +4576,8 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Class Hall
 condition_end="achieved(11298)",
 author="support@zygorguides.com",
 startlevel=110,
+keywords={"A","Classy","Outfit"},
+description="This guide will walk you through completing the \"A Classy Outfit\" Achievement.",
 },[[
 step
 For this achievement, you will need to complete various Class Order Hall activities as well as Reputation and Dungeon content
@@ -4595,6 +4619,8 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Class Hall
 condition_end="achieved(10746)",
 author="support@zygorguides.com",
 startlevel=110,
+keywords={"Forged","for","Battle"},
+description="This guide will walk you through completing the \"Forged for Battle\" Achievement.",
 },[[
 step
 For this achievement, you will need to complete the Order Campaign
@@ -4609,6 +4635,8 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Class Hall
 condition_end="achieved(11171)",
 author="support@zygorguides.com",
 startlevel=110,
+keywords={"Arsenal","of","Power"},
+description="This guide will walk you through completing the \"Arsenal of Power\" Achievement.",
 },[[
 step
 For this achievement, you will need to unlock each Artifact for your character specializations
@@ -4624,6 +4652,8 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Class Hall
 condition_end="achieved(10461)",
 author="support@zygorguides.com",
 startlevel=110,
+keywords={"Fighting","with","Style","Classic"},
+description="This guide will walk you through completing the \"Fighting with Style: Classic\" Achievement.",
 },[[
 step
 For this, you will need to recover a Pillar of Creation
@@ -4648,6 +4678,8 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Class Hall
 condition_end="achieved(10852)",
 author="support@zygorguides.com",
 startlevel=110,
+keywords={"Artifact","or","Artifiction"},
+description="This guide will walk you through completing the \"Artifact or Artifiction\" Achievement.",
 },[[
 step
 For this, you will need to speak to the "Keeper of the Ancient Tomes" in your Order Hall
@@ -4663,6 +4695,8 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Class Hall
 condition_end="achieved(10853)",
 author="support@zygorguides.com",
 startlevel=110,
+keywords={"Part","of","History"},
+description="This guide will walk you through completing the \"Part of History\" Achievement.",
 },[[
 step
 For this, youwill need to speak to the "Keeper of the Ancient Tomes" in your Order Hall
@@ -4678,6 +4712,8 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Class Hall
 condition_end="achieved(11144)",
 author="support@zygorguides.com",
 startlevel=110,
+keywords={"Power","Realized"},
+description="This guide will walk you through completing the \"Power Realized\" Achievement.",
 },[[
 step
 For this, you will need to unlock every Artifact Trait for a single artifact weapon
@@ -4693,6 +4729,8 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Class Hall
 condition_end="achieved(10459)",
 author="support@zygorguides.com",
 startlevel=110,
+keywords={"Improving","on","History"},
+description="This guide will walk you through completing the \"Improving on History\" Achievement.",
 },[[
 step
 For this, you will need to complete the Balance of Power questline
@@ -4709,6 +4747,8 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Class Hall
 condition_end="achieved(11220)",
 author="support@zygorguides.com",
 startlevel=110,
+keywords={"Roster","of","Champions"},
+description="This guide will walk you through completing the \"Roster of Champions\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to collect the 8 Class Hall Champions
@@ -4723,6 +4763,8 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Class Hall
 condition_end="achieved(11214)",
 author="support@zygorguides.com",
 startlevel=100,
+keywords={"Many","Missions"},
+description="This guide will walk you through completing the \"Many Missions\" Achievement.",
 },[[
 step
 For this, you will need to complete 10 Class Hall Missions found in your Class Hall
@@ -4738,6 +4780,8 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Class Hall
 condition_end="achieved(11215)",
 author="support@zygorguides.com",
 startlevel=100,
+keywords={"Quite","a","Few","Missions"},
+description="This guide will walk you through completing the \"Quite a Few Missions\" Achievement.",
 },[[
 step
 For this, you will need to complete 50 Class Hall Missions found in your Class Hall
@@ -4753,6 +4797,8 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Class Hall
 condition_end="achieved(11216)",
 author="support@zygorguides.com",
 startlevel=100,
+keywords={"So","Many","Missions"},
+description="This guide will walk you through completing the \"So Many Missions\" Achievement.",
 },[[
 step
 For this, you will need to complete 100 Class Hall Missions found in your Class Hall
@@ -4768,6 +4814,8 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Class Hall
 condition_end="achieved(11217)",
 author="support@zygorguides.com",
 startlevel=100,
+keywords={"Many","Many","Missions","Handle","It!"},
+description="This guide will walk you through completing the \"Many Many Missions, Handle It!\" Achievement.",
 },[[
 step
 For this, you will need to complete 500 Class Hall Missions found in your Class Hall
@@ -4783,6 +4831,8 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Class Hall
 condition_end="achieved(10706)",
 author="support@zygorguides.com",
 startlevel=100,
+keywords={"Training","the","Troops"},
+description="This guide will walk you through completing the \"Training the Troops\" Achievement.",
 },[[
 step
 For this, you will need to train 5 Troops in your Class Hall
@@ -4798,6 +4848,8 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Class Hall
 condition_end="achieved(11212)",
 author="support@zygorguides.com",
 startlevel=100,
+keywords={"Raise","an","Army"},
+description="This guide will walk you through completing the \"Raise an Army\" Achievement.",
 },[[
 step
 For this, you will need to train 20 Troops in your Class Hall
@@ -4813,6 +4865,8 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Class Hall
 condition_end="achieved(11213)",
 author="support@zygorguides.com",
 startlevel=100,
+keywords={"Lead","a","Legion"},
+description="This guide will walk you through completing the \"Lead a Legion\" Achievement.",
 },[[
 step
 For this, you will need to train 100 Troops in your Class Hall
@@ -4828,6 +4882,8 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Class Hall
 condition_end="achieved(11218)",
 author="support@zygorguides.com",
 startlevel=110,
+keywords={"There's","a","Boss","In","There"},
+description="This guide will walk you through completing the \"There's a Boss In There\" Achievement.",
 },[[
 step
 For this achievement, you will need access to the Class Hall Mission board
@@ -4845,6 +4901,8 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Class Hall
 condition_end="achieved(11219)",
 author="support@zygorguides.com",
 startlevel=110,
+keywords={"Need","Backup"},
+description="This guide will walk you through completing the \"Need Backup\" Achievement.",
 },[[
 step
 For this achievement, you will need access to the Class Hall Mission board
@@ -4862,6 +4920,8 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Class Hall
 condition_end="achieved(11221)",
 author="support@zygorguides.com",
 startlevel=110,
+keywords={"Champions","Rise"},
+description="This guide will walk you through completing the \"Champions Rise\" Achievement.",
 },[[
 step
 For this achievement, you will need to raise 8 Class Hall Champions to level 110
@@ -4878,45 +4938,44 @@ step
 _Congratulations!_
 You earned the "Champions Rise" achievement.
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\Zoom!",{
+condition_end="achieved(10626)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"Zoom!","Legion"},
+description="This guide will walk you through completing the \"Zoom!\" Achievement.",
+},[[
+step
+Enter the cave |goto Highmountain/0 42.61,25.37 < 20 |walk
+Follow the path |goto Highmountain/31 41.60,60.70 < 15 |walk
+Follow the path |goto 58.91,42.30 < 25 |walk
+Help Zoom win the snail race in Stonedark Grotto |achieve 10626 |goto 71.84,62.00
+|tip You need to block the path of the other snails by standing in front of them.
+|tip Using size-increasing items will help you accomplish this.
+step
+_Congratulations!_
+You earned the "Zoom!" achievement.
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Events\\Legion Brawler's Guild\\King of the Guild",{
 author="support@zygorguides.com",
 condition_end="achieved(11565)",
 achieveid={11558,11560,11563,11565},
-description="Reach rank 8 with the Brawler's Guild.",
+keywords={"King","of","the","Guild"},
+description="This guide will walk you through completing the \"King of the Guild\" Achievement.",
 },[[
 step
-First you will need to gain access to the Brawler's Guild
-kill Helarjar Priest##111326+, Helarjar Mystcaller##111325+, Helarjar Soulhunter##111328+
-|tip Kill any and all of the elite mobs on this island.
-|tip You may need a group to accomplish this.
-collect 1 Blood-Soaked Invitation##144363 |goto Stormheim/0 85.32,11.34 |n
-click Blood-Soaked Invitation##144363 |use Blood-Soaked Invitation##144363
-Earn the Achievement "The First Rule of Brawler's Guild" |achieve 11558
+For this, you will need to unlock the Legion Brawler Guild
+Click here to load the Legion Brawler's Guild guide |confirm |next "Zygor's Alliance Events Guides\\Brawler's Guild\\Legion Brawler's Guild"
+Reach Rank 8 in Bizmo's Brawlpub |achieve 11566
 step
-_Now win your first brawl!_
-talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_ |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
-When Oso begins casting _Shotgun Blast_ move out from in front of him
-He may occasionally knock you back and then cast _Grizzly Leap_ run out of this circle
-only if ZGV:GetReputation(2011).friendRep<250
-step
-When Oso begins casting _Shotgun Blast_ move out from in front of him
-He may occasionally knock you back and then cast _Grizzly Leap_ run out of this circle
-Defeat Oso |achieve 11560
-step
-Continue talking to Bizmo's Brawlpub Bouncer and fight your way through the bosses to get to rank 4
-Look at our Legion Brawler's Guild guide for boss fight strats
-Earn the Achievement "The Second Rule of Brawler's Guild" |achieve 11563
-step
-Continue talking to Bizmo's Brawlpub Bouncer and fight your way through the bosses to get to rank 8
-Look at our Legion Brawler's Guild guide for boss fight strats
-Congratulations you are now Rank 8 in the new Brawler's Guild!
-Earn the Achievement "King of the Guild" |achieve 11565
+_Congratulations!_
+You have earned the "King of the Guild" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Events\\Legion Brawler's Guild\\I Am Thrall's Complete Lack Of Surprise",{
 author="support@zygorguides.com",
 condition_end="achieved(11572)",
-description="Defeat 10 bosses using random brawl mode",
+keywords={"I","Am","Thrall's","Complete","Lack","Of","Surprise"},
+description="This guide will walk you through completing the \"I Am Thrall's Complete Lack of Surprise\" Achievement.",
 },[[
 step
 You will first need to activate Random Boss mode in the Brawler's Guild
@@ -4940,11 +4999,15 @@ step
 label "Fight"
 Once inside the arena you will match against any boss from this Brawler's Guild, from 4 special bosses, or from any bosses from previous Brawler's Guild
 Defeat 10 Random Brawler Bosses |achieve 11572
+step
+_Congratulations!_
+You have earned the "I Am Thrall's Complete Lack Of Surprise" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Events\\Legion Brawler's Guild\\Rumble Club",{
 author="support@zygorguides.com",
 condition_end="achieved(11573)",
-description="Defeat all rumbles in the Brawler's Guild",
+keywords={"Rumble","Club"},
+description="This guide will walk you through completing the \"Rumble Club\" Achievement.",
 },[[
 step
 To earn this achievement you will need to activate and defeat 7 Rumbles.
@@ -5026,22 +5089,28 @@ The lower hp he gets the more damage he does.
 |tip Save your stuns and slows for when he gets to lower hp.
 Defeat Mazhareen |achieve 11573/1
 step
-Congratulations you have earned the Rumble Club achievement! |achieve 11573
+_Congratulations!_
+You have earned the "Rumble Club" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Events\\Legion Brawler's Guild\\You Are Not The Contents Of Your Wallet",{
 author="support@zygorguides.com",
 condition_end="achieved(11567)",
-description="Obtain 20,000 Brawler's Gold",
+keywords={"You","Are","Not","The","Contents","Of","Your","Wallet"},
+description="This guide will walk you through completing the \"You Are Not The Contents Of Your Wallet\" Achievement.",
 },[[
 step
 To earn this achievement you will need to obtain 20,000 Brawler's Gold
 |tip These can be obtained by successfully completing any Brawler's Guild fight.
 collect 20,000 Brawler's Gold##1299 |achieve 11567
+step
+_Congratulations!_
+You have earned the "You Are Not The Contents Of Your Wallet" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Events\\Legion Brawler's Guild\\Educated Guesser",{
 author="support@zygorguides.com",
 condition_end="achieved(11570)",
-description="Obtain 10 stacks of vested interest in the Brawler's Guild",
+keywords={"Educated","Guesser"},
+description="This guide will walk you through completing the \"Educated Guesser\" Achievement.",
 },[[
 step
 You will first need to activate A Game Of Chance mode in the Brawler's Guild
@@ -5066,5 +5135,688 @@ You must guess correctly 10 times in a row
 |tip You can choose not to vote on any round you want without losing your stacks.
 |tip You have about 10 seconds after a fight starts to vote for either the monster or the hero.
 |achieve 11570
+step
+_Congratulations!_
+You have earned the "Educated Guesser" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Raid\\Legion\\Unleashed Monstrosities",{
+condition_end="achieved(11160)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Unleashed","Monstrosities"},
+description="This guide will walk you through completing the \"Unleashed Monstrosities\" Achievement.",
+},[[
+step
+For this, you will need to kill _8 of the 11 World Bosses_ that spawn weekly
+You will only be able to get credit for a boss if the "World Quest" for it is currently active
+Click here to load the Unlock World Quests guide |confirm |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests Unlock Quest Line"
+Click here to load the World Quests Guide |confirm |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests"
+Here is your progress:
+Na'zak the Fiend |achieve 11160/1 |or 8
+Nithogg |achieve 11160/2 |or 8
+Humongris |achieve 11160/3 |or 8
+Flotsam |achieve 11160/4 |or 8
+Ana-Mouz |achieve 11160/5 |or 8
+Levantus |achieve 11160/6 |or 8
+Drugon the Frostblood |achieve 11160/7 |or 8
+The Soultakers |achieve 11160/8 |or 8
+Calamir |achieve 11160/9 |or 8
+Shar'thos |achieve 11160/10 |or 8
+Withered J'im |achieve 11160/11 |or 8
+step
+_Congratulations!_
+You have earned the "Unleashed Monstrosities" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Raid\\Legion\\Darkbough",{
+condition_end="achieved(10818)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Darkbough"},
+description="This guide will walk you through completing the \"Darkbough\" Achievement.",
+},[[
+step
+For this, you will need to defeat Xavius in the Emerald Nightmare
+Press "I" and select "Raid Finder"
+Under "The Emerald NIghtmare" tab, select the _Darkbough_ and queue for it
+Defeat the following bosses within the clutches of The Emerald Nightmare:
+Nythendra |achieve 10818/1
+Elerethe Renferal |achieve 10818/2
+Il'gynoth, the Heart of Corruption |achieve 10818/3
+step
+_Congratulations!_
+You have earned the "Darkbough" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Raid\\Legion\\Tormented Guardians",{
+condition_end="achieved(10819)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Tormented","Guardians"},
+description="This guide will walk you through completing the \"Tormented Guardians\" Achievement.",
+},[[
+step
+For this, you will need to defeat Xavius in the Emerald Nightmare
+Press "I" and select "Raid Finder"
+Under "The Emerald NIghtmare" tab, select the _Tormented Guardians_ and queue for it
+Defeat the following bosses within the clutches of The Emerald Nightmare:
+Ursoc |achieve 10819/1
+Dragons of Nightmare |achieve 10819/2
+Cenarius |achieve 10819/3
+step
+_Congratulations!_
+You have earned the "Tormented Guardians" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Raid\\Legion\\Rift of Aln",{
+condition_end="achieved(10820)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Rift","of","Aln"},
+description="This guide will walk you through completing the \"Rift of Aln\" Achievement.",
+},[[
+step
+For this, you will need to defeat Xavius in the Emerald Nightmare
+Press "I" and select "Raid Finder"
+Under "The Emerald NIghtmare" tab, select the _Rift of Aln_ and queue for it
+Defeat Xavius in The Emerald Nightmare |achieve 10820
+step
+_Congratulations!_
+You have earned the "Rift of Aln" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Raid\\Legion\\Mythic: Nythendra",{
+condition_end="achieved(10821)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Mythic","Nythendra"},
+description="This guide will walk you through completing the \"Mythic: Nythendra\" Achievement.",
+},[[
+step
+|achieve 10821
+step
+_Congratulations!_
+You have earned the "Mythic: Nythendra" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Raid\\Legion\\Mythic: Elerethe Renferal",{
+condition_end="achieved(10822)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Elerethe","Renferal"},
+description="This guide will walk you through completing the \"Mythic: Elerethe Renferal\" Achievement.",
+},[[
+step
+|achieve 10822
+step
+_Congratulations!_
+You have earned the "Mythic: Elerethe Renferal" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Raid\\Legion\\Mythic: Il'gynoth",{
+condition_end="achieved(10823)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Mythic","Il'gynoth"},
+description="This guide will walk you through completing the \"Mythic: Il'gynoth\" Achievement.",
+},[[
+step
+|achieve 10823
+step
+_Congratulations!_
+You have earned the "Mythic: Il'gynoth" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Raid\\Legion\\Mythic: Ursoc",{
+condition_end="achieved(10824)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Mythic","Ursoc"},
+description="This guide will walk you through completing the \"Mythic: Ursoc\" Achievement.",
+},[[
+step
+|achieve 10824
+step
+_Congratulations!_
+You have earned the "Mythic: Ursoc" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Raid\\Legion\\Mythic: Dragons of Nightmare",{
+condition_end="achieved(10825)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Mythic","Dragons","of","Nightmare"},
+description="This guide will walk you through completing the \"Mythic: Dragons of Nightmare\" Achievement.",
+},[[
+step
+|achieve 10825
+step
+_Congratulations!_
+You have earned the "Mythic: Dragons of Nightmare" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Raid\\Legion\\Mythic: Cenarius",{
+condition_end="achieved(10826)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Mythic","Cenarius"},
+description="This guide will walk you through completing the \"Mythic: Cenarius\" Achievement.",
+},[[
+step
+|achieve 10826
+step
+_Congratulations!_
+You have earned the "Mythic: Cenarius" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Raid\\Legion\\Mythic: Xavius",{
+condition_end="achieved(10827)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Mythic","Xavius"},
+description="This guide will walk you through completing the \"Mythic: Xavius\" Achievement.",
+},[[
+step
+|achieve 10827
+step
+_Congratulations!_
+You have earned the "Mythic: Xavius" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Raid\\Legion\\Buggy Fight",{
+condition_end="achieved(10555)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Buggy","Fight"},
+description="This guide will walk you through completing the \"Buggy Fight\" Achievement.",
+},[[
+step
+For this, you will need to kill 15 Glow Bugs
+They spawn during _"Heart of the Swarm"_
+Each time Nythendra casts Heart of the Swarm, 4 to 5 Glow Bug will spawn
+It will take 3 to 4 Phases of Heart of the Swarm to kill the amount of Glow Bugs required
+After about 3 to 4 phases, kill Nythendra
+Defeat Nythendra in The Emerald Nightmare after squishing 15 Glow Bugs on Normal difficulty or higher |achieve 10555
+|tip Achievement tracking seems to be bugged at the moment, so don't rely on that telling you how many you've killed.
+step
+_Congratulations!_
+You have earned the "Buggy Fight" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Raid\\Legion\\Webbing Crashers",{
+condition_end="achieved(10771)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Webbing","Crashers"},
+description="This guide will walk you through completing the \"Webbing Crashers\" Achievement.",
+},[[
+step
+For this, you will need to destroy 7 Pulsing Egg Sacs before killing Elerethe Renferal
+_Before the boss encounter:_
+Mark out the 7 glowing egg sacks inside of the boss room
+4 of the egg sacks are only reachable with the wings buff provided during the transition phase of the encounter
+Pop the two eggs sacks on the bridge
+Pop the egg behind the boss when you begin the encounter
+Assign 4 players to pop the unreachable egg sacks during the transition
+Once all 7 have been popped, kill the boss
+Defeat Elerethe Renferal in The Emerald Nightmare after destroying all her Pulsing Egg Sacs during the encounter on Normal difficulty or higher |achieve 10771
+step
+_Congratulations!_
+You have earned the "Webbing Crashers" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Raid\\Legion\\Scare Bear",{
+condition_end="achieved(10753)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Scare","Bear"},
+description="This guide will walk you through completing the \"Scare Bear\" Achievement.",
+},[[
+step
+Before the Ursoc encounter, kill the trash to the right hand side before entering the boss room
+Right click on the friendly npc Tur Ragepaw
+Healers should set Tur as their focus and ensure to keep him healed during the ecounter
+Defeat Ursoc in The Emerald Nightmare while keeping Tur Ragepaw alive on Normal difficulty or higher |achieve 10753
+step
+_Congratulations!_
+You have earned the "Scare Bear" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Raid\\Legion\\Took the Red Eye Down",{
+condition_end="achieved(10830)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Took","Red","Eye","Down"},
+description="This guide will walk you through completing the \"Took the Red Eye Down\" Achievement.",
+},[[
+step
+The achievement is completed in phase 1
+Kill everything that _"is not a Nightmare Icor"_
+|tip Nightmare Ichor spawn after you kill the horror and tentacles.
+Use CC to kite the red Icor in a big circle
+Gather 20+ Ichors
+When ready, take the Nightmare Icor underneath the Eye of il'gynoth
+_Kill the Nightmare Ichors while they are underneath the eye_
+Defeat Il'gynoth in The Emerald Nightmare after inflicting 20 Nightmare Explosions on the Eye of Il'gynoth within 10 seconds on Normal difficulty or higher |achieve 10830
+step
+_Congratulations!_
+You have earned the "Took the Red Eye Down" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Raid\\Legion\\Imagined Dragons World Tour",{
+condition_end="achieved(10663)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Imagined","Dragons","World","Tour"},
+description="This guide will walk you through completing the \"Imagined Dragons World Tour\" Achievement.",
+},[[
+step
+Split your raid into 2 groups with at least a tank and heals in each group
+Have "Group A" Engage the boss
+Tank the two dragons together
+Face them towards the raid so the ranged dps don't get stacks
+_
+While mounted, have "Group B" go through each of the 4 portals and pick up all of the buffs
+Once "Group B" has their 4 buffs, swap with group A while group B walks and picks up their 4 buffs
+Kill the boss after both groups have the buffs
+Defeat Ysondre in The Emerald Nightmare while all members of the raid have Dream Essences from all four gateway locations on Normal difficulty or higher |achieve 10663
+step
+_Congratulations!_
+You have earned the "Imagined Dragons World Tour" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Raid\\Legion\\Use the Force(s)",{
+condition_end="achieved(10772)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Use","the","Force(s)"},
+description="This guide will walk you through completing the \"Use the Force(s)\" Achievement.",
+},[[
+step
+There will be a cleansing light during the Cenarius encounter at the 4 corners of the room
+To earn credit, do not enter the light to cleanse whichever force you need
+Dryad Uncleansed |achieve 10772/1
+|tip Dryads are in the South West when looking at the map.
+Treants Uncleansed |achieve 10772/2
+|tip Treants are in the South East when looking at the map.
+Wisps Uncleansed |achieve 10772/3
+|tip Wisps are in the North East when looking at the map.
+Drakes Uncleansed |achieve 10772/4
+|tip Drakes are in the North West when looking at the map.
+step
+_Congratulations!_
+You have earned the "Use the Force(s)" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Raid\\Legion\\I Attack the Darkness",{
+condition_end="achieved(10755)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"I","Attack","the","Darkness"},
+description="This guide will walk you through completing the \"I Attack the Darkness\" Achievement.",
+},[[
+step
+For this, you must kill a creature in the dark for each of the three phases
+"First Phase" is 100-65%
+"Second Phase" is 65%-30%
+"Third Phase" is below 30%
+To find them, Use a _Demon Hunters "Spectral Sight"_ to find the creature, then hit them with a "Glaive Toss"
+Defeat 3 Creatures in the Dark |achieve 10755/1
+Defeat Xavius |achieve 10755/2
+step
+_Congratulations!_
+You have earned the "I Attack the Darkness" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Raid\\Legion\\Trial of Valor",{
+condition_end="achieved(11394)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Trial","of","Valor"},
+description="This guide will walk you through completing the \"Trial of Valor\" Achievement.",
+},[[
+step
+For this, defeat the following bosses in the Trials of Valor raid:
+Odyn |achieve 11394/1
+Guarm |achieve 11394/2
+Helya |achieve 11394/3
+step
+_Congratulations!_
+You have earned the "Trial of Valor" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Raid\\Legion\\Mythic: Odyn",{
+condition_end="achieved(11396)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Mythic","Odyn"},
+description="This guide will walk you through completing the \"Mythic: Odyn\" Achievement.",
+},[[
+step
+|achieve 11396
+step
+_Congratulations!_
+You have earned the "Mythic: Odyn" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Raid\\Legion\\Mythic: Guarm",{
+condition_end="achieved(11397)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Mythic","Guarm"},
+description="This guide will walk you through completing the \"Mythic: Guarm\" Achievement.",
+},[[
+step
+|achieve 11397
+step
+_Congratulations!_
+You have earned the "Mythic: Guarm" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Raid\\Legion\\Mythic: Helya",{
+condition_end="achieved(11398)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Mythic","Helya"},
+description="This guide will walk you through completing the \"Mythic: Helya\" Achievement.",
+},[[
+step
+|achieve 11398
+step
+_Congratulations!_
+You have earned the "Mythic: Helya" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Raid\\Legion\\You Ruined Everything!",{
+condition_end="achieved(11337)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"You","Ruined","Everything!"},
+description="This guide will walk you through completing the \"You Ruined Everything!\" Achievement.",
+},[[
+step
+This achievement takes place during Phase 2 of the Odyn encounter
+Wait for the "Draw Power" ability
+Watch the Runes on the floor, as they will shine one after another in a random order
+_Kill the add in the order that the Runes lit up_
+You will get the "Runic Mastery" debuff if done correctly
+_You CANNOT die or you won't get the achievement!_
+Defeat Odyn in the Trial of Valor after gaining Runic Mastery on Normal difficulty or higher|achieve 11337
+step
+_Congratulations!_
+You have earned the "You Ruined Everything!" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Raid\\Legion\\Boneafide Tri Tip",{
+condition_end="achieved(11386)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Boneafide","Tri","Tip"},
+description="This guide will walk you through completing the \"Boneafide Tri Tip\" Achievement.",
+},[[
+step
+_Do NOT cast spells, touch the boss, get hit by "Off the Leash", get run over by headlong charge or die while holding the bone!_
+Designate 3 players in your raid to pick up the bone
+Move the bone to the center lane
+|tip The toy is on the ground behind Guarm.
+Tank moves to the bridge with the designated chew toy player
+After the first "Flashing Fangs", turn the boss to face the player with the bone
+When the charge happens, the first player holding the bone will drop it
+The tank will then turn the boss facing away from the raid again
+Before the next "Flashing Fangs", the second player should pick up the bone
+Absorb the next breath
+Have the third player pick up the bone and wait for "Flashing Fangs"
+Absorb the last breath, then kill the boss
+Defeat Guarm after taking his Chew Toy into all three Guardian's Breaths in Trial of Valor on Normal difficulty or higher |achieve 11386
+step
+_Congratulations!_
+You have earned the "Boneafide Tri Tip" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Raid\\Legion\\Patient Zero",{
+condition_end="achieved(11377)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Patient","Zero"},
+description="This guide will walk you through completing the \"Patient Zero\" Achievement.",
+},[[
+step
+For this, you will need to reach Phase 2 _"Without anyone in your raid dieing"_
+You will need to reset the encounter if someone dies before then
+_
+Send a healer and a damage dealer away from the group
+Have them bounce the debuff between themselves until the boss is nearly dead
+Once near the end of the encounter, gather the raid and dispel the debuff
+Dispel as many times as needed, infecting all but one raid member
+Defeat Helya while all raid members but one are afflicted with Fetid Rot, in Trial of Valor on Normal difficulty or higher |achieve 11377
+step
+_Congratulations!_
+You have earned the "Patient Zero" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Allinace Achievement Guides\\Raid\\Legion\\The Chosen",{
+condition_end="achieved(11387)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"The","Chosen"},
+description="This guide will walk you through completing the \"The Chosen\" Achievement.",
+},[[
+step
+For this, you need to clear the Trial of Valor on Mythic Difficulty _"without dying"_
+Since this is a personal achievement, be sure to bring potions, or to use a way to drop aggro if a wipe is incoming
+Defeat Helya in Trial of Valor on Mythic difficulty without failing the Test of the Chosen |achieve 11387
+step
+_Congratulations!_
+You have earned the "The Chosen" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Allinace Achievement Guides\\Raid\\Legion\\Arcing Aqueducts",{
+condition_end="achieved(10829)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Arcing","Aqueducts"},
+description="This guide will walk you through completing the \"Arcing Aqueducts\" Achievement.",
+},[[
+step
+This achievement is earned by killing the first 3 bosses in The Nighthold
+Skorpyron |achieve 10829/1
+Trilliax |achieve 10829/2
+Chronomatic Anomaly |achieve 10829/3
+step
+_Congratulations!_
+You have earned the "Arcing Aqueducts" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Allinace Achievement Guides\\Raid\\Legion\\Royal Athenaeum",{
+condition_end="achieved(10837)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Royal","Athenaeum"},
+description="This guide will walk you through completing the \"Royal Athenaeum\" Achievement.",
+},[[
+step
+These bosses can be reached only after defeating Skorpyron, Trilliax and Chronomatic Anomaly
+Kill the following bosses for the achievement:
+Spellblade Aluriel |achieve 10837/1
+Star Augur Etraeus |achieve 10837/2
+High Botanist Tel'arn |achieve 10837/3
+step
+_Congratulations!_
+You have earned the "Royal Athenaeum" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Allinace Achievement Guides\\Raid\\Legion\\Nightspire",{
+condition_end="achieved(10838)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Nightspire"},
+description="This guide will walk you through completing the \"Nightspire\" Achievement.",
+},[[
+step
+These bosses can be reached only after defeating Skorpyron, Trilliax and Chronomatic Anomaly
+Kill the following bosses for the achievement:
+Krosus |achieve 10838/1
+Tichondrius |achieve 10838/2
+Grand Magistrix Elisande |achieve 10838/3
+step
+_Congratulations!_
+You have earned the "Nightspire" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Allinace Achievement Guides\\Raid\\Legion\\Betrayer's Rise",{
+condition_end="achieved(10839)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Betrayer's","Rise"},
+description="This guide will walk you through completing the \"Betrayer's Rise\" Achievement.",
+},[[
+step
+This is the final boss in the Nighthold
+That said, you will need to have killed the other bosses before reaching Gul'dan
+Defeat Gul'dan atop the Nighthold |achieve 10839/1
+step
+_Congratulations!_
+You have earned the "Betrayer's Rise" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Allinace Achievement Guides\\Raid\\Legion\\Mythic: Skorpyron",{
+condition_end="achieved(10840)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Mythic","Skorpyron"},
+description="This guide will walk you through completing the \"Mythic: \" Achievement.",
+},[[
+step
+Defeat Skorpyron in The Nighthold on Mythic difficulty |achieve 10840
+step
+_Congratulations!_
+You have earned the "Mythic: Skorpyron" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Allinace Achievement Guides\\Raid\\Legion\\Mythic: Chronomatic Anomaly",{
+condition_end="achieved(10842)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Mythic","Chronomatic","Anomaly"},
+description="This guide will walk you through completing the \"Mythic: Chronomatic Anomaly\" Achievement.",
+},[[
+step
+Defeat Chronomatic Anomaly in The Nighthold on Mythic difficulty |achieve 10842
+step
+_Congratulations!_
+You have earned the "Mythic: Chronomatic Anomaly" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Allinace Achievement Guides\\Raid\\Legion\\Mythic: Trilliax",{
+condition_end="achieved(10843)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Mythic","Trilliax"},
+description="This guide will walk you through completing the \"Mythic: Trilliax\" Achievement.",
+},[[
+step
+Defeat Trilliax in The Nighthold on Mythic difficulty |achieve 10843
+step
+_Congratulations!_
+You have earned the "Mythic: Trilliax" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Allinace Achievement Guides\\Raid\\Legion\\Mythic: Spellblade Aluriel",{
+condition_end="achieved(10844)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Mythic","Spellblade","Aluriel"},
+description="This guide will walk you through completing the \"Mythic: Spellblade Aluriel\" Achievement.",
+},[[
+step
+Defeat Spellblade Aluriel in The Nighthold on Mythic difficulty |achieve 10844
+step
+_Congratulations!_
+You have earned the "Mythic: Spellblade Aluriel" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Allinace Achievement Guides\\Raid\\Legion\\Mythic: Star Augur Etraeus",{
+condition_end="achieved(10845)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Mythic","Star","Augur","Etraeus"},
+description="This guide will walk you through completing the \"Mythic: \" Achievement.",
+},[[
+step
+Defeat Star Augur Etraeus in The Nighthold on Mythic difficulty |achieve 10845
+step
+_Congratulations!_
+You have earned the "Mythic: Star Augur Etraeus" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Allinace Achievement Guides\\Raid\\Legion\\Mythic: High Botanist Tel'arn",{
+condition_end="achieved(10846)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Mythic","High","Botanist","Tel'arn"},
+description="This guide will walk you through completing the \"Mythic: High Botanist Tel'arn\" Achievement.",
+},[[
+step
+Defeat High Botanist Tel'arn in The Nighthold on Mythic difficulty |achieve 10846
+step
+_Congratulations!_
+You have earned the "Mythic: High Botanist Tel'arn" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Allinace Achievement Guides\\Raid\\Legion\\Mythic: Tichondrius",{
+condition_end="achieved(10847)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Mythic","Tichondrius"},
+description="This guide will walk you through completing the \"Mythic: Tichondrius\" Achievement.",
+},[[
+step
+Defeat Tichondrius in The Nighthold on Mythic difficulty |achieve 10847
+step
+_Congratulations!_
+You have earned the "Mythic: Tichondrius" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Allinace Achievement Guides\\Raid\\Legion\\Mythic: Krosus",{
+condition_end="achieved(10848)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Mythic","Krosus"},
+description="This guide will walk you through completing the \"Mythic: Krosus\" Achievement.",
+},[[
+step
+Defeat Krosus in The Nighthold on Mythic difficulty |achieve 10848
+step
+_Congratulations!_
+You have earned the "Mythic: Krosus" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Allinace Achievement Guides\\Raid\\Legion\\Mythic: Grand Magistrix Elisande",{
+condition_end="achieved(10849)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Mythic","Grand","Magistrix","Elisande"},
+description="This guide will walk you through completing the \"Mythic: Grand Magistrix Elisande\" Achievement.",
+},[[
+step
+Defeat Grand Magistrix Elisande in The Nighthold on Mythic difficulty |achieve 10849
+step
+_Congratulations!_
+You have earned the "Mythic: Grand Magistrix Elisande" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Allinace Achievement Guides\\Raid\\Legion\\Mythic: Gul'dan",{
+condition_end="achieved(11192)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Mythic","Gul'dan"},
+description="This guide will walk you through completing the \"Mythic: Gul'dan\" Achievement.",
+},[[
+step
+Defeat Gul'dan in The Nighthold on Mythic difficulty, before the opening of the Tomb of Sargeras |achieve 11192
+step
+_Congratulations!_
+You have earned the "Mythic: Gul'dan" Achievement.
 ]])
 ZGV.BETAEND()

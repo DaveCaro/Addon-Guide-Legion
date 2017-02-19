@@ -517,7 +517,15 @@ local ConditionEnv = {
 	flying = IsFlying,
 	knowstaxi = function(name)
 		return ZGV.db.char.taxis[name]	
-	end
+	end,
+	exists = function()
+		local goal = Parser.ConditionEnv.goal
+		local quid = goal.questid
+		if not quid then return false end
+		local q = ZGV.Localizers:GetQuestData(quid)
+		return q
+	end,
+
 }
 Parser.ConditionEnv=ConditionEnv  --DEBUG
 

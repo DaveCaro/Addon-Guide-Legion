@@ -1,16 +1,23 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/">	
 
-
-
 	<Script file="..\DugisGuide_Ach_Legion\A_Glorious_Campaign.lua"/>
 	<Script file="..\DugisGuide_Ach_Legion\Broken_Isles_Pathfinder_Part_One.lua"/>
 
+	<Script file="..\DugisGuide_Ach_Legion\Adventurer_of_Azsuna.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Adventurer_of_Highmountain.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Adventurer_of_Stormheim.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Adventurer_of_Suramar.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Adventurer_of_Valsharah.lua"/>
+	
 	<Script file="..\DugisGuide_Ach_Legion\Broken_Isles_Explorer.lua"/>
 	<Script file="..\DugisGuide_Ach_Legion\Explore_Azsuna.lua"/>
 	<Script file="..\DugisGuide_Ach_Legion\Explore_Highmountain.lua"/>
 	<Script file="..\DugisGuide_Ach_Legion\Explore_Stormheim.lua"/>
 	<Script file="..\DugisGuide_Ach_Legion\Explore_Suramar.lua"/>
 	<Script file="..\DugisGuide_Ach_Legion\Explore_Valsharah.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Going_Up.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Higher_Dimensional_Learning.lua"/>	
+	<Script file="..\DugisGuide_Ach_Legion\Underbelly_Tycoon.lua"/>
 	
 	<Script file="..\DugisGuide_Ach_Legion\A_Cast_Above_the_Rest.lua"/>
 	<Script file="..\DugisGuide_Ach_Legion\Bigger_Fish_to_Fry.lua"/>	
@@ -29,7 +36,11 @@
 	<Script file="..\DugisGuide_Ach_Legion\Aint_No_Mountain.lua"/>
 	<Script file="..\DugisGuide_Ach_Legion\Azuna_Matata.lua"/>
 	<Script file="..\DugisGuide_Ach_Legion\Good_Suramaritan.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Harbinger.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Hatchling_of_the_Talon.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Lock_Stock.lua"/>
 	<Script file="..\DugisGuide_Ach_Legion\Thats_Valsharah_Folks.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Tehd_Marius_Excellent_Adventure.lua"/>	
 	<Script file="..\DugisGuide_Ach_Legion\Vrykul_Story_Bro.lua"/>
 	<Script file="..\DugisGuide_Ach_Legion\What_a_Ripoff.lua"/>
 	<Script file="..\DugisGuide_Ach_Legion\Why_Cant_I_Hold.lua"/>	

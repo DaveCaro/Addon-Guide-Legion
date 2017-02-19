@@ -699,24 +699,22 @@ local function EventHandler(self, event, ...)
 	if event=="ZYGOR_POI_REGISTERED_WAYS" then Poi:DisplayPois("forceRefresh") end
 	if event=="WORLD_MAP_UPDATE" then Poi:DisplayPois() end
 
-	if ZGV.Poi.ActivePoiStepNum then	
-		if event=="QUEST_LOG_UPDATE" 
-		or event=="LOOT_READY" 
-		or event=="LOOT_SLOT_CLEARED" 
-		or event=="LOOT_CLOSED" 
-		or event=="ENCOUNTER_LOOT_RECEIVED" 
-		or event=="CHAT_MSG_CURRENCY" then 
-			ZGV:ScheduleTimer(function() 
-				Poi:RefreshMapIcons() 
-				Poi:GetListOfPois()
-				ZGV:UpdateFrame(true)
-			end,0)
-			ZGV:ScheduleTimer(function() 
-				Poi:RefreshMapIcons() 
-				Poi:GetListOfPois()
-				ZGV:UpdateFrame(true)
-			end,2)
-		end
+	if event=="QUEST_LOG_UPDATE" 
+	or event=="LOOT_READY" 
+	or event=="LOOT_SLOT_CLEARED" 
+	or event=="LOOT_CLOSED" 
+	or event=="ENCOUNTER_LOOT_RECEIVED" 
+	or event=="CHAT_MSG_CURRENCY" then 
+		ZGV:ScheduleTimer(function() 
+			Poi:GetListOfPois()
+			ZGV:UpdateFrame(true)
+			Poi:RefreshMapIcons() 
+		end,0)
+		ZGV:ScheduleTimer(function() 
+			Poi:GetListOfPois()
+			ZGV:UpdateFrame(true)
+			Poi:RefreshMapIcons() 
+		end,0.5)
 	end
 end
 

@@ -397,6 +397,13 @@ kill Jade Darkhaven##34914 |q 44190/1 |goto 40.30,76.57
 |tip He is all the way at the top of the tower.
 |next "Court_Of_Farondis_WQ"
 step
+label quest-43798
+accept DANGER: Kosumoth the Hungering##43798 |goto Eye of Azshara Map/0 46.46,50.10
+|tip You will accept this quest automatically.
+step
+kill Kosumoth the Hungering##111573 |q 43798/1 |goto 46.46,50.10
+|next "Court_Of_Farondis_WQ"
+step
 label quest-44192
 Follow the path up |goto Azsuna/0 46.90,73.13 < 20 |only if walking
 Follow the path up |goto Azsuna/0 44.24,75.43 < 20 |only if walking
@@ -1360,6 +1367,20 @@ step
 Use the Call Scalewarden ability
 |tip It appears as a button on the screen.
 Destroy the Felblaze Portal |q 42160/1 |count 4 |goto 67.56,29.58
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41663
+Follow the path up |goto Azsuna/0 45.44,42.33 < 20 |only if walking
+accept Vantus Rune Work Order: Elerethe Renferal##41663 |goto 46.91,41.43
+|tip You will accept this quest automatically.
+step
+Open Your Inscription Crafting Panel:
+_<Create 1 Vantus Rune: Elerethe Renferal>_
+collect 1 Vantus Rune: Elerethe Renferal##128992
+|tip You can purchase one of these from the Auction House if you don't have the technique.
+step
+talk Veridis Fallon##107376
+turnin Vantus Rune Work Order: Elerethe Renferal##41663 |goto 46.90,41.44
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42636
@@ -2340,6 +2361,19 @@ clicknpc Sylvan Owl##106372+
 Save #5# Sylvan Owls |q 42124/1 |goto 49.99,75.98
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41613
+Follow the path |goto Val'sharah/0 55.75,56.73 < 25 |only if walking
+Follow the path |goto 53.29,50.25 < 25 |only if walking
+Follow the path |goto 52.03,43.84 < 25 |only if walking
+Follow the path |goto 46.64,38.67 < 25 |only if walking
+Follow the path |goto 44.41,39.89 < 25 |only if walking
+accept Huge Mossgill Perch##41613 |goto 42.86,38.05
+|tip You will accept this quest automatically.
+step
+Fish from the Huge Mossgill Perch School |cast Fishing##131474
+collect 10 Huge Mossgill Perch##134568 |q 41613/1 |goto 42.86,38.05
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42028
 Follow the path |goto Val'sharah/0 56.07,58.93 < 30 |only if walking
 Follow the path |goto 57.31,64.02 < 30 |only if walking
@@ -2404,10 +2438,11 @@ step
 label quest-45047
 Follow the path |goto Val'sharah/0 43.12,59.03 < 20 |only if walking
 Follow the path |goto 47.92,53.89 < 30 |only if walking
-accept Like the Wind##45047
+accept Like the Wind##45047 |goto 47.15,51.07
 |tip You will accept this quest automatically.
 step
-Goal Reached |q 45047/1 |goto 40.61,62.29
+Talk to Archmage Kesalon |q 45047/1 |goto 47.15,51.07
+Goal Reached |q 45047/2 |goto 40.61,62.29
 |tip To reach the goal, you must use the crystals to increase your vertical elevation.
 |tip Purple orbs will instantly reset your dash cooldown.
 |tip Avoid orange orbs, as they will stun you.
@@ -2720,6 +2755,18 @@ accept Slab of Bacon##41553 |goto Val'sharah/0 68.54,59.34
 step
 kill Well-Fed Bear##103785
 collect Thick Slab of Bacon##135511 |q 41553/1 |goto Val'sharah/0 69.23,59.39
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41554
+Follow the path |goto Val'sharah/0 55.75,56.73 < 25 |only if walking
+Follow the path |goto 54.81,51.86 < 25 |only if walking
+Follow the path |goto 53.31,50.26 < 25 |only if walking
+Follow the path down |goto 50.65,49.28 < 25 |only if walking
+accept Slab of Bacon##41554 |goto 49.28,46.73
+|tip You will accept this quest automatically.
+step
+kill Well-Fed Bear##103785
+collect 1 Thick Slab of Bacon##135511 |q 41554/1 |goto 49.28,46.73
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42779
@@ -3512,6 +3559,15 @@ step
 kill Clackbrine Matron##104590+, Clackbrine Snapper##104582+, Clackbrine Pincer##104589+
 Clackbrine Clean-up |q 41706/1 |goto 51.69,11.48
 |tip Use the abilities on your hotbar to complete the objective.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41233
+accept Bristled Bear Skin##41233 |goto Highmountain/0 37.24,43.07
+|tip You will accept this quest automatically.
+step
+kill Boilback Bristlefur##102361+, Bristlefur Bear##96146+, Insatiable Bristlefur##99571+
+|tip Skin the corpses.
+collect 12 Bristled Bear Skin##134131 |q 41233/1 |goto 37.24,43.07
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41526
@@ -5202,16 +5258,20 @@ Tell him "Let's do battle!"
 Defeat Andurs |q 41935/1 |goto Stormheim/0 62.18,52.03
 |next "Court_Of_Farondis_WQ"
 step
-label quest-42861
-Follow the path |goto Stormheim/0 34.32,49.08 < 20 |only if walking
-Follow the path |goto 37.59,44.84 < 25 |only if walking
-Follow the path |goto 32.78,42.44 < 25 |only if walking
-Follow the path |goto 35.57,37.79 < 25 |only if walking
-Follow the path |goto 33.39,32.32 < 25 |only if walking
-accept DANGER: Boulderfall, the Eroded##42861 |goto 30.96,33.85
+label quest-41489
+click Grapple Point |only if walking
+|tip It's a grey hook on top of the wall. |only if walking
+Click the first hook |goto Stormheim/0 58.53,48.86 < 6 |only if walking
+Click the second hook |goto 58.64,48.56 < 6 |only if walking
+Click the third hook |goto 58.16,47.81 < 6 |only if walking
+Click the fourth hook |goto 57.65,48.50 < 6 |only if walking
+Drop down |goto 57.52,47.55 < 20 |only if walking
+accept Brimstone Destroyer##41489 |goto 61.22,37.47
 |tip You will accept this quest automatically.
 step
-kill Boulderfall, the Eroded##109113 |q 42861/1 |goto 30.96,33.85
+kill Brimstone Destroyer##93237
+click Brimstone Destroyer Core##195122
+Brimstone Destroyer Core mined |q 41489/1 |goto 61.22,37.47
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41336
@@ -5293,6 +5353,18 @@ accept DANGER: Aegir Wavecrusher##42820 |goto Stormheim/0 52.40,23.82
 |tip You will accept this quest automatically.
 step
 kill Aegir Wavecrusher##108885 |q 42820/1 |goto 52.40,23.82
+|next "Court_Of_Farondis_WQ"
+step
+label quest-42861
+Follow the path |goto Stormheim/0 34.32,49.08 < 20 |only if walking
+Follow the path |goto 37.59,44.84 < 25 |only if walking
+Follow the path |goto 32.78,42.44 < 25 |only if walking
+Follow the path |goto 35.57,37.79 < 25 |only if walking
+Follow the path |goto 33.39,32.32 < 25 |only if walking
+accept DANGER: Boulderfall, the Eroded##42861 |goto 30.96,33.85
+|tip You will accept this quest automatically.
+step
+kill Boulderfall, the Eroded##109113 |q 42861/1 |goto 30.96,33.85
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42864
@@ -5559,6 +5631,16 @@ click Fjarnskaggl Cluster
 Gather the Fjarnskaggl Cluster |q 41296/1 |goto Stormheim/0 55.29,31.08
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41299
+Follow the path |goto Stormheim/0 38.69,64.53 < 25 |only if walking
+Follow the path |goto 43.71,64.14 < 15 |only if walking
+accept Flourishing Fjarnskaggl##41299 |goto 46.57,67.25
+|tip You will accept this quest automatically.
+step
+click Flourishing Fjarnskaggl##195114
+collect 10 Flourishing Fjarnskaggl##140958 |q 41299/1 |goto 46.57,67.25
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41427
 Follow the path |goto Stormheim/0 72.17,59.32 < 20 |only if walking
 Follow the path |goto 74.17,56.72 < 30 |only if walking
@@ -5761,6 +5843,17 @@ Fish from the Lively Stormray schools |cast Fishing##131474
 collect 10 Lively Stormray##134570 |q 41602/1 |goto 56.27,41.84
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41603
+Follow the path |goto Stormheim/0 69.18,61.52 < 25 |only if walking
+Follow the path |goto 64.01,63.38 < 15 |only if walking
+Follow the path |goto 60.96,65.32 < 25 |only if walking
+accept Lively Stormrays##41603 |goto 58.03,68.25
+|tip You will accept this quest automatically.
+step
+Fish from the Lively Stormray Schools |cast Fishing##131474
+collect 10 Lively Stormray##134570 |q 41603/1 |goto 58.03,68.25
+|next "Court_Of_Farondis_WQ"
+step
 label quest-43771
 Follow the path |goto Stormheim/0 51.04,33.59 < 25 |only if walking
 Follow the path |goto 48.74,36.31 < 25 |only if walking
@@ -5878,6 +5971,17 @@ click Prickly Fjarnskaggl##195114
 collect 10 Prickly Fjarnskaggl##140960 |q 41535/1 |goto 79.93,61.92
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41536
+Follow the path |goto Stormheim/0 49.55,31.12 < 20 |only if walking
+Follow the path up |goto 47.65,32.24 < 20 |only if walking
+accept Pungent Fjarnskaggl##41536 |goto 46.52,31.96
+|tip You will accept this quest automatically.
+step
+click Pungent Fjarnskaggl##248029
+collect 10 Pungent Fjarnskaggl##140961 |q 41536/1 |goto 46.52,31.96
+|tip These spawn in a huge radius. You may have to search around the area.
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41925
 Follow the path |goto Stormheim/0 60.66,52.14 < 20 |only if walking
 Follow the path |goto 64.18,48.53 < 30 |only if walking
@@ -5939,6 +6043,18 @@ kill Queen Bretta##106587 |q 42176/2 |goto 35.69,69.58
 step
 label "Defiant_Queensguards"
 kill 10 Defiant Queensguard##106568 |q 42176/1 |goto 35.85,68.95
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41276
+Follow the path |goto Stormheim/0 72.50,58.48 < 25 |only if walking
+Follow the path |goto 74.71,56.82 < 25 |only if walking
+accept Rocket Boot Fishing##41276 |goto 77.06,54.02
+|tip You will accept this quest automatically.
+step
+talk Pazzo Gimbletorque##111617
+|tip Get a pair of rocket boots.
+collect 10 East Ocean Barracuda##134572 |q 41276/1 |goto 78.33,52.77
+|tip Run into the jumping sharks to collect them.
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41927
@@ -7469,6 +7585,18 @@ label "Tattered_Silkwings"
 kill 8 Tattered Silkwing##109180 |q 42830/2 |goto 61.97,57.05
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41349
+Follow the path |goto Suramar/0 67.27,44.55 < 10 |only if walking
+Follow the path |goto 69.69,47.93 < 20 |only if walking
+accept Rock-Hard Crab Chitin##41349 |goto 76.79,56.57
+|tip You will accept this quest automatically.
+step
+kill Deepwater Spikeback##99504+
+|tip They're on the ocean floor.
+|tip Skin the corpses.
+collect 12 Rock-Hard Crab Chitin##134822 |q 41349/1 |goto 76.79,56.57
+|next "Court_Of_Farondis_WQ"
+step
 label quest-44812
 Follow the path |goto Suramar/0 63.63,42.81 < 25 |only if walking
 Follow the path |goto 61.11,46.30 < 25 |only if walking
@@ -7590,6 +7718,15 @@ accept Slab of Bacon##41262 |goto 75.89,50.12
 step
 kill Baconlisk##103787
 collect 1 Thick Slab of Bacon##135511 |q 41262/1 |goto 75.89,50.12
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41539
+Cross the bridge |goto Suramar/0 24.35,31.98 < 20 |only if walking
+accept Sparkling Starlight Roses##41539 |goto 19.95,29.63
+|tip You will accept this quest automatically.
+step
+click Sparkling Starlight Rose##195114
+collect 10 Sparkling Starlight Rose Petals##140992 |q 41539/1 |goto 19.95,29.63
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41301
@@ -7737,6 +7874,20 @@ Run up the stairs |goto 57.89,61.47 < 15 |only if walking
 kill Felborne Collaborator##111750+
 kill Felsworn Noble##111730+
 Slay #8# Nightborne Collaborators |q 43814/1 |goto 58.55,62.75
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41663
+accept Vantus Rune Work Order: Xavius##41667 |goto Suramar/0 36.44,46.87
+|tip You will accept this quest automatically.
+step
+Open Your Inscription Crafting Panel:
+_<Create 1 Vantus Rune: Xavius>_
+collect 1 Vantus Rune: Xavius##128991
+|tip You can purchase one of these from the Auction House if you don't have the technique.
+step
+talk First Arcanist Thalyssra##97140
+|tip Thalyssra may be in a slightly different spot, depending upon your progress in the Suramar questline.
+turnin Vantus Rune Work Order: Elerethe Renferal##41667 |goto 36.44,46.87
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41346
@@ -7951,6 +8102,7 @@ accept Withered Army Training##43943 |goto Suramar/0 36.88,46.61 |region suramar
 |tip You will accept this quest automatically.
 step
 talk First Arcanist Thalyssra##97140
+|tip Thalyssra may be in a slightly different spot, depending upon your progress in the Suramar questline.
 Tell her _"I've come to help the withered with their combat training."_
 |tip This requires you to have at least 400 Ancient Mana.
 _Choose the Amount of Withereds for your Army:_
@@ -8046,6 +8198,20 @@ step
 talk First Arcanist Thalyssra##97140
 |tip Thalyssra may be in a slightly different spot, depending upon your progress in the Suramar questline.
 turnin Work Order: Battlebound Leggings##41643 |goto 36.44,46.87
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41679
+accept Work Order: Deployable Bullet Dispenser##41679 |goto Suramar/0 36.44,46.87
+|tip You will accept this quest automatically.
+step
+Open Your Engineering Crafting Panel:
+_<Create 1 Deployable Bullet Dispenser>_
+collect 1 Deployable Bullet Dispenser##132509
+|tip You can purchase one of these from the Auction House if you don't have the schematic.
+step
+talk First Arcanist Thalyssra##97140
+|tip Thalyssra may be in a slightly different spot, depending upon your progress in the Suramar questline.
+turnin Work Order: Deployable Bullet Dispenser##41679 |goto 36.44,46.87
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41314
@@ -8226,16 +8392,6 @@ Tell her "Let's do battle!"
 Defeat Tiffany Nelson |q 40277/1 |goto Dalaran L/10 28.28,24.04
 |next "Court_Of_Farondis_WQ"
 step
-label quest-46135
-accept Gemcutter Needed##46135 |goto Dalaran L/10 40.27,34.68
-|tip You will accept this quest automatically.
-step
-click Tiffany's Carving Machine##0
-|tip Use the abilities on your action bar to rotate the gem.
-|tip Right-click the jagged shards to cut the gem.
-Create a _red_ gem |q 46135/1 |goto 40.06,34.37
-|next "Court_Of_Farondis_WQ"
-step
 label quest-46138
 accept Gemcutter Needed##46138 |goto Dalaran L/10 40.27,34.68
 |tip You will accept this quest automatically.
@@ -8243,7 +8399,52 @@ step
 click Tiffany's Carving Machine##0
 |tip Use the abilities on your action bar to rotate the gem.
 |tip Right-click the jagged shards to cut the gem.
+|tip Cutting them gem in 25 or fewer clicks will reward you with a Maelstrom Sapphire instead of a Skystone.
 Create a _blue_ gem |q 46138/1 |goto 40.06,34.37
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46137
+accept Gemcutter Needed##46137 |goto Dalaran L/10 40.27,34.68
+|tip You will accept this quest automatically.
+step
+click Tiffany's Carving Machine##0
+|tip Use the abilities on your action bar to rotate the gem.
+|tip Right-click the jagged shards to cut the gem.
+|tip Cutting them gem in 25 or fewer clicks will reward you with a Pandemonite instead of a Chaotic Spinel.
+Create a _green_ gem |q 46137/1 |goto 40.06,34.37
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46134
+accept Gemcutter Needed##46134 |goto Dalaran L/10 40.27,34.68
+|tip You will accept this quest automatically.
+step
+click Tiffany's Carving Machine##0
+|tip Use the abilities on your action bar to rotate the gem.
+|tip Right-click the jagged shards to cut the gem.
+|tip Cutting them gem in 25 or fewer clicks will reward you with an Eye of Prophecy instead of a Deep Amber.
+Create an _orange_ gem |q 46134/1 |goto 40.06,34.37
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46139
+accept Gemcutter Needed##46139 |goto Dalaran L/10 40.27,34.68
+|tip You will accept this quest automatically.
+step
+click Tiffany's Carving Machine##0
+|tip Use the abilities on your action bar to rotate the gem.
+|tip Right-click the jagged shards to cut the gem.
+|tip Cutting them gem in 25 or fewer clicks will reward you with a Shadowruby instead of a Queen's Opal.
+Create a _purple_ gem |q 46139/1 |goto 40.06,34.37
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46135
+accept Gemcutter Needed##46135 |goto Dalaran L/10 40.27,34.68
+|tip You will accept this quest automatically.
+step
+click Tiffany's Carving Machine##0
+|tip Use the abilities on your action bar to rotate the gem.
+|tip Right-click the jagged shards to cut the gem.
+|tip Cutting them gem in 25 or fewer clicks will reward you with a Furystone instead of a Sangrite.
+Create a _red_ gem |q 46135/1 |goto 40.06,34.37
 |next "Court_Of_Farondis_WQ"
 step
 label quest-46136
@@ -8253,6 +8454,7 @@ step
 click Tiffany's Carving Machine##0
 |tip Use the abilities on your action bar to rotate the gem.
 |tip Right-click the jagged shards to cut the gem.
+|tip Cutting them gem in 25 or fewer clicks will reward you with a Dawnlight instead of an Azsunite.
 Create a _yellow_ gem |q 46136/1 |goto 40.06,34.37
 |next "Court_Of_Farondis_WQ"
 step
@@ -8359,10 +8561,22 @@ talk Warmage Silva##32725
 turnin Work Order: Word of Intellect##41674 |goto 33.47,47.38
 |next "Court_Of_Farondis_WQ"
 step
+label quest-43639
+_Enter The Arcway Dungeon:_
+|tip You can only complete this dungeon on Mythic difficulty.
+accept The Arcway: Clogged Drain##43639 |goto Suramar/0 41.08,61.73
+|tip You will accept this quest automatically.
+step
+Rescue Arcanist Naran |q 43639/1
+|tip As you enter the dungeon, take the left hallway, then one to the right.
+step
+kill Advisor Vandros##98208 |q 43639/2
+|next "Court_Of_Farondis_WQ"
+step
 label quest-43640
 _Enter The Arcway Dungeon:_
 |tip You can only complete this dungeon on Mythic difficulty.
-accept The Arcway: Creeping Suspicions##43640 |goto Suramar/0 50.92,65.57
+accept The Arcway: Creeping Suspicions##43640 |goto Suramar/0 41.08,61.73
 |tip You will accept this quest automatically.
 step
 kill Creepier Crate##98779
@@ -8371,6 +8585,18 @@ collect 1 Nightforged Keystone##139618 |q 43640/1
 |tip Currently, looting is a bit buggy. Loot the keystone quickly after killing.
 step
 kill Advisor Vandros##98208 |q 43640/2 |goto The Arcway/1 48.04,42.48
+|next "Court_Of_Farondis_WQ"
+step
+label quest-43638
+_Enter The Arcway Dungeon:_
+|tip You can only complete this dungeon on Mythic difficulty.
+accept The Arcway: Silver Serpent##43638 |goto Suramar/0 41.08,61.73
+|tip You will accept this quest automatically.
+step
+kill Silver Serpent##111052 |q 43638/1
+|tip You will encounter this NPC just inside the instance, where Advisor Vandros spawns.
+step
+kill Advisor Vandros##98208 |q 43638/2 |goto The Arcway/1 48.04,42.48
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43711
@@ -8818,12 +9044,32 @@ kill Dargrul##91007 |q 41857/2
 step
 label quest-44934
 _Enter The Nighthold raid:_
-|tip You must completed this on normal difficulty or higher.
+|tip You must complete this on normal difficulty or higher.
 accept The Nighthold: Creepy Crawlers##44934 |goto Suramar/0 44.15,59.74
 |tip You will accept this quest automatically.
 step
 kill Kar'zun##116008 |q 44934/1
 |tip Kar'zun is directly upstairs from Trilliax.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44935
+_Enter The Nighthold raid:_
+|tip You must complete this on normal difficulty or higher.
+accept The Nighthold: Gilded Guardian##44935 |goto Suramar/0 44.15,59.74
+|tip You will accept this quest automatically.
+step
+kill Gilded Guardian##112712 |q 44935/1
+|tip Gilded Guardian patrols a hallway near Spellblade Aluriel.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44936
+_Enter The Nighthold raid:_
+|tip You must complete this on normal difficulty or higher.
+accept The Nighthold: Supply Routes##44936 |goto Suramar/0 44.15,59.74
+|tip You will accept this quest automatically.
+step
+kill Flightmaster Volnath##116004 |q 44936/1
+|tip Flightmaster Volnath patrols a hallway near Spellblade Aluriel.
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42926

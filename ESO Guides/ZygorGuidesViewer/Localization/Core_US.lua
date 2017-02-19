@@ -220,6 +220,9 @@ ZygorGuidesViewer_L("Main", "enUS", function() local f = {
 	-- MINIMAP BUTTON
 	["minimap_tooltip"] = COLOR_TIP_MOUSE.."Click|r to toggle guide window\n"..COLOR_TIP_MOUSE.."Right-click|r to configure\n",
 
+	['tip_header'] = "Zygor Guides Tips",
+	['tip_keybind'] = "Did you know you can bind keys to control the Zygor Guides Viewer?\n\nIt's far easier to navigate between steps by pressing keys, rather than have to click the buttons with your mouse.\n\nWould you like to set up your keybinds now?",
+
 
 	}
 	--for k,v in pairs(f) do

@@ -200,35 +200,6 @@ As well as [56.0,45.6].
 Use your Tame Beast ability on a _Kalimdor Eagle_. |cast Tame Beast##1515 |goto Stonetalon Mountains,52.4,49.0
 modeldisplay 22255
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Eagles\\Light Brown Eagle",{
-model={34007},
-description="This guide will walk you through obtaining miscellaneous hunter pets.",
-},[[
-step
-Search for Golden Eagles around this area.
-|tip They are level 16-17.
-Use your Tame Beast ability on a _Golden Eagle_. |cast Tame Beast##1515 |goto Loch Modan,78.2,65.6
-modeldisplay 34007
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Eagles\\White Eagle",{
-model={25925},
-description="This guide will walk you through obtaining miscellaneous hunter pets.",
-},[[
-step
-label "start"
-Search for Goretalon Matriarchs around the ledges here.
-|tip They are level 78.
-Use your Tame Beast ability on a _Goretalon Matriarch_. |cast Tame Beast##1515 |goto Sholazar Basin,59.6,23.6
-Click here to see another location for this pet |next |confirm
-modeldisplay 25925
-step
-Search for Hyjal Huntress around this area.
-|tip They are level 80.
-|tip These birds are generally flying around.
-Use your Tame Beast ability on a _Goretalon Matriarch_. |cast Tame Beast##1515 |goto Mount Hyjal,42.4,43.6
-Click here to see the previous location for this pet |next "-start" |confirm
-modeldisplay 25925
-]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Eagles\\Undead Eagle",{
 model={25630},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
@@ -1625,25 +1596,6 @@ Search for Spiteflayer around the area.
 Use your Tame Beast ability on _Spiteflayer_. |cast Tame Beast##1515 |goto Blasted Lands,62.6,36.6
 modeldisplay 37536
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Black Cat",{
-model={599},
-description="This guide will walk you through obtaining miscellaneous hunter pets.",
-},[[
-step
-label "start"
-Search for Kurzen War Panthers around this area.
-|tip They are level 24 - 25.
-Use your Tame Beast ability on a _Kurzen War Panther_. |cast Tame Beast##1515 |goto Northern Stranglethorn,59.6,21.0
-Click here to see another location for this pet |next |confirm
-modeldisplay 599
-step
-Search for Elder Shadowmaw Panthers around this area.
-|tip They are level 28 - 30.
-You can find more around [49.0,43.2].
-Use your Tame Beast ability on a _Elder Shadowmaw Panther_. |cast Tame Beast##1515 |goto The Cape of Stranglethorn,56.6,38.8
-Click here to see the previous location for this pet |next "-start" |confirm
-modeldisplay 599
-]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Black Spotted Cat",{
 model={11448},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
@@ -1671,24 +1623,6 @@ Search for Blackwind Sabercats around this area.
 Use your Tame Beast ability on a _Blackwind Sabercat_. |cast Tame Beast##1515 |goto Terokkar Forest,73.4,71.8
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 321
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Brown Cat",{
-model={1059},
-description="This guide will walk you through obtaining miscellaneous hunter pets.",
-},[[
-step
-label "start"
-Search for Savannah Huntress' around this area.
-|tip They are level 11 - 12.
-Use your Tame Beast ability on a _Savannah Huntress_. |cast Tame Beast##1515 |goto Northern Barrens,45.6,54.8
-Click here to see another location for this pet |next |confirm
-modeldisplay 1059
-step
-Search for Foothill Stalkers around the area.
-|tip They are level 22 - 23.
-Use your Tame Beast ability on a _Foothill Stalker_. |cast Tame Beast##1515 |goto Hillsbrad Foothills,47.4,56.6
-Click here to see the previous location for this pet |next "-start" |confirm
-modeldisplay 1059
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Dark Striped Cat",{
 model={11454},
@@ -1973,16 +1907,6 @@ Search for Tigers around this area.
 Use your Tame Beast ability on a _Tiger_. |cast Tame Beast##1515 |goto Uldum,51.2,78.8
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 34248
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Mystical Pets\\Core Hounds\\Green Core Hounds",{
-model={20521},
-description="This guide will walk you through obtaining miscellaneous hunter pets.",
-},[[
-step
-Search for Spawn of Uvuros around this area.
-|tip It is level 69.
-Use your Tame Beast ability on _Spawn of Uvuros_. |cast Tame Beast##1515 |goto Shadowmoon Valley,54.2,52.8
-modeldisplay 20521
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Mystical Pets\\Core Hounds\\Gray Core Hounds",{
 model={17028},
@@ -3197,24 +3121,6 @@ Search for Ashenvale Bears around the area.
 |tip They are level 19 - 20.
 Use your Tame Beast ability on a _Ashenvale Bear_. |cast Tame Beast##1515 |goto Ashenvale,45.8,51.8
 modeldisplay 1990
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Bears\\Gray Bear",{
-model={8840},
-description="This guide will walk you through obtaining miscellaneous hunter pets.",
-},[[
-step
-label "start"
-Search for Ice Claw Bears around the area.
-|tip They are level 7 - 8.
-Use your Tame Beast ability on a _Ice Claw Bears_. |cast Tame Beast##1515 |goto Dun Morogh,69.2,56.2
-Click here to see another location for this pet |next |confirm
-modeldisplay 8840
-step
-Search for Elder Gray Bears around the area.
-|tip They are level 19 - 20.
-Use your Tame Beast ability on a _Elder Gray Bear_. |cast Tame Beast##1515 |goto Hillsbrad Foothills,33.6,63.6
-Click here to see the previous location for this pet |next "-start" |confirm
-modeldisplay 8840
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Bears\\White Bear",{
 model={913},

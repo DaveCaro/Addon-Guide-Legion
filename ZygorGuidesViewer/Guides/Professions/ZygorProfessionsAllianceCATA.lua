@@ -4082,7 +4082,7 @@ collect 15 Heavy Hide##4235 |goto Feralas 55.4,55.0 |condition skill("Leatherwor
 |tip You can also buy these materials from the Auction House.
 You can find more yetis here |goto Feralas 53.2,31.8
 step
-Find a _tailor_ or us the _Auction House_ to gather _Bolts of Silk Cloth_ for you
+Find a _tailor_ or use the _Auction House_ to gather _Bolts of Silk Cloth_ for you
 |tip Ask in Trade Chat or in your Guild to help you.
 collect 30 Bolt of Silk Cloth##4305 |condition skill("Leatherworking")>=200
 step
@@ -4121,10 +4121,6 @@ step
 learn Dusky Bracers##9201 |condition skill("Leatherworking")>=200
 step
 create Dusky Bracers##9201,Leatherworking,200
-step
-#include "trainer_Leatherworking"
-skillmax Leatherworking,300
-|tip You must be at least level 35.
 step
 kill Nyxondra's Broodling##46916+
 collect 430 Thick Leather##4304 |goto Badlands 11.0,38.2 |condition skill("Leatherworking")>=250

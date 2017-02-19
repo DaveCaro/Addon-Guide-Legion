@@ -2050,7 +2050,7 @@ collect 100 Tanned Stonehide Leather##136539 |goto 35.31,28.49 |q 41889
 step
 click Namaha's Workbench
 _<Create 5 Stonehide Leather Strips>_
-collect Stonehide Leather Strip##130875 |goto 34.66,28.94 |q 41889
+collect 5 Stonehide Leather Strip##130875 |goto 34.66,28.94 |q 41889
 step
 click Namaha's Workbench
 _<Create 1 Stonehide Caparison>_
@@ -2160,6 +2160,7 @@ Follow the path |goto Stormheim/0 42.85,59.15 < 20 |only if walking and _G.UnitF
 Cross the bridge |goto Stormheim/0 44.15,60.48 < 20 |only if walking
 Follow the path |goto Stormheim/0 44.64,63.30 < 20 |only if walking
 Follow the path up |goto Stormheim/0 46.85,65.59 < 20 |only if walking
+Climb on top of the rock |goto Stormheim/0 46.48,67.81 <20 |only if walking
 click Grapple Point
 |tip It's on top of the wall nearby.
 Grapple onto the Wall |goto Stormheim/0 45.86,67.84 < 7 |noway |c |q 40179
@@ -2343,11 +2344,13 @@ accept Leather Legwork##40199 |goto 34.28,28.65
 step
 talk Bragund Brightlink##96979
 |tip Inside the building.
+Tell him "Do you happen to have an extra crowbar?"
 Watch the dialogue
 Talk to Bragund Brightlink |q 40199/1 |goto 50.96,73.98
 step
 talk Imindril Spearsong##92184
 |tip Inside the building.
+Tell her "Do you have any armor stands you could part with?"
 Watch the dialogue
 Ask Imindril Spearsong About Armor Stands |q 40199/2 |goto 46.56,26.83
 step
@@ -2360,7 +2363,6 @@ Ask Shandy Glossgleam to Clean the Dress |q 40199/3 |goto 42.93,48.90
 step
 talk Shandy Glossgleam##96967
 |tip Upstairs on the balcony of the building.
-Watch the dialogue
 Pay Shandy Glossgleam 2 Gold |q 40199/4 |goto 42.93,48.90
 step
 talk Imindril Spearsong##92184
@@ -8400,6 +8402,7 @@ accept Fel Fragments##41167 |or |only if not completedq(41167) |next "Fel_Fragme
 accept History of Highmountain##41186 |or |only if not completedq(41186) |next "History_of_Highmountain" |goto 40.85,26.28
 accept The Reliquary Calls##41171 |or |only if not completedq(41171) |next "The_Reliquary_Calls" |goto 40.85,26.28
 accept Worth Its Weight##41174 |or |only if not completedq(41174) |next "Worth_Its_Weight" |goto 40.85,26.28
+accept The Right Path##41192 |or |only if not completedq(41192) |next "The Right Path" |goto 40.85,26.28
 |next "Archaeology_Quests_Finished"
 step
 label "Fragments_of_the_Fjords"
@@ -8658,6 +8661,26 @@ Follow the path |goto 36.73,90.02 < 30 |only if walking
 Enter the cave |goto 38.14,90.64 < 15 |walk
 talk Tae'thelan Bloodwatcher##103482
 turnin Sifting Through the Rubble##41176 |goto 38.20,90.08
+|next "Accept_Archaeology_Quest"
+step
+label "The Right Path"
+talk Lessah Moonwater##103485
+turnin The Right Path##41192 |goto Thunder Totem/0 45.90,45.04
+accept Laying to Rest##41193 |goto Thunder Totem/0 45.90,45.04
+step
+Dig in Digsites in Highmountain:
+|tip The digsites are random, and are shown as small shovel icons on the map.
+collect 600 Bone Fragment of Eche'ro##134095 |q 41193/1
+step
+Follow the path |goto Thunder Totem/0 55.99,55.20 < 20 |only if walking
+Enter the cave |goto Thunder Totem/0 62.35,48.13
+talk Lessah Moonwater##103485
+Tell her "Here are remaining bone fragments."
+Watch the Dialogue
+Observe the Burial Ceremony |q 41193/2 |goto Thunder Totem/0 64.70,50.13
+step
+talk Lessah Moonwater##103485
+turnin Laying to Rest##41193 |goto Thunder Totem/0 64.70,50.13
 |next "Accept_Archaeology_Quest"
 step
 label "Archaeology_Quests_Finished"

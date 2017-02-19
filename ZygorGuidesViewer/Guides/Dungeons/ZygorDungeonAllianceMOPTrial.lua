@@ -163,7 +163,7 @@ kill 1 Admiral Ripsnarl##47626 |q 27785/1 |goto 63.9,39.5 |only if havequest(277
 |tip He will use Go For the Throat through the entire fight. It damages then stuns targets for 2 seconds. |only if heroic_dung()
 |tip When the fog ends, Ripsnarl will randomly target someone with Go for the Throat, stunning them and dealing damage
 _HEALER:_ |only if heroic_dung() |grouprole HEALER
-|tip Ripsnarl will use _Go for the Throat_ through the entire encounter. Prepare to heal accordingly |only if heroic_dung() |grouprole HEALER
+|tip Ripsnarl will use Go for the Throat through the entire encounter. Prepare to heal accordingly |only if heroic_dung() |grouprole HEALER
 Defeat Admiral Ripsnarl |scenariogoal 24943 |goto 63.9,39.5
 step
 Click the Quest Completion Box that pops up.

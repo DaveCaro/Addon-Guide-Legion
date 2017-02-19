@@ -803,6 +803,7 @@ function Appraiser:StartAuction()
 
 	ZGV.db.char.CurrentDeals[Appraiser.ActiveSellingItem.itemid] = nil
 
+	ZGV:Print("Auction Posting "..stack_count.."x"..stack_size.." "..Appraiser.ActiveSellingItem.name.." for "..ZGV.GetMoneyString(tonumber(selling_price_buy)))
 	StartAuction(selling_price_bid, selling_price_buy, auction_time, stack_size, stack_count)
 
 	ZGV.Gold.Appraiser.RawDataTable[Appraiser.ActiveSellingItem.itemid] = ZGV.Gold.Appraiser.RawDataTable[Appraiser.ActiveSellingItem.itemid] or {}
@@ -903,4 +904,5 @@ function Appraiser:SelectShoppingRow()
 		Appraiser.SellingInProgress = false
 		Appraiser:ActivateSellItem(Appraiser.InventoryItems[index],true)
 	end
+	Appraiser:SetSellData()
 end

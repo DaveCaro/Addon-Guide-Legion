@@ -38551,6 +38551,7 @@ click Skeever
 'Save Runs-in-Wild |q Underfoot/Save Runs-in-Wild
 step
 goto 64.50,29.08
+|tip If you don't have this quest, use the Bandit's Note in your inventory.
 click Supplies
 'Burn the Supplies |q At Frost's Edge/Burn the Supplies
 step
@@ -38695,6 +38696,7 @@ talk Esqoo
 accept Finding the Family
 step
 goto dhalmora_base 33.12,45.41
+|tip It is behind the large building.
 click Skyshard |achieve 405/1
 step
 goto balfoyen_base 50.33,51.52
@@ -38929,11 +38931,6 @@ goto davonswatch_base 74.87,75.08
 'Follow the road |q Warning Davon's Watch/Talk to Holgunn
 |tip Manually skip to the next step.
 step
-goto 74.87,75.08
-|tip He appears as you enter Davon's Watch.
-talk The Prophet |q The Harborage/Talk to the Prophet
-|only not VET
-step
 goto 65.76,65.70
 talk Holgunn
 turnin Warning Davon's Watch
@@ -38944,11 +38941,24 @@ talk Holgunn
 'Tell him _"I have some things to do. I'll meet you there."_
 talk Holgunn |q Legacy of the Ancestors/Talk to Holgunn
 step
+goto 70.27,52.23
+talk Hilan
+accept Hilan's Invitation
+turnin Hilan's Invitation
+step
 'Use one of the skill points you saved
 'Learn the Intimidating Presence Skill |q Legacy of the Ancestors/Meet Holgunn
 |tip This skill can be found in the Fighters Guild section of your skill page.
 |tip Manually skip to the next step.
 |only not VET
+step
+goto 70.01,51.98
+talk Guildmaster Sees-All-Colors
+accept Anchors from the Harbour
+step
+goto 56.00,55.93
+'Go up the stairs |q The Wizard's Tome/Talk to Dithis Romori |future
+|tip Manually skip to the next step.
 step
 goto 48.94,49.61
 click Mages Guild
@@ -38961,12 +38971,17 @@ accept Rudrasa's Invitation
 turnin Rudrasa's Invitation
 step
 'Use one of the skill points you saved
-'Learn the Persuasive Will skill |q The Wizard's Tome/Talk to Dithis Romori
+'Learn the Persuasive Will skill |q The Wizard's Tome/Talk to Dithis Romori |future
 |tip This skill can be found in the Mages Guild section of your skill page.
 |tip Manually skip to the next step.
 |only not VET
 step
+goto 46.39,40.90
+click Origin of the Mages Guild
+lorebook Origin of the Mages Guild/1/19/5
+step
 goto 48.07,43.71
+|tip She is downstairs.
 talk Valaste
 accept Long Lost Lore
 |only not VET
@@ -39011,6 +39026,7 @@ goto davonswatchcrypt_base 57.67,35.42
 |tip Manually skip to the next step.
 step
 goto 57.69,68.79
+kill Nam Indoril
 click Skull of Nam Indoril
 'Collect Skull of Nam Indoril |q Legacy of the Ancestors/Collect the Skull of Nam Indoril
 step
@@ -39215,6 +39231,7 @@ talk Deep-in-Cups
 step
 goto 81.90,45.66
 talk Wharf Rat
+|tip It walks around and may not be in this exact spot.
 'Catch a Wharf Rat to Release in the Bar |q Exquisite Tears/Steal a Bottle of Tears of Amaya
 |tip Manually skip to the next step.
 step

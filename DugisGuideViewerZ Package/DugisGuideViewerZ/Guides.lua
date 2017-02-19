@@ -2713,7 +2713,7 @@ function Guides:Initialize()
 		local WQ					= DGV:ReturnTag("WQ", indx)
 		local tidInlog
        
-        if questId and LuaUtils:trim(questId) ~= "" then
+        if tonumber(questId) and LuaUtils:trim(questId) ~= "" then
             local isWOrldQuest = QuestUtils_IsQuestWorldQuest(questId)
             if WQ or isWOrldQuest then
                 if not DGV:IsQuestInObjectiveTracker(questId) then

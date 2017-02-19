@@ -260,6 +260,20 @@ function Goldguide:CreateMainFrame()
 			:SetTexture(SkinData("TitleLogo"))
 		.__END
 
+		MF.HeaderFrame.menu = CHAIN(CreateFrame("Button",nil,MF.HeaderFrame))
+			:SetPoint("TOPLEFT",5,-5)
+			:SetSize(17,17)
+			:SetScript("OnClick", function() 
+				ZGV.GuideMenu:Show("Home") 
+				Goldguide:HideWindow() 
+			end)
+			:SetScript("OnEnter", function() Goldguide:ShowMenuTooltip(MF.HeaderFrame.menu,"Go back to main menu") end)
+			:SetScript("OnLeave", function() Goldguide:HideMenuTooltip() end)
+			.__END
+
+		ZGV.F.AssignButtonTexture(MF.HeaderFrame.menu,(SkinData("TitleButtons")),16,32)
+
+
 		MF.HeaderFrame.close = CHAIN(CreateFrame("Button",nil,MF.HeaderFrame))
 			:SetPoint("TOPRIGHT",-5,-5)
 			:SetSize(17,17)
@@ -440,6 +454,18 @@ function Goldguide:CreateMainFrame()
 	Goldguide:MakeInfoPages()
 
 	MF:Hide()
+end
+
+function Goldguide:ShowMenuTooltip(parent,text)
+	GameTooltip:SetOwner(parent, "ANCHOR_BOTTOM")
+	GameTooltip:ClearAllPoints()
+	GameTooltip:ClearLines()
+	GameTooltip:SetText(text)
+	GameTooltip:Show()
+end
+
+function Goldguide:HideMenuTooltip()
+	GameTooltip:Hide()
 end
 
 function Goldguide:MakeTable_Farming()
