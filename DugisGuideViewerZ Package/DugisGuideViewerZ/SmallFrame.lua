@@ -308,10 +308,6 @@ function SmallFrame:Initialize()
 		local descriptionText = text:GetText()
         local rawText = descriptionText
 		
-		--[[
-		if descriptionText and not DugisGuideViewer:GetDB(DGV_DISPLAYCOORDINATES) then
-			descriptionText = string.gsub(descriptionText, "%([%d,.%s]*%)[,%s]*", "")
-		end]]-- Not needed. PopulateObjectives function does this first. 
 			
 		if descriptionText and not string.match(descriptionText, "|Hitem") and string.match(descriptionText, "item:%d") then --ReplaceSpecialTags for items if it didn't get converted yet on load. 
 			if DGV.NPCJournalFrame then 
@@ -916,7 +912,7 @@ function SmallFrame:Initialize()
 		ClearAllStatusFrames()
  		if MultistepMode() and not DGV:ReturnTag("NT", DugisGuideUser.CurrentQuestIndex) then
  			local maxstep = 0
-			local total = 6
+			local total = math.ceil(DugisGuideViewer:GetDB(DGV_SMALLFRAME_STEPS) - 0.5) or 6
 			
 			if DGV:ReturnTag("SID", DugisGuideUser.CurrentQuestIndex) or DGV:ReturnTag("SID", DugisGuideUser.CurrentQuestIndex + 1 ) then 
 				total = 2
@@ -1336,4 +1332,11 @@ function SmallFrame:Initialize()
 		SmallFrame.Frame:Hide()
 		SmallFrameTransition = nil
 	end
+        
+    --This preloader is not visible. It just prevents mouse clicks.
+    GUIUtils:CreatePreloader("SmallFramePreloader", SmallFrame.Frame)
+    SmallFramePreloader:SetFrameStrata("HIGH")
+    SmallFramePreloader.Icon:Hide()  
+    
+    
 end

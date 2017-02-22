@@ -2,6 +2,88 @@
 ..\FrameXML\UI.xsd">
 <!--Template for a Background frame-->
 
+    <Frame name="DugisPreloader" hidden="true" virtual="true">
+        <Frames>
+            <Frame setAllPoints="true" parentKey="TexWrapper" visible="false">
+                <Layers>
+                    <Layer level="BACKGROUND">
+                        <Texture parentKey="Background">
+                            <Anchors>
+                                <Anchor point="LEFT" relativeTo="$parent">
+                                    <Offset>
+                                        <AbsDimension x="0" y="0"/>
+                                    </Offset>
+                                </Anchor>
+                                <Anchor point="RIGHT" relativeTo="$parent">
+                                    <Offset>
+                                        <AbsDimension x="0" y="0"/>
+                                    </Offset>
+                                </Anchor>
+                                <Anchor point="TOP" relativeTo="$parent">
+                                    <Offset>
+                                        <AbsDimension x="0" y="0"/>
+                                    </Offset>
+                                </Anchor>
+                                <Anchor point="BOTTOM" relativeTo="$parent">
+                                    <Offset>
+                                        <AbsDimension x="0" y="0"/>
+                                    </Offset>
+                                </Anchor>
+                            </Anchors>
+                            <Color a="0.9" />
+                        </Texture>
+                    </Layer>
+                    <Layer level="ARTWORK">
+                        <FontString parentKey="Text" wordwrap="false" wraponspaces="true"  inherits="GameFontNormal" justifyH="LEFT"  visible="false" text="Preparing 2%..">
+                            <Size x="159" y="40"/>
+                            <Anchors>
+                                <Anchor point="TOPLEFT" x="5" y="-2"/>
+                            </Anchors>
+                        </FontString>
+                    </Layer>
+                </Layers>
+            </Frame>
+            <Frame  parentKey="Icon"  visible="false">
+                <Anchors>
+                   <Anchor point="TOPRIGHT" relativeTo="$parent">
+                        <Offset>
+                            <AbsDimension x="0" y="0"/> 
+                        </Offset>
+                    </Anchor>
+               </Anchors>
+                <Size x="45" y="45"/>
+                <Frames>
+                    <Frame  parentKey="Frame"  setAllPoints="true" >
+                        <Layers>
+                            <Layer level="BACKGROUND">
+                                <Texture file="Interface\COMMON\StreamBackground" parentKey="Background" setAllPoints="true" />
+                            </Layer>
+                            <Layer level="ARTWORK">
+                                <Texture file="Interface\COMMON\StreamFrame" parentKey="Alpha" setAllPoints="true" />
+                            </Layer>
+                        </Layers>
+                    </Frame>
+                    <Frame   parentKey="Spin"  setAllPoints="true" >
+                        <Layers>
+                            <Layer level="BACKGROUND">
+                                <Texture file="Interface\COMMON\StreamCircle" parentKey="Spinner" setAllPoints="true" />
+                            </Layer>
+                            <Layer level="OVERLAY" >
+                                <Texture file="Interface\COMMON\StreamSpark" setAllPoints="true" />
+                            </Layer>
+                        </Layers>
+                    </Frame>
+                </Frames>
+                <Scripts>
+                    <OnLoad>
+                        self.Spin.Spinner:SetVertexColor(1,.82,0);
+                        self.Frame.Background:SetVertexColor(1,0.82,0);
+                    </OnLoad>
+                </Scripts>                                
+            </Frame>                 
+        </Frames>
+    </Frame>
+
 	<Frame name ="DugisSmallFrameTemplate"  parent = "UIParent" movable="true" virtual="true"> 
 	<!-- <Frame name ="DugisSmallFrame"  parent = "UIParent" movable="true"> -->
 			<Scripts>
@@ -2041,7 +2123,9 @@
 			</Frame>
 		</Frames>
 		<Scripts> <!--Mainframe scripts--> 
-			<OnLoad> tinsert(UISpecialFrames,self:GetName());self:SetClampedToScreen(true); </OnLoad>
+			<OnLoad> 
+                tinsert(UISpecialFrames,self:GetName());self:SetClampedToScreen(true); 
+            </OnLoad>
 			<OnMouseDown> self:StartMoving();  </OnMouseDown>
 			<OnMouseUp>  self:StopMovingOrSizing(); </OnMouseUp>
 			<OnDragStop> self:StopMovingOrSizing(); </OnDragStop>
@@ -2747,88 +2831,5 @@
 		</Scripts>
 		<NormalTexture file="Interface\PaperDollInfoFrame\UI-GearManager-FlyoutButton"/>
 		<HighlightTexture file="Interface\PaperDollInfoFrame\UI-GearManager-FlyoutButton"/>
-	</Button>
-    
-    <Frame name="DugisPreloader" hidden="true" virtual="true">
-        <Frames>
-            <Frame setAllPoints="true" parentKey="TexWrapper" visible="false">
-                <Layers>
-                    <Layer level="BACKGROUND">
-                        <Texture parentKey="Background">
-                            <Anchors>
-                                <Anchor point="LEFT" relativeTo="$parent">
-                                    <Offset>
-                                        <AbsDimension x="0" y="0"/>
-                                    </Offset>
-                                </Anchor>
-                                <Anchor point="RIGHT" relativeTo="$parent">
-                                    <Offset>
-                                        <AbsDimension x="0" y="0"/>
-                                    </Offset>
-                                </Anchor>
-                                <Anchor point="TOP" relativeTo="$parent">
-                                    <Offset>
-                                        <AbsDimension x="0" y="0"/>
-                                    </Offset>
-                                </Anchor>
-                                <Anchor point="BOTTOM" relativeTo="$parent">
-                                    <Offset>
-                                        <AbsDimension x="0" y="0"/>
-                                    </Offset>
-                                </Anchor>
-                            </Anchors>
-                            <Color a="0.9" />
-                        </Texture>
-                    </Layer>
-                    <Layer level="ARTWORK">
-                        <FontString parentKey="Text" wordwrap="false" wraponspaces="true"  inherits="GameFontNormal" justifyH="LEFT"  visible="false" text="Preparing 2%..">
-                            <Size x="159" y="40"/>
-                            <Anchors>
-                                <Anchor point="TOPLEFT" x="5" y="-2"/>
-                            </Anchors>
-                        </FontString>
-                    </Layer>
-                </Layers>
-            </Frame>
-            <Frame  parentKey="Icon"  visible="false">
-                <Anchors>
-                   <Anchor point="TOPRIGHT" relativeTo="$parent">
-                        <Offset>
-                            <AbsDimension x="0" y="0"/> 
-                        </Offset>
-                    </Anchor>
-               </Anchors>
-                <Size x="45" y="45"/>
-                <Frames>
-                    <Frame  parentKey="Frame"  setAllPoints="true" >
-                        <Layers>
-                            <Layer level="BACKGROUND">
-                                <Texture file="Interface\COMMON\StreamBackground" parentKey="Background" setAllPoints="true" />
-                            </Layer>
-                            <Layer level="ARTWORK">
-                                <Texture file="Interface\COMMON\StreamFrame" parentKey="Alpha" setAllPoints="true" />
-                            </Layer>
-                        </Layers>
-                    </Frame>
-                    <Frame   parentKey="Spin"  setAllPoints="true" >
-                        <Layers>
-                            <Layer level="BACKGROUND">
-                                <Texture file="Interface\COMMON\StreamCircle" parentKey="Spinner" setAllPoints="true" />
-                            </Layer>
-                            <Layer level="OVERLAY" >
-                                <Texture file="Interface\COMMON\StreamSpark" setAllPoints="true" />
-                            </Layer>
-                        </Layers>
-                    </Frame>
-                </Frames>
-                <Scripts>
-                    <OnLoad>
-                        self.Spin.Spinner:SetVertexColor(1,.82,0);
-                        self.Frame.Background:SetVertexColor(1,0.82,0);
-                    </OnLoad>
-                </Scripts>                                
-            </Frame>                 
-        </Frames>
-    </Frame>
-    
+	</Button> 
 </Ui>

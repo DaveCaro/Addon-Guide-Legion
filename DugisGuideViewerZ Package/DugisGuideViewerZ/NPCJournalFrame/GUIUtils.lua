@@ -846,9 +846,11 @@ local treeExpantionStates = {}
 function GUIUtils:SetTreeData(targetTreeFrame, wrapper, treePrefix, nodes, parentVisualNode, reqLevel
 , onNodeClickFunction, onLeafClickFunction, x, y, indernalDeltaX, internalDeltaY
 , nodeTextProcessor, onHeightChangedFunction, onMouseWheel, iconSize, nodeHeight, onDragFunction
-, noScrollMode, columnWidth, nodeTextX)
+, noScrollMode, columnWidth, nodeTextX, nodeTextY, isInThread)
 
     local isRoot = false
+    
+    LuaUtils:Yield(isInThread)
     
     if wrapper == nil then
         wrapper = _G[treePrefix.."wrapper"]
@@ -876,6 +878,7 @@ function GUIUtils:SetTreeData(targetTreeFrame, wrapper, treePrefix, nodes, paren
     wrapper.indernalDeltaX = indernalDeltaX or 0        
     wrapper.internalDeltaY = internalDeltaY or 0  
     wrapper.nodeTextX = nodeTextX
+    wrapper.nodeTextY = nodeTextY
     
     wrapper.noScrollMode = noScrollMode
     wrapper.columnWidth = columnWidth 
@@ -917,6 +920,7 @@ function GUIUtils:SetTreeData(targetTreeFrame, wrapper, treePrefix, nodes, paren
     
     -- Creating all visual nodes and leafs
     LuaUtils:foreach(nodes, function(nodeData, i)
+        LuaUtils:Yield(isInThread)
         if nodeData.isLeaf then
             local treeResultsLeafName = treePrefix .. "DGVTreeLeaf_L"..reqLevel.. "_" .. leafIndex
             leafIndex = leafIndex + 1
@@ -977,14 +981,15 @@ function GUIUtils:SetTreeData(targetTreeFrame, wrapper, treePrefix, nodes, paren
                 GUIUtils:SetTreeData(targetTreeFrame, wrapper, treePrefix, nodeData.nodes, visualNode
                 , reqLevel, onNodeClickFunction, onLeafClickFunction, x, y, wrapper.indernalDeltaX
                 , wrapper.internalDeltaY, nodeTextProcessor, onHeightChangedFunction, onMouseWheel,
-                iconSize, nodeHeight, onDragFunction, noScrollMode, columnWidth, nodeTextX)
+                iconSize, nodeHeight, onDragFunction, noScrollMode, columnWidth, nodeTextX, nodeTextY, isInThread)
             end
         end
     end)  
         
     local totalIndex = 0
-    local function UpdateSubTree(visualNodes, visualParentNode, currentYOffset, wrapper, level, columnDeltaX, noScrollMode, columnWidth)
+    local function UpdateSubTree(visualNodes, visualParentNode, currentYOffset, wrapper, level, columnDeltaX, noScrollMode, columnWidth, isInThread)
     
+        LuaUtils:Yield(isInThread)
         
         columnDeltaX = columnDeltaX or 0
     
@@ -997,7 +1002,7 @@ function GUIUtils:SetTreeData(targetTreeFrame, wrapper, treePrefix, nodes, paren
     
         local localYOffset = 0
         LuaUtils:foreach(visualNodes, function(visualNode, index)
-        
+            LuaUtils:Yield(isInThread)
             local x = 15 * level + columnDeltaX
 
             if visualNode.nodeData.isLeaf then
@@ -1079,7 +1084,7 @@ function GUIUtils:SetTreeData(targetTreeFrame, wrapper, treePrefix, nodes, paren
                 visualNode.normal:SetPoint("TOPLEFT", visualNode, "TOPLEFT", iconDX, iconDY)
                 
                 if visualNode.visualNodes and visualNode.expanded then
-                    local off = UpdateSubTree(visualNode.visualNodes, visualNode, currentYOffset, wrapper, level, columnDeltaX, noScrollMode, columnWidth)
+                    local off = UpdateSubTree(visualNode.visualNodes, visualNode, currentYOffset, wrapper, level, columnDeltaX, noScrollMode, columnWidth, isInThread)
                     localYOffset = localYOffset + off
                     currentYOffset = currentYOffset + off
                 end
@@ -1098,16 +1103,26 @@ function GUIUtils:SetTreeData(targetTreeFrame, wrapper, treePrefix, nodes, paren
                 totalIndex = 0
             end
             
-            if visualNode.nodeData.onMouseEnter then
-                visualNode.Button:SetScript("OnEnter", visualNode.nodeData.onMouseEnter)
-            end  
-            
-            if visualNode.nodeData.onMouseLeave then
-                visualNode.Button:SetScript("OnLeave", visualNode.nodeData.onMouseLeave)
-            end
+            if visualNode.Button then
+                if visualNode.nodeData.onMouseEnter then
+                    visualNode.Button:SetScript("OnEnter", visualNode.nodeData.onMouseEnter)
+                end  
+                
+                if visualNode.nodeData.onMouseLeave then
+                    visualNode.Button:SetScript("OnLeave", visualNode.nodeData.onMouseLeave)
+                end
 
-            if visualNode.nodeData.onMouseClick then
-                visualNode.Button:SetScript("OnClick", visualNode.nodeData.onMouseClick)
+                if visualNode.nodeData.onMouseClick then
+                    visualNode.Button:SetScript("OnClick", visualNode.nodeData.onMouseClick)
+                end
+            else
+                if visualNode.nodeData.onMouseEnter then
+                    visualNode:SetScript("OnEnter", visualNode.nodeData.onMouseEnter)
+                end  
+                
+                if visualNode.nodeData.onMouseLeave then
+                    visualNode:SetScript("OnLeave", visualNode.nodeData.onMouseLeave)
+                end
             end
             
             
@@ -1129,14 +1144,14 @@ function GUIUtils:SetTreeData(targetTreeFrame, wrapper, treePrefix, nodes, paren
     ----- visualChild ---------
     -- nextChild
     ---------------------------
-    function wrapper:UpdateTreeVisualization()
+    function wrapper:UpdateTreeVisualization(isInThread)
         if self.visualNodes then
             LuaUtils:foreach(treeVisualizationContainer[self.treePrefix], function(visualNode)
                 visualNode:Hide()
                 visualNode:ClearAllPoints()
             end)
                                                     -- visualNodes, visualParentNode, currentYOffset, wrapper, level, columnDeltaX, noScrollMode,         columnWidth
-            self.height = select(2, UpdateSubTree(self.visualNodes, nil,              0,              wrapper, nil,   nil,          self.noScrollMode, self.columnWidth))
+            self.height = select(2, UpdateSubTree(self.visualNodes, nil,              0,              wrapper, nil,   nil,          self.noScrollMode, self.columnWidth, isInThread))
             
             self:SetHeight(self.height + 200)
             
@@ -1159,7 +1174,7 @@ function GUIUtils:SetTreeData(targetTreeFrame, wrapper, treePrefix, nodes, paren
         end)
     end    
     
-    function wrapper:LoadExpansionState(stateName)
+    function wrapper:LoadExpansionState(stateName, isInThread)
         if not stateName then
             return
         end
@@ -1171,10 +1186,10 @@ function GUIUtils:SetTreeData(targetTreeFrame, wrapper, treePrefix, nodes, paren
             end
         end)
         
-        wrapper:UpdateTreeVisualization()
+        wrapper:UpdateTreeVisualization(isInThread)
     end
     
-    wrapper:UpdateTreeVisualization()
+    wrapper:UpdateTreeVisualization(isInThread)
     
     return wrapper
    
@@ -1229,10 +1244,11 @@ function TestTree3()
     )
 end
 
-function SetScrollableTreeFrame(parent, name, data, x, y, nodesOffsetY, width, height, onNodeClick, iconSize, nodeHeight, onDragFunction, noScrollMode, columnWidth, nodeTextX)
+function SetScrollableTreeFrame(parent, name, data, x, y, nodesOffsetY, width, height
+, onNodeClick, iconSize, nodeHeight, onDragFunction, noScrollMode, columnWidth, nodeTextX, scrollX, scrollY, scrollHeight, nodeTextY)
     local scrollFrame = GUIUtils:CreateScrollFrame(parent, "scrollFrame" .. name)
    
-    scrollFrame.scrollBar:SetPoint("TOPLEFT", parent, "TOPLEFT", 322, -110)
+    scrollFrame.scrollBar:SetPoint("TOPLEFT", parent, "TOPLEFT", scrollX or 322, scrollY or -110)
     
     scrollFrame.frame:SetPoint("TOPLEFT", parent, "TOPLEFT", x, y)
     scrollFrame.scrollBar:SetFrameLevel(100)
@@ -1260,7 +1276,7 @@ function SetScrollableTreeFrame(parent, name, data, x, y, nodesOffsetY, width, h
             scrollFrame.scrollBar:SetValue(scrollFrame.scrollBar:GetValue() - delta * 44)  
 
          end,
-         iconSize, nodeHeight, onDragFunction, noScrollMode, columnWidth, nodeTextX)  
+         iconSize, nodeHeight, onDragFunction, noScrollMode, columnWidth, nodeTextX, nodeTextY)  
 
     scrollFrame.wrapper = wrapper
          
@@ -1269,7 +1285,7 @@ function SetScrollableTreeFrame(parent, name, data, x, y, nodesOffsetY, width, h
     
     scrollFrame.frame.content = wrapper
     scrollFrame.frame:SetScrollChild(wrapper) 
-    scrollFrame.scrollBar:SetHeight(265)
+    scrollFrame.scrollBar:SetHeight(scrollHeight or 265)
     
     return scrollFrame
 end
@@ -1285,3 +1301,43 @@ function GUIUtils:HighlightFrame(frame, color)
         frame.isDebugging = true
     end
 end
+
+function GUIUtils:CreatePreloader(name, parent)
+    local preloader = CreateFrame("Frame", name , parent, "DugisPreloader")
+    preloader:SetAllPoints()
+    preloader:EnableMouse(true)
+    preloader.TexWrapper:EnableMouse(true)
+    preloader:SetFrameStrata("HIGH")
+
+    local animationGroup = preloader.Icon:CreateAnimationGroup()
+    animationGroup:SetLooping("REPEAT")
+    local animation = animationGroup:CreateAnimation("Rotation")
+    animation:SetDegrees(-360)
+    animation:SetDuration(1)
+    animation:SetOrder(1)
+    preloader.preloaderAnimationGroup = animationGroup    
+    
+    
+    preloader.TexWrapper.Background:SetAlpha(0.0)
+    preloader.TexWrapper.Text:Hide()
+    
+    preloader.Icon:ClearAllPoints()
+    preloader.Icon:SetWidth(64)
+    preloader.Icon:SetHeight(64)
+    preloader.Icon:SetPoint("CENTER", 0, 0)    
+        
+
+    function preloader:ShowPreloader()
+        preloader:Show()
+        preloader.preloaderAnimationGroup:Play()
+    end
+
+    function preloader:HidePreloader()
+        preloader:Hide()
+        preloader.preloaderAnimationGroup:Stop()
+    end
+    
+    return preloader
+end
+
+

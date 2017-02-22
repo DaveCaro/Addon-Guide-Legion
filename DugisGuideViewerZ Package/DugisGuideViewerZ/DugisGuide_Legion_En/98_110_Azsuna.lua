@@ -182,7 +182,7 @@ A Presentation is Everything |QID|37728| |N|(npc:89341) at the {Crumbled Palace}
 A Missing Demon |QID|42238| |N|(npc:106914) in the {Llothien Highlands} (50.43, 30.84)| |Z|1015 0| |NPC|106914|
 A Felblaze Ingress |QID|42372| |N|(npc:106915) in the {Llothien Highlands} (50.46, 30.73)| |Z|1015 0| |NPC|106915|
 
-N As you go... |AYG|37727| |N|<b>Collect 6 (item:120939) along the shoreline<br/><b>Kill any murlocs you find on the shore and collect 55 (item:120080)| |QID|37257|
+N As you go... |AYG|38407| |N|<b>Collect 6 (item:120939) along the shoreline<br/><b>Kill any murlocs you find on the shore and collect 55 (item:120080)| |QID|37257|
 K (npc:107439) |QID|38407| |N|Kill (npc:107439) at the {El'dranil Shallows} and loot (item:122699) to begin this quest (51.84, 33.07)| |L|122699| |Z|1015 0| |NPC|107439|
 A Bottled Up |QID|38407| |N|Auto Quest|
 N As you go... |AYG|37728| |N|Kill any murlocs you find on the shore and collect 55 (item:120080) at the {El'dranil Shallows} (50.65, 34.64)| |QID|37257|

@@ -179,7 +179,7 @@ C Turtle Powered |QID|40368| |N|Kill (npc:113125) and collect 7 (item:130942) in
 T Turtle Powered |QID|40368| |N|(npc:99788) in {Anora Hollow} (37.49,40.69) (40.12,39.16) (41.71,41.05) (43.43,41.72)| |Z|1033 0| |NPC|99788|
 A Something in the Water |QID|40348| |N|(npc:99788) in {Anora Hollow} (43.41,41.70)| |Z|1033 0| |NPC|99788|
 A Purge the Unclean |QID|40370| |N|(npc:99788) in {Anora Hollow} (43.41,41.70)| |Z|1033 0| |NPC|99788|
-K (npc:99859) |QID|40370.1| |N|Kill (npc:99859) to cleanse the Corruption in {Tel'anor} (44.16,41.70) (46.08,43.69) (47.38,44.05) (47.65,42.74) (48.50,39.29) (47.38,36.65)| |Z|1033 0| |NPC|99859|
+K (npc:99859) |QID|40370.1| |N|Use the (item:131760) to kill (npc:99859) to cleanse the Corruption in {Tel'anor} (44.16,41.70) (46.08,43.69) (47.38,44.05) (47.65,42.74) (48.50,39.29) (47.38,36.65)| |Z|1033 0| |NPC|99859|
 C Something in the Water |QID|40348| |N|Kill 12 (npc:99789) in {Tel'anor} (47.38,36.65)| |Z|1033 0| |NPC|99789|
 
 T Something in the Water |QID|40348| |N|(npc:99788) in {Anora Hollow} (43.41,41.70)| |Z|1033 0| |NPC|99788|
@@ -222,7 +222,7 @@ N (spell:202477) |QID|42147| |N|Use the (spell:202477) ability to disguise yours
 C First Contact |QID|42147| |N|Speak with (npc:106495) in {The Grand Promenade} (42.81, 60.24)| |Z|1033 0| |NPC|106495|
 A Sanctum of Order Teleporter Online! |QID|43813| |N|Unpowered Telemancy Beacon in {Sanctum of Order}, use the teleporter to get to the lower floor (42.75,61.80) (43.41,62.36) (44.59,62.12) (43.71,62.24) (43.41,60.56)| |Z|1033 0|
 T Sanctum of Order Teleporter Online! |QID|43813| |N|Unpowered Telemancy Beacon in {Sanctum of Order}<br/><b>You will need 100 (cur:1155) (43.41,60.56)| |Z|1033 0|
-N (cur:1155) |QID|40324| |N|Collect at least 300 (cur:1155) before you return to {Shal'Aran}| |CUR|1155 300|
+N (cur:1155) |QID|40324| |N|Collect at least 300 (cur:1155) before you return to {Shal'Aran}| |CUR|1155 300| |T|
 
 R Shal'Aran |TID|42147| |N|Travel to {Shal'Aran} (37.09, 46.21)| |Z|1033 0|
 T First Contact |QID|42147| |N|(npc:97140) in {Shal'Aran}<br/><b>You might have feed her 50 (cur:1155) before you can speak to her (37.09, 46.21)| |Z|1033 0| |NPC|97140|
@@ -265,7 +265,7 @@ C The Only Choice We Can Make |QID|41467| |N|Use (item:135534) to incinerate the
 R Ley Station Moonfall |TID|43590| |N|Travel to {Ley Station Moonfall} (31.15,28.29) (34.67,27.15) (35.48,28.91) (36.66,27.70) (35.64, 24.04)| |Z|1033 0|
 A Leyline Feed: Ley Station Moonfall |QID|43590| |N|Click Leyline Feed in {Ley Station Moonfall} (49.61,66.34) (54.21,45.51)| |Z|1033 37|
 K (npc:112140) |QID|43590.1| |N|Kill (npc:112140) and collect (item:140317)<br/><br/>He's a giant that walks around this area, so you may have to search for him.(36.81,27.86)| |Z|1033 0|
-N 200 (cur:1155) |QID|43590.2| |N|Collect 200 (cur:1155). If you need more, find Ancient Mana crystals, as well as other various objects, to collect them.|
+N (cur:1155) |QID|43590.2| |N|Collect 200 (cur:1155). If you need more, find Ancient Mana crystals, as well as other various objects, to collect them.| |T|  |CUR|1155 200|
 T Leyline Feed: Ley Station Moonfall |QID|43590| |N|Leyline Feed in {Ley Station Moonfall} (49.61,66.34) (54.21,45.51)| |Z|1033 37| 
 
 R Moonshade Sanctum |QID|42224| |N|Travel to {Moonshade Sanctum} (18.37, 38.23)| |Z|1033 0|
@@ -351,7 +351,7 @@ A Fate of the Guard |QID|40883| |N|(npc:101766) in {Moonfall Roost} (27.83,21.20
 R Ley Station Aethenar |TID|43591| |N|Travel to {Ley Station Aethenar}, the entrance is on the side of the cliff by facing the water (27.04,21.24) (24.76,20.31) (24.25, 19.34)| |Z|1033 0|
 A Leyline Feed: Ley Station Aethenar |QID|43591| |N|Leyline Feed in {Ley Station Aethenar} (54.70,70.34) (48.83,49.43)| |Z|1033 38|
 K (npc:112067) |QID|43591.1| |N|Kill (npc:112067) and collect 6 (item:140318) in {Ley Station Aethenar} (44.15,44.02)| |Z|1033 38|
-N 200 (cur:1155) |QID|43591.2| |N|Collect 200 (cur:1155)| 
+N (cur:1155) |QID|43591.2| |N|Collect 200 (cur:1155)| |CUR|1155 200| |T|
 T Leyline Feed: Ley Station Aethenar |QID|43591| |N|Leyline Feed in {Ley Station Aethenar} (48.83,49.43)| |Z|1033 38|
 
 R Lower Gardens |OID|40949| |N|Travel to {Lower Gardens} (25.65,20.52) (25.98,21.65) (26.37,23.95) (27.19,24.67) (27.83,20.92) (27.81,18.98)| |Z|1033 0|

@@ -44,6 +44,8 @@
 	<Script file="..\DugisGuide_Ach_Legion\Vrykul_Story_Bro.lua"/>
 	<Script file="..\DugisGuide_Ach_Legion\What_a_Ripoff.lua"/>
 	<Script file="..\DugisGuide_Ach_Legion\Why_Cant_I_Hold.lua"/>	
+	
+	<Script file="..\DugisGuide_Ach_Legion\Rocfeather_Skyhorn_Kite.lua"/>	
 
 	<Script file="Tiny_Terrors_Tanaan_A.lua"/>
 	<Script file="Big_Adventure_A.lua"/>

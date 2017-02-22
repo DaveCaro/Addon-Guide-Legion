@@ -169,8 +169,8 @@ function Guides:Initialize()
 	local activeTabInfo, PopulateSuggestedGuides
     local lastClickedTab = nil
     
-	local function TabInfoActivate(self)
     
+	local function TabInfoActivate_(self, isInThread)
         DGV:AddGuideToRecentGuides(CurrentTitle)
         
         PopulateRecentGuides()
@@ -215,8 +215,18 @@ function Guides:Initialize()
                 guideategorieswrapper:ClearAllPoints() 
             end            
         
-            local wrapper = GUIUtils:SetTreeData(guidesMainScroll.frame, nil, "guideategories", 
-                treeData, nil, nil, nil, nil, 400, -30, 5, -5
+            local x = 400
+            local y = -30
+            local parent = guidesMainScroll.frame
+            
+            if DugisMain then
+                parent = DugisMain
+                x = 400
+                y = -30
+            end
+        
+            local wrapper = GUIUtils:SetTreeData(parent, nil, "guideategories", 
+                treeData, nil, nil, nil, nil, x, y, 5, -5
                 ,function(oryginalText)
                    if DGV.ProcessNPCLeafColor then
                        return DGV.ProcessNPCLeafColor(oryginalText, self.guidetype)
@@ -233,11 +243,13 @@ function Guides:Initialize()
                     end
 
                     guidesMainScroll.scrollBar:SetMinMaxValues(1, newMax)
-                    UpdateWhatsNewFramePositions()
+                    if UpdateWhatsNewFramePositions then
+                        UpdateWhatsNewFramePositions()
+                    end
                  end,
                  function(self, delta)
                     guidesMainScroll.scrollBar:SetValue(guidesMainScroll.scrollBar:GetValue() - delta * 44)  
-                 end)
+                 end, nil, nil, nil, nil, nil, nil, nil, isInThread)
 
             if DugisMain then
                 wrapper:SetParent(DugisMain)
@@ -405,7 +417,7 @@ function Guides:Initialize()
 			DugisGuideViewer.Modules.ModelViewer.Frame:Hide()
             
             --HOME
-            TabInfoActivate(tabs[1])
+            Guides.TabInfoActivate(tabs[1])
 		end
 
 		if self.text == "Current Guide" and DGV:isValidGuide(CurrentTitle) == true then	
@@ -523,7 +535,7 @@ function Guides:Initialize()
         
         if lastClickedTab ~= self.text and guideategorieswrapper then
             guideategorieswrapper:SaveExpansionState(self.text)
-            guideategorieswrapper:LoadExpansionState(lastClickedTab)
+            guideategorieswrapper:LoadExpansionState(lastClickedTab, isInThread)
             guidesMainScroll.scrollBar:SetValue(0)
         end
         
@@ -532,7 +544,7 @@ function Guides:Initialize()
             
             tabs[MACROS_TAB].treeData = {}
             guideategorieswrapper:UpdateTreeVisualization()
-            TabInfoActivate(tabs[MACROS_TAB])
+            Guides.TabInfoActivate(tabs[MACROS_TAB])
         
             DGVHomeFrame:Hide()
             guidesMainScroll.frame:Hide()
@@ -1132,9 +1144,15 @@ function Guides:Initialize()
         
         lastClickedTab = self.text
 	end
+    
+    function Guides.TabInfoActivate(self)
+        LuaUtils:RunInThreadIfNeeded("TabInfoActivate", function(isInThread, self)   
+            TabInfoActivate_(self, isInThread)
+        end, nil, {self})
+    end    
 	
 	for _,tab in ipairs(tabs) do
-		tab.Activate = TabInfoActivate
+		tab.Activate = Guides.TabInfoActivate
 		tab.RightShouldScroll = TabInfoRightShouldScroll
 		tab.LeftShouldScroll = TabInfoLeftShouldScroll
 	end
@@ -1161,24 +1179,31 @@ function Guides:Initialize()
 		suspendViewFrameUpdate = true
 	end
 
-	local function ResumeViewFrameUpdate()
+	local function ResumeViewFrameUpdate(isInThread)
 		suspendViewFrameUpdate = false
-		DGV:ViewFrameUpdate()
+		DGV:ViewFrameUpdate(isInThread)
 	end
 
 	function DGV:ReloadButtonOnClick()
 		DGV:DisplayViewTab(CurrentTitle)
+        DGV:CollapseCurrentGuide()
+        DGV:UpdateCurrentGuideExpanded()        
 	end
 
 	function DGV:ResetButtonOnClick()
+        LuaUtils:RunInThreadIfNeeded("DGV_ResetButtonOnClick", function(isInThread)
+        
 		SuspendViewFrameUpdate()
 		local i
 		for i = 1, #visualRows do
+            LuaUtils:Yield(isInThread)
 			DGV:ClrChk(i)	
 		end
-		ResumeViewFrameUpdate()
+		ResumeViewFrameUpdate(isInThread)
 		DGV:MoveToNextQuest(1)
 		DGV:AutoScroll(0)
+        
+        end)    
 	end
     
     --choiceId - textual or numeric value
@@ -1230,7 +1255,7 @@ function Guides:Initialize()
 		--Update visual state of potetial PRE tagged rows
         
         if duringMultiStepsChecking == false then
-            DGV:ViewFrameUpdate()
+           -- DGV:ViewFrameUpdate()
         end
 	end
 
@@ -1323,6 +1348,15 @@ function Guides:Initialize()
 			local qid 				=  DGV.qid[guideIndex]
 			local logidx 			=  DGV:GetQuestLogIndexByQID(qid)
 			local desc, _, done 	=  GetQuestLogLeaderBoard(tonumber(questpart), logidx)		
+            
+            --Fallback to GetQuestObjectiveInfo in case GetQuestLogLeaderBoard doesn't return information about part completeness.
+            if not desc and not done and not logidx then
+                local text, objectiveType, finished = GetQuestObjectiveInfo(qid, questpart, false)
+                if finished then
+                    return true
+                end
+            end
+            
 			if done and logidx then 
 				return true
 			end
@@ -1330,13 +1364,17 @@ function Guides:Initialize()
 	end
 	
 	--Update the look of the frame on QLU
-	function DGV:ViewFrameUpdate()
+	function DGV:ViewFrameUpdate(isInThread)
 		if suspendViewFrameUpdate or not DugisMain:IsVisible() then return end
 		local i, qid
 		for i, qid in ipairs(DGV.actions) do
-			visualRows[i].Button:SetNormalTexture(DGV:getIcon(DGV.actions[i], i ))		
-			DGV:SetQuestColor(i)
-			DGV:SetQuestText(i)
+            local row = visualRows[i]
+            if row and row.Button then
+                LuaUtils:Yield(isInThread)
+                row.Button:SetNormalTexture(DGV:getIcon(DGV.actions[i], i ))		
+                DGV:SetQuestColor(i)
+                DGV:SetQuestText(i)
+            end
 		end
 	end
 
@@ -1608,13 +1646,15 @@ function Guides:Initialize()
 		end
 	end
 
-	function DGV:SetQuestsState()
-		SuspendViewFrameUpdate()
+	function DGV:SetQuestsState(isInThread)
+		--SuspendViewFrameUpdate()
 		local i
 		if DGU.QuestState and visualRows and #visualRows then
 			
 			--Find all previously completed quests and check them
-			for i=1, #visualRows do			
+			for i=1, #visualRows do		
+                LuaUtils:Yield(isInThread)
+            
 				local qid = self.qid[i]
 				local state = self:GetQuestState(i)
 				if state == "X" or DGU.toskip[qid] then --User skipped	
@@ -1626,7 +1666,7 @@ function Guides:Initialize()
 				end
 			end
 			
-			self:UpdateMainFrame()
+			self:UpdateMainFrame(isInThread)
 
 		end	
 		--ResumeViewFrameUpdate()	--UpdateMainFrame will ResumeViewFrameUpdate()
@@ -2317,12 +2357,10 @@ function Guides:Initialize()
         
         lastBoxIndex = boxindex
         
-        if (clickedIndexEnd - clickedIndexStart) > 10 then
-            duringMultiStepsChecking = true
-        end
+        duringMultiStepsChecking = true
         
         for i = clickedIndexStart, clickedIndexEnd do
-            DGV:TriStateChk(i, clearBox)		
+            DGV:TriStateChk(i, clearBox)	
             
             local chk	 =  DGV:GetQuestState(i)
             
@@ -2375,11 +2413,14 @@ function Guides:Initialize()
             
             end		
         end
-
+        
         duringMultiStepsChecking = false
-        DGV:ViewFrameUpdate()
-
-		DGV:SetPercentComplete()
+        
+        LuaUtils:RunInThreadIfNeeded("DugisGuideViewer_CheckButton_OnEvent", function(isInThread)
+            DGV:ViewFrameUpdate(isInThread)
+        end, function()
+            DGV:SetPercentComplete()
+        end)
 
 	end
     
@@ -2693,7 +2734,17 @@ function Guides:Initialize()
     
     hooksecurefunc("BonusObjectiveTracker_TrackWorldQuest", function()
         DugisGuideViewer:MoveToPrevQuest()
-    end)      
+    end)     
+
+    local function isQuestCompleted(qid)
+        if qid then
+            local logIndx = DugisGuideViewer:GetQuestLogIndexByQID(qid)
+            if logIndx then
+                local _, _, _, _, _, qComplete, _, _ = GetQuestLogTitle(logIndx) 
+            end
+            return qComplete == 1 
+        end
+    end
 
 	function DGV:CheckForSkip(indx) 
 		--local lootitem			 	= DGV:ReturnTag("L", indx)
@@ -2713,10 +2764,11 @@ function Guides:Initialize()
 		local WQ					= DGV:ReturnTag("WQ", indx)
 		local tidInlog
        
-        if tonumber(questId) and LuaUtils:trim(questId) ~= "" then
+        if questId and LuaUtils:trim(questId) ~= "" and tonumber(questId) ~= nil then
             local isWOrldQuest = QuestUtils_IsQuestWorldQuest(questId)
             if WQ or isWOrldQuest then
-                if not DGV:IsQuestInObjectiveTracker(questId) then
+            
+                if not DGV:IsQuestInObjectiveTracker(questId) or isQuestCompleted(questId) then
                     return true
                 end
             end
@@ -2884,13 +2936,16 @@ function Guides:Initialize()
 		end
 	end 
 
-	function DGV:FindNextUnchecked( )
+	function DGV:FindNextUnchecked(isInThread)
 		local indx = 1
 		while indx < #visualRows do
 			--self:DebugFormat("FindNextUnchecked", "self:GetQuestState(indx)", self:GetQuestState(indx), "DGV:CheckForSkip(indx)", DGV:CheckForSkip(indx))
 			if self:GetQuestState(indx) == "U" and DGV:CheckForSkip(indx) == false then
 				break
 			end
+            
+            LuaUtils:Yield(isInThread)
+            
 			indx = indx + 1
 		end
 		return indx
@@ -2904,7 +2959,7 @@ function Guides:Initialize()
 	--Move to next quest after CurrentQuest we are on
 	--Or specific quest with MoveToIndex
 
-	function DGV:MoveToNextQuest(MoveToIndex)
+	function DGV:MoveToNextQuest(MoveToIndex, isInThread)
 		local checkMoved
 		if DGV:ReturnTag("AYG", DGU.CurrentQuestIndex) and not MoveToIndex then 
 			checkMoved = DGU.NextQuestIndex
@@ -2918,6 +2973,7 @@ function Guides:Initialize()
 			local i
 			for i = 1, #visualRows do
 				visualRows[i]:SetNormalTexture("")
+                LuaUtils:Yield(isInThread)
 			end
 			visualRows[DGU.CurrentQuestIndex]:SetNormalTexture("")
 
@@ -2928,14 +2984,14 @@ function Guides:Initialize()
 
 				DebugPrint("#####havelootitem(DGU.CurrentQuestIndex) ")
 				DGV:SetChkToComplete(DGU.CurrentQuestIndex)
-				DGV:MoveToNextQuest()    
+				DGV:MoveToNextQuest(nil, isInThread)    
 			end	
 			
 			if self:ReturnTag("AS", DGU.CurrentQuestIndex) and self:UserSetting(DGV_AUTOSTICK) then
 				local row = visualRows[DGU.CurrentQuestIndex]
 				self.Modules.StickyFrame:AddRow(row)
 				DGV:SetChkToComplete(DGU.CurrentQuestIndex)
-				DGV:MoveToNextQuest()   
+				DGV:MoveToNextQuest(nil, isInThread)   
 
 			end
 			self.UpdateStickyFrame( )
@@ -2984,7 +3040,7 @@ function Guides:Initialize()
 
 	function DGV:MoveToPrevQuest()
 			local checkMoved = DGU.CurrentQuestIndex
-            if not checkMoved then
+            if not checkMoved or not visualRows or not visualRows[checkMoved] then
                 return
             end
 			visualRows[DGU.CurrentQuestIndex]:SetNormalTexture("")
@@ -3187,6 +3243,10 @@ function Guides:Initialize()
         end
     
 		if InCombatLockdown() then print("|cff11ff11Dugi Guides: |r|cffcc0000Cannot load guides during combat.|r Please try again."); return end
+        
+        MainFramePreloader:ShowPreloader()   
+        SmallFramePreloader:ShowPreloader()
+        
 		
 		if title ~= CurrentTitle then
 			self:ClearStickyFrame()
@@ -3250,6 +3310,9 @@ function Guides:Initialize()
 		DGV:UpdateAllSIDs()
         
         SetCurrentGuideIcon()
+        
+        MainFramePreloader:HidePreloader()
+        SmallFramePreloader:HidePreloader()
 	end
 	
 	function Dugis_OnMouseWheel(self, delta)
@@ -3308,7 +3371,7 @@ function Guides:Initialize()
 			end
 		end
 
-        if NPCJournalFrame.needToUpdateWaypointButtonsWN then
+        if NPCJournalFrame and NPCJournalFrame.needToUpdateWaypointButtonsWN then
             UpdateWhatsNewText()
             NPCJournalFrame.needToUpdateWaypointButtonsWN = nil
         end
@@ -3454,7 +3517,7 @@ function Guides:Initialize()
 					--DebugPrint("guideName="..guideName)
 					
 					--DebugPrint("tab"..tabNum.."row"..guideNum)
-					DGV:DisplayViewTab(guideName)
+					DGV:DisplayViewTab(guideName, nil, true)
                     DGV:SetGuidePercentageCacheValue(guideName, guideType)
 					
 					coroutine.yield()
@@ -3462,7 +3525,7 @@ function Guides:Initialize()
 			end
 		end
 		
-		DGV:DisplayViewTab(currentGuide)
+		DGV:DisplayViewTab(currentGuide, nil, true)
 		
 		collectgarbage()
 		
@@ -3494,10 +3557,19 @@ function Guides:Initialize()
 		
 		if logIndx then _, _, _, _, _, qComplete, _, _ = GetQuestLogTitle(logIndx) end
 		
-		if qComplete == 1 or self:QuestPartComplete(guideIndex) or 
-		--(needsLoot and self:IsCompleteLootQO("QLU", nil, guideIndex)) or 
-		(not isDaily and self:HasQuestBeenTurnedIn(qid)) or
-		self:ProfessionCompletedAtGuideIndex(guideIndex) or self:CheckForLocation(guideIndex) or self:AchieveCompleteFromGuideIndex(guideIndex) or self:CheckForHearth(guideIndex) then QuestComplete = true else QuestComplete = nil end
+        	--(needsLoot and self:IsCompleteLootQO("QLU", nil, guideIndex)) or 
+        
+		if qComplete == 1 
+        or self:QuestPartComplete(guideIndex) 
+        or (not isDaily and self:HasQuestBeenTurnedIn(qid)) 
+        or self:ProfessionCompletedAtGuideIndex(guideIndex) 
+        or self:CheckForLocation(guideIndex) 
+        or self:AchieveCompleteFromGuideIndex(guideIndex) 
+        or self:CheckForHearth(guideIndex) then 
+            QuestComplete = true 
+        else 
+            QuestComplete = nil 
+        end
 		
 		if (action == "A" and logIndx) or (QuestComplete and action ~= "T") or (QuestComplete and action == "T" and not logIndx) or questState == "C" or (oid1 and EvaluateOID(oid1)) or (oid2 and EvaluateOID(oid2)) or (oid3 and EvaluateOID(oid3)) or (oid4 and EvaluateOID(oid4)) or (ayg and EvaluateAYG(ayg)) then--and strmatch(action, "[NFfRBbh]") and not questPart and not needsLoot) then 
 			QuestComplete = true
@@ -4430,12 +4502,9 @@ function Guides:Initialize()
 	function DGV:PopulateObjectives(title, SearchMode, threading)
 		--DGV:DebugFormat("PopulateObjectives", "stack", debugstack())
 			if not title then title = CurrentTitle end
-			local numrows = 0
-			local rowspacing = 0
-			crowheight = 34.4
+			crowheight = 35
 			local i
 			local rowObj
-			local SearchResults = {}
 			
 			SuspendViewFrameUpdate()
 
@@ -4453,10 +4522,14 @@ function Guides:Initialize()
 			
 			self:SetViewTabTitle(self:GetFormattedTitle(title))
 					
+                    
+            local searchResultIndex = 0
+            local calculatedHeight = 0
+                    
 			for i = 1 , #DGV.actions do 
                 if threading then
                     coroutine.yield()
-					LuaUtils:WaitForCombatEnd(true)
+					--LuaUtils:WaitForCombatEnd(true)
                 end
 				
 				local dgvRowName = "DGVRow"..i
@@ -4495,18 +4568,22 @@ function Guides:Initialize()
 				--visualRows[i] = rowObj
 				
 				if not SearchMode then 
-					if i == 1 then rowObj:SetPoint("TOPLEFT", 0, -3) else rowObj:SetPoint("TOP", visualRows[i-1], "BOTTOM", 0, rowspacing )  end
-				
+                    local currentY = -(i - 1) * 35
+                    calculatedHeight = -currentY
+                    
+                    --This was a very bad idea to make the position to be relativily to the previous node. That way in case big amount of nodes it required a lot of calculations.
+                    --rowObj:SetPoint("TOP", visualRows[i-1], "BOTTOM", 5, rowspacing )  
+                    
+                    --Better idea is to calculate right position for each node relatively to the parent. Like this:
+                    rowObj:SetPoint("TOPLEFT", 0, currentY)  
 				else
 					if self.Search:InSearchResults( i ) then
-						if SearchResults[1] == nil then
-							--DebugPrint("FIRST Search result #"..i)
-							rowObj:SetPoint("TOPLEFT", 0, -3)
-						else
-							--DebugPrint("Search result #"..i.." anchored to"..SearchResults[#SearchResults])					
-							rowObj:SetPoint("TOP", "DGVRow"..SearchResults[#SearchResults], "BOTTOM", 0, rowspacing ) 
-						end
-						table.insert(SearchResults, i)
+                        searchResultIndex = searchResultIndex + 1
+                        
+                        local currentY = -(searchResultIndex - 1) * 35
+                        calculatedHeight = -currentY
+                        
+						rowObj:SetPoint("TOPLEFT", 0, currentY)
 					else
 						rowObj:Hide()
 					end
@@ -4520,15 +4597,9 @@ function Guides:Initialize()
 				
 				if not self:HasCoord(i) then rowObj.WayPoint:Disable() else rowObj.WayPoint:Enable() end
 				if self:ReturnTag("NT", i) then rowObj.Chk:Disable() else rowObj.Chk:Enable() end
-				
-				--DGV:SetQuestText(i)
-				--DGV:SetQuestColor(i)
-				
-				numrows = numrows + 1
 			end
 
 			local fwidth = DGV:GetFontWidth(L["Reload"])
-
 
 			DugisReloadButton:SetText(L["Reload"]) 
 			DugisReloadButton:SetWidth(fwidth + 20)
@@ -4537,19 +4608,20 @@ function Guides:Initialize()
 			DugisResetButton:SetText(L["Reset"])
 			DugisResetButton:SetWidth(fwidth + 20)
 			
-			--[[fwidth = DGV:GetFontWidth(L["Suggest"])
-			DugisSuggestButton:SetText(L["Suggest"])
-			DugisSuggestButton:SetWidth(fwidth + 35)]]
-			
-			--[[fwidth = DGV:GetFontWidth(L["Preload"])
-			DugisPreloadButton:SetText(L["Preload"])
-			DugisPreloadButton:SetWidth(fwidth + 35)]]		
-			
-			activeTabInfo.rightScrollMax = (crowheight * numrows)
-			if activeTabInfo.rightScrollMax<=1 then activeTabInfo.rightScrollMax = activeTabInfo.RightFrame:GetHeight() end
-			
-			--LastGuideNumRows = numrows
-			--ResumeViewFrameUpdate() --SetQuestsState() will ResumeViewFrame
+            calculatedHeight = calculatedHeight - 280
+           
+			if calculatedHeight <=1 then 
+                calculatedHeight = 500
+            end
+           
+            DugisMain.rightScroll.bar:SetMinMaxValues(1, calculatedHeight)
+            DugisMain.rightScroll.bar:SetValue(0)
+
+            LuaUtils:Delay(1, function()
+                DugisMain.rightScroll.bar:SetMinMaxValues(1, calculatedHeight)
+                DugisMain.rightScroll.bar:SetValue(0)
+            end)
+            
 	end
 
 	function DGV:SetQuestText( i ) 
@@ -5423,14 +5495,16 @@ function Guides:Initialize()
 		DGV.visualRows = {}
 		visualRows = DGV.visualRows
 
-		function DGV:CompleteQuest()
+        
+        local questToUncomplete = {}
+        
+		function DGV:CompleteQuest(completedQID)
 			--DebugPrint("Finished a quest, HookScript QuestFrameCompleteQuestButton")
-			local qid = DGV:GetQIDFromQuestName(GetTitleText())
+			local qid = completedQID or DGV:GetQIDFromQuestName(GetTitleText())
 			--if qid then
 
 			--	DGU.turnedinquests[qid] = true
 			--end
-
 			--if CurrentAction and qid then DebugPrint("HOOK qid is"..qid.."*".."action ="..CurrentAction.."*".."titletext="..GetTitleText()) end
 
 			local acceptandcomplete 			= DGV:ReturnTag("E")
@@ -5440,6 +5514,8 @@ function Guides:Initialize()
 			if not  DGV.quests1L[DGU.CurrentQuestIndex] then return end
 			local _, _, questnoparen = DGV.quests1L[DGU.CurrentQuestIndex]:find("([^%(]*)")
 			questnoparen = questnoparen:trim()
+            
+            questToUncomplete[#questToUncomplete + 1] = qid
 
 			if (CurrentAction == "T" and DGV.qid[DGU.CurrentQuestIndex] == qid) or (acceptandcomplete and GetTitleText() == L[questnoparen] )
 			then
@@ -5451,6 +5527,20 @@ function Guides:Initialize()
 				DGV:MoveToNextQuest()
 			end
 			--JustTurnedInQID = qid
+            LuaUtils:Delay(5, function()
+                LuaUtils:foreach(questToUncomplete, function(qidToUncheck)
+                    for i=1, #DugisGuideViewer.visualRows do
+                        local qid = DugisGuideViewer.qid[i]
+                        if tonumber(qidToUncheck) == tonumber(qid) and QuestUtils_IsQuestWorldQuest(tonumber(qid)) then
+                            DugisGuideViewer:SetChkToNotComplete(i)
+                        end
+                    end
+                end)
+                
+                questToUncomplete = {}
+                DugisGuideViewer:MoveToPrevQuest()
+            end)
+            
 		end
 
 		function DGV:ClearScreen()
@@ -5519,12 +5609,16 @@ function Guides:Initialize()
 		end
 		abandonQuestReaction = RegisterFunctionReaction("AbandonQuest", nil, UpdateAbandonQID)
 		
-		function DGV:UpdateMainFrame()
+		function DGV:UpdateMainFrame(isInThread)
 			if DGV:isValidGuide(CurrentTitle) ~= true then return end
 			SuspendViewFrameUpdate()
 			local i, guideIndex
 			local setChecked = false 
 			
+            
+            local indicesToComplete = {}
+            local notCompletedQuests = {}
+            
 			--Check for all completed or user uncompleted quests in quest log 
 			for guideIndex = 1, #visualRows do
 				local qComplete, QuestComplete
@@ -5543,27 +5637,68 @@ function Guides:Initialize()
 				local buff			= self:ReturnTag("BUFF", guideIndex)
 				
 				if logIndx then _, _, _, _, _, qComplete, _, _ = GetQuestLogTitle(logIndx) end
-				
-				if qComplete == 1 or self:QuestPartComplete(guideIndex) or 
-				--(needsLoot and self:IsCompleteLootQO("QLU", nil, guideIndex)) or 
-				(not isDaily and self:HasQuestBeenTurnedIn(qid)) 
-					 or self:ProfessionCompletedAtGuideIndex(guideIndex) or self:CheckForLocation(guideIndex) or self:AchieveCompleteFromGuideIndex(guideIndex) or self:CheckForHearth(guideIndex) then QuestComplete = true else QuestComplete = nil end
+                
+                LuaUtils:Yield(isInThread)
+				 
+			 	if qComplete == 1 
+                 or self:QuestPartComplete(guideIndex) 
+                 or (not isDaily and self:HasQuestBeenTurnedIn(qid)) 
+                 or self:ProfessionCompletedAtGuideIndex(guideIndex) 
+                 or self:CheckForLocation(guideIndex) 
+                 or self:AchieveCompleteFromGuideIndex(guideIndex) 
+                 or self:CheckForHearth(guideIndex)  then 
+                    QuestComplete = true 
+                 else 
+                    QuestComplete = nil 
+                    if qid then
+                        notCompletedQuests[qid] = true
+                    end
+                 end
 								
-				if (action == "A" and logIndx) or (QuestComplete and action ~= "T") or (QuestComplete and action == "T" and not logIndx) or (ayg and EvaluateAYG(ayg)) or (questState == "C" and strmatch(action, "[NFfRBbh]") and not questPart and not needsLoot) or (reqlvl and reqlvl <= playerLevel and not action == "f") or (oid1 and EvaluateOID(oid1)) or (oid2 and EvaluateOID(oid2)) or (oid3 and EvaluateOID(oid3)) or (oid4 and EvaluateOID(oid4)) or (tid and EvaluateTID(tid)) or (buff and EvaluateBUFF(buff)) then  												
+				if (action == "A" and logIndx) 
+                or (QuestComplete and action ~= "T") 
+                or (QuestComplete and action == "T" and not logIndx) 
+                or (ayg and EvaluateAYG(ayg)) 
+                or (questState == "C" and strmatch(action, "[NFfRBbh]") and not questPart and not needsLoot) 
+                or (reqlvl and reqlvl <= playerLevel and not action == "f") 
+                or (oid1 and EvaluateOID(oid1)) 
+                or (oid2 and EvaluateOID(oid2)) 
+                or (oid3 and EvaluateOID(oid3)) 
+                or (oid4 and EvaluateOID(oid4)) 
+                or (tid and EvaluateTID(tid)) 
+                or (buff and EvaluateBUFF(buff)) then  												
 					if not visualRows[guideIndex].Chk:GetChecked() then 
-						self:SetChkToComplete(guideIndex)
-						setChecked = true
-					
+                   
+                       indicesToComplete[guideIndex] = qid
+					   setChecked = true
+
 					end 
 				end
 				guideIndex = guideIndex + 1
 			end
-			
+            
+            LuaUtils:foreach(indicesToComplete, function(qid, guideIndex)
+                if not qid then
+                    DGV:SetChkToComplete(guideIndex)
+                else
+                    if QuestUtils_IsQuestWorldQuest(qid) then
+                        --Making unchecked World Quests on complete. Filtering out compelted quests.
+                        if notCompletedQuests[qid] then
+                            DGV:SetChkToComplete(guideIndex)
+                        end
+                    else
+                        DGV:SetChkToComplete(guideIndex)
+                    end
+                end
+            end)
+            
 			if setChecked and not self.preLoadMode then
-				if (self:FindNextUnchecked() ~= DGU.CurrentQuestIndex) then
-					self:MoveToNextQuest(self:FindNextUnchecked())
+                local nextUnchecked = self:FindNextUnchecked(isInThread)
+            
+				if (nextUnchecked ~= DGU.CurrentQuestIndex) then
+					self:MoveToNextQuest(nextUnchecked, isInThread)
 				else
-					self:MoveToNextQuest()
+					self:MoveToNextQuest(nil, isInThread)
 				end
 			elseif self:ReturnTag("POI", guideIndex) then 
 				self:DelayAndMapCurrentObjective(0.2)				
@@ -5574,6 +5709,8 @@ function Guides:Initialize()
 				--local logidx = self:GetQuestLogIndexByQID(AbandonQID)
 				--if not logidx then --user abandoned quest but it hasn't registered yet			
 					for i =1, #visualRows do
+                    
+                        LuaUtils:Yield(isInThread)
 						if self.qid[i] == AbandonQID and strmatch(self.actions[i], "[ACTNKR]") then
 							self:ClrChk(i)
 						end
@@ -5591,7 +5728,7 @@ function Guides:Initialize()
 			end				
 			
 			self.UpdateStickyFrame( )
-			ResumeViewFrameUpdate()			
+			ResumeViewFrameUpdate(isInThread)			
 		end
 		
 		-- function DGV:UpdateQueryQuests()

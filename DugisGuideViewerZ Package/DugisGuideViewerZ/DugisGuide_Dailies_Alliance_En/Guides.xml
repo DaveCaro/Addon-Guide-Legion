@@ -1,5 +1,7 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/">
 
+	<Script file="..\DugisGuide_Legion_En\World_Quests.lua"/>
+	
 	<Script file="100_Tanaan_Jungle.lua"/>
 	<Script file="Tanaan_Jungle_A.lua"/>	
 	<Script file="Garrison_A.lua"/>

@@ -258,6 +258,7 @@ local function LoadSettings()
 	DGV_WAYPOINT_PING = 79
     
     DGV_HIDE_MODELS_IN_WORLDMAP = 80
+    DGV_AUTO_MOUNT = 81
 
     
 	--Sliders
@@ -270,6 +271,7 @@ local function LoadSettings()
 	DGV_TARGETBUTTONSCALE = 205
 	DGV_ITEMBUTTONSCALE = 206
 	DGV_JOURNALFRAMEBUTTONSCALE = 207
+	DGV_SMALLFRAME_STEPS = 208
 	
 	--Dropdowns
 	DGV_GUIDEDIFFICULTY = 100
@@ -310,7 +312,7 @@ local function LoadSettings()
 					SettingsRevision = 0,
 					WatchFrameSnapped = true,
 					GuideOn = true,
-					sz = 80, --Num check boxes
+					sz = 81, --Num check boxes
 					[DGV_QUESTLEVELON]			= { category = "Other",	text = "Display Quest Level", 	checked = false,	tooltip = "Show the quest level on the large and small frames", module = "Guides"},
 					[DGV_QUESTCOLORON] 		= { category = "Other",	text = "Color Code Quest", 	checked = true,		tooltip = "Color code quest against your character's level", module = "Guides"},
 					[DGV_LOCKSMALLFRAME] 		= { category = "Frames",	text = "Lock Small Frame", 	checked = false,	tooltip = "Lock small frame into place", module = "SmallFrame"},
@@ -358,6 +360,7 @@ local function LoadSettings()
 					[DGV_MAPPREVIEWHIDEBORDER]	= { category = "Map Preview",	text = "Hide Border",		checked = true,		tooltip = "Hides the minimized map border when map preview is on.",},
 					[DGV_AUTOQUESTITEMLOOT]	= { category = "Questing",	text = "Auto Loot Quest Item",	checked = true,		tooltip = "Automatically loot quest items.",},
 					[DGV_ACCOUNTWIDEACH]		= { category = "Other",text = "Account Wide Achievement",	checked = false,		tooltip = "Detects account wide achievements completion.", module = "Guides"},
+					[DGV_AUTO_MOUNT]		= { category = "Auto Mount", text = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0:0:0:-1|tEnabled auto mount",	checked = false,		tooltip = "Automatically mounts the fastest available mount.", module = "Guides"},
 					[DGV_EMBEDDEDTOOLTIP]		= { category = "Display",	text = "Embedded Tooltip",	checked = true,	tooltip = "Displays tooltip information under guide step", module = "Guides"},
 					[DGV_FIXEDWIDTHSMALL]		= { category = "Display",	text = "Fixed Width Small Frame",	checked = true,	tooltip = "Floating Small Frame won't adjust size horizontally and remain the same width as the Objective Tracker.", module = "Guides"},
 					[DGV_OBJECTIVECOUNTER]		= { category = "Display",	text = "Show Quest Objectives",	checked = true,		tooltip = "Display quest objectives in small/anchored frame instead of the watch frame", module = "Guides"},
@@ -579,6 +582,7 @@ local function LoadSettings()
                     [DGV_DISPLAYALLSTATS]			= { category = "Gear Scoring",	showOnRightColumn = false,	text = "Display All Stats",	checked = false,	tooltip = "Display unused stats for gear scoring",},					
                   
                     [DGV_JOURNALFRAMEBUTTONSCALE]	    = {	category = "Frames",	text = "NPC Journal Button Size (%.1f)", checked = 4, module = "SmallFrame", tooltip = "Size of the NPC Journal Frame button." },
+                    [DGV_SMALLFRAME_STEPS]	    = {	category = "Display",	text = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0:0:0:-1|tMaximum Multi Steps (%.0f)", checked = 6, module = "SmallFrame", tooltip = "Maximum amout of steps in the Small Frame." },
 					[DGV_RECORDSIZE]			= { checked = 50 },
 				},
 			},
@@ -647,6 +651,7 @@ function DugisGuideViewer:OnInitialize()
 	self:RegisterEvent("QUEST_ACCEPTED")
 	self:RegisterEvent("QUEST_WATCH_UPDATE")
 	self:RegisterEvent("QUEST_LOG_UPDATE")
+	self:RegisterEvent("QUEST_TURNED_IN")
 	self:RegisterEvent("UNIT_QUEST_LOG_CHANGED")	
 	self:RegisterEvent("QUEST_AUTOCOMPLETE")
 	self:RegisterEvent("QUEST_DETAIL")
@@ -672,7 +677,7 @@ function DugisGuideViewer:OnInitialize()
 		{ value = "Search Locations", 	text = L["Search Locations"], 	icon = nil },
 		{ value = "Questing", 	text = L["Questing"], 	icon = nil },
 		{ value = "Waypoints", 	text = L["Waypoints"], icon = nil },
-		{ value = "Display", 	text = L["Display"], 	icon = nil },
+		{ value = "Display", 	text = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0:0:0:-1|t"..L["Display"], 	icon = nil },
 		{ value = "Borders", 	text = L["Borders"], 	icon = nil },
 		{ value = "Frames", 	text = L["Frames"], 	icon = nil },
 		{ value = "Maps", 		text = L["Maps"], 		icon = nil },
@@ -683,6 +688,7 @@ function DugisGuideViewer:OnInitialize()
 		{ value = "Gear Scoring",		text = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0:0:0:-1|t"..L["Gear Scoring"],		icon = nil },
 		{ value = "Gear Finder",		text = L["Gear Finder"],		icon = nil },
 		{ value = "Memory", 	text = L["Memory"], 	icon = nil },
+		{ value = "Auto Mount", 		text = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0:0:0:-1|t"..L["Auto Mount"], 	icon = nil },
 		{ value = "Other", 		text = L["Other"], 	icon = nil },
 		{ value = "Profiles", 	text = L["Profiles"] },
 	}
@@ -714,6 +720,11 @@ function DugisGuideViewer:OnInitialize()
 	end
 	--self:InitMapping( )
 	DugisGuideViewer:UpdateMainFrame()
+    DugisGuideViewer:UpdateAutoMountEnabled()
+    
+    GUIUtils:CreatePreloader("MainFramePreloader", DugisMain)
+    MainFramePreloader:SetFrameStrata("HIGH")
+    
 end
 
 function DugisGuideViewer:initAnts()
@@ -841,7 +852,7 @@ function DugisGuideViewer:OnLoad()
 	DugisGuideViewer:SetEssentialsOnCancelReload()
     DugiGuidesOnLoadingStart()
 
-LuaUtils:PostCombatLoad(function(threading)
+LuaUtils:PostCombatRun("LoadingModules", function(threading)
     if not DugisGuideViewer:GuideOn() then
         DugiGuidesIsLoading = false
     end
@@ -1019,6 +1030,22 @@ local function GetGearScoringCriteria()
 	return gearScoringCriteria
 end
 
+function DugisGuideViewer:GetNamedMountType(mountType)
+    if  mountType == 230 then
+        return "ground"
+    end
+    
+    if mountType == 248  then
+        return "flying"
+    end
+    
+    if mountType == 254  or mountType == 231 or mountType == 232 then
+        return "aquatic"
+    end
+    
+    return ""
+end
+
 local AceGUI = LibStub("AceGUI-3.0")
 local function GetSettingsCategoryFrame(category, parent)
 	local self = DugisGuideViewer
@@ -1194,6 +1221,140 @@ local function GetSettingsCategoryFrame(category, parent)
 				end
 			end)
 	end
+    
+	if category == "Auto Mount" then
+        if not DGV_MountIcon_ground then
+        
+            local function onMountIconEnter(node)
+                local name = C_MountJournal.GetMountInfoByID(node.nodeData.data.mountId)
+                local creatureDisplayID, descriptionText, sourceText, isSelfMount, mountType = C_MountJournal.GetMountInfoExtraByID(node.nodeData.data.mountId)
+                
+                if DugisGuideViewer.NPCJournalFrame and name and creatureDisplayID then
+                DugisGuideViewer.NPCJournalFrame:ShowGuideObjectPreview(name, creatureDisplayID)
+                end
+            end
+            
+            local function onMountIconLeave(node)
+                if DugisGuideViewer.NPCJournalFrame.hintFrame then
+                    DugisGuideViewer.NPCJournalFrame.hintFrame.frame:Hide()   
+                end
+            end
+        
+            local function PrepareMountsForTree(requestedMountType)
+                local result = {}
+            
+                result[#result + 1] = {name = "Don't mount " .. requestedMountType .. " mounts", icon = "Interface\\Buttons\\UI-GroupLoot-Pass-Up"
+                , data = {mountType = requestedMountType, buttonType = "none"}}
+                
+                result[#result + 1] = {name = "Random Favorite", icon = "Interface\\Icons\\achievement_guildperk_mountup"
+                , data = {mountType = requestedMountType, buttonType = "auto"}}
+            
+            
+                LuaUtils:foreach(C_MountJournal.GetMountIDs(), function(mountId)
+                    local name, _, icon, _, isUsable, _, isFavorite, _, _, _, isCollected = C_MountJournal.GetMountInfoByID(mountId)
+                    local _, _, _, _, mountType = C_MountJournal.GetMountInfoExtraByID(mountId)
+                    
+                    if isCollected and isUsable then
+                        if requestedMountType ==  DugisGuideViewer:GetNamedMountType(mountType) then
+                            result[#result + 1] = {name = name, icon = icon, onMouseEnter = onMountIconEnter, onMouseLeave = onMountIconLeave,
+                            data = {mountId = mountId, mountType = requestedMountType, buttonType = "mount-item"}}
+                        end
+                    end
+                  
+                end)
+            
+                return result
+            end
+            
+            function DugisGuideViewer:UpdateMountSettingsIcons()
+                LuaUtils:foreach({"ground", "flying", "aquatic"}, function(mountType)
+            
+                    local preferedMount =  DugisGuideViewer.chardb["prefered-auto-mount-"..mountType]
+                 
+                    if preferedMount == "auto" or preferedMount == nil then
+                        _G["DGV_MountIcon_"..mountType]:SetNormalTexture("Interface\\Icons\\achievement_guildperk_mountup")
+                        _G["DGV_MountIcon_"..mountType].Title:SetText("Random Favorite")
+                    elseif preferedMount == "none" then
+                        _G["DGV_MountIcon_"..mountType]:SetNormalTexture("Interface\\PaperDoll\\UI-Backpack-EmptySlot")
+                        _G["DGV_MountIcon_"..mountType].Title:SetText("None")
+                    else
+                        local name, _, icon = C_MountJournal.GetMountInfoByID(preferedMount)
+                        _G["DGV_MountIcon_"..mountType]:SetNormalTexture(icon)
+                        _G["DGV_MountIcon_"..mountType].Title:SetText(name)
+                    end
+                
+                end)
+            end
+            
+            local mountListScrollFrame
+            
+            local function ShowMounts(mountType)
+                local data = PrepareMountsForTree(mountType)
+                mountListScrollFrame = SetScrollableTreeFrame(frame, "mountsList", data, 300, -10, -10, 420, 308, function(visualNode)
+                    mountsListwrapper:Hide()
+                    
+                    if visualNode.nodeData.data.buttonType == "mount-item" then 
+                        DugisGuideViewer.chardb["prefered-auto-mount-"..mountType] = visualNode.nodeData.data.mountId
+                    elseif visualNode.nodeData.data.buttonType == "auto" then
+                        DugisGuideViewer.chardb["prefered-auto-mount-"..mountType] = "auto"
+                    elseif visualNode.nodeData.data.buttonType == "none" then
+                         DugisGuideViewer.chardb["prefered-auto-mount-"..mountType] = "none"
+                    end
+                    
+                    DugisGuideViewer:UpdateMountSettingsIcons()
+                    
+                    mountListScrollFrame.scrollBar:Hide()
+                end, 25, 27, nil, false
+                , 240 --Width
+                , 30
+                , 560, -40, 260  --scroll
+                , -7)
+                
+                mountListScrollFrame.scrollBar:ClearAllPoints()
+                mountListScrollFrame.frame:ClearAllPoints()
+                
+                mountListScrollFrame.scrollBar:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -20, -40)
+                mountListScrollFrame.frame:SetPoint("TOPRIGHT", frame, "TOPRIGHT", 100, -15)  
+            end
+        
+            local function addText(y, name, title)
+                local text = frame:CreateFontString(name, "ARTWORK", "GameFontHighlight")
+                text:SetText(L[title])
+                text:SetPoint("BOTTOMLEFT", frame, "TOPLEFT", 20, y)            
+            end
+            
+            local function addIcon(y, mountType)
+                local button = CreateFrame("Button", "DGV_MountIcon_"..mountType, frame, "DugisGuideTreeNodeTemplate")
+                button.Title:SetText("None")
+                button.Title:SetPoint("TOPLEFT", button, "TOPLEFT", 40, -10)
+                button:SetWidth(150)
+                button:SetHeight(32)
+                button.normal:SetWidth(32)
+                button.normal:SetHeight(32)
+                button.highlight:SetWidth(32)
+                button.highlight:SetHeight(32)
+                button:SetPoint("TOPLEFT", frame, "TOPLEFT", 16, y)
+                button:Show()
+                button:SetNormalTexture("Interface\\PaperDoll\\UI-Backpack-EmptySlot")
+                button:SetScript("OnClick", function()
+                    ShowMounts(mountType)
+                end)
+            end
+            
+            addText(-100, "groundTitle", "Prefered ground mount")
+            addIcon(-110, "ground")
+            
+            addText(-100 - 80, "flyingTitle", "Prefered flying mount")
+            addIcon(-110 - 80, "flying")
+            
+            addText(-100 - 160, "aquaticTitle", "Prefered aquatic mount")
+            addIcon(-110 - 160, "aquatic")
+            
+          
+        end
+        
+        DugisGuideViewer:UpdateMountSettingsIcons()
+	end
 	
 	--custom new profile
 	if category=="Profiles" then
@@ -1236,8 +1397,8 @@ local function GetSettingsCategoryFrame(category, parent)
 		top = top-dropdown:GetHeight()
 	end
 	if DGV_WeaponPreference then
-		Lib_UIDropDownMenu_Initialize(DGV_WeaponPreference, DGV_WeaponPreference.initFunc)
-		Lib_UIDropDownMenu_SetSelectedValue(DGV_WeaponPreference, DugisGuideViewer:UserSetting(DGV_WEAPONPREF))
+		LibDugi_UIDropDownMenu_Initialize(DGV_WeaponPreference, DGV_WeaponPreference.initFunc)
+		LibDugi_UIDropDownMenu_SetSelectedValue(DGV_WeaponPreference, DugisGuideViewer:UserSetting(DGV_WEAPONPREF))
 	end			
 	
 	--Smart Set Target Configuration Dropdown
@@ -1262,8 +1423,8 @@ local function GetSettingsCategoryFrame(category, parent)
 	end
 	if DGV_GASmartSetTargetDropdown then
 
-		Lib_UIDropDownMenu_Initialize(DGV_GASmartSetTargetDropdown, DGV_GASmartSetTargetDropdown.initFunc)
-		Lib_UIDropDownMenu_SetSelectedValue(DGV_GASmartSetTargetDropdown, DugisGuideViewer:UserSetting(DGV_GASMARTSETTARGET))
+		LibDugi_UIDropDownMenu_Initialize(DGV_GASmartSetTargetDropdown, DGV_GASmartSetTargetDropdown.initFunc)
+		LibDugi_UIDropDownMenu_SetSelectedValue(DGV_GASmartSetTargetDropdown, DugisGuideViewer:UserSetting(DGV_GASMARTSETTARGET))
 	end
 	
 	--Equip Set button
@@ -1294,8 +1455,8 @@ local function GetSettingsCategoryFrame(category, parent)
 		top = top-dropdown:GetHeight()
 	end
 	if DGV_StatCapLevelDifferenceDropdown then
-		Lib_UIDropDownMenu_Initialize(DGV_StatCapLevelDifferenceDropdown, DGV_StatCapLevelDifferenceDropdown.initFunc)
-		Lib_UIDropDownMenu_SetSelectedValue(DGV_StatCapLevelDifferenceDropdown, DugisGuideViewer:UserSetting(DGV_GASTATCAPLEVELDIFFERENCE))
+		LibDugi_UIDropDownMenu_Initialize(DGV_StatCapLevelDifferenceDropdown, DGV_StatCapLevelDifferenceDropdown.initFunc)
+		LibDugi_UIDropDownMenu_SetSelectedValue(DGV_StatCapLevelDifferenceDropdown, DugisGuideViewer:UserSetting(DGV_GASTATCAPLEVELDIFFERENCE))
 	end
 	
 	if SettingsDB[DGV_GAWINCRITERIACUSTOM].category==category and not DugisGearScoringLabel then
@@ -1374,8 +1535,8 @@ local function GetSettingsCategoryFrame(category, parent)
             end
         end)
         
-        Lib_UIDropDownMenu_Initialize(DugisGearWeightsClassDropdown, DugisGearWeightsClassDropdown.initFunc)
-        Lib_UIDropDownMenu_SetSelectedID(DugisGearWeightsClassDropdown, classIndex)  
+        LibDugi_UIDropDownMenu_Initialize(DugisGearWeightsClassDropdown, DugisGearWeightsClassDropdown.initFunc)
+        LibDugi_UIDropDownMenu_SetSelectedID(DugisGearWeightsClassDropdown, classIndex)  
         DugisGuideViewer.Modules.GearAdvisor.selectedClassIndex = classIndex 
     end         
         
@@ -1386,8 +1547,8 @@ local function GetSettingsCategoryFrame(category, parent)
             currentSpec = 1
         end
         
-        Lib_UIDropDownMenu_Initialize(DugisGearWeightsSpecializationDropdown, DugisGearWeightsSpecializationDropdown.initFunc)
-        Lib_UIDropDownMenu_SetSelectedID(DugisGearWeightsSpecializationDropdown, currentSpec)  
+        LibDugi_UIDropDownMenu_Initialize(DugisGearWeightsSpecializationDropdown, DugisGearWeightsSpecializationDropdown.initFunc)
+        LibDugi_UIDropDownMenu_SetSelectedID(DugisGearWeightsSpecializationDropdown, currentSpec)  
              
         DugisGuideViewer.Modules.GearAdvisor.selectedSpecIndex = currentSpec
     end 
@@ -1497,9 +1658,9 @@ local function GetSettingsCategoryFrame(category, parent)
 				nil, 
 				nil, 
 				function(button)
-                    Lib_UIDropDownMenu_Initialize(DugisGearWeightsClassDropdown, DugisGearWeightsClassDropdown.initFunc)
-                    Lib_UIDropDownMenu_SetSelectedValue(DugisGearWeightsClassDropdown, button.value)
-                    DugisGuideViewer.Modules.GearAdvisor.selectedClassIndex = Lib_UIDropDownMenu_GetSelectedID(DugisGearWeightsClassDropdown)
+                    LibDugi_UIDropDownMenu_Initialize(DugisGearWeightsClassDropdown, DugisGearWeightsClassDropdown.initFunc)
+                    LibDugi_UIDropDownMenu_SetSelectedValue(DugisGearWeightsClassDropdown, button.value)
+                    DugisGuideViewer.Modules.GearAdvisor.selectedClassIndex = LibDugi_UIDropDownMenu_GetSelectedID(DugisGearWeightsClassDropdown)
                     TryToSetCurrentSpecialization()
                     DugisGuideViewer.Modules.GearAdvisor:UpdateWeightsTextboxes()
 				end, 
@@ -1544,8 +1705,8 @@ local function GetSettingsCategoryFrame(category, parent)
             nil, 
             nil, 
             function(button)
-                Lib_UIDropDownMenu_SetSelectedValue(DugisGearWeightsSpecializationDropdown, button.value)
-                DugisGuideViewer.Modules.GearAdvisor.selectedSpecIndex = Lib_UIDropDownMenu_GetSelectedID(DugisGearWeightsSpecializationDropdown)
+                LibDugi_UIDropDownMenu_SetSelectedValue(DugisGearWeightsSpecializationDropdown, button.value)
+                DugisGuideViewer.Modules.GearAdvisor.selectedSpecIndex = LibDugi_UIDropDownMenu_GetSelectedID(DugisGearWeightsSpecializationDropdown)
                 DugisGuideViewer.Modules.GearAdvisor:UpdateWeightsTextboxes()
             end, 
             function() 
@@ -1558,7 +1719,7 @@ local function GetSettingsCategoryFrame(category, parent)
                     specializationNames[#specializationNames + 1] = name
                 end)
                 
-                Lib_UIDropDownMenu_SetWidth(DugisGearWeightsSpecializationDropdown, 100,0)
+                LibDugi_UIDropDownMenu_SetWidth(DugisGearWeightsSpecializationDropdown, 100,0)
                 return specializationNames
 		end)
         
@@ -1643,7 +1804,7 @@ local function GetSettingsCategoryFrame(category, parent)
 		end)
 
 		local button = CreateFrame("Button", "GA_ImportWeightsButton", frame, "UIPanelButtonTemplate")
-		local btnText = L["|TInterface\\AddOns\\DugisGuideViewerZ\\Artwork\\UpgradeArrow.tga:0:0:0:0|t Import Scores"]
+		local btnText = L["Import Scores"]
 		local fontwidth = DugisGuideViewer:GetFontWidth(btnText, "GameFontHighlight")
 		button:SetText(btnText)
 		button:SetWidth(fontwidth + 20)
@@ -1889,8 +2050,8 @@ local function GetSettingsCategoryFrame(category, parent)
 		--top = top-22-dropdown:GetHeight()
 	end
 	if DGV_GuideSuggestDropdown then
-		Lib_UIDropDownMenu_Initialize(DGV_GuideSuggestDropdown, DGV_GuideSuggestDropdown.initFunc)
-		Lib_UIDropDownMenu_SetSelectedValue(DGV_GuideSuggestDropdown, DugisGuideViewer:UserSetting(DGV_GUIDEDIFFICULTY))
+		LibDugi_UIDropDownMenu_Initialize(DGV_GuideSuggestDropdown, DGV_GuideSuggestDropdown.initFunc)
+		LibDugi_UIDropDownMenu_SetSelectedValue(DGV_GuideSuggestDropdown, DugisGuideViewer:UserSetting(DGV_GUIDEDIFFICULTY))
 	end
 	
 	--Status Frame Effect Dropdown
@@ -1903,8 +2064,8 @@ local function GetSettingsCategoryFrame(category, parent)
 		dropdown:SetPoint("TOPLEFT", frame, "TOPLEFT", 3, top)
 	end
 	if DGV_StatusFrameEffectDropdown then
-		Lib_UIDropDownMenu_Initialize(DGV_StatusFrameEffectDropdown, DGV_StatusFrameEffectDropdown.initFunc)
-		Lib_UIDropDownMenu_SetSelectedValue(DGV_StatusFrameEffectDropdown, DugisGuideViewer:UserSetting(DGV_SMALLFRAMETRANSITION))
+		LibDugi_UIDropDownMenu_Initialize(DGV_StatusFrameEffectDropdown, DGV_StatusFrameEffectDropdown.initFunc)
+		LibDugi_UIDropDownMenu_SetSelectedValue(DGV_StatusFrameEffectDropdown, DugisGuideViewer:UserSetting(DGV_SMALLFRAMETRANSITION))
 	end
 
 	--Large Frame Border  Dropdown
@@ -1916,8 +2077,8 @@ local function GetSettingsCategoryFrame(category, parent)
 		top = top-22-dropdown:GetHeight()
 	end
 	if DGV_LargeFrameBorderDropdown then
-		Lib_UIDropDownMenu_Initialize(DGV_LargeFrameBorderDropdown, DGV_LargeFrameBorderDropdown.initFunc)
-		Lib_UIDropDownMenu_SetSelectedValue(DGV_LargeFrameBorderDropdown, DugisGuideViewer:UserSetting(DGV_LARGEFRAMEBORDER))
+		LibDugi_UIDropDownMenu_Initialize(DGV_LargeFrameBorderDropdown, DGV_LargeFrameBorderDropdown.initFunc)
+		LibDugi_UIDropDownMenu_SetSelectedValue(DGV_LargeFrameBorderDropdown, DugisGuideViewer:UserSetting(DGV_LARGEFRAMEBORDER))
 	end
 	
 	--Step Complete Sound Dropdown
@@ -1935,8 +2096,8 @@ local function GetSettingsCategoryFrame(category, parent)
 		top = top-22-DGV_GuideSuggestDropdown:GetHeight()
 	end
 	if DGV_StepCompleteSoundDropdown then
-		Lib_UIDropDownMenu_Initialize(DGV_StepCompleteSoundDropdown, DGV_StepCompleteSoundDropdown.initFunc)
-		Lib_UIDropDownMenu_SetSelectedValue(DGV_StepCompleteSoundDropdown, DugisGuideViewer:UserSetting(DGV_STEPCOMPLETESOUND))
+		LibDugi_UIDropDownMenu_Initialize(DGV_StepCompleteSoundDropdown, DGV_StepCompleteSoundDropdown.initFunc)
+		LibDugi_UIDropDownMenu_SetSelectedValue(DGV_StepCompleteSoundDropdown, DugisGuideViewer:UserSetting(DGV_STEPCOMPLETESOUND))
 	end
 
 	--Ant Trail Color Dropdown
@@ -1945,8 +2106,8 @@ local function GetSettingsCategoryFrame(category, parent)
 		dropdown:SetPoint("TOPLEFT", frame, "TOPLEFT", 3, top)
 	end
 	if DGV_AntColorDropdown then
-		Lib_UIDropDownMenu_Initialize(DGV_AntColorDropdown, DGV_AntColorDropdown.initFunc)
-		Lib_UIDropDownMenu_SetSelectedValue(DGV_AntColorDropdown, DugisGuideViewer:UserSetting(DGV_ANTCOLOR))
+		LibDugi_UIDropDownMenu_Initialize(DGV_AntColorDropdown, DGV_AntColorDropdown.initFunc)
+		LibDugi_UIDropDownMenu_SetSelectedValue(DGV_AntColorDropdown, DugisGuideViewer:UserSetting(DGV_ANTCOLOR))
 	end
 	
 	--Flightmaster Handling Dropdown
@@ -1958,8 +2119,8 @@ local function GetSettingsCategoryFrame(category, parent)
 		top = top-22-dropdown:GetHeight()
 	end
 	if DGV_TaxiFlightmasterDropdown then
-		Lib_UIDropDownMenu_Initialize(DGV_TaxiFlightmasterDropdown, DGV_TaxiFlightmasterDropdown.initFunc)
-		Lib_UIDropDownMenu_SetSelectedValue(DGV_TaxiFlightmasterDropdown, DugisGuideViewer:UserSetting(DGV_TAXIFLIGHTMASTERS))
+		LibDugi_UIDropDownMenu_Initialize(DGV_TaxiFlightmasterDropdown, DGV_TaxiFlightmasterDropdown.initFunc)
+		LibDugi_UIDropDownMenu_SetSelectedValue(DGV_TaxiFlightmasterDropdown, DugisGuideViewer:UserSetting(DGV_TAXIFLIGHTMASTERS))
 	end	
 
 	--Quest Complete Sound Dropdown
@@ -1973,8 +2134,8 @@ local function GetSettingsCategoryFrame(category, parent)
 		top = top-22-dropdown:GetHeight()
 	end
 	if DGV_QuestCompleteSoundDropdown then
-		Lib_UIDropDownMenu_Initialize(DGV_QuestCompleteSoundDropdown, DGV_QuestCompleteSoundDropdown.initFunc)
-		Lib_UIDropDownMenu_SetSelectedValue(DGV_QuestCompleteSoundDropdown, DugisGuideViewer:UserSetting(DGV_QUESTCOMPLETESOUND))
+		LibDugi_UIDropDownMenu_Initialize(DGV_QuestCompleteSoundDropdown, DGV_QuestCompleteSoundDropdown.initFunc)
+		LibDugi_UIDropDownMenu_SetSelectedValue(DGV_QuestCompleteSoundDropdown, DugisGuideViewer:UserSetting(DGV_QUESTCOMPLETESOUND))
 	end
 	
 	--Tooltip Anchor
@@ -1984,8 +2145,8 @@ local function GetSettingsCategoryFrame(category, parent)
 		top = top-22-dropdown:GetHeight()
 	end
 	if DGV_TooltipAnchorDropdown then
-		Lib_UIDropDownMenu_Initialize(DGV_TooltipAnchorDropdown, DGV_TooltipAnchorDropdown.initFunc)
-		Lib_UIDropDownMenu_SetSelectedValue(DGV_TooltipAnchorDropdown, DugisGuideViewer:UserSetting(DGV_TOOLTIPANCHOR))
+		LibDugi_UIDropDownMenu_Initialize(DGV_TooltipAnchorDropdown, DGV_TooltipAnchorDropdown.initFunc)
+		LibDugi_UIDropDownMenu_SetSelectedValue(DGV_TooltipAnchorDropdown, DugisGuideViewer:UserSetting(DGV_TOOLTIPANCHOR))
 	end
 	
 	--Map Preview POIs
@@ -1995,8 +2156,8 @@ local function GetSettingsCategoryFrame(category, parent)
 		top = top-22-dropdown:GetHeight()
 	end
 	if DGV_MapPreviewPOIsDropdown then
-		Lib_UIDropDownMenu_Initialize(DGV_MapPreviewPOIsDropdown, DGV_MapPreviewPOIsDropdown.initFunc)
-		Lib_UIDropDownMenu_SetSelectedValue(DGV_MapPreviewPOIsDropdown, DugisGuideViewer:UserSetting(DGV_MAPPREVIEWPOIS))
+		LibDugi_UIDropDownMenu_Initialize(DGV_MapPreviewPOIsDropdown, DGV_MapPreviewPOIsDropdown.initFunc)
+		LibDugi_UIDropDownMenu_SetSelectedValue(DGV_MapPreviewPOIsDropdown, DugisGuideViewer:UserSetting(DGV_MAPPREVIEWPOIS))
 	end
 
 	if DugisGuideViewer:IsModuleRegistered("SmallFrame") and SettingsDB[DGV_DISPLAYPRESET].category==category and not DGV_DisplayPresetDropdown then
@@ -2005,8 +2166,8 @@ local function GetSettingsCategoryFrame(category, parent)
 		top = top-22-dropdown:GetHeight()
 	end
 	if DugisGuideViewer:IsModuleRegistered("SmallFrame") and DGV_DisplayPresetDropdown then
-		Lib_UIDropDownMenu_Initialize(DGV_DisplayPresetDropdown, DGV_DisplayPresetDropdown.initFunc)
-		Lib_UIDropDownMenu_SetSelectedValue(DGV_DisplayPresetDropdown, DugisGuideViewer:UserSetting(DGV_DISPLAYPRESET))
+		LibDugi_UIDropDownMenu_Initialize(DGV_DisplayPresetDropdown, DGV_DisplayPresetDropdown.initFunc)
+		LibDugi_UIDropDownMenu_SetSelectedValue(DGV_DisplayPresetDropdown, DugisGuideViewer:UserSetting(DGV_DISPLAYPRESET))
 	end
 	
 	if DugisGuideViewer:IsModuleRegistered("SmallFrame") and SettingsDB[DGV_SMALLFRAMEDOCKING].category==category and not DGV_SmallFrameDockingDropdown then
@@ -2016,8 +2177,8 @@ local function GetSettingsCategoryFrame(category, parent)
 		top = top-22-dropdown:GetHeight()
 	end
 	if DugisGuideViewer:IsModuleRegistered("SmallFrame") and DGV_SmallFrameDockingDropdown then
-		Lib_UIDropDownMenu_Initialize(DGV_SmallFrameDockingDropdown, DGV_SmallFrameDockingDropdown.initFunc)
-		Lib_UIDropDownMenu_SetSelectedValue(DGV_SmallFrameDockingDropdown, DugisGuideViewer:UserSetting(DGV_SMALLFRAMEDOCKING))
+		LibDugi_UIDropDownMenu_Initialize(DGV_SmallFrameDockingDropdown, DGV_SmallFrameDockingDropdown.initFunc)
+		LibDugi_UIDropDownMenu_SetSelectedValue(DGV_SmallFrameDockingDropdown, DugisGuideViewer:UserSetting(DGV_SMALLFRAMEDOCKING))
 	end
 	
 	-- select profile
@@ -2036,7 +2197,7 @@ local function GetSettingsCategoryFrame(category, parent)
 			dropdown:SetPoint("TOPLEFT", 3, top)
 			top = top-22-dropdown:GetHeight()
 		end
-		Lib_UIDropDownMenu_SetSelectedValue(DGV_SelectProfileDropdown, DugisGuideViewer.db.keys.profile)
+		LibDugi_UIDropDownMenu_SetSelectedValue(DGV_SelectProfileDropdown, DugisGuideViewer.db.keys.profile)
 	end
 
 	
@@ -2143,6 +2304,21 @@ local function GetSettingsCategoryFrame(category, parent)
 		DGV_ItemButtonScale:SetValue(DugisGuideViewer:GetDB(DGV_ITEMBUTTONSCALE) or 5)
 	end	
     
+	--DGV_SMALLFRAME_STEPS
+	if SettingsDB[DGV_SMALLFRAME_STEPS].category==category and not DGV_Smallframe_Steps then
+		local slider = self:CreateSlider("DGV_Smallframe_Steps", frame, SettingsDB[DGV_SMALLFRAME_STEPS].text, 
+			DGV_SMALLFRAME_STEPS, 2, 8, 1, 1, "2", "8")
+		slider:HookScript("OnMouseUp", function()
+			DugisGuideViewer:UpdateCompletionVisuals()
+		end)
+		top = -122
+		slider:SetPoint("TOPLEFT", frame, "TOPLEFT", 350, top)
+		top = top-30-slider:GetHeight()
+	end
+	if DGV_Smallframe_Steps then
+		DGV_Smallframe_Steps:SetValue(DugisGuideViewer:GetDB(DGV_SMALLFRAME_STEPS) or 6)
+	end	
+    
     local old_DGV_JOURNALFRAMEBUTTONSCALE = DugisGuideViewer:UserSetting(DGV_JOURNALFRAMEBUTTONSCALE)
     --DGV_JOURNALFRAMEBUTTONSCALE
 	if SettingsDB[DGV_JOURNALFRAMEBUTTONSCALE].category==category and not DGV_JournalframeButtonScale and DugisGuideViewer:IsModuleLoaded("NPCJournalFrame") then
@@ -2245,19 +2421,19 @@ end
 
 --Weapon Preference Dropdown
 function DugisGuideViewer.WeaponPreference_OnClick(button)
-	Lib_UIDropDownMenu_SetSelectedValue(DGV_WeaponPreference, button.value )
+	LibDugi_UIDropDownMenu_SetSelectedValue(DGV_WeaponPreference, button.value )
 	DugisGuideViewer:SetDB(button.value, DGV_WEAPONPREF)
 end
 
 --Smart Set Target Dropdown
 function DugisGuideViewer.GASmartSetTargetDropdown_OnClick(button)
-	Lib_UIDropDownMenu_SetSelectedValue(DGV_GASmartSetTargetDropdown, button.value )
+	LibDugi_UIDropDownMenu_SetSelectedValue(DGV_GASmartSetTargetDropdown, button.value )
 	DugisGuideViewer:SetDB(button.value, DGV_GASMARTSETTARGET)
 end
 
 --StatCapLevelDifferenceDropdown
 function DugisGuideViewer.StatCapLevelDifferenceDropdown_OnClick(button)
-	Lib_UIDropDownMenu_SetSelectedValue(DGV_StatCapLevelDifferenceDropdown, button.value )
+	LibDugi_UIDropDownMenu_SetSelectedValue(DGV_StatCapLevelDifferenceDropdown, button.value )
 	DugisGuideViewer:SetDB(button.value, DGV_GASTATCAPLEVELDIFFERENCE)
 	DugisGuideViewer.Modules.GearAdvisor.ResetCalculateScoreCache()
 end
@@ -2265,8 +2441,8 @@ end
 
 --Guide Suggest Dropdown
 function DugisGuideViewer.GuideSuggestDropDown_OnClick(button)
-	--Lib_UIDropDownMenu_SetSelectedID(DGV_GuideSuggestDropdown, button:GetID() )
-	Lib_UIDropDownMenu_SetSelectedValue(DGV_GuideSuggestDropdown, button.value )
+	--LibDugi_UIDropDownMenu_SetSelectedID(DGV_GuideSuggestDropdown, button:GetID() )
+	LibDugi_UIDropDownMenu_SetSelectedValue(DGV_GuideSuggestDropdown, button.value )
 	
 	DugisGuideViewer:SetDB(button.value, DGV_GUIDEDIFFICULTY)
 	DebugPrint("button.value"..button.value.."button.id"..button:GetID())
@@ -2275,7 +2451,7 @@ end
 
 --Status Frame Effect dropdown
 function DugisGuideViewer.StatusFrameEffectDropDown_OnClick(button)
-	Lib_UIDropDownMenu_SetSelectedID(DGV_StatusFrameEffectDropdown, button:GetID() )
+	LibDugi_UIDropDownMenu_SetSelectedID(DGV_StatusFrameEffectDropdown, button:GetID() )
 	DugisGuideViewer:SetDB(button.value, DGV_SMALLFRAMETRANSITION)
 	
 	local options = DugisGuideViewer:GetDB(DGV_SMALLFRAMETRANSITION, "options")
@@ -2457,7 +2633,11 @@ function DugisGuideViewer:QUEST_ACCEPTED(self, event, qid)
 			--DugisGuideViewer.Modules.DugisWatchFrame:DelayUpdate()
 		end
 	end
-	DugisGuideViewer:UpdateMainFrame()
+    
+    LuaUtils:RunInThreadIfNeeded("QUEST_ACCEPTED", function(isInThread)   
+        DugisGuideViewer:UpdateMainFrame(isInThread)
+    end)
+    
 end
 
 function DugisGuideViewer:QUEST_WATCH_UPDATE(arg1, arg2, arg3, arg4)
@@ -2525,7 +2705,7 @@ end
 
 --Large Frame Border Dropdown
 function DugisGuideViewer.LargeFrameBorderDropdown_OnClick(button)
-	Lib_UIDropDownMenu_SetSelectedID(DGV_LargeFrameBorderDropdown, button:GetID() )
+	LibDugi_UIDropDownMenu_SetSelectedID(DGV_LargeFrameBorderDropdown, button:GetID() )
 	DugisGuideViewer:SetDB(button.value, DGV_LARGEFRAMEBORDER)
 	DugisGuideViewer:SetAllBorders( )
 	DugisGuideViewer.Modules.DugisWatchFrame:DelayUpdate()
@@ -2534,7 +2714,7 @@ end
 
 --Step Complete Sound Dropdown
 function DugisGuideViewer.StepCompleteSoundDropdown_OnClick(button)
-	Lib_UIDropDownMenu_SetSelectedID(DGV_StepCompleteSoundDropdown, button:GetID() )
+	LibDugi_UIDropDownMenu_SetSelectedID(DGV_StepCompleteSoundDropdown, button:GetID() )
 	DebugPrint("Debug StepCompleteSoundDropdown_OnClick: button.text="..button.value)
 	DugisGuideViewer:SetDB(button.value, DGV_STEPCOMPLETESOUND)
 	--DugisGuideViewer:SetDB(button.value, DGV_STEPCOMPLETESOUND, "value")
@@ -2545,14 +2725,14 @@ end
 --Ant Trail Color Dropdown
 
 function DugisGuideViewer.AntColorDropdown_OnClick(button)
-	Lib_UIDropDownMenu_SetSelectedID(DGV_AntColorDropdown, button:GetID() )
+	LibDugi_UIDropDownMenu_SetSelectedID(DGV_AntColorDropdown, button:GetID() )
 	DugisGuideViewer:SetDB(button.value, DGV_ANTCOLOR)
 	DugisGuideViewer.Ants:UpdateAntTrailDot(10)
 end
 
 --Flightmaster Handling Dropdown
 function DugisGuideViewer.TaxiFlightmasterDropdown_OnClick(button)
-	Lib_UIDropDownMenu_SetSelectedID(DGV_TaxiFlightmasterDropdown, button:GetID() )
+	LibDugi_UIDropDownMenu_SetSelectedID(DGV_TaxiFlightmasterDropdown, button:GetID() )
 	DugisGuideViewer:SetDB(button.value, DGV_TAXIFLIGHTMASTERS)
 	if DugisGuideViewer.Modules.Taxi and DugisGuideViewer.Modules.Taxi.ResetMovementCache then
 		DugisGuideViewer.Modules.Taxi:ResetMovementCache()
@@ -2561,7 +2741,7 @@ end
 
 --Quest Complete Sound Dropdown
 function DugisGuideViewer.QuestCompleteSoundDropdown_OnClick(button)
-	Lib_UIDropDownMenu_SetSelectedID(DGV_QuestCompleteSoundDropdown, button:GetID() )
+	LibDugi_UIDropDownMenu_SetSelectedID(DGV_QuestCompleteSoundDropdown, button:GetID() )
 	DebugPrint("Debug QuestCompleteSoundDropdown_OnClick: button.text="..button.value)
 	DugisGuideViewer:SetDB(button.value, DGV_QUESTCOMPLETESOUND)
 	--DugisGuideViewer:SetDB(button.value, DGV_STEPCOMPLETESOUND, "value")
@@ -2570,25 +2750,25 @@ function DugisGuideViewer.QuestCompleteSoundDropdown_OnClick(button)
 end
 
 function DugisGuideViewer.TooltipAnchorDropdown_OnClick(button)
-	Lib_UIDropDownMenu_SetSelectedID(DGV_TooltipAnchorDropdown, button:GetID() )
+	LibDugi_UIDropDownMenu_SetSelectedID(DGV_TooltipAnchorDropdown, button:GetID() )
 	DugisGuideViewer:SetDB(button.value, DGV_TOOLTIPANCHOR)
 	DugisGuideViewer:UpdateCompletionVisuals()
 end
 
 function DugisGuideViewer.MapPreviewPOIsDropdown_OnClick(button)
-	Lib_UIDropDownMenu_SetSelectedID(DGV_MapPreviewPOIsDropdown, button:GetID() )
+	LibDugi_UIDropDownMenu_SetSelectedID(DGV_MapPreviewPOIsDropdown, button:GetID() )
 	DugisGuideViewer:SetDB(button.value, DGV_MAPPREVIEWPOIS)
 	DugisGuideViewer.MapPreview:ConfigChanged()
 end
 
 function DugisGuideViewer.DisplayPresetDropdown_OnClick(button)
-	Lib_UIDropDownMenu_SetSelectedID(DGV_DisplayPresetDropdown, button:GetID() )
+	LibDugi_UIDropDownMenu_SetSelectedID(DGV_DisplayPresetDropdown, button:GetID() )
 	DugisGuideViewer:SetDB(button.value, DGV_DISPLAYPRESET)
 	DugisGuideViewer:DisplayPreset()
 end
 
 function DugisGuideViewer.SmallFrameDockingDropdown_OnClick(button)
-	Lib_UIDropDownMenu_SetSelectedID(DGV_SmallFrameDockingDropdown, button:GetID() )
+	LibDugi_UIDropDownMenu_SetSelectedID(DGV_SmallFrameDockingDropdown, button:GetID() )
 	DugisGuideViewer:SetDB(button.value, DGV_SMALLFRAMEDOCKING)
 	DugisGuideViewer.Modules.SmallFrame:SetDockingMode()
 end
@@ -2881,6 +3061,10 @@ function DugisGuideViewer:SettingFrameChkOnClick(box, skip)
 	if boxindex == DGV_WATCHFRAMEBORDER then
 		DugisGuideViewer.Modules.DugisWatchFrame:DelayUpdate()
 	end
+    
+	if boxindex == DGV_AUTO_MOUNT then
+		DugisGuideViewer:UpdateAutoMountEnabled()
+	end    
 	
 	if boxindex == DGV_TOMTOMARROW or boxindex == DGV_CARBONITEARROW then
 		DebugPrint("Switch arrow type")
@@ -3006,6 +3190,7 @@ function DugisGuideViewer:RegisterData(uniqueDataName, getDataFunction)
     self.datas[uniqueDataName] = getDataFunction
 end   
 
+
 function DugisGuideViewer:GetData(uniqueDataName)
     if self.datas and self.datas[uniqueDataName] then
         return self.datas[uniqueDataName]()
@@ -3020,6 +3205,12 @@ local function ToggleConfig()
 	elseif DugisGuideViewer:GuideOn() then
 		--UIFrameFadeIn(DugisMainframe, 0.5, 0, 1)
 		--UIFrameFadeIn(Dugis, 0.5, 0, 1)
+        if InCombatLockdown() and not DugisGuideViewer.wasMainWindowShown then 
+            print("|cff11ff11Dugi Guides: |r|cffcc0000Cannot open settings during combat.|r Please try again."); 
+            return 
+        end
+        
+        DugisGuideViewer.wasMainWindowShown = true
 		DugisGuideViewer:ShowLargeWindow()
 	end
     local NPCJournalFrame = DugisGuideViewer.NPCJournalFrame
@@ -3147,6 +3338,7 @@ function DugisGuideViewer:ToggleOnOff()
 	DugisGuideViewer:UpdateIconStatus()
     
    UpdateLeftMenu()
+   DugisGuideViewer:UpdateAutoMountEnabled()
 end
 
 function DugisGuideViewer:TurnOnEssentials()
@@ -3255,7 +3447,6 @@ DugisGuideViewerDelayFrame:SetScript("OnUpdate", function(self, elapsed)
 		self:Hide()
 		if DugisGuideViewer:GuideOn() and DugisGuideViewer.chardb.EssentialsMode ~= 1 then
 			DugisGuideViewer:MoveToNextQuest(DugisGuideViewer:FindNextUnchecked())
-			--DugisGuideViewer:DisplayViewTab(CurrentTitle, true) --reload again for icons to appear.
 		end
 	end
 end)
@@ -3573,6 +3764,14 @@ function DugisGuideViewer:UNIT_QUEST_LOG_CHANGED()
 	DugisGuideViewer:UpdateSmallFrame()
 end 
 
+function DugisGuideViewer:QUEST_TURNED_IN(event, ...)
+    local questID = ...;
+    
+    if QuestUtils_IsQuestWorldQuest(questID) then
+        DugisGuideViewer:CompleteQuest(questID)
+    end
+end
+
 function DugisGuideViewer.QUEST_LOG_UPDATE(func)
 	DugisGuideViewer:UpdateRecord()
 	if DugiQuestLogDelayFrame:IsShown() then return end
@@ -3598,12 +3797,15 @@ function DugisGuideViewer:Dugi_QUEST_LOG_UPDATE()
 	--PATCH: If I call OnLoad from PLAYER_LOGIN, 
 	--GetNumQuestLogEntries == 0 when it is not.
 	--Value seems to be stable after initial QLU event
+    
+    LuaUtils:RunInThreadIfNeeded("Dugi_QUEST_LOG_UPDATE", function(isInThread)   
+    
 	if FirstTime then  
 		FirstTime = nil
 		DugisGuideViewer:OnLoad()
 
 	else
-		DugisGuideViewer:UpdateMainFrame()
+		DugisGuideViewer:UpdateMainFrame(isInThread)
 		QuestLogUpdateTrigger = false -- need so that UpdateMainFrame will fire on load
 		local i
 		lastCompletedLogQuests, completedLogQuests = completedLogQuests, lastCompletedLogQuests
@@ -3618,6 +3820,7 @@ function DugisGuideViewer:Dugi_QUEST_LOG_UPDATE()
 				if n>1 then
 					for j=1,n do
 						local text, objtype, finished = GetQuestLogLeaderBoard(j, i)
+                        LuaUtils:Yield(isInThread)
 						if not finished then
 							questFinished = false
 						end
@@ -3639,7 +3842,7 @@ function DugisGuideViewer:Dugi_QUEST_LOG_UPDATE()
 
 	if DugisGuideViewer:GuideOn() then
 		if DugisGuideViewer:IsModuleLoaded("DugisArrow") then
-			DugisGuideViewer.DugisArrow:OnQuestLogChanged()
+			DugisGuideViewer.DugisArrow:OnQuestLogChanged(isInThread)
 		end
 		
 		if DugisGuideViewer:GetDB(DGV_WAYPOINTSON) and DugisGuideViewer.chardb.EssentialsMode == 1 and DugisGuideViewer:IsModuleLoaded("QuestPOI") then 
@@ -3650,6 +3853,9 @@ function DugisGuideViewer:Dugi_QUEST_LOG_UPDATE()
 			DugisGuideViewer.Modules.QuestPOI:ObjectivesChangedDelay(3)
 		end
 	end
+    
+    end, nil, {}, true)
+    
 end
 
 function DugisGuideViewer:TRADE_SKILL_UPDATE()
@@ -4048,7 +4254,6 @@ function DugisGuideViewer:isLearnedSpell(spellIdToCheck)
         end
         
     end)
-    print(isLearned)
     return isLearned
 end
 
@@ -4117,9 +4322,9 @@ function DugisGuideViewer:GetLocationsAndPortalsByText(text)
     return nodes
 end
 
-if LIB_UIDROPDOWNMENU_MAXLEVELS then
-    for i = 1, LIB_UIDROPDOWNMENU_MAXLEVELS do 
-        local listFrameName = "Lib_DropDownList"..i
+if LibDugi_UIDROPDOWNMENU_MAXLEVELS then
+    for i = 1, LibDugi_UIDROPDOWNMENU_MAXLEVELS do 
+        local listFrameName = "LibDugi_DropDownList"..i
         if _G[listFrameName] then
             _G[listFrameName]:SetFrameStrata("TOOLTIP")
         end
@@ -4128,3 +4333,208 @@ end
 
 CreateFrame("GameTooltip", "DugisGuideTooltip", UIParent, "GameTooltipTemplate")
 DugisGuideTooltip:SetFrameStrata("TOOLTIP")
+
+--This function takes into account if user us currently swemming 
+--Returns not exactly speed but speed "weight" 
+function DugisGuideViewer:GetMountSpeed(mountId)
+    local _, _, _, _, isUsable, _, isFavorite, _, _, _, isCollected, mountID = C_MountJournal.GetMountInfoByID(mountId)
+    local _, _, _, _, mountTypeId = C_MountJournal.GetMountInfoExtraByID(mountId)
+    
+    --Skip if cannot be mounted or is not owned
+    if not isUsable or not isCollected then
+        return nil
+    end
+    
+    local speed = 0
+    
+    --If two mounts have the same speed it will pick the favourite one
+    local extraAddition = 0
+    
+    if isFavorite then
+        extraAddition = 0.1
+    end
+    
+    local namedMountType = DugisGuideViewer:GetNamedMountType(mountTypeId)
+    
+    if namedMountType == "ground" then
+        speed = 1
+    end
+    
+    if namedMountType == "flying" then
+        speed = 2
+    end   
+    
+    if namedMountType == "aquatic" then
+        if IsSubmerged() or IsSwimming() then
+            speed = 3
+        else
+            speed = 1
+        end
+    end 
+    
+    --To prefer first from the list
+    if mountId then
+        extraAddition = extraAddition - mountId * 0.000000001
+    end
+    
+    speed = speed + extraAddition
+    
+    --Taking into account settings
+    local settingsAddition = 0
+    
+    local preferedMount =  DugisGuideViewer.chardb["prefered-auto-mount-"..namedMountType]
+ 
+    if preferedMount == "auto" or preferedMount == nil then
+        settingsAddition = 0
+    elseif preferedMount == "none" then
+        return nil
+    else
+        if tostring(mountId) == tostring(preferedMount) then
+            settingsAddition = 0.2 
+        end
+    end
+
+    return speed + settingsAddition
+end
+
+local function GetMountedMountSpeed()
+    local result 
+    LuaUtils:foreach(C_MountJournal.GetMountIDs(), function(mountId)
+        local _, _, _, active = C_MountJournal.GetMountInfoByID(mountId)
+        
+        if active then
+            result = DugisGuideViewer:GetMountSpeed(mountId)
+        end
+    end)
+    
+    return result
+end
+
+--This function takes into account currently mounted mount
+--mountTypeFilter:  "ground", "flying", "aquatic"
+function DugisGuideViewer.GetTheFastestMount(mountTypeFilter, ignoreCurrentMounted)
+    local theFastestMountId
+    local theHighestSpeed
+    local currentMountedMountSpeed = GetMountedMountSpeed()
+    LuaUtils:foreach(C_MountJournal.GetMountIDs(), function(mountId)
+    
+        local _, _, _, _, mountType = C_MountJournal.GetMountInfoExtraByID(mountId)
+        local _, _, _, _, isUsable, _, _, _, _, _, isCollected, _ = C_MountJournal.GetMountInfoByID(mountId)
+        
+        if (mountTypeFilter == nil or mountTypeFilter == DugisGuideViewer:GetNamedMountType(mountType)) 
+            and isUsable and isCollected then
+            
+            local speed = DugisGuideViewer:GetMountSpeed(mountId)
+            
+            if speed and (theFastestMountId == nil or theHighestSpeed == nil or speed > theHighestSpeed) then
+                if currentMountedMountSpeed == nil or speed > currentMountedMountSpeed or ignoreCurrentMounted then
+                    theFastestMountId = mountId
+                    theHighestSpeed = speed
+                end
+            end
+        end
+    end)
+    
+    return theFastestMountId
+end
+
+local function IsCasting()
+    local name, nameSubtext, text, texture, startTime, endTime, isTradeSkill, castID, notInterruptible = UnitCastingInfo("player");
+    return name ~= nil
+end
+
+local function IsLootFrameOpenend()
+    return GetNumLootItems() > 0
+end
+
+local isInCombat = UnitAffectingCombat("player")
+local lastCombatTime = GetTime()
+local lastCastingTime = GetTime()
+
+local function WasCombatLessThan2secondsAgo()
+    return (GetTime() - lastCombatTime) <= 1
+end
+
+local mountId2exists = {}
+
+LuaUtils:foreach(C_MountJournal.GetMountIDs(), function(mountId)
+    local _, spellID = C_MountJournal.GetMountInfoByID(mountId)
+    mountId2exists[spellID] = true
+end)
+
+local function IsMountSpell(spellID)
+    return mountId2exists[spellID]
+end
+
+local function IsCastingNonMountSpell()
+    if not WasCombatLessThan2secondsAgo() then
+        local spellID = select(10, UnitCastingInfo("player"))  
+        return spellID and not IsMountSpell(spellID)
+    end
+end
+
+local function WasCastingLessThan6secondsAgo()
+    return (GetTime() - lastCastingTime) <= 6
+end
+
+local function MountTheFastestMount()
+    --Preventing dropping from the height and  checking if player is not moving to allow mount
+    if IsFlying() or IsPlayerMoving() or IsIndoors() 
+       or UnitIsDead("player") or UnitIsGhost("player")
+       or C_PetBattles.IsInBattle() or UnitOnTaxi("player")
+       or GetShapeshiftForm() ~= 0 
+       or (LootFrame and LootFrame:IsVisible()) 
+       or IsCasting() or IsLootFrameOpenend() 
+       or WasCombatLessThan2secondsAgo()
+       or UnitInVehicle("player") or UnitUsingVehicle("player")
+       or WasCastingLessThan6secondsAgo() then
+        return 
+    end
+
+    local theFastestMountId = DugisGuideViewer.GetTheFastestMount()
+    
+    if theFastestMountId then
+        local creatureName = C_MountJournal.GetMountInfoByID(mountId)
+        C_MountJournal.SummonByID(theFastestMountId)
+    end
+end
+
+local autoMountTicker = nil
+
+local function CancelAutoMountingIfNeeded()
+    if IsLootFrameOpenend() and not IsFlying() then
+        C_MountJournal.Dismiss()
+    end
+end
+
+function DugisGuideViewer:UpdateAutoMountEnabled()
+    if DugisGuideViewer:UserSetting(DGV_AUTO_MOUNT) and DugisGuideViewer:GuideOn() then
+        if not autoMountTicker then
+            autoMountTicker = C_Timer.NewTicker(0.1, function()
+            
+                if IsCastingNonMountSpell() then
+                    lastCastingTime = GetTime()
+                end
+            
+                if UnitAffectingCombat("player") then
+                    lastCombatTime = GetTime()
+                end
+            
+                CancelAutoMountingIfNeeded()
+                MountTheFastestMount()
+            end) 
+        end
+    else
+        if autoMountTicker then
+            autoMountTicker:Cancel()
+            autoMountTicker = nil
+        end
+    end
+end
+
+
+
+
+
+
+

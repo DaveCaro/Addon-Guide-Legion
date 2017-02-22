@@ -2428,7 +2428,7 @@ function NPCJournalFrame:Initialize()
 			if NPCJournalFrame.guideTargetMode == TARGET_MODE then
 				NPCJournalFrame:UpdateTarget(false, nil, true) 
 			else
-				NPCJournalFrame:RefreshGuideData() 
+				NPCJournalFrame:RefreshGuideData(true) 
 			end
             
             --Refreshing tooltip
@@ -2464,7 +2464,7 @@ function NPCJournalFrame:Initialize()
 	end
 
 	----------------- Guides ---------------------
-	function NPCJournalFrame:SetGuideData(guideType, objectId, setModel)
+	function NPCJournalFrame:SetGuideData(guideType, objectId, setModel, dontShowFrame)
 
 		if not (guideType and objectId)then
 			guideType = self.currentGuideType
@@ -2478,7 +2478,9 @@ function NPCJournalFrame:Initialize()
 		if guideType == "NPC" then
 			
 			local npcData = self:GetNPCDataById(objectId)
-			self:ShowMainFrame()
+            if not dontShowFrame then
+                self:ShowMainFrame()
+            end
 			self:UpdateStrategyTab(npcData, setModel)
 			self:UpdateAbilitiesTab(npcData)
 			self:UpdateLootTab(npcData)
@@ -2490,7 +2492,9 @@ function NPCJournalFrame:Initialize()
 		
 		if guideType == "Mounts" then
 			local mountData = self:GetMountDataById(objectId)
-			self:ShowMainFrame()
+            if not dontShowFrame then
+                self:ShowMainFrame()
+            end
 			self:UpdateGuideTab(mountData, true, nil, setModel)
 			if setModel then        
 				self:SetTab(GUIDE_TAB)
@@ -2500,7 +2504,9 @@ function NPCJournalFrame:Initialize()
 		
 		if guideType == "Pets" then
 			local petData = self:GetPetDataById(objectId)
-			self:ShowMainFrame()
+            if not dontShowFrame then
+                self:ShowMainFrame()
+            end
 			self:UpdateGuideTab(petData, false, petData, setModel)
 			self:UpdatePetAbilitiesTab(petData)
 			if setModel then          
@@ -2512,7 +2518,9 @@ function NPCJournalFrame:Initialize()
 		if guideType == "Bosses" then
 			local bossData = self:GetBossDataById(objectId)
 			local npcData = self:GetNPCDataById(objectId)
-			self:ShowMainFrame()
+            if not dontShowFrame then
+                self:ShowMainFrame()
+            end
 			self:UpdateRaidTab(bossData, npcData.name, setModel)
 			if setModel then             
 				self:SetTab(STRATEGY_TAB)
@@ -2523,7 +2531,9 @@ function NPCJournalFrame:Initialize()
         if guideType == "Followers" then
 			local followerData = self:GetFollowerDataById(objectId)
             self:UpdateGuideTab(followerData, false, nil, true, true, objectId)
-			self:ShowMainFrame()
+            if not dontShowFrame then
+                self:ShowMainFrame()
+            end
 			if setModel then             
 				self:SetTab(GUIDE_TAB)
 				self:SetMode(FOLLOWER_MODE)
@@ -2531,8 +2541,8 @@ function NPCJournalFrame:Initialize()
 		end
 	end
 
-	function NPCJournalFrame:RefreshGuideData()
-		self:SetGuideData(nil, nil, false)
+	function NPCJournalFrame:RefreshGuideData(dontShowFrame)
+		self:SetGuideData(nil, nil, false, dontShowFrame)
 
 	end
 

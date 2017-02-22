@@ -58,10 +58,6 @@ Added an extra travel line to help players be able to see where the "Grapple Poi
 
 Battle Pets, Hunter Pets, and Mounts polished and moved from beta to live release.
 
-Dugi Guides : 
-
-Added missing WorldMapTracking points (Innkeepers, Trainers, Mailboxes, Repairs etc) for Broken Isle continent.
-
 Zygor Viewer Guide ESO : 
 
 -GENERAL :
@@ -91,3 +87,25 @@ Corrected some travel steps not marked as red
 Added missing kill lines
 
 Added missing Lorebook
+
+Dugi Guides : 
+
+New "Auto Mount" feature, automatically cast your mount whenever possible, available in Settings > Auto Mount category. Default off
+
+Optimized guide loading and scrolling performance
+
+New "Maximum Multi Step" setting to increase or reduce the maximum steps to be shown, Default value is 6. 
+
+Added threading function to prevent/reduce "script ran too long" error. 
+
+Fixed issue with "Reload" button when current guide was expanded to max width.
+
+Updated NPC names database
+
+- Achievement Guides :
+
+New Rocfeather Skyhorn Kite toy guide
+
+-Daily Guides :
+
+New Legion World Quest guide
