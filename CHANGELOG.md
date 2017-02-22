@@ -106,6 +106,6 @@ Updated NPC names database
 
 New Rocfeather Skyhorn Kite toy guide
 
--Daily Guides :
+- Daily Guides :
 
 New Legion World Quest guide
