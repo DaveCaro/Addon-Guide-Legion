@@ -415,6 +415,10 @@ function DGF:GetCreateGuideBox(parent, x, y, layout, index, reuseItems)
         moreButton:ClearAllPoints();
         moreButton:SetPoint("LEFT", box, "RIGHT", -9, -7);
         moreButton:Hide()
+    
+        if box.SpecRing then
+            box.SpecRing:Hide()
+        end
 
         moreButton:SetScript("OnClick", function(self)
             if LuaUtils:ThreadInProgress("MoreButtonClicked") then
@@ -1054,7 +1058,7 @@ function DGF:InitializeGearFinderUI()
     LuaUtils.Profiler:Stop("InitializeGearFinderUI")
 end
 
-function DGF:GetItemInfoById(itemId)
+function DGF:GetItemInfoById(itemId, threading)
     local itemlink = ""
     local numericItemId = tonumber(itemId)
     if numericItemId == nil or numericItemId == 0 then
@@ -1067,7 +1071,7 @@ function DGF:GetItemInfoById(itemId)
         return DGF.itemsCache[itemlink]
     end
 
-    local name,link,quality,ilevel, reqlevel, class, subclass, maxstack, equipslot, texture, vendorprice = GetItemInfo_dugi(itemlink, true)
+    local name,link,quality,ilevel, reqlevel, class, subclass, maxstack, equipslot, texture, vendorprice = GetItemInfo_dugi(itemlink, threading)
 
     --Min
     local reqlevelByQuest = nil
@@ -1158,7 +1162,7 @@ function DGF:GetAllOwnedItems(onlyBelowPlayerLevel, yields)
     itemInvariant.skip = skip
 
     for control, iteratedItemLink in GeadAdvisorItemIterator, itemInvariant do
-        local itemInfo = DGF:GetItemInfoById(iteratedItemLink)
+        local itemInfo = DGF:GetItemInfoById(iteratedItemLink, true)
 
         if itemInfo == nil then
             return
@@ -1292,7 +1296,7 @@ function DGF:ScoreGuide(guideTitle, noThread, yields)
         end
 
        if shouldBeConsidered then
-           local item = DGF:GetItemInfoById(gearId)
+           local item = DGF:GetItemInfoById(gearId, noThread ~= true)
 
             if item ~= nil then
                 if not noThread then
@@ -1477,7 +1481,7 @@ function ItemInfoEventHandler(self, event, ...)
             return
         end
 
-        local item = DGF:GetItemInfoById(itemId)
+        local item = DGF:GetItemInfoById(itemId, false)
 
         if item then
             addItem2itemsBySlot(item)
@@ -1576,7 +1580,7 @@ function DGF:CacheItemsForGearFinder()
                 local itemId = tremove(allGearIds, 1)
 
                 if type(itemId) == "string" then
-                    local item = DGF:GetItemInfoById(itemId)
+                    local item = DGF:GetItemInfoById(itemId, true)
                     
                     --Speeding upd the caching
                     for j = 1, 100 do
@@ -1593,7 +1597,7 @@ function DGF:CacheItemsForGearFinder()
 
                     --Available in game cache
                     if name then
-                        local item = DGF:GetItemInfoById(itemId)
+                        local item = DGF:GetItemInfoById(itemId, true)
                         if item then
                             addItem2itemsBySlot(item)
                         end

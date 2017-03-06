@@ -181,9 +181,9 @@ C Testing the Calibration |QID|39346| |AL| |N|Use the Dalaran Alchemy Station to
 T Testing the Calibration |QID|39346| |N|(npc:92458) in {The Agronomical Apothecary} (41.6, 32.8)| |Z|1014 10| |NPC|92458| 
 A Channeling Our Efforts |QID|39347| |N|(npc:92458) in {The Agronomical Apothecary} (41.6, 32.8)| |Z|1014 10| |NPC|92458| 
 T Channeling Our Efforts |QID|39347| |N|(npc:92457) in {Dalaran} (44.17,28.71)| |Z|1014 10| |NPC|92457| 
-A The Prime Ingredient |QID|39348| |N|(npc:92457) in {Dalaran} (44.17,28.71)| |Z|1014 10| |NPC|92457| 
-A A Hope in Helheim |QID|39350| |N|(npc:92457) in {Dalaran} (44.17,28.71)| |Z|1014 10| |NPC|92457| 
-A Heavy, But Helpful |QID|39349| |N|(npc:92457) in {Dalaran} (44.17,28.71)| |Z|1014 10| |NPC|92457| 
+A Halls of Valor: The Prime Ingredient |QID|39348| |N|(npc:92183) in {Dalaran} (44.4,28.8)| |Z|1014 10| |NPC|92183| 
+A Maw of Souls: A Hope in Helheim |QID|39350| |N|(npc:92183) in {Dalaran} (44.4,28.8)| |Z|1014 10| |NPC|92183| 
+A Black Rook Hold: Heavy, But Helpful |QID|39349| |N|(npc:92183) in {Dalaran} (44.4,28.8)| |Z|1014 10| |NPC|92183| 
 B (item:127912) |OID|39351| |N|Buy (item:127912) from (npc:92457) in {The Agronomical Apothecary} (42.13, 32.38)| |Z|1014 10| |NPC|96784| |L|127912|
 B (item:127913) |OID|39351| |N|Buy (item:127913) from (npc:92457) in {The Agronomical Apothecary} (42.13, 32.38)| |Z|1014 10| |NPC|96784| |L|127913|
 B (item:127914) |OID|39351| |N|Buy (item:127914) from (npc:92457) in {The Agronomical Apothecary} (42.13, 32.38)| |Z|1014 10| |NPC|96784| |L|127914|
@@ -200,9 +200,9 @@ N Switch Guide |QID|39349| |N|Switch to (guide:"1081(110)") to complete (qid:393
 N Switch Guide |QID|39350| |N|Switch to (guide:"1042(110)") to complete (qid:39350) quest<br/><br>Note: You need to complete the HEROIC version of the dungeon| 
 N Switch Guide |QID|39348| |N|Switch to (guide:"1041(98-110)") to complete (qid:39348) quest<br/><br>Note: You need to complete the HEROIC version of the dungeon| 
 
-T The Prime Ingredient |QID|39348| |N|(npc:92457) in {Dalaran} (44.17,28.71)| |Z|1014 10| |NPC|92457| 
-T A Hope in Helheim |QID|39350| |N|(npc:92457) in {Dalaran} (44.17,28.71)| |Z|1014 10| |NPC|92457| 
-T Heavy, But Helpful |QID|39349| |N|(npc:92457) in {Dalaran} (44.17,28.71)| |Z|1014 10| |NPC|92457| 
+T Halls of Valor: The Prime Ingredient |QID|39348| |N|(npc:92183) in {Dalaran} (44.4,28.8)| |Z|1014 10| |NPC|92457| 
+T Maw of Souls: A Hope in Helheim |QID|39350| |N|(npc:92183) in {Dalaran} (44.4,28.8)| |Z|1014 10| |NPC|92183| 
+T Black Rook Hold: Heavy, But Helpful |QID|39349| |N|(npc:92183) in {Dalaran} (44.4,28.8)| |Z|1014 10| |NPC|92183|  
 A Rage Fire |QID|39351| |N|(npc:92457) in {Dalaran} (44.17,28.71)| |Z|1014 10| |NPC|92457| 
 C Rage Fire |QID|39351| |N|Kill (npc:103160) in the Emerald Nightmare Raid and collect (item:136820)| |NPC|103160| 
 T Rage Fire |QID|39351| |N|(npc:92457) in {Dalaran} (44.17,28.71)| |Z|1014 10| |NPC|92457| 

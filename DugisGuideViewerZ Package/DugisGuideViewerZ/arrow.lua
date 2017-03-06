@@ -873,7 +873,15 @@ function DugisArrow:Initialize()
 		if not poiButton then return end
 		local posX, posY 
 		for i=1, GetNumMapLandmarks() do 
-			local landmarkType, name, description, textureIndex, x, y = GetMapLandmarkInfo(i)
+			local landmarkType, name, description, textureIndex, x, y 
+            
+            if GetMapLandmarkInfo then
+                landmarkType, name, description, textureIndex, x, y = GetMapLandmarkInfo(i)
+            else
+                --For 7.2.0
+                landmarkType, name, description, textureIndex, x, y = C_WorldMap.GetMapLandmarkInfo(i)
+            end
+            
 			if name == poiButton.name then 
 				posX = x
 				posY = y

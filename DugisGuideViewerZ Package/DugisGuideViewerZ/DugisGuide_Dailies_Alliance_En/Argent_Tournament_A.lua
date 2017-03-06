@@ -50,7 +50,7 @@ N Investigate Lorien Sunblaze's death |QID|13643.2| |N|Use the (item:45064) on L
 T The Stories Dead Men Tell |N|(npc:33417) (69.5, 23.1)| |QID|13643| |Z|492| |NPC|33417|
 A There's Something About the Squire |N|(npc:33417) (69.5, 23.1)| |QID|13654| |Z|492| |NPC|33417|
 
-R Crystalsong Forest |N|Travel to {Crystalsong Forest} (38.3, 59.4| |Z|510| |QID|13654| |NPC|33849|
+R Crystalsong Forest |N|Travel to {Crystalsong Forest} (38.3, 59.4)| |Z|510| |QID|13654| |NPC|33849|
 K (npc:33499)|N|Kill (npc:33499) (38.3, 59.4) in {Crystalsong Forest} until you find (item:45080). |QID|13654| |L|45080| |Z|510| |NPC|33499|
 C There's Something About the Squire |N|Find (npc:33498) - hes a neutral NPC, use the (item:45080) while standing behind him. Collect (item:45082) from him (38.3, 59.4)| |U|45080| |QID|13654| |Z|510| |NPC|33498|
 

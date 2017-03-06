@@ -98,9 +98,20 @@ function Guides:Initialize()
 		CalendarSetAbsMonth(presentMonth, presentYear)
 		local numEvents = CalendarGetNumDayEvents(0, presentDay)
 		if control > numEvents then return end
-		local _, _, _, calendarType = CalendarGetDayEvent(0, presentDay, control)
+		local calendarType
+        
+        if CalendarGetDayEvent then
+           calendarType = select(4, CalendarGetDayEvent(0, presentDay, control))
+        else
+           calendarType = select(4, C_Calendar.GetDayEvent(0, presentDay, control))
+        end
+        
 		if calendarType=="HOLIDAY" then
-			return control, CalendarGetHolidayInfo(0, presentDay, control)
+            if CalendarGetHolidayInfo then
+                return control, CalendarGetHolidayInfo(0, presentDay, control)
+            else
+                return control, C_Calendar.GetHolidayInfo(0, presentDay, control)
+            end
 		end
 	end
 	
@@ -227,9 +238,11 @@ function Guides:Initialize()
         
             local wrapper = GUIUtils:SetTreeData(parent, nil, "guideategories", 
                 treeData, nil, nil, nil, nil, x, y, 5, -5
-                ,function(oryginalText)
-                   if DGV.ProcessNPCLeafColor then
+                ,function(oryginalText, nodeData)
+                   if DGV.ProcessNPCLeafColor and nodeData.isLeaf then
                        return DGV.ProcessNPCLeafColor(oryginalText, self.guidetype)
+                   else
+                       return oryginalText
                    end
                  end,
                  function(self, newHeight)
@@ -721,39 +734,54 @@ function Guides:Initialize()
                     , data = {macroCode = "",  macroDescription = ""}}
                 end
                 
-                Guides.macrolist = SetScrollableTreeFrame(DugisMain.MacrosWrapper, "macrosubcategories", macroData or {}, 10, -86, -10, 330, 308, function(visualNode)
-                    if not visualNode.nodeData.isPlusButton then
-                        DGV.Guides.currentSelectedMacroData = visualNode.nodeData
-                        UpdateTexts()
-                        MacroEditor:Show()
-                        UpdateMacroButtonsVisibility()
-                    else
-                        if DGV.Guides.currentSelectedCategory then
-                            local macros = DugisGuideUser.macrosData[DGV.Guides.currentSelectedCategory]
+                    
+                local config = {
+                    parent             = DugisMain.MacrosWrapper
+                    , name             = "macrosubcategories"
+                    , data             = macroData or {}
+                    , x                = 10
+                    , y                = -86
+                    , nodesOffsetY     = -10
+                    , width            = 330
+                    , height           = 308
+                    , onNodeClick      = function(visualNode)
+                            if not visualNode.nodeData.isPlusButton then
+                                DGV.Guides.currentSelectedMacroData = visualNode.nodeData
+                                UpdateTexts()
+                                MacroEditor:Show()
+                                UpdateMacroButtonsVisibility()
+                            else
+                                if DGV.Guides.currentSelectedCategory then
+                                    local macros = DugisGuideUser.macrosData[DGV.Guides.currentSelectedCategory]
 
-                            macros[#macros + 1] = {isEditable = true, name = "My new macro", icon = defaultMacroIcon, data = {macroCode = "/say Hello World!",  macroDescription = "description"}}
-                            DGV.Guides.currentSelectedMacroData = macros[#macros]
+                                    macros[#macros + 1] = {isEditable = true, name = "My new macro", icon = defaultMacroIcon, data = {macroCode = "/say Hello World!",  macroDescription = "description"}}
+                                    DGV.Guides.currentSelectedMacroData = macros[#macros]
 
-                            UpdateIcons()
-                            UpdateTexts()
-                            MacroEditor:Show()
-                            UpdateMacroButtonsVisibility()
-                           
-                            if Guides.macrolist.scrollBar:IsVisible() then
-                                local val = Guides.macrolist.frame:GetVerticalScrollRange()
-                                Guides.macrolist.scrollBar:SetValue(val - 102)
+                                    UpdateIcons()
+                                    UpdateTexts()
+                                    MacroEditor:Show()
+                                    UpdateMacroButtonsVisibility()
+                                   
+                                    if Guides.macrolist.scrollBar:IsVisible() then
+                                        local val = Guides.macrolist.frame:GetVerticalScrollRange()
+                                        Guides.macrolist.scrollBar:SetValue(val - 102)
+                                    end
+                                end 
                             end
-                        end 
-                    end
-                end, 22, 24, function(visualNode)
-                    local body = visualNode.nodeData.data.macroCode
-                    local macroIndex = MacroBody2MacroIndex(body)
-                    if macroIndex then
-                        PickupMacro(macroIndex)
-                    end
-                end, nil, nil, 30)
+                        end
+                    , iconSize         = 22
+                    , nodeHeight       = 24
+                    , onDragFunction   = function(visualNode)
+                            local body = visualNode.nodeData.data.macroCode
+                            local macroIndex = MacroBody2MacroIndex(body)
+                            if macroIndex then
+                                PickupMacro(macroIndex)
+                            end
+                        end
+                    , nodeTextX        = 30
+                }
                 
-                
+                Guides.macrolist = SetScrollableTreeFrame(config)
                 
                 if not Guides.macrolist.scrollBar.bkg then
                     local tex = Guides.macrolist.scrollBar:CreateTexture("BACKGROUND")
@@ -776,22 +804,39 @@ function Guides:Initialize()
             end
             
             function RefreshMacrosCategories()
-                SetScrollableTreeFrame(DugisMain.MacrosWrapper, "macrocategories", macroCategories, 10, -86, -10, 330, 308, function(visualNode)
-                    DGV.Guides.currentSelectedCategory = visualNode.nodeData.data.categoryName
-                    RefreshMacrosList()   
-                    macrocategorieswrapper:Hide()
-                    Guides.macrolist.frame:Show()
-                    
-                    DugisMain.MacrosWrapper.MacroInfo.CategoryIcon:SetTexture(visualNode.nodeData.icon)
-                    DugisMain.MacrosWrapper.MacroInfo.CategoryIcon:SetPoint("TOPLEFT", 49, -49)
-                    DugisMain.MacrosWrapper.MacroInfo.CategoryName:SetText(visualNode.nodeData.name)
-                    
-                    DugisMain.MacrosWrapper.BackToCategoriesButton:Show()
-                    
-                    
-                    Guides.macrolist.scrollBar:SetValue(0)
-                    
-                end, 25, 27, nil, true, 120, 30)
+                local config = {
+                    parent             = DugisMain.MacrosWrapper
+                    , name             = "macrocategories"
+                    , data             = macroCategories
+                    , x                = 10
+                    , y                = -86
+                    , nodesOffsetY     = -10
+                    , width            = 330
+                    , height           = 308
+                    , onNodeClick      = function(visualNode)
+                        DGV.Guides.currentSelectedCategory = visualNode.nodeData.data.categoryName
+                        RefreshMacrosList()   
+                        macrocategorieswrapper:Hide()
+                        Guides.macrolist.frame:Show()
+                        
+                        DugisMain.MacrosWrapper.MacroInfo.CategoryIcon:SetTexture(visualNode.nodeData.icon)
+                        DugisMain.MacrosWrapper.MacroInfo.CategoryIcon:SetPoint("TOPLEFT", 49, -49)
+                        DugisMain.MacrosWrapper.MacroInfo.CategoryName:SetText(visualNode.nodeData.name)
+                        
+                        DugisMain.MacrosWrapper.BackToCategoriesButton:Show()
+                        
+                        
+                        Guides.macrolist.scrollBar:SetValue(0)
+                        
+                    end
+                    , iconSize         = 25
+                    , nodeHeight       = 27
+                    , noScrollMode     = true
+                    , columnWidth      = 120
+                    , nodeTextX        = 30
+                }
+            
+                SetScrollableTreeFrame(config)
                 
                 RefreshMacrosList()
             end
@@ -1407,7 +1452,14 @@ function Guides:Initialize()
 		if GetCurrentMapAreaID() == 928 then 			
 			local lowest = 6
 			for i=1, NUM_WORLDMAP_POIS do
-				local _, _, _, _, _, _, _, _, _, poiID = GetMapLandmarkInfo(i)				
+				local _, poiID
+
+                if GetMapLandmarkInfo then
+                    _, _, _, _, _, _, _, _, _, poiID = GetMapLandmarkInfo(i)
+                else
+                    _, _, _, _, _, _, _, _, _, _, poiID = C_WorldMap.GetMapLandmarkInfo(i)
+                end
+
 				if WorldMap_IsSpecialPOI(poiID) then 
 					if SPECIAL_POI_INFO[poiID].phase < lowest then 
 						lowest = SPECIAL_POI_INFO[poiID].phase
@@ -4623,6 +4675,26 @@ function Guides:Initialize()
             end)
             
 	end
+    
+    function DGV:UpdateStepNumbersPosition(Row, i)
+        Row.StepNumber:SetText(i)
+        Row.StepNumber:ClearAllPoints()
+    
+        if DugisGuideUser.showLeftMenuForCurrentGuide then
+            Row.StepNumber:SetPoint("TOPRIGHT", -410, -6)
+        else
+            Row.StepNumber:SetPoint("TOPRIGHT", -38, -6)
+        end    
+    end
+    
+    function DGV:UpdateStepNumbersPositions()
+		for i, qid in ipairs(DGV.actions) do
+            local row = visualRows[i]
+            if row and row.StepNumber then
+                DGV:UpdateStepNumbersPosition(row, i)
+            end
+		end
+    end
 
 	function DGV:SetQuestText( i ) 
 		
@@ -4648,7 +4720,9 @@ function Guides:Initialize()
 			Row.Name:SetWidth(width + 10)	
 			Row.Name:SetText(qName)
 		end
-		
+        
+        DGV:UpdateStepNumbersPosition(Row, i)
+        
 		if DGV:CheckForSkip(i) then CheckInitOpt(i) end
 		Row.Opt:SetText(Row.Opt.text)
 		

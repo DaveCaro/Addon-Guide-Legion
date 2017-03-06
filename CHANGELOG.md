@@ -12,7 +12,7 @@ Macro Bank (Dugi's Special)
 
 Zygor Viewer Guide :
 
-- GENERAL : 
+-GENERAL : 
 
 Fixed an error when hiding dungeon popups
 
@@ -32,12 +32,11 @@ Map dots will again float on minimap edge.
 
 Additional world quests added.
 
--DUNGEONS : 
+-DUNGEONS :
 
 Ongoing updates to the Dungeon guides to make them work better with the lack of arrow and new Map Preview and Guide Tip Sharing features.
 
-- PROFESSIONS :
-
+-PROFESSIONS :
 Added this weeks archaeology quest.
 
 Started adding in the missing quests for the Archaeology quests guide for Legion.
@@ -54,7 +53,7 @@ Added a number count to the step to create Stonehide Leather Strip so that it wo
 
 Added an extra travel line to help players be able to see where the "Grapple Point" was, as it was not very obvious before.
 
-- PETS/MOUNTS :
+-PETS/MOUNTS : 
 
 Battle Pets, Hunter Pets, and Mounts polished and moved from beta to live release.
 
@@ -90,22 +89,4 @@ Added missing Lorebook
 
 Dugi Guides : 
 
-New "Auto Mount" feature, automatically cast your mount whenever possible, available in Settings > Auto Mount category. Default off
-
-Optimized guide loading and scrolling performance
-
-New "Maximum Multi Step" setting to increase or reduce the maximum steps to be shown, Default value is 6. 
-
-Added threading function to prevent/reduce "script ran too long" error. 
-
-Fixed issue with "Reload" button when current guide was expanded to max width.
-
-Updated NPC names database
-
-- Achievement Guides :
-
-New Rocfeather Skyhorn Kite toy guide
-
-- Daily Guides :
-
-New Legion World Quest guide
+TBA

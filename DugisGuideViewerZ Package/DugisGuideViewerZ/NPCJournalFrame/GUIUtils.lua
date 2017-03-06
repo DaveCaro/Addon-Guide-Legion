@@ -939,7 +939,7 @@ function GUIUtils:SetTreeData(targetTreeFrame, wrapper, treePrefix, nodes, paren
             local name = nodeData.name
             
             if nodeTextProcessor then
-                name = nodeTextProcessor(name)
+                name = nodeTextProcessor(name, nodeData)
             end
             
             if nodeData.shownWaypointMark then
@@ -965,7 +965,13 @@ function GUIUtils:SetTreeData(targetTreeFrame, wrapper, treePrefix, nodes, paren
                 treeVisualizationContainer[treePrefix][treeResultsNodeName] = visualNode
             end
             
-            visualNode.Title:SetText(nodeData.name)
+            local name = nodeData.name
+            
+            if nodeTextProcessor then
+                name = nodeTextProcessor(name, nodeData)
+            end
+            
+            visualNode.Title:SetText(name)
             visualNode.Title:SetTextColor(1,0.8235,0)
             
             visualNode.nextChild = nil
@@ -1244,21 +1250,47 @@ function TestTree3()
     )
 end
 
-function SetScrollableTreeFrame(parent, name, data, x, y, nodesOffsetY, width, height
-, onNodeClick, iconSize, nodeHeight, onDragFunction, noScrollMode, columnWidth, nodeTextX, scrollX, scrollY, scrollHeight, nodeTextY)
-    local scrollFrame = GUIUtils:CreateScrollFrame(parent, "scrollFrame" .. name)
+
+--[[
+
+"config" available options:
+
+    parent             = 
+    , name             = 
+    , data             = 
+    , x                = 
+    , y                = 
+    , nodesOffsetY     = 
+    , width            = 
+    , height           = 
+    , onNodeClick      = 
+    , iconSize         = 
+    , nodeHeight       = 
+    , onDragFunction   = 
+    , noScrollMode     = 
+    , columnWidth      = 
+    , nodeTextX        = 
+    , scrollX          = 
+    , scrollY          = 
+    , scrollHeight     = 
+    , nodeTextY        = 
+
+]]
+function SetScrollableTreeFrame(config)
+
+    config = config or {}
+
+    local scrollFrame = GUIUtils:CreateScrollFrame(config.parent, "scrollFrame" .. config.name)
    
-    scrollFrame.scrollBar:SetPoint("TOPLEFT", parent, "TOPLEFT", scrollX or 322, scrollY or -110)
+    scrollFrame.scrollBar:SetPoint("TOPLEFT", config.parent, "TOPLEFT", config.scrollX or 322, config.scrollY or -110)
     
-    scrollFrame.frame:SetPoint("TOPLEFT", parent, "TOPLEFT", x, y)
+    scrollFrame.frame:SetPoint("TOPLEFT", config.parent, "TOPLEFT", config.x, config.y)
     scrollFrame.scrollBar:SetFrameLevel(100)
     
-    local wrapper = GUIUtils:SetTreeData(scrollFrame.frame, nil, name, 
-        data, nil, nil, onNodeClick, nil, 0, 0, 0, nodesOffsetY
-        ,function(oryginalText)
-           return oryginalText
-         end,
-         function(self, newHeight)
+    local wrapper = GUIUtils:SetTreeData(scrollFrame.frame, nil, config.name, 
+        config.data, nil, nil, config.onNodeClick, nil, 0, 0, 0, config.nodesOffsetY
+        , config.nodeTextProcessor,
+          function(self, newHeight)
             local newMax = newHeight - 100
             if newMax < 1 then
                 newMax = 1
@@ -1276,16 +1308,16 @@ function SetScrollableTreeFrame(parent, name, data, x, y, nodesOffsetY, width, h
             scrollFrame.scrollBar:SetValue(scrollFrame.scrollBar:GetValue() - delta * 44)  
 
          end,
-         iconSize, nodeHeight, onDragFunction, noScrollMode, columnWidth, nodeTextX, nodeTextY)  
+         config.iconSize, config.nodeHeight, config.onDragFunction, config.noScrollMode, config.columnWidth, config.nodeTextX, config.nodeTextY)  
 
     scrollFrame.wrapper = wrapper
          
-    scrollFrame.frame:SetWidth(width)
-    scrollFrame.frame:SetHeight(height)
+    scrollFrame.frame:SetWidth(config.width)
+    scrollFrame.frame:SetHeight(config.height)
     
     scrollFrame.frame.content = wrapper
     scrollFrame.frame:SetScrollChild(wrapper) 
-    scrollFrame.scrollBar:SetHeight(scrollHeight or 265)
+    scrollFrame.scrollBar:SetHeight(config.scrollHeight or 265)
     
     return scrollFrame
 end

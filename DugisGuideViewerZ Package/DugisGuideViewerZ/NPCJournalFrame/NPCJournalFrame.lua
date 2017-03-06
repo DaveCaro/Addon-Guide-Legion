@@ -210,7 +210,10 @@ function NPCJournalFrame:Initialize()
         local creatureDisplayID, descriptionText, sourceText, isSelfMount, mountType = C_MountJournal.GetMountInfoByID(index)
 
 		--GetMountInfoByID doesn't work correctly for Legion Beta so the GetMountInfoExtraByID is used
-        creatureDisplayID, descriptionText, sourceText, isSelfMount, mountType = C_MountJournal.GetMountInfoExtraByID(index)
+        
+        if index ~= nil then
+            creatureDisplayID, descriptionText, sourceText, isSelfMount, mountType = C_MountJournal.GetMountInfoExtraByID(index)
+        end
 
         outMountData.description = descriptionText
 		MountObjects[spellId].modelId = creatureDisplayID
