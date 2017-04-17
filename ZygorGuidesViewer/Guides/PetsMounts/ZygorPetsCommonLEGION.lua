@@ -15,7 +15,7 @@ collect Benax##140934 |n |goto Suramar/0 33.69,51.75
 learnpet Benax##113136 |use Benax##140934
 step
 _Congratulations!_
-You collected the _Benax_ battle pet
+You have collected the _Benax_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Aquatic Pets\\Bleakwater Jelly",{
 model={65630},
@@ -30,7 +30,7 @@ collect Bleakwater Jelly##129188 |n |goto Helheim/0 29.29,63.96
 learnpet Bleakwater Jelly##98116 |use Bleakwater Jelly##129188
 step
 _Congratulations!_
-You collected the _Bleakwater Jelly_ battle pet
+You have collected the _Bleakwater Jelly_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Aquatic Pets\\Blorp",{
 model={63693},
@@ -46,7 +46,7 @@ collect Blorp's Bubble##126925 |n
 learnpet Blorp##93814 |use Blorp's Bubble##126925
 step
 _Congratulations!_
-You collected the _Blorp_ battle pet
+You have collected the _Blorp_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Aquatic Pets\\Coralback Fiddler",{
 model={65800},
@@ -60,7 +60,7 @@ Challenge one to a pet battle and capture it
 learnpet Coralback Fiddler##98428 |goto Highmountain/0 38.29,12.79
 step
 _Congratulations!_
-You collected the _Coralback Fiddler_ battle pet
+You have collected the _Coralback Fiddler_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Aquatic Pets\\Ghostshell Crab",{
 model={63691},
@@ -76,7 +76,7 @@ collect Translucent Shell##126926 |n
 learnpet Ghostshell Crab##93808 |use Translucent Shell##126926
 step
 _Congratulations!_
-You collected the _Ghostshell Crab_ battle pet
+You have collected the _Ghostshell Crab_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Aquatic Pets\\Juvenile Scuttleback",{
 model={65151},
@@ -90,7 +90,7 @@ Challenge one to a pet battle and capture it
 learnpet Juvenile Scuttleback##97283 |goto Azsuna/0 60.70,59.03
 step
 _Congratulations!_
-You collected the _Juvenile Scuttleback_ battle pet
+You have collected the _Juvenile Scuttleback_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Aquatic Pets\\Plump Jelly",{
 model={65638},
@@ -104,7 +104,7 @@ buy 1 Plump Jelly##129798 |n |goto Dalaran L/10 58.75,39.17
 learnpet Plump Jelly##98132 |use Plump Jelly##129798
 step
 _Congratulations!_
-You collected the _Plump Jelly_ battle pet
+You have collected the _Plump Jelly_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Aquatic Pets\\Sewer-Pipe Jelly",{
 model={65637},
@@ -118,7 +118,7 @@ buy 1 Sewer-Pipe Jelly##136904 |n |goto Dalaran L/11 58.16,57.74
 learnpet Sewer-Pipe Jelly##98128 |use Sewer-Pipe Jelly##136904 |goto Dalaran L/11 58.16,57.74
 step
 _Congratulations!_
-You collected the _Sewer-Pipe Jelly_ battle pet
+You have collected the _Sewer-Pipe Jelly_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Aquatic Pets\\Spring Strider",{
 model={43798},
@@ -132,7 +132,7 @@ Challenge one to a pet battle and capture it
 learnpet Spring Strider##97559 |goto Val'sharah/0 49.03,69.11
 step
 _Congratulations!_
-You collected the _Spring Strider_ battle pet
+You have collected the _Spring Strider_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Aquatic Pets\\Sting Ray Pup",{
 model={70937},
@@ -152,7 +152,7 @@ buy 1 Sting Ray Pup##138810 |n |goto Dalaran L/10 23.03,-11.30
 learnpet Sting Ray Pup##109216 |use Sting Ray Pup##138810
 step
 _Congratulations!_
-You collected the _Sting Ray Pup_ battle pet
+You have collected the _Sting Ray Pup_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Aquatic Pets\\Young Mutant Warturtle",{
 model={71611},
@@ -175,7 +175,7 @@ Challenge one to a pet battle and capture it
 learnpet Young Mutant Warturtle##110666 |goto Dalaran L/11 58.13,57.95
 step
 _Congratulations!_
-You collected the _Young Mutant Warturtle_ battle pet
+You have collected the _Young Mutant Warturtle_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Ash'ana",{
 model={37949},
@@ -190,7 +190,7 @@ buy 1 Ash'ana##23712 |n |goto Val'sharah/0 54.69,73.25
 learnpet Ash'ana##17254 |use Ash'ana##23712
 step
 _Congratulations!_
-You collected the _Ash'ana_ battle pet
+You have collected the _Ash'ana_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Ashmaw Cub",{
 model={65070},
@@ -211,7 +211,7 @@ collect Ashmaw Cub##128690 |n |use Ashmaw Cub##128690
 learnpet Ashmaw Cub##96649 |use Ashmaw Cub##128690 |goto 52.81,87.46
 step
 _Congratulations!_
-You collected the _Ashmaw Cub_ battle pet
+You have collected the _Ashmaw Cub_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Baby Elderhorn",{
 model={66485},
@@ -226,7 +226,7 @@ buy 1 Baby Elderhorn##136919 |n |goto Thunder Totem/0 38.25,46.02
 learnpet Baby Elderhorn##106152 |use Baby Elderhorn##136919
 step
 _Congratulations!_
-You collected the _Baby Elderhorn_ battle pet
+You have collected the _Baby Elderhorn_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Black-Footed Fox Kit",{
 model={65389},
@@ -240,7 +240,7 @@ Challenge one to a pet battle and capture it
 learnpet Black-Footed Fox Kit##97741 |goto Highmountain/0 52.66,43.07
 step
 _Congratulations!_
-You collected the _Black-Footed Fox Kit_ battle pet
+You have collected the _Black-Footed Fox Kit_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Burrow Spiderling",{
 model={65129},
@@ -254,7 +254,7 @@ Challenge one to a pet battle and capture it
 learnpet Burrow Spiderling##97236 |goto Highmountain/0 43.54,30.36
 step
 _Congratulations!_
-You collected the _Burrow Spiderling_ battle pet
+You have collected the _Burrow Spiderling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Corgi Pup",{
 model={68729},
@@ -267,7 +267,7 @@ This pet was available during the WoW 12th Aniversity Event
 learnpet Corgi Pup##106283 |use Corgi Pup##136925
 step
 _Congratulations!_
-You collected the _Corgi Pup_ battle pet
+You have collected the _Corgi Pup_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Corgnelius",{
 model={68845},
@@ -280,7 +280,7 @@ collect Corgnelius##140320 |n
 learnpet Corgnelius##112144 |use Corgnelius##140320
 step
 _Congratulations!_
-You collected the _Corgnelius_ battle pet
+You have collected the _Corgnelius_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Crystalline Broodling",{
 model={66211},
@@ -294,7 +294,7 @@ Challenge one to a pet battle and capture it
 learnpet Crystalline Broodling##99527 |goto Suramar/33 50.98,34.09
 step
 _Congratulations!_
-You collected the _Crystalline Broodling_ battle pet
+You have collected the _Crystalline Broodling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Fel Piglet",{
 model={65672},
@@ -308,7 +308,7 @@ buy 1 Fel Piglet##129760 |n |goto Dalaran L/10 58.75,39.17
 learnpet Fel Piglet##98185 |use Fel Piglet##129760
 step
 _Congratulations!_
-You collected the _Fel Piglet_ battle pet
+You have collected the _Fel Piglet_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Felspider",{
 model={72868},
@@ -322,7 +322,7 @@ Challenge one to a pet battle and capture it
 learnpet Felspider##97323 |goto Azsuna/0 31.62,52.24
 step
 _Congratulations!_
-You collected the _Felspider_ battle pet
+You have collected the _Felspider_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Grumpy",{
 model={65071},
@@ -339,7 +339,7 @@ collect Grumpy's Leash##128354 |n
 learnpet Grumpy##96622 |use Grumpy's Leash##128354
 step
 _Congratulations!_
-You collected the _Grumpy_ battle pet
+You have collected the _Grumpy_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Leyline Broodling",{
 model={66212},
@@ -359,7 +359,7 @@ collect Leyline Broodling##136914 |n
 learnpet Leyline Broodling##99526 |use Leyline Broodling##136914
 step
 _Congratulations!_
-You collected the _Leyline Broodling_ battle pet
+You have collected the _Leyline Broodling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Lurking Owl Kitten",{
 model={71826},
@@ -409,7 +409,19 @@ collect Lurking Owl Kitten##139791 |n
 learnpet Lurking Owl Kitten##111421 |use Lurking Owl Kitten##139791
 step
 _Congratulations!_
-You collected the _Lurking Owl Kitten_ battle pet
+You have collected the _Lurking Owl Kitten_ battle pet
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Mischief",{
+model={73353},
+pet=1936,
+description="This guide will walk you through obtaining the Beast pet: Mischief",
+},[[
+step
+Mischief is available for purchase from the Blizzard store for _$10_
+learnpet Mischief##113527 |use Mischief##141893
+step
+_Congratulations!_
+You have collected the _Mischief_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Mist Fox Kit",{
 model={65390},
@@ -423,7 +435,7 @@ Challenge one to a pet battle and capture it
 learnpet Mist Fox Kit##97743 |goto Highmountain/0 46.57,32.62
 step
 _Congratulations!_
-You collected the _Mist Fox Kit_ battle pet
+You have collected the _Mist Fox Kit_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Nursery Spider",{
 model={65130},
@@ -437,7 +449,7 @@ buy 1 Nursery Spider##129826 |n |goto Dalaran L/10 58.42,39.26
 learnpet Nursery Spider##97238 |use Nursery Spider##129826
 step
 _Congratulations!_
-You collected the _Nursery Spider_ battle pet
+You have collected the _Nursery Spider_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\River Calf",{
 model={55291},
@@ -451,7 +463,7 @@ buy 1 River Calf##140274 |n |goto Dalaran L/10 58.75,39.17
 learnpet River Calf##79730 |use River Calf##140274
 step
 _Congratulations!_
-You collected the _River Calf_ battle pet
+You have collected the _River Calf_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Rose Taipan",{
 model={65457},
@@ -465,7 +477,7 @@ Challenge one to a pet battle and capture it
 learnpet Rose Taipan##97840 |goto Stormheim/0 52.06,59.86
 step
 _Congratulations!_
-You collected the _Rose Taipan_ battle pet
+You have collected the _Rose Taipan_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Slithering Brownscale",{
 model={63674},
@@ -480,7 +492,7 @@ Challenge one to a pet battle and capture it
 learnpet Slithering Brownscale##97542 |goto Stormheim/0 40.92,35.43
 step
 _Congratulations!_
-You collected the _Slithering Brownscale_ battle pet
+You have collected the _Slithering Brownscale_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Snowfang",{
 model={73093},
@@ -499,7 +511,7 @@ collect Snowfang's Trust##141530 |n |goto The Maelstrom L/0 36.19,79.50
 learnpet Snowfang##114063 |use Snowfang's Trust##141530
 step
 _Congratulations!_
-You collected the _Snowfang_ battle pet
+You have collected the _Snowfang_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Spiketail Beaver",{
 model={40713},
@@ -513,7 +525,7 @@ Challenge one to a pet battle and capture it
 learnpet Spiketail Beaver##98211 |goto Highmountain/0 41.38,50.53
 step
 _Congratulations!_
-You collected the _Spiketail Beaver_ battle pet
+You have collected the _Spiketail Beaver_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Terror Larva",{
 model={30995},
@@ -527,7 +539,7 @@ Challenge one to a pet battle and capture it
 learnpet Terror Larva##97531 |goto Val'sharah/0 62.71,42.63
 step
 _Congratulations!_
-You collected the _Terror Larva_ battle pet
+You have collected the _Terror Larva_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Thornclaw Broodling",{
 model={66213},
@@ -541,7 +553,7 @@ Challenge one to a pet battle and capture it
 learnpet Thornclaw Broodling##99528 |goto Suramar/0 29.96,63.40
 step
 _Congratulations!_
-You collected the _Thornclaw Broodling_ battle pet
+You have collected the _Thornclaw Broodling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Vicious Broodling",{
 model={66210},
@@ -556,7 +568,7 @@ Challenge one to a pet battle and capture it
 learnpet Vicious Broodling##99513 |goto Suramar/0 32.83,75.27
 step
 _Congratulations!_
-You collected the _Vicious Broodling_ battle pet
+You have collected the _Vicious Broodling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Critter Pets\\Auburn Ringtail",{
 model={64651},
@@ -570,7 +582,7 @@ Challenge one to a pet battle and capture it
 learnpet Auburn Ringtail##97555 |goto Val'sharah/0 62.02,72.70
 step
 _Congratulations!_
-You collected the _Auburn Ringtail_ battle pet
+You have collected the _Auburn Ringtail_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Critter Pets\\Blind Rat",{
 model={4960},
@@ -587,7 +599,7 @@ Challenge one to a pet battle and capture it
 learnpet Blind Rat##111158 |goto Dalaran L/11 52.26,59.35
 step
 _Congratulations!_
-You collected the _Blind Rat_ battle pet
+You have collected the _Blind Rat_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Critter Pets\\Crispin",{
 model={65590},
@@ -605,7 +617,7 @@ collect Crispin##129175 |n |goto Highmountain/0 41.97,41.57
 learnpet Crispin##98077 |use Crispin##129175
 step
 _Congratulations!_
-You collected the _Crispin_ battle pet
+You have collected the _Crispin_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Critter Pets\\Dust Bunny",{
 model={65854},
@@ -630,7 +642,7 @@ Challenge one to a pet battle and capture it
 learnpet Dust Bunny##98506 |goto Dalaran L/10 45.48,34.94
 step
 _Congratulations!_
-You collected the _Dust Bunny_ battle pet
+You have collected the _Dust Bunny_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Critter Pets\\Gleamhoof Fawn",{
 model={71224},
@@ -644,7 +656,7 @@ Challenge one to a pet battle and capture it
 learnpet Gleamhoof Fawn##110741 |goto Val'sharah/0 52.76,75.16
 step
 _Congratulations!_
-You collected the _Gleamhoof Fawn_ battle pet
+You have collected the _Gleamhoof Fawn_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Critter Pets\\Mudshell Conch",{
 model={45883},
@@ -658,7 +670,7 @@ Challenge one to a pet battle and capture it
 learnpet Mudshell Conch##98446 |goto Highmountain/0 42.54,9.62
 step
 _Congratulations!_
-You collected the _Mudshell Conch_ battle pet
+You have collected the _Mudshell Conch_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Critter Pets\\Olivetail Hare",{
 model={4626},
@@ -672,7 +684,7 @@ Challenge one to a pet battle and capture it
 learnpet Olivetail Hare##97294 |goto Azsuna/0 60.36,20.25
 step
 _Congratulations!_
-You collected the _Olivetail Hare_ battle pet
+You have collected the _Olivetail Hare_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Critter Pets\\Rescued Fawn",{
 model={70663},
@@ -689,7 +701,7 @@ collect Rescued Fawn##141352 |n
 learnpet Rescued Fawn##113855 |use Rescued Fawn##141352
 step
 _Congratulations!_
-You collected the _Rescued Fawn_ battle pet
+You have collected the _Rescued Fawn_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Critter Pets\\Zoom",{
 model={69896},
@@ -709,7 +721,7 @@ collect Zoom##137298 |n
 learnpet Zoom##107206 |use Zoom##137298
 step
 _Congratulations!_
-You collected the _Zoom_ battle pet
+You have collected the _Zoom_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Dragonkin Pets\\Dream Whelpling",{
 model={65121},
@@ -725,7 +737,24 @@ Challenge one to a pet battle and capture it
 learnpet Dream Whelpling##97206
 step
 _Congratulations!_
-You collected the _Dream Whelpling_ battle pet
+You have collected the _Dream Whelpling_ battle pet
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Dragonkin Pets\\Infinite Hatchling",{
+model={74657},
+pet=2017,
+description="This guide will walk you through obtaining the Dragonkin pet: Infinite Hatchling",
+},[[
+step
+This pet can only be purchased during the _Mists of Pandaria Timewalking_ week
+|tip You will need to collect 2,200 Timewarped Badges by completing timewalking dungeons.
+|confirm
+step
+talk Mistweaver Xia##118828
+buy 1 Infinite Hatchling##143953 |n
+learnpet Infinite Hatchling##118060 |goto Timeless Isle/0 43.09,55.23 |use Infinite Hatchling##143953
+step
+_Congratulations!_
+You have collected the _Infinite Hatchling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Dragonkin Pets\\Nightmare Whelpling",{
 model={71945},
@@ -739,7 +768,7 @@ collect Nightmare Whelpling##136903 |n
 learnpet Nightmare Whelpling##112015 |use Nightmare Whelpling##136903
 step
 _Congratulations!_
-You collected the _Nightmare Whelpling_ battle pet
+You have collected the _Nightmare Whelpling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Dragonkin Pets\\Stormborne Whelpling",{
 model={71835},
@@ -755,7 +784,7 @@ collect Stormborne Whelpling##129208 |n
 learnpet Stormborne Whelpling##97205 |use Stormborne Whelpling##129208 |goto Stormheim/0 49.58,72.41
 step
 _Congratulations!_
-You collected the _Stormborne Whelpling_ battle pet
+You have collected the _Stormborne Whelpling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Elemental Pets\\Autumnal Sproutling",{
 model={57823},
@@ -769,7 +798,7 @@ buy 1 Autumnal Sproutling##113569 |n |goto Dalaran L/10 58.75,39.17
 learnpet Autumnal Sproutling##83584 |use Autumnal Sproutling##113569
 step
 _Congratulations!_
-You collected the _Autumnal Sproutling_ battle pet
+You have collected the _Autumnal Sproutling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Elemental Pets\\Broot",{
 model={65813},
@@ -789,7 +818,7 @@ collect Broot##129362 |n
 learnpet Broot##98463 |use Broot##129362
 step
 _Congratulations!_
-You collected the _Broot_ battle pet
+You have collected the _Broot_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Elemental Pets\\Fetid Waveling",{
 model={66155},
@@ -803,7 +832,7 @@ collect Fetid Waveling##130168 |n
 learnpet Fetid Waveling##99394 |use Fetid Waveling##130168
 step
 _Congratulations!_
-You collected the _Fetid Waveling_ battle pet
+You have collected the _Fetid Waveling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Elemental Pets\\Nightmare Lasher",{
 model={72085},
@@ -823,7 +852,7 @@ collect Nightmare Lasher##140741 |n
 learnpet Nightmare Lasher##112798 |use Nightmare Lasher##140741
 step
 _Congratulations!_
-You collected the _Nightmare Lasher_ battle pet
+You have collected the _Nightmare Lasher_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Elemental Pets\\Nightmare Treant",{
 model={72461},
@@ -840,7 +869,7 @@ collect Nightmare Treant##140761 |n
 learnpet Nightmare Treant##112945 |use Nightmare Treant##140761
 step
 _Congratulations!_
-You collected the _Nightmare Treant_ battle pet
+You have collected the _Nightmare Treant_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Elemental Pets\\Stormstruck Beaver",{
 model={47633},
@@ -861,7 +890,7 @@ Challenge one to a pet battle and capture it
 learnpet Stormstruck Beaver##111172
 step
 _Congratulations!_
-You collected the _Stormstruck Beaver_ battle pet
+You have collected the _Stormstruck Beaver_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Flying Pets\\Albatross Chick",{
 model={65066},
@@ -878,7 +907,7 @@ Challenge one to a pet battle and capture it
 learnpet Albatross Chick##97018 |goto 30.72,35.67
 step
 _Congratulations!_
-You collected the _Albatross Chick_ battle pet
+You have collected the _Albatross Chick_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Flying Pets\\Coastal Sandpiper",{
 model={71056},
@@ -892,7 +921,7 @@ Challenge one to a pet battle and capture it
 learnpet Coastal Sandpiper##110826 |goto Azsuna/0 54.18,32.77
 step
 _Congratulations!_
-You collected the _Coastal Sandpiper_ battle pet
+You have collected the _Coastal Sandpiper_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Flying Pets\\Echo Batling",{
 model={65981},
@@ -908,7 +937,7 @@ Challenge one to a pet battle and capture it
 learnpet Echo Batling##88542 |goto 50.05,35.31
 step
 _Congratulations!_
-You collected the _Echo Batling_ battle pet
+You have collected the _Echo Batling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Flying Pets\\Felbat Pup",{
 model={68859},
@@ -922,7 +951,7 @@ collect Felbat Pup##136924 |n
 learnpet Felbat Pup##106278 |use Felbat Pup##136924
 step
 _Congratulations!_
-You collected the _Felbat Pup_ battle pet
+You have collected the _Felbat Pup_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Flying Pets\\Firebat Pup",{
 model={68860},
@@ -935,7 +964,7 @@ collect Firebat Pup##140316 |n
 learnpet Firebat Pup##112132 |use Firebat Pup##140316
 step
 _Congratulations!_
-You collected the _Firebat Pup_ battle pet
+You have collected the _Firebat Pup_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Flying Pets\\Fledgling Kingfeather",{
 model={62219},
@@ -951,7 +980,7 @@ Challenge one to a pet battle and capture it
 learnpet Fledgling Kingfeather##97076 |goto Azsuna/0 39.28,29.16
 step
 _Congratulations!_
-You collected the _Fledgling Kingfeather_ battle pet
+You have collected the _Fledgling Kingfeather_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Flying Pets\\Fledgling Oliveback",{
 model={62217},
@@ -966,7 +995,7 @@ Challenge one to a pet battle and capture it
 learnpet Fledgling Oliveback##97078 |goto Azsuna/0 39.28,29.16
 step
 _Congratulations!_
-You collected the _Fledgling Oliveback_ battle pet
+You have collected the _Fledgling Oliveback_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Flying Pets\\Fledgling Warden Owl",{
 model={65087},
@@ -981,7 +1010,7 @@ buy 1 Fledgling Warden Owl##136898 |n |goto Azsuna/0 48.17,73.88
 learnpet Fledgling Warden Owl##97128 |use Fledgling Warden Owl##136898
 step
 _Congratulations!_
-You collected the _Fledgling Warden Owl_ battle pet
+You have collected the _Fledgling Warden Owl_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Flying Pets\\Golden Eaglet",{
 model={62218},
@@ -995,7 +1024,7 @@ Challenge one to a pet battle and capture it
 learnpet Golden Eaglet##97080 |goto Stormheim/0 62.03,52.76
 step
 _Congratulations!_
-You collected the _Golden Eaglet_ battle pet
+You have collected the _Golden Eaglet_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Flying Pets\\Hog-Nosed Bat",{
 model={65982},
@@ -1010,7 +1039,7 @@ Challenge one to a pet battle and capture it
 learnpet Hog-Nosed Bat##98192 |goto Highmountain/0 52.90,35.35
 step
 _Congratulations!_
-You collected the _Hog-Nosed Bat_ battle pet
+You have collected the _Hog-Nosed Bat_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Flying Pets\\Long-Eared Owl",{
 model={65089},
@@ -1024,7 +1053,7 @@ Challenge one to a pet battle and capture it
 learnpet Long-Eared Owl##97118 |goto Stormheim/0 44.11,45.55
 step
 _Congratulations!_
-You collected the _Long-Eared Owl_ battle pet
+You have collected the _Long-Eared Owl_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Flying Pets\\Nightwatch Swooper",{
 model={65090},
@@ -1038,7 +1067,7 @@ buy 1 Nightwatch Swooper##129878 |n |goto Dalaran L/10 58.75,39.17
 learnpet Nightwatch Swooper##97127 |use Nightwatch Swooper##129878
 step
 _Congratulations!_
-You collected the _Nightwatch Swooper_ battle pet
+You have collected the _Nightwatch Swooper_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Flying Pets\\Northern Hawk Owl",{
 model={65091},
@@ -1052,7 +1081,7 @@ Challenge one to a pet battle and capture it
 learnpet Northern Hawk Owl##97126 |goto Highmountain/0 55.11,85.66
 step
 _Congratulations!_
-You collected the _Northern Hawk Owl_ battle pet
+You have collected the _Northern Hawk Owl_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Flying Pets\\Pygmy Owl",{
 model={65091},
@@ -1067,7 +1096,7 @@ collect Pygmy Owl##130154 |n
 learnpet Pygmy Owl##108568 |use Pygmy Owl##130154 |goto Val'sharah/0 59.80,77.34
 step
 _Congratulations!_
-You collected the _Pygmy Owl_ battle pet
+You have collected the _Pygmy Owl_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Flying Pets\\Shimmering Aquafly",{
 model={65237},
@@ -1081,7 +1110,7 @@ Challenge one to a pet battle and capture it
 learnpet Shimmering Aquafly##97511 |goto Val'sharah/0 53.75,81.20
 step
 _Congratulations!_
-You collected the _Shimmering Aquafly_ battle pet
+You have collected the _Shimmering Aquafly_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Flying Pets\\Skyhorn Nestling",{
 model={62216},
@@ -1147,7 +1176,7 @@ collect Skyhorn Nestling##129277 |n
 learnpet Skyhorn Nestling##97079 |use Skyhorn Nestling##129277
 step
 _Congratulations!_
-You collected the _Skyhorn Nestling_ battle pet
+You have collected the _Skyhorn Nestling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Flying Pets\\Vale Flitter",{
 model={51292},
@@ -1161,7 +1190,7 @@ Challenge one to a pet battle and capture it
 learnpet Vale Flitter##97547 |goto Val'sharah/0 47.93,77.43
 step
 _Congratulations!_
-You collected the _Vale Flitter_ battle pet
+You have collected the _Vale Flitter_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Humanoid Pets\\Squirky",{
 model={72660},
@@ -1184,7 +1213,7 @@ buy 1 Sunborn Val'kyr##136920 |n |goto Stormheim/0 60.28,51.35
 learnpet Sunborn Val'kyr##106181 |use Sunborn Val'kyr##136920
 step
 _Congratulations!_
-You collected the _Sunborn Val'kyr_ battle pet
+You have collected the _Sunborn Val'kyr_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Humanoid Pets\\Thistleleaf Adventurer",{
 model={66147},
@@ -1204,7 +1233,7 @@ collect Thistleleaf Adventurer##130167 |n
 learnpet Thistleleaf Adventurer##99389 |use Thistleleaf Adventurer##130167
 step
 _Congratulations!_
-You collected the _Thistleleaf Adventurer_ battle pet
+You have collected the _Thistleleaf Adventurer_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Humanoid Pets\\Wyrmy Tunkins",{
 model={69532},
@@ -1218,7 +1247,7 @@ collect Wyrmy Tunkins##136922 |n
 learnpet Wyrmy Tunkins##106232 |use Wyrmy Tunkins##136922
 step
 _Congratulations!_
-You collected the _Wyrmy Tunkins_ battle pet
+You have collected the _Wyrmy Tunkins_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Magic Pets\\Celestial Calf",{
 model={68858},
@@ -1234,7 +1263,7 @@ buy 1 Celestial Calf##136923 |n |goto Dalaran L/10 43.31,46.80
 learnpet Celestial Calf##106270 |use Celestial Calf##136923
 step
 _Congratulations!_
-You collected the _Celestial Calf_ battle pet
+You have collected the _Celestial Calf_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Magic Pets\\Court Scribe",{
 model={72239},
@@ -1249,7 +1278,7 @@ buy 1 Court Scribe##140672 |n |goto Azsuna/0 46.91,41.41
 learnpet Court Scribe##112728 |use Court Scribe##140672
 step
 _Congratulations!_
-You collected the _Court Scribe_ battle pet
+You have collected the _Court Scribe_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Magic Pets\\Eldritch Manafiend",{
 model={65716},
@@ -1264,7 +1293,7 @@ Challenge one to a pet battle and capture it
 learnpet Eldritch Manafiend##98386 |goto Azsuna/0 55.86,15.33
 step
 _Congratulations!_
-You collected the _Eldritch Manafiend_ battle pet
+You have collected the _Eldritch Manafiend_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Magic Pets\\Erudite Manafiend",{
 model={65715},
@@ -1279,7 +1308,7 @@ Challenge one to a pet battle and capture it
 learnpet Erudite Manafiend##98385 |goto Azsuna/0 55.86,15.33
 step
 _Congratulations!_
-You collected the _Erudite Manafiend_ battle pet
+You have collected the _Erudite Manafiend_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Magic Pets\\Extinguished Eye",{
 model={65113},
@@ -1295,7 +1324,7 @@ buy 1 Extinguished Eye##136899 |n |goto Suramar/0 36.50,46.81
 learnpet Extinguished Eye##97174 |use Extinguished Eye##136899
 step
 _Congratulations!_
-You collected the _Extinguished Eye_ battle pet
+You have collected the _Extinguished Eye_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Magic Pets\\Eye of Inquisition",{
 model={65112},
@@ -1309,7 +1338,7 @@ collect Eye of Inquisition##136901 |n
 learnpet Eye of Inquisition##97179 |use Eye of Inquisition##136901 |goto Suramar/0 29.33,61.21
 step
 _Congratulations!_
-You collected the _Eye of Inquisition_ battle pet
+You have collected the _Eye of Inquisition_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Magic Pets\\Hateful Eye",{
 model={65111},
@@ -1328,7 +1357,7 @@ collect Hateful Eye##136900 |n
 learnpet Hateful Eye##97178 |use Hateful Eye##136900
 step
 _Congratulations!_
-You collected the _Hateful Eye_ battle pet
+You have collected the _Hateful Eye_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Magic Pets\\Hungering Claw",{
 model={71938},
@@ -1475,7 +1504,7 @@ collect Hungering Claw##140261 |n
 learnpet Hungering Claw##111984 |use Hungering Claw##140261
 step
 _Congratulations!_
-You collected the _Hungering Claw_ battle pet
+You have collected the _Hungering Claw_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Magic Pets\\Wonderous Wisdomball",{
 model={73463},
@@ -1550,7 +1579,7 @@ collect Wonderous Wisdomball##141348 |n
 learnpet Wonderous Wisdomball##113827 |use Wonderous Wisdomball##141348
 step
 _Congratulations!_
-You collected the _Wonderous Wisdomball_ battle pet
+You have collected the _Wonderous Wisdomball_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Mechanical Pets\\Alarm-o-Bot",{
 model={74484},
@@ -1564,7 +1593,7 @@ buy 1 Alarm-o-Bot##136910 |n |goto Dalaran L/10 58.75,39.17
 learnpet Alarm-o-Bot##99425 |use Alarm-o-Bot##136910
 step
 _Congratulations!_
-You collected the _Alarm-o-Bot_ battle pet
+You have collected the _Alarm-o-Bot_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Mechanical Pets\\Knockoff Blingtron",{
 model={59042},
@@ -1580,7 +1609,7 @@ collect Knockoff Blingtron##136911 |n
 learnpet Knockoff Blingtron##99505 |use Knockoff Blingtron##136911
 step
 _Congratulations!_
-You collected the _Knockoff Blingtron_ battle pet
+You have collected the _Knockoff Blingtron_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Undead Pets\\Risen Saber Kitten",{
 model={66157},
@@ -1593,7 +1622,7 @@ collect Risen Saber Kitten##130166 |n |goto Val'sharah/0 43.92,52.94
 learnpet Risen Saber Kitten##99403 |use Risen Saber Kitten##130166
 step
 _Congratulations!_
-You collected the _Risen Saber Kitten_ battle pet
+You have collected the _Risen Saber Kitten_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Undead Pets\\Tiny Apparition",{
 model={65516},
@@ -1608,5 +1637,5 @@ Challenge one to a pet battle and capture it
 learnpet Tiny Apparition##97952 |goto Stormheim/0 55.68,43.13
 step
 _Congratulations!_
-You collected the _Tiny Apparition_ battle pet
+You have collected the _Tiny Apparition_ battle pet
 ]])

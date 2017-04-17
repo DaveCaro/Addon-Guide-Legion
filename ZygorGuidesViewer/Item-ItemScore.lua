@@ -492,7 +492,7 @@ function ItemScore:ScoreItemStats(item, invslot, itemlink, verbose)
 				end
 			end
 		elseif statname:find("^EMPTY_SOCKET") then
-			socketname = statname:gsub("^EMPTY_SOCKET_","")
+			local socketname = statname:gsub("^EMPTY_SOCKET_","")
 			--local statweight = (rule.sockets and rule.sockets[socketname]) or SOCKET_WEIGHT
 
 			local statweight = ItemScore:GetSocketWeight(socketname,item.info.ilevel)
@@ -1082,15 +1082,29 @@ function ItemScore:GetSocketWeight(type,ilvl)
 	return score,id
 end
 
-local function ItemScore_SetTooltipData(tooltip, ...)
+local function ItemScore_SetTooltipData(tooltip, tooltipobj)
+	tooltipobj=tooltipobj or GameTooltip
 	if not ItemScore.TooltipPatched then
-		local itemName,itemLink = GameTooltip:GetItem()
+		local itemName,itemLink = tooltipobj:GetItem()
 		if not itemLink then
 			ItemScore.TooltipPatched  = true
 			return
 		end
 
+		local cleanlink = ZGV.ItemLink.ProcessItemLink(itemLink,false)
+
 		local score,code,comment = ZGV.ItemScore:GetItemScore(itemLink,nil,false,verbose)
+		local subscore,cancode,cancomment = ZGV.ItemScore:CanEquipItem(itemLink,false,true)
+
+		if ZGV.DEV then
+			tooltip:AddLine("|cfffe6100Zygor debug:|r ")
+			tooltip:AddLine("score "..score)
+			tooltip:AddLine("code "..code)
+			tooltip:AddLine("reason "..comment)
+			tooltip:AddDoubleLine("  ITEMID:",ZGV.ItemLink.GetItemID(cleanlink))
+		end
+
+
 		local item = ItemScore:GetItemStatsWithTooltip(itemLink)
 		if not item then 
 			ItemScore.TooltipPatched  = true
@@ -1098,55 +1112,98 @@ local function ItemScore_SetTooltipData(tooltip, ...)
 		end
 		local itemslot = item.info.equipslot
 		local equippedscore,equippedscore2 = 0,0
+		local equippeditem,equippeditem2 
+
+		local ecode,ereason
 
 		if ItemScore.possEquipSlots[itemslot] then
-			local equippeditem,equippeditem2 = ItemScore:GetItemInSlot(itemslot)
-			if equippeditem then equippedscore = ItemScore:GetItemScore(equippeditem,nil,false,verbose) end
-			if equippeditem2 then equippedscore2 = ItemScore:GetItemScore(equippeditem2,nil,false,verbose) end
+			equippeditem,equippeditem2 = ItemScore:GetItemInSlot(itemslot)
+			if equippeditem then equippedscore,ecode,ereason = ItemScore:GetItemScore(equippeditem,nil,false,verbose) end
+			if equippeditem2 then equippedscore2,ecode,ereason = ItemScore:GetItemScore(equippeditem2,nil,false,verbose) end
 		end
 
 		local diffscore,diffscore2 = math.round((score-equippedscore)*100)*0.01, math.round((score-equippedscore2)*100)*0.01
 		if diffscore > 0 then color = "|cff00ff00+" else color = "|cffff0000" end
 
+		tooltip:AddLine("|r")
 		if score>0 and (equippedscore>0 or equippedscore2>0) then
-			tooltip:AddLine("|cfffe6100Zygor ItemScore:|r "..score)
-			if equippedscore>0 then
-				local color
-				if diffscore > 0 then color = "|cff00ff00+" else color = "|cffff0000" end
-				tooltip:AddLine("|cfffe6100  equipped:|r "..equippedscore.." ("..color..diffscore..") ")
+			-- Item being previewed
+			if ZGV.db.profile.debug then
+				tooltip:AddLine("|cfffe6100Zygor ItemScore:|r "..score)
+			else
+				tooltip:AddLine("|cfffe6100Zygor ItemScore:|r ")
 			end
-			if equippedscore2>0 then
-				local color
-				if diffscore2 > 0 then color = "|cff00ff00+" else color = "|cffff0000" end
-				tooltip:AddLine("|cfffe6100  equipped:|r "..equippedscore2.." ("..color..diffscore2..") ")
+
+			local twoslots = (itemslot=="INVTYPE_TRINKET") or (itemslot=="INVTYPE_FINGER")
+
+			local comment
+			local slotinfo1 = twoslots and "Slot 1: " or ""
+			local slotinfo2 = twoslots and "Slot 2: " or ""
+
+			-- item in slot 1
+			if equippedscore>0 then
+				if cleanlink~=equippeditem then
+					local comment = "|r "..slotinfo1.."Upgrade |cff00ff00"
+					if diffscore <= 0 then 
+						comment = "|r "..slotinfo1.."Downgrade |cffff0000"
+					end
+					if ZGV.db.profile.debug then comment = comment..(score-equippedscore).." " end
+					local change=math.floor(((score*100/equippedscore)-100)*100)/100
+					tooltip:AddLine(comment..change.."% ")
+				else
+					tooltip:AddLine("|r "..slotinfo1.."Equipped")
+				end
+			else
+				tooltip:AddLine("|r "..slotinfo1.."Upgrade |cff00ff00100% ")
+			end
+
+			-- item in slot 2 only if it is ring or trinket
+			if twoslots and equippedscore2>0 then
+				if cleanlink~=equippeditem2 and equippedscore2>0 then
+					local comment = "|r "..slotinfo2.."Upgrade |cff00ff00"
+					if diffscore2 <= 0 then 
+						comment = "|r "..slotinfo2.."Downgrade |cffff0000"
+					end
+					if ZGV.db.profile.debug then comment = comment..(score-equippedscore2).." " end
+					local change=math.floor(((score*100/equippedscore2)-100)*100)/100
+					tooltip:AddLine(comment..change.."% ")
+				else
+					tooltip:AddLine("|r "..slotinfo2.."Equipped")
+				end
+			elseif twoslots then
+				tooltip:AddLine("|r "..slotinfo2.."Upgrade |cff00ff00100% ")
 			end
 		elseif score>0 then
 			tooltip:AddLine("|cfffe6100Zygor ItemScore:|r "..score)
+			tooltip:AddLine("|r  Upgrade |cff00ff00100% ")
 		end
-		if item.effect then
-			tooltip:AddLine("|rEffect parsed: ")
-			for i,v in pairs(item.effect) do
-				local statrule = ZGV.ItemScore.curRuleSet.stats[i]
-				if statrule then
-					tooltip:AddLine("|r  "..i.." "..v.." ("..(v*(statrule.weight or 0))..")")
+
+		if ZGV.DEV then
+			if item.effect then
+				for i,v in pairs(item.effect) do
+					local statrule = ZGV.ItemScore.curRuleSet.stats[i]
+					if statrule then
+						tooltip:AddLine("|rEffect parsed: ")
+						tooltip:AddLine("|r  "..i.." "..v.." ("..(v*(statrule.weight or 0))..")")
+					end
 				end
 			end
-		end
-				
+		end				
 
 		ItemScore.TooltipPatched  = true
 	end
+	if tooltipobj==ItemRefTooltip then ItemRefTooltip:Show() end -- update to new height, have to do it by hand since IRT is called just once
 end
 
 local function ItemScore_ClearTooltipData(tooltip, ...)
 	ItemScore.TooltipPatched = false
 end
 
-if ZGV.DEV then
-	GameTooltip:HookScript("OnTooltipSetItem", ItemScore_SetTooltipData)
-	GameTooltip:HookScript("OnTooltipCleared", ItemScore_ClearTooltipData)
-	hooksecurefunc (GameTooltip, "SetHyperlink", function(tip) ItemScore_SetTooltipData(tip) end)
-end
+GameTooltip:HookScript("OnTooltipSetItem", ItemScore_SetTooltipData)
+GameTooltip:HookScript("OnTooltipCleared", ItemScore_ClearTooltipData)
+ItemRefTooltip:HookScript("OnTooltipCleared", ItemScore_ClearTooltipData)
+hooksecurefunc (GameTooltip, "SetHyperlink", function(tip) ItemScore_SetTooltipData(tip,GameTooltip) end)
+hooksecurefunc (ItemRefTooltip, "SetHyperlink", function(tip) ItemScore_SetTooltipData(tip,ItemRefTooltip) end)
 
 
 function ItemScore:ImportPawn(datastring)

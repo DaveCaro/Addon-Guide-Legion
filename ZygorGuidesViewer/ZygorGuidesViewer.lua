@@ -60,6 +60,7 @@ ZGV.Expansion_Mists = (build>=15799)
 ZGV.Expansion_Warlords = (build>=18566)
 ZGV.Expansion_Legion = (build>=22248)
 
+ZGV.Patch_7_2 = (build>=23721)
 
 -- local libs
 
@@ -636,6 +637,7 @@ local function _StartupThread()
 
 	self:SetWaypointAddon(self.db.profile.waypointaddon)
 
+	ZGV.HBD:FixPhasedContinents()
 	
 	waitformaint("maint_startup_modules") ---------------------
 
@@ -664,7 +666,7 @@ local function _StartupThread()
 			if self.db.profile.safe_startup then t=debugprofilestop() yield(("Startup module: |cffffddee%s|r took %d ms"):format(name,t1)) end
 
 			if not self.db.profile.safe_startup then self:Debug("&startup Startup module: %s in %d ms",name,t1) end
-			if not ok then  self:Error("Error during initialization sequence '"..name.."':\n"..ret.."\n-- STACKTRACE: --\n"..ZGV.MinimizeStack(debugstack(thread)))  end
+			if not ok then  self:ErrorThrow("Error during initialization sequence '"..name.."':\n"..ret.."\n-- STACKTRACE: --\n"..ZGV.MinimizeStack(debugstack(thread)))  end
 
 			--if self.db.profile.safe_startup then t=debugprofilestop() yield("Finished startup module: "..name..(" in %d ms"):format(t1))
 			--elseif debugprofilestop()-t>100 then t=debugprofilestop() yield("(startup modules up to "..i..")") end
@@ -2643,7 +2645,7 @@ function ZGV:UpdateFrame(full,onupdate)
 						-- ICONS
 
 						if goal and self.db.profile.goalicons then
-							label:SetPoint("TOPLEFT",line,"TOPLEFT",icon_indent+2,0)
+							label:SetPoint("TOPLEFT",line,"TOPLEFT",icon_indent+2,(l==1 and -2 or -1))
 							icon:SetPoint("CENTER",line,"TOPLEFT",self.db.profile.fontsize*0.5+1,-self.db.profile.fontsize*0.5-1)
 							icon:SetSize(self.CurrentSkinStyle.StepLineIconSize * self.db.profile.fontsize,self.CurrentSkinStyle.StepLineIconSize * self.db.profile.fontsize) -- TODO SkinData friendly?
 							icon:Show()
@@ -2690,7 +2692,7 @@ function ZGV:UpdateFrame(full,onupdate)
 								icon:SetIcon(1)
 							end
 						else
-							label:SetPoint("TOPLEFT",line,"TOPLEFT",0,0)
+							label:SetPoint("LEFT",line,"TOPLEFT",0,-1)
 							icon:Hide()
 						end
 
@@ -3641,8 +3643,21 @@ function ZGV:FindEvent(eventName)
 	end
 	
 	for event=1, CalendarGetNumDayEvents(0,day) do --0 current month, 1 next month, -1 last month... Always want the current day.
-		local name,hr,mn,eventType,eventStatus,eventType2,texture = CalendarGetDayEvent(0,day,event)
-		name=name:upper() texture=texture:upper()
+		-- [7.2 prep]
+		local name,hr,mn,eventType,eventStatus,eventType2,texture
+		if ZGV.Patch_7_2 then
+			-- 7.2
+			local eventdata = C_Calendar.GetDayEvent(0,day,event)
+			if eventdata then
+				name = eventdata.title
+				texture = tostring(eventdata.texture)
+			end				
+		else
+			-- 7.1.5
+			name,hr,mn,eventType,eventStatus,eventType2,texture = CalendarGetDayEvent(0,day,event)
+		end
+		name=name:upper() 
+		texture=texture:upper()
 
 		if (texture=="CALENDAR_HARVESTFESTIVAL" and month>10) then --Stay the same
 			texture="CALENDAR_HARVESTFESTIVAL_PILGRIM" --Lovely work around for Harvest Festival and Pilgrim's Bounty having the same texture
@@ -5461,8 +5476,14 @@ ZGV.ParseLog = ""
 
 function ZGV:Error(s,...)
 	if (...) then s=s:format(...) end
-	self:Print(s)
+	self:Print("|cffff0000ERROR:|r "..s)
 	ZGV.ParseLog = ZGV.ParseLog .. s .. "\n"
+	return s
+end
+
+function ZGV:ErrorThrow(...)
+	local s = self:Error(...)
+	geterrorhandler()(s)
 end
 
 -- HBD migration snip: Ship Arrival Times 
@@ -5981,6 +6002,10 @@ end
 
 function ZGV:IsBoostedChar()
 	return IsQuestFlaggedCompleted(34398)
+end
+
+function ZGV.IsLegionBoatLock()
+	return (IsQuestFlaggedCompleted(40519) or IsQuestFlaggedCompleted(43926)) and not (IsQuestFlaggedCompleted(40593) or IsQuestFlaggedCompleted(40607))
 end
 
 

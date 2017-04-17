@@ -2,6 +2,7 @@
 
 	<Script file="..\DugisGuide_Ach_Legion\A_Glorious_Campaign.lua"/>
 	<Script file="..\DugisGuide_Ach_Legion\Broken_Isles_Pathfinder_Part_One.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Broken_Isles_Pathfinder_Part_Two.lua"/>
 
 	<Script file="..\DugisGuide_Ach_Legion\Adventurer_of_Azsuna.lua"/>
 	<Script file="..\DugisGuide_Ach_Legion\Adventurer_of_Highmountain.lua"/>
@@ -15,6 +16,7 @@
 	<Script file="..\DugisGuide_Ach_Legion\Explore_Stormheim.lua"/>
 	<Script file="..\DugisGuide_Ach_Legion\Explore_Suramar.lua"/>
 	<Script file="..\DugisGuide_Ach_Legion\Explore_Valsharah.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Explore_Broken_Shore.lua"/>
 	<Script file="..\DugisGuide_Ach_Legion\Going_Up.lua"/>
 	<Script file="..\DugisGuide_Ach_Legion\Higher_Dimensional_Learning.lua"/>	
 	<Script file="..\DugisGuide_Ach_Legion\Underbelly_Tycoon.lua"/>

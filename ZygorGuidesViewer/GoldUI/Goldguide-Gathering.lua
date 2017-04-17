@@ -88,5 +88,5 @@ end
 
 
 function Gathering.dynamic_sort(a,b)
-	return Goldguide.dynamic_sort("gathering",a,b, "time","zerolast", ZGV.db.profile.goldsort['gathering'][1],ZGV.db.profile.goldsort['gathering'][2], "dispgold","desc")
+	return Goldguide.dynamic_sort("gathering",a,b, "time","zerolast", ZGV.db.profile.goldsort['gathering'][1],ZGV.db.profile.goldsort['gathering'][2], "dispgold","desc", "name","asc")
 end

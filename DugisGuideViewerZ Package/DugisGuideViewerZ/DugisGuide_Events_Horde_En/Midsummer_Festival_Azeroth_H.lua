@@ -6,7 +6,7 @@ return [[
 N Manual Tick Required |N|Dugi Guides is currently unable to automatically detect the quest that you have already done and you will need to tick the completed quest manually|
 
 R Durotar |N|Travel to {Durotar} (52, 47)| |Z|4|
-A Honor the Flame (Durotar) |N|{Razor Hill} (52, 47)| |E| |Z|4| |BUFF|Interface\Icons\spell_mage_altertime|
+A Honor the Flame (Durotar) |N|{Razor Hill} (52, 47)| |E| |Z|4|
 A Honor the Flame (Northern Barrens) |N|{The Crossroads} (49, 54)| |E| |Z|11|
 A Honor the Flame (Mulgore) |N|{Bloodhoof Village} (51, 59)| |E| |Z|9|
 A Honor the Flame (Southern Barrens) |N|{Desolation Hold} (40, 67)| |E| |Z|607|
@@ -56,7 +56,7 @@ A Honor the Flame (Northern Stranglethorn) |N|Grom'Gol Base Camp (41, 51)| |E| |
 A Desecrate this Fire! (Westfall) |N|Moonbrook (45, 62)| |E| |Z|39|
 A Desecrate this Fire! (Duskwood) |N|Darkshire (73, 54)| |E| |Z|34|
 R Blasted Lands |N|Travel to {Blasted Lands} (48.2, 7.2)| |Z|19|
-N Speak to (npc:88206) |N|Speak to (npc:88206) to see {Blasted Lands} before the invasion (48.2, 7.2)| |Z|19| |NPC|88206| |BUFF|Interface\Icons\spell_mage_altertime|
+N Speak to (npc:88206) |N|Speak to (npc:88206) to see {Blasted Lands} before the invasion (48.2, 7.2)| |Z|19| |NPC|88206| |BUFF|609811|
 A Honor the Flame (Blasted Lands) |N|{Dreadmaul Hold} (46, 14)| |E| |Z|19|
 A Desecrate this Fire! (Blasted Lands) |N|{Nethergarde Keep} (55, 15)| |E| |Z|19|
 A Honor the Flame (Swamp of Sorrows) |N|Bogpaddle (77, 14)| |E| |Z|38|

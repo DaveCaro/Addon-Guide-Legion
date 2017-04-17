@@ -18,7 +18,7 @@ collect Lagan##140323 |n
 learnpet Lagan##112167 |use Lagan##140323
 step
 _Congratulations!_
-You collected the _Lagan_ battle pet
+You have collected the _Lagan_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Ridgeback Piglet",{
 model={65667},
@@ -68,7 +68,7 @@ label "Congratz"
 learnpet Ridgeback Piglet##98172 |use Ridgeback Piglet##136905
 step
 _Congratulations!_
-You collected the _Ridgeback Piglet_ battle pet
+You have collected the _Ridgeback Piglet_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Thaumaturgical Piglet",{
 model={65671},
@@ -118,7 +118,25 @@ label "Congratz 2"
 learnpet Thaumaturgical Piglet##98183 |use Thaumaturgical Piglet##136908
 step
 _Congratulations!_
-You collected the _Thaumaturgical Piglet_ battle pet
+You have collected the _Thaumaturgical Piglet_ battle pet
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Critter Pets\\Noblegarden Bunny",{
+model={28726},
+pet=1943,
+description="This guide will walk you through obtaining the Critter pet: Noblegarden Bunny",
+},[[
+step
+This pet can only be purchased during the _Noblegarden_ event
+|tip This event occurs from March 28 - April 4.
+confirm
+step
+talk Noblegarden Merchant##32836
+buy 1 Noblegarden Bunny##141532 |n
+|tip This pet costs 100 Noblegarden Chocolate.
+learnpet Noblegarden Bunny##33975 |goto Durotar 51.8,41.8 |use Noblegarden Bunny##141532
+step
+_Congratulations!_
+You have collected the _Noblegarden Bunny_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Dragonkin Pets\\Emmigosa",{
 model={65120},
@@ -132,7 +150,27 @@ collect Emmigosa##129178 |n
 learnpet Emmigosa##97207 |use Emmigosa##129178
 step
 _Congratulations!_
-You collected the _Emmigosa_ battle pet
+You have collected the _Emmigosa_ battle pet
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Elemental Pets\\Igneous Flameling",{
+model={73308},
+pet=1949,
+description="This guide will walk you through obtaining the Elemental pet: Igneous Flameling",
+},[[
+step
+This pet can only be purchased during the _Midsummer Fire Festival_ event
+|tip This event occurs from June 21 - July 5.
+confirm
+step
+talk Midsummer Merchant##26124
+buy 1 Igneous Flameling##141714 |n
+|tip This pet costs 350 Burning Blossoms.
+|tip Refer to our Midsummer Fire Festival guide to obtain this currency.
+Use the Igneous Flameling |use Igneous Flameling##141714
+learnpet Igneous Flameling##114543 |goto Orgrimmar 47.6,37.8
+step
+_Congratulations!_
+You have collected the _Igneous Flameling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Humanoid Pets\\Alliance Enthusiast",{
 model={71002},
@@ -142,6 +180,27 @@ description="This guide will walk you through obtaining the Humanoid pet: Allian
 step
 This pet is a reward for obtaining honor level 50 for the first time
 You must complete this on an Alliance character
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Humanoid Pets\\Dutiful Gruntling",{
+model={73245},
+description="This guide will walk you through obtaining the Humanoid pet: Dutiful Gruntling",
+},[[
+step
+This pet is a reward for reaching PvP Prestige level 7 for the first time
+collect Dutiful Gruntling##142380 |n
+|tip This will be in your mailbox.
+learnpet Dutiful Gruntling##115919 |use Dutiful Gruntling##142380
+step
+_Congratulations!_
+You have collected the _Dutiful Gruntling_ battle pet
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Humanoid Pets\\Dutiful Squire",{
+model={73244},
+description="This guide will walk you through obtaining the Humanoid pet: Dutiful Squire",
+},[[
+step
+This pet is a reward for reaching PvP Prestige level 7 for the first time
+|tip You must complete this on an _Alliance_ character.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Humanoid Pets\\Horde Fanatic",{
 model={71003},
@@ -156,7 +215,26 @@ collect Horde Fanatic##139776 |n
 learnpet Horde Fanatic##111296 |use Horde Fanatic##139776
 step
 _Congratulations!_
-You collected the _Horde Fanatic_ battle pet
+You have collected the _Horde Fanatic_ battle pet
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Humanoid Pets\\Knight-Captain Murky",{
+model={73351},
+pet=1940,
+description="This guide will walk you through obtaining the Humanoid pet: Knight-Captain Murky",
+},[[
+step
+This pet was a reward for attending US or EU BlizzCon 2016 event
+|tip This pet can no longer be obtained.
+|tip This is the Alliance-only version of the reward.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Humanoid Pets\\Legionnaire Murky",{
+model={73352},
+pet=1939,
+description="This guide will walk you through obtaining the Humanoid pet: Legionnaire Murky",
+},[[
+step
+This pet was a reward for attending US or EU BlizzCon 2016 event
+|tip This pet can no longer be obtained.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Humanoid Pets\\Tylarr Gronnden",{
 author="support@zygorguides.com",
@@ -176,7 +254,7 @@ buy 1 Tylarr Gronnden##144394 |goto Brawl'gar Arena/1 50.79,28.44 |n
 learnpet Tylarr Gronnden##119040 |use Tylarr Gronnden##144394
 step
 _Congratulations!_
-You collected the _Tylarr Gronnden_ battle pet
+You have collected the _Tylarr Gronnden_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Magic Pets\\Enchanted Cauldron",{
 model={69490},
@@ -213,7 +291,7 @@ label "end cauldron"
 learnpet Enchanted Cauldron##96403 |use Enchanted Cauldron##128533
 step
 _Congratulations!_
-You collected the _Enchanted Cauldron_ battle pet
+You have collected the _Enchanted Cauldron_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Magic Pets\\Enchanted Pen",{
 model={69488},
@@ -250,7 +328,7 @@ label "end pen"
 learnpet Enchanted Pen##96405 |use Enchanted Pen##128535
 step
 _Congratulations!_
-You collected the _Enchanted Pen_ battle pet
+You have collected the _Enchanted Pen_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Magic Pets\\Enchanted Torch",{
 model={69489},
@@ -287,7 +365,7 @@ label "end torch"
 learnpet Enchanted Torch##96404 |use Enchanted Torch##128534
 step
 _Congratulations!_
-You collected the _Enchanted Torch_ battle pet
+You have collected the _Enchanted Torch_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Magic Pets\\Transmutant",{
 model={71828},
@@ -338,7 +416,7 @@ label "Congratz 3"
 learnpet Transmutant##111425 |use Transmutant##139789
 step
 _Congratulations!_
-You collected the _Transmutant_ battle pet
+You have collected the _Transmutant_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Magic Pets\\Untethered Wyrmling",{
 model={71827},
@@ -354,7 +432,7 @@ collect Untethered Wyrmling##139790 |n
 learnpet Untethered Wyrmling##111423 |use Untethered Wyrmling##139790
 step
 _Congratulations!_
-You collected the _Untethered Wyrmling_ battle pet
+You have collected the _Untethered Wyrmling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Mechanical Pets\\Trigger",{
 model={68666},
@@ -399,5 +477,5 @@ label "Congrats"
 learnpet Trigger##210696 |use Trigger##136921
 step
 _Congratulations!_
-You collected the _Trigger_ battle pet
+You have collected the _Trigger_ battle pet
 ]])

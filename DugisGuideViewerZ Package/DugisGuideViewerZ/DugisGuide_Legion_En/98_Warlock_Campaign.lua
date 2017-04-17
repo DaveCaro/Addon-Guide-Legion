@@ -154,7 +154,7 @@ T The Power Possessed |QID|40712| |N|(npc:101097), in {Circle of Wills} (74.18, 
 A The Heart of the Dreadscar |QID|40731| |N|(npc:101097) in the {Circle of Wills} (55.90, 65.04)| |Z|1014 11| |NPC|101097|
 
 R Dreadscar Rift |QID|40731| |N|Travel to {Dreadscar Rift} through the portal (58.70, 68.61)| |Z|1014 11|
-C The Council's Vengeance |SID|29353|1| |N|Defeat (npc:98831) in {Dreadscar Rift} (59.82, 37.93)| |Z|1051 0| ||NPC|98831| |QID|40731|
+C The Council's Vengeance |SID|29353|1| |N|Defeat (npc:98831) in {Dreadscar Rift} (59.82, 37.93)| |Z|1051 0| |NPC|98831| |QID|40731|
 C Cut Out the Heart |SID|29354|2| |N|Collect the Heart of the Overlord in {Dreadscar Rift} (57.12, 36.59)| |Z|1051 0| |QID|40731|
 C Heart placed above the altar |SID|29356|3| |N|Place the Heart of the Overlord above the altar in the Seat of the Overlord to take command of his armies in {Dreadscar Rift} (55.30, 48.19) (32.98, 26.57)| |Z|1051 0| |QID|40731|
 C Becoming the Overlord |SID|29355|3| |N|Command (npc:98831)'s armies in {Dreadscar Rift} (33.81, 28.19)| |Z|1051 0| |QID|40731|
@@ -447,6 +447,82 @@ C Destiny Unfulfilled |QID|44497| |N|Witness True Betrayal in Shadowmoon Valley 
 
 R Dreadscar Rift |TID|44496| |N|Travel to {Dreadscar Rift} (53.18,32.63)| |Z|1050 0|
 T Destiny Unfulfilled |QID|44496| |N|(npc:113857) in {Dreadscar Rift} (53.18,32.63)| |Z|1050 0| |NPC|113857|
+
+R Krasus' Landing |N|Travel to Krasus' Landing} (69.40, 43.99)| |Z|1014 10|
+A Armies of Legionfall |QID|46730| |N|This quest is available after you unlock World Quests by completing (qid:43341)| |Z|1014 10| |NPC|120215| |O|
+T Armies of Legionfall |QID|46730| |N|(npc:120215), in {Krasus' Landing} (69.37, 43.88)| |Z|1014 10| |NPC|120215| |O|
+A Assault on Broken Shore |QID|46734| |N|(npc:120215) in {Krasus' Landing} (69.40, 43.99)| |Z|1014 10| |NPC|120215|
+N (npc:120215) |QID|46734.1| |N|Speak to (npc:120215) in {Krasus' Landing} (69.40, 43.99)| |Z|1014 10| |NPC|120215|
+N (npc:120752) |SID|35327|1| |N|Mount the (npc:120752) in {Krasus' Landing}| |NPC|120752| |V|
+C Secure the Beach |SID|35327|2| |N|Kill the demons on the beach until you reach 100% to secure the beach (50.86, 69.96)| |Z|1149 0|
+C Defeat Lord Kalgorath |SID|35329|3| |N|Defeat (npc:116291) in {Broken Shore} (44.30, 73.90) (42.04, 72.23) (41.29, 65.12) (41.30, 65.12)| |Z|1149 0| |NPC|116291|
+C Legion portals closed |SID|35495|4| |N|Follow the waypoints and defeat the forces to close the portals in {Broken Shore}(42.95, 58.73)  (46.98, 58.29) (52.15, 52.38)(54.57, 47.99) (57.09, 52.15) (59.09, 51.61) (59.09, 51.61)| |Z|1149 0|
+K (npc:118551) |SID|35497|5| |N|Kill (npc:118551) in {Broken Shore} (55.15, 51.75)| |Z|1149 0| |NPC|118551|
+C Use Gateway |SID|35551|6| |N|Take the Demonic Gateway to the base of Mephistroth's command ship (53.41, 50.42)| |Z|1149 0|
+C Plant Arcane Bombs |SID|36178|7| |N|Plant Arcane Bombs in the command ship in each waypoints, look for the yellow dots in the minimap, you will need to use the portal after planting the first 2| |Z|1149 0|
+C Defeat Mephistroth |SID|36179|8| |N|Kill (npc:120746) in {Broken Shore} (50.03, 45.38)| |Z|1149 0| |NPC|120746| |QID|46734.2|
+
+T Assault on Broken Shore |QID|46734| |N|(npc:116302) in {Deliverance Point} (44.71, 63.29)| |Z|1021 0| |NPC|116302|
+A Legionfall Supplies |QID|46286| |N|(npc:120183) in {Deliverance Point} (44.54, 63.19)| |Z|1021 0| |NPC|120183|
+A Aalgen Point |QID|46832| |N|(npc:120183) in {Deliverance Point} (44.54, 63.19)| |Z|1021 0| |NPC|120183|
+
+R Aalgen Point |TID|46832| |N|Travel to {Aalgen Point} (46.27, 58.47)(51.36, 54.77) (52.43, 52.34) (70.69, 47.58)| |Z|1021 0| 
+T Aalgen Point |QID|46832| |N|(npc:120118), in {Aalgen Point} (70.69, 47.58)| |Z|1021 0| |NPC|120118|
+A Vengeance Point |QID|46845| |N|(npc:120118), in {Aalgen Point} (70.69, 47.58)| |Z|1021 0| |NPC|120118|
+
+R Deliverance Point |QID|46845| |N|Travel to {Deliverance Point} (44.54, 63.19)| |Z|1021 0|
+R Vengeance Point |QID|46845| |N|Travel to {Vengeance Point} (50.63, 20.77)| |Z|1021 0| 
+N Scout Dreadstalker Point |QID|46845.1| |N|Scout Dreadstalker Point (50.66, 21.41)| |Z|1021 0|
+C Vengeance Point |QID|46845| |N|Kill 4 (npc:120969) and 5 (npc:120748) in {Vengeance Point} (50.63, 20.77)| |Z|1021 0| |NPC|120969, 120748|
+T Vengeance Point |QID|46845| |N|(npc:111323) in {Vengeance Point} (49.69, 21.03)| |Z|1021 0| |NPC|111323|
+
+A Seeking Lost Knowledge |QID|47067| |N|(npc:116302) in {Deliverance Point}<br/><br/>You need at least rank 25 artifact knowledge (44.71, 63.29)| |Z|1021 0| |NPC|116302|
+
+N Recover Knowledge from Moonlight Ascent |QID|47067.3| |N|Click Remnant of Lost Knowledge, stand still and wait for the channeling to complete. (71.22,41.78) (75.62,36.27)| |Z|1021 0|
+N Recover Knowledge from Moonlight Ascent |QID|47067.2| |N|Click Remnant of Lost Knowledge, stand still and wait for the channeling to complete. (72.58,40.20)| |Z|1021 0|
+N Recover Knowledge from Moonlight Ascent |QID|47067.1| |N|Click Remnant of Lost Knowledge, stand still and wait for the channeling to complete. (76.45,39.81) (82.57,45.09)| |Z|1021 0|
+
+T Seeking Lost Knowledge |QID|47067| |N|(npc:116302) in {Deliverance Point} (44.71, 63.29)| |Z|1021 0| |NPC|116302|
+A Delivering Lost Knowledge |QID|47076| |N|(npc:116302) in {Deliverance Point} (44.71, 63.29)| |Z|1021 0| |NPC|116302|
+A Bloodbringer's Missive |QID|46237| |N|(npc:117622) in {Deliverance Point} (43.92,63.08)| |Z|1021 0| |NPC|117622|
+
+R Dreadscar Rift |QID|46940| |N|Travel to {Dreadscar Rift} (57.04,41.04)| |Z|1050 0|
+T Delivering Lost Knowledge |QID|47076| |N|(npc:111740) in {Dreadscar Rift} (57.04,41.04)| |Z|1050 0| |NPC|111740|
+A Using Lost Knowledge |QID|46940| |N|(npc:111740) in {Dreadscar Rift} (57.04,41.04)| |Z|1050 0| |NPC|111740|
+C Using Lost Knowledge |QID|46940.1| |N|Speak to (npc:111740) and start a Research Work Order (57.04,41.04)| |Z|1050 0| |NPC|111740|
+T Using Lost Knowledge |QID|46940| |N|(npc:111740) in {Dreadscar Rift} (57.07,41.08)| |Z|1050 0| |NPC|111740|
+
+N (npc:119166) |QID|46237.1| |N|Speak with (npc:119166) (35.23,38.55)| |Z|1050 0| |NPC|119166|
+T Bloodbringer's Missive |QID|46237| |N|(npc:119166) in {Dredscar Rift} (35.23,38.55)| |Z|1050 0| |NPC|119166|
+
+A If You Build It |QID|46238| |N|(npc:119166) in {Dredscar Rift} (35.23,38.55)| |Z|1050 0| |NPC|119166|
+A Fel to the Core |QID|46239| |N|(npc:119166) in {Dredscar Rift} (35.23,38.55)| |Z|1050 0| |NPC|119166|
+A Give Me Fuel, Give Me Fire |QID|46240| |N|(npc:119166) in {Dredscar Rift} (35.23,38.55)| |Z|1050 0| |NPC|119166|
+
+C Give Me Fuel, Give Me Fire  |QID|46240.1| |N|Kill (npc:108259) and collect 50 (item:144444) in {Val'sharah} (57.57,83.43) (59.93,81.73)| |Z|1018 0| |NPC|108259|
+C Fel to the Core |QID|46239.1| |N|Collect an (item:144443) from the commander of a Legion Assault on the Broken Isles. You can obtain this item by completing any invasion in the Broken Isles.| 
+C If You Build It QIf You Build It |QID|46238| |N|Collect 5 (item:123919), 3 (item:130175) and an (item:127845). These can be gathered and crafted using profession skills or purchased on the Auction House.|
+
+T If You Build It |QID|46238| |N|(npc:119166) in {Dredscar Rift} (35.23,38.55)| |Z|1050 0| |NPC|119166|
+T Fel to the Core |QID|46239| |N|(npc:119166) in {Dredscar Rift} (35.23,38.55)| |Z|1050 0| |NPC|119166|
+T Give Me Fuel, Give Me Fire |QID|46240| |N|(npc:119166) in {Dredscar Rift} (35.23,38.55)| |Z|1050 0| |NPC|119166|
+A The Minions of Hel'nurath |QID|46241| |N|(npc:119166) in {Dredscar Rift} (35.23,38.55)| |Z|1050 0| |NPC|119166|
+
+C The Minions of Hel'nurath |QID|46241.1| |N|Click Xorothian Cultist, use your Succubus' Seduce ability on them. (46.88,58.67) (45.22,47.46)| |Z|1021 0|
+
+T The Minions of Hel'nurath |QID|46241| |N|Field turnin| |Z|1021 0|
+A The Dreadlord's Calling |QID|46242| |N|Auto quest| |Z|1021 0|
+K (npc:119173) |QID|46242.1| |N|Kill (npc:119173) and collect (item:144445) (43.44,46.76)| |Z|1021 0| |NPC|119173|
+
+T The Dreadlord's Calling |QID|46242| |N|(npc:119166) in {Dreadscar Rift} (35.23,38.59)| |Z|1050 0| |NPC|119166|
+A The Wrathsteed of Xoroth |QID|46243| |N|(npc:119166) in {Dreadscar Rift} (35.23,38.59)| |Z|1050 0| |NPC|119166|
+
+N Place the Calling Stone |SID|35652|1| |N|Click Xorothian Calling Stone| |QID|46243| 
+N Defeat the minions |SID|35653|2| |N|To remove the shield for Ritualists, use your Felhunter's Devour Magic ability.| |QID|46243| 
+K (npc:119840) |SID|35654|3| |N|Kill (npc:119840), You MUST kill the imps IMMEDIATELY when they spawn!| |QID|46243| 
+C Enslave the Wrathsteed |SID|35655|3| |N|Cast Enslave Demon on the Wrathsteed.| |QID|46243| 
+T The Wrathsteed of Xoroth |QID|46243| |N|Speak to (npc:119823)|
+
 ----
 A Champion Armaments |QID|44228| |N|(npc:110408), This quest will only be available if you chose to get the "Shadow Pact" class hall upgrade. (57.29,52.50)| |Z|1050 0| |NPC|110408|
 C Champion Armaments |QID|44228| |N|Speak to (npc:110408) and place a work order for Champion Armament (57.29,52.50)| |Z|1050 0| |NPC|110408|

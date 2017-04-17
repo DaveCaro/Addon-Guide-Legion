@@ -42,7 +42,7 @@ B (item:116097) |N|(npc:79832) in your Garrison| |NPC|79832| |L|116097| |P|Jewel
 
 N (item:115524) |JE| |N|Create (item:115524) daily. These are required for leveling and high level recipes. <br/><b>20 (item:109118) <br/><b>10 (item:109119). <br/><br/>Tick this step.| |P|Jewelcrafting 700|
 N Required Materials; |N|<b>4200 (item:109118) <br/><b>3500 (item:109124). <br/><br/>Tick this step.|
-N 1-700 (item:115804) |JE| |N|Craft with; <br/><b>6 (item:109118) <br/><b>5 (item:109124)| |P|Jewelcrafting 700|
+N 1-700 (item:115804)|N|Craft with; <br/><b>6 (item:109118) <br/><b>5 (item:109124)| |P|Jewelcrafting 700|
 
 N Guide Complete
 ]]

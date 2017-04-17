@@ -1,18 +1,5 @@
 local name,ZGV=...
 
--- test stuff
-local test
-if not ZGV then
-ZGV={}
-ZGV._NPCData = [[
-
-3:naaa|b123
-]]
-wipe=function() end
-test=1
-end
---
-
 local NPCcached={}
 local function parseNPC(s)
 	wipe(NPCcached)
@@ -33,8 +20,12 @@ local badfact
 if UnitFactionGroup("player")=="Alliance" then badfact="H"
 elseif UnitFactionGroup("player")=="Horde" then badfact="A"
 end
-if badfact then ZGV._NPCData=ZGV._NPCData:gsub("%d+=s"..badfact..".-\n","") end
 
+-- Clean up
+for t,d in pairs(ZGV._NPCData) do ZGV._NPCData[t]=d:gsub("\t","") end
+
+-- Remove hostiles
+if badfact then for t,d in pairs(ZGV._NPCData) do ZGV._NPCData[t]=d:gsub("%d+=s"..badfact..".-\n","") end end
 if badfact then ZGV._MailboxData=ZGV._MailboxData:gsub("s"..badfact..".-\n","") end
 
 -- localize
@@ -45,16 +36,10 @@ ZGV.NPCData={}  setmetatable(ZGV.NPCData,{__index=function(t,k) if type(k)~='num
 ZGV.NPCData.parseNPC=parseNPC  -- store it, in case someone wants it
 ZGV.NPCData.raw=data
 function ZGV.NPCData:iterate(typ)
-	if not typ then typ="." end
-	return data:gmatch("\n(%d+)=([^\n]-|t"..typ..")")
+	return data[typ]:gmatch("\n(%d+)=([^\n]+)")
 end
 ZGV._NPCData=nil
 
-
-if test then
-	print(ZGV.NPCData[3]['n'])
-	print(ZGV.NPCData[3]['b'])
-end
 
 -- Mailboxes --
 
@@ -106,9 +91,4 @@ function ZGV.MailboxData:iterate(typ)
 end
 ZGV._MailboxData=nil
 
-
---if test then
---	print(ZGV.NPCData[3]['n'])
---	print(ZGV.NPCData[3]['b'])
---end
 

@@ -2425,6 +2425,9 @@ function NPCJournalFrame:Initialize()
 	end
 
 	------------------------------ EVENTS -------------------------------
+    
+    local queuedItems = 0
+    
 	function EventHandler(self, event, ...)
 		if event == "GET_ITEM_INFO_RECEIVED" then
 			local npcData = NPCJournalFrame:GetNPCData()
@@ -2439,6 +2442,15 @@ function NPCJournalFrame:Initialize()
                 DugisWaypointTooltip:updateDugisWaypointTooltipLines()
                 DugisWaypointTooltip:updateModel()
             end
+            
+            queuedItems = queuedItems + 1
+            
+            LuaUtils:Delay(2, function()
+                queuedItems = queuedItems - 1
+                if queuedItems == 0 then
+                    DugisGuideViewer:RefreshReplacedTags()
+                end
+            end)
 		end
 		
 		if event == 'PLAYER_TARGET_CHANGED' then

@@ -110,7 +110,7 @@ C The Moment of Truth |SID|29648|5| |N|Witness G'Hanir's rebirth in {Nordrassil}
 N G'Hanir Reborn |QID|41689.3| |N|Cleanse G'Hanir in {Nordrassil} (60.59, 25.57)| |Z|606 0| |PRE|40649| |QID|41689|
 C G'Hanir Reborn |SID|29799|6| |N|Collect (item:128306) in {Nordrassil} (60.59, 25.57)| |Z|606 0| |PRE|40649| |QID|41689|
 C Nature's Wrath |SID|29649|7| |N|Call upon the souls of the forest and kill (npc:112940) in {Nordrassil} (61.09, 26.02)| |Z|606 0| |PRE|40649| |QID|41689|
-C Nature's Wrath |SID|29650|7| |N|Kill (npc:112940) in {Nordrassil} (61.09, 26.02)| |Z|606 0| |NPC|112940||PRE|40649| |QID|41689|
+C Nature's Wrath |SID|29650|7| |N|Kill (npc:112940) in {Nordrassil} (61.09, 26.02)| |Z|606 0| |NPC|112940| |PRE|40649| |QID|41689|
 
 R Emerald Dreamway |TID|41689| |N|Travel to the {Emerald Dreamway} (59.09, 26.10)| |Z|606 0| |PRE|40649|
 R The Dreamgrove |TID|41689| |N|Travel to {The Dreamgrove} (45.43, 25.07)| |Z|1048 0| |PRE|40649|
@@ -542,6 +542,90 @@ C Destiny Unfulfilled |QID|44497| |N|Witness True Betrayal in Shadowmoon Valley 
 
 R The Dreamgrove |TID|44496| |N|Travel to {The Dreamgrove} (60.06,52.14)| |Z|1077 0|
 T Destiny Unfulfilled |QID|44496| |N|(npc:113857) in {The Dreamgrove} (60.06,52.14)| |Z|1077 0| |NPC|113857|
+
+R Krasus' Landing |N|Travel to Krasus' Landing} (69.40, 43.99)| |Z|1014 10|
+A Armies of Legionfall |QID|46730| |N|This quest is available after you unlock World Quests by completing (qid:43341)| |Z|1014 10| |NPC|120215| |O|
+T Armies of Legionfall |QID|46730| |N|(npc:120215), in {Krasus' Landing} (69.37, 43.88)| |Z|1014 10| |NPC|120215| |O|
+A Assault on Broken Shore |QID|46734| |N|(npc:120215) in {Krasus' Landing} (69.40, 43.99)| |Z|1014 10| |NPC|120215|
+N (npc:120215) |QID|46734.1| |N|Speak to (npc:120215) in {Krasus' Landing} (69.40, 43.99)| |Z|1014 10| |NPC|120215|
+N (npc:120752) |SID|35327|1| |N|Mount the (npc:120752) in {Krasus' Landing}| |NPC|120752| |V|
+C Secure the Beach |SID|35327|2| |N|Kill the demons on the beach until you reach 100% to secure the beach (50.86, 69.96)| |Z|1149 0|
+C Defeat Lord Kalgorath |SID|35329|3| |N|Defeat (npc:116291) in {Broken Shore} (44.30, 73.90) (42.04, 72.23) (41.29, 65.12) (41.30, 65.12)| |Z|1149 0| |NPC|116291|
+C Legion portals closed |SID|35495|4| |N|Follow the waypoints and defeat the forces to close the portals in {Broken Shore}(42.95, 58.73)  (46.98, 58.29) (52.15, 52.38)(54.57, 47.99) (57.09, 52.15) (59.09, 51.61) (59.09, 51.61)| |Z|1149 0|
+K (npc:118551) |SID|35497|5| |N|Kill (npc:118551) in {Broken Shore} (55.15, 51.75)| |Z|1149 0| |NPC|118551|
+C Use Gateway |SID|35551|6| |N|Take the Demonic Gateway to the base of Mephistroth's command ship (53.41, 50.42)| |Z|1149 0|
+C Plant Arcane Bombs |SID|36178|7| |N|Plant Arcane Bombs in the command ship in each waypoints, look for the yellow dots in the minimap, you will need to use the portal after planting the first 2| |Z|1149 0|
+C Defeat Mephistroth |SID|36179|8| |N|Kill (npc:120746) in {Broken Shore} (50.03, 45.38)| |Z|1149 0| |NPC|120746| |QID|46734.2|
+
+T Assault on Broken Shore |QID|46734| |N|(npc:116302) in {Deliverance Point} (44.71, 63.29)| |Z|1021 0| |NPC|116302|
+A Legionfall Supplies |QID|46286| |N|(npc:120183) in {Deliverance Point} (44.54, 63.19)| |Z|1021 0| |NPC|120183|
+A Aalgen Point |QID|46832| |N|(npc:120183) in {Deliverance Point} (44.54, 63.19)| |Z|1021 0| |NPC|120183|
+
+R Aalgen Point |TID|46832| |N|Travel to {Aalgen Point} (46.27, 58.47)(51.36, 54.77) (52.43, 52.34) (70.69, 47.58)| |Z|1021 0| 
+T Aalgen Point |QID|46832| |N|(npc:120118), in {Aalgen Point} (70.69, 47.58)| |Z|1021 0| |NPC|120118|
+A Vengeance Point |QID|46845| |N|(npc:120118), in {Aalgen Point} (70.69, 47.58)| |Z|1021 0| |NPC|120118|
+
+R Deliverance Point |QID|46845| |N|Travel to {Deliverance Point} (44.54, 63.19)| |Z|1021 0|
+R Vengeance Point |QID|46845| |N|Travel to {Vengeance Point} (50.63, 20.77)| |Z|1021 0| 
+N Scout Dreadstalker Point |QID|46845.1| |N|Scout Dreadstalker Point (50.66, 21.41)| |Z|1021 0|
+C Vengeance Point |QID|46845| |N|Kill 4 (npc:120969) and 5 (npc:120748) in {Vengeance Point} (50.63, 20.77)| |Z|1021 0| |NPC|120969, 120748|
+T Vengeance Point |QID|46845| |N|(npc:111323) in {Vengeance Point} (49.69, 21.03)| |Z|1021 0| |NPC|111323|
+
+A Talon's Call |QID|46317| |N|(npc:118105) in {Deliverance Point} (43.81,62.97)| |Z|1021 0| |NPC|118105|
+
+R The Dreamgrove |QID|46318| |N|Travel to {The Dreamgrove} (44.45,51.47)| |Z|1077 0|
+T Talon's Call |QID|46317| |N|(npc:106299) in {The Dreamgrove} (44.45,51.47)| |Z|1077 0| |NPC|106299|
+A Defense of Aviana |QID|46318| |N|(npc:106299) in {The Dreamgrove} (44.45,51.47)| |Z|1077 0| |NPC|106299|
+
+N Meet Skylord Shadegrove |SID|0|1| |QID|46318| |N|Speak to Skylord Shadegrovea (42.74,45.67)| |Z|606 0|
+C Kill Demons Attacking the Shrine |SID|0|2| |QID|46318| |N|Kill enemies in this area (41.23,43.79)| |Z|606 0|
+N Return to the Shrine |SID|0|3| |QID|46318| |N|Return to the Shrine (42.32,45.13)| |Z|606 0|
+N Uncover the Traitor |SID|0|4| |QID|46318| |N|Uncover the Traitor (42.68,45.30)| |Z|606 0|
+
+A Defense of Aviana |QID|46318| |N|(npc:106299) in {The Dreamgrove} (33.91,21.50) (31.07,4.75)| |Z|1077 0| |NPC|106299|
+A You Can't Take the Sky From Me |QID|46319| |N|(npc:106299) in {The Dreamgrove} (31.07,4.75)| |Z|1077 0| |NPC|106299|
+
+N Meet Up With Thisalee Crow |SID|0|1| |QID|46319| |N|Meet Up With Thisalee Crow (41.00,35.19) (39.17,32.74) (36.89,31.21) (39.09,26.70) (41.24,24.77)| |Z|1015 0|
+N Infiltrate the Legion Encampment |SID|0|2| |QID|46319| |N|Follow Thisalee while (spell:1784) (41.56,22.67) (42.70,23.04) (43.09,22.93)| |Z|1015 0|
+N Scout Infazzar |SID|0|3| |QID|46319| |N|Scout Infazzar (43.09,22.93)| |Z|1015 0|
+N Fight Off Attacking Demons and Harpies |SID|0|4| |QID|46319| |N|Kill the enemies that attack (43.09,22.93)| |Z|1015 0|
+N Follow Infazzar to His Ship |SID|0|5| |QID|46319| |N|Click Lunarwing Owl and Follow Infazzar to His Ship (42.78,24.79)| |Z|1015 0|
+K Infazzar the Shade |SID|0|6| |QID|46319| |N|Kill Infazzar the Shade (39.02,28.69)| |Z|1015 0|
+
+T You Can't Take the Sky From Me |QID|46319| |N|Corrupted Idol of Aviana (33.91,21.50) (29.97,4.27)| |Z|1077 0|
+
+A Seeking Lost Knowledge |QID|47067| |N|(npc:116302) in {Deliverance Point}<br/><br/>You need at least rank 25 artifact knowledge to receive this quest (44.71, 63.29)| |Z|1021 0| |NPC|116302|
+
+N Recover Knowledge from Moonlight Ascent |QID|47067.3| |N|Click Remnant of Lost Knowledge, stand still and wait for the channeling to complete. (71.22,41.78) (75.62,36.27)| |Z|1021 0|
+N Recover Knowledge from Moonlight Ascent |QID|47067.2| |N|Click Remnant of Lost Knowledge, stand still and wait for the channeling to complete. (72.58,40.20)| |Z|1021 0|
+N Recover Knowledge from Moonlight Ascent |QID|47067.1| |N|Click Remnant of Lost Knowledge, stand still and wait for the channeling to complete. (76.45,39.81) (82.57,45.09)| |Z|1021 0|
+
+T Seeking Lost Knowledge |QID|47067| |N|(npc:116302) in {Deliverance Point} (44.71, 63.29)| |Z|1021 0| |NPC|116302|
+A Delivering Lost Knowledge |QID|47075| |N|(npc:116302) in {Deliverance Point} (44.73,63.26)| |Z|1021 0| |NPC|116302|
+
+R The Dreamgrove |QID|46940| |N|Travel to {The Dreamgrove} (33.94,32.53)| |Z|1077 0|
+T Delivering Lost Knowledge |QID|47075| |N|(npc:111737) in {The Dreamgrove} (33.94,32.53)| |Z|1077 0| |NPC|111737|
+A Using Lost Knowledge |QID|46940| |N|(npc:111737) in {The Dreamgrove} (33.94,32.53)| |Z|1077 0| |NPC|111737|
+C Using Lost Knowledge |QID|46940.1| |N|Speak to (npc:111737) to start a Research Work Order in {The Dreamgrove} (33.94,32.53)| |Z|1077 0| |NPC|111737|
+T Using Lost Knowledge |QID|46940| |N|(npc:111737) in {The Dreamgrove} (33.94,32.53)| |Z|1077 0| |NPC|111737|
+
+A Greater Power for Greater Threats |QID|46744| |N|(npc:116302) in {Broken Shore} (44.73,63.26)| |Z|1021 0| |NPC|116302|
+C Unlock All Artifact Traits on a Weapon |QID|46744.1| |N|Unlock all traits on any of your artifact weapons|
+T Greater Power for Greater Threats |QID|46744| |N|(npc:116302) in {Broken Shore} (44.73,63.26)| |Z|1021 0| |NPC|116302|
+A The Broken Shore: Investigating the Legion |QID|46765| |N|(npc:116302) in {Broken Shore} (44.73,63.26)| |Z|1021 0| |NPC|116302|
+N Discover the Hidden Legion Threat |QID|46765.1| |N|Collect (item:147430), This item has a chance to drop off of any mob in the area. (44.61,49.57)| |Z|1021 0|
+T The Broken Shore: Investigating the Legion |QID|46765| |N|(npc:116302) in {Broken Shore} (44.73,63.27)| |Z|1021 0| |NPC|116302|
+
+A The Council's Call |QID|47000| |N|(npc:116302) in {Deliverance Point} (44.73,63.27)| |Z|1021 0| |NPC|116302|
+
+R Dalaran |QID|44782| |N|Travel to {Dalaran} (28.50,48.33)| |Z|1014 10| 
+T The Council's Call |QID|47000| |N|(npc:90417) in {Dalaran} (28.50,48.33)| |Z|1014 10| |NPC|90417|
+A Away From Prying Eyes |QID|44782| |N|(npc:90417) in {Dalaran} (28.50,48.33)| |Z|1014 10| |NPC|90417|
+N Enter the Purple Parlor |QID|44782.1| |N|Go through the portal at the top of the stairs. (24.73,48.04)| |Z|1014 10|
+T Away From Prying Eyes |QID|44782| |N|(npc:115465) in {Dalaran} (22.20,39.04)| |Z|1014 10| |NPC|115465|
+A In Dire Need |QID|44821| |N|(npc:115465) in {Dalaran} (22.20,39.04)| |Z|1014 10| |NPC|115465|
+N Hear the Council's Plea |QID|44821.1| |N|Wait for the dialogue to complete in {Dalaran} (22.29,39.68)| |Z|1014 10|
+T In Dire Need |QID|44821| |N|(npc:115465) in {Dalaran} (22.29,39.64)| |Z|1014 10| |NPC|115465|
 ----
 
 C The Emerald Nightmare |QID|42432| |N|Enter the Emerald Nightmare raid on any difficulty and defeat (npc:103769)| |NPC|103769|

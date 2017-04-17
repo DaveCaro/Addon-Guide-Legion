@@ -38676,7 +38676,7 @@ Ashenvale Quests |achieve 4976 |loadguide "Zygor's Horde Leveling Guides\\Classi
 Azshara Quests |achieve 4927  |loadguide "Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Azshara (10-22)\\Azshara (10-12)"
 Desolace Quests |achieve 4930  |loadguide "Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Desolace (31-36)\\Desolace (31-33)"
 Dustwallow March Quests |achieve 4978  |loadguide "Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Dustwallow Marsh (35-39)\\Dustwallow Marsh (35-39)"
-Felwood Quests |achieve 4931  |loadguide "Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Felwood (47-51)\\Felwood (47-48))"
+Felwood Quests |achieve 4931  |loadguide "Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Felwood (47-51)\\Felwood (47-48)"
 Feralas Quests |achieve 4979  |loadguide "Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Feralas (36-40)\\Feralas (36-40)"
 Silithus Quests |achieve 4934  |loadguide "Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Silithus (55-57)\\Silithus (55-57)"
 Northern Barrens Quests |achieve 4933  |loadguide "Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Northern Barrens (10-20)\\Northern Barrens (10-13)"

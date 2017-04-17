@@ -13,7 +13,7 @@ N Xin Wo Yin the Broken Hearted |N|Thunderpaw Outlook (37.3, 30.1)| |Z|806| |AID
 N Spirit Binders |N|{Terrace of Ten Thunders} (42.3, 17.6)| |Z|806| |AID|6754| |AC|3|
 N The Saurok |N|{Windward Isle} (67.7, 29.4)| |Z|806| |AID|6716| |AC|1|
 N The Emperor's Burden - Part 1 |N|{Dawn's Blossom} (47.1, 45.1)| |Z|806| |AID|6855| |AC|1|
-N The Emperor's Burden - Part 3 |N|{Jade Temple Grounds} (55.9, 56.9)| |Z|806| |AID|6855| |AC|2|
+N The Emperor's Burden - Part 3 |N|{Jade Temple Grounds} (55.9, 56.9)| |Z|806| |AID|6855| |AC|3|
 N Watersmithing |N|{Moonwater Retreat} (66.0, 87.6)| |Z|806| |AID|6846| |AC|1|
 
 R Krasarang Wilds |N|Travel to {Krasarang Wilds} (81.4, 11.5)| |Z|857| |AID|6716| |AC|4|
@@ -21,7 +21,7 @@ N Quan Tou Kuo the Two Fisted |N|East of Zhu's Province (81.4, 11.5), on top of 
 N Waiting on the Turtle |N|East of {The Incursion} (72.2, 31.0), look for the turtle statue| |Z|857| |AID|6856| |AC|4|
 N The Lost Dynasty |N|{Pools of Youth} (51.0, 31.7)| |Z|857| |AID|6754| |AC|2|
 N Hozen Maturity |N|{Unga Ingoo} (52.4, 87.7), inside the cave| |Z|857| |AID|6850| |AC|2|
-N The Emperor's Burden - Part 4 |N|{Temple of the Red Crane} (40.4, 52.0)(39.6, 55.7)(40.4, 56.6), up the stairs on the upper floor temple| |Z|857| |AID|6855| |AC|3|
+N The Emperor's Burden - Part 4 |N|{Temple of the Red Crane} (40.4, 52.0)(39.6, 55.7)(40.4, 56.6), up the stairs on the upper floor temple| |Z|857| |AID|6855| |AC|4|
 N Origins |N|Fallsong Villlage (30.6, 38.6), inside the building| |Z|857| |AID|6846| |AC|3|
 N The Last Stand |N|{Krasari Falls} (32.9, 29.4), behind the falls| |Z|857| |AID|6716| |AC|4|
 
@@ -39,11 +39,11 @@ N The Defiant |N|Enter the cave in the north part of {The Veiled Stair} (50.2, 4
 R Kun-Lai Summit |N|Travel to {Kun-Lai Summit} (71.6, 63.0)| |Z|809| |AID|6847| |AC|1|
 N Roll Call |N|{Inkgill Mere} (74.5, 83.6), in the building| |Z|809| |AID|6846| |AC|4|
 N Yaungoil |N|Fire camp Yongqi (71.6, 63.0)| |Z|809| |AID|6847| |AC|3|
-N The Emperor's Burden - Part 6 |N|{Temple of the White Tiger} (67.8, 48.4)| |Z|809| |AID|6855| |AC|4|
+N The Emperor's Burden - Part 6 |N|{Temple of the White Tiger} (67.8, 48.4)| |Z|809| |AID|6855| |AC|6|
 N Victory in Kun-Lai |N|{Whispercloud Rise} (63.0, 40.8)| |Z|809| |AID|6858| |AC|5|
 N Valley of the Emperors |N|Tomb of the Conquerors (53.0, 46.5)(52.4, 48.4)(50.6, 48.0)| |Z|809| |AID|6754| |AC|1|
 N The Emperor's Burden - Part 7 |N|{Shado-Pan Monastery} (41.0, 42.4)| |Z|809| |AID|6855| |AC|7|
-N The Emperor's Burden - Part 2 |N|{Seeker's Point} (43.8, 51.2)| |Z|809| |AID|6855| |AC|6|
+N The Emperor's Burden - Part 2 |N|{Seeker's Point} (43.8, 51.2)| |Z|809| |AID|6855| |AC|2|
 N Ren Yun the Blind |N|{Neverest Pinnacle} (44.7, 52.3)| |Z|809| |AID|7230| |AC|3|
 N The Hozen Ravage |N|{The Dooker Dome} (45.8, 61.9)| |Z|809| |AID|6850| |AC|4|
 N Yaungol Tactics |N|{Fire Camp Ordo} (50.4, 79.3)| |Z|809| |AID|6847| |AC|1|

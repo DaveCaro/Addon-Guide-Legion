@@ -144,6 +144,7 @@ function ScrollTable:New(parent,name,COLUMNS,DATA,useparent)
 			if col.sortable then
 				widget:SetScript("OnClick", function(self,button) 
 					col.sortfunction(self,col.name)
+					widget:GetScript("OnEnter")(widget)  -- update sorting tooltips, if needed.
 					end)
 				widget.texture = CHAIN(widget:CreateTexture("icon_"..col.name,"ARTWORK")) 
 					:SetPoint("TOPRIGHT",widget,"TOPRIGHT",0,0)
@@ -251,6 +252,7 @@ function ScrollTable:New(parent,name,COLUMNS,DATA,useparent)
 						GameTooltip:Show()
 					end)
 					:SetScript("OnLeave",function()
+						BattlePetTooltip:Hide()
 						GameTooltip:Hide()
 					end)
 				.__END		

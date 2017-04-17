@@ -4278,8 +4278,8 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Dailies",[[
 ]])
 ZygorGuidesViewer:RegisterInclude("Midsummer_Achievements",[[
 	step
-		talk Midsummer Supplier##26123
-		buy 15 Juggling Torch##34599 |goto Stormwind City 49.0,72.0 |condition achieved(272)
+		talk Midsummer Merchant##26124
+		buy 15 Juggling Torch##34599 |goto Orgrimmar 47.6,37.8 |condition achieved(272) //VERIFY THE COORDINATES, NPC WAS FOR ALLIANCE!
 		|tip If you can't buy these be sure to complete the quests Torch Tossing and More Torch Tossing in our Midsummer Fire Festival Main Questline and Dailies guides.
 	step
 		Use your 40 Juggling Torches as fast as you can |use Juggling Torch##34599 

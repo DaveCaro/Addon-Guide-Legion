@@ -81,7 +81,7 @@ R Telredor |N|Zangarmarsh (68, 48)| |AID|863| |AC|7| |Z|467|
 R The Dead Mire |N|Zangarmarsh (81, 38)| |AID|863| |AC|8| |Z|467|
 R Cenarion Refuge |N|Zangarmarsh (79, 64)| |AID|863| |AC|1| |Z|467|
 R Umbrafen Village |N|Zangarmarsh (83, 82)| |AID|863| |AC|11| |Z|467|
-R Darkcrest Shore |N|Zangarmarsh (70, 80)| |AID|863| |AC|28| |Z|467|
+R Darkcrest Shore |N|Zangarmarsh (70, 80)| |AID|863| |AC|18| |Z|467|
 R The Lagoon |N|Zangarmarsh (58, 62)| |AID|863| |AC|9| |Z|467|
 R Twin Spire Ruins |N|Zangarmarsh (47, 53)| |AID|863| |AC|10| |Z|467|
 R Feralfen Village |N|Zangarmarsh (46, 63)| |AID|863| |AC|3| |Z|467|

@@ -1,7 +1,7 @@
 --[[-----------------------------------------------------------------------------
 Checkbox Widget
 -------------------------------------------------------------------------------]]
-local Type, Version = "CheckBox-Z", 22
+local Type, Version = "CheckBox-Z", 23
 local AceGUI = LibStub and LibStub("AceGUI-3.0-Z", true)
 if not AceGUI or (AceGUI:GetWidgetVersion(Type) or 0) >= Version then return end
 
@@ -90,11 +90,13 @@ local methods = {
 
 	["OnWidthSet"] = function(self, width)
 		if self.desc then
-			self.desc:SetWidth(width - 30)
+			self.desc:SetWidth(width - 30 - (self.indent or 0))
 			if self.desc:GetText() and self.desc:GetText() ~= "" then
 				self:SetHeight(28 + self.desc:GetHeight())
 			end
 		end
+		self.checkbg:SetPoint("TOPLEFT",self.frame,"TOPLEFT",self.indent or 0,0)
+		self.width = width
 	end,
 
 	["SetDisabled"] = function(self, disabled)
@@ -265,6 +267,11 @@ local methods = {
 		if not self.desc then return end
 		self.desc:SetFontObject(font)
 		self.desc:SetTextColor(font:GetTextColor())
+	end,
+	
+	["SetIndent"] = function(self, indent)
+		self.indent = indent or 0
+		self:OnWidthSet(self.width or 50)
 	end,
 }
 

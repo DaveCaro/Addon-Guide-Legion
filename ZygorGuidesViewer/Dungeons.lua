@@ -64,8 +64,17 @@ local hardcoded_dungeons = {
 	["e_767"]  = {expansionLevel=6, minLevel=110, min_ilevel=795, difficulty=23, name="Neltharion's Lair"},
 	["e_726"]  = {expansionLevel=6, minLevel=110, min_ilevel=795, difficulty=23, name="The Arcway"},
 	["e_707"]  = {expansionLevel=6, minLevel=110, min_ilevel=795, difficulty=23, name="Vault of the Wardens"},
-	["e_860"]  = {expansionLevel=6, minLevel=110, min_ilevel=795, difficulty=23, name="Return to Karazhan", attunement_achieve=11547},
+	["e_860"]  = {expansionLevel=6, minLevel=110, min_ilevel=795, difficulty=23, name="Return to Karazhan"},
+	["e_900"]  = {expansionLevel=6, minLevel=110, min_ilevel=795, difficulty=23, name="Cathedral of Eternal Night"},
 }
+
+local attunements = {
+	["e_860"] = {attunement_achieve=11547}, -- Return to Karazhan M
+	["e_900"] = {attunement_queston=46244}, -- Cathedral of Eternal Night M
+	[1115] = {attunement_achieve=11547}, -- Return to Karazhan HC
+	[1488] = {attunement_queston=46244}, -- Cathedral of Eternal Night HC
+}
+
 
 setmetatable(Dungeons,{
 	__index=function(t,id)
@@ -74,10 +83,10 @@ setmetatable(Dungeons,{
 
 		if type(id)=="string" and not hardcoded_dungeons[id] then return end   -- error("No function Dungeons."..id)   -- don't error, this breaks Spoo.
 
-		local name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday, min_ilevel, attunement_achieve, attunement_quest
+		local name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday, min_ilevel, attunement_achieve, attunement_quest, attunement_queston
 		if hardcoded_dungeons[id] then
 			local d=hardcoded_dungeons[id]
-			name,expansionLevel,minLevel,min_ilevel,difficulty,attunement_achieve,attunement_quest = d.name,d.expansionLevel,d.minLevel,d.min_ilevel,d.difficulty,d.attunement_achieve,d.attunement_quest
+			name,expansionLevel,minLevel,min_ilevel,difficulty = d.name,d.expansionLevel,d.minLevel,d.min_ilevel,d.difficulty
 		else
 			name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday = GetLFGDungeonInfo(id)
 		end
@@ -91,8 +100,12 @@ setmetatable(Dungeons,{
 			dungeon.isHoliday = isHoliday
 			dungeon.minLevel = minLevel
 			dungeon.expansionLevel = expansionLevel
-			dungeon.attunement_achieve=attunement_achieve
-			dungeon.attunement_quest=attunement_quest
+
+			if attunements[id] then
+				dungeon.attunement_achieve = attunements[id].attunement_achieve
+				dungeon.attunement_quest = attunements[id].attunement_quest
+				dungeon.attunement_queston = attunements[id].attunement_queston
+			end
 
 			local map = ZGV.LibRover.data.MapIDsByName[DungeonNamesToMapNames[name]]
 			dungeon.map=map

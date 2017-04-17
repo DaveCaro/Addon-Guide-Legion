@@ -468,7 +468,7 @@ R New Hearthglen |N|Travel to {New Hearthglen} (69.8, 71.9)| |QID|12234|
 N As you go... |AYG|12234| |N|Use (item:37259) to blow up 5 Ballista's around {New Hearthglen}| |QID|12232| |U|37259| |OBJ|7270|
 N (item:37267) |QID|12234.2| |N|Collect (item:37267) on the table by the stairs in {New Hearthglen} (69.8, 71.9)| |T| |U|37259| |OBJ|183|
 N (item:37268) |QID|12234.1| |N|Collect (item:37268) on the table in the back room of the library wing in {New Hearthglen} (73.5, 72.6)| |T| |U|37259| |OBJ|163|
-N (item:37269) |QID|12234.3| |N|Collet (item:37269) on a box, near a fire in front of the ship in {New Hearthglen} (71.6, 80.4)| |T| |U|37259| |OBJ|164|
+N (item:37269) |QID|12234.3| |N|Collect (item:37269) on a box, near a fire in front of the ship in {New Hearthglen} (71.6, 80.4)| |T| |U|37259| |OBJ|164|
 C Bombard the Ballistae |N|Use (item:37259) to blow up 5 Ballista's around {New Hearthglen} (71.1, 71.2)| |QID|12232| |U|37259| |OBJ|7270|
 C A Means to an End |N|Go to the Mill in {New Hearthglen} at the waypoint (68.0, 74.1). Use the (item:37300) to summon (npc:27238) and kill him| |QID|12240| |U|37300| |NPC|27238|
 

@@ -769,7 +769,7 @@ function GuideMenu:CreateHome()
 
 	GuideMenu.Elements={}
 	for i,e in pairs(GuideMenu.Home) do
-		if not e.faction or (e.faction==faction) then
+		if (not e.faction or (e.faction==faction)) and (not e.beta or ZGV.BETA) then
 			local object, e_height, space
 			if e[1]=="banner" then 
 				object,e_height=make_banner(e)

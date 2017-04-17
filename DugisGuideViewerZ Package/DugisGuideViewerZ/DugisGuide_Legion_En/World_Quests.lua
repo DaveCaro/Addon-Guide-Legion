@@ -9,7 +9,7 @@ N (item:109076) |N|Collect a (item:109076), you can create these with Engineerin
 A A Call to Action |QID|44720| |N|(npc:114946) in {Krasus's Landing} (73.92,41.59)| |Z|1014 10| |NPC|114946|
 T A Call to Action |QID|44720| |N|(npc:92539) in {Stormheim} (60.14,50.74)| |Z|1017 0| |NPC|92539|
 A A Threat Rises |QID|44771| |N|(npc:92539) in {Stormheim} (60.14,50.74)| |Z|1017 0| |NPC|92539|
-C Pour the Grog |WQ| |N|Click on the Keg of Grog to pour it (60.51,51.44)| |Z|1017 0| |BUFF|Interface\Icons\INV_Drink_05| |QID|44771|
+C Pour the Grog |WQ| |N|Click on the Keg of Grog to pour it (60.51,51.44)| |Z|1017 0| |BUFF|132792| |QID|44771|
 N (npc:92539) |QID|44771.1| |N|Bring the Grog to (npc:92539) in {Stormheim} (60.14,50.74)| |Z|1017 0| |NPC|92539|
 T A Threat Rises |QID|44771| |N|(npc:92539) in {Stormheim} (60.14,50.74)| |Z|1017 0| |NPC|92539|
 A Helya's Conquest |QID|44721|  |N|(npc:92539) in {Stormheim} (60.14,50.74)| |Z|1017 0| |NPC|92539|
@@ -18,6 +18,34 @@ K (npc:114957) |QID|44721.3| |N|Kill (npc:114957) in {Tideskorn Harbor} (56.01,4
 K (npc:115291) |QID|44721.2| |N|Kill 4 (npc:115291) in {Tideskorn Harbor} (56.77,45.56)| |Z|1017 0| |NPC|115291|
 N (npc:92539) |QID|44721.4| |N|Speak with (npc:92539) in {Stormheim} (60.14,50.74)| |Z|1017 0| |NPC|92539|
 T Helya's Conquest |QID|44721|  |N|(npc:92539) in {Stormheim} (60.14,50.74)| |Z|1017 0| |NPC|92539|
+
+R Krasus' Landing |N|Travel to Krasus' Landing} (69.40, 43.99)| |Z|1014 10|
+A Armies of Legionfall |QID|46730| |N|This quest is available after you unlock World Quests by completing (qid:43341)| |Z|1014 10| |NPC|120215| |O|
+T Armies of Legionfall |QID|46730| |N|(npc:120215), in {Krasus' Landing} (69.37, 43.88)| |Z|1014 10| |NPC|120215| |O|
+A Assault on Broken Shore |QID|46734| |N|(npc:120215) in {Krasus' Landing} (69.40, 43.99)| |Z|1014 10| |NPC|120215|
+N (npc:120215) |QID|46734.1| |N|Speak to (npc:120215) in {Krasus' Landing} (69.40, 43.99)| |Z|1014 10| |NPC|120215|
+N (npc:120752) |SID|35327|1| |N|Mount the (npc:120752) in {Krasus' Landing}| |NPC|120752| |V|
+C Secure the Beach |SID|35327|2| |N|Kill the demons on the beach until you reach 100% to secure the beach (50.86, 69.96)| |Z|1149 0|
+C Defeat Lord Kalgorath |SID|35329|3| |N|Defeat (npc:116291) in {Broken Shore} (44.30, 73.90) (42.04, 72.23) (41.29, 65.12) (41.30, 65.12)| |Z|1149 0| |NPC|116291|
+C Legion portals closed |SID|35495|4| |N|Follow the waypoints and defeat the forces to close the portals in {Broken Shore}(42.95, 58.73)  (46.98, 58.29) (52.15, 52.38)(54.57, 47.99) (57.09, 52.15) (59.09, 51.61) (59.09, 51.61)| |Z|1149 0|
+K (npc:118551) |SID|35497|5| |N|Kill (npc:118551) in {Broken Shore} (55.15, 51.75)| |Z|1149 0| |NPC|118551|
+C Use Gateway |SID|35551|6| |N|Take the Demonic Gateway to the base of Mephistroth's command ship (53.41, 50.42)| |Z|1149 0|
+C Plant Arcane Bombs |SID|36178|7| |N|Plant Arcane Bombs in the command ship in each waypoints, look for the yellow dots in the minimap, you will need to use the portal after planting the first 2| |Z|1149 0|
+C Defeat Mephistroth |SID|36179|8| |N|Kill (npc:120746) in {Broken Shore} (50.03, 45.38)| |Z|1149 0| |NPC|120746| |QID|46734.2|
+
+T Assault on Broken Shore |QID|46734| |N|(npc:116302) in {Deliverance Point} (44.71, 63.29)| |Z|1021 0| |NPC|116302|
+A Legionfall Supplies |QID|46286| |N|(npc:120183) in {Deliverance Point} (44.54, 63.19)| |Z|1021 0| |NPC|120183|
+A Aalgen Point |QID|46832| |N|(npc:120183) in {Deliverance Point} (44.54, 63.19)| |Z|1021 0| |NPC|120183|
+
+R Aalgen Point |TID|46832| |N|Travel to {Aalgen Point} (46.27, 58.47)(51.36, 54.77) (52.43, 52.34) (70.69, 47.58)| |Z|1021 0| 
+T Aalgen Point |QID|46832| |N|(npc:120118), in {Aalgen Point} (70.69, 47.58)| |Z|1021 0| |NPC|120118|
+A Vengeance Point |QID|46845| |N|(npc:120118), in {Aalgen Point} (70.69, 47.58)| |Z|1021 0| |NPC|120118|
+
+R Deliverance Point |QID|46845| |N|Travel to {Deliverance Point} (44.54, 63.19)| |Z|1021 0|
+R Vengeance Point |QID|46845| |N|Travel to {Vengeance Point} (50.63, 20.77)| |Z|1021 0| 
+N Scout Dreadstalker Point |QID|46845.1| |N|Scout Dreadstalker Point (50.66, 21.41)| |Z|1021 0|
+C Vengeance Point |QID|46845| |N|Kill 4 (npc:120969) and 5 (npc:120748) in {Vengeance Point} (50.63, 20.77)| |Z|1021 0| |NPC|120969, 120748|
+T Vengeance Point |QID|46845| |N|(npc:111323) in {Vengeance Point} (49.69, 21.03)| |Z|1021 0| |NPC|111323|
 
 C A Cleansing Cocktail |QID|42119| |WQ| |N|Kill (npc:90134) and collect 5 (item:136859) and collect (item:136860) from the nearby hippogryph nests on the ground around this area. (43.63,42.29) (40.73,37.54) (43.34,33.99)| |Z|1015 0| |NPC|90134|
 K (npc:89101) |QID|42024.1| |WQ| |N|Kill (npc:89101) in {Azsuna} (53.69,58.89) (51.95,61.48) (48.98,60.26) (53.43,63.82)| |Z|1015 0| |NPC|89101|
@@ -134,7 +162,7 @@ C (item:123918) |QID|41315| |WQ| |N|Collect 40 (item:123918), You can farm these
 T Supplies Needed: Leystone |QID|41315| |WQ| |N|(npc:107376) in {Azsuna} (46.99,40.67)| |Z|1015 0| |NPC|107376|
 C (item:124115) |QID|41327| |WQ| |N|Collect 40 (item:124115), You can farm these with Skinning or purchase them from the Auction House| 
 T Supplies Needed: Leystone |QID|41327| |WQ| |N|(npc:107376) in {Azsuna} (46.99,40.67)| |Z|1015 0| |NPC|107376|
-C Terror of the Deep |QID|43192.1| |WQ| |N|Kill (npc:108829) this is a group quest<br/><br>ALL:<br/><b>Move into the swirling tornados to gain the Waterwalking buff to move around easier.<br/><b>Move around Levantus as she casts Massive Spout to avoid heavy damage.<br/><br/>TANK:<br/><b>Stay in melee range as much as possible or Levantus will use Rampaging Torrent, causing massive raid damage. (43.39,66.65)| |Z|1015 0| |NPC|108829|
+C Terror of the Deep |QID|43192.1| |WQ| |N|Kill (npc:108829) this is a group quest<br/><br/>ALL:<br/><b>Move into the swirling tornados to gain the Waterwalking buff to move around easier.<br/><b>Move around Levantus as she casts Massive Spout to avoid heavy damage.<br/><br/>TANK:<br/><b>Stay in melee range as much as possible or Levantus will use Rampaging Torrent, causing massive raid damage. (43.39,66.65)| |Z|1015 0| |NPC|108829|
 C Those Beyond Redemption |QID|42018| |QID|42018.1| |WQ| |N|Kill enemies around this area and click on Ley Siphons to complete Assault the Ley-Ruins of Zarkhenar (57.46,16.50)| |Z|1015 0|
 C Tip the Scales |QID|42019.1| |WQ| |N|Kill enemies around this area and click on Stolen Nar'thalas Relics to Disrupt the Hatecoil Warcamp (60.01,42.42)| |Z|1015 0|
 N Acquire A Study of Hexes |QID|42506.1| |WQ| |N|Click on A Study of Hexes (37.40,33.62)| |Z|1015 0|
@@ -373,7 +401,7 @@ C DANGER: Defilia |QID|41695| |WQ| |N|Kill (npc:104513) in {Highmountain} (52.98
 C DANGER: Durguth |QID|41093| |WQ| |N|Kill (npc:96072), this is a elite enemy you will need a group to kill it. (44.94,67.01) (44.00,74.59)| |Z|1024 0| |NPC|96072|
 C DANGER: Mawat'aki |QID|41696| |WQ| |N|Kill (npc:104517) in {Highmountain} (58.88,68.99) (58.52,72.40)| |Z|1024 0| |NPC|104517|
 C DANGER: Olokk the Shipbreaker |QID|41686| |WQ| |N|Kill (npc:104484) in {Highmountain} (40.72,12.33) (33.74,20.61)| |Z|1024 0| |NPC|104484|
-N Gain (spell:202750) buff |QID|41013| |WQ| |N|Enter the cave and gain (spell:202750) buff (59.45,68.35) (53.14,75.56) (50.29,78.06) (50.09,77.83)| |Z|1024 0| |BUFF|Interface\Icons\ability_priest_angelicfeather|
+N Gain (spell:202750) buff |QID|41013| |WQ| |N|Enter the cave and gain (spell:202750) buff (59.45,68.35) (53.14,75.56) (50.29,78.06) (50.09,77.83)| |Z|1024 0| |BUFF|642580|
 C Darkbrul Arena |QID|41013| |WQ| |N|Jump off the ledge and fall all the way down into the arena, you won't take much fall damage because of the Featherstone. and Defeat the Arena Combatants (50.29,75.90)| |Z|1024 0|
 C Dirge of the Dead |QID|41024| |WQ| |N|Kill enemies around this area to cleanse the Burial Ground (28.10,41.43) (26.72,42.98)| |Z|1024 0| 
 C Enigmatic |QID|43767| |WQ| |N|Click Puzzle Box, Memorize the patterns of the tiles on the ground<br/><br/>When the grid appears, walk on the tiles illustrated in the patterns. (58.15,19.00)| |Z|1024 0|
@@ -900,6 +928,9 @@ C Neltharion's Lair: Mother of Stone |QID|41865| |WQ| |N|Kill (npc:103271) and (
 C Neltharion's Lair: Neltharion's Treasure |QID|41211| |WQ| |N|Find the treasure. After the barrel ride, the treasure is located in one of the small caves before Ularogg Cragshaper.<br/><br/>Use the (guide:"1046(98-110)") dungeon guide to accomplish this.| |NPC|91007|
 C Neltharion's Lair: Stonedark Slaves |QID|41857| |WQ| |N|Kill 5 (npc:103597), You will find these as you progress through the instance.<br/><br/>Use the (guide:"1065(98-110)") dungeon guide to accomplish this.| |NPC|91007|
 C Vault of the Wardens: How'd He Get Up There? |QID|42926| |WQ| |N|Kill (npc:96579) and (npc:95888), The Frenzied Animus can be found after Tirathon Saltheril.<br/><br/>Use the (guide:"1045(110)") dungeon guide to accomplish this.| |NPC|96579, 95888|
+
+
+
 
 A Choose a World Quest |WQ| |N|Add a World Quest into your objective tracker and the guide will automatically display the correct step| |MD|
 

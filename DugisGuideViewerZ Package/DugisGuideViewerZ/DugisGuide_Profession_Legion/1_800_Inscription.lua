@@ -118,7 +118,7 @@ A The Ink Flows |QID|39948| |N|(npc:92195) in {The Scribe's Sacellum} (41.38, 36
 N (npc:97359) |QID|39948.1| |N|Speak to (npc:97359) to deliver the contracts (68.79,58.48)| |Z|1014 11| |NPC|97359|
 T The Ink Flows |QID|39948| |N|(npc:97359) in {Dalaran Underbelly} (68.79,58.48)| |Z|1014 11| |NPC|97359|
 A Once a Scribe Like You |QID|39949| |N|(npc:97359) in {Dalaran Underbelly} (68.79,58.48)| |Z|1014 11| |NPC|97359|
-N (npc:97359) |QID|39949| |N|(npc:97359) and purchase a personal bodyguard for 5<g> in {Dalaran Underbelly} (68.79,58.48)| |Z|1014 11| |NPC|97359| |BUFF|Interface\Icons\inv_offhand_dalaran_d_01|
+N (npc:97359) |QID|39949| |N|(npc:97359) and purchase a personal bodyguard for 5<g> in {Dalaran Underbelly} (68.79,58.48)| |Z|1014 11| |NPC|97359| |BUFF|237433|
 K (npc:97756) |QID|39949.1| |N|Kill (npc:97756) and collect (item:129292)  (60.44,78.16)| |Z|1014 11| |NPC|97756|
 T Once a Scribe Like You |QID|39949| |N|(npc:97359) in {Dalaran Underbelly} (68.79,58.48)| |Z|1014 11| |NPC|97359|
 A An Odd Trinket |QID|39950| |N|(npc:97359) in {Dalaran Underbelly} (68.79,58.48)| |Z|1014 11| |NPC|97359|

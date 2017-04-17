@@ -2224,7 +2224,9 @@
         </Frames>
         <Scripts>
             <OnEvent>
-				Dugi_ItemButton_OnEvent(self, event, ...)
+                if Dugi_ItemButton_OnEvent then
+                    Dugi_ItemButton_OnEvent(self, event, ...)
+                end
 			</OnEvent>
             <OnUpdate>
 				if not self.questLogIndex then return end

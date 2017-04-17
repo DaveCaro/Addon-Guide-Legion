@@ -6674,7 +6674,7 @@ turnin Calling the Ancients##29283 |goto Mount Hyjal 26.0,61.3
 only if completedq(29214) and completedq(29181)
 step
 Use the Firelands Dailies Run guide each day:
-|tip You won't be able to do all the dailies yet.  Just do the dailies you can do for now.
+|tip You won't be able to do all the dailies yet. Just do the dailies you can do for now.
 earn 20 Mark of the World Tree##416
 Click here to load the Dailies guide |confirm |next dailies
 step
@@ -6685,7 +6685,7 @@ talk Arch Druid Hamuul Runetotem##52838
 accept Leyara##29200 |goto Mount Hyjal 27.1,62.8
 step
 talk Leyara##53014
-Ask her _"Why, what did Malfurion ever do to her?"
+Ask her _"Why, what did Malfurion ever do to her?"_
 Watch the dialogue
 Find Leyara |q 29200/1 |goto 6.7,33.8
 step

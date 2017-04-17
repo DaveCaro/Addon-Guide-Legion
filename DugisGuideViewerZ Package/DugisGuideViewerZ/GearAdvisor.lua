@@ -2948,11 +2948,11 @@ function GA:Initialize()
 		end
 	end
 
-	local orig_GetNumEquipmentSets = GetNumEquipmentSets or C_EquipmentSet.GetNumEquipmentSets --For 7.2.0
-	local orig_GetEquipmentSetInfo = GetEquipmentSetInfo or C_EquipmentSet.GetEquipmentSetInfo
-	local orig_GetEquipmentSetInfoByName = GetEquipmentSetInfoByName or C_EquipmentSet.GetEquipmentSetInfoByName
-	local orig_GetEquipmentSetItemIDs = GetEquipmentSetItemIDs or C_EquipmentSet.GetEquipmentSetItemIDs 
-	local orig_GetEquipmentSetIDs = C_EquipmentSet and C_EquipmentSet.GetEquipmentSetIDs 
+	local orig_GetNumEquipmentSets = (C_EquipmentSet and C_EquipmentSet.GetNumEquipmentSets) or GetNumEquipmentSets --For 7.2.0
+	local orig_GetEquipmentSetInfo = (C_EquipmentSet and C_EquipmentSet.GetEquipmentSetInfo) or GetEquipmentSetInfo
+	local orig_GetEquipmentSetInfoByName = (C_EquipmentSet and C_EquipmentSet.GetEquipmentSetInfoByName) or GetEquipmentSetInfoByName
+	local orig_GetEquipmentSetItemIDs = (C_EquipmentSet and C_EquipmentSet.GetEquipmentSetItemIDs) or GetEquipmentSetItemIDs
+	local orig_GetEquipmentSetIDs = (C_EquipmentSet and C_EquipmentSet.GetEquipmentSetIDs) or C_EquipmentSet
 	local equipmentSetDataTable = {}
 	local equipmentSetIdTable = {}
 	setmetatable(equipmentSetIdTable, {
@@ -2997,7 +2997,9 @@ function GA:Initialize()
 
         if GetNumEquipmentSets then
             GetNumEquipmentSets = fn
-        else
+        end
+        
+        if C_EquipmentSet and C_EquipmentSet.GetNumEquipmentSets then
             --For 7.2.0
              C_EquipmentSet.GetNumEquipmentSets = fn
         end
@@ -3005,6 +3007,10 @@ function GA:Initialize()
         if C_EquipmentSet and C_EquipmentSet.GetEquipmentSetIDs then
             --For 7.2.0
             C_EquipmentSet.GetEquipmentSetIDs = function()
+                if shouldUseOriginalEquipmentFunctions() then
+                    return orig_GetEquipmentSetIDs()
+                end
+            
                 local res = orig_GetEquipmentSetIDs()
                 res[#res + 1] = dugiSmartSetID
                 return res
@@ -3047,7 +3053,14 @@ function GA:Initialize()
 		end
 
 		local function GetSpecIcon()
-			return (select(4, GetSpecializationInfo((SpecFromOption(DGV:UserSetting(DGV_GASMARTSETTARGET))))))
+            local spec = DGV:UserSetting(DGV_GASMARTSETTARGET)
+            local specIndex = SpecFromOption(spec)
+            
+            if specIndex == nil then
+                return "Interface\\ICONS\\INV_Misc_QuestionMark"
+            else
+                return (select(4, GetSpecializationInfo(specIndex)))
+            end
 		end
 
 		-- name, icon, setID, isEquipped, numItems, numEquipped, numInventory, numMissing, numIgnored = GetEquipmentSetInfo(index)
@@ -3112,7 +3125,9 @@ function GA:Initialize()
 
         if GetEquipmentSetInfo then
             GetEquipmentSetInfo = fn
-        else
+        end    
+            
+        if C_EquipmentSet and C_EquipmentSet.GetEquipmentSetInfo then
             --For 7.2.0
             C_EquipmentSet.GetEquipmentSetInfo = fn
         end
@@ -3150,7 +3165,9 @@ function GA:Initialize()
         
         if GetEquipmentSetInfoByName then
             GetEquipmentSetInfoByName = fn
-        else
+        end
+        
+        if C_EquipmentSet and C_EquipmentSet.GetEquipmentSetInfoByName then
             --For 7.2.0
             C_EquipmentSet.GetEquipmentSetInfoByName = fn
         end
@@ -3211,7 +3228,9 @@ function GA:Initialize()
             local stack = debugstack()
             local isCalledByBagnonAddon = (string.find(stack, "Bagnon") ~= nil)
             local isCalledCargBags_NivayaAddon = (string.find(stack, "Nivaya") ~= nil)
-            return  isCalledByBagnonAddon or isCalledCargBags_NivayaAddon
+			local isCalledByAdibags = (string.find(stack, "AdiBags") ~= nil)
+			local isCalledByOutfitter = (string.find(stack, "Outfitter") ~= nil)
+            return  isCalledByBagnonAddon or isCalledCargBags_NivayaAddon or isCalledByAdibags or isCalledByOutfitter
         end
 
 		-- Returns a table listing the items in an equipment set
@@ -3240,7 +3259,9 @@ function GA:Initialize()
         
         if GetEquipmentSetItemIDs then
             GetEquipmentSetItemIDs = fn
-        else
+        end
+        
+        if C_EquipmentSet and C_EquipmentSet.GetEquipmentSetItemIDs then
             --For 7.2.0
             C_EquipmentSet.GetEquipmentSetItemIDs = fn
         end        

@@ -15834,3 +15834,1444 @@ step
 _Congratulations!_
 You obtained the Rocfeather Skyhorn Kite toy.
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Eastern Kingdoms\\Westfall and Duskwood Quests",{
+condition_end="achieved(4903)",
+author="support@zygorguides.com",
+startlevel=18,
+keywords={"Westfall","Duskwood","Quests"},
+description="This guide will walk you through completing the \"Westfall and Duskwood Quests\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 80 quests between Westfall and Duskwood_
+Refer to our leveling guides to achieve this
+Click here to load the "Westfall Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Westfall (10-15)\\Westfall (10-15)"
+Click here to load the "Duskwood Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Duskwood (21-26)\\Duskwood (21-26)"
+Earn the _Westfall and Duskwood Quests_ achievement |achieve 4903
+step
+_Congratulations!_
+You have earned the _Westfall and Duskwood Quests_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Eastern Kingdoms\\Redridge Mountains Quests",{
+condition_end="achieved(4902)",
+author="support@zygorguides.com",
+startlevel=18,
+keywords={"Redridge","Mountains","Quests"},
+description="This guide will walk you through completing the \"Redridge Mountains Quests\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 40 quests in Redridge Mountains_
+Refer to our leveling guides to achieve this
+Click here to load the "Redridge Mountain Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Redridge Mountains (15-21)\\Redridge Mountains (16-21)"
+Earn the _Redridge Mountains Quests_ achievement |achieve 4902
+step
+_Congratulations!_
+You have earned the _Redridge Mountains Quests_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Eastern Kingdoms\\Northern Stranglethorn Quests",{
+condition_end="achieved(4906)",
+author="support@zygorguides.com",
+startlevel=18,
+keywords={"Northern","Stranglethorn","Quests"},
+description="This guide will walk you through completing the \"Northern Stranglethorn Quests\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 50 quests in Northern Strangelthorn_
+Refer to our leveling guides to achieve this
+Click here to load the "Northern Stranglethorn Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Northern Stranglethorn (26-32)\\Northern Stranglethorn (26-32)"
+Earn the _Northern Stranglethorn_ achievement |achieve 4906
+step
+_Congratulations!_
+You have earned the _Northern Stranglethorn Quests_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Eastern Kingdoms\\Cape of Stranglethorn Quests",{
+condition_end="achieved(4905)",
+author="support@zygorguides.com",
+startlevel=18,
+keywords={"Cape","Stranglethorn","Quests"},
+description="This guide will walk you through completing the \"Cape of Stranglethorn Quests\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 60 quests in the Cape of Stranglethorn_
+Refer to our leveling guides to achieve this
+Click here to load the "Cape of Stranglethorn Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\The Cape of Stranglethorn (32-36)\\The Cape of Stranglethorn (32-36)"
+Earn the _Cape of Stranglethorn_ achievement |achieve 4906
+step
+_Congratulations!_
+You have earned the _Cape of Stranglethorn Quests_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Eastern Kingdoms\\Blasted Lands Quests",{
+condition_end="achieved(4909)",
+author="support@zygorguides.com",
+startlevel=56,
+keywords={"Blasted","Lands","Quests"},
+description="This guide will walk you through completing the \"Blasted Lands Quests\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 35 quests in the Blasted Lands_
+Refer to our leveling guides to achieve this
+Click here to load the "Blasted Lands Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Blasted Lands (58-60)\\Blasted Lands (58-60)"
+Earn the _Blasted Lands Quests_ achievement |achieve 4909
+step
+_Congratulations!_
+You have earned the _Blasted Lands Quests_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Eastern Kingdoms\\Swamp of Sorrows Quests",{
+condition_end="achieved(4904)",
+author="support@zygorguides.com",
+startlevel=56,
+keywords={"Swamp","Sorrows","Quests"},
+description="This guide will walk you through completing the \"Swamp of Sorrows Quests\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 25 quests in the Swamp of Sorrows_
+Refer to our leveling guides to achieve this
+Click here to load the "Swamp of Sorrows Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Blasted Lands (58-60)\\Blasted Lands (58-60)"
+Earn the _Swamp of Sorrows Quests_ achievement |achieve 4904
+step
+_Congratulations!_
+You have earned the _Swamp of Sorrows Quests_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Eastern Kingdoms\\Burning Steppes Quests",{
+condition_end="achieved(4901)",
+author="support@zygorguides.com",
+startlevel=56,
+keywords={"Burning","Steppes","Quests"},
+description="This guide will walk you through completing the \"Burning Steppes Quests\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 40 quests in the Burning Steppes_
+Refer to our leveling guides to achieve this
+Click here to load the "Burning Steppes Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Burning Steppes (49-52)\\Burning Steppes (49-52)"
+Earn the _Burning Steppes Quests_ achievement |achieve 4901
+step
+_Congratulations!_
+You have earned the _Burning Steppes Quests_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Eastern Kingdoms\\Searing Gorge Quests",{
+condition_end="achieved(4910)",
+author="support@zygorguides.com",
+startlevel=56,
+keywords={"Searing","Gorge","Quests"},
+description="This guide will walk you through completing the \"Searing Gorge Quests\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 35 quests in the Searing Gorge_
+Refer to our leveling guides to achieve this
+Click here to load the "Searing Gorge Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Searing Gorge (46-49)\\Searing Gorge (46-49)"
+Earn the _Searing Gorge Quests_ achievement |achieve 4910
+step
+_Congratulations!_
+You have earned the _Searing Gorge Quests_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Eastern Kingdoms\\Badlands Quests",{
+condition_end="achieved(4900)",
+author="support@zygorguides.com",
+startlevel=56,
+keywords={"Badlands","Quests"},
+description="This guide will walk you through completing the \"Badlands Quests\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 35 quests in the Badlands_
+Refer to our leveling guides to achieve this
+Click here to load the "Badlands Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Badlands (44-46)\\Badlands (44-46)"
+Earn the _Badlands Quests_ achievement |achieve 4900
+step
+_Congratulations!_
+You have earned the _Badlands Quests_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Eastern Kingdoms\\Eastern Plaguelands Quests",{
+condition_end="achieved(4892)",
+author="support@zygorguides.com",
+startlevel=56,
+keywords={"Eastern","Plaguelands","Quests"},
+description="This guide will walk you through completing the \"Eastern Plaguelands Quests\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 35 quests in the Eastern Plaguelands_
+Refer to our leveling guides to achieve this
+Click here to load the "Eastern Plaguelands Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Eastern Plaguelands (39-44)\\Eastern Plaguelands (39-44)"
+Earn the _Eastern Plaguelands Quests_ achievement |achieve 4892
+step
+_Congratulations!_
+You have earned the _Eastern Plaguelands Quests_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Eastern Kingdoms\\Western Plaguelands Quests",{
+condition_end="achieved(4893)",
+author="support@zygorguides.com",
+startlevel=56,
+keywords={"Western","Plaguelands","Quests"},
+description="This guide will walk you through completing the \"Western Plaguelands Quests\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 35 quests in the Western Plaguelands_
+Refer to our leveling guides to achieve this
+Click here to load the "Western Plaguelands Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Eastern Plaguelands (39-44)\\Eastern Plaguelands (39-44)"
+Earn the _Western Plaguelands Quests_ achievement |achieve 4893
+step
+_Congratulations!_
+You have earned the _Western Plaguelands Quests_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Eastern Kingdoms\\Hinterlands Quests",{
+condition_end="achieved(4897)",
+author="support@zygorguides.com",
+startlevel=56,
+keywords={"Hinterlands","Quests"},
+description="This guide will walk you through completing the \"Hinterlands Quests\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 30 quests in the Hinterlands_
+Refer to our leveling guides to achieve this
+Click here to load the "Hinterlands Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\The Hinterlands (30-34)\\The Hinterlands (30-31)"
+Earn the _Hinterlands Quests_ achievement |achieve 4897
+step
+_Congratulations!_
+You have earned the _Hinterlands Quests_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Eastern Kingdoms\\Arathi Highlands Quests",{
+condition_end="achieved(4896)",
+author="support@zygorguides.com",
+startlevel=56,
+keywords={"Arathi","Highlands","Quests"},
+description="This guide will walk you through completing the \"Arathi Highlands Quests\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 18 quests in the Arathi Highlands_
+Refer to our leveling guides to achieve this
+Click here to load the "Arathi Highlands Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Arathi Highlands (26-30)\\Arathi Highlands (26-27)"
+Earn the _Arathi Highlands Quests_ achievement |achieve 4896
+step
+_Congratulations!_
+You have earned the _Arathi Highlands Quests_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Eastern Kingdoms\\Loch Modan and Wetlands Quests",{
+condition_end="achieved(4899)",
+author="support@zygorguides.com",
+startlevel=56,
+keywords={"Loch","Modan","Wetlands","Quests"},
+description="This guide will walk you through completing the \"Loch Modan and Wetlands Quests\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 85 quests in Loch Modan and the Wetlands_
+Refer to our leveling guides to achieve this
+Click here to load the "Loch Modan Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Loch Modan (10-19)\\Loch Modan (10-12)"
+Click here to load the "Wetlands Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Wetlands (19-26)\\Wetlands (19-21)"
+Earn the _Loch Modan and Wetlands Quests_ achievement |achieve 4899
+step
+_Congratulations!_
+You have earned the _Loch Modan and Wetlands Quests_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Kalimdor\\Darkshore Quests",{
+condition_end="achieved(4928)",
+author="support@zygorguides.com",
+startlevel=16,
+keywords={"Darkshore","Quests"},
+description="This guide will walk you through completing the \"Darkshores Quests\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 90 quests in Darkshore_
+Refer to our leveling guides to achieve this
+Click here to load the "Darkshore Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Darkshore (11-21)\\Darkshore (11-16)"
+Earn the _Darkshore Quests_ achievement |achieve 4928
+step
+_Congratulations!_
+You have earned the _Darkshore Quests_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Kalimdor\\Silithus Quests",{
+condition_end="achieved(4934)",
+author="support@zygorguides.com",
+startlevel=16,
+keywords={"Darkshore","Quests"},
+description="This guide will walk you through completing the \"Silithus Quests\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 19 quests in Silithus_
+Refer to our leveling guides to achieve this
+Click here to load the "Silithus Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Silithus (55-56)\\Silithus (55-56)"
+Earn the _Silithus Quests_ achievement |achieve 4934
+step
+_Congratulations!_
+You have earned the _Silithus Quests_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Kalimdor\\Feralas Quests",{
+condition_end="achieved(4932)",
+author="support@zygorguides.com",
+startlevel=16,
+keywords={"Feralas","Quests"},
+description="This guide will walk you through completing the \"Feralas Quests\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 19 quests in Feralas_
+Refer to our leveling guides to achieve this
+Click here to load the "Feralas Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Feralas (37-41)\\Feralas (37-41)"
+Earn the _Feralas Quests_ achievement |achieve 4932
+step
+_Congratulations!_
+You have earned the _Feralas Quests_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Kalimdor\\Desolace Quests",{
+condition_end="achieved(4930)",
+author="support@zygorguides.com",
+startlevel=16,
+keywords={"Desolace","Quests"},
+description="This guide will walk you through completing the \"Desolace Quests\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 55 quests in Desolace_
+Refer to our leveling guides to achieve this
+Click here to load the "Desolace Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Desolace (33-37)\\Desolace (33-35)"
+Earn the _Desolace Quests_ achievement |achieve 4930
+step
+_Congratulations!_
+You have earned the _Desolace Quests_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Kalimdor\\Un'Goro Crater Quests",{
+condition_end="achieved(4939)",
+author="support@zygorguides.com",
+startlevel=16,
+keywords={"Un'Goro","Crater","Quests"},
+description="This guide will walk you through completing the \"Un'Goro Crater Quests\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 41 quests in Un'Goro Crater_
+Refer to our leveling guides to achieve this
+Click here to load the "Un'Goro Crater Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Un'Goro Crater (55-58)\\Un'Goro Crater (55-58)"
+Earn the _Un'Goro Crater Quests_ achievement |achieve 4939
+step
+_Congratulations!_
+You have earned the _Un'Goro Crater Quests_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Kalimdor\\Felwood Quests",{
+condition_end="achieved(4931)",
+author="support@zygorguides.com",
+startlevel=16,
+keywords={"Felwood","Quests"},
+description="This guide will walk you through completing the \"Felwood Quests\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 55 quests in Felwood_
+Refer to our leveling guides to achieve this
+Click here to load the "Felwood Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Felwood (48-51)\\Felwood (48-49)"
+Earn the _Felwood Quests_ achievement |achieve 4931
+step
+_Congratulations!_
+You have earned the _Felwood Quests_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Kalimdor\\Tanaris Quests",{
+condition_end="achieved(4935)",
+author="support@zygorguides.com",
+startlevel=16,
+keywords={"Tanaris","Quests"},
+description="This guide will walk you through completing the \"Tanaris Quests\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 40 quests in Tanaris_
+Refer to our leveling guides to achieve this
+Click here to load the "Tanaris Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Tanaris (45-48)\\Tanaris (45-47)"
+Earn the _Tanaris Quests_ achievement |achieve 4935
+step
+_Congratulations!_
+You have earned the _Tanaris Quests_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Kalimdor\\Thousand Needles Quests",{
+condition_end="achieved(4938)",
+author="support@zygorguides.com",
+startlevel=16,
+keywords={"Thousand","Needles","Quests"},
+description="This guide will walk you through completing the \"Thousand Needles Quests\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 60 quests in Thousand Needles_
+Refer to our leveling guides to achieve this
+Click here to load the "Thousand Needles Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Thousand Needles (41-45)\\Thousand Needles (41-45)"
+Earn the _Thousand Needles Quests_ achievement |achieve 4938
+step
+_Congratulations!_
+You have earned the _Thousand Needles Quests_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Kalimdor\\Dustwallow Marsh Quests",{
+condition_end="achieved(4929)",
+author="support@zygorguides.com",
+startlevel=16,
+keywords={"Dustwallow","Marsh","Quests"},
+description="This guide will walk you through completing the \"Dustwallow Marsh Quests\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 60 quests in Dustwallow Marsh_
+Refer to our leveling guides to achieve this
+Click here to load the "Dustwallow Marsh Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Dustwallow Marsh (37-41)\\Dustwallow Marsh (37-41)"
+Earn the _Dustwallow Marsh Quests_ achievement |achieve 4929
+step
+_Congratulations!_
+You have earned the _Dustwallow Marsh Quests_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Kalimdor\\Southern Barrens Quests",{
+condition_end="achieved(4937)",
+author="support@zygorguides.com",
+startlevel=16,
+keywords={"Southern","Barrens","Quests"},
+description="This guide will walk you through completing the \"Southern Barrens Quests\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 60 quests in the Southern Barrens_
+Refer to our leveling guides to achieve this
+Click here to load the "Southern Barrens Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Southern Barrens (33-37)\\Southern Barrens (33-35)"
+Earn the _Southern Barrens Quests_ achievement |achieve 4937
+step
+_Congratulations!_
+You have earned the _Southern Barrens Quests_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Kalimdor\\Stonetalon Mountains Quests",{
+condition_end="achieved(4936)",
+author="support@zygorguides.com",
+startlevel=16,
+keywords={"Stonetalon","Mountains","Quests"},
+description="This guide will walk you through completing the \"Stonetalon Mountains Quests\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 55 quests in the Stonetalon Mountains_
+Refer to our leveling guides to achieve this
+Click here to load the "Stonetalon Mountains Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Stonetalon Mountains (27-33)\\Stonetalon Mountains (27-33)"
+Earn the _Stonetalon Mountains Quests_ achievement |achieve 4936
+step
+_Congratulations!_
+You have earned the _Stonetalon Mountains Quests_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Kalimdor\\Ashenvale Quests",{
+condition_end="achieved(4925)",
+author="support@zygorguides.com",
+startlevel=16,
+keywords={"Ashenvale","Quests"},
+description="This guide will walk you through completing the \"Ashenvale Quests\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 70 quests in Ashenvale_
+Refer to our leveling guides to achieve this
+Click here to load the "Ashenvale Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Ashenvale (21-27)\\Ashenvale (21-27)" |achieve 4925
+Earn the _Ashenvale Quests_ achievement |achieve 4925
+step
+_Congratulations!_
+You have earned the _Ashenvale Quests_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Kalimdor\\Winterspring Quests",{
+condition_end="achieved(4940)",
+author="support@zygorguides.com",
+startlevel=16,
+keywords={"Winterspring","Quests"},
+description="This guide will walk you through completing the \"Winterspring Quests\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 58 quests in Winterspring_
+Refer to our leveling guides to achieve this
+Click here to load the "Winterspring Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Winterspring (51-55)\\Winterspring (51-52)"
+Earn the _Winterspring Quests_ achievement |achieve 4940
+step
+_Congratulations!_
+You have earned the _Winterspring Quests_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Kalimdor\\Bloodmyst Isle Quests",{
+condition_end="achieved(4926)",
+author="support@zygorguides.com",
+startlevel=16,
+keywords={"Bloodmyst","Isle","Quests"},
+description="This guide will walk you through completing the \"Bloodmyst Isle Quests\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 58 quests in Bloodmyst Isle_
+Refer to our leveling guides to achieve this
+Click here to load the "Bloodmyst Isle Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Bloodmyst Isle (11-20)\\Bloodmyst Isle (11-12)"
+Earn the _Bloodmyst Isle Quests_ achievement |achieve 4926
+step
+_Congratulations!_
+You have earned the _Bloodmyst Isle Quests_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Outland\\Into the Nether",{
+condition_end="achieved(1194)",
+author="support@zygorguides.com",
+startlevel=66,
+keywords={"Into","the","Nether"},
+description="This guide will walk you through completing the \"Into the Nether\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 120 quests in the Netherstorm_
+Refer to our leveling guides to achieve this
+Click here to load the "Netherstorm Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\The Burning Crusade (60-70)\\Netherstorm (68-70)"
+Earn the _Into the Nether_ achievement |achieve 1194
+step
+_Congratulations!_
+You have earned the _Into the Nether_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Outland\\On the Blade's Edge",{
+condition_end="achieved(1193)",
+author="support@zygorguides.com",
+startlevel=65,
+keywords={"On","the","Blade's","Edge"},
+description="This guide will walk you through completing the \"On the Blade's Edge\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 86 quests in Blade's Edge Mountains_
+Refer to our leveling guides to achieve this
+Click here to load the "Blade's Edge Mountain Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\The Burning Crusade (60-70)\\Blade's Edge Mountains (67-68)"
+Earn the _On the Blade's Edge_ achievement |achieve 1193
+step
+_Congratulations!_
+You have earned the _On the Blade's Edge_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Outland\\Nagrand Slam",{
+condition_end="achieved(1192)",
+author="support@zygorguides.com",
+startlevel=64,
+keywords={"Nagrand","Slam"},
+description="This guide will walk you through completing the \"Nagrand Slam\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 75 quests in Nagrand_
+Refer to our leveling guides to achieve this
+Click here to load the "Nagrand Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\The Burning Crusade (60-70)\\Nagrand (65-67)"
+Earn the _Nagrand Slam_ achievement |achieve 1192
+step
+_Congratulations!_
+You have earned the _Nagrand Slam_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Outland\\Terror of Terokkar",{
+condition_end="achieved(1191)",
+author="support@zygorguides.com",
+startlevel=64,
+keywords={"Terror","of","Terokkar"},
+description="This guide will walk you through completing the \"Terror of Terokkar\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 63 quests in Terokkar Forest_
+Refer to our leveling guides to achieve this
+Click here to load the "Terokkar Forest Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\The Burning Crusade (60-70)\\Terokkar Forest (64-65)"
+Earn the _Terror of Terokkar_ achievement |achieve 1191
+step
+_Congratulations!_
+You have earned the _Terror of Terokkar_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Outland\\To Hellfire and Back",{
+condition_end="achieved(1189)",
+author="support@zygorguides.com",
+startlevel=58,
+keywords={"To","Hellfire","and","Back"},
+description="This guide will walk you through completing the \"To Hellfire and Back\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 76 quests in Hellfire Peninsula_
+Refer to our leveling guides to achieve this
+Click here to load the "Hellfire Peninsula Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\The Burning Crusade (60-70)\\Hellfire Peninsula (60-62)"
+Earn the _To Hellfire and Back_ achievement |achieve 1189
+step
+_Congratulations!_
+You have earned the _To Hellfire and Back_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Outland\\Shadow of the Betrayer",{
+condition_end="achieved(1195)",
+author="support@zygorguides.com",
+startlevel=58,
+keywords={"Shadow","of","the","Betrayer"},
+description="This guide will walk you through completing the \"Shadow of the Betrayer\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 90 quests in Shadowmoon Valley_
+Refer to our leveling guides to achieve this
+Click here to load the "Shadowmoon Valley Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\The Burning Crusade (60-70)\\Shadowmoon Valley (68-70)"
+Earn the _Shadow of the Betrayer_ achievement |achieve 1195
+step
+_Congratulations!_
+You have earned the _Shadow of the Betrayer_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Outland\\Mysteries of the Marsh",{
+condition_end="achieved(1190)",
+author="support@zygorguides.com",
+startlevel=60,
+keywords={"Mysteries","of","the","Marsh"},
+description="This guide will walk you through completing the \"Mysteries of the Marsh\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 52 quests in Zangarmarsh_
+Refer to our leveling guides to achieve this
+Click here to load the "Zangarmarsh Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\The Burning Crusade (60-70)\\Zangarmarsh (62-64)"
+Earn the _Mysteries of the Marsh_ achievement |achieve 1190
+step
+_Congratulations!_
+You have earned the _Mysteries of the Marsh_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Northrend\\Icecrown: The Final Goal",{
+condition_end="achieved(40)",
+author="support@zygorguides.com",
+startlevel=77,
+keywords={"Icecrown:","the","Final","Goal"},
+description="This guide will walk you through completing the \"Icecrown: The Final Goal\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 140 quests in Icecrown_
+Refer to our leveling guides to achieve this
+Click here to load the "Icecrown Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Wrath of the Lich King (70-80)\\Icecrown (78-80)"
+Earn the _Icecrown: The Final Goal_ achievement |achieve 40
+step
+_Congratulations!_
+You have earned the _Icecrown: The Final Goal_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Northrend\\The Empire of Zul'Drak",{
+condition_end="achieved(36)",
+author="support@zygorguides.com",
+startlevel=73,
+keywords={"The","Empire","of","Zul'Drak"},
+description="This guide will walk you through completing the \"The Empire of Zul'Drak\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 100 quests in Zul'Drak_
+Refer to our leveling guides to achieve this
+Click here to load the "Zul'Drak Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Wrath of the Lich King (70-80)\\Zul'Drak (75-77)"
+Earn the _The Empire of Zul'Drak_ achievement |achieve 36
+step
+_Congratulations!_
+You have earned the _The Empire of Zul'Drak_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Northrend\\Into the Basin",{
+condition_end="achieved(39)",
+author="support@zygorguides.com",
+startlevel=73,
+keywords={"Into","the","Basin"},
+description="This guide will walk you through completing the \"Into the Basin\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 75 quests in Sholazar Basin_
+Refer to our leveling guides to achieve this
+Click here to load the "Sholazar Basin Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Wrath of the Lich King (70-80)\\Sholazar Basin (77-78)"
+Earn the _Into the Basin_ achievement |achieve 39
+step
+_Congratulations!_
+You have earned the _Into the Basin_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Northrend\\Might of Dragonblight",{
+condition_end="achieved(35)",
+author="support@zygorguides.com",
+startlevel=71,
+keywords={"Might","of","Dragonblight"},
+description="This guide will walk you through completing the \"Might of Dragonblight\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 115 quests in Dragonblight_
+Refer to our leveling guides to achieve this
+Click here to load the "Dragonblight Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Wrath of the Lich King (70-80)\\Dragonblight (72-74)"
+Earn the _Might of Dragonblight_ achievement |achieve 35
+step
+_Congratulations!_
+You have earned the _Might of Dragonblight_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Northrend\\The Summit of Storm Peaks",{
+condition_end="achieved(38)",
+author="support@zygorguides.com",
+startlevel=77,
+keywords={"The","Summit","of","Storm","Peaks"},
+description="This guide will walk you through completing the \"The Summit of Storm Peaks\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 100 quests in The Storm Peaks_
+Refer to our leveling guides to achieve this
+Click here to load "The Storm Peaks Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Wrath of the Lich King (70-80)\\The Storm Peaks (78-80)"
+Earn the _The Summit of Storm Peaks_ achievement |achieve 38
+step
+_Congratulations!_
+You have earned the _The Summit of Storm Peaks_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Northrend\\Fo' Grizzle My Shizzle",{
+condition_end="achieved(37)",
+author="support@zygorguides.com",
+startlevel=77,
+keywords={"Fo'","Grizzle","My","Shizzle"},
+description="This guide will walk you through completing the \"Fo' Grizzle My Shizzle\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 85 quests in the Grizzly Hills_
+Refer to our leveling guides to achieve this
+Click here to load the "Gizzly Hills Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Wrath of the Lich King (70-80)\\Grizzly Hills (74-75)"
+Earn the _Fo' Grizzle My Shizzle_ achievement |achieve 37
+step
+_Congratulations!_
+You have earned the _Fo' Grizzle My Shizzle_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Northrend\\I've Toured the Fjord",{
+condition_end="achieved(34)",
+author="support@zygorguides.com",
+startlevel=68,
+keywords={"I've","Toured","the","Fjord"},
+description="This guide will walk you through completing the \"I've Toured the Fjord\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 130 quests in the Howling Fjord_
+Refer to our leveling guides to achieve this
+Click here to load the "Howling Fjord Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Wrath of the Lich King (70-80)\\Howling Fjord (70-72)"
+Earn the _I've Toured the Fjord_ achievement |achieve 34
+step
+_Congratulations!_
+You have earned the _I've Toured the Fjord_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Northrend\\Nothing Boring About Borean",{
+condition_end="achieved(33)",
+author="support@zygorguides.com",
+startlevel=68,
+keywords={"Nothing","Boring","About","Borean"},
+description="This guide will walk you through completing the \"Nothing Boring About Borean\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 130 quests in the Borean Tundra_
+Refer to our leveling guides to achieve this
+Click here to load the "Borean Tundra Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Wrath of the Lich King (70-80)\\Borean Tundra (70-72)"
+Earn the _Nothing Boring About Borean_ achievement |achieve 33
+step
+_Congratulations!_
+You have earned the _Nothing Boring About Borean_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Cataclysm\\Coming Down the Mountain",{
+condition_end="achieved(4870)",
+author="support@zygorguides.com",
+startlevel=80,
+keywords={"Coming","Down","the","Mountain"},
+description="This guide will walk you through completing the \"Coming Down the Mountain\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 115 quests in Mount Hyjal_
+Refer to our leveling guides to achieve this
+Click here to load the "Mount Hyjal Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Cataclysm (80-85)\\Mount Hyjal (80-82)"
+Earn the _Coming Down the Mountain_ achievement |achieve 4870
+step
+_Congratulations!_
+You have earned the _Coming Down the Mountain_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Cataclysm\\Fading into Twilight",{
+condition_end="achieved(4873)",
+author="support@zygorguides.com",
+startlevel=84,
+keywords={"Fading","into","Twilight"},
+description="This guide will walk you through completing the \"Fading into Twilight\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 120 quests in Twilight Highlands_
+Refer to our leveling guides to achieve this
+Click here to load the "Twilight Highlands Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Cataclysm (80-85)\\Twilight Highlands (84-85)"
+Earn the _Fading into Twilight_ achievement |achieve 4873
+step
+_Congratulations!_
+You have earned the _Fading into Twilight_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Cataclysm\\Unearthing Uldum",{
+condition_end="achieved(4872)",
+author="support@zygorguides.com",
+startlevel=83,
+keywords={"Unearthing","Uldum"},
+description="This guide will walk you through completing the \"Unearthing Uldum\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 105 quests in Uldum_
+Refer to our leveling guides to achieve this
+Click here to load the "Uldum Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Cataclysm (80-85)\\Uldum (83-84)"
+Earn the _Unearthing Uldum_ achievement |achieve 4872
+step
+_Congratulations!_
+You have earned the _Unearthing Uldum_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Cataclysm\\Deep into Deepholm",{
+condition_end="achieved(4871)",
+author="support@zygorguides.com",
+startlevel=83,
+keywords={"Deep","into","Deepholm"},
+description="This guide will walk you through completing the \"Deep into Deepholm\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete 105 quests in Deepholm_
+Refer to our leveling guides to achieve this
+Click here to load the "Deepholm Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Cataclysm (80-85)\\Deepholm (82-83)"
+Earn the _Deep into Deepholm_ achievement |achieve 4871
+step
+_Congratulations!_
+You have earned the _Deep into Deepholm_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Cataclysm\\The Fiery Lords of Sethria's Roost",{
+condition_end="achieved(5861)",
+author="support@zygorguides.com",
+startlevel=85,
+keywords={"The","Fiery","Lords","of","Sethria's","Roost"},
+description="This guide will walk you through completing the \"The Fiery Lords of Sethria's Roost\" Achievement.",
+},[[
+step
+For this, you will need to kill 4 elite enemies that spawn in the Molten Front
+They appear at random, so click the npc name to activate coordinates
+kill Searris##53264 |achieve 5861/1 |goto 32.0,94.8
+Check here |goto 35.6,97.6
+kill Kelbnar##53265 |achieve 5861/2 |goto 30.8,82.2
+|tip It's a burning skeleton hound that patrols.
+kill Andrazor##53267 |achieve 5861/3 |goto 31.8,84.4
+|tip It flies in a figure 8 around this area.
+kill Fah Jarakk##53271 |achieve 5861/4 |goto 31.0,86.6
+step
+_Congratulations!_
+You have earned _The Fiery Lords of Sethria's Roost_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Pandaria\\Upjade Complete",{
+condition_end="achieved(6300)",
+author="support@zygorguides.com",
+startlevel=85,
+keywords={"Upjade","Complete"},
+description="This guide will walk you through completing the \"Upjade Complete\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete the 12 storylines in the Jade Forest_
+Refer to our leveling guides to achieve this
+Click here to load the "Jade Forest Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Pandaria (85-90)\\The Jade Forest (85-86)"
+Here is a look at your current progress:
+Paw'don Village |achieve 6300/1
+The Waterspeaking Ceremony |achieve 6300/2
+The White Pawn |achieve 6300/3
+Pearlfin Village |achieve 6300/4
+Dawn's Blossom |achieve 6300/5
+Greenstone Quarry |achieve 6300/6
+Tian Monastery |achieve 6300/7
+Terrace of Ten Thunders |achieve 6300/8
+The Temple of the Jade Serpent |achieve 6300/9
+Nectarbreeze Orcahrd |achieve 6300/10
+The Battle for the Forest |achieve 6300/11
+Overcoming Doubt |achieve 6300/12
+step
+_Congratulations!_
+You have earned the _Upjade Complete_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Pandaria\\Dread Haste Makes Dread Waste",{
+condition_end="achieved(6540)",
+author="support@zygorguides.com",
+startlevel=89,
+keywords={"Dread","Haste","Makes","Dread","Waste"},
+description="This guide will walk you through completing the \"Dread Haste Makes Dread Waste\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete the 4 storylines in The Dread Wastes_
+Refer to our leveling guides to achieve this
+Click here to load the "Dread Wastes Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Pandaria (85-90)\\Dread Wastes (89-90)"
+Here is a look at your current progress:
+The First Paragons |achieve 6540/1
+The Might of the Klaxxi |achieve 6540/2
+Taste of Amber |achieve 6540/3
+Like a Deck Boss |achieve 6540/4
+step
+_Congratulations!_
+You have earned the _Dread Haste Makes Dread Waste_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Pandaria\\One Steppe Forward, Two Steppes Back",{
+condition_end="achieved(6539)",
+author="support@zygorguides.com",
+startlevel=88,
+keywords={"One","Steppe","Forward","Two","Steppes","Back"},
+description="This guide will walk you through completing the \"One Steppe Forward, Two Steppes Back\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete the 5 storylines in Townlong Steppes_
+Refer to our leveling guides to achieve this
+Click here to load the "Townlong Steppes Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Pandaria (85-90)\\Townlong Steppes (88-89)"
+Here is a look at your current progress:
+Fire Camp Osul |achieve 6540/1
+Mistlurkers in the Sumprushes |achieve 6540/2
+On Hatred's Path |achieve 6540/3
+The Sha of Hatred |achieve 6540/4
+Tal Ho's Investigation |achieve 6540/5
+step
+_Congratulations!_
+You have earned the _One Steppe Forward, Two Steppes Back_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Pandaria\\Slum It in the Summit",{
+condition_end="achieved(6537)",
+author="support@zygorguides.com",
+startlevel=87,
+keywords={"Slum","it","in","the","Summit"},
+description="This guide will walk you through completing the \"Slum It in the Summit\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete the 10 storylines in Kun-Lai Summit_
+Refer to our leveling guides to achieve this
+Click here to load the "Kun-Lai Summit Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Pandaria (85-90)\\Kun-Lai Summit (87-88)"
+Here is a look at your current progress:
+Westwind Rest |achieve 6537/1
+The Yaungol Invasion |achieve 6537/2
+Inkgill Mere |achieve 6537/3
+The Yak Wash |achieve 6537/4
+The Burlap Trail |achieve 6537/5
+Kota Peak |achieve 6537/6
+The Thunder King |achieve 6537/7
+Temple of the White Tiger |achieve 6537/8
+Zouchin Village |achieve 6537/9
+The Shado-Pan |achieve 6537/10
+step
+_Congratulations!_
+You have earned the _Slum It in the Summit_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Pandaria\\Mighty Roamin' Krasaranger",{
+condition_end="achieved(6535)",
+author="support@zygorguides.com",
+startlevel=85,
+keywords={"Mighty","Roamin'","Krasaranger"},
+description="This guide will walk you through completing the \"Mighty Roamin' Krasaranger\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete the 10 storylines in Kun-Lai Summit_
+Refer to our leveling guides to achieve this
+Click here to load the "Krasarang Wilds Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Pandaria (85-90)\\Krasarang Wilds (87)"
+Here is a look at your current progress:
+Zhu's Watch |achieve 6535/1
+The Incrusion |achieve 6535/2
+Nayeli Lagoon |achieve 6535/3
+Temple of the Red Crane |achieve 6535/4
+The Waters of youth |achieve 6535/5
+step
+_Congratulations!_
+You have earned the _Mighty Roamin' Krasaranger_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Pandaria\\Rally the Valley",{
+condition_end="achieved(6301)",
+author="support@zygorguides.com",
+startlevel=86,
+keywords={"Rally","the'","Valley"},
+description="This guide will walk you through completing the \"Rally the Valley\" Achievement.",
+},[[
+step
+For this achievement, you will need to _complete the 10 storylines in Valley of the Four Winds_
+Refer to our leveling guides to achieve this
+Click here to load the "Krasarang Wilds Leveling Guide" |confirm |next "Zygor's Alliance Leveling Guides\\Pandaria (85-90)\\Valley of the Four Winds (86-87)"
+Here is a look at your current progress:
+Thunderfoot Fields |achieve 6301/1
+Mudmug's Place |achieve 6301/2
+Chen's Masterpiece |achieve 6301/3
+The Stormstout Brewery |achieve 6301/4
+The Hidden Master |achieve 6301/5
+Nesingwary's Safari |achieve 6301/6
+step
+_Congratulations!_
+You have earned the _Rally the Valley_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Pandaria\\A Taste of History",{
+condition_end="achieved(7318)",
+author="support@zygorguides.com",
+startlevel=86,
+keywords={"A","Taste'","of","History"},
+description="This guide will walk you through completing the \"A Taste of History\" Achievement.",
+},[[
+step
+label "start"
+For this, you will need to kill mobs in Guo-Lai Halls for _"Ancient Guo-Lai Cache Key"_
+collect Ancient Guo-Lai Cache Key##87779 |n
+Click here to continue |confirm
+step
+Enter the tomb |goto Vale of Eternal Blossoms/0 22.44,26.89
+click Ancient Guo-Lai Cache
+Find a Guo-Lai Vault Key and open an Ancient Guo-Lai Cache |achieve 7318 |goto Vale of Eternal Blossoms/18 65,72
+Click here if there is no cache at this spot |confirm
+|tip Make sure you FULLY LOOT the Cache for credit.
+step
+click Ancient Guo-Lai Cache
+Find a Guo-Lai Vault Key and open an Ancient Guo-Lai Cache |achieve 7318 |goto 54,17
+Click here if there is no cache at this spot |confirm
+|tip Make sure you FULLY LOOT the Cache for credit.
+step
+click Ancient Guo-Lai Cache
+Find a Guo-Lai Vault Key and open an Ancient Guo-Lai Cache |achieve 7318 |goto 59,13
+Click here if there is no cache at this spot |confirm
+|tip Make sure you FULLY LOOT the Cache for credit.
+step
+click Ancient Guo-Lai Cache
+Find a Guo-Lai Vault Key and open an Ancient Guo-Lai Cache |achieve 7318 |goto 58,6
+Click here if there is no cache at this spot |confirm
+|tip Make sure you FULLY LOOT the Cache for credit.
+step
+click Ancient Guo-Lai Cache
+Find a Guo-Lai Vault Key and open an Ancient Guo-Lai Cache |achieve 7318 |goto 71,27
+Click here if there is no cache at this spot |confirm
+|tip Make sure you FULLY LOOT the Cache for credit.
+step
+click Ancient Guo-Lai Cache
+Find a Guo-Lai Vault Key and open an Ancient Guo-Lai Cache |achieve 7318 |goto 50,62
+Click here if there is no cache at this spot |confirm
+|tip Make sure you FULLY LOOT the Cache for credit.
+step
+Earn the _"A Taste of History"_ Achievement|achieve 7318
+Click here to go back to the start if you haven't earned the achievement yet |confirm |next "start"
+step
+_Congratulations!_
+You have earned the _Rally the Valley_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Pandaria\\One Step at a Time",{
+condition_end="achieved(7324)",
+author="support@zygorguides.com",
+startlevel=86,
+keywords={"One","Step'","at","a","Time"},
+description="This guide will walk you through completing the \"One Step at a Time\" Achievement.",
+},[[
+step
+label "start"
+This achievement takes place during two quests:
+_"The Crumbling Hall"_ and _"The Thunder Below"_
+Note that only one will be offered at a time
+You will need to complete said quests without taking damage
+_"This requirement takes effect as soon as you accept the quest!"_
+The easiest way to do this is to have a friend run ahead of you and clear all of the enemies
+Complete The Crumbling Hall without taking any damage |achieve 7324/1
+Complete The Thunder Below without taking any damage |achieve 7324/2
+Click here to continue |confirm
+step
+talk Bartender Tomro##58691
+home The Golden Rose |goto Vale of Eternal Blossoms/0 35.35,77.65
+Set your hearth here so you can use it to port out of the ruins after you reach the goal
+|tip This will help prevent you from taking damage on your way out.
+step
+talk Anji Autumnlight##58919
+accept The Crumbling Hall##30277 |goto Vale of Eternal Blossoms/0 21.4,71.6 |or
+accept The Thunder Below##30280 |next "Thunder" |goto 21.4,71.6 |or
+|achieve 30280 |next "end" |or
+step
+map Vale of Eternal Blossoms/0
+path loop off; dist 20
+path 22.29,26.54
+map Vale of Eternal Blossoms/18
+path loop off; dist 20
+path	53.33,87.33	47.46,81.40	51.13,67.67
+path	46.13,56.05	41.56,53.17	31.52,47.29
+path	27.62,41.74	31.03,28.40	34.68,22.02
+Follow the path
+Be on the look out for the _Red Statues_, as they will aggro when you are close to them
+They will be invulnerable until they aggro as well
+Click here to continue |confirm
+step
+map Vale of Eternal Blossoms/18
+path loop off; dist 5
+path	38.97,24.64	38.37,26.81	37.60,29.43
+path	39.48,30.79	41.29,32.17	44.16,33.64
+path	44.84,31.14	45.71,28.07	46.92,22.95
+path	44.67,21.33	41.65,19.60	40.70,22.17
+path	42.87,23.50	41.97,27.26
+Follow the path
+click Deactivate Final Spirit Wall
+Deactivate the Spirit Wall |q 7324/1
+step
+map Vale of Eternal Blossoms/18
+path loop off; dist 5
+path	40.92,22.12	41.43,19.67	43.60,21.05
+path	46.62,22.98	45.73,28.40	49.52,30.64
+Follow the path
+click Ancient Guo-Lai Artifact
+Get the Ancient Guo-Lai Artifact |q 7324/2
+step
+talk Anji Autumnlight##58919
+turnin The Crumbling Hall##30277 |goto Vale of Eternal Blossoms/0 21.4,71.6 |or
+turnin The Thunder Below##30280 |next "Thunder" |goto 21.4,71.6 |or
+|next "start"
+step
+label "Thunder"
+Second Part
+map Vale of Eternal Blossoms/0
+path loop off; dist 20
+path 22.29,26.54
+map Vale of Eternal Blossoms/18
+path loop off; dist 20
+path	52.43,86.40	47.97,80.26	52.56,62.79
+path	56.68,47.10	57.46,44.55	58.41,44.64
+path	58.22,42.24
+Follow the path
+Watch for the tile at the end, it switches and will damage you
+Try to jump over it
+Click here to contiue |confirm
+step
+map Vale of Eternal Blossoms/18
+path loop off; dist 5
+path	58.57,37.64	56.33,36.14	57.43,32.05
+path	60.92,34.24	60.70,35.50	62.27,36.60
+path	63.83,32.07	64.79,28.12	63.13,27.12
+path	62.54,24.60
+Follow the path
+click Ancient Guo-Lai Door
+Go through the gate
+Click here to continue |confirm
+step
+map Vale of Eternal Blossoms/18
+path loop off; dist 5
+path	68.32,24.62	69.83,17.36	64.37,17.14
+map Vale of Eternal Blossoms/19
+path loop off; dist 5
+path	65.47,22.00	62.19,34.62	60.42,47.21
+path	65.72,67.54	63.83,74.25	57.92,76.54
+kill Milau##64965 |q 30280/1
+For this, avoid the black clouds with 3 blue electric balls that appear
+DPS him as fast as you can to avoid the large AoE that he does
+step
+talk Anji Autumnlight##58919
+turnin The Crumbling Hall##30277 |goto Vale of Eternal Blossoms/0 21.4,71.6 |or
+turnin The Thunder Below##30280 |next "Thunder" |goto 21.4,71.6 |or
+step
+Complete The Crumbling Hall without taking any damage |achieve 7324/1
+Complete The Thunder Below without taking any damage |achieve 7324/2
+Click here to return to the start |confirm |next "start"
+step
+Earn the _"One Step at a Time"_ Achievement|achieve 7324
+Click here to go back to the start if you haven't earned the achievement yet |confirm |next "start"
+step
+label "end"
+_Congratulations!_
+You have earned the _One Step at a Time_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Pandaria\\The Crumble Bundle",{
+condition_end="achieved(8105)",
+author="support@zygorguides.com",
+startlevel=86,
+keywords={"The","Crumble","Bundle"},
+description="This guide will walk you through completing the \"The Crumble Bundle\" Achievement.",
+},[[
+step
+label "start"
+You will have needed to unlock the _"Isle of Thunder"_ daily zone
+You will also need to have progressed enough to have learned the Saurok Jump ability
+Click here to load the Kirin Tor Offensive Guide |confirm |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\Kirin Tor Offensive Dailies"
+Click here to continue |confirm
+step
+You will have _10 Minutes_ to collect all of the pieces to the Chamberlain
+If you don't collect them _WITHIN_ 10 mintues, you won't earn the achievement
+To start, type _"/timer 600"_
+If you fail to collect them within 10 minutes, _you MUST wait for the 10 minutes to complete before attempting again!_
+Hit the start button on the timer that popped up upon accepting the quest
+accept The Crumbled Chamberlain##32505 |goto Isle of Thunder/0 35.00,47.52
+step
+click Torso of the Chamberlain
+collect Torso of the Chamberlain##93796 |q 32505/4 |goto 34,49.8
+Click here if it's not at this spot |confirm
+step
+click Torso of the Chamberlain
+collect Torso of the Chamberlain##93796 |q 32505/4 |goto 36.3,48.9
+Click here if it's not at this spot |confirm
+step
+click Torso of the Chamberlain
+collect Torso of the Chamberlain##93796 |q 32505/4 |goto 37.8,53.8
+Click here if it's not at this spot |confirm
+step
+Go up the stairs |goto 34.04,58.09
+click Torso of the Chamberlain
+collect Torso of the Chamberlain##93796 |q 32505/4 |goto 33.6,59.9
+step
+Enter the building |goto 35.11,62.20 < 25
+Go up the stairs |goto 34.26,63.18 < 25
+Follow the path |goto 34.58,65.24 < 20
+Go up the stairs |goto 35.12,65.25 < 15
+Go through the broken wall |goto 34.47,62.22 < 15
+click Torso of the Chamberlain
+collect Torso of the Chamberlain##93796 |q 32505/4 |goto 34.29,61.30
+|tip It's on the roof of the Hall of the Gradn Imperion building.
+Click here if it's not at this spot |confirm
+step
+click Torso of the Chamberlain
+collect Torso of the Chamberlain##93796 |q 32505/4|goto 36.8,59.9
+step
+Follow the path |goto 37.62,65.00 < 25
+Follow the path |goto 38.03,67.30 < 25
+click Staff of the Chamberlain
+collect Staff of the Chamberlain##93794 |q 32505/3 |goto 41.4,67.7
+Click here if the staff isn't at this location |confirm
+step
+Follow the path |goto 39.72,66.78 < 25
+Follow the path |goto 37.65,67.31 < 25
+Follow the path |goto 35.63,67.67 < 25
+click Staff of the Chamberlain
+collect Staff of the Chamberlain##93794 |q 32505/3 |goto 33.6,67.0
+Click here if the staff isn't at this location |confirm
+step
+Follow the path |goto 34.16,70.68 < 25
+click Staff of the Chamberlain
+collect Staff of the Chamberlain##93794 |q 32505/3 |goto 34.0,72.2
+|tip It will be on the roof of the tent if it is here.
+Click here if the staff isn't at this location |confirm
+step
+Follow the path |goto 33.76,73.87 < 25
+click Staff of the Chamberlain
+collect Staff of the Chamberlain##93794 |q 32505/3 |goto 31.5,75.3
+Click here if the staff isn't at this location |confirm
+step
+Follow the path |goto 32.37,79.19 < 25
+Follow the path |goto 33.80,79.25 < 25
+Follow the path |goto 35.13,76.78 < 25
+click Staff of the Chamberlain
+collect Staff of the Chamberlain##93794 |q 32505/3 |goto 35.9,75.1
+Click here if the staff isn't at this location |confirm
+step
+Follow the path |goto 36.64,72.99 < 25
+Follow the path |goto 38.68,72.25 < 25
+click Staff of the Chamberlain
+collect Staff of the Chamberlain##93794 |q 32505/3 |goto 39.1,73.5
+|tip Check inside of the tent.
+Click here if the staff isn't at this location |confirm
+step
+Follow the path |goto 39.45,74.87 < 25
+click Staff of the Chamberlain
+collect Staff of the Chamberlain##93794 |q 32505/3 |goto 36.9,75.6
+|tip Check the ledge, be careful not to fall.
+Click here if the staff isn't at this location |confirm
+step
+Jump down here |goto 38.02,78.52 < 15
+click Staff of the Chamberlain
+collect Staff of the Chamberlain##93794 |q 32505/3 |goto 37.8,79.1
+Click here if the staff isn't at this location |confirm
+step
+Jump down |goto 41.33,72.68 < 25
+Follow the path |goto 43.60,74.76 < 20
+click Shoulder of the Chamberlain
+collect Shoulder of the Chamberlain##93793 |q 32505/2 |goto 47.5,75.2
+|tip You will need to have access to the Saurok Jumping Ability to reach this.
+|tip Jump to the mountain peak.
+Click here if the shoulder isn't at this location |confirm
+step
+Follow the path |goto 45.29,75.38 < 20
+Follow the path |goto 45.85,77.64 < 20
+click Shoulder of the Chamberlain
+collect Shoulder of the Chamberlain##93793 |q 32505/2 |goto 45.5,79.2
+|tip You will need to have access to the Saurok Jumping Ability to reach this.
+|tip Jump to the mountain peak.
+Click here if the shoulder isn't at this location |confirm
+step
+Follow the path |goto 45.15,83.04 < 20
+click Shoulder of the Chamberlain
+collect Shoulder of the Chamberlain##93793 |q 32505/2 |goto 44.5,86.1
+|tip You will need to have access to the Saurok Jumping Ability to reach this.
+|tip Jump to the mountain peak.
+Click here if the shoulder isn't at this location |confirm
+step
+Follow the path |goto 45.04,83.42
+Follow the path |goto 46.91,80.51
+click Shoulder of the Chamberlain
+collect Shoulder of the Chamberlain##93793 |q 32505/2 |goto 47.9,83.0
+|tip You will need to have access to the Saurok Jumping Ability to reach this.
+|tip Jump to the mountain peak.
+Click here if the shoulder isn't at this location |confirm
+step
+click Shoulder of the Chamberlain
+collect Shoulder of the Chamberlain##93793 |q 32505/2 |goto 50.9,85.5
+|tip You will need to have access to the Saurok Jumping Ability to reach this.
+|tip Jump to the mountain peak.
+Click here if the shoulder isn't at this location |confirm
+step
+click Shoulder of the Chamberlain
+collect Shoulder of the Chamberlain##93793 |q 32505/2 |goto 53.4,83.5
+|tip You will need to have access to the Saurok Jumping Ability to reach this.
+|tip Jump to the mountain peak.
+Click here if the shoulder isn't at this location |confirm
+step
+click Shoulder of the Chamberlain
+collect Shoulder of the Chamberlain##93793 |q 32505/2 |goto 57.5,81.6
+|tip You will need to have access to the Saurok Jumping Ability to reach this.
+|tip Jump to the mountain peak.
+Click here if the shoulder isn't at this location |confirm
+step
+Follow the path |goto 55.86,82.07 < 20
+Follow the path |goto 54.36,78.81 < 20
+Follow the path |goto 55.34,74.51 < 20
+click Shoulder of the Chamberlain
+collect Shoulder of the Chamberlain##93793 |q 32505/2 |goto 56.6,72.9
+Click here if the shoulder isn't at this location |confirm
+step
+Follow the path |goto Isle of Thunder/0 58.98,59.32 < 25
+Follow the path |goto 56.71,57.58 < 25
+Follow the path |goto 56.27,55.49 < 25
+Follow the path |goto 57.81,55.47 < 25
+Follow the path |goto 59.40,55.66 < 25
+click Hair of the Chamberlain
+collect Hair of the Chamberlain##93795 |q 32505/1 |goto 59.5,56.7
+|tip It's inside of the tent.
+Click here if the hair isn't at this location |confirm
+step
+Follow the path |goto 58.76,54.03 < 25
+Follow the path |goto 57.67,51.80 < 25
+Follow the path |goto 56.38,49.23 < 24
+Enter the tent |goto 56.48,46.74 < 15
+click Hair of the Chamberlain
+collect Hair of the Chamberlain##93795 |q 32505/1 |goto 56.5,45.8
+Click here if the hair isn't at this location |confirm
+step
+Follow the path |goto 55.85,47.72 < 15
+Follow the path |goto 54.15,49.40 < 15
+Follow the path |goto 53.62,47.45 < 15
+Follow the path |goto 54.80,47.58 < 15
+click Hair of the Chamberlain
+collect Hair of the Chamberlain##93795 |q 32505/1 |goto 54.2,48.6
+|tip It will be on the ledge.
+Click here if the hair isn't at this location |confirm
+step
+Jump to the ledge |goto 53.41,45.63 < 5
+click Hair of the Chamberlain
+collect Hair of the Chamberlain##93795 |q 32505/1 |goto 53.0,45.6
+|tip It will be on top of the tent, on the edge.
+|tip You will be able to reach it by walking close the edge of the wall.
+Click here if the hair isn't at this location |confirm
+step
+click Hair of the Chamberlain
+collect Hair of the Chamberlain##93795 |q 32505/1 |goto 53.3,43.1
+Click here if the hair isn't at this location |confirm
+step
+click Hair of the Chamberlain
+collect Hair of the Chamberlain##93795 |q 32505/1 |goto 50.1,40.8
+Click here if the hair isn't at this location |confirm
+step
+Follow the path |goto 50.30,38.60 < 25
+click Hair of the Chamberlain
+collect Hair of the Chamberlain##93795 |q 32505/1 |goto 52.5,37.1
+Click here if the hair isn't at this location |confirm
+step
+click Hair of the Chamberlain
+collect Hair of the Chamberlain##93795 |q 32505/1 |goto 51.1,31.2
+Click here if the hair isn't at this location |confirm
+step
+If you didn't make it in time, wait for the 10 minutes on the timer to end
+Once you have done so, click here |confirm |next "start"
+Earn the Crumble Bundle |achieve 8105
+step
+_Congratulations!_
+You have earned the _The Crumble Bundle_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Pandaria\\Pay to Slay",{
+condition_end="achieved(8100)",
+author="support@zygorguides.com",
+startlevel=86,
+keywords={"Pay","to","Slay"},
+description="This guide will walk you through completing the \"Pay to Slay\" Achievement.",
+},[[
+step
+For this, you will need to farm _"Shan'ze Ritual Stone's"_
+They can be obtained from Rare Elites and Treasure chests across the Isle of Thunder
+These can also be contiained in _"Arcane Troves"_, which are bought from Hiren Loresong with Elder Charm of Good Fortune
+|tip You will need 20 Lesser Charm of Good Fortune per Elder Charm of Good Fortune if you are trading.
+There are 13 Rare Spawns in the Isle of Thunder to farm for these as well
+talk Hiren Loresong##68000
+buy Arcane Trove##94219 |goto Isle of Thunder/0 64.70,74.55 |n
+collect 3 Shan'ze Ritual Stone##94221 only if itemcount(94221)>=3
+step
+kill Spirit of Warlord Teng##69471 |achieve 8101/1 |goto Isle of Thunder/0 55.2,87.7
+step
+_Congratulations!_
+You have earned the _Pay to Slay_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Pandaria\\It Was Worth Every Ritual Stone",{
+condition_end="achieved(8101)",
+author="support@zygorguides.com",
+startlevel=86,
+keywords={"It","Was","Worth","Every","Ritual","Stone"},
+description="This guide will walk you through completing the \"It Was Worth Every Ritual Stone\" Achievement.",
+},[[
+step
+For this, you will need to defeat all of the Isle of Thunder summonable
+You will need to complete the achievement _"Pay to Slay"_ in order for this achievement to become available
+step
+kill Spirit of Warlord Teng##69471 |achieve 8101/1 |goto Isle of Thunder/0 55.2,87.7
+step
+kill Kor'dok and Tinzo the Emberkeeper##69633 |achieve 8101/2 |goto 30.8,58.6
+step
+kill Echo of Kros##69341 |achieve 8101/3 |goto 55.2,87.7
+step
+kill Electromancer Ju'le##69339 |achieve 8101/4 |goto 44.8,60.4
+step
+kill Qi'nor##69749 |achieve 8101/5 |goto 47.8,25.6
+step
+kill Ancient Mogu Guardian##69767 |achieve 8101/6 |goto 53.2,47.8
+step
+kill Windweaver Akil'amon##70080 |achieve 8101/7 |goto 69.6,39.0
+step
+kill Cera##69396 |achieve 8101/8 |goto 57.9,79.2
+step
+kill Incomplete Drakkari Colossus##69347 |achieve 8101/9 |goto 49.8,20.4
+step
+_Congratulations!_
+You have earned the _It Was Worth Every Ritual Stone_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Pandaria\\The Mogu Have Gotta Go-gu",{
+condition_end="achieved(8110)",
+author="support@zygorguides.com",
+startlevel=86,
+keywords={"The","Mogu","Have","Gotta","Go-gu"},
+description="This guide will walk you through completing the \"The Mogu Have Gotta Go-gu\" Achievement.",
+},[[
+step
+kill Shan'ze Gravekeeper##69235+, Shan'ze Thundercaller##69264+, Shan'ze Soulripper##0, Shan'ze Gravekeeper##69235+, Risen Ancestor##69237, Ancient Stone Conqueror##69238+
+|tip Kill them around the Court of Bones area.
+collect Incantation of Haqin##94130 |n
+Use the Incantation of Haqin |use Incantation of Haqin##94130
+kill Haqin of the Hundred Spears##69800 |achieve 8110/1 |goto Isle of Thunder/0 38.9,59.3
+step
+kill Shan'ze Gravekeeper##69235+, Shan'ze Thundercaller##69264+, Shan'ze Soulripper##0, Shan'ze Gravekeeper##69235+, Risen Ancestor##69237, Ancient Stone Conqueror##69238+
+|tip Kill them around the Court of Bones area.
+collect Incantation of Vu##95350 |n
+Use the Incantation of Vu |use Incantation of Vu##95350
+kill Sparkmancer Vu##69961 |achieve 8110/2 |goto Isle of Thunder/0 38.5,54.8
+step
+kill Shan'ze Gravekeeper##69235+, Shan'ze Thundercaller##69264+, Shan'ze Soulripper##0, Shan'ze Gravekeeper##69235+, Risen Ancestor##69237, Ancient Stone Conqueror##69238+
+|tip Kill them around the Court of Bones area.
+collect Incantation of Deng##94233 |n
+Use the Incantation of Deng |use Incantation of Deng##94233
+kill Forgemaster Deng##69809 |achieve 8110/3 |goto Isle of Thunder/0 38.7,58.1
+step
+_Congratulations!_
+You have earned the _The Mogu Have Gotta Go-gu_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Pandaria\\Stormbreaker",{
+condition_end="achieved(8121)",
+author="support@zygorguides.com",
+startlevel=86,
+keywords={"Stormbreaker"},
+description="This guide will walk you through completing the \"Stormbreaker\" Achievement.",
+},[[
+step
+Reference our _"Isle of Thunder"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievements Guides\\Quests\\Pandaria\\Isle of Thunder"
+Isle of Thunder |achieve 8121/1
+step
+Reference our _"It Was Worth Every Ritual Stone"_ guide to earn this achievement |confirm |next
+Earn the "It Was Worth Every Ritual Stone" Achievement |achieve 8121/2
+step
+Reference our _"Thunder Plunder"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievements Guides\\Quests\\Pandaria\\Thunder Plunder"
+Thunder Plunder |achieve 8121/3
+step
+Reference our _"The Crumble Bundle"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievement Guides\\Quests\\Pandaria\\The Crumble Bundle"
+The Crumble Bundle |achieve 8121/4
+step
+Reference our _"Ready for RAAAAIIIIDDD?!ing"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievements Guides\\Quests\\Pandaria\\Ready for RAAAAIIIIDDD?!?ing"
+Ready for RAAAAIIIIDDD?!ing |achieve 8121/5
+step
+Reference our _"When in Ihgaluk, Do as the Skumblade Do"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievements Guides\\Quests\\Pandaria\\When in Ihgaluk, Do as the Skumblade Do"
+When in Ihgaluk, Do as the Skumblade Do |achieve 8121/6
+step
+Reference our _"The Mogu Have Gotta Go-gu"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievement Guides\\Quests\\Pandaria\\The Mogu Have Gotta Go-gu"
+Earn the "The Mogu Have Gotta Go-gu" Achievement |achieve 8121/7
+step
+Reference our _"This Isn't Even My Final Form"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievements Guides\\Quests\\Pandaria\\This Isn't Even My Final Form"
+Earn the "This Isn't Even My Final Form" Achievement |achieve 8121/8
+step
+Reference our _"Blue Response"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievements Guides\\Quests\\Pandaria\\Blue Response"
+Earn the "Blue Response" Achievement |achieve 8121/9
+step
+Reference our _"Platform Hero"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievements Guides\\Quests\\Pandaria\\Platform Hero"
+Earn the "Platform Hero" Achievement |achieve 8121/10
+step
+Reference our _"Speed Metal"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievements Guides\\Quests\\Pandaria\\Speed Metal"
+Earn the "Speed Metal" Achievement |achieve 8121/11
+step
+Reference our _"You Made Me Bleed My Own Blood"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievements Guides\\Quests\\Pandaria\\You Made Me Bleed My Own Blood"
+Earn the "You Made Me Bleed My Own Blood" Achievement |achieve 8121/12
+step
+Reference our _"For the Ward!"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievements Guides\\Quests\\Pandaria\\For the Ward!"
+Earn the "For the Ward!" Achievement |achieve 8121/13
+step
+Reference our _"Boop"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievements Guides\\Quests\\Pandaria\\Boop"
+Earn the "Boop" Achievement |achieve 8121/14
+step
+Reference the _"Our Powers Combined"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievements Guides\\Quests\\Pandaria\\Our Powers Combined"
+Earn the "Our Powers Combined" Achievement |achieve 8121/15
+step
+Reference our _"Direhorn in a China Shop"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievements Guides\\Quests\\Pandaria\\Direhorn in a China Shop"
+Earn the "Direhorn in a China Shop" Achievement |achieve 8121/16
+step
+Reference our _"Zandalari Library Card "_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievements Guides\\Quests\\Pandaria\\Zandalari Library Card"
+Earn the "Zandalari Library Card" Achievement |achieve 8121/17
+step
+_Congratulations!_
+You have earned the _One Step at a Time_ achievement
+]])
+ZGV.BETAEND()

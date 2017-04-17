@@ -43,6 +43,11 @@ ProcScore.KeywordsMerged={}
 for i,v in pairs(ProcScore.Keywords) do ProcScore.KeywordsMerged[i]=v end
 for i,v in pairs(ProcScore.KeywordsDynamic) do ProcScore.KeywordsMerged[i]=v end
 
+ProcScore.Patterns = {}
+ProcScore.PatternsDetails = {}
+ProcScore.Fallback = {}
+ProcScore.FallbackDetails = {}
+
 function ProcScore:Sanitize(data)
 	data = data:lower()
 	data = data:gsub("  "," ")
@@ -55,10 +60,10 @@ function ProcScore:Sanitize(data)
 end
 
 function ProcScore:PreparePatterns()
-	ProcScore.Patterns = {}
-	ProcScore.PatternsDetails = {}
-	ProcScore.Fallback = {}
-	ProcScore.FallbackDetails = {}
+	table.wipe(ProcScore.Patterns)
+	table.wipe(ProcScore.PatternsDetails)
+	table.wipe(ProcScore.Fallback)
+	table.wipe(ProcScore.FallbackDetails)
 	local function replace_placeholders(pattern)
 		pattern = pattern:gsub("%(", "%%(")
 		pattern = pattern:gsub("%)", "%%)")

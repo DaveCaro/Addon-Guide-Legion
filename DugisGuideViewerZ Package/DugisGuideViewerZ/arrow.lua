@@ -2146,6 +2146,10 @@ function DugisArrow:Initialize()
 	end
 	
 	function DGV:UNIT_SPELLCAST_SUCCEEDED(event, unit, spellName, spellRank, lineIdCounter, spellId)
+        if unit == "player" then
+            DugisGuideViewer:OnCastingSpell(spellId)
+        end
+    
 		if unit=="player" and DugisArrow.waypoints then
 			--DGV:DebugFormat("UNIT_SPELLCAST_SUCCEEDED", "spellName", spellName, "spellId", spellId)
 			for _, waypoint in pairs(DugisArrow.waypoints) do

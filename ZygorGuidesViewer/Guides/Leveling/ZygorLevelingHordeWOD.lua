@@ -7651,7 +7651,7 @@ turnin A Message of Terrible Import##38578 |goto Tanaan Jungle/0 47.3,70.5
 step
 Congratulations, you've completed the Tanaan Jungle Main Questline!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Rhe Loremaster\\Loremaster of Draenor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\The Loremaster\\Loremaster of Draenor",{
 condition_end="achieved(9923)",
 sugGroup="ACHIEVEMENTS\\Draenor Pathfinder",
 description="Complete the Draenor quest achievements.",

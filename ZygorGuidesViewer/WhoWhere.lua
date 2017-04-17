@@ -52,9 +52,9 @@ local function CalcThread()
 end
 
 function WW:FindNPC(typ,m,f,x,y)
-	if typ == "I" or ZGV.db.profile.findastro or not ZGV.db.profile.pathfinding then
+	if typ == "Innkeeper" or ZGV.db.profile.findastro or not ZGV.db.profile.pathfinding then
 		WW:FindNPC_Astro(typ)
-	else 
+	elseif typ then
 		WW:FindNPC_Rover(typ)
 	end
 end
@@ -69,7 +69,6 @@ end
 
 function WW:FindNPC_Rover(typ)
 	local parse=ZGV.NPCData.parseNPC
-	local allnpcdata = ZGV.NPCData.raw
 	local foundnpcs = {}
 	local npcid, npcdata, npcrawdata
 
@@ -87,10 +86,22 @@ function WW:FindNPC_Rover(typ)
 	local more_points = {}
 	for i=1,#foundnpcs do
 		local w=foundnpcs[i]
-		more_points[#more_points+1]={m=w.m,f=w.f,x=w.x,y=w.y,title=w.title}
+		more_points[#more_points+1]={m=w.m,f=w.f,x=w.x,y=w.y,title="Nearest "..typ.." #"..w.id}
 	end
 
 	LibRover:FindPath(0,0,0,0, b.m,0,b.x,b.y, ZGV.Pointer.PathFoundHandler, {foundnpcs=foundnpcs, direct=not ZGV.db.profile.pathfinding, multiple_ends=more_points })
+	LibRover:UpdateNow()
+end
+
+function WW:Find_Taxi()
+	local cn,cont = GetCurrentMapContinent()
+	ZGV.LibTaxi:ClearContinentKnowledge(cn,"taxi")
+	local taxis={}
+	for ni,node in pairs(LibRover.nodes.taxi) do
+		if node.c==cont then tinsert(taxis,{m=node.m,f=node.f,x=node.x,y=node.y,title=node.name,name=node.name,id=node.npcid,learnfpath=true}) end
+	end
+	local b=taxis[1]
+	LibRover:FindPath(0,0,0,0, b.m,0,b.x,b.y, ZGV.Pointer.PathFoundHandler, {foundnpcs=taxis, direct=not ZGV.db.profile.pathfinding, multiple_ends=taxis })
 	LibRover:UpdateNow(true)
 end
 

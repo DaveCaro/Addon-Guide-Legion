@@ -2427,14 +2427,13 @@ ZygorGuidesViewer:RegisterInclude("A_Baradin_Hold_Dailies", [[
 ]])
 
 ZygorGuidesViewer:RegisterInclude("A_Firelands_PreQuests", [[
-	step
 		Click the Hero's Call Board
 		|tip It's a big white stone hanging board with a gold lion head on it.
 		accept Hero's Call: Mount Hyjal!##27726 |goto Stormwind City 62.9,71.6
 	step
-		talk Cenarion Emissary Jademoon##15187 |goto Stormwind City 82.6,28.2
+		talk Cenarion Emissary Jademoon##15187 |goto Stormwind City/0 82.69,29.57
 		Ask her "_Send me to Moonglade._"
-		Teleport to Moonglade |goto Moonglade |noway |c
+		Teleport to Moonglade |goto Moonglade |noway |c |q 39865
 	step
 		talk Emissary Windsong##39865
 		turnin Hero's Call: Mount Hyjal!##27726 |goto Moonglade 45.5,44.9
@@ -2537,8 +2536,8 @@ ZygorGuidesViewer:RegisterInclude("A_Firelands_PreQuests", [[
 	step
 		Enter the cave |goto Mount Hyjal 52.5,17.3 < 10 |walk
 		talk Captain Saynna Stormrunner##40139
-		turnin A Prisoner of Interest##25324 |goto Mount Hyjal 56.8,18.8
-		accept Through the Dream##25325 |goto Mount Hyjal 56.8,18.8
+		turnin A Prisoner of Interest##25324 |goto Mount Hyjal 56.8,18.8 |indoors Hyjal Barrow Dens
+		accept Through the Dream##25325 |goto Mount Hyjal 56.8,18.8 |indoors Hyjal Barrow Dens
 	step
 		Leave the cave |goto Mount Hyjal 52.5,17.3 < 10 |walk
 		talk Alysra##40178
@@ -2624,30 +2623,30 @@ ZygorGuidesViewer:RegisterInclude("A_Firelands_PreQuests", [[
 	step
 		Enter the cave |goto Mount Hyjal 27.0,36.0 < 10 |walk
 		talk Kristoff Manheim##39797
-		accept Gar'gol's Gotta Go##25328 |goto Mount Hyjal 27.2,40.8
+		accept Gar'gol's Gotta Go##25328 |goto Mount Hyjal 27.2,40.8 |indoors Gar'gol's Hovel
 	step
 		click Gar'gol's Personal Treasure Chest##10
-		collect Rusted Skull Key##52789 |q Gar'gol's Gotta Go##25328/1 |goto Mount Hyjal 26.5,38.5
+		collect Rusted Skull Key##52789 |q Gar'gol's Gotta Go##25328/1 |goto Mount Hyjal 26.5,38.5 |indoors Gar'gol's Hovel
 	step
 		click The Twilight Apocrypha##470
-		turnin Mastering Puppets##25301 |goto Mount Hyjal 25.8,41.7
-		accept Elementary!##25303 |goto Mount Hyjal 25.8,41.7
+		turnin Mastering Puppets##25301 |goto Mount Hyjal 25.8,41.7 |indoors Gar'gol's Hovel
+		accept Elementary!##25303 |goto Mount Hyjal 25.8,41.7 |indoors Gar'gol's Hovel
 	step
 		clicknpc Crucible of Fire##39730
-		Activate the Crucible of Fire |q Elementary!##25303/3 |goto Mount Hyjal 26.0,41.8
+		Activate the Crucible of Fire |q Elementary!##25303/3 |goto Mount Hyjal/0 26.0,41.8 |indoors Gar'gol's Hovel
 	step
 		clicknpc Crucible of Earth##39737
-		Activate the Crucible of Earth |q Elementary!##25303/1 |goto Mount Hyjal 25.7,41.7
+		Activate the Crucible of Earth |q Elementary!##25303/1 |goto 25.7,41.7 |indoors Gar'gol's Hovel
 	step
 		clicknpc Crucible of Air##39736
-		Activate the Crucible of Air |q Elementary!##25303/2 |goto Mount Hyjal 25.8,41.9
+		Activate the Crucible of Air |q Elementary!##25303/2 |goto 25.8,41.9 |indoors Gar'gol's Hovel
 	step
 		clicknpc Crucible of Water##39738
-		Activate the Crucible of Water |q Elementary!##25303/4 |goto Mount Hyjal 26.0,41.6
+		Activate the Crucible of Water |q Elementary!##25303/4 |goto 26.0,41.6 |indoors Gar'gol's Hovel
 	step
 		click The Twilight Apocrypha##470
-		turnin Elementary!##25303 |goto Mount Hyjal 25.8,41.7
-		accept Return to Duskwhisper##25312 |goto Mount Hyjal 25.8,41.7
+		turnin Elementary!##25303 |goto 25.8,41.7 |indoors Gar'gol's Hovel
+		accept Return to Duskwhisper##25312 |goto 25.8,41.7 |indoors Gar'gol's Hovel
 	step
 		While inside the cave do the following
 		kill Hovel Brute##39642+, Hovel Shadowcaster##39643+
@@ -2658,10 +2657,10 @@ ZygorGuidesViewer:RegisterInclude("A_Firelands_PreQuests", [[
 		modelnpc Twilight Servitor##39644
 	step
 		talk Kristoff Manheim##39797
-		turnin Gar'gol's Gotta Go##25328 |goto Mount Hyjal 27.2,40.8
-		accept Get Me Outta Here!##25332 |goto Mount Hyjal 27.2,40.8
+		turnin Gar'gol's Gotta Go##25328 |goto Mount Hyjal 27.2,40.8 |indoors Gar'gol's Hovel
+		accept Get Me Outta Here!##25332 |goto Mount Hyjal 27.2,40.8 |indoors Gar'gol's Hovel
 	step
-		Escort Kristoff Out |q Get Me Outta Here!##25332/1 |goto Mount Hyjal 27.1,36.0
+		Escort Kristoff Out |q Get Me Outta Here!##25332/1 |goto Mount Hyjal 27.1,36.0 |indoors Gar'gol's Hovel
 	step
 		talk Royce Duskwhisper##39435
 		turnin Return to Duskwhisper##25312 |goto Mount Hyjal 28.6,30.2
@@ -2698,13 +2697,13 @@ ZygorGuidesViewer:RegisterInclude("A_Firelands_PreQuests", [[
 	stickystep "crates"
 	step
 		Do the following in the Firelands Forgeworks
-		kill 12 Dark Iron Laborer##40838 |q Rage of the Wolf Ancient##25576/1
+		kill 12 Dark Iron Laborer##40838 |q Rage of the Wolf Ancient##25576/1 |goto Mount Hyjal/0 28.89,40.29
 		kill Searing Guardian##40841+
-		collect 8 Smoldering Core##55123 |n
+		collect 8 Smoldering Core##55123 |condition itemcount(55123) >= 8 |q 25577
 	step "cores"
 		Use your Smoldering Cores next to Twilight Anvils |use Smoldering Core##55123 
 		|tip They are small anvils sitting on the ground around this area.
-		Destroy #8# Smoldering Cores |q Crushing the Cores##25577/1
+		Destroy #8# Smoldering Cores |q Crushing the Cores##25577/1 |goto 27.67,42.92
 	step "crates"
 		Click Twilight Arms Crates
 		|tip They look like wooden boxes sitting on the ground around this area.
@@ -2718,7 +2717,7 @@ ZygorGuidesViewer:RegisterInclude("A_Firelands_PreQuests", [[
 		turnin Crushing the Cores##25577 |goto Mount Hyjal 26.3,41.9
 		accept Cindermaul, the Portal Master##25599 |goto Mount Hyjal 26.3,41.9
 	step
-		kill Cindermaul##40844 |q Cindermaul, the Portal Master##25599/1
+		kill Cindermaul##40844 |q Cindermaul, the Portal Master##25599/1 |goto Mount Hyjal 30.7,41.7
 		click Battered Stone Chest##1387
 		collect Tome of Openings##55136 |q Cindermaul, the Portal Master##25599/2 |goto Mount Hyjal 30.7,41.7
 	step

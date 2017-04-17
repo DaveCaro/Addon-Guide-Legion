@@ -24,7 +24,7 @@ N Examine the Bag of Jewels |QID|40530.6| |N|Click Bag of Jewels (49.50,55.60)| 
 N (npc:93526) |QID|40530.7| |N|Speak to (npc:93526) in {Cartier & Co. Fine Jewelry} (40.27,34.68)| |Z|1014 10| |NPC|93526|
 T An Eye for Detail |QID|40530| |N|(npc:93526) in {Cartier & Co. Fine Jewelry} (40.27,34.68)| |Z|1014 10| |NPC|93526|
 A Swift Vengeance |QID|40531| |N|(npc:93526) in {Cartier & Co. Fine Jewelry} (40.27,34.68)| |Z|1014 10| |NPC|93526|
-N (npc:97359) |QID|40531| |N|Speak to (npc:97359) and tell him "I want to hire a personal bodyguard."<br/><br/>This will cost 5 gold, but will prevent other players from attacking you, for 5 minutes, in this PvP area. (68.99,58.38)| |Z|1014 11| |NPC|97359| |BUFF|Interface\Icons\inv_offhand_dalaran_d_01|
+N (npc:97359) |QID|40531| |N|Speak to (npc:97359) and tell him "I want to hire a personal bodyguard."<br/><br/>This will cost 5 gold, but will prevent other players from attacking you, for 5 minutes, in this PvP area. (68.99,58.38)| |Z|1014 11| |NPC|97359| |BUFF|237433|
 N (npc:100671) |QID|40531.1| |N|Speak to (npc:100671) and he will turn hostile, kill him and collect the (item:132259) (49.37,65.62)| |Z|1014 11| |NPC|100671|
 T Swift Vengeance |QID|40531| |N|(npc:93526) in {Cartier & Co. Fine Jewelry} (40.27,34.68)| |Z|1014 10| |NPC|93526|
 A Making the Cut |N|Choose the Design to Learn, you can only choose one of the gem  (40.27,34.68)| |Z|1014 10| |NPC|93526|  |OID|40532, 40533, 40534|
@@ -87,7 +87,7 @@ N Level 104 Required |N|You need to be at least level 104 to continue the guide|
 A Hidden Intentions |QID|40539| |N|(npc:100939) in {Dalaran}, he's outside the building. (38.96,35.83)| |Z|1014 10| |NPC|100939|
 A Lapidary Lessons |QID|40538| |N|(npc:93526) in {Cartier & Co. Fine Jewelry} (40.27,34.68)| |Z|1014 10| |NPC|93526|
 N (npc:93526) |QID|40539.1| |N|Speak to (npc:93526) and ask Tiffany Cartier where to get diamonds in {Cartier & Co. Fine Jewelry} (40.27,34.68)| |Z|1014 10| |NPC|93526|
-N (npc:97359) |QID|40539| |N|Speak to (npc:97359) and tell him "I want to hire a personal bodyguard."<br/><br/>This will cost 5 gold, but will prevent other players from attacking you, for 5 minutes, in this PvP area. (68.99,58.38)| |Z|1014 11| |NPC|97359| |BUFF|Interface\Icons\inv_offhand_dalaran_d_01|
+N (npc:97359) |QID|40539| |N|Speak to (npc:97359) and tell him "I want to hire a personal bodyguard."<br/><br/>This will cost 5 gold, but will prevent other players from attacking you, for 5 minutes, in this PvP area. (68.99,58.38)| |Z|1014 11| |NPC|97359| |BUFF|237433|
 N (npc:101492) |QID|40539.2| |N|Speak to (npc:101492) to ask around the Underbelly for Diamonds (59.77,39.48) (71.41,19.60)| |Z|1014 11| |NPC|101492|
 N (npc:101492) |QID|40539| |N|Speak to (npc:101492)<br/><b>Tell her "(Aggressive) 250 gold is outrageous for one diamond! I'll give you 10."<br/><b>Tell her "I'll look into doing that favor for you."<br/><br/>Tick to continue (71.32,19.67)| |Z|1014 11| |NPC|
 K (npc:97756) |QID|40539.3| |N|Kill (npc:97756) in the {The Underbelly} (67.16,25.53) (57.84,50.87) (60.41,78.22)| |Z|1014 11| |NPC|97756|

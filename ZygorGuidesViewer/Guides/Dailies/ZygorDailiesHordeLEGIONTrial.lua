@@ -145,6 +145,16 @@ label "Shellback turtles"
 kill 6 Wandering Shellback##111633 |q 43805/2 |goto Eye of Azshara Map/0 52.18,63.34
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41290
+Follow the path |goto Azsuna/0 50.27,30.51 < 30 |only if walking
+Follow the path |goto 52.80,33.91 < 30 |only if walking
+accept Aqueous Aethril##41290 |goto 54.44,36.27
+|tip You will accept this quest automatically.
+step
+click Aqueous Aethril##195114
+collect 12 Aqueous Aethril##135480 |q 41290/1 |goto 54.44,36.27
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42165
 accept Azsuna Specimens##42165 |goto Azsuna/0 34.02,45.19
 |tip You will accept this quest automatically.
@@ -215,6 +225,21 @@ click Brimstone Destroyer Core##195122
 Brimstone Destroyer Core mined |q 41482/1 |goto 63.80,29.46
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41483
+Follow the path |goto Azsuna/0 47.60,28.99 < 30 |only if walking
+Follow the path |goto 42.72,33.07 < 30 |only if walking
+Follow the path |goto 41.20,35.34 < 30 |only if walking
+Follow the path up |goto 39.19,32.69 < 15 |only if walking
+Follow the path up |goto 37.18,30.67 < 15 |only if walking
+Follow the path |goto 38.85,27.87 < 20 |only if walking
+accept Brimstone Destroyer##41483 |goto 38.53,25.42
+|tip You will accept this quest automatically.
+step
+kill Brimstone Destroyer##93237
+click Brimstone Destroyer Core##195122
+Brimstone Destroyer Core mined |q 41483/1 |goto 38.53,25.42
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42022
 Follow the path |goto Azsuna/0 46.20,44.55 < 30 |only if walking
 Follow the path |goto Azsuna/0 48.96,42.73 < 30 |only if walking
@@ -226,6 +251,30 @@ Kill enemies around this area
 clicknpc Bound Citizen##91449+
 |tip They look like night elves pinned to walls by spears around this area.
 Defend Against the Hatecoil |q 42022/1 |goto 54.28,44.20
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46146
+Follow the path |goto Azsuna/0 45.41,44.47
+accept The Burning Shores##46146 |goto 44.38,49.78
+|tip You will accept this quest automatically.
+stickystart "shores"
+step
+kill Hatefire the Burning##118827
+Defeat Hatefire the Burning |q 46146/2 |goto 44.38,49.78
+step
+label "shores"
+kill Felsiege Infernal##118816+, Doomflame Infernal##121045+, Blazing Infernal##118821+, Felwing Terror##118836+
+Kill #10# demons |q 46146/1 |goto 44.38,49.78
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41529
+Follow the path |goto Azsuna/0 56.69,56.24 < 30 |only if walking
+Follow the path |goto 58.50,51.43 < 25 |only if walking
+accept Bushy Aethril##41529 |goto 62.25,49.27
+|tip You will accept this quest automatically.
+step
+click Bushy Aethril##0
+collect 10 Bushy Aethril##140951 |q 41529/1 |goto 62.25,49.27
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43193
@@ -292,6 +341,18 @@ step
 kill Chief Treasurer Jabrill##109677 |q 43121/1 |goto 59.29,77.04
 |next "Court_Of_Farondis_WQ"
 step
+label quest-44187
+Follow the path |goto Azsuna/0 47.04,73.14 < 25 |only if walking
+Follow the path |goto 44.01,77.88 < 15 |only if walking
+Follow the path |goto 45.31,80.99 < 25 |only if walking
+Follow the path up |goto 46.73,80.13 < 25 |only if walking
+accept DANGER: Cinderwing##44187 |goto 46.84,77.70
+|tip You will accept this quest automatically.
+step
+kill Cinderwing##111674 |q 44187/1 |goto 46.84,77.70
+|tip Cinderwing is a rare elite. You will most likely need to find a group.
+|next "Court_Of_Farondis_WQ"
+step
 label quest-43175
 Follow the path |goto Azsuna/0 55.85,60.01 < 25 |only if walking
 Drop down |goto 56.09,62.29 < 25 |only if walking
@@ -333,6 +394,17 @@ accept DANGER: Jade Darkhaven##44190 |goto 40.37,76.85
 step
 kill Jade Darkhaven##34914 |q 44190/1 |goto 40.30,76.57
 |tip He is all the way at the top of the tower.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44191
+Follow the path |goto Azsuna/0 47.28,73.05 < 25 |only if walking
+Follow the path |goto 44.15,77.06 < 15 |only if walking
+Follow the path |goto 44.82,81.62 < 20 |only if walking
+Follow the path |goto 45.96,79.55 < 25 |only if walking
+accept DANGER: Karthax##44191 |goto 45.48,77.00
+|tip You will accept this quest automatically.
+step
+kill Karthax##111731 |q 44191/1 |goto 45.48,77.00
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43798
@@ -531,6 +603,14 @@ kill Azsuna Lion Seal##89013+
 collect 8 Fatty Lion Seal Skin##134807 |q 41323/1 |goto Azsuna/0 30.48,34.10
 |next "Court_Of_Farondis_WQ"
 step
+label quest-46161
+accept Felcaller Thalezra##46161 |goto Azsuna/0 49.16,44.02
+|tip You will accept this quest automatically.
+step
+kill Felcaller Thalezra##117056
+Defeat Felcaller Thalezra |q 46161/1 |goto Azsuna/0 49.16,44.02
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41563
 Carefully cross the rocks |goto Azsuna/0 45.60,72.22 < 30 |only if walking
 Follow the path |goto 43.53,71.70 < 30 |only if walking
@@ -556,6 +636,26 @@ kill Felhide Gargantuan##103675
 Skin the Felhide Gargantuan |q 41564/1 |goto Azsuna/0 29.83,57.97
 |next "Court_Of_Farondis_WQ"
 step
+label quest-44044
+accept Felled Experiment##44044 |goto 43.30,72.05
+|tip You will accept this quest automatically.
+step
+kill Experimental Fel Corruptor##111763+ |q 44044/1 |goto 43.30,72.05
+kill Beguiled Inquisitor##111752+ |q 44044/2 |goto 43.30,72.05
+|tip These mobs are elite. You might need some help.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44050
+Follow the path |goto Azsuna/0 47.09,73.16 < 25 |only if walking
+Follow the path up |goto 41.64,73.61 < 20 |only if walking
+accept The Felsworn Must Fall##44050 |goto 41.09,75.75
+|tip You will accept this quest automatically.
+step
+kill Felsworn Adept##102059+ |q 44050/1 |goto 41.09,75.75
+kill Felsworn Betrayer##103972+ |q 44050/2 |goto 41.09,75.75
+kill Felsworn Defiler##111929+ |q 44050/3 |goto 41.09,75.75
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41514
 Follow the path |goto Azsuna/0 65.36,28.86 < 30 |only if walking
 accept Felwort##41514 |goto 68.37,28.92
@@ -568,6 +668,17 @@ accept Felwort##41513 |goto Azsuna/0 40.60,46.73
 step
 click Felwort##195114
 collect Felwort |q 41513/1 |goto Azsuna/0 40.70,46.53
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41515
+Follow the path |goto Azsuna/0 46.25,44.65 < 30 |only if walking
+Follow the path |goto 46.28,51.59 < 30 |only if walking
+Cross the bridge |goto 48.32,54.49 < 20 |only if walking
+accept Felwort##41515 |goto 48.54,57.05
+|tip You will accept this quest automatically.
+step
+click Felwort##195114
+Felwort gathered |q 41515/1 |goto 48.54,57.05
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41437
@@ -734,6 +845,26 @@ kill Oublion##89350
 |tip Switch to fighting Queen Kraklaa when he casts the green bubble around himself.
 kill Queen Kraklaa##89287
 Kill Oublion |q 42021/4 |goto 63.86,63.55
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41528
+Follow the path |goto Azsuna/0 42.00,11.31 < 30 |only if walking
+accept Iridescent Aethril##41528 |goto 43.95,10.82
+|tip You will accept this quest automatically.
+step
+click Iridescent Aethril##195114
+collect 10 Iridescent  Aethril##140950 |q 41528/1 |goto 45.46,10.21
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46165
+Follow the path |goto Azsuna/0 56.88,57.18 < 25 |only if walking
+Follow the path |goto 58.34,51.57 < 20 |only if walking
+Follow the path |goto 61.02,50.76 < 25 |only if walking
+accept Kazruul##46165 |goto 62.69,46.32
+|tip You will accept this quest automatically.
+step
+kill Kazruul##118012
+Defeat Kazruul |q 46165/1 |goto 62.69,46.32
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42101
@@ -969,6 +1100,21 @@ Kill enemies around this area
 Slay #10# Eredar at Soul Engine: Apocalypse |q 42275/1 |goto 32.03,52.59
 |next "Court_Of_Farondis_WQ"
 step
+label quest-46116
+Follow the path |goto Azsuna/0 64.49,26.06 < 25 |only if walking
+accept On Unhallowed Grounds##46116goto 64.03,19.55
+|tip You will accept this quest automatically.
+stickystart "unhallowed"
+step
+kill Corruptor Hel'drath##118753
+Defeat Corruptor Hel'drath |q 46116/2 |goto 63.60,18.60
+step
+label "unhallowed"
+kill Felblade Devastator##118782+, Corrupted Brute##116664+, Dreadflame Corruptor##118783+
+click Fel Corruptor
+Halt the corruption efforts |q 46116/1 |goto 64.03,19.55
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41896
 Follow the path |goto Azsuna/0 40.60,12.39 < 30 |only if walking
 Follow the path |goto Azsuna/0 38.93,15.22 < 30 |only if walking
@@ -1052,6 +1198,15 @@ kill Pridelord Meowl##90901 |q 42123/2 |goto 56.07,29.02
 step
 label "Llothien_Prowlers"
 kill 10 Llothien Prowler##90313+ |q 42123/1 |goto 54.52,29.01
+|next "Court_Of_Farondis_WQ"
+step
+label quest-45058
+accept Release the Wardens!##45058 |goto Azsuna/0 60.15,24.60
+|tip You will accept this quest automatically.
+step
+click Captured Scalewarden##115969
+kill Wrathguard Doomblade##116026+, Felhound##116027+, Abyssal Devourer##116025+
+Repel the Legion forces |q 45058/1 |goto 60.15,24.60
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41324

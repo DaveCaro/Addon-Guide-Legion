@@ -180,7 +180,7 @@ function Mailtools:AddItemToIncoming(mi_mail,mi_slot,mi_id,mi_name,mi_icon,mi_co
 			id = mi_id,
 			name = mi_name,
 			icon = mi_icon,
-			count = mi_count,
+			count = mi_count or 0,
 			gold = mi_gold,
 			source = mi_source,
 			selected = selected,
@@ -194,10 +194,10 @@ function Mailtools:AddItemToIncoming(mi_mail,mi_slot,mi_id,mi_name,mi_icon,mi_co
 		self.InboxItems[newslot].position[mi_mail][mi_slot] = mi_count or 0
 		self.InboxItems[newslot].count = mi_count or 0
 	else
-		self.InboxItems[existing].count = self.InboxItems[existing].count + mi_count
+		self.InboxItems[existing].count = self.InboxItems[existing].count + (mi_count or 0)
 		self.InboxItems[existing].gold = self.InboxItems[existing].gold + mi_gold
 		self.InboxItems[existing].position[mi_mail] = self.InboxItems[existing].position[mi_mail] or {}
-		self.InboxItems[existing].position[mi_mail][mi_slot] = mi_count
+		self.InboxItems[existing].position[mi_mail][mi_slot] = (mi_count or 0)
 	end
 end
 

@@ -17,10 +17,16 @@ end
 -- @param mapID - map id foe checking
 -- @return mapID - continent mapID if exists, or current map
 function HBD:GetMapContinent(mapID)
+	-- overrides. UGLY!!!
+	if mapID==1037 then return 1007 end
 	local hbd_continent
 	if mapData[mapID] then hbd_continent = mapData[mapID].C end
 
 	return HBD.Continents[hbd_continent] or mapID
+end
+
+function HBD:FixPhasedContinents()
+	mapData[1037].C = 8
 end
 
 local PI2 = math.pi * 2

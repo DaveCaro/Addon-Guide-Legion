@@ -1136,7 +1136,7 @@ function IL.ProcessItemLink(itemlink,keepDecor,...) --  (warning, potential smal
 	-- Verify link sanity
 	if tonumber(itemlink) then itemlink=("item:%d::::::::%d"):format(tonumber(itemlink),level) end
 	local prefix,itemstring,suffix = itemlink:match("(.*)item:([0-9-:]*)(.*)")
-	if not itemstring then return itemlink end
+	if not itemstring then return itemlink,"BAD" end
 
 	-- Prepare data
 	local tab={strsplit(":",itemstring)}

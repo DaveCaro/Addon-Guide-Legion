@@ -181,7 +181,7 @@ data.taxipoints = {
 					{name="Sunveil Excursion",faction="H",npc="Salena",npcid=43114,x=50.9,y=72.9,cond_fun=function() return UnitLevel('player')<90 or LibRover:HasBuff("Time Travelling",176111) end},
 					{name="Surwich",faction="A",npc="Graham McAllister",npcid=43107,x=47.1,y=89.3,cond_fun=function() return UnitLevel('player')<90 or LibRover:HasBuff("Time Travelling",176111) end},
 					{name="Shattered Landing",faction="H",npc="Ameri Windblade",npcid=85734,x=72.9,y=48.6,cond_fun=function() return UnitLevel('player')>89 and not LibRover:HasBuff("Time Travelling",176111) end},
-					{name="Shattered Beachhead",faction="A",npc="Araazi",npcid=85731,x=67.6,y=28.0,cond_fun=function() return UnitLevel('player')>89 and not LibRover:HasBuff("Time Travelling",176111) end}, -- ally iron invasion fp. needs testing
+					--{name="Shattered Beachhead",faction="A",npc="Araazi",npcid=85731,x=67.6,y=28.0,cond_fun=function() return UnitLevel('player')>89 and not LibRover:HasBuff("Time Travelling",176111) end}, -- ally iron invasion fp. needs testing  -- may not even be there anymore...
 		},
 		['Burning Steppes']={
 					{name="Chiselgrip",faction="B",npc="Grimly Singefeather",npcid=48321,x=46.2,y=41.8},
@@ -656,7 +656,10 @@ data.taxipoints = {
 			{name="Watchers' Aerie",faction="B",npc="Trainee Starwhisper",npcid=111418,x=51.75,y=82.11},
 		},
 		['Broken Shore']={
-			{name="Illidari Camp",faction="B",npc="Izal Whitemoon",npcid=111323,x=49.67,y=21.02},
+			{name="Vengeance Point",faction="B",npc="Izal Whitemoon",npcid=111323,x=49.67,y=21.02}, -- renamed in 7.2 from Illidari Camp
+			{name="Aalgen Point",faction="B",npc="Heidirk the Scalekeeper",npcid=120118,x=70.76,y=47.62},
+			{name="Deliverance Point",faction="B",npc="Illidari Calia",npcid=120272,x=45.16,y=64.12},
+			{name="Acherus: The Ebon Hold, Broken Shore",faction="B",class="DEATHKNIGHT", npc="Grimwing",npcid=93465,x=25.51,y=28.79,f=2},
 		},
 		['Dalaran L']={
 			{name="Dalaran",faction="B",npc="Aludane Whitecloud",npcid=96813,x=69.83,y=51.11},
@@ -5784,7 +5787,7 @@ data.flightcost = {
 			name = "Eye of Azshara, Azsuna",
 			neighbors = {
 				["308:-326"] = 0, -- Dalaran
-				["460:-252"] = 0, -- Illidari Camp, Broken Shore
+				["460:-252"] = 0, -- Vengeance Point, Broken Shore
 			},
 		},
 		{
@@ -5799,7 +5802,7 @@ data.flightcost = {
 				["308:-326"] = 64, -- Dalaran
 				["382:579"] = 58, -- Ironhorn Enclave, Highmountain
 				["449:319"] = 43, -- Crimson Thicket, Suramar
-				["460:-252"] = 0, -- Illidari Camp, Broken Shore
+				["460:-252"] = 0, -- Vengeance Point, Broken Shore
 			},
 		},
 		{
@@ -5849,8 +5852,9 @@ data.flightcost = {
 				["152:004"] = 52, -- Felblaze Ingress, Azsuna
 				["246:-913"] = 0, -- Eye of Azshara, Azsuna
 				["254:253"] = 64, -- Meredil, Suramar
+				["439:-511"] = 0, -- Deliverance Point, Broken Shore
 				["449:319"] = 77, -- Crimson Thicket, Suramar
-				["460:-252"] = 0, -- Illidari Camp, Broken Shore
+				["460:-252"] = 0, -- Vengeance Point, Broken Shore
 				["599:296"] = 96, -- Hafr Fjall, Stormheim
 			},
 		},
@@ -5913,6 +5917,15 @@ data.flightcost = {
 			},
 		},
 		{
+			tag = "439:-511",
+			name = "Deliverance Point, Broken Shore",
+			neighbors = {
+				["308:-326"] = 0, -- Dalaran
+				["460:-252"] = 0, -- Vengeance Point, Broken Shore
+				["555:-412"] = 0, -- Aalgen Point, Broken Shore
+			},
+		},
+		{
 			tag = "449:319",
 			name = "Crimson Thicket, Suramar",
 			neighbors = {
@@ -5920,10 +5933,11 @@ data.flightcost = {
 				["303:571"] = 55, -- Obsidian Overlook, Highmountain
 				["308:-326"] = 77, -- Dalaran
 				["382:579"] = 77, -- Ironhorn Enclave, Highmountain
-				["460:-252"] = 0, -- Illidari Camp, Broken Shore
+				["460:-252"] = 0, -- Vengeance Point, Broken Shore
 				["477:509"] = 45, -- Lorna's Watch, Stormheim
 				["528:551"] = 38, -- Cullen's Post, Stormheim
 				["599:296"] = 48, -- Hafr Fjall, Stormheim
+				["676:-462"] = 0, -- Acherus: The Ebon Hold
 			},
 		},
 		{
@@ -5939,13 +5953,16 @@ data.flightcost = {
 		},
 		{
 			tag = "460:-252",
-			name = "Illidari Camp, Broken Shore",
+			name = "Vengeance Point, Broken Shore",
 			neighbors = {
 				["246:-913"] = 0, -- Eye of Azshara, Azsuna
 				["254:253"] = 0, -- Meredil, Suramar
 				["308:-326"] = 0, -- Dalaran
+				["439:-511"] = 0, -- Deliverance Point, Broken Shore
 				["449:319"] = 0, -- Crimson Thicket, Suramar
+				["555:-412"] = 0, -- Aalgen Point, Broken Shore
 				["599:296"] = 0, -- Hafr Fjall, Stormheim
+				["676:-462"] = 0, -- Acherus: The Ebon Hold
 			},
 		},
 		{
@@ -5986,6 +6003,15 @@ data.flightcost = {
 			},
 		},
 		{
+			tag = "555:-412",
+			name = "Aalgen Point, Broken Shore",
+			neighbors = {
+				["439:-511"] = 0, -- Deliverance Point, Broken Shore
+				["460:-252"] = 0, -- Vengeance Point, Broken Shore
+				["676:-462"] = 0, -- Acherus: The Ebon Hold
+			},
+		},
+		{
 			tag = "576:774",
 			name = "Stormtorn Foothills, Stormheim",
 			neighbors = {
@@ -6015,10 +6041,11 @@ data.flightcost = {
 			neighbors = {
 				["308:-326"] = 96, -- Dalaran
 				["449:319"] = 48, -- Crimson Thicket, Suramar
-				["460:-252"] = 0, -- Illidari Camp, Broken Shore
+				["460:-252"] = 0, -- Vengeance Point, Broken Shore
 				["477:509"] = 46, -- Lorna's Watch, Stormheim
 				["593:427"] = 22, -- Dreadwake's Landing, Stormheim
 				["634:626"] = 38, -- Valdisdall, Stormheim
+				["676:-462"] = 0, -- Acherus: The Ebon Hold
 				["712:546"] = 41, -- Greywatch, Stormheim
 			},
 		},
@@ -6034,6 +6061,16 @@ data.flightcost = {
 				["599:296"] = 38, -- Hafr Fjall, Stormheim
 				["712:546"] = 24, -- Greywatch, Stormheim
 				["834:992"] = 62, -- Shield's Rest, Stormheim
+			},
+		},
+		{
+			tag = "676:-462",
+			name = "Acherus: The Ebon Hold, Broken Shore",
+			neighbors = {
+				["449:319"] = 0, -- Crimson Thicket, Suramar
+				["460:-252"] = 0, -- Vengeance Point, Broken Shore
+				["555:-412"] = 0, -- Aalgen Point, Broken Shore
+				["599:296"] = 0, -- Hafr Fjall, Stormheim
 			},
 		},
 		{

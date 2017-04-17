@@ -262,6 +262,9 @@ local function LoadSettings()
     
     DGV_HIDE_MODELS_IN_WORLDMAP = 80
     DGV_AUTO_MOUNT = 81
+    DGV_ENABLED_MAPPREVIEW = 82
+    
+    DGV_DISABLE_QUICK_SETTINGS = 83
 
     
 	--Sliders
@@ -275,6 +278,7 @@ local function LoadSettings()
 	DGV_ITEMBUTTONSCALE = 206
 	DGV_JOURNALFRAMEBUTTONSCALE = 207
 	DGV_SMALLFRAME_STEPS = 208
+	DGV_MOUNT_DELAY = 209
 	
 	--Dropdowns
 	DGV_GUIDEDIFFICULTY = 100
@@ -315,7 +319,7 @@ local function LoadSettings()
 					SettingsRevision = 0,
 					WatchFrameSnapped = true,
 					GuideOn = true,
-					sz = 81, --Num check boxes
+					sz = 83, --Num check boxes
 					[DGV_QUESTLEVELON]			= { category = "Other",	text = "Display Quest Level", 	checked = false,	tooltip = "Show the quest level on the large and small frames", module = "Guides"},
 					[DGV_QUESTCOLORON] 		= { category = "Other",	text = "Color Code Quest", 	checked = true,		tooltip = "Color code quest against your character's level", module = "Guides"},
 					[DGV_LOCKSMALLFRAME] 		= { category = "Frames",	text = "Lock Small Frame", 	checked = false,	tooltip = "Lock small frame into place", module = "SmallFrame"},
@@ -360,9 +364,11 @@ local function LoadSettings()
 					[DGV_ENABLENPCNAMEDB]		= { category = "Memory",	text = "NPC Name Database",	checked = true,		tooltip = "Provides localized NPC names. Required for target button.", module = "Disabled"},
 					[DGV_ENABLEQUESTLEVELDB]		= { category = "Memory",	text = "Quest Level Database",	checked = true,		tooltip = "Shows minimum level required for quests.\n\nAlso used for color coding the quests.", module = "ReqLevel"},
 					[DGV_UNLOADMODULES]		= { category = "Memory",	text = "Unload Modules",	checked = false,	tooltip = "Unloading modules will allow the addon to run on low memory setting in Essential Mode but will require a UI reload to return back to normal. ", module = "Guides"},
-					[DGV_MAPPREVIEWHIDEBORDER]	= { category = "Map Preview",	text = "Hide Border",		checked = true,		tooltip = "Hides the minimized map border when map preview is on.",},
+					[DGV_ENABLED_MAPPREVIEW]	= { category = "Map Preview",	text = "Enabled Map Preview",		checked = true,		tooltip = "",},
+                    [DGV_MAPPREVIEWHIDEBORDER]	= { category = "Map Preview",	text = "Hide Border",		checked = true,		tooltip = "Hides the minimized map border when map preview is on.",},
 					[DGV_AUTOQUESTITEMLOOT]	= { category = "Questing",	text = "Auto Loot Quest Item",	checked = true,		tooltip = "Automatically loot quest items.",},
 					[DGV_ACCOUNTWIDEACH]		= { category = "Other",text = "Account Wide Achievement",	checked = false,		tooltip = "Detects account wide achievements completion.", module = "Guides"},
+					[DGV_DISABLE_QUICK_SETTINGS]		= { category = "Other",text = "Disable Quick Settings Under "..[[|T]]..DugisGuideViewer.ARTWORK_PATH.."iconbutton"..[[:20:20|t]].."Icon",	checked = false,		tooltip = "", module = "Guides"},
 					[DGV_AUTO_MOUNT]		= { category = "Auto Mount", text = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0:0:0:-1|tEnabled auto mount",	checked = false,		tooltip = "Automatically mounts the fastest available mount.", module = "GearAdvisor"},
 					[DGV_EMBEDDEDTOOLTIP]		= { category = "Display",	text = "Embedded Tooltip",	checked = true,	tooltip = "Displays tooltip information under guide step", module = "Guides"},
 					[DGV_FIXEDWIDTHSMALL]		= { category = "Display",	text = "Fixed Width Small Frame",	checked = true,	tooltip = "Floating Small Frame won't adjust size horizontally and remain the same width as the Objective Tracker.", module = "Guides"},
@@ -562,6 +568,7 @@ local function LoadSettings()
 					[DGV_SHOWTOOLTIP]			= { category = "Tooltip",	text = "Auto Tooltip (%.1fs)", checked = 5, module = "SmallFrame", tooltip ="Amount of time the Tooltip will remain in view from the last mouse over on small frame" },
 					[DGV_MAPPREVIEWDURATION]	= {	category = "Map Preview",	text = "Duration (%.1fs)", checked = 5, tooltip = "Amount of time the Map Preview should remain in view (zero to disable).  Enabling this feature will automatically set the world map to windowed mode on reload." },
 					[DGV_SMALLFRAMEFONTSIZE]	= {	category = "Display",	text = "Small Frame Font Size (%.1f)", checked = 12, module = "SmallFrame", tooltip = "Size of the font in the Small Frame." },
+					[DGV_MOUNT_DELAY]	= {	category = "Auto Mount",	text = "Delay After Spell (%.1f)", checked = 6, tooltip = "" },
                     [DGV_DISPLAYGUIDESPROGRESS] 	= { category = "Display",	text = "Show Progress Bar", 	checked = true,	tooltip = "Show Progress Bar", module = "SmallFrame"},
                     [DGV_DISPLAYGUIDESPROGRESSTEXT] 	= { category = "Display",	text = "Show % text", 	checked = true, indent=true,	tooltip = "Show % text", module = "SmallFrame"},
                     [DGV_TARGETBUTTONSCALE]	    = {	category = "Target",	text = "Target Button Size (%.1f)", checked = 1, module = "Target", tooltip = "Size of the target button." },
@@ -687,8 +694,8 @@ function DugisGuideViewer:OnInitialize()
 		{ value = "Map Preview",text = L["Map Preview"],icon = nil },
 		{ value = "Target",		text = L["Target Button"],	icon = nil },
 		{ value = "Tooltip", 	text = L["Tooltip"], 	icon = nil },
-		{ value = "Gear Set",		text = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0:0:0:-1|t"..L["Gear Set"],		icon = nil },		
-		{ value = "Gear Scoring",		text = L["Gear Scoring"],		icon = nil },
+		{ value = "Gear Set",		text = L["Gear Set"],		icon = nil },		
+		{ value = "Gear Scoring",		text = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0:0:0:-1|t"..L["Gear Scoring"],		icon = nil },
 		{ value = "Gear Finder",		text = L["Gear Finder"],		icon = nil },
 		{ value = "Memory", 	text = L["Memory"], 	icon = nil },
 		{ value = "Auto Mount", 		text = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0:0:0:-1|t"..L["Auto Mount"], 	icon = nil },
@@ -1055,17 +1062,17 @@ function DugisGuideViewer:IsEquippedOneOfExcludedSets()
     local excludedSets = DugisGuideViewer.chardb["excludedSets"] or {}
     local equippedSets = {}
     
-    local fn = GetNumEquipmentSets or C_EquipmentSet.GetNumEquipmentSets
+    local fn = (C_EquipmentSet and C_EquipmentSet.GetNumEquipmentSets) or GetNumEquipmentSets
     LuaUtils:loop(fn(), function(i)  
         local name, icon, setID, isEquipped
        
-        if GetEquipmentSetInfo then
-           name, icon, setID, isEquipped = GetEquipmentSetInfo(i) 
-        else
+        if C_EquipmentSet and C_EquipmentSet.GetEquipmentSetIDs then
            --For 7.2.0
            
            local equipmentSetIDs = C_EquipmentSet.GetEquipmentSetIDs();
            name, icon, setID, isEquipped = C_EquipmentSet.GetEquipmentSetInfo(equipmentSetIDs[i])
+        else
+            name, icon, setID, isEquipped = GetEquipmentSetInfo(i) 
         end
        
         if isEquipped then
@@ -1087,16 +1094,16 @@ function DugisGuideViewer:UpdateSetsExcludingInSettings(frame)
     local function PrepareSetsForTree()
         local result = {}
         
-        local fn = GetNumEquipmentSets or C_EquipmentSet.GetNumEquipmentSets
+        local fn = (C_EquipmentSet and C_EquipmentSet.GetNumEquipmentSets) or GetNumEquipmentSets
         LuaUtils:loop(fn(), function(i)  
             local name, icon
             
-            if GetEquipmentSetInfo then
-                name, icon = GetEquipmentSetInfo(i) 
-            else
+            if C_EquipmentSet and C_EquipmentSet.GetEquipmentSetInfo then
                --For 7.2.0
                local equipmentSetIDs = C_EquipmentSet.GetEquipmentSetIDs();
                name, icon = C_EquipmentSet.GetEquipmentSetInfo(equipmentSetIDs[i])
+            else
+               name, icon = GetEquipmentSetInfo(i) 
             end
             
             if name ~= "Dugi Smart Set" then
@@ -1172,8 +1179,9 @@ function DugisGuideViewer:UpdateSetsExcludingInSettings(frame)
             hooksecurefunc("ModifyEquipmentSet", function() 
                 DugisGuideViewer:UpdateSetsExcludingInSettings(frame)
             end)
-        else
+        end
         
+        if C_EquipmentSet and C_EquipmentSet.SaveEquipmentSet then
             --For > 7.2.0
             if C_EquipmentSet.SaveEquipmentSet then
                 hooksecurefunc(C_EquipmentSet, "DeleteEquipmentSet", function() 
@@ -1390,13 +1398,13 @@ local function GetSettingsCategoryFrame(category, parent)
                 local name = C_MountJournal.GetMountInfoByID(node.nodeData.data.mountId)
                 local creatureDisplayID, descriptionText, sourceText, isSelfMount, mountType = C_MountJournal.GetMountInfoExtraByID(node.nodeData.data.mountId)
                 
-                if DugisGuideViewer.NPCJournalFrame and name and creatureDisplayID then
+                if DugisGuideViewer:IsModuleLoaded("NPCJournalFrame") and DugisGuideViewer.NPCJournalFrame and name and creatureDisplayID then
                 DugisGuideViewer.NPCJournalFrame:ShowGuideObjectPreview(name, creatureDisplayID)
                 end
             end
             
             local function onMountIconLeave(node)
-                if DugisGuideViewer.NPCJournalFrame.hintFrame then
+                if DugisGuideViewer:IsModuleLoaded("NPCJournalFrame") and DugisGuideViewer.NPCJournalFrame.hintFrame then
                     DugisGuideViewer.NPCJournalFrame.hintFrame.frame:Hide()   
                 end
             end
@@ -1418,10 +1426,17 @@ local function GetSettingsCategoryFrame(category, parent)
                 local secondContainer = {}
             
                 LuaUtils:foreach(C_MountJournal.GetMountIDs(), function(mountId)
-                    local name, _, icon, _, isUsable, _, isFavorite, _, _, _, isCollected = C_MountJournal.GetMountInfoByID(mountId)
+                    local name, _, icon, _, isUsable, _, isFavorite, isFactionSpecific, faction, _, isCollected = C_MountJournal.GetMountInfoByID(mountId)
                     local _, _, _, _, mountType = C_MountJournal.GetMountInfoExtraByID(mountId)
                     
-                    if isCollected --[[and isUsable]] then
+                                    
+                    local _, _, _, _, isUsable, _, isFavorite, _, _, _, isCollected, mountID = C_MountJournal.GetMountInfoByID(mountId)
+                    local _, _, _, _, mountTypeId = C_MountJournal.GetMountInfoExtraByID(mountId)       
+
+                    local englishFaction, localizedFaction = UnitFactionGroup("player")
+                    local rightFaction = (isFactionSpecific == false) or (englishFaction == "Alliance" and faction == 1) or (englishFaction == "Horde" and faction == 0)
+                    
+                    if isCollected and rightFaction then
                         --use requestedMountType for order purposes
                         local container = secondContainer
                         if requestedMountType ==  DugisGuideViewer:GetNamedMountType(mountType) then
@@ -1534,18 +1549,30 @@ local function GetSettingsCategoryFrame(category, parent)
                 end)
             end
             
-            local space = -63
-            local offset = -95
-            local iconOffset = 4
+            local space = -60
+            local offset = -92
+            local iconOffset = 3
             
             addText(space * 0 + offset, "flyingTitle", "Prefered mount in flyable areas")
             addIcon(space * 0 + offset - iconOffset, "flying")
             
-            addText(space * 1 + offset,"groundTitle", "Prefered mount in none-flyable areas")
+            addText(space * 1 + offset,"groundTitle", "Prefered mount in non-flyable areas")
             addIcon(space * 1 + offset - iconOffset,"ground")
             
             addText(space * 2 + offset, "aquaticTitle", "Prefered mount in water")
             addIcon(space * 2 + offset - iconOffset, "aquatic")
+            
+            local button = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
+            local btnText = L["Key Bindings"]
+            local fontwidth = DugisGuideViewer:GetFontWidth(btnText, "GameFontHighlight")
+            button:SetText(btnText)
+            button:SetWidth(fontwidth + 20)
+            button:SetHeight(22)
+            button:SetPoint("TOPLEFT", frame, "TOPLEFT", 16, -300)
+            button:RegisterForClicks("LeftButtonUP")
+            button:SetScript("OnClick", function() 
+                GUIUtils:ShowBindings("Dugi Guides")
+            end)
           
         end
         
@@ -2460,6 +2487,17 @@ local function GetSettingsCategoryFrame(category, parent)
 	end
 	if DGV_SmallFrameFontSize and DugisGuideViewer:IsModuleLoaded("SmallFrame") then
 		DGV_SmallFrameFontSize:SetValue(DugisGuideViewer:GetDB(DGV_SMALLFRAMEFONTSIZE) or 5)
+	end	
+    
+	--DGV_MOUNT_DELAY
+	if SettingsDB[DGV_MOUNT_DELAY].category==category and not DGV_MountDelay then
+		local slider = self:CreateSlider("DGV_MountDelay", frame, SettingsDB[DGV_MOUNT_DELAY].text, 
+			DGV_MOUNT_DELAY, 1, 20, 1, 8, "1", "20")
+		
+		slider:SetPoint("TOPLEFT", frame, "TOPLEFT", 23, -270)
+	end
+	if DGV_MountDelay then
+		DGV_MountDelay:SetValue(DugisGuideViewer:GetDB(DGV_MOUNT_DELAY) or 6)
 	end
     
 	--DGV_TARGETBUTTONSCALE
@@ -3415,6 +3453,22 @@ local function ToggleConfig()
     end
 end
 
+function DugisGuideViewer:ToogleAutoMount()
+    local newValue = not DugisGuideViewer:UserSetting(DGV_AUTO_MOUNT)
+    DugisGuideViewer:SetDB(newValue, DGV_AUTO_MOUNT)
+    local ChkBox = _G["DGV.ChkBox"..DGV_AUTO_MOUNT]	
+    if ChkBox then
+        ChkBox:SetChecked(newValue)
+    end
+    DugisGuideViewer:UpdateAutoMountEnabled()
+    
+    if DugisGuideViewer:UserSetting(DGV_AUTO_MOUNT) then
+        print("|cff11ff11Auto Mount is ON|r")
+    else
+        print("|cff11ff11Auto Mount is OFF|r")
+    end    
+end
+
 SLASH_DG1 = "/dugi"
 SlashCmdList["DG"] = function(msg)	
 	if msg == "" then 				-- "/dg" command
@@ -3424,6 +3478,7 @@ SlashCmdList["DG"] = function(msg)
 		print("|cff11ff11/dugi on - |rEnable Dugi Addon.")
 		print("|cff11ff11/dugi off - |rDisable Dugi Addon.")
 		print("|cff11ff11/dugi config - |rDisplay settings menu.")
+		print("|cff11ff11/dugi automount - |rToogle Auto Mount on/off.")
 	elseif msg  == "on" then
 		DugisGuideViewer:TurnOn()
 		DugisGuideViewer:UpdateIconStatus()
@@ -3443,12 +3498,7 @@ SlashCmdList["DG"] = function(msg)
         DugisGuideViewer.db:ResetProfile()
 		--DugisGuideViewer:ReloadModules()
 	elseif msg == "automount" then
-		local newValue = not DugisGuideViewer:UserSetting(DGV_AUTO_MOUNT)
-        DugisGuideViewer:SetDB(newValue, DGV_AUTO_MOUNT)
-		local ChkBox = _G["DGV.ChkBox"..DGV_AUTO_MOUNT]	
-        if ChkBox then
-            ChkBox:SetChecked(newValue)
-        end
+		DugisGuideViewer:ToogleAutoMount()
 	elseif msg == "dgr" then
 		DugisGuideViewer:ShowRecord()
 	elseif msg == "dgr limit" then
@@ -3479,7 +3529,16 @@ end
 
 function DugisGuideViewer:OnOff_OnClick(self, event)
 	if event == "LeftButton" then
-		DugisGuideViewer:ToggleOnOff()
+        if DugisGuideViewer:UserSetting(DGV_DISABLE_QUICK_SETTINGS) ~= true then
+            if LibDugi_DropDownList1 and LibDugi_DropDownList1:IsVisible() then
+                LibDugi_CloseDropDownMenus(1)
+            else
+                DugisGuideViewer.ShowMainMenu(DugisGuideViewer.ClickedMenuItem)  
+            end
+        else
+            --Old switching
+            DugisGuideViewer:ToggleOnOff()
+        end
 	elseif event == "RightButton" then
 		ToggleConfig()
 	end
@@ -3568,14 +3627,15 @@ function DugisGuideViewer:TurnOnEssentials()
 		DugisSecureQuestButton:Hide()			
 	end
 	DugisGuideViewer:CreateSettingsTree(DugisMainBorder)
-	if DugisGuideViewer.Modules.Target.Frame then DugisGuideViewer.Modules.Target.Frame:Hide() end
-	if DugisGuideViewer.Modules.ModelViewer.Frame then DugisGuideViewer.Modules.ModelViewer.Frame:Hide() end
+	if DugisGuideViewer:IsModuleLoaded("Target") then DugisGuideViewer.Modules.Target.Frame:Hide() end
+	if DugisGuideViewer:IsModuleLoaded("ModelViewer") then DugisGuideViewer.Modules.ModelViewer.Frame:Hide() end
 	DugisGuideViewer.Modules.QuestPOI:ObjectivesChangedDelay(3)
 	if DugisGuideViewer_ModelViewer and DugisGuideViewer_ModelViewer:IsShown() then DugisGuideViewer_ModelViewer:Hide() end
+	print("|cff11ff11" .. "Dugi Guides Essential Mode" )
 end
 
-function DugisGuideViewer:TurnOff()
-	if not DugisGuideViewer:GuideOn() then return end
+function DugisGuideViewer:TurnOff(forceOff)
+	if not DugisGuideViewer:GuideOn() and not forceOff then return end
 	print("|cff11ff11" .. "Dugi Guides Off" )
 	DugisGuideViewer.chardb.GuideOn = false
 	DugisGuideViewer.eventFrame:UnregisterAllEvents()
@@ -3591,10 +3651,12 @@ function DugisGuideViewer:TurnOff()
 	--DugisGuideViewer.SmallFrame:Disable()
 	if DugisSecureQuestButton then DugisSecureQuestButton:Hide() end
 	DugisGuideViewer:ReloadModules()
+    
+    DugisGuideViewer:UpdateAutoMountEnabled()
 end
 
-function DugisGuideViewer:TurnOn()
-	if DugisGuideViewer:GuideOn() then return end
+function DugisGuideViewer:TurnOn(forceOn)
+	if DugisGuideViewer:GuideOn() and not forceOn then return end
 	print("|cff11ff11" .. "Dugi Guides On" )
 	if not DugisGuideViewer:IsModuleRegistered("Guides") then
 		DugisGuideViewer.chardb.EssentialsMode = 1
@@ -3617,6 +3679,8 @@ function DugisGuideViewer:TurnOn()
 	end
 	DugisGuideViewer.Modules.DugisWatchFrame:DelayUpdate()		
 	DugisGuideViewer:RefreshQuestWatch()	
+    
+    DugisGuideViewer:UpdateAutoMountEnabled()
 end
 
 if not DugisGuideViewerDelayFrame then
@@ -3985,7 +4049,9 @@ function DugisGuideViewer.QUEST_LOG_UPDATE(func)
 		DugisGuideUser.NoQuestLogUpdateTrigger = nil
 		return 
 	else
-		DugisGuideViewer:Dugi_QUEST_LOG_UPDATE()
+        if FirstTime then
+            DugisGuideViewer:Dugi_QUEST_LOG_UPDATE()
+        end
 	end	
 end
 
@@ -4273,7 +4339,10 @@ end
 function DugisGuideViewer:UpdateCompletionVisuals(headerAnim)
 	if DugisGuideViewer:IsModuleRegistered("SmallFrame") and DugisGuideViewer:IsModuleRegistered("DugisWatchFrame") and DugisGuideViewer:GuideOn() then 
 		DugisGuideViewer:UpdateSmallFrame(headerAnim)
-		DugisGuideViewer.Modules.DugisWatchFrame:DelayUpdate()
+        
+        if DugisGuideViewer.Modules.DugisWatchFrame.DelayUpdate then
+            DugisGuideViewer.Modules.DugisWatchFrame:DelayUpdate()
+        end
 	end
 end
 
@@ -4659,10 +4728,8 @@ local isInCombat = UnitAffectingCombat("player")
 local lastCombatTime = GetTime()
 local lastCastingNoneMountTime = GetTime()
 local lastCastingMountTime = GetTime()
-
-local function WasCombatLessThan2secondsAgo()
-    return (GetTime() - lastCombatTime) <= 1
-end
+local lastMountedTime = GetTime()
+local lastMovingTime = GetTime()
 
 local mountId2exists = {}
 
@@ -4680,17 +4747,22 @@ local function IsCastingNonMountSpell()
     return spellID and not IsMountSpell(spellID)
 end
 
+function DugisGuideViewer:OnCastingSpell(spellID)
+    if spellID and not IsMountSpell(spellID) then
+	    if tonumber(spellID) ~= 219223 and tonumber(spellID) ~= 219222 and tonumber(spellID) ~= 197886 and tonumber(spellID) ~= 240022 then  -- Hunter Windrunning spell effect from Marksman Artifact Bow 
+	        lastCastingNoneMountTime = GetTime()
+		end
+    end
+end
+
 local function IsCastingMountSpell()
     local spellID = select(10, UnitCastingInfo("player"))  
     return spellID and IsMountSpell(spellID)
 end
 
-local function WasCastingNoneMount6sec()
-    return (GetTime() - lastCastingNoneMountTime) <= 6
-end
-
-local function WasCastingMount4sec()
-    return (GetTime() - lastCastingMountTime) <= 4
+local function WasCastingNoneMount()
+    local delay = DugisGuideViewer:GetDB(DGV_MOUNT_DELAY)
+    return (GetTime() - lastCastingNoneMountTime) <= delay
 end
 
 local function IsUsingSpecialBuff()
@@ -4703,16 +4775,36 @@ local function IsUsingSpecialBuff()
         
         n1 = name1
         n2 = name2
-        
-        if (icon1 and string.lower(icon1):match("inv_misc_fishing_raft"))
-	or (icon2 and string.lower(icon2):match("inv_misc_fishing_raft"))
-	or (icon1 and string.lower(icon1):match("inv_misc_fork-knife"))
-	or (icon1 and string.lower(icon1):match("inv_drink_18")) then
+		
+		if (icon1 and icon1 == 774121) --inv_misc_fishing_raft
+		or (icon2 and icon2 == 774121) --inv_misc_fishing_raft
+		or (icon1 and icon1 == 134062) --inv_misc_fork&knife
+		or (icon1 and icon1 == 132293) --ability_rogue_feigndeath
+		or (icon1 and icon1 == 132320) --ability_stealth
+		or (icon1 and icon1 == 132805) then --inv_drink_18
             return true
         end
        
         i = i + 1
     end
+end
+
+local function IsFeignDeath()
+	local mirrortimer = GetMirrorTimerInfo(3) == "FEIGNDEATH"
+	if UnitIsFeignDeath("player") then
+		return true 
+	end 
+       if mirrortimer == true then 
+		return true
+	end
+end
+
+local function IsShapeShift()
+	if GetShapeshiftForm() == 1 then 
+		if select(2, UnitClass("player")) == "SHAMAN" or select(2, UnitClass("player")) == "DRUID" then 
+			return true 
+		end
+	end
 end
 
 local function MountTheFastestMount()
@@ -4721,18 +4813,22 @@ local function MountTheFastestMount()
        or IsMounted()
        or UnitIsDead("player") or UnitIsGhost("player")
        or C_PetBattles.IsInBattle() or UnitOnTaxi("player")
-       or GetShapeshiftForm() ~= 0 
+       or IsShapeShift()
        or (LootFrame and LootFrame:IsVisible()) 
        or IsCasting() or IsLootFrameOpenend() 
-       or WasCombatLessThan2secondsAgo()
+       or (GetTime() - lastCombatTime) <= 1
        or UnitInVehicle("player") or UnitUsingVehicle("player")
-       or WasCastingNoneMount6sec() 
-       or WasCastingMount4sec() 
+       or WasCastingNoneMount() 
+       or (GetTime() - lastCastingMountTime) <= 4
        or (CastingBarFrame and CastingBarFrame:IsVisible())
        or (SpellBookProfessionFrame and SpellBookProfessionFrame:IsVisible()) 
        --For few first hundred milliseconds IsFlyableArea is not correct for example after leaving dungeon.
        or (GetTime() - lastMapUpdate) <= 1  
+       or UnitAffectingCombat("player")
+       or (GetTime() - lastMountedTime) <= 1
+       or (GetTime() - lastMovingTime) <= 0.4
        or IsUsingSpecialBuff()
+       or IsFeignDeath()
        or IsFalling() then 
         return 
     end
@@ -4748,7 +4844,7 @@ end
 local autoMountTicker = nil
 
 local function CancelAutoMountingIfNeeded()
-    if IsLootFrameOpenend() and not IsFlying() then
+    if IsLootFrameOpenend() and not IsFlying() and not IsMounted() then
         C_MountJournal.Dismiss()
     end
 end
@@ -4756,14 +4852,19 @@ end
 function DugisGuideViewer:UpdateAutoMountEnabled()
     if DugisGuideViewer:UserSetting(DGV_AUTO_MOUNT) and DugisGuideViewer:GuideOn() then
         if not autoMountTicker then
-            autoMountTicker = C_Timer.NewTicker(0.1, function()
+            autoMountTicker = C_Timer.NewTicker(0.5, function()
             
-                --Excluding casts during combat
-                if not WasCombatLessThan2secondsAgo() then
-                    if IsCastingNonMountSpell() then
-                        lastCastingNoneMountTime = GetTime()
-                    end
-                end   
+                if IsCastingNonMountSpell() then
+                    lastCastingNoneMountTime = GetTime()
+                end     
+                
+                if IsMounted() then
+                    lastMountedTime = GetTime()
+                end    
+                
+                if IsPlayerMoving() then
+                    lastMovingTime = GetTime()
+                end
                 
                 if IsCastingMountSpell() then
                     lastCastingMountTime = GetTime()
@@ -4785,6 +4886,149 @@ function DugisGuideViewer:UpdateAutoMountEnabled()
     end
 end
 
+function DugisGuideViewer.UpdateSettingsCheckbox(settingsId)
+    local value = DugisGuideViewer:GetDB(settingsId)
+    local chkBoxName = "DGV.ChkBox"..settingsId
+    local chkBox = _G[chkBoxName]
+    if chkBox then
+        chkBox:SetChecked(value)
+    end
+end
+
+function DugisGuideViewer.ClickedMenuItem(settingsId, itemInfo)
+    local checked = itemInfo.checked
+    
+    if settingsId == DGV_AUTO_MOUNT
+    or settingsId == DGV_AUTOEQUIPSMARTSET
+    or settingsId == DGV_AUTOQUESTACCEPT
+    or settingsId == DGV_AUTOFLIGHTPATHSELECT
+    or settingsId == DGV_ENABLED_MAPPREVIEW then
+        local newValue = not DugisGuideViewer:GetDB(settingsId)
+    
+        if settingsId == DGV_AUTOQUESTACCEPT then
+            newValue = not (DugisGuideViewer:GetDB(settingsId) and DugisGuideViewer:GetDB(DGV_AUTOQUESTTURNIN))
+        end
+    
+        DugisGuideViewer:SetDB(newValue, settingsId)
+        DugisGuideViewer:UpdateAutoMountEnabled()
+        
+        --Updating checkbox in settings
+        DugisGuideViewer.UpdateSettingsCheckbox(settingsId)
+        
+    end
+
+    if settingsId == DGV_AUTOQUESTACCEPT then
+        DugisGuideViewer:SetDB(DugisGuideViewer:GetDB(settingsId), DGV_AUTOQUESTTURNIN)
+        DugisGuideViewer.UpdateSettingsCheckbox(DGV_AUTOQUESTTURNIN)
+    end
+    
+    if settingsId == "guide-mode" then
+        if checked then
+            DugisGuideViewer.chardb.EssentialsMode = 0
+            DugisGuideViewer:TurnOn(true)
+        end
+    end
+    
+    if settingsId == "essential-mode" then
+        if checked then
+            SaveFramesPositions()
+            DugisGuideViewer:TurnOnEssentials()
+            DugisGuideViewer:RefreshQuestWatch()
+        end
+    end   
+    
+    if settingsId == "off-mode" then
+        if checked then
+            DugisGuideViewer.chardb.EssentialsMode = 0
+            DugisGuideViewer:TurnOff(true)
+        end
+    end
+    
+    LibDugi_UIDropDownMenu_Refresh(MainDugisMenuFrame)
+end
+
+function DugisGuideViewer.GetPluginMode()
+    local isGuideMode = DugisGuideViewer:GuideOn() == true and DugisGuideViewer.chardb.EssentialsMode == 0
+    local isEssentialMode = DugisGuideViewer.chardb.EssentialsMode == 1
+    local isOffMode = isGuideMode ~= true and not isEssentialMode
+    
+    return isGuideMode, isEssentialMode, isOffMode
+end
+
+function DugisGuideViewer.ShowMainMenu(clickCallback)
+    local menu = {
+        {text = "Addon", isTitle = true, isNotRadio = true, notCheckable = true},
+        
+        {text = "Guide Mode",     keepShownOnClick = true, checked = function() return select(1, DugisGuideViewer.GetPluginMode()) end,     func = function(itemInfo) clickCallback("guide-mode", itemInfo)      end},
+        {text = "Essential Mode", keepShownOnClick = true, checked = function() return select(2, DugisGuideViewer.GetPluginMode()) end, func = function(itemInfo) clickCallback("essential-mode", itemInfo)  end},
+        {text = "Off Mode",       keepShownOnClick = true, checked = function() return select(3, DugisGuideViewer.GetPluginMode()) end,       func = function(itemInfo) clickCallback("off-mode", itemInfo)        end},
+        
+        {text = "Quick Settings", isTitle = true, isNotRadio = true, notCheckable = true},
+        
+        {text = "Auto Mount", isNotRadio = true, keepShownOnClick = true, checked = function() return DugisGuideViewer:UserSetting(DGV_AUTO_MOUNT) end
+        , func = function(itemInfo) clickCallback(DGV_AUTO_MOUNT, itemInfo) end},
+        
+        {text = "Gear Advisor", isNotRadio = true, keepShownOnClick = true, checked = function() return DugisGuideViewer:UserSetting(DGV_AUTOEQUIPSMARTSET) end
+        , func = function(itemInfo) clickCallback(DGV_AUTOEQUIPSMARTSET, itemInfo) end},
+        
+        {text = "Auto Quest Accept/Turn in", isNotRadio = true, keepShownOnClick = true, checked = function() 
+        return DugisGuideViewer:UserSetting(DGV_AUTOQUESTACCEPT) and DugisGuideViewer:UserSetting(DGV_AUTOQUESTTURNIN) end
+        , func = function(itemInfo) clickCallback(DGV_AUTOQUESTACCEPT, itemInfo) end},
+        
+        {text = "Map Preview", isNotRadio = true, keepShownOnClick = true, checked = function() return DugisGuideViewer:UserSetting(DGV_ENABLED_MAPPREVIEW) end
+        , func = function(itemInfo) clickCallback(DGV_ENABLED_MAPPREVIEW, itemInfo) end},
+        
+        {text = "Auto Select Flight Path", isNotRadio = true, keepShownOnClick = true, checked = function() return DugisGuideViewer:UserSetting(DGV_AUTOFLIGHTPATHSELECT) end
+        , func = function(itemInfo) clickCallback(DGV_AUTOFLIGHTPATHSELECT, itemInfo) end},
+        
+        {text = "More settings..", isNotRadio = true, notCheckable = true
+        , disabled = function()
+            return not DugisGuideViewer:GuideOn()
+        end
+        , func = function(itemInfo) 
+            if not DugisMainBorder:IsVisible() then
+                ToggleConfig()
+            end
+            if DugisMain and DugisMain.settingsTab and DugisGuideViewer.DeselectTopTabs then
+                DugisMain.settingsTab:Click()
+            end
+        end},
+        
+        {text = "Home", isNotRadio = true, notCheckable = true
+        , disabled = function()
+            return not DugisGuideViewer:GuideOn() or DugisGuideViewer.chardb.EssentialsMode == 1
+        end
+        , func = function(itemInfo) 
+            if not DugisMainBorder:IsVisible() then
+                ToggleConfig()
+            end
+            if DugisMain and DugisMain.homeTab then
+                DugisMain.homeTab:Click()
+            end
+        end}      
+    }
+    
+    if not DugisGuideViewer:IsModuleRegistered("Guides") then
+        LuaUtils:foreach(menu, function(item, index)
+            if item.text == "Guide Mode" then
+                tremove(menu, index)
+            end
+        end)
+        
+        LuaUtils:foreach(menu, function(item, index)
+            if item.text == "Home" then
+                tremove(menu, index)
+            end
+        end)
+    end
+        
+    CreateFrame("Frame", "MainDugisMenuFrame", UIParent, "UIDropDownMenuTemplate")
+    LibDugi_EasyMenu(menu, MainDugisMenuFrame, "cursor", 13 , -15, "MENU");
+    
+    if LuaUtils:IsElvUIInstalled() then
+       LuaUtils:TransferBackdropFromElvUI()
+    end
+end
 
 
 

@@ -44,19 +44,11 @@ end
 function Appraiser.sort_shoppingAddAuctions(a,b)
 	if not a.name or not b.name then return false end
 
-	return a.name < b.name
-
-	--[[
 	if a.name == b.name then
-		if a.quality == b.quality then
-		
-		else
-			return (a.quality or 0) > (b.quality or 0)
-		end
+		return (a.quality or 0) > (b.quality or 0)
 	else
 		return a.name < b.name
 	end
-	--]]
 end
 
 function Appraiser:GetShoppingAuctions()
@@ -136,11 +128,23 @@ function Appraiser:AddItemToBuy(itemid,count,source,priceMax,itemlink,sourcemode
 
 	ZGV.db.char.GGbuyitems = ZGV.db.char.GGbuyitems or {}
 
-	local name, link, quality, iLevel, reqLevel, class, subclass, maxStack, equipSlot, icon, vendorPrice = ZGV:GetItemInfo(itemid)
+	local name, link, quality, iLevel, reqLevel, class, subclass, maxStack, equipSlot, icon, vendorPrice, classID, subclassID = ZGV:GetItemInfo(itemid)
+	
+	if not itemid and string.match(itemlink,"battlepet:") then itemid = ZGV.PetBattle:GetPetFakeIdByLink(itemlink) end
+
+	if itemid and not itemlink then
+		name, link, quality, iLevel, reqLevel, class, subclass, maxStack, equipSlot, icon, vendorPrice, classID, subclassID = ZGV:GetItemInfo(itemid)
+	end
+
+	if itemid == 82800 or classID==2 or classID==4 then
+		-- lock pets and equipment to 1 per posting, to prevent blizzard ah posting random items
+		single_locked=true
+		maxStack=1
+	end
 
 	if itemid>1000000000 then 
 		petItem_id = tonumber(string.sub(tostring(itemid),2,5))
-		quality = tonumber(string.sub(tostring(itemid),10,11))
+		quality = tonumber(string.sub(tostring(itemid),8,8))
 		name, icon = C_PetJournal.GetPetInfoBySpeciesID(petItem_id)
 	end
 
@@ -188,7 +192,7 @@ function Appraiser:AddItemToBuy(itemid,count,source,priceMax,itemlink,sourcemode
 			itemid=itemid or petItem_id,
 			name=name,
 			displayName=displayName,
-			link=link,
+			--link=link,
 			icon=icon,
 			count=count, 
 			price=unit_price,
@@ -200,7 +204,10 @@ function Appraiser:AddItemToBuy(itemid,count,source,priceMax,itemlink,sourcemode
 			statusColor=statusColor,
 			isStagnant=isStagnant,
 			quality=quality,
-			sourcemode=sourcemode
+			sourcemode=sourcemode,
+			itemlink=itemlink,
+			classID=classID,
+			single_locked=single_locked
 		}
 		table.insert(targetTable,newitem)
 	end
@@ -356,7 +363,7 @@ end
 
 function Appraiser:TryToSearchForItem(object)
 	if Appraiser.TryToSearchForItemTimer then ZGV:CancelTimer(Appraiser.TryToSearchForItemTimer) end
-	local result = Appraiser:SearchForItem(object)
+	local result = Appraiser:SearchForBuyItem(object)
 
 	if result then return end
 
@@ -528,7 +535,7 @@ function Appraiser:GetScannedItems()
 				quality = BattlePetRarity
 			end
 
-			table.insert(Appraiser.ShoppingAddAuctions,{itemlink=itemlink,name=name,quality=quality,icon=icon})
+			table.insert(Appraiser.ShoppingAddAuctions,{itemlink=itemlink,name=name,quality=tonumber(quality),icon=icon})
 		end
 		Appraiser.ActiveShoppingAddItem = nil
 		Appraiser:Update()
@@ -619,6 +626,7 @@ function Appraiser:UpdateBuyPrices()
 		end
 	end
 	self.manualBuyScanning = true
+	Appraiser.manualScanNextItem=true
 end
 
 function Appraiser:ClearShoppingItemDetails()

@@ -69,7 +69,7 @@ function Goldguide:Initialise()
 
 	if ZGV.db.global.gold_info_pages then Goldguide.ShowInfoPage=true end
 
-	ZGV:AddMessage("GOLD_SCANNED",Goldguide.EventHandler)
+	ZGV:AddMessage("GOLD_SCANNED",Goldguide.MainFrame_EventHandler)
 
 	Goldguide:ShowWindow()
 end
@@ -202,19 +202,29 @@ function Goldguide:Update()
 				resultstatus = L["gold_gathering_no_results"]
 			else
 				local type = Goldguide.Gathering_Frame.TypeDropdown:GetCurrentSelectedItem():GetText()
-				local level = ZGV:GetSkill(type).level
-				if level==0 then
-					local profstrings = "" 
-					local gatheringprofs={herbalism="Herbalism",mining="Mining",skinning="Skinning",fishing="Fishing",enchanting="Enchanting"}
+				local profstrings = "" 
+				local gatheringprofs={herbalism="Herbalism",mining="Mining",skinning="Skinning",fishing="Fishing",enchanting="Enchanting"}
+				if type~="All" then
+					local level = ZGV:GetSkill(type).level
+					if level==0 then
+						for k,prof in pairs(gatheringprofs) do
+							local skill=ZGV:GetSkill(prof).level
+							if skill>0 then 
+								profstrings = profstrings .. "\n" .. L["gold_gathering_error_prof"]:format(prof,skill)
+							end
+						end
+						resultstatus = L["gold_gathering_error_one_noskillin"]:format(type)..profstrings
+					else
+						resultstatus = L["gold_gathering_error_one_noresults"]:format(type)
+					end
+				else
 					for k,prof in pairs(gatheringprofs) do
 						local skill=ZGV:GetSkill(prof).level
 						if skill>0 then 
 							profstrings = profstrings .. "\n" .. L["gold_gathering_error_prof"]:format(prof,skill)
 						end
 					end
-					resultstatus = L["gold_gathering_error_one_noskillin"]:format(type)..profstrings
-				else
-					resultstatus = L["gold_gathering_error_one_noresults"]:format(type)
+					resultstatus = L["gold_gathering_error_one_nothing"]..profstrings
 				end
 			end
 		end
@@ -377,45 +387,92 @@ function Goldguide:Update()
 	Goldguide:UpdateTimeStamp()
 end
 
+-- called from Auctions,Farming,Crafting,Gathering frames, with sorting param pairs: "fieldname","asc"|"desc", ...
 function Goldguide.dynamic_sort(tab,a,b, ...)
 	local field,order
 	local varargn=1
 
-	local a_field,b_field
+	local a_val,b_val
+	local a_val_num,b_val_num
 
 	repeat
 		field=select(varargn,...)
 		order=select(varargn+1,...)
 		varargn=varargn+2
-		if not field then return nil end
+		if not field then return nil end  -- this means the sorting has failed and may return random order!
 
-		a_field = tonumber(a[field]) or -999999999
-		b_field = tonumber(b[field]) or -999999999
+		a_val = a[field]
+		b_val = b[field]
+		a_val_num = tonumber(a_val)
+		b_val_num = tonumber(a_val)
 
-		if order=="zerolast" then  a_field=(a_field>0) and 1 or 0   b_field=(b_field>0) and 1 or 0  order="desc"  end
+		if order=="zerolast" then
+			a_val=(a_val_num>0) and 1 or 0
+			b_val=(b_val_num>0) and 1 or 0
+			order="desc"
+		end  -- just force zeroes to the bottom
+		if order=="pos-zero-nil" then
+			a_val=(a_val_num and a_val_num>0 and 1) or a_val_num or -1
+			b_val=(b_val_num and b_val_num>0 and 1) or b_val_num or -1
+			order="desc"
+		end
+	until a_val~=b_val
 
-		if order=="pos-zero-nil" then  a_field=(a_field>0 and 1) or (a_field<0 and -1) or 0   b_field=(b_field>0 and 1) or (b_field<0 and -1) or 0  order="desc"  end
-	until a_field~=b_field
-
+	if type(a_val)~=type(b_val) then
+		a_val=tostring(a_val)
+		b_val=tostring(b_val)
+	end
 	if order == "asc" then
-		return a_field<b_field
+		return a_val<b_val
 	else
-		return a_field>b_field
+		return a_val>b_val
 	end
 end
 
 
-function Goldguide.EventHandler(self, event, ...)
+function Goldguide.MainFrame_EventHandler(self, event, ...)
 	if event=="GOLD_SCANNED" then
 		Goldguide:CalculateAllChores(true)
 		Goldguide:Update()
 	end
 end
 
-function Goldguide.UpdateHandler(self, event)
+local wasshiftdown
+function Goldguide.MainFrame_UpdateHandler(self, event)
 	if Goldguide.needToUpdate then
 		Goldguide:Update()
 	end
+	if wasshiftdown~=IsShiftKeyDown() then
+		for k,row in pairs(Goldguide.Farming_Frame.Entries.rows) do
+			if row:IsVisible() and row:IsMouseOver() then
+				Goldguide.FarmingTooltip:Hide()
+				row:GetScript("OnEnter")(row)
+				break
+			end
+		end
+		for k,row in pairs(Goldguide.Gathering_Frame.Entries.rows) do
+			if row:IsVisible() and row:IsMouseOver() then
+				Goldguide.GatheringTooltip:Hide()
+				row:GetScript("OnEnter")(row)
+				break
+			end
+		end
+		for k,row in pairs(Goldguide.Crafting_Frame.Entries.rows) do
+			if row:IsVisible() and row:IsMouseOver() then
+				Goldguide.CraftingTooltip:Hide()
+				row:GetScript("OnEnter")(row)
+				break
+			end
+		end
+		for k,row in pairs(Goldguide.Auctions_Frame.Entries.rows) do
+			if row:IsVisible() and row:IsMouseOver() then
+				Goldguide.AuctionTooltip:Hide()
+				row:GetScript("OnEnter")(row)
+				break
+			end
+		end
+	end
+	wasshiftdown = IsShiftKeyDown()
 end
 
 tinsert(ZGV.startups,{"Goldguide core",function(self)
@@ -464,7 +521,7 @@ tinsert(ZGV.startups,{"Goldguide core",function(self)
 	end
 end } )
 
-function Goldguide:UpdateSorting(col)
+function Goldguide.UpdateSorting(widget,col)  -- NOT called with a colon; called from a ScrollTable widget.
 	local dbfield = string.lower(Goldguide.ActiveTab)
 	local col = string.lower(col)
 
@@ -638,7 +695,7 @@ function Goldguide.Common:GetSmartProfitPerHour()
 end
 
 function Goldguide.Common:CalculateDetails(refresh)
-	if self.calculated_details and not refresh then return self.calculated_details end
+	if self.calculated_details and not refresh and not self.needsRecalc then return self.calculated_details end
 	self.needsRecalc = false
 
 	local dyna_title = {}
@@ -767,13 +824,15 @@ function Goldguide.Common:CalculateDetails(refresh)
 
 		end
 
-		GOODITEMS=good_items
-		sort(good_items,function(a,b)
+		local function sort_by_profit(a,b)
 			if a.is_lively and b.is_lively then return a.profit>b.profit
 			elseif a.is_lively~=b.is_lively then return a.is_lively
-			else return a.profit>b.profit
-			end
-		end)
+			elseif a.profit~=b.profit then return a.profit>b.profit
+			else return a[1] and b[1] and a[1]>b[1] end  -- last: by id
+		end
+
+		GOODITEMS=good_items
+		sort(good_items,sort_by_profit)
 		for i,it in ipairs(good_items) do
 			tinsert(itemstrings,it[2])
 			if it.is_lively then tinsert(dyna_title,it[1]) end
@@ -781,12 +840,7 @@ function Goldguide.Common:CalculateDetails(refresh)
 
 		if #bad_items>0 then
 			tinsert(itemstrings,"---------")
-			sort(bad_items,function(a,b)
-				if a.is_lively and b.is_lively then return a.profit>b.profit
-				elseif a.is_lively~=b.is_lively then return a.is_lively
-				else return a.profit>b.profit
-				end
-			end)
+			sort(bad_items,sort_by_profit)
 			for i,it in ipairs(bad_items) do
 				tinsert(itemstrings,it[2])
 			end

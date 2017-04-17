@@ -45,7 +45,7 @@ N (npc:93520) |QID|40863.8| |N|Speak to (npc:93520) and have Didi test the Core 
 T Always the Last Thing |QID|40863| |N|(npc:93520) in {Like Clockwork} (38.83,24.70)| |Z|1014 10| |NPC|93520|
 A Modular Modifications |QID|40864| |N|(npc:93520) in {Like Clockwork} (38.83,24.70)| |Z|1014 10| |NPC|93520|
 
-R Val'sharah |TID|40861| N|Travel to {Val'sharah} (59.82,62.26)| |Z|1018 0|
+R Val'sharah |TID|40861| |N|Travel to {Val'sharah} (59.82,62.26)| |Z|1018 0|
 T Resupplying the Line |QID|40860| |N|(npc:102197) in {Val'sharah} (59.82,62.26)| |Z|1018 0| |NPC|102197|
 A All Charged Up |QID|40862| |N|(npc:102197) in {Val'sharah} (59.82,62.26)| |Z|1018 0| |NPC|102197|
 A In My Sights |QID|40861| |N|(npc:102197) in {Val'sharah} (59.82,62.26)| |Z|1018 0| |NPC|102197|
@@ -170,7 +170,7 @@ N (item:137726) |N|Kill (npc:89284) or (npc:89283) in {Azsuna} until you find (i
 N (item:137726) |N|Learn (item:137726) recipe<br/>Tick to continue if you already learned the recipe| |Z|1015 0| |U|137726| |P|Engineering 720|
 N 1 - 720 (spell:209645) |EN| |N|Craft approximately 263 (spell:209645) <br/><br/>Requires 789 (item:123918)| |Z|1015 0| |P|Engineering 720|
 
-N (npc:97359) |N|Speak to (npc:97359) and tell him "I want to hire a personal bodyguard."<br/><br/>This will cost 5 gold, but will prevent other players from attacking you, for 5 minutes, in this PvP area. (68.99,58.38)| |Z|1014 11| |NPC|97359| |BUFF|Interface\Icons\inv_offhand_dalaran_d_01| |P|Engineering 779|
+N (npc:97359) |N|Speak to (npc:97359) and tell him "I want to hire a personal bodyguard."<br/><br/>This will cost 5 gold, but will prevent other players from attacking you, for 5 minutes, in this PvP area. (68.99,58.38)| |Z|1014 11| |NPC|97359| |BUFF|237433| |P|Engineering 779|
 N (cur:1149) |N|Kill enemies around this are collect 750 (cur:1149)<br/><br/>Look for the named NPC on your map (68.95,58.41)| |Z|1014 11| |CUR|1149 750| |P|Engineering 779|
 B (item:137706) |N|Buy (item:137706) from (npc:97366) in {The Underbelly} (59.77,39.31)| |Z|1014 11| |NPC|97366| |L|137706| |P|Engineering 779|
 N (item:137706) |N|Learn (item:137706), tick to continue if you have already learned it| |U|137706| |P|Engineering 779|

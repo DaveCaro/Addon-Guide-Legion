@@ -230,6 +230,10 @@ function arrowframeproto:ShowWarning()
 	self.arrow.warning:Play()
 end
 
+function arrowframeproto:SetNotice (text)
+	self.notice = text
+end
+
 function arrowframeproto:ShowText (title,dist,eta,status)
 	self.stairs=false
 
@@ -249,7 +253,9 @@ function arrowframeproto:ShowText (title,dist,eta,status)
 	self.title:SetText(
 		(title and "|cffffffff"..title.."|r\n" or "") ..
 		(disttxt and distcolor..disttxt.."|r" or "") ..  (etatxt or "") ..
-		(status and "|n"..status or ""))
+		(status and "|n"..status or "") ..
+		(self.notice and "|n".. self.notice or "")
+	)
 end
 
 function arrowframeproto:OnMouseWheel(delta)

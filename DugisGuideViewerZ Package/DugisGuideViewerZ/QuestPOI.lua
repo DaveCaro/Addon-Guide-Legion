@@ -53,6 +53,22 @@ function QuestPOI:Initialize()
             LuaUtils:foreach(allWorldQuestButtons, function(button)
                 delegate(button)
             end)
+        end  
+        
+        if poiType == "WorldMapFrameTaskPOI" then
+            local taskPoiIndex = 1
+            while _G["WorldMapFrameTaskPOI"..taskPoiIndex] do
+                delegate(_G["WorldMapFrameTaskPOI"..taskPoiIndex])   
+                taskPoiIndex = taskPoiIndex + 1
+            end  
+        end  
+        
+        if poiType == "WorldMapStoryLine" then
+            local taskPoiIndex = 1
+            while _G["WorldMapStoryLine"..taskPoiIndex] do
+                delegate(_G["WorldMapStoryLine"..taskPoiIndex])   
+                taskPoiIndex = taskPoiIndex + 1
+            end  
         end
         
 		return false
@@ -128,8 +144,15 @@ function QuestPOI:Initialize()
 			watchIndex = watchIndex + 1
 		end]]
 		
-		local trackedQuestID = GetSuperTrackedQuestID();
 		
+		local trackedQuestID
+		
+		if waypoint and waypoint.questId then 
+			trackedQuestID = waypoint.questId
+		else 
+			trackedQuestID = GetSuperTrackedQuestID()
+		end
+
 		local worldQuestID
 		
 		if IsLegionPatch then 

@@ -63,7 +63,7 @@ R Zul'Gurub |N|Travel to {Zul'Gurub} (71.0, 34.3)| |Z|37|
 N Elder Starglade |N|Elder Starglade in {Zul'Gurub} (71.0, 34.3)| |Z|37| |NPC|15596|
 
 R Blasted Lands |N|Travel to {Blasted Lands} (54.25, 49.47)| |Z|19| 
-N Speak to (npc:88206) |N|Speak to (npc:88206) to see {Blasted Lands} before the invasion (48.2, 7.2)| |Z|19| |NPC|88206| |BUFF|Interface\Icons\spell_mage_altertime|
+N Speak to (npc:88206) |N|Speak to (npc:88206) to see {Blasted Lands} before the invasion (48.2, 7.2)| |Z|19| |NPC|88206| |BUFF|609811|
 N Elder Bellowrage |N|(npc:15563) in Dark Portal<br/><br/>You need to speak to (npc:88206) by the {Swamp of Sorrows} to {Blasted Lands} entrance to get the buff (spell:176111) to find this elder.(54.25, 49.47)| |Z|19| |NPC|15563|
 
 R Swamp of Sorrows |N|Travel to {Swamp of Sorrows} (69.8, 54.1)| |Z|38| 

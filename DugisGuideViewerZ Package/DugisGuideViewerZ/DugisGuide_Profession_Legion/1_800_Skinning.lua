@@ -9,7 +9,7 @@ N Train Apprentice Skinning |N|Speak to (npc:93541) and train Skinning in {Legen
 B (item:7005) |N|Buy (item:7005) from (npc:93521) in {Legendary Leathers} (34.61, 28.35) |Z|1014 10| |NPC|93521| |L|7005|
 N (item:129860) |SK| |OID|40131 |N|Skin (npc:97755) or (npc:97516) until you find (item:129860) to start a quest (49.74, 34.70) | |Z|1017 0| |NPC|97755, 97516| |QID|40131| |L|129860|
 A Stonehide Leather Sample |QID|40131| |N|Auto quest while skinning any beast in {Broken Isles}|
-C Stonehide Leather Sample |QID|40131| |N|Collet 10 (item:124113) by skinning (npc:97755) or (npc:97516) in (49.74, 34.70)| |Z|1017 0||NPC|97755, 97516|
+C Stonehide Leather Sample |QID|40131| |N|Collect 10 (item:124113) by skinning (npc:97755) or (npc:97516) in (49.74, 34.70)| |Z|1017 0| |NPC|97755, 97516|
 N (item:129862) |SK| |OID|40141| |N|Skin (npc:107469) until you find (item:129862) to start a quest (51.43,31.45)| |Z|1017 0| |NPC|107469| |L|129862|
 A Stormscale Sample |QID|40141| |N|Auto quest while skinning any scaled and shelled beasts in {Broken Isles}|
 

@@ -19,11 +19,11 @@ do
 		return s:find'^%s*$' and '' or s:match'^(.*%S)'
 	end
 
-	local function GetNPCNameFromCache(NPCid)  --39199 = unit:0xF530991F00000000
+	local function GetNPCNameFromCache(NPCid)
 
 		if NPCCache[NPCid] then return NPCCache[NPCid] end
 		Tooltip:SetOwner(WorldFrame, "ANCHOR_NONE")
-		Tooltip:SetHyperlink(("unit:0xF53%05X00000000"):format(NPCid))
+		Tooltip:SetHyperlink(("unit:Creature-%d-%d-%d-%d-%d-%x"):format(0,0,0,0,NPCid,0))
 		if (Tooltip:IsShown()) then
 			local t=GetNPCNameFromCache_trim(Tooltip.Text:GetText())
 			NPCCache[NPCid]=t
@@ -32,15 +32,15 @@ do
 	end
 
 	local npcs=ZygorGuidesViewer_L("NPCs")   assert(npcs,"No NPC data loaded")
-	function Localizers:GetTranslatedNPC(id)
+	function Localizers:GetTranslatedNPC(id,fallbackname)
 		if not id then return "(no ID given!)" end
-		local s=npcs[id]
-		local mob=GetNPCNameFromCache(id)
-		if not s then  return mob or "(npc "..id..")"  end
-		local name,desc = s:match("(.-)|(.*)")
-		if not desc then name = s end
+		local name_from_cache=GetNPCNameFromCache(id)
+		local npc_from_data=npcs[id]
+		local name_from_data,desc
+		if npc_from_data then  name_from_data,desc = npc_from_data:match("(.-)|(.*)")  end
+		
+		local name = name_from_cache or name_from_data or fallbackname or "(npc "..id..")"
 		if desc=="" then desc=nil end
-		name = mob or name  -- scan > localization
 		return name,desc
 	end
 

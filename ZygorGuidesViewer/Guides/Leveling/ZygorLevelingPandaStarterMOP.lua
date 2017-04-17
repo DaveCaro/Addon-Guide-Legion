@@ -700,14 +700,6 @@ Walk with King Varian Wrynn |q 30988/1
 step
 talk King Varian Wrynn##61796
 turnin The Alliance Way##30988 |goto 82.6,28.1
-accept An Old Pit Fighter##30989 |goto 82.6,28.1
-step
-kill King Varian Wrynn##61796
-|tip Don't worry, you won't be able to hit him at all.
-Spar with Varian |q 30989/1 |goto 82.6,28.1
-step
-talk King Varian Wrynn##29611
-turnin An Old Pit Fighter##30989 |goto 85.8,31.7
 |next "end"
 step
 label "Horde"
@@ -725,19 +717,6 @@ Walk with Garrosh Hellscream |q 31013/1
 step
 talk Garrosh Hellscream##62092
 turnin The Horde Way##31013 |goto Orgrimmar/1 70.6,31.4
-accept Hellscream's Gift##31014 |goto Orgrimmar/1 70.6,31.4
-step
-Enter the Portal
-|tip It looks like a swirling pink portal near you.
-Wait for the fight to start
-|tip Walk to the center of the room. Unfortunately, it can take several minutes for the fight to start, so be patient.
-|tip Attack whichever target Ji Firepaw is attacking during the fight.
-kill Gadoon##62100, Frozengore##62097, Oggax##62102
-Complete Hellscream's Trial |q 31014/1
-step
-talk Garrosh Hellscream##39605
-turnin Hellscream's Gift##31014 |goto Orgrimmar/1 70.1,32.2
-|next "end"
 step
 label end
 Use the Suggest Section of the Guide Menu

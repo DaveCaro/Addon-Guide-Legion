@@ -16,6 +16,7 @@ local SkinData = ZGV.UI.SkinData
 
 local BARHEIGHT = 20
 local BARWIDTH = 15
+-- local BARDTA = 1610.
 
 --[[
 	Class for a zygor themed scroll bar

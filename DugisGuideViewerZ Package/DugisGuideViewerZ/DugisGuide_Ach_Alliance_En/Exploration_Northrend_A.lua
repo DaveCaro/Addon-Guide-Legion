@@ -79,22 +79,22 @@ R Venture Bay |N|{Grizzly Hills} (14, 86)| |AID|1266| |AC|9| |Z|490|
 R Apothecary Camp |N|{Howling Fjord} (27, 24)| |AID|1263| |AC|4| |Z|491|
 R Steel Gate |N|{Howling Fjord} (30, 26)| |AID|1263| |AC|6| |Z|491|
 R Skorn |N|{Howling Fjord} (45, 35)| |AID|1263| |AC|16| |Z|491|
-R Westguard Keep |N|{Howling Fjord} (30, 43)| |AID|1263| |AC|21| |Z|491|
+R Westguard Keep |N|{Howling Fjord} (30, 43)| |AID|1263| |AC|19| |Z|491|
 R Ember Clutch |N|{Howling Fjord} (39, 50)| |AID|1263| |AC|10| |Z|491|
 R Kamagua |N|{Howling Fjord} (25, 57)| |AID|1263| |AC|1| |Z|491|
 R Scalawag Point |N|{Howling Fjord} (35, 80)| |AID|1263| |AC|7| |Z|491|
 R New Agamand |N|{Howling Fjord} (52, 67)| |AID|1263| |AC|15| |Z|491|
 R Halgrind |N|{Howling Fjord} (50, 53)| |AID|1263| |AC|14| |Z|491|
-R Utgarde Keep |N|{Howling Fjord} (58, 46)| |AID|1263| |AC|20| |Z|491|
+R Utgarde Keep |N|{Howling Fjord} (58, 46)| |AID|1263| |AC|18| |Z|491|
 R Cauldros Isle |N|{Howling Fjord} (57, 36)| |AID|1263| |AC|2| |Z|491|
-R Baleheim |N|{Howling Fjord} (66, 39)| |AID|1263| |AC|23| |Z|491|
+R Baleheim |N|{Howling Fjord} (66, 39)| |AID|1263| |AC|21| |Z|491|
 R Nifflevar |N|{Howling Fjord} (68, 54)| |AID|1263| |AC|8| |Z|491|
-R Baelgun's Excavation Site |N|{Howling Fjord} (72, 71)| |AID|1263| |AC|22| |Z|491|
+R Baelgun's Excavation Site |N|{Howling Fjord} (72, 71)| |AID|1263| |AC|20| |Z|491|
 R Ivald's Ruin |N|{Howling Fjord} (77, 48)| |AID|1263| |AC|13| |Z|491|
 R Vengeance Landing |N|{Howling Fjord} (78, 30)| |AID|1263| |AC|5| |Z|491|
 R Giants' Run |N|{Howling Fjord} (68, 27)| |AID|1263| |AC|11| |Z|491|
 R Fort Wildervar |N|{Howling Fjord} (60, 15)| |AID|1263| |AC|12| |Z|491|
-R The Twisted Glade |N|{Howling Fjord} (53, 27)| |AID|1263| |AC|19| |Z|491|
+R The Twisted Glade |N|{Howling Fjord} (53, 27)| |AID|1263| |AC|17| |Z|491|
 R Camp Winterhoof |N|{Howling Fjord} (48, 10)| |AID|1263| |AC|3| |Z|491|
 R Gjalerbron |N|{Howling Fjord} (36, 10)| |AID|1263| |AC|9| |Z|491|
 

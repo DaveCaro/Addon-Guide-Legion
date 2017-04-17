@@ -15,7 +15,7 @@ A Honor the Flame (The Cape of Stranglethorn) |N|{Booty Bay} (52, 68)| |E| |Z|67
 A Desecrate this Fire! (The Cape of Stranglethorn) |N|{Booty Bay} (50, 70)| |E| |Z|673|
 
 R Blasted Lands |N|Travel to {Blasted Lands} (48.2, 7.2)| |Z|19|
-N Speak to (npc:88206) |N|Speak to (npc:88206) to see {Blasted Lands} before the invasion (48.2, 7.2)| |Z|19| |NPC|88206| |BUFF|Interface\Icons\spell_mage_altertime|
+N Speak to (npc:88206) |N|Speak to (npc:88206) to see {Blasted Lands} before the invasion (48.2, 7.2)| |Z|19| |NPC|88206| |BUFF|609811|
 A Desecrate this Fire! (Blasted Lands) |N|{Dreadmaul Hold} (46, 14)| |E| |Z|19|
 A Honor the Flame (Blasted Lands) |N|{Nethergarde Keep} (55, 15)| |E| |Z|19|
 A Desecrate this Fire! (Swamp of Sorrows) |N|Bogpaddle (70.2, 14.5)| |E| |Z|38|

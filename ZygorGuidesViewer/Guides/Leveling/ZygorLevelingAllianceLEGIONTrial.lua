@@ -1676,3 +1676,4 @@ talk Emissary Auldbridge##111109
 turnin In the Blink of an Eye##44663 |goto Dalaran L/10 57.57,45.75 |only if havequest(44663) or completedq(44663)
 turnin In the Blink of an Eye##44184 |goto Dalaran L/10 57.57,45.75 |only if havequest(44184) or completedq(44184)
 ]])
+ZGV.BETAEND()

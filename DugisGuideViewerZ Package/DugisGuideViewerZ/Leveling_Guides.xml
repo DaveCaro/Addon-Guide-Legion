@@ -186,5 +186,6 @@
 	<Script file="DugisGuide_Legion_En\98_110_Stormheim_H.lua"/>
 	<Script file="DugisGuide_Legion_En\98_110_Valsharah.lua"/>
 	<Script file="DugisGuide_Legion_En\102_110_Suramar.lua"/>	
+	<Script file="DugisGuide_Legion_En\110_Broken_Shore.lua"/>
 				
 </Ui>

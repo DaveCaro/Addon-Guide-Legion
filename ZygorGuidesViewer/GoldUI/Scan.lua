@@ -30,6 +30,8 @@ tinsert(ZGV.startups,{"Gold scan startup",function(self)
 	if not Scan.db.realm.gold_scan_data then Scan.db.realm.gold_scan_data={} end
 	Scan.data = Scan.db.realm.gold_scan_data
 
+	Scan:ImportHourly()
+
 	--if not Scan.db.realm.gold_scan_rawdata then Scan.db.realm.gold_scan_rawdata={} end
 	--Scan.rawdata = Scan.db.realm.gold_scan_rawdata
 	Scan.rawdata = {}
@@ -53,6 +55,12 @@ local orderedPairs = ZGV.OrderedPairs
 
 function Scan:ScanFast()
 	if not select(2,CanSendAuctionQuery()) or self.state=="SS_OUT" then return FALSE end
+
+	self.get_links = not ZGV.db.profile.quickscan
+	if ZGV.db.profile.quickscan then ZGV:Print(ZGV.L["opt_quickscan_warning"]) end
+
+	self.scan_page = 1
+
 	QueryAuctionItems("", nil, nil, 0, false, -1, true) -- FULL SCAN!
 	table.wipe(self.rawdata)
 	self:SetState("SS_QUERYING")
@@ -67,19 +75,32 @@ function Scan:ScanByName(name,itemid,options)
 		ZGV:Debug("&scan Scan:ScanByName|cffffee00 %s |rcan't scan yet!",name)
 		return false
 	end
+
 	local exact = true
 	self.queried_by_id = nil
+	self.get_links = false
 
 	local queryname,_ = ZGV:GetItemInfo(itemid)
 	
-	if queryname~=name or options=="forcePartial" then -- if generic name not the same as search param, use plain search, as we are searching for "x of y" type item
+	if queryname~=name or options=="forcePartial" then 
+		-- if generic name not the same as search param, use plain search, as we are searching for "x of y" type item, or a battle pet
 		self.queried_by_id = itemid
 		exact = false
+		--self.get_links = true
 	end
+
+	if options=="forceFullname" then
+		self.queried_by_id = nil
+		queryname = name
+		exact = true
+		self.get_links = true
+	end
+		
 	if itemid > 1000000000 then -- search for pets by name
 		self.queried_by_id = nil
 		queryname = name
 		exact = true
+		self.get_links = true
 	end
 	if not queryname then
 		ZGV:Debug("&scan Scan:ScanByName|cffffee00 %s |rGetItemInfo not ready!",name)
@@ -92,6 +113,10 @@ function Scan:ScanByName(name,itemid,options)
 	self.scan_page = 1
 	self:SetState("SS_QUERYING")
 	self:UpdateDefaultUI(queryname,self.scan_page-1)
+
+	self.WaitingForSortAuctionSetSort=true
+	SortAuctionSetSort("list","unitprice",false)
+	SortAuctionApplySort("list")
 	QueryAuctionItems(queryname, nil, nil, 0, false, -1, false, exact)  -- 6.0.2: query by exact name
 	return true
 end
@@ -102,16 +127,20 @@ function Scan:ScanByPartialName(queryname)
 		ZGV:Debug("&scan Scan:ScanByPartialName|cffffee00 %s |rcan't scan yet!",queryname)
 		return FALSE
 	end
-	local exact = false
 
+	local exact = false
 	self.queried_by_name = queryname
 	self.queried_by_partial_name = true
+	self.get_links = true
 
 	ZGV:Debug("&scan Scan:ScanByPartialName|cffffee00 %s",queryname)
 	table.wipe(self.rawdata)
 	self.scan_page = 1
 	self:SetState("SS_QUERYING")
 	self:UpdateDefaultUI(queryname,self.scan_page-1)
+	self.WaitingForSortAuctionSetSort=true
+	SortAuctionSetSort("list","unitprice",false)
+	SortAuctionApplySort("list")
 	QueryAuctionItems(queryname, nil, nil, 0, false, -1, false, exact)  -- 6.0.2: query by exact name
 end
 
@@ -121,16 +150,20 @@ function Scan:ScanByLink(itemlink)
 		ZGV:Debug("&scan Scan:ScanByLink|cffffee00 %s |rcan't scan yet!",itemlink)
 		return FALSE
 	end
-	local exact = true
 
+	local exact = true
 	self.queried_by_link = ZGV.ItemLink.StripBlizzExtras(itemlink)
 	local queryname = ZGV:GetItemInfo(itemlink)
+	self.get_links = true
 
 	ZGV:Debug("&scan Scan:ScanByLink|cffffee00 %s %s",itemlink,queryname)
 	table.wipe(self.rawdata)
 	self.scan_page = 1
 	self:SetState("SS_QUERYING")
 	self:UpdateDefaultUI(queryname,self.scan_page-1)
+	self.WaitingForSortAuctionSetSort=true
+	SortAuctionSetSort("list","unitprice",false)
+	SortAuctionApplySort("list")
 	QueryAuctionItems(queryname, nil, nil, 0, false, -1, false, exact)  -- 6.0.2: query by exact name
 end
 
@@ -210,6 +243,12 @@ function Scan.EventHandler(frame,event,arg1,arg2)
 		self.FWORK:Hide()
 		self:SetState("SS_OUT")
 	elseif event=="AUCTION_ITEM_LIST_UPDATE" then
+		if self.WaitingForSortAuctionSetSort then
+			-- we fired SortAuctionSetSort, so next AILU will be a result of that
+			self.WaitingForSortAuctionSetSort=false
+			return
+		end
+
 		-- Delaying scan because results tend to arrive with several subsequent A_I_L_U events
 		self.last_AILU_time = GetTime()
 		self.consecutive_AILU_count= self.consecutive_AILU_count+ 1
@@ -374,9 +413,12 @@ function Scan:ScanAuctions()  -- in state: SS_SCANNING
 		local name, texture, count, quality,canUse,  level,levelColHeader,minBid,minIncrement,buyoutPrice,  bidAmount,ishighBidder,bidderFullName,ownerName,ownerFullName,  saleStatus,itemId,hasAllInfo = GetAuctionItemInfo("list", row)
 		local link = GetAuctionItemLink("list", row)
 
+		if not self.get_links then link="item:"..itemId end
+
 		if hasAllInfo and not link then print("WTF! HasAllInfo but no link!") hasAllInfo=false end
 
-		if not hasAllInfo then
+		if not hasAllInfo and self.get_links then
+		--@if not hasAllInfo then
 			hasNotAllCounter=hasNotAllCounter+1
 			good_data_so_far = false
 			break --continue
@@ -387,7 +429,8 @@ function Scan:ScanAuctions()  -- in state: SS_SCANNING
 		hasAllCounter=hasAllCounter+1
 		rows_processed[row]=true
 
-		if itemId == 82800 then
+		if itemId == 82800 and self.get_links then
+		--@if itemId == 82800 then
 			if link then
 				itemId = ZGV.PetBattle:GetPetFakeIdByLink(link)
 			end
@@ -984,4 +1027,20 @@ end
 
 function Scan:Debug(s,...)
 	return ZGV:Debug("&gold &scan &_SUB "..s,...)
+end
+
+
+
+function Scan:ImportHourly()
+	if not ZGV_IMPORT_HOURLY_TIME then return nil,"No hourly to import" end
+	if ZGV_IMPORT_HOURLY_TIME<(ZGV.db.realm.LastScan or 0) then return nil,"Current scan is newer than hourly" end
+	ZGV.db.realm.gold_scan_data = {[1]={},today=1}
+	for itemid,itemdata in pairs(ZGV_IMPORT_HOURLY_DATA) do
+		for buyout,quantity in pairs(itemdata) do
+			ZGV.db.realm.gold_scan_data[1][itemid]=ZGV.db.realm.gold_scan_data[1][itemid] or {}
+			ZGV.db.realm.gold_scan_data[1][itemid][buyout]=quantity
+		end
+	end
+	ZGV.db.realm.LastScan = ZGV_IMPORT_HOURLY_TIME
+	ZGV:Print("Imported 'hourly' data with timestamp "..ZGV.db.realm.LastScan)
 end

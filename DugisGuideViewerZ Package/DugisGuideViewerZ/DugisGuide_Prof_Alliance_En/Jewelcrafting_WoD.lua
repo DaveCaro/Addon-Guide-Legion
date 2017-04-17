@@ -13,7 +13,7 @@ A Restoration |QID|36409| |N|(npc:84830) (46,38)| |NPC|84830| |Z|947|
 K (npc:85394) |QID|36409| |N|Slay (npc:85394) and retrive (item:1155165)| |NPC|85394| |Z|947|
 T Restoration |QID|36409| |N|(npc:84830) (46,38)| |NPC|84830| |Z|947|
 
-U (item:113381) |O| |JE| |N|Combine with: <br/><b>5 (item:109118) <br/><b>5 (item:109119)| |P|Jewelcrafting 600| --Crumbling Statue, Blackrock Ore, True Iron Ore
+U (item:113381) |O| |JE| |N|Combine with: <br/><b>5 (item:109118) <br/><b>5 (item:109119)| |P|Inscription 600| --Crumbling Statue, Blackrock Ore, True Iron Ore
 U (item:113384) |O| |JE| |N|Combine with: <br/><b>2 (item:109119)| |P|Jewelcrafting 600| --Crushed Locket, True Iron Ore
 U (item:113391) |O| |JE| |N|Combine with: <br/><b>4 (item:109118)| |P|Jewelcrafting 600| --Crystal Shards, Blackrock Ore
 U (item:113387) |O| |JE| |N|Combine with: <br/><b>2 (item:109118)| |P|Jewelcrafting 600| --Cracked Band, Blackrock Ore
@@ -37,7 +37,7 @@ B (item:116078) |N|(npc:77356) in your Garrison| |NPC|77356| |L|116078| |P|Jewel
 
 N (item:115524) |JE| |N|Create (item:115524) daily. These are required for leveling and high level recipes. <br/><b>20 (item:109118) <br/><b>10 (item:109119). <br/><br/>Tick this step.| |P|Jewelcrafting 700|
 N Required Materials; |N|<b>4200 (item:109118) <br/><b>3500 (item:109124). <br/><br/>Tick this step.|
-N 1-700 (item:115804) |JE| |N|Craft with; <br/><b>6 (item:109118) <br/><b>5 (item:109124)| |P|Jewelcrafting 700|
+N 1-700 (item:115804)|N|Craft with; <br/><b>6 (item:109118) <br/><b>5 (item:109124)| |P|Jewelcrafting 700|
 
 N Guide Complete
 

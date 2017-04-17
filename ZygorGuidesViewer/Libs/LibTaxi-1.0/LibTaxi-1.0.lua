@@ -69,7 +69,7 @@ do
 	end
 	Lib.is_enemy=is_enemy
 
-	-- Add taxi to known.
+	-- Add taxi to known. Used only for leeching off QuestHelper (obsolete?)
 	local function addTaxi(name)
 		local taxi
 		if type(name)=="string" then
@@ -107,8 +107,8 @@ do
 				Lib:LearnCurrentTaxi()
 				if ZGV and ZGV.LibRover then ZGV.LibRover:UpdateNow("quiet") end -- Try to force update of arrow ~~ Jeremiah
 			end
-		elseif event == "UPDATE_FACTION" then --Faction update is not needed anymore.
-			Lib:MarkKnownByLevels() --Only needs to be ran once after the faction's information has been made available at startup
+		--elseif event == "UPDATE_FACTION" then --Faction update is not needed anymore.
+			--Lib:MarkKnownByLevels() --Only needs to be ran once after the faction's information has been made available at startup
 			--Lib.frame:UnregisterEvent("UPDATE_FACTION")
 		elseif event=="PLAYER_CONTROL_LOST" then
 			time=GetTime()
@@ -156,7 +156,7 @@ do
 		setmetatable(newsave,Lib.known_by_continent_mt)
 		table.insert(Lib.saved_tables,newsave)
 
-		Lib:MarkKnownByLevels()
+		Lib:MarkKnownTaxis()
 		self:Debug("Startup complete.")
 	end
 
@@ -203,6 +203,7 @@ do
 						Lib.path2cont[node.name] = c
 						node.m = z
 						node.c = HBD:GetMapContinent(z)
+						--node.level = LibRover and LibRover.data.ZoneContLev[z].level
 						n=n+1
 					else
 						tremove(zone,n)
@@ -261,15 +262,22 @@ do
 		return Lib.taxitag2point[cont][tag]
 	end
 
+	function Lib:ClearAllKnowledge()
+		for c,cont in pairs(Lib.taxipoints) do
+			Lib:ClearContinentKnowledge(c)
+		end
+	end
+
 	function Lib:ClearContinentKnowledge(cont,operator)
+		if not cont then cont=GetCurrentMapContinent() end
 		for z,zone in pairs(Lib.taxipoints[cont]) do
 			for n,node in ipairs(zone) do
 				if node.factionid~=1031
 				and node.taxioperator==operator
 				and node.taxioperator~="blackcat"
 				then
-					node.known=false
-					Lib.master[node.name]=false
+					node.known=nil
+					Lib.master[node.name]=nil
 				end
 			end
 
@@ -287,6 +295,7 @@ do
 				end
 			--]]  -- what was that supposed to do?  mark correct level nodes as unknown? O_o  ~sinus
 		end
+		Lib.master[cont]=nil
 	end
 
 
@@ -344,6 +353,7 @@ do
 
 		local numnodes = NumTaxiNodes()
 
+		-- switch to a specific operator (only on Kalimdor)
 		local current_operator
 		if cont==2 then
 			for i=1,numnodes do
@@ -362,6 +372,8 @@ do
 		end
 
 		self:Debug("We're on continent %d, and will be flying %s airlines.",cont,current_operator or "default")
+
+		Lib.master[cont]=true
 
 		-- We now see the map. Whatever's not on the map, is surely unknown - so, mark everything as unknown and learn what's known.
 
@@ -382,7 +394,8 @@ do
 			local taxitag = ("%03d:%03d"):format(taxix*1000,taxiy*1000)
 
 			-- EVIL BLIZZARD: "Temple of Karabor" at Draenor 766:315 is THE SAME as "Tranquil Court", but is DISTANT and has zero hops. Kill it and its kin.
-			if GetNumRoutes(i)==0 and taxitype=="DISTANT" and TaxiNodeCost(i)==0 then  break  end --continue
+			-- NOT ANYMORE. Distant points are now often zero-hopped. This caused MANY points to be skipped.
+			--if GetNumRoutes(i)==0 and taxitype=="DISTANT" and TaxiNodeCost(i)==0 then  self:Debug("Taxi "..name.." gets skipped.")  break  end --continue
 			
 			local taxi = Lib:FindTaxiByTag(cont,taxitag)
 			
@@ -390,19 +403,11 @@ do
 
 			if taxi then
 				--self:Debug("found %s [%s]",taxi.name,taxitag)
-				--[[
-				-- Removed as of 6.1. Now ALL taxi nodes on a continent are returned, just CURRENT or REACHABLE... or DISTANT.
-				if not cont_cleared then
-					self:Debug("Clearing continent %d, operator %s",cont,current_operator or "default")
-					Lib:ClearContinentKnowledge(cont,current_operator)
-					cont_cleared = true
-				end
-				--]]
-
 				if taxi.taxioperator == current_operator then
 					taxi.known = (taxitype=="REACHABLE" or taxitype=="CURRENT")
 					Lib.master[taxi.name]=taxi.known
 				end
+				--self:Debug("Taxi: "..taxi.taxitag.." "..taxi.name.." ".. taxitype)
 			else
 				self:Debug("|cffff8888taxi missing in continent %d data: %s [%s] [%.5f,%.5f] - adding to data.flightcost for dumping",cont,name,taxitag,taxix,taxiy)
 				--tinsert(self.errors,("taxi missing in data: %s [%s] [%.5f,%.5f]"):format(name,taxitag,taxix,taxiy))
@@ -420,6 +425,8 @@ do
 				addTaxi(name)
 			end
 		end
+
+		if ZGV.Pointer.tmp_taxis_assumed then LibRover:UpdateNow() end
 	end
 
 
@@ -537,53 +544,41 @@ do
 
 	
 	
-	function Lib:MarkKnownByLevels()
+	function Lib:MarkKnownTaxis() -- Fill .known fields using saved data.
 		local level = UnitLevel("player")
 		for c,cont in pairs(Lib.taxipoints) do
 			for z,zone in pairs(cont) do
 				local zoneid = self.MapIDsByName[z]
 				if type(zoneid)=="table" then zoneid=zoneid[1] end  -- might cause trouble on phased maps :/
 				zoneid=ZGV and ZGV.Pointer:SanitizePhase(zoneid)
-				--[[if LibRover.MapLevels[zoneid]<=level  -- zone is lower level than player, we should know all taxis by now
-				  and LibRover.MapLevels[zoneid]<85  -- Pandaria Zones are not learned by level
-				  then
-					for n,node in ipairs(zone) do
-						if node.known==nil then node.known=true	end
+				for n,node in ipairs(zone) do
+					if Lib.master[node.name]~=nil then -- we know it or we know we don't, simplest case
+						node.known=Lib.master[node.name]
+					elseif node.taxioperator and node.taxioperator=="blackcat" then  --All blackcats are usable by an alliance character
+						node.known = true
+					elseif node.available then -- Special case? Override normal knowledge.
+						node.known = node.available()
+					elseif node.achievemissing then -- If the player has the achievement, then the node is missing.
+						node.missing = select(13,GetAchievementInfo(node.achievemissing)) -- 13 = whether this toon has the achievement.
+					elseif false and not Lib.master[c] then  -- we didn't scan this continent yet, so let's do some guessing
+						-- DON'T GUESS! LibRover will "guess" if it wants to. Leave it as nil (if it wasn't falsified by the continent being seen).
 
-						if  (node.quest and not ZGV.completedQuests[node.quest]) -- we didn't do the quest
-							or (node.factionid and select(3,GetFactionInfoByID(node.factionid))<node.factionstanding) -- we're not esteemed enough
-							or (node.condition and not node.condition()) -- condition fail
-							or (node.class and select(2,UnitClass("player"))~=node.class) -- Class only! woo
-						then
-							node.known = false
-						end
+						--[[ if LibRover.data.ZoneContLev[zoneid].level<=level  -- zone is lower level than player, we should know all taxis by now
+						  and LibRover.data.ZoneContLev[zoneid].level<85  -- except newer expansions - these are not learned by level
+						  then
+							if  (node.quest and not ZGV.completedQuests[node.quest]) -- we didn't do the quest
+								or (node.factionid and select(3,GetFactionInfoByID(node.factionid))<node.factionstanding) -- we're not esteemed enough
+								or (node.condition and not node.condition()) -- condition fail
+								or (node.class and select(2,UnitClass("player"))~=node.class) -- we're the wrong class
+							then
+								node.known = false
+							else
+								node.known = true
+							end
+						end --]]
 
-						if not node.known then Lib.master[node.name]=false end
-
-						if Lib.master[node.name]==nil then Lib.master[node.name]=true end
 					end
-				else --]]
-					for n,node in ipairs(zone) do
-						local achieveInfo
-						if node.achievemissing then
-							achieveInfo = {GetAchievementInfo(node.achievemissing)}
-						end
-					
-						if node.taxioperator and node.taxioperator=="blackcat" then node.known = true end --All blackcats are useable by an alliance character
-
-						if node.available then
-							node.known = node.available() --OVERWRITE. If we gave something special so don't worry about the others
-							Lib.master[node.name]= node.known;
-						elseif node.achievemissing then
-							-- If the player has the achievement, then the node is missing.
-							node.missing = achieveInfo[13] -- 13 = whether this toon has the achievement.
-						elseif Lib.master[node.name]==false then --if zone is overlevel and for some reason it is false, set it back to nil
-							Lib.master[node.name]=nil
-						elseif Lib.master[node.name]==true then -- we know a flightpath that is over our level
-							node.known=true
-						end
-					end
-				--end
+				end
 			end
 		end
 	end
@@ -596,7 +591,7 @@ do
 				end
 			end
 		end
-		Lib:MarkKnownByLevels()
+		Lib:MarkKnownTaxis()
 	end
 
 

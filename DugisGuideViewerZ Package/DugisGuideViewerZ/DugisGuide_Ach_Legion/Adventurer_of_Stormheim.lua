@@ -12,7 +12,7 @@ K (npc:92763) |N|Leave the cave, follow the path while grappling where you can. 
 
 R Helheim |N|Travel to {Heheim} (68.71,46.56) (70.47,43.86) (72.34,41.25) (73.65,39.36) (63.55,41.18)| |Z|1017 0| |AID|11263| |AC|6|
 K (npc:92040) |N|Follow the path and kill (npc:92040) in {Helheim} (71.15,34.75) (82.02,43.52) (85.0,49.9)| |Z|1022 0| |NPC|92040| |AID|11263| |AC|6|
-N (spell:181705) |N|Follow the path and click the Cursed Seaweed to get the (spell:181705) in {Helheim} (72.31,30.62) (61.34,29.74) (59.19,37.82) (64.49,44.27)| |Z|1022 0| |BUFF|Interface\Icons\inv_misc_herb_silkweed| |AID|11263| |AC|17|
+N (spell:181705) |N|Follow the path and click the Cursed Seaweed to get the (spell:181705) in {Helheim} (72.31,30.62) (61.34,29.74) (59.19,37.82) (64.49,44.27)| |Z|1022 0| |BUFF|612962| |AID|11263| |AC|17|
 K (npc:97630) |N|Follow the path and kill (npc:97630) in {Helheim} (56.53,31.63) (50.66,33.05) (42.52,33.02) (39.81,41.81) (39.49,48.21) (33.55,48.08) (29.51,46.42) (27.00,51.80) (25.13,61.16) (28.0,63.2)| |Z|1022 0| |NPC|97630| |AID|11263| |AC|17|
 
 R Stormheim |N|Travel to {Stormheim} (35.80,62.48) (44.62,54.38) (56.60,49.77) (55.69,39.35) (66.79,46.72)| |Z|1022 0| |AID|11263| |AC|20|

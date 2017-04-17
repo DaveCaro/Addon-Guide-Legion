@@ -16,8 +16,8 @@ A Continue Your Training: Master Cheng |QID|31837| |N|(npc:66260) (48.60, 42.70)
 C Continue Your Training: Master Cheng |QID|31837| |N|Speak with (npc:66180) in the {Peak of Serenity} and complete your training with her at the {Training Grounds} (48.53, 41.50)| |NPC|66180| |C|Monk| |Z|809|
 T Continue Your Training: Master Cheng |QID|31837| |N|(npc:66260) (48.59, 42.71) in {Shrine of the Ox}| |NPC|66260| |C|Monk| |Z|809|
 
-R Nethergarde Keep |N|Travel to {Nethergarde Keep} (59.41, 14.87)| |QID|10288|| |Z|19|
-B (item:23848) |N|Buy (item:23848) from (npc:3546) in {Nethergarde Keep} (59.41, 14.87)| |L|23848| |QID|10288|| |Z|19| |NPC|3546|
+R Nethergarde Keep |N|Travel to {Nethergarde Keep} (59.41, 14.87)| |QID|10288| |Z|19|
+B (item:23848) |N|Buy (item:23848) from (npc:3546) in {Nethergarde Keep} (59.41, 14.87)| |L|23848| |QID|10288| |Z|19| |NPC|3546|
 
 A Hero's Call: Outland! |QID|28708| |O|
 

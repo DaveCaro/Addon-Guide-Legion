@@ -90,31 +90,31 @@ C Missive: Assault on Mok'gol Watchpost |QID|38195| |N|Assault the Warsong force
 R Everbloom Wilds |QID|38192| |N|Travel to {Everbloom Wilds} (62.01, 42.40)| |Z|949| |O| |AID|9564| |AC|5|
 C Missive: Assault on the Everbloom Wilds |QID|38192| |N|Assault the Botani forces in the {Everbloom Wilds} in {Gorgrond} (62.01, 42.40). In addition to killing NPCs, elites, and rare elites, you can throw rocks at birds in trees, loot Mandragora Seed after killing a (npc:86260), and loot the (spell:88828) to drive a (spell:176632) that can burn trees for progress.<br/><br/>Looting fruit on the ground gives you buffs. There are also three pillars you can click on for buffs and Activating all three pillars unlocks (spell:177923)| |Z|949| |NPC|86260, 88828| |O| |OID|36676| |AID|9564| |AC|5|
 
-T Assault on Darktide Roost |QID|36679| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|971| |NPC|81152| |D| |O|
-T Assault on Socrethar's Rise |QID|36680| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|971| |NPC|81152| |D| |O|
-T Assault on the Iron Siegeworks |QID|36674| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|971| |NPC|81152| |D| |O|
-T Assault on Lost Veil Anzu |QID|36681| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|971| |NPC|81152| |D| |O|
-T Assault on Pillars of Fate |QID|36682| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|971| |NPC|81152| |D| |O|
-T Assault on Shattrath Harbor |QID|36649| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|971| |NPC|81152| |D| |O|
-T Assault on Skettis |QID|36683| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|971| |NPC|81152| |D| |O|
-T Assault on Stonefury Cliffs |QID|36648| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|971| |NPC|81152| |D| |O|
-T Assault on Magnarok |QID|36675| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|971| |NPC|81152| |D| |O|
-T Assault on the Broken Precipice |QID|36677| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|971| |NPC|81152| |D| |O|
-T Assault on Mok'gol Watchpost |QID|36678| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|971| |NPC|81152| |D| |O|
-T Assault on the Everbloom Wilds |QID|36676| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|971| |NPC|81152| |D| |O|
-T Assault on the Pit |QID|36686| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|971| |NPC|81152| |D| |O|
+T Assault on Darktide Roost |QID|36679| |N|(npc:81152) in {Lunarfall} (31.0, 31.81)| |Z|971| |NPC|81152| |D| |O| |POI|
+T Assault on Socrethar's Rise |QID|36680| |N|(npc:81152) in {Lunarfall} (31.0, 31.81)| |Z|971| |NPC|81152| |D| |O| |POI|
+T Assault on the Iron Siegeworks |QID|36674| |N|(npc:81152) in {Lunarfall} (31.0, 31.81)| |Z|971| |NPC|81152| |D| |O| |POI|
+T Assault on Lost Veil Anzu |QID|36681| |N|(npc:81152) in {Lunarfall} (31.0, 31.81)| |Z|971| |NPC|81152| |D| |O| |POI|
+T Assault on Pillars of Fate |QID|36682| |N|(npc:81152) in {Lunarfall} (31.0, 31.81)| |Z|971| |NPC|81152| |D| |O| |POI|
+T Assault on Shattrath Harbor |QID|36649| |N|(npc:81152) in {Lunarfall} (31.0, 31.81)| |Z|971| |NPC|81152| |D| |O| |POI|
+T Assault on Skettis |QID|36683| |N|(npc:81152) in {Lunarfall} (31.0, 31.81)| |Z|971| |NPC|81152| |D| |O| |POI|
+T Assault on Stonefury Cliffs |QID|36648| |N|(npc:81152) in {Lunarfall} (31.0, 31.81)| |Z|971| |NPC|81152| |D| |O| |POI|
+T Assault on Magnarok |QID|36675| |N|(npc:81152) in {Lunarfall} (31.0, 31.81)| |Z|971| |NPC|81152| |D| |O| |POI|
+T Assault on the Broken Precipice |QID|36677| |N|(npc:81152) in {Lunarfall} (31.0, 31.81)| |Z|971| |NPC|81152| |D| |O| |POI|
+T Assault on Mok'gol Watchpost |QID|36678| |N|(npc:81152) in {Lunarfall} (31.0, 31.81)| |Z|971| |NPC|81152| |D| |O| |POI|
+T Assault on the Everbloom Wilds |QID|36676| |N|(npc:81152) in {Lunarfall} (31.0, 31.81)| |Z|971| |NPC|81152| |D| |O| |POI|
+T Assault on the Pit |QID|36686| |N|(npc:81152) in {Lunarfall} (31.0, 31.81)| |Z|971| |NPC|81152| |D| |O| |POI|
 
-T Missive: Assault on Darktide Roost |QID|38196| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|971| |NPC|81152| |AID|9564| |AC|9| |O| |OID|36679|
-T Missive: Assault on Socrethar's Rise |QID|38197| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|971| |NPC|81152| |AID|9564| |AC|8| |O| |OID|36680|
-T Missive: Assault on the Iron Siegeworks |QID|38191| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|971| |NPC|81152| |AID|9564| |AC|1| |O| |OID|36674|
-T Missive: Assault on Pillars of Fate |QID|38199| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|971| |NPC|81152| |AID|9564| |AC|11| |O| |OID|36682|
-T Missive: Assault on Shattrath Harbor |QID|38201| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|971| |NPC|81152| |AID|9564| |AC|12| |O| |OID|36649|
-T Missive: Assault on Skettis |QID|38200| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|971| |NPC|81152| |AID|9564| |AC|10| |O| |OID|36683|
-T Missive: Assault on Stonefury Cliffs |QID|38189| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|971| |NPC|81152| |AID|9564| |AC|2| |O| |OID|36648|
-T Missive: Assault on Magnarok |QID|38177| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|971| |NPC|81152| |AID|9564| |AC|3| |O| |OID|36675|
-T Missive: Assault on the Broken Precipice |QID|38193| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|971| |NPC|81152| |AID|9564| |AC|6| |O| |OID|36677|
-T Missive: Assault on Mok'gol Watchpost |QID|38195| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|971| |NPC|81152| |AID|9564| |AC|7| |O| |OID|36678|
-T Missive: Assault on the Everbloom Wilds |QID|38192| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|971| |NPC|81152| |AID|9564| |AC|5| |O| |OID|36676|
+T Missive: Assault on Darktide Roost |QID|38196| |N|(npc:81152) in {Lunarfall} (31.0, 31.81)| |Z|971| |NPC|81152| |AID|9564| |AC|9| |O| |OID|36679| |POI|
+T Missive: Assault on Socrethar's Rise |QID|38197| |N|(npc:81152) in {Lunarfall} (31.0, 31.81)| |Z|971| |NPC|81152| |AID|9564| |AC|8| |O| |OID|36680| |POI|
+T Missive: Assault on the Iron Siegeworks |QID|38191| |N|(npc:81152) in {Lunarfall} (31.0, 31.81)| |Z|971| |NPC|81152| |AID|9564| |AC|1| |O| |OID|36674| |POI|
+T Missive: Assault on Pillars of Fate |QID|38199| |N|(npc:81152) in {Lunarfall} (31.0, 31.81)| |Z|971| |NPC|81152| |AID|9564| |AC|11| |O| |OID|36682| |POI|
+T Missive: Assault on Shattrath Harbor |QID|38201| |N|(npc:81152) in {Lunarfall} (31.0, 31.81)| |Z|971| |NPC|81152| |AID|9564| |AC|12| |O| |OID|36649| |POI|
+T Missive: Assault on Skettis |QID|38200| |N|(npc:81152) in {Lunarfall} (31.0, 31.81)| |Z|971| |NPC|81152| |AID|9564| |AC|10| |O| |OID|36683| |POI|
+T Missive: Assault on Stonefury Cliffs |QID|38189| |N|(npc:81152) in {Lunarfall} (31.0, 31.81)| |Z|971| |NPC|81152| |AID|9564| |AC|2| |O| |OID|36648| |POI|
+T Missive: Assault on Magnarok |QID|38177| |N|(npc:81152) in {Lunarfall} (31.0, 31.81)| |Z|971| |NPC|81152| |AID|9564| |AC|3| |O| |OID|36675| |POI|
+T Missive: Assault on the Broken Precipice |QID|38193| |N|(npc:81152) in {Lunarfall} (31.0, 31.81)| |Z|971| |NPC|81152| |AID|9564| |AC|6| |O| |OID|36677| |POI|
+T Missive: Assault on Mok'gol Watchpost |QID|38195| |N|(npc:81152) in {Lunarfall} (31.0, 31.81)| |Z|971| |NPC|81152| |AID|9564| |AC|7| |O| |OID|36678| |POI|
+T Missive: Assault on the Everbloom Wilds |QID|38192| |N|(npc:81152) in {Lunarfall} (31.0, 31.81)| |Z|971| |NPC|81152| |AID|9564| |AC|5| |O| |OID|36676| |POI|
 
 N Guide Complete
 

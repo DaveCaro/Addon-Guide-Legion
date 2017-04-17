@@ -16,7 +16,7 @@ K (npc:95674) |SID|28996| |N|Kill (npc:95674) in {Fields of the Eternal Hunt} (5
 N (item:129920) |SK| |QID|40139.1| |N|Skin (npc:95674) and collect (item:129920) in {Fields of the Eternal Hunt} (28.7, 73.5)| |Z|1041 1| |NPC|95674| |O| --Skinning
 N (item:139469) |QID|44075.1| |N|Collect (item:139469) from (npc:95674) (56.91, 63.38)| |Z|1041 1| |NPC|95674| |C|Druid| |O|
 K (npc:95675) |SID|28997| |N|Kill (npc:95675) in {Halls of Valor}<br/><b>You will need to challenge the mini bosses before (npc:95675)  will appear<br/><b>All players shouold spread out to reduce the damage of (spell:193659)<br/><b>Someone need to click on the Aegis of Aggramar and protect the party from (spell:202494) attack<br/><b>Tank: Use active mitigation to reduce the attack of (spell:193668) (50.70, 85.77)| |Z|1041 3|
-K (npc:95676) |SID|28998| |N|Defeat (npc:95676) in {Halls of Valor}<br><b>When affected by (spell:197961) look at the floor and run to the matching rune<br/><b>Avoid (spell:221872) and (spell:198088)<br/><b>Run away from (npc:95676) to avoid (spell:198263) (52.81, 84.83)| |Z|1041 3| |NPC|95676|
+K (npc:95676) |SID|28998| |N|Defeat (npc:95676) in {Halls of Valor}<br/><b>When affected by (spell:197961) look at the floor and run to the matching rune<br/><b>Avoid (spell:221872) and (spell:198088)<br/><b>Run away from (npc:95676) to avoid (spell:198263) (52.81, 84.83)| |Z|1041 3| |NPC|95676|
 N (item:136784) |QID|39348.1| |N|Click on the Spoils chest and collect (item:136784) (51.35,85.60)| |Z|1041 3| |O|
 N (item:132866) |QID|40561.1| |N|Click on the Spoils chest and collect (item:132866) (51.35,85.60)| |Z|1041 3| |O| --Jewelcrafting
 N (item:129293) |QID|39904.1| |N|Collect (item:129293) from then Spoils of Worthy)(52.81, 84.83)| |Z|1041 3| |O| --Enchanting

@@ -134,7 +134,7 @@ A Lining the Crucible |QID|39340| |N|(npc:92458) in {The Agronomical Apothecary}
 C Lining the Crucible |QID|39340| |N|Collect 1 (item:124124), this is BoP you can get this by running Dungeons or complete World Quests<br/><b>1 (item:124116) can be obtain from Skinning<br/><b>2 (item:124106), and 100 (item:128304) can be obtain from Herbalism<br/><br/>Otherwise purchase the materials from the Auction| |Z|1014 10| |NPC|92458|
 T Lining the Crucible |QID|39340| |N|(npc:92458) in {The Agronomical Apothecary} (41.6, 32.8)| |Z|1014 10| |NPC|92458|
 A Demon's Bile |QID|39341| |N|(npc:92458) in {The Agronomical Apothecary} (41.6, 32.8)| |Z|1014 10| |NPC|92458|
-N (item:127840) |AL| |QID|39341| |N|Create a (item:127840), requires:<br><b>5 (item:124104)<br/><b>1 (item:127835)| |L|127840|
+N (item:127840) |AL| |QID|39341| |N|Create a (item:127840), requires:<br/><b>5 (item:124104)<br/><b>1 (item:127835)| |L|127840|
 N Switch Guide |N|Switch to (guide:"1045(110)") to complete (qid:39341) quest| |QID|39341|
 T Demon's Bile |QID|39341| |N|(npc:92458) in {The Agronomical Apothecary} (41.6, 32.8)| |Z|1014 10| |NPC|92458|
 A Bendy Glass Tubes |QID|39343| |N|Collect (item:127877) from (npc:105824) in {Vault of Wardens} to start a quest (47.6, 17.2)| |Z|1045 2| |NPC|105824| |L|127877| |PRE|39341|
@@ -146,7 +146,7 @@ A The Price of the Black Market |QID|39342| |N|(npc:101492) in {The Underbelly D
 B (item:128833) |QID|39341.3| |N|Buy 5 (item:128833) from (npc:96784) in {Dalaran} (52.6, 35.1)| |Z|1014 10| |NPC|96784|
 B (item:128764) |QID|39341.4| |N|Buy 5 (item:128764) from (npc:96784) in {Dalaran} (52.6, 35.1)| |Z|1014 10| |NPC|96784|
 N (item:124124) |QID|39341.2| |N|Collect (item:124124) by doing gathering professions, dungeons or world quests| 
-N (item:127840) |AL| |QID|39341| |N|Create a (item:127840), requires:<br><b>5 (item:124104)<br/><b>1 (item:127835)| |L|127840|
+N (item:127840) |AL| |QID|39341| |N|Create a (item:127840), requires:<br/><b>5 (item:124104)<br/><b>1 (item:127835)| |L|127840|
 N (npc:90417) |QID|39341.1| |N|Use the (item:127840) to become invisible then speak to (npc:90417) to get (item:136723) (28.8, 48.6)| Z|1014 10|
 
 T The Price of the Black Market |QID|39342| |N|(npc:101492) in {The Underbelly Descent} (69.6, 21.6)| |Z|1014 11| |NPC|101492|
@@ -196,9 +196,9 @@ N Materials Required |OID|39351| |N|<b>20 (item:124101)<br/><b>10 (item:124102)<
 N (item:127848) |QID|39350.2| |AL| |N|Create (item:127848) with the Dalaran Alchemy Station (41.41,33.41)| |Z|1014 10| |L|127848|
 N (item:127849) |QID|39349.2| |AL| |N|Create (item:127849) with the Dalaran Alchemy Station (41.41,33.41)| |Z|1014 10| |L|127849|
 N (item:127850) |QID|39348.2| |AL| |N|Create (item:127850) with the Dalaran Alchemy Station (41.41,33.41)| |Z|1014 10| |L|127850|
-N Switch Guide |QID|39349| |N|Switch to (guide:"1081(110)") to complete (qid:39349) quest<br/><br>Note: You need to complete the HEROIC version of the dungeon| 
-N Switch Guide |QID|39350| |N|Switch to (guide:"1042(110)") to complete (qid:39350) quest<br/><br>Note: You need to complete the HEROIC version of the dungeon| 
-N Switch Guide |QID|39348| |N|Switch to (guide:"1041(98-110)") to complete (qid:39348) quest<br/><br>Note: You need to complete the HEROIC version of the dungeon| 
+N Switch Guide |QID|39349| |N|Switch to (guide:"1081(110)") to complete (qid:39349) quest<br/><br/>Note: You need to complete the HEROIC version of the dungeon| 
+N Switch Guide |QID|39350| |N|Switch to (guide:"1042(110)") to complete (qid:39350) quest<br/><br/>Note: You need to complete the HEROIC version of the dungeon| 
+N Switch Guide |QID|39348| |N|Switch to (guide:"1041(98-110)") to complete (qid:39348) quest<br/><br/>Note: You need to complete the HEROIC version of the dungeon| 
 
 T Halls of Valor: The Prime Ingredient |QID|39348| |N|(npc:92183) in {Dalaran} (44.4,28.8)| |Z|1014 10| |NPC|92457| 
 T Maw of Souls: A Hope in Helheim |QID|39350| |N|(npc:92183) in {Dalaran} (44.4,28.8)| |Z|1014 10| |NPC|92183| 

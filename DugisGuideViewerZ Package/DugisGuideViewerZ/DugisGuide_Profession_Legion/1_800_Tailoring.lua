@@ -64,7 +64,7 @@ T Advanced Needlework |QID|38953| |N|(npc:93967) in {Talismanic Textiles} (36.12
 N Level 104 Required |N|You need to be at least level 104 to use this profession guide| |PL|104|
 
 A Where's Lyndras? |QID|38954| |N|(npc:93542) in {Talismanic Textiles} (34.97,34.63)| |Z|1014 10| |NPC|93542|
-N (npc:97359) |QID|38954| |N|Speak to (npc:97359) and tell him "I want to hire a personal bodyguard."<br/><br/>This will cost 5 gold, but will prevent other players from attacking you, for 5 minutes, in this PvP area. (68.99,58.38)| |Z|1014 11| |NPC|97359| |BUFF|Interface\Icons\inv_offhand_dalaran_d_01|
+N (npc:97359) |QID|38954| |N|Speak to (npc:97359) and tell him "I want to hire a personal bodyguard."<br/><br/>This will cost 5 gold, but will prevent other players from attacking you, for 5 minutes, in this PvP area. (68.99,58.38)| |Z|1014 11| |NPC|97359| |BUFF|237433|
 N Find (npc:93967) |QID|38954.1| |N|Find (npc:93967) in {The Underbelly} (64.50,58.65) (59.30,76.35) (68.61,80.17) (78.02,88.62)| |Z|1014 11| |NPC|93967|
 
 R Dalaran |N|Go upstairs back to {Dalaran} (73.02,82.95) (46.40,47.08) (34.58,43.57) (29.44,49.33)| |Z|1014 11| |REACH|
@@ -131,7 +131,7 @@ A Where's Lyndras Now? |QID|38964| |N|(npc:93542) in {Talismanic Textiles} (34.9
 N (npc:92456) |QID|38964| |N|Speak to (npc:92456) in {Talismanic Textiles} (42.02,31.79)| |Z|1014 10| |NPC|93542|
 T Where's Lyndras Now? |QID|38964| |N|Auto turnin|
 A Where's Lyndras: Sewer Sleuthing |QID|39602| |N|Auto quest|
-N (npc:97359) |QID|39602| |N|Speak to (npc:97359) and tell him "I want to hire a personal bodyguard."<br/><br/>This will cost 5 gold, but will prevent other players from attacking you, for 5 minutes, in this PvP area. (68.99,58.38)| |Z|1014 11| |NPC|97359| |BUFF|Interface\Icons\inv_offhand_dalaran_d_01|
+N (npc:97359) |QID|39602| |N|Speak to (npc:97359) and tell him "I want to hire a personal bodyguard."<br/><br/>This will cost 5 gold, but will prevent other players from attacking you, for 5 minutes, in this PvP area. (68.99,58.38)| |Z|1014 11| |NPC|97359| |BUFF|237433|
 C Where's Lyndras: Sewer Sleuthing |QID|39602.1| |N|Speak to (npc:96347) in {The Underbelly} (64.48,58.65) (67.23,67.80)| |Z|1014 11| 
 T Where's Lyndras: Sewer Sleuthing |QID|39602| |N|Auto turnin|
 A Where's Lyndras: Downward Spiral |QID|39605| |N|Auto quest|
@@ -239,7 +239,7 @@ R Val'sharah |N|Travel to {Val'sharah} (68.45,48.55)| |Z|1018 0| |P|Tailoring 80
 B (item:127022) |N|Buy (item:127022) from (npc:93974) in {Val'sharah} (68.45,48.55)| |Z|1018 0| |NPC|93974| |L|127022| |P|Tailoring 800|
 
 R Dalaran |N|Travel to {Dalaran} (68.99,58.38)| |Z|1014 11| |P|Tailoring 800|
-N (npc:97359) |N|Speak to (npc:97359) and tell him "I want to hire a personal bodyguard."<br/><br/>This will cost 5 gold, but will prevent other players from attacking you, for 5 minutes, in this PvP area. (68.99,58.38)| |Z|1014 11| |NPC|97359| |BUFF|Interface\Icons\inv_offhand_dalaran_d_01| |P|Tailoring 800|
+N (npc:97359) |N|Speak to (npc:97359) and tell him "I want to hire a personal bodyguard."<br/><br/>This will cost 5 gold, but will prevent other players from attacking you, for 5 minutes, in this PvP area. (68.99,58.38)| |Z|1014 11| |NPC|97359| |BUFF|237433| |P|Tailoring 800|
 N (cur:1149) |N|Kill enemies around this are collect 750 (cur:1149)<br/><br/>Look for the named NPC on your map (68.95,58.41)| |Z|1014 11| |CUR|1149 750| |P|Tailoring 800|
 B (item:185947) |N|Buy (item:185947) from (npc:107760) in {The Underbelly} (66.42,81.48)| |Z|1014 11| |NPC|107760| |L|185947| |P|Tailoring 800|
 B (item:185955) |N|Buy (item:185955) from (npc:107760) in {The Underbelly} (66.42,81.48)| |Z|1014 11| |NPC|107760| |L|185955| |P|Tailoring 800|

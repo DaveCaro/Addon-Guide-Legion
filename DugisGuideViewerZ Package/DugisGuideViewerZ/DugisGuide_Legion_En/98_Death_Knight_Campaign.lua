@@ -382,6 +382,77 @@ C Destiny Unfulfilled |QID|44497| |N|Witness True Betrayal in Shadowmoon Valley 
 
 R Hall of Command |TID|44496| |N|Travel to {Hall of Command} (54.24,74.13)| |Z|1021 1|
 T Destiny Unfulfilled |QID|44496| |N|(npc:113857) in {Hall of Command} (54.24,74.13)| |Z|1021 1| |NPC|113857|
+
+R Krasus' Landing |N|Travel to Krasus' Landing} (69.40, 43.99)| |Z|1014 10|
+A Armies of Legionfall |QID|46730| |N|This quest is available after you unlock World Quests by completing (qid:43341)| |Z|1014 10| |NPC|120215| |O|
+T Armies of Legionfall |QID|46730| |N|(npc:120215), in {Krasus' Landing} (69.37, 43.88)| |Z|1014 10| |NPC|120215| |O|
+A Assault on Broken Shore |QID|46734| |N|(npc:120215) in {Krasus' Landing} (69.40, 43.99)| |Z|1014 10| |NPC|120215|
+N (npc:120215) |QID|46734.1| |N|Speak to (npc:120215) in {Krasus' Landing} (69.40, 43.99)| |Z|1014 10| |NPC|120215|
+N (npc:120752) |SID|35327|1| |N|Mount the (npc:120752) in {Krasus' Landing}| |NPC|120752| |V|
+C Secure the Beach |SID|35327|2| |N|Kill the demons on the beach until you reach 100% to secure the beach (50.86, 69.96)| |Z|1149 0|
+C Defeat Lord Kalgorath |SID|35329|3| |N|Defeat (npc:116291) in {Broken Shore} (44.30, 73.90) (42.04, 72.23) (41.29, 65.12) (41.30, 65.12)| |Z|1149 0| |NPC|116291|
+C Legion portals closed |SID|35495|4| |N|Follow the waypoints and defeat the forces to close the portals in {Broken Shore}(42.95, 58.73)  (46.98, 58.29) (52.15, 52.38)(54.57, 47.99) (57.09, 52.15) (59.09, 51.61) (59.09, 51.61)| |Z|1149 0|
+K (npc:118551) |SID|35497|5| |N|Kill (npc:118551) in {Broken Shore} (55.15, 51.75)| |Z|1149 0| |NPC|118551|
+C Use Gateway |SID|35551|6| |N|Take the Demonic Gateway to the base of Mephistroth's command ship (53.41, 50.42)| |Z|1149 0|
+C Plant Arcane Bombs |SID|36178|7| |N|Plant Arcane Bombs in the command ship in each waypoints, look for the yellow dots in the minimap, you will need to use the portal after planting the first 2| |Z|1149 0|
+C Defeat Mephistroth |SID|36179|8| |N|Kill (npc:120746) in {Broken Shore} (50.03, 45.38)| |Z|1149 0| |NPC|120746| |QID|46734.2|
+
+T Assault on Broken Shore |QID|46734| |N|(npc:116302) in {Deliverance Point} (44.71, 63.29)| |Z|1021 0| |NPC|116302|
+A Legionfall Supplies |QID|46286| |N|(npc:120183) in {Deliverance Point} (44.54, 63.19)| |Z|1021 0| |NPC|120183|
+A Aalgen Point |QID|46832| |N|(npc:120183) in {Deliverance Point} (44.54, 63.19)| |Z|1021 0| |NPC|120183|
+
+R Aalgen Point |TID|46832| |N|Travel to {Aalgen Point} (46.27, 58.47)(51.36, 54.77) (52.43, 52.34) (70.69, 47.58)| |Z|1021 0| 
+T Aalgen Point |QID|46832| |N|(npc:120118), in {Aalgen Point} (70.69, 47.58)| |Z|1021 0| |NPC|120118|
+A Vengeance Point |QID|46845| |N|(npc:120118), in {Aalgen Point} (70.69, 47.58)| |Z|1021 0| |NPC|120118|
+
+R Deliverance Point |QID|46845| |N|Travel to {Deliverance Point} (44.54, 63.19)| |Z|1021 0|
+R Vengeance Point |QID|46845| |N|Travel to {Vengeance Point} (50.63, 20.77)| |Z|1021 0| 
+N Scout Dreadstalker Point |QID|46845.1| |N|Scout Dreadstalker Point (50.66, 21.41)| |Z|1021 0|
+C Vengeance Point |QID|46845| |N|Kill 4 (npc:120969) and 5 (npc:120748) in {Vengeance Point} (50.63, 20.77)| |Z|1021 0| |NPC|120969, 120748|
+T Vengeance Point |QID|46845| |N|(npc:111323) in {Vengeance Point} (49.69, 21.03)| |Z|1021 0| |NPC|111323|
+
+A Seeking Lost Knowledge |QID|47067| |N|(npc:116302) in {Deliverance Point}<br/><br/>You need at least rank 25 artifact knowledge to receive this quest (44.71, 63.29)| |Z|1021 0| |NPC|116302|
+
+N Recover Knowledge from Moonlight Ascent |QID|47067.3| |N|Click Remnant of Lost Knowledge, stand still and wait for the channeling to complete. (71.22,41.78) (75.62,36.27)| |Z|1021 0|
+N Recover Knowledge from Moonlight Ascent |QID|47067.2| |N|Click Remnant of Lost Knowledge, stand still and wait for the channeling to complete. (72.58,40.20)| |Z|1021 0|
+N Recover Knowledge from Moonlight Ascent |QID|47067.1| |N|Click Remnant of Lost Knowledge, stand still and wait for the channeling to complete. (76.45,39.81) (82.57,45.09)| |Z|1021 0|
+
+T Seeking Lost Knowledge |QID|47067| |N|(npc:116302) in {Deliverance Point} (44.71, 63.29)| |Z|1021 0| |NPC|116302|
+A Delivering Lost Knowledge |QID|46809| |N|(npc:116302) in {Deliverance Point} (44.71, 63.29)| |Z|1021 0| |NPC|116302|
+A Amal'thazad's Message |QID|46719| |N|(npc:117573) in {Deliverance Point} (43.92,63.12)| |Z|1021 0| |NPC|117573|
+
+R Hall of Command |QID|46940| |N|Travel to {Hall of Command} (49.74,55.87)| |Z|1021 2|
+T Delivering Lost Knowledge |QID|46809| |N|(npc:97111) in {Hall of Command} (49.74,55.87)| |Z|1021 2| |NPC|97111|
+A Using Lost Knowledge |QID|46940| |N|(npc:97111) in {Hall of Command} (49.74,55.87)| |Z|1021 2| |NPC|97111|
+C Using Lost Knowledge |QID|46940.1| |N|Speak to (npc:97111) and start a Research Work Order in {Hall of Command} (49.74,55.87)| |Z|1021 2| |NPC|97111|
+T Using Lost Knowledge |QID|46940| |N|(npc:97111) in {Hall of Command} (49.74,55.87)| |Z|1021 2| |NPC|97111|
+T Amal'thazad's Message |QID|46719| |N|(npc:93555) in {Hall of Command} (58.21,31.07)| |Z|1021 2| |NPC|93555|
+A Frozen Memories |QID|46720| |N|(npc:93555) in {Hall of Command} (58.21,31.07)| |Z|1021 2| |NPC|93555|
+
+N Take the portal |QID|46720.1| |N|Take the portal to the top of Archerus (55.52,28.34)| |Z|1021 2|
+N Listen to the Lich King's plan |QID|46720.2| |N|Simply wait for the dialogue to complete. (47.82,51.83)| |Z|1021 1|
+N Witness the Lich King's vision  |QID|46720.3| |N Land on the little chunk of ice and wait for the vision to complete. (44.70,4.41)| |Z|492 0| |POI|
+
+T Frozen Memories |QID|46720| |N|Field turn in| 
+A Draconic Secrets |QID|46812| |N|Field accept|
+N (npc:27938) |QID|46812.1| |N|Speak to (npc:27938) to interrogate him (60.31,54.86)| |Z|488 0| |NPC|27938|
+N (npc:26443) |QID|46812.2| |N|Speak to (npc:26443) to interrogate him (57.90,54.16)| |Z|488 0| |NPC|26443|
+
+N Infiltrate the Ruby Sanctum |QID|46812.3| |N|Infiltrate the Ruby Sanctum (49.01,31.40)| |Z|1151 0| |NPC|26443|
+N Read the Codex Draconomicus |QID|46812.4| |N|Click Codex Draconomicus Rubicus to read it in {The Ruby Sanctum} (41.40,76.55) (47.92,77.21)| |Z|1151 0|
+
+T Draconic Secrets |QID|46812| |N|Field turnin| 
+A The Lost Glacier |QID|46813| |N|Auto quest|
+
+N Travel to the Lost Glacier |QID|46813.1| |N|Travel to the Lost Glacier (42.60,0.38)| |Z|492 0|
+
+C Find the Frozen Span |SID|36221|1| |QID|46813| |N|You will need to fight through the ghouls to reach the Frozen Span. (52.20,69.57)| |Z|1160 0|
+C Find Kyranastraz' Rest |SID|36222|2| |QID|46813| |N|There is a narrow path of ice ahead. Follow that towards the skeletal remains. (52.20,69.57)| |Z|1160 0|
+
+N Collect the red dragon's essence |SID|36223|3| |QID|46813| |N|Kill the enemies until you reach 100%| |NPC|121048, 121060, 121040|
+N Convert the life essence to death |SID36224|4| |QID|46813| |N|Use the special action button ability on your screen.|
+T The Lost Glacier |QID|46813| |N|Click the Deep crack| 
+
 ----
 A Champion Armaments |QID|44231| |N|(npc:110410), this quest will only be available if you chose to get the "Brothers in Arms" class hall upgrade. (51.78,32.38)| |Z|1021 1| |NPC|110410|
 C Champion Armaments |QID|44231| |N|Speak to (npc:110410) to place a Workorder for Champion armaments (51.78,32.38)| |Z|1021 1| |QID|44231.1|

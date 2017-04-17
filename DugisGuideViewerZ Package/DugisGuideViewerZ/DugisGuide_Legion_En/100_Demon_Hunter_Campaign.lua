@@ -63,10 +63,11 @@ N Fly to Felsoul Hold |QID|39247.1| |N|Use the (npc:94321) to Fly to Felsoul Hol
 C Fly into Felsoul Hold. |SID|28177|1| |N|Fly into {Felsoul Hold}| |Z|1033 0| |QID|41119| |PRE|41121, 39051|
 C Dive into the fray. |SID|28390|2| |N|Dive into the fray. in {Felsoul Hold} (25.62, 58.94)| |Z|1033 0| |QID|41119| |PRE|41121, 39051|
 C Wards destroyed |SID|28391|3| |N|Click on the wards protecting Varedis to destroy it in each waypoint and absorb the souls of his minions.<br/><br/><b>Make sure you kill every single minions you come across to absorb enough souls (28.13, 64.51) (29.34, 60.50) (31.47, 66.78)| |Z|1033 0| |NPC|95429, 95329| |QID|41119| |PRE|41121, 39051| |STAGE|The Twinblades of the Deceiver, 3|
+C Absorb demons souls |SID|0|3| |N|Kill more demons in area until you reach 100%| |QID|41119|
 K (npc:108992) |SID|28394|4| |N|Kill (npc:108992) in {Felsoul Hold} (32.97, 67.17)| |Z|1033 0| |NPC|108992| |QID|41119| |PRE|41121, 39051|
 C Wield the Twinblades of the Deceiver. |SID|30965|5| |N|Collect (item:127829) from the ground in {Felsoul Hold} (32.97, 67.03)| |Z|1033 0| |QID|41119| |PRE|41121, 39051|
-R Dalaran |TID|41119| |N|Use the (npc:101902) to return to {Dalaran} (32.74, 66.87)| |Z|1033 0| |NPC|101902| |V| |O|
-R Dalaran |TID|39247| |N|Use the (npc:101902) to return to {Dalaran} (32.74, 66.87)| |Z|1033 0| |NPC|101902| |V| |O|
+R Dalaran |TID|41119| |N|Use the (npc:101902) to return to {Dalaran} (32.74, 66.87)| |Z|1033 0| |NPC|101902| |V|
+R Dalaran |TID|39247| |N|Use the (npc:101902) to return to {Dalaran} (32.74, 66.87)| |Z|1033 0| |NPC|101902| |V|
 T The Hunt |QID|41119| |N|(npc:102799) in {Krasus' Landing} (73.89, 46.04)| |Z|1014 10| |NPC|102799| |O|
 T The Hunt |QID|39247| |N|(npc:102799) in {Krasus' Landing} (73.89, 46.04)| |Z|1014 10| |NPC|102799| |O|
 -- End Havoc Artifact
@@ -113,7 +114,7 @@ C Eternal Vigil |QID|42869| |N|Glide to Illidari Redoubt off of Krasus' Landing.
 T Eternal Vigil |QID|42869| |N|(npc:109196) in {Illidari Redoubt} (95.15, 65.89)| |Z|1014 10| |NPC|109196|
 A Securing the Way |QID|42872| |N|(npc:109196) in {Illidari Redoubt} (95.13, 65.94)| |Z|1014 10| |NPC|109196|
 C Have the prisoners' souls removed |QID|42872.1| |N|Use (spell:198500) ability in {Illidari Redoubt} (95.15, 65.89)| |Z|1014 10| |NPC|109196|
-C Securing the Way |QID|42872.2| |N|Click on the gateway in {Illidari Redoubt} (95.15, 65.89)| |Z|1014 10|
+C Securing the Way |QID|42872.2| |N|Click on the gateway in {Illidari Redoubt} (97.15, 69.20)| |Z|1014 10| |POI|
 T Securing the Way |QID|42872| |N|(npc:109196) in {Illidari Redoubt} (95.13, 65.94)| |Z|1014 10| |NPC|109196|
 
 --Altruis
@@ -123,54 +124,54 @@ R The Fel Hammer |TID|41221| |N|Click on the Illidari Gateway to enter {The Fel 
 A Return to Mardum |N|(npc:109295) in {Illidari Redoubt} (95.10, 66.14)| |Z|1014 10| |OID|41033, 41221|
 A Return to Mardum |QID|41033| |N|(npc:109295) in {Illidari Redoubt} (95.10, 66.14)| |Z|1014 10| |O|
 A Return to Mardum |QID|41221| |N|(npc:109295) in {Illidari Redoubt} (95.10, 66.14)| |Z|1014 10| |O|
-T Return to Mardum |QID|41033| |N|(npc:95237) in {The Fel Hammer} (57.70, 67.65)| |Z|1052 1| |NPC|95237| |O|
-T Return to Mardum |QID|41221| |N|(npc:95240) in {The Fel Hammer} (57.70, 67.65)| |Z|1052 1| |NPC|95240| |O|
-A Unbridled Power |N|(npc:95240) or (npc:95237) in {The Fel Hammer} (57.70, 67.65)| |Z|1052 1| |NPC|95240, 95237| |OID|41060, 41037|
-A Unbridled Power |QID|41060| |N|(npc:95237) in {The Fel Hammer} (58.72, 57.57)| |Z|1052 1| |NPC|95237| |O|
-A Unbridled Power |QID|41037| |N|(npc:95240) in {The Fel Hammer} (58.72, 57.57)| |Z|1052 1| |NPC|95240| |O|
-C Unbridled Power |QID|41060| |N|Click on the Control Console in {The Fel Hammer} (58.99, 66.30)| |Z|1052 1| |O|
-C Unbridled Power |QID|41037| |N|Click on the Control Console in {The Fel Hammer} (58.99, 66.30)| |Z|1052 1| |O|
-T Unbridled Power |QID|41060| |N|(npc:95237) in {The Fel Hammer} (58.72, 57.57)| |Z|1052 1| |NPC|95237| |O|
-T Unbridled Power |QID|41037| |N|(npc:95240) in {The Fel Hammer} (58.72, 57.57)| |Z|1052 1| |NPC|95240| |O|
-A Spoils of Victory |N|(npc:95237) or (npc:95240) in {The Fel Hammer} (58.72, 57.57)| |Z|1052 1| |NPC|95240, 95237| |OID|41070, 41062|
-A Spoils of Victory |QID|41070| |N|(npc:95237) in {The Fel Hammer} (58.72, 57.57)| |Z|1052 1| |NPC|95237| |O|
-A Spoils of Victory |QID|41062| |N|(npc:95240) in {The Fel Hammer} (58.72, 57.57)| |Z|1052 1| |NPC|95240| |O|
-N (npc:103047) |QID|41070.1| |N|Speak to (npc:103047) in {The Fel Hammer} (55.80, 53.84)| |Z|1052 1| |NPC|103047| |O|
-N (npc:103047) |QID|41062.1| |N|Speak to (npc:103047) in {The Fel Hammer} (55.80, 53.84)| |Z|1052 1| |NPC|103047| |O|
-C Spoils of Victory |QID|41070.2| |N|Follow (npc:103047) in {The Fel Hammer} (52.08, 54.13) (59.79, 44.98)| |Z|1052 2| |NPC|103047| |O|
-C Spoils of Victory |QID|41062.2| |N|Follow (npc:103047) in {The Fel Hammer} (52.08, 54.13) (59.79, 44.98)| |Z|1052 2| |NPC|103047| |O|
-T Spoils of Victory |QID|41070| |N|(npc:103025) in {The Fel Hammer} (59.46, 45.68)| |Z|1052 2| |NPC|103025| |O|
-T Spoils of Victory |QID|41062| |N|(npc:103025) in {The Fel Hammer} (59.46, 45.68)| |Z|1052 2| |NPC|103025| |O|
+T Return to Mardum |QID|41033| |N|(npc:95237) in {The Fel Hammer} (57.70, 67.65)| |Z|1052 2| |NPC|95237| |O|
+T Return to Mardum |QID|41221| |N|(npc:95240) in {The Fel Hammer} (57.70, 67.65)| |Z|1052 2| |NPC|95240| |O|
+A Unbridled Power |N|(npc:95240) or (npc:95237) in {The Fel Hammer} (57.70, 67.65)| |Z|1052 2| |NPC|95240, 95237| |OID|41060, 41037|
+A Unbridled Power |QID|41060| |N|(npc:95237) in {The Fel Hammer} (58.72, 57.57)| |Z|1052 2| |NPC|95237| |O|
+A Unbridled Power |QID|41037| |N|(npc:95240) in {The Fel Hammer} (58.72, 57.57)| |Z|1052 2| |NPC|95240| |O|
+C Unbridled Power |QID|41060| |N|Click on the Control Console in {The Fel Hammer} (58.99, 66.30)| |Z|1052 2| |O|
+C Unbridled Power |QID|41037| |N|Click on the Control Console in {The Fel Hammer} (58.99, 66.30)| |Z|1052 2| |O|
+T Unbridled Power |QID|41060| |N|(npc:95237) in {The Fel Hammer} (58.72, 57.57)| |Z|1052 2| |NPC|95237| |O|
+T Unbridled Power |QID|41037| |N|(npc:95240) in {The Fel Hammer} (58.72, 57.57)| |Z|1052 2| |NPC|95240| |O|
+A Spoils of Victory |N|(npc:95237) or (npc:95240) in {The Fel Hammer} (58.72, 57.57)| |Z|1052 2| |NPC|95240, 95237| |OID|41070, 41062|
+A Spoils of Victory |QID|41070| |N|(npc:95237) in {The Fel Hammer} (58.72, 57.57)| |Z|1052 2| |NPC|95237| |O|
+A Spoils of Victory |QID|41062| |N|(npc:95240) in {The Fel Hammer} (58.72, 57.57)| |Z|1052 2| |NPC|95240| |O|
+N (npc:103047) |QID|41070.1| |N|Speak to (npc:103047) in {The Fel Hammer} (55.80, 53.84)| |Z|1052 2| |NPC|103047| |O|
+N (npc:103047) |QID|41062.1| |N|Speak to (npc:103047) in {The Fel Hammer} (55.80, 53.84)| |Z|1052 2| |NPC|103047| |O|
+C Spoils of Victory |QID|41070.2| |N|Follow (npc:103047) in {The Fel Hammer} (52.08, 54.13) (59.79, 44.98)| |Z|1052 3| |NPC|103047| |O|
+C Spoils of Victory |QID|41062.2| |N|Follow (npc:103047) in {The Fel Hammer} (52.08, 54.13) (59.79, 44.98)| |Z|1052 3| |NPC|103047| |O|
+T Spoils of Victory |QID|41070| |N|(npc:103025) in {The Fel Hammer} (59.46, 45.68)| |Z|1052 3| |NPC|103025| |O|
+T Spoils of Victory |QID|41062| |N|(npc:103025) in {The Fel Hammer} (59.46, 45.68)| |Z|1052 3| |NPC|103025| |O|
 
-A Cursed Forge of the Nathrezim |QID|41064| |N|(npc:103025) in {The Fel Hammer} (59.46, 45.68)| |Z|1052 2| |NPC|103025|
-C Cursed Forge of the Nathrezim |QID|41064| |N|Use the Cursed Forge of the Nathrezim to empower your artifact in {The Fel Hammer} (58.54, 28.63)| |Z|1052 2|
-T Cursed Forge of the Nathrezim |QID|41064| |N|(npc:103025) in {The Fel Hammer} (59.46, 45.68)| |Z|1052 2| |NPC|103025|
-A The Hunter's Gaze |QID|41066| |N|(npc:95238) in {The Fel Hammer} (59.38, 51.40)| |Z|1052 2| | |NPC|95238|
-C The Hunter's Gaze |QID|41066| |N|Use the Empowered Nether Crucible to gaze upon the Burning Legion's forces in Azeroth. (57.55, 28.13)| |Z|1021 0|
-T The Hunter's Gaze |QID|41066| |N|(npc:95238) in {The Fel Hammer} (59.38, 51.40)| |Z|1052 2| |NPC|95238|
+A Cursed Forge of the Nathrezim |QID|41064| |N|(npc:103025) in {The Fel Hammer} (59.46, 45.68)| |Z|1052 3| |NPC|103025|
+C Cursed Forge of the Nathrezim |QID|41064| |N|Use the Cursed Forge of the Nathrezim to empower your artifact in {The Fel Hammer} (58.54, 28.63)| |Z|1052 3|
+T Cursed Forge of the Nathrezim |QID|41064| |N|(npc:103025) in {The Fel Hammer} (59.46, 45.68)| |Z|1052 3| |NPC|103025|
+A The Hunter's Gaze |QID|41066| |N|(npc:95238) in {The Fel Hammer} (59.38, 51.40)| |Z|1052 3| | |NPC|95238|
+C The Hunter's Gaze |QID|41066| |N|Use the Empowered Nether Crucible to gaze upon the Burning Legion's forces in Azeroth. (58.83, 52.96)| |Z|1052 3| |
+T The Hunter's Gaze |QID|41066| |N|(npc:95238) in {The Fel Hammer} (59.38, 51.40)| |Z|1052 3| |NPC|95238|
 
 --Altruis
 --Kayn 
-A Time is of the Essence |N|(npc:95238) in {The Fel Hammer} (59.38, 51.40)| |Z|1052 2| |NPC|95238| |OID|41096, 41067|
-A Time is of the Essence |QID|41096| |N|(npc:95238) in {The Fel Hammer} (59.38, 51.40)| |Z|1052 2| |NPC|95238| |O|
-A Time is of the Essence |QID|41067| |N|(npc:95238) in {The Fel Hammer} (59.38, 51.40)| |Z|1052 2| |NPC|95238| |O|
-T Time is of the Essence |QID|41096| |N|(npc:95237) in {The Fel Hammer} (58.67, 57.61)| |Z|1052 1| |NPC|95237| |O|
-T Time is of the Essence |QID|41067| |N|(npc:95240) in {The Fel Hammer} (58.67, 57.61)| |Z|1052 1| |NPC|95240| |O|
-A Direct Our Wrath |N|(npc:95237) or (npc:95240) in {The Fel Hammer} (58.67, 57.61)| |Z|1052 1| |NPC|95237, 95240| |OID|41099, 41069|
-A Direct Our Wrath |QID|41099| |N|(npc:95237)in {The Fel Hammer} (58.67, 57.61)| |Z|1052 1| |NPC|95237| |O|
-A Direct Our Wrath |QID|41069| |N|(npc:95240) in {The Fel Hammer} (58.67, 57.61)| |Z|1052 1| |NPC|95240| |O|
-C Direct Our Wrath |QID|41099| |N|Click on the (npc:98613) and choose a location (58.73, 54.89)| |Z|1052 1| |NPC|98613| |O|
-C Direct Our Wrath |QID|41069| |N|Click on the (npc:98613) and choose a location (58.73, 54.89)| |Z|1052 1| |NPC|98613| |O|
-T Direct Our Wrath |QID|41099| |N|(npc:95237) in {The Fel Hammer} (58.67, 57.61)| |Z|1052 1| |NPC|95237| |O|
-T Direct Our Wrath |QID|41069| |N|(npc:95240) in {The Fel Hammer} (58.67, 57.61)| |Z|1052 1| |NPC|95240| |O|
+A Time is of the Essence |N|(npc:95238) in {The Fel Hammer} (59.38, 51.40)| |Z|1052 3| |NPC|95238| |OID|41096, 41067|
+A Time is of the Essence |QID|41096| |N|(npc:95238) in {The Fel Hammer} (59.38, 51.40)| |Z|1052 3| |NPC|95238| |O|
+A Time is of the Essence |QID|41067| |N|(npc:95238) in {The Fel Hammer} (59.38, 51.40)| |Z|1052 3| |NPC|95238| |O|
+T Time is of the Essence |QID|41096| |N|(npc:95237) in {The Fel Hammer} (58.67, 57.61)| |Z|1052 2| |NPC|95237| |O|
+T Time is of the Essence |QID|41067| |N|(npc:95240) in {The Fel Hammer} (58.67, 57.61)| |Z|1052 2| |NPC|95240| |O|
+A Direct Our Wrath |N|(npc:95237) or (npc:95240) in {The Fel Hammer} (58.67, 57.61)| |Z|1052 2| |NPC|95237, 95240| |OID|41099, 41069|
+A Direct Our Wrath |QID|41099| |N|(npc:95237)in {The Fel Hammer} (58.67, 57.61)| |Z|1052 2| |NPC|95237| |O|
+A Direct Our Wrath |QID|41069| |N|(npc:95240) in {The Fel Hammer} (58.67, 57.61)| |Z|1052 2| |NPC|95240| |O|
+C Direct Our Wrath |QID|41099| |N|Click on the (npc:98613) and choose a location (58.73, 54.89)| |Z|1052 2| |NPC|98613| |O|
+C Direct Our Wrath |QID|41069| |N|Click on the (npc:98613) and choose a location (58.73, 54.89)| |Z|1052 2| |NPC|98613| |O|
+T Direct Our Wrath |QID|41099| |N|(npc:95237) in {The Fel Hammer} (58.67, 57.61)| |Z|1052 2| |NPC|95237| |O|
+T Direct Our Wrath |QID|41069| |N|(npc:95240) in {The Fel Hammer} (58.67, 57.61)| |Z|1052 2| |NPC|95240| |O|
 
-N Paradise Lost |TID|39718| |N|Switch to (guide:"1015(98-110)#1015(98-110)#1015(98-110)") guide| |O|
-N The Tranquil Forest |TID|39731| |N|Switch to (guide:"1018(98-110)#1018(98-110)#1018(98-110)") guide| |O|
-N The Lone Mountain |TID|39733| |N|Switch to (guide:"1024(98-110)#1024(98-110)#1024(98-110)") guide| |O|
-N Stormheim |TID|39735| |N|Switch to (guide:"1017(98-110)#1017(98-110)#1017(98-110)") guide| |O|
-N Stormheim |TID|44701| |N|Switch to (guide:"1017(98-110)#1017(98-110)#1017(98-110)") guide| |O|
-N Stormheim |TID|39864| |N|Switch to (guide:"1017(98-110)#1017(98-110)#1017(98-110)") guide| |O|
-N Stormheim |TID|44700| |N|Switch to (guide:"1017(98-110)#1017(98-110)#1017(98-110)") guide| |O|
+N Paradise Lost |QID|39718| |N|Switch to (guide:"1015(98-110)#1015(98-110)#1015(98-110)") guide| |O|
+N The Tranquil Forest |QID|39731| |N|Switch to (guide:"1018(98-110)#1018(98-110)#1018(98-110)") guide| |O|
+N The Lone Mountain |QID|39733| |N|Switch to (guide:"1024(98-110)#1024(98-110)#1024(98-110)") guide| |O|
+N Stormheim |QID|39735| |N|Switch to (guide:"1017(98-110)#1017(98-110)#1017(98-110)") guide| |O|
+N Stormheim |QID|44701| |N|Switch to (guide:"1017(98-110)#1017(98-110)#1017(98-110)") guide| |O|
+N Stormheim |QID|39864| |N|Switch to (guide:"1017(98-110)#1017(98-110)#1017(98-110)") guide| |O|
+N Stormheim |QID|44700| |N|Switch to (guide:"1017(98-110)#1017(98-110)#1017(98-110)") guide| |O|
 
 N Level 101 Required |N|You need to be at least level 102 to continue with the class campaign quest line| |PL|101|
 
@@ -178,56 +179,56 @@ A Return to the Fel Hammer |N|(npc:112666) in {Krasus' Landing} (60.85, 44.50)| 
 A Return to the Fel Hammer |QID|44087| |N|(npc:112666) in {Krasus' Landing} (60.85, 44.50)| |Z|1014 10| |NPC|112666| |O|
 A Return to the Fel Hammer |QID|42666| |N|(npc:112666) in {Krasus' Landing} (60.85, 44.50)| |Z|1014 10| |NPC|112666| |O|
 
-R The Fel Hammer |QID|44087.1| |N|Travel to {The Fel Hammer} (58.89, 54.03)| |Z|1052 1| |O|
-R The Fel Hammer |QID|42666.1| |N|Travel to {The Fel Hammer} (58.89, 54.03)| |Z|1052 1| |O|
-N (npc:103025) |QID|44087.2| |N|Return to (npc:103025) in {The Fel Hammer} (58.89, 54.03)| |Z|1052 1| |NPC|103025| |O|
-N (npc:103025) |QID|42666.2| |N|Return to (npc:103025) in {The Fel Hammer} (58.89, 54.03)| |Z|1052 1| |NPC|103025| |O|
-T Return to the Fel Hammer |QID|44087| |N|(npc:103025) in {The Fel Hammer} (55.99, 54.09)| |Z|1052 1| |NPC|103025| |O|
-T Return to the Fel Hammer |QID|42666| |N|(npc:103025) in {The Fel Hammer} (55.99, 54.09)| |Z|1052 1| |NPC|103025| |O|
+R The Fel Hammer |QID|44087.1| |N|Travel to {The Fel Hammer} (58.89, 54.03)| |Z|1052 2| |O|
+R The Fel Hammer |QID|42666.1| |N|Travel to {The Fel Hammer} (58.89, 54.03)| |Z|1052 2| |O|
+N (npc:103025) |QID|44087.2| |N|Return to (npc:103025) in {The Fel Hammer} (58.89, 54.03)| |Z|1052 2| |NPC|103025| |O|
+N (npc:103025) |QID|42666.2| |N|Return to (npc:103025) in {The Fel Hammer} (58.89, 54.03)| |Z|1052 2| |NPC|103025| |O|
+T Return to the Fel Hammer |QID|44087| |N|(npc:103025) in {The Fel Hammer} (55.99, 54.09)| |Z|1052 2| |NPC|103025| |O|
+T Return to the Fel Hammer |QID|42666| |N|(npc:103025) in {The Fel Hammer} (55.99, 54.09)| |Z|1052 2| |NPC|103025| |O|
 --Kayn, Altruis
-A Rise, Champions |N|(npc:103025) in {The Fel Hammer} (55.99, 54.09)| |Z|1052 1| |OID|42670, 42671| |NPC|103025|
-A Rise, Champions |QID|42670| |N|(npc:103025) in {The Fel Hammer} (55.99, 54.09)| |Z|1052 1| |NPC|103025| |O|
-A Rise, Champions |QID|42671| |N|(npc:103025) in {The Fel Hammer} (55.99, 54.09)| |Z|1052 1| |NPC|103025| |O|
-N (npc:108572) |QID|42670.1| |N|Speak to (npc:108572) to recruit him as a follower in {The Fel Hammer} (58.37, 57.47)| |Z|1052 1| |NPC|108572| |O|
-N (npc:108326) |QID|42670.2| |N|Speak to (npc:108326) to recruit her as a follower in {The Fel Hammer} (56.21, 38.57)| |Z|1052 1| |NPC|108326| |O|
-N (npc:108571) |QID|42671.1| |N|Speak to (npc:108571) to recruit him as a follower in {The Fel Hammer} (58.37, 57.47)| |Z|1052 1| |NPC|108571| |O|
-N (npc:108326) |QID|42671.2| |N|Speak to (npc:108326) to recruit her as a follower in {The Fel Hammer} (56.21, 38.57)| |Z|1052 1| |NPC|108326| |O|
-T Rise, Champions |QID|42671| |N|(npc:103761) in {The Fel Hammer} (59.09, 57.06)| |Z|1052 1| |NPC|103761| |O|
-T Rise, Champions |QID|42671| |N|(npc:103761) in {The Fel Hammer} (59.09, 57.06)| |Z|1052 1| |NPC|103761| |O|
-A Things Gaardoun Needs |N|(npc:103761) in {The Fel Hammer} (59.09, 57.06)| |Z|1052 1| |OID|42677, 44161||NPC|103761|
-A Things Gaardoun Needs |QID|42677| |N|(npc:103761) in {The Fel Hammer} (59.09, 57.06)| |Z|1052 1| |NPC|103761| |O|
-A Things Gaardoun Needs |QID|44161| |N|(npc:103761) in {The Fel Hammer} (59.09, 57.06)| |Z|1052 1| |NPC|103761| |O|
-C Things Gaardoun Needs |QID|42677| |N|Use the Scouting Map and complete the mission, (mission:953) in {The Fel Hammer}. This mission will only take 2 minutes to complete (59.03, 54.40)| |Z|1052 1 |O|
-C Things Gaardoun Needs |QID|44161| |N|Use the Scouting Map and complete the mission, (mission:953) in {The Fel Hammer}. This mission will only take 2 minutes to complete (59.03, 54.40)| |Z|1052 1 |O|
-T Things Gaardoun Needs |QID|42677| |N|(npc:103761) in {The Fel Hammer} (59.48, 57.38)| |Z|1052 1| |NPC|103761| |O|
-T Things Gaardoun Needs |QID|44161| |N|(npc:103761) in {The Fel Hammer} (59.48, 57.38)| |Z|1052 1| |NPC|103761| |O|
+A Rise, Champions |N|(npc:103025) in {The Fel Hammer} (55.99, 54.09)| |Z|1052 2| |OID|42670, 42671| |NPC|103025|
+A Rise, Champions |QID|42670| |N|(npc:103025) in {The Fel Hammer} (55.99, 54.09)| |Z|1052 2| |NPC|103025| |O|
+A Rise, Champions |QID|42671| |N|(npc:103025) in {The Fel Hammer} (55.99, 54.09)| |Z|1052 2| |NPC|103025| |O|
+N (npc:108572) |QID|42670.1| |N|Speak to (npc:108572) to recruit him as a follower in {The Fel Hammer} (58.37, 57.47)| |Z|1052 2| |NPC|108572| |O|
+N (npc:108326) |QID|42670.2| |N|Speak to (npc:108326) to recruit her as a follower in {The Fel Hammer} (56.21, 38.57)| |Z|1052 2| |NPC|108326| |O|
+N (npc:108571) |QID|42671.1| |N|Speak to (npc:108571) to recruit him as a follower in {The Fel Hammer} (58.37, 57.47)| |Z|1052 2| |NPC|108571| |O|
+N (npc:108326) |QID|42671.2| |N|Speak to (npc:108326) to recruit her as a follower in {The Fel Hammer} (56.21, 38.57)| |Z|1052 2| |NPC|108326| |O|
+T Rise, Champions |QID|42671| |N|(npc:103761) in {The Fel Hammer} (59.09, 57.06)| |Z|1052 2| |NPC|103761| |O|
+T Rise, Champions |QID|42671| |N|(npc:103761) in {The Fel Hammer} (59.09, 57.06)| |Z|1052 2| |NPC|103761| |O|
+A Things Gaardoun Needs |N|(npc:103761) in {The Fel Hammer} (59.09, 57.06)| |Z|1052 2| |OID|42677, 44161| |NPC|103761|
+A Things Gaardoun Needs |QID|42677| |N|(npc:103761) in {The Fel Hammer} (59.09, 57.06)| |Z|1052 2| |NPC|103761| |O|
+A Things Gaardoun Needs |QID|44161| |N|(npc:103761) in {The Fel Hammer} (59.09, 57.06)| |Z|1052 2| |NPC|103761| |O|
+C Things Gaardoun Needs |QID|42677| |N|Use the Scouting Map and complete the mission, (mission:953) in {The Fel Hammer}. This mission will only take 2 minutes to complete (59.03, 54.40)| |Z|1052 2 |O|
+C Things Gaardoun Needs |QID|44161| |N|Use the Scouting Map and complete the mission, (mission:953) in {The Fel Hammer}. This mission will only take 2 minutes to complete (59.03, 54.40)| |Z|1052 2 |O|
+T Things Gaardoun Needs |QID|42677| |N|(npc:103761) in {The Fel Hammer} (59.48, 57.38)| |Z|1052 2| |NPC|103761| |O|
+T Things Gaardoun Needs |QID|44161| |N|(npc:103761) in {The Fel Hammer} (59.48, 57.38)| |Z|1052 2| |NPC|103761| |O|
 
-A Broken Warriors |QID|42679| |N|(npc:103761) in {The Fel Hammer} (59.48, 57.38)| |Z|1052 1| |NPC|103761|
-C Broken Warriors |QID|42679| |N|Speak with (npc:103025) and train Ashtongue Warriors in {The Fel Hammer}<br/><br/>Wait until the training is complete then click on the banner (55.58, 54.54)| |Z|1052 1| |NPC|103025|
-T Broken Warriors |QID|42679| |N|(npc:103761) in {The Fel Hammer} (59.34, 57.39)| |Z|1052 1| |NPC|103761|
-A Loramus, Is That You? |QID|42681| |N|(npc:103761) in {The Fel Hammer} (59.34, 57.39)| |Z|1052 1| |NPC|103761|
-C Loramus, Is That You? |QID|42681| |N|in {The Fel Hammer} (58.01, 54.16)| |Z|1052 1|
-T Loramus, Is That You? |QID|42681| |N|(npc:103761) in {The Fel Hammer} (59.29, 56.83)| |Z|1052 1| |NPC|103761|
-A Demonic Improvements |QID|42683| |N|(npc:103761) in {The Fel Hammer} (59.29, 56.83)| |Z|1052 1| |NPC|103761|
-N Loramus' story |QID|42683.1| |N|Speak to (npc:110599) in {The Fel Hammer} (55.44, 62.09)| |Z|1052 2| |NPC|110599|
-N Class Hall Upgrade |QID|42683.2| |N|Choose a class hall upgrade with (npc:110599) in {The Fel Hammer} (55.44, 62.09)| |Z|1052 2|
-T Demonic Improvements |QID|42683| |N|(npc:98632) in {The Fel Hammer} (60.01, 49.52)| |Z|1052 1| |NPC|98632|
-A Additional Accoutrements |QID|42682| |N|(npc:98632) in {The Fel Hammer} (59.84, 49.54)| |Z|1052 1| |NPC|98632|
+A Broken Warriors |QID|42679| |N|(npc:103761) in {The Fel Hammer} (59.48, 57.38)| |Z|1052 2| |NPC|103761|
+C Broken Warriors |QID|42679| |N|Speak with (npc:103025) and train Ashtongue Warriors in {The Fel Hammer}<br/><br/>Wait until the training is complete then click on the banner (55.58, 54.54)| |Z|1052 2| |NPC|103025|
+T Broken Warriors |QID|42679| |N|(npc:103761) in {The Fel Hammer} (59.34, 57.39)| |Z|1052 2| |NPC|103761|
+A Loramus, Is That You? |QID|42681| |N|(npc:103761) in {The Fel Hammer} (59.34, 57.39)| |Z|1052 2| |NPC|103761|
+C Loramus, Is That You? |QID|42681| |N|in {The Fel Hammer} (58.01, 54.16)| |Z|1052 2|
+T Loramus, Is That You? |QID|42681| |N|(npc:103761) in {The Fel Hammer} (59.29, 56.83)| |Z|1052 2| |NPC|103761|
+A Demonic Improvements |QID|42683| |N|(npc:103761) in {The Fel Hammer} (59.29, 56.83)| |Z|1052 2| |NPC|103761|
+N Loramus' story |QID|42683.1| |N|Speak to (npc:110599) in {The Fel Hammer} (55.44, 62.09)| |Z|1052 3| |NPC|110599|
+N Class Hall Upgrade |QID|42683.2| |N|Choose a class hall upgrade with (npc:110599) in {The Fel Hammer} (55.44, 62.09)| |Z|1052 3|
+T Demonic Improvements |QID|42683| |N|(npc:98632) in {The Fel Hammer} (60.01, 49.52)| |Z|1052 2| |NPC|98632|
+A Additional Accoutrements |QID|42682| |N|(npc:98632) in {The Fel Hammer} (59.84, 49.54)| |Z|1052 2| |NPC|98632|
 
 N Level 102 Required |N|You need to be at least level 102 to continue with the class campaign quest line| |PL|102|
 
 --Altruis
 --Kayn
-A In Pursuit of Power |N|(npc:95237) in {The Fel Hammer} (58.67, 57.99)| |Z|1052 1| |NPC|95237| |OID|44379, 44383|
-A In Pursuit of Power |QID|44379| |N|(npc:95237) in {The Fel Hammer} (58.67, 57.99)| |Z|1052 1| |NPC|95237|
-A In Pursuit of Power |QID|44383| |N|(npc:108572) in {The Fel Hammer} (58.67, 57.99)| |Z|1052 1| |NPC|108572|
-C In Pursuit of Power |QID|44379| |N|Speak with (npc:95237) to pursue another artifact in {The Fel Hammer} (58.67, 57.99)| |Z|1052 1| |NPC|95237| |O|
-C In Pursuit of Power |QID|44383| |N|Speak with (npc:108572) to pursue another artifact in {The Fel Hammer} (58.67, 57.99)| |Z|1052 1| |NPC|108572| |O|
-T In Pursuit of Power |QID|44379| |N|(npc:95237) in {The Fel Hammer} (58.67, 57.99)| |Z|1052 1| |NPC|95237| |O|
-T In Pursuit of Power |QID|44383| |N|(npc:108572) in {The Fel Hammer} (58.67, 57.99)| |Z|1052 1| |NPC|108572| |O|
+A In Pursuit of Power |N|(npc:95237) in {The Fel Hammer} (58.67, 57.99)| |Z|1052 2| |NPC|95237| |OID|44379, 44383|
+A In Pursuit of Power |QID|44379| |N|(npc:95237) in {The Fel Hammer} (58.67, 57.99)| |Z|1052 2| |NPC|95237|
+A In Pursuit of Power |QID|44383| |N|(npc:108572) in {The Fel Hammer} (58.67, 57.99)| |Z|1052 2| |NPC|108572|
+C In Pursuit of Power |QID|44379| |N|Speak with (npc:95237) to pursue another artifact in {The Fel Hammer} (58.67, 57.99)| |Z|1052 2| |NPC|95237| |O|
+C In Pursuit of Power |QID|44383| |N|Speak with (npc:108572) to pursue another artifact in {The Fel Hammer} (58.67, 57.99)| |Z|1052 2| |NPC|108572| |O|
+T In Pursuit of Power |QID|44379| |N|(npc:95237) in {The Fel Hammer} (58.67, 57.99)| |Z|1052 2| |NPC|95237| |O|
+T In Pursuit of Power |QID|44383| |N|(npc:108572) in {The Fel Hammer} (58.67, 57.99)| |Z|1052 2| |NPC|108572| |O|
 
-N Accept Quest |N|Accept (qid:40819) from (npc:99254) or (npc:99247) in {The Fel Hammer} (58.67, 57.99)| |Z|1052 1| |NPC|99254, 99247| |OID|41803, 40247|
-N Accept Quest |N|Accept (qid:40247) from (npc:99254) or (npc:99247) in {The Fel Hammer} (58.67, 57.99)| |Z|1052 1| |NPC|99254, 99247| |OID|41120, 40819|
+N Accept Quest |N|Accept (qid:40819) from (npc:99254) or (npc:99247) in {The Fel Hammer} (58.67, 57.99)| |Z|1052 2| |NPC|99254, 99247| |OID|41803, 40247|
+N Accept Quest |N|Accept (qid:40247) from (npc:99254) or (npc:99247) in {The Fel Hammer} (58.67, 57.99)| |Z|1052 2| |NPC|99254, 99247| |OID|41120, 40819|
 
 R The Violet Citadel |QID|44004| |N|Travel to {The Violet Citadel} (28.66, 48.37)| |Z|1014 10|
 A A Falling Star |N|(npc:90417) in {The Violet Citadel} (28.66, 48.37)| |Z|1014 10| |NPC|90417| |OID|44257, 44009|
@@ -268,27 +269,27 @@ C Bringer of the Light |QID|44004| |N|Discover the purpose of the (item:140574) 
 R The Violet Citadel |TID|44004| |N|Travel to {The Violet Citadel} (28.46, 48.29)| |Z|1014 10|
 T Bringer of the Light |QID|44004| |N|(npc:90417) in {The Violet Citadel} (28.46, 48.29)| |Z|1014 10| |NPC|90417|
 A Light's Charge |QID|44153| |N|(npc:90417) in {The Violet Citadel} (28.46, 48.29)| |Z|1014 10| |NPC|90417|
-C Light's Charge |QID|44153| |N|Place Light's Heart in your Order Hall| |Z|1052 1|
-T Light's Charge |QID|44153| |N|(npc:44153) in class Order Hall (58.64,43.14)| |Z|1052 1| |NPC|44153|
-C Additional Accoutrements |QID|42682| |N|Use the Scouting Map and complete the mission, (mission:1155) in {The Fel Hammer}. This is a 4 hours mission so come back later to complete this quest. (58.67, 53.46)| |Z|1052 1|
-T Additional Accoutrements |QID|42682| |N|(npc:103761) in {The Fel Hammer} (59.42, 57.71)| |Z|1052 1| |NPC|103761|
+C Light's Charge |QID|44153| |N|Place Light's Heart in your Order Hall| |Z|1052 2|
+T Light's Charge |QID|44153| |N|(npc:44153) in class Order Hall (58.64,43.14)| |Z|1052 2| |NPC|44153|
+C Additional Accoutrements |QID|42682| |N|Use the Scouting Map and complete the mission, (mission:1155) in {The Fel Hammer}. This is a 4 hours mission so come back later to complete this quest. (58.67, 53.46)| |Z|1052 2|
+T Additional Accoutrements |QID|42682| |N|(npc:103761) in {The Fel Hammer} (59.42, 57.71)| |Z|1052 2| |NPC|103761|
 
 N Level 103 Required |N|You need to be at least level 103 to continue with the class campaign quest line| |PL|103|
 
-A The Blood of Demons |QID|37447| |N|(npc:103761) in {The Fel Hammer} (59.34,57.62)| |Z|1052 1| |NPC|103761|
+A The Blood of Demons |QID|37447| |N|(npc:103761) in {The Fel Hammer} (59.34,57.62)| |Z|1052 2| |NPC|103761|
 
 R Azsuna |QID|37447| |N|Travel to {Azsuna} (43.27,44.21)| |Z|1015 0|
 C The Blood of Demons |QID|37447| |N|Kill any demons in {Azsuna} and collect 100 (item:137677) (43.27,44.21)| |Z|1015 0|
 
-R The Fel Hammer |OID|42593| |N|Travel to {The Fel Hammer} (59.19,85.76)| |Z|1052 1| 
-T The Blood of Demons |QID|37447| |N|(npc:95240) or (npc:95237) in {The Fel Hammer} (58.39,51.56)| |Z|1052 2| |NPC|95240, 95237|
-A Immortal Soul |QID|42510| |N|(npc:95240) or (npc:95237) in {The Fel Hammer} (58.39,51.56)| |Z|1052 2| |NPC|95240, 95237|
-C Immortal Soul |QID|42510| |N|Use the (item:137690) in {The Fel Hammer} (58.39,51.56)| |Z|1052 2|
-T Immortal Soul |QID|42510| |N|(npc:95240) or (npc:95237) in {The Fel Hammer} (58.39,51.56)| |Z|1052 2| |NPC|95240, 95237|
-A Leader of the Illidari |QID|42522| |N|(npc:95240) or (npc:95237) in {The Fel Hammer} (58.32, 51.93)| |Z|1052 2| |NPC|95240, 95237|
-T Leader of the Illidari |QID|42522| |N|(npc:95240) or (npc:95237) in {The Fel Hammer} (58.40, 58.28)| |Z|1052 1| |NPC|95240, 95237|
+R The Fel Hammer |OID|42593| |N|Travel to {The Fel Hammer} (59.19,85.76)| |Z|1052 2| 
+T The Blood of Demons |QID|37447| |N|(npc:95240) or (npc:95237) in {The Fel Hammer} (58.39,51.56)| |Z|1052 3| |NPC|95240, 95237|
+A Immortal Soul |QID|42510| |N|(npc:95240) or (npc:95237) in {The Fel Hammer} (58.39,51.56)| |Z|1052 3| |NPC|95240, 95237|
+C Immortal Soul |QID|42510| |N|Use the (item:137690) in {The Fel Hammer} (58.39,51.56)| |Z|1052 3|
+T Immortal Soul |QID|42510| |N|(npc:95240) or (npc:95237) in {The Fel Hammer} (58.39,51.56)| |Z|1052 3| |NPC|95240, 95237|
+A Leader of the Illidari |QID|42522| |N|(npc:95240) or (npc:95237) in {The Fel Hammer} (58.32, 51.93)| |Z|1052 3| |NPC|95240, 95237|
+T Leader of the Illidari |QID|42522| |N|(npc:95240) or (npc:95237) in {The Fel Hammer} (58.40, 58.28)| |Z|1052 2| |NPC|95240, 95237|
 
-A The Arcane Way |QID|42593| |N|(npc:98632) in {The Fel Hammer} (59.84, 49.63)| |Z|1052 1| |NPC|98632|
+A The Arcane Way |QID|42593| |N|(npc:98632) in {The Fel Hammer} (59.84, 49.63)| |Z|1052 2| |NPC|98632|
 
 R The Violet Citadel |TID|42593| |N|Travel to {The Violet Citadel} (25.93, 51.86)| |Z|1014 10| |NPC|107968|
 T The Arcane Way |QID|42593| |N|(npc:107968) in {The Violet Citadel} (25.93, 51.86)| |Z|1014 10| |NPC|107968|
@@ -303,16 +304,16 @@ N (npc:107998) |QID|42594.7| |N|Follow (npc:107998) towards {The Underbelly} ent
 N (npc:107998) |QID|42594.8| |N|The (npc:107998) is above the {The Underbelly entrance. You will need to use the double jump ability to reach it (59.85, 49.25)| |Z|1014 10| |NPC|107998|
 N (item:138139) |QID|42594.9| |N|Collect (item:138139) from the ground in {Dalaran} (59.85, 49.25)| |Z|1014 10|
 
-R The Fel Hammer |NB|Travel to {The Fel Hammer} (57.81, 53.08)| |Z|1052 1|
-T Move Like No Other |QID|42594| |N|(npc:108782) in {The Fel Hammer} (57.81, 53.08)| |Z|1052 1| |NPC|108782|
-A Back in Black |QID|42801| |N|(npc:108782) in {The Fel Hammer} (57.81, 53.08)| |Z|1052 1| |NPC|108782|
-C Back in Black |QID|42801| |N|Use the Scouting Map and complete (mission:1156) mission in {The Fel Hammer}. This is a 1 hour mission (59.34, 53.47)| |Z|1052 1|
-T Back in Black |QID|42801| |N|(npc:98632) in {The Fel Hammer} (59.84, 49.63)| |Z|1052 1| |NPC|98632|
-A Confrontation at the Black Temple |N|(npc:98632) in {The Fel Hammer} (59.84, 49.63)| |Z|1052 1| |NPC|98632| |OID|42634, 42921|
-A Confrontation at the Black Temple |QID|42921| |N|(npc:98632) in {The Fel Hammer} (59.84, 49.63)| |Z|1052 1| |NPC|98632| |O|
-A Confrontation at the Black Temple |QID|42634| |N|(npc:98632) in {The Fel Hammer} (59.84, 49.63)| |Z|1052 1| |NPC|98632| |O|
-N Use Gateway |QID|42921.2| |N|Use the Gateway created by (npc:98632) in {The Fel Hammer} (62.33, 50.36)| |Z|1052 1| |NPC|98632| |O|
-N Use Gateway |QID|42634.2| |N|Use the Gateway created by (npc:98632) in {The Fel Hammer} (62.33, 50.36)| |Z|1052 1| |NPC|98632| |O|
+R The Fel Hammer |NB|Travel to {The Fel Hammer} (57.81, 53.08)| |Z|1052 2|
+T Move Like No Other |QID|42594| |N|(npc:108782) in {The Fel Hammer} (57.81, 53.08)| |Z|1052 2| |NPC|108782|
+A Back in Black |QID|42801| |N|(npc:108782) in {The Fel Hammer} (57.81, 53.08)| |Z|1052 2| |NPC|108782|
+C Back in Black |QID|42801| |N|Use the Scouting Map and complete (mission:1156) mission in {The Fel Hammer}. This is a 1 hour mission (59.34, 53.47)| |Z|1052 2|
+T Back in Black |QID|42801| |N|(npc:98632) in {The Fel Hammer} (59.84, 49.63)| |Z|1052 2| |NPC|98632|
+A Confrontation at the Black Temple |N|(npc:98632) in {The Fel Hammer} (59.84, 49.63)| |Z|1052 2| |NPC|98632| |OID|42634, 42921|
+A Confrontation at the Black Temple |QID|42921| |N|(npc:98632) in {The Fel Hammer} (59.84, 49.63)| |Z|1052 2| |NPC|98632| |O|
+A Confrontation at the Black Temple |QID|42634| |N|(npc:98632) in {The Fel Hammer} (59.84, 49.63)| |Z|1052 2| |NPC|98632| |O|
+N Use Gateway |QID|42921.2| |N|Use the Gateway created by (npc:98632) in {The Fel Hammer} (62.33, 50.36)| |Z|1052 2| |NPC|98632| |O|
+N Use Gateway |QID|42634.2| |N|Use the Gateway created by (npc:98632) in {The Fel Hammer} (62.33, 50.36)| |Z|1052 2| |NPC|98632| |O|
 C You CAN Go Home |SID|30548|1| |N|Speak with (npc:108572) or (npc:108571) in {Temple Summit} (55.94, 19.71)| |Z|1085 1| |NPC|108572, 108571| |OID|42665, 39741|
 C Nothing Will Bar Our Way |SID|30466|2| |N|Ascend the steps and await the opening of the gate in {Temple Summit} (70.55, 34.82)(70.55, 34.82)| |Z|1085 1| |OID|42665, 39741|
 C Confronting an Old Foe |SID|30483|3| |N|Speak with (npc:108572) or (npc:108571) and then confront (npc:108090) in {Temple Summit} (70.41, 34.77)| |Z|1085 1| |NPC|108572, 108571, 108090| |OID|42665, 39741|
@@ -320,32 +321,32 @@ C If He Will Not Listen to Reason... |SID|30484|4| |N|Defeat (npc:108090) in {Te
 C A Final Attempt at Diplomacy |SID|30485|5| |N|Speak with (npc:108090) in {Temple Summit} (52.35, 64.54)| |Z|1085 1| |NPC|108090| |OID|42665, 39741|
 
 R The Fel Hammer |N|Use the gateway to return to {The Fel Hammer} (34.21, 69.61)| |Z|1085 1| |O|
-T Confrontation at the Black Temple |QID|42921| |N|(npc:108572) in {The Fel Hammer} (58.65, 57.59)| |Z|1052 1| |NPC|108572| |O|
-T Confrontation at the Black Temple |QID|42634| |N|(npc:108571) in {The Fel Hammer} (58.65, 57.59)| |Z|1052 1| |NPC|108571| |O|
-A Into Our Ranks |QID|42665| |N|(npc:108572) in {The Fel Hammer} (58.65, 57.59)| |Z|1052 1| |NPC|108572| |PRE|42921|
-A Into Our Ranks |QID|39741| |N|(npc:108571) in {The Fel Hammer} (58.65, 57.59)| |Z|1052 1| |NPC|108572| |PRE|42634|
-N (npc:103761) |QID|42665.2| |N|Recruit (npc:103761) in {The Fel Hammer} (59.35, 57.40)| |Z|1052 1| |NPC|103761| |PRE|42921|
-N (npc:108246) |QID|42665.1| |N|Recruit (npc:108246) in {The Fel Hammer} (57.92, 57.47)| |Z|1052 1| |NPC|108246| |PRE|42921|
-N (npc:103761) |QID|39741.2| |N|Recruit (npc:103761) in {The Fel Hammer} (59.35, 57.40)| |Z|1052 1| |NPC|103761| |PRE|42634|
-N (npc:108246) |QID|39741.1| |N|Recruit (npc:108246) in {The Fel Hammer} (57.92, 57.47)| |Z|1052 1| |NPC|108246| |PRE|42634|
-T Into Our Ranks |QID|42665| |N|(npc:98632) in {The Fel Hammer} (59.98, 48.97)| |Z|1052 1| |NPC|98632| |PRE|42921|
-T Into Our Ranks |QID|39741| |N|(npc:98632) in {The Fel Hammer} (59.98, 48.97)| |Z|1052 1| |NPC|98632| |PRE|42634|
-A Unexpected Visitors |QID|42131| |N|(npc:98632) in {The Fel Hammer} (59.98, 48.97)| |Z|1052 1| |NPC|98632|
-A Securing Mardum |QID|42802| |N|(npc:98632)in {The Fel Hammer} (59.98, 48.97)| |Z|1052 1| |NPC|98632|
-C Unexpected Visitors |QID|42131| |N|Listen to your unexpected visitors in {The Fel Hammer} (56.64, 48.27)| |Z|1052 1| |NPC|108994|
-T Unexpected Visitors |QID|42131| |N|(npc:108782) in {The Fel Hammer} (57.58, 51.82)| |Z|1052 1| |NPC|108782|
-A Working With the Wardens |QID|42731| |N|(npc:108782) in {The Fel Hammer} (57.58, 51.82)| |Z|1052 1| |NPC|108782|
-C Securing Mardum |QID|42802| |N|Use the Scouting Map and complete the mission, (mission:1245). This is a 1 hour mission (59.23, 54.67)| |Z|1052 1|
-T Securing Mardum |QID|42802| |N|(npc:108782) in {The Fel Hammer} (57.67, 52.44)| |Z|1052 1| |NPC|108782|
-A Green Adepts |QID|42808| |N|(npc:108782) in {The Fel Hammer} (57.67, 52.44)| |Z|1052 1| |NPC|108782|
-C Green Adepts |QID|42808| |N|Speak with your Illidari recruiter, (npc:103760) in {The Fel Hammer} (58.36, 40.24)| |Z|1052 1| |NPC|103760|
-T Green Adepts |QID|42808| |N|(npc:108782) in {The Fel Hammer} (57.63, 51.70)| |Z|1052 1| |NPC|108782|
-C Working With the Wardens |QID|42731| |N|Use the Scouting Map and complete the "Working With the Wardens" missions.<br/><br/>You will need to complete several of these mission to complete the quest (58.67, 53.46)| |Z|1052 1| |NPC|98632|
-T Working With the Wardens |QID|42731| |N|(npc:108782) in {The Fel Hammer} (57.8, 53.6)| |Z|1052 1| |NPC|98632|
+T Confrontation at the Black Temple |QID|42921| |N|(npc:108572) in {The Fel Hammer} (58.65, 57.59)| |Z|1052 2| |NPC|108572| |O|
+T Confrontation at the Black Temple |QID|42634| |N|(npc:108571) in {The Fel Hammer} (58.65, 57.59)| |Z|1052 2| |NPC|108571| |O|
+A Into Our Ranks |QID|42665| |N|(npc:108572) in {The Fel Hammer} (58.65, 57.59)| |Z|1052 2| |NPC|108572| |PRE|42921|
+A Into Our Ranks |QID|39741| |N|(npc:108571) in {The Fel Hammer} (58.65, 57.59)| |Z|1052 2| |NPC|108572| |PRE|42634|
+N (npc:103761) |QID|42665.2| |N|Recruit (npc:103761) in {The Fel Hammer} (59.35, 57.40)| |Z|1052 2| |NPC|103761| |PRE|42921|
+N (npc:108246) |QID|42665.1| |N|Recruit (npc:108246) in {The Fel Hammer} (57.92, 57.47)| |Z|1052 2| |NPC|108246| |PRE|42921|
+N (npc:103761) |QID|39741.2| |N|Recruit (npc:103761) in {The Fel Hammer} (59.35, 57.40)| |Z|1052 2| |NPC|103761| |PRE|42634|
+N (npc:108246) |QID|39741.1| |N|Recruit (npc:108246) in {The Fel Hammer} (57.92, 57.47)| |Z|1052 2| |NPC|108246| |PRE|42634|
+T Into Our Ranks |QID|42665| |N|(npc:98632) in {The Fel Hammer} (59.98, 48.97)| |Z|1052 2| |NPC|98632| |PRE|42921|
+T Into Our Ranks |QID|39741| |N|(npc:98632) in {The Fel Hammer} (59.98, 48.97)| |Z|1052 2| |NPC|98632| |PRE|42634|
+A Unexpected Visitors |QID|42131| |N|(npc:98632) in {The Fel Hammer} (59.98, 48.97)| |Z|1052 2| |NPC|98632|
+A Securing Mardum |QID|42802| |N|(npc:98632)in {The Fel Hammer} (59.98, 48.97)| |Z|1052 2| |NPC|98632|
+C Unexpected Visitors |QID|42131| |N|Listen to your unexpected visitors in {The Fel Hammer} (56.64, 48.27)| |Z|1052 2| |NPC|108994|
+T Unexpected Visitors |QID|42131| |N|(npc:108782) in {The Fel Hammer} (57.58, 51.82)| |Z|1052 2| |NPC|108782|
+A Working With the Wardens |QID|42731| |N|(npc:108782) in {The Fel Hammer} (57.58, 51.82)| |Z|1052 2| |NPC|108782|
+C Securing Mardum |QID|42802| |N|Use the Scouting Map and complete the mission, (mission:1245). This is a 1 hour mission (59.23, 54.67)| |Z|1052 2|
+T Securing Mardum |QID|42802| |N|(npc:108782) in {The Fel Hammer} (57.67, 52.44)| |Z|1052 2| |NPC|108782|
+A Green Adepts |QID|42808| |N|(npc:108782) in {The Fel Hammer} (57.67, 52.44)| |Z|1052 2| |NPC|108782|
+C Green Adepts |QID|42808| |N|Speak with your Illidari recruiter, (npc:103760) in {The Fel Hammer} (58.36, 40.24)| |Z|1052 2| |NPC|103760|
+T Green Adepts |QID|42808| |N|(npc:108782) in {The Fel Hammer} (57.63, 51.70)| |Z|1052 2| |NPC|108782|
+C Working With the Wardens |QID|42731| |N|Use the Scouting Map and complete the "Working With the Wardens" missions.<br/><br/>You will need to complete several of these mission to complete the quest (58.67, 53.46)| |Z|1052 2| |NPC|98632|
+T Working With the Wardens |QID|42731| |N|(npc:108782) in {The Fel Hammer} (57.8, 53.6)| |Z|1052 2| |NPC|98632|
 
 N Level 110 Required |N|You need to be at least level 110 to continue with the class campaign quest line| |PL|110|
 
-A Deal With It Personally |QID|42787| |N|(npc:108782) in {The Fel Hammer} (57.8, 53.6)| |Z|1052 1| |NPC|98632|
+A Deal With It Personally |QID|42787| |N|(npc:108782) in {The Fel Hammer} (57.8, 53.6)| |Z|1052 2| |NPC|98632|
 ----
 A Goddess Watch Over You |N|(npc:113686) will appear next to you| |NPC|113686| |OID|44337, 44338|
 A Goddess Watch Over You |QID|44337| |N|(npc:113686) will appear next to you| |NPC|113686| |O|
@@ -356,14 +357,14 @@ R Dalaran |OID|44448| |N|Travel to {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|904
 T Goddess Watch Over You |QID|44337| |N|(npc:90417) in {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| |O|
 T Goddess Watch Over You |QID|44338| |N|(npc:90417) in {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| |O|
 A In the House of Light and Shadow |QID|44448| |N|(npc:90417) in {Dalaran} (28.46,48.33)| |Z|1014 10| |NPC|90417| 
-C In the House of Light and Shadow |QID|44448| |N|Take the Tears of Elune to Light's Heart in your Order Hall (58.51,43.40)| |Z|1052 1|
+C In the House of Light and Shadow |QID|44448| |N|Take the Tears of Elune to Light's Heart in your Order Hall (58.51,43.40)| |Z|1052 2|
 T In the House of Light and Shadow |QID|44448| |N|(npc:90417) in {Dalaran} (28.49,48.33)|  |Z|1014 10| |NPC|90417| 
 ----
 K (npc:100495) |QID|42787.1| |N|Kill the (npc:100495) in {Highmountain} (54.6, 41.4)| |Z|1024 0| |NPC|100495|
 K (npc:103223) |QID|42787.2| |N|Kill (npc:103223) in {Suramar} (61.2, 39.6)| |Z|1033 0| |NPC|103223|
 K (npc:92423) |QID|42787.3| |N|Kill (npc:92423) in {Val'sharah} (38.0, 52.8)| |Z|1018 0| |NPC|92423|
-T Deal With It Personally |QID|42787| |N|(npc:108782) in {The Fel Hammer} (57.8, 53.6)| |Z|1052 1| |NPC|98632|
-A Malace in Vrykul Land |QID|42735| |N|(npc:108782) in {The Fel Hammer} (57.8, 53.6)| |Z|1052 1| |NPC|98632|
+T Deal With It Personally |QID|42787| |N|(npc:108782) in {The Fel Hammer} (57.8, 53.6)| |Z|1052 2| |NPC|98632|
+A Malace in Vrykul Land |QID|42735| |N|(npc:108782) in {The Fel Hammer} (57.8, 53.6)| |Z|1052 2| |NPC|98632|
 C Malace in Vrykul Land |QID|42735| |N|Grab a flight from (npc:28674) and find (npc:108648) in {Stormheim} (66.4, 63.6)| |Z|1017 0| |NPC|108648|
 T Malace in Vrykul Land |QID|42735| |N|(npc:108648) in {Stormheim} (66.4, 63.6)| |Z|1017 0| |NPC|98632|
 A Rune Ruination |QID|42736| |N|(npc:108648) in {Stormheim} (66.4, 63.6)| |Z|1017 0| |NPC|98632|
@@ -380,36 +381,36 @@ N Switch Guide |QID|42752| |N|Switch to (guide:"1045(110)") and kill (npc:93802)
 N Switch Guide |QID|42753| |N|Switch to (guide:"1045(110)") and kill (npc:93802) in the {Vault of the Wardens} dungeon and collect the (item:124672)| |O| |NPC|93802|
 C Vault Break-In |QID|42752| |N|Kill (npc:93802) in the {Vault of the Wardens} dungeon and collect the (item:124672)| |NPC|98632| |POI| |O|
 C Vault Break-In |QID|42753| |N|Kill (npc:93802) in the {Vault of the Wardens} dungeon and collect the (item:124672)| |NPC|98632| |POI| |O|
-T Vault Break-In |QID|42752| |N|(npc:108782) in {The Fel Hammer} (57.8, 53.6)| |Z|1052 1| |NPC|108782| |O|
-T Vault Break-In |QID|42753| |N|(npc:108782) in {The Fel Hammer} (57.8, 53.6)| |Z|1052 1| |NPC|108782| |O|
-A The Crux of the Plan |QID|42775| |N|(npc:108782) in {The Fel Hammer} (57.8, 53.6)| |Z|1052 1| |NPC|108782|
-C The Crux of the Plan |QID|42775| |N|Place the (item:124672) above the Scouting Map in {The Fel Hammer}| |Z|1052 1| |POI|
-T The Crux of the Plan |QID|42775| |N|(npc:108572) or (npc:108571) in {The Fel Hammer} (58.67, 57.99)| |Z|1052 1| |NPC|108572|
-A Two Worthies |QID|42776| |N|(npc:108572) or (npc:108571) in {The Fel Hammer} (58.67, 57.99)| |Z|1052 1| |NPC|108572, 108571|
-A Champion: Belath Dawnblade |QID|42777| |N|Speak to (npc:108782) to recruit as follower (57.57,52.25)| |Z|1052 1| |NPC|108782| |E|
-A Champion: Matron Mother Malevolence |QID|42701| |N|Speak to (npc:98632) to recruit as follower (59.93,48.83)| |Z|1052 1| |NPC|98632| |E|
+T Vault Break-In |QID|42752| |N|(npc:108782) in {The Fel Hammer} (57.8, 53.6)| |Z|1052 2| |NPC|108782| |O|
+T Vault Break-In |QID|42753| |N|(npc:108782) in {The Fel Hammer} (57.8, 53.6)| |Z|1052 2| |NPC|108782| |O|
+A The Crux of the Plan |QID|42775| |N|(npc:108782) in {The Fel Hammer} (57.8, 53.6)| |Z|1052 2| |NPC|108782|
+C The Crux of the Plan |QID|42775| |N|Place the (item:124672) above the Scouting Map in {The Fel Hammer}| |Z|1052 2| |POI|
+T The Crux of the Plan |QID|42775| |N|(npc:108572) or (npc:108571) in {The Fel Hammer} (58.67, 57.99)| |Z|1052 2| |NPC|108572|
+A Two Worthies |QID|42776| |N|(npc:108572) or (npc:108571) in {The Fel Hammer} (58.67, 57.99)| |Z|1052 2| |NPC|108572, 108571|
+A Champion: Belath Dawnblade |QID|42777| |N|Speak to (npc:108782) to recruit as follower (57.57,52.25)| |Z|1052 2| |NPC|108782| |E|
+A Champion: Matron Mother Malevolence |QID|42701| |N|Speak to (npc:98632) to recruit as follower (59.93,48.83)| |Z|1052 2| |NPC|98632| |E|
 C Two Worthies |QID|42776| |N|Recruit (npc:108782) and (npc:98632) as your followers| |NPC|108572| |POI| |NPC|108782, 98632|
-T Two Worthies |QID|42776| |N|(npc:98648) in {The Fel Hammer} (57.2, 58.6)| |Z|1052 2| |NPC|98648|
-A Preparations for Invasion |QID|42669| |N|(npc:98648) in {The Fel Hammer} (57.2, 58.6)| |Z|1052 2| |NPC|98648|
-A One Battle at a Time |QID|44694| |N|(npc:98646) in {The Fel Hammer} (58.99,63.65) (59.05,75.15)| |Z|1052 2| |NPC|98648|
-A Hitting the Books |QID|43878| |N|(npc:111736) in {The Fel Hammer} (62.06,75.03)| |Z|1052 2| |NPC|111736|
-C Hitting the Books |QID|43878| |N|Speak to (npc:111736) and start a Research Work Order (62.06,75.03)| |Z|1052 2| |NPC|111736|
-T Hitting the Books |QID|43878| |N|(npc:111736) in {The Fel Hammer} (62.06,75.03)| |Z|1052 2| |NPC|111736|
-C Preparations for Invasion |QID|42669| |N|Use the Scouting Map and complete the "Preparations for Invasion" missions in {The Fel Hammer}<br/><br/>Each of these missions will take up to 12 hours to complete. (58.67, 53.46)| |Z|1052 1|
+T Two Worthies |QID|42776| |N|(npc:98648) in {The Fel Hammer} (57.2, 58.6)| |Z|1052 3| |NPC|98648|
+A Preparations for Invasion |QID|42669| |N|(npc:98648) in {The Fel Hammer} (57.2, 58.6)| |Z|1052 3| |NPC|98648|
+A One Battle at a Time |QID|44694| |N|(npc:98646) in {The Fel Hammer} (58.99,63.65) (59.05,75.15)| |Z|1052 3| |NPC|98648|
+A Hitting the Books |QID|43878| |N|(npc:111736) in {The Fel Hammer} (62.06,75.03)| |Z|1052 3| |NPC|111736|
+C Hitting the Books |QID|43878| |N|Speak to (npc:111736) and start a Research Work Order (62.06,75.03)| |Z|1052 3| |NPC|111736|
+T Hitting the Books |QID|43878| |N|(npc:111736) in {The Fel Hammer} (62.06,75.03)| |Z|1052 3| |NPC|111736|
+C Preparations for Invasion |QID|42669| |N|Use the Scouting Map and complete the "Preparations for Invasion" missions in {The Fel Hammer}<br/><br/>Each of these missions will take up to 12 hours to complete. (58.67, 53.46)| |Z|1052 2|
 C One Battle at a Time |QID|44694| |N|Complete 30 world quests| 
-T Preparations for Invasion |QID|42669| |N|(npc:98648) in {The Fel Hammer} (57.2, 58.6)| |Z|1052 2| |NPC|98648|
-T Preparations for Invasion |QID|42669| |N|(npc:98648) in {The Fel Hammer} (57.2, 58.6)| |Z|1052 2| |NPC|98648|
-T One Battle at a Time |QID|44694| |N|(npc:98648) in {The Fel Hammer} (57.2, 58.6)| |Z|1052 2| |NPC|98648|
-A We'll Need Some Obliterum |QID|44616| |N|(npc:98648) in {The Fel Hammer} (57.2, 58.6)| |Z|1052 2| |NPC|98648|
-A A Very Special Kind of Fuel |QID|42733| |N|(npc:98648) in {The Fel Hammer} (57.2, 58.6)| |Z|1052 2| |NPC|98648|
-A Deadlier Warglaives |QID|42732| |N|(npc:98648) in {The Fel Hammer} (57.2, 58.6)| |Z|1052 2| |NPC|98648|
+T Preparations for Invasion |QID|42669| |N|(npc:98648) in {The Fel Hammer} (57.2, 58.6)| |Z|1052 3| |NPC|98648|
+T Preparations for Invasion |QID|42669| |N|(npc:98648) in {The Fel Hammer} (57.2, 58.6)| |Z|1052 3| |NPC|98648|
+T One Battle at a Time |QID|44694| |N|(npc:98648) in {The Fel Hammer} (57.2, 58.6)| |Z|1052 3| |NPC|98648|
+A We'll Need Some Obliterum |QID|44616| |N|(npc:98648) in {The Fel Hammer} (57.2, 58.6)| |Z|1052 3| |NPC|98648|
+A A Very Special Kind of Fuel |QID|42733| |N|(npc:98648) in {The Fel Hammer} (57.2, 58.6)| |Z|1052 3| |NPC|98648|
+A Deadlier Warglaives |QID|42732| |N|(npc:98648) in {The Fel Hammer} (57.2, 58.6)| |Z|1052 3| |NPC|98648|
 T We'll Need Some Obliterum |QID|44616| |N|(npc:97429) in {Dalaran} (39.64,30.80)| |Z|1014 10| |NPC|97429|
 
 C A Very Special Kind of Fuel |QID|42733| |N|Collect 15 (item:138482) from any bosses in Legion dungeons| 
 C Deadlier Warglaives |QID|42732| |N|Collect (item:124125), you can buy this from the auction house|
-T Deadlier Warglaives |QID|42732| |N|(npc:98646) in {The Fel Hammer} (59.05,75.15)| |Z|1052 2| |NPC|98648|
-T A Very Special Kind of Fuel |QID|42733| |N|(npc:98646) in {The Fel Hammer} (59.05,75.15)| |Z|1052 2| |NPC|98648|
-A Jump-Capable |QID|42754| |N|(npc:98646) in {The Fel Hammer} (59.05,75.15)| |Z|1052 2| |NPC|98648|
+T Deadlier Warglaives |QID|42732| |N|(npc:98646) in {The Fel Hammer} (59.05,75.15)| |Z|1052 3| |NPC|98648|
+T A Very Special Kind of Fuel |QID|42733| |N|(npc:98646) in {The Fel Hammer} (59.05,75.15)| |Z|1052 3| |NPC|98648|
+A Jump-Capable |QID|42754| |N|(npc:98646) in {The Fel Hammer} (59.05,75.15)| |Z|1052 3| |NPC|98648|
 
 R Felsoul Command |QID|42754.1| |N|Travel to {Felsoul Command} (31.36,83.90)| |Z|1033 0|
 R The Lightbreaker |QID|42754.1| |N|Enter the portal at to {The Lightbreaker} (31.04,85.00)| |Z|1033 0|
@@ -424,19 +425,19 @@ N (item:138485) |QID|42754.6| |N|Collect (item:138485) in {Soul Engine: Apocalyp
 R The Soulrender |QID|42754.4| |N|Travel to {The Soulrender} (26.78,49.04)| |Z|1015 0|
 N (item:139404) |QID|42754.5| |N|Collect (item:139404) in {The Soulrender} (27.63,52.23) (28.43,52.20)| |Z|1015 0|
 
-R The Fel Hammer |TID|42754| |N|Travel to {The Fel Hammer} (59.05,75.15)| |Z|1052 2| 
-T Jump-Capable |QID|42754| |N|(npc:98646) in {The Fel Hammer} (59.05,75.15)| |Z|1052 2| |NPC|98648|
-A A Final Offer |QID|42810| |N|(npc:98646) in {The Fel Hammer} (59.05,75.15)| |Z|1052 2| |NPC|98648|
-N Fel Hammer Balcony |QID|42810.1| |N|Reach the Fel Hammer Balcony (59.21,91.31)| |Z|1052 1|
-N (spell:192725) |QID|42810.2| |N|Use the (spell:192725) ability to refuse Kil'jaeden's offer (59.21,91.31)| |Z|1052 1|
-T A Final Offer |QID|42810| |N|(npc:98646) in {The Fel Hammer} (59.05,75.15)| |Z|1052 2| |NPC|98648|
-A The Invasion of Niskara |N|(npc:98646) in {The Fel Hammer} (59.05,75.15)| |Z|1052 2| |NPC|98648| |OID|42809, 42920|
-A The Invasion of Niskara |QID|42809| |N|(npc:98646) in {The Fel Hammer} (59.05,75.15)| |Z|1052 2| |NPC|98648| |O|
-A The Invasion of Niskara |QID|42920| |N|(npc:98646) in {The Fel Hammer} (59.05,75.15)| |Z|1052 2| |NPC|98648| |O|
-N Activate the Control Console |QID|42809.1| |N|Activate the Control Console (58.96,65.96)| |Z|1052 1| |O|
-N Activate the Control Console |QID|42920.1| |N|Activate the Control Console (58.96,65.96)| |Z|1052 1| |O|
-N Jump to Niskara |QID|42809.2| |N|Watch the dialogue then Jump to Niskara (58.96,65.96)| |Z|1052 1| |O|
-N Jump to Niskara |QID|42920.2| |N|Watch the dialogue then Jump to Niskara (58.96,65.96)| |Z|1052 1| |O|
+R The Fel Hammer |TID|42754| |N|Travel to {The Fel Hammer} (59.05,75.15)| |Z|1052 3| 
+T Jump-Capable |QID|42754| |N|(npc:98646) in {The Fel Hammer} (59.05,75.15)| |Z|1052 3| |NPC|98648|
+A A Final Offer |QID|42810| |N|(npc:98646) in {The Fel Hammer} (59.05,75.15)| |Z|1052 3| |NPC|98648|
+N Fel Hammer Balcony |QID|42810.1| |N|Reach the Fel Hammer Balcony (59.21,91.31)| |Z|1052 2|
+N (spell:192725) |QID|42810.2| |N|Use the (spell:192725) ability to refuse Kil'jaeden's offer (59.21,91.31)| |Z|1052 2|
+T A Final Offer |QID|42810| |N|(npc:98646) in {The Fel Hammer} (59.05,75.15)| |Z|1052 3| |NPC|98648|
+A The Invasion of Niskara |N|(npc:98646) in {The Fel Hammer} (59.05,75.15)| |Z|1052 3| |NPC|98648| |OID|42809, 42920|
+A The Invasion of Niskara |QID|42809| |N|(npc:98646) in {The Fel Hammer} (59.05,75.15)| |Z|1052 3| |NPC|98648| |O|
+A The Invasion of Niskara |QID|42920| |N|(npc:98646) in {The Fel Hammer} (59.05,75.15)| |Z|1052 3| |NPC|98648| |O|
+N Activate the Control Console |QID|42809.1| |N|Activate the Control Console (58.96,65.96)| |Z|1052 2| |O|
+N Activate the Control Console |QID|42920.1| |N|Activate the Control Console (58.96,65.96)| |Z|1052 2| |O|
+N Jump to Niskara |QID|42809.2| |N|Watch the dialogue then Jump to Niskara (58.96,65.96)| |Z|1052 2| |O|
+N Jump to Niskara |QID|42920.2| |N|Watch the dialogue then Jump to Niskara (58.96,65.96)| |Z|1052 2| |O|
 
 C Lay Waste to the Legion Forces Below |SID|0|1| |N|Click Artillery Controls and kill enemies on the ground around this area (33.42,39.47)| |Z|1078 0| |QID|42132|
 N Glide Down to the Rendezvous |SID|0|2| |N|Glide Down to the Rendezvous to speak to (npc:99254) or (npc:99247) (33.53,42.15) (49.68,46.02)| |QID|42132| |Z|1078 0| |NPC|99254, 99247|
@@ -448,42 +449,42 @@ N Order the Fel Hammer to Fire! |SID|0|5| |N|Use the (spell:217961) ability (69.
 K (npc:109108) |SID|30713|6| |N|Kill (npc:109108) (73.21,78.86)| |QID|42132|
 K (npc:109109) |SID|30714|6| |N|Kill (npc:109109) (73.21,78.86)| |QID|42132|
 N Speak with Your Ally |SID|0|7| |N|Speak to (npc:99254) or (npc:99247) (72.92,78.01)| |QID|42132| |NPC|99254, 99247|
-T The Invasion of Niskara |QID|42809| |N|(npc:108571) in {The Fel Hammer} (58.63,57.85)| |Z|1052 1| |NPC|108571| |O|
-T The Invasion of Niskara |QID|42920| |N|(npc:108572) in {The Fel Hammer} (58.63,57.85)| |Z|1052 1| |NPC|108572| |O|
-A Last, But Not Least |QID|42132| |N|(npc:108571) or (npc:108572) in {The Fel Hammer} (58.63,57.85)| |Z|1052 1| |NPC|108571, 108572|
-A Champion: Allari the Souleater |QID|43184| |N|Speak to (npc:98648) to recruit as a follower (62.94,59.53)| |Z|1052 2| |NPC|98648| |E|
-A Champion: Jace Darkweaver |QID|43185| |N|Speak to (npc:98646) to recruit as a follower in {The Fel Hammer} (59.05,75.15)| |Z|1052 2| |NPC|98648| |E|
-T Last, But Not Least |QID|42132| |N|(npc:108571) or (npc:108572) in {The Fel Hammer} (58.63,57.85)| |Z|1052 1| |NPC|108571, 108572|
-A I Am the Slayer! |QID|43186| |N|(npc:108571) or (npc:108572) in {The Fel Hammer} (58.63,57.85)| |Z|1052 1| |NPC|108571, 108572|
-C I Am the Slayer! |QID|43186| |N|Listen as you are honored by the Illidari and the Servants of Illidan. (58.60,57.85)| |Z|1052 1|
-T I Am the Slayer! |QID|43186| |N|(npc:108571) or (npc:108572) in {The Fel Hammer} (58.63,57.85)| |Z|1052 1| |NPC|108571, 108572|
-A One More Thing... |N|(npc:108571) or (npc:108572) in {The Fel Hammer} (58.60,57.85)| |Z|1052 1| |OID|44214 ,44215| |NPC|108571, 108572|
-A One More Thing... |QID|44214| |N|(npc:108571) or (npc:108572) in {The Fel Hammer} (58.60,57.85)| |Z|1052 1| |NPC|108571, 108572| |O|
-A One More Thing... |QID|44215| |N|(npc:108571) or (npc:108572) in {The Fel Hammer} (58.60,57.85)| |Z|1052 1| |NPC|108571, 108572| |O|
-T One More Thing... |QID|44214| |N|(npc:108571) or (npc:108572) in {The Fel Hammer} (57.29,32.36)| |Z|1052 2| |NPC|108571, 108572| |O|
-T One More Thing... |QID|44215| |N|(npc:108571) or (npc:108572) in {The Fel Hammer} (57.29,32.36)| |Z|1052 2| |NPC|108571, 108572| |O|
-A A Hero's Weapon |N|(npc:108571) or (npc:108572) in {The Fel Hammer} (57.29,32.36)| |Z|1052 2| |NPC|108571, 108572| |OID|43412, 43422|
-A A Hero's Weapon |QID|43412| |N|(npc:108571) or (npc:108572) in {The Fel Hammer} (57.29,32.36)| |Z|1052 2| |NPC|108571, 108572| |O|
-A A Hero's Weapon |QID|43422| |N|(npc:108571) or (npc:108572) in {The Fel Hammer} (57.29,32.36)| |Z|1052 2| |NPC|108571, 108572| |O|
-C A Hero's Weapon |QID|43412.1| |N|Use the Commander's Valor ability to infuse your artifact (58.58,31.67)| |Z|1052 2| |O|
-C A Hero's Weapon |QID|43422.1| |N|Use the Commander's Valor ability to infuse your artifact (58.58,31.67)| |Z|1052 2| |O|
-T A Hero's Weapon |QID|43412| |N|(npc:108571) or (npc:108572) in {The Fel Hammer} (57.29,32.36)| |Z|1052 2| |NPC|108571, 108572| |O|
-T A Hero's Weapon |QID|43422| |N|(npc:108571) or (npc:108572) in {The Fel Hammer} (57.29,32.36)| |Z|1052 2| |NPC|108571, 108572| |O|
+T The Invasion of Niskara |QID|42809| |N|(npc:108571) in {The Fel Hammer} (58.63,57.85)| |Z|1052 2| |NPC|108571| |O|
+T The Invasion of Niskara |QID|42920| |N|(npc:108572) in {The Fel Hammer} (58.63,57.85)| |Z|1052 2| |NPC|108572| |O|
+A Last, But Not Least |QID|42132| |N|(npc:108571) or (npc:108572) in {The Fel Hammer} (58.63,57.85)| |Z|1052 2| |NPC|108571, 108572|
+A Champion: Allari the Souleater |QID|43184| |N|Speak to (npc:98648) to recruit as a follower (62.94,59.53)| |Z|1052 3| |NPC|98648| |E|
+A Champion: Jace Darkweaver |QID|43185| |N|Speak to (npc:98646) to recruit as a follower in {The Fel Hammer} (59.05,75.15)| |Z|1052 3| |NPC|98648| |E|
+T Last, But Not Least |QID|42132| |N|(npc:108571) or (npc:108572) in {The Fel Hammer} (58.63,57.85)| |Z|1052 2| |NPC|108571, 108572|
+A I Am the Slayer! |QID|43186| |N|(npc:108571) or (npc:108572) in {The Fel Hammer} (58.63,57.85)| |Z|1052 2| |NPC|108571, 108572|
+C I Am the Slayer! |QID|43186| |N|Listen as you are honored by the Illidari and the Servants of Illidan. (58.60,57.85)| |Z|1052 2|
+T I Am the Slayer! |QID|43186| |N|(npc:108571) or (npc:108572) in {The Fel Hammer} (58.63,57.85)| |Z|1052 2| |NPC|108571, 108572|
+A One More Thing... |N|(npc:108571) or (npc:108572) in {The Fel Hammer} (58.60,57.85)| |Z|1052 2| |OID|44214 ,44215| |NPC|108571, 108572|
+A One More Thing... |QID|44214| |N|(npc:108571) or (npc:108572) in {The Fel Hammer} (58.60,57.85)| |Z|1052 2| |NPC|108571, 108572| |O|
+A One More Thing... |QID|44215| |N|(npc:108571) or (npc:108572) in {The Fel Hammer} (58.60,57.85)| |Z|1052 2| |NPC|108571, 108572| |O|
+T One More Thing... |QID|44214| |N|(npc:108571) or (npc:108572) in {The Fel Hammer} (57.29,32.36)| |Z|1052 3| |NPC|108571, 108572| |O|
+T One More Thing... |QID|44215| |N|(npc:108571) or (npc:108572) in {The Fel Hammer} (57.29,32.36)| |Z|1052 3| |NPC|108571, 108572| |O|
+A A Hero's Weapon |N|(npc:108571) or (npc:108572) in {The Fel Hammer} (57.29,32.36)| |Z|1052 3| |NPC|108571, 108572| |OID|43412, 43422|
+A A Hero's Weapon |QID|43412| |N|(npc:108571) or (npc:108572) in {The Fel Hammer} (57.29,32.36)| |Z|1052 3| |NPC|108571, 108572| |O|
+A A Hero's Weapon |QID|43422| |N|(npc:108571) or (npc:108572) in {The Fel Hammer} (57.29,32.36)| |Z|1052 3| |NPC|108571, 108572| |O|
+C A Hero's Weapon |QID|43412.1| |N|Use the Commander's Valor ability to infuse your artifact (58.58,31.67)| |Z|1052 3| |O|
+C A Hero's Weapon |QID|43422.1| |N|Use the Commander's Valor ability to infuse your artifact (58.58,31.67)| |Z|1052 3| |O|
+T A Hero's Weapon |QID|43412| |N|(npc:108571) or (npc:108572) in {The Fel Hammer} (57.29,32.36)| |Z|1052 3| |NPC|108571, 108572| |O|
+T A Hero's Weapon |QID|43422| |N|(npc:108571) or (npc:108572) in {The Fel Hammer} (57.29,32.36)| |Z|1052 3| |NPC|108571, 108572| |O|
 ----
-A Awakenings |QID|44464| |N|(npc:113857) in {The Fel Hammer} (58.92, 43.92)| |Z|1052 1| |NPC|113857|
+A Awakenings |QID|44464| |N|(npc:113857) in {The Fel Hammer} (58.92, 43.92)| |Z|1052 2| |NPC|113857|
 
 R Val'sharah |QID|44464| |N|Travel {Val'sharah} (54.40,73.17)| |Z|1018 0|
 C Awakenings |QID|44464.1| |N|Travel to {Val'sharah} and use (spell:226956) to witness the awakening of Illidan Stormrage (54.40,73.17)| |Z|1018 0|
 
-T Awakenings |QID|44464| |N|(npc:113857) in {The Fel Hammer} (58.92, 43.92)| |Z|1052 1| |NPC|113857|
-A An Unclear Path |QID|44466| |N|(npc:113857) in {The Fel Hammer} (58.92, 43.92)| |Z|1052 1| |NPC|113857|
+T Awakenings |QID|44464| |N|(npc:113857) in {The Fel Hammer} (58.92, 43.92)| |Z|1052 2| |NPC|113857|
+A An Unclear Path |QID|44466| |N|(npc:113857) in {The Fel Hammer} (58.92, 43.92)| |Z|1052 2| |NPC|113857|
 
 R Val'Shara |QID|44466| |N|Travel to {Val'Shara} (54.96,53.43) (53.29,49.94) (52.11,43.99)| |Z|1018 0| |REACH|
 N Witness Illidan's Resilience |QID|44466.1| |N|Use (spell:226956) to witness the awakening of Illidan Resilience (45.54,34.75)| |Z|1018 0|
 
-R The Fel Hammer |OID|44479| |N|Travel to {The Fel Hammer} (58.92, 43.92)| |Z|1052 1|
-T An Unclear Path |QID|44466| |N|(npc:113857) in {The Fel Hammer} (58.92, 43.92)| |Z|1052 1| |NPC|113857|
-A Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {The Fel Hammer} (58.92, 43.92)| |Z|1052 1| |NPC|113857|
+R The Fel Hammer |OID|44479| |N|Travel to {The Fel Hammer} (58.92, 43.92)| |Z|1052 2|
+T An Unclear Path |QID|44466| |N|(npc:113857) in {The Fel Hammer} (58.92, 43.92)| |Z|1052 2| |NPC|113857|
+A Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {The Fel Hammer} (58.92, 43.92)| |Z|1052 2| |NPC|113857|
 R Val'Shara |QID|44479| |N|Travel to {Val'Shara} (54.96,53.43)| |Z|1018 0|
 N (spell:226956) |N|Go to the destination to use (spell:226956) to begin the Ravencrest's Legacy scenario (54.96,53.43) (52.81,50.41) (46.98,50.23) (44.28,49.94) (42.08,46.29)| |Z|1018 0| |QID|44479|
 N Report to Kur'talos Ravencrest |SID|33154|1| |N|Report to (npc:113046) in {Ravencourt}| |QID|44479| |NPC|113046|
@@ -507,16 +508,16 @@ T Hunter of Night |QID|44416| |N|(npc:113355) in {Mausoleum} (41.59, 50.53)| |Z|
 R Raven's Glory |QID|44479| |N|Travel to {Raven's Glory} (42.86, 50.56) (42.97, 48.79)| |Z|1099 0|
 C When Good Men Do Nothing |SID|33186| |N|Enter Raven's Glory and use (spell:227236) to destroy the Colossal Siegebreaker in {Raven's Glory} (42.97, 48.79)| |Z|1099 0| |QID|44479|
 
-R The Fel Hammer |OID|44480| |N|Travel to {The Fel Hammer} (58.92, 43.92)| |Z|1052 1|
-T Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {The Fel Hammer} (58.92, 43.92)| |Z|1052 1| |NPC|113857|
-A In My Father's House |QID|44480| |N|(npc:113857) in {The Fel Hammer}<br/><br/>This quest's availability is determined by your Order Hall Artifact Research. If the quest isn't available, talk to the Head Archivist in your Order Hall to get more (item:139390)  (58.92, 43.92)| |Z|1052 1| |NPC|113857|
+R The Fel Hammer |OID|44480| |N|Travel to {The Fel Hammer} (58.92, 43.92)| |Z|1052 2|
+T Ravencrest's Legacy |QID|44479| |N|(npc:113857) in {The Fel Hammer} (58.92, 43.92)| |Z|1052 2| |NPC|113857|
+A In My Father's House |QID|44480| |N|(npc:113857) in {The Fel Hammer}<br/><br/>This quest's availability is determined by your Order Hall Artifact Research. If the quest isn't available, talk to the Head Archivist in your Order Hall to get more (item:139390)  (58.92, 43.92)| |Z|1052 2| |NPC|113857|
 
 R Temple of Zin-Malor |QID|44480| |N|Travel to {Temple of Zin-Malor} (35.11, 49.88)| |Z|181 0|
 C In My Father's House |QID|44480| |N|Use (spell:226956) witness Illidan's Sacrifice in Azshara on the continent of Kalimdor (35.11, 49.88) | |Z|816 0|
 
-R The Fel Hammer |OID|44497| |N|Travel to {The Fel Hammer} (58.92, 43.92)| |Z|1052 1|
-T In My Father's House |QID|44480| |N|(npc:113857) in {The Fel Hammer} (58.92, 43.92)| |Z|1052 1| |NPC|113857|
-A Destiny Unfulfilled |QID|44497| |N|(npc:113857) in {The Fel Hammer} (58.92, 43.92)| |Z|1052 1| |NPC|113857|
+R The Fel Hammer |OID|44497| |N|Travel to {The Fel Hammer} (58.92, 43.92)| |Z|1052 2|
+T In My Father's House |QID|44480| |N|(npc:113857) in {The Fel Hammer} (58.92, 43.92)| |Z|1052 2| |NPC|113857|
+A Destiny Unfulfilled |QID|44497| |N|(npc:113857) in {The Fel Hammer} (58.92, 43.92)| |Z|1052 2| |NPC|113857|
 
 R The Black Temple |QID|44497| |N|Travel to {The Black Temple} (72.97, 44.12)| |Z|473 0|
 N (spell:226956) |N|Use (spell:226956) in {The Black Temple} (72.97, 44.12)| |Z|473 0| |F|1085 1| |QID|44497| 
@@ -529,12 +530,205 @@ C The Demon Within |SID|32865|5| |N|Destroy the Warlocks in {Temple Summit} (52.
 C Defeat Maiev |SID|32942|6| |N|Defeat (npc:112867) in {Temple Summit} (52.16, 69.92)| |Z|1085 1| |NPC|112867| |QID|44497| 
 C Destiny Unfulfilled |QID|44497| |N|Witness True Betrayal in Shadowmoon Valley on the fringes of Outland., in {Temple Summit} (52.16, 69.92)| |Z|1085 1|
 
-R The Fel Hammer |TID|44496| |N|Travel to {The Fel Hammer} (58.92, 43.92)| |Z|1052 1|
-T Destiny Unfulfilled |QID|44496| |N|(npc:113857) in {The Fel Hammer} (58.92, 43.92)| |Z|1052 1| |NPC|113857|
+R The Fel Hammer |TID|44496| |N|Travel to {The Fel Hammer} (58.92, 43.92)| |Z|1052 2|
+T Destiny Unfulfilled |QID|44496| |N|(npc:113857) in {The Fel Hammer} (58.92, 43.92)| |Z|1052 2| |NPC|113857|
 
-A Champion Armaments |QID|44223| |N|(npc:110433), This quest will only be available if you chose to get the "Fel Armaments" class hall upgrade. (60.10,43.38)| |Z|1052 1| |NPC|110433|
-C Champion Armaments |QID|44223| |N|Speak to (npc:110433) and place a workorder for Champion Armaments in {The Fel Hammer} (60.10,43.38)| |Z|1052 1| |NPC|110433|
-T Champion Armaments |QID|44223| |N|(npc:110433) in {The Fel Hammer} (60.10,43.38)| |Z|1052 1| |NPC|110433|
+R Krasus' Landing |N|Travel to Krasus' Landing} (69.40, 43.99)| |Z|1014 10|
+A Armies of Legionfall |QID|46730| |N|This quest is available after you unlock World Quests by completing (qid:43341)| |Z|1014 10| |NPC|120215| |O|
+T Armies of Legionfall |QID|46730| |N|(npc:120215), in {Krasus' Landing} (69.37, 43.88)| |Z|1014 10| |NPC|120215| |O|
+A Assault on Broken Shore |QID|46734| |N|(npc:120215) in {Krasus' Landing} (69.40, 43.99)| |Z|1014 10| |NPC|120215|
+N (npc:120215) |QID|46734.1| |N|Speak to (npc:120215) in {Krasus' Landing} (69.40, 43.99)| |Z|1014 10| |NPC|120215|
+N (npc:120752) |SID|35327|1| |N|Mount the (npc:120752) in {Krasus' Landing}| |NPC|120752| |V|
+C Secure the Beach |SID|35327|2| |N|Kill the demons on the beach until you reach 100% to secure the beach (50.86, 69.96)| |Z|1149 0|
+C Defeat Lord Kalgorath |SID|35329|3| |N|Defeat (npc:116291) in {Broken Shore} (44.30, 73.90) (42.04, 72.23) (41.29, 65.12) (41.30, 65.12)| |Z|1149 0| |NPC|116291|
+C Legion portals closed |SID|35495|4| |N|Follow the waypoints and defeat the forces to close the portals in {Broken Shore}(42.95, 58.73)  (46.98, 58.29) (52.15, 52.38)(54.57, 47.99) (57.09, 52.15) (59.09, 51.61) (59.09, 51.61)| |Z|1149 0|
+K (npc:118551) |SID|35497|5| |N|Kill (npc:118551) in {Broken Shore} (55.15, 51.75)| |Z|1149 0| |NPC|118551|
+C Use Gateway |SID|35551|6| |N|Take the Demonic Gateway to the base of Mephistroth's command ship (53.41, 50.42)| |Z|1149 0|
+C Plant Arcane Bombs |SID|36178|7| |N|Plant Arcane Bombs in the command ship in each waypoints, look for the yellow dots in the minimap, you will need to use the portal after planting the first 2| |Z|1149 0|
+C Defeat Mephistroth |SID|36179|8| |N|Kill (npc:120746) in {Broken Shore} (50.03, 45.38)| |Z|1149 0| |NPC|120746| |QID|46734.2|
+
+T Assault on Broken Shore |QID|46734| |N|(npc:116302) in {Deliverance Point} (44.71, 63.29)| |Z|1021 0| |NPC|116302|
+A Legionfall Supplies |QID|46286| |N|(npc:120183) in {Deliverance Point} (44.54, 63.19)| |Z|1021 0| |NPC|120183|
+A Aalgen Point |QID|46832| |N|(npc:120183) in {Deliverance Point} (44.54, 63.19)| |Z|1021 0| |NPC|120183|
+
+R Aalgen Point |TID|46832| |N|Travel to {Aalgen Point} (46.27, 58.47)(51.36, 54.77) (52.43, 52.34) (70.69, 47.58)| |Z|1021 0| 
+T Aalgen Point |QID|46832| |N|(npc:120118), in {Aalgen Point} (70.69, 47.58)| |Z|1021 0| |NPC|120118|
+A Vengeance Point |QID|46845| |N|(npc:120118), in {Aalgen Point} (70.69, 47.58)| |Z|1021 0| |NPC|120118|
+
+R Deliverance Point |QID|46845| |N|Travel to {Deliverance Point} (44.54, 63.19)| |Z|1021 0|
+R Vengeance Point |QID|46845| |N|Travel to {Vengeance Point} (50.63, 20.77)| |Z|1021 0| 
+N Scout Dreadstalker Point |QID|46845.1| |N|Scout Dreadstalker Point (50.66, 21.41)| |Z|1021 0|
+C Vengeance Point |QID|46845| |N|Kill 4 (npc:120969) and 5 (npc:120748) in {Vengeance Point} (50.63, 20.77)| |Z|1021 0| |NPC|120969, 120748|
+T Vengeance Point |QID|46845| |N|(npc:111323) in {Vengeance Point} (49.69, 21.03)| |Z|1021 0| |NPC|111323|
+
+A Seeking Lost Knowledge |QID|47067| |N|(npc:116302) in {Deliverance Point}<br/><br/>You need at least rank 25 artifact knowledge to receive this quest (44.71, 63.29)| |Z|1021 0| |NPC|116302|
+
+N Recover Knowledge from Moonlight Ascent |QID|47067.3| |N|Click Remnant of Lost Knowledge, stand still and wait for the channeling to complete. (71.22,41.78) (75.62,36.27)| |Z|1021 0|
+N Recover Knowledge from Moonlight Ascent |QID|47067.2| |N|Click Remnant of Lost Knowledge, stand still and wait for the channeling to complete. (72.58,40.20)| |Z|1021 0|
+N Recover Knowledge from Moonlight Ascent |QID|47067.1| |N|Click Remnant of Lost Knowledge, stand still and wait for the channeling to complete. (76.45,39.81) (82.57,45.09)| |Z|1021 0|
+
+T Seeking Lost Knowledge |QID|47067| |N|(npc:116302) in {Deliverance Point} (44.71, 63.29)| |Z|1021 0| |NPC|116302|
+A Delivering Lost Knowledge |QID|47078| |N|(npc:116302) in {Deliverance Point} (44.71, 63.29)| |Z|1021 0| |NPC|116302|
+
+R The Fel Hammer |QID|46940| |N|Travel to {The Fel Hammer} (62.04,75.02)| |Z|1052 3|
+T Delivering Lost Knowledge |QID|47078| |N|(npc:111736) in {The Fel Hammer} (62.04,75.02)| |Z|1052 3| |NPC|111736|
+A Using Lost Knowledge |QID|46940| |N|(npc:111736) in {The Fel Hammer} (62.04,75.02)| |Z|1052 3| |NPC|111736|
+N (npc:111736) |QID|46940.1| |N|Speak to (npc:111736) to Start a Research Work Order in {The Fel Hammer} (62.04,75.02)| |Z|1052 3| |NPC|111736|
+
+T Using Lost Knowledge |QID|46940| |N|(npc:111736) in {The Fel Hammer} (62.04,75.02)| |Z|1052 3| |NPC|111736|
+
+A The Broken Shore: Investigating the Legion |QID|46765| |N|(npc:116302) in {Broken Shore} (44.73,63.27)| |Z|1021 0| |NPC|116302|
+N Discover the Hidden Legion Threat |QID|46765.1| |N|Collect (item:147430), This item has a chance to drop off of any mob in the area. (44.61,49.57)| |Z|1021 0|
+T The Broken Shore: Investigating the Legion |QID|46765| |N|(npc:116302) in {Deliverance Point} (44.73,63.27)| |Z|1021 0| |NPC|116302|
+A The Council's Call |QID|47000| |N|(npc:116302) in {Deliverance Point} (44.73,63.27)| |Z|1021 0| |NPC|116302|
+
+R Dalaran |QID|44782| |N|Travel to {Dalaran} (28.50,48.33)| |Z|1014 10| 
+T The Council's Call |QID|47000| |N|(npc:90417) in {Dalaran} (28.50,48.33)| |Z|1014 10| |NPC|90417|
+A Away From Prying Eyes |QID|44782| |N|(npc:90417) in {Dalaran} (28.50,48.33)| |Z|1014 10| |NPC|90417|
+N Enter the Purple Parlor |QID|44782.1| |N|Go through the portal at the top of the stairs. (24.73,48.04)| |Z|1014 10|
+T Away From Prying Eyes |QID|44782| |N|(npc:115465) in {Dalaran} (22.20,39.04)| |Z|1014 10| |NPC|115465|
+A In Dire Need |QID|44821| |N|(npc:115465) in {Dalaran} (22.20,39.04)| |Z|1014 10| |NPC|115465|
+N Hear the Council's Plea |QID|44821.1| |N|Wait for the dialogue to complete in {Dalaran} (22.29,39.68)| |Z|1014 10|
+T In Dire Need |QID|44821| |N|(npc:115465) in {Dalaran} (22.29,39.64)| |Z|1014 10| |NPC|115465|
+
+N Choose Step |N|Click on the link below depending on your spec<br/><b>(choice:1:Vengeance)<br/><b>(choice:2:Havoc)|
+--Vengeance
+A Vengeance: Seeking Kor'vas |QID|46314| |N|(npc:115466) in {Dalaran}, for Vengeance specilization (22.46,40.53)| |Z|1014 10| |CHOICE|1| |NPC|115466|
+N (npc:116880) |QID|46314.1| |N|Find (npc:116880) patrolling the streets of Dalaran (49.13,26.03)| |Z|1014 10| |CHOICE|1| |NPC|116880|
+T Vengeance: Seeking Kor'vas |QID|46314| |N|(npc:116880) in {Dalaran} (52.03,19.58)| |Z|1014 10| |CHOICE|1| |NPC|116880|
+A Gathering Information |QID|45413| |N|(npc:116880) in {Dalaran} (52.03,19.58)| |Z|1014 10| |CHOICE|1| |NPC|116880|
+
+N Investigate the bank employees |QID|45413.1| |N|Speak to the bank employees (npc:96817),  (npc:96818) and (npc:96819) (53.17,15.26)| |Z|1014 10| |CHOICE|1| |NPC|96817, 96818, 96819|
+N Identify the stolen item |QID|45413.2| |N|Speak to (npc:113812) to Identify the stolen item (53.78,20.29)| |Z|1014 10| |CHOICE|1| |NPC|113812|
+
+T Gathering Information |QID|45413| |N|(npc:116880) in {Dalaran} (52.04,19.63)| |Z|1014 10| |CHOICE|1| |NPC|116880|
+A Confirming Suspicions |QID|45414| |N|(npc:116880) in {Dalaran} (52.04,19.63)| |Z|1014 10| |CHOICE|1| |NPC|116880|
+
+N Search First to Your Aid |QID|45414.1| |N|Enter the building and ait near Olisarra the Kind until the dialogue completes (37.45,36.54) (36.03,37.51)| |Z|1014 10| |CHOICE|1|
+N Search Krasus' Landing |QID|45414.2| |N|Search Krasus' Landing  (74.83,45.52)| |Z|1014 10| |CHOICE|1|
+
+N (npc:117042) |QID|45414.3| |N|Speak to (npc:117042) in {Dalaran} (74.83,45.52)| |Z|1014 10| |CHOICE|1| |NPC|117042|
+N Witness Velen's vision |QID|45414.4| |N|Speak to (npc:117042) in {Dalaran} (74.83,45.52)| |Z|1014 10| |CHOICE|1| |NPC|117042|
+
+T Confirming Suspicions |QID|45414| |N|(npc:117042) in {Dalaran} (74.83,45.52)| |Z|1014 10| |CHOICE|1| |NPC|117042|
+A Between Worlds |QID|45415| |N|(npc:117042) in {Dalaran} (74.83,45.52)| |Z|1014 10| |CHOICE|1| |NPC|117042|
+
+R Hellfire Peninsula |QID|45415.1| |N|Take the portal to Hellfire Peninsula (75.10,46.18)| |Z|1014 10| |CHOICE|1|
+N (npc:116880) |QID|45415.2| |N|Speak to (npc:116880) at the {Stair of Destiny} (85.30,50.11)| |Z|465 0| |CHOICE|1| |NPC|116880|
+N Open the portal |QID|45415.3| |N|Kill Doomheralds first and defeat the waves of enemies to open the portal (85.30,50.11)| |Z|465 0| |CHOICE|1|
+T Between Worlds |QID|45415| |N|(npc:116880) at the {Stair of Destiny} (85.30,50.11)| |Z|465 0| |CHOICE|1| |NPC|116880|
+A Dark Omens |QID|45843| |N|(npc:116880) at the {Stair of Destiny} (85.30,50.11)| |Z|465 0| |CHOICE|1| |NPC|116880|
+
+R Dalaran |QID|45863| |N|Travel to {Dalaran} (28.43,48.91)| |Z|1014 10|  |CHOICE|1|
+T Dark Omens |QID|45843| |N|(npc:90418) in {Dalaran} (28.43,48.91)| |Z|1014 10| |CHOICE|1| |NPC|90418|
+A A Gift From the Six |QID|45863| |N|(npc:90418) in {Dalaran} (28.43,48.91)| |Z|1014 10| |CHOICE|1| |NPC|90418|
+C Receive the Council's gift |QID|45863.1| |N|Stand in the circle and use the special action button that appears on-screen (30.43,48.95)| |Z|1014 10| |CHOICE|1|
+T A Gift From the Six |QID|45863| |N|(npc:90418) in {Dalaran} (28.44,48.91)| |Z|1014 10| |CHOICE|1| |NPC|90418|
+--Havoc
+A Havoc: The Thieving Apprentice |QID|47043| |N|(npc:115467) in {Dalaran}, this quest is for Havoc spec (22.94,41.13)| |Z|1014 10| |CHOICE|2| |NPC|115467|
+
+R Azshara |QID|44915| |N|Travel to {Azshara} (25.02,38.53)| |Z|181 0| |CHOICE|2|
+T Havoc: The Thieving Apprentice |QID|47043| |N|(npc:115791) in {Azshara} (25.02,38.53)| |Z|181 0| |CHOICE|2| |NPC|115791|
+A Professionally Good Looking |QID|44915| |N|(npc:115791) in {Azshara} (25.02,38.53)| |Z|181 0| |CHOICE|2| |NPC|115791|
+
+N Acquire the Fanciful Hat |QID|44915.3| |N|Speak to (npc:115970) and collect a (item:142374) (45.17,18.42)| |Z|181 0| |CHOICE|2| |NPC|115970|
+N Acquire the Well-Tailored Robes |QID|44915.2| |N|Speak to (npc:115946) and collect a (item:142372) (62.45,16.05)| |Z|181 0| |CHOICE|2| |NPC|115946|
+N Acquire the Magnificent Mantle |QID|44915.1| |N|Speak to (npc:115903) and collect a (item:142365) (80.84,32.05)| |Z|181 0| |CHOICE|2| |NPC|115903|
+
+T Professionally Good Looking |QID|44915| |N|(npc:115791) in {Azshara} (25.02,38.53)| |Z|181 0| |CHOICE|2| |NPC|115791|
+A Order of Incantations |QID|44920| |N|(npc:115791) in {Azshara} (25.02,38.53)| |Z|181 0| |CHOICE|2| |NPC|115791|
+N Solve the barrier puzzle |QID|44920.2| |N|Click the gems in this exact order, not following the proper order will result in instant death.<br/><b>Arcane-Imbued Gem<br/><b>Frost-Imbued Gem<br/><b>Fire-Imbued Gem<br/><b>Shadow-Imbued Gem (25.15,38.49)| |Z|181 0| |CHOICE|2|
+
+T Order of Incantations |QID|44920| |N|Field turnin (25.15,38.49)| |Z|181 0| |CHOICE|2|
+A The Archmage Accosted |QID|44924| |N|Auto quest (25.15,38.49)| |Z|181 0| |CHOICE|2|
+N Confront Archmage Xylem |QID|44924.1| |N|Kill (npc:115860) and confront Archmage Xylem  (25.21,38.03)| |Z|181 0| |CHOICE|2| |NPC|115860|
+N Follow through the portal |QID|44924.2| |N|Click Xylem's Portal (25.20,37.97)| |Z|181 0| |CHOICE|2|
+
+T The Archmage Accosted |QID|44924| |N|(npc:116048) in {Azshara} (25.22,37.90)| |Z|181 0| |CHOICE|2| |NPC|116048|
+A A Portal Away |QID|46177| |N|(npc:116048) in {Azshara} (25.22,37.90)| |Z|181 0| |NPC|116048|
+
+R Dalaran |TID|46177| |N|Travel to {Dalaran} (28.61,49.90)| |Z|1014 10| |CHOICE|2|
+T A Portal Away |QID|46177| |N|(npc:105081) in {Dalaran} (28.61,49.90)| |Z|1014 10| |CHOICE|2| |NPC|105081|
+A A Gift From the Six |QID|45865| |N|(npc:90418) in {Dalaran} (28.43,48.91)| |Z|1014 10| |CHOICE|2| |NPC|90418|
+N Receive the Council's gift |QID|45865.1| |N|Stand in the circle and use the special action button that appears on-screen. (30.42,48.91)| |Z|1014 10| |CHOICE|2|
+T A Gift From the Six |QID|45865| |N|(npc:90418) in {Dalaran} (28.44,48.91)| |Z|1014 10| |CHOICE|2| |NPC|90418|
+
+R The Fel Hammer |QID|46333| |N|Travel to {The Fel Hammer} (59.01,71.67)| |Z|1052 2|
+A Livin' on the Ledge |QID|46333| |N|Auto quest, you will receive this quest automatically  (59.01,71.67)| |Z|1052 2|
+T Livin' on the Ledge |QID|46333| |N|(npc:108784) in {The Fel Hammer} (59.98,48.91)| |Z|1052 2| |NPC|108784|
+A To Fel and Back |QID|46334| |N|(npc:108784) in {The Fel Hammer} (59.98,48.91)| |Z|1052 2| |NPC|108784|
+N (npc:116490) |QID|46334.1| |N|Speak to (npc:116490) (57.73,18.11)| |Z|1052 2| |NPC|116490|
+
+N (npc:119781) |SID|35778|1| |QID|46334| |N|Speak to (npc:119781) in {Felwing Ledge} (42.94,16.77)| |Z|1152 0| |NPC|119781|
+K (npc:119916) |SID|35779|2| |QID|46334| |N|Kill (npc:119916), Move out of the corrosive ground. You will only need to damage Lixahl to around 60%. (43.08,19.10)| |Z|1152 0| |NPC|119916|
+N Track Lixahl |SID|35780|3| |QID|46334| |N|Follow the path and track Lixahl (44.51,21.76) (44.70,28.32) (44.30,34.57) (42.60,39.13)| |Z|1152 0| |NPC|119916|
+K (npc:119916) |SID|35782|4| |QID|46334| |N|Attempt to Subdue (npc:119916) once more, Move out of the corrosive ground. You will only need to damage Lixahl to around 30%. (42.60,39.13)| |Z|1152 0| |NPC|119916| 
+N Continue Tracking Lixahl |SID|35783|5| |QID|46334| |N|Follow the path and track Lixahl (40.67,39.42) (38.63,46.63) (41.69,56.13)| |Z|1152 0| |NPC|119916|
+N Glide to Lixahl |SID|36466|6| |QID|46334| |N|Double Jump and glide to Lixahl. (44.35,62.72)| |Z|1152 0| |NPC|119916
+K (npc:119916) |SID|35784|7| |QID|46334| |N|Interrupt Piercing Screech whenever possible, Move out of the corrosive ground. (52.04,80.55)| |Z|1152 0| |NPC|119916|
+N (npc:119916) |SID|35811|8| |QID|46334| |N|Mount (npc:119916) (51.52,80.08)| |Z|1152 0| |NPC|119916| |V|
+N (npc:119844) |QID|46334.3| |N|Speak to (npc:119844) to Return to {The Fel Hammer} (48.60,17.08)| |Z|1152 0| |NPC|119844|
+T To Fel and Back |QID|46334| |N|(npc:108784) in {The Fel Hammer} (60.03,48.87)| |Z|1052 2| |NPC|108784|
+
+--
+A Defending Broken Isles |QID|46247| |N|(npc:116576) in {The Fel Hammer}, this quest is available (44.54,63.53)| |Z|1052 2| |NPC|116576|
+C Defending Broken Isles |QID|46247.1| |N|Defeat a Legion Assault in the Broken Isles, check the Broken Isle map for Legion Assault and complete the World quest for it| |Z|1021 0|
+T Defending Broken Isles |QID|46247| |N|(npc:116576) in {Deliverance Point} (44.54,63.52)| |Z|1021 0| |NPC|116576|
+A Champions of Legionfall |QID|47137| |N|(npc:116576) in {Deliverance Point} (44.54,63.52)| |Z|1021 0| |NPC|116576|
+
+R The Fel Hammer |QID|46159| |N|Travel to {The Fel Hammer} (58.96,69.93)| |Z|1052 2|
+A An Urgent Message |QID|46159| |N|Auto quest, This quest will appear automatically when you return to your Class Order Hall. (58.96,69.93)| |Z|1052 2|
+N Receive the communication |QID|46159.1| |N|Click Control Console to receive the communication (58.99,66.18)| |Z|1052 2|
+T An Urgent Message |QID|46159| |N|(npc:108311) in {The Fel Hammer} (59.35,57.67)| |Z|1052 2| |NPC|108311|
+A Taking Charge |QID|45301| |N|(npc:108311) in {The Fel Hammer} (59.35,57.67)| |Z|1052 2| |NPC|108311|
+N (npc:116490) |QID|45301.1| |N|Speak to (npc:116490) and travel to Mardum (57.70,18.07)| |Z|1052 2| |NPC|116490|
+
+T Taking Charge |QID|45301| |N|(npc:116448) in {The Fel Hammer} (74.21,41.67)| |Z|1052 1| |NPC|116448|
+A Scouting Party |QID|45330| |N|(npc:116448) in {The Fel Hammer} (74.21,41.67)| |Z|1052 1| |NPC|116448|
+A Operation: Portals |QID|45329| |N|(npc:116448) in {The Fel Hammer} (74.21,41.67)| |Z|1052 1| |NPC|116448|
+C Close Legion portal |QID|45329.1| |N|Click on each legion portal to close it (76.86,43.41) (80.39,41.85) (77.38,49.00)| |Z|1052 1|
+N (npc:116556) |QID|45330.1| |N|Rescue (npc:116556) (75.05,42.48)| |Z|1052 1| |NPC|116556|
+N (npc:118784) |QID|45330.2| |N|Enter the cave and find (npc:118784) and speak to her (80.55,48.47) (81.42,50.30)| |Z|1052 1| |NPC|118784|
+
+T Scouting Party |QID|45330| |N|(npc:116448) in {The Fel Hammer} (74.21,41.67)| |Z|1052 1| |NPC|116448|
+T Operation: Portals |QID|45329| |N|(npc:116448) in {The Fel Hammer} (74.21,41.67)| |Z|1052 1| |NPC|116448|
+A Defense of the Fel Hammer |QID|45339| |N|(npc:116448) in {The Fel Hammer} (74.21,41.67)| |Z|1052 1| |NPC|116448|
+N Enter the Illidari Gateway |QID|45339| |N|Click Illidari Gateway to enter it, tick this step (74.51,40.72)| |Z|1052 1|
+C Repel the demons |SID|0|1| |QID|45339| |N|Repel the demons invading the Fel Hammer| |NPC|116552, 116651, 116648|
+C Retake the forge room |SID|34835|2| |QID|45339| |N|Click Forge Room and kill (npc:116703) (56.15,28.18)| |Z|1165 2| |NPC|116703|
+C Retake the control room |SID|34836|3| |QID|45339| |N|Click Control Room and kill (npc:116654) (58.94,77.56)| |Z|1165 2| |NPC|116654|
+C Destroy the Legion ships |SID|34844|4| |QID|45339| |N|Click Control Console and Destroy the Legion ships (58.96,66.95)| |Z|1165 1|
+T Defense of the Fel Hammer |QID|45339| |N|(npc:108311) in {The Fel Hammer} (59.33,57.71)| |Z|1052 2| |NPC|108311|
+A We Must be Prepared! |QID|45385| |N|(npc:108311) in {The Fel Hammer} (59.33,57.71)| |Z|1052 2| |NPC|108311|
+
+T We Must be Prepared! |QID|45385| |N|(npc:117709) in {in {Deliverance Point} (52.14,21.15)| |Z|1021 0| |NPC|117709|
+A Restoring Equilibrium |QID|45764| |N|(npc:117709) in {in {Deliverance Point} (52.14,21.15)| |Z|1021 0| |NPC|117709|
+A War'zuul the Provoker |QID|45798| |N|(npc:117709) in {in {Deliverance Point} (52.14,21.15)| |Z|1021 0| |NPC|117709|
+A Power Outage |QID|46725| |N|(npc:117709) in {in {Deliverance Point} (52.14,21.15)| |Z|1021 0| |NPC|117709|
+N (npc:118071) |QID|45798| |N|Mount the (npc:118071) (51.82,20.69)| |Z|1021 0| |V| |NPC|118071|
+
+K (npc:117958) |QID|45798.1| |N|Kill (npc:117958) (61.40,12.22)| |Z|1021 0| |NPC|117958|
+C Restoring Equilibrium |QID|45764| |N|Collect 3 (item:143918) at each waypoint (64.40,16.52) (67.57,16.26) (64.40,16.52)| |Z|1021 0|
+N Replenish the Power Core |QID|46725.1| |N|Jump or fly through the green orbs to charge the core. (68.53,18.08)| |Z|1021 0|
+
+T Restoring Equilibrium |QID|45764| |N|(npc:117709) in {The Fel Hammer} (52.14,21.15)| |Z|1052 2| |NPC|108311|
+T War'zuul the Provoker |QID|45798| |N|(npc:117709) in {The Fel Hammer} (52.14,21.15)| |Z|1052 2| |NPC|108311|
+T Power Outage |QID|46725| |N|(npc:117709) in {The Fel Hammer} (52.14,21.15)| |Z|1052 2| |NPC|108311|
+A Return of the Slayer |QID|46266| |N|(npc:117709) in {The Fel Hammer} (52.14,21.15)| |Z|1052 2| |NPC|108311|
+
+T Return of the Slayer |QID|  | |N|(npc:108311) in {The Fel Hammer} (59.33,57.64)| |Z|1052 2| |NPC|108311|
+A Champion: Lady S'theno |QID|45391| |N|(npc:117481) in {The Fel Hammer} (61.97,54.00)| |Z|1052 2| |NPC|117481| |E|
+
+A Further Advancement |QID|46780| |N|(npc:103732) in {The Fel Hammer} (53.51,46.18)| |Z|1052 3| |NPC|103732|
+N (npc:108527) |QID|46780.1| |N|Speak to (npc:108527) (55.35,62.15)| |Z|1052 3| |NPC|108527|
+T Further Advancement |QID|46780| |N|(npc:103732) in {The Fel Hammer} (53.51,46.22)| |Z|1052 3| |NPC|103732|
+
+R Deliverance Point |TID|47137| |N|Travel {Deliverance Point} (44.53,63.52)| |Z|1021 0|
+T Champions of Legionfall |QID|47137| |N|(npc:116576) in {Deliverance Point} (44.53,63.52)| |Z|1021 0| |NPC|116576|
+
+A Champion Armaments |QID|44223| |N|(npc:110433), This quest will only be available if you chose to get the "Fel Armaments" class hall upgrade. (60.10,43.38)| |Z|1052 2| |NPC|110433|
+C Champion Armaments |QID|44223| |N|Speak to (npc:110433) and place a workorder for Champion Armaments in {The Fel Hammer} (60.10,43.38)| |Z|1052 2| |NPC|110433|
+T Champion Armaments |QID|44223| |N|(npc:110433) in {The Fel Hammer} (60.10,43.38)| |Z|1052 2| |NPC|110433|
 
 N Guide Complete
 

@@ -22,9 +22,9 @@ Follow the path |goto Bloodmaul Slag Mines/1 48.6,71.2 < 15
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-_Go right_ to kill _Slave Watcher Crushto_ first |goto Bloodmaul Slag Mines/1 51.2,66.6 < 15 |next "Crush" |or
+Go right to kill _Slave Watcher Crushto_ first |goto Bloodmaul Slag Mines/1 51.2,66.6 < 15 |next "Crush" |or
 Or
-_Go left_ to kill _Magmolatus_ first |goto Bloodmaul Slag Mines/1 46.9,66.8 < 15 |next "Magmo" |or
+Go left to kill _Magmolatus_ first |goto Bloodmaul Slag Mines/1 46.9,66.8 < 15 |next "Magmo" |or
 confirm
 step
 label "Crush"
@@ -36,7 +36,7 @@ Follow the path |goto Bloodmaul Slag Mines/1 57.1,60.0 < 20
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-modelnpc Slave Watcher Crushto##86222
+kill Slave Watcher Crushto##86222
 _TANK:_ |grouprole TANK
 |tip Interrupt Ferocious Yell. Miners will fixate on players, becoming untauntable. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
@@ -45,7 +45,7 @@ _HEALER:_ |grouprole HEALER
 |tip Heal players affected by Crushing Leap. Heal friendly miners to keep them in the fight. |grouprole HEALER
 _EVERYONE:_ |grouprole EVERYONE
 |tip Be sure to move away from Earth Crush this will deal high damage and stun for a short time. |grouprole EVERYONE
-|scenariogoal 25035 |goto Bloodmaul Slag Mines/1 59.0,59.6
+Defeat Slave Watcher Crushto |scenariogoal 25035 |goto Bloodmaul Slag Mines/1 59.0,59.6
 step
 click Ogre Family Tree##
 collect Ogre Family Tree##118646 |q Ogre Ancestry##37142/1 |goto Bloodmaul Slag Mines/1 52.0,58.6 |only if havequest(37142)
@@ -68,7 +68,7 @@ collect Olaf's Shield##118616 |q Time-Lost Vikings##37153/1 |goto Bloodmaul Slag
 |tip It's a small shield on the ground.
 |only if havequest(37229) or havequest(37153)
 step
-modelnpc Magmolatus##74475
+kill Magmolatus##74475
 _TANK:_ |grouprole TANK
 |tip Rough Smash does significant damage and stuns for 2 seconds. |grouprole TANK
 |tip Slag Smash does significant damage and stuns for 3 seconds. Molten Elementals cannot be tanked. |grouprole TANK
@@ -85,7 +85,7 @@ _Phase One:_
 _Phase Two:_
 |tip Spread out.
 |tip Kill the Molten Elemental as soon as possible.
-|scenariogoal 25036 |goto Bloodmaul Slag Mines/1 26.4,55.9
+Defeat Magmolatus |scenariogoal 25036 |goto Bloodmaul Slag Mines/1 26.4,55.9
 step
 map Bloodmaul Slag Mines/1
 path follow loose;loop off;ants straight
@@ -105,7 +105,7 @@ Follow the path |goto Bloodmaul Slag Mines/1 29.5,55.8 < 20
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-modelnpc Magmolatus##74475
+kill Magmolatus##74475
 _TANK:_ |grouprole TANK
 |tip Rough Smash does significant damage and stuns for 2 seconds. |grouprole TANK
 |tip Slag Smash does significant damage and stuns for 3 seconds. Molten Elementals cannot be tanked. |grouprole TANK
@@ -122,7 +122,7 @@ _Phase One:_
 _Phase Two:_
 |tip Spread out.
 |tip Kill the Molten Elemental as soon as possible.
-|scenariogoal 25036 |goto Bloodmaul Slag Mines/1 26.4,55.9
+Defeat Magmolatus |scenariogoal 25036 |goto Bloodmaul Slag Mines/1 26.4,55.9
 step
 map Bloodmaul Slag Mines/1
 path follow loose;loop off;ants straight
@@ -133,7 +133,7 @@ Follow the path |goto Bloodmaul Slag Mines/1 56.0,59.7 < 20
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-modelnpc Slave Watcher Crushto##86222
+kill Slave Watcher Crushto##86222
 _TANK:_ |grouprole TANK
 |tip Interrupt Ferocious Yell. Miners will fixate on players, becoming untauntable. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
@@ -142,7 +142,7 @@ _HEALER:_ |grouprole HEALER
 |tip Heal players affected by Crushing Leap. Heal friendly miners to keep them in the fight. |grouprole HEALER
 _EVERYONE:_ |grouprole EVERYONE
 |tip Be sure to move away from Earth Crush this will deal high damage and stun for a short time. |grouprole EVERYONE
-|scenariogoal 25035 |goto Bloodmaul Slag Mines/1 59.0,59.6
+Defeat Slave Watcher Crushto |scenariogoal 25035 |goto Bloodmaul Slag Mines/1 59.0,59.6
 step
 map Bloodmaul Slag Mines/1
 path follow loose;loop off;ants straight
@@ -153,7 +153,7 @@ Follow the path |goto Bloodmaul Slag Mines/1 49.0,39.1 < 20
 confirm
 step
 label "Roltall"
-modelnpc Roltall##86223
+kill Roltall##86223
 _TANK:_ |grouprole TANK
 |tip The boss can not move, don't worry about positioning the boss. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
@@ -166,7 +166,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Avoid standing in Burning Slag pools. |grouprole EVERYONE
 _Heroic Difficulty_: |only if heroic_dung()
 |tip Rotall gains Scorching Aura, reducing cast speed when in close proximity by 100%. |only if heroic_dung()
-|scenariogoal 25037 |goto Bloodmaul Slag Mines/1 49.1,34.8
+Defeat Roltall |scenariogoal 25037 |goto Bloodmaul Slag Mines/1 49.1,34.8
 step
 map Bloodmaul Slag Mines/1
 path follow loose;loop off;ants straight
@@ -182,7 +182,7 @@ collect Giant Ogre Head ##118534 |q Cro's Revenge##37152/1 |only if havequest(37
 |tip This has a chance to drop off of ogres in the instance.
 |only if havequest(37228) or havequest(37152)
 step
-modelnpc Gug'rokk##86224
+kill Gug'rokk##86224
 _TANK:_ |grouprole TANK
 |tip Interrupt Molten Blast. |grouprole TANK
 |tip Move the boss after he casts Magma Eruption. |grouprole TANK
@@ -193,7 +193,7 @@ _HEALER:_ |grouprole HEALER
 |tip Unstable Slag Elementals will deal AoE damage to the party through Unleashed Flames. |grouprole HEALER
 _Heroic Difficulty_: |only if heroic_dung()
 |tip Gug'rokk gains Flame Buffet, dealing damage to all players and increasing fire damage taken. Stacks. |only if heroic_dung()
-|scenariogoal 1/34452 |goto Bloodmaul Slag Mines/1 65.4,22.7
+Defeat Gug'rokk |scenariogoal 1/34452 |goto Bloodmaul Slag Mines/1 65.4,22.7
 Slay Gug'rokk |q Like a Dwarf In A Mine##37229/2 |goto Bloodmaul Slag Mines/1 65.4,22.7 |only if havequest(37229)
 Slay Gug'rokk |q Ogre Ancestry##37142/2 |goto Bloodmaul Slag Mines/1 65.4,22.7 |only if havequest(37142)
 Slay Gug'rokk |q A Fruitful Proposition##37228/2 |goto Bloodmaul Slag Mines/1 65.4,22.7 |only if havequest(37228)
@@ -204,7 +204,7 @@ step
 next "Zygor's Horde Leveling Guides\\Garrisons\\Muradin Bronzebeard Dailies"
 only if havequest(37795)
 step
-Congratulations, you have completed the Bloodmaul Slag Mines!
+Congratulations, you have completed the _Bloodmaul Slag Mines_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Draenor Dungeons\\Iron Docks 92",{
 mapid=987,
@@ -225,7 +225,7 @@ Follow the path |goto Iron Docks/1 42.0,34.4
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-modelnpc Fleshrender Nok'gar##87451
+kill Fleshrender Nok'gar##87451
 _TANK:_ |grouprole TANK
 |tip Move Nok'gar and Dreadfang out of Barbed Arrow Barrage and Burning Arrows. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
@@ -235,7 +235,7 @@ _HEALER:_ |grouprole HEALER
 _EVERYONE:_ |grouprole EVERYONE
 |tip Stop attacking when Nok'gar has Reckless Provocation. This is a shield-looking effect. |grouprole EVERYONE
 |tip Avoid Shredding Swipes when Dreadfang charges forward. |grouprole EVERYONE
-|scenariogoal 25108 |goto Iron Docks/1 47.8,34.1
+Defeat Fleshrender Nok'gar |scenariogoal 25108 |goto Iron Docks/1 47.8,34.1
 step "Compass"
 click Strange Brass Compass##6846
 collect the Strange Brass Compass##118618 |q The Search Continues##37231/1 |goto Iron Docks/1 47.0,26.4 |only if havequest(37231)
@@ -259,9 +259,7 @@ collect the Horribly Acidic Solution##118617 |q Feeling A Bit Morose##37157/1 |g
 |tip It's a greenish glowing bottle on top of the barrel.
 |only if havequest(37230) or havequest(37157)
 step
-modelnpc Ahrj'ok Dugrv##87452
-modelnpc Neelsa Nox##80808
-modelnpc Makogg Emberblade##86231
+kill Ahrj'ok Dugrv##87452, Neelsa Nox##80808, Makogg Emberblade##86231
 _TANK:_ |grouprole TANK
 |tip Avoid attacking any Enforcer protected with Sanguine Sphere. |grouprole TANK
 |tip Face Makogg away from the group. |grouprole TANK
@@ -271,7 +269,7 @@ _DAMAGE:_ |grouprole DAMAGE
 _EVERYONE:_ |grouprole EVERYONE
 |tip Do not step on Ogre Traps. Doing so will make you vulnerable to Big Boom. |grouprole EVERYONE
 |tip Spread out when Neesa fires Hyper-Jumper Cables 9000-XL. |grouprole EVERYONE
-|scenariogoal 25109 |goto Iron Docks/1 80.2,75.3
+Defeat The Grimrail Enforcers |scenariogoal 25109 |goto Iron Docks/1 80.2,75.3
 stickystart "Gambit"
 step
 map Iron Docks/1
@@ -286,7 +284,7 @@ collect the Very Shiny Thing##118647 |q Budd's Gambit##37145/1 |goto Iron Docks/
 |tip It's a small gold disk on top of the crate.
 |only if havequest(37145)
 step
-modelnpc Oshir##86232
+kill Oshir##86232
 _TANK:_ |grouprole TANK
 |tip Focus damage on Oshir during Feeding Frenzy. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
@@ -299,7 +297,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip When Oshir flips backward, avoid his Primal Assault. |grouprole EVERYONE
 _Heroic Difficulty_: |only if heroic_dung()
 |tip Ravenous Wolves gain a damage buff when near each other. Keep them separated. |only if heroic_dung()
-|scenariogoal 25110 |goto Iron Docks/1 80.4,17.4
+Defeat Oshir |scenariogoal 25110 |goto Iron Docks/1 80.4,17.4
 step
 map Iron Docks/1
 path follow loose;loop off;ants straight
@@ -308,7 +306,7 @@ Follow the path |goto Iron Docks/1 69.4,34.2
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-modelnpc Skulloc##86233
+kill Skulloc##86233
 _TANK:_ |grouprole TANK
 |tip Face Koramar away from the group. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
@@ -319,7 +317,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Take cover behind crates during Cannon Barrage, moving foreward between shots. |grouprole EVERYONE
 |tip Avoid the rear of the ship during Cannon Barrage. Backdraft will kill you. |grouprole EVERYONE
 |tip Avoid standing between Zoggosh and his Rapid Fire target. |grouprole EVERYONE
-|scenariogoal 1/34453 |goto Iron Docks/1 68.4,43.6
+Defeat Skulloc |scenariogoal 1/34453 |goto Iron Docks/1 68.4,43.6
 Slay Skulloc |q The Search Continues##37231/2 |goto Iron Docks/1 68.4,43.6 |only if havequest(37231)
 Slay Skulloc |q Bloody Expensive##37230/2 |goto Iron Docks/1 68.4,43.6 |only if havequest(37230)
 Slay Skulloc |q Budd's Gambit##37145/2 |goto Iron Docks/1 68.4,43.6 |only if havequest(37145)
@@ -327,7 +325,7 @@ step
 Proceeding |next "Zygor's Horde Dailies Guides\\Warlords of Draenor\\Garrison Building Dailies"
 only if havequest(37231) or havequest(37230) or havequest(37145)
 step
-Congratulations, you have completed the Iron Docks
+Congratulations, you have completed the _Iron Docks_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Draenor Dungeons\\Auchindoun 94",{
 mapid=984,
@@ -348,7 +346,7 @@ Follow the path |goto Auchindoun/1 27.4,40.2 < 20
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-modelnpc Vigilant Kaathar##86217
+kill Vigilant Kaathar##86217
 _TANK:_ |grouprole TANK
 |tip Try to keep Kaathar a short distance away from his shield |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
@@ -360,7 +358,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip During Consecrated Light, everyone needs to hide behind the shield. |grouprole EVERYONE
 _Heroic Difficulty_: |only if heroic_dung()
 |tip He will now cast Fate, instantly blowing up all Hallowed Ground patches immediately. |only if heroic_dung()
-|scenariogoal 25102 |goto Auchindoun/1 28.9,33.6
+Defeat Vigilant Kaathar |scenariogoal 25102 |goto Auchindoun/1 28.9,33.6
 step
 click Soulweave Vessel##
 collect the Soulweave Vessel##118620 |q Vessel of Virtue##37233/1 |goto Auchindoun/1 24.4,32.4 |only if havequest(37233)
@@ -376,7 +374,7 @@ Follow the path |goto Auchindoun/1 44.2,66.0 < 20
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-modelnpc SoulbinderNyami##86218
+kill SoulbinderNyami##86218
 _TANK:_ |grouprole TANK
 |tip Pick up adds summoned by Torn Spirits. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
@@ -387,7 +385,7 @@ _HEALER:_ |grouprole HEALER
 _EVERYONE:_ |grouprole EVERYONE
 |tip Interrupt Arbiter's Hammer from Spiteful Arbiters and Arcane Bolt from Twisted Magus. |grouprole EVERYONE
 |tip During Soul Vessel, the center is safe from damage. |grouprole EVERYONE
-|scenariogoal 25103 |goto Auchindoun/1 49.7,66.6
+Defeat SoulbinderNyami |scenariogoal 25103 |goto Auchindoun/1 49.7,66.6
 step "Sever"
 click Soulsever Blade##
 collect the Soulsever Blade##118619 |q Soulcarver Voss##37232/1 |goto Auchindoun/1 53.3,63.4 |only if havequest(37232)
@@ -408,7 +406,7 @@ Follow the path|goto Auchindoun/1 70.7,38.2 < 20
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-modelnpc Azzakel##86219
+kill Azzakel##86219
 _TANK:_ |grouprole TANK
 |tip Summoned Felguards must be tanked. They do heavy melee damage. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
@@ -423,7 +421,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Move out of Fel Pool. |grouprole EVERYONE
 _Heroic Difficulty_: |only if heroic_dung()
 |tip Fel Sparks will reach out of Fel Pools inflicting extreme fire damage each second to anyone who stands in them. |only if heroic_dung()
-|scenariogoal 25104 |goto Auchindoun/1 70.7,33.2
+Defeat Azzakel |scenariogoal 25104 |goto Auchindoun/1 70.7,33.2
 step
 click Soul Transporter
 map Auchindoun/1
@@ -451,7 +449,7 @@ Activate the Soul Transporter |goto Auchindoun 42.4,43.5
 |goto Auchindoun/1 49.7,41.6
 confirm
 step
-modelnpc Teron'gor##86220
+kill Teron'gor##86220
 _TANK:_ |grouprole TANK
 |tip Move the boss out of Rain of Fire. |grouprole TANK
 |tip Face the boss away from the group. |grouprole TANK
@@ -471,7 +469,7 @@ _Phase 2:_
 |tip Interrupt Drain Life and Chaos Bolt.
 |tip Dispel Curse of Exhaustion whenever possible.
 |tip There are several possible targeted and AoE effects possible for this phase. All are relatively easy to avoid.
-|scenariogoal 1/34451 |goto Auchindoun/1 49.6,33.5
+Defeat Teron'gor |scenariogoal 1/34451 |goto Auchindoun/1 49.6,33.5
 Slay Teron'gor |q Soulcarver Voss##37232/2 |goto Auchindoun/1 49.6,33.5 |only if havequest(37232)
 Slay Teron'gor |q Vessel of Virtue##37233/2 |goto Auchindoun/1 49.6,33.5 |only if havequest(37233)
 Slay Teron'gor |q Go Fetch##37146/2 |goto Auchindoun/1 49.6,33.5 |only if havequest(37146)
@@ -482,7 +480,7 @@ step
 next "Zygor's Horde Leveling Guides\\Garrisons\\High Overlord Saurfang Dailies"
 only if havequest(37796)
 step
-Congratulations, you have completed Auchindoun
+Congratulations, you have completed _Auchindoun_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Draenor Dungeons\\Skyreach 97",{
 mapid=989,
@@ -510,7 +508,7 @@ collect Pristine Plumage##118622 |q A Plea to the Sky##37235/1 |goto Skyreach/1 
 collect Pristine Plumage##118622 |q Aviana's Request##37159/1 |goto Skyreach/1 63.8,24.9 |only if havequest(37159)
 |only if havequest(37235) or havequest(37159)
 step
-modelnpc Ranjit##86238
+kill Ranjit##86238
 _TANK:_ |grouprole TANK
 |tip Save your cooldowns for Four Winds. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
@@ -523,7 +521,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Ranjit will charge forward in a Piercing Rush. Avoid standing in front of him. |grouprole EVERYONE
 _Heroic Difficulty_: |only if heroic_dung()
 |tip Lens Flare will call a beam of light down on a party member and follow them. Move away and don't lead it through the group. |only if heroic_dung()
-|scenariogoal 24709 |goto Skyreach/1 63.3,38.5
+Defeat Ranjit |scenariogoal 24709 |goto Skyreach/1 63.3,38.5
 stickystart "Dark"
 step
 map Skyreach/1
@@ -540,7 +538,7 @@ collect the Sun Crystal##118621 |q Gloriously Incandescent##37158/1 |goto Skyrea
 |tip It looks like a glowing yellow sun shield.
 |only if havequest(37234) or havequest(37158)
 step
-modelnpc Araknath##86239
+kill Araknath##86239
 _TANK:_ |grouprole TANK
 |tip Avoid standing in Smash. This ability comes from his left or right arm. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
@@ -549,7 +547,7 @@ _HEALER:_ |grouprole HEALER
 |tip Burst will deal increasing damage to the entire party. |grouprole HEALER
 _EVERYONE:_ |grouprole EVERYONE
 |tip Stand in the path of Energize there will be tow of them. If they are not soaked the boss will heal. |grouprole EVERYONE
-|scenariogoal 24451 |goto Skyreach/1 52.4,61.2
+Defeat Araknath |scenariogoal 24451 |goto Skyreach/1 52.4,61.2
 stickystart "Wind"
 step
 map Skyreach/1
@@ -565,7 +563,7 @@ collect the Bottled Windstorm##118649 |q Sky Dancers##37147/1 |goto Skyreach/1 4
 |tip It's a translucent blue-white bottle.
 |only if havequest(37147)
 step
-modelnpc Rukhran##76379
+kill Rukhran##76379
 _TANK:_ |grouprole TANK
 |tip It is critical to stay in melee range of Rukhran at all times or he will cast Screech. |grouprole TANK
 |tip Use active mitigation cooldowns to counter Pierce Armor. |grouprole TANK
@@ -577,7 +575,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Solar Flares should be killed away from Ash Piles or they will animate as additional Solar Flares. |grouprole EVERYONE
 _Heroic Difficulty_: |only if heroic_dung()
 |tip Rukhran will cast Quills, dealing damage to all enemies and increasing in damage each cast. Hide behind the pillar to avoid damage. |only if heroic_dung()
-|scenariogoal 24452 |goto Skyreach/1 42.7,81.9
+Defeat Rukhran |scenariogoal 24452 |goto Skyreach/1 42.7,81.9
 step
 map Skyreach/1
 path follow loose;loop off;ants straight
@@ -596,7 +594,7 @@ Follow the path |goto Skyreach/2 44.0,43.4 < 5
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-modelnpc High Sage Viryx##86241
+kill High Sage Viryx##86241
 _TANK:_ |grouprole TANK
 |tip Tank the boss close to the entrance, this is where the Shield Constructs spawn. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
@@ -609,7 +607,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Interrupt Solar Burst. |grouprole EVERYONE
 |tip The Shield Construct casts a buff on the boss that makes him immune to damage this can be interrupted or stunned. |grouprole EVERYONE
 |tip The Zealots can be stunned and slowed. |grouprole EVERYONE
-|scenariogoal 1/34455 |goto Skyreach/2 51.1,27.4
+Defeat High Sage Viryx |scenariogoal 1/34455 |goto Skyreach/2 51.1,27.4
 Slay High Sage Viryx |q A Plea to the Sky##37235/2 |goto Skyreach/2 51.1,27.4 |only if havequest(37235)
 Slay High Sage Viryx |q The Dark Within##37234/2 |goto Skyreach/2 51.1,27.4 |only if havequest(37234)
 Slay High Sage Viryx |q Sky Dancers##37147/2 |goto Skyreach/2 51.1,27.4 |only if havequest(37147)
@@ -620,7 +618,7 @@ step
 next "Zygor's Horde Leveling Guides\\Garrisons\\High Overlord Saurfang Dailies"
 only if havequest(37791)
 step
-Congratulations, you have completed Skyreach
+Congratulations, you have completed _Skyreach_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Draenor Dungeons\\Grimrail Depot 100",{
 mapid=993,
@@ -646,8 +644,7 @@ Follow the path |goto Grimrail Depot/1 56.6,42.8
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-modelnpc Railmaster Rocketspark##86225
-modelnpc Borka the Brute##86226
+kill Railmaster Rocketspark##86225, Borka the Brute##86226
 _TANK:_ |grouprole TANK
 |tip Aim Borka at Railmaster Rocketspark during Mad Dash. Rocketspark cannot be tanked. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
@@ -660,7 +657,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Range DPS should be on Rocketspark, while melee DPS should be on Borka. |grouprole EVERYONE
 _Heroic Difficulty_: |only if heroic_dung()
 Borka's Slam also interrupts for 1.5 seconds. |only if heroic_dung()
-|scenariogoal 1/25106 |goto Grimrail Depot/1 71.3,57.8
+Defeat Rocketspark and Borka |scenariogoal 1/25106 |goto Grimrail Depot/1 71.3,57.8
 step
 map Grimrail Depot/1
 path follow loose;loop off;ants straight
@@ -668,6 +665,7 @@ path	69.5,19.6	75.4,25.0	Grimrail Depot/2 63.6,25.8
 path	Grimrail Depot/2 71.8,13.7	Grimrail Depot/2 70.3,29.3
 Follow the path |goto Grimrail Depot/3 85.3,51.8 |c |noway |or
 Enter the Train Car |confirm |or
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 stickystart "Cleaver"
 step
 map Grimrail Depot/3
@@ -684,7 +682,7 @@ collect Iron Limbcleaver##118644 |q Cleaving Time##37160/1 |goto Grimrail Depot/
 |tip It's a cleaver in the middle of the second train car where you face the first Grom'kar Hulk.
 |only if havequest(37243) or havequest(37160)
 step
-modelnpc Nitrogg Thundertower##86227
+kill Nitrogg Thundertower##86227
 _TANK:_ |grouprole TANK
 |tip Pick up adds that spawn when Assault Cannon becomes active. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
@@ -696,7 +694,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Anyone who picks up Blackrock Grenades should use them to deal heavy damage to adds. |grouprole EVERYONE
 _Heroic Difficulty_: |only if heroic_dung()
 |tip Move out of Slag Blast. This leaves fire on the ground. |only if heroic_dung()
-|scenariogoal 2/25107 |goto Grimrail Depot/3 65.0,51.0
+Defeat Nitrogg Thundertower |scenariogoal 2/25107 |goto Grimrail Depot/3 65.0,51.0
 step
 click Iron Autocannon##
 collect Iron Autocannon##118653 |q Cold Steel Part II##37209/1 |goto Grimrail Depot/4 67.2,47.7 |only if havequest(37209)
@@ -711,7 +709,7 @@ Follow the path |goto Grimrail Depot/4 30.9,51.6
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-modelnpc Skylord Tovra##86228
+kill Skylord Tovra##86228
 _TANK:_ |grouprole TANK
 |tip Reposition Tovra frequently to avoid Freezing Snare and Diffused Energy. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
@@ -722,7 +720,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Don't stand in any traps or in Diffused Energy. |grouprole EVERYONE
 _Heroic Difficulty_: |only if heroic_dung()
 |tip Random players will be marked with Hunter's Mark. Move away from them. |only if heroic_dung()
-|scenariogoal 2/26188 |goto Grimrail Depot/4 8.6,51.0
+Defeat Skylord Tovra |scenariogoal 2/26188 |goto Grimrail Depot/4 8.6,51.0
 Slay Skylord Tovra |q Learning is Painful##37242/2 |goto Grimrail Depot/4 8.6,51.0 |only if havequest(37242)
 Slay Skylord Tovra |q An Axe to Grind##37243/2 |goto Grimrail Depot/4 8.6,51.0 |only if havequest(37243)
 Slay Skylord Tovra |q Cold Steel Part II##37209/2 |goto Grimrail Depot/4 8.6,51.0 |only if havequest(37209)
@@ -733,7 +731,7 @@ step
 next "Zygor's Horde Leveling Guides\\Garrisons\\High Overlord Saurfang Dailies"
 only if havequest(37794)
 step
-Congratulations, you have completed the Grimrail Depot
+Congratulations, you have completed the _Grimrail Depot_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Draenor Dungeons\\Shadowmoon Burial Grounds 100",{
 mapid=969,
@@ -777,7 +775,7 @@ collect the Void-Gate Key##118651 |q The Void-Gate##37149/1 |goto 37.45,51.30 |o
 |tip It's located in the crypt at the base of the stairs.
 |only if havequest(37245) or havequest(37149)
 step
-modelnpc Sadana Bloodfury##86234
+kill Sadana Bloodfury##86234
 _TANK:_ |grouprole TANK
 |tip Kill Defiled Souls before they get to Sadana. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
@@ -787,7 +785,7 @@ _HEALER:_ |grouprole HEALER
 _EVERYONE:_ |grouprole EVERYONE
 |tip During Dark Eclipse, walk over uncorrupted blue runes to survive. |grouprole EVERYONE
 |tip Move away from falling Daggers. |grouprole EVERYONE
-|scenariogoal 25114 |goto Shadowmoon Burial Grounds/1 52.2,51.0
+Defeat Sadana Bloodfury |scenariogoal 25114 |goto Shadowmoon Burial Grounds/1 52.2,51.0
 step
 map Shadowmoon Burial Grounds/1
 path follow loose;loop off;ants straight
@@ -797,7 +795,7 @@ Follow the path |goto Shadowmoon Burial Grounds/1 78.2,62.4 < 8
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-modelnpc Nhallish##75829
+kill Nhallish##75829
 _TANK:_ |grouprole TANK
 |tip Pick up spirits near barrows raised by Exhume the Crypts. |grouprole TANK
 |tip Face Nhallish away from the group. |grouprole TANK
@@ -809,7 +807,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Kill your Spirit quickly during Soul Shred or you will die. |grouprole EVERYONE
 |tip Run away when Nhallish casts Void Vortex. |grouprole EVERYONE
 |tip Avoid purple spots on the ground. These areas will be hit by Void Devastation. |grouprole EVERYONE
-|scenariogoal 25116 |goto Shadowmoon Burial Grounds/1 78.8,73.6
+Defeat Nhallish |scenariogoal 25116 |goto Shadowmoon Burial Grounds/1 78.8,73.6
 step
 click Silver-Lined Arrow##11524
 collect Silver-Lined Arrow##118626 |q Fate of the Fallen##37239/1 |goto Shadowmoon Burial Grounds/1 83.3,80.5 |only if havequest(37239)
@@ -834,7 +832,7 @@ Follow the path |goto Shadowmoon Burial Grounds/2 25.7,59.5
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-modelnpc Bonemaw##86236
+kill Bonemaw##86236
 _TANK:_ |grouprole TANK
 |tip There must always be a tank in melee range of Bonemaw or he will use Fetid Spit rapidly and wipe the group. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
@@ -844,7 +842,7 @@ _HEALER:_ |grouprole HEALER
 _EVERYONE:_ |grouprole EVERYONE
 |tip Avoid Body Slam cast by Carrion Worms and Bonemaw. |grouprole EVERYONE
 |tip Stand in Necrotic Pitch when Bonemaw Inhales. |grouprole EVERYONE
-|scenariogoal 25115 |goto Shadowmoon Burial Grounds/2 39.8,51.4
+Defeat Bonemaw |scenariogoal 25115 |goto Shadowmoon Burial Grounds/2 39.8,51.4
 step
 map Shadowmoon Burial Grounds/2
 path follow loose;loop off;ants straight
@@ -854,7 +852,7 @@ Follow the path |goto Shadowmoon Burial Grounds/3 38.5,36.9 < 20
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-modelnpc Ner'zhul##76268
+kill Ner'zhul##76268
 _TANK:_ |grouprole TANK
 |tip Face the boss away from the raid, and dont stand in Malevolence. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
@@ -865,7 +863,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip During Ritual of Bones, focus dps on a single skeleton to break a safe zone in the chain. |grouprole EVERYONE
 |tip When Ritual of Bones is active don't stand in the purple area created by the skeletons. |grouprole EVERYONE
 |tip Everyone should move away from Omen of Death quickly to avoid taking too much damage from close proximity. |grouprole EVERYONE
-|scenariogoal 1/34454 |goto Shadowmoon Burial Grounds/3 48.1,47.1
+Defeat Ner'zhul |scenariogoal 1/34454 |goto Shadowmoon Burial Grounds/3 48.1,47.1
 Slay Ner'zhul |q Secrets of Soulbinding##37238/2 |goto Shadowmoon Burial Grounds/3 48.1,47.1 |only if havequest(37238)
 Slay Ner'zhul |q Whispers in the Darkness##37245/2 |goto Shadowmoon Burial Grounds/3 48.1,47.1 |only if havequest(37245)
 Slay Ner'zhul |q Fate of the Fallen##37239/2 |goto Shadowmoon Burial Grounds/3 48.1,47.1 |only if havequest(37239)
@@ -876,7 +874,7 @@ step
 next "Zygor's Horde Leveling Guides\\Garrisons\\High Overlord Saurfang Dailies"
 only if havequest(37792)
 step
-Congratulations, you have completed the Shadowmoon Burial Grounds
+Congratulations, you have completed the _Shadowmoon Burial Grounds_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Draenor Dungeons\\The Everbloom 100",{
 mapid=1008,
@@ -894,7 +892,9 @@ map The Everbloom/1
 path follow loose;loop off;ants straight
 path	72.4,55.7	69.4,50.4	67.4,48.0
 path	63.4,56.9	59.0,59.9	56.0,59.7
-Follow the path |goto The Everbloom/1 56.0,59.7 |c |noway
+Follow the path |goto The Everbloom/1 56.0,59.7
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step "Past"
 click Overgrown Artifact##
 collect Overgrown Artifact##118628 |q Lessons of the Past##37241/1 |goto The Everbloom/1 61.1,66.3 |only if havequest(37241)
@@ -902,7 +902,7 @@ collect Overgrown Artifact##118628 |q Titanic Evolution##37166/1 |goto The Everb
 |tip It's a small box with a glowing yellow-white sphere on the top.
 |only if havequest(37241) or havequest(37166)
 step
-modelnpc Witherbark##86242
+kill Witherbark##86242
 _TANK:_ |grouprole TANK
 |tip Tank Witherbark away from the water. Pick up Unchecked Growths quickly and face Witherbark away from the group. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
@@ -915,7 +915,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Avoid standing in areas targeted by Agitated Water. |grouprole EVERYONE
 _Heroic Difficulty_: |only if heroic_dung()
 |tip Witherbark will continue to cast Unchecked Growth during Brittle Bark. |only if heroic_dung()
-|scenariogoal 25278 |goto The Everbloom/1 52.5,56.9
+Defeat Witherbark |scenariogoal 25278 |goto The Everbloom/1 52.5,56.9
 step
 map The Everbloom/1
 path follow loose;loop off;ants straight
@@ -926,9 +926,7 @@ Follow the path |goto The Everbloom/1 67.8,21.6
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-modelnpc Dulhu##83894
-modelnpc Earthshaper Telu##86244
-modelnpc Life Warden Gola##86243
+kill Dulhu##83894, Earthshaper Telu##86244, Life Warden Gola##86243
 _TANK:_ |grouprole TANK
 |tip Try to group all three bosses together. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
@@ -940,7 +938,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Dulhu will cast Grasping Vine on a party member and then Slash at them. Don't stand in front of him. |grouprole EVERYONE
 |tip Dispel or interrupt Briarskin cast by Telu. |grouprole EVERYONE
 |tip Dispel or interrupt Rapid Tides cast by Gola. |grouprole EVERYONE
-|scenariogoal 25112 |goto The Everbloom/1 64.0,22.4
+Defeat The Ancient Protectors |scenariogoal 25112 |goto The Everbloom/1 64.0,22.4
 step
 click Strangely-Glowing Frond##6807
 collect Strangely-Glowing Frond##118627 |q The Leaf-Reader##37240/1 |goto The Everbloom/1 64.4,20.1 |only if havequest(37240)
@@ -988,7 +986,7 @@ Follow the path |goto The Everbloom/1 57.2,29.6
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-modelnpc Archmage Sol##86246
+kill Archmage Sol##86246
 |tip Archmage Sol begins by casting Fire spells, followed by Frost and then Arcane.
 _TANK:_ |grouprole TANK
 |tip This boss uses mostly spells so pop magic resistant cooldowns when needed. |grouprole TANK
@@ -1002,7 +1000,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Avoid standing in the ground targeted abilities Firebloom, Frozen Rain, and Arcane Blossom. |grouprole EVERYONE
 _Heroic Difficulty_: |only if heroic_dung()
 |tip Interrupting Parasitic Growth spawns a Spore Image. This image continues casting the previous school of magic until killed. |only if heroic_dung()
-|scenariogoal 25275 |goto The Everbloom/1 55.9,35.8
+Defeat Archmage Sol |scenariogoal 25275 |goto The Everbloom/1 55.9,35.8
 step
 map The Everbloom/1
 path follow loose;loop off;ants straight
@@ -1011,7 +1009,7 @@ Follow the path |goto The Everbloom/2 44.2,35.1
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-modelnpc Yalnu##86248
+kill Yalnu##86248
 _TANK:_ |grouprole TANK
 |tip Pick up adds from Font of Life. |grouprole TANK
 |tip When tanking adds try to place them in Flamestrike which is a spell casted by the friendly npcs. |grouprole TANK
@@ -1024,7 +1022,7 @@ _HEALER:_ |grouprole HEALER
 |tip Avoid standing in front of adds. |grouprole HEALER
 _EVERYONE:_ |grouprole EVERYONE
 |tip Step on Sprouting Lashers to Trample them during Genesis. |grouprole EVERYONE
-|scenariogoal 1/34456 |goto The Everbloom/2 45.0,72.0
+Defeat Yalnu |scenariogoal 1/34456 |goto The Everbloom/2 45.0,72.0
 Slay Yalnu |q Lessons of the Past##37241/2 |goto The Everbloom/2 45.0,72.0 |only if havequest(37241)
 Slay Yalnu |q The Leaf-Reader##37240/2 |goto The Everbloom/2 45.0,72.0 |only if havequest(37240)
 Slay Yalnu |q Put a Bird on It##37227/2 |goto The Everbloom/2 45.0,72.0 |only if havequest(37227)
@@ -1035,7 +1033,7 @@ step
 next "Zygor's Horde Leveling Guides\\Garrisons\\High Overlord Saurfang Dailies"
 only if havequest(37790)
 step
-Congratulations, you have completed the Everbloom
+Congratulations, you have completed the _Everbloom_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Draenor Dungeons\\Upper Blackrock Spire 100",{
 mapid=995,
@@ -1064,7 +1062,7 @@ collect Spire Flamefly##118650 |q Oralius' Adventure##37148/1 |goto Upper Blackr
 |tip It can be found in the first room up the first ramp on a barrel.
 |only if havequest(37244) or havequest(37148)
 step
-modelnpc Orebender Gor'ashan##86249
+kill Orebender Gor'ashan##86249
 |tip To begin the encounter, click the Rune Conduits near the walls.
 _TANK:_ |grouprole TANK
 |tip The boss stands still the enitre fight so just get the necessary aggro and help with the Rune Conduits. |grouprole TANK
@@ -1076,7 +1074,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip When Rune Conduits active anyone can go down and deactive them. |grouprole EVERYONE
 |tip When down on the ground floor deactivating Rune Conduits watch out for the two Electric Pulses that travel around the room. |grouprole EVERYONE
 |tip Each active Rune Conduit gives a buff to the boss decreasing damage taken by 14 percent. |grouprole EVERYONE
-|scenariogoal 24322 |goto Upper Blackrock Spire 2/2 30.3,27.0
+Defeat Orebender Gor'ashan |scenariogoal 24322 |goto Upper Blackrock Spire 2/2 30.3,27.0
 step
 map Upper Blackrock Spire 2/2
 path follow loose;loop off;ants straight
@@ -1085,7 +1083,7 @@ Follow the path |goto Upper Blackrock Spire 2/2 32.0,37.8
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-modelnpc Kyrak##86250
+kill Kyrak##86250
 _TANK:_ |grouprole TANK
 |tip Face the Drakonids away from the group. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
@@ -1099,7 +1097,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Don't stand in Vileblood Serum or Eruption.|grouprole EVERYONE
 _Heroic Difficulty_: |only if heroic_dung()
 |tip It is important to stay away from others when affected by Salve of Toxic Fumes. |only if heroic_dung()
-|scenariogoal 24433 |goto Upper Blackrock Spire 2/2 38.4,38.5
+Defeat Kyrak |scenariogoal 24433 |goto Upper Blackrock Spire 2/2 38.4,38.5
 step
 click Finkle's Improved Skinner##
 collect Finkle's Improved Skinner##118623 |q Like Father, Like Son##37236/1 |goto Upper Blackrock Spire 2/2 30.3,37.4 |only if havequest(37236)
@@ -1122,7 +1120,7 @@ Follow the path |goto Upper Blackrock Spire 2/3 45.8,28.0 < 8
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-modelnpc Commander Tharbek##86251
+kill Commander Tharbek##86251
 _TANK:_ |grouprole TANK
 |tip Pick up Black Iron Guards quickly to eliminate excessive group damage. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
@@ -1133,7 +1131,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Tharbek will choose a target and charge to it using Iron Reaver. Stay out of the path. |grouprole EVERYONE
 |tip Avoid standing near the whirling Imbued Iron Axe. |grouprole EVERYONE
 |tip Periodically Tharbek's mount will use Incinerating Breath and Noxious Spit. These are easy to avoid. |grouprole EVERYONE
-|scenariogoal 24619 |goto Upper Blackrock Spire 2/3 48.6,25.9
+Defeat Commander Tharbek |scenariogoal 24619 |goto Upper Blackrock Spire 2/3 48.6,25.9
 step
 map Upper Blackrock Spire 2/3
 path follow loose;loop off;ants straight
@@ -1143,7 +1141,7 @@ Follow the path |goto Upper Blackrock Spire 2/3 54.7,45.7 < 20
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-modelnpc Son of the Beast##77927
+kill Son of the Beast##77927
 Son of the Beast is an optional mini boss. |goto Upper Blackrock Spire 2/3 62.2,41.4 |confirm
 |tip If you choose to fight him, stay out of fire on the ground.
 _HEALER:_ |grouprole HEALER
@@ -1157,7 +1155,7 @@ Follow the path |goto Upper Blackrock Spire 2/3 50.6,45.7
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-modelnpc Ragewing##76585
+kill Ragewing##76585
 _TANK:_ |grouprole TANK
 |tip Pick up Ragewing Whelps quickly. |grouprole TANK
 |tip Be sure that you are in melee range of the boss whenever hes active. |grouprole TANK
@@ -1170,7 +1168,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Loosely spreading out will minimize the risk of multiple targets being hit by Magma Spit. |grouprole EVERYONE
 |tip This fight can be very tough for healers so minimizing incoming damage is very important. |grouprole EVERYONE
 |tip Don't Stand in Fire Storm circles. |grouprole EVERYONE
-|scenariogoal 24624 |goto Upper Blackrock Spire 2/3 46.7,45.6
+Defeat Ragewing |scenariogoal 24624 |goto Upper Blackrock Spire 2/3 46.7,45.6
 stickystart "Proto"
 step
 map Upper Blackrock Spire 2/3
@@ -1187,7 +1185,7 @@ collect Shed Proto-Dragon Claw##118624 |q A Hero's Quest is Never Complete##3723
 collect Shed Proto-Dragon Claw##118624 |q Damsels and Dragons##37162/1 |goto Upper Blackrock Spire 2/3 48.4,20.1 |only if havequest(37162)
 |only if havequest(37237) or havequest(37162)
 step
-modelnpc Warlord Zaela##77120
+kill Warlord Zaela##77120
 _TANK:_ |grouprole TANK
 |tip Position yourself so the knockback from Destructive Smite will not knock you off the platform. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
@@ -1201,7 +1199,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Throughout the fight, Proto-Drakes will lay down lines of Burning Breath. Move out of the path. |grouprole EVERYONE
 _Heroic Difficulty_: |only if heroic_dung()
 |tip Zaela gains_Destructive Smite, dealing massive damage to the current target and knocking them back. |only if heroic_dung()
-|scenariogoal 2/34401 |goto Upper Blackrock Spire 2/3 14.4,47.7
+Defeat Warlord Zaela |scenariogoal 2/34401 |goto Upper Blackrock Spire 2/3 14.4,47.7
 Slay Warlord Zaela |q Flamefly Trap##37244/2 |goto Upper Blackrock Spire 2/3 14.4,47.7 |only if havequest(37244)
 Slay Warlord Zaela |q Like Father, Like Son##37236/2 |goto Upper Blackrock Spire 2/3 14.4,47.7 |only if havequest(37236)
 Slay Warlord Zaela |q A Hero's Quest is Never Complete##37237/2 |goto Upper Blackrock Spire 2/3 14.4,47.7 |only if havequest(37237)
@@ -1212,7 +1210,7 @@ step
 next "Zygor's Horde Leveling Guides\\Garrisons\\High Overlord Saurfang Dailies"
 only if havequest(37789)
 step
-Congratulations, you have completed Upper Blackrock Spire
+Congratulations, you have completed _Upper Blackrock Spire_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Draenor Raids\\Highmaul - Walled City (LFR)",{
 achieveid={8986},
@@ -1316,7 +1314,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Use Heroism/Bloodlust/Timewarp at the beginning of the fight. |grouprole EVERYONE
 confirm
 step
-Congratulations! You have completed Highmaul - Walled City
+Congratulations! You have completed _Highmaul - Walled City_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Draenor Raids\\Highmaul - Arcane Sanctum (LFR)",{
 achieveid={8987},
@@ -1432,7 +1430,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Avoid standing in Suppression Fields. |grouprole EVERYONE
 confirm
 step
-Congratulations! You have completed Highmaul - Arcane Sanctum
+Congratulations! You have completed _Highmaul - Arcane Sanctum_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Draenor Raids\\Highmaul - Imperator's Rise (LFR)",{
 achieveid={8988},
@@ -1448,7 +1446,7 @@ Queue yourself for Imperator's Rise
 Enter the Third wing of Highmaul - Imperator's Rise |goto Highmaul/6 47.1,29.5 |noway |c
 confirm
 step
-_Go through_ the doors |goto Highmaul/6 45.8,60.6 < 12 |noway |c
+Go through the doors |goto Highmaul/6 45.8,60.6 < 12 |noway |c
 step
 kill Imperator Mar'gok##77428 |goto Highmaul/6 45.3,75.0
 _TANK:_ |grouprole TANK
@@ -1474,7 +1472,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Use Heroism/Bloodlust/Time Warp during the second intermission when the Gorian Reaver is picked up. |grouprole EVERYONE
 confirm
 step
-Congratulations! You have completed Highmaul - Imperator's Rise
+Congratulations! You have completed _Highmaul - Imperator's Rise_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Slagworks (LFR)",{
 achieveid={8988},
@@ -1594,7 +1592,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Use Heroism/Bloodlust/Time Warp when adds are in position in Phase 1 after the pull. |grouprole EVERYONE
 confirm
 step
-Congratulations! You have completed Blackrock Foundry - Slagworks
+Congratulations! You have completed _Blackrock Foundry - Slagworks_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Draenor Raids\\Blackrock Foundry - The Black Forge (LFR)",{
 achieveid={8988},
@@ -1618,7 +1616,7 @@ Follow the path, riding the elevator to the bottom floor |goto Blackrock Foundry
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-_Go through_ the door |goto Blackrock Foundry/1 47.5,67.1 < 8 |noway |c
+Go through the door |goto Blackrock Foundry/1 47.5,67.1 < 8 |noway |c
 step
 kill Hans'gar##76973 |goto Blackrock Foundry/1 47.5,76.4
 kill Franzok##76974 |goto Blackrock Foundry/1 47.5,76.4
@@ -1712,7 +1710,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Use Heroism/Bloodlust/Time Warp during the 30% Frenzy. |grouprole EVERYONE
 confirm
 step
-Congratulations! You have completed Blackrock Foundry - The Black Forge
+Congratulations! You have completed _Blackrock Foundry - The Black Forge_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Iron Assembly (LFR)",{
 achieveid={8988},
@@ -1844,7 +1842,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Use Heroism/Bloodlust/Time Warp when the Maidens gain the Iron Will buff. |grouprole EVERYONE
 confirm
 step
-Congratulation! You have completed Blackrock Foundry - Iron Assembly
+Congratulation! You have completed _Blackrock Foundry - Iron Assembly_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Blackhand's Crucible (LFR)",{
 achieveid={8988},
@@ -1907,7 +1905,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Use Heroism/Bloodlust/Time Warp after everyone is in position in Phase 3 |grouprole EVERYONE
 confirm
 step
-Congratulations! You have completed Blackrock Foundry - Blackhand's Crucible
+Congratulations! You have completed _Blackrock Foundry - Blackhand's Crucible_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Hellbreach (LFR)",{
 achieveid={10023},
@@ -2002,7 +2000,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Do not stand in pools. They deal massive damage that becomes fatal in seconds. |grouprole EVERYONE
 confirm
 step
-Congratulations! You have completed Hellfire Citadel - Hellbreach
+Congratulations! You have completed _Hellfire Citadel - Hellbreach_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Halls of Blood (LFR)",{
 achieveid={10024},
@@ -2130,7 +2128,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Use Heroism/Bloodlust/Time Warp during the first Feast of Souls Mechanic. |grouprole EVERYONE
 confirm
 step
-Congratulations! You have completed Hellfire Citadel - Halls of Blood
+Congratulations! You have completed _Hellfire Citadel - Halls of Blood_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Bastion of Shadows (LFR)",{
 achieveid={10025},
@@ -2220,7 +2218,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Stack in the big circle to split the damage of Edict of Condemnation. |grouprole EVERYONE
 confirm
 step
-Congratulations! You have completed Hellfire Citadel - Bastion of Shadows
+Congratulations! You have completed _Hellfire Citadel - Bastion of Shadows_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Destructor's Rise (LFR)",{
 achieveid={10020},
@@ -2328,7 +2326,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Use Heroism/Bloodlust/Time Warp during the final phase, after the first Empowered Shadowforce. |grouprole EVERYONE
 confirm
 step
-Congratulations! You have completed Hellfire Citadel - Destructor's Rise
+Congratulations! You have completed _Hellfire Citadel - Destructor's Rise_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Draenor Raids\\Hellfire Citadel - The Black Gate (LFR)",{
 lfgid=986,
@@ -2367,6 +2365,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Dont stand in Desecrate when it appears it will do massive damage and knock you back in its area. |grouprole EVERYONE
 confirm
 step
+kill Archimonde##91331 |goto Hellfire Citadel/10 58.4,53.3
 Phase 2:
 _TANK:_ |grouprole TANK
 |tip Once again be sure to pick up the adds that come out. |grouprole TANK
@@ -2386,8 +2385,8 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Once again be sure to move when Allure of Flame comes out. |grouprole EVERYONE
 |tip Deathstalkers will be one of the adds that spawn during this phase they will target a random player and teleport on them then start casting a Consume Magic, This ability will do damage in a circle around the mob and interrupt anyone casting inside the cirlce. |grouprole EVERYONE
 confirm
-modelnpc Archimonde##91331
 step
+kill Archimonde##91331 |goto Hellfire Citadel/10 58.4,53.3
 Phase 3:
 _TANK:_ |grouprole TANK
 |tip The tank tanking the boss soon after phase 3 begins will get a debuff called Nether Banish, after 8 seconds the tank and everyone within 8 yards will go into the Nether. |grouprole TANK
@@ -2419,9 +2418,8 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Infernal Doombringers can be stunned, and if they live to long they will start casting Hellfire which will deal a very high amount of damage to all players within 40 yards every second, this is basically a wipe if they start casting. |grouprole EVERYONE
 |tip Use Bloodlust/Heroism/Timewarp in the final phase After the first Rain of Chaos. |grouprole EVERYONE
 confirm
-modelnpc Archimonde##91331
 step
-Congratulations! You have completed Hellfire Citadel - The Black Gate!
+Congratulations! You have completed _Hellfire Citadel - The Black Gate_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Draenor Raids\\Highmaul - Normal/Heroic",{
 mapid=994,
@@ -2434,10 +2432,11 @@ confirm
 step
 talk Gharg##84971 |goto Highmaul/2 46.5,47.2 < 10
 Tell him _"We are ready, Gharg!"_
-_Ride the elevator_ to the arena |goto Highmaul/3 49.3,51.4 |noway |c
+Ride the elevator to the arena |goto Highmaul/3 49.3,51.4 |noway |c
 step
 kill Vul'gor##80048 |goto Highmaul/3 55.0,58.2
 |tip Kargath will come out after Vol'gor is dead.
+confirm
 step
 kill Kargath Bladefist##78714 |goto Highmaul/3 54.70,57.60
 _TANK:_ |grouprole TANK
@@ -2638,7 +2637,7 @@ path	55.6,54.5	51.9,38.7	45.1,27.0
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-_Go through_ the doors |goto Highmaul/6 45.8,60.6 < 12 |noway |c
+Go through the doors |goto Highmaul/6 45.8,60.6 < 12 |noway |c
 step
 kill Imperator Mar'gok##77428 |goto Highmaul/6 45.3,75.0
 _TANK:_ |grouprole TANK
@@ -2663,6 +2662,8 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Avoid Orbs of Chaos. |grouprole EVERYONE
 |tip Use Heroism/Bloodlust/Time Warp during the second intermission when the Gorian Reaver is picked up. |grouprole EVERYONE
 confirm
+step
+Congratulations! You have completed _Highmaul_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Draenor Raids\\Highmaul - Mythic",{
 lfgid=897,
@@ -2676,10 +2677,11 @@ confirm
 step
 talk Gharg##84971 |goto Highmaul/2 46.5,47.2 < 10
 Tell him _"We are ready, Gharg!"_
-_Ride the elevator_ to the arena |goto Highmaul/3 49.3,51.4 |noway |c
+Ride the elevator to the arena |goto Highmaul/3 49.3,51.4 |noway |c
 step
 kill Vul'gor##80048 |goto Highmaul/3 55.0,58.2
 |tip Kargath will come out after Vol'gor is dead.
+confirm
 step
 kill Kargath Bladefist##78714 |goto Highmaul/3 54.70,57.60
 Roar of the Crowd
@@ -2752,10 +2754,13 @@ Follow the path |goto Highmaul/1 51.6,26.1 < 10
 confirm
 step
 kill Brackenspore##78491 |goto Highmaul/1 50.80,16.40
-Exploding Fongus and Call of the Tides.
+Exploding Fongus and Call of the Tides
 |tip The boss will randomly choose one of these mechanics to cast every 15 seconds or so.
 |tip Exploding Fongus will place tiny shrooms on the group if a player stands on one of these shrooms when they explode they will take a massive amount of damage and will most likely die.
 |tip Call of the Tides, the boss will some waves from the water these need to be dodged if stood in they will deal a massive amount of damage and anyone standing in them will most likely die.
+Flamethrowers:
+|tip Loot a Flamethrower at the beginning of the fight.
+|tip Use the extra action button to prevent the spread of Creeping Moss, Cancel the Flamethrower ability before it overheats.
 _TANK:_ |grouprole TANK
 |tip Face Brackenspore away from the raid to avoid excess damage from Necrotic Breath, also pop a minor cd for this ability as it reduces healing recieved during its duration. |grouprole TANK
 |tip Pick up Fungal Flesh-Eaters quickly and interrupt Decay. |grouprole TANK
@@ -2763,7 +2768,7 @@ _TANK:_ |grouprole TANK
 |tip Tank swap at 4 stacks of Rot. |grouprole TANK
 |tip Move Brackenspore to Living and Rejuvinating Mushrooms before they are healed to full. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
-|tip Adds are priority in this fight, if there is any adds up kill them asap.
+|tip Adds are priority in this fight, if there is any adds up kill them asap. |grouprole DAMAGE
 |tip One ranged should get in between the rest of the ranged group and the spore shotters to intercept the spores shots, if they hit a player it will do aoe damage to that player and those around them. |grouprole DAMAGE
 |tip Kill Fungal Flesh-Eaters quickly and interrupt Decay. |grouprole DAMAGE
 |tip Ranged DPS need to kill Spore Shooters and intercept their Spore Shot. |grouprole DAMAGE
@@ -2776,14 +2781,8 @@ _HEALER:_ |grouprole HEALER
 |tip Tanks take heavy damage, especially from Flesh-Eaters with high stacks of Flesh Eater. |grouprole HEALER
 |tip Keep an eye on the DPS assigned to use the Flamethrowers. |grouprole HEALER
 |tip Prepare raid cooldowns if there is no Living Mushroom ready for Infesting Spores. |grouprole HEALER
-Flamethrowers:
-|tip Loot a Flamethrower at the beginning of the fight.
-|tip Use the extra action button to prevent the spread of Creeping Moss.
-|tip Cancel the Flamethrower ability before it overheats.
-|tip While under the effect of "Burning Fusion" you deal more damage the more stacks you have.
 _EVERYONE:_ |grouprole EVERYONE
 |tip Be sure to stand in mushrooms that are fully healed especially Rejuvinating Mushrooms, these will return mana and increase haste. |grouprole EVERYONE
-|tip Use Heroism/Bloodlust/Timewarp at the beginning of the fight. |grouprole EVERYONE
 confirm
 step
 map Highmaul/1
@@ -2837,16 +2836,11 @@ confirm
 step
 kill Pol##78238 |goto Highmaul/4 55.10,36.30
 kill Phemos##78237 |goto Highmaul/4 55.10,36.30
-Arcane Bash
-|tip This ability will empower the ability "Shield Bash" this increases the amount of damage it does.
-Arcane Charge
-|tip This ability will empower the ability "Shield Charge" this will make it so charge goes out in 4 different directions. (just side step one and you will be fine)
-Arcane Wound
-|tip This ability will empower the ability "Double Slash" this will put a dot on the person hit dealing a large amount of damage.
-Arcane Vortex
-|tip This ability will empower the ability "whirlwind" This will pull the raid towards the whirlwind. (This can be out run)
-Arcane Volatility
-|tip This ability will target multiple people and debuff them, people with this debuff need to make sure they arent anywhere near anyone else(8yards) when the debuff expires it will deal high damage to the player and high damage to any other players near them, players hit will also be knocked back.
+|tip Arcane Bash will empower the ability "Shield Bash" this increases the amount of damage it does.
+|tip Arcane Charge will empower the ability "Shield Charge" this will make it so charge goes out in 4 different directions. (just side step one and you will be fine)
+|tip Arcane Wound will empower the ability "Double Slash" this will put a dot on the person hit dealing a large amount of damage.
+|tip Arcane Vortex will empower the ability "whirlwind" This will pull the raid towards the whirlwind. (This can be out run)
+|tip Arcane Volatility will target multiple people and debuff them, people with this debuff need to make sure they arent anywhere near anyone else(8yards) when the debuff expires it will deal high damage to the player and high damage to any other players near them, players hit will also be knocked back.
 _TANK:_ |grouprole TANK
 |tip Tank both close together for cleaves. Never tank swap Pol and Phemos. |grouprole TANK
 |tip Position the bosses behind one of the two weapons after Quake. |grouprole TANK
@@ -2879,14 +2873,11 @@ Follow the path |goto Highmaul/4 43.9,55.0 < 10
 confirm
 step
 kill Ko'ragh##79015 |goto Highmaul/4 37.80,65.4
-Expel Magic Fel
-|tip This ability will target 3 players at a time throughout the fight and debuff them for 12 seconds. If the player moves from the spot where they got debuffed they will create a line of fire from that original spot to the spot the ended up in.
+|tip Expel Magic Fel will target 3 players at a time throughout the fight and debuff them for 12 seconds. If the player moves from the spot where they got debuffed they will create a line of fire from that original spot to the spot the ended up in.
 |tip An easy way to minimize the fire laid is to just return to the original spot before the debuff runs out.
-Dominating Power
-|tip This will empower the ability "Overflowing Energy" and it will cause anyone that comes into contact with overflowing energy will be mind controlled.
+|tip Dominating Power will empower the ability "Overflowing Energy" and it will cause anyone that comes into contact with overflowing energy will be mind controlled.
 |tip These mind controls can only be affected by physical attacks. There should be one dedicated physical dps for each of these assigned people.
-Forfeit Power
-|tip The mind controlled people will cast this ability attempting to give part of there magic shield to the boss, this needs to be interrupted.
+|tip The mind controlled people will cast Forfeit Power attempting to give part of there magic shield to the boss, this needs to be interrupted.
 _TANK:_ |grouprole TANK
 |tip Tank swap whenever the current tank is affected by Expel Magic: Arcane. The affected tank needs to run away from the raid. |grouprole TANK
 |tip Move Ko'ragh away from Expel Magic: Frost orbs and Suppression Fields. |grouprole TANK
@@ -2920,7 +2911,7 @@ path	55.6,54.5	51.9,38.7	45.1,27.0
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-_Go through_ the doors |goto Highmaul/6 45.8,60.6 < 12 |noway |c
+Go through the doors |goto Highmaul/6 45.8,60.6 < 12 |noway |c
 step
 kill Imperator Mar'gok##77428 |goto Highmaul/6 45.3,75.0
 |tip In mythic the boss starts off with 2 runes which means a whole new set of abilities with each phase.
@@ -2958,23 +2949,23 @@ Phase 4
 |tip During this phase Cho'gal will be the new boss encounter, he will have a whole new set of abilities.
 _Cho'gall_
 |tip During the Cho'gal fight the adds in the transition will continue to spawn every 30 seconds in waves, they need to be killed together asap.
-Glimpse of Maddness
-|tip This ability will spawn a shadow on a random player and start casting "Gaze of the Abyss" onto the closest player and keep applying this debuff every 6 seconds.
-Gaze of the Abyss
+|tip Glimpse of Maddness will spawn a shadow on a random player and start casting "Gaze of the Abyss" onto the closest player and keep applying this debuff every 6 seconds.
+_Gaze of the Abyss_
 |tip This ability will put a debuff on a player causeing damage to that player until it runs out.
 |tip With each stack of this debuff the damage gets higher and higher, once this debuff expires(this can be done by no longer being the closest target to the Glimpse of Maddness) then the debuff will explode for damage to the player and anyone within 8 yards.
 |tip The explosion will do more damage the more stacks the player has.
-Enveloping Night
+_Enveloping Night_
 |tip This ability is a very long cast and will deal a large amount of damage to the entire raid once completed.
 |tip Every cast of this ability increase its damage.
-Infinite Darkness
+_Infinite Darkness_
 |tip This ability will be cast on 3 random players all healing will be absorbed on this player until it is dispelled, once dispelled all of the healing that was done to those players will spread as a shield equally across the entire raid.
 |tip This will help, if timed correctly, with the higher raid damage of the fight such as "Enveloping Night".
-Dark Star
+_Dark Star_
 |tip This ability will spawn an orb of darkness on a random player in the raid, after a short time this star will explode for massive damage to any player in a range of 20 yards to the star.
 |tip The Dark Star can only spawn on ranged so ranged should stand at least 20 yards away from the boss/melee so that they dont have to move.
+confirm
 step
-Congratulations! You have completed _Highmaul_!
+Congratulations! You have completed _Highmaul Mythic_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Normal/Heroic",{
 mapid=988,
@@ -3094,8 +3085,12 @@ step
 Head back to the entrance
 map Blackrock Foundry/2
 path follow smart; loop off; ants curved; dist 15
-path	61.2,53.4 < 5	67.3,55.4	 66.1,64.3
+path	61.2,53.4	67.3,55.4	 66.1,64.3
 path	60.6,61.4	62.5,53.7
+Follow the path
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
 map Blackrock Foundry/3
 path follow smart; loop off; ants curved; dist 15
 path	55.4,66.5	53.0,54.5	32.9,53.8
@@ -3104,7 +3099,7 @@ Follow the path, riding the elevator to the bottom floor |goto Blackrock Foundry
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-_Go through_ the door |goto Blackrock Foundry/1 47.5,67.1 < 8 |noway |c
+Go through the door |goto Blackrock Foundry/1 47.5,67.1 < 8 |noway |c
 step
 kill Hans'gar##76973 |goto Blackrock Foundry/1 47.5,76.4
 kill Franzok##76974 |goto Blackrock Foundry/1 47.5,76.4
@@ -3289,9 +3284,7 @@ Follow the path and jump down the hole |goto Blackrock Foundry/1 74.9,24.5
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-kill Admiral Gar'an##77557 |goto Blackrock Foundry/1 85.6,28.1
-kill Enforcer Sorka##77231 |goto Blackrock Foundry/1 85.6,28.1
-kill Marak the Blooded##77477 |goto Blackrock Foundry/1 85.6,28.1
+kill Admiral Gar'an##77557, Enforcer Sorka##77231, Marak the Blooded##77477 |goto Blackrock Foundry/1 85.6,28.1
 _TANK:_ |grouprole TANK
 |tip Admiral Gar'an cannot be tanked.
 |tip The Marak tank needs to intercept the Crystallized Blood from Blood Ritual.
@@ -3311,7 +3304,6 @@ Dreadnaught Team:
 |tip Mobile healers and DPS are optimal for this role. Interrupts are also a plus.
 |tip When one of the bosses leaves the area, click the chains near the boat to swing over.
 |tip Quickly defeat the deckhands and click the ammunition at the front of the boat.
-|tip You will have approximately 90 seconds to complete this task.
 |tip Be aware, Detonation Sequence will occur immediately upon leaving the ship.
 _EVERYONE:_ |grouprole EVERYONE
 |tip Dodge fireballs projected from Dominator Turrets. |grouprole EVERYONE
@@ -3484,8 +3476,6 @@ kill Heart of the Mountain##76806 |goto Blackrock Foundry/2 46.1,53.7
 |tip The big difference in mythic is the ability Hardened Slag, to remove this buff that the slags have when they come out a priest will need to Mind Control a Security Guard and use there Slay Elemental ability on a Slag Elemental.
 |tip After using this ability the Slag Elemental will be vulnarable and able to be killed to release a Primal Elementalist, this is needed to advance to the next phase.
 |tip The "Slag Elemental" ability can only be used once be Securtiy Guard. The priest will actually only need to mind control 2 security guards for the 4 needed, as slag elementals will rez after 3 "Blasts".
-Hardened Slag
-|tip These slags are almost completly immune to damage.
 _TANK:_ |grouprole TANK
 |tip One tank should pick up a Security Guard and a Furnace Engineer and take them to their assigned side. |grouprole TANK
 |tip One tank should pick up Foreman Feldspar and take him to their assigned side. |grouprole TANK
@@ -3498,21 +3488,18 @@ _DAMAGE:_ |grouprole DAMAGE
 |tip If targeted by Rupture, move away from the raid so the Rupture zone is out of the way. |grouprole DAMAGE
 |tip Interrupt Engineers' Repair and Feldspar's Pyroclasm. |grouprole DAMAGE
 |tip During Phase 2, focus all damage on a Primal Elementalist. Clean up adds with DoTs and cleaves. |grouprole DAMAGE
-|tip During Phase 2, move away from the raid if affected by Volatile Fire. |grouprole DAMAGE
-|tip During Phase 3, use any available DPS cooldowns. |grouprole DAMAGE
 _HEALER:_ |grouprole HEALER
 |tip Keep an eye on the Heart of the Mountain's Energy bar. Prepare AoE heals when it gets high to counter Blast damage. |grouprole HEALER
 |tip Players affected by Bomb will take moderate to heavy damage. |grouprole HEALER
 |tip Feldspar's tank will take heavy damage. |grouprole HEALER
 |tip Heat regulators are located on the left and right sides of the furnace. If you have a Bomb, run to them and use your extra action button. |grouprole HEALER
 |tip If targeted by Rupture, move away from the raid so the Rupture zone is out of the way. |grouprole HEALER
-|tip During Phase 2, move away from the raid if affected by Volatile Fire. |grouprole HEALER
 |tip During Phase 3, heavy raid damage will occur. Coordinate raid cooldowns with other healers. |grouprole HEALER
 _EVERYONE:_ |grouprole EVERYONE
 |tip Move quickly out of Melt during Phase 3. |grouprole EVERYONE
-|tip Use Heroism/Bloodlust/Time Warp when adds are in position in Phase 1 after the pull. |grouprole EVERYONE
 |tip During phase 2 if a slag elemental is fixated on you be sure to kite it over to a Primal Elementalist then kill the slag elemental once it's on top of it, this will destroy the elementalists shield for a short time. |grouprole EVERYONE
 |tip Once the shield is down burst down the Primal Elementalist. |grouprole EVERYONE
+|tip During Phase 2, move away from the raid if affected by Volatile Fire. |grouprole EVERYONE
 confirm
 step
 Head back to the entrance
@@ -3520,6 +3507,10 @@ map Blackrock Foundry/2
 path follow smart; loop off; ants curved; dist 15
 path	61.2,53.4 < 5	67.3,55.4	 66.1,64.3
 path	60.6,61.4	62.5,53.7
+Follow the path
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
 map Blackrock Foundry/3
 path follow smart; loop off; ants curved; dist 15
 path	55.4,66.5	53.0,54.5	32.9,53.8
@@ -3528,7 +3519,7 @@ Follow the path, riding the elevator to the bottom floor |goto Blackrock Foundry
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-_Go through_ the door |goto Blackrock Foundry/1 47.5,67.1 < 8 |noway |c
+Go through the door |goto Blackrock Foundry/1 47.5,67.1 < 8 |noway |c
 step
 kill Hans'gar##76973 |goto Blackrock Foundry/1 47.5,76.4
 kill Franzok##76974 |goto Blackrock Foundry/1 47.5,76.4
@@ -3576,9 +3567,6 @@ _DAMAGE:_ |grouprole DAMAGE
 |tip Focus DPS on Aknor Steelbringer until he dies. |grouprole DAMAGE
 |tip Avoid standing in Lava Slash and fire lines on the ground. |grouprole DAMAGE
 |tip Ranged should spread out at least 6 yards. |grouprole DAMAGE
-|tip Move away from Enchanted Armaments. |grouprole DAMAGE
-|tip Move away from raid members when affected by Blazing Radiance. |grouprole DAMAGE
-|tip Move into melee when targeted by Molten Torrent to split damage. If you have an immunity cooldown, run away and use it. |grouprole DAMAGE
 |tip All dps need to switch to cinder wolves when they come out in mythic there will be 4. |grouprole DAMAGE
 |tip If you are targeted by the fixate from the cinder wolves you need to run into melee to make killing these easier. |grouprole DAMAGE
 |tip If Fixated by a wolf, avoid kiting it through other players. |grouprole DAMAGE
@@ -3589,13 +3577,12 @@ _HEALER:_ |grouprole HEALER
 |tip Due to Lava Slash and Enchanted Armaments, damage will be spikey and significant. |grouprole HEALER
 |tip Players kiting a Cinder Wolf will need extra healing. |grouprole HEALER
 |tip Damage-reduction and healing cooldowns are useful during Firestorm. |grouprole HEALER
-|tip Spread out at least 6 yards. |grouprole HEALER
-|tip Move away from Enchanted Armaments. |grouprole HEALER
-|tip Move away from raid members when affected by Blazing Radiance. |grouprole HEALER
-|tip Move into melee when targeted by Molten Torrent to split damage. If you have an immunity cooldown, run away and use it. |grouprole HEALER
 |tip If Fixated by a wolf, avoid kiting it through other players. |grouprole HEALER
+|tip Spread out at least 6 yards. |grouprole HEALER
 _EVERYONE:_ |grouprole EVERYONE
-|tip Use Heroism/Bloodlust/Time Warp on the first set of Cinder Wolves. |grouprole EVERYONE
+|tip Move away from Enchanted Armaments. |grouprole EVERYONE
+|tip Move away from raid members when affected by Blazing Radiance. |grouprole EVERYONE
+|tip Move into melee when targeted by Molten Torrent to split damage. If you have an immunity cooldown, run away and use it. |grouprole EVERYONE
 confirm
 step
 map Blackrock Foundry/1
@@ -3663,16 +3650,6 @@ Follow the path |goto Blackrock Foundry/4 52.3,71.8 < 8
 confirm
 step
 kill Beastlord Darmac##76865 |goto Blackrock Foundry/4 62.8,71.8
-_Faultline_
-|tip This is the 4th mount of the encounter at 25 percent health.
-Heavy Smash
-|tip This ability requires the tanks to stand on top of each other.
-Epicenter
-|tip This will create a huge circle under the boss, everyone needs to move out of this asap.
-Cannonball Barrage
-|tip This will target multple people in the raid and also target multple random places, don't stand in these.
-Unstoppable
-|tip Periodically Faultline will cast this increasing its damage and causing a dot to the raid for a few seconds, this will also reduce movement speed.
 _TANK:_ |grouprole TANK
 |tip Darmac has a set order in which he mounts his beasts 85%, 65%, 45%, and 25% health. |grouprole TANK
 |tip The offtank should pick up the beasts that spawn in the far right corner and tank them near the boss for cleaves. |grouprole TANK
@@ -3694,12 +3671,18 @@ _HEALER:_ |grouprole HEALER
 |tip Players who are Pinned Down will require heavy single-target healing. |grouprole HEALER
 |tip Dispel Conflagration quickly. |grouprole HEALER
 |tip Strong AoE healing is required during Tantrum. |grouprole HEALER
-|tip Spread out to minimize damage. |grouprole HEALER
 _EVERYONE:_ |grouprole EVERYONE
 |tip Do not stand in areas targeted by Heavy Spear. |grouprole EVERYONE
 |tip Move out of Inferno Breath and Superheated Shrapnel. |grouprole EVERYONE
-|tip Use Heroism/Bloodlust/Time Warp at after Darmac dismounts the final beast. |grouprole EVERYONE
-Phase 4
+confirm
+step
+kill Beastlord Darmac##76865
+_Phase 4_
+|tip Faultline is the 4th mount of the encounter at 25 percent health.
+|tip Heavy Smash requires the tanks to stand on top of each other.
+|tip Epicenter will create a huge circle under the boss, everyone needs to move out of this asap.
+|tip Cannonball Barrage will target multple people in the raid and also target multple random places, don't stand in these.
+|tip Periodically Faultline will cast Unstoppable increasing its damage and causing a dot to the raid for a few seconds, this will also reduce movement speed.
 |tip Once Faultline is dead the boss will gain the new ability Heart of the Clefthoof, this will increase the bosses health by 100 percent, this will also allow the boss to activate Unstoppable.
 |tip The boss will also get the ability Epicenter.
 |tip At the end of the fight the boss will have all of the abilities normal from heroic and then the abilties listed from Faultline.
@@ -3752,10 +3735,8 @@ Follow the path and jump down the hole |goto Blackrock Foundry/1 74.9,24.5
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-kill Admiral Gar'an##77557 |goto Blackrock Foundry/1 85.6,28.1
-kill Enforcer Sorka##77231 |goto Blackrock Foundry/1 85.6,28.1
-kill Marak the Blooded##77477 |goto Blackrock Foundry/1 85.6,28.1
-_Enforcer Sorka_
+kill Admiral Gar'an##77557, Enforcer Sorka##77231, Marak the Blooded##77477 |goto Blackrock Foundry/1 85.6,28.1
+_Enforcer Sorka_ Mythic Abilities
 Blade Dash
 |tip This ability will target a random person in 45 yards and dash to that person. It will also leave a tornado running through the position of that target, the position of the current sorka tank, and sorka herself.
 |tip This can be cheesed, the raid needs to be 45 yards away from Sorka and a strong dps should stand in a corner with the tank tanking Sorka to soak this ability (preferably a Warlock).
@@ -3766,25 +3747,23 @@ Convulsive Shadows
 |tip This ability will target a random player and apply a debuff just like on heroic but every time this ability causes damage to its target it will create a pool called "Lingering Shadow".
 |tip If any player stands in this pool it will create another pool and deal damage, this debuff needs to be dispelled as soon as the player receives it.
 |tip Once dispelled the player will receive a massive amount of damage this damage needs to be reduced, minor cooldowns or absorbs work well.
-_Marak the Blooded_
+_Marak the Blooded_ Mythic Abilities
 Blood Ritual
 |tip This ability will put a debuff on this player called "Marak's Bloodcalling" and it will increase damage from Blood Ritual by 180%.
 |tip Blood Ritual will priotritze the target with the debuff Marak's Bloodcalling to target further Blood Rituals.
 Bloodsoaked Heartseeker
 |tip This ability will bounce between 3 targets, these players need to spread apart and move to the outskirts of the room as another ability will happen once hit.
 |tip This ability is called "Volatile Blood Orb" these will be placed down and eventually explode for a good amount of damage but will do less the farther people are away from the player.
-_Admiral Ga'ran_
+_Admiral Ga'ran_ Mythic Abilities
 |tip This boss has no new abilities.
 confirm
 step
-model Admiral Gar'an##77557
-model Enforcer Sorka##77231
-model Marak the Blooded##77477
+kill Admiral Gar'an##77557, Enforcer Sorka##77231, Marak the Blooded##77477 |goto Blackrock Foundry/1 85.6,28.1
 _TANK:_ |grouprole TANK
-|tip Admiral Gar'an cannot be tanked. |grouprole TANK
-|tip The Marak tank needs to intercept the Crystallized Blood from Blood Ritual. |grouprole TANK
-|tip When the Maidens reach 100 energy, Marak's tank should use several powerful defensive cooldowns to reduce raid damage from Sanguine Strikes. |grouprole TANK
-|tip Move the bosses away from Dominator Turrets when they spawn. |grouprole TANK
+|tip Admiral Gar'an cannot be tanked.
+|tip The Marak tank needs to intercept the Crystallized Blood from Blood Ritual.
+|tip When the Maidens reach 100 energy, Marak's tank should use several powerful defensive cooldowns to reduce raid damage from Sanguine Strikes.
+|tip Move the bosses away from Dominator Turrets when they spawn.
 _DAMAGE:_ |grouprole DAMAGE
 |tip The Maidens should be DPSed evenly. Make use of cleaves. |grouprole DAMAGE
 |tip Melee DPS should avoid standing in the path of the Blood Ritual target. |grouprole DAMAGE
@@ -3792,14 +3771,13 @@ _DAMAGE:_ |grouprole DAMAGE
 |tip During the last phase kill Dominator Turrets IMMEDIATELY. Just 2 of these turrents can quickly wipe the raid. |grouprole DAMAGE
 _HEALER:_ |grouprole HEALER
 |tip Targets of Blood Ritual, Bloodsoaked Heartseeker, Convulsive Shadows, Dark Hunt, Rapid Fire, and Penetrating Shot are likely to take heavy damage. |grouprole HEALER
-|tip During Detonation Sequence, heavy raid damage is likely. |grouprole HEALER
-|tip During Sanguine Strikes, prepare raid healing and damage-reduction cooldowns. |grouprole HEALER
+|tip During Detonation Sequence, heavy raid damage is likely. |grouprole HEALER |grouprole HEALER
+|tip During Sanguine Strikes, prepare raid healing and damage-reduction cooldowns. |grouprole HEALER |grouprole HEALER
 Dreadnaught Team:
 |tip The Dreadnaught Team should be chosen before the fight - 1 healer 1 tank and 4 DPS.
 |tip Mobile healers and DPS are optimal for this role. Interrupts are also a plus.
 |tip When one of the bosses leaves the area, click the chains near the boat to swing over.
 |tip Quickly defeat the deckhands and click the ammunition at the front of the boat.
-|tip You will have approximately 90 seconds to complete this task.
 |tip Be aware, Detonation Sequence will occur immediately upon leaving the ship.
 _EVERYONE:_ |grouprole EVERYONE
 |tip Dodge fireballs projected from Dominator Turrets. |grouprole EVERYONE
@@ -3809,8 +3787,6 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Use a defenisve cooldown as the duration is about to expire if targeted by Dark Hunt. |grouprole EVERYONE
 |tip When mines are laid, move away from reddish ones as they will soon explode. |grouprole EVERYONE
 |tip Move out of marked areas during Detonation Sequence. |grouprole EVERYONE
-|tip Penatrating shot can be cheesed any immunity can completly negate this ability along with a few other abilities such as feign death, deterence, invis, Spectual Guise, and any ability that can get rid of an enemys target. |grouprole EVERYONE
-|tip Use Heroism/Bloodlust/Time Warp when the Maidens gain the Iron Will buff. |grouprole EVERYONE
 confirm
 step
 map Blackrock Foundry/1
@@ -3857,7 +3833,6 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Avoid triggering Slag Bombs. You will take massive fire damage and become Slagged, taking 100% increased damage. |grouprole EVERYONE
 confirm
 step
-model Blackhand##77325
 _Phase 2_
 _TANK:_ |grouprole TANK
 |tip During Phase 2, tank Blackhand where needed to spawn the correct siege tank , and be sure to communicate with the dps kitting the siege tanks so that all of the "Mark of Deaths" can be intercepted without the raid having to move to much. |grouprole TANK
@@ -3880,17 +3855,12 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip All Siege Makers should take 3 sets of mark before killed. |grouprole EVERYONE
 |tip These are the names and explanations of the siege makers this is also the order in which the Siege Makers should be done in. |grouprole EVERYONE
 |tip Avoid triggering Slag Bombs. You will take massive fire damage and become Slagged, taking 100% increased damage. |grouprole EVERYONE
-Reinforced Siege Maker
-|tip This is just like a normal one but has way more health and should be kited by a hunter.
-Super Charged Siege Maker
-|tip This Siege Maker is extremely fast and should be kited by a rogue useing sprint and burst of speed.
-Explosive Siege Maker
-|tip This Siege Maker can be kited by a hunter and when it gets to 10 percent health it will cast a spell and when finished it will deal a massive amount of damage to the entire raid, the raid must stack up and use all defensive/healing cds.
-Fiery Siege Maker
-|tip This Siege Maker can be kited by a hunter and will spit out fire behind it.
+|tip Reinforced Siege Maker is just like a normal one but has way more health and should be kited by a hunter.
+|tip Super Charged Siege Maker is extremely fast and should be kited by a rogue useing sprint and burst of speed.
+|tip Explosive Siege Maker can be kited by a hunter and when it gets to 10 percent health it will cast a spell and when finished it will deal a massive amount of damage to the entire raid, the raid must stack up and use all defensive/healing cds.
+|tip Fiery Siege Maker can be kited by a hunter and will spit out fire behind it.
 confirm
 step
-model Blackhand##77325
 _Phase 3_
 _TANK:_ |grouprole TANK
 |tip In Phase 3, tank Blackhand near the edge of the platform. At 100 energy, turn him towards the center of the platform for Massive Shattering Smash. |grouprole TANK
@@ -3910,7 +3880,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Use Heroism/Bloodlust/Time Warp after everyone is in position in Phase 3 |grouprole EVERYONE
 confirm
 step
-Congratulations! You have completed _Blackrock Foundry_!
+Congratulations! You have completed _Blackrock Foundry Mythic_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic",{
 mapid=1026,
@@ -3980,7 +3950,9 @@ path	Hellfire Citadel/2 72.0,21.8	Hellfire Citadel/3 67.9,89.6
 path	Hellfire Citadel/3 65.2,78.5	Hellfire Citadel/3 60.3,75.4
 path	Hellfire Citadel/3 51.0,72.3	Hellfire Citadel/3 50.5,23.5
 path	Hellfire Citadel/3 50.6,23.4	Hellfire Citadel/4 60.4,89.2
-_Follow_ the path |goto Hellfire Citadel/4 60.4,89.2 < 10 |noway |c
+Follow the path |goto Hellfire Citadel/4 60.4,89.2 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Kormrok##90776 |goto Hellfire Citadel/4 52.3,48.8
 _TANK:_ |grouprole TANK
@@ -4015,7 +3987,9 @@ path	Hellfire Citadel/2 77.8,43.3	Hellfire Citadel/2 78.0,63.1
 path	Hellfire Citadel/2 72.4,72.4	Hellfire Citadel/5 81.5,8.5
 path	Hellfire Citadel/5 81.2,31.5	Hellfire Citadel/5 71.3,33.8
 path	Hellfire Citadel/5 71.2,62.3
-_Follow_ the path |goto Hellfire Citadel/5 71.2,62.3 < 10 |noway |c
+Follow the path |goto Hellfire Citadel/5 71.2,62.3 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Gurtogg Bloodboil##92146 |goto Hellfire Citadel/5 71.5,80.1
 kill Dia Darkwhisper##92144 |goto Hellfire Citadel/5 71.5,80.1
@@ -4049,7 +4023,9 @@ path follow smart; loop off; ants curved; dist 15
 path	65.8,72.6	57.7,79.6	46.4,79.6
 path	45.9,67.7	40.0,64.5	17.3,64.9
 path	12.0,56.5	12.2,36.1	24.2,34.2
-_Follow_ the path |goto Hellfire Citadel/5 24.2,34.2 < 8 |noway |c
+Follow the path |goto Hellfire Citadel/5 24.2,34.2 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Kilrogg Deadeye##90378 |goto Hellfire Citadel/5 51.0,33.7
 _TANK:_ |grouprole TANK
@@ -4085,14 +4061,18 @@ map Hellfire Citadel/5
 path follow smart; loop off; ants curved; dist 15
 path	53.4,33.6	66.7,33.6	80.9,33.6
 path	81.6,8.3
-_Follow_ the path |goto Hellfire Citadel/5 81.6,8.3 < 8 |noway |c
+Follow the path |goto Hellfire Citadel/5 81.6,8.3 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Hellfire Citadel/2
 path follow smart; loop off; ants curved; dist 15
 path	72.4,71.5	77.8,59.6	78.1,46.3
 path	65.3,41.8	55.1,47.6	38.7,48.0
 path	30.7,63.1	19.2,64.6
-_Follow_ the path |goto Hellfire Citadel/2 19.2,64.6 < 12 |noway |c
+Follow the path |goto Hellfire Citadel/2 19.2,64.6 < 12
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Gorefiend##91809 |goto Hellfire Citadel/2 17.3,44.5
 _TANK:_ |grouprole TANK
@@ -4125,7 +4105,9 @@ click the soul portal |goto Hellfire Citadel/2 22.1,47.1 < 5 |c
 map Hellfire Citadel/6
 path follow smart; loop off; ants curved; dist 15
 path	59.8,76.6	49.1,76.7
-_Follow_ the path |goto Hellfire Citadel/6 49.1,76.7 < 8 |noway |c
+Follow the path |goto Hellfire Citadel/6 49.1,76.7 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Shadow-Lord Iskar##90316 |goto Hellfire Citadel/6 38.9,76.6
 _TANK:_ |grouprole TANK
@@ -4154,13 +4136,17 @@ step
 map Hellfire Citadel/6
 path follow smart; loop off; ants curved; dist 15
 path	45.2,76.9	57.3,76.7	61.8,83.1
-_Follow_ the path |goto Hellfire Citadel/6 61.8,83.1 < 8 |noway |c
+Follow the path |goto Hellfire Citadel/6 61.8,83.1 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Hellfire Citadel/8
 path follow smart; loop off; ants curved; dist 15
 path	42.3,8.1	42.5,25.7	52.2,25.5
 path	61.1,26.5	61.0,41.7
-_Follow_ the path |goto Hellfire Citadel/8 61.0,41.7 < 5 |noway |c
+Follow the path |goto Hellfire Citadel/8 61.0,41.7 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Soulbound Construct##90296 |goto Hellfire Citadel/8 59.0,54.1
 _TANK:_ |grouprole TANK
@@ -4193,7 +4179,9 @@ map Hellfire Citadel/8
 path follow smart; loop off; ants curved; dist 15
 path	56.8,58.9	56.8,69.1	55.5,80.8
 path	45.9,81.0	42.5,74.2	37.5,70.0
-_Follow_ the path |goto Hellfire Citadel/8 37.5,70.0 < 5 |noway |c
+Follow the path |goto Hellfire Citadel/8 37.5,70.0 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Tyrant Velhari##93439 |goto Hellfire Citadel/8 29.3,50.4
 _TANK:_ |grouprole TANK
@@ -4224,13 +4212,17 @@ path	31.8,66.5	39.0,70.4	42.4,74.8
 path	43.6,81.1	50.3,81.0	56.0,78.8
 path	56.8,64.9	61.0,42.9	61.9,25.4
 path	47.6,25.3	42.3,23.3	42.4,8.8
-Follow the path |goto Hellfire Citadel/8 42.4,8.8 < 10 |noway |c
+Follow the path |goto Hellfire Citadel/8 42.4,8.8 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Hellfire Citadel/6
 path follow smart; loop off; ants curved; dist 15
 path	61.8,76.3	73.3,76.5	73.4,44.8
 path	63.0,44.2	50.0,38.0	50.0,29.0
-Follow the path |goto Hellfire Citadel/6 50.0,29.0 < 10 |noway |c
+Follow the path |goto Hellfire Citadel/6 50.0,29.0 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Fel Lord Zakuun##89890 |goto Hellfire Citadel/6 50.0,19.9
 _TANK:_ |grouprole TANK
@@ -4261,7 +4253,9 @@ path follow smart; loop off; ants curved; dist 15
 path	49.8,27.5	50.4,39.8	57.4,46.5
 path	68.1,44.6	78.7,44.4	88.1,51.3
 path	Hellfire Citadel/7 40.1,50.7
-Follow the path |goto Hellfire Citadel/7 40.1,50.7 < 10 |noway |c
+Follow the path |goto Hellfire Citadel/7 40.1,50.7 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Xhul'horac##93068 |goto Hellfire Citadel/7 53.2,50.9
 _TANK:_ |grouprole TANK
@@ -4297,7 +4291,9 @@ path	47.5,51.1	19.0,51.1
 path	Hellfire Citadel/6 86.4,51.5	Hellfire Citadel/6 73.2,44.5
 path	Hellfire Citadel/6 73.3,64.3	Hellfire Citadel/6 72.9,76.4
 path	Hellfire Citadel/6 61.7,76.5	Hellfire Citadel/6 61.8,62.1
-Follow the path |goto Hellfire Citadel/6 61.8,62.1 < 10 |noway |c
+Follow the path |goto Hellfire Citadel/6 61.8,62.1 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 click the purple portal |goto Hellfire Citadel/6 61.8,62.1
 Take the portal to Mannoroth's platform |goto Hellfire Citadel/9 51.0,25.2 |noway |c
@@ -4357,6 +4353,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Dont stand in Desecrate when it appears it will do massive damage and knock you back in its area. |grouprole EVERYONE
 confirm
 step
+kill Archimonde##91331
 Phase 2:
 _TANK:_ |grouprole TANK
 |tip Once again be sure to pick up the adds that come out. |grouprole TANK
@@ -4376,8 +4373,8 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Once again be sure to move when Allure of Flame comes out. |grouprole EVERYONE
 |tip Deathstalkers will be one of the adds that spawn during this phase they will target a random player and teleport on them then start casting a Consume Magic, This ability will do damage in a circle around the mob and interrupt anyone casting inside the cirlce. |grouprole EVERYONE
 confirm
-modelnpc Archimonde##91331
 step
+kill Archimonde##91331
 Phase 3:
 _TANK:_ |grouprole TANK
 |tip The tank tanking the boss soon after phase 3 begins will get a debuff called Nether Banish, after 8 seconds the tank and everyone within 8 yards will go into the Nether. |grouprole TANK
@@ -4407,9 +4404,7 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Try to be far away from the Nether portals as they spawn Living Shadows that do alot of damage and give you a healing debuff if they hit you. |grouprole EVERYONE
 |tip If any less then three people go into the Nether then the boss will heal. |grouprole EVERYONE
 |tip Infernal Doombringers can be stunned, and if they live to long they will start casting Hellfire which will deal a very high amount of damage to all players within 40 yards every second, this is basically a wipe if they start casting. |grouprole EVERYONE
-|tip Use Bloodlust/Heroism/Timewarp in the final phase After the first Rain of Chaos. |grouprole EVERYONE
 confirm
-modelnpc Archimonde##91331
 step
 Congratulations on completeing _Hellfire Citadel_!
 ]])
@@ -4454,30 +4449,20 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip During the intermission phase the entire raid has to watch all of the intermission mobs abilities. |grouprole EVERYONE
 confirm
 step
-model Siegemaster Mar'tak##95068
 _Intermission_
 |tip Half way through the fight there will be an intermission that will summon 3 vehicles and 2 miny bosses.
-Felfire Crusher
-|tip This crusher will go towards one of your cannons and will need to be killed first and as fast as possible before it can reach the cannon.
-Felfire Transport
-|tip This is the 2nd thing that needs to be killed it doesn't have much health but it will continue to spit out mobs until it is killed.
+|tip Felfire Crusher will go towards one of your cannons and will need to be killed first and as fast as possible before it can reach the cannon.
+|tip Felfire Transport is the 2nd thing that needs to be killed it doesn't have much health but it will continue to spit out mobs until it is killed.
 _Grute_
 |tip This miny boss needs to be killed first.
-Cannonball
 |tip Grute will leap onto a random player and do 200k damage to that player and anyone in a 9 yard area.
-Shockwave
-|tip This ability shots out a wave toward a random player anyone inside this area will take massive damage and knock them back.
-Cower!
-|tip This ability damages the entire raid and reduces their movement speed for 9 seconds by 30 percent.
-Slam
+|tip Shockwave shots out a wave toward a random player anyone inside this area will take massive damage and knock them back.
+|tip Cower! damages the entire raid and reduces their movement speed for 9 seconds by 30 percent.
 |tip Grute slams the ground doing massive damage and increase physical damage dealt to any targets hit by 30 percent this effect can stack.
 _Grand Corruptor U'rogg_
-Corruption Nova
-|tip This ability will cause a spirial of green circles starting from the Grand Corruptor U'rogg.
-Corruption Bolt
-|tip This ability shots a bolt for 125k.
-Corruption Siphon
-|tip This ability will target a random player and after a few seconds they will explode dealing a massive amount of damage, they will receieve a debuff that needs to be healed for 3 times the damage dealt.
+|tip Corruption Nova will cause a spirial of green circles starting from the Grand Corruptor U'rogg.
+|tip Corruption Bolt shots a bolt for 125k.
+|tip Corruption Siphon will target a random player and after a few seconds they will explode dealing a massive amount of damage, they will receieve a debuff that needs to be healed for 3 times the damage dealt.
 |tip Anyone standing near these people before the explosion will also be dealt the damage and receive the debuff.
 confirm
 step
@@ -4521,7 +4506,9 @@ path	Hellfire Citadel/2 72.0,21.8	Hellfire Citadel/3 67.9,89.6
 path	Hellfire Citadel/3 65.2,78.5	Hellfire Citadel/3 60.3,75.4
 path	Hellfire Citadel/3 51.0,72.3	Hellfire Citadel/3 50.5,23.5
 path	Hellfire Citadel/3 50.6,23.4	Hellfire Citadel/4 60.4,89.2
-_Follow_ the path |goto Hellfire Citadel/4 60.4,89.2 < 10 |noway |c
+Follow the path |goto Hellfire Citadel/4 60.4,89.2 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Kormrok##90776 |goto Hellfire Citadel/4 52.3,48.8
 Splash
@@ -4563,11 +4550,11 @@ path	Hellfire Citadel/2 77.8,43.3	Hellfire Citadel/2 78.0,63.1
 path	Hellfire Citadel/2 72.4,72.4	Hellfire Citadel/5 81.5,8.5
 path	Hellfire Citadel/5 81.2,31.5	Hellfire Citadel/5 71.3,33.8
 path	Hellfire Citadel/5 71.2,62.3
-_Follow_ the path |goto Hellfire Citadel/5 71.2,62.3 < 10 |noway |c
+Follow the path |goto Hellfire Citadel/5 71.2,62.3 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
-kill Gurtogg Bloodboil##92146 |goto Hellfire Citadel/5 71.5,80.1
-kill Dia Darkwhisper##92144 |goto Hellfire Citadel/5 71.5,80.1
-kill Blademaster Jubei'thos##92142 |goto Hellfire Citadel/5 71.5,80.1
+kill Gurtogg Bloodboil##92146, Dia Darkwhisper##92144, Blademaster Jubei'thos##92142 |goto Hellfire Citadel/5 71.5,80.1
 Bloodboil
 |tip While Gurtogg Bloodboil is alive he will put a debuff on the 5 farthest people from him that will stack up and deal stacking damage every few seconds.
 |tip Ranged need to be in 2 groups and switch every 4-5 stacks until the boss is dead.
@@ -4579,15 +4566,14 @@ _TANK:_ |grouprole TANK
 |tip The Bloodboil tank should use cooldowns during Acidic Wound. |grouprole TANK
 |tip During Fel Rage, the Gurtogg tank should not chase him. This will allow stacks of Acidic Wound to drop. |grouprole TANK
 |tip Move the boss away from Reap pools. |grouprole TANK
-__DAMAGE:__ |grouprole DAMAGE
+_DAMAGE:_ |grouprole DAMAGE
 |tip Kill the Mirror Images of Jubei'thos quickly. |grouprole DAMAGE
 |tip The kill order should be Gurtogg Bloodboil, Blademaster Judei'thos, then Dia Darkwhisper. |grouprole DAMAGE
 |tip If you are affected by Fel Rage you will receieve a DPS buff and you will have aggro on the boss, pop any cds you might have. |grouprole DAMAGE
-__HEALER:__ |grouprole HEALER
+_HEALER:_ |grouprole HEALER
 |tip Players affected by Fel Rage will require extensive healing. |grouprole HEALER
 |tip The Gurtogg tank will need heavy healing when stacks of Acidic Wound build up. |grouprole HEALER
-|tip The Dia tank will need heavy healing during Nightmare Visage. |grouprole HEALER
-|tip The Dia tank will also need massive heals for the whole time Gurtogg Bloodboil is alive. |grouprole HEALER
+|tip The Dia tank will need heavy healing. |grouprole HEALER
 |tip Dispel Mark of the Necromancer when the player gains the red version of the debuff, allow the red debuff to stay on for as long as possible. |grouprole HEALER
 |tip When Mark of the Necromancer is dispelled the entire raid will take 30k+ damage. |grouprole HEALER
 |tip Use raid cooldowns for each "ultimate" ability. These occur roughly 75 seconds apart. |grouprole HEALER
@@ -4595,7 +4581,6 @@ __HEALER:__ |grouprole HEALER
 _EVERYONE:_ |grouprole EVERYONE
 |tip Move away from Fel Blade and Wailing Horrors. |grouprole EVERYONE
 |tip If affected by Mark of the Necromancer, move out of the raid to drop the Reap pool during Reap. |grouprole EVERYONE
-|tip Use Heroism/Bloodlust/Time Warp when Bloodboil is under 30% health. |grouprole EVERYONE
 |tip During Wailing Horror the raid can stack up in some corners of the room to avoid all of the adds. |grouprole EVERYONE
 |tip During image phases the raid needs to stack up and kill as many images as they can healing is very intense here, also all blades need to be dodged they will deal a massive amount of damage if hit and knock back. |grouprole EVERYONE
 confirm
@@ -4605,7 +4590,9 @@ path follow smart; loop off; ants curved; dist 15
 path	65.8,72.6	57.7,79.6	46.4,79.6
 path	45.9,67.7	40.0,64.5	17.3,64.9
 path	12.0,56.5	12.2,36.1	24.2,34.2
-_Follow_ the path |goto Hellfire Citadel/5 24.2,34.2 < 8 |noway |c
+Follow the path |goto Hellfire Citadel/5 24.2,34.2 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Kilrogg Deadeye##90378 |goto Hellfire Citadel/5 51.0,33.7
 _TANK:_ |grouprole TANK
@@ -4613,19 +4600,15 @@ _TANK:_ |grouprole TANK
 |tip Drag the boss away from Blood Globules and Fel Blood Globules. |grouprole TANK
 |tip Each time a Hulking Terror spawns, tank swap. |grouprole TANK
 |tip Face Hulking Terrors away from the group, and drag them away when they are about to die. |grouprole TANK
-__DAMAGE:__ |grouprole DAMAGE
+_DAMAGE:_ |grouprole DAMAGE
 |tip Ranged DPS should prioritize damage on Blood Globules. |grouprole DAMAGE
 |tip All DPS should prioritze adds over the boss. |grouprole DAMAGE
 |tip When Hulking Terrors die they will leave a green pool behind, this needs to be soaked by 2 people switching off until the pool is completly gone, this can be accomplished by any 2 people but preferably 2 melee dps. |grouprole DAMAGE
 |tip When Salicating Bloodthirsters spawn they need to be slowed, rooted, and killed asap, if they reach the green pull they will transform into Hulking Terrors. |grouprole DAMAGE
-|tip When targeted by Heart Seeker, move far away from Kilrogg as far as possible. |grouprole DAMAGE
-|tip Designated raid members should step into the green runes during Vision of Death. |grouprole DAMAGE
-__HEALER:__ |grouprole HEALER
+_HEALER:_ |grouprole HEALER
 |tip Use healing cooldowns during Death Throes. |grouprole HEALER
 |tip Use external defensive cooldowns on the Kilrogg tank during Death Throes. |grouprole HEALER
 |tip Single-target heal the player targeted by Heart Seeker. |grouprole HEALER
-|tip When targeted by Heart Seeker, move far away from Kilrogg. |grouprole HEALER
-|tip Designated raid members should step into the green runes during Vision of Death. |grouprole HEALER
 _Vision of Death Team:_
 |tip Two DPS and one healer should go down, there should be 4 teams for the visions.
 |tip Players will become more powerful in their role with each demon killed. This buff will last when you are transported out.
@@ -4637,25 +4620,27 @@ _Vision of Death Team:_
 |tip Upon returning, DPS should focus on killing adds, but this buff is very big so players will kill these mobs very fast, then be sure to put as much damage on the boss as possible. |grouprole DAMAGE
 _EVERYONE:_ |grouprole EVERYONE
 |tip Interrupt Hulking Terrors when casting Rending Howl. |grouprole EVERYONE
-|tip Use defensive cooldowns during Death Throes.|grouprole EVERYONE
-|tip Use Heroism/Bloodlust/Time Warp when the first group of visions come out. |grouprole EVERYONE
-|tip The Heart Seeker debuff is permanent but it can be removed with immunities and Hand of Protection. |grouprole EVERYONE
-|tip The Heart Seeker debuff will be removed if the player enters the Visions of Death. |grouprole EVERYONE
-|tip Don't stand in any Death Throe pools. |grouprole EVERYONE
+|tip When targeted by Heart Seeker, move far away from Kilrogg. |grouprole EVERYONE
+|tip Use defensive cooldowns during Death Throes. |grouprole EVERYONE
+|tip The Heart Seeker debuff is permanent but it can be removed with immunities and Hand of Protection, it will also be removed if the player enters the Visions of Death. |grouprole EVERYONE
 confirm
 step
 map Hellfire Citadel/5
 path follow smart; loop off; ants curved; dist 15
 path	53.4,33.6	66.7,33.6	80.9,33.6
 path	81.6,8.3
-_Follow_ the path |goto Hellfire Citadel/5 81.6,8.3 < 8 |noway |c
+Follow the path |goto Hellfire Citadel/5 81.6,8.3 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Hellfire Citadel/2
 path follow smart; loop off; ants curved; dist 15
 path	72.4,71.5	77.8,59.6	78.1,46.3
 path	65.3,41.8	55.1,47.6	38.7,48.0
 path	30.7,63.1	19.2,64.6
-_Follow_ the path |goto Hellfire Citadel/2 19.2,64.6 < 12 |noway |c
+Follow the path |goto Hellfire Citadel/2 19.2,64.6 < 12
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Gorefiend##91809 |goto Hellfire Citadel/2 17.3,44.5
 Corrupted Soul
@@ -4666,34 +4651,33 @@ _TANK:_ |grouprole TANK
 |tip Inside the stomach, pick up the Enraged Spirit. Interrupt Bellowing Shoult and move out of Fel Fury. |grouprole TANK
 |tip Swap tanking the Gorebound Spirit at 8-10 stacks of Fel Flames. |grouprole TANK
 |tip Interrupt the Gorebound Spirit's Bellowing Shout. |grouprole TANK
-__DAMAGE:__ |grouprole DAMAGE
+_DAMAGE:_ |grouprole DAMAGE
 |tip Focus on killing adds rather than Gorefiend. Gorefiend takes more damage during Feast of Souls. |grouprole DAMAGE
-|tip When targeted by Touch of Doom, run to the edge of the room until it expires. |grouprole DAMAGE
 |tip Stay spread out. Move out of Crushing Darkness. |grouprole DAMAGE
 |tip Kite the Gorebound Construct if targeted by Hunger for Life. |grouprole DAMAGE
 |tip While inside Gorefiend's stomach, kill Constructs and help kill the Enraged Spirit. |grouprole DAMAGE
 |tip Use DPS cooldowns during Feast of Souls after the adds are dead. |grouprole DAMAGE
-__HEALER:__ |grouprole HEALER
+_HEALER:_ |grouprole HEALER
 |tip The Gorebound Spirit tank will take heavy damage. |grouprole HEALER
-|tip Consistent raid damage will persist throughout the entire fight. |grouprole HEALER
 |tip While inside Gorefiend's stomach, heal the Tortured Essences. |grouprole HEALER
-|tip When targeted by Touch of Doom, run to the edge of the room until it expires. |grouprole HEALER
 |tip Kite the Gorebound Construct if targeted by Hunger for Life. |grouprole HEALER
 |tip Stay spread out. Move out of Crushing Darkness. |grouprole HEALER
 |tip Use raid cooldowns to mitigate damage from Feast of Souls. |grouprole HEALER
 _EVERYONE:_ |grouprole EVERYONE
-|tip Use Heroism/Bloodlust/Time Warp during the first Feast of Souls mechanic. |grouprole EVERYONE
+|tip When targeted by Touch of Doom, run to the edge of the room until it expires. |grouprole EVERYONE
 |tip Be sure to stack together during Feast of Souls to make healing easier. |grouprole EVERYONE
 |tip During Feast of Souls people with "Gorefiends Corruption" should soak the unstable souls, this will remove the corruption debuff and stop them from reaching Gorefiend. |grouprole EVERYONE
 |tip Gorefiend will put out a debuff on 3 people called Shared Fate, one of these people will be rooted and the other 2 will have to run to this person and stand on top of them to free them from this root. |grouprole EVERYONE
-|tip All players will the Shared Fate debuff will take ticking damage until the debuff is removed by freeing the rooted player, if they do not accomplish this within 10 seconds the debuff will explode for a massive amount of damage. |grouprole EVERYONE
+|tip All players with the Shared Fate debuff will take ticking damage until the debuff is removed by freeing the rooted player, if they do not accomplish this within 10 seconds the debuff will explode for a massive amount of damage. |grouprole EVERYONE
 confirm
 step
 click the soul portal |goto Hellfire Citadel/2 22.1,47.1 < 5 |c
 map Hellfire Citadel/6
 path follow smart; loop off; ants curved; dist 15
 path	59.8,76.6	49.1,76.7
-_Follow_ the path |goto Hellfire Citadel/6 49.1,76.7 < 8 |noway |c
+Follow the path |goto Hellfire Citadel/6 49.1,76.7 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Shadow-Lord Iskar##90316 |goto Hellfire Citadel/6 38.9,76.6
 Shadow Reposte
@@ -4724,19 +4708,22 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Phantasmal Winds will push you towards the edge of the platform. Simply walk against it until you recieve the orb, once you have the orb be sure to pass it to another effected person or to the designated orb holder. |grouprole EVERYONE
 |tip When targeted by Fel Incineration be sure to kite the flame line away from the group and away from the path the group will take, this can be stood in and healed through to reduced the amount of fire on the ground.|grouprole EVERYONE
 |tip During the transition phases be sure to stand in the middle of the room to split the damage of Focused Blast. |grouprole EVERYONE
-|tip Save bloodlust/timewarp/heroism for the last intermission phase. |grouprole EVERYONE
 confirm
 step
 map Hellfire Citadel/6
 path follow smart; loop off; ants curved; dist 15
 path	45.2,76.9	57.3,76.7	61.8,83.1
-_Follow_ the path |goto Hellfire Citadel/6 61.8,83.1 < 8 |noway |c
+Follow the path |goto Hellfire Citadel/6 61.8,83.1 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Hellfire Citadel/8
 path follow smart; loop off; ants curved; dist 15
 path	42.3,8.1	42.5,25.7	52.2,25.5
 path	61.1,26.5	61.0,41.7
-_Follow_ the path |goto Hellfire Citadel/8 61.0,41.7 < 5 |noway |c
+Follow the path |goto Hellfire Citadel/8 61.0,41.7 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Soulbound Construct##90296 |goto Hellfire Citadel/8 59.0,54.1
 _Phase 1_
@@ -4753,6 +4740,8 @@ _DAMAGE:_ |grouprole DAMAGE
 |tip Kill Crystalline Fel Prisons quickly. |grouprole DAMAGE
 _HEALER:_ |grouprole HEALER
 |tip When Apocalyptic Felburst hits the entire raid will take massive damage this is where healing cds need to be used. |grouprole HEALER
+confirm
+step
 _Phase 2_
 _TANK:_ |grouprole TANK
 |tip In phase two, one tank should control the Soulbound Construct, while the other should pick up adds and tank Socrethar. |grouprole TANK
@@ -4780,7 +4769,9 @@ map Hellfire Citadel/8
 path follow smart; loop off; ants curved; dist 15
 path	56.8,58.9	56.8,69.1	55.5,80.8
 path	45.9,81.0	42.5,74.2	37.5,70.0
-_Follow_ the path |goto Hellfire Citadel/8 37.5,70.0 < 5 |noway |c
+Follow the path |goto Hellfire Citadel/8 37.5,70.0 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Tyrant Velhari##93439 |goto Hellfire Citadel/8 29.3,50.4
 |tip There are no new abilities in this fight, the biggest thing is each aura from each phase persists during the entire fight but decreases in strength.
@@ -4812,13 +4803,17 @@ path	31.8,66.5	39.0,70.4	42.4,74.8
 path	43.6,81.1	50.3,81.0	56.0,78.8
 path	56.8,64.9	61.0,42.9	61.9,25.4
 path	47.6,25.3	42.3,23.3	42.4,8.8
-Follow the path |goto Hellfire Citadel/8 42.4,8.8 < 10 |noway |c
+Follow the path |goto Hellfire Citadel/8 42.4,8.8 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Hellfire Citadel/6
 path follow smart; loop off; ants curved; dist 15
 path	61.8,76.3	73.3,76.5	73.4,44.8
 path	63.0,44.2	50.0,38.0	50.0,29.0
-Follow the path |goto Hellfire Citadel/6 50.0,29.0 < 10 |noway |c
+Follow the path |goto Hellfire Citadel/6 50.0,29.0 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Fel Lord Zakuun##89890 |goto Hellfire Citadel/6 50.0,19.9
 _TANK:_ |grouprole TANK
@@ -4852,7 +4847,9 @@ path follow smart; loop off; ants curved; dist 15
 path	49.8,27.5	50.4,39.8	57.4,46.5
 path	68.1,44.6	78.7,44.4	88.1,51.3
 path	Hellfire Citadel/7 40.1,50.7
-Follow the path |goto Hellfire Citadel/7 40.1,50.7 < 10 |noway |c
+Follow the path |goto Hellfire Citadel/7 40.1,50.7 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Xhul'horac##93068 |goto Hellfire Citadel/7 53.2,50.9
 _TANK:_ |grouprole TANK
@@ -4863,28 +4860,24 @@ _TANK:_ |grouprole TANK
 |tip During the last two phases, one tank should taunt after each Fel Strike and the other after each Void Strike. |grouprole TANK
 |tip Stun and interrupt Wild Pyromaniacs whenever possible. |grouprole TANK
 |tip Keep Xhul'horac away from nearby Chaotic Felblaze or Creeping Void patches. |grouprole TANK
-__DAMAGE:__ |grouprole DAMAGE
+_DAMAGE:_ |grouprole DAMAGE
 |tip DPS priority is Wild Pyromaniac > Unstable Voidfiend > Vanguard Akkelion/Omnus > Xhul'horac. |grouprole DAMAGE
 |tip Stun and interrupt Wild Pyromaniacs. |grouprole DAMAGE
 |tip Run to the edge of the room when effected by Fel Surge or Void Surge. |grouprole DAMAGE
-|tip When affected by Chains of Fel, run away from other chained players. |grouprole DAMAGE
 |tip Move out of the purple pool if targeted by Volatile Voidstep. |grouprole DAMAGE
-__HEALER:__ |grouprole HEALER
+_HEALER:_ |grouprole HEALER
 |tip During Phase 1 and 2, the boss tank will need extra healing during Fel Strike and Void Strike. |grouprole HEALER
 |tip Healing is very chaotic during this fight, with a lot of DoT's and direct AoE damage. |grouprole HEALER
 |tip Run to the edge of the room when effected by Fel Surge or Void Surge there should be designated spots for each color. |grouprole HEALER
-|tip When affected by Chains of Fel, run away from other chained players. |grouprole HEALER
 |tip Move out of the purple pool if targeted by Volatile Voidstep. |grouprole HEALER
-|tip If any pool of purple and green touch it will cause a raid wide explosion be prepared for this as the last phase of this fight is very chaotic. |grouprole HEALER
 _EVERYONE:_ |grouprole EVERYONE
-|tip Don't allow any of the green and purple pools to touch this will cause massive raid wipe damage. |grouprole EVERYONE
+|tip Don't allow any of the green and purple pools to touch this will cause massive raid wide damage. |grouprole EVERYONE
 |tip In the last phase when hes switching colors back and forth after every fel and void strike he does he will also be applying both color debuffs on players, these players have to be careful not to place the color debuff near the opposite colors that are alraedy on the ground. |grouprole EVERYONE
 |tip When each miny boss dies the boss will take there ability and empower it. |grouprole EVERYONE
-|tip Black Holes these will suck players toward the black hole until it is destroyed, to destroy these, people either many people need to run into it to soak it together or on player with an immunity need to soak it. |grouprole EVERYONE
-|tip Empowered Black Holes these will do the same as normal black holes but will leave a debuff on players that soak then that will increase damage taken from further black holes by 1000% for 2 minuites. |grouprole EVERYONE
+|tip Black Holes these will suck players toward the black hole until it is destroyed, to destroy these, many people need to run into it to soak it together or a player with an immunity needs to soak it. |grouprole EVERYONE
+|tip Empowered Black Holes these will do the same as normal black holes but will leave a debuff on players that soak then that will increase damage taken from further black holes by 1000% for 2 minutes. |grouprole EVERYONE
 |tip Chains of Fel simply run away from other players effected by these. |grouprole EVERYONE
 |tip Empowered Chains of Fel this will do the same targetd 3 players but once broken an ability will cast called "Fel Snapback" this will deal 250k damage to the player breaking the chain and to anyone else around them within 5 yards. |grouprole EVERYONE
-|tip Use Heroism/Bloodlust/Time Warp during the last phase of the fight. |grouprole EVERYONE
 confirm
 step
 map Hellfire Citadel/7
@@ -4893,15 +4886,16 @@ path	47.5,51.1	19.0,51.1
 path	Hellfire Citadel/6 86.4,51.5	Hellfire Citadel/6 73.2,44.5
 path	Hellfire Citadel/6 73.3,64.3	Hellfire Citadel/6 72.9,76.4
 path	Hellfire Citadel/6 61.7,76.5	Hellfire Citadel/6 61.8,62.1
-Follow the path |goto Hellfire Citadel/6 61.8,62.1 < 10 |noway |c
+Follow the path |goto Hellfire Citadel/6 61.8,62.1 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 click the purple portal |goto Hellfire Citadel/6 61.8,62.1
 Take the portal to Mannoroth's platform |goto Hellfire Citadel/9 51.0,25.2 |noway |c
 step
 kill Mannoroth##91349
 |tip In mythic difficulty Mannoroth is immediately resurrected at the beginning of the fight there are no longer summoners.
-Wrath of Gul'dan
-|tip This ability will target 2 ranged dps, 2 melee dps, and 1 healer this will deal damage to this player and do increased damage the more stacks of Gripping Shadows that player gets, this ability dissipates after applying 40 stacks and it will happen twice during the fight.
+|tip Wrath of Gul'dan will target 2 ranged dps, 2 melee dps, and 1 healer this will deal damage to this player and do increased damage the more stacks of Gripping Shadows that player gets, this ability dissipates after applying 40 stacks and it will happen twice during the fight.
 |tip The closest player within 15 yards of the debuffed player can soak this damage reducing the amount of Gripping Shadows stacks from the debuffed player, but the soaking player will receive these Gripping Shadow debuffs until they move out. Gripping Shadows lasts for 15 seconds.
 _TANK:_ |grouprole TANK
 |tip The Doom Lord needs to be tanked and interrupted. |grouprole TANK
@@ -4910,25 +4904,23 @@ _TANK:_ |grouprole TANK
 |tip No tank can take two Massive Blasts in a row. Use cooldowns for Glaive Thrust. |grouprole TANK
 |tip During Phase 4, turn Mannoroth so that his back is towards the edge of the platform. Empowered Massive Blast will knock you back, stay on the platform. |grouprole TANK
 |tip One tank should stand at Mannoroth's side when not tanking during Phase 4 |grouprole TANK
-__DAMAGE:__ |grouprole DAMAGE
+_DAMAGE:_ |grouprole DAMAGE
 |tip If affected by Curse of the Legion in Phase 1, run to the tank to be dispelled. |grouprole DAMAGE
-|tip When affected by Mark of Doom, run away from the group and find a way to take damage to detonate it. Make sure you have high health, the new mechanic, Wrath of Gul'dan is a good way to accomplish this. |grouprole DAMAGE
 |tip During Phase 2 and 3, ranged DPS should kill Dread Infernals, while melee DPS should kill Fel Imps. |grouprole DAMAGE
 |tip Stay out of areas targeted on the ground. |grouprole DAMAGE
 |tip During Shadowforce, use movement abilities to avoid being pushed off the platform. |grouprole DAMAGE
 |tip Adds are priorty and need to be grouped up and killed asap. |grouprole DAMAGE
 |tip Be sure to interrupt Doom Lords don't let these cast. |grouprole DAMAGE
-__HEALER:__ |grouprole HEALER
+_HEALER:_ |grouprole HEALER
 |tip Dispel Curse of the Legion when the player is near a tank, when dispelled the player will also take a massive amount of damage this needs to be mitigated. |grouprole HEALER
 |tip Curse of the Legion and Mark of Doom targets will require extra healing. |grouprole HEALER
 |tip Glaive Combo will deal heavy damage to the tanks. |grouprole HEALER
 |tip Heavy raid damage occurs during Fel Hellstorm, Mannoroth's Gaze, Empowered Shadowforce, and Empowered Felseeker. |grouprole HEALER
-|tip When affected by Mark of Doom, run away from the group and find a way to take damage to detonate it. Make sure you have high health, the new mechanic, Wrath of Gul'dan is a good way to accomplish this. |grouprole HEALER
 |tip Stay out of areas targeted on the ground. |grouprole HEALER
 |tip During Shadowforce, use movement abilities to avoid being pushed off the platform. |grouprole HEALER
 _EVERYONE:_ |grouprole EVERYONE
+|tip When affected by Mark of Doom, run away from the group and find a way to take damage to detonate it. Make sure you have high health, the new mechanic, Wrath of Gul'dan is a good way to accomplish this. |grouprole EVERYONE
 |tip When Mannoroths Gaze goes out 3 people will be affected they will be feared away from the boss, each gaze needs at least 2 people to help soak it before the timer runs out. |grouprole EVERYONE
-|tip Use Heroism/Bloodlust/Time Warp during the final phase, after the first Empowered Shadowforce. |grouprole EVERYONE
 |tip The only time the dps and healers should be in front of the boss is just before shadowforce goes off in the last phase, right after this ability is done quickly run back behind the boss. |grouprole EVERYONE
 confirm
 step
@@ -4977,7 +4969,6 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip During this phase everyone should be stacked on the boss this will make the adds that come out more easy to kill. |grouprole EVERYONE
 |tip Deathstalkers will be one of the adds that spawn during this phase they will target a random player and teleport on them then start casting a Consume Magic, This ability will do damage in a circle around the mob and interrupt anyone casting inside the cirlce. |grouprole EVERYONE
 confirm
-modelnpc Archimonde##91331
 step
 Phase 3:
 |tip Phase 3 is completly different in mythic containing many new abilities and is not illustarted in the dungeon journal.
@@ -5004,7 +4995,6 @@ _EVERYONE:_ |grouprole EVERYONE
 |tip Be sure to spread the infernals apart and kill them asap. |grouprole EVERYONE
 |tip Void stars are also the same mechanic as normal/heroic but in mythic instead of one spawning at a time 4 will spawn, they don't have much hp but need to be slowed and killed. |grouprole EVERYONE
 confirm
-modelnpc Archimonde##91331
 step
-Congratulations on completeing _Hellfire Citadel_!
+Congratulations on completeing _Hellfire Citadel Mythic_!
 ]])

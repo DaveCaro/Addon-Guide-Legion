@@ -130,8 +130,8 @@ function AutoEquip:ScanBagsForUpgrades(verbose,noreport,noblock)
 
 	for bag=0, NUM_BAG_SLOTS do for bagslot=1, GetContainerNumSlots(bag) do repeat
 		local itemid = GetContainerItemID(bag,bagslot)
-		if not itemid then break end
-		if itemid==82800 then break end -- caged pet, we will never equip it anyway
+		if not itemid then break end --continue
+		if itemid==82800 then break end --continue   -- caged pet, we will never equip it anyway
 
 		if self:TestForBadUpgrade(itemid) then
 			if self.verbose then verboseDebug("%s %s removed because it is in BadUpgrades.",itemlink,itemlink:match("item[:%d%-]+")) end
@@ -141,19 +141,19 @@ function AutoEquip:ScanBagsForUpgrades(verbose,noreport,noblock)
 		local itemlink = GetContainerItemLink(bag,bagslot)
 		local for_quest = GetContainerItemQuestInfo(bag,bagslot)
 		local name, link, quality, iLevel, reqLevel, class, subclass, maxStack, equipslot, texture, vendorPrice = ZGV:GetItemInfo(itemlink)
-		if not name then return end --Don't suggest anything until this info is available.
+		if not name then break end --continue   -- Don't suggest anything until this info is available.
  
 		if not (equipslot and ItemScore:IsGoodEquipSlot(equipslot)) then
 			--Only care about items with equipslots we can use.
-			break
+			break --continue
 		elseif not (quality and (quality > 0 or ItemScore.playerlevel <=10)) then
 			-- Don't want grey items unless under level 10.
 			verboseDebug("%s %s removed because it is grey.",itemlink,itemlink:match("item[:%d%-]+"))
-			break
+			break --continue
 		elseif not IsUsableItem(itemlink) then
 			-- Item is not for our class.
 			verboseDebug("%s %s removed because it is not usable. Wrong class?",itemlink,itemlink:match("item[:%d%-]+"))
-			break
+			break --continue
 		end
 
 		if for_quest and   -- We have a questitem that we can equip.
@@ -182,7 +182,7 @@ function AutoEquip:ScanBagsForUpgrades(verbose,noreport,noblock)
 				-- error! Oh well. Skip that item, but continue doing work.
 				if ( code == SC_NOTYET or code == SC_NORULES )then
 					self:Debug("%s %s Removed because %s-%s",itemlink,itemlink:match("item[:%d%-]+"),code,(info or "?"))
-					break
+					break --continue
 				else
 					ScoreCache[itemlink] = code.."-"..(info or "?")
 				end
@@ -192,7 +192,7 @@ function AutoEquip:ScanBagsForUpgrades(verbose,noreport,noblock)
 		end
 		Scoring = Scoring + (debugprofilestop() - startScoring)
 
-		if score <= 0 then self:Debug("%s %s Removed because score <= 0. Reason in cache (%s).",itemlink,itemlink:match("item[:%d%-]+"),ScoreCache[itemlink]) break end
+		if score <= 0 then self:Debug("%s %s Removed because score <= 0. Reason in cache (%s).",itemlink,itemlink:match("item[:%d%-]+"),ScoreCache[itemlink]) break--[[continue--]] end
 
 		local item = {
 			itemid = itemid,

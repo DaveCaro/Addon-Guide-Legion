@@ -71,6 +71,7 @@ end
 
 function Farming:IsValidChore()
 	self.valid=false
+	if self.profitperhour<=0 then return false,"no profit" end
 	if ZGV.db.profile.gold_farming_type~="all" and ZGV.db.profile.gold_farming_type~=self.meta.itemtype then return false,"type filter" end
 	if (not ZGV.db.profile.gold_farming_mode and (#self.good_items<=0 or (self.scale and self.scale<Goldguide.TIER_DEMAND_MEDIUM))) then return false,"mode filter" end
 	
@@ -84,6 +85,6 @@ function Farming:IsValidChore()
 end
 
 function Farming.dynamic_sort(a,b)
-	return Goldguide.dynamic_sort("farming",a,b, "time","zerolast", ZGV.db.profile.goldsort['farming'][1],ZGV.db.profile.goldsort['farming'][2], "dispgold","desc")
+	return Goldguide.dynamic_sort("farming",a,b, "time","zerolast", ZGV.db.profile.goldsort['farming'][1],ZGV.db.profile.goldsort['farming'][2], "dispgold","desc", "name","asc")
 end
 

@@ -139,6 +139,8 @@ function GearFinder:IsValidDungeonItem(itemlink)
 			if not complete then return false, ItemScore.SC_NOTFORU, "attunement needed" end
 		elseif dungeondata.attunement_quest and not IsQuestFlaggedCompleted(dungeondata.attunement_quest) then
 			return false, ItemScore.SC_NOTFORU, "attunement needed"
+		elseif dungeondata.attunement_queston and not (IsQuestFlaggedCompleted(dungeondata.attunement_queston) or ZGV.Parser.ConditionEnv.havequest(dungeondata.attunement_queston))  then
+			return false, ItemScore.SC_NOTFORU, "attunement needed"
 		else
 			return true
 		end

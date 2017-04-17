@@ -535,7 +535,7 @@ A Bloodspattered Banners |N|(npc:29795) on {Orgrim's Hammer}| |QID|13307| |NPC|2
 A The Ironwall Rampart |N|(npc:29795) on {Orgrim's Hammer}| |QID|13312| |NPC|29795|
 A Blinding the Eyes in the Sky |N|(npc:30824) on {Orgrim's Hammer}| |QID|13313| |NPC|30824|
 C Bloodspattered Banners |N|Kill a (npc:31900) first (43.8, 56.6) to weaken the (npc:32255), and kill 5 (npc:32257) (47.8, 40.2)| |QID|13307| |U|44212| |NPC|31900, 32255, 32257|
-C Blinding the Eyes in the Sky |N|Use (item:44212) to kill 6 Skybreaker Recon around the waypoint (47, 36), it is easy if you use this macro.<br/><br>/target Skybreaker Recon<br>/use SGM-3| |U|44212| |QID|13313| |NPC|32189|
+C Blinding the Eyes in the Sky |N|Use (item:44212) to kill 6 Skybreaker Recon around the waypoint (47, 36), it is easy if you use this macro.<br/><br/>/target Skybreaker Recon<br/>/use SGM-3| |U|44212| |QID|13313| |NPC|32189|
 C The Ironwall Rampart |N|Use (item:44186) to summon (npc:32162) and kill him| |QID|13312| |NPC|32162| |U|44186|
 
 R Orgrim's Hammer |N|This is the Horde Ship that flies around {Icecrown} (66, 33), (69.5, 27.4), (67.4, 52.5)| |WR|

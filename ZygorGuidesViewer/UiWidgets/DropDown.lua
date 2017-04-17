@@ -48,7 +48,7 @@ function DropDown:New(parent,style,frameLevel)
 
 	local dropdownObj = CHAIN(AceGUI:Create("Dropdown-Z"))
 		:SetWidth(DEFAULTWIDTH)
-		:SetText("Dropdown Text")
+		:SetText("")
 	.__END
 
 	local dropdown = dropdownObj.dropdown

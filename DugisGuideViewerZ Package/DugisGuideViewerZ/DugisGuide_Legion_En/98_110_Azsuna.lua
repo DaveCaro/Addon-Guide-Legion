@@ -59,12 +59,14 @@ K (npc:89673) |QID|37660.7| |N|Kill (npc:89673) at the {Illidari Stand} (44.43, 
 N Exit Soul Gem |QID|37660.8| |N|Leave the realm of the soul gem at the {Illidari Stand} (44.26, 44.17)| |Z|1015 0|
 N (npc:90403)  |QID|37660.9| |N|Meet back up with (npc:90403) at the {Illidari Stand} (43.40, 43.13)| |Z|1015 0| |NPC|90403|
 T The Scythe of Souls |QID|37660| |N|(npc:89398) at the {Illidari Stand} (43.31, 43.15)| |Z|1015 0| |NPC|89398|
-A From Within |QID|44140| |N|(npc:89362) or (npc:101927) at the {Illidari Stand} (43.54, 43.48)| |Z|1015 0| |NPC|89362, 101927| |C|Demon|
-A From Within |QID|36920| |N|(npc:89362) at the {Illidari Stand} (43.50, 43.50)| |Z|1015 0| |NPC|89362|
+A From Within |QID|44140| |N|(npc:89362) at the {Illidari Stand} (43.54, 43.48)| |Z|1015 0| |OID|40815, 36920| |NPC|89362| |C|Demon|
+A From Within |QID|40815| |N|(npc:101927) in {Illidari Stand} (43.51, 43.40)| |Z|1015 0| |OID|44140, 36920| |NPC|101927| |C|Demon|
+A From Within |QID|36920| |N|(npc:89362) at the {Illidari Stand} (43.50, 43.50)| |Z|1015 0| |OID|44140, 40815| |NPC|89362|
 
 R Vanquish Point |QID|36920| |N|Travel to {Vanquish Point} (41.21, 50.47)| |Z|1015 0| |OID|44140|
-T From Within |QID|44140| |N|(npc:90255) at {Vanquish Point} (41.21, 50.47)| |Z|1015 0| |NPC|90255| |C|Demon|
-T From Within |QID|36920| |N|(npc:90255) at {Vanquish Point} (41.21, 50.47)| |Z|1015 0| |NPC|90255| |OID|44140|
+T From Within |QID|44140| |N|(npc:90255) at {Vanquish Point} (41.21, 50.47)| |Z|1015 0| |OID|40815, 36920| |NPC|90255| |C|Demon|
+T From Within |QID|40815| |N|(npc:90255) at {Vanquish Point} (41.21, 50.47)| |Z|1015 0| |OID|44140, 36920| |NPC|90255| |C|Demon|
+T From Within |QID|36920| |N|(npc:90255) at {Vanquish Point} (41.21, 50.47)| |Z|1015 0|  |OID|44140, 40815| |NPC|90255|
 --A Retake Faronaar |QID|36811| |N|Auto Accept| |Z|1015 0| |PL|110| -- Bonus Objective
 A Fel Machinations |QID|37656| |N|(npc:90255) at {Vanquish Point} (41.20, 50.45)| |Z|1015 0| |NPC|90255|
 A Saving Stellagosa |QID|37450| |N|(npc:90255) at {Vanquish Point} (41.20, 50.45)| |Z|1015 0| |NPC|90255|
@@ -86,7 +88,7 @@ K Nightglaive the Traitor |QID|37449.1| |N|Kill (npc:90621) at the {Traitor's Ov
 R Illidari Stand |QID|37449.2| |N|Mount (npc:89794) at the {Traitor's Overlook} for a free ride back to {Illidari Stand} (35.11, 52.90)| |Z|1015 0| |NPC|89794| |V|
 N (npc:89362) |QID|37449.3| |N|Meet (npc:89362) back at the {Illidari Stand} (43.59, 43.22)| |Z|1015 0| |NPC|89362|
 T Dark Revelations |QID|37449| |N|(npc:89362) at the {Illidari Stand} (43.53, 43.44)| |Z|1015 0| |NPC|89362|
-C Retake Faronaar |QID|36811| |N|Kill demons and destroy demonic structures in {Faronaar} (36.69, 50.86)| |Z|1015 0| |PL|110| -- Bonus Objective
+--C Retake Faronaar |QID|36811| |N|Kill demons and destroy demonic structures in {Faronaar} (36.69, 50.86)| |Z|1015 0| |PL|110| -- Bonus Objective
 
 A Journey to the Repose |QID|38443| |N|(npc:93326) at the {Illidari Stand} (43.53, 43.45)| |Z|1015 0| |NPC|93326|
 
@@ -372,7 +374,7 @@ R Felblaze Ingress |QID|42372| |N|Travel to {Felblaze Ingress} (63.83, 28.93)| |
 T Felblaze Ingress |QID|42372| |N|(npc:107244) in {Felblaze Ingress} (63.83, 28.93)| |Z|1015 0| |NPC|107244|
 A Eye See You |QID|42375| |N|(npc:107244) in {Felblaze Ingress} (63.83, 28.93)| |Z|1015 0| |NPC|107244|
 f Felblaze Ingress |QID|42375| |N|Grab the flight path for {Felblaze Ingress} from (npc:111624) (63.82, 28.52)| |Z|1015 0| |NPC|111624|
-N (npc:107252) |QID|42375| |N|Use the (npc:107252) (63.83, 28.94)| |Z|1015 0| |BUFF|Interface\Icons\spell_shadow_evileye| |V|
+N (npc:107252) |QID|42375| |N|Use the (npc:107252) (63.83, 28.94)| |Z|1015 0| |BUFF|136155| |V|
 N Ritual Site |QID|42375.2| |N|Locate the ritual site in {Felblaze Ingress}<br/><b>Avoid getting to close to (npc:107352)<br/><b>Waypoint is not possible for this step, look for it on your minimap| |Z|1015 0| |NPC|107252, 107352|
 N Main Portal |QID|42375.1| |N|Scout the Main Portal in {Felblaze Ingress}<br/><b>Avoid getting to close to (npc:107352)<br/><b>Waypoint is not possible for this step, look for it on your minimap| |Z|1015 0|
 N Commander |QID|42375.3| |N|Locate the Commander (npc:106583) in {Felblaze Ingress}<br/><b>Avoid getting to close to (npc:107352)<br/><b>Waypoint is not possible for this step, look for it on your minimap| |Z|1015 0| |NPC|106583|

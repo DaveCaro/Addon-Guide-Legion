@@ -118,7 +118,7 @@ function Node:DoLinkage(n2)
 
 	-- NO pathfinding, only direct routes?
 	if n1.type=="start" and n2.type=="end" and Lib.extradata and Lib.extradata.direct then -- let's shoot ourselves in the foot! yeah!
-		n1:AddNeigh(n2,{mode="walk",cost=-9999999})
+		n1:AddNeigh(n2,{mode="walk",cost=Lib.COST_FORCED})
 		return true,true,"direct"
 	end
 

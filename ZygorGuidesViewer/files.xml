@@ -139,6 +139,8 @@
 	<Script file="Poi.lua"/>
 
 	<Script file="Libs/HBDragons.lua"/>
+
+	<Script file="Data/Gold/HourlyScan.lua" />
 	
 	<Script>
 	ZGV.loading_time_total = (debugprofilestop()-___ZGV_LOAD_TIME)

@@ -370,6 +370,7 @@ function Appraiser:StartManualScan()
 		table.insert(self.ScanItems,v)
 	end
 	Appraiser:UpdateScannedList()
+	Appraiser.manualScanNextItem=true
 end
 
 function Appraiser:StartNewItemScan()
@@ -391,16 +392,20 @@ function Appraiser:ScanNextItem()
 	if Appraiser.manualScanning then
 		if ZGVG.Scan:CanScanByName() and ZGVG.Scan.state=="SS_IDLE" then
 			local item = tremove(Appraiser.ScanItems)
+			local options=nil
 			if item then
 				Appraiser.pagenum = 0
 				Appraiser.manualScanningDone = Appraiser.manualScanningTotal - #Appraiser.ScanItems
 				Appraiser.manualScanningName = item.name
-				ZGVG.Scan:ScanByName(item.name,item.itemid)
+				if item.single_locked then options="forcePartial" end -- equipment and pets
+				Appraiser.manualScanNextItem=false
+				ZGVG.Scan:ScanByName(item.name,item.itemid,options)
 			else
 				Appraiser.manualScanning = false
 				Appraiser.manualScanningName = false
 				Appraiser.manualScanningTotal = false
 				Appraiser.manualScanningDone = false
+				Appraiser.manualScanNextItem=false
 			end
 		end
 		self:Update()
@@ -414,7 +419,8 @@ function Appraiser:ScanNextItem()
 				Appraiser.manualBuyScanning = item.name
 				Appraiser.ActiveSearch = item.itemid
 				Appraiser.ActiveSearchName = item.name
-				if item.sourcemode == 1 or item.sourcemode == 4 then options="forcePartial" end -- equipment and pets
+				if item.single_locked or item.sourcemode == 1 or item.sourcemode == 4 then options="forceFullname" end -- equipment and pets
+				Appraiser.manualScanNextItem=false
 				ZGVG.Scan:ScanByName(item.name,item.itemid,options)
 				item.updated = time()
 			else
@@ -423,9 +429,12 @@ function Appraiser:ScanNextItem()
 				Appraiser.manualBuyScanningDone = false
 				Appraiser.ActiveSearch = nil
 				Appraiser.ActiveSearchName = nil
+				Appraiser.manualScanNextItem=false
 			end
 		end
 		self:Update()
+	else
+		Appraiser.manualScanNextItem=false
 	end
 end
 
@@ -434,6 +443,7 @@ function Appraiser:AbortManualScan()
 	Appraiser.manualBuyScanning = false
 	Appraiser.ScanItems = {}
 	Appraiser.manualScanning = false
+	Appraiser.manualScanNextItem=false
 
 	Appraiser.MainFrame.progressFrame:SetPercent(0)
 	Appraiser.MainFrame.progressFrame:Hide()
@@ -477,7 +487,7 @@ function Appraiser:SearchForItem(item)
 		Appraiser.PendingScanTimer = nil
 		Appraiser.ScanIsRunning = true
 		BrowseName:SetText(item.name)
-		if item.sourcemode == 1 or item.sourcemode == 4 then options="forcePartial" end -- equipment and pets
+		if item.single_locked or item.sourcemode == 1 or item.sourcemode == 4 then options="forcePartial" end -- equipment and pets
 		local result = ZGVG.Scan:ScanByName(item.name,item.itemid,options)
 		item.updated = time()
 		return result
@@ -486,6 +496,26 @@ function Appraiser:SearchForItem(item)
 		if Appraiser.PendingScanTimer then ZGV:CancelTimer(Appraiser.PendingScanTimer) end
 		Appraiser.PendingScanTimer = ZGV:ScheduleTimer(function() 
 			Appraiser:SearchForItem(item,options)
+		end, 0.5)
+		return "delay"
+	end
+end
+
+function Appraiser:SearchForBuyItem(item)
+	local options = nil
+	if ZGVG.Scan:CanScanByName() then
+		Appraiser.PendingScanTimer = nil
+		Appraiser.ScanIsRunning = true
+		BrowseName:SetText(item.name)
+		if item.single_locked or item.sourcemode == 1 or item.sourcemode == 4 then options="forceFullname" end -- equipment and pets
+		local result = ZGVG.Scan:ScanByName(item.name,item.itemid,options)
+		item.updated = time()
+		return result
+	else
+		item.updated = time()
+		if Appraiser.PendingScanTimer then ZGV:CancelTimer(Appraiser.PendingScanTimer) end
+		Appraiser.PendingScanTimer = ZGV:ScheduleTimer(function() 
+			Appraiser:SearchForBuyItem(item,options)
 		end, 0.5)
 		return "delay"
 	end
@@ -599,7 +629,6 @@ local function Appraiser_SetTooltipData(tooltip, itemLink)
 
 		if ZGV.DEV then
 			tooltip:AddDoubleLine("  STATUSNAME:",statusName)
-			tooltip:AddDoubleLine("  ITEMID:",itemId)
 			tooltip:AddDoubleLine("  STAG:",(priceStatus.stagnant and "yes" or "no"))
 		end
 
@@ -752,6 +781,7 @@ function Appraiser.EventHandler(self, event, ...)
 				Appraiser:GetScannedItems()
 				ZGV.Gold.Scan.record_unique_links = false
 			end
+			Appraiser.manualScanNextItem=true
 		end
 
 
@@ -807,7 +837,7 @@ local function UpdateHandler(self, event)
 
 	Appraiser.MainFrame:SetFrameLevel(AuctionFrame:GetFrameLevel()+1)
 
-	if Appraiser.manualScanning or Appraiser.manualBuyScanning then 
+	if Appraiser.manualScanNextItem then 
 		Appraiser:ScanNextItem() 
 	end
 
@@ -918,7 +948,8 @@ local function UpdateHandler(self, event)
 
 	local canscan2,delay2 = ZGVG.Scan:CanScanFast()
 	if canscan2 and ZGV.Gold.Scan.state=="SS_IDLE" and not Appraiser.manualScanning then
-		buttonScan.tooltip = "Run a fast auction scan."
+		local scanwarning = ZGV.db.profile.quickscan and "\n"..ZGV.L["opt_quickscan_warning"] or ""
+		buttonScan.tooltip = "Run a fast auction scan."..scanwarning
 		buttonScan:SetText("|cFFFFFFFFScan")
 		buttonScan.soft_disabled=false
 	else
@@ -967,7 +998,7 @@ local function UpdateHandler(self, event)
 			buttonBuy:SetNormalBackdropColor(0.43,0.43,0.43,1)
 			buttonBuy:SetHighlightBackdropColor(0.53,0.53,0.53,1)
 			buttonBuy.soft_disabled=true
-			buttonBuy.tooltip = ("|cffff0000No recomended buyouts for selected item.")
+			buttonBuy.tooltip = ("|cffff0000No recomended buyouts for selected item.\n|rPlease select an auction to buy from the list above.")
 		elseif not Appraiser.RawDataTable[itemid] or Appraiser.WaitingForAuctionData then
 			buttonBuy:SetText("Buy")
 			buttonBuy:SetNormalBackdropColor(0.43,0.43,0.43,1)

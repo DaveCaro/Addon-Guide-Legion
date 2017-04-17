@@ -303,8 +303,9 @@ To begin you can ]]..LightBlue("Right-Click ")..GetRightMouse()..[[ on the ]]..G
             
         end
         , height = function()  
-            if DugisGuideViewer:UserSetting(DGV_ANCHOREDSMALLFRAME) then
-                
+            --One time I got lua error  "attempt to index field 'WatchBackground' (a nil value)"
+            --This condition is to prevent that error.
+            if DugisGuideViewer:UserSetting(DGV_ANCHOREDSMALLFRAME) and DugisGuideViewer.Modules.DugisWatchFrame.WatchBackground then
                 return DugisGuideViewer.Modules.DugisWatchFrame.WatchBackground:GetHeight()
             else
                 return DugisSmallFrame:GetHeight()

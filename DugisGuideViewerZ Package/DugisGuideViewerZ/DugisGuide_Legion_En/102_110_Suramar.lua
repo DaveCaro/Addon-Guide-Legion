@@ -141,7 +141,7 @@ R Garden |QID|40747.2| |N|Activate the Garden teleporter then step on the portal
 R Fountain |QID|40747.2| |N|Activate the Fountain teleporter then step on the portal in {Warpwind Cliffs} (55.80,39.43)| |Z|1033 0| |REACH|54.24,44.46|
 R Telemetry Lab |QID|40747.2| |N|Activate the Telemetry Lab teleporter then step on the portal in {Warpwind Cliffs} (54.32, 44.21)| |Z|1033 0| |REACH|53.07,36.80|
 N (item:132893) |QID|40747.2| |N|Collect (item:132893) <br/><b>You can reach this area from Workshop > Garden > Fountain > Telemetry Lab (51.91, 35.02)| |Z|1033 0|
-R Fountain |QID|40747.3|| |N|Activate the Fountain teleporter then step on the portal in {Warpwind Cliffs} (53.01,37.08)| |Z|1033 0| |REACH|54.24,44.46|
+R Fountain |QID|40747.3| |N|Activate the Fountain teleporter then step on the portal in {Warpwind Cliffs} (53.01,37.08)| |Z|1033 0| |REACH|54.24,44.46|
 R Garden |QID|40747.3| |N|Activate the Garden teleporter then step on the portal in {Oculeth's Workshop} (54.16,44.69)| |Z|1033 0| |REACH|55.79,39.73|
 R Warp Lab |QID|40747.3| |N|Activate the Garden teleporter then step on the portal in {Warpwind Cliffs} (55.82, 39.98)| |Z|1033 0| |REACH|52.13,45.12|
 N (item:132894) |QID|40747.3| |N|Collect the (item:132894) from the ground in {Warpwind Cliffs}<br/><b>You can reach this area by teleporting from the Fountain > Garden > Warp Lab (53.16, 46.79)| |Z|1033 0|
@@ -218,7 +218,7 @@ C Masquerade |QID|42079| |N|Use the (item:136970) on (npc:106418) in {Lunastre E
 T Masquerade |QID|42079| |N|(npc:105342) in {Lunastre Estate} (43.38, 78.72)| |Z|1033 0| |NPC|105342|
 A First Contact |QID|42147| |N|(npc:105342) in {Lunastre Estate} (43.38, 78.72)| |Z|1033 0| |NPC|105342|
 
-N (spell:202477) |QID|42147| |N|Use the (spell:202477) ability to disguise yourself| |BUFF|Interface\Icons\INV_Helm_Mask_FittedAlpha_B_01_Nightborne_02|
+N (spell:202477) |QID|42147| |N|Use the (spell:202477) ability to disguise yourself| |BUFF|1354190|
 C First Contact |QID|42147| |N|Speak with (npc:106495) in {The Grand Promenade} (42.81, 60.24)| |Z|1033 0| |NPC|106495|
 A Sanctum of Order Teleporter Online! |QID|43813| |N|Unpowered Telemancy Beacon in {Sanctum of Order}, use the teleporter to get to the lower floor (42.75,61.80) (43.41,62.36) (44.59,62.12) (43.71,62.24) (43.41,60.56)| |Z|1033 0|
 T Sanctum of Order Teleporter Online! |QID|43813| |N|Unpowered Telemancy Beacon in {Sanctum of Order}<br/><b>You will need 100 (cur:1155) (43.41,60.56)| |Z|1033 0|
@@ -409,7 +409,7 @@ C Overwhelming Distraction |QID|40971.1| |N|Use the (item:133999) to overcharge 
 K (npc:102575) |QID|40970.1| |N|Kill (npc:102575) in {Starweaver's Sanctum} (28.73,12.64)| |Z|1033 0| |NPC|102575|
 N (item:133924) |QID|40970.2| |N|Collect (item:133924) in {Starweaver's Sanctum} (28.73,12.64)| |Z|1033 0|
 
-R Moonfall Overlook |QID|43808| |QID|43808||N|Travel to {Moonfall Overlook} (28.59,14.36) (27.91,13.22) (28.20,11.69) (30.10,10.40)| |Z|1033 0|
+R Moonfall Overlook |QID|43808| |QID|43808| |N|Travel to {Moonfall Overlook} (28.59,14.36) (27.91,13.22) (28.20,11.69) (30.10,10.40)| |Z|1033 0|
 T The Orchestrator of Our Demise |QID|40970| |N|(npc:103129) in {Starweaver's Sanctum} (30.10,10.40)| |Z|1033 0| |NPC|103129|
 T Overwhelming Distraction |QID|40971| |N|(npc:103129) in {Starweaver's Sanctum} (30.10,10.40)| |Z|1033 0| |NPC|103129|
 A Moon Guard Teleporter Online! |QID|43808| |N|Unpowered Telemancy Beacon in {Moonfall Overlook} (30.82,11.03)| |Z|1033 0|
@@ -597,7 +597,7 @@ N Willbreaker Incubators |QID|41499.1| |N|Destroy 5 Willbreaker Incubators in {S
 C Shatter the Sashj'tar |QID|41001| |N|Kill any 12 Sashj'tar Naga in {Sashj'tar Ruins} (81.64,60.98)| |Z|1033 0| |NPC|100998, 100999, 102913|
 
 R Jandvik |TID|40336| |N|Travel to {Jandvik} (72.62,53.12) (70.60,49.16)| |Z|1033 0|
-T Shatter the Sashj'tar |QID|41001||N|(npc:102845) in {Jandvik} (70.60,49.16)| |Z|1033 0| |NPC|102845|
+T Shatter the Sashj'tar |QID|41001| |N|(npc:102845) in {Jandvik} (70.60,49.16)| |Z|1033 0| |NPC|102845|
 T Squid Out of Water |QID|41499| |N|(npc:102845) in {Jandvik} (70.60,49.16)| |Z|1033 0| |NPC|102845|
 T Turning the Tidemistress |QID|40336| |N|(npc:102410) in {Jandvik} (70.68,48.79)| |Z|1033 0| |NPC|102410| 
 
@@ -860,7 +860,7 @@ C Bad Apples |QID|41107| |N|Collect 8 (item:134014) from the blue plants around 
 C Blast of Spice Fish |QID|41256| |N|Kill (npc:105014) and collect 4 (item:134549) in {Meredil} (37.48, 56.62)| |Z|1033 0| |NPC|105014|
 N (cur:1155) |QID|42840| |N|Collect at least 800 (cur:1155) now while you're outside {Suramar City} you will need this for the quest (qid:42840)| |CUR|1155 800|
 
-R The Grand Promenade |QID|41258||N|Travel to {The Grand Promenade} (47.27, 56.44)| |Z|1033 0|
+R The Grand Promenade |QID|41258| |N|Travel to {The Grand Promenade} (47.27, 56.44)| |Z|1033 0|
 T Blast of Spice Fish |QID|41256| |N|(npc:103131), in {The Grand Promenade} (47.27, 56.44)| |Z|1033 0| |NPC|103131|
 T Bad Apples |QID|41107| |N|(npc:103131), in {The Grand Promenade} (47.27, 56.44)| |Z|1033 0| |NPC|103131|
 A Fruit of the Doom |QID|41258| |N|(npc:103131), in {The Grand Promenade} (47.27, 56.44)| |Z|1033 0| |NPC|103131|
@@ -1031,7 +1031,7 @@ C Silence in the City |QID|38649| |N|Speak to (npc:98548) in {Shal'Aran} (36.61,
 T Silence in the City |QID|38649| |N|(npc:98548) in {Shal'Aran} (36.61, 45.10)| |Z|1033 0| |NPC|98548| |PRE|43502|
 A Crackdown |QID|38695| |N|(npc:98548) in {Shal'Aran} (36.61, 45.10)| |Z|1033 0| |NPC|98548| |PRE|43502|
 C Crackdown |QID|38695.1| |N|Allow (npc:98548) to teleport you in {Shal'Aran} (36.49, 44.75)| |Z|1033 0| |NPC|98548| |PRE|43502|
-N (spell:202477) |QID|38695| |N|Use the (spell:202477) ability to disguise yourself| |BUFF|Interface\Icons\INV_Helm_Mask_FittedAlpha_B_01_Nightborne_02| |PRE|43502|
+N (spell:202477) |QID|38695| |N|Use the (spell:202477) ability to disguise yourself| |BUFF|1354190| |PRE|43502|
 C Crackdown |QID|38695.2| |N|Click on the Broken Telemancy Beacon| |Z|1033 0| |NPC|98548| |PRE|43502| |POI|
 C Crackdown |QID|38695.3| |N|Search the {Waning Crescent}| |Z|1033 0| |NPC|98548| |PRE|43502| |POI|
 C Crackdown |QID|38695.4| |N|Reunite with (npc:107997) in {The Waning Crescent}| |Z|1033 0| |NPC|107997| |PRE|43502| |POI|
@@ -1065,7 +1065,7 @@ R Evermoon Terrace |TID|44722| |N|Use the portal to travel to {Evermoon Terrace}
 T Disillusioned Defector |QID|44722| |N|(npc:107997) in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|107997| |PRE|44955|
 A Missing Persons |QID|44724| |N|(npc:107997) in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|107997| |PRE|44955|
 A More Like Me |QID|44723| |N|(npc:116256) in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|116256| |PRE|44955|
-N (spell:202477) |QID|44724| |N|Use the (spell:202477) ability to disguise yourself| |BUFF|Interface\Icons\INV_Helm_Mask_FittedAlpha_B_01_Nightborne_02| |PRE|44955|
+N (spell:202477) |QID|44724| |N|Use the (spell:202477) ability to disguise yourself| |BUFF|1354190| |PRE|44955|
 C More Like Me |QID|44723| |N|Use the (item:142065) on (npc:114958) to identify 5 Deserters. in {Evermoon Terrace} (52.05,79.15)| |Z|1033 0| |NPC|114958| |PRE|44955| |U|142065| |POI|
 C Missing Persons |QID|44724| |N|Kill demons in {Astravar Harbor} until you collect (item:142066)| |Z|1033 0| |NPC|107997| |PRE|44955| |POI|
 

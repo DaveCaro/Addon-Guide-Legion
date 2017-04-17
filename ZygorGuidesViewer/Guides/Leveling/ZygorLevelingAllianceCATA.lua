@@ -34762,7 +34762,7 @@ step
 Congratulations, you have _earned_ the _Loremaster of Eastern Kingdoms_ achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\The Loremaster\\Loremaster of Kalimdor",{
-condition_end="achieved(7520)",
+condition_end="achieved(1678)",
 description="Complete all the storyline achievements in all the zones of the game.",
 },[[
 step

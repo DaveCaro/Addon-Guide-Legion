@@ -1386,6 +1386,7 @@ Foglight.data = {
     {'Interface\\WorldMap\\BoreanTundra\\ValianceKeep',259,302,457,264},
     {'Interface\\WorldMap\\BoreanTundra\\TheGeyserFields',375,342,480,0},
     {'Interface\\WorldMap\\BoreanTundra\\TheDensOfDying',203,209,662,11},
+    {'Interface\\WorldMap\\BoreanTundra\\TorpsFarm',186,276,272,237},
     {'',0,0,0,0},
     {'',0,0,0,0},
     {'',0,0,0,0},
@@ -1818,6 +1819,7 @@ Foglight.data = {
   },
   ['IsleoftheThunderKing']={
     {'Interface\\WorldMap\\IsleoftheThunderKing\\HORDE',278,325,183,95},
+    {'Interface\\WorldMap\\IsleoftheThunderKing\\ALLIANCE',490,290,256,378},
   },
 -- Draenor
   ['FrostfireRidge']={
@@ -1838,6 +1840,7 @@ Foglight.data = {
 	{'Interface\\WorldMap\\FrostfireRidge\\IRONSIEGEWORKS',329,294,673,156},
 	{'Interface\\WorldMap\\FrostfireRidge\\STONEFANGOUTPOST',251,191,306,281},
 	{'Interface\\WorldMap\\FrostfireRidge\\GROMGAR',282,341,505,323},
+	{'Interface\\WorldMap\\FrostfireRidge\\SHIPYARD',267,257,336,327},
   },
   ['Gorgrond']={
 	{'Interface\\WorldMap\\Gorgrond\\EASTERNRUIN',210,193,525,260},
@@ -1955,6 +1958,8 @@ Foglight.data = {
     {'Interface\\WorldMap\\Highmountain\\THUNDERTOTEM',244,199,332,302},
     {'Interface\\WorldMap\\Highmountain\\TRUESHOTLODGE',172,204,249,236},
     {'Interface\\WorldMap\\Highmountain\\CAVEA',110,98,445,190},
+    {'Interface\\WorldMap\\Highmountain\\IRONHORNENCLAVE',288,258,452,410},
+    {'Interface\\WorldMap\\Highmountain\\NIGHTWATCHERSPERCH',344,295,0,244},
   },
   ['Stormheim']={
     {'Interface\\WorldMap\\Stormheim\\AGGRAMMARSVAULT',199,185,361,210},
@@ -1976,6 +1981,7 @@ Foglight.data = {
     {'Interface\\WorldMap\\Stormheim\\WEEPINGBLUFFS',386,314,56,185},
     {'Interface\\WorldMap\\Stormheim\\STORMSREACH',180,160,510,118},
     {'Interface\\WorldMap\\Stormheim\\QATCHMANSROCK',135,162,623,81},
+    {'Interface\\WorldMap\\Stormheim\\MAWOFNASHAL',509,251,17,0},
   },
   ['Suramar']={
     {'Interface\\WorldMap\\Suramar\\AMBERVALE',222,311,132,179},
@@ -2006,10 +2012,14 @@ Foglight.data = {
     {'Interface\\WorldMap\\Valsharah\\GLOAMINGREEF',239,301,136,274},
   },
   ['BrokenShore']={
-    {'Interface\\WorldMap\\BrokenShore\\THELOSTTEMPLE',337,289,613,126},
-    {'Interface\\WorldMap\\BrokenShore\\TOMBOFSARGERAS',414,281,373,0},
-    {'Interface\\WorldMap\\BrokenShore\\THEBLACKCITY',478,328,257,95},
-    {'Interface\\WorldMap\\BrokenShore\\BROKENSHORESOUTH',500,350,223,275}, -- guesstimate
+    {'Interface\\WorldMap\\BrokenShore\\THELOSTTEMPLE',308,244,632,169},
+    {'Interface\\WorldMap\\BrokenShore\\FELRAGESTRAND',332,276,596,100},
+    {'Interface\\WorldMap\\BrokenShore\\TOMBOFSARGERAS',312,301,500,0},
+    {'Interface\\WorldMap\\BrokenShore\\THEWEEPINGTERRACE',276,213,350,13},
+    {'Interface\\WorldMap\\BrokenShore\\BROKENVALLEY',338,322,254,84},
+    {'Interface\\WorldMap\\BrokenShore\\SOULRUIN',338,270,389,180},
+    {'Interface\\WorldMap\\BrokenShore\\DEADWOODLANDING',182,245,220,260},
+    {'Interface\\WorldMap\\BrokenShore\\DELIVERANCEPOINT',387,314,312,302},
   },
 
 }
@@ -2021,7 +2031,7 @@ function Foglight:Startup()
 end
 
 function Foglight:TurnOff()
-	if WorldMapFrame:IsShown() then WorldMapFrame_Update() end
+	if WorldMapFrame:IsShown() then  end
 end
 
 function Foglight:PlaceHooks()

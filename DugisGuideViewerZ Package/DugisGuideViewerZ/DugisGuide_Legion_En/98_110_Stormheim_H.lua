@@ -380,7 +380,7 @@ A Breaking the Bonespeakers |QID|38816| |N|(npc:93446) in the {Field of Fallen K
 
 R Haustvald |QID|38823| |N|Travel to {Haustvald} (69.77, 45.73)| |Z|1017 0|
 A The Runes that Bind |QID|38823| |N|Rune-Carved Tablet in {Haustvald} (69.77, 45.73)| |Z|1017 0|
-N As you go... |AYG|38823| |N||Collect 8 (item:124512) from the ground in {Haustvald}| |QID|38816| |Z|1017 0|
+N As you go... |AYG|38823| |N|Collect 8 (item:124512) from the ground in {Haustvald}| |QID|38816| |Z|1017 0|
 C The Runes that Bind |QID|38823| |N|Destroy the Ritual Stones in each waypoint to stop the rituals binding Ashildir's spirit in {Haustvald} (69.54, 42.02) (71.46, 45.12) (72.96, 43.93)| |Z|1017 0|
 C Regal Remains |QID|38817| |N|Collect 8 (item:124512) in {Haustvald} (72.93, 43.85)| |Z|1017 0|
 C Breaking the Bonespeakers |QID|38816| |N|Defeat 15 (npc:93071) or (npc:108940) in {Haustvald} (70.78, 42.21)| |Z|1017 0| |NPC|93071, 108940|

@@ -37,7 +37,7 @@ function PointerMap:UpdateSettings()
 		ZGV:CancelTimer(PointerMap.HideTimer)
 	end
 	if ZGV.db.profile.preview_duration>0 then
-		PointerMap.HideTimer = ZGV:ScheduleTimer(function() PointerMap:HidePreview() end, ZGV.db.profile.preview_duration) 
+		PointerMap.HideTimer = ZGV:ScheduleTimer(function() PointerMap:HidePreview("timer") end, ZGV.db.profile.preview_duration) 
 	end
 end
 

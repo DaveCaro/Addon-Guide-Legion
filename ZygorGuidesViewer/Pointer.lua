@@ -24,13 +24,16 @@ local HBDPins = ZGV.HBDPins
 local unusedMarkers = {}
 Pointer.unusedMarkers = unusedMarkers
 
-local last_distance=0
-local speed=0
-local last_speed=0
-
 local lastminimapdist=99999
 local minimapcontrol_suspension=0
 local minimap_lastset = 0
+
+local last_distance=0
+local last_speed=0
+local speeds={}
+local stoptime=0
+local avgspeed=0
+local eta_elapsed=0
 
 local cuedinged=nil
 
@@ -120,7 +123,7 @@ function Pointer:Startup()
 		:RegisterEvent("WORLD_MAP_UPDATE")
 		.__END
 
-	if ZGV.DEV then self.OverlayFrame.ZygorCoordsDEV = ZGV.ChainCall(WorldMapFrame.UIElementsFrame:CreateFontString(nil,"ARTWORK","GameFontHighlight")) :SetPoint("BOTTOMLEFT") :SetWidth(300) :SetJustifyH("LEFT") .__END  end
+	if ZGV.DEV and ZGV.db.profile.debug_pointer then self.OverlayFrame.ZygorCoordsDEV = ZGV.ChainCall(WorldMapFrame.UIElementsFrame:CreateFontString(nil,"ARTWORK","GameFontHighlight")) :SetPoint("BOTTOMLEFT") :SetWidth(300) :SetJustifyH("LEFT") .__END  end
 
 	--hooksecurefunc("WorldMapButton_OnClick",ZGV.Pointer.hook_WorldMapButton_OnClick)
 
@@ -325,19 +328,12 @@ end
 	persistent - don't hide when arrived at
 --]]
 
-local phasedBases={ }
-local phasedMaps = {
-	[606]=1, -- Mount Hyjal
-	[683]=1,
-	[737]=2, -- The Maelstrom
-	[751]=2,
-	[700]=3, -- Twilight Highlands
-	[770]=3,
-	[720]=4, -- Uldum
-	[748]=4,
-	--[697]=5, -- Zul'Gurub
-	--[793]=5,
-} -- TODO expand as per need
+local phasedBases={}
+local phasedMaps = {}
+-- grab pairs from LibRover
+for name,ids in pairs(LibRover.data.MapIDsByName) do
+	if type(ids)=="table" then for i,id in ipairs(ids) do phasedMaps[id]=name end end
+end
 setmetatable(phasedMaps,{__index=function(t,map) return map and type(map)=="number" and 10000+map or 0 end})
 for id,group in pairs(phasedMaps) do phasedBases[group]=phasedBases[group] or id end
 ZGV.Pointer.phasedMaps = phasedMaps
@@ -359,7 +355,7 @@ function Pointer:IsEnvironmentPhased(target_map)
 	--]]
 	local mm=ZGV.CurrentMapID
 	if mm then
-		return rawget(phasedMaps,mm) and phasedMaps[mm]>0 and phasedMaps[target_map]==phasedMaps[mm]
+		return rawget(phasedMaps,mm) and phasedMaps[target_map]==phasedMaps[mm]
 	end
 end
 
@@ -536,7 +532,7 @@ function Pointer:SetWaypoint (m,f,x,y,data,arrow)
 
 
 	waypoint:SetIcon(waypoint.icon)
-	if ZGV.DEV and waypoint.goal then
+	if ZGV.DEV and ZGV.db.profile.debug_pointer and waypoint.goal then
 		waypoint.frame_worldmap.label:SetText("   " .. (waypoint.goal and waypoint.goal.num..". " or "")  ..  waypoint:GetTitle()  ..  ("  %.1f,%.1f"):format(waypoint.x*100,waypoint.y*100))
 		waypoint.frame_worldmap.label:SetFont("Fonts\\ARIALN.TTF",5)
 	end
@@ -716,7 +712,7 @@ function Pointer:ShowArrow(waypoint)
 	self.ArrowFrame.WaitingPhase = nil
 
 	last_distance=0
-	speed=0
+	last_speed=0
 	lastbeeptime=GetTime()+3
 	cuedinged=nil
 
@@ -1709,21 +1705,12 @@ local oldangle = 0
 
 local title,disttxt,etatxt
 
-local speeds={}
-local stoptime=0
-local avgspeed=0
-
-local eta_elapsed=0
-local etadisp_elapsed=0
-
 local lastbeeptime=GetTime()
 local lastturntime=lastbeeptime
 local laststoptime=lastbeeptime
 local lastmovetime=lastbeeptime
 
 local msin,mcos,mabs=math.sin,math.cos,math.abs
-
-local eta
 
 function Pointer:GetDefaultStepDist()
 	return IsFlying("player") and 15 or 5
@@ -1930,8 +1917,139 @@ local noskip_time=0
 
 local idle_dots = {".","..","...","....","....."}
 
+local ptn_elapsed=0
+function Pointer:PointToNextTimer(elapsed)
+	ptn_elapsed = ptn_elapsed + elapsed  -- upval
+	if ptn_elapsed < 0.2 then  return  end  ---- OUT
+
+	local waypoint = self.ArrowFrame.waypoint
+
+	local pathfollow = waypoint.in_set and self.pointsets[waypoint.in_set].follow
+
+	-- Periodic "next in path" updates. Not all follow systems need those - namely, "strict" never does that. Find #00pathfollowing for details.
+	if (pathfollow=="smart" or pathfollow=="loose" or pathfollow=="smart2" or pathfollow=="smart3")
+	and waypoint.m==ZGV.CurrentMapID  -- Try to point-to-next only on current map..? desperate. ~sinus 2015-03-06 19:55 
+	then
+		ZGV:Debug("Pointing to next from PointToNextTimer")
+		local newway = self:PointToNextInPath(waypoint.in_set)
+		if newway~=waypoint and self.pointsets['route'] then LibRover:Abort("nextinpath") self:ClearSet("route") end
+	end
+
+	ptn_elapsed=0
+end
+
+local speedtable_limit,speedtable_minlimit=30,5
+function Pointer:CalculateSpeed(elapsed,dist)
+	local speed = (last_distance-dist) / elapsed
+	if last_distance == 0 then speed = 0 end
+	if last_distance==dist then stoptime=stoptime+elapsed else stoptime=0 end
+
+	--speed=tonumber(("%.2f"):format(speed))
+	--ZGV:Print(("dist %.2f  chg %.2f  speed %.2f  thr %.2f"):format(dist,last_distance-dist,speed,eta_elapsed))
+	--ZGV:Debug(stoptime)
+
+	if speed>=0 and stoptime<2 then
+		table.insert(speeds,1,speed)
+		if #speeds>speedtable_limit then table.remove(speeds) end
+	else
+		speed=0
+		wipe(speeds)
+	end
+
+	-- Speed meter. Perhaps one day.
+	--[[
+		ZGV.db.profile.arrowshowspeed = true
+		if ZGV.db.profile.arrowshowspeed then
+			local spd
+			if ZGV.db.profile.arrowmeters then
+				spd=("%.02f km/h"):format(speed) --*3.6
+			else
+				spd=("%.02f mph"):format(speed) --*2.0454
+			end
+			print(spd)
+			self.eta:SetText(spd)
+		end
+	--]]
+	--ZGV:Print(eta_elapsed)
+
+	last_speed = speed
+
+	return speed
+end
+
+local lastplayerangle
+function Pointer:DoAudioCues(targetangle,playerangle,dist)
+	local t=GetTime()
+	if lastplayerangle~=playerangle then lastturntime=t end
+	if GetUnitSpeed("player")==0 then laststoptime=t else lastmovetime=t end
+	if t-lastmovetime<=1 and t-laststoptime>3 and t-lastturntime>5 then
+		-- if flying, basically.
+		-- and beelining for the last 3 seconds.
+
+		-- ZGV:Debug(("will cue; dist=%d initial=%d lastbeep=%d"):format(dist,initialdist,GetTime()-lastbeeptime))
+		if dist<=100 and not cuedinged then
+			PlaySoundFile("Sound\\Doodad\\BoatDockedWarning.wav")
+			-- lastwayding=waypoint  -- DO NOT COMPARE WAYPOINTS. They come from a POOL and are REUSED!
+			cuedinged=true
+			--ZGV:Debug("dinging")
+		else
+			--ZGV:Debug("not dinging, dist="..dist..", lastway="..(lastwayding and lastwayding.t or "nil"))
+		end
+		--ZGV:Debug("cuedinged "..tostring(cuedinged))
+
+		-- warning beeps
+		if self.ArrowFrame.arrow:IsVisible()  then
+			local perc = mabs(1-angle*0.3183)  -- 1/pi
+			if perc<=0.9 then
+				if t-lastbeeptime>2 then
+					--PlaySoundFile( [[Sound\Item\Weapons\Ethereal\Ethereal2H3.wav]] )
+					PlaySoundFile("Sound\\Interface\\RaidWarning.ogg")
+
+					if self.ArrowFrame.ShowWarning then self.ArrowFrame:ShowWarning() end
+
+					lastbeeptime=t
+				end
+			end
+		end
+	end
+	lastplayerangle=playerangle
+end
+
+local etacalc_elapsed=0
+local last_eta=0
+function Pointer:CalculateETA(speed,dist,elapsed)
+	etacalc_elapsed = etacalc_elapsed + elapsed
+	if etacalc_elapsed < 0.9 then  return last_eta end
+
+	local eta
+
+	local avg=speed or 0
+	for i=2,#speeds do avg=avg+speeds[i] end
+	avg=avg/max(#speeds,1)
+
+	--ZGV:Debug("eta: #speeds="..#speeds)
+	if #speeds>=speedtable_minlimit and avg>0 then
+		eta = math.abs(dist / avg)
+	else
+		local spd,mntspd,flyspd,swimspd = GetUnitSpeed("player")
+		spd = IsSwimming() and swimspd or (LibRover.maxspeedinzone[ZGV.CurrentMapID][1]*7) -- *7 is for recalc from multiplier to yds/s  -- or max(mntspd,flyspd)
+		eta = math.abs(dist / spd)
+	end
+	etacalc_elapsed = 0
+
+	last_eta = eta
+
+	return eta
+
+end
+
+
 local ARROW_FPS=1/30
 local arrow_elapse_sum=0
+
+local throttle=0
+local throttle_freq = 1/5--sec
+
 function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 	-- player in dungeon, but we are on combat lockdown
 	--if not GetPlayerFacing() then self:Hide() return end
@@ -1949,6 +2067,19 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 	-- NASTY. Replace master object, Indy Jones-style.
 	local ArrowFrame = self
 	self=Pointer
+
+
+	if LibRover.initializing and not LibRover.ready then
+		ArrowFrame:ShowText("Travel System is initializing...",nil,nil,("%d%%"):format((LibRover.init_progress or 0)*100))  -- idle_dots[LibRover.initframes%5+1]
+		Pointer:ShowWaiting(0)
+		return
+	end
+
+
+	if Pointer.tmp_taxis_assumed then  ArrowFrame:SetNotice(L['pointer_arrow_noflightdata'])
+	else  ArrowFrame:SetNotice()
+	end
+
 
 	local waypoint = ArrowFrame.waypoint
 	
@@ -2285,186 +2416,82 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 
 		-------------
 
-		--[[
-		local perc = mabs(1-angle*0.3183)  -- 1/pi  ;  0=target backwards, 1=target ahead
-		local t1,t2,t3,t4,t5 = 0.7,0.75,0.95,1.0
-		if perc<t1 then perc=0
-		elseif perc<t2 then perc=(t2-perc)/(t2-t1)*0.5
-		elseif perc<t3 then perc=0.5
-		elseif perc<t4 then perc=(t4-perc)/(t4-t3)*0.5 + 0.5
-		else perc=1.0 end
+		--[[ -- direction coloring
+			local perc = mabs(1-angle*0.3183)  -- 1/pi  ;  0=target backwards, 1=target ahead
+			local t1,t2,t3,t4,t5 = 0.7,0.75,0.95,1.0
+			if perc<t1 then perc=0
+			elseif perc<t2 then perc=(t2-perc)/(t2-t1)*0.5
+			elseif perc<t3 then perc=0.5
+			elseif perc<t4 then perc=(t4-perc)/(t4-t3)*0.5 + 0.5
+			else perc=1.0 end
 
-		ArrowFrame:ShowTraveling(elapsed,angle,dist)
+			ArrowFrame:ShowTraveling(elapsed,angle,dist)
 
-		local cell
+			local cell
 
-		local perc = math.abs((math.pi - math.abs(angle)) / math.pi)
+			local perc = math.abs((math.pi - math.abs(angle)) / math.pi)
 
-		local gr,gg,gb = unpack(TomTom.db.ZGV.db.profile.arrow.goodcolor)
-		local mr,mg,mb = unpack(TomTom.db.ZGV.db.profile.arrow.middlecolor)
-		local br,bg,bb = unpack(TomTom.db.ZGV.db.profile.arrow.badcolor)
-		local r,g,b = ColorGradient(perc, br, bg, bb, mr, mg, mb, gr, gg, gb)
-		arrow:SetVertexColor(r,g,b)
+			local gr,gg,gb = unpack(TomTom.db.ZGV.db.profile.arrow.goodcolor)
+			local mr,mg,mb = unpack(TomTom.db.ZGV.db.profile.arrow.middlecolor)
+			local br,bg,bb = unpack(TomTom.db.ZGV.db.profile.arrow.badcolor)
+			local r,g,b = ColorGradient(perc, br, bg, bb, mr, mg, mb, gr, gg, gb)
+			arrow:SetVertexColor(r,g,b)
 
-		cell = floor(angle / twopi * 108 + 0.5) % 108
-		local column = cell % 9
-		local row = floor(cell / 9)
+			cell = floor(angle / twopi * 108 + 0.5) % 108
+			local column = cell % 9
+			local row = floor(cell / 9)
 
-		local xstart = (column * 56) / 512
-		local ystart = (row * 42) / 512
-		local xend = ((column + 1) * 56) / 512
-		local yend = ((row + 1) * 42) / 512
-		arrow:SetTexCoord(xstart,xend,ystart,yend)
+			local xstart = (column * 56) / 512
+			local ystart = (row * 42) / 512
+			local xend = ((column + 1) * 56) / 512
+			local yend = ((row + 1) * 42) / 512
+			arrow:SetTexCoord(xstart,xend,ystart,yend)
 		--]]
 	end
 
+	local speed
 
-	-- labels
+	throttle = throttle+elapsed
+	if throttle>=throttle_freq then
 
-	--Pointer:Debug(("dist %.2f  chg %.2f  speed %.2f  ela %.2f"):format(dist,last_distance-dist,speed,eta_elapsed))
+		Pointer:PointToNextTimer(throttle)  -- what is this doing in an arrow display update!?
 
-	local limit,minlimit=30,5
+		--Pointer:Debug(("dist %.2f  chg %.2f  speed %.2f  ela %.2f"):format(dist,last_distance-dist,speed,eta_elapsed))
 
-	eta_elapsed = eta_elapsed + elapsed
-	if eta_elapsed >= 0.2 then
-
-		local pathfollow = waypoint.in_set and self.pointsets[waypoint.in_set].follow
-
-		-- Periodic "next in path" updates. Not all follow systems need those - namely, "strict" never does that. Find #00pathfollowing for details.
-		if (pathfollow=="smart" or pathfollow=="loose" or pathfollow=="smart2" or pathfollow=="smart3")
-		and waypoint.m==ZGV.CurrentMapID  -- Try to point-to-next only on current map..? desperate. ~sinus 2015-03-06 19:55 
-		then
-			ZGV:Debug("Pointing to next from OnUpdate_Common timer")
-			local newway = self:PointToNextInPath(waypoint.in_set)
-			if newway~=waypoint and self.pointsets['route'] then LibRover:Abort("nextinpath") self:ClearSet("route") end
-		end
-
-		speed = (last_distance-dist) / eta_elapsed
-		if last_distance == 0 then speed = 0 end
-		if last_distance==dist then stoptime=stoptime+eta_elapsed else stoptime=0 end
-
-		--speed=tonumber(("%.2f"):format(speed))
-		--ZGV:Print(("dist %.2f  chg %.2f  speed %.2f  thr %.2f"):format(dist,last_distance-dist,speed,eta_elapsed))
-
-
-		--ZGV:Debug(stoptime)
-
-		if speed>=0 and stoptime<2 then
-			table.insert(speeds,1,speed)
-			if #speeds>limit then table.remove(speeds) end
-		else
-			--if stoptime>=10 then
-			speed=0
-			wipe(speeds)
-			--end
-		end
-
-		-- Speed meter. Perhaps one day.
-		--[[
-		ZGV.db.profile.arrowshowspeed = true
-		if ZGV.db.profile.arrowshowspeed then
-			local spd
-			if ZGV.db.profile.arrowmeters then
-				spd=("%.02f km/h"):format(speed) --*3.6
-			else
-				spd=("%.02f mph"):format(speed) --*2.0454
-			end
-			print(spd)
-			self.eta:SetText(spd)
-		end
-		--]]
-		--ZGV:Print(eta_elapsed)
-
+		speed = Pointer:CalculateSpeed(throttle,dist)
 
 		if ZGV.db.profile.audiocues and IsFlying() then
-			local t=GetTime()
-			if lastplayerangle~=playerangle then lastturntime=t end
-			if GetUnitSpeed("player")==0 then laststoptime=t else lastmovetime=t end
-			if t-lastmovetime<=1 and t-laststoptime>3 and t-lastturntime>5 then
-				-- if flying, basically.
-				-- and beelining for the last 3 seconds.
-
-				-- ZGV:Debug(("will cue; dist=%d initial=%d lastbeep=%d"):format(dist,initialdist,GetTime()-lastbeeptime))
-				if dist<=100 and not cuedinged then
-					PlaySoundFile("Sound\\Doodad\\BoatDockedWarning.wav")
-					-- lastwayding=waypoint  -- DO NOT COMPARE WAYPOINTS. They come from a POOL and are REUSED!
-					cuedinged=true
-					--ZGV:Debug("dinging")
-				else
-					--ZGV:Debug("not dinging, dist="..dist..", lastway="..(lastwayding and lastwayding.t or "nil"))
-				end
-				--ZGV:Debug("cuedinged "..tostring(cuedinged))
-
-				-- warning beeps
-				if ArrowFrame.arrow:IsVisible()  then
-					local perc = mabs(1-angle*0.3183)  -- 1/pi
-					if perc<=0.9 then
-						if t-lastbeeptime>2 then
-							--PlaySoundFile( [[Sound\Item\Weapons\Ethereal\Ethereal2H3.wav]] )
-							PlaySoundFile( [[Sound\Interface\RaidWarning.ogg]] )
-
-							if ArrowFrame.ShowWarning then ArrowFrame:ShowWarning() end
-
-							lastbeeptime=t
-						end
-					end
-				end
-			end
-			lastplayerangle=playerangle
+			Pointer:DoAudioCues(angle,playerangle,dist)
 		end
-
-
-
+	
 		last_distance = dist
-		eta_elapsed = 0
+		throttle = 0
 	end
 
 	--ZGV:Print(table.concat(speeds,"  "))
 
-	etadisp_elapsed = etadisp_elapsed + elapsed
-	if etadisp_elapsed >= 0.9 then
-
-		local avg=speed
-		for i=2,#speeds do avg=avg+speeds[i] end
-		avg=avg/max(#speeds,1)
-
-		--ZGV:Debug("eta: #speeds="..#speeds)
-		if #speeds>=minlimit and avg>0 then
-			eta = math.abs(dist / avg)
-		else
-			local spd,mntspd,flyspd,swimspd = GetUnitSpeed("player")
-			spd = IsSwimming() and swimspd or (LibRover.maxspeedinzone[ZGV.CurrentMapID][1]*7) -- *7 is for recalc from multiplier to yds/s  -- or max(mntspd,flyspd)
-			eta = math.abs(dist / spd)
-		end
-		etadisp_elapsed = 0
-	end
+	local eta = Pointer:CalculateETA(speed,dist,elapsed)
 
 	-- Grab current goal text, if it exists
 	local step = ZGV.CurrentGuide and ZGV.CurrentGuide:GetCurStep()
 	local goaltext = nil
 
 	--[[
-	local goaltext
-	if step and waypoint then
-		if waypoint.in_set and not waypoint.surrogate_for then
-			goaltext = waypoint.title
-		elseif waypoint.surrogate_for then
-			if waypoint.surrogate_for.num then
-				goaltext = step.goals[waypoint.surrogate_for.num]:GetText()
-			else
-				goaltext = waypoint.surrogate_for.text
+		local goaltext
+		if step and waypoint then
+			if waypoint.in_set and not waypoint.surrogate_for then
+				goaltext = waypoint.title
+			elseif waypoint.surrogate_for then
+				if waypoint.surrogate_for.num then
+					goaltext = step.goals[waypoint.surrogate_for.num]:GetText()
+				else
+					goaltext = waypoint.surrogate_for.text
+				end
+			elseif waypoint.num and step.goals[waypoint.num] then -- not in set, not surrogate
+				goaltext = step.goals[waypoint.num]:GetText()
 			end
-		elseif waypoint.num and step.goals[waypoint.num] then -- not in set, not surrogate
-			goaltext = step.goals[waypoint.num]:GetText()
 		end
-	end
 	--]]
-
-	if LibRover.initializing and not LibRover.ready then
-		ArrowFrame:ShowText("Travel System is initializing...",nil,nil,("%d%%"):format((LibRover.init_progress or 0)*100))  -- idle_dots[LibRover.initframes%5+1]
-		Pointer:ShowWaiting(0)
-		return
-	end
 
 	local text = override_text or waypoint:GetArrowTitle() or waypoint:GetTitle() or waypoint.arrowtitle or waypoint.title
 
@@ -2475,9 +2502,13 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 			waypoint.noskip and ", noskip" or "",
 			waypoint.pathnode and ", node#"..waypoint.pathnode.num or "",
 			waypoint.goal and ", goal#"..waypoint.goal.num or "",
-			(self.DestinationWaypoint and self.DestinationWaypoint~=waypoint and ("\nTo: ".. self.DestinationWaypoint.title
+			(self.DestinationWaypoint and self.DestinationWaypoint~=waypoint and ("\nTo: ".. (self.DestinationWaypoint.title or "(untitled)")
 				.. (self.DestinationWaypoint.goal and self.DestinationWaypoint.goal.num and " (goal#".. self.DestinationWaypoint.goal.num..")" or "")) or "")
 			)
+	end
+
+	if waypoint.errortext then
+		errortxt = (errortxt and errortxt.."\n" or "").."|cffff4400"..waypoint.errortext.."|r"
 	end
 
 	if ZGV.db.char.fakeinstance or not GetPlayerFacing() then
@@ -2503,6 +2534,7 @@ end
 
 function Pointer.ArrowFrame_Proto_GetFarText(self)
 	local way = self.waypoint
+	if not way then return end
 	local m = way.m or 0
 
 	local lastm = HBD:GetPlayerZone()
@@ -3906,6 +3938,8 @@ local function move_point_to_global(point)
 	--if Astrolabe.WorldMapSize[point.map].system==466 then mastermap=466 end  -- outland, do NOT translate onto Azeroth
 	--if Astrolabe.WorldMapSize[point.map].system==640 then mastermap=640 end  -- deepholm, do NOT translate onto Azeroth
 	--if point.c==-1 then mastermap=Astrolabe.WorldMapSize[point.map].system end  -- instances, do NOT translate onto Azeroth
+	--print("a",m,mastermap,point.f,masterfloor,point.type)
+
 	if m~=mastermap or point.f~=masterfloor then
 		point.gx,point.gy = HBD:TranslateZoneCoordinates(point.x, point.y, m, point.f, mastermap, masterfloor)
 	end
@@ -3915,6 +3949,8 @@ local function move_point_to_global(point)
 		point.gm,point.gf=point.m,point.f
 		point.gx,point.gy=point.x,point.y
 	end
+
+	--print("b",m,mastermap,point.f,masterfloor,point.type)
 end
 
 
@@ -4071,7 +4107,7 @@ function Pointer:ShowSet(waypath,name)
 		--globalize position! fill gm,gx,gy with world-global values. Otherwise ants can't travel over zone crossings.
 		for wpi,wp in ipairs(points) do
 			if not wp.gx and wp.m then  move_point_to_global(wp)  end
-			if (wpi%50==0) and Pointer.showset_timer then coroutine.yield() end
+			if (wpi%50==0) and Pointer.showset_timer and coroutine.running() then coroutine.yield() end
 		end
 
 		-- calculate path arrow angles
@@ -4101,7 +4137,7 @@ function Pointer:ShowSet(waypath,name)
 				icon=point.icon or self.Icons.greendot
 			end
 			point:SetIcon(icon)
-			if (k%50==0) and Pointer.showset_timer then coroutine.yield() end
+			if (k%50==0) and Pointer.showset_timer and coroutine.running() then coroutine.yield() end
 		end
 
 		-- Get all the other fields
@@ -4142,6 +4178,7 @@ local function PathFoundHandler(state,path,ext,reason)
 		Pointer:ClearSet("route")
 		local future_waypoints = {--[[follow="pathfind",--]]loop=false,ants="straight",coords={},follow="route"}
 
+		Pointer.tmp_taxis_assumed = false
 		local first=true
 		for i,node in ipairs(path) do
 			local icon
@@ -4163,6 +4200,9 @@ local function PathFoundHandler(state,path,ext,reason)
 					--start
 					wayp.radius = wayp.radius or 5
 					wayp.noskip = true
+				end
+				if node.known==nil then
+					Pointer.tmp_taxis_assumed = true
 				end
 			elseif node.type=="portal" then
 				if node.link.mode~="portal" then
@@ -4198,14 +4238,18 @@ local function PathFoundHandler(state,path,ext,reason)
 
 			-- OMG if it's the LAST waypoint in a travel path, point DIRECTLY, instead of at the placeholder.
 			if node.type=="end" then 
-				if ext.foundnpcs then
+				if ext.foundnpcs then  -- this is a result of searching for NPCs
 					for _,npcdata in pairs(ext.foundnpcs) do
 						if npcdata.m == node.m and npcdata.x == node.x and npcdata.y == node.y then
-							wayp.arrowtitle = "Talk to "..ZGV.Localizers:GetTranslatedNPC(tonumber(npcdata.id))
+							wayp.arrowtitle = ZGV.L['stepgoal_talk to']:format(ZGV.Localizers:GetTranslatedNPC(tonumber(npcdata.id)))
+							if node.learnfpath then wayp.arrowtitle = wayp.arrowtitle.."|n"
+									..("at the %s Flight Path"):format(node.name) .. "|n"
+									..("to update your Flight Map data") end
 							wayp.onminimap="always"
 							wayp.overworld=true
 							wayp.showonedge=true
 							wayp.icon=Pointer.Icons.graydot
+							wayp.type="manual"
 						end
 					end
 				end
@@ -4235,7 +4279,7 @@ local function PathFoundHandler(state,path,ext,reason)
 		reason = reason or "Destination unreachable."
 
 		if reason and ZGV.Pointer.DestinationWaypoint then
-			ZGV.Pointer.DestinationWaypoint.arrowtitle = reason
+			ZGV.Pointer.DestinationWaypoint.errortext = reason
 		end
 		Pointer:ShowArrow(ZGV.Pointer.DestinationWaypoint)
 

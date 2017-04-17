@@ -236,8 +236,8 @@ function Goldguide:CreateMainFrame()
 		:SetPoint("TOPLEFT",UIParent,"TOPLEFT",20,-100)
 		:SetFrameLevel(10)
 		:CanDrag(1)
-		:SetScript("OnEvent",Goldguide.EventHandler)
-		:SetScript("OnUpdate",Goldguide.UpdateHandler)
+		:SetScript("OnEvent",Goldguide.MainFrame_EventHandler)
+		:SetScript("OnUpdate",Goldguide.MainFrame_UpdateHandler)
 		.__END
 
 	local MF = self.MainFrame 
@@ -922,7 +922,7 @@ function Goldguide:UpdateSortingArrows()
 		if column.sortable then
 			frame.Entries["col_"..column.name].texture:SetTexture("")
 			frame.Entries["col_"..column.name]:SetText(string.gsub(frame.Entries["col_"..column.name]:GetText(),ARROW_SPACE,""))
-			frame.Entries["col_"..column.name].tooltip = "Click to sort by "..column.title:lower().." descending"
+			frame.Entries["col_"..column.name].tooltip = ZGV.L['gold_clicktosort_desc']:format(column.title:lower())
 		end
 		if column.name==sort_col then sort_col_data=column end
 	end
@@ -932,7 +932,7 @@ function Goldguide:UpdateSortingArrows()
 	local button = frame.Entries["col_"..sort_col]
 	if sort_dir == "desc" then
 		button.texture:SetTexture(ZGV.DIR.."\\Skins\\arrowdown")
-		button.tooltip = "Click to sort by ".. sort_col_data.title:lower().." ascending"
+		button.tooltip = ZGV.L['gold_clicktosort_asc']:format(sort_col_data.title:lower())
 	else
 		button.texture:SetTexture(ZGV.DIR.."\\Skins\\arrowup")
 	end

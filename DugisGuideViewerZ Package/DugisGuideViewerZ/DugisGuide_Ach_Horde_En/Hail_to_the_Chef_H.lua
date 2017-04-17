@@ -9,7 +9,7 @@ N Fishing |N|Grand Master Fishing is not required to complete this Achievement, 
 
 N Grand Master Cooking |N|You must have Grand Master Cooking first and foremost. Switch to the Cooking Profession guide and obtain Grand Master in cooking.| |AID|1563| |AC|1|
 
-N Cooking Dailies |N|Start doing the Daily cooking quests in both {Dalaran} and {Shattrath}. For the Shattrath dailies you are looking for 4 recipes. Take the Crate of Meat until you get (item:33875) and (item:33875). Then switch to the Barrel of fish for (item:33870) and (item:33869). <br>(item:33871) and (item:33925) have a chance to drop from all cooking dailies, so continue dailies in Shattrath until you have both of these. Tick this step.|
+N Cooking Dailies |N|Start doing the Daily cooking quests in both {Dalaran} and {Shattrath}. For the Shattrath dailies you are looking for 4 recipes. Take the Crate of Meat until you get (item:33875) and (item:33875). Then switch to the Barrel of fish for (item:33870) and (item:33869). <br/>(item:33871) and (item:33925) have a chance to drop from all cooking dailies, so continue dailies in Shattrath until you have both of these. Tick this step.|
 
 N (aid:1800) |N|Obtain and cook the following recipes. Make sure you sample all of your dishes.| |AID|1563| |AC|9|
 N Train Cooking Recipes |N|Visit (npc:19186) (76.5, 33.7) in {Shattrath City} and train (item:33052), (item:33053), and (item:33048).| |Z|481| |NPC|19186|

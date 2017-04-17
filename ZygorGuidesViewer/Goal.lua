@@ -1060,7 +1060,9 @@ GOALTYPES['use'] = {
 
 GOALTYPES['talk'] = {
 	parse = function(self,params)
-		self.npc,self.npcid = ParseID(params)
+		GOALTYPES['_item'].parse(self,params)
+		self.npc,self.npcid = self.target,self.targetid
+		self.target,self.targetid = nil,nil
 		if not self.npc and not self.npcid then return "no npc" end
 	end,
 }
@@ -1203,16 +1205,120 @@ GOALTYPES['outvehicle'] = {
 	end
 }
 
+local buff_textures = {
+	['interface\icons\ability_creature_cursed_02']=132094,
+	['interface\icons\ability_druid_ferociousbite']=132127,
+	['interface\icons\ability_hunter_pet_crab']=132186,
+	['interface\icons\ability_hunter_pet_dragonhawk']=132188,
+	['interface\icons\ability_hunter_pet_gorilla']=132189,
+	['interface\icons\ability_hunter_pet_silithid']=236195,
+	['interface\icons\ability_hunter_pet_tallstrider']=132198,
+	['interface\icons\ability_mage_invisibility']=132220,
+	['interface\icons\ability_mount_blackbattlestrider']=298587,
+	['interface\icons\ability_mount_kodo_03']=132245,
+	['interface\icons\ability_mount_ridinghorse']=132261,
+	['interface\icons\ability_priest_angelicfeather']=642580,
+	['interface\icons\ability_rogue_bloodyeye']=132284,
+	['interface\icons\ability_rogue_disguise']=132288,
+	['interface\icons\ability_vanish']=132331,
+	['interface\icons\ability_vehicle_electrocharge']=252174,
+	['interface\icons\ability_vehicle_playerloaded']=252180,
+	['interface\icons\ability_warlock_soulswap']=460857,
+	['interface\icons\ability_warrior_cleave']=132338,
+	['interface\icons\ability_warrior_intensifyrage']=236310,
+	['interface\icons\ability_whirlwind']=132369,
+	['interface\icons\achievement_boss_ladyvashj']=236422,
+	['interface\icons\achievement_character_orc_female']=236451,
+	['interface\icons\achievement_character_orc_male']=236452,
+	['interface\icons\achievement_character_troll_female']=236455,
+	['interface\icons\achievement_character_troll_male']=236456,
+	['interface\icons\achievement_dungeon_bastion of twilight_twilightascendantcouncil']=429378,
+	['interface\icons\achievement_halloween_ghost_01']=236548,
+	['interface\icons\achievement_reputation_ogre']=236695,
+	['interface\icons\inv_chest_leather_08']=132723,
+	['interface\icons\inv_chest_wolf']=132760,
+	['interface\icons\inv_drink_05']=132792,
+	['interface\icons\inv_fishing_lure_clam']=970845,
+	['interface\icons\inv_fishing_lure_donut']=970846,
+	['interface\icons\inv_fishing_lure_frogfish']=970847,
+	['interface\icons\inv_fishing_lure_jalapeno']=970848,
+	['interface\icons\inv_fishing_lure_kelp']=970849,
+	['interface\icons\inv_fishing_lure_sandcrab']=970850,
+	['interface\icons\inv_gauntlets_02']=132936,
+	['interface\icons\inv_gizmo_rocketboot_01']=133029,
+	['interface\icons\inv_hammer_32']=537060,
+	['interface\icons\inv_helm_mask_fittedalpha_b_01_nightborne_02']=1354190,
+	['interface\icons\inv_helm_plate_twilighthammer_c_01']=391130,
+	['interface\icons\inv_helmet_152']=340019,
+	['interface\icons\inv_helmet_29']=133131,
+	['interface\icons\inv_helmet_31']=133133,
+	['interface\icons\inv_helmet_47']=133149,
+	['interface\icons\inv_helmet_66']=133168,
+	['interface\icons\inv_jewelry_necklace_16']=133303,
+	['interface\icons\inv_jewelry_ring_03']=133345,
+	['interface\icons\inv_mask_01']=133564,
+	['interface\icons\inv_mask_02']=133565,
+	['interface\icons\inv_misc_bag_10_blue']=133641,
+	['interface\icons\inv_misc_bandana_01']=133693,
+	['interface\icons\inv_misc_birdbeck_01']=133707,
+	['interface\icons\inv_misc_book_17']=354719,
+	['interface\icons\inv_misc_cauldron_nature']=133781,
+	['interface\icons\inv_misc_drum_01']=133841,
+	['interface\icons\inv_misc_enggizmos_20']=133878,
+	['interface\icons\inv_misc_fish_04']=133890,
+	['interface\icons\inv_misc_food_54']=134010,
+	['interface\icons\inv_misc_head_quillboar_01']=134172,
+	['interface\icons\inv_misc_herb_05']=134185,
+	['interface\icons\inv_misc_herb_nightmarevine']=134218,
+	['interface\icons\inv_misc_leatherscrap_13']=134262,
+	['interface\icons\inv_misc_monsterscales_12']=134314,
+	['interface\icons\inv_misc_ogrepinata']=306868,
+	['interface\icons\inv_misc_organ_03']=134340,
+	['interface\icons\inv_misc_plant_03']=237426,
+	['interface\icons\inv_offhand_dalaran_d_01']=237433,
+	['interface\icons\inv_potion_101']=134723,
+	['interface\icons\inv_shoulder_leather_firelandsdruid_d_01']=514340,
+	['interface\icons\inv_weapon_rifle_05']=135614,
+	['interface\icons\spell_arcane_rune']=252267,
+	['interface\icons\spell_deathknight_pathoffrost']=237528,
+	['interface\icons\spell_fire_burnout']=135789,
+	['interface\icons\spell_fire_elementaldevastation']=135791,
+	['interface\icons\spell_frost_summonwaterelemental_2']=135862,
+	['interface\icons\spell_holiday_tow_spicecloud']=135867,
+	['interface\icons\spell_holy_spiritualguidence']=135977,
+	['interface\icons\spell_lightning_lightningbolt01']=135990,
+	['interface\icons\spell_mage_altertime']=609811,
+	['interface\icons\spell_magic_featherfall']=135992,
+	['interface\icons\spell_magic_lesserinvisibilty']=135994,
+	['interface\icons\spell_nature_elementalabsorption']=136027,
+	['interface\icons\spell_nature_elementalshields']=136030,
+	['interface\icons\spell_nature_protectionformnature']=136074,
+	['interface\icons\spell_shadow_detectinvisibility']=136152,
+	['interface\icons\spell_shadow_evileye']=136155,
+	['interface\icons\spell_shadow_impphaseshift']=136164,
+	['interface\icons\spell_shadow_nethercloak']=136177,
+	['interface\icons\spell_shadow_possession']=136183,
+	['interface\icons\spell_shadow_twilight']=136223,
+	['ability_rogue_masterofsubtlety']=132299,
+	['ability_seal']=132311,
+	['inv_crate_03']=132763,
+	['inv_misc_head_murloc_01']=134169,
+	['inv_misc_head_troll_01']=134177,
+	['spell_nature_sleep']=136090,
+	['spell_shadow_unholyfrenzy']=136224,
+}
+
 GOALTYPES['havebuff'] = {
 	parse = function(self,params)
 		self.buff = params
+		self.fileid = tonumber(self.buff) or buff_textures[self.buff]
 	end,
 	iscomplete = function(self)
 		for i=1,30 do
-			local name,_,tex = UnitBuff("player",i)
-			if name and (tex:find(self.buff) or name:find(self.buff)) then return true,true end
+			local name,_,fileid = UnitBuff("player",i)
+			if name and (self.fileid==fileid or name:find(self.buff)) then return true,true end
 			local name,_,tex = UnitDebuff("player",i)
-			if name and (tex:find(self.buff) or name:find(self.buff)) then return true,true end
+			if name and (self.fileid==fileid or name:find(self.buff)) then return true,true end
 		end
 		return false,true
 	end
@@ -1223,9 +1329,9 @@ GOALTYPES['nobuff'] = {
 	iscomplete = function(self)
 		for i=1,30 do
 			local name,_,tex = UnitBuff("player",i)
-			if name and (tex:find(self.buff) or name:find(self.buff)) then return false,true end
+			if name and (self.fileid==fileid or name:find(self.buff)) then return false,true end
 			local name,_,tex = UnitDebuff("player",i)
-			if name and (tex:find(self.buff) or name:find(self.buff)) then return false,true end
+			if name and (self.fileid==fileid or name:find(self.buff)) then return false,true end
 		end
 		return true,true
 	end
@@ -1237,7 +1343,9 @@ GOALTYPES['click'] = {
 
 GOALTYPES['clicknpc'] = {
 	parse = function(self,params)
-		self.npc,self.npcid = ParseID(params)
+		GOALTYPES['_item'].parse(self,params)
+		self.npc,self.npcid = self.target,self.targetid
+		self.target,self.targetid = nil,nil
 	end,
 }
 
@@ -2442,7 +2550,7 @@ function Goal:GetText(showcompleteness,brief,showtotals,nocolor)
 		text = (brief and "%s" or L["stepgoal_turn in".._done]):format(COLOR_QUEST((self.questpart and L['questtitle_part'] or L['questtitle']):format(self.quest and self.quest.title or Lretrydots(self),self.questpart)))
 
 	elseif self.action=='talk' then
-		text = (brief and "%s" or L["stepgoal_talk to".._done]):format(COLOR_NPC(ZGV.Localizers:GetTranslatedNPC(self.npcid)))
+		text = (brief and "%s" or L["stepgoal_talk to".._done]):format(COLOR_NPC(plural(ZGV.Localizers:GetTranslatedNPC(self.npcid),self.plural)))
 
 	elseif self.action=='kill' then
 		text = GenericText(brief,self.action,COLOR_MONSTER,remaining or self.count,self.target,not self.count or self.count==1,self.plural,_done)
@@ -2825,7 +2933,7 @@ function Goal:GetText(showcompleteness,brief,showtotals,nocolor)
 		text = GenericText(brief,self.action,COLOR_ITEM,remaining or self.count,self.target,true,self.plural,_done)
 
 	elseif self.action=='clicknpc' then
-		text = GenericText(brief,self.action,COLOR_ITEM,remaining or self.count,self.npc,true,self.plural,_done)
+		text = GenericText(brief,self.action,COLOR_ITEM,remaining or self.count,ZGV.Localizers:GetTranslatedNPC(self.npcid),true,self.plural,_done)
 
 	elseif self.action=='info' then
 		text = "|cffeeeecc"..(self.infoL or self.info).."|r"

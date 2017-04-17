@@ -282,22 +282,21 @@ function Loot:FindItemsToBuy()
 	end
 end
 
+function Loot:SetUpGreySellButton()
+	if self.greysellbutton then return end
+	self.greysellbutton = CHAIN(CreateFrame("Button", "ZygorGuidesViewerSellButton", MerchantFrame, "OptionsButtonTemplate"))
+		:SetPoint("TOPLEFT", 60, -30)
+		:SetText(L['loot_sellgreybutton'])
+		:SetScript("OnClick",Loot.SellGreyItems)
+	.__END
+end
+
 local function OnEvent(self,event)
 	if event=="BAG_UPDATE_DELAYED" and ZGV.db.profile.showgreyvalue and ZGV.db.profile.enable_vendor_tools then
 		Loot:GetGreyBagValue()
 	elseif event=="MERCHANT_SHOW" then
-		if ZGV.db.profile.showgreysellbutton then
-			if not Loot.greysell then
-				Loot.greysell = CHAIN(CreateFrame("Button", "ZygorGuidesViewerSellButton", MerchantFrame, "OptionsButtonTemplate"))
-					:SetPoint("TOPLEFT", 60, -30)
-					:SetText(L['loot_sellgreybutton'])
-					:SetScript("OnClick",Loot.SellGreyItems)
-				.__END
-			end
-			Loot.greysell:Show()
-		elseif Loot.greysell then 
-			Loot.greysell:Hide()
-		end
+		Loot:SetUpGreySellButton()
+		Loot.greysellbutton:SetShown(ZGV.db.profile.showgreysellbutton)
 
 		if ZGV.db.profile.autosell and ZGV.db.profile.enable_vendor_tools then Loot:SellGreyItems() end
 		if ZGV.db.profile.autosellother and ZGV.db.profile.enable_vendor_tools then Loot:SellUnusableItems() end

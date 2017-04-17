@@ -8178,8 +8178,8 @@ description="Unlock the attack on the Molten Front.",
 },[[
 step
 You will need to be able to do the Firelands dailies in order to earn this achievement.
-Click here if you need to do the prequests. |confirm
-Click here if you have completed the prequests. |next route |confirm
+Click here if you need to do the prequests |confirm
+Click here if you have completed the prequests |next route |confirm
 step
 #include "A_Firelands_PreQuests"
 step
@@ -8189,7 +8189,7 @@ Routing to proper section |next "Zygor's Alliance Dailies Guides\\Cataclysm (80 
 step
 label achieve
 This achievement requires that you do the Firelands Dailies and Quests in order to complete it.
-Please refer to Zygor's Dailies guide for more assistance with this achievement.
+Click here to load the "Firelands Dailies Guide" |confirm |next "Zygor's Alliance Dailies Guides\\Cataclysm (80 - 85)\\Mount Hyjal\\Firelands Dailies with Pre-Quests"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Quests\\Cataclysm\\Wildhammer Tour of Duty",{
 condition_end="achieved(5481)",

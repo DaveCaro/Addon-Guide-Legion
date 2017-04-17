@@ -1696,6 +1696,7 @@ function ZGV:Options_DefineOptionTables()
 					end
 				end, _default = true, descStyle="inline", })
 				AddOption('autoscan',{ type = 'toggle',_default=false,width="full",disabled=function() return not ZGV.db.profile.auction_enable end})
+				AddOption('quickscan',{ type = 'toggle',_default=false,width="double",disabled=function() return not ZGV.db.profile.auction_enable end})
 				AddOption('auction_autoshow_tab',{ type = 'toggle',_default=false,width="double",disabled=function() return not ZGV.db.profile.auction_enable end})
 				--[[hidden--]] AddOption('smartstack',{ type = 'toggle',_default=true, hidden=true,})
 
@@ -1920,9 +1921,18 @@ function ZGV:Options_DefineOptionTables()
 		--	AddOptionSep()
 		
 		AddOption('autoacceptturnin',{ type = 'toggle', _default=false, width="full", set=function(k,v) Setter_Simple(k,v) self.db.profile.autoaccept=v self.db.profile.autoturnin=v end})
+		AddOption('autoacceptturninall',{
+			name=function() return L['opt_autoacceptturninall'] end,
+			desc=function() return L['opt_autoacceptturninall_desc'] end,
+			type = 'toggle',
+			width="single",
+			disabled=function() return not self.db.profile.autoaccept end,
+			indent=20,
+		})
+		AddOptionSep()
 		--AddOption('autoturnin',{ type = 'toggle', name=L['opt_autoturnin'], _default=false, width="full" })
 
-			AddSubgroup('autoquest',{width='triple'})
+			--AddSubgroup('autoquest',{width='triple'})
 				--AddOption('autoaccept',{ type = 'toggle', name=function() return L['opt_autoaccept'] end, desc=function() return L['opt_autoaccept_desc'] end, })
 				--AddOption('autoturnin',{ type = 'toggle', name=function() return L['opt_autoturnin'] end, desc=function() return L['opt_autoturnin_desc'] end, })
 				--AddOptionSep()
@@ -1943,7 +1953,7 @@ function ZGV:Options_DefineOptionTables()
 				--]]
 				--AddOption('autoacceptshowobjective',{ type = 'toggle', width="full", disabled=function() return not self.db.profile.autoaccept end })
 				--AddOptionSep()
-			EndSubgroup()
+			--EndSubgroup()
 
 		--AddOption('autoselectitem',{ type = 'toggle', _default=false, disabled = function() return not (self.db.profile.autoturnin and self.db.profile.questitemselector) end, width="full"})
 		AddOption('autoselectitem',{ type = 'toggle', _default=false, width="full"})
@@ -1959,11 +1969,11 @@ function ZGV:Options_DefineOptionTables()
 		--[[hidden--]] AddOption('showgreyvalue',{type = 'toggle', width="full", set = function(i,v) Setter_Simple(i,v)  ZGV.Loot:ToggleFrame() end, disabled=function() return not ZGV.db.profile.enable_vendor_tools end, _default=false, hidden=true })
 		AddOption('autobuy',{ type = 'toggle',_default=true,width="full", disabled=function() return not ZGV.db.profile.enable_vendor_tools end})  -- Buy guide items
 		--[[hidden--]] AddOption('autobuyframe',{ type='toggle',indent=20,_default=true, width="full", disabled=function() return not (self.db.profile.autobuy and ZGV.db.profile.enable_vendor_tools) end, indent=15, width="double", hidden=true}) -- Confirm purchase
+		AddOption('showgreysellbutton',{ type = 'toggle',_default=true,width="full", set=function(i,v) Setter_Simple(i,v)  ZGV.Loot:SetUpGreySellButton()  ZGV.Loot.greysellbutton:SetShown(v) end, disabled=function() return not ZGV.db.profile.enable_vendor_tools end })  -- Show vendor button
 		AddOption('autosell',{ type = 'toggle', _default=false,width="full",disabled=function() return not ZGV.db.profile.enable_vendor_tools end})  -- Sell gray items
 		AddOption('autosellother',{ type = 'toggle', _default=false,width="full", disabled=function() return not ZGV.db.profile.enable_vendor_tools end}) -- Sell unusable items
 		--AddOption('confirm_selling',{ type = 'toggle',indent=20, _default=false,width="full", disabled=true}) -- Sell unusable items
 			
-		--[[hidden--]] AddOption('showgreysellbutton',{ type = 'toggle',_default=true,width="full", disabled=function() return not ZGV.db.profile.enable_vendor_tools end, hidden=true})  -- Show vendor button
 			
 		--[[hidden--]] AddOption('im_prefer_repair',{ type = 'toggle', width = "full", set = function(i,v) Setter_Simple(i,v)  self:UpdateLocking()  end, _default = true, descStyle="inline",disabled=function() return not ZGV.db.profile.enable_vendor_tools end, hidden=true }) -- Only find repair vendors
 
@@ -2071,6 +2081,10 @@ function ZGV:Options_DefineOptionTables()
 				--Spoo(nil, nil, self)
 				currentProfile = profile:GetProfiles()[value]
 				ZGV.db:SetProfile(currentProfile)
+				
+				ZGV.db.profile.gear_selected_class = select(3,UnitClass("player"))
+				ZGV.db.profile.gear_selected_spec = GetSpecialization() or 1
+
 				getProfilesWithoutCurrent()
 				Setter_Simple(index, value)
 				return value
@@ -2171,7 +2185,6 @@ function ZGV:Options_DefineOptionTables()
 					refreshProfiles()
 					return getCurrentProfileIndex()
 				end,})
-			sh_newprofile=newprofile
 		EndSubgroup()
 
 		AddSubgroup("__deleteprofile",{
@@ -2210,6 +2223,7 @@ function ZGV:Options_DefineOptionTables()
 		AddOption('',{ type = "description", name = L["about_desc2"], font=ZGV.font_dialog })
 		AddOption('',{ type = "description", name = L["about_desc3"], font=ZGV.font_dialog })
 		AddOption('',{ type = "description", name = L["about_desc4"]:format(self.version), font=ZGV.font_dialog })
+	AddOptionSpace()AddOption('',{ type = "description", name = "Be always up to date: |cffff8800getfirehawk.com", font=ZGV.font_dialog })
 		AddOptionSpace()
 		AddOption('',{ type = "description", name = L["tech_support_header"], font=ZGV.font_dialog_gray })
 		AddOption('',{ type = "description", name = L["tech_support"]:format(self.version), font=ZGV.font_dialog })
@@ -2544,6 +2558,8 @@ function ZGV:Options_DefineOptionTables()
 			--AddOption('npcdebugauto',{ name = "Automatically add current npcs to list", type="toggle", width = "full", })
 
 			AddOption('debug_beta',{ name = "Pretend this is Beta", type="toggle", width = "full", disabled=function() return ZGV.DIR:find("-BETA") end, get = function(i,v) if ZGV.DIR:find("-BETA") then return true else return Getter_Simple(i,v) end end })
+
+			AddOption('debug_pointer',{ name = "Show debug info on world map", type="toggle", width = "full", _default = true  })
 
 			
 			

@@ -313,7 +313,7 @@ function Auctions:IsValidChore()
 end
 
 function Auctions.dynamic_sort(a,b)
-	return Goldguide.dynamic_sort("auctions",a,b, ZGV.db.profile.goldsort['auctions'][1],ZGV.db.profile.goldsort['auctions'][2], "profit","asc", "perc","desc")
+	return Goldguide.dynamic_sort("auctions",a,b, ZGV.db.profile.goldsort['auctions'][1],ZGV.db.profile.goldsort['auctions'][2], "profit","asc", "perc","desc", "name","asc")
 end
 
 

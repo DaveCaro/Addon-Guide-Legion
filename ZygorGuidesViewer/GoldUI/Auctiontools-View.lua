@@ -30,7 +30,7 @@ local TAB_NAVIGATION_INVENTORY = {"stacksize", "stackcount", "bidgold", "bidsilv
 local TAB_NAVIGATION_SEARCH = {"searchname", "pricegold", "pricesilver", "pricecopper", "maxcount"}
 
 local SELL_INVENTORY_COLUMS = {
-	{ title="", width=15, headerwidth=15, titlej="LEFT", textj="LEFT", name="icon", type="icon", onentertooltip=function(row) if row.item.bag then GameTooltip:SetBagItem(row.item.bag,row.item.slot) else GameTooltip:SetItemByID(row.item.itemid) end end},
+	{ title="", width=15, headerwidth=15, titlej="LEFT", textj="LEFT", name="icon", type="icon", onentertooltip=function(row) Appraiser:ShowItemTooltip(row.item) end},
 	{ title="ITEM", width=190, titlej="LEFT", textj="LEFT", name="name" },
 	{ title="PRICE", width=100, titlej="RIGHT", textj="RIGHT", name="price" },
 	{ title="", width=15, titlej="CENTER", textj="CENTER", name="status", type="icon", onentertooltip=function(row) GameTooltip:AddLine( row.item.statusText ) end },
@@ -46,8 +46,7 @@ local SELL_INVENTORY_DATA = {
 }
 
 local SELL_AUCTIONS_COLUMNS = {
-	{ title="", width=15, headerwidth=15, titlej="LEFT", textj="LEFT", name="icon", type="icon", 
-		onentertooltip=function(row) if row.item.BattlePetName then GameTooltip:AddLine(row.item.BattlePetName) return end GameTooltip:SetHyperlink(row.item.itemlink) end},
+	{ title="", width=15, headerwidth=15, titlej="LEFT", textj="LEFT", name="icon", type="icon", onentertooltip=function(row) Appraiser:ShowItemTooltip(row.item) end},
 	{ title="STACK", width=180, titlej="LEFT", textj="LEFT", name="name" },
 	{ title="UNIT", width=100, titlej="RIGHT", textj="RIGHT", name="uprice" },
 	{ title="STACK", width=100, titlej="RIGHT", textj="RIGHT", name="sprice" },
@@ -63,7 +62,7 @@ local SELL_AUCTIONS_DATA = {
 }
 
 local BUY_INVENTORY_COLUMS = {
-	{ title="", width=15, headerwidth=15, titlej="LEFT", textj="LEFT", name="icon", type="icon", onentertooltip=function(row) if not row.item then return end if row.item.bag then GameTooltip:SetBagItem(row.item.bag,row.item.slot) else GameTooltip:SetItemByID(row.item.itemid) end end},
+	{ title="", width=15, headerwidth=15, titlej="LEFT", textj="LEFT", name="icon", type="icon", onentertooltip=function(row) Appraiser:ShowItemTooltip(row.item) end},
 	{ title="ITEM", width=170, titlej="LEFT", textj="LEFT", name="name" },
 	{ title="PRICE", width=120, titlej="RIGHT", textj="RIGHT", name="price" },
 	{ title="", width=15, titlej="CENTER", textj="CENTER", name="status", type="icon", onentertooltip=function(row) if not row.item then return end GameTooltip:AddLine( row.item.statusText ) end },
@@ -79,8 +78,7 @@ local BUY_INVENTORY_DATA = {
 }
 
 local BUY_AUCTIONS_COLUMNS = {
-	{ title="", width=15, headerwidth=15, titlej="LEFT", textj="LEFT", name="icon", type="icon", 
-		onentertooltip=function(row) if row.item.BattlePetName then GameTooltip:AddLine(row.item.BattlePetName) return end GameTooltip:SetHyperlink(row.item.itemlink) end},
+	{ title="", width=15, headerwidth=15, titlej="LEFT", textj="LEFT", name="icon", type="icon", onentertooltip=function(row) Appraiser:ShowItemTooltip(row.item) end},
 	{ title="SIZE", width=180, titlej="LEFT", textj="LEFT", name="name" },
 	{ title="UNIT", width=100, titlej="RIGHT", textj="RIGHT", name="uprice" },
 	{ title="STACK", width=100, titlej="RIGHT", textj="RIGHT", name="sprice" },
@@ -96,8 +94,7 @@ local BUY_AUCTIONS_DATA = {
 }
 
 local BUY_SEARCH_COLUMNS = {
-	{ title="", width=15, headerwidth=15, titlej="LEFT", textj="LEFT", name="icon", type="icon", 
-		onentertooltip=function(row) GameTooltip:SetHyperlink(row.item.itemlink) end},
+	{ title="", width=15, headerwidth=15, titlej="LEFT", textj="LEFT", name="icon", type="icon", onentertooltip=function(row) Appraiser:ShowItemTooltip(row.item) end},
 	{ title="ITEM NAME", width=375, titlej="LEFT", textj="LEFT", name="name" },
 	{ title="", width=12, titlej="RIGHT", textj="RIGHT", name="action", type="button", 
 		texture=ZGV.DIR.."\\Skins\\goldpricestatusicons", 
@@ -319,13 +316,13 @@ function Appraiser:MakeInventoryTable()
 		Appraiser.needToUpdate=true
 	end)
 
-	for n=1,SELL_INVENTORY_DATA.ROW_COUNT do
-		container.InventoryList.rows[n].status:SetTexture(ZGV.DIR.."\\Skins\\goldpricestatusicons")
-		container.InventoryList.rows[n]:SetScript("OnClick",function(self,button)
-			if button == "LeftButton" and container.InventoryList.rows[n].item then
-				Appraiser:ActivateSellItem(container.InventoryList.rows[n].item)
+	for _,row in pairs(container.InventoryList.rows) do
+		row.status:SetTexture(ZGV.DIR.."\\Skins\\goldpricestatusicons")
+		row:SetScript("OnClick",function(self,button)
+			if button == "LeftButton" and row.item then
+				Appraiser:ActivateSellItem(row.item)
 			elseif button == "RightButton" then
-				Appraiser:InventoryRowMenu(container.InventoryList.rows[n])
+				Appraiser:InventoryRowMenu(row)
 			end
 		end)
 	end
@@ -342,9 +339,9 @@ function Appraiser:MakeInventoryTable()
 		Appraiser.InventoryAuctionOffset=math.round(offset)
 		Appraiser.needToUpdate=true
 	end)
-	for n=1,SELL_AUCTIONS_DATA.ROW_COUNT do
-		container.InventoryAuctionList.rows[n]:SetScript("OnClick",function()
-			Appraiser:SetUndercutToAuction(container.InventoryAuctionList.rows[n])
+	for _,row in pairs(container.InventoryAuctionList.rows) do
+		row:SetScript("OnClick",function()
+			Appraiser:SetUndercutToAuction(row)
 		end)
 	end
 
@@ -424,12 +421,13 @@ function Appraiser:MakeInventoryTable()
 		:SetScript("OnEnter",function()
 			if Appraiser.ActiveSellingItem then
 				GameTooltip:SetOwner(container.activeIconOverlay,"ANCHOR_RIGHT")
-				GameTooltip:SetItemByID(Appraiser.ActiveSellingItem.itemid )
+				Appraiser:ShowItemTooltip(Appraiser.ActiveSellingItem)
 				GameTooltip:Show()
 			end
 		end)
 		:SetScript("OnLeave",function()
 			GameTooltip:Hide()
+			BattlePetTooltip:Hide()
 		end)
 	.__END	
 	container.activeName = CHAIN(container:CreateFontString())
@@ -812,14 +810,14 @@ function Appraiser:MakeBuyTable()
 		Appraiser.needToUpdate=true
 	end)
 
-	for n=1,BUY_INVENTORY_DATA.ROW_COUNT do
-		container.ShoppingList.rows[n].status:SetTexture(ZGV.DIR.."\\Skins\\goldpricestatusicons")
-		container.ShoppingList.rows[n]:SetScript("OnClick",function(self,button)
-			if container.ShoppingList.rows[n].item then
+	for _,row in pairs(container.ShoppingList.rows) do
+		row.status:SetTexture(ZGV.DIR.."\\Skins\\goldpricestatusicons")
+		row:SetScript("OnClick",function(self,button)
+			if row.item then
 				if button == "LeftButton" then
-					Appraiser:ActivateBuyItem(container.ShoppingList.rows[n].item)
+					Appraiser:ActivateBuyItem(row.item)
 				elseif button == "RightButton" then
-					Appraiser:ShoppingRowMenu(container.ShoppingList.rows[n])
+					Appraiser:ShoppingRowMenu(row)
 				end
 			end
 		end)
@@ -844,9 +842,9 @@ function Appraiser:MakeBuyTable()
 		Appraiser.ShoppingAuctionOffset=math.round(offset)
 		Appraiser.needToUpdate=true
 	end)
-	for n=1,BUY_AUCTIONS_DATA.ROW_COUNT do
-		container.ShoppingAuctionList.rows[n]:SetScript("OnClick",function()
-			Appraiser:SetBuyoutToAuction(container.ShoppingAuctionList.rows[n])
+	for _,row in pairs(container.ShoppingAuctionList.rows) do
+		row:SetScript("OnClick",function()
+			Appraiser:SetBuyoutToAuction(row)
 		end)
 	end
 
@@ -1195,12 +1193,12 @@ function Appraiser:MakeBuyTable()
 		Appraiser.SearchResultsOffset=math.round(offset)
 		Appraiser.needToUpdate=true
 	end)
-	for n=1,BUY_SEARCH_DATA.ROW_COUNT do
-		containerSearch.SearchResultList.rows[n].action:SetScript("OnClick",function()
-			Appraiser:SaveSearchItem(containerSearch.SearchResultList.rows[n].item)
+	for _,row in pairs(containerSearch.SearchResultList.rows) do
+		row.action:SetScript("OnClick",function()
+			Appraiser:SaveSearchItem(row.item)
 		end)
-		containerSearch.SearchResultList.rows[n]:SetScript("OnClick",function()
-			Appraiser:SaveSearchItem(containerSearch.SearchResultList.rows[n].item)
+		row:SetScript("OnClick",function()
+			Appraiser:SaveSearchItem(row.item)
 		end)
 	end
 
@@ -1256,6 +1254,30 @@ function Appraiser:MakeBuyTable()
 	container.containerSearch:Show()
 
 	return container
+end
+
+function Appraiser:ShowItemTooltip(item)
+	if not item then return end
+
+	local link = item.link or item.itemlink
+	local BattlePetId,BattlePetLevel,BattlePetRarity,BattlePetHP,BattlePetAtt,BattlePetSpeed,_,BattlePetName
+
+	if link then 
+		_,_,_,BattlePetId,BattlePetLevel,BattlePetRarity,BattlePetHP,BattlePetAtt,BattlePetSpeed,_,BattlePetName = string.find(link,"(.*)battlepet:(%d+):(%d+):(%d+):(%d+):(%d+):(%d+):(.*)%[(.*)%]")
+	end
+
+	if BattlePetId then -- battle pet
+		BattlePetToolTip_Show(tonumber(BattlePetId), tonumber(BattlePetLevel), tonumber(BattlePetRarity), tonumber(BattlePetHP), tonumber(BattlePetAtt), tonumber(BattlePetSpeed), BattlePetName) 
+		return 
+	else
+		if item.bag then 
+			GameTooltip:SetBagItem(item.bag,item.slot) 
+		elseif link then
+			GameTooltip:SetHyperlink(link)
+		else
+			GameTooltip:SetItemByID(item.itemid) 
+		end
+	end
 end
 
 function Appraiser:ActivateTab(tabname)

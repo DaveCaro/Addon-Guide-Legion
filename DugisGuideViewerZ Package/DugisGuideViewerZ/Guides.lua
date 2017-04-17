@@ -1474,17 +1474,13 @@ function Guides:Initialize()
 	
 	local function EvaluateBUFF(buff)
 		if buff then 
-			buff = string.lower(buff)
+			buff = tonumber(buff)
 		end
 		for i=1,10 do
-			local name,_,tex = UnitBuff("player",i)
-			if name then name = string.lower(name) end
-			if tex then tex = string.lower(tex) end
-			if name and (tex:find(buff) or name:find(buff)) then return true,true end
-			local name,_,tex = UnitDebuff("player",i)
-			if name then name = string.lower(name) end
-			if tex then tex = string.lower(tex) end			
-			if name and (tex:find(buff) or name:find(buff)) then return true,true end
+			local _,_,icon = UnitBuff("player",i)
+			if (icon and icon == buff) then return true end
+			local _,_,icon = UnitDebuff("player",i)
+			if (icon and icon == buff) then return true end
 		end
 	end		
 
@@ -2868,12 +2864,12 @@ function Guides:Initialize()
 		elseif hasprof and not DGV:HasProfession(hasprof) then
 			return true
 		elseif optional and inmap then 
-			return false							
+			return false
+		elseif optional and tidInlog then
+			return false										
 		elseif optional and not inlog then
 			--DebugPrint("SKIP: optional and not in log.")
-			return true	
-		elseif optional and tidInlog then
-			return false			
+			return true				
 		--elseif optional and ((action =="A" and useitem and not haveuse) or (lootitem and not haveloot)) then
 		elseif optional and (action =="A" and useitem and not haveuse) then
 			--DebugPrint("SKIP: not enough loot or no use item")
@@ -2900,6 +2896,9 @@ function Guides:Initialize()
 
 	function DGV:CheckForLocation(indx) 
 		--R - Run, F - Fly, b - Boat, H - use hearth
+		if not DGV.actions then
+		    return 
+		end
 		local action = DGV.actions[indx]
 		local guideIndex
 		if DGV:ReturnTag("AYG", DGU.CurrentQuestIndex) then
@@ -4549,6 +4548,34 @@ function Guides:Initialize()
 		end
 		return false
 	end
+    
+    local function ReplaceCoordinates(qDesc)
+        return string.gsub(qDesc, "%(([%d.]+),%s?([%d.]+)%)%s*", "")
+    end
+    
+    function DGV:RefreshReplacedTags()
+        if not DGV.actions then
+            return
+        end
+        
+        for i = 1 , #DGV.actions do 
+            local dgvRowName = "DGVRow"..i
+            local rowObj 	= _G[dgvRowName]
+            if rowObj ~= nil then
+                local qDesc = DGV.quests2[i]
+                if DGV.NPCJournalFrame then 
+                    qDesc = NPCJournalFrame:ReplaceSpecialTags(qDesc, true, i)
+                end
+                DGV.quests2[i] = qDesc
+                
+                if qDesc and not DugisGuideViewer:GetDB(DGV_DISPLAYCOORDINATES) then
+                    qDesc = ReplaceCoordinates(qDesc)
+                end
+                
+                rowObj.Desc:SetText(qDesc)
+            end
+        end
+    end
 
 	--Fill screen with 3 items: Objective type (actions), Quest name, Note Tag (actions, quests, tags)
 	function DGV:PopulateObjectives(title, SearchMode, threading)
@@ -4601,7 +4628,7 @@ function Guides:Initialize()
 				DGV.quests2[i] = qDesc
 				
 				if qDesc and not DugisGuideViewer:GetDB(DGV_DISPLAYCOORDINATES) then
-					qDesc = string.gsub(qDesc, "%(([%d.]+),%s?([%d.]+)%)%s*", "")
+					qDesc = ReplaceCoordinates(qDesc)
 				end
 				
 				-- set optimization fields
@@ -5743,7 +5770,7 @@ function Guides:Initialize()
                 or (buff and EvaluateBUFF(buff)) then  												
 					if not visualRows[guideIndex].Chk:GetChecked() then 
                    
-                       indicesToComplete[guideIndex] = qid
+                       indicesToComplete[guideIndex] = qid or 1
 					   setChecked = true
 
 					end 
@@ -5752,7 +5779,7 @@ function Guides:Initialize()
 			end
             
             LuaUtils:foreach(indicesToComplete, function(qid, guideIndex)
-                if not qid then
+                if not qid or qid == 1 then
                     DGV:SetChkToComplete(guideIndex)
                 else
                     if QuestUtils_IsQuestWorldQuest(qid) then
