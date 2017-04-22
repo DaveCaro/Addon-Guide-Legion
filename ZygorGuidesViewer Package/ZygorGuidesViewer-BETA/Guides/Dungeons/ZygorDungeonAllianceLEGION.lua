@@ -3981,24 +3981,24 @@ confirm
 step
 kill Skorpyron##102263 |goto 32.0,61.2
 _EVERYONE:_ |grouprole EVERYONE
-|tip Be sure to be in the inner circle of this boss room, never go into the outer circle. |grouprole EVERYONE
-|tip He will cast a spell called Shockwave when reaching full energy this will knock all players back into the wall if they are not protected by a Crystalline Fragment. |grouprole EVERYONE
+|tip Be sure to be in the inner circle of this boss room, and never go into the outer circle. |grouprole EVERYONE
+|tip He will cast a spell called Shockwave when reaching full energy which will knock all players back into the wall if they are not protected by a Crystalline Fragment. |grouprole EVERYONE
 |tip Crystalline Fragments will come off the boss after he takes a certain amount of damage. |grouprole EVERYONE
-|tip He will also periodically cast a spell called Focus Blast, this will target a random player and start casting, at the end it will release a cone that will deal damage and stun any player in this. |grouprole EVERYONE
+|tip He will also periodically cast a spell called Focus Blast, which will target a random player and start casting on them. It will release a cone that will deal damage and stun any player within it. |grouprole EVERYONE
 |tip Focus Blast can be avoided. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
-|tip When Crystalline Fragments come off the boss and land on the floor they will deal raid wide damage, be ready for when these come out. |grouprole HEALER
-|tip During Shockwave if any player gets knocked back they will most likely aggro extra adds be prepared to do a lot of tank healing. |grouprole HEALER
+|tip When Crystalline Fragments come off the boss and land on the floor they will deal raid wide damage, so be ready for when these come out. |grouprole HEALER
+|tip During Shockwave, if any player gets knocked back they will most likely aggro extra adds, so be prepared to do a lot of tank healing. |grouprole HEALER
 _TANK:_ |grouprole TANK
-|tip There should be 1 tank on the boss and one tank on the adds that appear. |grouprole TANK
-|tip If you are the tanking on the boss face it away from the raid. |grouprole TANK
-|tip Skorpyron will do a a 3 strike cleave in front of him appling a debuff called Arcane Tether to any tank standing in front. |grouprole TANK
-|tip To remove this debuff simply run a few yards away from where it was applied, then you may return to your original position. |grouprole TANK
-|tip The adds will apply a debuff dealing damage over time, this debuff stacks, if there are to many adds up be sure to pop a cooldown. |grouprole TANK
+|tip There should be one tank on the boss and one tank on the adds that appear. |grouprole TANK
+|tip If you are tanking the boss, face it away from the raid. |grouprole TANK
+|tip Skorpyron will do a a 3 strike cleave appling a debuff called Arcane Tether to any tank standing in front of him. |grouprole TANK
+|tip To remove this debuff, simply run a few yards away from where it was applied, then you may return to your original position. |grouprole TANK
+|tip The adds will apply a debuff dealing damage over time, which stacks. If there are too many adds up be sure to pop a cooldown. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
-|tip At the start of the fight the boss will have a hardened skeleton, decreasing damage taken by 25 percent, this percent decreases the more hes damaged. |grouprole DAMAGE
-|tip Once he is has no stacks he will go into Exoskeletion Vulnerability, this increases his damage taken by 100 percent for 15 seconds. |grouprole DAMAGE
-|tip When adds are up these should always take priority to kill except if the boss is in Exoskeletion Vulnerability. |grouprole DAMAGE
+|tip At the start of the fight the boss will have a hardened skeleton, decreasing damage taken by 25 percent, which decreases the more he's damaged. |grouprole DAMAGE
+|tip Once he has no stacks he will go into Exoskeleton Vulnerability, which increases his damage taken by 100 percent for 15 seconds. |grouprole DAMAGE
+|tip When adds are up, these should always take priority to kill, except for when the boss is in Exoskeleton Vulnerability. |grouprole DAMAGE
 confirm
 step
 map The Nighthold/1
@@ -4012,26 +4012,26 @@ confirm
 step
 kill Chronomatic Anomaly##104415 |goto 52.2,47.4
 _EVERYONE:_ |grouprole EVERYONE
-|tip Passage of time causes your cast, movement, and attack speeds as well as cooldowns to change. These changes occur after every Power Overwhelming. |grouprole EVERYONE
-|tip Burst of Time will apply to random raid members, this will apply a debuff once it runs out it will damage all players in the raid dealing more damage the closer the player is to the explosion. |grouprole EVERYONE
+|tip Passage of time causes your cast, movement, and attack speeds, as well as cooldowns, to change. These changes occur after every Power Overwhelming. |grouprole EVERYONE
+|tip Burst of Time will apply to random raid members and will apply a debuff. Once it runs out it will damage all players in the raid, dealing more damage the closer each player is to the explosion. |grouprole EVERYONE
 |tip Run out of the raid and off to a side before Burst of Time runs out. |grouprole EVERYONE
-|tip Avoid Temporal Orbs, these will come out from the center pillar. |grouprole EVERYONE
+|tip Avoid Temporal Orbs, which will come out from the center pillar. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
-|tip A debuff called Time Release will apply to random raid members during the fight, this will absorb healing, to remove this you must heal through this absorb. |grouprole HEALER
-|tip This absorbtion debuff changes with each different Passage of Time phase. |grouprole HEALER
-|tip In the slow phase it will give everyone this debuff for a small amount of healing absorb, in the fast phase it will give a few people the debuff for a large amount of healing absorb. |grouprole HEALER
-|tip If Time Release is not healed in time it will explode dealing damage to the entire raid based off of the healing absorbtion remaining. |grouprole HEALER
-|tip Power Overwhelming will deal 15 percent increased raid wide damage with each stack, save cooldowns for later stacks. |grouprole HEALER
+|tip A debuff called Time Release will apply to random raid members during the fight, which will absorb healing. To remove this, you must heal through this absorb. |grouprole HEALER
+|tip This absorption debuff changes with each different Passage of Time phase. |grouprole HEALER
+|tip In the slow phase, it will give everyone this debuff for a small amount of healing absorb. In the fast phase, it will give a few people the debuff for a large amount of healing absorb. |grouprole HEALER
+|tip If Time Release is not healed in time it will explode, dealing damage to the entire raid based off of the healing absorbtion remaining. |grouprole HEALER
+|tip Power Overwhelming will deal 15 percent increased raid wide damage with each stack, so save cooldowns for later stacks. |grouprole HEALER
 _TANK:_ |grouprole TANK
-|tip When tanking the boss he will apply Chronometic Particales, this deals damage over time and if the tank reaches 10 stacks they will instantly die and deal damage to the entire raid, taunt swap to avoid this. |grouprole TANK
-|tip Once the Waning TIme Partical add spawns move the boss to this add. |grouprole TANK
-|tip Once the Waning Time Partical dies it will spawn a Orb called a Temporal Charge, one of the tanks needs to pick this up. |grouprole TANK
-|tip The Temporal Charge will deal damage over time to the tank and once used will interrupt the bosses Power Overwhelming. |grouprole TANK
-|tip You will want to do this when your raid is taking to much damage and can't hold out. |grouprole TANK
+|tip When tanking the boss he will apply Chronometic Particles, which deals damage over time, and if the tank reaches 10 stacks they will instantly die and deal damage to the entire raid. Taunt swap to avoid this. |grouprole TANK
+|tip Once the Waning Time Particle add spawns move the boss to this add. |grouprole TANK
+|tip Once the Waning Time Particle dies it will spawn an Orb called a Temporal Charge. One of the tanks needs to pick this up. |grouprole TANK
+|tip The Temporal Charge will deal damage over time to the tank and once used it will interrupt the bosses Power Overwhelming. |grouprole TANK
+|tip You will want to do this when your raid is taking too much damage and can't hold out. |grouprole TANK
 |tip Once you use the Temporal Charge Power Overwhelming will stop channeling and the boss will take increased damage for a short time. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
-|tip Kill the Waning Time Partical as they come up, interrupt Warp Nightmare. |grouprole DAMAGE
-|tip Once the Waning Time Partical dies it will summon 4 Fragmented Time Particales, these need to die asap, you must also interrupt these when possible. |grouprole DAMAGE
+|tip Kill the Waning Time Particle as they come up, interrupt Warp Nightmare. |grouprole DAMAGE
+|tip Once the Waning Time Particle dies it will summon 4 Fragmented Time Particles, these need to die asap, you must also interrupt these when possible. |grouprole DAMAGE
 confirm
 step
 map The Nighthold/1
@@ -4043,22 +4043,22 @@ confirm
 step
 kill Trilliax##104288 |goto The Nighthold/1 41.5,20.2
 _EVERYONE:_ |grouprole EVERYONE
-|tip Arcane Seepage will target random players and spawn a pool of arcane under them, this will last the entire fight. |grouprole EVERYONE
-|tip These Arcane Seepage pools deal damage if stood in, avoid these and avoid placing them in the middle of the room. |grouprole EVERYONE
-|tip Eat Toxic Slices, to eat them run over these they are green cake that will spawn all around the room periodically. |grouprole EVERYONE
-|tip If you do not have the Stuffed debuff eat a cake this is the main priority in this fight. |grouprole EVERYONE
-|tip He will periodically pick 2 players and put Arcing Bonds on them, these players must run on top of each other to prevent a high amount of damage, these players must remain stacked until this debuff goes off. |grouprole EVERYONE
+|tip Arcane Seepage will target random players and spawn a pool of arcane under them that will last the entire fight. |grouprole EVERYONE
+|tip These Arcane Seepage pools deal damage if stood in, so avoid these and avoid placing them in the middle of the room. |grouprole EVERYONE
+|tip Eat Toxic Slices by running other them. They look like slices of green cake that will spawn all around the room periodically. |grouprole EVERYONE
+|tip If you do not have the Stuffed debuff eat a cake. This is the main priority in this fight. |grouprole EVERYONE
+|tip He will periodically pick 2 players and put Arcing Bonds on them. These players must run on top of each other to prevent a high amount of damage, remaining stacked until the debuff goes off. |grouprole EVERYONE
 |tip Trilliax will sometimes jump into the middle of the room and start casting Annihilation, this will deal a huge amount of damage every .3 seconds to anyone standing in it. Avoid getting hit by this by standing on one of his sides. |grouprole EVERYONE
-|tip Watch out for Scrubbers about to explode click these to absorb the explosion, you may need to use a minor cooldown for this. |grouprole EVERYONE
+|tip Watch out for Scrubbers about to explode. Click these to absorb the explosion. You may need to use a minor cooldown for this. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
-|tip Watch out for Scrubbers that are about to explode if they do they will deal a high amount of damage to the raid. |grouprole HEALER
+|tip Watch out for Scrubbers that are about to explode because if they do they will deal a high amount of damage to the raid. |grouprole HEALER
 _TANK:_ |grouprole TANK
-|tip Tank swap Arcane Slice debuffs. And be on top of the other tank when Arcane Slice goes out. |grouprole TANK
+|tip Tank swap Arcane Slice debuffs and be on top of the other tank when Arcane Slice goes out. |grouprole TANK
 |tip Face the boss away from the raid. |grouprole TANK
-|tip Tank the boss on the outer circle and kit him every few seconds when there gets to be to many Arcane Seepage pools for the melee to attack the boss. |grouprole TANK
+|tip Tank the boss on the outer circle and kite him every few seconds when there gets to be too many Arcane Seepage pools for the melee to attack the boss. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
-|tip Only target the boss, do not damage the adds that come out. |grouprole DAMAGE
-|tip Ranged dps that are effected by Sterilize will need to follow the Scrubbers that come out and stand next to them to drain their mana. |grouprole DAMAGE
+|tip Only target the boss. Do not damage the adds that come out. |grouprole DAMAGE
+|tip Ranged DPS that are affected by Sterilize will need to follow the Scrubbers that come out and stand next to them to drain their mana. |grouprole DAMAGE
 confirm
 step
 Congratulations you have completed the Nighthold - Arcing Aquaducts!
@@ -4083,7 +4083,7 @@ Follow the path clearing trash along the way |goto The Nighthold/3 32.0,28.7 < 5
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-Clear the trash on this side of the room and use it as the area to kill the boss in
+Clear the trash on this side of the room and use it as the area to kill the boss in.
 kill Spellblade Aluriel##104881 |goto The Nighthold/3 37.2,25.0
 There will be a Frost, Fire, and Arcane phase in this fight.
 _ALL PHASES_
@@ -4093,23 +4093,23 @@ _DAMAGE:_ |grouprole DAMAGE
 |tip Damage priority in this fight will always be adds before the boss. |grouprole DAMAGE
 _Phase 1_
 _EVERYONE:_ |grouprole EVERYONE
-|tip Mark of Frost will apply to 2 players, this will deal stacking damage overtime until transfered. |grouprole EVERYONE
-|tip To transfer Mark of Frost stack on top of the other player with Mark of Frost. |grouprole EVERYONE
-|tip She will duplicate the Mark of Frost applying it to more players, try to move out of melee range to avoid premature transfers. |grouprole EVERYONE
-|tip If you were effected by Mark of Frost when she casts Detonate be sure to spread out and get away from the melee, this will leave a frost pool on the ground. |grouprole EVERYONE
-|tip After a bit these frost pools will spawn adds, these adds will sometimes grow and create a circle of frost, anyone that hits the edge of this circle will become frozen. |grouprole EVERYONE
+|tip Mark of Frost will apply to 2 players, which will deal stacking damage overtime until transfered. |grouprole EVERYONE
+|tip To transfer Mark of Frost, stack on top of the other player with Mark of Frost. |grouprole EVERYONE
+|tip She will duplicate the Mark of Frost, applying it to more players, so try to move out of melee range to avoid premature transfers. |grouprole EVERYONE
+|tip If you were affected by Mark of Frost when she casts Detonate be sure to spread out and get away from the melee. This will leave a frost pool on the ground. |grouprole EVERYONE
+|tip After a while these frost pools will spawn adds, which will sometimes grow and create a circle of frost. Anyone that hits the edge of this circle will become frozen. |grouprole EVERYONE
 _Phase 2_
 _EVERYONE:_ |grouprole EVERYONE
-|tip She will target a random player with Searing Brand, she will then charge that player, applying a debuff. |grouprole EVERYONE
-|tip She will then duplicate this spell charging multiple people. |grouprole EVERYONE
-|tip Players effected by this debuff will need to spread out as best as possible, when detonated these players will spawn Burning Ground that will then spawn adds. |grouprole EVERYONE
-|tip These adds target players with Pyroblast that need to be either interrupted or stunned, if 2 or more adds are to close to each other their damage and cast speed will be highly increased. |grouprole EVERYONE
+|tip She will target a random player with Searing Brand, then charge that player, applying a debuff. |grouprole EVERYONE
+|tip She will duplicate this spell, charging multiple people. |grouprole EVERYONE
+|tip Players affected by this debuff will need to spread out as best as possible because when detonated these players will spawn Burning Ground that will then spawn adds. |grouprole EVERYONE
+|tip These adds target players with Pyroblast which needs to be either interrupted or stunned. If 2 or more adds are too close to each other their damage and cast speed will be highly increased. |grouprole EVERYONE
 _Phase 3_
 _EVERYONE:_ |grouprole EVERYONE
-|tip She will target a random player and summon an Arcane Orb under them, avoid standing in these. |grouprole EVERYONE
+|tip She will target a random player and summon an Arcane Orb under them. Avoid standing in these. |grouprole EVERYONE
 |tip She will then Duplicate this ability and put multiple Arcane Orbs on the ground. |grouprole EVERYONE
-|tip She will then Detonate these orbs, they will fly in the air and retarget random players in the raid, once they hit the ground they will damage the entire raid. |grouprole EVERYONE
-|tip Once all of the Arcane Orbs have retargeted they will spawn the Arcane adds, these will stand still and cast Armageddon. |grouprole EVERYONE
+|tip She will then Detonate these orbs, and they will fly into the air and retarget random players in the raid. Once they hit the ground they will damage the entire raid. |grouprole EVERYONE
+|tip Once all of the Arcane Orbs have retargeted they will spawn the Arcane adds, which will stand still and cast Armageddon. |grouprole EVERYONE
 |tip If this casts completes it will knock everyone in the raid back and cause a huge amount of damage. |grouprole EVERYONE
 confirm
 step
@@ -4127,22 +4127,22 @@ _Phase 2 Frost Phase_
 _EVERYONE:_ |grouprole EVERYONE
 |tip Stack in 2 groups preventing damage from Frigid Nova and allowing the tanks to properly do their mechanics. |grouprole EVERYONE
 |tip If you get the debuff Icy Ejection you will need to move out of the group you were assigned to and away from anyone else before this expires. |grouprole EVERYONE
-|tip This debuff will deal damage every 2 seconds and deal a high amount of damage when it expires, also when it expires it will explode and damage anyone near you. |grouprole EVERYONE
+|tip This debuff will deal damage every 2 seconds and deal a high amount of damage when it expires, including damage to anyone near you. |grouprole EVERYONE
 |tip This debuff also slows your movement speed drastically the longer it is on you. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
-|tip When tanking the boss be sure to stay max range away to prevent other players of the raid getting hit by Iceburst, this will deal damage to you and anyone within 6 yards. |grouprole TANK
+|tip When tanking the boss, be sure to stay max range away to prevent other players of the raid from getting hit by Iceburst, as this will deal damage to you and anyone within 6 yards. |grouprole TANK
 |tip Tank swap when Gravitational Pull is put on one of the tanks. |grouprole TANK
-|tip When Gravitational Pull is applied be sure to run away, there will be 3 cycles of 2 debuffs that apply every few seconds. |grouprole TANK
-|tip When the debuff turns into Comet Impact stay away from everyone else, this will deal a high amount of damage to you. |grouprole TANK
-|tip This debuff once it hits will turn into Absolute Zero, you will need to run into a ground of people to get rid of this debuff or it will kill you pretty quickly. |grouprole TANK
-|tip When getting rid of Aboslute Zero do not hit the same group twice, this will freeze those players for 10 seconds. |grouprole TANK
+|tip When Gravitational Pull is applied be sure to run away. There will be 3 cycles of 2 debuffs that apply every few seconds. |grouprole TANK
+|tip When the debuff turns into Comet Impact stay away from everyone else. This will deal a high amount of damage to you. |grouprole TANK
+|tip Once this debuff hits it will turn into Absolute Zero and you will need to run into a group of people to get rid of it or it will kill you pretty quickly. |grouprole TANK
+|tip When getting rid of Absolute Zero do not hit the same group twice, as this will freeze those players for 10 seconds. |grouprole TANK
 Click here for the Phase 3 abilities |confirm
 step
 kill Star Augur Etraeus##103758 |goto The Nighthold/6 37.0,21.0
 _Phase 3 Fel Phase_
 _EVERYONE:_ |grouprole EVERYONE
-|tip If you get the debuff Fel Ejection try to place the Felflame Pools close together, you will drop several of them, studder step to avoid taking damage. |grouprole EVERYONE
-|tip When she casts Fel Nova run to the edge of the room, this will reduce the damage you take by a significent amount. |grouprole EVERYONE
+|tip If you get the debuff Fel Ejection try to place the Felflame Pools close together. You will drop several of them, so studder step to avoid taking damage. |grouprole EVERYONE
+|tip When she casts Fel Nova, run to the edge of the room. This will reduce the damage you take by a significent amount. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
 |tip If you get the Gravitational Pull debuff use this to destroy some of the Felflame Pools dropped by other raid members. |grouprole TANK
 Click here for the Phase 4 abilities |confirm
@@ -4152,11 +4152,11 @@ _Phase 4 Void Phase_
 _EVERYONE:_ |grouprole EVERYONE
 |tip Face away from the Thing that Should Not Be when it is casting Witness the Void. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
-|tip If infected with Gravitational Pull go to the edge of the room before it expires, this will summon an add, tank this add there and do not bring it close to the boss. |grouprole TANK
+|tip If infected with Gravitational Pull go to the edge of the room before it expires, as this will summon an add. Tank this add there and do not bring it close to the boss. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
-|tip Kill the Thing that Should Not Be when it spawns asap. |grouprole DAMAGE
+|tip Kill the Thing that Should Not Be when it spawns ASAP. |grouprole DAMAGE
 _HEALER:_ |grouprole HEALER
-|tip The add will cast Witness the Void this will deal more damage with each cast be prepared for this. |grouprole HEALER
+|tip The add will cast Witness the Void, which will deal more damage with each cast. Be prepared for this. |grouprole HEALER
 confirm
 step
 map The Nighthold/3
@@ -4172,22 +4172,22 @@ step
 kill High Botanist Tel'arn##104528 |goto The Nighthold/4 62.0,39.7
 There are 3 phases to this fight phase 2 starting at 75 percent and phase 3 starting at 50 percent
 _EVERYONE:_ |grouprole EVERYONE
-|tip Solar Flare will target a random player and collapse on that area avoid the yellow swirls on the ground. |grouprole EVERYONE
-|tip Controlled Chaos will target a random player and create a purple damage area, this will expand 3 times, don't stand in these. |grouprole EVERYONE
-|tip If fixated by Parasitic Fetter run away from it, if it gets into melee range of you it will reapply the root and when that root is dispelled it will summon 2 more adds. |grouprole EVERYONE
+|tip Solar Flare will target a random player and collapse on that area. Avoid the yellow swirls on the ground. |grouprole EVERYONE
+|tip Controlled Chaos will target a random player and create purple damage areas that will expand 3 times. Don't stand in these. |grouprole EVERYONE
+|tip If fixated by Parasitic Fetter run away from it because if it gets into melee range it will reapply the root and when that root is dispelled it will summon 2 more adds. |grouprole EVERYONE
 _Phase 3_ |grouprole EVERYONE
-|tip Toxic Spores will spawn around the room, avoid these, if the fight lasts to long some of these might need to be cleared, use some sort of immunity to clear them. |grouprole EVERYONE
-|tip If you are targeted by Call of Night you must stand on someone else that is not effected by this or it will deal damage to the entire raid. |grouprole EVERYONE
+|tip Toxic Spores will spawn around the room, so try to avoid these. If the fight lasts too long some of these might need to be cleared. Use some sort of immunity to clear them. |grouprole EVERYONE
+|tip If you are targeted by Call of Night you must stand on someone else that is not affected by this or it will deal damage to the entire raid. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
-|tip Parasitic Fetter will be cast on a random ranged player, this needs to be dispelled asap. This will root the player until dispelled and when dispelled it will summon 2 adds. |grouprole HEALER
+|tip Parasitic Fetter will be cast on a random ranged player, and this needs to be dispelled ASAP. It will root the player until dispelled and when dispelled it will summon 2 adds. |grouprole HEALER
 |tip Be ready to use cooldowns when multiple abilities are cast close together. |grouprole HEALER
 _TANK:_ |grouprole TANK
-|tip The original High Botanist will apply Recursive Strikes with each auto attack, this will need to be taunt swapped at around 10 or so stacks. |grouprole TANK
+|tip The original High Botanist will apply Recursive Strikes with each auto attack. This will need to be taunt swapped at around 10 or so stacks. |grouprole TANK
 _Phase 3_ |grouprole TANK
-|tip Move the bosses out of Grace of Nature when it is put on the ground, this will look like a green circle, this will heal the bosses for a percent of their hp per second. |grouprole TANK
+|tip Move the bosses out of Grace of Nature when it is put on the ground. This will look like a green circle, and will heal the bosses for a percent of their HP per second. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
-|tip All ranged dps must spread out around the room and stand out of the melee. |grouprole DAMAGE
-|tip Adds are priority in this fight, as soon as the parasites spawn kill them, they can be slowed, stunned, or rooted. |grouprole DAMAGE
+|tip All ranged DPS must spread out around the room and stand out of the melee. |grouprole DAMAGE
+|tip Adds are priority in this fight. As soon as the parasites spawn, kill them. They can be slowed, stunned, or rooted. |grouprole DAMAGE
 _Phase 2_ |grouprole DAMAGE
 |tip When Plasma Spheres spawn kill them one at a time, not at the same time. |grouprole DAMAGE
 confirm
@@ -4215,22 +4215,22 @@ confirm
 step
 kill Tichondrius##103685 |goto The Nighthold/5 26.5,63.4
 _EVERYONE:_ |grouprole EVERYONE
-|tip Tichondrius corrupts several players with Carrion Plague periodically, this will deal damage to that player every second and be the target of Seeker Swarm. |grouprole EVERYONE
-|tip Players effected with Carrion Plague will need to stand on one side of the boss while the rest of the raid stays away from these players. |grouprole EVERYONE
-|tip When Seeker Swarm goes out it will target each player with Carrion Plague in a line, any player without Carrion Plague that gets hit by Seeker Swarm will gain the debuff of Carrion Plague. |grouprole EVERYONE
-|tip Sightless Watchers will appear in the last phase of this fight, do not stand in it Ring of Shadows. |grouprole EVERYONE
-|tip During Illusionary Night be sure to grab a Essence of Night from dying bats, when this phase ends it will provide a damage buff and a mana regeneration buff for 30 seconds. |grouprole EVERYONE
+|tip Tichondrius corrupts several players with Carrion Plague periodically, which will deal damage to that player every second and make them a target of Seeker Swarm. |grouprole EVERYONE
+|tip Players affected with Carrion Plague will need to stand on one side of the boss while the rest of the raid stays away from these players. |grouprole EVERYONE
+|tip When Seeker Swarm goes out it will target each player with Carrion Plague in a line. Any player without Carrion Plague that gets hit by Seeker Swarm will gain the debuff of Carrion Plague. |grouprole EVERYONE
+|tip Sightless Watchers will appear in the last phase of this fight. do not stand in the Ring of Shadows. |grouprole EVERYONE
+|tip During Illusionary Night, be sure to grab an Essence of Night from dying bats. When this phase ends, it will provide a damage buff and a mana regeneration buff for 30 seconds. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
-|tip When the Sightless Watcher is alive healers will gain a debuff called Burning Soul this needs to be dispelled asap, this will drain mana while active. |grouprole HEALER
+|tip When the Sightless Watcher is alive healers will gain a debuff called Burning Soul which needs to be dispelled ASAP, as this will drain mana while active. |grouprole HEALER
 |tip Healers with Burning Soul will need to move at least 8 yards away from everyone else in the raid. |grouprole HEALER
 _TANK:_ |grouprole TANK
-|tip The tank with aggro will periodically gain a debuff called Feast of Blood which will summon 3 blood adds, when this happens you must move away from the boss and the other tank must taunt off of you. |grouprole TANK
-|tip Stay out away from the boss until these blood adds are dead, in phases 2 and 3 there will be extra adds pick these up. |grouprole TANK
-|tip In the 2nd phase Felsworn Spellguards will spawn these will apply Volatile Wounds to their target increasing damage taken, when this debuff expires it will leave a Nether Zone on the ground. |grouprole TANK
-|tip Try to place these on the outside of the room, move out of this when it is dropped. |grouprole TANK
+|tip The tank with aggro will periodically gain a debuff called Feast of Blood which will summon 3 blood adds. When this happens you must move away from the boss and the other tank must taunt off of you. |grouprole TANK
+|tip Stay away from the boss until these blood adds are dead. In phases 2 and 3 there will be extra adds you will need to pick these up. |grouprole TANK
+|tip In the 2nd phase Felsworn Spellguards will spawn and apply Volatile Wounds to their target, increasing damage taken. When this debuff expires it will leave a Nether Zone on the ground. |grouprole TANK
+|tip Try to place these on the outside of the room and move out of them when they are dropped. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
 |tip Ranged DPS should focus on killing the adds when they are up. |grouprole DAMAGE
-|tip During Illusionary Night kill as many bats as possible in the 30 seconds provided. |grouprole DAMAGE
+|tip During Illusionary Night, kill as many bats as possible in the 30 seconds provided. |grouprole DAMAGE
 confirm
 step
 map The Nighthold/5
@@ -4245,18 +4245,18 @@ confirm
 step
 kill Krosus##101002 |goto The Nighthold/3 73.9,92.1
 _EVERYONE:_ |grouprole EVERYONE
-|tip He will cast an ability called Fel Beam picking a side, left or right, and shot a beam down that entire side. |grouprole EVERYONE
-|tip Avoid getting hit by this beam, you can tell what side he is going on by looking at what arm he pulls back when the cast is going. |grouprole EVERYONE
-|tip He will sometimes put a Orb of Destruction on a random ranged player, this player must run as far away from the raid as they can to minimize the damage it deals. |grouprole EVERYONE
+|tip He will cast an ability called Fel Beam on the left or right side, shooting a beam down that entire side. |grouprole EVERYONE
+|tip Avoid getting hit by this beam. You can tell what side he is going on by looking at what arm he pulls back when the cast is going. |grouprole EVERYONE
+|tip He will sometimes put an Orb of Destruction on a random ranged player. This player must run as far away from the raid as they can to minimize the damage it deals. |grouprole EVERYONE
 |tip When Burning Pitch comes out all raid members must find a green circle to stand in to prevent adds from spawning. |grouprole EVERYONE
-|tip A portion of the platform will get destroyed after every 3rd Slam, be sure to run to a safe part of the platform to avoid instant death from the destroyed platform. |grouprole EVERYONE
+|tip A portion of the platform will get destroyed after every 3rd Slam, so be sure to run to a safe part of the platform to avoid instant death from the destroyed platform. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
-|tip This is an intense healing fight be prepared to use cooldowns when he uses his abilities close together. |grouprole HEALER
+|tip This is an intense healing fight so be prepared to use cooldowns when he uses his abilities close together. |grouprole HEALER
 _TANK:_ |grouprole TANK
-|tip The tank with aggro will periodically get a debuff called Searing Brand, this will deal damage every second for 18 seconds, this effect stack. |grouprole TANK
-|tip It is recommended to tank swap the boss at around 6 stacks or whenever your debuff runs out. |grouprole TANK
-|tip The tanks should stay on different sides of the boss except for when dodging Fel Beam, this is to absorb the Slam. |grouprole TANK
-|tip When Slam is going out he will create 2 brown circles on the ground, one on each side of him, the tanks need to stand in these 2 swirls to prevent the raid from taking massive damage. |grouprole TANK
+|tip The tank with aggro will periodically get a debuff called Searing Brand, which will deal damage every second for 18 seconds. This effect stacks. |grouprole TANK
+|tip It is recommended to tank swap the boss at around 6 stacks, or whenever your debuff runs out. |grouprole TANK
+|tip The tanks should stay on different sides of the boss except for when dodging Fel Beam. This is to absorb the Slam. |grouprole TANK
+|tip When Slam is going out he will create 2 brown circles on the ground, one on each side of him. The tanks need to stand in these 2 swirls to prevent the raid from taking massive damage. |grouprole TANK
 |tip Use cooldowns when absorbing the Slam. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
 |tip If adds spawn from Burning Pitch these need to be stunned, interrupted, and killed. |grouprole DAMAGE
@@ -4281,45 +4281,45 @@ step
 kill Grand Magistrix Elisande##110965 |goto The Nighthold/7 49.3,53.0
 _Every Phase_
 _EVERYONE:_ |grouprole EVERYONE
-|tip Two adds will periodically spawn, one slow add which stands still, and one fast add which can be tanked. |grouprole EVERYONE
-|tip The Recursive Elemental, the slow add, will cast Blast this needs to be interrupted. |grouprole EVERYONE
-|tip Once killed this add spawns a slow bubble, if stood in you will recieve a slow debuff. |grouprole EVERYONE
-|tip The Expedient Elemental, the fast add, the longer this add is alive the more damage his aoe ability will do. |grouprole EVERYONE
-|tip Once killed this add spawns a fast bubble, if stood in you will gain a speed increase buff. |grouprole EVERYONE
+|tip Two adds will periodically spawn: one slow add which stands still, and one fast add which can be tanked. |grouprole EVERYONE
+|tip The Recursive Elemental, the slow add, will cast Blast, which needs to be interrupted. |grouprole EVERYONE
+|tip Once killed, this add spawns a slow bubble, which puts a slow debuff on you if stood in. |grouprole EVERYONE
+|tip The Expedient Elemental is the fast add, and the longer this add is alive the more damage his AOE ability will do. |grouprole EVERYONE
+|tip Once killed, this add spawns a fast bubble, which gives you a fast debuff if stood in. |grouprole EVERYONE
 _Phase 1_
 _EVERYONE:_ |grouprole EVERYONE
 |tip Elisande will periodically summon an Arcanetic Ring which will slowly collapse inward on her location. |grouprole EVERYONE
-|tip To avoid this stand behind the Slow Bubble that appears from kill the slow add, this will slow down some of the rings allowing you to escape through a safe spot. |grouprole EVERYONE
-|tip You can also obtain a fast buff to allow yourself to move more quickly to saftey. |grouprole EVERYONE
-|tip Spanning Sigularities will spawn on top of random players, these need to be baited to the outside of the room, if they are further out there is no need to soak the damage. |grouprole EVERYONE
+|tip To avoid this, stand behind the Slow Bubble that appears from killing the slow add. This will slow down some of the rings allowing you to escape through a safe spot. |grouprole EVERYONE
+|tip You can also obtain a fast buff to allow yourself to move more quickly to safety. |grouprole EVERYONE
+|tip Spanning Sigularities will spawn on top of random players, and need to be baited to the outside of the room. If they are further out there is no need to soak the damage. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
-|tip Elisande will apply a tank debuff dealing damage every second this debuff needs to be tank swapped to avoid to many stacks. |grouprole TANK
+|tip Elisande will apply a tank debuff dealing damage every second. This debuff needs to be tank swapped to avoid too many stacks. |grouprole TANK
 Click here for the Phase 2 abilities |confirm
 step
 kill Grand Magistrix Elisande##110965 |goto The Nighthold/7 49.3,53.0
 _Phase 2_ Starts after the first _Time Stop_
 _EVERYONE:_ |grouprole EVERYONE
-|tip Elisande will periodically summon an Arcanetic Ring which will slowly collapse inward on her location. |grouprole EVERYONE
-|tip To avoid this stand behind the Slow Bubble that appears from killing the slow add, this will slow down some of the rings allowing you to escape through a safe spot |grouprole EVERYONE.
-|tip You can also obtain a fast buff to allow yourself to move more quickly to saftey. |grouprole EVERYONE
-|tip Epocheric Orbs will periodically spawn all around the room, one player per orb should stand in the circle as it is falling down to catch it. |grouprole EVERYONE
+|tip Elisande will periodically summon an Arcanetic Ring, which will slowly collapse inward on her location. |grouprole EVERYONE
+|tip To avoid this, stand behind the Slow Bubble that appears after killing the slow add. This will slow down some of the rings allowing you to escape through a safe spot |grouprole EVERYONE.
+|tip You can also obtain a fast buff to allow yourself to move more quickly to safety. |grouprole EVERYONE
+|tip Epocheric Orbs will periodically spawn all around the room. One player per orb should stand in the circle to catch it as it is falling down. |grouprole EVERYONE
 |tip Elisande will periodically target several raid members and deal damage to them in a line with Delphuric Beam.|grouprole EVERYONE
 |tip Make sure not to overlap this line and not to stand inside it if not targeted. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
-|tip Taunt Elisande when the active tank gets the debuff "Ablating Explosion", if you get this debuff run away from everyone in the raid until this debuff expires. |grouprole TANK
+|tip Taunt Elisande when the active tank gets the debuff "Ablating Explosion". If you get this debuff, run away from everyone in the raid until it expires. |grouprole TANK
 Click here for the Phase 3 abilities |confirm
 step
 kill Grand Magistrix Elisande##110965 |goto The Nighthold/7 49.3,53.0
 _Phase 3_ Starts after the second _Time Stop_
 _EVERYONE:_ |grouprole EVERYONE
 |tip Elisande will periodically summon an Arcanetic Ring which will slowly collapse inward on her location. |grouprole EVERYONE
-|tip To avoid this stand behind the Slow Bubble that appears from kill the slow add, this will slow down some of the rings allowing you to escape through a safe spot. |grouprole EVERYONE
-|tip You can also obtain a fast buff to allow yourself to move more quickly to saftey. |grouprole EVERYONE
-|tip Epocheric Orbs will periodically spawn all around the room, one player per orb should stand in the circle as it is falling down to catch it. |grouprole EVERYONE
-|tip Once caught each soaker will get a debuff increasing further damage from orbs by 100 percent for 1.5 minutes. |grouprole EVERYONE
-|tip Elisande will cast Ablative Pulse, this will need to be interrupted as much as possible to reduce damage taken by your tanks. |grouprole EVERYONE
-|tip The boss will apply a debuff periodically to random raid members called "Permelative Torment" this will deal a high amount of damage to these members for the duration. |grouprole EVERYONE
-|tip If applied with this debuff use cooldowns when needed, this can be deadly if combined with her other abilities. |grouprole EVERYONE
+|tip To avoid this, stand behind the Slow Bubble that appears after killing the slow add. This will slow down some of the rings allowing you to escape through a safe spot. |grouprole EVERYONE
+|tip You can also obtain a fast buff to allow yourself to move more quickly to safety. |grouprole EVERYONE
+|tip Epocheric Orbs will periodically spawn all around the room. One player per orb should stand in the circle to catch it as it is falling down. |grouprole EVERYONE
+|tip Once caught, each soaker will get a debuff increasing further damage from orbs by 100 percent for 1.5 minutes. |grouprole EVERYONE
+|tip Elisande will cast Ablative Pulse, which will need to be interrupted as much as possible to reduce damage taken by your tanks. |grouprole EVERYONE
+|tip The boss will apply a debuff periodically to random raid members called "Permelative Torment", which will deal a high amount of damage to these members for the duration. |grouprole EVERYONE
+|tip If this debuff is applied to you use cooldowns when needed. This can be deadly if combined with her other abilities. |grouprole EVERYONE
 confirm
 step
 Congratulations you have completed Nighthold - Nightspire!
@@ -4337,80 +4337,80 @@ Enter the Nighthold |goto The Nighthold/9 49.5,80.1 |noway |c
 step
 kill Gul'dan##105503 |goto The Nighthold/9 49.3,52.2
 |tip Each role will get an extra action button, one for damage, healers, and tanks. |grouprole EVERYONE
-|tip The Tank ability when used will absorb all damage taken for 6 seconds. |grouprole TANK
-|tip The Healer ability when used will create a purple barrier around you absorbing just under 1 million fire damage split between all raid members inside. |grouprole HEALER
-|tip The Damage ability when used will increase your attack, casting, and movement speed by 30 percent along with decreasing your cooldowns by 30 percent while this is active. |grouprole DAMAGE
+|tip The Tank ability will absorb all damage taken for 6 seconds. |grouprole TANK
+|tip The Healer ability will create a purple barrier around you absorbing just under 1 million fire damage split between all raid members inside. |grouprole HEALER
+|tip The Damage ability will increase your attack, casting, and movement speed by 30 percent, along with decreasing your cooldowns by 30 percent while active. |grouprole DAMAGE
 |tip If you take any fire damage while this is active it will cancel. |grouprole DAMAGE
 _Phase 1_
 |tip Gul'dan will be active for about 20 seconds during this phase. |grouprole EVERYONE
 _EVERYONE:_ |grouprole EVERYONE
-|tip Gul'dan will Liquid Hellfire, this will target a random player and after a short time will fall down to the ground, this will deal damage to the entire raid based on how close each member is to the initial explosion. |grouprole EVERYONE
-|tip He will also cast Fel Efflux this will also target a random player and after a short time will shot out a line of flame, this will last for about 5 seconds and anyone standing within this flame will get dealth a huge amount of damage. |grouprole EVERYONE
-|tip Gul'dan will also summon 3 adds during this phase with Hand of Gul'dan, these adds will appear one by one: Fel Lord Kuraz'mal, Inquisitor Vethriz, and then D'zorykx the Trapper. |grouprole EVERYONE
-|tip D'zorykx the Trapper will drop Soul Vortex, this will suck in all players within range and dealing damage, if caught in the center you will gain a debuff increasing physical damage and dealing more damage every 3 seconds for 18 seconds.
+|tip Gul'dan will cast Liquid Hellfire, targeting a random player, and after a short time it will fall to the ground, dealing damage to the entire raid based on how close each member is to the initial explosion. |grouprole EVERYONE
+|tip He will also cast Fel Efflux, which will also target a random player, and after a short time will shoot out a line of flame. This will last for about 5 seconds and anyone standing within this flame will get dealt a huge amount of damage. |grouprole EVERYONE
+|tip Gul'dan will also summon 3 adds during this phase with Hand of Gul'dan, appearing one by one: Fel Lord Kuraz'mal, Inquisitor Vethriz, and then D'zorykx the Trapper. |grouprole EVERYONE
+|tip D'zorykx the Trapper will drop Soul Vortex, which will suck in all players within range and deal damage. If caught in the center you will gain a debuff increasing physical damage and dealing more damage every 3 seconds for 18 seconds.
 |tip Run away from this ability.
 _TANK:_ |grouprole TANK
 |tip Pick up each of the adds when they appear from Hand of Gul'dan. |grouprole TANK
 |tip Try to tank these together to help kill them faster. |grouprole TANK
-|tip The tank on Fel Lord Kuraz'mal will need to use a defensive when about to be struck by Shatter Essence. |grouprole TANK
+|tip The tank on Fel Lord Kuraz'mal will need to use a defensive when they're about to be struck by Shatter Essence. |grouprole TANK
 _HEALER:_ |grouprole HEALER
 |tip Use your extra ability on the Liquid Hellfires to minimize the raid damage. |grouprole HEALER
-|tip Watch people that stand within the Fel Efflux these players will die quickly. |grouprole HEALER
+|tip Watch people that stand within the Fel Efflux as these players will die quickly. |grouprole HEALER
 _DAMAGE:_ |grouprole DAMAGE
-|tip Kill Inquisitor Vethriz as soon as it appears, this should die before it gets to full energy. |grouprole DAMAGE
+|tip Kill Inquisitor Vethriz as soon as it appears. This should be killed before it gets to full energy. |grouprole DAMAGE
 Click here for the Phase 2 abilities |confirm
 step
 kill Gul'dan##105503 |goto The Nighthold/9 49.3,52.2
 _Phase 2_ Starts when all 3 adds are dead
-|tip After the 3 adds are dead be sure to huge the bubble in the middle so that you do not get knocked off the edge of the platform. |grouprole EVERYONE
+|tip After the 3 adds are killed be sure to hug the bubble in the middle so that you do not get knocked off the edge of the platform. |grouprole EVERYONE
 _EVERYONE:_ |grouprole EVERYONE
-|tip Gul'dan will Liquid Hellfire, this will target a random player and after a short time will fall down to the ground, this will deal damage to the entire raid based on how close each member is to the initial explosion. |grouprole EVERYONE
-|tip Liquid Hellfire will become Empowered when further into this phase, this Empowered Liquid Hellfire will deal more damage and leave behind fire on the ground of the impact area. |grouprole EVERYONE
-|tip Gul'dan will cast Bonds of Hellfire on the active tank and a few other random raid members this will create a small circle that follows the player and a larger circle around the impact of the player. |grouprole EVERYONE
-|tip To remove this debuff they will need to run out of the larger circle, but other players will need to run into the smaller one to split the damage from removing this bond. |grouprole EVERYONE
-|tip The Bonds of Fel will become Empowered further into this phase, this Empowered Bonds of Fel will now also Knock these players effected back. |grouprole EVERYONE
+|tip Gul'dan will cast Liquid Hellfire, targeting a random player, and after a short time it will fall to the ground, dealing damage to the entire raid based on how close each member is to the initial explosion. |grouprole EVERYONE
+|tip Liquid Hellfire will become Empowered when further into this phase, dealing more damage, and leaving behind fire on the ground of the impact area. |grouprole EVERYONE
+|tip Gul'dan will cast Bonds of Hellfire on the active tank and a few other random raid members, creating a small circle that follows the player and a larger circle around the impact of the player. |grouprole EVERYONE
+|tip To remove this debuff they will need to run out of the larger circle. Other players will need to run into the smaller one to split the damage from removing this bond. |grouprole EVERYONE
+|tip The Bonds of Fel will become Empowered further into this phase, knocking these affected players back. |grouprole EVERYONE
 |tip Make sure your back is facing a direction that will not knock you off of the edge of the platform. |grouprole EVERYONE
-|tip Eye of Gul'dan will periodically spawn these will target random raid members and start pulsing damage onto them dealing damage in a 8 yard range to them. |grouprole EVERYONE
-|tip Spread out whenever Eyes are active, DO NOT break Bonds of Fel when these Eyes are out. |grouprole EVERYONE
-|tip The Empowered Eyes of Gul'dan will be only one big eye instead of a lot of little ones, this will do the same thing but do more damage to each target. |grouprole EVERYONE
-|tip Once these Empowered Eyes are at full energy they will make a copy of themselves, these copies do the exact same as the original. |grouprole EVERYONE
-|tip Hand of Gul'dan will summon a Dreadlord, this will cast Carrion Wave. |grouprole EVERYONE
+|tip Eyes of Gul'dan will periodically spawn, targeting random raid members and pulsing damage onto them in an 8 yard range. |grouprole EVERYONE
+|tip Spread out whenever Eyes are active and DO NOT break Bonds of Fel when these Eyes are out. |grouprole EVERYONE
+|tip The Empowered Eyes of Gul'dan will be only one big eye instead of a lot of little ones and will do the same thing but with more damage to each target. |grouprole EVERYONE
+|tip Once these Empowered Eyes are at full energy they will make a copy of themselves. These copies do the exact same as the original. |grouprole EVERYONE
+|tip Hand of Gul'dan will summon a Dreadlord, which will cast Carrion Wave. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
 |tip One tank should tank the boss while the other tanks the Dreadlords when they come out. |grouprole TANK
-|tip Whoever is tanking the Dreadlord should know that the damage and attack speed of the add will increase everytime it is interrupted, use your cooldowns near the end of each Dreadlords life. |grouprole TANK
-|tip Tank swaping should only occur when the active tank on Gul'dan gets Empowered Bonds of Fel. |grouprole TANK
-|tip Gul'dan will have an energy bar, if this bar gets full it will active Fel Scythe at full power to his current target. |grouprole TANK
-|tip The off tank will need to stand on top of the main tank around 40 to 50 percent energy to force activate Fel Scythe, this way his energy stays low and the damage is split between the 2 tanks. |grouprole TANK
-|tip Whenever he casts Fel Scythe he will gain an attack speed buff for 10 seconds, this buff stacks. |grouprole TANK
+|tip Whoever is tanking the Dreadlord should know that the damage and attack speed of the add will increase everytime it is interrupted, so use your cooldowns near the end of each Dreadlords life. |grouprole TANK
+|tip Tank swaping should only occur when the active tank gets Empowered Bonds of Fel. |grouprole TANK
+|tip Gul'dan will have an energy bar, and if this bar gets full it will activate Fel Scythe at full power to his current target. |grouprole TANK
+|tip The off tank will need to stand on top of the main tank around 40 to 50 percent energy to force activate Fel Scythe. This way his energy stays low and the damage is split between the 2 tanks. |grouprole TANK
+|tip Whenever he casts Fel Scythe he will gain an attack speed buff for 10 seconds, which stacks. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
-|tip Switch to the adds that pop up, these take priority over anything else in this fight. |grouprole DAMAGE
+|tip Switch to the adds that pop up. These take priority over anything else in this fight. |grouprole DAMAGE
 |tip Interrupt Carrion Wave from the Dreadlords. |grouprole DAMAGE
 Click here for the Phase 3 abilities |confirm
 step
 kill Gul'dan##105503 |goto The Nighthold/9 49.3,52.2
 _Phase 3_ Starts at 40 percent health
 _EVERYONE:_ |grouprole EVERYONE
-|tip Eye of Gul'dan will periodically spawn these will target random raid members and start pulsing damage onto them dealing damage in a 8 yard range to them. |grouprole EVERYONE
+|tip Eyes of Gul'dan will periodically spawn, targeting random raid members, and pulsing damage onto them in a 8 yard range. |grouprole EVERYONE
 |tip Spread out whenever Eyes are active. |grouprole EVERYONE
-|tip Once these Empowered Eyes are at full energy they will make a copy of themselves, these copies do the exact same as the original. |grouprole EVERYONE
+|tip Once these Empowered Eyes are at full energy they will make a copy of themselves. The copies do the exact same as the original. |grouprole EVERYONE
 |tip The Well of Souls will take fragments of players all throughout this phase and put them into the center circle. |grouprole EVERYONE
-|tip These Souls need to be soaked by players, this can be done by standing within the Soul Well for 3 seconds, every 3 seconds someone stands within the Well they will absorb a Soul. |grouprole EVERYONE
-|tip Those that absorb the Souls will get a stacking debuff dealing damage every few seconds for 3 minutes, this will also reduce the damage taken to the raid during Black Harvest. |grouprole EVERYONE
-|tip Gul'dan will periodically cast Storm of the Destroyer, this will slowly cover the majority of the entire platform, all raid members need to run out of this area to avoid massive damage. |grouprole EVERYONE
+|tip These Souls need to be soaked by players which can be done by standing within the Soul Well for 3 seconds. Every 3 seconds someone stands within the Well they will absorb a Soul. |grouprole EVERYONE
+|tip Those that absorb the Souls will get a stacking debuff dealing damage every few seconds for 3 minutes which will also reduce the damage taken to the raid during Black Harvest. |grouprole EVERYONE
+|tip Gul'dan will periodically cast Storm of the Destroyer, which will slowly cover the majority of the entire platform. All raid members need to run out of this area to avoid massive damage. |grouprole EVERYONE
 |tip This ability will also clear all Flames of Sargeras within the area. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
-|tip Flames of Sargeras will apply to random raid members throughout this phase, this will deal damage and create puddles of fire under their feet every few seconds. |grouprole HEALER
+|tip Flames of Sargeras will apply to random raid members throughout this phase, dealing damage, and creating puddles of fire under their feet every few seconds. |grouprole HEALER
 |tip These flames should be put on the outside of the room. |grouprole HEALER
-|tip During Black Harvest the entire raid will get dealt 3 ticks of massive damage, this damage increases for every soul within the Well. |grouprole HEALER
+|tip During Black Harvest the entire raid will get dealt 3 ticks of massive damage, which increases for every soul within the Well. |grouprole HEALER
 |tip Watch players with a lot of Soul Fragment debuffs. |grouprole HEALER
 _TANK:_ |grouprole TANK
-|tip Tank the boss on the outside of the room, moving it when your area gets to overwhelmed with Flames of Sargeras. |grouprole TANK
-|tip Gul'dan will have an energy bar, if this bar gets full it will active Fel Scythe at full power to his current target. |grouprole TANK
-|tip The off tank will need to stand on top of the main tank around 40 to 50 percent energy to force activate Fel Scythe, this way his energy stays low and the damage is split between the 2 tanks. |grouprole TANK
-|tip Whenever he casts Fel Scythe he will gain an attack speed buff for 10 seconds, this buff stacks. |grouprole TANK
+|tip Tank the boss on the outside of the room, moving it when your area gets too overwhelmed with Flames of Sargeras. |grouprole TANK
+|tip Gul'dan will have an energy bar, and if this bar gets full it will active Fel Scythe at full power to his current target. |grouprole TANK
+|tip The off tank will need to stand on top of the main tank around 40 to 50 percent energy to force activate Fel Scythe. This way his energy stays low and the damage is split between the 2 tanks. |grouprole TANK
+|tip Whenever he casts Fel Scythe he will gain an attack speed buff for 10 seconds, which buff stacks. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
 |tip Switch and kill the Empowered Eyes of Gul'dan as fast as possible when they are up. |grouprole DAMAGE
-|tip Flames of Sargeras will apply to random raid members throughout this phase, this will deal damage and create puddles of fire under their feet every few seconds. |grouprole DAMAGE
+|tip Flames of Sargeras will apply to random raid members throughout this phase, dealing damage, and creating puddles of fire under their feet every few seconds. |grouprole DAMAGE
 |tip These flames should be put on the outside of the room. |grouprole DAMAGE
 confirm
 step
@@ -4437,24 +4437,24 @@ confirm
 step
 kill Skorpyron##102263 |goto 32.0,61.2
 _EVERYONE:_ |grouprole EVERYONE
-|tip Be sure to be in the inner circle of this boss room, never go into the outer circle. |grouprole EVERYONE
-|tip He will cast a spell called Shockwave when reaching full energy this will knock all players back into the wall if they are not protected by a Crystalline Fragment. |grouprole EVERYONE
+|tip Be sure to be in the inner circle of this boss room and never go into the outer circle. |grouprole EVERYONE
+|tip He will cast a spell called Shockwave when reaching full energy that will knock all players back into the wall if they are not protected by a Crystalline Fragment. |grouprole EVERYONE
 |tip Crystalline Fragments will come off the boss after he takes a certain amount of damage. |grouprole EVERYONE
-|tip He will also periodically cast a spell called Focus Blast, this will target a random player and start casting, at the end it will release a cone that will deal damage and stun any player in this. |grouprole EVERYONE
+|tip He will also periodically cast a spell called Focus Blast that will target a random player and release a cone that will deal damage and stun any player within it. |grouprole EVERYONE
 |tip Focus Blast can be avoided. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
-|tip When Crystalline Fragments come off the boss and land on the floor they will deal raid wide damage, be ready for when these come out. |grouprole HEALER
-|tip During Shockwave if any player gets knocked back they will most likely aggro extra adds be prepared to do a lot of tank healing. |grouprole HEALER
+|tip When Crystalline Fragments come off the boss and land on the floor they will deal raid wide damage, so be ready for when these come out. |grouprole HEALER
+|tip During Shockwave, if any player gets knocked back they will most likely aggro extra adds, so be prepared to do a lot of tank healing. |grouprole HEALER
 _TANK:_ |grouprole TANK
 |tip There should be 1 tank on the boss and one tank on the adds that appear. |grouprole TANK
-|tip If you are the tanking on the boss face it away from the raid. |grouprole TANK
-|tip Skorpyron will do a a 3 strike cleave in front of him appling a debuff called Arcane Tether to any tank standing in front. |grouprole TANK
+|tip If you are the one tanking the boss face it away from the raid. |grouprole TANK
+|tip Skorpyron will do a 3 strike cleave appling a debuff called Arcane Tether to any tank standing in front of him. |grouprole TANK
 |tip To remove this debuff simply run a few yards away from where it was applied, then you may return to your original position. |grouprole TANK
-|tip The adds will apply a debuff dealing damage over time, this debuff stacks, if there are to many adds up be sure to pop a cooldown. |grouprole TANK
+|tip The adds will apply a debuff, dealing damage over time, which stacks. If there are too many adds up be sure to pop a cooldown. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
-|tip At the start of the fight the boss will have a hardened skeleton, decreasing damage taken by 25 percent, this percent decreases the more hes damaged. |grouprole DAMAGE
-|tip Once he is has no stacks he will go into Exoskeletion Vulnerability, this increases his damage taken by 100 percent for 15 seconds. |grouprole DAMAGE
-|tip When adds are up these should always take priority to kill except if the boss is in Exoskeletion Vulnerability. |grouprole DAMAGE
+|tip At the start of the fight the boss will have a hardened skeleton, decreasing damage taken by 25 percent. This percent decreases the more he's damaged. |grouprole DAMAGE
+|tip Once he has no stacks he will go into Exoskeleton Vulnerability, increasing his damage taken by 100 percent for 15 seconds. |grouprole DAMAGE
+|tip When adds are up these should always take priority to kill except if the boss is in Exoskeleton Vulnerability. |grouprole DAMAGE
 confirm
 step
 map The Nighthold/1
@@ -4468,25 +4468,25 @@ confirm
 step
 kill Chronomatic Anomaly##104415 |goto 52.2,47.4
 _EVERYONE:_ |grouprole EVERYONE
-|tip Passage of time causes your cast, movement, and attack speeds as well as cooldowns to change. These changes occur after every Power Overwhelming. |grouprole EVERYONE
-|tip Burst of Time will apply to random raid members, this will apply a debuff once it runs out it will damage all players in the raid dealing more damage the closer the player is to the explosion. |grouprole EVERYONE
+|tip Passage of Time causes your cast, movement, and attack speeds (as well as cooldowns) to change. These changes occur after every Power Overwhelming. |grouprole EVERYONE
+|tip Burst of Time will apply to random raid members, which will apply a debuff once it runs out it will damage all players in the raid dealing more damage the closer the player is to the explosion. |grouprole EVERYONE
 |tip Run out of the raid and off to a side before Burst of Time runs out. |grouprole EVERYONE
-|tip Avoid Temporal Orbs, these will come out from the center pillar. |grouprole EVERYONE
+|tip Avoid Temporal Orbs, which will come out from the center pillar. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
-|tip A debuff called Time Release will apply to random raid members during the fight, this will absorb healing, to remove this you must heal through this absorb. |grouprole HEALER
+|tip A debuff called Time Release will apply to random raid members during the fight, which will absorb healing. To remove this you must heal through this absorb. |grouprole HEALER
 |tip This absorbtion debuff changes with each different Passage of Time phase. |grouprole HEALER
-|tip In the slow phase it will give everyone this debuff for a small amount of healing absorb, in the fast phase it will give a few people the debuff for a large amount of healing absorb. |grouprole HEALER
+|tip In the slow phase it will give everyone this debuff for a small amount of healing absorb. In the fast phase it will give a few people the debuff for a large amount of healing absorb. |grouprole HEALER
 |tip If Time Release is not healed in time it will explode dealing damage to the entire raid based off of the healing absorbtion remaining. |grouprole HEALER
-|tip Power Overwhelming will deal 15 percent increased raid wide damage with each stack, save cooldowns for later stacks. |grouprole HEALER
+|tip Power Overwhelming will deal 15 percent increased raid wide damage with each stack so save cooldowns for later stacks. |grouprole HEALER
 _TANK:_ |grouprole TANK
-|tip When tanking the boss he will apply Chronometic Particales, this deals damage over time and if the tank reaches 10 stacks they will instantly die and deal damage to the entire raid, taunt swap to avoid this. |grouprole TANK
-|tip Once the Waning TIme Partical add spawns move the boss to this add. |grouprole TANK
-|tip Once the Waning Time Partical dies it will spawn a Orb called a Temporal Charge, one of the tanks needs to pick this up. |grouprole TANK
-|tip The Temporal Charge will deal damage over time to the tank and once used will interrupt the bosses Power Overwhelming, you will want to do this when your raid is taking to much damage and can't hold out. |grouprole TANK
-|tip Once you use the Temporal Charge Power Overwhelming will stop channeling and the boss will take increased damage for a short time. |grouprole TANK
+|tip When tanking the boss he will apply Chronometric Particles, which deals damage over time, and if the tank reaches 10 stacks they will instantly die and deal damage to the entire raid. Taunt swap to avoid this. |grouprole TANK
+|tip Once the Waning Time Particle add spawns move the boss to this add. |grouprole TANK
+|tip Once the Waning Time Particle dies it will spawn an Orb called a Temporal Charge. One of the tanks needs to pick this up. |grouprole TANK
+|tip The Temporal Charge will deal damage over time to the tank and once used will interrupt the bosses Power Overwhelming. You will want to do this when your raid is taking too much damage and can't hold out. |grouprole TANK
+|tip Once you use the Temporal Charge, Power Overwhelming will stop channeling and the boss will take increased damage for a short time. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
-|tip Kill the Waning Time Partical as they come up, interrupt Warp Nightmare. |grouprole DAMAGE
-|tip Once the Waning Time Partical dies it will summon 4 Fragmented Time Particales, these need to die asap, you must also interrupt these when possible. |grouprole DAMAGE
+|tip Kill the Waning Time Particle as they come up, and interrupt Warp Nightmare. |grouprole DAMAGE
+|tip Once the Waning Time Particle dies it will summon 4 Fragmented Time Particle, which need to be killed ASAP. You must also interrupt these when possible. |grouprole DAMAGE
 confirm
 step
 map The Nighthold/1
@@ -4498,22 +4498,22 @@ confirm
 step
 kill Trilliax##104288 |goto The Nighthold/1 41.5,20.2
 _EVERYONE:_ |grouprole EVERYONE
-|tip Arcane Seepage will target random players and spawn a pool of arcane under them, this will last the entire fight. |grouprole EVERYONE
-|tip These Arcane Seepage pools deal damage if stood in, avoid these and avoid placing them in the middle of the room. |grouprole EVERYONE
-|tip Eat Toxic Slices, to eat them run over these they are green cake that will spawn all around the room periodically. |grouprole EVERYONE
-|tip If you do not have the Stuffed debuff eat a cake this is the main priority in this fight. |grouprole EVERYONE
-|tip He will periodically pick 2 players and put Arcing Bonds on them, these players must run on top of each other to prevent a high amount of damage, these players must remain stacked until this debuff goes off. |grouprole EVERYONE
-|tip Trilliax will sometimes jump into the middle of the room and start casting Annihilation, this will deal a huge amount of damage every .3 seconds to anyone standing in it. Avoid getting hit by this by standing on one of his sides. |grouprole EVERYONE
-|tip Watch out for Scrubbers about to explode click these to absorb the explosion, you may need to use a minor cooldown for this. |grouprole EVERYONE
+|tip Arcane Seepage will target random players and spawn a pool of arcane under them that will last the entire fight. |grouprole EVERYONE
+|tip These Arcane Seepage pools deal damage if stood in. Avoid these and avoid placing them in the middle of the room. |grouprole EVERYONE
+|tip Eat Toxic Slices by running over them. They look like green cake that will spawn all around the room periodically. |grouprole EVERYONE
+|tip If you do not have the Stuffed debuff eat a cake. This is the main priority in this fight. |grouprole EVERYONE
+|tip He will periodically pick 2 players and put Arcing Bonds on them. These players must run on top of each other to prevent a high amount of damage, and remain stacked until this debuff goes off. |grouprole EVERYONE
+|tip Trilliax will sometimes jump into the middle of the room and start casting Annihilation, which will deal a huge amount of damage every .3 seconds to anyone standing in it. Avoid getting hit by this by standing on one of his sides. |grouprole EVERYONE
+|tip Watch out for Scrubbers about to explode. Click these to absorb the explosion. You may need to use a minor cooldown for this. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
-|tip Watch out for Scrubbers that are about to explode, if they do they will deal a high amount of damage to the raid. |grouprole HEALER
+|tip Watch out for Scrubbers that are about to explode because if they do they will deal a high amount of damage to the raid. |grouprole HEALER
 _TANK:_ |grouprole TANK
-|tip Tank swap Arcane Slice debuffs. And be on top of the other tank when Arcane Slice goes out. |grouprole TANK
+|tip Tank swap Arcane Slice debuffs and be on top of the other tank when Arcane Slice goes out. |grouprole TANK
 |tip Face the boss away from the raid. |grouprole TANK
-|tip Tank the boss on the outer circle and kit him every few seconds when there gets to be to many Arcane Seepage pools for the melee to attack the boss. |grouprole TANK
+|tip Tank the boss on the outer circle and kite him every few seconds when there gets to be too many Arcane Seepage pools for the melee to attack the boss. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
-|tip Only target the boss, do not damage the adds that come out. |grouprole DAMAGE
-|tip Ranged dps that are effected by Sterilize will need to follow the Scrubbers that come out and stand next to them to drain their mana. |grouprole DAMAGE
+|tip Only target the boss and do not damage the adds that come out. |grouprole DAMAGE
+|tip Ranged DPS that are affected by Sterilize will need to follow the Scrubbers that come out and stand next to them to drain their mana. |grouprole DAMAGE
 confirm
 step
 map The Nighthold/1
@@ -4542,23 +4542,23 @@ _DAMAGE:_ |grouprole DAMAGE
 |tip Damage priority in this fight will always be adds before the boss. |grouprole DAMAGE
 _Phase 1_
 _EVERYONE:_ |grouprole EVERYONE
-|tip Mark of Frost will apply to 2 players, this will deal stacking damage overtime until transfered. |grouprole EVERYONE
-|tip To transfer Mark of Frost stack on top of the other player with Mark of Frost. |grouprole EVERYONE
-|tip She will duplicate the Mark of Frost applying it to more players, try to move out of melee range to avoid premature transfers. |grouprole EVERYONE
-|tip If you were effected by Mark of Frost when she casts Detonate be sure to spread out and get away from the melee, this will leave a frost pool on the ground. |grouprole EVERYONE
-|tip After a bit these frost pools will spawn adds, these adds will sometimes grow and create a circle of frost, anyone that hits the edge of this circle will become frozen. |grouprole EVERYONE
+|tip Mark of Frost will apply to 2 players and deal stacking damage overtime until transfered. |grouprole EVERYONE
+|tip To transfer Mark of Frost, stack on top of the other player with Mark of Frost. |grouprole EVERYONE
+|tip She will duplicate the Mark of Frost, applying it to more players. Try to move out of melee range to avoid premature transfers. |grouprole EVERYONE
+|tip If you were affected by Mark of Frost when she casts Detonate be sure to spread out and get away from the melee, as this will leave a frost pool on the ground. |grouprole EVERYONE
+|tip After a bit, these frost pools will spawn adds and will sometimes grow and create a circle of frost. Anyone that hits the edge of this circle will become frozen. |grouprole EVERYONE
 _Phase 2_
 _EVERYONE:_ |grouprole EVERYONE
-|tip She will target a random player with Searing Brand, she will then charge that player, applying a debuff. |grouprole EVERYONE
-|tip She will then duplicate this spell charging multiple people. |grouprole EVERYONE
-|tip Players effected by this debuff will need to spread out as best as possible, when detonated these players will spawn Burning Ground that will then spawn adds. |grouprole EVERYONE
-|tip These adds target players with Pyroblast that need to be either interrupted or stunned, if 2 or more adds are to close to each other their damage and cast speed will be highly increased. |grouprole EVERYONE
+|tip She will target a random player with Searing Brand, then charge that player, applying a debuff. |grouprole EVERYONE
+|tip She will duplicate this spell charging multiple people. |grouprole EVERYONE
+|tip Players affected by this debuff will need to spread out as best as possible because when detonated these players will spawn Burning Ground which will spawn adds. |grouprole EVERYONE
+|tip These adds target players with Pyroblast that either need to be interrupted or stunned. If 2 or more adds are too close to each other their damage and cast speed will be highly increased. |grouprole EVERYONE
 _Phase 3_
 _EVERYONE:_ |grouprole EVERYONE
-|tip She will target a random player and summon an Arcane Orb under them, avoid standing in these. |grouprole EVERYONE
-|tip She will then Duplicate this ability and put multiple Arcane Orbs on the ground. |grouprole EVERYONE
-|tip She will then Detonate these orbs, they will fly in the air and retarget random players in the raid, once they hit the ground they will damage the entire raid. |grouprole EVERYONE
-|tip Once all of the Arcane Orbs have retargeted they will spawn the Arcane adds, these will stand still and cast Armageddon, if this casts completes it will knock everyone in the raid back and cause a huge amount of damage. |grouprole EVERYONE
+|tip She will target a random player and summon an Arcane Orb under them. Avoid standing in these. |grouprole EVERYONE
+|tip She will Duplicate this ability and put multiple Arcane Orbs on the ground. |grouprole EVERYONE
+|tip She will then Detonate the orbs, and they will fly in the air and retarget random players in the raid. Once they hit the ground they will damage the entire raid. |grouprole EVERYONE
+|tip Once all of the Arcane Orbs have retargeted they will spawn the Arcane adds, which will stand still and cast Armageddon. If this casts completes it will knock everyone in the raid back and cause a huge amount of damage. |grouprole EVERYONE
 confirm
 step
 map The Nighthold/3
@@ -4575,22 +4575,22 @@ _Phase 2 Frost Phase_
 _EVERYONE:_ |grouprole EVERYONE
 |tip Stack in 2 groups preventing damage from Frigid Nova and allowing the tanks to properly do their mechanics. |grouprole EVERYONE
 |tip If you get the debuff Icy Ejection you will need to move out of the group you were assigned to and away from anyone else before this expires. |grouprole EVERYONE
-|tip This debuff will deal damage every 2 seconds and deal a high amount of damage when it expires, also when it expires it will explode and damage anyone near you. |grouprole EVERYONE
-|tip This debuff also slows your movement speed drastically the longer it is on you. |grouprole EVERYONE
+|tip This debuff will deal damage every 2 seconds and deal a high amount of damage when it expires. Also, when it expires it will explode and damage anyone near you. |grouprole EVERYONE
+|tip This debuff slows your movement speed drastically the longer it is on you. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
-|tip When tanking the boss be sure to stay max range away to prevent other players of the raid getting hit by Iceburst, this will deal damage to you and anyone within 6 yards. |grouprole TANK
+|tip When tanking the boss, be sure to stay max range away to prevent other players of the raid getting hit by Iceburst, as this will deal damage to you and anyone within 6 yards. |grouprole TANK
 |tip Tank swap when Gravitational Pull is put on one of the tanks. |grouprole TANK
-|tip When Gravitational Pull is applied be sure to run away, there will be 3 cycles of 2 debuffs that apply every few seconds. |grouprole TANK
-|tip When the debuff turns into Comet Impact stay away from everyone else, this will deal a high amount of damage to you. |grouprole TANK
-|tip This debuff once it hits will turn into Absolute Zero, you will need to run into a ground of people to get rid of this debuff or it will kill you pretty quickly. |grouprole TANK
-|tip When getting rid of Aboslute Zero do not hit the same group twice, this will freeze those players for 10 seconds. |grouprole TANK
+|tip When Gravitational Pull is applied be sure to run away. There will be 3 cycles of 2 debuffs that apply every few seconds. |grouprole TANK
+|tip When the debuff turns into Comet Impact stay away from everyone else. This will deal a high amount of damage to you. |grouprole TANK
+|tip Once this debuff hits it will turn into Absolute Zero, and you will need to run into a group of people to get rid of this debuff or it will kill you pretty quickly. |grouprole TANK
+|tip When getting rid of Aboslute Zero do not hit the same group twice, as this will freeze those players for 10 seconds. |grouprole TANK
 Click here for the Phase 3 abilities |confirm
 step
 kill Star Augur Etraeus##103758 |goto The Nighthold/6 37.0,21.0
 _Phase 3 Fel Phase_
 _EVERYONE:_ |grouprole EVERYONE
-|tip If you get the debuff Fel Ejection try to place the Felflame Pools close together, you will drop several of them, studder step to avoid taking damage. |grouprole EVERYONE
-|tip When she casts Fel Nova run to the edge of the room, this will reduce the damage you take by a significent amount. |grouprole EVERYONE
+|tip If you get the debuff Fel Ejection try to place the Felflame Pools close together. You will drop several of them, so studder step to avoid taking damage. |grouprole EVERYONE
+|tip When she casts Fel Nova run to the edge of the room, as this will reduce the damage you take by a significent amount. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
 |tip If you get the Gravitational Pull debuff use this to destroy some of the Felflame Pools dropped by other raid members. |grouprole TANK
 Click here for the Phase 4 abilities |confirm
@@ -4600,11 +4600,11 @@ _Phase 4 Void Phase_
 _EVERYONE:_ |grouprole EVERYONE
 |tip Face away from the Thing that Should Not Be when it is casting Witness the Void. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
-|tip If infected with Gravitational Pull go to the edge of the room before it expires, this will summon an add, tank this add there and do not bring it close to the boss. |grouprole TANK
+|tip If infected with Gravitational Pull, go to the edge of the room before it expires. This will summon an add, which you should tank there and not bring it close to the boss. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
-|tip Kill the Thing that Should Not Be when it spawns asap. |grouprole DAMAGE
+|tip Kill the Thing that Should Not Be when it spawns ASAP. |grouprole DAMAGE
 _HEALER:_ |grouprole HEALER
-|tip The add will cast Witness the Void this will deal more damage with each cast be prepared for this. |grouprole HEALER
+|tip The add will cast Witness the Void, which deals more damage with each cast, so be prepared for this. |grouprole HEALER
 confirm
 step
 map The Nighthold/3
@@ -4619,22 +4619,22 @@ step
 kill High Botanist Tel'arn##104528 |goto The Nighthold/4 62.0,39.7
 There are 3 phases to this fight phase 2 starting at 75 percent and phase 3 starting at 50 percent
 _EVERYONE:_ |grouprole EVERYONE
-|tip Solar Flare will target a random player and collapse on that area avoid the yellow swirls on the ground. |grouprole EVERYONE
-|tip Controlled Chaos will target a random player and create a purple damage area, this will expand 3 times, don't stand in these. |grouprole EVERYONE
-|tip If fixated by Parasitic Fetter run away from it, if it gets into melee range of you it will reapply the root and when that root is dispelled it will summon 2 more adds. |grouprole EVERYONE
+|tip Solar Flare will target a random player and collapse on that area. Avoid the yellow swirls on the ground. |grouprole EVERYONE
+|tip Controlled Chaos will target a random player and create a purple damage area, which will expand 3 times. Don't stand in these. |grouprole EVERYONE
+|tip If fixated by Parasitic Fetter run away from it. If it gets into melee range it will root you again and once dispelled it will summon 2 more adds. |grouprole EVERYONE
 _Phase 3_ |grouprole EVERYONE
-|tip Toxic Spores will spawn around the room, avoid these, if the fight lasts to long some of these might need to be cleared, use some sort of immunity to clear them. |grouprole EVERYONE
-|tip If you are targeted by Call of Night you must stand on someone else that is not effected by this or it will deal damage to the entire raid. |grouprole EVERYONE
+|tip Toxic Spores will spawn around the room, so you'll want to avoid these. If the fight lasts too long some of these might need to be cleared. Use some sort of immunity to clear them. |grouprole EVERYONE
+|tip If you are targeted by Call of Night you must stand on someone else that is not affected by this or it will deal damage to the entire raid. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
-|tip Parasitic Fetter will be cast on a random ranged player, this needs to be dispelled asap. This will root the player until dispelled and when dispelled it will summon 2 adds. |grouprole HEALER
+|tip Parasitic Fetter will be cast on a random ranged player and needs to be dispelled ASAP. This will root the player until dispelled and when dispelled it will summon 2 adds. |grouprole HEALER
 |tip Be ready to use cooldowns when multiple abilities are cast close together. |grouprole HEALER
 _TANK:_ |grouprole TANK
-|tip The original High Botanist will apply Recursive Strikes with each auto attack, this will need to be taunt swapped at around 10 or so stacks. |grouprole TANK
+|tip The original High Botanist will apply Recursive Strikes with each auto attack, which will need to be taunt swapped at around 10 or so stacks. |grouprole TANK
 _Phase 3_ |grouprole TANK
-|tip Move the bosses out of Grace of Nature when it is put on the ground, this will look like a green circle, this will heal the bosses for a percent of their hp per second. |grouprole TANK
+|tip Move the bosses out of Grace of Nature when it is put on the ground. This will look like a green circle and will heal the bosses for a percent of their HP per second. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
-|tip All ranged dps must spread out around the room and stand out of the melee. |grouprole DAMAGE
-|tip Adds are priority in this fight as soon as the parasites spawn kill them, they can be slowed, stunned, or rooted. |grouprole DAMAGE
+|tip All ranged DPS must spread out around the room and stand out of melee range. |grouprole DAMAGE
+|tip Adds are priority in this fight, so as soon as the parasites spawn, kill them. They can be slowed, stunned, or rooted. |grouprole DAMAGE
 _Phase 2_ |grouprole DAMAGE
 |tip When Plasma Spheres spawn kill them one at a time, not at the same time. |grouprole DAMAGE
 confirm
@@ -4652,18 +4652,18 @@ confirm
 step
 kill Krosus##101002 |goto The Nighthold/3 73.9,92.1
 _EVERYONE:_ |grouprole EVERYONE
-|tip He will cast an ability called Fel Beam picking a side, left or right, and shot a beam down that entire side. |grouprole EVERYONE
-|tip Avoid getting hit by this beam, you can tell what side he is going on by looking at what arm he pulls back when the cast is going. |grouprole EVERYONE
-|tip He will sometimes put a Orb of Destruction on a random ranged player, this player must run as far away from the raid as they can to minimize the damage it deals. |grouprole EVERYONE
+|tip He will cast an ability called Fel Beam on the left or right side, and shoot a beam down that entire side. |grouprole EVERYONE
+|tip Avoid getting hit by this beam. You can tell what side he is going on by looking at what arm he pulls back when the cast is going. |grouprole EVERYONE
+|tip He will sometimes put an Orb of Destruction on a random ranged player, and this player must run as far away from the raid as they can to minimize the damage it deals. |grouprole EVERYONE
 |tip When Burning Pitch comes out all raid members must find a green circle to stand in to prevent adds from spawning. |grouprole EVERYONE
-|tip A portion of the platform will get destroyed after every 3rd Slam, be sure to run to a safe part of the platform to avoid instant death from the destroyed platform. |grouprole EVERYONE
+|tip A portion of the platform will get destroyed after every 3rd Slam, so be sure to run to a safe part of the platform to avoid instant death from the destroyed platform. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
-|tip This is an intense healing fight be prepared to use cooldowns when he uses his abilities close together. |grouprole HEALER
+|tip This is an intense healing fight so be prepared to use cooldowns when he uses his abilities close together. |grouprole HEALER
 _TANK:_ |grouprole TANK
-|tip The tank with aggro will periodically get a debuff called Searing Brand, this will deal damage every second for 18 seconds, this effect stack. |grouprole TANK
-|tip It is recommended to tank swap the boss at around 6 stacks or whenever your debuff runs out. |grouprole TANK
-|tip The tanks should stay on different sides of the boss except for when dodging Fel Beam, this is to absorb the Slam. |grouprole TANK
-|tip When Slam is going out he will create 2 brown circles on the ground, one on each side of him, the tanks need to stand in these 2 swirls to prevent the raid from taking massive damage. |grouprole TANK
+|tip The tank with aggro will periodically get a debuff called Searing Brand which will deal damage every second for 18 seconds. This effect stacks. |grouprole TANK
+|tip It is recommended to tank swap the boss at around 6 stacks, or whenever your debuff runs out. |grouprole TANK
+|tip The tanks should stay on different sides of the boss except for when dodging Fel Beam to absorb the Slam. |grouprole TANK
+|tip When Slam is going out he will create 2 brown circles on the ground, one on each side of him. The tanks need to stand in these 2 swirls to prevent the raid from taking massive damage. |grouprole TANK
 |tip Use cooldowns when absorbing the Slam. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
 |tip If adds spawn from Burning Pitch these need to be stunned, interrupted, and killed. |grouprole DAMAGE
@@ -4684,20 +4684,20 @@ confirm
 step
 kill Tichondrius##103685 |goto The Nighthold/5 26.5,63.4
 _EVERYONE:_ |grouprole EVERYONE
-|tip Tichondrius corrupts several players with Carrion Plague periodically, this will deal damage to that player every second and be the target of Seeker Swarm. |grouprole EVERYONE
-|tip Players effected with Carrion Plague will need to stand on one side of the boss while the rest of the raid stays away from these players. |grouprole EVERYONE
-|tip When Seeker Swarm goes out it will target each player with Carrion Plague in a line, any player without Carrion Plague that gets hit by Seeker Swarm will gain the debuff of Carrion Plague. |grouprole EVERYONE
-|tip Sightless Watchers will appear in the last phase of this fight, do not stand in it Ring of Shadows. |grouprole EVERYONE
-|tip During Illusionary Night be sure to grab a Essence of Night from dying bats, when this phase ends it will provide a damage buff and a mana regeneration buff for 30 seconds. |grouprole EVERYONE
+|tip Tichondrius corrupts several players with Carrion Plague periodically, which will deal damage to that player every second and make them a target of Seeker Swarm. |grouprole EVERYONE
+|tip Players affected with Carrion Plague will need to stand on one side of the boss while the rest of the raid stays away from these players. |grouprole EVERYONE
+|tip When Seeker Swarm goes out it will target each player with Carrion Plague in a line and any player without Carrion Plague that gets hit by Seeker Swarm will gain the Carrion Plague debuff. |grouprole EVERYONE
+|tip Sightless Watchers will appear in the last phase of this fight. Do not stand in the Ring of Shadows. |grouprole EVERYONE
+|tip During Illusionary Night be sure to grab an Essence of Night from dying bats. When this phase ends it will provide a damage buff and a mana regeneration buff for 30 seconds. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
-|tip When the Sightless Watcher is alive healers will gain a debuff called Burning Soul this needs to be dispelled asap, this will drain mana while active. |grouprole HEALER
+|tip When the Sightless Watcher is alive healers will gain a debuff called Burning Soul that needs to be dispelled ASAP because it will drain mana while active. |grouprole HEALER
 |tip Healers with Burning Soul will need to move at least 8 yards away from everyone else in the raid. |grouprole HEALER
 _TANK:_ |grouprole TANK
 |tip The tank with aggro will periodically gain a debuff called Feast of Blood which will summon 3 blood adds. |grouprole TANK
 |tip When this happens you must move away from the boss and the other tank must taunt off of you. |grouprole TANK
-|tip Stay out away from the boss until these blood adds are dead, in phases 2 and 3 there will be extra adds pick these up. |grouprole TANK
-|tip In the 2nd phase Felsworn Spellguards will spawn these will apply Volatile Wounds to their target increasing damage taken, when this debuff expires it will leave a Nether Zone on the ground. |grouprole TANK
-|tip Try to place these on the outside of the room, move out of this when it is dropped. |grouprole TANK
+|tip Stay out away from the boss until these blood adds are dead. In phases 2 and 3 there will be extra adds you will need to pick up. |grouprole TANK
+|tip In the 2nd phase, Felsworn Spellguards will spawn and apply Volatile Wounds to their target, increasing damage taken. When this debuff expires it will leave a Nether Zone on the ground. |grouprole TANK
+|tip Try to place these on the outside of the room and move away from them when they are dropped. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
 |tip Ranged DPS should focus on killing the adds when they are up. |grouprole DAMAGE
 |tip During Illusionary Night kill as many bats as possible in the 30 seconds provided. |grouprole DAMAGE
@@ -4719,47 +4719,47 @@ step
 kill Grand Magistrix Elisande##110965 |goto The Nighthold/7 49.3,53.0
 _Every Phase_
 _EVERYONE:_ |grouprole EVERYONE
-|tip Two adds will periodically spawn, one slow add which stands still, and one fast add which can be tanked. |grouprole EVERYONE
-|tip The Recursive Elemental, the slow add, will cast Blast this needs to be interrupted. |grouprole EVERYONE
-|tip Once killed this add spawns a slow bubble, if stood in you will recieve a slow debuff. |grouprole EVERYONE
-|tip The Expedient Elemental, the fast add, the longer this add is alive the more damage his aoe ability will do. |grouprole EVERYONE
-|tip Once killed this add spawns a fast bubble, if stood in you will gain a speed increase buff. |grouprole EVERYONE
+|tip Two adds will periodically spawn: one slow add, which stands still, and one fast add, which can be tanked. |grouprole EVERYONE
+|tip The Recursive Elemental, the slow add, will cast Blast which needs to be interrupted. |grouprole EVERYONE
+|tip Once killed, this add spawns a slow bubble, and if you stand in it you will recieve a slow debuff. |grouprole EVERYONE
+|tip The Expedient Elemental is the fast add and the longer this add is alive the more damage his AOE ability will do. |grouprole EVERYONE
+|tip Once killed, this add spawns a fast bubble, and if you stand in it you will gain a speed increase buff. |grouprole EVERYONE
 _Phase 1_
 _EVERYONE:_ |grouprole EVERYONE
 |tip Elisande will periodically summon an Arcanetic Ring which will slowly collapse inward on her location. |grouprole EVERYONE
-|tip To avoid this stand behind the Slow Bubble that appears from kill the slow add, this will slow down some of the rings allowing you to escape through a safe spot. |grouprole EVERYONE
-|tip You can also obtain a fast buff to allow yourself to move more quickly to saftey. |grouprole EVERYONE
-|tip Spanning Sigularities will spawn on top of random players, these need to be baited to the outside of the room, if they are further out there is no need to soak the damage. |grouprole EVERYONE
+|tip To avoid this, stand behind the Slow Bubble that appears from killing the slow add. This will slow down some of the rings allowing you to escape through a safe spot. |grouprole EVERYONE
+|tip You can also obtain a fast buff to allow yourself to move more quickly to safety. |grouprole EVERYONE
+|tip Spanning Sigularities will spawn on top of random players. These need to be baited to the outside of the room. If they are further out there is no need to soak the damage. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
-|tip Elisande will apply a tank debuff dealing damage every second this debuff needs to be tank swapped to avoid to many stacks. |grouprole TANK
+|tip Elisande will apply a tank debuff dealing damage every second. This debuff needs to be tank swapped to avoid too many stacks. |grouprole TANK
 Click here for the Phase 2 abilities |confirm
 step
 kill Grand Magistrix Elisande##110965 |goto The Nighthold/7 49.3,53.0
 _Phase 2_ Starts after the first _Time Stop_
 _EVERYONE:_ |grouprole EVERYONE
 |tip Elisande will periodically summon an Arcanetic Ring which will slowly collapse inward on her location. |grouprole EVERYONE
-|tip To avoid this stand behind the Slow Bubble that appears from killing the slow add, this will slow down some of the rings allowing you to escape through a safe spot. |grouprole EVERYONE
-|tip You can also obtain a fast buff to allow yourself to move more quickly to saftey. |grouprole EVERYONE
-|tip Epocheric Orbs will periodically spawn all around the room, one player per orb should stand in the circle as it is falling down to catch it. |grouprole EVERYONE
+|tip To avoid this, stand behind the Slow Bubble that appears from killing the slow add, which will slow down some of the rings allowing you to escape through a safe spot. |grouprole EVERYONE
+|tip You can also obtain a fast buff to allow yourself to move more quickly to safety. |grouprole EVERYONE
+|tip Epocheric Orbs will periodically spawn all around the room and one player per orb should stand in the circle as it is falling down to catch it. |grouprole EVERYONE
 |tip Elisande will periodically target several raid members and deal damage to them in a line with Delphuric Beam. |grouprole EVERYONE
 |tip Make sure not to overlap this line and not to stand inside it if not targeted. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
-|tip Taunt Elisande when the active tank gets the debuff "Ablating Explosion", if you get this debuff run away from everyone in the raid until this debuff expires. |grouprole TANK
+|tip Taunt Elisande when the active tank gets the debuff "Ablating Explosion". If you get this debuff, run away from everyone in the raid until this debuff expires. |grouprole TANK
 Click here for the Phase 3 abilities |confirm
 step
 kill Grand Magistrix Elisande##110965 |goto The Nighthold/7 49.3,53.0
 _Phase 3_ Starts after the second _Time Stop_
 _EVERYONE:_ |grouprole EVERYONE
 |tip Elisande will periodically summon an Arcanetic Ring which will slowly collapse inward on her location. |grouprole EVERYONE
-|tip To avoid this stand behind the Slow Bubble that appears from kill the slow add, this will slow down some of the rings allowing you to escape through a safe spot. |grouprole EVERYONE
-|tip You can also obtain a fast buff to allow yourself to move more quickly to saftey. |grouprole EVERYONE
-|tip Epocheric Orbs will periodically spawn all around the room, one player per orb should stand in the circle as it is falling down to catch it. |grouprole EVERYONE
-|tip Once caught each soaker will get a debuff increasing further damage from orbs by 100 percent for 1.5 minutes. |grouprole EVERYONE
-|tip Elisande will cast Ablative Pulse, this will need to be interrupted as much as possible to reduce damage taken by your tanks. |grouprole EVERYONE
-|tip The boss will apply a debuff periodically to random raid members called "Permelative Torment" this will deal a high amount of damage to these members for the duration. |grouprole EVERYONE
-|tip If applied with this debuff use cooldowns when needed, this can be deadly if combined with her other abilities. |grouprole EVERYONE
-|tip She will also apply Conflexive Burst to 3 players at a time, after 30 seconds this debuff will explode dealing over 3 million damage to the entire raid. |grouprole EVERYONE
-|tip To avoid these debuffs from going off at the same time 1 player must get the slow debuff, 1 player the fast buff, and 1 player with no bubble buff/debuff. |grouprole EVERYONE
+|tip To avoid this stand behind the Slow Bubble that appears from killing the slow add. This will slow down some of the rings allowing you to escape through a safe spot. |grouprole EVERYONE
+|tip You can also obtain a fast buff to allow yourself to move more quickly to safety. |grouprole EVERYONE
+|tip Epocheric Orbs will periodically spawn all around the room, and one player per orb should stand in the circle as it is falling down to catch it. |grouprole EVERYONE
+|tip Once caught, each soaker will get a debuff increasing further damage from orbs by 100 percent for 1.5 minutes. |grouprole EVERYONE
+|tip Elisande will cast Ablative Pulse which will need to be interrupted as much as possible to reduce damage taken by your tanks. |grouprole EVERYONE
+|tip The boss will apply a debuff periodically to random raid members called "Permelative Torment" and will deal a high amount of damage to these members for the duration. |grouprole EVERYONE
+|tip If applied with this debuff use cooldowns when needed. This can be deadly if combined with her other abilities. |grouprole EVERYONE
+|tip She will also apply Conflexive Burst to 3 players at a time and after 30 seconds this debuff will explode dealing over 3 million damage to the entire raid. |grouprole EVERYONE
+|tip To avoid these debuffs from going off at the same time 1 player must get the slow debuff, 1 player the fast buff, and 1 player no bubble buff/debuff. |grouprole EVERYONE
 confirm
 step
 map The Nighthold/5
@@ -4770,82 +4770,82 @@ Click the Orb, teleport to the Font of Night and arrive at Gul'dans platform |go
 step
 kill Gul'dan##105503 |goto The Nighthold/9 49.3,52.2
 |tip Each role will get an extra action button, one for damage, healers, and tanks. |grouprole EVERYONE
-|tip The Tank ability when used will absorb all damage taken for 6 seconds. |grouprole TANK
-|tip The Healer ability when used will create a purple barrier around you absorbing just under 1 million fire damage split between all raid members inside. |grouprole HEALER
-|tip The Damage ability when used will increase your attack, casting, and movement speed by 30 percent along with decreasing your cooldowns by 30 percent while this is active. |grouprole DAMAGE
+|tip The Tank ability will absorb all damage taken for 6 seconds. |grouprole TANK
+|tip The Healer ability will create a purple barrier around you, absorbing just under 1 million fire damage split between all raid members inside. |grouprole HEALER
+|tip The Damage ability will increase your attack, casting, and movement speed by 30 percent, along with decreasing your cooldowns by 30 percent while this is active. |grouprole DAMAGE
 |tip If you take any fire damage while this is active it will cancel. |grouprole DAMAGE
 _Phase 1_
 |tip Gul'dan will be active for about 20 seconds during this phase. |grouprole EVERYONE
 _EVERYONE:_ |grouprole EVERYONE
-|tip Gul'dan will Liquid Hellfire, this will target a random player and after a short time will fall down to the ground, this will deal damage to the entire raid based on how close each member is to the initial explosion. |grouprole EVERYONE
-|tip He will also cast Fel Efflux this will also target a random player and after a short time will shot out a line of flame, this will last for about 5 seconds and anyone standing within this flame will get dealt a huge amount of damage. |grouprole EVERYONE
-|tip Gul'dan will also summon 3 adds during this phase with Hand of Gul'dan, these adds will appear one by one: Fel Lord Kuraz'mal, Inquisitor Vethriz, and then D'zorykx the Trapper. |grouprole EVERYONE
-|tip D'zorykx the Trapper will drop Soul Vortex, this will suck in all players within range and dealing damage, if caught in the center you will gain a debuff increasing physical damage and dealing more damage every 3 seconds for 18 seconds. |grouprole EVERYONE
+|tip Gul'dan will cast Liquid Hellfire, which will target a random player and after a short time will fall down to the ground dealing damage to the entire raid based on how close each member is to the initial explosion. |grouprole EVERYONE
+|tip He will also cast Fel Efflux which will also target a random player and after a short time will shoot out a line of flame that will last for about 5 seconds and anyone standing within this flame will get dealt a huge amount of damage. |grouprole EVERYONE
+|tip Gul'dan will also summon 3 adds during this phase with Hand of Gul'dan, and these adds will appear one by one: Fel Lord Kuraz'mal, Inquisitor Vethriz, and then D'zorykx the Trapper. |grouprole EVERYONE
+|tip D'zorykx the Trapper will drop Soul Vortex, which will suck in all players within range and deal damage. If caught in the center you will gain a debuff increasing physical damage and dealing more damage every 3 seconds for 18 seconds. |grouprole EVERYONE
 |tip Run away from this ability. |grouprole EVERYONE
-|tip Don't stand in Fel Obelisk, these will spawn from Fel Lord Kuraz'mal. |grouprole EVERYONE
+|tip Don't stand in Fel Obelisk which spawn from Fel Lord Kuraz'mal. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
 |tip Pick up each of the adds when they appear from Hand of Gul'dan. |grouprole TANK
 |tip Try to tank these together to help kill them faster. |grouprole TANK
-|tip The tank on Fel Lord Kuraz'mal will need to use a defensive when about to be struck by Shatter Essence. |grouprole TANK
+|tip The tank on Fel Lord Kuraz'mal will need to use a defensive when they're about to be struck by Shatter Essence. |grouprole TANK
 _HEALER:_ |grouprole HEALER
 |tip Use your extra ability on the Liquid Hellfires to minimize the raid damage. |grouprole HEALER
-|tip Watch people that stand within the Fel Efflux these players will die quickly. |grouprole HEALER
-|tip Dispell Drain from players, this will be cast by Inquisitor Vethriz. |grouprole HEALER
+|tip Watch people that stand within the Fel Efflux because these players will die quickly. |grouprole HEALER
+|tip Dispell Drain from players, which is cast by Inquisitor Vethriz. |grouprole HEALER
 _DAMAGE:_ |grouprole DAMAGE
-|tip Kill Inquisitor Vethriz as soon as it appears, this should die before it gets to full energy. |grouprole DAMAGE
+|tip Kill Inquisitor Vethriz as soon as it appears. This should be killed before it gets to full energy. |grouprole DAMAGE
 Click here for the Phase 2 abilities |confirm
 step
 kill Gul'dan##105503 |goto The Nighthold/9 49.3,52.2
 _Phase 2_ Starts when all 3 adds are dead
-|tip After the 3 adds are dead be sure to huge the bubble in the middle so that you do not get knocked off the edge of the platform. |grouprole EVERYONE
+|tip After the 3 adds are dead, be sure to hug the bubble in the middle so that you do not get knocked off the edge of the platform. |grouprole EVERYONE
 _EVERYONE:_ |grouprole EVERYONE
-|tip Gul'dan will Liquid Hellfire, this will target a random player and after a short time will fall down to the ground, this will deal damage to the entire raid based on how close each member is to the initial explosion. |grouprole EVERYONE
-|tip Liquid Hellfire will become Empowered when further into this phase, this Empowered Liquid Hellfire will deal more damage and leave behind fire on the ground of the impact area. |grouprole EVERYONE
-|tip Gul'dan will cast Bonds of Hellfire on the active tank and a few other random raid members this will create a small circle that follows the player and a larger circle around the impact of the player. |grouprole EVERYONE
+|tip Gul'dan will cast Liquid Hellfire, which will target a random player and after a short time fall down to the ground dealing damage to the entire raid based on how close each member is to the initial explosion. |grouprole EVERYONE
+|tip Liquid Hellfire will become Empowered when further into this phasem dealing more damage and leaving behind fire on the ground of the impact area. |grouprole EVERYONE
+|tip Gul'dan will cast Bonds of Hellfire on the active tank and a few other random raid members creating a small circle that follows the player and a larger circle around the impact of the player. |grouprole EVERYONE
 |tip To remove this debuff they will need to run out of the larger circle, but other players will need to run into the smaller one to split the damage from removing this bond. |grouprole EVERYONE
-|tip The Bonds of Fel will become Empowered further into this phase, this Empowered Bonds of Fel will now also Knock these players effected back. |grouprole EVERYONE
+|tip The Bonds of Fel will become Empowered further into this phase, this Empowered Bonds of Fel will now also Knock those players affected back. |grouprole EVERYONE
 |tip Make sure your back is facing a direction that will not knock you off of the edge of the platform. |grouprole EVERYONE
-|tip Eye of Gul'dan will periodically spawn these will target random raid members and start pulsing damage onto them dealing damage in a 8 yard range to them. |grouprole EVERYONE
-|tip Spread out whenever Eyes are active, DO NOT break Bonds of Fel when these Eyes are out. |grouprole EVERYONE
-|tip The Empowered Eyes of Gul'dan will be only one big eye instead of a lot of little ones, this will do the same thing but do more damage to each target. |grouprole EVERYONE
-|tip Once these Empowered Eyes are at full energy they will make a copy of themselves, these copies do the exact same as the original. |grouprole EVERYONE
-|tip Hand of Gul'dan will summon a Dreadlord, this will cast Carrion Wave. |grouprole EVERYONE
+|tip Eye of Gul'dan will periodically spawn, targeting random raid members and pulsing damage onto them in a 8 yard range |grouprole EVERYONE
+|tip Spread out whenever Eyes are active and DO NOT break Bonds of Fel when these Eyes are out. |grouprole EVERYONE
+|tip The Empowered Eyes of Gul'dan will be only one big eye instead of a lot of little ones, and will do the same thing but more damage to each target. |grouprole EVERYONE
+|tip Once these Empowered Eyes are at full energy they will make a copy of themselves and do the exact same as the original. |grouprole EVERYONE
+|tip Hand of Gul'dan will summon a Dreadlord which will cast Carrion Wave. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
 |tip One tank should tank the boss while the other tanks the Dreadlords when they come out. |grouprole TANK
-|tip Whoever is tanking the Dreadlord should know that the damage and attack speed of the add will increase everytime it is interrupted, use your cooldowns near the end of each Dreadlords life. |grouprole TANK
+|tip Whoever is tanking the Dreadlord should know that the damage and attack speed of the add will increase everytime it is interrupted. Use your cooldowns near the end of each Dreadlords life. |grouprole TANK
 |tip Tank swaping should only occur when the active tank on Gul'dan gets Empowered Bonds of Fel. |grouprole TANK
-|tip Gul'dan will have an energy bar, if this bar gets full it will active Fel Scythe at full power to his current target. |grouprole TANK
-|tip The off tank will need to stand on top of the main tank around 40 to 50 percent energy to force activate Fel Scythe, this way his energy stays low and the damage is split between the 2 tanks. |grouprole TANK
-|tip Whenever he casts Fel Scythe he will gain an attack speed buff for 10 seconds, this buff stacks. |grouprole TANK
+|tip Gul'dan will have an energy bar and if this bar gets full it will activate Fel Scythe at full power to his current target. |grouprole TANK
+|tip The off tank will need to stand on top of the main tank at around 40 to 50 percent energy to force activate Fel Scythe. This is so his energy stays low and the damage is split between the 2 tanks. |grouprole TANK
+|tip Whenever he casts Fel Scythe he will gain an attack speed buff for 10 seconds which stacks. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
-|tip Switch to the adds that pop up, these take priority over anything else in this fight. |grouprole DAMAGE
+|tip Switch to the adds that pop up. These take priority over anything else in this fight. |grouprole DAMAGE
 |tip Interrupt Carrion Wave from the Dreadlords. |grouprole DAMAGE
 Click here for the Phase 3 abilities |confirm
 step
 kill Gul'dan##105503 |goto The Nighthold/9 49.3,52.2
 _Phase 3_ Starts at 40 percent health
 _EVERYONE:_ |grouprole EVERYONE
-|tip Eye of Gul'dan will periodically spawn these will target random raid members and start pulsing damage onto them dealing damage in a 8 yard range to them. |grouprole EVERYONE
+|tip Eye of Gul'dan will periodically spawn, targetting random raid members, and pulsing damage onto them in a 8 yard range. |grouprole EVERYONE
 |tip Spread out whenever Eyes are active. |grouprole EVERYONE
-|tip Once these Empowered Eyes are at full energy they will make a copy of themselves, these copies do the exact same as the original. |grouprole EVERYONE
+|tip Once these Empowered Eyes are at full energy they will make a copy of themselves and do the exact same as the original. |grouprole EVERYONE
 |tip The Well of Souls will take fragments of players all throughout this phase and put them into the center circle. |grouprole EVERYONE
-|tip These Souls need to be soaked by players, this can be done by standing within the Soul Well for 3 seconds, every 3 seconds someone stands within the Well they will absorb a Soul. |grouprole EVERYONE
-|tip Those that absorb the Souls will get a stacking debuff dealing damage every few seconds for 3 minutes, this will also reduce the damage taken to the raid during Black Harvest. |grouprole EVERYONE
-|tip Gul'dan will periodically cast Storm of the Destroyer, this will slowly cover the majority of the entire platform, all raid members need to run out of this area to avoid massive damage. |grouprole EVERYONE
+|tip These Souls need to be soaked by players, which can be done by standing within the Soul Well for 3 seconds. Every 3 seconds someone stands within the Well they will absorb a Soul. |grouprole EVERYONE
+|tip Those that absorb the Souls will get a stacking debuff dealing damage every few seconds for 3 minutes. This will also reduce the damage taken to the raid during Black Harvest. |grouprole EVERYONE
+|tip Gul'dan will periodically cast Storm of the Destroyer which will slowly cover the majority of the entire platform. All raid members need to run out of this area to avoid massive damage. |grouprole EVERYONE
 |tip This ability will also clear all Flames of Sargeras within the area. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
-|tip Flames of Sargeras will apply to random raid members throughout this phase, this will deal damage and create puddles of fire under their feet every few seconds. |grouprole HEALER
+|tip Flames of Sargeras will apply to random raid members throughout this phase, dealing damage, and creating puddles of fire under their feet every few seconds. |grouprole HEALER
 |tip These flames should be put on the outside of the room. |grouprole HEALER
-|tip During Black Harvest the entire raid will get dealt 3 ticks of massive damage, this damage increases for every soul within the Well. |grouprole HEALER
+|tip During Black Harvest the entire raid will get dealt 3 ticks of massive damage which increases for every soul within the Well. |grouprole HEALER
 |tip Watch players with a lot of Soul Fragment debuffs. |grouprole HEALER
 _TANK:_ |grouprole TANK
-|tip Tank the boss on the outside of the room, moving it when your area gets to overwhelmed with Flames of Sargeras. |grouprole TANK
-|tip Gul'dan will have an energy bar, if this bar gets full it will active Fel Scythe at full power to his current target. |grouprole TANK
-|tip The off tank will need to stand on top of the main tank around 40 to 50 percent energy to force activate Fel Scythe, this way his energy stays low and the damage is split between the 2 tanks. |grouprole TANK
+|tip Tank the boss on the outside of the room, moving it when your area gets too overwhelmed with Flames of Sargeras. |grouprole TANK
+|tip Gul'dan will have an energy bar and if this bar gets full it will activate Fel Scythe at full power to his current target. |grouprole TANK
+|tip The off tank will need to stand on top of the main tank at around 40 to 50 percent energy to force activate Fel Scythe. This way his energy stays low and the damage is split between the 2 tanks. |grouprole TANK
 |tip Whenever he casts Fel Scythe he will gain an attack speed buff for 10 seconds, this buff stacks. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
 |tip Switch and kill the Empowered Eyes of Gul'dan as fast as possible when they are up. |grouprole DAMAGE
-|tip Flames of Sargeras will apply to random raid members throughout this phase, this will deal damage and create puddles of fire under their feet every few seconds. |grouprole DAMAGE
+|tip Flames of Sargeras will apply to random raid members throughout this phase, dealing damage, and creating puddles of fire under their feet every few seconds. |grouprole DAMAGE
 |tip These flames should be put on the outside of the room. |grouprole DAMAGE
 confirm
 step
@@ -4872,28 +4872,28 @@ confirm
 step
 kill Skorpyron##102263 |goto 32.0,61.2
 _EVERYONE:_ |grouprole EVERYONE
-|tip Be sure to be in the inner circle of this boss room, never go into the outer circle. |grouprole EVERYONE
-|tip He will cast a spell called Shockwave when reaching full energy this will knock all players back into the wall if they are not protected by a Crystalline Fragment. |grouprole EVERYONE
+|tip Be sure to be in the inner circle of this boss room and never go into the outer circle. |grouprole EVERYONE
+|tip He will cast a spell called Shockwave when reaching full energy that will knock all players back into the wall if they are not protected by a Crystalline Fragment. |grouprole EVERYONE
 |tip Crystalline Fragments will come off the boss after he takes a certain amount of damage. |grouprole EVERYONE
 |tip There will be 2 types of Crystalline Fragments, Fire and Acidic. |grouprole EVERYONE
 |tip The Fire Fragments deal damage 5 yards around them, and shortly after Shockwave they will pulse and explode for about a million damage to anyone within 15 yards of them. |grouprole EVERYONE
 |tip The Acidic Fragments will deal damage to the entire raid every second they are up. They will stop pulsing damage when he changes skins back to Fire. |grouprole EVERYONE
-|tip He will also periodically cast a spell called Focus Blast, this will target a random player and start casting, at the end it will release a cone that will deal damage and stun any player in this. |grouprole EVERYONE
+|tip He will also periodically cast a spell called Focus Blast that will target a random player, start casting, and at the end it will release a cone that will deal damage and stun any player within in. |grouprole EVERYONE
 |tip Focus Blast can be avoided. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
-|tip When Crystalline Fragments come off the boss and land on the floor they will deal raid wide damage, be ready for when these come out. |grouprole HEALER
-|tip During Shockwave if any player gets knocked back they will most likely aggro extra adds be prepared to do a lot of tank healing. |grouprole HEALER
+|tip When Crystalline Fragments come off the boss and land on the floor they will deal raid wide damage, so be ready for when these come out. |grouprole HEALER
+|tip During Shockwave, if any player gets knocked back they will most likely aggro extra adds so be prepared to do a lot of tank healing. |grouprole HEALER
 _TANK:_ |grouprole TANK
 |tip There should be 1 tank on the boss and one tank on the adds that appear. |grouprole TANK
-|tip If you are the tanking on the boss face it away from the raid. |grouprole TANK
-|tip Skorpyron will do a a 3 strike cleave in front of him appling a debuff called Arcane Tether to any tank standing in front. |grouprole TANK
-|tip To remove this debuff simply run a few yards away from where it was applied, do not go back to where you were when obtaining this debuff. |grouprole TANK
+|tip If you are the one tanking the boss face it away from the raid. |grouprole TANK
+|tip Skorpyron will do a a 3 strike cleave, appling a debuff called Arcane Tether to any tank standing in front of him. |grouprole TANK
+|tip To remove this debuff simply run a few yards away from where it was applied. Do not go back to where you were when obtaining this debuff. |grouprole TANK
 |tip The Arcane Tether will remain for 15 seconds after it is applied. |grouprole TANK
-|tip The adds will apply a debuff dealing damage over time, this debuff stacks, if there are to many adds up be sure to pop a cooldown. |grouprole TANK
+|tip The adds will apply a debuff dealing damage over time which stacks. If there are too many adds up be sure to pop a cooldown. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
-|tip At the start of the fight the boss will have a hardened skeleton, decreasing damage taken by 25 percent, this percent decreases the more hes damaged. |grouprole DAMAGE
-|tip Once he is has no stacks he will go into Exoskeletion Vulnerability, this increases his damage taken by 100 percent for 15 seconds. |grouprole DAMAGE
-|tip When adds are up these should always take priority to kill except if the boss is in Exoskeletion Vulnerability. |grouprole DAMAGE
+|tip At the start of the fight the boss will have a hardened skeleton, decreasing damage taken by 25 percent. This percent decreases the more he's damaged. |grouprole DAMAGE
+|tip Once he has no stacks he will go into Exoskeleton Vulnerability, which increases his damage taken by 100 percent for 15 seconds. |grouprole DAMAGE
+|tip When adds are up these should always take priority to kill, except if the boss is in Exoskeleton Vulnerability. |grouprole DAMAGE
 confirm
 step
 map The Nighthold/1
@@ -4907,28 +4907,28 @@ confirm
 step
 kill Chronomatic Anomaly##104415 |goto 52.2,47.4
 _EVERYONE:_ |grouprole EVERYONE
-|tip Passage of time causes your cast, movement, and attack speeds as well as cooldowns to change. These changes occur after every Power Overwhelming. |grouprole EVERYONE
-|tip Burst of Time will apply to random raid members, this will apply a debuff once it runs out it will damage all players in the raid dealing more damage the closer the player is to the explosion. |grouprole EVERYONE
+|tip Passage of time causes your cast, movement, and attack speeds (as well as cooldowns) to change. These changes occur after every Power Overwhelming. |grouprole EVERYONE
+|tip Burst of Time will apply to random raid members and will apply a debuff once it runs out that will damage all players in the raid the closer the player is to the explosion. |grouprole EVERYONE
 |tip Run out of the raid and off to a side before Burst of Time runs out. |grouprole EVERYONE
-|tip Avoid Temporal Orbs, these will come out from the center pillar. |grouprole EVERYONE
-|tip Two adds will spawn, the group will need to split up and kill these 2 adds, they will spawn on opposite sides of the room. |grouprole EVERYONE
+|tip Avoid Temporal Orbs that come out from the center pillar. |grouprole EVERYONE
+|tip Two adds will spawn on opposite sides of the room which the group will need to split up and kill. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
-|tip A debuff called Time Release will apply to random raid members during the fight, this will absorb healing, to remove this you must heal through this absorb. |grouprole HEALER
-|tip This absorbtion debuff changes with each different Passage of Time phase. |grouprole HEALER
-|tip In the slow phase it will give everyone this debuff for a small amount of healing absorb, in the fast phase it will give a few people the debuff for a large amount of healing absorb. |grouprole HEALER
-|tip If Time Release is not healed in time it will explode dealing damage to the entire raid based off of the healing absorbtion remaining. |grouprole HEALER
-|tip Power Overwhelming will deal 50 percent increased raid wide damage with each stack, save cooldowns for later stacks. |grouprole HEALER
+|tip A debuff called Time Release will apply to random raid members during the fight and will absorb healing. To remove this you must heal through this absorb. |grouprole HEALER
+|tip This absorption debuff changes with each different Passage of Time phase. |grouprole HEALER
+|tip In the slow phase, it will give everyone this debuff for a small amount of healing absorb. In the fast phase, it will give a few people the debuff for a large amount of healing absorb. |grouprole HEALER
+|tip If Time Release is not healed in time it will explode, dealing damage to the entire raid based off of the healing absorption remaining. |grouprole HEALER
+|tip Power Overwhelming will deal 50 percent increased raid wide damage with each stack, Save cooldowns for later stacks. |grouprole HEALER
 _TANK:_ |grouprole TANK
-|tip When tanking the boss he will apply Chronometic Particales, this deals damage over time. |grouprole TANK
-|tip If the tank reaches 10 stacks they will instantly die and deal damage to the entire raid, taunt swap to avoid this. |grouprole TANK
-|tip Once the Waning TIme Partical add spawns move the boss to this add. |grouprole TANK
-|tip Once the Waning Time Partical dies it will spawn a Orb called a Temporal Charge, one of the tanks needs to pick this up. |grouprole TANK
+|tip When tanking the boss he will apply Chronometic Particles that deal damage over time. |grouprole TANK
+|tip If the tank reaches 10 stacks they will instantly die and deal damage to the entire raid. Taunt swap to avoid this. |grouprole TANK
+|tip Once the Waning Time Particle add spawns move the boss to this add. |grouprole TANK
+|tip Once the Waning Time Particle dies it will spawn an Orb called a Temporal Charge. One of the tanks needs to pick this up. |grouprole TANK
 |tip The Temporal Charge will deal damage over time to the tank and once used will interrupt the bosses Power Overwhelming. |grouprole TANK
-|tip You will want to do this when your raid is taking to much damage and can't hold out. |grouprole TANK
-|tip Once you use the Temporal Charge Power Overwhelming will stop channeling and the boss will take increased damage for a short time. |grouprole TANK
+|tip You will want to do this when your raid is taking too much damage and can't hold out. |grouprole TANK
+|tip Once you use the Temporal Charge, Power Overwhelming will stop channeling and the boss will take increased damage for a short time. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
-|tip Kill the Waning Time Partical as they come up, interrupt Warp Nightmare. |grouprole DAMAGE
-|tip Once the Waning Time Partical dies it will summon 4 Fragmented Time Particales, these need to die asap, you must also interrupt these when possible. |grouprole DAMAGE
+|tip Kill the Waning Time Particle as they come up and interrupt Warp Nightmare. |grouprole DAMAGE
+|tip Once the Waning Time Particle dies it will summon 4 Fragmented Time Particles, which need to be killed ASAP. You must also interrupt these when possible. |grouprole DAMAGE
 confirm
 step
 map The Nighthold/1
@@ -4940,27 +4940,27 @@ confirm
 step
 kill Trilliax##104288
 _EVERYONE:_ |grouprole EVERYONE
-|tip Arcane Seepage will target random players and spawn a pool of arcane under them, this will last the entire fight. |grouprole EVERYONE
-|tip These Arcane Seepage pools deal damage if stood in, avoid these and avoid placing them in the middle of the room. |grouprole EVERYONE
-|tip Eat Toxic Slices, to eat them run over these they are green cake that will spawn all around the room periodically. |grouprole EVERYONE
-|tip If you do not have the Stuffed debuff eat a cake this is the main priority in this fight. |grouprole EVERYONE
-|tip He will periodically pick 2 players and put Arcing Bonds on them, these players must run on top of each other to prevent a high amount of damage, these players must remain stacked until this debuff goes off. |grouprole EVERYONE
-|tip Trilliax will sometimes jump into the middle of the room and start casting Annihilation, this will deal a huge amount of damage every .3 seconds to anyone standing in it. Avoid getting hit by this by standing on one of his sides. |grouprole EVERYONE
-|tip Watch out for Scrubbers about to explode click these to absorb the explosion, you may need to use a minor cooldown for this. |grouprole EVERYONE
-|tip Periodically he will spawn a mimic of one of his personalitys, this add will need to be switched to and killed asap. |grouprole EVERYONE
-|tip The Cleaner add will spawn more Toxic Slices and will also cast Cleansing Rage which explodes any remaining cakes dealing damage to the raid. |grouprole EVERYONE
-|tip The Maniac add will cast Annihilation if left up to long it is the same as the bosses Annihilation. |grouprole EVERYONE
+|tip Arcane Seepage will target random players and spawn a pool of arcane under them that will last the entire fight. |grouprole EVERYONE
+|tip These Arcane Seepage pools deal damage if stood in, so avoid these and avoid placing them in the middle of the room. |grouprole EVERYONE
+|tip Eat Toxic Slices by running over them. They look like green slices of cake and will spawn all around the room periodically. |grouprole EVERYONE
+|tip If you do not have the Stuffed debuff, eat a cake. This is the main priority in this fight. |grouprole EVERYONE
+|tip He will periodically pick 2 players and put Arcing Bonds on them. These players must run on top of each other to prevent a high amount of damage, and must remain stacked until this debuff goes off. |grouprole EVERYONE
+|tip Trilliax will sometimes jump into the middle of the room and start casting Annihilation which will deal a huge amount of damage every .3 seconds to anyone standing in it. Avoid getting hit by this by standing on one of his sides. |grouprole EVERYONE
+|tip Watch out for Scrubbers about to explode. Click these to absorb the explosion. You may need to use a minor cooldown for this. |grouprole EVERYONE
+|tip Periodically, he will spawn a mimic of one of his personalities, which will need to be switched to and killed ASAP. |grouprole EVERYONE
+|tip The Cleaner add will spawn more Toxic Slices and will also cast Cleansing Rage which explodes any remaining cakes, dealing damage to the raid. |grouprole EVERYONE
+|tip The Maniac add will cast Annihilation if left up too long. It is the same as the bosses Annihilation. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
-|tip Watch out for Scrubbers that are about to explode if they do they will deal a high amount of damage to the raid. |grouprole HEALER
+|tip Watch out for Scrubbers that are about to explode. If they do they will deal a high amount of damage to the raid. |grouprole HEALER
 _TANK:_ |grouprole TANK
-|tip Tank swap Arcane Slice debuffs. And be on top of the other tank when Arcane Slice goes out. |grouprole TANK
+|tip Tank swap Arcane Slice debuffs and be on top of the other tank when Arcane Slice goes out. |grouprole TANK
 |tip Face the boss away from the raid. |grouprole TANK
-|tip Tank the boss on the outer circle and kit him every few seconds when there gets to be to many Arcane Seepage pools for the melee to attack the boss. |grouprole TANK
+|tip Tank the boss on the outer circle and kite him every few seconds when there gets to be too many Arcane Seepage pools for the melee to attack the boss. |grouprole TANK
 |tip One tank will need to tank the add when it pops up while the other tanks the boss. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
-|tip Only target the boss, do not damage the adds that come out. |grouprole DAMAGE
-|tip Ranged dps that are effected by Sterilize will need to follow the Scrubbers that come out and stand next to them to drain their mana. |grouprole DAMAGE
-|tip You will need to switch the the mimic add asap and kill it before it becomes a problem. |grouprole DAMAGE
+|tip Only target the boss. Do not damage the adds that come out. |grouprole DAMAGE
+|tip Ranged DPS that are affected by Sterilize will need to follow the Scrubbers that come out and stand next to them to drain their mana. |grouprole DAMAGE
+|tip You will need to switch to the mimic add ASAP and kill it before it becomes a problem. |grouprole DAMAGE
 confirm
 step
 map The Nighthold/1
@@ -4983,40 +4983,40 @@ Clear the trash on this side of the room and use it as the area to kill the boss
 kill Spellblade Aluriel##104881 |goto The Nighthold/3 37.2,25.0
 There will be a Frost, Fire, and Arcane phase in this fight.
 _ALL PHASES_
-|tip There will be an image of Spellblade that will spawn, this image will do a special ability during each phase of this fight.
+|tip There will be an image of Spellblade that will spawn and do a special ability during each phase of this fight.
 _TANK:_ |grouprole TANK
 |tip Annihilate will need to be tank swapped every 2 stacks. |grouprole TANK
 |tip You will need to tank swap the add and the boss every 2 stacks of Annihilate. |grouprole TANK
-|tip DO not seperate the boss and the Fel Soul more then 45 yards away from each other, they will gain a huge buff if this happens. |grouprole TANK
+|tip Do not seperate the boss and the Fel Soul more then 45 yards away from each other because they will gain a huge buff if this happens. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
 |tip Damage priority in this fight will always be the phase adds before the boss. |grouprole DAMAGE
-|tip Don't bother attacking the Fel Soul, kill the boss if you are not killing the phase adds. |grouprole DAMAGE
+|tip Don't bother attacking the Fel Soul. Kill the boss if you are not killing the phase adds. |grouprole DAMAGE
 Click here to see the Phases of this fight |confirm
 step
 kill Spellblade Aluriel##104881 |goto The Nighthold/3 37.2,25.0
 _Phase 1_
 _EVERYONE:_ |grouprole EVERYONE
-|tip Mark of Frost will apply to 2 players, this will deal stacking damage overtime until transfered. |grouprole EVERYONE
-|tip To transfer Mark of Frost stack on top of the other player with Mark of Frost. |grouprole EVERYONE
-|tip She will duplicate the Mark of Frost applying it to more players, try to move out of melee range to avoid premature transfers. |grouprole EVERYONE
-|tip If you were effected by Mark of Frost when she casts Detonate be sure to spread out and get away from the melee, this will leave a frost pool on the ground. |grouprole EVERYONE
-|tip After a bit these frost pools will spawn adds, these adds will sometimes grow and create a circle of frost, anyone that hits the edge of this circle will become frozen. |grouprole EVERYONE
-|tip The Fel Soul will use Whirling Barrage, this will spin toward random raid members, if anyone touches this they will take a large amount of damage and get knocked back. |grouprole EVERYONE
+|tip Mark of Frost will apply to 2 players and deal stacking damage overtime until transfered. |grouprole EVERYONE
+|tip To transfer Mark of Frost, stack on top of the other player with Mark of Frost. |grouprole EVERYONE
+|tip She will duplicate the Mark of Frost, applying it to more players. Try to move out of melee range to avoid premature transfers. |grouprole EVERYONE
+|tip If you were affected by Mark of Frost when she casts Detonate be sure to spread out and get away from the melee. This will leave a frost pool on the ground. |grouprole EVERYONE
+|tip After a bit, these frost pools will spawn adds and will sometimes grow, creating a circle of frost that will freeze anyone that hits the edge. |grouprole EVERYONE
+|tip The Fel Soul will use Whirling Barrage, which will spin toward random raid members, and if anyone touches this they will take a large amount of damage and get knocked back. |grouprole EVERYONE
 _Phase 2_
 _EVERYONE:_ |grouprole EVERYONE
-|tip She will target a random player with Searing Brand, she will then charge that player, applying a debuff. |grouprole EVERYONE
-|tip She will then duplicate this spell charging multiple people. |grouprole EVERYONE
-|tip Players effected by this debuff will need to spread out as best as possible, when detonated these players will spawn Burning Ground that will then spawn adds. |grouprole EVERYONE
-|tip These adds target players with Pyroblast that need to be either interrupted or stunned, if 2 or more adds are to close to each other their damage and cast speed will be highly increased. |grouprole EVERYONE
-|tip The Fel Soul will use Fel Stomp on random raid members leaving a green fire pool behind avoid standing in these. |grouprole EVERYONE
+|tip She will target a random player with Searing Brand, then charge that player, applying a debuff. |grouprole EVERYONE
+|tip She will duplicate this spell, charging multiple people. |grouprole EVERYONE
+|tip Players affected by this debuff will need to spread out as best as possible, because when detonated, these players will spawn Burning Ground that will spawn adds. |grouprole EVERYONE
+|tip These adds target players with Pyroblast that need to be either interrupted or stunned. If 2 or more adds are too close to each other their damage and cast speed will be highly increased. |grouprole EVERYONE
+|tip The Fel Soul will use Fel Stomp on random raid members leaving a green fire pool behind. Avoid standing in these. |grouprole EVERYONE
 _Phase 3_
 _EVERYONE:_ |grouprole EVERYONE
-|tip She will target a random player and summon an Arcane Orb under them, avoid standing in these. |grouprole EVERYONE
-|tip She will then Duplicate this ability and put multiple Arcane Orbs on the ground. |grouprole EVERYONE
-|tip She will then Detonate these orbs, they will fly in the air and retarget random players in the raid, once they hit the ground they will damage the entire raid. |grouprole EVERYONE
-|tip Once all of the Arcane Orbs have retargeted they will spawn the Arcane adds, these will stand still and cast Armageddon, if this casts completes it will knock everyone in the raid back and cause a huge amount of damage. |grouprole EVERYONE
-|tip The Fel Soul will periodically cast Fel Lash, this will deal 30 million damage split between all players in front of it. |grouprole EVERYONE
-|tip Everyone in the raid will need to tand in front of the Fel Soul to split the damage. |grouprole EVERYONE
+|tip She will target a random player and summon an Arcane Orb under them. Avoid standing in these. |grouprole EVERYONE
+|tip She will duplicate this ability and put multiple Arcane Orbs on the ground. |grouprole EVERYONE
+|tip She will then detonate these orbs and they will fly in the air, retargetting random players in the raid. Once they hit the ground they will damage the entire raid. |grouprole EVERYONE
+|tip Once all of the Arcane Orbs have retargeted they will spawn the Arcane adds. These will stand still and cast Armageddon, and if this casts completes it will knock everyone in the raid back causing a huge amount of damage. |grouprole EVERYONE
+|tip The Fel Soul will periodically cast Fel Lash and deal 30 million damage split between all players in front of it. |grouprole EVERYONE
+|tip Everyone in the raid will need to stand in front of the Fel Soul to split the damage. |grouprole EVERYONE
 confirm
 step
 map The Nighthold/3
@@ -5031,33 +5031,33 @@ kill Star Augur Etraeus##103758 |goto The Nighthold/6 37.0,21.0
 There are 4 phases to this fight phase 2 starts at 90 percent, phase 3 starts at 60 percent, and phase 4 starts at 30 percent.
 _Every Phase_
 _EVERYONE:_ |grouprole EVERYONE
-|tip There will be marks put on random players heads, these players need to stack on top of players with the same marks to remove this debuff. |grouprole EVERYONE
-|tip If this mark hits a player with a different mark or expries it will explode dealing damage to the entire raid and apply a debuff to everyone increasing damage taken by 200 percent for 2 minuties. |grouprole EVERYONE
+|tip There will be marks put on random players heads. These players need to stack on top of players with the same marks to remove this debuff. |grouprole EVERYONE
+|tip If this mark hits a player with a different mark or expires it will explode, dealing damage to the entire raid, and apply a debuff to everyone, increasing damage taken by 200 percent for 2 minuties. |grouprole EVERYONE
 Click here for Phase 2 abilities |confirm
 step
 kill Star Augur Etraeus##103758 |goto The Nighthold/6 37.0,21.0
 _Phase 2 Frost Phase_
 _EVERYONE:_ |grouprole EVERYONE
-|tip Stack in 2 groups preventing damage from Frigid Nova and allowing the tanks to properly do their mechanics. |grouprole EVERYONE
+|tip Stack in 2 groups, preventing damage from Frigid Nova, and allowing the tanks to properly do their mechanics. |grouprole EVERYONE
 |tip If you get the debuff Icy Ejection you will need to move out of the group you were assigned to and away from anyone else before this expires. |grouprole EVERYONE
-|tip This debuff will deal damage every 2 seconds and deal a high amount of damage when it expires, also when it expires it will explode and damage anyone near you. |grouprole EVERYONE
+|tip This debuff will deal damage every 2 seconds and deal a high amount of damage when it expires. Also, when it expires, it will explode and damage anyone near you. |grouprole EVERYONE
 |tip This debuff also slows your movement speed drastically the longer it is on you. |grouprole EVERYONE
-|tip When Icy Ejection expires it will spawn a Ice Crystal which will deal damage in a small area for the rest of the phase.
+|tip When Icy Ejection expires it will spawn an Ice Crystal that  will deal damage in a small area for the rest of the phase.
 _TANK:_ |grouprole TANK
-|tip When tanking the boss be sure to stay max range away to prevent other players of the raid getting hit by Iceburst, this will deal damage to you and anyone within 6 yards. |grouprole TANK
+|tip When tanking the boss be sure to stay max range away to prevent other players of the raid from getting hit by Iceburst, which will deal damage to you and anyone within 6 yards. |grouprole TANK
 |tip Tank swap when Gravitational Pull is put on one of the tanks. |grouprole TANK
-|tip When Gravitational Pull is applied be sure to run away, there will be 3 cycles of 2 debuffs that apply every few seconds. |grouprole TANK
-|tip When the debuff turns into Comet Impact stay away from everyone else, this will deal a high amount of damage to you. |grouprole TANK
-|tip This debuff once it hits will turn into Absolute Zero, you will need to run into a ground of people to get rid of this debuff or it will kill you pretty quickly. |grouprole TANK
-|tip When getting rid of Aboslute Zero do not hit the same group twice, this will freeze those players for 10 seconds. |grouprole TANK
+|tip When Gravitational Pull is applied be sure to run away. There will be 3 cycles of 2 debuffs that apply every few seconds. |grouprole TANK
+|tip When the debuff turns into Comet Impact stay away from everyone else. This will deal a high amount of damage to you. |grouprole TANK
+|tip Once this debuff hits it will turn into Absolute Zero, and you will need to run into a ground of people to get rid of it or it will kill you pretty quickly. |grouprole TANK
+|tip When getting rid of Aboslute Zero do not hit the same group twice, as this will freeze those players for 10 seconds. |grouprole TANK
 Click here for the Phase 3 abilities |confirm
 step
 kill Star Augur Etraeus##103758 |goto The Nighthold/6 37.0,21.0
 _Phase 3 Fel Phase_
 _EVERYONE:_ |grouprole EVERYONE
-|tip If you get the debuff Fel Ejection try to place the Felflame Pools close together, you will drop several of them, studder step to avoid taking damage. |grouprole EVERYONE
-|tip When she casts Fel Nova run to the edge of the room, this will reduce the damage you take by a significent amount. |grouprole EVERYONE
-|tip Fel Embers will fall from the sky, when they reach the group they will deal damage in that area of impact and place several Fel Pools down. |grouprole EVERYONE
+|tip If you get the debuff Fel Ejection try to place the Felflame Pools close together. You will drop several of them, so studder step to avoid taking damage. |grouprole EVERYONE
+|tip When she casts Fel Nova run to the edge of the room which will reduce the damage you take by a significent amount. |grouprole EVERYONE
+|tip Fel Embers will fall from the sky and when they reach the group they will deal damage in that area of impact and place several Fel Pools down. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
 |tip If you get the Gravitational Pull debuff use this to destroy some of the Felflame Pools dropped by other raid members. |grouprole TANK
 Click here for the Phase 4 abilities |confirm
@@ -5066,15 +5066,15 @@ kill Star Augur Etraeus##103758 |goto The Nighthold/6 37.0,21.0
 _Phase 4 Void Phase_
 _EVERYONE:_ |grouprole EVERYONE
 |tip Face away from the Thing that Should Not Be when it is casting Witness the Void. |grouprole EVERYONE
-|tip He will shot out World Devouring Force which will be a huge purple line that will one shot anyone inside this needs to be avoided at all costs. |grouprole EVERYONE
-|tip This ability will summon Remmanent of the Void which will target random raid members and create a line toward that player. |grouprole EVERYONE
+|tip He will shoot out World Devouring Force which will be a huge purple line that will one shot anyone inside. This needs to be avoided at all costs. |grouprole EVERYONE
+|tip This ability will summon Remnant of the Void which will target random raid members and create a line toward that player. |grouprole EVERYONE
 |tip Multiple people need to stand within this line to split the damage. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
-|tip If infected with Gravitational Pull go to the edge of the room before it expires, this will summon an add, tank this add there and do not bring it close to the boss. |grouprole TANK
+|tip If infected with Gravitational Pull, go to the edge of the room before it expires. This will summon an add that you should tank there and not bring close to the boss. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
-|tip Kill the Thing that Should Not Be when it spawns asap. |grouprole DAMAGE
+|tip Kill the Thing that Should Not Be when it spawns ASAP. |grouprole DAMAGE
 _HEALER:_ |grouprole HEALER
-|tip The add will cast Witness the Void this will deal more damage with each cast be prepared for this. |grouprole HEALER
+|tip The add will cast Witness the Void, dealing more damage with each cast, so be prepared for this. |grouprole HEALER
 confirm
 step
 map The Nighthold/3
@@ -5090,20 +5090,20 @@ kill High Botanist Tel'arn##104528 |goto The Nighthold/4 62.0,39.7
 All 3 bosses are alive at the beginning of the fight and all abilities are active throughout the entire fight.
 |tip Target and kill one at a time, as one dies the others still alive will gain full HP.
 _EVERYONE:_ |grouprole EVERYONE
-|tip Solar Flare will target a random player and collapse on that area avoid the yellow swirls on the ground. |grouprole EVERYONE
-|tip Controlled Chaos will target a random player and create a purple damage area, this will expand 3 times, don't stand in these. |grouprole EVERYONE
-|tip If fixated by Parasitic Fetter run away from it, if it gets into melee range of you it will reapply the root and when that root is dispelled it will summon 2 more adds. |grouprole EVERYONE
-|tip Toxic Spores will spawn around the room, avoid these, if the fight lasts to long some of these might need to be cleared, use some sort of immunity to clear them. |grouprole EVERYONE
-|tip If you are targeted by Call of Night you must stand on someone else that is not effected by this or it will deal damage to the entire raid. |grouprole EVERYONE
+|tip Solar Flare will target a random player and collapse on that area. Avoid the yellow swirls on the ground. |grouprole EVERYONE
+|tip Controlled Chaos will target a random player and create a purple damage area, expanding 3 times. Don't stand in these. |grouprole EVERYONE
+|tip If fixated by Parasitic Fetter run away from it because if it gets into melee range it will reapply the root and once dispelled it will summon 2 more adds. |grouprole EVERYONE
+|tip Toxic Spores will spawn around the room that you should avoid these. If the fight lasts too long some of these might need to be cleared. Use some sort of immunity to clear them. |grouprole EVERYONE
+|tip If you are targeted by Call of Night you must stand on someone else that is not affected by this or it will deal damage to the entire raid. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
-|tip Parasitic Fetter will be cast on a random ranged player, this needs to be dispelled asap. This will root the player until dispelled and when dispelled it will summon 2 adds. |grouprole HEALER
+|tip Parasitic Fetter will be cast on a random ranged player and needs to be dispelled ASAP, as it will root the player until dispelled and once dispelled it will summon 2 adds. |grouprole HEALER
 |tip Be ready to use cooldowns when multiple abilities are cast close together. |grouprole HEALER
 _TANK:_ |grouprole TANK
-|tip The original High Botanist will apply Recursive Strikes with each auto attack, this will need to be taunt swapped at around 10 or so stacks. |grouprole TANK
-|tip Move the bosses out of Grace of Nature when it is put on the ground, this will look like a green circle, this will heal the bosses for a percent of their hp per second. |grouprole TANK
+|tip The original High Botanist will apply Recursive Strikes with each auto attack. This will need to be taunt swapped at around 10 or so stacks. |grouprole TANK
+|tip Move the bosses out of Grace of Nature when it is put on the ground, which will look like a green circle, because it will heal the bosses for a percent of their HP per second. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
-|tip All ranged dps must spread out around the room and stand out of the melee. |grouprole DAMAGE
-|tip Adds are priority in this fight as soon as the parasites spawn kill them, they can be slowed, stunned, or rooted. |grouprole DAMAGE
+|tip All ranged DPS must spread out around the room and stand out of the melee. |grouprole DAMAGE
+|tip Adds are priority in this fight so as soon as the parasites spawn, kill them. They can be slowed, stunned, or rooted. |grouprole DAMAGE
 |tip When Plasma Spheres spawn kill them one at a time, not at the same time. |grouprole DAMAGE
 confirm
 step
@@ -5120,22 +5120,22 @@ confirm
 step
 kill Krosus##101002 |goto The Nighthold/3 73.9,92.1
 _EVERYONE:_ |grouprole EVERYONE
-|tip This is the first hard dps check of the instance, it is recommended to run a team of 2 tanks, 3 healers, and 15 DPS, each DPS should be doing around 600k DPS to meet the hard enrage timer. |grouprole EVERYONE
-|tip He will cast an ability called Fel Beam picking a side, left or right, and shot a beam down that entire side. |grouprole EVERYONE
-|tip Avoid getting hit by this beam, you can tell what side he is going on by looking at what arm he pulls back when the cast is going. |grouprole EVERYONE
-|tip He will sometimes put a Orb of Destruction on a random ranged player, this player must run as far away from the raid as they can to minimize the damage it deals. |grouprole EVERYONE
-|tip When Burning Pitch comes out all raid members must find a green circle to stand in to prevent adds from spawning. |grouprole EVERYONE
-|tip A portion of the platform will get destroyed after every 3rd Slam, be sure to run to a safe part of the platform to avoid instant death from the destroyed platform. |grouprole EVERYONE
+|tip This is the first hard DPS check of the instance. It is recommended to run a team of 2 tanks, 3 healers, and 15 DPS. Each DPS should be doing around 600k DPS to meet the hard enrage timer. |grouprole EVERYONE
+|tip He will cast an ability called Fel Beam on the left or right side and shoot a beam down that entire side. |grouprole EVERYONE
+|tip Avoid getting hit by this beam. You can tell what side he is going on by looking at what arm he pulls back when the cast is going. |grouprole EVERYONE
+|tip He will sometimes put an Orb of Destruction on a random ranged player. This player must run as far away from the raid as they can to minimize the damage it deals. |grouprole EVERYONE
+|tip When Burning Pitch comes out, all raid members must find a green circle to stand in to prevent adds from spawning. |grouprole EVERYONE
+|tip A portion of the platform will get destroyed after every 3rd Slam, so be sure to run to a safe part of the platform to avoid instant death from the destroyed platform. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
-|tip This is an intense healing fight be prepared to use cooldowns when he uses his abilities close together. |grouprole HEALER
+|tip This is an intense healing fight so be prepared to use cooldowns when he uses his abilities close together. |grouprole HEALER
 _TANK:_ |grouprole TANK
-|tip The tank with aggro will periodically get a debuff called Searing Brand, this will deal damage every second for 18 seconds, this effect stack. |grouprole TANK
-|tip It is recommended to tank swap the boss at around 6 stacks or whenever your debuff runs out. |grouprole TANK
-|tip The tanks should stay on different sides of the boss except for when dodging Fel Beam, this is to absorb the Slam. |grouprole TANK
-|tip When Slam is going out he will create 2 brown circles on the ground, one on each side of him, the tanks need to stand in these 2 swirls to prevent the raid from taking massive damage. |grouprole TANK
+|tip The tank with aggro will periodically get a debuff called Searing Brand, which will deal damage every second for 18 seconds. This effect stacks. |grouprole TANK
+|tip It is recommended to tank swap the boss at around 6 stacks, or whenever your debuff runs out. |grouprole TANK
+|tip The tanks should stay on different sides of the boss except for when dodging Fel Beam to absorb the Slam. |grouprole TANK
+|tip When Slam is going out he will create 2 brown circles on the ground, one on each side of him. The tanks need to stand in these 2 swirls to prevent the raid from taking massive damage. |grouprole TANK
 |tip Use cooldowns when absorbing the Slam.
 _DAMAGE:_ |grouprole DAMAGE
-|tip If adds spawn from Burning Pitch these need to be stunned, interrupted, and killed. |grouprole DAMAGE
+|tip If adds spawn from Burning Pitch they need to be stunned, interrupted, and killed. |grouprole DAMAGE
 |tip If there are any Accelerated Burning Embers alive these take priority to kill. |grouprole DAMAGE
 confirm
 step
@@ -5154,19 +5154,19 @@ confirm
 step
 kill Tichondrius##103685 |goto The Nighthold/5 26.5,63.4
 _EVERYONE:_ |grouprole EVERYONE
-|tip Tichondrius corrupts several players with Carrion Plague periodically, this will deal damage to that player every second and be the target of Seeker Swarm. |grouprole EVERYONE
-|tip Players effected with Carrion Plague will need to stand on one side of the boss while the rest of the raid stays away from these players. |grouprole EVERYONE
-|tip When Seeker Swarm goes out it will target each player with Carrion Plague in a line, any player without Carrion Plague that gets hit by Seeker Swarm will gain the debuff of Carrion Plague. |grouprole EVERYONE
-|tip Sightless Watchers will appear in the last phase of this fight, do not stand in it Ring of Shadows. |grouprole EVERYONE
-|tip During Illusionary Night be sure to grab a Essence of Night from dying bats, when this phase ends it will provide a damage buff and a mana regeneration buff for 30 seconds. |grouprole EVERYONE
+|tip Tichondrius corrupts several players with Carrion Plague periodically, dealing damage to those player every second, and making them a target of Seeker Swarm. |grouprole EVERYONE
+|tip Players affected with Carrion Plague will need to stand on one side of the boss while the rest of the raid stays away from these players. |grouprole EVERYONE
+|tip When Seeker Swarm goes out it will target each player with Carrion Plague in a line, and any player without Carrion Plague that gets hit by Seeker Swarm will gain the Carrion Plague debuff. |grouprole EVERYONE
+|tip Sightless Watchers will appear in the last phase of this fight. Do not stand in Ring of Shadows. |grouprole EVERYONE
+|tip During Illusionary Night, be sure to grab an Essence of Night from dying bats. When this phase ends it will provide a damage and a mana regeneration buff for 30 seconds. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
-|tip When the Sightless Watcher is alive healers will gain a debuff called Burning Soul this needs to be dispelled asap, this will drain mana while active. |grouprole HEALER
+|tip When the Sightless Watcher is alive healers will gain a debuff called Burning Soul that needs to be dispelled ASAP, as it will drain mana while active. |grouprole HEALER
 |tip Healers with Burning Soul will need to move at least 8 yards away from everyone else in the raid. |grouprole HEALER
 _TANK:_ |grouprole TANK
-|tip The tank with aggro will periodically gain a debuff called Feast of Blood which will summon 3 blood adds, when this happens you must move away from the boss and the other tank must taunt off of you. |grouprole TANK
-|tip Stay out away from the boss until these blood adds are dead, in phases 2 and 3 there will be extra adds pick these up. |grouprole TANK
-|tip In the 2nd phase Felsworn Spellguards will spawn these will apply Volatile Wounds to their target increasing damage taken, when this debuff expires it will leave a Nether Zone on the ground. |grouprole TANK
-|tip Try to place these on the outside of the room, move out of this when it is dropped. |grouprole TANK
+|tip The tank with aggro will periodically gain a debuff called Feast of Blood which will summon 3 blood adds. When this happens you must move away from the boss and the other tank must taunt off of you. |grouprole TANK
+|tip Stay out away from the boss until these blood adds are dead. In phases 2 and 3 there will be extra adds you need to pick up. |grouprole TANK
+|tip In the 2nd phase Felsworn Spellguards will spawn and apply Volatile Wounds to their target, increasing damage taken. When this debuff expires it will leave a Nether Zone on the ground. |grouprole TANK
+|tip Try to place these on the outside of the room, and move out of it when it is dropped. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
 |tip Ranged DPS should focus on killing the adds when they are up. |grouprole DAMAGE
 |tip During Illusionary Night kill as many bats as possible in the 30 seconds provided. |grouprole DAMAGE
@@ -5188,53 +5188,53 @@ step
 kill Grand Magistrix Elisande##110965 |goto The Nighthold/7 49.3,53.0
 _Every Phase_
 _EVERYONE:_ |grouprole EVERYONE
-|tip Two adds will periodically spawn, one slow add which stands still, and one fast add which can be tanked. |grouprole EVERYONE
+|tip Two adds will periodically spawn: one slow add, which stands still, and one fast add, which can be tanked. |grouprole EVERYONE
 |tip The Recursive Elemental, the slow add, will cast Blast and Recursive, these both need to be interrupted, although the Recursive cast takes priority. |grouprole EVERYONE
-|tip Once killed this add spawns a slow bubble, if stood in you will recieve a slow debuff. |grouprole EVERYONE
-|tip The Expedient Elemental, the fast add, will cast Expedient, this needs to be interrupted. |grouprole EVERYONE
-|tip The longer this add is alive the more damage his aoe ability will do. |grouprole EVERYONE
-|tip Once killed this add spawns a fast bubble, if stood in you will gain a speed increase buff. |grouprole EVERYONE
+|tip Once killed this add spawns a slow bubble, and if you stand in it you will get a slow debuff. |grouprole EVERYONE
+|tip The Expedient Elemental, the fast add, will cast Expedient, which needs to be interrupted. |grouprole EVERYONE
+|tip The longer this add is alive the more damage his AOE ability will do. |grouprole EVERYONE
+|tip Once killed, this add spawns a fast bubble, and if you stand in it you will get a speed increase buff. |grouprole EVERYONE
 _Phase 1_
 _EVERYONE:_ |grouprole EVERYONE
-|tip Elisande will periodically summon an Arcanetic Ring which will slowly collapse inward on her location. |grouprole EVERYONE
-|tip To avoid this stand behind the Slow Bubble that appears from killing the slow add, this will slow down some of the rings allowing you to escape through a safe spot. |grouprole EVERYONE
-|tip The Arcanetic Ring will also come back once it collapses, watch out for these rings. |grouprole EVERYONE
-|tip You can also obtain a fast buff to allow yourself to move more quickly to saftey. |grouprole EVERYONE
-|tip Spanning Sigularities will spawn on top of random players, these need to be baited to the outside of the room, if they are further out there is no need to soak the damage. |grouprole EVERYONE
+|tip Elisande will periodically summon an Arcanetic Ring that will slowly collapse inward on her location. |grouprole EVERYONE
+|tip To avoid this, stand behind the Slow Bubble that appears after killing the slow add. This will slow down some of the rings, allowing you to escape through a safe spot. |grouprole EVERYONE
+|tip The Arcanetic Ring will also come back once it collapses. Watch out for these rings. |grouprole EVERYONE
+|tip You can also obtain a fast buff to allow yourself to move more quickly to safety. |grouprole EVERYONE
+|tip Spanning Sigularities will spawn on top of random players and need to be baited to the outside of the room. If they are further out there is no need to soak the damage. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
-|tip Elisande will apply a tank debuff dealing damage every second this debuff needs to be tank swapped to avoid to many stacks. |grouprole TANK
+|tip Elisande will apply a tank debuff dealing damage every second. This debuff needs to be tank swapped to avoid too many stacks. |grouprole TANK
 Click here for the Phase 2 abilities |confirm
 step
 kill Grand Magistrix Elisande##110965 |goto The Nighthold/7 49.3,53.0
 _Phase 2_ Starts after the first _Time Stop_
 _EVERYONE:_ |grouprole EVERYONE
-|tip Elisande will periodically summon an Arcanetic Ring which will slowly collapse inward on her location. |grouprole EVERYONE
-|tip To avoid this stand behind the Slow Bubble that appears from killing the slow add, this will slow down some of the rings allowing you to escape through a safe spot. |grouprole EVERYONE
-|tip The Arcanetic Ring will also come back once it collapses, watch out for these rings. |grouprole EVERYONE
-|tip You can also obtain a fast buff to allow yourself to move more quickly to saftey. |grouprole EVERYONE
-|tip Epocheric Orbs will periodically spawn all around the room, one player per orb should stand in the circle as it is falling down to catch it. |grouprole EVERYONE
-|tip Once caught each soaker will get a debuff increasing further damage from orbs by 100 percent for 1.5 minutes. |grouprole EVERYONE
+|tip Elisande will periodically summon an Arcanetic Ring that will slowly collapse inward on her location. |grouprole EVERYONE
+|tip To avoid this, stand behind the Slow Bubble that appears after killing the slow add. This will slow down some of the rings, allowing you to escape through a safe spot. |grouprole EVERYONE
+|tip The Arcanetic Ring will also come back once it collapses. Watch out for these rings. |grouprole EVERYONE
+|tip You can also obtain a fast buff to allow yourself to move more quickly to safety. |grouprole EVERYONE
+|tip Epocheric Orbs will periodically spawn all around the room and one player per orb should stand in the circle as it is falling down to catch it. |grouprole EVERYONE
+|tip Once caught each soaker will get a debuff, increasing further damage from orbs by 100 percent for 1.5 minutes. |grouprole EVERYONE
 |tip Elisande will periodically target several raid members and deal damage to them in a line with Delphuric Beam. |grouprole EVERYONE
-|tip Make sure not to overlap this line and not to stand inside it if not targeted. |grouprole EVERYONE
+|tip Make sure not to overlap this line and not to stand inside of if not targeted. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
-|tip Taunt Elisande when the active tank gets the debuff "Ablating Explosion", if you get this debuff run away from everyone in the raid until this debuff expires. |grouprole TANK
+|tip Taunt Elisande when the active tank gets the debuff "Ablating Explosion". If you get this debuff, run away from everyone in the raid until this debuff expires. |grouprole TANK
 Click here for the Phase 3 abilities |confirm
 step
 kill Grand Magistrix Elisande##110965 |goto The Nighthold/7 49.3,53.0
 _Phase 3_ Starts after the second _Time Stop_
 _EVERYONE:_ |grouprole EVERYONE
-|tip Elisande will periodically summon an Arcanetic Ring which will slowly collapse inward on her location. |grouprole EVERYONE
-|tip To avoid this stand behind the Slow Bubble that appears from kill the slow add, this will slow down some of the rings allowing you to escape through a safe spot. |grouprole EVERYONE
-|tip The Arcanetic Ring will also come back once it collapses, watch out for these rings. |grouprole EVERYONE
-|tip You can also obtain a fast buff to allow yourself to move more quickly to saftey. |grouprole EVERYONE
-|tip Epocheric Orbs will periodically spawn all around the room, one player per orb should stand in the circle as it is falling down to catch it. |grouprole EVERYONE
-|tip Once caught each soaker will get a debuff increasing further damage from orbs by 100 percent for 1.5 minutes. |grouprole EVERYONE
-|tip Elisande will periodically target several raid members and deal damage to them in a line with Delphuric Beam, make sure not to overlap this line and not to stand inside it if not targeted. |grouprole EVERYONE
-|tip Elisande will cast Ablative Pulse, this will need to be interrupted as much as possible to reduce damage taken by your tanks.
-|tip The boss will apply a debuff periodically to random raid members called "Permelative Torment" this will deal a high amount of damage to these members for the duration. |grouprole EVERYONE
-|tip If applied with this debuff use cooldowns when needed, this can be deadly if combined with her other abilities. |grouprole EVERYONE
-|tip She will also apply Conflexive Burst to 3 players at a time, after 30 seconds this debuff will explode dealing over 3 million damage to the entire raid. |grouprole EVERYONE
-|tip To avoid these debuffs from going off at the same time 1 player must get the slow debuff, 1 player the fast buff, and 1 player with no bubble buff/debuff. |grouprole EVERYONE
+|tip Elisande will periodically summon an Arcanetic Ring that will slowly collapse inward on her location. |grouprole EVERYONE
+|tip To avoid this, stand behind the Slow Bubble that appears after killing the slow add. This will slow down some of the rings, allowing you to escape through a safe spot. |grouprole EVERYONE
+|tip The Arcanetic Ring will also come back once it collapses. Watch out for these rings. |grouprole EVERYONE
+|tip You can also obtain a fast buff to allow yourself to move more quickly to safety. |grouprole EVERYONE
+|tip Epocheric Orbs will periodically spawn all around the room, and one player per orb should stand in the circle as it is falling down to catch it. |grouprole EVERYONE
+|tip Once caught each soaker will get a debuff, increasing further damage from orbs by 100 percent for 1.5 minutes. |grouprole EVERYONE
+|tip Elisande will periodically target several raid members and deal damage to them in a line with Delphuric Beam. Make sure not to overlap this line and not to stand inside it if not targeted. |grouprole EVERYONE
+|tip Elisande will cast Ablative Pulse, which will need to be interrupted as much as possible to reduce damage taken by your tanks.
+|tip The boss will apply a debuff periodically to random raid members called "Permelative Torment" that will deal a high amount of damage to these members for the duration. |grouprole EVERYONE
+|tip If applied with this debuff use cooldowns when needed, as this can be deadly if combined with her other abilities. |grouprole EVERYONE
+|tip She will also apply Conflexive Burst to 3 players at a time, and after 30 seconds this debuff will explode, dealing over 3 million damage to the entire raid. |grouprole EVERYONE
+|tip To avoid these debuffs from going off at the same time 1 player must get the slow debuff, 1 player the fast buff, and 1 player the no bubble buff/debuff. |grouprole EVERYONE
 confirm
 step
 map The Nighthold/5
@@ -5244,85 +5244,85 @@ Click the Orb, teleport to the Font of Night and arrive at Gul'dans platform |go
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 step
 kill Gul'dan##105503 |goto The Nighthold/9 49.3,52.2
-|tip Each role will get an extra action button, one for damage, healers, and tanks. |grouprole EVERYONE
-|tip The Tank ability when used will absorb all damage taken for 6 seconds. |grouprole TANK
-|tip The Healer ability when used will create a purple barrier around you absorbing 30 million fire damage split between all raid members inside. |grouprole HEALER
-|tip The Damage ability when used will increase your attack, casting, and movement speed by 30 percent along with decreasing your cooldowns by 30 percent while this is active. |grouprole DAMAGE
+|tip Each role will get an extra action button: one for damage, healers, and tanks. |grouprole EVERYONE
+|tip The Tank ability will absorb all damage taken for 6 seconds. |grouprole TANK
+|tip The Healer ability will create a purple barrier around you absorbing 30 million fire damage split between all raid members inside. |grouprole HEALER
+|tip The Damage ability will increase your attack, casting, and movement speed by 30 percent, along with decreasing your cooldowns by 30 percent while this is active. |grouprole DAMAGE
 |tip If you take any fire damage while this is active it will cancel. |grouprole DAMAGE
 _Phase 1_
 _EVERYONE:_ |grouprole EVERYONE
-|tip Gul'dan will cast Liquid Hellfire, this will target a random player and after a short time will fall down to the ground, this will deal damage to the entire raid based on how close each member is to the initial explosion. |grouprole EVERYONE
-|tip Liquid Hellfire will become Empowered when further into this phase, this Empowered Liquid Hellfire will deal more damage and leave behind fire on the ground of the impact area. |grouprole EVERYONE
-|tip Gul'dan will cast Bonds of Hellfire on the active tank and a few other random raid members this will create a small circle that follows the player and a larger circle around the impact of the player. |grouprole EVERYONE
+|tip Gul'dan will cast Liquid Hellfire, targeting a random player, and after a short time it will fall down to the ground, dealing damage to the entire raid based on how close each member is to the initial explosion. |grouprole EVERYONE
+|tip Liquid Hellfire will become Empowered further into this phase, dealing more damage, and leaving behind fire on the ground of the impact area. |grouprole EVERYONE
+|tip Gul'dan will cast Bonds of Hellfire on the active tank and a few other random raid members creating a small circle that follows the player and a larger circle around the impact of the player. |grouprole EVERYONE
 |tip To remove this debuff they will need to run out of the larger circle, but other players will need to run into the smaller one to split the damage from removing this bond. |grouprole EVERYONE
-|tip The Bonds of Fel will become Empowered further into this phase, this Empowered Bonds of Fel will now also Knock these players effected back. |grouprole EVERYONE
+|tip The Bonds of Fel will become Empowered further into this phase and will then also Knock those players affected back. |grouprole EVERYONE
 |tip Make sure your back is facing a direction that will not knock you off of the edge of the platform. |grouprole EVERYONE
-|tip Eye of Gul'dan will periodically spawn these will target random raid members and start pulsing damage onto them dealing damage in a 8 yard range to them. |grouprole EVERYONE
-|tip Spread out whenever Eyes are active, DO NOT break Bonds of Fel when these Eyes are out. |grouprole EVERYONE
-|tip The Empowered Eyes of Gul'dan will be only one big eye instead of a lot of little ones, this will do the same thing but do more damage to each target. |grouprole EVERYONE
-|tip Once these Empowered Eyes are at full energy they will make a copy of themselves, these copies do the exact same as the original. |grouprole EVERYONE
-|tip Hand of Gul'dan will summon one of 2 adds either Fel Lord Kuraz'mal, or D'zorykx the Trapper. |grouprole EVERYONE
+|tip Eye of Gul'dan will periodically spawn, targetting random raid members, and start pulsing damage onto them dealing damage in an 8 yard range. |grouprole EVERYONE
+|tip Spread out whenever Eyes are active and DO NOT break Bonds of Fel when these Eyes are out. |grouprole EVERYONE
+|tip The Empowered Eyes of Gul'dan will be only one big eye instead of a lot of little ones, but will do the same thing just with more damage to each target. |grouprole EVERYONE
+|tip Once these Empowered Eyes are at full energy they will make a copy of themselves. The copies do the exact same as the original. |grouprole EVERYONE
+|tip Hand of Gul'dan will summon one of 2 adds, either Fel Lord Kuraz'mal, or D'zorykx the Trapper. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
 |tip One tank should tank the boss while the other tanks the adds when they come out. |grouprole TANK
 |tip Tank swaping should only occur when the active tank on Gul'dan gets Empowered Bonds of Fel. |grouprole TANK
-|tip Gul'dan will have an energy bar, if this bar gets full it will active Fel Scythe at full power to his current target. |grouprole TANK
-|tip The off tank will need to stand on top of the main tank around 40 to 50 percent energy to force activate Fel Scythe, this way his energy stays low and the damage is split between the 2 tanks. |grouprole TANK
-|tip Whenever he casts Fel Scythe he will gain an attack speed buff for 10 seconds, this buff stacks. |grouprole TANK
+|tip Gul'dan will have an energy bar and if this bar gets full it will activate Fel Scythe at full power to his current target. |grouprole TANK
+|tip The off tank will need to stand on top of the main tank at around 40 to 50 percent energy to force activate Fel Scythe, this way his energy stays low and the damage is split between the 2 tanks. |grouprole TANK
+|tip Whenever he casts Fel Scythe he will gain an attack speed buff for 10 seconds, which stacks. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
-|tip Switch to the adds that pop up, these take priority over anything else in this fight. |grouprole DAMAGE
+|tip Switch to the adds that pop up. These take priority over anything else in this fight. |grouprole DAMAGE
 Click here for the Phase 2 abilities |confirm
 step
 kill Gul'dan##105503 |goto The Nighthold/9 49.3,52.2
 _Phase 2_ Starts when Gul'dan is at 50 percent health
 _EVERYONE:_ |grouprole EVERYONE
-|tip Eye of Gul'dan will periodically spawn these will target random raid members and start pulsing damage onto them dealing damage in a 8 yard range to them. |grouprole EVERYONE
+|tip Eye of Gul'dan will periodically spawn, targeting random raid members, and start pulsing damage onto them, dealing damage in a 8 yard range. |grouprole EVERYONE
 |tip Spread out whenever Eyes are active. |grouprole EVERYONE
-|tip Once these Empowered Eyes are at full energy they will make a copy of themselves, these copies do the exact same as the original. |grouprole EVERYONE
+|tip Once these Empowered Eyes are at full energy they will make a copy of themselves. These copies do the exact same as the original. |grouprole EVERYONE
 |tip The Well of Souls will take fragments of players all throughout this phase and put them into the center circle. |grouprole EVERYONE
-|tip These Souls need to be soaked by players, this can be done by standing within the Soul Well for 3 seconds, every 3 seconds someone stands within the Well they will absorb a Soul. |grouprole EVERYONE
-|tip Those that absorb the Souls will get a stacking debuff dealing damage every few seconds for 3 minutes, this will also reduce the damage taken to the raid during Black Harvest. |grouprole EVERYONE
-|tip Gul'dan will periodically cast Storm of the Destroyer, this will slowly cover the majority of the entire platform, all raid members need to run out of this area to avoid massive damage. |grouprole EVERYONE
+|tip These Souls need to be soaked by players, which can be done by standing within the Soul Well for 3 seconds. Every 3 seconds someone stands within the Well they will absorb a Soul. |grouprole EVERYONE
+|tip Those that absorb the Souls will get a stacking debuff dealing damage every few seconds for 3 minutes. This will also reduce the damage taken to the raid during Black Harvest. |grouprole EVERYONE
+|tip Gul'dan will periodically cast Storm of the Destroyer, which will slowly cover the majority of the entire platform. All raid members need to run out of this area to avoid massive damage. |grouprole EVERYONE
 |tip This ability will also clear all Flames of Sargeras within the area. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
-|tip Tank the boss on the outside of the room, moving it when your area gets to overwhelmed with Flames of Sargeras. |grouprole TANK
-|tip Gul'dan will have an energy bar, if this bar gets full it will active Fel Scythe at full power to his current target. |grouprole TANK
-|tip The off tank will need to stand on top of the main tank around 40 to 50 percent energy to force activate Fel Scythe, this way his energy stays low and the damage is split between the 2 tanks. |grouprole TANK
-|tip Whenever he casts Fel Scythe he will gain an attack speed buff for 10 seconds, this buff stacks. |grouprole TANK
+|tip Tank the boss on the outside of the room, moving it when your area gets too overwhelmed with Flames of Sargeras. |grouprole TANK
+|tip Gul'dan will have an energy bar and if this bar gets full it will activate Fel Scythe at full power to his current target. |grouprole TANK
+|tip The off tank will need to stand on top of the main tank at around 40 to 50 percent energy to force activate Fel Scythe, this way his energy stays low and the damage is split between the 2 tanks. |grouprole TANK
+|tip Whenever he casts Fel Scythe he will gain an attack speed buff for 10 seconds, which stacks. |grouprole TANK
 _HEALER:_ |grouprole HEALER
-|tip Flames of Sargeras will apply to random raid members throughout this phase, this will deal damage and create puddles of fire under their feet every few seconds. |grouprole HEALER
+|tip Flames of Sargeras will apply to random raid members throughout this phase, dealing damage, and creating puddles of fire under their feet every few seconds. |grouprole HEALER
 |tip These flames should be put on the outside of the room. |grouprole HEALER
-|tip During Black Harvest the entire raid will get dealt 3 ticks of massive damage, this damage increases for every soul within the Well. |grouprole HEALER
+|tip During Black Harvest the entire raid will get dealt 3 ticks of massive damage, which increases for every soul within the Well. |grouprole HEALER
 |tip Watch players with a lot of Soul Fragment debuffs. |grouprole HEALER
 _DAMAGE:_ |grouprole DAMAGE
 |tip Switch and kill the Empowered Eyes of Gul'dan as fast as possible when they are up. |grouprole DAMAGE
-|tip Flames of Sargeras will apply to random raid members throughout this phase, this will deal damage and create puddles of fire under their feet every few seconds. |grouprole DAMAGE
+|tip Flames of Sargeras will apply to random raid members throughout this phase, dealing damage, and creating puddles of fire under their feet every few seconds. |grouprole DAMAGE
 |tip These flames should be put on the outside of the room. |grouprole DAMAGE
 Click here for the Phase 3 abilities |confirm
 step
 kill The Demon Within##111022 |goto The Nighthold/9 49.3,52.2
 _Phase 3_ Starts when Gul'dan is dead
-|tip One player will need to get the Bulwark of Azzinoth buff, this players job will be to absorb the Nightorbs damage and to destroy them. |grouprole EVERYONE
+|tip One player will need to get the Bulwark of Azzinoth buff. This players job will be to absorb the Nightorbs damage and destroy them. |grouprole EVERYONE
 _EVERYONE:_ |grouprole EVERYONE
-|tip Flame Crash will target the farthest player from the boss and leap ontop of them, this damage is reduced the farther the target is, this will leave behind a pool of fire at its location. |grouprole EVERYONE
+|tip Flame Crash will target the farthest player from the boss and leap on top of them. This damage is reduced the farther the target is, and will leave behind a pool of fire at its location. |grouprole EVERYONE
 |tip A player should bait this ability by running away from the boss as far as they can before this ability goes out. |grouprole EVERYONE
-|tip Random players will periodically get Parasitic Wound, this will deal damage over time for 10 seconds, after that it will summon a Parasitic Shadow Demon under each of these players. |grouprole EVERYONE
-|tip These Parasites will then target new victims, these Parasites need to be killed asap. Players infected with this debuff should stack in melee range to make it easier for dps to kill them when they become active. |grouprole EVERYONE
-|tip Chaos Seed will target random ranged players, 2 will go out with each cast, these go out very fast so when it is about to go out players must start moving to avoid getting hit. |grouprole EVERYONE
-|tip Adds that die will spawn Purified Essences when these expire they will instantly kill anyone and apply a damage increase to every player for 5 seconds, to avoid instant death players need to be inside a Time Stop Field. |grouprole EVERYONE
+|tip Random players will periodically get Parasitic Wound, which will deal damage over time for 10 seconds. After that, it will summon a Parasitic Shadow Demon under each of these players. |grouprole EVERYONE
+|tip These Parasites will then target new victims and need to be killed ASAP. Players infected with this debuff should stack in melee range to make it easier for DPS to kill them when they become active. |grouprole EVERYONE
+|tip Chaos Seed will target random ranged players. 2 will go out with each cast very fast so when it is about to go out players must start moving to avoid getting hit. |grouprole EVERYONE
+|tip Adds that die will spawn Purified Essences and when they expire they will instantly kill anyone and apply a damage increase to every player for 5 seconds. To avoid instant death players need to be inside a Time Stop Field. |grouprole EVERYONE
 |tip Nightorbs will spawn, to destroy Nightorbs the player with the Bulwark of Azzinoth will need to break the Nightshield allowing players to destroy this orb to obtain a Time Stop Field. |grouprole EVERYONE
 |tip This Time Stop Field will only last a short time and is the only way to survive The Demon Within's ability called Visions of Dark Titan. |grouprole EVERYONE
 |tip When Visions is about to go out all players must run into an active Time Stop Field. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
 |tip Always face the boss away from the entire raid. |grouprole TANK
-|tip Whoever is currently tanking the boss will sometimes get hit by Soulsever this will do a massive amount of damage, you will need to use some sort of defensive to mitigate this. |grouprole TANK
-|tip Once hit it will create a Sheared Soul, this needs to be picked up by another player. |grouprole TANK
+|tip Whoever is currently tanking the boss will sometimes get hit by Soulsever which will do a massive amount of damage. You will need to use some sort of defensive to mitigate this. |grouprole TANK
+|tip Once hit, it will create a Sheared Soul. This needs to be picked up by another player. |grouprole TANK
 |tip You should taunt swap when Soulsever goes out onto his active target. |grouprole TANK
-|tip The adds that spawn need to be tanked near the boss until they are around 20 percent they will then need to be moved away to on of the sides, when these adds die they drop a Nightorb. |grouprole TANK
+|tip The adds that spawn need to be tanked near the boss until they are around 20 percent health. They will then need to be moved away to one of the sides. When these adds die they drop a Nightorb. |grouprole TANK
 _HEALER:_ |grouprole HEALER
-|tip Heal the tanks effected with Sheared Soul, the tanks will need to be healed through the absorb each time before the next Soulsever comes out, this way they can pick up the boss again off the other tank. |grouprole HEALER
+|tip Heal the tanks affected with Sheared Soul. The tanks will need to be healed through the absorb each time before the next Soulsever comes out, this way they can pick up the boss again off the other tank. |grouprole HEALER
 |tip Players with the Parasitic Wound will need single target healing to heal through this debuff. |grouprole HEALER
 _DAMAGE:_ |grouprole DAMAGE
-|tip Parasites are priority in this phase, then goes any other add alive. |grouprole DAMAGE
+|tip Parasites are priority in this phase, then any other add alive. |grouprole DAMAGE
 |tip Do not kill the Demonic Essences until they are in their correct positions. |grouprole DAMAGE
 confirm
 step

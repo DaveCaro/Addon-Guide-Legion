@@ -819,7 +819,7 @@ local function SetUp_ZygorGearFinderFrame()
 
 		itembutton.slot = slot
 
-		if ZGV.db.profile.debug then
+		if ZGV.DEV then
 			local testbutton = CHAIN(CreateFrame("BUTTON","ZygorGearFinderFrame_Test"..i, itembutton, "UIPanelButtonTemplate"))
 				:SetSize(10,10)
 				:SetPoint("BOTTOMRIGHT")
@@ -841,8 +841,10 @@ local function SetUp_ZygorGearFinderFrame()
 					tip:SetText("Click to test\nShift-click to sort by ID")
 					tip:Show()
 				end)
-
+				:Hide()
 			.__END
+			if ZGV.db.profile.debug_display then testbutton:Show() end
+			itembutton.testbutton=testbutton
 		end
 
 		gearFrame.Items[i] = itembutton

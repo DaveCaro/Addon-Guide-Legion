@@ -960,13 +960,15 @@ do
 			if (not LibRover.data.version or not LibRover.data.version.nodes_version or not LibRover.data.neighbourhood or LibRover.data.neighbourhood.version ~= LibRover.data.version.nodes_version)
 			or ZGV.db.profile.travel_do_full_linking_at_startup
 			then
+				Lib.STATUS_version_mismatch = (not LibRover.data.version or not LibRover.data.version.nodes_version or not LibRover.data.neighbourhood or LibRover.data.neighbourhood.version ~= LibRover.data.version.nodes_version)
 				Lib.data.neighbourhood=nil
 				use_cache=nil
 				if ZGV.DEV then
-					ZGV:Error("LibRover says versions of data and cache don't match.\n|rIf you're working on map data, ignore this.")
+					ZGV:Error("LibRover says versions of data and cache don't match, or cache was disabled manually.\n|rIf you're working on map data, ignore this.")
 				else
 					ZGV:ErrorThrow("Error in travel system: map cache version mismatch. Cache is disabled. Please report this!")
 				end
+				
 				LibRover_Node:NeighbourhoodCache_Kill()
 			end  -- or don't use it after all.
 			Lib.use_cache = use_cache
@@ -1311,6 +1313,7 @@ do
 
 			if Lib.use_cache and not Lib.SuppressWarnings and #Lib.nodes.all~=Lib.data.neighbourhood.count then
 				local s = "WARNING: Travel system reports map node count mismatch. Faction "..myfac..", "..#Lib.nodes.all.." nodes present, " .. tostring(Lib.data.neighbourhood.count) .. " expected."
+				Lib.STATUS_node_count_mismatch = true
 				if ZGV.DEV then
 					s = s .. "\nDEVs: If you're working on map data, increase the version number in LibRover/data. Bake the cache when you're done.\n|cffffdd00Travel system is UNRELIABLE now! |cffff0000Do not commit this!!|r"
 				else
@@ -2419,7 +2422,7 @@ do
 
 			 local debug_time_neighoverhead_1 = debugprofilestop()
 
-			local cost_debugging = ZGV.db.profile.debug
+			local cost_debugging = ZGV.db.profile.debug_display
 
 			local end_node_for_early_return
 
@@ -3187,7 +3190,7 @@ do
 					
 					node.text = TryBZL(text)
 					node.maplabel = node:GetText(node.prev,node.next)
-					if ZGV.db.profile.debug then node.maplabel = node.maplabel .. "\n" .. node:tostring() end
+					if ZGV.db.profile.debug_display then node.maplabel = node.maplabel .. "\n" .. node:tostring() end
 				until true end
 			-- NODES PREPARED FOR DISPLAY.
 
@@ -4411,7 +4414,7 @@ do
 				self.ready=true
 			end
 
-			function TWP:FindNearestTaxis(zone)
+			function TWP:FindNearestTaxis()
 				local x,y,m,f = ZGV.HBD:GetPlayerZonePosition(true)
 				if not x or not y then return end -- we're NOT working in mapless places.
 
@@ -4433,14 +4436,14 @@ do
 				return taxidists
 			end
 
-			function TWP:PredictWhistle(zone)  -- the workhorse.
+			function TWP:PredictWhistle()  -- the workhorse.
 				if not self.ready then return nil end
-				local taxidists = self:FindNearestTaxis(zone)
+				local taxidists = self:FindNearestTaxis()
 				self.taxidists = taxidists
 				if not taxidists then self.predicted_taxi=nil return end
 				
 				local taxidists_thiszone = {}
-				local zone = zone or self.pm
+				local zone = self.pm  -- set by FindNearestTaxis
 
 				if zone==1080 --[[ Thunder Totem ]] then zone=1024 --[[ Highmountain ]] end  -- Thunder Totem isn't considered a separate zone. Remap it to Highmountain.
 				for t,td in ipairs(taxidists) do repeat

@@ -3499,43 +3499,43 @@ step
 kill Odyn##114263 |goto Trial of Valor/2 51.1,82.1
 _Phase 1_
 _EVERYONE:_ |grouprole EVERYONE
-|tip If Hymdail and Hyrja are within 35 yards of each other they will take 99 percent less damage, they need to be tanked on opposite sides on the room. |grouprole EVERYONE
-|tip Both Hymdail and Hyrja need to die around the same time before the next phase can start. |grouprole EVERYONE
-|tip It is recommended that melee dps should be on Hyrja and ranged should be on Hymdail. |grouprole EVERYONE
-|tip Hymdail will cast Dancing Blade, this will target a random player, this will deal damage on impact and leave a spinning blade dealing damage to anyone near this and will knocked players back. |grouprole EVERYONE
-|tip Hymdail will also periodically cast Horn of Valor, this will deal damage to the entire raid and deal more damage for every player within 5 yards of each other. Spread out for this ability to minimize the damge. |grouprole EVERYONE
-|tip Hyrja will cast Expel Light on random player, if cast on you must stay at least 8 yards away from anyone else before it explodes. |grouprole EVERYONE
+|tip If Hymdall and Hyrja are within 35 yards of each other they will take 99 percent less damage, so they need to be tanked on opposite sides on the room. |grouprole EVERYONE
+|tip Both Hymdall and Hyrja need to be killed around the same time before the next phase can start. |grouprole EVERYONE
+|tip It is recommended that melee DPS should be on Hyrja, and ranged should be on Hymdall. |grouprole EVERYONE
+|tip Hymdall will cast Dancing Blade, which will target a random player, deal damage on impact, and leave a spinning blade dealing damage and knocking back anyone near it. |grouprole EVERYONE
+|tip Hymdall will also periodically cast Horn of Valor, dealing damage to the entire raid, and more damage for every player within 5 yards of each other. Spread out for this ability to minimize the damge. |grouprole EVERYONE
+|tip Hyrja will cast Expel Light on a random player. If cast on you, stay at least 8 yards away from everyone else before it explodes. |grouprole EVERYONE
 |tip Hyrja will target a random player with Shield of Light. This ability will deal damage split between everyone within the line. |grouprole EVERYONE
 |tip If targeted by this ability you will either need to run to the designated stack point or run behind the largest group of raid members. |grouprole EVERYONE
-|tip Odyn will cast Draw Power, this will target 6 random raid members, this will put one of the 6 runes over their head, this player must run to the corresponding rune in the room. |grouprole EVERYONE
-|tip All players must switch and kill the adds that spawn and fixate the players with the runes applied to them. |grouprole EVERYONE
+|tip Odyn will cast Draw Power, which will target 6 random raid members, putting one of the 6 runes over their head. This player must run to the corresponding rune in the room. |grouprole EVERYONE
+|tip All players must switch and kill the adds that spawn as these fixate on the players with the runes applied to them. |grouprole EVERYONE
 Click here for the Phase 2 abilities |confirm
 step
 kill Odyn##114263 |goto 51.1,82.1
 _Phase 2_
 _EVERYONE:_ |grouprole EVERYONE
-|tip Periodically Odyn will summon either Hymdail or Hyrja down to help him, these have the same abilties as phase 1, if they are brought down to 85 percent they will retreat. |grouprole EVERYONE
-|tip When one of the 2 come down they will need to be spread apart just like in phase 1, 35 yards away. These need to be switched to as soon as they come down |grouprole EVERYONE
-|tip Spears of Light will be dropped around the room throughout this entire phase, these will deal damage to anyone within the impact zone and release 5 orbs. |grouprole EVERYONE
-|tip These orbs will go out in 5 different directions and continue until they hit a wall or hit a player, if they hit a player they will deal damage and stun the player for 3 seconds. |grouprole EVERYONE
-|tip Odyn will periodically cast Shatter, this will destroy all active Spears of Light in the boss arena, this will deal damage to the entire raid and summon 5 more orbs from each active Spear. |grouprole EVERYONE
-|tip Odyn will cast Draw Power, this will target 6 random raid members, this will put one of the 6 runes over their head, this player must run to the corresponding rune in the room. |grouprole EVERYONE
-|tip All players must switch and kill the adds that spawn, these fixate the players with the runes applied to them. |grouprole EVERYONE
+|tip Periodically Odyn will summon either Hymdall or Hyrja down to help him. They will have the same abilties as phase 1. If they are brought down to 85 percent health they will retreat. |grouprole EVERYONE
+|tip When one of the 2 come down they will need to be spread out just like in phase 1, 35 yards apart. These need to be switched to as soon as they come down |grouprole EVERYONE
+|tip Spears of Light will be dropped around the room throughout this entire phase, deal damage to anyone within the impact zone, and release 5 orbs. |grouprole EVERYONE
+|tip These orbs will go out in 5 different directions and continue until they hit a wall, or hit a player. If they hit a player they will deal damage and stun the player for 3 seconds. |grouprole EVERYONE
+|tip Odyn will periodically cast Shatter, which will destroy all active Spears of Light in the boss arena, deal damage to the entire raid, and summon 5 more orbs from each active Spear. |grouprole EVERYONE
+|tip Odyn will cast Draw Power, which will target 6 random raid members, putting one of the 6 runes over their head. This player must run to the corresponding rune in the room. |grouprole EVERYONE
+|tip All players must switch and kill the adds that spawn as these fixate on the players with the runes applied to them. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
-|tip Odyn will gain a stacking buff each time he attacks the same tank, this buff will increase Odyns attack speed by 8 percent per stack. |grouprole TANK
+|tip Odyn will gain a stacking buff each time he attacks the same tank, which will increase Odyns attack speed by 8 percent per stack. |grouprole TANK
 |tip You will need to tank swap before the damage gets overwhelming. |grouprole TANK
 Click here for the Phase 3 abilities |confirm
 step
 kill Odyn##114263 |goto 51.1,82.1
 _Phase 3_
 _EVERYONE:_ |grouprole EVERYONE
-|tip Storm of Justice will be cast on random raid members, players effected by this will need to run to the edge of the available platform before this debuff runs out. |grouprole EVERYONE
-|tip When Storm of Justice runs out it will summon a Raging Tempest, if anyone hits this tornado they will get dealt damage and be knocked high up in the air. |grouprole EVERYONE
-|tip There will be 3 different arenas during phase 3, only one will be safe at a time the others will be consummed by Cleansing Flame, this will deal a huge amount of damage each second to anyone standing in it. |grouprole EVERYONE
+|tip Storm of Justice will be cast on random raid members and players affected by this will need to run to the edge of the available platform before this debuff runs out. |grouprole EVERYONE
+|tip When Storm of Justice runs out it will summon a Raging Tempest, and if anyone hits this tornado they will get dealt damage and be knocked high up in the air. |grouprole EVERYONE
+|tip There will be 3 different arenas during phase 3, and only one will be safe at a time. The others will be consummed by Cleansing Flame, which will deal a huge amount of damage each second to anyone standing in it. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
 |tip When the active tank gets the Stormforged Spear debuff they will need to run as far away from the boss as they can. |grouprole TANK
 |tip The tank with the Stormforged Spear will also need to use a minor or major cooldown depending on how far they get from the boss. |grouprole TANK
-|tip Also when this happens the other tank will need to taunt the boss off of them. |grouprole TANK
+|tip Also, when this happens, the other tank will need to taunt the boss off of them. |grouprole TANK
 confirm
 step
 talk Odyn##114263 |goto 51.5,88.5
@@ -3560,19 +3560,19 @@ confirm
 step
 kill Guarm##114344 |goto Trial of Valor/3 50.5,31.0
 _EVERYONE:_ |grouprole EVERYONE
-|tip Guarm will periodically use Guardians Breath which shots out 3 different colored lines. |grouprole EVERYONE
-|tip The raid must split up into groups evenly, whichever color you are assigned to you must continue entering that color for every breath. |grouprole EVERYONE
+|tip Guarm will periodically use Guardians Breath which shoots out 3 different colored lines. |grouprole EVERYONE
+|tip The raid must split up into groups evenly. Whichever color you are assigned to, you must continue entering that color for every breath. |grouprole EVERYONE
 |tip Three different debuffs will go out on random players, Shadow, Frost, and Flame Licks. |grouprole EVERYONE
-|tip For all 3 debuffs players will need to stay spread out 5 yards from each other so that when infected by this debuff you do not harm any other raid members. |grouprole EVERYONE
-|tip Before Guarm casts Roaring Leep a group of players should group up to bait this ability making it easier to deal with. |grouprole EVERYONE
-|tip He will periodically jump away to a random corner and start casting Headlong Charge, he will then charge around the entire arena, be sure to go to the safe sides and dodge this ability. |grouprole EVERYONE
+|tip For all 3 debuffs, players will need to stay spread out 5 yards from each other so that if infected you do not harm any other raid members. |grouprole EVERYONE
+|tip Before Guarm casts Roaring Leep, a group of players should group up to bait this ability, making it easier to deal with. |grouprole EVERYONE
+|tip He will periodically jump away to a random corner and start casting Headlong Charge. He will then charge around the entire arena, so be sure to go to the safe sides and dodge this ability. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
-|tip The tanks will need to stay stacked on top of each other, this is so the offtank takes the damage from Multi-Headed. |grouprole TANK
+|tip The tanks will need to stay stacked on top of each other so the offtank takes the damage from Multi-Headed. |grouprole TANK
 _HEALER:_  |grouprole HEALER
 |tip The Shadow Lick will need to be healed through to remove it. |grouprole HEALER
-|tip If the boss is facing you stay 25 yards away from him. |grouprole HEALER
+|tip If the boss is facing you, stay 25 yards away from him. |grouprole HEALER
 _DAMAGE:_ |grouprole DAMAGE
-|tip If the boss is facing you stay 25 yards away from him. |grouprole DAMAGE
+|tip If the boss is facing you, stay 25 yards away from him. |grouprole DAMAGE
 confirm
 step
 map Trial of Valor/3
@@ -3586,32 +3586,32 @@ step
 kill Helya##114537 |goto Trial of Valor/3 35.7,24.2
 _Phase 1_
 _EVERYONE:_ |grouprole EVERYONE
-|tip Once Taint of the Sea is removed from the player it will leave behind a Tainted Essence, do not stand in these. |grouprole EVERYONE
-|tip Tentacles will periodically spawn in either the front or the back, if they spawn in the front all of the melee should stand inside it, if it's in the back one ranged with some sort of immune should solo soak this. |grouprole EVERYONE
-|tip Orb of Corruption will target random raid members and follow them pulsing aoe damage, this needs to be kited away from other raid members. |grouprole EVERYONE
+|tip Once Taint of the Sea is removed from the player it will leave behind a Tainted Essence. Do not stand in these. |grouprole EVERYONE
+|tip Tentacles will periodically spawn in either the front or the back. If they spawn in the front, all of the melee players should stand inside it. If it's in the back, one ranged with some sort of immune should solo soak this. |grouprole EVERYONE
+|tip Orb of Corruption will target random raid members and follow them pulsing AOE damage. This needs to be kited away from other raid members. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
 |tip Do not stand in Bilewater Breath. |grouprole HEALER
-|tip Random raid members and one of the tanks will recieve Taint of the Sea periodically, these need to be dispelled asap. |grouprole HEALER
+|tip Random raid members and one of the tanks will recieve Taint of the Sea periodically. These need to be dispelled ASAP. |grouprole HEALER
 _TANK:_ |grouprole TANK
 |tip Tank the boss facing the middle of the room for The Bilewater Breath. |grouprole TANK
-|tip If you are not tanking the boss do not stand in this breath, and once it goes off taunt Helya off of the other tank. |grouprole TANK
+|tip If you are not tanking the boss, do not stand in this breath, and once it goes off, taunt Helya off of the other tank. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
 |tip Do not stand in Bilewater Breath. |grouprole DAMAGE
-|tip After Bilewater Breath goes out it will leave behind stationary adds in a line of where the breath went, these adds need to die before their cast runs out. |grouprole DAMAGE
+|tip After Bilewater Breath goes out it will leave behind stationary adds in a line of where the breath went. These adds need to be killed before their cast runs out. |grouprole DAMAGE
 Click here for the Phase 2 abilities |confirm
 step
 kill Helya##114537 |goto Trial of Valor/3 35.7,24.2
 _Phase 2_ Starts at 65 percent
 _EVERYONE:_ |grouprole EVERYONE
 |tip To start phase 3 the raid will need to kill all of the tentacles around the boss arena. |grouprole EVERYONE
-|tip Shortly after each set of adds come out there will be waves coming out from the sea, to avoid these you must go up on one of the 2 platforms on either of the sides. |grouprole EVERYONE
+|tip Shortly after each set of adds come out there will be waves coming out from the sea. To avoid these you must go up on one of the 2 platforms on either of the sides. |grouprole EVERYONE
 |tip If you get the debuff Fetid Rot be sure to move away from any other player before the timer runs out. |grouprole EVERYONE
-|tip Decaying Minions can not be tanked they will fixate on a random raid member and when they die they will leave a pool of Decay on the ground, try not to block the entrances to the platforms with these pools. |grouprole EVERYONE
-|tip When Fury of the Maw starts coming out raid members will need to get up on top of one of the 2 higher platforms in this boss arena. |grouprole EVERYONE
+|tip Decaying Minions can not be tanked. They will fixate on a random raid member and when they die they will leave a pool of Decay on the ground. Try not to block the entrances to the platforms with these pools. |grouprole EVERYONE
+|tip When Fury of the Maw starts coming out, raid members will need to get up on top of one of the 2 higher platforms in this boss arena. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
-|tip When the adds come out there will be 2 big adds one that comes on each side of the platform, the tanks will need to split up and grab one each. |grouprole TANK
-|tip The Night Watch Mariner will be the main target for the raid to kill, if it reaches max energy it will deal aoe damage until it is killed. |grouprole TANK
-|tip The Grimelord will deal high tank damage, be sure to move out of Sludge Nova when it is cast. |grouprole TANK
+|tip When the adds come out there will be 2 big adds, one that comes on each side of the platform. The tanks will need to split up and grab one each. |grouprole TANK
+|tip The Night Watch Mariner will be the main target for the raid to kill. If it reaches max energy it will deal AOE damage until it is killed. |grouprole TANK
+|tip The Grimelord will deal high tank damage, so be sure to move out of Sludge Nova when it is cast. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
 |tip Kill the Night Watch Mariner first. |grouprole DAMAGE
 Click here for the Phase 3 abilities |confirm
@@ -3619,14 +3619,14 @@ step
 kill Helya##114537 |goto Trial of Valor/3 35.7,24.2
 _Phase 3_ Starts once all of the Tentacles are dead
 _EVERYONE:_ |grouprole EVERYONE
-|tip After Corrupted Breath goes out it will leave behind several purple pools, there need to be at least one person in each of these pools to prevent the raid from taking a high amount of damage. |grouprole EVERYONE
-|tip Decaying Minions will spawn during this phase, but sure to kill then and place the Decay pools in good positions. |grouprole EVERYONE
-|tip Fury of the Sea will periodically come and summon a Night Watch Mariner along with destroying any Decay on the ground. |grouprole EVERYONE
-|tip Orb of Corrosion will target random raid members and follow them pulsing aoe damage, this needs to be kited away from other raid members. |grouprole EVERYONE
+|tip After Corrupted Breath goes out it will leave behind several purple pools, and there will need to be at least one person in each of these pools to prevent the raid from taking a high amount of damage. |grouprole EVERYONE
+|tip Decaying Minions will spawn during this phase. Be sure to kill them and place the Decay pools in good positions. |grouprole EVERYONE
+|tip Fury of the Sea will periodically come and summon a Night Watch Mariner, along with destroying any Decay on the ground. |grouprole EVERYONE
+|tip Orb of Corrosion will target random raid members and follow them, pulsing AOE damage. This needs to be kited away from other raid members. |grouprole EVERYONE
 |tip The Orb of Corrosion will also leave Decay on the ground with every pulse of damage. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
 |tip Do not stand in Corrupted Breath. |grouprole HEALER
-|tip Random raid members and one of the tanks will recieve Taint of the Sea periodically, these need to be dispelled asap. |grouprole HEALER
+|tip Random raid members and one of the tanks will recieve Taint of the Sea periodically. These need to be dispelled ASAP. |grouprole HEALER
 _TANK:_ |grouprole TANK
 |tip Tank the boss facing the middle of the room for Corrupted Breath. |grouprole TANK
 |tip If you are not tanking the boss do not stand in this breath, and once it goes off taunt Helya off of the other tank. |grouprole TANK
@@ -3654,43 +3654,43 @@ step
 kill Odyn##114263 |goto Trial of Valor/2 51.1,82.1
 _Phase 1_
 _EVERYONE:_ |grouprole EVERYONE
-|tip If Hymdail and Hyrja are within 35 yards of each other they will take 99 percent less damage, they need to be tanked on opposite sides on the room. |grouprole EVERYONE
-|tip Both Hymdail and Hyrja need to die around the same time before the next phase can start. |grouprole EVERYONE
-|tip It is recommended that melee dps should be on Hyrja and ranged should be on Hymdail. |grouprole EVERYONE
-|tip Hymdail will cast Dancing Blade, this will target a random player, this will deal damage on impact and leave a spinning blade dealing damage to anyone near this and will knocked players back. |grouprole EVERYONE
-|tip Hymdail will also periodically cast Horn of Valor, this will deal damage to the entire raid and deal more damage for every player within 5 yards of each other. Spread out for this ability to minimize the damge. |grouprole EVERYONE
-|tip Hyrja will cast Expel Light on random player, if cast on you must stay at least 8 yards away from anyone else before it explodes. |grouprole EVERYONE
+|tip If Hymdall and Hyrja are within 35 yards of each other they will take 99 percent less damage, so they need to be tanked on opposite sides on the room. |grouprole EVERYONE
+|tip Both Hymdall and Hyrja need to be killed around the same time before the next phase can start. |grouprole EVERYONE
+|tip It is recommended that melee DPS players should be on Hyrja, and ranged should be on Hymdall. |grouprole EVERYONE
+|tip Hymdall will cast Dancing Blade, which will target a random player, deal damage on impact, leave a spinning blade dealing damage to anyone near this, and will knock players back. |grouprole EVERYONE
+|tip Hymdall will also periodically cast Horn of Valor, which will deal damage to the entire raid and deal more damage for every player within 5 yards of each other. Spread out for this ability to minimize the damge. |grouprole EVERYONE
+|tip Hyrja will cast Expel Light on a random player. If cast on you, stay at least 8 yards away from anyone else before it explodes. |grouprole EVERYONE
 |tip Hyrja will target a random player with Shield of Light. This ability will deal damage split between everyone within the line. |grouprole EVERYONE
 |tip If targeted by this ability you will either need to run to the designated stack point or run behind the largest group of raid members. |grouprole EVERYONE
-|tip Odyn will cast Draw Power, this will target 6 random raid members, this will put one of the 6 runes over their head, this player must run to the corresponding rune in the room. |grouprole EVERYONE
-|tip All players must switch and kill the adds that spawn and fixate the players with the runes applied to them. |grouprole EVERYONE
+|tip Odyn will cast Draw Power, which will target 6 random raid members, and put one of the 6 runes over their head. This player must run to the corresponding rune in the room. |grouprole EVERYONE
+|tip All players must switch and kill the adds that spawn and fixate on the players with the runes applied to them. |grouprole EVERYONE
 Click here for the Phase 2 abilities |confirm
 step
 kill Odyn##114263 |goto 51.1,82.1
 _Phase 2_
 _EVERYONE:_ |grouprole EVERYONE
-|tip Periodically Odyn will summon either Hymdail or Hyrja down to help him, these have the same abilties as phase 1, if they are brought down to 85 percent they will retreat. |grouprole EVERYONE
-|tip When one of the 2 come down they will need to be spread apart just like in phase 1, 35 yards away. These need to be switched to as soon as they come down |grouprole EVERYONE
-|tip Spears of Light will be dropped around the room throughout this entire phase, these will deal damage to anyone within the impact zone and release 5 orbs. |grouprole EVERYONE
-|tip These orbs will go out in 5 different directions and continue until they hit a wall or hit a player, if they hit a player they will deal damage and stun the player for 3 seconds. |grouprole EVERYONE
-|tip Odyn will periodically cast Shatter, this will destroy all active Spears of Light in the boss arena, this will deal damage to the entire raid and summon 5 more orbs from each active Spear. |grouprole EVERYONE
-|tip Odyn will cast Draw Power, this will target 6 random raid members, this will put one of the 6 runes over their head, this player must run to the corresponding rune in the room. |grouprole EVERYONE
-|tip All players must switch and kill the adds that spawn and fixate the players with the runes applied to them. |grouprole EVERYONE
+|tip Periodically Odyn will summon either Hymdall or Hyrja down to help him. They will have the same abilties as phase 1. If they are brought down to 85 percent health they will retreat. |grouprole EVERYONE
+|tip When one of the 2 come down they will need to be spread out just like in phase 1, 35 yards apart. These need to be switched to as soon as they come down |grouprole EVERYONE
+|tip Spears of Light will be dropped around the room throughout this entire phase, dealing damage to anyone within the impact zone, and release 5 orbs. |grouprole EVERYONE
+|tip These orbs will go out in 5 different directions and continue until they hit a wall or hit a player. If they hit a player they will deal damage and stun the player for 3 seconds. |grouprole EVERYONE
+|tip Odyn will periodically cast Shatter, which will destroy all active Spears of Light in the boss arena, deal damage to the entire raid, and summon 5 more orbs from each active Spear. |grouprole EVERYONE
+|tip Odyn will cast Draw Power, which will target 6 random raid members, putting one of the 6 runes over their head. This player must run to the corresponding rune in the room. |grouprole EVERYONE
+|tip All players must switch and kill the adds that spawn and fixate on the players with the runes applied to them. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
-|tip Odyn will gain a stacking buff each time he attacks the same tank, this buff will increase Odyns attack speed by 8 percent per stack. |grouprole TANK
+|tip Odyn will gain a stacking buff each time he attacks the same tank, and this buff will increase Odyns attack speed by 8 percent per stack. |grouprole TANK
 |tip You will need to tank swap before the damage gets overwhelming. |grouprole TANK
 Click here for the Phase 3 abilities |confirm
 step
 kill Odyn##114263 |goto 51.1,82.1
 _Phase 3_
 _EVERYONE:_ |grouprole EVERYONE
-|tip Storm of Justice will be cast on random raid members, players effected by this will need to run to the edge of the available platform before this debuff runs out. |grouprole EVERYONE
-|tip When Storm of Justice runs out it will summon a Raging Tempest, if anyone hits this tornado they will get dealt damage and be knocked high up in the air. |grouprole EVERYONE
-|tip There will be 3 different arenas during phase 3, only one will be safe at a time the others will be consummed by Cleansing Flame, this will deal a huge amount of damage each second to anyone standing in it. |grouprole EVERYONE
+|tip Storm of Justice will be cast on random raid members, and players affected by this will need to run to the edge of the available platform before this debuff runs out. |grouprole EVERYONE
+|tip When Storm of Justice runs out it will summon a Raging Tempest, and if anyone hits this tornado they will get dealt damage and be knocked high up in the air. |grouprole EVERYONE
+|tip There will be 3 different arenas during phase 3. Only one will be safe at a time, the others will be consummed by Cleansing Flame. This will deal a huge amount of damage each second to anyone standing in it. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
 |tip When the active tank gets the Stormforged Spear debuff they will need to run as far away from the boss as they can. |grouprole TANK
 |tip The tank with the Stormforged Spear will also need to use a minor or major cooldown depending on how far they get from the boss. |grouprole TANK
-|tip Also when this happens the other tank will need to taunt the boss off of them. |grouprole TANK
+|tip Also, when this happens, the other tank will need to taunt the boss off of them. |grouprole TANK
 confirm
 step
 talk Odyn##114263 |goto 51.5,88.5
@@ -3715,19 +3715,19 @@ confirm
 step
 kill Guarm##114344 |goto Trial of Valor/3 50.5,31.0
 _EVERYONE:_ |grouprole EVERYONE
-|tip Guarm will periodically use Guardians Breath which shots out 3 different colored lines. |grouprole EVERYONE
-|tip The raid must split up into groups evenly, whichever color you are assigned to you must continue entering that color for every breath. |grouprole EVERYONE
+|tip Guarm will periodically use Guardians Breath which shoots out 3 different colored lines. |grouprole EVERYONE
+|tip The raid must split up into groups evenly. Whichever color you are assigned to you must continue entering that color for every breath. |grouprole EVERYONE
 |tip Three different debuffs will go out on random players, Shadow, Frost, and Flame Licks. |grouprole EVERYONE
-|tip For all 3 debuffs players will need to stay spread out 5 yards from each other so that when infected by this debuff you do not harm any other raid members. |grouprole EVERYONE
-|tip Before Guarm casts Roaring Leep a group of players should group up to bait this ability making it easier to deal with. |grouprole EVERYONE
-|tip He will periodically jump away to a random corner and start casting Headlong Charge, he will then charge around the entire arena, be sure to go to the safe sides and dodge this ability. |grouprole EVERYONE
+|tip For all 3 debuffs players will need to stay spread out 5 yards from each other so that when infected by this debuff they do not harm any other raid members. |grouprole EVERYONE
+|tip Before Guarm casts Roaring Leep a group of players should group up to bait this ability, making it easier to deal with. |grouprole EVERYONE
+|tip He will periodically jump away to a random corner and start casting Headlong Charge. He will then charge around the entire arena, so be sure to go to the safe sides and dodge this ability. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
-|tip The tanks will need to stay stacked on top of each other, this is so the offtank takes the damage from Multi-Headed. |grouprole TANK
+|tip The tanks will need to stay stacked on top of each other so that the offtank takes the damage from Multi-Headed. |grouprole TANK
 _HEALER:_  |grouprole HEALER
 |tip The Shadow Lick will need to be healed through to remove it. |grouprole HEALER
-|tip If the boss is facing you stay 25 yards away from him. |grouprole HEALER
+|tip If the boss is facing you, stay 25 yards away from him. |grouprole HEALER
 _DAMAGE:_ |grouprole DAMAGE
-|tip If the boss is facing you stay 25 yards away from him. |grouprole DAMAGE
+|tip If the boss is facing you, stay 25 yards away from him. |grouprole DAMAGE
 confirm
 step
 map Trial of Valor/3
@@ -3741,32 +3741,32 @@ step
 kill Helya##114537 |goto Trial of Valor/3 35.7,24.2
 _Phase 1_
 _EVERYONE:_ |grouprole EVERYONE
-|tip Once Taint of the Sea is removed from the player it will leave behind a Tainted Essence, do not stand in these. |grouprole EVERYONE
-|tip Tentacles will periodically spawn in either the front or the back, if they spawn in the front all of the melee should stand inside it, if it's in the back one ranged with some sort of immune should solo soak this. |grouprole EVERYONE
-|tip Orb of Corruption will target random raid members and follow them pulsing aoe damage, this needs to be kited away from other raid members. |grouprole EVERYONE
+|tip Once Taint of the Sea is removed from the player it will leave behind a Tainted Essence. Do not stand in this. |grouprole EVERYONE
+|tip Tentacles will periodically spawn in either the front or the back. If they spawn in the front, all of the melee players should stand inside it. If it's in the back, ranged with some sort of immune should solo soak this. |grouprole EVERYONE
+|tip Orb of Corruption will target random raid members and follow them, pulsing AOE damage. This needs to be kited away from other raid members. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
 |tip Do not stand in Bilewater Breath. |grouprole HEALER
-|tip Random raid members and one of the tanks will recieve Taint of the Sea periodically, these need to be dispelled asap. |grouprole HEALER
+|tip Random raid members and one of the tanks will recieve Taint of the Sea periodically. These need to be dispelled ASAP. |grouprole HEALER
 _TANK:_ |grouprole TANK
 |tip Tank the boss facing the middle of the room for The Bilewater Breath. |grouprole TANK
 |tip If you are not tanking the boss do not stand in this breath, and once it goes off taunt Helya off of the other tank. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
 |tip Do not stand in Bilewater Breath. |grouprole DAMAGE
-|tip After Bilewater Breath goes out it will leave behind stationary adds in a line of where the breath went, these adds need to die before their cast runs out. |grouprole DAMAGE
+|tip After Bilewater Breath goes out it will leave behind stationary adds in a line where the breath went. These adds need to be killed before their cast runs out. |grouprole DAMAGE
 Click here for the Phase 2 abilities |confirm
 step
 kill Helya##114537 |goto Trial of Valor/3 35.7,24.2
 _Phase 2_ Starts at 65 percent
 _EVERYONE:_ |grouprole EVERYONE
-|tip To start phase 3 the raid will need to kill all of the tentacles around the boss arena. |grouprole EVERYONE
-|tip Shortly after each set of adds come out there will be waves coming out from the sea, to avoid these you must go up on one of the 2 platforms on either of the sides. |grouprole EVERYONE
+|tip To start phase 3, the raid will need to kill all of the tentacles around the boss arena. |grouprole EVERYONE
+|tip Shortly after each set of adds come out there will be waves coming from the sea. To avoid these you must go up on one of the 2 platforms on either of the sides. |grouprole EVERYONE
 |tip If you get the debuff Fetid Rot be sure to move away from any other player before the timer runs out. |grouprole EVERYONE
-|tip Decaying Minions can not be tanked they will fixate on a random raid member and when they die they will leave a pool of Decay on the ground, try not to block the entrances to the platforms with these pools. |grouprole EVERYONE
+|tip Decaying Minions can not be tanked. They will fixate on a random raid member and when they die they will leave a pool of Decay on the ground. Try not to block the entrances to the platforms with these pools. |grouprole EVERYONE
 |tip When Fury of the Maw starts coming out raid members will need to get up on top of one of the 2 higher platforms in this boss arena. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
-|tip When the adds come out there will be 2 big adds one that comes on each side of the platform, the tanks will need to split up and grab one each. |grouprole TANK
-|tip The Night Watch Mariner will be the main target for the raid to kill, if it reaches max energy it will deal aoe damage until it is killed. |grouprole TANK
-|tip The Grimelord will deal high tank damage, be sure to move out of Sludge Nova when it is cast. |grouprole TANK
+|tip When the adds come out there will be 2 big adds, one that comes on each side of the platform. The tanks will need to split up and grab one each. |grouprole TANK
+|tip The Night Watch Mariner will be the main target for the raid to kill. If it reaches max energy it will deal AOE damage until it is killed. |grouprole TANK
+|tip The Grimelord will deal high tank damage, so be sure to move out of Sludge Nova when it is cast. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
 |tip Kill the Night Watch Mariner first. |grouprole DAMAGE
 Click here for the Phase 3 abilities |confirm
@@ -3774,20 +3774,20 @@ step
 kill Helya##114537 |goto Trial of Valor/3 35.7,24.2
 _Phase 3_ Starts once all of the Tentacles are dead
 _EVERYONE:_ |grouprole EVERYONE
-|tip After Corrupted Breath goes out it will leave behind several purple pools, there need to be at least one person in each of these pools to prevent the raid from taking a high amount of damage. |grouprole EVERYONE
-|tip Decaying Minions will spawn during this phase, but sure to kill then and place the Decay pools in good positions. |grouprole EVERYONE
+|tip After Corrupted Breath goes out it will leave behind several purple pools. There needs to be at least one person in each of these pools to prevent the raid from taking a high amount of damage. |grouprole EVERYONE
+|tip Decaying Minions will spawn during this phase. Be sure to kill them and place the Decay pools in good positions. |grouprole EVERYONE
 |tip Fury of the Sea will periodically come and summon a Night Watch Mariner along with destroying any Decay on the ground. |grouprole EVERYONE
-|tip Orb of Corrosion will target random raid members and follow them pulsing aoe damage, this needs to be kited away from other raid members. |grouprole EVERYONE
+|tip Orb of Corrosion will target random raid members and follow them, pulsing AOE damage. This needs to be kited away from other raid members. |grouprole EVERYONE
 |tip The Orb of Corrosion will also leave Decay on the ground with every pulse of damage. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
 |tip Do not stand in Corrupted Breath. |grouprole HEALER
-|tip Random raid members and one of the tanks will recieve Taint of the Sea periodically, these need to be dispelled asap. |grouprole HEALER
+|tip Random raid members and one of the tanks will recieve Taint of the Sea periodically. These need to be dispelled ASAP. |grouprole HEALER
 _TANK:_ |grouprole TANK
 |tip Tank the boss facing the middle of the room for Corrupted Breath. |grouprole TANK
-|tip If you are not tanking the boss do not stand in this breath, and once it goes off taunt Helya off of the other tank. |grouprole TANK
+|tip If you are not tanking the boss, do not stand in this breath, and once it goes off taunt Helya off of the other tank. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
 |tip Do not stand in Corrupted Breath. |grouprole DAMAGE
-|tip Kill the Night Watch Mariner when it appears asap. |grouprole DAMAGE
+|tip Kill the Night Watch Mariner when it appears ASAP. |grouprole DAMAGE
 confirm
 step
 Congratulations you have completed Trial of Valor!
@@ -3809,48 +3809,48 @@ step
 kill Odyn##114263 |goto Trial of Valor/2 51.1,82.1
 _Phase 1_
 _EVERYONE:_ |grouprole EVERYONE
-|tip If Hymdail and Hyrja are within 35 yards of each other they will take 99 percent less damage, they need to be tanked on opposite sides on the room. |grouprole EVERYONE
-|tip Both Hymdail and Hyrja need to die around the same time before the next phase can start. |grouprole EVERYONE
-|tip It is recommended that melee dps should be on Hyrja and ranged should be on Hymdail. |grouprole EVERYONE
-|tip Hymdail will cast Dancing Blade, this will target a random player, this will deal damage on impact and leave a spinning blade dealing damage to anyone near this and will knocked players back. |grouprole EVERYONE
-|tip Hymdail will also periodically cast Horn of Valor, this will deal damage to the entire raid and deal more damage for every player within 5 yards of each other. Spread out for this ability to minimize the damge. |grouprole EVERYONE
-|tip Hyrja will cast Expel Light on random player, if cast on you must stay at least 8 yards away from anyone else before it explodes. |grouprole EVERYONE
+|tip If Hymdall and Hyrja are within 35 yards of each other they will take 99 percent less damage, so they need to be tanked on opposite sides on the room. |grouprole EVERYONE
+|tip Both Hymdall and Hyrja need to be killed around the same time before the next phase can start. |grouprole EVERYONE
+|tip It is recommended that melee DPS players should be on Hyrja and ranged should be on Hymdall. |grouprole EVERYONE
+|tip Hymdall will cast Dancing Blade, whch will target a random player, deal  damage on impact,  leave a spinning blade dealing damage to anyone near it, and will knocked players back. |grouprole EVERYONE
+|tip Hymdall will also periodically cast Horn of Valor, which will deal damage to the entire raid, and deal more damage for every player within 5 yards of each other. Spread out for this ability to minimize the damge. |grouprole EVERYONE
+|tip Hyrja will cast Expel Light on a random player. If cast on you, stay at least 8 yards away from anyone else before it explodes. |grouprole EVERYONE
 |tip Hyrja will target a random player with Shield of Light. This ability will deal damage split between everyone within the line. |grouprole EVERYONE
-|tip If targeted by this ability you will either need to run to the designated stack point or run behind the largest group of raid members. |grouprole EVERYONE
-|tip Odyn will cast Draw Power, this will target 6 random raid members, this will put one of the 6 runes over their head, this player must run to the corresponding rune in the room. |grouprole EVERYONE
-|tip All players must switch and kill the adds that spawn and fixate the players with the runes applied to them. |grouprole EVERYONE
-|tip Once an add  dies 3 to 4 players in the raid will get that corresponding rune over their heads, these players need to run over that rune to gain the Protected buff, without this you will die when Odyn casts Unerring Blast. |grouprole EVERYONE
+|tip If targeted by this ability, you will either need to run to the designated stack point, or run behind the largest group of raid members. |grouprole EVERYONE
+|tip Odyn will cast Draw Power, which will target 6 random raid members, putting one of the 6 runes over their head. This player must run to the corresponding rune in the room. |grouprole EVERYONE
+|tip All players must switch and kill the adds that spawn and fixate on the players with the runes applied to them. |grouprole EVERYONE
+|tip Once an add dies, 3 to 4 players in the raid will get that corresponding rune over their heads, and these players need to run over that rune to gain the Protected buff. Without this you will die when Odyn casts Unerring Blast. |grouprole EVERYONE
 Click here for the Phase 2 abilities |confirm
 step
 kill Odyn##114263 |goto 51.1,82.1
 _Phase 2_
 _EVERYONE:_ |grouprole EVERYONE
-|tip Periodically Odyn will summon either Hymdail or Hyrja down to help him, these have the same abilties as phase 1, if they are brought down to 85 percent they will retreat. |grouprole EVERYONE
-|tip When one of the 2 come down they will need to be spread apart just like in phase 1, 35 yards away. These need to be switched to as soon as they come down |grouprole EVERYONE
-|tip Spears of Light will be dropped around the room throughout this entire phase, these will deal damage to anyone within the impact zone and release 5 orbs. |grouprole EVERYONE
-|tip These orbs will go out in 5 different directions and continue until they hit a wall or hit a player, if they hit a player they will deal damage and stun the player for 3 seconds. |grouprole EVERYONE
+|tip Periodically Odyn will summon either Hymdall or Hyrja down to help him. They will have the same abilties as phase 1. If they are brought down to 85 percent health they will retreat. |grouprole EVERYONE
+|tip When one of the 2 come down they will need to be spread out just like in phase 1, 35 yards apart. These need to be switched to as soon as they come down |grouprole EVERYONE
+|tip Spears of Light will be dropped around the room throughout this entire phase, which will deal damage to anyone within the impact zone and release 5 orbs. |grouprole EVERYONE
+|tip These orbs will go out in 5 different directions and continue until they hit a wall or hit a player. If they hit a player, they will deal damage and stun the player for 3 seconds. |grouprole EVERYONE
 |tip Odyn will periodically cast Shatter, this will destroy all active Spears of Light in the boss arena, this will deal damage to the entire raid and summon 5 more orbs from each active Spear. |grouprole EVERYONE
-|tip Odyn will cast Draw Power, this will target 6 random raid members, this will put one of the 6 runes over their head, this player must run to the corresponding rune in the room. |grouprole EVERYONE
-|tip All players must switch and kill the adds that spawn and fixate the players with the runes applied to them. |grouprole EVERYONE
-|tip Once an add from dies 3 to 4 players in the raid will get that corresponding rune over their heads, these players need to run over that rune to gain the Protected buff, without this you will die when Odyn casts Unerring Blast. |grouprole EVERYONE
+|tip Odyn will cast Draw Power, which will target 6 random raid members, putting one of the 6 runes over their head. This player must run to the corresponding rune in the room. |grouprole EVERYONE
+|tip All players must switch and kill the adds that spawn and fixate on the players with the runes applied to them. |grouprole EVERYONE
+|tip Once an add dies, 3 to 4 players in the raid will get that corresponding rune over their heads, and these players need to run over that rune to gain the Protected buff. Without this you will die when Odyn casts Unerring Blast. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
-|tip Odyn will gain a stacking buff each time he attacks the same tank, this buff will increase Odyns attack speed by 8 percent per stack. |grouprole TANK
+|tip Odyn will gain a stacking buff each time he attacks the same tank, and this buff will increase Odyns attack speed by 8 percent per stack. |grouprole TANK
 |tip You will need to tank swap before the damage gets overwhelming. |grouprole TANK
 Click here for the Phase 3 abilities |confirm
 step
 kill Odyn##114263 |goto 51.1,82.1
 _Phase 3_
 _EVERYONE:_ |grouprole EVERYONE
-|tip Periodically during this phase all raid members will gain one of 5 different Runes, after 6 seconds these will Echo dealing damage to any player within 15 yards that are not the same type of Rune. |grouprole EVERYONE
+|tip Periodically during this phase all raid members will gain one of 5 different Runes, and after 6 seconds these will Echo, dealing damage to any player within 15 yards that are not the same type of Rune. |grouprole EVERYONE
 |tip You will need to make predetermined stack points for each set of runes per section of the boss arena. |grouprole EVERYONE
 |tip If you can not get to the stack point for your rune in time you should run 15 yards away from anyone else so that the Echo does not kill anyone. |grouprole EVERYONE
-|tip Storm of Justice will be cast on random raid members, players effected by this will need to run to the edge of the available platform before this debuff runs out. |grouprole EVERYONE
-|tip When Storm of Justice runs out it will summon a Raging Tempest, if anyone hits this tornado they will get dealt damage and be knocked high up in the air. |grouprole EVERYONE
-|tip There will be 3 different arenas during phase 3, only one will be safe at a time the others will be consummed by Cleansing Flame, this will deal a huge amount of damage each second to anyone standing in it. |grouprole EVERYONE
+|tip Storm of Justice will be cast on random raid members, and players affected by this will need to run to the edge of the available platform before this debuff runs out. |grouprole EVERYONE
+|tip When Storm of Justice runs out it will summon a Raging Tempest, and if anyone hits this tornado they will get dealt damage and be knocked high up in the air. |grouprole EVERYONE
+|tip There will be 3 different arenas during phase 3. Only one will be safe at a time, the others will be consummed by Cleansing Flame, dealing a huge amount of damage each second to anyone standing in it. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
 |tip When the active tank gets the Stormforged Spear debuff they will need to run as far away from the boss as they can. |grouprole TANK
 |tip The tank with the Stormforged Spear will also need to use a minor or major cooldown depending on how far they get from the boss. |grouprole TANK
-|tip Also when this happens the other tank will need to taunt the boss off of them. |grouprole TANK
+|tip Also, when this happens, the other tank will need to taunt the boss off of them. |grouprole TANK
 confirm
 step
 talk Odyn##114263 |goto 51.5,88.5
@@ -3875,24 +3875,24 @@ confirm
 step
 kill Guarm##114344 |goto Trial of Valor/3 50.5,31.0
 _EVERYONE:_ |grouprole EVERYONE
-|tip Guarm will periodically use Guardians Breath which shots out 3 different colored lines. |grouprole EVERYONE
-|tip The raid must split up into groups evenly, whichever color you are assigned to you must continue entering that color for every breath. |grouprole EVERYONE
+|tip Guarm will periodically use Guardians Breath which shoots out 3 different colored lines. |grouprole EVERYONE
+|tip The raid must split up into groups evenly. Whichever color you are assigned to you must continue entering that color for every breath. |grouprole EVERYONE
 |tip Three different debuffs will go out on random players, Shadow, Frost, and Flame Licks. |grouprole EVERYONE
-|tip For all 3 debuffs players will need to stay spread out 5 yards from each other so that when infected by this debuff you do not harm any other raid members. |grouprole EVERYONE
-|tip Before Guarm casts Roaring Leep a group of players should group up to bait this ability making it easier to deal with. |grouprole EVERYONE
-|tip He will periodically jump away to a random corner and start casting Headlong Charge, he will then charge around the entire arena, be sure to go to the safe sides and dodge this ability. |grouprole EVERYONE
+|tip For all 3 debuffs, players will need to stay spread out 5 yards from each other so that when infected by this debuff you do not harm any other raid members. |grouprole EVERYONE
+|tip Before Guarm casts Roaring Leep a group of players should group up to bait this ability, making it easier to deal with. |grouprole EVERYONE
+|tip He will periodically jump away to a random corner and start casting Headlong Charge, then he will charge around the entire arena, so be sure to go to the safe sides and dodge this ability. |grouprole EVERYONE
 |tip Guarm will cast 3 debuffs on 3 random players, Flaming, Briney, Shadowy Volatile Foam. |grouprole EVERYONE
-|tip Players effected with Flaming Volatile Foam will need to run to players with the Fiery Breath debuff before getting dispelled. |grouprole EVERYONE
-|tip Players effected with Briney Volatile Foam will need to run to players with the Salty Breath debuff before getting dispelled. |grouprole EVERYONE
-|tip Players effected with Shadowy Volatile Foam will need to run to players with the Dark Breath debuff before getting dispelled. |grouprole EVERYONE
+|tip Players affected with Flaming Volatile Foam will need to run to players with the Fiery Breath debuff before getting dispelled. |grouprole EVERYONE
+|tip Players affected with Briney Volatile Foam will need to run to players with the Salty Breath debuff before getting dispelled. |grouprole EVERYONE
+|tip Players affected with Shadowy Volatile Foam will need to run to players with the Dark Breath debuff before getting dispelled. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
-|tip The tanks will need to stay stacked on top of each other, this is so the offtank takes the damage from Multi-Headed. |grouprole TANK
+|tip The tanks will need to stay stacked on top of each other so the offtank takes the damage from Multi-Headed. |grouprole TANK
 _HEALER:_  |grouprole HEALER
 |tip The Shadow Lick will need to be healed through to remove it. |grouprole HEALER
-|tip If the boss is facing you stay 25 yards away from him. |grouprole HEALER
-|tip You must wait for the effected players to get to the proper locations before dispelling them.
+|tip If the boss is facing you, stay 25 yards away from him. |grouprole HEALER
+|tip You must wait for the affected players to get to the proper locations before dispelling them.
 _DAMAGE:_ |grouprole DAMAGE
-|tip If the boss is facing you stay 25 yards away from him. |grouprole DAMAGE
+|tip If the boss is facing you, stay 25 yards away from him. |grouprole DAMAGE
 confirm
 step
 map Trial of Valor/3
@@ -3906,8 +3906,8 @@ step
 kill Helya##114537 |goto Trial of Valor/3 35.7,24.2
 _Phase 1_
 _EVERYONE:_ |grouprole EVERYONE
-|tip Once Taint of the Sea is removed from the player it will leave behind a Tainted Essence, do not stand in these. |grouprole EVERYONE
-|tip Tentacles will periodically spawn in either the front or the back, if they spawn in the front all of the melee should stand inside it, if it's in the back one ranged with some sort of immune should solo soak this. |grouprole EVERYONE
+|tip Once Taint of the Sea is removed from the player it will leave behind a Tainted Essence. Do not stand in this. |grouprole EVERYONE
+|tip Tentacles will periodically spawn in either the front or the back. If they spawn in the front, all of the melee should stand inside it. If it's in the back, one ranged with some sort of immune should solo soak this. |grouprole EVERYONE
 |tip Orb of Corruption will target random raid members and follow them pulsing aoe damage, this needs to be kited away from other raid members. |grouprole EVERYONE
 |tip Orb of Corruption when spawned will form a beam between them, if any player touches this beam it will be an instant death. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
@@ -3918,22 +3918,22 @@ _TANK:_ |grouprole TANK
 |tip If you are not tanking the boss do not stand in this breath, and once it goes off taunt Helya off of the other tank. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
 |tip Do not stand in Bilewater Breath. |grouprole DAMAGE
-|tip After Bilewater Breath goes out it will leave behind stationary adds in a line of where the breath went, these adds need to die before their cast runs out. |grouprole DAMAGE
+|tip After Bilewater Breath goes out it will leave behind stationary adds in a line where the breath went. These adds need to be killed before their cast runs out. |grouprole DAMAGE
 Click here for the Phase 2 abilities |confirm
 step
 kill Helya##114537 |goto Trial of Valor/3 35.7,24.2
 _Phase 2_ Starts at 65 percent
 _EVERYONE:_ |grouprole EVERYONE
-|tip To start phase 3 the raid will need to kill all of the tentacles around the boss arena. |grouprole EVERYONE
-|tip Shortly after each set of adds come out there will be waves coming out from the sea, to avoid these you must go up on one of the 2 platforms on either of the sides. |grouprole EVERYONE
+|tip To start phase 3, the raid will need to kill all of the tentacles around the boss arena. |grouprole EVERYONE
+|tip Shortly after each set of adds come out there will be waves coming out of the sea. To avoid these you must go up on one of the 2 platforms on either of the sides. |grouprole EVERYONE
 |tip If you get the debuff Fetid Rot be sure to move away from any other player before the timer runs out. |grouprole EVERYONE
-|tip Decaying Minions can not be tanked they will fixate on a random raid member and when they die they will leave a pool of Decay on the ground, try not to block the entrances to the platforms with these pools. |grouprole EVERYONE
-|tip When Fury of the Maw starts coming out raid members will need to get up on top of one of the 2 higher platforms in this boss arena. |grouprole EVERYONE
-|tip In the set of adds a Helarjar Mistwatcher will spawn, this will cast Mist Infusion which will buff Helya, this can be interrupted but when interrupted it will deal just under 1 million damage to the entire raid. |grouprole EVERYONE
+|tip Decaying Minions can not be tanked. They will fixate on a random raid member and when they die they will leave a pool of Decay on the ground. Try not to block the entrances to the platforms with these pools. |grouprole EVERYONE
+|tip When Fury of the Maw starts coming out, raid members will need to get up on top of one of the 2 higher platforms in this boss arena. |grouprole EVERYONE
+|tip In the set of adds a Helarjar Mistwatcher will spawn. This will cast Mist Infusion, which will buff Helya. This can be interrupted, but when interrupted it will deal just under 1 million damage to the entire raid. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
-|tip When the adds come out there will be 2 big adds one that comes on each side of the platform, the tanks will need to split up and grab one each. |grouprole TANK
-|tip The Night Watch Mariner will be the main target for the raid to kill, if it reaches max energy it will deal aoe damage until it is killed. |grouprole TANK
-|tip The Grimelord will deal high tank damage, be sure to move out of Sludge Nova when it is cast. |grouprole TANK
+|tip When the adds come out there will be 2 big adds, one that comes on each side of the platform. The tanks will need to split up and grab one each. |grouprole TANK
+|tip The Night Watch Mariner will be the main target for the raid to kill, because if it reaches max energy it will deal AOE damage until it is killed. |grouprole TANK
+|tip The Grimelord will deal high tank damage, so be sure to move out of Sludge Nova when it is cast. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
 |tip Kill the Night Watch Mariner first. |grouprole DAMAGE
 Click here for the Phase 3 abilities |confirm
@@ -3941,21 +3941,21 @@ step
 kill Helya##114537 |goto Trial of Valor/3 35.7,24.2
 _Phase 3_ Starts once all of the Tentacles are dead
 _EVERYONE:_ |grouprole EVERYONE
-|tip After Corrupted Breath goes out it will leave behind several purple pools, there need to be at least one person in each of these pools to prevent the raid from taking a high amount of damage. |grouprole EVERYONE
-|tip Decaying Minions will spawn during this phase, but sure to kill then and place the Decay pools in good positions. |grouprole EVERYONE
+|tip After Corrupted Breath goes out it will leave behind several purple pools. There needs to be at least one person in each of these pools to prevent the raid from taking a high amount of damage. |grouprole EVERYONE
+|tip Decaying Minions will spawn during this phase. Be sure to kill them and place the Decay pools in good positions. |grouprole EVERYONE
 |tip Fury of the Sea will periodically come and summon a Night Watch Mariner along with destroying any Decay on the ground. |grouprole EVERYONE
-|tip Orb of Corrosion will target random raid members and follow them pulsing aoe damage, this needs to be kited away from other raid members. |grouprole EVERYONE
+|tip Orb of Corrosion will target random raid members and follow them, pulsing AOE damage. This needs to be kited away from other raid members. |grouprole EVERYONE
 |tip The Orb of Corrosion will also leave Decay on the ground with every pulse of damage. |grouprole EVERYONE
-|tip Orb of Corrosion when spawned will form a beam between them, if any player touches this beam it will be an instant death. |grouprole EVERYONE
+|tip Orb of Corrosion, when spawned, will form a beam between them, and if any player touches this beam they will be instantly killed. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
 |tip Do not stand in Corrupted Breath. |grouprole HEALER
-|tip Random raid members and one of the tanks will recieve Taint of the Sea periodically, these need to be dispelled asap. |grouprole HEALER
+|tip Random raid members and one of the tanks will receive Taint of the Sea periodically. These need to be dispelled ASAP. |grouprole HEALER
 _TANK:_ |grouprole TANK
 |tip Tank the boss facing the middle of the room for Corrupted Breath. |grouprole TANK
 |tip If you are not tanking the boss do not stand in this breath, and once it goes off taunt Helya off of the other tank. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
 |tip Do not stand in Corrupted Breath. |grouprole DAMAGE
-|tip Kill the Night Watch Mariner when it appears asap. |grouprole DAMAGE
+|tip Kill the Night Watch Mariner when it appears ASAP. |grouprole DAMAGE
 confirm
 step
 Congratulations you have completed Trial of Valor!
@@ -3981,24 +3981,24 @@ confirm
 step
 kill Skorpyron##102263 |goto 32.0,61.2
 _EVERYONE:_ |grouprole EVERYONE
-|tip Be sure to be in the inner circle of this boss room, never go into the outer circle. |grouprole EVERYONE
-|tip He will cast a spell called Shockwave when reaching full energy this will knock all players back into the wall if they are not protected by a Crystalline Fragment. |grouprole EVERYONE
+|tip Be sure to be in the inner circle of this boss room, and never go into the outer circle. |grouprole EVERYONE
+|tip He will cast a spell called Shockwave when reaching full energy which will knock all players back into the wall if they are not protected by a Crystalline Fragment. |grouprole EVERYONE
 |tip Crystalline Fragments will come off the boss after he takes a certain amount of damage. |grouprole EVERYONE
-|tip He will also periodically cast a spell called Focus Blast, this will target a random player and start casting, at the end it will release a cone that will deal damage and stun any player in this. |grouprole EVERYONE
+|tip He will also periodically cast a spell called Focus Blast, which will target a random player and start casting on them. It will release a cone that will deal damage and stun any player within it. |grouprole EVERYONE
 |tip Focus Blast can be avoided. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
-|tip When Crystalline Fragments come off the boss and land on the floor they will deal raid wide damage, be ready for when these come out. |grouprole HEALER
-|tip During Shockwave if any player gets knocked back they will most likely aggro extra adds be prepared to do a lot of tank healing. |grouprole HEALER
+|tip When Crystalline Fragments come off the boss and land on the floor they will deal raid wide damage, so be ready for when these come out. |grouprole HEALER
+|tip During Shockwave, if any player gets knocked back they will most likely aggro extra adds, so be prepared to do a lot of tank healing. |grouprole HEALER
 _TANK:_ |grouprole TANK
-|tip There should be 1 tank on the boss and one tank on the adds that appear. |grouprole TANK
-|tip If you are the tanking on the boss face it away from the raid. |grouprole TANK
-|tip Skorpyron will do a a 3 strike cleave in front of him appling a debuff called Arcane Tether to any tank standing in front. |grouprole TANK
-|tip To remove this debuff simply run a few yards away from where it was applied, then you may return to your original position. |grouprole TANK
-|tip The adds will apply a debuff dealing damage over time, this debuff stacks, if there are to many adds up be sure to pop a cooldown. |grouprole TANK
+|tip There should be one tank on the boss and one tank on the adds that appear. |grouprole TANK
+|tip If you are tanking the boss, face it away from the raid. |grouprole TANK
+|tip Skorpyron will do a a 3 strike cleave appling a debuff called Arcane Tether to any tank standing in front of him. |grouprole TANK
+|tip To remove this debuff, simply run a few yards away from where it was applied, then you may return to your original position. |grouprole TANK
+|tip The adds will apply a debuff dealing damage over time, which stacks. If there are too many adds up be sure to pop a cooldown. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
-|tip At the start of the fight the boss will have a hardened skeleton, decreasing damage taken by 25 percent, this percent decreases the more hes damaged. |grouprole DAMAGE
-|tip Once he is has no stacks he will go into Exoskeletion Vulnerability, this increases his damage taken by 100 percent for 15 seconds. |grouprole DAMAGE
-|tip When adds are up these should always take priority to kill except if the boss is in Exoskeletion Vulnerability. |grouprole DAMAGE
+|tip At the start of the fight the boss will have a hardened skeleton, decreasing damage taken by 25 percent, which decreases the more he's damaged. |grouprole DAMAGE
+|tip Once he has no stacks he will go into Exoskeleton Vulnerability, which increases his damage taken by 100 percent for 15 seconds. |grouprole DAMAGE
+|tip When adds are up, these should always take priority to kill, except for when the boss is in Exoskeleton Vulnerability. |grouprole DAMAGE
 confirm
 step
 map The Nighthold/1
@@ -4012,26 +4012,26 @@ confirm
 step
 kill Chronomatic Anomaly##104415 |goto 52.2,47.4
 _EVERYONE:_ |grouprole EVERYONE
-|tip Passage of time causes your cast, movement, and attack speeds as well as cooldowns to change. These changes occur after every Power Overwhelming. |grouprole EVERYONE
-|tip Burst of Time will apply to random raid members, this will apply a debuff once it runs out it will damage all players in the raid dealing more damage the closer the player is to the explosion. |grouprole EVERYONE
+|tip Passage of time causes your cast, movement, and attack speeds, as well as cooldowns, to change. These changes occur after every Power Overwhelming. |grouprole EVERYONE
+|tip Burst of Time will apply to random raid members and will apply a debuff. Once it runs out it will damage all players in the raid, dealing more damage the closer each player is to the explosion. |grouprole EVERYONE
 |tip Run out of the raid and off to a side before Burst of Time runs out. |grouprole EVERYONE
-|tip Avoid Temporal Orbs, these will come out from the center pillar. |grouprole EVERYONE
+|tip Avoid Temporal Orbs, which will come out from the center pillar. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
-|tip A debuff called Time Release will apply to random raid members during the fight, this will absorb healing, to remove this you must heal through this absorb. |grouprole HEALER
-|tip This absorbtion debuff changes with each different Passage of Time phase. |grouprole HEALER
-|tip In the slow phase it will give everyone this debuff for a small amount of healing absorb, in the fast phase it will give a few people the debuff for a large amount of healing absorb. |grouprole HEALER
-|tip If Time Release is not healed in time it will explode dealing damage to the entire raid based off of the healing absorbtion remaining. |grouprole HEALER
-|tip Power Overwhelming will deal 15 percent increased raid wide damage with each stack, save cooldowns for later stacks. |grouprole HEALER
+|tip A debuff called Time Release will apply to random raid members during the fight, which will absorb healing. To remove this, you must heal through this absorb. |grouprole HEALER
+|tip This absorption debuff changes with each different Passage of Time phase. |grouprole HEALER
+|tip In the slow phase, it will give everyone this debuff for a small amount of healing absorb. In the fast phase, it will give a few people the debuff for a large amount of healing absorb. |grouprole HEALER
+|tip If Time Release is not healed in time it will explode, dealing damage to the entire raid based off of the healing absorbtion remaining. |grouprole HEALER
+|tip Power Overwhelming will deal 15 percent increased raid wide damage with each stack, so save cooldowns for later stacks. |grouprole HEALER
 _TANK:_ |grouprole TANK
-|tip When tanking the boss he will apply Chronometic Particales, this deals damage over time and if the tank reaches 10 stacks they will instantly die and deal damage to the entire raid, taunt swap to avoid this. |grouprole TANK
-|tip Once the Waning TIme Partical add spawns move the boss to this add. |grouprole TANK
-|tip Once the Waning Time Partical dies it will spawn a Orb called a Temporal Charge, one of the tanks needs to pick this up. |grouprole TANK
-|tip The Temporal Charge will deal damage over time to the tank and once used will interrupt the bosses Power Overwhelming. |grouprole TANK
-|tip You will want to do this when your raid is taking to much damage and can't hold out. |grouprole TANK
+|tip When tanking the boss he will apply Chronometic Particles, which deals damage over time, and if the tank reaches 10 stacks they will instantly die and deal damage to the entire raid. Taunt swap to avoid this. |grouprole TANK
+|tip Once the Waning Time Particle add spawns move the boss to this add. |grouprole TANK
+|tip Once the Waning Time Particle dies it will spawn an Orb called a Temporal Charge. One of the tanks needs to pick this up. |grouprole TANK
+|tip The Temporal Charge will deal damage over time to the tank and once used it will interrupt the bosses Power Overwhelming. |grouprole TANK
+|tip You will want to do this when your raid is taking too much damage and can't hold out. |grouprole TANK
 |tip Once you use the Temporal Charge Power Overwhelming will stop channeling and the boss will take increased damage for a short time. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
-|tip Kill the Waning Time Partical as they come up, interrupt Warp Nightmare. |grouprole DAMAGE
-|tip Once the Waning Time Partical dies it will summon 4 Fragmented Time Particales, these need to die asap, you must also interrupt these when possible. |grouprole DAMAGE
+|tip Kill the Waning Time Particle as they come up, interrupt Warp Nightmare. |grouprole DAMAGE
+|tip Once the Waning Time Particle dies it will summon 4 Fragmented Time Particles, these need to die asap, you must also interrupt these when possible. |grouprole DAMAGE
 confirm
 step
 map The Nighthold/1
@@ -4043,22 +4043,22 @@ confirm
 step
 kill Trilliax##104288 |goto The Nighthold/1 41.5,20.2
 _EVERYONE:_ |grouprole EVERYONE
-|tip Arcane Seepage will target random players and spawn a pool of arcane under them, this will last the entire fight. |grouprole EVERYONE
-|tip These Arcane Seepage pools deal damage if stood in, avoid these and avoid placing them in the middle of the room. |grouprole EVERYONE
-|tip Eat Toxic Slices, to eat them run over these they are green cake that will spawn all around the room periodically. |grouprole EVERYONE
-|tip If you do not have the Stuffed debuff eat a cake this is the main priority in this fight. |grouprole EVERYONE
-|tip He will periodically pick 2 players and put Arcing Bonds on them, these players must run on top of each other to prevent a high amount of damage, these players must remain stacked until this debuff goes off. |grouprole EVERYONE
+|tip Arcane Seepage will target random players and spawn a pool of arcane under them that will last the entire fight. |grouprole EVERYONE
+|tip These Arcane Seepage pools deal damage if stood in, so avoid these and avoid placing them in the middle of the room. |grouprole EVERYONE
+|tip Eat Toxic Slices by running other them. They look like slices of green cake that will spawn all around the room periodically. |grouprole EVERYONE
+|tip If you do not have the Stuffed debuff eat a cake. This is the main priority in this fight. |grouprole EVERYONE
+|tip He will periodically pick 2 players and put Arcing Bonds on them. These players must run on top of each other to prevent a high amount of damage, remaining stacked until the debuff goes off. |grouprole EVERYONE
 |tip Trilliax will sometimes jump into the middle of the room and start casting Annihilation, this will deal a huge amount of damage every .3 seconds to anyone standing in it. Avoid getting hit by this by standing on one of his sides. |grouprole EVERYONE
-|tip Watch out for Scrubbers about to explode click these to absorb the explosion, you may need to use a minor cooldown for this. |grouprole EVERYONE
+|tip Watch out for Scrubbers about to explode. Click these to absorb the explosion. You may need to use a minor cooldown for this. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
-|tip Watch out for Scrubbers that are about to explode if they do they will deal a high amount of damage to the raid. |grouprole HEALER
+|tip Watch out for Scrubbers that are about to explode because if they do they will deal a high amount of damage to the raid. |grouprole HEALER
 _TANK:_ |grouprole TANK
-|tip Tank swap Arcane Slice debuffs. And be on top of the other tank when Arcane Slice goes out. |grouprole TANK
+|tip Tank swap Arcane Slice debuffs and be on top of the other tank when Arcane Slice goes out. |grouprole TANK
 |tip Face the boss away from the raid. |grouprole TANK
-|tip Tank the boss on the outer circle and kit him every few seconds when there gets to be to many Arcane Seepage pools for the melee to attack the boss. |grouprole TANK
+|tip Tank the boss on the outer circle and kite him every few seconds when there gets to be too many Arcane Seepage pools for the melee to attack the boss. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
-|tip Only target the boss, do not damage the adds that come out. |grouprole DAMAGE
-|tip Ranged dps that are effected by Sterilize will need to follow the Scrubbers that come out and stand next to them to drain their mana. |grouprole DAMAGE
+|tip Only target the boss. Do not damage the adds that come out. |grouprole DAMAGE
+|tip Ranged DPS that are affected by Sterilize will need to follow the Scrubbers that come out and stand next to them to drain their mana. |grouprole DAMAGE
 confirm
 step
 Congratulations you have completed the Nighthold - Arcing Aquaducts!
@@ -4083,7 +4083,7 @@ Follow the path clearing trash along the way |goto The Nighthold/3 32.0,28.7 < 5
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-Clear the trash on this side of the room and use it as the area to kill the boss in
+Clear the trash on this side of the room and use it as the area to kill the boss in.
 kill Spellblade Aluriel##104881 |goto The Nighthold/3 37.2,25.0
 There will be a Frost, Fire, and Arcane phase in this fight.
 _ALL PHASES_
@@ -4093,23 +4093,23 @@ _DAMAGE:_ |grouprole DAMAGE
 |tip Damage priority in this fight will always be adds before the boss. |grouprole DAMAGE
 _Phase 1_
 _EVERYONE:_ |grouprole EVERYONE
-|tip Mark of Frost will apply to 2 players, this will deal stacking damage overtime until transfered. |grouprole EVERYONE
-|tip To transfer Mark of Frost stack on top of the other player with Mark of Frost. |grouprole EVERYONE
-|tip She will duplicate the Mark of Frost applying it to more players, try to move out of melee range to avoid premature transfers. |grouprole EVERYONE
-|tip If you were effected by Mark of Frost when she casts Detonate be sure to spread out and get away from the melee, this will leave a frost pool on the ground. |grouprole EVERYONE
-|tip After a bit these frost pools will spawn adds, these adds will sometimes grow and create a circle of frost, anyone that hits the edge of this circle will become frozen. |grouprole EVERYONE
+|tip Mark of Frost will apply to 2 players, which will deal stacking damage overtime until transfered. |grouprole EVERYONE
+|tip To transfer Mark of Frost, stack on top of the other player with Mark of Frost. |grouprole EVERYONE
+|tip She will duplicate the Mark of Frost, applying it to more players, so try to move out of melee range to avoid premature transfers. |grouprole EVERYONE
+|tip If you were affected by Mark of Frost when she casts Detonate be sure to spread out and get away from the melee. This will leave a frost pool on the ground. |grouprole EVERYONE
+|tip After a while these frost pools will spawn adds, which will sometimes grow and create a circle of frost. Anyone that hits the edge of this circle will become frozen. |grouprole EVERYONE
 _Phase 2_
 _EVERYONE:_ |grouprole EVERYONE
-|tip She will target a random player with Searing Brand, she will then charge that player, applying a debuff. |grouprole EVERYONE
-|tip She will then duplicate this spell charging multiple people. |grouprole EVERYONE
-|tip Players effected by this debuff will need to spread out as best as possible, when detonated these players will spawn Burning Ground that will then spawn adds. |grouprole EVERYONE
-|tip These adds target players with Pyroblast that need to be either interrupted or stunned, if 2 or more adds are to close to each other their damage and cast speed will be highly increased. |grouprole EVERYONE
+|tip She will target a random player with Searing Brand, then charge that player, applying a debuff. |grouprole EVERYONE
+|tip She will duplicate this spell, charging multiple people. |grouprole EVERYONE
+|tip Players affected by this debuff will need to spread out as best as possible because when detonated these players will spawn Burning Ground that will then spawn adds. |grouprole EVERYONE
+|tip These adds target players with Pyroblast which needs to be either interrupted or stunned. If 2 or more adds are too close to each other their damage and cast speed will be highly increased. |grouprole EVERYONE
 _Phase 3_
 _EVERYONE:_ |grouprole EVERYONE
-|tip She will target a random player and summon an Arcane Orb under them, avoid standing in these. |grouprole EVERYONE
+|tip She will target a random player and summon an Arcane Orb under them. Avoid standing in these. |grouprole EVERYONE
 |tip She will then Duplicate this ability and put multiple Arcane Orbs on the ground. |grouprole EVERYONE
-|tip She will then Detonate these orbs, they will fly in the air and retarget random players in the raid, once they hit the ground they will damage the entire raid. |grouprole EVERYONE
-|tip Once all of the Arcane Orbs have retargeted they will spawn the Arcane adds, these will stand still and cast Armageddon. |grouprole EVERYONE
+|tip She will then Detonate these orbs, and they will fly into the air and retarget random players in the raid. Once they hit the ground they will damage the entire raid. |grouprole EVERYONE
+|tip Once all of the Arcane Orbs have retargeted they will spawn the Arcane adds, which will stand still and cast Armageddon. |grouprole EVERYONE
 |tip If this casts completes it will knock everyone in the raid back and cause a huge amount of damage. |grouprole EVERYONE
 confirm
 step
@@ -4127,22 +4127,22 @@ _Phase 2 Frost Phase_
 _EVERYONE:_ |grouprole EVERYONE
 |tip Stack in 2 groups preventing damage from Frigid Nova and allowing the tanks to properly do their mechanics. |grouprole EVERYONE
 |tip If you get the debuff Icy Ejection you will need to move out of the group you were assigned to and away from anyone else before this expires. |grouprole EVERYONE
-|tip This debuff will deal damage every 2 seconds and deal a high amount of damage when it expires, also when it expires it will explode and damage anyone near you. |grouprole EVERYONE
+|tip This debuff will deal damage every 2 seconds and deal a high amount of damage when it expires, including damage to anyone near you. |grouprole EVERYONE
 |tip This debuff also slows your movement speed drastically the longer it is on you. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
-|tip When tanking the boss be sure to stay max range away to prevent other players of the raid getting hit by Iceburst, this will deal damage to you and anyone within 6 yards. |grouprole TANK
+|tip When tanking the boss, be sure to stay max range away to prevent other players of the raid from getting hit by Iceburst, as this will deal damage to you and anyone within 6 yards. |grouprole TANK
 |tip Tank swap when Gravitational Pull is put on one of the tanks. |grouprole TANK
-|tip When Gravitational Pull is applied be sure to run away, there will be 3 cycles of 2 debuffs that apply every few seconds. |grouprole TANK
-|tip When the debuff turns into Comet Impact stay away from everyone else, this will deal a high amount of damage to you. |grouprole TANK
-|tip This debuff once it hits will turn into Absolute Zero, you will need to run into a ground of people to get rid of this debuff or it will kill you pretty quickly. |grouprole TANK
-|tip When getting rid of Aboslute Zero do not hit the same group twice, this will freeze those players for 10 seconds. |grouprole TANK
+|tip When Gravitational Pull is applied be sure to run away. There will be 3 cycles of 2 debuffs that apply every few seconds. |grouprole TANK
+|tip When the debuff turns into Comet Impact stay away from everyone else. This will deal a high amount of damage to you. |grouprole TANK
+|tip Once this debuff hits it will turn into Absolute Zero and you will need to run into a group of people to get rid of it or it will kill you pretty quickly. |grouprole TANK
+|tip When getting rid of Absolute Zero do not hit the same group twice, as this will freeze those players for 10 seconds. |grouprole TANK
 Click here for the Phase 3 abilities |confirm
 step
 kill Star Augur Etraeus##103758 |goto The Nighthold/6 37.0,21.0
 _Phase 3 Fel Phase_
 _EVERYONE:_ |grouprole EVERYONE
-|tip If you get the debuff Fel Ejection try to place the Felflame Pools close together, you will drop several of them, studder step to avoid taking damage. |grouprole EVERYONE
-|tip When she casts Fel Nova run to the edge of the room, this will reduce the damage you take by a significent amount. |grouprole EVERYONE
+|tip If you get the debuff Fel Ejection try to place the Felflame Pools close together. You will drop several of them, so studder step to avoid taking damage. |grouprole EVERYONE
+|tip When she casts Fel Nova, run to the edge of the room. This will reduce the damage you take by a significent amount. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
 |tip If you get the Gravitational Pull debuff use this to destroy some of the Felflame Pools dropped by other raid members. |grouprole TANK
 Click here for the Phase 4 abilities |confirm
@@ -4152,11 +4152,11 @@ _Phase 4 Void Phase_
 _EVERYONE:_ |grouprole EVERYONE
 |tip Face away from the Thing that Should Not Be when it is casting Witness the Void. |grouprole EVERYONE
 _TANK:_ |grouprole TANK
-|tip If infected with Gravitational Pull go to the edge of the room before it expires, this will summon an add, tank this add there and do not bring it close to the boss. |grouprole TANK
+|tip If infected with Gravitational Pull go to the edge of the room before it expires, as this will summon an add. Tank this add there and do not bring it close to the boss. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
-|tip Kill the Thing that Should Not Be when it spawns asap. |grouprole DAMAGE
+|tip Kill the Thing that Should Not Be when it spawns ASAP. |grouprole DAMAGE
 _HEALER:_ |grouprole HEALER
-|tip The add will cast Witness the Void this will deal more damage with each cast be prepared for this. |grouprole HEALER
+|tip The add will cast Witness the Void, which will deal more damage with each cast. Be prepared for this. |grouprole HEALER
 confirm
 step
 map The Nighthold/3
@@ -4172,22 +4172,22 @@ step
 kill High Botanist Tel'arn##104528 |goto The Nighthold/4 62.0,39.7
 There are 3 phases to this fight phase 2 starting at 75 percent and phase 3 starting at 50 percent
 _EVERYONE:_ |grouprole EVERYONE
-|tip Solar Flare will target a random player and collapse on that area avoid the yellow swirls on the ground. |grouprole EVERYONE
-|tip Controlled Chaos will target a random player and create a purple damage area, this will expand 3 times, don't stand in these. |grouprole EVERYONE
-|tip If fixated by Parasitic Fetter run away from it, if it gets into melee range of you it will reapply the root and when that root is dispelled it will summon 2 more adds. |grouprole EVERYONE
+|tip Solar Flare will target a random player and collapse on that area. Avoid the yellow swirls on the ground. |grouprole EVERYONE
+|tip Controlled Chaos will target a random player and create purple damage areas that will expand 3 times. Don't stand in these. |grouprole EVERYONE
+|tip If fixated by Parasitic Fetter run away from it because if it gets into melee range it will reapply the root and when that root is dispelled it will summon 2 more adds. |grouprole EVERYONE
 _Phase 3_ |grouprole EVERYONE
-|tip Toxic Spores will spawn around the room, avoid these, if the fight lasts to long some of these might need to be cleared, use some sort of immunity to clear them. |grouprole EVERYONE
-|tip If you are targeted by Call of Night you must stand on someone else that is not effected by this or it will deal damage to the entire raid. |grouprole EVERYONE
+|tip Toxic Spores will spawn around the room, so try to avoid these. If the fight lasts too long some of these might need to be cleared. Use some sort of immunity to clear them. |grouprole EVERYONE
+|tip If you are targeted by Call of Night you must stand on someone else that is not affected by this or it will deal damage to the entire raid. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
-|tip Parasitic Fetter will be cast on a random ranged player, this needs to be dispelled asap. This will root the player until dispelled and when dispelled it will summon 2 adds. |grouprole HEALER
+|tip Parasitic Fetter will be cast on a random ranged player, and this needs to be dispelled ASAP. It will root the player until dispelled and when dispelled it will summon 2 adds. |grouprole HEALER
 |tip Be ready to use cooldowns when multiple abilities are cast close together. |grouprole HEALER
 _TANK:_ |grouprole TANK
-|tip The original High Botanist will apply Recursive Strikes with each auto attack, this will need to be taunt swapped at around 10 or so stacks. |grouprole TANK
+|tip The original High Botanist will apply Recursive Strikes with each auto attack. This will need to be taunt swapped at around 10 or so stacks. |grouprole TANK
 _Phase 3_ |grouprole TANK
-|tip Move the bosses out of Grace of Nature when it is put on the ground, this will look like a green circle, this will heal the bosses for a percent of their hp per second. |grouprole TANK
+|tip Move the bosses out of Grace of Nature when it is put on the ground. This will look like a green circle, and will heal the bosses for a percent of their HP per second. |grouprole TANK
 _DAMAGE:_ |grouprole DAMAGE
-|tip All ranged dps must spread out around the room and stand out of the melee. |grouprole DAMAGE
-|tip Adds are priority in this fight, as soon as the parasites spawn kill them, they can be slowed, stunned, or rooted. |grouprole DAMAGE
+|tip All ranged DPS must spread out around the room and stand out of the melee. |grouprole DAMAGE
+|tip Adds are priority in this fight. As soon as the parasites spawn, kill them. They can be slowed, stunned, or rooted. |grouprole DAMAGE
 _Phase 2_ |grouprole DAMAGE
 |tip When Plasma Spheres spawn kill them one at a time, not at the same time. |grouprole DAMAGE
 confirm

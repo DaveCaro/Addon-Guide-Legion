@@ -11091,156 +11091,139 @@ achieveid={2256},
 condition_end="achieved(2257)",
 description="Kill all of the extremely rare and hard to find Northrend Creatures.",
 },[[
+stickystart "Hunter"
 step
 kill Old Crystalbark##32357 |goto Borean Tundra 25.6,34.4
 |tip He walks all around the Nexus so you may need to search for him.
-achieve 2257/23
+achieve 2257/4
 step
 kill Fumblub Gearwind##32358 |goto Borean Tundra 63.8,26.6
 |tip He is flying around this whole section of the map so you may need to search for him.
-achieve 2257/19
-step
-kill Icehorn##32361 |goto Borean Tundra 88.6,39.8
-If Icehorn is not here, you may be able to find him in the following locations:
-_Click here_ [84.6,46.8]
-_Click here_ [80.8,46.0]
-_Click here_ [81.4,31.4]
-_Click here_ [85.8,34.6]
-_Click here_ [91.6,32.6]
-|achieve 2257/11
-step
-kill Crazed Indu'le Survivor##32409 |goto Dragonblight 26.6,58.6
-|tip He walks around this area so you may need to search for him.
-achieve 2257/20
-step
-kill Tukemuth##32400 |goto Dragonblight 67.6,60.0
-If Tukemuth is not here, you may be able to find him in the following locations:
-_Click here_ [70.8,30.2]
-_Click here_ [62.6,42.2]
-_Click here_ [59.0,60.2]
-_Click here_ [54.6,56.8]
-_Click here_ [61.0,31.0]
-achieve 2257/3
-step
-kill Scarlet Highlord Daion##32417 |goto Dragonblight 72.6,25.8
-If Scarlet Highlord Daion is not here, you may be able to find him in the following locations:
-_Click here_ [86.8,41.6]
-_Click here_ [72.0,74.0]
-achieve 2257/22
-step
-kill Grocklar##32422 |goto Grizzly Hills 25.0,57.0
-If Grocklar is not here, you may be able to find him in the following locations:
-_Click here_ [13.2,48.6]
-_Click here_ [22.4,73.2]
-_Click here_ [12.2,70.6]
 achieve 2257/5
 step
-kill Seething Hate##32429 |goto Grizzly Hills 40.2,48.8
+kill Icehorn##32361 |achieve 2257/6 |goto Borean Tundra 88.6,39.8
+If Icehorn is not here, you may be able to find him in the following locations:
+Location 1: |goto 84.6,46.8
+Location 2: |goto 80.8,46.0
+Location 3: |goto 81.4,31.4
+Location 4: |goto 85.8,34.6
+Location 5: |goto 91.6,32.6
+step
+kill Crazed Indu'le Survivor##32409 |achieve 2257/11 |goto Dragonblight 26.6,58.6
+|tip He walks around this area so you may need to search for him.
+step
+kill Tukemuth##32400 |achieve 2257/10 |goto Dragonblight 67.6,60.0
+If Tukemuth is not here, you may be able to find him in the following locations:
+Location 1: |goto 70.8,30.2
+Location 2: |goto 62.6,42.2
+Location 3: |goto 59.0,60.2
+Location 4: |goto 54.6,56.8
+Location 5: |goto 61.0,31.0
+step
+kill Scarlet Highlord Daion##32417 |achieve 2257/12 |goto Dragonblight 72.6,25.8
+If Scarlet Highlord Daion is not here, you may be able to find him in the following locations:
+Location 1: |goto 86.8,41.6
+Location 2: |goto 72.0,74.0
+step
+kill Grocklar##32422 |achieve 2257/13 |goto Grizzly Hills 25.0,57.0
+If Grocklar is not here, you may be able to find him in the following locations:
+Location 1: |goto 13.2,48.6
+Location 2: |goto 22.4,73.2
+Location 3: |goto 12.2,70.6
+step
+kill Seething Hate##32429 |achieve 2257/14 |goto Grizzly Hills 40.2,48.8
 If Seething Hate is not here, you may be able to find it in the following locations:
-_Click here_ [34.6,49.0]
-_Click here_ [28.6,45.8]
-achieve 2257/6
+Locaiton 1: |goto 34.6,49.0
+Location 2: |goto 28.6,45.8
 step
-kill Syreian the Bonecarver##32438 |goto Grizzly Hills 69.6,32.2
+kill Syreian the Bonecarver##32438 |achieve 2257/15 |goto Grizzly Hills 69.6,32.2
 |tip She walks around in this area so you may need to search for her.
-achieve 2257/12
 step
-kill King Ping##32398 |goto Howling Fjord 33.2,80.6
+kill King Ping##32398 |achieve 2257/9 |goto Howling Fjord 33.2,80.6
 |tip He is wandering about this island and the one north of it.
-achieve 2257/2
 step
-kill Vigdis the War Maiden##32386 |goto Howling Fjord 72.6,52.0
+kill Vigdis the War Maiden##32386 |achieve 2257/8 |goto Howling Fjord 72.6,52.0
 |tip She wanders around this area so you may need to search for her a bit.
-achieve 2257/1
 step
-kill Perobas the Bloodthirster##32377 |goto Howling Fjord 50.6,4.8
+kill Perobas the Bloodthirster##32377 |achieve 2257/7 |goto Howling Fjord 50.6,4.8
 If Perobas the Bloodthirster is not here, you may be able to find him in the following locations:
-_Click here_ [53.0,11.4]
-_Click here_ [60.8,20.2]
-_Click here_ [68.6,17.6]
-_Click here_ [71.6,13.8]
-achieve 2257/4
+Location 1: |goto 53.0,11.4
+Location 2: |goto 60.8,20.2
+Location 3: |goto 68.6,17.6
+Location 4: |goto 71.6,13.8
 step
-kill High Thane Jorfus##32501 |goto Icecrown 48.6,80.2
+kill High Thane Jorfus##32501 |achieve 2257/2 |goto Icecrown 48.6,80.2
 If High Thane Jorfus is not here, you may be able to find him in the following locations:
-_Click here_ [32.0,69.6]
-_Click here_ [60.8,20.2]
-_Click here_ [72.8,38.8]
-achieve 2257/9
+Location 1: |goto 32.0,69.6
+Location 2: |goto 60.8,20.2
+Location 3: |goto 72.8,38.8
 step
-kill Hildana Deathstealer##32495 |goto Icecrown 32.4,29.6
+kill Hildana Deathstealer##32495 |achieve 2257/3 |goto Icecrown 32.4,29.6
 If Hildana Deathstealer is not here, you may be able to find her in the following locations:
-_Click here_ [31.8,41.8]
-_Click here_ [58.2,54.2]
-achieve 2257/10
+Location 1: |goto 31.8,41.8
+Location 2: |goto 58.2,54.2
 step
-kill Putridus the Ancient##32487 |goto Icecrown 55.6,41.2
+kill Putridus the Ancient##32487 |achieve 2257/23 |goto Icecrown 55.6,41.2
 |tip He walks around this whole trench, so you may need to search for him.
-achieve 2257/18
 step
-kill Aotona##32481 |goto Sholazar Basin 54.8,52.6
+kill Aotona##32481 |achieve 2257/19 |goto Sholazar Basin 54.8,52.6
 If Aotona is not here, you may be able to find him in the following locations:
-_Click here_ [58.2,64.0]
-_Click here_ [52.6,72.2]
-_Click here_ [41.8,69.6]
-_Click here_ [41.0,58.6]
-_Click here_ [45.8,54.4]
-achieve 2257/7
+Location 1: |goto 58.2,64.0
+Location 2: |goto 52.6,72.2
+Location 3: |goto 41.8,69.6
+Location 4: |goto 41.0,58.6
+Location 5: |goto 45.8,54.4
 step
-kill King Krush##32485 |goto Sholazar Basin 64.6,81.0
+kill King Krush##32485 |achieve 2257/20 |goto Sholazar Basin 64.6,81.0
 If King Krush is not here, you may be able to find him in the following locations:
-_Click here_ [59.0,80.8]
-_Click here_ [50.6,78.2]
-_Click here_ [27.6,45.2]
-_Click here_ [37.6,28.8]
-_Click here_ [49.8,45.0]
-achieve 2257/15
+Location 1: |goto 59.0,80.8
+Location 2: |goto 50.6,78.2
+Location 3: |goto 27.6,45.2
+Location 4: |goto 37.6,28.8
+Location 5: |goto 49.8,45.0
 step
-kill Loque'nahak##32517 |goto Sholazar Basin 71.6,72.0
+kill Loque'nahak##32517 |achieve 2257/1 |goto Sholazar Basin 71.6,72.0
 If Loque'nahak is not here, you may be able to find him in the following locations:
-_Click here_ [67.0,79.6]
-_Click here_ [51.0,81.6]
-_Click here_ [22.6,70.6]
-_Click here_ [31.0,66.6]
-_Click here_ [36.6,31.0]
-_Click here_ [59.4,22.6]
-achieve 2257/8
+Location 1: |goto 67.0,79.6
+Location 1: |goto 51.0,81.6
+Location 1: |goto 22.6,70.6
+Location 1: |goto 31.0,66.6
+Location 1: |goto 36.6,31.0
+Location 1: |goto 59.4,22.6
 step
-kill Dirkee##32500 |goto The Storm Peaks 68.0,47.6
+kill Dirkee##32500 |achieve 2257/22 |goto The Storm Peaks 68.0,47.6
 If Dirkee is not here, you may be able to find him in the following locations:
-_Click here_ [37.8,58.6]
-_Click here_ [41.0,51.6]
-_Click here_ [41.6,40.6]
-achieve 2257/17
+Location 1: |goto 37.8,58.6
+Location 2: |goto 41.0,51.6
+Location 3: |goto 41.6,40.6
 step
-kill Vyragosa##32630 |goto The Storm Peaks 41.2,59.0
+kill Vyragosa##32630 |achieve 2257/21 |goto The Storm Peaks 41.2,59.0
 |tip This dragon flies around the whole zone so you may need to search for him a bit.
-achieve 2257/16
 step
-kill Griegen##32471 |goto Zul'Drak 21.2,79.8
+kill Griegen##32471 |achieve 2257/17 |goto Zul'Drak 21.2,79.8
 If Griegen is not here, you may be able to find him in the following locations:
-_Click here_ [25.8,76.8]
-_Click here_ [26.6,71.2]
-_Click here_ [22.0,70.6]
-_Click here_ [18.0,70.6]
-_Click here_ [14.6,56.8]
-_Click here_ [23.0,62.8]
-_Click here_ [26.6,55.4]
-achieve 2257/13
+Location 1: |goto 25.8,76.8
+Location 2: |goto 26.6,71.2
+Location 3: |goto 22.0,70.6
+Location 4: |goto 18.0,70.6
+Location 5: |goto 14.6,56.8
+Location 6: |goto 23.0,62.8
+Location 7: |goto 26.6,55.4
 step
-kill Zul'drak Sentinel##32447 |goto Zul'Drak 40.4,64.0
+kill Zul'drak Sentinel##32447 |achieve 2257/16 |goto Zul'Drak 40.4,64.0
 |tip He wanders around this area so you may need to search for him.
-achieve 2257/21
 step
-kill Terror Spinner##32475 |goto Zul'Drak 53.6,31.6
+kill Terror Spinner##32475 |achieve 2257/18 |goto Zul'Drak 53.6,31.6
 If Terror Spinner is not here, you may be able to find him in the following locations:
-_Click here_ [61.2,36.6]
-_Click here_ [71.6,23.4]
-_Click here_ [72.2,28.4]
-_Click here_ [81.6,34.6]
-_Click here_ [77.6,42.8]
-_Click here_ [74.8,66.4]
-achieve 2257/14
+Location 1: |goto 61.2,36.6
+Location 2: |goto 71.6,23.4
+Location 3: |goto 72.2,28.4
+Location 4: |goto 81.6,34.6
+Location 5: |goto 77.6,42.8
+Location 6: |goto 74.8,66.4
+step "Hunter"
+If you want to tame the beasts found on this list, it is now possible to do so _AND_ still get credit for the kill!
+|only Hunter
 step
 Congratulations, you have _earned_ the _Northern Exposure_ achievement! |only if achieved(2256)
 Congratulations, you have _earned_ the _Frostbitten_ achievement! |only if achieved(2257)

@@ -5419,9 +5419,11 @@ function ZGV:FindGuides(sub)
 	end
 	--]]
 	for gi,g in pairs(self.registeredguides) do
-		if not g.poi or (g.poi and ZGV.DEV) then
+		if not (g.poi or g.type=="TEST") or ZGV.db.profile.debug_display then
 			if (g.title_short and g.title_short:lower():find(sub,1,true)) then
-				tinsert(found,g)
+				if not (ZGV.db.profile.gmhidecompleted and (g:GetStatus()=="OUTLEVELED" or g:GetStatus()=="COMPLETE")) then
+					tinsert(found,g)
+				end
 			elseif g.keywords then
 				for _,word in pairs(g.keywords) do
 					if word:lower():find(sub,1,true) then

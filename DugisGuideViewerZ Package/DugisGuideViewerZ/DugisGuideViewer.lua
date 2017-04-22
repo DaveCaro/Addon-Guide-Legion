@@ -3631,6 +3631,8 @@ function DugisGuideViewer:TurnOnEssentials()
 	if DugisGuideViewer:IsModuleLoaded("ModelViewer") then DugisGuideViewer.Modules.ModelViewer.Frame:Hide() end
 	DugisGuideViewer.Modules.QuestPOI:ObjectivesChangedDelay(3)
 	if DugisGuideViewer_ModelViewer and DugisGuideViewer_ModelViewer:IsShown() then DugisGuideViewer_ModelViewer:Hide() end
+    
+    DugisGuideViewer:UpdateAutoMountEnabled()
 	print("|cff11ff11" .. "Dugi Guides Essential Mode" )
 end
 

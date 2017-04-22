@@ -850,7 +850,7 @@ function AutoEquip:ShowGearReport(verbose,minimal,hideDump)
 
 	if not hideDump then ZGV:ShowDump(s,"Zygor Gear Bug Report") end
 
-	if Spoo and ZGV.DEV then Spoo(nil,nil,F) end
+	if Spoo and ZGV.db.profile.debug_display then Spoo(nil,nil,F) end
 
 	return s
 end

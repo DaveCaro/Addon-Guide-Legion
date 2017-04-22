@@ -770,7 +770,7 @@ end
 function ZygorGuidesViewerFrame_OnShow()
 	if not ZGV.Frame then return end
 	ZGV:Frame_OnShow()
-	if ZGV.DEV or ZGV.BETA then ZygorGuidesViewerFrame_DevLabel:Show() else ZygorGuidesViewerFrame_DevLabel:Hide() end
+	if (ZGV.DEV or ZGV.BETA) and ZGV.db.profile.debug_display then ZygorGuidesViewerFrame_DevLabel:Show() else ZygorGuidesViewerFrame_DevLabel:Hide() end
 	if ZGV.BETA then ZygorGuidesViewerFrame_DevLabel:SetText("BETA") end
 end
 

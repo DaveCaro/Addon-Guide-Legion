@@ -7752,4 +7752,6 @@ ZygorGuidesViewer_L("NPCs", "esES", function() return {
 [119944]="Lasan Skyhorn|",
 [119676]="Lasan Skyhorn|",
 [119184]="Tehd Shoemaker|",
+[121321]="Master Jiedari|",
+[120076]="Treasure Master Iks'reeged|",
 } end)

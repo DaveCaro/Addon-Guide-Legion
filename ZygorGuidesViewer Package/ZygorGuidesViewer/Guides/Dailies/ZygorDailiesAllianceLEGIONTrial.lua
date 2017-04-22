@@ -540,6 +540,19 @@ kill Felsurge Broodmother##113987+
 collect 10 Felsurge Spider Egg##137335 |q 42276/2 |goto 33.86,42.95
 |next "Court_Of_Farondis_WQ"
 step
+label quest-43328
+Follow the path |goto Azsuna/0 46.22,44.58 < 30 |only if walking
+Follow the path |goto 48.34,44.02 < 30 |only if walking
+Follow the path |goto 49.21,45.29 < 30 |only if walking
+accept Enigmatic##43328 |goto 49.19,46.77
+|tip You will accept this quest automatically.
+step
+click Puzzle Box
+|tip Memorize the patterns of the tiles on the ground.
+|tip When the grid appears, walk on the tiles illustrated in the patterns.
+Solve the Enigma |q 43328/1 |goto 49.19,46.77
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42711
 Cross the bridge |goto Azsuna/0 56.48,62.04 < 30 |only if walking
 accept The Eternal Mages##42711 |goto 56.33,65.90

@@ -212,7 +212,7 @@ ZygorGuidesViewer_L("Main", "enUS", function() local f = {
 
 	['opt_gmcolorcode'] = "Color code icons to show guide difficulty/status",
 	['opt_gmusecheck'] = "Use checkmark icon for completed guides.",
-	['opt_gmhidecompleted'] = "Hide completed guides.",
+	['opt_gmhidecompleted'] = "Hide completed and outleveled guides.",
 	['opt_gmnumrecent'] = "Number of Recent guides to show:",
 	['opt_gmstarsuggested'] = "Use star icon for Suggested guides",
 

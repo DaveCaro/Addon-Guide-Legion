@@ -15756,9 +15756,9 @@ confirm
 step
 map Firelands/1
 path loop off
-path	33.2,77.0	41.7,70.4	32.9,52.8
-path	33.1,29.3
-Follow the path, clearing trash as you make your way to the first boss, Beth'tilac. |goto Firelands/1 33.1,29.3 < 5
+path	33.2,77.0	41.7,70.4	29.3,62.7
+path	16.1,46.1	27.4,44.3
+Follow the path, clearing trash as you make your way to the first boss, Beth'tilac. |goto Firelands/1 27.4,44.3 < 5
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
@@ -15777,9 +15777,9 @@ confirm
 step
 map Firelands/1
 path loop off
-path	33.1,29.3	32.9,52.8	41.7,70.4
-path	56.7,62.5
-Follow the path, clearing trash as you make your way to the next boss, _Shannox_. |goto Firelands/1 56.7,62.5 < 5
+path	27.4,44.3	16.1,46.1	29.3,62.7
+path	41.7,70.4	53.0,66.5
+Follow the path, clearing trash as you make your way to the next boss, _Shannox_. |goto Firelands/1 53.0,66.5 < 5
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
@@ -15850,12 +15850,12 @@ confirm
 step
 map Firelands/1
 path loop off
-path	49.3,17.2	Firelands/2 51.0,90.0
-Follow the path, clearing trash as you make your way to the next boss, Majordomo Staghelm. |goto Firelands/2 51.0,90.0 < 5
+path	49.3,17.2	Firelands/3 51.0,90.0
+Follow the path, clearing trash as you make your way to the next boss, Majordomo Staghelm. |goto Firelands/3 51.0,90.0 < 5
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-kill Majordomo Staghelm##52571 |goto Firelands/2 50.9,72.4
+kill Majordomo Staghelm##52571 |goto Firelands/3 50.9,72.4
 |tip Fury increases Staghelm's damage by 8% per stack. He gains a stack of this every time he switches between scorpion and cat forms.
 |tip Searing Seeds plants fiery seeds into all raid members. Each seed grows at a different rate and explodes when fully grown, dealing 45,000 Fire damage to players within 12 yards.
 |tip Fiery Cyclone tosses all raid members into the air, preventing any action but making them invulnerable.
@@ -15865,14 +15865,14 @@ _Cat Form_
 |tip Leaping Flames leaps at a player, leaving behind a Spirit of the Flame and landing in a blaze, igniting the ground and causing it to deal 19,000 Fire damage every 0.5 seconds for 1 minute.
 confirm
 step
-map Firelands/2
+map Firelands/3
 path loop off
 path	51.0,90.0	50.6,30.2
-Follow the path, clearing trash as you make your way to the next boss, _Ragnaros_. |goto Firelands/2 50.6,30.2 < 5
+Follow the path, clearing trash as you make your way to the next boss, _Ragnaros_. |goto Firelands/3 50.6,30.2 < 5
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-kill Ragnaros##52409 |goto Firelands/2 50.7,15.3
+kill Ragnaros##52409 |goto Firelands/3 50.7,15.3
 |tip Sulfuras Smash Ragnaros strikes the ground, sending out waves of lava from the impact point.
 |tip Magma Trap creates a trap that deals 60,000 Fire damage to all players and knocking back the player that triggered it.
 |tip Hand of Ragnaros deals 23,000 Fire damage to all players within 55 yards and knocking them back.

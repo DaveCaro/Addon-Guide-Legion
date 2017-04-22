@@ -5451,7 +5451,7 @@ step "frostweave"
 kill Dark Ritualist##34734+,Dark Zealot##34728+ |goto Icecrown 61.8,20.8
 Click here to pick a different cloth |confirm |next "start"
 step "embersilk"
-kill Twilight Augur##40713+, Twilight Retainer##40767+ |goto Mount Hyjal 35.0,24.0
+kill Twilight Augur##40713+, Twilight Retainer##40767+ |goto Mount Hyjal/0 56.82,69.46
 Click here to pick a different cloth |confirm |next "start"
 step "windwool"
 kill Springtail Leaper##57415+, Springtail Gnasher##57413+ |goto Valley of the Four Winds 43.9,38.6

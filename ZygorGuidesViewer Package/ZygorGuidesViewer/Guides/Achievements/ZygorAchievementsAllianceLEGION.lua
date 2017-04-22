@@ -3333,8 +3333,8 @@ Click here to load the "Broken Isles Pathfinder, Part One" achievement guide |ne
 Earn the _Explore Broken Shore_ achievement |achieve 11446/2
 Click here to load the "Explore Broken Shore" achievement guide |next "Zygor's Alliance Achievement Guides\\Exploration\\Legion\\Explore Broken Shore"
 |tip This achievement requires you to explore all areas of the Broken Shore zone.
-Earn the _Legionfall Commander_ achievement |achieve 11446/4
-|tip This achievement requires you to earn exalted reputation with the Armies of Legionfall faction.
+Earn the _Legionfall Commander_ achievement |achieve 11446/3
+|tip This achievement requires you to earn revered reputation with the Armies of Legionfall faction.
 |tip You can accomplish this by completing quests and world quests in Broken Shore, as well as class order hall missions.
 step
 _Congratulations!_

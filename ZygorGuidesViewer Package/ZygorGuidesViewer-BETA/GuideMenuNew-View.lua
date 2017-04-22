@@ -631,7 +631,7 @@ function GuideMenu:PrepareGuidesMenuButtons()
 	local previous = nil
 
 	for i,group in pairs(ZGV.registered_groups.groups) do
-		if group.name~="SUGGESTED" then
+		if group and not (group.name == "SUGGESTED" or (group.name=="TEST" and not ZGV.db.profile.debug_display)) then
 			local x,y,label = unpack(GuideMenu.GUIDE_DISPLAY[group.name])
 			buttons[group.name] = GuideMenu:MakeMenuButton("Button"..group.name,label,ZGV.DIR.."\\Skins\\guideicons-big",x,4,y,4)
 			if previous then

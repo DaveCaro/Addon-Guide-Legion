@@ -1845,16 +1845,16 @@ ZygorGuidesViewer:RegisterInclude("H_Noblegarden_Achievements",[[
 		Bring out your Spring Rabbit companion 
 		|tip Press Shift-P to bring up your Pet Journal and click the Spring Rabbit.
 		Find a player with a Spring Rabbit next to them around Bloodhoof Village
-		Find your Spring Rabbit another one to love in Bloodhoof Village |achieve 2497/3 |goto 47.2,59.3
+		Find your Spring Rabbit another one to love in Bloodhoof Village |achieve 2497/1 |goto 47.2,59.3
 		modelnpc Spring Rabbit##32791
 	step
 		Equip your Spring Robes in your bags |equipped Spring Robes##44800 |use Spring Robes##44800
 		Use your Spring Robes' ability to plant a flower
-		Plant a flower in Desolace |achieve 2436/1 |goto Desolace 57.0,53.5
+		Plant a flower in Desolace |achieve 2436/2 |goto Desolace 57.0,53.5
 	step
 		Equip your Spring Robes in your bags |equipped Spring Robes##44800 or achieved(2436,3) |use Spring Robes##44800
 		Use your Spring Robes' ability to plant a flower
-		Plant a flower in Silithus |achieve 2436/2 |goto Silithus 53.0,34.7
+		Plant a flower in Silithus |achieve 2436/3 |goto Silithus 53.0,34.7
 	step
 		Change into a bunny |havebuff Interface\Icons\INV_Misc_Food_54 |or 
 		|tip You will need a friend to do this, or at least another player.  There should be plenty of players trying to do this achievement at the same time, so it should be easy to find help.  Have your friend, or other player, use their Blossoming Branch on you to turn you into a rabbit.
@@ -1867,18 +1867,18 @@ ZygorGuidesViewer:RegisterInclude("H_Noblegarden_Achievements",[[
 	step
 		Equip your Spring Robes in your bags |equipped Spring Robes##44800 or achieved(2436,5) |use Spring Robes##44800
 		Use your Spring Robes' ability to plant a flower
-		Plant a flower in Thousand Needles |achieve 2436/3 |goto Thousand Needles,90.3,72.8
+		Plant a flower in Thousand Needles |achieve 2436/5 |goto Thousand Needles,90.3,72.8
 	step
 		Bring out your Spring Rabbit companion 
 		|tip Press Shift-P to bring up your Pet Journal and click the Spring Rabbit.
 		Find a player with a Spring Rabbit next to them around Razor Hill
-		Find your Spring Rabbit another one to love in Razor Hill |achieve 2497/2 |goto Durotar,52.5,42.7
+		Find your Spring Rabbit another one to love in Razor Hill |achieve 2497/4 |goto Durotar,52.5,42.7
 		modelnpc Spring Rabbit##32791
 	step
 		Bring out your Spring Rabbit companion 
 		|tip Press Shift-P to bring up your Pet Journal and click the Spring Rabbit.
 		Find a player with a Spring Rabbit next to them around Brill
-		Find your Spring Rabbit another one to love in Brill |achieve 2497/4 |goto Tirisfal Glades,61.0,52.7
+		Find your Spring Rabbit another one to love in Brill |achieve 2497/2 |goto Tirisfal Glades,61.0,52.7
 		modelnpc Spring Rabbit##32791
 	step
 		Place your Noblegarden Egg anywhere in Silvermoon City |use Noblegarden Egg##44818
@@ -1887,12 +1887,12 @@ ZygorGuidesViewer:RegisterInclude("H_Noblegarden_Achievements",[[
 		Bring out your Spring Rabbit companion 
 		|tip Press Shift-P to bring up your Pet Journal and click the Spring Rabbit.
 		Find a player with a Spring Rabbit next to them around Falconwing Square
-		Find your Spring Rabbit another one to love in Falconwing Square |achieve 2497/1 |goto Eversong Woods,47.5,46.5
+		Find your Spring Rabbit another one to love in Falconwing Square |achieve 2497/3 |goto Eversong Woods,47.5,46.5
 		modelnpc Spring Rabbit##32791
 	step
 		Equip your Spring Robes in your bags |equipped Spring Robes##44800 or achieved(2436,1) |use Spring Robes##44800
 		Use your Spring Robes' ability to plant a flower
-		Plant a flower in The Badlands |achieve 2436/5 |goto Badlands 65.2,35.4
+		Plant a flower in The Badlands |achieve 2436/1 |goto Badlands 65.2,35.4
 	step
 		Equip your Black Tuxedo Pants |equipped Black Tuxedo Pants##6835 or achieved(2576) |use Black Tuxedo Pants##6835
 		Equip your White Tuxedo Shirt |equipped White Tuxedo Shirt##6833 or achieved(2576) |use White Tuxedo Shirt##6833
@@ -1901,20 +1901,20 @@ ZygorGuidesViewer:RegisterInclude("H_Noblegarden_Achievements",[[
 		Kiss someone wearing an Elegant Dress while wearing a White Tuxedo Shirt and Black Tuxedo Pants |achieve 2576
 	step
 		Find a female character of every race that are at least level 18 and do the following: 
-		|tip The best places to try and find them would be Dalaran, Shattrath, Stormwind, and Orgrimmar
+		|tip The best places to try and find them would be Dalaran - Broken Shore, Stormwind, and Orgrimmar
 		Use your Spring Flowers on them |equipped Spring Flowers##45073 or achieved(2422) |use Spring Flowers##45073
 		Place bunny ears on a Blood Elf |achieve 2422/1
-		Place bunny ears on a Human |achieve 2422/3
-		Place bunny ears on a Troll |achieve 2422/7
 		Place bunny ears on a Draenei |achieve 2422/2
-		Place bunny ears on a Night Elf |achieve 2422/9
-		Place bunny ears on an Undead |achieve 2422/8
-		Place bunny ears on a Dwarf |achieve 2422/4
-		Place bunny ears on a Orc |achieve 2422/5
-		Place bunny ears on a Gnome |achieve 2422/10
-		Place bunny ears on a Tauren |achieve 2422/6
-		Place bunny ears on a Goblin |achieve 2422/12
-		Place bunny ears on a Worgen |achieve 2422/11
+		Place bunny ears on a Dwarf |achieve 2422/3
+		Place bunny ears on a Gnome |achieve 2422/4
+		Place bunny ears on a Goblin |achieve 2422/5
+		Place bunny ears on a Human |achieve 2422/6
+		Place bunny ears on a Night Elf |achieve 2422/7
+		Place bunny ears on a Orc |achieve 2422/8
+		Place bunny ears on a Tauren |achieve 2422/9
+		Place bunny ears on a Troll |achieve 2422/10
+		Place bunny ears on an Undead |achieve 2422/11
+		Place bunny ears on a Worgen |achieve 2422/12
 	step
 		Congratulations, you are now a Noble Gardener!
 ]])

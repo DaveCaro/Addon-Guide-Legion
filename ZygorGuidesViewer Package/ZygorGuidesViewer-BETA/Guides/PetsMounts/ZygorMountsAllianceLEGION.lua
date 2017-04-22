@@ -1146,3 +1146,660 @@ label "Steelbound Grats"
 _Congratulations!_
 You collected the _Steelbound Devourer_ mount
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Riddler's Mind-Worm",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"riddler","mind","flying","mount","worm"},
+condition_end="hasmount(243025)",
+model={74314},
+description="This guide will help you acquire the Riddler's Mind-Worm.",
+},[[
+step
+Enter the Legerdemain Lounge |goto Dalaran L/10 46.14,38.18
+click Page 9 |goto Dalaran L/10 48.83,41.97
+|tip It's a small book on top of the shelf here.
+Click here to continue |confirm
+step
+click Page 78 |goto Duskwood/0 49.23,33.96
+|tip It's a small book on top of the table here.
+Click here to continue |confirm
+step
+Enter the Firelands |goto Mount Hyjal/0 47.55,77.91 < 5
+Cross the bridge after killing Baleroc |goto Firelands/1 49.1,15.8
+|tip You will need to kill all of the other bosses in the instance.
+|tip You can check out our Firelands guide to accomplish this.
+click Page 161 |goto Firelands/3 46.7,16.9
+|tip It's a small book lying on the ground.
+Click here to continue |confirm
+step
+click Page 655 |goto Uldum/0 70.50,78.09
+|tip It is a small book on the ground between 2 small palm trees.
+Click here to continue |confirm
+step
+talk Lorewalker Han##80633
+"Tell me of the Vale of Eternal Sorrows that surrond us."
+Queue for the Vale of Eternal Sorrows |goto Vale of Eternal Blossoms/0 83.17,30.58
+Enter the Vale of Eternal Sorrows |goto Siege of Orgrimmar/2 93.5,45.7 < 5 |noway |c
+step
+Enter the Vale of Eternal Sorrows |goto Siege of Orgrimmar/2 93.5,45.7 < 5
+|tip You must clear the instance up to Sha of Pride.
+|tip You can check out our Siege of Orgrimmar guide to accomplish this.
+click Page 845 |goto Siege of Orgrimmar/3 19.8,83.2
+|tip It is a small book lying on the ground in the corner.
+Click here to continue |confirm
+step
+Enter the Well of Eternity |goto Tanaris/18 22.86,64.32 < 5
+|tip You will need to kill the first 2 bosses.
+|tip You can check out our Well of Eternity guide to accomplish this.
+click Page 1127 |goto Well of Eternity/0 75.2,66.1
+|tip It is a small book lying the bottom of these steps.
+Click here to continue |confirm
+step
+click Page 2351 |goto Kun-Lai Summit/0 34.63,50.88
+|tip It is a small book between the paws of this statue.
+Click here to continue |confirm
+step
+click Page 5555 |goto Uldum/0 76.42,53.58
+|tip It is a small book on the platform of a giant statue.
+Click here to continue |confirm
+step
+click Gift of the Mind-Seekers
+collect Riddler's Mind-Worm##147835 |n
+Use the Riddler's Mind-Worm |use Riddler's Mind-Worm##147835
+learnmount Riddler's Mind-Worm##243025 |goto Westfall/0 30.55,27.50
+step
+_Congratulations!_
+You collected the _Riddler's Mind-Worm_ mount
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Highmountain Elderhorn",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"highmountain","elderhorn","ground","mount"},
+condition_end="hasmount(242874)",
+model={67039},
+description="This guide will help you acquire the Highmountain Elderhorn.",
+},[[
+step
+Earn exalted reputation with Highmountain |condition rep("Highmountain Tribe")>=Exalted
+|tip Use the "Highmountain" leveling guide to accomplish this.
+|tip Complete world quests in Highmountain.
+|tip Use the "World Quests" dailies guide to accomplish this.
+step
+Once exalted you will need to obtain 10,000 more reputation.
+|tip Use the "Highmountain" leveling guide to accomplish this.
+|tip Complete world quests in Highmountain.
+|tip Use the "World Quests" dailies guide to accomplish this.
+confirm
+step
+When you get to 10,000 reputation you will recieve a quest.
+accept Supplies From Highmountain##46743
+step
+talk Ransa Greyfeather##106902
+turnin Supplies From Highmountain##46743 |goto Thunder Totem/0 38.22,46.01
+step
+collect Highmountain Supplies##146899 |n
+Open up your Highmountain Supplies |use Highmountain Supplies##146899
+|tip This mount will have a small chance to be inside.
+collect Highmountain Elderhorn##147807 |use Highmountain Elderhorn##147807
+learnmount Highmountain Elderhorn##242874
+step
+_Congratulations!_
+You are now the proud owner of a Highmountain Elderhorn.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Valarjar Stormwing",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"valarjar","stormwing","flying","mount"},
+condition_end="hasmount(242882)",
+model={68053},
+description="This guide will help you acquire the Valarjar Stormwing.",
+},[[
+step
+Earn exalted reputation with Valarjar |condition rep("Valarjar")>=Exalted
+|tip Use the "Stormheim" leveling guide to accomplish this.
+|tip Complete world quests in Stormheim.
+|tip Use the "World Quests" dailies guide to accomplish this.
+step
+Once exalted you will need to obtain 10,000 more reputation.
+|tip Use the "Stormheim" leveling guide to accomplish this.
+|tip Complete world quests in Stormheim.
+|tip Use the "World Quests" dailies guide to accomplish this.
+confirm
+step
+When you get to 10,000 reputation you will recieve a quest.
+accept Supplies From the Valarjar##46746
+step
+talk Valdemar Stormseeker##106904
+turnin Supplies From the Valarjar##46746 |goto Stormheim/0 60.2,51.2
+step
+collect Valarjar Strongbox##146901 |n
+Open up your Valarjar Strongbox |use Valarjar Strongbox##146901
+|tip This mount will have a small chance to be inside.
+collect Valarjar Stormwing##147805 |use Valarjar Stormwing##147805
+learnmount Valarjar Stormwing##242882
+step
+_Congratulations!_
+You are now the proud owner of a Valarjar Stormwing.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Cloudwing Hippogryph",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"cloudwing","hippogryph","flying","mount"},
+condition_end="hasmount(242881)",
+model={63628},
+description="This guide will help you acquire the Cloudwing Hippogryph.",
+},[[
+step
+Earn exalted reputation with Court of Farondis |condition rep("Court of Farondis")>=Exalted
+|tip Use the "Azuna" leveling guide to accomplish this.
+|tip Complete world quests in Azuna.
+|tip Use the "World Quests" dailies guide to accomplish this.
+step
+Once exalted you will need to obtain 10,000 more reputation.
+|tip Use the "Azuna" leveling guide to accomplish this.
+|tip Complete world quests in Azuna.
+|tip Use the "World Quests" dailies guide to accomplish this.
+confirm
+step
+When you get to 10,000 reputation you will recieve a quest.
+accept Supplies From the Court##46745
+step
+talk Veredis Fallon##107376
+turnin Supplies From the Court##46745 |goto Azsuna/0 46.8,41.4
+step
+collect Farondis Chest##146897 |n
+Open up your Farondis Chest |use Farondis Chest##146897
+|tip This mount will have a small chance to be inside.
+collect Cloudwing Hippogryph##147806 |use Cloudwing Hippogryph##147806
+learnmount Cloudwing Hippogryph##242881
+step
+_Congratulations!_
+You are now the proud owner of a Cloudwing Hippogryph.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Wild Dreamrunner",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"wild","dreamrunner","flying","mount"},
+condition_end="hasmount(242875)",
+model={76424},
+description="This guide will help you acquire the Wild Dreamrunner.",
+},[[
+step
+Earn exalted reputation with Dreamweavers |condition rep("Dreamweavers")>=Exalted
+|tip Use the "Val'Sharah" leveling guide to accomplish this.
+|tip Complete world quests in Val'Sharah.
+|tip Use the "World Quests" dailies guide to accomplish this.
+step
+Once exalted you will need to obtain 10,000 more reputation.
+|tip Use the "Val'Sharah" leveling guide to accomplish this.
+|tip Complete world quests in Val'Sharah.
+|tip Use the "World Quests" dailies guide to accomplish this.
+confirm
+step
+When you get to 10,000 reputation you will recieve a quest.
+accept Supplies From the Dreamweavers##46747
+step
+talk Sylvia Hartshorn##106901
+turnin Supplies From the Dreamweavers##46747 |goto Val'sharah/0 54.6,73.2
+step
+collect Dreamweaver Cache##146898 |n
+Open up your Dreamweaver Cache |use Dreamweaver Cache##146898
+|tip This mount will have a small chance to be inside.
+collect Wild Dreamrunner##147804 |use Wild Dreamrunner##147804
+learnmount Wild Dreamrunner##242875
+step
+_Congratulations!_
+You are now the proud owner of a Wild Dreamrunner.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Leywoven Flying Carpet",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"leywoven","carpet","flying","mount"},
+condition_end="hasmount(233364)",
+model={74480},
+description="This guide will help you acquire the Leywoven Flying Carpet.",
+},[[
+step
+Earn exalted reputation with Nightfallen |condition rep("The Nightfallen")>=Exalted
+|tip Use the "Suramar" leveling guide to accomplish this.
+|tip Complete world quests in Suramar.
+|tip Use the "World Quests" dailies guide to accomplish this.
+step
+Once exalted you will need to obtain 10,000 more reputation.
+|tip Use the "Suramar" leveling guide to accomplish this.
+|tip Complete world quests in Suramar.
+|tip Use the "World Quests" dailies guide to accomplish this.
+confirm
+step
+When you get to 10,000 reputation you will recieve a quest.
+accept Supplies From the Nightfallen##46747
+step
+talk First Arcanist Thalyssra##97140
+turnin Supplies From the Nightfallen##46747 |goto Suramar/0 36.51,46.80 |region suramar_shalaran
+step
+collect Nightfallen Cache##146900 |n
+Open up your Nightfallen Cache |use Nightfallen Cache##146900
+|tip This mount will have a small chance to be inside.
+collect Leywoven Flying Carpet##143764 |use Leywoven Flying Carpet##143764
+learnmount Leywoven Flying Carpet##233364
+step
+_Congratulations!_
+You are now the proud owner of a Leywoven Flying Carpet.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Reins of the Leyfeather Hippogryph",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"leyfeather","hippogryph","flying","mount"},
+condition_end="hasmount(225765)",
+model={63625},
+description="This guide will help you acquire the Leyfeather Hippogryph.",
+},[[
+step
+Complete the Glory of the Legion Hero achievement |achieve 11163
+|tip You can accomplish this by checking out our achievements guide.
+step
+Check your mailbox once this achievement is completed
+collect Reins of the Leyfeather Hippogryph##141217 |use Reins of the Leyfeather Hippogryph##141217
+learnmount Reins of the Leyfeather Hippogryph##225765
+step
+_Congratulations!_
+You are now the proud owner of a Leyfeather Hippogryph.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Defiled Reins",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"defiled","reins","flying","mount"},
+condition_end="hasmount(193007)",
+model={72700},
+description="This guide will help you acquire the Defiled Reins.",
+},[[
+step
+Complete the Glory of the Legion Raider achievement |achieve 11180
+|tip You can accomplish this by checking out our achievements guide.
+step
+Check your mailbox once this achievement is completed
+collect Defiled Reins##141216 |use Defiled Reins##141216
+learnmount Defiled Reins##193007
+step
+_Congratulations!_
+You are now the proud owner of a Defiled Reins.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Living Infernal Core",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"living","infernal","core","flying","mount"},
+condition_end="hasmount(213134)",
+model={70040},
+description="This guide will help you acquire the Living Infernal Core.",
+},[[
+step
+Enter the Nighthold with you group |goto Suramar/0 44.13,59.80 |region suramar_sanctum_depths
+|tip This mount does not drop on LFR difficulty.
+confirm
+step
+kill Gul'dan##105503 |goto The Nighthold/9 49.3,52.2
+|tip Check out our Nighthold guide to accomplish this.
+|tip This mount has a small chance to drop off of Gul'dan on any difficulty except LFR
+collect Living Infernal Core##137574 |use Living Infernal Core##137574
+learnmount Felblaze Infernal##213134
+step
+_Congratulations!_
+You are now the proud owner of a Felblaze Infernal.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Fiendish Hellfire Core",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"fiendish","hellfire","core","flying","mount"},
+condition_end="hasmount(213134)",
+model={70051},
+description="This guide will help you acquire the Fiendish Hellfire Core.",
+},[[
+step
+Enter the Nighthold with you group |goto Suramar/0 44.13,59.80 |region suramar_sanctum_depths
+|tip This mount only drops off Mythic difficulty.
+confirm
+step
+kill Gul'dan##105503 |goto The Nighthold/9 49.3,52.2
+|tip Check out our Mythic Nighthold guide to accomplish this.
+|tip This mount has a 100 percent chance to drop.
+collect Fiendish Hellfire Core##137575 |use Fiendish Hellfire Core##137575
+learnmount Hellfire Infernal##213134
+step
+_Congratulations!_
+You are now the proud owner of a Hellfire Infernal.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Midnight's Eternal Reins",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"midnight","eternal","rein","ground","mount"},
+condition_end="hasmount(229499)",
+model={73808},
+description="This guide will help you acquire the Midnight's Eternal Reins.",
+},[[
+step
+Enter Karazhan with you group |goto Karazhan L/6 63.9,61.3
+confirm
+step
+kill Attumen the Huntsman##114262 |goto Karazhan L/1 45.3,82.3
+|tip Check out our Karazhan guide to accomplish this.
+|tip This mount has a small chance to drop off of Attumen the Huntsman.
+collect Midnight's Eternal Reins##142236 |use Midnight's Eternal Reins##142236
+learnmount Midnight##229499
+step
+_Congratulations!_
+You are now the proud owner of a Midnight's Eternal Reins.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Smoldering Ember Wyrm",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"smoldering","ember","wyrm","flying","mount"},
+condition_end="hasmount(231428)",
+model={74104},
+description="This guide will help you acquire the Smoldering Ember Wyrm.",
+},[[
+step
+Enter Karazhan with you group |goto Karazhan L/6 63.9,61.3
+|tip This mount can only drop on Mythic Difficulty.
+confirm
+step
+kill Nightbane##114895 |goto Karazhan L/6 45.8,92.5
+|tip Check out our Karazhan guide to accomplish this.
+|tip This mount has a 100 percent chance to drop.
+collect Smoldering Ember Wyrm##142552 |use Smoldering Ember Wyrm##142552
+learnmount Smoldering Ember Wyrm##231428
+step
+_Congratulations!_
+You are now the proud owner of a Smoldering Ember Wyrm.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Arcanist's Manasaber",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"arcanist","manasaber","flying","mount"},
+condition_end="hasmount(230987)",
+model={74032},
+description="This guide will help you acquire the Arcanist's Manasaber.",
+},[[
+step
+Earn Exalted reputation with the Nightfallen |condition rep("The Nightfallen")>=Exalted
+|tip Use the "Suramar" leveling guide to accomplish this.
+|tip Complete world quests in Suramar.
+|tip Use the "World Quests" dailies guide to accomplish this.
+step
+Complete the Suramar Insurrection quest line |achieve 11340
+|tip Use your Suramar guide to accomplish this.
+step
+collect Arcanist's Manasaber##142436 |use Arcanist's Manasaber##142436
+learnmount Arcanist's Manasaber##230987
+step
+_Congratulations!_
+You are now the proud owner of a Arcanist's Manasaber.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Yu'lei, Daughter of Jade",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"yu'lei","daughter","jade","flying","mount"},
+condition_end="hasmount(127165)",
+model={43695},
+description="This guide will help you acquire Yu'lei, Daughter of Jade.",
+},[[
+step
+This mount can only be bought during the Mists of Pandaria Timewalking event
+|tip This event happens maybe once every 2 to 3 months.
+confirm
+step
+talk Mistweaver Xia##118828
+buy Yu'lei, Daughter of Jade##87775 |use Yu'lei, Daughter of Jade##87775 |goto Timeless Isle/0 43.00,55.21
+|tip This mount costs 5,000 Timewarped Badges.
+|tip These can be obtained through doing any timewalking dungeons.
+learnmount Yu'lei, Daughter of Jade##127165
+step
+_Congratulations!_
+You are now the proud owner of a Yu'lei, Daughter of Jade.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Brilliant Direbeak",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"brilliant","direbeak","ground","mount"},
+condition_end="hasmount(213164)",
+model={70062},
+description="This guide will help you acquire the Brilliant Direbeak.",
+},[[
+step
+You must first obtain the Direbeak Hatchling before being able to get this mount.
+|tip Check out our Direbeak Hatchling guide to accomplish this.
+confirm
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+accept Raising Your Direbeak##44973
+step
+Level you Direbeak Hatchling to 25 |q 44973/1
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+turnin Raising Your Direbeak##44973
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+accept The Smell of Dwarves##44974
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Enter the building |goto Ironforge/0 20.92,53.23
+Acclimate your Direbeak to the Dwarves |q 44974/1 |goto 19.09,51.83
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+turnin The Smell of Dwarves##44974
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+accept Hunting Lesson: Rose Taipan##44976
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Challenge and defeat 3 Rose Taipans using your Direbeak Hatchling
+|tip Your Hatchling must be in the first pet battle slot to recieve credit.
+Defeat 3 Rose Taipan |q 44976/1 |goto Stormheim/0 63.24,56.54
+|tip These can be found all around this area.
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+turnin Hunting Lesson: Rose Taipan##44976
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+accept Allies in Stormheim##44977
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Make sure you Direbeak Hatchling is summoned while you complete these World Quests
+Complete 5 World Quests in Stormheim |q 44977/1
+|tip You can use our World Quest guide to accomplish this.
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+turnin Allies in Stormheim##44977
+step
+More content coming soon!
+confirm
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Snowfeather Hunter",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"snowfeather","hunter","ground","mount"},
+condition_end="hasmount(213163)",
+model={70063},
+description="This guide will help you acquire the Snowfeather Hunter.",
+},[[
+step
+You must first obtain the Snowfeather Hatchling before being able to get this mount.
+|tip Check out our Snowfeather Hatchling guide to accomplish this.
+confirm
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+accept Raising Your Snowfeather##44948
+step
+Level you Snowfeather Hatchling to 25 |q 44948/1
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+turnin Raising Your Snowfeather##44948
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+accept The Smell of Humans##44949
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Acclimate your Snowfeather to the Humans |q 44949/1 |goto Stormwind City/0 60.7,74.9
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+turnin The Smell of Humans##44949
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+accept Hunting Lesson: Northern Hawk Owls##44950
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Challenge and defeat 3 Northern Hawk Owls using your Snowfeather Hatchling
+|tip Your Hatchling must be in the first pet battle slot to recieve credit.
+Defeat 3 Northern Hawk Owls |q 44950/1 |goto Highmountain/0 58.51,72.72
+|tip These can be found all around this area.
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+turnin Hunting Lesson: Northern Hawk Owls##44950
+step
+More content coming soon!
+confirm
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Predatory Bloodgazer",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"predatoryt","bloodgazer","ground","mount"},
+condition_end="hasmount(213158)",
+model={70060},
+description="This guide will help you acquire the Predatory Bloodgazer.",
+},[[
+step
+You must first obtain the Bloodgazer Hatchling before being able to get this mount.
+|tip Check out our Bloodgazer Hatchling guide to accomplish this.
+confirm
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+accept Raising Your Bloodgazer##44990
+step
+Level your Bloodgazer Hatchling to 25 |q 44990/1
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+turnin Raising Your Bloodgazer##44990
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+accept The Smell of Draenei##44991
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Enter the building |goto The Exodar/0 59.60,26.17
+Acclimate your Bloodgazer to the Draenei |q 44991/1 |goto 59.61,19.22
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+turnin The Smell of Draenei##44991
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+accept Hunting Lesson: Erudite Manafiend##44996
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Challenge and defeat 3 Erudite Manafiends using your Bloodgazer Hatchling
+|tip Your Hatchling must be in the first pet battle slot to recieve credit.
+Defeat 3 Erudite Manafiends |q 44996/1 |goto Azsuna/0 57.64,16.00
+|tip These can be found all around these Ley-Ruins.
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+turnin Hunting Lesson: Erudite Manafiend##44996
+step
+More content coming soon!
+confirm
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Viridian Sharptalon",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"viridian","sharptalon","ground","mount"},
+condition_end="hasmount(213165)",
+model={70061},
+description="This guide will help you acquire the Viridian Sharptalon.",
+},[[
+step
+You must first obtain the Sharptalon Hatchling before being able to get this mount.
+|tip Check out our Sharptalon Hatchling guide to accomplish this.
+confirm
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+accept Raising Your Sharptalon##44989
+step
+Level you Sharptalon Hatchling to 25 |q 44989/1
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+turnin Raising Your Sharptalon##44989
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+accept The Smell of Night Elves##44992
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Acclimate your Sharptalon to the Night Elves |q 44992/1 |goto Darnassus/0 61.89,32.97
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+turnin The Smell of Night Elves##44992
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+accept Hunting Lesson: Spring Strider##44995
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Challenge and defeat 3 Spring Striders using your Sharptalon Hatchling
+|tip Your Hatchling must be in the first pet battle slot to recieve credit.
+Defeat 3 Spring Striders |q 44995/1 |goto Val'sharah/0 48.65,69.36
+|tip These can be found all around this area.
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+turnin Hunting Lesson: Spring Strider##44995
+step
+More content coming soon!
+confirm
+]])
+ZGV.BETAEND()

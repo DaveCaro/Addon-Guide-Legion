@@ -1096,7 +1096,7 @@ local function ItemScore_SetTooltipData(tooltip, tooltipobj)
 		local score,code,comment = ZGV.ItemScore:GetItemScore(itemLink,nil,false,verbose)
 		local subscore,cancode,cancomment = ZGV.ItemScore:CanEquipItem(itemLink,false,true)
 
-		if ZGV.DEV then
+		if ZGV.db.profile.debug_display then
 			tooltip:AddLine("|cfffe6100Zygor debug:|r ")
 			tooltip:AddLine("score "..score)
 			tooltip:AddLine("code "..code)
@@ -1178,7 +1178,7 @@ local function ItemScore_SetTooltipData(tooltip, tooltipobj)
 			tooltip:AddLine("|r  Upgrade |cff00ff00100% ")
 		end
 
-		if ZGV.DEV then
+		if ZGV.db.profile.debug_display then
 			if item.effect then
 				for i,v in pairs(item.effect) do
 					local statrule = ZGV.ItemScore.curRuleSet.stats[i]

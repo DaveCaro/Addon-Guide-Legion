@@ -1146,3 +1146,415 @@ label "Steelbound Grats"
 _Congratulations!_
 You collected the _Steelbound Devourer_ mount
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Legion\\Riddler's Mind-Worm",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"riddler","mind","flying","mount","worm"},
+condition_end="hasmount(243025)",
+model={74314},
+description="This guide will help you acquire the Riddler's Mind-Worm.",
+},[[
+step
+Enter the Legerdemain Lounge |goto Dalaran L/10 46.14,38.18
+click Page 9 |goto Dalaran L/10 48.83,41.97
+|tip It's a small book on top of the shelf here.
+Click here to continue |confirm
+step
+click Page 78 |goto Duskwood/0 49.23,33.96
+|tip It's a small book on top of the table here.
+Click here to continue |confirm
+step
+Enter the Firelands |goto Mount Hyjal/0 47.55,77.91 < 5
+Cross the bridge after killing Baleroc |goto Firelands/1 49.1,15.8
+|tip You will need to kill all of the other bosses in the instance.
+|tip You can check out our Firelands guide to accomplish this.
+click Page 161 |goto Firelands/3 46.7,16.9
+|tip It's a small book lying on the ground.
+Click here to continue |confirm
+step
+click Page 655 |goto Uldum/0 70.50,78.09
+|tip It is a small book on the ground between 2 small palm trees.
+Click here to continue |confirm
+step
+talk Lorewalker Han##80633
+"Tell me of the Vale of Eternal Sorrows that surrond us."
+Queue for the Vale of Eternal Sorrows |goto Vale of Eternal Blossoms/0 83.17,30.58
+Enter the Vale of Eternal Sorrows |goto Siege of Orgrimmar/2 93.5,45.7 < 5 |noway |c
+step
+Enter the Vale of Eternal Sorrows |goto Siege of Orgrimmar/2 93.5,45.7 < 5
+|tip You must clear the instance up to Sha of Pride.
+|tip You can check out our Siege of Orgrimmar guide to accomplish this.
+click Page 845 |goto Siege of Orgrimmar/3 19.8,83.2
+|tip It is a small book lying on the ground in the corner.
+Click here to continue |confirm
+step
+Enter the Well of Eternity |goto Tanaris/18 22.86,64.32 < 5
+|tip You will need to kill the first 2 bosses.
+|tip You can check out our Well of Eternity guide to accomplish this.
+click Page 1127 |goto Well of Eternity/0 75.2,66.1
+|tip It is a small book lying the bottom of these steps.
+Click here to continue |confirm
+step
+click Page 2351 |goto Kun-Lai Summit/0 34.63,50.88
+|tip It is a small book between the paws of this statue.
+Click here to continue |confirm
+step
+click Page 5555 |goto Uldum/0 76.42,53.58
+|tip It is a small book on the platform of a giant statue.
+Click here to continue |confirm
+step
+click Gift of the Mind-Seekers
+collect Riddler's Mind-Worm##147835 |n
+Use the Riddler's Mind-Worm |use Riddler's Mind-Worm##147835
+learnmount Riddler's Mind-Worm##243025 |goto Westfall/0 30.55,27.50
+step
+_Congratulations!_
+You collected the _Riddler's Mind-Worm_ mount
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Legion\\Highmountain Elderhorn",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"highmountain","elderhorn","ground","mount"},
+condition_end="hasmount(242874)",
+model={67039},
+description="This guide will help you acquire the Riddler's Mind-Worm.",
+},[[
+step
+Earn exalted reputation with Highmountain |condition rep("Highmountain Tribe")>=Exalted
+|tip Use the "Highmountain" leveling guide to accomplish this.
+|tip Complete world quests in Highmountain.
+|tip Use the "World Quests" dailies guide to accomplish this.
+step
+Once exalted you will need to obtain 10,000 more reputation.
+|tip Use the "Highmountain" leveling guide to accomplish this.
+|tip Complete world quests in Highmountain.
+|tip Use the "World Quests" dailies guide to accomplish this.
+confirm
+step
+When you get to 10,000 reputation you will recieve a quest.
+accept Supplies From Highmountain##46743
+step
+talk Ransa Greyfeather##106902
+turnin Supplies From Highmountain##46743 |goto Thunder Totem/0 38.22,46.01
+step
+collect Highmountain Supplies##146899 |n
+Open up your Highmountain Supplies |use Highmountain Supplies##146899
+|tip This mount will have a small chance to be inside.
+collect Highmountain Elderhorn##147807 |use Highmountain Elderhorn##147807
+learnmount Highmountain Elderhorn##242874
+step
+_Congratulations!_
+You are now the proud owner of a Highmountain Elderhorn.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Legion\\Valarjar Stormwing",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"valarjar","stormwing","flying","mount"},
+condition_end="hasmount(242882)",
+model={68053},
+description="This guide will help you acquire the Valarjar Stormwing.",
+},[[
+step
+Earn exalted reputation with Valarjar |condition rep("Valarjar")>=Exalted
+|tip Use the "Stormheim" leveling guide to accomplish this.
+|tip Complete world quests in Stormheim.
+|tip Use the "World Quests" dailies guide to accomplish this.
+step
+Once exalted you will need to obtain 10,000 more reputation.
+|tip Use the "Stormheim" leveling guide to accomplish this.
+|tip Complete world quests in Stormheim.
+|tip Use the "World Quests" dailies guide to accomplish this.
+confirm
+step
+When you get to 10,000 reputation you will recieve a quest.
+accept Supplies From the Valarjar##46746
+step
+talk Valdemar Stormseeker##106904
+turnin Supplies From the Valarjar##46746 |goto Stormheim/0 60.2,51.2
+step
+collect Valarjar Strongbox##146901 |n
+Open up your Valarjar Strongbox |use Valarjar Strongbox##146901
+|tip This mount will have a small chance to be inside.
+collect Valarjar Stormwing##147805 |use Valarjar Stormwing##147805
+learnmount Valarjar Stormwing##242882
+step
+_Congratulations!_
+You are now the proud owner of a Valarjar Stormwing.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Legion\\Cloudwing Hippogryph",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"cloudwing","hippogryph","flying","mount"},
+condition_end="hasmount(242881)",
+model={63628},
+description="This guide will help you acquire the Cloudwing Hippogryph.",
+},[[
+step
+Earn exalted reputation with Court of Farondis |condition rep("Court of Farondis")>=Exalted
+|tip Use the "Azuna" leveling guide to accomplish this.
+|tip Complete world quests in Azuna.
+|tip Use the "World Quests" dailies guide to accomplish this.
+step
+Once exalted you will need to obtain 10,000 more reputation.
+|tip Use the "Azuna" leveling guide to accomplish this.
+|tip Complete world quests in Azuna.
+|tip Use the "World Quests" dailies guide to accomplish this.
+confirm
+step
+When you get to 10,000 reputation you will recieve a quest.
+accept Supplies From the Court##46745
+step
+talk Veredis Fallon##107376
+turnin Supplies From the Court##46745 |goto Azsuna/0 46.8,41.4
+step
+collect Farondis Chest##146897 |n
+Open up your Farondis Chest |use Farondis Chest##146897
+|tip This mount will have a small chance to be inside.
+collect Cloudwing Hippogryph##147806 |use Cloudwing Hippogryph##147806
+learnmount Cloudwing Hippogryph##242881
+step
+_Congratulations!_
+You are now the proud owner of a Cloudwing Hippogryph.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Legion\\Wild Dreamrunner",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"wild","dreamrunner","flying","mount"},
+condition_end="hasmount(242875)",
+model={76424},
+description="This guide will help you acquire the Wild Dreamrunner.",
+},[[
+step
+Earn exalted reputation with Dreamweavers |condition rep("Dreamweavers")>=Exalted
+|tip Use the "Val'Sharah" leveling guide to accomplish this.
+|tip Complete world quests in Val'Sharah.
+|tip Use the "World Quests" dailies guide to accomplish this.
+step
+Once exalted you will need to obtain 10,000 more reputation.
+|tip Use the "Val'Sharah" leveling guide to accomplish this.
+|tip Complete world quests in Val'Sharah.
+|tip Use the "World Quests" dailies guide to accomplish this.
+confirm
+step
+When you get to 10,000 reputation you will recieve a quest.
+accept Supplies From the Dreamweavers##46747
+step
+talk Sylvia Hartshorn##106901
+turnin Supplies From the Dreamweavers##46747 |goto Val'sharah/0 54.6,73.2
+step
+collect Dreamweaver Cache##146898 |n
+Open up your Dreamweaver Cache |use Dreamweaver Cache##146898
+|tip This mount will have a small chance to be inside.
+collect Wild Dreamrunner##147804 |use Wild Dreamrunner##147804
+learnmount Wild Dreamrunner##242875
+step
+_Congratulations!_
+You are now the proud owner of a Wild Dreamrunner.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Legion\\Leywoven Flying Carpet",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"leywoven","carpet","flying","mount"},
+condition_end="hasmount(233364)",
+model={74480},
+description="This guide will help you acquire the Leywoven Flying Carpet.",
+},[[
+step
+Earn exalted reputation with Nightfallen |condition rep("The Nighfallen")>=Exalted
+|tip Use the "Suramar" leveling guide to accomplish this.
+|tip Complete world quests in Suramar.
+|tip Use the "World Quests" dailies guide to accomplish this.
+step
+Once exalted you will need to obtain 10,000 more reputation.
+|tip Use the "Suramar" leveling guide to accomplish this.
+|tip Complete world quests in Suramar.
+|tip Use the "World Quests" dailies guide to accomplish this.
+confirm
+step
+When you get to 10,000 reputation you will recieve a quest.
+accept Supplies From the Nightfallen##46747
+step
+talk First Arcanist Thalyssra##97140
+turnin Supplies From the Nightfallen##46747 |goto Suramar/0 36.51,46.80 |region suramar_shalaran
+step
+collect Nightfallen Cache##146900 |n
+Open up your Nightfallen Cache |use Nightfallen Cache##146900
+|tip This mount will have a small chance to be inside.
+collect Leywoven Flying Carpet##143764 |use Leywoven Flying Carpet##143764
+learnmount Leywoven Flying Carpet##233364
+step
+_Congratulations!_
+You are now the proud owner of a Leywoven Flying Carpet.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Legion\\Reins of the Leyfeather Hippogryph",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"leyfeather","hippogryph","flying","mount"},
+condition_end="hasmount(225765)",
+model={63625},
+description="This guide will help you acquire the Leywoven Flying Carpet.",
+},[[
+step
+Complete the Glory of the Legion Hero achievement |achieve 11163
+|tip You can accomplish this by checking out our achievements guide.
+step
+Check your mailbox once this achievement is completed
+collect Reins of the Leyfeather Hippogryph##141217 |use Reins of the Leyfeather Hippogryph##141217
+learnmount Reins of the Leyfeather Hippogryph##225765
+step
+_Congratulations!_
+You are now the proud owner of a Leyfeather Hippogryph.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Legion\\Defiled Reins",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"defiled","reins","flying","mount"},
+condition_end="hasmount(193007)",
+model={72700},
+description="This guide will help you acquire the Leywoven Flying Carpet.",
+},[[
+step
+Complete the Glory of the Legion Raider achievement |achieve 11180
+|tip You can accomplish this by checking out our achievements guide.
+step
+Check your mailbox once this achievement is completed
+collect Defiled Reins##141216 |use Defiled Reins##141216
+learnmount Defiled Reins##193007
+step
+_Congratulations!_
+You are now the proud owner of a Defiled Reins.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Legion\\Living Infernal Core",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"living","infernal","core","flying","mount"},
+condition_end="hasmount(213134)",
+model={70040},
+description="This guide will help you acquire the Living Infernal Core.",
+},[[
+step
+Enter the Nighthold with you group |goto Suramar/0 44.13,59.80 |region suramar_sanctum_depths
+|tip This mount does not drop on LFR difficulty.
+confirm
+step
+kill Gul'dan##105503 |goto The Nighthold/9 49.3,52.2
+|tip Check out our Nighthold guide to accomplish this.
+|tip This mount has a small chance to drop off of Gul'dan on any difficulty except LFR
+collect Living Infernal Core##137574 |use Living Infernal Core##137574
+learnmount Felblaze Infernal##213134
+step
+_Congratulations!_
+You are now the proud owner of a Felblaze Infernal.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Legion\\Fiendish Hellfire Core",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"fiendish","hellfire","core","flying","mount"},
+condition_end="hasmount(213134)",
+model={70051},
+description="This guide will help you acquire the Fiendish Hellfire Core.",
+},[[
+step
+Enter the Nighthold with you group |goto Suramar/0 44.13,59.80 |region suramar_sanctum_depths
+|tip This mount only drops off Mythic difficulty.
+confirm
+step
+kill Gul'dan##105503 |goto The Nighthold/9 49.3,52.2
+|tip Check out our Mythic Nighthold guide to accomplish this.
+|tip This mount has a 100 percent chance to drop.
+collect Fiendish Hellfire Core##137575 |use Fiendish Hellfire Core##137575
+learnmount Hellfire Infernal##213134
+step
+_Congratulations!_
+You are now the proud owner of a Hellfire Infernal.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Legion\\Midnight's Eternal Reins",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"midnight","eternal","rein","ground","mount"},
+condition_end="hasmount(229499)",
+model={73808},
+description="This guide will help you acquire the Midnight's Eternal Reins.",
+},[[
+step
+Enter Karazhan with you group |goto Karazhan L/6 63.9,61.3
+confirm
+step
+kill Attumen the Huntsman##114262 |goto Karazhan L/1 45.3,82.3
+|tip Check out our Karazhan guide to accomplish this.
+|tip This mount has a small chance to drop off of Attumen the Huntsman.
+collect Midnight's Eternal Reins##142236 |use Midnight's Eternal Reins##142236
+learnmount Midnight##229499
+step
+_Congratulations!_
+You are now the proud owner of a Midnight's Eternal Reins.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Legion\\Smoldering Ember Wyrm",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"smoldering","ember","wyrm","flying","mount"},
+condition_end="hasmount(231428)",
+model={74104},
+description="This guide will help you acquire the Smoldering Ember Wyrm.",
+},[[
+step
+Enter Karazhan with you group |goto Karazhan L/6 63.9,61.3
+|tip This mount can only drop on Mythic Difficulty.
+confirm
+step
+kill Nightbane##114895 |goto Karazhan L/6 45.8,92.5
+|tip Check out our Karazhan guide to accomplish this.
+|tip This mount has a 100 percent chance to drop.
+collect Smoldering Ember Wyrm##142552 |use Smoldering Ember Wyrm##142552
+learnmount Smoldering Ember Wyrm##231428
+step
+_Congratulations!_
+You are now the proud owner of a Smoldering Ember Wyrm.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Legion\\Arcanist's Manasaber",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"arcanist","manasaber","flying","mount"},
+condition_end="hasmount(230987)",
+model={74032},
+description="This guide will help you acquire the Arcanist's Manasaber.",
+},[[
+step
+Earn Exalted reputation with the Nightfallen |condition rep("The Nightfallen")>=Exalted
+|tip Use the "Suramar" leveling guide to accomplish this.
+|tip Complete world quests in Suramar.
+|tip Use the "World Quests" dailies guide to accomplish this.
+step
+Complete the Suramar Insurrection quest line |achieve 11340
+|tip Use your Suramar guide to accomplish this.
+step
+collect Arcanist's Manasaber##142436 |use Arcanist's Manasaber##142436
+learnmount Arcanist's Manasaber##230987
+step
+_Congratulations!_
+You are now the proud owner of a Arcanist's Manasaber.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Legion\\Yu'lei, Daughter of Jade",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"yu'lei","daughter","jade","flying","mount"},
+condition_end="hasmount(127165)",
+model={43695},
+description="This guide will help you acquire Yu'lei, Daughter of Jade.",
+},[[
+step
+This mount can only be bought during the Mists of Pandaria Timewalking event
+|tip This event happens maybe once every 2 to 3 months.
+confirm
+step
+talk Mistweaver Xia##118828
+buy Yu'lei, Daughter of Jade##87775 |use Yu'lei, Daughter of Jade##87775 |goto Timeless Isle/0 43.00,55.21
+|tip This mount costs 5,000 Timewarped Badges.
+|tip These can be obtained through doing any timewalking dungeons.
+learnmount Yu'lei, Daughter of Jade##127165
+step
+_Congratulations!_
+You are now the proud owner of a Yu'lei, Daughter of Jade.
+]])
+ZGV.BETAEND()

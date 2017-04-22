@@ -602,6 +602,19 @@ kill Felsurge Broodmother##113987+
 collect 10 Felsurge Spider Egg##137335 |q 42276/2 |goto 33.86,42.95
 |next "Court_Of_Farondis_WQ"
 step
+label quest-43328
+Follow the path |goto Azsuna/0 46.22,44.58 < 30 |only if walking
+Follow the path |goto 48.34,44.02 < 30 |only if walking
+Follow the path |goto 49.21,45.29 < 30 |only if walking
+accept Enigmatic##43328 |goto 49.19,46.77
+|tip You will accept this quest automatically.
+step
+click Puzzle Box
+|tip Memorize the patterns of the tiles on the ground.
+|tip When the grid appears, walk on the tiles illustrated in the patterns.
+Solve the Enigma |q 43328/1 |goto 49.19,46.77
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42711
 Cross the bridge |goto Azsuna/0 56.48,62.04 < 30 |only if walking
 accept The Eternal Mages##42711 |goto 56.33,65.90
@@ -2039,6 +2052,16 @@ click Sythorne's Podium##0 |q 44788/8 |goto 30.21,44.86
 kill Squallhunter Drawing##115462 |q 44788/9 |goto 32.84,42.63
 |next "Court_Of_Farondis_WQ"
 step
+label quest-45924
+Follow the path |goto Val'sharah/0 39.50,59.68 < 25 |only if walking
+Follow the path |goto 37.14,60.29 < 25 |only if walking
+accept Abyssal Monstrosity##45924 |goto 35.79,63.42
+|tip You will accept this quest automatically.
+step
+kill Abyssal Monstrosity##117054
+Defeat the Abyssal Monstrosity |q 45924/1 |goto 35.79,63.42
+|next "Court_Of_Farondis_WQ"
+step
 label quest-44033
 accept Aw, Nuts!##44033 |goto Val'sharah/0 54.52,72.91
 |tip You will accept this quest automatically.
@@ -3127,6 +3150,22 @@ Kill enemies around this area
 Slay #12# Creatures of Nightmare |q 41996/3 |goto 61.17,37.28
 |next "Court_Of_Farondis_WQ"
 step
+label quest-46261
+accept The Taste of Corruption##46261 |goto Val'sharah/0 40.10,62.06
+|tip You will accept this quest automatically.
+stickystart "Fel"
+step
+kill Suspicious Villager##120136+
+Release #10# Suspicious Villagers |q 46261/1 |goto 40.10,62.06
+step
+click Bucket of Corrupted Water##236562
+Corrupted Waters cleansed |q 46261/2 |goto 38.35,60.71
+step
+label "Fel"
+click Fel Corruptor
+Fel Corruptors destroyed |q 46261/3 |goto 40.10,62.06
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41980
 accept Temple Defense##41980 |goto Val'sharah/0 57.15,54.02
 |tip You will accept this quest automatically.
@@ -3690,6 +3729,16 @@ collect 1 Enchant Cloak - Word of Agility##128546
 step
 talk Sylvia Hartshorn##106901
 turnin Work Order: Word of Agility##41670 |goto 54.70,73.25
+|next "Court_Of_Farondis_WQ"
+step
+label quest-45927
+Follow the path |goto Suramar/0 24.35,31.99 < 20 |only if walking |notravel
+Follow the path |goto 17.42,25.40 < 20 |only if walking |notravel
+Follow the path |goto Val'sharah/0 68.13,66.36 < 20 |only if walking |notravel
+accept Zagmothar##45927 |goto 66.03,66.88
+|tip You will accept this quest automatically.
+step
+kill Zagmothar##117964 |q 45927/1 |goto 66.03,66.88
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43985
@@ -4364,6 +4413,14 @@ accept Huge Highmountain Salmon##41609 |goto 36.96,44.92
 step
 Fish from the Huge Highmountain Salmon School |cast Fishing##7620
 collect 10 Huge Highmountain Salmon##134399 |q 41609/1 |goto 36.96,44.92
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41243
+accept Huge Highmountain Salmon##41243 |goto Thunder Totem/0 51.15,66.25
+|tip You will accept this quest automatically.
+step
+Fish from the Huge Highmountain Salmon School |cast Fishing##7620
+collect 10 Huge Highmountain Salmon##134399 |q 41243/1 |goto 51.15,66.25
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42064
@@ -9359,6 +9416,27 @@ click Libram of Fel Knowledge##6477
 Destroy the Garrison forces |q 46073/1 |goto 59.26,45.67
 |next "Court_Of_Farondis_WQ"
 step
+label quest-46761
+Follow the path |goto Broken Shore/0 43.84,58.31 < 25 |only if walking
+Follow the path |goto 46.94,58.44 < 25 |only if walking
+Follow the path |goto 51.84,52.53 < 25 |only if walking
+Follow the path |goto 54.79,52.16 < 25 |only if walking
+accept Brew Bandits##46761 |goto 55.47,53.71
+|tip You will accept this quest automatically.
+stickystart "Brew"
+step
+Use the Hozen Vaulting Staff |use Hozen Vaulting Staff##146896 |havebuff 667301
+step
+kill Felfire Incinerator##121336+, Felskorn Infuser##121335+, Felskorn Initiate##121334+
+Kill #40# Felskorn Enemies |q 46761/2 |goto 58.52,48.46
+|tip Use the first and second abilities on your bar to kill Felskorn mobs.
+step
+label "Brew"
+kill Fel Brew Spreader##120353
+Destroy #5# Fel Brew Spreader |q 46761/3 |goto 58.52,48.46
+|tip Use the first and second abilities on your bar to destroy Brew Spreaders.
+|next "Court_Of_Farondis_WQ"
+step
 label quest-46947
 Follow the path |goto Broken Shore/0 66.33,43.20 < 25 |only if walking
 Follow the path up |goto 67.95,33.96 < 20 |only if walking
@@ -9491,6 +9569,25 @@ Felfin Murlocs killed |q 46933/1 |goto 38.18,59.85
 |tip You can find more murlocs in the cave.
 |next "Court_Of_Farondis_WQ"
 step
+label quest-45934
+Follow the path |goto Broken Shore/0 41.14,60.99 < 20 |only if walking
+Follow the path |goto 40.22,67.54 < 25 |only if walking
+Drop down |goto 41.07,74.31 < 25 |only if walking
+accept Fowl Play##45934 |goto 41.66,77.96
+|tip You will accept this quest automatically.
+stickystart "Fowl"
+step
+kill Seascale Crocolisk##118255+
+Kill #6# Seascale Crocolisks |q 45934/1 |goto 41.66,77.96
+step
+label "Fowl"
+click Saltwater Crane Egg##3365
+Retrieve #12# Salwater Crane Eggs |q 45934/2 |goto 41.66,77.96
+|tip These are found in small clusters on rocks.
+click Saltwater Crane##118266
+Rescue #6# Saltwater Cranes |q 45934/3 |goto 41.66,77.96
+|next "Court_Of_Farondis_WQ"
+step
 label quest-46197
 accept From the Skies They Fel##46197 |goto Highmountain/0 51.39,59.83
 |tip You will accept this quest automatically.
@@ -9576,6 +9673,17 @@ talk Sissix##117934
 Tell her: _"Let's do battle!"_
 Defeat Sissix |q 46111/1 |goto 69.99,47.64
 |next "Court_Of_Farondis_WQ"
+step
+label quest-46754
+accept Magical Beasts##46754 |goto Broken Shore/0 48.13,17.85
+|tip You will accept this quest automatically.
+|only Mage
+step
+click Felbound Manasaber##118282+
+|tip These Manasabers are found all around this area.
+Rescue Felbound Manasabers |q 46754/1 |goto 43.70,18.47
+|next "Court_Of_Farondis_WQ"
+|only Mage
 step
 label quest-46948
 Follow the path |goto Broken Shore/0 66.33,43.20 < 25 |only if walking
@@ -9687,6 +9795,23 @@ click Barrel of Storm Brew
 Deliver the brew |q 46175/1 |goto 37.48,46.41
 |next "Court_Of_Farondis_WQ"
 step
+label quest-46001
+Follow the path |goto Broken Shore/0 68.73,46.82 < 20 |only if walking
+Follow the path |goto 66.45,42.32 < 20 |only if walking
+Follow the path |goto 67.92,34.02 < 20 |only if walking
+Follow the path |goto 68.97,32.62 < 15 |only if walking
+accept Rules of the Hunt##46001 |goto 64.41,32.07
+|tip You will accept this quest automatically.
+stickystart "Hunt"
+step
+kill Xargraxach##118342
+Defeat Xargraxach |q 46001/2 |goto 67.52,29.54
+step
+label "Hunt"
+kill Wrathblade Honor Guard##118422+
+Kill #8# Wrathblade Honor Guard |q 46001/1 |goto 66.56,30.13
+|next "Court_Of_Farondis_WQ"
+step
 label quest-46160
 Follow the path |goto Broken Shore/0 51.00,25.35 < 25 |only if walking
 Follow the path |goto 50.97,30.86 < 20 |only if walking
@@ -9733,6 +9858,19 @@ click Legionfall Soldier##119141
 Cure #6# Legionfall Soldiers |q 46236/1 |goto 53.93,51.69
 |next "Court_Of_Farondis_WQ"
 step
+label quest-45379
+Follow the path |goto Broken Shore/0 43.79,58.35 < 25 |only if walking
+Follow the path |goto 46.93,58.51 < 25 |only if walking
+Follow the path |goto 49.45,54.17 < 20 |only if walking
+Follow the path |goto 50.05,51.97 < 25 |only if walking
+accept The Tormented Return##45379 |goto 52.15,43.38
+|tip You will accept this quest automatically.
+step
+Follow the path |goto 52.03,49.97 < 25 |only if walking
+kill Soul Reaper##118459+, Rattling Ragewalker##118455+, Tainted Walker##118454+
+Cleanse the Soul Ruin |q 45379/1 |goto 52.15,43.38
+|next "Court_Of_Farondis_WQ"
+step
 label quest-46866
 Follow the path down |goto Broken Shore/0 39.35,63.75 < 15 |only if walking
 Drop down |goto 38.70,61.98 < 15 |only if walking
@@ -9750,6 +9888,20 @@ Rescue #40# captives |q 46866/2 |goto 31.60,60.01
 |tip You can also kill Vile Soulkeepers to free the captives they have in chains.
 |next "Court_Of_Farondis_WQ"
 step
+label quest-45379
+accept Treasure Master Iks'reeged##45379 |goto Broken Shore/0 47.84,67.36
+|tip You will need 100 Nethershards to complete this world quest.
+|tip Nethershards can be earned by completing world quests, looting treasures, and killing mobs in Broken Shore.
+|tip You will accept this quest automatically.
+stickystart "Fowl"
+step
+click Peculiar Rope |goto 47.84,67.36
+talk Treasure Master Iks'reeged##120076
+Tell him: _"I need a cache key."_
+Bring 100 Nethershards to Iks'reeged |q 45379/1 |goto 45.05,52.09
+|tip Don't forget to loot a treasure cache after buying a key!
+|next "Court_Of_Farondis_WQ"
+step
 label quest-46325
 Cross the water |goto Broken Shore/0 51.97,25.09 < 25 |only if walking
 Follow the path |goto 55.38,27.68 < 25 |only if walking
@@ -9758,6 +9910,22 @@ accept The United Front##46325 |goto 58.55,27.85
 step
 kill Tormented Wailer##118657+,  Broken Soul##118660+
 Kill #15# demons |q 46325/1 |goto 58.55,27.85
+|next "Court_Of_Farondis_WQ"
+step
+label quest-45973
+Go up the steps |goto Broken Shore/0 50.83,18.80 < 15 |only if walking
+accept Unchecked Power##45973 |goto 48.85,19.08
+|tip You will accept this quest automatically.
+stickystart "Insurgents"
+step
+click Abjurist's Satchel##3365
+collect 12 Abjurist's Scroll of Knowledge##146951 |q 45973/1 |goto 43.32,17.43
+step
+label "Insurgents"
+click Felbound Manasaber##118282
+kill Felborne Abjurer##117325+, Felborne Punisher##118322+
+|tip Use the extra action button on your screen to dispel Abjurers when then turn into core hounds.
+Kill #20# Felborne Insurgents |q 45973/2 |goto 43.32,17.43
 |next "Court_Of_Farondis_WQ"
 step
 label quest-46063
@@ -9788,7 +9956,6 @@ label quest-44748
 click Grapple Point |goto Broken Shore/0 43.79,65.78 < 10 |only if walking
 Click the second grapple point |goto 44.20,66.96 < 5 |only if walking
 Click the third grapple point |goto 44.48,67.56 < 5 |only if walking
-Follow the path |goto 38.02,62.60 < 30 |only if walking
 accept Winged Terrors##44748 |goto Broken Shore/0 47.32,70.92
 |tip You will accept this quest automatically.
 stickystart "Terrors"

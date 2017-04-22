@@ -134,3 +134,28 @@ step
 _Congratulations!_
 You earned Best Friend reputation with the "Conjurer Margoss" faction.
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Legion\\Armies of Legionfall",{
+author="support@zygorguides.com",
+startlevel=100.0,
+keywords={"Armies","Legionfall","Army"},
+description="This guide will walk you through gaining reputation with the \"Armies of Legionfall\" faction.",
+},[[
+step
+_Earning reputation with Armies of Legionfall can be achieved by:_
+Completing Broken Shore world quests
+Click here to load the world quests guide |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests"
+Completing quests offered by Excavator Karla
+|tip Karla offers a new quest every day. You can find her by looking for the new quest icon on the Broken Shore map.
+Turning in a building construction quest at Deliverance Point in Broken Shore rewards 150 reputation
+|tip You also receive 150 reputation for donating 100 Legionfall War Supplies to the Legionfall Construction Table.
+Using Legionfall Insignias from Class Order Hall missions |use Legionfall Insignia##146949
+|tip These can also be chosen from "The Kirin Tor of Dalaran" emissary quest.
+Class champion and Class Order Hall questlines reward various one-time reputation gains
+Click here to load the Class Order Hall guide |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests"
+Gain exalted reputation with the Armies of Legionfall |condition rep("Armies of Legionfall")>=Exalted
+step
+_Congratulations!_
+You earned exalted reputation with the "Armies of Legionfall" faction.
+]])
+ZGV.BETAEND()

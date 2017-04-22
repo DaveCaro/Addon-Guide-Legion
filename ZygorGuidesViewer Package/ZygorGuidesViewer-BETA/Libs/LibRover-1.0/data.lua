@@ -4162,7 +4162,7 @@ data.portkeys = { -- smile if you're a muggle
 	--------------
 	{item=140192, destination="Dalaran L/10 60.92,44.72", cooldown=1200, cost=20, cond=function() local m,f=ZGV.CurrentMapID,ZGV.CurrentMapFloor return m~=1014 and m~=1035 and m~=1101 and m~=1050 and m~=1051 and m~=1048 and m~=1068 and m~=1028 and m~=1052 and m~=1040 and m~=1077 and m~=1072 and m~=1056 and m~=1057 and m~=1044 and not (m==23 and f==20) end}, -- Dalaran Hearthstone
 	
-	{item=141605, destination="_TAXIWHISTLE", cooldown=60, cost=12, mode="whistle", cond=function() local m=ZGV.CurrentMapID  return m==1015 or m==1053 or m==1024 or m==1017 or m==1037 or m==1033 or m==1055 or m==1080 or m==1072 or m==1018 end }, -- Flight Master's Whistle
+	{item=141605, destination="_TAXIWHISTLE", cooldown=60, cost=12, mode="whistle", cond=function() local m=ZGV.CurrentMapID  return m==1015 or m==1053 or m==1024 or m==1017 or m==1037 or m==1033 or m==1055 or m==1080 or m==1072 or m==1018 or m==1021  end }, -- Flight Master's Whistle
 }
 
 

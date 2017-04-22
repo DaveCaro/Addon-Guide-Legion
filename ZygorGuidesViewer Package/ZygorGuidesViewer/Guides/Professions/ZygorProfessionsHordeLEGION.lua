@@ -5621,7 +5621,7 @@ kill Olmoore##105480
 |tip He's a big centaur looking enemy that walks along this path, so you may need to search a bit for him.
 |tip Kill the enemies around this area before attacking him, to give yourself some space to fight him.
 |tip You may need help to kill him.
-collect Olmoore's Power Core##136624 |q 39923/3 |goto 48.14,66.44
+collect Olmoore's Power Core##136624 |q 39923/3 |goto 44.85,65.88
 step
 talk Kharmeera##99420
 turnin Down to the Core##39923 |goto Azsuna/0 47.26,26.35

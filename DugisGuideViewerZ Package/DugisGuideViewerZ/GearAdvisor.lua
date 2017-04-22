@@ -2839,6 +2839,7 @@ function GA:Initialize()
 				criterion.AdornLootRoll = StandardLootRollAdorner
 				criterion.AdornEncounterJournal = StandardItemButtonAdorner
 				criterion.AdornVendorItem = StandardItemButtonAdorner
+                criterion.AdornBagItem = StandardItemButtonAdorner
 				criterion.AdornLoot = StandardItemButtonAdorner
 				criterion.SettleTie = StandardTiebreaker
 				criterion.AdornTooltip = StandardTooltipAdorner
@@ -2965,7 +2966,7 @@ function GA:Initialize()
 	})
 
 	local bagUpdateReaction, levelUpReaction, activeSpecReaction, smartSetReaction, rewardShowReaction, questHideReaction, adornerParentShowReaction, equipExecutedReaction,
-		lootRollShowReaction, encounterJournalUpdateReaction, vendorUpdateReaction, lootUpdateReaction
+		lootRollShowReaction, encounterJournalUpdateReaction, vendorUpdateReaction, lootUpdateReaction, advisorBagUpdateReaction
 	function GA:Load()
 		TipHooker:Hook(ProcessTooltip, "item")
 		TipHooker:RegisterCustomTooltip("item", "WorldMapTooltip")
@@ -3968,6 +3969,88 @@ function GA:Initialize()
 
 		vendorUpdateReaction =  RegisterFunctionReaction("MerchantFrame_UpdateMerchantInfo"):WithAction(EvaluateVendor)
 
+		local function EvaluateBagItemsRoutine()
+            local greenedSlots = GetCreateTable():BindToAutoroutineLifetime(tPool)
+            for slot,inv1,inv2 in NextUniqueInventorySlot do
+                for criterionIndex, option, criterion in GA:IterateWinCriteria() do
+                    criterion:BindToAutoroutineLifetime(tPool)
+                    if criterion.AdornBagItem then
+                    
+                        local winningItem, _, altWinner, _ = GetCurrentBestInSlot(slot, criterion.specNum, criterion.pvp, nil, nil, nil, nil, false)
+                        for _, link, frame in GeadAdvisorItemIterator do
+                            if criterion:Predicate(link, unpack(criterion)) then
+                                if slot==INVSLOT_MAINHAND and link==altWinner then
+                                    slot = INVSLOT_OFFHAND
+                                    winningItem = link
+                                end
+
+                                if not ItemIsEquipped(link) then
+                                    if link == winningItem or link == altWinner then
+                                        for i = 1, NUM_CONTAINER_FRAMES, 1 do
+                                            local containerFrame = _G["ContainerFrame"..i];
+                                            local containerName = containerFrame:GetName()
+                                        
+                                            if containerFrame.size ~= nil then
+                                                for j = 1, containerFrame.size, 1 do
+                                                    local itemButton = _G[containerName.."Item"..j];
+                                                    
+                                                    local currentLink = select(7, GetContainerItemInfo(containerFrame:GetID(), itemButton:GetID()))
+                                                    
+                                                    if currentLink == link then
+                                                        if link==winningItem then
+                                                            criterion:AdornBagItem(link, itemButton, "green")
+                                                        else
+                                                            criterion:AdornBagItem(link, itemButton, "yellow")
+                                                        end
+                                                    end
+                                                end
+                                            end
+                                        end  
+                                        greenedSlots[slot] = true
+                                    end
+                                end
+                            end
+                            YieldAutoroutine()
+                            
+                        end
+                    end
+                    criterion:Pool()
+                end
+            end
+            greenedSlots:Pool()
+		end
+        
+		function GA:HideBagGuidance()
+            for i=1, NUM_CONTAINER_FRAMES, 1 do
+                local containerFrame = _G["ContainerFrame"..i];
+                local xName = containerFrame:GetName()
+            
+                if containerFrame.size ~= nil then
+                    for j=1, containerFrame.size, 1 do
+                        local itemButton = _G[xName.."Item"..j];
+                        
+                        if itemButton and itemButton.dugisGreenArrow then
+                            itemButton.dugisGreenArrow:Hide()
+                        end   
+                        
+                        if itemButton and itemButton.dugisYellowArrow then
+                            itemButton.dugisYellowArrow:Hide()
+                        end
+                    end
+                end
+            end  
+		end
+        
+        --Bags green arrow
+		local function EvaluateBagItems()
+			GA:HideBagGuidance()
+            
+			InterruptAutoroutine("EvaluateBagItems")
+			BeginAutoroutine("EvaluateBagItems", EvaluateBagItemsRoutine)
+		end
+
+		advisorBagUpdateReaction = RegisterFunctionReaction("ContainerFrame_Update"):WithAction(EvaluateBagItems)
+        
 		local function HideLootGuidance()
 			for i=1, LOOTFRAME_NUMBUTTONS  do
 				local itemButton = _G["LootButton"..i];
@@ -4054,6 +4137,9 @@ function GA:Initialize()
 	function GA:Unload()
 		TipHooker:Unhook(ProcessTooltip, "item")
 		bagUpdateReaction:Dispose()
+		advisorBagUpdateReaction:Dispose()
+        GA:HideBagGuidance()
+        
 		--levelUpReaction:Dispose()
 		activeSpecReaction:Dispose()
 		smartSetReaction:Dispose()

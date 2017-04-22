@@ -123,24 +123,15 @@ function Pointer:Startup()
 		:RegisterEvent("WORLD_MAP_UPDATE")
 		.__END
 
-	if ZGV.DEV and ZGV.db.profile.debug_pointer then self.OverlayFrame.ZygorCoordsDEV = ZGV.ChainCall(WorldMapFrame.UIElementsFrame:CreateFontString(nil,"ARTWORK","GameFontHighlight")) :SetPoint("BOTTOMLEFT") :SetWidth(300) :SetJustifyH("LEFT") .__END  end
-
-	--hooksecurefunc("WorldMapButton_OnClick",ZGV.Pointer.hook_WorldMapButton_OnClick)
-
-	ZGV:ScheduleRepeatingTimer(function()  if not WorldMapFrame:IsVisible() then SetMapToCurrentZone() end  end, 10.0)   -- to help the current zone cache
-
-	if ZGV.db.profile.autotravel then
-		ZGV:ScheduleRepeatingTimer(function()  Pointer:DoAutoTravel() end, 0.01)
-	end
-
-	if ZGV.db.profile.debug then
+	if ZGV.DEV then
+		self.OverlayFrame.ZygorCoordsDEV = ZGV.ChainCall(WorldMapFrame.UIElementsFrame:CreateFontString(nil,"ARTWORK","GameFontHighlight")) :SetPoint("BOTTOMLEFT") :SetWidth(300) :SetJustifyH("LEFT") :Hide() .__END 
 		self.OverlayFrame.LibRoverButton = ZGV.ChainCall(CreateFrame("BUTTON","ZGVLibRoverButton",WorldMapFrame.UIElementsFrame,"UIPanelButtonTemplate"))
 		:SetPoint("TOPLEFT")
 		:SetSize(100,30)
 		:SetText("Travel nodes")
 		:SetScript("OnClick",LibRover.ShowDebugMenu)
 		--:RegisterForClicks("AnyUp")
-		:Show()
+		:Hide()
 		.__END
 		self.OverlayFrame.PointerDebugButton = ZGV.ChainCall(CreateFrame("BUTTON","ZGVPointerDebugButton",WorldMapFrame.UIElementsFrame,"UIPanelButtonTemplate"))
 		:SetPoint("TOPLEFT",0,-30)
@@ -148,8 +139,22 @@ function Pointer:Startup()
 		:SetText("Free zoom")
 		:SetScript("OnClick",function() Pointer:Debug_FreeWorldMapScale() end)
 		--:RegisterForClicks("AnyUp")
-		:Show()
+		:Hide()
 		.__END
+
+		if ZGV.db.profile.debug_display then
+			self.OverlayFrame.ZygorCoordsDEV:Show()
+			self.OverlayFrame.LibRoverButton:Show()
+			self.OverlayFrame.PointerDebugButton:Show()
+		end
+	end
+
+	--hooksecurefunc("WorldMapButton_OnClick",ZGV.Pointer.hook_WorldMapButton_OnClick)
+
+	ZGV:ScheduleRepeatingTimer(function()  if not WorldMapFrame:IsVisible() then SetMapToCurrentZone() end  end, 10.0)   -- to help the current zone cache
+
+	if ZGV.db.profile.autotravel then
+		ZGV:ScheduleRepeatingTimer(function()  Pointer:DoAutoTravel() end, 0.01)
 	end
 
 	--[[
@@ -532,7 +537,7 @@ function Pointer:SetWaypoint (m,f,x,y,data,arrow)
 
 
 	waypoint:SetIcon(waypoint.icon)
-	if ZGV.DEV and ZGV.db.profile.debug_pointer and waypoint.goal then
+	if ZGV.DEV and ZGV.db.profile.debug_display and waypoint.goal then
 		waypoint.frame_worldmap.label:SetText("   " .. (waypoint.goal and waypoint.goal.num..". " or "")  ..  waypoint:GetTitle()  ..  ("  %.1f,%.1f"):format(waypoint.x*100,waypoint.y*100))
 		waypoint.frame_worldmap.label:SetFont("Fonts\\ARIALN.TTF",5)
 	end
@@ -1305,7 +1310,7 @@ function Pointer.frame_minimap_functions.OnEnter(self,arg,tip)
 			tip:AddLine(L['waypoint_tip_clearmanual'])
 		end
 
-		if ZGV.db.profile.debug then
+		if ZGV.db.profile.debug_display then
 			if self.waypoint.type=="route" and self.waypoint.pathnode.type~="end" then
 				tip:AddLine("|cffff0000DEBUG:|r |cffddff00Right-click|cff00ff00 for menu")
 			end
@@ -1477,7 +1482,7 @@ function Pointer.frame_minimap_functions.OnClick(self,button)
 		elseif self.waypoint.surrogate_for and self.waypoint.surrogate_for.type=="manual" then ZGV.Pointer:RemoveWaypoint(self.waypoint.surrogate_for)
 		elseif self.waypoint.type=="route" then
 			-- if we're debugging, allow for banning a node
-			if ZGV.db.profile.debug and self.waypoint.pathnode and ZGV.Pointer.ArrowFrame.waypoint.pathnode and button=="RightButton" then
+			if ZGV.db.profile.debug_display and self.waypoint.pathnode and ZGV.Pointer.ArrowFrame.waypoint.pathnode and button=="RightButton" then
 				ZGV.LibRover.ShowNodeDebugMenu(self,self.waypoint.pathnode)
 				return
 			else
@@ -1490,7 +1495,7 @@ function Pointer.frame_minimap_functions.OnClick(self,button)
 		return
 	end
 
-	if ZGV.db.profile.debug and IsControlKeyDown() and IsAltKeyDown() then
+	if ZGV.db.profile.debug_display and IsControlKeyDown() and IsAltKeyDown() then
 		ZGV.MAPBUT=self
 		ZGV:Print("Map button saved to ZGV.MAPBUT")
 		if IsShiftKeyDown() then
@@ -1549,7 +1554,7 @@ function Pointer.frame_worldmap_functions.OnEvent(self,event,...)
 end
 
 function Pointer.frame_worldmap_functions.OnMouseWheel(self,delta,...)
-	if ZGV.db.profile.debug and self.waypoint.truesize then
+	if ZGV.db.profile.debug_display and self.waypoint.truesize then
 		self.waypoint.truesize = (self.waypoint.truesize or 50) * (delta>0 and 1.1 or 0.909090)
 		--print("waypoint",self.waypoint.title,"truesize",self.waypoint.truesize)
 		self.waypoint:SetIcon()
@@ -2495,7 +2500,7 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 
 	local text = override_text or waypoint:GetArrowTitle() or waypoint:GetTitle() or waypoint.arrowtitle or waypoint.title
 
-	if ZGV.db.profile.debug then
+	if ZGV.db.profile.debug_display then
 		text = (text or "")..("\n|cffff55dd[rad: %s%s%s%s%s%s]"):format(
 			waypoint.radius or "",
 			waypoint.radius and "" or ("%d (def)"):format(self:GetDefaultStepDist()),
@@ -2675,7 +2680,7 @@ function Pointer.ArrowFrame_ShowMenu()
 						text = L['pointer_arrowmenu_route_node'..(n==1 and '1' or '')]:format(n,text),
 						isTitle=true, notCheckable=true,
 					})
-					if ZGV.DEV then
+					if ZGV.db.profile.debug_display then
 						tinsert(list,{
 							text = "|cffff8800 = " .. node:tostring(),
 							isTitle=true, notCheckable=true,
@@ -2689,7 +2694,7 @@ function Pointer.ArrowFrame_ShowMenu()
 				text = L['pointer_arrowmenu_route_est']:format(floor(last.time/60),last.time%60),
 				isTitle=true, notCheckable=true,
 			})
-			if ZGV.DEV then
+			if ZGV.db.profile.debug_display then
 				if next(LibRover.RESULTS_SKIPPED_START or {}) then
 					tinsert(list,{ text = "|cffff8800 Removed at start:", isTitle=true, notCheckable=true })
 					for ni,nn in ipairs(LibRover.RESULTS_SKIPPED_START) do
@@ -2735,7 +2740,7 @@ function Pointer.ArrowFrame_ShowMenu()
 			})
 		end
 
-		if ZGV.db.profile.debug and self.waypoint.pathnode then
+		if ZGV.db.profile.debug_display and self.waypoint.pathnode then
 			tinsert(menu,{
 					text = L["Ban this point |cffff0000[DEV]|r"],
 					func = function() LibRover.banned_nodes[self.waypoint.pathnode]=1  LibRover:UpdateNow() end,
@@ -2895,7 +2900,7 @@ function Pointer.Overlay_OnUpdate(frame,but,...)
 			--ZGV.Pointer:ClearWaypoints("manual")
 			--ZGV.Pointer:SetWaypoint(nil,nil,x*100,y*100,{title=WorldMapFrameAreaLabel:GetText(),type="manual",clearonarrival=true,overworld=true,onminimap="always"})
 			local txt = WorldMapFrameAreaLabel:GetText()
-			local fmt = ZGV.db.profile.debug and "%s %.1f,%.1f /%d" or "%s %d,%d"
+			local fmt = ZGV.db.profile.debug_display and "%s %.1f,%.1f /%d" or "%s %d,%d"
 
 			--Pointer:ClearWaypoints("manual")
 			local way = Pointer:SetWaypoint(nil,nil,x,y,{

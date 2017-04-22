@@ -1635,28 +1635,6 @@ function ZGV:Options_DefineOptionTables()
 				 width='single',
 			})
 		EndSubgroup()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		if ZGV.DEV then
-			AddOptionSep()
-			AddOption('score_this', { type = 'execute', name="Score This! (DEV)", desc=function() if GetCursorInfo()=="item" then return ZGV.ItemScore:ScoreCursor("quiet").."\n\nClick button to send this to a Dump window."  else  return "Drag an item here to score it..." end end,
-				func=function(info,val)
-					ZGV:ShowDump(ZGV.ItemScore:ScoreCursor("quiet"),"ItemScore")
-				end
-			})
-		end
 	end
 
 	AddOptionGroup("gold","Gold","zggold")  	---- OPTIONS: gold
@@ -2233,7 +2211,78 @@ function ZGV:Options_DefineOptionTables()
 
 
 	--if ZGV.db.profile.debug then	---- OPTIONS: debug
-		AddOptionGroup("debugfake","DebugFake","zgdebugfake", { name="Debug: faking stuff", guiHidden = not self.db.profile.debug, })
+		AddOptionGroup("debugset","DebugSet","zgdebugset", { name="Debug: settings", guiHidden = not self.DEV or self.db.profile.hide_dev_once, })
+		do
+			AddOption('loadguidesfully',{ name = "Load full guides at startup", desc = "Horribly increases startup time, but loads and checks all guides.\nRestart for this to take effect.", type = 'toggle', width = "full", })
+			AddOption('showwrongsteps',{ name = "Ignore step/line conditions", type = "toggle", width = "full", })
+			--AddOption('shownpcdebug',{ name = "Show NPC Debug button", type="toggle", width = "full", set = function(i,v)  Setter_Simple(i,v)  ZGV:NPCDebugUpdate()  end  })
+			AddOption('debug_frame',{
+				name = "Debug Output Frame",
+				desc = "Usually ChatFrame1..ChatFrame9",
+				type = 'input',
+				set = function(i,v) Setter_Simple(i,v) ZGV.debugframe = _G[v] end,
+				_default = "ChatFrame1"
+			})
+			AddOption('debug_showdepth',{ name = "Debug log: show .... stack depth", type="toggle", width = "full"  })
+			AddOption('debug_showcall',{ name = "Debug log: show function call", type="toggle", width = "full"  })
+
+			AddOption('fpsgraph',{ name="FPS Graph", desc="Show a detailed FPS graph. Max=100fps.", type = 'toggle', width = "full", _default=false, set = function(i,v) Setter_Simple(i,v)  ZGV:StartFPSFrame() end, })
+			--AddOption('npcdebugauto',{ name = "Automatically add current npcs to list", type="toggle", width = "full", })
+
+			AddOption('debug_beta',{ name = "Pretend this is Beta", type="toggle", width = "full", disabled=function() return ZGV.DIR:find("-BETA") end, get = function(i,v) if ZGV.DIR:find("-BETA") then return true else return Getter_Simple(i,v) end end })
+
+
+			AddOption('bug_button',{  type = 'toggle',  
+				get = function()
+					return self.db.profile.reportbutton 
+				end,  set = function()
+					if self.db.profile.reportbutton then
+						self.db.profile.reportbutton=false
+						ZygorGuidesViewerFrame_ReportButton:Hide()
+					else
+						ZygorGuidesViewerFrame_ReportButton:Show()
+						self.db.profile.reportbutton=true
+					end 
+				end,
+				width = "full",
+				hidden = function() return not ZGV.db.profile.debug end,
+			})
+
+			AddOption('skipimpossible',{ type = 'toggle', set = function(i,v) Setter_Simple(i,v)  self:UpdateFrame()  end, width = "full", _default = true })
+			AddOption('skipflysteps',{ type = 'toggle', set = function(i,v) Setter_Simple(i,v)  self:UpdateFrame()  end, width = "full" })
+			AddOption('dontprogress',{ type = 'toggle', width = "full" })
+
+			AddOptionSpace()
+
+			AddOption('gmshowoptions',{ type = 'toggle', name="Guide Menu variant: show Options in top bar", set = function(i,v) Setter_Simple(i,v)  ZGV.F.SetVisible(ZGV.GuideMenu.MainFrame.Header.Tabs.Options,v)  end, width = "full", _default = false })
+			AddOption('gmshowoptionsleft',{ type = 'toggle', name="Guide Menu variant: show Options in left panel", set = function(i,v) Setter_Simple(i,v)  ZGV.F.SetVisible(ZGV.GuideMenu.MainFrame.MenuGuides.Options,v) ZGV.F.SetVisible(ZGV.GuideMenu.MainFrame.MenuGuides.OptionsDecor,v) end, width = "full", _default = false })
+
+
+			AddOption('sep00devdisp',{ type="header", name="Dev information" })
+
+			AddOption('debug_display',{ name = "Show Zygor developers information", type="toggle", width = "full", _default = false,
+				set = function(i,v) 
+					Setter_Simple(i,v)  
+					ZGV.Pointer.OverlayFrame.ZygorCoordsDEV:SetShown(v)
+					ZGV.Pointer.OverlayFrame.LibRoverButton:SetShown(v)
+					ZGV.Pointer.OverlayFrame.PointerDebugButton:SetShown(v)
+					ZygorGuidesViewerFrame_DevLabel:SetShown(v)
+					if LibTaxi.TaxiFrameButton then
+						LibTaxi.TaxiFrameButton:SetShown(v)
+						LibTaxi.TaxiFrameButton2:SetShown(v)
+					end
+					if ZGV.Testing and ZGV.Testing.Dungeon.EncounterJournalButton then
+						ZGV.Testing.Dungeon.EncounterJournalButton:SetShown(v)
+					end
+					if ZygorGearFinderFrame then for i,v in pairs(ZygorGearFinderFrame.Items) do v.testbutton:SetShown(v) end end
+					ZGV.GuideMenu:PrepareGuidesMenuButtons()
+				end, 
+			})
+
+			AddOption('disabledev',{ name = "Disable dev menu for next reload", type = 'execute', width = "double", func = function() self.db.profile.hide_dev_once=true ReloadUI() end})
+		end
+
+		AddOptionGroup("debugfake","DebugFake","zgdebugfake", { name="Debug: faking stuff", guiHidden = not self.DEV or self.db.profile.hide_dev_once, })
 		do
 			AddOption('fakelevel',{
 				name = "Fake level (0=disable)",
@@ -2539,30 +2588,145 @@ function ZGV:Options_DefineOptionTables()
 			--]]
 		end
 
-		AddOptionGroup("debugset","DebugSet","zgdebugset", { name="Debug: settings", guiHidden = not self.db.profile.debug, })
+		AddOptionGroup("debugdig","DebugDig","zgdebugdig", { name="Debug: data digging", guiHidden = not self.DEV or self.db.profile.hide_dev_once, })
 		do
-			AddOption('loadguidesfully',{ name = "Load full guides at startup", desc = "Horribly increases startup time, but loads and checks all guides.\nRestart for this to take effect.", type = 'toggle', width = "full", })
-			AddOption('showwrongsteps',{ name = "Ignore step/line conditions", type = "toggle", width = "full", })
-			AddOption('shownpcdebug',{ name = "Show NPC Debug button", type="toggle", width = "full", set = function(i,v)  Setter_Simple(i,v)  ZGV:NPCDebugUpdate()  end  })
-			AddOption('debug_frame',{
-				name = "Debug Output Frame",
-				desc = "Usually ChatFrame1..ChatFrame9",
+			AddOption('sep00scen',{ type="header", name="Scenarios / Dungeons" })
+			AddOption('dumpscenario',{ name = "Dump scenario objectives", width = "double", disabled=function() return not C_Scenario.IsInScenario() end, desc = "", type = 'execute', func = function() ZGV:DumpScenario() end})
+
+			AddOption('sep00neigh',{ type="header", name="Travel system map cache" })
+
+			AddOption('_dump_hint',{type="description",name=function()
+				if LibRover.STATUS_version_mismatch then return "|cff99ff77Travel data version is different from the cache version - caching is off, map data editing is allowed.\nFeel free to bake the cache when you're done." end
+				if LibRover.STATUS_node_count_mismatch then return "|cffff4400Travel data was edited, but versions weren't changed.\nDO NOT bake this without increasing the version number in data!" end
+				return "Travel data was not edited.\nThere's no need to bake the cache at this time."
+			end })
+			AddOption('dumpmapneigh',{ name = function() return LibRover.STATUS_dump_in_progress and "Dumping: "..LibRover.STATUS_dump_in_progress or "Dump baked map neighbour cache" end, type = 'execute', width = "double", func = function() ZGV.Testing.NeighbourCache:DumpNeighbours() end, disabled=function() return LibRover.STATUS_dump_in_progress end})
+			local cache_changed  -- upvalue, will serve a "static" purpose for the option below
+			AddOption('travel_do_full_linking_at_startup',{ name = "Disable map neighbour caching", type = 'toggle', width = "double", set = function(k,v)  Setter_Simple(k,v)  cache_changed=true  end, disabled=function() return LibRover.STATUS_version_mismatch or LibRover.STATUS_node_count_mismatch end })
+			AddOption('_cache_hint',{ type="description", width="full", name = function()
+				return ((LibRover.STATUS_version_mismatch or LibRover.STATUS_node_count_mismatch) and "Travel data edited, prepared for editing, or there was an error - caching is disabled anyway.")
+				or (cache_changed and "Reload for the above to take effect.")
+				or ""
+			end})
+
+			AddOption('sep00fogl',{ type="header", name="Foglight" })
+
+			AddOption('foglightdumpnew',{ name = "Dump changes", type = 'execute', width = "double", func = function() ZGV.Testing.Foglight:_UpdateData() end})
+			AddOption('foglightdumpnew',{ name = "Dump complete dataset", type = 'execute', width = "double", func = function() ZGV.Testing.Foglight:_DumpEverything() end})
+
+
+
+			AddOption('sep00astrol',{ type="header", name="HBD map adjustment" })
+			AddOption('debug_astrol_map',{
+				name = "Map ID",
+				desc = "",
 				type = 'input',
-				set = function(i,v) Setter_Simple(i,v) ZGV.debugframe = _G[v] end,
-				_default = "ChatFrame1"
+				_default = ""
 			})
-			AddOption('debug_showdepth',{ name = "Debug log: show .... stack depth", type="toggle", width = "full"  })
-			AddOption('debug_showcall',{ name = "Debug log: show function call", type="toggle", width = "full"  })
+			AddOption('debug_astrol_floor',{
+				name = "Floor #",
+				desc = "leave empty to adjust map itself",
+				type = 'input',
+				_default = ""
+			})
+			AddOption('debug_astrol_load',{ name = "Load", type = 'execute', width = "single", func = function()
+				local map=HBD.mapData[tonumber(ZGV.db.profile.debug_astrol_map)]
+				local flr = tonumber(ZGV.db.profile.debug_astrol_floor)
+				if flr then map=map.floors[flr] end
+				ZGV.db.profile.debug_astrol_xoff = map[3]
+				ZGV.db.profile.debug_astrol_yoff = map[4]
+				ZGV.db.profile.debug_astrol_w = map[1]
+				ZGV.db.profile.debug_astrol_h = map[2]
+				self:UpdateFrame()
+			end})
+			AddOption('debug_astrol_xoff',{
+				type = 'range',
+				min = -50000, max = 50000, step = 1, bigStep = 10,
+				set = function(i,v)
+					Setter_Simple(i,v)
+					local map=HBD.mapData[tonumber(ZGV.db.profile.debug_astrol_map)]
+					local flr = tonumber(ZGV.db.profile.debug_astrol_floor)
+					if flr then map=map.floors[flr] end
+					map[3] = v
+					ZGV.Pointer:UpdateWaypoints()
+				end
+			})
+			AddOption('debug_astrol_yoff',{
+				type = 'range',
+				min = -50000, max = 50000, step = 1, bigStep = 10,
+				set = function(i,v)
+					Setter_Simple(i,v)
+					local map=HBD.mapData[tonumber(ZGV.db.profile.debug_astrol_map)]
+					local flr = tonumber(ZGV.db.profile.debug_astrol_floor)
+					if flr then map=map.floors[flr] end
+					map[4] = v
+					ZGV.Pointer:UpdateWaypoints()
+				end
+			})
+			AddOption('debug_astrol_w',{
+				type = 'range',
+				min = 0, max = 40000, step = 1, bigStep = 10,
+				set = function(i,v)
+					Setter_Simple(i,v)
+					local map=HBD.mapData[tonumber(ZGV.db.profile.debug_astrol_map)]
+					local flr = tonumber(ZGV.db.profile.debug_astrol_floor)
+					if flr then map=map.floors[flr] end
+					map[1] = v
+					 map[2] = v*0.6667
+					 ZGV.db.profile.debug_astrol_h=map[2]
+					 self:UpdateFrame()
+					ZGV.Pointer:UpdateWaypoints()
+				end
+			})
+			AddOption('debug_astrol_h',{
+				type = 'range',
+				min = 0, max = 40000, step = 1, bigStep = 10,
+				set = function(i,v)
+					Setter_Simple(i,v)
+					local map=HBD.mapData[tonumber(ZGV.db.profile.debug_astrol_map)]
+					local flr = tonumber(ZGV.db.profile.debug_astrol_floor)
+					if flr then map=map.floors[flr] end
+					map[2] = v
+					ZGV.Pointer:UpdateWaypoints()
+				end
+			})
+			AddOption('debug_astrol_prec',{
+				name = "Precise",
+				desc = "",
+				type = 'toggle',
+				set = function(i,v)
+					Setter_Simple(i,v)
+					local function setprecise(var,tf,defmin,defmax)
+						local opt = ZGV.GuideMenu.MainFrame.WideColumnOptions.AceContainer.optiontable.args[var]
+						local val = ZGV.db.profile[var]
+						if tf then
+							opt.min=val-2000
+							opt.max=val+2000
+						else
+							opt.min=defmin
+							opt.max=defmax
+						end
+					end
+					setprecise("debug_astrol_xoff",v,-50000,50000)
+					setprecise("debug_astrol_yoff",v,-50000,50000)
+					setprecise("debug_astrol_w",v,0,10000)
+					setprecise("debug_astrol_h",v,0,10000)
+					self:UpdateFrame()
+				end
+			})
 
-			AddOption('fpsgraph',{ name="FPS Graph", desc="Show a detailed FPS graph. Max=100fps.", type = 'toggle', width = "full", _default=false, set = function(i,v) Setter_Simple(i,v)  ZGV:StartFPSFrame() end, })
-			--AddOption('npcdebugauto',{ name = "Automatically add current npcs to list", type="toggle", width = "full", })
+			AddOption('sep00score',{ type="header", name="Itemscore" })
+			AddOption('score_this', { type = 'execute', name="Score cursor item", desc=function() if GetCursorInfo()=="item" then return ZGV.ItemScore:ScoreCursor("quiet").."\n\nClick button to send this to a Dump window."  else  return "Drag an item here to score it..." end end,
+				func=function(info,val)
+					ZGV:ShowDump(ZGV.ItemScore:ScoreCursor("quiet"),"ItemScore")
+				end
+			})
 
-			AddOption('debug_beta',{ name = "Pretend this is Beta", type="toggle", width = "full", disabled=function() return ZGV.DIR:find("-BETA") end, get = function(i,v) if ZGV.DIR:find("-BETA") then return true else return Getter_Simple(i,v) end end })
+		end
 
-			AddOption('debug_pointer',{ name = "Show debug info on world map", type="toggle", width = "full", _default = true  })
 
-			
-			
+		AddOptionGroup("debugremoved","DebugRemoved","zgdebugremoved", { name="Debug: removed options", guiHidden = not self.DEV or self.db.profile.hide_dev_once, })
+		do
 			AddOption('guide_viewer_advanced',{  type = 'toggle', width="double", plusminus=true })
 			AddSubgroup("advancedcust_subgroup", {hidden=function() return not self.db.profile.guide_viewer_advanced end})  
 				
@@ -2865,159 +3029,8 @@ function ZGV:Options_DefineOptionTables()
 				})
 			EndSubgroup()
 
-			AddOption('bug_button',{  type = 'toggle',  
-				get = function()
-					return self.db.profile.reportbutton 
-				end,  set = function()
-					if self.db.profile.reportbutton then
-						self.db.profile.reportbutton=false
-						ZygorGuidesViewerFrame_ReportButton:Hide()
-					else
-						ZygorGuidesViewerFrame_ReportButton:Show()
-						self.db.profile.reportbutton=true
-					end 
-				end,
-				width = "full",
-				hidden = function() return not ZGV.db.profile.debug end,
-			})
-
-			AddOption('autoacceptturninall',{
-				type = 'toggle',
-				width="full",
-				_default=false
-			})
-
-			AddOption('skipimpossible',{ type = 'toggle', set = function(i,v) Setter_Simple(i,v)  self:UpdateFrame()  end, width = "full", _default = true })
-			AddOption('skipflysteps',{ type = 'toggle', set = function(i,v) Setter_Simple(i,v)  self:UpdateFrame()  end, width = "full" })
-			AddOption('dontprogress',{ type = 'toggle', width = "full" })
-
-			AddOptionSpace()
-
-			AddOption('gmshowoptions',{ type = 'toggle', set = function(i,v) Setter_Simple(i,v)  ZGV.F.SetVisible(ZGV.GuideMenu.MainFrame.Header.Tabs.Options,v)  end, width = "full", _default = false })
-			AddOption('gmshowoptionsleft',{ type = 'toggle', set = function(i,v) Setter_Simple(i,v)  ZGV.F.SetVisible(ZGV.GuideMenu.MainFrame.MenuGuides.Options,v) ZGV.F.SetVisible(ZGV.GuideMenu.MainFrame.MenuGuides.OptionsDecor,v) end, width = "full", _default = false })
-
-
 		end
-
-		AddOptionGroup("debugdig","DebugDig","zgdebugdig", { name="Debug: data digging", guiHidden = not self.db.profile.debug, })
-		do
-			AddOption('dumpscenario',{ name = "Dump scenario objectives", disabled=function() return not C_Scenario.IsInScenario() end, desc = "", type = 'execute', width = "full", func = function() ZGV:DumpScenario() end})
-			AddOption('dumpmapneigh',{ name = "Dump map neighbour cache", type = 'execute', width = "double", func = function() ZGV.Testing.NeighbourCache:DumpNeighbours() end})
-			AddOption('dumpmapneigh',{ name = "Toggle map neighbour caching", type = 'execute', width = "double", func = function() ZGV.Testing.NeighbourCache:DumpNeighbours_ToggleNeighbourCache() end})
-
-			AddOption('sep00astrol',{ type="header", name="HBD map adjustment" })
-			AddOption('debug_astrol_map',{
-				name = "Map ID",
-				desc = "",
-				type = 'input',
-				_default = ""
-			})
-			AddOption('debug_astrol_floor',{
-				name = "Floor #",
-				desc = "leave empty to adjust map itself",
-				type = 'input',
-				_default = ""
-			})
-			AddOption('debug_astrol_load',{ name = "Load", type = 'execute', width = "single", func = function()
-				local map=HBD.mapData[tonumber(ZGV.db.profile.debug_astrol_map)]
-				local flr = tonumber(ZGV.db.profile.debug_astrol_floor)
-				if flr then map=map.floors[flr] end
-				ZGV.db.profile.debug_astrol_xoff = map[3]
-				ZGV.db.profile.debug_astrol_yoff = map[4]
-				ZGV.db.profile.debug_astrol_w = map[1]
-				ZGV.db.profile.debug_astrol_h = map[2]
-				self:UpdateFrame()
-			end})
-			AddOption('debug_astrol_xoff',{
-				type = 'range',
-				min = -50000, max = 50000, step = 1, bigStep = 10,
-				set = function(i,v)
-					Setter_Simple(i,v)
-					local map=HBD.mapData[tonumber(ZGV.db.profile.debug_astrol_map)]
-					local flr = tonumber(ZGV.db.profile.debug_astrol_floor)
-					if flr then map=map.floors[flr] end
-					map[3] = v
-					ZGV.Pointer:UpdateWaypoints()
-				end
-			})
-			AddOption('debug_astrol_yoff',{
-				type = 'range',
-				min = -50000, max = 50000, step = 1, bigStep = 10,
-				set = function(i,v)
-					Setter_Simple(i,v)
-					local map=HBD.mapData[tonumber(ZGV.db.profile.debug_astrol_map)]
-					local flr = tonumber(ZGV.db.profile.debug_astrol_floor)
-					if flr then map=map.floors[flr] end
-					map[4] = v
-					ZGV.Pointer:UpdateWaypoints()
-				end
-			})
-			AddOption('debug_astrol_w',{
-				type = 'range',
-				min = 0, max = 40000, step = 1, bigStep = 10,
-				set = function(i,v)
-					Setter_Simple(i,v)
-					local map=HBD.mapData[tonumber(ZGV.db.profile.debug_astrol_map)]
-					local flr = tonumber(ZGV.db.profile.debug_astrol_floor)
-					if flr then map=map.floors[flr] end
-					map[1] = v
-					 map[2] = v*0.6667
-					 ZGV.db.profile.debug_astrol_h=map[2]
-					 self:UpdateFrame()
-					ZGV.Pointer:UpdateWaypoints()
-				end
-			})
-			AddOption('debug_astrol_h',{
-				type = 'range',
-				min = 0, max = 40000, step = 1, bigStep = 10,
-				set = function(i,v)
-					Setter_Simple(i,v)
-					local map=HBD.mapData[tonumber(ZGV.db.profile.debug_astrol_map)]
-					local flr = tonumber(ZGV.db.profile.debug_astrol_floor)
-					if flr then map=map.floors[flr] end
-					map[2] = v
-					ZGV.Pointer:UpdateWaypoints()
-				end
-			})
-			AddOption('debug_astrol_prec',{
-				name = "Precise",
-				desc = "",
-				type = 'toggle',
-				set = function(i,v)
-					Setter_Simple(i,v)
-					local function setprecise(var,tf,defmin,defmax)
-						local opt = ZGV.GuideMenu.MainFrame.WideColumnOptions.AceContainer.optiontable.args[var]
-						local val = ZGV.db.profile[var]
-						if tf then
-							opt.min=val-2000
-							opt.max=val+2000
-						else
-							opt.min=defmin
-							opt.max=defmax
-						end
-					end
-					setprecise("debug_astrol_xoff",v,-50000,50000)
-					setprecise("debug_astrol_yoff",v,-50000,50000)
-					setprecise("debug_astrol_w",v,0,10000)
-					setprecise("debug_astrol_h",v,0,10000)
-					self:UpdateFrame()
-				end
-			})
-
-			AddOption('foglightdebug',{
-				name = "(Debug) Check fog",
-				desc = "Check foglighting for the current map",
-				type = 'execute',
-				func = function() ZGV.Foglight:DebugMap() end,
-			})
-			AddOption('foglightdump',{
-				name = "(Debug) Dump fog",
-				desc = "Dump foglighting for current map (ctrl: all maps) (shift: just differences)",
-				type = 'execute',
-				func = function() ZGV.Foglight:DumpMapOverlayInfos(IsShiftKeyDown(),IsControlKeyDown()) end,
-			})
-
-		end
+		self.db.profile.hide_dev_once = false
 	--end
 
 
@@ -3267,6 +3280,8 @@ function ZGV:Options_RegisterDefaults()
 
 	self.db.profile.auction_autoshow_tab = true
 
+	self.db.profile.debug_display = false   -- 2017-04-22: clear the misassigned default of true
+
 	--self.db.profile.waypointaddon = "internal"
 	--self.db.profile.minicons = true
 
@@ -3399,6 +3414,10 @@ end
 
 function ZGV:OpenOptions(v,noretry)
 	self.GuideMenu:Show("Options",v)
+end
+
+function ZGV:RefreshOptions()
+	if ZGV.GuideMenu.MainFrame and ZGV.GuideMenu.MainFrame.WideColumnOptions.AceContainer:IsShown() then LibStub("AceConfigDialog-3.0-Z"):Open(ZGV.GuideMenu.current_option,ZGV.GuideMenu.MainFrame.WideColumnOptions.AceContainer) end
 end
 
 

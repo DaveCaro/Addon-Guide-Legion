@@ -301,7 +301,7 @@ do
 
 	local hooked
 	function Lib:Debug_HookButtons()
-		if ZGV and ZGV.db and ZGV.db.profile.debug and not hooked then
+		if ZGV and ZGV.DEV and not hooked then
 			hooksecurefunc("TaxiNodeOnButtonEnter",function(button)
 				local taxix,taxiy = TaxiNodePosition(button:GetID())
 				local taxitag = ("%03d:%03d"):format(taxix*1000,taxiy*1000)
@@ -325,7 +325,7 @@ do
 			:SetScript("OnLeave",function() GameTooltip:Hide() end)
 			:SetFrameLevel(100)
 			--:RegisterForClicks("AnyUp")
-			:Show()
+			:Hide()
 			.__END
 
 			self.TaxiFrameButton2 = ZGV.ChainCall(CreateFrame("BUTTON","ZGVLibTaxiButton",taxiparent,"UIPanelButtonTemplate"))
@@ -335,8 +335,12 @@ do
 			:SetScript("OnClick",function() Lib:DumpTaxiMap() end)
 			:SetFrameLevel(100)
 			--:RegisterForClicks("AnyUp")
-			:Show()
+			:Hide()
 			.__END
+			if ZGV.db.profile.debug_display then
+				self.TaxiFrameButton:Show()
+				self.TaxiFrameButton2:Show()
+			end
 		end
 	end
 

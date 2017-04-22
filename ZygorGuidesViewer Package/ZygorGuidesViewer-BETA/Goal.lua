@@ -1317,7 +1317,7 @@ GOALTYPES['havebuff'] = {
 		for i=1,30 do
 			local name,_,fileid = UnitBuff("player",i)
 			if name and (self.fileid==fileid or name:find(self.buff)) then return true,true end
-			local name,_,tex = UnitDebuff("player",i)
+			local name,_,fileid = UnitDebuff("player",i)
 			if name and (self.fileid==fileid or name:find(self.buff)) then return true,true end
 		end
 		return false,true

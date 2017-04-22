@@ -3941,25 +3941,25 @@ ZygorGuidesViewer:RegisterInclude("Noblegarden Achievements",[[
 		|tip Press Shift-P to bring up your Pet Journal and click the Spring Rabbit.
 		Find a player with a Spring Rabbit next to them around Dolanaar
 		|tip Spring Rabbits look like small brown and white rabbits.
-		Find your Spring Rabbit another one to love in Dolanaar |achieve 2419/1 |goto Teldrassil 55.5,51.0
+		Find your Spring Rabbit another one to love in Dolanaar |achieve 2419/2 |goto Teldrassil 55.5,51.0
 	step
 		Bring out your Spring Rabbit companion
 		|tip Press Shift-P to bring up your Pet Journal and click the Spring Rabbit.
 		Find a player with a Spring Rabbit next to them around Azure Watch
 		|tip Spring Rabbits look like small brown and white rabbits.
-		Find your Spring Rabbit another one to love in Azure Watch |achieve 2419/4 |goto Azuremyst Isle 49.1,52.0
+		Find your Spring Rabbit another one to love in Azure Watch |achieve 2419/1 |goto Azuremyst Isle 49.1,52.0
 	step
 		Equip your Spring Robes in your bags |equipped Spring Robes##44800 |use Spring Robes##44800 |condition achieved(2436)-- or achieved()
 		Use your Spring Robes' ability to plant a flower |use Spring Robes##44800
-		Plant a flower in Desolace |achieve 2436/1 |goto Desolace 66.0,10.0
+		Plant a flower in Desolace |achieve 2436/2 |goto Desolace 66.0,10.0
 	step
 		Equip your Spring Robes in your bags |equipped Spring Robes##44800 |use Spring Robes##44800 |condition achieved(2436)
 		Use your Spring Robes' ability to plant a flower |use Spring Robes##44800
-		Plant a flower in Thousand Needles |achieve 2436/3 |goto Thousand Needles 90.3,72.8
+		Plant a flower in Thousand Needles |achieve 2436/5 |goto Thousand Needles 90.3,72.8
 	step
 		Equip your Spring Robes in your bags |equipped Spring Robes##44800 |use Spring Robes##44800 |condition achieved(2436)
 		Use your Spring Robes' ability to plant a flower |use Spring Robes##44800
-		Plant a flower in Silithus |achieve 2436/2 |goto Silithus 55.0,34.0
+		Plant a flower in Silithus |achieve 2436/3 |goto Silithus 55.0,34.0
 	step
 		Change into a bunny |havebuff Interface\Icons\INV_Misc_Food_54 |or 
 		|tip You will need a friend to do this, or at least another player. There should be plenty of players trying to do this achievement at the same time, so it should be easy to find help. Have your friend, or other player, use their Blossoming Branch on you to turn you into a rabbit.
@@ -3972,13 +3972,13 @@ ZygorGuidesViewer:RegisterInclude("Noblegarden Achievements",[[
 	step
 		Equip your Spring Robes in your bags |equipped Spring Robes##44800 |use Spring Robes##44800 |condition achieved(2436)
 		Use your Spring Robes' ability to plant a flower |use Spring Robes##44800
-		Plant a flower in The Badlands |achieve 2436/5 |goto Badlands 23.0,60.0
+		Plant a flower in The Badlands |achieve 2436/1 |goto Badlands 23.0,60.0
 	step
 		Bring out your Spring Rabbit companion
 		|tip Press Shift-P to bring up your Pet Journal and click the Spring Rabbit.
 		Find a player with a Spring Rabbit next to them around Kharanos
 		|tip Spring Rabbits look like small brown and white rabbits.
-		Find your Spring Rabbit another one to love in Kharanos |achieve 2419/3 |goto Dun Morogh 53.5,51.2
+		Find your Spring Rabbit another one to love in Kharanos |achieve 2419/4 |goto Dun Morogh 53.5,51.2
 	step
 		Use your Noblegarden Egg anywhere in Stormwind City |use Noblegarden Egg##44818
 		Hide a Brightly Colored Egg in Stormwind City |achieve 2421 |goto Stormwind City 71.0,72.0
@@ -3987,7 +3987,7 @@ ZygorGuidesViewer:RegisterInclude("Noblegarden Achievements",[[
 		|tip Press Shift-P to bring up your Pet Journal and click the Spring Rabbit.
 		Find a player with a Spring Rabbit next to them around Goldshire 
 		|tip Spring Rabbits look like small brown and white rabbits.
-		Find your Spring Rabbit another one to love in Goldshire |achieve 2419/2 |goto Elwynn Forest 43.1,67.6
+		Find your Spring Rabbit another one to love in Goldshire |achieve 2419/3 |goto Elwynn Forest 43.1,67.6
 	step
 		Equip your Black Tuxedo Pants and White Tuxedo Shirt
 		Find another player who is wearing the Elegant Dress and perform the Kiss emote on them |script DoEmote("KISS") 
@@ -3995,20 +3995,20 @@ ZygorGuidesViewer:RegisterInclude("Noblegarden Achievements",[[
 		Kiss someone wearing an Elegant Dress while wearing a White Tuxedo Shirt and Black Tuxedo Pants |achieve 2576 |goto Teldrassil 55.5,51.0
 	step
 		Find a female character of every race that is at least level 18 and do the following:
-		|tip The best places to try and find them would be Stormshield, Stormwind, and Orgrimmar.
+		|tip The best places to try and find them would be New Dalaran, Stormwind, and Orgrimmar.
 		Use your Spring Flowers on them |use Spring Flowers##45073
 		Place bunny ears on a Blood Elf |achieve 2422/1
-		Place bunny ears on a Tauren |achieve 2422/6
+		Place bunny ears on a Tauren |achieve 2422/9
 		Place bunny ears on a Draenei |achieve 2422/2
-		Place bunny ears on a Human |achieve 2422/3
-		Place bunny ears on a Troll |achieve 2422/7
-		Place bunny ears on a Dwarf |achieve 2422/4
-		Place bunny ears on a Night Elf |achieve 2422/9
-		Place bunny ears on a Gnome |achieve 2422/10
-		Place bunny ears on a Orc |achieve 2422/5
-		Place bunny ears on a Goblin |achieve 2422/12
-		Place bunny ears on an Undead |achieve 2422/8
-		Place bunny ears on a Worgen |achieve 2422/11
+		Place bunny ears on a Human |achieve 2422/6
+		Place bunny ears on a Troll |achieve 2422/10
+		Place bunny ears on a Dwarf |achieve 2422/3
+		Place bunny ears on a Night Elf |achieve 2422/7
+		Place bunny ears on a Gnome |achieve 2422/4
+		Place bunny ears on a Orc |achieve 2422/8
+		Place bunny ears on a Goblin |achieve 2422/5
+		Place bunny ears on an Undead |achieve 2422/11
+		Place bunny ears on a Worgen |achieve 2422/12
 	step
 		Congratulations, you are now a Noble Gardener!
 ]])

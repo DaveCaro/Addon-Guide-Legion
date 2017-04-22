@@ -627,7 +627,7 @@ local function Appraiser_SetTooltipData(tooltip, itemLink)
 		
 		tooltip:AddDoubleLine("  |cffeeeeeeCurrent lowest price:|r ",minprice_g)
 
-		if ZGV.DEV then
+		if ZGV.db.profile.debug_display  then
 			tooltip:AddDoubleLine("  STATUSNAME:",statusName)
 			tooltip:AddDoubleLine("  STAG:",(priceStatus.stagnant and "yes" or "no"))
 		end
