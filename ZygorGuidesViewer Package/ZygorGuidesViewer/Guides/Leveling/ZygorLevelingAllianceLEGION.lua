@@ -17410,47 +17410,57 @@ step
 click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
-accept Destiny Unfulfilled##44496 |goto Skyhold/1 45.32,30.12
+accept Destiny Unfulfilled##44481 |goto Skyhold/1 45.32,30.12 |only if achieved(697)
+accept Destiny Unfulfilled##44496 |goto Skyhold/1 45.32,30.12 |only if not achieved(697)
 |only Warrior
 step
 Use the Call to Xe'ra ability
 |tip It appears as a button on the screen.
-Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44496
+Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44481 |only if achieved(697)
+Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44496 |only if not achieved(697)
 |only Warrior
 step
 Watch the dialogue
-Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44496
+Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44481 |only if achieved(697)
+Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Warrior
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44496
+Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Warrior
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44496
+Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Warrior
 step
 Use the Metamorphosis ability
 |tip It's on your action bar.
-Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44496
+Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Warrior
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44496
+Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Warrior
 step
 kill Maiev Shadowsong##112867
 |tip She will defeat you.
-Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44496
-Experience True Betrayal |q 44496/1 |goto 52.70,71.25
+Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44496 |only if not achieved(697)
+Experience True Betrayal |q 44481/1 |goto 52.70,71.25 |only if achieved(697)
+Experience True Betrayal |q 44496/1 |goto 52.70,71.25 |only if not achieved(697)
 |only Warrior
 step
 Run up the stairs |goto Skyhold/1 52.48,36.13 < 20 |only if walking
 click Light's Heart
-turnin Destiny Unfulfilled##44496 |goto Skyhold/1 45.32,30.12
+turnin Destiny Unfulfilled##44481 |goto Skyhold/1 45.32,30.12 |only if achieved(697)
+turnin Destiny Unfulfilled##44496 |goto Skyhold/1 45.32,30.12 |only if not achieved(697)
 |only Warrior
 step
 click Light's Heart
@@ -18346,46 +18356,56 @@ step
 click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
-accept Destiny Unfulfilled##44496 |goto Eastern Plaguelands/20 52.31,69.37
+accept Destiny Unfulfilled##44481 |goto Eastern Plaguelands/20 52.31,69.37 |only if achieved(697)
+accept Destiny Unfulfilled##44496 |goto Eastern Plaguelands/20 52.31,69.37 |only if not achieved(697)
 |only Paladin
 step
 Use the Call to Xe'ra ability
 |tip It appears as a button on the screen.
-Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44496
+Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44481 |only if achieved(697)
+Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44496 |only if not achieved(697)
 |only Paladin
 step
 Watch the dialogue
-Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44496
+Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44481 |only if achieved(697)
+Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Paladin
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44496
+Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Paladin
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44496
+Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Paladin
 step
 Use the Metamorphosis ability
 |tip It's on your action bar.
-Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44496
+Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Paladin
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44496
+Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Paladin
 step
 kill Maiev Shadowsong##112867
 |tip She will defeat you.
-Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44496
-Experience True Betrayal |q 44496/1 |goto 52.70,71.25
+Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44496 |only if not achieved(697)
+Experience True Betrayal |q 44481/1 |goto 52.70,71.25 |only if achieved(697)
+Experience True Betrayal |q 44496/1 |goto 52.70,71.25 |only if not achieved(697)
 |only Paladin
 step
 click Light's Heart
-turnin Destiny Unfulfilled##44496 |goto Eastern Plaguelands/20 52.31,69.37
+turnin Destiny Unfulfilled##44481 |goto Eastern Plaguelands/20 52.31,69.37 |only if achieved(697)
+turnin Destiny Unfulfilled##44496 |goto Eastern Plaguelands/20 52.31,69.37 |only if not achieved(697)
 |only Paladin
 step
 click Light's Heart
@@ -18547,7 +18567,7 @@ kill Captain Tevaris##109189 |q 42387/1 |goto 39.56,61.64
 |only Hunter
 step
 label "Risen_Hounds"
-kill Risen Hound##91847 |q 42386/1 |goto 40.82,60.09
+kill 8 Risen Hound##91847 |q 42386/1 |goto 40.82,60.09
 |only Hunter
 step
 talk Hudson Crawford##107372
@@ -19392,47 +19412,57 @@ click Light's Heart
 |tip Inside the building.
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
-accept Destiny Unfulfilled##44496 |goto Trueshot Lodge/0 47.31,43.44
+accept Destiny Unfulfilled##44481 |goto Trueshot Lodge/0 47.31,43.44 |only if achieved(697)
+accept Destiny Unfulfilled##44496 |goto Trueshot Lodge/0 47.31,43.44 |only if not achieved(697)
 |only Hunter
 step
 Use the Call to Xe'ra ability
 |tip It appears as a button on the screen.
-Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44496
+Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44481 |only if achieved(697)
+Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44496 |only if not achieved(697)
 |only Hunter
 step
 Watch the dialogue
-Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44496
+Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44481 |only if achieved(697)
+Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Hunter
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44496
+Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Hunter
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44496
+Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Hunter
 step
 Use the Metamorphosis ability
 |tip It's on your action bar.
-Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44496
+Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Hunter
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44496
+Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Hunter
 step
 kill Maiev Shadowsong##112867
 |tip She will defeat you.
-Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44496
-Experience True Betrayal |q 44496/1 |goto 52.70,71.25
+Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44496 |only if not achieved(697)
+Experience True Betrayal |q 44481/1 |goto 52.70,71.25 |only if achieved(697)
+Experience True Betrayal |q 44496/1 |goto 52.70,71.25 |only if not achieved(697)
 |only Hunter
 step
 click Light's Heart
 |tip Inside the building.
-turnin Destiny Unfulfilled##44496 |goto Trueshot Lodge/0 47.31,43.44
+turnin Destiny Unfulfilled##44481 |goto Trueshot Lodge/0 47.31,43.44 |only if achieved(697)
+turnin Destiny Unfulfilled##44496 |goto Trueshot Lodge/0 47.31,43.44 |only if not achieved(697)
 |only Hunter
 step
 click Light's Heart
@@ -20413,49 +20443,59 @@ step
 click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
-accept Destiny Unfulfilled##44496 |goto Dalaran L/4 40.79,54.82
+accept Destiny Unfulfilled##44481 |goto Dalaran L/4 40.79,54.82 |only if achieved(697)
+accept Destiny Unfulfilled##44496 |goto Dalaran L/4 40.79,54.82 |only if not achieved(697)
 |only Rogue
 step
 Use the Call to Xe'ra ability
 |tip It appears as a button on the screen.
-Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44496
+Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44481 |only if achieved(697)
+Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44496 |only if not achieved(697)
 |only Rogue
 step
 Watch the dialogue
-Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44496
+Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44481 |only if achieved(697)
+Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Rogue
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44496
+Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Rogue
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44496
+Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Rogue
 step
 Use the Metamorphosis ability
 |tip It's on your action bar.
-Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44496
+Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Rogue
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44496
+Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Rogue
 step
 kill Maiev Shadowsong##112867
 |tip She will defeat you.
-Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44496
-Experience True Betrayal |q 44496/1 |goto 52.70,71.25
+Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44496 |only if not achieved(697)
+Experience True Betrayal |q 44481/1 |goto 52.70,71.25 |only if achieved(697)
+Experience True Betrayal |q 44496/1 |goto 52.70,71.25 |only if not achieved(697)
 |only Rogue
 step
 Run down the stairs |goto Dalaran L/4 82.79,81.72 < 10 |walk
 Continue down the stairs |goto Dalaran L/4 90.59,84.77 < 10 |walk
 Cross the bridge |goto Dalaran L/4 49.05,35.98 < 15 |walk
 click Light's Heart
-turnin Destiny Unfulfilled##44496 |goto Dalaran L/4 40.79,54.82
+turnin Destiny Unfulfilled##44481 |goto Dalaran L/4 40.79,54.82 |only if achieved(697)
+turnin Destiny Unfulfilled##44496 |goto Dalaran L/4 40.79,54.82 |only if not achieved(697)
 |only Rogue
 step
 click Light's Heart
@@ -21402,46 +21442,56 @@ step
 click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
-accept Destiny Unfulfilled##44496 |goto Netherlight Temple/1 49.79,26.28
+accept Destiny Unfulfilled##44481 |goto Netherlight Temple/1 49.79,26.28 |only if achieved(697)
+accept Destiny Unfulfilled##44496 |goto Netherlight Temple/1 49.79,26.28 |only if not achieved(697)
 |only Priest
 step
 Use the Call to Xe'ra ability
 |tip It appears as a button on the screen.
-Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44496
+Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44481 |only if achieved(697)
+Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44496 |only if not achieved(697)
 |only Priest
 step
 Watch the dialogue
-Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44496
+Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44481 |only if achieved(697)
+Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Priest
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44496
+Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Priest
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44496
+Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Priest
 step
 Use the Metamorphosis ability
 |tip It's on your action bar.
-Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44496
+Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Priest
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44496
+Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Priest
 step
 kill Maiev Shadowsong##112867
 |tip She will defeat you.
-Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44496
-Experience True Betrayal |q 44496/1 |goto 52.70,71.25
+Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44496 |only if not achieved(697)
+Experience True Betrayal |q 44481/1 |goto 52.70,71.25 |only if achieved(697)
+Experience True Betrayal |q 44496/1 |goto 52.70,71.25 |only if not achieved(697)
 |only Priest
 step
 click Light's Heart
-turnin Destiny Unfulfilled##44496 |goto Netherlight Temple/1 49.81,26.41
+turnin Destiny Unfulfilled##44481 |goto Netherlight Temple/1 49.81,26.41 |only if achieved(697)
+turnin Destiny Unfulfilled##44496 |goto Netherlight Temple/1 49.81,26.41 |only if not achieved(697)
 |only Priest
 step
 click Light's Heart
@@ -21468,7 +21518,7 @@ turnin Soul Prism of the Illidari##45175 |goto 43.29,43.16
 step
 talk Lilith##110595
 |tip This quest will only be available if you chose to get the "Armaments of Light" class hall upgrade.
-accept Champion Armaments##44229 |goto 45.49,26.63
+accept Champion Armaments##44229 |goto Netherlight Temple/1 45.49,26.63
 |only Priest
 step
 talk Lilith##110595
@@ -22370,46 +22420,56 @@ step
 click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
-accept Destiny Unfulfilled##44496 |goto The Maelstrom L/0 32.48,32.81
+accept Destiny Unfulfilled##44481 |goto The Maelstrom L/0 32.48,32.81 |only if achieved(697)
+accept Destiny Unfulfilled##44496 |goto The Maelstrom L/0 32.48,32.81 |only if not achieved(697)
 |only Shaman
 step
 Use the Call to Xe'ra ability
 |tip It appears as a button on the screen.
-Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44496
+Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44481 |only if achieved(697)
+Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44496 |only if not achieved(697)
 |only Shaman
 step
 Watch the dialogue
-Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44496
+Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44481 |only if achieved(697)
+Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Shaman
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44496
+Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Shaman
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44496
+Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Shaman
 step
 Use the Metamorphosis ability
 |tip It's on your action bar.
-Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44496
+Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Shaman
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44496
+Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Shaman
 step
 kill Maiev Shadowsong##112867
 |tip She will defeat you.
-Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44496
-Experience True Betrayal |q 44496/1 |goto 52.70,71.25
+Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44496 |only if not achieved(697)
+Experience True Betrayal |q 44481/1 |goto 52.70,71.25 |only if achieved(697)
+Experience True Betrayal |q 44496/1 |goto 52.70,71.25 |only if not achieved(697)
 |only Shaman
 step
 click Light's Heart
-turnin Destiny Unfulfilled##44496 |goto The Maelstrom L/0 32.48,32.81
+turnin Destiny Unfulfilled##44481 |goto The Maelstrom L/0 32.48,32.81 |only if achieved(697)
+turnin Destiny Unfulfilled##44496 |goto The Maelstrom L/0 32.48,32.81 |only if not achieved(697)
 |only Shaman
 step
 click Light's Heart
@@ -23378,46 +23438,56 @@ step
 click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
-accept Destiny Unfulfilled##44496 |goto Hall of the Guardian/1 83.83,32.74
+accept Destiny Unfulfilled##44481 |goto Hall of the Guardian/1 83.83,32.74 |only if achieved(697)
+accept Destiny Unfulfilled##44496 |goto Hall of the Guardian/1 83.83,32.74 |only if not achieved(697)
 |only Mage
 step
 Use the Call to Xe'ra ability
 |tip It appears as a button on the screen.
-Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44496
+Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44481 |only if achieved(697)
+Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44496 |only if not achieved(697)
 |only Mage
 step
 Watch the dialogue
-Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44496
+Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44481 |only if achieved(697)
+Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Mage
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44496
+Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Mage
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44496
+Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Mage
 step
 Use the Metamorphosis ability
 |tip It's on your action bar.
-Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44496
+Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Mage
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44496
+Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Mage
 step
 kill Maiev Shadowsong##112867
 |tip She will defeat you.
-Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44496
-Experience True Betrayal |q 44496/1 |goto 52.70,71.25
+Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44496 |only if not achieved(697)
+Experience True Betrayal |q 44481/1 |goto 52.70,71.25 |only if achieved(697)
+Experience True Betrayal |q 44496/1 |goto 52.70,71.25 |only if not achieved(697)
 |only Mage
 step
 click Light's Heart
-turnin Destiny Unfulfilled##44496 |goto Hall of the Guardian/1 83.83,32.74
+turnin Destiny Unfulfilled##44481 |goto Hall of the Guardian/1 83.83,32.74 |only if achieved(697)
+turnin Destiny Unfulfilled##44496 |goto Hall of the Guardian/1 83.83,32.74 |only if not achieved(697)
 |only Mage
 step
 click Light's Heart
@@ -24639,46 +24709,46 @@ step
 click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
-accept Destiny Unfulfilled##44496 |goto Mardum, the Shattered Abyss/1 58.65,43.40
+accept Destiny Unfulfilled##44497 |goto Mardum, the Shattered Abyss/1 58.65,43.40
 |only DemonHunter
 step
 Use the Call to Xe'ra ability
 |tip It appears as a button on the screen.
-Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44496
+Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44497
 |only DemonHunter
 step
 Watch the dialogue
-Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44496
+Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44497
 |only DemonHunter
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44496
+Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44497
 |only DemonHunter
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44496
+Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44497
 |only DemonHunter
 step
 Use the Metamorphosis ability
 |tip It's on your action bar.
-Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44496
+Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44497
 |only DemonHunter
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44496
+Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44497
 |only DemonHunter
 step
 kill Maiev Shadowsong##112867
 |tip She will defeat you.
-Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44496
-Experience True Betrayal |q 44496/1 |goto 52.70,71.25
+Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44497
+Experience True Betrayal |q 44497/1 |goto 52.70,71.25
 |only DemonHunter
 step
 click Light's Heart
-turnin Destiny Unfulfilled##44496 |goto Mardum, the Shattered Abyss/1 58.65,43.40
+turnin Destiny Unfulfilled##44497 |goto Mardum, the Shattered Abyss/1 58.65,43.40
 |only DemonHunter
 step
 click Light's Heart
@@ -25576,47 +25646,57 @@ step
 click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
-accept Destiny Unfulfilled##44496 |goto Dreadscar Rift/0 53.17,32.63
+accept Destiny Unfulfilled##44481 |goto Dreadscar Rift/0 53.17,32.63 |only if achieved(697)
+accept Destiny Unfulfilled##44496 |goto Dreadscar Rift/0 53.17,32.63 |only if not achieved(697)
 |tip You will need Artifact Knowledge Rank 5 in order to accept this.
 |only Warlock
 step
 Use the Call to Xe'ra ability
 |tip It appears as a button on the screen.
-Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44496
+Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44481 |only if achieved(697)
+Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44496 |only if not achieved(697)
 |only Warlock
 step
 Watch the dialogue
-Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44496
+Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44481 |only if achieved(697)
+Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Warlock
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44496
+Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Warlock
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44496
+Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Warlock
 step
 Use the Metamorphosis ability
 |tip It's on your action bar.
-Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44496
+Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Warlock
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44496
+Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Warlock
 step
 kill Maiev Shadowsong##112867
 |tip She will defeat you.
-Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44496
-Experience True Betrayal |q 44496/1 |goto 52.70,71.25
+Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44496 |only if not achieved(697)
+Experience True Betrayal |q 44481/1 |goto 52.70,71.25 |only if achieved(697)
+Experience True Betrayal |q 44496/1 |goto 52.70,71.25 |only if not achieved(697)
 |only Warlock
 step
 click Light's Heart
-turnin Destiny Unfulfilled##44496 |goto Dreadscar Rift/0 53.17,32.63
+turnin Destiny Unfulfilled##44481 |goto Dreadscar Rift/0 53.17,32.63 |only if achieved(697)
+turnin Destiny Unfulfilled##44496 |goto Dreadscar Rift/0 53.17,32.63 |only if not achieved(697)
 |only Warlock
 step
 click Light's Heart
@@ -26581,46 +26661,56 @@ step
 click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
-accept Destiny Unfulfilled##44496 |goto The Wandering Isle L/0 51.78,48.13
+accept Destiny Unfulfilled##44481 |goto The Wandering Isle L/0 51.78,48.13 |only if not achieved(697)
+accept Destiny Unfulfilled##44496 |goto The Wandering Isle L/0 51.78,48.13 |only if achieved(697)
 |only Monk
 step
 Use the Call to Xe'ra ability
 |tip It appears as a button on the screen.
-Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44496
+Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44481 |only if not achieved(697)
+Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44496 |only if achieved(697)
 |only Monk
 step
 Watch the dialogue
-Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44496
+Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44481 |only if not achieved(697)
+Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44496 |only if achieved(697)
 |only Monk
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44496
+Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44481 |only if not achieved(697)
+Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44496 |only if achieved(697)
 |only Monk
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44496
+Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44481 |only if not achieved(697)
+Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44496 |only if achieved(697)
 |only Monk
 step
 Use the Metamorphosis ability
 |tip It's on your action bar.
-Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44496
+Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44481 |only if not achieved(697)
+Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44496 |only if achieved(697)
 |only Monk
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44496
+Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44481 |only if not achieved(697)
+Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44496 |only if achieved(697)
 |only Monk
 step
 kill Maiev Shadowsong##112867
 |tip She will defeat you.
-Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44496
-Experience True Betrayal |q 44496/1 |goto 52.70,71.25
+Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44481 |only if not achieved(697)
+Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44496 |only if achieved(697)
+Experience True Betrayal |q 44481/1 |goto 52.70,71.25 |only if not achieved(697)
+Experience True Betrayal |q 44496/1 |goto 52.70,71.25 |only if achieved(697)
 |only Monk
 step
 click Light's Heart
-turnin Destiny Unfulfilled##44496 |goto The Wandering Isle L/0 51.78,48.13
+turnin Destiny Unfulfilled##44481 |goto The Wandering Isle L/0 51.78,48.13 |only if not achieved(697)
+turnin Destiny Unfulfilled##44496 |goto The Wandering Isle L/0 51.78,48.13 |only if achieved(697)
 |only Monk
 step
 click Light's Heart
@@ -27574,47 +27664,57 @@ click Light's Heart
 |tip Inside the building.
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
-accept Destiny Unfulfilled##44496 |goto The Dreamgrove/0 60.06,52.14
+accept Destiny Unfulfilled##44481 |goto The Dreamgrove/0 60.06,52.14 |only if achieved(697)
+accept Destiny Unfulfilled##44496 |goto The Dreamgrove/0 60.06,52.14 |only if not achieved(697)
 |only Druid
 step
 Use the Call to Xe'ra ability
 |tip It appears as a button on the screen.
-Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44496
+Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44481 |only if achieved(697)
+Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44496 |only if not achieved(697)
 |only Druid
 step
 Watch the dialogue
-Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44496
+Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44481 |only if achieved(697)
+Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Druid
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44496
+Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Druid
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44496
+Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Druid
 step
 Use the Metamorphosis ability
 |tip It's on your action bar.
-Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44496
+Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Druid
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44496
+Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only Druid
 step
 kill Maiev Shadowsong##112867
 |tip She will defeat you.
-Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44496
-Experience True Betrayal |q 44496/1 |goto 52.70,71.25
+Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44496 |only if not achieved(697)
+Experience True Betrayal |q 44481/1 |goto 52.70,71.25 |only if achieved(697)
+Experience True Betrayal |q 44496/1 |goto 52.70,71.25 |only if not achieved(697)
 |only Druid
 step
 click Light's Heart
 |tip Inside the building.
-turnin Destiny Unfulfilled##44496 |goto The Dreamgrove/0 60.06,52.14
+turnin Destiny Unfulfilled##44481 |goto The Dreamgrove/0 60.06,52.14 |only if achieved(697)
+turnin Destiny Unfulfilled##44496 |goto The Dreamgrove/0 60.06,52.14 |only if not achieved(697)
 |only Druid
 step
 click Light's Heart
@@ -28476,46 +28576,56 @@ step
 click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
-accept Destiny Unfulfilled##44496 |goto Broken Shore/1 54.24,74.13
+accept Destiny Unfulfilled##44481 |goto Broken Shore/1 54.24,74.13 |only if achieved(697)
+accept Destiny Unfulfilled##44496 |goto Broken Shore/1 54.24,74.13 |only if not achieved(697)
 |only DeathKnight
 step
 Use the Call to Xe'ra ability
 |tip It appears as a button on the screen.
-Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44496
+Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44481 |only if achieved(697)
+Begin the Destiny Unfulfilled Scenario |scenariostart |goto Shadowmoon Valley/0 73.07,44.07 |q 44496 |only if not achieved(697)
 |only DeathKnight
 step
 Watch the dialogue
-Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44496
+Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44481 |only if achieved(697)
+Confront Akama |scenariostage 1 |goto Black Temple L/1 52.70,71.25 |q 44496 |only if not achieved(697)
 |only DeathKnight
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44496
+Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Survive the Assault |scenariostage 2 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only DeathKnight
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44496
+Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Make Sure the Flames of Azzinoth Survive |scenariostage 3 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only DeathKnight
 step
 Use the Metamorphosis ability
 |tip It's on your action bar.
-Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44496
+Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Use Metamorphosis |scenariostage 4 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only DeathKnight
 step
 Kill the enemies that attack
 |tip Use the abilities on your action bar.
-Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44496
+Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Annihilate the Rest of Your Enemies |scenariostage 5 |goto 52.70,71.25 |q 44496 |only if not achieved(697)
 |only DeathKnight
 step
 kill Maiev Shadowsong##112867
 |tip She will defeat you.
-Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44496
-Experience True Betrayal |q 44496/1 |goto 52.70,71.25
+Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44481 |only if achieved(697)
+Defeat Maiev |scenarioend |goto 52.70,71.25 |q 44496 |only if not achieved(697)
+Experience True Betrayal |q 44481/1 |goto 52.70,71.25 |only if achieved(697)
+Experience True Betrayal |q 44496/1 |goto 52.70,71.25 |only if not achieved(697)
 |only DeathKnight
 step
 click Light's Heart
-turnin Destiny Unfulfilled##44496 |goto Broken Shore/1 54.24,74.13
+turnin Destiny Unfulfilled##44481 |goto Broken Shore/1 54.24,74.13 |only if achieved(697)
+turnin Destiny Unfulfilled##44496 |goto Broken Shore/1 54.24,74.13 |only if not achieved(697)
 |only DeathKnight
 step
 click Light's Heart
@@ -28785,6 +28895,21 @@ talk Maiev Shadowsong##116576
 turnin Defending Broken Isles##46247 |goto 44.54,63.52
 |only DeathKnight
 step
+talk Lord Illidan Stormrage##117873
+accept Mark of the Sentinax##47139 |goto 44.79,63.17
+|only DeathKnight
+step
+collect 100 Mark of the Sentinax##147582 |q 47139/1 |goto 50.56,43.35
+|tip These are collected from Sentinax Portals.
+|tip Sentinax Beacons summon portals which spawn mobs that you can kill for Marks.
+|tip Setninax Beacons drop from mobs in Broken Shore.
+|tip Open your map and look for the Sentinax icon. Use your beacons below the ship.
+|only DeathKnight
+step
+talk Lord Illidan Stormrage##117873
+turnin Mark of the Sentinax##47139 |goto 44.79,63.17
+|only DeathKnight
+step
 More content coming soon!
 confirm
 |only DeathKnight
@@ -28960,6 +29085,21 @@ Complete a Legion Assault |q 46247/1 |goto 44.54,63.52
 step
 talk Maiev Shadowsong##116576
 turnin Defending Broken Isles##46247 |goto 44.54,63.52
+|only DemonHunter
+step
+talk Lord Illidan Stormrage##117873
+accept Mark of the Sentinax##47139 |goto 44.79,63.17
+|only DemonHunter
+step
+collect 100 Mark of the Sentinax##147582 |q 47139/1 |goto 50.56,43.35
+|tip These are collected from Sentinax Portals.
+|tip Sentinax Beacons summon portals which spawn mobs that you can kill for Marks.
+|tip Setninax Beacons drop from mobs in Broken Shore.
+|tip Open your map and look for the Sentinax icon. Use your beacons below the ship.
+|only DemonHunter
+step
+talk Lord Illidan Stormrage##117873
+turnin Mark of the Sentinax##47139 |goto 44.79,63.17
 |only DemonHunter
 step
 More content coming soon!
@@ -29346,6 +29486,21 @@ talk Maiev Shadowsong##116576
 turnin Defending Broken Isles##46247 |goto 44.54,63.52
 |only Hunter
 step
+talk Lord Illidan Stormrage##117873
+accept Mark of the Sentinax##47139 |goto 44.79,63.17
+|only Hunter
+step
+collect 100 Mark of the Sentinax##147582 |q 47139/1 |goto 50.56,43.35
+|tip These are collected from Sentinax Portals.
+|tip Sentinax Beacons summon portals which spawn mobs that you can kill for Marks.
+|tip Setninax Beacons drop from mobs in Broken Shore.
+|tip Open your map and look for the Sentinax icon. Use your beacons below the ship.
+|only Hunter
+step
+talk Lord Illidan Stormrage##117873
+turnin Mark of the Sentinax##47139 |goto 44.79,63.17
+|only Hunter
+step
 More content coming soon!
 confirm
 |only Hunter
@@ -29512,6 +29667,33 @@ talk Archmage Khadgar##116302
 turnin Altar of the Aegis##46244 |goto 44.73,63.27
 |only Mage
 step
+talk Archmage Khadgar##116302
+accept Shard Times##46251 |goto 44.73,63.26
+|only Mage
+step
+collect 2500 Nethershard##1226 |q 46251/1
+|tip These can be obtained through killing enemies or collecting chests on the Broken Shore.
+|tip These can also be obtained through completing invasions.
+|only Mage
+step
+talk Archmage Khadgar##116302
+turnin Shard Times##46251 |goto 44.73,63.26
+|only Mage
+step
+talk Lord Illidan Stormrage##117873
+accept Mark of the Sentinax##47139 |goto Broken Shore/0 44.76,63.18
+|only Mage
+step
+You must go under the Sentinax that pats around the Broken Shore
+|tip Summon portals and defeat the enemies that come out.
+collect 100 Mark of the Sentinax##147582 |q 47139/1
+|tip Boss summons give quite alot of marks, use these beacons as soon as you get them.
+|only Mage
+step
+talk Lord Illidan Stormrage##117873
+turnin Mark of the Sentinax##47139 |goto Broken Shore/0 44.76,63.18
+|only Mage
+step
 More content coming soon!
 confirm
 |only Mage
@@ -29668,6 +29850,62 @@ talk Commander Chambers##120183
 accept The Nether Disruptor##46774 |goto 44.54,63.16
 |only Monk
 step
+talk Archmage Khadgar##116302
+accept Altar of the Aegis##46244 |goto 44.73,63.27
+|only Monk
+step
+Press _I_ and queue for Cathedral of Light or enter the dungeon with your group |goto 64.75,16.65
+kill Mephistroth##120793
+|tip Mephistroth is the final boss of the Cathedral of Light instance.
+Defeat Mephistroth |q 46244/1
+|only Monk
+step
+talk Archmage Khadgar##116302
+turnin Altar of the Aegis##46244 |goto 44.73,63.27
+|only Monk
+step
+talk Maiev Shadowsong##116576
+accept Defending Broken Isles##46247 |goto 44.54,63.52
+|only Monk
+step
+Complete a Legion Assault |q 46247/1 |goto 44.54,63.52
+|only Monk
+step
+talk Maiev Shadowsong##116576
+turnin Defending Broken Isles##46247 |goto 44.54,63.52
+|only Monk
+step
+talk Commander Chambers##120183
+accept The Nether Disruptor##46774 |goto 44.54,63.16
+|only Monk
+step
+talk Archmage Khadgar##116302
+accept Shard Times##46251 |goto 44.74,63.27
+|tip If you have the quest Altar of the Aegis, you will not be able to accept this quest.
+|only Monk
+step
+Collect #2500# Nethershards |q 46251/1 |goto 44.74,63.27
+|tip Nethershards can be obtained by looting rares, treasures, and completing world quests.
+|only Monk
+step
+talk Archmage Khadgar##116302
+turnin Shard Times##46251 |goto 44.74,63.27
+|only Monk
+step
+talk Lord Illidan Stormrage##117873
+accept Mark of the Sentinax##47139 |goto Broken Shore/0 44.79,63.19
+|only Monk
+step
+Locate The Sentinax in The Broken Shore and kill enemies that spawn from the portals in the area
+|tip It will be a large green icon on the World Map.
+Collect #100# mark of the Sentinax |q 47139/1
+|only Monk
+step
+talk Lord Illidan Stormrage##117873
+turnin Mark of the Sentinax##47139 |goto 44.79,63.19
+|only Monk
+step
+More coming soon!
 confirm
 |only Monk
 step
@@ -29993,6 +30231,21 @@ talk Maiev Shadowsong##116576
 turnin Defending Broken Isles##46247 |goto 44.54,63.52
 |only Priest
 step
+talk Lord Illidan Stormrage##117873
+accept Mark of the Sentinax##47139 |goto 44.79,63.17
+|only Priest
+step
+collect 100 Mark of the Sentinax##147582 |q 47139/1 |goto 50.56,43.35
+|tip These are collected from Sentinax Portals.
+|tip Sentinax Beacons summon portals which spawn mobs that you can kill for Marks.
+|tip Setninax Beacons drop from mobs in Broken Shore.
+|tip Open your map and look for the Sentinax icon. Use your beacons below the ship.
+|only Priest
+step
+talk Lord Illidan Stormrage##117873
+turnin Mark of the Sentinax##47139 |goto 44.79,63.17
+|only Priest
+step
 More content coming soon!
 confirm
 |only Priest
@@ -30159,6 +30412,33 @@ talk Archmage Khadgar##116302
 turnin Altar of the Aegis##46244 |goto 44.73,63.27
 |only Rogue
 step
+talk Archmage Khadgar##116302
+accept Shard Times##46251 |goto 44.73,63.26
+|only Rogue
+step
+collect 2500 Nethershard##1226 |q 46251/1
+|tip These can be obtained through killing enemies or collecting chests on the Broken Shore.
+|tip These can also be obtained through completing invasions.
+|only Rogue
+step
+talk Archmage Khadgar##116302
+turnin Shard Times##46251 |goto 44.73,63.26
+|only Rogue
+step
+talk Lord Illidan Stormrage##117873
+accept Mark of the Sentinax##47139 |goto Broken Shore/0 44.76,63.18
+|only Rogue
+step
+You must go under the Sentinax that pats around the Broken Shore
+|tip Summon portals and defeat the enemies that come out.
+collect 100 Mark of the Sentinax##147582 |q 47139/1
+|tip Boss summons give quite alot of marks, use these beacons as soon as you get them.
+|only Rogue
+step
+talk Lord Illidan Stormrage##117873
+turnin Mark of the Sentinax##47139 |goto Broken Shore/0 44.76,63.18
+|only Rogue
+step
 More content coming soon!
 confirm
 |only Rogue
@@ -30323,6 +30603,33 @@ Defeat Mephistroth |q 46244/1
 step
 talk Archmage Khadgar##116302
 turnin Altar of the Aegis##46244 |goto 44.73,63.27
+|only Shaman
+step
+talk Archmage Khadgar##116302
+accept Shard Times##46251 |goto 44.73,63.26
+|only Shaman
+step
+collect 2500 Nethershard##1226 |q 46251/1
+|tip These can be obtained through killing enemies or collecting chests on the Broken Shore.
+|tip These can also be obtained through completing invasions.
+|only Shaman
+step
+talk Archmage Khadgar##116302
+turnin Shard Times##46251 |goto 44.73,63.26
+|only Shaman
+step
+talk Lord Illidan Stormrage##117873
+accept Mark of the Sentinax##47139 |goto Broken Shore/0 44.76,63.18
+|only Shaman
+step
+You must go under the Sentinax that pats around the Broken Shore
+|tip Summon portals and defeat the enemies that come out.
+collect 100 Mark of the Sentinax##147582 |q 47139/1
+|tip Boss summons give quite alot of marks, use these beacons as soon as you get them.
+|only Shaman
+step
+talk Lord Illidan Stormrage##117873
+turnin Mark of the Sentinax##47139 |goto Broken Shore/0 44.76,63.18
 |only Shaman
 step
 More content coming soon!
@@ -30500,6 +30807,21 @@ Complete a Legion Assault |q 46247/1 |goto 44.54,63.52
 step
 talk Maiev Shadowsong##116576
 turnin Defending Broken Isles##46247 |goto 44.54,63.52
+|only Warlock
+step
+talk Lord Illidan Stormrage##117873
+accept Mark of the Sentinax##47139 |goto 44.79,63.17
+|only Warlock
+step
+collect 100 Mark of the Sentinax##147582 |q 47139/1 |goto 50.56,43.35
+|tip These are collected from Sentinax Portals.
+|tip Sentinax Beacons summon portals which spawn mobs that you can kill for Marks.
+|tip Setninax Beacons drop from mobs in Broken Shore.
+|tip Open your map and look for the Sentinax icon. Use your beacons below the ship.
+|only Warlock
+step
+talk Lord Illidan Stormrage##117873
+turnin Mark of the Sentinax##47139 |goto 44.79,63.17
 |only Warlock
 step
 More content coming soon!
@@ -31527,7 +31849,7 @@ accept Making Preparations##45240 |goto Broken Shore/1 26.94,28.86
 |only DeathKnight
 step
 click Death Gate to Pit of Saron |goto 24.22,27.67
-Take the Death Gate near Highlord Darion Mograine |goto Pit of Saron DK/0 60.83,19.77 < 50 |c |noway
+Take the Death Gate near Highlord Darion Mograine |goto Pit of Saron DK/0 60.83,19.77 < 50 |c |noway |q 45240
 |only DeathKnight
 step
 Follow the path |goto 56.00,18.08 < 20 |only if walking
@@ -31662,6 +31984,18 @@ turnin Further Advancement##46789 |goto 49.66,51.28
 step
 talk Maiev Shadowsong##116576
 turnin Champions of Legionfall##47137 |goto Broken Shore/0 44.54,63.52
+|only DeathKnight
+step
+talk Archmage Khadgar##116302
+accept Shard Times##46251 |goto 44.74,63.27
+|only DeathKnight
+step
+Collect #2500# Nethershards |q 46251/1 |goto 44.74,63.27
+|tip Nethershards can be obtained by looting rares, treasures, and completing world quests.
+|only DeathKnight
+step
+talk Archmage Khadgar##116302
+turnin Shard Times##46251 |goto 44.74,63.27
 |only DeathKnight
 step
 More content coming soon!
@@ -32106,6 +32440,18 @@ turnin Further Advancement##46780 |goto 53.53,46.25
 step
 talk Maiev Shadowsong##116576
 turnin Champions of Legionfall##47137 |goto Broken Shore/0 44.54,63.52
+|only DemonHunter
+step
+talk Archmage Khadgar##116302
+accept Shard Times##46251 |goto 44.74,63.27
+|only DemonHunter
+step
+Collect #2500# Nethershards |q 46251/1 |goto 44.74,63.27
+|tip Nethershards can be obtained by looting rares, treasures, and completing world quests.
+|only DemonHunter
+step
+talk Archmage Khadgar##116302
+turnin Shard Times##46251 |goto 44.74,63.27
 |only DemonHunter
 step
 More content coming soon!
@@ -32733,78 +33079,40 @@ accept Champion: Thisalee Crow##46044 |goto The Dreamgrove/0 44.48,51.51
 |only Druid
 step
 Recruit a Legionfall Champion |q 47137/1
+|only Druid
 step
 talk Maiev Shadowsong##116576
 turnin Champions of Legionfall##47137 |goto Broken Shore/0 44.54,63.52
 |only Druid
 step
-talk Grovewarden Proudhorn##118105
-accept Talon's Call##46317 |goto Broken Shore/0 43.81,62.97
+talk Archmage Khadgar##116302
+accept Shard Times##46251 |goto Broken Shore/0 44.73,63.27
 |only Druid
 step
-talk Thisalee Crow##106299
-turnin Talon's Call##46317 |goto The Dreamgrove/0 44.45,51.47
-accept Defense of Aviana##46318 |goto The Dreamgrove/0 44.45,51.47
+Collect 2500 Nethershards |q 46251/1
+|tip You can do this by completing World Quests and killing Rares in the Broken Shore.
+|tip You will get 2499 Nethershards back.
 |only Druid
 step
-Help Defend the Shrine of Aviana |scenariostart |q 46318 |goto Mount Hyjal/0 41.10,42.82
+talk Archmage Khadgar##116302
+turnin Shard Times##46251 |goto Broken Shore/0 44.73,63.27
 |only Druid
 step
-talk Skylord Shadegrove
-Ask him _"How can we help?"_
-Meet Skylord Shadegrove |scenariostage 1 |q 46318 |goto Mount Hyjal/0 42.74,45.67
+talk Lord Illidan Stormrage##117873
+accept Mark of the Sentinax##47139 |goto Broken Shore/0 44.78,63.21
 |only Druid
 step
-Kill enemies in this area
-Kill Demons Attacking the Shrine |scenariostage 2 |q 46318 |goto Mount Hyjal/0 41.23,43.79
+Collect #100# Marks of the Sentinax |q 47139/1
+|tip Do this by killing empowered portal Rares and elite enemies.
+|tip Rare demonic lieutenants seem to be the most efficient way to complete this.
 |only Druid
 step
-Return to the Shrine |scenariostage 3 |q 46318 |goto Mount Hyjal/0 42.32,45.13
+talk Lord Illidan Stormrage##117873
+turnin Mark of the Sentinax##47139 |goto Broken Shore/0 44.78,63.21
 |only Druid
 step
-Uncover the Traitor |scenariostage 4 |q 46318 |goto Mount Hyjal/0 42.68,45.30
-|only Druid
-step
-Go up the path |goto The Dreamgrove/0 33.91,21.50 < 10 |only if walking
-talk Thisalee Crow##106299
-turnin Defense of Aviana##46318 |goto The Dreamgrove/0 31.07,4.75
-accept You Can't Take the Sky From Me##46319 |goto The Dreamgrove/0 31.07,4.75
-|only Druid
-step
-Follow the path |goto Azsuna/0 41.00,35.19 < 10 |only if walking
-Go up the path |goto 39.17,32.74 < 10 |only if walking
-Continue up the mountain |goto 36.89,31.21 < 10 |only if walking
-Follow the path |goto 39.09,26.70 < 10 |only if walking
-Retrieve the Idol of Aviana |scenariostart |q 46319 |goto 41.24,24.77
-|only Druid
-step
-Meet Up With Thisalee Crow |scenariostage 1 |q 46319 |goto 41.24,24.77
-|only Druid
-step
-_Use Prowl_
-Follow Thisalee while _stealthed_
-Follow the path |goto 41.56,22.67 < 6 |walk
-Follow the path |goto 42.70,23.04 < 6 |walk
-Infiltrate the Legion Encampment |scenariostage 2 |q 46319 |goto 43.09,22.93
-|only Druid
-step
-Scout Infazzar |scenariostage 3 |q 46319 |goto 43.09,22.93
-|only Druid
-step
-Kill the enemies that attack
-Fight Off Attacking Demons and Harpies |scenariostage 4 |q 46319 |goto 43.09,22.93
-|only Druid
-step
-click Lunarwing Owl
-Follow Infazzar to His Ship |scenariostage 5 |q 46319 |goto 42.78,24.79
-|only Druid
-step
-kill Infazzar the Shade |scenariostage 6 |q 46319 |goto Azsuna/0 39.02,28.69
-|only Druid
-step
-Go up the path |goto The Dreamgrove/0 33.91,21.50 < 10 |only if walking
-click Corrupted Idol of Aviana##120947
-turnin You Can't Take the Sky From Me##46319 |goto The Dreamgrove/0 29.97,4.27
+More content coming soon!
+|confirm
 |only Druid
 step
 talk Archmage Khadgar##116302
@@ -33313,7 +33621,6 @@ step
 talk Maiev Shadowsong##116576
 turnin Champions of Legionfall##47137 |goto Broken Shore/0 44.54,63.52
 |only Hunter
-|only Hunter
 step
 talk Tactician Tinderfell##103023
 accept Further Advancement##46783 |goto Trueshot Lodge/0 42.80,46.92
@@ -33325,6 +33632,18 @@ Talk to Survivalist Bahn |q 46783/1 |goto 58.66,51.16
 step
 talk Tactician Tinderfell##103023
 turnin Further Advancement##46783 |goto 42.80,46.92
+|only Hunter
+step
+talk Archmage Khadgar##116302
+accept Shard Times##46251 |goto Broken Shore/0 44.74,63.27
+|only Hunter
+step
+Collect #2500# Nethershards |q 46251/1 |goto 44.74,63.27
+|tip Nethershards can be obtained by looting rares, treasures, and completing world quests.
+|only Hunter
+step
+talk Archmage Khadgar##116302
+turnin Shard Times##46251 |goto 44.74,63.27
 |only Hunter
 step
 More content coming soon!
@@ -33969,6 +34288,84 @@ talk Maiev Shadowsong##116576
 turnin Champions of Legionfall##47137 |goto Broken Shore/0 44.56,63.53
 |only Mage
 step
+talk The Great Akazamzarak##103092
+accept Finders Keepers##45615 |goto Hall of the Guardian/1 81.38,59.91
+|only Mage
+step
+click Arcane Dust
+Clean the First Pile of Arcane Dust |q 45615/1 |count 1 |goto 78.74,66.14
+|only Mage
+step
+click Arcane Dust
+Clean the First Pile of Arcane Dust |q 45615/1 |count 2 |goto 75.83,62.51
+|only Mage
+step
+click Arcane Dust
+Clean the First Pile of Arcane Dust |q 45615/1 |count 3 |goto 72.08,59.07
+|only Mage
+step
+click Arcane Dust
+Clean the First Pile of Arcane Dust |q 45615/1 |count 4 |goto 89.04,51.26
+|only Mage
+step
+click Arcane Dust
+Clean the First Pile of Arcane Dust |q 45615/1 |count 5 |goto 73.75,30.70
+|only Mage
+step
+click Arcane Dust
+Clean the First Pile of Arcane Dust |q 45615/1 |count 6 |goto 59.46,40.14
+|only Mage
+step
+click Arcane Dust
+Clean the First Pile of Arcane Dust |q 45615/1 |count 7 |goto 45.84,31.81
+|only Mage
+step
+click Arcane Dust
+Clean the First Pile of Arcane Dust |q 45615/1 |count 8 |goto 31.74,37.86
+|only Mage
+step
+talk The Great Akazamzarak##103092
+turnin Finders Keepers##45615 |goto Hall of the Guardian/1 81.38,59.91
+accept Servant to No One##45630 |goto Hall of the Guardian/1 81.38,59.91
+|only Mage
+step
+Target any player in Dalaran and use your extra action button
+Test Servants |q 45630/1 |goto Dalaran L/10 68.17,44.01
+|only Mage
+step
+talk The Great Akazamzarak##103092
+turnin Servant to No One##45630 |goto Hall of the Guardian/1 81.38,59.91
+accept Nothing Up My Sleeve##46722 |goto Hall of the Guardian/1 81.38,59.91
+|only Mage
+step
+Watch the Dialgoue
+click Akazamzarak's Hat
+Perform Akazamzarak's trick |q 46722/1 |goto 81.38,59.91
+|only Mage
+step
+talk The Great Akazamzarak##103092
+turnin Nothing Up My Sleeve##46722 |goto Hall of the Guardian/1 81.38,59.91
+accept Down the Rabbit Hole##46723 |goto Hall of the Guardian/1 81.38,59.91
+|only Mage
+step
+click Akazamzarak's Hat |goto 81.38,59.91
+Enter Akazamzarak's Hat |scenariostart |q 46723
+|only Mage
+step
+Run toward the Hungry Wolf on the other side of the room |scenariogoal 1/35881 |q 46723
+|only Mage
+step
+kill Hungry Wolf##120185 |scenariogoal 2/35882 |q 46723
+|only Mage
+step
+Leave Akazamzarak's Hat |scenariogoal 3/35883 |q 46723
+|only Mage
+step
+talk The Great Akazamzarak##103092
+turnin Down the Rabbit Hole##46723 |goto Hall of the Guardian/1 81.38,59.91
+accept Champion: The Great Akazamzarak##46724 |instant |goto Hall of the Guardian/1 81.38,59.91
+|only Mage
+step
 More content coming soon!
 confirm
 |only Mage
@@ -34513,6 +34910,18 @@ accept Champion: Almai##45790 |goto 51.59,48.49
 step
 talk Maiev Shadowsong##116576
 turnin Champions of Legionfall##47137 |goto 44.55,63.53 |goto Broken Shore/0 44.55,63.53
+|only Monk
+step
+talk Master Hsu##99179
+accept Further Advancement##46785 |goto The Wandering Isle L/0 52.77,59.76
+|only Monk
+step
+talk Number Nine Jia##98939
+Talk to Number Nine Jia |q 46785/1 |goto 53.03,59.78
+|only Monk
+step
+talk Master Hsu##99179
+turnin Further Advancement##46785 |goto 52.77,59.78
 |only Monk
 step
 More content to come soon!
@@ -35643,6 +36052,18 @@ turnin Further Advancement##46788 |goto 51.42,45.94
 step
 talk Maiev Shadowsong##116576
 turnin Champions of Legionfall##47137 |goto Broken Shore/0 44.54,63.52
+|only Priest
+step
+talk Archmage Khadgar##116302
+accept Shard Times##46251 |goto 44.74,63.27
+|only Priest
+step
+Collect #2500# Nethershards |q 46251/1 |goto 44.74,63.27
+|tip Nethershards can be obtained by looting rares, treasures, and completing world quests.
+|only Priest
+step
+talk Archmage Khadgar##116302
+turnin Shard Times##46251 |goto 44.74,63.27
 |only Priest
 step
 More content coming soon!
@@ -37480,6 +37901,18 @@ talk Maiev Shadowsong##116576
 turnin Champions of Legionfall##47137 |goto Broken Shore/0 44.54,63.52
 |only Warlock
 step
+talk Archmage Khadgar##116302
+accept Shard Times##46251 |goto 44.74,63.27
+|only Warlock
+step
+Collect #2500# Nethershards |q 46251/1 |goto 44.74,63.27
+|tip Nethershards can be obtained by looting rares, treasures, and completing world quests.
+|only Warlock
+step
+talk Archmage Khadgar##116302
+turnin Shard Times##46251 |goto 44.74,63.27
+|only Warlock
+step
 More content coming soon!
 confirm
 |only Warlock
@@ -38015,60 +38448,34 @@ talk Maiev Shadowsong##116576
 turnin Champions of Legionfall##47137 |goto Broken Shore/0 44.54,63.52
 |only Warrior
 step
-talk Valarjar Warsinger##119527
-accept A Godly Invitation##46208 |goto 43.59,63.08
+talk Archmage Khadgar##116302
+accept Shard Times##46251 |goto Broken Shore/0 44.73,63.27
 |only Warrior
 step
-talk Odyn##96469
-turnin A Godly Invitation##46208 |goto Skyhold/1 58.40,84.56
-accept The Trial of Rage##46207 |goto Skyhold/1 58.40,84.56
+Collect 2500 Nethershards |q 46251/1
+|tip You can do this by completing World Quests and killing Rares in the Broken Shore.
+|tip You will get 2499 Nethershards back.
 |only Warrior
 step
-talk Odyn##96469
-Tell him _"I'm ready to begin the trial, Odyn."_
-Begin the Trial of Rage Scenario |scenariostart |q 46207 |goto 58.40,84.56
+talk Archmage Khadgar##116302
+turnin Shard Times##46251 |goto Broken Shore/0 44.73,63.27
 |only Warrior
 step
-talk Damrul the Stronk##118762
-Tell him _"I challenge you to fight!"_
-Challenge Damrul the Stronk |scenariogoal 1/35413 |q 46207 |goto Halls of Valor/1 52.30,87.07
+talk Lord Illidan Stormrage##117873
+accept Mark of the Sentinax##47139 |goto Broken Shore/0 44.78,63.21
 |only Warrior
 step
-kill Damrul the Stronk##118762
-Defeat Damrul the Stronk |scenariogoal 1/35403 |q 46207 |goto Halls of Valor/1 50.32,85.82
+Collect #100# Marks of the Sentinax |q 47139/1
+|tip Do this by killing empowered portal Rares and elite enemies.
+|tip Rare demonic lieutenants seem to be the most efficient way to complete this.
 |only Warrior
 step
-talk Omanawkwa Steelhoof##118775
-Tell him _"I challenge you to fight!"_
-Challenge Omanawkwa Steelhoof |scenariogoal 2/35414 |q 46207 |goto Halls of Valor/1 50.47,87.13
+talk Lord Illidan Stormrage##117873
+turnin Mark of the Sentinax##47139 |goto Broken Shore/0 44.78,63.21
 |only Warrior
 step
-kill Omanawkwa Steelhoof##118775
-Defeat Omanawkwa Steelhoof |scenariogoal 2/35410 |q 46207 |goto 50.47,85.82
-|only Warrior
-step
-talk Asrea Moonblade##118772
-Tell her _"I challenge you to fight!"_
-Challenge Asrea Moonblade |scenariogoal 3/35415 |q 46207 |goto Halls of Valor/1 51.39,87.03
-|only Warrior
-step
-kill Asrea Moonblade##118772
-Defeat Asrea Moonblade |scenariogoal 3/35411 |q 46207 |goto 50.47,85.82
-|only Warrior
-step
-Step onto the Rune |scenariogoal 4/36226 |q 46207 |goto Halls of Valor/1 52.49,87.95
-|only Warrior
-step
-kill Asprirant Thyri##118855
-Defeat Asprirant Thyri |scenariogoal 4/35412 |q 46207 |goto Halls of Valor/1 50.95,85.80
-|only Warrior
-step
-click Skyhold Portal
-Return to Skyhold |q 46207/2 |goto Halls of Valor/1 51.41,89.43
-|only Warrior
-step
-talk Odyn##96469
-turnin The Trial of Rage##46207 |goto Skyhold/1 58.40,84.56
+More content coming soon!
+|confirm
 |only Warrior
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore\\Excavator Karla Quests",{
@@ -38201,4 +38608,87 @@ talk Excavator Karla##119886
 turnin The Motherlode##46666 |goto 45.04,52.30
 |tip Don't forget to open one of the caches for a reward.
 ]])
-ZGV.BETAEND()
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Legion (100-110)\\Broken Shore\\Anduin Wrynn Questline",{
+author="support@zygorguides.com",
+startlevel=110.0,
+},[[
+step
+click Battered Trinket
+accept A Found Memento##46268 |goto Broken Shore/0 53.34,80.46
+step
+Enter Stormwind Keep |goto Stormwind City/0 80.44,38.10
+talk Anduin Wrynn##107574
+turnin A Found Memento##46268 |goto 85.77,31.72
+step
+talk Captain Shwayder##120281
+accept Summons to the Keep##46272 |goto Broken Shore/0 41.63,59.61
+|tip You may have to wait 1 daily reset after completing the previous quest before you are able to continue.
+step
+talk Genn Greymane##119338
+turnin Summons to the Keep##46272 |goto Stormwind City/0 85.85,31.96
+accept Consoling the King##46274 |goto Stormwind City/0 85.85,31.96
+step
+Enter the building |goto 53.07,51.28 < 5 |walk
+talk Anduin Wrynn##119357
+turnin Consoling the King##46274 |goto 49.76,45.03
+accept A Kingdom's Heart##46275 |goto 49.76,45.03
+step
+talk Anduin Wrynn##119357
+Tell him _"I'll accompany you to Lion's Rest."_
+Speak with Anduin |q 46275/1 |goto 49.76,45.03
+step
+Follow Anduin as he walks to Lion's Rest
+|tip He will periodically stop, just watch the dialogue until he starts moving again.
+Escort Anduin to Lion's Rest |q 46275/2 |goto 40.19,63.97
+step
+Enter Stormwind Keep |goto 80.64,37.85 < 15 |walk
+talk Anduin Wrynn##120264
+Return to Stormwind Keep |q 46275/3 |goto 86.08,34.31
+step
+Watch the Dialogue
+Hear Anduin's advisors |q 46275/4 |goto 86.22,34.94
+step
+talk Anduin Wrynn##120264
+turnin A Kingdom's Heart##46275 |goto 86.08,34.31
+accept A Personal Message##47202 |goto 86.08,34.31
+step
+talk Prophet Velen##119340
+turnin A Personal Message##47202 |goto 86.51,35.89
+step
+talk Anduin Wrynn##121224
+accept A Walk to Remember##47097 |goto Broken Shore/0 41.45,59.37
+step
+talk Anduin Wrynn##121224
+Tell him _"I am ready."_
+Speak with King Anduin |q 47097/1 |goto 41.45,59.37
+step
+Follow King Anduin down to the Hijacked Portal
+Reach the Hijacked Portal |q 47097/2 |goto 49.07,56.27
+step
+Follow the path |goto 51.15,54.11 < 25 |only if walking
+Follow the path |goto 51.73,50.52 < 20 |only if walking
+talk Anduin Wrynn##121226
+turnin A Walk to Remember##47097 |goto 52.62,48.42
+accept Lost Souls##47112 |goto 52.62,48.42
+step
+click Lost Soul##121283+
+Choose: _"Find your way into the Light, my friend..."_
+Release #10# Lost Souls |q 47112/1 |goto 51.49,43.83
+step
+talk Anduin Wrynn##121631
+Speak with Anduin |q 47112/2 |goto 53.68,43.70
+step
+Follow the path |goto 55.90,43.86 < 25 |only if walking
+Follow the path |goto 57.87,42.01 < 25 |only if walking
+Follow the path |goto 57.46,37.27 < 25 |only if walking
+Follow the path |goto 55.71,30.42 < 25 |only if walking
+Follow the path |goto 57.40,28.56 < 20 |only if walking
+talk Anduin Wrynn##121237
+turnin Lost Souls##47112 |goto 58.20,26.53
+accept The King's Path##46282 |goto 58.20,26.53
+step
+Escort King Anduin |q 46282/1 |goto 60.06,25.42
+step
+talk Anduin Wrynn##120288
+turnin The King's Path##46282 |goto 60.44,25.04
+]])

@@ -119,22 +119,21 @@ end
 
 -- Check race/class requirement and condition_visible
 function Step:AreRequirementsMet(case)
+	if self.beta and not ZGV.BETA then return false,"beta disabled" end
 	if self.requirement then
 		local raceclass=false
 		for i,v in pairs(self.requirement) do if ZGV:RaceClassMatch(v) then raceclass=true break end end
-		if not raceclass then return false end
+		if not raceclass then return false,"raceclass mismatch" end
 	end
 
 	if self.condition_visible then
 		ZGV.Parser.ConditionEnv._SetLocal(self.parentGuide,self,self.goals[1])
-		if not self.condition_visible() then return false end
+		if not self.condition_visible() then return false,"condition fail" end
 	end
 
-	if case=="focus" and self.is_sticky_only then return false end
+	if case=="focus" and self.is_sticky_only then return false,"sticky only" end
 
 	return true
-	-- wrong
-	--- wtf? why?
 end
 
 --- Run before the step is displayed. May be called periodically to update.

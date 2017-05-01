@@ -179,6 +179,22 @@ Game Completed |q 45069/1 |goto 46.97,53.80
 |tip More barrels will spawn, making the game more complex.
 |next "Court_Of_Farondis_WQ"
 step
+label quest-45203
+Follow the path |goto Azsuna/0 57.44,56.51 < 30 |only if walking
+Follow the path |goto 58.51,51.50 < 25 |only if walking
+Follow the path |goto 63.36,51.38 < 25 |only if walking
+accept Battle for the Ruins##45203 |goto Azsuna/0 65.67,49.00
+|tip You will accept this quest automatically.
+step
+kill Legion Brutallizer##116424+, Dreadflame Champion##116428+, Dreadflame Magus##116433
+Repel the Legion forces |q 45203/1 |goto 65.67,49.00
+step
+Follow the steps |goto 66.54,50.26 < 20 |only if walking
+Enter the building |goto 67.43,51.18 < 20 |walk
+kill Arinor the Portalmaster##116436
+Defeat Arinor the Portalmaster |q 45203/2 |goto 67.13,51.37
+|next "Court_Of_Farondis_WQ"
+step
 label quest-44894
 Drop down |goto Azsuna/0 39.78,7.47 < 30 |only if walking
 accept Bloodgazer Swarm!##44894 |goto 38.68,7.12
@@ -304,6 +320,19 @@ step
 click Charged Leystone Deposit##195122
 |tip These are located all around the area.
 collect 10 Charged Leystone Ore##141238 |q 41438/1 |goto 49.02,47.03
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46168
+Follow the path |goto Azsuna/0 43.02,41.54 < 25 |only if walking
+Follow the path |goto 40.60,37.76 < 25 |only if walking
+Follow the path |goto 37.93,37.90 < 25 |only if walking
+Follow the path |goto 33.98,36.09 < 25 |only if walking
+Follow the path |goto 32.65,31.81 < 25 |only if walking
+accept Commander Vorlax##46168 |goto Azsuna/0 34.29,28.06
+|tip You will accept this quest automatically.
+step
+kill Commander Vorlax##117970
+Defeat Commander Vorlax |q 46168/1 |goto 34.29,28.06
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43091
@@ -1046,6 +1075,19 @@ click Arcane Artifact
 Find the Item |q 43327/1 |goto 54.06,39.03
 |next "Court_Of_Farondis_WQ"
 step
+label quest-46164
+Follow the path |goto Azsuna/0 43.02,41.54 < 25 |only if walking
+Follow the path |goto 53.20,28.77 < 25 |only if walking
+Follow the path |goto 37.93,37.90 < 25 |only if walking
+Follow the path |goto 33.98,36.09 < 25 |only if walking
+Follow the path |goto 32.65,31.81 < 25 |only if walking
+accept Mal'serus##46164 |goto Azsuna/0 55.26,29.86
+|tip You will accept this quest automatically.
+step
+kill Mal'serus##117997
+Defeat Mal'serus |q 46164/1 |goto 55.26,29.86
+|next "Court_Of_Farondis_WQ"
+step
 label quest-44786
 Follow the path |goto Azsuna/0 49.85,29.75 < 30 |only if walking
 Follow the path down |goto 51.19,32.65 < 30 |only if walking
@@ -1380,6 +1422,14 @@ _TANK:_ |only if grouprole("TANK")
 _EVERYONE:_
 |tip Move into the swirling tornados to gain the Waterwalking buff to move around easier.
 |tip Move around Levantus as she casts Massive Spout to avoid heavy damage.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46170
+accept Thar'gokk##46170 |goto Azsuna/0 42.56,41.02
+|tip You will accept this quest automatically.
+step
+kill Thar'gokk##117036
+Defeat Thar'gokk |q 46170/1 |goto 42.56,41.02
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42018

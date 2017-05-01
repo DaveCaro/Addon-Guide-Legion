@@ -4640,7 +4640,7 @@ collect Heart of the Storm##127048 |q 38961/1
 step
 talk Tanithria##93542
 |tip Inside the building.
-turnin The Depraved Nightfallen##38961 |goto 35.00,34.57
+turnin The Depraved Nightfallen##38961 |goto Dalaran L/10 35.00,34.57
 step
 Reach Level 110 |ding 110
 |tip Use the Leveling guides to accomplish this.
@@ -4664,7 +4664,7 @@ step
 talk Raethan##97359
 Tell him _"I want to hire a personal bodyguard."_
 |tip This will cost 5 gold, but will prevent other players from attacking you, for 5 minutes, in this PvP area.
-Hire a Bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.99,58.38 |q 39602
+Hire a Bodyguard |havebuff 237433 |goto Dalaran L/11 68.99,58.38 |q 39602
 step
 Follow the path down |goto 64.48,58.65 < 15 |walk
 talk Flitz##96347

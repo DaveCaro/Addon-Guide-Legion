@@ -1146,7 +1146,6 @@ label "Steelbound Grats"
 _Congratulations!_
 You collected the _Steelbound Devourer_ mount
 ]])
-ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Riddler's Mind-Worm",{
 author="support@zygorguides.com",
 startlevel=110.0,
@@ -1218,7 +1217,7 @@ startlevel=110.0,
 keywords={"highmountain","elderhorn","ground","mount"},
 condition_end="hasmount(242874)",
 model={67039},
-description="This guide will help you acquire the Riddler's Mind-Worm.",
+description="This guide will help you acquire the Highmountain Elderhorn.",
 },[[
 step
 Earn exalted reputation with Highmountain |condition rep("Highmountain Tribe")>=Exalted
@@ -1393,7 +1392,7 @@ startlevel=110.0,
 keywords={"leyfeather","hippogryph","flying","mount"},
 condition_end="hasmount(225765)",
 model={63625},
-description="This guide will help you acquire the Leywoven Flying Carpet.",
+description="This guide will help you acquire the Leyfeather Hippogryph.",
 },[[
 step
 Complete the Glory of the Legion Hero achievement |achieve 11163
@@ -1412,7 +1411,7 @@ startlevel=110.0,
 keywords={"defiled","reins","flying","mount"},
 condition_end="hasmount(193007)",
 model={72700},
-description="This guide will help you acquire the Leywoven Flying Carpet.",
+description="This guide will help you acquire the Defiled Reins.",
 },[[
 step
 Complete the Glory of the Legion Raider achievement |achieve 11180
@@ -1556,5 +1555,392 @@ learnmount Yu'lei, Daughter of Jade##127165
 step
 _Congratulations!_
 You are now the proud owner of a Yu'lei, Daughter of Jade.
+]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Brilliant Direbeak",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"brilliant","direbeak","ground","mount"},
+condition_end="hasmount(213164)",
+model={70062},
+description="This guide will help you acquire the Brilliant Direbeak.",
+},[[
+step
+You must first obtain the Direbeak Hatchling before being able to get this mount.
+|tip Check out our Direbeak Hatchling guide to accomplish this.
+confirm
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+accept Raising Your Direbeak##44973
+step
+Level you Direbeak Hatchling to 25 |q 44973/1
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+turnin Raising Your Direbeak##44973
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+accept The Smell of Dwarves##44974
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Enter the building |goto Ironforge/0 20.92,53.23
+Acclimate your Direbeak to the Dwarves |q 44974/1 |goto 19.09,51.83
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+turnin The Smell of Dwarves##44974
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+accept Hunting Lesson: Rose Taipan##44976
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Challenge and defeat 3 Rose Taipans using your Direbeak Hatchling
+|tip Your Hatchling must be in the first pet battle slot to recieve credit.
+Defeat 3 Rose Taipan |q 44976/1 |goto Stormheim/0 63.24,56.54
+|tip These can be found all around this area.
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+turnin Hunting Lesson: Rose Taipan##44976
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+accept Allies in Stormheim##44977
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Make sure you Direbeak Hatchling is summoned while you complete these World Quests
+Complete 5 World Quests in Stormheim |q 44977/1
+|tip You can use our World Quest guide to accomplish this.
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+turnin Allies in Stormheim##44977
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+accept Direbeak Team Up##44978
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Make sure your Direbeak Hatchling is summoned before starting each Pet Battle
+|tip Your Direbeak Hatchling must be in the first battle slot.
+|tip Your Direbeak Hatchling can not die.
+Defeat 3 Pet Battle world quests with your Direbeak Hatchling |q 44978/1
+|tip You can use our World Quest guide to accomplish this.
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+turnin Direbeak Team Up##44978
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+accept Dire Prey##44979
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Make sure your Direbeak Hatchling is summoned while you complete this World Quest
+Complete 1 Rare Elite World Quest with your Direbeak Hatchling |q 44979/1
+|tip You can use our World Quest guide to accomplish this.
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+turnin Dire Prey##44979
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+accept Hunting Lesson: Tiny Apparition##44980
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Challenge and defeat 3 Tiny Apparition using your Direbeak Hatchling
+|tip Your Hatchling must be in the first pet battle slot to recieve credit.
+Defeat 3 Tiny Apparition |q 44980/1 |goto Stormheim/0 55.42,42.38
+|tip These can be found all around this area.
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+turnin Hunting Lesson: Tiny Apparition##44980
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+accept The Unkindly Faction##44981
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Make sure your Direbeak Hatchling is summoned while you complete these World Quests
+Complete 3 PvP World Quests with your Direbeak Hatchling |q 44981/1
+|tip You can use our World Quest guide to accomplish this.
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+turnin The Unkindly Faction##44981
+step
+More content coming soon!
+confirm
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Snowfeather Hunter",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"snowfeather","hunter","ground","mount"},
+condition_end="hasmount(213163)",
+model={70063},
+description="This guide will help you acquire the Snowfeather Hunter.",
+},[[
+step
+You must first obtain the Snowfeather Hatchling before being able to get this mount.
+|tip Check out our Snowfeather Hatchling guide to accomplish this.
+confirm
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+accept Raising Your Snowfeather##44948
+step
+Level you Snowfeather Hatchling to 25 |q 44948/1
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+turnin Raising Your Snowfeather##44948
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+accept The Smell of Humans##44949
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Acclimate your Snowfeather to the Humans |q 44949/1 |goto Stormwind City/0 60.7,74.9
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+turnin The Smell of Humans##44949
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+accept Hunting Lesson: Northern Hawk Owls##44950
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Challenge and defeat 3 Northern Hawk Owls using your Snowfeather Hatchling
+|tip Your Hatchling must be in the first pet battle slot to recieve credit.
+Defeat 3 Northern Hawk Owls |q 44950/1 |goto Highmountain/0 58.51,72.72
+|tip These can be found all around this area.
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+turnin Hunting Lesson: Northern Hawk Owls##44950
+step
+More content coming soon!
+confirm
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Predatory Bloodgazer",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"predatoryt","bloodgazer","ground","mount"},
+condition_end="hasmount(213158)",
+model={70060},
+description="This guide will help you acquire the Predatory Bloodgazer.",
+},[[
+step
+You must first obtain the Bloodgazer Hatchling before being able to get this mount.
+|tip Check out our Bloodgazer Hatchling guide to accomplish this.
+confirm
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+accept Raising Your Bloodgazer##44990
+step
+Level your Bloodgazer Hatchling to 25 |q 44990/1
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+turnin Raising Your Bloodgazer##44990
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+accept The Smell of Draenei##44991
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Enter the building |goto The Exodar/0 59.60,26.17
+Acclimate your Bloodgazer to the Draenei |q 44991/1 |goto 59.61,19.22
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+turnin The Smell of Draenei##44991
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+accept Hunting Lesson: Erudite Manafiend##44996
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Challenge and defeat 3 Erudite Manafiends using your Bloodgazer Hatchling
+|tip Your Hatchling must be in the first pet battle slot to recieve credit.
+Defeat 3 Erudite Manafiends |q 44996/1 |goto Azsuna/0 57.64,16.00
+|tip These can be found all around these Ley-Ruins.
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+turnin Hunting Lesson: Erudite Manafiend##44996
+step
+More content coming soon!
+confirm
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Viridian Sharptalon",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"viridian","sharptalon","ground","mount"},
+condition_end="hasmount(213165)",
+model={70061},
+description="This guide will help you acquire the Viridian Sharptalon.",
+},[[
+step
+You must first obtain the Sharptalon Hatchling before being able to get this mount.
+|tip Check out our Sharptalon Hatchling guide to accomplish this.
+confirm
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+accept Raising Your Sharptalon##44989
+step
+Level you Sharptalon Hatchling to 25 |q 44989/1
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+turnin Raising Your Sharptalon##44989
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+accept The Smell of Night Elves##44992
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Acclimate your Sharptalon to the Night Elves |q 44992/1 |goto Darnassus/0 61.89,32.97
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+turnin The Smell of Night Elves##44992
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+accept Hunting Lesson: Spring Strider##44995
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Challenge and defeat 3 Spring Striders using your Sharptalon Hatchling
+|tip Your Hatchling must be in the first pet battle slot to recieve credit.
+Defeat 3 Spring Striders |q 44995/1 |goto Val'sharah/0 48.65,69.36
+|tip These can be found all around this area.
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+turnin Hunting Lesson: Spring Strider##44995
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+accept Allies in Val'sharah##44997
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Make sure your Sharptalon Hatchling is summoned while you complete these World Quests
+Complete 5 World Quests in Val'sharah |q 44997/1
+|tip You can use our World Quest guide to accomplish this.
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+turnin Allies in Val'sharah##44997
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+accept Sharptalon Team Up##44999
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Make sure your Sharptalon Hatchling is summoned before starting each Pet Battle
+|tip Your Sharptalon Hatchling must be in the first battle slot.
+|tip Your Sharptalon Hatchling can not die.
+Defeat 3 Pet Battle world quests with your Sharptalon Hatchling |q 44999/1
+|tip You can use our World Quest guide to accomplish this.
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+turnin Sharptalon Team Up##44999
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+accept Destructive Prey##45001
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Make sure your Sharptalon Hatchling is summoned while you complete this World Quest
+Complete 1 Rare Elite World Quest with your Sharptalon Hatchling |q 45001/1
+|tip You can use our World Quest guide to accomplish this.
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+turnin Destructive Prey##45001
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+accept Hunting Lesson: Terror Larva##45003
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Challenge and defeat 3 Terror Larva using your Sharptalon Hatchling
+|tip Your Hatchling must be in the first pet battle slot to recieve credit.
+Defeat 3 Terror Larva |q 45003/1 |goto Val'sharah/0 59.21,44.21
+|tip These can be found all around this area.
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+turnin Hunting Lesson: Terror Larva##45003
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+accept The Uncongenial Faction##45005
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Make sure your Sharptalon Hatchling is summoned while you complete these World Quests
+Complete 3 PvP World Quests with your Sharptalon Hatchling |q 45005/1
+|tip You can use our World Quest guide to accomplish this.
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+turnin The Uncongenial Faction##45005
+step
+More content coming soon!
+confirm
 ]])
 ZGV.BETAEND()

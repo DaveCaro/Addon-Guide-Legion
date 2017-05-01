@@ -28,10 +28,6 @@ local HBDPins=ZGV.HBDPins
 
 ZGV.Vars={}
 
---if addonName:find("DEV") then ZGV.DEV=true end
-if addonName:find("BETA") then ZGV.BETA=true end
---if addonName:find("BETA") then ZGV.DEV=true end
-
 -- Time to add some testing. ~~ Jeremiah
 ZGV.TestFramework = {}
 ZGV.TestFramework.UnitTests = {} -- Not used yet.
@@ -413,6 +409,7 @@ function ZGV:OnEnable()
 	self:Hook_QuestChoice()
 
 	if TaskPOI_OnClick then hooksecurefunc("TaskPOI_OnClick", function(self,button) ZGV:SuggestWorldQuestGuide(self) end) end
+	if WorldMapPOI_OnClick then hooksecurefunc("WorldMapPOI_OnClick", function(self,button) ZGV:SuggestBrokenRareGuide(self) end) end
 
 	if WorldQuestTrackerAddon then
 		local WQT=LibStub ("AceAddon-3.0"):GetAddon("WorldQuestTrackerAddon")
@@ -428,8 +425,8 @@ function ZGV:OnEnable()
 	-- waiting for QUEST_LOG_UPDATE for true initialization...
 
 	if ZGV_DEV then ZGV_DEV() end
-	if ZGV.db.profile.debug_beta then ZGV.BETA=true end
-	if ZGV.BETA and ZygorGuidesViewerFrame_DevLabel then ZygorGuidesViewerFrame_DevLabel:SetText("BETA") end
+	self:SetBeta()
+	--if ZGV.BETA and ZygorGuidesViewerFrame_DevLabel then ZygorGuidesViewerFrame_DevLabel:SetText("BETA") end
 
 	if self.db.profile.frame_anchor then
 		self.db.profile.frame_anchor[2]=UIParent
@@ -2241,33 +2238,33 @@ function ZGV:UpdateFrame(full,onupdate)
 				frame.lines[line].label:ClearAllPoints()
 
 				local did_header
-				if (stepdata.requirement or self.db.profile.stepnumbers) then
-					local numbertext = self.db.profile.stepnumbers and L['step_num']:format(self.stepframes[stepframenum].stepnum)
-					local reqtext = stepdata.requirement and ((stepdata:AreRequirementsMet() and "|cff44aa44" or "|cffbb0000") .. "(" .. (table.concat(stepdata.requirement,L["stepreqor"])):gsub("!([a-zA-Z ]+)",L["req_not"]:format("%1")) .. ")")
-					local leveltext = (stepdata.level and stepdata.level>0 and self.db.profile.stepnumbers) and L['step_level']:format(stepdata.level or "?")
-					local titletext = stepdata:GetTitle()  titletext=titletext and " "..titletext
+				local numbertext = self.db.profile.stepnumbers and L['step_num']:format(self.stepframes[stepframenum].stepnum)
+				local leveltext = (stepdata.level and stepdata.level>0 and self.db.profile.stepnumbers) and L['step_level']:format(stepdata.level or "?")
+				local reqtext = stepdata.requirement and (stepdata:AreRequirementsMet() and "|cff44aa44" or "|cffbb0000") .. L["stepreq"]:format((table.concat(stepdata.requirement,L["stepreqor"])):gsub("!([a-zA-Z ]+)",L["stepreqnot"]:format("%1")))
+				local titletext -- = stepdata:GetTitle()  titletext=titletext and " "..titletext
+				local betatext = (self.CurrentGuide.beta or stepdata.beta) and L['stepbeta']
 
-					if showbriefsteps and not reqtext then
-						frame.lines[line].briefhidden = true
-					end
-
-					if (numbertext or leveltext or reqtext or titletext) then
-						frame.lines[line].label:SetPoint("TOPLEFT")
-						frame.lines[line].label:SetPoint("TOPRIGHT")
-						frame.lines[line].label:SetText((numbertext or "")..(leveltext or "")..(reqtext or "")..(titletext or ""))
-						--frame.lines[line].label:SetMultilineIndent(1)
-						frame.lines[line].goal = nil
-						frame.lines[line].label:SetFont(FONT,round(self.db.profile.fontsecsize))
-						frame.lines[line].icon:Hide()
-						frame.lines[line].back:Show()
-						-- TODO how about we let skin decide?
-						frame.lines[line].back:SetBackdropColor(0,0,0,0.3*ZGV.db.profile.opacitymain)
-						frame.lines[line].back:SetBackdropBorderColor(0,0,0,0.3*ZGV.db.profile.opacitymain)
-						frame.lines[line].isheader=true
-						line=line+1
-						did_header=true
-					end
+				if showbriefsteps and not reqtext then
+					frame.lines[line].briefhidden = true
 				end
+
+				if (numbertext or leveltext or reqtext or titletext or betatext) then
+					frame.lines[line].label:SetPoint("TOPLEFT")
+					frame.lines[line].label:SetPoint("TOPRIGHT")
+					frame.lines[line].label:SetText((numbertext or "")..(leveltext or "")..(reqtext or "")..(titletext or "")..(betatext or ""))
+					--frame.lines[line].label:SetMultilineIndent(1)
+					frame.lines[line].goal = nil
+					frame.lines[line].label:SetFont(FONT,round(self.db.profile.fontsecsize))
+					frame.lines[line].icon:Hide()
+					frame.lines[line].back:Show()
+					-- TODO how about we let skin decide?
+					frame.lines[line].back:SetBackdropColor(0,0,0,0.3*ZGV.db.profile.opacitymain)
+					frame.lines[line].back:SetBackdropBorderColor(0,0,0,0.3*ZGV.db.profile.opacitymain)
+					frame.lines[line].isheader=true
+					line=line+1
+					did_header=true
+				end
+
 				if not did_header then
 					frame.lines[line].label:SetPoint("TOPLEFT",frame.lines[line],"TOPLEFT",icon_indent+2,0)
 					frame.lines[line].label:SetPoint("TOPRIGHT")
@@ -5914,6 +5911,51 @@ function ZGV:SuggestWorldQuestGuide(object,questID,force)
 	end
 end
 
+function ZGV:SuggestBrokenRareGuide(object)
+	local poiID = object and object.poiID
+	if not poiID then return end
+
+	local guidetitle = "Dailies Guides\\Legion\\World Quests"
+
+	local guide = self:GetGuideByTitle(guidetitle)
+	if not guide then return end
+	if not guide.parsed then guide:Parse(true) end
+	local labelstep
+	for labelname,labeldata in pairs(guide.steplabels) do
+		if labelname == "rare-"..poiID then
+			labelstep = labeldata[1]
+			break
+		end
+	end
+
+	if not labelstep then
+		ZGV:Debug("&_SUB &worldquests no label for rare "..poiID)
+		return
+	end
+	
+	if ZGV.CurrentGuide==guide then
+		ZGV:Debug("&_SUB &worldquests switching to "..poiID)
+		ZGV:FocusStep(labelstep,true)
+	else
+		ZGV:Debug("&_SUB &worldquests popup for "..poiID)
+		ZGV.NotificationCenter.AddButton(
+		"worldquest",
+		object.name,
+		"Click here to open the guide for this rare elite",
+		ZGV.DIR.."\\Skins\\guideicons-big",
+		{0, 0.25, 0, 0.25},
+		function() ZGV:SetGuide(guidetitle,labelstep) end,
+		nil,
+		1,
+		10, --poptime
+		30, --removetime
+		false, --quiet
+		nil,--onopen
+		"worldquest")
+	end
+end
+
+
 local SimpleThreadFrame = CreateFrame("FRAME","ZygorGuidesViewerSimpleThreadFrame")
 SimpleThreadFrame.threads = {}
 local function SimpleThreadFrame_OnUpdate(frame,elapsed)
@@ -5935,68 +5977,69 @@ function ZGV:Timerize(func,...)
 end
 
 
-local Checklist = {}
-local CL=Checklist
-ZGV.Checklist = Checklist
-Checklist.events_sequence = {}
-Checklist.events_fired = {}
-Checklist.framenum = 0
-Checklist.starttime = debugprofilestop()
+-- Startup Checklist. Eventually abandoned, but may be useful someday.
+	local Checklist = {}
+	local CL=Checklist
+	ZGV.Checklist = Checklist
+	Checklist.events_sequence = {}
+	Checklist.events_fired = {}
+	Checklist.framenum = 0
+	Checklist.starttime = debugprofilestop()
 
-function Checklist:SetupListener()
-	local Listener = CreateFrame("FRAME","ZygorGuidesViewerChecklistListener")
-	Listener:SetScript("OnEvent", ZGV.Checklist.FrameOnEvent)
-	Listener:SetScript("OnUpdate", ZGV.Checklist.FrameOnUpdate)
-	Listener:UnregisterAllEvents()
+	function Checklist:SetupListener()
+		local Listener = CreateFrame("FRAME","ZygorGuidesViewerChecklistListener")
+		Listener:SetScript("OnEvent", ZGV.Checklist.FrameOnEvent)
+		Listener:SetScript("OnUpdate", ZGV.Checklist.FrameOnUpdate)
+		Listener:UnregisterAllEvents()
 
-	-- listed in usual startup order
-	Listener:RegisterEvent("ADDON_LOADED")
-	Listener:RegisterEvent("VARIABLES_LOADED")
-	Listener:RegisterEvent("SPELLS_CHANGED") -- not on all startups
-	Listener:RegisterEvent("PLAYER_LOGIN")
-	Listener:RegisterEvent("PLAYER_ENTERING_WORLD")
-	Listener:RegisterEvent("QUEST_LOG_UPDATE")
-	Listener:RegisterEvent("PLAYER_ALIVE") -- not on all startups
-	Listener:RegisterEvent("ZONE_CHANGED_NEW_AREA") -- does NOT fire on a reload
+		-- listed in usual startup order
+		Listener:RegisterEvent("ADDON_LOADED")
+		Listener:RegisterEvent("VARIABLES_LOADED")
+		Listener:RegisterEvent("SPELLS_CHANGED") -- not on all startups
+		Listener:RegisterEvent("PLAYER_LOGIN")
+		Listener:RegisterEvent("PLAYER_ENTERING_WORLD")
+		Listener:RegisterEvent("QUEST_LOG_UPDATE")
+		Listener:RegisterEvent("PLAYER_ALIVE") -- not on all startups
+		Listener:RegisterEvent("ZONE_CHANGED_NEW_AREA") -- does NOT fire on a reload
 
-	Listener:RegisterEvent("PLAYER_CONTROL_GAINED")
-	Listener:RegisterEvent("NEW_WMO_CHUNK")
-	self.Listener = Listener
-end
-
-function Checklist:CatchEvent(event,...)
-	if not self.events_fired[event] then
-		self.events_fired[event] = 1
-		--frame:UnregisterEvent(event)
-		local s = event.." f=" .. self.framenum .. (" t=%.3f"):format(debugprofilestop()-self.starttime)
-			.. "  DG ".. ((abs((ZGV.HBD:TranslateZoneCoordinates(0.5,0.5,1077,0,1018,0) or 0) - 0.41)<0.1) and "OK" or "FAIL")
-			.. "  TSL ".. ((abs((ZGV.HBD:TranslateZoneCoordinates(0.5,0.5,1072,0,1024,0) or 0) - 0.347)<0.1) and "OK" or "FAIL")
-			.. "  you're in "..ZGV.Pointer.GetMapNameByID2(ZGV.HBD:GetPlayerZone() or 0)
-		--print(s)
-		tinsert(self.events_sequence,s)
+		Listener:RegisterEvent("PLAYER_CONTROL_GAINED")
+		Listener:RegisterEvent("NEW_WMO_CHUNK")
+		self.Listener = Listener
 	end
-	if self.events_fired["_FIRST_FRAME_"] and self.events_fired["QUEST_LOG_UPDATE"] and self.events_fired["_GUIDES_LOADED_"] and self.events_fired["ZONE_CHANGED_NEW_AREA"] then
-		if ZGV.db.profile.delayed_startup then
-			print("*** Starting up from checklist!")
-			ZGV:LoadInitialGuide()
-		else
-			print("*** Checklist complete! Would start now.")
+
+	function Checklist:CatchEvent(event,...)
+		if not self.events_fired[event] then
+			self.events_fired[event] = 1
+			--frame:UnregisterEvent(event)
+			local s = event.." f=" .. self.framenum .. (" t=%.3f"):format(debugprofilestop()-self.starttime)
+				.. "  DG ".. ((abs((ZGV.HBD:TranslateZoneCoordinates(0.5,0.5,1077,0,1018,0) or 0) - 0.41)<0.1) and "OK" or "FAIL")
+				.. "  TSL ".. ((abs((ZGV.HBD:TranslateZoneCoordinates(0.5,0.5,1072,0,1024,0) or 0) - 0.347)<0.1) and "OK" or "FAIL")
+				.. "  you're in "..ZGV.Pointer.GetMapNameByID2(ZGV.HBD:GetPlayerZone() or 0)
+			--print(s)
+			tinsert(self.events_sequence,s)
 		end
-		self.Listener:UnregisterAllEvents()
-		self.Listener:Hide()
+		if self.events_fired["_FIRST_FRAME_"] and self.events_fired["QUEST_LOG_UPDATE"] and self.events_fired["_GUIDES_LOADED_"] and self.events_fired["ZONE_CHANGED_NEW_AREA"] then
+			if ZGV.db.profile.delayed_startup then
+				print("*** Starting up from checklist!")
+				ZGV:LoadInitialGuide()
+			else
+				print("*** Checklist complete! Would start now.")
+			end
+			self.Listener:UnregisterAllEvents()
+			self.Listener:Hide()
+		end
 	end
-end
 
-function Checklist.FrameOnUpdate(frame,elapsed)
-	Checklist.framenum = Checklist.framenum + 1
-	Checklist:CatchEvent("_FIRST_FRAME_")
-	frame:SetScript("OnUpdate",nil)
-end
-function Checklist.FrameOnEvent(frame,event,...)
-	Checklist:CatchEvent(event,...)
-end
---Checklist:SetupListener()
-
+	function Checklist.FrameOnUpdate(frame,elapsed)
+		Checklist.framenum = Checklist.framenum + 1
+		Checklist:CatchEvent("_FIRST_FRAME_")
+		frame:SetScript("OnUpdate",nil)
+	end
+	function Checklist.FrameOnEvent(frame,event,...)
+		Checklist:CatchEvent(event,...)
+	end
+	--Checklist:SetupListener()
+--
 
 function ZGV.IsLegionOn()
 	return PlayerCompletedQuest(44663) or ZGV:GetPlayerPreciseLevel()>=101
@@ -6010,19 +6053,12 @@ function ZGV.IsLegionBoatLock()
 	return (IsQuestFlaggedCompleted(40519) or IsQuestFlaggedCompleted(43926)) and not (IsQuestFlaggedCompleted(40593) or IsQuestFlaggedCompleted(40607))
 end
 
-
--- Prevent Blizzard world map taint errors
---[[
-function WorldMapFrame.UIElementsFrame.ActionButton.GetDisplayLocation(self, useAlternateLocation)
-	if InCombatLockdown() then return end
-	return WorldMapActionButtonMixin.GetDisplayLocation(self, useAlternateLocation)
+function ZGV:SetBeta(val)
+	if val~=nil then ZGV.BETA=val return end
+	if self.db.profile.debug_beta~=nil then ZGV.BETA=self.db.profile.debug_beta return end
+	ZGV.BETA = self.Licences and self.Licences.DATE_E and self.Licences.DATE_E>time()
 end
 
-function WorldMapFrame.UIElementsFrame.ActionButton.Refresh(self)
-	if InCombatLockdown() then return end
-	WorldMapActionButtonMixin.Refresh(self)
-end
---]]
 
 
 function ZGV:FakeWidescreen()
@@ -6030,3 +6066,4 @@ function ZGV:FakeWidescreen()
 	WorldFrame:SetPoint("TOPLEFT",ParentUI,"TOPLEFT",0,-150)
 	WorldFrame:SetPoint("BOTTOMRIGHT",ParentUI,"BOTTOMRIGHT",0,150)
 end
+

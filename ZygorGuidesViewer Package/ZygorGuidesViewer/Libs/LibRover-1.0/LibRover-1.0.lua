@@ -1867,9 +1867,9 @@ do
 			bf = ZGV:SanitizeMapFloor(bm,bf)
 
 
-			self:Debug("&_PUSH |cff00ff88FindPath|r:  |cffaaff88%s|r/%d |cffffffff%.1f|r,|cffffffff%.1f|r --> |cffaaff88%s|r/%d |cffffffff%.1f|r,|cffffffff%.1f|r",
-				am and GetMapNameByID(am) or am or "nil",af,ax and ax*100 or 0,ay and ay*100 or 0,
-				bm and GetMapNameByID(bm) or bm or "nil",bf,bx and bx*100 or 0,by and by*100 or 0)
+			self:Debug("&_PUSH |cff00ff88FindPath|r:  |cffaaff88%s|r##%d/%d |cffffffff%.1f|r,|cffffffff%.1f|r --> |cffaaff88%s|r##%d/%d |cffffffff%.1f|r,|cffffffff%.1f|r",
+				am and GetMapNameByID(am) or am or "nil",am,af,ax and ax*100 or 0,ay and ay*100 or 0,
+				bm and GetMapNameByID(bm) or bm or "nil",bm,bf,bx and bx*100 or 0,by and by*100 or 0)
 
 
 			--if lam==13 or lam==14 or lam==0 or lam==689 or lam==-1 or lam==485 or lam==466 then
@@ -4414,7 +4414,7 @@ do
 				self.ready=true
 			end
 
-			function TWP:FindNearestTaxis(zone)
+			function TWP:FindNearestTaxis()
 				local x,y,m,f = ZGV.HBD:GetPlayerZonePosition(true)
 				if not x or not y then return end -- we're NOT working in mapless places.
 
@@ -4436,14 +4436,14 @@ do
 				return taxidists
 			end
 
-			function TWP:PredictWhistle(zone)  -- the workhorse.
+			function TWP:PredictWhistle()  -- the workhorse.
 				if not self.ready then return nil end
-				local taxidists = self:FindNearestTaxis(zone)
+				local taxidists = self:FindNearestTaxis()
 				self.taxidists = taxidists
 				if not taxidists then self.predicted_taxi=nil return end
 				
 				local taxidists_thiszone = {}
-				local zone = zone or self.pm
+				local zone = self.pm  -- set by FindNearestTaxis
 
 				if zone==1080 --[[ Thunder Totem ]] then zone=1024 --[[ Highmountain ]] end  -- Thunder Totem isn't considered a separate zone. Remap it to Highmountain.
 				for t,td in ipairs(taxidists) do repeat

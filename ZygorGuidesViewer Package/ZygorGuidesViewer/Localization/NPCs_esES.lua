@@ -7754,4 +7754,6 @@ ZygorGuidesViewer_L("NPCs", "esES", function() return {
 [119184]="Tehd Shoemaker|",
 [121321]="Master Jiedari|",
 [120076]="Treasure Master Iks'reeged|",
+[107574]="Anduin Wrynn|",
+[120725]="Zipp Fizzlebonk|",
 } end)

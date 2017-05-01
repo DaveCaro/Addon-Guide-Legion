@@ -3319,7 +3319,6 @@ step
 _Congratulations!_
 You have earned the _Broken Isles Explorer_ achievement
 ]])
-ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Broken Isles Pathfinder, Part Two",{
 condition_end="achieved(11446)",
 author="support@zygorguides.com",
@@ -3340,7 +3339,6 @@ step
 _Congratulations!_
 You have earned the _Broken Isles Pathfinder, Part Two_ achievement
 ]])
-ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Exploration\\Legion\\Explore Azsuna",{
 condition_end="achieved(10665)",
 author="support@zygorguides.com",

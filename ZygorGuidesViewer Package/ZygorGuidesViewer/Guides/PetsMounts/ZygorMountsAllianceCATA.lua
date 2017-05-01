@@ -2233,7 +2233,8 @@ Locate the drain in Serpent Lake |q 9731/1 |goto 50.4,40.8
 step
 kill 12 Marshfang Slicer |q 9833/1 |goto 35.9,58.6
 step
-kill Terrorclaw |q 9902/1 |goto 22.4,46.1 |tip On a little island.
+kill Terrorclaw |q 9902/1 |goto 22.4,46.1
+|tip On a little island.
 step
 kill Marshlight Bleeders |n
 |tip They are all around this area on the land, to the north and south.
@@ -2577,7 +2578,8 @@ description="This guide will help you acquire the Big Battle Bear mount.",
 },[[
 step
 These mounts can only be obtained by redeeming codes from the World of Warcraft trading card game.
-modeldisplay 25335
+You can also buy this from the AH if available.
+|tip Usually ehy are very expensive.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Magic Rooster",{
 keywords={"trading","card","game","magic","rooster","ground","mount"},
@@ -2587,7 +2589,8 @@ description="This guide will help you acquire the Magic Rooster mount.",
 },[[
 step
 These mounts can only be obtained by redeeming codes from the World of Warcraft trading card game.
-modeldisplay 29344
+You can also buy this from the AH if available.
+|tip Usually ehy are very expensive.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Riding Turtle",{
 keywords={"trading","card","game","riding","turtle","ground","mount"},
@@ -2617,7 +2620,8 @@ description="This guide will help you acquire the Savage Raptor mount.",
 },[[
 step
 These mounts can only be obtained by redeeming codes from the World of Warcraft trading card game.
-modeldisplay 38048
+You can also buy this from the AH if available.
+|tip Usually ehy are very expensive.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Spectral Tiger",{
 keywords={"trading","card","game","spectral","tiger","ground","mount"},
@@ -2627,7 +2631,8 @@ description="This guide will help you acquire the Spectral Tiger mount.",
 },[[
 step
 These mounts can only be obtained by redeeming codes from the World of Warcraft trading card game.
-modeldisplay 21974
+You can also buy this from the AH if available.
+|tip Usually ehy are very expensive.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Swift Shorestrider",{
 keywords={"trading","card","game","swift","shorestrider","tallstrider","ground","mount"},
@@ -2637,7 +2642,8 @@ description="This guide will help you acquire the Swift Shorestrider mount.",
 },[[
 step
 These mounts can only be obtained by redeeming codes from the World of Warcraft trading card game.
-modeldisplay 17011
+You can also buy this from the AH if available.
+|tip Usually ehy are very expensive.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\White Riding Camel",{
 keywords={"trading","card","game","white","riding","camel","ground","mount"},
@@ -2647,7 +2653,8 @@ description="This guide will help you acquire the White Riding Camel mount.",
 },[[
 step
 These mounts can only be obtained by redeeming codes from the World of Warcraft trading card game.
-modeldisplay 35899
+You can also buy this from the AH if available.
+|tip Usually ehy are very expensive.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Wooly White Rhino",{
 keywords={"trading","card","game","wooly","white","rhino","ground","mount"},
@@ -2657,7 +2664,8 @@ description="This guide will help you acquire the Wooly White Rhino mount.",
 },[[
 step
 These mounts can only be obtained by redeeming codes from the World of Warcraft trading card game.
-modeldisplay 31721
+You can also buy this from the AH if available.
+|tip Usually ehy are very expensive.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Amani War Bear",{
 keywords={"amani","war","bear","zul","aman","zul'aman"},
@@ -6196,7 +6204,8 @@ description="This guide will help you acquire the Amani Dragonhawk mount.",
 },[[
 step
 These mounts can only be obtained by redeeming codes from the World of Warcraft trading card game.
-modeldisplay 37800
+You can also buy this from the AH if available.
+|tip Usually ehy are very expensive.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\Mottled Drake",{
 keywords={"trading","card","game","mottled","drake","mount","flying"},
@@ -6206,7 +6215,8 @@ description="This guide will help you acquire the Mottled Drake mount.",
 },[[
 step
 These mounts can only be obtained by redeeming codes from the World of Warcraft trading card game.
-modeldisplay 37231
+You can also buy this from the AH if available.
+|tip Usually ehy are very expensive.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\Blazing Hippogryph",{
 keywords={"blazing","hippogryph","mount","trading","card","game","flying"},
@@ -6216,7 +6226,8 @@ description="This guide will help you acquire the Blazing Hippogryph mount.",
 },[[
 step
 These mounts can only be obtained by redeeming codes from the World of Warcraft trading card game.
-modeldisplay 31803
+You can also buy this from the AH if available.
+|tip Usually ehy are very expensive.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\Corrupted Hippogryph",{
 keywords={"trading","card","game","corrupted","hippogryph","mount","flying"},
@@ -6226,7 +6237,8 @@ description="This guide will help you acquire the Corrupted Hippogryph mount.",
 },[[
 step
 These mounts can only be obtained by redeeming codes from the World of Warcraft trading card game.
-modeldisplay 38972
+You can also buy this from the AH if available.
+|tip Usually ehy are very expensive.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\X-51 Nether-Rocket",{
 keywords={"x","51","X-51","nether","rocket","nether-rocket","trading","card","game","mount","flying"},
@@ -6236,7 +6248,8 @@ description="This guide will help you acquire the X-51 Nether-Rocket mount.",
 },[[
 step
 These mounts can only be obtained by redeeming codes from the World of Warcraft trading card game.
-modeldisplay 23656
+You can also buy this from the AH if available.
+|tip Usually ehy are very expensive.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\X-51 Nether-Rocket X-TREME",{
 keywords={"x-51","x","51","nether","rocket","nether-rocket","x-treme","treme","trading","card","game","mount","flying"},
@@ -6246,7 +6259,8 @@ description="This guide will help you acquire the X-51 Nether-Rocket X-TREME mou
 },[[
 step
 These mounts can only be obtained by redeeming codes from the World of Warcraft trading card game.
-modeldisplay 23647
+You can also buy this from the AH if available.
+|tip Usually ehy are very expensive.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\Feldrake",{
 keywords={"Feldrake","trading","card","game","mount","flying"},
@@ -6256,7 +6270,8 @@ description="This guide will help you acquire the Feldrake mount.",
 },[[
 step
 These mounts can only be obtained by redeeming codes from the World of Warcraft trading card game.
-modeldisplay 40568
+You can also buy this from the AH if available.
+|tip Usually ehy are very expensive.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Black Proto-Drake",{
 keywords={"black","proto","drake","proto-drake"},

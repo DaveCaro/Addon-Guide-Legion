@@ -1354,7 +1354,6 @@ If you're new to the guides, or have only started using them on this character, 
 	["stepgoalshort_level"] = "(%d%%)",
 --]]
 
-	["step_req"] = "Step valid only for: %s",
 	["players_garrison"] = "%s's Garrison",
 	["players_garrison_1"] = "%s's Outpost",
 	["players_garrison_2"] = "%s's Fort",
@@ -1363,8 +1362,11 @@ If you're new to the guides, or have only started using them on this character, 
 
 	["map_highlight"] = "Highlight",
 
-	["stepreq"] = "Step class/race requirement: ",
+	["stepreq"] = "(Only %s)",
 	["stepreqor"] = " or ",
+	["stepreqnot"] = "not %s",
+	["stepbeta"] = "(Beta content)",
+	["guidebeta"] = " (BETA)",
 
 	["opt_do_searchforgoal"] = "Find a completeable goal",
 	["searching_for_goal_success"] = "A completeable goal has been found for you: %s. This may be a good starting point in the guide for you.",
@@ -1376,7 +1378,6 @@ If you're new to the guides, or have only started using them on this character, 
 	["binding_waypoint_next"] = "Cycle multiple waypoints",
 	["binding_waypoint_prev"] = "Cycle multiple waypoints backwards",
 
-	["req_not"] = "not %s",
 
 	["menu_last"] = "Last guides:",
 	["menu_last_entry"] = "%s |cffaaaaaastep|r %d",

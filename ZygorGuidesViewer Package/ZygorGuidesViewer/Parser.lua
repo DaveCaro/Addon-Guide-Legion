@@ -723,8 +723,6 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 		if line:find("--@@BETASTART") then  betasection=true  break  end
 		if line:find("--@@BETAEND") then  betasection=false  break  end
 
-		if betasection and not ZGV.BETA then  break  end  --continue; beta lines available only in beta addons.
-
 		line = line:gsub("%s*%-%-.*","",1) :gsub("%s*//.*","",1)  -- remove comments
 
 		-- Process the line!
@@ -909,7 +907,7 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 						break
 					end
 
-					step = { goals = {}, map = prevmap, floor=prevfloor, level = prevlevel, num = #guide.steps+1, parentGuide=guide, title=prevtitle }
+					step = { goals = {}, map = prevmap, floor=prevfloor, level = prevlevel, num = #guide.steps+1, parentGuide=guide, title=prevtitle, beta=betasection }
 					setmetatable(step,ZGV.StepProto_mt)
 
 					tinsert(guide.steps,step)

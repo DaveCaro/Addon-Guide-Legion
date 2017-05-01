@@ -81,7 +81,6 @@ function Guide:DoCond(which,...)
 				FillLocalizedClassList(classeslocalized,UnitSex("player")==3)
 				return false,classeslocalized[self.class].." class is required." -- TODO localize
 			elseif self.spec then
-				if ZGV.db.profile.beta then else
 				if not self.spec[GetSpecialization()] then
 					local specnames="",multiple
 					for k,v in pairs(self.spec) do
@@ -90,7 +89,6 @@ function Guide:DoCond(which,...)
 						specnames=specnames..specname
 					end
 					return false,"Only the following spec"..(multiple and "s are" or " is").." eligible: "..specnames
-				end
 				end
 			end
 		end
@@ -810,8 +808,7 @@ end
 
 function GuideFuncs:IsGuideBanned(title)
 	do return false end  -- temporarily remove guide disabling; sinus 2014-01-13 
-	if ZGV.db.profile.load_betaguides then return false end
-	
+
 	if title:match("^PROFESSION") then return true end
 	
 	if title:match("^DAILIES") then return true end

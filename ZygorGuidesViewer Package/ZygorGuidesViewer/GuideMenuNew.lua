@@ -378,7 +378,7 @@ function GuideMenu:Update()
 					suggested=ZGV:GetGuideFolderInfo(object)
 				end
 
-				row.title:SetText(object.name or object.title_short or object.header_name)
+				row.title:SetText((object.name or object.title_short or object.header_name or "") .. (object.beta and ZGV.L['guidebeta'] or ""))
 				if suggested and ZGV.db.profile.gmstarsuggested then
 					row.iconover:Show()
 					row.iconover.anim:Play()
@@ -454,7 +454,7 @@ function GuideMenu:ShowGuideDetails(guide)
 
 	--if GuideMenu.FocusedGuide then guide=GuideMenu.FocusedGuide end -- always show focused
 
-	right.GuideTitle:SetText(guide.title_short)
+	right.GuideTitle:SetText(guide.title_short .. (guide.beta and ZGV.L['guidebeta'] or ""))
 
 	local desc=""
 	if guide.startlevel and guide.startlevel>0 then

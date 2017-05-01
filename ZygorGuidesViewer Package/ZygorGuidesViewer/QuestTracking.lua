@@ -127,6 +127,8 @@ function ZGV:GetQuest(indexortitle)
 end
 
 function ZGV:QuestTracking_CacheQuestLog(from)
+	-- TODO: Check why this triggers too often
+
 	if not self.loading_screen_disabled then return end
 	--self:Debug('CacheQuestLog')
 	--if not zone or zone=='' then return nil end
@@ -210,7 +212,7 @@ function ZGV:QuestTracking_CacheQuestLog(from)
 	end
 	--]]
 
-	self:Debug("&quest cacheQuestLog "..(from and "from "..from.." " or "").."cached "..nc.." quests ("..#oldquests.." old, "..#newquests.." new)")
+	--self:Debug("&quest cacheQuestLog "..(from and "from "..from.." " or "").."cached "..nc.." quests ("..#oldquests.." old, "..#newquests.." new)")
 
 	-- any abandoned?
 	if #oldquests>0 then

@@ -27525,4 +27525,7 @@ ZygorGuidesViewer_L("NPCs", "enUS", function() return {
 [117709]="Lady S'theno|",
 [117481]="Lady S'theno|",
 [103732]="Tylos Darksight|",
+[175566]="Gloom Weed|",
+[86884]="Darkspear Loyalist|",
+[117873]="Lord Illidan Stormrage|",
 } end)

@@ -15,7 +15,6 @@ collect Benax##140934 |n |goto Suramar/0 33.69,51.75
 learnpet Benax##113136 |use Benax##140934
 step
 _Congratulations!_
-You have collected the _Benax_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Aquatic Pets\\Bleakwater Jelly",{
 model={65630},
@@ -1639,7 +1638,6 @@ step
 _Congratulations!_
 You have collected the _Tiny Apparition_ battle pet
 ]])
-ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Flying Pets\\Albino Buzzard",{
 model={74036},
 pet=1984,
@@ -1978,7 +1976,7 @@ Follow the path |goto 27.44,41.50 < 25 |only if walking
 Follow the path |goto 23.30,43.37 < 25 |only if walking
 Follow the path |goto Val'sharah/0 59.36,7.73 < 25 |notravel |only if walking
 Follow the path up |goto 49.45,7.85 < 25 |only if walking
-kill Sharptalon Matriarch##115671 |goto 48.05,9.75
+kill Sharptalon Matriarch##115671 |notravel |goto 48.05,9.75
 |tip Killing the Matriarch will spawn the Orphaned Hatchling.
 confirm
 step
@@ -2304,4 +2302,29 @@ step
 _Congratulations!_
 You are now the proud owner of a Orphaned Felbat.
 ]])
-ZGV.BETAEND()
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Undead Pets\\Scraps",{
+model={75766},
+pet=2042,
+description="This guide will walk you through obtaining the Undead pet:Scraps",
+},[[
+step
+Complete the Excavator Karla Quest Line
+|tip Check out our Broken Shore Excavator Karla Quests to accomplish this.
+confirm
+|only if not completedq(46666)
+step
+click Peculiar Rope |goto Broken Shore/0 47.86,67.38
+Enter the Secret Treasure Lair |goto 44.33,52.10 < 5 |noway |c
+step
+talk Treasure Master Iks'reeged##120076
+buy Wyrmtongue's Cache Key##143559 |n |goto 45.00,52.16
+|tip These cost 2,000 Nethershards each.
+Choose any chest in this room
+click Curious Wyrmtongue Chest
+|tip This pet has a very low chance to be within these chests.
+collect Scraps##146953 |use Scraps##146953
+learnpet Scraps##120397
+step
+_Congratulations!_
+You are now the proud owner of Scraps.
+]])
