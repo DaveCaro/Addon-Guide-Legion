@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("AchievementsAWOD") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Quests\\Draenor\\Mean and Green",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Draenor\\Mean and Green",{
 condition_end="achieved(9654)",
 description="Reach 10 stacks of Mutagen in the Everbloom Wilds.",
 },[[
@@ -20,7 +20,7 @@ _Gain_ 10 stacks of Mutagen
 step
 Congratulations, you have _earned_ the Mean and Green Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Exploration\\Draenor\\Jungle Treasure Hunter/Master",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration\\Draenor\\Jungle Treasure Hunter/Master",{
 condition_end="achieved(10262)",
 achieveid={10261, 10262},
 description="This guide will walk you through discovering all of the treasures in Tanaan Jungle.",

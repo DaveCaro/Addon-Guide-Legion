@@ -19,7 +19,7 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Dailies",[[
 		accept It's Hammer Time##29463 |goto Darkmoon Island,53.3,54.4
 	step
 		talk Mola##54601
-		Tell her "Ready to whack!" |havebuff Interface\Icons\inv_hammer_32 |goto Darkmoon Island,53.3,54.4 
+		Tell her "Ready to whack!" |havebuff 537060 |goto Darkmoon Island,53.3,54.4 --inv_hammer_32
 		only if havequest(29463)
 	step
 		Use the _Whack!_ on your bar and whack the Gnolls in the Barrels
@@ -41,7 +41,7 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Dailies",[[
 	label	"quest"
 		talk Maxima Blastenheimer##15303
 		Tell her "Launch me!"
-		Wait for the Cannon to Launch you |havebuff Interface\Icons\Spell_Magic_FeatherFall |goto Darkmoon Island,52.5,56.2
+		Wait for the Cannon to Launch you |havebuff 135992 |goto Darkmoon Island,52.5,56.2 --Spell_Magic_FeatherFall
 		only if havequest(29436)
 	step
 		You will be launched throught the air.
@@ -60,7 +60,7 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Dailies",[[
 		accept He Shoots, He Scores!##29438 |goto 49.3,60.8
 	step
 		talk Rinling##14841
-		Tell him "Let's shoot!" |havebuff Interface\Icons\INV_Weapon_Rifle_05 |goto 49.3,60.8
+		Tell him "Let's shoot!" |havebuff 135614 |goto 49.3,60.8 --INV_Weapon_Rifle_05
 		only if havequest(29438)
 	step
 		Shoot at the 3 targets
@@ -88,7 +88,7 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Dailies",[[
 		accept Firebird's Challenge##36481 |goto 48.37,71.36
 	step
 		talk Ziggie Sparks##85546
-		Tell her "Ready to fly!" |havebuff INTERFACE\ICONS\inv_shoulder_leather_firelandsdruid_d_01 |goto 48.37,71.36 
+		Tell her "Ready to fly!" |havebuff 514340 |goto 48.37,71.36 --inv_shoulder_leather_firelandsdruid_d_01
 		only if havequest(36481)
 	step
 		Fly through the rings all around the Darkmoon Faire |tip Try and go as fast as you can, as the buff falls off in 9 seconds
@@ -101,7 +101,7 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Dailies",[[
 		accept Target: Turtle##29455 |goto 51.6,77.8
 	step
 		talk Jessica Rogers##54485
-		Tell her "Ready to play!" |havebuff Interface\Icons\INV_Jewelry_Ring_03 |goto 51.6,77.8
+		Tell her "Ready to play!" |havebuff 133345 |goto 51.6,77.8 --INV_Jewelry_Ring_03
 		only if havequest(29455)
 	step
 		Use your _Ring Toss_ ability to throw rings on the turtle.  
@@ -116,8 +116,8 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Dailies",[[
 		accept The Real Race##37910 |goto 49.04,88.21
 	step
 		Select a mount|goto Darkmoon Island/0 48.4,87.7
-		Choose the _Racing Strider_ |havebuff Interface\Icons\Ability_Hunter_Pet_TallStrider |or --Strider
-		Choose the _Rocketeer_ |havebuff Interface\Icons\ability_mount_blackbattlestrider |or --Mech
+		Choose the _Racing Strider_ |havebuff 132198 |or --Ability_Hunter_Pet_TallStrider
+		Choose the _Rocketeer_ |havebuff 298587 |or --ability_mount_blackbattlestrider
 	step
 		Enter the Start Banner with a Darkmoon Game Token |q The Real Race##37910/1 |goto 47.71,88.27
 	step
@@ -154,9 +154,9 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Dailies",[[
 		turnin The Real Race##37910 |goto 49.04,88.21
 		accept Let's Keep Racing!##33756 |goto 48.96,88.15
 	step
-		Select a mount|goto Darkmoon Island/0 48.4,87.7
-		Choose the _Racing Strider_ |havebuff Interface\Icons\Ability_Hunter_Pet_TallStrider |or --Strider
-		Choose the _Rocketeer_ |havebuff Interface\Icons\ability_mount_blackbattlestrider |or --Mech
+		Select a mount |goto Darkmoon Island/0 48.4,87.7
+		Choose the _Racing Strider_ |havebuff 132198 |or --Ability_Hunter_Pet_TallStrider
+		Choose the _Rocketeer_ |havebuff 298587 |or --ability_mount_blackbattlestrider
 		only if havequest(37910) or havequest(33756)
 	step
 		Enter the Start Banner with a Darkmoon Game Token |q Let's Keep Racing##33756/1 |goto 47.71,88.27
@@ -196,8 +196,8 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Dailies",[[
 		accept The Real Big Race##37911 |goto 53.18,87.56
 	step
 		Select a mount|goto Darkmoon Island/0 48.4,87.7
-		Choose the _Racing Strider_ |havebuff Interface\Icons\Ability_Hunter_Pet_TallStrider |or --Strider
-		Choose the _Rocketeer_ |havebuff Interface\Icons\ability_mount_blackbattlestrider |or --Mech
+		Choose the _Racing Strider_ |havebuff 132198 |or --Ability_Hunter_Pet_TallStrider
+		Choose the _Rocketeer_ |havebuff 298587 |or --ability_mount_blackbattlestrider
 		only if havequest(37911) or havequest(37868)
 	step
 		Enter the Start Banner with a Darkmoon Game Token |q The Real Big Race##37911/1 |goto Darkmoon Island/0 54.5,88.3
@@ -241,8 +241,8 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Dailies",[[
 		accept More Big Racing!##37868 |goto 53.11,87.71
 	step
 		Select a mount|goto Darkmoon Island/0 48.4,87.7
-		Choose the _Racing Strider_ |havebuff Interface\Icons\Ability_Hunter_Pet_TallStrider |or --Strider
-		Choose the _Rocketeer_ |havebuff Interface\Icons\ability_mount_blackbattlestrider |or --Mech
+		Choose the _Racing Strider_ |havebuff 132198 |or --Ability_Hunter_Pet_TallStrider
+		Choose the _Rocketeer_ |havebuff 298587 |or --ability_mount_blackbattlestrider
 		only if havequest(37911) or havequest(37868)
 	step
 		Enter the Start Banner with a Darkmoon Game Token |q The Real Big Race##37868/1 |goto Darkmoon Island/0 54.5,88.3
@@ -747,7 +747,7 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Achievements",[[
 		talk Malle Earnhard##74056
 		accept The Real Race##37910 |goto 49.04,88.21
 	step
-		Choose the _Racing Strider_ |havebuff Interface\Icons\Ability_Hunter_Pet_TallStrider |goto Darkmoon Island/0 48.4,87.7 --Strider
+		Choose the _Racing Strider_ |havebuff 132198 |goto Darkmoon Island/0 48.4,87.7 --Ability_Hunter_Pet_TallStrider
 		only if havequest(37910)
 	step
 		Enter the Start Banner with a Darkmoon Game Token |q The Real Race##37910/1 |goto 47.71,88.27
@@ -785,7 +785,7 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Achievements",[[
 		turnin The Real Race##37910 |goto 49.04,88.21
 		accept Let's Keep Racing!##33756 |goto 48.96,88.15
 	step
-		Choose the _Racing Strider_ |havebuff Interface\Icons\Ability_Hunter_Pet_TallStrider |goto Darkmoon Island/0 48.4,87.7 --Strider
+		Choose the _Racing Strider_ |havebuff 132198 |goto Darkmoon Island/0 48.4,87.7 --Ability_Hunter_Pet_TallStrider
 		only if havequest(33756)
 	step
 		Enter the Start Banner with a Darkmoon Game Token |q Let's Keep Racing##33756/1 |goto 47.71,88.27
@@ -837,7 +837,7 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Achievements",[[
 		talk Patti Earnhard##90473
 		accept The Real Big Race##37911 |goto 53.18,87.56
 	step
-		Choose the _Rocketeer_ |havebuff Interface\Icons\ability_mount_blackbattlestrider  |goto Darkmoon Island/0 48.4,87.7--Mech
+		Choose the _Rocketeer_ |havebuff 298587  |goto Darkmoon Island/0 48.4,87.7--ability_mount_blackbattlestrider
 		only if havequest(37911) or havequest(37868)
 	step
 		Enter the Start Banner with a Darkmoon Game Token |q The Real Big Race##37911/1 |goto Darkmoon Island/0 54.5,88.3
@@ -880,7 +880,7 @@ ZygorGuidesViewer:RegisterInclude("H_Darkmoon_Faire_Achievements",[[
 		turnin The Real Big Race##37911 |goto 53.18,87.56
 		accept More Big Racing!##37868 |goto 53.11,87.71
 	step
-		Choose the _Rocketeer_ |havebuff Interface\Icons\ability_mount_blackbattlestrider |goto Darkmoon Island/0 48.4,87.7 --Mech
+		Choose the _Rocketeer_ |havebuff 298587 |goto Darkmoon Island/0 48.4,87.7 --ability_mount_blackbattlestrider
 		only if havequest(37911) or havequest(37868)
 	step
 		Enter the Start Banner with a Darkmoon Game Token |q The Real Big Race##37868/1 |goto Darkmoon Island/0 54.5,88.3
@@ -2018,6 +2018,8 @@ ZygorGuidesViewer:RegisterInclude("H_Children's_Week_Ogrimmar_Quests",[[
 		talk Orphan Matron Battlewail##51989
 		turnin A Warden of the Horde##5502 |goto 58.0,57.6 
 		|tip You will be able to choose from 3 pet companions or a 5 gold reward.  If you already have all 3 pets, choose the gold.  You will be able to do this quest each year, so you will be able to collect all 3 pets, eventually.
+	step
+		You have reached the end of the Children's Week Orgrimmar guide
 ]])
 ZygorGuidesViewer:RegisterInclude("H_Children's_Week_Shattrath_Quests",[[
 	step
@@ -2148,6 +2150,8 @@ ZygorGuidesViewer:RegisterInclude("H_Children's_Week_Oracle_Quests",[[
 		turnin Back To The Orphanage##28879 |goto Dalaran 49.4,63.2
 		turnin Back To The Orphanage##13959 |goto Dalaran 49.4,63.2 
 		|tip You will receive a Curious Oracle Hatchling pet companion in the mail.
+	step
+		You have reached the end of this guide
 ]])
 ZygorGuidesViewer:RegisterInclude("H_Children's_Week_Wolvar_Quests",[[
 	step
@@ -2221,6 +2225,8 @@ ZygorGuidesViewer:RegisterInclude("H_Children's_Week_Wolvar_Quests",[[
 		turnin Back To The Orphanage##28880 |goto Dalaran 49.4,63.2
 		turnin Back To The Orphanage##13960 |goto Dalaran 49.4,63.2 
 		|tip You will receive a Curious Wolvar Pup pet companion in the mail.
+	step
+		You have reached the end of this guide
 ]])
 ZygorGuidesViewer:RegisterInclude("H_Children's_Week_Achievements",[[
 	step
@@ -2228,6 +2234,7 @@ ZygorGuidesViewer:RegisterInclude("H_Children's_Week_Achievements",[[
 		Ask her for another Orphan Whistle |collect 1 Orcish Orphan Whistle##18597 |goto Orgrimmar 58.1,57.4
 	step
 		Complete any 5 daily quests of your choice: 
+		This _cannot_ be earned with World Quests at the moment
 		|tip Make sure your orphan is standing next to you when turning in the daily quests, or you won't get credit for this achievement.
 		Get the Daily Chores Achievement |achieve 1789
 	step
@@ -2250,12 +2257,12 @@ ZygorGuidesViewer:RegisterInclude("H_Children's_Week_Achievements",[[
 	step
 		Use whichever Orphan Whistle you currently have to summon your Orphan, so that the Orphan is standing next to you:
 		Eat Tigule and Foror's Strawberry Ice Cream |achieve 1788/1 |use Tigule and Foror's Strawberry Ice Cream##7228
-		Eat Tasty Cupcake |achieve 1788/6 |use Tasty Cupcake##43490
-		Eat Red Velvet Cupcake |achieve 1788/4 |use Red Velvet Cupcake##42429
-		Eat Delicious Chocolate Cake |achieve 1788/5 |use Delicious Chocolate Cake##33924
-		Eat Lovely Cake Slice |achieve 1788/2 |use Lovely Cake Slice##42434
-		Eat Dalaran Brownie |achieve 1788/7 |use Dalaran Brownie##42431
-		Eat Dalaran Doughnut |achieve 1788/3 |use Dalaran Doughnut##42430
+		Eat Tasty Cupcake |achieve 1788/2 |use Tasty Cupcake##43490
+		Eat Red Velvet Cupcake |achieve 1788/3 |use Red Velvet Cupcake##42429
+		Eat Delicious Chocolate Cake |achieve 1788/4 |use Delicious Chocolate Cake##33924
+		Eat Lovely Cake Slice |achieve 1788/5 |use Lovely Cake Slice##42434
+		Eat Dalaran Brownie |achieve 1788/6 |use Dalaran Brownie##42431
+		Eat Dalaran Doughnut |achieve 1788/7 |use Dalaran Doughnut##42430
 	step
 		Use your Hearthstone while your Orphan is standing next to you |use Hearthstone##6948
 		Get the Home Alone Achievement |achieve 1791
@@ -2266,19 +2273,19 @@ ZygorGuidesViewer:RegisterInclude("H_Children's_Week_Achievements",[[
 	step
 		Enter the Eye of the Storm battleground and capture the flag 
 		|tip Make sure your Orphan is standing next to you when you capture the flag, or else you won't get credit for the achievement.
-		Capture the flag in Eye of the Storm |achieve 1786/3
+		Capture the flag in Eye of the Storm |achieve 1786/1
 	step
 		Enter the Alterac Valley battleground and assault a tower 
 		|tip Make sure your Orphan is standing next to you when you assault the tower, or else you won't get credit for the achievement.
-		Assault a tower in Alterac Valley |achieve 1786/1
+		Assault a tower in Alterac Valley |achieve 1786/2
 	step
 		Enter the Arathi Basin battleground and assault a flag 
 		|tip Make sure your Orphan is standing next to you when you assault the flag, or else you won't get credit for the achievement.
-		Assault a flag in Arathi Basin |achieve 1786/4
+		Assault a flag in Arathi Basin |achieve 1786/3
 	step
 		Enter the Warsong Gulch battleground and return a fallen flag 
 		|tip Make sure your Orphan is standing next to you when you return the fallen flag, or else you won't get credit for the achievement.
-		Return a fallen flag in Warsong Gulch |achieve 1786/2
+		Return a fallen flag in Warsong Gulch |achieve 1786/4
 	step
 		Congratulations, you do it For The Children! |achieve 1793
 ]])

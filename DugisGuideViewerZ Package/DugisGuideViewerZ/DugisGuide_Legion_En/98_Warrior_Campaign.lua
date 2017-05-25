@@ -377,18 +377,18 @@ C Destiny Unfulfilled |QID|44497| |N|Witness True Betrayal in Shadowmoon Valley 
 R Skyhold |TID|44496| |N|Travel to {Skyhold} (45.32,30.18)| |Z|1035 1|
 T Destiny Unfulfilled |QID|44496| |N|(npc:113857) in {Skyhold} (45.32,30.18)| |Z|1035 1| |NPC|113857|
 
-R Krasus' Landing |N|Travel to Krasus' Landing} (69.40, 43.99)| |Z|1014 10|
+R Krasus' Landing |QID|46734| |N|Travel to {Krasus' Landing} (69.40, 43.99)| |Z|1014 10|
 A Armies of Legionfall |QID|46730| |N|This quest is available after you unlock World Quests by completing (qid:43341)| |Z|1014 10| |NPC|120215| |O|
 T Armies of Legionfall |QID|46730| |N|(npc:120215), in {Krasus' Landing} (69.37, 43.88)| |Z|1014 10| |NPC|120215| |O|
 A Assault on Broken Shore |QID|46734| |N|(npc:120215) in {Krasus' Landing} (69.40, 43.99)| |Z|1014 10| |NPC|120215|
 N (npc:120215) |QID|46734.1| |N|Speak to (npc:120215) in {Krasus' Landing} (69.40, 43.99)| |Z|1014 10| |NPC|120215|
-N (npc:120752) |SID|35327|1| |N|Mount the (npc:120752) in {Krasus' Landing}| |NPC|120752| |V|
-C Secure the Beach |SID|35327|2| |N|Kill the demons on the beach until you reach 100% to secure the beach (50.86, 69.96)| |Z|1149 0|
-C Defeat Lord Kalgorath |SID|35329|3| |N|Defeat (npc:116291) in {Broken Shore} (44.30, 73.90) (42.04, 72.23) (41.29, 65.12) (41.30, 65.12)| |Z|1149 0| |NPC|116291|
-C Legion portals closed |SID|35495|4| |N|Follow the waypoints and defeat the forces to close the portals in {Broken Shore}(42.95, 58.73)  (46.98, 58.29) (52.15, 52.38)(54.57, 47.99) (57.09, 52.15) (59.09, 51.61) (59.09, 51.61)| |Z|1149 0|
-K (npc:118551) |SID|35497|5| |N|Kill (npc:118551) in {Broken Shore} (55.15, 51.75)| |Z|1149 0| |NPC|118551|
-C Use Gateway |SID|35551|6| |N|Take the Demonic Gateway to the base of Mephistroth's command ship (53.41, 50.42)| |Z|1149 0|
-C Plant Arcane Bombs |SID|36178|7| |N|Plant Arcane Bombs in the command ship in each waypoints, look for the yellow dots in the minimap, you will need to use the portal after planting the first 2| |Z|1149 0|
+N (npc:120752) |SID|35327|1| |N|Mount the (npc:120752) in {Krasus' Landing}| |NPC|120752| |V| |QID|46734| 
+C Secure the Beach |SID|35327|2| |N|Kill the demons on the beach until you reach 100% to secure the beach (50.86, 69.96)| |Z|1149 0| |QID|46734| 
+C Defeat Lord Kalgorath |SID|35329|3| |N|Defeat (npc:116291) in {Broken Shore} (44.30, 73.90) (42.04, 72.23) (41.29, 65.12) (41.30, 65.12)| |Z|1149 0| |NPC|116291| |QID|46734| 
+C Legion portals closed |SID|35495|4| |N|Follow the waypoints and defeat the forces to close the portals in {Broken Shore}(42.95, 58.73)  (46.98, 58.29) (52.15, 52.38)(54.57, 47.99) (57.09, 52.15) (59.09, 51.61) (59.09, 51.61)| |Z|1149 0| |QID|46734| 
+K (npc:118551) |SID|35497|5| |N|Kill (npc:118551) in {Broken Shore} (55.15, 51.75)| |Z|1149 0| |NPC|118551| |QID|46734| 
+C Use Gateway |SID|35551|6| |N|Take the Demonic Gateway to the base of Mephistroth's command ship (53.41, 50.42)| |Z|1149 0| |QID|46734| 
+C Plant Arcane Bombs |SID|36178|7| |N|Plant Arcane Bombs in the command ship in each waypoints, look for the yellow dots in the minimap, you will need to use the portal after planting the first 2| |Z|1149 0| |QID|46734| 
 C Defeat Mephistroth |SID|36179|8| |N|Kill (npc:120746) in {Broken Shore} (50.03, 45.38)| |Z|1149 0| |NPC|120746| |QID|46734.2|
 
 T Assault on Broken Shore |QID|46734| |N|(npc:116302) in {Deliverance Point} (44.71, 63.29)| |Z|1021 0| |NPC|116302|
@@ -404,6 +404,19 @@ R Vengeance Point |QID|46845| |N|Travel to {Vengeance Point} (50.63, 20.77)| |Z|
 N Scout Dreadstalker Point |QID|46845.1| |N|Scout Dreadstalker Point (50.66, 21.41)| |Z|1021 0|
 C Vengeance Point |QID|46845| |N|Kill 4 (npc:120969) and 5 (npc:120748) in {Vengeance Point} (50.63, 20.77)| |Z|1021 0| |NPC|120969, 120748|
 T Vengeance Point |QID|46845| |N|(npc:111323) in {Vengeance Point} (49.69, 21.03)| |Z|1021 0| |NPC|111323|
+T Legionfall Supplies |QID|46286| |N|(npc:120183) in {Deliverance Point} (44.55,63.15)| |Z|1021 0| |NPC|120183|
+A Begin Construction |QID|46245| |N|(npc:120183) in {Deliverance Point} (44.54,63.15)| |Z|1021 0| |NPC|120183|
+C Begin Construction |QID|46245.1| |N|Use the table and Donate Legionfall War Supplies to the construction of the Mage Tower, Nether Disruptor, or Command Center in {Deliverance Point} (44.74, 63.13)| |Z|1021 0|
+T Begin Construction |QID|46245| |N|(npc:120183) in {Deliverance Point} (44.54,63.15)| |Z|1021 0| |NPC|120183|
+A Defending Broken Isles |QID|46247| |N|(npc:116576) in {The Fel Hammer}, this quest is available (44.54,63.53)| |Z|1052 2| |NPC|116576|
+C Defending Broken Isles |QID|46247.1| |N|Defeat a Legion Assault in the Broken Isles, check the Broken Isle map for Legion Assault and complete the World quest for it| |Z|1021 0|
+T Defending Broken Isles |QID|46247| |N|(npc:116576) in {Deliverance Point} (44.54,63.52)| |Z|1021 0| |NPC|116576|
+A Mark of the Sentinax |QID|47139| |N|(npc:117873) in {Deliverance Point} (44.79,63.17)| |Z|1021 0| |NPC|117873|
+C Mark of the Sentinax |QID|47139|  |N|Collect 100 (item:147582) <br/><b>These are collected from Sentinax Portals.<br/><b>Sentinax Beacons summon portals which spawn mobs that you can kill for Marks.<br/><b>Setninax Beacons drop from mobs in Broken Shore.<br/><b>Open your map and look for the Sentinax icon. Use your beacons below the ship. (50.56,43.35)| |Z|1021 0| 
+T Mark of the Sentinax |QID|47139| |N|(npc:117873) in {Deliverance Point} (44.79,63.17)| |Z|1021 0| |NPC|117873|
+A Self-Fulfilling Prophecy |QID|46248| |N|(npc:120372) in {Deliverance Point} (44.57,63.39)| |Z|1021 0| |NPC|120372|
+C Self-Fulfilling Prophecy |QID|46248| |N|Complete 12 world quests on Broken Shore|
+T Self-Fulfilling Prophecy |QID|46248| |N|(npc:120372) in {Deliverance Point} (44.57,63.39)| |Z|1021 0| |NPC|120372|
 
 A Seeking Lost Knowledge |QID|47067| |N|(npc:116302) in {Deliverance Point}<br/><br/>You need at least rank 25 artifact knowledge (44.71, 63.29)| |Z|1021 0| |NPC|116302|
 
@@ -414,41 +427,16 @@ N Recover Knowledge from Moonlight Ascent |QID|47067.1| |N|Click Remnant of Lost
 T Seeking Lost Knowledge |QID|47067| |N|(npc:116302) in {Deliverance Point} (44.71, 63.29)| |Z|1021 0| |NPC|116302|
 A Delivering Lost Knowledge |QID|47072| |N|(npc:116302) in {Deliverance Point} (44.71, 63.29)| |Z|1021 0| |NPC|116302|
 
-A Legionfall Supplies |QID|46286| |N|(npc:120183) in {Deliverance Point} (44.54,63.14)| |Z|1021 0| |NPC|120183|
-
-C Legionfall Supplies |QID|46286| |N|Complete World Quests or slay Rare Elites on the Broken Shore to earn 100 (cur:1342)|
-T Legionfall Supplies |QID|46286| |N|(npc:120183) in {Deliverance Point} (44.55,63.15)| |Z|1021 0| |NPC|120183|
-A Begin Construction |QID|46245| |N|(npc:120183) in {Deliverance Point} (44.54,63.15)| |Z|1021 0| |NPC|120183|
-C Begin Construction |QID|46245.1| |N|Use the table and Donate Legionfall War Supplies to the construction of the Mage Tower, Nether Disruptor, or Command Center in {Deliverance Point} (44.74, 63.13)| |Z|1021 0|
-T Begin Construction |QID|46245| |N|(npc:120183) in {Deliverance Point} (44.54,63.15)| |Z|1021 0| |NPC|120183|
-
+R Skyhold |QID|46940| |N|Travel to {Skyhold} (45.09,28.28)| |Z|1035 1| 
 T Delivering Lost Knowledge |QID|47072| |N|(npc:111741) in {Skyhold} (45.09,28.28)| |Z|1035 1| |NPC|111741|
 A Using Lost Knowledge |QID|46940| |N|(npc:111741) in {Skyhold} (45.09,28.28)| |Z|1035 1| |NPC|111741|
 C Using Lost Knowledge |QID|46940.1| |N|(npc:111741) and begin a work order  (45.07,28.32)| |Z|1035 1| |NPC|111741|
 T Using Lost Knowledge |QID|46940| |N|(npc:111741) in {Skyhold} (45.09,28.28)| |Z|1035 1| |NPC|111741|
 
-A Greater Power For Greater Threats |QID|46744| |N|(npc:116302) in {Deliverance Point} (44.73,63.27)| |Z|1021 0| |NPC|116302|
-A A Godly Invitation |QID|46208| |N|(npc:119527) in {Deliverance Point} (44.73,63.27)| |Z|1021 0| |NPC|119527|
-
-T A Godly Invitation |QID|46208| |N|(npc:96469) in {Skyhold} (58.40,84.56)| |Z|1035 1| |NPC|96469|
-A The Trial of Rage |QID|46207| |N|(npc:96469) in {Skyhold} (58.40,84.56)| |Z|1035 1| |NPC|96469|
-C The Trial of Rage |QID|46207| |N|Speak to (npc:96469) to enter the Trial of Rage scenario, tick this step (58.40,84.56)| |Z|1021 0| |NPC|96469|
-
-N (npc:118762) |SID|35413|1| |QID|46207| |N|Speak to (npc:118762) and challenge him to a fight {Halls of Valor} (52.30,87.07)| |Z|1041 1| |NPC|118762|
-K (npc:118762) |SID|35403|1| |QID|46207| |N|Kill (npc:118762) {Halls of Valor} (50.32,85.82)| |Z|1041 1| |NPC|118762|
-N (npc:118775) |SID|35414|2| |QID|46207| |N|Speak to (npc:118775) and challenge him to a fight in {Halls of Valor} (50.47,87.13)| |Z|1041 1| |NPC|118775|
-K (npc:118775) |SID|35410|2| |QID|46207| |N|Kill (npc:118775) in {Halls of Valor} (50.47,85.82)| |Z|1041 1| |NPC|118775|
-N (npc:118772) |SID|35415|3| |QID|46207| |N|Speak to (npc:118772) and challenge him to a fight {Halls of Valor} (51.39,87.03)| |Z|1041 1|
-K (npc:118772) |SID|35411|3| |QID|46207| |N|Kill (npc:118772) in {Halls of Valor} (50.47,85.82)| |Z|1041 1| |NPC|118772|
-N Step onto the Rune |SID|36226|4| |QID|46207| |N|Step onto the Rune in {Halls of Valor} (52.49,87.95)| |Z|1041 1|
-K (npc:118855) |SID|35412|4| |QID|46207| |N|Kill (npc:118855) in {Halls of Valor} (50.95,85.80)| |Z|1041 1| |NPC|118855|
-N Return to Skyhold |QID|46207.2| |N|Click Skyhold Portal to return to {Skyhold} (51.41,89.43)| |Z|1041 1|
-
-T The Trial of Rage |QID|46207| |N|Speak to (npc:96469) in {Skyhold} (58.40,84.56)| |Z|1035 1| |NPC|96469|
-
-C Greater Power For Greater Threats |QID|46744| |N|You need to earn enough artifact points and unlock All Traits on an Artifact Weapon (40.31,35.83)| |Z|1021 0| |NPC|116302|
-
-T Greater Power For Greater Threats |QID|46744| |N|(npc:116302) in {Deliverance Point} (44.73,63.26)| |Z|1021 0| |NPC|116302|
+R Deliverance Point |QID|46744| |N|Travel to {Deliverance Point} (44.74,63.27)| |Z|1021 0| 
+A Greater Power for Greater Threats |QID|46744| |N|(npc:116302) in {Deliverance Point} (44.74,63.27)| |OID|46765| |NPC|116302| |Z|1021 0| 
+C Greater Power for Greater Threats |QID|46744| |N|Unlock all traits for one of your artifacts. You can earn artifact power by completing world quests, dungeons, and certain quests.|  |OID|46765| |Z|1021 0| 
+T Greater Power for Greater Threats |QID|46744| |N|(npc:116302) in {Deliverance Point} (44.74,63.27)| |OID|46765| |NPC|116302| |Z|1021 0| 
 A The Broken Shore: Investigating the Legion |QID|46765| |N|(npc:116302) in {Broken Shore} (44.73,63.26)| |Z|1021 0| |NPC|116302|
 N Discover the Hidden Legion Threat |QID|46765.1| |N|Collect (item:147430), This item has a chance to drop off of any mob in the area. (44.61,49.57)| |Z|1021 0|
 T The Broken Shore: Investigating the Legion |QID|46765| |N|(npc:116302) in {Broken Shore} (44.73,63.27)| |Z|1021 0| |NPC|116302|
@@ -463,9 +451,173 @@ A In Dire Need |QID|44821| |N|(npc:115465) in {Dalaran} (22.20,39.04)| |Z|1014 1
 N Hear the Council's Plea |QID|44821.1| |N|Wait for the dialogue to complete in {Dalaran} (22.29,39.68)| |Z|1014 10|
 T In Dire Need |QID|44821| |N|(npc:115465) in {Dalaran} (22.29,39.64)| |Z|1014 10| |NPC|115465|
 
+N Choose Spec |N|Click on the link below depending on your spec, You must have 35 artifact traits unlocked to start the questline for a specialization. <br/><br/>(choice:1:Arms)<br/>(choice:2:Fury)<br/>(choice:3:Protection)| 
+
+--Arms
+A Arms: The Thieving Apprentice |QID|44914| |N|(npc:115467) in {Dalaran}, You must have 35 Traits unlocked to A this quest. (28.66,49.92)| |Z|1014 10| |CHOICE|1| |NPC|115467|
+
+R Azshara |QID|44915| |N|Travel to {Azshara} (25.02,38.53)| |Z|181 0| |CHOICE|1| |NPC|115791|
+T Arms: The Thieving Apprentice |QID|44914| |N|(npc:115791) in {Azshara} (25.02,38.53)| |Z|181 0| |CHOICE|1| |NPC|115791|
+A Professionally Good Looking |QID|44915| |N|(npc:115791) in {Azshara} (25.02,38.53)| |Z|181 0| |CHOICE|1| |NPC|115791|
+
+N Acquire the Fanciful Hat |QID|44915.3| |N|Speak to (npc:115970) and collect a (item:142374) (45.17,18.42)| |Z|181 0| |CHOICE|1| |NPC|115970|
+N Acquire the Well-Tailored Robes |QID|44915.2| |N|Speak to (npc:115946) and collect a (item:142372) (62.45,16.05)| |Z|181 0| |CHOICE|1| |NPC|115946|
+N Acquire the Magnificent Mantle |QID|44915.1| |N|Speak to (npc:115903) and collect a (item:142365) (80.84,32.05)| |Z|181 0| |CHOICE|1| |NPC|115903|
+
+T Professionally Good Looking |QID|44915| |N|(npc:115791) in {Azshara} (25.02,38.53)| |Z|181 0| |CHOICE|1| |NPC|115791|
+A Order of Incantations |QID|44920| |N|(npc:115791) in {Azshara} (25.02,38.53)| |Z|181 0| |CHOICE|1| |NPC|115791|
+N Solve the barrier puzzle |QID|44920.2| |N|Click the gems in this exact order, not following the proper order will result in instant death.<br/><b>Arcane-Imbued Gem<br/><b>Frost-Imbued Gem<br/><b>Fire-Imbued Gem<br/><b>Shadow-Imbued Gem (25.15,38.49)| |Z|181 0| |CHOICE|1|
+
+T Order of Incantations |QID|44920| |N|Field turnin (25.15,38.49)| |Z|181 0| |CHOICE|1|
+A The Archmage Accosted |QID|44924| |N|Auto quest (25.15,38.49)| |Z|181 0| |CHOICE|1|
+N Confront Archmage Xylem |QID|44924.1| |N|Kill (npc:115860) and confront Archmage Xylem  (25.21,38.03)| |Z|181 0| |CHOICE|1| |NPC|115860|
+N Follow through the portal |QID|44924.2| |N|Click Xylem's Portal (25.20,37.97)| |Z|181 0| |CHOICE|1|
+
+T The Archmage Accosted |QID|44924| |N|(npc:116048) in {Azshara} (25.22,37.90)| |Z|181 0| |CHOICE|1| |NPC|116048|
+A A Portal Away |QID|46177| |N|(npc:116048) in {Azshara} (25.22,37.90)| |Z|181 0| |NPC|116048| |CHOICE|1|
+
+R Dalaran |TID|46177| |N|Travel to {Dalaran} (28.61,49.90)| |Z|1014 10| |CHOICE|1|
+T A Portal Away |QID|46177| |N|(npc:105081) in {Dalaran} (28.61,49.90)| |Z|1014 10| |CHOICE|1| |NPC|105081|
+A A Gift From the Six |QID|45865| |N|(npc:90418) in {Dalaran} (28.43,48.91)| |Z|1014 10| |CHOICE|1| |NPC|90418|
+N Receive the Council's gift |QID|45865.1| |N|Stand in the circle and use the special action button that appears on-screen. (30.42,48.91)| |Z|1014 10| |CHOICE|1|
+T A Gift From the Six |QID|45865| |N|(npc:90418) in {Dalaran} (28.44,48.91)| |Z|1014 10| |CHOICE|1| |NPC|90418|
+
+--Fury
+A Fury: The Folly of Levia Laurence |QID|47056| |N|(npc:115465) in {Dalaran} (28.43,48.90)| |Z|1014 10| |CHOICE|2|
+N (npc:92195) |QID|47056.1| |N|Speak to (npc:92195) in {Dalaran} and ask About Levia at the Scribe's Sacellum (41.30,37.05)| |Z|1014 10| |NPC|92195| |CHOICE|2|
+N (npc:97331) |QID|47056.2| |N|Speak to (npc:97331) in {Dalaran} and ask About Levia at the Militant Mystic (49.31,73.11)| |Z|1014 10| |NPC|97331| |CHOICE|2|
+N (npc:96806) |QID|47056.3| |N|Speak to (npc:97331) in {Dalaran} and ask About Levia at the Legerdemain Lounge (49.31,73.11)| |Z|1014 10| |NPC|96806| |CHOICE|2|
+N Investigate Levia's Belongings |QID|47056.4| |N|Go upstairs and click Levia's Research Journal (50.68,40.22) (46.41,40.08)| |Z|1014 10| |CHOICE|2|
+T Fury: The Folly of Levia Laurence |QID|47056| |N|(npc:90418) in {Dalaran} (28.48,48.93)| |Z|1014 10| |NPC|90418| |CHOICE|2|
+A Bargaining with Shadows |QID|46327| |N|(npc:90418) in {Dalaran} (28.48,48.93)| |Z|1014 10| |NPC|90418| |CHOICE|2|
+
+T Bargaining with Shadows |QID|46327| |N|(npc:116714) in {Chamber of the Guardians} (52.77,59.25)| |Z|1014 12| |NPC|116714| |CHOICE|2|
+A The Acolyte Imperiled |QID|45916| |N|(npc:116714) in {Chamber of the Guardians} (52.77,59.25)| |Z|1014 12| |NPC|116714| |CHOICE|2|
+N Investigate Levia's Ritual |QID|45916.1| |N|Investigate Levia's Ritual in {Chamber of the Guardians} (58.07,72.99)| |Z|1014 12| |CHOICE|2|
+N (npc:116714) |QID|45916.2| |N|Kill the enemies that attack and defend (npc:116714) (58.07,72.99)| |Z|1014 12| |NPC|116714| |CHOICE|2|
+T The Acolyte Imperiled |QID|45916| |N|(npc:116714) in {Chamber of the Guardians} (58.07,72.99)| |Z|1014 12| |NPC|116714| |CHOICE|2|
+A Dabbling in the Demonic |QID|45125| |N|(npc:116714) in {Chamber of the Guardians} (58.07,72.99)| |Z|1014 12| |NPC|116714| |CHOICE|2|
+C Dabbling in the Demonic |QID|45125| |N|Activate the correct three runes to help (npc:116714) to complete the spell to stabilize the portal. <br/><br/>Click on Talar, Taam then Dregla (57.59,72.54)| |Z|1014 12| |NPC|116714| |CHOICE|2| 
+T Dabbling in the Demonic |QID|45125| |N|(npc:116714) in {Chamber of the Guardians} (57.70,72.54)| |Z|1014 12| |NPC|116714| |CHOICE|2|
+A Following the Scent |QID|45917| |N|(npc:116714) in {Chamber of the Guardians} (57.70,72.54)| |Z|1014 12| |NPC|116714| |CHOICE|2|
+
+R Demonic Gateway |QID|45127| |N|Use the Demonic Gateway (60.36,75.79)| |Z|1014 12| |F|1015 0| |CHOICE|2| 
+N (npc:118450) |QID|45917.1| |N|Speak to (npc:118450) in {Azsuna} (30.97,51.84)| |Z|1015 0| |NPC|118450| |CHOICE|2|
+N (npc:116189) |QID|45917.2| |N|Follow (npc:118450) to find (npc:116189) (30.13,52.19) (27.68,52.58) (25.78,57.55)| |Z|1015 0| |NPC|118450, 116189| |CHOICE|2|
+T Following the Scent |QID|45917| |N|(npc:116189) in {Azsuna} (25.67,57.75)| |Z|1015 0| |NPC|116189| |CHOICE|2|
+A Unlikely Seduction |QID|45126| |N|(npc:116189) in {Azsuna} (25.67,57.75)| |Z|1015 0| |NPC|116189| |CHOICE|2|
+K (npc:118520) |QID|45126.1| |N|Kill (npc:118520) in {Azsuna} (25.84,57.42)| |Z|1015 0| |NPC|118520| |CHOICE|2|
+T Unlikely Seduction |QID|45126| |N|(npc:116189) in {Azsuna} (25.67,57.75)| |Z|1015 0| |NPC|116189| |CHOICE|2|
+A Fel-Crossed Lovers |QID|45127| |N|(npc:116189) in {Azsuna} (25.67,57.75)| |Z|1015 0| |NPC|116189| |CHOICE|2|
+
+R Dalaran |QID|45861| |N|Travel to {Dalaran} (28.48,48.93)| |Z|1014 10| |CHOICE|2|
+T Fel-Crossed Lovers |QID|45127| |N|(npc:90418) in {Dalaran} (28.48,48.93)| |Z|1014 10| |NPC|90418| |CHOICE|2|
+A A Gift From the Six |QID|45861| |N|(npc:90418) in {Dalaran} (28.48,48.93)| |Z|1014 10| |NPC|90418| |CHOICE|2|
+N Receive the Council's Gift |QID|45861.1| |N|Stand in the circle and use the special action button that appears on-screen. (30.42,48.93)| |Z|1014 10| |CHOICE|2|
+T A Gift From the Six |QID|45861| |N|(npc:90418) in {Dalaran} (28.48,48.93)| |Z|1014 10| |NPC|90418| |CHOICE|2|
+
+--Protection
+
+A Protection: Aid of the Illidari |QID|45412| |N|(npc:90431) in {Dalaran}, You must have 35 Traits unlocked to accept this quest. (28.46,49.48)| |Z|1014 10| |CHOICE|3| |NPC|90431|
+N (npc:116880) |QID|45412.1| |N|Find (npc:116880) patrolling the streets of Dalaran (49.13,26.03)| |Z|1014 10| |CHOICE|3| |NPC|116880|
+T Protection: Aid of the Illidari|QID|45412| |N|(npc:116880) in {Dalaran} (52.03,19.58)| |Z|1014 10| |CHOICE|3| |NPC|116880|
+A Gathering Information |QID|45413| |N|(npc:116880) in {Dalaran} (52.03,19.58)| |Z|1014 10| |CHOICE|3| |NPC|116880|
+N Investigate the bank employees |QID|45413.1| |N|Speak to the bank employees (npc:96817),  (npc:96818) and (npc:96819) (53.17,15.26)| |Z|1014 10| |CHOICE|3| |NPC|96817, 96818, 96819|
+N Identify the stolen item |QID|45413.2| |N|Speak to (npc:113812) to Identify the stolen item (53.78,20.29)| |Z|1014 10| |CHOICE|3| |NPC|113812|
+T Gathering Information |QID|45413| |N|(npc:116880) in {Dalaran} (52.04,19.63)| |Z|1014 10| |CHOICE|3| |NPC|116880|
+A Confirming Suspicions |QID|45414| |N|(npc:116880) in {Dalaran} (52.04,19.63)| |Z|1014 10| |CHOICE|3| |NPC|116880|
+N Search First to Your Aid |QID|45414.1| |N|Enter the building and ait near Olisarra the Kind until the dialogue completes (37.45,36.54) (36.03,37.51)| |Z|1014 10| |CHOICE|3|
+N Search Krasus' Landing |QID|45414.2| |N|Search Krasus' Landing  (74.83,45.52)| |Z|1014 10| |CHOICE|3|
+N (npc:117042) |QID|45414.3| |N|Speak to (npc:117042) in {Dalaran} (74.83,45.52)| |Z|1014 10| |CHOICE|3| |NPC|117042|
+N Witness Velen's vision |QID|45414.4| |N|Speak to (npc:117042) in {Dalaran} (74.83,45.52)| |Z|1014 10| |CHOICE|3| |NPC|117042|
+T Confirming Suspicions |QID|45414| |N|(npc:117042) in {Dalaran} (74.83,45.52)| |Z|1014 10| |CHOICE|3| |NPC|117042|
+A Between Worlds |QID|45415| |N|(npc:117042) in {Dalaran} (74.83,45.52)| |Z|1014 10| |CHOICE|3| |NPC|117042|
+
+R Hellfire Peninsula |QID|45415.1| |N|Take the portal to Hellfire Peninsula (75.10,46.18)| |Z|1014 10| |CHOICE|3|
+N (npc:116880) |QID|45415.2| |N|Speak to (npc:116880) at the {Stair of Destiny} (85.30,50.11)| |Z|465 0| |CHOICE|3| |NPC|116880|
+N Open the portal |QID|45415.3| |N|Kill Doomheralds first and defeat the waves of enemies to open the portal (85.30,50.11)| |Z|465 0| |CHOICE|3|
+T Between Worlds |QID|45415| |N|(npc:116880) at the {Stair of Destiny} (85.30,50.11)| |Z|465 0| |CHOICE|3| |NPC|116880|
+A Dark Omens |QID|45843| |N|(npc:116880) at the {Stair of Destiny} (85.30,50.11)| |Z|465 0| |CHOICE|3| |NPC|116880|
+
+R Dalaran |QID|45863| |N|Travel to {Dalaran} (28.43,48.91)| |Z|1014 10|  |CHOICE|3|
+T Dark Omens |QID|45843| |N|(npc:90418) in {Dalaran} (28.43,48.91)| |Z|1014 10| |CHOICE|3| |NPC|90418|
+A A Gift From the Six |QID|45863| |N|(npc:90418) in {Dalaran} (28.43,48.91)| |Z|1014 10| |CHOICE|3| |NPC|90418|
+C Receive the Council's gift |QID|45863.1| |N|Stand in the circle and use the special action button that appears on-screen (30.43,48.95)| |Z|1014 10| |CHOICE|3|
+T A Gift From the Six |QID|45863| |N|(npc:90418) in {Dalaran} (28.44,48.91)| |Z|1014 10| |CHOICE|3| |NPC|90418|
+
+--
+
+A Champions of Legionfall |QID|47137| |N|(npc:116576) in  {Broken Shore} (44.54,63.52)| |Z|1021 0| |NPC|116576|
+
+R Skyhold |QID|46173| |N|Travel to {Skyhold} (58.92,36.38)| |Z|1035 1|
+A Tactical Planning |QID|46173| |N|Auto quest, You will aceppt this when you return to Skyhold. (58.92,36.38)| |Z|1035 1|
+T Tactical Planning |QID|46173| |N|(npc:96469) {Skyhold} (58.31,84.33)| |Z|1035 1| |NPC|96469|
+A Recruitment Drive |QID|44849| |N|(npc:96469) {Skyhold} (58.31,84.33)| |Z|1035 1| |NPC|96469|
+N (npc:96679) QID|44849.1| |N|Speak to (npc:96679) to travel to {Helheim} (58.35,25.06)| |Z|1035 1| |NPC|96679|
+
+T Recruitment Drive |QID|44849| |N|(npc:116193)(npc:116193) {Helheim} (34.39,28.50)| |Z|1022 0| |NPC|116193| |NPC|116193|
+A Stolen Souls |QID|45834| |N|(npc:116193) {Helheim} (34.39,28.50)| |Z|1022 0| |NPC|116193|
+A Helya's Horn |QID|45118| |N|(npc:116193) {Helheim} (34.39,28.50)| |Z|1022 0| |NPC|116193|
+A Arming the Army |QID|44850| |N|(npc:116193) {Helheim} (34.39,28.50)| |Z|1022 0| |NPC|116193|
+C Stolen Souls |QID|45834.1| |N|Release 15 Soul Fonts all around {Helheim} (41.52,45.86)| |Z|1022 0|
+C Arming the Army |QID|44850| |N|Search stolen crates for 10 (item:142285) and 10 (item:142312) {Helheim} (41.52,45.86)| |Z|1022 0|
+C Helya's Horn |QID|45118.1| |N|Kill Enemies to Empower Helya's Horn {Helheim}, You can see the progress bar in your quest tracker. (41.52,45.86)| |Z|1022 0|
+T Stolen Souls |QID|45834| |N|(npc:116193) {Helheim} (34.39,28.50)| |Z|1022 0| |NPC|116193|
+T Helya's Horn |QID|45118| |N|(npc:116193) {Helheim} (34.39,28.50)| |Z|1022 0| |NPC|116193|
+T Arming the Army |QID|44850| |N|(npc:116193) {Helheim} (34.39,28.50)| |Z|1022 0| |NPC|116193|
+A A Glorious Reunion |QID|45128| |N|(npc:116193) {Helheim} (34.39,28.50)| |Z|1022 0| |NPC|116193|
+N (npc:116193) |QID|45128.1| |N|Speak to (npc:116193) to return to {Skyhold} (58.35,25.06)| |Z|1035 1| |NPC|116193|
+T A Glorious Reunion |QID|45128| |N|(npc:96469) in {Skyhold} (58.31,84.33)| |Z|1035 1| |NPC|96469|
+A Resource Management |QID|44889| |N|(npc:96469) in {Skyhold} (58.31,84.33)| |Z|1035 1| |NPC|96469|
+
+R Broken Shore |QID|45634| |N|Travel to {Broken Shore} (69.80,34.74)| |Z|1021 0|
+T Resource Management |QID|44889| |N|(npc:116858) {Broken Shore} (69.80,34.74)| |Z|1021 0| |NPC|116858|
+A Kvaldir on Call |QID|45634| |N|(npc:116858) {Broken Shore} (69.80,34.74)| |Z|1021 0| |NPC|116858|
+A Missing in Action: Lord Darius Crowley |QID|45648| |N|(npc:116858) {Broken Shore} (69.80,34.74)| |Z|1021 0| |NPC|116858|
+C Missing in Action: Lord Darius Crowley |QID|45648.1| |N|Click Felsworn Cave and Find (npc:117475) in {Broken Shore} (71.50,28.58)| |Z|1021 0|
+T Missing in Action: Lord Darius Crowley |QID|45648| |N|(npc:117475), next to you| |NPC|117475|
+A Mission: Search and Rescue |QID|45649| |N|(npc:117475), next to you| |NPC|117475|
+A Operation Felrage |QID|45650| |N|(npc:117475), next to you| |NPC|117475|
+N Blow Helya's Horn |QID|45634.1| |N|Use the (spell:229991) extra action button to blow it  {Broken Shore} ( 72.84,27.12)| |Z|1021 0|
+C Mission: Search and Rescue |QID|45649.1| |N|Save 8 (npc:117411) in {Broken Shore} (76.5,27.5)| |Z|1021 0| |NPC|117411|
+K (npc:120143) |QID|45650.2| |N|Kill (npc:120143) in {Broken Shore} (83.45,26.90)| |Z|1021 0| |NPC|120143|
+K (npc:117404) |QID|45650.1| |N|Kill (npc:117404) in {Broken Shore} (83.45,26.90)| |Z|1021 0| |NPC|117404|
+T Operation Felrage |QID|45650| |N|(npc:117475), next to you| |NPC|117475|
+T Mission: Search and Rescue |QID|45649| |N|(npc:117475), next to you| |NPC|117475|
+N Destroy Legion Portals |QID|45634.2| |N|Destroy the legion portal {Broken Shore} (82.78,29.27) (66.87,38.62) (64.58,30.43)| |Z|1021 0| |POI|
+T Kvaldir on Call |QID|45634| |N|(npc:116858) in {Broken Shore} (69.82,34.72)| |Z|1021 0| |NPC|116858|
+A Return of the Battlelord |QID|46267| |N|(npc:116858) in {Broken Shore} (69.82,34.72)| |Z|1021 0| |NPC|116858|
+
+R Skyhold |TID|46267|  |N|Travel to {Skyhold} (58.31,84.33)| |Z|1035 1|
+T Return of the Battlelord |QID|46267| |N|(npc:96469) in {Skyhold} (58.31,84.33)| |Z|1035 1| |NPC|96469|
+A Champion: Lord Darius Crowley |QID|45876| |N|(npc:117475) in {Skyhold} (59.87,83.80)| |Z|1035 1| |NPC|117475| |E|
+T Champions of Legionfall |QID|47137| |N|(npc:116576) in {Broken Shore} (44.54,63.52)| |Z|1021 0| |NPC|116576|
+A Shard Times |QID|46251| |N|(npc:116302) in {Broken Shore} (44.74,63.27)| |Z|1021 0| |NPC|116302|
+C Shard Times |QID|46251.1| |N|Collect 2500 (cur:1226). These can be obtained by looting rares, treasures, and completing world quests. (44.74,63.27)| |Z|1021 0|
+T Shard Times |QID|46251| |N|(npc:116576) in {Broken Shore} (44.54,63.52)| |Z|1021 0| |NPC|116576|
+
+--
 A Champion Armaments |QID|44221| |N|(npc:110437) in {Skyhold}<br/><br/>This quest will only be available if you chose to get the "Heavenly Forge" class hall upgrade (62.29,26.09)| |Z|1035 1| |NPC|110437|
 C Champion Armaments |QID|44221| |N|Speak to (npc:110437) and place a Workorder for Champion Armaments (62.29,26.09)| |Z|1035 1| |NPC|110437|
 T Champion Armaments |QID|44221| |N|(npc:110437) in {Skyhold}<br/><br/>This quest will only be available if you chose to get the "Heavenly Forge" class hall upgrade (62.29,26.09)| |Z|1035 1| |NPC|110437|
+
+--A A Godly Invitation |QID|46208| |N|(npc:119527) in {Deliverance Point} (44.73,63.27)| |Z|1021 0| |NPC|119527|
+
+--T A Godly Invitation |QID|46208| |N|(npc:96469) in {Skyhold} (58.40,84.56)| |Z|1035 1| |NPC|96469|
+--A The Trial of Rage |QID|46207| |N|(npc:96469) in {Skyhold} (58.40,84.56)| |Z|1035 1| |NPC|96469|
+--C The Trial of Rage |QID|46207| |N|Speak to (npc:96469) to enter the Trial of Rage scenario, tick this step (58.40,84.56)| |Z|1021 0| |NPC|96469|
+
+--N (npc:118762) |SID|35413|1| |QID|46207| |N|Speak to (npc:118762) and challenge him to a fight {Halls of Valor} (52.30,87.07)| |Z|1041 1| |NPC|118762|
+--K (npc:118762) |SID|35403|1| |QID|46207| |N|Kill (npc:118762) {Halls of Valor} (50.32,85.82)| |Z|1041 1| |NPC|118762|
+--N (npc:118775) |SID|35414|2| |QID|46207| |N|Speak to (npc:118775) and challenge him to a fight in {Halls of Valor} (50.47,87.13)| |Z|1041 1| |NPC|118775|
+--K (npc:118775) |SID|35410|2| |QID|46207| |N|Kill (npc:118775) in {Halls of Valor} (50.47,85.82)| |Z|1041 1| |NPC|118775|
+--N (npc:118772) |SID|35415|3| |QID|46207| |N|Speak to (npc:118772) and challenge him to a fight {Halls of Valor} (51.39,87.03)| |Z|1041 1|
+--K (npc:118772) |SID|35411|3| |QID|46207| |N|Kill (npc:118772) in {Halls of Valor} (50.47,85.82)| |Z|1041 1| |NPC|118772|
+--N Step onto the Rune |SID|36226|4| |QID|46207| |N|Step onto the Rune in {Halls of Valor} (52.49,87.95)| |Z|1041 1|
+--K (npc:118855) |SID|35412|4| |QID|46207| |N|Kill (npc:118855) in {Halls of Valor} (50.95,85.80)| |Z|1041 1| |NPC|118855|
+--N Return to Skyhold |QID|46207.2| |N|Click Skyhold Portal to return to {Skyhold} (51.41,89.43)| |Z|1041 1|
+
+--T The Trial of Rage |QID|46207| |N|Speak to (npc:96469) in {Skyhold} (58.40,84.56)| |Z|1035 1| |NPC|96469|
 
 N Guide Complete
 

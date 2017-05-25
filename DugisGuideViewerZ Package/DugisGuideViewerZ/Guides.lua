@@ -82,9 +82,6 @@ function Guides:Initialize()
 	local L = DugisLocals
 	local crowheight
 	
-	SCROLL_BACKGROUND = "Interface\\AddOns\\DugisGuideViewerZ\\Artwork\\bg_home.tga"
-	SCROLLESS_BACKGROUND = "Interface\\AddOns\\DugisGuideViewerZ\\Artwork\\bg_currentguide.tga"
-	
 	function GetCurrentGuideLeftShouldScroll()
 		local tabInfo = GetCurrentGuideTypeTabInfo()
 		return tabInfo and tabInfo:RightShouldScroll()
@@ -499,7 +496,7 @@ function Guides:Initialize()
 		if leftFrame then
 			leftFrame:Show()
 			if self:LeftShouldScroll() then
-				DugisMainBorder.bg:SetTexture(SCROLL_BACKGROUND)
+				DugisMainBorder.bg:SetTexture(DugisGuideViewer:GetScrollBackground())
                 if Main.leftScroll then
                     Main.leftScroll:SetScrollChild(leftFrame)
                     leftFrame:SetWidth(350)
@@ -510,10 +507,10 @@ function Guides:Initialize()
 				if self.text=="Current Guide" and GetCurrentGuideTypeTabInfo() then
 					self.leftScrollMax = GetCurrentGuideTypeTabInfo().rightScrollMax
 				else
-                    DugisMainBorder.bg:SetTexture(SCROLLESS_BACKGROUND)
+                    DugisMainBorder.bg:SetTexture(DugisGuideViewer:GetScrolllesBackground())
                 end
 			else
-				DugisMainBorder.bg:SetTexture(SCROLLESS_BACKGROUND)
+				DugisMainBorder.bg:SetTexture(DugisGuideViewer:GetScrolllesBackground())
 				leftFrame:SetAllPoints(Main.leftFrameHost)
 			end
 			Main.leftFrameHost:Show()
@@ -527,7 +524,7 @@ function Guides:Initialize()
 			end
 		else
 			Main.leftFrameHost:Hide()
-			DugisMainBorder.bg:SetTexture(SCROLLESS_BACKGROUND)
+			DugisMainBorder.bg:SetTexture(DugisGuideViewer:GetScrolllesBackground())
 			Main.rightFrameHost:ClearAllPoints()
 			Main.rightFrameHost:SetPoint("TOPLEFT", 0, -44)
 			Main.rightFrameHost:SetPoint("BOTTOMRIGHT", -25, 0)
@@ -6304,8 +6301,8 @@ function Guides:Initialize()
 				if npc4 == "" then npc4 = nil end
 				if npc5 == "" then npc5 = nil end
 				return npc1, npc2, npc3, npc4, npc5
-			elseif tag == "CHOICE" then --ex: |CHOICE|2|      |CHOICE|some textual id|
-				local id = tags:match("|CHOICE|([^%)]+)|")
+			elseif tag == "CHOICE" then --ex: |CHOICE|2|
+				local id = tags:match("|CHOICE|(%d+)")
 				return id
 			elseif tag == "OBJ" then --ex: |OBJ|37087| or |OBJ|708, 704, 705|
 				local obj1, obj2, obj3, obj4, obj5 = tags:match("|OBJ|(%d+),?%s?(%d*),?%s?(%d*),?%s?(%d*),?%s?(%d*)|")

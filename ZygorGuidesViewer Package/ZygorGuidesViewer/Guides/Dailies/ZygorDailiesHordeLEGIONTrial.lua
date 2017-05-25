@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("DailiesHLEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Legion\\World Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Legion\\World Quests",{
 author="support@zygorguides.com",
 startlevel=110.0,
 },[[
@@ -17,6 +17,7 @@ Choose a World Quest to Complete |confirm
 |tip With the "World Quests" guide loaded, open your world map.
 |tip Left-click on a world quest icon to select that world quest.
 |tip The guide will automatically load the steps for that world quest.
+|tip Left-click on Broken Shore rares to load some helpful tips.
 step
 label quest-42119
 Follow the path |goto Azsuna/0 43.63,42.29 < 30 |only if walking
@@ -569,6 +570,13 @@ kill Felsurge Broodmother##113987+
 collect 10 Felsurge Spider Egg##137335 |q 42276/2 |goto 33.86,42.95
 |next "Court_Of_Farondis_WQ"
 step
+label quest-46169
+accept Dro'zek##46169 |goto Azsuna/0 56.60,56.19
+|tip You will accept this quest automatically.
+step
+kill 1 Dro'zek##117067 |q 46169/1 |goto 56.60,56.19
+|next "Court_Of_Farondis_WQ"
+step
 label quest-43328
 Follow the path |goto Azsuna/0 46.22,44.58 < 30 |only if walking
 Follow the path |goto 48.34,44.02 < 30 |only if walking
@@ -678,6 +686,15 @@ kill Felhide Gargantuan##103675
 Skin the Felhide Gargantuan |q 41564/1 |goto Azsuna/0 29.83,57.97
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41562
+Follow the path |goto Azsuna/0 30.52,46.52 < 25 |only if walking
+accept Felhide##41562 |goto 29.72,57.18
+|tip You will accept this quest automatically.
+step
+kill Felhide Gargantuan##103675
+Skin the Felhide Gargantuan |q 41562/1 |goto Azsuna/0 29.83,57.97
+|next "Court_Of_Farondis_WQ"
+step
 label quest-44044
 accept Felled Experiment##44044 |goto 43.30,72.05
 |tip You will accept this quest automatically.
@@ -742,6 +759,16 @@ accept Flourishing Aethril##41289 |goto 46.69,36.72
 step
 click Flourishing Aethril##195114
 collect 10 Flourishing Aethril##140947 |q 41289/1 |goto 46.69,36.72
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46166
+Follow the path |goto Azsuna/0 63.34,29.83 < 25 |only if walking
+Follow the path |goto 63.43,33.65 < 25 |only if walking
+Follow the path |goto 60.82,34.73 < 25 |only if walking
+accept Garthulak the Crusher##46166 |goto Azsuna/0 59.63,36.14
+|tip You will accept this quest automatically.
+step
+kill Garthulak the Crusher##116955 |q 46166/1 |goto 59.63,36.14
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41455
@@ -907,6 +934,14 @@ accept Kazruul##46165 |goto 62.69,46.32
 step
 kill Kazruul##118012
 Defeat Kazruul |q 46165/1 |goto 62.69,46.32
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46167
+Follow the path |goto Azsuna/0 47.51,29.14 < 25 |only if walking
+accept Kozrum##46167 |goto Azsuna/0 44.23,32.03
+|tip You will accept this quest automatically.
+step
+kill Kozrum##117061 |q 46167/1 |goto 44.23,32.03
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42101
@@ -1157,7 +1192,7 @@ Slay #10# Eredar at Soul Engine: Apocalypse |q 42275/1 |goto 32.03,52.59
 step
 label quest-46116
 Follow the path |goto Azsuna/0 64.49,26.06 < 25 |only if walking
-accept On Unhallowed Grounds##46116goto 64.03,19.55
+accept On Unhallowed Grounds##46116 |goto 64.03,19.55
 |tip You will accept this quest automatically.
 stickystart "unhallowed"
 step
@@ -1345,6 +1380,20 @@ kill Equine Sunrunner##91308+
 collect 8 Smooth Sunrunner Hide##137628 |q 41582/1 |goto Azsuna/0 60.66,24.83
 |next "Court_Of_Farondis_WQ"
 step
+label quest-45134
+Follow the path |goto Azsuna/0 42.65,41.13 < 25 |only if walking
+Follow the path up |goto 40.73,36.89 < 25 |only if walking
+accept The Soul Harvesters##45134 |goto Azsuna/0 38.41,34.48
+|tip You will accept this quest automatically.
+stickystart "Harvesters"
+step
+kill Doom Lord Kro'nak##116297 |q 45134/2 |goto 34.64,33.80
+step
+label "Harvesters"
+kill Doomsworn Harbinger##116281, Foul Soulkeeper##116219, Hellwing Doombringer##116205
+Repel the Legion forces |q 45134/1 |goto 38.41,34.48
+|next "Court_Of_Farondis_WQ"
+step
 label quest-44847
 Follow the path |goto Azsuna/0 63.42,25.55 < 25 |only if walking
 Follow the path |goto 61.28,21.90 < 25 |only if walking
@@ -1373,6 +1422,13 @@ step
 label "Overseer"
 kill Nightfallen Overseer##90616 |q 44847/1 |goto 55.69,14.16
 |tip These can be difficult to find on busy days. Search around this area for them.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46162
+accept Subjugator Val'rek##46162 |goto Azsuna/0 41.89,11.67
+|tip You will accept this quest automatically.
+step
+kill 1 Subjugator Val'rek##117067 |q 46162/1 |goto 41.89,11.67
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41288
@@ -1430,6 +1486,17 @@ accept Thar'gokk##46170 |goto Azsuna/0 42.56,41.02
 step
 kill Thar'gokk##117036
 Defeat Thar'gokk |q 46170/1 |goto 42.56,41.02
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46163
+Follow the path |goto Azsuna/0 42.21,11.33 < 25 |only if walking
+Follow the path |goto 46.69,10.63 < 25 |only if walking
+Follow the path |goto 48.99,10.56 < 25 |only if walking
+Cross the waterfall |goto 50.33,9.25 < 15 |only if walking
+accept Thaz'gul##46163 |goto Azsuna/0 52.02,11.79
+|tip You will accept this quest automatically.
+step
+kill Thaz'gul##117068 |q 46163/1 |goto 52.02,11.79
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42018

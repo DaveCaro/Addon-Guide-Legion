@@ -20,6 +20,21 @@ local vendor_reagents = {
 	[44500] = 15000000, -- Elementium-Plated Exhaust Pipe
 	}
 
+local bop_reagents = {
+	[124124] = true, -- Blood of Sargeras
+	[120945] = true, -- Primal Spirit
+	[111366] = true, -- Gearspring Parts
+	[111556] = true, -- Hexweave Cloth
+	[110611] = true, -- Burnished Leather
+	[108257] = true, -- Truesteel Ingot
+	[98717] = true, -- Balanced Trillium Ingot
+	[98619] = true, -- Celestial Cloth
+	[94111] = true, -- Lightning Steel Ingot
+	[82447] = true, -- Imperial Silk
+	[54440] = true, -- Dreamcloth
+	}
+
+
 function Goldguide:InitialiseCraftingChores()
 	table.wipe(Goldguide.Chores.Crafting)
 	table.wipe(Goldguide.CraftingItemToSpell)
@@ -205,6 +220,15 @@ function Crafting:add_line(txt) self.guide = self.guide .. txt .. " \n" end
 
 function Crafting:GenerateGuide()
 	local productname = ZGV:GetItemInfo(self.productid)
+
+	local legendary_guide = nil
+	for i,v in pairs(ZGV.registeredguides) do
+		if v.legendarycraft==self.productid then
+			legendary_guide=v
+			break
+		end
+	end
+
 	self.guide = ""
 	-- Step 1 - intro
 	self:add_line("step")
@@ -229,21 +253,35 @@ function Crafting:GenerateGuide()
 		self:add_line("confirm")
 	end
 
-	-- Step 3 -- show reagent sources
+	-- Step 3a -- optional questline
+	if legendary_guide then
+		for line in string.gmatch(legendary_guide.rawdata, ".*$") do
+			self:add_line(line)
+		end
+	end
+
+	-- Step 3b -- show reagent sources
 	self:add_line("step reagents_buy")
-	self:add_line("'Buy the following reagents:")
+	self:add_line("'Obtain the following reagents:")
 	local farms_found = false
 	for itemid,itemcount in pairs(self.reagentcount) do
-		local name = ZGV:GetItemInfo(itemid)
-		local price = ZGVG:GetSellPrice(itemid)
+		if not (legendary_guide and legendary_guide.legendaryreagents[itemid]) then
+			local name = ZGV:GetItemInfo(itemid)
+			local price = ZGVG:GetSellPrice(itemid)
 
-		self:add_line(("buy %d %s##%d maxprice %d"):format(itemcount,name,itemid,price))
-		self:add_line(("tip Pay no more than %s each"):format(ZGV.GetMoneyString(price):gsub("|","%%PIPE%%")))
+			if not bop_reagents[itemid] then
+				self:add_line(("buy %d %s##%d maxprice %d"):format(itemcount,name,itemid,price))
+				self:add_line(("tip Pay no more than %s each"):format(ZGV.GetMoneyString(price):gsub("|","%%PIPE%%")))
+			else
+				self:add_line(("get %d %s##%d"):format(itemcount,name,itemid))
+			end
 
-		if name and Goldguide.farming_guides and not self.reagentfarmable[subreagentid] then
-			for i,guide in pairs(Goldguide.farming_guides) do
-				if string.match(guide.title_short, name) and Goldguide.Common.AreRequirementsMet(guide) then
-					farms_found=true
+			if name and Goldguide.farming_guides and not self.reagentfarmable[itemid] then
+				for i,guide in pairs(Goldguide.farming_guides) do
+					if string.match(guide.title_short, name) and Goldguide.Common.AreRequirementsMet(guide) then
+						farms_found=true
+						self.reagentfarmable[itemid]=true
+					end
 				end
 			end
 		end

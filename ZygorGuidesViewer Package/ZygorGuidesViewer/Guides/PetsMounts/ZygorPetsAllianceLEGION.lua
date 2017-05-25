@@ -3,14 +3,14 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("PetsALEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "LEG"
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Aquatic Pets\\Lagan",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Lagan",{
 model={71980},
 pet=1930,
 description="This guide will walk you through obtaining the Aquatic pet: Lagan",
 },[[
 step
 This pet is a reward for completing the dungeon achievement _Poor Unfortunate Souls_
-Click here to go to the guide for this achievement |next "Zygor's Alliance Achievement Guides\\Dungeons\\Legion\\Poor Unfortunate Souls" |confirm
+Click here to go to the guide for this achievement |next "Zygor's Achievements Guides\\Dungeons\\Legion\\Poor Unfortunate Souls" |confirm
 Click here to continue |confirm
 step
 Once this achievement is complete, this pet will be in your mailbox
@@ -20,7 +20,7 @@ step
 _Congratulations!_
 You have collected the _Lagan_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Beast Pets\\Ridgeback Piglet",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Ridgeback Piglet",{
 model={65667},
 pet=1756,
 description="This guide will walk you through obtaining the Beast pet: Ridgeback Piglet",
@@ -70,7 +70,7 @@ step
 _Congratulations!_
 You have collected the _Ridgeback Piglet_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Beast Pets\\Thaumaturgical Piglet",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Thaumaturgical Piglet",{
 model={65671},
 pet=1759,
 description="This guide will walk you through obtaining the Beast pet: Thaumaturgical Piglet",
@@ -120,7 +120,7 @@ step
 _Congratulations!_
 You have collected the _Thaumaturgical Piglet_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Critter Pets\\Noblegarden Bunny",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Noblegarden Bunny",{
 model={28726},
 pet=1943,
 description="This guide will walk you through obtaining the Critter pet: Noblegarden Bunny",
@@ -138,21 +138,21 @@ step
 _Congratulations!_
 You have collected the _Noblegarden Bunny_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Dragonkin Pets\\Emmigosa",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Emmigosa",{
 model={65120},
 pet=1720,
 description="This guide will walk you through obtaining the Dragonkin pet: Emmigosa",
 },[[
 step
 This pet is a reward for completing the quest _On the Brink_ in Azsuna.
-Click here to proceed to the Azsuna quest guide |next "Zygor's Alliance Leveling Guides\\Legion (100-110)\\Azsuna" |confirm
+Click here to proceed to the Azsuna quest guide |next "Zygor's Leveling Guides\\Legion (100-110)\\Azsuna" |confirm
 collect Emmigosa##129178 |n
 learnpet Emmigosa##97207 |use Emmigosa##129178
 step
 _Congratulations!_
 You have collected the _Emmigosa_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Elemental Pets\\Igneous Flameling",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Igneous Flameling",{
 model={73308},
 pet=1949,
 description="This guide will walk you through obtaining the Elemental pet: Igneous Flameling",
@@ -172,7 +172,7 @@ step
 _Congratulations!_
 You have collected the _Igneous Flameling_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Humanoid Pets\\Alliance Enthusiast",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Alliance Enthusiast",{
 model={71002},
 pet=1918,
 description="This guide will walk you through obtaining the Humanoid pet: Alliance Enthusiast",
@@ -187,7 +187,7 @@ step
 _Congratulations!_
 You have collected the _Alliance Enthusiast_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Humanoid Pets\\Dutiful Gruntling",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Dutiful Gruntling",{
 model={73245},
 description="This guide will walk you through obtaining the Humanoid pet: Dutiful Gruntling",
 },[[
@@ -195,7 +195,7 @@ step
 This pet is a reward for reaching PvP Prestige level 7 for the first time
 |tip You must complete this on a _Horde_ character.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Humanoid Pets\\Dutiful Squire",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Dutiful Squire",{
 model={73244},
 description="This guide will walk you through obtaining the Humanoid pet: Dutiful Squire",
 },[[
@@ -208,7 +208,7 @@ step
 _Congratulations!_
 You have collected the _Dutiful Squire_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Humanoid Pets\\Horde Fanatic",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Horde Fanatic",{
 model={71003},
 pet=1919,
 description="This guide will walk you through obtaining the Humanoid pet: Horde Fanatic",
@@ -217,7 +217,7 @@ step
 This pet is a reward for obtaining honor level 50 for the first time
 You must complete this on a _Horde_ character
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Humanoid Pets\\Knight-Captain Murky",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Knight-Captain Murky",{
 model={73351},
 pet=1940,
 description="This guide will walk you through obtaining the Humanoid pet: Knight-Captain Murky",
@@ -226,7 +226,7 @@ step
 This pet was a reward for attending US or EU BlizzCon 2016 event
 |tip This pet can no longer be obtained.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Humanoid Pets\\Legionnaire Murky",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Legionnaire Murky",{
 model={73352},
 pet=1939,
 description="This guide will walk you through obtaining the Humanoid pet: Legionnaire Murky",
@@ -235,7 +235,7 @@ step
 This pet was a reward for attending US or EU BlizzCon 2016 event
 |tip This pet can no longer be obtained.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Humanoid Pets\\Tylarr Gronnden",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Tylarr Gronnden",{
 author="support@zygorguides.com",
 model={59026},
 pet=2022,
@@ -255,7 +255,7 @@ step
 _Congratulations!_
 You have collected the _Tylarr Gronnden_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Magic Pets\\Enchanted Cauldron",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Enchanted Cauldron",{
 model={69490},
 pet=1699,
 description="This guide will walk you through obtaining the Magic pet: Enchanted Cauldron",
@@ -267,7 +267,7 @@ Click here if you have Enchanting and want to craft this pet |next "Enchanting c
 Click here if you would like to purchase this from the Auction House |next "AH cauldron" |confirm
 step
 label "Enchanting craft"
-To obtain the formula to make this pet, click here to go to our Enchanting Quest Line guide |next "Zygor's Alliance Profession Guides\\Enchanting\\Legion\\Enchanting Quest Line" |confirm |or
+To obtain the formula to make this pet, click here to go to our Enchanting Quest Line guide |next "Zygor's Profession Guides\\Enchanting\\Quest Guides\\Enchanting Quest Line" |confirm |or
 collect 5 Chaos Crystal##124442 |c
 collect 20 Leylight Shard##124441 |c
 collect 50 Arkhana##124440 |c
@@ -292,7 +292,7 @@ step
 _Congratulations!_
 You have collected the _Enchanted Cauldron_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Magic Pets\\Enchanted Pen",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Enchanted Pen",{
 model={69488},
 pet=1701,
 description="This guide will walk you through obtaining the Magic pet: Enchanted Pen",
@@ -304,7 +304,7 @@ Click here if you have Enchanting and want to craft this pet |next "Enchanting c
 Click here if you would like to purchase this from the Auction House |next "AH pen" |confirm
 step
 label "Enchanting craft 2"
-To obtain the formula to make this pet, click here to go to our Enchanting Quest Line guide |next "Zygor's Alliance Profession Guides\\Enchanting\\Legion\\Enchanting Quest Line" |confirm |or
+To obtain the formula to make this pet, click here to go to our Enchanting Quest Line guide |next "Zygor's Profession Guides\\Enchanting\\Quest Guides\\Enchanting Quest Line" |confirm |or
 collect 5 Chaos Crystal##124442 |c
 collect 20 Leylight Shard##124441 |c
 collect 50 Arkhana##124440 |c
@@ -329,7 +329,7 @@ step
 _Congratulations!_
 You have collected the _Enchanted Pen_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Magic Pets\\Enchanted Torch",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Enchanted Torch",{
 model={69489},
 pet=1700,
 description="This guide will walk you through obtaining the Magic pet: Enchanted Torch",
@@ -341,7 +341,7 @@ Click here if you have Enchanting and want to craft this pet |next "Enchanting c
 Click here if you would like to purchase this from the Auction House |next "AH torch" |confirm
 step
 label "Enchanting craft 3"
-To obtain the formula to make this pet, click here to go to our Enchanting Quest Line guide |next "Zygor's Alliance Profession Guides\\Enchanting\\Legion\\Enchanting Quest Line" |confirm |or
+To obtain the formula to make this pet, click here to go to our Enchanting Quest Line guide |next "Zygor's Profession Guides\\Enchanting\\Quest Guides\\Enchanting Quest Line" |confirm |or
 collect 5 Chaos Crystal##124442 |c
 collect 20 Leylight Shard##124441 |c
 collect 50 Arkhana##124440 |c
@@ -366,7 +366,7 @@ step
 _Congratulations!_
 You have collected the _Enchanted Torch_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Magic Pets\\Transmutant",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Transmutant",{
 model={71828},
 pet=1920,
 description="This guide will walk you through obtaining the Magic pet: Transmutant",
@@ -417,7 +417,7 @@ step
 _Congratulations!_
 You have collected the _Transmutant_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Magic Pets\\Untethered Wyrmling",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Untethered Wyrmling",{
 model={71827},
 pet=1921,
 description="This guide will walk you through obtaining the Magic pet: Untethered Wyrmling",
@@ -426,14 +426,14 @@ step
 This pet is a reward for completing the quest _Balance to Spare_ in Suramar
 |tip This quest requires you to be Honored with The Nightfallen before being able to start it.
 Reach Honored with The Nightfallen |condition rep("The Nightfallen")>=Honored
-Click here to proceed to the Suramar Quest guide |next "Zygor's Alliance Leveling Guides\\Legion (100-110)\\Suramar (110)" |confirm
+Click here to proceed to the Suramar Quest guide |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)" |confirm
 collect Untethered Wyrmling##139790 |n
 learnpet Untethered Wyrmling##111423 |use Untethered Wyrmling##139790
 step
 _Congratulations!_
 You have collected the _Untethered Wyrmling_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Mechanical Pets\\Trigger",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Trigger",{
 model={68666},
 pet=1886,
 description="This guide will walk you through obtaining the Mechanical pet: Trigger",
@@ -445,7 +445,7 @@ Click here if you have Engineering and want to craft this pet |next "Engineering
 Click here if you would like to purchase this from the Auction House |next "AH Trigger" |confirm
 step
 label "Engineering Pet"
-To obtain the schematic to make this pet, click here to go to our Engineering Quest Line guide |next "Zygor's Alliance Profession Guides\\Engineering\\Legion\\Engineering Quest Line" |confirm |or
+To obtain the schematic to make this pet, click here to go to our Engineering Quest Line guide |next "Zygor's Profession Guides\\Engineering\\Quest Guides\\Engineering Quest Line" |confirm |or
 Once this schematic is learned, you will need to collect the following items:
 collect 50 Leystone Ore##123918 |c
 collect 50 Blood of Sargeras##124124 |c

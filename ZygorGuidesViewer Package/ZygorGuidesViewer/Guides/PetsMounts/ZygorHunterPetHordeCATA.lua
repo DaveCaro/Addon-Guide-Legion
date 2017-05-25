@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("HunterPetH") then return end
 ZygorGuidesViewer.GuideMenuTier = "CAT"
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Bats\\Brown Bat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Bats\\Brown Bat",{
 model={4732},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -20,7 +20,7 @@ Use Tame Beast ability on a _Mistbat_. |cast Tame Beast##1515
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 4732
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Bats\\Red Bat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Bats\\Red Bat",{
 model={8808},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -38,7 +38,7 @@ Use your Tame Beast ability on a _Plaugebat_. |cast Tame Beast##1515 |goto Easte
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 8808
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Bats\\Tan Bat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Bats\\Tan Bat",{
 model={1954},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -57,7 +57,7 @@ Use your Tame Beast ability on a _Noxious Plaguebat_. |cast Tame Beast##1515 |go
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 1954
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Bats\\White Bat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Bats\\White Bat",{
 model={16053},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -67,7 +67,7 @@ Search for Zul'drak bats around this area.
 Use your Tame Beast ability on a _Zul'Drak Bat_. |cast Tame Beast##1515 |goto Zul'Drak,38.2,50.4
 modeldisplay 16053
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Owls\\Black Owl",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Owls\\Black Owl",{
 model={18933},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -77,7 +77,7 @@ Search for Barn owls around this area.
 Use your Tame Beast ability on a _Barn Owl_. |cast Tame Beast##1515 |goto Duskwood,20.8,76.6
 modeldisplay 18933
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Owls\\Brown Owl",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Owls\\Brown Owl",{
 model={18375},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -87,7 +87,7 @@ Search for Vale Owls around this area.
 Use your Tame Beast ability on a _Vale Owl_. |cast Tame Beast##1515 |goto Feralas,46.0,9.8
 modeldisplay 18375
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Owls\\Dark Brown Owl",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Owls\\Dark Brown Owl",{
 model={20725},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -106,7 +106,7 @@ Use your Tame Beast ability on a _Akkarai Hatchling_. |cast Tame Beast##1515 |go
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 20725
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Flying Pets\\Birds of Prey\\Ghostly Green Owl",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Flying Pets\\Birds of Prey\\Ghostly Green Owl",{
 model={29505},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -118,7 +118,7 @@ Use your Tame Beast ability on an _Emerald Spirit_. |cast Tame Beast##1515 |goto
 Click here to see another location for this pet |next |confirm
 modeldisplay 29505
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Owls\\Gray Owl",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Owls\\Gray Owl",{
 model={10832},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -136,7 +136,7 @@ Use your Tame Beast ability on a _Strigid Screecher_. |cast Tame Beast##1515 |go
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 10832
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Owls\\Purple Owl",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Owls\\Purple Owl",{
 model={37567},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -147,7 +147,7 @@ Search for Hell-Hoot around this area.
 Use your Tame Beast ability on _Hell-Hoot_. |cast Tame Beast##1515 |goto Winterspring 53.0,36.4
 modeldisplay 37567
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Owls\\Red and Purple Owl",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Owls\\Red and Purple Owl",{
 model={20729},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -157,7 +157,7 @@ Search for Skettis kaliri around this area.
 Use your Tame Beast ability on a _Skettis Kaliri_. |cast Tame Beast##1515 |goto Terokkar Forest,70.6,82.6
 modeldisplay 20729
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Owls\\Red Owl",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Owls\\Red Owl",{
 model={20730},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -168,7 +168,7 @@ Search for Montrous Kaliri around this area.
 Use your Tame Beast ability on a _Monstrous Kaliri_. |cast Tame Beast##1515 |goto Terokkar Forest,69.2,78.2
 modeldisplay 20730
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Owls\\White Owl",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Owls\\White Owl",{
 model={10833},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -178,7 +178,7 @@ Search for Winterspring Screechers around this area.
 Use your Tame Beast ability on a _Winterspring Screecher_. |cast Tame Beast##1515 |goto Winterspring,55.4,32.8
 modeldisplay 10833
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Eagles\\Bald Eagle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Eagles\\Bald Eagle",{
 model={22106},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -188,7 +188,7 @@ Search for Fjord Hawk Matriarchs around this area.
 Use your Tame Beast ability on a _Fjord Hawk Matriarch_. |cast Tame Beast##1515 |goto Howling Fjord,77.8,67.6
 modeldisplay 22106
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Eagles\\Brown Eagle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Eagles\\Brown Eagle",{
 model={22255},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -200,7 +200,7 @@ As well as [56.0,45.6].
 Use your Tame Beast ability on a _Kalimdor Eagle_. |cast Tame Beast##1515 |goto Stonetalon Mountains,52.4,49.0
 modeldisplay 22255
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Eagles\\Undead Eagle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Eagles\\Undead Eagle",{
 model={25630},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -218,7 +218,7 @@ Use your Tame Beast ability on a _Vargul Plaguetalon_. |cast Tame Beast##1515 |g
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 25630
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Parrots\\Dark Red Parrot",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Parrots\\Dark Red Parrot",{
 model={5505},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -228,7 +228,7 @@ Search for Monstrous Macaws around this area.
 Use your Tame Beast ability on a _Monstrous Macaw_. |cast Tame Beast##1515 |goto Thousand Needles,92.0,73.8
 modeldisplay 5505
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Parrots\\Green and Red Parrot",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Parrots\\Green and Red Parrot",{
 model={36150},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -238,7 +238,7 @@ Search for Sunwing Squawkers around this area.
 Use your Tame Beast ability on a _Sunwing Squawker_. |cast Tame Beast##1515 |goto The Deadmines/2,41.0,47.4
 modeldisplay 36150
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Parrots\\Green and Yellow Parrot",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Parrots\\Green and Yellow Parrot",{
 model={36006},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -248,7 +248,7 @@ Search for Brilliant Clayscraper around this area.
 Use your Tame Beast ability on a _Brilliant Clayscraper_. |cast Tame Beast##1515 |goto Thousand Needles,92.0,73.8
 modeldisplay 36006
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Parrots\\Gray Parrot",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Parrots\\Gray Parrot",{
 model={36152},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -258,7 +258,7 @@ Ol' Beaky will be on a little island on the side of the ship.
 Use your Tame Beast ability on _Ol' Beaky_. |cast Tame Beast##1515 |goto The Deadmines/2,50.4,60.4
 modeldisplay 36152
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Parrots\\Purple and White Parrot",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Parrots\\Purple and White Parrot",{
 model={36151},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -268,7 +268,7 @@ Search for Brilliant Macaws around this area.
 Use your Tame Beast ability on a _Brilliant Macaw_. |cast Tame Beast##1515 |goto The Deadmines/2,41.0,47.4
 modeldisplay 36151
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Parrots\\Red Parrot",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Parrots\\Red Parrot",{
 model={36148},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -278,7 +278,7 @@ Search for Monstrous Parrots around this area.
 Use your Tame Beast ability on a _Monstrous Parrot_. |cast Tame Beast##1515 |goto The Deadmines/2,41.0,47.4
 modeldisplay 36148
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Parrots\\White Parrot",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Parrots\\White Parrot",{
 model={36153},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -288,7 +288,7 @@ Search for Albino Eyegougers around this area.
 Use your Tame Beast ability on a _Albino Eyegouger_. |cast Tame Beast##1515 |goto The Deadmines/2,41.0,47.4
 modeldisplay 36153
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Hawks\\Black Hawk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Hawks\\Black Hawk",{
 model={20857},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -298,7 +298,7 @@ Search for Daggercap Hawks around this area.
 Use your Tame Beast ability on a _Daggercap Hawk_. |cast Tame Beast##1515 |goto Howling Fjord,58.6,50.6
 modeldisplay 20857
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Hawks\\Brown Hawk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Hawks\\Brown Hawk",{
 model={22633},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -308,7 +308,7 @@ Search for Fjord Hawks around this area.
 Use your Tame Beast ability on a _Fjord Hawk_. |cast Tame Beast##1515 |goto Howling Fjord,74.6,66.2
 modeldisplay 22633
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Seagull",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Seagull",{
 model={34160},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -319,7 +319,7 @@ Search for Rustberg Gulls around this area.
 Use your Tame Beast ability on a _Rustberg Gull_. |cast Tame Beast##1515 |goto Tol Barad Peninsula,69.8,25.4
 modeldisplay 34160
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Mystical Pets\\Chimaeras\\Beige Chimaera",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Mystical Pets\\Chimaeras\\Beige Chimaera",{
 model={37570},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -329,7 +329,7 @@ Search for Mistwing Ravagers around this area.
 Use your Tame Beast ability on a _Mistwing Ravage_. |cast Tame Beast##1515 |goto Azshara,67.4,21.8
 modeldisplay 37570
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Mystical Pets\\Chimaeras\\Brown Chimaera",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Mystical Pets\\Chimaeras\\Brown Chimaera",{
 model={28646},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -339,7 +339,7 @@ Search for Mistwing Cliffdwellers around this area.
 Use your Tame Beast ability on a _Mistwing Cliffdweller_. |cast Tame Beast##1515 |goto Azshara,40.0,79.4
 modeldisplay 28646
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Mystical Pets\\Chimaeras\\White Chimaera",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Mystical Pets\\Chimaeras\\White Chimaera",{
 model={10808},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -349,7 +349,7 @@ Search for Chillwind Chimaeras around this area.
 Use your Tame Beast ability on a _Chillwind Chimaera_. |cast Tame Beast##1515 |goto Winterspring,57.6,23.2
 modeldisplay 10808
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Mystical Pets\\Chimaeras\\Green Armored Chimaera",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Mystical Pets\\Chimaeras\\Green Armored Chimaera",{
 model={20571},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -359,7 +359,7 @@ Search for Vilewing Chimaera around this area.
 Use your Tame Beast ability on a _Vilewing Chimaera_. |cast Tame Beast##1515 |goto Shadowmoon Valley,37.0,40.6
 modeldisplay 20571
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Mystical Pets\\Chimaeras\\Yellow Chimaera",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Mystical Pets\\Chimaeras\\Yellow Chimaera",{
 model={17094},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -369,7 +369,7 @@ Search for Bladewing Bloodletters around this area.
 Use your Tame Beast ability on a _Bladewing Bloodletter_. |cast Tame Beast##1515 |goto Blade's Edge Mountains,50.2,69.2
 modeldisplay 17094
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Dragonhawks\\Purple Dragonhawk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Dragonhawks\\Purple Dragonhawk",{
 model={19663},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -379,7 +379,7 @@ Search for the Sunblade Dragonhawks around this area.
 Use your Tame Beast ability on a _Sunblade Dragonhawk_. |cast Tame Beast##1515 |goto Sunwell Plateau,34.6,56.0
 modeldisplay 19663
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Dragonhawks\\Orange and Red Dragonhawk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Dragonhawks\\Orange and Red Dragonhawk",{
 model={17545},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -389,7 +389,7 @@ Search for the Crazed Dragonhawks around this area.
 Use your Tame Beast ability on a _Crazed Dragonhawk_. |cast Tame Beast##1515 |goto Eversong Woods,40.0,69.8
 modeldisplay 17545
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Dragonhawks\\Red Dragonhawk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Dragonhawks\\Red Dragonhawk",{
 model={19685},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -399,7 +399,7 @@ The Bloodfalcon will be before and after a bridge.
 Use your Tame Beast ability on a _Bloodfalcon_. |cast Tame Beast##1515 |goto The Botanica,49.8,56.6
 modeldisplay 19685
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Dragonhawks\\Violet Dragonhawk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Dragonhawks\\Violet Dragonhawk",{
 model={20263},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -409,7 +409,7 @@ Search for Eclipsion Dragonhawks around this area.
 Use your Tame Beast ability on a _Eclipsion Dragonhawk_. |cast Tame Beast##1515 |goto Shadowmoon Valley,47.6,68.4
 modeldisplay 20263
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Dragonhawks\\Yellow Dragonhawk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Dragonhawks\\Yellow Dragonhawk",{
 model={37573},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -427,7 +427,7 @@ Use your Tame Beast ability on a _Amani Dragonhawk Hatchling_. |cast Tame Beast#
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 37573
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Monkeys\\Black Monkey",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Monkeys\\Black Monkey",{
 model={30180},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -446,7 +446,7 @@ Use your Tame Beast ability on a _Mining Monkey_. |cast Tame Beast##1515 |goto T
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 30180
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Monkeys\\Brown Monkey",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Monkeys\\Brown Monkey",{
 model={30186},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -457,7 +457,7 @@ The Mining Monkey will be alone the walls mining with a chain against the wall.
 Use your Tame Beast ability on a _Mining Monkey_. |cast Tame Beast##1515 |goto The Deadmines,47.0,60.4
 modeldisplay 30186
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Monkeys\\Gray Monkey",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Monkeys\\Gray Monkey",{
 model={30185},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -468,7 +468,7 @@ The Mining Monkey will be alone the walls mining with a chain against the wall.
 Use your Tame Beast ability on a _Mining Monkey_. |cast Tame Beast##1515 |goto The Deadmines,47.0,60.4
 modeldisplay 30185
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Monkeys\\Color Changing Monkey",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Monkeys\\Color Changing Monkey",{
 model={30186, 30184, 30185, 30180},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -479,7 +479,7 @@ tip The Vale Howler will occasionally change between black, grey, brown and blue
 Use your Tame Beast ability on a _Vale Howler_. |cast Tame Beast##1515 |goto Northern Stranglethorn,53.6,25.6
 modeldisplay 30186, 30184, 30185, 30180
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Nether Rays\\Blue Nether Ray",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Nether Rays\\Blue Nether Ray",{
 model={19404},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -497,7 +497,7 @@ Use your Tame Beast ability on a _Marshfang Slicer_. |cast Tame Beast##1515 |got
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 19404
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Nether Rays\\Gold Nether Ray",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Nether Rays\\Gold Nether Ray",{
 model={21282},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -508,7 +508,7 @@ You can find more between the above coordinates and [30.4,64.4].
 Use your Tame Beast ability on a _Aether Ray_. |cast Tame Beast##1515 |goto Blade's Edge Mountains,30.6,51.4
 modeldisplay 21282
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Nether Rays\\Green Nether Ray",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Nether Rays\\Green Nether Ray",{
 model={19405},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -519,7 +519,7 @@ You can find around [41.4,59.6].
 Use your Tame Beast ability on a _Bloodthirsty Marshfang_. |cast Tame Beast##1515 |goto Zangarmarsh,53.8,67.2
 modeldisplay 19405
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Nether Rays\\Purple Nether Ray",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Nether Rays\\Purple Nether Ray",{
 model={19400},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -537,7 +537,7 @@ Use your Tame Beast ability on a _Nether Ray_. |cast Tame Beast##1515 |goto Neth
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 19400
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Nether Rays\\Red Nether Ray",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Nether Rays\\Red Nether Ray",{
 model={20596},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -547,7 +547,7 @@ Search for Netherskates around this area.
 Use your Tame Beast ability on a _Netherskate_. |cast Tame Beast##1515 |goto Shadowmoon Valley,69.2,67.6
 modeldisplay 20596
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Ravagers\\Blue and Purple Ravager",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Ravagers\\Blue and Purple Ravager",{
 model={20068},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -557,7 +557,7 @@ Search for Nethermine Ravagers inside of the mine here.
 Use your Tame Beast ability on a _Nethermine Ravager_. |cast Tame Beast##1515 |goto Shadowmoon Valley,74.0,88.0
 modeldisplay 20068
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Ravagers\\Green and Blue Ravager",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Ravagers\\Green and Blue Ravager",{
 model={20066},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -567,7 +567,7 @@ Death Ravager is spawned from the Warrior quest "Strength of One" (Alliance only
 Use your Tame Beast ability on a _Death Ravager_. |cast Tame Beast##1515 |goto Azuremyst Isle,54.0,9.6
 modeldisplay 20066
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Ravagers\\Purple and Orange Ravager",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Ravagers\\Purple and Orange Ravager",{
 model={19845},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -577,7 +577,7 @@ Search for Lost Ravagers inside the cave here.
 Use your Tame Beast ability on a _Lost Ravager_. |cast Tame Beast##1515 |goto Winterspring,52.0,68.8
 modeldisplay 19845
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Ravagers\\Green and Purple Ravager",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Ravagers\\Green and Purple Ravager",{
 model={20062},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -587,7 +587,7 @@ Search for Lost Ravagers inside the cave here.
 Use your Tame Beast ability on a _Lost Ravager_. |cast Tame Beast##1515 |goto Winterspring,52.0,68.8
 modeldisplay 20062
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Ravagers\\Green Ravager",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Ravagers\\Green Ravager",{
 model={17062},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -597,7 +597,7 @@ Search for Enraged Ravagers around this area.
 Use your Tame Beast ability on a _Enraged Ravager_. |cast Tame Beast##1515 |goto Bloodmyst Isle,31.8,54.6
 modeldisplay 17062
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Ravagers\\Orange and Purple Ravager",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Ravagers\\Orange and Purple Ravager",{
 model={19845},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -607,7 +607,7 @@ Search for Gore-Scythe Ravagers around this area.
 Use your Tame Beast ability on a _Gore-Scythe Ravager_. |cast Tame Beast##1515 |goto Blade's Edge Mountains,60.4,69.0
 modeldisplay 19845
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Ravagers\\Orange Ravager",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Ravagers\\Orange Ravager",{
 model={16885},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -617,7 +617,7 @@ Search for Ravager Specimen around this area.
 Use your Tame Beast ability on a _Ravager Specimen_. |cast Tame Beast##1515 |goto Azuremyst Isle,55.6,18.0
 modeldisplay 16885
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Ravagers\\Red and Black Ravager",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Ravagers\\Red and Black Ravager",{
 model={20063},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -627,7 +627,7 @@ Search for Thornfang Venomspitters around this area.
 Use your Tame Beast ability on a _Thornfang Venomspitter_. |cast Tame Beast##1515 |goto Hellfire Peninsula,12.8,53.2
 modeldisplay 20063
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Ravagers\\Red and Green Ravager",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Ravagers\\Red and Green Ravager",{
 model={37560},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -637,7 +637,7 @@ Search for Bloodmyst Hatchlings around this area.
 Use your Tame Beast ability on a _Bloodmyst Hatchling_. |cast Tame Beast##1515 |goto Bloodmyst Isle,59.8,89.4
 modeldisplay 37560
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Ravagers\\Red and Purple Ravager",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Ravagers\\Red and Purple Ravager",{
 model={17086},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -647,7 +647,7 @@ Search for Rip-Blade Ravagers around this area.
 Use your Tame Beast ability on a _Rip-Blade Ravager_. |cast Tame Beast##1515 |goto Blade's Edge Mountains,59.6,65.2
 modeldisplay 17086
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Ravagers\\Dark Green Extra Spiky Ravager",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Ravagers\\Dark Green Extra Spiky Ravager",{
 model={20297},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -657,7 +657,7 @@ Search for Quillfang Ravagers around this area.
 Use your Tame Beast ability on a _Quillfang Ravager_. |cast Tame Beast##1515 |goto Hellfire Peninsula,22.4,67.0
 modeldisplay 20297
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Ravagers\\Purple Extra Spiky Ravager",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Ravagers\\Purple Extra Spiky Ravager",{
 model={20308},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -667,7 +667,7 @@ Search for Thornfang Ravagers around this area.
 Use your Tame Beast ability on a _Thornfang Ravager_. |cast Tame Beast##1515 |goto Hellfire Peninsula,8.2,49.6
 modeldisplay 20308
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Ravagers\\Red Extra Spiky Ravager",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Ravagers\\Red Extra Spiky Ravager",{
 model={20309},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -677,7 +677,7 @@ Search for Razorfang Ravagers around this area.
 Use your Tame Beast ability on a _Razorfang Ravager_. |cast Tame Beast##1515 |goto Hellfire Peninsula,39.0,88.6
 modeldisplay 20309
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Serpents\\Blue Snake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Serpents\\Blue Snake",{
 model={4317},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -689,7 +689,7 @@ As well as [15.6,53.8].
 Use your Tame Beast ability on a _Deviate Adder_. |cast Tame Beast##1515 |goto Wailing Caverns,30.6,43.8
 modeldisplay 4317
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Serpents\\Blue-Green Snake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Serpents\\Blue-Green Snake",{
 model={4768},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -699,7 +699,7 @@ Search for Murk Spitters around this area.
 Use your Tame Beast ability on a _Murk Spitter_. |cast Tame Beast##1515 |goto The Temple of Atal'Hakkar,77.8,41.4
 modeldisplay 4768
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Serpents\\Brown Snake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Serpents\\Brown Snake",{
 model={33990},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -709,7 +709,7 @@ Search for Murk Spitters around this area.
 Use your Tame Beast ability on a _Murk Spitter_. |cast Tame Beast##1515 |goto The Temple of Atal'Hakkar,77.8,41.4
 modeldisplay 33990
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Serpents\\Green Snake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Serpents\\Green Snake",{
 model={14557},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -719,7 +719,7 @@ Search for Needlespine Cobras around this area.
 Use your Tame Beast ability on a _Needlespine Cobra_. |cast Tame Beast##1515 |goto Thousand Needles,66.0,67.6
 modeldisplay 14557
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Serpents\\Purple Snake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Serpents\\Purple Snake",{
 model={4312},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -737,7 +737,7 @@ Use your Tame Beast ability on a _Venomtip_. |cast Tame Beast##1515 |goto Sholaz
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 4312
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Serpents\\Red Snake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Serpents\\Red Snake",{
 model={26522},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -747,7 +747,7 @@ Search for Sunburst Adder around this area.
 Use your Tame Beast ability on a _Sunburst Adder_. |cast Tame Beast##1515 |goto Tanaris,40.4,65.4
 modeldisplay 26522
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Serpents\\Violet Snake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Serpents\\Violet Snake",{
 model={36273},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -758,7 +758,7 @@ You can find more around [67.0,74.8].
 Use your Tame Beast ability on a _Needlespine Shimmerback_. |cast Tame Beast##1515 |goto Thousand Needles,66.0,67.2
 modeldisplay 36273
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Serpents\\White Snake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Serpents\\White Snake",{
 model={4305},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -776,7 +776,7 @@ Use your Tame Beast ability on a _Coilskar Cobra_. |cast Tame Beast##1515 |goto 
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 4305
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Red Green Spider (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Red Green Spider (Rare Spawn)",{
 model={36505},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -794,7 +794,7 @@ Use your Tame Beast ability on _Naraxis_. |cast Tame Beast##1515 |goto Duskwood,
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 36505
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Green Fire Spider (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Green Fire Spider (Rare Spawn)",{
 model={38453},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -809,7 +809,7 @@ _Immediately_ use your Tame Beast ability on _Kirix_ afterwards. |cast Tame Beas
 It is highly recommended that you don't attempt this until you have at least _120k_ health.
 modeldisplay 38453
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Fire Spider (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Fire Spider (Rare Spawn)",{
 model={38780},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -822,7 +822,7 @@ If you are having trouble kiting, you can also use _Aspect of the Cheetah_.
 Use your Tame Beast ability on _Solix_ when it is at _20 to 30 Energy_. |cast Tame Beast##1515 |goto Molten Front 60.4,50.8
 modeldisplay 38780
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Yellow Fire Spider (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Yellow Fire Spider (Rare Spawn)",{
 model={38426},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -833,7 +833,7 @@ Open with _Concussion Shot_ and _Deterrence_ to avoid failure.
 Use your Tame Beast ability on _Anthriss_. |cast Tame Beast##1515 |goto Molten Front 54.8,41.8
 modeldisplay 38426
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Purple Fire Spider (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Purple Fire Spider (Rare Spawn)",{
 model={38424},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -849,7 +849,7 @@ Repeat the above steps until Deth'tilac is at _20%_ health. Be sure to _Dismiss 
 Use your Tame Beast ability on _Deth'tilac_. |cast Tame Beast##1515 |goto Molten Front,66.6,72.7
 modeldisplay 38424
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Light Gray Spider (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Light Gray Spider (Rare Spawn)",{
 model={27973},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -866,7 +866,7 @@ You can find Terror Spinner at the locations below:
 Use your Tame Beast ability on _Terror Spinner_. |cast Tame Beast##1515 |goto Zul'Drak,61.6,36.8
 modeldisplay 27973
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Sporebats\\Blue Sporebat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Sporebats\\Blue Sporebat",{
 model={17751},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -877,7 +877,7 @@ You can find more around [40.2,53.6].
 Use your Tame Beast ability on a _Sporebat_. |cast Tame Beast##1515 |goto Zangarmarsh,64.6,55.2
 modeldisplay 17751
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Sporebats\\Brown Sporebat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Sporebats\\Brown Sporebat",{
 model={18029},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -888,7 +888,7 @@ You can find more around [40.2,53.6].
 Use your Tame Beast ability on a _Sporebat_. |cast Tame Beast##1515 |goto Zangarmarsh,64.6,55.2
 modeldisplay 18029
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Sporebats\\Green Sporebat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Sporebats\\Green Sporebat",{
 model={17753},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -906,7 +906,7 @@ Use your Tame Beast ability on a _Greater Sporebat_. |cast Tame Beast##1515 |got
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 17753
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Serpents\\Black Wind Serpent",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Serpents\\Black Wind Serpent",{
 model={3006},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -924,7 +924,7 @@ Use your Tame Beast ability on a _Thunderhawk Cloudscraper_. |cast Tame Beast##1
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 3006
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Serpents\\Green Wind Serpent",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Serpents\\Green Wind Serpent",{
 model={4091},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -942,7 +942,7 @@ Use your Tame Beast ability on a _Venomous Cloud Serpent_. |cast Tame Beast##151
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 4091
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Serpents\\Orange Wind Serpent",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Serpents\\Orange Wind Serpent",{
 model={2699},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -952,7 +952,7 @@ Search for Vale Screechers around this area.
 Use your Tame Beast ability on a _Vale Screecher_. |cast Tame Beast##1515 |goto Feralas,43.6,36.4
 modeldisplay 2699
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Green Silithid",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Green Silithid",{
 model={481},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -971,7 +971,7 @@ Use your Tame Beast ability on a _Hazzali Sandreaver_. |cast Tame Beast##1515 |g
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 481
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Purple Silithid",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Purple Silithid",{
 model={91},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -989,7 +989,7 @@ Use your Tame Beast ability on a _Centipaar Sandreaver_. |cast Tame Beast##1515 
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 91
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Tan Silithid",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Tan Silithid",{
 model={35577},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -999,7 +999,7 @@ Search for Silithid Ravagers underwater.
 Use your Tame Beast ability on a _Silithid Ravager_. |cast Tame Beast##1515 |goto Thousand Needles,69.6,84.4
 modeldisplay 35577
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Yellow Silithid",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Yellow Silithid",{
 model={11087},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1017,7 +1017,7 @@ Use your Tame Beast ability on a _Hive'Zora Reaver_. |cast Tame Beast##1515 |got
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 11087
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Brown Ant Silithid",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Brown Ant Silithid",{
 model={11091},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1035,7 +1035,7 @@ Use your Tame Beast ability on a _Hive'Zora Hive Sister_. |cast Tame Beast##1515
 Click here to see the previous location for this pet |next "-start" |confirm
 modelnpc 6552
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Green Ant Silithid",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Green Ant Silithid",{
 model={11095},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1053,7 +1053,7 @@ Use your Tame Beast ability on a _Hive'Ashi Defender_. |cast Tame Beast##1515 |g
 Click here to see the previous location for this pet |next "-start" |confirm
 modelnpc 5452
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Purple Ant Silithid",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Purple Ant Silithid",{
 model={2592},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1071,7 +1071,7 @@ Use your Tame Beast ability on a _Centipaar Worker_. |cast Tame Beast##1515 |got
 Click here to see the previous location for this pet |next "-start" |confirm
 modelnpc 5247
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Tan Ant Silithid",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Tan Ant Silithid",{
 model={30904},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1081,7 +1081,7 @@ Search for Silithid Swarmer around this area.
 Use your Tame Beast ability on a _Silithid Swarmer_. |cast Tame Beast##1515 |goto Southern Barrens 41.6,6.8
 modelnpc 3252
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Black Widow Spider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Black Widow Spider",{
 model={539},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1099,7 +1099,7 @@ Use your Tame Beast ability on a _Vicious Night Web Spider_. |cast Tame Beast##1
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 539
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Crystal Spider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Crystal Spider",{
 model={4456},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1117,7 +1117,7 @@ Use your Tame Beast ability on a _Dreadfang Widow_. |cast Tame Beast##1515 |goto
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 4456
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Green Spider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Green Spider",{
 model={283},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1127,7 +1127,7 @@ Search for Darkmist Silkspinners around this area.
 Use your Tame Beast ability on a _Darkmist Silkspinner_. |cast Tame Beast##1515 |goto Dustwallow Marsh,35.4,22.6
 modeldisplay 283
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Gray Spider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Gray Spider",{
 model={955},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1145,7 +1145,7 @@ Use your Tame Beast ability on a _Cave Stalker_. |cast Tame Beast##1515 |goto We
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 955
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Jungle Spider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Jungle Spider",{
 model={34278},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1155,7 +1155,7 @@ Search for Darkmist Recluse around this area.
 Use your Tame Beast ability on a _Darkmist Recluse_. |cast Tame Beast##1515 |goto Dustwallow Marsh,35.0,22.6
 modeldisplay 34278
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Olive Spider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Olive Spider",{
 model={513},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1165,7 +1165,7 @@ Search for Plauge Lurkers around this area.
 Use your Tame Beast ability on a _Plague Lurker_. |cast Tame Beast##1515 |goto Western Plaguelands,56.0,60.6
 modeldisplay 513
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Purple Spider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Purple Spider",{
 model={15937},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1175,7 +1175,7 @@ Search for Plauge Lurkers around this area.
 Use your Tame Beast ability on a _Plague Lurker_. |cast Tame Beast##1515 |goto Western Plaguelands,56.0,60.6
 modeldisplay 15937
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Red Spider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Red Spider",{
 model={36505},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1184,7 +1184,7 @@ Use your Tame Beast ability on a _Terokkarantula_. |cast Tame Beast##1515 |goto 
 |tip Terokkarantula is a huge level 65 elite tucked away in the corner here.
 modeldisplay 36505
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Tan Spider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Tan Spider",{
 model={711},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1194,7 +1194,7 @@ Search for Leech Stalkers around this area.
 Use your Tame Beast ability on a _Leech Stalker_. |cast Tame Beast##1515 |goto Wetlands,56.4,63.2
 modeldisplay 711
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Green Fire Spider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Green Fire Spider",{
 model={38543},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1204,7 +1204,7 @@ Use your Tame Beast ability on a _Cinderweb Broodling_. |cast Tame Beast##1515 |
 |tip They will despawn shortly after, so if you see one that isn't moving, you likely won't be able to tame it.
 modeldisplay 38543
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Orange and Black Spiked Spider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Orange and Black Spiked Spider",{
 model={18043},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1222,7 +1222,7 @@ Use your Tame Beast ability on _Deathskitter_. |cast Tame Beast##1515 |goto Tero
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 18043
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Red and Black Spiked Spider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Red and Black Spiked Spider",{
 model={17180},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1240,7 +1240,7 @@ Use your Tame Beast ability on a _Black Recluse_. |cast Tame Beast##1515 |goto T
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 17180
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Red and Yellow Spiked Spider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Red and Yellow Spiked Spider",{
 model={17346},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1258,7 +1258,7 @@ Use your Tame Beast ability on _Ridgespine Stalker_. |cast Tame Beast##1515 |got
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 17346
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Black Bone Spider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Black Bone Spider",{
 model={26760},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1268,7 +1268,7 @@ Search for Tainted Nightstalkers around this area.
 Use your Tame Beast ability on a _Tainted Nightstalker_. |cast Tame Beast##1515 |goto Blasted Lands,35.6,59.2
 modeldisplay 26760
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Brown Bone Spider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Brown Bone Spider",{
 model={26773},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1286,7 +1286,7 @@ Use your Tame Beast ability on a _Domesticated Mine Creeper_. |cast Tame Beast##
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 26773
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Dark Gray Bone Spider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Dark Gray Bone Spider",{
 model={34168},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1313,7 +1313,7 @@ Use your Tame Beast ability on a _Darkwood Broodmother_. |cast Tame Beast##1515 
 Click here to see the previous location for this pet |next "-location2" |confirm
 modeldisplay 34168
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Light Gray Bone Spider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Light Gray Bone Spider",{
 model={27973},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1333,7 +1333,7 @@ Use your Tame Beast ability on a _Carrion Fleshstripper_. |cast Tame Beast##1515
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 27973
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Red Bone Spider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Red Bone Spider",{
 model={34167},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1343,7 +1343,7 @@ Search for Darkwood Lurkers around this area.
 Use your Tame Beast ability on a _Darkwood Lurker_. |cast Tame Beast##1515 |goto Tol Barad Peninsula,55.0,55.4
 modeldisplay 34167
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Green Tarantula",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Green Tarantula",{
 model={709},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1361,7 +1361,7 @@ Use your Tame Beast ability on a _Forest Creeper_. |cast Tame Beast##1515 |goto 
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 709
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Gray Tarantula",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Gray Tarantula",{
 model={6214},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1371,7 +1371,7 @@ Search for Wildthorn Lurkers around this area.
 Use your Tame Beast ability on a _Wildthorn Lurker_. |cast Tame Beast##1515 |goto Ashenvale,72.2,82.2
 modeldisplay 6214
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Lava Tarantula",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Lava Tarantula",{
 model={7510},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1381,7 +1381,7 @@ Search for Greater Lava Spiders around this area.
 Use your Tame Beast ability on a _Greater Lava Spider_. |cast Tame Beast##1515 |goto Searing Gorge,30.8,43.6
 modeldisplay 7510
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Orange Tarantula",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Orange Tarantula",{
 model={382},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1399,7 +1399,7 @@ Use your Tame Beast ability on a _Darkfang Creeper_. |cast Tame Beast##1515 |got
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 382
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Red Tarantula",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Spiders\\Red Tarantula",{
 model={827},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1417,7 +1417,7 @@ Use your Tame Beast ability on a _Sand Skitterer_. |cast Tame Beast##1515 |goto 
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 827
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Vultures\\Blue Vulture",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Vultures\\Blue Vulture",{
 model={507},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1435,7 +1435,7 @@ Use your Tame Beast ability on a _Sky Shadow_. |cast Tame Beast##1515 |goto Dead
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 507
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Vultures\\Brown Vulture",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Vultures\\Brown Vulture",{
 model={410},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1453,7 +1453,7 @@ Use your Tame Beast ability on a _Sky Shadow_. |cast Tame Beast##1515 |goto Dead
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 410
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Vultures\\Red Vulture",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Vultures\\Red Vulture",{
 model={7348},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1463,7 +1463,7 @@ Search for Fire Rocs around this area.
 Use your Tame Beast ability on a _Fire Roc_. |cast Tame Beast##1515 |goto Tanaris,45.0,40.6
 modeldisplay 7348
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Vultures\\Black Vulture",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Vultures\\Black Vulture",{
 model={1229},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1481,7 +1481,7 @@ Use your Tame Beast ability on a _Greater Fleshripper_. |cast Tame Beast##1515 |
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 1229
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Condor\\Blue Condor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Condor\\Blue Condor",{
 model={23962},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1492,7 +1492,7 @@ Search for Dragonbone Condors around this area.
 Use your Tame Beast ability on a _Dragonbone Condor_. |cast Tame Beast##1515 |goto Dragonblight,51.6,26.6
 modeldisplay 23962
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Condor\\Brown Condor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Condor\\Brown Condor",{
 model={23482},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1510,7 +1510,7 @@ Use your Tame Beast ability on a _Dire Condor_. |cast Tame Beast##1515 |goto Red
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 23482
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Condor\\White Condor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Condor\\White Condor",{
 model={25868},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1528,7 +1528,7 @@ Use your Tame Beast ability on _Dreadtalon_. |cast Tame Beast##1515 |goto Dragon
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 25868
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Two Headed Vulture\\Blue Two Headed Vulture",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Two Headed Vulture\\Blue Two Headed Vulture",{
 model={37578},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1542,7 +1542,7 @@ Torgos will fly down.
 Use your Tame Beast ability on _Torgos_. |cast Tame Beast##1515 |goto Terokkar Forest,27,55
 modeldisplay 37578
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Two Headed Vulture\\Green Two Headed Vulture",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Two Headed Vulture\\Green Two Headed Vulture",{
 model={16882},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1553,7 +1553,7 @@ Search for Bonepicker Felfeeders around this area.
 Use your Tame Beast ability on a _Bonepicker Felfeeder_. |cast Tame Beast##1515 |goto Blasted Lands,58.4,33.4
 modeldisplay 16882
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Two Headed Vulture\\Red Two Headed Vulture",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Two Headed Vulture\\Red Two Headed Vulture",{
 model={34048},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1564,7 +1564,7 @@ Search for Searing Rocs around this area.
 Use your Tame Beast ability on a _Searing Roc_. |cast Tame Beast##1515 |goto Tanaris,41.4,62.4
 modeldisplay 34048
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Two Headed Vulture\\White Two Headed Vulture",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Two Headed Vulture\\White Two Headed Vulture",{
 model={20348},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1575,7 +1575,7 @@ Search for Trachela around this area.
 Use your Tame Beast ability on _Trachela_. |cast Tame Beast##1515 |goto Terokkar Forest,43.2,51.6
 modeldisplay 20348
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Two Headed Vulture\\Red-Fiery Two Headed Vulture (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Two Headed Vulture\\Red-Fiery Two Headed Vulture (Rare Spawn)",{
 model={34048},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1586,7 +1586,7 @@ Emberwing can also be found around [44.6,40.6]
 Use your Tame Beast ability on _Emberwing_. |cast Tame Beast##1515 |goto Tanaris,48.2,45.6
 modeldisplay 34048
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Two Headed Vulture\\Yellow Two Headed Vulture (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Two Headed Vulture\\Yellow Two Headed Vulture (Rare Spawn)",{
 model={37536},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1596,7 +1596,7 @@ Search for Spiteflayer around the area.
 Use your Tame Beast ability on _Spiteflayer_. |cast Tame Beast##1515 |goto Blasted Lands,62.6,36.6
 modeldisplay 37536
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Black Spotted Cat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Black Spotted Cat",{
 model={11448},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1606,7 +1606,7 @@ Search for Twilight Runners around this area.
 Use your Tame Beast ability on a _Twilight Runner_. |cast Tame Beast##1515 |goto Stonetalon Mountains,39.0,21.2
 modeldisplay 11448
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Black Striped Cat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Black Striped Cat",{
 model={321},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1624,7 +1624,7 @@ Use your Tame Beast ability on a _Blackwind Sabercat_. |cast Tame Beast##1515 |g
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 321
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Dark Striped Cat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Dark Striped Cat",{
 model={11454},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1634,7 +1634,7 @@ Search for Moonstalker Matriarchs around the area.
 Use your Tame Beast ability on a _Moonstalker Matriarch_. |cast Tame Beast##1515 |goto Darkshore,43.0,63.0
 modeldisplay 11454
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Green Striped Cat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Green Striped Cat",{
 model={35951},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1644,7 +1644,7 @@ Search for Winna's Kitten here.
 Use your Tame Beast ability on a _Winna's Kitten_. |cast Tame Beast##1515 |goto Felwood,38.6,53.6
 modeldisplay 35951
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Orange Spotted Cat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Orange Spotted Cat",{
 model={1043},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1670,7 +1670,7 @@ Use your Tame Beast ability on a _Ridge Stalker Patriarch_. |cast Tame Beast##15
 Click here to see the previous location for this pet |next "-location2" |confirm
 modeldisplay 1043
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Orange Striped Cat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Orange Striped Cat",{
 model={320},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1688,7 +1688,7 @@ Use your Tame Beast ability on a _Stranglethorn Tigress_. |cast Tame Beast##1515
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 320
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\White Cat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\White Cat",{
 model={9958},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1698,7 +1698,7 @@ Search for Young Frostsabers around the area.
 Use your Tame Beast ability on a _Young Frostsaber_. |cast Tame Beast##1515 |goto Winterspring,46.6,16.6
 modeldisplay 9958
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\White Spotted Cat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\White Spotted Cat",{
 model={32764},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1714,7 +1714,7 @@ Use your Tame Beast ability on a _Frost Leopard_. |cast Tame Beast##1515 |goto Z
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 32764
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\White Striped Cat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\White Striped Cat",{
 model={616},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1724,7 +1724,7 @@ King Bangalash patrols around on top of this plataue.
 Use your Tame Beast ability on _King Bangalash_. |cast Tame Beast##1515 |goto Northern Stranglethorn,47.8,59.2
 modeldisplay 616
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Saber Beast Pets\\Cats\\Aqua Saber",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Saber Beast Pets\\Cats\\Aqua Saber",{
 model={10054},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1734,7 +1734,7 @@ Search for Shy-Rotam around this area.
 Use your Tame Beast ability on _Shy-Rotam_. |cast Tame Beast##1515 |goto Winterspring,46.2,17.6
 modeldisplay 10054
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Saber Beast Pets\\Cats\\Black Saber",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Saber Beast Pets\\Cats\\Black Saber",{
 model={35503},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1744,7 +1744,7 @@ Search for Duskfang around this area.
 Use your Tame Beast ability on _Duskfang_. |cast Tame Beast##1515 |goto Swamp of Sorrows,10.8,33.8
 modeldisplay 35503
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Saber Beast Pets\\Cats\\Ice Saber",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Saber Beast Pets\\Cats\\Ice Saber",{
 model={38005},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1754,7 +1754,7 @@ Search for Frostsaber Stalkers around the area.
 Use your Tame Beast ability on a _Frostsaber Stalker_. |cast Tame Beast##1515 |goto Winterspring,53.0,23.0
 modeldisplay 38005
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Saber Beast Pets\\Cats\\Lavendar Saber Cat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Saber Beast Pets\\Cats\\Lavendar Saber Cat",{
 model={9954},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1764,7 +1764,7 @@ Search for Frostsaber Pride Watchers around the area.
 Use your Tame Beast ability on a _Ffrostsaber Pride Watcher_. |cast Tame Beast##1515 |goto Winterspring,46.0,19.0
 modeldisplay 9954
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Saber Beast Pets\\Cats\\Orange Spotted Saber",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Saber Beast Pets\\Cats\\Orange Spotted Saber",{
 model={25005},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1774,7 +1774,7 @@ Search for Dreadsabers around the area.
 Use your Tame Beast ability on a _Dreadsaber_. |cast Tame Beast##1515 |goto Sholazar Basin,26.2,67.8
 modeldisplay 25005
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Saber Beast Pets\\Cats\\Orange Stripped Saber",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Saber Beast Pets\\Cats\\Orange Stripped Saber",{
 model={37546},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1784,7 +1784,7 @@ Search for Shango here.
 Use your Tame Beast ability on _Shango_. |cast Tame Beast##1515 |goto Sholazar Basin,34.0,34.2
 modeldisplay 37546
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Saber Beast Pets\\Cats\\White Saber",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Saber Beast Pets\\Cats\\White Saber",{
 model={38004},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1794,7 +1794,7 @@ Search for Frostsaber Huntresses around the area.
 Use your Tame Beast ability on a _Frostsaber Huntress_. |cast Tame Beast##1515 |goto Winterspring,49.8,24.6
 modeldisplay 38004
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\White Stripped Cat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\White Stripped Cat",{
 model={37545},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1804,7 +1804,7 @@ Search for Frostsabers around the area.
 Use your Tame Beast ability on a _Frostsaber_. |cast Tame Beast##1515 |goto Winterspring,52.8,21.6
 modeldisplay 37545
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Lynxes\\Brown Lynxes",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Lynxes\\Brown Lynxes",{
 model={30963},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1822,7 +1822,7 @@ Use your Tame Beast ability on a _Bobcat_. |cast Tame Beast##1515 |goto Loch Mod
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 30963
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Lynxes\\Red Lynxes",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Lynxes\\Red Lynxes",{
 model={15507},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1832,7 +1832,7 @@ Search for Springpaw Stalkers around the area.
 Use your Tame Beast ability on a _Springpaw Stalker_. |cast Tame Beast##1515 |goto Eversong Woods,44.0,65.8
 modeldisplay 15507
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Lions\\Black Lion",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Lions\\Black Lion",{
 model={26618},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1842,7 +1842,7 @@ Search for Pitch here.
 Use your Tame Beast ability on _Pitch_. |cast Tame Beast##1515 |goto Sholazar Basin,50.6,76.8
 modeldisplay 26618
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Lions\\Gold Lions",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Lions\\Gold Lions",{
 model={1973},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1869,7 +1869,7 @@ Use your Tame Beast ability on a _Plains Pridemane_. |cast Tame Beast##1515 |got
 Click here to see the previous location for this pet |next "-location2" |confirm
 modeldisplay 1973
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Hunched Cat\\Black Hunched Cat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Hunched Cat\\Black Hunched Cat",{
 model={29042},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1880,7 +1880,7 @@ Search for Pride of Bethekk in this area.
 Use your Tame Beast ability on a _Pride of Bethekk_. |cast Tame Beast##1515 |goto Zul'Gurub,47.8,21.6
 modeldisplay 29042
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Hunched Cat\\Black Spotted Hunched Cat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Hunched Cat\\Black Spotted Hunched Cat",{
 model={25708},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1890,7 +1890,7 @@ Search for Cursed Offspring of Har'koa around the area.
 Use your Tame Beast ability on a _Cursed Offspring of Har'koa_. |cast Tame Beast##1515 |goto Zul'Drak,65.2,68.0
 modeldisplay 25708
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Hunched Cat\\Orange Striped Hunched Cat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Hunched Cat\\Orange Striped Hunched Cat",{
 model={34248},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1908,7 +1908,7 @@ Use your Tame Beast ability on a _Tiger_. |cast Tame Beast##1515 |goto Uldum,51.
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 34248
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Mystical Pets\\Core Hounds\\Gray Core Hounds",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Mystical Pets\\Core Hounds\\Gray Core Hounds",{
 model={17028},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1919,7 +1919,7 @@ Search for The Kurken around this area.
 Use your Tame Beast ability on _The Kurken_. |cast Tame Beast##1515 |goto Azuremyst Isle,49.6,13.0
 modeldisplay 17028
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Mystical Pets\\Core Hounds\\Red Core Hounds",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Mystical Pets\\Core Hounds\\Red Core Hounds",{
 model={12189},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1946,7 +1946,7 @@ Use your Tame Beast ability on a _Core Hound_. |cast Tame Beast##1515 |goto Molt
 Click here to see the previous location for this pet |next "-location2" |confirm
 modeldisplay 12189
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Mystical Pets\\Core Hounds\\Yellow and Green Core Hounds",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Mystical Pets\\Core Hounds\\Yellow and Green Core Hounds",{
 model={37559},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1964,7 +1964,7 @@ Use your Tame Beast ability on _Svarnos_. |cast Tame Beast##1515 |goto Tol Barad
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 37559
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Devilsaur\\Black Devilsaur",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Devilsaur\\Black Devilsaur",{
 model={5238},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -1982,7 +1982,7 @@ Use your Tame Beast ability on _Tyrantus_. |cast Tame Beast##1515 |goto Netherst
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 5238
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Devilsaur\\Red Devilsaur",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Devilsaur\\Red Devilsaur",{
 model={5240},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2001,7 +2001,7 @@ Use your Tame Beast ability on the _Devilsaur Queen_. |cast Tame Beast##1515 |go
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 5240
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Devilsaur\\White Devilsaur",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Devilsaur\\White Devilsaur",{
 model={5239},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2011,7 +2011,7 @@ It pratrols to [58.0,42.4].
 Use your Tame Beast ability on the _Devilsaur_. |cast Tame Beast##1515 |goto Un'Goro Crater,58.0,74.6
 modeldisplay 5239
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Dogs\\Mastiffs\\Black Mastiff",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Dogs\\Mastiffs\\Black Mastiff",{
 model={35355},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2021,7 +2021,7 @@ Search for Onslaught Bloodhounds around the area.
 Use your Tame Beast ability on a _Onslaught Bloodhound_. |cast Tame Beast##1515 |goto Dragonblight,87.6,38.0
 modeldisplay 35355
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Dogs\\Mastiffs\\Brown Mastiff",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Dogs\\Mastiffs\\Brown Mastiff",{
 model={33998},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2032,7 +2032,7 @@ Search for Blighthounds around the area.
 Use your Tame Beast ability on a _Blighthound_. |cast Tame Beast##1515 |goto Eastern Plaguelands,22.6,68.2
 modeldisplay 33998
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Dogs\\Mastiffs\\Gray Mastiff",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Dogs\\Mastiffs\\Gray Mastiff",{
 model={30213},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2042,7 +2042,7 @@ Search for Dragonflayer Hunting Hounds around this area.
 Use your Tame Beast ability on a _Dragonflayer Hunting Hound_. |cast Tame Beast##1515 |goto Howling Fjord,69.2,56.0
 modeldisplay 30213
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Dogs\\Mastiffs\\Red Mastiff",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Dogs\\Mastiffs\\Red Mastiff",{
 model={35353},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2053,7 +2053,7 @@ Search for the Scarlet Tracking Hound.
 Use your Tame Beast ability on a _Scarlet Tracking Hound_. |cast Tame Beast##1515 |goto Scarlet Monastery/2,20.6,34.6
 modeldisplay 35353
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Dogs\\Demon Beast Pets\\Dogs\\Blue Demon Dog",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Dogs\\Demon Beast Pets\\Dogs\\Blue Demon Dog",{
 model={9021},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2063,7 +2063,7 @@ Search for Ravenous Darkhounds around the area.
 Use your Tame Beast ability on a _Ravenous Darkhound_. |cast Tame Beast##1515 |goto Tirisfal Glades,83.8,44.0
 modeldisplay 9021
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Dogs\\Demon Beast Pets\\Dogs\\Ghostly Gray Demon Dog",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Dogs\\Demon Beast Pets\\Dogs\\Ghostly Gray Demon Dog",{
 model={16052},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2073,7 +2073,7 @@ Search for Shadowbeasts around this area.
 Use your Tame Beast ability on a _Shadowbeast_. |cast Tame Beast##1515 |goto Karazhan,61.4,19.6
 modeldisplay 16052
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Dogs\\Demon Beast Pets\\Dogs\\Ghostly White Demon Dog",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Dogs\\Demon Beast Pets\\Dogs\\Ghostly White Demon Dog",{
 model={16049},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2083,7 +2083,7 @@ Search for Phase Hounds around this area.
 Use your Tame Beast ability on a _Phase Hound_. |cast Tame Beast##1515 |goto Karazhan,61.4,19.6
 modeldisplay 16049
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Dogs\\Demon Beast Pets\\Dogs\\Gray Demon Dog",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Dogs\\Demon Beast Pets\\Dogs\\Gray Demon Dog",{
 model={6195},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2093,7 +2093,7 @@ Search for Deathshadow Hounds around the area.
 Use your Tame Beast ability on a _Deathshadow Hound_. |cast Tame Beast##1515 |goto Nagrand,10.6,39.0
 modeldisplay 6195
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Dogs\\Demon Beast Pets\\Dogs\\Purple Demon Dog",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Dogs\\Demon Beast Pets\\Dogs\\Purple Demon Dog",{
 model={37773},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2103,7 +2103,7 @@ Search for Dreadbeasts around the area.
 Use your Tame Beast ability on a _Dreadbeast_. |cast Tame Beast##1515 |goto Karazhan,61.4,19.6
 modeldisplay 37773
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Dogs\\Demon Beast Pets\\Dogs\\Red Demon Dog",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Dogs\\Demon Beast Pets\\Dogs\\Red Demon Dog",{
 model={8181},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2121,7 +2121,7 @@ Use your Tame Beast ability on a _Bloodhound Mastiff_. |cast Tame Beast##1515 |g
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 8181
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Dogs\\Runed Demon Beast Pets\\Dogs\\Blue Runed Demon Dog",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Dogs\\Runed Demon Beast Pets\\Dogs\\Blue Runed Demon Dog",{
 model={24906},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2131,7 +2131,7 @@ Search for Coldarra Mage Slayers around the area.
 Use your Tame Beast ability on a _Coldarra Mage Slayer_. |cast Tame Beast##1515 |goto Borean Tundra,33.8,28.8
 modeldisplay 24906
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Dogs\\Runed Demon Beast Pets\\Dogs\\Green Runed Demon Dog",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Dogs\\Runed Demon Beast Pets\\Dogs\\Green Runed Demon Dog",{
 model={37408},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2141,7 +2141,7 @@ Search for Plaguehounds around the area.
 Use your Tame Beast ability on a _Plaguehound_. |cast Tame Beast##1515 |goto Eastern Plaguelands,51.2,54.2
 modeldisplay 37408
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Dogs\\Runed Demon Beast Pets\\Dogs\\Red Runed Demon Dog",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Dogs\\Runed Demon Beast Pets\\Dogs\\Red Runed Demon Dog",{
 model={25785},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2151,7 +2151,7 @@ Search for Vargul Blighthounds around the area.
 Use your Tame Beast ability on a _Vargul Blighthound_. |cast Tame Beast##1515  |goto Zul'Drak,19.4,61.6
 modeldisplay 25785
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Foxes\\Black Fox",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Foxes\\Black Fox",{
 model={30255},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2161,7 +2161,7 @@ Search for Forest Stalkers around the area.
 Use your Tame Beast ability on a _Forest Stalker_. |cast Tame Beast##1515 |goto Redridge Mountains 63.4,41.2
 modeldisplay 30255
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Foxes\\Brown Fox",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Foxes\\Brown Fox",{
 model={30302},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2180,7 +2180,7 @@ Use your Tame Beast ability on a _Rabid Fox_. |cast Tame Beast##1515 |goto Weste
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 30302
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Foxes\\Gray Fox",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Foxes\\Gray Fox",{
 model={30239},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2190,7 +2190,7 @@ Search for an Ashtail around the area.
 Use your Tame Beast ability on an _Ashtail_. |cast Tame Beast##1515 |goto Loch Modan,73.6,44.0
 modeldisplay 30239
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Foxes\\Red Foxes",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Foxes\\Red Foxes",{
 model={30301},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2208,7 +2208,7 @@ Use your Tame Beast ability on a _Whitetail Fox_. |cast Tame Beast##1515 |goto W
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 30301
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Foxes\\White Fox",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Foxes\\White Fox",{
 model={30254},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2226,7 +2226,7 @@ Use your Tame Beast ability on a _Snowfrolic Fox_. |cast Tame Beast##1515 |goto 
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 30254
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hyenas\\Brown Hyena",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hyenas\\Brown Hyena",{
 model={2726},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2244,7 +2244,7 @@ Use your Tame Beast ability on a _Tundra Scavenger_. |cast Tame Beast##1515 |got
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 2726
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hyenas\\Gray Hyena",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hyenas\\Gray Hyena",{
 model={2714},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2254,7 +2254,7 @@ Search for a Snickeringfang Hyena around the area.
 Use your Tame Beast ability on a _Snickerfang Hyena_. |cast Tame Beast##1515 |goto Blasted Lands,50.2,34.6
 modeldisplay 2714
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hyenas\\Orange Hyena",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hyenas\\Orange Hyena",{
 model={1536},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2264,7 +2264,7 @@ Search for a Blisterpaw Hyena around the area.
 Use your Tame Beast ability on a _Blisterpaw Hyena_. |cast Tame Beast##1515 |goto Tanaris,48.0,27.2
 modeldisplay 1536
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hyenas\\Orange Hyena Lighter",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hyenas\\Orange Hyena Lighter",{
 model={1535},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2282,7 +2282,7 @@ Use your Tame Beast ability on a _Hecklefang Scavenger_. |cast Tame Beast##1515 
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 1535
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hyenas\\Purple Hyena",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hyenas\\Purple Hyena",{
 model={10903},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2292,7 +2292,7 @@ Search for a Rabid Blisterpaw around this area.
 Use your Tame Beast ability on a _Rabid Blisterpaw_. |cast Tame Beast##1515 |goto Tanaris,56.2,56.6
 modeldisplay 10903
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hyenas\\Red Hyena",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hyenas\\Red Hyena",{
 model={31352},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2302,7 +2302,7 @@ Search for a Bloodsnarl Hyena around this area.
 Use your Tame Beast ability on a _Bloodsnarl Hyena_. |cast Tame Beast##1515 |goto Uldum,55.6,58.4
 modeldisplay 31352
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hyenas\\Yellow Hyena",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hyenas\\Yellow Hyena",{
 model={2710},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2312,7 +2312,7 @@ Search for a Hecklefang Hyena around this area.
 Use your Tame Beast ability on a _Hecklefang Hyena_. |cast Tame Beast##1515 |goto Northern Barrens,54.4,27.0
 modeldisplay 2710
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Moths\\Beige Moth",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Moths\\Beige Moth",{
 model={17574},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2322,7 +2322,7 @@ Search for Teromoths around the area.
 Use your Tame Beast ability on a _Teromoth_. |cast Tame Beast##1515 |goto Terokkar Forest,45.4,31.6
 modeldisplay 17574
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Moths\\Blue and Yellow Moth",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Moths\\Blue and Yellow Moth",{
 model={17798},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2332,7 +2332,7 @@ Search for Teromoths around the area.
 Use your Tame Beast ability on a _Teromoth_. |cast Tame Beast##1515 |goto Terokkar Forest,45.4,31.6
 modeldisplay 17798
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Moths\\Blue Moth",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Moths\\Blue Moth",{
 model={17709},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2350,7 +2350,7 @@ Use your Tame Beast ability on a _Shimmerwing Moth_. |cast Tame Beast##1515 |got
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 17709
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Moths\\Green Moth",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Moths\\Green Moth",{
 model={17795},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2360,7 +2360,7 @@ Search for Vicious Termoth around the area.
 Use your Tame Beast ability on a _Vicious Teromoth_. |cast Tame Beast##1515 |goto Terokkar Forest,45.0,22.6
 modeldisplay 17795
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Moths\\Gray Moth",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Moths\\Gray Moth",{
 model={37566},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2371,7 +2371,7 @@ Note that if you are Horde you will likely die trying to attain this pet. |goto 
 Use your Tame Beast ability on a _Vale Moth_. |cast Tame Beast##1515
 modeldisplay 37566
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Moths\\Tan Moth",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Moths\\Tan Moth",{
 model={23316},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2381,7 +2381,7 @@ Search for a Bloodspore Moth around the area.
 Use your Tame Beast ability on a _Bloodspore Moth_. |cast Tame Beast##1515  |goto Borean Tundra,52.8,53.8
 modeldisplay 23316
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Moths\\White Moth",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Moths\\White Moth",{
 model={23237},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2391,7 +2391,7 @@ Search for Aspatha the Broodmother here.
 Use your Tame Beast ability on _Aspatha the Broodmother_. |cast Tame Beast##1515 |goto Borean Tundra,48.6,59.0
 modeldisplay 23237
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Black Raptor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Black Raptor",{
 model={21825},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2409,7 +2409,7 @@ Use your Tame Beast ability on a _Venomhide Ravasaur_. |cast Tame Beast##1515 |g
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 21825
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Blue Raptor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Blue Raptor",{
 model={949},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2427,7 +2427,7 @@ Use your Tame Beast ability on a _Tethis_. |cast Tame Beast##1515 |goto Northern
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 949
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Green Raptor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Green Raptor",{
 model={676},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2437,7 +2437,7 @@ Search for Highland Scytheclaws around the area.
 Use your Tame Beast ability on a _Highland Scytheclaw_. |cast Tame Beast##1515 |goto Wetlands,35.4,18.6
 modeldisplay 676
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Gray Raptor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Gray Raptor",{
 model={1337},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2455,7 +2455,7 @@ Use your Tame Beast ability on a _King Reaperclaw_. |cast Tame Beast##1515 |goto
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 1337
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Orange Raptor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Orange Raptor",{
 model={787},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2473,7 +2473,7 @@ Use your Tame Beast ability on a _Terrortooth Scytheclaw_. |cast Tame Beast##151
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 787
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Purple Raptor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Purple Raptor",{
 model={1747},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2491,7 +2491,7 @@ Use your Tame Beast ability on a _Mottled Raptor_. |cast Tame Beast##1515 |goto 
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 1747
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Red Raptor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Red Raptor",{
 model={1960},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2517,7 +2517,7 @@ Use your Tame Beast ability on a _Bloodfen Raptor_. |cast Tame Beast##1515 |goto
 Click here to see the previous location for this pet |next "-location2" |confirm
 modeldisplay 1960
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Yellow Raptor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Yellow Raptor",{
 model={11316},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2527,7 +2527,7 @@ Search for Highland Striders around the area.
 Use your Tame Beast ability on a _Highland Strider_. |cast Tame Beast##1515 |goto Arathi Highlands,20.8,20.6
 modeldisplay 11316
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Black Spiked Raptor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Black Spiked Raptor",{
 model={19770},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2537,7 +2537,7 @@ Search for a Daggermaw Blackhide around this area.
 Use your Tame Beast ability on a _Daggermaw Blackhide_. |cast Tame Beast##1515 |goto Blade's Edge Mountains,48.8,46.6
 modeldisplay 19770
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Blue Spiked Raptor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Blue Spiked Raptor",{
 model={19770},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2547,7 +2547,7 @@ Search for a Drakuru Raptor around the area.
 Use your Tame Beast ability on a _Drakuru Raptor_. |cast Tame Beast##1515 |goto Zul'Drak,29.2,70.8
 modeldisplay 19770
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Brown Spiked Raptor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Brown Spiked Raptor",{
 model={19736},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2565,7 +2565,7 @@ Use your Tame Beast ability on a _Bladespire Raptor_. |cast Tame Beast##1515 |go
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 19736
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Green Spiked Raptor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Green Spiked Raptor",{
 model={19742},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2575,7 +2575,7 @@ Search for a Felsworn Daggermaw around the area.
 Use your Tame Beast ability on a _Felsworn Daggermaw_. |cast Tame Beast##1515 |goto Blade's Edge Mountains,70.6,32.6
 modeldisplay 19742
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Red Spiked Raptor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Red Spiked Raptor",{
 model={30847},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2593,7 +2593,7 @@ Use your Tame Beast ability on a _Daggermaw Lashtail_. |cast Tame Beast##1515 |g
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 30847
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Tallstriders\\Brown Tallstrider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Tallstriders\\Brown Tallstrider",{
 model={1219},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2611,7 +2611,7 @@ Use your Tame Beast ability on a _Foreststrider Fledgling_. |cast Tame Beast##15
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 1219
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Tallstriders\\Gray Tallstrider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Tallstriders\\Gray Tallstrider",{
 model={1220},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2621,7 +2621,7 @@ Search for an Ornery Plainstrider around this area.
 Use your Tame Beast ability on a _Ornery Plainstrider_. |cast Tame Beast##1515 |goto Northern Barrens,64.6,60.0
 modeldisplay 1220
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Tallstriders\\Pink Tallstrider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Tallstriders\\Pink Tallstrider",{
 model={1961},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2631,7 +2631,7 @@ Search for a Deviate Plainstrider around this area.
 Use your Tame Beast ability on a _Deviate Plainstrider_. |cast Tame Beast##1515 |goto Southern Barrens,50.8,41.2
 modeldisplay 1961
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Tallstriders\\Purple Tallstrider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Tallstriders\\Purple Tallstrider",{
 model={21087},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2642,7 +2642,7 @@ You will need a flying mount to have access to these.
 Use your Tame Beast ability on a _Lost Torranche_. |cast Tame Beast##1515 |goto Terokkar Forest,45.2,94.2
 modeldisplay 21087
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Tallstriders\\Turqouise Tallstrider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Tallstriders\\Turqouise Tallstrider",{
 model={38},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2652,7 +2652,7 @@ Search for a Swampstider around the area.
 Use your Tame Beast ability on a _Swampstrider_. |cast Tame Beast##1515 |goto Swamp of Sorrows,83.6,30.0
 modeldisplay 38
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Tallstriders\\White Tallstrider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Tallstriders\\White Tallstrider",{
 model={1221},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2670,7 +2670,7 @@ Use your Tame Beast ability on a _Fleeting Plainstrider_. |cast Tame Beast##1515
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 1221
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Blue and Red Wasp",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Blue and Red Wasp",{
 model={29113},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2680,7 +2680,7 @@ Search for a Sapphire Hive Drone around the area.
 Use your Tame Beast ability on a _Sapphire Hive Drone_. |cast Tame Beast##1515 |goto Sholazar Basin,61.6,79.6
 modeldisplay 29113
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Blue and Purple Wasp",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Blue and Purple Wasp",{
 model={37861},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2691,7 +2691,7 @@ You can find more around [44.0,51.2].
 Use your Tame Beast ability on a _Florawing Needler_. |cast Tame Beast##1515 |goto Zul'Gurub,33.0,49.2
 modeldisplay 37861
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Green and Red Wasp",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Green and Red Wasp",{
 model={37743},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2709,7 +2709,7 @@ Use your Tame Beast ability on a _Florawing Needler_. |cast Tame Beast##1515 |go
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 37743
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Green Wasp",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Green Wasp",{
 model={482},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2719,7 +2719,7 @@ Search for Zukk'ash Wasps around the area.
 Use your Tame Beast ability on a _Zukk'ash Wasp_. |cast Tame Beast##1515 |goto Feralas,75.6,62.8
 modeldisplay 482
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Orange Wasp",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Orange Wasp",{
 model={37859},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2729,7 +2729,7 @@ Search for Florawing Needlers around the area.
 Use your Tame Beast ability on a _Florawing Needler_. |cast Tame Beast##1515 |goto Zul'Gurub 32.8,49.2
 modeldisplay 37859
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Purple Wasp",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Purple Wasp",{
 model={37860},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2739,7 +2739,7 @@ Search for Florawing Needlers around the area.
 Use your Tame Beast ability on a _Florawing Needler_. |cast Tame Beast##1515 |goto Zul'Gurub 32.8,49.2
 modeldisplay 37860
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Red Wasp",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Red Wasp",{
 model={92},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2749,7 +2749,7 @@ Search for Zukk'ash Stingers around the area.
 Use your Tame Beast ability on a _Zukk'ash Stinger_. |cast Tame Beast##1515 |goto Feralas,78.8,64.6
 modeldisplay 92
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Tan Wasp",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Tan Wasp",{
 model={36034},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2759,7 +2759,7 @@ Search for Silithid Wasps around the area.
 Use your Tame Beast ability on a _Silithid Wasp_. |cast Tame Beast##1515 |goto Thousand Needles,70.4,86.4
 modeldisplay 36034
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Yellow Wasp",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Yellow Wasp",{
 model={11090},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2769,7 +2769,7 @@ Search for Gorishi Wasps around the area.
 Use your Tame Beast ability on a _Gorishi Wasp_. |cast Tame Beast##1515 |goto Un'Goro Crater,53.4,76.8
 modeldisplay 11090
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Purple Flame Fly",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Purple Flame Fly",{
 model={19252},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2779,7 +2779,7 @@ Search for a Marshlight Bleeder around the area.
 Use your Tame Beast ability on a _Marshlight Bleeder_. |cast Tame Beast##1515 |goto Zangarmarsh,25.8,33.2
 modeldisplay 19252
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Red Flame Fly",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Red Flame Fly",{
 model={18724},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2789,7 +2789,7 @@ Search for Blacksting around the area.
 Use your Tame Beast ability on _Blacksting_. |cast Tame Beast##1515 |goto Zangarmarsh,49.8,59.6
 modeldisplay 18724
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Yellow Flame Fly",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Yellow Flame Fly",{
 model={18723},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -2799,7 +2799,7 @@ Search for a Bogflare Needler around the area.
 Use your Tame Beast ability on a _Bogflare Needler_. |cast Tame Beast##1515 |goto Zangarmarsh,39.6,34.2
 modeldisplay 18723
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Black Wolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Black Wolf",{
 class="HUNTER",
 model={780},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
@@ -2818,7 +2818,7 @@ Use your Tame Beast ability on a _Vilebranch Raiding Wolf_. |cast Tame Beast##15
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 780
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Diseased Wolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Diseased Wolf",{
 class="HUNTER",
 model={4124},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
@@ -2837,7 +2837,7 @@ Use your Tame Beast ability on a _Felpaw Wolf_. |cast Tame Beast##1515 |goto Fel
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 4124
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Gray Wolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Gray Wolf",{
 class="HUNTER",
 model={18156},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
@@ -2856,7 +2856,7 @@ Use your Tame Beast ability on a _Longtooth Runner_. |cast Tame Beast##1515 |got
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 18156
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Tan Wolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Tan Wolf",{
 class="HUNTER",
 model={1100},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
@@ -2875,7 +2875,7 @@ Use your Tame Beast ability on a _Feral Crag Coyote_. |cast Tame Beast##1515 |go
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 1100
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\White Wolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\White Wolf",{
 class="HUNTER",
 model={11416},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
@@ -2894,7 +2894,7 @@ Use your Tame Beast ability on a _Ghostpaw Runner_. |cast Tame Beast##1515 |goto
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 11416
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Bicolor Worg",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Bicolor Worg",{
 class="HUNTER",
 model={18063},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
@@ -2905,7 +2905,7 @@ Search for Ironjaw around the area.
 Use your Tame Beast ability on _Ironjaw_. |cast Tame Beast##1515 |goto Terokkar Forest,66.6,35.0
 modeldisplay 18063
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Black Worg",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Black Worg",{
 class="HUNTER",
 model={741},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
@@ -2924,7 +2924,7 @@ Use your Tame Beast ability on a _Black Ravager_. |cast Tame Beast##1515 |goto D
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 741
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Brown Worg",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Brown Worg",{
 class="HUNTER",
 model={37576},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
@@ -2935,7 +2935,7 @@ Search for Ripp around the area.
 Use your Tame Beast ability on _Ripp_. |cast Tame Beast##1515 |goto Hellfire Peninsula,68.6,73.6
 modeldisplay 37576
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Ghost Worg",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Ghost Worg",{
 class="HUNTER",
 model={34508},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
@@ -2946,7 +2946,7 @@ Search for The Lone Hunter around the area.
 Use your Tame Beast ability on _The Lone Hunter_. |cast Tame Beast##1515 |goto Eastern Plaguelands,40.0,83.6
 modeldisplay 34508
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Gray Worg",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Gray Worg",{
 class="HUNTER",
 model={11415},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
@@ -2965,7 +2965,7 @@ Use your Tame Beast ability on a _Silvermane Stalker_. |cast Tame Beast##1515 |g
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 11415
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Red Worg",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Red Worg",{
 class="HUNTER",
 model={9372},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
@@ -2984,7 +2984,7 @@ Use your Tame Beast ability on a _Thunderlord Dire Wolf_. |cast Tame Beast##1515
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 9372
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\White Worg",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\White Worg",{
 class="HUNTER",
 model={10278},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
@@ -2995,7 +2995,7 @@ Search for Ghost Howl around the area.
 Use your Tame Beast ability on _Ghost Howl_. |cast Tame Beast##1515 |goto Mulgore,44.6,16.8
 modeldisplay 10278
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Black Saber Worg",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Black Saber Worg",{
 class="HUNTER",
 model={40147},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
@@ -3014,7 +3014,7 @@ Use your Tame Beast ability on a _Bloodthirsty Worg_. |cast Tame Beast##1515 |go
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 40147
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Brown Saber Worg",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Brown Saber Worg",{
 class="HUNTER",
 model={22502},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
@@ -3025,7 +3025,7 @@ Search for Bjomolf around this area.
 Use your Tame Beast ability on _Bjomolf_. |cast Tame Beast##1515 |goto Howling Fjord,28.8,22.8
 modeldisplay 22502
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Gray Saber Worg",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Gray Saber Worg",{
 class="HUNTER",
 model={22044},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
@@ -3044,7 +3044,7 @@ Use your Tame Beast ability on a _Tundra Wolf_. |cast Tame Beast##1515 |goto Bor
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 22044
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\White Saber Worg",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\White Saber Worg",{
 class="HUNTER",
 model={22089},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
@@ -3063,7 +3063,7 @@ Use your Tame Beast ability on a _Frostworg_. |cast Tame Beast##1515 |goto The S
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 22089
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Black Armored Worg",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Black Armored Worg",{
 class="HUNTER",
 model={14334},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
@@ -3076,7 +3076,7 @@ Search for Shattered Hand Warhounds around the area.
 Use your Tame Beast ability on a _Shattered Hand Warhound_. |cast Tame Beast##1515 |goto Hellfire Ramparts,47.8,51.4
 modeldisplay 14334
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Bears\\Black Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Bears\\Black Bear",{
 model={23992},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3094,7 +3094,7 @@ Use your Tame Beast ability on a _Vicious Black Bear_. |cast Tame Beast##1515 |g
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 23992
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Bears\\Brown Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Bears\\Brown Bear",{
 model={1006},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3112,7 +3112,7 @@ Use your Tame Beast ability on a _Corrupted Thistle Bear_. |cast Tame Beast##151
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 1006
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Bears\\Dark Brown Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Bears\\Dark Brown Bear",{
 model={1990},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3122,7 +3122,7 @@ Search for Ashenvale Bears around the area.
 Use your Tame Beast ability on a _Ashenvale Bear_. |cast Tame Beast##1515 |goto Ashenvale,45.8,51.8
 modeldisplay 1990
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Bears\\White Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Bears\\White Bear",{
 model={913},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3141,7 +3141,7 @@ Use your Tame Beast ability on a _Shardtooth Bear_. |cast Tame Beast##1515 |goto
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 913
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Bears\\Black Diseased Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Bears\\Black Diseased Bear",{
 model={1082},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3159,7 +3159,7 @@ Use your Tame Beast ability on a _Diseased Black Bear_. |cast Tame Beast##1515 |
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 1082
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Bears\\Dark Brown Diseased Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Bears\\Dark Brown Diseased Bear",{
 model={37737},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3177,7 +3177,7 @@ Use your Tame Beast ability on a _Consumed Thistle Bear_. |cast Tame Beast##1515
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 37737
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Bears\\Gray Diseased Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Bears\\Gray Diseased Bear",{
 model={31588},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3188,7 +3188,7 @@ Search for Infested Bears around the area.
 Use your Tame Beast ability on a _Infested Bear_. |cast Tame Beast##1515 |goto Hillsbrad Foothills,32.8,69.6
 modeldisplay 31588
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Bears\\White Diseased Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Bears\\White Diseased Bear",{
 model={23966},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3206,7 +3206,7 @@ Use your Tame Beast ability on a _Tirisfal Bear_. |cast Tame Beast##1515 |goto S
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 23966
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Beetles\\Black Beetle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Beetles\\Black Beetle",{
 model={7470},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3217,7 +3217,7 @@ You will be able to find more around [55.0,25.0].
 Use your Tame Beast ability on a _Scarab_. |cast Tame Beast##1515 |goto Zul'Farrak,57.6,58.0
 modeldisplay 7470
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Beetles\\Blue Beetle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Beetles\\Blue Beetle",{
 model={11093},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3235,7 +3235,7 @@ Use your Tame Beast ability on a _Hive'Ashi Worker_. |cast Tame Beast##1515 |got
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 11093
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Beetles\\Brown Beetle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Beetles\\Brown Beetle",{
 model={11144},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3245,7 +3245,7 @@ Search for Silithid Defender around the area.
 Use your Tame Beast ability on a _Silithid Defender_. |cast Tame Beast##1515 |goto Thousand Needles,65.4,86.6
 modeldisplay 11144
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Beetles\\Purple Beetle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Beetles\\Purple Beetle",{
 model={11108},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3255,7 +3255,7 @@ Search for Centipaar Tunneler around the area.
 Use your Tame Beast ability on a _Centipaar Tunneler_. |cast Tame Beast##1515 |goto Tanaris,33.0,45.4
 modeldisplay 11108
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Beetles\\Red Beetle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Beetles\\Red Beetle",{
 model={10031},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3266,7 +3266,7 @@ Search for Crypt Horrors and Nerubian Sycophants around the area.
 Use your Tame Beast ability on a _Carrion Scarab_. |cast Tame Beast##1515 |goto Eastern Plaguelands,8.4,29.4
 modeldisplay 10031
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Beetles\\Yellow Beetle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Beetles\\Yellow Beetle",{
 model={11089},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3276,7 +3276,7 @@ Search for Gorishi Tunnelers around the area.
 Use your Tame Beast ability on a _Gorishi Tunneler_. |cast Tame Beast##1515 |goto Un'Goro Crater,49.6,82.6
 modeldisplay 11089
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Beetles\\Blue-Green Scarab",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Beetles\\Blue-Green Scarab",{
 model={34911},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3286,7 +3286,7 @@ Search for Sapphire Scarab around the area.
 Use your Tame Beast ability on a _Sapphire Scarab_. |cast Tame Beast##1515 |goto Uldum,65.6,28.0
 modeldisplay 34911
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Beetles\\Brown Scarab",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Beetles\\Brown Scarab",{
 model={37580},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3296,7 +3296,7 @@ Search for Temple Scarabs around the area.
 Use your Tame Beast ability on a _Temple Scarab_. |cast Tame Beast##1515 |goto Uldum,65.2,32.6
 modeldisplay 37580
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Beetles\\Dark Blue Scarab",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Beetles\\Dark Blue Scarab",{
 model={34908},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3306,7 +3306,7 @@ Search for Amethyst Scarabs around the area.
 Use your Tame Beast ability on a _Amethyst Scarab_. |cast Tame Beast##1515 |goto Uldum,64.2,27.2
 modeldisplay 34908
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Beetles\\Green and Red Scarab",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Beetles\\Green and Red Scarab",{
 model={34912},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3316,7 +3316,7 @@ Search for Emerald Scarab around the area.
 Use your Tame Beast ability on a _Emerald Scarab_. |cast Tame Beast##1515 |goto Uldum,65.6,32.6
 modeldisplay 34912
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Beetles\\Turquoise Scarab",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Beetles\\Turquoise Scarab",{
 model={34913},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3326,7 +3326,7 @@ Search for Turquoise Scarabs around the area.
 Use your Tame Beast ability on a _Turquoise Scarab_. |cast Tame Beast##1515 |goto Uldum,63.2,31.4
 modeldisplay 34913
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Black Boar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Black Boar",{
 model={607},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3344,7 +3344,7 @@ Use your Tame Beast ability on a _Dire Mottled Boar_. |cast Tame Beast##1515 |go
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 607
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Brown Boar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Brown Boar",{
 model={703},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3362,7 +3362,7 @@ Use your Tame Beast ability on _Bellygrub_. |cast Tame Beast##1515 |goto Redridg
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 703
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Gray Boar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Gray Boar",{
 model={503},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3380,7 +3380,7 @@ Use your Tame Beast ability on a _Elder Mottled Boar_. |cast Tame Beast##1515 |g
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 503
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Red Boar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Red Boar",{
 model={30964},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3398,7 +3398,7 @@ Use your Tame Beast ability on a _Thistle Boar_. |cast Tame Beast##1515 |goto Te
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 30964
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Undead Boar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Undead Boar",{
 model={6121},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3408,7 +3408,7 @@ Search for Plagued Swine around the area.
 Use your Tame Beast ability on a _Plagued Swine_. |cast Tame Beast##1515 |goto Eastern Plaguelands,14.8,28.4
 modeldisplay 6121
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Yellow Boar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Yellow Boar",{
 model={8869},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3434,7 +3434,7 @@ Use your Tame Beast ability on a _Young Battleboar_. |cast Tame Beast##1515 |got
 Click here to see the previous location for this pet |next "-location2" |confirm
 modeldisplay 8869
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Black Armored Boar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Black Armored Boar",{
 model={4714},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3444,7 +3444,7 @@ Search for a Rotting Agam'ar around the area.
 Use your Tame Beast ability on a _Rotting Agam'ar_. |cast Tame Beast##1515 |goto Razorfen Kraul,58.2,59.0
 modeldisplay 4714
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Brown Armored Boar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Brown Armored Boar",{
 model={26685},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3462,7 +3462,7 @@ Use your Tame Beast ability on a _Armored Battleboar_. |cast Tame Beast##1515 |g
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 26685
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Ghost Armored Boar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Ghost Armored Boar",{
 model={4716},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3472,7 +3472,7 @@ Search for Boar Spirits around the area.
 Use your Tame Beast ability on a _Boar Spirit_. |cast Tame Beast##1515 |goto Razorfen Kraul,82.6,52
 modeldisplay 4716
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Gray Armored Boar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Gray Armored Boar",{
 model={2453},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3482,7 +3482,7 @@ Search for Raging Agam'ar around the area.
 Use your Tame Beast ability on a _Raging Agam'ar_. |cast Tame Beast##1515 |goto Razorfen Kraul,56.6,58.0
 modeldisplay 2453
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Black and Green Felboar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Black and Green Felboar",{
 model={19249},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3492,7 +3492,7 @@ Search for Felboar around the area.
 Use your Tame Beast ability on a _Felboar_. |cast Tame Beast##1515 |goto Shadowmoon Valley,34.0,44.6
 modeldisplay 19249
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Blue and White Felboar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Blue and White Felboar",{
 model={20831},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3502,7 +3502,7 @@ Search for Shard-Hide Boar around the area.
 Use your Tame Beast ability on a _Shard-Hide Boar_. |cast Tame Beast##1515 |goto Blade's Edge Mountains,30.6,71.6
 modeldisplay 20831
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Gray and Orange Felboar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Gray and Orange Felboar",{
 model={18701},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3512,7 +3512,7 @@ Search for Deranged Helboars around the area.
 Use your Tame Beast ability on a _Deranged Helboar_. |cast Tame Beast##1515 |goto Hellfire Peninsula,48.8,63.8
 modeldisplay 18701
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Red and Black Felboar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Red and Black Felboar",{
 model={11410},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3522,7 +3522,7 @@ Search for Starving Helboar around the area.
 Use your Tame Beast ability on a _Starving Helboar_. |cast Tame Beast##1515 |goto Hellfire Peninsula,62.8,42.8
 modeldisplay 11410
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Yellow and Black Felboar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Yellow and Black Felboar",{
 model={24741},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3532,7 +3532,7 @@ Search for Domesticated Felboars around the area.
 Use your Tame Beast ability on a _Domesticated Felboar_. |cast Tame Beast##1515 |goto Shadowmoon Valley,53.4,17.8
 modeldisplay 24741
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Blue Crab",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Blue Crab",{
 model={979},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3550,7 +3550,7 @@ Use your Tame Beast ability on a _Clattering Crawler_. |cast Tame Beast##1515 |g
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 979
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Bronze Crab",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Bronze Crab",{
 model={28827},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3576,7 +3576,7 @@ Use your Tame Beast ability on a _Silt Crawler_. |cast Tame Beast##1515 |goto Sw
 Click here to see the previous location for this pet |next "-location2" |confirm
 modeldisplay 28827
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Red Crab",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Red Crab",{
 model={31269},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3594,7 +3594,7 @@ Use your Tame Beast ability on a _Harbor Crawler_. |cast Tame Beast##1515 |goto 
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 31269
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\White Crab",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\White Crab",{
 model={999},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3612,7 +3612,7 @@ Use your Tame Beast ability on a _Spined Crawler_. |cast Tame Beast##1515 |goto 
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 999
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Black Spiked Crab",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Black Spiked Crab",{
 model={32143},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3622,7 +3622,7 @@ Search for Spiny Rock Crab around the area.
 Use your Tame Beast ability on a _Spiny Rock Crab_. |cast Tame Beast##1515 |goto Dustwallow Marsh,68.4,45.6
 modeldisplay 32143
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Green Spiked Crab",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Green Spiked Crab",{
 model={32023},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3632,7 +3632,7 @@ Search for Felscale Crawlers around the area.
 Use your Tame Beast ability on a _Felscale Crawler_. |cast Tame Beast##1515 |goto Blasted Lands,71.0,75.0
 modeldisplay 32023
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Green and Blue Spiked Crab",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Green and Blue Spiked Crab",{
 model={32112},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3642,7 +3642,7 @@ Search for Enormous Sand Crabs around the area.
 Use your Tame Beast ability on a _Enormous Sand Crab_. |cast Tame Beast##1515 |goto Shimmering Expanse,42.6,35.0
 modeldisplay 32112
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Orange Spiked Crab",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Orange Spiked Crab",{
 model={32025},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3652,7 +3652,7 @@ Search for Silversand Burrowers around the area.
 Use your Tame Beast ability on a _Silversand Burrower_. |cast Tame Beast##1515 |goto Shimmering Expanse,54.2,83.6
 modeldisplay 32025
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Red Spiked Crab",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Red Spiked Crab",{
 model={32075},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3662,7 +3662,7 @@ Search for Spineshell Pincers around the area.
 Use your Tame Beast ability on a _Spineshell Pincer_. |cast Tame Beast##1515 |goto Shimmering Expanse,46.8,52.6
 modeldisplay 32075
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crocolisks\\Green Crocolisk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crocolisks\\Green Crocolisk",{
 model={1035},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3680,7 +3680,7 @@ Use your Tame Beast ability on a _Wetlands Crocolisk_. |cast Tame Beast##1515 |g
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 1035
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crocolisks\\Gray Crocolisk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crocolisks\\Gray Crocolisk",{
 model={1250},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3698,7 +3698,7 @@ Use your Tame Beast ability on a _River Crocolisk_. |cast Tame Beast##1515 |goto
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 1250
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crocolisks\\White Crocolisk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crocolisks\\White Crocolisk",{
 model={2996},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3716,7 +3716,7 @@ Use your Tame Beast ability on a _Barbscale Crocolisk_. |cast Tame Beast##1515 |
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 2996
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crocolisks\\Yellow Crocolisk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crocolisks\\Yellow Crocolisk",{
 model={1080},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3734,7 +3734,7 @@ Use your Tame Beast ability on a _Drywallow Snapper_. |cast Tame Beast##1515 |go
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 1080
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crocolisks\\Blue Spiked Crocolisk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crocolisks\\Blue Spiked Crocolisk",{
 model={37613},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3745,7 +3745,7 @@ Search for Baradin Crocolisks around the area.
 Use your Tame Beast ability on a _Baradin Crocolisk_. |cast Tame Beast##1515 |goto Tol Barad,39.4,42.6
 modeldisplay 37613
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crocolisks\\Brown Spiked Crocolisk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crocolisks\\Brown Spiked Crocolisk",{
 model={32812},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3756,7 +3756,7 @@ Search for Riverbed Crocolisks around the area.
 Use your Tame Beast ability on a _Riverbed Crocolisk_. |cast Tame Beast##1515 |goto Uldum,57.6,50.6
 modeldisplay 32812
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crocolisks\\White Spiked Crocolisk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crocolisks\\White Spiked Crocolisk",{
 model={37748},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3767,7 +3767,7 @@ Search for Neferset Crocolisks around the area.
 Use your Tame Beast ability on a _Neferset Crocolisk_. |cast Tame Beast##1515 |goto Uldum,63.6,79.2
 modeldisplay 37748
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Gorillas\\Black Gorilla",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Gorillas\\Black Gorilla",{
 model={839},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3778,7 +3778,7 @@ Search for Skymane Gorillas around the area.
 Use your Tame Beast ability on a _Skymane Gorilla_. |cast Tame Beast##1515 |goto The Cape of Stranglethorn,62.6,77.6
 modeldisplay 839
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Gorillas\\Dark Gray Gorilla",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Gorillas\\Dark Gray Gorilla",{
 model={844},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3796,7 +3796,7 @@ Use your Tame Beast ability on a _Un'Goro Gorilla_. |cast Tame Beast##1515 |goto
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 844
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Gorillas\\Gray Gorilla",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Gorillas\\Gray Gorilla",{
 model={838},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3807,7 +3807,7 @@ Search for Elder Mistvale Gorilla around the area.
 Use your Tame Beast ability on a _Elder Mistvale Gorilla_. |cast Tame Beast##1515 |goto Un'Goro Crater,52.6,56.6
 modeldisplay 838
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Gorillas\\Red Gorilla",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Gorillas\\Red Gorilla",{
 model={3188},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3825,7 +3825,7 @@ Use your Tame Beast ability on a _U'cha_. |cast Tame Beast##1515 |goto Un'Goro C
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 3188
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Rhinos\\Blue Rhino",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Rhinos\\Blue Rhino",{
 model={26265},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3836,7 +3836,7 @@ Search for Shardhorn Rhinos around the area.
 Use your Tame Beast ability on a _Shardhorn Rhino_. |cast Tame Beast##1515 |goto Sholazar Basin,39.4,53.6
 modeldisplay 26265
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Rhinos\\Brown Rhino",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Rhinos\\Brown Rhino",{
 model={26296},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3854,7 +3854,7 @@ Use your Tame Beast ability on a _Wooly Rhino Matriarch_. |cast Tame Beast##1515
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 26296
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Rhinos\\Gray Rhino",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Rhinos\\Gray Rhino",{
 model={26268},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3872,7 +3872,7 @@ Use your Tame Beast ability on a _Farunn_. |cast Tame Beast##1515 |goto Sholazar
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 26268
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Rhinos\\White Rhino",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Rhinos\\White Rhino",{
 model={26286},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3883,7 +3883,7 @@ Search for Ice Steppe Rhinos around the area.
 Use your Tame Beast ability on a _Ice Steppe Rhino_. |cast Tame Beast##1515 |goto The Storm Peaks,46.6,60.8
 modeldisplay 26286
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Scorpids\\Black Scorpid",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Scorpids\\Black Scorpid",{
 model={6068},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3894,7 +3894,7 @@ Search for Duneclaw Stalkers around the area.
 Use your Tame Beast ability on a _Duneclaw Stalker_. |cast Tame Beast##1515 |goto Tanaris 54.6,54.0
 modeldisplay 6068
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Scorpids\\Bronze Scorpid",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Scorpids\\Bronze Scorpid",{
 model={2487},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3919,7 +3919,7 @@ Use your Tame Beast ability on a _Venomtip Scorpid_. |cast Tame Beast##1515 |got
 Click here to see the previous location for this pet |next "-location2" |confirm
 modeldisplay 2487
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Scorpids\\Brown Scorpid",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Scorpids\\Brown Scorpid",{
 model={2485},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3937,7 +3937,7 @@ Use your Tame Beast ability on a _Clattering Scorpid_. |cast Tame Beast##1515 |g
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 2485
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Scorpids\\Green Scorpid",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Scorpids\\Green Scorpid",{
 model={2730},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3947,7 +3947,7 @@ Search for Scorpid Cliffcrawlers around the area.
 Use your Tame Beast ability on a _Scorpid Cliffcrawler_. |cast Tame Beast##1515 |goto Thousand Needles,65.4,74.2
 modeldisplay 2730
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Scorpids\\Gray Scorpid",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Scorpids\\Gray Scorpid",{
 model={33995},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3957,7 +3957,7 @@ Search for Duneclaw Broodlord around the area.
 Use your Tame Beast ability on a _Duneclaw Broodlord_. |cast Tame Beast##1515 |goto Tanaris,40.4,65.6
 modeldisplay 33995
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Scorpids\\Pink Scorpid",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Scorpids\\Pink Scorpid",{
 model={10987},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3975,7 +3975,7 @@ Use your Tame Beast ability on a _Scorpid Bonecrawler_. |cast Tame Beast##1515 |
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 10987
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Scorpids\\Red Scorpid",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Scorpids\\Red Scorpid",{
 model={5985},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3985,7 +3985,7 @@ Search for Duneclaw Burrowers around the area.
 Use your Tame Beast ability on a _Duneclaw Burrower_. |cast Tame Beast##1515 |goto Tanaris,52.8,41.0
 modeldisplay 5985
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Scorpids\\White Scorpid",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Scorpids\\White Scorpid",{
 model={10988},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -3995,7 +3995,7 @@ Search for Stonelash Flayer around the area.
 Use your Tame Beast ability on a _Stonelash Flayer_. |cast Tame Beast##1515 |goto Silithus,42.6,63.8
 modeldisplay 10988
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Scorpids\\Yellow Scorpid",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Scorpids\\Yellow Scorpid",{
 model={2729},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4013,7 +4013,7 @@ Use your Tame Beast ability on a _Duneclaw Matrarch_. |cast Tame Beast##1515 |go
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 2729
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Shale Crawler Pets\\Spiders\\Orange Shale Spider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Shale Crawler Pets\\Spiders\\Orange Shale Spider",{
 model={36634},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4024,7 +4024,7 @@ Search for Deep Spiders around the area.
 Use your Tame Beast ability on a _Deep Spider_. |cast Tame Beast##1515 |goto Deepholm,61.8,26.6
 modeldisplay 36634
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Shale Crawler Pets\\Spiders\\Purple Shale Spider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Shale Crawler Pets\\Spiders\\Purple Shale Spider",{
 model={35152},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4035,7 +4035,7 @@ Search for Purple Shale Spiders around the area.
 Use your Tame Beast ability on a _Deep Spider_. |cast Tame Beast##1515 |goto Deepholm,64.8,19.0
 modeldisplay 35152
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Shale Crawler Pets\\Spiders\\Red Shale Spider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Shale Crawler Pets\\Spiders\\Red Shale Spider",{
 model={33863},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4046,7 +4046,7 @@ Search for Crimson Shale Spiders around the area.
 Use your Tame Beast ability on a _Crimson Shale Spider_. |cast Tame Beast##1515 |goto Deepholm,72.6,41.6
 modeldisplay 33863
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Blue Turtle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Blue Turtle",{
 model={6368},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4065,7 +4065,7 @@ Use your Tame Beast ability on a _Gammerita_. |cast Tame Beast##1515 |goto The H
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 6368
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Green Turtle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Green Turtle",{
 model={28819},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4075,7 +4075,7 @@ Search for Lake Snappers around the area.
 Use your Tame Beast ability on a _Lake Snapper_. |cast Tame Beast##1515 |goto Eversong Woods,65.6,76.8
 modeldisplay 28819
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Gray Turtle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Gray Turtle",{
 model={37770},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4086,7 +4086,7 @@ Search for Mudrock Spikeshell around the area.
 Use your Tame Beast ability on a _Mudrock Spikeshell_. |cast Tame Beast##1515 |goto Dustwallow Marsh 65.6,38.8
 modeldisplay 37770
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Orange Turtle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Orange Turtle",{
 model={5026},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4104,7 +4104,7 @@ Use your Tame Beast ability on a _Sorrowmurk Snapjaw_. |cast Tame Beast##1515 |g
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 5026
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\White Turtle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\White Turtle",{
 model={28820},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4130,7 +4130,7 @@ Use your Tame Beast ability on a _Sand Turtle_. |cast Tame Beast##1515 |goto Bor
 Click here to see the previous location for this pet |next "-location2" |confirm
 modeldisplay 28820
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Green Ancient Turtle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Green Ancient Turtle",{
 model={37143},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4140,7 +4140,7 @@ Search for Ghamoo-ra around the area.
 Use your Tame Beast ability on _Ghamoo-Ra_. |cast Tame Beast##1515 |goto Blackfathom Deeps 33.3,58.7
 modeldisplay 37143
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Warp Stalkers\\Blue Warp Stalker",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Warp Stalkers\\Blue Warp Stalker",{
 model={19369},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4150,7 +4150,7 @@ Search for Chasm Stalker around the area.
 Use your Tame Beast ability on a _Chasm Stalker_. |cast Tame Beast##1515 |goto Abyssal Depths,41.2,41.4
 modeldisplay 19369
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Warp Stalkers\\Blue Green Warp Stalker",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Warp Stalkers\\Blue Green Warp Stalker",{
 model={19979},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4160,7 +4160,7 @@ Search for Warp Chasers around the area.
 Use your Tame Beast ability on a _Warp Chaser_. |cast Tame Beast##1515 |goto Netherstorm,62.4,60.0
 modeldisplay 19979
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Warp Stalkers\\Green Warp Stalker",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Warp Stalkers\\Green Warp Stalker",{
 model={29740},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4170,7 +4170,7 @@ Search for Displaced Warp Stalkers around the area (Inside the cave).
 Use your Tame Beast ability on a _Displaced Warp Stalker_. |cast Tame Beast##1515 |goto Winterspring,53.2,63.6
 modeldisplay 29740
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Warp Stalkers\\Red Warp Stalker",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Warp Stalkers\\Red Warp Stalker",{
 model={20901},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4181,7 +4181,7 @@ There are more around [71.0,11.6].
 Use your Tame Beast ability on a _Daggertail Lizard_. |cast Tame Beast##1515 |goto Blade's Edge Mountains,54.6,14.6
 modeldisplay 20901
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Warp Stalkers\\White Warp Stalker",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Mystical Pets\\Warp Stalkers\\White Warp Stalker",{
 model={20025},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4207,7 +4207,7 @@ Use your Tame Beast ability on a _Blackwind Warp Chaser_. |cast Tame Beast##1515
 Click here to see the previous location for this pet |next "-location2" |confirm
 modeldisplay 20025
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Worms\\Blue Worm",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Worms\\Blue Worm",{
 model={12333},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4217,7 +4217,7 @@ Search for Deep Borers around the area.
 Use your Tame Beast ability on a _Deep Borer_. |cast Tame Beast##1515 |goto Maraudon,45.2,88.4
 modeldisplay 12333
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Worms\\Brown Worm",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Worms\\Brown Worm",{
 model={11010},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4235,7 +4235,7 @@ Use your Tame Beast ability on a _Young Crust Burster_. |cast Tame Beast##1515 |
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 11010
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Worms\\Green Worm",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Worms\\Green Worm",{
 model={12335},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4245,7 +4245,7 @@ Search for Rock Borers around the area.
 Use your Tame Beast ability on a _Rock Borer_. |cast Tame Beast##151 |goto Maraudon,39.6,57.4
 modeldisplay 12335
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Worms\\Gray Worm",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Worms\\Gray Worm",{
 model={14524},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4263,7 +4263,7 @@ Use your Tame Beast ability on a _Dredge Striker_. |cast Tame Beast##1515 |goto 
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 14524
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Worms\\Pink Worm",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Worms\\Pink Worm",{
 model={37540},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4273,7 +4273,7 @@ Search for Coldlurk Burrowers around the area.
 Use your Tame Beast ability on a _Coldlurk Burrower_. |cast Tame Beast##1515 |goto Winterspring,48.4,40.8
 modeldisplay 37540
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Worms\\White Worm",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Worms\\White Worm",{
 model={34636},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4284,7 +4284,7 @@ Kill Undead in the area.
 Use your Tame Beast ability on a _Flesh Eating Worm_. |cast Tame Beast##1515 |goto Duskwood,18.2,34.6
 modeldisplay 34636
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Worms\\Black Jormungar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Worms\\Black Jormungar",{
 model={37554},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4294,7 +4294,7 @@ Search for Rattlebore around the area.
 Use your Tame Beast ability on _Rattlebore_. |cast Tame Beast##1515 |goto Dragonblight,50.6,17.8
 modeldisplay 37554
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Worms\\Blue Jormungar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Worms\\Blue Jormungar",{
 model={37550},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4304,7 +4304,7 @@ Search for Ravenous Jormungar around the area.
 Use your Tame Beast ability on _Ravenous Jormungar_. |cast Tame Beast##1515 |goto The Storm Peaks 55.6,61.8
 modeldisplay 37550
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Worms\\Ghost Jormungar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Worms\\Ghost Jormungar",{
 model={27014},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4314,7 +4314,7 @@ Search for Ravenous Jormungars around the area. When they are near death, use _A
 Use your Tame Beast ability on a _Disembodied Jormungar_. |cast Tame Beast##1515 |goto The Storm Peaks,55.8,63.8
 modeldisplay 27014
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Worms\\Green Jormungar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Worms\\Green Jormungar",{
 model={37553},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4324,7 +4324,7 @@ Search for Ice Heart Jormungar Feeders around the area.
 Use your Tame Beast ability on a _Ice Heart Jormungar Feeder_. |cast Tame Beast##1515 |goto Dragonblight,60.0,15.8
 modeldisplay 37553
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Worms\\Purple Jormungar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Worms\\Purple Jormungar",{
 model={24564},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4342,7 +4342,7 @@ Use your Tame Beast ability on a _Roaming Jormungar_. |cast Tame Beast##1515 |go
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 24564
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Worms\\White Jormungar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Worms\\White Jormungar",{
 model={37551},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4352,7 +4352,7 @@ Search for Ice Heart Jormungar Spawn around the area.
 Use your Tame Beast ability on a _Ice Heart Jormungar Spawn_. |cast Tame Beast##1515 |goto Dragonblight,29.0,86.8
 modeldisplay 37551
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Bats\\Pale Bat (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Bats\\Pale Bat (Rare Spawn)",{
 model={16053},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4370,7 +4370,7 @@ Use your Tame Beast ability on _Blind Hunter_. |cast Tame Beast##1515 |goto Razo
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 16053
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Owls\\Ghost Owl (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Owls\\Ghost Owl (Rare Spawn)",{
 model={37568},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4382,7 +4382,7 @@ As well as [57.6,19.8]
 Use your Tame Beast ability on _Olm the Wise_. |cast Tame Beast##1515 |goto Felwood,56.2,23.6
 modeldisplay 37568
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Parrots\\Blue Parrot (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Birds of Prey\\Parrots\\Blue Parrot (Rare Spawn)",{
 model={27975},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4400,7 +4400,7 @@ Aotona has several spawning points, listed below:
 Use your Tame Beast ability on _Aotana_. |cast Tame Beast##1515 |goto Sholazar Basin,48.0,55.0
 modeldisplay 27975
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Mystical Pets\\Chimaeras\\Green 2-Headed Chimaera (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Mystical Pets\\Chimaeras\\Green 2-Headed Chimaera (Rare Spawn)",{
 model={37569},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4411,7 +4411,7 @@ The Evalcharr also spawns at [14.0,50.8].
 Use your Tame Beast ability on _The Evalcharr_. |cast Tame Beast##1515 |goto Azshara,14.8,58.8
 modeldisplay 37569
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Mystical Pets\\Chimaeras\\White 2-Headed Chimaera (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Mystical Pets\\Chimaeras\\White 2-Headed Chimaera (Rare Spawn)",{
 model={37571},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4421,7 +4421,7 @@ Search for The Razza around the area.
 Use your Tame Beast ability on _The Razza_. |cast Tame Beast##1515 |goto Feralas,84.5,49.7
 modeldisplay 37571
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Purple Silithid (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Purple Silithid (Rare Spawn)",{
 model={37593},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4431,7 +4431,7 @@ Search for Lapress around the area.
 Use your Tame Beast ability on _Lapress_. |cast Tame Beast##1515 |goto Silithus,57.6,71.0
 modeldisplay 37593
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Tan Silithid (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Tan Silithid (Rare Spawn)",{
 model={37583},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4441,7 +4441,7 @@ Search for Krkk'kx around the area.
 Use your Tame Beast ability on _krkk'kx_. |cast Tame Beast##1515 |goto Thousand Needles,70.0,85.4
 modeldisplay 37583
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Yellow Silithid (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Yellow Silithid (Rare Spawn)",{
 model={11084},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4451,7 +4451,7 @@ Search for Clutchmother Zavas around the area.
 Use your Tame Beast ability on __. |cast Tame Beast##1515 |goto Un'Goro Crater,48.8,85.6
 modeldisplay 11084
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Serpents\\Red Windserpent (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Serpents\\Red Windserpent (Rare Spawn)",{
 model={2702},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4461,7 +4461,7 @@ Search for Azzere the Skyblade around the area.
 Use your Tame Beast ability on _Azzere the Skyblade_. |cast Tame Beast##1515 |goto Southern Barrens,43.88,57.2
 modeldisplay 2702
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Serpents\\White Windserpent (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Serpents\\White Windserpent (Rare Spawn)",{
 model={7569},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4479,7 +4479,7 @@ Use your Tame Beast ability on _Hayoc_. |cast Tame Beast##1515 |goto Dustwallow 
 Click here to see the previous location for this pet |next "-start" |confirm
 modeldisplay 7569
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Vultures\\White Vulture (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Carrion Birds\\Vultures\\White Vulture (Rare Spawn)",{
 model={37577},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4489,7 +4489,7 @@ Search for Zaricotl around the area.
 Use your Tame Beast ability on _Zaricotl_. |cast Tame Beast##1515 |goto Badlands,57.0,42.4
 modeldisplay 37577
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Lions\\Lioness (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Lions\\Lioness (Rare Spawn)",{
 model={21192},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4499,7 +4499,7 @@ Search for Broken Tooth around the area.
 Use your Tame Beast ability on _Broken Tooth_. |cast Tame Beast##1515 |goto Badlands,22.8,61.6
 modeldisplay 21192
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Leopard (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Leopard (Rare Spawn)",{
 model={1043},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4512,7 +4512,7 @@ You can also find it at the below locations:
 Use your Tame Beast ability on _Dishu_. |cast Tame Beast##1515 |goto Northern Barrens,45.4,32.8
 modeldisplay 1043
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\White Tiger (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\White Tiger (Rare Spawn)",{
 model={20425},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4522,7 +4522,7 @@ Search for Hawkbane around the area.
 Use your Tame Beast ability on _Hawkbane_. |cast Tame Beast##1515 |goto Terokkar Forest,76.2,81.2
 modeldisplay 20425
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Saber Beast Pets\\Cats\\Blue Saber (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Saber Beast Pets\\Cats\\Blue Saber (Rare Spawn)",{
 model={10054},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -4532,7 +4532,7 @@ Search for Rak'shiri around the area.
 Use your Tame Beast ability on _Rak'shiri_. |cast Tame Beast##1515 |goto Winterspring,47.8,18.8
 modeldisplay 10054
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Hunched Cat\\Black Hunched (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Hunched Cat\\Black Hunched (Rare Spawn)",{
 model={37555},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4542,7 +4542,7 @@ Search for Shadowclaw around the area.
 Use your Tame Beast ability on _Shadowclaw_. |cast Tame Beast##1515 |goto Darkshore,41.6,36.0
 modeldisplay 37555
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Hunched Cat\\White Spots Hunched (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Hunched Cat\\White Spots Hunched (Rare Spawn)",{
 model={37558},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4552,7 +4552,7 @@ Search for Duskstalker around the area.
 Use your Tame Beast ability on _Duskstalker_. |cast Tame Beast##1515 |goto Teldrassil,52.4,67.6
 modeldisplay 37558
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Lions\\Maned Lion (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Lions\\Maned Lion (Rare Spawn)",{
 model={37169},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4567,7 +4567,7 @@ You can also find Sambas at the spots below:
 Use your Tame Beast ability on _Sambas_. |cast Tame Beast##1515 |goto Twilight Highlands,68.8,25.4
 modeldisplay 37169
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Lions\\White Lion (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Lions\\White Lion (Rare Spawn)",{
 model={10114},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4577,7 +4577,7 @@ Search for Sian-Rotam around the area.
 Use your Tame Beast ability on _Sian-Rotam_. |cast Tame Beast##1515 |goto Winterspring,45.8,17.6
 modeldisplay 10114
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Hunched Cat\\Hunched Cat w/ Red Eyes (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Hunched Cat\\Hunched Cat w/ Red Eyes (Rare Spawn)",{
 model={37615},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4587,7 +4587,7 @@ Search for Pogeyan around the area.
 Use your Tame Beast ability on _Pogeyan_. |cast Tame Beast##1515 |goto Northern Stranglethorn,36.8,28.4
 modeldisplay 37615
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Devilsaur\\Green Devilsaur (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Devilsaur\\Green Devilsaur (Rare Spawn)",{
 model={28052},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4618,7 +4618,7 @@ path	53.8,84.2	50.8,82.0
 Click here to see the previous location for this pet |next "-location" |confirm
 modeldisplay 28052
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\\Beast Pets\\Hyenas\\Black Hyena (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\\Beast Pets\\Hyenas\\Black Hyena (Rare Spawn)",{
 model={2726},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4628,7 +4628,7 @@ Search for Galak Packhound around the area.
 Use your Tame Beast ability on a _Galak Packhound_. |cast Tame Beast##1515 |goto Thousand Needles,69.8,50.0
 modeldisplay 2726
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Flying Pets\\Birds of Prey\\Spectral Owl",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Flying Pets\\Birds of Prey\\Spectral Owl",{
 model={38634},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4641,7 +4641,7 @@ Use _Deterrence_ to avoid getting hit by him while taming.
 Use your Tame Beast ability on _Ban'thalos_. |cast Tame Beast##1515 |goto Mount Hyjal,27.3,64.3
 modeldisplay 38634
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Bears\\Spectral Bear (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Bears\\Spectral Bear (Rare Spawn)",{
 model={31094},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4652,7 +4652,7 @@ Use your Tame Beast ability on _Arcturis_. |cast Tame Beast##1515 |goto Grizzly 
 Note that this pet requires you to have the _Beast Mastery_ talent
 modeldisplay 31094
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Water Pets\\Crabs\\Ghost Crab (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Water Pets\\Crabs\\Ghost Crab (Rare Spawn)",{
 model={37396},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4671,7 +4671,7 @@ Search for Ghostcrawler around the area.
 Use your Tame Beast ability on _Ghostcrawler_. |cast Tame Beast##1515
 modeldisplay 37396
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Cats\\Blue Spectral Saber (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Cats\\Blue Spectral Saber (Rare Spawn)",{
 model={38749},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4687,7 +4687,7 @@ Search for Magria around the area. It is level 85.
 Use your Tame Beast ability on _Magria_. |cast Tame Beast##1515
 modeldisplay 38749
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Cats\\Green Spectral Saber (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Cats\\Green Spectral Saber (Rare Spawn)",{
 model={38748},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4703,7 +4703,7 @@ Search for Ankha around the area. It is level 85.
 Use your Tame Beast ability on _Ankha_. |cast Tame Beast##1515
 modeldisplay 38748
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Cats\\Striped Ghost Saber w/ Green Eyes (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Cats\\Striped Ghost Saber w/ Green Eyes (Rare Spawn)",{
 model={28871},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4716,7 +4716,7 @@ Search for Gondria at the points shown. It is level 77.
 Use your Tame Beast ability on _Gondria_. |cast Tame Beast##1515
 modeldisplay 28871
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Cats\\White Spotted Cat w/ Blue Eyes (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Cats\\White Spotted Cat w/ Blue Eyes (Rare Spawn)",{
 model={28010},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4731,7 +4731,7 @@ Search for Loque'nahak at each point on your map.
 Use your Tame Beast ability on a _Loque'nahak_. |cast Tame Beast##1515
 modeldisplay 28010
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Wolves\\Blue Spirit Wolf (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Wolves\\Blue Spirit Wolf (Rare Spawn)",{
 class="HUNTER",
 spec="Beast Mastery",
 model={29673},
@@ -4746,7 +4746,7 @@ You can also find Skoll at the points below:
 Use your Tame Beast ability on a _Skoll_. |cast Tame Beast##1515 |goto The Storm Peaks,46.2,65.0
 modeldisplay 29673
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Wolves\\Ghost Wolf (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Wolves\\Ghost Wolf (Rare Spawn)",{
 class="HUNTER",
 spec="Beast Mastery",
 model={36726},
@@ -4762,7 +4762,7 @@ Search for Karoma at the points on the map.
 Use your Tame Beast ability on _Karoma_. |cast Tame Beast##1515
 modeldisplay 36726
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Dark Purple Wasp (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Dark Purple Wasp (Rare Spawn)",{
 model={37579},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4772,7 +4772,7 @@ Search for Rex Ashil around the area.
 Use your Tame Beast ability on _Rex Ashil_. |cast Tame Beast##1515 |goto Silithus,52.2,24.2
 modeldisplay 37579
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Orange Wasp (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Orange Wasp (Rare Spawn)",{
 model={37548},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4786,7 +4786,7 @@ Search for Zora around the area.
 Use your Tame Beast ability on _Zora_. |cast Tame Beast##1515
 modeldisplay 37548
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Gray Wasp (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Flying Pets\\Wasps\\Gray Wasp (Rare Spawn)",{
 model={11142},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4796,7 +4796,7 @@ Search for Qirot around the area.
 Use your Tame Beast ability on _Qirot_. |cast Tame Beast##1515 |goto Feralas,76.6,61.4
 modeldisplay 11142
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Unique Gray Wolf (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Unique Gray Wolf (Rare Spawn)",{
 class="HUNTER",
 model={11414},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
@@ -4810,7 +4810,7 @@ step
 You should tame one of the following:
 learnpet Mist Howler##8211
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Brown Wolf (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Brown Wolf (Rare Spawn)",{
 class="HUNTER",
 model={9372},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
@@ -4821,7 +4821,7 @@ Search for Barnabus around the area.
 Use your Tame Beast ability on _Barnabus_. |cast Tame Beast##1515 |goto Badlands,39.8,60.6
 modeldisplay 9372
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Metallic Silver Crab (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Crabs\\Metallic Silver Crab (Rare Spawn)",{
 model={38825},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4836,7 +4836,7 @@ Immidiately after, use _Deterrence_ followed by _Tame Beast_.
 Use your Tame Beast ability on _Karkin_. |cast Tame Beast##1515 |goto Molten Front,37.8,35.6
 modeldisplay 38825
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Gorillas\\White Gorilla (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Gorillas\\White Gorilla (Rare Spawn)",{
 model={10133},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4846,7 +4846,7 @@ Search for Tsul'Kalu around the area.
 Use your Tame Beast ability on _Tsul'Kalu_. |cast Tame Beast##1515 |goto Northern Stranglethorn,47.8,31.4
 modeldisplay 10133
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Scorpids\\Purple and Orange Scorpid (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Scorpids\\Purple and Orange Scorpid (Rare Spawn)",{
 model={15433},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4856,7 +4856,7 @@ Search for Clack the Reaver around the area.
 Use your Tame Beast ability on _Clack the Reaver_. |cast Tame Beast##1515 |goto Blasted Lands,47.6,13.8
 modeldisplay 15433
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Scorpids\\Red Scorpid (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Scorpids\\Red Scorpid (Rare Spawn)",{
 model={31351},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4866,7 +4866,7 @@ Search for Scorpitar around the area.
 Use your Tame Beast ability on _Scorpitar_. |cast Tame Beast##1515 |goto Tanaris,49.6,58.6
 modeldisplay 31351
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Scorpids\\Green Scorpid (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Scorpids\\Green Scorpid (Rare Spawn)",{
 model={10988},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4876,7 +4876,7 @@ Search for Vile Sting around the area.
 Use your Tame Beast ability on _Vile Sting_. |cast Tame Beast##1515 |goto Thousand Needles,6.0,42.0
 modeldisplay 10988
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Scorpids\\Blue Scorpid (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Crawler Pets\\Scorpids\\Blue Scorpid (Rare Spawn)",{
 model={37361},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4895,7 +4895,7 @@ modeldisplay 37362
 modeldisplay 37360
 modeldisplay 36728
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Shale Crawler Pets\\Spiders\\Green Glowing Shale Spider (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Shale Crawler Pets\\Spiders\\Green Glowing Shale Spider (Rare Spawn)",{
 model={36636},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4928,7 +4928,7 @@ Search for Jadefang who is at the end of the tunnel.
 Use your Tame Beast ability on __. |cast Tame Beast##1515 |goto 61.3,22.5
 modeldisplay 36636
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Blue Turtle (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Blue Turtle (Rare Spawn)",{
 model={7046},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4938,7 +4938,7 @@ Search for Scalebeard along the shoreline here.
 Use your Tame Beast ability on _Scalebeard_. |cast Tame Beast##1515 |goto Azshara,43.0,51.6
 modeldisplay 7046
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Purple Turtle (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Purple Turtle (Rare Spawn)",{
 model={37770},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4948,7 +4948,7 @@ Search for Ironback around the area.
 Use your Tame Beast ability on _Ironback_. |cast Tame Beast##1515 |goto The Hinterlands,80.6,56.6
 modeldisplay 37770
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Fiery Turtle (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Water Pets\\Turtles\\Fiery Turtle (Rare Spawn)",{
 model={37282},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4962,7 +4962,7 @@ Search for Terrorpene in the lava at along the waypoints.
 Use your Tame Beast ability on _Terrorpene_. |cast Tame Beast##1515
 modeldisplay 37282
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Worms\\Golden Worm (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Worms\\Golden Worm (Rare Spawn)",{
 model={12336},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4972,7 +4972,7 @@ Search for Oozeworm around the area.
 Use your Tame Beast ability on _Oozeworm_. |cast Tame Beast##1515 |goto Dustwallow Marsh,37.2,62.6
 modeldisplay 12336
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Worms\\Orange Worm (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Worms\\Orange Worm (Rare Spawn)",{
 model={14523},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -4986,7 +4986,7 @@ Search for Grubthor at the waypoints.
 Use your Tame Beast ability on _Grubthor_. |cast Tame Beast##1515
 modeldisplay 14523
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Blue Boss Silithid",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Blue Boss Silithid",{
 model={15657},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -5000,7 +5000,7 @@ Search for Harakiss the Infestor around the area.
 Use your Tame Beast ability on _Harakiss the Infestor_. |cast Tame Beast##1515
 modeldisplay 15657
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Damaged Boss Silithid",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Damaged Boss Silithid",{
 model={35578},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -5010,7 +5010,7 @@ Search for the Hive Controller around the area.
 Use your Tame Beast ability on the _Hive Controller_. |cast Tame Beast##1515 |goto Thousand Needles,64.0,86.0
 modeldisplay 35578
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Pink Boss Silithid",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Pink Boss Silithid",{
 model={37549},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[
@@ -5020,7 +5020,7 @@ Search for Ainamiss the Hive Queen around the area.
 Use your Tame Beast ability on _Ainamiss the Hive Queen_. |cast Tame Beast##1515 |goto Tanaris,34.2,46.0
 modeldisplay 37549
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Purple Boss Silithid (Rare Spawn)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Crawler Pets\\Silithids\\Purple Boss Silithid (Rare Spawn)",{
 model={31045},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[

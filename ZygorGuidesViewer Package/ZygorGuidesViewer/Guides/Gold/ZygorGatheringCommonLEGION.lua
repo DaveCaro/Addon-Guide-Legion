@@ -417,11 +417,11 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Wildfowl Egg",{
 	},[[
 	step
 	label "Start_Farming_Wildfowl_Egg"
-		Follow the path |goto Stormheim/0 61.67,55.08 < 30 |only if walking and _G.UnitFactionGroup("player")=="Horde"
-		Follow the path |goto Stormheim/0 69.66,52.75 < 30 |only if walking and _G.UnitFactionGroup("player")=="Horde"
-		Follow the path down |goto Stormheim/0 72.07,51.87 < 15 |only if walking and _G.UnitFactionGroup("player")=="Horde"
-		Follow the path |goto Stormheim/0 71.42,55.36 < 30 |only if walking and _G.UnitFactionGroup("player")=="Horde"
-		Follow the path |goto Stormheim/0 72.18,59.28 < 20 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
+		Follow the path |goto Stormheim/0 61.67,55.08 < 30 |only if walking() and horde
+		Follow the path |goto Stormheim/0 69.66,52.75 < 30 |only if walking() and horde
+		Follow the path down |goto Stormheim/0 72.07,51.87 < 15 |only if walking() and horde
+		Follow the path |goto Stormheim/0 71.42,55.36 < 30 |only if walking() and horde
+		Follow the path |goto Stormheim/0 72.18,59.28 < 20 |only if walking() and alliance
 		Follow the path |goto Stormheim/0 73.40,57.03 < 30 |only if walking
 		Follow the beach |goto Stormheim/0 79.51,57.09 < 30 |only if walking
 		Follow the water |goto Stormheim/0 82.65,67.39 < 30 |only if walking

@@ -3,8 +3,10 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("ReputationsH") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Reputations Guides\\Azeroth\\Timbermaw Hold Faction",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Timbermaw Hold",{
 author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Timbermaw Hold faction.",
+condition_suggested="level>=1 and level<=60",
 achieveid={944},
 },[[
 step

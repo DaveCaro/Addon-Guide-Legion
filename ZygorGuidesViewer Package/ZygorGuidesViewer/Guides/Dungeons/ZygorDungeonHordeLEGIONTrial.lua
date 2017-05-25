@@ -3,11 +3,11 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("DungeonHLEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Legion Dungeons\\Darkheart Thicket",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Dungeons\\Darkheart Thicket",{
 mapid=1067,
 achieveid={10783},
-condition_suggested="level>=98 and _G.GetAverageItemLevel()>500",
-keywords={"Darkheart Thicket DT"},
+condition_suggested="level>=98 and level<=110 and _G.GetAverageItemLevel()>500",
+keywords={"Legion, Val'sharah, DHT, DT, Broken, Isles"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Darkheart Thicket dungeon.",
 },[[
@@ -91,11 +91,11 @@ step
 _Congratulations!_
 You completed the Darkheart Thicket dungeon.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Legion Dungeons\\Eye of Azshara",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Dungeons\\Eye of Azshara",{
 mapid=1046,
 achieveid={10780},
-condition_suggested="level>=98 and _G.GetAverageItemLevel()>500",
-keywords={"Eye of Azshara EoA"},
+condition_suggested="level>=98 and level<=110 and _G.GetAverageItemLevel()>500",
+keywords={"Legion, EoA, Broken, Isles"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Eye of Azshara dungeon.",
 },[[

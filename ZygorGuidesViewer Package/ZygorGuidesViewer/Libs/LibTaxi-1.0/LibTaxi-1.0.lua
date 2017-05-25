@@ -560,10 +560,6 @@ do
 						node.known=Lib.master[node.name]
 					elseif node.taxioperator and node.taxioperator=="blackcat" then  --All blackcats are usable by an alliance character
 						node.known = true
-					elseif node.available then -- Special case? Override normal knowledge.
-						node.known = node.available()
-					elseif node.achievemissing then -- If the player has the achievement, then the node is missing.
-						node.missing = select(13,GetAchievementInfo(node.achievemissing)) -- 13 = whether this toon has the achievement.
 					elseif false and not Lib.master[c] then  -- we didn't scan this continent yet, so let's do some guessing
 						-- DON'T GUESS! LibRover will "guess" if it wants to. Leave it as nil (if it wasn't falsified by the continent being seen).
 
@@ -659,42 +655,6 @@ do
 	    -- in order
 	    return orderedNext, t, nil
 	end
-
-	-- OLD, DO NOT USE
-	--[[
-		function Lib:DumpTaxiPoints()
-			local s="	data.taxipoints = {\n"
-			for contnum,contdata in ipairs(Lib.taxipoints) do
-				s=s.."		["..contnum.."]={\n"
-				for zonename,zonedata in ordered_pairs(contdata) do
-					s=s.."			['"..zonename:gsub("'","\\'").."']={\n"
-					for ti,taxi in ipairs(zonedata) do
-						local taxicosts=""
-						if taxi.costs then
-							for tag,cost in pairs(taxi.costs) do
-								taxicosts = taxicosts .. " [\"" ..tag.."\"] = " ..cost..","
-							end
-							if #taxicosts>0 then taxicosts=taxicosts:sub(1,-2) end
-						end
-						local extra=""
-						if taxi.class then extra=extra.."class=\""..taxi.class.."\"," end
-						if taxi.quest then extra=extra.."quest="..taxi.quest.."," end
-						if taxi.factionid then extra=extra.."factionid="..taxi.factionid.."," end
-						local operator=""
-						if taxi.taxioperator then operator=operator.."taxioperator=\"".. taxi.taxioperator .."\"," end
-						local taxitag=""
-						if taxi.taxitag then taxitag="taxitag="..taxi.taxitag.."," end
-						s=s..('				{name="%s",faction="%s",%snpc="%s",npcid=%d,x=%.1f,y=%.1f,%s%scosts={%s}},\n'):format(taxi.name,taxi.faction,extra,taxi.npc,taxi.npcid,(taxi.x<1 and taxi.x*100 or taxi.x),(taxi.y<1 and taxi.y*100 or taxi.y),operator,taxitag,taxicosts)
-					end
-					s=s.."			},\n"
-				end
-				s=s.."		},\n"
-			end
-			s=s.."	}\n"
-			ZGV:ShowDump(s)
-		end
-	--]]
-
 
 	-- /run LibTaxi:DumpFlightCosts()
 	function Lib:DumpFlightCosts(onlycont)

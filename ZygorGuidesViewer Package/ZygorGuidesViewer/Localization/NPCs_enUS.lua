@@ -27528,4 +27528,9 @@ ZygorGuidesViewer_L("NPCs", "enUS", function() return {
 [175566]="Gloom Weed|",
 [86884]="Darkspear Loyalist|",
 [117873]="Lord Illidan Stormrage|",
+[120221]="Eliezer Hammerbeard|",
+[120372]="Prophet Velen|",
+[29565]="Unworthy Initiate|",
+[49355]="Lord Harford|",
+[107574]="Anduin Wrynn|",
 } end)

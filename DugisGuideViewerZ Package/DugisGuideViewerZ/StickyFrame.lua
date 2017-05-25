@@ -179,6 +179,7 @@ function SF:Initialize()
 	function SF:Load()
 		if not SF.Frame then
 			SF.Frame = CreateFrame("Frame","DGV_StickyFrame", UIParent)
+            SF.Frame:SetFrameStrata("BACKGROUND")
 
 			SF.Frame:SetSize(OBJECTIVE_TRACKER_LINE_WIDTH + 30, 45)
 			SF.Frame:EnableMouse(true)

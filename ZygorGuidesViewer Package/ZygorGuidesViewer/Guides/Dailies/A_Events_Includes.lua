@@ -19,7 +19,7 @@ ZygorGuidesViewer:RegisterInclude("A_Darkmoon_Faire_Dailies",[[
 		accept It's Hammer Time##29463 |goto Darkmoon Island,53.3,54.4
 	step
 		talk Mola##54601
-		Tell her _"Ready to whack!"_ |havebuff Interface\Icons\inv_hammer_32 |goto Darkmoon Island,53.3,54.4
+		Tell her _"Ready to whack!"_ |havebuff 537060  |goto Darkmoon Island,53.3,54.4 --Inv_hammer_32
 		only if havequest(29463)
 	step
 		Use the _Whack!_ on your bar and whack the Gnolls in the Barrels
@@ -41,7 +41,7 @@ ZygorGuidesViewer:RegisterInclude("A_Darkmoon_Faire_Dailies",[[
 	label	"quest"
 		talk Maxima Blastenheimer##15303
 		Tell her "_Launch me!_"
-		Wait for the Cannon to Launch you |havebuff Interface\Icons\Spell_Magic_FeatherFall |goto Darkmoon Island 52.5,56.2
+		Wait for the Cannon to Launch you |havebuff 135992 |goto Darkmoon Island 52.5,56.2 --Spell_Magic_FeatherFall
 		only if havequest(29436)
 	step
 		You will be launched through the air
@@ -4032,10 +4032,10 @@ ZygorGuidesViewer:RegisterInclude("Children's Week Stormwind",[[
 		talk Human Orphan##14305
 		turnin Cruisin' the Chasm##29093
 	step
-		_Enter_ the Throne Room |goto Ironforge/0 44.7,49.3 < 15 |walk
-		_Head down_ the stairs |goto 46.5,54.3 < 15 |walk
-		_Continue_ following the path |goto 47.9,48.5 < 15 |walk
-		_Go up_ the stairs |goto 40.0,47.9 < 15 |walk
+		_Enter_ the Throne Room |goto Ironforge/0 44.7,49.3 < 5 |walk
+		_Head down_ the stairs |goto 46.5,54.3 < 5 |walk
+		_Continue_ following the path |goto 47.9,48.5 < 5 |walk
+		_Go up_ the stairs |goto 40.0,47.9 < 5 |walk
 		Use your Human Orphan Whistle to summon your Human Orphan |use Human Orphan Whistle##18598
 		Take Your Orphan to Visit King Magni in Old Ironforge |q 29106/1 |goto Ironforge 33.2,47.8
 	step
@@ -4156,7 +4156,10 @@ ZygorGuidesViewer:RegisterInclude("Children's Week Shattrath",[[
 ]])
 ZygorGuidesViewer:RegisterInclude("Children's Week Dalaran Oracles Quests",[[
 		talk Orphan Matron Aria##34365
-		accept Little Orphan Roo Of The Oracles##13926
+		accept Little Orphan Roo Of The Oracles##13926 |goto Dalaran 49.4,63.2
+		|tip If you choose to care for the Oracles you are not able to also care for the Wolvars.
+	step
+		talk Orphan Matron Aria##34365
 		Ask about the orphans
 		Speak to Orphan Matron Aria and accept to care for the Oracle Orphan |goto Dalaran 49.4,63.2 |q 13926/1
 	step
@@ -4226,7 +4229,10 @@ ZygorGuidesViewer:RegisterInclude("Children's Week Dalaran Oracles Quests",[[
 ]])
 ZygorGuidesViewer:RegisterInclude("Children's Week Dalaran Wolvar Quests",[[
 		talk Orphan Matron Aria##34365
-		accept Little Orphan Kekek Of The Wolvar##13927
+		accept Little Orphan Kekek Of The Wolvar##13927 |goto Dalaran 49.4,63.2 
+		|tip If you choose to care for the Wolvars you are not able to also care for the Oracles.
+	step
+		talk Orphan Matron Aria##34365
 		Ask about the orphans
 		Speak to Orphan Matron Aria and accept to care for the Wolvar Orphan |goto Dalaran 49.4,63.2 |q 13927/1
 	step
@@ -4307,14 +4313,14 @@ ZygorGuidesViewer:RegisterInclude("Children's Week Achievements",[[
 		buy 1 Tigule and Foror's Strawberry Ice Cream##7228 |condition itemcount(7228)>=1 or achieved(1788,1) |goto Stormwind City 61.3,75.0
 	step
 		Purchase the follow items from the Auction House, or use your Cooking ability to create them, if you'd like:
-		collect 1 Tasty Cupcake##43490 |condition itemcount(43490)>=1 or achieved(1788,5)
-		collect 1 Delicious Chocolate Cake##33924 |condition itemcount(33924)>=1 or achieved(1788,6)
+		collect 1 Tasty Cupcake##43490 |condition itemcount(43490)>=1 or achieved(1788,2)
+		collect 1 Delicious Chocolate Cake##33924 |condition itemcount(33924)>=1 or achieved(1788,4)
 	step
 		talk Aimee##29548
-		buy 1 Red Velvet Cupcake##42429 |condition itemcount(42429)>=1 or achieved(1788,2) |goto Dalaran 51.2,29.1
-		buy 1 Lovely Cake##42438 |condition itemcount(42438)>=1 or achieved(1788,3) |goto Dalaran 51.2,29.1
-		buy 1 Dalaran Doughnut##42430 |condition itemcount(42430)>=1 or achieved(1788,4) |goto Dalaran 51.2,29.1
-		buy 1 Dalaran Brownie##42431 |condition itemcount(42431)>=1 or achieved(1788,7) |goto Dalaran 51.2,29.1
+		buy 1 Red Velvet Cupcake##42429 |condition itemcount(42429)>=1 or achieved(1788,3) |goto Dalaran 51.2,29.1
+		buy 1 Lovely Cake##42438 |condition itemcount(42438)>=1 or achieved(1788,5) |goto Dalaran 51.2,29.1
+		buy 1 Dalaran Doughnut##42430 |condition itemcount(42430)>=1 or achieved(1788,7) |goto Dalaran 51.2,29.1
+		buy 1 Dalaran Brownie##42431 |condition itemcount(42431)>=1 or achieved(1788,6) |goto Dalaran 51.2,29.1
 	step
 		Use your Lovely Cake in your bags to place a cake on the ground |use Lovely Cake##42438
 		Click the Lovely Cake
@@ -4322,12 +4328,12 @@ ZygorGuidesViewer:RegisterInclude("Children's Week Achievements",[[
 	step
 		Use whichever Orphan Whistle you currently have to summon your Orphan, so that the Orphan is standing next to you:
 		Eat Tigule and Foror's Strawberry Ice Cream |achieve 1788/1 |use Tigule and Foror's Strawberry Ice Cream##7228
-		Eat Tasty Cupcake |achieve 1788/6 |use Tasty Cupcake##43490
-		Eat Red Velvet Cupcake |achieve 1788/4 |use Red Velvet Cupcake##42429
-		Eat Delicious Chocolate Cake |achieve 1788/5 |use Delicious Chocolate Cake##33924
-		Eat Lovely Cake Slice |achieve 1788/2 |use Lovely Cake Slice##42434
-		Eat Dalaran Brownie |achieve 1788/7 |use Dalaran Brownie##42431
-		Eat Dalaran Doughnut |achieve 1788/3 |use Dalaran Doughnut##42430
+		Eat Tasty Cupcake |achieve 1788/2 |use Tasty Cupcake##43490
+		Eat Red Velvet Cupcake |achieve 1788/3 |use Red Velvet Cupcake##42429
+		Eat Delicious Chocolate Cake |achieve 1788/4 |use Delicious Chocolate Cake##33924
+		Eat Lovely Cake Slice |achieve 1788/5 |use Lovely Cake Slice##42434
+		Eat Dalaran Brownie |achieve 1788/6 |use Dalaran Brownie##42431
+		Eat Dalaran Doughnut |achieve 1788/7 |use Dalaran Doughnut##42430
 	step
 		Use your Hearthstone while your Orphan is standing next to you |use Hearthstone##6948
 		Get the Home Alone Achievement |achieve 1791
@@ -4338,19 +4344,19 @@ ZygorGuidesViewer:RegisterInclude("Children's Week Achievements",[[
 	step
 		Enter the Eye of the Storm battleground and capture the flag
 		|tip Make sure your Orphan is standing next to you when you capture the flag, or else you won't get credit for the achievement.
-		Capture the flag in Eye of the Storm |achieve 1786/3
+		Capture the flag in Eye of the Storm |achieve 1786/1
 	step
 		Enter the Alterac Valley battleground and assault a tower
 		|tip Make sure your Orphan is standing next to you when you assault the tower, or else you won't get credit for the achievement.
-		Assault a tower in Alterac Valley |achieve 1786/1
+		Assault a tower in Alterac Valley |achieve 1786/2
 	step
 		Enter the Arathi Basin battleground and assault a flag
 		|tip Make sure your Orphan is standing next to you when you assault the flag, or else you won't get credit for the achievement.
-		Assault a flag in Arathi Basin |achieve 1786/4
+		Assault a flag in Arathi Basin |achieve 1786/3
 	step
 		Enter the Warsong Gulch battleground and return a fallen flag
 		|tip Make sure your Orphan is standing next to you when you return the fallen flag, or else you won't get credit for the achievement.
-		Return a fallen flag in Warsong Gulch |achieve 1786/2
+		Return a fallen flag in Warsong Gulch |achieve 1786/4
 	step
 		Congratulations, you do it For The Children! |achieve 1793
 ]])

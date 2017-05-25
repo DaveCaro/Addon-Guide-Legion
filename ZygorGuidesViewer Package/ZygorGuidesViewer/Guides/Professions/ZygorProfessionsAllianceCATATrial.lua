@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("ProfessionsA") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Alchemy 1-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Alchemy 1-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Alchemy",600},
 condition_suggested="hasprof('Alchemy',1,600)",
@@ -61,7 +61,7 @@ step
 create 38 Elixir of Wisdom##3171,Alchemy,125
 #include end_of_prof_trial_125
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Archaeology\\Archaeology 1-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Archaeology\\Leveling Guides\\Archaeology 1-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Archaeology",600},
 condition_suggested="hasprof('Archaeology',1,600)",
@@ -98,7 +98,7 @@ Click artifacts to open them, then solve them once you have the required amounts
 skill Archaeology,125
 #include end_of_prof_trial_150
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Blacksmithing 1-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Blacksmithing 1-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Blacksmithing",600},
 condition_suggested="hasprof('Blacksmithing',1,600)",
@@ -189,7 +189,7 @@ step
 create Rough Bronze Leggings##2668,Blacksmithing,125
 #include end_of_prof_trial_125
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Enchanting 1-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Enchanting 1-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Enchanting",600},
 condition_suggested="hasprof('Enchanting',1,600)",
@@ -249,7 +249,7 @@ step
 create 25 Enchant Cloak - Minor Agility##13419,Enchanting,135
 #include end_of_prof_trial_125
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Engineering 1-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Engineering 1-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Engineering",600},
 condition_suggested="hasprof('Engineering',1,600)",
@@ -365,7 +365,7 @@ step
 create 3 Flying Tiger Goggles##3934,Engineering,130
 #include end_of_prof_trial_125
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\First Aid\\First Aid 1-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\First Aid\\Leveling Guides\\First Aid 1-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","First Aid",600},
 condition_suggested="hasprof('First Aid',1,600)",
@@ -417,7 +417,7 @@ step
 create Heavy Wool Bandage##3278+,First Aid,150
 #include end_of_prof_trial_150
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Fishing 1-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Leveling Guides\\Fishing 1-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Fishing",600},
 condition_suggested="hasprof('Fishing',1,600)",
@@ -450,7 +450,7 @@ Use your Fishing skill to fish in the water all around the wooden dock |cast Fis
 skill Fishing,150 |goto Stormwind City,55.0,69.7 |condition skill("Fishing")>=150
 #include end_of_prof_trial_150
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Herbalism 1-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Herbalism 1-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Herbalism",600},
 condition_suggested="hasprof('Herbalism',1,600)",
@@ -493,7 +493,7 @@ collect Briarthorn##2450 |n
 skill Herbalism,125
 #include end_of_prof_trial_150
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Inscription 1-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Inscription 1-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Inscription",600},
 condition_suggested="hasprof('Inscription',1,600)",
@@ -561,7 +561,7 @@ create Research: Moonglow Ink##165564,Inscription,107
 step
 create Research: Midnight Ink##165304,Inscription,128
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Jewelcrafting 1-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 1-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Jewelcrafting",600},
 condition_suggested="hasprof('Jewelcrafting',1,600)",
@@ -674,91 +674,7 @@ step
 create Pendant of the Agate Shield##25610,Jewelcrafting,150
 #include end_of_prof_trial_150
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Tailoring 1-600 Leveling Guide",{
-author="support@zygorguides.com",
-completion={"skill","Tailoring",600},
-condition_suggested="hasprof('Tailoring',1,600)",
-description="This guide will walk you through leveling your Tailoring skill from 1-600.",
-},[[
-step
-#include "trainer_Tailoring"
-skillmax Tailoring,75
-|tip You must be at least level 5.
-step
-kill Rotted One##948+, Flesh Eater##3+, Bone Chewer##210+
-collect 156 Linen Cloth##2589 |goto Duskwood,23.7,36.6  |condition skill("Tailoring")>=75
-|tip You can also buy these materials from the Auction House.
-You can find more mobs in the crypt at |goto 25.8,34.6
-Be sure to save any _Wool Cloth_ you pick up
-step
-create Bolt of Linen Cloth##2963,Tailoring,78 total |n
-skill Tailoring,50
-step
-#include "trainer_Tailoring"
-learn Heavy Linen Gloves##3840 |condition skill("Tailoring")>=75
-step
-#include "vendor_Tailoring"
-buy 40 Coarse Thread##2320 |condition itemcount(2320) >= 40 or skill("Tailoring")>=75
-step
-create 20 Heavy Linen Gloves##3840,Tailoring,70
-step
-#include "trainer_Tailoring"
-learn Reinforced Linen Cape##2397 |condition skill("Tailoring")>=75
-step
-create 5 Reinforced Linen Cape##2397,Tailoring,75
-step
-#include "trainer_Tailoring"
-skillmax Tailoring,150
-|tip You must be level 10
-step
-#include "trainer_Tailoring"
-learn Bolt of Woolen Cloth##2964 |condition skill("Tailoring")>=125
-step
-kill Dragonmaw Whelpstealer##42041+, Ebon Slavehunter##42043
-collect 110 Linen Cloth##2589 |condition skill("Tailoring")>=125 |goto Wetlands 67.4,47.4
-collect 135 Wool Cloth##2592 |condition skill("Tailoring")>=125 |goto Wetlands 67.4,47.4
-|tip You can also buy these materials from the Auction House.
-step
-create 55 Bolt of Linen Cloth##2963,Tailoring,55 total |n
-collect 55 Linen Cloth##2996 |condition skill("Tailoring")>=125
-step
-create 45 Bolt of Woolen Cloth##2964,Tailoring,45 total |n
-skill Tailoring,100
-step
-#include "trainer_Tailoring" |condition skill("Tailoring")>=125
-learn Simple Kilt##12046 |condition skill("Tailoring")>=125
-step
-#include "vendor_Tailoring"
-buy 45 Fine Thread##2321 |condition itemcount(2321) >= 45 or skill("Tailoring")>=125
-step
-create 40 Simple Kilt##12046,Tailoring,110
-step
-#include "trainer_Tailoring"
-learn Double-stitched Woolen Shoulders##3848 |condition skill("Tailoring")>=125
-step
-create 15 Double-stitched Woolen Shoulders##3848,Tailoring,125
-step
-#include "trainer_Tailoring"
-skillmax Tailoring,225
-|tip You must be at least level 20.
-step
-#include "trainer_Tailoring"
-learn Bolt of Silk Cloth##3839 |condition skill("Tailoring")>=200
-step
-kill Grimtotem Marauder##39949+
-collect 644 Silk Cloth##4306 |condition skill("Tailoring")>=200 |goto Feralas/0 87.3,45.0
-collect 480 Mageweave Cloth##4338 |n
-|tip You can also buy these materials from the Auction House.
-step
-kill Irontree Chopper##48453+
-collect 480 Mageweave Cloth##4338 |condition skill("Tailoring")>=200 |goto Felwood,63.4,20.7
-|tip You can also buy these materials from the Auction House.
-step
-create 161 Bolt of Silk Cloth##3839,Tailoring,161 total |n
-skill Tailoring,145
-#include end_of_prof_trial_125
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leatherworking 1-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Leatherworking 1-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Leatherworking",600},
 condition_suggested="hasprof('Leatherworking',1,600)",
@@ -847,97 +763,7 @@ step
 create Hillman's Leather Gloves##3764,Leatherworking,150
 #include end_of_prof_trial_150
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Skinning 1-600 Leveling Guide",{
-author="support@zygorguides.com",
-completion={"skill","Skinning",600},
-condition_suggested="hasprof('Skinning',1,600)",
-description="This guide will walk you through leveling your Skinning skill from 1-600.",
-},[[
-step
-#include "trainer_Skinning"
-skillmax Skinning,75
-step
-#include "vendor_Leatherworking"
-buy 1 Skinning Knife##7005 |condition itemcount(7005) >= 1 or skill("Skinning")>=75
-step
-#include "home_TradeDistrict"
-step
-map Dun Morogh
-path follow loose;loop;ants straight;dist 60
-path	81.0,50.1	82.7,55.5	83.0,59.3
-path	79.3,60.2	79.5,53.6	78.6,48.7
-Kill any beasts you see and skin them
-skill Skinning,60
-step
-talk Balthus Stoneflayer##6291
-skillmax Skinning,150 |goto Ironforge,39.5,32.6
-step
-map Loch Modan
-path follow loose;loop;ants straight;dist 60
-path	50.3,66.3	48.3,61.5	54.8,53.0
-path	57.3,50.2	60.4,43.0	62.6,49.3
-path	59.4,56.9	53.6,61.7
-Kill any beasts you see and skin them
-skill Skinning,120
-step
-map Wetlands
-path follow loose;loop;ants straight;dist 60
-path	20.2,50.8	22.8,45.6	29.4,42.2
-path	30.0,44.6	26.6,47.6	24.7,51.5
-path	23.6,58.7
-Kill any beasts you see and skin them
-skill Skinning,150
-#include end_of_prof_trial_150
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Mining 1-600 Leveling Guide",{
-author="support@zygorguides.com",
-completion={"skill","Mining",600},
-condition_suggested="hasprof('Mining',1,600)",
-description="This guide will walk you through leveling your Mining skill from 1 - 600.",
-},[[
-step
-talk Rockseeker Guo##67024 |goto The Jade Forest/0 45.0,85.9
-skillmax Mining,75
-step
-map The Jade Forest/0
-path follow loose;loop;ants straight;dist 60
-path	49.2,94.1	50.2,89.4	54.6,92.8
-path	58.2,94.1	61.4,93.4	64.4,91.4
-path	67.2,88.6	69.3,83.5	66.2,76.8
-path	61.6,71.0	56.0,69.7	58.9,62.9
-path	60.8,57.6	58.5,48.9	53.9,39.9
-path	55.3,33.5	56.1,29.1	53.9,26.1
-path	51.4,21.8	46.2,17.1	38.4,8.7
-path	35.8,12.4	32.7,13.0	28.2,21.4
-path	30.3,25.6	30.9,29.5	30.2,37.0
-path	29.6,43.8	29.8,52.9	33.2,55.5
-path	36.2,64.9	39.8,69.5	39.0,78.4
-path	40.4,84.3	44.8,90.6
-#include "follow_path_mine"
-skill Mining,75
-step
-talk Rockseeker Guo##67024 |goto The Jade Forest/0 45.0,85.9
-skillmax Mining,150
-step
-map The Jade Forest/0
-path follow loose;loop;ants straight;dist 60
-path	49.2,94.1	50.2,89.4	54.6,92.8
-path	58.2,94.1	61.4,93.4	64.4,91.4
-path	67.2,88.6	69.3,83.5	66.2,76.8
-path	61.6,71.0	56.0,69.7	58.9,62.9
-path	60.8,57.6	58.5,48.9	53.9,39.9
-path	55.3,33.5	56.1,29.1	53.9,26.1
-path	51.4,21.8	46.2,17.1	38.4,8.7
-path	35.8,12.4	32.7,13.0	28.2,21.4
-path	30.3,25.6	30.9,29.5	30.2,37.0
-path	29.6,43.8	29.8,52.9	33.2,55.5
-path	36.2,64.9	39.8,69.5	39.0,78.4
-path	40.4,84.3	44.8,90.6
-#include "follow_path_mine"
-skill Mining,150
-#include end_of_prof_trial_150
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Classic Mining 1-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Classic Mining 1-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Mining",600},
 condition_suggested="hasprof('Mining',1,600)",
@@ -993,4 +819,178 @@ path	50.2,28.6	44.6,28.2	42.9,34.7
 path	41.4,41.2
 #include "follow_path_mine"
 skill Mining,125
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Mining 1-600 Leveling Guide",{
+author="support@zygorguides.com",
+completion={"skill","Mining",600},
+condition_suggested="hasprof('Mining',1,600)",
+description="This guide will walk you through leveling your Mining skill from 1 - 600.",
+},[[
+step
+talk Rockseeker Guo##67024 |goto The Jade Forest/0 45.0,85.9
+skillmax Mining,75
+step
+map The Jade Forest/0
+path follow loose;loop;ants straight;dist 60
+path	49.2,94.1	50.2,89.4	54.6,92.8
+path	58.2,94.1	61.4,93.4	64.4,91.4
+path	67.2,88.6	69.3,83.5	66.2,76.8
+path	61.6,71.0	56.0,69.7	58.9,62.9
+path	60.8,57.6	58.5,48.9	53.9,39.9
+path	55.3,33.5	56.1,29.1	53.9,26.1
+path	51.4,21.8	46.2,17.1	38.4,8.7
+path	35.8,12.4	32.7,13.0	28.2,21.4
+path	30.3,25.6	30.9,29.5	30.2,37.0
+path	29.6,43.8	29.8,52.9	33.2,55.5
+path	36.2,64.9	39.8,69.5	39.0,78.4
+path	40.4,84.3	44.8,90.6
+#include "follow_path_mine"
+skill Mining,75
+step
+talk Rockseeker Guo##67024 |goto The Jade Forest/0 45.0,85.9
+skillmax Mining,150
+step
+map The Jade Forest/0
+path follow loose;loop;ants straight;dist 60
+path	49.2,94.1	50.2,89.4	54.6,92.8
+path	58.2,94.1	61.4,93.4	64.4,91.4
+path	67.2,88.6	69.3,83.5	66.2,76.8
+path	61.6,71.0	56.0,69.7	58.9,62.9
+path	60.8,57.6	58.5,48.9	53.9,39.9
+path	55.3,33.5	56.1,29.1	53.9,26.1
+path	51.4,21.8	46.2,17.1	38.4,8.7
+path	35.8,12.4	32.7,13.0	28.2,21.4
+path	30.3,25.6	30.9,29.5	30.2,37.0
+path	29.6,43.8	29.8,52.9	33.2,55.5
+path	36.2,64.9	39.8,69.5	39.0,78.4
+path	40.4,84.3	44.8,90.6
+#include "follow_path_mine"
+skill Mining,150
+#include end_of_prof_trial_150
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Skinning 1-600 Leveling Guide",{
+author="support@zygorguides.com",
+completion={"skill","Skinning",600},
+condition_suggested="hasprof('Skinning',1,600)",
+description="This guide will walk you through leveling your Skinning skill from 1-600.",
+},[[
+step
+#include "trainer_Skinning"
+skillmax Skinning,75
+step
+#include "vendor_Leatherworking"
+buy 1 Skinning Knife##7005 |condition itemcount(7005) >= 1 or skill("Skinning")>=75
+step
+#include "home_TradeDistrict"
+step
+map Dun Morogh
+path follow loose;loop;ants straight;dist 60
+path	81.0,50.1	82.7,55.5	83.0,59.3
+path	79.3,60.2	79.5,53.6	78.6,48.7
+Kill any beasts you see and skin them
+skill Skinning,60
+step
+talk Balthus Stoneflayer##6291
+skillmax Skinning,150 |goto Ironforge,39.5,32.6
+step
+map Loch Modan
+path follow loose;loop;ants straight;dist 60
+path	50.3,66.3	48.3,61.5	54.8,53.0
+path	57.3,50.2	60.4,43.0	62.6,49.3
+path	59.4,56.9	53.6,61.7
+Kill any beasts you see and skin them
+skill Skinning,120
+step
+map Wetlands
+path follow loose;loop;ants straight;dist 60
+path	20.2,50.8	22.8,45.6	29.4,42.2
+path	30.0,44.6	26.6,47.6	24.7,51.5
+path	23.6,58.7
+Kill any beasts you see and skin them
+skill Skinning,150
+#include end_of_prof_trial_150
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Tailoring 1-600 Leveling Guide",{
+author="support@zygorguides.com",
+completion={"skill","Tailoring",600},
+condition_suggested="hasprof('Tailoring',1,600)",
+description="This guide will walk you through leveling your Tailoring skill from 1-600.",
+},[[
+step
+#include "trainer_Tailoring"
+skillmax Tailoring,75
+|tip You must be at least level 5.
+step
+kill Rotted One##948+, Flesh Eater##3+, Bone Chewer##210+
+collect 156 Linen Cloth##2589 |goto Duskwood,23.7,36.6  |condition skill("Tailoring")>=75
+|tip You can also buy these materials from the Auction House.
+You can find more mobs in the crypt at |goto 25.8,34.6
+Be sure to save any _Wool Cloth_ you pick up
+step
+create Bolt of Linen Cloth##2963,Tailoring,78 total |n
+skill Tailoring,50
+step
+#include "trainer_Tailoring"
+learn Heavy Linen Gloves##3840 |condition skill("Tailoring")>=75
+step
+#include "vendor_Tailoring"
+buy 40 Coarse Thread##2320 |condition itemcount(2320) >= 40 or skill("Tailoring")>=75
+step
+create 20 Heavy Linen Gloves##3840,Tailoring,70
+step
+#include "trainer_Tailoring"
+learn Reinforced Linen Cape##2397 |condition skill("Tailoring")>=75
+step
+create 5 Reinforced Linen Cape##2397,Tailoring,75
+step
+#include "trainer_Tailoring"
+skillmax Tailoring,150
+|tip You must be level 10
+step
+#include "trainer_Tailoring"
+learn Bolt of Woolen Cloth##2964 |condition skill("Tailoring")>=125
+step
+kill Dragonmaw Whelpstealer##42041+, Ebon Slavehunter##42043
+collect 110 Linen Cloth##2589 |condition skill("Tailoring")>=125 |goto Wetlands 67.4,47.4
+collect 135 Wool Cloth##2592 |condition skill("Tailoring")>=125 |goto Wetlands 67.4,47.4
+|tip You can also buy these materials from the Auction House.
+step
+create 55 Bolt of Linen Cloth##2963,Tailoring,55 total |n
+collect 55 Linen Cloth##2996 |condition skill("Tailoring")>=125
+step
+create 45 Bolt of Woolen Cloth##2964,Tailoring,45 total |n
+skill Tailoring,100
+step
+#include "trainer_Tailoring" |condition skill("Tailoring")>=125
+learn Simple Kilt##12046 |condition skill("Tailoring")>=125
+step
+#include "vendor_Tailoring"
+buy 45 Fine Thread##2321 |condition itemcount(2321) >= 45 or skill("Tailoring")>=125
+step
+create 40 Simple Kilt##12046,Tailoring,110
+step
+#include "trainer_Tailoring"
+learn Double-stitched Woolen Shoulders##3848 |condition skill("Tailoring")>=125
+step
+create 15 Double-stitched Woolen Shoulders##3848,Tailoring,125
+step
+#include "trainer_Tailoring"
+skillmax Tailoring,225
+|tip You must be at least level 20.
+step
+#include "trainer_Tailoring"
+learn Bolt of Silk Cloth##3839 |condition skill("Tailoring")>=200
+step
+kill Grimtotem Marauder##39949+
+collect 644 Silk Cloth##4306 |condition skill("Tailoring")>=200 |goto Feralas/0 87.3,45.0
+collect 480 Mageweave Cloth##4338 |n
+|tip You can also buy these materials from the Auction House.
+step
+kill Irontree Chopper##48453+
+collect 480 Mageweave Cloth##4338 |condition skill("Tailoring")>=200 |goto Felwood,63.4,20.7
+|tip You can also buy these materials from the Auction House.
+step
+create 161 Bolt of Silk Cloth##3839,Tailoring,161 total |n
+skill Tailoring,145
+#include end_of_prof_trial_125
 ]])

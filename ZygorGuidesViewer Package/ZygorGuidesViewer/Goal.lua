@@ -1310,15 +1310,14 @@ local buff_textures = {
 
 GOALTYPES['havebuff'] = {
 	parse = function(self,params)
-		self.buff = params
-		self.fileid = tonumber(self.buff) or buff_textures[self.buff]
+		self.buff = tonumber(params) or buff_textures[params] or params
 	end,
 	iscomplete = function(self)
 		for i=1,30 do
 			local name,_,fileid = UnitBuff("player",i)
-			if name and (self.fileid==fileid or name:find(self.buff)) then return true,true end
+			if name and (self.buff==fileid or name:find(self.buff)) then return true,true end
 			local name,_,fileid = UnitDebuff("player",i)
-			if name and (self.fileid==fileid or name:find(self.buff)) then return true,true end
+			if name and (self.buff==fileid or name:find(self.buff)) then return true,true end
 		end
 		return false,true
 	end
@@ -1327,13 +1326,7 @@ GOALTYPES['havebuff'] = {
 GOALTYPES['nobuff'] = {
 	parse = GOALTYPES['havebuff'].parse,
 	iscomplete = function(self)
-		for i=1,30 do
-			local name,_,tex = UnitBuff("player",i)
-			if name and (self.fileid==fileid or name:find(self.buff)) then return false,true end
-			local name,_,tex = UnitDebuff("player",i)
-			if name and (self.fileid==fileid or name:find(self.buff)) then return false,true end
-		end
-		return true,true
+		return not GOALTYPES['havebuff'].iscomplete(self),true
 	end
 }
 

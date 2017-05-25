@@ -96,6 +96,11 @@ function Mailtools:GetListOfInbox()
 				local mi_id = tonumber(itemlink:match("item:(%d+)"))
 				local mi_name,mi_itemID,mi_icon, mi_count, quality, canUse = GetInboxItem(mi_mail,mi_slot)
 
+				if mi_name == "" or not mi_name then
+					Mailtools.ForceInboxRefresh = true
+					return
+				end
+
 				if (mi_quality == -1) then -- Mailbox sometimes does not return proper quality
 					_,_,mi_quality = ZGV:GetItemInfo(itemlink);
 				end

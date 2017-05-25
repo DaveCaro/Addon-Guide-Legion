@@ -364,7 +364,7 @@ T The Protectors |QID|43991| |N|(npc:103832) in {Circle of Spirits} (44.84,50.13
 
 N Switch Guide |N|Complete the (guide:"1067(98-110)") to kill (npc:103344) and collect (item:140313) and kill (npc:101403)| |QID|44076|
 N Switch Guide |N|Complete the (guide:"1065(98-110)") to kill (npc:91003) and collect (item:140311) and kill (npc:107704)| |QID|44074|
-N Switch Guide |N|Complete the (guide:"1046(98-110)") to kill (npc:96028) and collect (item:140311)| |QID|44077|
+N Switch Guide |N|Complete the (guide:"1046(98-110)") to kill (npc:96028) and collect (item:140312)| |QID|44077|
 N Switch Guide |N|Complete the (guide:"1041(98-110)") to kill (npc:99868) and collect (item:139469) and complete Odyn's Trial| |QID|44075|
 
 C Gathering the Dreamweavers |QID|42037| |N|Complete a "Gathering the Dreamweavers" Mission, these mission will take up to 16 hours to complete each  (52.71,51.06)| |Z|1077 0| |NPC|98002|
@@ -543,18 +543,18 @@ C Destiny Unfulfilled |QID|44497| |N|Witness True Betrayal in Shadowmoon Valley 
 R The Dreamgrove |TID|44496| |N|Travel to {The Dreamgrove} (60.06,52.14)| |Z|1077 0|
 T Destiny Unfulfilled |QID|44496| |N|(npc:113857) in {The Dreamgrove} (60.06,52.14)| |Z|1077 0| |NPC|113857|
 
-R Krasus' Landing |N|Travel to Krasus' Landing} (69.40, 43.99)| |Z|1014 10|
+R Krasus' Landing |QID|46734| |N|Travel to {Krasus' Landing} (69.40, 43.99)| |Z|1014 10|
 A Armies of Legionfall |QID|46730| |N|This quest is available after you unlock World Quests by completing (qid:43341)| |Z|1014 10| |NPC|120215| |O|
 T Armies of Legionfall |QID|46730| |N|(npc:120215), in {Krasus' Landing} (69.37, 43.88)| |Z|1014 10| |NPC|120215| |O|
 A Assault on Broken Shore |QID|46734| |N|(npc:120215) in {Krasus' Landing} (69.40, 43.99)| |Z|1014 10| |NPC|120215|
 N (npc:120215) |QID|46734.1| |N|Speak to (npc:120215) in {Krasus' Landing} (69.40, 43.99)| |Z|1014 10| |NPC|120215|
-N (npc:120752) |SID|35327|1| |N|Mount the (npc:120752) in {Krasus' Landing}| |NPC|120752| |V|
-C Secure the Beach |SID|35327|2| |N|Kill the demons on the beach until you reach 100% to secure the beach (50.86, 69.96)| |Z|1149 0|
-C Defeat Lord Kalgorath |SID|35329|3| |N|Defeat (npc:116291) in {Broken Shore} (44.30, 73.90) (42.04, 72.23) (41.29, 65.12) (41.30, 65.12)| |Z|1149 0| |NPC|116291|
-C Legion portals closed |SID|35495|4| |N|Follow the waypoints and defeat the forces to close the portals in {Broken Shore}(42.95, 58.73)  (46.98, 58.29) (52.15, 52.38)(54.57, 47.99) (57.09, 52.15) (59.09, 51.61) (59.09, 51.61)| |Z|1149 0|
-K (npc:118551) |SID|35497|5| |N|Kill (npc:118551) in {Broken Shore} (55.15, 51.75)| |Z|1149 0| |NPC|118551|
-C Use Gateway |SID|35551|6| |N|Take the Demonic Gateway to the base of Mephistroth's command ship (53.41, 50.42)| |Z|1149 0|
-C Plant Arcane Bombs |SID|36178|7| |N|Plant Arcane Bombs in the command ship in each waypoints, look for the yellow dots in the minimap, you will need to use the portal after planting the first 2| |Z|1149 0|
+N (npc:120752) |SID|35327|1| |N|Mount the (npc:120752) in {Krasus' Landing}| |NPC|120752| |V| |QID|46734| 
+C Secure the Beach |SID|35327|2| |N|Kill the demons on the beach until you reach 100% to secure the beach (50.86, 69.96)| |Z|1149 0| |QID|46734| 
+C Defeat Lord Kalgorath |SID|35329|3| |N|Defeat (npc:116291) in {Broken Shore} (44.30, 73.90) (42.04, 72.23) (41.29, 65.12) (41.30, 65.12)| |Z|1149 0| |NPC|116291| |QID|46734| 
+C Legion portals closed |SID|35495|4| |N|Follow the waypoints and defeat the forces to close the portals in {Broken Shore}(42.95, 58.73)  (46.98, 58.29) (52.15, 52.38)(54.57, 47.99) (57.09, 52.15) (59.09, 51.61) (59.09, 51.61)| |Z|1149 0| |QID|46734| 
+K (npc:118551) |SID|35497|5| |N|Kill (npc:118551) in {Broken Shore} (55.15, 51.75)| |Z|1149 0| |NPC|118551| |QID|46734| 
+C Use Gateway |SID|35551|6| |N|Take the Demonic Gateway to the base of Mephistroth's command ship (53.41, 50.42)| |Z|1149 0| |QID|46734| 
+C Plant Arcane Bombs |SID|36178|7| |N|Plant Arcane Bombs in the command ship in each waypoints, look for the yellow dots in the minimap, you will need to use the portal after planting the first 2| |Z|1149 0| |QID|46734| 
 C Defeat Mephistroth |SID|36179|8| |N|Kill (npc:120746) in {Broken Shore} (50.03, 45.38)| |Z|1149 0| |NPC|120746| |QID|46734.2|
 
 T Assault on Broken Shore |QID|46734| |N|(npc:116302) in {Deliverance Point} (44.71, 63.29)| |Z|1021 0| |NPC|116302|
@@ -570,30 +570,45 @@ R Vengeance Point |QID|46845| |N|Travel to {Vengeance Point} (50.63, 20.77)| |Z|
 N Scout Dreadstalker Point |QID|46845.1| |N|Scout Dreadstalker Point (50.66, 21.41)| |Z|1021 0|
 C Vengeance Point |QID|46845| |N|Kill 4 (npc:120969) and 5 (npc:120748) in {Vengeance Point} (50.63, 20.77)| |Z|1021 0| |NPC|120969, 120748|
 T Vengeance Point |QID|46845| |N|(npc:111323) in {Vengeance Point} (49.69, 21.03)| |Z|1021 0| |NPC|111323|
+C Legionfall Supplies |QID|46286| |N|Complete World Quests or slay Rare Elites on the Broken Shore to earn 100 (cur:1342)|
+T Legionfall Supplies |QID|46286| |N|(npc:120183) in {Deliverance Point} (44.55,63.15)| |Z|1021 0| |NPC|120183|
+A Begin Construction |QID|46245| |N|(npc:120183) in {Deliverance Point} (44.54,63.15)| |Z|1021 0| |NPC|120183|
+C Begin Construction |QID|46245.1| |N|Use the table and Donate Legionfall War Supplies to the construction of the Mage Tower, Nether Disruptor, or Command Center in {Deliverance Point} (44.74, 63.13)| |Z|1021 0|
+T Begin Construction |QID|46245| |N|(npc:120183) in {Deliverance Point} (44.54,63.15)| |Z|1021 0| |NPC|120183|
+A Defending Broken Isles |QID|46247| |N|(npc:116576) in {Deliverance Point} (44.54,63.52)| |Z|1021 0| |NPC|116576| 
+C Defending Broken Isles |QID|46247.1| |N|Defeat a Legion Assault in the Broken Isles, check the Broken Isle map for Legion Assault and complete the World quest for it| |Z|1021 0|
+T Defending Broken Isles |QID|46247| |N|(npc:116576) in {Deliverance Point} (44.54,63.52)| |Z|1021 0| |NPC|116576|
+A Mark of the Sentinax |QID|47139| |N|(npc:117873) in {Deliverance Point} (44.79,63.17)| |Z|1021 0| |NPC|117873|
+C Mark of the Sentinax |QID|47139|  |N|Collect 100 (item:147582) <br/><b>These are collected from Sentinax Portals.<br/><b>Sentinax Beacons summon portals which spawn mobs that you can kill for Marks.<br/><b>Setninax Beacons drop from mobs in Broken Shore.<br/><b>Open your map and look for the Sentinax icon. Use your beacons below the ship. (50.56,43.35)| |Z|1021 0| 
+T Mark of the Sentinax |QID|47139| |N|(npc:117873) in {Deliverance Point} (44.79,63.17)| |Z|1021 0| |NPC|117873|
+A Self-Fulfilling Prophecy |QID|46248| |N|(npc:120372) in {Deliverance Point} (44.57,63.39)| |Z|1021 0| |NPC|120372|
+C Self-Fulfilling Prophecy |QID|46248| |N|Complete 12 world quests on Broken Shore|
+T Self-Fulfilling Prophecy |QID|46248| |N|(npc:120372) in {Deliverance Point} (44.57,63.39)| |Z|1021 0| |NPC|120372|
 
-A Talon's Call |QID|46317| |N|(npc:118105) in {Deliverance Point} (43.81,62.97)| |Z|1021 0| |NPC|118105|
+--A Talon's Call |QID|46317| |N|(npc:118105) in {Deliverance Point} (43.81,62.97)| |Z|1021 0| |NPC|118105|
 
-R The Dreamgrove |QID|46318| |N|Travel to {The Dreamgrove} (44.45,51.47)| |Z|1077 0|
-T Talon's Call |QID|46317| |N|(npc:106299) in {The Dreamgrove} (44.45,51.47)| |Z|1077 0| |NPC|106299|
-A Defense of Aviana |QID|46318| |N|(npc:106299) in {The Dreamgrove} (44.45,51.47)| |Z|1077 0| |NPC|106299|
+--R The Dreamgrove |QID|46318| |N|Travel to {The Dreamgrove} (44.45,51.47)| |Z|1077 0|
+--T Talon's Call |QID|46317| |N|(npc:106299) in {The Dreamgrove} (44.45,51.47)| |Z|1077 0| |NPC|106299|
+--A Defense of Aviana |QID|46318| |N|(npc:106299) in {The Dreamgrove} (44.45,51.47)| |Z|1077 0| |NPC|106299|
 
-N Meet Skylord Shadegrove |SID|0|1| |QID|46318| |N|Speak to Skylord Shadegrovea (42.74,45.67)| |Z|606 0|
-C Kill Demons Attacking the Shrine |SID|0|2| |QID|46318| |N|Kill enemies in this area (41.23,43.79)| |Z|606 0|
-N Return to the Shrine |SID|0|3| |QID|46318| |N|Return to the Shrine (42.32,45.13)| |Z|606 0|
-N Uncover the Traitor |SID|0|4| |QID|46318| |N|Uncover the Traitor (42.68,45.30)| |Z|606 0|
+--N Meet Skylord Shadegrove |SID|0|1| |QID|46318| |N|Speak to Skylord Shadegrovea (42.74,45.67)| |Z|606 0|
+--C Kill Demons Attacking the Shrine |SID|0|2| |QID|46318| |N|Kill enemies in this area (41.23,43.79)| |Z|606 0|
+--N Return to the Shrine |SID|0|3| |QID|46318| |N|Return to the Shrine (42.32,45.13)| |Z|606 0|
+--N Uncover the Traitor |SID|0|4| |QID|46318| |N|Uncover the Traitor (42.68,45.30)| |Z|606 0|
 
-A Defense of Aviana |QID|46318| |N|(npc:106299) in {The Dreamgrove} (33.91,21.50) (31.07,4.75)| |Z|1077 0| |NPC|106299|
-A You Can't Take the Sky From Me |QID|46319| |N|(npc:106299) in {The Dreamgrove} (31.07,4.75)| |Z|1077 0| |NPC|106299|
+--A Defense of Aviana |QID|46318| |N|(npc:106299) in {The Dreamgrove} (33.91,21.50) (31.07,4.75)| |Z|1077 0| |NPC|106299|
+--A You Can't Take the Sky From Me |QID|46319| |N|(npc:106299) in {The Dreamgrove} (31.07,4.75)| |Z|1077 0| |NPC|106299|
 
-N Meet Up With Thisalee Crow |SID|0|1| |QID|46319| |N|Meet Up With Thisalee Crow (41.00,35.19) (39.17,32.74) (36.89,31.21) (39.09,26.70) (41.24,24.77)| |Z|1015 0|
-N Infiltrate the Legion Encampment |SID|0|2| |QID|46319| |N|Follow Thisalee while (spell:1784) (41.56,22.67) (42.70,23.04) (43.09,22.93)| |Z|1015 0|
-N Scout Infazzar |SID|0|3| |QID|46319| |N|Scout Infazzar (43.09,22.93)| |Z|1015 0|
-N Fight Off Attacking Demons and Harpies |SID|0|4| |QID|46319| |N|Kill the enemies that attack (43.09,22.93)| |Z|1015 0|
-N Follow Infazzar to His Ship |SID|0|5| |QID|46319| |N|Click Lunarwing Owl and Follow Infazzar to His Ship (42.78,24.79)| |Z|1015 0|
-K Infazzar the Shade |SID|0|6| |QID|46319| |N|Kill Infazzar the Shade (39.02,28.69)| |Z|1015 0|
+--N Meet Up With Thisalee Crow |SID|0|1| |QID|46319| |N|Meet Up With Thisalee Crow (41.00,35.19) (39.17,32.74) (36.89,31.21) (39.09,26.70) (41.24,24.77)| |Z|1015 0|
+--N Infiltrate the Legion Encampment |SID|0|2| |QID|46319| |N|Follow Thisalee while (spell:1784) (41.56,22.67) (42.70,23.04) (43.09,22.93)| |Z|1015 0|
+--N Scout Infazzar |SID|0|3| |QID|46319| |N|Scout Infazzar (43.09,22.93)| |Z|1015 0|
+--N Fight Off Attacking Demons and Harpies |SID|0|4| |QID|46319| |N|Kill the enemies that attack (43.09,22.93)| |Z|1015 0|
+--N Follow Infazzar to His Ship |SID|0|5| |QID|46319| |N|Click Lunarwing Owl and Follow Infazzar to His Ship (42.78,24.79)| |Z|1015 0|
+--K Infazzar the Shade |SID|0|6| |QID|46319| |N|Kill Infazzar the Shade (39.02,28.69)| |Z|1015 0|
 
-T You Can't Take the Sky From Me |QID|46319| |N|Corrupted Idol of Aviana (33.91,21.50) (29.97,4.27)| |Z|1077 0|
+--T You Can't Take the Sky From Me |QID|46319| |N|Corrupted Idol of Aviana (33.91,21.50) (29.97,4.27)| |Z|1077 0|
 
+--- Patch 7.2 Content
 A Seeking Lost Knowledge |QID|47067| |N|(npc:116302) in {Deliverance Point}<br/><br/>You need at least rank 25 artifact knowledge to receive this quest (44.71, 63.29)| |Z|1021 0| |NPC|116302|
 
 N Recover Knowledge from Moonlight Ascent |QID|47067.3| |N|Click Remnant of Lost Knowledge, stand still and wait for the channeling to complete. (71.22,41.78) (75.62,36.27)| |Z|1021 0|
@@ -609,9 +624,10 @@ A Using Lost Knowledge |QID|46940| |N|(npc:111737) in {The Dreamgrove} (33.94,32
 C Using Lost Knowledge |QID|46940.1| |N|Speak to (npc:111737) to start a Research Work Order in {The Dreamgrove} (33.94,32.53)| |Z|1077 0| |NPC|111737|
 T Using Lost Knowledge |QID|46940| |N|(npc:111737) in {The Dreamgrove} (33.94,32.53)| |Z|1077 0| |NPC|111737|
 
-A Greater Power for Greater Threats |QID|46744| |N|(npc:116302) in {Broken Shore} (44.73,63.26)| |Z|1021 0| |NPC|116302|
-C Unlock All Artifact Traits on a Weapon |QID|46744.1| |N|Unlock all traits on any of your artifact weapons|
-T Greater Power for Greater Threats |QID|46744| |N|(npc:116302) in {Broken Shore} (44.73,63.26)| |Z|1021 0| |NPC|116302|
+R Deliverance Point |QID|46744| |N|Travel to {Deliverance Point} (44.74,63.27)| |Z|1021 0| 
+A Greater Power for Greater Threats |QID|46744| |N|(npc:116302) in {Deliverance Point} (44.74,63.27)| |OID|46765| |NPC|116302| |Z|1021 0| 
+C Greater Power for Greater Threats |QID|46744| |N|Unlock all traits for one of your artifacts. You can earn artifact power by completing world quests, dungeons, and certain quests.|  |OID|46765| |Z|1021 0| 
+T Greater Power for Greater Threats |QID|46744| |N|(npc:116302) in {Deliverance Point} (44.74,63.27)| |OID|46765| |NPC|116302| |Z|1021 0| 
 A The Broken Shore: Investigating the Legion |QID|46765| |N|(npc:116302) in {Broken Shore} (44.73,63.26)| |Z|1021 0| |NPC|116302|
 N Discover the Hidden Legion Threat |QID|46765.1| |N|Collect (item:147430), This item has a chance to drop off of any mob in the area. (44.61,49.57)| |Z|1021 0|
 T The Broken Shore: Investigating the Legion |QID|46765| |N|(npc:116302) in {Broken Shore} (44.73,63.27)| |Z|1021 0| |NPC|116302|
@@ -626,7 +642,192 @@ T Away From Prying Eyes |QID|44782| |N|(npc:115465) in {Dalaran} (22.20,39.04)| 
 A In Dire Need |QID|44821| |N|(npc:115465) in {Dalaran} (22.20,39.04)| |Z|1014 10| |NPC|115465|
 N Hear the Council's Plea |QID|44821.1| |N|Wait for the dialogue to complete in {Dalaran} (22.29,39.68)| |Z|1014 10|
 T In Dire Need |QID|44821| |N|(npc:115465) in {Dalaran} (22.29,39.64)| |Z|1014 10| |NPC|115465|
+
+N Choose Spec |N|Click on the link below depending on your spec, You must have 35 artifact traits unlocked to start the questline for a specialization. <br/><br/>(choice:1:Balance)<br/>(choice:2:Feral)<br/>(choice:3:Guardian)<br/>(choice:4:Restoration)|
+--Balance
+A Balance: The Twisted Twin |QID|47037| |N|(npc:90463) in {Dalaran}<br/>You must have 35 Traits unlocked to accept this quest. (28.62,47.78)| |Z|1014 10| |NPC|90463| |CHOICE|1|
+T Balance: The Twisted Twin |QID|47037| |N|(npc:116175) in {Dalaran} (46.22,38.29) (49.37,39.77)| |Z|1014 10| |NPC|116175| |CHOICE|1|
+A Message from the Shadows |QID|45185| |N|(npc:116175) in {Dalaran} (49.37,39.77)| |Z|1014 10| |NPC|116175| |CHOICE|1|
+C Message from the Shadows |QID|45185.1| |N|Go up the stairs and click A Mysterious Note {Dalaran} (50.67,40.33) (47.02,39.04)| |Z|1014 10| |CHOICE|1|
+T Message from the Shadows |QID|45185| |N|(npc:116175) downstairs in {Dalaran} (49.37,39.77)| |Z|1014 10| |NPC|116175| |CHOICE|1|
+A Secrets in the Underbelly |QID|45187| |N|(npc:116175) in {Dalaran} (49.37,39.77)| |Z|1014 10| |NPC|116175| |CHOICE|1|
+C Secrets in the Underbelly  |QID|45187.1| |N|Speak to (npc:116323) and kill (npc:116322) and collect (item:143496) to search for clues in {The Underbelly} (60.08,45.54)| |Z|1014 11| |NPC|116323, 116322| |CHOICE|1|
+T Secrets in the Underbelly |QID|45187| |N|(npc:116175), next to you| |NPC|116175| |CHOICE|1| 
+A The Wisdom of the Council |QID|45188| |N|(npc:116175), next to you| |NPC|116175| |CHOICE|1| 
+T The Wisdom of the Council |QID|45188| |N|(npc:90463) in {Dalaran} (28.62,47.78)| |Z|1014 10| |CHOICE|1| |NPC|90463|
+A Where it's Thinnest |QID|45190| |N|(npc:90463) in {Dalaran} (28.62,47.78)| |Z|1014 10| |CHOICE|1| |NPC|90463|
+
+R Broken Shore |QID|45192| |N|Travel to {Broken Shore} (56.45,27.35)| |Z|1021 0| |CHOICE|1| 
+T Where it's Thinnest |QID|45190| |N|(npc:116175) {Broken Shore} (56.45,27.35)| |Z|1021 0| |CHOICE|1| |NPC|116175|
+A Runes of Rending |QID|45192| |N|(npc:116175) {Broken Shore} (56.45,27.35)| |Z|1021 0| |CHOICE|1| |NPC|116175|
+C Bypass the Wards |QID|45192.1| |N|Step onto the blue rune to start then follow this pattern:<br/><br/>Up, Left, Right, Left, Right, Right, Down, Right, Up, Up, Left,<br/>Up, Up, Left, Left, Right, Up, Left, Left, Up, Right,<br/>Right, Up, Left, Up, Left, Right, Up {Broken Shore} (57.99,27.18)| |Z|1021 0| |CHOICE|1|
+N Defeat Raest's Minions |QID|45192.2| |N|Kill the enemies in the area and (npc:116393) {Broken Shore} (59.72,27.33)| |Z|1021 0| |CHOICE|1| |NPC|116393|
+T Runes of Rending |QID|45192| |N|(npc:116308) in {Broken Shore} (59.81,27.45)| |Z|1021 0| |CHOICE|1| |NPC|116308|
+A One Step Behind |QID|45193| |N|(npc:116308) in {Broken Shore} (59.81,27.45)| |Z|1021 0| |CHOICE|1| |NPC|116308|
+
+R Dalaran |TID|45193|  |N|Travel to {Dalaran} (37.57,50.17)| |Z|1021 0| |CHOICE|1| 
+T One Step Behind |QID|45193| |N|(npc:90417) {Dalaran} (37.57,50.17) (28.56,48.35)| |Z|1021 0| |CHOICE|1|
+A A Gift From the Six |QID|45866| |N|(npc:90418) in {Dalaran} (28.46,48.91)| |Z|1021 0| |CHOICE|1| |NPC|90418|
+C A Gift From the Six |QID|45866| |N|Stand in the circle and use the special action button that appears on-screen. (30.42,48.91)| |Z|1014 10| |CHOICE|1|
+T A Gift From the Six |QID|45866| |N|(npc:90418) in {Dalaran} (28.46,48.91)| |Z|1021 0| |CHOICE|1| |NPC|90418|
+
+--Feral
+A Feral: The Folly of Levia Laurence |QID|47059| |N|(npc:115465) in {Dalaran}, You must have 35 Traits unlocked to accept this quest. (28.50,48.93)| |Z|1014 10| |CHOICE|2|
+N (npc:92195) |QID|47059.1| |N|Speak to (npc:92195) and ask About Levia at the Scribe's Sacellum (41.30,37.05)| |Z|1014 10| |NPC|92195| |CHOICE|2|
+N (npc:97331)  |QID|47059.2| |N|Speak to (npc:97331) and ask About Levia at the Militant Mystic (49.31,73.11)| |Z|1014 10| |NPC|97331| |CHOICE|2|
+N (npc:96806) |QID|47059.3| |N|Speak to (npc:96806) and ask About Levia at the Legerdemain Lounge (49.90,37.80) (49.78,40.13)| |Z|1014 10| |NPC|96806| |CHOICE|2|
+N Investigate Levia's Belongings |QID|47059.4| |N|click Levia's Research Journal in {Dalaran} (46.41,40.08)| |Z|1014 10| |CHOICE|2|
+T Fury: The Folly of Levia Laurence |QID|47059| |N|(npc:90418) in {Dalaran} (37.63,50.13) (28.48,48.93)| |Z|1014 10| |NPC|90418| |CHOICE|2|
+A Bargaining with Shadows |QID|46327| |N|(npc:90418) in {Dalaran} (28.48,48.93)| |Z|1014 10| |NPC|90418| |CHOICE|2|
+
+T Bargaining with Shadows |QID|46327| |N|(npc:116714) in {Chamber of the Guardians} (52.77,59.25)| |Z|1014 12| |NPC|116714| |CHOICE|2|
+A The Acolyte Imperiled |QID|45916| |N|(npc:116714) in {Chamber of the Guardians} (52.77,59.25)| |Z|1014 12| |NPC|116714| |CHOICE|2|
+N Investigate Levia's Ritual |QID|45916.1| |N|Investigate Levia's Ritual in {Chamber of the Guardians} (58.07,72.99)| |Z|1014 12| |CHOICE|2|
+N (npc:116714) |QID|45916.2| |N|Kill the enemies that attack and defend (npc:116714) (58.07,72.99)| |Z|1014 12| |NPC|116714| |CHOICE|2|
+T The Acolyte Imperiled |QID|45916| |N|(npc:116714) in {Chamber of the Guardians} (58.07,72.99)| |Z|1014 12| |NPC|116714| |CHOICE|2|
+A Dabbling in the Demonic |QID|45125| |N|(npc:116714) in {Chamber of the Guardians} (58.07,72.99)| |Z|1014 12| |NPC|116714| |CHOICE|2|
+C Dabbling in the Demonic |QID|45125| |N|Activate the correct three runes to help (npc:116714) to complete the spell to stabilize the portal. <br/><br/>Click on Talar, Taam then Dregla (57.59,72.54)| |Z|1014 12| |NPC|116714| |CHOICE|2| 
+T Dabbling in the Demonic |QID|45125| |N|(npc:116714) in {Chamber of the Guardians} (57.70,72.54)| |Z|1014 12| |NPC|116714| |CHOICE|2|
+A Following the Scent |QID|45917| |N|(npc:116714) in {Chamber of the Guardians} (57.70,72.54)| |Z|1014 12| |NPC|116714| |CHOICE|2|
+
+R Demonic Gateway |QID|45127| |N|Use the Demonic Gateway (60.36,75.79)| |Z|1014 12| |F|1015 0| |CHOICE|2| 
+N (npc:118450) |QID|45917.1| |N|Speak to (npc:118450) in {Azsuna} (30.97,51.84)| |Z|1015 0| |NPC|118450| |CHOICE|2|
+N (npc:116189) |QID|45917.2| |N|Follow (npc:118450) to find (npc:116189) (30.13,52.19) (27.68,52.58) (25.78,57.55)| |Z|1015 0| |NPC|118450, 116189| |CHOICE|2|
+T Following the Scent |QID|45917| |N|(npc:116189) in {Azsuna} (25.67,57.75)| |Z|1015 0| |NPC|116189| |CHOICE|2|
+A Unlikely Seduction |QID|45126| |N|(npc:116189) in {Azsuna} (25.67,57.75)| |Z|1015 0| |NPC|116189| |CHOICE|2|
+K (npc:118520) |QID|45126.1| |N|Kill (npc:118520) in {Azsuna} (25.84,57.42)| |Z|1015 0| |NPC|118520| |CHOICE|2|
+T Unlikely Seduction |QID|45126| |N|(npc:116189) in {Azsuna} (25.67,57.75)| |Z|1015 0| |NPC|116189| |CHOICE|2|
+A Fel-Crossed Lovers |QID|45127| |N|(npc:116189) in {Azsuna} (25.67,57.75)| |Z|1015 0| |NPC|116189| |CHOICE|2|
+
+R Dalaran |QID|45861| |N|Travel to {Dalaran} (28.48,48.93)| |Z|1014 10| |CHOICE|2|
+T Fel-Crossed Lovers |QID|45127| |N|(npc:90418) in {Dalaran} (28.48,48.93)| |Z|1014 10| |NPC|90418| |CHOICE|2|
+A A Gift From the Six |QID|45861| |N|(npc:90418) in {Dalaran} (28.48,48.93)| |Z|1014 10| |NPC|90418| |CHOICE|2|
+N Receive the Council's Gift |QID|45861.1| |N|Stand in the circle and use the special action button that appears on-screen. (30.42,48.93)| |Z|1014 10| |CHOICE|2|
+T A Gift From the Six |QID|45861| |N|(npc:90418) in {Dalaran} (28.48,48.93)| |Z|1014 10| |NPC|90418| |CHOICE|2|
+
+--Guardian
+A Guardian: Aid of the Illidari |QID|47023| |N|(npc:90431) in {Dalaran}, You must have 35 Traits unlocked to A this quest. (28.51,49.48)| |Z|1014 10| |NPC|90431| |CHOICE|3|
+C Guardian: Aid of the Illidari |QID|47023| |N|Find (npc:116880) {Dalaran} (49.09,26.10)| |Z|1014 10| |NPC|116880| |CHOICE|3|
+T Guardian: Aid of the Illidari |QID|47023| |N|(npc:116880) in {Dalaran} (52.03,19.58)| |Z|1014 10| |CHOICE|3| |NPC|116880|
+A Gathering Information |QID|45413| |N|(npc:116880) in {Dalaran} (52.03,19.58)| |Z|1014 10| |CHOICE|3| |NPC|116880|
+
+N Investigate the bank employees |QID|45413.1| |N|Speak to the bank employees (npc:96817),  (npc:96818) and (npc:96819) (53.17,15.26)| |Z|1014 10| |CHOICE|3| |NPC|96817, 96818, 96819|
+N Identify the stolen item |QID|45413.2| |N|Speak to (npc:113812) to Identify the stolen item (53.78,20.29)| |Z|1014 10| |CHOICE|3| |NPC|113812|
+T Gathering Information |QID|45413| |N|(npc:116880) in {Dalaran} (52.04,19.63)| |Z|1014 10| |CHOICE|3| |NPC|116880|
+A Confirming Suspicions |QID|45414| |N|(npc:116880) in {Dalaran} (52.04,19.63)| |Z|1014 10| |CHOICE|3| |NPC|116880|
+N Search First to Your Aid |QID|45414.1| |N|Enter the building and ait near Olisarra the Kind until the dialogue completes (37.45,36.54) (36.03,37.51)| |Z|1014 10| |CHOICE|3|
+N Search Krasus' Landing |QID|45414.2| |N|Search Krasus' Landing  (74.83,45.52)| |Z|1014 10| |CHOICE|3|
+N (npc:117042) |QID|45414.3| |N|Speak to (npc:117042) in {Dalaran} (74.83,45.52)| |Z|1014 10| |CHOICE|3| |NPC|117042|
+N Witness Velen's vision |QID|45414.4| |N|Speak to (npc:117042) in {Dalaran} (74.83,45.52)| |Z|1014 10| |CHOICE|3| |NPC|117042|
+T Confirming Suspicions |QID|45414| |N|(npc:117042) in {Dalaran} (74.83,45.52)| |Z|1014 10| |CHOICE|3| |NPC|117042|
+A Between Worlds |QID|45415| |N|(npc:117042) in {Dalaran} (74.83,45.52)| |Z|1014 10| |CHOICE|3| |NPC|117042|
+
+R Hellfire Peninsula |QID|45415.1| |N|Take the portal to Hellfire Peninsula (75.10,46.18)| |Z|1014 10| |CHOICE|3|
+N (npc:116880) |QID|45415.2| |N|Speak to (npc:116880) at the {Stair of Destiny} (85.30,50.11)| |Z|465 0| |CHOICE|3| |NPC|116880|
+N Open the portal |QID|45415.3| |N|Kill Doomheralds first and defeat the waves of enemies to open the portal (85.30,50.11)| |Z|465 0| |CHOICE|3|
+T Between Worlds |QID|45415| |N|(npc:116880) at the {Stair of Destiny} (85.30,50.11)| |Z|465 0| |CHOICE|3| |NPC|116880|
+A Dark Omens |QID|45843| |N|(npc:116880) at the {Stair of Destiny} (85.30,50.11)| |Z|465 0| |CHOICE|3| |NPC|116880|
+
+R Dalaran |QID|45863| |N|Travel to {Dalaran} (28.43,48.91)| |Z|1014 10|  |CHOICE|3|
+T Dark Omens |QID|45843| |N|(npc:90418) in {Dalaran} (28.43,48.91)| |Z|1014 10| |CHOICE|3| |NPC|90418|
+A A Gift From the Six |QID|45863| |N|(npc:90418) in {Dalaran} (28.43,48.91)| |Z|1014 10| |CHOICE|3| |NPC|90418|
+C Receive the Council's gift |QID|45863.1| |N|Stand in the circle and use the special action button that appears on-screen (30.43,48.95)| |Z|1014 10| |CHOICE|3|
+T A Gift From the Six |QID|45863| |N|(npc:90418) in {Dalaran} (28.44,48.91)| |Z|1014 10| |CHOICE|3| |NPC|90418|
+
+--Restoration
+A Restoration: The Bradensbrook Investigation |QID|47004| |N|(npc:90418) in {Dalaran}, You must have 35 Traits unlocked to accept this quest.(28.49,48.90)| |Z|1014 10| |CHOICE|4|
+
+R Val'sharah |QID|46079| |N|Travel to {Val'sharah} (42.24,58.97)| |Z|1018 0| |CHOICE|4|
+T Restoration: The Bradensbrook Investigation |QID|47004| |N|(npc:118752) in {Val'sharah} (42.24,58.97)| |Z|1018 0| |NPC|118752| |CHOICE|4|
+A Aid on the Front Lines |QID|46079| |N|(npc:118752) in {Val'sharah} (42.24,58.97)| |Z|1018 0| |NPC|118752| |CHOICE|4|
+C Aid on the Front Lines |QID|46079| |N|Heal (npc:118809) scattered around the field {Val'sharah} (42.29,61.28)| |Z|1018 0| |NPC|118809| |CHOICE|4|
+T Aid on the Front Lines |QID|46079| |N|(npc:118752) in {Val'sharah} (42.28,58.96)| |Z|1018 0| |NPC|118752| |CHOICE|4|
+A Shadowsong's Return |QID|46082| |N|(npc:118752) in {Val'sharah} (42.28,58.96)| |Z|1018 0| |NPC|118752| |CHOICE|4|
+T Shadowsong's Return |QID|46082| |N|(npc:118947) in {Val'sharah} (39.11,58.14)| |Z|1018 0| |NPC|118947| |CHOICE|4|
+A Cutting off the Heads |QID|46106| |N|(npc:118947) in {Val'sharah} (39.11,58.14)| |Z|1018 0| |NPC|118947| |CHOICE|4|
+A Quieting the Spirits |QID|46080| |N|(npc:118947) in {Val'sharah} (39.11,58.14)| |Z|1018 0| |NPC|118947| |CHOICE|4|
+K (npc:118950) |QID|46106.2| |N|Kill (npc:118950) in {Val'sharah} (37.09,58.46)| |Z|1018 0| |NPC|118950| |CHOICE|4|
+K (npc:118951) |QID|46106.3| |N|Kill (npc:118951) in {Val'sharah} (39.22,62.13)| |Z|1018 0| |NPC|118951| |CHOICE|4|
+K (npc:118949) |QID|46106.1| |N|Kill (npc:118949) in {Val'sharah} (36.80,61.33)| |Z|1018 0| |NPC|118949| |CHOICE|4|
+C Quieting the Spirits |QID|46080| |N|Kill any 12 Risen Attackers in {Val'sharah}| |Z|1018 0| |POI| |NPC|118759, 118758, 118754, 118757, 118756| |CHOICE|4|
+T Cutting off the Heads |QID|46106| |N|(npc:118954), next to you| |NPC|118954| |CHOICE|4|
+T Quieting the Spirits |QID|46080| |N|(npc:118954), next to you| |NPC|118954| |CHOICE|4|
+A Source of the Corruption |QID|46107| |N|(npc:118954), next to you| |NPC|118954| |CHOICE|4|
+N Go to Heroes' Rest |QID|46107.1| |N|Follow the path up and Go to Heroes' Rest  (38.63,57.60) (37.83,55.32)| |Z|1018 0| |CHOICE|4|
+N (npc:120156) |QID|46107.2| |N|Release 3 (npc:120156), once clicked these will either be Freed and disappear or get angry and attack you.  (38.42,53.02)| |Z|1018 0| |NPC|120156| |CHOICE|4|
+K (npc:118980) |QID|46107.3| |N|Kill (npc:118980) in {Val'shara} (38.92,51.34)| |Z|1018 0| |NPC|118980| |CHOICE|4|
+T Source of the Corruption |QID|46107| |N|(npc:118954), next to you| |NPC|118954| |CHOICE|4|
+A The Matter Resolved... For Now... |QID|46200| |N|(npc:118954), next to you| |NPC|118954| |CHOICE|4|
+
+R Dalaran |QID|45864| |N|Travel to {Dalaran}  (37.63,50.13)| |Z|1014 10| |CHOICE|4|
+T The Matter Resolved... For Now... |QID|46200| |N|(npc:90418) in {Dalaran} (28.61,48.90)| |Z|1014 10| |NPC|90418| |CHOICE|4|
+A A Gift From the Six |QID|45864| |N|(npc:90418) in {Dalaran} (28.61,48.90)| |Z|1014 10| |NPC|90418| |CHOICE|4|
+C A Gift From the Six |QID|45864| |N|Stand in the circle and use the special action button that appears on-screen (30.43,48.95)| |Z|1014 10| |CHOICE|4|
+T A Gift From the Six |QID|45864| |N|(npc:90418) in {Dalaran} (28.61,48.90)| |Z|1014 10| |NPC|90418| |CHOICE|4|
 ----
+
+A Defending Broken Isles |QID|46247| |N|(npc:116576) in {The Fel Hammer}, this quest is available (44.54,63.53)| |Z|1052 2| |NPC|116576|
+C Defending Broken Isles |QID|46247.1| |N|Defeat a Legion Assault in the Broken Isles, check the Broken Isle map for Legion Assault and complete the World quest for it| |Z|1021 0|
+T Defending Broken Isles |QID|46247| |N|(npc:116576) in {Deliverance Point} (44.54,63.52)| |Z|1021 0| |NPC|116576|
+A Champions of Legionfall |QID|47137| |N|(npc:116576) in (Broken Shore} (44.54,63.52)| |Z|1021 0| |NPC|116576|
+
+R The Dreamgrove |QID|44869| |N|Travel to {The Dreamgrove} (44.50,51.47)| |Z|1077 0|
+A Talon Terror |QID|44869| |N|(npc:106299) in {The Dreamgrove} (44.50,51.47)| |Z|1077 0| |NPC|106299|
+
+R Mount Hyjal |QID|45532| |N|Travel to {Mount Hyjal} (40.94,42.58)| |Z|606 0|
+T Talon Terror |QID|44869| |N|(npc:115802) in {Mount Hyjal} (40.94,42.58)| |Z|606 0| |NPC|115802|
+A Attack on the Roost |QID|44877| |N|(npc:115802) in {Mount Hyjal} (40.94,42.58)| |Z|606 0| |NPC|115802|
+A Mother's Orders |QID|45532| |N|(npc:115802) in {Mount Hyjal} (40.94,42.58)| |Z|606 0| |NPC|115802|
+K (npc:116624) |QID|45532.1| |N|Kill (npc:116624) in {Mount Hyjal} (40.65,43.82)| |Z|606 0| |NPC|116624|
+C Attack on the Roost |QID|44877.1| |N|Kill 15 any Legion Invaders  {Mount Hyjal} (41.25,44.21)| |Z|606 0|
+T Attack on the Roost |QID|44877| |N|(npc:115802), next to you| |NPC|115802|
+T Mother's Orders |QID|45532| |N|(npc:115802), next to you| |NPC|115802|
+A Aviana's Grace |QID|44888| |N|(npc:115802), next to you| |NPC|115802|
+N Place the Offering to Aviana |QID|44888.1| |N|Click Offering to Aviana (43.83,46.06) (44.32,47.94)| |Z|606 0|
+N (npc:115749) |QID|44888.2| |N|Speak to (npc:115749) and watch the dialogue (44.32,47.94)| |Z|606 0| |NPC|115749|
+T Aviana's Grace |QID|44888| |N|(npc:115749) in {Mount Hyjal} (44.32,47.96)| |Z|606 0| |NPC|115749|
+A Lone Wolf |QID|44921| |N|(npc:115749) in {Mount Hyjal} (44.32,47.96)| |Z|606 0| |NPC|115749|
+
+R Moonglade |QID|45528| |N|Travel to {Moonglade} (68.18,54.80)| |Z|241 0|
+T Lone Wolf |QID|44921| |N|(npc:106299) in {Moonglade} (68.18,54.80)| |Z|241 0| |NPC|106299|
+A The Befouled Barrows |QID|45528| |N|(npc:106299) in {Moonglade} (68.18,54.80)| |Z|241 0| |NPC|106299|
+A Let Sleeping Dogs Lie |QID|45498| |N|(npc:106299) in {Moonglade} (68.18,54.80)| |Z|241 0| |NPC|106299|
+C The Befouled Barrows |QID|45528.1| |N|Close the 3 legion portals in each waypoint (68.61,52.44) (65.47,47.20)  (67.14,44.56) (69.13,45.18)| |Z|241 0|
+N (npc:115750) |QID|45498.1| |N|Awake (npc:115750) in {Moonglade} (68.57,46.22) (69.53,47.94)| |Z|241 0| |NPC|115750|
+T The Befouled Barrows |QID|45528| |N|(npc:106299), next to you| |NPC|106299|
+T Let Sleeping Dogs Lie |QID|45498| |N|(npc:106299), next to you| |NPC|106299|
+A The Wolf's Tale |QID|46924| |N|(npc:106299), next to you| |NPC|106299|
+N (npc:115750) |QID|46924.1| |N|Find and speak to (npc:115750) in  {Moonglade} (66.76,47.20) (68.07,48.84) (68.06,55.18)| |Z|241 0| |NPC|115750|
+T The Wolf's Tale |QID|46924| |N|(npc:115750) in {Moonglade} (68.09,55.27)| |Z|241 0| |NPC|115750|
+A Nature's Advance |QID|45426| |N|(npc:115750) in {Moonglade} (68.09,55.27)| |Z|241 0| |NPC|115750|
+
+R The Dreamgrove |QID|46674| |N|Travel to {The Dreamgrove} (44.65,51.95)| |Z|1077 0| 
+T Nature's Advance |QID|45426| |N|(npc:101195) in {The Dreamgrove} (44.65,51.95)| |Z|1077 0| |NPC|101195|
+A The Preservation of Nature |QID|46674| |N|(npc:101195) in {The Dreamgrove} (44.65,51.95)| |Z|1077 0| |NPC|101195|
+
+R Broken Shore |QID|46676| |N|Travel to {Broken Shore} (43.57,58.30)| |Z|1021 0|
+T The Preservation of Nature |QID|46674| |N|(npc:106299) in {Broken Shore} (43.57,58.30)| |Z|1021 0| |NPC|106299|
+A Nature's Touch |QID|46676| |N|(npc:106299) in {Broken Shore} (43.57,58.30)| |Z|1021 0| |NPC|106299|
+A To Track a Demon |QID|46675| |N|(npc:106299) in {Broken Shore} (43.57,58.30)| |Z|1021 0| |NPC|106299|
+N Heal Injured Druids |QID|46676.1| |N|Heal 5 Injured Druids {Broken Shore}<br/><br/>You can use your own healing skills to heal them. (40.93,53.88) (38.15,44.76)| |Z|1021 0|
+C To Track a Demon |QID|46675.1| |N|Kill (npc:120031) or (npc:116518) and collect 3 Impsorrow Missives {Broken Shore} (38.15,44.76)| |Z|1021 0| |NPC|120031, 116518|
+T Nature's Touch |QID|46676| |N|(npc:106299), next to you| |NPC|106299|
+T To Track a Demon |QID|46675| |N|(npc:106299), next to you| |NPC|106299|
+A Prick of Thistle |QID|46677| |N|(npc:106299), next to you| |NPC|106299|
+K (npc:120095) |QID|46677.1| |N|Kill (npc:120095) in {Broken Shore} (37.38,45.78) (32.25,32.29)| |Z|1021 0| |NPC|120095|
+T Prick of Thistle |QID|46677| |N|(npc:106299), next to you| |NPC|106299|
+A Grovebound |QID|45425| |N|(npc:106299), next to you| |NPC|106299|
+
+R The Dreamgrove |QID|46044| |N|Travel to {The Dreamgrove} (44.65,51.95)| |Z|1077 0|
+T Grovebound |QID|45425| |N|(npc:101195) in {The Dreamgrove} (44.65,51.95)| |Z|1077 0| |NPC|101195|
+A Champion: Thisalee Crow |QID|46044| |N|(npc:106299) in {The Dreamgrove} (44.48,51.51)| |Z|1077 0| |NPC|106299| |E| 
+
+R Broken Shore |TID|47137| |N|Travel to {Broken Shore} (44.54,63.52)| |Z|1021 0| 
+T Champions of Legionfall |QID|47137| |N|(npc:116576) in {Broken Shore} (44.54,63.52)| |Z|1021 0| |NPC|116576|
+
+A Shard Times |QID|46251| |N|(npc:116302) in {Broken Shore} (44.74,63.27)| |Z|1021 0| |NPC|116302|
+C Shard Times |QID|46251.1| |N|Collect 2500 (cur:1226). These can be obtained by looting rares, treasures, and completing world quests. (44.74,63.27)| |Z|1021 0|
+T Shard Times |QID|46251| |N|(npc:116576) in {Broken Shore} (44.54,63.52)| |Z|1021 0| |NPC|116576|
 
 C The Emerald Nightmare |QID|42432| |N|Enter the Emerald Nightmare raid on any difficulty and defeat (npc:103769)| |NPC|103769|
 T The Emerald Nightmare |QID|42432| |N|(npc:101195) in {The Dreamgrove} (44.66,51.97)| |Z|1077 0| |NPC|101195| |POI|

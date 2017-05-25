@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("AchievementsA") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\General\\Going Down?",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General\\Going Down?",{
 condition_end="achieved(964)",
 description="This guide will walk you through falling 65 yards without dying.",
 },[[
@@ -14,7 +14,7 @@ Ride up to the Elevator to the Terrace of Light and jump off either the right or
 step
 Congratulations, you have earned the Going Down? achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\General\\Higher Learning",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General\\Higher Learning",{
 condition_end="achieved(1956)",
 description="This guide will walk you through reading the volumes of 'The Schools of Arcane Magic' found in Dalaran.",
 },[[
@@ -69,7 +69,7 @@ step
 Looks like you still need more education! _Click here_ to start the guide over |confirm |next "RestartHigherLearning" |only if not achieved(1956)
 Congratulations, you have earned the Higher Learning achievement! |only if achieved(1956)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\General\\It's Happy Hour Somewhere",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General\\It's Happy Hour Somewhere",{
 condition_end="achieved(1833)",
 description="This guide will walk you through drinking 25 different types of beverages.",
 },[[
@@ -138,7 +138,7 @@ step "tracker"
 Drink #25# different types of beverages |achieve 1833 |only if not achieved(1833)
 Congratulations, you have earned the It's Happy Hour Somewhere Achievement! |only if achieved(1833)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\General\\To All The Squirrels (Loved, Shared, Cared)/Pest Control",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General\\To All The Squirrels (Loved, Shared, Cared)/Pest Control",{
 condition_end="achieved(5548)",
 achieveid={1206,2557,2556},
 description="This guide will walk you through showing the critters of Azeroth how much you /love them and slaying the pests.",
@@ -382,7 +382,7 @@ You've missed some squirrels! _Click here_ to start over |confirm |next "start" 
 Congratulations, you have earned the Pest Control achievement! |only if achieved(2556)
 You've missed some pests! _Click here_ to start over |confirm |next "start" |only if not achieved(2556)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\General\\Shave and a Haircut",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General\\Shave and a Haircut",{
 condition_end="achieved(545)",
 description="This guide will walk you through visiting a Barber Shop and get your hair cut.",
 },[[
@@ -394,7 +394,7 @@ Change your hair style or hair color then click "Okay." |achieve 545
 step
 Congratulations, you have earned the Shave and a Haircut achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\General\\Tastes Like Chicken",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General\\Tastes Like Chicken",{
 condition_end="achieved(1832)",
 description="This guide will walk you through sampling 50 different kinds of Azeroth's delectable dishes.",
 },[[
@@ -529,7 +529,7 @@ step "tracker"
 Sample #50# different kinds of Azeroth's delectable dishes |achieve 1832 |only if not achieved(1832)
 Congratulations, you have earned the Tastes Like Chicken Achievement! |only if achieved(1832)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\General\\Well Read",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General\\Well Read",{
 condition_end="achieved(1244)",
 description="This guide will walk you through reading the scattered books of Azeroth.",
 },[[
@@ -663,7 +663,7 @@ click The Betrayer Ascendant##2530 |achieve 1244/37 |goto Darnassus 62.0,74.6
 step
 Congratulations, you have earned the Well Read Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\General\\You'll Feel Right as Rain",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General\\You'll Feel Right as Rain",{
 condition_end="achieved(5779)",
 description="This guide will walk you through feeling 1000% better by eating Chocolate Cookies.",
 },[[
@@ -700,7 +700,7 @@ step
 label "end"
 Congratulations, you have earned the You'll Feel Right as Rain achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Exploration\\Eastern Kingdoms\\Explore Eastern Kingdoms",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration\\Eastern Kingdoms\\Explore Eastern Kingdoms",{
 condition_end="achieved(42) and achieved(4868)",
 achieveid={4825,4864,4866,775,761,765,766,775,627,778,772,779,780,768,859,774,769,858,781,4995,782,773,802,841,777,770,771,868,776},
 description="Explore the regions of Eastern Kingdoms.",
@@ -1702,7 +1702,7 @@ Congratulations, you have _earned_ the _World Explorer_ Achievement! |only if ac
 You _have not_ explored all of Eastern Kingdoms yet |only if not achieved(42)
 |confirm |next "start" |only if not achieved(42)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Exploration\\Kalimdor\\Explore Kalimdor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration\\Kalimdor\\Explore Kalimdor",{
 condition_end="achieved(43) and achieved(4868)",
 achieveid={46,4868,4863,4865,728,736,842,860,750,857,4996,844,861,845,846,847,848,850,849,851,852,853,854,855,856},
 description="Explore the regions of Kalimdor.",
@@ -2544,7 +2544,7 @@ Congratulations, you have _earned_ the _World Explorer_ Achievement! |only if ac
 You _have not_ explored all of Kalimdor yet |only if not achieved(43)
 confirm |next "start" |only if not achieved(43)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Collections\\Represent",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Collections\\Represent",{
 condition_end="achieved(5755)",
 achieveid={621,1020,1021},
 description="Equip a tabard.",

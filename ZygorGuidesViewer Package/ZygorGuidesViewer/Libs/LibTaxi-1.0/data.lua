@@ -30,7 +30,7 @@ data.taxipoints = {
 		['Darkshore']={
 					{name="Grove of the Ancients",faction="A",npc="Delanea",npcid=33253,x=44.4,y=75.5},
 					{name="Lor'danel",faction="A",npc="Teldira Moonfeather",npcid=3841,x=51.7,y=17.6},
-					{name="Darkshore Cat 1",comment="name needs to be like that to connect a taxi tag. extitle can not be title b/c then only title gets put on the Pointer",extitle="Lor'danel",faction="A",npc="Nightsaber Rider",npcid=33359,x=52.2,y=22.3,taxioperator="blackcat"},
+					{name="Darkshore Cat 1",extitle="Lor'danel",faction="A",npc="Nightsaber Rider",npcid=33359,x=52.2,y=22.3,taxioperator="blackcat"}, -- name needs to be like that to connect a taxi tag. extitle can not be title b/c then only title gets put on the Pointer
 					{name="Darkshore Cat 2",extitle="Lor'danel",faction="A",npc="Nightsaber Rider",npcid=33359,x=51.0,y=22.7,taxioperator="blackcat"},
 					{name="Darkshore Cat 3",extitle="Ruins of Mathystra",faction="A",npc="Nightsaber Rider",npcid=33359,x=58.6,y=20.0,taxioperator="blackcat"},
 					{name="Darkshore Cat 4",extitle="Shatterspear Vale",faction="A",npc="Nightsaber Rider",npcid=33359,x=69.1,y=18.9,taxioperator="blackcat"},
@@ -55,7 +55,7 @@ data.taxipoints = {
 		['Dustwallow Marsh']={
 					{name="Brackenwall Village",faction="H",npc="Shardi",npcid=11899,x=35.6,y=31.8},
 					{name="Mudsprocket",faction="B",npc="Dyslix Silvergrub",npcid=40358,x=42.8,y=72.4},
-					{name="Theramore",comment="achievemissing: Only include this flight point if an achievement is *missing*. Used because this flight point disappears when Theramore is destroyed.",faction="A",npc="Baldruc",npcid=4321,x=67.4,y=51.4,achievemissing=7523}
+					{name="Theramore",faction="A",npc="Baldruc",npcid=4321,x=67.4,y=51.4,cond_fun=function() return not select(13,GetAchievementInfo(7523)) end}, -- only available if the player did not yet see Theramore destroyed.
 		},
 		['Felwood']={
 					{name="Emerald Sanctuary",faction="B",npc="Gorrim",npcid=22931,x=51.5,y=80.9},
@@ -90,7 +90,7 @@ data.taxipoints = {
 					{name="Bloodhoof Village",faction="H",npc="Tak",npcid=40809,x=47.4,y=58.6},
 		},
 		['Northern Barrens']={
-						{name="Nozzlepot's Outpost",faction="H",npc="Gazrix",npcid=40558,x=62.31,y=17.12},
+					{name="Nozzlepot's Outpost",faction="H",npc="Gazrix",npcid=40558,x=62.31,y=17.12},
 					{name="Ratchet",faction="B",npc="Bragok",npcid=16227,x=69.1,y=70.7,factionid=470,factionstanding=3},
 					{name="The Crossroads",faction="H",npc="Devrak",npcid=3615,x=48.6,y=58.6},
 					{name="The Mor'Shan Ramparts",faction="H",npc="Gort Goreflight",npcid=34927,x=41.98,y=15.87},
@@ -416,7 +416,7 @@ data.taxipoints = {
 					{name="Moa'ki",faction="B",npc="Cid Flounderfix",npcid=28196,x=48.51,y=74.39},
 		},
 		['Gilneas']={
-					{name="Forsaken Forward Command",comment="enabled after quest 27290, disabled after quest 27405, just assume we dont know it.",quest=999999,faction="H",npc="Bat Handler Doomair",npcid=45479,x=57.25,y=17.96},
+					{name="Forsaken Forward Command",quest=999999,faction="H",npc="Bat Handler Doomair",npcid=45479,x=57.25,y=17.96},  -- enabled after quest 27290, disabled after quest 27405 - quest set to 999999 to just assume we dont know it, ever.
 		},
 		['Grizzly Hills']={
 					{name="Amberpine Lodge",faction="A",npc="Vana Grey",npcid=26880,x=31.3,y=59.1},
@@ -478,8 +478,8 @@ data.taxipoints = {
 					{name="Dawn's Blossom",faction="B",npc="Keg Runner Lee",npcid=59186,x=47.0,y=46.2},
 					{name="The Arboretum",faction="B",npc="Injar'i Lakebloom",npcid=59732,x=57.0,y=44.0},
 					{name="Jade Temple Grounds",faction="B",npc="Ginsa Arroweye",npcid=59727,x=54.6,y=61.9},
-					{name="Serpent's Overlook",faction="A",npc="Sky Dancer Ji",quest=31362,npcid=64310,x=43.1,y=68.5,available=function() return IsSpellKnown(115913) end},
-					{name="Serpent's Overlook",faction="H",npc="Sky Dancer Ji",quest=30485,npcid=64310,x=43.1,y=68.5,available=function() return IsSpellKnown(115913) end},
+					{name="Serpent's Overlook",faction="A",npc="Sky Dancer Ji",quest=31362,npcid=64310,x=43.1,y=68.5,cond_fun=function() return IsSpellKnown(115913) end},
+					{name="Serpent's Overlook",faction="H",npc="Sky Dancer Ji",quest=30485,npcid=64310,x=43.1,y=68.5,cond_fun=function() return IsSpellKnown(115913) end},
 					{name="Paw'Don Village",faction="A",npc="Wing Kyo",npcid=487,x=46.0,y=85.1},
 					{name="Pearlfin Village",faction="A",npc="Ut-Nam",npcid=56737,x=58.0,y=82.5},
 					{name="Honeydew Village",faction="H",npc="Wing Hya",npcid=691,x=28.1,y=15.6},
@@ -718,6 +718,8 @@ data.taxipoints = {
 
 -- NOTE: If two taxis have the same name but different factions then a factions field must be added in here. See Serpent's Spire.
 -- If not then one of the taxis will be marked with the wrong faction so will not properly get neighbors that it should.
+
+-- This data is generated automatically when performing a Taxi Connections Dump. All neighbor location comments will be regenerated, any other comments will be lost. Place comments in a comment="..." field.
 
 data.flightcost = {
 	[1]={

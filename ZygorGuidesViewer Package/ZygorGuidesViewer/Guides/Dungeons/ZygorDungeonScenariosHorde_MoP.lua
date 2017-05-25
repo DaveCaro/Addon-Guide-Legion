@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("ScenarioHMOP") then return end
 ZygorGuidesViewer.GuideMenuTier = "MOP"
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Pandaria Scenarios\\Unga Ingoo",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\Unga Ingoo",{
 mapid=882,
 achieveid={7249},
 author="support@zygorguides.com",
@@ -32,7 +32,7 @@ step
 talk Brewmaster Bo##62491
 turnin The Funky Monkey Brew##31058 |goto 50.2,62.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Pandaria Scenarios\\Arena of Annihilation",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\Arena of Annihilation",{
 mapid=899,
 achieveid={7271},
 author="support@zygorguides.com",
@@ -88,7 +88,7 @@ step
 talk Wodin the Troll-Servant##63314
 turnin The Arena of Annihilation##31207 |goto 50.1,18.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Pandaria Scenarios\\A Brewing Storm",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\A Brewing Storm",{
 mapid=878,
 achieveid={7252,8310},
 author="support@zygorguides.com",
@@ -125,7 +125,7 @@ step
 talk Brewmaster Blanche##58740
 turnin Blanche's Boomer Brew##30567 |goto A Brewing Storm 30.3,62.3
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Pandaria Scenarios\\Brewmoon Festival",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\Brewmoon Festival",{
 mapid=884,
 achieveid={6923},
 author="support@zygorguides.com",
@@ -180,7 +180,7 @@ step
 talk Brewmaster Boof##64901
 turnin The Kun-Lai Kicker##31611 |goto 42.7,79.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Pandaria Scenarios\\Theramore's Fall",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\Theramore's Fall",{
 mapid=906,
 achieveid={7523},
 },[[
@@ -237,7 +237,7 @@ talk Thalen Songweaver##58816
 Unshackle him.
 |confirm
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Pandaria Scenarios\\Crypt of Forgotten Kings",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\Crypt of Forgotten Kings",{
 mapid=900,
 achieveid={7522,8311},
 description="This guide will walk you through the Crypt of Forgotten Kings scenarios.",
@@ -277,7 +277,7 @@ scenariogoal 19225
 During the fight, he will use an ability called _Deathforce_ which will pull you to him. Run out of the red circle that surrounds him as fast as possibly to avoid instant death.
 He will create red clouds on the ground that move around during the fight which should also be avoided.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Pandaria Scenarios\\Greenstone Village",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\Greenstone Village",{
 mapid=880,
 achieveid={7265},
 description="This guide will walk you through the Greenstone Village scenario.",
@@ -327,7 +327,7 @@ step
 kill Vengeful Hui##61156+ |goto 52.4,23.5
 scenariogoal 19205
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Pandaria Scenarios\\A Little Patience",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\A Little Patience",{
 mapid=912,
 achieveid={7988},
 description="This guide will walk you through completing the A Little Patience scenario.",
@@ -363,7 +363,7 @@ scenariostage 2
 step
 Congratulations, you have completed _A Little Patience_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Pandaria Scenarios\\Assault on Zan'vess",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\Assault on Zan'vess",{
 mapid=883,
 achieveid={8016},
 },[[
@@ -406,7 +406,7 @@ scenariostage 4
 step
 Congratulations, you've completed the _Assault on Zan'vess_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Pandaria Scenarios\\Domination Point",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\Domination Point",{
 mapid=920,
 achieveid={8013},
 },[[
@@ -490,7 +490,7 @@ scenariostage 7
 step
 Congratulations, you have completed the _Domination Point_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Pandaria Scenarios\\Dagger in the Dark",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\Dagger in the Dark",{
 mapid=914,
 achieveid={8010},
 },[[
@@ -552,7 +552,7 @@ scenariostage 8
 step
 Congratulations, you have completed the _Dagger in the Dark_ scenario!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Pandaria Scenarios\\Blood in the Snow",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\Blood in the Snow",{
 mapid=939,
 achieveid={8316,8312},
 },[[
@@ -584,7 +584,7 @@ scenariostage 6 |override
 step
 Congratulations, you have completed the _Blood in the Snow_ scenario!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Pandaria Scenarios\\Dark Heart of Pandaria",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\Dark Heart of Pandaria",{
 mapid=937,
 achieveid={8317,8318},
 },[[
@@ -617,7 +617,7 @@ scenariostage 5 |override
 step
 Congratulations, you have completed the _Dark Heart of Pandaria_ scenario!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Pandaria Scenarios\\The Secrets of Ragefire",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\The Secrets of Ragefire",{
 mapid=938,
 achieveid={8294,8327},
 },[[
@@ -670,7 +670,7 @@ scenariostage 4 |override
 step
 Congratulations, you have completed the _Secrets of Ragefire_ scenario!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Pandaria Scenarios\\Battle on the High Seas",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Scenarios\\Battle on the High Seas",{
 mapid=938,
 achieveid={8315,8366},
 },[[

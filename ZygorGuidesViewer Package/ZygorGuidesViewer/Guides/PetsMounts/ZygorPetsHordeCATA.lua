@@ -4,129 +4,236 @@ if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("PetsHCATA") then return end
 ZygorGuidesViewer.GuideMenuTier = "CAT"
 ZGV.CommonPets=true
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Mountain Cottontail",{
-pet=391,
-description="This guide will walk you through obtaining\nthe Critter pet: Mountain Cottontail",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Magical Crawdad",{
+pet=132,
+description="This guide will walk you through obtaining the Aquatic pet: Magical Crawdad",
+},[[
+#include "H_Mr._Pinchy's_Magical_Crawdad_Box"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Pengu",{
+pet=198,
+description="This guide will walk you through obtaining the Aquatic pet: Pengu",
+},[[
+step
+Completing all normal quests should make you revered with the Kalu'ak before having to do daily quests.
+confirm
+#include "Kaluak_Rep"
+step
+#include dailies_rep_mount,rep="The Kalu'ak"
+step
+talk Sairuk##32763
+buy 1 Nurtured Penguin Egg##44723 |goto Dragonblight 48.6,75.6
+step
+learnpet Pengu##32595 |use Nurtured Penguin Egg##44723
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Sea Pony",{
+pet=340,
+description="This guide will walk you through obtaining the Aquatic pet: Sea Pony",
+},[[
+step
+This pet requires Darkmoon Island to be accessible.
+confirm
+step
+Follow the Path to the Darkmoon Faire |goto Darkmoon Island,56.0,52.9,1 |walk
+This pet can be caught by fishing the waters around Darkmoon Island.
+collect Sea Pony##73953
+step
+learnpet Sea Pony##55386 |use Sea Pony##73953
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Shore Crawler",{
+pet=629,
+description="This guide will walk you through obtaining the Aquatic pet: Shore Crawler",
+},[[
+step
+talk Matty##63086
+Tell him you're interested in catching some rare pets.
+learnpet Shore Crawler##63097 |goto Orgrimmar 37.6,79.1
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Small Frog",{
+pet=419,
+description="This guide will walk you through obtaining the Aquatic pet: Small Frog",
 },[[
 step
 Challenge one to a pet battle and capture it
-|tip The Mountain Cottontails in this area are level 4-5.
-learnpet Mountain Cottontail##61167 |goto Redridge Mountains 42.1,68.8
+|tip The Small Frog is level 3.
+learnpet Small Frog##61071 |goto Northern Barrens 36.2,44.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Snowshoe Rabbit",{
-pet=72,
-description="This guide will walk you through obtaining the Critter pet: Snowshoe Rabbit\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Speedy",{
+pet=125,
+description="This guide will walk you through obtaining the Aquatic pet: Speedy",
 },[[
 step
-#include "auctioneer"
-buy 1 Rabbit Crate (Snowshoe)##8497
-|tip This pet must be bought with an Alliance character or through the Auction House
+You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
+If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+For the Shattrath Daily set, click here. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+confirm
 step
-learnpet Snowshoe Rabbit##7560 |use Rabbit Crate (Snowshoe)##8497
+collect 1 Turtle Box##23002
+|tip Back to the Orphanage (Shattrath)
+step
+learnpet Speedy##16547 |use Turtle Box##23002 |tip Back to the Orphanage (Shattrath)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Squirrel",{
-pet=379,
-description="This guide will walk you through obtaining\nthe Critter pet: Squirrel",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Strand Crawler",{
+pet=211,
+description="This guide will walk you through obtaining the Aquatic pet: Strand Crawler",
 },[[
 step
-Challenge one to a pet battle and capture it.
-|tip The Squirrel is level 1.
-learnpet Squirrel##61081 |goto Elwynn Forest 46.7,71.4
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Alliance Balloon",{
-pet=331,
-description="This guide will walk you through obtaining\nthe Flying pet:  Alliance Balloon",
-},[[
+label "select"
+Click here to do the Undercity Daily Quests. |next "undfish" |confirm
+Click here to do the Dalaran Daily Quests. |next "dalfish" |confirm
+|tip You must complete the Fishing Daily quests in Undercity or Dalaran to obtain this pet
 step
-Horde can not earn this pet because it is gathered from an Alliance only quest.
-learnpet Alliance Balloon##54539 |use Alliance Balloon##72042
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Ammen Vale Lashling",{
-pet=212,
-description="This guide will walk you through obtaining the Elemental pet: Ammen Vale Lashling.\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
-},[[
+label "dalfish"
+In order to earn this Achievement, you will have to complete 5 daily quests.
+|tip You will only be able to accept one per day, so this may take longer than 5 days to achieve.
+Click here to proceed |confirm
 step
-#include "auctioneer"
-buy 1 Ammen Vale Lashling##44984
-|tip This pet must be bought with an Alliance character or through the Auction House
+Below is a list of the 5 daily quests you will need to complete.
+The Ghostfish |achieve 3217/1
+Jewel Of The Sewers |achieve 3217/2
+Dangerously Delicious |achieve 3217/3
+Blood is Thicker |achieve 3217/4
+Disarmed! |achieve 3217/5
+Click to proceed |confirm
 step
-learnpet Ammen Vale Lashling##33205 |use Ammen Vale Lashling##44984
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Argent Squire",{
-pet=214,
-description="This guide will walk you through obtaining\nthe Humanoid pet: Argent Squire",
-},[[
+talk Marcia Chase##28742
+You will only be able to accept, and turn in, 1 of these 5 daily quests per day:
+accept Blood Is Thicker##13833 |goto Dalaran,53.1,64.9 |or
+accept Dangerously Delicious##13834 |goto Dalaran,53.1,64.9 |or
+accept Jewel Of The Sewers##13832 |goto Dalaran,53.1,64.9 |or
+accept Disarmed!##13836 |goto Dalaran,53.1,64.9 |or
+accept The Ghostfish##13830 |goto Dalaran,53.1,64.9 |or
 step
-This pet is only available to Alliance Characters.
-learnpet Argent Squire##33238
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Argent Gruntling",{
-pet=216,
-description="This guide will walk you through obtaining\nthe Humanoid pet: Argent Gruntling",
-},[[
+kill Wooly Mammoth##24614, Mammoth Calf##24613, Wooly Mammoth Bull##25743
+collect the Animal Blood buff |havebuff Ability_Seal |q 13833 |goto Borean Tundra,54.6,41.8
+only if havequest (13833)
 step
-Proceeding to proper section |next |only if default
-Proceeding to proper section |next dailies |only if completedq(13838)
+Walk into the water here to create a pool of blood
+Fish in the pool of blood
+collect 5 Bloodtooth Frenzy |q 13833/1 |goto 53.7,42.9
+only if havequest (13833)
 step
-talk Helidan Lightwing##33849
-fpath Argent Tournament Grounds |goto Icecrown,72.6,22.6
+Fish in this big lake
+collect 10 Terrorfish |q 13834/1 |goto Wintergrasp,79.9,41.8
+only if havequest (13834)
 step
-talk Justicar Mariel Trueheart##33817
-accept The Argent Tournament##13668 |goto Icecrown,69.7,22.9
+The entrance to the Dalaran sewers starts here |goto Dalaran,60.2,47.7 < 5 |c |q 13832 |walk
+only if havequest (13832)
 step
-talk Magister Edien Sunhollow##33542
-turnin The Argent Tournament##13668 |goto 76.3,24.4
-accept Mastery Of Melee##13829 |goto 76.3,24.4
+Fish in the water in the Dalaran sewers
+collect 1 Corroded Jewelry |q 13832/1 |goto 44.4,66.2
+only if havequest (13832)
 step
-talk Amariel Sunsworn##33658
-accept Mastery Of The Charge##13839 |goto 76.3,24.4
+Leave the Dalaran sewers |goto Dalaran,60.2,47.7 < 5 |c |q 13832 |walk
+only if havequest (13832)
 step
-talk Galathia Brightdawn##33659
-accept Mastery Of The Shield-Breaker##13838 |goto 76.2,24.4
+Stand on the this circular platform and fish in the water here
+collect Bloated Slippery Eel##45328 |n
+Click the Bloated Slippery Eel in your bags |use Bloated Slippery Eel##45328
+collect 1 Severed Arm |q 13836/1 |goto Dalaran,64.8,60.8
+only if havequest (13836)
 step
-Equip the Horde Lance in your bags |use Horde Lance##46070
-Click to mount the Stabled Sunreaver Hawkstrider |invehicle |q 13829 |goto 75.6,23.7
+Fish in the water here
+collect 1 Phantom Ghostfish##45902 |n
+Click the Phantom Ghostfish in your bags to eat it |use Phantom Ghostfish##45902
+Discover the Ghostfish mystery |q 13830/1 |goto Sholazar Basin,49.3,61.8
+only if havequest (13830)
 step
-talk Jeran Lockwood##33973
-Listen to Jeran Lockwood's advice |q 13829/1 |goto 72.5,19.3
+talk Marcia Chase##28742
+You will only be able to accept, and turn in, 1 of these 5 daily quests per day:
+turnin Blood Is Thicker##13833 |goto Dalaran,53.1,64.9
+turnin Dangerously Delicious##13834 |goto Dalaran,53.1,64.9
+turnin Jewel Of The Sewers##13832 |goto Dalaran,53.1,64.9
+turnin The Ghostfish##13830 |goto Dalaran,53.1,64.9
+next "use2"
 step
-talk Rugan Steelbelly##33972
-Listen to Rugan Steelbelly's advice |q 13839/1 |goto 72.7,18.9
+talk Olisarra the Kind##28706
+turnin Disarmed!##13836 |goto Dalaran,36.6,37.3
+next "use2"
 step
-talk Valis Windchaser##33974
-Listen to Valis Windchaser's advice |q 13838/1 |goto 73.2,19.2
+label "use2"
+use Bag of Fishing Treasures##46007
+collect 1 Strand Crawler##44983 |next "use"
+Click here to go to the beginning of this daily guide. |next "select" |confirm
 step
-Target a Ranged Target from a distance
-Use Shield-Breaker ability on Ranged Target to bring it's shields down
-Use Shield-Breaker ability on Ranged Target twice, while it's shields are down |q 13838/2 |goto 73.1,19.0
+label "undfish"
+In order to earn the achievement Fish or Cut Bait: Darnassus, you will need to complete 5 daily quests from the NPC Armand Cromwell.
+You will only be able to accept 1 of the 5 quests per day.
+Click here to proceed. |confirm
 step
-Target a Charge Target from a distance
-Use Shield-Breaker ability until you notice the targets Defend is gone
-Use your Charge ability on the Charge Target 2 times |q 13839/2 |goto 72.9,18.8
+Below are the following quests you will have to complete in order to earn the achievement:
+Fish Head |achieve 5850/1
+Tadpole Terror |achieve 5850/2
+Like Pike? |achieve 5850/3
+Time for Slime |achieve 5850/4
+Moat Monster |achieve 5850/5
+Click here to proceed. |confirm
 step
-Target a Melee Target
-If you don't want to kill your mount be sure to keep your Defend ability maxed out at 3 stacks
-Use your Thrust ability to attack the target 5 times |q 13829/2 |goto 72.6,19.7
-step
-Click the red arrow on your hotbar to stop riding the bird mount |outvehicle |q 13829
-step
-talk Magister Edien Sunhollow##33542
-turnin Mastery Of Melee##13829 |goto 76.3,24.4
-step
-talk Amariel Sunsworn##33658
-turnin Mastery Of The Charge##13839 |goto 76.3,24.4
-step
-talk Galathia Brightdawn##33659
-turnin Mastery Of The Shield-Breaker##13838 |goto 76.2,24.4
+Go to Undercity |goto Undercity |noway|c
 step
 label dailies
-collect 1 Argent Gruntling##45022
+talk Armand Cromwell##4573
+You will only be able to accept one of the five quests listed.
+accept Fish Head##29317 |goto Undercity,81.6,30.8 |or
+accept Like Pike?##29320 |goto Undercity,81.6,30.8 |or
+accept Moat Monster!##29361 |goto Undercity,81.6,30.8 |or
+accept Tadpole Terror##29319 |goto Undercity,81.6,30.8 |or
+accept Time for Slime##29322 |goto Undercity,81.6,30.8 |or
 step
-learnpet Argent Gruntling##33239 |use Argent Gruntling##45022
+Use your Fishing skill at the edge of the wooden dock to fish up a Severed Abomination Head |cast Fishing##7620
+collect Severed Abomination Head##69901 |q 29317/1 |goto 81.6,31.5
+only if havequest(29317)
+step
+Click on the graves here to collect a Corpse Worm |goto Undercity,67.3,15.2
+|tip It looks like sparkling dirt in front of a grave stone
+confirm
+only if havequest(29320)
+step
+Use your Fishing skill in the water here to fish up Corpse-Fed Pike |cast Fishing##7620
+collect Corpse-Fed Pike##69909 |q 293320/1 |goto Tirisfal Glades,67.1,50.8
+only if havequest(29320)
+step
+Open your Moat Monster Feeding Kit |use Moat Monster Feeding Kit##69999
+Lure the Moat Monster out with the Alliance Decoy |use Alliance Decoy Ki##69998
+Feed the Moat Monster with your Bloated Frogs! |use Bloated Frog##69995
+Feed Bloated Frogs to the Moat Monster |q 29361/1 |goto Undercity,64.7,16.5
+only if havequest(29361)
+step
+Use your Fishing skill to fish up Giant Flesh-Eating Tadpoles |cast Fishing##7620
+collect 8 Giant Flesh-Eating Tadpole##69905 |q 29319/1 |goto Tirisfal Glades,50.6,56.5
+only if havequest(29319)
+step
+Click on the Squirming Slime Mold in the green, slimy water all over Undercity
+|tip These are a bit hard to see, so, to see them better, you can dive into the water, or turn on your display health bars by pushing [V]
+collect 10 Squirming Slime Mold##69911 |q 29322/1 |goto Undercity,81.1,32.0
+only if havequest(29322)
+step
+talk Armand Cromwell##4573
+turnin Like Pike?##29320 |goto Undercity,81.6,30.8 |or
+turnin Moat Monster!##29361 |goto Undercity,81.6,30.8 |or
+turnin Tadpole Terror##29319 |goto Undercity,81.6,30.8 |or
+turnin Time for Slime##29322 |goto Undercity,81.6,30.8 |or
+only if havequest(29320) or havequest(29361) or havequest(29319) or havequest(29322)
+step
+talk Master Apothecary Faranell##2055 |or
+turnin Fish Head##29317  |goto Undercity,48.4,69.4
+only if havequest(29317)
+step
+Below are the following quests you will have to complete in order to earn the achievement:
+Fish Head |achieve 5850/1
+Tadpole Terror |achieve 5850/2
+Like Pike? |achieve 5850/3
+Time for Slime |achieve 5850/4
+Moat Monster |achieve 5850/5
+Click here to go to the beginning of this dailies guide |next "select" |confirm
+step
+label "use"
+learnpet Strand Crawler##33226 |use Strand Crawler##44983
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Black Kingsnake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Black Kingsnake",{
 pet=75,
-description="This guide will walk you through obtaining\nthe Beast pet: Black Kingsnake",
+description="This guide will walk you through obtaining the Beast pet: Black Kingsnake",
 },[[
 step
 talk Xan'tish##8404
@@ -134,677 +241,7 @@ buy 1 Black Kingsnake##10360 |goto Orgrimmar,33.0,67.4
 step
 learnpet Black Kingsnake##7565 |use Black Kingsnake##10360
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Blue Mini Jouster",{
-pet=259,
-description="This guide will walk you through obtaining\nthe Flying pet: Blue Mini Jouster",
-},[[
-step
-Going to _Egg Wave_ |only if not completedq(25560) |next "eggwave"
-Going to _The 'Unbeatable?' Pterodactyl: BEATEN._ |next "beaten" |only if completedq(25560)
-step
-label "eggwave"
-click Warchief's Command Board##10014
-accept Warchief's Command: Mount Hyjal!##27721 |goto Orgrimmar,49.7,76.5
-You will automatically accept a quest by entering Orgrimmar
-accept A Personal Summons##28790
-step
-talk Farseer Krogar##45244
-turnin A Personal Summons##28790 |goto 50.5,38.4
-accept The Eye of the Storm##28805 |goto 50.5,38.4
-step
-clicknpc Waters of Farseeing##50088
-Witness the Vision of the Farseer |q 28805/1 |goto 50.8,37.8
-step
-talk Farseer Krogar##45244
-turnin The Eye of the Storm##28805 |goto 50.5,38.4
-step
-talk Cenarion Emissary Blackhoof##15188 |goto 39.9,50.9
-Ask him to please send you to Moonglade
-You will teleport to Moonglade |goto Moonglade,45.1,43.1,0.5 |noway |c
-step
-talk Emissary Windsong##39865
-turnin Warchief's Command: Mount Hyjal!##27721 |goto Moonglade,45.5,44.9
-accept As Hyjal Burns##25316 |goto Moonglade,45.5,44.9
-step
-talk Sebelia##40843
-home Nordrassil |goto Mount Hyjal,63.1,24.1
-step
-talk Ysera##40928
-turnin As Hyjal Burns##25316 |goto 62.0,24.9
-accept Protect the World Tree##25317 |goto 62.0,24.9
-step
-talk Fayran Elthas##41861
-fpath Nordrassil |goto 62.1,21.6
-step
-talk Anren Shadowseeker##39925
-accept The Earth Rises##25460 |goto 64.0,22.6
-step
-talk Tholo Whitehoof##40278
-accept Inciting the Elements##25370 |goto 64.0,22.5
-step
-kill 8 Scalding Rock Elemental##40229+ |q 25460/1 |goto 65.8,20.8
-click Juniper Berries##28+
-collect 4 Juniper Berries##53009 |n
-Use your Juniper Berries on Faerie Dragons |use Juniper Berries##53009
-|tip They look like small blue flying dragons around this area.
-Follow the Faerie Dragons to find Twilight Inciters
-kill 4 Twilight Inciter##39926+  |q 25370/1 |goto 65.8,20.8
-step
-talk Tholo Whitehoof##40278
-turnin Inciting the Elements##25370 |goto 64.0,22.5
-accept Flames from Above##25574 |goto 64.0,22.5
-step
-talk Anren Shadowseeker##39925
-turnin The Earth Rises##25460 |goto 64.0,22.6
-step
-Use Tholo's Horn to call for an emerald dragon |use Tholo's Horn##55122
-Burn the Infiltrators' Encampment |q 25574/1 |goto 55.9,15.8
-step
-talk Tholo Whitehoof##40278
-turnin Flames from Above##25574 |goto 64.0,22.5
-step
-talk Malfurion Stormrage##15362
-turnin Protect the World Tree##25317 |goto 47.7,35.5
-accept War on the Twilight's Hammer##25319 |goto 47.7,35.5
-step
-talk Windspeaker Tamila##39869
-accept The Flameseer's Staff##25472 |goto 47.7,35.5
-step
-kill 4 Twilight Flamecaller##38926+ |q 25319/1 |goto 47.2,25.6
-kill 10 Twilight Vanquisher##38913+ |q 25319/2 |goto 47.2,25.6
-click Charred Staff Fragment##758+
-collect 8 Charred Staff Fragment |q 25472/1 |goto 47.2,25.6
-step
-talk Malfurion Stormrage##15362
-turnin War on the Twilight's Hammer##25319 |goto 47.7,35.5
-turnin The Flameseer's Staff##25472 |goto 47.7,35.5
-accept Flamebreaker##25323 |goto 47.7,35.5
-step
-Use your Flameseer's Staff on Blazebound Revenants |use Flameseer's Staff##53107
-kill 30 Unbound Flame Spirit##40080 |q 25323/1 |goto 44.7,33.2
-You can find more Blazebound Revenants at [48.5,29.2]
-step
-talk Malfurion Stormrage##15362
-turnin Flamebreaker##25323 |goto 47.7,35.5
-accept The Return of Baron Geddon##25464 |goto 47.7,35.5
-step
-Use your Flameseer's Staff on Baron Geddon |use Flameseer's Staff##54463
-|tip He's a big fire elemental standing in the middle of this crater.
-Weaken Baron Geddon 20 Times |q 25464/1 |goto 44.1,27.0
-|tip Run away when you see Galrond of the Claw yell "Look out!".
-step
-talk Malfurion Stormrage##15362
-turnin The Return of Baron Geddon##25464 |goto 47.7,35.5
-step
-talk Windspeaker Tamila##39869
-accept Emerald Allies##25430 |goto 47.7,35.5
-step
-talk Alysra##38917
-turnin Emerald Allies##25430 |goto 48.4,19.0
-accept The Captured Scout##25320 |goto 48.4,19.0
-step
-talk Scout Larandia##40096
-turnin The Captured Scout##25320 |goto 44.5,18.9
-accept Twilight Captivity##25321 |goto 44.5,18.9
-step
-kill Twilight Overseer##40123
-collect Twilight Overseer's Key |q 25321/1 |goto 44.4,20.7
-step
-talk Scout Larandia##40096
-turnin Twilight Captivity##25321 |goto 44.5,18.9
-accept Return to Alysra##25424 |goto 44.5,18.9
-step
-talk Alysra##38917
-turnin Return to Alysra##25424 |goto 48.4,19.0
-accept A Prisoner of Interest##25324 |goto 48.4,19.0
-step
-Enter the cave |goto 52.6,17.3 < 5 |walk
-Follow the path in the cave
-talk Captain Saynna Stormrunner##40139
-turnin A Prisoner of Interest##25324 |goto 56.8,18.8
-accept Through the Dream##25325 |goto 56.8,18.8
-step
-Leave the cave
-Deliver Arch Druid Fandral Staghelm |q 25325/1 |goto 52.6,17.3
-step
-talk Alysra##40178
-turnin Through the Dream##25325 |goto 52.2,17.4
-accept Return to Nordrassil##25578 |goto 52.2,17.4
-step
-talk Ysera##40928
-turnin Return to Nordrassil##25578 |goto 62.0,24.9
-accept The Return of the Ancients##25584 |goto 62.0,24.9
-step
-talk Oomla Whitehorn##39429
-turnin The Return of the Ancients##25584 |goto 35.7,19.4
-accept Harrying the Hunters##25255 |goto 35.7,19.4
-step
-talk Jadi Falaryn##39427
-accept End of the Supply Line##25233 |goto 35.8,19.7
-accept In the Rear With the Gear##25234 |goto 35.8,19.7
-step
-kill 6 Twilight Hunter##39437 |q 25255/1 |goto 34.6,24.5
-kill 4 Twilight Proveditor##39436 |q 25233/1 |goto 34.6,24.5
-|tip They walk with 3 Twilight slaves and a Twilight Slavedriver.
-click Twilight Supplies##9379+
-collect 36 Twilight Supplies |q 25234/1 |goto 34.6,24.5
-step
-talk Jadi Falaryn##39427
-turnin End of the Supply Line##25233 |goto 35.8,19.7
-turnin In the Rear With the Gear##25234 |goto 35.8,19.7
-step
-talk Oomla Whitehorn##39429
-turnin Harrying the Hunters##25255 |goto 35.7,19.4
-accept The Voice of Lo'Gosh##25269 |goto 35.7,19.4
-step
-talk Takrik Ragehowl##39432
-turnin The Voice of Lo'Gosh##25269 |goto 30.1,31.7
-accept Howling Mad##25270 |goto 30.1,31.7
-step
-kill Lycanthoth Vandal##39445+
-collect 6 Polluted Incense |q 25270/1 |goto 29.0,31.4
-step
-talk Takrik Ragehowl##39432
-turnin Howling Mad##25270 |goto 30.1,31.7
-accept Lycanthoth the Corruptor##25272 |goto 30.1,31.7
-step
-Use Lycanthoth's Incense next to Lycanthoth's Altar |use Lycanthoth's Incense##52682
-|tip Inside the cave.
-kill Lycanthoth##39446 |q 25272/1 |goto 32.4,37.3
-step
-talk Spirit of Lo'Gosh##39622
-turnin Lycanthoth the Corruptor##25272 |goto 32.5,37.4
-step
-talk Spirit of Lo'Gosh##39622
-accept The Shrine Reclaimed##25279 |goto 29.6,29.3
-step
-talk Takrik Ragehowl##39432
-turnin The Shrine Reclaimed##25279 |goto 28.4,29.9
-accept Cleaning House##25277 |goto 28.4,29.9
-step
-talk Royce Duskwhisper##39435
-accept The Eye of Twilight##25300 |goto 28.3,30.0
-step
-talk Rio Duran##39434
-accept From the Mouth of Madness##25297 |goto 28.2,29.9
-step
-click Bitterblossom##7444
-collect Bitterblossom |q 25297/2 |goto 28.9,32.1
-step
-click a Stonebloom##9386
-collect Stonebloom |q 25297/1 |goto 26.5,35.0
-step
-click Eye of Twilight##7011
-turnin The Eye of Twilight##25300 |goto 27.2,35.2
-accept Mastering Puppets##25301 |goto 27.2,35.2
-step
-click Darkflame Ember##9569
-collect Darkflame Ember |q 25297/3 |goto 28.4,35.8
-step
-click Twilight Cauldron##9387
-turnin From the Mouth of Madness##25297 |goto 28.4,36.5
-accept Free Your Mind, the Rest Follows##25298 |goto 28.4,36.5
-step
-Enter the cave |goto 26.9,36.3 < 5 |walk
-talk Kristoff Manheim##39797
-accept Gar'gol's Gotta Go##25328 |goto 27.2,40.8
-|tip This quest is currently bugged, so some players are able to accept the quest while others cannot.
-step
-click Gar'gol's Personal Treasure Chest##10
-collect Rusted Skull Key |q 25328/1 |goto 26.5,38.5
-step
-click The Twilight Apocrypha##470
-turnin Mastering Puppets##25301 |goto 25.8,41.6
-accept Elementary!##25303 |goto 25.8,41.6
-stickystart "twiserv"
-step
-clicknpc Crucible of Fire##39730
-Activate the Crucible of Fire |q 25303/3 |goto 26.0,41.8
-step
-clicknpc Crucible of Earth##39737
-Activate the Crucible of Earth |q 25303/1 |goto 25.6,41.7
-step
-clicknpc Crucible of Air##39736
-Activate the Crucible of Air |q 25303/2 |goto 25.8,41.9
-step
-clicknpc Crucible of Water##39738
-Activate the Crucible of Water |q 25303/4 |goto 26.0,41.6
-step "twiserv"
-kill Hovel Brute##39642+, Hovel Shadowcaster##39643+
-Slay 8 Minions of Gar'gol |q 25277/1 |goto 26.7,39.2
-talk Twilight Servitor##39644
-Administor the drought
-Free 8 Twilight Servitors |q 25298/1 |goto 26.7,39.2
-step
-click The Twilight Apocrypha##470
-turnin Elementary!##25303 |goto 25.8,41.6
-accept Return to Duskwhisper##25312 |goto 25.8,41.6
-step
-talk Kristoff Manheim##39797
-turnin Gar'gol's Gotta Go##25328 |goto 27.2,40.8
-accept Get Me Outta Here!##25332 |goto 27.2,40.8
-step
-Leave the cave
-Escort Kristoff Out |q 25332/1 |goto 27.1,36.0
-step
-talk Royce Duskwhisper##39435
-turnin Return to Duskwhisper##25312 |goto 28.6,30.2
-turnin Get Me Outta Here!##25332 |goto 28.6,30.2
-step
-talk Takrik Ragehowl##39432
-turnin Cleaning House##25277 |goto 28.4,29.9
-accept Sweeping the Shelf##25354 |goto 28.4,29.9
-accept Lightning in a Bottle##25355 |goto 28.4,29.9
-step
-talk Rio Duran##39434
-turnin Free Your Mind, the Rest Follows##25298 |goto 28.2,29.9
-step
-kill 8 Twilight Stormcaller##39843+ |q 25354/1 |goto 29.1,40.7
-kill 5 Howling Riftdweller##39844+ |q 25354/2 |goto 29.1,40.7
-click Lightning Channel##9816
-collect Charged Condenser Jar |q 25355/1 |goto 29.1,40.7
-step
-Use your Totem of Lo'Gosh |use Totem of Lo'Gosh##52854
-talk Spirit of Lo'Gosh##39622
-turnin Lightning in a Bottle##25355
-accept Into the Maw!##25617 |goto 26.2,41.0 |n
-Go inside the blue portal |goto 25.8,41.5 < 5 |noway |c |walk
-step
-talk Jordan Olafson##40834
-turnin Into the Maw!##25617 |goto 26.3,41.9
-accept Forged of Shadow and Flame##25575 |goto 26.3,41.9
-accept Crushing the Cores##25577 |goto 26.3,41.9
-step
-talk Yargra Blackscar##40837
-accept Rage of the Wolf Ancient##25576 |goto 26.3,42.0
-step
-kill 12 Dark Iron Laborer##40838+ |q 25576/1 |goto 29.6,41.8
-kill Searing Guardian##40841+
-collect 8 Smoldering Core##55123 |n
-Use your Smoldering Cores next to Twilight Anvils |use Smoldering Core##55123
-|tip They are small anvils sitting on the ground around this area.
-Destroy 8 Smoldering Cores |q 25577/1 |goto 29.6,41.8
-Click Twilight Arms Crates
-|tip They look like wooden boxes sitting on the ground around this area.
-Destroy 10 Twilight Arms Crates |q 25575/1 |goto 29.6,41.8
-step
-talk Yargra Blackscar##40837
-turnin Rage of the Wolf Ancient##25576 |goto 26.3,42.0
-step
-talk Jordan Olafson##40834
-turnin Forged of Shadow and Flame##25575 |goto 26.3,41.9
-turnin Crushing the Cores##25577 |goto 26.3,41.9
-accept Cindermaul, the Portal Master##25599 |goto 26.3,41.9
-step
-kill Cindermaul##40844 |q 25599/1 |goto 30.7,41.7
-click Battered Stone Chest##1387
-collect Tome of Openings |q 25599/2 |goto 30.7,41.7
-step
-talk Jordan Olafson##40834
-turnin Cindermaul, the Portal Master##25599 |goto 26.3,41.9
-accept Forgemaster Pyrendius##25600 |goto 26.3,41.9
-step
-Click the Portal Runes
-|tip They are brown metal plates on the ground on this small circular island in the lava.
-Lure Forgemaster Pyrendius onto the activated Portal Runes
-|tip This will weaken him and allow you to kill him.
-kill Forgemaster Pyrendius##40845 |q 25600/1 |goto 31.9,46.3
-step
-talk Jordan Olafson##40834
-turnin Forgemaster Pyrendius##25600 |goto 26.3,41.9
-accept Return from the Firelands##25612 |goto 26.3,41.9
-Go inside the blue portal |goto 26.3,40.9 < 5 |noway |c |walk
-step
-talk Takrik Ragehowl##39432
-turnin Sweeping the Shelf##25354 |goto 28.4,29.9
-turnin Return from the Firelands##25612 |goto 28.4,29.9
-step
-talk Vision of Ysera##46987
-accept Aviana's Legacy##27874 |goto 28.4,29.8
-step
-talk Rio Duran##39434
-accept The Fires of Mt. Hyjal##25630 |goto 28.2,29.9
-step
-talk Laina Nightsky##39927
-turnin The Fires of Mt. Hyjal##25630 |goto 19.0,40.9
-accept Fighting Fire With ... Anything##25381 |goto 19.0,40.9
-accept Disrupting the Rituals##25382 |goto 19.0,40.9
-step
-talk Mylune##39930
-accept Save the Wee Animals##25385 |goto 19.2,37.9
-step
-talk Matoclaw##39928
-accept If You're Not Against Us...##25404 |goto 19.0,37.0
-step
-talk Elizil Wintermoth##41860
-fpath Grove of Aessina |goto 19.6,36.4
-step
-talk Tyrus Blackhorn##39933
-Tell him you've been sent to request his aid, then tell him he could be destroyed, then ask him if he will help you
-Persuade Blackhorn |q 25404/1 |goto 22.3,44.9
-step
-talk Tyrus Blackhorn##39933
-turnin If You're Not Against Us...##25404 |goto 22.3,44.9
-accept Seeds of Their Demise##25408 |goto 22.3,44.9
-step
-kill Wailing Weed##40066+
-collect 8 Bileberry |q 25408/1 |goto 21.1,42.6
-step
-talk Tyrus Blackhorn##39933
-turnin Seeds of Their Demise##25408 |goto 22.3,44.9
-accept A New Master##25411 |goto 22.3,44.9
-step
-kill Twilight Inferno Lord##39974
-Use your Bottled Bileberry Brew on the corpse of a Twilight Inferno Lord |use Bottled Bileberry Brew##53120
-Subjugate a Twilight Inferno Lord |q 25411/1 |goto 14.5,45.3
-step
-Next to you:
-talk Subjugated Inferno Lord##40093
-turnin A New Master##25411
-accept The Name Never Spoken##25412
-stickystart "panbunny"
-step
-click Southern Firestone##9407
-Examine the Southern Firestone |q 25412/3 |goto 14.3,45.4
-step
-click Central Firestone##9407
-Examine the Central Firestone |q 25412/2 |goto 11.7,41.5
-step
-click Northern Firestone##9407
-Examine the Northern Firestone |q 25412/1 |goto 9.6,36.5
-step "panbunny"
-kill 10 Raging Firestorm##39939+ |q 25381/1 |goto 11.3,38.2
-kill 6 Twilight Inferno Lord##39974+  |q 25382/1 |goto 11.3,38.2
-Click Panicked Bunnies and Terrified Squirrels
-|tip They are small and run around this area.
-collect 10 Frightened Animal |q 25385/1 |goto 11.3,38.2
-step
-talk Laina Nightsky##39927
-turnin Fighting Fire With ... Anything##25381 |goto 19.0,40.9
-turnin Disrupting the Rituals##25382 |goto 19.0,40.9
-step
-talk Mylune##39930
-turnin Save the Wee Animals##25385 |goto 19.2,37.9
-accept Oh, Deer!##25392 |goto 19.2,37.9
-step
-talk Tyrus Blackhorn##39933
-turnin The Name Never Spoken##25412 |goto 22.3,44.9
-accept Black Heart of Flame##25428 |goto 22.3,44.9
-stickystart "leadfawn"
-step
-Use your Charred Branch while in the burning forest area |use Charred Branch##53464
-kill Thol'embaar##40107
-collect Black Heart of Thol'embaar |q 25428/1 |goto 14.6,42.2
-step "leadfawn"
-click 3 Injured Fawn##39999+
-Lead the Injured Fawns back to Mylune at [19.2,37.9]
-Escort 3 Injured Fawns Home |q 25392/1 |goto 12.5,44.6
-step
-talk Mylune##39930
-turnin Oh, Deer!##25392 |goto 19.2,37.9
-step
-talk Tyrus Blackhorn##39933
-turnin Black Heart of Flame##25428 |goto 22.3,44.9
-accept Good News... and Bad News##29066 |goto 22.3,44.9
-step
-talk Laina Nightsky##39927
-accept Last Stand at Whistling Grove##25940 |goto 19.0,40.9
-step
-talk Matoclaw##39928
-turnin Good News... and Bad News##29066 |goto 19.0,37.0
-step
-talk Keeper Taldros##39932
-turnin Last Stand at Whistling Grove##25940 |goto 13.7,32.8
-accept The Bears Up There##25462 |goto 13.7,32.8
-step
-clicknpc Climbing Tree##40190
-clicknpc Hyjal Bear Cub##40240+
-Use your Climb Up ability to climb to the top of the tree
-Use your Chuck-a-bear ability to throw the cubs down
-|tip Aim the yellow spot at the bearskin trampoline on the ground.
-Rescue 6 Hyjal Bear Cubs |q 25462/1 |goto 13.9,34.1
-step
-talk Keeper Taldros##39932
-turnin The Bears Up There##25462 |goto 13.7,32.8
-accept Smashing Through Ashes##25490 |goto 13.7,32.8
-step
-kill 8 Charbringer##40336+ |q 25490/1 |goto 16.4,51.8
-step
-talk Arch Druid Hamuul Runetotem##5769
-turnin Smashing Through Ashes##25490 |goto 27.1,62.6
-accept Durable Seeds##25491 |goto 27.1,62.6
-accept Fresh Bait##25493 |goto 27.1,62.6
-step
-talk Rayne Feathersong##40331
-accept Firebreak##25492 |goto 27.1,63.0
-step
-kill 10 Lava Surger##46911+ |q 25492/1 |goto 34.0,53.2
-kill Core Hound##46910+
-collect 4 Core Hound Entrails |q 25493/1 |goto 34.0,53.2
-click Scorched Soil##768
-collect 10 Hyjal Seedling |q 25491/1 |goto 34.0,53.2
-step
-talk Dinorae Swiftfeather##43481
-fpath Shrine of Aviana |goto 41.2,42.6
-step
-talk Thisalee Crow##41006
-accept The Wormwing Problem##25655 |goto 42.2,45.4
-accept Scrambling for Eggs##25656 |goto 42.2,45.4
-step
-talk Choluna##41005
-turnin Aviana's Legacy##27874 |goto 44.4,46.2
-accept An Offering for Aviana##25663 |goto 44.4,46.2
-step
-Use your Sacred Nectar next to Aviana's Burial Circle |use Sacred Nectar##55208
-Offer the Nectar |q 25663/1 |goto 40.4,44.3
-talk Mysterious Winged Spirit##41068
-turnin An Offering for Aviana##25663 |goto 40.4,44.3
-accept A Plea From Beyond##25665 |goto 40.4,44.3
-step
-kill Wormwing Screecher##41027+, Wormwing Swifttalon##41028+
-Slay 10 Wormwing Harpies |q 25655/1 |goto 36.9,43.4
-click Stolen Hyjal Egg##1867+
-collect 8 Hyjal Egg |q 25656/1 |goto 36.9,43.4
-step
-talk Thisalee Crow##41006
-turnin The Wormwing Problem##25655 |goto 42.2,45.4
-turnin Scrambling for Eggs##25656 |goto 42.2,45.4
-accept A Bird in Hand##25731 |goto 42.2,45.4
-step
-talk Choluna##41005
-turnin A Plea From Beyond##25665 |goto 44.4,46.2
-accept A Prayer and a Wing##25664 |goto 44.4,46.2
-step
-Click the Harpy Signal Fire
-|tip It's a brazier with red fire in it.
-Fight Marion Wormwing until she gets captured |q 25731/1 |goto 38.4,44.2
-talk Marion Wormwing##41112
-Ask her why she is stealing eggs, then tell Thisalee to kill her
-Interrogate Marion Wormwing |q 25731/2 |goto 38.4,44.2
-step
-Use your Enormous Bird Call in Blaithe's Roost |use Enormous Bird Call##55211
-|tip It's a huge bird nest sitting on top of this mountain peak.
-kill Blaithe##41084
-collect Ancient Feather |q 25664/1 |goto 39.2,37.1
-step
-talk Thisalee Crow##41006
-turnin A Bird in Hand##25731 |goto 42.2,45.4
-step
-talk Choluna##41005
-turnin A Prayer and a Wing##25664 |goto 44.4,46.2
-step
-Go upstairs in the Shrine of Aviana
-talk Skylord Omnuron##40997
-accept Fact-Finding Mission##25740 |goto 43.5,45.9
-step
-talk Arch Druid Hamuul Runetotem##5769
-turnin Durable Seeds##25491 |goto 27.1,62.6
-turnin Fresh Bait##25493 |goto 27.1,62.6
-accept Hell's Shells##25507 |goto 27.1,62.6
-step
-talk Rayne Feathersong##40331
-turnin Firebreak##25492 |goto 27.1,63.0
-accept Prepping the Soil##25502 |goto 27.1,63.0
-step
-click Flameward##40460
-Activate the Flameward |q 25502/1 |goto 33.0,64.6
-Defend the Flameward |q 25502/2 |goto 33.0,64.6
-step
-talk Thisalee Crow##41006
-turnin Fact-Finding Mission##25740 |goto 32.8,70.8
-accept Sethria's Brood##25746 |goto 32.8,70.8
-accept A Gap in Their Armor##25758 |goto 32.8,70.8
-step
-click Codex of Shadows##470
-accept The Codex of Shadows##25763 |goto 31.3,77.1
-step
-kill Twilight Dragonkin##41029+, Twilight Dragonkin Armorers##41030+
-Slay 12 Sethria's Minions |q 25746/1 |goto 30.9,76.7
-click Twilight Armor Plate##7041
-collect 8 Twilight Armor Plate |q 25758/1 |goto 30.9,76.7
-step
-talk Thisalee Crow##41006
-turnin Sethria's Brood##25746 |goto 32.8,70.8
-turnin A Gap in Their Armor##25758 |goto 32.8,70.8
-accept Disassembly##25761 |goto 32.8,70.8
-turnin The Codex of Shadows##25763 |goto 32.8,70.8
-accept Egg Hunt##25764 |goto 32.8,70.8
-step
-Use Thisalee's Shive on Twilight Juggernauts |use Thisalee's Shiv##55883
-|tip Use Thisalee's Shive multiple times to remove the Twilight Juggernauts' Armor Plating and make them weaker.
-kill 3 Twilight Juggernaut##41031 |q 25761/1 |goto 31.1,76.7
-click Shadow Cloak Generator##9532+
-Unveil and Defend Aviana's Egg |q 25764/1 |goto 31.1,76.7
-step
-talk Thisalee Crow##41006
-turnin Disassembly##25761 |goto 32.8,70.8
-turnin Egg Hunt##25764 |goto 32.8,70.8
-accept Sethria's Demise##25776 |goto 32.8,70.8
-step
-kill Sethria##41255
-Use Thisalee's Signal Rocket when Sethria turns into a dragon |use Thisalee's Signal Rocket##56003
-kill Sethria##41255 |q 25776/1 |goto 35.5,98.0
-step
-talk Thisalee Crow##41006
-turnin Sethria's Demise##25776 |goto 32.8,70.8
-accept Return to the Shrine##25795 |goto 32.8,70.8
-step
-Use your Heap of Core hound Innards near Nemesis |use Heap of Core hound Innards##54744
-|tip Nemesis is a huge turtle that walks all around The Flamewake area, so you may need to search for him.
-clicknpc Nemesis##40340
-collect Nemesis Shell Fragment |q 25507/1 |goto 37.4,52.3
-step
-talk Choluna##41005
-turnin Return to the Shrine##25795 |goto 44.4,46.2
-accept An Ancient Reborn##25807 |goto 44.4,46.2
-step
-Use Herald's Incense next to Aviana's Egg |use Herald's Incense##56016
-|tip Aviana's Egg is in the tree tower, in a side room.
-Burn Herald's Incense |q 25807/1 |goto 44.3,47.9
-step
-talk Aviana##41308
-turnin An Ancient Reborn##25807 |goto 44.3,48.0
-step
-talk Morthis Whisperwing##41003
-accept The Hatchery Must Burn##25810 |goto 44.1,45.9
-step
-Go inside the blue portal |goto 38.8,58.0 < 5 |walk
-talk Farden Talonshrike##40578
-turnin The Hatchery Must Burn##25810 |goto 37.2,56.2
-accept Flight in the Firelands##25523 |goto 37.2,56.2
-step
-click the Twilight Weapon Rack##130
-collect Twilight Firelance##52716 |q 25523 |goto 37.2,56.2
-step
-Equip the Twilight Firelance |use Twilight Firelance##52716
-Click Aviana's Guardian to ride it |invehicle |goto 37.4,56.0
-|tip They are hippogryphs.
-step
-Use your Flap ability on your hotbar repeatedly to fly to this green flag
-Visit the Guardian Flag |q 25523/1 |goto 36.4,53.2
-model 9475
-step
-Use your Flap ability on your hotbar repeatedly to fly to this spot
-talk Farden Talonshrike##40578
-turnin Flight in the Firelands##25523 |goto 37.2,56.2
-accept Wave One##25525 |goto 37.2,56.2
-step
-Use your Flap ability on your hotbar repeatedly to fly around this area
-Fly into Twilight Buzzards to joust them
-kill 10 Twilight Knight Rider##39835+ |q 25525/1 |goto 36.8,54.0
-step
-Use your Flap ability on your hotbar repeatedly to fly to this spot
-talk Farden Talonshrike##40578
-turnin Wave One##25525 |goto 37.2,56.2
-accept Wave Two##25544 |goto 37.2,56.2
-step
-Use your Flap ability on your hotbar repeatedly to fly around this area
-Fly into Twilight Firebirds to joust them
-|tip Be careful, don't let the burning Falling Boulders hit you.
-kill 10 Twilight Lancer##40660 |q 25544/1 |goto 36.8,54.0
-step
-Use your Flap ability on your hotbar repeatedly to fly to this spot
-talk Farden Talonshrike##40578
-turnin Wave Two##25544 |goto 37.2,56.2
-accept Egg Wave##25560 |goto 37.2,56.2
-step
-Use your Flap ability on your hotbar repeatedly to fly around this area
-Run over Firelands Eggs
-|tip They look like blue eggs on the ground around this area.
-Destroy 40 Firelands Eggs |q 25560/1 |goto 33.3,56.9
-You can find more Firelands Eggs all around [35.8,53.6]
-step
-Use your Flap ability on your hotbar repeatedly to fly to this spot
-talk Farden Talonshrike##40578
-turnin Egg Wave##25560 |goto 37.2,56.2
-step
-label "beaten"
-|goto Mount Hyjal,39.1,58.3 |n
-Go inside the blue portal |goto 38.77,58.01 < 5 |walk
-talk Farden Talonshrike##40578
-accept Vigilance on Wings##29177 |goto 37.2,56.2
-step
-click the Twilight Weapon Rack##130
-collect 1 Twilight Firelance##52716 |q 29177 |goto 37.2,56.1
-step
-Equip the Twilight Firelance |use Twilight Firelance##52716
-Click Aviana's Guardian to ride it |invehicle |goto 37.4,56.0
-|tip They are hippogryphs.
-step
-Use your Flap ability on your hotbar repeatedly to fly around this area
-kill 10 Twilight Lancer##40660+ |q 29177/1 |goto 36.6,53.4
-step
-talk Farden Talonshrike##40578
-turnin Vigilance on Wings##29177 |goto 37.2,56.2 |tip You may choose only one Jouster.
-collect Blue Mini Jouster##65661 |goto 37.2,56.2 |or
-collect Gold Mini Jouster##65662 |goto 37.2,56.2 |or
-step
-learnpet Blue Mini Jouster##42177 |use Blue Mini Jouster##65661 |or
-learnpet Gold Mini Jouster##42183 |use Gold Mini Jouster##65662 |or
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Yellow Moth",{
-pet=140,
-description="This guide will walk you through obtaining the Flying pet:Yellow Moth\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
-},[[
-step
-#include "auctioneer"
-buy 1 Yellow Moth Egg##29903
-|tip This pet must be bought with an Alliance character or through the Auction House
-step
-learnpet Yellow Moth##21008 |use Yellow Moth Egg##29903
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Blue Moth",{
-pet=138,
-description="This guide will walk you through obtaining the Flying pet:Blue Moth\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
-},[[
-step
-#include "auctioneer"
-buy 1 Blue Moth Egg##29901
-|tip This pet must be bought with an Alliance character or through the Auction House
-step
-learnpet Blue Moth##21010 |use Blue Moth Egg##29901
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Bombay Cat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Bombay Cat",{
 pet=40,
 description="This guide will walk you through obtaining the Beast pet: Bombay Cat\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
 },[[
@@ -815,19 +252,9 @@ buy 1 Cat Carrier (Bombay)##8485
 step
 learnpet Bombay Cat##7385  |use Cat Carrier (Bombay)##8485
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Brown Prairie Dog",{
-pet=70,
-description="This guide will walk you through obtaining\nthe Critter pet: Brown Prairie Dog",
-},[[
-step
-talk Halpa##8401
-buy 1 Prarie Dog Whistle##10394 |goto Thunder Bluff 62.8,58.2
-step
-learnpet Brown Prairie Dog##14421 |use Prarie Dog Whistle##10394
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Brown Snake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Brown Snake",{
 pet=77,
-description="This guide will walk you through obtaining\nthe Beast pet: Brown Snake",
+description="This guide will walk you through obtaining the Beast pet: Brown Snake",
 },[[
 step
 talk Xan'tish##8404
@@ -835,75 +262,7 @@ buy 1 Brown Snake##10361 |goto Orgrimmar,33.0,67.4
 step
 learnpet Brown Snake##7562 |use Brown Snake##10361
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Clockwork Gnome",{
-pet=277,
-description="This guide will walk you through obtaining\nthe Mechanical pet: Clockwork Gnome",
-},[[
-step
-This pet is a rare Archaeology "Dwarf" solve
-talk Belloc Brightblade##47571 |goto Orgrimmar,49.1,70.5 |only if skillmax("Archaeology")<1
-skillmax Archaeology,75 |only if skillmax("Archaeology")<1
-skill Archaeology,525
-step
-Open your _world map_, find dig sites in _Eastern Kingdoms_, and go to them
-|tip They look like small shovel icons on your world map that spawn in random places.  Once you get to the zone where the dig site is located, you will see the dig site on your map as a red highlighted area.
-Use your Survey ability inside the dig site area |cast Survey##80451
-A telescope will appear, follow the direction it points in and continue using your Survey ability to eventually find the artifacts
-|tip Each dig site has 3 artifacts you can find.
-Click the Archaeology Fragments that spawn on the ground
-You're looking for a _rare artifact_ in the _"Dwarf"_ tab called _"Clockwork Gnome"_. Solve this Archaeology puzzle
-collect 1 Clockwork Gnome##64372
-step
-learnpet Clockwork Gnome##48609 |use Clockwork Gnome##64372
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Clockwork Rocket Bot",{
-pet=191,
-description="This guide will walk you through obtaining\nthe Mechanical pet: Clockwork Rocket Bot",
-},[[
-step
-This pet can only be obtained during the Feast of Winter Veil Event.
-confirm always
-step
-talk Strange Snowman##13636
-accept You're a Mean One...##6983 |goto Hillsbrad Foothills,42.3,41.1
-step
-kill The Abominable Greench##13602
-|tip This will require a group to kill, but you do not have to be in a party.
-Free Metzen the Reindeer |q 6983/1 |goto Hillsbrad Foothills,43.6,39.0
-collect Stolen Treats |q 6983/2 |goto Hillsbrad Foothills,43.6,39.0
-|tip You can pick this up if someone has killed The Abominable Grinch recently.
-step
-talk Kaymard Copperpinch##13418
-turnin You're a Mean One...##6983 |goto Orgrimmar,52.6,77.4
-accept A Smokywood Pastures' Thank You!##6984 |goto Orgrimmar,52.6,77.4
-step
-talk Great-father Winter##13445
-turnin A Smokywood Pastures' Thank You!##6984 |goto 49.6,78.0
-step
-learnpet Clockwork Rocket Bot##24968
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Crawling Claw",{
-pet=264,
-description="This guide will walk you through obtaining\nthe Undead pet:Crawling Claw",
-},[[
-step
-This pet is a rare Archaeology "Tol'vir" solve
-talk Belloc Brightblade##47571 |goto Orgrimmar,49.1,70.5 |only if skillmax("Archaeology")<1
-skillmax Archaeology,75 |only if skillmax("Archaeology")<1
-skill Archaeology,525
-step
-Open your _world map_, find dig sites in _Kalimdor_, and go to them
-|tip They look like small shovel icons on your world map that spawn in random places.  Once you get to the zone where the dig site is located, you will see the dig site on your map as a red highlighted area.
-Use your Survey ability inside the dig site area |cast Survey##80451
-A telescope will appear, follow the direction it points in and continue using your Survey ability to eventually find the artifacts
-|tip Each dig site has 3 artifacts you can find.
-Click the Archaeology Fragments that spawn on the ground
-You're looking for a _rare artifact_ in the _"Tol'vir"_ tab called _"Crawling Claw"_. Solve this Archaeology puzzle
-collect 1 Crawling Claw##60847
-step
-learnpet Crawling Claw##45128 |use Crawling Claw##60847
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Cornish Rex Cat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Cornish Rex Cat",{
 pet=41,
 description="This guide will walk you through obtaining the Beast pet: Cornish Rex Cat\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
 },[[
@@ -914,19 +273,9 @@ buy 1 Cat Carrier (Cornish Rex)##8486
 step
 learnpet Cornish Rex Cat##7384 |use Cat Carrier (Cornish Rex)##8486
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Creepy Crate",{
-pet=321,
-description="This guide will walk you through obtaining\nthe Undead pet:Creepy Crate",
-},[[
-step
-This pet can only be obtained during the Hallow's End festival
-Click here to continue |confirm
-step
-#include "Hallows_End_Quests_Horde"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Crimson Snake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Crimson Snake",{
 pet=78,
-description="This guide will walk you through obtaining\nthe Beast pet: Crimson Snake",
+description="This guide will walk you through obtaining the Beast pet: Crimson Snake",
 },[[
 step
 talk Xan'tish##8404
@@ -934,22 +283,7 @@ buy 1 Crimson Snake##10392 |goto Orgrimmar,33.0,67.4
 step
 learnpet Crimson Snake##7567 |use Crimson Snake##10392
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Dark Phoenix Hatchling",{
-pet=270,
-description="This guide will walk you through obtaining\nthe Elemental pet: Dark Phoenix Hatchling",
-},[[
-step
-#include misc_rep_mount,rep="Guild"
-Your guild needs have the achievement "United Nations"
-|tip Only 1 person in your guild needs to have 55 Exalted reputations
-55 Exalted Reputations |achieve 5892
-step
-talk Goram##46572
-buy 1 Dark Phoenix Hatchling##63138 |goto Orgrimmar,48.38,75.79
-step
-learnpet Dark Phoenix Hatchling##47944 |use Dark Phoenix Hatchling##63138
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Dun Morogh Cub",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Dun Morogh Cub",{
 pet=205,
 description="This guide will walk you through obtaining the Beast pet: Dun Morogh Cub\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
 },[[
@@ -960,9 +294,9 @@ buy 1 Dun Morogh Cub##44970
 step
 learnpet Dun Morogh Cub##33194 |use Dun Morogh Cub##44970
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Durotar Scorpion",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Durotar Scorpion",{
 pet=207,
-description="This guide will walk you through obtaining\nthe Beast pet: Durotar Scorpion",
+description="This guide will walk you through obtaining the Beast pet: Durotar Scorpion",
 },[[
 step
 In order to be able to do this guide section, you must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
@@ -971,8 +305,8 @@ In order to be able to do this guide section, you must have already completed th
 confirm always
 step
 Proceeding to Pre Quests. |next |only if default
-Click here for Aspirant Rank Daily quests. |next "Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-Click here for Valiant Rank Dailies. |next "Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here for Aspirant Rank Daily quests. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here for Valiant Rank Dailies. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 Click here if you are already at the rank of Champion. |next buy |confirm
 step
 talk Helidan Lightwing##33849
@@ -1130,275 +464,9 @@ buy 1 Durotar Scorpion##44973 |goto Icecrown,76.4,24.2
 step
 learnpet Durotar Scorpion##33198 |use Durotar Scorpion##44973
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Egbert",{
-pet=158,
-description="This guide will walk you through obtaining\nthe Critter pet: Egbert",
-},[[
-step
-You may only get _three_ of these pets _per year_ from _completing_ the quest lines _Back to the Orphanage (Shattrath)_, _Warden of the Horde_, and _Back to the Orphanage (Dalaran)_
-If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-For the Shattrath Daily set, click here. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-confirm
-step
-collect 1 Egbert's Egg##32616 |tip Warden of the Horde
-step
-learnpet Egbert##23258 |use Egbert's Egg##32616
-|tip Warden of the Horde
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Elwynn Lamb",{
-pet=209,
-description="This guide will walk you through obtaining the Critter pet: Elwynn Lamb\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
-},[[
-step
-#include "auctioneer"
-buy 1 Elwynn Lamb##44974
-|tip This pet must be bought with an Alliance character or through the Auction House
-step
-learnpet Elwynn Lamb##33200 |use Elwynn Lamb##44974
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Enchanted Broom",{
-pet=213,
-description="This guide will walk you through obtaining\nthe Magic pet: Enchanted Broom",
-},[[
-step
-In order to be able to do this guide section, you must have already completed the ARGENT TOURNAMENT GROUNDS DAILIES (VALIANT RANK) guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
-|tip After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction.
-|tip You cannot complete this section if you are a Blood Elf.
-confirm always
-step
-Proceeding to Pre Quests. |next |only if default
-Click here Aspirant Rank Daily quests. |next "Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-Click here for Valiant Rank Dailies |next "Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-Click here if you are already at the rank of Champion. |next buy |confirm
-step
-talk Helidan Lightwing##33849
-fpath Argent Tournament Grounds |goto Icecrown,72.6,22.6
-step
-talk Justicar Mariel Trueheart##33817
-accept The Argent Tournament##13668 |goto Icecrown,69.7,22.9
-step
-talk Magister Edien Sunhollow##33542
-turnin The Argent Tournament##13668 |goto 76.3,24.4
-accept Mastery Of Melee##13829 |goto 76.3,24.4
-step
-talk Amariel Sunsworn##33658
-accept Mastery Of The Charge##13839 |goto 76.3,24.4
-step
-talk Galathia Brightdawn##33659
-accept Mastery Of The Shield-Breaker##13838 |goto 76.2,24.4
-step
-Equip the Horde Lance in your bags |use Horde Lance##46070
-Click to mount the Stabled Sunreaver Hawkstrider |invehicle |q 13829 |goto 75.6,23.7
-step
-talk Jeran Lockwood##33973
-Listen to Jeran Lockwood's advice |q 13829/1 |goto 72.5,19.3
-step
-talk Rugan Steelbelly##33972
-Listen to Rugan Steelbelly's advice |q 13839/1 |goto 72.7,18.9
-step
-talk Valis Windchaser##33974
-Listen to Valis Windchaser's advice |q 13838/1 |goto 73.2,19.2
-step
-Target a Ranged Target from a distance
-Use Shield-Breaker ability on Ranged Target to bring it's shields down
-Use Shield-Breaker ability on Ranged Target twice, while it's shields are down |q 13838/2 |goto 73.1,19.0
-step
-Target a Charge Target from a distance
-Use Shield-Breaker ability until you notice the targets Defend is gone
-Use your Charge ability on the Charge Target 2 times |q 13839/2 |goto 72.9,18.8
-step
-Target a Melee Target
-If you don't want to kill your mount be sure to keep your Defend ability maxed out at 3 stacks
-Use your Thrust ability to attack the target 5 times |q 13829/2 |goto 72.6,19.7
-step
-Click the red arrow on your hotbar to stop riding the bird mount |outvehicle |q 13829
-step
-talk Magister Edien Sunhollow##33542
-turnin Mastery Of Melee##13829 |goto 76.3,24.4
-step
-talk Amariel Sunsworn##33658
-turnin Mastery Of The Charge##13839 |goto 76.3,24.4
-step
-talk Galathia Brightdawn##33659
-turnin Mastery Of The Shield-Breaker##13838 |goto 76.2,24.4
-step
-label buy
-talk Eressea Dawnsinger##33379
-accept Valiant Of Silvermoon##13711 |goto Icecrown,76.5,23.9
-turnin Valiant Of Silvermoon##13711 |goto Icecrown,76.5,23.9
-accept The Valiant's Charge##13722 |goto Icecrown,76.5,23.9
-step
-talk Eressea Dawnsinger##33379
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
-accept A Blade Fit For A Champion##13783 |goto 76.5,23.9 |or
-accept A Worthy Weapon##13784 |goto 76.5,23.9 |or
-accept The Edge Of Winter##13785 |goto 76.5,23.9 |or
-step
-talk Kethiel Sunlance##33538
-accept A Valiant's Field Training##13786 |goto 76.4,23.8
-step
-talk Aneera Thuron##33548
-accept The Grand Melee##13787 |goto 76.5,23.9
-accept At The Enemy's Gates##13859 |goto 76.5,23.9
-step
-Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
-Target Lake Frogs
-Use the emote /kiss on the Lake Frogs
-Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
-talk Maiden of Ashwood Lake##33220
-Tell her you are glad to help
-collect Ashwood Brand |q 13783/1 |goto Grizzly Hills,61.2,50.3
-step
-Click Winter Hyacinth
-collect 4 Winter Hyacinth##45000 |q 13784 |goto Icecrown,69.1,76.2
-step
-Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
-Listen to the Maiden of Drak'Mar
-Click the Blade of Drak'Mar that spawns
-collect Blade of Drak'Mar |q 13784/1 |goto Dragonblight,93.2,26.1
-step
-kill Lord Everblaze##33289
-collect 1 Everburning Ember##45005 |q 13785 |goto Crystalsong Forest,54.5,74.9
-step
-Use the Everburning Ember on Maiden of Winter's Breath|use Everburning Ember##45005
-collect Winter's Edge |q 13785/1 |goto Howling Fjord,42.2,19.7
-step
-Equip the Horde Lance in your bags |use Horde Lance##46070
-Click to mount the Stabled Campaign Warhorse |invehicle |q 13859 |goto Icecrown,48.9,71.4
-step
-kill 15 Boneguard Footman |q 13859/1 |goto 50.1,74.8
-|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
-kill 10 Boneguard Scout |q 13859/2 |goto 50.1,74.8
-|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
-kill 3 Boneguard Lieutenant |q 13859/3 |goto 50.1,74.8
-|tip They ride horses around this area.  Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
-step
-Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13859 |goto 49.1,71.4
-step
-kill 10 Converted Hero##32255 |q 13786/1 |goto 44.3,54.2
-step
-Equip the Horde Lance in your bags |use Horde Lance##46070
-Click to mount the Stabled Silvermoon Hawkstrider |invehicle |q 13787 |goto 75.5,24.1
-step
-Talk to the riders on mounts of other Horde races
-Tell them you are ready to fight!
-Fight and defeat them
-|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
-collect 3 Mark of the Valiant |q 13787/1 |goto 75.3,26.0
-step
-talk Eressea Dawnsinger##33379
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
-turnin A Blade Fit For A Champion##13783 |goto 76.5,23.9
-turnin A Worthy Weapon##13784 |goto 76.5,23.9
-turnin The Edge Of Winter##13785 |goto 76.5,23.9
-step
-talk Kethiel Sunlance##33538
-turnin A Valiant's Field Training##13786 |goto 76.4,23.8
-step
-talk Aneera Thuron##33548
-turnin The Grand Melee##13787 |goto 76.5,23.9
-turnin At The Enemy's Gates##13859 |goto 76.5,23.9
-step
-Make sure you have 25 Valiant Seals:
-collect 25 Valiant's Seal |q 13722/1
-|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
-step
-talk Eressea Dawnsinger##33379
-turnin The Valiant's Charge##13722 |goto 76.5,23.9
-accept The Valiant's Challenge##13731 |goto 76.5,23.9
-step
-Equip the Horde Lance in your bags |use Horde Lance##46070
-Click to mount the Stabled Silvermoon Hawkstrider |invehicle |q 13731 |goto 72.2,22.4
-step
-talk Squire Danny##33518
-Tell him you are ready to fight!
-An Argent Champion runs up on a horse
-Use the abilities on your hotbar to defeat the Argent Champion
-|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
-Defeat the Argent Valiant |q 13731/1 |goto 68.6,21.0
-step
-talk Eressea Dawnsinger##33379
-turnin The Valiant's Challenge##13731 |goto 76.5,23.9
-step
-Become a Champion of Silvermoon City |achieve 2785
-earn 40 Champion's Seal##241+
-If you don't meet both of these requirements go back to step 1 of the guide.
-step
-talk Trellis Morningsun##33557
-buy 1 Enchanted Broom##44982 |goto Icecrown,76.2,23.8
-step
-learnpet Enchanted Broom##33227 |use Enchanted Broom##44982
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Enchanted Lantern",{
-pet=267,
-description="This guide will walk you through obtaining\nthe Magic pet: Enchanted Lantern",
-},[[
-step
-Skipping to the next step |next |only if skill("Enchanting")<525
-talk Kithas##3346 |only if skill("Enchanting")>=525
-buy 1 Formula: Enchanted Lantern##67308 |goto Orgrimmar,53.2,48.8 |only if skill("Enchanting")>=525
-Click here if you do not wish to make this pet yourself |confirm |only if skill("Enchanting")>=525
-step
-You can either _buy_ this _pet_ from the _Auction House_ or craft it:
-collect 1 Enchanted Lantern##67274 |next "bought"
-Click here to craft this pet |confirm
-step
-You can either _buy_ these _materials_ from the _ Auction House_ or _disenchant gear_ to obtain them:
-collect 8 Heavenly Shard##52721+
-collect 4 Greater Celestial Essence##52719+
-collect 1 Maelstrom Crystal##52722
-Click here if you have the means to farm these materials yourself. |confirm
-next farmed |only if default
-step
-Farm Maelstrom Crystals from the dungeons _Zul'Aman, End Time, Zul'Gurub, Hour of Twilight and Well of Eternity_.
-Breaking down Maelstrom Crystals will net you 2 Heavenly Shards.
-Use _Maelstrom Shatter_ on Maelstrom Crystals to attain Heavenly Shards. |cast Maelstorm Shatter##104698
-collect 8 Heavenly Shard##52721+
-step
-Farm Maelstrom Crystals from the dungeons _Zul'Aman, End Time, Zul'Gurub, Hour of Twilight and Well of Eternity_.
-collect 1 Maelstrom Crystal##52722
-step
-Cataclysm ranked green _Weapons_ will net you Greater Celestial Essences.
-Farm Greater Celestial Essence from the normal enemies in dungeons _Zul'Aman, End Time, Zul'Gurub, Hour of Twilight and Well of Eternity_.
-collect 4 Greater Celestial Essence##52719+
-step
-label farmed
-Have an _Enchanter make this pet_ for you
-|tip Ask in your guild or in Trade Chat |only if _G.IsSpellKnown(93841)==false
-create Enchanted Lantern##93841,Enchanting,1 total |only if _G.IsSpellKnown(93841)==true
-collect 1 Enchanted Lantern##67274
-step
-label "bought"
-learnpet Enchanted Lantern##46898 |use Enchanted Lantern##67274
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Father Winter's Helper",{
-pet=119,
-description="This guide will walk you through obtaining\nthe Humanoid pet: Father Winter's Helper",
-},[[
-step
-These pets are only availiable during the _Winter Veil_ Holiday
-|tip Receive Gaily Wrapped Presents by clicking the presents underneath the Christmas Tree in Orgrimmar
-use Gaily Wrapped Present##21310
-collect 1 Green Helper Box##21301
-step
-learnpet Father Winter's Helper##15698 |use Green Helper Box##21301
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Rotten Little Helper",{
-pet=1349,
-description="This guide will walk you through obtaining\nthe Humanoid pet:Rotten Little Helper",
-},[[
-step
-These pets are only availiable during the Winter Veil Holiday
-|tip Receive Gaily Wrapped Presents by clicking the presents underneath the Christmas Tree in Orgrimmar.
-use Gaily Wrapped Present##21310
-collect 1 Rotten Helper Box##104317
-step
-learnpet Rotten Little Helper##73741 |use Rotten Helper Box##104317
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Feline Familiar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Feline Familiar",{
 pet=319,
-description="This guide will walk you through obtaining\nthe Beast pet: Feline Familiar",
+description="This guide will walk you through obtaining the Beast pet: Feline Familiar",
 },[[
 step
 This pet can only be obtained during the Hallows End event.
@@ -1409,792 +477,29 @@ buy Feline Familiar##70908 |goto Undercity,67.8,6.8
 step
 learnpet Feline Familiar##53884 |use Feline Familiar##70908
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Festival Lantern",{
-pet=342,
-description="This guide will walk you through obtaining\nthe Magic pet: Festival Lantern",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Hyjal Bear Cub",{
+pet=317,
+description="This guide will walk you through obtaining the Beast pet: Hyjal Bear Cub",
 },[[
 step
-This pet can only be obtained during the Lunar Festival event.
-collect 50 Coin of Ancestry##21100
-Click here for directions to the vendor |confirm |next "vendor"
-Click here for our guide on getting the Coins of Ancestry |confirm |next "coins"
+You will have to do the Firelands dailies quests to complete the quest "Calling the Ancients"
+talk Varlan Highbough##53882
+accept Calling the Ancients##29283 |goto Molten Front,44.8,89.8
 step
-label "coins"
-#include "H_Lunar_Festival_Quests"
+Earn 125 Marks of the World tree to doing Firelands daily quests.
+earn 125 Mark of the World Tree##416
 step
-#include "H_Lunar_Festival_Elders"
+talk Elderlimb##52906
+turnin Calling the Ancients##29283 |goto Mount Hyjal 26.0,61.2
 step
-label "vendor"
-talk Valadar Starsong##15864
-buy Festival Lantern##74611 |goto Moonglade,54.0,35.0
+talk Varlan Highbough##53882
+buy 1 Hyjal Bear Cub##70140 |goto Molten Front,44.8,89.8
 step
-learnpet Festival Lantern##55574 |use Festival Lantern##74611
+learnpet Hyjal Bear Cub##53658 |use Hyjal Bear Cub##70140
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Fossilized Hatchling",{
-pet=266,
-description="This guide will walk you through obtaining\nthe Undead pet: Fossilized Hatchling",
-},[[
-step
-This pet is a rare Archaeology "Fossil" solve
-talk Belloc Brightblade##47571 |goto Orgrimmar,49.1,70.5 |only if skillmax("Archaeology")<1
-skillmax Archaeology,75 |only if skillmax("Archaeology")<1
-confirm |only if default
-step
-Open your _world map_, find dig sites in _Kalimdor_ and _Eastern Kingdoms_, and go to them
-|tip They look like small shovel icons on your world map that spawn in random places.  Once you get to the zone where the dig site is located, you will see the dig site on your map as a red highlighted area.
-Use your Survey ability inside the dig site area |cast Survey##80451
-A telescope will appear, follow the direction it points in and continue using your Survey ability to eventually find the artifacts
-|tip Each dig site has 3 artifacts you can find.
-Click the Archaeology Fragments that spawn on the ground
-You're looking for a _rare artifact_ in the _"Fossil"_ tab called _"Fossilized Hatchling"_. Solve this Archaeology puzzle
-collect 1 Fossilized Hatchling##60955
-step
-learnpet Fossilized Hatchling##45340 |use Fossilized Hatchling##60955
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Gilnean Raven",{
-pet=630,
-description="This guide will walk you through obtaining\nthe Flying pet: Gilnean Raven",
-},[[
-step
-This pet is only available to Alliance characters.
-learnpet Gilnean Raven##63098
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Gold Mini Jouster",{
-pet=260,
-description="This guide will walk you through obtaining\nthe Flying pet: Gold Mini Jouster",
-},[[
-step
-Going to _Egg Wave_ |only if not completedq(25560) |next "eggwave"
-Going to _The 'Unbeatable?' Pterodactyl: BEATEN._ |next "beaten" |only if completedq(25560)
-step
-label "eggwave"
-click Warchief's Command Board##10014
-accept Warchief's Command: Mount Hyjal!##27721 |goto Orgrimmar,49.7,76.5
-You will automatically accept a quest by entering Orgrimmar
-accept A Personal Summons##28790
-step
-talk Farseer Krogar##45244
-turnin A Personal Summons##28790 |goto 50.5,38.4
-accept The Eye of the Storm##28805 |goto 50.5,38.4
-step
-clicknpc Waters of Farseeing##50088
-Witness the Vision of the Farseer |q 28805/1 |goto 50.8,37.8
-step
-talk Farseer Krogar##45244
-turnin The Eye of the Storm##28805 |goto 50.5,38.4
-step
-talk Cenarion Emissary Blackhoof##15188 |goto 39.9,50.9
-Ask him to please send you to Moonglade
-You will teleport to Moonglade |goto Moonglade,45.1,43.1,0.5 |noway |c
-step
-talk Emissary Windsong##39865
-turnin Warchief's Command: Mount Hyjal!##27721 |goto Moonglade,45.5,44.9
-accept As Hyjal Burns##25316 |goto Moonglade,45.5,44.9
-step
-talk Sebelia##40843
-home Nordrassil |goto Mount Hyjal,63.1,24.1
-step
-talk Ysera##40928
-turnin As Hyjal Burns##25316 |goto 62.0,24.9
-accept Protect the World Tree##25317 |goto 62.0,24.9
-step
-talk Fayran Elthas##41861
-fpath Nordrassil |goto 62.1,21.6
-step
-talk Anren Shadowseeker##39925
-accept The Earth Rises##25460 |goto 64.0,22.6
-step
-talk Tholo Whitehoof##40278
-accept Inciting the Elements##25370 |goto 64.0,22.5
-step
-kill 8 Scalding Rock Elemental##40229+ |q 25460/1 |goto 65.8,20.8
-click Juniper Berries##28+
-collect 4 Juniper Berries##53009 |n
-Use your Juniper Berries on Faerie Dragons |use Juniper Berries##53009
-|tip They look like small blue flying dragons around this area.
-Follow the Faerie Dragons to find Twilight Inciters
-kill 4 Twilight Inciter##39926+  |q 25370/1 |goto 65.8,20.8
-step
-talk Tholo Whitehoof##40278
-turnin Inciting the Elements##25370 |goto 64.0,22.5
-accept Flames from Above##25574 |goto 64.0,22.5
-step
-talk Anren Shadowseeker##39925
-turnin The Earth Rises##25460 |goto 64.0,22.6
-step
-Use Tholo's Horn to call for an emerald dragon |use Tholo's Horn##55122
-Burn the Infiltrators' Encampment |q 25574/1 |goto 55.9,15.8
-step
-talk Tholo Whitehoof##40278
-turnin Flames from Above##25574 |goto 64.0,22.5
-step
-talk Malfurion Stormrage##15362
-turnin Protect the World Tree##25317 |goto 47.7,35.5
-accept War on the Twilight's Hammer##25319 |goto 47.7,35.5
-step
-talk Windspeaker Tamila##39869
-accept The Flameseer's Staff##25472 |goto 47.7,35.5
-step
-kill 4 Twilight Flamecaller##38926+ |q 25319/1 |goto 47.2,25.6
-kill 10 Twilight Vanquisher##38913+ |q 25319/2 |goto 47.2,25.6
-click Charred Staff Fragment##758+
-collect 8 Charred Staff Fragment |q 25472/1 |goto 47.2,25.6
-step
-talk Malfurion Stormrage##15362
-turnin War on the Twilight's Hammer##25319 |goto 47.7,35.5
-turnin The Flameseer's Staff##25472 |goto 47.7,35.5
-accept Flamebreaker##25323 |goto 47.7,35.5
-step
-Use your Flameseer's Staff on Blazebound Revenants |use Flameseer's Staff##53107
-kill 30 Unbound Flame Spirit##40080 |q 25323/1 |goto 44.7,33.2
-You can find more Blazebound Revenants at [48.5,29.2]
-step
-talk Malfurion Stormrage##15362
-turnin Flamebreaker##25323 |goto 47.7,35.5
-accept The Return of Baron Geddon##25464 |goto 47.7,35.5
-step
-Use your Flameseer's Staff on Baron Geddon |use Flameseer's Staff##54463
-|tip He's a big fire elemental standing in the middle of this crater.
-Weaken Baron Geddon 20 Times |q 25464/1 |goto 44.1,27.0
-|tip Run away when you see Galrond of the Claw yell "Look out!".
-step
-talk Malfurion Stormrage##15362
-turnin The Return of Baron Geddon##25464 |goto 47.7,35.5
-step
-talk Windspeaker Tamila##39869
-accept Emerald Allies##25430 |goto 47.7,35.5
-step
-talk Alysra##38917
-turnin Emerald Allies##25430 |goto 48.4,19.0
-accept The Captured Scout##25320 |goto 48.4,19.0
-step
-talk Scout Larandia##40096
-turnin The Captured Scout##25320 |goto 44.5,18.9
-accept Twilight Captivity##25321 |goto 44.5,18.9
-step
-kill Twilight Overseer##40123
-collect Twilight Overseer's Key |q 25321/1 |goto 44.4,20.7
-step
-talk Scout Larandia##40096
-turnin Twilight Captivity##25321 |goto 44.5,18.9
-accept Return to Alysra##25424 |goto 44.5,18.9
-step
-talk Alysra##38917
-turnin Return to Alysra##25424 |goto 48.4,19.0
-accept A Prisoner of Interest##25324 |goto 48.4,19.0
-step
-Enter the cave |goto 52.6,17.3 < 5 |walk
-Follow the path in the cave
-talk Captain Saynna Stormrunner##40139
-turnin A Prisoner of Interest##25324 |goto 56.8,18.8
-accept Through the Dream##25325 |goto 56.8,18.8
-step
-Leave the cave
-Deliver Arch Druid Fandral Staghelm |q 25325/1 |goto 52.6,17.3
-step
-talk Alysra##40178
-turnin Through the Dream##25325 |goto 52.2,17.4
-accept Return to Nordrassil##25578 |goto 52.2,17.4
-step
-talk Ysera##40928
-turnin Return to Nordrassil##25578 |goto 62.0,24.9
-accept The Return of the Ancients##25584 |goto 62.0,24.9
-step
-talk Oomla Whitehorn##39429
-turnin The Return of the Ancients##25584 |goto 35.7,19.4
-accept Harrying the Hunters##25255 |goto 35.7,19.4
-step
-talk Jadi Falaryn##39427
-accept End of the Supply Line##25233 |goto 35.8,19.7
-accept In the Rear With the Gear##25234 |goto 35.8,19.7
-step
-kill 6 Twilight Hunter##39437 |q 25255/1 |goto 34.6,24.5
-kill 4 Twilight Proveditor##39436 |q 25233/1 |goto 34.6,24.5
-|tip They walk with 3 Twilight slaves and a Twilight Slavedriver.
-click Twilight Supplies##9379+
-collect 36 Twilight Supplies |q 25234/1 |goto 34.6,24.5
-step
-talk Jadi Falaryn##39427
-turnin End of the Supply Line##25233 |goto 35.8,19.7
-turnin In the Rear With the Gear##25234 |goto 35.8,19.7
-step
-talk Oomla Whitehorn##39429
-turnin Harrying the Hunters##25255 |goto 35.7,19.4
-accept The Voice of Lo'Gosh##25269 |goto 35.7,19.4
-step
-talk Takrik Ragehowl##39432
-turnin The Voice of Lo'Gosh##25269 |goto 30.1,31.7
-accept Howling Mad##25270 |goto 30.1,31.7
-step
-kill Lycanthoth Vandal##39445+
-collect 6 Polluted Incense |q 25270/1 |goto 29.0,31.4
-step
-talk Takrik Ragehowl##39432
-turnin Howling Mad##25270 |goto 30.1,31.7
-accept Lycanthoth the Corruptor##25272 |goto 30.1,31.7
-step
-Use Lycanthoth's Incense next to Lycanthoth's Altar |use Lycanthoth's Incense##52682
-|tip Inside the cave.
-kill Lycanthoth##39446 |q 25272/1 |goto 32.4,37.3
-step
-talk Spirit of Lo'Gosh##39622
-turnin Lycanthoth the Corruptor##25272 |goto 32.5,37.4
-step
-talk Spirit of Lo'Gosh##39622
-accept The Shrine Reclaimed##25279 |goto 29.6,29.3
-step
-talk Takrik Ragehowl##39432
-turnin The Shrine Reclaimed##25279 |goto 28.4,29.9
-accept Cleaning House##25277 |goto 28.4,29.9
-step
-talk Royce Duskwhisper##39435
-accept The Eye of Twilight##25300 |goto 28.3,30.0
-step
-talk Rio Duran##39434
-accept From the Mouth of Madness##25297 |goto 28.2,29.9
-step
-click Bitterblossom##7444
-collect Bitterblossom |q 25297/2 |goto 28.9,32.1
-step
-click a Stonebloom##9386
-collect Stonebloom |q 25297/1 |goto 26.5,35.0
-step
-click Eye of Twilight##7011
-turnin The Eye of Twilight##25300 |goto 27.2,35.2
-accept Mastering Puppets##25301 |goto 27.2,35.2
-step
-click Darkflame Ember##9569
-collect Darkflame Ember |q 25297/3 |goto 28.4,35.8
-step
-click Twilight Cauldron##9387
-turnin From the Mouth of Madness##25297 |goto 28.4,36.5
-accept Free Your Mind, the Rest Follows##25298 |goto 28.4,36.5
-step
-Enter the cave |goto 26.9,36.3 < 5 |walk
-talk Kristoff Manheim##39797
-accept Gar'gol's Gotta Go##25328 |goto 27.2,40.8
-|tip This quest is currently bugged, so some players are able to accept the quest while others cannot.
-step
-click Gar'gol's Personal Treasure Chest##10
-collect Rusted Skull Key |q 25328/1 |goto 26.5,38.5
-step
-click The Twilight Apocrypha##470
-turnin Mastering Puppets##25301 |goto 25.8,41.6
-accept Elementary!##25303 |goto 25.8,41.6
-stickystart "hovbrute"
-step
-clicknpc Crucible of Fire##39730
-Activate the Crucible of Fire |q 25303/3 |goto 26.0,41.8
-step
-clicknpc Crucible of Earth##39737
-Activate the Crucible of Earth |q 25303/1 |goto 25.6,41.7
-step
-clicknpc Crucible of Air##39736
-Activate the Crucible of Air |q 25303/2 |goto 25.8,41.9
-step
-clicknpc Crucible of Water##39738
-Activate the Crucible of Water |q 25303/4 |goto 26.0,41.6
-step "hovbrute"
-kill Hovel Brute##39642+, Hovel Shadowcaster##39643+
-Slay 8 Minions of Gar'gol |q 25277/1 |goto 26.7,39.2
-talk Twilight Servitor##39644
-Administor the drought
-Free 8 Twilight Servitors |q 25298/1 |goto 26.7,39.2
-step
-click The Twilight Apocrypha##470
-turnin Elementary!##25303 |goto 25.8,41.6
-accept Return to Duskwhisper##25312 |goto 25.8,41.6
-step
-talk Kristoff Manheim##39797
-turnin Gar'gol's Gotta Go##25328 |goto 27.2,40.8
-accept Get Me Outta Here!##25332 |goto 27.2,40.8
-step
-Leave the cave
-Escort Kristoff Out |q 25332/1 |goto 27.1,36.0
-step
-talk Royce Duskwhisper##39435
-turnin Return to Duskwhisper##25312 |goto 28.6,30.2
-turnin Get Me Outta Here!##25332 |goto 28.6,30.2
-step
-talk Takrik Ragehowl##39432
-turnin Cleaning House##25277 |goto 28.4,29.9
-accept Sweeping the Shelf##25354 |goto 28.4,29.9
-accept Lightning in a Bottle##25355 |goto 28.4,29.9
-step
-talk Rio Duran##39434
-turnin Free Your Mind, the Rest Follows##25298 |goto 28.2,29.9
-step
-kill 8 Twilight Stormcaller##39843+ |q 25354/1 |goto 29.1,40.7
-kill 5 Howling Riftdweller##39844+ |q 25354/2 |goto 29.1,40.7
-click Lightning Channel##9816
-collect Charged Condenser Jar |q 25355/1 |goto 29.1,40.7
-step
-Use your Totem of Lo'Gosh |use Totem of Lo'Gosh##52854
-talk Spirit of Lo'Gosh##39622
-turnin Lightning in a Bottle##25355
-accept Into the Maw!##25617 |goto 26.2,41.0 |n
-Go inside the blue portal |goto 25.8,41.5 < 5 |noway |c |walk
-step
-talk Jordan Olafson##40834
-turnin Into the Maw!##25617 |goto 26.3,41.9
-accept Forged of Shadow and Flame##25575 |goto 26.3,41.9
-accept Crushing the Cores##25577 |goto 26.3,41.9
-step
-talk Yargra Blackscar##40837
-accept Rage of the Wolf Ancient##25576 |goto 26.3,42.0
-step
-kill 12 Dark Iron Laborer##40838+ |q 25576/1 |goto 29.6,41.8
-kill Searing Guardian##40841+
-collect 8 Smoldering Core##55123 |n
-Use your Smoldering Cores next to Twilight Anvils |use Smoldering Core##55123
-|tip They are small anvils sitting on the ground around this area.
-Destroy 8 Smoldering Cores |q 25577/1 |goto 29.6,41.8
-Click Twilight Arms Crates
-|tip They look like wooden boxes sitting on the ground around this area.
-Destroy 10 Twilight Arms Crates |q 25575/1 |goto 29.6,41.8
-step
-talk Yargra Blackscar##40837
-turnin Rage of the Wolf Ancient##25576 |goto 26.3,42.0
-step
-talk Jordan Olafson##40834
-turnin Forged of Shadow and Flame##25575 |goto 26.3,41.9
-turnin Crushing the Cores##25577 |goto 26.3,41.9
-accept Cindermaul, the Portal Master##25599 |goto 26.3,41.9
-step
-kill Cindermaul##40844 |q 25599/1 |goto 30.7,41.7
-click Battered Stone Chest##1387
-collect Tome of Openings |q 25599/2 |goto 30.7,41.7
-step
-talk Jordan Olafson##40834
-turnin Cindermaul, the Portal Master##25599 |goto 26.3,41.9
-accept Forgemaster Pyrendius##25600 |goto 26.3,41.9
-step
-Click the Portal Runes
-|tip They are brown metal plates on the ground on this small circular island in the lava.
-Lure Forgemaster Pyrendius onto the activated Portal Runes
-|tip This will weaken him and allow you to kill him.
-kill Forgemaster Pyrendius##40845 |q 25600/1 |goto 31.9,46.3
-step
-talk Jordan Olafson##40834
-turnin Forgemaster Pyrendius##25600 |goto 26.3,41.9
-accept Return from the Firelands##25612 |goto 26.3,41.9 |goto 25.9,40.9 |n
-Go inside the blue portal |goto 26.3,40.9 < 5 |noway |c |walk
-step
-talk Takrik Ragehowl##39432
-turnin Sweeping the Shelf##25354 |goto 28.4,29.9
-turnin Return from the Firelands##25612 |goto 28.4,29.9
-step
-talk Vision of Ysera##46987
-accept Aviana's Legacy##27874 |goto 28.4,29.8
-step
-talk Rio Duran##39434
-accept The Fires of Mt. Hyjal##25630 |goto 28.2,29.9
-step
-talk Laina Nightsky##39927
-turnin The Fires of Mt. Hyjal##25630 |goto 19.0,40.9
-accept Fighting Fire With ... Anything##25381 |goto 19.0,40.9
-accept Disrupting the Rituals##25382 |goto 19.0,40.9
-step
-talk Mylune##39930
-accept Save the Wee Animals##25385 |goto 19.2,37.9
-step
-talk Matoclaw##39928
-accept If You're Not Against Us...##25404 |goto 19.0,37.0
-step
-talk Elizil Wintermoth##41860
-fpath Grove of Aessina |goto 19.6,36.4
-step
-talk Tyrus Blackhorn##39933
-Tell him you've been sent to request his aid, then tell him he could be destroyed, then ask him if he will help you
-Persuade Blackhorn |q 25404/1 |goto 22.3,44.9
-step
-talk Tyrus Blackhorn##39933
-turnin If You're Not Against Us...##25404 |goto 22.3,44.9
-accept Seeds of Their Demise##25408 |goto 22.3,44.9
-step
-kill Wailing Weed##40066+
-collect 8 Bileberry |q 25408/1 |goto 21.1,42.6
-step
-talk Tyrus Blackhorn##39933
-turnin Seeds of Their Demise##25408 |goto 22.3,44.9
-accept A New Master##25411 |goto 22.3,44.9
-step
-kill Twilight Inferno Lord##39974
-Use your Bottled Bileberry Brew on the corpse of a Twilight Inferno Lord |use Bottled Bileberry Brew##53120
-Subjugate a Twilight Inferno Lord |q 25411/1 |goto 14.5,45.3
-step
-Next to you:
-talk Subjugated Inferno Lord##40093
-turnin A New Master##25411
-accept The Name Never Spoken##25412
-stickystart "ragefire"
-step
-click Southern Firestone##9407
-Examine the Southern Firestone |q 25412/3 |goto 14.3,45.4
-step
-click Central Firestone##9407
-Examine the Central Firestone |q 25412/2 |goto 11.7,41.5
-step
-click Northern Firestone##9407
-Examine the Northern Firestone |q 25412/1 |goto 9.6,36.5
-step "ragefire"
-kill 10 Raging Firestorm##39939+ |q 25381/1 |goto 11.3,38.2
-kill 6 Twilight Inferno Lord##39974+  |q 25382/1 |goto 11.3,38.2
-Click Panicked Bunnies and Terrified Squirrels
-|tip They are small and run around this area.
-collect 10 Frightened Animal |q 25385/1 |goto 11.3,38.2
-step
-talk Laina Nightsky##39927
-turnin Fighting Fire With ... Anything##25381 |goto 19.0,40.9
-turnin Disrupting the Rituals##25382 |goto 19.0,40.9
-step
-talk Mylune##39930
-turnin Save the Wee Animals##25385 |goto 19.2,37.9
-accept Oh, Deer!##25392 |goto 19.2,37.9
-step
-talk Tyrus Blackhorn##39933
-turnin The Name Never Spoken##25412 |goto 22.3,44.9
-accept Black Heart of Flame##25428 |goto 22.3,44.9
-stickystart "fawnback"
-step
-Use your Charred Branch while in the burning forest area |use Charred Branch##53464
-kill Thol'embaar##40107
-collect Black Heart of Thol'embaar |q 25428/1 |goto 14.6,42.2
-step "fawnback"
-click 3 Injured Fawn##39999+
-Lead the Injured Fawns back to Mylune at [19.2,37.9]
-Escort 3 Injured Fawns Home |q 25392/1 |goto 12.5,44.6
-step
-talk Mylune##39930
-turnin Oh, Deer!##25392 |goto 19.2,37.9
-step
-talk Tyrus Blackhorn##39933
-turnin Black Heart of Flame##25428 |goto 22.3,44.9
-accept Good News... and Bad News##29066 |goto 22.3,44.9
-step
-talk Laina Nightsky##39927
-accept Last Stand at Whistling Grove##25940 |goto 19.0,40.9
-step
-talk Matoclaw##39928
-turnin Good News... and Bad News##29066 |goto 19.0,37.0
-step
-talk Keeper Taldros##39932
-turnin Last Stand at Whistling Grove##25940 |goto 13.7,32.8
-accept The Bears Up There##25462 |goto 13.7,32.8
-step
-clicknpc Climbing Tree##40190
-clicknpc Hyjal Bear Cub##40240+
-Use your Climb Up ability to climb to the top of the tree
-Use your Chuck-a-bear ability to throw the cubs down
-|tip Aim the yellow spot at the bearskin trampoline on the ground.
-Rescue 6 Hyjal Bear Cubs |q 25462/1 |goto 13.9,34.1
-step
-talk Keeper Taldros##39932
-turnin The Bears Up There##25462 |goto 13.7,32.8
-accept Smashing Through Ashes##25490 |goto 13.7,32.8
-step
-kill 8 Charbringer##40336+ |q 25490/1 |goto 16.4,51.8
-step
-talk Arch Druid Hamuul Runetotem##5769
-turnin Smashing Through Ashes##25490 |goto 27.1,62.6
-accept Durable Seeds##25491 |goto 27.1,62.6
-accept Fresh Bait##25493 |goto 27.1,62.6
-step
-talk Rayne Feathersong##40331
-accept Firebreak##25492 |goto 27.1,63.0
-step
-kill 10 Lava Surger##46911+ |q 25492/1 |goto 34.0,53.2
-kill Core Hound##46910+
-collect 4 Core Hound Entrails |q 25493/1 |goto 34.0,53.2
-click Scorched Soil##768
-collect 10 Hyjal Seedling |q 25491/1 |goto 34.0,53.2
-step
-talk Dinorae Swiftfeather##43481
-fpath Shrine of Aviana |goto 41.2,42.6
-step
-talk Thisalee Crow##41006
-accept The Wormwing Problem##25655 |goto 42.2,45.4
-accept Scrambling for Eggs##25656 |goto 42.2,45.4
-step
-talk Choluna##41005
-turnin Aviana's Legacy##27874 |goto 44.4,46.2
-accept An Offering for Aviana##25663 |goto 44.4,46.2
-step
-Use your Sacred Nectar next to Aviana's Burial Circle |use Sacred Nectar##55208
-Offer the Nectar |q 25663/1 |goto 40.4,44.3
-talk Mysterious Winged Spirit##41068
-turnin An Offering for Aviana##25663 |goto 40.4,44.3
-accept A Plea From Beyond##25665 |goto 40.4,44.3
-step
-kill Wormwing Screecher##41027+, Wormwing Swifttalon##41028+
-Slay 10 Wormwing Harpies |q 25655/1 |goto 36.9,43.4
-click Stolen Hyjal Egg##1867+
-collect 8 Hyjal Egg |q 25656/1 |goto 36.9,43.4
-step
-talk Thisalee Crow##41006
-turnin The Wormwing Problem##25655 |goto 42.2,45.4
-turnin Scrambling for Eggs##25656 |goto 42.2,45.4
-accept A Bird in Hand##25731 |goto 42.2,45.4
-step
-talk Choluna##41005
-turnin A Plea From Beyond##25665 |goto 44.4,46.2
-accept A Prayer and a Wing##25664 |goto 44.4,46.2
-step
-Click the Harpy Signal Fire
-|tip It's a brazier with red fire in it.
-Fight Marion Wormwing until she gets captured |q 25731/1 |goto 38.4,44.2
-talk Marion Wormwing##41112 |goto 38.4,44.2
-Ask her why she is stealing eggs, then tell Thisalee to kill her
-Interrogate Marion Wormwing |q 25731/2
-step
-Use your Enormous Bird Call in Blaithe's Roost |use Enormous Bird Call##55211
-|tip It's a huge bird nest sitting on top of this mountain peak.
-kill Blaithe##41084
-collect Ancient Feather |q 25664/1 |goto 39.2,37.1
-step
-talk Thisalee Crow##41006
-turnin A Bird in Hand##25731 |goto 42.2,45.4
-step
-talk Choluna##41005
-turnin A Prayer and a Wing##25664 |goto 44.4,46.2
-step
-Go upstairs in the Shrine of Aviana
-talk Skylord Omnuron##40997
-accept Fact-Finding Mission##25740 |goto 43.5,45.9
-step
-talk Arch Druid Hamuul Runetotem##5769
-turnin Durable Seeds##25491 |goto 27.1,62.6
-turnin Fresh Bait##25493 |goto 27.1,62.6
-accept Hell's Shells##25507 |goto 27.1,62.6
-step
-talk Rayne Feathersong##40331
-turnin Firebreak##25492 |goto 27.1,63.0
-accept Prepping the Soil##25502 |goto 27.1,63.0
-step
-click Flameward##40460
-Activate the Flameward |q 25502/1 |goto 33.0,64.6
-Defend the Flameward |q 25502/2 |goto 33.0,64.6
-step
-talk Thisalee Crow##41006
-turnin Fact-Finding Mission##25740 |goto 32.8,70.8
-accept Sethria's Brood##25746 |goto 32.8,70.8
-accept A Gap in Their Armor##25758 |goto 32.8,70.8
-step
-click Codex of Shadows##470
-accept The Codex of Shadows##25763 |goto 31.3,77.1
-step
-kill Twilight Dragonkin##41029+, Twilight Dragonkin Armorers##41030+
-Slay 12 Sethria's Minions |q 25746/1 |goto 30.9,76.7
-click Twilight Armor Plate##7041
-collect 8 Twilight Armor Plate |q 25758/1 |goto 30.9,76.7
-step
-talk Thisalee Crow##41006
-turnin Sethria's Brood##25746 |goto 32.8,70.8
-turnin A Gap in Their Armor##25758 |goto 32.8,70.8
-accept Disassembly##25761 |goto 32.8,70.8
-turnin The Codex of Shadows##25763 |goto 32.8,70.8
-accept Egg Hunt##25764 |goto 32.8,70.8
-step
-Use Thisalee's Shive on Twilight Juggernauts |use Thisalee's Shiv##55883
-|tip Use Thisalee's Shive multiple times to remove the Twilight Juggernauts' Armor Plating and make them weaker.
-kill 3 Twilight Juggernaut##41031 |q 25761/1 |goto 31.1,76.7
-click Shadow Cloak Generator##9532+
-Unveil and Defend Aviana's Egg |q 25764/1 |goto 31.1,76.7
-step
-talk Thisalee Crow##41006
-turnin Disassembly##25761 |goto 32.8,70.8
-turnin Egg Hunt##25764 |goto 32.8,70.8
-accept Sethria's Demise##25776 |goto 32.8,70.8
-step
-kill Sethria##41255
-Use Thisalee's Signal Rocket when Sethria turns into a dragon |use Thisalee's Signal Rocket##56003
-kill Sethria##41255 |q 25776/1 |goto 35.5,98.0
-step
-talk Thisalee Crow##41006
-turnin Sethria's Demise##25776 |goto 32.8,70.8
-accept Return to the Shrine##25795 |goto 32.8,70.8
-step
-Use your Heap of Core hound Innards near Nemesis |use Heap of Core hound Innards##54744
-|tip Nemesis is a huge turtle that walks all around The Flamewake area, so you may need to search for him.
-clicknpc Nemesis##40340
-collect Nemesis Shell Fragment |q 25507/1 |goto 37.4,52.3
-step
-talk Choluna##41005
-turnin Return to the Shrine##25795 |goto 44.4,46.2
-accept An Ancient Reborn##25807 |goto 44.4,46.2
-step
-Use Herald's Incense next to Aviana's Egg |use Herald's Incense##56016
-|tip Aviana's Egg is in the tree tower, in a side room.
-Burn Herald's Incense |q 25807/1 |goto 44.3,47.9
-step
-talk Aviana##41308
-turnin An Ancient Reborn##25807 |goto 44.3,48.0
-step
-talk Morthis Whisperwing##41003
-accept The Hatchery Must Burn##25810 |goto 44.1,45.9
-step
-|goto 39.2,58.1 |n
-Go inside the blue portal |goto 38.8,58.0 < 5 |walk
-talk Farden Talonshrike##40578
-turnin The Hatchery Must Burn##25810 |goto 37.2,56.2
-accept Flight in the Firelands##25523 |goto 37.2,56.2
-step
-click the Twilight Weapon Rack##130
-collect Twilight Firelance##52716 |q 25523 |goto 37.2,56.2
-step
-Equip the Twilight Firelance |use Twilight Firelance##52716
-Click Aviana's Guardian to ride it |invehicle |goto 37.4,56.0
-|tip They are hippogryphs.
-step
-Use your Flap ability on your hotbar repeatedly to fly to this green flag
-Visit the Guardian Flag |q 25523/1 |goto 36.4,53.2
-model 9475
-step
-Use your Flap ability on your hotbar repeatedly to fly to this spot
-talk Farden Talonshrike##40578
-turnin Flight in the Firelands##25523 |goto 37.2,56.2
-accept Wave One##25525 |goto 37.2,56.2
-step
-Use your Flap ability on your hotbar repeatedly to fly around this area
-Fly into Twilight Buzzards to joust them
-kill 10 Twilight Knight Rider##39835+ |q 25525/1 |goto 36.8,54.0
-step
-Use your Flap ability on your hotbar repeatedly to fly to this spot
-talk Farden Talonshrike##40578
-turnin Wave One##25525 |goto 37.2,56.2
-accept Wave Two##25544 |goto 37.2,56.2
-step
-Use your Flap ability on your hotbar repeatedly to fly around this area
-Fly into Twilight Firebirds to joust them
-|tip Be careful, don't let the burning Falling Boulders hit you.
-kill 10 Twilight Lancer##40660 |q 25544/1 |goto 36.8,54.0
-step
-Use your Flap ability on your hotbar repeatedly to fly to this spot
-talk Farden Talonshrike##40578
-turnin Wave Two##25544 |goto 37.2,56.2
-accept Egg Wave##25560 |goto 37.2,56.2
-step
-Use your Flap ability on your hotbar repeatedly to fly around this area
-Run over Firelands Eggs
-|tip They look like blue eggs on the ground around this area.
-Destroy 40 Firelands Eggs |q 25560/1 |goto 33.3,56.9
-You can find more Firelands Eggs all around 35.8,53.6
-step
-Use your Flap ability on your hotbar repeatedly to fly to this spot
-talk Farden Talonshrike##40578
-turnin Egg Wave##25560 |goto 37.2,56.2
-step
-label "beaten"
-|goto Mount Hyjal,39.1,58.3 |n
-Go inside the blue portal |goto 38.77,58.01 < 5 |walk
-talk Farden Talonshrike##40578
-accept Vigilance on Wings##29177 |goto 37.2,56.2
-step
-click the Twilight Weapon Rack##130
-collect 1 Twilight Firelance##52716 |q 29177 |goto 37.2,56.1
-step
-Equip the Twilight Firelance |use Twilight Firelance##52716
-Click Aviana's Guardian to ride it |invehicle |goto 37.4,56.0
-|tip They are hippogryphs.
-step
-Use your Flap ability on your hotbar repeatedly to fly around this area
-kill 10 Twilight Lancer##40660+ |q 29177/1 |goto 36.6,53.4
-step
-talk Farden Talonshrike##40578
-turnin Vigilance on Wings##29177 |goto 37.2,56.2
-|tip You may choose only one Jouster.
-collect Blue Mini Jouster##65661 |goto 37.2,56.2 |or
-collect Gold Mini Jouster##65662 |goto 37.2,56.2 |or
-step
-learnpet Blue Mini Jouster##42177 |use Blue Mini Jouster##65661 |or
-learnpet Gold Mini Jouster##42183 |use Gold Mini Jouster##65662 |or
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Golden Dragonhawk Hatchling",{
-pet=142,
-description="This guide will walk you through obtaining\nthe Dragonkin pet:Golden Dragonhawk Hatchling",
-},[[
-step
-talk Jilanne##16860
-buy 1 Golden Dragonhawk Hatchling##29953 |goto Eversong Woods 44.8,71.6
-step
-learnpet Golden Dragonhawk Hatchling##21055 |use Golden Dragonhawk Hatchling##29953
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Great Horned Owl", {
-pet=68,
-description="This guide will walk you through obtaining the Flying pet: Great Horned Owl\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
-},[[
-step
-#include "auctioneer"
-buy 1 Great Horned Owl##8500
-|tip This pet must be bought with an Alliance character or through the Auction House
-step
-learnpet Great Horned Owl##7553 |use Great Horned Owl##8500
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Guild Herald",{
-pet=283,
-description="This guide will walk you through obtaining\nthe Humanoid pet: Guild Herald",
-},[[
-step
-Your guild needs have the achievement "Profit Sharing"
-|tip Loot 100,000 gold from creatures |achieve 5201
-step
-talk Goram##46572
-buy 1 Guild Herald##65364 |goto Orgrimmar,48.38,75.79
-step
-learnpet Guild Herald##49590 |use Guild Herald##65364
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Guild Herald",{
-pet=282,
-description="This guide will walk you through obtaining\nthe Humanoid pet: Guild Herald",
-},[[
-step
-This pet model is only available to Alliance Characters.
-learnpet Guild Herald##49587
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Guild Page", {
-pet=281,
-description="This guide will walk you through obtaining\nthe Humanoid pet: Guild Page",
-},[[
-step
-Your guild needs have the achievement "Alliance Slayer"
-|tip Complete the Slayer guild achievements |achieve 5179
-step
-talk Goram##46572
-buy 1 Guild Page##65362 |goto Orgrimmar,48.38,75.79
-step
-learnpet Guild Page##49588 |use Guild Page##65362
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Guild Page",{
-pet=280,
-description="This guide will walk you through obtaining\nthe Humanoid pet: Guild Page",
-},[[
-step
-This pet model is only available to Alliance Characters.
-learnpet Guild Page##49586
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Hare",{
-pet=448,
-description="This guide will walk you through obtaining\nthe Critter pet: Hare",
-},[[
-step
-Challenge one to a pet battle and capture it
-|tip The Hares around this area are level 1.
-learnpet Hare##61751 |goto Durotar 47.3,30.5
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Hawk Owl", {
-pet=67,
-description="This guide will walk you through obtaining the Flying pet: Hawk Owl\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
-},[[
-step
-#include "auctioneer"
-buy 1 Hawk Owl##8501
-|tip This pet must be bought with an Alliance character or through the Auction House
-step
-learnpet Hawk Owl##7555 |use Hawk Owl##8501
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Lashtail Hatchling",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Lashtail Hatchling",{
 pet=307,
-description="This guide will walk you through obtaining\nthe Beast pet: Lashtail Hatchling",
+description="This guide will walk you through obtaining the Beast pet: Lashtail Hatchling",
 },[[
 step
 talk Commander Aggro'gosh##2464
@@ -2382,115 +687,204 @@ confirm
 step
 learnpet Lashtail Hatchling##52894 |use Lashtail Hatchling##69251
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Lil' Tarecgosa", {
-pet=320,
-description="This guide will walk you through obtaining\nthe Dragonkin pet: Lil' Tarecgosa",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Orange Tabby Cat",{
+pet=43,
+description="This guide will walk you through obtaining the Beast pet: Orange Tabby Cat\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
 },[[
 step
-This pet is a reward for complete the achievement _"Dragonwrath, Tarecgosa's Rest - Guild Edition"_
-|tip In order to earn this you must have somebody in your guild with the Legendary weapon "Dragonwrath, Tarecgosa's Rest"
-Earn _"Dragonwrath, Tarecgosa's Rest - Guild Edition"_ |achieve 5840
+#include "auctioneer"
+buy 1 Cat Carrier (Orange Tabby)##8487
+|tip This pet must be bought with an Alliance character or through the Auction House
+step
+learnpet Orange Tabby Cat##7382 |use Cat Carrier (Orange Tabby)##8487
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Panther Cub",{
+pet=301,
+description="This guide will walk you through obtaining the Beast pet: Panther Cub",
+},[[
+step
+talk Bwemba##53081
+accept Bwemba's Spirit##29219 |goto Orgrimmar,32.6,68.1
+accept To Bambala##29220 |goto Orgrimmar,32.6,68.1
+step
+talk Kil'karil##52980
+turnin To Bambala##29220 |goto Northern Stranglethorn,64.6,40.0
+accept Serpents and Poison##29221 |goto Northern Stranglethorn,64.6,40.0
+step
+kill 10 Jungle Serpent |q 29221/1 |goto 61.2,39.8
+Click Injured Bambala Headhunters
+|tip They look like green bodies laying on the ground around this area.
+Heal 10 Headhunters |q 29221/2 |goto 61.2,39.8
+step
+talk Kil'karil##52980
+turnin Serpents and Poison##29221 |goto 64.6,40.0
+step
+Next to you:
+talk Bwemba##52234
+accept Spirits Are With Us##29222
+step
+Click the Bonfire |tip It looks like a big pile of burning sticks.
+Watch the dialogue
+Use the Bonfire near Bambala |q 29222/1 |goto 65.1,39.9
+step
+Next to you:
+talk Bwemba##52234
+turnin Spirits Are With Us##29222
+step
+talk Kil'karil##52980
+accept Nesingwary Will Know##29223 |goto 64.6,40.0
+step
+talk Hemet Nesingwary Jr.##52294
+turnin Nesingwary Will Know##29223 |goto 44.1,22.9
+accept Track the Tracker##29226 |goto 44.1,22.9
+step
+talk Grent Direhammer##52346
+turnin Track the Tracker##29226 |goto 50.4,21.7
+accept The Hunter's Revenge##29227 |goto 50.4,21.7
+step
+kill Mauti?##52349
+Bring Grent Direhammer to the body of Mauti |q 29227/1 |goto 64.0,19.6
+step
+Click the Complete Quest box that appears under you minimap
+turnin The Hunter's Revenge##29227
+You will automatically accept a new quest:
+accept Follow That Cat##29228
+step
+Go to this spot
+Find Mauti's Lair |q 29228/1 |goto 77.7,68.4
+step
+Next to you:
+talk Bwemba##52234
+turnin Follow That Cat##29228
+accept Mauti##29230
+step
+kill Mauti##52372
+Let Bwemba Inspect the Cat |q 29230/1 |goto 77.2,69.0
+step
+Next to you:
+talk Bwemba##52234
+turnin Mauti##29230
+accept How's the Hunter Holding Up?##29231
+step
+Enter the cave |goto 76.5,67.5,0.5 |c
+talk Grent Direhammer##52371
+turnin How's the Hunter Holding Up?##29231 |goto 76.1,66.7
+accept Bury Me With Me Boots...##29232 |goto 76.1,66.7
+step
+Click Direhammer's Boots
+|tip They look like a small pair of brown boots sitting on the ground inside this cave.
+collect Direhammer's Boots |q 29232/1 |goto 76.0,66.5
+step
+talk Grent Direhammer##52371
+turnin Bury Me With Me Boots...##29232 |goto 76.1,66.7
+step
+Talk to Panther Cub
+accept Some Good Will Come##29268 |goto 76.1,66.7
+collect 1 Panther Cub##68833 |goto 76.1,66.7
+step
+learnpet Panther Cub##52226 |use Panther Cub##68833
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Silver Tabby Cat",{
+pet=45,
+description="This guide will walk you through obtaining the Beast pet: Silver Tabby Cat\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
+},[[
+step
+#include "auctioneer"
+buy 1 Cat Carrier (Silver Tabby)##8488
+tip This pet must be bought with an Alliance character or through the Auction House
+step
+learnpet Silver Tabby Cat##7381 |use Cat Carrier (Silver Tabby)##8488
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Sumprush Rodent",{
+pet=1128,
+description="This guide will walk you through obtaining the Beast pet: Sumprush Rodent",
+},[[
+step
+In order to get this pet, you will need to collect Lion's Landing Commissions.
+collect 2000 Lion's Landing Commision##91838 |next buy
+Click here to farm. |confirm
+step
+kill Shieldwall Footman##67304+, Dwarven Mortar Team Engineer##67545+, Shieldwall Rifleman##67297+, Shieldwall Vindicator##67296+, Thane Stonehearth##67636
+collect Lion's Landing Commission##91838 |goto Krasarang Wilds 81.6,25.3
+step
+label buy
+talk Ongrom Black Tooth##67751
+buy Rodent Crate##92527 |goto Krasarang Wilds/0 10.8,53.4
+You will need to search for a Sumprush Rodent around the area.
+Use your Rodent Crate to capture the Sumprush Rodent. |use Rodent Crate##92527
+learnpet Sumprush Rodent##68506 |goto Krasarang Wilds/0 10.8,53.4
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Armadillo Pup",{
+pet=272,
+description="This guide will walk you through obtaining the Critter pet: Armadillo Pup",
+},[[
+step
+This pet requires your guild to have the achievement "Critter Kill Squad" completed
+|tip kill 50,000 critters |achieve 5144
 step
 talk Goram##46572
-buy 1 Lil' Tarecgosa##71033 |goto Orgrimmar 48.2,75.6
+buy 1 Armadillo Pup##63398 |goto Orgrimmar,48.38,75.79
 step
-learnpet Lil' Tarecgosa##54027 |use Lil' Tarecgosa##71033
+learnpet Armadillo Pup##48242 |use Armadillo Pup##63398
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Lumpy",{
-pet=337,
-description="This guide will walk you through obtaining\nthe Elemental pet:Lumpy",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Brown Prairie Dog",{
+pet=70,
+description="This guide will walk you through obtaining the Critter pet: Brown Prairie Dog",
 },[[
 step
-talk Strange Snowman##13636
-accept You're a Mean One...##6983 |goto Hillsbrad Foothills,42.3,41.1
+talk Halpa##8401
+buy 1 Prarie Dog Whistle##10394 |goto Thunder Bluff 62.8,58.2
 step
-kill The Abominable Greench##13602
-|tip This will require a group to kill, but you do not have to be in a party.
-Free Metzen the Reindeer |q 6983/1 |goto 43.6,39.0
-collect Stolen Treats |q 6983/2 |goto 43.6,39.0
-|tip You can pick this up if someone has killed The Abominable Grinch recently.
-step
-talk Kaymard Copperpinch##13418
-turnin You're a Mean One...##6983 |goto Orgrimmar,52.6,77.4
-collect 1 Stolen Present##73792 |goto Orgrimmar,52.6,77.4
-Open your Stolen Present |use Stolen Present##73792
-collect 1 Lump of Coal##73797 |goto Orgrimmar,52.6,77.4
-step
-learnpet Lumpy##55215 |use Lump of Coal##73797
+learnpet Brown Prairie Dog##14421 |use Prarie Dog Whistle##10394
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Lunar Lantern",{
-pet=341,
-description="This guide will walk you through obtaining\nthe Magic pet: Lunar Lantern",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Dung Beetle",{
+pet=467,
+description="This guide will walk you through obtaining the Critter pet: Dung Beetle",
 },[[
 step
-This pet can only be obtained during the Lunar Festival event.
-collect 50 Coin of Ancestry##21100
-Click here for directions to the vendor |confirm |next "vendor"
-Click here for our guide on getting the Coins of Ancestry |confirm |next "coins"
-step
-label "coins"
-#include "H_Lunar_Festival_Quests"
-step
-#include "H_Lunar_Festival_Elders"
-step
-label "vendor"
-talk Valadar Starsong##15864
-buy Lunar Lantern##74610 |goto Moonglade,54.0,35.0
-step
-learnpet Lunar Lantern##55571 |use Lunar Lantern##74610
+Challenge one to a pet battle and capture it
+|tip The Dung Beetle is level 1.
+learnpet Dung Beetle##62115 |goto Orgrimmar 42.4,46.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Magic Lamp",{
-pet=292,
-description="This guide will walk you through obtaining the Magic pet:Magic Lamp.\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Egbert",{
+pet=158,
+description="This guide will walk you through obtaining the Critter pet: Egbert",
+},[[
+step
+You may only get _three_ of these pets _per year_ from _completing_ the quest lines _Back to the Orphanage (Shattrath)_, _Warden of the Horde_, and _Back to the Orphanage (Dalaran)_
+If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+For the Shattrath Daily set, click here. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+confirm
+step
+collect 1 Egbert's Egg##32616 |tip Warden of the Horde
+step
+learnpet Egbert##23258 |use Egbert's Egg##32616
+|tip Warden of the Horde
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Elwynn Lamb",{
+pet=209,
+description="This guide will walk you through obtaining the Critter pet: Elwynn Lamb\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
 },[[
 step
 #include "auctioneer"
-buy 1 Magic Lamp##67275
+buy 1 Elwynn Lamb##44974
 |tip This pet must be bought with an Alliance character or through the Auction House
 step
-learnpet Magic Lamp##50545 |use Magic Lamp##67275
+learnpet Elwynn Lamb##33200 |use Elwynn Lamb##44974
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Magical Crawdad",{
-pet=132,
-description="This guide will walk you through obtaining\nthe Aquatic pet: Magical Crawdad",
-},[[
-#include "H_Mr._Pinchy's_Magical_Crawdad_Box"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Mechanopeep",{
-pet=215,
-description="This guide will walk you through obtaining the Mechanical pet: Mechanopeep\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Hare",{
+pet=448,
+description="This guide will walk you through obtaining the Critter pet: Hare",
 },[[
 step
-#include "auctioneer"
-buy 1 Mechanopeep##45002
-|tip This pet must be bought with an Alliance character or through the Auction House
-step
-learnpet Mechanopeep##33274 |use Mechanopeep##45002
+Challenge one to a pet battle and capture it
+|tip The Hares around this area are level 1.
+learnpet Hare##61751 |goto Durotar 47.3,30.5
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Moonkin Hatchling",{
-pet=298,
-description="This guide will walk you through obtaining\nthe Humanoid pet: Moonkin Hatchling",
-},[[
-step
-This pet can be purchased for $10.00 on the official Blizzard Store.
-|tip After purchasing, check your in-game mailbox
-collect Moonkin Egg##68384
-Open the Moonkin Egg |use Moonkin Egg##68384
-collect Moonkin Hatchling##68619
-step
-learnpet Moonkin Hatchling##51649 |use Moonkin Hatchling##68619
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Moonkin Hatchling",{
-pet=296,
-description="This guide will walk you through obtaining\nthe Humanoid pet: Moonkin Hatchling",
-},[[
-step
-This pet model is only available to Alliance characters.
-learnpet Moonkin Hatchling##51601
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Mr. Wiggles",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Mr. Wiggles",{
 pet=126,
-description="This guide will walk you through obtaining\nthe Critter pet:Mr. Wiggles",
+description="This guide will walk you through obtaining the Critter pet: Mr. Wiggles",
 },[[
 step
 You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
@@ -2503,9 +897,9 @@ collect 1 Piglet's Collar##23007 |tip Warden of the Horde
 step
 learnpet Mr. Wiggles##16548 |use Piglet's Collar##23007 |tip Warden of the Horde
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Mulgore Hatchling",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Mulgore Hatchling",{
 pet=210,
-description="This guide will walk you through obtaining\nthe Critter pet: Mulgore Hatchling",
+description="This guide will walk you through obtaining the Critter pet: Mulgore Hatchling",
 },[[
 step
 In order to be able to do this guide section, you must have already completed the ARGENT TOURNAMENT GROUNDS DAILIES (VALIANT RANK) guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
@@ -2514,8 +908,8 @@ In order to be able to do this guide section, you must have already completed th
 confirm always
 step
 Proceeding to Pre Quests. |next |only if default
-Click here Aspirant Rank Daily quests. |next "Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-Click here for Valiant Rank Dailies |next "Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here Aspirant Rank Daily quests. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here for Valiant Rank Dailies |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 Click here if you are already at the rank of Champion. |next buy |confirm
 step
 talk Helidan Lightwing##33849
@@ -2676,106 +1070,457 @@ buy 1 Mulgore Hatcling##44980 |goto Icecrown,76.2,24.4
 step
 learnpet Mulgore Hatchling##33219 |use Mulgore Hatchling##44980
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Orange Tabby Cat",{
-pet=43,
-description="This guide will walk you through obtaining the Beast pet: Orange Tabby Cat\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Peanut",{
+pet=159,
+description="This guide will walk you through obtaining the Critter pet: Peanut",
+},[[
+step
+You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
+If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+For the Shattrath Daily set, click here. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+confirm
+step
+collect 1 Elekk Training Collar##32622
+|tip Back to the Orphanage (Shattrath)
+step
+learnpet Peanut##23266 |use Elekk Training Collar##32622
+|tip Back to the Orphanage (Shattrath)
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Pint-Sized Pink Pachyderm",{
+pet=166,
+description="This guide will walk you through obtaining the Critter pet: Pint-Sized Pink Pachyderm",
+},[[
+step
+This _pet_ is _only availiable_ during the _Brewfest_ Holiday
+collect 100 Brewfest Prize Tokens##37829
+Click here if you need to do the quests leading up to the dailies. |next "Zygor's Horde Events Guides\\Brewfest (September 20th - October 6th)\\Brewfest Quests" |confirm |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here if you have completed the quests and only need the dailies. |next "Zygor's Horde Events Guides\\Brewfest (September 20th - October 6th)\\Brewfest Dailies" |confirm |confirm |only if ZGV.guidesets["DailiesHCATA"]
+step
+Go to Durotar and talk to Blix Fixwidget
+talk Blix Fixwidget##24495
+buy 1 Pint-Sized Pink Pachyderm##46707
+step
+learnpet Pint-Sized Pink Pachyderm##24753 |use Pint-Sized Pink Pachyderm##46707
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Porcupette",{
+pet=381,
+description="This guide will walk you through obtaining the Critter pet: Porcupette",
+},[[
+step
+label "start"
+In order to obtain the rewards that contain the Porcupette, you will need to have defeated all Grand Master pet tamers.
+If you haven't done so already, please go back and complete the Battle Pet quest guide.
+Otherwise, click here to proceed. |confirm
+step
+talk Stone Cold Trixxy##66466
+accept Grand Master Trixxy##31909 |goto Winterspring 65.6,64.4
+step
+talk Stone Cold Trixxy##66466
+Tell her you want to fight!
+She uses level 19 Flying, Beast and Dragonkin pets.
+Defeat Stone Cold Trixxy |q 31909/1 |goto Winterspring 65.6,64.4
+step
+talk Stone Cold Trixxy##66466
+turnin Grand Master Trixxy##31909 |goto Winterspring 65.6,64.4
+step
+talk Bloodknight Antari##66557
+accept Grand Master Antari##31926 |goto Shadowmoon Valley 30.6,42.0
+only if completedq(31920)
+step
+talk Bloodknight Antari##66557
+|tip You will not be able to challenge Bloodknight Antari if you have the "Pet Recovery" debuff, wait for it to fall off.
+Let's fight!
+|tip Bloodknight Antari has an Elemental Pet, a Dragonkin Pet, and a Magic Pet. Use Aquatic type attacks on his Elemental pet, Humanoid type attacks on his Dragonkin pet, and Dragonkin type attacks on his Magic pet.
+Defeat Bloodknight Antari |q 31926/1 |goto Shadowmoon Valley 30.6,42.0
+only if completedq(31920)
+step
+talk Bloodknight Antari##66557
+turnin Grand Master Antari##31926 |goto Shadowmoon Valley 30.6,42.0
+only if completedq(31920)
+step
+talk Major Payne##66675
+accept Grand Master Payne##31935 |goto Icecrown 77.4,19.6
+only if completedq(31928)
+step
+talk Major Payne##66675
+|tip You will not be able to challenge Major Payne if you have the "Pet Recovery" debuff, wait for it to fall off.
+Let's fight!
+|tip Major Payne has a Beast Pet, a Mechanical Pet, and an Elemental Pet. Use Mechanical type attacks on his Beast, Elemental type attacks on his Mechanical, and Aquatic type attacks on his Elemental. Your pets should be level 25 for this fight.
+Defeat Major Payne |q 31935/1 |goto Icecrown 77.4,19.6
+only if completedq(31928)
+step
+talk Major Payne##66675
+accept Grand Master Payne##31935 |goto Icecrown 77.4,19.6
+only if completedq(31928)
+step
+talk Obalis##66824
+accept Grand Master Obalis##31971 |goto Uldum 56.5,42.0
+only if completedq(31970)
+step
+talk Obalis##66824
+|tip You will not be able to challenge Obalis if you have the "Pet Recovery" debuff, wait for it to fall off.
+Let's fight!
+|tip Obalis has a Beast Pet, a Flying Pet, and a Critter Pet. Use Mechanical type attacks on his Beast, Magic type attacks on his Flyer, and Beast type attacks on his Critter. Your pets should all be level 25.
+Defeat Obalis |q 31971/1 |goto Uldum 56.5,42.0
+only if completedq(31970)
+step
+talk Obalis##66824
+turnin Grand Master Obalis##31971 |goto Uldum 56.5,42.0
+only if completedq(31970)
+step
+talk Hyuna of the Shrines##66730
+accept Grand Master Hyuna##31953 |goto The Jade Forest 48.0,54.2
+only if completedq(31970)
+step
+talk Hyuna of the Shrines##66730
+|tip You will not be able to challenge Hyuna of the Shrines if you have the "Pet Recovery" debuff, wait for it to fall off.
+Let's fight!
+|tip Hyuna of the Shrines has a Beast Pet, a Flying Pet, and an Aquatic Pet. Use Mechanical type attacks on her Beast, Magic type attacks on her Flyer, and Flying type attacks on her Aquatic. Your pets should all be level 25.
+Defeat Hyuna of the Shrines |q 31953/1 |goto The Jade Forest 48.0,54.2
+only if completedq(31970)
+step
+talk Hyuna of the Shrines##66730
+turnin Grand Master Hyuna##31953 |goto The Jade Forest 48.0,54.2
+only if completedq(31970)
+step
+talk Farmer Nishi##66734
+accept Grand Master Nishi##31955 |goto Valley of the Four Winds 46.0,43.7
+only if completedq(31970)
+step
+talk Farmer Nishi##66734
+|tip You will not be able to challenge Farmer Nishi if you have the "Pet Recovery" debuff, wait for it to fall off.
+Let's fight!
+|tip Farmer Nishi has a Beast Pet, and two Elemental Pets. Use Mechanical type attacks on her Beast, and Aquatic type attacks on her Elementals. Your pets should all be level 25.
+Defeat Farmer Nishi |q 31955/1 |goto Valley of the Four Winds 46.0,43.7
+only if completedq(31970)
+step
+talk Farmer Nishi##66734
+turnin Grand Master Nishi##31955 |goto Valley of the Four Winds 46.0,43.7
+only if completedq(31970)
+step
+talk Mo'ruk##66733
+accept Mo'ruk##31954 |goto Krasarang Wilds 62.2,45.9
+only if completedq(31970)
+step
+talk Mo'ruk##66733
+|tip You will not be able to challenge Mo'ruk if you have the "Pet Recovery" debuff, wait for it to fall off.
+Let's fight!
+|tip Mo'ruk has a Beast Pet, a Flying Pet, and an Aquatic Pet. Use Mechanical type attacks on his Beast, Magic type attacks on his Flyer, and Flying type attacks on his Aquatic. Your pets should all be level 25.
+Defeat Mo'ruk |q 31954/1 |goto Krasarang Wilds 62.2,45.9
+only if completedq(31970)
+step
+talk Mo'ruk##66733
+turnin Mo'ruk##31954 |goto Krasarang Wilds 62.2,45.9
+only if completedq(31970)
+step
+talk Courageous Yon##66738
+accept Grand Master Yon##31956 |goto Kun-Lai Summit 35.8,73.8
+only if completedq(31970)
+step
+talk Courageous Yon##66738
+|tip You will not be able to challenge Courageous Yon if you have the "Pet Recovery" debuff, wait for it to fall off.
+Let's fight!
+|tip Courageous Yon has a Flying Pet, and two Critter Pets. Use Beast type attacks on his Critters, and Magic type attacks on his Flying. Your pets should all be level 25.
+Defeat Courageous Yon |q 31956/1 |goto Kun-Lai Summit 35.8,73.8
+He can also be found at [44.7,52.4]
+only if completedq(31970)
+step
+talk Courageous Yon##66738
+turnin Grand Master Yon##31956 |goto Kun-Lai Summit 35.8,73.8
+only if completedq(31970)
+step
+talk Seeker Zusshi##66918
+accept Grand Master Zusshi##31991 |goto Townlong Steppes 36.3,52.2
+only if completedq(31970)
+step
+talk Seeker Zusshi##66918
+|tip You will not be able to challenge Seeker Zusshi if you have the "Pet Recovery" debuff, wait for it to fall off.
+Let's fight!
+|tip Seeker Zusshi has an Aquatic Pet, a Critter Pet, and an Elemental Pet. Use Flying type attacks on his Aquatic, Aquatic type attacks on his Elemental, and Beast type attacks on his Critter. Your pets should all be level 25.
+Defeat Seeker Zusshi |q 31991/1 |goto Townlong Steppes 36.3,52.2
+only if completedq(31970)
+step
+talk Seeker Zusshi##66918
+turnin Grand Master Zusshi##31991 |goto Townlong Steppes 36.3,52.2
+only if completedq(31970)
+step
+talk Wastewalker Shu##66739
+accept Grand Master Shu##31957 |goto Dread Wastes 55.1,37.6
+only if completedq(31970)
+step
+talk Wastewalker Shu##66739
+|tip You will not be able to challenge Wastewalker Shu if you have the "Pet Recovery" debuff, wait for it to fall off.
+Let's fight!
+|tip Wastewalker Shu has an Aquatic Pet, a Beast Pet, and an Elemental Pet. Use Flying type attacks on his Aquatic, Aquatic type attacks on his Elemental, and Mechanical type attacks on his Beast. Your pets should all be level 25.
+Defeat Wastewalker Shu |q 31957/1 |goto Dread Wastes 55.1,37.6
+only if completedq(31970)
+step
+talk Wastewalker Shu##66739
+turnin Grand Master Shu##31957 |goto Dread Wastes 55.1,37.6
+only if completedq(31970)
+step
+talk Aki the Chosen##66741
+accept Zen Master Aki##31958 |goto Vale of Eternal Blossoms 31.2,74.0
+only if completedq(31970)
+step
+talk Aki the Chosen##66741
+|tip You will not be able to challenge Aki the Chosen if you have the "Pet Recovery" debuff, wait for it to fall off.
+Let's fight!
+|tip Aki the Chosen has an Aquatic Pet, a Critter Pet, and a Dragonkin Pet. Use Flying type attacks on her Aquatic, Beast type attacks on her Critter, and Humanoid type attacks on her Dragonkin. Your pets should all be level 25.
+Defeat Aki the Chosen |q 31958/1 |goto Vale of Eternal Blossoms 31.2,74.0
+only if completedq(31970)
+step
+talk Aki the Chosen##66741
+turnin Zen Master Aki##31958 |goto Vale of Eternal Blossoms 31.2,74.0
+only if completedq(31970)
+step
+collect Sack of Pet Supplies##89125 |n
+Use the _Sack of Pet Supplies_ in your bags for a chance to get the _Porcupette_!
+collect 1 Porcupette##89587
+learnpet Porcupette##61086 |use Porcupette##89587
+Click here if the Porcupette wasn't contained in any of the Sack of Pet Supplies, and you wish to go to the beginning of this guide. |confirm |next "start"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Scooter the Snail",{
+pet=289,
+description="This guide will walk you through obtaining the Critter pet: Scooter the Snail",
+},[[
+step
+You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
+If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+For the Shattrath Daily set, click here. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+confirm
+step
+collect 1 Snail Shell##66073
+|tip Warden of the Horde
+step
+learnpet Scooter the Snail##51635 |use Snail Shell##66073 |tip Warden of the Horde
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Snowshoe Rabbit",{
+pet=72,
+description="This guide will walk you through obtaining the Critter pet: Snowshoe Rabbit\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
 },[[
 step
 #include "auctioneer"
-buy 1 Cat Carrier (Orange Tabby)##8487
+buy 1 Rabbit Crate (Snowshoe)##8497
 |tip This pet must be bought with an Alliance character or through the Auction House
 step
-learnpet Orange Tabby Cat##7382 |use Cat Carrier (Orange Tabby)##8487
+learnpet Snowshoe Rabbit##7560 |use Rabbit Crate (Snowshoe)##8497
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Panther Cub",{
-pet=301,
-description="This guide will walk you through obtaining\nthe Beast pet: Panther Cub",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Undercity Rat",{
+pet=454,
+description="This guide will walk you through obtaining the Critter pet: Undercity Rat",
 },[[
 step
-talk Bwemba##53081
-accept Bwemba's Spirit##29219 |goto Orgrimmar,32.6,68.1
-accept To Bambala##29220 |goto Orgrimmar,32.6,68.1
-step
-talk Kil'karil##52980
-turnin To Bambala##29220 |goto Northern Stranglethorn,64.6,40.0
-accept Serpents and Poison##29221 |goto Northern Stranglethorn,64.6,40.0
-step
-kill 10 Jungle Serpent |q 29221/1 |goto 61.2,39.8
-Click Injured Bambala Headhunters
-|tip They look like green bodies laying on the ground around this area.
-Heal 10 Headhunters |q 29221/2 |goto 61.2,39.8
-step
-talk Kil'karil##52980
-turnin Serpents and Poison##29221 |goto 64.6,40.0
-step
-Next to you:
-talk Bwemba##52234
-accept Spirits Are With Us##29222
-step
-Click the Bonfire |tip It looks like a big pile of burning sticks.
-Watch the dialogue
-Use the Bonfire near Bambala |q 29222/1 |goto 65.1,39.9
-step
-Next to you:
-talk Bwemba##52234
-turnin Spirits Are With Us##29222
-step
-talk Kil'karil##52980
-accept Nesingwary Will Know##29223 |goto 64.6,40.0
-step
-talk Hemet Nesingwary Jr.##52294
-turnin Nesingwary Will Know##29223 |goto 44.1,22.9
-accept Track the Tracker##29226 |goto 44.1,22.9
-step
-talk Grent Direhammer##52346
-turnin Track the Tracker##29226 |goto 50.4,21.7
-accept The Hunter's Revenge##29227 |goto 50.4,21.7
-step
-kill Mauti?##52349
-Bring Grent Direhammer to the body of Mauti |q 29227/1 |goto 64.0,19.6
-step
-Click the Complete Quest box that appears under you minimap
-turnin The Hunter's Revenge##29227
-You will automatically accept a new quest:
-accept Follow That Cat##29228
-step
-Go to this spot
-Find Mauti's Lair |q 29228/1 |goto 77.7,68.4
-step
-Next to you:
-talk Bwemba##52234
-turnin Follow That Cat##29228
-accept Mauti##29230
-step
-kill Mauti##52372
-Let Bwemba Inspect the Cat |q 29230/1 |goto 77.2,69.0
-step
-Next to you:
-talk Bwemba##52234
-turnin Mauti##29230
-accept How's the Hunter Holding Up?##29231
-step
-Enter the cave |goto 76.5,67.5,0.5 |c
-talk Grent Direhammer##52371
-turnin How's the Hunter Holding Up?##29231 |goto 76.1,66.7
-accept Bury Me With Me Boots...##29232 |goto 76.1,66.7
-step
-Click Direhammer's Boots
-|tip They look like a small pair of brown boots sitting on the ground inside this cave.
-collect Direhammer's Boots |q 29232/1 |goto 76.0,66.5
-step
-talk Grent Direhammer##52371
-turnin Bury Me With Me Boots...##29232 |goto 76.1,66.7
-step
-Talk to Panther Cub
-accept Some Good Will Come##29268 |goto 76.1,66.7
-collect 1 Panther Cub##68833 |goto 76.1,66.7
-step
-learnpet Panther Cub##52226 |use Panther Cub##68833
+Challenge one to a pet battle and capture it
+|tip The Undercity Rats are level 2.
+learnpet Undercity Rat##61889 |goto Undercity 70.9,35.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Pebble",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Undercity Cockroach",{
+pet=55,
+description="This guide will walk you through obtaining the Critter pet: Undercity Cockroach",
+},[[
+step
+talk Dealer Rashaad##20980
+buy 1 Undercity Cockroach##10393 |goto Netherstorm 43.4,35.2
+step
+learnpet Undercity Cockroach##7395 |use Undercity Cockroach##10393
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Whiskers the Rat",{
+pet=127,
+description="This guide will walk you through obtaining the Critter pet: Whiskers the Rat",
+},[[
+step
+If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+For the Shattrath Daily set, click here. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+confirm
+step
+collect 1 Rat Cage##23015 |tip Warden of the Horde
+step
+learnpet Whiskers the Rat##16549 |use Rat Cage##23015 |tip Warden of the Horde
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\White Kitten",{
+pet=46,
+description="This guide will walk you through obtaining the Critter pet: White Kitten\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
+},[[
+step
+#include "auctioneer"
+buy 1 Cat Carrier (White Kitten)##8489
+|tip This pet must be bought with an Alliance character or through the Auction House
+step
+learnpet White Kitten##7386 |use Cat Carrier (White Kitten)##8489
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Winter Reindeer",{
+pet=118,
+description="This guide will walk you through obtaining the Critter pet: Winter Reindeer",
+},[[
+step
+These pets are only availiable during the Winter Veil Holiday
+|tip Receive Gaily Wrapped Presents by clicking the presents underneath the Christmas Tree in Orgrimmar
+use Gaily Wrapped Present##21310
+collect 1 Jingling Bell##21308
+step
+learnpet Winter Reindeer##15706 |use Jingling Bell##21308
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Wolpertinger",{
+pet=153,
+description="This guide will walk you through obtaining the Critter pet: Wolpertinger",
+},[[
+step
+You can only obtain this pet during the Brewfest event.
+confirm
+step
+#include "H_Brewfest_Dailies"
+step
+Complete the Brewfest daily quests each day until you have 200 Brewfest Prize Tokens
+collect 200 Brewfest Prize Token##37829 |achieve 2796
+step
+talk Blix Fixwidget##24495
+buy "Brew of the Month" Club Membership Form##37599 |n
+Click the "Brew of the Month" Club Membership Form in your bags |use "Brew of the Month" Club Membership Form##37599
+accept Brew of the Month Club##12306
+Buy the Wolpertinger's Tankard and click it to learn it. |achieve 1683/6 |goto Durotar 40.3,17.9
+step
+learnpet Wolpertinger##22943 |use Wolpertinger's Tankard##32233
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Golden Dragonhawk Hatchling",{
+pet=142,
+description="This guide will walk you through obtaining the Dragonkin pet: Golden Dragonhawk Hatchling",
+},[[
+step
+talk Jilanne##16860
+buy 1 Golden Dragonhawk Hatchling##29953 |goto Eversong Woods 44.8,71.6
+step
+learnpet Golden Dragonhawk Hatchling##21055 |use Golden Dragonhawk Hatchling##29953
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Lil' Tarecgosa",{
+pet=320,
+description="This guide will walk you through obtaining the Dragonkin pet: Lil' Tarecgosa",
+},[[
+step
+This pet is a reward for complete the achievement _"Dragonwrath, Tarecgosa's Rest - Guild Edition"_
+|tip In order to earn this you must have somebody in your guild with the Legendary weapon "Dragonwrath, Tarecgosa's Rest"
+Earn _"Dragonwrath, Tarecgosa's Rest - Guild Edition"_ |achieve 5840
+step
+talk Goram##46572
+buy 1 Lil' Tarecgosa##71033 |goto Orgrimmar 48.2,75.6
+step
+learnpet Lil' Tarecgosa##54027 |use Lil' Tarecgosa##71033
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Red Dragonhawk Hatchling",{
+pet=143,
+model={28401,29363,29362},
+description="This guide will walk you through obtaining the Dragonkin pet: Red Dragonhawk Hatchling",
+},[[
+step
+talk Jilanne##16860
+buy 1 Red Dragonhawk Hatchling##29956 |goto Eversong Woods 44.8,71.6
+step
+learnpet Red Dragonhawk Hatchling##21064 |use Red Dragonhawk Hatchling##29956
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Silver Dragonhawk Hatchling",{
+pet=144,
+description="This guide will walk you through obtaining the Dragonkin pet: Silver Dragonhawk Hatchling",
+},[[
+step
+talk Jilanne##16860
+buy 1 Silver Dragonhawk##29957 |goto Eversong Woods 44.8,71.6
+step
+learnpet Silver Dragonhawk Hatchling##21063 |use Silver Dragonhawk##29957
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Thundering Serpent Hatchling",{
+pet=802,
+description="This guide will walk you through obtaining the Dragonkin pet: Thundering Serpent Hatchling",
+},[[
+step
+This pet requires you to be _Revered_ with your guild.
+confirm
+step
+talk Goram##46572
+buy 1 Thundering Serpent Hatchling##85513 |goto Orgrimmar 48.2,75.6
+step
+learnpet Thundering Serpent Hatchling##65313 |use Thundering Serpent Hatchling##85513
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Ammen Vale Lashling",{
+pet=212,
+description="This guide will walk you through obtaining the Elemental pet: Ammen Vale Lashling.\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
+},[[
+step
+#include "auctioneer"
+buy 1 Ammen Vale Lashling##44984
+|tip This pet must be bought with an Alliance character or through the Auction House
+step
+learnpet Ammen Vale Lashling##33205 |use Ammen Vale Lashling##44984
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Dark Phoenix Hatchling",{
+pet=270,
+description="This guide will walk you through obtaining the Elemental pet: Dark Phoenix Hatchling",
+},[[
+step
+#include misc_rep_mount,rep="Guild"
+Your guild needs have the achievement "United Nations"
+|tip Only 1 person in your guild needs to have 55 Exalted reputations
+55 Exalted Reputations |achieve 5892
+step
+talk Goram##46572
+buy 1 Dark Phoenix Hatchling##63138 |goto Orgrimmar,48.38,75.79
+step
+learnpet Dark Phoenix Hatchling##47944 |use Dark Phoenix Hatchling##63138
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Elementium Geode",{
+pet=293,
+description="This guide will walk you through obtaining the Elemental pet: Elementium Geode",
+},[[
+step
+You can either farm for this pet using Mining or buy it from the Auction House:
+Click here to farm. |confirm
+Click here if you just want to buy it. |next buy |confirm
+step
+map Twilight Highlands
+path	44.5,85.3	39.8,87.0	35.9,83.4
+path	39.9,80.7	37.1,76.2	33.2,71.1
+path	28.765.3	38.0,58.0	35.9,52.4
+path	30.1,47.2	28.5,38.9	26.3,36.7
+path	32.2,30.5	37.9,41.3	36.2,46.0
+path	37.1,55.0	38.3,61.0	39.9,73.5
+path	43.2,76.2
+Follow the provided path, mining _ANY_ nodes you come across.
+collect 1 Elementium Geode##67282 |next last
+step
+label buy
+talk Auctioneer Ralinza##44867
+collect 1 Elementium Geode##67282 |goto Orgrimmar/1 53.9,73.1
+step
+label last
+learnpet Elementium Geode##50722 |use Elementium Geode##67282
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Lumpy",{
+pet=337,
+description="This guide will walk you through obtaining the Elemental pet: Lumpy",
+},[[
+step
+talk Strange Snowman##13636
+accept You're a Mean One...##6983 |goto Hillsbrad Foothills,42.3,41.1
+step
+kill The Abominable Greench##13602
+|tip This will require a group to kill, but you do not have to be in a party.
+Free Metzen the Reindeer |q 6983/1 |goto 43.6,39.0
+collect Stolen Treats |q 6983/2 |goto 43.6,39.0
+|tip You can pick this up if someone has killed The Abominable Grinch recently.
+step
+talk Kaymard Copperpinch##13418
+turnin You're a Mean One...##6983 |goto Orgrimmar,52.6,77.4
+collect 1 Stolen Present##73792 |goto Orgrimmar,52.6,77.4
+Open your Stolen Present |use Stolen Present##73792
+collect 1 Lump of Coal##73797 |goto Orgrimmar,52.6,77.4
+step
+learnpet Lumpy##55215 |use Lump of Coal##73797
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Pebble",{
 pet=265,
-description="This guide will walk you through obtaining\nthe Elemental pet: Pebble",
+description="This guide will walk you through obtaining the Elemental pet: Pebble",
 endlevel=83
 },[[
 step
@@ -3663,25 +2408,1433 @@ collect 1 Pebble##60869
 step
 learnpet Pebble##45247 |use Pebble##60869
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Pint-Sized Pink Pachyderm", {
-pet=166,
-description="This guide will walk you through obtaining\nthe Critter pet: Pint-Sized Pink Pachyderm",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Searing Scorchling",{
+pet=172,
+description="This guide will walk you through obtaining the Elemental pet: Searing Scorchling",
 },[[
 step
-This _pet_ is _only availiable_ during the _Brewfest_ Holiday
-collect 100 Brewfest Prize Tokens##37829
-Click here if you need to do the quests leading up to the dailies. |next "Zygor's Horde Events Guides\\Brewfest (September 20th - October 6th)\\Brewfest Quests" |confirm |confirm |only if ZGV.guidesets["DailiesHCATA"]
-Click here if you have completed the quests and only need the dailies. |next "Zygor's Horde Events Guides\\Brewfest (September 20th - October 6th)\\Brewfest Dailies" |confirm |confirm |only if ZGV.guidesets["DailiesHCATA"]
+This pet requires you to have done the Firelands Pre-quests and dailies to enter the Molten Front
+Routing to proper section |next "prequests" |only if not completedq(25372)
+Routing to proper section |next "buy" |only if completedq(25372)
 step
-Go to Durotar and talk to Blix Fixwidget
-talk Blix Fixwidget##24495
-buy 1 Pint-Sized Pink Pachyderm##46707
+Go to the Molten Front |goto Molten Front |noway |c
+earn 30 Mark of the World Tree##416
 step
-learnpet Pint-Sized Pink Pachyderm##24753 |use Pint-Sized Pink Pachyderm##46707
+label "prequests"
+#include "H_Firelands_PreQuests"
+step
+label buy
+talk Zen'Vorka##52822
+buy 1 Zen'Vorka's Cache##71631 |goto Molten Front 47.0,90.8
+step
+use Zen'Vorka's Cache##71631
+collect 1 Scorched Stone##34955
+|tip If you don't get this the first time you will have to earn 30 more Marks of the World Tree to try again
+step
+learnpet Searing Scorchling##25706 |use Scorched Stone##34955
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Plump Turkey", {
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Teldrassil Sproutling",{
+pet=204,
+description="This guide will walk you through obtaining the Elemental pet: Teldrassil Sproutling\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
+},[[
+step
+#include "auctioneer"
+buy 1 Teldrassil Sproutling##44965
+|tip This pet must be bought with an Alliance character or through the Auction House
+step
+learnpet Teldrassil Sproutling##33188 |use Teldrassil Sproutling##44965
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Tiny Snowman",{
+pet=117,
+description="This guide will walk you through obtaining the Elemental pet: Tiny Snowman",
+},[[
+step
+These pets are only availiable during the Winter Veil Holiday
+|tip Receive Gaily Wrapped Presents by clicking the presents underneath the Christmas Tree in Orgrimmar.
+use Gaily Wrapped Present##21310
+collect 1 Snowman Kit##21309
+step
+learnpet Tiny Snowman##15710 |use Snowman Kit##21309
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Withers",{
+pet=220,
+description="This guide will walk you through obtaining the Elemental pet: Withers",
+},[[
+step
+Enter this cave |goto Darkshore,56.8,31.2 < 5 |walk
+talk Apothecary Furrows##33980
+|tip He's at the bottom of this cave and to the left with an imp walking around him
+buy 1 Withers##46325 |goto 57.2,33.8
+step
+learnpet Withers##34278 |use Withers##46325
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Alliance Balloon",{
+pet=331,
+description="This guide will walk you through obtaining the Flying pet: Alliance Balloon",
+},[[
+step
+Horde can not earn this pet because it is gathered from an Alliance only quest.
+learnpet Alliance Balloon##54539 |use Alliance Balloon##72042
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Blue Mini Jouster",{
+pet=259,
+description="This guide will walk you through obtaining the Flying pet: Blue Mini Jouster",
+},[[
+step
+Going to _Egg Wave_ |only if not completedq(25560) |next "eggwave"
+Going to _The 'Unbeatable?' Pterodactyl: BEATEN._ |next "beaten" |only if completedq(25560)
+step
+label "eggwave"
+click Warchief's Command Board##10014
+accept Warchief's Command: Mount Hyjal!##27721 |goto Orgrimmar,49.7,76.5
+You will automatically accept a quest by entering Orgrimmar
+accept A Personal Summons##28790
+step
+talk Farseer Krogar##45244
+turnin A Personal Summons##28790 |goto 50.5,38.4
+accept The Eye of the Storm##28805 |goto 50.5,38.4
+step
+clicknpc Waters of Farseeing##50088
+Witness the Vision of the Farseer |q 28805/1 |goto 50.8,37.8
+step
+talk Farseer Krogar##45244
+turnin The Eye of the Storm##28805 |goto 50.5,38.4
+step
+talk Cenarion Emissary Blackhoof##15188 |goto 39.9,50.9
+Ask him to please send you to Moonglade
+You will teleport to Moonglade |goto Moonglade,45.1,43.1,0.5 |noway |c
+step
+talk Emissary Windsong##39865
+turnin Warchief's Command: Mount Hyjal!##27721 |goto Moonglade,45.5,44.9
+accept As Hyjal Burns##25316 |goto Moonglade,45.5,44.9
+step
+talk Sebelia##40843
+home Nordrassil |goto Mount Hyjal,63.1,24.1
+step
+talk Ysera##40928
+turnin As Hyjal Burns##25316 |goto 62.0,24.9
+accept Protect the World Tree##25317 |goto 62.0,24.9
+step
+talk Fayran Elthas##41861
+fpath Nordrassil |goto 62.1,21.6
+step
+talk Anren Shadowseeker##39925
+accept The Earth Rises##25460 |goto 64.0,22.6
+step
+talk Tholo Whitehoof##40278
+accept Inciting the Elements##25370 |goto 64.0,22.5
+step
+kill 8 Scalding Rock Elemental##40229+ |q 25460/1 |goto 65.8,20.8
+click Juniper Berries##28+
+collect 4 Juniper Berries##53009 |n
+Use your Juniper Berries on Faerie Dragons |use Juniper Berries##53009
+|tip They look like small blue flying dragons around this area.
+Follow the Faerie Dragons to find Twilight Inciters
+kill 4 Twilight Inciter##39926+  |q 25370/1 |goto 65.8,20.8
+step
+talk Tholo Whitehoof##40278
+turnin Inciting the Elements##25370 |goto 64.0,22.5
+accept Flames from Above##25574 |goto 64.0,22.5
+step
+talk Anren Shadowseeker##39925
+turnin The Earth Rises##25460 |goto 64.0,22.6
+step
+Use Tholo's Horn to call for an emerald dragon |use Tholo's Horn##55122
+Burn the Infiltrators' Encampment |q 25574/1 |goto 55.9,15.8
+step
+talk Tholo Whitehoof##40278
+turnin Flames from Above##25574 |goto 64.0,22.5
+step
+talk Malfurion Stormrage##15362
+turnin Protect the World Tree##25317 |goto 47.7,35.5
+accept War on the Twilight's Hammer##25319 |goto 47.7,35.5
+step
+talk Windspeaker Tamila##39869
+accept The Flameseer's Staff##25472 |goto 47.7,35.5
+step
+kill 4 Twilight Flamecaller##38926+ |q 25319/1 |goto 47.2,25.6
+kill 10 Twilight Vanquisher##38913+ |q 25319/2 |goto 47.2,25.6
+click Charred Staff Fragment##758+
+collect 8 Charred Staff Fragment |q 25472/1 |goto 47.2,25.6
+step
+talk Malfurion Stormrage##15362
+turnin War on the Twilight's Hammer##25319 |goto 47.7,35.5
+turnin The Flameseer's Staff##25472 |goto 47.7,35.5
+accept Flamebreaker##25323 |goto 47.7,35.5
+step
+Use your Flameseer's Staff on Blazebound Revenants |use Flameseer's Staff##53107
+kill 30 Unbound Flame Spirit##40080 |q 25323/1 |goto 44.7,33.2
+You can find more Blazebound Revenants at [48.5,29.2]
+step
+talk Malfurion Stormrage##15362
+turnin Flamebreaker##25323 |goto 47.7,35.5
+accept The Return of Baron Geddon##25464 |goto 47.7,35.5
+step
+Use your Flameseer's Staff on Baron Geddon |use Flameseer's Staff##54463
+|tip He's a big fire elemental standing in the middle of this crater.
+Weaken Baron Geddon 20 Times |q 25464/1 |goto 44.1,27.0
+|tip Run away when you see Galrond of the Claw yell "Look out!".
+step
+talk Malfurion Stormrage##15362
+turnin The Return of Baron Geddon##25464 |goto 47.7,35.5
+step
+talk Windspeaker Tamila##39869
+accept Emerald Allies##25430 |goto 47.7,35.5
+step
+talk Alysra##38917
+turnin Emerald Allies##25430 |goto 48.4,19.0
+accept The Captured Scout##25320 |goto 48.4,19.0
+step
+talk Scout Larandia##40096
+turnin The Captured Scout##25320 |goto 44.5,18.9
+accept Twilight Captivity##25321 |goto 44.5,18.9
+step
+kill Twilight Overseer##40123
+collect Twilight Overseer's Key |q 25321/1 |goto 44.4,20.7
+step
+talk Scout Larandia##40096
+turnin Twilight Captivity##25321 |goto 44.5,18.9
+accept Return to Alysra##25424 |goto 44.5,18.9
+step
+talk Alysra##38917
+turnin Return to Alysra##25424 |goto 48.4,19.0
+accept A Prisoner of Interest##25324 |goto 48.4,19.0
+step
+Enter the cave |goto 52.6,17.3 < 5 |walk
+Follow the path in the cave
+talk Captain Saynna Stormrunner##40139
+turnin A Prisoner of Interest##25324 |goto 56.8,18.8
+accept Through the Dream##25325 |goto 56.8,18.8
+step
+Leave the cave
+Deliver Arch Druid Fandral Staghelm |q 25325/1 |goto 52.6,17.3
+step
+talk Alysra##40178
+turnin Through the Dream##25325 |goto 52.2,17.4
+accept Return to Nordrassil##25578 |goto 52.2,17.4
+step
+talk Ysera##40928
+turnin Return to Nordrassil##25578 |goto 62.0,24.9
+accept The Return of the Ancients##25584 |goto 62.0,24.9
+step
+talk Oomla Whitehorn##39429
+turnin The Return of the Ancients##25584 |goto 35.7,19.4
+accept Harrying the Hunters##25255 |goto 35.7,19.4
+step
+talk Jadi Falaryn##39427
+accept End of the Supply Line##25233 |goto 35.8,19.7
+accept In the Rear With the Gear##25234 |goto 35.8,19.7
+step
+kill 6 Twilight Hunter##39437 |q 25255/1 |goto 34.6,24.5
+kill 4 Twilight Proveditor##39436 |q 25233/1 |goto 34.6,24.5
+|tip They walk with 3 Twilight slaves and a Twilight Slavedriver.
+click Twilight Supplies##9379+
+collect 36 Twilight Supplies |q 25234/1 |goto 34.6,24.5
+step
+talk Jadi Falaryn##39427
+turnin End of the Supply Line##25233 |goto 35.8,19.7
+turnin In the Rear With the Gear##25234 |goto 35.8,19.7
+step
+talk Oomla Whitehorn##39429
+turnin Harrying the Hunters##25255 |goto 35.7,19.4
+accept The Voice of Lo'Gosh##25269 |goto 35.7,19.4
+step
+talk Takrik Ragehowl##39432
+turnin The Voice of Lo'Gosh##25269 |goto 30.1,31.7
+accept Howling Mad##25270 |goto 30.1,31.7
+step
+kill Lycanthoth Vandal##39445+
+collect 6 Polluted Incense |q 25270/1 |goto 29.0,31.4
+step
+talk Takrik Ragehowl##39432
+turnin Howling Mad##25270 |goto 30.1,31.7
+accept Lycanthoth the Corruptor##25272 |goto 30.1,31.7
+step
+Use Lycanthoth's Incense next to Lycanthoth's Altar |use Lycanthoth's Incense##52682
+|tip Inside the cave.
+kill Lycanthoth##39446 |q 25272/1 |goto 32.4,37.3
+step
+talk Spirit of Lo'Gosh##39622
+turnin Lycanthoth the Corruptor##25272 |goto 32.5,37.4
+step
+talk Spirit of Lo'Gosh##39622
+accept The Shrine Reclaimed##25279 |goto 29.6,29.3
+step
+talk Takrik Ragehowl##39432
+turnin The Shrine Reclaimed##25279 |goto 28.4,29.9
+accept Cleaning House##25277 |goto 28.4,29.9
+step
+talk Royce Duskwhisper##39435
+accept The Eye of Twilight##25300 |goto 28.3,30.0
+step
+talk Rio Duran##39434
+accept From the Mouth of Madness##25297 |goto 28.2,29.9
+step
+click Bitterblossom##7444
+collect Bitterblossom |q 25297/2 |goto 28.9,32.1
+step
+click a Stonebloom##9386
+collect Stonebloom |q 25297/1 |goto 26.5,35.0
+step
+click Eye of Twilight##7011
+turnin The Eye of Twilight##25300 |goto 27.2,35.2
+accept Mastering Puppets##25301 |goto 27.2,35.2
+step
+click Darkflame Ember##9569
+collect Darkflame Ember |q 25297/3 |goto 28.4,35.8
+step
+click Twilight Cauldron##9387
+turnin From the Mouth of Madness##25297 |goto 28.4,36.5
+accept Free Your Mind, the Rest Follows##25298 |goto 28.4,36.5
+step
+Enter the cave |goto 26.9,36.3 < 5 |walk
+talk Kristoff Manheim##39797
+accept Gar'gol's Gotta Go##25328 |goto 27.2,40.8
+|tip This quest is currently bugged, so some players are able to accept the quest while others cannot.
+step
+click Gar'gol's Personal Treasure Chest##10
+collect Rusted Skull Key |q 25328/1 |goto 26.5,38.5
+step
+click The Twilight Apocrypha##470
+turnin Mastering Puppets##25301 |goto 25.8,41.6
+accept Elementary!##25303 |goto 25.8,41.6
+stickystart "twiserv"
+step
+clicknpc Crucible of Fire##39730
+Activate the Crucible of Fire |q 25303/3 |goto 26.0,41.8
+step
+clicknpc Crucible of Earth##39737
+Activate the Crucible of Earth |q 25303/1 |goto 25.6,41.7
+step
+clicknpc Crucible of Air##39736
+Activate the Crucible of Air |q 25303/2 |goto 25.8,41.9
+step
+clicknpc Crucible of Water##39738
+Activate the Crucible of Water |q 25303/4 |goto 26.0,41.6
+step "twiserv"
+kill Hovel Brute##39642+, Hovel Shadowcaster##39643+
+Slay 8 Minions of Gar'gol |q 25277/1 |goto 26.7,39.2
+talk Twilight Servitor##39644
+Administor the drought
+Free 8 Twilight Servitors |q 25298/1 |goto 26.7,39.2
+step
+click The Twilight Apocrypha##470
+turnin Elementary!##25303 |goto 25.8,41.6
+accept Return to Duskwhisper##25312 |goto 25.8,41.6
+step
+talk Kristoff Manheim##39797
+turnin Gar'gol's Gotta Go##25328 |goto 27.2,40.8
+accept Get Me Outta Here!##25332 |goto 27.2,40.8
+step
+Leave the cave
+Escort Kristoff Out |q 25332/1 |goto 27.1,36.0
+step
+talk Royce Duskwhisper##39435
+turnin Return to Duskwhisper##25312 |goto 28.6,30.2
+turnin Get Me Outta Here!##25332 |goto 28.6,30.2
+step
+talk Takrik Ragehowl##39432
+turnin Cleaning House##25277 |goto 28.4,29.9
+accept Sweeping the Shelf##25354 |goto 28.4,29.9
+accept Lightning in a Bottle##25355 |goto 28.4,29.9
+step
+talk Rio Duran##39434
+turnin Free Your Mind, the Rest Follows##25298 |goto 28.2,29.9
+step
+kill 8 Twilight Stormcaller##39843+ |q 25354/1 |goto 29.1,40.7
+kill 5 Howling Riftdweller##39844+ |q 25354/2 |goto 29.1,40.7
+click Lightning Channel##9816
+collect Charged Condenser Jar |q 25355/1 |goto 29.1,40.7
+step
+Use your Totem of Lo'Gosh |use Totem of Lo'Gosh##52854
+talk Spirit of Lo'Gosh##39622
+turnin Lightning in a Bottle##25355
+accept Into the Maw!##25617 |goto 26.2,41.0 |n
+Go inside the blue portal |goto 25.8,41.5 < 5 |noway |c |walk
+step
+talk Jordan Olafson##40834
+turnin Into the Maw!##25617 |goto 26.3,41.9
+accept Forged of Shadow and Flame##25575 |goto 26.3,41.9
+accept Crushing the Cores##25577 |goto 26.3,41.9
+step
+talk Yargra Blackscar##40837
+accept Rage of the Wolf Ancient##25576 |goto 26.3,42.0
+step
+kill 12 Dark Iron Laborer##40838+ |q 25576/1 |goto 29.6,41.8
+kill Searing Guardian##40841+
+collect 8 Smoldering Core##55123 |n
+Use your Smoldering Cores next to Twilight Anvils |use Smoldering Core##55123
+|tip They are small anvils sitting on the ground around this area.
+Destroy 8 Smoldering Cores |q 25577/1 |goto 29.6,41.8
+Click Twilight Arms Crates
+|tip They look like wooden boxes sitting on the ground around this area.
+Destroy 10 Twilight Arms Crates |q 25575/1 |goto 29.6,41.8
+step
+talk Yargra Blackscar##40837
+turnin Rage of the Wolf Ancient##25576 |goto 26.3,42.0
+step
+talk Jordan Olafson##40834
+turnin Forged of Shadow and Flame##25575 |goto 26.3,41.9
+turnin Crushing the Cores##25577 |goto 26.3,41.9
+accept Cindermaul, the Portal Master##25599 |goto 26.3,41.9
+step
+kill Cindermaul##40844 |q 25599/1 |goto 30.7,41.7
+click Battered Stone Chest##1387
+collect Tome of Openings |q 25599/2 |goto 30.7,41.7
+step
+talk Jordan Olafson##40834
+turnin Cindermaul, the Portal Master##25599 |goto 26.3,41.9
+accept Forgemaster Pyrendius##25600 |goto 26.3,41.9
+step
+Click the Portal Runes
+|tip They are brown metal plates on the ground on this small circular island in the lava.
+Lure Forgemaster Pyrendius onto the activated Portal Runes
+|tip This will weaken him and allow you to kill him.
+kill Forgemaster Pyrendius##40845 |q 25600/1 |goto 31.9,46.3
+step
+talk Jordan Olafson##40834
+turnin Forgemaster Pyrendius##25600 |goto 26.3,41.9
+accept Return from the Firelands##25612 |goto 26.3,41.9
+Go inside the blue portal |goto 26.3,40.9 < 5 |noway |c |walk
+step
+talk Takrik Ragehowl##39432
+turnin Sweeping the Shelf##25354 |goto 28.4,29.9
+turnin Return from the Firelands##25612 |goto 28.4,29.9
+step
+talk Vision of Ysera##46987
+accept Aviana's Legacy##27874 |goto 28.4,29.8
+step
+talk Rio Duran##39434
+accept The Fires of Mt. Hyjal##25630 |goto 28.2,29.9
+step
+talk Laina Nightsky##39927
+turnin The Fires of Mt. Hyjal##25630 |goto 19.0,40.9
+accept Fighting Fire With ... Anything##25381 |goto 19.0,40.9
+accept Disrupting the Rituals##25382 |goto 19.0,40.9
+step
+talk Mylune##39930
+accept Save the Wee Animals##25385 |goto 19.2,37.9
+step
+talk Matoclaw##39928
+accept If You're Not Against Us...##25404 |goto 19.0,37.0
+step
+talk Elizil Wintermoth##41860
+fpath Grove of Aessina |goto 19.6,36.4
+step
+talk Tyrus Blackhorn##39933
+Tell him you've been sent to request his aid, then tell him he could be destroyed, then ask him if he will help you
+Persuade Blackhorn |q 25404/1 |goto 22.3,44.9
+step
+talk Tyrus Blackhorn##39933
+turnin If You're Not Against Us...##25404 |goto 22.3,44.9
+accept Seeds of Their Demise##25408 |goto 22.3,44.9
+step
+kill Wailing Weed##40066+
+collect 8 Bileberry |q 25408/1 |goto 21.1,42.6
+step
+talk Tyrus Blackhorn##39933
+turnin Seeds of Their Demise##25408 |goto 22.3,44.9
+accept A New Master##25411 |goto 22.3,44.9
+step
+kill Twilight Inferno Lord##39974
+Use your Bottled Bileberry Brew on the corpse of a Twilight Inferno Lord |use Bottled Bileberry Brew##53120
+Subjugate a Twilight Inferno Lord |q 25411/1 |goto 14.5,45.3
+step
+Next to you:
+talk Subjugated Inferno Lord##40093
+turnin A New Master##25411
+accept The Name Never Spoken##25412
+stickystart "panbunny"
+step
+click Southern Firestone##9407
+Examine the Southern Firestone |q 25412/3 |goto 14.3,45.4
+step
+click Central Firestone##9407
+Examine the Central Firestone |q 25412/2 |goto 11.7,41.5
+step
+click Northern Firestone##9407
+Examine the Northern Firestone |q 25412/1 |goto 9.6,36.5
+step "panbunny"
+kill 10 Raging Firestorm##39939+ |q 25381/1 |goto 11.3,38.2
+kill 6 Twilight Inferno Lord##39974+  |q 25382/1 |goto 11.3,38.2
+Click Panicked Bunnies and Terrified Squirrels
+|tip They are small and run around this area.
+collect 10 Frightened Animal |q 25385/1 |goto 11.3,38.2
+step
+talk Laina Nightsky##39927
+turnin Fighting Fire With ... Anything##25381 |goto 19.0,40.9
+turnin Disrupting the Rituals##25382 |goto 19.0,40.9
+step
+talk Mylune##39930
+turnin Save the Wee Animals##25385 |goto 19.2,37.9
+accept Oh, Deer!##25392 |goto 19.2,37.9
+step
+talk Tyrus Blackhorn##39933
+turnin The Name Never Spoken##25412 |goto 22.3,44.9
+accept Black Heart of Flame##25428 |goto 22.3,44.9
+stickystart "leadfawn"
+step
+Use your Charred Branch while in the burning forest area |use Charred Branch##53464
+kill Thol'embaar##40107
+collect Black Heart of Thol'embaar |q 25428/1 |goto 14.6,42.2
+step "leadfawn"
+click 3 Injured Fawn##39999+
+Lead the Injured Fawns back to Mylune at [19.2,37.9]
+Escort 3 Injured Fawns Home |q 25392/1 |goto 12.5,44.6
+step
+talk Mylune##39930
+turnin Oh, Deer!##25392 |goto 19.2,37.9
+step
+talk Tyrus Blackhorn##39933
+turnin Black Heart of Flame##25428 |goto 22.3,44.9
+accept Good News... and Bad News##29066 |goto 22.3,44.9
+step
+talk Laina Nightsky##39927
+accept Last Stand at Whistling Grove##25940 |goto 19.0,40.9
+step
+talk Matoclaw##39928
+turnin Good News... and Bad News##29066 |goto 19.0,37.0
+step
+talk Keeper Taldros##39932
+turnin Last Stand at Whistling Grove##25940 |goto 13.7,32.8
+accept The Bears Up There##25462 |goto 13.7,32.8
+step
+clicknpc Climbing Tree##40190
+clicknpc Hyjal Bear Cub##40240+
+Use your Climb Up ability to climb to the top of the tree
+Use your Chuck-a-bear ability to throw the cubs down
+|tip Aim the yellow spot at the bearskin trampoline on the ground.
+Rescue 6 Hyjal Bear Cubs |q 25462/1 |goto 13.9,34.1
+step
+talk Keeper Taldros##39932
+turnin The Bears Up There##25462 |goto 13.7,32.8
+accept Smashing Through Ashes##25490 |goto 13.7,32.8
+step
+kill 8 Charbringer##40336+ |q 25490/1 |goto 16.4,51.8
+step
+talk Arch Druid Hamuul Runetotem##5769
+turnin Smashing Through Ashes##25490 |goto 27.1,62.6
+accept Durable Seeds##25491 |goto 27.1,62.6
+accept Fresh Bait##25493 |goto 27.1,62.6
+step
+talk Rayne Feathersong##40331
+accept Firebreak##25492 |goto 27.1,63.0
+step
+kill 10 Lava Surger##46911+ |q 25492/1 |goto 34.0,53.2
+kill Core Hound##46910+
+collect 4 Core Hound Entrails |q 25493/1 |goto 34.0,53.2
+click Scorched Soil##768
+collect 10 Hyjal Seedling |q 25491/1 |goto 34.0,53.2
+step
+talk Dinorae Swiftfeather##43481
+fpath Shrine of Aviana |goto 41.2,42.6
+step
+talk Thisalee Crow##41006
+accept The Wormwing Problem##25655 |goto 42.2,45.4
+accept Scrambling for Eggs##25656 |goto 42.2,45.4
+step
+talk Choluna##41005
+turnin Aviana's Legacy##27874 |goto 44.4,46.2
+accept An Offering for Aviana##25663 |goto 44.4,46.2
+step
+Use your Sacred Nectar next to Aviana's Burial Circle |use Sacred Nectar##55208
+Offer the Nectar |q 25663/1 |goto 40.4,44.3
+talk Mysterious Winged Spirit##41068
+turnin An Offering for Aviana##25663 |goto 40.4,44.3
+accept A Plea From Beyond##25665 |goto 40.4,44.3
+step
+kill Wormwing Screecher##41027+, Wormwing Swifttalon##41028+
+Slay 10 Wormwing Harpies |q 25655/1 |goto 36.9,43.4
+click Stolen Hyjal Egg##1867+
+collect 8 Hyjal Egg |q 25656/1 |goto 36.9,43.4
+step
+talk Thisalee Crow##41006
+turnin The Wormwing Problem##25655 |goto 42.2,45.4
+turnin Scrambling for Eggs##25656 |goto 42.2,45.4
+accept A Bird in Hand##25731 |goto 42.2,45.4
+step
+talk Choluna##41005
+turnin A Plea From Beyond##25665 |goto 44.4,46.2
+accept A Prayer and a Wing##25664 |goto 44.4,46.2
+step
+Click the Harpy Signal Fire
+|tip It's a brazier with red fire in it.
+Fight Marion Wormwing until she gets captured |q 25731/1 |goto 38.4,44.2
+talk Marion Wormwing##41112
+Ask her why she is stealing eggs, then tell Thisalee to kill her
+Interrogate Marion Wormwing |q 25731/2 |goto 38.4,44.2
+step
+Use your Enormous Bird Call in Blaithe's Roost |use Enormous Bird Call##55211
+|tip It's a huge bird nest sitting on top of this mountain peak.
+kill Blaithe##41084
+collect Ancient Feather |q 25664/1 |goto 39.2,37.1
+step
+talk Thisalee Crow##41006
+turnin A Bird in Hand##25731 |goto 42.2,45.4
+step
+talk Choluna##41005
+turnin A Prayer and a Wing##25664 |goto 44.4,46.2
+step
+Go upstairs in the Shrine of Aviana
+talk Skylord Omnuron##40997
+accept Fact-Finding Mission##25740 |goto 43.5,45.9
+step
+talk Arch Druid Hamuul Runetotem##5769
+turnin Durable Seeds##25491 |goto 27.1,62.6
+turnin Fresh Bait##25493 |goto 27.1,62.6
+accept Hell's Shells##25507 |goto 27.1,62.6
+step
+talk Rayne Feathersong##40331
+turnin Firebreak##25492 |goto 27.1,63.0
+accept Prepping the Soil##25502 |goto 27.1,63.0
+step
+click Flameward##40460
+Activate the Flameward |q 25502/1 |goto 33.0,64.6
+Defend the Flameward |q 25502/2 |goto 33.0,64.6
+step
+talk Thisalee Crow##41006
+turnin Fact-Finding Mission##25740 |goto 32.8,70.8
+accept Sethria's Brood##25746 |goto 32.8,70.8
+accept A Gap in Their Armor##25758 |goto 32.8,70.8
+step
+click Codex of Shadows##470
+accept The Codex of Shadows##25763 |goto 31.3,77.1
+step
+kill Twilight Dragonkin##41029+, Twilight Dragonkin Armorers##41030+
+Slay 12 Sethria's Minions |q 25746/1 |goto 30.9,76.7
+click Twilight Armor Plate##7041
+collect 8 Twilight Armor Plate |q 25758/1 |goto 30.9,76.7
+step
+talk Thisalee Crow##41006
+turnin Sethria's Brood##25746 |goto 32.8,70.8
+turnin A Gap in Their Armor##25758 |goto 32.8,70.8
+accept Disassembly##25761 |goto 32.8,70.8
+turnin The Codex of Shadows##25763 |goto 32.8,70.8
+accept Egg Hunt##25764 |goto 32.8,70.8
+step
+Use Thisalee's Shive on Twilight Juggernauts |use Thisalee's Shiv##55883
+|tip Use Thisalee's Shive multiple times to remove the Twilight Juggernauts' Armor Plating and make them weaker.
+kill 3 Twilight Juggernaut##41031 |q 25761/1 |goto 31.1,76.7
+click Shadow Cloak Generator##9532+
+Unveil and Defend Aviana's Egg |q 25764/1 |goto 31.1,76.7
+step
+talk Thisalee Crow##41006
+turnin Disassembly##25761 |goto 32.8,70.8
+turnin Egg Hunt##25764 |goto 32.8,70.8
+accept Sethria's Demise##25776 |goto 32.8,70.8
+step
+kill Sethria##41255
+Use Thisalee's Signal Rocket when Sethria turns into a dragon |use Thisalee's Signal Rocket##56003
+kill Sethria##41255 |q 25776/1 |goto 35.5,98.0
+step
+talk Thisalee Crow##41006
+turnin Sethria's Demise##25776 |goto 32.8,70.8
+accept Return to the Shrine##25795 |goto 32.8,70.8
+step
+Use your Heap of Core hound Innards near Nemesis |use Heap of Core hound Innards##54744
+|tip Nemesis is a huge turtle that walks all around The Flamewake area, so you may need to search for him.
+clicknpc Nemesis##40340
+collect Nemesis Shell Fragment |q 25507/1 |goto 37.4,52.3
+step
+talk Choluna##41005
+turnin Return to the Shrine##25795 |goto 44.4,46.2
+accept An Ancient Reborn##25807 |goto 44.4,46.2
+step
+Use Herald's Incense next to Aviana's Egg |use Herald's Incense##56016
+|tip Aviana's Egg is in the tree tower, in a side room.
+Burn Herald's Incense |q 25807/1 |goto 44.3,47.9
+step
+talk Aviana##41308
+turnin An Ancient Reborn##25807 |goto 44.3,48.0
+step
+talk Morthis Whisperwing##41003
+accept The Hatchery Must Burn##25810 |goto 44.1,45.9
+step
+Go inside the blue portal |goto 38.8,58.0 < 5 |walk
+talk Farden Talonshrike##40578
+turnin The Hatchery Must Burn##25810 |goto 37.2,56.2
+accept Flight in the Firelands##25523 |goto 37.2,56.2
+step
+click the Twilight Weapon Rack##130
+collect Twilight Firelance##52716 |q 25523 |goto 37.2,56.2
+step
+Equip the Twilight Firelance |use Twilight Firelance##52716
+Click Aviana's Guardian to ride it |invehicle |goto 37.4,56.0
+|tip They are hippogryphs.
+step
+Use your Flap ability on your hotbar repeatedly to fly to this green flag
+Visit the Guardian Flag |q 25523/1 |goto 36.4,53.2
+model 9475
+step
+Use your Flap ability on your hotbar repeatedly to fly to this spot
+talk Farden Talonshrike##40578
+turnin Flight in the Firelands##25523 |goto 37.2,56.2
+accept Wave One##25525 |goto 37.2,56.2
+step
+Use your Flap ability on your hotbar repeatedly to fly around this area
+Fly into Twilight Buzzards to joust them
+kill 10 Twilight Knight Rider##39835+ |q 25525/1 |goto 36.8,54.0
+step
+Use your Flap ability on your hotbar repeatedly to fly to this spot
+talk Farden Talonshrike##40578
+turnin Wave One##25525 |goto 37.2,56.2
+accept Wave Two##25544 |goto 37.2,56.2
+step
+Use your Flap ability on your hotbar repeatedly to fly around this area
+Fly into Twilight Firebirds to joust them
+|tip Be careful, don't let the burning Falling Boulders hit you.
+kill 10 Twilight Lancer##40660 |q 25544/1 |goto 36.8,54.0
+step
+Use your Flap ability on your hotbar repeatedly to fly to this spot
+talk Farden Talonshrike##40578
+turnin Wave Two##25544 |goto 37.2,56.2
+accept Egg Wave##25560 |goto 37.2,56.2
+step
+Use your Flap ability on your hotbar repeatedly to fly around this area
+Run over Firelands Eggs
+|tip They look like blue eggs on the ground around this area.
+Destroy 40 Firelands Eggs |q 25560/1 |goto 33.3,56.9
+You can find more Firelands Eggs all around [35.8,53.6]
+step
+Use your Flap ability on your hotbar repeatedly to fly to this spot
+talk Farden Talonshrike##40578
+turnin Egg Wave##25560 |goto 37.2,56.2
+step
+label "beaten"
+|goto Mount Hyjal,39.1,58.3 |n
+Go inside the blue portal |goto 38.77,58.01 < 5 |walk
+talk Farden Talonshrike##40578
+accept Vigilance on Wings##29177 |goto 37.2,56.2
+step
+click the Twilight Weapon Rack##130
+collect 1 Twilight Firelance##52716 |q 29177 |goto 37.2,56.1
+step
+Equip the Twilight Firelance |use Twilight Firelance##52716
+Click Aviana's Guardian to ride it |invehicle |goto 37.4,56.0
+|tip They are hippogryphs.
+step
+Use your Flap ability on your hotbar repeatedly to fly around this area
+kill 10 Twilight Lancer##40660+ |q 29177/1 |goto 36.6,53.4
+step
+talk Farden Talonshrike##40578
+turnin Vigilance on Wings##29177 |goto 37.2,56.2 |tip You may choose only one Jouster.
+collect Blue Mini Jouster##65661 |goto 37.2,56.2 |or
+collect Gold Mini Jouster##65662 |goto 37.2,56.2 |or
+step
+learnpet Blue Mini Jouster##42177 |use Blue Mini Jouster##65661 |or
+learnpet Gold Mini Jouster##42183 |use Gold Mini Jouster##65662 |or
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Blue Moth",{
+pet=138,
+description="This guide will walk you through obtaining the Flying pet: Blue Moth\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
+},[[
+step
+#include "auctioneer"
+buy 1 Blue Moth Egg##29901
+|tip This pet must be bought with an Alliance character or through the Auction House
+step
+learnpet Blue Moth##21010 |use Blue Moth Egg##29901
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Darkmoon Balloon",{
+pet=336,
+description="This guide will walk you through obtaining the Flying pet: Darkmoon Balloon",
+},[[
+step
+This pet requires Darkmoon Island to be accessible.
+Click here to be taken to the Darkmoon Faire Quests |confirm |next "Zygor's Horde Events Guides\\Darkmoon Faire\\Darkmoon Faire Quests"
+Click here to do Darkmoon Faire Dailies |confirm |next "Zygor's Horde Events Guides\\Darkmoon Faire\\Darkmoon Faire Dailies" |only if ZGV.guidesets["DailiesHCATA"]
+earn 90 Darkmoon Prize Ticket##515 |goto Darkmoon Island,56.0,52.9
+Click here to buy the pet |confirm |next "buy"
+step
+label "buy"
+talk Lhara##148465
+buy 1 Darkmoon Balloon##73762 |goto Darkmoon Island,48.2,69.6
+step
+learnpet Darkmoon Balloon##55187 |use Darkmoon Balloon##73762
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Gilnean Raven",{
+pet=630,
+description="This guide will walk you through obtaining the Flying pet: Gilnean Raven",
+},[[
+step
+This pet is only available to Alliance characters.
+learnpet Gilnean Raven##63098
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Gold Mini Jouster",{
+pet=260,
+description="This guide will walk you through obtaining the Flying pet: Gold Mini Jouster",
+},[[
+step
+Going to _Egg Wave_ |only if not completedq(25560) |next "eggwave"
+Going to _The 'Unbeatable?' Pterodactyl: BEATEN._ |next "beaten" |only if completedq(25560)
+step
+label "eggwave"
+click Warchief's Command Board##10014
+accept Warchief's Command: Mount Hyjal!##27721 |goto Orgrimmar,49.7,76.5
+You will automatically accept a quest by entering Orgrimmar
+accept A Personal Summons##28790
+step
+talk Farseer Krogar##45244
+turnin A Personal Summons##28790 |goto 50.5,38.4
+accept The Eye of the Storm##28805 |goto 50.5,38.4
+step
+clicknpc Waters of Farseeing##50088
+Witness the Vision of the Farseer |q 28805/1 |goto 50.8,37.8
+step
+talk Farseer Krogar##45244
+turnin The Eye of the Storm##28805 |goto 50.5,38.4
+step
+talk Cenarion Emissary Blackhoof##15188 |goto 39.9,50.9
+Ask him to please send you to Moonglade
+You will teleport to Moonglade |goto Moonglade,45.1,43.1,0.5 |noway |c
+step
+talk Emissary Windsong##39865
+turnin Warchief's Command: Mount Hyjal!##27721 |goto Moonglade,45.5,44.9
+accept As Hyjal Burns##25316 |goto Moonglade,45.5,44.9
+step
+talk Sebelia##40843
+home Nordrassil |goto Mount Hyjal,63.1,24.1
+step
+talk Ysera##40928
+turnin As Hyjal Burns##25316 |goto 62.0,24.9
+accept Protect the World Tree##25317 |goto 62.0,24.9
+step
+talk Fayran Elthas##41861
+fpath Nordrassil |goto 62.1,21.6
+step
+talk Anren Shadowseeker##39925
+accept The Earth Rises##25460 |goto 64.0,22.6
+step
+talk Tholo Whitehoof##40278
+accept Inciting the Elements##25370 |goto 64.0,22.5
+step
+kill 8 Scalding Rock Elemental##40229+ |q 25460/1 |goto 65.8,20.8
+click Juniper Berries##28+
+collect 4 Juniper Berries##53009 |n
+Use your Juniper Berries on Faerie Dragons |use Juniper Berries##53009
+|tip They look like small blue flying dragons around this area.
+Follow the Faerie Dragons to find Twilight Inciters
+kill 4 Twilight Inciter##39926+  |q 25370/1 |goto 65.8,20.8
+step
+talk Tholo Whitehoof##40278
+turnin Inciting the Elements##25370 |goto 64.0,22.5
+accept Flames from Above##25574 |goto 64.0,22.5
+step
+talk Anren Shadowseeker##39925
+turnin The Earth Rises##25460 |goto 64.0,22.6
+step
+Use Tholo's Horn to call for an emerald dragon |use Tholo's Horn##55122
+Burn the Infiltrators' Encampment |q 25574/1 |goto 55.9,15.8
+step
+talk Tholo Whitehoof##40278
+turnin Flames from Above##25574 |goto 64.0,22.5
+step
+talk Malfurion Stormrage##15362
+turnin Protect the World Tree##25317 |goto 47.7,35.5
+accept War on the Twilight's Hammer##25319 |goto 47.7,35.5
+step
+talk Windspeaker Tamila##39869
+accept The Flameseer's Staff##25472 |goto 47.7,35.5
+step
+kill 4 Twilight Flamecaller##38926+ |q 25319/1 |goto 47.2,25.6
+kill 10 Twilight Vanquisher##38913+ |q 25319/2 |goto 47.2,25.6
+click Charred Staff Fragment##758+
+collect 8 Charred Staff Fragment |q 25472/1 |goto 47.2,25.6
+step
+talk Malfurion Stormrage##15362
+turnin War on the Twilight's Hammer##25319 |goto 47.7,35.5
+turnin The Flameseer's Staff##25472 |goto 47.7,35.5
+accept Flamebreaker##25323 |goto 47.7,35.5
+step
+Use your Flameseer's Staff on Blazebound Revenants |use Flameseer's Staff##53107
+kill 30 Unbound Flame Spirit##40080 |q 25323/1 |goto 44.7,33.2
+You can find more Blazebound Revenants at [48.5,29.2]
+step
+talk Malfurion Stormrage##15362
+turnin Flamebreaker##25323 |goto 47.7,35.5
+accept The Return of Baron Geddon##25464 |goto 47.7,35.5
+step
+Use your Flameseer's Staff on Baron Geddon |use Flameseer's Staff##54463
+|tip He's a big fire elemental standing in the middle of this crater.
+Weaken Baron Geddon 20 Times |q 25464/1 |goto 44.1,27.0
+|tip Run away when you see Galrond of the Claw yell "Look out!".
+step
+talk Malfurion Stormrage##15362
+turnin The Return of Baron Geddon##25464 |goto 47.7,35.5
+step
+talk Windspeaker Tamila##39869
+accept Emerald Allies##25430 |goto 47.7,35.5
+step
+talk Alysra##38917
+turnin Emerald Allies##25430 |goto 48.4,19.0
+accept The Captured Scout##25320 |goto 48.4,19.0
+step
+talk Scout Larandia##40096
+turnin The Captured Scout##25320 |goto 44.5,18.9
+accept Twilight Captivity##25321 |goto 44.5,18.9
+step
+kill Twilight Overseer##40123
+collect Twilight Overseer's Key |q 25321/1 |goto 44.4,20.7
+step
+talk Scout Larandia##40096
+turnin Twilight Captivity##25321 |goto 44.5,18.9
+accept Return to Alysra##25424 |goto 44.5,18.9
+step
+talk Alysra##38917
+turnin Return to Alysra##25424 |goto 48.4,19.0
+accept A Prisoner of Interest##25324 |goto 48.4,19.0
+step
+Enter the cave |goto 52.6,17.3 < 5 |walk
+Follow the path in the cave
+talk Captain Saynna Stormrunner##40139
+turnin A Prisoner of Interest##25324 |goto 56.8,18.8
+accept Through the Dream##25325 |goto 56.8,18.8
+step
+Leave the cave
+Deliver Arch Druid Fandral Staghelm |q 25325/1 |goto 52.6,17.3
+step
+talk Alysra##40178
+turnin Through the Dream##25325 |goto 52.2,17.4
+accept Return to Nordrassil##25578 |goto 52.2,17.4
+step
+talk Ysera##40928
+turnin Return to Nordrassil##25578 |goto 62.0,24.9
+accept The Return of the Ancients##25584 |goto 62.0,24.9
+step
+talk Oomla Whitehorn##39429
+turnin The Return of the Ancients##25584 |goto 35.7,19.4
+accept Harrying the Hunters##25255 |goto 35.7,19.4
+step
+talk Jadi Falaryn##39427
+accept End of the Supply Line##25233 |goto 35.8,19.7
+accept In the Rear With the Gear##25234 |goto 35.8,19.7
+step
+kill 6 Twilight Hunter##39437 |q 25255/1 |goto 34.6,24.5
+kill 4 Twilight Proveditor##39436 |q 25233/1 |goto 34.6,24.5
+|tip They walk with 3 Twilight slaves and a Twilight Slavedriver.
+click Twilight Supplies##9379+
+collect 36 Twilight Supplies |q 25234/1 |goto 34.6,24.5
+step
+talk Jadi Falaryn##39427
+turnin End of the Supply Line##25233 |goto 35.8,19.7
+turnin In the Rear With the Gear##25234 |goto 35.8,19.7
+step
+talk Oomla Whitehorn##39429
+turnin Harrying the Hunters##25255 |goto 35.7,19.4
+accept The Voice of Lo'Gosh##25269 |goto 35.7,19.4
+step
+talk Takrik Ragehowl##39432
+turnin The Voice of Lo'Gosh##25269 |goto 30.1,31.7
+accept Howling Mad##25270 |goto 30.1,31.7
+step
+kill Lycanthoth Vandal##39445+
+collect 6 Polluted Incense |q 25270/1 |goto 29.0,31.4
+step
+talk Takrik Ragehowl##39432
+turnin Howling Mad##25270 |goto 30.1,31.7
+accept Lycanthoth the Corruptor##25272 |goto 30.1,31.7
+step
+Use Lycanthoth's Incense next to Lycanthoth's Altar |use Lycanthoth's Incense##52682
+|tip Inside the cave.
+kill Lycanthoth##39446 |q 25272/1 |goto 32.4,37.3
+step
+talk Spirit of Lo'Gosh##39622
+turnin Lycanthoth the Corruptor##25272 |goto 32.5,37.4
+step
+talk Spirit of Lo'Gosh##39622
+accept The Shrine Reclaimed##25279 |goto 29.6,29.3
+step
+talk Takrik Ragehowl##39432
+turnin The Shrine Reclaimed##25279 |goto 28.4,29.9
+accept Cleaning House##25277 |goto 28.4,29.9
+step
+talk Royce Duskwhisper##39435
+accept The Eye of Twilight##25300 |goto 28.3,30.0
+step
+talk Rio Duran##39434
+accept From the Mouth of Madness##25297 |goto 28.2,29.9
+step
+click Bitterblossom##7444
+collect Bitterblossom |q 25297/2 |goto 28.9,32.1
+step
+click a Stonebloom##9386
+collect Stonebloom |q 25297/1 |goto 26.5,35.0
+step
+click Eye of Twilight##7011
+turnin The Eye of Twilight##25300 |goto 27.2,35.2
+accept Mastering Puppets##25301 |goto 27.2,35.2
+step
+click Darkflame Ember##9569
+collect Darkflame Ember |q 25297/3 |goto 28.4,35.8
+step
+click Twilight Cauldron##9387
+turnin From the Mouth of Madness##25297 |goto 28.4,36.5
+accept Free Your Mind, the Rest Follows##25298 |goto 28.4,36.5
+step
+Enter the cave |goto 26.9,36.3 < 5 |walk
+talk Kristoff Manheim##39797
+accept Gar'gol's Gotta Go##25328 |goto 27.2,40.8
+|tip This quest is currently bugged, so some players are able to accept the quest while others cannot.
+step
+click Gar'gol's Personal Treasure Chest##10
+collect Rusted Skull Key |q 25328/1 |goto 26.5,38.5
+step
+click The Twilight Apocrypha##470
+turnin Mastering Puppets##25301 |goto 25.8,41.6
+accept Elementary!##25303 |goto 25.8,41.6
+stickystart "hovbrute"
+step
+clicknpc Crucible of Fire##39730
+Activate the Crucible of Fire |q 25303/3 |goto 26.0,41.8
+step
+clicknpc Crucible of Earth##39737
+Activate the Crucible of Earth |q 25303/1 |goto 25.6,41.7
+step
+clicknpc Crucible of Air##39736
+Activate the Crucible of Air |q 25303/2 |goto 25.8,41.9
+step
+clicknpc Crucible of Water##39738
+Activate the Crucible of Water |q 25303/4 |goto 26.0,41.6
+step "hovbrute"
+kill Hovel Brute##39642+, Hovel Shadowcaster##39643+
+Slay 8 Minions of Gar'gol |q 25277/1 |goto 26.7,39.2
+talk Twilight Servitor##39644
+Administor the drought
+Free 8 Twilight Servitors |q 25298/1 |goto 26.7,39.2
+step
+click The Twilight Apocrypha##470
+turnin Elementary!##25303 |goto 25.8,41.6
+accept Return to Duskwhisper##25312 |goto 25.8,41.6
+step
+talk Kristoff Manheim##39797
+turnin Gar'gol's Gotta Go##25328 |goto 27.2,40.8
+accept Get Me Outta Here!##25332 |goto 27.2,40.8
+step
+Leave the cave
+Escort Kristoff Out |q 25332/1 |goto 27.1,36.0
+step
+talk Royce Duskwhisper##39435
+turnin Return to Duskwhisper##25312 |goto 28.6,30.2
+turnin Get Me Outta Here!##25332 |goto 28.6,30.2
+step
+talk Takrik Ragehowl##39432
+turnin Cleaning House##25277 |goto 28.4,29.9
+accept Sweeping the Shelf##25354 |goto 28.4,29.9
+accept Lightning in a Bottle##25355 |goto 28.4,29.9
+step
+talk Rio Duran##39434
+turnin Free Your Mind, the Rest Follows##25298 |goto 28.2,29.9
+step
+kill 8 Twilight Stormcaller##39843+ |q 25354/1 |goto 29.1,40.7
+kill 5 Howling Riftdweller##39844+ |q 25354/2 |goto 29.1,40.7
+click Lightning Channel##9816
+collect Charged Condenser Jar |q 25355/1 |goto 29.1,40.7
+step
+Use your Totem of Lo'Gosh |use Totem of Lo'Gosh##52854
+talk Spirit of Lo'Gosh##39622
+turnin Lightning in a Bottle##25355
+accept Into the Maw!##25617 |goto 26.2,41.0 |n
+Go inside the blue portal |goto 25.8,41.5 < 5 |noway |c |walk
+step
+talk Jordan Olafson##40834
+turnin Into the Maw!##25617 |goto 26.3,41.9
+accept Forged of Shadow and Flame##25575 |goto 26.3,41.9
+accept Crushing the Cores##25577 |goto 26.3,41.9
+step
+talk Yargra Blackscar##40837
+accept Rage of the Wolf Ancient##25576 |goto 26.3,42.0
+step
+kill 12 Dark Iron Laborer##40838+ |q 25576/1 |goto 29.6,41.8
+kill Searing Guardian##40841+
+collect 8 Smoldering Core##55123 |n
+Use your Smoldering Cores next to Twilight Anvils |use Smoldering Core##55123
+|tip They are small anvils sitting on the ground around this area.
+Destroy 8 Smoldering Cores |q 25577/1 |goto 29.6,41.8
+Click Twilight Arms Crates
+|tip They look like wooden boxes sitting on the ground around this area.
+Destroy 10 Twilight Arms Crates |q 25575/1 |goto 29.6,41.8
+step
+talk Yargra Blackscar##40837
+turnin Rage of the Wolf Ancient##25576 |goto 26.3,42.0
+step
+talk Jordan Olafson##40834
+turnin Forged of Shadow and Flame##25575 |goto 26.3,41.9
+turnin Crushing the Cores##25577 |goto 26.3,41.9
+accept Cindermaul, the Portal Master##25599 |goto 26.3,41.9
+step
+kill Cindermaul##40844 |q 25599/1 |goto 30.7,41.7
+click Battered Stone Chest##1387
+collect Tome of Openings |q 25599/2 |goto 30.7,41.7
+step
+talk Jordan Olafson##40834
+turnin Cindermaul, the Portal Master##25599 |goto 26.3,41.9
+accept Forgemaster Pyrendius##25600 |goto 26.3,41.9
+step
+Click the Portal Runes
+|tip They are brown metal plates on the ground on this small circular island in the lava.
+Lure Forgemaster Pyrendius onto the activated Portal Runes
+|tip This will weaken him and allow you to kill him.
+kill Forgemaster Pyrendius##40845 |q 25600/1 |goto 31.9,46.3
+step
+talk Jordan Olafson##40834
+turnin Forgemaster Pyrendius##25600 |goto 26.3,41.9
+accept Return from the Firelands##25612 |goto 26.3,41.9 |goto 25.9,40.9 |n
+Go inside the blue portal |goto 26.3,40.9 < 5 |noway |c |walk
+step
+talk Takrik Ragehowl##39432
+turnin Sweeping the Shelf##25354 |goto 28.4,29.9
+turnin Return from the Firelands##25612 |goto 28.4,29.9
+step
+talk Vision of Ysera##46987
+accept Aviana's Legacy##27874 |goto 28.4,29.8
+step
+talk Rio Duran##39434
+accept The Fires of Mt. Hyjal##25630 |goto 28.2,29.9
+step
+talk Laina Nightsky##39927
+turnin The Fires of Mt. Hyjal##25630 |goto 19.0,40.9
+accept Fighting Fire With ... Anything##25381 |goto 19.0,40.9
+accept Disrupting the Rituals##25382 |goto 19.0,40.9
+step
+talk Mylune##39930
+accept Save the Wee Animals##25385 |goto 19.2,37.9
+step
+talk Matoclaw##39928
+accept If You're Not Against Us...##25404 |goto 19.0,37.0
+step
+talk Elizil Wintermoth##41860
+fpath Grove of Aessina |goto 19.6,36.4
+step
+talk Tyrus Blackhorn##39933
+Tell him you've been sent to request his aid, then tell him he could be destroyed, then ask him if he will help you
+Persuade Blackhorn |q 25404/1 |goto 22.3,44.9
+step
+talk Tyrus Blackhorn##39933
+turnin If You're Not Against Us...##25404 |goto 22.3,44.9
+accept Seeds of Their Demise##25408 |goto 22.3,44.9
+step
+kill Wailing Weed##40066+
+collect 8 Bileberry |q 25408/1 |goto 21.1,42.6
+step
+talk Tyrus Blackhorn##39933
+turnin Seeds of Their Demise##25408 |goto 22.3,44.9
+accept A New Master##25411 |goto 22.3,44.9
+step
+kill Twilight Inferno Lord##39974
+Use your Bottled Bileberry Brew on the corpse of a Twilight Inferno Lord |use Bottled Bileberry Brew##53120
+Subjugate a Twilight Inferno Lord |q 25411/1 |goto 14.5,45.3
+step
+Next to you:
+talk Subjugated Inferno Lord##40093
+turnin A New Master##25411
+accept The Name Never Spoken##25412
+stickystart "ragefire"
+step
+click Southern Firestone##9407
+Examine the Southern Firestone |q 25412/3 |goto 14.3,45.4
+step
+click Central Firestone##9407
+Examine the Central Firestone |q 25412/2 |goto 11.7,41.5
+step
+click Northern Firestone##9407
+Examine the Northern Firestone |q 25412/1 |goto 9.6,36.5
+step "ragefire"
+kill 10 Raging Firestorm##39939+ |q 25381/1 |goto 11.3,38.2
+kill 6 Twilight Inferno Lord##39974+  |q 25382/1 |goto 11.3,38.2
+Click Panicked Bunnies and Terrified Squirrels
+|tip They are small and run around this area.
+collect 10 Frightened Animal |q 25385/1 |goto 11.3,38.2
+step
+talk Laina Nightsky##39927
+turnin Fighting Fire With ... Anything##25381 |goto 19.0,40.9
+turnin Disrupting the Rituals##25382 |goto 19.0,40.9
+step
+talk Mylune##39930
+turnin Save the Wee Animals##25385 |goto 19.2,37.9
+accept Oh, Deer!##25392 |goto 19.2,37.9
+step
+talk Tyrus Blackhorn##39933
+turnin The Name Never Spoken##25412 |goto 22.3,44.9
+accept Black Heart of Flame##25428 |goto 22.3,44.9
+stickystart "fawnback"
+step
+Use your Charred Branch while in the burning forest area |use Charred Branch##53464
+kill Thol'embaar##40107
+collect Black Heart of Thol'embaar |q 25428/1 |goto 14.6,42.2
+step "fawnback"
+click 3 Injured Fawn##39999+
+Lead the Injured Fawns back to Mylune at [19.2,37.9]
+Escort 3 Injured Fawns Home |q 25392/1 |goto 12.5,44.6
+step
+talk Mylune##39930
+turnin Oh, Deer!##25392 |goto 19.2,37.9
+step
+talk Tyrus Blackhorn##39933
+turnin Black Heart of Flame##25428 |goto 22.3,44.9
+accept Good News... and Bad News##29066 |goto 22.3,44.9
+step
+talk Laina Nightsky##39927
+accept Last Stand at Whistling Grove##25940 |goto 19.0,40.9
+step
+talk Matoclaw##39928
+turnin Good News... and Bad News##29066 |goto 19.0,37.0
+step
+talk Keeper Taldros##39932
+turnin Last Stand at Whistling Grove##25940 |goto 13.7,32.8
+accept The Bears Up There##25462 |goto 13.7,32.8
+step
+clicknpc Climbing Tree##40190
+clicknpc Hyjal Bear Cub##40240+
+Use your Climb Up ability to climb to the top of the tree
+Use your Chuck-a-bear ability to throw the cubs down
+|tip Aim the yellow spot at the bearskin trampoline on the ground.
+Rescue 6 Hyjal Bear Cubs |q 25462/1 |goto 13.9,34.1
+step
+talk Keeper Taldros##39932
+turnin The Bears Up There##25462 |goto 13.7,32.8
+accept Smashing Through Ashes##25490 |goto 13.7,32.8
+step
+kill 8 Charbringer##40336+ |q 25490/1 |goto 16.4,51.8
+step
+talk Arch Druid Hamuul Runetotem##5769
+turnin Smashing Through Ashes##25490 |goto 27.1,62.6
+accept Durable Seeds##25491 |goto 27.1,62.6
+accept Fresh Bait##25493 |goto 27.1,62.6
+step
+talk Rayne Feathersong##40331
+accept Firebreak##25492 |goto 27.1,63.0
+step
+kill 10 Lava Surger##46911+ |q 25492/1 |goto 34.0,53.2
+kill Core Hound##46910+
+collect 4 Core Hound Entrails |q 25493/1 |goto 34.0,53.2
+click Scorched Soil##768
+collect 10 Hyjal Seedling |q 25491/1 |goto 34.0,53.2
+step
+talk Dinorae Swiftfeather##43481
+fpath Shrine of Aviana |goto 41.2,42.6
+step
+talk Thisalee Crow##41006
+accept The Wormwing Problem##25655 |goto 42.2,45.4
+accept Scrambling for Eggs##25656 |goto 42.2,45.4
+step
+talk Choluna##41005
+turnin Aviana's Legacy##27874 |goto 44.4,46.2
+accept An Offering for Aviana##25663 |goto 44.4,46.2
+step
+Use your Sacred Nectar next to Aviana's Burial Circle |use Sacred Nectar##55208
+Offer the Nectar |q 25663/1 |goto 40.4,44.3
+talk Mysterious Winged Spirit##41068
+turnin An Offering for Aviana##25663 |goto 40.4,44.3
+accept A Plea From Beyond##25665 |goto 40.4,44.3
+step
+kill Wormwing Screecher##41027+, Wormwing Swifttalon##41028+
+Slay 10 Wormwing Harpies |q 25655/1 |goto 36.9,43.4
+click Stolen Hyjal Egg##1867+
+collect 8 Hyjal Egg |q 25656/1 |goto 36.9,43.4
+step
+talk Thisalee Crow##41006
+turnin The Wormwing Problem##25655 |goto 42.2,45.4
+turnin Scrambling for Eggs##25656 |goto 42.2,45.4
+accept A Bird in Hand##25731 |goto 42.2,45.4
+step
+talk Choluna##41005
+turnin A Plea From Beyond##25665 |goto 44.4,46.2
+accept A Prayer and a Wing##25664 |goto 44.4,46.2
+step
+Click the Harpy Signal Fire
+|tip It's a brazier with red fire in it.
+Fight Marion Wormwing until she gets captured |q 25731/1 |goto 38.4,44.2
+talk Marion Wormwing##41112 |goto 38.4,44.2
+Ask her why she is stealing eggs, then tell Thisalee to kill her
+Interrogate Marion Wormwing |q 25731/2
+step
+Use your Enormous Bird Call in Blaithe's Roost |use Enormous Bird Call##55211
+|tip It's a huge bird nest sitting on top of this mountain peak.
+kill Blaithe##41084
+collect Ancient Feather |q 25664/1 |goto 39.2,37.1
+step
+talk Thisalee Crow##41006
+turnin A Bird in Hand##25731 |goto 42.2,45.4
+step
+talk Choluna##41005
+turnin A Prayer and a Wing##25664 |goto 44.4,46.2
+step
+Go upstairs in the Shrine of Aviana
+talk Skylord Omnuron##40997
+accept Fact-Finding Mission##25740 |goto 43.5,45.9
+step
+talk Arch Druid Hamuul Runetotem##5769
+turnin Durable Seeds##25491 |goto 27.1,62.6
+turnin Fresh Bait##25493 |goto 27.1,62.6
+accept Hell's Shells##25507 |goto 27.1,62.6
+step
+talk Rayne Feathersong##40331
+turnin Firebreak##25492 |goto 27.1,63.0
+accept Prepping the Soil##25502 |goto 27.1,63.0
+step
+click Flameward##40460
+Activate the Flameward |q 25502/1 |goto 33.0,64.6
+Defend the Flameward |q 25502/2 |goto 33.0,64.6
+step
+talk Thisalee Crow##41006
+turnin Fact-Finding Mission##25740 |goto 32.8,70.8
+accept Sethria's Brood##25746 |goto 32.8,70.8
+accept A Gap in Their Armor##25758 |goto 32.8,70.8
+step
+click Codex of Shadows##470
+accept The Codex of Shadows##25763 |goto 31.3,77.1
+step
+kill Twilight Dragonkin##41029+, Twilight Dragonkin Armorers##41030+
+Slay 12 Sethria's Minions |q 25746/1 |goto 30.9,76.7
+click Twilight Armor Plate##7041
+collect 8 Twilight Armor Plate |q 25758/1 |goto 30.9,76.7
+step
+talk Thisalee Crow##41006
+turnin Sethria's Brood##25746 |goto 32.8,70.8
+turnin A Gap in Their Armor##25758 |goto 32.8,70.8
+accept Disassembly##25761 |goto 32.8,70.8
+turnin The Codex of Shadows##25763 |goto 32.8,70.8
+accept Egg Hunt##25764 |goto 32.8,70.8
+step
+Use Thisalee's Shive on Twilight Juggernauts |use Thisalee's Shiv##55883
+|tip Use Thisalee's Shive multiple times to remove the Twilight Juggernauts' Armor Plating and make them weaker.
+kill 3 Twilight Juggernaut##41031 |q 25761/1 |goto 31.1,76.7
+click Shadow Cloak Generator##9532+
+Unveil and Defend Aviana's Egg |q 25764/1 |goto 31.1,76.7
+step
+talk Thisalee Crow##41006
+turnin Disassembly##25761 |goto 32.8,70.8
+turnin Egg Hunt##25764 |goto 32.8,70.8
+accept Sethria's Demise##25776 |goto 32.8,70.8
+step
+kill Sethria##41255
+Use Thisalee's Signal Rocket when Sethria turns into a dragon |use Thisalee's Signal Rocket##56003
+kill Sethria##41255 |q 25776/1 |goto 35.5,98.0
+step
+talk Thisalee Crow##41006
+turnin Sethria's Demise##25776 |goto 32.8,70.8
+accept Return to the Shrine##25795 |goto 32.8,70.8
+step
+Use your Heap of Core hound Innards near Nemesis |use Heap of Core hound Innards##54744
+|tip Nemesis is a huge turtle that walks all around The Flamewake area, so you may need to search for him.
+clicknpc Nemesis##40340
+collect Nemesis Shell Fragment |q 25507/1 |goto 37.4,52.3
+step
+talk Choluna##41005
+turnin Return to the Shrine##25795 |goto 44.4,46.2
+accept An Ancient Reborn##25807 |goto 44.4,46.2
+step
+Use Herald's Incense next to Aviana's Egg |use Herald's Incense##56016
+|tip Aviana's Egg is in the tree tower, in a side room.
+Burn Herald's Incense |q 25807/1 |goto 44.3,47.9
+step
+talk Aviana##41308
+turnin An Ancient Reborn##25807 |goto 44.3,48.0
+step
+talk Morthis Whisperwing##41003
+accept The Hatchery Must Burn##25810 |goto 44.1,45.9
+step
+|goto 39.2,58.1 |n
+Go inside the blue portal |goto 38.8,58.0 < 5 |walk
+talk Farden Talonshrike##40578
+turnin The Hatchery Must Burn##25810 |goto 37.2,56.2
+accept Flight in the Firelands##25523 |goto 37.2,56.2
+step
+click the Twilight Weapon Rack##130
+collect Twilight Firelance##52716 |q 25523 |goto 37.2,56.2
+step
+Equip the Twilight Firelance |use Twilight Firelance##52716
+Click Aviana's Guardian to ride it |invehicle |goto 37.4,56.0
+|tip They are hippogryphs.
+step
+Use your Flap ability on your hotbar repeatedly to fly to this green flag
+Visit the Guardian Flag |q 25523/1 |goto 36.4,53.2
+model 9475
+step
+Use your Flap ability on your hotbar repeatedly to fly to this spot
+talk Farden Talonshrike##40578
+turnin Flight in the Firelands##25523 |goto 37.2,56.2
+accept Wave One##25525 |goto 37.2,56.2
+step
+Use your Flap ability on your hotbar repeatedly to fly around this area
+Fly into Twilight Buzzards to joust them
+kill 10 Twilight Knight Rider##39835+ |q 25525/1 |goto 36.8,54.0
+step
+Use your Flap ability on your hotbar repeatedly to fly to this spot
+talk Farden Talonshrike##40578
+turnin Wave One##25525 |goto 37.2,56.2
+accept Wave Two##25544 |goto 37.2,56.2
+step
+Use your Flap ability on your hotbar repeatedly to fly around this area
+Fly into Twilight Firebirds to joust them
+|tip Be careful, don't let the burning Falling Boulders hit you.
+kill 10 Twilight Lancer##40660 |q 25544/1 |goto 36.8,54.0
+step
+Use your Flap ability on your hotbar repeatedly to fly to this spot
+talk Farden Talonshrike##40578
+turnin Wave Two##25544 |goto 37.2,56.2
+accept Egg Wave##25560 |goto 37.2,56.2
+step
+Use your Flap ability on your hotbar repeatedly to fly around this area
+Run over Firelands Eggs
+|tip They look like blue eggs on the ground around this area.
+Destroy 40 Firelands Eggs |q 25560/1 |goto 33.3,56.9
+You can find more Firelands Eggs all around 35.8,53.6
+step
+Use your Flap ability on your hotbar repeatedly to fly to this spot
+talk Farden Talonshrike##40578
+turnin Egg Wave##25560 |goto 37.2,56.2
+step
+label "beaten"
+|goto Mount Hyjal,39.1,58.3 |n
+Go inside the blue portal |goto 38.77,58.01 < 5 |walk
+talk Farden Talonshrike##40578
+accept Vigilance on Wings##29177 |goto 37.2,56.2
+step
+click the Twilight Weapon Rack##130
+collect 1 Twilight Firelance##52716 |q 29177 |goto 37.2,56.1
+step
+Equip the Twilight Firelance |use Twilight Firelance##52716
+Click Aviana's Guardian to ride it |invehicle |goto 37.4,56.0
+|tip They are hippogryphs.
+step
+Use your Flap ability on your hotbar repeatedly to fly around this area
+kill 10 Twilight Lancer##40660+ |q 29177/1 |goto 36.6,53.4
+step
+talk Farden Talonshrike##40578
+turnin Vigilance on Wings##29177 |goto 37.2,56.2
+|tip You may choose only one Jouster.
+collect Blue Mini Jouster##65661 |goto 37.2,56.2 |or
+collect Gold Mini Jouster##65662 |goto 37.2,56.2 |or
+step
+learnpet Blue Mini Jouster##42177 |use Blue Mini Jouster##65661 |or
+learnpet Gold Mini Jouster##42183 |use Gold Mini Jouster##65662 |or
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Great Horned Owl",{
+pet=68,
+description="This guide will walk you through obtaining the Flying pet: Great Horned Owl\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
+},[[
+step
+#include "auctioneer"
+buy 1 Great Horned Owl##8500
+|tip This pet must be bought with an Alliance character or through the Auction House
+step
+learnpet Great Horned Owl##7553 |use Great Horned Owl##8500
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Hawk Owl",{
+pet=67,
+description="This guide will walk you through obtaining the Flying pet: Hawk Owl\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
+},[[
+step
+#include "auctioneer"
+buy 1 Hawk Owl##8501
+|tip This pet must be bought with an Alliance character or through the Auction House
+step
+learnpet Hawk Owl##7555 |use Hawk Owl##8501
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Plump Turkey",{
 pet=201,
-description="This guide will walk you through obtaining\nthe Flying pet:Plump Turkey",
+description="This guide will walk you through obtaining the Flying pet: Plump Turkey",
 },[[
 #include "Pilgrims_Bounty_Quests_Horde"
 #include "Pilgrims_Bounty_Achievements_Horde"
@@ -3692,9 +3845,9 @@ collect 1 Turkey Cage##44810
 step
 learnpet Plump Turkey##32818 |use Turkey Cage##44810
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Pterrordax Hatchling",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Pterrordax Hatchling",{
 pet=309,
-description="This guide will walk you through obtaining\nthe Flying pet: Pterrordax Hatchling",
+description="This guide will walk you through obtaining the Flying pet: Pterrordax Hatchling",
 },[[
 step
 This pet is a _rare Archaeology "Fossil"_ solve
@@ -3713,20 +3866,9 @@ collect 1 Pterrodax Hatchling##69821
 step
 learnpet Pterrordax Hatchling##53225 |use Pterrodax Hatchling##69821
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Red Dragonhawk Hatchling", {
-pet=143,
-model={28401,29363,29362},
-description="This guide will walk you through obtaining\nthe Dragonkin pet: Red Dragonhawk Hatchling",
-},[[
-step
-talk Jilanne##16860
-buy 1 Red Dragonhawk Hatchling##29956 |goto Eversong Woods 44.8,71.6
-step
-learnpet Red Dragonhawk Hatchling##21064 |use Red Dragonhawk Hatchling##29956
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Rustberg Gull", {
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Rustberg Gull",{
 pet=271,
-description="This guide will walk you through obtaining\nthe Flying pet: Rustberg Gull",
+description="This guide will walk you through obtaining the Flying pet: Rustberg Gull",
 },[[
 step
 label begin
@@ -3973,504 +4115,9 @@ buy 1 Rustberg Gull##64996 |goto Tol Barad Peninsula,54.6,81.0
 step
 learnpet Rustberg Gull##48107 |use Rustberg Gull##64996
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Scooter the Snail",{
-pet=289,
-description="This guide will walk you through obtaining\nthe Critter pet:Scooter the Snail",
-},[[
-step
-You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
-If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-For the Shattrath Daily set, click here. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-confirm
-step
-collect 1 Snail Shell##66073
-|tip Warden of the Horde
-step
-learnpet Scooter the Snail##51635 |use Snail Shell##66073 |tip Warden of the Horde
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Sea Pony",{
-pet=340,
-description="This guide will walk you through obtaining\nthe Aquatic pet:Sea Pony",
-},[[
-step
-This pet requires Darkmoon Island to be accessible.
-confirm
-step
-Follow the Path to the Darkmoon Faire |goto Darkmoon Island,56.0,52.9,1 |walk
-This pet can be caught by fishing the waters around Darkmoon Island.
-collect Sea Pony##73953
-step
-learnpet Sea Pony##55386 |use Sea Pony##73953
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Sen'jin Fetish",{
-pet=218,
-description="This guide will walk you through obtaining\nthe Undead pet: Sen'jin Fetish",
-},[[
-step
-In order to be able to do this guide section, you must have already completed the ARGENT TOURNAMENT GROUNDS DAILIES (VALIANT RANK) guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
-|tip After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction.  Earning Champion rank with all the races of your faction, as well as becoming Exalted with the Darkspear Trolls, Orgrimmar, Silvermoon City, Thunder Bluff, and Undercity factions will earn you the Crusader title, and unlock more daily quests.
-|tip You cannot complete this section if you are a Troll.
-confirm always
-step
-Proceeding to Pre Quests. |next |only if default
-Click here Aspirant Rank Daily quests. |next "Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-Click here for |next "Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-Click here if you are already at the rank of Champion. |next buy |confirm
-step
-talk Helidan Lightwing##33849
-fpath Argent Tournament Grounds |goto Icecrown,72.6,22.6
-step
-talk Justicar Mariel Trueheart##33817
-accept The Argent Tournament##13668 |goto Icecrown,69.7,22.9
-step
-talk Magister Edien Sunhollow##33542
-turnin The Argent Tournament##13668 |goto 76.3,24.4
-accept Mastery Of Melee##13829 |goto 76.3,24.4
-step
-talk Amariel Sunsworn##33658
-accept Mastery Of The Charge##13839 |goto 76.3,24.4
-step
-talk Galathia Brightdawn##33659
-accept Mastery Of The Shield-Breaker##13838 |goto 76.2,24.4
-step
-Equip the Horde Lance in your bags |use Horde Lance##46070
-Click to mount the Stabled Sunreaver Hawkstrider |invehicle|q 13829 |goto 75.6,23.7
-step
-talk Jeran Lockwood##33973
-Listen to Jeran Lockwood's advice |q 13829/1 |goto 72.5,19.3
-step
-talk Rugan Steelbelly##33972
-Listen to Rugan Steelbelly's advice |q 13839/1 |goto 72.7,18.9
-step
-talk Valis Windchaser##33974
-Listen to Valis Windchaser's advice |q 13838/1 |goto 73.2,19.2
-step
-Target a Ranged Target from a distance
-|tip Use Shield-Breaker ability on Ranged Target to bring it's shields down
-|tip Use Shield-Breaker ability on Ranged Target twice, while it's shields are down |q 13838/2 |goto 73.1,19.0
-step
-Target a Charge Target from a distance
-|tip Use Shield-Breaker ability until you notice the targets Defend is gone
-|tip Use your Charge ability on the Charge Target 2 times |q 13839/2 |goto 72.9,18.8
-step
-Target a Melee Target
-|tip If you don't want to kill your mount be sure to keep your Defend ability maxed out at 3 stacks
-|tip Use your Thrust ability to attack the target 5 times |q 13829/2 |goto 72.6,19.7
-step
-Click the red arrow on your hotbar to stop riding the bird mount |outvehicle |q 13829
-step
-talk Magister Edien Sunhollow##33542
-turnin Mastery Of Melee##13829 |goto 76.3,24.4
-step
-talk Amariel Sunsworn##33658
-turnin Mastery Of The Charge##13839 |goto 76.3,24.4
-step
-talk Galathia Brightdawn##33659
-turnin Mastery Of The Shield-Breaker##13838 |goto 76.2,24.4
-step
-label buy
-talk Zul'tore##33372
-accept Valiant Of Sen'jin##13708 |goto Icecrown,76.0,24.5
-turnin Valiant Of Sen'jin##13708 |goto Icecrown,76.0,24.5
-accept The Valiant's Charge##13719 |goto Icecrown,76.0,24.5
-step
-talk Zul'tore##33372
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
-accept A Blade Fit For A Champion##13768 |goto 76.0,24.5 |or
-accept A Worthy Weapon##13769 |goto 76.0,24.5 |or
-accept The Edge Of Winter##13770 |goto 76.0,24.5 |or
-step
-talk Shadow Hunter Mezil-kree##33540
-accept A Valiant's Field Training##13771 |goto 76.0,24.6
-step
-talk Gahju##33545
-accept The Grand Melee##13772 |goto 75.9,24.4
-accept At The Enemy's Gates##13857 |goto 75.9,24.4
-step
-Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
-Target Lake Frogs
-Use the emote /kiss on the Lake Frogs
-Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
-talk Maiden of Ashwood Lake##33220
-Tell her you are glad to help
-collect Ashwood Brand |q 13768/1 |goto Grizzly Hills,61.2,50.3
-step
-Click Winter Hyacinth
-collect 4 Winter Hyacinth##45000 |q 13769 |goto Icecrown,69.1,76.2
-step
-Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
-Listen to the Maiden of Drak'Mar
-Click the Blade of Drak'Mar that spawns
-collect Blade of Drak'Mar |q 13769/1 |goto Dragonblight,93.2,26.1
-step
-kill Lord Everblaze##33289
-collect 1 Everburning Ember##45005 |q 13770 |goto Crystalsong Forest,54.5,74.9
-step
-Use the Everburning Ember on Maiden of Winter's Breath|use Everburning Ember##45005
-collect Winter's Edge |q 13770/1 |goto Howling Fjord,42.2,19.7
-step
-Equip the Horde Lance in your bags |use Horde Lance##46070
-Click to mount the Stabled Campaign Warhorse |invehicle |q 13857 |goto Icecrown,48.9,71.4
-step
-kill 15 Boneguard Footman |q 13857/1 |goto 50.1,74.8
-|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
-kill 10 Boneguard Scout |q 13857/2 |goto 50.1,74.8
-|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
-kill 3 Boneguard Lieutenant |q 13857/3 |goto 50.1,74.8
-|tip They ride horses around this area.  Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
-step
-Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13857 |goto 49.1,71.4
-step
-kill 10 Converted Hero##32255 |q 13771/1 |goto 44.3,54.2
-step
-Equip the Horde Lance in your bags |use Horde Lance##46070
-Click to mount the Stabled Darkspear Raptor |invehicle |q 13772 |goto 75.6,23.8
-step
-Talk to the riders on mounts of other Horde races
-Tell them you are ready to fight!
-Fight and defeat them
-|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
-collect 3 Mark of the Valiant |q 13772/1 |goto 75.3,26.0
-step
-talk Zul'tore##33372
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
-turnin A Blade Fit For A Champion##13768 |goto 76.0,24.5
-turnin A Worthy Weapon##13769 |goto 76.0,24.5
-turnin The Edge Of Winter##13770 |goto 76.0,24.5
-step
-talk Shadow Hunter Mezil-kree##33540
-turnin A Valiant's Field Training##13771 |goto 76.0,24.6
-step
-talk Gahju##33545
-turnin The Grand Melee##13772 |goto 75.9,24.4
-turnin At The Enemy's Gates##13857 |goto 75.9,24.4
-step
-Make sure you have 25 Valiant Seals:
-collect 25 Valiant's Seal |q 13719/1
-|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
-step
-talk Zul'tore##33372
-turnin The Valiant's Charge##13719 |goto 76.0,24.5
-accept The Valiant's Challenge##13727 |goto 76.0,24.5
-step
-Equip the Horde Lance in your bags |use Horde Lance##46070
-Click to mount the Stabled Darkspear Raptor |invehicle |q 13727 |goto 72.0,22.5
-step
-talk Squire Danny##33518
-Tell him you are ready to fight!
-An Argent Champion runs up on a horse
-Use the abilities on your hotbar to defeat the Argent Champion
-|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
-Defeat the Argent Valiant |q 13727/1 |goto 68.6,21.0
-step
-talk Zul'tore##33372
-turnin The Valiant's Challenge##13727 |goto 76.0,24.5
-step
-Become a Champion of Sen'jin |achieve 2784
-earn 40 Champion's Seal##241+
-If you don't meet both of these requirements go back to step 1 of the guide.
-step
-talk Samamba##33554
-buy 1 Sen'jin Fetish##45606 |goto Icecrown,76.0,24.4
-step
-learnpet Sen'jin Fetish##33810 |use Sen'jin Fetish##45606
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Shimmering Wyrmling",{
-pet=229,
-description="This guide will walk you through obtaining\nthe Magic pet: Shimmering Wyrmling",
-},[[
-step
-Use the Icecrown Dailies section of this guide to complete the Argent Tournament Grounds and The Sunreavers pre-quest_ and dailies
-Exalted with The Sunreavers |condition rep("The Sunreavers")>=Exalted
-Click here for The Pre Quests. |next |only if not completedq(13838) |confirm
-next "Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |only if ZGV.guidesets["DailiesHCATA"] |confirm
-next "Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |only if ZGV.guidesets["DailiesHCATA"] |confirm |only if completedq(13678)
-next "Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Death Knight Only" |only DeathKnight |only if ZGV.guidesets["DailiesHCATA"] |confirm |only if completedq(13795)
-next "Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Non-Death Knight Only" |only !DeathKnight |only if ZGV.guidesets["DailiesHCATA"] |only if completedq(13794)
-Click here if you have completed the Pre Quests. |next buy |confirm
-step
-talk Helidan Lightwing##33849
-fpath Argent Tournament Grounds |goto Icecrown,72.6,22.6
-step
-talk Justicar Mariel Trueheart##33817
-accept The Argent Tournament##13668 |goto Icecrown,69.7,22.9
-step
-talk Magister Edien Sunhollow##33542
-turnin The Argent Tournament##13668 |goto 76.3,24.4
-accept Mastery Of Melee##13829 |goto 76.3,24.4
-step
-talk Amariel Sunsworn##33658
-accept Mastery Of The Charge##13839 |goto 76.3,24.4
-step
-talk Galathia Brightdawn##33659
-accept Mastery Of The Shield-Breaker##13838 |goto 76.2,24.4
-step
-Equip the Horde Lance in your bags |use Horde Lance##46070
-Click to mount the Stabled Sunreaver Hawkstrider |invehicle |q 13829 |goto 75.6,23.7
-step
-talk Jeran Lockwood##33973
-Listen to Jeran Lockwood's advice |q 13829/1 |goto 72.5,19.3
-step
-talk Rugan Steelbelly##33972
-Listen to Rugan Steelbelly's advice |q 13839/1 |goto 72.7,18.9
-step
-talk Valis Windchaser##33974
-Listen to Valis Windchaser's advice |q 13838/1 |goto 73.2,19.2
-step
-Target a Ranged Target from a distance
-|tip Use Shield-Breaker ability on Ranged Target to bring it's shields down
-|tip Use Shield-Breaker ability on Ranged Target twice, while it's shields are down |q 13838/2 |goto 73.1,19.0
-step
-Target a Charge Target from a distance
-|tip Use Shield-Breaker ability until you notice the targets Defend is gone
-|tip Use your Charge ability on the Charge Target 2 times |q 13839/2 |goto 72.9,18.8
-step
-Target a Melee Target
-|tip If you don't want to kill your mount be sure to keep your Defend ability maxed out at 3 stacks
-|tip Use your Thrust ability to attack the target 5 times |q 13829/2 |goto 72.6,19.7
-step
-Click the red arrow on your hotbar to stop riding the bird mount |outvehicle |q 13829
-step
-talk Magister Edien Sunhollow##33542
-turnin Mastery Of Melee##13829 |goto 76.3,24.4
-step
-talk Amariel Sunsworn##33658
-turnin Mastery Of The Charge##13839 |goto 76.3,24.4
-step
-talk Galathia Brightdawn##33659
-turnin Mastery Of The Shield-Breaker##13838 |goto 76.2,24.4
-step
-label buy
-earn 50 Champion's Seal##241 |goto Icecrown,76.2,24.0
-talk Vasarin Redmorn##34772
-buy 1 Shimmering Wyrmling##46821 |goto Icecrown,76.2,24.0
-step
-learnpet Shimmering Wyrmling##34724 |use Shimmering Wyrmling##46821
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Shore Crawler",{
-pet=629,
-description="This guide will walk you through obtaining\nthe Aquatic pet: Shore Crawler",
-},[[
-step
-talk Matty##63086
-Tell him you're interested in catching some rare pets.
-learnpet Shore Crawler##63097 |goto Orgrimmar 37.6,79.1
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Silver Dragonhawk Hatchling",{
-pet=144,
-description="This guide will walk you through obtaining\nthe Dragonkin pet:Silver Dragonhawk Hatchling",
-},[[
-step
-talk Jilanne##16860
-buy 1 Silver Dragonhawk##29957 |goto Eversong Woods 44.8,71.6
-step
-learnpet Silver Dragonhawk Hatchling##21063 |use Silver Dragonhawk##29957
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Silver Tabby Cat",{
-pet=45,
-description="This guide will walk you through obtaining the Beast pet: Silver Tabby Cat\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
-},[[
-step
-#include "auctioneer"
-buy 1 Cat Carrier (Silver Tabby)##8488
-tip This pet must be bought with an Alliance character or through the Auction House
-step
-learnpet Silver Tabby Cat##7381 |use Cat Carrier (Silver Tabby)##8488
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Small Frog",{
-pet=419,
-description="This guide will walk you through obtaining\nthe Aquatic pet: Small Frog",
-},[[
-step
-Challenge one to a pet battle and capture it
-|tip The Small Frog is level 3.
-learnpet Small Frog##61071 |goto Northern Barrens 36.2,44.0
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Strand Crawler",{
-pet=211,
-description="This guide will walk you through obtaining\nthe Aquatic pet: Strand Crawler",
-},[[
-step
-label "select"
-Click here to do the Undercity Daily Quests. |next "undfish" |confirm
-Click here to do the Dalaran Daily Quests. |next "dalfish" |confirm
-|tip You must complete the Fishing Daily quests in Undercity or Dalaran to obtain this pet
-step
-label "dalfish"
-In order to earn this Achievement, you will have to complete 5 daily quests.
-|tip You will only be able to accept one per day, so this may take longer than 5 days to achieve.
-Click here to proceed |confirm
-step
-Below is a list of the 5 daily quests you will need to complete.
-The Ghostfish |achieve 3217/1
-Jewel Of The Sewers |achieve 3217/2
-Dangerously Delicious |achieve 3217/3
-Blood is Thicker |achieve 3217/4
-Disarmed! |achieve 3217/5
-Click to proceed |confirm
-step
-talk Marcia Chase##28742
-You will only be able to accept, and turn in, 1 of these 5 daily quests per day:
-accept Blood Is Thicker##13833 |goto Dalaran,53.1,64.9 |or
-accept Dangerously Delicious##13834 |goto Dalaran,53.1,64.9 |or
-accept Jewel Of The Sewers##13832 |goto Dalaran,53.1,64.9 |or
-accept Disarmed!##13836 |goto Dalaran,53.1,64.9 |or
-accept The Ghostfish##13830 |goto Dalaran,53.1,64.9 |or
-step
-kill Wooly Mammoth##24614, Mammoth Calf##24613, Wooly Mammoth Bull##25743
-collect the Animal Blood buff |havebuff Ability_Seal |q 13833 |goto Borean Tundra,54.6,41.8
-only if havequest (13833)
-step
-Walk into the water here to create a pool of blood
-Fish in the pool of blood
-collect 5 Bloodtooth Frenzy |q 13833/1 |goto 53.7,42.9
-only if havequest (13833)
-step
-Fish in this big lake
-collect 10 Terrorfish |q 13834/1 |goto Wintergrasp,79.9,41.8
-only if havequest (13834)
-step
-The entrance to the Dalaran sewers starts here |goto Dalaran,60.2,47.7 < 5 |c |q 13832 |walk
-only if havequest (13832)
-step
-Fish in the water in the Dalaran sewers
-collect 1 Corroded Jewelry |q 13832/1 |goto 44.4,66.2
-only if havequest (13832)
-step
-Leave the Dalaran sewers |goto Dalaran,60.2,47.7 < 5 |c |q 13832 |walk
-only if havequest (13832)
-step
-Stand on the this circular platform and fish in the water here
-collect Bloated Slippery Eel##45328 |n
-Click the Bloated Slippery Eel in your bags |use Bloated Slippery Eel##45328
-collect 1 Severed Arm |q 13836/1 |goto Dalaran,64.8,60.8
-only if havequest (13836)
-step
-Fish in the water here
-collect 1 Phantom Ghostfish##45902 |n
-Click the Phantom Ghostfish in your bags to eat it |use Phantom Ghostfish##45902
-Discover the Ghostfish mystery |q 13830/1 |goto Sholazar Basin,49.3,61.8
-only if havequest (13830)
-step
-talk Marcia Chase##28742
-You will only be able to accept, and turn in, 1 of these 5 daily quests per day:
-turnin Blood Is Thicker##13833 |goto Dalaran,53.1,64.9
-turnin Dangerously Delicious##13834 |goto Dalaran,53.1,64.9
-turnin Jewel Of The Sewers##13832 |goto Dalaran,53.1,64.9
-turnin The Ghostfish##13830 |goto Dalaran,53.1,64.9
-next "use2"
-step
-talk Olisarra the Kind##28706
-turnin Disarmed!##13836 |goto Dalaran,36.6,37.3
-next "use2"
-step
-label "use2"
-use Bag of Fishing Treasures##46007
-collect 1 Strand Crawler##44983 |next "use"
-Click here to go to the beginning of this daily guide. |next "select" |confirm
-step
-label "undfish"
-In order to earn the achievement Fish or Cut Bait: Darnassus, you will need to complete 5 daily quests from the NPC Armand Cromwell.
-You will only be able to accept 1 of the 5 quests per day.
-Click here to proceed. |confirm
-step
-Below are the following quests you will have to complete in order to earn the achievement:
-Fish Head |achieve 5850/1
-Tadpole Terror |achieve 5850/2
-Like Pike? |achieve 5850/3
-Time for Slime |achieve 5850/4
-Moat Monster |achieve 5850/5
-Click here to proceed. |confirm
-step
-Go to Undercity |goto Undercity |noway|c
-step
-label dailies
-talk Armand Cromwell##4573
-You will only be able to accept one of the five quests listed.
-accept Fish Head##29317 |goto Undercity,81.6,30.8 |or
-accept Like Pike?##29320 |goto Undercity,81.6,30.8 |or
-accept Moat Monster!##29361 |goto Undercity,81.6,30.8 |or
-accept Tadpole Terror##29319 |goto Undercity,81.6,30.8 |or
-accept Time for Slime##29322 |goto Undercity,81.6,30.8 |or
-step
-Use your Fishing skill at the edge of the wooden dock to fish up a Severed Abomination Head |cast Fishing##7620
-collect Severed Abomination Head##69901 |q 29317/1 |goto 81.6,31.5
-only if havequest(29317)
-step
-Click on the graves here to collect a Corpse Worm |goto Undercity,67.3,15.2
-|tip It looks like sparkling dirt in front of a grave stone
-confirm
-only if havequest(29320)
-step
-Use your Fishing skill in the water here to fish up Corpse-Fed Pike |cast Fishing##7620
-collect Corpse-Fed Pike##69909 |q 293320/1 |goto Tirisfal Glades,67.1,50.8
-only if havequest(29320)
-step
-Open your Moat Monster Feeding Kit |use Moat Monster Feeding Kit##69999
-Lure the Moat Monster out with the Alliance Decoy |use Alliance Decoy Ki##69998
-Feed the Moat Monster with your Bloated Frogs! |use Bloated Frog##69995
-Feed Bloated Frogs to the Moat Monster |q 29361/1 |goto Undercity,64.7,16.5
-only if havequest(29361)
-step
-Use your Fishing skill to fish up Giant Flesh-Eating Tadpoles |cast Fishing##7620
-collect 8 Giant Flesh-Eating Tadpole##69905 |q 29319/1 |goto Tirisfal Glades,50.6,56.5
-only if havequest(29319)
-step
-Click on the Squirming Slime Mold in the green, slimy water all over Undercity
-|tip These are a bit hard to see, so, to see them better, you can dive into the water, or turn on your display health bars by pushing [V]
-collect 10 Squirming Slime Mold##69911 |q 29322/1 |goto Undercity,81.1,32.0
-only if havequest(29322)
-step
-talk Armand Cromwell##4573
-turnin Like Pike?##29320 |goto Undercity,81.6,30.8 |or
-turnin Moat Monster!##29361 |goto Undercity,81.6,30.8 |or
-turnin Tadpole Terror##29319 |goto Undercity,81.6,30.8 |or
-turnin Time for Slime##29322 |goto Undercity,81.6,30.8 |or
-only if havequest(29320) or havequest(29361) or havequest(29319) or havequest(29322)
-step
-talk Master Apothecary Faranell##2055 |or
-turnin Fish Head##29317  |goto Undercity,48.4,69.4
-only if havequest(29317)
-step
-Below are the following quests you will have to complete in order to earn the achievement:
-Fish Head |achieve 5850/1
-Tadpole Terror |achieve 5850/2
-Like Pike? |achieve 5850/3
-Time for Slime |achieve 5850/4
-Moat Monster |achieve 5850/5
-Click here to go to the beginning of this dailies guide |next "select" |confirm
-step
-label "use"
-learnpet Strand Crawler##33226 |use Strand Crawler##44983
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Teldrassil Sproutling",{
-pet=204,
-description="This guide will walk you through obtaining the Elemental pet: Teldrassil Sproutling\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
-},[[
-step
-#include "auctioneer"
-buy 1 Teldrassil Sproutling##44965
-|tip This pet must be bought with an Alliance character or through the Auction House
-step
-learnpet Teldrassil Sproutling##33188 |use Teldrassil Sproutling##44965
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Thundering Serpent Hatchling",{
-pet=802,
-description="This guide will walk you through obtaining\nthe Dragonkin pet: Thundering Serpent Hatchling",
-},[[
-step
-This pet requires you to be _Revered_ with your guild.
-confirm
-step
-talk Goram##46572
-buy 1 Thundering Serpent Hatchling##85513 |goto Orgrimmar 48.2,75.6
-step
-learnpet Thundering Serpent Hatchling##65313 |use Thundering Serpent Hatchling##85513
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Tiny Flamefly",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Tiny Flamefly",{
 pet=287,
-description="This guide will walk you through obtaining\nthe Flying pet:Tiny Flamefly",
+description="This guide will walk you through obtaining the Flying pet: Tiny Flamefly",
 },[[
 step
 talk Ariok##48559
@@ -4640,13 +4287,11 @@ accept Into the Black Tooth Hovel##28432 |goto 44.5,44.4
 step
 Use your Blackrock Disguise |use Blackrock Disguise##63357
 You will get a different disguise, depending on the costume you had to make:
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Orc_Male |q 28432 |or
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 28432 |or
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Troll_Male |q 28432 |or
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Troll_Female |q 28432 |or
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Goblin_Male |q 28432 |or
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Goblin_Female |q 28432 |or
-Wear your Blackrock Ogre Disguise |havebuff Interface\Icons\Achievement_Reputation_Ogre |q 28432 |or
+Wear your Blackrock Orc Disguise |havebuff 236452 |q 28432 |or
+Wear your Blackrock Orc Disguise |havebuff 236451 |q 28432 |or
+Wear your Blackrock Orc Disguise |havebuff 236456 |q 28432 |or
+Wear your Blackrock Orc Disguise |havebuff 236455 |q 28432 |or
+Wear your Blackrock Ogre Disguise |havebuff 236695 |q 28432 |or
 step
 talk Quartermaster Kaoshin##48085
 turnin Into the Black Tooth Hovel##28432 |goto 45.3,51.7
@@ -4713,13 +4358,11 @@ accept General Thorg'izog##28437 |goto 44.5,44.4
 step
 Use your Blackrock Disguise |use Blackrock Disguise##63357
 You will get a different disguise, depending on the costume you had to make:
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Orc_Male |q 28437 |or
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 28437 |or
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Troll_Male |q 28437 |or
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Troll_Female |q 28437 |or
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Goblin_Male |q 28437 |or
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Goblin_Female |q 28437 |or
-Wear your Blackrock Ogre Disguise |havebuff Interface\Icons\Achievement_Reputation_Ogre |q 28437 |or
+Wear your Blackrock Orc Disguise |havebuff 236452 |q 28437 |or
+Wear your Blackrock Orc Disguise |havebuff 236451 |q 28437 |or
+Wear your Blackrock Orc Disguise |havebuff 236456 |q 28437 |or
+Wear your Blackrock Orc Disguise |havebuff 236455 |q 28437 |or
+Wear your Blackrock Ogre Disguise |havebuff 236695 |q 28437 |or
 step
 talk General Thorg'izog##48133
 turnin General Thorg'izog##28437 |goto 30.7,33.7
@@ -4763,9 +4406,9 @@ turnin Not Fireflies, Flameflies##28491 |goto 54.9,22.5
 step
 learnpet Tiny Flamefly##51632 |use Tiny Flamefly##66080
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Tirisfal Batling",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Tirisfal Batling",{
 pet=206,
-description="This guide will walk you through obtaining\nthe Flying pet: Tirisfal Batling",
+description="This guide will walk you through obtaining the Flying pet: Tirisfal Batling",
 },[[
 step
 In order to be able to do this guide section, you must have already completed the ARGENT TOURNAMENT GROUNDS DAILIES (VALIANT RANK) guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
@@ -4774,8 +4417,8 @@ In order to be able to do this guide section, you must have already completed th
 confirm always
 step
 Proceeding to Pre Quests. |next |only if default
-Click here Aspirant Rank Daily quests. |next "Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-Click here for |next "Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here Aspirant Rank Daily quests. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here for |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 Click here if you are already at the rank of Champion. |next buy |confirm
 step
 talk Helidan Lightwing##33849
@@ -4936,61 +4579,9 @@ buy 1 Tirisfal Batling##44971 |goto Icecrown,76.4,24.0
 step
 learnpet Tirisfal Batling##33197 |use Tirisfal Batling##44971
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Tiny Snowman",{
-pet=117,
-description="This guide will walk you through obtaining\nthe Elemental pet:Tiny Snowman",
-},[[
-step
-These pets are only availiable during the Winter Veil Holiday
-|tip Receive Gaily Wrapped Presents by clicking the presents underneath the Christmas Tree in Orgrimmar.
-use Gaily Wrapped Present##21310
-collect 1 Snowman Kit##21309
-step
-learnpet Tiny Snowman##15710 |use Snowman Kit##21309
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Undercity Rat",{
-pet=454,
-description="This guide will walk you through obtaining\nthe Critter pet: Undercity Rat",
-},[[
-step
-Challenge one to a pet battle and capture it
-|tip The Undercity Rats are level 2.
-learnpet Undercity Rat##61889 |goto Undercity 70.9,35.4
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Undercity Cockroach",{
-pet=55,
-description="This guide will walk you through obtaining\nthe Critter pet: Undercity Cockroach",
-},[[
-step
-talk Dealer Rashaad##20980
-buy 1 Undercity Cockroach##10393 |goto Netherstorm 43.4,35.2
-step
-learnpet Undercity Cockroach##7395 |use Undercity Cockroach##10393
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Voodoo Figurine", {
-pet=310,
-description="This guide will walk you through obtaining\nthe Undead pet:Voodoo Figurine",
-},[[
-step
-This pet is a rare Archaeology "Troll" solve
-talk Belloc Brightblade##47571 |goto Orgrimmar,49.1,70.5 |only if skillmax("Archaeology")<1
-skillmax Archaeology,75 |only if skillmax("Archaeology")<1
-skill Archaeology,525
-step
-Open your _world map_, find dig sites in _Eastern Kingdoms_, and go to them
-|tip They look like small shovel icons on your world map that spawn in random places.  Once you get to the zone where the dig site is located, you will see the dig site on your map as a red highlighted area.
-Use your Survey ability inside the dig site area |cast Survey##80451
-A telescope will appear, follow the direction it points in and continue using your Survey ability to eventually find the artifacts
-|tip Each dig site has 3 artifacts you can find.
-Click the Archaeology Fragments that spawn on the ground
-You're looking for a _rare artifact_ in the _"Troll"_ tab called _"Voodoo Figurine"_. Solve this Archaeology puzzle
-collect 1 Voodoo Figurine##69824
-step
-learnpet Voodoo Figurine##53232 |use Voodoo Figurine##69824
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Westfall Chicken", {
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Westfall Chicken",{
 pet=84,
-description="This guide will walk you through obtaining\nthe Flying pet: Westfall Chicken",
+description="This guide will walk you through obtaining the Flying pet: Westfall Chicken",
 },[[
 step
 talk William Saldean##33996
@@ -5010,32 +4601,7 @@ step
 learnpet Westfall Chicken##30379 |use Chicken Egg##11110
 |tip Yes... the Tirisfal Glades chicken gives you a Westfall Chicken!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Whiskers the Rat",{
-pet=127,
-description="This guide will walk you through obtaining\nthe Critter pet:Whiskers the Rat",
-},[[
-step
-If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-For the Shattrath Daily set, click here. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-confirm
-step
-collect 1 Rat Cage##23015 |tip Warden of the Horde
-step
-learnpet Whiskers the Rat##16549 |use Rat Cage##23015 |tip Warden of the Horde
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\White Kitten", {
-pet=46,
-description="This guide will walk you through obtaining the Critter pet: White Kitten\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
-},[[
-step
-#include "auctioneer"
-buy 1 Cat Carrier (White Kitten)##8489
-|tip This pet must be bought with an Alliance character or through the Auction House
-step
-learnpet White Kitten##7386 |use Cat Carrier (White Kitten)##8489
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\White Moth",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\White Moth",{
 pet=141,
 description="This guide will walk you through obtaining the Flying pet: White Moth\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
 },[[
@@ -5046,98 +4612,92 @@ buy 1 White Moth Egg##29904
 step
 learnpet White Moth##21018 |use White Moth Egg##29904
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Winter Reindeer", {
-pet=118,
-description="This guide will walk you through obtaining\nthe Critter pet:Winter Reindeer",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Yellow Moth",{
+pet=140,
+description="This guide will walk you through obtaining the Flying pet: Yellow Moth\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
 },[[
 step
-These pets are only availiable during the Winter Veil Holiday
-|tip Receive Gaily Wrapped Presents by clicking the presents underneath the Christmas Tree in Orgrimmar
-use Gaily Wrapped Present##21310
-collect 1 Jingling Bell##21308
+#include "auctioneer"
+buy 1 Yellow Moth Egg##29903
+|tip This pet must be bought with an Alliance character or through the Auction House
 step
-learnpet Winter Reindeer##15706 |use Jingling Bell##21308
+learnpet Yellow Moth##21008 |use Yellow Moth Egg##29903
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Winter's Little Helper",{
-pet=120,
-description="This guide will walk you through obtaining\nthe Humanoid pet: Winter's Little Helper",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Argent Squire",{
+pet=214,
+description="This guide will walk you through obtaining the Humanoid pet: Argent Squire",
 },[[
 step
-These pets are only availiable during the Winter Veil Holiday
-|tip Receive Gaily Wrapped Presents by clicking the presents underneath the Christmas Tree in Orgrimmar
-use Gaily Wrapped Present##21310
-collect 1 Red Helper Box##21305
-step
-learnpet Winter's Little Helper##15705 |use Red Helper Box##21305
+This pet is only available to Alliance Characters.
+learnpet Argent Squire##33238
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Withers",{
-pet=220,
-description="This guide will walk you through obtaining\nthe Elemental pet: Withers",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Argent Gruntling",{
+pet=216,
+description="This guide will walk you through obtaining the Humanoid pet: Argent Gruntling",
 },[[
 step
-Enter this cave |goto Darkshore,56.8,31.2 < 5 |walk
-talk Apothecary Furrows##33980
-|tip He's at the bottom of this cave and to the left with an imp walking around him
-buy 1 Withers##46325 |goto 57.2,33.8
+Proceeding to proper section |next |only if default
+Proceeding to proper section |next dailies |only if completedq(13838)
 step
-learnpet Withers##34278 |use Withers##46325
+talk Helidan Lightwing##33849
+fpath Argent Tournament Grounds |goto Icecrown,72.6,22.6
+step
+talk Justicar Mariel Trueheart##33817
+accept The Argent Tournament##13668 |goto Icecrown,69.7,22.9
+step
+talk Magister Edien Sunhollow##33542
+turnin The Argent Tournament##13668 |goto 76.3,24.4
+accept Mastery Of Melee##13829 |goto 76.3,24.4
+step
+talk Amariel Sunsworn##33658
+accept Mastery Of The Charge##13839 |goto 76.3,24.4
+step
+talk Galathia Brightdawn##33659
+accept Mastery Of The Shield-Breaker##13838 |goto 76.2,24.4
+step
+Equip the Horde Lance in your bags |use Horde Lance##46070
+Click to mount the Stabled Sunreaver Hawkstrider |invehicle |q 13829 |goto 75.6,23.7
+step
+talk Jeran Lockwood##33973
+Listen to Jeran Lockwood's advice |q 13829/1 |goto 72.5,19.3
+step
+talk Rugan Steelbelly##33972
+Listen to Rugan Steelbelly's advice |q 13839/1 |goto 72.7,18.9
+step
+talk Valis Windchaser##33974
+Listen to Valis Windchaser's advice |q 13838/1 |goto 73.2,19.2
+step
+Target a Ranged Target from a distance
+Use Shield-Breaker ability on Ranged Target to bring it's shields down
+Use Shield-Breaker ability on Ranged Target twice, while it's shields are down |q 13838/2 |goto 73.1,19.0
+step
+Target a Charge Target from a distance
+Use Shield-Breaker ability until you notice the targets Defend is gone
+Use your Charge ability on the Charge Target 2 times |q 13839/2 |goto 72.9,18.8
+step
+Target a Melee Target
+If you don't want to kill your mount be sure to keep your Defend ability maxed out at 3 stacks
+Use your Thrust ability to attack the target 5 times |q 13829/2 |goto 72.6,19.7
+step
+Click the red arrow on your hotbar to stop riding the bird mount |outvehicle |q 13829
+step
+talk Magister Edien Sunhollow##33542
+turnin Mastery Of Melee##13829 |goto 76.3,24.4
+step
+talk Amariel Sunsworn##33658
+turnin Mastery Of The Charge##13839 |goto 76.3,24.4
+step
+talk Galathia Brightdawn##33659
+turnin Mastery Of The Shield-Breaker##13838 |goto 76.2,24.4
+step
+label dailies
+collect 1 Argent Gruntling##45022
+step
+learnpet Argent Gruntling##33239 |use Argent Gruntling##45022
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Wolpertinger",{
-pet=153,
-description="This guide will walk you through obtaining\nthe Critter pet: Wolpertinger",
-},[[
-step
-You can only obtain this pet during the Brewfest event.
-confirm
-step
-#include "H_Brewfest_Dailies"
-step
-Complete the Brewfest daily quests each day until you have 200 Brewfest Prize Tokens
-collect 200 Brewfest Prize Token##37829 |achieve 2796
-step
-talk Blix Fixwidget##24495
-buy "Brew of the Month" Club Membership Form##37599 |n
-Click the "Brew of the Month" Club Membership Form in your bags |use "Brew of the Month" Club Membership Form##37599
-accept Brew of the Month Club##12306
-Buy the Wolpertinger's Tankard and click it to learn it. |achieve 1683/6 |goto Durotar 40.3,17.9
-step
-learnpet Wolpertinger##22943 |use Wolpertinger's Tankard##32233
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Sumprush Rodent",{
-pet=1128,
-description="This guide will walk you through obtaining\nthe Beast pet:Sumprush Rodent",
-},[[
-step
-In order to get this pet, you will need to collect Lion's Landing Commissions.
-collect 2000 Lion's Landing Commision##91838 |next buy
-Click here to farm. |confirm
-step
-kill Shieldwall Footman##67304+, Dwarven Mortar Team Engineer##67545+, Shieldwall Rifleman##67297+, Shieldwall Vindicator##67296+, Thane Stonehearth##67636
-collect Lion's Landing Commission##91838 |goto Krasarang Wilds 81.6,25.3
-step
-label buy
-talk Ongrom Black Tooth##67751
-buy Rodent Crate##92527 |goto Krasarang Wilds/0 10.8,53.4
-You will need to search for a Sumprush Rodent around the area.
-Use your Rodent Crate to capture the Sumprush Rodent. |use Rodent Crate##92527
-learnpet Sumprush Rodent##68506 |goto Krasarang Wilds/0 10.8,53.4
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Armadillo Pup",{
-pet=272,
-description="This guide will walk you through obtaining\nthe Critter pet: Armadillo Pup",
-},[[
-step
-This pet requires your guild to have the achievement "Critter Kill Squad" completed
-|tip kill 50,000 critters |achieve 5144
-step
-talk Goram##46572
-buy 1 Armadillo Pup##63398 |goto Orgrimmar,48.38,75.79
-step
-learnpet Armadillo Pup##48242 |use Armadillo Pup##63398
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Curious Oracle Hatchling",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Curious Oracle Hatchling",{
 pet=225,
-description="This guide will walk you through obtaining\nthe Humanoid pet: Curious Oracle Hatchling",
+description="This guide will walk you through obtaining the Humanoid pet: Curious Oracle Hatchling",
 },[[
 step
 You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
@@ -5150,9 +4710,9 @@ collect 1 Curious Oracle Hatchling##46545
 step
 learnpet Curious Oracle Hatchling##33530 |use Curious Oracle Hatchling##46545 |tip Back to the Orphanage (Dalaran)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Curious Wolvar Pup",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Curious Wolvar Pup",{
 pet=226,
-description="This guide will walk you through obtaining\nthe Humanoid pet: Curious Wolvar Pup",
+description="This guide will walk you through obtaining the Humanoid pet: Curious Wolvar Pup",
 },[[
 step
 You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
@@ -5165,447 +4725,84 @@ collect 1 Curious Wolvar Pup##46544
 step
 learnpet Curious Wolvar Pup##33529 |use Curious Wolvar Pup##46544 |tip Back to the Orphanage (Dalaran)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Darkmoon Balloon",{
-pet=336,
-description="This guide will walk you through obtaining\nthe Flying pet: Darkmoon Balloon",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Father Winter's Helper",{
+pet=119,
+description="This guide will walk you through obtaining the Humanoid pet: Father Winter's Helper",
 },[[
 step
-This pet requires Darkmoon Island to be accessible.
-Click here to be taken to the Darkmoon Faire Quests |confirm |next "Zygor's Horde Events Guides\\Darkmoon Faire\\Darkmoon Faire Quests"
-Click here to do Darkmoon Faire Dailies |confirm |next "Zygor's Horde Events Guides\\Darkmoon Faire\\Darkmoon Faire Dailies" |only if ZGV.guidesets["DailiesHCATA"]
-earn 90 Darkmoon Prize Ticket##515 |goto Darkmoon Island,56.0,52.9
-Click here to buy the pet |confirm |next "buy"
+These pets are only availiable during the _Winter Veil_ Holiday
+|tip Receive Gaily Wrapped Presents by clicking the presents underneath the Christmas Tree in Orgrimmar
+use Gaily Wrapped Present##21310
+collect 1 Green Helper Box##21301
 step
-label "buy"
-talk Lhara##148465
-buy 1 Darkmoon Balloon##73762 |goto Darkmoon Island,48.2,69.6
-step
-learnpet Darkmoon Balloon##55187 |use Darkmoon Balloon##73762
+learnpet Father Winter's Helper##15698 |use Green Helper Box##21301
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Dung Beetle",{
-pet=467,
-description="This guide will walk you through obtaining\nthe Critter pet: Dung Beetle",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Guild Herald (Horde)",{
+pet=283,
+description="This guide will walk you through obtaining the Humanoid pet: Guild Herald",
 },[[
 step
-Challenge one to a pet battle and capture it
-|tip The Dung Beetle is level 1.
-learnpet Dung Beetle##62115 |goto Orgrimmar 42.4,46.8
+Your guild needs have the achievement "Profit Sharing"
+|tip Loot 100,000 gold from creatures |achieve 5201
+step
+talk Goram##46572
+buy 1 Guild Herald##65364 |goto Orgrimmar,48.38,75.79
+step
+learnpet Guild Herald##49590 |use Guild Herald##65364
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Willy",{
-pet=157,
-description="This guide will walk you through obtaining\nthe Magic pet: Willy",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Guild Herald (Alliance)",{
+pet=282,
+description="This guide will walk you through obtaining the Humanoid pet: Guild Herald",
 },[[
 step
-If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-For the Shattrath Daily set, click here. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-step
-talk Orphan Matron Mercy##22819
-turnin Back to the Orphanage##10967 |goto Shattrath City 74.9,47.9
-collect 1 Sleepy Willy##32617
-|tip This pet will arrive in the mail after completing the Event questline.
-step
-learnpet Willy##23231 |use Sleepy Willy##32617
+This pet model is only available to Alliance Characters.
+learnpet Guild Herald##49587
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Speedy",{
-pet=125,
-description="This guide will walk you through obtaining\nthe Aquatic pet: Speedy",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Guild Page (Horde)",{
+pet=281,
+description="This guide will walk you through obtaining the Humanoid pet: Guild Page",
 },[[
 step
-You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
-If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-For the Shattrath Daily set, click here. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-confirm
+Your guild needs have the achievement "Alliance Slayer"
+|tip Complete the Slayer guild achievements |achieve 5179
 step
-collect 1 Turtle Box##23002
-|tip Back to the Orphanage (Shattrath)
+talk Goram##46572
+buy 1 Guild Page##65362 |goto Orgrimmar,48.38,75.79
 step
-learnpet Speedy##16547 |use Turtle Box##23002 |tip Back to the Orphanage (Shattrath)
+learnpet Guild Page##49588 |use Guild Page##65362
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Searing Scorchling",{
-pet=172,
-description="This guide will walk you through obtaining\nthe Elemental pet: Searing Scorchling",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Guild Page (Alliance)",{
+pet=280,
+description="This guide will walk you through obtaining the Humanoid pet: Guild Page",
 },[[
 step
-This pet requires you to have done the Firelands Pre-quests and dailies to enter the Molten Front
-Routing to proper section |next "prequests" |only if not completedq(25372)
-Routing to proper section |next "buy" |only if completedq(25372)
-step
-Go to the Molten Front |goto Molten Front |noway |c
-earn 30 Mark of the World Tree##416
-step
-label "prequests"
-#include "H_Firelands_PreQuests"
-step
-label buy
-talk Zen'Vorka##52822
-buy 1 Zen'Vorka's Cache##71631 |goto Molten Front 47.0,90.8
-step
-use Zen'Vorka's Cache##71631
-collect 1 Scorched Stone##34955
-|tip If you don't get this the first time you will have to earn 30 more Marks of the World Tree to try again
-step
-learnpet Searing Scorchling##25706 |use Scorched Stone##34955
+This pet model is only available to Alliance Characters.
+learnpet Guild Page##49586
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Hyjal Bear Cub",{
-pet=317,
-description="This guide will walk you through obtaining\nthe Beast pet: Hyjal Bear Cub",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Moonkin Hatchling (Horde)",{
+pet=298,
+description="This guide will walk you through obtaining the Humanoid pet: Moonkin Hatchling",
 },[[
 step
-You will have to do the Firelands dailies quests to complete the quest "Calling the Ancients"
-talk Varlan Highbough##53882
-accept Calling the Ancients##29283 |goto Molten Front,44.8,89.8
+This pet can be purchased for $10.00 on the official Blizzard Store.
+|tip After purchasing, check your in-game mailbox
+collect Moonkin Egg##68384
+Open the Moonkin Egg |use Moonkin Egg##68384
+collect Moonkin Hatchling##68619
 step
-Earn 125 Marks of the World tree to doing Firelands daily quests.
-earn 125 Mark of the World Tree##416
-step
-talk Elderlimb##52906
-turnin Calling the Ancients##29283 |goto Mount Hyjal 26.0,61.2
-step
-talk Varlan Highbough##53882
-buy 1 Hyjal Bear Cub##70140 |goto Molten Front,44.8,89.8
-step
-learnpet Hyjal Bear Cub##53658 |use Hyjal Bear Cub##70140
+learnpet Moonkin Hatchling##51649 |use Moonkin Hatchling##68619
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Tranquil Mechanical Yeti",{
-pet=116,
-description="This guide will walk you through obtaining\nthe Mechanical pet: Tranquil Mechanical Yeti",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Moonkin Hatchling (Alliance)",{
+pet=296,
+description="This guide will walk you through obtaining the Humanoid pet: Moonkin Hatchling",
 },[[
 step
-The recipe to make this was removed with the quest line back in 2014.
-Old Engineers may still have this recipe you can either find one of these or purchase it from the AH.
-confirm
-step
-Click here to _buy_ the _Tranquil Mechanical Yeti_ from the AH |next "AH Yeti"
-Click here to _make_ the _Tranquil Mechanical Yeti_ |next "make"
-|confirm
-step
-label "AH Yeti"
-Go to one of your main cities and talk to an Auctioneer
-|tip These may be somewhat expensive as the recipe has been removed from the game.
-buy 1 Tranquil Mechanical Yeti##21277 |n
-learnpet Tranquil Mechanical Yeti##15699 |use Tranquil Mechanical Yeti##21277
-|next "Tranquil Yeti"
-step
-label "make"
-You can buy these items from the Auction House
-collect 1 Cured Rugged Hide##15407
-collect 4 Thorium Widget##15994
-collect 2 Globe of Water##7079
-collect 2 Truesilver Transformer##18631
-collect 1 Gold Power Core##10558
-step
-Have an Engineer make this pet for you
-|tip Ask in your guild or in trade chat |only if knowspell(26011)==false
-create Tranquil Mechanical Yeti##26011,Engineering,1 total |only if knowspell(26011)==true
-collect 1 Tranquil Mechanical Yeti##21277 |n
-learnpet Tranquil Mechanical Yeti##15699 |use Tranquil Mechanical Yeti##21277
-|next "Tranquil Yeti"
-step
-label "Tranquil Yeti"
-Congratulations you are now the proud owner of a _Tranquil Mechanical Yeti_
+This pet model is only available to Alliance characters.
+learnpet Moonkin Hatchling##51601
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Porcupette",{
-pet=381,
-description="This guide will walk you through obtaining\nthe Critter pet: Porcupette",
-},[[
-step
-label "start"
-In order to obtain the rewards that contain the Porcupette, you will need to have defeated all Grand Master pet tamers.
-If you haven't done so already, please go back and complete the Battle Pet quest guide.
-Otherwise, click here to proceed. |confirm
-step
-talk Stone Cold Trixxy##66466
-accept Grand Master Trixxy##31909 |goto Winterspring 65.6,64.4
-step
-talk Stone Cold Trixxy##66466
-Tell her you want to fight!
-She uses level 19 Flying, Beast and Dragonkin pets.
-Defeat Stone Cold Trixxy |q 31909/1 |goto Winterspring 65.6,64.4
-step
-talk Stone Cold Trixxy##66466
-turnin Grand Master Trixxy##31909 |goto Winterspring 65.6,64.4
-step
-talk Bloodknight Antari##66557
-accept Grand Master Antari##31926 |goto Shadowmoon Valley 30.6,42.0
-only if completedq(31920)
-step
-talk Bloodknight Antari##66557
-|tip You will not be able to challenge Bloodknight Antari if you have the "Pet Recovery" debuff, wait for it to fall off.
-Let's fight!
-|tip Bloodknight Antari has an Elemental Pet, a Dragonkin Pet, and a Magic Pet. Use Aquatic type attacks on his Elemental pet, Humanoid type attacks on his Dragonkin pet, and Dragonkin type attacks on his Magic pet.
-Defeat Bloodknight Antari |q 31926/1 |goto Shadowmoon Valley 30.6,42.0
-only if completedq(31920)
-step
-talk Bloodknight Antari##66557
-turnin Grand Master Antari##31926 |goto Shadowmoon Valley 30.6,42.0
-only if completedq(31920)
-step
-talk Major Payne##66675
-accept Grand Master Payne##31935 |goto Icecrown 77.4,19.6
-only if completedq(31928)
-step
-talk Major Payne##66675
-|tip You will not be able to challenge Major Payne if you have the "Pet Recovery" debuff, wait for it to fall off.
-Let's fight!
-|tip Major Payne has a Beast Pet, a Mechanical Pet, and an Elemental Pet. Use Mechanical type attacks on his Beast, Elemental type attacks on his Mechanical, and Aquatic type attacks on his Elemental. Your pets should be level 25 for this fight.
-Defeat Major Payne |q 31935/1 |goto Icecrown 77.4,19.6
-only if completedq(31928)
-step
-talk Major Payne##66675
-accept Grand Master Payne##31935 |goto Icecrown 77.4,19.6
-only if completedq(31928)
-step
-talk Obalis##66824
-accept Grand Master Obalis##31971 |goto Uldum 56.5,42.0
-only if completedq(31970)
-step
-talk Obalis##66824
-|tip You will not be able to challenge Obalis if you have the "Pet Recovery" debuff, wait for it to fall off.
-Let's fight!
-|tip Obalis has a Beast Pet, a Flying Pet, and a Critter Pet. Use Mechanical type attacks on his Beast, Magic type attacks on his Flyer, and Beast type attacks on his Critter. Your pets should all be level 25.
-Defeat Obalis |q 31971/1 |goto Uldum 56.5,42.0
-only if completedq(31970)
-step
-talk Obalis##66824
-turnin Grand Master Obalis##31971 |goto Uldum 56.5,42.0
-only if completedq(31970)
-step
-talk Hyuna of the Shrines##66730
-accept Grand Master Hyuna##31953 |goto The Jade Forest 48.0,54.2
-only if completedq(31970)
-step
-talk Hyuna of the Shrines##66730
-|tip You will not be able to challenge Hyuna of the Shrines if you have the "Pet Recovery" debuff, wait for it to fall off.
-Let's fight!
-|tip Hyuna of the Shrines has a Beast Pet, a Flying Pet, and an Aquatic Pet. Use Mechanical type attacks on her Beast, Magic type attacks on her Flyer, and Flying type attacks on her Aquatic. Your pets should all be level 25.
-Defeat Hyuna of the Shrines |q 31953/1 |goto The Jade Forest 48.0,54.2
-only if completedq(31970)
-step
-talk Hyuna of the Shrines##66730
-turnin Grand Master Hyuna##31953 |goto The Jade Forest 48.0,54.2
-only if completedq(31970)
-step
-talk Farmer Nishi##66734
-accept Grand Master Nishi##31955 |goto Valley of the Four Winds 46.0,43.7
-only if completedq(31970)
-step
-talk Farmer Nishi##66734
-|tip You will not be able to challenge Farmer Nishi if you have the "Pet Recovery" debuff, wait for it to fall off.
-Let's fight!
-|tip Farmer Nishi has a Beast Pet, and two Elemental Pets. Use Mechanical type attacks on her Beast, and Aquatic type attacks on her Elementals. Your pets should all be level 25.
-Defeat Farmer Nishi |q 31955/1 |goto Valley of the Four Winds 46.0,43.7
-only if completedq(31970)
-step
-talk Farmer Nishi##66734
-turnin Grand Master Nishi##31955 |goto Valley of the Four Winds 46.0,43.7
-only if completedq(31970)
-step
-talk Mo'ruk##66733
-accept Mo'ruk##31954 |goto Krasarang Wilds 62.2,45.9
-only if completedq(31970)
-step
-talk Mo'ruk##66733
-|tip You will not be able to challenge Mo'ruk if you have the "Pet Recovery" debuff, wait for it to fall off.
-Let's fight!
-|tip Mo'ruk has a Beast Pet, a Flying Pet, and an Aquatic Pet. Use Mechanical type attacks on his Beast, Magic type attacks on his Flyer, and Flying type attacks on his Aquatic. Your pets should all be level 25.
-Defeat Mo'ruk |q 31954/1 |goto Krasarang Wilds 62.2,45.9
-only if completedq(31970)
-step
-talk Mo'ruk##66733
-turnin Mo'ruk##31954 |goto Krasarang Wilds 62.2,45.9
-only if completedq(31970)
-step
-talk Courageous Yon##66738
-accept Grand Master Yon##31956 |goto Kun-Lai Summit 35.8,73.8
-only if completedq(31970)
-step
-talk Courageous Yon##66738
-|tip You will not be able to challenge Courageous Yon if you have the "Pet Recovery" debuff, wait for it to fall off.
-Let's fight!
-|tip Courageous Yon has a Flying Pet, and two Critter Pets. Use Beast type attacks on his Critters, and Magic type attacks on his Flying. Your pets should all be level 25.
-Defeat Courageous Yon |q 31956/1 |goto Kun-Lai Summit 35.8,73.8
-He can also be found at [44.7,52.4]
-only if completedq(31970)
-step
-talk Courageous Yon##66738
-turnin Grand Master Yon##31956 |goto Kun-Lai Summit 35.8,73.8
-only if completedq(31970)
-step
-talk Seeker Zusshi##66918
-accept Grand Master Zusshi##31991 |goto Townlong Steppes 36.3,52.2
-only if completedq(31970)
-step
-talk Seeker Zusshi##66918
-|tip You will not be able to challenge Seeker Zusshi if you have the "Pet Recovery" debuff, wait for it to fall off.
-Let's fight!
-|tip Seeker Zusshi has an Aquatic Pet, a Critter Pet, and an Elemental Pet. Use Flying type attacks on his Aquatic, Aquatic type attacks on his Elemental, and Beast type attacks on his Critter. Your pets should all be level 25.
-Defeat Seeker Zusshi |q 31991/1 |goto Townlong Steppes 36.3,52.2
-only if completedq(31970)
-step
-talk Seeker Zusshi##66918
-turnin Grand Master Zusshi##31991 |goto Townlong Steppes 36.3,52.2
-only if completedq(31970)
-step
-talk Wastewalker Shu##66739
-accept Grand Master Shu##31957 |goto Dread Wastes 55.1,37.6
-only if completedq(31970)
-step
-talk Wastewalker Shu##66739
-|tip You will not be able to challenge Wastewalker Shu if you have the "Pet Recovery" debuff, wait for it to fall off.
-Let's fight!
-|tip Wastewalker Shu has an Aquatic Pet, a Beast Pet, and an Elemental Pet. Use Flying type attacks on his Aquatic, Aquatic type attacks on his Elemental, and Mechanical type attacks on his Beast. Your pets should all be level 25.
-Defeat Wastewalker Shu |q 31957/1 |goto Dread Wastes 55.1,37.6
-only if completedq(31970)
-step
-talk Wastewalker Shu##66739
-turnin Grand Master Shu##31957 |goto Dread Wastes 55.1,37.6
-only if completedq(31970)
-step
-talk Aki the Chosen##66741
-accept Zen Master Aki##31958 |goto Vale of Eternal Blossoms 31.2,74.0
-only if completedq(31970)
-step
-talk Aki the Chosen##66741
-|tip You will not be able to challenge Aki the Chosen if you have the "Pet Recovery" debuff, wait for it to fall off.
-Let's fight!
-|tip Aki the Chosen has an Aquatic Pet, a Critter Pet, and a Dragonkin Pet. Use Flying type attacks on her Aquatic, Beast type attacks on her Critter, and Humanoid type attacks on her Dragonkin. Your pets should all be level 25.
-Defeat Aki the Chosen |q 31958/1 |goto Vale of Eternal Blossoms 31.2,74.0
-only if completedq(31970)
-step
-talk Aki the Chosen##66741
-turnin Zen Master Aki##31958 |goto Vale of Eternal Blossoms 31.2,74.0
-only if completedq(31970)
-step
-collect Sack of Pet Supplies##89125 |n
-Use the _Sack of Pet Supplies_ in your bags for a chance to get the _Porcupette_!
-collect 1 Porcupette##89587
-learnpet Porcupette##61086 |use Porcupette##89587
-Click here if the Porcupette wasn't contained in any of the Sack of Pet Supplies, and you wish to go to the beginning of this guide. |confirm |next "start"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Pet Bombling",{
-pet=85,
-description="This guide will walk you through obtaining\nthe Mechanical pet: Pet Bombling",
-},[[
-step
-Click here if you want to farm the schematic for this pet. |only if skill("Engineering")<205 |next
-Click here if you do not want to get this schematic |next bluh |confirm |only if skill("Engineering")>=205
-step
-Kill Mekgineer Thermaplugg |goto Gnomeregan,31.2,31.0 |only if skill("Engineering")>=205
-collect 1 Schematic: Pet Bombling##11828 |n |only if skill("Engineering")>=205
-learn Pet Bombling##15628 |use Schematic: Pet Bombling##11828 |only if skill("Engineering")>=205
-step
-label bluh
-You can either buy this from the Auction House or farm for it:
-collect 1 Pet Bombling##11825 |next "bought"
-Click here to make this pet |confirm
-step
-You can either buy these from the Auction House or farm for them:
-collect 1 Big Iron Bomb##4394
-collect 1 Heart of Fire##7077
-collect 1 Fused Wiring##7191
-collect 6 Mithril Bar##3860
-next |only if default
-Click here if you're going to farm your own materials |confirm
-step
-map Felwood
-path	48.1,92.8	44.4,88.5	40.6,84.2
-path	40.3,79.4`	43.8,81.5	46.1,88.4
-Follow the path provided and collect _Mithril Ore_.
-collect 6 Mithril Ore##3858
-step
-Mine inside of the cave here.
-collect 6 Copper Ore##2770 |goto Durotar 54.5,8.7
-step
-map Desolace
-path	79.2,15.2	79.2 22.0	77.5,34.8
-path	74.5,44.2	73.7,57.0	68.9,63.4
-path	67.5,58.0	65.5,49.6	63.9,41.2
-path	67.6,36.5	69.5,27.8
-Follow the provided path to collect _Iron Ore, Heavy Stones and Silver Ore_.
-collect 3 Iron Ore##2772
-collect 3 Heavy Stone##2838
-collect 1 Silver Ore##2775
-step
-create Mithril Bar##10097,Mining,6 total |goto Orgrimmar/1 44.9,78.0
-step
-create Iron Bar##3307,Mining,3 total
-step
-create Silver Bar##2658,Mining,1 total
-step
-create Copper Bar##2657,Mining,6 total
-step
-Have an _Engineer create this pet_ for you
-|tip Ask in your guild or in Trade Chat |only if knowspell(15628)==false
-create Pet Bombling##15628,Engineering,1 total |only if knowspell(15628)==true
-collect 1 Pet Bombling##11825
-step
-label bought
-learnpet Pet Bombling##9656 |use Pet Bombling##11825
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Personal World Destroyer",{
-pet=261,
-description="This guide will walk you through obtaining\nthe Mechanical pet: Personal World Destroyer",
-},[[
-step
-Routing you to the proper section. |next |only if skill("Engineering")<475 |next
-Routing you to the proper section. |only if skill("Engineering")>=475
-step
-talk Nixx Sprocketspring##8126 |only if skill("Engineering")>=475
-learn Personal World Destroyer##84412 |goto Tanaris,52.2,28.2 |only if skill("Engineering")>=475
-step
-label lazy
-You can either buy this from the Auction House or farm for it:
-collect 1 Personal World Destroyer##59597 |next "bought"
-Click here to gather the materials for this pet. |confirm
-step
-You can either buy these from the Auction House or farm for them:
-collect 10 Obsidium Bar##54849
-collect 8 Handful of Obsidium Bolts##60224
-collect 8 Electrified Ether##67749
-step
-map Mount Hyjal
-path	47.8,53.5	54.6,52.3	58.6,55.0
-path	64.5,50.9	60.0,60.5	52.3,56.7
-Follow the provided path and mine Obsidium Ore.
-collect 36 Obsidium Ore##53038
-step
-buy 8 Volatile Air##52328
-step
-create Obsidium Bar##84038,Mining,18 total |goto Orgrimmar/1 44.9,78.0
-step
-create Handful of Obsidium Bolts##84403,Engineering,4 total
-step
-create Electrified Ether##94748,Engineering,4 total
-step
-Have an Engineer create this pet for you
-|tip Ask in your guild or in Trade Chat |only if knowspell(84412)==false
-create Personal World Destroyer##84412,Engineering,1 total |only if knowspell(84412)==true
-collect 1 Personal World Destroyer##59597
-step
-label bought
-learnpet Personal World Destroyer##43800 |use Personal World Destroyer##59597
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Pengu",{
-pet=198,
-description="This guide will walk you through obtaining\nthe Aquatic pet: Pengu",
-},[[
-step
-Completing all normal quests should make you revered with the Kalu'ak before having to do daily quests.
-confirm
-#include "Kaluak_Rep"
-step
-#include dailies_rep_mount,rep="The Kalu'ak"
-step
-talk Sairuk##32763
-buy 1 Nurtured Penguin Egg##44723 |goto Dragonblight 48.6,75.6
-step
-learnpet Pengu##32595 |use Nurtured Penguin Egg##44723
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Peddlefeet",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Peddlefeet",{
 pet=122,
-description="This guide will walk you through obtaining\nthe Humanoid pet: Peddlefeet",
+description="This guide will walk you through obtaining the Humanoid pet: Peddlefeet",
 },[[
 step
 This pet is sold by Lovely Merchants during the Love is in the Air Holiday
@@ -5619,9 +4816,269 @@ buy 1 Truesilver Shafted Arrow##22235
 step
 learnpet Peddlefeet##16085 |use Truesilver Shafted Arrow##22235
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Peanut",{
-pet=159,
-description="This guide will walk you through obtaining\nthe Critter pet: Peanut",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Rotten Little Helper",{
+pet=1349,
+description="This guide will walk you through obtaining the Humanoid pet: Rotten Little Helper",
+},[[
+step
+These pets are only availiable during the Winter Veil Holiday
+|tip Receive Gaily Wrapped Presents by clicking the presents underneath the Christmas Tree in Orgrimmar.
+use Gaily Wrapped Present##21310
+collect 1 Rotten Helper Box##104317
+step
+learnpet Rotten Little Helper##73741 |use Rotten Helper Box##104317
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Winter's Little Helper",{
+pet=120,
+description="This guide will walk you through obtaining the Humanoid pet: Winter's Little Helper",
+},[[
+step
+These pets are only availiable during the Winter Veil Holiday
+|tip Receive Gaily Wrapped Presents by clicking the presents underneath the Christmas Tree in Orgrimmar
+use Gaily Wrapped Present##21310
+collect 1 Red Helper Box##21305
+step
+learnpet Winter's Little Helper##15705 |use Red Helper Box##21305
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Enchanted Broom",{
+pet=213,
+description="This guide will walk you through obtaining the Magic pet: Enchanted Broom",
+},[[
+step
+In order to be able to do this guide section, you must have already completed the ARGENT TOURNAMENT GROUNDS DAILIES (VALIANT RANK) guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
+|tip After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction.
+|tip You cannot complete this section if you are a Blood Elf.
+confirm always
+step
+Proceeding to Pre Quests. |next |only if default
+Click here Aspirant Rank Daily quests. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here for Valiant Rank Dailies |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here if you are already at the rank of Champion. |next buy |confirm
+step
+talk Helidan Lightwing##33849
+fpath Argent Tournament Grounds |goto Icecrown,72.6,22.6
+step
+talk Justicar Mariel Trueheart##33817
+accept The Argent Tournament##13668 |goto Icecrown,69.7,22.9
+step
+talk Magister Edien Sunhollow##33542
+turnin The Argent Tournament##13668 |goto 76.3,24.4
+accept Mastery Of Melee##13829 |goto 76.3,24.4
+step
+talk Amariel Sunsworn##33658
+accept Mastery Of The Charge##13839 |goto 76.3,24.4
+step
+talk Galathia Brightdawn##33659
+accept Mastery Of The Shield-Breaker##13838 |goto 76.2,24.4
+step
+Equip the Horde Lance in your bags |use Horde Lance##46070
+Click to mount the Stabled Sunreaver Hawkstrider |invehicle |q 13829 |goto 75.6,23.7
+step
+talk Jeran Lockwood##33973
+Listen to Jeran Lockwood's advice |q 13829/1 |goto 72.5,19.3
+step
+talk Rugan Steelbelly##33972
+Listen to Rugan Steelbelly's advice |q 13839/1 |goto 72.7,18.9
+step
+talk Valis Windchaser##33974
+Listen to Valis Windchaser's advice |q 13838/1 |goto 73.2,19.2
+step
+Target a Ranged Target from a distance
+Use Shield-Breaker ability on Ranged Target to bring it's shields down
+Use Shield-Breaker ability on Ranged Target twice, while it's shields are down |q 13838/2 |goto 73.1,19.0
+step
+Target a Charge Target from a distance
+Use Shield-Breaker ability until you notice the targets Defend is gone
+Use your Charge ability on the Charge Target 2 times |q 13839/2 |goto 72.9,18.8
+step
+Target a Melee Target
+If you don't want to kill your mount be sure to keep your Defend ability maxed out at 3 stacks
+Use your Thrust ability to attack the target 5 times |q 13829/2 |goto 72.6,19.7
+step
+Click the red arrow on your hotbar to stop riding the bird mount |outvehicle |q 13829
+step
+talk Magister Edien Sunhollow##33542
+turnin Mastery Of Melee##13829 |goto 76.3,24.4
+step
+talk Amariel Sunsworn##33658
+turnin Mastery Of The Charge##13839 |goto 76.3,24.4
+step
+talk Galathia Brightdawn##33659
+turnin Mastery Of The Shield-Breaker##13838 |goto 76.2,24.4
+step
+label buy
+talk Eressea Dawnsinger##33379
+accept Valiant Of Silvermoon##13711 |goto Icecrown,76.5,23.9
+turnin Valiant Of Silvermoon##13711 |goto Icecrown,76.5,23.9
+accept The Valiant's Charge##13722 |goto Icecrown,76.5,23.9
+step
+talk Eressea Dawnsinger##33379
+You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+accept A Blade Fit For A Champion##13783 |goto 76.5,23.9 |or
+accept A Worthy Weapon##13784 |goto 76.5,23.9 |or
+accept The Edge Of Winter##13785 |goto 76.5,23.9 |or
+step
+talk Kethiel Sunlance##33538
+accept A Valiant's Field Training##13786 |goto 76.4,23.8
+step
+talk Aneera Thuron##33548
+accept The Grand Melee##13787 |goto 76.5,23.9
+accept At The Enemy's Gates##13859 |goto 76.5,23.9
+step
+Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
+Target Lake Frogs
+Use the emote /kiss on the Lake Frogs
+Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
+talk Maiden of Ashwood Lake##33220
+Tell her you are glad to help
+collect Ashwood Brand |q 13783/1 |goto Grizzly Hills,61.2,50.3
+step
+Click Winter Hyacinth
+collect 4 Winter Hyacinth##45000 |q 13784 |goto Icecrown,69.1,76.2
+step
+Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
+Listen to the Maiden of Drak'Mar
+Click the Blade of Drak'Mar that spawns
+collect Blade of Drak'Mar |q 13784/1 |goto Dragonblight,93.2,26.1
+step
+kill Lord Everblaze##33289
+collect 1 Everburning Ember##45005 |q 13785 |goto Crystalsong Forest,54.5,74.9
+step
+Use the Everburning Ember on Maiden of Winter's Breath|use Everburning Ember##45005
+collect Winter's Edge |q 13785/1 |goto Howling Fjord,42.2,19.7
+step
+Equip the Horde Lance in your bags |use Horde Lance##46070
+Click to mount the Stabled Campaign Warhorse |invehicle |q 13859 |goto Icecrown,48.9,71.4
+step
+kill 15 Boneguard Footman |q 13859/1 |goto 50.1,74.8
+|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
+kill 10 Boneguard Scout |q 13859/2 |goto 50.1,74.8
+|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
+kill 3 Boneguard Lieutenant |q 13859/3 |goto 50.1,74.8
+|tip They ride horses around this area.  Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
+step
+Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13859 |goto 49.1,71.4
+step
+kill 10 Converted Hero##32255 |q 13786/1 |goto 44.3,54.2
+step
+Equip the Horde Lance in your bags |use Horde Lance##46070
+Click to mount the Stabled Silvermoon Hawkstrider |invehicle |q 13787 |goto 75.5,24.1
+step
+Talk to the riders on mounts of other Horde races
+Tell them you are ready to fight!
+Fight and defeat them
+|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
+collect 3 Mark of the Valiant |q 13787/1 |goto 75.3,26.0
+step
+talk Eressea Dawnsinger##33379
+You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+turnin A Blade Fit For A Champion##13783 |goto 76.5,23.9
+turnin A Worthy Weapon##13784 |goto 76.5,23.9
+turnin The Edge Of Winter##13785 |goto 76.5,23.9
+step
+talk Kethiel Sunlance##33538
+turnin A Valiant's Field Training##13786 |goto 76.4,23.8
+step
+talk Aneera Thuron##33548
+turnin The Grand Melee##13787 |goto 76.5,23.9
+turnin At The Enemy's Gates##13859 |goto 76.5,23.9
+step
+Make sure you have 25 Valiant Seals:
+collect 25 Valiant's Seal |q 13722/1
+|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
+step
+talk Eressea Dawnsinger##33379
+turnin The Valiant's Charge##13722 |goto 76.5,23.9
+accept The Valiant's Challenge##13731 |goto 76.5,23.9
+step
+Equip the Horde Lance in your bags |use Horde Lance##46070
+Click to mount the Stabled Silvermoon Hawkstrider |invehicle |q 13731 |goto 72.2,22.4
+step
+talk Squire Danny##33518
+Tell him you are ready to fight!
+An Argent Champion runs up on a horse
+Use the abilities on your hotbar to defeat the Argent Champion
+|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
+Defeat the Argent Valiant |q 13731/1 |goto 68.6,21.0
+step
+talk Eressea Dawnsinger##33379
+turnin The Valiant's Challenge##13731 |goto 76.5,23.9
+step
+Become a Champion of Silvermoon City |achieve 2785
+earn 40 Champion's Seal##241+
+If you don't meet both of these requirements go back to step 1 of the guide.
+step
+talk Trellis Morningsun##33557
+buy 1 Enchanted Broom##44982 |goto Icecrown,76.2,23.8
+step
+learnpet Enchanted Broom##33227 |use Enchanted Broom##44982
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Enchanted Lantern",{
+pet=267,
+description="This guide will walk you through obtaining the Magic pet: Enchanted Lantern",
+},[[
+step
+Skipping to the next step |next |only if skill("Enchanting")<525
+talk Kithas##3346 |only if skill("Enchanting")>=525
+buy 1 Formula: Enchanted Lantern##67308 |goto Orgrimmar,53.2,48.8 |only if skill("Enchanting")>=525
+Click here if you do not wish to make this pet yourself |confirm |only if skill("Enchanting")>=525
+step
+You can either _buy_ this _pet_ from the _Auction House_ or craft it:
+collect 1 Enchanted Lantern##67274 |next "bought"
+Click here to craft this pet |confirm
+step
+You can either _buy_ these _materials_ from the _ Auction House_ or _disenchant gear_ to obtain them:
+collect 8 Heavenly Shard##52721+
+collect 4 Greater Celestial Essence##52719+
+collect 1 Maelstrom Crystal##52722
+Click here if you have the means to farm these materials yourself. |confirm
+next farmed |only if default
+step
+Farm Maelstrom Crystals from the dungeons _Zul'Aman, End Time, Zul'Gurub, Hour of Twilight and Well of Eternity_.
+Breaking down Maelstrom Crystals will net you 2 Heavenly Shards.
+Use _Maelstrom Shatter_ on Maelstrom Crystals to attain Heavenly Shards. |cast Maelstorm Shatter##104698
+collect 8 Heavenly Shard##52721+
+step
+Farm Maelstrom Crystals from the dungeons _Zul'Aman, End Time, Zul'Gurub, Hour of Twilight and Well of Eternity_.
+collect 1 Maelstrom Crystal##52722
+step
+Cataclysm ranked green _Weapons_ will net you Greater Celestial Essences.
+Farm Greater Celestial Essence from the normal enemies in dungeons _Zul'Aman, End Time, Zul'Gurub, Hour of Twilight and Well of Eternity_.
+collect 4 Greater Celestial Essence##52719+
+step
+label farmed
+Have an _Enchanter make this pet_ for you
+|tip Ask in your guild or in Trade Chat |only if _G.IsSpellKnown(93841)==false
+create Enchanted Lantern##93841,Enchanting,1 total |only if _G.IsSpellKnown(93841)==true
+collect 1 Enchanted Lantern##67274
+step
+label "bought"
+learnpet Enchanted Lantern##46898 |use Enchanted Lantern##67274
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Festival Lantern",{
+pet=342,
+description="This guide will walk you through obtaining the Magic pet: Festival Lantern",
+},[[
+step
+This pet can only be obtained during the Lunar Festival event.
+collect 50 Coin of Ancestry##21100
+Click here for directions to the vendor |confirm |next "vendor"
+Click here for our guide on getting the Coins of Ancestry |confirm |next "coins"
+step
+label "coins"
+#include "H_Lunar_Festival_Quests"
+step
+#include "H_Lunar_Festival_Elders"
+step
+label "vendor"
+talk Valadar Starsong##15864
+buy Festival Lantern##74611 |goto Moonglade,54.0,35.0
+step
+learnpet Festival Lantern##55574 |use Festival Lantern##74611
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Legs",{
+pet=308,
+description="This guide will walk you through obtaining the Magic pet: Legs",
 },[[
 step
 You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
@@ -5630,97 +5087,280 @@ If you are aligned with the Wolvar, click here for their Children's Week Daily s
 For the Shattrath Daily set, click here. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 confirm
 step
-collect 1 Elekk Training Collar##32622
-|tip Back to the Orphanage (Shattrath)
+collect 1 Legs##69648 |tip Back to the Orphanage (Shattrath)
 step
-learnpet Peanut##23266 |use Elekk Training Collar##32622
-|tip Back to the Orphanage (Shattrath)
+learnpet Legs##53048 |use Legs##69648 |tip Back to the Orphanage (Shattrath)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Mechanical Squirrel",{
-pet=39,
-description="This guide will walk you through obtaining\nthe Mechanical pet: Mechanical Squirrel",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Lunar Lantern",{
+pet=341,
+description="This guide will walk you through obtaining the Magic pet: Lunar Lantern",
 },[[
 step
-Routing to the proper section. |next |only if skill("Engineering")>=75
-Rouoting to the proper section. |next "buy" |only if skill("Engineering")<=75
+This pet can only be obtained during the Lunar Festival event.
+collect 50 Coin of Ancestry##21100
+Click here for directions to the vendor |confirm |next "vendor"
+Click here for our guide on getting the Coins of Ancestry |confirm |next "coins"
 step
-To get this recipe you can fish in Orgrimmar, Stormwind City, Elwynn Forest, Ironforge, Durotar, Northern Barrens, and Wailing Caverns, or you can kill any mob in the world under level 16 |only if skill("Engineering")>=75
-collect 1 Schematic: Mechanical Squirrel Box##4408 |only if skill("Engineering")>=75
-use Schematic: Mechanical Squirrel Box##4408 |only if skill("Engineering")>=75
-Click here if _you don't want to get the recipe_ yourself |confirm
-only if skill("Engineering")>=75
+label "coins"
+#include "H_Lunar_Festival_Quests"
 step
-label "buy"
-You can either buy this item from the Auction House or farm for it:
-buy 1 Mechanical Squirrel Box##4401 |next "bought"
-Click here to _make_ the _Mechanical Squirrel_ |confirm
+#include "H_Lunar_Festival_Elders"
 step
-You can either buy these items from the Auction House or farm for them:
-collect 1 Handful of Copper Bolts##4359
-collect 1 Copper Bar##2840
-collect 2 Malachite##774
-Click here if you want to farm the materials needed for the above items. |confirm
-next make
+label "vendor"
+talk Valadar Starsong##15864
+buy Lunar Lantern##74610 |goto Moonglade,54.0,35.0
 step
-Use your mining ability inside of the cave here.
-collect 2 Copper Ore##2770 |goto Durotar 54.5,8.7
-collect 2 Malachite##774 |goto Durotar 54.5,8.7
-step
-create Handful of Copper Bolts##3922,Engineering,1 total |goto Orgrimmar/1 44.9,77.9
-step
-create Copper Bar##2657,Mining,1 total
-step
-label make
-Have an Engineer make this pet for you
-|tip Ask in your guild or in trade chat |only if knowspell(3928)==false
-create Mechanical Squirrel Box##3928,Engineering,1 total |only if knowspell(3928)==true
-collect 1 Mechanical Squirrel Box##4401
-step
-label bought
-learnpet Mechanical Squirrel##2671 |use Mechanical Squirrel Box##4401
+learnpet Lunar Lantern##55571 |use Lunar Lantern##74610
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Mechanical Pandaren Dragonling",{
-pet=844,
-description="This guide will walk you through obtaining\nthe Mechanical pet: Mechanical Pandaren Dragonling",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Magic Lamp",{
+pet=292,
+description="This guide will walk you through obtaining the Magic pet: Magic Lamp.\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
 },[[
 step
-Routing to the proper section. |next |only if skill("Engineering")>=575
-Routing to the proper section. |next buy |only if skill("Engineering")<=575
+#include "auctioneer"
+buy 1 Magic Lamp##67275
+|tip This pet must be bought with an Alliance character or through the Auction House
 step
-You can either create this battle pet, or purchase it from an Auction House. You must be a level 575 Engineer to create this pet.
-talk Roxxik##11017
-learn Mechanical Pandaren Dragonling##127135 |goto Orgrimmar/1 56.8,56.5
+learnpet Magic Lamp##50545 |use Magic Lamp##67275
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Shimmering Wyrmling",{
+pet=229,
+description="This guide will walk you through obtaining the Magic pet: Shimmering Wyrmling",
+},[[
+step
+Use the Icecrown Dailies section of this guide to complete the Argent Tournament Grounds and The Sunreavers pre-quest_ and dailies
+Exalted with The Sunreavers |condition rep("The Sunreavers")>=Exalted
+Click here for The Pre Quests. |next |only if not completedq(13838) |confirm
+next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"] and completedq(13678)
+next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Death Knight Only" |confirm |only DeathKnight |only if ZGV.guidesets["DailiesHCATA"] and completedq(13795)
+next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Non-Death Knight Only" |only if not DeathKnight |only if ZGV.guidesets["DailiesHCATA"] and completedq(13794)
+Click here if you have completed the Pre Quests. |next buy |confirm
+step
+talk Helidan Lightwing##33849
+fpath Argent Tournament Grounds |goto Icecrown,72.6,22.6
+step
+talk Justicar Mariel Trueheart##33817
+accept The Argent Tournament##13668 |goto Icecrown,69.7,22.9
+step
+talk Magister Edien Sunhollow##33542
+turnin The Argent Tournament##13668 |goto 76.3,24.4
+accept Mastery Of Melee##13829 |goto 76.3,24.4
+step
+talk Amariel Sunsworn##33658
+accept Mastery Of The Charge##13839 |goto 76.3,24.4
+step
+talk Galathia Brightdawn##33659
+accept Mastery Of The Shield-Breaker##13838 |goto 76.2,24.4
+step
+Equip the Horde Lance in your bags |use Horde Lance##46070
+Click to mount the Stabled Sunreaver Hawkstrider |invehicle |q 13829 |goto 75.6,23.7
+step
+talk Jeran Lockwood##33973
+Listen to Jeran Lockwood's advice |q 13829/1 |goto 72.5,19.3
+step
+talk Rugan Steelbelly##33972
+Listen to Rugan Steelbelly's advice |q 13839/1 |goto 72.7,18.9
+step
+talk Valis Windchaser##33974
+Listen to Valis Windchaser's advice |q 13838/1 |goto 73.2,19.2
+step
+Target a Ranged Target from a distance
+|tip Use Shield-Breaker ability on Ranged Target to bring it's shields down
+|tip Use Shield-Breaker ability on Ranged Target twice, while it's shields are down |q 13838/2 |goto 73.1,19.0
+step
+Target a Charge Target from a distance
+|tip Use Shield-Breaker ability until you notice the targets Defend is gone
+|tip Use your Charge ability on the Charge Target 2 times |q 13839/2 |goto 72.9,18.8
+step
+Target a Melee Target
+|tip If you don't want to kill your mount be sure to keep your Defend ability maxed out at 3 stacks
+|tip Use your Thrust ability to attack the target 5 times |q 13829/2 |goto 72.6,19.7
+step
+Click the red arrow on your hotbar to stop riding the bird mount |outvehicle |q 13829
+step
+talk Magister Edien Sunhollow##33542
+turnin Mastery Of Melee##13829 |goto 76.3,24.4
+step
+talk Amariel Sunsworn##33658
+turnin Mastery Of The Charge##13839 |goto 76.3,24.4
+step
+talk Galathia Brightdawn##33659
+turnin Mastery Of The Shield-Breaker##13838 |goto 76.2,24.4
 step
 label buy
-You can either buy these items from the Auction House or farm for them:
-collect 4 Ghost Iron Bar##72096+ |or 3
-collect 6 Trillium Bar##72095+ |or 3
-collect 2 Spirit of Harmony##76061 |or 3
-_or_
-buy Mechanical Pandaren Dragonling##87526 |or 1
-Click here if you want to farm the materials needed for the above items. |confirm
+earn 50 Champion's Seal##241 |goto Icecrown,76.2,24.0
+talk Vasarin Redmorn##34772
+buy 1 Shimmering Wyrmling##46821 |goto Icecrown,76.2,24.0
 step
-map Kun-Lai Summit
-path	59.0,72.6	56.2,70.6	53.7,70.4
-path	49.3,71.1	47.1,71.9	45.1,76.0
-path	46.7,76.3	48.3,79.6	52.4,79.3
-path	54.9,76.3	56.0,75.0	59.6,71.0
-Follow the provided path and gather the following materials:
-collect 8 Ghost Iron Ore##
-collect 12 White Trillium Ore##72103
-collect 12 Black Trillium Ore##72094
-step
-create Ghost Iron Bar##102165,Mining,4 total |goto Vale of Eternal Blossoms/3 25.8,40.6
-step
-create Trillium Bar##102167,Mining,6 total
-step
-create Mechanical Pandaren Dragonling##127135,Engineering,1 total
-step
-learnpet Mechanical Pandaren Dragonling##64899
+learnpet Shimmering Wyrmling##34724 |use Shimmering Wyrmling##46821
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Lil' Smoky",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Willy",{
+pet=157,
+description="This guide will walk you through obtaining the Magic pet: Willy",
+},[[
+step
+If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+For the Shattrath Daily set, click here. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+step
+talk Orphan Matron Mercy##22819
+turnin Back to the Orphanage##10967 |goto Shattrath City 74.9,47.9
+collect 1 Sleepy Willy##32617
+|tip This pet will arrive in the mail after completing the Event questline.
+step
+learnpet Willy##23231 |use Sleepy Willy##32617
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Clockwork Gnome",{
+pet=277,
+description="This guide will walk you through obtaining the Mechanical pet: Clockwork Gnome",
+},[[
+step
+This pet is a rare Archaeology "Dwarf" solve
+talk Belloc Brightblade##47571 |goto Orgrimmar,49.1,70.5 |only if skillmax("Archaeology")<1
+skillmax Archaeology,75 |only if skillmax("Archaeology")<1
+skill Archaeology,525
+step
+Open your _world map_, find dig sites in _Eastern Kingdoms_, and go to them
+|tip They look like small shovel icons on your world map that spawn in random places.  Once you get to the zone where the dig site is located, you will see the dig site on your map as a red highlighted area.
+Use your Survey ability inside the dig site area |cast Survey##80451
+A telescope will appear, follow the direction it points in and continue using your Survey ability to eventually find the artifacts
+|tip Each dig site has 3 artifacts you can find.
+Click the Archaeology Fragments that spawn on the ground
+You're looking for a _rare artifact_ in the _"Dwarf"_ tab called _"Clockwork Gnome"_. Solve this Archaeology puzzle
+collect 1 Clockwork Gnome##64372
+step
+learnpet Clockwork Gnome##48609 |use Clockwork Gnome##64372
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Clockwork Rocket Bot",{
+pet=191,
+description="This guide will walk you through obtaining the Mechanical pet: Clockwork Rocket Bot",
+},[[
+step
+This pet can only be obtained during the Feast of Winter Veil Event.
+confirm always
+step
+talk Strange Snowman##13636
+accept You're a Mean One...##6983 |goto Hillsbrad Foothills,42.3,41.1
+step
+kill The Abominable Greench##13602
+|tip This will require a group to kill, but you do not have to be in a party.
+Free Metzen the Reindeer |q 6983/1 |goto Hillsbrad Foothills,43.6,39.0
+collect Stolen Treats |q 6983/2 |goto Hillsbrad Foothills,43.6,39.0
+|tip You can pick this up if someone has killed The Abominable Grinch recently.
+step
+talk Kaymard Copperpinch##13418
+turnin You're a Mean One...##6983 |goto Orgrimmar,52.6,77.4
+accept A Smokywood Pastures' Thank You!##6984 |goto Orgrimmar,52.6,77.4
+step
+talk Great-father Winter##13445
+turnin A Smokywood Pastures' Thank You!##6984 |goto 49.6,78.0
+step
+learnpet Clockwork Rocket Bot##24968
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\De-Weaponized Mechanical Companion",{
+pet=262,
+description="This guide will walk you through obtaining the Mechanical pet: De-Weaponized Mechanical Companion",
+},[[
+step
+Skipping to the next step |next aa |only if skill("Engineering")<475
+Click here if you do not wish to learn this schematic |next |only if skill("Engineering")>=475
+step
+talk Oglethorpe Obnoticus##7406 |only if skill("Engineering")>=475
+learn De-Weaponized Mechanical Companion##84413 |goto The Cape of Stranglethorn,43.0,72.0 |only if skill("Engineering")>=475
+step
+label bb
+You can either buy this from the Auction House or farm for it:
+collect 1 De-Weaponized Mechanical Companion##60216 |next "bought"
+_Click here_ to farm for this pet |confirm
+step
+You can either _buy_ these from the _Auction House_ or _farm_ for them:
+collect 12 Obsidium Bar##54849
+collect 4 Handful of Obsidium Bolts##60224
+collect 8 Electrified Ether##67749
+collect 2 Jasper##52182
+step
+map Deepholm
+path	59.0,26.5	61.6,20.4	64.3,14.9
+path	67.6,20.8	68.9,23.1	65.9,23.5
+path	62.5,23.7	62.0,29.6
+collect 34 Obsidium Ore##53038
+collect 2 Jasper##52182 |tip These can be very hard to come by.
+collect 8 Volatile Air##52328 |tip These can be very hard to come by.
+Click here to continue by just buying the Jasper and/or Volatile Air.|confirm
+step
+create Obsidium Bar##54849,Mining,17 total |goto Orgrimmar/1 44.9,77.9
+confirm
+step
+create Handful of Obsidium Bolts##60216,Engineering,2 total
+step
+talk Auctioneer Ralinza##44867
+buy 2 Jasper##52182 |goto 53.9,73.1 |or 2
+buy 8 Volatile Air##52328 |goto 53.9,73.1 |or 2
+buy 8 Electrified Ether##67749 |goto 53.9,73.1 |or 2 |next aa
+next |only if default
+step
+create Electrified Ether##94748,Engineering,4 total
+step
+label aa
+Have an Engineer create this pet for you
+|tip Ask in your guild or in Trade Chat |only if knowspell(84413)==false
+create De-Weaponized Mechanical Companion##84413,Engineering,1 total |only if knowspell(84413)==true
+collect 1 De-Weaponized Mechanical Companion##60216
+step
+learnpet De-Weaponized Mechanical Companion##43916 |use De-Weaponized Mechanical Companion##60216
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Lifelike Toad",{
+pet=95,
+description="This guide will walk you through obtaining the Mechanical pet: Lifelike Toad",
+},[[
+step
+_Skipping_ to the next _step_ |next |only if skill("Engineering")<265
+|tip This is a very difficult schematic to obtain, but it is doable  |next a |only if skill("Engineering")>265 |next
+step
+You will have to go to _Blackwing Lair_ and farm _Nefarian_ every week
+|tip He has a .8% chance to drop this item so you may be farming for a while |only if skill("Engineering")>265
+kill Nefarian##11583 |only if skill("Engineering")>265
+collect 1 Schematic: Lifelike Mechanical Toad##16044 |only if skill("Engineering")>265
+use Schematic: Lifelike Mechanical Toad##16044 |only if skill("Engineering")>265
+step
+label a
+You can either buy this from the Auction House or farm for it:
+collect 1 Lifelike Mechanical Toad##15996 |next "bought"
+Click here to _farm_ for this _pet_ |confirm
+step
+You can either _buy_ these items from the _Auction House_ or _farm_ for them:
+collect 1 Living Essence##12803
+collect 4 Thorium Widget##15994
+collect 1 Gold Power Core##10558
+collect 1 Rugged Leather##8170
+Click here to farm your own materials. |confirm
+next b
+step
+map Felwood
+path	60.4,21.9	55.7,18.6	44.5,16.2
+path	40.5,26.6	39.6,33.7	37.9,43.3
+path	45.6,46.0	47.2,41.3	51.9,34.3
+path	56.8,28.9
+Follow the provided path, mining _Gold_ ore and _Thorium_ ore.
+collect 1 Gold Ore##2776
+collect 12 Thorium Ore##10620
+step
+talk Auctioneer Ralinza##44867
+buy 4 Runecloth##14047 |goto Orgrimmar/1 53.9,73.1
+step
+label b
+Have an Engineer make this pet for you
+|tip Ask in your guild or in trade chat |only if knowspell(19793)==false
+create Lifelike Mechanical Toad##19793,Engineering,1 total |only if knowspell(19793)==true
+collect 1 Lifelike Mechanical Toad##15996
+step
+label "bought"
+learnpet Lifelike Toad##12419 |use Lifelike Mechanical Toad##15996
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Lil' Smoky",{
 pet=86,
-description="This guide will walk you through obtaining\nthe Mechanical pet: Lil' Smoky",
+description="This guide will walk you through obtaining the Mechanical pet: Lil' Smoky",
 },[[
 step
 Skipping to the next step |next lazy |only if skill("Engineering")<205
@@ -5791,167 +5431,489 @@ step
 label bought
 learnpet Lil' Smoky##9657 |use Lil' Smoky##11826
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\De-Weaponized Mechanical Companion",{
-pet=262,
-description="This guide will walk you through obtaining\nthe Mechanical pet: De-Weaponized Mechanical Companion",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Mechanical Pandaren Dragonling",{
+pet=844,
+description="This guide will walk you through obtaining the Mechanical pet: Mechanical Pandaren Dragonling",
 },[[
 step
-Skipping to the next step |next aa |only if skill("Engineering")<475
-Click here if you do not wish to learn this schematic |next |only if skill("Engineering")>=475
+Routing to the proper section. |next |only if skill("Engineering")>=575
+Routing to the proper section. |next buy |only if skill("Engineering")<=575
 step
-talk Oglethorpe Obnoticus##7406 |only if skill("Engineering")>=475
-learn De-Weaponized Mechanical Companion##84413 |goto The Cape of Stranglethorn,43.0,72.0 |only if skill("Engineering")>=475
+You can either create this battle pet, or purchase it from an Auction House. You must be a level 575 Engineer to create this pet.
+talk Roxxik##11017
+learn Mechanical Pandaren Dragonling##127135 |goto Orgrimmar/1 56.8,56.5
 step
-label bb
+label buy
+You can either buy these items from the Auction House or farm for them:
+collect 4 Ghost Iron Bar##72096+ |or 3
+collect 6 Trillium Bar##72095+ |or 3
+collect 2 Spirit of Harmony##76061 |or 3
+_or_
+buy Mechanical Pandaren Dragonling##87526 |or 1
+Click here if you want to farm the materials needed for the above items. |confirm
+step
+map Kun-Lai Summit
+path	59.0,72.6	56.2,70.6	53.7,70.4
+path	49.3,71.1	47.1,71.9	45.1,76.0
+path	46.7,76.3	48.3,79.6	52.4,79.3
+path	54.9,76.3	56.0,75.0	59.6,71.0
+Follow the provided path and gather the following materials:
+collect 8 Ghost Iron Ore##
+collect 12 White Trillium Ore##72103
+collect 12 Black Trillium Ore##72094
+step
+create Ghost Iron Bar##102165,Mining,4 total |goto Vale of Eternal Blossoms/3 25.8,40.6
+step
+create Trillium Bar##102167,Mining,6 total
+step
+create Mechanical Pandaren Dragonling##127135,Engineering,1 total
+step
+learnpet Mechanical Pandaren Dragonling##64899
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Mechanical Squirrel",{
+pet=39,
+description="This guide will walk you through obtaining the Mechanical pet: Mechanical Squirrel",
+},[[
+step
+Routing to the proper section. |next |only if skill("Engineering")>=75
+Rouoting to the proper section. |next "buy" |only if skill("Engineering")<=75
+step
+To get this recipe you can fish in Orgrimmar, Stormwind City, Elwynn Forest, Ironforge, Durotar, Northern Barrens, and Wailing Caverns, or you can kill any mob in the world under level 16 |only if skill("Engineering")>=75
+collect 1 Schematic: Mechanical Squirrel Box##4408 |only if skill("Engineering")>=75
+use Schematic: Mechanical Squirrel Box##4408 |only if skill("Engineering")>=75
+Click here if _you don't want to get the recipe_ yourself |confirm
+only if skill("Engineering")>=75
+step
+label "buy"
+You can either buy this item from the Auction House or farm for it:
+buy 1 Mechanical Squirrel Box##4401 |next "bought"
+Click here to _make_ the _Mechanical Squirrel_ |confirm
+step
+You can either buy these items from the Auction House or farm for them:
+collect 1 Handful of Copper Bolts##4359
+collect 1 Copper Bar##2840
+collect 2 Malachite##774
+Click here if you want to farm the materials needed for the above items. |confirm
+next make
+step
+Use your mining ability inside of the cave here.
+collect 2 Copper Ore##2770 |goto Durotar 54.5,8.7
+collect 2 Malachite##774 |goto Durotar 54.5,8.7
+step
+create Handful of Copper Bolts##3922,Engineering,1 total |goto Orgrimmar/1 44.9,77.9
+step
+create Copper Bar##2657,Mining,1 total
+step
+label make
+Have an Engineer make this pet for you
+|tip Ask in your guild or in trade chat |only if knowspell(3928)==false
+create Mechanical Squirrel Box##3928,Engineering,1 total |only if knowspell(3928)==true
+collect 1 Mechanical Squirrel Box##4401
+step
+label bought
+learnpet Mechanical Squirrel##2671 |use Mechanical Squirrel Box##4401
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Mechanopeep",{
+pet=215,
+description="This guide will walk you through obtaining the Mechanical pet: Mechanopeep\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
+},[[
+step
+#include "auctioneer"
+buy 1 Mechanopeep##45002
+|tip This pet must be bought with an Alliance character or through the Auction House
+step
+learnpet Mechanopeep##33274 |use Mechanopeep##45002
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Personal World Destroyer",{
+pet=261,
+description="This guide will walk you through obtaining the Mechanical pet: Personal World Destroyer",
+},[[
+step
+Routing you to the proper section. |next |only if skill("Engineering")<475 |next
+Routing you to the proper section. |only if skill("Engineering")>=475
+step
+talk Nixx Sprocketspring##8126 |only if skill("Engineering")>=475
+learn Personal World Destroyer##84412 |goto Tanaris,52.2,28.2 |only if skill("Engineering")>=475
+step
+label lazy
 You can either buy this from the Auction House or farm for it:
-collect 1 De-Weaponized Mechanical Companion##60216 |next "bought"
-_Click here_ to farm for this pet |confirm
+collect 1 Personal World Destroyer##59597 |next "bought"
+Click here to gather the materials for this pet. |confirm
 step
-You can either _buy_ these from the _Auction House_ or _farm_ for them:
-collect 12 Obsidium Bar##54849
-collect 4 Handful of Obsidium Bolts##60224
+You can either buy these from the Auction House or farm for them:
+collect 10 Obsidium Bar##54849
+collect 8 Handful of Obsidium Bolts##60224
 collect 8 Electrified Ether##67749
-collect 2 Jasper##52182
 step
-map Deepholm
-path	59.0,26.5	61.6,20.4	64.3,14.9
-path	67.6,20.8	68.9,23.1	65.9,23.5
-path	62.5,23.7	62.0,29.6
-collect 34 Obsidium Ore##53038
-collect 2 Jasper##52182 |tip These can be very hard to come by.
-collect 8 Volatile Air##52328 |tip These can be very hard to come by.
-Click here to continue by just buying the Jasper and/or Volatile Air.|confirm
+map Mount Hyjal
+path	47.8,53.5	54.6,52.3	58.6,55.0
+path	64.5,50.9	60.0,60.5	52.3,56.7
+Follow the provided path and mine Obsidium Ore.
+collect 36 Obsidium Ore##53038
 step
-create Obsidium Bar##54849,Mining,17 total |goto Orgrimmar/1 44.9,77.9
-confirm
+buy 8 Volatile Air##52328
 step
-create Handful of Obsidium Bolts##60216,Engineering,2 total
+create Obsidium Bar##84038,Mining,18 total |goto Orgrimmar/1 44.9,78.0
 step
-talk Auctioneer Ralinza##44867
-buy 2 Jasper##52182 |goto 53.9,73.1 |or 2
-buy 8 Volatile Air##52328 |goto 53.9,73.1 |or 2
-buy 8 Electrified Ether##67749 |goto 53.9,73.1 |or 2 |next aa
-next |only if default
+create Handful of Obsidium Bolts##84403,Engineering,4 total
 step
 create Electrified Ether##94748,Engineering,4 total
 step
-label aa
 Have an Engineer create this pet for you
-|tip Ask in your guild or in Trade Chat |only if knowspell(84413)==false
-create De-Weaponized Mechanical Companion##84413,Engineering,1 total |only if knowspell(84413)==true
-collect 1 De-Weaponized Mechanical Companion##60216
+|tip Ask in your guild or in Trade Chat |only if knowspell(84412)==false
+create Personal World Destroyer##84412,Engineering,1 total |only if knowspell(84412)==true
+collect 1 Personal World Destroyer##59597
 step
-learnpet De-Weaponized Mechanical Companion##43916 |use De-Weaponized Mechanical Companion##60216
+label bought
+learnpet Personal World Destroyer##43800 |use Personal World Destroyer##59597
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Elementium Geode",{
-pet=293,
-description="This guide will walk you through obtaining\nthe Elemental pet: Elementium Geode",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Pet Bombling",{
+pet=85,
+description="This guide will walk you through obtaining the Mechanical pet: Pet Bombling",
 },[[
 step
-You can either farm for this pet using Mining or buy it from the Auction House:
-Click here to farm. |confirm
-Click here if you just want to buy it. |next buy |confirm
+Click here if you want to farm the schematic for this pet. |only if skill("Engineering")<205 |next
+Click here if you do not want to get this schematic |next bluh |confirm |only if skill("Engineering")>=205
 step
-map Twilight Highlands
-path	44.5,85.3	39.8,87.0	35.9,83.4
-path	39.9,80.7	37.1,76.2	33.2,71.1
-path	28.765.3	38.0,58.0	35.9,52.4
-path	30.1,47.2	28.5,38.9	26.3,36.7
-path	32.2,30.5	37.9,41.3	36.2,46.0
-path	37.1,55.0	38.3,61.0	39.9,73.5
-path	43.2,76.2
-Follow the provided path, mining _ANY_ nodes you come across.
-collect 1 Elementium Geode##67282 |next last
+Kill Mekgineer Thermaplugg |goto Gnomeregan,31.2,31.0 |only if skill("Engineering")>=205
+collect 1 Schematic: Pet Bombling##11828 |n |only if skill("Engineering")>=205
+learn Pet Bombling##15628 |use Schematic: Pet Bombling##11828 |only if skill("Engineering")>=205
 step
-label buy
-talk Auctioneer Ralinza##44867
-collect 1 Elementium Geode##67282 |goto Orgrimmar/1 53.9,73.1
-step
-label last
-learnpet Elementium Geode##50722 |use Elementium Geode##67282
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Speedy",{
-pet=125,
-description="This guide will walk you through obtaining\nthe Aquatic pet: Speedy",
-},[[
-step
-You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
-If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-For the Shattrath Daily set, click here. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-confirm
-step
-collect 1 Turtle Box##23002
-|tip Back to the Orphanage (Shattrath)
-step
-learnpet Speedy##16547 |use Turtle Box##23002 |tip Back to the Orphanage (Shattrath)
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Legs",{
-pet=308,
-description="This guide will walk you through obtaining\nthe Magic pet: Legs",
-},[[
-step
-You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
-If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-For the Shattrath Daily set, click here. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-confirm
-step
-collect 1 Legs##69648 |tip Back to the Orphanage (Shattrath)
-step
-learnpet Legs##53048 |use Legs##69648 |tip Back to the Orphanage (Shattrath)
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Lifelike Toad",{
-pet=95,
-description="This guide will walk you through obtaining\nthe Mechanical pet: Lifelike Toad",
-},[[
-step
-_Skipping_ to the next _step_ |next |only if skill("Engineering")<265
-|tip This is a very difficult schematic to obtain, but it is doable  |next a |only if skill("Engineering")>265 |next
-step
-You will have to go to _Blackwing Lair_ and farm _Nefarian_ every week
-|tip He has a .8% chance to drop this item so you may be farming for a while |only if skill("Engineering")>265
-kill Nefarian##11583 |only if skill("Engineering")>265
-collect 1 Schematic: Lifelike Mechanical Toad##16044 |only if skill("Engineering")>265
-use Schematic: Lifelike Mechanical Toad##16044 |only if skill("Engineering")>265
-step
-label a
+label bluh
 You can either buy this from the Auction House or farm for it:
-collect 1 Lifelike Mechanical Toad##15996 |next "bought"
-Click here to _farm_ for this _pet_ |confirm
+collect 1 Pet Bombling##11825 |next "bought"
+Click here to make this pet |confirm
 step
-You can either _buy_ these items from the _Auction House_ or _farm_ for them:
-collect 1 Living Essence##12803
-collect 4 Thorium Widget##15994
-collect 1 Gold Power Core##10558
-collect 1 Rugged Leather##8170
-Click here to farm your own materials. |confirm
-next b
+You can either buy these from the Auction House or farm for them:
+collect 1 Big Iron Bomb##4394
+collect 1 Heart of Fire##7077
+collect 1 Fused Wiring##7191
+collect 6 Mithril Bar##3860
+next |only if default
+Click here if you're going to farm your own materials |confirm
 step
 map Felwood
-path	60.4,21.9	55.7,18.6	44.5,16.2
-path	40.5,26.6	39.6,33.7	37.9,43.3
-path	45.6,46.0	47.2,41.3	51.9,34.3
-path	56.8,28.9
-Follow the provided path, mining _Gold_ ore and _Thorium_ ore.
-collect 1 Gold Ore##2776
-collect 12 Thorium Ore##10620
+path	48.1,92.8	44.4,88.5	40.6,84.2
+path	40.3,79.4`	43.8,81.5	46.1,88.4
+Follow the path provided and collect _Mithril Ore_.
+collect 6 Mithril Ore##3858
 step
-talk Auctioneer Ralinza##44867
-buy 4 Runecloth##14047 |goto Orgrimmar/1 53.9,73.1
+Mine inside of the cave here.
+collect 6 Copper Ore##2770 |goto Durotar 54.5,8.7
 step
-label b
-Have an Engineer make this pet for you
-|tip Ask in your guild or in trade chat |only if knowspell(19793)==false
-create Lifelike Mechanical Toad##19793,Engineering,1 total |only if knowspell(19793)==true
-collect 1 Lifelike Mechanical Toad##15996
+map Desolace
+path	79.2,15.2	79.2 22.0	77.5,34.8
+path	74.5,44.2	73.7,57.0	68.9,63.4
+path	67.5,58.0	65.5,49.6	63.9,41.2
+path	67.6,36.5	69.5,27.8
+Follow the provided path to collect _Iron Ore, Heavy Stones and Silver Ore_.
+collect 3 Iron Ore##2772
+collect 3 Heavy Stone##2838
+collect 1 Silver Ore##2775
 step
-label "bought"
-learnpet Lifelike Toad##12419 |use Lifelike Mechanical Toad##15996
+create Mithril Bar##10097,Mining,6 total |goto Orgrimmar/1 44.9,78.0
+step
+create Iron Bar##3307,Mining,3 total
+step
+create Silver Bar##2658,Mining,1 total
+step
+create Copper Bar##2657,Mining,6 total
+step
+Have an _Engineer create this pet_ for you
+|tip Ask in your guild or in Trade Chat |only if knowspell(15628)==false
+create Pet Bombling##15628,Engineering,1 total |only if knowspell(15628)==true
+collect 1 Pet Bombling##11825
+step
+label bought
+learnpet Pet Bombling##9656 |use Pet Bombling##11825
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Pets\\Macabre Marionette",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Tranquil Mechanical Yeti",{
+pet=116,
+description="This guide will walk you through obtaining the Mechanical pet: Tranquil Mechanical Yeti",
+},[[
+step
+The recipe to make this was removed with the quest line back in 2014.
+Old Engineers may still have this recipe you can either find one of these or purchase it from the AH.
+confirm
+step
+Click here to _buy_ the _Tranquil Mechanical Yeti_ from the AH |next "AH Yeti"
+Click here to _make_ the _Tranquil Mechanical Yeti_ |next "make"
+|confirm
+step
+label "AH Yeti"
+Go to one of your main cities and talk to an Auctioneer
+|tip These may be somewhat expensive as the recipe has been removed from the game.
+buy 1 Tranquil Mechanical Yeti##21277 |n
+learnpet Tranquil Mechanical Yeti##15699 |use Tranquil Mechanical Yeti##21277
+|next "Tranquil Yeti"
+step
+label "make"
+You can buy these items from the Auction House
+collect 1 Cured Rugged Hide##15407
+collect 4 Thorium Widget##15994
+collect 2 Globe of Water##7079
+collect 2 Truesilver Transformer##18631
+collect 1 Gold Power Core##10558
+step
+Have an Engineer make this pet for you
+|tip Ask in your guild or in trade chat |only if knowspell(26011)==false
+create Tranquil Mechanical Yeti##26011,Engineering,1 total |only if knowspell(26011)==true
+collect 1 Tranquil Mechanical Yeti##21277 |n
+learnpet Tranquil Mechanical Yeti##15699 |use Tranquil Mechanical Yeti##21277
+|next "Tranquil Yeti"
+step
+label "Tranquil Yeti"
+Congratulations you are now the proud owner of a _Tranquil Mechanical Yeti_
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Crawling Claw",{
+pet=264,
+description="This guide will walk you through obtaining the Undead pet: Crawling Claw",
+},[[
+step
+This pet is a rare Archaeology "Tol'vir" solve
+talk Belloc Brightblade##47571 |goto Orgrimmar,49.1,70.5 |only if skillmax("Archaeology")<1
+skillmax Archaeology,75 |only if skillmax("Archaeology")<1
+skill Archaeology,525
+step
+Open your _world map_, find dig sites in _Kalimdor_, and go to them
+|tip They look like small shovel icons on your world map that spawn in random places.  Once you get to the zone where the dig site is located, you will see the dig site on your map as a red highlighted area.
+Use your Survey ability inside the dig site area |cast Survey##80451
+A telescope will appear, follow the direction it points in and continue using your Survey ability to eventually find the artifacts
+|tip Each dig site has 3 artifacts you can find.
+Click the Archaeology Fragments that spawn on the ground
+You're looking for a _rare artifact_ in the _"Tol'vir"_ tab called _"Crawling Claw"_. Solve this Archaeology puzzle
+collect 1 Crawling Claw##60847
+step
+learnpet Crawling Claw##45128 |use Crawling Claw##60847
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Creepy Crate",{
+pet=321,
+description="This guide will walk you through obtaining the Undead pet: Creepy Crate",
+},[[
+step
+This pet can only be obtained during the Hallow's End festival
+Click here to continue |confirm
+step
+#include "Hallows_End_Quests_Horde"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Fossilized Hatchling",{
+pet=266,
+description="This guide will walk you through obtaining the Undead pet: Fossilized Hatchling",
+},[[
+step
+This pet is a rare Archaeology "Fossil" solve
+talk Belloc Brightblade##47571 |goto Orgrimmar,49.1,70.5 |only if skillmax("Archaeology")<1
+skillmax Archaeology,75 |only if skillmax("Archaeology")<1
+confirm |only if default
+step
+Open your _world map_, find dig sites in _Kalimdor_ and _Eastern Kingdoms_, and go to them
+|tip They look like small shovel icons on your world map that spawn in random places.  Once you get to the zone where the dig site is located, you will see the dig site on your map as a red highlighted area.
+Use your Survey ability inside the dig site area |cast Survey##80451
+A telescope will appear, follow the direction it points in and continue using your Survey ability to eventually find the artifacts
+|tip Each dig site has 3 artifacts you can find.
+Click the Archaeology Fragments that spawn on the ground
+You're looking for a _rare artifact_ in the _"Fossil"_ tab called _"Fossilized Hatchling"_. Solve this Archaeology puzzle
+collect 1 Fossilized Hatchling##60955
+step
+learnpet Fossilized Hatchling##45340 |use Fossilized Hatchling##60955
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Sen'jin Fetish",{
+pet=218,
+description="This guide will walk you through obtaining the Undead pet: Sen'jin Fetish",
+},[[
+step
+In order to be able to do this guide section, you must have already completed the ARGENT TOURNAMENT GROUNDS DAILIES (VALIANT RANK) guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
+|tip After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction.  Earning Champion rank with all the races of your faction, as well as becoming Exalted with the Darkspear Trolls, Orgrimmar, Silvermoon City, Thunder Bluff, and Undercity factions will earn you the Crusader title, and unlock more daily quests.
+|tip You cannot complete this section if you are a Troll.
+confirm always
+step
+Proceeding to Pre Quests. |next |only if default
+Click here Aspirant Rank Daily quests. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here for |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here if you are already at the rank of Champion. |next buy |confirm
+step
+talk Helidan Lightwing##33849
+fpath Argent Tournament Grounds |goto Icecrown,72.6,22.6
+step
+talk Justicar Mariel Trueheart##33817
+accept The Argent Tournament##13668 |goto Icecrown,69.7,22.9
+step
+talk Magister Edien Sunhollow##33542
+turnin The Argent Tournament##13668 |goto 76.3,24.4
+accept Mastery Of Melee##13829 |goto 76.3,24.4
+step
+talk Amariel Sunsworn##33658
+accept Mastery Of The Charge##13839 |goto 76.3,24.4
+step
+talk Galathia Brightdawn##33659
+accept Mastery Of The Shield-Breaker##13838 |goto 76.2,24.4
+step
+Equip the Horde Lance in your bags |use Horde Lance##46070
+Click to mount the Stabled Sunreaver Hawkstrider |invehicle|q 13829 |goto 75.6,23.7
+step
+talk Jeran Lockwood##33973
+Listen to Jeran Lockwood's advice |q 13829/1 |goto 72.5,19.3
+step
+talk Rugan Steelbelly##33972
+Listen to Rugan Steelbelly's advice |q 13839/1 |goto 72.7,18.9
+step
+talk Valis Windchaser##33974
+Listen to Valis Windchaser's advice |q 13838/1 |goto 73.2,19.2
+step
+Target a Ranged Target from a distance
+|tip Use Shield-Breaker ability on Ranged Target to bring it's shields down
+|tip Use Shield-Breaker ability on Ranged Target twice, while it's shields are down |q 13838/2 |goto 73.1,19.0
+step
+Target a Charge Target from a distance
+|tip Use Shield-Breaker ability until you notice the targets Defend is gone
+|tip Use your Charge ability on the Charge Target 2 times |q 13839/2 |goto 72.9,18.8
+step
+Target a Melee Target
+|tip If you don't want to kill your mount be sure to keep your Defend ability maxed out at 3 stacks
+|tip Use your Thrust ability to attack the target 5 times |q 13829/2 |goto 72.6,19.7
+step
+Click the red arrow on your hotbar to stop riding the bird mount |outvehicle |q 13829
+step
+talk Magister Edien Sunhollow##33542
+turnin Mastery Of Melee##13829 |goto 76.3,24.4
+step
+talk Amariel Sunsworn##33658
+turnin Mastery Of The Charge##13839 |goto 76.3,24.4
+step
+talk Galathia Brightdawn##33659
+turnin Mastery Of The Shield-Breaker##13838 |goto 76.2,24.4
+step
+label buy
+talk Zul'tore##33372
+accept Valiant Of Sen'jin##13708 |goto Icecrown,76.0,24.5
+turnin Valiant Of Sen'jin##13708 |goto Icecrown,76.0,24.5
+accept The Valiant's Charge##13719 |goto Icecrown,76.0,24.5
+step
+talk Zul'tore##33372
+You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+accept A Blade Fit For A Champion##13768 |goto 76.0,24.5 |or
+accept A Worthy Weapon##13769 |goto 76.0,24.5 |or
+accept The Edge Of Winter##13770 |goto 76.0,24.5 |or
+step
+talk Shadow Hunter Mezil-kree##33540
+accept A Valiant's Field Training##13771 |goto 76.0,24.6
+step
+talk Gahju##33545
+accept The Grand Melee##13772 |goto 75.9,24.4
+accept At The Enemy's Gates##13857 |goto 75.9,24.4
+step
+Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
+Target Lake Frogs
+Use the emote /kiss on the Lake Frogs
+Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
+talk Maiden of Ashwood Lake##33220
+Tell her you are glad to help
+collect Ashwood Brand |q 13768/1 |goto Grizzly Hills,61.2,50.3
+step
+Click Winter Hyacinth
+collect 4 Winter Hyacinth##45000 |q 13769 |goto Icecrown,69.1,76.2
+step
+Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
+Listen to the Maiden of Drak'Mar
+Click the Blade of Drak'Mar that spawns
+collect Blade of Drak'Mar |q 13769/1 |goto Dragonblight,93.2,26.1
+step
+kill Lord Everblaze##33289
+collect 1 Everburning Ember##45005 |q 13770 |goto Crystalsong Forest,54.5,74.9
+step
+Use the Everburning Ember on Maiden of Winter's Breath|use Everburning Ember##45005
+collect Winter's Edge |q 13770/1 |goto Howling Fjord,42.2,19.7
+step
+Equip the Horde Lance in your bags |use Horde Lance##46070
+Click to mount the Stabled Campaign Warhorse |invehicle |q 13857 |goto Icecrown,48.9,71.4
+step
+kill 15 Boneguard Footman |q 13857/1 |goto 50.1,74.8
+|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
+kill 10 Boneguard Scout |q 13857/2 |goto 50.1,74.8
+|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
+kill 3 Boneguard Lieutenant |q 13857/3 |goto 50.1,74.8
+|tip They ride horses around this area.  Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
+step
+Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13857 |goto 49.1,71.4
+step
+kill 10 Converted Hero##32255 |q 13771/1 |goto 44.3,54.2
+step
+Equip the Horde Lance in your bags |use Horde Lance##46070
+Click to mount the Stabled Darkspear Raptor |invehicle |q 13772 |goto 75.6,23.8
+step
+Talk to the riders on mounts of other Horde races
+Tell them you are ready to fight!
+Fight and defeat them
+|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
+collect 3 Mark of the Valiant |q 13772/1 |goto 75.3,26.0
+step
+talk Zul'tore##33372
+You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+turnin A Blade Fit For A Champion##13768 |goto 76.0,24.5
+turnin A Worthy Weapon##13769 |goto 76.0,24.5
+turnin The Edge Of Winter##13770 |goto 76.0,24.5
+step
+talk Shadow Hunter Mezil-kree##33540
+turnin A Valiant's Field Training##13771 |goto 76.0,24.6
+step
+talk Gahju##33545
+turnin The Grand Melee##13772 |goto 75.9,24.4
+turnin At The Enemy's Gates##13857 |goto 75.9,24.4
+step
+Make sure you have 25 Valiant Seals:
+collect 25 Valiant's Seal |q 13719/1
+|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
+step
+talk Zul'tore##33372
+turnin The Valiant's Charge##13719 |goto 76.0,24.5
+accept The Valiant's Challenge##13727 |goto 76.0,24.5
+step
+Equip the Horde Lance in your bags |use Horde Lance##46070
+Click to mount the Stabled Darkspear Raptor |invehicle |q 13727 |goto 72.0,22.5
+step
+talk Squire Danny##33518
+Tell him you are ready to fight!
+An Argent Champion runs up on a horse
+Use the abilities on your hotbar to defeat the Argent Champion
+|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
+Defeat the Argent Valiant |q 13727/1 |goto 68.6,21.0
+step
+talk Zul'tore##33372
+turnin The Valiant's Challenge##13727 |goto 76.0,24.5
+step
+Become a Champion of Sen'jin |achieve 2784
+earn 40 Champion's Seal##241+
+If you don't meet both of these requirements go back to step 1 of the guide.
+step
+talk Samamba##33554
+buy 1 Sen'jin Fetish##45606 |goto Icecrown,76.0,24.4
+step
+learnpet Sen'jin Fetish##33810 |use Sen'jin Fetish##45606
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Voodoo Figurine",{
+pet=310,
+description="This guide will walk you through obtaining the Undead pet: Voodoo Figurine",
+},[[
+step
+This pet is a rare Archaeology "Troll" solve
+talk Belloc Brightblade##47571 |goto Orgrimmar,49.1,70.5 |only if skillmax("Archaeology")<1
+skillmax Archaeology,75 |only if skillmax("Archaeology")<1
+skill Archaeology,525
+step
+Open your _world map_, find dig sites in _Eastern Kingdoms_, and go to them
+|tip They look like small shovel icons on your world map that spawn in random places.  Once you get to the zone where the dig site is located, you will see the dig site on your map as a red highlighted area.
+Use your Survey ability inside the dig site area |cast Survey##80451
+A telescope will appear, follow the direction it points in and continue using your Survey ability to eventually find the artifacts
+|tip Each dig site has 3 artifacts you can find.
+Click the Archaeology Fragments that spawn on the ground
+You're looking for a _rare artifact_ in the _"Troll"_ tab called _"Voodoo Figurine"_. Solve this Archaeology puzzle
+collect 1 Voodoo Figurine##69824
+step
+learnpet Voodoo Figurine##53232 |use Voodoo Figurine##69824
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Macabre Marionette",{
 pet=1351,
-description="This guide will walk you through obtaining\nthe Undead pet:Macabre Marionette",
+description="This guide will walk you through obtaining the Undead pet: Macabre Marionette",
 },[[
 step
 You can only obtain this pet during the Day of the Dead event, which only runs for one weekend a year.

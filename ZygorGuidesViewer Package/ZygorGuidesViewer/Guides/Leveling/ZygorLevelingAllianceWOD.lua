@@ -3,8 +3,8 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("LevelingAWOD") then return end
 ZygorGuidesViewer.GuideMenuTier = "WOD"
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Tanaan Jungle (90-90)",{
-next="Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Shadowmoon Valley (90-92)",
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Tanaan Jungle (90-90)",{
+next="Zygor's Leveling Guides\\Draenor (90-100)\\Shadowmoon Valley (90-92)",
 image=ZGV.DIR.."\\Guides\\Images\\TanaanJungle",
 condition_suggested_exclusive=true,
 startlevel=90,
@@ -327,8 +327,8 @@ step
 talk Prophet Velen##79206
 accept Step Three: Prophet!##34575 |goto Shadowmoon Valley D 27.0,8.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Shadowmoon Valley (90-92)",{
-next="Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Gorgrond (92-94)",
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Shadowmoon Valley (90-92)",{
+next="Zygor's Leveling Guides\\Draenor (90-100)\\Gorgrond (92-94)",
 image=ZGV.DIR.."\\Guides\\Images\\ShadowmoonValleyDraenor",
 condition_suggested_exclusive=true,
 startlevel=90.5,
@@ -861,19 +861,19 @@ accept Invisible Ramparts##34780 |goto 56.24,32.62
 step
 click Charged Resonance Crystal
 |tip They look like pink crystals on pedastals.
-Get a Crystal |havebuff Interface\Icons\INV_Enchant_VoidCrystal |q 34780 |goto Shadowmoon Valley D 56.8,34.3
+Get a Crystal |havebuff 132885 |q 34780 |goto Shadowmoon Valley D 56.8,34.3
 step
 Carry a Crystal to the Tertiary Pylon |q Invisible Ramparts##34780/3 |goto 56.18,33.44
 step
 click Charged Resonance Crystal
 |tip They look like pink crystals on pedastals.
-Get a Crystal |havebuff Interface\Icons\INV_Enchant_VoidCrystal |q 34780 |goto Shadowmoon Valley D 56.8,34.3
+Get a Crystal |havebuff 132885 |q 34780 |goto Shadowmoon Valley D 56.8,34.3
 step
 Carry a Crystal to the Secondary Pylon |q Invisible Ramparts##34780/2 |goto 56.62,33.13
 step
 click Charged Resonance Crystal
 |tip They look like pink crystals on pedastals.
-Get a Crystal |havebuff Interface\Icons\INV_Enchant_VoidCrystal |q 34780 |goto Shadowmoon Valley D 56.8,34.3
+Get a Crystal |havebuff 132885 |q 34780 |goto Shadowmoon Valley D 56.8,34.3
 step
 Carry a Crystal to the Primary Pylon |q Invisible Ramparts##34780/1 |goto 56.25,32.76
 step
@@ -950,7 +950,7 @@ stickystart "stinger"
 step
 click Shimmershroom
 |tip They look like orange glowing mushrooms on the ground all around this area. Continue clicking Shimmershrooms to maintain the Shimmershroom Aura.
-Gain the Shimmershroom Aura |havebuff INTERFACE\ICONS\druid_ability_wildmushroom_a |q 34784
+Gain the Shimmershroom Aura |havebuff 464341 |q 34784
 While you have the buff:
 clicknpc Volatile Spore##82328
 Collect the Volatile Spores |q Fun with Fungus##34784/1 |goto 53.82,21.81
@@ -1175,8 +1175,8 @@ step
 _Enter_ Shaz'gul through the wooden gates |goto Shadowmoon Valley D 38.6,60.5 < 20 |only if walking
 use Sylene's Amulet of Illusion##107076
 |tip Use this if you lose your disguise. Also, Void Wolves can see through your disguise, so be careful around them.
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\achievement_character_orc_male |q 33080 |only if _G.UnitSex("player")==2
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 33080 |only if _G.UnitSex("player")==3
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236452 |q 33080 |only if _G.UnitSex("player")==2
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236451 |q 33080 |only if _G.UnitSex("player")==3
 clicknpc Explosives##74811
 |tip It looks like a yellow bomb with bumps all over it, sitting on the ground.
 Plant Explosives at the Supply Hut |q Going Undercover##33080/2 |goto Shadowmoon Valley D 37.17,59.25
@@ -1184,16 +1184,16 @@ step
 _Enter_ the building |goto Shadowmoon Valley D 36.7,61.3 < 10 |walk
 use Sylene's Amulet of Illusion##107076
 |tip Use this if you lose your disguise. Also, Void Wolves can see through your disguise, so be careful around them.
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\achievement_character_orc_male |q 33080 |only if _G.UnitSex("player")==2
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 33080 |only if _G.UnitSex("player")==3
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236452 |q 33080 |only if _G.UnitSex("player")==2
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236451 |q 33080 |only if _G.UnitSex("player")==3
 clicknpc Explosives##74811
 |tip It looks like a yellow bomb with bumps all over it, sitting on the ground.
 Plant Explosives at the Main Lodge |q Going Undercover##33080/3 |goto Shadowmoon Valley D 36.37,61.44
 step
 use Sylene's Amulet of Illusion##107076
 |tip Use this if you lose your disguise. Also, Void Wolves can see through your disguise, so be careful around them.
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\achievement_character_orc_male |q 33080 |only if _G.UnitSex("player")==2
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 33080 |only if _G.UnitSex("player")==3
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236452 |q 33080 |only if _G.UnitSex("player")==2
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236451 |q 33080 |only if _G.UnitSex("player")==3
 _Head_ through the gates to the Chieftains' seat |goto Shadowmoon Valley D 37.8,62.6 < 20
 clicknpc Explosives##74811
 |tip It looks like a yellow bomb with bumps all over it, sitting on the ground behind a huge stone.
@@ -1201,8 +1201,8 @@ Plant Explosives at the Chieftain's Seat |q Going Undercover##33080/4 |goto Shad
 step
 use Sylene's Amulet of Illusion##107076
 |tip Use this if you lose your disguise. Also, Void Wolves can see through your disguise, so be careful around them.
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\achievement_character_orc_male |q 33080 |only if _G.UnitSex("player")==2
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 33080 |only if _G.UnitSex("player")==3
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236452 |q 33080 |only if _G.UnitSex("player")==2
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236451 |q 33080 |only if _G.UnitSex("player")==3
 clicknpc Explosives##74811
 |tip It looks like a yellow bomb with bumps all over it, sitting on the ground.
 Plant Explosives at the Training Pit |q Going Undercover##33080/5 |goto Shadowmoon Valley D 36.5,65.5
@@ -1681,8 +1681,8 @@ talk Yrel##73395
 turnin The Defense of Karabor##33256 |goto 46.38,38.62
 accept The Secrets of Gorgrond##33533 |goto 46.37,38.62 |only if not havequest(35556) and not completedq(35556)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Gorgrond (92-94)",{
-next="Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Talador (94-96)",
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Gorgrond (92-94)",{
+next="Zygor's Leveling Guides\\Draenor (90-100)\\Talador (94-96)",
 image=ZGV.DIR.."\\Guides\\Images\\Gorgrond",
 condition_suggested_exclusive=true,
 startlevel=92,
@@ -2538,7 +2538,7 @@ scenariostage 6
 only if not completedq(37289)
 step
 #include "A_Garrison_Crowler"
-turnin Shadowmoon Invasion!##37289 |next Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Talador (94-96)
+turnin Shadowmoon Invasion!##37289 |next Zygor's Leveling Guides\\Draenor (90-100)\\Talador (94-96)
 step
 label "loggingcamp"
 talk Glirin##85119
@@ -3151,10 +3151,10 @@ talk Archmage Khadgar##77184
 turnin To Catch a Shadow##33116 |goto Shadowmoon Valley D/0 29.2,25.7
 step
 talk Cordana Felsong##72637
-turnin Cleaning Up Gul'var##33269 |goto 29.26,25.71 |next Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Talador (94-96)
+turnin Cleaning Up Gul'var##33269 |goto 29.26,25.71 |next Zygor's Leveling Guides\\Draenor (90-100)\\Talador (94-96)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Talador (94-96)",{
-next="Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-98)",
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Talador (94-96)",{
+next="Zygor's Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-98)",
 image=ZGV.DIR.."\\Guides\\Images\\Talador",
 startlevel=94,
 },[[
@@ -3696,7 +3696,7 @@ turnin Cure of Aruunem##33873 |goto Talador 65.4,50.7
 accept Aruumel's Rest##33874 |goto Talador 65.4,50.7
 step
 use Elixir of Memories##108749
-Enter the Spirit Realm |havebuff Interface\Icons\ability_warlock_soulswap |q Aruumel's Rest##33874 |c |goto Talador/0 65.4,50.7
+Enter the Spirit Realm |havebuff 460857 |q Aruumel's Rest##33874 |c |goto Talador/0 65.4,50.7
 |only if havequest(33874)
 step
 kill Aruumel##76824 |q Aruumel's Rest##33874/1 |goto Talador 68.9,55.0
@@ -4182,7 +4182,7 @@ turnin Kaelynara Sunchaser##34448 |goto 51.62,50.48
 step
 talk Vindicator Icia##79618
 turnin Come Together##34707 |goto 69.65,21.60
-accept News from Spires of Arak##35554 |goto 69.65,21.60 |next Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-98)
+accept News from Spires of Arak##35554 |goto 69.65,21.60 |next Zygor's Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-98)
 step
 label "arcaneAS"
 talk Olivia Abbington##81358
@@ -4706,7 +4706,7 @@ turnin Cure of Aruunem##33873 |goto Talador 65.4,50.7
 accept Aruumel's Rest##33874 |goto Talador 65.4,50.7
 step
 use Elixir of Memories##108749
-Enter the spirit realm |havebuff Interface\Icons\ability_warlock_soulswap |q Aruumel's Rest##33874 |c
+Enter the spirit realm |havebuff 460857 |q Aruumel's Rest##33874 |c
 only if havequest(33874)
 step
 kill Aruumel##76824 |q Aruumel's Rest##33874/1 |goto Talador 68.9,55.0
@@ -5186,10 +5186,10 @@ turnin Kaelynara Sunchaser##34448 |goto 51.62,50.48
 step
 talk Vindicator Icia##79618
 turnin Come Together##34707 |goto 69.65,21.60
-accept News from Spires of Arak##35554 |next Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-98)
+accept News from Spires of Arak##35554 |next Zygor's Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-98)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-98)",{
-next="Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)",
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-98)",{
+next="Zygor's Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)",
 image=ZGV.DIR.."\\Guides\\Images\\SpiresOfArak",
 condition_suggested_exclusive=true,
 startlevel=96,
@@ -6443,9 +6443,9 @@ accept Talonpriest Ishaal##37141 |goto 46.52,46.81
 step
 talk Lieutenant Willem##81929
 accept News from Nagrand##36606 |goto 39.88,60.83
-next Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)
+next Zygor's Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)",{
 condition_suggested_exclusive=true,
 image=ZGV.DIR.."\\Guides\\Images\\NagrandDraenor",
 startlevel=98,
@@ -7554,7 +7554,7 @@ step
 talk Vindicator Nobundo##82214
 turnin The Dark Heart of Oshu'gun##35396 |goto 71.55,19.76
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Tanaan Jungle (100)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Tanaan Jungle (100)",{
 description="This guide will walk you through completing the main questline for the level 100 Tanaan Jungle zone.",
 },[[
 step
@@ -7877,7 +7877,7 @@ turnin A Message of Terrible Import##38578 |goto Tanaan Jungle/0 47.3,70.5
 step
 Congratulations, you've completed the Tanaan Jungle Main Questline!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\The Loremaster\\Loremaster of Draenor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\The Loremaster\\Loremaster of Draenor",{
 condition_end="achieved(9833)",
 sugGroup="ACHIEVEMENTS\\Draenor Pathfinder",
 description="Complete the Draenor quest achievements.",
@@ -7887,11 +7887,11 @@ Use these Draenor Leveling Guides to complete Loremaster:
 |tip The Leveling guides cover all required questlines for Loremaster.
 |tip Click one of the lines below to load the Leveling guide for that zone.
 condition achieved(9833) |next
-Shadowmoon Valley |condition achieved(9833,1) |confirm always |next "Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Shadowmoon Valley (90-92)"
-Gorgrond |confirm |condition achieved(9833,2) |confirm always |next "Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Gorgrond (92-94)"
-Talador |condition achieved(9833,3) |confirm always |next "Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Talador (94-96)"
-Spires of Arak |condition achieved(9833,4) |confirm always |next "Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-98)"
-Nagrand |condition achieved(9833,5) |confirm always |next "Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)"
+Shadowmoon Valley |condition achieved(9833,1) |confirm always |next "Zygor's Leveling Guides\\Draenor (90-100)\\Shadowmoon Valley (90-92)"
+Gorgrond |confirm |condition achieved(9833,2) |confirm always |next "Zygor's Leveling Guides\\Draenor (90-100)\\Gorgrond (92-94)"
+Talador |condition achieved(9833,3) |confirm always |next "Zygor's Leveling Guides\\Draenor (90-100)\\Talador (94-96)"
+Spires of Arak |condition achieved(9833,4) |confirm always |next "Zygor's Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-98)"
+Nagrand |condition achieved(9833,5) |confirm always |next "Zygor's Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)"
 step
 Congratulations, you earned the _Loremaster of Draenor_ Achievement!
 ]])

@@ -3,12 +3,12 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("ReputationsAWOD") then return end
 ZygorGuidesViewer.GuideMenuTier = "WOD"
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Warlords of Draenor\\Arakkoa Outcasts",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Arakkoa Outcasts",{
 description="This guide will show you how to become Exalted with the Arakkoa Outcasts.\nBecoming Exalted with the Arakkoa Outcasts allows you access to special items including the Shadowmane Charger mount and the Son of Sethe battle pet.",
 },[[
 #include "Arakkoa_Outcasts"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Warlords of Draenor\\Council of Exarchs",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Council of Exarchs",{
 description="This guide will show you how to become Exalted with the Council of Exarchs.\nBecoming Exalted with the Council of Exarchs allows you access to special items including the Dusty Rockhide mount and the Relic of Karabor.",
 },[[
 stickystart "info"
@@ -37,7 +37,25 @@ _Honored_ |only if rep('Council of Exarchs')==Honored
 _Revered_ |only if rep('Council of Exarchs')==Revered
 _Exalted_ |only if rep('Council of Exarchs')==Exalted
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Warlords of Draenor\\Sha'tari Defense",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Hand of the Prophet",{
+description="This guide will walk you through becoming Exalted with the Hand of the Prophet faction.",
+},[[
+step
+#include "A_Hand_of_Prophet_Dailies"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Order of the Awakened",{
+description="This guide will walk you through becoming Exalted with the Order of the Awakened faction.",
+},[[
+step
+#include "A_Order_of_Awakened_Dailies"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\The Saberstalkers",{
+description="This guide will walk you through becoming Exalted with the Saberstalkers faction.",
+},[[
+step
+#include "A_Saberstalkers_Dailies"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Sha'tari Defense",{
 description="This guide will show you how to become Exalted with Sha'tari Defense.\nBecoming Exalted with Sha'tari Defense allows you access to special items such as the Armored Irontusk mount and a Sha'tari Defense plate Transmog set.",
 },[[
 step
@@ -72,12 +90,12 @@ label "end"
 You must have at least a _level 2 Trading Post_ in your Garrison to gain Sha'tari Defense reputation!
 |tip Use the Garrison Buildings guide to accomplish this.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Warlords of Draenor\\Steamwheedle Preservation Society",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Steamwheedle Preservation Society",{
 description="This guide will show you how to become Exalted with the Steamwheedle Preservation Society.\nBecoming Exalted with the Steamwheedle Preservation Society allows you access to special items including the Domesticated Razorback mount.",
 },[[
 #include "Steamwheedle_Preservation_Society"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Warlords of Draenor\\Wrynn's Vanguard",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Wrynn's Vanguard",{
 description="This guide will show you how to become Exalted with Wrynn's Vanguard.\nBecoming Exalted with Wrynn's Vanguard allows you access to special items such as the Pale Thorngrazer mount and Primal Gladiator gear.",
 },[[
 step
@@ -155,22 +173,4 @@ Tattered Armor Scraps |q Into The Wilderness##36123/1
 step
 talk Chris Clarkie##82909
 turnin Into The Wilderness##36123 |goto 43.3,76.6
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Warlords of Draenor\\Hand of the Prophet",{
-description="This guide will walk you through becoming Exalted with the Hand of the Prophet faction.",
-},[[
-step
-#include "A_Hand_of_Prophet_Dailies"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Warlords of Draenor\\Order of the Awakened",{
-description="This guide will walk you through becoming Exalted with the Order of the Awakened faction.",
-},[[
-step
-#include "A_Order_of_Awakened_Dailies"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Warlords of Draenor\\The Saberstalkers",{
-description="This guide will walk you through becoming Exalted with the Saberstalkers faction.",
-},[[
-step
-#include "A_Saberstalkers_Dailies"
 ]])

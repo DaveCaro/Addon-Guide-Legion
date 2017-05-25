@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("AchievementsHMOP") then return end
 ZygorGuidesViewer.GuideMenuTier = "MOP"
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Double Agent",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Double Agent",{
 condition_end="achieved(7380)",
 description="Reach maximum level on both an Alliance and a Horde character.",
 },[[
@@ -13,7 +13,7 @@ Reach max level with an Alliance and a Horde character |achieve 7380
 step
 Congratulations, you have earned the Double Agent achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Dynamic Duo",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Dynamic Duo",{
 condition_end="achieved(7382)",
 description="Reach maximum level on two characters.",
 },[[
@@ -24,7 +24,7 @@ Raise two characters to max level |achieve 7382
 step
 Congratulations, you have earned the Dynamic Duo achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Quintessential Quintet",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Quintessential Quintet",{
 condition_end="achieved(7384)",
 description="Reach maximum level on five characters.",
 },[[
@@ -35,7 +35,7 @@ Raise five characters to level max level |achieve 7384
 step
 Congratulations, you have earned the Quintessential Quintet achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Terrific Trio",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Terrific Trio",{
 condition_end="achieved(7383)",
 description="Reach maximum level on three characters.",
 },[[
@@ -46,7 +46,7 @@ Raise three characters to level max level |achieve 7383
 step
 Congratulations, you have earned the Terrific Trio achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Mystically Epic",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Mystically Epic",{
 condition_end="achieved(6349)",
 description="Equip items in each slot that have at least an item level of 476",
 },[[
@@ -76,7 +76,7 @@ step
 Congratulations, you have earned the Mystically Epic achievement! |only if achieved(6349)
 You still have gear to equip please refer back to the list. |only if not achieved(6349)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Mystically Superior",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Mystically Superior",{
 condition_end="achieved(6348)",
 description="Equip a superior item in every slot with a minimum item level of 450.",
 },[[
@@ -106,7 +106,7 @@ step
 Congratulations, you have earned the Mystically Superior achievement! |only if achieved(6348)
 You still have gear to equip please refer back to the list. |only if not achieved(6348)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\To All the Squirrels I Once Caressed?",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\To All the Squirrels I Once Caressed?",{
 condition_end="achieved(6350)",
 description="This guide will walk you through /loving all the critters in Pandaria.",
 },[[
@@ -166,7 +166,7 @@ step
 Congratulations, you have obtained the To All the Squirrels I Once Caressed? achievement! |only if achieved(6350)
 Still more love required. Routing to the guide start |next "start" |only if not achieved(6350)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Explore Pandaria",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Explore Pandaria",{
 condition_end="achieved(6974)",
 achieveid={6351,6975,6977,6979,6969,6978,6976},
 description="Explore the regions of Pandaria.",
@@ -386,7 +386,7 @@ _Explore_ Vale of Eternal Blossoms |achieve 6979
 step
 Congratulations, you have _earned_ the _Explore Pandaria_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Ballad of Liu Lang",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Ballad of Liu Lang",{
 condition_end="achieved(6856)",
 description="This guide will walk you through discovering each of the lore objects in Pandaria that tell the tale of Liu Lang.",
 },[[
@@ -407,7 +407,7 @@ step
 Congratulations, you have earned The Ballad of Liu Lang Achievement! |only if achieved(6856)
 Still more exploration required. Routing to the guide start. |next "start" |only if not achieved(6856)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Between a Saurok and a Hard Place",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Between a Saurok and a Hard Place",{
 condition_end="achieved(6716)",
 description="This guide will walk you through discovering each of the Saurok lore objects in Pandaria.",
 },[[
@@ -428,7 +428,7 @@ step
 Congratulations, you have earned the Between a Saurok and a Hard Place Achievement! |only if achieved(6716)
 Still more exploration required. Routing to the guide start. |next "start" |only if not achieved(6716)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Champions of Lei Shen",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Champions of Lei Shen",{
 condition_end="achieved(8103)",
 description="Defeat all of the Isle of Thunder rare mobs.",
 },[[
@@ -471,7 +471,7 @@ step
 Congratulations, you have obtained the Champions of Lei Shen achievement! |only if achieved(8103)
 Still more kills required. Routing to the guide start. |next "start" |only if not achieved(8103)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Fish Tales",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Fish Tales",{
 condition_end="achieved(6846)",
 description="This guide will walk you through discovering each of the Jinyu lore objects in Pandaria.",
 },[[
@@ -492,7 +492,7 @@ step
 Congratulations, you have earned Fish Tales Achievement! |only if achieved(6846)
 Still more exploration required. Routing to the guide start. |next "start" |only if not achieved(6846)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Glorious!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Glorious!",{
 condition_end="achieved(7439)",
 achieveid={7437,7438},
 description="This guide will walk you through unting down and defeating each and every one of the Pandarian champions.",
@@ -691,7 +691,7 @@ step
 Congratulations, you have earned the Glorious! achievement! |only if achieved(7439)
 Still more kills required. Routing to the guide start. |next "start" |only if not achieved(7439)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Gods and Monsters",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Gods and Monsters",{
 condition_end="achieved(8051)",
 description="This guide will walk you through discovering each of the lore objects in Pandaria that tell of the dark origins of the mogu.",
 },[[
@@ -712,7 +712,7 @@ step
 Congratulations, you have achieved the Gods and Monsters achievement! |only if achieved(8051)
 Still more exploration required. Routing to the guide start. |next "start" |only if not achieved(8051)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Heart of the Mantid Swarm",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Heart of the Mantid Swarm",{
 condition_end="achieved(6857)",
 description="This guide will walk you through discovering each of the Mantid lore objects in Pandaria.",
 },[[
@@ -734,7 +734,7 @@ step
 Congratulations, you have earned The Heart of the Mantid Swarm Achievement! |only if achieved(6857)
 Still more exploration required. Routing to the guide start. |next "start" |only if not achieved(6857)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Hozen in the Mist",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Hozen in the Mist",{
 condition_end="achieved(6850)",
 description="This guide will walk you through discovering each of the Hozen lore objects in Pandaria.",
 },[[
@@ -755,7 +755,7 @@ step
 Congratulations, you have earned The Hozen in the Mist Achievement! |only if achieved(6850)
 Still more exploration required. Routing to the guide start. |next "start" |only if not achieved(6850)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\I'm In Your Base, Killing Your Dudes",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\I'm In Your Base, Killing Your Dudes",{
 condition_end="achieved(7932)",
 description="This guide will walk you through killing all three of the opposing faction's champions in Krasarang Wilds.",
 },[[
@@ -776,7 +776,7 @@ step
 Congratulations, you have earned the I'm In Your Base, Killing Your Dudes achievement! |only if achieved(7932)
 Still more kills required. Routing to the guide start. |next "start" |only if not achieved(7932)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Killing Time",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Killing Time",{
 condition_end="achieved(8712)",
 description="This guide will walk you through defeating all of the creatures of the Timeless Isle.",
 },[[
@@ -865,7 +865,7 @@ step
 Congratulations, you have earned the Killing Time Achievement! |only if achieved(8712)
 Still more kills required. Routing to the guide start. |next "start" |only if not achieved(8712)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Legend of the Brewfathers",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Legend of the Brewfathers",{
 condition_end="achieved(7230)",
 description="This guide will walk you through discovering each of the three Brewfather Shrines in Pandaria.",
 },[[
@@ -883,7 +883,7 @@ step
 Congratulations, you have earned the Legend of the Brewfathers Achievement! |only if achieved(7230)
 Still more exploration required. Routing to the guide start. |next "start" |only if not achieved(7230)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Riches of Pandaria",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Riches of Pandaria",{
 condition_end="achieved(7997)",
 achieveid={7996,7995,7994},
 description="Find all of the Treasures of Pandaria",
@@ -948,7 +948,7 @@ step
 Congratulations, you have obtained the Riches of Pandaria achievement! |only if achieved(7997)
 Still more treasure required. Routing to the guide start. |next "start" |only if not achieved(7997)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Rumbles of Thunder",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Rumbles of Thunder",{
 condition_end="achieved(8050)",
 description="This guide will walk you through discovering each of the lore objects on the Isle of Thunder that tell of Lei-Shen, the Thunder King.",
 },[[
@@ -969,7 +969,7 @@ step
 Congratulations, you have earned the Rumbles of Thunder achievement! |only if achieved(8050)
 Still more exploration required. Routing to the guide start. |next "start" |only if not achieved(8050)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\The Dark Heart of the Mogu",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\The Dark Heart of the Mogu",{
 condition_end="achieved(6754)",
 description="This guide will walk you through discovering each of the Mogu lore objects in Pandaria.",
 },[[
@@ -990,7 +990,7 @@ step
 Congratulations, you have earned The Dark Heart of the Mogu Achievement! |only if achieved(6754)
 Still more exploration required. Routing to the guide start. |next "start" |only if not achieved(6754)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\The Seven Burdens of Shaohao",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\The Seven Burdens of Shaohao",{
 condition_end="achieved(6855)",
 description="This guide will walk you through discovering each of the lore objects that tell the tale of Shaohao, Last Emperor of Pandaria.",
 },[[
@@ -1025,7 +1025,7 @@ step
 Congratulations, you have earned The Seven Burdens of Shaohao Achievement! |only if achieved(6855)
 Still more exploration required. Routing to the guide start. |next "start" |only if not achieved(6855)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\The Song of the Yaungol",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\The Song of the Yaungol",{
 condition_end="achieved(6847)",
 description="This guide will walk you through discovering each of the Yaungol lore objects in Pandaria.",
 },[[
@@ -1046,7 +1046,7 @@ step
 Congratulations, you have earned The Song of the Yaungol Achievement! |only if achieved(6847)
 Still more exploration required. Routing to the guide start. |next "start" |only if not achieved(6847)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\The Zandalari Prophecy",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\The Zandalari Prophecy",{
 condition_end="achieved(8049)",
 description="This guide will walk you through discovering each of the lore objects on the Isle of Thunder that tell of the Zandalari and their dark prophecy.",
 },[[
@@ -1067,7 +1067,7 @@ step
 Congratulations, you have achieved the The Zandalari Prophecy achievement! |only if achieved(8049)
 Still more exploration required. Routing to the guide start. |next "start" |only if not achieved(8049)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\What is Worth Fighting For",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\What is Worth Fighting For",{
 condition_end="achieved(6858)",
 description="This guide will walk you through discovering each of the Monk lore objects in Pandaria.",
 },[[
@@ -1091,7 +1091,7 @@ step
 Congratulations, you have earned the What is Worth Fighting For Achievement! |only if achieved(6858)
 Still more exploration required. Routing to the guide start. |next "start" |only if not achieved(6858)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Zul'Again",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Zul'Again",{
 condition_end="achieved(8078)",
 description="This guide will walk you through killing 10 Zandalari Warscouts and 5 Zandalari Warbringers.",
 },[[
@@ -1169,7 +1169,7 @@ step "tracker"
 Kill #10# Zandalari Warscouts |achieve 8078/1
 Kill #5# Zandalari Warbringers |achieve 8078/2
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\Beat the Heat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\Beat the Heat",{
 condition_end="achieved(7273)",
 description="This guide will walk you through defeating Little Liuyang without anyone taking damage from a Flame Wall in the Arena of Annihilation scenario.",
 },[[
@@ -1193,7 +1193,7 @@ Avoid his flame wall at all costs during this fight |achieve 7273
 step
 Congratulations, you have earned the Beat the Heat achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\Bubbletrapped!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\Bubbletrapped!",{
 condition_end="achieved(7989)",
 description="This guide will walk you through aiding the construction of the Jinyu defenses in the scenario, 'A Little Patience'.",
 },[[
@@ -1211,7 +1211,7 @@ Defend the camp while the defenses are constructed |achieve 7989 |goto A Little 
 step
 Congratulations, you have earned the Bubbletrapped! achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\Cannonballer",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\Cannonballer",{
 condition_end="achieved(7990)",
 description="This guide will walk you through aiding in the construction of the Dwarf defenses in the scenario, 'A Little Patience'.",
 },[[
@@ -1229,7 +1229,7 @@ Defend the camp while the defenses are constructed |achieve 7990 |goto A Little 
 step
 Congratulations, you have earned the Cannonballer achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\Don't Shake the Keg",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\Don't Shake the Keg",{
 condition_end="achieved(7257)",
 description="This guide will walk you through defeating Borokhula the Destroyer in A Brewing Storm without getting hit by his Swamp Smash.",
 },[[
@@ -1254,7 +1254,7 @@ Defeat him without being hit by Swamp Smash at all |achieve 7257
 step
 Congratulations, you have earned the Don't Shake the Keg achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\Fancy Footwork",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\Fancy Footwork",{
 condition_end="achieved(7276)",
 description="This guide will walk you through defeating the Abomination of Anger in the Crypt of Forgotten Kings scenario without anyone taking damage from the red clouds.",
 },[[
@@ -1287,7 +1287,7 @@ Defeat the Abomination without taking damage from the red clouds that spawn |ach
 step
 Congratulations, you have earned the Fancy Footwork achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\Fight Anger wth Anger",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\Fight Anger wth Anger",{
 condition_end="achieved(8368)",
 description="This guide will walk you through defeating the Abomination of Anger in the Crypt of Forgotten Kings scenario with 20 stacks of Uncontrolled Anger.",
 },[[
@@ -1320,7 +1320,7 @@ Defeat the Abomination before reaching 20 stacks of Controlled Anger |achieve 83
 step
 Congratulations, you have earned the Fight Anger wth Anger achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\I Used To Love Them",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\I Used To Love Them",{
 condition_end="achieved(7992)",
 description="This guide will walk you through aiding in the construction of the Night Elf defenses in the scenario, 'A Little Patience'.",
 },[[
@@ -1338,7 +1338,7 @@ Defend the camp while the defenses are constructed |achieve 7992 |goto A Little 
 step
 Congratulations, you have earned the I Used To Love Them achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\In the Eye of the Tiger",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\In the Eye of the Tiger",{
 condition_end="achieved(7272)",
 description="This guide will walk you through defeating all final bosses - Cloudbender Kobo, Maki Waterblade, and Satay Byu - in the Arena of Annihilation scenario.",
 },[[
@@ -1378,7 +1378,7 @@ step
 Congratulations, you have earned the In the Eye of the Tiger achievement! |only if achieved(7272)
 You'll need to re-que again for the other bosses. |only if not achieved(7272)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\It's a Trap!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\It's a Trap!",{
 description="This guide will walk you through steping on a floor trap in the Crypt of Forgotten Kings scenario.",
 condition_end="achieved(7275)",
 },[[
@@ -1392,7 +1392,7 @@ achieve 7275
 step
 Congratulations, you have earned the It's a Trap! achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\No Egg Left Behind",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\No Egg Left Behind",{
 condition_end="achieved(7987)",
 description="This guide will walk you through destroying all remaining eggs before Broodmaster Noshi reaches 20% health in the Dagger in the Dark Scenario.",
 },[[
@@ -1429,7 +1429,7 @@ Kite Noshi around when he fixates on you to destroy all his eggs |achieve 7987 |
 step
 Congratulations, you have earned the No Egg Left Behind achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\Party of Six",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\Party of Six",{
 condition_end="achieved(7258)",
 description="This guide will walk you through finishing A Brewing Storm with all six Thunderpaw Guardians still alive.",
 },[[
@@ -1454,7 +1454,7 @@ Save all six Thunderpaw Guardians |achieve 7258
 step
 Congratulations, you have earned the Party of Six achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\The Few, the Proud, the Gob Squad",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\The Few, the Proud, the Gob Squad",{
 condition_end="achieved(8295)",
 description="This guide will walk you through completing the Secrets of Ragefire scenario without any member of the Gob Squad taking damage.",
 },[[
@@ -1513,7 +1513,7 @@ achieve 8295 |goto The Secrets of Ragefire/1 36.9,46.2
 step
 Congratulations, you have completed the The Few, the Proud, the Gob Squad achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\The Perfect Pour",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\The Perfect Pour",{
 condition_end="achieved(7261)",
 description="This guide will walk you through brewing the Boomer Brew without anyone in your party being hit by lightning during A Brewing Storm.",
 },[[
@@ -1530,7 +1530,7 @@ Complete the brewing process without being hit by lightning |achieve 7261
 step
 Congratulations, you have earned The Perfect Pour achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\Watery Grave",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\Watery Grave",{
 condition_end="achieved(7984)",
 description="This guide will walk you through killing 3 of the Darkhatched Lizard-Lord's reinforcements using his Water Jets ability in the Dagger in the Dark Scenario.",
 },[[
@@ -1570,7 +1570,7 @@ modelnpc Darkhatched Lizard-Lord##67263
 step
 Congratulations, you have earned the Watery Grave achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\We've Been Dancin'",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\We've Been Dancin'",{
 condition_end="achieved(7993)",
 description="This guide will walk you through aiding Master Brownstone in the construction of the Pandaren defenses in the scenario, 'A Little Patience'.",
 },[[
@@ -1588,7 +1588,7 @@ Defend the camp while the defenses are constructed |achieve 7993 |goto A Little 
 step
 Congratulations, you have earned the We've Been Dancin' achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\Which Came First?",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\Which Came First?",{
 condition_end="achieved(7991)",
 description="This guide will walk you through aiding in the construction of the Gnome defenses in the scenario, 'A Little Patience'.",
 },[[
@@ -1606,7 +1606,7 @@ Defend the camp while the defenses are constructed |achieve 7991 |goto A Little 
 step
 Congratulations, you have earned the Which Came First? achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\Yaungolian Barbecue",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\Mists of Pandaria\\Yaungolian Barbecue",{
 condition_end="achieved(6930)",
 description="This guide will walk you through completing the Brewmoon Festival scenario without any Bataari invaders setting the village on fire.",
 },[[
@@ -1623,7 +1623,7 @@ achieve 6930
 step
 Congratulations, you have earned the Yaungolian Barbecue achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\Queuing Spree",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\Queuing Spree",{
 condition_end="achieved(6943)",
 description="This guide will walk you through completing 100 scenarios.",
 },[[
@@ -1635,7 +1635,7 @@ Complete #100# scenarios |achieve 6943
 step
 Congratulations, you have earned the Queuing Spree achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battles\\Collect\\Pandaria Safari",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battles\\Collect\\Pandaria Safari",{
 condition_end="achieved(6589)",
 description="Catch every battle pet in Pandaria.",
 },[[
@@ -1865,7 +1865,7 @@ modelnpc Feverbite Hatchling##65054
 step
 Congratulations, you have earned the Pandaria Safari achievement! |only if achieved(6589)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Collection Achievements\\Mounts\\Grand Expedition Yak",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Collection Achievements\\Mounts\\Grand Expedition Yak",{
 condition_end="achieved(7386)",
 description="This guide will walk you through obtaining the Grand Expedition Yak from Uncle Bigpocket in Kun-Lai Summit.",
 },[[
@@ -1877,7 +1877,7 @@ learnmount Grand Expedition Yak##122708 |use Reins of the Grand Expedition Yak##
 step
 Congratulations, you have earned the Grand Expedition Yak achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Collection Achievements\\Mounts\\Mount Parade",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Collection Achievements\\Mounts\\Mount Parade",{
 condition_end="achieved(8302)",
 achieveid={7862},
 description="Obtain 200 mounts.",
@@ -1893,7 +1893,7 @@ Collect 200 mounts |achieve 8302
 step
 Congratulations, you have earned the Mount Parade achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Pandaria\\Pandaren Cuisine",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Pandaria\\Pandaren Cuisine",{
 condition_end="achieved(7329)",
 description="This guide will walk you through obtaining the Pandaren Cuisine achievement.",
 },[[
@@ -2035,7 +2035,7 @@ buy 1 Rice##74851 |n
 create 1 Green Curry Fish##124231,Cooking,1 total |n
 Eat the _Green Curry Fish_ you just created. |use Green Curry Fish##81410 |achieve 7329/16 |goto 53.6,51.2
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Pandaren Delicacies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Pandaren Delicacies",{
 condition_end="achieved(7330)",
 description="Sample 24 foods exclusive to Pandaria.",
 },[[
@@ -2376,7 +2376,7 @@ Earn the Pandaren Delicacies Achievement |achieve 7330
 step
 Congratulations, you have earned the Pandaren Delicacies Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Shadow Hopper",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Shadow Hopper",{
 condition_end="achieved(7289)",
 description="This guide will walk you through obtaining the Shadow Hopper achievement.",
 },[[
@@ -2393,7 +2393,7 @@ label "dailies"
 This achievement requires you to be _Revered_ with _The Order of the Cloud Serpent_
 In order to become Revered with the Order of the Cloud Serpent, refer to the Zygor Guides Reputation section
 confirm |next |only if rep("Order of the Cloud Serpent")<Revered and not ZGV.guidesets['ReputationsHMOP']
-confirm |next "Zygor's Horde Reputation Guides\\Mists of Pandaria\\The Order of the Cloud Serpent" |only if rep("Order of the Cloud Serpent")<Revered and ZGV.guidesets['ReputationsHMOP']
+confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Order of the Cloud Serpent" |only if rep("Order of the Cloud Serpent")<Revered and ZGV.guidesets['ReputationsHMOP']
 only if rep("Order of the Cloud Serpent")<Revered
 step
 talk Elder Anli##58564
@@ -2408,7 +2408,7 @@ Juggle a bouncy ball with a baby serpent 25 consecutive times |achieve 7289
 step
 Congratulations, you have earned the Shadow Hopper achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Yak Attack",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Yak Attack",{
 condition_end="achieved(7288)",
 description="This guide will walk you through obtaining the Yak Attack achievement.",
 },[[
@@ -2426,7 +2426,7 @@ Kill 15 Sra'thik Attackers in 5 seconds |achieve 7288 |goto Townlong Steppes 41.
 step
 Congratulations, you have earned the Yak Attack achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Lost and Found",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Lost and Found",{
 condition_end="achieved(7281)",
 description="This guide will walk you through obtaining The Lost And Found Achievement",
 },[[
@@ -2437,7 +2437,7 @@ collect Wodin's Mantid Shaker##85776 |goto The Jade Forest 39.4,7.3
 step
 Congratulations, you have earned the Lost and Found Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Wanderers, Dreamers, and You",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Wanderers, Dreamers, and You",{
 condition_end="achieved(7518)",
 description="This guide will walk you through obtaining the Wanderers, Dreamers, and You Achievement",
 },[[
@@ -2450,7 +2450,7 @@ Attend either the opening or closing ceremony of the Wanderer's Festival |achiev
 step
 Congratulations, you have obtained the Wanderers, Dreamers, and You achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Restore Balance",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Restore Balance",{
 condition_end="achieved(7381)",
 description="This guide will walk you through obtaining the Restore Balance Achievement",
 },[[
@@ -2461,7 +2461,7 @@ click Broken Incense Burner |achieve 7381 |goto The Jade Forest 34.1,33.5
 step
 Congratulations, you have obtained the Restore Balance achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Is Another Man's Treasure",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Is Another Man's Treasure",{
 condition_end="achieved(7284)",
 description="This guide will walk you through obtaining the Is Another Man's Treasure Achievement",
 },[[
@@ -2568,7 +2568,7 @@ step
 step
 Congratulations, you have obtained the Another Man's Treasure achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Savior of Stoneplow",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Savior of Stoneplow",{
 condition_end="achieved(7502)",
 description="Defeat the Ik'Thik Colossus.",
 },[[
@@ -2579,14 +2579,14 @@ Earn the Savior of Stoneplow achievement. |achieve 7502
 step
 Congratulations, you have earned the _Savior of Stoneplow_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Green Acres",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Green Acres",{
 condition_end="achieved(7292)",
 description="This guide will walk you through obtaining the Green Acres Achievement.",
 },[[
 step
 #include "tillers_prequests"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Till the Break of Dawn",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Till the Break of Dawn",{
 condition_end="achieved(7293)",
 description="This guide will walk you through obtaining the Green Acres Achievement.",
 },[[
@@ -2604,7 +2604,7 @@ Plant as many crops as your farm can hold. Each crop harvest will work toward th
 Successfully harvest 100 crops |achieve 7293/1
 Click here to go back to the beginning of the crop section. |next "cheevo" |confirm
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Ain't Lost No More",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Ain't Lost No More",{
 condition_end="achieved(7296)",
 description="This guide will walk you through obtaining the Ain't Lost No More Achievement.",
 },[[
@@ -2626,8 +2626,8 @@ Routing to proper section |next "clickroute" |only if ZGV.guidesets['Reputations
 Routing to proper section |next "exalted" |only if default
 step
 label "clickroute"
-Click here to be taken to the Reputation guide to help you become _Exalted_ with _The Tillers_. |confirm |next "Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\The Tillers Dailies" |only if ZGV.guidesets['DailiesHMOP']
-Click here to be taken to the Dailies guide to help you become _Exalted_ with _The Tillers_. |confirm |next "Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Tillers" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
+Click here to be taken to the Reputation guide to help you become _Exalted_ with _The Tillers_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Tillers Dailies" |only if ZGV.guidesets['DailiesHMOP']
+Click here to be taken to the Dailies guide to help you become _Exalted_ with _The Tillers_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Tillers" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
 |confirm |next |only if default
 step
 label "done"
@@ -2672,14 +2672,14 @@ turnin The Heartland Legacy##31315 |goto Valley of the Four Winds 53.8,47.4
 step
 Congratulations, you have earned the Ain't Lost No More achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Proven Strength",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Proven Strength",{
 condition_end="achieved(7297)",
 description="This guide will walk you through obtaining the Ain't Lost No More Achievement.",
 },[[
 step
 For this achievement you must be at least _Revered_ with _The Shado-Pan_.
-Click here to go to the Reputations guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Shado-Pan" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
-Click here to go to the Dailies guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesHMOP']
+Click here to go to the Reputations guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Shado-Pan Assault" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
+Click here to go to the Dailies guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesHMOP']
 |confirm |next |only if default
 |only if rep("Shado-Pan")<Revered
 step
@@ -2792,14 +2792,14 @@ step
 step
 Congratulations, you have earned the Proven Strength achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Amber is the Color of My Energy",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Amber is the Color of My Energy",{
 condition_end="achieved(7312)",
 description="This guide will walk you through obtaining the Amber is the Color of My Energy Achievement.",
 },[[
 step
 For this achievement you must be at least _Revered_ with _The Klaxxi_ and completed all of the Dread Wastes Leveling/Loremaster quests.
-Click here to go to the Reputations guide to gain reputation with _The Klaxxi_. |confirm |next "Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Klaxxi" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
-Click here to go to the Dailies guide to gain reputation with _The Klaxxi_. |confirm |next "Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\The Klaxxi Dailies" |only if ZGV.guidesets['DailiesHMOP']
+Click here to go to the Reputations guide to gain reputation with _The Klaxxi_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Klaxxi" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
+Click here to go to the Dailies guide to gain reputation with _The Klaxxi_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Klaxxi Dailies" |only if ZGV.guidesets['DailiesHMOP']
 |confirm |next |only if default
 |only if rep("The Klaxxi")<Revered
 step
@@ -2959,14 +2959,14 @@ turnin Dropping Our Signal##31439 |goto 56.3,58.2
 step
 Congratulations, you have earned the _Amber is the Color of My Energy_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Defender of Gods",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Defender of Gods",{
 condition_end="achieved(7310)",
 description="This guide will walk you through obtaining the Defender of Gods Achievement.",
 },[[
 step
 For this achievement you must be at least _Revered_ with _The Shado-Pan_.
-Click here to go to the Reputations guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Shado-Pan" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
-Click here to go to the Dailies guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesHMOP']
+Click here to go to the Reputations guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Shado-Pan Assault" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
+Click here to go to the Dailies guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesHMOP']
 |confirm |next |only if default
 |only if rep("Shado-Pan")<Revered
 step
@@ -2998,14 +2998,14 @@ turnin Surprise Attack!##31277 |goto 49.0,70.6
 step
 Congratulations, you have obtained the _Defender of Gods_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\How to Strain Your Dragon",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\How to Strain Your Dragon",{
 condition_end="achieved(7290)",
 description="This guide will walk you through obtaining the How to Strain Your Dragon Achievement.",
 },[[
 step
 For this achievement you must be at least _Revered_ with _The Order of the Cloud Serpent_.
-Click here to go to the Reputations guide to gain reputation with _The Order of the Cloud Serpent_. |confirm |next "Zygor's Horde Reputation Guides\\Mists of Pandaria\\The Order of the Cloud Serpent" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
-Click here to go to the Dailies guide to gain reputation with _The Order of the Cloud Serpent_. |confirm |next "Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\The Order of the Cloud Serpent Dailies" |only if ZGV.guidesets['DailiesHMOP']
+Click here to go to the Reputations guide to gain reputation with _The Order of the Cloud Serpent_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Order of the Cloud Serpent" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
+Click here to go to the Dailies guide to gain reputation with _The Order of the Cloud Serpent_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Order of the Cloud Serpent Dailies" |only if ZGV.guidesets['DailiesHMOP']
 |confirm |next |only if default
 |only if rep("Order of the Cloud Serpent")<Revered
 step
@@ -3036,14 +3036,14 @@ step
 step
 Congratulations, you have obtained the _How to Strain Your Dragon_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\In a Trail of Smoke",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\In a Trail of Smoke",{
 condition_end="achieved(7291)",
 description="This guide will walk you through obtaining the In a Trail of Smoke Achievement.",
 },[[
 step
 For this achievement you must be at least _Revered_ with _The Order of the Cloud Serpent_.
-Click here to go to the Reputations guide to gain reputation with _The Order of the Cloud Serpent_. |confirm |next "Zygor's Horde Reputation Guides\\Mists of Pandaria\\The Order of the Cloud Serpent" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
-Click here to go to the Dailies guide to gain reputation with _The Order of the Cloud Serpent_. |confirm |next "Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\The Order of the Cloud Serpent Dailies" |only if ZGV.guidesets['DailiesHMOP']
+Click here to go to the Reputations guide to gain reputation with _The Order of the Cloud Serpent_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Order of the Cloud Serpent" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
+Click here to go to the Dailies guide to gain reputation with _The Order of the Cloud Serpent_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Order of the Cloud Serpent Dailies" |only if ZGV.guidesets['DailiesHMOP']
 |confirm |next |only if default
 |only if rep("Order of the Cloud Serpent")<Revered
 step
@@ -3077,14 +3077,14 @@ step
 step
 Congratulations, you have obtained the _In a Trail of Smoke_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Dog Pile",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Dog Pile",{
 condition_end="achieved(7320)",
 description="This guide will walk you through obtaining the Dog Pile Achievement.",
 },[[
 step
 For this achievement you must be at least _Honored_ with _The Golden Lotus_.
-Click here to go to the Reputations guide to gain reputation with _The Golden Lotus_. |confirm |next "Zygor's Horde Reputation Guides\\Mists of Pandaria\\The Golden Lotus" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
-Click here to go to the Dailies guide to gain reputation with _The Golden Lotus_. |confirm |next "Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\The Golden Lotus Dailies" |only if ZGV.guidesets['DailiesHMOP']
+Click here to go to the Reputations guide to gain reputation with _The Golden Lotus_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Golden Lotus" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
+Click here to go to the Dailies guide to gain reputation with _The Golden Lotus_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Golden Lotus Dailies" |only if ZGV.guidesets['DailiesHMOP']
 |confirm |next |only if default
 |only if rep("Golden Lotus")<Honored
 step
@@ -3107,7 +3107,7 @@ Defeat 10 Shado-Pan Trainees within 10 seconds |achieve 7320 |goto 19.7,74.2
 step
 Congratulations, you have obtained the _Dog Pile_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Finish Them!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Finish Them!",{
 condition_end="achieved(7286)",
 description="Defeat Brewmaster Chani, The Streetfighter, Clever Ashyo, Ken-Ken\nKang Bramblestaff, The Wrestler, Master Boom Boom, Master Windfur\nHackiss, Healiss and Tankiss at the Temple of the White Tiger.",
 },[[
@@ -3116,8 +3116,8 @@ label rev
 This achievement is mostly luck based, as the quest hub may not always be available.
 Even when the quest hub is available, the NPCs you need may not be.
 Refer to our _August Celestial_ Daily guide and look for the _Temple of the White Tiger_ hub to be available.
-Click here to go to the Reputations guide to gain reputation with _The August Celestials_. |confirm |next "Zygor's Horde Reputation Guides\\Mists of Pandaria\\The August Celestials" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
-Click here to go to the Dailies guide to gain reputation with _The August Celestials_. |confirm |next "Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\The August Celestials Dailies" |only if ZGV.guidesets['DailiesHMOP']
+Click here to go to the Reputations guide to gain reputation with _The August Celestials_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The August Celestials" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
+Click here to go to the Dailies guide to gain reputation with _The August Celestials_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The August Celestials Dailies" |only if ZGV.guidesets['DailiesHMOP']
 |confirm |next |only if default
 step
 label tiger
@@ -3240,11 +3240,11 @@ step
 talk Lin Tenderpaw##60981
 turnin The Torch of Strength##31492 |goto Kun-Lai Summit 68.5,56.5
 |next tiger |only if not achieved(7286)
-|next |only if default |only if not achieved(7286)
+|next |only if default
 step
 Congratulations, you have earned the _Finish Them!_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Spreading the Warmth!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Spreading the Warmth!",{
 condition_end="achieved(7321)",
 description="Kill 60 Krik'Thik hivlings with a single Shadow Pan touch.",
 },[[
@@ -3258,8 +3258,8 @@ label "golden2"
 step
 label "revered"
 For this achievement you must be at least _Revered_ with _The Golden Lotus_.
-Click here to go to the Reputations guide to gain reputation with _The Golden Lotus_. |confirm |next "Zygor's Horde Reputation Guides\\Mists of Pandaria\\The Golden Lotus" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
-Click here to go to the Dailies guide to gain reputation with _The Golden Lotus_. |confirm |next "Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\The Golden Lotus Dailies" |only if ZGV.guidesets['DailiesHMOP']
+Click here to go to the Reputations guide to gain reputation with _The Golden Lotus_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Golden Lotus" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
+Click here to go to the Dailies guide to gain reputation with _The Golden Lotus_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Golden Lotus Dailies" |only if ZGV.guidesets['DailiesHMOP']
 You will need to continue through the dailies with _Golden Lotus_ to get your reputation to _Revered_. |only if default
 |confirm |next |only if default
 step
@@ -3281,7 +3281,7 @@ Kill 80 Krik'thik Hivelings |q 30243/1 |goto Vale of Eternal Blossoms 3.9,51.7
 step
 Congratulations, you have earned the _Spreading the Warmth_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Fire in the Yaung-hole!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Fire in the Yaung-hole!",{
 condition_end="achieved(7309)",
 description="kill 15 or more Gai-Cho combatants with a single Highly Explosive Oil Barrel",
 },[[
@@ -3311,7 +3311,7 @@ If you run out of oil, you can find more here [63.4,43.3]
 step
 Congratulations, you have achieved the _Fire in the Yaung-hole_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Collateral Damage",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Collateral Damage",{
 condition_end="achieved(7323)",
 description="Use a Mogu Statue's Crushing Slam to kill another opponent.",
 },[[
@@ -3327,13 +3327,13 @@ Be sure that the Mogu Statue that is with you doesn't use _Crushing Stomp_ to ki
 step
 Congratulations, you have earned the _Collateral Damage_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Test Drive",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Test Drive",{
 condition_end="achieved(7314)",
 description="Grow a Kunchong to full size and take it on a rampage.",
 },[[
 step
 In order to unlock the dailies required for this achievement, you will need to complete the _Dread Wastes_ Leveling guide.
-Click here to be taken to the Dread Wastes leveling guide to work on this achievement. |confirm |next "Zygor's Alliance Leveling Guides\\Pandaria 85-90\\Dread Wastes (89-90)" |only if ZGV.guidesets['LevelingAMOP']
+Click here to be taken to the Dread Wastes leveling guide to work on this achievement. |confirm |next "Zygor's Leveling Guides\\Pandaria 85-90\\Dread Wastes (89-90)" |only if ZGV.guidesets['LevelingAMOP']
 |confirm
 |only if not completedq(31359)
 step
@@ -3350,7 +3350,7 @@ step
 talk Kaz'tik the Manipulator##63758
 turnin Rampage Against the Machine##31808 |goto Dread Wastes 54.3,35.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Every Day I'm Pand-a-ren",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Every Day I'm Pand-a-ren",{
 condition_end="achieved(7285)",
 description="Complete 25 daily quests in pandaria in a single daily reset period.",
 },[[
@@ -3417,7 +3417,7 @@ Once the prequests are completed, you can refer to our daily guides to go throug
 step
 Congratulations, you have earned the _Every Day I'm Pand-a-ren_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\A Taste of Things to Come",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\A Taste of Things to Come",{
 condition_end="achieved(7294)",
 description="Successfully harvest your first special crop",
 },[[
@@ -3434,8 +3434,8 @@ label "preq"
 step
 label "revered"
 Once the prequests are completed, refer to our Tillers daily guide to work your reputation up to _Revered_.
-Click here to go to the Reputations guide to gain reputation with _The Tillers_. |confirm |next "Zygor's Horde Reputation Guides\\Mists of Pandaria\\The Tillers" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
-Click here to go to the Dailies guide to gain reputation with _The Tillers_. |confirm |next "Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\The Tillers" |only if ZGV.guidesets['DailiesHMOP']
+Click here to go to the Reputations guide to gain reputation with _The Tillers_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Tillers" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
+Click here to go to the Dailies guide to gain reputation with _The Tillers_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Tillers" |only if ZGV.guidesets['DailiesHMOP']
 You will need to continue through the dailies with _The Tillers_ to get your reputation to _Revered_. |only if default
 confirm |next |only if default
 step
@@ -3462,7 +3462,7 @@ achieve 7294
 step
 Congratulations, you have earned the _A Taste of Things to Come_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Listen to the Drunk Fish",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Listen to the Drunk Fish",{
 condition_end="achieved(7295)",
 description="Harvest every vegetable on a high-forecast day.",
 },[[
@@ -3479,8 +3479,8 @@ label "preq"
 step
 label "revered"
 Once the prequests are completed, refer to our Tillers daily guide to work your reputation up to _Revered_.
-Click here to go to the Reputations guide to gain reputation with _The Tillers_. |confirm |next "Zygor's Horde Reputation Guides\\Mists of Pandaria\\The Tillers" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
-Click here to go to the Dailies guide to gain reputation with _The Tillers_. |confirm |next "Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\The Tillers" |only if ZGV.guidesets['DailiesHMOP']
+Click here to go to the Reputations guide to gain reputation with _The Tillers_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Tillers" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
+Click here to go to the Dailies guide to gain reputation with _The Tillers_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Tillers" |only if ZGV.guidesets['DailiesHMOP']
 You will need to continue through the dailies with _The Tillers_ to get your reputation to _Revered_. |only if default
 confirm |next |only if default
 step
@@ -3500,14 +3500,14 @@ Harvest Plump White Turnip |achieve 7295/7 |goto Valley of the Four Winds 53.6,5
 step
 Congratulations, you have earned the _Listen to the Drunk Fish_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Getting Around with the Shado-Pan",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Getting Around with the Shado-Pan",{
 condition_end="achieved(7298)",
 description="Complete 15 Shado-Pan daily quests with each of the Shadow-Pan Heroes.",
 },[[
 step
 For this achievement you must be at least _Revered_ with _The Shado-Pan_.
-Click here to go to the Reputations guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Shado-Pan" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
-Click here to go to the Dailies guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesHMOP']
+Click here to go to the Reputations guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Shado-Pan Assault" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
+Click here to go to the Dailies guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesHMOP']
 confirm |next |only if default
 only if rep("Shado-Pan")<Revered
 step
@@ -3522,14 +3522,14 @@ Complete daily quests with Yalia Sagewhisper |achieve 7298/7
 Complete daily quests with Tenwu of the Red Smoke |achieve 7298/8
 Complete daily quests with Lao-Chin the Iron Belly |achieve 7298/9
 You will need to refer to our Shado-Pan Daily guide to gain rep with them.
-Click here to go to the Reputations guide to work toward this achievement with _The Shado-Pan_. |confirm |next "Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Shado-Pan" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
-Click here to go to the Dailies guide to work toward this achievement with _The Shado-Pan_. |confirm |next "Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesHMOP']
+Click here to go to the Reputations guide to work toward this achievement with _The Shado-Pan_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Shado-Pan Assault" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
+Click here to go to the Dailies guide to work toward this achievement with _The Shado-Pan_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesHMOP']
 Note that when you turn in quests, be sure to dismount first.
 achieve 7298
 step
 Congratulations, you have earned the _Getting Around with the Shado-Pan_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Loner and a Rebel",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Loner and a Rebel",{
 condition_end="achieved(7299)",
 description="Complete each set of the Shado-Pan daily quests without a Shado-Pan companion of leaving the Townlong Steppes.",
 },[[
@@ -3538,8 +3538,8 @@ In order to earn this achievement you will need to complete every set of Shado-P
 While going through the dailies guides to complete the requirements for this achievement be sure you _Do Not_ pick up a companion.
 confirm
 step
-Click here to go to the Reputations guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Shado-Pan" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
-Click here to go to the Dailies guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesHMOP']
+Click here to go to the Reputations guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Shado-Pan Assault" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
+Click here to go to the Dailies guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesHMOP']
 confirm |next |only if default
 step
 label golden2
@@ -3551,7 +3551,7 @@ achieve 7299
 step
 Congratulations, you have earned the _Loner and a Rebel_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Silent Assassin",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Silent Assassin",{
 condition_end="achieved(7307)",
 description="Complete a full set of Shado-Pan Wu Kao daily quests while only killing the exact number of mantid required.",
 },[[
@@ -3569,13 +3569,13 @@ _Fumigation_
 _Target of Opportunity: Sra'thik Swarmlord_
 _Friends, Not Food!_
 Once you complete the quest _REMEMBER TO DISMOUNT_ before turning either of the quests in.
-Click here to go to the Reputations guide to attempt this achievement. |confirm |next "Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Shado-Pan" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
-Click here to go to the Dailies guide to attempt this achievement. |confirm |next "Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesHMOP']
+Click here to go to the Reputations guide to attempt this achievement. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Shado-Pan Assault" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
+Click here to go to the Dailies guide to attempt this achievement. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesHMOP']
 |achieve 7307
 step
 Congratulations, you have earned the _Silent Assassin_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Know Your Role",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Know Your Role",{
 condition_end="achieved(7308)",
 description="Complete each of the Shado-Pan Blackguard daily quests without taking any damage from monsters.",
 },[[
@@ -3629,7 +3629,7 @@ Cheng Bo! |achieve 7308/7
 step
 Congratulations, you have earned the _Know Your Role_ achievmeent.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Stay Klaxxi",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Stay Klaxxi",{
 condition_end="achieved(7313)",
 description="Complete 5 Klaxxi daily quests with each of the following buffs.",
 },[[
@@ -3654,13 +3654,13 @@ path	54.3,36.1	54.8,36.2	54.9,36.2
 path	54.6,36.0	54.4,35.8	54.4,36.2
 path	54.2,35.8	55.0,35.8
 Use the provided coordinates to find the cooresponding NPCs.
-Click here to go to the Reputations guide to gain reputation with _The Klaxxi_. |confirm |next "Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Klaxxi" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
-Click here to go to the Dailies guide to gain reputation with _The Klaxxi_. |confirm |next "Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\The Klaxxi Dailies" |only if ZGV.guidesets['DailiesHMOP']
+Click here to go to the Reputations guide to gain reputation with _The Klaxxi_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Klaxxi" |only if ZGV.guidesets['ReputationsHMOP'] and not ZGV.guidesets['DailiesHMOP']
+Click here to go to the Dailies guide to gain reputation with _The Klaxxi_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Klaxxi Dailies" |only if ZGV.guidesets['DailiesHMOP']
 Complete 5 dailies with one buff.
 step
 Congratulations, you have earned the _Stay Klaxxi_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Over Their Heads",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Over Their Heads",{
 condition_end="achieved(7316)",
 description="Bomb the following targets during the daily quest 'Dark Skies'.",
 },[[
@@ -3738,7 +3738,7 @@ Essence of Terror |achieve 7316/15
 step
 Congratulations, you have earned the _Over Their Heads_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\One Many Army",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\One Many Army",{
 condition_end="achieved(7317)",
 description="Defeat the following powerful enemies within the vale of eternal blossoms.",
 },[[
@@ -3801,7 +3801,7 @@ kill Vyraxxis##63977 |achieve 7317/16 |goto Vale of Eternal Blossoms 8.0,33.4
 step
 Congratulations, you have earned the _One Many Army_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Ready For Raiding 3",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Ready For Raiding 3",{
 condition_end="achieved(7319)",
 description="Complete the following survival ring challenges without taking any damage.",
 },[[
@@ -3824,7 +3824,7 @@ Use our _Golden Lotus_ Daily guide to see if _Survival Ring: Blades_ and Surviva
 step
 Congratulations, you have earned the _Ready For Raiding 3_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Roll Club",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Roll Club",{
 condition_end="achieved(7322)",
 description="Complete the Serpent Spine roll course in 70 seconds or less.",
 },[[
@@ -3849,7 +3849,7 @@ Avoid all oil slicks if when possible.
 step
 Congratulations, you have earned the _Roll Club_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Champion of Chi-Ji",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Champion of Chi-Ji",{
 condition_end="achieved(7287)",
 description="Defeat every challenger at the cradle of Chi-ji.",
 },[[
@@ -4016,7 +4016,7 @@ step
 label "achieve"
 Congratulations, you have obtained the _Champion of Chi-Ji_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quests\\The Loremaster\\Loremaster of Pandaria",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\The Loremaster\\Loremaster of Pandaria",{
 condition_end="achieved(6541)",
 description="Complete all the storyline achievements in all the zones of the game.",
 },[[
@@ -4024,16 +4024,16 @@ step
 Use the Pandaria Leveling Guides to complete Loremaster:
 |tip The Leveling guides cover all required questlines for Loremaster.
 |tip Click one of the lines below to load the Leveling guide for that zone.
-Jade Forest Quests |achieve 6534 |loadguide "Zygor's Horde Leveling Guides\\Pandaria (85-90)\\The Jade Forest (85-86)"
-Valley of the Four Winds Quests |achieve 6301 |loadguide "Zygor's Horde Leveling Guides\\Pandaria (85-90)\\Valley of the Four Winds (86-87)"
-Townlong Steppes Quests |achieve 6539 |loadguide "Zygor's Horde Leveling Guides\\Pandaria (85-90)\\Townlong Steppes (88-89)"
-Dread Wastes Quests |achieve 6540 |loadguide "Zygor's Horde Leveling Guides\\Pandaria (85-90)\\Dread Wastes (89-90)"
-Krasarang Wilds Quests |achieve 6536 |loadguide "Zygor's Horde Leveling Guides\\Pandaria (85-90)\\Krasarang Wilds (87)"
-Kun-Lai Summit Quests |achieve 6538 |loadguide "Zygor's Horde Leveling Guides\\Pandaria (85-90)\\Kun-Lai Summit (87-88)"
+Jade Forest Quests |achieve 6534 |loadguide "Zygor's Leveling Guides\\Pandaria (85-90)\\The Jade Forest (85-86)"
+Valley of the Four Winds Quests |achieve 6301 |loadguide "Zygor's Leveling Guides\\Pandaria (85-90)\\Valley of the Four Winds (86-87)"
+Townlong Steppes Quests |achieve 6539 |loadguide "Zygor's Leveling Guides\\Pandaria (85-90)\\Townlong Steppes (88-89)"
+Dread Wastes Quests |achieve 6540 |loadguide "Zygor's Leveling Guides\\Pandaria (85-90)\\Dread Wastes (89-90)"
+Krasarang Wilds Quests |achieve 6536 |loadguide "Zygor's Leveling Guides\\Pandaria (85-90)\\Krasarang Wilds (87)"
+Kun-Lai Summit Quests |achieve 6538 |loadguide "Zygor's Leveling Guides\\Pandaria (85-90)\\Kun-Lai Summit (87-88)"
 step
 Congratulations, you have _earned_ the _Loremaster of Pandaria_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Profession Achievements\\Cooking\\Master of the Grill",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Profession Achievements\\Cooking\\Master of the Grill",{
 condition_end="achieved(7300)",
 description="This guide will walk you through\nbecoming the Master of the Grill.",
 },[[
@@ -4062,7 +4062,7 @@ Earn the Master of the Grill achievement |achieve 7300
 step
 Congratulations, you have earned the Master of the Grill Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Profession Achievements\\Cooking\\Master of the Wok",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Profession Achievements\\Cooking\\Master of the Wok",{
 condition_end="achieved(7301)",
 description="This guide will walk you through\nbecoming the Master of the Wok.",
 },[[
@@ -4091,7 +4091,7 @@ Earn the Master of the Wok achievement |achieve 7301
 step
 Congratulations, you have earned the Master of the Wok Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Profession Achievements\\Cooking\\Master of the Pot",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Profession Achievements\\Cooking\\Master of the Pot",{
 condition_end="achieved(7302)",
 description="This guide will walk you through\nbecoming the Master of the Pot.",
 },[[
@@ -4120,7 +4120,7 @@ Earn the Master of the Pot achievement |achieve 7302
 step
 Congratulations, you have earned the Master of the Pot Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Profession Achievements\\Cooking\\Master of the Steamer",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Profession Achievements\\Cooking\\Master of the Steamer",{
 condition_end="achieved(7303)",
 description="This guide will walk you through\nbecoming the Master of the Steamer.",
 },[[
@@ -4149,7 +4149,7 @@ Earn the Master of the Steamer achievement |achieve 7303
 step
 Congratulations, you have earned the Master of the Steamer Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Profession Achievements\\Cooking\\Master of the Oven",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Profession Achievements\\Cooking\\Master of the Oven",{
 condition_end="achieved(7304)",
 description="This guide will walk you through\nbecoming the Master of the Oven.",
 },[[
@@ -4178,7 +4178,7 @@ Earn the Master of the Oven achievement |achieve 7304
 step
 Congratulations, you have earned the Master of the Oven Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Profession Achievements\\Cooking\\Master of the Brew",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Profession Achievements\\Cooking\\Master of the Brew",{
 condition_end="achieved(7305)",
 description="This guide will walk you through\nbecoming the Master of the Brew.",
 },[[
@@ -4207,7 +4207,7 @@ Earn the Master of the Brew achievement |achieve 7305
 step
 Congratulations, you have earned the Master of the Brew Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Profession Achievements\\Cooking\\Master of Pandaren Cooking",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Profession Achievements\\Cooking\\Master of Pandaren Cooking",{
 condition_end="achieved(7306)",
 description="This guide will walk you through\nbecoming the Master of Pandaren Cooking.",
 },[[
@@ -4235,7 +4235,7 @@ Earn the Master of Pandaren Cooking achievement |achieve 7306
 step
 Congratulations, you have earned the Master of Pandaren Cooking Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Profession Achievements\\Cooking\\Now I Am the Master",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Profession Achievements\\Cooking\\Now I Am the Master",{
 condition_end="achieved(7325)",
 description="This guide will walk you through the\nachievement Now I Am the Master.",
 },[[
@@ -4284,7 +4284,7 @@ You have reached the end of the dailies for today. |only if not achieved(7306)
 Click here to go back to the beginning of the dailies. |confirm |next "nomi" |only if not achieved(7306)
 Congratulations, you have achieved the _Now I Am the Master_ achievement! |only if achieved(7306)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Profession Achievements\\Cooking\\The Pandaren Gourmet",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Profession Achievements\\Cooking\\The Pandaren Gourmet",{
 condition_end="achieved(7326)",
 description="This guide will walk you through\nthe Pandaren Gourmet achievement.\nThis guide consists of 2 achievements.",
 },[[
@@ -4534,7 +4534,7 @@ step
 label "end"
 Congratulations, you have achieved the _Pandaren Gourmet_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Profession Achievements\\Cooking\\Ironpaw Chef",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Profession Achievements\\Cooking\\Ironpaw Chef",{
 condition_end="achieved(7328)",
 achieveid={1795,1796,1797,1798,1799,5471},
 description="This guide will show you how to learn 240 cooking recipes.",
@@ -4542,7 +4542,7 @@ description="This guide will show you how to learn 240 cooking recipes.",
 step
 There are 47 Recipes here to help complete your Ironpaw Chef Achievement.
 |confirm
-If you need the previous 200 Recipes, click here to load the Iron Chef Guide |confirm |next "Zygor's Horde Achievements Guides\\Profession Achievements\\Cooking\\Iron Chef"
+If you need the previous 200 Recipes, click here to load the Iron Chef Guide |confirm |next "Zygor's Achievements Guides\\Profession Achievements\\Cooking\\Iron Chef"
 step
 #include "trainer_Cooking_MoP"
 learn Perfectly Cooked Instant Noodles##125067
@@ -4620,7 +4620,7 @@ buy Recipe: Spicy Vegetable Chips##74658 |n |goto Valley of the Four Winds 53.2,
 learn Spicy Salmon##125120 |goto Valley of the Four Winds 53.2,51.6
 learn Spicy Vegetable Chips##125123 |use Recipe: Spicy Vegetable Chips##74658 |goto Valley of the Four Winds 53.2,51.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Profession Achievements\\Fishing\\The Pandarian Angler",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Profession Achievements\\Fishing\\The Pandarian Angler",{
 condition_end="achieved(7611)",
 description="This guide will walk you through\nThe Pandarian Angler",
 },[[
@@ -4679,7 +4679,7 @@ Use your Fishing skill to fish in the water here.  |cast Fishing##131474
 collect Jewel Danio##74863 |goto Vale of Eternal Blossoms/0 20.3,17.6
 |tip Fish in the Jewel Danio Schools to catch this.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\Hydrophobia",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeon Achievements\\Hydrophobia",{
 condition_end="achieved(6460)",
 description="You will need a Gear Score of 440\nHeroic Temple of the Jade Serpent",
 },[[
@@ -4700,7 +4700,7 @@ Earn the _Hydrophobia_ achievement |achieve 6460
 step
 Congratulations, you have earned the Hydrophobia Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\Cleaning Up",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeon Achievements\\Cleaning Up",{
 condition_end="achieved(6475)",
 description="You will need a Gear Score of 440\nHeroic Temple of the Jade Serpent",
 },[[
@@ -4719,7 +4719,7 @@ Earn the _Cleaning Up_ achievement |achieve 6475
 step
 Congratulations, you  have earned the Cleaning Up Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\Seeds of Doubt",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeon Achievements\\Seeds of Doubt",{
 condition_end="achieved(6671)",
 description="You will need a Gear Score of 440\nHeroic Temple of the Jade Serpent",
 },[[
@@ -4739,7 +4739,7 @@ Earn the _Seeds of Doubt_ achievement |achieve 6671
 step
 Congratulations, you  have earned the _Seeds of Doubt_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\Hopocalypse Now!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeon Achievements\\Hopocalypse Now!",{
 condition_end="achieved(6420)",
 description="You will need a Gear Score of 440\nHeroic Stormstout Brewery",
 },[[
@@ -4758,7 +4758,7 @@ Earn the _Hopocalypse Now!_ achievement |achieve 6420
 step
 Congratulations, you have earned the Hopocalypse Now! Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\Keep Rollin' Rollin' Rollin'",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeon Achievements\\Keep Rollin' Rollin' Rollin'",{
 condition_end="achieved(6089)",
 description="You will need a Gear Score of 440\nHeroic Stormstout Brewery",
 },[[
@@ -4777,7 +4777,7 @@ Earn the _Keep Rollin' Rollin' Rollin'_ |achieve 6089
 step
 Congratulations, you have earned the Keep Rollin' Rollin' Rollin' Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\How Did He Get Up There?",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeon Achievements\\How Did He Get Up There?",{
 condition_end="achieved(6400)",
 description="This achievement requires the instance Stormstout Brewery",
 },[[
@@ -4797,7 +4797,7 @@ Earn the _How Did He Get Up There?_ achievement |achieve 6400
 step
 Congratulations, you have earned the How Did He Get Up There? Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\Ling-Ting's Herbal Journey",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeon Achievements\\Ling-Ting's Herbal Journey",{
 condition_end="achieved(6402)",
 description="This achievement requires the instance Stormstout Brewery",
 },[[
@@ -4876,7 +4876,7 @@ Earn the Ling-Ting's Herbal Journey achievement |achieve 6402
 step
 Congratulations, you have earned the Ling-Ting's Herbal Journey Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\Glintrok N' Roll",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeon Achievements\\Glintrok N' Roll",{
 condition_end="achieved(6478)",
 description="You will need a Gear Score of 440\nHeroic Mogu'shan Palace",
 },[[
@@ -4892,7 +4892,7 @@ Earn the _Glintrok N' Roll_ achievement |achieve 6478
 step
 Congratulations, you have earned the Glintrok N' Roll Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\What Does This Button Do?",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeon Achievements\\What Does This Button Do?",{
 condition_end="achieved(6736)",
 description="You will need a Gear Score of 440\nHeroic Mogu'shan Palace",
 },[[
@@ -4913,7 +4913,7 @@ Earn the _What Does This Button Do?_ achievement |achieve 6736
 step
 Congratulations, you have earned the What Does This Button Do? Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\Respect",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeon Achievements\\Respect",{
 condition_end="achieved(6477)",
 description="You will need a Gear Score of 440\nHeroic Shado-Pan Monastery",
 },[[
@@ -4932,7 +4932,7 @@ Earn the _Respect_ achievement |achieve 6477
 step
 Congratulations, you have earned the Respect Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\The Obvious Solution",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeon Achievements\\The Obvious Solution",{
 condition_end="achieved(6472)",
 description="You will need a Gear Score of 440\nHeroic Shado-Pan Monastery",
 },[[
@@ -4948,7 +4948,7 @@ Earn _The Obvious Solution_ achievement |achieve 6472
 step
 Congratulations, you have earned The Obvious Solution Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\Hate Leads to Suffering",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeon Achievements\\Hate Leads to Suffering",{
 condition_end="achieved(6471)",
 description="You will need a Gear Score of 440\nHeroic Shado-Pan Monastery",
 },[[
@@ -4967,7 +4967,7 @@ Earn the _Hate Leads to Suffering_ achievement |achieve 6471
 step
 Congratulations, you have earned the Hate Leads to Suffering Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\Bomberman",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeon Achievements\\Bomberman",{
 condition_end="achieved(6479)",
 description="You will need a Gear Score of 440\nHeroic Gate of the Setting Sun",
 },[[
@@ -4987,7 +4987,7 @@ Earn the _Bomberman_ achievement |achieve 6479
 step
 Congratulations, you have earned the Bomberman Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\Mantid Swarm",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeon Achievements\\Mantid Swarm",{
 condition_end="achieved(6945)",
 description="You will need a Gear Score of 440\nHeroic Gate of the Setting Sun",
 },[[
@@ -5008,7 +5008,7 @@ Earn the _Mantid Swarm_ achievement |achieve 6945
 step
 Congratulations, you have earned the Mantid Swarm Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\Humane Society",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeon Achievements\\Humane Society",{
 condition_end="achieved(6684)",
 description="You will need a Gear Score of 440\nHeroic Scarlet Halls",
 },[[
@@ -5028,7 +5028,7 @@ Earn the _Humane Society_ achievement |achieve 6684
 step
 Congratulations, you have earned the Humane Society Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\Mosh Pit",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeon Achievements\\Mosh Pit",{
 condition_end="achieved(6427)",
 description="You will need a Gear Score of 440\nHeroic Scarlet Halls",
 },[[
@@ -5051,7 +5051,7 @@ Earn the _Mosh Pit_ achievement |achieve 6427
 step
 Congratulations, you have earned the Mosh Pit achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\Burning Man",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeon Achievements\\Burning Man",{
 condition_end="achieved(6928)",
 description="You will need a Gear Score of 440\nHeroic Scarlet Monastery",
 },[[
@@ -5071,7 +5071,7 @@ Earn the _Burning Man_ achievement |achieve 6928
 step
 Congratulations, you have earned the Burning Man Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\And Stay Dead",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeon Achievements\\And Stay Dead",{
 condition_end="achieved(6929)",
 description="You will need a Gear Score of 440\nHeroic Scarlet Monastery",
 },[[
@@ -5095,7 +5095,7 @@ Earn the _And Stay Dead!_ achievement |achieve 6929
 step
 Congratulations, you have earned the And Stay Dead! Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\Empowered Spiritualist",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeon Achievements\\Empowered Spiritualist",{
 condition_end="achieved(6946)",
 description="You will need a Gear Score of 440\nHeroic Scarlet Monastery",
 },[[
@@ -5115,7 +5115,7 @@ Earn the _Empowered Spiritualist_ achievement |achieve 6946
 step
 Congratulations, you have earned the Empowered Spiritualist Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\Attention to Detail",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeon Achievements\\Attention to Detail",{
 condition_end="achieved(6531)",
 description="You will need a Gear Score of 440\nHeroic Scholomance",
 },[[
@@ -5133,7 +5133,7 @@ Earn the _Attention to Detail_ achievement |achieve 6531
 step
 Congratulations, you have earned the Attention to Detail Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\Rattle No More",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeon Achievements\\Rattle No More",{
 condition_end="achieved(6394)",
 description="You will need a Gear Score of 440\nHeroic Scholomance",
 },[[
@@ -5153,7 +5153,7 @@ Earn the _Rattle No More_ achievement |achieve 6394
 step
 Congratulations, you have earned the Rattle No More Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\Sanguinarian",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeon Achievements\\Sanguinarian",{
 condition_end="achieved(6396)",
 description="You will need a Gear Score of 440\nHeroic Scholomance",
 },[[
@@ -5176,7 +5176,7 @@ Earn the _Sanguinarian_ achievement |achieve 6396
 step
 Congratulations, you have earned the Sanguinarian Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\A Brewing Storm",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeon Achievements\\A Brewing Storm",{
 author="support@zygorguides.com",
 condition_end="achieved(7252)",
 description="This guide will walk you through the A Brewing Storm Achievement.\nYou must be level 90 for this achievement.",
@@ -5203,7 +5203,7 @@ kill Borokhula the Destroyer##58739  |goto 30.2,68.3
 step
 Congratulations, you have earned the A Brewing Storm Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\Arena of Annihilation",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeon Achievements\\Arena of Annihilation",{
 condition_end="achieved(7271)",
 description="This guide will help you earn the Arena of Annihilation Achievement.\nYou must be level 90 for this achievement.",
 },[[
@@ -5244,7 +5244,7 @@ turnin The Arena of Annihilation##31207 |goto 50.1,18.1
 step
 Congratulations, you have earned the Arena of Annihilation Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\For the Swarm",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeon Achievements\\For the Swarm",{
 condition_end="achieved(8017)",
 description="Defeat Commander Tel'vrak without killing any Zan'thik Swarmers in the Assault on Zan'vess scenario.\nYou must be level 90 for this achievement.",
 },[[
@@ -5258,7 +5258,7 @@ You cannot kill any of the mobs he summons during this fight to get the achievem
 step
 Congratulations, you have earned the Arena of Annihilation Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\Seed of Doubt",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeon Achievements\\Seed of Doubt",{
 condition_end="achieved(6671)",
 },[[
 step
@@ -5274,7 +5274,7 @@ Earn the Seeds of Doubt Achievement |achieve 6671
 step
 Congratulations, you have earned the _Seeds of Doubt_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\Celestial Challenge",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeon Achievements\\Celestial Challenge",{
 condition_end="achieved(8535)",
 description="Complete the trials of all four Celestials, besting them each in combat on the Timeless Isle.",
 },[[
@@ -5338,7 +5338,7 @@ step
 label "end"
 Congratulations, you have obtained the _Celestial Challenge_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\Pandaria Dungeon Hero",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeon Achievements\\Pandaria Dungeon Hero",{
 condition_end="achieved(6925)",
 },[[
 step
@@ -5356,7 +5356,7 @@ If you need help through the dungeon, refer to one of our Dungeon Guides
 step
 Congratulations, you have completed the Pandaria Dungeon Hero Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Cat Fight!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Cat Fight!",{
 condition_end="achieved(6594)",
 description="Win 10 pet battles.",
 },[[
@@ -5367,7 +5367,7 @@ Earn the _Cat Fight!_ achievement |achieve 6594
 step
 Congratulations, you have earned the Cat Fight! Achievement! |achieve 6594
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Experienced Pet Battler",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Experienced Pet Battler",{
 condition_end="achieved(6593)",
 description="Win 50 pet battles.",
 },[[
@@ -5378,7 +5378,7 @@ Earn the _Experienced Pet Battler_ achievement |achieve 6593
 step
 Congratulations, you have earned the Experienced Pet Battler Achievement! |achieve 6593
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Master Pet Battler",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Master Pet Battler",{
 condition_end="achieved(6462)",
 description="Win 250 pet battles.",
 },[[
@@ -5389,7 +5389,7 @@ Earn the _Master Pet Battler_ achievement |achieve 6462
 step
 Congratulations, you have earned the Master Pet Battler Achievement! |achieve 6462
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Grand Master Pet Battler",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Grand Master Pet Battler",{
 condition_end="achieved(6591)",
 description="Win 1000 pet battles.",
 },[[
@@ -5400,7 +5400,7 @@ Earn the _Grand Master Pet Battler_ achievement |achieve 6591
 step
 Congratulations, you have earned the Grand Master Pet Battler Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Legendary Pet Battler!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Legendary Pet Battler!",{
 condition_end="achieved(6592)",
 description="Win 5000 pet battles.",
 },[[
@@ -5411,7 +5411,7 @@ Earn the _Cat Fight!_ achievement |achieve 6592
 step
 Congratulations, you have earned the Legendary Pet Battler Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\No Time To Heal",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\No Time To Heal",{
 condition_end="achieved(6620)",
 description="Win 5 consecutive PvP battles without any pets dying.",
 },[[
@@ -5424,7 +5424,7 @@ Earn the _No Time To Heal_ achievement |achieve 6620
 step
 Congratulations, you have earned the No Time to Heal Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Pet Brawler!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Pet Brawler!",{
 condition_end="achieved(6595)",
 description="Win 10 PvP pet battles.",
 },[[
@@ -5436,7 +5436,7 @@ Earn the _Pet Brawler_ achievement |achieve 6595
 step
 Congratulations, you have earned the Pet Brawler Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Experienced Pet Brawler!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Experienced Pet Brawler!",{
 condition_end="achieved(6596)",
 description="Win 50 PvP pet battles.",
 },[[
@@ -5448,7 +5448,7 @@ Earn the _Experienced Pet Brawler_ achievement |achieve 6596
 step
 Congratulations, you have earned the Experienced Pet Brawler Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Master Pet Brawler!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Master Pet Brawler!",{
 condition_end="achieved(6597)",
 description="Win 250 PvP pet battles.",
 },[[
@@ -5460,7 +5460,7 @@ Earn the _Master Pet Brawler_ achievement |achieve 6597
 step
 Congratulations, you have earned the Master Pet Brawler Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Grand Master Pet Brawler!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Grand Master Pet Brawler!",{
 condition_end="achieved(6598)",
 description="Win 1000 PvP pet battles.",
 },[[
@@ -5472,7 +5472,7 @@ Earn the _Grand Master Pet Brawler_ achievement |achieve 6598
 step
 Congratulations, you have earned the Grand Master Pet Brawler Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Legendary Pet Brawler!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Legendary Pet Brawler!",{
 condition_end="achieved(6599)",
 description="Win 5000 PvP pet battles.",
 },[[
@@ -5484,7 +5484,7 @@ Earn the _Legendary Pet Brawler_ achievement |achieve 6599
 step
 Congratulations, you have earned the Legendary Pet Brawler Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Big City Pet Brawlin' - Alliance",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Big City Pet Brawlin' - Alliance",{
 condition_end="achieved(6584)",
 description="Win a pet battle in every Alliance capital city.",
 },[[
@@ -5512,7 +5512,7 @@ Earn the _Big City Pet Brawlin' - Alliance_ achievement |achieve 6584
 step
 Congratulations, you have earned the Big City Pet Brawlin' - Alliance Achievement! |achieve 6584
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Big City Pet Brawlin' - Horde",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Big City Pet Brawlin' - Horde",{
 condition_end="achieved(6621)",
 description="Win a pet battle in every Horde capital city.",
 },[[
@@ -5534,7 +5534,7 @@ Earn the _Big City Pet Brawlin' - Horde_ achievement |achieve 6621
 step
 Congratulations, you have earned the Big City Pet Brawlin' - Horde Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Big City Pet Brawler",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Big City Pet Brawler",{
 condition_end="achieved(6622)",
 description="Win a pet battle in every Alliance and Horde capital city.",
 },[[
@@ -5543,10 +5543,10 @@ In order to earn this achievement, you will need to complete the following tasks
 Big City Pet Brawlin' - Alliance |achieve 6584
 Big City Pet Brawlin' - Horde |achieve 6621
 |confirm
-leechsteps "Zygor's Horde Achievements Guides\\Pet Battle System\\Big City Pet Brawlin' - Alliance"
-leechsteps "Zygor's Horde Achievements Guides\\Pet Battle System\\Big City Pet Brawlin' - Horde"
+leechsteps "Zygor's Achievements Guides\\Pet Battle System\\Big City Pet Brawlin' - Alliance"
+leechsteps "Zygor's Achievements Guides\\Pet Battle System\\Big City Pet Brawlin' - Horde"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Local Pet Mauler",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Local Pet Mauler",{
 condition_end="achieved(6558)",
 },[[
 step
@@ -5581,7 +5581,7 @@ There are level 11 animals around this area.
 step
 Earn the _Local Pet Mauler_ achievement |achieve 6558
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Win Streak",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Win Streak",{
 condition_end="achieved(6619)",
 description="Win 25 consecutive pet battles.",
 },[[
@@ -5593,7 +5593,7 @@ Earn the _Win Streak_ achievement |achieve 6619
 step
 Congratulations, you have earned the Win Streak Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\A Rare Catch",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\A Rare Catch",{
 condition_end="achieved(7462)",
 description="Capture a Rare Quality Battle Pet",
 },[[
@@ -5605,7 +5605,7 @@ Capture a rare-quality Battle Pet. |achieve 7462 |goto Durotar 45.4,25.7
 step
 Congratulations, you have earned the _A Rare Catch_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\An Uncommon Find",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\An Uncommon Find",{
 condition_end="achieved(7465)",
 description="Capture an Uncommon Quality Battle Pet",
 },[[
@@ -5617,7 +5617,7 @@ Capture an uncommon-quality Battle Pet. |achieve 7465 |goto Durotar 45.4,25.7
 step
 Congratulations, you have earned the _An Uncommon Find_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\He's Mine!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\He's Mine!",{
 condition_end="achieved(6554)",
 description="Capture 10 battle pets.",
 },[[
@@ -5628,7 +5628,7 @@ Earn the _He's Mine!_ achievement |achieve 6554
 step
 Congratulations, you have earned the _He's Mine!_ Achievement! |achieve 6554
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Building a Team",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Building a Team",{
 condition_end="achieved(6555)",
 description="Capture 25 battle pets.",
 },[[
@@ -5639,7 +5639,7 @@ Earn the _Building a Team_ achievement |achieve 6555
 step
 Congratulations, you have earned the _Building a Team_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Going to Need More Traps",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Going to Need More Traps",{
 condition_end="achieved(6556)",
 description="Capture 50 battle pets.",
 },[[
@@ -5650,7 +5650,7 @@ Earn the _Going to Need More Traps_ achievement |achieve 6556
 step
 Congratulations, you have earned the _Going to Need More Traps_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Master Pet Hunter",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Master Pet Hunter",{
 condition_end="achieved(6557)",
 description="Capture 100 battle pets.",
 },[[
@@ -5661,7 +5661,7 @@ Earn the _Master Pet Hunter_ achievement |achieve 6557
 step
 Congratulations, you have earned the _Master Pet Hunter_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Zen Pet Hunter",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Zen Pet Hunter",{
 condition_end="achieved(7436)",
 description="Capture 200 battle pets.",
 },[[
@@ -5672,7 +5672,7 @@ Earn the _Zen Pet Hunter_ achievement |achieve 7436
 step
 Congratulations, you have earned the _Zen Pet Hunter_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Trainer Extraordinaire",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Trainer Extraordinaire",{
 achieveid={7482},
 condition_end="achieved(7482)",
 description="Earn 100 pet battle achievement points.",
@@ -5682,23 +5682,23 @@ For this achievement, you will need to _earn 100 Pet Battle Achievement Points_.
 Complete any of the other Achievement Guides in this section to gain achievement points.
 |confirm
 |next earn |only if achieved(7482)
-leechsteps "Zygor's Horde Achievements Guides\\Pet Battle System\\Newbie"
-leechsteps "Zygor's Horde Achievements Guides\\Pet Battle System\\Just a Pup"
-leechsteps "Zygor's Horde Achievements Guides\\Pet Battle System\\Growing Up"
-leechsteps "Zygor's Horde Achievements Guides\\Pet Battle System\\Time for a Leash"
-leechsteps "Zygor's Horde Achievements Guides\\Pet Battle System\\Local Pet Mauler"
-leechsteps "Zygor's Horde Achievements Guides\\Pet Battle System\\He's Mine!"
-leechsteps "Zygor's Horde Achievements Guides\\Pet Battle System\\Cat Fight!"
-leechsteps "Zygor's Horde Achievements Guides\\Pet Battle System\\Experienced Pet Battler"
-leechsteps "Zygor's Horde Achievements Guides\\Pet Battle System\\Master Pet Battler"
-leechsteps "Zygor's Horde Achievements Guides\\Pet Battle System\\Big City Pet Brawlin' - Horde"
+leechsteps "Zygor's Achievements Guides\\Pet Battle System\\Newbie"
+leechsteps "Zygor's Achievements Guides\\Pet Battle System\\Just a Pup"
+leechsteps "Zygor's Achievements Guides\\Pet Battle System\\Growing Up"
+leechsteps "Zygor's Achievements Guides\\Pet Battle System\\Time for a Leash"
+leechsteps "Zygor's Achievements Guides\\Pet Battle System\\Local Pet Mauler"
+leechsteps "Zygor's Achievements Guides\\Pet Battle System\\He's Mine!"
+leechsteps "Zygor's Achievements Guides\\Pet Battle System\\Cat Fight!"
+leechsteps "Zygor's Achievements Guides\\Pet Battle System\\Experienced Pet Battler"
+leechsteps "Zygor's Achievements Guides\\Pet Battle System\\Master Pet Battler"
+leechsteps "Zygor's Achievements Guides\\Pet Battle System\\Big City Pet Brawlin' - Horde"
 step
 label earn
 Earn the _Trainer Extraordinaire_ achievement |achieve 7482
 step
 Congratulations, you have earned the _Trainer Extraordinaire_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Battle Master",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Battle Master",{
 condition_end="achieved(7483)",
 description="Earn 200 pet battle achievement points.",
 },[[
@@ -5709,7 +5709,7 @@ Earn the _Battle Master_ achievement |achieve 7483
 step
 Congratulations, you have earned the _Battle Master_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Ultimate Trainer",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Ultimate Trainer",{
 condition_end="achieved(6600)",
 description="Earn 300 pet battle achievement points.",
 },[[
@@ -5720,7 +5720,7 @@ Earn the _Ultimate Trainer_ achievement |achieve 6600
 step
 Congratulations, you have earned the _Ultimate Trainer_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Time to Open a Pet Store",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Time to Open a Pet Store",{
 condition_end="achieved(7521)",
 description="Earn 400 pet battle achievement points.",
 },[[
@@ -5731,7 +5731,7 @@ Earn the _Time to Open a Pet Store_ achievement |achieve 7521
 step
 Congratulations, you have earned the _Time to Open a Pet Store_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Going to Need More Leashes",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Going to Need More Leashes",{
 author="support@zygorguides.com",
 condition_end="achieved(7500)",
 description="Obtain a companion pet.",
@@ -5767,7 +5767,7 @@ Littlest Pet Shop Achievement
 Going to Need More Leashes Achievement
 That's a Lot of Pet Food Achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\That's a Lot of Pet Food",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\That's a Lot of Pet Food",{
 author="support@zygorguides.com",
 condition_end="achieved(7501)",
 description="Obtain a companion pet.",
@@ -5803,7 +5803,7 @@ Littlest Pet Shop Achievement
 Going to Need More Leashes Achievement
 That's a Lot of Pet Food Achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Newbie",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Newbie",{
 author="support@zygorguides.com",
 condition_end="achieved(7433)",
 description="Raise a pet to level 3.",
@@ -5815,7 +5815,7 @@ Earn the _Newbie_ achievement |achieve 7433
 step
 Congratulations, you have earned the _Newbie_ Achievement! |achieve 7433
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Just a Pup",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Just a Pup",{
 author="support@zygorguides.com",
 condition_end="achieved(6566)",
 description="Raise a pet to level 5.",
@@ -5827,7 +5827,7 @@ Earn the _Just a Pup_ achievement |achieve 6566
 step
 Congratulations, you have earned the _Just a Pup_ Achievement! |achieve 6566
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Growing Up",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Growing Up",{
 author="support@zygorguides.com",
 condition_end="achieved(7433)",
 description="Raise a pet to level 10.",
@@ -5839,7 +5839,7 @@ Earn the _Growing Up_ achievement |achieve 6567
 step
 Congratulations, you have earned the _Growing Up_ Achievement! |achieve 6567
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Time for a Leash",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Time for a Leash",{
 author="support@zygorguides.com",
 condition_end="achieved(7433)",
 description="Raise a pet to level 15.",
@@ -5851,7 +5851,7 @@ Earn the _Time for a Leash_ achievement |achieve 6568
 step
 Congratulations, you have earned the _Time for a Leash_ Achievement! |achieve 6568
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Old Timer",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Old Timer",{
 author="support@zygorguides.com",
 condition_end="achieved(7433)",
 description="Raise a pet to level 20.",
@@ -5863,7 +5863,7 @@ Earn the _Old Timer_ achievement |achieve 6569
 step
 Congratulations, you have earned the _Old Timer_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\All Growns Up!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\All Growns Up!",{
 author="support@zygorguides.com",
 condition_end="achieved(7433)",
 description="Raise a pet to level 25.",
@@ -5875,7 +5875,7 @@ Earn the _All Growns Up!_ achievement |achieve 6570
 step
 Congratulations, you have earned the _All Growns Up!_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\That was Close!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\That was Close!",{
 author="support@zygorguides.com",
 condition_end="achieved(6571)",
 description="Capture a battle pet below 5% health.",
@@ -5892,7 +5892,7 @@ Capture a Battle Pet below 5% health. |achieve 6571 |goto Durotar 45.4,25.7
 step
 Congratulations, you have earned the _That was Close!_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\I Choose You",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\I Choose You",{
 author="support@zygorguides.com",
 condition_end="achieved(7908)",
 description="Defeat Grand Master Aki",
@@ -5905,7 +5905,7 @@ step
 step
 Congratulations, you have obtained the _I Choose You_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Raiding with Leashes",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Raiding with Leashes",{
 author="support@zygorguides.com",
 condition_end="achieved(7934)",
 description="Capture all the rare raid pets.",
@@ -6309,7 +6309,7 @@ learnpet Ashstone Core##68666
 step
 Congratulations, you have obtained the _Raiding with Leashes_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Take 'Em All On!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Take 'Em All On!",{
 author="support@zygorguides.com",
 condition_end="achieved(6851)",
 description="battle",
@@ -6346,7 +6346,7 @@ modelnpc 61686
 step
 Congratulations, you have earned the Take 'Em All On! achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Events\\Brawler's Guild Achievements\\I'm Your Number One Fan",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Events\\Brawler's Guild Achievements\\I'm Your Number One Fan",{
 author="support@zygorguides.com",
 condition_end="achieved(7943)",
 description="Cheer a player on after they have won a brawl.",
@@ -6358,7 +6358,7 @@ Cheer on the winner of a brawl |achieve 7943 |goto Brawl'gar Arena/1 47.2,31.6
 step
 Congratulations, you have earned the _I'm Your Number One Fan_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Events\\Brawler's Guild Achievements\\Bottle Service",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Events\\Brawler's Guild Achievements\\Bottle Service",{
 author="support@zygorguides.com",
 condition_end="achieved(7944)",
 description="Hit an angry spectator in the head with an Expired Blackout Brew.",
@@ -6373,7 +6373,7 @@ achieve 7943
 step
 Congratulations, you have earned _Bottle Servive_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Events\\Brawler's Guild Achievements\\I've Got the Biggest Brawls of Them All",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Events\\Brawler's Guild Achievements\\I've Got the Biggest Brawls of Them All",{
 author="support@zygorguides.com",
 condition_end="achieved(8338)",
 achieveid={7948,8020,7939,7942,8337},
@@ -6381,7 +6381,7 @@ description="Reach rank 10 with the Brawler's Guild.",
 },[[
 #include "H_Brawl"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Events\\Brawler's Guild Achievements\\Haters Gonna Hate",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Events\\Brawler's Guild Achievements\\Haters Gonna Hate",{
 author="support@zygorguides.com",
 condition_end="achieved(7945)",
 description="Reach rank 10 with the Brawler's Guild.",
@@ -6389,7 +6389,7 @@ description="Reach rank 10 with the Brawler's Guild.",
 step
 You will need another player to help you with this.
 If you haven't done so, we suggest you get an invitation with the Brawler's Guild and at least get through your first brawl.
-Click here to be taken to the Brawler's Guild guide to do so. |confirm |next "Zygor's Horde Achievements Guides\\Events\\Brawler's Guild Achievements\\Now You're Just Showing Off" |only if ZGV:GetReputation(1374).friendRep<250
+Click here to be taken to the Brawler's Guild guide to do so. |confirm |next "Zygor's Achievements Guides\\Events\\Brawler's Guild Achievements\\Now You're Just Showing Off" |only if ZGV:GetReputation(1374).friendRep<250
 confirm
 step
 talk Esme Sunshadow##68794
@@ -6404,7 +6404,7 @@ achieve 7945
 step
 Congratulations, you have obtained the _Haters Gonna Hate_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Events\\Brawler's Guild Achievements\\Collect Your Deck",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Events\\Brawler's Guild Achievements\\Collect Your Deck",{
 author="support@zygorguides.com",
 condition_end="achieved(8342)",
 description="Reach rank 10 with the Brawler's Guild.",
@@ -6556,7 +6556,7 @@ confirm |next "menu"
 step
 label "mingus"
 You will need _Archaeology_ in order to attempt to get this Challenge Card.
-Click here to go to the Archaeology guide to begin Archaeology. You will need to be around level 500 in this skill. |confirm |next "Profession Guides\\Archaeology\\Archaeology 1-600 Leveling Guide"
+Click here to go to the Archaeology guide to begin Archaeology. You will need to be around level 500 in this skill. |confirm |next "Profession Guides\\Archaeology\\Leveling Guides\\Archaeology 1-600 Leveling Guide"
 only if skill("Archaeology")<1
 step
 Open your world map, find dig sites in Eastern Kingdoms then go to them
@@ -6590,7 +6590,7 @@ step
 label "end"
 Congratulations, you have obtained the _Collect Your Deck_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Events\\Brawler's Guild Achievements\\Rabble Rabble Rabble",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Events\\Brawler's Guild Achievements\\Rabble Rabble Rabble",{
 author="support@zygorguides.com",
 condition_end="achieved(7950)",
 description="Reach rank 10 with the Brawler's Guild.",
@@ -6606,7 +6606,7 @@ achieve 7950
 step
 Congratulations, you have obtained the _Rabble Rabble Rabble_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Events\\Brawler's Guild Achievements\\Now You're Just Showing Off",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Events\\Brawler's Guild Achievements\\Now You're Just Showing Off",{
 author="support@zygorguides.com",
 condition_end="achieved(8022)",
 description="Reach rank 10 with the Brawler's Guild.",
@@ -6679,7 +6679,7 @@ _The best strategy for this fight is to stay moving, avoid everything in the are
 step
 Congratulations, you have obtained the _Now You're Just Showing Off_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Events\\Brawler's Guild Achievements\\Deck Your Collection (Season 1)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Events\\Brawler's Guild Achievements\\Deck Your Collection (Season 1)",{
 author="support@zygorguides.com",
 condition_end="achieved(8343)",
 description="Reach rank 10 with the Brawler's Guild during Mists of Pandaria.",
@@ -6689,7 +6689,7 @@ This achievement was gained by defeating the Brawler's Guild bosses during Mists
 It is no longer obtainable
 Please refer to the Collect Your Deck achievement guide for the current Collect Your Deck achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Blue Response",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Blue Response",{
 author="support@zygorguides.com",
 condition_end="achieved(8112)",
 description="Scare away the rare blue Hatchling Sycreamer",
@@ -6701,7 +6701,7 @@ Run over the Blue Hatchling to scare it away. |achieve 8112 |goto Isle of Thunde
 step
 Congratulations, you have obtained the Blue Response achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Boop",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Boop",{
 author="support@zygorguides.com",
 condition_end="achieved(8118)",
 description="Knock a Zandalari Beastcaller from his flying mount",
@@ -6716,7 +6716,7 @@ kill Zandalari Beastcaller##69379+ |goto Isle of Thunder/0 32.6,80.7
 step
 Congratulations, you have obtained the _Boop_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\I've Got 9999 Problems but a Bone-White Primal Raptor Ain't One",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\I've Got 9999 Problems but a Bone-White Primal Raptor Ain't One",{
 author="support@zygorguides.com",
 condition_end="achieved(8092)",
 description="Knock a Zandalari Beastcaller from his flying mount",
@@ -6740,7 +6740,7 @@ learn Bone-White Primal Raptor##138640 |use Reins of the Bone-White Primal Rapto
 step
 Congratulations, you have obtained the _I've Got 9999 Problems but a Bone-White Primal Raptor Ain't One_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\You Made Me Bleed My Own Blood",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\You Made Me Bleed My Own Blood",{
 author="support@zygorguides.com",
 condition_end="achieved(8116)",
 description="Kill Fleshcrafter Hoku without killing any of the Possessed Blood that spawns during the fight.",
@@ -6756,7 +6756,7 @@ Kill Fleshcrafter Hoku withouth killing any Possessed Blood |achieve 8116
 step
 Congratulations, you have obtained the _You Made Me Bleed My Own Blood_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Dominance Offensive",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Dominance Offensive",{
 author="support@zygorguides.com",
 condition_end="achieved(8206)",
 description="Become exalted with the Dominance Offensive",
@@ -6799,7 +6799,7 @@ Reach Exalted with Dominance Offensive |achieve 8206
 step
 Congratulations, you have obtained the _Dominance Offensive_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Millions of Years of Evolution vs. My Fist",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Millions of Years of Evolution vs. My Fist",{
 author="support@zygorguides.com",
 condition_end="achieved(8123)",
 description="Kill the World Boss Oondasta",
@@ -6813,7 +6813,7 @@ kill Oondasta##69161 |achieve 8123 |goto Isle of Giants 50.5,59.4
 step
 Congratulations, you have achieved the _Millions of Years of Evolution vs. My Fist_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Thunder Plunder",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Thunder Plunder",{
 author="support@zygorguides.com",
 condition_end="achieved(8104)",
 description="Find a Trove of the Thunder King",
@@ -6824,7 +6824,7 @@ Loot from a Trove of the Thunder King |achieve 8104 |goto Isle of Thunder/0 48.0
 step
 Congratulations, you have achieved the _Thunder Plunder_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\For the Ward!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\For the Ward!",{
 author="support@zygorguides.com",
 condition_end="achieved(8117)",
 description="Finish off an opposing player with a Sunreaver or Kirin Tor ward.",
@@ -6837,7 +6837,7 @@ Use a Sunreaver or Kirin Tor perimeter ward to finish off an opponent. |achieve 
 step
 Congratulations, you have achieved the _For the Ward!_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Ready for RAAAAIIIIDDD?!?ing",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Ready for RAAAAIIIIDDD?!?ing",{
 author="support@zygorguides.com",
 condition_end="achieved(8107)",
 description="Crush 200 Ihgaluk Roaches within 1 minute",
@@ -6852,7 +6852,7 @@ Crush 200 Ihgaluk Roaches within 1 minute |achieve 8107/1 |goto Isle of Thunder/
 step
 Congratulations, you have achieved the _Ready for RAAAAIIIIDDD?!?ing_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Fabled Pandaria Tamer",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Fabled Pandaria Tamer",{
 author="support@zygorguides.com",
 condition_end="achieved(8080)",
 description="Complete the Beasts of Fable questline",
@@ -6871,7 +6871,7 @@ Obtain the Fabled Pandaren Tamer achievement |achieve 8080
 step
 Congratulations, you have obtained the _Fabled Pandaria Tamer_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Zandalari Library Card",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Zandalari Library Card",{
 author="support@zygorguides.com",
 condition_end="achieved(8212)",
 description="Loot the rare books listed from Zandalari trolls on the Isle of Thunder",
@@ -6891,7 +6891,7 @@ Obtain the Zandalari Library Card achievement |achieve 8212
 step
 Congratulations, you have obtained the _Zandalari Library Card_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\When in Ihgaluk Crag, Do as the Skumblade Do",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\When in Ihgaluk Crag, Do as the Skumblade Do",{
 author="support@zygorguides.com",
 condition_end="achieved(8108)",
 description="/bow before the following forms of Kroshik.",
@@ -6927,7 +6927,7 @@ Click here to go back to the beginning of this guide. |only if not achieved(8108
 step
 Congratulations, you have obtained the _When in Ihgaluk Crag, Do as the Skumblade Do_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Sunreaver Onslaught (Achievement)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Sunreaver Onslaught (Achievement)",{
 author="support@zygorguides.com",
 condition_end="achieved(8209)",
 description="Become exalted with the Sunreaver Onslaught",
@@ -6962,7 +6962,7 @@ Reach Exalted with Sunreaver Onslaught |achieve 8209
 step
 Congratulations, you have obtained the _Sunreaver Onslaught_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Direhorn in a China Shop",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Direhorn in a China Shop",{
 condition_end="achieved(8120)",
 description="Destroy the Priceless Zandalari Vase using the Loa-Infused Bloodhorn's charge attack.",
 },[[
@@ -6973,7 +6973,7 @@ While fighting the Bloodhorn, lure it away from the tent then immediately run in
 step
 Congratulations, you have obtained the _Direhorn in a China Shop_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Platform Hero",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Platform Hero",{
 condition_end="achieved(8114)",
 description="Survive for 90 seconds on the pillars in the Swollen Vault.",
 },[[
@@ -6987,7 +6987,7 @@ Jump on the safe platforms around this grid for 90 consecutive seconds. |achieve
 step
 Congratulations, you have obtained the _Platform Hero_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\This Isn't Even My Final Form",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\This Isn't Even My Final Form",{
 condition_end="achieved(8111)",
 description="Enjoy the effects of a Zandalari Potion and the Mighty Loa buff at the same time.",
 },[[
@@ -6998,7 +6998,7 @@ Immediately after killing the _Drakkari God-Hulk_, drink the _Zandalari Potion_ 
 step
 Congratulations, you have obtained the _This Isn't Even My Final Form_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Got My Mind On My Money Achievement",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Got My Mind On My Money Achievement",{
 condition_end="achieved(5456)",
 achieveid={5455,1181,1180,1178,1177,1176,5456},
 description="Loot 200,000 gold.",
@@ -7019,7 +7019,7 @@ Loot 200,000 Gold |achieve 6753/1 |goto Isle of Thunder 35.0,73.3
 step
 Congratulations, you have achieved the _Got Mind On My Money_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Praise the Sun!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Praise the Sun!",{
 condition_end="achieved(8028)",
 description="Defeat Nalak, the Storm Lord, on the Isle of Thunder.",
 },[[
@@ -7032,7 +7032,7 @@ kill Nalak##69099+ |achieve 8028 |goto Isle of Thunder/0 60.0,37.6
 step
 Congratulations, you have achieved the _Praise the Sun!_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Speed Metal",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Speed Metal",{
 condition_end="achieved(8115)",
 description="Defeat Metal Lord Mono-Han with 10 stacks of Power Surge.",
 },[[
@@ -7050,7 +7050,7 @@ kill Metal Lord Mono-Han##69326 |goto Isle of Thunder 53.6,30.8
 step
 Congratulations, you have achieved the _Speed Metal_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\It Was Worth Every Ritual Stone",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\It Was Worth Every Ritual Stone",{
 condition_end="achieved(8101)",
 achieveid={8100},
 description="Defeat all of the isle of thunder summonable bosses listed.",
@@ -7174,7 +7174,7 @@ kill Echo of Kros## |achieve 8101/3 |goto Isle of Thunder 55.1,87.7
 step
 Congratulations, you have achieved the _It Was Worth Every Ritual Stone_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Isle of Thunder",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Isle of Thunder",{
 condition_end="achieved(8028)",
 description="Defeat Nalak, the Storm Lord, on the Isle of Thunder.\nIn order to get this achievement, you must have access to all areas of the _Isle of Thunder_.\nThey are unlocked in stages on a server-wide basis, through completion of daily quests taking place on the Isle.\nAs soon as the realm has made enough concerted progress, this achievement's solo scenarios will be unlocked.",
 },[[
@@ -7439,7 +7439,7 @@ step
 label "end"
 Congratulations, you have achieved the _Isle of Thunder_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\These Mogu Have Gotta Go-gu",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\These Mogu Have Gotta Go-gu",{
 achieveid={8109},
 condition_end="achieved(8110)",
 description="In the Court of Bones, summon and defeat all of the ancient mogu listed below.",
@@ -7468,7 +7468,7 @@ kill Haqin of the Hundred Spears##69800+ |goto Isle of Thunder/0 38.8,59.3
 step
 Congratulations, you have achieved the _These Mogu Have Gotta Go-gu_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Our Powers Combined",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Our Powers Combined",{
 condition_end="achieved(8119)",
 description="In the Court of Bones, summon and defeat all of the ancient mogu listed below.",
 },[[
@@ -7487,7 +7487,7 @@ kill Guardian Tak'u##69336
 step
 Congratulations, you have obtained the _Our Powers Combined_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\Binan Village All-Star",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\Binan Village All-Star",{
 dungeon=884,
 condition_end="achieved(6931)",
 description="This achievement takes place entirely in the scenario Brewmoon Festival.",
@@ -7547,7 +7547,7 @@ Click here to return to the start of the guide. |confirm
 step
 Congratulations! You have achieved _Binan Village All-Star_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\You Mean That Wasn't a Void Zone?",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\You Mean That Wasn't a Void Zone?",{
 condition_end="achieved(7986)",
 description="This achievement takes place entirely in the scenario Dagger in the Dark.",
 },[[
@@ -7564,7 +7564,7 @@ If there are any blue runes in the hallway left, you can use them in order to he
 step
 Congratulations, you have earned the _You Mean That Wasn't a Void Zone?_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\Waste Not, Want Not",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\Waste Not, Want Not",{
 condition_end="achieved(8015)",
 description="This achievement takes place entirely in the scenario Lion's Landing.",
 },[[
@@ -7590,7 +7590,7 @@ Speed Power-Up |achieve 8015/7
 step
 Congratulations, you have earned the _Waste Not, Want Not_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\Perfect Delivery",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\Perfect Delivery",{
 condition_end="achieved(7267)",
 description="This achievement takes place entirely in the scenario Greenstone Village.",
 },[[
@@ -7606,7 +7606,7 @@ Being hit while carrying the keg will cause you to fail this achievement.
 step
 Congratulation, you have earned the _Perfect Delivery_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\Save it for Later",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\Save it for Later",{
 condition_end="achieved(7266)",
 description="This achievement takes place entirely in the scenario Greenstone Village.",
 },[[
@@ -7620,7 +7620,7 @@ To earn this achievement, you and your group _CAN NOT_ use this ability at all f
 step
 Congratulations, you have earned the _Save it for Later_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\Kite Fight",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\Kite Fight",{
 condition_end="achieved(7529)",
 description="This achievement takes place entirely in the scenario Theramore's Fall.",
 },[[
@@ -7638,7 +7638,7 @@ Move away from the totem, towards the docks as the fight progresses so you dont 
 step
 Congratulations, you have earned the _Kite Fight_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\No Tank You",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\No Tank You",{
 condition_end="achieved(7530)",
 description="This achievement takes place entirely in the scenario Theramore's Fall.",
 },[[
@@ -7657,7 +7657,7 @@ When it uses _War Engine's Sight_ it will fixate on a party member. That person 
 step
 Congratulations, you have earned the _No Tank You_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\The Keg Runner",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\The Keg Runner",{
 condition_end="achieved(7232)",
 description="This achievement takes place entirely in the scenario Theramore's Fall.",
 },[[
@@ -7689,7 +7689,7 @@ Run into this cave and kill the hozen. |goto Unga Ingoo/0 79.4,44.9
 Have the 2nd person with your grab this Keg and both of you can mount and ride back to the Brewmaster Bo
 Take the Brew back to Brewmaster Bo |goto Unga Ingoo/0 50.8,62.1,0.5 |noway |c
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\Monkey in the Middle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\Monkey in the Middle",{
 condition_end="achieved(7239)",
 description="This achievement takes place entirely in the scenario Unga Ingoo.",
 },[[
@@ -7704,7 +7704,7 @@ Defeat Captain Ook without him getting an orange.  |achieve 7239
 step
 Congratulations, you have earned the _Monkey in the Middle_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\Monkey See, Monkey Kill",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\Monkey See, Monkey Kill",{
 condition_end="achieved(7248)",
 description="This achievement takes place entirely in the scenario Unga Ingoo.",
 },[[
@@ -7735,7 +7735,7 @@ Protect the _Unga Keg_ |achieve 7248/7
 step
 Congratulations, you have earned the _Monkey See,Monkey Kill_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\Spill No Evil",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\Spill No Evil",{
 condition_end="achieved(7231)",
 description="This achievement takes place entirely in the scenario Unga Ingoo.",
 },[[
@@ -7747,10 +7747,10 @@ This method will take a little longer, but is safer for people with lower gearsc
 step
 Congratulations, you have earned the _Spill No Evil_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Deadly Pet Brawler",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Deadly Pet Brawler",{
 condition_end="achieved(8301)",
 achieveid={8297,8298,8300,8301},
-description="This guide will walk you through earning the Trainer Title.",
+description="This guide will walk you through earning the Trainer title.",
 },[[
 step
 This guide consists of 4 achievements in total, all of which are related to using the _Find Battle_ feature using only level 25 pets.
@@ -7778,7 +7778,7 @@ Win _1000_ Pvp pet battles. |achieve 8301
 step
 Congatulations, you have earned the _Merciless, Vengeful, Brutal and Deadly Pet Brawler_ achievements.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Raiding with Leashes II: Attunement Edition",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Raiding with Leashes II: Attunement Edition",{
 condition_end="achieved(8293)",
 achieveid={8293},
 description="This guide will walk you through several old world\nraids in order to attain 10 rare pets and an achievement.",
@@ -7947,7 +7947,7 @@ learnpet Lesser Voidcaller##141448
 step
 Congratulations, you have earned the _Raiding with Leashes II: Attunement Edition_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\Accelerated Archaeology",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\Accelerated Archaeology",{
 dungeon=937,
 condition_end="achieved(8319)",
 description="Pick up 3 special artifacts in the Dark Heart scenario.",
@@ -7971,7 +7971,7 @@ Run around collecting artifacts until you collect 3 gold artifacts.
 step
 Congratulations, you have completed the _Accelerated Archaeology_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Scenario Achievements\\Heed the Weed",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Scenario Achievements\\Heed the Weed",{
 dungeon=939,
 condition_end="achieved(8329)",
 description="Use every basket of Shimmerweed in a single Blood in the Snow scenario run.",
@@ -8025,7 +8025,7 @@ scenariostage 6 |override
 step
 Congratulations, you have completed the _Blood in the Snow_ scenario!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pandaria Scenarios\\Hekima's Heal-Halter",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pandaria Scenarios\\Hekima's Heal-Halter",{
 dungeon=939,
 condition_end="achieved(8330)",
 description="Don't let Hekima cast Hekima's Wisdom during the Blood in the Snow scenario.",
@@ -8062,7 +8062,7 @@ achieve 8330
 step
 Congratulations, you have completed the _Hekima's Heal-Halter_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pandaria Scenarios\\Keep those Bombs Away! from me...",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pandaria Scenarios\\Keep those Bombs Away! from me...",{
 dungeon=938,
 condition_end="achieved(8347)",
 description="Complete the Battle on the High Seas Scenario without any member of your party getting hit by cannon fire at any point.",
@@ -8076,7 +8076,7 @@ Use any movement enhancing abilities to run away from him when they appear under
 step
 Congratulations, you have completed the _Keep those Bombs Away! from me..._ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pandaria Scenarios\\Fight Anger With Anger",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pandaria Scenarios\\Fight Anger With Anger",{
 dungeon=900,
 description="This guide will walk you through the Crypt of Forgotten Kings scenarios.",
 },[[
@@ -8123,7 +8123,7 @@ scenariogoal 19225
 During the fight, he will use an ability called _Deathforce_ which will pull you to him. Run out of the red circle that surrounds him as fast as possibly to avoid instant death.
 He will create red clouds on the ground that move around during the fight which should also be avoided.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\The Longest Day",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\The Longest Day",{
 condition_end="achieved(8348)",
 description="This achievement requires that you complete all of the pet battle daily quests in a single day.\nThis achievement requires that you complete\nthe Battle Pet Questline before attempting this achievement.",
 },[[
@@ -8646,7 +8646,7 @@ step
 step
 Congratulations, you have obtained _The Longest Day_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\The Celestial Tournament",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\The Celestial Tournament",{
 condition_end="achieved(8410)",
 description="Complete the Celestial Tournament Scenario",
 },[[
@@ -8661,7 +8661,7 @@ step
 step
 Congratulations, you have obtained _The Celestial Tournament_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Master of the Masters",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Master of the Masters",{
 condition_end="achieved(8518)",
 description="Complete the Celestial Tournament Scenario",
 },[[
@@ -8678,7 +8678,7 @@ You can check your progress for this achievement here.
 step
 Congratulations, you have obtained _The Celestial Tournament_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Celestial Family",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Celestial Family",{
 condition_end="achieved(8519)",
 description="Complete the Celestial Tournament Scenario",
 },[[
@@ -8734,7 +8734,7 @@ Chi-Chi obtained |achieve 8519/2
 step
 Congratulations, you have obtained the _Celestial Family_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Emissary of Ordos",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Emissary of Ordos",{
 condition_end="achieved(8716)",
 description="Use the Censer of Eternal Agony obtained from Speaker Gulan on the Timeless Isle.",
 },[[
@@ -8755,7 +8755,7 @@ achieve 8716
 step
 Congratulations, you have obtained the _Emissary of Ordos_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Crazy for Cats",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Crazy for Cats",{
 condition_end="achieved(8397)",
 description="Obtain 20 of the cats listed below.",
 },[[
@@ -9108,7 +9108,7 @@ step
 label "end"
 Congratulations, you have obtained the _Crazy for Cats_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Pet Battle System\\Going To Need A Bigger Bag",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battle System\\Going To Need A Bigger Bag",{
 condition_end="achieved(8728)",
 description="Obtain all of the rare items from the Timeless Isle listed below.",
 },[[
@@ -9339,7 +9339,7 @@ collect 1 Dandelion Frolicker##104160 |achieve 8728/54 |goto Timeless Isle 45.5,
 step
 Congratulations, you have obtained the _Going to Need a Bigger Bag_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Timeless Champion",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Timeless Champion",{
 condition_end="achieved(8714)",
 description="Defeat all of the rare creatures of the Timeless Isle listed below.",
 },[[
@@ -9482,7 +9482,7 @@ kill Dread Ship Vazuvius##73281 |goto Timeless Isle/0 26.2,23.8
 step
 Congratulations, you have obtained the _Timeless Champion_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Timeless Nutriment",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Timeless Nutriment",{
 condition_end="achieved(8722)",
 description="Consume all of the sources of Timeless Nutriment on the Timeless Isle.",
 },[[
@@ -9511,7 +9511,7 @@ click Fire Poppy
 step
 Congratulations, you have obtained the _Timeless Nutriment_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Eyes on the Ground",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Eyes on the Ground",{
 condition_end="achieved(8725)",
 description="Check for loot in suspicious places throughout the Timeless Isle.",
 },[[
@@ -9547,7 +9547,7 @@ click Fiery Altar of Ordos
 step
 Congratulations, you have obtained the _Eyes on the Ground_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Extreme Treasure Hunter",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Extreme Treasure Hunter",{
 condition_end="achieved(8726)",
 description="This guide will help you find the Gleaming, Rope-Bound and Mist-Covered Treasure found in the Timeless Isle.",
 },[[
@@ -9572,7 +9572,7 @@ step
 step
 Congratulations, you have earned the _Extreme Treasure Hunter_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Kilnmaster",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Kilnmaster",{
 condition_end="achieved(8720)",
 description="This guide will instruct you on how to get the Kilnmaster Achievement, which takes place in the Timeless Isle.",
 },[[
@@ -9598,7 +9598,7 @@ You could get more than one _Bloody Coin_ per kill.
 step
 Congratulations, you have earned the _Kilnmaster_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Pilgrimage",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Pilgrimage",{
 condition_end="achieved(8724)",
 description="This guide will instruct you on where to find Time-Lost Shrines in the Timeless Isle.",
 },[[
@@ -9623,7 +9623,7 @@ step
 step
 Congratulations, you have earned the _Pilgrimage_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Timeless Legends",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Timeless Legends",{
 condition_end="achieved(8724)",
 achieveid={8723},
 description="Find all of the lost pandaren artifacts on the Timeless Isle.",
@@ -9654,7 +9654,7 @@ step
 step
 Congratulations, you have earned the _Timeless Legends_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Rolo's Riddle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Rolo's Riddle",{
 condition_end="achieved(8730)",
 description="This guide will instruct you on how to solve Rolo's Riddle in the Timeless Isle.",
 },[[
@@ -9686,7 +9686,7 @@ step
 step
 Congratulations, you have earned the _Rolo's Riddle_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Treasure, Treasure Everywhere",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Treasure, Treasure Everywhere",{
 condition_end="achieved(8729)",
 description="This guide will instruct you on how to gather Treasures located in the Timeless Isle.",
 },[[
@@ -9736,7 +9736,7 @@ step
 step
 Congratulations, you have earned the _Treasure, Treasure Everywhere_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Zarhym Altogether",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Zarhym Altogether",{
 condition_end="achieved(8743)",
 description="Help Zarhym find his body in the Cavern of Lost Spirits on Timeless Isle.",
 },[[
@@ -9752,7 +9752,7 @@ click Zarhym's Body |goto Timeless Isle/22 54.0,30.9
 step
 Congratulations, you have earned the _Zarhym Altogether_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Pandaria\\Where There's Pirates, There's Booty",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Pandaria\\Where There's Pirates, There's Booty",{
 condition_end="achieved(8727)",
 description="This guide will instruct you on how to gather Treasures located in the Timeless Isle.",
 },[[
@@ -9777,7 +9777,7 @@ step
 step
 Congratulations, you have earned the _Where There's Pirates, There's Booty_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Chapter I: Trial of the Black Prince",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Chapter I: Trial of the Black Prince",{
 condition_end="achieved(7533)",
 description="Prove your worth to Wrathion and acquire a sha-touched gem upgrade.",
 },[[
@@ -9817,7 +9817,7 @@ turnin Breath of the Black Prince##31482 |goto The Veiled Stair/0 75.2,76.4
 step
 Congratulations, you have obtained the _Chapter 1: Trial of the Black Prince_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Chapter II: Wrathion's War (Horde)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Chapter II: Wrathion's War (Horde)",{
 condition_end="achieved(8008)",
 description="Prove your worth to Wrathion and acquire a sha-touched gem upgrade.",
 },[[
@@ -9867,7 +9867,7 @@ turnin The Soul of the Horde##32432 |goto The Veiled Stair/0 54.9,72.6
 step
 Congratulations, you have obtained the _Chapter 2: Trial of the Black Prince_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Chapter III: Two Princes",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Chapter III: Two Princes",{
 condition_end="achieved(7535)",
 description="Prove your worth to Wrathion and acquire a sha-touched gem upgrade.",
 },[[
@@ -9945,7 +9945,7 @@ turnin Heart of the Thunder King##32597 |goto The Veiled Stair/0 54.5,72.6
 step
 Congratulations, you have obtained the _Chapter III: Trial of the Black Prince_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Chapter IV: Two Princes",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Chapter IV: Two Princes",{
 condition_end="achieved(7536)",
 description="Prove your worth to Wrathion and acquire a sha-touched gem upgrade.",
 },[[
@@ -10084,7 +10084,7 @@ accept Preparing to Strike##32870 |goto The Veiled Stair 75.2,76.4
 step
 Congratulations, you have obtained the _Chapter IV: Celestial Blessings_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Chapter V: Judgement of the Black Prince",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Chapter V: Judgement of the Black Prince",{
 condition_end="achieved(8325)",
 description="Prove your worth to Wrathion and acquire a sha-touched gem upgrade.",
 },[[

@@ -3,1116 +3,282 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("TitlesA") then return end
 ZygorGuidesViewer.GuideMenuTier = "CAT"
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Azeroth Titles\\Ambassador, Home Cities Reputation",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Player versus Player\\Justicar",{
 author="support@zygorguides.com",
 },[[
 step
-label	"menu"
-This guide will show you how to become exalted the fastest way, with all your Hometown Factions.
-Below you will see which faction you are Exalted with and which ones you are not:
-Exalted with Stormwind |condition rep('Stormwind')==Exalted
-Click to use the Stormwind rep Guide |confirm |next "sw" |only if rep ('Stormwind')<=Revered
-or
-Exalted with Darnassus |condition rep('Darnassus')==Exalted
-Click to use the Darnassus rep Guide |confirm |next "darn" |only if rep ('Darnassus')<=Revered
-or
-Exalted with Gnomeregan |condition rep('Gnomeregan')==Exalted
-Click to use the Gnomeregan rep Guide |confirm |next "gnom" |only if rep ('Gnomeregan')<=Revered
-or
-Exalted with Ironforge |condition rep('Ironforge')==Exalted
-Click to use the Ironforge Rep Guide |confirm |next "iron" |only if rep ('Ironforge')<Revered
-or
-Exalted with The Exodar |condition rep('The Exodar')==Exalted
-Click to use the Exodar rep Guide |confirm |next "ex" |only if rep('The Exodar')<=Revered
-or
-Exalted with Gilneas |condition rep('Gilneas')==Exalted
-Click to use the Gilneas rep Guide |confirm |next "gil" |only if rep ('Gilneas')<=Revered
-next "end" |only if achieved(948)
+This title is earned by completing the _"The Justicar"_ achievement.
+In order to complete the _"The Justicar"_ achievement you must become Exalted with The League of Arathor, the Silverwing Sentinels, and the Stormpike Guard. Use Zygor's Reputation Guides to do so.
+achieve 907
 step
-label	"sw"
-talk Captain Lancy Revshon##49877
-buy Stormwind Tabard##45574 |goto Stormwind City,67.7,73.0
-step
-Equip your Stormwind Tabard |equipped Stormwind Tabard##45574 |use Stormwind Tabard##45574
-You can run any dungeon that grants experience to gain reputation for Stormwind.
-Friendly with Stormwind |condition rep('Stormwind')>=Friendly
-Honored with Stormwind |condition rep('Stormwind')>=Honored
-Revered with Stormwind |condition rep('Stormwind')>=Revered
-Become Exalted with Stormwind |condition rep('Stormwind')==Exalted
-next "menu"
-step
-label	"darn"
-Skipping next part of guide |next "+darn_tab" |only if step:Find("+darn_buy"):IsComplete()
-Proceeding next step |next |only if default
-step
-Go through the Large Pink Portal |goto Teldrassil,55.1,88.5
-Teleport to Darnassus |goto Darnassus |noway |c
-step
-label	"darn_buy"
-talk Moon Priestess Lasara##50305
-buy Darnassus Tabard##45579 |goto Darnassus,36.2,48.5
-step
-label	"darn_tab"
-Equip your Darnassus Tabard |use Darnassus Tabard##45579
-You can run any dungeon that grants experience to gain reputation for Darnassus.
-Friendly with Darnassus |condition rep('Darnassus')>=Friendly
-Honored with Darnassus |condition rep('Darnassus')>=Honored
-Revered with Darnassus |condition rep('Darnassus')>=Revered
-Become Exalted with Darnassus |condition rep('Darnassus')==Exalted
-next "menu"
-step
-label	"ex"
-Skipping next part of guide |next "+ex_tab" |only if step:Find("+ex_buy"):IsComplete()
-Proceeding next step |next |only if default
-step
-Go through the Large Pink Portal |goto Teldrassil,55.1,88.5
-Teleport to Darnassus |goto Darnassus |noway |c
-step
-click Portal to The Exodar##06955 |goto Darnassus,44.2,78.7
-Teleport to The Exodar |goto The Exodar |noway |c
-step
-label	"ex_buy"
-talk Kadu##50306
-buy Exodar Tabard##45580 |goto The Exodar,54.8,36.8
-step
-label	"ex_tab"
-Equip your Exodus Tabard |equipped Exodar Tabard##45580 |use Exodar Tabard##45580
-You can run any dungeon that grants experience to gain reputation for The Exodar.
-Friendly with The Exodar |condition rep('The Exodar')>=Friendly
-Honored with The Exodar |condition rep('The Exodar')>=Honored
-Revered with The Exodar |condition rep('The Exodar')>=Revered
-Become Exalted with The Exodar |condition rep('The Exodar')==Exalted
-next "menu"
-step
-label	"gnom"
-Skipping next part of guide |next "+gnom_tab" |only if step:Find("+gnom_buy"):IsComplete()
-Proceeding next step |next |only if default
-step
-label	"gnom_buy"
-talk Master Tinker Trini##50308
-buy Gnomeregan Tabard##45578 |goto Ironforge,55.3,48.2
-step
-label	"gnom_tab"
-Equip your Gnomeregan Tabard |equipped Gnomeregan Tabard##45578 |use Gnomeregan Tabard##45578
-You can run any dungeon that grants experience to gain reputation for Gnomeregan.
-Friendly with Gnomeregan |condition rep('Gnomeregan')>=Friendly
-Honored with Gnomeregan |condition rep('Gnomeregan')>=Honored
-Revered with Gnomeregan |condition rep('Gnomeregan')>=Revered
-Become Exalted with Gnomeregan |condition rep('Gnomeregan')==Exalted
-next "menu"
-step
-label	"iron"
-Skipping next part of guide |next "+iron_tab" |only if step:Find("+iron_buy"):IsComplete()
-Proceeding next step |next |only if default
-step
-label	"iron_buy"
-talk Captain Stonehelm##50309
-buy Ironforge Tabard##45577 |goto Ironforge,55.6,47.3
-step
-label	"iron_tab"
-Equip your Ironforge Tabard |equipped Ironforge Tabard##45577 |use Ironforge Tabard##45577
-You can run any dungeon that grants experience to gain reputation for Ironforge.
-Friendly with Ironforge |condition rep('Ironforge')>=Friendly
-Honored with Ironforge |condition rep('Ironforge')>=Honored
-Revered with Ironforge |condition rep('Ironforge')>=Revered
-Become Exalted with Ironforge |condition rep('Ironforge')==Exalted
-next "menu"
-step
-label	"gil"
-Skipping next part of guide |next "+gil_tab" |only if step:Find("+gil_buy"):IsComplete()
-Proceeding next step |next |only if default
-step
-Go through the Large Pink Portal |goto Teldrassil,55.1,88.5
-Teleport to Darnassus |goto Darnassus |noway |c
-step
-label	"gil_buy"
-talk Lord Candren##50307
-buy Gilneas Tabard##64882 |goto Darnassus,37.1,47.5
-step
-label	"gil_tab"
-Equip your Gilneas Tabard |equipped Gilneas Tabard##64882 |use Gilneas Tabard##64882
-You can run any dungeon that grants experience to gain reputation for Gilneas.
-Friendly with Gilneas |condition rep('Gilneas')>=Friendly
-Honored with Gilneas |condition rep('Gilneas')>=Honored
-Revered with Gilneas |condition rep('Gilneas')>=Revered
-Become Exalted with Gilneas |condition rep('Gilneas')==Exalted
-next "menu"
-step
-label	"end"
-Congratulations, you have earned the Title _Ambassador_! |achieve 948
+Congratulations! You have earned the title Justicar!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Azeroth Titles\\Bloodsail Admiral",{
-author="support@zygorguides.com",
-description="This Guide will help you get Reputation to earn the title _The Insane_.",
-},[[
-step
-label	"menu"
-This guide will show you how to earn the Admiral Title the most efficient way possible.
-Honored with Bloodsail Buccaneers |condition rep('Bloodsail Buccaneeers')>=Honored
-Click to use the Buccaneers rep Guide |confirm |next "blood_grind"
-or |only if not completedq(26679)
-Click here if you would rather run the questline and farm Booty Bay while in a phased zone |confirm always |only if not completedq(26679)
-step
-label	"blood_quest"
-talk "Sea Wolf" MacKinley##2501
-accept Scaring Shaky##26593 |goto The Cape of Stranglethorn,42.1,73.4
-step
-kill Elder Mistvale Gorilla##1557+
-collect 5 Mistvale Giblets |q 26593/1 |goto 50.4,54.6
-step
-talk "Shaky" Phillipe##2502
-turnin Scaring Shaky##26593 |goto The Cape of Stranglethorn,40.5,67.7
-accept Return to MacKinley##26594 |goto The Cape of Stranglethorn,40.5,67.7
-step
-talk "Sea Wolf" MacKinley##2501
-turnin Return to MacKinley##26594 |goto 42.1,73.4
-accept Kill-Collect##26595 |goto 42.1,73.4
-step
-kill Freewheelin' Juntz Fitztittle##43376
-collect Fitztittle's Ratcheting Torque Wrench |q 26595/2 |goto The Cape of Stranglethorn,56.6,57.6
-step
-click Half-Buried Bottle##204406
-accept Message in a Bottle##26603 |goto The Cape of Stranglethorn 57.0,54.4
-step
-talk Ephram "Midriff" Moonfall##43377
-Tell him, So you kno why I'm here then. all right Midriff, pay up.
-kill Ephram "Midriff" Moonfall##43377
-collect Ephram's Jeweled Mirror |q 26595/3 |goto 57.8,48.6
-step
-kill Maury "Club Foot" Wilkins##2535
-collect Maury's Clubbed Foot |q 26595/1 |goto The Cape of Stranglethorn,59.7,49.2
-step
-talk Princess Poobah##2634
-turnin Message in a Bottle##26603 |goto The Cape of Stranglethorn 59.4,79.1
-accept Protecting Her Royal Highness Poobah##26604 |goto The Cape of Stranglethorn 59.4,79.1
-step
-kill Jaguero Stalker##2522+ |q 26604/1 |goto The Cape of Stranglethorn 58.4,80.4
-|tip They are stealthed around this area, so you may need to search a bit.
-step
-talk Princess Poobah##2634
-turnin Protecting Her Royal Highness Poobah##26604 |goto The Cape of Stranglethorn 59.4,79.1
-accept Grubby Little Paws##26605 |goto The Cape of Stranglethorn 59.4,79.1
-step
-kill Skymane Gorilla##2521+
-collect Poobah's Tiara##59057 |q 26605/1 |goto The Cape of Stranglethorn 62.6,78.2
-collect Poobah's Scepter##59058 |q 26605/2 |goto The Cape of Stranglethorn 62.6,78.2
-collect Poobah's Slippers##59059 |q 26605/3 |goto The Cape of Stranglethorn 62.6,78.2
-collect Poobah's Diary##59060 |q 26605/4 |goto The Cape of Stranglethorn 62.6,78.2
-step
-talk Princess Poobah##2634
-turnin Grubby Little Paws##26605 |goto The Cape of Stranglethorn 59.4,79.1
-accept Mukla's Demise##26606 |goto The Cape of Stranglethorn 59.4,79.1
-step
-kill King Mukla##1559+
-collect Shackle Key |q 26606/1 |goto The Cape of Stranglethorn 63.4,83.2
-step
-talk Princess Poobah##2634
-turnin Mukla's Demise##26606 |goto The Cape of Stranglethorn 59.4,79.1
-step
-talk "Sea Wolf" MacKinley##2501
-turnin Kill-Collect##26595 |goto 42.1,73.4
-step
-talk First Mate Crazz##2490
-accept The Bloodsail Buccaneers##26609 |goto 42.6,72.0
-step
-click Bloodsail Correspondence##183
-turnin The Bloodsail Buccaneers##26609 |goto 41.3,61.2
-accept Bloodsail Treachery##26610 |goto 41.3,61.2
-step
-talk First Mate Crazz##2490
-turnin Bloodsail Treachery##26610 |goto 42.6,72.0
-accept The Baron Must Be Told##26611 |goto 42.6,72.0
-step
-talk Baron Revilgaz##2496
-turnin The Baron Must Be Told##26611 |goto 41.2,73.1
-accept Details of the Attack##26612 |goto 41.2,73.1
-stickystart "bloodseamag"
-step
-click Bloodsail Orders##220
-collect Bloodsail Orders##220 |q 26612/4 |goto 45.0,79.7
-step "bloodseamag"
-click Bloodsail Charts##222
-collect Bloodsail Charts |q 26612/3 |goto 40.7,82.2
-kill 8 Bloodsail Sea Dog##1565 |q 26612/1 |goto 40.7,82.2
-kill 8 Bloodsail Elder Magus##1653+ |q 26612/2 |goto 40.7,82.2
-step
-talk Baron Revilgaz##2496
-turnin Details of the Attack##26612 |goto 41.2,73.1
-accept Getting In With the Bloodsail##26624 |goto 41.2,73.1
-step
-talk Yancey Grillsen##43504
-turnin Getting In With the Bloodsail##26624 |goto 43.8,56.5
-accept Seeing Where Your Loyalties Lie##26629 |goto 43.8,56.5
-step
-talk Fleet Master Seahorn##2487
-accept Looks Like a Tauren Pirate to Me##26630 |goto 41.1,73.3
-step
-talk Bossy##43505 |tip Upstairs in this store
-Tell Bossy _Moo_
-<Do the Deed.>  :'(
-collect Cow Head |q 26630/3 |goto 43.3,71.7
-step
-talk Narkk##2663
-Tell him _I need an extra-large pirate hat._
-collect Oversized Pirate Hat |q 26630/2 |goto 42.6,69.1
-step
-talk Fleet Master Seahorn##2487
-Tell him _Here' the head and the hat, Fleet Master._
-and _You're the boss._
-Return both items to Fleet Master Seahorn |q 26630/1 |goto 41.1,73.3
-turnin Looks Like a Tauren Pirate to Me##26630 |goto 41.1,73.3
-collect Head of Fleet Master Seahorn |q 26629/1 |goto 41.1,73.3
-step
-talk Yancey Grillsen##43504
-turnin Seeing Where Your Loyalties Lie##26629 |goto The Cape of Stranglethorn,43.8,56.5
-accept Your First Day as a Pirate##26631 |goto The Cape of Stranglethorn,43.8,56.5
-step
-talk Captain Keelhaul##2548
-turnin Your First Day as a Pirate##26631 |goto 44.4,91.5
-accept Swabbing Duty##26633 |goto 44.4,91.5
-step
-Go up to the ship deck and use a mop to swob a deck
-click Swabbie's Mop##09742
-clicknpc Deck Stain##43511a
-Swab the decks |q 26633/1
-|tip If you have trouble swabbing the decks, you can pay "Pretty Boy" Duncan, on the deck of the ship, 1 gold and he will do it for you.
-step
-talk Captain Keelhaul##2548
-turnin Swabbing Duty##26633 |goto 44.5,91.6
-step
-talk "Pretty Boy" Duncan##2545
-accept Cannonball Swim##26635 |goto 44.5,93.0
-step
-click Bloodsail Cannonball##153+
-collect 6 Bloodsail Cannonball |q 26635/1 |goto 47.3,95.5
-step
-talk "Pretty Boy" Duncan##2545
-turnin Cannonball Swim##26635 |goto 44.5,92.9
-step
-talk Garr Salthoof##2549
-accept The Bane of Many A Pirate##26634 |goto 44.5,91.9
-step
-click Lime Crate##2350+
-collect 5 Bushel of Limes |q 26634/1 |goto 41.9,83.0
-|tip You will get attacked by a lime thief when you loot these.
-You can find more crates around: [40.3,82.9]
-And [44.9,79.9]
-step
-talk Garr Salthoof##2549
-turnin The Bane of Many A Pirate##26634 |goto 44.5,91.9
-step
-talk Captain Keelhaul##2548
-accept Attracting Attention##26644 |goto 44.5,91.6
-step
-talk Fleet Master Firallon##2546
-turnin Attracting Attention##26644 |goto 46.7,95.3
-step
-talk Ironpatch##2547
-accept Ol' Blasty##26647 |goto 46.6,95.0
-step
-clicknpc Ol' Blasty##43562 |invehicle |c |q 26647 |goto 46.9,94.2
-Use your abilities to shoot the target dummy in the boat
-Hit Smilin' Timmy Sticks with a cannoball 5 times |q 26647/1 |goto 46.9,94.2
-step
-Click the Red Arrow on your action bar to exit the Cannon |outvehicle |c |q 26647
-step
-talk Ironpatch##2547
-turnin Ol' Blasty##26647 |goto 46.6,95.0
-accept Drive-By Piracy##26649 |goto 46.6,95.0
-step
-talk "Dead-Eye" Drederick McGumm##43556
-accept Our Mortal Enemies##26648 |goto 46.8,95.1
-step
-talk Bloodsail Oarsman##43605
-Tell him ahoy matey!
-Use the abilities on your hotbar to shoot at the Venture Co. Oil Workers
-|tip They look like goblins working on the metal machines.
-kill 75 Venture Co. Oil Worker##43596+ |q 26649/1 |goto 45.9,89.7
-step
-talk Ironpatch##2547
-turnin Drive-By Piracy##26649 |goto 46.6,95.0
-step
-Use Dead-Eye's Flare Gun to reveal the ninja's around this area |use Dead-Eye's Flare Gun##59226
-kill 15 Ninja##43553+ |q 26648/1 |goto 56.5,87.1
-Click the Complete Quest box in the top right of your screen
-trunin Our Mortal Enemies##26648 |goto 56.5,87.1
-step
-talk Fleet Master Firallon##2546
-accept The Damsel's Luck##26650 |goto 46.7,95.3
-step
-Go to the room below the stairs on this boat
-click Captain Stillwater's Charts##222
-turnin The Damsel's Luck##26650 |goto 50.3,91.4
-accept The Brashtide Crew##26662 |goto 50.3,91.4
-accept Sinking From Within##26663 |goto 50.3,91.4
-accept Making Mutiny##26664 |goto 50.3,91.4
-step
-talk Long John Copper##43659
-Tell him, _Long John Copper, is the Brashtide Crew ready for battle_
-|tip He's standing in the middle of the boat.
-Speak with Long John Copper |q 26662/1 |goto 51.3,91.4
-step
-click Grog Barrel##9095
-_Nudge the cork._
-Sabotage the Grog |q 26663/1 |goto 50.6,91.5
-step
-Go to the lower deck of the boat
-Talk to Bloodsail Corsair
-Tell them _You're a mutinous dog! Draw steel!_
-kill 9 Bloodsail Corsair##43636+ |q 26664/1
-Click the Complete Quest box in the right corner
-turnin Making Mutiny##26664
-You can also find Bloodsail Corsairs on the other boat around [46.8,93.7]
-step
-click Gunpowder Barrel##9095
-_Pour the water onto the gunpowder_
-Sabotage the Gunpowder |q 26663/2 |goto 46.8,93.7
-step
-talk Enormous Shawn Stooker##43660
-Tell him _What can you tell me about the Brashtide Crew?_
-|tip Standing on the bottom deck of the boat.
-Speak with Enormous Shawn Stooker |q 26662/2 |goto 46.8,94.2
-step
-talk Wailing Mary Smitts##43661 |tip Standing in the middle of the boat
-Tell her _You know the battle plan, right?_
-Speak with Wailing Mary Smitts |q 26662/3 |goto 44.5,93.2
-Click the Complete Quest box in the right corner
-turnin The Brashtide Crew##26662
-step
-click Cannonball Crate##9651 |tip It's on the lowest deck of the ship.
-_Grease the Cannonballs_
-Sabotage the Cannonballs |q 26663/3 |goto 44.6,92.8
-Click the Complete Quest box in the right corner
-turnin Sinking From Within##26663
-accept Call of Booty##26665
-step
-talk Baron Revilgaz##2496
-turnin Call of Booty##26665 |goto 41.2,73.1
-accept Doublerum##26678 |goto 41.2,73.1
-step
-click Barrel of Doublerum##32
-Just down the stairs in the room on the right
-collect Barrel of Doublerum |q 26678/1 |goto 40.6,73.2
-turnin Doublerum##26678 |goto 40.6,73.2
-accept Return to Revilgaz##26679 |goto 40.6,73.2
-step
-_WARNING WARNING WARNING_
-DO NOT TURN IN THIS QUEST
-You can kill _Booty Bay citizens_ and gain repuation with the Bloodsail Buccaneers
-|tip You will lose reputation with ALL Steemwheedle Cartel if you do this
-Click here to gain reputation with the Bloodsail Buccaneers |confirm |next "Bloodsail_grind"
-step
-label	"Bloodsail_grind"
-Kill any Booty Bay Citizen in this area to gain reputation with Bloodsaid Buccaneers
-|tip To attack them, open your Factions list, scroll down and find Booty Bay. Click on Booty Bay and check the At War box.
-In order to accept the quest needed for the title "Bloodsail Admiral" you must be Friendly with the Bloodsail Buccaneers and Hated with Booty Bay.
-Hated with Bloodsail |condition rep('Bloodsail Buccaneers')>=Hated |only if rep('Bloodsail Buccaneers')<=Hated
-Hostile with Bloodsail |condition rep('Bloodsail Buccaneers')>=Hostile |only if rep('Bloodsail Buccaneers')<=Hostile
-Unfriendly with Bloodsail |condition rep('Bloodsail Buccaneers')>=Unfriendly |only if rep('Bloodsail Buccaneers')<=Unfriendly
-Neutral with Bloodsail |condition rep('Bloodsail Buccaneers')>=Neutral |only if rep('Bloodsail Buccaneers')<=Neutral
-Friendly with Bloodsail |condition rep('Bloodsail Buccaneers')>=Friendly
-Hated with Booty Bay |condition rep('Booty Bay')==Hated
-step
-talk "Pretty Boy" Duncan##2545
-accept Avast Ye, Scallywag##1036 |goto 44.5,93.0
-step
-talk Fleet Master Firallon##2546
-turnin Avast Ye, Scallywag##1036 |goto 46.7,95.3
-accept Avast Ye, Admiral!##4621 |goto 46.7,95.3
-step
-kill Fleet Master Seahorn##2487 |q 4621/2 |goto 41.6,73.0
-step
-kill Baron Revilgaz##2496 |q 4621/1 |goto 41.1,73.1
-step
-talk Fleet Master Firallon##2546
-turnin Avast Ye, Admiral!##4621 |goto 46.7,95.3
-step
-Congratulations! You have earned the title Bloodsail Admiral!
-Click here to farm your rep with Booty Bay again.
-|tip Any Steamwheedle Cartel town will be hostile toward you. Farming your reputation back up now would save you from being attacked when you enter one of these towns. |confirm
-Or
-Click here to continue |confirm |next "end"
-step
-You can stay here and grind reputation with Booty Bay by killing Bloodsail Corsair
-from Bloodsail Corsair##43726+ |goto 41.3,71.2
-Hated with Booty Bay |condition rep('Booty Bay')>=Hated |only if rep('Booty Bay')<=Hated
-Hostile with Booty Bay |condition rep('Booty Bay')>=Hostile |only if rep('Booty Bay')<=Hostile
-Unfriendly with Booty Bay |condition rep('Booty Bay')>=Unfriendly |only if rep('Booty Bay')<=Unfriendly
-Neutral with Booty Bay |condition rep('Booty Bay')>=Neutral |only if rep('Booty Bay')<=Neutral
-Friendly with Booty Bay |condition rep('Booty Bay')>=Friendly |only if rep('Booty Bay')<=Friendly
-Honored with Booty Bay |condition rep('Booty Bay')>=Honored |only if rep('Booty Bay')<=Honored
-Revered with Booty Bay |condition rep('Booty Bay')>=Revered |only if rep('Booty Bay')<=Revered
-Exalted with Booty Bay |condition rep('Booty Bay')>=Exalted |only if rep('Booty Bay')<=Exalted
-If you are at least Neutral with Booty Bay you can begin doing quests in this Area to gain rep faster.
-Click here to start questing |confirm |next "booty_quest" |only if rep('Booty Bay')>=Neutral
-|next "end" |only if rep('Booty Bay')<=Unfriendly
-step
-label	"booty_quest"
-talk Baron Revilgaz##2496
-turnin Return to Revilgaz##26679 |goto 41.1,73.1
-accept Prepare for Takeoff##26695 |goto 41.1,73.1
-accept Seeking Seahorn##26698 |goto 41.1,73.1
-step
-talk Fleet Master Seahorn##2487
-turnin Seeking Seahorn##26698 |goto 41.5,73.0
-accept The Damsel's (Bad) Luck##26700 |goto 41.5,73.0
-accept Turning the Brashtide##26699 |goto 41.5,73.0
-stickystart "brashraid"
-step
-click Narkk's Handbombs##9651
-collect Narkk's Handbombs |q 26695/1 |goto 42.6,69.1
-step "brashraid"
-kill 10 Brashtide Raider##43716+ |q 26699/1
-step
-click Blackwater Rope##7538 |goto 41.5,73.0
-Swing over to the boat |goto 41.0,70.7,0.5 |noway |c
-step
-kill 8 Bloodsail Corsair##43726+ |q 26700/1 |goto 41.4,71.0
-step
-click Blackwater Rope##7538 |goto 41.1,70.9
-Swing to the docks |goto 41.5,73.0,0.5 |noway |c
-step
-talk Baron Revilgaz##2496
-turnin Turning the Brashtide##26699 |goto 41.1,73.2
-turnin The Damsel's (Bad) Luck##26700 |goto 41.1,73.2
-turnin Prepare for Takeoff##26695 |goto 41.1,73.2
-accept The Final Voyage of the Brashtide##26697 |goto 41.1,73.2
-step
-talk Kebok##737 |goto The Cape of Stranglethorn,40.4,73.4
-Tell him _Sorry, not here to chat. I need a wind rider_ |invehicle |noway |c
-step
-Use the _Throw Handbombs_ key on your action bar
-kill 85 Brashtide Crewman##43717+ |q 26697/1
-Destoy 6 Brashtide Attack Boats |q 26697/2 |modelnpc 43790
-Use your _Return to Booty Bay_ button |outvehicle |noway |c
-step
-talk Baron Revilgaz##2496
-turnin The Final Voyage of the Brashtide##26697 |goto 41.1,73.2
-accept Bloodsail's End##26703 |goto 41.1,73.2
-step
-kill Fleet Master Firallon##2546 |q 26703/1 |goto 35.7,66.8
-step
-talk Baron Revilgaz##2496
-turnin Bloodsail's End##26703 |goto 41.2,73.1
-next "end"
-step
-label	"blood_grind"
-You will need a full group of 4 or 5 people to be able to reasonably farm Booty Bay for Bloodsail Reputation.
-Once you have acquired a group, including a healer and tank, you can proceed
-Click to continue |confirm
-step
-We suggest starting in this tunnel so you do not get overwhelmed by guards.
-Set your Booty Bay social bar to _At War_ and begin killing Booty Bay Bruisers
-kill Booty Bay Bruiser##4624+ |goto The Cape of Stranglethorn 42.5,67.4
-You will lose reputation with the Steemwheedle Cartel but you will gain 25 points of reputation with each kill
-Hated with Bloodsail |condition rep('Bloodsail Buccaneers')>=Hated |only if rep('Bloodsail Buccaneers')<=Hated
-Hostile with Bloodsail |condition rep('Bloodsail Buccaneers')>=Hostile |only if rep('Bloodsail Buccaneers')<=Hostile
-Unfriendly with Bloodsail |condition rep('Bloodsail Buccaneers')>=Unfriendly |only if rep('Bloodsail Buccaneers')<=Unfriendly
-Neutral with Bloodsail |condition rep('Bloodsail Buccaneers')>=Neutral |only if rep('Bloodsail Buccaneers')<=Neutral
-Friendly with Bloodsail |condition rep('Bloodsail Buccaneers')>=Friendly |only if rep('Bloodsail Buccaneers')<=Friendly
-Honored with Bloodsail |condition rep('Bloodsail Buccaneers')>=Honored
-step
-label	"end"
-Congratulations, you have earned the _Bloodsail Admiral_ title!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Azeroth Titles\\Jenkins",{
-author="support@zygorguides.com",
-description="This guide will show you how to earn the Jenkins Title.",
-},[[
-step
-This achievement will require you to kill 50 rookery whelps within 15 seconds.
-It will help if you have a group of at least 2-3 players.
-confirm
-step
-Enter Blackrock Mountain here |goto Burning Steppes 21.0,38.0 < 5
-Follow this hallway, up and to the right, to Blackrock Spire |goto 24.8,30.1 < 5
-step
-Enter Blackrock Spire here | goto 24.3,25.7 < 5
-Follow the ramp up and to the left and enter the hallway _Dragonspire Hall_
-Kill all the mobs in the room to the left, including all the little side rooms
-Go through the door at the end of the room once you have killed all mobs here
-confirm
-step
-Run to the left side of the room _Hall of Binding_
-click Blackrock Altar##04076
-kill Pyroguard Emberseer##9816 |n
-confirm
-step
-Continue through the next door into _The Rookery_
-kill 50 Rookery Whelp##10161+ |achieve 2188/1
-|tip You have 15 seconds from the first kill to get the rest of the 50.
-step
-Congratulations! You have earned the Title _Jenkins_!!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Azeroth Titles\\Argent Champion\\Argent Dawn Reputation",{
-author="support@zygorguides.com",
-description="This guide will show you how to earn the Argent Champion Title.",
-},[[
-#include "A_Eastern_Plaguelands_Argent_Dawn_Revered"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Azeroth Titles\\Argent Champion\\Argent Crusade Reputation",{
-author="support@zygorguides.com",
-description="This guide will show you how to earn the Argent Champion Title.",
-},[[
-#include "A_Icecrown_Argent_Crusade_Rep"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Outland Titles\\Of the Shattered Sun\\Dailies and Title",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Reputations\\Of the Shattered Sun",{
 author="support@zygorguides.com",
 description="This Guide will help you get your Reputation to Exalted to earn the title of the Shattered Sun.",
 },[[
 #include "A_SSO_PreQuest_Dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Northrend Titles\\Crusader, Home Cities Titles\\Human Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\The Astral Walker",{
 author="support@zygorguides.com",
-description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Human race.\nYou must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section.\nYou cannot complete this section if you are a Human.",
 },[[
-daily
 step
-In order to be able to do this guide section, you must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
-After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction.  Earning Champion rank with all the races of your faction, as well as becoming Exalted with Darnassus, Exodar, Gnomeregan Exiles, Ironforge, and Stormwind factions will earn you the Crusader title, and unlock more daily quests.
-You cannot complete this section if you are a Human.
-confirm always
+This title is earned by completing the _Observed (25 player)_ achievement from Ulduar.
+Traverse Ulduar and defeat Algalon the Observer.
+kill Algalon the Observer##32871
+achieve 3037
 step
-talk Marshal Jacob Alerius##33225
-accept Valiant Of Stormwind##13593 |goto Icecrown,76.6,19.1
-turnin Valiant Of Stormwind##13593 |goto Icecrown,76.6,19.1
-accept The Valiant's Charge##13718 |goto Icecrown,76.6,19.1
-step
-talk Marshal Jacob Alerius##33225
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
-accept A Blade Fit For A Champion##13603 |goto Icecrown,76.6,19.1 |or
-accept A Worthy Weapon##13600 |goto Icecrown,76.6,19.1 |or
-accept The Edge Of Winter##13616 |goto Icecrown,76.6,19.1 |or
-step
-talk Sir Marcus Barlowe##33222
-accept A Valiant's Field Training##13592 |goto 76.5,19.1
-step
-talk Captain Joseph Holley##33223
-accept The Grand Melee##13665 |goto 76.6,19.2
-accept At The Enemy's Gates##13847 |goto 76.6,19.2
-step
-Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
-Target Lake Frogs
-Use the emote /kiss on the Lake Frogs
-Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
-talk Maiden of Ashwood Lake##33220
-collect Ashwood Brand |q 13603/1 |goto Grizzly Hills,61.2,50.3
-step
-click Winter Hyacinth##3231
-collect 4 Winter Hyacinth##45000 |q 13600 |goto Icecrown,69.1,76.2
-step
-Use Winter Hyacinths in the water here|use Winter Hyacinth##45000
-Listen to the Maiden of Drak'Mar
-click Blade of Drak'Mar##8564
-collect Blade of Drak'Mar |q 13600/1 |goto Dragonblight,93.2,26.1
-step
-kill Lord Everblaze##33289
-collect 1 Everburning Ember##45005 |q 13616 |goto Crystalsong Forest,54.5,74.9
-step
-Use the Everburning Ember on Maiden of Winter's Breath|use Everburning Ember##45005
-collect Winter's Edge |q 13616/1 |goto Howling Fjord,42.2,19.7
-step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
-Click to mount the Stabled Campaign Warhorse |invehicle |q 13847 |goto Icecrown,48.9,71.4
-step
-kill 15 Boneguard Footman##33438 |q 13847/1 |goto 50.1,74.8
-|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
-kill 10 Boneguard Scout##33550 |q 13847/2 |goto 50.1,74.8
-|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
-kill 3 Boneguard Lieutenant##33429 |q 13847/3 |goto 50.1,74.8
-|tip They ride horses around this area.  Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
-step
-Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13847 |goto 49.1,71.4
-step
-kill 10 Converted Hero##32255 |q 13592/1 |goto 44.3,54.2
-step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
-Click to mount the Stabled Stormwind Steed |invehicle |q 13665 |goto 76.1,20.5
-step
-Talk to the riders on mounts of other Alliance races
-Tell them you are ready to fight!
-Fight and defeat them
-|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
-collect 3 Mark of the Valiant |q 13665/1 |goto 75.3,18.5
-step
-talk Marshal Jacob Alerius##33225
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
-turnin A Blade Fit For A Champion##13603 |goto 76.6,19.1
-turnin A Worthy Weapon##13600 |goto 76.6,19.1
-turnin The Edge Of Winter##13616 |goto 76.6,19.1
-step
-talk Sir Marcus Barlowe##33222
-turnin A Valiant's Field Training##13592 |goto 76.5,19.1
-step
-talk Captain Joseph Holley##33223
-turnin The Grand Melee##13665 |goto 76.6,19.2
-turnin At The Enemy's Gates##13847 |goto 76.6,19.2
-step
-Make sure you have 25 Valiant Seals:
-collect 25 Valiant's Seal |q 13718/1
-|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
-step
-talk Marshal Jacob Alerius##33225
-turnin The Valiant's Charge##13718 |goto 76.6,19.2
-accept The Valiant's Challenge##13699 |goto 76.6,19.2
-step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
-Click to mount the Stabled Stormwind Steed |invehicle |q 13699 |goto 76.1,20.5
-step
-talk Squire Danny##33518
-Tell him you are ready to fight!
-An Argent Champion runs up on a horse
-Use the abilities on your hotbar to defeat the Argent Champion
-|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
-Defeat the Argent Valiant |q 13699/1 |goto 68.6,21.0
-step
-talk Marshal Jacob Alerius##33225
-turnin The Valiant's Challenge##13699 |goto 76.6,19.2
-step
-Congratulations, you are now a Champion of Stormwind!
-|tip This is the end of the Human Champion Rank Guide for the Crusader Title.
+Congratulations! You have earned the title The Astral Walker
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Northrend Titles\\Crusader, Home Cities Titles\\Night Elf Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Bane of the Fallen King",{
 author="support@zygorguides.com",
-description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Night Elf race.\nYou must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section.\nYou cannot complete this section if you are a Night Elf.",
 },[[
-daily
 step
-In order to be able to do this guide section, you must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
-After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction.  Earning Champion rank with all the races of your faction, as well as becoming Exalted with Darnassus, Exodar, Gnomeregan Exiles, Ironforge, and Stormwind factions will earn you the Crusader title, and unlock more daily quests.
-You cannot complete this section if you are a Night Elf.
-confirm always
+This title is earned by completing the _Bane of the Fallen King_ achievement from 10 player Heroic: Icecrown Citadel.
+Traverse Icecrown Citadel on Heroic difficulty and defeat The Lich King.
+kill The Lich King##36597
+achieve 4583
 step
-talk Jaelyne Evensong##33592
-accept Valiant Of Darnassus##13706 |goto Icecrown,76.3,19.0
-turnin Valiant Of Darnassus##13706 |goto Icecrown,76.3,19.0
-accept The Valiant's Charge##13717 |goto Icecrown,76.3,19.0
-step
-talk Jaelyne Evensong##33592
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
-accept A Blade Fit For A Champion##13757 |goto Icecrown,76.3,19.0 |or
-accept A Worthy Weapon##13758 |goto Icecrown,76.3,19.0 |or
-accept The Edge Of Winter##13759 |goto Icecrown,76.3,19.0 |or
-step
-talk Illestria Bladesinger##33652
-accept A Valiant's Field Training##13760 |goto 76.3,19.0
-step
-talk Airae Starseeker##33654
-accept The Grand Melee##13761 |goto 76.4,19.0
-accept At The Enemy's Gates##13855 |goto 76.4,19.0
-step
-Use the Warts-B-Gone Lip Balm|use Warts-B-Gone Lip Balm##44986
-Target Lake Frogs
-Use the emote /kiss on the Lake Frogs
-Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
-talk Maiden of Ashwood Lake##33220
-collect Ashwood Brand |q 13757/1 |goto Grizzly Hills,61.2,50.3
-step
-click Winter Hyacinth##3231
-collect 4 Winter Hyacinth##45000 |q 13758 |goto Icecrown,69.1,76.2
-step
-Use Winter Hyacinths in the water here|use Winter Hyacinth##45000
-Listen to the Maiden of Drak'Mar
-click Blade of Drak'Mar##8564
-collect Blade of Drak'Mar |q 13758/1 |goto Dragonblight,93.2,26.1
-step
-kill Lord Everblaze##33289
-collect 1 Everburning Ember##45005 |q 13759 |goto Crystalsong Forest,54.5,74.9
-step
-Use the Everburning Ember on Maiden of Winter's Breath |use Everburning Ember##45005
-collect Winter's Edge |q 13759/1 |goto Howling Fjord,42.2,19.7
-step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
-Click to mount the Stabled Campaign Warhorse |invehicle |q 13855 |goto Icecrown,48.9,71.4
-step
-kill 15 Boneguard Footman##33438 |q 13855/1 |goto 50.1,74.8
-|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
-kill 10 Boneguard Scout##33550 |q 13855/2 |goto 50.1,74.8
-|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
-kill 3 Boneguard Lieutenant##33429 |q 13855/3 |goto 50.1,74.8
-|tip They ride horses around this area.  Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
-step
-Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13855 |goto 49.1,71.4
-step
-kill 10 Converted Hero##32255 |q 13760/1 |goto 44.3,54.2
-step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
-Click to mount the Stabled Darnassian Nightsaber |invehicle |q 13761 |goto 76.0,20.4
-step
-Talk to the riders on mounts of other Alliance races
-Tell them you are ready to fight!
-Fight and defeat them
-|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
-collect 3 Mark of the Valiant |q 13761/1 |goto 75.3,18.5
-step
-talk Jaelyne Evensong##33592
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
-turnin A Blade Fit For A Champion##13757 |goto 76.3,19.0
-turnin A Worthy Weapon##13758 |goto 76.3,19.0
-turnin The Edge Of Winter##13759 |goto 76.3,19.0
-step
-talk Illestria Bladesinger##33652
-turnin A Valiant's Field Training##13760 |goto 76.3,19.0
-step
-talk Airae Starseeker##33654
-turnin The Grand Melee##13761 |goto 76.4,19.0
-turnin At The Enemy's Gates##13855 |goto 76.4,19.0
-step
-Make sure you have 25 Valiant Seals:
-collect 25 Valiant's Seal |q 13717/1
-|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
-step
-talk Jaelyne Evensong##33592
-turnin The Valiant's Charge##13717 |goto 76.3,19.1
-accept The Valiant's Challenge##13725 |goto 76.3,19.1
-step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
-Click to mount the Stabled Darnassian Nightsaber |invehicle |q 13725 |goto 76.0,20.4
-step
-talk Squire Danny##33518
-Tell him you are ready to fight!
-An Argent Champion runs up on a horse
-Use the abilities on your hotbar to defeat the Argent Champion
-|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
-Defeat the Argent Valiant |q 13725/1 |goto 68.6,21.0
-step
-talk Jaelyne Evensong##33592
-turnin The Valiant's Challenge##13725 |goto 76.3,19.1
-step
-Congratulations, you are now a Champion of Darnassus! |tip This is the end of the Night Elf Champion Rank Guide for the Crusader Title.
+Congratulations! You have earned the title Bane of the Fallen King!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Northrend Titles\\Crusader, Home Cities Titles\\Dwarf Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Champion of the Frozen Wastes",{
 author="support@zygorguides.com",
-description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Dwarf race.\nYou must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section.\nYou cannot complete this section if you are a Dwarf.",
 },[[
-daily
 step
-In order to be able to do this guide section, you must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
-After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction.  Earning Champion rank with all the races of your faction, as well as becoming Exalted with Darnassus, Exodar, Gnomeregan Exiles, Ironforge, and Stormwind factions will earn you the Crusader title, and unlock more daily quests.
-You cannot complete this section if you are a Dwarf.
-confirm always
+This title is earned by completing the _Champion of the Frozen Wastes_ achievement.
+Complete every Wrath of the Lich King Heroic Instance, with the exception of The Forge of Souls, the Pit of Saron, and the Halls of Reflection. Then defeat the final bosses in The Eye of Eternity, Naxxramas, and The Obsidian Sanctum.
+achieve 1658
 step
-talk Lana Stouthammer##33312
-accept Valiant Of Ironforge##13703 |goto Icecrown,76.3,19.0
-turnin Valiant Of Ironforge##13703 |goto Icecrown,76.3,19.0
-accept The Valiant's Charge##13714 |goto Icecrown,76.3,19.0
-step
-talk Lana Stouthammer##33312
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
-accept A Blade Fit For A Champion##13741 |goto Icecrown,76.6,19.5 |or
-accept A Worthy Weapon##13742 |goto Icecrown,76.6,19.5 |or
-accept The Edge Of Winter##13743 |goto Icecrown,76.6,19.5 |or
-step
-talk Rollo Sureshot##33315
-accept A Valiant's Field Training##13744 |goto 76.7,19.4
-step
-talk Clara Tumblebrew##33309
-accept The Grand Melee##13745 |goto 76.6,19.6
-accept At The Enemy's Gates##13851 |goto 76.6,19.6
-step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
-Click to mount the Stabled Ironforge Ram |invehicle |q 13745 |goto 76.3,20.5
-step
-Talk to the riders on mounts of other Alliance races
-Tell them you are ready to fight!
-Fight and defeat them  |tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
-collect 3 Mark of the Valiant |q 13745/1 |goto 75.3,18.5
-step
-kill 10 Converted Hero##32255 |q 13744/1 |goto 44.3,54.2
-step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
-Click to mount the Stabled Campaign Warhorse |invehicle |q 13851 |goto Icecrown,48.9,71.4
-step
-kill 15 Boneguard Footman##33438 |q 13851/1 |goto 50.1,74.8
-|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
-kill 10 Boneguard Scout##33550 |q 13851/2 |goto 50.1,74.8
-|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
-kill 3 Boneguard Lieutenant##33429 |q 13851/3 |goto 50.1,74.8
-|tip They ride horses around this area.  Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
-step
-Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13851 |goto 49.1,71.4
-step
-Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
-Target Lake Frogs
-Use the emote /kiss on the Lake Frogs
-Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
-talk Maiden of Ashwood Lake##33220
-collect Ashwood Brand |q 13741/1 |goto Grizzly Hills,61.2,50.3
-step
-click Winter Hyacinth##3231
-collect 4 Winter Hyacinth##45000 |q 13742 |goto Icecrown,69.1,76.2
-step
-Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
-Listen to the Maiden of Drak'Mar
-click Blade of Drak'Mar##8564
-collect Blade of Drak'Mar |q 13742/1 |goto Dragonblight,93.2,26.1
-step
-kill Lord Everblaze##33289
-collect 1 Everburning Ember##45005 |q 13743 |goto Crystalsong Forest,54.5,74.9
-step
-Use the Everburning Ember on Maiden of Winter's Breath|use Everburning Ember##45005
-collect Winter's Edge |q 13743/1 |goto Howling Fjord,42.2,19.7
-step
-talk Lana Stouthammer##33312
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
-turnin A Blade Fit For A Champion##13741 |goto Icecrown,76.6,19.5
-turnin A Worthy Weapon##13742 |goto Icecrown,76.6,19.5
-turnin The Edge Of Winter##13743 |goto Icecrown,76.6,19.5
-step
-talk Rollo Sureshot##33315
-turnin A Valiant's Field Training##13744 |goto 76.7,19.4
-step
-talk Clara Tumblebrew##33309
-turnin The Grand Melee##13745 |goto 76.6,19.6
-turnin At The Enemy's Gates##13851 |goto 76.6,19.6
-step
-Make sure you have 25 Valiant Seals:
-collect 25 Valiant's Seal |q 13717/1
-|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
-step
-talk Jaelyne Evensong##33592
-turnin The Valiant's Charge##13714 |goto 76.3,19.1
-accept The Valiant's Challenge##13713 |goto 76.3,19.1
-step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
-Click to mount the Stabled Ironforge Ram |invehicle |q 13713 |goto 76.3,20.5
-step
-talk Squire Danny##33518
-Tell him you are ready to fight!
-An Argent Champion runs up on a horse
-Use the abilities on your hotbar to defeat the Argent Champion
-|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.
-When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.
-|tip Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
-Defeat the Argent Valiant |q 13713/1 |goto 68.6,21.0
-step
-talk Jaelyne Evensong##33592
-turnin The Valiant's Challenge##13713 |goto 76.3,19.1
-step
-Congratulations, you are now a Champion of Ironforge! |tip This is the end of the Dwarf Champion Rank Guide for the Crusader Title.
+Congratulations! You have earned the title "Champion of the Frozen Wastes"!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Northrend Titles\\Crusader, Home Cities Titles\\Gnome Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\The Kingslayer",{
 author="support@zygorguides.com",
-description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Gnome race.\nYou must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section.\nYou cannot complete this section if you are a Gnome.",
 },[[
-daily
 step
-In order to be able to do this guide section, you must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
-After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction.  Earning Champion rank with all the races of your faction, as well as becoming Exalted with Darnassus, Exodar, Gnomeregan Exiles, Ironforge, and Stormwind factions will earn you the Crusader title, and unlock more daily quests.
-You cannot complete this section if you are a Gnome.
-confirm always
+This title is earned by completing the _"The Frozen Throne"_ achievement from the Icecrown Citadel raid. This can be completed on either 10 or 25 player.
+Traverse Icecrown Citadel raid and defeat The Lich King.
+kill The Lich King##36597
+achieve 4530 |or
+achieve 4597 |or
 step
-talk Ambrose Boltspark##33335
-accept Valiant Of Gnomeregan##13704 |goto Icecrown,76.5,19.8
-turnin Valiant Of Gnomeregan##13704 |goto Icecrown,76.5,19.8
-accept The Valiant's Charge##13715 |goto Icecrown,76.5,19.8
-step
-talk Ambrose Boltspark##33335
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
-accept A Blade Fit For A Champion##13746 |goto 76.5,19.8 |or
-accept A Worthy Weapon##13747 |goto 76.5,19.8 |or
-accept The Edge Of Winter##13748 |goto 76.5,19.8 |or
-step
-talk Tickin Gearspanner##33648
-accept A Valiant's Field Training##13749 |goto 76.6,19.8
-step
-talk Flickin Gearspanner##33649
-accept The Grand Melee##13750 |goto 76.5,19.9
-accept At The Enemy's Gates##13852 |goto 76.5,19.9
-step
-Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
-Target Lake Frogs
-Use the emote /kiss on the Lake Frogs
-Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
-talk Maiden of Ashwood Lake##33220
-collect Ashwood Brand |q 13746/1 |goto Grizzly Hills,61.2,50.3
-step
-click Winter Hyacinth##3231
-collect 4 Winter Hyacinth##45000 |q 13747 |goto Icecrown,69.1,76.2
-step
-Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
-Listen to the Maiden of Drak'Mar
-click Blade of Drak'Mar##8564
-collect Blade of Drak'Mar |q 13747/1 |goto Dragonblight,93.2,26.1
-step
-kill Lord Everblaze##33289
-collect 1 Everburning Ember##45005 |q 13748 |goto Crystalsong Forest,54.5,74.9
-step
-Use the Everburning Ember on Maiden of Winter's Breath |use Everburning Ember##45005
-collect Winter's Edge |q 13748/1 |goto Howling Fjord,42.2,19.7
-step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
-Click to mount the Stabled Campaign Warhorse |invehicle |q 13852 |goto Icecrown,48.9,71.4
-step
-kill 15 Boneguard Footman##33438 |q 13852/1 |goto 50.1,74.8
-|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
-kill 10 Boneguard Scout##33550 |q 13852/2 |goto 50.1,74.8
-|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
-kill 3 Boneguard Lieutenant##33429 |q 13852/3 |goto 50.1,74.8
-|tip They ride horses around this area.  Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
-step
-Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13852 |goto 49.1,71.4
-step
-kill 10 Converted Hero##32255 |q 13749/1 |goto 44.3,54.2
-step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
-Click to mount the Stabled Gnomeregan Mechanostrider |invehicle |q 13750 |goto 76.2,20.5
-step
-Talk to the riders on mounts of other Alliance races
-Tell them you are ready to fight!
-Fight and defeat them
-|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
-collect 3 Mark of the Valiant |q 13750/1 |goto 75.3,18.5
-step
-talk Ambrose Boltspark##33335
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
-turnin A Blade Fit For A Champion##13746 |goto 76.5,19.8
-turnin A Worthy Weapon##13747 |goto 76.5,19.8
-turnin The Edge Of Winter##13748 |goto 76.5,19.8
-step
-talk Tickin Gearspanner##33648
-turnin A Valiant's Field Training##13749 |goto 76.6,19.8
-step
-talk Flickin Gearspanner##33649
-turnin The Grand Melee##13750 |goto 76.5,19.9
-turnin At The Enemy's Gates##13852 |goto 76.5,19.9
-step
-Make sure you have 25 Valiant Seals:
-collect 25 Valiant's Seal |q 13715/1
-|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
-step
-talk Ambrose Boltspark##33335
-turnin The Valiant's Charge##13715 |goto 76.5,19.8
-accept The Valiant's Challenge##13723 |goto 76.5,19.8
-step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
-Click to mount the Stabled Gnomeregan Mechanostrider |invehicle |q 13723 |goto 71.9,22.5
-step
-talk Squire Danny##33518
-Tell him you are ready to fight!
-An Argent Champion runs up on a horse
-Use the abilities on your hotbar to defeat the Argent Champion
-|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
-Defeat the Argent Valiant |q 13723/1 |goto 68.6,21.0
-step
-talk Ambrose Boltspark##33335
-turnin The Valiant's Challenge##13723 |goto 76.5,19.8
-step
-Congratulations, you are now a Champion of Gnomeregan!
-|tip This is the end of the Gnome Champion Rank Guide for the Crusader Title.
+Congratulations! You have earned the title The Kingslayer!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Northrend Titles\\Crusader, Home Cities Titles\\Draenei Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\The Light of Dawn",{
 author="support@zygorguides.com",
-description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Draenei race.\nYou must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section.\nYou cannot complete this section if you are a Draenei.",
 },[[
-daily
 step
-In order to be able to do this guide section, you must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
-After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction.  Earning Champion rank with all the races of your faction, as well as becoming Exalted with Darnassus, Exodar, Gnomeregan Exiles, Ironforge, and Stormwind factions will earn you the Crusader title, and unlock more daily quests.
-You cannot complete this section if you are a Draenei.
-confirm always
+This title is earned by completing the _"The Light of Dawn"_ achievement from 25 player Heroic: Icecrown Citadel.
+Traverse Icecrown Citadel on Heroic difficulty and defeat The Lich King.
+kill The Lich King##36597
+achieve 4584
 step
-talk Colosos##33593
-accept Valiant Of The Exodar##13705 |goto Icecrown,76.1,19.1
-turnin Valiant Of The Exodar##13705 |goto Icecrown,76.1,19.1
-accept The Valiant's Charge##13716 |goto Icecrown,76.1,19.1
-step
-talk Colosos##33593
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
-accept A Blade Fit For A Champion##13752 |goto 76.1,19.1 |or
-accept A Worthy Weapon##13753 |goto 76.1,19.1 |or
-accept The Edge Of Winter##13754 |goto 76.1,19.1 |or
-step
-talk Saandos##33655
-accept A Valiant's Field Training##13755 |goto 76.1,19.2
-step
-talk Ranii##33656
-accept The Grand Melee##13756 |goto 76.2,19.1
-accept At The Enemy's Gates##13854 |goto 76.2,19.1
-step
-Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
-Target Lake Frogs
-Use the emote /kiss on the Lake Frogs
-Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
-talk Maiden of Ashwood Lake##33220
-collect Ashwood Brand |q 13752/1 |goto Grizzly Hills,61.2,50.3
-step
-click Winter Hyacinth##3231
-collect 4 Winter Hyacinth##45000 |q 13753 |goto Icecrown,69.1,76.2
-step
-Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
-Listen to the Maiden of Drak'Mar
-click Blade of Drak'Mar##8564
-collect Blade of Drak'Mar |q 13753/1 |goto Dragonblight,93.2,26.1
-step
-kill Lord Everblaze##33289
-collect 1 Everburning Ember##45005 |q 13754 |goto Crystalsong Forest,54.5,74.9
-step
-Use the Everburning Ember on Maiden of Winter's Breath|use Everburning Ember##45005
-collect Winter's Edge |q 13754/1 |goto Howling Fjord,42.2,19.7
-step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
-Click to mount the Stabled Campaign Warhorse |invehicle |q 13854 |goto Icecrown,48.9,71.4
-step
-kill 15 Boneguard Footman##33438 |q 13854/1 |goto 50.1,74.8
-|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
-kill 10 Boneguard Scout##33550 |q 13854/2 |goto 50.1,74.8
-|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
-kill 3 Boneguard Lieutenant##33429 |q 13854/3 |goto 50.1,74.8
-|tip They ride horses around this area.  Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
-step
-Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13854 |goto 49.1,71.4
-step
-kill 10 Converted Hero##32255 |q 13755/1 |goto 44.3,54.2
-step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
-Click to mount the Stabled Exodar Elekk |invehicle |q 13756 |goto 76.4,20.5
-step
-Talk to the riders on mounts of other Alliance races
-Tell them you are ready to fight!
-Fight and defeat them |tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
-collect 3 Mark of the Valiant |q 13756/1 |goto 75.3,18.5
-step
-talk Colosos##33593
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
-turnin A Blade Fit For A Champion##13752 |goto 76.1,19.1
-turnin A Worthy Weapon##13753 |goto 76.1,19.1
-turnin The Edge Of Winter##13754 |goto 76.1,19.1
-step
-talk Saandos##33655
-turnin A Valiant's Field Training##13755 |goto 76.1,19.2
-step
-talk Ranii##33656
-turnin The Grand Melee##13756 |goto 76.2,19.1
-turnin At The Enemy's Gates##13854 |goto 76.2,19.1
-step
-Make sure you have 25 Valiant Seals:
-collect 25 Valiant's Seal |q 13716/1
-|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
-step
-talk Colosos##33593
-turnin The Valiant's Charge##13716 |goto 76.1,19.2
-accept The Valiant's Challenge##13724 |goto 76.1,19.2
-step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
-Click to mount the Stabled Exodar Elekk |invehicle |q 13724 |goto 71.7,22.4
-step
-talk Squire Danny##33518
-Tell him you are ready to fight!
-An Argent Champion runs up on a horse
-Use the abilities on your hotbar to defeat the Argent Champion
-|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
-Defeat the Argent Valiant |q 13724/1 |goto 68.6,21.0
-step
-talk Colosos##33593
-turnin The Valiant's Challenge##13724 |goto 76.1,19.2
-step
-Congratulations, you are now a Champion of The Exodar!
-|tip This is the end of the Draenei Champion Rank Guide for the Crusader Title.
+Congratulations! You have earned the title The Light of Dawn!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Northrend Titles\\Crusader, Home Cities Titles\\Argent Tournament Grounds Aspirant Rank Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Of the Nightfall",{
 author="support@zygorguides.com",
-description="This guide section will walk you through completing your race's Aspirant Rank dailies\nin order to achieve Argent Tournament Grounds Valiant Rank with your own race and eventually Crusader Title.",
+},[[
+step
+This title is earned by completing the _The Twilight Zone (10 player)_ achievement from The Obsidian Sanctum.
+Traverse The Obsidian Sanctum and defeat Sartharion with three Twilight Drakes still alive.
+kill Sartharion##28860
+achieve 2051
+step
+Congratulations! You have earned the title "of the Nightfall"!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\The Patient",{
+author="support@zygorguides.com",
+description="This guide will instruct you on how to get The Patient title.",
+},[[
+step
+Getting the title _The Patient_ is obtained by running random heroic dungeons with 50 different people.
+confirm
+step
+Press the letter _[I]_ on your keyboard to bring up your _Dungeon Finder_
+Choose any Random Heroic Dungeon and make sure to kill the final boss.
+Run random Heroic Dungeons with 10 random people |achieve 4476/1
+step
+Press the letter _[I]_ on your keyboard to bring up your _Dungeon Finder_
+Choose any Random Heroic Dungeon and make sure to kill the final boss.
+Run random Heroic Dungeons with 50 random people |achieve 4477/1
+step
+Congratulations! You have achieved the title The Patient! |achieve 4477
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Starcaller",{
+author="support@zygorguides.com",
+},[[
+step
+This title is earned by completing the _Observed (10 player)_ achievement from Ulduar.
+Traverse Ulduar and defeat Algalon the Observer.
+kill Algalon the Observer##32871
+achieve 3036
+step
+Congratulations! You have earned the title Starcaller!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Twilight Vanquisher",{
+author="support@zygorguides.com",
+},[[
+step
+This title is earned by completing the _The Twilight Zone (25 player)_ achievement from The Obsidian Sanctum.
+Traverse The Obsidian Sanctum and defeat Sartharion with three Twilight Drakes still alive.
+kill Sartharion##28860
+achieve 2054
+step
+Congratulations! You have earned the title Twilight Vanquisher!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\General\\Explorer\\Eastern Kingdoms",{
+author="support@zygorguides.com",
+description="This guide section will walk you through completing\nthe Explorer achievement.",
+},[[
+leechsteps "Zygor's Achievements Guides\\Exploration\\Eastern Kingdoms\\Explore Eastern Kingdoms"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\General\\Explorer\\Kalimdor",{
+author="support@zygorguides.com",
+description="This guide section will walk you through completing\nthe Explorer achievement.",
+},[[
+leechsteps "Zygor's Achievements Guides\\Exploration\\Kalimdor\\Explore Kalimdor"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\General\\Explorer\\Northrend",{
+author="support@zygorguides.com",
+description="This guide section will walk you through completing\nthe Explorer achievement.",
+},[[
+leechsteps "Zygor's Achievements Guides\\Exploration\\Northrend\\Explore Northrend"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\General\\Explorer\\Outland",{
+author="support@zygorguides.com",
+description="This guide section will walk you through completing\nthe Explorer achievement.",
+},[[
+leechsteps "Zygor's Achievements Guides\\Exploration\\Outland\\Explore Outland"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\General\\Explorer\\Pandaria",{
+author="support@zygorguides.com",
+description="This guide section will walk you through completing\nthe Explorer achievement.",
+},[[
+step
+#include "Explorer_Pandaria"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Player versus Player\\Of the Alliance",{
+author="support@zygorguides.com",
+},[[
+step
+This title is earned by achieving 100,000 honorable kills in any Player vs Player environment.
+achieve 870
+step
+Congratulations! You have earned the title of the Alliance!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Player versus Player\\Arena Master",{
+author="support@zygorguides.com",
+},[[
+step
+This title is earned by completing the _"The Arena Master"_ achievement. |tip This is an incredibly difficult title to obtain.
+achieve 1174
+step
+Congratulations! You have earned the title Arena Master!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Player versus Player\\Battlemaster",{
+author="support@zygorguides.com",
+},[[
+step
+This title is earned by completing the _Battlemaster_ achievement.
+In order to complete the _Battlemaster_ achievement you must obtain 5 achievements that make you the master of the following battlegrounds: Alterac Valley, Warsong Gulch, Strand of the Ancients, Arathi Basin, and Eye of the Storm.
+achieve 230
+step
+Congratulations! You have earned the title Battlemaster!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Professions\\Cooking\\Chef\\Achievements",{
+author="support@zygorguides.com",
+description="This guide will show you how to earn the Chef Title",
+},[[
+step
+If you need to level your cooking, click here |confirm |next "Profession Guides\\Cooking\\Cooking 1-600 Leveling Guide"
+Click here if you have already reached 450 Cooking. |confirm
+#include "A_The_Outland_Gourmet"
+#include "A_The_Northrend_Gourmet"
+#include "A_Our_Daily_Bread"
+#include "A_Critter_Gitter"
+#include "A_Captain_Rumsey's_Lager"
+#include "A_Dinner_Impossible"
+#include "A_Kickin'_It_Up_a_Notch"
+#include "second_that_emotion"
+#include "the_cake_is_not_a_lie"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Professions\\Cooking\\Chef\\Dailies",{
+author="support@zygorguides.com",
+description="This guide will help you in obtaining the Chef Title",
+},[[
+#include "A_Kickin'_It_Up_a_Notch"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Professions\\Fishing\\Salty",{
+},[[
+description This guide will walk you through the steps
+description to earn the title Chef
+author support@zygorguides.com
+step
+This title is earned once you have completed a majority of the Fishing achievements.
+Click here to proceed. |confirm
+step
+talk Catherine Leland##5494
+buy 1 Fishing Pole##6256 |goto Stormwind City,54.9,69.7
+buy 10 Shiny Bauble##6529 |goto Stormwind City,54.9,69.7
+step
+Equip your Fishing Pole |use Fishing Pole##6256
+Use the Shiny Bauble to temporarily increase your Fishing skill, to make it easier to catch fish |use Shiny Bauble##6529
+|tip If your Shiny Bauble Fishing skill boost expires, you can buy more Shiny Baubles to help you fish.
+Stand on the end of this wooden dock
+Use your Fishing skill to fish in the water all around the wooden dock |cast Fishing##7620
+Catch 1000 Fish. |achieve 1561/1
+Catch a 32 Pound Catfish |achieve 878
+#include "A_Fish_Don't_Leave_Footprints"
+#include "A_Old_Gnome_and_the_Sea"
+#include "A_The_Scavenger"
+#include "A_The_Fishing_Diplomat"
+#include "A_Old_Man_Barlowned"
+#include "A_Outland_Angler"
+#include "A_Mr._Pinchy's_Magical_Crawdad_Box"
+#include "A_The_Lurker_Above"
+#include "A_The_Coin_Master"
+#include "A_Master_Angler_of_Azeroth"
+#include "A_Master_Angler_of_Northrend"
+step
+achieve 1516
+step
+Congratulations, you have obtained the _Salty_ title!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Quests\\Loremaster",{
+author="support@zygorguides.com",
+description="This guide will refer you to the correct location to go, to get the Loremaster title.",
+},[[
+step
+You can use our Leveling Guides along with our Loremaster guides in the Main Menu to get the Loremaster achievement.
+Make sure that you use the Leveling guides first, then go through and get the quests with the Loremaster Guides to finish the quests that you need.
+achieve 7520
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Quests\\The Seeker",{
+author="support@zygorguides.com",
+description="This guide will refer you to the correct location to go, to get the Seeker title.",
+},[[
+step
+You can use our Leveling Guides along with our Loremaster guides in the Main Menu to get The Seeker achievement.
+Make sure that you use the Leveling guides first, then go through and get the quests with the Loremaster Guides to finish the quests that you need.
+achieve 978
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Argent Champion\\Argent Crusade Reputation",{
+author="support@zygorguides.com",
+description="This guide will show you how to earn the Argent Champion title.",
+keywords={"Champion"},
+},[[
+#include "A_Icecrown_Argent_Crusade_Rep"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Argent Champion\\Argent Dawn Reputation",{
+author="support@zygorguides.com",
+description="This guide will show you how to earn the Argent Champion title.",
+keywords={"Champion"},
+},[[
+#include "A_Eastern_Plaguelands_Argent_Dawn_Revered"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Crusader\\Argent Tournament Grounds Aspirant Rank Dailies",{
+author="support@zygorguides.com",
+description="This guide section will walk you through completing your race's Aspirant Rank dailies\nin order to achieve Argent Tournament Grounds Valiant Rank with your own race and eventually Crusader title.",
+keywords={"Crusader"},
 },[[
 daily
 step
@@ -1185,9 +351,10 @@ step
 talk Arcanist Taelis##33625
 turnin Up To The Challenge##13672 |goto 76.5,19.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Northrend Titles\\Crusader, Home Cities Titles\\Argent Tournament Grounds Valiant Rank Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Crusader\\Argent Tournament Grounds Valiant Rank Dailies",{
 author="support@zygorguides.com",
-description="This guide section will walk you through completing your race's Valiant Rank dailies\nin order to achieve Argent Tournament Grounds Champion Rank with your own race.\nYou must have completed the Argent Tournament Grounds Aspirant Rank Dailies guide section\nin order to have access to the quests in this guide section and earn the Crusader Title.",
+description="This guide section will walk you through completing your race's Valiant Rank dailies\nin order to achieve Argent Tournament Grounds Champion Rank with your own race.\nYou must have completed the Argent Tournament Grounds Aspirant Rank Dailies guide section\nin order to have access to the quests in this guide section and earn the Crusader title.",
+keywords={"Crusader"},
 },[[
 daily
 step
@@ -1773,7 +940,7 @@ turnin A Champion Rises##13732 |goto 69.7,22.9 |only Dwarf
 turnin A Champion Rises##13733 |goto 69.7,22.9 |only Gnome
 turnin A Champion Rises##13734 |goto 69.7,22.9 |only Draenei
 accept The Scourgebane##13795 |goto 69.7,22.9 |only DeathKnight
-accept Eadric the Pure##13794 |goto 69.7,22.9 |only !DeathKnight
+accept Eadric the Pure##13794 |goto 69.7,22.9 |only if not DeathKnight
 step
 talk Crok Scourgebane##33762
 turnin The Scourgebane##13795 |goto 73.8,20.1
@@ -1781,417 +948,596 @@ only DeathKnight
 step
 talk Eadric the Pure##33759
 turnin Eadric the Pure##13794 |goto 70.0,23.4
-only !DeathKnight
+only if not DeathKnight
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Cataclysm Titles\\The Flamebreaker",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Crusader\\Draenei Champion Rank",{
 author="support@zygorguides.com",
+description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Draenei race.\nYou must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section.\nYou cannot complete this section if you are a Draenei.",
+keywords={"Crusader"},
 },[[
+daily
 step
-This title is earned by completing the _Veteran of the Molten Front_ achievement.
-confirm
+In order to be able to do this guide section, you must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
+After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction.  Earning Champion rank with all the races of your faction, as well as becoming Exalted with Darnassus, Exodar, Gnomeregan Exiles, Ironforge, and Stormwind factions will earn you the Crusader title, and unlock more daily quests.
+You cannot complete this section if you are a Draenei.
+confirm always
 step
-#include "A_Firelands_PreQuests"
+talk Colosos##33593
+accept Valiant Of The Exodar##13705 |goto Icecrown,76.1,19.1
+turnin Valiant Of The Exodar##13705 |goto Icecrown,76.1,19.1
+accept The Valiant's Charge##13716 |goto Icecrown,76.1,19.1
 step
-Now that you have access to the Firelands Dailies, please use the Zygor Achievement Guides to help obtain this title.
-achieve 5879
+talk Colosos##33593
+You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+accept A Blade Fit For A Champion##13752 |goto 76.1,19.1 |or
+accept A Worthy Weapon##13753 |goto 76.1,19.1 |or
+accept The Edge Of Winter##13754 |goto 76.1,19.1 |or
 step
-Congratulations! You have earned the title "The Flamebreaker"!
+talk Saandos##33655
+accept A Valiant's Field Training##13755 |goto 76.1,19.2
+step
+talk Ranii##33656
+accept The Grand Melee##13756 |goto 76.2,19.1
+accept At The Enemy's Gates##13854 |goto 76.2,19.1
+step
+Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
+Target Lake Frogs
+Use the emote /kiss on the Lake Frogs
+Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
+talk Maiden of Ashwood Lake##33220
+collect Ashwood Brand |q 13752/1 |goto Grizzly Hills,61.2,50.3
+step
+click Winter Hyacinth##3231
+collect 4 Winter Hyacinth##45000 |q 13753 |goto Icecrown,69.1,76.2
+step
+Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
+Listen to the Maiden of Drak'Mar
+click Blade of Drak'Mar##8564
+collect Blade of Drak'Mar |q 13753/1 |goto Dragonblight,93.2,26.1
+step
+kill Lord Everblaze##33289
+collect 1 Everburning Ember##45005 |q 13754 |goto Crystalsong Forest,54.5,74.9
+step
+Use the Everburning Ember on Maiden of Winter's Breath|use Everburning Ember##45005
+collect Winter's Edge |q 13754/1 |goto Howling Fjord,42.2,19.7
+step
+Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Click to mount the Stabled Campaign Warhorse |invehicle |q 13854 |goto Icecrown,48.9,71.4
+step
+kill 15 Boneguard Footman##33438 |q 13854/1 |goto 50.1,74.8
+|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
+kill 10 Boneguard Scout##33550 |q 13854/2 |goto 50.1,74.8
+|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
+kill 3 Boneguard Lieutenant##33429 |q 13854/3 |goto 50.1,74.8
+|tip They ride horses around this area.  Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
+step
+Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13854 |goto 49.1,71.4
+step
+kill 10 Converted Hero##32255 |q 13755/1 |goto 44.3,54.2
+step
+Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Click to mount the Stabled Exodar Elekk |invehicle |q 13756 |goto 76.4,20.5
+step
+Talk to the riders on mounts of other Alliance races
+Tell them you are ready to fight!
+Fight and defeat them |tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
+collect 3 Mark of the Valiant |q 13756/1 |goto 75.3,18.5
+step
+talk Colosos##33593
+You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+turnin A Blade Fit For A Champion##13752 |goto 76.1,19.1
+turnin A Worthy Weapon##13753 |goto 76.1,19.1
+turnin The Edge Of Winter##13754 |goto 76.1,19.1
+step
+talk Saandos##33655
+turnin A Valiant's Field Training##13755 |goto 76.1,19.2
+step
+talk Ranii##33656
+turnin The Grand Melee##13756 |goto 76.2,19.1
+turnin At The Enemy's Gates##13854 |goto 76.2,19.1
+step
+Make sure you have 25 Valiant Seals:
+collect 25 Valiant's Seal |q 13716/1
+|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
+step
+talk Colosos##33593
+turnin The Valiant's Charge##13716 |goto 76.1,19.2
+accept The Valiant's Challenge##13724 |goto 76.1,19.2
+step
+Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Click to mount the Stabled Exodar Elekk |invehicle |q 13724 |goto 71.7,22.4
+step
+talk Squire Danny##33518
+Tell him you are ready to fight!
+An Argent Champion runs up on a horse
+Use the abilities on your hotbar to defeat the Argent Champion
+|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
+Defeat the Argent Valiant |q 13724/1 |goto 68.6,21.0
+step
+talk Colosos##33593
+turnin The Valiant's Challenge##13724 |goto 76.1,19.2
+step
+Congratulations, you are now a Champion of The Exodar!
+|tip This is the end of the Draenei Champion Rank Guide for the Crusader Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Profession Titles\\Cooking\\Chef\\Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Crusader\\Dwarf Champion Rank",{
 author="support@zygorguides.com",
-description="This guide will help you in obtaining the Chef Title",
+description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Dwarf race.\nYou must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section.\nYou cannot complete this section if you are a Dwarf.",
+keywords={"Crusader"},
 },[[
-#include "A_Kickin'_It_Up_a_Notch"
+daily
+step
+In order to be able to do this guide section, you must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
+After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction.  Earning Champion rank with all the races of your faction, as well as becoming Exalted with Darnassus, Exodar, Gnomeregan Exiles, Ironforge, and Stormwind factions will earn you the Crusader title, and unlock more daily quests.
+You cannot complete this section if you are a Dwarf.
+confirm always
+step
+talk Lana Stouthammer##33312
+accept Valiant Of Ironforge##13703 |goto Icecrown,76.3,19.0
+turnin Valiant Of Ironforge##13703 |goto Icecrown,76.3,19.0
+accept The Valiant's Charge##13714 |goto Icecrown,76.3,19.0
+step
+talk Lana Stouthammer##33312
+You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+accept A Blade Fit For A Champion##13741 |goto Icecrown,76.6,19.5 |or
+accept A Worthy Weapon##13742 |goto Icecrown,76.6,19.5 |or
+accept The Edge Of Winter##13743 |goto Icecrown,76.6,19.5 |or
+step
+talk Rollo Sureshot##33315
+accept A Valiant's Field Training##13744 |goto 76.7,19.4
+step
+talk Clara Tumblebrew##33309
+accept The Grand Melee##13745 |goto 76.6,19.6
+accept At The Enemy's Gates##13851 |goto 76.6,19.6
+step
+Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Click to mount the Stabled Ironforge Ram |invehicle |q 13745 |goto 76.3,20.5
+step
+Talk to the riders on mounts of other Alliance races
+Tell them you are ready to fight!
+Fight and defeat them  |tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
+collect 3 Mark of the Valiant |q 13745/1 |goto 75.3,18.5
+step
+kill 10 Converted Hero##32255 |q 13744/1 |goto 44.3,54.2
+step
+Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Click to mount the Stabled Campaign Warhorse |invehicle |q 13851 |goto Icecrown,48.9,71.4
+step
+kill 15 Boneguard Footman##33438 |q 13851/1 |goto 50.1,74.8
+|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
+kill 10 Boneguard Scout##33550 |q 13851/2 |goto 50.1,74.8
+|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
+kill 3 Boneguard Lieutenant##33429 |q 13851/3 |goto 50.1,74.8
+|tip They ride horses around this area.  Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
+step
+Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13851 |goto 49.1,71.4
+step
+Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
+Target Lake Frogs
+Use the emote /kiss on the Lake Frogs
+Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
+talk Maiden of Ashwood Lake##33220
+collect Ashwood Brand |q 13741/1 |goto Grizzly Hills,61.2,50.3
+step
+click Winter Hyacinth##3231
+collect 4 Winter Hyacinth##45000 |q 13742 |goto Icecrown,69.1,76.2
+step
+Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
+Listen to the Maiden of Drak'Mar
+click Blade of Drak'Mar##8564
+collect Blade of Drak'Mar |q 13742/1 |goto Dragonblight,93.2,26.1
+step
+kill Lord Everblaze##33289
+collect 1 Everburning Ember##45005 |q 13743 |goto Crystalsong Forest,54.5,74.9
+step
+Use the Everburning Ember on Maiden of Winter's Breath|use Everburning Ember##45005
+collect Winter's Edge |q 13743/1 |goto Howling Fjord,42.2,19.7
+step
+talk Lana Stouthammer##33312
+You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+turnin A Blade Fit For A Champion##13741 |goto Icecrown,76.6,19.5
+turnin A Worthy Weapon##13742 |goto Icecrown,76.6,19.5
+turnin The Edge Of Winter##13743 |goto Icecrown,76.6,19.5
+step
+talk Rollo Sureshot##33315
+turnin A Valiant's Field Training##13744 |goto 76.7,19.4
+step
+talk Clara Tumblebrew##33309
+turnin The Grand Melee##13745 |goto 76.6,19.6
+turnin At The Enemy's Gates##13851 |goto 76.6,19.6
+step
+Make sure you have 25 Valiant Seals:
+collect 25 Valiant's Seal |q 13717/1
+|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
+step
+talk Jaelyne Evensong##33592
+turnin The Valiant's Charge##13714 |goto 76.3,19.1
+accept The Valiant's Challenge##13713 |goto 76.3,19.1
+step
+Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Click to mount the Stabled Ironforge Ram |invehicle |q 13713 |goto 76.3,20.5
+step
+talk Squire Danny##33518
+Tell him you are ready to fight!
+An Argent Champion runs up on a horse
+Use the abilities on your hotbar to defeat the Argent Champion
+|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.
+When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.
+|tip Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
+Defeat the Argent Valiant |q 13713/1 |goto 68.6,21.0
+step
+talk Jaelyne Evensong##33592
+turnin The Valiant's Challenge##13713 |goto 76.3,19.1
+step
+Congratulations, you are now a Champion of Ironforge! |tip This is the end of the Dwarf Champion Rank Guide for the Crusader Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Profession Titles\\Cooking\\Chef\\Achievements",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Crusader\\Gnome Champion Rank",{
 author="support@zygorguides.com",
-description="This guide will show you how to earn the Chef Title",
+description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Gnome race.\nYou must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section.\nYou cannot complete this section if you are a Gnome.",
+keywords={"Crusader"},
 },[[
+daily
 step
-If you need to level your cooking, click here |confirm |next "Profession Guides\\Cooking\\Cooking 1-600 Leveling Guide"
-Click here if you have already reached 450 Cooking. |confirm
-#include "A_The_Outland_Gourmet"
-#include "A_The_Northrend_Gourmet"
-#include "A_Our_Daily_Bread"
-#include "A_Critter_Gitter"
-#include "A_Captain_Rumsey's_Lager"
-#include "A_Dinner_Impossible"
-#include "A_Kickin'_It_Up_a_Notch"
-#include "second_that_emotion"
-#include "the_cake_is_not_a_lie"
+In order to be able to do this guide section, you must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
+After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction.  Earning Champion rank with all the races of your faction, as well as becoming Exalted with Darnassus, Exodar, Gnomeregan Exiles, Ironforge, and Stormwind factions will earn you the Crusader title, and unlock more daily quests.
+You cannot complete this section if you are a Gnome.
+confirm always
+step
+talk Ambrose Boltspark##33335
+accept Valiant Of Gnomeregan##13704 |goto Icecrown,76.5,19.8
+turnin Valiant Of Gnomeregan##13704 |goto Icecrown,76.5,19.8
+accept The Valiant's Charge##13715 |goto Icecrown,76.5,19.8
+step
+talk Ambrose Boltspark##33335
+You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+accept A Blade Fit For A Champion##13746 |goto 76.5,19.8 |or
+accept A Worthy Weapon##13747 |goto 76.5,19.8 |or
+accept The Edge Of Winter##13748 |goto 76.5,19.8 |or
+step
+talk Tickin Gearspanner##33648
+accept A Valiant's Field Training##13749 |goto 76.6,19.8
+step
+talk Flickin Gearspanner##33649
+accept The Grand Melee##13750 |goto 76.5,19.9
+accept At The Enemy's Gates##13852 |goto 76.5,19.9
+step
+Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
+Target Lake Frogs
+Use the emote /kiss on the Lake Frogs
+Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
+talk Maiden of Ashwood Lake##33220
+collect Ashwood Brand |q 13746/1 |goto Grizzly Hills,61.2,50.3
+step
+click Winter Hyacinth##3231
+collect 4 Winter Hyacinth##45000 |q 13747 |goto Icecrown,69.1,76.2
+step
+Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
+Listen to the Maiden of Drak'Mar
+click Blade of Drak'Mar##8564
+collect Blade of Drak'Mar |q 13747/1 |goto Dragonblight,93.2,26.1
+step
+kill Lord Everblaze##33289
+collect 1 Everburning Ember##45005 |q 13748 |goto Crystalsong Forest,54.5,74.9
+step
+Use the Everburning Ember on Maiden of Winter's Breath |use Everburning Ember##45005
+collect Winter's Edge |q 13748/1 |goto Howling Fjord,42.2,19.7
+step
+Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Click to mount the Stabled Campaign Warhorse |invehicle |q 13852 |goto Icecrown,48.9,71.4
+step
+kill 15 Boneguard Footman##33438 |q 13852/1 |goto 50.1,74.8
+|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
+kill 10 Boneguard Scout##33550 |q 13852/2 |goto 50.1,74.8
+|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
+kill 3 Boneguard Lieutenant##33429 |q 13852/3 |goto 50.1,74.8
+|tip They ride horses around this area.  Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
+step
+Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13852 |goto 49.1,71.4
+step
+kill 10 Converted Hero##32255 |q 13749/1 |goto 44.3,54.2
+step
+Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Click to mount the Stabled Gnomeregan Mechanostrider |invehicle |q 13750 |goto 76.2,20.5
+step
+Talk to the riders on mounts of other Alliance races
+Tell them you are ready to fight!
+Fight and defeat them
+|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
+collect 3 Mark of the Valiant |q 13750/1 |goto 75.3,18.5
+step
+talk Ambrose Boltspark##33335
+You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+turnin A Blade Fit For A Champion##13746 |goto 76.5,19.8
+turnin A Worthy Weapon##13747 |goto 76.5,19.8
+turnin The Edge Of Winter##13748 |goto 76.5,19.8
+step
+talk Tickin Gearspanner##33648
+turnin A Valiant's Field Training##13749 |goto 76.6,19.8
+step
+talk Flickin Gearspanner##33649
+turnin The Grand Melee##13750 |goto 76.5,19.9
+turnin At The Enemy's Gates##13852 |goto 76.5,19.9
+step
+Make sure you have 25 Valiant Seals:
+collect 25 Valiant's Seal |q 13715/1
+|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
+step
+talk Ambrose Boltspark##33335
+turnin The Valiant's Charge##13715 |goto 76.5,19.8
+accept The Valiant's Challenge##13723 |goto 76.5,19.8
+step
+Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Click to mount the Stabled Gnomeregan Mechanostrider |invehicle |q 13723 |goto 71.9,22.5
+step
+talk Squire Danny##33518
+Tell him you are ready to fight!
+An Argent Champion runs up on a horse
+Use the abilities on your hotbar to defeat the Argent Champion
+|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
+Defeat the Argent Valiant |q 13723/1 |goto 68.6,21.0
+step
+talk Ambrose Boltspark##33335
+turnin The Valiant's Challenge##13723 |goto 76.5,19.8
+step
+Congratulations, you are now a Champion of Gnomeregan!
+|tip This is the end of the Gnome Champion Rank Guide for the Crusader Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Profession Titles\\Archaeology\\Assistant Professor, Associate Professor, and Professor",{},[[
-step
-These titles require the solving of rare artifacts of any kind.
-talk Harrison Jones##44238 |goto Stormwind City,85.8,25.9 |only if skillmax("Archaeology")<1
-skillmax Archaeology,75 |only if skillmax("Archaeology")<1
-confirm |only if default
-step
-Open your world map, find dig sites, and go to them
-|tip They look like small shovel icons on your world map that spawn in random places.  Once you get to the zone where the dig site is located, you will see the dig site on your map as a red highlighted area.
-Use your Survey ability inside the dig site area |cast Survey##80451
-A telescope will appear, follow the direction it points in and continue using your Survey ability to eventually find the artifacts
-|tip Each dig site has 3 artifacts you can find.
-Click the Archaeology Fragments that spawn on the ground
-Open your Archaeology profession window |cast Archaeology##78670
-Click artifacts to open them, then solve them once you have the required amounts of each
-Find and solve a rare artifact and earn the Assistant Professor title |achieve 4854
-Find and solve 10 rare artifacts and earn the Associate Professor title |achieve 4855
-Find and solve 20 rare artifacts and earn the Professor title |achieve 4856
-step
-Congratulations! You have earned all of the Archaeology titles!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Profession Titles\\Fishing\\Salty",{},[[
-description This guide will walk you through the steps
-description to earn the title Chef
-author support@zygorguides.com
-step
-This title is earned once you have completed a majority of the Fishing achievements.
-Click here to proceed. |confirm
-step
-talk Catherine Leland##5494
-buy 1 Fishing Pole##6256 |goto Stormwind City,54.9,69.7
-buy 10 Shiny Bauble##6529 |goto Stormwind City,54.9,69.7
-step
-Equip your Fishing Pole |use Fishing Pole##6256
-Use the Shiny Bauble to temporarily increase your Fishing skill, to make it easier to catch fish |use Shiny Bauble##6529
-|tip If your Shiny Bauble Fishing skill boost expires, you can buy more Shiny Baubles to help you fish.
-Stand on the end of this wooden dock
-Use your Fishing skill to fish in the water all around the wooden dock |cast Fishing##7620
-Catch 1000 Fish. |achieve 1561/1
-Catch a 32 Pound Catfish |achieve 878
-#include "A_Fish_Don't_Leave_Footprints"
-#include "A_Old_Gnome_and_the_Sea"
-#include "A_The_Scavenger"
-#include "A_The_Fishing_Diplomat"
-#include "A_Old_Man_Barlowned"
-#include "A_Outland_Angler"
-#include "A_Mr._Pinchy's_Magical_Crawdad_Box"
-#include "A_The_Lurker_Above"
-#include "A_The_Coin_Master"
-#include "A_Master_Angler_of_Azeroth"
-#include "A_Master_Angler_of_Northrend"
-step
-achieve 1516
-step
-Congratulations, you have obtained the _Salty_ title!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Miscellaneous Titles\\The Diplomat\\Timbermaw Hold Faction",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Crusader\\Human Champion Rank",{
 author="support@zygorguides.com",
+description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Human race.\nYou must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section.\nYou cannot complete this section if you are a Human.",
+keywords={"Crusader"},
 },[[
-#include "A_Timbermaw_Faction"
+daily
+step
+In order to be able to do this guide section, you must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
+After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction.  Earning Champion rank with all the races of your faction, as well as becoming Exalted with Darnassus, Exodar, Gnomeregan Exiles, Ironforge, and Stormwind factions will earn you the Crusader title, and unlock more daily quests.
+You cannot complete this section if you are a Human.
+confirm always
+step
+talk Marshal Jacob Alerius##33225
+accept Valiant Of Stormwind##13593 |goto Icecrown,76.6,19.1
+turnin Valiant Of Stormwind##13593 |goto Icecrown,76.6,19.1
+accept The Valiant's Charge##13718 |goto Icecrown,76.6,19.1
+step
+talk Marshal Jacob Alerius##33225
+You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+accept A Blade Fit For A Champion##13603 |goto Icecrown,76.6,19.1 |or
+accept A Worthy Weapon##13600 |goto Icecrown,76.6,19.1 |or
+accept The Edge Of Winter##13616 |goto Icecrown,76.6,19.1 |or
+step
+talk Sir Marcus Barlowe##33222
+accept A Valiant's Field Training##13592 |goto 76.5,19.1
+step
+talk Captain Joseph Holley##33223
+accept The Grand Melee##13665 |goto 76.6,19.2
+accept At The Enemy's Gates##13847 |goto 76.6,19.2
+step
+Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
+Target Lake Frogs
+Use the emote /kiss on the Lake Frogs
+Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
+talk Maiden of Ashwood Lake##33220
+collect Ashwood Brand |q 13603/1 |goto Grizzly Hills,61.2,50.3
+step
+click Winter Hyacinth##3231
+collect 4 Winter Hyacinth##45000 |q 13600 |goto Icecrown,69.1,76.2
+step
+Use Winter Hyacinths in the water here|use Winter Hyacinth##45000
+Listen to the Maiden of Drak'Mar
+click Blade of Drak'Mar##8564
+collect Blade of Drak'Mar |q 13600/1 |goto Dragonblight,93.2,26.1
+step
+kill Lord Everblaze##33289
+collect 1 Everburning Ember##45005 |q 13616 |goto Crystalsong Forest,54.5,74.9
+step
+Use the Everburning Ember on Maiden of Winter's Breath|use Everburning Ember##45005
+collect Winter's Edge |q 13616/1 |goto Howling Fjord,42.2,19.7
+step
+Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Click to mount the Stabled Campaign Warhorse |invehicle |q 13847 |goto Icecrown,48.9,71.4
+step
+kill 15 Boneguard Footman##33438 |q 13847/1 |goto 50.1,74.8
+|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
+kill 10 Boneguard Scout##33550 |q 13847/2 |goto 50.1,74.8
+|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
+kill 3 Boneguard Lieutenant##33429 |q 13847/3 |goto 50.1,74.8
+|tip They ride horses around this area.  Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
+step
+Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13847 |goto 49.1,71.4
+step
+kill 10 Converted Hero##32255 |q 13592/1 |goto 44.3,54.2
+step
+Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Click to mount the Stabled Stormwind Steed |invehicle |q 13665 |goto 76.1,20.5
+step
+Talk to the riders on mounts of other Alliance races
+Tell them you are ready to fight!
+Fight and defeat them
+|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
+collect 3 Mark of the Valiant |q 13665/1 |goto 75.3,18.5
+step
+talk Marshal Jacob Alerius##33225
+You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+turnin A Blade Fit For A Champion##13603 |goto 76.6,19.1
+turnin A Worthy Weapon##13600 |goto 76.6,19.1
+turnin The Edge Of Winter##13616 |goto 76.6,19.1
+step
+talk Sir Marcus Barlowe##33222
+turnin A Valiant's Field Training##13592 |goto 76.5,19.1
+step
+talk Captain Joseph Holley##33223
+turnin The Grand Melee##13665 |goto 76.6,19.2
+turnin At The Enemy's Gates##13847 |goto 76.6,19.2
+step
+Make sure you have 25 Valiant Seals:
+collect 25 Valiant's Seal |q 13718/1
+|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
+step
+talk Marshal Jacob Alerius##33225
+turnin The Valiant's Charge##13718 |goto 76.6,19.2
+accept The Valiant's Challenge##13699 |goto 76.6,19.2
+step
+Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Click to mount the Stabled Stormwind Steed |invehicle |q 13699 |goto 76.1,20.5
+step
+talk Squire Danny##33518
+Tell him you are ready to fight!
+An Argent Champion runs up on a horse
+Use the abilities on your hotbar to defeat the Argent Champion
+|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
+Defeat the Argent Valiant |q 13699/1 |goto 68.6,21.0
+step
+talk Marshal Jacob Alerius##33225
+turnin The Valiant's Challenge##13699 |goto 76.6,19.2
+step
+Congratulations, you are now a Champion of Stormwind!
+|tip This is the end of the Human Champion Rank Guide for the Crusader Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Miscellaneous Titles\\The Diplomat\\Sporeggar Faction",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Crusader\\Night Elf Champion Rank",{
 author="support@zygorguides.com",
+description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Night Elf race.\nYou must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section.\nYou cannot complete this section if you are a Night Elf.",
+keywords={"Crusader"},
 },[[
-#include "A_Sporeggar_Faction"
+daily
+step
+In order to be able to do this guide section, you must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
+After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction.  Earning Champion rank with all the races of your faction, as well as becoming Exalted with Darnassus, Exodar, Gnomeregan Exiles, Ironforge, and Stormwind factions will earn you the Crusader title, and unlock more daily quests.
+You cannot complete this section if you are a Night Elf.
+confirm always
+step
+talk Jaelyne Evensong##33592
+accept Valiant Of Darnassus##13706 |goto Icecrown,76.3,19.0
+turnin Valiant Of Darnassus##13706 |goto Icecrown,76.3,19.0
+accept The Valiant's Charge##13717 |goto Icecrown,76.3,19.0
+step
+talk Jaelyne Evensong##33592
+You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+accept A Blade Fit For A Champion##13757 |goto Icecrown,76.3,19.0 |or
+accept A Worthy Weapon##13758 |goto Icecrown,76.3,19.0 |or
+accept The Edge Of Winter##13759 |goto Icecrown,76.3,19.0 |or
+step
+talk Illestria Bladesinger##33652
+accept A Valiant's Field Training##13760 |goto 76.3,19.0
+step
+talk Airae Starseeker##33654
+accept The Grand Melee##13761 |goto 76.4,19.0
+accept At The Enemy's Gates##13855 |goto 76.4,19.0
+step
+Use the Warts-B-Gone Lip Balm|use Warts-B-Gone Lip Balm##44986
+Target Lake Frogs
+Use the emote /kiss on the Lake Frogs
+Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
+talk Maiden of Ashwood Lake##33220
+collect Ashwood Brand |q 13757/1 |goto Grizzly Hills,61.2,50.3
+step
+click Winter Hyacinth##3231
+collect 4 Winter Hyacinth##45000 |q 13758 |goto Icecrown,69.1,76.2
+step
+Use Winter Hyacinths in the water here|use Winter Hyacinth##45000
+Listen to the Maiden of Drak'Mar
+click Blade of Drak'Mar##8564
+collect Blade of Drak'Mar |q 13758/1 |goto Dragonblight,93.2,26.1
+step
+kill Lord Everblaze##33289
+collect 1 Everburning Ember##45005 |q 13759 |goto Crystalsong Forest,54.5,74.9
+step
+Use the Everburning Ember on Maiden of Winter's Breath |use Everburning Ember##45005
+collect Winter's Edge |q 13759/1 |goto Howling Fjord,42.2,19.7
+step
+Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Click to mount the Stabled Campaign Warhorse |invehicle |q 13855 |goto Icecrown,48.9,71.4
+step
+kill 15 Boneguard Footman##33438 |q 13855/1 |goto 50.1,74.8
+|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
+kill 10 Boneguard Scout##33550 |q 13855/2 |goto 50.1,74.8
+|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
+kill 3 Boneguard Lieutenant##33429 |q 13855/3 |goto 50.1,74.8
+|tip They ride horses around this area.  Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
+step
+Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13855 |goto 49.1,71.4
+step
+kill 10 Converted Hero##32255 |q 13760/1 |goto 44.3,54.2
+step
+Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Click to mount the Stabled Darnassian Nightsaber |invehicle |q 13761 |goto 76.0,20.4
+step
+Talk to the riders on mounts of other Alliance races
+Tell them you are ready to fight!
+Fight and defeat them
+|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
+collect 3 Mark of the Valiant |q 13761/1 |goto 75.3,18.5
+step
+talk Jaelyne Evensong##33592
+You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+turnin A Blade Fit For A Champion##13757 |goto 76.3,19.0
+turnin A Worthy Weapon##13758 |goto 76.3,19.0
+turnin The Edge Of Winter##13759 |goto 76.3,19.0
+step
+talk Illestria Bladesinger##33652
+turnin A Valiant's Field Training##13760 |goto 76.3,19.0
+step
+talk Airae Starseeker##33654
+turnin The Grand Melee##13761 |goto 76.4,19.0
+turnin At The Enemy's Gates##13855 |goto 76.4,19.0
+step
+Make sure you have 25 Valiant Seals:
+collect 25 Valiant's Seal |q 13717/1
+|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
+step
+talk Jaelyne Evensong##33592
+turnin The Valiant's Charge##13717 |goto 76.3,19.1
+accept The Valiant's Challenge##13725 |goto 76.3,19.1
+step
+Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Click to mount the Stabled Darnassian Nightsaber |invehicle |q 13725 |goto 76.0,20.4
+step
+talk Squire Danny##33518
+Tell him you are ready to fight!
+An Argent Champion runs up on a horse
+Use the abilities on your hotbar to defeat the Argent Champion
+|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
+Defeat the Argent Valiant |q 13725/1 |goto 68.6,21.0
+step
+talk Jaelyne Evensong##33592
+turnin The Valiant's Challenge##13725 |goto 76.3,19.1
+step
+Congratulations, you are now a Champion of Darnassus! |tip This is the end of the Night Elf Champion Rank Guide for the Crusader Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Miscellaneous Titles\\The Diplomat\\Kurenai Faction",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\The Diplomat\\Kurenai Faction",{
 author="support@zygorguides.com",
 description="This Guide will help you reach Exalted status with the Kurenai Faction",
+keywords={"The, Diplomat"},
 },[[
 #include "A_Kurenai_Faction"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Miscellaneous Titles\\Guardian of Cenarius\\Cenarion Expedition Faction",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\The Diplomat\\Sporeggar Faction",{
+author="support@zygorguides.com",
+keywords={"The, Diplomat"},
+},[[
+#include "A_Sporeggar_Faction"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\The Diplomat\\Timbermaw Hold Faction",{
+author="support@zygorguides.com",
+keywords={"The, Diplomat"},
+},[[
+#include "A_Timbermaw_Faction"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Guardian of Cenarius\\Cenarion Circle Faction",{
+keywords={"Guardian, of, Cenarius"},
+},[[
+#include "A_Cenarion_Circle_Faction"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Guardian of Cenarius\\Cenarion Expedition Faction",{
 author="support@zygorguides.com",
 description="This guide will take you through the quests needed to become Exalted with Cenarion Expedition",
+keywords={"Guardian, of, Cenarius"},
 },[[
 #include "A_Cenarion_Expedition_Faction"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Miscellaneous Titles\\Guardian of Cenarius\\Cenarion Circle Faction",{},[[
-#include "A_Cenarion_Circle_Faction"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Miscellaneous Titles\\Loremaster",{
-author="support@zygorguides.com",
-description="This guide will refer you to the correct location to go, to get the Loremaster Title.",
-},[[
-step
-You can use our Leveling Guides along with our Loremaster guides in the Main Menu to get the Loremaster achievement.
-Make sure that you use the Leveling guides first, then go through and get the quests with the Loremaster Guides to finish the quests that you need.
-achieve 7520
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Miscellaneous Titles\\The Seeker",{
-author="support@zygorguides.com",
-description="This guide will refer you to the correct location to go, to get the Seeker Title.",
-},[[
-step
-You can use our Leveling Guides along with our Loremaster guides in the Main Menu to get The Seeker achievement.
-Make sure that you use the Leveling guides first, then go through and get the quests with the Loremaster Guides to finish the quests that you need.
-achieve 978
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Miscellaneous Titles\\The Patient",{
-author="support@zygorguides.com",
-description="This guide will instruct you on how to get The Patient Title.",
-},[[
-step
-Getting the title _The Patient_ is obtained by running random heroic dungeons with 50 different people.
-confirm
-step
-Press the letter _[I]_ on your keyboard to bring up your _Dungeon Finder_
-Choose any Random Heroic Dungeon and make sure to kill the final boss.
-Run random Heroic Dungeons with 10 random people |achieve 4476/1
-step
-Press the letter _[I]_ on your keyboard to bring up your _Dungeon Finder_
-Choose any Random Heroic Dungeon and make sure to kill the final boss.
-Run random Heroic Dungeons with 50 random people |achieve 4477/1
-step
-Congratulations! You have achieved the title The Patient! |achieve 4477
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Miscellaneous Titles\\The Exalted",{
-author="support@zygorguides.com",
-description="This guide will instruct you on how to get The Exalted Title.",
-},[[
-step
-Use our Reputations guide to get Exalted reputation with 45 different reputations.
-Earn Exalted reputation with 45 different reputations |achieve 5374/1
-step
-Congratulations! You have earn the title The Exalted! |achieve 5374
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Miscellaneous Titles\\The Camel-Hoarder",{},[[
-step
-This title is attained when you learn a mount dropped by a rare spawn.
-confirm
-step
-This mount drops off a rare spawn called Dormus the Camel-Hoarder. You get to him by clicking the Mysterious Camel Figurines around Uldum. They have a chance to teleport you to his area and you get a debuff giving you 20 minutes to kill him.
-Go to Uldum |goto Uldum |noway |c
-step
-kill Dormus the Camel-Hoarder |n
-collect 1 Reins of the Grey Riding Camel##63046
-modeldisplay 35135
-step
-learnmount Grey Riding Camel##88750 |use Reins of the Grey Riding Camel##63046
-Learn the Grey Riding Camel mount. |achieve 5767
-step
-Congratulations! You have achieved the title The Camel-Hoarder! |achieve 5767
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Raid Titles\\Champion of the Frozen Wastes",{
-author="support@zygorguides.com",
-},[[
-step
-This title is earned by completing the _Champion of the Frozen Wastes_ achievement.
-Complete every Wrath of the Lich King Heroic Instance, with the exception of The Forge of Souls, the Pit of Saron, and the Halls of Reflection. Then defeat the final bosses in The Eye of Eternity, Naxxramas, and The Obsidian Sanctum.
-achieve 1658
-step
-Congratulations! You have earned the title "Champion of the Frozen Wastes"!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Raid Titles\\Defender of a Shattered World",{
-author="support@zygorguides.com",
-},[[
-step
-This title is earned by completing the _Defender of a Shattered World_ achievement.
-Complete the following instances on Heroic difficulty: Blackrock Caverns, Throne of the Tides, The Stonecore, The Vortex Pinnacle, Grim Batol, Halls of Origination, Lost City of Tol'vir, Deadmines, and Shadowfang Keep.
-Complete the following raid instances: Blackwing Descent, Throne of the Four Winds, and The Bastion of Twilight.
-achieve 5506
-step
-Congratulations! You have earned the title "Defender of a Shattered World"!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Raid Titles\\Of the Nightfall",{
-author="support@zygorguides.com",
-},[[
-step
-This title is earned by completing the _The Twilight Zone (10 player)_ achievement from The Obsidian Sanctum.
-Traverse The Obsidian Sanctum and defeat Sartharion with three Twilight Drakes still alive.
-kill Sartharion##28860
-achieve 2051
-step
-Congratulations! You have earned the title "of the Nightfall"!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Raid Titles\\Twilight Vanquisher",{
-author="support@zygorguides.com",
-},[[
-step
-This title is earned by completing the _The Twilight Zone (25 player)_ achievement from The Obsidian Sanctum.
-Traverse The Obsidian Sanctum and defeat Sartharion with three Twilight Drakes still alive.
-kill Sartharion##28860
-achieve 2054
-step
-Congratulations! You have earned the title Twilight Vanquisher!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Raid Titles\\Starcaller",{
-author="support@zygorguides.com",
-},[[
-step
-This title is earned by completing the _Observed (10 player)_ achievement from Ulduar.
-Traverse Ulduar and defeat Algalon the Observer.
-kill Algalon the Observer##32871
-achieve 3036
-step
-Congratulations! You have earned the title Starcaller!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Raid Titles\\The Astral Walker",{
-author="support@zygorguides.com",
-},[[
-step
-This title is earned by completing the _Observed (25 player)_ achievement from Ulduar.
-Traverse Ulduar and defeat Algalon the Observer.
-kill Algalon the Observer##32871
-achieve 3037
-step
-Congratulations! You have earned the title The Astral Walker
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Raid Titles\\The Kingslayer",{
-author="support@zygorguides.com",
-},[[
-step
-This title is earned by completing the _"The Frozen Throne"_ achievement from the Icecrown Citadel raid. This can be completed on either 10 or 25 player.
-Traverse Icecrown Citadel raid and defeat The Lich King.
-kill The Lich King##36597
-achieve 4530 |or
-achieve 4597 |or
-step
-Congratulations! You have earned the title The Kingslayer!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Raid Titles\\Bane of the Fallen King",{
-author="support@zygorguides.com",
-},[[
-step
-This title is earned by completing the _Bane of the Fallen King_ achievement from 10 player Heroic: Icecrown Citadel.
-Traverse Icecrown Citadel on Heroic difficulty and defeat The Lich King.
-kill The Lich King##36597
-achieve 4583
-step
-Congratulations! You have earned the title Bane of the Fallen King!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Raid Titles\\The Light of Dawn",{
-author="support@zygorguides.com",
-},[[
-step
-This title is earned by completing the _"The Light of Dawn"_ achievement from 25 player Heroic: Icecrown Citadel.
-Traverse Icecrown Citadel on Heroic difficulty and defeat The Lich King.
-kill The Lich King##36597
-achieve 4584
-step
-Congratulations! You have earned the title The Light of Dawn!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Raid Titles\\Of the Ashen Verdict",{},[[
-step
-This title is gained by becoming Exalted with The Ashen Verdict reputation.
-This reputation can be earned by running the Icecrown Citadel raid.
-confirm
-step
-This will require you to be in a raid group.
-To make a raid group_invite a friend to your group, then press the [O] key and _click_ on the raid tab on the bottom right corner of your Social interface. _Click_ the Convert to Raid button on the upper left corner.
-confirm
-step
-label start
-Enter Icecrown Citadel here. |goto Icecrown 53.8,87.1 <5 |c
-step
-Kill every creature that is hostile in this instance in order to gain reputation.
-|tip You will have to clear this place a few times to reach Exalted.
-Click here to go back to the beginning of the guide |next "start" |confirm
-Earn Exalted status with the Ashen Verdict |condition rep('Ashen Verdict')==Exalted |next "exalted"
-step
-label exalted
-Congratulations! You have earned the title "of the Ashen Verdict"!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Raid Titles\\Dragonslayer",{
-author="support@zygorguides.com",
-},[[
-step
-This title is earned by completing the _Heroic: Sinestra_ achievement from Heroic: The Bastion of Twilight.
-Traverse The Bastion of Twilight on Heroic difficulty and defeat Sinestra.
-from Sinestra##45213
-achieve 5121
-step
-Congratulations! You have earned the title Dragonslayer!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Raid Titles\\Of the Four Winds",{
-author="support@zygorguides.com",
-},[[
-step
-This title is earned by completing the _Heroic: Al'Akir_ achievement from Heroic: Throne of the Four Winds. This can be completed on either 10 or 25 player.
-Traverse the Throne of the Four Winds on Heroic difficulty and defeat Al'Akir.
-kill Al'Akir##46753
-achieve 5123
-step
-Congratulations! You have earned the title "of the Four Winds"!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Raid Titles\\Blackwing's Bane",{
-author="support@zygorguides.com",
-},[[
-step
-This title is earned by completing the _Heroic: Nefarian_ achievement from Heroic: Blackwing Descent.
-Traverse Blackwing Descent on Heroic difficulty and defeat Nefarian.
-kill Nefarian##41376
-achieve 5116
-step
-Congratulations! You have earned the title Blackwing's Bane!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Raid Titles\\Firelord",{
-author="support@zygorguides.com",
-},[[
-step
-This title is earned by completing the _Heroic: Ragnaros_ achievement from Heroic: Firelands. This can be completed on either 10 or 25 player.
-Traverse the Firelands on Heroic difficulty and defeat Ragnaros.
-kill Ragnaros##41634
-achieve 5803
-step
-Congratulations! You have earned the title Firelord!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Raid Titles\\Avenger of Hyjal",{
-author="support@zygorguides.com",
-},[[
-step
-This title is gained by becoming Exalted with The Avengers of Hyjal reputation.
-This reputation can be gained by running the Firelands raid.
-A full run will grant roughly 2400 reputation.
-confirm
-step
-This will require you to be in a raid group.
-To make a raid group invite a friend to your group, then press the [O] key and _click_ on the raid tab on the bottom right corner of your Social interface. _Click_ the Convert to Raid button on the upper left corner.
-confirm
-step
-Enter the Firelands here |goto Mount Hyjal 47.2,78.1 < 5 |c
-step
-Kill every creature that is hostile in this instance in order to gain reputation.
-|tip This will only work until you reach Honored, after that only bosses and larger mobs will grant reputation.
-Click here to go back to the beginning of the guide |next "start" |confirm
-Earn Exalted status with the Avengers of Hyjal |condition rep('Avengers of Hyjal')==Exalted |next "exalted"
-step
-label exalted
-Congratulations! You have earned the title Avenger of Hyjal!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Raid Titles\\Destroyer's End",{
-author="support@zygorguides.com",
-},[[
-step
-This title is earned by completing the _Destroyer's End_ achievement from the Dragon Soul raid. This can be completed on either 10 or 25 player and on either Normal or Heroic difficulty.
-Traverse Dragon Soul and defeat Deathwing.
-kill Deathwing##56173
-achieve 6177
-step
-Congratulations! You have earned the title Destroyer's End!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Raid Titles\\Savior of Azeroth",{
-author="support@zygorguides.com",
-},[[
-step
-This title is earned by completing the _Heroic: Madness of Deathwing_ achievement from Heroic. This can be completed on either 10 or 25 player.
-Traverse Dragon Soul on Heroic Difficulty and defeat Deathwing.
-kill Deathwing##56173
-achieve 6116
-step
-Congratulations! You have earned the title Savior of Azeroth!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Raid Titles\\Delver of the Vaults",{},[[
-step
-To get this title you must defeat the Will of the Emperor in Heroic mode in the Guardians of Mogu'shan raid.
-Click here to load the Mogu'shan raid guide. |confirm
-step
-leechsteps "Zygor's Alliance Dungeon Guides\\Raids\\Pandaria (LFR)\\Guardians of Mogu'shan (LFR)"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Raid Titles\\The Fearless",{
-description="This guide will walk you through earning the Fearless title.",
-},[[
-step
-To get this title you must defeat the Sha of Fear on Heroic difficulty in the Terrace of Endless Spring raid.
-Click here to load the Terrace of Endless Spring raid guide. |confirm
-step
-leechsteps "Zygor's Alliance Dungeon Guides\\Raids\\Pandaria (LFR)\\Terrace of Endless Spring (LFR)"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Insane in the Membrane\\Bloodsail Buccaneers Group",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\The Insane\\Bloodsail Buccaneers Group",{
 author="support@zygorguides.com",
 description="This Guide will help you get Reputation to earn the title _The Insane_.",
+keywords={"The, Insane, In, Membrane"},
 },[[
 step
 label	"menu"
@@ -2218,10 +1564,12 @@ step
 label	"end"
 End of Guide
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Insane in the Membrane\\Bloodsail Buccaneers Solo",{},[[
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\The Insane\\Bloodsail Buccaneers Solo",{
+keywords={"The, Insane, In, Membrane"},
+},[[
 step
 You can only kill NPC's in one place alone now as Booty Bay Bruisers require a 5 man group to kill.
-Click here to farm the small cove with NPC's for Bloodsail Buccaneer Reputation. |confirm always "Zygor's Alliance Titles\\Insane in the Membrane\\Bloodsail Buccaneers Group"
+Click here to farm the small cove with NPC's for Bloodsail Buccaneer Reputation. |confirm always "Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\The Insane\\Bloodsail Buccaneers Group"
 or |only if not completedq(26679)
 You can click here to run the pirate questline and farm Booty Bay NPC's without level 85 guards attacking you. |only if not completedq(26679)
 Click here if you would rather run the questline and farm Booty Bay while in a phased zone |confirm always |only if not completedq(26679)
@@ -2559,7 +1907,74 @@ step
 label "end"
 End of Guide
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Insane in the Membrane\\The Steamwheedle Cartel",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\The Insane\\Darkmoon Faire",{
+keywords={"The, Insane, In, Membrane"},
+author="support@zygorguides.com",
+description="This Guide will help you get Reputation with The Darkmoon Faire to earn the title _The Insane_.",
+},[[
+step
+The Darkmoon Faire starts the first Sunday of the month and lasts for one week. The easiest way to earn reputation with
+the Darkmoon Faire is to do dailies on Darkmoon Faire Island every day that the Faire is in town.
+confirm
+step
+Look at Zygor's Darkmoon Faire Dailies Guide for more information on dailies.
+You can also earn reputation by turning in Darkmoon Decks. Click here to view the Darkmoon Deck statistics. |next cards |confirm
+step
+label	"cards"
+Cards may be the most expensive turnin for the Faire, but they also provide the most reputation.
+The higher level of card that you turn in, the more reputation you will receive.
+You will receive 350 reputation for turning in any Epic Darkmoon Decks and 25 reputation for rogues decks.
+This means that without guild perks you need 109 epic decks or 1520 rogues decks to become Exalted from Friendly.
+Reach Neutral with Darkmoone Faire |condition rep('Darkmoon Faire')>=Neutral
+Reach Friendly with Darkmoone Faire |condition rep('Darkmoon Faire')>=Friendly
+Reach Honored with Darkmoone Faire |condition rep('Darkmoon Faire')>=Honored
+Reach Revered with Darkmoone Faire |condition rep('Darkmoon Faire')>=Revered
+Reach Exalted with Darkmoone Faire |condition rep('Darkmoon Faire')>=Exalted
+next "end"
+step
+label	"end"
+Congratulations, you have reached Exalted with The Darkmoon Faire! |condition rep('Darkmoon Faire')>=Exalted
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\The Insane\\Ravenholdt",{
+keywords={"The, Insane, In, Membrane"},
+author="support@zygorguides.com",
+description="This Guide will help you get Reputation with Ravenholdt to earn the title _The Insane_.",
+},[[
+step
+In order to get Exalted with Ravenholdt Faction, you need to grind mobs to _11,999/12,000_ Honored reputation.
+Once you've reached Honored, you will need to collect a lot of Heavy Junkboxes.  If you aren't a rogue, you will need the assistance of one.
+You can get a lot of Heavy Junkboxes frequently if you go to Blackrock Spire, but unless you're an engineer, it will be time consuming to run back and forth to a mailbox to clear up space.
+confirm always
+step
+kill Syndicate Mercenary##2589+, Syndicate Highwayman##2586+, Syndicate Pathstalker##2587+, Syndicate Conjuror##2590+, Syndicate Magus##2591+, Syndicate Thief##24477+, Syndicate Prowler##2588+ |goto Arathi Highlands,27.1,30.6
+You can find more Syndicate here: [Arathi Highlands,19.5,61.5]
+Reach _11,999/12,000_ Honored with Ravenholdt.
+|tip You can only get 1 point away from Revered by grinding, then you will have to do quests.
+Click here to continue |confirm
+step
+label	"boxes"
+Now that you have reached Revered, or close to it, you will need to do repeatable quests until Exalted.
+The only thing you need for the repeatable quests are _Heavy Junkboxes_.
+You can get these by having a _Rogue_ pickpocket mobs in the Blackrock Spire Dungeon.
+|tip You can also announce in the Trade Chat of any major city that you are willing to purchase Heavy Junkboxes in multiples of 5, whether by mail or in person for x amount of gold.
+You will need to turnin a total of 1400 _Heavy Junkboxes_ with at least 1 item left in them to go from _Revered_ to _Exalted_.
+|tip If you have the guild perk Mr. Popularity you only need 1170.
+collect Heavy Junkbox##16885+ |n
+Click here to continue and turn in your Boxes. |confirm
+step
+talk Winstone Wolfe##7323
+accept Junkboxes Needed##8249 |goto Hillsbrad Foothills 71.4,45.0 |instant |repeatable |n
+You are currently _Honored_ with Ravenholdt |only if rep('Ravenholdt')==Honored
+You are currently _Revered_ with Ravenholdt |only if rep('Ravenholdt')==Revered
+Reach Exalted with Ravenholdt |condition rep('Ravenholdt')==Exalted |next end
+or
+Click here to get more _Heavy Junkboxes_ |confirm |next "boxes"
+step
+label	"end"
+Congratulations, you have reached Exalted with Ravenholdt!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\The Insane\\The Steamwheedle Cartel",{
+keywords={"The, Insane, In, Membrane"},
 author="support@zygorguides.com",
 description="This Guide will help you get Reputation with the Steamwheedle Cartel to earn the title _The Insane_.",
 },[[
@@ -2785,95 +2200,916 @@ step
 label	"end"
 Congratulations! You are honored with the Steamwheedle Cartel!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Insane in the Membrane\\Ravenholdt",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Ambassador",{
 author="support@zygorguides.com",
-description="This Guide will help you get Reputation with Ravenholdt to earn the title _The Insane_.",
 },[[
 step
-In order to get Exalted with Ravenholdt Faction, you need to grind mobs to _11,999/12,000_ Honored reputation.
-Once you've reached Honored, you will need to collect a lot of Heavy Junkboxes.  If you aren't a rogue, you will need the assistance of one.
-You can get a lot of Heavy Junkboxes frequently if you go to Blackrock Spire, but unless you're an engineer, it will be time consuming to run back and forth to a mailbox to clear up space.
-confirm always
-step
-kill Syndicate Mercenary##2589+, Syndicate Highwayman##2586+, Syndicate Pathstalker##2587+, Syndicate Conjuror##2590+, Syndicate Magus##2591+, Syndicate Thief##24477+, Syndicate Prowler##2588+ |goto Arathi Highlands,27.1,30.6
-You can find more Syndicate here: [Arathi Highlands,19.5,61.5]
-Reach _11,999/12,000_ Honored with Ravenholdt.
-|tip You can only get 1 point away from Revered by grinding, then you will have to do quests.
-Click here to continue |confirm
-step
-label	"boxes"
-Now that you have reached Revered, or close to it, you will need to do repeatable quests until Exalted.
-The only thing you need for the repeatable quests are _Heavy Junkboxes_.
-You can get these by having a _Rogue_ pickpocket mobs in the Blackrock Spire Dungeon.
-|tip You can also announce in the Trade Chat of any major city that you are willing to purchase Heavy Junkboxes in multiples of 5, whether by mail or in person for x amount of gold.
-You will need to turnin a total of 1400 _Heavy Junkboxes_ with at least 1 item left in them to go from _Revered_ to _Exalted_.
-|tip If you have the guild perk Mr. Popularity you only need 1170.
-collect Heavy Junkbox##16885+ |n
-Click here to continue and turn in your Boxes. |confirm
-step
-talk Winstone Wolfe##7323
-accept Junkboxes Needed##8249 |goto Hillsbrad Foothills 71.4,45.0 |instant |repeatable |n
-You are currently _Honored_ with Ravenholdt |only if rep('Ravenholdt')==Honored
-You are currently _Revered_ with Ravenholdt |only if rep('Ravenholdt')==Revered
-Reach Exalted with Ravenholdt |condition rep('Ravenholdt')==Exalted |next end
+label	"menu"
+This guide will show you how to become exalted the fastest way, with all your Hometown Factions.
+Below you will see which faction you are Exalted with and which ones you are not:
+Exalted with Stormwind |condition rep('Stormwind')==Exalted
+Click to use the Stormwind rep Guide |confirm |next "sw" |only if rep ('Stormwind')<=Revered
 or
-Click here to get more _Heavy Junkboxes_ |confirm |next "boxes"
+Exalted with Darnassus |condition rep('Darnassus')==Exalted
+Click to use the Darnassus rep Guide |confirm |next "darn" |only if rep ('Darnassus')<=Revered
+or
+Exalted with Gnomeregan |condition rep('Gnomeregan')==Exalted
+Click to use the Gnomeregan rep Guide |confirm |next "gnom" |only if rep ('Gnomeregan')<=Revered
+or
+Exalted with Ironforge |condition rep('Ironforge')==Exalted
+Click to use the Ironforge Rep Guide |confirm |next "iron" |only if rep ('Ironforge')<Revered
+or
+Exalted with The Exodar |condition rep('The Exodar')==Exalted
+Click to use the Exodar rep Guide |confirm |next "ex" |only if rep('The Exodar')<=Revered
+or
+Exalted with Gilneas |condition rep('Gilneas')==Exalted
+Click to use the Gilneas rep Guide |confirm |next "gil" |only if rep ('Gilneas')<=Revered
+next "end" |only if achieved(948)
+step
+label	"sw"
+talk Captain Lancy Revshon##49877
+buy Stormwind Tabard##45574 |goto Stormwind City,67.7,73.0
+step
+Equip your Stormwind Tabard |equipped Stormwind Tabard##45574 |use Stormwind Tabard##45574
+You can run any dungeon that grants experience to gain reputation for Stormwind.
+Friendly with Stormwind |condition rep('Stormwind')>=Friendly
+Honored with Stormwind |condition rep('Stormwind')>=Honored
+Revered with Stormwind |condition rep('Stormwind')>=Revered
+Become Exalted with Stormwind |condition rep('Stormwind')==Exalted
+next "menu"
+step
+label	"darn"
+Skipping next part of guide |next "+darn_tab" |only if step:Find("+darn_buy"):IsComplete()
+Proceeding next step |next |only if default
+step
+Go through the Large Pink Portal |goto Teldrassil,55.1,88.5
+Teleport to Darnassus |goto Darnassus |noway |c
+step
+label	"darn_buy"
+talk Moon Priestess Lasara##50305
+buy Darnassus Tabard##45579 |goto Darnassus,36.2,48.5
+step
+label	"darn_tab"
+Equip your Darnassus Tabard |use Darnassus Tabard##45579
+You can run any dungeon that grants experience to gain reputation for Darnassus.
+Friendly with Darnassus |condition rep('Darnassus')>=Friendly
+Honored with Darnassus |condition rep('Darnassus')>=Honored
+Revered with Darnassus |condition rep('Darnassus')>=Revered
+Become Exalted with Darnassus |condition rep('Darnassus')==Exalted
+next "menu"
+step
+label	"ex"
+Skipping next part of guide |next "+ex_tab" |only if step:Find("+ex_buy"):IsComplete()
+Proceeding next step |next |only if default
+step
+Go through the Large Pink Portal |goto Teldrassil,55.1,88.5
+Teleport to Darnassus |goto Darnassus |noway |c
+step
+click Portal to The Exodar##06955 |goto Darnassus,44.2,78.7
+Teleport to The Exodar |goto The Exodar |noway |c
+step
+label	"ex_buy"
+talk Kadu##50306
+buy Exodar Tabard##45580 |goto The Exodar,54.8,36.8
+step
+label	"ex_tab"
+Equip your Exodus Tabard |equipped Exodar Tabard##45580 |use Exodar Tabard##45580
+You can run any dungeon that grants experience to gain reputation for The Exodar.
+Friendly with The Exodar |condition rep('The Exodar')>=Friendly
+Honored with The Exodar |condition rep('The Exodar')>=Honored
+Revered with The Exodar |condition rep('The Exodar')>=Revered
+Become Exalted with The Exodar |condition rep('The Exodar')==Exalted
+next "menu"
+step
+label	"gnom"
+Skipping next part of guide |next "+gnom_tab" |only if step:Find("+gnom_buy"):IsComplete()
+Proceeding next step |next |only if default
+step
+label	"gnom_buy"
+talk Master Tinker Trini##50308
+buy Gnomeregan Tabard##45578 |goto Ironforge,55.3,48.2
+step
+label	"gnom_tab"
+Equip your Gnomeregan Tabard |equipped Gnomeregan Tabard##45578 |use Gnomeregan Tabard##45578
+You can run any dungeon that grants experience to gain reputation for Gnomeregan.
+Friendly with Gnomeregan |condition rep('Gnomeregan')>=Friendly
+Honored with Gnomeregan |condition rep('Gnomeregan')>=Honored
+Revered with Gnomeregan |condition rep('Gnomeregan')>=Revered
+Become Exalted with Gnomeregan |condition rep('Gnomeregan')==Exalted
+next "menu"
+step
+label	"iron"
+Skipping next part of guide |next "+iron_tab" |only if step:Find("+iron_buy"):IsComplete()
+Proceeding next step |next |only if default
+step
+label	"iron_buy"
+talk Captain Stonehelm##50309
+buy Ironforge Tabard##45577 |goto Ironforge,55.6,47.3
+step
+label	"iron_tab"
+Equip your Ironforge Tabard |equipped Ironforge Tabard##45577 |use Ironforge Tabard##45577
+You can run any dungeon that grants experience to gain reputation for Ironforge.
+Friendly with Ironforge |condition rep('Ironforge')>=Friendly
+Honored with Ironforge |condition rep('Ironforge')>=Honored
+Revered with Ironforge |condition rep('Ironforge')>=Revered
+Become Exalted with Ironforge |condition rep('Ironforge')==Exalted
+next "menu"
+step
+label	"gil"
+Skipping next part of guide |next "+gil_tab" |only if step:Find("+gil_buy"):IsComplete()
+Proceeding next step |next |only if default
+step
+Go through the Large Pink Portal |goto Teldrassil,55.1,88.5
+Teleport to Darnassus |goto Darnassus |noway |c
+step
+label	"gil_buy"
+talk Lord Candren##50307
+buy Gilneas Tabard##64882 |goto Darnassus,37.1,47.5
+step
+label	"gil_tab"
+Equip your Gilneas Tabard |equipped Gilneas Tabard##64882 |use Gilneas Tabard##64882
+You can run any dungeon that grants experience to gain reputation for Gilneas.
+Friendly with Gilneas |condition rep('Gilneas')>=Friendly
+Honored with Gilneas |condition rep('Gilneas')>=Honored
+Revered with Gilneas |condition rep('Gilneas')>=Revered
+Become Exalted with Gilneas |condition rep('Gilneas')==Exalted
+next "menu"
 step
 label	"end"
-Congratulations, you have reached Exalted with Ravenholdt!
+Congratulations, you have earned the Title _Ambassador_! |achieve 948
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Insane in the Membrane\\Darkmoon Faire",{
-author="support@zygorguides.com",
-description="This Guide will help you get Reputation with The Darkmoon Faire to earn the title _The Insane_.",
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Of the Ashen Verdict",{
 },[[
 step
-The Darkmoon Faire starts the first Sunday of the month and lasts for one week. The easiest way to earn reputation with
-the Darkmoon Faire is to do dailies on Darkmoon Faire Island every day that the Faire is in town.
+This title is gained by becoming Exalted with The Ashen Verdict reputation.
+This reputation can be earned by running the Icecrown Citadel raid.
 confirm
 step
-Look at Zygor's Darkmoon Faire Dailies Guide for more information on dailies.
-You can also earn reputation by turning in Darkmoon Decks. Click here to view the Darkmoon Deck statistics. |next cards |confirm
+This will require you to be in a raid group.
+To make a raid group_invite a friend to your group, then press the [O] key and _click_ on the raid tab on the bottom right corner of your Social interface. _Click_ the Convert to Raid button on the upper left corner.
+confirm
 step
-label	"cards"
-Cards may be the most expensive turnin for the Faire, but they also provide the most reputation.
-The higher level of card that you turn in, the more reputation you will receive.
-You will receive 350 reputation for turning in any Epic Darkmoon Decks and 25 reputation for rogues decks.
-This means that without guild perks you need 109 epic decks or 1520 rogues decks to become Exalted from Friendly.
-Reach Neutral with Darkmoone Faire |condition rep('Darkmoon Faire')>=Neutral
-Reach Friendly with Darkmoone Faire |condition rep('Darkmoon Faire')>=Friendly
-Reach Honored with Darkmoone Faire |condition rep('Darkmoon Faire')>=Honored
-Reach Revered with Darkmoone Faire |condition rep('Darkmoon Faire')>=Revered
-Reach Exalted with Darkmoone Faire |condition rep('Darkmoon Faire')>=Exalted
+label start
+Enter Icecrown Citadel here. |goto Icecrown 53.8,87.1 <5 |c
+step
+Kill every creature that is hostile in this instance in order to gain reputation.
+|tip You will have to clear this place a few times to reach Exalted.
+Click here to go back to the beginning of the guide |next "start" |confirm
+Earn Exalted status with the Ashen Verdict |condition rep('Ashen Verdict')==Exalted |next "exalted"
+step
+label exalted
+Congratulations! You have earned the title "of the Ashen Verdict"!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Bloodsail Admiral",{
+author="support@zygorguides.com",
+description="This Guide will help you get Reputation to earn the title _The Insane_.",
+},[[
+step
+label	"menu"
+This guide will show you how to earn the Admiral Title the most efficient way possible.
+Honored with Bloodsail Buccaneers |condition rep('Bloodsail Buccaneeers')>=Honored
+Click to use the Buccaneers rep Guide |confirm |next "blood_grind"
+or |only if not completedq(26679)
+Click here if you would rather run the questline and farm Booty Bay while in a phased zone |confirm always |only if not completedq(26679)
+step
+label	"blood_quest"
+talk "Sea Wolf" MacKinley##2501
+accept Scaring Shaky##26593 |goto The Cape of Stranglethorn,42.1,73.4
+step
+kill Elder Mistvale Gorilla##1557+
+collect 5 Mistvale Giblets |q 26593/1 |goto 50.4,54.6
+step
+talk "Shaky" Phillipe##2502
+turnin Scaring Shaky##26593 |goto The Cape of Stranglethorn,40.5,67.7
+accept Return to MacKinley##26594 |goto The Cape of Stranglethorn,40.5,67.7
+step
+talk "Sea Wolf" MacKinley##2501
+turnin Return to MacKinley##26594 |goto 42.1,73.4
+accept Kill-Collect##26595 |goto 42.1,73.4
+step
+kill Freewheelin' Juntz Fitztittle##43376
+collect Fitztittle's Ratcheting Torque Wrench |q 26595/2 |goto The Cape of Stranglethorn,56.6,57.6
+step
+click Half-Buried Bottle##204406
+accept Message in a Bottle##26603 |goto The Cape of Stranglethorn 57.0,54.4
+step
+talk Ephram "Midriff" Moonfall##43377
+Tell him, So you kno why I'm here then. all right Midriff, pay up.
+kill Ephram "Midriff" Moonfall##43377
+collect Ephram's Jeweled Mirror |q 26595/3 |goto 57.8,48.6
+step
+kill Maury "Club Foot" Wilkins##2535
+collect Maury's Clubbed Foot |q 26595/1 |goto The Cape of Stranglethorn,59.7,49.2
+step
+talk Princess Poobah##2634
+turnin Message in a Bottle##26603 |goto The Cape of Stranglethorn 59.4,79.1
+accept Protecting Her Royal Highness Poobah##26604 |goto The Cape of Stranglethorn 59.4,79.1
+step
+kill Jaguero Stalker##2522+ |q 26604/1 |goto The Cape of Stranglethorn 58.4,80.4
+|tip They are stealthed around this area, so you may need to search a bit.
+step
+talk Princess Poobah##2634
+turnin Protecting Her Royal Highness Poobah##26604 |goto The Cape of Stranglethorn 59.4,79.1
+accept Grubby Little Paws##26605 |goto The Cape of Stranglethorn 59.4,79.1
+step
+kill Skymane Gorilla##2521+
+collect Poobah's Tiara##59057 |q 26605/1 |goto The Cape of Stranglethorn 62.6,78.2
+collect Poobah's Scepter##59058 |q 26605/2 |goto The Cape of Stranglethorn 62.6,78.2
+collect Poobah's Slippers##59059 |q 26605/3 |goto The Cape of Stranglethorn 62.6,78.2
+collect Poobah's Diary##59060 |q 26605/4 |goto The Cape of Stranglethorn 62.6,78.2
+step
+talk Princess Poobah##2634
+turnin Grubby Little Paws##26605 |goto The Cape of Stranglethorn 59.4,79.1
+accept Mukla's Demise##26606 |goto The Cape of Stranglethorn 59.4,79.1
+step
+kill King Mukla##1559+
+collect Shackle Key |q 26606/1 |goto The Cape of Stranglethorn 63.4,83.2
+step
+talk Princess Poobah##2634
+turnin Mukla's Demise##26606 |goto The Cape of Stranglethorn 59.4,79.1
+step
+talk "Sea Wolf" MacKinley##2501
+turnin Kill-Collect##26595 |goto 42.1,73.4
+step
+talk First Mate Crazz##2490
+accept The Bloodsail Buccaneers##26609 |goto 42.6,72.0
+step
+click Bloodsail Correspondence##183
+turnin The Bloodsail Buccaneers##26609 |goto 41.3,61.2
+accept Bloodsail Treachery##26610 |goto 41.3,61.2
+step
+talk First Mate Crazz##2490
+turnin Bloodsail Treachery##26610 |goto 42.6,72.0
+accept The Baron Must Be Told##26611 |goto 42.6,72.0
+step
+talk Baron Revilgaz##2496
+turnin The Baron Must Be Told##26611 |goto 41.2,73.1
+accept Details of the Attack##26612 |goto 41.2,73.1
+stickystart "bloodseamag"
+step
+click Bloodsail Orders##220
+collect Bloodsail Orders##220 |q 26612/4 |goto 45.0,79.7
+step "bloodseamag"
+click Bloodsail Charts##222
+collect Bloodsail Charts |q 26612/3 |goto 40.7,82.2
+kill 8 Bloodsail Sea Dog##1565 |q 26612/1 |goto 40.7,82.2
+kill 8 Bloodsail Elder Magus##1653+ |q 26612/2 |goto 40.7,82.2
+step
+talk Baron Revilgaz##2496
+turnin Details of the Attack##26612 |goto 41.2,73.1
+accept Getting In With the Bloodsail##26624 |goto 41.2,73.1
+step
+talk Yancey Grillsen##43504
+turnin Getting In With the Bloodsail##26624 |goto 43.8,56.5
+accept Seeing Where Your Loyalties Lie##26629 |goto 43.8,56.5
+step
+talk Fleet Master Seahorn##2487
+accept Looks Like a Tauren Pirate to Me##26630 |goto 41.1,73.3
+step
+talk Bossy##43505 |tip Upstairs in this store
+Tell Bossy _Moo_
+<Do the Deed.>  :'(
+collect Cow Head |q 26630/3 |goto 43.3,71.7
+step
+talk Narkk##2663
+Tell him _I need an extra-large pirate hat._
+collect Oversized Pirate Hat |q 26630/2 |goto 42.6,69.1
+step
+talk Fleet Master Seahorn##2487
+Tell him _Here' the head and the hat, Fleet Master._
+and _You're the boss._
+Return both items to Fleet Master Seahorn |q 26630/1 |goto 41.1,73.3
+turnin Looks Like a Tauren Pirate to Me##26630 |goto 41.1,73.3
+collect Head of Fleet Master Seahorn |q 26629/1 |goto 41.1,73.3
+step
+talk Yancey Grillsen##43504
+turnin Seeing Where Your Loyalties Lie##26629 |goto The Cape of Stranglethorn,43.8,56.5
+accept Your First Day as a Pirate##26631 |goto The Cape of Stranglethorn,43.8,56.5
+step
+talk Captain Keelhaul##2548
+turnin Your First Day as a Pirate##26631 |goto 44.4,91.5
+accept Swabbing Duty##26633 |goto 44.4,91.5
+step
+Go up to the ship deck and use a mop to swob a deck
+click Swabbie's Mop##09742
+clicknpc Deck Stain##43511a
+Swab the decks |q 26633/1
+|tip If you have trouble swabbing the decks, you can pay "Pretty Boy" Duncan, on the deck of the ship, 1 gold and he will do it for you.
+step
+talk Captain Keelhaul##2548
+turnin Swabbing Duty##26633 |goto 44.5,91.6
+step
+talk "Pretty Boy" Duncan##2545
+accept Cannonball Swim##26635 |goto 44.5,93.0
+step
+click Bloodsail Cannonball##153+
+collect 6 Bloodsail Cannonball |q 26635/1 |goto 47.3,95.5
+step
+talk "Pretty Boy" Duncan##2545
+turnin Cannonball Swim##26635 |goto 44.5,92.9
+step
+talk Garr Salthoof##2549
+accept The Bane of Many A Pirate##26634 |goto 44.5,91.9
+step
+click Lime Crate##2350+
+collect 5 Bushel of Limes |q 26634/1 |goto 41.9,83.0
+|tip You will get attacked by a lime thief when you loot these.
+You can find more crates around: [40.3,82.9]
+And [44.9,79.9]
+step
+talk Garr Salthoof##2549
+turnin The Bane of Many A Pirate##26634 |goto 44.5,91.9
+step
+talk Captain Keelhaul##2548
+accept Attracting Attention##26644 |goto 44.5,91.6
+step
+talk Fleet Master Firallon##2546
+turnin Attracting Attention##26644 |goto 46.7,95.3
+step
+talk Ironpatch##2547
+accept Ol' Blasty##26647 |goto 46.6,95.0
+step
+clicknpc Ol' Blasty##43562 |invehicle |c |q 26647 |goto 46.9,94.2
+Use your abilities to shoot the target dummy in the boat
+Hit Smilin' Timmy Sticks with a cannoball 5 times |q 26647/1 |goto 46.9,94.2
+step
+Click the Red Arrow on your action bar to exit the Cannon |outvehicle |c |q 26647
+step
+talk Ironpatch##2547
+turnin Ol' Blasty##26647 |goto 46.6,95.0
+accept Drive-By Piracy##26649 |goto 46.6,95.0
+step
+talk "Dead-Eye" Drederick McGumm##43556
+accept Our Mortal Enemies##26648 |goto 46.8,95.1
+step
+talk Bloodsail Oarsman##43605
+Tell him ahoy matey!
+Use the abilities on your hotbar to shoot at the Venture Co. Oil Workers
+|tip They look like goblins working on the metal machines.
+kill 75 Venture Co. Oil Worker##43596+ |q 26649/1 |goto 45.9,89.7
+step
+talk Ironpatch##2547
+turnin Drive-By Piracy##26649 |goto 46.6,95.0
+step
+Use Dead-Eye's Flare Gun to reveal the ninja's around this area |use Dead-Eye's Flare Gun##59226
+kill 15 Ninja##43553+ |q 26648/1 |goto 56.5,87.1
+Click the Complete Quest box in the top right of your screen
+trunin Our Mortal Enemies##26648 |goto 56.5,87.1
+step
+talk Fleet Master Firallon##2546
+accept The Damsel's Luck##26650 |goto 46.7,95.3
+step
+Go to the room below the stairs on this boat
+click Captain Stillwater's Charts##222
+turnin The Damsel's Luck##26650 |goto 50.3,91.4
+accept The Brashtide Crew##26662 |goto 50.3,91.4
+accept Sinking From Within##26663 |goto 50.3,91.4
+accept Making Mutiny##26664 |goto 50.3,91.4
+step
+talk Long John Copper##43659
+Tell him, _Long John Copper, is the Brashtide Crew ready for battle_
+|tip He's standing in the middle of the boat.
+Speak with Long John Copper |q 26662/1 |goto 51.3,91.4
+step
+click Grog Barrel##9095
+_Nudge the cork._
+Sabotage the Grog |q 26663/1 |goto 50.6,91.5
+step
+Go to the lower deck of the boat
+Talk to Bloodsail Corsair
+Tell them _You're a mutinous dog! Draw steel!_
+kill 9 Bloodsail Corsair##43636+ |q 26664/1
+Click the Complete Quest box in the right corner
+turnin Making Mutiny##26664
+You can also find Bloodsail Corsairs on the other boat around [46.8,93.7]
+step
+click Gunpowder Barrel##9095
+_Pour the water onto the gunpowder_
+Sabotage the Gunpowder |q 26663/2 |goto 46.8,93.7
+step
+talk Enormous Shawn Stooker##43660
+Tell him _What can you tell me about the Brashtide Crew?_
+|tip Standing on the bottom deck of the boat.
+Speak with Enormous Shawn Stooker |q 26662/2 |goto 46.8,94.2
+step
+talk Wailing Mary Smitts##43661 |tip Standing in the middle of the boat
+Tell her _You know the battle plan, right?_
+Speak with Wailing Mary Smitts |q 26662/3 |goto 44.5,93.2
+Click the Complete Quest box in the right corner
+turnin The Brashtide Crew##26662
+step
+click Cannonball Crate##9651 |tip It's on the lowest deck of the ship.
+_Grease the Cannonballs_
+Sabotage the Cannonballs |q 26663/3 |goto 44.6,92.8
+Click the Complete Quest box in the right corner
+turnin Sinking From Within##26663
+accept Call of Booty##26665
+step
+talk Baron Revilgaz##2496
+turnin Call of Booty##26665 |goto 41.2,73.1
+accept Doublerum##26678 |goto 41.2,73.1
+step
+click Barrel of Doublerum##32
+Just down the stairs in the room on the right
+collect Barrel of Doublerum |q 26678/1 |goto 40.6,73.2
+turnin Doublerum##26678 |goto 40.6,73.2
+accept Return to Revilgaz##26679 |goto 40.6,73.2
+step
+_WARNING WARNING WARNING_
+DO NOT TURN IN THIS QUEST
+You can kill _Booty Bay citizens_ and gain repuation with the Bloodsail Buccaneers
+|tip You will lose reputation with ALL Steemwheedle Cartel if you do this
+Click here to gain reputation with the Bloodsail Buccaneers |confirm |next "Bloodsail_grind"
+step
+label	"Bloodsail_grind"
+Kill any Booty Bay Citizen in this area to gain reputation with Bloodsaid Buccaneers
+|tip To attack them, open your Factions list, scroll down and find Booty Bay. Click on Booty Bay and check the At War box.
+In order to accept the quest needed for the title "Bloodsail Admiral" you must be Friendly with the Bloodsail Buccaneers and Hated with Booty Bay.
+Hated with Bloodsail |condition rep('Bloodsail Buccaneers')>=Hated |only if rep('Bloodsail Buccaneers')<=Hated
+Hostile with Bloodsail |condition rep('Bloodsail Buccaneers')>=Hostile |only if rep('Bloodsail Buccaneers')<=Hostile
+Unfriendly with Bloodsail |condition rep('Bloodsail Buccaneers')>=Unfriendly |only if rep('Bloodsail Buccaneers')<=Unfriendly
+Neutral with Bloodsail |condition rep('Bloodsail Buccaneers')>=Neutral |only if rep('Bloodsail Buccaneers')<=Neutral
+Friendly with Bloodsail |condition rep('Bloodsail Buccaneers')>=Friendly
+Hated with Booty Bay |condition rep('Booty Bay')==Hated
+step
+talk "Pretty Boy" Duncan##2545
+accept Avast Ye, Scallywag##1036 |goto 44.5,93.0
+step
+talk Fleet Master Firallon##2546
+turnin Avast Ye, Scallywag##1036 |goto 46.7,95.3
+accept Avast Ye, Admiral!##4621 |goto 46.7,95.3
+step
+kill Fleet Master Seahorn##2487 |q 4621/2 |goto 41.6,73.0
+step
+kill Baron Revilgaz##2496 |q 4621/1 |goto 41.1,73.1
+step
+talk Fleet Master Firallon##2546
+turnin Avast Ye, Admiral!##4621 |goto 46.7,95.3
+step
+Congratulations! You have earned the title Bloodsail Admiral!
+Click here to farm your rep with Booty Bay again.
+|tip Any Steamwheedle Cartel town will be hostile toward you. Farming your reputation back up now would save you from being attacked when you enter one of these towns. |confirm
+Or
+Click here to continue |confirm |next "end"
+step
+You can stay here and grind reputation with Booty Bay by killing Bloodsail Corsair
+from Bloodsail Corsair##43726+ |goto 41.3,71.2
+Hated with Booty Bay |condition rep('Booty Bay')>=Hated |only if rep('Booty Bay')<=Hated
+Hostile with Booty Bay |condition rep('Booty Bay')>=Hostile |only if rep('Booty Bay')<=Hostile
+Unfriendly with Booty Bay |condition rep('Booty Bay')>=Unfriendly |only if rep('Booty Bay')<=Unfriendly
+Neutral with Booty Bay |condition rep('Booty Bay')>=Neutral |only if rep('Booty Bay')<=Neutral
+Friendly with Booty Bay |condition rep('Booty Bay')>=Friendly |only if rep('Booty Bay')<=Friendly
+Honored with Booty Bay |condition rep('Booty Bay')>=Honored |only if rep('Booty Bay')<=Honored
+Revered with Booty Bay |condition rep('Booty Bay')>=Revered |only if rep('Booty Bay')<=Revered
+Exalted with Booty Bay |condition rep('Booty Bay')>=Exalted |only if rep('Booty Bay')<=Exalted
+If you are at least Neutral with Booty Bay you can begin doing quests in this Area to gain rep faster.
+Click here to start questing |confirm |next "booty_quest" |only if rep('Booty Bay')>=Neutral
+|next "end" |only if rep('Booty Bay')<=Unfriendly
+step
+label	"booty_quest"
+talk Baron Revilgaz##2496
+turnin Return to Revilgaz##26679 |goto 41.1,73.1
+accept Prepare for Takeoff##26695 |goto 41.1,73.1
+accept Seeking Seahorn##26698 |goto 41.1,73.1
+step
+talk Fleet Master Seahorn##2487
+turnin Seeking Seahorn##26698 |goto 41.5,73.0
+accept The Damsel's (Bad) Luck##26700 |goto 41.5,73.0
+accept Turning the Brashtide##26699 |goto 41.5,73.0
+stickystart "brashraid"
+step
+click Narkk's Handbombs##9651
+collect Narkk's Handbombs |q 26695/1 |goto 42.6,69.1
+step "brashraid"
+kill 10 Brashtide Raider##43716+ |q 26699/1
+step
+click Blackwater Rope##7538 |goto 41.5,73.0
+Swing over to the boat |goto 41.0,70.7,0.5 |noway |c
+step
+kill 8 Bloodsail Corsair##43726+ |q 26700/1 |goto 41.4,71.0
+step
+click Blackwater Rope##7538 |goto 41.1,70.9
+Swing to the docks |goto 41.5,73.0,0.5 |noway |c
+step
+talk Baron Revilgaz##2496
+turnin Turning the Brashtide##26699 |goto 41.1,73.2
+turnin The Damsel's (Bad) Luck##26700 |goto 41.1,73.2
+turnin Prepare for Takeoff##26695 |goto 41.1,73.2
+accept The Final Voyage of the Brashtide##26697 |goto 41.1,73.2
+step
+talk Kebok##737 |goto The Cape of Stranglethorn,40.4,73.4
+Tell him _Sorry, not here to chat. I need a wind rider_ |invehicle |noway |c
+step
+Use the _Throw Handbombs_ key on your action bar
+kill 85 Brashtide Crewman##43717+ |q 26697/1
+Destoy 6 Brashtide Attack Boats |q 26697/2 |modelnpc 43790
+Use your _Return to Booty Bay_ button |outvehicle |noway |c
+step
+talk Baron Revilgaz##2496
+turnin The Final Voyage of the Brashtide##26697 |goto 41.1,73.2
+accept Bloodsail's End##26703 |goto 41.1,73.2
+step
+kill Fleet Master Firallon##2546 |q 26703/1 |goto 35.7,66.8
+step
+talk Baron Revilgaz##2496
+turnin Bloodsail's End##26703 |goto 41.2,73.1
 next "end"
 step
+label	"blood_grind"
+You will need a full group of 4 or 5 people to be able to reasonably farm Booty Bay for Bloodsail Reputation.
+Once you have acquired a group, including a healer and tank, you can proceed
+Click to continue |confirm
+step
+We suggest starting in this tunnel so you do not get overwhelmed by guards.
+Set your Booty Bay social bar to _At War_ and begin killing Booty Bay Bruisers
+kill Booty Bay Bruiser##4624+ |goto The Cape of Stranglethorn 42.5,67.4
+You will lose reputation with the Steemwheedle Cartel but you will gain 25 points of reputation with each kill
+Hated with Bloodsail |condition rep('Bloodsail Buccaneers')>=Hated |only if rep('Bloodsail Buccaneers')<=Hated
+Hostile with Bloodsail |condition rep('Bloodsail Buccaneers')>=Hostile |only if rep('Bloodsail Buccaneers')<=Hostile
+Unfriendly with Bloodsail |condition rep('Bloodsail Buccaneers')>=Unfriendly |only if rep('Bloodsail Buccaneers')<=Unfriendly
+Neutral with Bloodsail |condition rep('Bloodsail Buccaneers')>=Neutral |only if rep('Bloodsail Buccaneers')<=Neutral
+Friendly with Bloodsail |condition rep('Bloodsail Buccaneers')>=Friendly |only if rep('Bloodsail Buccaneers')<=Friendly
+Honored with Bloodsail |condition rep('Bloodsail Buccaneers')>=Honored
+step
 label	"end"
-Congratulations, you have reached Exalted with The Darkmoon Faire! |condition rep('Darkmoon Faire')>=Exalted
+Congratulations, you have earned the _Bloodsail Admiral_ title!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Exploration\\Kalimdor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\The Exalted",{
 author="support@zygorguides.com",
-description="This guide section will walk you through completing\nthe Explorer achievement.",
+description="This guide will instruct you on how to get The Exalted title.",
 },[[
-leechsteps "Zygor's Alliance Achievements Guides\\Exploration\\Kalimdor\\Explore Kalimdor"
+step
+Use our Reputations guide to get Exalted reputation with 45 different reputations.
+Earn Exalted reputation with 45 different reputations |achieve 5374/1
+step
+Congratulations! You have earn the title The Exalted! |achieve 5374
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Exploration\\Eastern Kingdoms",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Brewmaster\\Brewfest Achievements",{
+keywords={"Brewmaster"},
 author="support@zygorguides.com",
-description="This guide section will walk you through completing\nthe Explorer achievement.",
+description="This guide section will walk you through completing the achievements for the Brewfest event.",
 },[[
-leechsteps "Zygor's Alliance Achievements Guides\\Exploration\\Eastern Kingdoms\\Explore Eastern Kingdoms"
+step
+talk Arlen Lochlan##23522
+buy The Essential Brewfest Pretzel##33043 |goto Dun Morogh,55.6,38.2 |achieve 1185
+step
+Click The Essential Brewfest Pretzels in your bags |use The Essential Brewfest Pretzel##33043
+Eat The Essential Brewfest Pretzels |achieve 1185/7
+step
+talk Anne Summers##23521
+buy Spiced Onion Cheese##34065 |achieve 1185 |goto 56.5,37.7
+step
+Click the Spiced Onion Cheese in your bags |use Spiced Onion Cheese##34065
+Eat the Spiced Onion Cheese |achieve 1185/4
+step
+talk Keiran Donoghue##23481
+buy Dried Sausage##34063 |achieve 1185 |goto 56.0,36.4
+buy Succulent Sausage##34064 |achieve 1185 |goto 56.0,36.4
+buy Savory Sausage##33023 |achieve 1185 |goto 56.0,36.4
+buy Pickled Sausage##33024 |achieve 1185 |goto 56.0,36.4
+buy Spicy Smoked Sausage##33025 |achieve 1185 |goto 56.0,36.4
+buy The Golden Link##33026 |achieve 1185 |goto 56.0,36.4
+step
+Do the following:
+Click the Dried Sausage in your bags |use Dried Sausage##34063
+Eat the Dried Sausage |achieve 1185/1
+Click the Succulent Sausage in your bags |use Succulent Sausage##34064
+Eat the Succulent Sausage |achieve 1185/6
+Click the Savory Sausage in your bags |use Savory Sausage##33023
+Eat the Savory Sausage |achieve 1185/3
+Click the Pickled Sausage in your bags |use Pickled Sausage##33024
+Eat the Pickled Sausage |achieve 1185/2
+Click the Spicy Smoked Sausage in your bags |use Spicy Smoked Sausage##33025
+Eat Spicy Smoked Sausage |achieve 1185/5
+Click the Golden Link in your bags |use The Golden Link##33026
+Eat The Golden Link |achieve 1185/8
+Achieve The Brewfest Diet! |achieve 1185
+step
+talk Belbi Quikswitch##23710
+buy Fresh Brewfest Hops##37750 |achieve 303 |goto 56.4,37.8
+|tip You must be at least level 20 to buy these.
+step
+Use your Fresh Brewfest Hops |use Fresh Brewfest Hops##37750
+Make your Mount Festive for Brewfest! |achieve 303
+step
+Complete the Brewfest daily quests each day until you have 200 Brewfest Prize Tokens
+collect 200 Brewfest Prize Token##37829 |achieve 2796
+step
+talk Belbi Quikswitch##23710
+buy 1 "Brew of the Month" Club Membership Form##37736 |goto 56.4,37.9 |n
+Click the "Brew of the Month" Club Membership Form in your bags |use "Brew of the Month" Club Membership Form##37736
+accept Brew of the Month Club##12420
+step
+Go inside Ironforge |goto Ironforge |noway |c
+step
+talk Larkin Thunderbrew##27478
+turnin Brew of the Month Club##12420 |goto Ironforge,18.8,53.1
+Achieve Brew of the Month! |achieve 2796 |goto Ironforge,18.8,53.1
+Achieve Brewmaster! |achieve 1684 |goto Ironforge,18.8,53.1
+step
+If you are on the EU servers go here to buy your Wolpertinger Pet
+buy Wolpertinger's Tankard##32233 |goto Dun Morogh,56.4,37.8 |n
+Does Your Wolpertinger Linger? |achieve 1936
+step
+Congratulations, you are a Brewmaster!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Exploration\\Outland",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Brewmaster\\Brewfest Dailies",{
+keywords={"Brewmaster"},
 author="support@zygorguides.com",
-description="This guide section will walk you through completing\nthe Explorer achievement.",
+description="This guide section will walk you through completing the daily quests for the Brewfest event.",
 },[[
-leechsteps "Zygor's Alliance Achievements Guides\\Exploration\\Outland\\Explore Outland"
+daily
+step
+You will only be able to do 1 of the first 2 dailies in this guide, per day.
+|tip Quests "Bark for the Barleybrews!" or "Bark for the Thunderbrews!".
+confirm
+step
+talk Becan Barleybrew##23627
+accept Bark for the Barleybrews!##11293 |goto Dun Morogh,56.1,38.0 |or
+Or
+talk Daran Thunderbrew##23628
+accept Bark for the Thunderbrews!##11294 |goto 56.6,36.9 |or
+step
+Ride your ram into Ironforge |goto Ironforge |noway |c |q 11293
+Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
+|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace.  If you go too much faster than that, your ram will get tired and you will run out of time.
+only if havequest (11293)
+step
+Ride your ram into Ironforge |goto Ironforge |noway |c |q 11294
+Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
+|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace.  If you go too much faster than that, your ram will get tired and you will run out of time.
+only if havequest (11294)
+step
+Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
+|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace.  If you go too much faster than that, your ram will get tired and you will run out of time.
+Go to this spot
+Bark Outside the Bank |q 11293/1 |goto Ironforge,31.7,66.7
+only if havequest (11293)
+step
+Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
+|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace.  If you go too much faster than that, your ram will get tired and you will run out of time.
+Go to this spot
+Bark in the Military Ward |q 11293/2 |goto 61.2,80.0
+only if havequest (11293)
+step
+Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
+|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace.  If you go too much faster than that, your ram will get tired and you will run out of time.
+Go to this spot
+Bark in the Hall of Explorers |q 11293/3 |goto 65.3,24.4
+only if havequest (11293)
+step
+Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
+|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace.  If you go too much faster than that, your ram will get tired and you will run out of time.
+Go to this spot
+Bark in the Mystic Ward |q 11293/4 |goto 29.5,14.2
+only if havequest (11293)
+step
+Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
+|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace.  If you go too much faster than that, your ram will get tired and you will run out of time.
+Go to this spot
+Bark Outside the Bank |q 11294/1 |goto Ironforge,31.7,66.7
+only if havequest (11294)
+step
+Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
+|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace.  If you go too much faster than that, your ram will get tired and you will run out of time.
+Go to this spot
+Bark in the Military Ward |q 11294/2 |goto 61.2,80.0
+only if havequest (11294)
+step
+Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
+|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace.  If you go too much faster than that, your ram will get tired and you will run out of time.
+Go to this spot
+Bark in the Hall of Explorers |q 11294/3 |goto 65.3,24.4
+only if havequest (11294)
+step
+Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
+|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace.  If you go too much faster than that, your ram will get tired and you will run out of time.
+Go to this spot
+Bark in the Mystic Ward |q 11294/4 |goto 29.5,14.2
+only if havequest (11294)
+step
+talk Becan Barleybrew##23627
+turnin Bark for the Barleybrews!##11293 |goto Dun Morogh,56.1,38.0
+only if havequest (11293)
+step
+talk Daran Thunderbrew##23628
+turnin Bark for the Thunderbrews!##11294 |goto Dun Morogh,56.5,36.9
+only if havequest (11294)
+step
+click Dark Iron Mole Machine Wreckage##7000
+|tip It appears after the Dark Iron dwarves attack the Brewfest festival, so you may have to wait for it to appear.
+accept This One Time, When I Was Drunk...##12020 |goto 56.0,37.2
+step
+Click the Dark Iron Mole Machine Wreckage
+|tip You have to defend the three kegs at these locations in order for it to show up.
+Click the Complimentary Brewfest Sampler here [55.3,37.3]
+Click the Complimentary Brewfest Sampler here [55.7,38.1]
+Thow the Sampler's at the Dark Iron Dwarves and the Mole Machines. |use Complimentary Brewfest Sampler##33096 |goto 56.0,37.1
+step
+talk Boxey Boltspinner##27215
+turnin This One Time, When I Was Drunk...##12020 |goto Dun Morogh,54.7,38.1
+Down With The Dark Iron Achievement |achieve 1186 |goto Dun Morogh,54.7,38.1
+step
+talk Neill Ramstein##23558
+accept Brew For Brewfest##29394 |goto 53.7,38.6 |instant
+On your Ram, run to Flynn Firebrew at
+|tip Flynn Firebrew will throw you a keg when you get close.
+Deliver as many kegs as you can within 4 minutes
+|tip You get 2 Brewfest Prize Tokens for each keg you deliver, so this is a good way to get some Brewfest Prize Tokens to join the Brew of the Month Club.
+step
+map Dun Morogh
+path follow strict;loop;ants straight
+path	54.6,43.3	54.5,47.4	53.1,51.3
+path	53.7,51.8	54.5,47.7	54.6,43.4
+path	53.6,38.5
+Follow this path to pick up Kegs from Flynn Firebrew and run them back to Neill Ramstein
+Use your Ram Racing Reins |use Ram Racing Reins##33306
+step
+talk Neill Ramstein##23558
+turnin Brew For Brewfest##29394 |goto 53.7,38.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Exploration\\Northrend",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Brewmaster\\Brewfest Quests",{
+keywords={"Brewmaster"},
 author="support@zygorguides.com",
-description="This guide section will walk you through completing\nthe Explorer achievement.",
+description="This guide section will walk you through completing the quests for the Brewfest event.",
 },[[
-leechsteps "Zygor's Alliance Achievements Guides\\Exploration\\Northrend\\Explore Northrend"
+step
+talk Dwarf Commoner##19148
+accept Brewfest!##11441 |goto Ironforge,30.8,62.9
+step
+talk Ipfelkofer Ironkeg##24710
+turnin Brewfest!##11441 |goto Dun Morogh,55.1,38.1
+step
+NOTE: If you are on an EU server, you will be unable to accept these 2 quests.
+|tip So, just skip them, and also skip the guide steps where you complete the quest goals for these quests.
+talk Goldark Snipehunter##23486
+accept Catch the Wild Wolpertinger!##11117 |goto 55.1,37.7
+accept Pink Elekks On Parade##11118 |goto 55.1,37.7
+step
+talk Goldark Snipehunter##23486
+Ask him if there's another way you can help out if you don't like drinking, then ask for a pair of Synthebrew Goggles
+collect Synthebrew Goggles##46735 |q 11117 |goto 55.1,37.7
+step
+talk Boxey Boltspinner##27215
+accept Chug and Chuck!##12022 |goto 54.7,38.1
+step
+Click the Complimentary Brewfest Samplers
+|tip They looks like mugs of beer on the small tables on either side of you.
+Use your Complimentary Brewfest Samplers |use Complimentary Brewfest Sampler##33096
+Hit S.T.O.U.T. 5 Times |q 12022/1 |goto 54.8,37.9
+step
+talk Boxey Boltspinner##27215
+turnin Chug and Chuck!##12022 |goto 54.7,38.1
+step
+talk Neill Ramstein##23558
+accept Now This is Ram Racing... Almost.##11318 |goto 53.7,38.6
+step
+As you run around on the ram:
+Use your Ram Racing Reins |use Ram Racing Reins##33306
+|tip The ram runs slow by default.  You have to use the Ram Racing Reins to make it run at certain speeds for 8 seconds.  To the ram Trot for 8 seconds, use the Ram Racing Reins every 2 seconds or so to keep the ram running at the speed just above the slow default speed.  To make the Ram Canter for 8 seconds, use the Ram Racing Reins a little more often than when you made the Ram Trot.  To make the Ram Gallop, just spam use the Ram Racing Reins.
+Maintain a Trot for 8 seconds |q 11318/1
+Maintain a Canter for 8 seconds |q 11318/2
+Maintain a Gallop for 8 seconds |q 11318/3
+step
+talk Neill Ramstein##23558
+turnin Now This is Ram Racing... Almost.##11318 |goto 53.7,38.6
+accept There and Back Again##11122 |goto 53.7,38.6
+step
+map Dun Morogh
+path follow strict;loop;ants straight
+path	54.6,43.3	54.5,47.4	53.1,51.3
+path	53.7,51.8	54.5,47.7	54.6,43.4
+path	53.6,38.5
+Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
+|tip Stop at every bucket of apples you see on the side of the road to refresh your Ram's fatigue level, allowing the Ram to run faster for longer.
+_FOLLOW THE WAYPOINT PATH_ Flynn Firebrew will throw you a keg when you get close
+Once you have a keg, run back and turn it in to Pol Amberstill at
+|tip Just get near him and you will throw the keg to him.
+Deliver 3 Kegs in Under 4 Minutes|q 11122/1
+step
+talk Neill Ramstein##23558
+turnin There and Back Again##11122 |goto 53.7,38.6
+step
+talk Pol Amberstill##24468
+You will be able to accept one of these quests
+accept Another Year, Another Souvenir.##13932 |goto 53.5,38.6 |or
+or
+accept A New Supplier of Souvenirs##29397 |goto 53.5,38.6 |or
+step
+Use your Synthebrew Goggles |use Synthebrew Goggles##46735
+Equip the Synthebrew Goggles |havebuff 135977 |q 11117
+step
+Use your Wolpertinger Net on Wild Wolpertingers |use Wolpertinger Net##32907
+|tip They look like rabbits with antlers and wings running around on the ground around this area.
+collect 5 Stunned Wolpertinger |q 11117/1 |goto 54.5,38.5
+step
+talk Goldark Snipehunter##23486
+turnin Catch the Wild Wolpertinger!##11117 |goto 55.1,37.7
+collect Wolpertinger's Tankard |n
+Does Your Wolpertinger Linger? |achieve 1936
+|tip If you are on the EU server you will be able to achieve this in the Achievments Guide.
+step
+talk Belbi Quikswitch##23710
+turnin Another Year, Another Souvenir.##13932 |goto 56.4,37.8 |or
+or
+turnin A New Supplier of Souvenirs##29397 |goto 56.4,37.8 |or
+step
+Use your Synthebrew Goggles |use Synthebrew Goggles##46735
+Equip the Synthebrew Goggles |havebuff 135977 |q 11118 |goto Elwynn Forest,33.5,50.7
+Use your Elekk Dispersion Ray on Elwynn Pink Elekks |use Elekk Dispersion Ray##32960
+kill 3 Elwynn Pink Elekk |q 11118/2
+step
+Use your Synthebrew Goggles |use Synthebrew Goggles##46735
+Equip the Synthebrew Goggles |havebuff 135977 |q 11118 |goto Darnassus 67.3,46.1
+Use your Elekk Dispersion Ray on Azuremyst Pink Elekks |use Elekk Dispersion Ray##32960
+kill 3 Azuremyst Pink Elekk |q 11118/3
+step
+Use your Synthebrew Goggles |use Synthebrew Goggles##46735
+Equip the Synthebrew Goggles |havebuff 135977 |q 11118 |goto The Exodar,78.4,57.4
+Use your Elekk Dispersion Ray on Teldrassil Pink Elekks |use Elekk Dispersion Ray##32960
+kill 3 Teldrassil Pink Elekk |q 11118/1 |goto The Exodar,78.4,57.4
+step
+talk Goldark Snipehunter##23486
+turnin Pink Elekks On Parade##11118 |goto Dun Morogh 55.1,37.7
+step
+Use the Dungeon Finder (press I) to queue for Coren Direbrew
+|tip You must be level 80 to complete this quest.
+You will fight Coren Direbrew
+kill Coren Direbrew##23872
+collect 1 Direbrew's Dire Brew##38280 |n
+Click Direbrew's Dire Brew in your bags |use Direbrew's Dire Brew##38280
+accept Direbrew's Dire Brew##12491
+step
+Click the green eye on the edge of your minimap
+Teleport Out of the Dungeon and go to Dun Morogh |goto Dun Morogh |noway |c
+step
+talk Ipfelkofer Ironkeg##24710
+turnin Direbrew's Dire Brew##12491 |goto 55.1,38.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Events\\Flame Warden\\Midsummer Fire Festival Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Elder\\Lunar Festival Achievements",{
+keywords={"Elder"},
+author="support@zygorguides.com",
+},[[
+step
+#include "Lunar Festival Achievement"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Elder\\Lunar Festival Main Questline",{
+keywords={"Elder"},
+author="support@zygorguides.com",
+description="This guide section will walk you through completing the main questline for the Lunar Festival event.",
+},[[
+step
+#include "Lunar Festival Main Quest"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Elder\\Lunar Festival Optimized Elders Path",{
+keywords={"Elder"},
+author="support@zygorguides.com",
+description="This guide section will walk you through an optimized path for honoring the elders\nthat are spread out all over Azeroth for the Lunar Festival event.\nThe 13 elders that are inside instances are not included in this guide section.\nUsing this guide section, you will collect 62 of the total 75 Coins of Ancestry.",
+},[[
+step
+#include "Lunar Festival Elder Path"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Flame Warden\\Midsummer Fire Festival Achievements",{
+keywords={"Flame, Warden"},
+author="support@zygorguides.com",
+startlevel=80,
+description="This guide section will walk you through completing the achievements for the Midsummer Fire Festival event.",
+},[[
+step
+Complete the Midsummer Fire Festival Quests guide section before doing this guide section.
+confirm
+step
+talk Earthen Ring Elder##26221
+Queue for The Frost Lord Ahune battle.
+Click Find Group
+kill Lord Ahune##25740
+Complete the Ice the Frost Lord Achievement |achieve 263 |goto Stormwind City,49.3,72.3
+step
+talk Midsummer Supplier##26123
+buy 15 Juggling Torch##34599 |goto 49.0,72.0
+buy 1 Mantle of the Fire Festival##23324 |goto 49.0,72.0
+buy 1 Vestment of Summer##34685 |goto 49.0,72.0
+buy 1 Sandals of Summer##34683 |goto 49.0,72.0
+step
+Equip your Mantle of the Fire Festival |use Mantle of the Fire Festival##23324
+Equip your Vestment of Summer |use Vestment of Summer##34685
+Equip your Sandals of Summer |use Sandals of Summer##34683
+Click the Ribbon Pole
+|tip It looks like a tall metal pole with a small fire on top of it.
+Let your character spin around for 1 minute
+Complete the Burning Hot Pole Dance Achievement |achieve 271 |goto 50.5,73.1
+step
+Don't forget to put your regular gear back on
+confirm
+step
+Use your 15 Juggling Torches as fast as you can
+|tip You must juggle them all in under 15 seconds.  The best way to do this is to place your Juggling Torches on your hotbar.  Press the hotbar key and click the ground at the same time.  Keep spamming the hotbar key and clicking the ground at the same time as fast as possible and don't stop until you get the achievement.
+Complete the Torch Juggler Achievement |achieve 272 |goto Dalaran,36.8,44.1
+step
+Congratulations, you are now The Flame Warden!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Flame Warden\\Midsummer Fire Festival Quests",{
+keywords={"Flame, Warden"},
 author="support@zygorguides.com",
 startlevel=80,
 description="This guide section will walk you through completing the quests for the Midsummer Fire Festival event.",
@@ -2968,7 +3204,7 @@ turnin Unusual Activity##11886 |goto Ashenvale,15.7,20.3
 accept An Innocent Disguise##11891 |goto Ashenvale,15.7,20.3
 step
 Use your Orb of the Crawler in this spot |use Orb of the Crawler##35237
-Get the Crab Disguise |havebuff Interface\Icons\Ability_Hunter_Pet_Crab |goto Ashenvale,9.6,13.2
+Get the Crab Disguise |havebuff 132186 |goto Ashenvale,9.6,13.2
 step
 While in the crab disguise, go to 9.2,12.6 |goto Ashenvale,9.2,12.6
 Listen to the plan of the Twilight Cultists |q 11891/1
@@ -3255,73 +3491,38 @@ step
 talk Howling Fjord Flame Warden##32804
 accept Honor the Flame##13488 |goto Howling Fjord,57.8,16.1 |instant
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Events\\Flame Warden\\Midsummer Fire Festival Achievements",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\The Hallowed\\Hallow's End Achievements",{
 author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will walk you through completing the achievements for the Midsummer Fire Festival event.",
+description="This guide section will walk you through completing the achievements for the Hallow's End event.",
+keywords={"The, Hallowed"},
+},[[
+#include "Hallows_End_Achievements_Alliance"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\The Hallowed\\Hallow's End Dailies",{
+author="support@zygorguides.com",
+description="This guide section will walk you through completing the daily quests for the Hallow's End event.",
+keywords={"The, Hallowed"},
+},[[
+daily
+#include "Hallows_End_Dailies_Alliance"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\The Hallowed\\Hallow's End Quests",{
+author="support@zygorguides.com",
+description="This guide section will walk you through completing the quests for the Hallow's End event.",
+keywords={"The, Hallowed"},
+},[[
+#include "Hallows_End_Quests_Alliance"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\The Love Fool\\Love is in the Air Achievements",{
+keywords={"Fool"},
+author="support@zygorguides.com",
+description="This guide section will walk you through completing the Love is in the Air event achievements.",
 },[[
 step
-Complete the Midsummer Fire Festival Quests guide section before doing this guide section.
-confirm
-step
-talk Earthen Ring Elder##26221
-Queue for The Frost Lord Ahune battle.
-Click Find Group
-kill Lord Ahune##25740
-Complete the Ice the Frost Lord Achievement |achieve 263 |goto Stormwind City,49.3,72.3
-step
-talk Midsummer Supplier##26123
-buy 15 Juggling Torch##34599 |goto 49.0,72.0
-buy 1 Mantle of the Fire Festival##23324 |goto 49.0,72.0
-buy 1 Vestment of Summer##34685 |goto 49.0,72.0
-buy 1 Sandals of Summer##34683 |goto 49.0,72.0
-step
-Equip your Mantle of the Fire Festival |use Mantle of the Fire Festival##23324
-Equip your Vestment of Summer |use Vestment of Summer##34685
-Equip your Sandals of Summer |use Sandals of Summer##34683
-Click the Ribbon Pole
-|tip It looks like a tall metal pole with a small fire on top of it.
-Let your character spin around for 1 minute
-Complete the Burning Hot Pole Dance Achievement |achieve 271 |goto 50.5,73.1
-step
-Don't forget to put your regular gear back on
-confirm
-step
-Use your 15 Juggling Torches as fast as you can
-|tip You must juggle them all in under 15 seconds.  The best way to do this is to place your Juggling Torches on your hotbar.  Press the hotbar key and click the ground at the same time.  Keep spamming the hotbar key and clicking the ground at the same time as fast as possible and don't stop until you get the achievement.
-Complete the Torch Juggler Achievement |achieve 272 |goto Dalaran,36.8,44.1
-step
-Congratulations, you are now The Flame Warden!
+#include "Love is in the Air Achievement"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Events\\Elder\\Lunar Festival Main Questline",{
-author="support@zygorguides.com",
-description="This guide section will walk you through completing the main questline for the Lunar Festival event.",
-},[[
-step
-#include "Lunar Festival Main Quest"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Events\\Elder\\Lunar Festival Optimized Elders Path",{
-author="support@zygorguides.com",
-description="This guide section will walk you through an optimized path for honoring the elders\nthat are spread out all over Azeroth for the Lunar Festival event.\nThe 13 elders that are inside instances are not included in this guide section.\nUsing this guide section, you will collect 62 of the total 75 Coins of Ancestry.",
-},[[
-step
-#include "Lunar Festival Elder Path"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Events\\Elder\\Lunar Festival Achievements",{
-author="support@zygorguides.com",
-},[[
-step
-#include "Lunar Festival Achievement"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Events\\The Love Fool\\Love is in the Air Main Questline",{
-author="support@zygorguides.com",
-next="Zygor's Alliance Event Guides\\Love is in the Air (February 7th - 20th)\\Love is in the Air Dailies",
-description="This guide section will walk you through completing the main questline for the Love is in the Air event.",
-},[[
-step
-#include "Love is in the Air Main Quest"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Events\\The Love Fool\\Love is in the Air Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\The Love Fool\\Love is in the Air Dailies",{
+keywords={"Fool"},
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the Love is in the Air even daily quests.",
 },[[
@@ -3329,46 +3530,17 @@ daily
 step
 #include "Love is in the Air Dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Events\\The Love Fool\\Love is in the Air Achievements",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\The Love Fool\\Love is in the Air Main Questline",{
+keywords={"Fool"},
 author="support@zygorguides.com",
-description="This guide section will walk you through completing the Love is in the Air event achievements.",
+next="Zygor's Alliance Event Guides\\Love is in the Air (February 7th - 20th)\\Love is in the Air Dailies",
+description="This guide section will walk you through completing the main questline for the Love is in the Air event.",
 },[[
 step
-#include "Love is in the Air Achievement"
+#include "Love is in the Air Main Quest"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Events\\The Matron-Patron\\Children's Week Stormwind Quests",{
-author="support@zygorguides.com",
-startlevel=60,
-description="This guide section will walk you through completing the Stormwind questline for the Children's Week event.",
-},[[
-step
-#include "Children's Week Stormwind"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Events\\The Matron-Patron\\Children's Week Shattrath Quests",{
-author="support@zygorguides.com",
-startlevel=60,
-description="This guide section will walk you through completing the Shattrath questline for the Children's Week event.",
-},[[
-step
-#include "Children's Week Shattrath"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Events\\The Matron-Patron\\Children's Week Dalaran Oracles Quests",{
-author="support@zygorguides.com",
-startlevel=70,
-description="This guide section will walk you through completing the Dalaran Oracles questline for the Children's Week event.",
-},[[
-step
-#include "Children's Week Dalaran Oracles Quests"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Events\\The Matron-Patron\\Children's Week Dalaran Wolvar Quests",{
-author="support@zygorguides.com",
-startlevel=70,
-description="This guide section will walk you through completing the Dalaran Wolvar questline for the Children's Week event.",
-},[[
-step
-#include "Children's Week Dalaran Wolvar Quests"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Events\\The Matron-Patron\\Children's Week Achievements",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Matron\\Children's Week Achievements",{
+keywords={"Matron"},
 author="support@zygorguides.com",
 startlevel=10,
 description="This guide section will walk you through completing the Achievements for the Children's Week event.",
@@ -3376,339 +3548,49 @@ description="This guide section will walk you through completing the Achievement
 step
 #include "Children's Week Achievements"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Events\\Brewmaster\\Brewfest Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Matron\\Children's Week Dalaran Oracles Quests",{
+keywords={"Matron"},
 author="support@zygorguides.com",
-description="This guide section will walk you through completing the quests for the Brewfest event.",
+startlevel=70,
+description="This guide section will walk you through completing the Dalaran Oracles questline for the Children's Week event.",
 },[[
 step
-talk Dwarf Commoner##19148
-accept Brewfest!##11441 |goto Ironforge,30.8,62.9
-step
-talk Ipfelkofer Ironkeg##24710
-turnin Brewfest!##11441 |goto Dun Morogh,55.1,38.1
-step
-NOTE: If you are on an EU server, you will be unable to accept these 2 quests.
-|tip So, just skip them, and also skip the guide steps where you complete the quest goals for these quests.
-talk Goldark Snipehunter##23486
-accept Catch the Wild Wolpertinger!##11117 |goto 55.1,37.7
-accept Pink Elekks On Parade##11118 |goto 55.1,37.7
-step
-talk Goldark Snipehunter##23486
-Ask him if there's another way you can help out if you don't like drinking, then ask for a pair of Synthebrew Goggles
-collect Synthebrew Goggles##46735 |q 11117 |goto 55.1,37.7
-step
-talk Boxey Boltspinner##27215
-accept Chug and Chuck!##12022 |goto 54.7,38.1
-step
-Click the Complimentary Brewfest Samplers
-|tip They looks like mugs of beer on the small tables on either side of you.
-Use your Complimentary Brewfest Samplers |use Complimentary Brewfest Sampler##33096
-Hit S.T.O.U.T. 5 Times |q 12022/1 |goto 54.8,37.9
-step
-talk Boxey Boltspinner##27215
-turnin Chug and Chuck!##12022 |goto 54.7,38.1
-step
-talk Neill Ramstein##23558
-accept Now This is Ram Racing... Almost.##11318 |goto 53.7,38.6
-step
-As you run around on the ram:
-Use your Ram Racing Reins |use Ram Racing Reins##33306
-|tip The ram runs slow by default.  You have to use the Ram Racing Reins to make it run at certain speeds for 8 seconds.  To the ram Trot for 8 seconds, use the Ram Racing Reins every 2 seconds or so to keep the ram running at the speed just above the slow default speed.  To make the Ram Canter for 8 seconds, use the Ram Racing Reins a little more often than when you made the Ram Trot.  To make the Ram Gallop, just spam use the Ram Racing Reins.
-Maintain a Trot for 8 seconds |q 11318/1
-Maintain a Canter for 8 seconds |q 11318/2
-Maintain a Gallop for 8 seconds |q 11318/3
-step
-talk Neill Ramstein##23558
-turnin Now This is Ram Racing... Almost.##11318 |goto 53.7,38.6
-accept There and Back Again##11122 |goto 53.7,38.6
-step
-map Dun Morogh
-path follow strict;loop;ants straight
-path	54.6,43.3	54.5,47.4	53.1,51.3
-path	53.7,51.8	54.5,47.7	54.6,43.4
-path	53.6,38.5
-Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
-|tip Stop at every bucket of apples you see on the side of the road to refresh your Ram's fatigue level, allowing the Ram to run faster for longer.
-_FOLLOW THE WAYPOINT PATH_ Flynn Firebrew will throw you a keg when you get close
-Once you have a keg, run back and turn it in to Pol Amberstill at
-|tip Just get near him and you will throw the keg to him.
-Deliver 3 Kegs in Under 4 Minutes|q 11122/1
-step
-talk Neill Ramstein##23558
-turnin There and Back Again##11122 |goto 53.7,38.6
-step
-talk Pol Amberstill##24468
-You will be able to accept one of these quests
-accept Another Year, Another Souvenir.##13932 |goto 53.5,38.6 |or
-or
-accept A New Supplier of Souvenirs##29397 |goto 53.5,38.6 |or
-step
-Use your Synthebrew Goggles |use Synthebrew Goggles##46735
-Equip the Synthebrew Goggles |havebuff Interface\Icons\Spell_Holy_SpiritualGuidence |q 11117
-step
-Use your Wolpertinger Net on Wild Wolpertingers |use Wolpertinger Net##32907
-|tip They look like rabbits with antlers and wings running around on the ground around this area.
-collect 5 Stunned Wolpertinger |q 11117/1 |goto 54.5,38.5
-step
-talk Goldark Snipehunter##23486
-turnin Catch the Wild Wolpertinger!##11117 |goto 55.1,37.7
-collect Wolpertinger's Tankard |n
-Does Your Wolpertinger Linger? |achieve 1936
-|tip If you are on the EU server you will be able to achieve this in the Achievments Guide.
-step
-talk Belbi Quikswitch##23710
-turnin Another Year, Another Souvenir.##13932 |goto 56.4,37.8 |or
-or
-turnin A New Supplier of Souvenirs##29397 |goto 56.4,37.8 |or
-step
-Use your Synthebrew Goggles |use Synthebrew Goggles##46735
-Equip the Synthebrew Goggles |havebuff Interface\Icons\Spell_Holy_SpiritualGuidence |q 11118 |goto Elwynn Forest,33.5,50.7
-Use your Elekk Dispersion Ray on Elwynn Pink Elekks |use Elekk Dispersion Ray##32960
-kill 3 Elwynn Pink Elekk |q 11118/2
-step
-Use your Synthebrew Goggles |use Synthebrew Goggles##46735
-Equip the Synthebrew Goggles |havebuff Interface\Icons\Spell_Holy_SpiritualGuidence |q 11118 |goto Darnassus 67.3,46.1
-Use your Elekk Dispersion Ray on Azuremyst Pink Elekks |use Elekk Dispersion Ray##32960
-kill 3 Azuremyst Pink Elekk |q 11118/3
-step
-Use your Synthebrew Goggles |use Synthebrew Goggles##46735
-Equip the Synthebrew Goggles |havebuff Interface\Icons\Spell_Holy_SpiritualGuidence |q 11118 |goto The Exodar,78.4,57.4
-Use your Elekk Dispersion Ray on Teldrassil Pink Elekks |use Elekk Dispersion Ray##32960
-kill 3 Teldrassil Pink Elekk |q 11118/1 |goto The Exodar,78.4,57.4
-step
-talk Goldark Snipehunter##23486
-turnin Pink Elekks On Parade##11118 |goto Dun Morogh 55.1,37.7
-step
-Use the Dungeon Finder (press I) to queue for Coren Direbrew
-|tip You must be level 80 to complete this quest.
-You will fight Coren Direbrew
-kill Coren Direbrew##23872
-collect 1 Direbrew's Dire Brew##38280 |n
-Click Direbrew's Dire Brew in your bags |use Direbrew's Dire Brew##38280
-accept Direbrew's Dire Brew##12491
-step
-Click the green eye on the edge of your minimap
-Teleport Out of the Dungeon and go to Dun Morogh |goto Dun Morogh |noway |c
-step
-talk Ipfelkofer Ironkeg##24710
-turnin Direbrew's Dire Brew##12491 |goto 55.1,38.1
+#include "Children's Week Dalaran Oracles Quests"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Events\\Brewmaster\\Brewfest Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Matron\\Children's Week Dalaran Wolvar Quests",{
+keywords={"Matron"},
 author="support@zygorguides.com",
-description="This guide section will walk you through completing the daily quests for the Brewfest event.",
-},[[
-daily
-step
-You will only be able to do 1 of the first 2 dailies in this guide, per day.
-|tip Quests "Bark for the Barleybrews!" or "Bark for the Thunderbrews!".
-confirm
-step
-talk Becan Barleybrew##23627
-accept Bark for the Barleybrews!##11293 |goto Dun Morogh,56.1,38.0 |or
-Or
-talk Daran Thunderbrew##23628
-accept Bark for the Thunderbrews!##11294 |goto 56.6,36.9 |or
-step
-Ride your ram into Ironforge |goto Ironforge |noway |c |q 11293
-Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
-|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace.  If you go too much faster than that, your ram will get tired and you will run out of time.
-only if havequest (11293)
-step
-Ride your ram into Ironforge |goto Ironforge |noway |c |q 11294
-Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
-|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace.  If you go too much faster than that, your ram will get tired and you will run out of time.
-only if havequest (11294)
-step
-Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
-|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace.  If you go too much faster than that, your ram will get tired and you will run out of time.
-Go to this spot
-Bark Outside the Bank |q 11293/1 |goto Ironforge,31.7,66.7
-only if havequest (11293)
-step
-Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
-|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace.  If you go too much faster than that, your ram will get tired and you will run out of time.
-Go to this spot
-Bark in the Military Ward |q 11293/2 |goto 61.2,80.0
-only if havequest (11293)
-step
-Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
-|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace.  If you go too much faster than that, your ram will get tired and you will run out of time.
-Go to this spot
-Bark in the Hall of Explorers |q 11293/3 |goto 65.3,24.4
-only if havequest (11293)
-step
-Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
-|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace.  If you go too much faster than that, your ram will get tired and you will run out of time.
-Go to this spot
-Bark in the Mystic Ward |q 11293/4 |goto 29.5,14.2
-only if havequest (11293)
-step
-Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
-|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace.  If you go too much faster than that, your ram will get tired and you will run out of time.
-Go to this spot
-Bark Outside the Bank |q 11294/1 |goto Ironforge,31.7,66.7
-only if havequest (11294)
-step
-Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
-|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace.  If you go too much faster than that, your ram will get tired and you will run out of time.
-Go to this spot
-Bark in the Military Ward |q 11294/2 |goto 61.2,80.0
-only if havequest (11294)
-step
-Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
-|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace.  If you go too much faster than that, your ram will get tired and you will run out of time.
-Go to this spot
-Bark in the Hall of Explorers |q 11294/3 |goto 65.3,24.4
-only if havequest (11294)
-step
-Use your Ram Racing Reins as you run |use Ram Racing Reins##33306
-|tip Just keep a Trot pace most of the time, and only sometimes keep a Canter pace.  If you go too much faster than that, your ram will get tired and you will run out of time.
-Go to this spot
-Bark in the Mystic Ward |q 11294/4 |goto 29.5,14.2
-only if havequest (11294)
-step
-talk Becan Barleybrew##23627
-turnin Bark for the Barleybrews!##11293 |goto Dun Morogh,56.1,38.0
-only if havequest (11293)
-step
-talk Daran Thunderbrew##23628
-turnin Bark for the Thunderbrews!##11294 |goto Dun Morogh,56.5,36.9
-only if havequest (11294)
-step
-click Dark Iron Mole Machine Wreckage##7000
-|tip It appears after the Dark Iron dwarves attack the Brewfest festival, so you may have to wait for it to appear.
-accept This One Time, When I Was Drunk...##12020 |goto 56.0,37.2
-step
-Click the Dark Iron Mole Machine Wreckage
-|tip You have to defend the three kegs at these locations in order for it to show up.
-Click the Complimentary Brewfest Sampler here [55.3,37.3]
-Click the Complimentary Brewfest Sampler here [55.7,38.1]
-Thow the Sampler's at the Dark Iron Dwarves and the Mole Machines. |use Complimentary Brewfest Sampler##33096 |goto 56.0,37.1
-step
-talk Boxey Boltspinner##27215
-turnin This One Time, When I Was Drunk...##12020 |goto Dun Morogh,54.7,38.1
-Down With The Dark Iron Achievement |achieve 1186 |goto Dun Morogh,54.7,38.1
-step
-talk Neill Ramstein##23558
-accept Brew For Brewfest##29394 |goto 53.7,38.6 |instant
-On your Ram, run to Flynn Firebrew at
-|tip Flynn Firebrew will throw you a keg when you get close.
-Deliver as many kegs as you can within 4 minutes
-|tip You get 2 Brewfest Prize Tokens for each keg you deliver, so this is a good way to get some Brewfest Prize Tokens to join the Brew of the Month Club.
-step
-map Dun Morogh
-path follow strict;loop;ants straight
-path	54.6,43.3	54.5,47.4	53.1,51.3
-path	53.7,51.8	54.5,47.7	54.6,43.4
-path	53.6,38.5
-Follow this path to pick up Kegs from Flynn Firebrew and run them back to Neill Ramstein
-Use your Ram Racing Reins |use Ram Racing Reins##33306
-step
-talk Neill Ramstein##23558
-turnin Brew For Brewfest##29394 |goto 53.7,38.6
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Events\\Brewmaster\\Brewfest Achievements",{
-author="support@zygorguides.com",
-description="This guide section will walk you through completing the achievements for the Brewfest event.",
+startlevel=70,
+description="This guide section will walk you through completing the Dalaran Wolvar questline for the Children's Week event.",
 },[[
 step
-talk Arlen Lochlan##23522
-buy The Essential Brewfest Pretzel##33043 |goto Dun Morogh,55.6,38.2 |achieve 1185
-step
-Click The Essential Brewfest Pretzels in your bags |use The Essential Brewfest Pretzel##33043
-Eat The Essential Brewfest Pretzels |achieve 1185/7
-step
-talk Anne Summers##23521
-buy Spiced Onion Cheese##34065 |achieve 1185 |goto 56.5,37.7
-step
-Click the Spiced Onion Cheese in your bags |use Spiced Onion Cheese##34065
-Eat the Spiced Onion Cheese |achieve 1185/4
-step
-talk Keiran Donoghue##23481
-buy Dried Sausage##34063 |achieve 1185 |goto 56.0,36.4
-buy Succulent Sausage##34064 |achieve 1185 |goto 56.0,36.4
-buy Savory Sausage##33023 |achieve 1185 |goto 56.0,36.4
-buy Pickled Sausage##33024 |achieve 1185 |goto 56.0,36.4
-buy Spicy Smoked Sausage##33025 |achieve 1185 |goto 56.0,36.4
-buy The Golden Link##33026 |achieve 1185 |goto 56.0,36.4
-step
-Do the following:
-Click the Dried Sausage in your bags |use Dried Sausage##34063
-Eat the Dried Sausage |achieve 1185/1
-Click the Succulent Sausage in your bags |use Succulent Sausage##34064
-Eat the Succulent Sausage |achieve 1185/6
-Click the Savory Sausage in your bags |use Savory Sausage##33023
-Eat the Savory Sausage |achieve 1185/3
-Click the Pickled Sausage in your bags |use Pickled Sausage##33024
-Eat the Pickled Sausage |achieve 1185/2
-Click the Spicy Smoked Sausage in your bags |use Spicy Smoked Sausage##33025
-Eat Spicy Smoked Sausage |achieve 1185/5
-Click the Golden Link in your bags |use The Golden Link##33026
-Eat The Golden Link |achieve 1185/8
-Achieve The Brewfest Diet! |achieve 1185
-step
-talk Belbi Quikswitch##23710
-buy Fresh Brewfest Hops##37750 |achieve 303 |goto 56.4,37.8
-|tip You must be at least level 20 to buy these.
-step
-Use your Fresh Brewfest Hops |use Fresh Brewfest Hops##37750
-Make your Mount Festive for Brewfest! |achieve 303
-step
-Complete the Brewfest daily quests each day until you have 200 Brewfest Prize Tokens
-collect 200 Brewfest Prize Token##37829 |achieve 2796
-step
-talk Belbi Quikswitch##23710
-buy 1 "Brew of the Month" Club Membership Form##37736 |goto 56.4,37.9 |n
-Click the "Brew of the Month" Club Membership Form in your bags |use "Brew of the Month" Club Membership Form##37736
-accept Brew of the Month Club##12420
-step
-Go inside Ironforge |goto Ironforge |noway |c
-step
-talk Larkin Thunderbrew##27478
-turnin Brew of the Month Club##12420 |goto Ironforge,18.8,53.1
-Achieve Brew of the Month! |achieve 2796 |goto Ironforge,18.8,53.1
-Achieve Brewmaster! |achieve 1684 |goto Ironforge,18.8,53.1
-step
-If you are on the EU servers go here to buy your Wolpertinger Pet
-buy Wolpertinger's Tankard##32233 |goto Dun Morogh,56.4,37.8 |n
-Does Your Wolpertinger Linger? |achieve 1936
-step
-Congratulations, you are a Brewmaster!
+#include "Children's Week Dalaran Wolvar Quests"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Events\\The Hallowed\\Hallow's End Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Matron\\Children's Week Shattrath Quests",{
+keywords={"Matron"},
 author="support@zygorguides.com",
-description="This guide section will walk you through completing the quests for the Hallow's End event.",
+startlevel=60,
+description="This guide section will walk you through completing the Shattrath questline for the Children's Week event.",
 },[[
-#include "Hallows_End_Quests_Alliance"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Events\\The Hallowed\\Hallow's End Dailies",{
-author="support@zygorguides.com",
-description="This guide section will walk you through completing the daily quests for the Hallow's End event.",
-},[[
-daily
-#include "Hallows_End_Dailies_Alliance"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Events\\The Hallowed\\Hallow's End Achievements",{
-author="support@zygorguides.com",
-description="This guide section will walk you through completing the achievements for the Hallow's End event.",
-},[[
-#include "Hallows_End_Achievements_Alliance"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Events\\The Pilgrim\\Pilgrim's Bounty Quests and Cooking 1-300 Guide",{
-author="support@zygorguides.com",
-description="This guide section will walk you through completing the quests for the Pilgrim's Bounty event, as well as getting your Cooking skill from 1-300.",
-},[[
-#include "Pilgrims_Bounty_Quests_Alliance"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Events\\The Pilgrim\\Pilgrim's Bounty Daily Quests",{
-author="support@zygorguides.com",
-description="This quide will help run through the Pilgrims Bounty Dailies and Achievements to earn the Title Pilgrim.",
-},[[
-#include "Pilgrims_Bounty_Dailies_Alliance"
 step
-Congratulations! You have earned the Title Pilgrim!
+#include "Children's Week Shattrath"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Events\\Merrymaker\\Feast of Winter Veil Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Matron\\Children's Week Stormwind Quests",{
+keywords={"Matron"},
+author="support@zygorguides.com",
+startlevel=60,
+description="This guide section will walk you through completing the Stormwind questline for the Children's Week event.",
+},[[
+step
+#include "Children's Week Stormwind"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Merrymaker\\Feast of Winter Veil Achievements",{
+author="support@zygorguides.com",
+description="This guide section will walk you through completing the achievements for the Feast of Winter Veil event.",
+},[[
+#include "Feast of Winter Veil Achievements"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\Merrymaker\\Feast of Winter Veil Quests",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the quests for the Feast of Winter Veil event.",
 },[[
@@ -3785,22 +3667,118 @@ step
 talk Greatfather Winter##13444
 turnin A Smokywood Pastures' Thank You!##7045 |goto 33.1,65.5
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Events\\Merrymaker\\Feast of Winter Veil Achievements",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\The Pilgrim\\Pilgrim's Bounty Daily Quests",{
+keywords={"The, Pilgrim"},
 author="support@zygorguides.com",
-description="This guide section will walk you through completing the achievements for the Feast of Winter Veil event.",
+description="This quide will help run through the Pilgrims Bounty Dailies and Achievements to earn the Title Pilgrim.",
 },[[
-#include "Feast of Winter Veil Achievements"
+#include "Pilgrims_Bounty_Dailies_Alliance"
+step
+Congratulations! You have earned the Title Pilgrim!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Player Versus Player\\Of the Alliance",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\World Events\\The Pilgrim\\Pilgrim's Bounty Quests and Cooking 1-300 Guide",{
+keywords={"The, Pilgrim"},
+author="support@zygorguides.com",
+description="This guide section will walk you through completing the quests for the Pilgrim's Bounty event, as well as getting your Cooking skill from 1-300.",
+},[[
+#include "Pilgrims_Bounty_Quests_Alliance"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Dungeons & Raids\\Blackwing's Bane",{
 author="support@zygorguides.com",
 },[[
 step
-This title is earned by achieving 100,000 honorable kills in any Player vs Player environment.
-achieve 870
+This title is earned by completing the _Heroic: Nefarian_ achievement from Heroic: Blackwing Descent.
+Traverse Blackwing Descent on Heroic difficulty and defeat Nefarian.
+kill Nefarian##41376
+achieve 5116
 step
-Congratulations! You have earned the title of the Alliance!
+Congratulations! You have earned the title Blackwing's Bane!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Player Versus Player\\The Bloodthirsty",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Dungeons & Raids\\Defender of a Shattered World",{
+author="support@zygorguides.com",
+},[[
+step
+This title is earned by completing the _Defender of a Shattered World_ achievement.
+Complete the following instances on Heroic difficulty: Blackrock Caverns, Throne of the Tides, The Stonecore, The Vortex Pinnacle, Grim Batol, Halls of Origination, Lost City of Tol'vir, Deadmines, and Shadowfang Keep.
+Complete the following raid instances: Blackwing Descent, Throne of the Four Winds, and The Bastion of Twilight.
+achieve 5506
+step
+Congratulations! You have earned the title "Defender of a Shattered World"!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Dungeons & Raids\\Destroyer's End",{
+author="support@zygorguides.com",
+},[[
+step
+This title is earned by completing the _Destroyer's End_ achievement from the Dragon Soul raid. This can be completed on either 10 or 25 player and on either Normal or Heroic difficulty.
+Traverse Dragon Soul and defeat Deathwing.
+kill Deathwing##56173
+achieve 6177
+step
+Congratulations! You have earned the title Destroyer's End!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Dungeons & Raids\\Dragonslayer",{
+author="support@zygorguides.com",
+},[[
+step
+This title is earned by completing the _Heroic: Sinestra_ achievement from Heroic: The Bastion of Twilight.
+Traverse The Bastion of Twilight on Heroic difficulty and defeat Sinestra.
+from Sinestra##45213
+achieve 5121
+step
+Congratulations! You have earned the title Dragonslayer!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Dungeons & Raids\\Firelord",{
+author="support@zygorguides.com",
+},[[
+step
+This title is earned by completing the _Heroic: Ragnaros_ achievement from Heroic: Firelands. This can be completed on either 10 or 25 player.
+Traverse the Firelands on Heroic difficulty and defeat Ragnaros.
+kill Ragnaros##41634
+achieve 5803
+step
+Congratulations! You have earned the title Firelord!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Dungeons & Raids\\Of the Four Winds",{
+author="support@zygorguides.com",
+},[[
+step
+This title is earned by completing the _Heroic: Al'Akir_ achievement from Heroic: Throne of the Four Winds. This can be completed on either 10 or 25 player.
+Traverse the Throne of the Four Winds on Heroic difficulty and defeat Al'Akir.
+kill Al'Akir##46753
+achieve 5123
+step
+Congratulations! You have earned the title "of the Four Winds"!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Dungeons & Raids\\Savior of Azeroth",{
+author="support@zygorguides.com",
+},[[
+step
+This title is earned by completing the _Heroic: Madness of Deathwing_ achievement from Heroic. This can be completed on either 10 or 25 player.
+Traverse Dragon Soul on Heroic Difficulty and defeat Deathwing.
+kill Deathwing##56173
+achieve 6116
+step
+Congratulations! You have earned the title Savior of Azeroth!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\General\\The Camel-Hoarder",{
+},[[
+step
+This title is attained when you learn a mount dropped by a rare spawn.
+confirm
+step
+This mount drops off a rare spawn called Dormus the Camel-Hoarder. You get to him by clicking the Mysterious Camel Figurines around Uldum. They have a chance to teleport you to his area and you get a debuff giving you 20 minutes to kill him.
+Go to Uldum |goto Uldum |noway |c
+step
+kill Dormus the Camel-Hoarder |n
+collect 1 Reins of the Grey Riding Camel##63046
+modeldisplay 35135
+step
+learnmount Grey Riding Camel##88750 |use Reins of the Grey Riding Camel##63046
+Learn the Grey Riding Camel mount. |achieve 5767
+step
+Congratulations! You have achieved the title The Camel-Hoarder! |achieve 5767
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\The Bloodthirsty",{
 author="support@zygorguides.com",
 },[[
 step
@@ -3809,134 +3787,120 @@ achieve 5363
 step
 Congratulations! You have earned the title "The Bloodthirsty"!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Player Versus Player\\Arena Master",{
-author="support@zygorguides.com",
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Commander",{
 },[[
-step
-This title is earned by completing the _"The Arena Master"_ achievement. |tip This is an incredibly difficult title to obtain.
-achieve 1174
-step
-Congratulations! You have earned the title Arena Master!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Player Versus Player\\Battlemaster",{
-author="support@zygorguides.com",
-},[[
-step
-This title is earned by completing the _Battlemaster_ achievement.
-In order to complete the _Battlemaster_ achievement you must obtain 5 achievements that make you the master of the following battlegrounds: Alterac Valley, Warsong Gulch, Strand of the Ancients, Arathi Basin, and Eye of the Storm.
-achieve 230
-step
-Congratulations! You have earned the title Battlemaster!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Player Versus Player\\Justicar",{
-author="support@zygorguides.com",
-},[[
-step
-This title is earned by completing the _"The Justicar"_ achievement.
-In order to complete the _"The Justicar"_ achievement you must become Exalted with The League of Arathor, the Silverwing Sentinels, and the Stormpike Guard. Use Zygor's Reputation Guides to do so.
-achieve 907
-step
-Congratulations! You have earned the title Justicar!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Player Versus Player\\Private",{},[[
-step
-This title is earned by achieving a rated battleground score of 1100.
-achieve 5330
-step
-Congratulations! You have earned the title Private!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Player Versus Player\\Corporal",{},[[
-step
-This title is earned by achieving a rated battleground score of 1200.
-achieve 5331
-step
-Congratulations! You have earned the title Corporal!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Player Versus Player\\Sergeant",{},[[
-step
-This title is earned by achieving a rated battleground score of 1300.
-achieve 5332
-step
-Congratulations! You have earned the title Sergeant!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Player Versus Player\\Master Sergeant",{},[[
-step
-This title is earned by achieving a rated battleground score of 1400.
-achieve 5333
-step
-Congratulations! You have earned the title Master Sergeant!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Player Versus Player\\Sergeant Major",{},[[
-step
-This title is earned by achieving a rated battleground score of 1500.
-achieve 5334
-step
-Congratulations! You have earned the title Sergeant Major!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Player Versus Player\\Knight",{},[[
-step
-This title is earned by achieving a rated battleground score of 1600.
-achieve 5335
-step
-Congratulations! You have earned the title Knight!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Player Versus Player\\Knight-Lieutenant",{},[[
-step
-This title is earned by achieving a rated battleground score of 1700.
-achieve 5336
-step
-Congratulations! You have earned the title Knight-Lieutenant!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Player Versus Player\\Knight-Captain",{},[[
-step
-This title is earned by achieving a rated battleground score of 1800.
-achieve 5337
-step
-Congratulations! You have earned the title Knight-Captain!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Player Versus Player\\Knight-Champion",{},[[
-step
-This title is earned by achieving a rated battleground score of 1900.
-achieve 5359
-step
-Congratulations! You have earned the title Knight-Champion!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Player Versus Player\\Lieutenant Commander",{},[[
-step
-This title is earned by achieving a rated battleground score of 2000.
-achieve 5339
-step
-Congratulations! You have earned the title Lieutenant Commander!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Player Versus Player\\Commander",{},[[
 step
 This title is earned by achieving a rated battleground score of 2100.
 achieve 5340
 step
 Congratulations! You have earned the title Commander!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Player Versus Player\\Marshal",{},[[
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Corporal",{
+},[[
 step
-This title is earned by achieving a rated battleground score of 2200.
-achieve 5341
+This title is earned by achieving a rated battleground score of 1200.
+achieve 5331
 step
-Congratulations! You have earned the title Marshal!
+Congratulations! You have earned the title Corporal!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Player Versus Player\\Field Marshal",{},[[
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Field Marshal",{
+},[[
 step
 This title is earned by achieving a rated battleground score of 2300.
 achieve 5357
 step
 Congratulations! You have earned the title Field Marshal!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Player Versus Player\\Grand Marshal",{},[[
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Grand Marshal",{
+},[[
 step
 This title is earned by achieving a rated battleground score of 2400.
 achieve 5343
 step
 Congratulations! You have earned the title Grand Marshal!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Player Versus Player\\Veteran of the Alliance",{},[[
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Knight",{
+},[[
+step
+This title is earned by achieving a rated battleground score of 1600.
+achieve 5335
+step
+Congratulations! You have earned the title Knight!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Knight-Captain",{
+},[[
+step
+This title is earned by achieving a rated battleground score of 1800.
+achieve 5337
+step
+Congratulations! You have earned the title Knight-Captain!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Knight-Champion",{
+},[[
+step
+This title is earned by achieving a rated battleground score of 1900.
+achieve 5359
+step
+Congratulations! You have earned the title Knight-Champion!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Knight-Lieutenant",{
+},[[
+step
+This title is earned by achieving a rated battleground score of 1700.
+achieve 5336
+step
+Congratulations! You have earned the title Knight-Lieutenant!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Lieutenant Commander",{
+},[[
+step
+This title is earned by achieving a rated battleground score of 2000.
+achieve 5339
+step
+Congratulations! You have earned the title Lieutenant Commander!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Marshal",{
+},[[
+step
+This title is earned by achieving a rated battleground score of 2200.
+achieve 5341
+step
+Congratulations! You have earned the title Marshal!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Master Sergeant",{
+},[[
+step
+This title is earned by achieving a rated battleground score of 1400.
+achieve 5333
+step
+Congratulations! You have earned the title Master Sergeant!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Private",{
+},[[
+step
+This title is earned by achieving a rated battleground score of 1100.
+achieve 5330
+step
+Congratulations! You have earned the title Private!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Sergeant",{
+},[[
+step
+This title is earned by achieving a rated battleground score of 1300.
+achieve 5332
+step
+Congratulations! You have earned the title Sergeant!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Sergeant Major",{
+},[[
+step
+This title is earned by achieving a rated battleground score of 1500.
+achieve 5334
+step
+Congratulations! You have earned the title Sergeant Major!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Veteran of the Alliance",{
+},[[
 step
 This title is a reward for completing the _"Veteran of the Alliance"_ achievement.
 To earn this achievement win 75 Rated Battlegrounds.
@@ -3944,11 +3908,71 @@ achieve 5328
 step
 Congratulations! You have earned the title Veteran of the Alliance!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Player Versus Player\\Warbound",{},[[
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Player versus Player\\Warbound",{
+},[[
 step
 This title is a reward for completing the _"Warbound Veteran of the Alliance"_ achievement.
 To earn this achievement win 300 Rated Battlegrounds.
 achieve 5329
 step
 Congratulations! You have earned the title Warbound!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Professions\\Archaeology\\Assistant Professor, Associate Professor, and Professor",{
+},[[
+step
+These titles require the solving of rare artifacts of any kind.
+talk Harrison Jones##44238 |goto Stormwind City,85.8,25.9 |only if skillmax("Archaeology")<1
+skillmax Archaeology,75 |only if skillmax("Archaeology")<1
+confirm |only if default
+step
+Open your world map, find dig sites, and go to them
+|tip They look like small shovel icons on your world map that spawn in random places.  Once you get to the zone where the dig site is located, you will see the dig site on your map as a red highlighted area.
+Use your Survey ability inside the dig site area |cast Survey##80451
+A telescope will appear, follow the direction it points in and continue using your Survey ability to eventually find the artifacts
+|tip Each dig site has 3 artifacts you can find.
+Click the Archaeology Fragments that spawn on the ground
+Open your Archaeology profession window |cast Archaeology##78670
+Click artifacts to open them, then solve them once you have the required amounts of each
+Find and solve a rare artifact and earn the Assistant Professor title |achieve 4854
+Find and solve 10 rare artifacts and earn the Associate Professor title |achieve 4855
+Find and solve 20 rare artifacts and earn the Professor title |achieve 4856
+step
+Congratulations! You have earned all of the Archaeology titles!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Quests\\The Flamebreaker",{
+author="support@zygorguides.com",
+},[[
+step
+This title is earned by completing the _Veteran of the Molten Front_ achievement.
+confirm
+step
+#include "A_Firelands_PreQuests"
+step
+Now that you have access to the Firelands Dailies, please use the Zygor Achievement Guides to help obtain this title.
+achieve 5879
+step
+Congratulations! You have earned the title "The Flamebreaker"!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Cataclysm Titles\\Reputations\\Avenger of Hyjal",{
+author="support@zygorguides.com",
+},[[
+step
+This title is gained by becoming Exalted with The Avengers of Hyjal reputation.
+This reputation can be gained by running the Firelands raid.
+A full run will grant roughly 2400 reputation.
+confirm
+step
+This will require you to be in a raid group.
+To make a raid group invite a friend to your group, then press the [O] key and _click_ on the raid tab on the bottom right corner of your Social interface. _Click_ the Convert to Raid button on the upper left corner.
+confirm
+step
+Enter the Firelands here |goto Mount Hyjal 47.2,78.1 < 5 |c
+step
+Kill every creature that is hostile in this instance in order to gain reputation.
+|tip This will only work until you reach Honored, after that only bosses and larger mobs will grant reputation.
+Click here to go back to the beginning of the guide |next "start" |confirm
+Earn Exalted status with the Avengers of Hyjal |condition rep('Avengers of Hyjal')==Exalted |next "exalted"
+step
+label exalted
+Congratulations! You have earned the title Avenger of Hyjal!
 ]])

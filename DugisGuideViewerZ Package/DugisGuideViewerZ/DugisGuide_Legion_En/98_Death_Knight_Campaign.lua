@@ -383,18 +383,18 @@ C Destiny Unfulfilled |QID|44497| |N|Witness True Betrayal in Shadowmoon Valley 
 R Hall of Command |TID|44496| |N|Travel to {Hall of Command} (54.24,74.13)| |Z|1021 1|
 T Destiny Unfulfilled |QID|44496| |N|(npc:113857) in {Hall of Command} (54.24,74.13)| |Z|1021 1| |NPC|113857|
 
-R Krasus' Landing |N|Travel to Krasus' Landing} (69.40, 43.99)| |Z|1014 10|
+R Krasus' Landing |QID|46734| |N|Travel to {Krasus' Landing} (69.40, 43.99)| |Z|1014 10|
 A Armies of Legionfall |QID|46730| |N|This quest is available after you unlock World Quests by completing (qid:43341)| |Z|1014 10| |NPC|120215| |O|
 T Armies of Legionfall |QID|46730| |N|(npc:120215), in {Krasus' Landing} (69.37, 43.88)| |Z|1014 10| |NPC|120215| |O|
 A Assault on Broken Shore |QID|46734| |N|(npc:120215) in {Krasus' Landing} (69.40, 43.99)| |Z|1014 10| |NPC|120215|
 N (npc:120215) |QID|46734.1| |N|Speak to (npc:120215) in {Krasus' Landing} (69.40, 43.99)| |Z|1014 10| |NPC|120215|
-N (npc:120752) |SID|35327|1| |N|Mount the (npc:120752) in {Krasus' Landing}| |NPC|120752| |V|
-C Secure the Beach |SID|35327|2| |N|Kill the demons on the beach until you reach 100% to secure the beach (50.86, 69.96)| |Z|1149 0|
-C Defeat Lord Kalgorath |SID|35329|3| |N|Defeat (npc:116291) in {Broken Shore} (44.30, 73.90) (42.04, 72.23) (41.29, 65.12) (41.30, 65.12)| |Z|1149 0| |NPC|116291|
-C Legion portals closed |SID|35495|4| |N|Follow the waypoints and defeat the forces to close the portals in {Broken Shore}(42.95, 58.73)  (46.98, 58.29) (52.15, 52.38)(54.57, 47.99) (57.09, 52.15) (59.09, 51.61) (59.09, 51.61)| |Z|1149 0|
-K (npc:118551) |SID|35497|5| |N|Kill (npc:118551) in {Broken Shore} (55.15, 51.75)| |Z|1149 0| |NPC|118551|
-C Use Gateway |SID|35551|6| |N|Take the Demonic Gateway to the base of Mephistroth's command ship (53.41, 50.42)| |Z|1149 0|
-C Plant Arcane Bombs |SID|36178|7| |N|Plant Arcane Bombs in the command ship in each waypoints, look for the yellow dots in the minimap, you will need to use the portal after planting the first 2| |Z|1149 0|
+N (npc:120752) |SID|35327|1| |N|Mount the (npc:120752) in {Krasus' Landing}| |NPC|120752| |V| |QID|46734| 
+C Secure the Beach |SID|35327|2| |N|Kill the demons on the beach until you reach 100% to secure the beach (50.86, 69.96)| |Z|1149 0| |QID|46734| 
+C Defeat Lord Kalgorath |SID|35329|3| |N|Defeat (npc:116291) in {Broken Shore} (44.30, 73.90) (42.04, 72.23) (41.29, 65.12) (41.30, 65.12)| |Z|1149 0| |NPC|116291| |QID|46734| 
+C Legion portals closed |SID|35495|4| |N|Follow the waypoints and defeat the forces to close the portals in {Broken Shore}(42.95, 58.73)  (46.98, 58.29) (52.15, 52.38)(54.57, 47.99) (57.09, 52.15) (59.09, 51.61) (59.09, 51.61)| |Z|1149 0| |QID|46734| 
+K (npc:118551) |SID|35497|5| |N|Kill (npc:118551) in {Broken Shore} (55.15, 51.75)| |Z|1149 0| |NPC|118551| |QID|46734| 
+C Use Gateway |SID|35551|6| |N|Take the Demonic Gateway to the base of Mephistroth's command ship (53.41, 50.42)| |Z|1149 0| |QID|46734| 
+C Plant Arcane Bombs |SID|36178|7| |N|Plant Arcane Bombs in the command ship in each waypoints, look for the yellow dots in the minimap, you will need to use the portal after planting the first 2| |Z|1149 0| |QID|46734| 
 C Defeat Mephistroth |SID|36179|8| |N|Kill (npc:120746) in {Broken Shore} (50.03, 45.38)| |Z|1149 0| |NPC|120746| |QID|46734.2|
 
 T Assault on Broken Shore |QID|46734| |N|(npc:116302) in {Deliverance Point} (44.71, 63.29)| |Z|1021 0| |NPC|116302|
@@ -411,6 +411,26 @@ N Scout Dreadstalker Point |QID|46845.1| |N|Scout Dreadstalker Point (50.66, 21.
 C Vengeance Point |QID|46845| |N|Kill 4 (npc:120969) and 5 (npc:120748) in {Vengeance Point} (50.63, 20.77)| |Z|1021 0| |NPC|120969, 120748|
 T Vengeance Point |QID|46845| |N|(npc:111323) in {Vengeance Point} (49.69, 21.03)| |Z|1021 0| |NPC|111323|
 
+C Legionfall Supplies |QID|46286| |N|Complete World Quests or slay Rare Elites on the Broken Shore to earn 100 (cur:1342)|
+T Legionfall Supplies |QID|46286| |N|(npc:120183) in {Deliverance Point} (44.55,63.15)| |Z|1021 0| |NPC|120183|
+A Begin Construction |QID|46245| |N|(npc:120183) in {Deliverance Point} (44.54,63.15)| |Z|1021 0| |NPC|120183|
+C Begin Construction |QID|46245.1| |N|Use the table and Donate Legionfall War Supplies to the construction of the Mage Tower, Nether Disruptor, or Command Center in {Deliverance Point} (44.74, 63.13)| |Z|1021 0|
+T Begin Construction |QID|46245| |N|(npc:120183) in {Deliverance Point} (44.54,63.15)| |Z|1021 0| |NPC|120183|
+
+A Altar of the Aegis |QID|46244| |N|(npc:116302) in {Deliverance Point} (44.73,63.27)| |Z|1021 0| |NPC|116302|
+K Mephistroth |QID|46244| |N|Kill (npc:120793) the final boss of Cathedral of Light| |NPC|120793|
+T Altar of the Aegis |QID|46244| |N|(npc:116302) in {Deliverance Point} (44.73,63.27)| |Z|1021 0| |NPC|116302|
+A Defending Broken Isles |QID|46247| |N|(npc:116576) in {Deliverance Point} (44.54,63.52)| |Z|1021 0| |NPC|116576|
+C Defending Broken Isles |QID|46247.1| |N|Defeat a Legion Assault in the Broken Isles, check the Broken Isle map for Legion Assault and complete the World quest for it| |Z|1021 0|
+T Defending Broken Isles |QID|46247| |N|(npc:116576) in {Deliverance Point} (44.54,63.52)| |Z|1021 0| |NPC|116576|
+A Mark of the Sentinax |QID|47139| |N|(npc:117873) in {Deliverance Point} (44.79,63.17)| |Z|1021 0| |NPC|117873|
+C Mark of the Sentinax |QID|47139|  |N|Collect 100 (item:147582) <br/><b>These are collected from Sentinax Portals.<br/><b>Sentinax Beacons summon portals which spawn mobs that you can kill for Marks.<br/><b>Setninax Beacons drop from mobs in Broken Shore.<br/><b>Open your map and look for the Sentinax icon. Use your beacons below the ship. (50.56,43.35)| |Z|1021 0| 
+T Mark of the Sentinax |QID|47139| |N|(npc:117873) in {Deliverance Point} (44.79,63.17)| |Z|1021 0| |NPC|117873|
+A Self-Fulfilling Prophecy |QID|46248| |N|(npc:120372) in {Deliverance Point} (44.57,63.39)| |Z|1021 0| |NPC|120372|
+C Self-Fulfilling Prophecy |QID|46248| |N|Complete 12 world quests on Broken Shore|
+T Self-Fulfilling Prophecy |QID|46248| |N|(npc:120372) in {Deliverance Point} (44.57,63.39)| |Z|1021 0| |NPC|120372|
+
+--- Patch 7.2 Content
 A Seeking Lost Knowledge |QID|47067| |N|(npc:116302) in {Deliverance Point}<br/><br/>You need at least rank 25 artifact knowledge to receive this quest (44.71, 63.29)| |Z|1021 0| |NPC|116302|
 
 N Recover Knowledge from Moonlight Ascent |QID|47067.3| |N|Click Remnant of Lost Knowledge, stand still and wait for the channeling to complete. (71.22,41.78) (75.62,36.27)| |Z|1021 0|
@@ -419,39 +439,202 @@ N Recover Knowledge from Moonlight Ascent |QID|47067.1| |N|Click Remnant of Lost
 
 T Seeking Lost Knowledge |QID|47067| |N|(npc:116302) in {Deliverance Point} (44.71, 63.29)| |Z|1021 0| |NPC|116302|
 A Delivering Lost Knowledge |QID|46809| |N|(npc:116302) in {Deliverance Point} (44.71, 63.29)| |Z|1021 0| |NPC|116302|
-A Amal'thazad's Message |QID|46719| |N|(npc:117573) in {Deliverance Point} (43.92,63.12)| |Z|1021 0| |NPC|117573|
+--A Amal'thazad's Message |QID|46719| |N|(npc:117573) in {Deliverance Point} (43.92,63.12)| |Z|1021 0| |NPC|117573|
 
 R Hall of Command |QID|46940| |N|Travel to {Hall of Command} (49.74,55.87)| |Z|1021 2|
 T Delivering Lost Knowledge |QID|46809| |N|(npc:97111) in {Hall of Command} (49.74,55.87)| |Z|1021 2| |NPC|97111|
 A Using Lost Knowledge |QID|46940| |N|(npc:97111) in {Hall of Command} (49.74,55.87)| |Z|1021 2| |NPC|97111|
 C Using Lost Knowledge |QID|46940.1| |N|Speak to (npc:97111) and start a Research Work Order in {Hall of Command} (49.74,55.87)| |Z|1021 2| |NPC|97111|
 T Using Lost Knowledge |QID|46940| |N|(npc:97111) in {Hall of Command} (49.74,55.87)| |Z|1021 2| |NPC|97111|
-T Amal'thazad's Message |QID|46719| |N|(npc:93555) in {Hall of Command} (58.21,31.07)| |Z|1021 2| |NPC|93555|
-A Frozen Memories |QID|46720| |N|(npc:93555) in {Hall of Command} (58.21,31.07)| |Z|1021 2| |NPC|93555|
 
-N Take the portal |QID|46720.1| |N|Take the portal to the top of Archerus (55.52,28.34)| |Z|1021 2|
-N Listen to the Lich King's plan |QID|46720.2| |N|Simply wait for the dialogue to complete. (47.82,51.83)| |Z|1021 1|
-N Witness the Lich King's vision  |QID|46720.3| |N Land on the little chunk of ice and wait for the vision to complete. (44.70,4.41)| |Z|492 0| |POI|
+R Deliverance Point |QID|46744| |N|Travel to {Deliverance Point} (44.74,63.27)| |Z|1021 0| 
+A Greater Power for Greater Threats |QID|46744| |N|(npc:116302) in {Deliverance Point} (44.74,63.27)| |OID|46765| |NPC|116302| |Z|1021 0| 
+C Greater Power for Greater Threats |QID|46744| |N|Unlock all traits for one of your artifacts. You can earn artifact power by completing world quests, dungeons, and certain quests.|  |OID|46765| |Z|1021 0| 
+T Greater Power for Greater Threats |QID|46744| |N|(npc:116302) in {Deliverance Point} (44.74,63.27)| |OID|46765| |NPC|116302| |Z|1021 0| 
+A The Broken Shore: Investigating the Legion |QID|46765| |N|(npc:116302) in {Broken Shore} (44.73,63.26)| |Z|1021 0| |NPC|116302|
+N Discover the Hidden Legion Threat |QID|46765.1| |N|Collect (item:147430), This item has a chance to drop off of any mob in the area. (44.61,49.57)| |Z|1021 0|
+T The Broken Shore: Investigating the Legion |QID|46765| |N|(npc:116302) in {Broken Shore} (44.73,63.27)| |Z|1021 0| |NPC|116302|
+A The Council's Call |QID|47000| |N|(npc:116302) in {Deliverance Point} (44.73,63.27)| |Z|1021 0| |NPC|116302|
 
-T Frozen Memories |QID|46720| |N|Field turn in| 
-A Draconic Secrets |QID|46812| |N|Field accept|
-N (npc:27938) |QID|46812.1| |N|Speak to (npc:27938) to interrogate him (60.31,54.86)| |Z|488 0| |NPC|27938|
-N (npc:26443) |QID|46812.2| |N|Speak to (npc:26443) to interrogate him (57.90,54.16)| |Z|488 0| |NPC|26443|
+R Dalaran |QID|44782| |N|Travel to {Dalaran} (28.50,48.33)| |Z|1014 10| 
+T The Council's Call |QID|47000| |N|(npc:90417) in {Dalaran} (28.50,48.33)| |Z|1014 10| |NPC|90417|
+A Away From Prying Eyes |QID|44782| |N|(npc:90417) in {Dalaran} (28.50,48.33)| |Z|1014 10| |NPC|90417|
+N Enter the Purple Parlor |QID|44782.1| |N|Go through the portal at the top of the stairs. (24.73,48.04)| |Z|1014 10|
+T Away From Prying Eyes |QID|44782| |N|(npc:115465) in {Dalaran} (22.20,39.04)| |Z|1014 10| |NPC|115465|
+A In Dire Need |QID|44821| |N|(npc:115465) in {Dalaran} (22.20,39.04)| |Z|1014 10| |NPC|115465|
+N Hear the Council's Plea |QID|44821.1| |N|Wait for the dialogue to complete in {Dalaran} (22.29,39.68)| |Z|1014 10|
+T In Dire Need |QID|44821| |N|(npc:115465) in {Dalaran} (22.29,39.64)| |Z|1014 10| |NPC|115465|
 
-N Infiltrate the Ruby Sanctum |QID|46812.3| |N|Infiltrate the Ruby Sanctum (49.01,31.40)| |Z|1151 0| |NPC|26443|
-N Read the Codex Draconomicus |QID|46812.4| |N|Click Codex Draconomicus Rubicus to read it in {The Ruby Sanctum} (41.40,76.55) (47.92,77.21)| |Z|1151 0|
+N Choose Spec |N|Click on the link below depending on your spec, You must have 35 artifact traits unlocked to start the questline for a specialization. <br/><br/>(choice:1:Frost)<br/>(choice:2:Unholy)<br/>(choice:3:Blood)|
 
-T Draconic Secrets |QID|46812| |N|Field turnin| 
-A The Lost Glacier |QID|46813| |N|Auto quest|
+A Frost: The Thieving Apprentice |QID|47046| |N|(npc:115467) in {Dalaran}<br/><b>This quest is geared towards the Frost specialization<br/><b>You must have 35 artifact traits unlocked with this specialization to start this questline. (22.95,41.10)| |Z|1014 10| |CHOICE|1| |NPC|115467|
 
-N Travel to the Lost Glacier |QID|46813.1| |N|Travel to the Lost Glacier (42.60,0.38)| |Z|492 0|
+T Frost: The Thieving Apprentice |QID|47046| |N|(npc:115791) in  (25.02,38.53)| |Z|181 0| |CHOICE|1| |NPC|115791|
+A Professionally Good Looking |QID|44915| |N|(npc:115791) in {Azshara} (25.02,38.53)| |Z|181 0| |CHOICE|1| |NPC|115791|
+N Acquire the Fanciful Hat |QID|44915.3| |N|Speak to (npc:115970) and collect a (item:142374) (45.17,18.42)| |Z|181 0| |CHOICE|1| |NPC|115970|
+N Acquire the Well-Tailored Robes |QID|44915.2| |N|Speak to (npc:115946) and collect a (item:142372) (62.45,16.05)| |Z|181 0| |CHOICE|1| |NPC|115946|
+N Acquire the Magnificent Mantle |QID|44915.1| |N|Speak to (npc:115903) and collect a (item:142365) (80.84,32.05)| |Z|181 0| |CHOICE|1| |NPC|115903|
+T Professionally Good Looking |QID|44915| |N|(npc:115791) in {Azshara} (25.02,38.53)| |Z|181 0| |CHOICE|1| |NPC|115791|
+A Order of Incantations |QID|44920| |N|(npc:115791) in {Azshara} (25.02,38.53)| |Z|181 0| |CHOICE|1| |NPC|115791|
+N Solve the barrier puzzle |QID|44920.2| |N|Click the gems in this exact order, not following the proper order will result in instant death.<br/><b>Arcane-Imbued Gem<br/><b>Frost-Imbued Gem<br/><b>Fire-Imbued Gem<br/><b>Shadow-Imbued Gem (25.15,38.49)| |Z|181 0| |CHOICE|1|
+T Order of Incantations |QID|44920| |N|Field turnin (25.15,38.49)| |Z|181 0| |CHOICE|1|
+A The Archmage Accosted |QID|44924| |N|Auto quest (25.15,38.49)| |Z|181 0| |CHOICE|1|
+N Confront Archmage Xylem |QID|44924.1| |N|Kill (npc:115860) and confront Archmage Xylem  (25.21,38.03)| |Z|181 0| |CHOICE|1| |NPC|115860|
+N Follow through the portal |QID|44924.2| |N|Click Xylem's Portal (25.20,37.97)| |Z|181 0| |CHOICE|1|
+T The Archmage Accosted |QID|44924| |N|(npc:116048) in {Azshara} (25.22,37.90)| |Z|181 0| |CHOICE|1| |NPC|116048|
+A A Portal Away |QID|46177| |N|(npc:116048) in {Azshara} (25.22,37.90)| |Z|181 0| |CHOICE|1| |NPC|116048|
 
-C Find the Frozen Span |SID|36221|1| |QID|46813| |N|You will need to fight through the ghouls to reach the Frozen Span. (52.20,69.57)| |Z|1160 0|
-C Find Kyranastraz' Rest |SID|36222|2| |QID|46813| |N|There is a narrow path of ice ahead. Follow that towards the skeletal remains. (52.20,69.57)| |Z|1160 0|
+R Dalaran |TID|46177| |N|Travel to {Dalaran} (28.61,49.90)| |Z|1014 10| |CHOICE|1|
+T A Portal Away |QID|46177| |N|(npc:105081) in {Dalaran} (28.61,49.90)| |Z|1014 10| |CHOICE|1| |NPC|105081|
+A A Gift From the Six |QID|45865| |N|(npc:90418) in {Dalaran} (28.43,48.91)| |Z|1014 10| |CHOICE|1| |NPC|90418|
+N Receive the Council's gift |QID|45865.1| |N|Stand in the circle and use the special action button that appears on-screen. (30.42,48.91)| |Z|1014 10| |CHOICE|1|
+T A Gift From the Six |QID|45865| |N|(npc:90418) in {Dalaran} (28.44,48.91)| |Z|1014 10| |CHOICE|1| |NPC|90418|
 
-N Collect the red dragon's essence |SID|36223|3| |QID|46813| |N|Kill the enemies until you reach 100%| |NPC|121048, 121060, 121040|
-N Convert the life essence to death |SID36224|4| |QID|46813| |N|Use the special action button ability on your screen.|
-T The Lost Glacier |QID|46813| |N|Click the Deep crack| 
+--N Choose Spec |N|Click on the link below depending on your spec, You must have 35 artifact traits unlocked to start the questline for a specialization.<br/><br/>(choice:1:Frost)<br/>(choice:2:Unholy)<br/>(choice:3:Blood)|
+
+A Unholy: The Folly of Levia Laurence |QID|47057| |N|(npc:115465) in {Dalaran}<br/><b>This quest is geared towards the Unholy specialization<br/><b>You must have 35 artifact traits unlocked with this specialization to start this questline. (22.29,39.64)| |Z|1014 10| |NPC|115465| |CHOICE|2|
+N (npc:92195) |QID|47057.1| |N|Speak to (npc:92195) in {Dalaran} and ask About Levia at the Scribe's Sacellum (41.30,37.05)| |Z|1014 10| |NPC|92195| |CHOICE|2|
+N (npc:97331) |QID|47057.2| |N|Speak to (npc:97331) in {Dalaran} and ask About Levia at the Militant Mystic (49.31,73.11)| |Z|1014 10| |NPC|97331| |CHOICE|2|
+N (npc:96806) |QID|47057.3| |N|Speak to (npc:97331) in {Dalaran} and ask About Levia at the Legerdemain Lounge (49.31,73.11)| |Z|1014 10| |NPC|96806| |CHOICE|2|
+N Investigate Levia's Belongings |QID|47057.4| |N|Go upstairs and click Levia's Research Journal (50.68,40.22) (46.41,40.08)| |Z|1014 10| |CHOICE|2|
+T Unholy: The Folly of Levia Laurence |QID|47057| |N|(npc:90418) in {Dalaran} (28.48,48.93)| |Z|1014 10| |NPC|90418| |CHOICE|2|
+A Bargaining with Shadows |QID|46327| |N|(npc:90418) in {Dalaran} (28.48,48.93)| |Z|1014 10| |NPC|90418| |CHOICE|2|
+
+T Bargaining with Shadows |QID|46327| |N|(npc:116714) in {Chamber of the Guardians} (52.77,59.25)| |Z|1014 12| |NPC|116714| |CHOICE|2|
+A The Acolyte Imperiled |QID|45916| |N|(npc:116714) in {Chamber of the Guardians} (52.77,59.25)| |Z|1014 12| |NPC|116714| |CHOICE|2|
+N Investigate Levia's Ritual |QID|45916.1| |N|Investigate Levia's Ritual in {Chamber of the Guardians} (58.07,72.99)| |Z|1014 12| |CHOICE|2|
+N (npc:116714) |QID|45916.2| |N|Kill the enemies that attack and defend (npc:116714) (58.07,72.99)| |Z|1014 12| |NPC|116714| |CHOICE|2|
+T The Acolyte Imperiled |QID|45916| |N|(npc:116714) in {Chamber of the Guardians} (58.07,72.99)| |Z|1014 12| |NPC|116714| |CHOICE|2|
+A Dabbling in the Demonic |QID|45125| |N|(npc:116714) in {Chamber of the Guardians} (58.07,72.99)| |Z|1014 12| |NPC|116714| |CHOICE|2|
+C Dabbling in the Demonic |QID|45125| |N|Activate the correct three runes to help (npc:116714) to complete the spell to stabilize the portal. <br/><br/>Click on Talar, Taam then Dregla (57.59,72.54)| |Z|1014 12| |NPC|116714| |CHOICE|2| 
+T Dabbling in the Demonic |QID|45125| |N|(npc:116714) in {Chamber of the Guardians} (57.70,72.54)| |Z|1014 12| |NPC|116714| |CHOICE|2|
+A Following the Scent |QID|45917| |N|(npc:116714) in {Chamber of the Guardians} (57.70,72.54)| |Z|1014 12| |NPC|116714| |CHOICE|2|
+
+R Demonic Gateway |QID|45127| |N|Use the Demonic Gateway (60.36,75.79)| |Z|1014 12| |F|1015 0| |CHOICE|2| 
+N (npc:118450) |QID|45917.1| |N|Speak to (npc:118450) in {Azsuna} (30.97,51.84)| |Z|1015 0| |NPC|118450| |CHOICE|2|
+N (npc:116189) |QID|45917.2| |N|Follow (npc:118450) to find (npc:116189) (30.13,52.19) (27.68,52.58) (25.78,57.55)| |Z|1015 0| |NPC|118450, 116189| |CHOICE|2|
+T Following the Scent |QID|45917| |N|(npc:116189) in {Azsuna} (25.67,57.75)| |Z|1015 0| |NPC|116189| |CHOICE|2|
+A Unlikely Seduction |QID|45126| |N|(npc:116189) in {Azsuna} (25.67,57.75)| |Z|1015 0| |NPC|116189| |CHOICE|2|
+K (npc:118520) |QID|45126.1| |N|Kill (npc:118520) in {Azsuna} (25.84,57.42)| |Z|1015 0| |NPC|118520| |CHOICE|2|
+T Unlikely Seduction |QID|45126| |N|(npc:116189) in {Azsuna} (25.67,57.75)| |Z|1015 0| |NPC|116189| |CHOICE|2|
+A Fel-Crossed Lovers |QID|45127| |N|(npc:116189) in {Azsuna} (25.67,57.75)| |Z|1015 0| |NPC|116189| |CHOICE|2|
+
+R Dalaran |QID|45861| |N|Travel to {Dalaran} (28.48,48.93)| |Z|1014 10| |CHOICE|2|
+T Fel-Crossed Lovers |QID|45127| |N|(npc:90418) in {Dalaran} (28.48,48.93)| |Z|1014 10| |NPC|90418| |CHOICE|2|
+A A Gift From the Six |QID|45861| |N|(npc:90418) in {Dalaran} (28.48,48.93)| |Z|1014 10| |NPC|90418| |CHOICE|2|
+N Receive the Council's Gift |QID|45861.1| |N|Stand in the circle and use the special action button that appears on-screen. (30.42,48.93)| |Z|1014 10| |CHOICE|2|
+T A Gift From the Six |QID|45861| |N|(npc:90418) in {Dalaran} (28.48,48.93)| |Z|1014 10| |NPC|90418| |CHOICE|2|
+
+--N Choose Spec |N|Click on the link below depending on your spec, You must have 35 artifact traits unlocked to start the questline for a specialization.<br/><br/>(choice:1:Frost)<br/>(choice:2:Unholy)<br/>(choice:3:Blood)|
+
+A Blood: Aid of the Illidari |QID|47025| |N|(npc:90431) in {Dalaran} (28.44,49.46)| |Z|1014 10| |CHOICE|3| |NPC|90431|
+N (npc:116880) |QID|47025.1| |N|Find (npc:116880) in {Dalaran} (49.13,26.03)| |Z|1014 10| |CHOICE|3| |NPC|116880|
+T Blood: Aid of the Illidari |QID|47025| |N|(npc:116880) in {Dalaran} (52.03,19.58)| |Z|1014 10| |CHOICE|3| |NPC|116880|
+A Gathering Information |QID|45413| |N|(npc:116880) in {Dalaran} (52.03,19.58)| |Z|1014 10| |CHOICE|3| |NPC|116880|
+
+N Investigate the bank employees |QID|45413.1| |N|Speak to the bank employees (npc:96817),  (npc:96818) and (npc:96819) (53.17,15.26)| |Z|1014 10| |CHOICE|3| |NPC|96817, 96818, 96819|
+N Identify the stolen item |QID|45413.2| |N|Speak to (npc:113812) to Identify the stolen item (53.78,20.29)| |Z|1014 10| |CHOICE|3| |NPC|113812|
+T Gathering Information |QID|45413| |N|(npc:116880) in {Dalaran} (52.04,19.63)| |Z|1014 10| |CHOICE|3| |NPC|116880|
+A Confirming Suspicions |QID|45414| |N|(npc:116880) in {Dalaran} (52.04,19.63)| |Z|1014 10| |CHOICE|3| |NPC|116880|
+N Search First to Your Aid |QID|45414.1| |N|Enter the building and ait near Olisarra the Kind until the dialogue completes (37.45,36.54) (36.03,37.51)| |Z|1014 10| |CHOICE|3|
+N Search Krasus' Landing |QID|45414.2| |N|Search Krasus' Landing  (74.83,45.52)| |Z|1014 10| |CHOICE|3|
+N (npc:117042) |QID|45414.3| |N|Speak to (npc:117042) in {Dalaran} (74.83,45.52)| |Z|1014 10| |CHOICE|3| |NPC|117042|
+N Witness Velen's vision |QID|45414.4| |N|Speak to (npc:117042) in {Dalaran} (74.83,45.52)| |Z|1014 10| |CHOICE|3| |NPC|117042|
+
+T Confirming Suspicions |QID|45414| |N|(npc:117042) in {Dalaran} (74.83,45.52)| |Z|1014 10| |CHOICE|3| |NPC|117042|
+A Between Worlds |QID|45415| |N|(npc:117042) in {Dalaran} (74.83,45.52)| |Z|1014 10| |CHOICE|3| |NPC|117042|
+
+R Hellfire Peninsula |QID|45415.1| |N|Take the portal to Hellfire Peninsula (75.10,46.18)| |Z|1014 10| |CHOICE|3|
+N (npc:116880) |QID|45415.2| |N|Speak to (npc:116880) at the {Stair of Destiny} (85.30,50.11)| |Z|465 0| |CHOICE|3| |NPC|116880|
+N Open the portal |QID|45415.3| |N|Kill Doomheralds first and defeat the waves of enemies to open the portal (85.30,50.11)| |Z|465 0| |CHOICE|3|
+T Between Worlds |QID|45415| |N|(npc:116880) at the {Stair of Destiny} (85.30,50.11)| |Z|465 0| |CHOICE|3| |NPC|116880|
+A Dark Omens |QID|45843| |N|(npc:116880) at the {Stair of Destiny} (85.30,50.11)| |Z|465 0| |CHOICE|3| |NPC|116880|
+
+R Dalaran |QID|45863| |N|Travel to {Dalaran} (28.43,48.91)| |Z|1014 10|  |CHOICE|3|
+T Dark Omens |QID|45843| |N|(npc:90418) in {Dalaran} (28.43,48.91)| |Z|1014 10| |CHOICE|3| |NPC|90418|
+A A Gift From the Six |QID|45863| |N|(npc:90418) in {Dalaran} (28.43,48.91)| |Z|1014 10| |CHOICE|3| |NPC|90418|
+C Receive the Council's gift |QID|45863.1| |N|Stand in the circle and use the special action button that appears on-screen (30.43,48.95)| |Z|1014 10| |CHOICE|3|
+T A Gift From the Six |QID|45863| |N|(npc:90418) in {Dalaran} (28.44,48.91)| |Z|1014 10| |CHOICE|3| |NPC|90418|
+
+--After Spec 
+R Deliverance Point |QID|47137| |N|Travel to {Deliverance Point} (44.54,63.52)| |Z|1021 0|
+A Champions of Legionfall |QID|47137| |N|(npc:116576) in (Broken Shore} (44.54,63.52)| |Z|1021 0| |NPC|116576|
+A Making Preparations |QID|45240| |N|(npc:113695) in {Acherus} (26.94,28.86)| |Z|1021 1|
+
+R Pit of Saron |QID|45240|  |N|Use the Death Gate to Pit of Saron (24.22,27.67)| |Z|1021 1| |F|1116 0|
+T Making Preparations |QID|45240| |N|(npc:119539) in {Pit of Saron}  (56.00,18.08) (47.79,19.24)| |Z|1116 0| |NPC|119539|
+A Harnessing Power |QID|45398| |N|(npc:119539) in {Pit of Saron} (47.79,19.24)| |Z|1116 0| |NPC|119539|
+A Severing the Sveldrek |QID|45399| |N|(npc:119539) in {Pit of Saron} (47.79,19.24)| |Z|1116 0| |NPC|119539|
+C Severing the Sveldrek |QID|45399.1| |N|Kill (npc:119575) and raise 8 of them (44.42,23.67)| |Z|1116 0|
+C Harnessing Power |QID|45398.1| |N|Kill (npc:116827) and collect (item:143676)  (39.79,16.58) (33.92,8.99)| |Z|1116 0| |NPC|116827|
+T Harnessing Power |QID|45398| |N|(npc:119539) in {Pit of Saron} (47.79,19.24)| |Z|1116 0| |NPC|119539|
+T Severing the Sveldrek |QID|45399| |N|(npc:119539) in {Pit of Saron} (47.79,19.24)| |Z|1116 0| |NPC|119539|
+A Return to Acherus |QID|45331| |N|(npc:119539) in {Pit of Saron} (47.79,19.24)| |Z|1116 0| |NPC|119539|
+
+T Return to Acherus |QID|45331| |N|(npc:113695) in {Broken Shore}26.94,28.82)| |Z|1021 1|
+A The Peak of Bones |QID|44775| |N|(npc:113695) in {Broken Shore}26.94,28.82)| |Z|1021 1|
+N (npc:93465) |QID|44775.1| |N|Speak to (npc:93465) to go to {Thorim's Peak} (25.53,28.82)| |Z|1116 0| |NPC|93465| |V|
+T The Peak of Bones |QID|44775| |N|(npc:115360) in {Thorim's Peak} (51.28,84.31)| |Z|1017 0| |NPC|115360|
+A From Bones They Rise |QID|44783| |N|(npc:115360) in {Thorim's Peak} (51.28,84.31)| |Z|1017 0| |NPC|115360|
+A Thorim's Flame |QID|46305| |N|(npc:115360) in {Thorim's Peak} (51.28,84.31)| |Z|1017 0| |NPC|115360|
+
+N (npc:119647) |QID|46305.1| |N|Use the grapple points to reach (npc:119647) to speak to him then (50.02,83.59) (48.00,82.32) (47.87,82.98)| |Z|1017 0| |NPC|119647|
+N Thorim's Flame |QID|46305.2| |N|Collect {Thorim's Flame} (47.99,83.08)| |Z|1017 0|
+C From Bones They Rise |QID|44783.1| |N|click Deceased Thorignir to revive 4 of them (48.92,81.78)| |Z|1017 0|
+T From Bones They Rise |QID|44783| |N|(npc:116737) in {Thorim's Peak} (47.76,82.98)| |Z|1017 0|
+T Thorim's Flame |QID|46305| |N|(npc:116737) in {Thorim's Peak} (47.76,82.98)| |Z|1017 0|
+A The Bonemother |QID|44787| |N|(npc:116737) in {Thorim's Peak} (47.76,82.98)| |Z|1017 0|
+N Light Thorim's Beacon |QID|44787.1| |N|Use the grapple points to reach Thorim's Beacon (50.03,82.75) (51.25,84.38)| |Z|1017 0|
+K (npc:115284) |QID|44787.2| |N|Kill (npc:115284) in {Stormheim} (50.77,84.30)| |Z|1017 0| |NPC|115284|
+N (spell:236415) |QID|44787.3| |N|Use (spell:236415) action button spell to raise him (50.80,84.30)| |Z|1017 0| |NPC|115284|
+N (npc:116748) |QID|44787/4| |N|Click on (npc:116748) to ride him to Acherus (50.80,84.30)| |Z|1017 0| |NPC|116748| |V|
+T The Bonemother |QID|44787| |N|(npc:113695) in {Acherus} (26.88,28.79)| |Z|1021 1|
+A On Daumyr's Wings |QID|45243| |N|(npc:113695) in {Acherus} (26.88,28.79)| |Z|1021 1|
+N (npc:116130) |QID|45243.1| |N|Ride (npc:116130) to {Acherus} (21.62,32.19)| |Z|1021 1| |NPC|116130| |V|
+
+T On Daumyr's Wings |QID|45243| |N|(npc:116128) in {Broken Shore} (51.64,21.78)| |Z|1021 0| |NPC|116128|
+A We Ride! |QID|45103| |N|(npc:116128) in {Broken Shore} (51.64,21.78)| |Z|1021 0| |NPC|116128|
+N (npc:115284) |QID|45103.1| |N|Speak to (npc:115284) to mount it (51.57,21.28)| |Z|1021 0| |NPC|115284|
+C We Ride! |QID|45103.2| |N|Kill 100 Demons in {Broken Shore}<br/><b>Use the new abilities on your action bar to accomplish this. (55.81,34.33)| |Z|1021 0|
+
+T We Ride! |QID|45103| |N|(npc:113695) in {Acherus} (26.86,28.69)| |Z|1021 1| |NPC|113695|
+A Champion: Minerva Ravensorrow |QID|46050| |N|(npc:95900) in {Acherus} (25.51,34.34)| |Z|1021 1| |NPC|95900| |E|
+
+A Further Advancement |QID|46789| |N|(npc:93568) in {Acherus} (49.66,51.28)| |Z|1021 2| |NPC|93568|
+N (npc:97485) |QID|46789.1| |N|Speak to (npc:97485) in {Acherus} (47.71,53.88)| |Z|1021 2| |NPC|97485|
+T Further Advancement |QID|46789| |N|(npc:93568) in {Acherus} (49.66,51.28)| |Z|1021 2| |NPC|93568|
+
+T Champions of Legionfall |QID|47137| |N|(npc:116576) in {Broken Shore} (44.54,63.52)| |Z|1021 0| |NPC|116576|
+A Shard Times |QID|46251| |N|(npc:116302) in {Broken Shore} (44.74,63.27)| |Z|1021 0| |NPC|116302|
+C Shard Times |QID|46251.1| |N|Collect 2500 (cur:1226). These can be obtained by looting rares, treasures, and completing world quests. (44.74,63.27)| |Z|1021 0|
+T Shard Times |QID|46251| |N|(npc:116576) in {Broken Shore} (44.54,63.52)| |Z|1021 0| |NPC|116576|
+
+--T Amal'thazad's Message |QID|46719| |N|(npc:93555) in {Hall of Command} (58.21,31.07)| |Z|1021 2| |NPC|93555|
+--A Frozen Memories |QID|46720| |N|(npc:93555) in {Hall of Command} (58.21,31.07)| |Z|1021 2| |NPC|93555|
+
+--N Take the portal |QID|46720.1| |N|Take the portal to the top of Archerus (55.52,28.34)| |Z|1021 2|
+--N Listen to the Lich King's plan |QID|46720.2| |N|Simply wait for the dialogue to complete. (47.82,51.83)| |Z|1021 1|
+--N Witness the Lich King's vision  |QID|46720.3| |N Land on the little chunk of ice and wait for the vision to complete. (44.70,4.41)| |Z|492 0| |POI|
+
+--T Frozen Memories |QID|46720| |N|Field turn in| 
+--A Draconic Secrets |QID|46812| |N|Field accept|
+--N (npc:27938) |QID|46812.1| |N|Speak to (npc:27938) to interrogate him (60.31,54.86)| |Z|488 0| |NPC|27938|
+--N (npc:26443) |QID|46812.2| |N|Speak to (npc:26443) to interrogate him (57.90,54.16)| |Z|488 0| |NPC|26443|
+
+--N Infiltrate the Ruby Sanctum |QID|46812.3| |N|Infiltrate the Ruby Sanctum (49.01,31.40)| |Z|1151 0| |NPC|26443|
+--N Read the Codex Draconomicus |QID|46812.4| |N|Click Codex Draconomicus Rubicus to read it in {The Ruby Sanctum} (41.40,76.55) (47.92,77.21)| |Z|1151 0|
+
+--T Draconic Secrets |QID|46812| |N|Field turnin| 
+--A The Lost Glacier |QID|46813| |N|Auto quest|
+
+--N Travel to the Lost Glacier |QID|46813.1| |N|Travel to the Lost Glacier (42.60,0.38)| |Z|492 0|
+
+--C Find the Frozen Span |SID|36221|1| |QID|46813| |N|You will need to fight through the ghouls to reach the Frozen Span. (52.20,69.57)| |Z|1160 0|
+--C Find Kyranastraz' Rest |SID|36222|2| |QID|46813| |N|There is a narrow path of ice ahead. Follow that towards the skeletal remains. (52.20,69.57)| |Z|1160 0|
+
+--N Collect the red dragon's essence |SID|36223|3| |QID|46813| |N|Kill the enemies until you reach 100%| |NPC|121048, 121060, 121040|
+--N Convert the life essence to death |SID36224|4| |QID|46813| |N|Use the special action button ability on your screen.|
+--T The Lost Glacier |QID|46813| |N|Click the Deep crack| 
 
 ----
 A Champion Armaments |QID|44231| |N|(npc:110410), this quest will only be available if you chose to get the "Brothers in Arms" class hall upgrade. (51.78,32.38)| |Z|1021 1| |NPC|110410|

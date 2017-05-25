@@ -4299,7 +4299,7 @@ ZygorGuidesViewer:RegisterInclude("A_Uldum_Leveling",[[
 		accept Make Yourself Useful##27969 |goto 24.4,64.1
 	step
 		Use your Refurbished Trooper Uniform |use Refurbished Trooper Uniform##62813
-		Wear the Uniform |havebuff INTERFACE\ICONS\inv_chest_leather_08 |q 27969
+		Wear the Uniform |havebuff 132723 |q 27969 --inv_chest_leather_08
 	step
 		talk Slacking Laborer##47292 |goto 23.2,60.1
 		Tell them they're behind schedule

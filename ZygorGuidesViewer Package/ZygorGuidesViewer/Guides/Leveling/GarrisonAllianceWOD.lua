@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("GarrisonAWOD") then return end
 ZygorGuidesViewer.GuideMenuTier = "WOD"
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Leveling Guide",{
 description="This guide will walk you through leveling your Garrison to Level 3.",
 },[[
 step
@@ -281,9 +281,9 @@ step
 _Enter_ Shaz'gul through the wooden gates |goto Shadowmoon Valley D 38.6,60.5 < 20 |walk
 use Sylene's Amulet of Illusion##107076
 |tip Use Sylene's Amulet if you lose your disguise. Also, Void Wolves can see through your disguise, so be careful around them.
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\achievement_character_orc_male |q 33080 |or
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236452 |q 33080 |or
 |tip You will only complete this goal if you're a male character.
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 33080 |or
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236451 |q 33080 |or
 |tip You will only complete this goal if you're a female character.
 clicknpc Explosives##74811
 |tip It looks like a yellow bomb with bumps all over it, sitting on the ground.
@@ -292,9 +292,9 @@ step
 _Enter_ the building |goto Shadowmoon Valley D 36.7,61.3 < 10 |walk
 use Sylene's Amulet of Illusion##107076
 |tip Use Sylene's Amulet if you lose your disguise. Also, Void Wolves can see through your disguise, so be careful around them.
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\achievement_character_orc_male |q 33080 |or
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236452 |q 33080 |or
 |tip You will only complete this goal if you're a male character.
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 33080 |or
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236451 |q 33080 |or
 |tip You will only complete this goal if you're a female character.
 clicknpc Explosives##74811
 |tip It looks like a yellow bomb with bumps all over it, sitting on the ground.
@@ -302,9 +302,9 @@ Plant Explosives at the Main Lodge |q Going Undercover##33080/3 |goto Shadowmoon
 step
 use Sylene's Amulet of Illusion##107076
 |tip Use Sylene's Amulet if you lose your disguise. Also, Void Wolves can see through your disguise, so be careful around them.
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\achievement_character_orc_male |q 33080 |or
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236452 |q 33080 |or
 |tip You will only complete this goal if you're a male character.
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 33080 |or
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236451 |q 33080 |or
 |tip You will only complete this goal if you're a female character.
 _Head_ through the gates to the Chieftains' seat |goto Shadowmoon Valley D 37.8,62.6 < 20 |walk
 clicknpc Explosives##74811
@@ -313,9 +313,9 @@ Plant Explosives at the Chieftain's Seat |q Going Undercover##33080/4 |goto Shad
 step
 use Sylene's Amulet of Illusion##107076
 |tip Use Sylene's Amulet if you lose your disguise. Also, Void Wolves can see through your disguise, so be careful around them.
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\achievement_character_orc_male |q 33080 |or
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236452 |q 33080 |or
 |tip You will only complete this goal if you're a male character.
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 33080 |or
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236451 |q 33080 |or
 |tip You will only complete this goal if you're a female character.
 clicknpc Explosives##74811
 |tip It looks like a yellow bomb with bumps all over it, sitting on the ground.
@@ -372,7 +372,7 @@ turnin My Very Own Castle##36615
 step
 Congratulations, you've upgraded your Garrison to level 3!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Small Buildings\\Alchemy Lab",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Small Buildings\\Alchemy Lab",{
 description="This guide will walk you through creating and upgrading the Alchemy Lab Garrison building.",
 },[[
 step
@@ -460,7 +460,7 @@ Finalize the Level 3 Alchemy Lab |havebuilding Alchemy,3,active
 step
 Congratulations, you've finished upgrading your Alchemy Lab!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Small Buildings\\Enchanter's Study",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Small Buildings\\Enchanter's Study",{
 description="This guide will walk you through creating and upgrading the Enchanter's Study Garrison building.",
 },[[
 step
@@ -548,7 +548,7 @@ Finalize the Level 3 Enchanter's Study |havebuilding Enchanting,3,active
 step
 Congratulations, you've finished upgrading your Enchanter's Study!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Small Buildings\\Engineering Works",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Small Buildings\\Engineering Works",{
 description="This guide will walk you through creating and upgrading the Engineering Works Garrison building.",
 },[[
 step
@@ -638,7 +638,7 @@ Finalize the Level 3 Engineering Works |havebuilding Engineering,3,active
 step
 Congratulations, you've finished upgrading your Engineering Works!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Small Buildings\\The Forge",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Small Buildings\\The Forge",{
 description="This guide will walk you through creating and upgrading The Forge Garrison building.",
 },[[
 step
@@ -726,7 +726,7 @@ Finalize the Level 3 Forge |havebuilding Blacksmith,3,active
 step
 Congratulations, you've finished upgrading your Forge!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Small Buildings\\Gem Boutique",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Small Buildings\\Gem Boutique",{
 description="This guide will walk you through creating and upgrading the Gem Boutique Garrison building.",
 },[[
 step
@@ -814,7 +814,7 @@ Finalize the Level 3 Gem Boutique |havebuilding Jewelcrafting,3,active
 step
 Congratulations, you've finished upgrading your Gem Boutique!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Small Buildings\\Salvage Yard",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Small Buildings\\Salvage Yard",{
 description="This guide will walk you through creating and upgrading the Salvage Yard Garrison building.",
 },[[
 step
@@ -897,7 +897,7 @@ Finalize the Level 3 Salvage Yard |havebuilding SalvageYard,3,active
 step
 Congratulations, you've finished upgrading your Salvage Yard!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Small Buildings\\Scribe's Quarters",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Small Buildings\\Scribe's Quarters",{
 description="This guide will walk you through creating and upgrading the Scribe's Quarters Garrison building.",
 },[[
 step
@@ -986,7 +986,7 @@ Finalize the Level 3 Scribe's Quarters |havebuilding Inscription,3,active
 step
 Congratulations, you've finished upgrading your Scribe's Quarters!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Small Buildings\\Storehouse",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Small Buildings\\Storehouse",{
 description="This guide will walk you through creating and upgrading the Storehouse Garrison building.",
 },[[
 step
@@ -1062,7 +1062,7 @@ Finalize the Level 3 Storehouse |havebuilding Storehouse,3,active
 step
 Congratulations, you've finished upgrading your Storehouse!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Small Buildings\\Tailoring Emporium",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Small Buildings\\Tailoring Emporium",{
 description="This guide will walk you through creating and upgrading the Tailoring Emporium Garrison building.",
 },[[
 step
@@ -1149,7 +1149,7 @@ Finalize the Level 3 Tailoring Emporium |havebuilding Tailoring,3,active
 step
 Congratulations, you've finished upgrading your Tailoring Emporium!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Small Buildings\\The Tannery",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Small Buildings\\The Tannery",{
 description="This guide will walk you through creating and upgrading The Tannery Garrison building.",
 },[[
 step
@@ -1237,7 +1237,7 @@ Finalize the Level 3 Tannery |havebuilding Leatherworking,3,active
 step
 Congratulations, you've finished upgrading your Tannery!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Medium Buildings\\Barn",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Medium Buildings\\Barn",{
 description="This guide will walk you through creating and upgrading the Barn Garrison building.",
 },[[
 step
@@ -1331,7 +1331,7 @@ Finalize the Level 3 Barn |havebuilding Barn,3,active
 step
 Congratulations, you've finished upgrading your Barn!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Medium Buildings\\Lunarfall Inn",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Medium Buildings\\Lunarfall Inn",{
 description="This guide will walk you through creating and upgrading the Lunarfall Inn Garrison building.",
 },[[
 step
@@ -1451,7 +1451,7 @@ Finalize the Level 3 Lunarfall Inn |havebuilding Inn,3,active
 step
 Congratulations, you've finished upgrading your Lunarfall Inn!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Medium Buildings\\Gladiator's Sanctum",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Medium Buildings\\Gladiator's Sanctum",{
 description="This guide will walk you through creating and upgrading the Gladiator's Sanctum Garrison building.",
 },[[
 step
@@ -1628,7 +1628,7 @@ Finalize the Level 3 Gladiator's Sanctum |havebuilding SparringArena,3,active
 step
 Congratulations, you've finished upgrading your Galdiator's Sanctum!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Medium Buildings\\Lumber Mill",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Medium Buildings\\Lumber Mill",{
 description="This guide will walk you through creating and upgrading the Lumber Mill Garrison building.",
 },[[
 step
@@ -1817,7 +1817,7 @@ turnin Tree-i-cide##36195
 step
 Congratulations, you've finished upgrading your Lumber Mill!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Medium Buildings\\Trading Post",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Medium Buildings\\Trading Post",{
 description="This guide will walk you through creating and upgrading the Trading Post Garrison building.",
 },[[
 step
@@ -1947,7 +1947,7 @@ accept Auctioning for Parts##36948
 step
 Congratulations, you've finished upgrading your Trading Post!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Large Buildings\\Barracks",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Large Buildings\\Barracks",{
 description="This guide will walk you through creating and upgrading the Barracks Garrison building.",
 },[[
 step
@@ -2014,7 +2014,7 @@ Finalize the Level 3 Barracks |havebuilding Barracks,3,active
 step
 Congratulations, you've finished upgrading your Barracks!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Large Buildings\\Gnomish Gearworks",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Large Buildings\\Gnomish Gearworks",{
 description="This guide will walk you through creating and upgrading the Gnomish Gearworks Garrison building.",
 },[[
 step
@@ -2153,7 +2153,7 @@ Finalize the Level 3 Gnomish Gearworks |havebuilding Workshop,3,active
 step
 Congratulations, you've finished upgrading your Gnomish Gearworks!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Large Buildings\\Mage Tower",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Large Buildings\\Mage Tower",{
 description="This guide will walk you through creating and upgrading the Mage Tower Garrison building.",
 },[[
 step
@@ -2309,7 +2309,7 @@ Finalize the Level 3 Mage Tower |havebuilding MageTower,3,active
 step
 Congratulations, you've finished upgrading your Mage Tower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Large Buildings\\Stables",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Large Buildings\\Stables",{
 description="This guide will walk you through creating and upgrading the Stables Garrison building.",
 },[[
 step
@@ -2407,7 +2407,7 @@ accept Requisition a Riverbeast##36918
 step
 click Shadow Lily##77271
 |tip They look like white glowing flowers on the ground right next to the water.
-Obtain the _Glowstep_ Buff |havebuff Interface\Icons\Spell_DeathKnight_PathOfFrost |goto Talador/0 64.4,56.3 |q 36918
+Obtain the _Glowstep_ Buff |havebuff 237528 |goto Talador/0 64.4,56.3 |q 36918
 |tip This buff will allow you to walk on water for 10 minutes, and will not be cancelled when you take damage.
 step
 click Young Riverwallow##86848
@@ -3057,7 +3057,7 @@ turnin Teeth of a Predator##37122
 step
 Congratulations, you've finished upgrading your Stables!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Large Buildings\\Dwarven Bunker",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Large Buildings\\Dwarven Bunker",{
 description="This guide will walk you through creating and upgrading the Dwarven Bunker Garrison building.",
 },[[
 step
@@ -3138,7 +3138,7 @@ Finalize the Level 3 Dwarven Bunker |havebuilding Armory,3,active
 step
 Congratulations, you've finished upgrading your Dwarven Bunker!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Default Buildings\\Fishing Shack",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Default Buildings\\Fishing Shack",{
 description="This guide will walk you through creating and upgrading the Fishing Shack Garrison building.",
 },[[
 step
@@ -3336,7 +3336,7 @@ accept An Angler on Our Team##36616 |goto Lunarfall/0 53.4,13.5
 step
 Congratulations, you've finished upgrading your Fishing Shack!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Default Buildings\\Lunarfall Excavation",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Default Buildings\\Lunarfall Excavation",{
 description="This guide will walk you through creating and upgrading the Lunarfall Excavation Garrison building.",
 },[[
 step
@@ -3411,7 +3411,7 @@ Finalize the Level 3 Lunarfall Excavation |havebuilding Mine,3,active
 step
 Congratulations, you've finished upgrading your Lunarfall Excavation!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Default Buildings\\Herb Garden",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Default Buildings\\Herb Garden",{
 description="This guide will walk you through creating and upgrading the Herb Garden Garrison building.",
 },[[
 step
@@ -3475,7 +3475,7 @@ Finalize the Level 3 Herb Garden |havebuilding Farm,3,active
 step
 Congratulations, you've finished upgrading your Herb Garden!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Default Buildings\\Menagerie",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Default Buildings\\Menagerie",{
 description="This guide will walk you through creating and upgrading the Menagerie Garrison building.",
 },[[
 step
@@ -3580,7 +3580,7 @@ Finalize the Level 3 Menagerie |havebuilding PetStable,3,active
 step
 Congratulations, you've finished upgrading your Menagerie!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Default Buildings\\Lunarfall Shipyard",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Buildings\\Default Buildings\\Lunarfall Shipyard",{
 description="This guide will walk you through creating and upgrading the Lunarfall Shipyard Garrison building.",
 },[[
 step
@@ -3929,7 +3929,7 @@ turnin Naval Domination##39068 |goto Shadowmoon Valley D/0 28.2,11.7
 step
 Congratulations, you've finished upgrading your Lunarfall Shipyard!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Quest Guide",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Quest Guide",{
 description="This guide will walk you through completing the quests found in your Garrison.",
 },[[
 step
@@ -4045,7 +4045,7 @@ step
 Click the _Quest Complete_ Box:
 turnin New Goods##38408
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Legendary Ring Guide",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Legendary Ring Guide",{
 description="This guide will walk you through the Legendary Ring questline.",
 },[[
 step
@@ -4457,7 +4457,7 @@ Congratulations, you have completed the Legendary Ring questline!
 |tip You can continue to upgrade your ring by defeating Archimonde every week in Normal, Heroic, or Mythic difficulty.
 |tip Use the Crystallized Fel he drops to upgrade your ring by 3 item levels, up to a maximum of 795.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\FOLLOWERS STARTER GUIDE",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\FOLLOWERS STARTER GUIDE",{
 description="This guide will provide a tutorial for Garrison Followers.",
 },[[
 step
@@ -4506,7 +4506,7 @@ Mission bonuses are listed on the right side of each mission. Look for mission t
 Send your Followers on missions to level them
 Click here to return to the _Main Menu_ |confirm |next "start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Abu'gar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Abu'gar",{
 keywords={"abu'gar","blood","death","knight","dark","command","wild","aggression"},
 description="This guilde will walk you through obtaining Abu'gar as a Garrison Follower.",
 },[[
@@ -4531,7 +4531,7 @@ accept Abu'Gar##36711 |instant |goto 67.18,56.01
 step
 Congratulations, you now have Abu'gar as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Admiral Taylor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Admiral Taylor",{
 keywords={"admiral","taylor","arms","warrior","recklessness","timed","battle","inscription"},
 description="This guilde will walk you through obtaining Admiral Taylor as a Garrison Follower.",
 },[[
@@ -4635,7 +4635,7 @@ accept For Old Times' Sake##36353 |instant |goto 39.98,60.66
 step
 Congratulations, you now have Admiral Taylor as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Ahm",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Ahm",{
 keywords={"ahm","arms","warrior","heroic","leap","danger","zones","enchanting"},
 description="This guilde will walk you through obtaining Ahm as a Garrison Follower.",
 },[[
@@ -4657,7 +4657,7 @@ accept Solidarity In Death##36522 |instant |goto Lunarfall 52.8,69.0
 step
 Congratulations, you now have Ahm as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Aknor Steelbringer",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Aknor Steelbringer",{
 keywords={"aknor","steelbringer","arms","warrior","cleave","minion","swarms"},
 description="This guilde will walk you through obtaining Aknor Steelbringer as a Garrison Follower.",
 },[[
@@ -4668,7 +4668,7 @@ achieve 8929 |goto Blackrock Foundry/1 18.8,76.8
 step
 Congratulations, you now have Aknor Steelbringer as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Apprentice Artificer Andren",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Apprentice Artificer Andren",{
 keywords={"apprentice","artificer","andren","arms","warrior","heroic","leap","danger","zones","engineering"},
 description="This guilde will walk you through obtaining Apprentice Artificer Andren as a Garrison Follower.",
 },[[
@@ -4742,7 +4742,7 @@ Congratulations, you now have _Apprentice Artificer Andren_ as a Garrison Follow
 You have already chosen _Rangari Chel_, you cannot recruit _Apprentice Artificer Andren_ |only if hasfollower(185)
 You have already chosen _Vindicator Onaala_, you cannot recruit _Apprentice Artificer Andren_ |only if hasfollower(186)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Artificer Romuul",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Artificer Romuul",{
 keywords={"artificer","romuul","holy","paladin","rebuke","powerful","spell","jewelcrafting"},
 description="This guilde will walk you through obtaining Artificer Romuul as a Garrison Follower.",
 },[[
@@ -4755,7 +4755,7 @@ accept Artificer Romuul##35614 |instant |goto Shadowmoon Valley D/0 42.8,40.4
 step
 Congratulations, you now have Artificer Romuul as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Blook",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Blook",{
 keywords={"blook","fury","warrior","recklessness","timed","battle","combat","experience"},
 description="This guilde will walk you through obtaining Blook as a Garrison Follower.",
 },[[
@@ -4769,7 +4769,7 @@ accept I Am Blook##34279 |instant |goto Gorgrond 41.2,91.4
 step
 Congratulations, you now have Blook as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Bruma Swiftstone",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Bruma Swiftstone",{
 keywords={"bruma","swiftstone","subtlety","rogue","fan","of","knives","minion","swarms","alchemy"},
 description="This guilde will walk you through obtaining Bruma Swiftstone as a Garrison Follower.",
 },[[
@@ -4785,7 +4785,7 @@ Recruit Bruma Swiftstone |condition hasfollower(153)
 step
 Congratulations, you now have Bruma Swiftstone as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Cleric Maluuf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Cleric Maluuf",{
 keywords={"cleric","maluuf","holy","priest","prayer","of","healing","group","damage"},
 description="This guilde will walk you through obtaining Cleric Maluuf as a Garrison Follower.",
 },[[
@@ -4802,7 +4802,7 @@ Recruit Cleric Maluuf |condition hasfollower(459)
 step
 Congratulations, you now have Cleric Maluuf as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Croman",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Croman",{
 keywords={"croman","retribution","paladin","divine","shield","massive","strike"},
 description="This guilde will walk you through obtaining Croman as a Garrison Follower.",
 },[[
@@ -4854,7 +4854,7 @@ Recruit Croman |condition hasfollower(177)
 step
 Congratulations, you now have Croman as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Dagg",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Dagg",{
 keywords={"dagg","subtlety","rogue","sap","deadly","minions"},
 description="This guilde will walk you through obtaining Dagg as a Garrison Follower.",
 },[[
@@ -4872,7 +4872,7 @@ accept Services of Dagg##34733 |instant |goto Lunarfall 61.4,74.8
 step
 Congratulations, you now have Dagg as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Daleera Moonfang",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Daleera Moonfang",{
 keywords={"daleera","moonfang","holy","priest","dispel","magic","debuff"},
 description="This guilde will walk you through obtaining Daleera Moonfang as a Garrison Follower.",
 },[[
@@ -4887,7 +4887,7 @@ Recruit Daleera Moonfang |condition hasfollower(463)
 step
 Congratulations, you now have Daleera Moonfang as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Dawnseeker Rukaryx",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Dawnseeker Rukaryx",{
 keywords={"dawnseeker","rukaryx","balance","druid","hurricane","minion","swarms"},
 description="This guilde will walk you through obtaining Dawnseeker Rukaryx as a Garrison Follower.",
 },[[
@@ -4901,7 +4901,7 @@ Recruit Dawnseeker Rukaryx |condition hasfollower(462)
 step
 Congratulations, you now have Dawnseeker Rukaryx as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Defender Illona",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Defender Illona",{
 keywords={"defender","illona","protection","paladin","reckoning","wild","aggression","bodyguard"},
 description="This guilde will walk you through obtaining Defender Illona as a Garrison Follower.",
 },[[
@@ -4925,7 +4925,7 @@ accept The True Path##36519 |instant |goto 57.42,51.12
 step
 Congratulations, you now have Defender Illona as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Delvar Ironfist",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Delvar Ironfist",{
 keywords={"delvar","ironfist","unholy","death","knight","bone","shield","bodyguard","massive","strike"},
 description="This guilde will walk you through obtaining Delvar Ironfist as a Garrison Follower.",
 },[[
@@ -4964,7 +4964,7 @@ accept Delvar Ironfist##36633 |instant |goto Stormshield 48.0,30.6
 step
 Congratulations, you now have Delvar Ironfist as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Fen Tao",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Fen Tao",{
 keywords={"fen","tao","mistweaver","monk","magic","debuff","skinning","brew","aficionado"},
 description="This guilde will walk you through obtaining Fen Tao as a Garrison Follower.",
 },[[
@@ -4977,7 +4977,7 @@ Recruit Fen Tao |condition hasfollower(467) |goto Stormshield/0 45.3,70.6
 step
 Congratulations, you now have Fen Tao as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Fiona",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Fiona",{
 keywords={"fiona","holy","priest","prayer","of","healing","group","damage"},
 description="This guilde will walk you through obtaining Fiona as a Garrison Follower.",
 },[[
@@ -5040,7 +5040,7 @@ accept Fiona##35617 |instant |goto 53.60,57.28
 step
 Congratulations, you now have Fiona as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Glirin",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Glirin",{
 keywords={"glirin","survival","hunter","feign","death","wild","aggression"},
 description="This guilde will walk you through obtaining Glirin as a Garrison Follower.",
 },[[
@@ -5110,7 +5110,7 @@ step
 label "end"
 Congratulations, you now have Glirin as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Goldmane the Skinner",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Goldmane the Skinner",{
 keywords={"goldmane","the","skinner","assassination","rogue","sprint","danger","zones","skinning"},
 description="This guilde will walk you through obtaining Goldmane the Skinner as a Garrison Follower.",
 },[[
@@ -5128,7 +5128,7 @@ accept Feline Friends Forever##35596 |instant |goto Nagrand D 40.4,76.2
 step
 Congratulations, you now have Goldmane the Skinner as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Hulda Shadowblade",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Hulda Shadowblade",{
 keywords={"hulda","shadowblade","assassination","rogue","kick","powerful","spell","skinning"},
 description="This guilde will walk you through obtaining Hulda Shadowblade as a Garrison Follower.",
 },[[
@@ -5248,7 +5248,7 @@ step
 label "end"
 Congratulations, you now have Hulda Shadowblade as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Image of Archmage Vargoth",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Image of Archmage Vargoth",{
 keywords={"image","of","archmage","vargoth","mage","counterspell","powerful","spell"},
 description="This guilde will walk you through obtaining Image of Archmage Vargoth as a Garrison Follower.",
 },[[
@@ -5291,7 +5291,7 @@ accept The Staff of Archmage Vargoth##36027 |instant |goto 84.54,31.68
 step
 Congratulations, you now have the Image of Archmage Vargoth as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Kimzee Pinchwhistle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Kimzee Pinchwhistle",{
 keywords={"kimzee","pinchwhistle","combat","rogue","sprint","danger","zones","engineering"},
 description="This guilde will walk you through obtaining Kimzee Pinchwhistle as a Garrison Follower.",
 },[[
@@ -5460,7 +5460,7 @@ accept Kimzee Pinchwhistle##36062 |instant |goto 61.60,72.84
 step
 Congratulations, you now have Kimzee Pinchwhistle as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Lantresor of the Blade",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Lantresor of the Blade",{
 keywords={"lantresor","of","the","blade","arms","warrior","heroic","leap","danger","zones","mining"},
 description="This guilde will walk you through obtaining Lantresor of the Blade as a Garrison Follower.",
 },[[
@@ -5503,7 +5503,7 @@ accept The Honor of a Blademaster##34747 |instant |goto 64.24,59.55
 step
 Congratulations, you now have Lantresor of the Blade as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Leeroy Jenkins",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Leeroy Jenkins",{
 keywords={"leeroy","jenkins","retribution","paladin","divine","storm","minion","swarms"},
 description="This guilde will walk you through obtaining Leeroy Jenkins as a Garrison Follower.",
 },[[
@@ -5534,7 +5534,7 @@ achieve 9058 |goto Upper Blackrock Spire 2/3 61.7,46.3
 step
 Congratulations, you now have Leeroy Jenkins as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Leorajh",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Leorajh",{
 keywords={"leorajh","restoration","shaman","chain","heal","group","damage","bodyguard"},
 description="This guilde will walk you through obtaining Leorajh as a Garrison Follower.",
 },[[
@@ -5552,7 +5552,7 @@ accept Leorajh, the Enlightened##37168 |instant |goto Spires of Arak 54.2,63.0
 step
 Congratulations, you now have Leorajh as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Magister Serena",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Magister Serena",{
 keywords={"magister","serena","frost","mage","counterspell","powerful","spell"},
 description="This guilde will walk you through obtaining Magister Serena as a Garrison Follower.",
 },[[
@@ -5623,7 +5623,7 @@ step
 label "end"
 Congratulations, you now have Magister Serena as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Meatball",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Meatball",{
 keywords={"meatball","fury","warrior","recklessness","timed","battle"},
 description="This guilde will walk you through obtaining Meatball as a Garrison Follower.",
 },[[
@@ -5733,7 +5733,7 @@ accept Meatball##36702 |instant |goto Deeprun Tram/2 62.18,25.66
 step
 Congratulations, you now have Meatball as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Miall",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Miall",{
 keywords={"miall","fury","warrior","shield","wall","massive","strike"},
 description="This guilde will walk you through obtaining Vindicator Miall as a Garrison Follower.",
 },[[
@@ -5872,7 +5872,7 @@ step
 label "end"
 Congratulations, you now have Miall as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Millhouse Manastorm",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Millhouse Manastorm",{
 keywords={"millhouse","manastorm","arcane","mage","polymorph","deadly","minions"},
 description="This guilde will walk you through obtaining Millhouse Manastorm as a Garrison Follower.",
 },[[
@@ -5908,7 +5908,7 @@ step
 Congratulations, you now have Millhouse Manastorm as a Garrison Follower! |only if completedq(37179)
 You must have a Lunarfall Inn to recruit this Follower! |only if default
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Nat Pagle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Nat Pagle",{
 keywords={"nat","pagle","marksmanship","hunter","freezing","trap","deadly","minions","angler","swamp"},
 description="This guilde will walk you through obtaining Nat Pagle as a Garrison Follower.",
 },[[
@@ -5967,7 +5967,7 @@ accept An Angler on Our Team##36616 |instant |goto Lunarfall/0 53.80,13.80
 step
 Congratulations, you now have Nat Pagle as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Phylarch the Evergreen",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Phylarch the Evergreen",{
 keywords={"phylarch","evergreen","restoration","druid","entangling","roots","evergreen","deadly","minions","swamp"},
 description="This guilde will walk you through obtaining Phylarch the Evergreen as a Garrison Follower.",
 },[[
@@ -5993,7 +5993,7 @@ accept Phylarch the Evergreen##36296 |instant
 step
 Congratulations, you now have Phylarch the Evergreen as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Pitfighter Vaandaam",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Pitfighter Vaandaam",{
 keywords={"pitfighter","vaandaam","windwalker","monk","provoke","wild","aggression"},
 description="This guilde will walk you through obtaining Pitfighter Vaandaam as a Garrison Follower.",
 },[[
@@ -6095,7 +6095,7 @@ step
 label "end"
 Congratulations, you now have Pitfighter Vaandaam as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Pleasure-Bot 8000",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Pleasure-Bot 8000",{
 keywords={"pleasure-bot","8000","fury","warrior","recklessness","timed","battle","tailoring"},
 description="This guilde will walk you through obtaining Pleasure-Bot 8000 as a Garrison Follower.",
 },[[
@@ -6115,7 +6115,7 @@ accept New Owner##35239 |instant |goto Talador 62.9,50.4
 step
 Congratulations, you now have Pleasure-Bot 8000 as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Professor Felblast",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Professor Felblast",{
 keywords={"professor","felblast","destruction","warlock","metamorphosis","timed","battle"},
 description="This guilde will walk you through obtaining Professor Felblast as a Garrison Follower.",
 },[[
@@ -6132,7 +6132,7 @@ Recruit Professor Felblast |condition hasfollower(460)
 step
 Congratulations, you now have Professor Felblast as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Qiana Moonshadow",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Qiana Moonshadow",{
 keywords={"qiana","moonshadow","guardian","druid","growl","wild","aggression"},
 description="This guilde will walk you through obtaining Qiana Moonshadow as a Garrison Follower.",
 },[[
@@ -6148,7 +6148,7 @@ turnin Qiana Moonshadow##34646 |goto Lunarfall/0 40.52,54.00
 step
 Congratulations, you now have Qiana Moonshadow as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Rangari Chel",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Rangari Chel",{
 keywords={"rangari","chel","marksmanship","hunter","multi-shot","minion","swarms"},
 description="This guilde will walk you through obtaining Rangari Chel as a Garrison Follower.",
 },[[
@@ -6222,7 +6222,7 @@ Congratulations, you now have _Rangari Chel_ as a Garrison Follower! |only if ha
 You have already chosen _Apprentice Artificer Andren_, you cannot recruit _Rangari Chel_ |only if hasfollower(184)
 You have already chosen _Vindicator Onaala, you cannot recruit _Rangari Chel_ |only if hasfollower(186)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Rangari Erdanii",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Rangari Erdanii",{
 keywords={"rangari","erdanii","subtlety","rogue","sap","deadly","minions"},
 description="This guilde will walk you through obtaining Rangari Erdanii as a Garrison Follower.",
 },[[
@@ -6440,7 +6440,7 @@ step
 label "end"
 Congratulations, you now have Rangari Erdanii as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Rangari Kaalya",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Rangari Kaalya",{
 keywords={"rangari","kaalya","survival","hunter","counter","shot","powerful","spell"},
 description="This guilde will walk you through obtaining Rangari Kaalya as a Garrison Follower.",
 },[[
@@ -6503,7 +6503,7 @@ step
 label "end"
 Congratulations, you now have Rangari Kaalya as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Rulkan",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Rulkan",{
 keywords={"rulkan","enhancement","shaman","hex","deadly","minions","blacksmithing"},
 description="This guilde will walk you through obtaining Rulkan as a Garrison Follower.",
 },[[
@@ -6526,7 +6526,7 @@ accept Rulkan##35631 |goto Shadowmoon Valley D/0 45.8,25.6
 step
 Congratulations, you now have Rulkan as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Shelly Hamby",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Shelly Hamby",{
 keywords={"shelly","hamby","subtlety","rogue","sprint","danger","zones","leatherworking"},
 description="This guilde will walk you through obtaining Shelly Hamby as a Garrison Follower.",
 },[[
@@ -6579,7 +6579,7 @@ accept Shelly Hamby##35625 |goto 36.39,19.28
 step
 Congratulations, you now have Shelly Hamby as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Soulbinder Tuulani",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Soulbinder Tuulani",{
 keywords={"soulbinder","tuulani","shadow","priest","prayer","of","healing","group","damage"},
 description="This guilde will walk you through obtaining Soulbinder Tuulani as a Garrison Follower.",
 },[[
@@ -6793,7 +6793,7 @@ accept Together We Are Strong##36512 |instant |goto 46.32,74.08
 step
 Congratulations, you now have Soulbinder Tuulani as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Talon Guard Kurekk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Talon Guard Kurekk",{
 keywords={"talon","guard","kurekk","arms","warrior","cleave","minion","swarms"},
 description="This guilde will walk you through obtaining Talon Guard Kurekk as a Garrison Follower.",
 },[[
@@ -6817,7 +6817,7 @@ accept Talon Guard Kurekk##37144 |instant |goto Spires of Arak 64.1,37.0
 step
 Congratulations, you now have Talon Guard Kurekk as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Talonpriest Ishaal",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Talonpriest Ishaal",{
 keywords={"talonpriest","ishaal","shadow","priest","dispel","magic","debuff","bodyguard"},
 description="This guilde will walk you through obtaining Talonpriest Ishaal as a Garrison Follower.",
 },[[
@@ -6832,7 +6832,7 @@ accept Talonpriest Ishaal##37141 |instant |goto Spires of Arak 46.4,46.6
 step
 Congratulations, you now have Talonpriest Ishaal as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Thisalee Crow",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Thisalee Crow",{
 keywords={"thisalee","crow","feral","druid","growl","wild","aggression"},
 description="This guilde will walk you through obtaining Thisalee Crow as a Garrison Follower.",
 },[[
@@ -6879,7 +6879,7 @@ turnin Sanketsu, The Burning Blade##37191
 step
 Congratulations, you now have Thisalee Crow as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Tormmok",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Tormmok",{
 keywords={"tormmok","arms","warrior","taunt","wild","aggression","bodyguard"},
 description="This guilde will walk you through obtaining Tormmok as a Garrison Follower.",
 },[[
@@ -6892,7 +6892,7 @@ accept A Centurion Without a Cause##36037 |instant |goto Gorgrond 45.0,86.9
 step
 Congratulations, you now have Tormmok as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Vindicator Heluun",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Vindicator Heluun",{
 keywords={"vindicator","heluun","holy","paladin","holy","radiance","group","damage"},
 description="This guilde will walk you through obtaining Vindicator Heluun as a Garrison Follower.",
 },[[
@@ -6916,7 +6916,7 @@ label "end"
 Congratulations, you now have Vindicator Heluun as a Garrison Follower! |only if hasfollower(458)
 You must have at least a level 2 Trading Post to recruit this Follower! |only if default
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Vindicator Onaala",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Vindicator Onaala",{
 keywords={"vindicator","onaala","holy","paladin","cleanse","magic","debuff"},
 description="This guilde will walk you through obtaining Vindicator Onaala as a Garrison Follower.",
 },[[
@@ -6990,7 +6990,7 @@ Congratulations, you now have _Vindicator Onaala_ as a Garrison Follower! |only 
 You have already recruited _Apprentice Artificer Andren_, you cannot recruit _Vindicator Onaala_ |only if hasfollower(184)
 You have already recruited _Rangari Chel_, you cannot recruit _Vindicator Onaala_ |only if hasfollower(185)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Weldon Barov",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Weldon Barov",{
 keywords={"weldon","barov","assassination","rogue","sprint","danger","zones"},
 description="This guilde will walk you through obtaining Weldon Barov as a Garrison Follower.",
 },[[
@@ -7008,7 +7008,7 @@ accept The Rise and Fall of Barov Industries: Weldon Barov##36429 |instant
 step
 Congratulations, you now have Weldon Barov as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Ziri'ak",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Ziri'ak",{
 keywords={"Ziri'ak","arms","warrior","pummel","powerful","spell"},
 description="This guilde will walk you through obtaining Ziri'ak as a Garrison Follower.",
 },[[
@@ -7039,10 +7039,10 @@ step
 label "end"
 Congratulations, you now have Ziri'ak as a Garrison Follower!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Campaign",{},[[
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Campaign",{},[[
 #include "A_Garrison_Campaign"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Tanaan Jungle (6.2) Garrison Campaign\\Onslaught at Auchindoun",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Tanaan Jungle (6.2) Garrison Campaign\\Onslaught at Auchindoun",{
 description="This guide will walk you through the Onslaught at Auchindoun Garrison Campaign questline in Tanaan Jungle, introduced in patch 6.2.",
 },[[
 step
@@ -7103,7 +7103,7 @@ turnin Secrets of the Sargerei##38562 |goto Talador/30 56.8,66.7
 step
 Congratulations, you've completed the _"Onslaught at Auchindoun"_ Garrison Campaign questline!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Tanaan Jungle (6.2) Garrison Campaign\\The Bane of the Bleeding Hollow",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Tanaan Jungle (6.2) Garrison Campaign\\The Bane of the Bleeding Hollow",{
 description="This guide will walk you through the Bane of the Bleeding Hollow Garrison Campaign questline in Tanaan Jungle, introduced in patch 6.2.",
 },[[
 step
@@ -7175,7 +7175,7 @@ turnin The Eye of Kilrogg##38274 |goto Tanaan Jungle/0 32.8,37.5
 step
 Congratulations, you've completed the _"Bane of the Bleeding Hollow"_ Garrison Campaign questline!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Tanaan Jungle (6.2) Garrison Campaign\\In the Shadows",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Tanaan Jungle (6.2) Garrison Campaign\\In the Shadows",{
 description="This guide will walk you through the In the Shadows Garrison Campaign questline in Tanaan Jungle, introduced in patch 6.2.",
 },[[
 step
@@ -7243,7 +7243,7 @@ turnin Dark Ascension##38223 |goto Tanaan Jungle/0 16.1,44.3
 step
 Congratulations, you've completed the _"In the Shadows"_ Garrison Campaign questline!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Tanaan Jungle (6.2) Garrison Campaign\\The Warlock",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Tanaan Jungle (6.2) Garrison Campaign\\The Warlock",{
 description="This guide will walk you through the Warlock Garrison Campaign questline in Tanaan Jungle, introduced in patch 6.2.",
 },[[
 step
@@ -7315,10 +7315,10 @@ accept Oronok's Offer##39395 |goto Tanaan Jungle/0 62.8,27.9
 step
 Congratulations, you've completed the _"Warlock"_ Garrison Campaign questline!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Inn Quest Guide",{},[[
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Inn Quest Guide",{},[[
 #include "A_Inn_Quests"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Scouting Missives",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Scouting Missives",{
 description="This guide will walk you through completing the Garrison Missive quests bought from Sergeant Crowler.",
 endlevel=100
 },[[
@@ -7585,7 +7585,7 @@ step
 turnin Missive: Assault on the Everbloom Wilds##38191
 next "Menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Jukebox",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Garrison Jukebox",{
 description="This guide will walk you through obtaining the Jukebox for your garrison",
 },[[
 step
@@ -7656,7 +7656,7 @@ Learn Music Roll: Way of the Monk |achieve 10015/30
 step
 Congratulations, you unlocked your _Garrison Jukebox_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Garrisons\\Mystery Notebook Questline",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Mystery Notebook Questline",{
 description="This guide will walk you through obtaining the Heirloom Casings",
 },[[
 step

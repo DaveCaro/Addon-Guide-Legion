@@ -5,3 +5,5 @@ if ZGV:DoMutex("PetsMountsHLEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
 ZGV.BETASTART()
 ZGV.BETAEND()
+ZGV.BETASTART()
+ZGV.BETAEND()

@@ -636,7 +636,7 @@ ZygorGuidesViewer:RegisterInclude("CleansingDrakTharon",[[
 		accept Filling the Cages##11984 |goto Grizzly Hills 16.2,47.6
 	step
 		talk Budd##26429
-		Tell him it's time to play with the ice trolls |havebuff Budd's Attention Span |c |goto 16.4,48.3
+		Tell him it's time to play with the ice trolls |havebuff 134177 |c |goto 16.4,48.3
 	step
 		Use Budd's pet bar skill Tag Troll to have him stun a troll |petaction Tag Troll
 		Use your Bounty Hunter's Cage on the stunned troll |use Bounty Hunter's Cage##35736
@@ -1109,11 +1109,11 @@ ZygorGuidesViewer:RegisterInclude("Explorer_Pandaria",[[
 -- Removed Achievements
 ------------------------------------------------------------------------------
 --[=[
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Chapter I: Trial of the Black Prince",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Chapter I: Trial of the Black Prince",{
 	condition_end="achieved(7533)",
 	description="Prove your worth to Wrathion and acquire a sha-touched gem upgrade.",
 },[[
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Chapter I: Trial of the Black Prince",
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Chapter I: Trial of the Black Prince",
 	step		
 		talk Wrathion##64616
 		accept The Strength of One's Foes##31473 |goto The Veiled Stair/0 54.5,72.6
@@ -1149,7 +1149,7 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achiev
 		Congratulations, you have obtained the _Chapter 1: Trial of the Black Prince_ achievement!
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Chapter II: Wrathion's War (Horde)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Chapter II: Wrathion's War (Horde)",{
 	condition_end="achieved(7533)",
 	description="Prove your worth to Wrathion and acquire a sha-touched gem upgrade.",
 },[[
@@ -1200,7 +1200,7 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achiev
 		Congratulations, you have obtained the _Chapter 2: Trial of the Black Prince_ achievement!
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Chapter II: Wrathion's War (Alliance)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Chapter II: Wrathion's War (Alliance)",{
 	condition_end="achieved(7533)",
 	description="Prove your worth to Wrathion and acquire a sha-touched gem upgrade.",
 },[[
@@ -1251,7 +1251,7 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achiev
 		Congratulations, you have obtained the _Chapter 2: Trial of the Black Prince_ achievement!
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Chapter III: Two Princes",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Chapter III: Two Princes",{
 	condition_end="achieved(7533)",
 	description="Prove your worth to Wrathion and acquire a sha-touched gem upgrade.",
 },[[
@@ -1331,7 +1331,7 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achiev
 		Congratulations, you have obtained the _Chapter III: Trial of the Black Prince_ achievement!
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Chapter IV: Two Princes",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Chapter IV: Two Princes",{
 	condition_end="achieved(7533)",
 	description="Prove your worth to Wrathion and acquire a sha-touched gem upgrade.",
 },[[
@@ -1472,7 +1472,7 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achiev
 		Congratulations, you have obtained the _Chapter IV: Celestial Blessings_ achievement!
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achievements\\Pandaria\\Chapter V: Judgement of the Black Prince",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quest Achievements\\Pandaria\\Chapter V: Judgement of the Black Prince",{
 	condition_end="achieved(7533)",
 	description="Prove your worth to Wrathion and acquire a sha-touched gem upgrade.",
 },[[
@@ -1520,7 +1520,7 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Quest Achiev
 		Congratulations, you have obtained the _Chapter V: Judgement of the Black Prince_ achievement!
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\FARMING",{},[[
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\FARMING",{},[[
 //INSTANCE // // TIME PER RUN
 //-------------------------------
 //COMPLETE

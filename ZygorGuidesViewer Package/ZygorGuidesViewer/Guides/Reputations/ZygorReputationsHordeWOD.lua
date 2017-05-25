@@ -3,12 +3,12 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("ReputationsHWOD") then return end
 ZygorGuidesViewer.GuideMenuTier = "WOD"
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Reputations Guides\\Warlords of Draenor\\Arakkoa Outcasts",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Arakkoa Outcasts",{
 description="This guide will show you how to become Exalted with the Arakkoa Outcasts.\nBecoming Exalted with the Arakkoa Outcasts allows you access to special items including the Shadowmane Charger mount and the Son of Sethe battle pet.",
 },[[
 #include "Arakkoa_Outcasts"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Reputations Guides\\Warlords of Draenor\\Frostwolf Orcs",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Frostwolf Orcs",{
 description="This guide will show you how to become Exalted with the Frostwolf Orcs.\nBecoming Exalted with the Frostwolf Orcs allows you access to special items such as the Swift Frostwolf mount and Bladespire Relic.",
 },[[
 stickystart "info"
@@ -43,7 +43,7 @@ _Honored_ |only if rep('Frostwolf Orcs')==Honored
 _Revered_ |only if rep('Frostwolf Orcs')==Revered
 _Exalted_ |only if rep('Frostwolf Orcs')==Exalted
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Reputations Guides\\Warlords of Draenor\\Laughing Skull Orcs",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Laughing Skull Orcs",{
 description="This guide will show you how to become Exalted with the Laughing Skull Orcs.\nBecoming Exalted with the Laughing Skull Orcs allows you access to special items such as the Ironside Warwolf mount and a new Transmog helm.",
 },[[
 step
@@ -79,26 +79,26 @@ label "end"
 You must have at least a _level 2 Trading Post_ in your Garrison to gain Laughing Skull Orcs reputation!
 |tip Use the Garrison Buildings guide to accomplish this.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Reputations Guides\\Warlords of Draenor\\Steamwheedle Preservation Society",{
-description="This guide will show you how to become Exalted with the Steamwheedle Preservation Society.\nBecoming Exalted with the Steamwheedle Preservation Society allows you access to special items including the Domesticated Razorback mount.",
-},[[
-#include "Steamwheedle_Preservation_Society"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Reputations Guides\\Warlords of Draenor\\Vol'jin's Headhunters",{
-description="This guide will walk you through becoming Exalted with the Vol'jin's Headhunters faction.",
-},[[
-step
-#include "H_Voljins_Headhunters_Dailies"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Reputations Guides\\Warlords of Draenor\\Order of the Awakened",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Order of the Awakened",{
 description="This guide will walk you through becoming Exalted with the Order of the Awakened faction.",
 },[[
 step
 #include "H_Order_of_Awakened_Dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Reputations Guides\\Warlords of Draenor\\The Saberstalkers",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\The Saberstalkers",{
 description="This guide will walk you through becoming Exalted with the Saberstalkers faction.",
 },[[
 step
 #include "H_Saberstalkers_Dailies"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Steamwheedle Preservation Society",{
+description="This guide will show you how to become Exalted with the Steamwheedle Preservation Society.\nBecoming Exalted with the Steamwheedle Preservation Society allows you access to special items including the Domesticated Razorback mount.",
+},[[
+#include "Steamwheedle_Preservation_Society"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Vol'jin's Headhunters",{
+description="This guide will walk you through becoming Exalted with the Vol'jin's Headhunters faction.",
+},[[
+step
+#include "H_Voljins_Headhunters_Dailies"
 ]])

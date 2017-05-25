@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("HunterPetHLEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "LEG"
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Clefthooves\\Saddled Greater Clefthooves\\Red Saddled Greater Clefthoof",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Clefthooves\\Saddled Greater Clefthooves\\Red Saddled Greater Clefthoof",{
 model={53311},
 description="This guide will walk you through obtaining a Red Saddled Greater Clefthoof pet.",
 },[[
@@ -12,7 +12,7 @@ Search for the _Reassigned Warbeast_
 |tip The Reassigned Warbeast is a level 100 rare elite mob.
 Use your _Tame Beast_ ability on _Reassigned Warbeast_ |cast Tame Beast##1515 |goto Tanaan Jungle/0 38.88,41.64
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Core Hounds\\Green Core Hound",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Core Hounds\\Green Core Hound",{
 model={20521},
 description="This guide will walk you through obtaining a Green Core Hound pet.",
 },[[
@@ -23,7 +23,7 @@ Search for a _Spawn of Uvuros_
 |tip Be aware that Stomp will knock you back, interrupting your cast.
 Use your _Tame Beast_ ability on a _Spawn of Uvuros_ |cast Tame Beast##1515 |goto Shadowmoon Valley/0 46.99,43.34
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Core Hounds\\Orange Core Hound",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Core Hounds\\Orange Core Hound",{
 model={12168},
 description="This guide will walk you through obtaining a Orange Core Hound pet.",
 },[[
@@ -32,19 +32,19 @@ Search for a _Brimstone Hound_
 |tip The Brimstone Hound is a level 85 mob.
 Use your _Tame Beast_ ability on a _Brimstone Hound_ |cast Tame Beast##1515 |goto Mount Hyjal/0 14.40,42.05
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Core Hounds\\Yellow Core Hound",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Core Hounds\\Yellow Core Hound",{
 model={73332},
 description="This guide will walk you through obtaining a Yellow Core Hound pet.",
 },[[
 step
 talk Zidormi##88206
-Tell her: _"Show me the Blasted Lands before the invasion."_ |havebuff Interface\Icons\spell_mage_altertime |goto Blasted Lands/0 48.16,7.28
+Tell her: _"Show me the Blasted Lands before the invasion."_ |havebuff 609811 |goto Blasted Lands/0 48.16,7.28
 step
 Search for _Gomegaz_
 |tip Gomegaz is a level 57 mob.
 Use your _Tame Beast_ ability on _Gomegaz_ |cast Tame Beast##1515 |goto Blasted Lands/0 51.64,42.38
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Devilaurs\\Black Armored Devilsaur",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Devilaurs\\Black Armored Devilsaur",{
 model={51144},
 description="This guide will walk you through obtaining a Black Armored Devilsaur pet.",
 },[[
@@ -155,7 +155,7 @@ step
 Use your _Tame Beast_ ability on _Thok the Bloodthirsty_ |cast Tame Beast##1515 |goto Siege of Orgrimmar/9 51.39,82.05
 |tip Activate Aspect of the Turtle before taming.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Silithids\\Sandreavers\\Orange Sandreaver",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Silithids\\Sandreavers\\Orange Sandreaver",{
 model={61308},
 description="This guide will walk you through obtaining an Orange Sandreaver pet.",
 },[[
@@ -169,7 +169,7 @@ Check the third location |goto 22.20,67.58
 |tip Be aware that Paralytic Bite will stun you at 10 stacks, interrupting your cast.
 Use your _Tame Beast_ ability on a _Sandreaver_ |cast Tame Beast##1515
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Silithids\\Sandreavers\\Pink Sandreaver",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Silithids\\Sandreavers\\Pink Sandreaver",{
 model={60223},
 description="This guide will walk you through obtaining a Pink Sandreaver pet.",
 },[[
@@ -183,7 +183,7 @@ Check the third location |goto 22.20,67.58
 |tip Be aware that Paralytic Bite will stun you at 10 stacks, interrupting your cast.
 Use your _Tame Beast_ ability on a _Sandreaver Matriarch_ |cast Tame Beast##1515
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Silithids\\Sandreavers\\Purple Sandreaver",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Silithids\\Sandreavers\\Purple Sandreaver",{
 model={25089},
 description="This guide will walk you through obtaining a Purple Sandreaver pet.",
 },[[
@@ -197,7 +197,7 @@ Check the third location |goto 22.20,67.58
 |tip Be aware that Paralytic Bite will stun you at 10 stacks, interrupting your cast.
 Use your _Tame Beast_ ability on a _Sandreaver Matriarch_ |cast Tame Beast##1515
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Silithids\\Sandreavers\\Striped Orange Sandreaver",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Silithids\\Sandreavers\\Striped Orange Sandreaver",{
 model={61308},
 description="This guide will walk you through obtaining a Striped Orange Sandreaver pet.",
 },[[
@@ -211,7 +211,7 @@ Check the third location |goto 22.20,67.58
 |tip Be aware that Paralytic Bite will stun you at 10 stacks, interrupting your cast.
 Use your _Tame Beast_ ability on a _Sandreaver_ |cast Tame Beast##1515
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Silithids\\Sandreavers\\Striped Purple Sandreaver",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Silithids\\Sandreavers\\Striped Purple Sandreaver",{
 model={25089},
 description="This guide will walk you through obtaining a Striped Purple Sandreaver pet.",
 },[[
@@ -241,7 +241,7 @@ step
 Use your _Tame Beast_ ability on _Sarinexx_ |cast Tame Beast##1515 |goto 51.65,28.44
 |tip Sarinexx is a level 49 elite mob.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Silithids\\Sandreavers\\Striped Yellow Sandreaver",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Silithids\\Sandreavers\\Striped Yellow Sandreaver",{
 model={61306},
 description="This guide will walk you through obtaining a Striped Yellow Sandreaver pet.",
 },[[
@@ -254,7 +254,7 @@ Check the third location |goto 22.20,67.58
 |tip The Sandreaver Drone is a level 94 mob.
 Use your _Tame Beast_ ability on a _Sandreaver Drone_ |cast Tame Beast##1515
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Silithids\\Sandreavers\\Yellow Sandreaver",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Silithids\\Sandreavers\\Yellow Sandreaver",{
 model={61306},
 description="This guide will walk you through obtaining a Yellow Sandreaver pet.",
 },[[
@@ -267,7 +267,7 @@ Check the third location |goto 22.20,67.58
 |tip The Sandreaver Drone is a level 94 mob.
 Use your _Tame Beast_ ability on a _Sandreaver Drone_ |cast Tame Beast##1515
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Spirit Beasts\\Spirit Moose",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Spirit Beasts\\Spirit Moose",{
 model={70876},
 description="This guide will walk you through obtaining a Spirit Moose pet.",
 },[[
@@ -286,7 +286,7 @@ Carefully drop down |goto Stormheim/0 72.53,83.52 < 10
 Use your _Tame Beast_ ability on _Bulvinkel_ |cast Tame Beast##1515 |goto Stormheim/0 73.85,84.18
 |tip Bulvinkel is a rare elite mob with a level that will scale with yours.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Spirit Beasts\\Mana Sabers\\Blue Mana Saber",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Spirit Beasts\\Mana Sabers\\Blue Mana Saber",{
 model={61927},
 description="This guide will walk you through obtaining a Blue Mana Saber pet.",
 },[[
@@ -296,7 +296,7 @@ Search for a _Thicket Manahunter_
 |tip They are uncommon and share a spawn with Thicket Hunters. If you don't find one, kill Thicket Hunters and wait for respawns.
 Use your _Tame Beast_ ability on a _Thicket Manahunter_ |cast Tame Beast##1515 |goto Suramar/0 59.69,45.33
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Spirit Beasts\\Mana Sabers\\Indigo Mana Saber",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Spirit Beasts\\Mana Sabers\\Indigo Mana Saber",{
 model={71536},
 description="This guide will walk you through obtaining a Indigo Mana Saber pet.",
 },[[
@@ -305,7 +305,7 @@ Search for _Myonix_
 |tip Myonix is a level 110 rare mob.
 Use your _Tame Beast_ ability on _Myonix_ |cast Tame Beast##1515 |goto Suramar/0 40.92,32.78
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Spirit Beasts\\Mana Sabers\\Purple Mana Saber",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Spirit Beasts\\Mana Sabers\\Purple Mana Saber",{
 model={72883},
 description="This guide will walk you through obtaining a Purple Mana Saber pet.",
 },[[
@@ -314,7 +314,7 @@ Search for a _Mana Saber_
 |tip The Mana Saber is a level 110 mob.
 Use your _Tame Beast_ ability on a _Mana Saber_ |cast Tame Beast##1515 |goto Suramar/0 31.39,7.52
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Basilisks\\Fel-Green Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Basilisks\\Fel-Green Basilisk",{
 model={67022},
 description="This guide will walk you through obtaining a Fel-Green Basilisk pet.",
 },[[
@@ -325,7 +325,7 @@ Search for a _Felslate Basilisk_
 |tip Petrifying Gaze will reduce your movement speed by 10% per stack if not interrupted. At 5 stacks, it will stun you.
 Use your _Tame Beast_ ability on a _Felslate Basilisk_ |cast Tame Beast##1515
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Basilisks\\Gray Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Basilisks\\Gray Basilisk",{
 model={65050},
 description="This guide will walk you through obtaining a Gray Basilisk pet.",
 },[[
@@ -335,7 +335,7 @@ Search for a _Coldscale Gazecrawler_
 |tip Death Gaze will stun you for 4 seconds if not interrupted.
 Use your _Tame Beast_ ability on a _Coldscale Gazecrawler_ |cast Tame Beast##1515 |goto Highmountain/0 51.85,64.07
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Basilisks\\Olive-Green Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Basilisks\\Olive-Green Basilisk",{
 model={65051},
 description="This guide will walk you through obtaining an Olive-Green Basilisk pet.",
 },[[
@@ -345,7 +345,7 @@ Search for a _Canyon Rockeater_
 |tip Lethargic Glare will reduce your movement speed by 25% for 12 seconds if not interrupted.
 Use your _Tame Beast_ ability on a _Canyon Rockeater_ |cast Tame Beast##1515 |goto Stormheim/0 52.58,64.26
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Basilisks\\Orange Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Basilisks\\Orange Basilisk",{
 model={65052},
 description="This guide will walk you through obtaining an Orange Basilisk pet.",
 },[[
@@ -355,7 +355,7 @@ Search for a _Manascale Basilisk_
 |tip Stone Gaze will stun you for 2 seconds if not interrupted.
 Use your _Tame Beast_ ability on a _Manascale Basilisk_ |cast Tame Beast##1515 |goto Highmountain/0 51.85,64.07
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Basilisks\\Purple Basilisk (Legion)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Basilisks\\Purple Basilisk (Legion)",{
 model={67021},
 description="This guide will walk you through obtaining a Purple Basilisk pet.",
 },[[
@@ -365,7 +365,7 @@ Search for a _Lagoon Basilisk_
 |tip Petrifying Gaze will reduce your movement speed by 10% per stack if not interrupted. At 5 stacks, it will stun you.
 Use your _Tame Beast_ ability on a _Lagoon Basilisk_ |cast Tame Beast##1515 |goto Azsuna/0 57.62,36.21
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Dark Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Dark Bear",{
 model={23992},
 description="This guide will walk you through obtaining a Dark Bear pet.",
 },[[
@@ -374,7 +374,7 @@ Search for a _Vicious Black Bear_
 |tip The Vicious Black Bear is a level 23-24 mob.
 Use your _Tame Beast_ ability on a _Vicious Black Bear_ |cast Tame Beast##1515 |goto Hillsbrad Foothills/0 64.76,74.07
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Dark Brown Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Dark Brown Bear",{
 model={820},
 description="This guide will walk you through obtaining a ",
 },[[
@@ -383,7 +383,7 @@ Search for an _Ashenvale Bear_
 |tip The Ashenvale Bear is a level 19-20 mob.
 Use your _Tame Beast_ ability on a _Ashenvale Bear_ |cast Tame Beast##1515 |goto Ashenvale/0 40.54,53.92
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Diseased Dark Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Diseased Dark Bear",{
 model={1082},
 description="This guide will walk you through obtaining a Diseased Dark Bear pet.",
 },[[
@@ -392,7 +392,7 @@ Search for a _Diseased Black Bear_
 |tip The Diseased Black Bear is a level 35-36 mob.
 Use your _Tame Beast_ ability on a _Diseased Black Bear_ |cast Tame Beast##1515 |goto Western Plaguelands/0 36.54,64.07
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Diseased Dark Brown Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Diseased Dark Brown Bear",{
 model={26940},
 description="This guide will walk you through obtaining a ",
 },[[
@@ -401,7 +401,7 @@ Search for a _Consumed Thistle Bear_
 |tip The Consumed Thistle Bear is a level 18-19 mob.
 Use your _Tame Beast_ ability on a _Consumed Thistle Bear_ |cast Tame Beast##1515 |goto Darkshore/0 45.17,77.80
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Diseased Gray Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Diseased Gray Bear",{
 model={31588},
 description="This guide will walk you through obtaining a Diseased Gray Bear pet.",
 },[[
@@ -410,7 +410,7 @@ Search for an _Infested Bear_
 |tip The Infested Bear is a level 19-20 mob.
 Use your _Tame Beast_ ability on an _Infested Bear_ |cast Tame Beast##1515 |goto Hillsbrad Foothills/0 36.06,71.29
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Diseased Tan Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Diseased Tan Bear",{
 model={37538},
 description="This guide will walk you through obtaining a Diseased Tan Bear pet.",
 },[[
@@ -419,7 +419,7 @@ Search for a _Hulking Plaguebear_
 |tip The Hulking Plaguebear is a level 36-37 mob.
 Use your _Tame Beast_ ability on a _Hulking Plaguebear_ |cast Tame Beast##1515 |goto Western Plaguelands/0 54.30,48.50
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Gray Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Gray Bear",{
 model={3201},
 description="This guide will walk you through obtaining a Gray Bear pet.",
 },[[
@@ -428,7 +428,7 @@ Search for an _Elder Gray Bear_
 |tip The Elder Gray Bear is a level 19-20 mob.
 Use your _Tame Beast_ ability on an _Elder Gray Bear_ |cast Tame Beast##1515 |goto Hillsbrad Foothills/0 33.85,56.01
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Old Model Black Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Old Model Black Bear",{
 model={70188},
 description="This guide will walk you through obtaining an old model Black Bear pet.",
 },[[
@@ -439,7 +439,7 @@ Check the first location |goto Ashenvale/0 89.20,47.45
 Check the second location |goto Ashenvale/0 92.87,45.39
 Use your _Tame Beast_ ability on _Ursol'lok_ |cast Tame Beast##1515
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Old Model Brown Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Old Model Brown Bear",{
 model={70186},
 description="This guide will walk you through obtaining an old model Brown Bear pet.",
 },[[
@@ -450,7 +450,7 @@ Check the first location |goto Felwood/0 42.93,77.31
 Check the second location |goto Felwood/0 47.15,82.69
 Use your _Tame Beast_ ability on _Mongress_ |cast Tame Beast##1515
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Old Model Dark Brown Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Old Model Dark Brown Bear",{
 model={70199},
 description="This guide will walk you through obtaining an old model Dark Brown Bear pet.",
 },[[
@@ -459,7 +459,7 @@ Search for _Grizzled Ben_
 |tip Grizzled Ben is a level 6 rare mob.
 Use your _Tame Beast_ ability on _Grizzled Ben_ |cast Tame Beast##1515 |goto Elwynn Forest/0 27.45,67.61
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Old Model Diseased Black Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Old Model Diseased Black Bear",{
 model={70194},
 description="This guide will walk you through obtaining a old model Diseased Black Bear pet.",
 },[[
@@ -469,7 +469,7 @@ Search for _Grimrot_
 |tip Grimrot will only spawn with the diseased skin during nighttime hours.
 Use your _Tame Beast_ ability on _Grimrot_ |cast Tame Beast##1515 |goto Felwood/0 38.25,45.63
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Old Model Diseased Brown Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Old Model Diseased Brown Bear",{
 model={70189},
 description="This guide will walk you through obtaining an old model Diseased Brown Bear pet.",
 },[[
@@ -478,7 +478,7 @@ Search for _Big Samras_
 |tip Big Samras is a level 25 rare mob.
 Use your _Tame Beast_ ability on _Big Samras_ |cast Tame Beast##1515 |goto Hillsbrad Foothills/0 63.53,52.73
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Old Model Diseased Dark Brown Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Old Model Diseased Dark Brown Bear",{
 model={70190},
 description="This guide will walk you through obtaining an old model Diseased Dark Brown Bear pet.",
 },[[
@@ -492,7 +492,7 @@ Check the third location |goto The Hinterlands/0 67.82,46.21
 Check the fourth location |goto The Hinterlands/0 71.97,52.06
 Use your _Tame Beast_ ability on _Ol' Muddle_ |cast Tame Beast##1515
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Old Model Diseased Gray Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Old Model Diseased Gray Bear",{
 model={70191},
 description="This guide will walk you through obtaining an old model Diseased Gray Bear pet.",
 },[[
@@ -501,7 +501,7 @@ Search for _Mange_
 |tip Mange is a level 35 rare mob.
 Use your _Tame Beast_ ability on _Mange_ |cast Tame Beast##1515 |goto Western Plaguelands/0 66.16,55.18
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Old Model Diseased White Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Old Model Diseased White Bear",{
 model={70192},
 description="This guide will walk you through obtaining an old model Diseased White Bear pet.",
 },[[
@@ -510,7 +510,7 @@ Search for _Hibernus the Sleeper_
 |tip Hibernus the Sleeper is a level 7 rare mob.
 Use your _Tame Beast_ ability on _Hibernus the Sleeper_ |cast Tame Beast##1515 |goto Tirisfal Glades/0 47.47,70.35
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Old Model Gray Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Old Model Gray Bear",{
 model={70193},
 description="This guide will walk you through obtaining an old model Gray Bear pet.",
 },[[
@@ -520,7 +520,7 @@ Search for _Grimrot_
 |tip Grimrot will only spawn with the gray skin during daytime hours.
 Use your _Tame Beast_ ability on _Grimrot_ |cast Tame Beast##1515 |goto Felwood/0 38.25,45.63
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Old Model White Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Old Model White Bear",{
 model={70185},
 description="This guide will walk you through obtaining an old model White Bear pet.",
 },[[
@@ -530,7 +530,7 @@ Search for _Bjarn_
 |tip Bjarn will wander a small area around these coordinates.
 Use your _Tame Beast_ ability on _Bjarn_ |cast Tame Beast##1515 |goto Dun Morogh/0 66.55,59.20
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Tan Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Tan Bear",{
 model={1006},
 description="This guide will walk you through obtaining a Tan Bear pet.",
 },[[
@@ -539,7 +539,7 @@ Search for a _Corrupted Thistle Bear_
 |tip The Corrupted Thistle Bear is a level 10-11 mob.
 Use your _Tame Beast_ ability on a _Corrupted Thistle Bear_ |cast Tame Beast##1515 |goto Darkshore/0 55.13,24.43
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\White Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\White Bear",{
 model={865},
 description="This guide will walk you through obtaining a White Bear pet.",
 },[[
@@ -548,7 +548,7 @@ Search for a _Shardtooth Bear_
 |tip The Shardtooth Bear is a level 49-50 mob.
 Use your _Tame Beast_ ability on a _Shardtooth Bear_ |cast Tame Beast##1515 |goto Winterspring/0 52.25,32.88
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Cats\\Black Cat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Cats\\Black Cat",{
 model={68398},
 description="This guide will walk you through obtaining a Black Cat pet.",
 },[[
@@ -557,7 +557,7 @@ Search for a _Wild Nightsaber_
 |tip The Wild Nightsaber is a mob with a level that will scale with yours.
 Use your _Tame Beast_ ability on a _Wild Nightsaber_ |cast Tame Beast##1515 |goto Val'sharah/0 45.90,79.51
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Cats\\Brown Cat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Cats\\Brown Cat",{
 model={64595},
 description="This guide will walk you through obtaining a Brown Cat pet.",
 },[[
@@ -566,7 +566,7 @@ Search for a _Pinerock Prowler_ or _Pinerock Stalker_
 |tip The Pinerock Prowler and Pinerock Stalker are mobs with a level that will scale with yours.
 Use your _Tame Beast_ ability on a _Pinerock Prowler_ or _Pinerock Stalker_ |cast Tame Beast##1515 |goto Highmountain/0 40.08,50.25
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Cats\\Gray Cat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Cats\\Gray Cat",{
 model={64385},
 description="This guide will walk you through obtaining a Gray Cat pet.",
 },[[
@@ -575,7 +575,7 @@ Search for a _Cursed Prowler_
 |tip The Cursed Prowler is a mob with a level that will scale with yours.
 Use your _Tame Beast_ ability on a _Cursed Prowler_ |cast Tame Beast##1515 |goto Highmountain/0 46.20,46.19
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Cats\\Pale Cat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Cats\\Pale Cat",{
 model={62591},
 description="This guide will walk you through obtaining a Pale Cat pet.",
 },[[
@@ -584,7 +584,7 @@ Search for a _Thicket Hunter_
 |tip The Thicket Hunter is a level 110 mob.
 Use your _Tame Beast_ ability on a _Thicket Hunter_ |cast Tame Beast##1515 |goto Suramar/0 62.19,44.38
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Crabs\\Spiked Crab",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Crabs\\Spiked Crab",{
 model={61702},
 description="This guide will walk you through obtaining a Spiked Crab pet.",
 },[[
@@ -593,7 +593,7 @@ Search for a _Spikebacked Scuttler_
 |tip The Spikebacked Scuttler is a mob with a level that will scale with yours.
 Use your _Tame Beast_ ability on a _Spikebacked Scuttler_ |cast Tame Beast##1515 |goto Azsuna/0 55.21,59.63
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Greater Boars\\Arcane Purple Boar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Greater Boars\\Arcane Purple Boar",{
 model={62708},
 description="This guide will walk you through obtaining an Arcane Purple Boar pet.",
 },[[
@@ -603,7 +603,7 @@ Search for _Leytusk_
 |tip Be mindful of Leytusk's Heave ability. It will deal damage and knock you back.
 Use your _Tame Beast_ ability on _Leytusk_ |cast Tame Beast##1515 |goto Azsuna/0 62.12,11.75
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Greater Boars\\Dark Brown Boar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Greater Boars\\Dark Brown Boar",{
 model={52834},
 description="This guide will walk you through obtaining a Dark Brown Boar pet.",
 },[[
@@ -612,7 +612,7 @@ Search for a _Spinetusk Piglet_
 |tip The Spinetusk Piglet is a mob with a level that will scale with yours.
 Use your _Tame Beast_ ability on a _Spinetusk Piglet_ |cast Tame Beast##1515 |goto Highmountain/0 36.81,38.09
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Oxen\\Musken\\Black Musken",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Oxen\\Musken\\Black Musken",{
 model={70286},
 description="This guide will walk you through obtaining a Black Musken pet.",
 },[[
@@ -621,7 +621,7 @@ Search for a _Wild Plains Runehorn_
 |tip The Wild Plains Runehorn is a mob with a level that will scale with yours.
 Use your _Tame Beast_ ability on a _Wild Plains Runehorn_ |cast Tame Beast##1515 |goto Stormheim/0 58.27,50.93
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Oxen\\Musken\\Brown Musken",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Oxen\\Musken\\Brown Musken",{
 model={70290},
 description="This guide will walk you through obtaining a Brown Musken pet.",
 },[[
@@ -631,7 +631,7 @@ Search for a _Plains Runehorn Bull_
 |tip These mobs are not as common, so you may have to search a bit.
 Use your _Tame Beast_ ability on a _Plains Runehorn Bull_ |cast Tame Beast##1515 |goto Stormheim/0 50.45,51.53
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Oxen\\Musken\\White Musken",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Oxen\\Musken\\White Musken",{
 model={70336},
 description="This guide will walk you through obtaining a White Musken pet.",
 },[[
@@ -640,7 +640,7 @@ Search for a _Highlands Runehorn_
 |tip The Highlands Runehorn is a mob with a level that will scale with yours.
 Use your _Tame Beast_ ability on a _Highlands Runehorn_ |cast Tame Beast##1515 |goto Stormheim/0 37.44,62.51
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Oxen\\Shoveltusks\\Brown Shoveltusk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Oxen\\Shoveltusks\\Brown Shoveltusk",{
 model={37780},
 description="This guide will walk you through obtaining a Brown Shoveltusk pet.",
 },[[
@@ -649,7 +649,7 @@ Search for a _Shoveltusk Forager_
 |tip The Shoveltusk Forager is a level 69 mob.
 Use your _Tame Beast_ ability on a _Shoveltusk Forager_ |cast Tame Beast##1515 |goto Howling Fjord/0 34.07,30.93
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Oxen\\Shoveltusks\\Dark Shoveltusk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Oxen\\Shoveltusks\\Dark Shoveltusk",{
 model={22131},
 description="This guide will walk you through obtaining a Dark Shoveltusk pet.",
 },[[
@@ -658,7 +658,7 @@ Search for a _Shoveltusk Stag_
 |tip The Shoveltusk Stag is a level 69 mob.
 Use your _Tame Beast_ ability on a _Shoveltusk Stag_ |cast Tame Beast##1515 |goto Howling Fjord/0 35.33,40.63
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Oxen\\Shoveltusks\\Pale Shoveltusk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Oxen\\Shoveltusks\\Pale Shoveltusk",{
 model={22132},
 description="This guide will walk you through obtaining a Pale Shoveltusk pet.",
 },[[
@@ -668,7 +668,7 @@ Search for a _Shoveltusk_
 |tip Be aware that Head Butt will confuse you for 3 seconds, interrupting your cast.
 Use your _Tame Beast_ ability on a _Shoveltusk_ |cast Tame Beast##1515 |goto Howling Fjord/0 35.33,40.63
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Oxen\\Shoveltusks\\Red Shoveltusk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Oxen\\Shoveltusks\\Red Shoveltusk",{
 model={37781},
 description="This guide will walk you through obtaining a Red Shoveltusk pet.",
 },[[
@@ -678,7 +678,7 @@ Search for a _Longhoof Grazer_
 |tip Be aware that Head Butt will confuse you for 3 seconds, interrupting your cast.
 Use your _Tame Beast_ ability on a _Longhoof Grazer_ |cast Tame Beast##1515 |goto Grizzly Hills/0 72.25,36.26
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Oxen\\Yaks\\Black Yak",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Oxen\\Yaks\\Black Yak",{
 model={42171},
 description="This guide will walk you through obtaining a Black Yak pet.",
 },[[
@@ -687,7 +687,7 @@ Search for a _Wasteland Yak_
 |tip The Wasteland Yak is a level 90 mob.
 Use your _Tame Beast_ ability on a _Wasteland Yak_ |cast Tame Beast##1515 |goto Dread Wastes/0 43.04,51.99
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Oxen\\Yaks\\Brown Yak",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Oxen\\Yaks\\Brown Yak",{
 model={40694},
 description="This guide will walk you through obtaining a Brown Yak pet.",
 },[[
@@ -697,7 +697,7 @@ Search for a _Mountain Yak_
 |tip There are two different skins, brown and tan.
 Use your _Tame Beast_ ability on a _Mountain Yak_ |cast Tame Beast##1515 |goto Kun-Lai Summit/0 44.46,68.46
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Oxen\\Yaks\\Gray Yak",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Oxen\\Yaks\\Gray Yak",{
 model={45247},
 description="This guide will walk you through obtaining a Gray Yak pet.",
 },[[
@@ -707,7 +707,7 @@ Search for a _Wasteland Calf_
 |tip There are two different skins, gray and white.
 Use your _Tame Beast_ ability on a _Wasteland Calf_ |cast Tame Beast##1515 |goto Dread Wastes/0 43.04,51.99
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Oxen\\Yaks\\Tan Yak",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Oxen\\Yaks\\Tan Yak",{
 model={51282},
 description="This guide will walk you through obtaining a Tan Yak pet.",
 },[[
@@ -717,7 +717,7 @@ Search for a _Mountain Yak_
 |tip There are two different skins, brown and tan.
 Use your _Tame Beast_ ability on a _Mountain Yak_ |cast Tame Beast##1515 |goto Kun-Lai Summit/0 44.46,68.46
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Oxen\\Yaks\\White Yak",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Oxen\\Yaks\\White Yak",{
 model={45242},
 description="This guide will walk you through obtaining a White Yak pet.",
 },[[
@@ -727,7 +727,7 @@ Search for a _Wasteland Calf_
 |tip There are two different skins, gray and white.
 Use your _Tame Beast_ ability on a _Wasteland Calf_ |cast Tame Beast##1515 |goto Dread Wastes/0 43.04,51.99
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Scalehides\\Kodos\\Furry Brown Kodo",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Scalehides\\Kodos\\Furry Brown Kodo",{
 model={10916},
 description="This guide will walk you through obtaining a Furry Brown Kodo pet.",
 },[[
@@ -736,7 +736,7 @@ Search for a _Recovering Kodo_
 |tip The Recovering Kodo is a level 10-11 mob.
 Use your _Tame Beast_ ability on a _Recovering Kodo_ |cast Tame Beast##1515 |goto Desolace/0 58.01,59.93
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Scalehides\\Kodos\\Green-Beige Kodo",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Scalehides\\Kodos\\Green-Beige Kodo",{
 model={1308},
 description="This guide will walk you through obtaining a Green-Beige Kodo pet.",
 },[[
@@ -745,7 +745,7 @@ Search for an _Aged Kodo_
 |tip The Aged Kodo is a level 31-32 mob.
 Use your _Tame Beast_ ability on an _Aged Kodo_ |cast Tame Beast##1515 |goto Desolace/0 53.17,58.22
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Scalehides\\Kodos\\Yellow Kodo",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Scalehides\\Kodos\\Yellow Kodo",{
 model={2767},
 description="This guide will walk you through obtaining a Yellow Kodo pet.",
 },[[
@@ -754,7 +754,7 @@ Search for an _Ancient Kodo_
 |tip The Ancient Kodo is a level 32-33 mob.
 Use your _Tame Beast_ ability on an _Ancient Kodo_ |cast Tame Beast##1515 |goto Desolace/0 53.34,58.48
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Scalehides\\Mushan\\Blue Mushan",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Scalehides\\Mushan\\Blue Mushan",{
 model={45161},
 description="This guide will walk you through obtaining a Blue Mushan pet.",
 },[[
@@ -764,7 +764,7 @@ Search for a _Longshadow Bull_
 |tip Be aware that Belly Flop will knock you back, interrupting your cast.
 Use your _Tame Beast_ ability on a _Longshadow Bull_ |cast Tame Beast##1515 |goto Townlong Steppes/0 54.08,66.13
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Scalehides\\Mushan\\Dark Mushan",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Scalehides\\Mushan\\Dark Mushan",{
 model={41935},
 description="This guide will walk you through obtaining a Dark Mushan pet.",
 },[[
@@ -774,7 +774,7 @@ Search for a _Longshadow Mushan_
 |tip Be aware that Belly Flop will knock you back, interrupting your cast.
 Use your _Tame Beast_ ability on a _Longshadow Mushan_ |cast Tame Beast##1515 |goto Townlong Steppes/0 54.08,66.13
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Scalehides\\Mushan\\Green Mushan",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Scalehides\\Mushan\\Green Mushan",{
 model={44635},
 description="This guide will walk you through obtaining a Green Mushan pet.",
 },[[
@@ -784,7 +784,7 @@ Search for a _Mushan Nomad_
 |tip Mushan Nomads wander a large area. You may have to search around.
 Use your _Tame Beast_ ability on a _Mushan Nomad_ |cast Tame Beast##1515 |goto Valley of the Four Winds/0 70.49,46.93
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Scalehides\\Mushan\\Pale Mushan",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Scalehides\\Mushan\\Pale Mushan",{
 model={44785},
 description="This guide will walk you through obtaining a Pale Mushan pet.",
 },[[
@@ -794,7 +794,7 @@ Search for a _Sungraze Mushan Calf_
 |tip There are two different skins, pale and tan.
 Use your _Tame Beast_ ability on a _Sungraze Mushan Calf_ |cast Tame Beast##1515 |goto Valley of the Four Winds/0 74.38,59.29
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Scalehides\\Mushan\\Tan Mushan",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Scalehides\\Mushan\\Tan Mushan",{
 model={40874},
 description="This guide will walk you through obtaining a Tan Mushan pet.",
 },[[
@@ -804,7 +804,7 @@ Search for a _Sungraze Mushan Calf_
 |tip There are two different skins, pale and tan.
 Use your _Tame Beast_ ability on a _Sungraze Mushan Calf_ |cast Tame Beast##1515 |goto Valley of the Four Winds/0 74.38,59.29
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Scalehides\\Stegodons\\Beige Stegodon",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Scalehides\\Stegodons\\Beige Stegodon",{
 model={2742},
 description="This guide will walk you through obtaining a Beige Stegodon pet.",
 },[[
@@ -813,7 +813,7 @@ Search for a _Raging Thunder Lizard_
 |tip The Raging Thunder Lizard is a level 31-32 mob.
 Use your _Tame Beast_ ability on a _Raging Thunder Lizard_ |cast Tame Beast##1515 |goto Desolace/0 50.06,30.85
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Scalehides\\Stegodons\\Black Stegodon",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Scalehides\\Stegodons\\Black Stegodon",{
 model={10933},
 description="This guide will walk you through obtaining a Black Stegodon pet.",
 },[[
@@ -823,7 +823,7 @@ Search for a _Margol the Rager_
 |tip Margol patrols from the cave to the surrounding hills.
 Use your _Tame Beast_ ability on a _Margol the Rager_ |cast Tame Beast##1515 |goto Searing Gorge/0 73.28,76.22
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Scalehides\\Stegodons\\Blue Stegodon",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Scalehides\\Stegodons\\Blue Stegodon",{
 model={1540},
 description="This guide will walk you through obtaining a Blue Stegodon pet.",
 },[[
@@ -832,7 +832,7 @@ Search for a _Rejuvenated Thunder Lizard_
 |tip The Rejuvenated Thunder Lizard is a level 32 mob.
 Use your _Tame Beast_ ability on a _Rejuvenated Thunder Lizard_ |cast Tame Beast##1515 |goto Desolace/0 54.48,39.73
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Scalehides\\Stegodons\\Dark Green Stegodon",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Scalehides\\Stegodons\\Dark Green Stegodon",{
 model={1532},
 description="This guide will walk you through obtaining a Dark Green Stegodon pet.",
 },[[
@@ -841,7 +841,7 @@ Search for a _Thunderhead_
 |tip The Thunderhead is a level 32-33 mob.
 Use your _Tame Beast_ ability on a _Thunderhead_ |cast Tame Beast##1515 |goto Southern Barrens/0 48.88,59.05
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Scalehides\\Stegodons\\Light Green Stegodon",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Scalehides\\Stegodons\\Light Green Stegodon",{
 model={37778},
 description="This guide will walk you through obtaining a Light Green Stegodon pet.",
 },[[
@@ -854,7 +854,7 @@ Check the third location |goto Southern Barrens/0 50.07,81.19
 Check the fourth location |goto Southern Barrens/0 47.03,71.74
 Use your _Tame Beast_ ability on _Thunderstomp_ |cast Tame Beast##1515
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Scalehides\\Stegodons\\Red Stegodon",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Scalehides\\Stegodons\\Red Stegodon",{
 model={1537},
 description="This guide will walk you through obtaining a Red Stegodon pet.",
 },[[
@@ -863,7 +863,7 @@ Search for a _Cliff Stormer_
 |tip The Cliff Stormer is a level 29 mob.
 Use your _Tame Beast_ ability on a _Cliff Stormer_ |cast Tame Beast##1515 |goto Stonetalon Mountains/0 63.64,81.08
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Stags\\Does\\Dark Brown Doe",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Stags\\Does\\Dark Brown Doe",{
 model={70446},
 description="This guide will walk you through obtaining a Dark Brown Doe pet.",
 },[[
@@ -872,7 +872,7 @@ Search for an _Amberfall Doe_
 |tip The Amberfall Doe is a mob with a level that will scale with yours.
 Use your _Tame Beast_ ability on an _Amberfall Doe_ |cast Tame Beast##1515 |goto Stormheim/0 47.31,50.84
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Stags\\Does\\Orange Doe",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Stags\\Does\\Orange Doe",{
 model={70449},
 description="This guide will walk you through obtaining an Orange Doe pet.",
 },[[
@@ -881,7 +881,7 @@ Search for a _Runewood Doe_
 |tip The Runewood Doe is a mob with a level that will scale with yours.
 Use your _Tame Beast_ ability on a _Runewood Doe_ |cast Tame Beast##1515 |goto Stormheim/0 66.79,54.87
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Stags\\Does\\Puce Doe",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Stags\\Does\\Puce Doe",{
 model={70450},
 description="This guide will walk you through obtaining a Puce Doe pet.",
 },[[
@@ -890,7 +890,7 @@ Search for a _Ferngrazer Doe_
 |tip The Ferngrazer Doe is a mob with a level that will scale with yours.
 Use your _Tame Beast_ ability on a _Ferngrazer Doe_ |cast Tame Beast##1515 |goto Stormheim/0 47.05,40.49
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Stags\\Does\\White Doe",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Stags\\Does\\White Doe",{
 model={70576},
 description="This guide will walk you through obtaining a White Doe pet.",
 },[[
@@ -899,7 +899,7 @@ Search for a _Frenzybound Doe_
 |tip The Frenzybound Doe is a mob with a level that will scale with yours.
 Use your _Tame Beast_ ability on a _Frenzybound Doe_ |cast Tame Beast##1515 |goto Val'sharah/0 63.24,64.89
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Stags\\Greater Stags\\Dark Brown Stag",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Stags\\Greater Stags\\Dark Brown Stag",{
 model={70440},
 description="This guide will walk you through obtaining a Dark Brown Stag pet.",
 },[[
@@ -908,7 +908,7 @@ Search for an _Amberfall Greatstag_
 |tip The Amberfall Greatstag is a mob with a level that will scale with yours.
 Use your _Tame Beast_ ability on an _Amberfall Greatstag_ |cast Tame Beast##1515 |goto Stormheim/0 47.31,50.84
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Stags\\Greater Stags\\Gray Stag",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Stags\\Greater Stags\\Gray Stag",{
 model={70442},
 description="This guide will walk you through obtaining a Gray Stag pet.",
 },[[
@@ -917,7 +917,7 @@ Search for a _Ferngrazer Stag_
 |tip The Ferngrazer Stag is a mob with a level that will scale with yours.
 Use your _Tame Beast_ ability on a _Ferngrazer Stag_ |cast Tame Beast##1515 |goto Stormheim/0 47.05,40.49
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Stags\\Greater Stags\\Orange Stag",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Stags\\Greater Stags\\Orange Stag",{
 model={70443},
 description="This guide will walk you through obtaining an Orange Stag pet.",
 },[[
@@ -926,7 +926,7 @@ Search for a _Runewood Greatstag_
 |tip The Runewood Greatstag is a mob with a level that will scale with yours.
 Use your _Tame Beast_ ability on a _Runewood Greatstag_ |cast Tame Beast##1515 |goto Stormheim/0 66.79,54.87
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Stags\\Greater Stags\\Puce Stag",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Stags\\Greater Stags\\Puce Stag",{
 model={70444},
 description="This guide will walk you through obtaining a Puce Stag pet.",
 },[[
@@ -935,7 +935,7 @@ Search for a _Foothills Greatstag_
 |tip The Foothills Greatstag is a mob with a level that will scale with yours.
 Use your _Tame Beast_ ability on a _Foothills Greatstag_ |cast Tame Beast##1515 |goto Stormheim/0 51.69,33.47
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Stags\\Greater Stags\\Patterned White Stag",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Stags\\Greater Stags\\Patterned White Stag",{
 model={45092},
 description="This guide will walk you through obtaining a Patterned White Stag pet.",
 },[[
@@ -944,7 +944,7 @@ Search for a _Frenzybound Stag_
 |tip The Frenzybound Stag is a mob with a level that will scale with yours.
 Use your _Tame Beast_ ability on a _Frenzybound Stag_ |cast Tame Beast##1515 |goto Val'sharah/0 63.24,64.89
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Stags\\Moose\\Beige Moose",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Stags\\Moose\\Beige Moose",{
 model={66004},
 description="This guide will walk you through obtaining a Beige Moose pet.",
 },[[
@@ -954,7 +954,7 @@ Search for a _Highland Elderhorn_
 |tip Be aware that Smash will knock you back, interrupting your cast.
 Use your _Tame Beast_ ability on a _Highland Elderhorn_ |cast Tame Beast##1515 |goto Highmountain/0 44.76,30.73
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Stags\\Moose\\Black Moose",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Stags\\Moose\\Black Moose",{
 model={64256},
 description="This guide will walk you through obtaining a Black Moose pet.",
 },[[
@@ -963,7 +963,7 @@ Search for _Morashu_
 |tip Morashu is an elite mob with a level that will scale with yours.
 Use your _Tame Beast_ ability on _Morashu_ |cast Tame Beast##1515 |goto Highmountain/0 45.74,42.48
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Stags\\Moose\\Silver Moose",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Stags\\Moose\\Silver Moose",{
 model={64893},
 description="This guide will walk you through obtaining a Silver Moose pet.",
 },[[
@@ -979,7 +979,7 @@ Search for the _Majestic Elderhorn_
 |tip Follow the path. Majestic Elderhorn will show up as a star on your minimap.
 Use your _Tame Beast_ ability on a _Majestic Elderhorn_ |cast Tame Beast##1515
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Stags\\Moose\\Tan Moose",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Stags\\Moose\\Tan Moose",{
 model={63734},
 description="This guide will walk you through obtaining a Tan Moose pet.",
 },[[
@@ -989,7 +989,7 @@ Search for a _Pinerock Elderhorn_
 |tip Be aware that Smash will knock you back, interrupting your cast.
 Use your _Tame Beast_ ability on a _Pinerock Elderhorn_ |cast Tame Beast##1515 |goto Highmountain/0 41.95,48.21
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Turtles\\Stone Turtle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Turtles\\Stone Turtle",{
 model={72656},
 description="This guide will walk you through obtaining a Stone Turtle pet.",
 },[[
@@ -999,7 +999,7 @@ Search for a _Lowland Manashell_
 |tip Search up and down the river for Manashells. They typically sleep on the riverbank.
 Use your _Tame Beast_ ability on a _Lowland Manashell_ |cast Tame Beast##1515 |goto Suramar/0 37.46,36.41
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Wolves\\Dire Worgs\\Dark Gray Worg",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Wolves\\Dire Worgs\\Dark Gray Worg",{
 model={70178},
 description="This guide will walk you through obtaining a Dark Gray Worg pet.",
 },[[
@@ -1008,7 +1008,7 @@ Search for a _Duskpelt Snarler_
 |tip The Duskpelt Snarler is a mob with a level that will scale with yours.
 Use your _Tame Beast_ ability on a _Duskpelt Snarler_ |cast Tame Beast##1515 |goto Stormheim/0 48.01,57.22
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Wolves\\Dire Worgs\\Light Gray Worg",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Wolves\\Dire Worgs\\Light Gray Worg",{
 model={71540},
 description="This guide will walk you through obtaining a Light Gray Worg pet.",
 },[[
@@ -1018,7 +1018,7 @@ Search for _Bloodstalker Alpha_
 |tip The alpha runs a short path around this area. Look for the star on your minimap.
 Use your _Tame Beast_ ability on _Bloodstalker Alpha_ |cast Tame Beast##1515 |goto Stormheim/0 37.78,40.98
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Wolves\\Dire Worgs\\Tan Worg",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Wolves\\Dire Worgs\\Tan Worg",{
 model={70179},
 description="This guide will walk you through obtaining a Tan Worg pet.",
 },[[
@@ -1027,7 +1027,7 @@ Search for a _Saberfang Worg_
 |tip The Saberfang Worg is a mob with a level that will scale with yours.
 Use your _Tame Beast_ ability on a _Saberfang Worg_ |cast Tame Beast##1515 |goto Stormheim/0 38.44,43.15
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Wolves\\Maned Wolves\\Auburn Wolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Wolves\\Maned Wolves\\Auburn Wolf",{
 model={62862},
 description="This guide will walk you through obtaining an Auburn Wolf pet.",
 },[[
@@ -1038,7 +1038,7 @@ Search for a _Jandvik Ripfang_ |only if not completedq(40907)
 Use your _Tame Beast_ ability on a _Jandvik Ripfang_ |cast Tame Beast##1515 |goto Suramar/0 68.93,49.58 |only if not completedq(40907)
 You have completed the quest _"Removing Obstacles"_. Unfortunately, you cannot tame this unique pet model |only if completedq(40907)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Wolves\\Maned Wolves\\Dark Brown Wolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Wolves\\Maned Wolves\\Dark Brown Wolf",{
 model={66640},
 description="This guide will walk you through obtaining a Dark Brown Wolf pet.",
 },[[
@@ -1047,7 +1047,7 @@ Search for a _Dusky Howler_
 |tip The Dusky Howler is a mob with a level that will scale with yours.
 Use your _Tame Beast_ ability on a _Dusky Howler_ |cast Tame Beast##1515 |goto Val'sharah/0 45.94,57.89
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Birds of Prey\\Greater Eagles\\Brown Eagle (Legion)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Birds of Prey\\Greater Eagles\\Brown Eagle (Legion)",{
 model={68157},
 description="This guide will walk you through obtaining a Brown Eagle pet.",
 },[[
@@ -1056,7 +1056,7 @@ Search for a _Galecrested Eagle_
 |tip The Galecrested Eagle is a mob with a level that will scale with yours.
 Use your _Tame Beast_ ability on a _Galecrested Eagle_ |cast Tame Beast##1515 |goto Stormheim/0 50.52,34.65
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Birds of Prey\\Greater Eagles\\Dark Brown Eagle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Birds of Prey\\Greater Eagles\\Dark Brown Eagle",{
 model={22255},
 description="This guide will walk you through obtaining a Dark Brown Eagle pet.",
 },[[
@@ -1067,7 +1067,7 @@ Search for an _Azsunian Oliveback_
 |tip You will have to shoot one down to get it into taming range.
 Use your _Tame Beast_ ability on an _Azsunian Oliveback_ |cast Tame Beast##1515 |goto Azsuna/0 50.19,32.20
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Birds of Prey\\Greater Eagles\\Light Brown Eagle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Birds of Prey\\Greater Eagles\\Light Brown Eagle",{
 model={62207},
 description="This guide will walk you through obtaining a Light Brown Eagle pet.",
 },[[
@@ -1077,7 +1077,7 @@ Search for a _Highcrag Eagle_
 |tip You may have to search around the area for one, as they will often fly around.
 Use your _Tame Beast_ ability on a _Highcrag Eagle_ |cast Tame Beast##1515 |goto Stormheim/0 37.41,46.02
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Birds of Prey\\Greater Eagles\\White Eagle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Birds of Prey\\Greater Eagles\\White Eagle",{
 model={43225},
 description="This guide will walk you through obtaining a White Eagle pet.",
 },[[
@@ -1089,7 +1089,7 @@ Search for an _Azsunian Kingfeather_
 |tip Be aware that Gust will knock you back, interrupting your cast.
 Use your _Tame Beast_ ability on a _Azsunian Kingfeather_ |cast Tame Beast##1515 |goto Azsuna/0 50.19,32.20
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Birds of Prey\\Warden Owls\\Brown Owl",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Birds of Prey\\Warden Owls\\Brown Owl",{
 model={64329},
 description="This guide will walk you through obtaining a Brown Owl pet.",
 },[[
@@ -1099,7 +1099,7 @@ Search for a _Llothien Owl_
 |tip You may have to search around the area for one, as they will often fly around.
 Use your _Tame Beast_ ability on a _Llothien Owl_ |cast Tame Beast##1515 |goto Azsuna/0 52.33,26.91
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Birds of Prey\\Warden Owls\\Dark Owl",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Birds of Prey\\Warden Owls\\Dark Owl",{
 model={66835},
 description="This guide will walk you through obtaining a Dark Owl pet.",
 },[[
@@ -1109,7 +1109,7 @@ Search for a _Cursefeather Owl_
 |tip You may have to search around the area for one, as they will often fly around.
 Use your _Tame Beast_ ability on a _Cursefeather Owl_ |cast Tame Beast##1515 |goto Azsuna/0 51.13,55.60
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Birds of Prey\\Warden Owls\\Pale Owl",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Birds of Prey\\Warden Owls\\Pale Owl",{
 model={64331},
 description="This guide will walk you through obtaining a Pale Owl pet.",
 },[[
@@ -1119,7 +1119,7 @@ Search for a _Silvered Streaker_
 |tip A Silvered Streaker will fly by this area. You will have to shoot it down to get it into taming range.
 Use your _Tame Beast_ ability on a _Silvered Streaker_ |cast Tame Beast##1515 |goto Val'sharah/0 59.36,66.99
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Birds of Prey\\Warden Owls\\Purple Owl",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Birds of Prey\\Warden Owls\\Purple Owl",{
 model={64330},
 description="This guide will walk you through obtaining a Purple Owl pet.",
 },[[
@@ -1129,7 +1129,7 @@ Search for a _Deepwoods Owl_
 |tip You may have to search around the area for one, as they will often fly around.
 Use your _Tame Beast_ ability on a _Deepwoods Owl_ |cast Tame Beast##1515 |goto Val'sharah/0 50.19,77.31
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Carrion Birds\\Ravens\\Dark-Eyed Raven",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Carrion Birds\\Ravens\\Dark-Eyed Raven",{
 model={32546},
 description="This guide will walk you through obtaining a Dark-Eyed Raven pet.",
 },[[
@@ -1138,7 +1138,7 @@ Search for a _Gluttonous Raven_
 |tip The Gluttonous Raven is a mob with a level that will scale with yours.
 Use your _Tame Beast_ ability on a _Gluttonous Raven_ |cast Tame Beast##1515 |goto Stormheim/0 60.46,51.17
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Serpents\\Mana Wyrms\\Ruby Mana Wyrm",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Serpents\\Mana Wyrms\\Ruby Mana Wyrm",{
 model={20476},
 description="This guide will walk you through obtaining a Coral-Gray Mana Wyrm pet.",
 },[[
@@ -1156,7 +1156,7 @@ Search for a _Phase Wyrm_
 |tip The Phase Wyrm is a level 71 mob.
 Use your _Tame Beast_ ability on a _Phase Wyrm_ |cast Tame Beast##1515 |goto Blade's Edge Mountains/0 50.88,16.46
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Serpents\\Mana Wyrms\\Green Mana Wyrm",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Serpents\\Mana Wyrms\\Green Mana Wyrm",{
 model={25733},
 description="This guide will walk you through obtaining a Green Mana Wyrm pet.",
 },[[
@@ -1165,7 +1165,7 @@ Search for a _Mana Serpent_
 |tip The Mana Serpent is a level 9 mob.
 Use your _Tame Beast_ ability on a _Mana Serpent_ |cast Tame Beast##1515 |goto Eversong Woods/0 67.38,51.17
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Serpents\\Mana Wyrms\\Blue-Silver Mana Wyrm",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Serpents\\Mana Wyrms\\Blue-Silver Mana Wyrm",{
 model={62385},
 description="This guide will walk you through obtaining a Blue-Silver Mana Wyrm pet.",
 },[[
@@ -1175,7 +1175,7 @@ Search for a _Mana Thirster_
 |tip The Mana Thirster is a level 54-55 mob.
 Use your _Tame Beast_ ability on a _Mana Thirster_ |cast Tame Beast##1515 |goto Winterspring/0 51.53,64.38
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Serpents\\Mana Wyrms\\Peach-Silver Mana Wyrm",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Serpents\\Mana Wyrms\\Peach-Silver Mana Wyrm",{
 model={19690},
 description="This guide will walk you through obtaining a Peach-Silver Mana Wyrm pet.",
 },[[
@@ -1184,7 +1184,7 @@ Search for a _Mana Snapper_
 |tip The Mana Snapper is a level 67-68 mob.
 Use your _Tame Beast_ ability on a _Mana Snapper_ |cast Tame Beast##1515 |goto Netherstorm/0 49.17,46.40
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Serpents\\Mana Wyrms\\Violet Mana Wyrm",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Serpents\\Mana Wyrms\\Violet Mana Wyrm",{
 model={19331},
 description="This guide will walk you through obtaining a Violet Mana Wyrm pet.",
 },[[
@@ -1217,7 +1217,7 @@ Search for a _Syphoner_
 |tip These mobs are level 70 elites.
 Use your _Tame Beast_ ability on a _Syphoner_ |cast Tame Beast##1515 |goto Karazhan/9 41.42,19.18
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Wasps\\Hook Wasps\\Nightmare Hook Wasp",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Flying Pets\\Wasps\\Hook Wasps\\Nightmare Hook Wasp",{
 model={64744},
 description="This guide will walk you through obtaining a Nightmare Hook Wasp pet.",
 },[[
@@ -1226,7 +1226,7 @@ Search for a _Dreadsting Lurker_
 |tip The Dreadsting Lurker is a mob with a level that will scale with yours.
 Use your _Tame Beast_ ability on a _Dreadsting Lurker_ |cast Tame Beast##1515 |goto Val'sharah/0 66.70,45.86
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Arachnodrones\\Copper Arachnodrone",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Arachnodrones\\Copper Arachnodrone",{
 model={73602},
 description="This guide will walk you through obtaining a Copper Arachnodrone pet.",
 },[[
@@ -1263,7 +1263,7 @@ kill Copper Arachnodrone##114992
 |tip Interrupt Maximum Repair or the drone will heal to full health.
 Use your _Tame Beast_ ability on the _Copper Arachnodrone_ |cast Tame Beast##1515 |goto 75.15,14.90
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Arachnodrones\\Gold Arachnodrone",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Arachnodrones\\Gold Arachnodrone",{
 model={73601},
 description="This guide will walk you through obtaining a Gold Arachnodrone pet.",
 },[[
@@ -1300,7 +1300,7 @@ Use the Electrified Key on the Gold Arachnodrone |use Electrified Key##142262
 |tip Interrupt Maximum Repair or the drone will heal to full health.
 Use your _Tame Beast_ ability on the _Gold Arachnodrone_ |cast Tame Beast##1515 |goto 75.09,21.30
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Arachnodrones\\Silver Arachnodrone",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Arachnodrones\\Silver Arachnodrone",{
 model={73603},
 description="This guide will walk you through obtaining a Silver Arachnodrone pet.",
 },[[
@@ -1338,7 +1338,7 @@ kill Silver Arachnodrone##114993
 |tip Interrupt Maximum Repair or the drone will heal to full health.
 Use your _Tame Beast_ ability on the _Silver Arachnodrone_ |cast Tame Beast##1515 |goto 76.56,20.28
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Electric Sheep\\Robotic Sheep",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Electric Sheep\\Robotic Sheep",{
 model={3886},
 description="This guide will walk you through obtaining a Robotic Sheep pet.",
 },[[
@@ -1354,7 +1354,7 @@ Search for a _Tekton_
 |tip You must use an ability like Freezing Trap or Binding Shot to tame Tekton, as Tekton will explode and knock you back if it reaches you.
 Use your _Tame Beast_ ability on a _Tekton_ |cast Tame Beast##1515 |goto Elwynn Forest/0 50.09,13.76
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Iron Scorpions\\Blue Iron Scorpion",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Iron Scorpions\\Blue Iron Scorpion",{
 model={70228},
 description="This guide will walk you through obtaining a Blue Iron Scorpion pet.",
 },[[
@@ -1496,7 +1496,7 @@ Use the Deactivated Blue Juggernaut to summon your pet |use Deactivated Blue Jug
 Use your _Tame Beast_ ability on _Blue Juggernaut_ |cast Tame Beast##1515
 |tip Blue Juggernaut will scale with your level.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Iron Scorpions\\Green-Gold Iron Scorpion",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Iron Scorpions\\Green-Gold Iron Scorpion",{
 model={70229},
 description="This guide will walk you through obtaining a Green-Gold Iron Scorpion pet.",
 },[[
@@ -1638,7 +1638,7 @@ Use the Deactivated Green Juggernaut to summon your pet |use Deactivated Green J
 Use your _Tame Beast_ ability on _Green Juggernaut_ |cast Tame Beast##1515
 |tip Green Juggernaut will scale with your level.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Iron Scorpions\\Red-Gray Iron Scorpion",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Iron Scorpions\\Red-Gray Iron Scorpion",{
 model={70231},
 description="This guide will walk you through obtaining a Red-Gray Iron Scorpion pet.",
 },[[
@@ -1783,7 +1783,7 @@ Use the Deactivated Grey Juggernaut to summon your pet |use Deactivated Grey Jug
 Use your _Tame Beast_ ability on _Grey Juggernaut_ |cast Tame Beast##1515
 |tip Grey Juggernaut will scale with your level.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Iron Scorpions\\Teal Iron Scorpion",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Iron Scorpions\\Teal Iron Scorpion",{
 model={70230},
 description="This guide will walk you through obtaining a Teal Iron Scorpion pet.",
 },[[
@@ -1923,7 +1923,7 @@ Use the Deactivated Teal Juggernaut to summon your pet |use Deactivated Teal Jug
 Use your _Tame Beast_ ability on _Teal Juggernaut_ |cast Tame Beast##1515
 |tip Teal Juggernaut will scale with your level.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanical Axebeaks\\Mechanical Axebeak",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanical Axebeaks\\Mechanical Axebeak",{
 model={68296},
 description="This guide will walk you through obtaining a Mechanical Axebeak pet.",
 },[[
@@ -1939,7 +1939,7 @@ Search for the _War-Iron Axebeak_
 Use your _Tame Beast_ ability on the _War-Iron Axebeak_ |cast Tame Beast##1515 |goto Tanaan Jungle/0 40.39,53.57
 |tip Inside the cave.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanical Rabbits\\Robotic Rabbit",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanical Rabbits\\Robotic Rabbit",{
 model={68291},
 description="This guide will walk you through obtaining a Robotic Rabbit pet.",
 },[[
@@ -1953,7 +1953,7 @@ Search for _Weaponized Rabbot_
 |tip The Weaponized Rabbot is a rare mob with a level that will scale with yours and a respawn timer of several hours.
 Use your _Tame Beast_ ability on a _Weaponized Rabbot_ |cast Tame Beast##1515 |goto New Tinkertown/0 66.53,25.91
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanical Squirrel\\Mechanical Squirrel",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanical Squirrel\\Mechanical Squirrel",{
 model={70105},
 description="This guide will walk you through obtaining a Mechanical Squirrel pet.",
 },[[
@@ -1988,7 +1988,7 @@ Search for _N.U.T.Z._
 |tip Activate Aspect of the Turtle before taming N.U.T.Z.
 Use your _Tame Beast_ ability on _N.U.T.Z._ |cast Tame Beast##1515 |goto Azshara/0 44.06,76.12
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanostriders\\Blue-Purple Mechanostrider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanostriders\\Blue-Purple Mechanostrider",{
 model={10662},
 description="This guide will walk you through obtaining a Blue-Purple Mechanostrider pet.",
 },[[
@@ -2065,7 +2065,7 @@ kill Sentient Mechanostrider##108106
 |tip Sentient Mechanostrider is a level 110 elite mob.
 Use your _Tame Beast_ ability on _Sentient Mechanostrider_ |cast Tame Beast##1515 |goto 79.0,86.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanostriders\\Matte-Gray Mechanostrider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanostriders\\Matte-Gray Mechanostrider",{
 model={9476},
 description="This guide will walk you through obtaining a Matte-Gray Mechanostrider pet.",
 },[[
@@ -2080,7 +2080,7 @@ Search for a _Proto-Strider_
 Use your _Tame Beast_ ability on a _Proto-Strider_ |cast Tame Beast##1515 |goto Loch Modan/0 72.84,78.29
 |tip Inside the cave.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanostriders\\Red-Blue Mechanostrider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanostriders\\Red-Blue Mechanostrider",{
 model={10664},
 description="This guide will walk you through obtaining a Red-Blue Mechanostrider pet.",
 },[[
@@ -2097,7 +2097,7 @@ Search for _Optimo_
 Use your _Tame Beast_ ability on _Optimo_ |cast Tame Beast##1515 |goto Loch Modan/0 73.91,77.90
 |tip Inside the cave.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanowolves\\Black Mechanowolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanowolves\\Black Mechanowolf",{
 model={68852},
 description="This guide will walk you through obtaining a Black Mechanowolf pet.",
 },[[
@@ -2150,7 +2150,7 @@ Search for _Treble_
 Use your _Tame Beast_ ability on _Treble_ |cast Tame Beast##1515
 Follow the path, searching for puddles of oil |goto 52.05,44.98 |c |noway |next "One"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanowolves\\Blue Mechanowolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanowolves\\Blue Mechanowolf",{
 model={71920},
 description="This guide will walk you through obtaining a Blue Mechanowolf pet.",
 },[[
@@ -2198,7 +2198,7 @@ Use your _Tame Beast_ ability on _Friender_ |cast Tame Beast##1515
 |tip Friender is an elite mob with a level that will scale with yours.
 |tip Activate Aspect of the Turtle and tame Friender.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanowolves\\Green Mechanowolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanowolves\\Green Mechanowolf",{
 model={73898},
 description="This guide will walk you through obtaining a Green Mechanowolf pet.",
 },[[
@@ -2224,7 +2224,7 @@ kill Model GU-4RD-3R##115479
 |tip GU-4RD-3R is a level 110 elite mob.
 Use your _Tame Beast_ ability on _Model GU-4RD-3R_ |cast Tame Beast##1515 |goto 77.75,17.12
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanowolves\\Red Mechanowolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanowolves\\Red Mechanowolf",{
 model={68856},
 description="This guide will walk you through obtaining a Red Mechanowolf pet.",
 },[[
@@ -2283,7 +2283,7 @@ Search for _Rush_
 Use your _Tame Beast_ ability on _Rush_ |cast Tame Beast##1515
 Follow the path, searching for puddles of oil |goto 43.46,8.76 |c |noway |next "One"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Robotic Chickens\\Robot Chicken",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Robotic Chickens\\Robot Chicken",{
 model={6909},
 description="This guide will walk you through obtaining a Robot Chicken pet.",
 },[[
@@ -2298,7 +2298,7 @@ Search for a _Haywire Battle-Chicken_
 Use your _Tame Beast_ ability on a _Haywire Battle-Chicken_ |cast Tame Beast##1515 |goto Loch Modan/0 73.91,77.90
 |tip Inside the cave.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Robotic Gorillas\\Robotic Gorilla",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Robotic Gorillas\\Robotic Gorilla",{
 model={8841},
 description="This guide will walk you through obtaining a Robotic Gorilla pet.",
 },[[

@@ -175,7 +175,7 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Felcloth",{
 },[[
 	step
 		talk Zidormi##88206
-		Tell her: "_Show me the Blasted Lands before the Invasion._" |havebuff Interface\Icons\spell_mage_altertime |goto Blasted Lands 48.2,7.3
+		Tell her: "_Show me the Blasted Lands before the Invasion._" |havebuff 609811 |goto Blasted Lands 48.2,7.3 --spell_mage_altertime
 	step
 		map Blasted Lands
 		path follow smart; loop on; ants curved
@@ -687,7 +687,7 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Zesty Clam Meat, Black Pearl, Ir
 },[[
 	step
 		talk Zidormi##88206
-		Tell her: "_Show me the Blasted Lands before the Invasion._" |havebuff Interface\Icons\spell_mage_altertime |goto Blasted Lands 48.2,7.3
+		Tell her: "_Show me the Blasted Lands before the Invasion._" |havebuff 609811 |goto Blasted Lands 48.2,7.3 --spell_mage_altertime
 	step
 		map Blasted Lands
 		path follow smart; loop on; ants curved

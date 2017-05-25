@@ -3,16 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("ProfessionsAMoP") then return end
 ZygorGuidesViewer.GuideMenuTier = "MOP"
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Cooking Dailies Guide",{},[[
-step
-#include "A_MOP_Cooking_Dailies"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Cooking 520-600 Leveling Guide",{},[[
-#include "Cooking_520-600"
-step
-Congratulations, you have reached _600 Cooking skill!_
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Alchemy 500-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Alchemy 500-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Alchemy",600},
 hidden=true,
@@ -20,7 +11,7 @@ description="This guide will walk you through leveling your Alchemy skill from 5
 },[[
 #include "Alchemy_500-600"
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Archaeology\\Archaeology 525-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Archaeology\\Leveling Guides\\Archaeology 525-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Archaeology",600},
 hidden=true,
@@ -47,7 +38,7 @@ title + Archaeology 600
 label "arc_600"
 Congratulations, you are now a Zen Master Archaeologist
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Blacksmithing 500-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Blacksmithing 500-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Blacksmithing",600},
 hidden=true,
@@ -55,10 +46,16 @@ description="This guide will walk you through leveling your Blacksmithing skill 
 },[[
 #include "Blacksmithing_500-600"
 ]])
-ZygorGuidesViewer:RegisterInclude("pandaria_blacksmith",[[
-talk Cullen Hammerbrow##64085 |goto Vale of Eternal Blossoms/3 72.6,49.5
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Daily Guides\\Pandaria Cooking Daily Guide",{},[[
+step
+#include "A_MOP_Cooking_Dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Enchanting 500-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Cooking 520-600 Leveling Guide",{},[[
+#include "Cooking_520-600"
+step
+Congratulations, you have reached _600 Cooking skill!_
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Enchanting 500-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Enchanting",600},
 hidden=true,
@@ -66,7 +63,7 @@ description="This guide will walk you through leveling your Enchanting skill fro
 },[[
 #include "Enchanting_500-600"
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Engineering 500-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Engineering 500-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Engineering",600},
 hidden=true,
@@ -74,7 +71,7 @@ description="This guide will walk you through leveling your Engineering skill fr
 },[[
 #include "Engineering_500-600"
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\First Aid\\First Aid 525-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\First Aid\\Leveling Guides\\First Aid 525-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","First Aid",600},
 hidden=true,
@@ -82,7 +79,7 @@ description="This guide will walk you through leveling your First Aid skill from
 },[[
 #include "FirstAid_525-600"
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Fishing 525-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Leveling Guides\\Fishing 525-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Fishing",600},
 hidden=true,
@@ -104,7 +101,7 @@ step
 label "fish_600"
 Congratulations, you are now a Zen Master Fisherman!
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Herbalism 525-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Herbalism 525-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Herbalism",600},
 hidden=true,
@@ -112,7 +109,7 @@ description="This guide will walk you through leveling your Herbalism skill from
 },[[
 #include "Herbalism_525-600"
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Inscription 500-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Inscription 500-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Inscription",600},
 hidden=true,
@@ -120,7 +117,7 @@ description="This guide will walk you through leveling your Inscription skill fr
 },[[
 #include "Inscription_500-600"
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Jewelcrafting 500-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 500-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Jewelcrafting",600},
 hidden=true,
@@ -128,7 +125,7 @@ description="This guide will walk you through leveling your Jewelcrafting skill 
 },[[
 #include "Jewelcrafting_500-600"
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leatherworking 500-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Leatherworking 500-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Leatherworking",600},
 hidden=true,
@@ -136,26 +133,7 @@ description="This guide will walk you through leveling your Leatherworking skill
 },[[
 #include "Leatherworking_500-600"
 ]])
-ZygorGuidesViewer:RegisterInclude("pandaria_leatherworker",[[
-talk Tanner Pang##64094 |goto Shrine of Seven Stars/3 75.3,48.1
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Tailoring 500-600 Leveling Guide",{
-author="support@zygorguides.com",
-completion={"skill","Tailoring",600},
-hidden=true,
-description="This guide will walk you through leveling your Tailoring skill from 500-600.",
-},[[
-#include "Tailoring_500-600"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Skinning 525-600 Leveling Guide",{
-author="support@zygorguides.com",
-completion={"skill","Skinning",600},
-hidden=true,
-description="This guide will walk you through leveling your Skinning skill from 525-600.",
-},[[
-#include "Skinning_525-600"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Mining 525-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Mining 525-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Mining",600},
 hidden=true,
@@ -163,7 +141,7 @@ description="This guide will walk you through leveling your Mining skill from 52
 },[[
 #include "Mining_525-600"
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Mining with Smelting 500-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Mining with Smelting 500-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Mining",600},
 hidden=true,
@@ -171,11 +149,22 @@ description="This guide will walk you through leveling your Mining skill from 50
 },[[
 #include "MiningSmelting_500-600"
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining & Herbalism\\Mining & Herbalism 525-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Skinning 525-600 Leveling Guide",{
 author="support@zygorguides.com",
-completion={"script",'ZGV:GetSkill("Mining").level>=600 and ZGV:GetSkill("Herbalism").level>=600'},
+completion={"skill","Skinning",600},
 hidden=true,
-description="This guide will walk you through leveling your Mining and Herbalism skill from 525-600.",
+description="This guide will walk you through leveling your Skinning skill from 525-600.",
 },[[
-#include "Mining_Herbalism_525-600"
+#include "Skinning_525-600"
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Tailoring 500-600 Leveling Guide",{
+author="support@zygorguides.com",
+completion={"skill","Tailoring",600},
+hidden=true,
+description="This guide will walk you through leveling your Tailoring skill from 500-600.",
+},[[
+#include "Tailoring_500-600"
+]])
+ZygorGuidesViewer:RegisterInclude("pandaria_leatherworker",[[
+talk Tanner Pang##64094 |goto Shrine of Seven Stars/3 75.3,48.1
 ]])

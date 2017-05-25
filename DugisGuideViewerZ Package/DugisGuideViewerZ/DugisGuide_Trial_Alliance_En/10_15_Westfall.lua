@@ -82,7 +82,7 @@ T It's Alive! |QID|26257| |N|(npc:233) (56.01, 31.19) in {Saldean's Farm}| |NPC|
 
 R Sentinel Tower |N|Travel to {Sentinel Tower} (56.35, 47.40)| |QID|26371|
 A The Legend of Captain Grayson |QID|26371| |N|(npc:878) (56.35, 47.40) in {Sentinel Tower}| |NPC|878|
-A Hero's Call: Redridge Mountains! |QID|26365| |N|(npc:821) (56.44, 47.45) in {Sentinel Tower}| |NPC|821|
+A Hero's Call: Redridge Mountains! |QID|26365| |N|(npc:821) (56.44, 47.45) in {Sentinel Tower}| |NPC|821| |OID|28563|
 T Hope for the People |QID|26266| |N|(npc:42575) (56.91, 47.15) in {Sentinel Tower}| |NPC|42575|
 A Feeding the Hungry and the Hopeless |QID|26271| |N|(npc:42575) (56.91, 47.15) in {Sentinel Tower}| |NPC|42575|
 A In Defense of Westfall |QID|26286| |N|(npc:234) (56.40, 47.61) in {Sentinel Tower}| |NPC|234|

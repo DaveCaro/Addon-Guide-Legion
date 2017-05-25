@@ -9,7 +9,7 @@ ZygorGuidesViewer.GuideMenuTier = "WOD"
 
 -- show poi table with names visible: /run for k,v in ipairs(ZGV.Poi.Guide.steps) do v.tostring=function(s) return s.poi_treasure end end  ;  Spoo(nil,nil,ZGV.Poi.Guide.steps)
 
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Treasures",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Treasures",{
 	hidden=true,
 	poi=true,
 	poitype="treasure",
@@ -3699,7 +3699,7 @@ step
 	|poispot Tanaan Jungle 40.80,75.50
 	|poiquest 38639
 	|poiitem 127766
-	Get the Pollen Protection buff |havebuff Interface\Icons\Spell_Nature_ProtectionformNature |only if not completedq(38639)
+	Get the Pollen Protection buff |havebuff 136074 |only if not completedq(38639) --Spell_Nature_ProtectionformNature
 	|tip Click Mysterious Fruit around the area until you receive the buff.
 	click The Perfect Blossom##241522 |quest 38639 |goto Tanaan Jungle 40.80,75.50 |future
 	|tip It's hidden under the giant tree.

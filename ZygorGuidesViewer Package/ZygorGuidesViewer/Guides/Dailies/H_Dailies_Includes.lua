@@ -35,7 +35,7 @@ ZygorGuidesViewer:RegisterInclude("H_SSO_PreQuest_with_Dailies", [[
 		only if skill("Mining")>=300
 	step
 		Click the Multiphase Spectographic Goggles to wear them. |use Multiphase Spectrographic Goggles##35233
-		Get the Multiphase Goggles buff |havebuff Interface\Icons\Spell_Magic_LesserInvisibilty |goto Nagrand 38.3,65.3
+		Get the Multiphase Goggles buff |havebuff 135992 |goto Nagrand 38.3,65.3 --Spell_Magic_LesserInvisibilty
 		|tip You have to be in the Nagrand zone to correctly get the buff.
 		|only if havequest(11880)
 	step

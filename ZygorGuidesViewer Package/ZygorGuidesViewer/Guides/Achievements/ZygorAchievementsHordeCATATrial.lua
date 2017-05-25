@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("AchievementsH") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Friend or Fowl?",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Friend or Fowl?",{
 condition_end="achieved(1254)",
 description="Slay 15 turkeys in 3 minutes.",
 },[[
@@ -14,7 +14,7 @@ _Slay_ #15# Turkeys in 3 Minutes |achieve 1254 |goto Howling Fjord 66.3,71.1
 step
 Congratulations, you have _earned_ the _Friend or Fowl?_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Going Down?",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Going Down?",{
 condition_end="achieved(964)",
 description="Fall 65 yards without dying.",
 },[[
@@ -27,7 +27,7 @@ Earn the Going Down? Achievement! |achieve 964 |goto Shattrath City 63.8,41.6
 step
 Congratulations, you have _earned_ the _Going Down?_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Higher Learning",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Higher Learning",{
 condition_end="achieved(1956)",
 description="Read the volumes of 'The Schools of Arcane Magic' found in Dalaran.",
 },[[
@@ -81,7 +81,7 @@ step
 Looks like _you still need more_ education! _Click here_ to start the guide over. |confirm |next "RestartHigherLearning" |only if not achieved(1956)
 Congratulations, you have _earned_ the _Higher Learning_ achievement! |only if achieved(1956)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\It's Happy Hour Somewhere",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\It's Happy Hour Somewhere",{
 condition_end="achieved(1833)",
 description="Drink 25 different types of beverages.",
 },[[
@@ -151,7 +151,7 @@ step "tracker"
 _Drink_ #25# different types of beverages |achieve 1833 |only if not achieved(1833)
 Congratulations, you have _earned_ the _It's Happy Hour Somewhere_ Achievement! |only if achieved(1833)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Shave and a Haircut",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Shave and a Haircut",{
 condition_end="achieved(545)",
 description="Visit a Barber Shop and get your hair cut.",
 },[[
@@ -162,7 +162,7 @@ _Change_ your hair style or hair color then click "Okay" |achieve 545 |goto Orgr
 step
 Congratulations, you have _earned_ the _Shave and a Haircut_ achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Tastes Like Chicken",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Tastes Like Chicken",{
 condition_end="achieved(1832)",
 description="Sample 50 different kinds of Azeroth's delectable dishes.",
 },[[
@@ -296,7 +296,7 @@ step "tracker"
 _Sample_ #50# different kinds of Azeroth's delectable dishes |achieve 1832 |only if not achieved(1832)
 Congratulations, you have _earned_ the _Tastes Like Chicken_ Achievement! |only if achieved(1832)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\To All The Squirrels and Pest Control",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\To All The Squirrels and Pest Control",{
 condition_end="achieved(5548)",
 achieveid={1206,2557,2556},
 description="Show the critters of Azeroth how much you /love them. Slay the pests.",
@@ -483,7 +483,7 @@ _To All The Squirrels Who Shared My Life_ Achievement!
 _To All the Squirrels Who Cared for Me_ Achievement!
 _Pest Control_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Well Read",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Well Read",{
 condition_end="achieved(1244)",
 author="support@zygorguides.com",
 description="Read books.",
@@ -633,7 +633,7 @@ click Old Hatreds - The Colonization of Kalimdor |achieve 1244/35 |goto Tanaris 
 step
 Congratulations, you have _earned_ the _Well Read_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\You'll Feel Right as Rain",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\You'll Feel Right as Rain",{
 condition_end="achieved(5779)",
 description="This guide will walk you through feeling 1000% better by eating Chocolate Cookies.",
 },[[
@@ -667,7 +667,7 @@ Eat #91# Chocolate Cookies in a row to feel 1000% better |use Chocolate Cookie##
 step
 Congratulations, you have earned the You'll Feel Right as Rain achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Eastern Kingdoms\\Explore Eastern Kingdoms",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Eastern Kingdoms\\Explore Eastern Kingdoms",{
 condition_end="achieved(42) and achieved(4868)",
 achieveid={4825,4864,4866,775,761,765,766,775,627,778,772,779,780,768,859,774,769,858,781,4995,782,773,802,841,777,770,771,868,776},
 description="Explore the regions of Eastern Kingdoms.",
@@ -1529,7 +1529,7 @@ _Explore_ Isle of Quel'Danas |achieve 868 |goto Isle of Quel'Danas 47.4,30.6
 step
 Congratulations, you have _earned_ the _Explore Eastern Kingdoms_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Exploration Achievements\\Kalimdor\\Explore Kalimdor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration Achievements\\Kalimdor\\Explore Kalimdor",{
 condition_end="achieved(43) and achieved(4868)",
 achieveid={46,4868,4863,4865,728,736,842,860,750,857,4996,844,861,845,846,847,848,850,849,851,852,853,854,855,856},
 description="Explore the regions of Kalimdor.",
@@ -2217,7 +2217,7 @@ _Explore_ Bloodmyst Isle |achieve 861
 step
 Congratulations, you have _earned_ the _Explore Kalimdor_ Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Collection Achievements\\Represent",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Collection Achievements\\Represent",{
 condition_end="achieved(5755)",
 achieveid={621,1020,1021},
 description="Equip a tabard.",

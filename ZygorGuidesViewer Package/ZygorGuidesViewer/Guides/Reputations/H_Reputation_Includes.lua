@@ -680,7 +680,7 @@ ZygorGuidesViewer:RegisterInclude("Argent Tourney_Valiant",[[
 		turnin A Champion Rises##13739 |goto 69.7,22.9 |only Scourge
 		turnin A Champion Rises##13740 |goto 69.7,22.9 |only BloodElf
 		accept The Scourgebane##13795 |goto 69.7,22.9 |only DeathKnight
-		accept Eadric the Pure##13794 |goto 69.7,22.9 |only !DeathKnight
+		accept Eadric the Pure##13794 |goto 69.7,22.9 |only if not DeathKnight
 	step
 		talk Crok Scourgebane##33762
 		turnin The Scourgebane##13795 |goto 73.8,20.1
@@ -688,7 +688,7 @@ ZygorGuidesViewer:RegisterInclude("Argent Tourney_Valiant",[[
 	step
 		talk Eadric the Pure##33759
 		turnin Eadric the Pure##13794 |goto 70.0,23.4
-		only !DeathKnight
+		only if not DeathKnight
 ]])
 
 ZygorGuidesViewer:RegisterInclude("H_Eastern_Plaguelands_Argent_Dawn",[[
@@ -954,7 +954,7 @@ ZygorGuidesViewer:RegisterInclude("H_Eastern_Plaguelands_Argent_Dawn",[[
 		accept Just a Drop in the Bucket##27454 |goto 57.6,72.6
 	step
 		Use your Death Cultist Disguise |use Death Cultist Disguise##61283
-		Wear your Death Cultist Disguise |havebuff INTERFACE\ICONS\inv_helmet_152 |q 27454 |goto 61.7,75.5
+		Wear your Death Cultist Disguise |havebuff 340019 |q 27454 |goto 61.7,75.5 --inv_helmet_152
 	step
 		click Mereldar Plague Cauldron##4331
 		Choose to throw in an entire flask
@@ -1403,11 +1403,11 @@ ZygorGuidesViewer:RegisterInclude("H_Icecrown_Argent_Crusade_Rep",[[
 	step
 		talk Highlord Tirion Fordring##28179
 		accept Once More Unto The Breach, Hero##13105 |goto 86.0,75.8 |only DeathKnight
-		accept Once More Unto The Breach, Hero##13104 |goto 86.0,75.8 |only !DeathKnight
+		accept Once More Unto The Breach, Hero##13104 |goto 86.0,75.8 |only if not DeathKnight
 	step
 		talk The Ebon Watcher##30596
 		turnin Once More Unto The Breach, Hero##13105 |goto 83.0,72.9 |only DeathKnight
-		turnin Once More Unto The Breach, Hero##13104 |goto 83.0,72.9 |only !DeathKnight
+		turnin Once More Unto The Breach, Hero##13104 |goto 83.0,72.9 |only if not DeathKnight
 		accept The Purging Of Scourgeholme##13118 |goto 83.0,72.9
 		accept The Scourgestone##13122 |goto 83.0,72.9
 	step
@@ -4066,7 +4066,7 @@ ZygorGuidesViewer:RegisterInclude("H_Skyguard_PreQ",[[
 		accept Secrets of the Talonpriests##11005 |goto 64.1,66.9
 	step
 		Use the Elixer of Shadows in your bags |use Elixer of Shadows##32446 |goto 69.7,74.7
-		You will get a buff Elixir of Shadows |havebuff Interface\Icons\Spell_Shadow_DetectInvisibility
+		You will get a buff Elixir of Shadows |havebuff 136152 --Spell_Shadow_DetectInvisibility
 	step
 		kill Talonpriest Zellek##23068 |q 11005/3 |goto 70.1,74.5
 	step
@@ -4099,7 +4099,7 @@ ZygorGuidesViewer:RegisterInclude("H_Skyguard_PreQ",[[
 		accept A Shabby Disguise##11029 |goto 64.3,66.9
 	step
 		Use the Shabby Arakkoa Disguise in your bags |use Shabby Arakkoa Disguise##32741
-		Wear the Shabby Arakkoa Disguise |havebuff Interface\Icons\INV_Misc_Birdbeck_01 |goto 66.2,77.5
+		Wear the Shabby Arakkoa Disguise |havebuff 133707 |goto 66.2,77.5 --INV_Misc_Birdbeck_01
 	step
 		talk Sahaak##23363
 		buy 1 Adversarial Bloodlines##32742 |q 11029 |goto 67.0,79.7
@@ -4124,7 +4124,7 @@ ZygorGuidesViewer:RegisterInclude("H_Skyguard_PreQ",[[
 		|confirm always
 	step
 		Use the Elixer of Shadows in your bags |use Elixer of Shadows##32446
-		You will get a buff Elixir of Shadows |havebuff Interface\Icons\Spell_Shadow_DetectInvisibility
+		You will get a buff Elixir of Shadows |havebuff 136152 --Spell_Shadow_DetectInvisibility
 	step
 		kill Time-Lost Skettis High Priest##21787+, Time-Lost Skettis Reaver##21651+, Time-Lost Skettis Worshipper##21763+
 		collect 40 Time-Lost Scroll##32620+ |goto Terokkar Forest 61.6,75.3
@@ -4219,7 +4219,7 @@ ZygorGuidesViewer:RegisterInclude("H_Skyguard_Daily",[[
 		collect 2 Elixir of Shadows##32446 |goto 64.0,66.9
 	step
 		Use the Elixer of Shadows in your bags |use Elixer of Shadows##32446
-		You will get a buff Elixir of Shadows |havebuff Interface\Icons\Spell_Shadow_DetectInvisibility
+		You will get a buff Elixir of Shadows |havebuff 136152 --Spell_Shadow_DetectInvisibility
 	step
 		kill Time-Lost Skettis High Priest##21787+
 		kill Time-Lost Skettis Reaver##21651+
@@ -7311,7 +7311,7 @@ ZygorGuidesViewer:RegisterInclude("H_Tillers",[[
 	step
 		talk Gai Lan##57385
 		Ask him, "What Weeds?"
-		Get the Weed War buff. |havebuff Interface\Icons\INV_Misc_Herb_05 |goto 38.5,51.7
+		Get the Weed War buff. |havebuff 134185 |goto 38.5,51.7 --INV_Misc_Herb_05
 		only if havequest(30321)
 	step
 		clicknpc Ugly Weed##57306
@@ -7333,7 +7333,7 @@ ZygorGuidesViewer:RegisterInclude("H_Tillers",[[
 	step
 		talk Wika-Wika##59532
 		Mook-mooks?
-		Get the Pest Problems buff |havebuff Pest Problems |goto 39.6,45.3
+		Get the Pest Problems buff |havebuff 538518 |goto 39.6,45.3 --Spell_nature_insect_swarm2
 		only if havequest(30319)
 	step
 		clicknpc Black-Nose Marmot##59530
@@ -8074,7 +8074,7 @@ ZygorGuidesViewer:RegisterInclude("H_Anglers",[[
 		only if havequest(30658)
 	step
 		click Goblin Fishing Raft
-		Ride a Goblin Fishing Raft |havebuff Rafting |goto 67.5,44.8
+		Ride a Goblin Fishing Raft |havebuff 534592 |goto 67.5,44.8 --Inv_boot_leather_raiddruid_k_0
 		only if havequest(30698)
 	step
 		Use your fishing skill in the Shipwreck Debris pools to fish up 15 Rusty Shipwreck Debris |cast Fishing##7620
@@ -8143,7 +8143,7 @@ ZygorGuidesViewer:RegisterInclude("H_Klaxxi",[[
 		Blood of Ancients |achieve 6540/3
 		Mazu's Bounty |achieve 6540/4
 		Please refer to Zygor's Leveling and Loremaster guides for assistance in completing these questlines |only if not achieved(6540) and not ZGV.guidesets['LevelingHMOP']
-		Click here to go to Zygor's Leveling and Loremaster guides for assistance in completing these questlines |confirm |next "Zygor's Horde Leveling Guides\\Pandaria 85-90\\Dread Wastes (89-90)" |only if not achieved(6540) and ZGV.guidesets['LevelingHMOP']
+		Click here to go to Zygor's Leveling and Loremaster guides for assistance in completing these questlines |confirm |next "Zygor's Leveling Guides\\Pandaria 85-90\\Dread Wastes (89-90)" |only if not achieved(6540) and ZGV.guidesets['LevelingHMOP']
 		confirm
 	step
 	label	klaxxi start
@@ -8208,7 +8208,7 @@ ZygorGuidesViewer:RegisterInclude("H_Klaxxi",[[
 		only if havequest(31237) or havequest(31231)
 	step
 		Kill creatures until you get the buff:
-		Pheremone Tracking |havebuff Interface\Icons\Ability_Rogue_BloodyEye
+		Pheremone Tracking |havebuff 132284 --Ability_Rogue_BloodyEye
 		Locate and kill Eye's of the Empress
 		|tip Start looking for red mist on the groud first.
 		kill 6 Eye of the Empress##63783+ |q 31237/1 |goto 67.9,24.3

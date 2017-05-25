@@ -439,18 +439,18 @@ C Destiny Unfulfilled |QID|44497| |N|Witness True Betrayal in Shadowmoon Valley 
 R Temple of Five Dawns |TID|44496| |N|Travel to {Temple of Five Dawns} (51.80,48.16)| |Z|1044 0|
 T Destiny Unfulfilled |QID|44496| |N|(npc:113857) in {Temple of Five Dawns} (51.80,48.16)| |Z|1044 0| |NPC|113857|
 
-R Krasus' Landing |N|Travel to Krasus' Landing} (69.40, 43.99)| |Z|1014 10|
+R Krasus' Landing |QID|46734| |N|Travel to {Krasus' Landing} (69.40, 43.99)| |Z|1014 10|
 A Armies of Legionfall |QID|46730| |N|This quest is available after you unlock World Quests by completing (qid:43341)| |Z|1014 10| |NPC|120215| |O|
 T Armies of Legionfall |QID|46730| |N|(npc:120215), in {Krasus' Landing} (69.37, 43.88)| |Z|1014 10| |NPC|120215| |O|
 A Assault on Broken Shore |QID|46734| |N|(npc:120215) in {Krasus' Landing} (69.40, 43.99)| |Z|1014 10| |NPC|120215|
 N (npc:120215) |QID|46734.1| |N|Speak to (npc:120215) in {Krasus' Landing} (69.40, 43.99)| |Z|1014 10| |NPC|120215|
-N (npc:120752) |SID|35327|1| |N|Mount the (npc:120752) in {Krasus' Landing}| |NPC|120752| |V|
-C Secure the Beach |SID|35327|2| |N|Kill the demons on the beach until you reach 100% to secure the beach (50.86, 69.96)| |Z|1149 0|
-C Defeat Lord Kalgorath |SID|35329|3| |N|Defeat (npc:116291) in {Broken Shore} (44.30, 73.90) (42.04, 72.23) (41.29, 65.12) (41.30, 65.12)| |Z|1149 0| |NPC|116291|
-C Legion portals closed |SID|35495|4| |N|Follow the waypoints and defeat the forces to close the portals in {Broken Shore}(42.95, 58.73)  (46.98, 58.29) (52.15, 52.38)(54.57, 47.99) (57.09, 52.15) (59.09, 51.61) (59.09, 51.61)| |Z|1149 0|
-K (npc:118551) |SID|35497|5| |N|Kill (npc:118551) in {Broken Shore} (55.15, 51.75)| |Z|1149 0| |NPC|118551|
-C Use Gateway |SID|35551|6| |N|Take the Demonic Gateway to the base of Mephistroth's command ship (53.41, 50.42)| |Z|1149 0|
-C Plant Arcane Bombs |SID|36178|7| |N|Plant Arcane Bombs in the command ship in each waypoints, look for the yellow dots in the minimap, you will need to use the portal after planting the first 2| |Z|1149 0|
+N (npc:120752) |SID|35327|1| |N|Mount the (npc:120752) in {Krasus' Landing}| |NPC|120752| |V| |QID|46734| 
+C Secure the Beach |SID|35327|2| |N|Kill the demons on the beach until you reach 100% to secure the beach (50.86, 69.96)| |Z|1149 0| |QID|46734| 
+C Defeat Lord Kalgorath |SID|35329|3| |N|Defeat (npc:116291) in {Broken Shore} (44.30, 73.90) (42.04, 72.23) (41.29, 65.12) (41.30, 65.12)| |Z|1149 0| |NPC|116291| |QID|46734| 
+C Legion portals closed |SID|35495|4| |N|Follow the waypoints and defeat the forces to close the portals in {Broken Shore}(42.95, 58.73)  (46.98, 58.29) (52.15, 52.38)(54.57, 47.99) (57.09, 52.15) (59.09, 51.61) (59.09, 51.61)| |Z|1149 0| |QID|46734| 
+K (npc:118551) |SID|35497|5| |N|Kill (npc:118551) in {Broken Shore} (55.15, 51.75)| |Z|1149 0| |NPC|118551| |QID|46734| 
+C Use Gateway |SID|35551|6| |N|Take the Demonic Gateway to the base of Mephistroth's command ship (53.41, 50.42)| |Z|1149 0| |QID|46734| 
+C Plant Arcane Bombs |SID|36178|7| |N|Plant Arcane Bombs in the command ship in each waypoints, look for the yellow dots in the minimap, you will need to use the portal after planting the first 2| |Z|1149 0| |QID|46734| 
 C Defeat Mephistroth |SID|36179|8| |N|Kill (npc:120746) in {Broken Shore} (50.03, 45.38)| |Z|1149 0| |NPC|120746| |QID|46734.2|
 
 T Assault on Broken Shore |QID|46734| |N|(npc:116302) in {Deliverance Point} (44.71, 63.29)| |Z|1021 0| |NPC|116302|
@@ -466,6 +466,209 @@ R Vengeance Point |QID|46845| |N|Travel to {Vengeance Point} (50.63, 20.77)| |Z|
 N Scout Dreadstalker Point |QID|46845.1| |N|Scout Dreadstalker Point (50.66, 21.41)| |Z|1021 0|
 C Vengeance Point |QID|46845| |N|Kill 4 (npc:120969) and 5 (npc:120748) in {Vengeance Point} (50.63, 20.77)| |Z|1021 0| |NPC|120969, 120748|
 T Vengeance Point |QID|46845| |N|(npc:111323) in {Vengeance Point} (49.69, 21.03)| |Z|1021 0| |NPC|111323|
+C Vengeance Point |QID|46845| |N|Kill 4 (npc:120969) and 5 (npc:120748) in {Vengeance Point} (50.63, 20.77)| |Z|1021 0| |NPC|120969, 120748|
+T Vengeance Point |QID|46845| |N|(npc:111323) in {Vengeance Point} (49.69, 21.03)| |Z|1021 0| |NPC|111323|
+C Legionfall Supplies |QID|46286| |N|Complete World Quests or slay Rare Elites on the Broken Shore to earn 100 (cur:1342)|
+T Legionfall Supplies |QID|46286| |N|(npc:120183) in {Deliverance Point} (44.55,63.15)| |Z|1021 0| |NPC|120183|
+A Begin Construction |QID|46245| |N|(npc:120183) in {Deliverance Point} (44.54,63.15)| |Z|1021 0| |NPC|120183|
+C Begin Construction |QID|46245.1| |N|Use the table and Donate Legionfall War Supplies to the construction of the Mage Tower, Nether Disruptor, or Command Center in {Deliverance Point} (44.74, 63.13)| |Z|1021 0|
+T Begin Construction |QID|46245| |N|(npc:120183) in {Deliverance Point} (44.54,63.15)| |Z|1021 0| |NPC|120183|
+A Defending Broken Isles |QID|46247| |N|(npc:120183) in {Deliverance Point} (44.54,63.15)| |Z|1021 0| |NPC|120183|
+C Defending Broken Isles |QID|46247.1| |N|Defeat a Legion Assault in the Broken Isles, check the Broken Isle map for Legion Assault and complete the World quest for it| |Z|1021 0|
+T Defending Broken Isles |QID|46247| |N|(npc:116576) in {Deliverance Point} (44.54,63.52)| |Z|1021 0| |NPC|116576|
+A Mark of the Sentinax |QID|47139| |N|(npc:117873) in {Deliverance Point} (44.79,63.17)| |Z|1021 0| |NPC|117873|
+C Mark of the Sentinax |QID|47139|  |N|Collect 100 (item:147582) <br/><b>These are collected from Sentinax Portals.<br/><b>Sentinax Beacons summon portals which spawn mobs that you can kill for Marks.<br/><b>Setninax Beacons drop from mobs in Broken Shore.<br/><b>Open your map and look for the Sentinax icon. Use your beacons below the ship. (50.56,43.35)| |Z|1021 0| 
+T Mark of the Sentinax |QID|47139| |N|(npc:117873) in {Deliverance Point} (44.79,63.17)| |Z|1021 0| |NPC|117873|
+A Self-Fulfilling Prophecy |QID|46248| |N|(npc:120372) in {Deliverance Point} (44.57,63.39)| |Z|1021 0| |NPC|120372|
+C Self-Fulfilling Prophecy |QID|46248| |N|Complete 12 world quests on Broken Shore|
+T Self-Fulfilling Prophecy |QID|46248| |N|(npc:120372) in {Deliverance Point} (44.57,63.39)| |Z|1021 0| |NPC|120372|
+
+A Seeking Lost Knowledge |QID|47067| |N|(npc:116302) in {Deliverance Point}<br/><br/>You need at least rank 25 artifact knowledge (44.71, 63.29)| |Z|1021 0| |NPC|116302|
+N Recover Knowledge from Moonlight Ascent |QID|47067.3| |N|Click Remnant of Lost Knowledge, stand still and wait for the channeling to complete. (71.22,41.78) (75.62,36.27)| |Z|1021 0|
+N Recover Knowledge from Moonlight Ascent |QID|47067.2| |N|Click Remnant of Lost Knowledge, stand still and wait for the channeling to complete. (72.58,40.20)| |Z|1021 0|
+N Recover Knowledge from Moonlight Ascent |QID|47067.1| |N|Click Remnant of Lost Knowledge, stand still and wait for the channeling to complete. (76.45,39.81) (82.57,45.09)| |Z|1021 0|
+T Seeking Lost Knowledge |QID|47067| |N|(npc:116302) in {Deliverance Point} (44.71, 63.29)| |Z|1021 0| |NPC|116302|
+A Delivering Lost Knowledge |QID|47069| |N|(npc:116302) in {Deliverance Point} (44.71, 63.29)| |Z|1021 0| |NPC|116302|
+
+R The Wandering Isle |QID|46940| |N|Travel to {The Wandering Isle} (46.72,46.69)| |Z|1044 0| 
+T Delivering Lost Knowledge |QID|47069| |N|(npc:106942) in {The Wandering Isle} (46.72,46.69)| |Z|1044 0| |NPC|106942|
+A Using Lost Knowledge |QID|46940| |N|(npc:106942) in {The Wandering Isle} (46.72,46.69)| |Z|1044 0| |NPC|106942|
+C Using Lost Knowledge |QID|46940| |N|Speak to (npc:106942) and Start a Research Work Order (46.72,46.69)| |Z|1044 0| |NPC|106942|
+T Using Lost Knowledge |QID|46940| |N|(npc:106942) in {The Wandering Isle} (46.72,46.69)| |Z|1044 0| |NPC|106942|
+
+R Deliverance Point |QID|46744| |N|Travel to {Deliverance Point} (44.74,63.27)| |Z|1021 0| 
+A Greater Power for Greater Threats |QID|46744| |N|(npc:116302) in {Deliverance Point} (44.74,63.27)| |OID|46765| |NPC|116302| |Z|1021 0| 
+C Greater Power for Greater Threats |QID|46744| |N|Unlock all traits for one of your artifacts. You can earn artifact power by completing world quests, dungeons, and certain quests.|  |OID|46765| |Z|1021 0| 
+T Greater Power for Greater Threats |QID|46744| |N|(npc:116302) in {Deliverance Point} (44.74,63.27)| |OID|46765| |NPC|116302| |Z|1021 0| 
+A The Broken Shore: Investigating the Legion |QID|46765| |N|(npc:116302) in {Broken Shore} (44.73,63.27)| |Z|1021 0| |NPC|116302|
+C The Broken Shore: Investigating the Legion |QID|46765.1| |N|Collect (item:147430), This item has a chance to drop off of any mob in the area. (44.61,49.57)| |Z|1021 0|
+T The Broken Shore: Investigating the Legion |QID|46765| |N|(npc:116302) in {Deliverance Point} (44.73,63.27)| |Z|1021 0| |NPC|116302|
+A The Council's Call |QID|47000| |N|(npc:116302) in {Deliverance Point} (44.73,63.27)| |Z|1021 0| |NPC|116302|
+
+R Dalaran |QID|44782| |N|Travel to {Dalaran} (28.50,48.33)| |Z|1014 10| 
+T The Council's Call |QID|47000| |N|(npc:90417) in {Dalaran} (28.50,48.33)| |Z|1014 10| |NPC|90417|
+A Away From Prying Eyes |QID|44782| |N|(npc:90417) in {Dalaran} (28.50,48.33)| |Z|1014 10| |NPC|90417|
+N Enter the Purple Parlor |QID|44782.1| |N|Go through the portal at the top of the stairs. (24.73,48.04)| |Z|1014 10|
+T Away From Prying Eyes |QID|44782| |N|(npc:115465) in {Dalaran} (22.20,39.04)| |Z|1014 10| |NPC|115465|
+A In Dire Need |QID|44821| |N|(npc:115465) in {Dalaran} (22.20,39.04)| |Z|1014 10| |NPC|115465|
+N Hear the Council's Plea |QID|44821.1| |N|Wait for the dialogue to complete in {Dalaran} (22.29,39.68)| |Z|1014 10|
+T In Dire Need |QID|44821| |N|(npc:115465) in {Dalaran} (22.29,39.64)| |Z|1014 10| |NPC|115465|
+
+N Choose Spec |N|Click on the link below depending on your spec, You must have 35 artifact traits unlocked to start the questline for a specialization. <br/><br/>(choice:1:Windwalker)<br/>(choice:2:Brewmaster)<br/>(choice:3:Mistweaver)|
+
+--Windwalker
+A Windwalker: Rumblings Near Feltotem |QID|47019| |N|(npc:115466) in {Dalaran} (22.24,40.02)| |Z|1014 10| |NPC|115466| |CHOICE|1|
+
+R Highmountain |QID|45564| |N|Travel to {Highmountain} (40.87,11.50)| |Z|1024 0| |CHOICE|1|
+T Windwalker: Rumblings Near Feltotem |QID|47019| |N|(npc:117225) in {Highmountain}  (40.87,11.50) (36.60,20.17) (35.74,23.98)| |Z|1024 0| |NPC|117225| |CHOICE|1|
+A The Burning Birds |QID|45564| |N|(npc:117225) in {Highmountain} (35.74,23.98)| |Z|1024 0| |NPC|117225| |CHOICE|1|
+N (item:143778) |QID|143778 |QID|45564.1| |N|Collect 5 (item:143778) in {Highmountain} (35.74,23.98)| |Z|1024 0| |CHOICE|1|
+N (npc:117249) |QID|45564.2| |N|Meet (npc:117249) near Feltotem (31.31,25.14)| |Z|1024 0| |NPC|117249| |CHOICE|1|
+T The Burning Birds |QID|45564| |N|(npc:117249) in {Highmountain} (31.31,25.14)| |Z|1024 0| |NPC|117249| |CHOICE|1|
+A The Tainted Marsh |QID|45726| |N|(npc:117249) in {Highmountain} (31.31,25.14)| |Z|1024 0| |NPC|117249| |CHOICE|1|
+N (npc:117249) |QID|45726.1| |N|Speak to (npc:117249) to get a ride to the Marshlands (31.31,25.14)| |Z|1014 10| |NPC|117249| |V| |CHOICE|1|
+K (npc:102038) |QID|45726.2| |N|Kill (npc:102038) and use (item:143863) on their corpses (27.93,31.94)| |Z|1014 10| |NPC|102038| |U|143863| |CHOICE|1|
+T The Tainted Marsh |QID|45726| |N|(npc:117249) in {Highmountain} (27.78,27.82) (31.30,25.13)| |Z|1024 0| |NPC|117249| |CHOICE|1|
+A Village of the Corruptors |QID|45575| |N|(npc:117249) in {Highmountain} (31.30,25.13)| |Z|1024 0| |NPC|117249| |CHOICE|1|
+K (npc:117353) |QID|45575.1| |N|Kill 4 (npc:117353) inside the huts (30.09,28.49)| |Z|1024 0| |NPC|117353| |CHOICE|1|
+T Village of the Corruptors |QID|45575| |N|(npc:117292), next to you (30.06,28.37)| |Z|1024 0| |NPC|117292| |CHOICE|1|
+A The Feltotem Menace |QID|45587| |N|(npc:117292), next to you (30.06,28.37)| |Z|1024 0| |NPC|117292| |CHOICE|1|
+N Find Tugar Bloodtotem |QID|45587.1| |N|Find Tugar Bloodtotem (30.81,31.49) (32.24,32.68)| |Z|1024 0| |CHOICE|1|
+N Stop Tugar Bloodtotem |QID|45587.2| |N|Wait for the dialogue to complete. (32.38,32.81)| |Z|1024 0| |CHOICE|1|
+T The Feltotem Menace |QID|45587| |N|(npc:117361) in {Highmountain} (31.30,25.14)| |Z|1024 0| |NPC|117361| |CHOICE|1|
+A Destroying the Nest |QID|45796| |N|(npc:117361) in {Highmountain} (31.30,25.14)| |Z|1024 0| |NPC|117361| |CHOICE|1|
+
+R Enter the cave |QID|45796| |N|Go inside the cave in {Highmountain} (33.60,28.08)| |Z|1024 0| |REACH| |CHOICE|1|
+N Enter Feltotem Caverns |QID|45796.1| |N|Enter Feltotem Caverns  in {Highmountain} (49.44,12.85)| |Z|1024 40| |CHOICE|1|
+K (npc:118040) |QID|45796.3| |N|Destroy 50 (npc:118040)  (57.44,52.61)| |Z|1024 40| |NPC|118040| |CHOICE|1|
+K (npc:117984) |QID|45796.4| |N|Kill (npc:117984), and any 15 Legion forces in {Highmountain} (73.74,59.89)| |Z|1024 40| |NPC|117984, 118051, 119495, 118050| |CHOICE|1|
+
+R Leave the cave |QID|45841| |N|Leave the cave to {Highmountain} (33.60,28.07)| |Z|1024 0| |REACH| |CHOICE|1|
+T Destroying the Nest |QID|45796| |N|(npc:117361) in {Highmountain}  (33.60,28.07) (31.31,25.14)| |Z|1024 0| |NPC|117361| |CHOICE|1|
+A A Triumphant Report |QID|45841| |N|(npc:117361) in {Highmountain}  (31.31,25.14)| |Z|1024 0| |NPC|117361| |CHOICE|1|
+
+R Dalaran |QID|45842| |N|Travel to {Dalaran} (28.45,48.90)| |Z|1014 10| |CHOICE|1|
+T A Triumphant Report |QID|45841| |N|(npc:90418) in {Dalaran} (28.45,48.90)| |Z|1014 10| |NPC|90418| |CHOICE|1|
+A A Gift From the Six |QID|45842| |N|(npc:90418) in {Dalaran} (28.45,48.90)| |Z|1014 10| |NPC|90418| |CHOICE|1|
+C A Gift From the Six |QID|45842.1| |N|Stand in the circle and use the special action button that appears on-screen. (30.42,48.93)| |Z|1014 10| |CHOICE|1|
+T A Gift From the Six |QID|45842| |N|(npc:90418) in {Dalaran} (28.45,48.90)| |Z|1014 10| |NPC|90418| |CHOICE|1|
+
+--Brewmaster
+A Brewmaster: Aid of the Illidari |QID|47024| |N|(npc:90431) in {Dalaran} (28.44,49.46)| |Z|1014 10| |CHOICE|2| |NPC|90431| 
+N (npc:116880) |QID|47024| |N|Find (npc:116880) in {Dalaran} (49.13,26.03)| |Z|1014 10| |CHOICE|2| |NPC|116880|
+T Brewmaster: Aid of the Illidari |QID|47024| |N|(npc:116880) in {Dalaran} (52.03,19.58)| |Z|1014 10| |CHOICE|2| |NPC|116880|
+A Gathering Information |QID|45413| |N|(npc:116880) in {Dalaran} (52.03,19.58)| |Z|1014 10| |CHOICE|2| |NPC|116880|
+
+N Investigate the bank employees |QID|45413.1| |N|Speak to the bank employees (npc:96817),  (npc:96818) and (npc:96819) (53.17,15.26)| |Z|1014 10| |CHOICE|2| |NPC|96817, 96818, 96819|
+N Identify the stolen item |QID|45413.2| |N|Speak to (npc:113812) to Identify the stolen item (53.78,20.29)| |Z|1014 10| |CHOICE|2| |NPC|113812|
+T Gathering Information |QID|45413| |N|(npc:116880) in {Dalaran} (52.04,19.63)| |Z|1014 10| |CHOICE|2| |NPC|116880|
+A Confirming Suspicions |QID|45414| |N|(npc:116880) in {Dalaran} (52.04,19.63)| |Z|1014 10| |CHOICE|2| |NPC|116880|
+N Search First to Your Aid |QID|45414.1| |N|Enter the building and ait near Olisarra the Kind until the dialogue completes (37.45,36.54) (36.03,37.51)| |Z|1014 10| |CHOICE|2|
+N Search Krasus' Landing |QID|45414.2| |N|Search Krasus' Landing  (74.83,45.52)| |Z|1014 10| |CHOICE|2|
+N (npc:117042) |QID|45414.3| |N|Speak to (npc:117042) in {Dalaran} (74.83,45.52)| |Z|1014 10| |CHOICE|2| |NPC|117042|
+N Witness Velen's vision |QID|45414.4| |N|Speak to (npc:117042) in {Dalaran} (74.83,45.52)| |Z|1014 10| |CHOICE|2| |NPC|117042|
+
+T Confirming Suspicions |QID|45414| |N|(npc:117042) in {Dalaran} (74.83,45.52)| |Z|1014 10| |CHOICE|2| |NPC|117042|
+A Between Worlds |QID|45415| |N|(npc:117042) in {Dalaran} (74.83,45.52)| |Z|1014 10| |CHOICE|2| |NPC|117042|
+
+R Hellfire Peninsula |QID|45415.1| |N|Take the portal to Hellfire Peninsula (75.10,46.18)| |Z|1014 10| |CHOICE|2|
+N (npc:116880) |QID|45415.2| |N|Speak to (npc:116880) at the {Stair of Destiny} (85.30,50.11)| |Z|465 0| |CHOICE|2| |NPC|116880|
+N Open the portal |QID|45415.3| |N|Kill Doomheralds first and defeat the waves of enemies to open the portal (85.30,50.11)| |Z|465 0| |CHOICE|2|
+T Between Worlds |QID|45415| |N|(npc:116880) at the {Stair of Destiny} (85.30,50.11)| |Z|465 0| |CHOICE|2| |NPC|116880|
+A Dark Omens |QID|45843| |N|(npc:116880) at the {Stair of Destiny} (85.30,50.11)| |Z|465 0| |CHOICE|2| |NPC|116880|
+
+R Dalaran |QID|45863| |N|Travel to {Dalaran} (28.43,48.91)| |Z|1014 10|  |CHOICE|2|
+T Dark Omens |QID|45843| |N|(npc:90418) in {Dalaran} (28.43,48.91)| |Z|1014 10| |CHOICE|2| |NPC|90418|
+A A Gift From the Six |QID|45863| |N|(npc:90418) in {Dalaran} (28.43,48.91)| |Z|1014 10| |CHOICE|2| |NPC|90418|
+C Receive the Council's gift |QID|45863.1| |N|Stand in the circle and use the special action button that appears on-screen (30.43,48.95)| |Z|1014 10| |CHOICE|2|
+T A Gift From the Six |QID|45863| |N|(npc:90418) in {Dalaran} (28.44,48.91)| |Z|1014 10| |CHOICE|2| |NPC|90418|
+
+--Mistweaver
+A Mistweaver: The Bradensbrook Investigation |QID|47005| |N|(npc:90418) in {Dalaran} (28.43,48.88)| |Z|1014 10| |CHOICE|3| |NPC|90418|
+
+R Val'sharah |QID|46079| |N|Travel to {Val'sharah} (42.24,58.97)| |Z|1018 0| |CHOICE|3|
+T Restoration: The Bradensbrook Investigation |QID|47005| |N|(npc:118752) in {Val'sharah} (42.24,58.97)| |Z|1018 0| |NPC|118752| |CHOICE|3|
+A Aid on the Front Lines |QID|46079| |N|(npc:118752) in {Val'sharah} (42.24,58.97)| |Z|1018 0| |NPC|118752| |CHOICE|3|
+C Aid on the Front Lines |QID|46079| |N|Heal (npc:118809) scattered around the field {Val'sharah} (42.29,61.28)| |Z|1018 0| |NPC|118809| |CHOICE|3|
+T Aid on the Front Lines |QID|46079| |N|(npc:118752) in {Val'sharah} (42.28,58.96)| |Z|1018 0| |NPC|118752| |CHOICE|3|
+A Shadowsong's Return |QID|46082| |N|(npc:118752) in {Val'sharah} (42.28,58.96)| |Z|1018 0| |NPC|118752| |CHOICE|3|
+T Shadowsong's Return |QID|46082| |N|(npc:118947) in {Val'sharah} (39.11,58.14)| |Z|1018 0| |NPC|118947| |CHOICE|3|
+A Cutting off the Heads |QID|46106| |N|(npc:118947) in {Val'sharah} (39.11,58.14)| |Z|1018 0| |NPC|118947| |CHOICE|3|
+A Quieting the Spirits |QID|46080| |N|(npc:118947) in {Val'sharah} (39.11,58.14)| |Z|1018 0| |NPC|118947| |CHOICE|3|
+K (npc:118950) |QID|46106.2| |N|Kill (npc:118950) in {Val'sharah} (37.09,58.46)| |Z|1018 0| |NPC|118950| |CHOICE|3|
+K (npc:118951) |QID|46106.3| |N|Kill (npc:118951) in {Val'sharah} (39.22,62.13)| |Z|1018 0| |NPC|118951| |CHOICE|3|
+K (npc:118949) |QID|46106.1| |N|Kill (npc:118949) in {Val'sharah} (36.80,61.33)| |Z|1018 0| |NPC|118949| |CHOICE|3|
+C Quieting the Spirits |QID|46080| |N|Kill any 12 Risen Attackers in {Val'sharah}| |Z|1018 0| |POI| |NPC|118759, 118758, 118754, 118757, 118756| |CHOICE|3|
+T Cutting off the Heads |QID|46106| |N|(npc:118954), next to you| |NPC|118954| |CHOICE|3|
+T Quieting the Spirits |QID|46080| |N|(npc:118954), next to you| |NPC|118954| |CHOICE|3|
+A Source of the Corruption |QID|46107| |N|(npc:118954), next to you| |NPC|118954| |CHOICE|3|
+N Go to Heroes' Rest |QID|46107.1| |N|Follow the path up and Go to Heroes' Rest  (38.63,57.60) (37.83,55.32)| |Z|1018 0| |CHOICE|3|
+N (npc:120156) |QID|46107.2| |N|Release 3 (npc:120156), once clicked these will either be Freed and disappear or get angry and attack you.  (38.42,53.02)| |Z|1018 0| |NPC|120156| |CHOICE|3|
+K (npc:118980) |QID|46107.3| |N|Kill (npc:118980) in {Val'shara} (38.92,51.34)| |Z|1018 0| |NPC|118980| |CHOICE|3|
+T Source of the Corruption |QID|46107| |N|(npc:118954), next to you| |NPC|118954| |CHOICE|3|
+A The Matter Resolved... For Now... |QID|46200| |N|(npc:118954), next to you| |NPC|118954| |CHOICE|3|
+
+R Dalaran |QID|45864| |N|Travel to {Dalaran}  (37.63,50.13)| |Z|1014 10| |CHOICE|3|
+T The Matter Resolved... For Now... |QID|46200| |N|(npc:90418) in {Dalaran} (28.61,48.90)| |Z|1014 10| |NPC|90418| |CHOICE|3|
+A A Gift From the Six |QID|45864| |N|(npc:90418) in {Dalaran} (28.61,48.90)| |Z|1014 10| |NPC|90418| |CHOICE|3|
+C A Gift From the Six |QID|45864| |N|Stand in the circle and use the special action button that appears on-screen (30.43,48.95)| |Z|1014 10| |CHOICE|3|
+T A Gift From the Six |QID|45864| |N|(npc:90418) in {Dalaran} (28.61,48.90)| |Z|1014 10| |NPC|90418| |CHOICE|3|
+
+--Patch 7.2
+A Champions of Legionfall |QID|47137| |N|(npc:116576) in (Broken Shore} (44.54,63.52)| |Z|1021 0| |NPC|116576|
+
+R The Wandering Isle |N|Travel to {The Wandering Isle} (51.54,48.43)| |Z|1044 0|
+A A Brewing Situation |QID|45440| |N|(npc:116929) in {The Wandering Isle} (51.54,48.43)| |Z|1044 0| |NPC|116929|
+N Deliver Brew to the temple balcony |QID|45440.1| |N|Click Barrel of Celebreation Brew (50.97,55.74)| |Z|1044 0|
+N Deliver Brew to the Laughing Crane |QID|45440.2| |N|Click Barrel of Celebreation Brew (50.77,59.19)| |Z|1044 0|
+N Deliver Brew to the troop training grounds |QID|45440.3| |N|Click Barrel of Celebreation Brew (54.02,58.37)| |Z|1044 0|
+T A Brewing Situation |QID|45440| |N|(npc:100438) in {The Wandering Isle} (51.41,48.40)| |Z|1044 0| |NPC|100438|
+A Panic at the Brewery |QID|45404| |N|(npc:119664) in {The Wandering Isle} (51.32,48.45)| |Z|1044 0| |NPC|119664|
+N (npc:101880) |QID|45404.1| |N|Speak with (npc:101880) to secure a ride to Stormstout Brewery (47.17,47.74)| |Z|1044 0| |NPC|101880| |V|
+N Open the door |SID|34917|1| |QID|45404| |N|Click Brewery Door, it will be on the right as you enter the scenario|
+N Collect Barrels of Storm Brew |SID|34924|2| |QID|45404| |N|Collect 8 Barrels of Storm Brew|
+N Detox Diseased Breweres |SID|34923|2| |QID|45404| |N|Use (spell:218164) on 8 Diseased Breweres, These can be found on multiple levels of the Stormstout Brewery.|
+N Open the front door |SID|34931|3| |QID|45404| |N|Head downstairs, towards the North Western end of the room and click Brewery Door|
+N Drink the Storm Brew |SID|34932|4| |QID|45404| |N|This step should comlete automatically|
+N Close 3 Legion Portals |SID|34941|5| |QID|45404| |N|Look for the golden markers on your minimap and close 3 legion portals|
+K (npc:119735) |SID|34937|6| |QID|45404| ||N|Kill (npc:119735), Step into the small blue circle nearby|
+N (npc:121152) |QID|45404| |N|Speak to (npc:121152) to return to {The Wandering Isle}| |F|1044 0|
+
+T Panic at the Brewery |QID|45404| |N|(npc:119765) in {The Wandering Isle} (51.54,48.42)| |Z|1044 0| |NPC|119765|
+A Storming the Legion |QID|45459| |N|(npc:119765) in {The Wandering Isle} (51.54,48.42)| |Z|1044 0| |NPC|119765|
+N (npc:101880) |QID|45459.1| |N|Speak to (npc:101880) to travel to {Broken Shore} (47.16,47.76)| |Z|1044 0| |V|
+
+T Storming the Legion |QID|45459| |N|(npc:117305) in {Broken Shore}(npc:117305) in {Broken Shore} (53.62,53.42)| |Z|1021 0| |NPC|117305| |NPC|117305|
+A Fel Ingredients |QID|45574| |N|(npc:117305) in {Broken Shore} (53.62,53.42)| |Z|1021 0| |NPC|117305|
+A Alchemist Korlya |QID|45449| |N|(npc:117305) in {Broken Shore} (53.62,53.42)| |Z|1021 0| |NPC|117305|
+A Barrel Toss |QID|45545| |N|(npc:117305) in {Broken Shore} (53.62,53.42)| |Z|1021 0| |NPC|117305|
+K (npc:117277) |QID|45449.1| |N|Kill (npc:117277) in {Broken Shore} (55.37,48.90)  (59.56,42.82) (61.53,42.53)| |Z|1021 0| |NPC|117277|
+K (npc:117201) |QID|45545.1| |N|Use the (item:146308) on (npc:117201) to kill them| |Z|1021 0| |POI| |U|146308| 
+C Fel Ingredients |QID|45574.3| |N|Kill (npc:117278),  (npc:120376), (npc:119837) and collect 3 (item:146312) and 3 (item:146311) (58.21,49.12)| |Z|1021 0| |NPC|117278, 120376, 119837|
+C Fel Ingredients |QID|45574.3| |N|Kill (npc:117278),  (npc:120376), (npc:119837) and collect 3 (item:146312) and 3 (item:146311) (58.21,49.12)| |Z|1021 0| |NPC|117278, 120376, 119837|
+T Fel Ingredients |QID|45574| |N|(npc:117305) in {Broken Shore} (56.31,50.92) (53.62,53.42)| |Z|1021 0| |NPC|117305|
+T Alchemist Korlya |QID|45449| |N|(npc:117305) in {Broken Shore} (53.62,53.42)| |Z|1021 0| |NPC|117305|
+T Barrel Toss |QID|45545| |N|(npc:117305) in {Broken Shore} (53.62,53.42)| |Z|1021 0| |NPC|117305|
+A Hope For a Cure |QID|46320| |N|(npc:117305) in {Broken Shore} (53.62,53.42)| |Z|1021 0| |NPC|117305|
+
+R The Wandering Isle |QID|45442| |N|Travel to {The Wandering Isle} (51.35,53.39)| |Z|1044 0|
+T Hope For a Cure |QID|46320| |N|(npc:119765) in {The Wandering Isle} (51.35,53.39) (50.49,57.88)| |Z|1044 0| |NPC|119765|
+A Not Felling Well |QID|45442| |N|(npc:119765) in {The Wandering Isle} (50.49,57.88)| |Z|1044 0| |NPC|119765|
+N Collect the Curative Brew |QID|45442.1| |N|Click Brew Still collect the Curative Brew (50.44,57.93)| |Z|1044 0|
+N Fel-Poisoned Initiate cured |QID|45442.2| |N|Click Fel-Poisoned Initiate (53.46,58.70)| |Z|1044 0|
+T Not Felling Well |QID|45442| |N|(npc:119765) in {The Wandering Isle} (50.49,57.88)| |Z|1044 0| |NPC|119765|
+A A Time for Everything |QID|45771| |N|(npc:119765) in {The Wandering Isle} (50.49,57.88)| |Z|1044 0| |NPC|119765|
+C A Time for Everything |QID|45771.1| |N|Iron-Body Ponshu cured (51.36,53.54) (51.40,48.46)| |Z|1044 0|
+T A Time for Everything |QID|45771| |N|(npc:100438) in {The Wandering Isle} (51.40,48.42)| |Z|1044 0| |NPC|100438|
+A Champion: Almai |QID|45790| |N|(npc:117504) in {The Wandering Isle} (51.59,48.49)| |Z|1044 0| |NPC|117504| |E|
+
+R Broken Shore |TID|47137| |N|Travel to {Broken Shore} (44.55,63.53)| |Z|1021 0|
+T Champions of Legionfall |QID|47137| |N|(npc:116576) in {Broken Shore} (44.55,63.53)| |Z|1021 0| |NPC|116576|
+
+R The Wandering Isle |QID|46785| |N|Travel to {The Wandering Isle} (52.77,59.76)| |Z|1044 0| 
+A Further Advancement |QID|46785| |N|(npc:99179) in {The Wandering Isle} (52.77,59.76)| |Z|1044 0| |NPC|99179|
+N (npc:98939) |QID|46785.1| |N|Speak to (npc:98939) in {The Wandering Isle} (53.03,59.78)| |Z|1044 0| |NPC|98939|
+T Further Advancement |QID|46785| |N|(npc:99179) in {The Wandering Isle} (52.77,59.78)| |Z|1044 0| |NPC|99179|
 
 N Guide Complete
 

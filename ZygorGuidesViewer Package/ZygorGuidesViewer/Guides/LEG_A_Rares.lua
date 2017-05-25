@@ -4,7 +4,7 @@ if UnitFactionGroup("player")~="Alliance" then return end
 
 ZygorGuidesViewer.GuideMenuTier = "LEG"
 
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\POI Legion Rares",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\POI Legion Rares",{
 	hidden=true,
 	poi=true,
 	poitype=rare,
@@ -17,7 +17,7 @@ step //1
 	|poiquest 38268
 	|poicurrency OR
 	|poiitem 129063
-	Follow the path up |goto Azsuna/0 52.02,17.67 < 10
+	Follow the path up |goto Azsuna/0 52.02,17.67 < 10 |only if walking
 	kill Cailyn Paledoom##91289 |q 38268 |future |goto Azsuna 52.38,23.04
 step //2
 	|poi_rare Doomlord Kazrok
@@ -26,7 +26,7 @@ step //2
 	|poiquest 38352
 	|poicurrency OR
 	|poiitem 129056
-	Go up the path |goto Azsuna/0 46.47,27.73 < 10
+	Go up the path |goto Azsuna/0 46.47,27.73 < 10 |only if walking
 	kill Doomlord Kazrok##91579 |q 38352 |future |goto Azsuna 43.17,28.13
 step //3
 	|poi_rare Arcanist Shal'iman
@@ -35,7 +35,7 @@ step //3
 	|poiquest 42505
 	|poicurrency OR
 	|poiitem 141868
-	Follow the path |goto Azsuna 41.1,35.3
+	Follow the path |goto Azsuna 41.1,35.3 |only if walking
 	kill Arcanist Shal'iman##107657 |q 42505 |future |goto Azsuna 34.96,33.91
 step //4
 	|poi_rare Houndmaster Stroxis
@@ -52,7 +52,7 @@ step //5
 	|poiquest 42417
 	|poicurrency OR
 	|poiitem 129079
-	Go up the path |goto Azsuna/0 29.40,53.30 < 10
+	Go up the path |goto Azsuna/0 29.40,53.30 < 10 |only if walking
 	kill Bilebrain##107327 |q 42417 |future |goto Azsuna 29.27,53.66
 step //6
 	|poi_rare Vorthax
@@ -61,7 +61,7 @@ step //6
 	|poiquest 42280
 	|poicurrency OR
 	|poiitem 141875
-	Go up the ramp |goto Azsuna/0 36.57,44.05 < 10
+	Go up the ramp |goto Azsuna/0 36.57,44.05 < 10 |only if walking
 	kill Vorthax##107113 |q 42280 |future |goto Azsuna 37.37,43.18
 step //7
 	|poi_rare Beacher
@@ -171,7 +171,7 @@ step //19
 	|poiquest 37822
 	|poicurrency OR
 	|poiitem 129065
-	Go up the stairs |goto Azsuna/0 59.68,54.64 < 10
+	Go up the stairs |goto Azsuna/0 59.68,54.64 < 10 |only if walking
 	kill The Oracle##89850 |q 37822 |future |goto Azsuna 59.70,55.20
 step //20
 	|poi_rare Ravyn-Drath
@@ -202,8 +202,8 @@ step //23
 	|poiquest 37821
 	|poicurrency OR
 	|poiitem 129066
-	Go up the stairs |goto Azsuna/0 51.61,44.69 < 10
-	Cross the bridge |goto 52.80,45.32 < 5
+	Go up the stairs |goto Azsuna/0 51.61,44.69 < 10 |only if walking
+	Cross the bridge |goto 52.80,45.32 < 5 |only if walking
 	kill Captain Volo'ren##89846 |q 37821 |future |goto Azsuna 53.40,44.00
 step //24
 	|poi_rare Brawlgoth
@@ -231,7 +231,7 @@ step //26
 	|poiquest 38212
 	|poicurrency OR
 	|poiitem 129068
-	Go up the path |goto Azsuna 58.9,50.0 < 10
+	Go up the path |goto Azsuna 58.9,50.0 < 10 |only if walking
 	talk Tehd Shoemaker##91097 |goto Azsuna/0 59.30,46.42 < 5
 	kill Brogozog##91100 |q 38212 |future |goto Azsuna 59.30,46.30
 step //27
@@ -249,9 +249,9 @@ step //28
 	|poispot Azsuna 43.57,24.44
 	|poiquest 42069
 	|poiitem 129087
-	Go up the path |goto Azsuna/0 39.14,32.84 < 10
-	Continue up the mountain |goto Azsuna/0 39.11,26.88 < 10
-	Go up the stairs |goto 43.62,24.03 < 10
+	Go up the path |goto Azsuna/0 39.14,32.84 < 10 |only if walking
+	Continue up the mountain |goto Azsuna/0 39.11,26.88 < 10 |only if walking
+	Go up the stairs |goto 43.62,24.03 < 10 |only if walking
 	talk Tehd Shoemaker##91097 |goto 43.56,24.48 < 5
 	kill Felwing##105197 |q 42069 |future |goto Azsuna 43.57,24.44
 step //29
@@ -290,7 +290,7 @@ step //32
 	|poiquest 38468
 	|poicurrency OR
 	|poiitem 130154
-	talk Lorel Sagefeather##92111 |goto Val'sharah/0 59.80,77.37 < 5 |walk
+	talk Lorel Sagefeather##92111 |goto Val'sharah/0 59.80,77.37 < 5 
 	kill Gorebeak##92117 |q 38468 |future |goto Val'sharah 59.75,77.59
 	|tip You may need a group to defeat him.
 step //33
@@ -336,7 +336,7 @@ step //37
 	|poiquest 38767
 	|poicurrency OR
 	|poiitem 130166
-	Follow the road |goto Val'sharah 37.74,56.26 < 10
+	Follow the road |goto Val'sharah 37.74,56.26 < 10 |only if walking
 	Enter Black Rook Hold |goto Val'sharah/0 39.00,53.73 < 10 |walk
 	kill Darkshade##92965 |q 38767 |future |goto Val'sharah 44.14,52.09
 	|tip He walks around this area.
@@ -354,7 +354,7 @@ step //39
 	|poiquest 43446
 	|poicurrency OR
 	|poiitem 130135
-	Follow the path |goto Val'sharah 45.9,85.06 < 10
+	Follow the path |goto Val'sharah 45.9,85.06 < 10 |only if walking
 	Enter the cave |goto Val'sharah/0 45.38,88.30 < 10 |walk
 	kill Bahagar##110562 |q 43446 |future |goto Val'sharah 45.59,88.79
 step //40
@@ -374,7 +374,7 @@ step //41
 	|poiquest 39121
 	|poicurrency OR
 	|poiitem 141876
-	Go up the path |goto Val'sharah/0 35.03,59.57 < 10
+	Go up the path |goto Val'sharah/0 35.03,59.57 < 10 |only if walking
 	click Vibrating Arcane Trap
 	kill Kiranys Duskwhisper##94414 |q 39121 |future |goto Val'sharah 34.42,58.28
 step //42
@@ -399,8 +399,8 @@ step //44
 	|poiquest 39856
 	|poicurrency OR
 	|poiitem 130116
-	Follow the path |goto Val'sharah/0 65.79,41.01 < 10
-	Go up the hill |goto 67.61,37.49 < 10
+	Follow the path |goto Val'sharah/0 65.79,41.01 < 10 |only if walking
+	Go up the hill |goto 67.61,37.49 < 10 |only if walking
 	kill Wraithtalon##97504 |q 39856 |future |goto Val'sharah 66.87,36.86
 step //45
 	|poi_rare Undergrell Attack
@@ -484,7 +484,7 @@ step //53
 	|poiquest 40242
 	|poicurrency OR
 	|poiitem 131808
-	Go up the path |goto Highmountain/0 47.49,29.16 < 10
+	Go up the path |goto Highmountain/0 47.49,29.16 < 10 |only if walking
 	kill Mellok, Son of Torok##96621 |q 40242 |future |goto Highmountain 49.20,27.09
 step //54
 	|poi_rare Flamescale
@@ -510,7 +510,7 @@ step //56
 	|poiquest 39802
 	|poicurrency OR
 	|poiitem 138783
-	Follow the path up Windripper Peak |goto Highmountain/0 53.20,48.01 < 10
+	Follow the path up Windripper Peak |goto Highmountain/0 53.20,48.01 < 10 |only if walking
 	kill Hartli the Snatcher##97326 |q 39802 |future |goto Highmountain 51.07,48.25
 step //57
 	|poi_rare Amateur Hunters
@@ -547,8 +547,8 @@ step //60
 	|poiquest 39782
 	|poicurrency OR
 	|poiitem 129175
-	Follow the path |goto Highmountain 44.44,32.34 < 10
-	Continue on the path up the mountain |goto Highmountain/0 44.66,35.44 < 10
+	Follow the path |goto Highmountain 44.44,32.34 < 10 |only if walking
+	Continue on the path up the mountain |goto Highmountain/0 44.66,35.44 < 10 |only if walking
 	kill Tenpak Flametotem##97203 |q 39782 |future |goto Highmountain 41.94,41.49
 step //61
 	|poi_rare Beastmaster Pao'lek
@@ -556,8 +556,8 @@ step //61
 	|poispot Highmountain 48.60,50.00
 	|poiquest 39784
 	|poiitem 131756
-	Go up the steep mountain path |goto Highmountain/0 46.56,49.68 < 10
-	talk Beastmaster Pao'lek##97215 |goto Highmountain 48.65,50.09 < 5 |walk
+	Go up the steep mountain path |goto Highmountain/0 46.56,49.68 < 10 |only if walking
+	talk Beastmaster Pao'lek##97215 |goto Highmountain 48.65,50.09 < 5 
 	kill Arru##97220 |q 39784 |future |goto Highmountain 48.91,49.93
 step //62
 	|poi_rare Bristlemaul
@@ -600,8 +600,8 @@ step //66
 	|poispot Highmountain 56.35,72.50
 	|poiquest 39235
 	|poiitem 138396
-	Follow the path up |goto Highmountain/0 58.97,68.79 < 10
-	Continue up the mountain |goto 57.98,73.73 < 10
+	Follow the path up |goto Highmountain/0 58.97,68.79 < 10 |only if walking
+	Continue up the mountain |goto 57.98,73.73 < 10 |only if walking
 	kill Brogul the Mighty##94877 |q 39235 |future |goto Highmountain 56.35,72.50
 step //67
 	|poi_rare Bodash the Hoarder
@@ -635,7 +635,7 @@ step //70
 	|poiquest 39806
 	|poicurrency OR
 	|poiitem 131809
-	Go up the path |goto Highmountain/0 49.50,39.71 < 10
+	Go up the path |goto Highmountain/0 49.50,39.71 < 10 |only if walking
 	kill Crawshuk the Hungry##97345 |q 39806 |future |goto Highmountain 48.41,40.15
 step //71
 	|poi_rare Mynta Talonscreech
@@ -644,8 +644,8 @@ step //71
 	|poiquest 39866
 	|poicurrency OR
 	|poiitem 131792
-	Follow the path up the mountain |goto Highmountain 53.48,35.60 < 10
-	talk Scout Harefoot##97579 |goto Highmountain/0 54.54,40.63 < 5 |walk
+	Follow the path up the mountain |goto Highmountain 53.48,35.60 < 10 |only if walking
+	talk Scout Harefoot##97579 |goto Highmountain/0 54.54,40.63 < 5 
 	kill Vilewing Ambusher##97591+
 	kill Mynta Talonscreech##97593 |q 39866 |future |goto Highmountain 54.50,40.60
 step //72
@@ -676,7 +676,7 @@ step //74
 	|poiquest 39435
 	|poiitem 131793
 	|poicurrency OR
-	Follow the path |goto Highmountain 48.23,68.96 < 10
+	Follow the path |goto Highmountain 48.23,68.96 < 10 |only if walking
 	kill Oubdob Da Smasher##95204 |q 39435 |future |goto Highmountain 47.6,73.8
 	|tip This Rare is only here when the Danger: Oubdob Da Smasher world quest is active.
 --//Stormheim\\--
@@ -757,7 +757,7 @@ step //83
 	|poiquest 38425
 	|poicurrency OR
 	|poiitem 129206
-	click Grapple Point |goto Stormheim/0 45.93,82.54 < 5
+	click Grapple Point |goto Stormheim/0 45.93,82.54 < 5 |only if walking
 	Enter the cave |goto 46.29,82.87 < 10 |walk
 	kill Fathnyr##91803 |q 38425 |future |goto Stormheim 46.82,84.06
 	|tip It is inside the cave at the top of Thorim's Peak.
@@ -803,7 +803,7 @@ step //88
 	|poiquest 38333
 	|poicurrency OR
 	|poiitem 129291
-	click Grapple Point |goto Stormheim/0 41.43,65.67 < 5
+	click Grapple Point |goto Stormheim/0 41.43,65.67 < 5 |only if walking
 	kill Glimar Ironfist##91529 |q 38333 |future |goto Stormheim/0 41.55,66.56
 step //89
 	|poi_rare Stormwing Matriarch
@@ -820,8 +820,8 @@ step //90
 	|poiquest 42591
 	|poicurrency OR
 	|poiitem 138417
-	Follow the path |goto Stormheim/0 56.55,75.63 < 10
-	Continue up the path |goto Stormheim/0 57.35,79.10 < 10
+	Follow the path |goto Stormheim/0 56.55,75.63 < 10 |only if walking
+	Continue up the path |goto Stormheim/0 57.35,79.10 < 10 |only if walking
 	kill Hannval the Butcher##107926 |q 42591 |future |goto Stormheim 51.60,74.65
 step //91
 	|poi_rare Bladesquall
@@ -830,8 +830,8 @@ step //91
 	|poiquest 38431
 	|poicurrency OR
 	|poiitem 129048
-	click Grapple Point |goto Stormheim/0 46.36,74.37 < 5
-	Follow the narrow path up |goto 46.68,75.28 < 10
+	click Grapple Point |goto Stormheim/0 46.36,74.37 < 5 |only if walking
+	Follow the narrow path up |goto 46.68,75.28 < 10 |only if walking
 	kill Bladesquall##91874 |q 38431 |future |goto Stormheim 45.87,77.36
 step //92
 	|poi_rare Tarben
@@ -840,8 +840,8 @@ step //92
 	|poiquest 40081
 	|poicurrency OR
 	|poiitem 129199
-	click Grapple Point |goto Stormheim/0 60.37,43.81 < 5
-	click Grapple Point |goto 60.90,43.91 < 5
+	click Grapple Point |goto Stormheim/0 60.37,43.81 < 5 |only if walking
+	click Grapple Point |goto 60.90,43.91 < 5 |only if walking
 	kill Tarben##98268 |q 40081 |future |goto Stormheim 61.53,43.33
 step //93
 	|poi_rare Captain Brvet
@@ -972,7 +972,7 @@ step //106
 	|poiquest 43718
 	|poicurrency OR
 	|poiitem 140390
-	Follow the path |goto Suramar 40.3,26.2 < 10
+	Follow the path |goto Suramar 40.3,26.2 < 10 |only if walking
 	Enter the cave |goto Suramar/0 35.87,34.54 < 10 |walk
 	kill Matron Hagatha##111329 |q 43718 |future |goto Suramar 36.18,33.81
 step //107
@@ -1026,7 +1026,7 @@ step //112
 	|poiquest 43794
 	|poicurrency AM
 	|poiitem 139918
-	Go up the stairs |goto Suramar/0 55.78,62.39 < 10
+	Go up the stairs |goto Suramar/0 55.78,62.39 < 10 |only if walking
 	kill Ambassador D'vwinn##111649 |q 43794 |future |goto Suramar 54.80,63.76
 	|tip He is surrounded by enemies, you will probably need a group to defeat him.
 step //113
@@ -1131,7 +1131,7 @@ step //124
 	|poiquest 43369
 	|poicurrency AM
 	|poiitem 140406
-	Cross the bridge |goto Suramar/0 39.19,24.51 < 10
+	Cross the bridge |goto Suramar/0 39.19,24.51 < 10 |only if walking
 	kill Siegemaster Aedrin##110438 |q 43369 |future |goto Suramar 37.14,21.37
 step //125
 	|poi_rare Garvrulg
@@ -1178,7 +1178,7 @@ step //129
 	|poiquest 43793
 	|poiitem 121810
 	|poicurrency OR
-	Go up the stairs |goto Suramar/0 61.16,63.11 < 10
+	Go up the stairs |goto Suramar/0 61.16,63.11 < 10 |only if walking
 	kill Miasu##111653 |q 43793 |future |goto Suramar 62.50,63.69
 step //130
 	|poi_rare Arcanist Lylandre
@@ -1187,7 +1187,7 @@ step //130
 	|poiquest 43481
 	|poicurrency AM
 	|poiitem 140403
-	Go up the stairs |goto Suramar/0 64.82,58.44 < 10
+	Go up the stairs |goto Suramar/0 64.82,58.44 < 10 |only if walking
 	click Lylandre's Arcane Crystal |goto 65.49,58.87 < 5 |walk
 	click Lylandre's Fire Crystal |goto Suramar/0 65.75,59.00 < 5 |walk
 	click Lylandre's Fel Crystal |goto 65.67,59.38 < 5 |walk
@@ -1209,8 +1209,8 @@ step //132
 	|poiquest 43603
 	|poicurrency AM
 	|poiitem 140396
-	Go up the stairs |goto Suramar/0 46.72,76.99 < 10
-	Cross the bridge |goto 48.31,77.46 < 10
+	Go up the stairs |goto Suramar/0 46.72,76.99 < 10 |only if walking
+	Cross the bridge |goto 48.31,77.46 < 10 |only if walking
 	kill Randril##111007 |q 43603 |future |goto Suramar 49.60,79.00
 step //133
 	|poi_rare Rauren
@@ -1227,7 +1227,7 @@ step //134
 	|poiquest 43348
 	|poicurrency OR
 	|poiitem 140405
-	Go up the stairs |goto Suramar/0 41.54,78.75 < 10
+	Go up the stairs |goto Suramar/0 41.54,78.75 < 10 |only if walking
 	kill Magister Phaedris##109954 |q 43348 |future |goto Suramar 42.05,80.05
 step //135
 	|poi_rare Llorian

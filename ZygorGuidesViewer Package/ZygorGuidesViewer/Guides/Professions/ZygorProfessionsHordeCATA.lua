@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("ProfessionsH") then return end
 ZygorGuidesViewer.GuideMenuTier = "CAT"
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Alchemy 1-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Alchemy 1-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Alchemy",600},
 condition_suggested="hasprof('Alchemy',1,600)",
@@ -402,9 +402,9 @@ learn Mythical Healing Potion##80498 |condition skill("Alchemy")>=500
 step
 create 5 Mythical Healing Potion##80498,Alchemy,500
 step
-confirm |next "Profession Guides\\Alchemy\\Alchemy 500-600 Leveling Guide" |tip This will take you to the Alchemy 500 - 600 guides.
+confirm |next "Profession Guides\\Alchemy\\Leveling Guides\\Alchemy 500-600 Leveling Guide" |tip This will take you to the Alchemy 500 - 600 guides.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Archaeology\\Archaeology 1-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Archaeology\\Leveling Guides\\Archaeology 1-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Archaeology",600},
 condition_suggested="hasprof('Archaeology',1,600)",
@@ -503,9 +503,9 @@ Open your Archaeology profession window |cast Archaeology##78670
 Click artifacts to open them, then solve them once you have the required amounts of each
 skill Archaeology,525
 step
-Click here to proceed |confirm |next "Profession Guides\\Archaeology\\Archaeology 525-600 Leveling Guide"
+Click here to proceed |confirm |next "Profession Guides\\Archaeology\\Leveling Guides\\Archaeology 525-600 Leveling Guide"
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Blacksmithing 1-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Blacksmithing 1-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Blacksmithing",600},
 condition_suggested="hasprof('Blacksmithing',1,600)",
@@ -1031,25 +1031,33 @@ step
 #include "maincity_anvil"
 create Stormforged Helm##76288,Blacksmithing,500,3 total |condition skill("Blacksmithing")>=500
 step
-confirm |next "Profession Guides\\Blacksmithing\\Blacksmithing 500-600 Leveling Guide"
+confirm |next "Profession Guides\\Blacksmithing\\Leveling Guides\\Blacksmithing 500-600 Leveling Guide"
 |tip This will take you to the Blacksmithing 500 - 600 guides.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Cooking 1-520 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Daily Guides\\Dalaran Cooking Daily Guide",{
 author="support@zygorguides.com",
-completion={"skill","Cooking",600},
-achieveid={121,122,123,124,125,4916,6365},
-condition_suggested="hasprof('Cooking',1,600)",
-description="This guide will walk you through leveling your Cooking skill from 1 to 600.",
+description="This guide section will walk you through completing the Cooking daily quests to earn Dalaran Cooking Awards and gather Northern Spices.",
 },[[
+daily
 step
-Before you continue, open your Cooking window to detect your profession |cast Cooking##87028
-skillmax Cooking,75
-#include "Pandarian_Cooking_1-520"
-step
-confirm |next "Profession Guides\\Cooking\\Cooking 520-600 Leveling Guide"
-|tip This will take you to the 520 - 600 Cooking Guides.
+#include "H_Dalaran_Cooking_Dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Classic Cooking 1-520 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Daily Guides\\Orgrimmar Cooking Daily Guide",{
+author="support@zygorguides.com",
+description="This guide section will walk you through completing the Cooking daily quests to earn Chef's Awards.",
+},[[
+daily
+#include "H_Org_Cooking_Dailies"
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Daily Guides\\Shattrath Cooking Daily Guide",{
+author="support@zygorguides.com",
+description="This guide section will walk you through completing the Cooking daily quests to earn Shattrath Cooking Awards",
+},[[
+daily
+step
+#include "H_Shattrath_Cooking_Dailies"
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Classic Cooking 1-520 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Cooking",600},
 achieveid={121,122,123,124,125,4916,6365},
@@ -1332,33 +1340,25 @@ step
 use Recipe: Beer-Basted Crocolisk##65429
 create Beer-Basted Crocolisk##88005,Cooking,520 |condition _G.IsSpellKnown(88005) or skill("Cooking")>=520
 step
-confirm |next "Profession Guides\\Cooking\\Cooking 520-600 Leveling Guide"
+confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Cooking 520-600 Leveling Guide"
 |tip This will take you to the 500 - 600 portion of the Cooking Guides.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Cooking Dailies\\Orgrimmar Cooking Dailies",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Cooking 1-520 Leveling Guide",{
 author="support@zygorguides.com",
-description="This guide section will walk you through completing the Cooking daily quests to earn Chef's Awards.",
+completion={"skill","Cooking",600},
+achieveid={121,122,123,124,125,4916,6365},
+condition_suggested="hasprof('Cooking',1,600)",
+description="This guide will walk you through leveling your Cooking skill from 1 to 600.",
 },[[
-daily
-#include "H_Org_Cooking_Dailies"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Cooking Dailies\\Dalaran Cooking Dailies",{
-author="support@zygorguides.com",
-description="This guide section will walk you through completing the Cooking daily quests to earn Dalaran Cooking Awards and gather Northern Spices.",
-},[[
-daily
 step
-#include "H_Dalaran_Cooking_Dailies"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Cooking Dailies\\Shattrath Cooking Dailies",{
-author="support@zygorguides.com",
-description="This guide section will walk you through completing the Cooking daily quests to earn Shattrath Cooking Awards",
-},[[
-daily
+Before you continue, open your Cooking window to detect your profession |cast Cooking##87028
+skillmax Cooking,75
+#include "Pandarian_Cooking_1-520"
 step
-#include "H_Shattrath_Cooking_Dailies"
+confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Cooking 520-600 Leveling Guide"
+|tip This will take you to the 520 - 600 Cooking Guides.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Enchanting 1-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Enchanting 1-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Enchanting",600},
 condition_suggested="hasprof('Enchanting',1,600)",
@@ -1672,10 +1672,10 @@ learn Enchant Bracer - Precision##74232 |condition skill("Enchanting")>=525
 step
 create 5 Enchant Bracer - Precision##74232,Enchanting,500
 step
-Click here to proceed |next "Profession Guides\\Enchanting\\Enchanting 500-600 Leveling Guide"
+Click here to proceed |next "Profession Guides\\Enchanting\\Leveling Guides\\Enchanting 500-600 Leveling Guide"
 |tip This will take you to the Enchanting 500 - 600 guides.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Engineering 1-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Engineering 1-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Engineering",600},
 condition_suggested="hasprof('Engineering',1,600)",
@@ -2243,10 +2243,10 @@ step
 #include "maincity_anvil"
 create Elementium Dragonling##84418,Engineering,500
 step
-Click here to proceed |confirm |next "Profession Guides\\Engineering\\Engineering 500-600 Leveling Guide"
+Click here to proceed |confirm |next "Profession Guides\\Engineering\\Leveling Guides\\Engineering 500-600 Leveling Guide"
 |tip This will take you to the Engineering 500 - 600 guides.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\First Aid\\First Aid 1-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\First Aid\\Leveling Guides\\First Aid 1-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","First Aid",600},
 condition_suggested="hasprof('First Aid',1,600)",
@@ -2420,10 +2420,10 @@ learn Heavy Embersilk Bandage##74557 |condition skill("First Aid")>=525
 step
 create Heavy Embersilk Bandage##74557+,First Aid,525
 step
-Click here to proceed |confirm |next "Profession Guides\\First Aid\\First Aid 525-600 Leveling Guide"
+Click here to proceed |confirm |next "Profession Guides\\First Aid\\Leveling Guides\\First Aid 525-600 Leveling Guide"
 |tip This will take you to the First Aid 500 - 600 guides.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Fishing 1-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Leveling Guides\\Fishing 1-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Fishing",600},
 condition_suggested="hasprof('Fishing',1,600)",
@@ -2518,10 +2518,10 @@ Stand on the end of this wooden dock |goto 66.5,41.5
 Use your Fishing skill to fish in the water |cast Fishing##131474
 Get your Fishing skill to level 525 |skill Fishing,525
 step
-Click here to proceed |confirm |next "Profession Guides\\Fishing\\Fishing 525-600 Leveling Guide"
+Click here to proceed |confirm |next "Profession Guides\\Fishing\\Leveling Guides\\Fishing 525-600 Leveling Guide"
 |tip This will take you to the Fishing 500 - 600 guides.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Herbalism 1-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Herbalism 1-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Herbalism",600},
 condition_suggested="hasprof('Herbalism',1,600)",
@@ -2735,10 +2735,10 @@ path 50.8,42.5		50.8,36.0
 collect Whiptail##52988 |n
 skill Herbalism,525
 step
-Click here to proceed |confirm |next "Profession Guides\\Herbalism\\Herbalism 525-600 Leveling Guide"
+Click here to proceed |confirm |next "Profession Guides\\Herbalism\\Leveling Guides\\Herbalism 525-600 Leveling Guide"
 |tip This will take you to the Herbalism 525 - 600 guides.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Inscription 1-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Inscription 1-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Inscription",600},
 condition_suggested="hasprof('Inscription',1,600)",
@@ -2965,10 +2965,61 @@ buy 51 Light Parchment##39354 |condition itemcount(39354) >= 51 or skill("Inscri
 step
 create 17 Research: Blackfallow Ink##165466,Inscription,501
 step
-confirm |next "Profession Guides\\Inscription\\Inscription 500-600 Leveling Guide"
+confirm |next "Profession Guides\\Inscription\\Leveling Guides\\Inscription 500-600 Leveling Guide"
 |tip This will take you to the Inscription 500 - 600 guides.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Jewelcrafting 1-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Daily Guides\\Jewelcrafting Daily Guide",{
+author="support@zygorguides.com",
+description="This guide section will walk you through completing the Jewelcrafting daily quests.",
+},[[
+step
+label "start"
+talk Marith Lazuria##50482
+You will only be able to accept one of these daily quests
+accept A Present for Lila##25160 |goto Orgrimmar 72.5,34.5 |or
+accept Elemental Goo##25162 |goto Orgrimmar 72.5,34.5 |or
+accept Nibbler! No!##25158 |goto Orgrimmar 72.5,34.5 |or
+accept Ogrezonians in the Mood##25161 |goto Orgrimmar 72.5,34.5 |or
+accept The Latest Fashion!##25159 |goto Orgrimmar 72.5,34.5 |or
+step
+#include "trainer_Jewelcrafting"
+learn Timeless Nightstone##73243
+step
+Use your Jewelcrafting profession to craft Timeless Nightstone
+create Timeless Nightstone##73243,Jewelcrafting,3 total |q 25154/1
+collect 3 Timeless Nightstone |q 25154/2
+step
+kill Scalding Rock Elemental##40229+
+collect 10 Elemental Goo##52506 |q 25162/1 |goto Mount Hyjal 65.0,22.5
+step
+#include "trainer_Jewelcrafting"
+learn Solid Zephyrite##73227
+step
+Use your Jewelcrafting profession to craft
+create Solid Zephyrite##73227,Jewelcrafting,3 total |q 25105/1
+Make 3 Solid Zephyrite |q 25105/2
+step
+#include "trainer_Jewelcrafting"
+learn Jagged Jasper##73274
+step
+Use your Jewelcrafting profession to craft Jagged Jasper
+create Jagged Jasper##73274,Jewelcrafting,3 total |q 25155/1
+Make 3 Jagged Jasper |q 25155/2
+step
+Use the Stardust in your bags on 10 Humanoids around the city |use Stardust No. 2##52507
+Test the Stardust No. 2 on 10 Humanoids |q 25157/1
+|tip You can use this on NPCs and yourself.
+step
+talk Marith Lazuria##50482
+turnin A Present for Lila##25160 |goto 72.5,34.5
+turnin Elemental Goo##25162 |goto 72.5,34.5
+turnin Nibbler! No!##25158 |goto 72.5,34.5
+turnin Ogrezonians in the Mood##25161 |goto 72.5,34.5
+turnin The Latest Fashion!##25159 |goto 72.5,34.5
+earn 4 Illustrious Jewelcrafter's Token##361
+If you do not have these click this button to go to make another Fire Prism and go to the start of the Jewelcrafting Dailies to do them again |confirm |next "start" |only if skill("Jewelcrafting")<525
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 1-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Jewelcrafting",600},
 condition_suggested="hasprof('Jewelcrafting',1,600)",
@@ -3398,384 +3449,10 @@ learn Nightstone Choker##73497 |condition skill("Jewelcrafting")>=500
 step
 create Nightstone Choker##73497,Jewelcrafting,500
 step
-Click here to proceed |confirm |next "Profession Guides\\Jewelcrafting\\Jewelcrafting 500-600 Leveling Guide"
+Click here to proceed |confirm |next "Profession Guides\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 500-600 Leveling Guide"
 |tip This will take you to the Jewelcrafting 500 - 600 guides.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Jewelcrafting Dailies",{
-author="support@zygorguides.com",
-description="This guide section will walk you through completing the Jewelcrafting daily quests.",
-},[[
-step
-label "start"
-talk Marith Lazuria##50482
-You will only be able to accept one of these daily quests
-accept A Present for Lila##25160 |goto Orgrimmar 72.5,34.5 |or
-accept Elemental Goo##25162 |goto Orgrimmar 72.5,34.5 |or
-accept Nibbler! No!##25158 |goto Orgrimmar 72.5,34.5 |or
-accept Ogrezonians in the Mood##25161 |goto Orgrimmar 72.5,34.5 |or
-accept The Latest Fashion!##25159 |goto Orgrimmar 72.5,34.5 |or
-step
-#include "trainer_Jewelcrafting"
-learn Timeless Nightstone##73243
-step
-Use your Jewelcrafting profession to craft Timeless Nightstone
-create Timeless Nightstone##73243,Jewelcrafting,3 total |q 25154/1
-collect 3 Timeless Nightstone |q 25154/2
-step
-kill Scalding Rock Elemental##40229+
-collect 10 Elemental Goo##52506 |q 25162/1 |goto Mount Hyjal 65.0,22.5
-step
-#include "trainer_Jewelcrafting"
-learn Solid Zephyrite##73227
-step
-Use your Jewelcrafting profession to craft
-create Solid Zephyrite##73227,Jewelcrafting,3 total |q 25105/1
-Make 3 Solid Zephyrite |q 25105/2
-step
-#include "trainer_Jewelcrafting"
-learn Jagged Jasper##73274
-step
-Use your Jewelcrafting profession to craft Jagged Jasper
-create Jagged Jasper##73274,Jewelcrafting,3 total |q 25155/1
-Make 3 Jagged Jasper |q 25155/2
-step
-Use the Stardust in your bags on 10 Humanoids around the city |use Stardust No. 2##52507
-Test the Stardust No. 2 on 10 Humanoids |q 25157/1
-|tip You can use this on NPCs and yourself.
-step
-talk Marith Lazuria##50482
-turnin A Present for Lila##25160 |goto 72.5,34.5
-turnin Elemental Goo##25162 |goto 72.5,34.5
-turnin Nibbler! No!##25158 |goto 72.5,34.5
-turnin Ogrezonians in the Mood##25161 |goto 72.5,34.5
-turnin The Latest Fashion!##25159 |goto 72.5,34.5
-earn 4 Illustrious Jewelcrafter's Token##361
-If you do not have these click this button to go to make another Fire Prism and go to the start of the Jewelcrafting Dailies to do them again |confirm |next "start" |only if skill("Jewelcrafting")<525
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Tailoring 1-600 Leveling Guide",{
-author="support@zygorguides.com",
-completion={"skill","Tailoring",600},
-condition_suggested="hasprof('Tailoring',1,600)",
-description="This guide will walk you through leveling your Tailoring skill from 1-600.",
-},[[
-step
-#include "trainer_Tailoring"
-skillmax Tailoring,75
-|tip You must be at least level 5.
-step
-kill Venture Co. Supervisor##2979+, Enforcer Emilgund##5787+, Supervisor Fizsprocket##3051+, Venture Co. Worker##2978+
-collect 156 Linen Cloth##2589 |goto Mulgore 60.6,47.7 |condition skill("Tailoring")>=75
-|tip You can also buy these materials from the Auction House.
-step
-create Bolt of Linen Cloth##2963,Tailoring,78 total |n
-skill Tailoring,35
-step
-#include "trainer_Tailoring"
-learn Heavy Linen Gloves##3840 |condition skill("Tailoring")>=75
-step
-#include "vendor_Tailoring"
-buy 40 Coarse Thread##2320 |condition itemcount(2320) >= 40 or skill("Tailoring")>=75
-step
-create 21 Heavy Linen Gloves##3840,Tailoring,70
-step
-#include "trainer_Tailoring"
-learn Reinforced Linen Cape##2397 |condition skill("Tailoring")>=75
-step
-create 5 Reinforced Linen Cape##2397,Tailoring,75
-step
-#include "trainer_Tailoring"
-skillmax Tailoring,150
-|tip You must be level 10.
-step
-#include "trainer_Tailoring"
-learn Bolt of Woolen Cloth##2964 |condition skill("Tailoring")>=125
-step
-kill Dragonmaw Whelpstealer##42041+, Ebon Slavehunter##42043+
-collect 110 Linen Cloth##2589 |only itemcount(2996)<24 |goto Wetlands 66.67,47.11 |condition skill("Tailoring")>=125
-collect 135 Wool Cloth##2592 |goto Wetlands 66.67,47.11 |condition skill("Tailoring")>=125
-|tip You can also buy these materials from the Auction House.
-step
-create 55 Bolt of Linen Cloth##2963,Tailoring,55 total |n
-collect 55 Linen Cloth##2996 |condition skill("Tailoring")>=125
-step
-create 45 Bolt of Woolen Cloth##2964,Tailoring,45 total |n
-skill Tailoring,100
-step
-#include "trainer_Tailoring"
-learn Simple Kilt##12046 |condition skill("Tailoring")>=125
-step
-#include "vendor_Tailoring"
-buy 45 Fine Thread##2321 |condition itemcount(2321) >= 45 or skill("Tailoring")>=125
-step
-create Simple Kilt##12046,Tailoring,110
-step
-#include "trainer_Tailoring"
-learn Double-stitched Woolen Shoulders##3848 |condition skill("Tailoring")>=125
-step
-create 15 Double-stitched Woolen Shoulders##3848,Tailoring,125
-step
-#include "trainer_Tailoring"
-skillmax Tailoring,225
-|tip You must be at least level 20.
-step
-#include "trainer_Tailoring"
-learn Bolt of Silk Cloth##3839 |condition skill("Tailoring")>=200
-step
-kill Grimtotem Marauder##39949+
-collect 644 Silk Cloth##4306 |goto Feralas/0 87.3,45.0 |condition skill("Tailoring")>=200
-|tip You may potentially be flagged farming here. Avoid attacking Feralas Sentinels.
-collect 480 Mageweave Cloth##4338 |n
-|tip You can also buy these materials from the Auction House.
-Save any Mageweave you collect
-step
-kill Irontree Chopper##48452+
-collect 480 Mageweave Cloth##4338 |goto Felwood 63.4,20.7 |condition skill("Tailoring")>=200
-|tip You can also buy these materials from the Auction House.
-step
-create 161 Bolt of Silk Cloth##3839,Tailoring,161 total |n
-skill Tailoring,145
-step
-#include "trainer_Tailoring"
-learn Azure Silk Hood##8760 |condition skill("Tailoring")>=200
-step
-create Azure Silk Hood##8760,Tailoring,160
-step
-#include "trainer_Tailoring"
-learn Silk Headband##8762 |condition skill("Tailoring")>=200
-step
-create 10 Silk Headband##8762,Tailoring,170
-step
-#include "trainer_Tailoring"
-learn Formal White Shirt##3871 |condition skill("Tailoring")>=200
-step
-create 5 Formal White Shirt##3871,Tailoring,175
-step
-#include "trainer_Tailoring"
-learn Bolt of Mageweave##3865 |condition skill("Tailoring")>=200
-step
-create Bolt of Mageweave##3865,Tailoring,120 total |n
-skill Tailoring,185
-step
-#include "trainer_Tailoring"
-learn Crimson Silk Vest##8791 |condition skill("Tailoring")>=200
-step
-create 15 Crimson Silk Vest##8791,Tailoring,200
-step
-#include "trainer_Tailoring"
-skillmax Tailoring,300
-|tip You must be at least level 35.
-step
-#include "trainer_Tailoring"
-learn Crimson Silk Pantaloons##8799 |condition skill("Tailoring")>=300
-step
-create 15 Crimson Silk Pantaloons##8799,Tailoring,215
-step
-#include "trainer_Tailoring"
-learn Black Mageweave Leggings##12049 |condition skill("Tailoring")>=300
-step
-create 5 Black Mageweave Leggings##12049,Tailoring,220
-step
-#include "trainer_Tailoring"
-learn Black Mageweave Gloves##12053 |condition skill("Tailoring")>=300
-step
-create 10 Black Mageweave Gloves##12053,Tailoring,230
-step
-#include "trainer_Tailoring"
-learn Black Mageweave Headband##12072 |condition skill("Tailoring")>=300
-step
-create Black Mageweave Headband##12072,Tailoring,250
-step
-kill Twilight Keeper Havunth##11804+, Twilight Geolord##11881+, Twilight Avenger##11880+, Twilight Stonecaller##11882
-collect 800 Runecloth##14047 |goto Silithus 45.8,38.2 |condition skill("Tailoring")>=300
-|tip You can also buy these materials from the Auction House.
-You can find more Twilight enemies here [35.7,32.5]
-You can find more Twilight enemies here [29.5,73.4]
-You can find more Twilight enemies here [66.1,20.3]
-step
-#include "trainer_Tailoring"
-learn Bolt of Runecloth##18401 |condition skill("Tailoring")>=300
-step
-create Bolt of Runecloth##18401,Tailoring,200 total |n
-skill Tailoring,260
-step
-#include "vendor_Tailoring"
-buy 65 Rune Thread##14341 |condition itemcount(14341) >= 65 or skill("Tailoring")>=300
-step
-#include "trainer_Tailoring"
-learn Runecloth Belt##18402 |condition skill("Tailoring")>=300
-step
-create Runecloth Belt##18402,Tailoring,275
-step
-#include "trainer_Tailoring"
-learn Runecloth Gloves##18417 |condition skill("Tailoring")>=300
-step
-create 23 Runecloth Gloves##18417,Tailoring,295
-step
-#include "trainer_Tailoring"
-learn Runecloth Headband##18444 |condition skill("Tailoring")>=300
-step
-create 5 Runecloth Headband##18444,Tailoring,300
-step
-#include "trainer_Tailoring"
-skillmax Tailoring,375
-|tip You must be at least level 50.
-step
-#include "trainer_Tailoring"
-learn Bolt of Netherweave##26745 |condition skill("Tailoring")>=350
-step
-Kill _Sunfury enemies_ around the area
-collect 800 Netherweave Cloth##21877 |goto Netherstorm 26.3,68.1 |condition skill("Tailoring")>=350
-modelnpc Sunfury Magister##18855
-modelnpc Sunfury Astromancer##19643
-modelnpc Sunfury Captain##19453
-modelnpc Sunfury Bloodwarder##18853
-modelnpc Sunfury Geologist##19779
-modelnpc Sunfury Warp-Master##18857
-step
-talk Eiin##19213
-buy Pattern: Netherweave Tunic##21897 |goto Shattrath City 66.3,69.3 |condition _G.IsSpellKnown(26774) or itemcount(21897) >= 1 or skill("Tailoring")>=350
-step
-talk Auctioneer Lyrsara##50140 |goto Shattrath City/0 56.7,62.4 |only if rep ('The Scryers') >= Friendly
-talk Auctioneer Braku##50145 |goto Shattrath City/0 51.4,27.4 |only if rep ('The Aldor') >= Neutral
-buy 20 Knothide Leather##21887 |condition itemcount(21887) >= 20 or skill("Tailoring")>=350
-step
-create Bolt of Netherweave##26745,Tailoring,160 total |n
-skill Tailoring,325
-step
-#include "trainer_Tailoring"
-learn Netherweave Pants##26771 |condition skill("Tailoring")>=350
-step
-#include "vendor_Tailoring"
-buy 30 Rune Thread##14341 |condition itemcount(14341) >= 30 or skill("Tailoring")>=350
-step
-create 10 Netherweave Pants##26771,Tailoring,335
-step
-#include "trainer_Tailoring"
-learn Netherweave Boots##26772 |condition skill("Tailoring")>=350
-step
-create 10 Netherweave Boots##26772,Tailoring,345
-step
-use Pattern: Netherweave Tunic##21897
-learn Netherweave Tunic##26774 |condition skill("Tailoring")>=350
-step
-create 5 Netherweave Tunic##26774,Tailoring,350
-step
-#include "trainer_Tailoring"
-skillmax Tailoring,450
-|tip You must be at least level 65.
-step
-#include "trainer_Tailoring"
-learn Bolt of Frostweave##55899 |condition skill("Tailoring")>=425
-step
-talk Raenah##26969
-accept Cloth Scavenging##13270 |instant |goto Borean Tundra 41.6,53.4 |condition skill("Tailoring")>=425
-step
-kill Dark Zealot##34728+, Dark Ritualist##34734+
-collect 1875 Frostweave Cloth##33470 |n |goto Icecrown 61.8,20.8
-create Bolt of Frostweave##55899,Tailoring, 340 total |condition skill("Tailoring")>=425
-|tip You can also buy these materials from the Auction House.
-step
-create Bolt of Frostweave##55899,Tailoring,375 total |n
-skill Tailoring,375
-step
-#include "trainer_Tailoring"
-learn Frostwoven Belt##55908 |condition skill("Tailoring")>=425
-step
-#include "vendor_Tailoring"
-buy 50 Eternium Thread##38426 |condition itemcount(38426) >= 50 or skill("Tailoring")>=425
-step
-create 5 Frostwoven Belt##55908,Tailoring,380
-step
-#include "trainer_Tailoring"
-learn Frostwoven Boots##55906 |condition skill("Tailoring")>=425
-step
-create 5 Frostwoven Boots##55906,Tailoring,385
-step
-#include "trainer_Tailoring"
-learn Frostwoven Cowl##55907 |condition skill("Tailoring")>=425
-step
-create 5 Frostwoven Cowl##55907,Tailoring,395
-step
-#include "trainer_Tailoring"
-learn Duskweave Belt##55914 |condition skill("Tailoring")>=425
-step
-create 13 Duskweave Belt##55914,Tailoring,405
-step
-#include "trainer_Tailoring"
-learn Duskweave Wristwraps##55920 |condition skill("Tailoring")>=425
-step
-create 5 Duskweave Wristwraps##55920,Tailoring,410
-step
-#include "trainer_Tailoring"
-learn Duskweave Gloves##55922 |condition skill("Tailoring")>=425
-step
-create 5 Duskweave Gloves##55922,Tailoring,415
-step
-#include "trainer_Tailoring"
-learn Duskweave Boots##55924 |condition skill("Tailoring")>=425
-step
-create 13 Duskweave Boots##55924,Tailoring,425
-step
-#include "trainer_Tailoring"
-skillmax Tailoring,525
-|tip You must be at least level 75.
-step
-learn Bolt of Embersilk Cloth##74964 |condition skill("Tailoring")>=500
-step
-kill Twilight Augur##40713+, Twilight Retainer##40767+
-collect 1025 Embersilk Cloth##53010 |condition skill("Tailoring")>=500 |goto Mount Hyjal 55.8,68.0 |or
-create Bolt of Embersilk Cloth##74964,Tailoring,205 total |or
-step
-create Bolt of Embersilk Cloth##74964,Tailoring,205 total |n
-skill Tailoring,450
-step
-#include "vendor_Tailoring"
-buy 100 Eternium Thread##38426 |condition itemcount(38426) >= 100 or skill("Tailoring")>=500
-step
-#include "trainer_Tailoring"
-learn Deathsilk Bracers##75249 |condition skill("Tailoring")>=500
-step
-create 5 Deathsilk Bracers##75249,Tailoring,455
-step
-#include "trainer_Tailoring"
-learn Deathsilk Boots##75252 |condition skill("Tailoring")>=500
-step
-create 5 Deathsilk Boots##75252,Tailoring,460
-step
-#include "trainer_Tailoring"
-learn Deathsilk Leggings##75254 |condition skill("Tailoring")>=500
-step
-create 5 Deathsilk Leggings##75254,Tailoring,465
-step
-#include "trainer_Tailoring"
-learn Deathsilk Cowl##75256 |condition skill("Tailoring")>=500
-step
-create 5 Deathsilk Cowl##75256,Tailoring,470
-step
-#include "trainer_Tailoring"
-learn Spiritmend Belt##75258 |condition skill("Tailoring")>=500
-step
-create 5 Spiritmend Belt##75258,Tailoring,475
-step
-#include "trainer_Tailoring"
-learn Spiritmend Boots##75261 |condition skill("Tailoring")>=500
-step
-create 5 Spiritmend Boots##75261,Tailoring,480
-step
-#include "trainer_Tailoring"
-learn Spiritmend Leggings##75263 |condition skill("Tailoring")>=500
-step
-create 5 Spiritmend Leggings##75263,Tailoring,485
-step
-#include "trainer_Tailoring"
-learn Spiritmend Robe##75267 |condition skill("Tailoring")>=500
-step
-create 15 Spiritmend Robe##75267,Tailoring,500
-step
-Click here to proceed |next "Profession Guides\\Tailoring\\Tailoring 500-600 Leveling Guide"
-|tip This will take you to the Tailoring 500 - 600 guides.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leatherworking 1-600 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Leatherworking 1-600 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Leatherworking",600},
 condition_suggested="hasprof('Leatherworking',1,600)",
@@ -4137,557 +3814,10 @@ learn Darkbrand Helm##78424 |condition skill("Leatherworking")>=500
 step
 create Darkbrand Helm##78424,Leatherworking,500
 step
-Click here to proceed |confirm |next "Profession Guides\\Leatherworking\\Leatherworking 500-600 Leveling Guide"
+Click here to proceed |confirm |next "Profession Guides\\Leatherworking\\Leveling Guides\\Leatherworking 500-600 Leveling Guide"
 |tip This will take you to the Leatherworking 500 - 600 guides.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Skinning 1-600 Leveling Guide",{
-author="support@zygorguides.com",
-completion={"skill","Skinning",600},
-condition_suggested="hasprof('Skinning',1,600)",
-description="This guide will walk you through leveling your Skinning skill from 1-600.",
-},[[
-step
-#include "trainer_Skinning"
-skillmax Skinning,75
-step
-#include "vendor_Leatherworking"
-buy 1 Skinning Knife##7005 |condition itemcount(7005) >= 1 or skill("Skinning")>=60
-step
-#include "home_ValleyofHonor"
-step
-map Durotar
-path follow loose;loop;ants straight;dist 60
-path	56.2,31.4	58.1,23.9	56.3,15.5
-path	52.8,10.7	51.3,14.0	48.9,16.0
-path	49.7,17.9		53.8,18.6
-Kill any beasts you see and skin them
-skill Skinning,60
-step
-#include trainer_Skinning
-skillmax Skinning,150
-step
-map Northern Barrens
-path follow loose;loop;ants straight;dist 60
-path	65.2,57.4	67.8,63.9	63.9,67.0
-path	61.1,71.2	62.3,77.1	58.9,75.7
-path	55.7,71.1	57.9,65.2	62.2,63.1
-path	64.0,58.1
-Kill any beasts you see and skin them
-skill Skinning,120
-step
-map Ashenvale
-path follow loose;loop;ants straight;dist 60
-path	69.1,69.8	69.3,66.4	67.8,62.1
-path	64.8,64.0	63.2,68.2	66.1,70.6
-Kill any beasts you see and skin them
-skill Skinning,150
-step
-#include trainer_Skinning
-skillmax Skinning,225
-step
-map Southern Barrens
-path follow loose;loop;ants straight;dist 60
-path	42.5,50.1	43.6,49.5	45.5,48.8
-path	49.0,47.7	50.3,45.4	48.4,43.5
-path	46.9,43.1	44.6,43.1	43.0,45.0
-Kill any beasts you see and skin them
-skill Skinning,205
-step
-#include trainer_Skinning
-skillmax Skinning,300
-step
-map Thousand Needles
-path follow loose;loop;ants straight;dist 60
-path	73.0,48.0	69.8,49.1	67.2,46.2
-path	64.7,43.9	61.1,43.4	56.9,43.4
-path	65.0,68.5	66.0,74.1	63.9,79.3
-path	64.2,85.3	66.5,92.7	70.1,94.5
-Kill any beasts you see and skin them
-skill Skinning,265
-step
-map Un'Goro Crater
-path follow loose;loop;ants straight;dist 60
-path	73.0,48.0	69.8,49.1	67.2,46.2
-path	64.7,43.9	63.0,52.9	61.1,63.8
-path	65.0,68.5	66.0,74.1	63.9,79.3
-path	68.6,73.3	71.0,62.6	72.4,52.1
-Kill any beasts you see and skin them
-skill Skinning,300
-step
-#include trainer_Skinning
-skillmax Skinning,375
-step
-map Hellfire Peninsula
-path follow loose;loop;ants straight;dist 60
-path 62.0,56.6	60.6,56.8	58.9,56.1
-path 57.2,56.0	56.2,54.3	58.2,54.2
-path 59.9,54.6	66.6,61.4	69.1,61.6
-path 70.3,63.7	70.6,66.4	69.3,66.5
-path 68.0,65.2	66.5,62.5	65.3,61.0
-path 64.0,60.1	62.4,57.4
-Kill any beasts you see and skin them
-skill Skinning,305
-step
-map Hellfire Peninsula
-path follow loose;loop;ants straight;dist 60
-path 54.9,70.9	53.1,71.5	51.7,72.7
-path 50.7,74.9	48.9,75.4	48.1,73.0
-path 48.0,71.1	46.4,69.9	46.5,67.8
-path 48.1,64.9	47.4,63.0	49.3,62.8
-path 51.4,65.9	52.9,68.8	54.9,70.1
-Kill any beasts you see and skin them
-skill Skinning,310
-step
-map Hellfire Peninsula
-path follow loose;loop;ants straight;dist 60
-path 40.7,85.6	37.6,86.1	34.9,88.8
-path 32.7,91.5	33.6,92.4	35.9,91.2
-path 37.8,89.9	39.2,88.5	40.7,86.6
-Kill any beasts you see and skin them
-skill Skinning,330
-step
-map Nagrand
-path follow loose;loop;ants straight;dist 60
-path 56.2,21.2	55.2,23.2	53.7,24.3
-path 52.7,26.0	52.5,28.4	52.8,31.3
-path 50.4,37.1	51.7,39.9	53.1,42.2
-path 51.3,45.3	48.8,45.1	48.0,42.0
-path 47.9,38.5	48.0,32.4	48.0,29.1
-path 50.8,27.4	51.8,23.8	54.8,21.5
-path 56.4,20.0i
-Kill any beasts you see and skin them
-skill Skinning,350
-step
-#include trainer_Skinning
-skillmax Skinning,450
-step
-map Borean Tundra
-path follow loose;loop;ants straight;dist 60
-path 51.5,68.8	49.8,67.7	46.9,70.7
-path 44.2,71.0	41.1,70.7	38.5,71.8
-path 41.9,74.4	45.3,74.9	48.1,74.4
-path 49.6,72.3	51.6,69.1
-Kill any rhinos you see and skin them
-skill Skinning,395
-step
-map Sholazar Basin
-path follow loose;loop;ants straight;dist 60
-path 28.8,55.9	29.7,51.6	31.1,46.4
-path 32.2,40.4	28.6,42.9	25.6,47.9
-path 23.5,52.3	22.6,58.7	22.6,65.3
-path 22.3,70.2	26.4,72.7	28.9,69.1
-path 29.6,64.4
-Kill any beasts you see and skin them
-skill Skinning,450
-step
-#include trainer_Skinning
-skillmax Skinning,525
-step
-map Kelp'thar Forest
-path follow loose;loop;ants straight;dist 60
-path 56.0,36.5	57.8,39.4	59.1,39.7
-path 59.4,36.9	57.6,34.9
-Kill any crabs and serpents in the area
-skill Skinning,525
-step
-Click here to proceed |confirm |next "Profession Guides\\Skinning\\Skinning 525-600 Leveling Guide"
-|tip This will take you to the Skinning 525 - 600 guides.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Mining 1-600 Leveling Guide",{
-author="support@zygorguides.com",
-completion={"skill","Mining",600},
-condition_suggested="hasprof('Mining',1,600)",
-description="This guide will walk you through leveling your Mining skill from 1 - 600.",
-},[[
-step
-talk Stonebreaker Ruian##66979 |goto The Jade Forest/0 27.8,14.8
-skillmax Mining,75
-step
-map The Jade Forest/0
-path follow loose;loop;ants straight;dist 60
-path	49.2,94.1	50.2,89.4	54.6,92.8
-path	58.2,94.1	61.4,93.4	64.4,91.4
-path	67.2,88.6	69.3,83.5	66.2,76.8
-path	61.6,71.0	56.0,69.7	58.9,62.9
-path	60.8,57.6	58.5,48.9	53.9,39.9
-path	55.3,33.5	56.1,29.1	53.9,26.1
-path	51.4,21.8	46.2,17.1	38.4,8.7
-path	35.8,12.4	32.7,13.0	28.2,21.4
-path	30.3,25.6	30.9,29.5	30.2,37.0
-path	29.6,43.8	29.8,52.9	33.2,55.5
-path	36.2,64.9	39.8,69.5	39.0,78.4
-path	40.4,84.3	44.8,90.6
-#include "follow_path_mine"
-skill Mining,75
-step
-talk Stonebreaker Ruian##66979 |goto The Jade Forest/0 27.8,14.8
-skillmax Mining,150
-step
-map The Jade Forest/0
-path follow loose;loop;ants straight;dist 60
-path	49.2,94.1	50.2,89.4	54.6,92.8
-path	58.2,94.1	61.4,93.4	64.4,91.4
-path	67.2,88.6	69.3,83.5	66.2,76.8
-path	61.6,71.0	56.0,69.7	58.9,62.9
-path	60.8,57.6	58.5,48.9	53.9,39.9
-path	55.3,33.5	56.1,29.1	53.9,26.1
-path	51.4,21.8	46.2,17.1	38.4,8.7
-path	35.8,12.4	32.7,13.0	28.2,21.4
-path	30.3,25.6	30.9,29.5	30.2,37.0
-path	29.6,43.8	29.8,52.9	33.2,55.5
-path	36.2,64.9	39.8,69.5	39.0,78.4
-path	40.4,84.3	44.8,90.6
-#include "follow_path_mine"
-skill Mining,150
-step
-talk Stonebreaker Ruian##66979 |goto The Jade Forest/0 27.8,14.8
-skillmax Mining,225
-step
-map The Jade Forest/0
-path follow loose;loop;ants straight;dist 60
-path	49.2,94.1	50.2,89.4	54.6,92.8
-path	58.2,94.1	61.4,93.4	64.4,91.4
-path	67.2,88.6	69.3,83.5	66.2,76.8
-path	61.6,71.0	56.0,69.7	58.9,62.9
-path	60.8,57.6	58.5,48.9	53.9,39.9
-path	55.3,33.5	56.1,29.1	53.9,26.1
-path	51.4,21.8	46.2,17.1	38.4,8.7
-path	35.8,12.4	32.7,13.0	28.2,21.4
-path	30.3,25.6	30.9,29.5	30.2,37.0
-path	29.6,43.8	29.8,52.9	33.2,55.5
-path	36.2,64.9	39.8,69.5	39.0,78.4
-path	40.4,84.3	44.8,90.6
-#include "follow_path_mine"
-skillmax Mining,225
-step
-talk Stonebreaker Ruian##66979 |goto The Jade Forest/0 27.8,14.8
-skillmax Mining,300
-step
-map The Jade Forest/0
-path follow loose;loop;ants straight;dist 60
-path	49.2,94.1	50.2,89.4	54.6,92.8
-path	58.2,94.1	61.4,93.4	64.4,91.4
-path	67.2,88.6	69.3,83.5	66.2,76.8
-path	61.6,71.0	56.0,69.7	58.9,62.9
-path	60.8,57.6	58.5,48.9	53.9,39.9
-path	55.3,33.5	56.1,29.1	53.9,26.1
-path	51.4,21.8	46.2,17.1	38.4,8.7
-path	35.8,12.4	32.7,13.0	28.2,21.4
-path	30.3,25.6	30.9,29.5	30.2,37.0
-path	29.6,43.8	29.8,52.9	33.2,55.5
-path	36.2,64.9	39.8,69.5	39.0,78.4
-path	40.4,84.3	44.8,90.6
-#include "follow_path_mine"
-skillmax Mining,300
-step
-talk Stonebreaker Ruian##66979 |goto The Jade Forest/0 27.8,14.8
-skillmax Mining,300
-step
-map The Jade Forest/0
-path follow loose;loop;ants straight;dist 60
-path	49.2,94.1	50.2,89.4	54.6,92.8
-path	58.2,94.1	61.4,93.4	64.4,91.4
-path	67.2,88.6	69.3,83.5	66.2,76.8
-path	61.6,71.0	56.0,69.7	58.9,62.9
-path	60.8,57.6	58.5,48.9	53.9,39.9
-path	55.3,33.5	56.1,29.1	53.9,26.1
-path	51.4,21.8	46.2,17.1	38.4,8.7
-path	35.8,12.4	32.7,13.0	28.2,21.4
-path	30.3,25.6	30.9,29.5	30.2,37.0
-path	29.6,43.8	29.8,52.9	33.2,55.5
-path	36.2,64.9	39.8,69.5	39.0,78.4
-path	40.4,84.3	44.8,90.6
-#include "follow_path_mine"
-skillmax Mining,300
-step
-talk Stonebreaker Ruian##66979 |goto The Jade Forest/0 27.8,14.8
-skillmax Mining,375
-step
-map The Jade Forest/0
-path follow loose;loop;ants straight;dist 60
-path	49.2,94.1	50.2,89.4	54.6,92.8
-path	58.2,94.1	61.4,93.4	64.4,91.4
-path	67.2,88.6	69.3,83.5	66.2,76.8
-path	61.6,71.0	56.0,69.7	58.9,62.9
-path	60.8,57.6	58.5,48.9	53.9,39.9
-path	55.3,33.5	56.1,29.1	53.9,26.1
-path	51.4,21.8	46.2,17.1	38.4,8.7
-path	35.8,12.4	32.7,13.0	28.2,21.4
-path	30.3,25.6	30.9,29.5	30.2,37.0
-path	29.6,43.8	29.8,52.9	33.2,55.5
-path	36.2,64.9	39.8,69.5	39.0,78.4
-path	40.4,84.3	44.8,90.6
-#include "follow_path_mine"
-skillmax Mining,375
-step
-talk Stonebreaker Ruian##66979 |goto The Jade Forest/0 27.8,14.8
-skillmax Mining,450
-step
-map The Jade Forest/0
-path follow loose;loop;ants straight;dist 60
-path	49.2,94.1	50.2,89.4	54.6,92.8
-path	58.2,94.1	61.4,93.4	64.4,91.4
-path	67.2,88.6	69.3,83.5	66.2,76.8
-path	61.6,71.0	56.0,69.7	58.9,62.9
-path	60.8,57.6	58.5,48.9	53.9,39.9
-path	55.3,33.5	56.1,29.1	53.9,26.1
-path	51.4,21.8	46.2,17.1	38.4,8.7
-path	35.8,12.4	32.7,13.0	28.2,21.4
-path	30.3,25.6	30.9,29.5	30.2,37.0
-path	29.6,43.8	29.8,52.9	33.2,55.5
-path	36.2,64.9	39.8,69.5	39.0,78.4
-path	40.4,84.3	44.8,90.6
-#include "follow_path_mine"
-skillmax Mining,450
-step
-talk Stonebreaker Ruian##66979 |goto The Jade Forest/0 27.8,14.8
-skillmax Mining,525
-step
-map The Jade Forest/0
-path follow loose;loop;ants straight;dist 60
-path	49.2,94.1	50.2,89.4	54.6,92.8
-path	58.2,94.1	61.4,93.4	64.4,91.4
-path	67.2,88.6	69.3,83.5	66.2,76.8
-path	61.6,71.0	56.0,69.7	58.9,62.9
-path	60.8,57.6	58.5,48.9	53.9,39.9
-path	55.3,33.5	56.1,29.1	53.9,26.1
-path	51.4,21.8	46.2,17.1	38.4,8.7
-path	35.8,12.4	32.7,13.0	28.2,21.4
-path	30.3,25.6	30.9,29.5	30.2,37.0
-path	29.6,43.8	29.8,52.9	33.2,55.5
-path	36.2,64.9	39.8,69.5	39.0,78.4
-path	40.4,84.3	44.8,90.6
-#include "follow_path_mine"
-skillmax Mining,525
-step
-You have reached the end of the guide
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Classic Mining 1-600 Leveling Guide",{
-author="support@zygorguides.com",
-completion={"skill","Mining",600},
-condition_suggested="hasprof('Mining',1,600)",
-description="This guide will walk you through leveling your Mining skill from 1 - 600.",
-},[[
-step
-#include trainer_Mining
-skillmax Mining,75
-|tip You must be at least level 5.
-step
-#include "vendor_Mining"
-buy 1 Mining Pick##2901 |condition itemcount(2901) >= 1 or skill("Mining")>=50
-step
-#include "H_Copper"
-#include follow_path_mine
-skill Mining,35
-step
-#include "maincity_anvil"
-create Copper Bar##2657,Mining,50
-|tip Keep all of the Copper Bars for Smelting later.
-step
-#include trainer_Mining
-skillmax Mining,150
-step
-#include trainer_Mining
-learn Smelt Bronze##2659 |condition skill("Mining")>=125
-step
-#include trainer_Mining
-learn Smelt Tin##3304 |condition skill("Mining")>=125
-step
-#include "H_SilverTin"
-#include "follow_path_mine"
-skill Mining,125
-step
-#include trainer_Mining
-skillmax Mining,225
-step
-#include trainer_Mining
-learn Smelt Iron##3307 |condition skill("Mining")>=200
-step
-map Western Plaguelands
-path	42.6,80.9	39.3,79.9	36.1,77.2
-path	33.2,72.6	30.2,69.6	29.3,64.5
-path	33.5,63.9	32.5,59.9	31.2,55.5
-path	37.1,54.4	38.7,51.6	43.8,49.7
-path	48.0,47.8	45.0,41.3	45.0,36.1
-path	44.2,31.6	49.9,28.9	54.3,26.4
-path	54.8,33.7	51.6,40.2	50.2,45.8
-path	54.7,48.9	60.0,52.2	66.3,43.9
-path	68.8,45.9	67.4,52.5	65.6,59.7
-path	61.4,62.0	63.3,64.8	72.4,59.7
-path	80.7,77.4	73.0,83.5	64.4,84.0
-path	58.0,82.1	53.1,74.7
-#include "follow_path_mine"
-skill Mining,150
-step
-map Burning Steppes
-path	40.0,31.9	72.9,23.9	81.1,56.6
-path	72.9,63.5	56.2,52.8	45.5,65.1
-path	31.3,59.8	7.8,56.4	9.3,45.8
-path	38.5,33.8
-#include "follow_path_mine"
-skill Mining,200
-step
-talk Pikkle##8128
-skillmax Mining,300 |goto Tanaris 51.0,29.0 |condition skill("Mining")>=275
-step
-talk Pikkle##8128
-learn Smelt Thorium##16153 |goto Tanaris 51.0,29.0 |condition skill("Mining")>=275
-step
-map Un'Goro Crater
-path 37.5,18.9	43.5,14.1	49.9,18.5
-path 62.7,17.9	70.4,26.8	76.3,51.0
-path 70.7,71.0	62.1,83.7	52.2,85.9
-path 37.7,83.1	27.9,65.8	24.0,52.5
-path 26.7,36.4
-#include "follow_path_mine"
-skill Mining,275
-step
-#include trainer_Mining
-skillmax Mining,375
-step
-#include trainer_Mining
-learn Smelt Fel Iron##29356 |condition skill("Mining")>=275
-step
-map Hellfire Peninsula
-path	69.3,47.5	74.5,38.7	68.2,37.7
-path	62.0,31.0	58.0,32.8	54.0,26.7
-path	46.0,29.3	34.1,29.1	32.0,34.5
-path	38.5,38.2	35.7,40.7	33.4,49.8
-path	30.3,48.6	32.5,43.3	28.5,39.3
-path	26.5,45.5	22.6,45.1	18.0,38.3
-path	12.5,36.1	17.9,46.3	11.8,41.9
-path	12.0,47.0	06.2,49.5	15.4,62.4
-path	20.3,52.9	24.0,61.1	21.2,62.7
-path	28.1,80.8	27.7,69.5	30.5,72.8
-path	30.3,59.9	34.8,66.6	37.7,53.3
-path	46.9,46.3	49.3,49.5	60.3,48.6
-path	60.8,52.8	52.1,52.7	47.2,57.7
-path	45.9,75.5	33.5,89.6	33.1,92.6
-path	49.1,77.5	44.6,86.2	55.5,82.8
-path	58.7,78.8	56.5,72.3	65.8,63.6
-path	67.1,71.7	63.0,73.3	65.8,77.9
-path	68.7,77.6	71.0,71.7	70.1,68.6
-path	65.0,59.8	65.6,56.0	75.0,63.9
-path	78.4,80.2	80.7,77.5	77.3,63.7
-path	72.7,60.2	71.5,53.1	68.3,52.0
-#include "follow_path_mine"
-skill Mining,325
-step
-map Nagrand
-path 45.7,68.9	43.1,58.9	45.0,54.7
-path 49.6,57.5	56.0,54.8	56.3,59.4
-path 49.7,66.2	41.9,77.0	35.7,79.3
-path 31.1,75.3	27.3,63.0	33.4,57.5
-path 33.7,49.4	24.0,47.4	19.7,46.7
-path 11.4,43.0	11.3,36.6	19.9,32.1
-path 25.0,32.8	28.2,31.8	26.5,20.5
-path 30.0,18.1	36.3,23.0	40.5,35.4
-path 43.1,22.8	50.8,23.5	57.0,29.0
-path 65.0,37.6	70.3,42.6	68.8,51.1
-path 72.3,58.1	73.8,67.9	69.8,78.1
-path 57.9,75.5	49.0,79.0
-#include "follow_path_mine"
-|tip Go into any caves you find as there is lots of ore.
-skill Mining,350
-step
-#include trainer_Mining
-skillmax Mining,450
-step
-#include trainer_Mining
-learn Smelt Adamantite##29358 |condition skill("Mining")>=425
-step
-#include trainer_Mining
-learn Smelt Cobalt##49252 |condition skill("Mining")>=425
-step
-#include trainer_Mining
-learn Smelt Eternium##29359 |condition skill("Mining")>=425
-step
-#include trainer_Mining
-learn Smelt Felsteel##29360 |condition skill("Mining")>=425
-step
-map Howling Fjord
-path 83.0,44.8	78.1,39.4	72.7,38.3
-path 71.0,31.8	75.3,22.9	70.2,8.3
-path 63.2,13.7
-path 61.4,23.6	57.7,18.3	51.4,14.2
-path 45.5,13.3	38.1,18.9	31.1,10.9
-path 28.9,10.3	21.7,12.8	19.4,23.5
-path 24.2,27.4	27.6,22.6	27.3,30.8
-path 38.1,29.0	47.6,32.7	53.0,31.9
-path 63.5,37.1	65.5,48.7	66.9,62.7
-path 64.4,67.8	64.4,72.4	67.9,76.5
-path 71.3,73.6	72.5,67.9	77.3,67.2
-path 77.2,60.8	74.9,55.3	79.1,50.4
-#include "follow_path_mine"
-skill Mining,400
-step
-map Sholazar Basin
-path follow strict
-path	77.9,63.8	78.7,52.4	74.3,48.6
-path	58.9,53.9	63.5,44.4	66.7,40.3
-path	65.1,30.5	58.9,27.8	58.9,21.1
-path	40.8,20.8	48.0,33.2	52.7,39.9
-path	47.8,43.1	46.8,39.7	39.6,32.8
-path	32.9,32.8	23.3,48.4	33.5,46.6
-path	35.8,49.9	40.0,50.9	38.0,54.9
-path	30.5,55.3	20.8,56.1	20.4,76.6
-path	22.6,78.5	22.5,84.0	34.2,78.4
-path	33.8,73.4	33.0,67.9	40.9,70.1
-path	34.5,88.9	50.9,88.8	51.5,82.1
-path	46.0,60.9	55.5,66.5	58.7,88.2
-path	62.3,74.5	63.6,84.4
-#include "follow_path_mine"
-skill Mining,425
-step
-#include "trainer_Mining"
-skillmax Mining,525
-step
-#include "trainer_Mining"
-learn Smelt Obsidium##84038 |condition skill("Mining")>=425
-step
-map Mount Hyjal
-path	67.2,29.1	61.1,36.7	54.5,17.1
-path	41.2,20.5	42.9,27.5	49.6,25.5
-path	46.6,35.6	40.5,33.6	39.9,29.4
-path	34.9,27.5	35.0,21.7	32.3,28.8
-path	35.0,35.6	31.1,40.4	25.7,40.6
-path	28.7,35.7	24.3,35.8	25.7,29.8
-path	14.7,38.8	13.6,31.6	9.4,36.4
-path	17.6,46.5	12.9,46.5	15.5,52.2
-path	20.7,60.2	21.5,56.8	23.3,61.5
-path	30.3,55.2	27.6,55.0	27.7,51.2
-path	34.1,46.8	34.1,55.2	37.5,54.9
-path	36.0,51.0	40.3,51.6	41.5,63.3
-path	38.9,65.5	36.4,58.6	32.8,61.8
-path	35.2,63.5	32.8,66.6	31.3,90.4
-path	36.6,95.5	50.8,82.1	51.8,75.1
-path	60.6,82.5	59.8,73.0	56.5,69.8
-path	58.9,66.4	53.6,66.8	49.6,51.1
-path	59.7,56.3	55.5,56.8	62.8,60.0
-path	64.5,50.9	67.5,50.6	69.8,56.0
-path	75.9,69.6	75.7,63.6	80.2,67.2
-path	84.3,64.9	88.1,48.5	84.2,47.5
-path	78.5,53.3	84.2,54.5	82.1,60.9
-path	72.9,57.9
-#include "follow_path_mine"
-skill Mining,475
-step
-map Twilight Highlands
-path	71.4,50.3	54.0,37.6	46.2,48.5
-path	56.4,45.1	61.5,50.4	50.1,58.2
-path	61.2,75.4	53.6,86.0	38.8,86.6
-path	34.2,71.9	32.1,57.6	24.5,56.9
-path	30.0,42.8	26.9,28.7	32.3,27.1
-path	31.5,40.1	38.6,41.2	39.6,30.4
-path	39.0,19.7	46.2,20.1	53.8,24.8
-path	61.5,32.4	68.5,37.9
-#include "follow_path_mine"
-skill Mining,525
-step
-confirm |next "Profession Guides\\Mining\\Mining 525-600 Leveling Guide"
-|tip This will take you to the 525 - 600 portion of Mining.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Mining",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Ore",{
 author="support@zygorguides.com",
 description="This guide will allow you to farm the various ores.",
 },[[
@@ -4922,402 +4052,401 @@ path	86.8,26.6	88.2,23.8	85.0,9.9
 Click here to pick a different ore |confirm |next "start"
 only if ZGV.guidesets['ProfessionsHMoP']
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Herbalism",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Classic Mining 1-600 Leveling Guide",{
 author="support@zygorguides.com",
-description="This guide will allow you to farm the various herbs.",
+completion={"skill","Mining",600},
+condition_suggested="hasprof('Mining',1,600)",
+description="This guide will walk you through leveling your Mining skill from 1 - 600.",
 },[[
-step "start"
-Click here for Eastern Kingdoms and Kalimdor herbs |confirm |next "ek_kal"
-Click here for Outlands herbs |confirm |next "outland"
-Click here for Northrend herbs |confirm |next "north"
-Click here for Cataclysm herbs |confirm |next "cata"
-Click here for Pandaria herbs |confirm |next "panda" |only if ZGV.guidesets['ProfessionsHMoP']
-step "ek_kal"
-Click here to farm Peacebloom and Silverleaf |confirm |next "peace_silver"
-Click here to farm Mageroyal and Briarthorn |confirm |next "mage_briar"
-Click here to farm Stranglekelp |confirm |next "strangle"
-Click here to farm Kingsblood |confirm |next "king"
-Click here to farm Liferoot |confirm |next "life"
-Click here to farm Goldthorn |confirm |next "gold"
-Click here to farm Wild Steelbloom |confirm |next "wild"
-Click here to farm Khadgar's Whisker and Blindweed |confirm |next "khadgar_blind"
-Click here to farm Sungrass |confirm |next "sun"
-Click here to farm Gromsblood |confirm |next "groms"
-Click here to farm Golden Sansam |confirm |next "goldsan"
-Click here to pick a different herb |confirm |next "start"
-step "outland"
-Click here to farm Felweed |confirm |next "felweed"
-Click here to farm Terocone and Dreaming Glory |confirm |next "tero_dream"
-Click here to farm Netherbloom |confirm |next "nether"
-Click here to pick a different herb |confirm |next "start"
-step "north"
-Click here to farm Goldclover and Deadnettle |confirm |next "gold_dead"
-Click here to farm Talandra's Rose |confirm |next "talandra"
-Click here to farm Tiger Lily |confirm |next "tiger"
-Click here to farm Icethorn and Lichbloom |confirm |next "ice_lich"
-Click here to pick a different herb |confirm |next "start"
-step "cata"
-Click here to farm Cinderbloom and Stormvine |confirm |next "cinder_storm"
-Click here to farm Azshara's Veil |confirm |next "azshara"
-Click here to farm Heartblossom |confirm |next "heart"
-Click here to farm Whiptail |confirm |next "whip"
-Click here to farm Twilight Jasmine |confirm |next "twilight"
-Click here to pick a different herb |confirm |next "start"
-step "panda"
-Click here to farm Green Tea Leaf |confirm |next "green"
-Click here to farm Fool's Cap |confirm |next "fool"
-Click here to farm Snow Lily |confirm |next "snow"
-Click here to pick a different herb |confirm |next "start"
-only if ZGV.guidesets['ProfessionsHMoP']
-step "peace_silver"
-map Durotar
-path follow loose;loop;ants straight
-path	46.2,17.1	38.8,16.2	38.7,22.1
-path	37.9,30.4	48.5,32.8	51.4,36.5
-path	51.7,52.0	53.6,62.4	55.6,69.7
-path	60.9,69.1	60.7,58.0	57.6,46.9
-path	55.0,32.4	57.8,26.1	53.4,12.5
-#include "follow_path_herbs"
-Click here to pick a different herb |confirm |next "start"
-step "mage_briar"
-map Hillsbrad Foothills
-path 31.8,62.6		33.9,54.0		29.7,44.1
-path 35.5,37.8		34.5,28.2		39.5,21.0
-path 44.2,8.3		51.3,14.0		57.5,20.9
-path 56.1,34.3		49.9,46.2		41.2,46.6
-path 40.1,55.0		41.3,67.4		31.8,71.9
-#include "follow_path_herbs"
-Click here to pick a different herb |confirm |next "start"
-step "strangle"
-map The Cape of Stranglethorn
-path 44.0,86.1		50.6,80.7		59.4,52.6
-path 51.7,8.0		40.7,17.1		39.6,24.9
-path 32.4,32.9		 41.5,41.0		35.1,53.2
-path 36.8,56.2
-#include follow_path_herbs
-Click here to pick a different herb |confirm |next "start"
-step "king"
+step
+#include trainer_Mining
+skillmax Mining,75
+|tip You must be at least level 5.
+step
+#include "vendor_Mining"
+buy 1 Mining Pick##2901 |condition itemcount(2901) >= 1 or skill("Mining")>=50
+step
+#include "H_Copper"
+#include follow_path_mine
+skill Mining,35
+step
+#include "maincity_anvil"
+create Copper Bar##2657,Mining,50
+|tip Keep all of the Copper Bars for Smelting later.
+step
+#include trainer_Mining
+skillmax Mining,150
+step
+#include trainer_Mining
+learn Smelt Bronze##2659 |condition skill("Mining")>=125
+step
+#include trainer_Mining
+learn Smelt Tin##3304 |condition skill("Mining")>=125
+step
+#include "H_SilverTin"
+#include "follow_path_mine"
+skill Mining,125
+step
+#include trainer_Mining
+skillmax Mining,225
+step
+#include trainer_Mining
+learn Smelt Iron##3307 |condition skill("Mining")>=200
+step
 map Western Plaguelands
-path 31.8,59.3	43.5,53.2	45.9,44.7
-path 45.2,35.2	49.5,35.1	49.5,35.1
-path 51.0,47.4	61.8,52.0	67.2,44.5
-path 63.6,56.0	56.6,60.1	52.6,67.5
-path 46.4,59.2	33.7,62.7
-#include follow_path_herbs
-.'Click here to pick a different herb |confirm |next "start"
-step "life"
-map Eastern Plaguelands
-path 72.7,57.6		71.8,64.4		64.7,68.6
-path 58.9,76.7		51.2,72.0		44.4,68.7
-path 38.6,66.5		35.8,60.9		44.5,51.6
-path 50.3,42.7		56.8,46.4		66.6,46.5
-#include follow_path_herbs
-tip They are found around the small lake.
-Click here to pick a different herb |confirm |next "start"
-step "gold"
-map Arathi Highlands
-path	43.3,39.0	57.6,29.0	70.6,28.6
-path	73.6,31.7	50.7,74.5	41.0,80.2
-path	28.7,67.9	9.0,70.2	19.9,34.9
-path	29.1,48.4
-#include follow_path_herbs
-tip As you move, cling to the edges of the mountain.
-Click here to pick a different herb |confirm |next "start"
-step "wild"
-map Northern Stranglethorn
-path 64.2,25.4		63.9,39.4		56.2,43.2
-path 42.5,43.9		35.9,32.9		31.5,37.2
-path 23.1,32.3		17.4,24.1
-#include follow_path_herbs
-Click here to pick a different herb |confirm |next "start"
-step "khadgar_blind"
-map Feralas
-path 73.0,42.0		74.4,35.2		70.5,37.1
-path 67.3,45.9		62.5,51.2		55.7,47.6
-path 49.5,41.4		50.2,32.1		49.4,24.1
-path 51.4,14.4		53.8,08.6		49.5,06.2
-path 48.9,11.7		42.4,08.8		37.8,15.3
-path 44.9,23.7		47.7,43.3		53.2,48.3
-path 54.8,53.6		56.0,60.1		55.2,66.6
-path 58.6,64.7		64.4,61.5		63.8,53.6
-path 67.9,51.0		69.0,60.1		71.4,60.0
-path 72.1,57.3		77.8,56.6		77.1,48.2
-path 73.3,50.2
-#include follow_path_herbs
-Click here to pick a different herb |confirm |next "start"
-step "sun"
-map Thousand Needles
-path  7.1,24.1 	 9.0,31.2	 9.3,42.2
-path 16.6,44.5	22.3,48.3	26.1,53.0
-path 31.0,56.3	35.5,59.1	40.3,62.1
-path 44.6,63.4	49.8,63.0	58.6,63.4
-path 66.0,70.9	64.3,79.4	65.1,91.9
-path 77.8,94.3	84.8,91.4	89.8,85.3
-path 94.5,71.8	93.9,58.0	90.8,52.2
-path 86.2,49.2	75.0,47.7	72.3,49.2
-path 54.8,41.3
-#include follow_path_herbs
-Click here to pick a different herb |confirm |next "start"
-step "groms"
-map Felwood
-path 50.5,80.9		47.6,75.8		45.4,71.4
-path 44.9,66.4		42.9,58.3		43.6,52.1
-path 45.2,42.1		49.6,33.6		55.3,24.8
-path 57.5,15.5		54.3,14.1		42.7,21.7
-path 40.0,37.5		40.0,46.5		39.6,56.9
-path 39.1,66.2		38.9,71.3		42.7,84.7
-#include follow_path_herbs
-Click here to pick a different herb |confirm |next "start"
-step "goldsan"
-map Swamp of Sorrows
-path   17.6,52.9		21.6,54.6		30.9,60.7
-path 39.4,56.9		51.7,59.6		64.5,67.3
-path 73.3,81.9		82.0,76.0		85.3,62.6
-path 87.6,39.9		84.9,31.2		80.1,20.6
-path 66.5,22.7		56.8,31.9		47.0,36.0
-path 36.1,39.8		26.9,42.9
-#include follow_path_herbs
-Click here to pick a different herb |confirm |next "start"
-step "felweed"
+path	42.6,80.9	39.3,79.9	36.1,77.2
+path	33.2,72.6	30.2,69.6	29.3,64.5
+path	33.5,63.9	32.5,59.9	31.2,55.5
+path	37.1,54.4	38.7,51.6	43.8,49.7
+path	48.0,47.8	45.0,41.3	45.0,36.1
+path	44.2,31.6	49.9,28.9	54.3,26.4
+path	54.8,33.7	51.6,40.2	50.2,45.8
+path	54.7,48.9	60.0,52.2	66.3,43.9
+path	68.8,45.9	67.4,52.5	65.6,59.7
+path	61.4,62.0	63.3,64.8	72.4,59.7
+path	80.7,77.4	73.0,83.5	64.4,84.0
+path	58.0,82.1	53.1,74.7
+#include "follow_path_mine"
+skill Mining,150
+step
+map Burning Steppes
+path	40.0,31.9	72.9,23.9	81.1,56.6
+path	72.9,63.5	56.2,52.8	45.5,65.1
+path	31.3,59.8	7.8,56.4	9.3,45.8
+path	38.5,33.8
+#include "follow_path_mine"
+skill Mining,200
+step
+talk Pikkle##8128
+skillmax Mining,300 |goto Tanaris 51.0,29.0 |condition skill("Mining")>=275
+step
+talk Pikkle##8128
+learn Smelt Thorium##16153 |goto Tanaris 51.0,29.0 |condition skill("Mining")>=275
+step
+map Un'Goro Crater
+path 37.5,18.9	43.5,14.1	49.9,18.5
+path 62.7,17.9	70.4,26.8	76.3,51.0
+path 70.7,71.0	62.1,83.7	52.2,85.9
+path 37.7,83.1	27.9,65.8	24.0,52.5
+path 26.7,36.4
+#include "follow_path_mine"
+skill Mining,275
+step
+#include trainer_Mining
+skillmax Mining,375
+step
+#include trainer_Mining
+learn Smelt Fel Iron##29356 |condition skill("Mining")>=275
+step
 map Hellfire Peninsula
-path 80.6,79.9		73.3,67.0		68.6,76.9
-path 56.1,71.6		48.4,75.2		40.7,84.5
-path 36.6,67.4		32.9,65.6		28.0,78.7
-path 22.9,67.5		13.7,63.0		13.5,38.7
-path 23.8,44.6		30.5,33.1		37.8,30.8
-path 55.8,31.1		67.1,27.3
-#include follow_path_herbs
-Click here to pick a different herb |confirm |next "start"
-step "tero_dream"
-map Terokkar Forest
-path 34.4,8.0 		37.5,16.1		41.6,19.9
-path 44.5,11.5		51.0,21.0		48.4,26.9
-path 60.2,22.5		73.1,45.3		61.5,48.6
-path 54.0,37.1		48.0,33.5		39.0,34.8
-path 39.2,44.4		47.3,50.0		47.0,79.8
-path 33.5,76.9		19.6,77.8		21.5,60.7
-path 31.4,39.9		37.4,30.1
-#include follow_path_herbs
-Click here to pick a different herb |confirm |next "start"
-step "nether"
-map Netherstorm
-path 31.5,51.4		25.6,63.5		19.5,67.7
-path 20.3,77.1		40.2,77.2		46.2,82.6
-path 48.0,86.9		58.9,88.8		61.4,79.4
-path 51.6,75.7		46.0,72.1		34.5,55.8
-path 40.1,52.9		50.2,69.0		67.1,60.7
-path 50.8,54.8		46.5,47.1		55.0,39.9
-path 58.5,47.2		62.7,50.3		73.4,40.5
-path 73.2,35.2		62.1,30.5		55.6,31.6
-path 49.8,35.9		48.8,25.5		57.1,24.3
-path 55.5,17.3		49.7,17.4		48.9,12.5
-path 44.9,19.8		42.5,16.2		39.5,15.7
-path 35.7,19.8		32.1,29.2		38.5,42.4
-path 31.1,38.1		23.5,35.4		22.9,44.1
-path 30.2,43.3
-#include follow_path_herbs
-Click here to pick a different herb |confirm |next "start"
-step "gold_dead"
+path	69.3,47.5	74.5,38.7	68.2,37.7
+path	62.0,31.0	58.0,32.8	54.0,26.7
+path	46.0,29.3	34.1,29.1	32.0,34.5
+path	38.5,38.2	35.7,40.7	33.4,49.8
+path	30.3,48.6	32.5,43.3	28.5,39.3
+path	26.5,45.5	22.6,45.1	18.0,38.3
+path	12.5,36.1	17.9,46.3	11.8,41.9
+path	12.0,47.0	06.2,49.5	15.4,62.4
+path	20.3,52.9	24.0,61.1	21.2,62.7
+path	28.1,80.8	27.7,69.5	30.5,72.8
+path	30.3,59.9	34.8,66.6	37.7,53.3
+path	46.9,46.3	49.3,49.5	60.3,48.6
+path	60.8,52.8	52.1,52.7	47.2,57.7
+path	45.9,75.5	33.5,89.6	33.1,92.6
+path	49.1,77.5	44.6,86.2	55.5,82.8
+path	58.7,78.8	56.5,72.3	65.8,63.6
+path	67.1,71.7	63.0,73.3	65.8,77.9
+path	68.7,77.6	71.0,71.7	70.1,68.6
+path	65.0,59.8	65.6,56.0	75.0,63.9
+path	78.4,80.2	80.7,77.5	77.3,63.7
+path	72.7,60.2	71.5,53.1	68.3,52.0
+#include "follow_path_mine"
+skill Mining,325
+step
+map Nagrand
+path 45.7,68.9	43.1,58.9	45.0,54.7
+path 49.6,57.5	56.0,54.8	56.3,59.4
+path 49.7,66.2	41.9,77.0	35.7,79.3
+path 31.1,75.3	27.3,63.0	33.4,57.5
+path 33.7,49.4	24.0,47.4	19.7,46.7
+path 11.4,43.0	11.3,36.6	19.9,32.1
+path 25.0,32.8	28.2,31.8	26.5,20.5
+path 30.0,18.1	36.3,23.0	40.5,35.4
+path 43.1,22.8	50.8,23.5	57.0,29.0
+path 65.0,37.6	70.3,42.6	68.8,51.1
+path 72.3,58.1	73.8,67.9	69.8,78.1
+path 57.9,75.5	49.0,79.0
+#include "follow_path_mine"
+|tip Go into any caves you find as there is lots of ore.
+skill Mining,350
+step
+#include trainer_Mining
+skillmax Mining,450
+step
+#include trainer_Mining
+learn Smelt Adamantite##29358 |condition skill("Mining")>=425
+step
+#include trainer_Mining
+learn Smelt Cobalt##49252 |condition skill("Mining")>=425
+step
+#include trainer_Mining
+learn Smelt Eternium##29359 |condition skill("Mining")>=425
+step
+#include trainer_Mining
+learn Smelt Felsteel##29360 |condition skill("Mining")>=425
+step
 map Howling Fjord
-path	70.1,47.3	75.5,50.8
-path	80.5,46.2	76.3,42.8	70.3,40.5
-path	66.5,33.5	70.5,32.4	73.6,26.7
-path	69.8,19.2	65.8,26.8	61.8,28.5
-path	58.5,22.7	50.2,16.6	48.7,21.2
-path	26.5,7.9	29.2,12.0
-path	23.8,14.0	26.8,14.5
-path	27.2,20.8	29.0,22.2	27.1,29.6
-path	31.3,33.3	34.8,34.1	41.7,34.2
-path	42.1,27.7	46.3,31.5	47.1,29.0
-path	54.1,32.5	49.0,35.8	58.1,37.0
-path	58.3,40.1	43.3,44.1
-path	40.9,40.2	37.0,39.9	37.0,44.9
-path	34.9,46.2	46.4,54.3
-path	45.9,50.2	51.1,48.3	59.5,51.6
-path	59.0,55.6	45.1,59.4
-path	48.7,62.7	56.9,67.1
-path	46.8,71.6	52.8,71.5	53.4,76.5
-path	60.0,76.8	62.6,80.5	64.8,67.6
-path	67.9,59.7	65.8,72.5	67.1,74.9
-path	69.5,74.5	70.6,66.1	76.4,67.9
-#include follow_path_herbs
-Click here to pick a different herb |confirm |next "start"
-step "talandra"
-map Zul'Drak
-path 21.3,84.1		31.2,68.2		39.3,63.7
-path 29.7,52.6		37.1,40.8		43.6,46.7
-path 43.0,62.9		50.7,62.4		58.2,73.5
-path 52.2,83.3		39.5,87.0
-#include follow_path_herbs
-Click here to pick a different herb |confirm |next "start"
-step "tiger"
+path 83.0,44.8	78.1,39.4	72.7,38.3
+path 71.0,31.8	75.3,22.9	70.2,8.3
+path 63.2,13.7
+path 61.4,23.6	57.7,18.3	51.4,14.2
+path 45.5,13.3	38.1,18.9	31.1,10.9
+path 28.9,10.3	21.7,12.8	19.4,23.5
+path 24.2,27.4	27.6,22.6	27.3,30.8
+path 38.1,29.0	47.6,32.7	53.0,31.9
+path 63.5,37.1	65.5,48.7	66.9,62.7
+path 64.4,67.8	64.4,72.4	67.9,76.5
+path 71.3,73.6	72.5,67.9	77.3,67.2
+path 77.2,60.8	74.9,55.3	79.1,50.4
+#include "follow_path_mine"
+skill Mining,400
+step
 map Sholazar Basin
-path	68.7,66.6	69.4,68.5	71.0,70.3
-path	69.1,73.6	68.1,70.1	65.3,70.5
-path	67.1,75.2	65.3,75.6	61.5,71.2
-path	65.1,79.5	62.9,83.5	59.2,72.5
-path	57.5,83.3	60.1,85.3	51.6,86.5
-path	43.6,75.3	47.9,73.9	50.5,62.6
-path	47.9,60.1	46.2,63.1	46.9,65.5
-path	43.1,62.3	41.3,67.5	37.9,63.6
-path	37.7,66.2	29.8,66.8	31.9,70.1
-path	31.1,71.1	43.7,71.0	40.1,76.5
-path	43.3,77.4	42.5,83.0	41.0,83.9
-path	41.9,86.5	40.8,87.8	37.5,83.3
-path	35.2,87.1	35.2,83.4	28.8,84.8
-path	28.5,79.5	30.5,75.7	28.5,75.5
-path	26.6,77.6	21.6,63.7	22.4,60.3
-path	32.7,64.5	32.4,60.4	29.1,61.7
-path	32.7,64.5	32.4,60.4	29.1,61.7
-path	32.7,64.5	32.4,60.4	29.1,61.7
-path	25.3,59.0	21.5,56.3	25.7,55.9
-path	32.0,41.7	31.2,55.2	28.7,53.5
-path	28.5,60.1	35.2,60.7	35.5,58.7
-path	38.2,60.2	38.6,55.5	41.6,56.2
-path	41.2,58.8	43.5,59.5	49.5,52.3
-path	47.6,49.6	44.6,49.1	46.8,52.1
-path	45.5,51.6	39.6,35.8	33.9,31.6
-path	38.5,29.6	33.8,24.4	35.4,20.9
-path	40.6,26.0	39.9,21.1	43.9,23.5
-path	56.5,31.5	62.7,33.9	57.6,41.3
-path	59.3,42.1	59.6,45.1	57.7,47.2
-path	53.5,44.0	50.5,54.2	52.3,56.8
-path	56.6,54.5	55.6,49.9	64.2,46.4
-path	63.9,48.9
-#include follow_path_herbs
-Click here to pick a different herb |confirm |next "start"
-step "ice_lich"
-map The Storm Peaks
-path	36.8,86.1	40.3,87.9	37.7,94.3
-path	36.6,89.0	32.9,93.8	32.5,86.9
-path	31.4,83.1	40.0,82.3	38.4,80.8
-path	39.4,79.2	43.5,78.0	42.6,75.6
-path	45.4,77.1	45.6,79.1	46.6,78.9
-path	47.0,77.2	49.0,78.4	48.5,73.3
-path	51.4,75.6	52.2,69.5	58.3,72.0
-path	54.3,66.2	58.6,58.3	56.8,66.0
-path	60.1,61.5	62.9,62.7	63.0,59.6
-path	61.8,58.3	64.2,49.5	64.1,54.1
-path	65.0,58.8	66.9,58.5	65.6,63.6
-path	72.5,65.0	71.8,56.0	74.0,49.9
-path	70.9,47.1	72.8,53.1	70.0,49.9
-path	70.9,53.0	68.8,54.7	68.6,47.7
-path	66.4,48.7	65.6,40.6	63.1,41.7
-path	61.8,44.9	57.4,40.9	59.9,45.0
-path	60.9,49.5	56.7,48.5	56.3,52.3
-path	51.1,48.1	50.9,51.9	52.5,53.2
-path	52.0,59.0	50.2,61.5	50.1,58.6
-path	48.6,60.9	47.5,54.4	47.7,63.6
-path	46.6,56.7	42.8,53.0	42.0,54.1
-path	44.0,59.3	43.6,62.0	42.0,60.3
-path	40.3,64.5	39.2,61.9	36.8,64.3
-path	39.0,52.7	38.8,48.4	47.7,36.0
-path	34.0,38.9	37.2,43.7	34.5,42.2
-path	33.5,44.9	35.7,47.1	32.1,50.5
-path	29.4,50.5	29.4,50.5	29.2,37.4
-path	22.2,36.7	22.3,41.1	25.6,41.6
-path	24.3,47.1	28.6,53.1	26.8,55.8
-path	21.6,55.7	22.6,62.8	24.5,62.0
-path	27.3,58.4	27.8,59.9	25.8,67.2
-path	27.2,67.1	27.2,69.7	24.6,72.5
-path	26.6,73.1	28.4,70.8	29.4,64.3
-path	30.7,64.5	29.9,70.9	31.2,70.6
-path	32.8,74.5	35.3,73.5	32.8,66.9
-path	33.5,65.5	37.0,67.7	36.3,72.7
-path	38.2,76.9	38.9,75.1	40.4,77.6
-#include follow_path_herbs
-Click here to pick a different herb |confirm |next "start"
-step "cinder_storm"
+path follow strict
+path	77.9,63.8	78.7,52.4	74.3,48.6
+path	58.9,53.9	63.5,44.4	66.7,40.3
+path	65.1,30.5	58.9,27.8	58.9,21.1
+path	40.8,20.8	48.0,33.2	52.7,39.9
+path	47.8,43.1	46.8,39.7	39.6,32.8
+path	32.9,32.8	23.3,48.4	33.5,46.6
+path	35.8,49.9	40.0,50.9	38.0,54.9
+path	30.5,55.3	20.8,56.1	20.4,76.6
+path	22.6,78.5	22.5,84.0	34.2,78.4
+path	33.8,73.4	33.0,67.9	40.9,70.1
+path	34.5,88.9	50.9,88.8	51.5,82.1
+path	46.0,60.9	55.5,66.5	58.7,88.2
+path	62.3,74.5	63.6,84.4
+#include "follow_path_mine"
+skill Mining,425
+step
+#include "trainer_Mining"
+skillmax Mining,525
+step
+#include "trainer_Mining"
+learn Smelt Obsidium##84038 |condition skill("Mining")>=425
+step
 map Mount Hyjal
-path	68.2,23.9	59.2,31.6	57.0,38.9
-path	57.9,17.5	51.5,16.9	52.6,35.5
-path	48.7,36.5	44.0,24.5	39.8,32.5
-path	36.5,21.7	32.3,25.2	34.6,36.9
-path	43.5,42.6	36.2,44.9	25.3,37.8
-path	24.1,31.9	11.8,31.6	14.3,47.0
-path	19.0,58.5	25.6,62.0	31.9,46.7
-path	33.1,65.2	36.9,53.5	42.3,55.9
-path	33.8,65.0	31.3,76.5	33.8,98.2
-path	57.1,80.9	59.2,84.5	59.8,77.8
-path	55.8,74.7	59.8,71.6	49.1,51.6
-path	61.9,60.5	67.1,53.5	74.3,58.8
-path	71.9,68.5	77.3,63.2	83.0,64.2
-path	89.9,49.8	80.9,51.8	77.5,59.5
-#include follow_path_herbs
-Click here to pick a different herb |confirm |next "start"
-step "azshara"
-map Shimmering Expanse
-path	42.2,55.2	37.7,67.1	48.2,81.4
-path	57.8,83.2	58.5,69.6	49.6,59.1
-path	68.0,49.7	63.9,39.4	57.9,39.8
-path	50.6,35.3	41.3,34.8	38.1,44.7
-path	32.5,54.7
-#include follow_path_herbs
-Click here to pick a different herb |confirm |next "start"
-step "heart"
-map Deepholm
-path	69.4,56.0	70.0,60.7	72.9,58.2
-path 	74.7,61.1	75.8,67.5	70.9,62.9
-path 	71.1,70.6	66.0,68.5	26.8,41.5
-path 	26.5,35.6	23.1,35.3	25.9,31.9
-path 	27.5,32.3	27.8,27.0	31.2,32.0
-path 	28.9,35.6	26.8,41.5
-#include "follow_path_herbs"
-Click here to pick a different herb |confirm |next "start"
-step "whip"
-map Uldum
-path	58.4,31.3	56.2,22.6	57.8,14.5
-path 	61.5,14.0	57.1,44.7	60.5,58.3
-path 	69.8,76.5	65.9,75.9	60.0,83.2
-path 	59.0,58.8	55.3,45.8	52.0,45.6
-path 	50.8,42.5	50.8,36.0	50.8,36.0
-#include "follow_path_herbs"
-Click here to pick a different herb |confirm |next "start"
-step "twilight"
+path	67.2,29.1	61.1,36.7	54.5,17.1
+path	41.2,20.5	42.9,27.5	49.6,25.5
+path	46.6,35.6	40.5,33.6	39.9,29.4
+path	34.9,27.5	35.0,21.7	32.3,28.8
+path	35.0,35.6	31.1,40.4	25.7,40.6
+path	28.7,35.7	24.3,35.8	25.7,29.8
+path	14.7,38.8	13.6,31.6	9.4,36.4
+path	17.6,46.5	12.9,46.5	15.5,52.2
+path	20.7,60.2	21.5,56.8	23.3,61.5
+path	30.3,55.2	27.6,55.0	27.7,51.2
+path	34.1,46.8	34.1,55.2	37.5,54.9
+path	36.0,51.0	40.3,51.6	41.5,63.3
+path	38.9,65.5	36.4,58.6	32.8,61.8
+path	35.2,63.5	32.8,66.6	31.3,90.4
+path	36.6,95.5	50.8,82.1	51.8,75.1
+path	60.6,82.5	59.8,73.0	56.5,69.8
+path	58.9,66.4	53.6,66.8	49.6,51.1
+path	59.7,56.3	55.5,56.8	62.8,60.0
+path	64.5,50.9	67.5,50.6	69.8,56.0
+path	75.9,69.6	75.7,63.6	80.2,67.2
+path	84.3,64.9	88.1,48.5	84.2,47.5
+path	78.5,53.3	84.2,54.5	82.1,60.9
+path	72.9,57.9
+#include "follow_path_mine"
+skill Mining,475
+step
 map Twilight Highlands
-path	71.7,48.9	68.1,41.8	61.9,36.0
-path 	53.9,32.0	47.3,40.3	45.6,45.2
-path 	45.3,36.1	41.3,52.0	48.7,54.5
-path 	51.5,45.6	58.2,48.0	59.1,40.1
-path 	70.9,64.8	73.5,64.0	73.7,72.2
-path	69.8,64.7	63.1,60.8	59.5,63.6
-path 	55.3,50.4	57.0,77.5	53.0,79.8
-path 	49.0,70.0	44.2,70.6	47.9,63.4
-path 	33.6,49.9	29.0,40.3	28.6,30.5
-path	46.3,23.2	57.5,27.2	69.1,38.2
-path 	72.9,47.2
-#include "follow_path_herbs"
-Click here to pick a different herb |confirm |next "start"
-step "green"
-map Valley of the Four Winds
-path	81.4,21.5	76.4,29.2	71.1,29.5
-path	69.0,31.0	70.8,34.4	70.6,41.8
-path	65.1,60.1	57.6,65.6	50.8,58.6
-path	47.4,64.9	46.9,61.3	42.5,54.3
-path	33.6,62.1	28.1,72.7	25.7,78.4
-path	24.4,56.0	21.9,53.9	12.8,44.7
-path	14.3,41.2	14.8,35.8	19.6,34.4
-#include "follow_path_herbs"
-Click here to pick a different herb |confirm |next "start"
-only if ZGV.guidesets['ProfessionsHMoP']
-step "fool"
-map Dread Wastes
-path	40.4,56.5	43.9,59.5	43.1,64.4
-path	40.5,69.7	37.4,69.2	33.0,66.4
-path	33.4,61.6	30.0,56.5	35.5,55.1
-#include follow_path_herbs
-Click here to pick a different herb. |confirm |next "start"
-only if ZGV.guidesets['ProfessionsHMoP']
-step "snow"
-map Kun-Lai Summit
-path	39.4,77.3	38.0,75.5	40.1,71.8
-path	43.7,64.5	42.9,60.8	41.1,59.3
-path	33.9,54.9	36.0,75.5
-#include follow_path_herbs
-Click here to pick a different herb |confirm |next "start"
-only if ZGV.guidesets['ProfessionsHMoP']
+path	71.4,50.3	54.0,37.6	46.2,48.5
+path	56.4,45.1	61.5,50.4	50.1,58.2
+path	61.2,75.4	53.6,86.0	38.8,86.6
+path	34.2,71.9	32.1,57.6	24.5,56.9
+path	30.0,42.8	26.9,28.7	32.3,27.1
+path	31.5,40.1	38.6,41.2	39.6,30.4
+path	39.0,19.7	46.2,20.1	53.8,24.8
+path	61.5,32.4	68.5,37.9
+#include "follow_path_mine"
+skill Mining,525
+step
+confirm |next "Profession Guides\\Mining\\Leveling Guides\\Mining 525-600 Leveling Guide"
+|tip This will take you to the 525 - 600 portion of Mining.
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Leather",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Mining 1-600 Leveling Guide",{
+author="support@zygorguides.com",
+completion={"skill","Mining",600},
+condition_suggested="hasprof('Mining',1,600)",
+description="This guide will walk you through leveling your Mining skill from 1 - 600.",
+},[[
+step
+talk Stonebreaker Ruian##66979 |goto The Jade Forest/0 27.8,14.8
+skillmax Mining,75
+step
+map The Jade Forest/0
+path follow loose;loop;ants straight;dist 60
+path	49.2,94.1	50.2,89.4	54.6,92.8
+path	58.2,94.1	61.4,93.4	64.4,91.4
+path	67.2,88.6	69.3,83.5	66.2,76.8
+path	61.6,71.0	56.0,69.7	58.9,62.9
+path	60.8,57.6	58.5,48.9	53.9,39.9
+path	55.3,33.5	56.1,29.1	53.9,26.1
+path	51.4,21.8	46.2,17.1	38.4,8.7
+path	35.8,12.4	32.7,13.0	28.2,21.4
+path	30.3,25.6	30.9,29.5	30.2,37.0
+path	29.6,43.8	29.8,52.9	33.2,55.5
+path	36.2,64.9	39.8,69.5	39.0,78.4
+path	40.4,84.3	44.8,90.6
+#include "follow_path_mine"
+skill Mining,75
+step
+talk Stonebreaker Ruian##66979 |goto The Jade Forest/0 27.8,14.8
+skillmax Mining,150
+step
+map The Jade Forest/0
+path follow loose;loop;ants straight;dist 60
+path	49.2,94.1	50.2,89.4	54.6,92.8
+path	58.2,94.1	61.4,93.4	64.4,91.4
+path	67.2,88.6	69.3,83.5	66.2,76.8
+path	61.6,71.0	56.0,69.7	58.9,62.9
+path	60.8,57.6	58.5,48.9	53.9,39.9
+path	55.3,33.5	56.1,29.1	53.9,26.1
+path	51.4,21.8	46.2,17.1	38.4,8.7
+path	35.8,12.4	32.7,13.0	28.2,21.4
+path	30.3,25.6	30.9,29.5	30.2,37.0
+path	29.6,43.8	29.8,52.9	33.2,55.5
+path	36.2,64.9	39.8,69.5	39.0,78.4
+path	40.4,84.3	44.8,90.6
+#include "follow_path_mine"
+skill Mining,150
+step
+talk Stonebreaker Ruian##66979 |goto The Jade Forest/0 27.8,14.8
+skillmax Mining,225
+step
+map The Jade Forest/0
+path follow loose;loop;ants straight;dist 60
+path	49.2,94.1	50.2,89.4	54.6,92.8
+path	58.2,94.1	61.4,93.4	64.4,91.4
+path	67.2,88.6	69.3,83.5	66.2,76.8
+path	61.6,71.0	56.0,69.7	58.9,62.9
+path	60.8,57.6	58.5,48.9	53.9,39.9
+path	55.3,33.5	56.1,29.1	53.9,26.1
+path	51.4,21.8	46.2,17.1	38.4,8.7
+path	35.8,12.4	32.7,13.0	28.2,21.4
+path	30.3,25.6	30.9,29.5	30.2,37.0
+path	29.6,43.8	29.8,52.9	33.2,55.5
+path	36.2,64.9	39.8,69.5	39.0,78.4
+path	40.4,84.3	44.8,90.6
+#include "follow_path_mine"
+skillmax Mining,225
+step
+talk Stonebreaker Ruian##66979 |goto The Jade Forest/0 27.8,14.8
+skillmax Mining,300
+step
+map The Jade Forest/0
+path follow loose;loop;ants straight;dist 60
+path	49.2,94.1	50.2,89.4	54.6,92.8
+path	58.2,94.1	61.4,93.4	64.4,91.4
+path	67.2,88.6	69.3,83.5	66.2,76.8
+path	61.6,71.0	56.0,69.7	58.9,62.9
+path	60.8,57.6	58.5,48.9	53.9,39.9
+path	55.3,33.5	56.1,29.1	53.9,26.1
+path	51.4,21.8	46.2,17.1	38.4,8.7
+path	35.8,12.4	32.7,13.0	28.2,21.4
+path	30.3,25.6	30.9,29.5	30.2,37.0
+path	29.6,43.8	29.8,52.9	33.2,55.5
+path	36.2,64.9	39.8,69.5	39.0,78.4
+path	40.4,84.3	44.8,90.6
+#include "follow_path_mine"
+skillmax Mining,300
+step
+talk Stonebreaker Ruian##66979 |goto The Jade Forest/0 27.8,14.8
+skillmax Mining,300
+step
+map The Jade Forest/0
+path follow loose;loop;ants straight;dist 60
+path	49.2,94.1	50.2,89.4	54.6,92.8
+path	58.2,94.1	61.4,93.4	64.4,91.4
+path	67.2,88.6	69.3,83.5	66.2,76.8
+path	61.6,71.0	56.0,69.7	58.9,62.9
+path	60.8,57.6	58.5,48.9	53.9,39.9
+path	55.3,33.5	56.1,29.1	53.9,26.1
+path	51.4,21.8	46.2,17.1	38.4,8.7
+path	35.8,12.4	32.7,13.0	28.2,21.4
+path	30.3,25.6	30.9,29.5	30.2,37.0
+path	29.6,43.8	29.8,52.9	33.2,55.5
+path	36.2,64.9	39.8,69.5	39.0,78.4
+path	40.4,84.3	44.8,90.6
+#include "follow_path_mine"
+skillmax Mining,300
+step
+talk Stonebreaker Ruian##66979 |goto The Jade Forest/0 27.8,14.8
+skillmax Mining,375
+step
+map The Jade Forest/0
+path follow loose;loop;ants straight;dist 60
+path	49.2,94.1	50.2,89.4	54.6,92.8
+path	58.2,94.1	61.4,93.4	64.4,91.4
+path	67.2,88.6	69.3,83.5	66.2,76.8
+path	61.6,71.0	56.0,69.7	58.9,62.9
+path	60.8,57.6	58.5,48.9	53.9,39.9
+path	55.3,33.5	56.1,29.1	53.9,26.1
+path	51.4,21.8	46.2,17.1	38.4,8.7
+path	35.8,12.4	32.7,13.0	28.2,21.4
+path	30.3,25.6	30.9,29.5	30.2,37.0
+path	29.6,43.8	29.8,52.9	33.2,55.5
+path	36.2,64.9	39.8,69.5	39.0,78.4
+path	40.4,84.3	44.8,90.6
+#include "follow_path_mine"
+skillmax Mining,375
+step
+talk Stonebreaker Ruian##66979 |goto The Jade Forest/0 27.8,14.8
+skillmax Mining,450
+step
+map The Jade Forest/0
+path follow loose;loop;ants straight;dist 60
+path	49.2,94.1	50.2,89.4	54.6,92.8
+path	58.2,94.1	61.4,93.4	64.4,91.4
+path	67.2,88.6	69.3,83.5	66.2,76.8
+path	61.6,71.0	56.0,69.7	58.9,62.9
+path	60.8,57.6	58.5,48.9	53.9,39.9
+path	55.3,33.5	56.1,29.1	53.9,26.1
+path	51.4,21.8	46.2,17.1	38.4,8.7
+path	35.8,12.4	32.7,13.0	28.2,21.4
+path	30.3,25.6	30.9,29.5	30.2,37.0
+path	29.6,43.8	29.8,52.9	33.2,55.5
+path	36.2,64.9	39.8,69.5	39.0,78.4
+path	40.4,84.3	44.8,90.6
+#include "follow_path_mine"
+skillmax Mining,450
+step
+talk Stonebreaker Ruian##66979 |goto The Jade Forest/0 27.8,14.8
+skillmax Mining,525
+step
+map The Jade Forest/0
+path follow loose;loop;ants straight;dist 60
+path	49.2,94.1	50.2,89.4	54.6,92.8
+path	58.2,94.1	61.4,93.4	64.4,91.4
+path	67.2,88.6	69.3,83.5	66.2,76.8
+path	61.6,71.0	56.0,69.7	58.9,62.9
+path	60.8,57.6	58.5,48.9	53.9,39.9
+path	55.3,33.5	56.1,29.1	53.9,26.1
+path	51.4,21.8	46.2,17.1	38.4,8.7
+path	35.8,12.4	32.7,13.0	28.2,21.4
+path	30.3,25.6	30.9,29.5	30.2,37.0
+path	29.6,43.8	29.8,52.9	33.2,55.5
+path	36.2,64.9	39.8,69.5	39.0,78.4
+path	40.4,84.3	44.8,90.6
+#include "follow_path_mine"
+skillmax Mining,525
+step
+You have reached the end of the guide
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Farming Guides\\Leather",{
 author="support@zygorguides.com",
 description="This guide will allow you to farm the various leathers.",
 },[[
@@ -5411,7 +4540,160 @@ kill Sha-Infested Prowler##66668+
 Click here to pick a different leather |confirm |next "start"
 only if ZGV.guidesets['ProfessionsHMoP']
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Farming Guides\\Cloth",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Skinning 1-600 Leveling Guide",{
+author="support@zygorguides.com",
+completion={"skill","Skinning",600},
+condition_suggested="hasprof('Skinning',1,600)",
+description="This guide will walk you through leveling your Skinning skill from 1-600.",
+},[[
+step
+#include "trainer_Skinning"
+skillmax Skinning,75
+step
+#include "vendor_Leatherworking"
+buy 1 Skinning Knife##7005 |condition itemcount(7005) >= 1 or skill("Skinning")>=60
+step
+#include "home_ValleyofHonor"
+step
+map Durotar
+path follow loose;loop;ants straight;dist 60
+path	56.2,31.4	58.1,23.9	56.3,15.5
+path	52.8,10.7	51.3,14.0	48.9,16.0
+path	49.7,17.9		53.8,18.6
+Kill any beasts you see and skin them
+skill Skinning,60
+step
+#include trainer_Skinning
+skillmax Skinning,150
+step
+map Northern Barrens
+path follow loose;loop;ants straight;dist 60
+path	65.2,57.4	67.8,63.9	63.9,67.0
+path	61.1,71.2	62.3,77.1	58.9,75.7
+path	55.7,71.1	57.9,65.2	62.2,63.1
+path	64.0,58.1
+Kill any beasts you see and skin them
+skill Skinning,120
+step
+map Ashenvale
+path follow loose;loop;ants straight;dist 60
+path	69.1,69.8	69.3,66.4	67.8,62.1
+path	64.8,64.0	63.2,68.2	66.1,70.6
+Kill any beasts you see and skin them
+skill Skinning,150
+step
+#include trainer_Skinning
+skillmax Skinning,225
+step
+map Southern Barrens
+path follow loose;loop;ants straight;dist 60
+path	42.5,50.1	43.6,49.5	45.5,48.8
+path	49.0,47.7	50.3,45.4	48.4,43.5
+path	46.9,43.1	44.6,43.1	43.0,45.0
+Kill any beasts you see and skin them
+skill Skinning,205
+step
+#include trainer_Skinning
+skillmax Skinning,300
+step
+map Thousand Needles
+path follow loose;loop;ants straight;dist 60
+path	73.0,48.0	69.8,49.1	67.2,46.2
+path	64.7,43.9	61.1,43.4	56.9,43.4
+path	65.0,68.5	66.0,74.1	63.9,79.3
+path	64.2,85.3	66.5,92.7	70.1,94.5
+Kill any beasts you see and skin them
+skill Skinning,265
+step
+map Un'Goro Crater
+path follow loose;loop;ants straight;dist 60
+path	73.0,48.0	69.8,49.1	67.2,46.2
+path	64.7,43.9	63.0,52.9	61.1,63.8
+path	65.0,68.5	66.0,74.1	63.9,79.3
+path	68.6,73.3	71.0,62.6	72.4,52.1
+Kill any beasts you see and skin them
+skill Skinning,300
+step
+#include trainer_Skinning
+skillmax Skinning,375
+step
+map Hellfire Peninsula
+path follow loose;loop;ants straight;dist 60
+path 62.0,56.6	60.6,56.8	58.9,56.1
+path 57.2,56.0	56.2,54.3	58.2,54.2
+path 59.9,54.6	66.6,61.4	69.1,61.6
+path 70.3,63.7	70.6,66.4	69.3,66.5
+path 68.0,65.2	66.5,62.5	65.3,61.0
+path 64.0,60.1	62.4,57.4
+Kill any beasts you see and skin them
+skill Skinning,305
+step
+map Hellfire Peninsula
+path follow loose;loop;ants straight;dist 60
+path 54.9,70.9	53.1,71.5	51.7,72.7
+path 50.7,74.9	48.9,75.4	48.1,73.0
+path 48.0,71.1	46.4,69.9	46.5,67.8
+path 48.1,64.9	47.4,63.0	49.3,62.8
+path 51.4,65.9	52.9,68.8	54.9,70.1
+Kill any beasts you see and skin them
+skill Skinning,310
+step
+map Hellfire Peninsula
+path follow loose;loop;ants straight;dist 60
+path 40.7,85.6	37.6,86.1	34.9,88.8
+path 32.7,91.5	33.6,92.4	35.9,91.2
+path 37.8,89.9	39.2,88.5	40.7,86.6
+Kill any beasts you see and skin them
+skill Skinning,330
+step
+map Nagrand
+path follow loose;loop;ants straight;dist 60
+path 56.2,21.2	55.2,23.2	53.7,24.3
+path 52.7,26.0	52.5,28.4	52.8,31.3
+path 50.4,37.1	51.7,39.9	53.1,42.2
+path 51.3,45.3	48.8,45.1	48.0,42.0
+path 47.9,38.5	48.0,32.4	48.0,29.1
+path 50.8,27.4	51.8,23.8	54.8,21.5
+path 56.4,20.0i
+Kill any beasts you see and skin them
+skill Skinning,350
+step
+#include trainer_Skinning
+skillmax Skinning,450
+step
+map Borean Tundra
+path follow loose;loop;ants straight;dist 60
+path 51.5,68.8	49.8,67.7	46.9,70.7
+path 44.2,71.0	41.1,70.7	38.5,71.8
+path 41.9,74.4	45.3,74.9	48.1,74.4
+path 49.6,72.3	51.6,69.1
+Kill any rhinos you see and skin them
+skill Skinning,395
+step
+map Sholazar Basin
+path follow loose;loop;ants straight;dist 60
+path 28.8,55.9	29.7,51.6	31.1,46.4
+path 32.2,40.4	28.6,42.9	25.6,47.9
+path 23.5,52.3	22.6,58.7	22.6,65.3
+path 22.3,70.2	26.4,72.7	28.9,69.1
+path 29.6,64.4
+Kill any beasts you see and skin them
+skill Skinning,450
+step
+#include trainer_Skinning
+skillmax Skinning,525
+step
+map Kelp'thar Forest
+path follow loose;loop;ants straight;dist 60
+path 56.0,36.5	57.8,39.4	59.1,39.7
+path 59.4,36.9	57.6,34.9
+Kill any crabs and serpents in the area
+skill Skinning,525
+step
+Click here to proceed |confirm |next "Profession Guides\\Skinning\\Leveling Guides\\Skinning 525-600 Leveling Guide"
+|tip This will take you to the Skinning 525 - 600 guides.
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Cloth",{
 author="support@zygorguides.com",
 description="This guide will allow you to farm the various cloths.",
 },[[
@@ -5457,4 +4739,327 @@ step "windwool"
 kill Springtail Leaper##57415+, Springtail Gnasher##57413+ |goto Valley of the Four Winds 43.9,38.6
 Click here to pick a different cloth |confirm |next "start"
 only if ZGV.guidesets['ProfessionsHMoP']
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Tailoring 1-600 Leveling Guide",{
+author="support@zygorguides.com",
+completion={"skill","Tailoring",600},
+condition_suggested="hasprof('Tailoring',1,600)",
+description="This guide will walk you through leveling your Tailoring skill from 1-600.",
+},[[
+step
+#include "trainer_Tailoring"
+skillmax Tailoring,75
+|tip You must be at least level 5.
+step
+kill Venture Co. Supervisor##2979+, Enforcer Emilgund##5787+, Supervisor Fizsprocket##3051+, Venture Co. Worker##2978+
+collect 156 Linen Cloth##2589 |goto Mulgore 60.6,47.7 |condition skill("Tailoring")>=75
+|tip You can also buy these materials from the Auction House.
+step
+create Bolt of Linen Cloth##2963,Tailoring,78 total |n
+skill Tailoring,35
+step
+#include "trainer_Tailoring"
+learn Heavy Linen Gloves##3840 |condition skill("Tailoring")>=75
+step
+#include "vendor_Tailoring"
+buy 40 Coarse Thread##2320 |condition itemcount(2320) >= 40 or skill("Tailoring")>=75
+step
+create 21 Heavy Linen Gloves##3840,Tailoring,70
+step
+#include "trainer_Tailoring"
+learn Reinforced Linen Cape##2397 |condition skill("Tailoring")>=75
+step
+create 5 Reinforced Linen Cape##2397,Tailoring,75
+step
+#include "trainer_Tailoring"
+skillmax Tailoring,150
+|tip You must be level 10.
+step
+#include "trainer_Tailoring"
+learn Bolt of Woolen Cloth##2964 |condition skill("Tailoring")>=125
+step
+kill Dragonmaw Whelpstealer##42041+, Ebon Slavehunter##42043+
+collect 110 Linen Cloth##2589 |only itemcount(2996)<24 |goto Wetlands 66.67,47.11 |condition skill("Tailoring")>=125
+collect 135 Wool Cloth##2592 |goto Wetlands 66.67,47.11 |condition skill("Tailoring")>=125
+|tip You can also buy these materials from the Auction House.
+step
+create 55 Bolt of Linen Cloth##2963,Tailoring,55 total |n
+collect 55 Linen Cloth##2996 |condition skill("Tailoring")>=125
+step
+create 45 Bolt of Woolen Cloth##2964,Tailoring,45 total |n
+skill Tailoring,100
+step
+#include "trainer_Tailoring"
+learn Simple Kilt##12046 |condition skill("Tailoring")>=125
+step
+#include "vendor_Tailoring"
+buy 45 Fine Thread##2321 |condition itemcount(2321) >= 45 or skill("Tailoring")>=125
+step
+create Simple Kilt##12046,Tailoring,110
+step
+#include "trainer_Tailoring"
+learn Double-stitched Woolen Shoulders##3848 |condition skill("Tailoring")>=125
+step
+create 15 Double-stitched Woolen Shoulders##3848,Tailoring,125
+step
+#include "trainer_Tailoring"
+skillmax Tailoring,225
+|tip You must be at least level 20.
+step
+#include "trainer_Tailoring"
+learn Bolt of Silk Cloth##3839 |condition skill("Tailoring")>=200
+step
+kill Grimtotem Marauder##39949+
+collect 644 Silk Cloth##4306 |goto Feralas/0 87.3,45.0 |condition skill("Tailoring")>=200
+|tip You may potentially be flagged farming here. Avoid attacking Feralas Sentinels.
+collect 480 Mageweave Cloth##4338 |n
+|tip You can also buy these materials from the Auction House.
+Save any Mageweave you collect
+step
+kill Irontree Chopper##48452+
+collect 480 Mageweave Cloth##4338 |goto Felwood 63.4,20.7 |condition skill("Tailoring")>=200
+|tip You can also buy these materials from the Auction House.
+step
+create 161 Bolt of Silk Cloth##3839,Tailoring,161 total |n
+skill Tailoring,145
+step
+#include "trainer_Tailoring"
+learn Azure Silk Hood##8760 |condition skill("Tailoring")>=200
+step
+create Azure Silk Hood##8760,Tailoring,160
+step
+#include "trainer_Tailoring"
+learn Silk Headband##8762 |condition skill("Tailoring")>=200
+step
+create 10 Silk Headband##8762,Tailoring,170
+step
+#include "trainer_Tailoring"
+learn Formal White Shirt##3871 |condition skill("Tailoring")>=200
+step
+create 5 Formal White Shirt##3871,Tailoring,175
+step
+#include "trainer_Tailoring"
+learn Bolt of Mageweave##3865 |condition skill("Tailoring")>=200
+step
+create Bolt of Mageweave##3865,Tailoring,120 total |n
+skill Tailoring,185
+step
+#include "trainer_Tailoring"
+learn Crimson Silk Vest##8791 |condition skill("Tailoring")>=200
+step
+create 15 Crimson Silk Vest##8791,Tailoring,200
+step
+#include "trainer_Tailoring"
+skillmax Tailoring,300
+|tip You must be at least level 35.
+step
+#include "trainer_Tailoring"
+learn Crimson Silk Pantaloons##8799 |condition skill("Tailoring")>=300
+step
+create 15 Crimson Silk Pantaloons##8799,Tailoring,215
+step
+#include "trainer_Tailoring"
+learn Black Mageweave Leggings##12049 |condition skill("Tailoring")>=300
+step
+create 5 Black Mageweave Leggings##12049,Tailoring,220
+step
+#include "trainer_Tailoring"
+learn Black Mageweave Gloves##12053 |condition skill("Tailoring")>=300
+step
+create 10 Black Mageweave Gloves##12053,Tailoring,230
+step
+#include "trainer_Tailoring"
+learn Black Mageweave Headband##12072 |condition skill("Tailoring")>=300
+step
+create Black Mageweave Headband##12072,Tailoring,250
+step
+kill Twilight Keeper Havunth##11804+, Twilight Geolord##11881+, Twilight Avenger##11880+, Twilight Stonecaller##11882
+collect 800 Runecloth##14047 |goto Silithus 45.8,38.2 |condition skill("Tailoring")>=300
+|tip You can also buy these materials from the Auction House.
+You can find more Twilight enemies here [35.7,32.5]
+You can find more Twilight enemies here [29.5,73.4]
+You can find more Twilight enemies here [66.1,20.3]
+step
+#include "trainer_Tailoring"
+learn Bolt of Runecloth##18401 |condition skill("Tailoring")>=300
+step
+create Bolt of Runecloth##18401,Tailoring,200 total |n
+skill Tailoring,260
+step
+#include "vendor_Tailoring"
+buy 65 Rune Thread##14341 |condition itemcount(14341) >= 65 or skill("Tailoring")>=300
+step
+#include "trainer_Tailoring"
+learn Runecloth Belt##18402 |condition skill("Tailoring")>=300
+step
+create Runecloth Belt##18402,Tailoring,275
+step
+#include "trainer_Tailoring"
+learn Runecloth Gloves##18417 |condition skill("Tailoring")>=300
+step
+create 23 Runecloth Gloves##18417,Tailoring,295
+step
+#include "trainer_Tailoring"
+learn Runecloth Headband##18444 |condition skill("Tailoring")>=300
+step
+create 5 Runecloth Headband##18444,Tailoring,300
+step
+#include "trainer_Tailoring"
+skillmax Tailoring,375
+|tip You must be at least level 50.
+step
+#include "trainer_Tailoring"
+learn Bolt of Netherweave##26745 |condition skill("Tailoring")>=350
+step
+Kill _Sunfury enemies_ around the area
+collect 800 Netherweave Cloth##21877 |goto Netherstorm 26.3,68.1 |condition skill("Tailoring")>=350
+modelnpc Sunfury Magister##18855
+modelnpc Sunfury Astromancer##19643
+modelnpc Sunfury Captain##19453
+modelnpc Sunfury Bloodwarder##18853
+modelnpc Sunfury Geologist##19779
+modelnpc Sunfury Warp-Master##18857
+step
+talk Eiin##19213
+buy Pattern: Netherweave Tunic##21897 |goto Shattrath City 66.3,69.3 |condition _G.IsSpellKnown(26774) or itemcount(21897) >= 1 or skill("Tailoring")>=350
+step
+talk Auctioneer Lyrsara##50140 |goto Shattrath City/0 56.7,62.4 |only if rep ('The Scryers') >= Friendly
+talk Auctioneer Braku##50145 |goto Shattrath City/0 51.4,27.4 |only if rep ('The Aldor') >= Neutral
+buy 20 Knothide Leather##21887 |condition itemcount(21887) >= 20 or skill("Tailoring")>=350
+step
+create Bolt of Netherweave##26745,Tailoring,160 total |n
+skill Tailoring,325
+step
+#include "trainer_Tailoring"
+learn Netherweave Pants##26771 |condition skill("Tailoring")>=350
+step
+#include "vendor_Tailoring"
+buy 30 Rune Thread##14341 |condition itemcount(14341) >= 30 or skill("Tailoring")>=350
+step
+create 10 Netherweave Pants##26771,Tailoring,335
+step
+#include "trainer_Tailoring"
+learn Netherweave Boots##26772 |condition skill("Tailoring")>=350
+step
+create 10 Netherweave Boots##26772,Tailoring,345
+step
+use Pattern: Netherweave Tunic##21897
+learn Netherweave Tunic##26774 |condition skill("Tailoring")>=350
+step
+create 5 Netherweave Tunic##26774,Tailoring,350
+step
+#include "trainer_Tailoring"
+skillmax Tailoring,450
+|tip You must be at least level 65.
+step
+#include "trainer_Tailoring"
+learn Bolt of Frostweave##55899 |condition skill("Tailoring")>=425
+step
+talk Raenah##26969
+accept Cloth Scavenging##13270 |instant |goto Borean Tundra 41.6,53.4 |condition skill("Tailoring")>=425
+step
+kill Dark Zealot##34728+, Dark Ritualist##34734+
+collect 1875 Frostweave Cloth##33470 |n |goto Icecrown 61.8,20.8
+create Bolt of Frostweave##55899,Tailoring, 340 total |condition skill("Tailoring")>=425
+|tip You can also buy these materials from the Auction House.
+step
+create Bolt of Frostweave##55899,Tailoring,375 total |n
+skill Tailoring,375
+step
+#include "trainer_Tailoring"
+learn Frostwoven Belt##55908 |condition skill("Tailoring")>=425
+step
+#include "vendor_Tailoring"
+buy 50 Eternium Thread##38426 |condition itemcount(38426) >= 50 or skill("Tailoring")>=425
+step
+create 5 Frostwoven Belt##55908,Tailoring,380
+step
+#include "trainer_Tailoring"
+learn Frostwoven Boots##55906 |condition skill("Tailoring")>=425
+step
+create 5 Frostwoven Boots##55906,Tailoring,385
+step
+#include "trainer_Tailoring"
+learn Frostwoven Cowl##55907 |condition skill("Tailoring")>=425
+step
+create 5 Frostwoven Cowl##55907,Tailoring,395
+step
+#include "trainer_Tailoring"
+learn Duskweave Belt##55914 |condition skill("Tailoring")>=425
+step
+create 13 Duskweave Belt##55914,Tailoring,405
+step
+#include "trainer_Tailoring"
+learn Duskweave Wristwraps##55920 |condition skill("Tailoring")>=425
+step
+create 5 Duskweave Wristwraps##55920,Tailoring,410
+step
+#include "trainer_Tailoring"
+learn Duskweave Gloves##55922 |condition skill("Tailoring")>=425
+step
+create 5 Duskweave Gloves##55922,Tailoring,415
+step
+#include "trainer_Tailoring"
+learn Duskweave Boots##55924 |condition skill("Tailoring")>=425
+step
+create 13 Duskweave Boots##55924,Tailoring,425
+step
+#include "trainer_Tailoring"
+skillmax Tailoring,525
+|tip You must be at least level 75.
+step
+learn Bolt of Embersilk Cloth##74964 |condition skill("Tailoring")>=500
+step
+kill Twilight Augur##40713+, Twilight Retainer##40767+
+collect 1025 Embersilk Cloth##53010 |condition skill("Tailoring")>=500 |goto Mount Hyjal 55.8,68.0 |or
+create Bolt of Embersilk Cloth##74964,Tailoring,205 total |or
+step
+create Bolt of Embersilk Cloth##74964,Tailoring,205 total |n
+skill Tailoring,450
+step
+#include "vendor_Tailoring"
+buy 100 Eternium Thread##38426 |condition itemcount(38426) >= 100 or skill("Tailoring")>=500
+step
+#include "trainer_Tailoring"
+learn Deathsilk Bracers##75249 |condition skill("Tailoring")>=500
+step
+create 5 Deathsilk Bracers##75249,Tailoring,455
+step
+#include "trainer_Tailoring"
+learn Deathsilk Boots##75252 |condition skill("Tailoring")>=500
+step
+create 5 Deathsilk Boots##75252,Tailoring,460
+step
+#include "trainer_Tailoring"
+learn Deathsilk Leggings##75254 |condition skill("Tailoring")>=500
+step
+create 5 Deathsilk Leggings##75254,Tailoring,465
+step
+#include "trainer_Tailoring"
+learn Deathsilk Cowl##75256 |condition skill("Tailoring")>=500
+step
+create 5 Deathsilk Cowl##75256,Tailoring,470
+step
+#include "trainer_Tailoring"
+learn Spiritmend Belt##75258 |condition skill("Tailoring")>=500
+step
+create 5 Spiritmend Belt##75258,Tailoring,475
+step
+#include "trainer_Tailoring"
+learn Spiritmend Boots##75261 |condition skill("Tailoring")>=500
+step
+create 5 Spiritmend Boots##75261,Tailoring,480
+step
+#include "trainer_Tailoring"
+learn Spiritmend Leggings##75263 |condition skill("Tailoring")>=500
+step
+create 5 Spiritmend Leggings##75263,Tailoring,485
+step
+#include "trainer_Tailoring"
+learn Spiritmend Robe##75267 |condition skill("Tailoring")>=500
+step
+create 15 Spiritmend Robe##75267,Tailoring,500
+step
+Click here to proceed |next "Profession Guides\\Tailoring\\Leveling Guides\\Tailoring 500-600 Leveling Guide"
+|tip This will take you to the Tailoring 500 - 600 guides.
 ]])

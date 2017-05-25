@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("DailiesHWOD") then return end
 ZygorGuidesViewer.GuideMenuTier = "WOD"
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Warlords of Draenor\\Frostwall Tavern Dungeon Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Warlords of Draenor\\Frostwall Tavern Dungeon Dailies",{
 description="This guide will take you through the Frostwall Tavern dungeon dailies.",
 },[[
 step
@@ -305,7 +305,7 @@ turnin A Hero's Quest is Never Complete##37237
 |tip Turn in NPCs can sometimes be found behind the tavern or downstairs.
 next "queuemenu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Warlords of Draenor\\Fishing Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Warlords of Draenor\\Fishing Dailies",{
 description="This guide will take you through the Fishing dailies.",
 },[[
 step
@@ -425,7 +425,7 @@ step
 You've completed the daily for today
 Click to restart the dailies run |confirm |next "start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Warlords of Draenor\\Battle Pets Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Warlords of Draenor\\Battle Pets Dailies",{
 description="This guide will take you through the Battle Pets dailies.",
 },[[
 step
@@ -562,7 +562,7 @@ talk Kura Thunderhoof##91361
 turnin Critters of Draenor##38300 |goto 33.36,42.83
 next "start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Warlords of Draenor\\High Overlord Saurfang Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Warlords of Draenor\\High Overlord Saurfang Dailies",{
 description="This guide will walk you through completing the daily dungeon and weekly raid quests from High Overlord Saurfang in your garrison",
 endlevel=100
 },[[
@@ -785,7 +785,7 @@ label "End"
 You have completed today's daily quest, check back tomorrow!
 Click _here_ to return |confirm |next "Start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Warlords of Draenor\\Harrison Jones Treasure Contracts",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Warlords of Draenor\\Harrison Jones Treasure Contracts",{
 description="This guide will walk you through completing the Master Relic Hunter quests offered by Harrison Jones in your garrison.",
 endlevel=100
 },[[
@@ -1114,10 +1114,10 @@ Brew the Laughing Skull Elixir |q The Silent Skull: Taking from the Taker##37996
 step
 click Cauldron##3365
 |tip It's a rusty cauldron sitting on a stone slab inside the cave.
-Drink the Elixir |havebuff Interface\Icons\Spell_Nature_ElementalAbsorption |goto Gorgrond/0 59.9,31.6
+Drink the Elixir |havebuff 136027 |goto Gorgrond/0 59.9,31.6
 only if havequest(37996)
 step
-Maintain your Elixir buff! |havebuff Interface\Icons\Spell_Nature_ElementalAbsorption |only if havequest(37996)
+Maintain your Elixir buff! |havebuff 136027 |only if havequest(37996)
 |tip As you follow the path, avoid the skulls along the route.
 |tip If you are spotted by a skull you will lose the buff and have to go back for it.
 clicknpc Gu'rakh##90285
@@ -1145,7 +1145,7 @@ step
 You have finished today's daily Treasure Contract! Check back tomorrow
 Click here to return to the menu |confirm |next "Start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Warlords of Draenor\\Shadow Hunter Ty'jin Daily Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Warlords of Draenor\\Shadow Hunter Ty'jin Daily Quests",{
 description="This guide will walk you through completing the Group 3 daily kill quests offered by Shadow Hunter Ty'jin in your garrison",
 endlevel=100
 },[[
@@ -1270,7 +1270,7 @@ step
 You have finished today's daily group quest. Check back tomorrow
 Click here to return to the menu |confirm |next "Start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Warlords of Draenor\\Garrison Assault Daily Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Warlords of Draenor\\Garrison Assault Daily Quests",{
 description="This guide will walk you through the Garrison Assault daily quests.",
 },[[
 step
@@ -1547,7 +1547,7 @@ You've completed the dailies for today
 Click to restart the dailies run |confirm |next "assault_dailies_start"
 |tip You can also click to restart if you want to do more Scouting Missives.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Warlords of Draenor\\Garrison Building Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Warlords of Draenor\\Garrison Building Dailies",{
 description="This guide will walk you through the garrison daily quests offered from various garrison buildings.",
 },[[
 step
@@ -1628,7 +1628,7 @@ Proceeding |next "Skulker1" |only if havequest(35071) and not hasfollower(202)
 Proceeding |next "Skulker2" |only if havequest(35071) and hasfollower(202)
 step
 label "Gulper1"
-Maintain your Abyssal Gulper Eel Bait buff |havebuff Interface\Icons\inv_fishing_lure_frogfish |use Abyssal Gulper Eel Bait##110293 |only if itemcount(110293) > 0
+Maintain your Abyssal Gulper Eel Bait buff |havebuff 970847 |use Abyssal Gulper Eel Bait##110293 |only if itemcount(110293) > 0
 Fish in the water here |cast Fishing##131474
 use Small Abyssal Gulper Eel##111659 |only if itemcount(111659) > 4
 use Abyssal Gulper Eel##111664 |only if itemcount(111664) > 4
@@ -1637,7 +1637,7 @@ collect 10 Abyssal Gulper Eel Egg##112627 |q Abyssal Gulper Eel##35075/1 |goto S
 step
 label "Gulper2"
 #include "H_Garrison_Pagle"
-Ask him: "_Any regular fish bait?_" and then select "_Abyssal Gulper Eel_" |havebuff Interface\Icons\inv_fishing_lure_frogfish
+Ask him: "_Any regular fish bait?_" and then select "_Abyssal Gulper Eel_" |havebuff 970847
 Fish in the water here |cast Fishing##131474
 use Small Abyssal Gulper Eel##111659 |only if itemcount(111659) > 4
 use Abyssal Gulper Eel##111664 |only if itemcount(111664) > 4
@@ -1646,7 +1646,7 @@ collect 10 Abyssal Gulper Eel Egg##112627 |q Abyssal Gulper Eel##35075/1 |goto F
 next "FishTurnin"
 step
 label "Whiptail1"
-Maintain your Blackwater Whiptail Bait buff |havebuff Interface\Icons\inv_fishing_lure_clam |use Blackwater Whiptail Bait##110294 |only if itemcount(110294) > 0
+Maintain your Blackwater Whiptail Bait buff |havebuff 970845 |use Blackwater Whiptail Bait##110294 |only if itemcount(110294) > 0
 Fish in the water here |cast Fishing##131474
 use Small Blackwater Whiptail##111662 |only if itemcount(111662) > 4
 use Blackwater Whiptail##111663 |only if itemcount(111663) > 4
@@ -1655,7 +1655,7 @@ collect 10 Blackwater Whiptail Egg#112626 |q Blackwater Whiptail##35074/1 |goto 
 step
 label "Whiptail2"
 #include "H_Garrison_Pagle"
-Ask him: "_Any regular fish bait?_" and then select "_Blackwater Whiptail_" |havebuff Interface\Icons\inv_fishing_lure_clam
+Ask him: "_Any regular fish bait?_" and then select "_Blackwater Whiptail_" |havebuff 970845
 Fish in the water here |cast Fishing##131474
 use Small Blackwater Whiptail##111662 |only if itemcount(111662) > 4
 use Blackwater Whiptail##111663 |only if itemcount(111663) > 4
@@ -1664,7 +1664,7 @@ collect 10 Blackwater Whiptail Egg#112626 |q Blackwater Whiptail##35074/1 |goto 
 next "FishTurnin"
 step
 label "Sturgeon1"
-Maintain your Blind Lake Sturgeon bait buff |havebuff Interface\Icons\inv_fishing_lure_sandcrab |use Blind Lake Sturgeon Bait##110290 |only if itemcount(110290) > 0
+Maintain your Blind Lake Sturgeon bait buff |havebuff 970850 |use Blind Lake Sturgeon Bait##110290 |only if itemcount(110290) > 0
 Fish in the water here |cast Fishing##131474
 use Small Blind Lake Sturgeon##111652 |only if itemcount(111652) > 4
 use Blind Lake Sturgeon##111667 |only if itemcount(111667) > 4
@@ -1673,7 +1673,7 @@ collect 10 Blind Lake Sturgeon Egg##112629 |q Blind Lake Sturgeon##35073/1 |goto
 step
 label "Sturgeon2"
 #include "H_Garrison_Pagle"
-Ask him: "_Any regular fish bait?_" and then select "_Blind Lake Sturgeon_" |havebuff Interface\Icons\inv_fishing_lure_sandcrab
+Ask him: "_Any regular fish bait?_" and then select "_Blind Lake Sturgeon_" |havebuff 970850
 Fish in the water here |cast Fishing##131474
 use Small Blind Lake Sturgeon##111652 |only if itemcount(111652) > 4
 use Blind Lake Sturgeon##111667 |only if itemcount(111667) > 4
@@ -1682,7 +1682,7 @@ collect 10 Blind Lake Sturgeon Egg##112629 |q Blind Lake Sturgeon##35073/1 |goto
 next "FishTurnin"
 step
 label "Sleeper1"
-Maintain your Fat Sleeper Bait buff |havebuff Interface\Icons\inv_fishing_lure_donut |use Fat Sleeper Bait##110289 |only if itemcount(110289) > 0
+Maintain your Fat Sleeper Bait buff |havebuff 970846 |use Fat Sleeper Bait##110289 |only if itemcount(110289) > 0
 Fish in the water here |cast Fishing##131474
 use Small Fat Sleeper##111651 |only if itemcount(111651) > 4
 use Fat Sleeper##111668 |only if itemcount(111668) > 4
@@ -1691,7 +1691,7 @@ collect 10 Fat Sleeper Egg##112631 |q Fat Sleeper##35072/1 |goto Nagrand D 72.5,
 step
 label "Sleeper2"
 #include "H_Garrison_Pagle"
-Ask him: "_Any regular fish bait?_" and then select "_Fat Sleeper_" |havebuff Interface\Icons\inv_fishing_lure_donut
+Ask him: "_Any regular fish bait?_" and then select "_Fat Sleeper_" |havebuff 970846
 Fish in the water here |cast Fishing##131474
 use Small Fat Sleeper##111651 |only if itemcount(111651) > 4
 use Fat Sleeper##111668 |only if itemcount(111668) > 4
@@ -1700,7 +1700,7 @@ collect 10 Fat Sleeper Egg##112631 |q Fat Sleeper##35072/1 |goto Frostwall/0 37.
 next "FishTurnin"
 step
 label "Fire1"
-Maintain your Fire Ammonite Bait buff |havebuff Interface\Icons\inv_fishing_lure_jalapeno |use Fire Ammonite Bait##110291 |only if itemcount(110291) > 0
+Maintain your Fire Ammonite Bait buff |havebuff 970848 |use Fire Ammonite Bait##110291 |only if itemcount(110291) > 0
 Fish in the lava here |cast Fishing##131474
 use Small Fire Ammonite##111656 |only if itemcount(111656) > 4
 use Fire Ammonite##111666 |only if itemcount(111666) > 4
@@ -1709,7 +1709,7 @@ collect 10 Fire Ammonite Egg##112628 |q Fire Ammonite##35066/1 |goto Frostfire R
 step
 label "Fire2"
 #include "H_Garrison_Pagle"
-Ask him: "_Any regular fish bait?_" and then select "_Fire Ammonite_" |havebuff Interface\Icons\inv_fishing_lure_jalapeno
+Ask him: "_Any regular fish bait?_" and then select "_Fire Ammonite_" |havebuff 970848
 Fish in the water here |cast Fishing##131474
 use Small Fire Ammonite##111656 |only if itemcount(111656) > 4
 use Fire Ammonite##111666 |only if itemcount(111666) > 4
@@ -1718,7 +1718,7 @@ collect 10 Fire Ammonite Egg##112628 |q Fire Ammonite##35066/1 |goto Frostwall/0
 next "FishTurnin"
 step
 label "Skulker1"
-Maintain your Jawless Skulker Bait buff |havebuff Interface\Icons\inv_fishing_lure_kelp |use Jawless Skulker Bait##110274 |only if itemcount(110274) > 0
+Maintain your Jawless Skulker Bait buff |havebuff 970849 |use Jawless Skulker Bait##110274 |only if itemcount(110274) > 0
 Fish in the water here |cast Fishing##131474
 use Small Jawless Skulker##111650 |only if itemcount(111650) > 4
 use Jawless Skulker##111669 |only if itemcount(111669) > 4
@@ -1727,7 +1727,7 @@ collect 10 Jawless Skulker Egg##112630 |q Jawless Skulker##35071/1 |goto Gorgron
 step
 label "Skulker2"
 #include "H_Garrison_Pagle"
-Ask him: "_Any regular fish bait?_" and then select "_Jawless Skulker_" |havebuff Interface\Icons\inv_fishing_lure_kelp
+Ask him: "_Any regular fish bait?_" and then select "_Jawless Skulker_" |havebuff 970849
 Fish in the water here |cast Fishing##131474
 use Small Jawless Skulker##111650 |only if itemcount(111650) > 4
 use Jawless Skulker##111669 |only if itemcount(111669) > 4
@@ -1834,21 +1834,21 @@ use Traveler's Pet Supplies##122535 |only if itemcount(122535) >=1
 You have completed today's Menagerie daily quest
 Click here to return to the Main Menu |confirm |next "Menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Warlords of Draenor\\Tanaan Jungle (100)\\Vol'jin's Headhunters Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Warlords of Draenor\\Tanaan Jungle (100)\\Vol'jin's Headhunters Dailies",{
 sugGroup="ACHIEVEMENTS\\Draenor Pathfinder",
 description="This guide will walk you through the daily quests for the Vol'jin's Headhunters faction.",
 },[[
 step
 #include "H_Voljins_Headhunters_Dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Warlords of Draenor\\Tanaan Jungle (100)\\Order of the Awakened Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Warlords of Draenor\\Tanaan Jungle (100)\\Order of the Awakened Dailies",{
 sugGroup="ACHIEVEMENTS\\Draenor Pathfinder",
 description="This guide will walk you through the daily quests for the Order of the Awakened faction.",
 },[[
 step
 #include "H_Order_of_Awakened_Dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Warlords of Draenor\\Tanaan Jungle (100)\\The Saberstalkers",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Warlords of Draenor\\Tanaan Jungle (100)\\The Saberstalkers",{
 sugGroup="ACHIEVEMENTS\\Draenor Pathfinder",
 description="This guide will walk you through the daily quests for the The Saberstalkers faction.",
 },[[

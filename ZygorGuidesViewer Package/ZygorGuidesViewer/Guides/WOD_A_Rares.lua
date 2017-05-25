@@ -9,7 +9,7 @@ ZygorGuidesViewer.GuideMenuTier = "WOD"
 
 -- show poi table with names visible: /run for k,v in ipairs(ZGV.Poi.Guide.steps) do v.tostring=function(s) return s.poi_rare end end  ;  Spoo(nil,nil,ZGV.Poi.Guide.steps)
 
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Rares",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Rares",{
 	hidden=true,
 	poi=true,
 	poitype="rare",
@@ -613,7 +613,7 @@ step
 	|poicurrency AC
 	_Go down_ to the edge of the lava |goto Frostfire Ridge/0 42.8,19.5
 	kill Lava Slime##88430
-	Gain the the Lava Slimed buff |havebuff Interface\Icons\Spell_Fire_Burnout |only if not completedq(37387)
+	Gain the the Lava Slimed buff |havebuff 135789 |only if not completedq(37387) --Spell_Fire_Burnout
 	kill Moltnoma##82614 |q 37387 |future |goto Frostfire Ridge 43.00,21.00
 	|tip You must kill a Lava Slime to gain immunity to the lava damage for 30 seconds. Pay close attention to your buff and kill another Lava Slime when the duration gets low.
 step

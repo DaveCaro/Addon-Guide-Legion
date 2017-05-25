@@ -3,9 +3,11 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("DungeonHMOP") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Classic Dungeons\\Deadmines (DM) 15-18",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Deadmines",{
 mapid=756,
 achieveid={628},
+condition_suggested="level>=15 and level<=21",
+keywords={"Westfall, Defias, DM"},
 description="This guide will walk you through the Deadmines dungeon.",
 },[[
 step
@@ -268,9 +270,11 @@ step
 Congratulations, you have completed The Deadmines! |only if not heroic_dung()
 Congratulations, you have completed The Deadmines (Heroic)! |only if heroic_dung()
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Classic Dungeons\\Wailing Caverns (WC) 18-23",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Wailing Caverns",{
 mapid=749,
 achieveid={630},
+condition_suggested="level>=15 and level<=25",
+keywords={"WC, Barrens, Deviate"},
 description="This guide will walk you through the Wailing Caverns dungeon.",
 },[[
 step
@@ -296,7 +300,7 @@ Follow the path |goto 32.9,40.3 < 8
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-kill 1 Lady Anacondra##3671 |only if havequest(26870) |only if default
+kill 1 Lady Anacondra##3671 |only if default
 kill 1 Lady Anacondra##3671 |q Cleansing the Caverns##26870/2 |only if havequest(26870)
 |tip Lady Anacondra will cast Lightning Bolt on her current target
 |tip She will also put random players to sleep using Druid's Slumber

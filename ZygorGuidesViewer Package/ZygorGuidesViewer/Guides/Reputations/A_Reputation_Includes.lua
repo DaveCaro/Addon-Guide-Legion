@@ -104,7 +104,7 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Circle_Faction",[[
 		path loop off
 		path	50.0,49.9	53.2,41.6	57.1,47.2
 		path	60.0,41.1
-		Surround yourself in Silithyst Dust |havebuff Interface\Icons\Spell_Holiday_ToW_SpiceCloud |c |q 9419
+		Surround yourself in Silithyst Dust |havebuff 135867 |c |q 9419 --Spell_Holiday_ToW_SpiceCloud
 	step
 		Stand inside the big blue-glowing metal machine
 		Deliver Silithyst |q 9419/1 |goto 39.1,46.9
@@ -715,7 +715,7 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		Be ready to fight a couple mobs
 		kill Coilfang Champion##17957+, Coilfang Enchantress##17961+
 		talk Naturalist Bite##17893
-		Tell him _"Naturalist, please grant me your boon"_ |havebuff Interface\Icons\Ability_Druid_FerociousBite |q 29565 |goto 95.7,66.2
+		Tell him _"Naturalist, please grant me your boon"_ |havebuff 132127 |q 29565 |goto 95.7,66.2 --Ability_Druid_FerociousBite
 	step
 		kill Quagmirran##17942+
 		collect The Slave Master's Eye |q 29565/2 |goto The Slave Pens 86.2,67.9
@@ -993,7 +993,7 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		accept Meeting at the Blackwing Coven##10722 |goto 49.9,35.9
 	step
 		kill Grishna Scorncrow##19990+, Grishna Falconwing##19988+, Grishna Harbinger##19989+
-		Get the Understanding Ravenspeech buff |havebuff Interface\Icons\Ability_Hunter_Pet_DragonHawk |q 10722 |goto 42.2,25.1
+		Get the Understanding Ravenspeech buff |havebuff 132188 |q 10722 |goto 42.2,25.1 --Ability_Hunter_Pet_DragonHawk
 		|tip Must be within melee range to receive the buff.
 		Anytime the buff wears off, kill Grishna mobs again to get it back
 	step
@@ -1022,7 +1022,7 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		collect 5 Costume Scraps##31121 |q 10722 |goto 32.3,34.9
 	step
 		Combine your 5 Costume Scraps to make an Overseer Disguise |use Costume Scraps##31121
-		Put on the Overseer Disguise |havebuff Interface\Icons\INV_Chest_Wolf |q 10722 |goto 32.6,37.5 |use Overseer Disguise##31122
+		Put on the Overseer Disguise |havebuff 132760 |q 10722 |goto 32.6,37.5 |use Overseer Disguise##31122 --INV_Chest_Wolf
 		talk Kolphis Darkscale##22019
 		Attend the meeting with Kolphis Darkscale |q 10722/1 |goto 32.6,37.5
 	step
@@ -1081,7 +1081,7 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		Click here to continue. |confirm always
 	step
 		Use your Felsworn Gas Mask to equip it |use Felsworn Gas Mask##31366
-		Wear the Felsworn Gas Mask |havebuff Interface\Icons\INV_Helmet_31 |c |q 10819
+		Wear the Felsworn Gas Mask |havebuff 133133 |c |q 10819 --INV_Helmet_31
 		Click the Legion Communicator 
 		|tip Between 2 big green floating crystals. You must be wearing the Felsworn Gas Mask to use the Legion Communicator
 		turnin Felsworn Gas Mask##10819 |goto 73.3,40.1
@@ -1091,7 +1091,7 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		kill 4 Doomforge Engineer##19960+ |q 10820/2 |goto 74.9,39.9
 	step
 		Use your Felsworn Gas Mask to equip it |use Felsworn Gas Mask##31366
-		Wear the Felsworn Gas Mask |havebuff Interface\Icons\INV_Helmet_31 |c |q 10819
+		Wear the Felsworn Gas Mask |havebuff 133133 |c |q 10819 --INV_Helmet_31
 		Click the Legion Communicator
 		turnin Deceive thy Enemy##10820 |goto 73.3,40.1 
 		|tip Between 2 big green floating crystals. Click the Legion Communicator. You must be wearing the Felsworn Gas Mask to use the Legion Communicator.
@@ -1346,7 +1346,7 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		accept Surrender... Not!##11566 |goto 43.5,14
 	step
 		Go southwest to Winterfin Village |n
-		Use King Mrgl-Mrgl's Spare Suit |havebuff INV_Misc_Head_Murloc_01 |use King Mrgl-Mrgl's Spare Suit##34620 |q 11566
+		Use King Mrgl-Mrgl's Spare Suit |havebuff 134169 |use King Mrgl-Mrgl's Spare Suit##34620 |q 11566 --INV_Misc_Head_Murloc_01
 	step
 		--_Enter_ the cave |goto 37.8,23.2
 		talk Glrglrglr##28375
@@ -1375,9 +1375,9 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		If you are not Exalted with the Cenarion Expedition, you can turn in Lackey Ears for a repeatable quest, or run Heroic Dungeons.
 		The Heroic Dungeons are Slave Pens, Underbog and Steamvault.
 		Click here to do the repeatable quest |confirm |next "ears"
-		Click here to be taken to the Slave Pens |confirm |next "Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: Slave Pens (SP) 61-65" |only if ZGV.guidesets['DungeonAMOP']
-		Click here to be taken to the Underbog |confirm |next "Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: Underbog (UB) 62-66" |only if ZGV.guidesets['DungeonAMOP']
-		Click here to be taken to the Steamvault |confirm |next "Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: The Steamvault (SV) 68-70" |only if ZGV.guidesets['DungeonAMOP']
+		Click here to be taken to the Slave Pens |confirm |next "Zygor's Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: Slave Pens" |only if ZGV.guidesets['DungeonAMOP']
+		Click here to be taken to the Underbog |confirm |next "Zygor's Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: Underbog" |only if ZGV.guidesets['DungeonAMOP']
+		Click here to be taken to the Steamvault |confirm |next "Zygor's Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: The Steamvault" |only if ZGV.guidesets['DungeonAMOP']
 	step
 	label "ears"
 		kill Northsea Mercenary##25839+, Northsea Thug##25843+
@@ -2364,7 +2364,7 @@ ZygorGuidesViewer:RegisterInclude("A_Eastern_Plaguelands_Argent_Dawn_Revered",[[
 		accept Just a Drop in the Bucket##27454
 	step
 		Use your Death Cultist Disguise |use Death Cultist Disguise##61283
-		Wear your Death Cultist Disguise |havebuff INTERFACE\ICONS\inv_helmet_152 |q 27454 |goto 61.7,75.5
+		Wear your Death Cultist Disguise |havebuff 340019 |q 27454 |goto 61.7,75.5 --inv_helmet_152
 	step
 		click Mereldar Plague Cauldron##4331
 		Choose to throw in an entire flask
@@ -3229,7 +3229,7 @@ ZygorGuidesViewer:RegisterInclude("A_Kurenai_Faction",[[
 ZygorGuidesViewer:RegisterInclude("A_Zangarmarsh_Quests",[[
 	author support@zygorguides.com
 	image Zangarmarsh
-	next Zygor's Alliance Leveling Guides\\Outland 60-70\\Terokkar Forest (64-65)
+	next Zygor's Leveling Guides\\Outland 60-70\\Terokkar Forest (64-65)
 	startlevel 62.4
 	dynamic on
 	step
@@ -3794,11 +3794,11 @@ ZygorGuidesViewer:RegisterInclude("A_Icecrown_Argent_Crusade_Rep",[[
 	step
 		talk Highlord Tirion Fordring##28179
 		accept Once More Unto The Breach, Hero##13105 |only DeathKnight |goto 86.0,75.8
-		accept Once More Unto The Breach, Hero##13104 |only !DeathKnight |goto 86.0,75.8
+		accept Once More Unto The Breach, Hero##13104 |only if not DeathKnight |goto 86.0,75.8
 	step
 		talk The Ebon Watcher##30596
 		turnin Once More Unto The Breach, Hero##13105 |only DeathKnight |goto 83.0,72.9
-		turnin Once More Unto The Breach, Hero##13104 |only !DeathKnight |goto 83.0,72.9
+		turnin Once More Unto The Breach, Hero##13104 |only if not DeathKnight |goto 83.0,72.9
 		accept The Purging Of Scourgeholme##13118 |goto 83.0,72.9
 		accept The Scourgestone##13122 |goto 83.0,72.9
 	step
@@ -3976,7 +3976,7 @@ ZygorGuidesViewer:RegisterInclude("A_Cleansing_Drak_Tharon",[[
 		accept Filling the Cages##11984 |goto Grizzly Hills 16.2,47.6
 	step
 		talk Budd##26429
-		Tell him "_It's time to play with the ice trolls_" |havebuff Budd's Attention Span |c |goto Grizzly Hills 16.4,48.3
+		Tell him "_It's time to play with the ice trolls_" |havebuff 134177 |c |goto Grizzly Hills 16.4,48.3 --inv_misc_head_troll_01
 	step
 		Use Budd's pet bar skill Tag Troll to have him stun a troll |petaction Tag Troll
 		Use your Bounty Hunter's Cage on the stunned troll |use Bounty Hunter's Cage##35736

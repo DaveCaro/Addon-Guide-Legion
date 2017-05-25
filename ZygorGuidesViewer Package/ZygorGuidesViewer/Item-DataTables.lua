@@ -217,7 +217,7 @@ ItemScore.rules = {
 			stats = { MASTERY={weight=9.02}, HASTE={weight=7.52}, STRENGTH={weight=6.02}, VERSATILITY={weight=4.52}, CRIT={weight=3.02} },
 		},
 		[2] = { --FURY
-			itemtypes={ TH_AXE=10, TH_MACE=10, TH_SWORD=10, DAGGER=1, FIST=1, AXE=1, MACE=1, SWORD=1, PLATE=1 },  -- duals...
+			itemtypes={ TH_POLE=1, TH_AXE=10, TH_MACE=10, TH_SWORD=10, DAGGER=1, FIST=1, AXE=1, MACE=1, SWORD=1, PLATE=1 },  -- duals...
 			stats = { HASTE={weight=9.03}, MASTERY={weight=7.53}, STRENGTH={weight=6.03}, VERSATILITY={weight=4.53}, CRIT={weight=3.03} },
 		},
 		[3] = { --PROT

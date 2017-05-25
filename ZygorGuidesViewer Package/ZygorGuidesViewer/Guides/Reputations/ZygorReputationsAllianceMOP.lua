@@ -3,7 +3,25 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("ReputationsAMOP") then return end
 ZygorGuidesViewer.GuideMenuTier = "MOP"
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Operation: Shieldwall\\Operation: Shieldwall\\Beastmaster Dailies",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Operation: Shieldwall faction.",
+achieveid={8205},
+startlevel=90,
+},[[
+#include "Beastmaster_Dailies"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Operation: Shieldwall\\Operation: Shieldwall",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Operation: Shieldwall faction.",
+achieveid={7928},
+startlevel=90,
+},[[
+step
+#include "Operation_Shieldwall_Daily"
+]])
 ZygorGuidesViewer:RegisterInclude("tillers_prequests",[[
+author="support@zygorguides.com",
 talk Tang Ironhoe##64036
 accept The Tillers##31372 |goto Vale of Eternal Blossoms 87.0,60.8
 step
@@ -59,10 +77,12 @@ step
 talk Gina Mudclaw##58706
 turnin Learn and Grow V: Halfhill Market##30257 |goto 53.1,51.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Mists of Pandaria\\Chee Chee",{
-description="This guide will help you get BestFriend with the individuals in MoP",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Chee Chee",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming best friends with Chee Chee.",
+achieveid={6551, 6552},
+startlevel=90,
 },[[
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Mists of Pandaria\\Chee Chee",
 step
 You can only start earning reputation with Chee Chee after completing the Tillers prequests
 Becoming _Best Friends_ with Chee Chee rewards you with _Chee Chee's Goodie Bag_, which contains leather and cloth, and he also gives you a _Sheep_ to decorate your farm with
@@ -178,8 +198,11 @@ label "end"
 You have reached the end of the guide
 Please click here to return to the beginning of the guide |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Mists of Pandaria\\Ella",{
-description="This guide will help you get BestFriend with the individuals in MoP",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Ella",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming best friends with Ella.",
+achieveid={6551, 6552},
+startlevel=90,
 },[[
 step
 You can only start earning reputation with Ella after completing the Tillers prequests.
@@ -338,8 +361,92 @@ label "end"
 You have reached the end of the guide
 Please click here to return to the beginning of the guide |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Mists of Pandaria\\Fish Fellreed",{
-description="This guide will help you get BestFriend with the individuals in MoP",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Farmer Fung",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming best friends with Farmer Fung.",
+achieveid={6551, 6552},
+startlevel=90,
+},[[
+step
+You can only start earning reputation with Farmer Fung after completing the Tillers prequests.
+Becoming _Best Friends_ with Farmer Fung rewards you with an _Enigma Seed_, which blooms into a random plant, and _Shaggy the Prize Yak_ for your farm
+|confirm
+|next "menu" |only if completedq(30257)
+step
+label tillers
+#include "tillers_prequests"
+step
+label menu
+_Farmer Fung_ is a _Stranger_ to you |only if rep("Farmer Fung")<=Stranger
+_Farmer Fung_ is your _Aquaintance_ |only if rep("Farmer Fung")==Aquaintance
+_Farmer Fung_ is your _Buddy_ |only if rep("Farmer Fung")==Buddy
+_Farmer Fung_ is your _Friend_ |only if rep("Farmer Fung")==Friend
+_Farmer Fung_ is your _Best Friend_ |only if rep("Farmer Fung")==BestFriend
+|only if rep("Farmer Fung")<BestFriend
+Click here to use _Cooking_ to raise your reputation |confirm |next cooking |only if rep("Farmer Fung")<BestFriend
+|only if rep("Farmer Fung")<BestFriend
+Click here to gather gifts to raise your reputation |confirm |next gifts |only if rep("Farmer Fung")<BestFriend
+You have maxed out your reputation with this individual
+Please select a different guide |only if rep("Farmer Fung")==BestFriend
+|confirm |next "end" |only if rep("Farmer Fung")==BestFriend
+|modelnpc Farmer Fung##57298
+step
+label cooking
+In order to create Farmer Fung's favorite meal, you must have at least 525 skill points in Cooking
+Click here to continue |confirm |next wild_roast
+Click here to go back to the menu |confirm |next menu
+step
+label	wild_roast
+talk Jian Ironpaw##58716
+learn Wildfowl Roast##104310 |goto Valley of the Four Winds 53.4,51.6
+step
+#include "auctioneer"
+buy 5 Wildfowl Breast##74839
+Or
+Click here to farm the ingredients yourself |confirm |next farm_wild_roast_1
+step
+label	farm_wild_roast_1
+kill Carp Hunter##58116+
+collect 5 Wildfowl Breast##74839 |goto Krasarang Wilds 64.6,29.3
+step
+label	create_wild_roast
+Stand next to a fire, or create one yourself |cast Cooking fire##818
+create 5 Wildfowl Roast##104310,Cooking,5 total
+|next turnin1
+step
+label gifts
+When running around gathering these, keep in mind that there is no way to track them
+You will have to keep an eye out along this path and spot them
+map Valley of the Four Winds
+path	32.8,49.8	34.9,38.4
+path	42.0,31.2	40.9,35.1	44.9,36.5
+path	39.7,38.9	46.0,53.9	40.4,51.7
+click Dark Soil##210582
+collect 47 Marsh Lily##79268
+|next turnin2
+step
+label turnin1
+talk Farmer Fung##57298
+turnin A Dish For Farmer Fung##30421 |goto Valley of the Four Winds 48.2,33.9
+|tip You can only turn this quest in once a day
+You can also find Farmer Fung in Halfhill at the following location |goto 52.8,51.6
+Click here to be taken back to the beginning of the Cooking Dailies for Farmer Fung |confirm |next cooking
+step
+label turnin2
+talk Farmer Fung##57298
+turnin A Marsh Lily for Farmer Fung##30420 |goto Valley of the Four Winds 48.2,33.9
+|tip Keep turning this in until you reach Best Friend status.
+You can also find Farmer Fung in Halfhill at the following location |goto 52.8,51.6
+step
+label "end"
+You have reached the end of the guide
+Please click here to return to the beginning of the guide |confirm |next "menu"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Fish Fellreed",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming best friends with Fish Fellreed.",
+achieveid={6551, 6552},
+startlevel=90,
 },[[
 step
 You can only start earning reputation with Fish Fellreed after completing the Tillers prequests
@@ -429,8 +536,11 @@ label "end"
 You have reached the end of the guide
 Please click here to return to the beginning of the guide |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Mists of Pandaria\\Gina Mudclaw",{
-description="This guide will help you get BestFriend with the individuals in MoP",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Gina Mudclaw",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming best friends with Gina Mudclaw.",
+achieveid={6551, 6552},
+startlevel=90,
 },[[
 step
 You can only start earning reputation with Gina Mudclaw after completing the Tillers prequests.
@@ -508,8 +618,11 @@ label "end"
 You have reached the end of the guide
 Please click here to return to the beginning of the guide |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Mists of Pandaria\\Haohan Mudclaw",{
-description="This guide will help you get BestFriend with the individuals in MoP",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Haohan Mudclaw",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming best friends with Haohan Mudclaw.",
+achieveid={6551, 6552},
+startlevel=90,
 },[[
 step
 You can only start earning reputation with Haohan Mudclaw after completing the Tillers prequests.
@@ -586,8 +699,11 @@ label "end"
 You have reached the end of the guide
 Please click here to return to the beginning of the guide |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Mists of Pandaria\\Jogu the Drunk",{
-description="This guide will help you get BestFriend with the individuals in MoP",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Jogu the Drunk",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming best friends with Jogu the Drunk.",
+achieveid={6551, 6552},
+startlevel=90,
 },[[
 step
 You can only start earning reputation with Jogu the Drunk after completing the Tillers prequests.
@@ -690,86 +806,11 @@ label "end"
 You have reached the end of the guide
 Please click here to return to the beginning of the guide |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Mists of Pandaria\\Farmer Fung",{
-description="This guide will help you get BestFriend with the individuals in MoP",
-},[[
-step
-You can only start earning reputation with Farmer Fung after completing the Tillers prequests.
-Becoming _Best Friends_ with Farmer Fung rewards you with an _Enigma Seed_, which blooms into a random plant, and _Shaggy the Prize Yak_ for your farm
-|confirm
-|next "menu" |only if completedq(30257)
-step
-label tillers
-#include "tillers_prequests"
-step
-label menu
-_Farmer Fung_ is a _Stranger_ to you |only if rep("Farmer Fung")<=Stranger
-_Farmer Fung_ is your _Aquaintance_ |only if rep("Farmer Fung")==Aquaintance
-_Farmer Fung_ is your _Buddy_ |only if rep("Farmer Fung")==Buddy
-_Farmer Fung_ is your _Friend_ |only if rep("Farmer Fung")==Friend
-_Farmer Fung_ is your _Best Friend_ |only if rep("Farmer Fung")==BestFriend
-|only if rep("Farmer Fung")<BestFriend
-Click here to use _Cooking_ to raise your reputation |confirm |next cooking |only if rep("Farmer Fung")<BestFriend
-|only if rep("Farmer Fung")<BestFriend
-Click here to gather gifts to raise your reputation |confirm |next gifts |only if rep("Farmer Fung")<BestFriend
-You have maxed out your reputation with this individual
-Please select a different guide |only if rep("Farmer Fung")==BestFriend
-|confirm |next "end" |only if rep("Farmer Fung")==BestFriend
-|modelnpc Farmer Fung##57298
-step
-label cooking
-In order to create Farmer Fung's favorite meal, you must have at least 525 skill points in Cooking
-Click here to continue |confirm |next wild_roast
-Click here to go back to the menu |confirm |next menu
-step
-label	wild_roast
-talk Jian Ironpaw##58716
-learn Wildfowl Roast##104310 |goto Valley of the Four Winds 53.4,51.6
-step
-#include "auctioneer"
-buy 5 Wildfowl Breast##74839
-Or
-Click here to farm the ingredients yourself |confirm |next farm_wild_roast_1
-step
-label	farm_wild_roast_1
-kill Carp Hunter##58116+
-collect 5 Wildfowl Breast##74839 |goto Krasarang Wilds 64.6,29.3
-step
-label	create_wild_roast
-Stand next to a fire, or create one yourself |cast Cooking fire##818
-create 5 Wildfowl Roast##104310,Cooking,5 total
-|next turnin1
-step
-label gifts
-When running around gathering these, keep in mind that there is no way to track them
-You will have to keep an eye out along this path and spot them
-map Valley of the Four Winds
-path	32.8,49.8	34.9,38.4
-path	42.0,31.2	40.9,35.1	44.9,36.5
-path	39.7,38.9	46.0,53.9	40.4,51.7
-click Dark Soil##210582
-collect 47 Marsh Lily##79268
-|next turnin2
-step
-label turnin1
-talk Farmer Fung##57298
-turnin A Dish For Farmer Fung##30421 |goto Valley of the Four Winds 48.2,33.9
-|tip You can only turn this quest in once a day
-You can also find Farmer Fung in Halfhill at the following location |goto 52.8,51.6
-Click here to be taken back to the beginning of the Cooking Dailies for Farmer Fung |confirm |next cooking
-step
-label turnin2
-talk Farmer Fung##57298
-turnin A Marsh Lily for Farmer Fung##30420 |goto Valley of the Four Winds 48.2,33.9
-|tip Keep turning this in until you reach Best Friend status.
-You can also find Farmer Fung in Halfhill at the following location |goto 52.8,51.6
-step
-label "end"
-You have reached the end of the guide
-Please click here to return to the beginning of the guide |confirm |next "menu"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Mists of Pandaria\\Old Hillpaw",{
-description="This guide will help you get BestFriend with the individuals in MoP",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Old Hillpaw",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming best friends with Old Hillpaw.",
+achieveid={6551, 6552},
+startlevel=90,
 },[[
 step
 You can only start earning reputation with Old Hillpaw after completing the Tillers prequests.
@@ -852,9 +893,11 @@ label "end"
 You have reached the end of the guide
 Please click here to return to the beginning of the guide |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Mists of Pandaria\\Sho",{
-achieveid={6551},
-description="This guide will help you get BestFriend with the individuals in MoP",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Sho",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming best friends with Sho.",
+achieveid={6551, 6552},
+startlevel=90,
 },[[
 step
 You can only start earning reputation with Sho after completing the Tillers prequests.
@@ -942,8 +985,11 @@ label "end"
 You have reached the end of the guide
 Please click here to return to the beginning of the guide |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Mists of Pandaria\\Tina Mudclaw",{
-description="This guide will help you get BestFriend with the individuals in MoP",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Tina Mudclaw",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming best friends with Tina Mudclaw.",
+achieveid={6551, 6552},
+startlevel=90,
 },[[
 step
 You can only start earning reputation with Tina Mudclaw after completing the Tillers prequests
@@ -1029,59 +1075,78 @@ label "end"
 You have reached the end of the guide
 Please click here to return to the beginning of the guide |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Mists of Pandaria\\Nat Pagle",{
-achieveid={7274},
-description="This guide will help you get BestFriend with the individuals in MoP",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Anglers",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Anglers faction.",
+achieveid={6547,7614},
+startlevel=90,
+},[[
+#include "A_Anglers"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The August Celestials",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The August Celestials faction.",
+achieveid={6543},
+startlevel=90,
 },[[
 step
-label menu
-_Nat Pagle_ is a _Stranger_ to you |only if rep("Nat Pagle")<=Stranger
-_Nat Pagle_ is your _Aquaintance_ |only if rep("Nat Pagle")==Aquaintance
-_Nat Pagle_ is your _Buddy_ |only if rep("Nat Pagle")==Buddy
-_Nat Pagle_ is your _Friend_ |only if rep("Nat Pagle")==Friend
-_Nat Pagle_ is your _Good Friend_ |only if rep("Nat Pagle")==GoodFriend
-_Nat Pagle_ is your _Best Friend_ |only if rep("Nat Pagle")==BestFriend
-|confirm
+#include "August_Celestials"
 step
-label menu2
-In order to successfully gain rep with Nat Pagle you have to catch fish, so we recommend that you are at least 525 in Fishing.
-The fish you catch in this guide are unique, meaning you can only have one of each in your bag at any given time.
-|confirm
-step
-label menu3
-Click here to start fishing! |confirm |next fishrun
-Click here to turn in the fish to Nat Pagle for daily reputation gains. |confirm |next turnin
-step
-label fishrun
-Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
-Use your Fishing skill to fish in the water here
-You can look for fishing pools around the beach also |cast fishing##131474
-collect 1 Flying Tiger Gourami##86542 |goto Kun-Lai Summit 72.7,93.1
-accept Flying Tiger Gourami##31443 |use Flying Tiger Gourami##86542 |goto Kun-Lai Summit 72.7,93.1
-step
-Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
-Use your Fishing skill to fish in the water here
-You can look for fishing pools too |cast fishing##131474
-collect 1 Spinefish Alpha##86544 |goto Kun-Lai Summit 70.8,84.2
-accept Spinefish Alpha##31444 |use Spinefish Alpha##86544 |goto Kun-Lai Summit 70.8,84.2
-step
-Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
-Use your Fishing skill to fish in the water here
-You can look for fishing pools too |cast fishing##131474.
-collect 1 Mimic Octopus##86545 |goto Kun-Lai Summit 57.9,21.9
-accept Mimic Octopus##31446 |use Mimic Octopus##86545 |goto Kun-Lai Summit 57.9,21.9
-|next menu3
-step
-label turnin
-talk Nat Pagle##63721
-turnin Spinefish Alpha##31444 |goto Krasarang Wilds 68.4,43.5
-turnin Mimic Octopus##31446 |goto Krasarang Wilds 68.4,43.5
-turnin Flying Tiger Gourami##31443 |goto Krasarang Wilds 68.4,43.5
-|next menu
+label end
+This is the end of the current guide. Click here to go back to the beginning. |confirm |next "startaug"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Mists of Pandaria\\Lorewalkers",{
-condition_end="achieved(6548)",
-description="This guide will help you become Exalted with the Lorewalkers.\nBecoming Exalted with the Lorewalkers allows you to purchase the Disc of the Red Flying Cloud Mount.",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Emperor Shaohao",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Emperor Shaohao faction.",
+achieveid={8715},
+startlevel=90,
+},[[
+#include "timeless_isle_prequests"
+step
+From this point, you have to grind mobs to earn the remaining reputation with _Emperor Shaohao_
+|confirm
+step
+kill Ordon Fire-Watcher##72894+, Ordon Candlekeeper##72875+, Ordon Oathguard##72892+ |goto Timeless Isle 52.6,76.9
+|condition rep('Emperor Shaohao')==Exalted
+step
+Congratulations, you are now _Exalted_ with _Emperor Shaohao_!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Golden Lotus",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Golden Lotus faction.",
+achieveid={7315, 6546},
+startlevel=90,
+},[[
+step
+Routing to proper section |next "prequests" |only if not completedq(31511) and not completedq(31512)
+Routing to proper section |next "dailies" |only if completedq(31511) or completedq(31512)
+step
+label "prequests"
+#include "Golden_Lotus_PreQuests"
+#include "Golden_Lotus"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Kirin Tor Offensive",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Kirin Tor Offensive faction.",
+achieveid={8208},
+startlevel=90,
+},[[
+step
+#include "Kirin_Tor_Offensive"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Klaxxi",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Klaxxi faction.",
+achieveid={6545},
+startlevel=90,
+},[[
+#include "A_Klaxxi"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Lorewalkers",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Lorewalkers faction.",
+achieveid={6548},
+startlevel=90,
 },[[
 step
 click The Emperor's Burden - Part 8##
@@ -1285,99 +1350,93 @@ Watch his story, then click here |confirm always
 step
 Congratulations, you are now Exalted with the Lorewalkers!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Anglers",{
-achieveid={6547,7614},
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Nat Pagle",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with Nat Pagle faction.",
+achieveid={7274},
 startlevel=90,
-description="This guide will take you through The Anglers dailies\nBecoming Exalted with The Anglers allows you to purchase a companion pet, fishing poles, and water mounts.",
-},[[
-#include "A_Anglers"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The August Celestials",{
-achieveid={6543},
-startlevel=90,
-description="This guide will take you through The August Celestials dailies\nBecoming Exalted with The August Celestials allows you to purchase flying mounts and armor for your character.",
 },[[
 step
-#include "August_Celestials"
+label menu
+_Nat Pagle_ is a _Stranger_ to you |only if rep("Nat Pagle")<=Stranger
+_Nat Pagle_ is your _Aquaintance_ |only if rep("Nat Pagle")==Aquaintance
+_Nat Pagle_ is your _Buddy_ |only if rep("Nat Pagle")==Buddy
+_Nat Pagle_ is your _Friend_ |only if rep("Nat Pagle")==Friend
+_Nat Pagle_ is your _Good Friend_ |only if rep("Nat Pagle")==GoodFriend
+_Nat Pagle_ is your _Best Friend_ |only if rep("Nat Pagle")==BestFriend
+|confirm
 step
-label end
-This is the end of the current guide. Click here to go back to the beginning. |confirm |next "startaug"
+label menu2
+In order to successfully gain rep with Nat Pagle you have to catch fish, so we recommend that you are at least 525 in Fishing.
+The fish you catch in this guide are unique, meaning you can only have one of each in your bag at any given time.
+|confirm
+step
+label menu3
+Click here to start fishing! |confirm |next fishrun
+Click here to turn in the fish to Nat Pagle for daily reputation gains. |confirm |next turnin
+step
+label fishrun
+Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
+Use your Fishing skill to fish in the water here
+You can look for fishing pools around the beach also |cast fishing##131474
+collect 1 Flying Tiger Gourami##86542 |goto Kun-Lai Summit 72.7,93.1
+accept Flying Tiger Gourami##31443 |use Flying Tiger Gourami##86542 |goto Kun-Lai Summit 72.7,93.1
+step
+Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
+Use your Fishing skill to fish in the water here
+You can look for fishing pools too |cast fishing##131474
+collect 1 Spinefish Alpha##86544 |goto Kun-Lai Summit 70.8,84.2
+accept Spinefish Alpha##31444 |use Spinefish Alpha##86544 |goto Kun-Lai Summit 70.8,84.2
+step
+Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
+Use your Fishing skill to fish in the water here
+You can look for fishing pools too |cast fishing##131474.
+collect 1 Mimic Octopus##86545 |goto Kun-Lai Summit 57.9,21.9
+accept Mimic Octopus##31446 |use Mimic Octopus##86545 |goto Kun-Lai Summit 57.9,21.9
+|next menu3
+step
+label turnin
+talk Nat Pagle##63721
+turnin Spinefish Alpha##31444 |goto Krasarang Wilds 68.4,43.5
+turnin Mimic Octopus##31446 |goto Krasarang Wilds 68.4,43.5
+turnin Flying Tiger Gourami##31443 |goto Krasarang Wilds 68.4,43.5
+|next menu
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputation Guides\\Mists of Pandaria\\The Order of the Cloud Serpent",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Order of the Cloud Serpent",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Order of the Cloud Serpent faction.",
 achieveid={6550},
-completion={"quests",10,11,18},
 startlevel=90,
-description="This guide will take you through the Order of the Cloud Serpent dailies\nBecoming Exalted with The Order of the Cloud Serpent allows you to purchase flying mounts and designs for companion pets.",
 },[[
 #include "A_Cloud_Serpent"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Shado-Pan",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Shado-Pan Assault",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Shado-Pan Assault faction.",
 achieveid={6366},
 startlevel=90,
-description="This guide will take you through the Shado-Pan dailies\nBecoming Exalted with The Shado-Pan allows you to purchase ground mounts and armor for your character.",
 },[[
 #include "Shado_Pan_Daily_A"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Tillers",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Tillers",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Tillers faction.",
 achieveid={6544},
 startlevel=90,
-description="This guide will take you through The Tillers dailies\nBecoming Exalted with The Tillers allows you to purchase ground mounts and recipes for your character.",
 },[[
 #include "A_Tillers_DailyQuest"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Klaxxi",{
-achieveid={6545},
-startlevel=90,
-description="This guide will take you through The Klaxxi dailies\nBecoming Exalted with The Klaxxi allows you to purchase ground mounts, plans for blacksmithing, armor, and weapons for your character.",
-},[[
-#include "A_Klaxxi"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Mists of Pandaria\\Operation:Shieldwall",{
-achieveid={7928},
-startlevel=90,
-description="This guide will take you through quests for Operation: Shieldwall.\nBecoming Exalted with Operation: Shieldwall allows you to purchase an epic flying mount, epic armor, and battle pets for your character.",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tushui Pandaren",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Tushui Pandaren faction.",
+condition_suggested="level>=1 and level<=60",
 },[[
 step
-#include "Operation_Shieldwall_Daily"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Mists of Pandaria\\Beastmaster Dailies",{
-startlevel=90,
-description="This guide will take you through the bonus quests for Operation: Shieldwall.",
-},[[
-#include "Beastmaster_Dailies"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Mists of Pandaria\\Kirin Tor Offensive",{
-startlevel=90,
-description="This guide will take you through the bonus quests for the Kirin Tor.",
-},[[
+talk Adherent Hanjun##69334
+buy Tushui Tabard##83079 |n |goto Stormwind City 68.0,17.6
+Equip your Tushui Tabard |equipped Tushui Tabard##83079 |use Tushui Tabard##83079 |future
+You can run any dungeon that grants experience to gain reputation for Tushui Pandaren
+Become Exalted with Tushui Pandaren |condition rep('Tushui Pandaren')==Exalted
 step
-#include "Kirin_Tor_Offensive"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Golden Lotus",{
-achieveid={7315,6546},
-startlevel=90,
-description="This guide will take you through The Golden Lotus dailies\nBecoming Exalted with the Golden Lotus allows you to purchase a crowd control trinket and some armor. At Honored, you can purchase chest armor, rings, and shoulders. At Revered, you can purchase 3 ground mounts.",
-},[[
-step
-Routing to proper section |next "prequests" |only if not completedq(31511) and not completedq(31512)
-Routing to proper section |next "dailies" |only if completedq(31511) or completedq(31512)
-step
-label "prequests"
-#include "Golden_Lotus_PreQuests"
-#include "Golden_Lotus"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Mists of Pandaria\\Emperor Shaohao",{
-achieveid={8715},
-startlevel=90,
-description="This guide will help you reach Exalted with Emperor Shaohao\nBecoming Exalted with the Shaohao allows you to purchase a Flying Mount, Battle Pet, some Trinkets, and a Disguise",
-},[[
-#include "timeless_isle_prequests"
-step
-From this point, you have to grind mobs to earn the remaining reputation with _Emperor Shaohao_
-|confirm
-step
-kill Ordon Fire-Watcher##72894+, Ordon Candlekeeper##72875+, Ordon Oathguard##72892+ |goto Timeless Isle 52.6,76.9
-|condition rep('Emperor Shaohao')==Exalted
-step
-Congratulations, you are now _Exalted_ with _Emperor Shaohao_!
+Congratulations, you have reached exalted with the Tushui Pandaren!
 ]])

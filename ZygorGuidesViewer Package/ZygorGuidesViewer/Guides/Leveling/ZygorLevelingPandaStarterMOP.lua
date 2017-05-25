@@ -2,7 +2,7 @@ local ZygorGuidesViewer=ZygorGuidesViewer
 if not ZygorGuidesViewer then return end
 if ZGV:DoMutex("LevelingNMOP") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Starter Guides\\Pandaren (1-12)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Starter Guides\\Pandaren (1-12)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\WanderingIsle",
 condition_suggested="raceclass('Pandaren') and level<=5",
@@ -425,7 +425,8 @@ talk Shu##55556
 Tell it _"Shu, can you wake up Wuguo for me?"_
 Ask Shu for Help |q 29774/1 |goto 69.0,62.9
 step
-Wake Wugou |q 29774/2 |goto The Wandering Isle/0 68.9,65.3
+Watch the dialogue
+Wake Wugou |q 29774/2 |goto 68.9,65.3
 step
 talk Ji Firepaw##55477
 turnin Not In the Face!##29774 |goto 68.9,65.0
@@ -500,10 +501,10 @@ kill Ruk-Ruk##55634 |q 29780/1 |goto 21.0,34.5
 step "Stolen_Firework_Bundles"
 click Stolen Fireworks##209669+
 |tip They look like small dark colored pots on wooden slabs on the ground around this area.
-collect 8 Stolen Firework Bundle##74631 |q 29781/1 |goto 21.0,34.5
+collect 8 Stolen Firework Bundle##74631 |q 29781/1 |goto 24.23,30.71
 step "FeFeng_Hozen"
 Kill Fe-Feng enemies around this area
-Slay #20# Fe-Feng Hozen |q 29779/1 |goto 21.0,34.5
+Slay #20# Fe-Feng Hozen |q 29779/1 |goto 24.23,30.71
 step
 _Next to you:_
 talk Ji Firepaw##56134
@@ -555,6 +556,7 @@ kill Guardian of the Elders##56274 |q 29787/1 |goto 22.7,52.9
 step
 Run up the stairs |goto 22.3,52.8 < 10 |only if walking
 talk Master Shang Xi##55672
+|tip He runs to this spot.
 turnin Worthy of Passing##29787 |goto 19.5,51.2
 accept Unwelcome Nature##29788 |goto 19.5,51.2
 accept Small, But Significant##29789 |goto 19.5,51.2
@@ -689,10 +691,8 @@ talk Aysa Cloudsinger##56416
 turnin An Ancient Evil##29798 |goto 36.5,84.2
 accept Risking It All##30767 |goto 36.5,84.2
 step
-Run up the stairs |goto 36.43,85.34 < 10 |only if walking
-Continue up the stairs |goto 36.75,86.86 < 10 |only if walking
-Follow the path |goto 36.76,85.47 < 10 |only if walking
 Watch the dialogue
+|tip Follow Aysa Cloudsinger to the top of the crashed airship.
 Remove Shen-zin Su's Thorn |q 30767/1 |goto 36.4,87.0
 step
 talk Ji Firepaw##56418
@@ -720,7 +720,7 @@ step
 Ride the Cart to Mandori Village |goto 51.62,59.07 < 20 |c |q 29800
 step
 Run up the stairs |goto 51.33,57.28 < 15 |only if walking
-talk Spirit of Master Shang Xi##56013
+talk Spiwrit of Master Shang Xi##56013
 turnin New Allies##29800 |goto 51.4,48.3
 accept A New Fate##31450 |goto 51.4,48.3
 step
@@ -732,24 +732,14 @@ _Or_
 Join The Horde |next "Horde" |or |condition rep('Orgrimmar') >= Friendly
 step
 label "Alliance"
-Follow the path |goto Stormwind City/0 63.7,72.7 < 10 |only if walking
 talk Aysa Cloudsinger##60566
-turnin A New Fate##31450 |goto 74.2,92.0
-accept Joining the Alliance##30987 |goto 74.2,92.0
+turnin A New Fate##31450 |goto Stormwind City/0 74.19,91.97
+accept Joining the Alliance##30987 |goto Stormwind City/0 74.19,91.97
 |only if rep('Stormwind') >= Friendly
 step
-talk King Varian Wrynn##29611
+Enter the building |goto 80.69,37.84 < 15 |walk
+talk Anduin Wrynn##107574
 turnin Joining the Alliance##30987 |goto 85.8,31.7
-accept The Alliance Way##30988 |goto 85.8,31.7
-|only if rep('Stormwind') >= Friendly
-step
-Watch the dialogue
-|tip Follow King Varian Wrynn.
-Walk with King Varian Wrynn |q 30988/1
-|only if rep('Stormwind') >= Friendly
-step
-talk King Varian Wrynn##61796
-turnin The Alliance Way##30988 |goto 82.6,28.1
 |only if rep('Stormwind') >= Friendly
 step
 label "Horde"
@@ -778,12 +768,12 @@ turnin The Horde Way##31013 |goto 48.75,70.81
 ]])
 if UnitFactionGroup("player")~="Neutral" then return end
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Loremaster Guides\\Your guides will load after you choose a faction.",{},[[]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dailies Guides\\Your guides will load after you choose a faction.",{},[[]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Your guides will load after you choose a faction.",{},[[]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Your guides will load after you choose a faction.",{},[[]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Your guides will load after you choose a faction.",{},[[]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Your guides will load after you choose a faction.",{},[[]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Gear Guides\\Your guides will load after you choose a faction.",{},[[]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Professions Guides\\Your guides will load after you choose a faction.",{},[[]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Your guides will load after you choose a faction.",{},[[]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guides\\Your guides will load after you choose a faction.",{},[[]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Your guides will load after you choose a faction.",{},[[]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Your guides will load after you choose a faction.",{},[[]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Your guides will load after you choose a faction.",{},[[]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guides\\Your guides will load after you choose a faction.",{},[[]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Your guides will load after you choose a faction.",{},[[]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Your guides will load after you choose a faction.",{},[[]])

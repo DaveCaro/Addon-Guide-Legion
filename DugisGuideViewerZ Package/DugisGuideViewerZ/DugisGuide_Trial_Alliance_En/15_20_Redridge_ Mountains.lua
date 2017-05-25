@@ -4,7 +4,7 @@ function Guide:Initialize()
 return [[
 
 R Stormwind City |N|Travel to {Stormwind City} (85.6, 31.8)| |QID|26266| |Z|301| |OID|26365| 
-A Hero's Call: Redridge Mountains! |QID|28563| |N|Hero's call board (85.6, 31.8) in {Stormwind City}| |OID|26365| |Z|301| |NPC|29611|
+A Hero's Call: Redridge Mountains! |QID|28563| |N|Hero's call board (62.9, 71.7) in {Stormwind City}| |OID|26365| |Z|301|
 
 R Redridge Mountains |N|Travel to {Redridge Mountains} (12.37, 64.77)| |QID|26503|
 R Tower Watch |N|Travel to {Tower Watch} (15.30, 64.77)| |QID|26503|

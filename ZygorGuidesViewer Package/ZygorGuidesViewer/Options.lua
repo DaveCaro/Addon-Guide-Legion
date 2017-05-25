@@ -2565,6 +2565,13 @@ function ZGV:Options_DefineOptionTables()
 				tristate = true,
 				set = function(i,v) Setter_Simple(i,v) LibRover:CheckMaxSpeeds() LibRover:UpdateNow() end,
 			})
+			AddOption('debug_librover_flightlegion',{
+				name = "Legion Flight",
+				desc = "",
+				type = 'toggle',
+				tristate = true,
+				set = function(i,v) Setter_Simple(i,v) LibRover:CheckMaxSpeeds() LibRover:UpdateNow() end,
+			})
 			AddOptionSep()
 
 			--[[
@@ -2600,7 +2607,10 @@ function ZGV:Options_DefineOptionTables()
 				if LibRover.STATUS_node_count_mismatch then return "|cffff4400Travel data was edited, but versions weren't changed.\nDO NOT bake this without increasing the version number in data!" end
 				return "Travel data was not edited.\nThere's no need to bake the cache at this time."
 			end })
-			AddOption('dumpmapneigh',{ name = function() return LibRover.STATUS_dump_in_progress and "Dumping: "..LibRover.STATUS_dump_in_progress or "Dump baked map neighbour cache" end, type = 'execute', width = "double", func = function() ZGV.Testing.NeighbourCache:DumpNeighbours() end, disabled=function() return LibRover.STATUS_dump_in_progress end})
+			AddOption('dumpmapneigh',{ name = function() return LibRover.STATUS_dump_in_progress and "Baking: "..LibRover.STATUS_dump_in_progress or "Bake map connections cache" end, type = 'execute', width = "double", func = function() ZGV.Testing.NeighbourCache:DumpNeighbours() end, disabled=function() return LibRover.STATUS_dump_in_progress end})
+			AddOptionSep()
+			AddOption('dumpmapreload',{ name = function() if ZGV.db.char.BakedCache then return "Reload to save data" else return "Reload (after baking)" end end, type="execute", func = function() ReloadUI() end, width="single" })
+			AddOption('dumpmapshow',{ name = "View baked data", type="execute", func = function() if Spoo then Spoo(nil,nil,ZGV.db.char.BakedCache) end end, width="single", disabled=function() return not Spoo or not ZGV.db.char.BakedCache end })
 			local cache_changed  -- upvalue, will serve a "static" purpose for the option below
 			AddOption('travel_do_full_linking_at_startup',{ name = "Disable map neighbour caching", type = 'toggle', width = "double", set = function(k,v)  Setter_Simple(k,v)  cache_changed=true  end, disabled=function() return LibRover.STATUS_version_mismatch or LibRover.STATUS_node_count_mismatch end })
 			AddOption('_cache_hint',{ type="description", width="full", name = function()
@@ -3279,7 +3289,7 @@ function ZGV:Options_RegisterDefaults()
 
 	self.db.profile.auction_autoshow_tab = true
 
-	self.db.profile.debug_display = false   -- 2017-04-22: clear the misassigned default of true
+	self.db.char.BakedCache = nil
 
 	--self.db.profile.waypointaddon = "internal"
 	--self.db.profile.minicons = true

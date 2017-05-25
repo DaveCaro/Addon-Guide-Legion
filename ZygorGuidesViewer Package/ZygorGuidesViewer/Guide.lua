@@ -741,7 +741,7 @@ end
 function GuideFuncs:LearnMountGuideSuggestion()
 	if not (ZGV.db.profile.n_popup_guides and ZGV.Frame:IsVisible()) then return end
 
-	local mountGuide = ZGV:GetGuideByTitle("Zygor's Alliance Pets & Mounts Guide\\Mount Training") --mmmm nice and hard coded.
+	local mountGuide = ZGV:GetGuideByTitle("Zygor's Pets & Mounts Guide\\Mount Training") --mmmm nice and hard coded.
 
 	if not mountGuide then ZGV:Debug("No mount guide?!?") return end
 

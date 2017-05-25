@@ -5,8 +5,26 @@ local GuideMenu = ZGV.GuideMenu
 
 GuideMenu.HomeVersion = 1
 GuideMenu.Home={
-	{"title", text=[[Recent Content:]]},
+	{"title", text=[[This Update:]]},
 	{"banner", image=ZGV.DIR.."\\Skins\\banner"},
+
+	{"section", text=[[LEVELING]]},
+	{"item", text=[[Updated |cfffe6100Legionfall Campaign Week 9 "Take Out the Head..."|r.]], guide="LEVELING\\Legion (100-110)\\Broken Shore Campaign"},
+
+	{"section", text=[[ACHIEVEMENTS]]},
+	{"item", text=[[Added |cfffe6100Legion Curator (BETA)|r.]], guide="ACHIEVEMENTS\\Professions\\Archaeology\\Legion Curator"},
+	{"item", text=[[Added |cfffe6100Surveying the Land (BETA)|r.]], guide="ACHIEVEMENTS\\Professions\\Archaeology\\Surveying the Land"},
+	{"item", text=[[Added |cfffe6100This Side Up (BETA)|r.]], guide="ACHIEVEMENTS\\Professions\\Archaeology\\This Side Up"},
+	{"item", text=[[Added |cfffe6100A Keen Eye (BETA)|r.]], guide="ACHIEVEMENTS\\Professions\\Archaeology\\A Keen Eye"},
+	{"item", text=[[Added |cfffe6100The Dwarven Dream (BETA)|r.]], guide="ACHIEVEMENTS\\Professions\\Archaeology\\The Dwarven Dream"},
+	{"item", text=[[Added |cfffe6100Handle With Care (BETA)|r.]], guide="ACHIEVEMENTS\\Professions\\Archaeology\\Handle With Care"},
+	{"item", text=[[Added |cfffe6100Getting Your Hands Dirty (BETA)|r.]], guide="ACHIEVEMENTS\\Professions\\Archaeology\\Getting Your Hands Dirty"},
+	{"item", text=[[Added |cfffe6100Sifting Through the Sand (BETA)|r.]], guide="ACHIEVEMENTS\\Professions\\Archaeology\\Sifting Through the Sand"},
+	{"item", text=[[Added |cfffe6100No Stone Unturned (BETA)|r.]], guide="ACHIEVEMENTS\\Professions\\Archaeology\\No Stone Unturned"},
+
+	{"separator"},
+
+	{"title", text=[[Recent Content:]]},
 
 	{"section", text=[[LEVELING]]},
 	{"item", text=[[Added |cfffe6100Balance of Power Questline|r.]], guide="LEVELING\\Legion (100-110)\\Balance of Power Questline"},
@@ -26,9 +44,11 @@ GuideMenu.Home={
 	{"item", text=[[Added |cfffe6100Patch 7.2 World Quests|r.]], guide="DAILIES\\Legion\\World Quests"},
 
 	{"section", text=[[EVENTS]]},
-	{"item", text=[[Updated |cfffe6100Legion Brawler's Guild|r.]], guide="EVENTS\\Brawler's Guild\\Legion Brawler's Guild"},
-	{"item", text=[[Updated |cfffe6100Noblegarden Quests and Dailies|r.]], guide="EVENTS\\Noblegarden\\Noblegarden Quests and Dailies"},
-	{"item", text=[[Updated |cfffe6100Noblegarden Achievements|r.]], guide="EVENTS\\Noblegarden\\Noblegarden Achievements"},
+	{"item", text=[[Updated |cfffe6100Children's Week Stormwind Quests|r.]], guide="EVENTS\\Children's Week\\Children's Week Stormwind Quests", faction="A"},
+	{"item", text=[[Updated |cfffe6100Children's Week Shattrath Quests|r.]], guide="EVENTS\\Children's Week\\Children's Week Shattrath Quests"},
+	{"item", text=[[Updated |cfffe6100Children's Week Dalaran Oracles Quests|r.]], guide="EVENTS\\Children's Week\\Children's Week Dalaran Oracles Quests"},
+	{"item", text=[[Updated |cfffe6100Children's Week Dalaran Wolvar Quests|r.]], guide="EVENTS\\Children's Week\\Children's Week Dalaran Wolvar Quests"},
+	{"item", text=[[Updated |cfffe6100Children's Week Achievements|r.]], guide="EVENTS\\Children's Week\\Children's Week Achievements"},
 
 	{"section", text=[[REPUTATIONS]], beta=true},
 	{"item", text=[[Added |cfffe6100Armies of Legionfall Reputation (BETA)|r.]], guide="REPUTATIONS\\Legion\\Armies of Legionfall", beta=true},
@@ -48,33 +68,18 @@ GuideMenu.Home={
 	{"item", text=[[Added |cfffe6100Orphaned Felbat Pet Guide|r.]], guide="PETSMOUNTS\\Pets\\Flying Pets\\Orphaned Felbat"},
 
 	{"section", text=[[MOUNTS]]},
-	{"item", text=[[Added |cfffe6100Riddler's Mind-Worm Mount Guide|r.]], guide="PETSMOUNTS\\Mounts\\Legion\\Riddler's Mind-Worm"},
-	{"item", text=[[Added |cfffe6100Highmountain Elderhorn Mount Guide|r.]], guide="PETSMOUNTS\\Mounts\\Legion\\Highmountain Elderhorn"},
-	{"item", text=[[Added |cfffe6100Valarjar Stormwing Mount Guide|r.]], guide="PETSMOUNTS\\Mounts\\Legion\\Valarjar Stormwing"},
-	{"item", text=[[Added |cfffe6100Cloudwing Hippogryph Mount Guide|r.]], guide="PETSMOUNTS\\Mounts\\Legion\\Cloudwing Hippogryph"},
-	{"item", text=[[Added |cfffe6100Wild Dreamrunner Mount Guide|r.]], guide="PETSMOUNTS\\Mounts\\Legion\\Wild Dreamrunner"},
-	{"item", text=[[Added |cfffe6100Leywoven Flying Carpet Mount Guide|r.]], guide="PETSMOUNTS\\Mounts\\Legion\\Leywoven Flying Carpet"},
-	{"item", text=[[Added |cfffe6100Leyfeather Hippogryph Mount Guide|r.]], guide="PETSMOUNTS\\Mounts\\Legion\\Leyfeather Hippogryph"},
-	{"item", text=[[Added |cfffe6100Defiled Reins Mount Guide|r.]], guide="PETSMOUNTS\\Mounts\\Legion\\Defiled Reins"},
-	{"item", text=[[Added |cfffe6100Living Infernal Core Mount Guide|r.]], guide="PETSMOUNTS\\Mounts\\Legion\\Living Infernal Core"},
-	{"item", text=[[Added |cfffe6100Fiendish Hellfire Core Mount Guide|r.]], guide="PETSMOUNTS\\Mounts\\Legion\\Fiendish Hellfire Core"},
-	{"item", text=[[Added |cfffe6100Midnight's Eternal Reins Mount Guide|r.]], guide="PETSMOUNTS\\Mounts\\Legion\\Midnight's Eternal Reins"},
-	{"item", text=[[Added |cfffe6100Smoldering Ember Wyrm Mount Guide|r.]], guide="PETSMOUNTS\\Mounts\\Legion\\Smoldering Ember Wyrm"},
-	{"item", text=[[Added |cfffe6100Arcanist's Manasaber Mount Guide|r.]], guide="PETSMOUNTS\\Mounts\\Legion\\Arcanist's Manasaber"},
-	{"item", text=[[Added |cfffe6100Yu'lei, Daughter of Jade Mount Guide|r.]], guide="PETSMOUNTS\\Mounts\\Legion\\Yu'lei, Daughter of Jade"},
-	{"item", text=[[Added |cfffe6100Brilliant Direbeaker (BETA)|r.]], guide="PETSMOUNTS\\Mounts\\Legion\\Brilliant Direbeak", beta=true},
-	{"item", text=[[Added |cfffe6100Snowfeather Hunter (BETA)|r.]], guide="PETSMOUNTS\\Mounts\\Legion\\Snowfeather Hunter", beta=true},
-	{"item", text=[[Added |cfffe6100Predatory Bloodgazer (BETA)|r.]], guide="PETSMOUNTS\\Mounts\\Legion\\Predatory Bloodgazer", beta=true},
-	{"item", text=[[Added |cfffe6100Viridian Sharptalon (BETA)|r.]], guide="PETSMOUNTS\\Mounts\\Legion\\Viridian Sharptalon", beta=true},
+	{"item", text=[[Added |cfffe6100Brilliant Direbeak Guide (Beta)|r.]], guide="PETSMOUNTS\\Mounts\\Legion\\Predatory Bloodgazer"},
+	{"item", text=[[Added |cfffe6100Predatory Bloodgazer Guide (Beta)|r.]], guide="PETSMOUNTS\\Mounts\\Legion\\Predatory Bloodgazer"},
+	{"item", text=[[Added |cfffe6100Viridian Sharptalon Guide (Beta)|r.]], guide="PETSMOUNTS\\Mounts\\Legion\\Viridian Sharptalon"},
+	{"item", text=[[Added |cfffe6100Ivory Hawkstrider Guide (Beta)|r.]], guide="PETSMOUNTS\\Mounts\\Legion\\Ivory Hawkstrider"},
 
 	{"section", text=[[ACHIEVEMENTS]]},
-	{"item", text=[[Added |cfffe6100Broken Isles Pathfinder, Part Two Achievement|r.]], guide="ACHIEVEMENTS\\Exploration\\Legion\\Broken Isles Pathfinder, Part Two"},
-	{"item", text=[[Added |cfffe6100Power Unleashed Achievement (BETA)|r.]], guide="ACHIEVEMENTS\\Class Order Hall\\Legion\\Power Unleashed", beta=true},
-	{"item", text=[[Added |cfffe6100A Magic Contribution Achievement (BETA)|r.]], guide="ACHIEVEMENTS\\Quests\\Legion\\A Magic Contribution", beta=true},
-	{"item", text=[[Added |cfffe6100A Magnificent Contribution Achievement (BETA)|r.]], guide="ACHIEVEMENTS\\Quests\\Legion\\A Magnificent Contribution", beta=true},
-	{"item", text=[[Added |cfffe6100Assume Command Achievement (BETA)|r.]], guide="ACHIEVEMENTS\\Quests\\Legion\\Assume Command", beta=true},
-	{"item", text=[[Added |cfffe6100Take Command Achievement (BETA)|r.]], guide="ACHIEVEMENTS\\Quests\\Legion\\Take Command", beta=true},
-	{"item", text=[[Added |cfffe6100It'll Nether Happen Achievement (BETA)|r.]], guide="ACHIEVEMENTS\\Quests\\Legion\\It'll Nether Happen", beta=true},
-	{"item", text=[[Added |cfffe6100Disrupting the Nether Achievement (BETA)|r.]], guide="ACHIEVEMENTS\\Quests\\Legion\\Disrupting the Nether", beta=true},
-	{"item", text=[[Added |cfffe6100Armies of Legionfall Achievement (BETA)|r.]], guide="ACHIEVEMENTS\\Reputation\\Legion\\Armies of Legionfall", beta=true},
+	{"item", text=[[Added |cfffe6100Treasures of Azsuna|r.]], guide="ACHIEVEMENTS\\Exploration\\Legion\\Treasures of Azsuna"},
+	{"item", text=[[Added |cfffe6100Treasures of Val'sharah|r.]], guide="ACHIEVEMENTS\\Exploration\\Legion\\Treasures of Val'sharah"},
+	{"item", text=[[Added |cfffe6100Treasures of Highmountain|r.]], guide="ACHIEVEMENTS\\Exploration\\Legion\\Treasures of Highmountain"},
+	{"item", text=[[Added |cfffe6100Treasures of Stormheim|r.]], guide="ACHIEVEMENTS\\Exploration\\Legion\\Treasures of Stormheim"},
+	{"item", text=[[Added |cfffe6100Treasures of Suramar|r.]], guide="ACHIEVEMENTS\\Exploration\\Legion\\Treasures of Suramar"},
 }
+
+
+-- faction="Alliance" {"separator"},

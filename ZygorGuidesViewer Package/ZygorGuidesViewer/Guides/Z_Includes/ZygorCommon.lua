@@ -197,54 +197,6 @@ ZygorGuidesViewer:RegisterInclude("Steamwheedle_Preservation_Society",[[
 ----------------------------------------------
 
 
-ZygorGuidesViewer:RegisterInclude("wod_spiritwalker",[[
-	step
-		This title is gained by completeing the challenge mode Shadowmoon Burial Grounds with a realm-best time.
-		achieve 9626
-	step
-		Congratulations, you now have the _Spiritwalker_ title!
-]])
-
-ZygorGuidesViewer:RegisterInclude("wod_grimrail suplexer",[[
-	step
-		This title is gained by completeing the challenge mode Grimrail Depot with a realm-best time.
-		achieve 9625
-	step
-		Congratulations, you now have the _Grimrail Suplexer_ title!
-]])
-
-ZygorGuidesViewer:RegisterInclude("wod_violet guardian",[[
-	step
-		This title is gained by completeing the challenge mode The Everbloom with a realm-best time.
-		achieve 9624
-	step
-		Congratulations, you now have the _Violet Guardian_ title!
-]])
-
-ZygorGuidesViewer:RegisterInclude("wod_lord/lady of blackrock",[[
-	step
-		This title is gained by completeing the challenge mode Upper Blackrock Spire with a realm-best time.
-		achieve 9627
-	step
-		Congratulations, you now have the _Lord/Lady of Blackrock_ title!
-]])
-
-ZygorGuidesViewer:RegisterInclude("wod_scion of rukmar",[[
-	step
-		This title is gained by completeing the challenge mode Skyreach with a realm-best time.
-		achieve 9623
-	step
-		Congratulations, you now have the _Scion of Rukmar_ title!
-]])
-
-ZygorGuidesViewer:RegisterInclude("wod_soul preserver",[[
-	step
-		This title is gained by completeing the challenge mode Auchindoun with a realm-best time.
-		achieve 9622
-	step
-		Congratulations, you now have the _Soul Preserver_ title!
-]])
-
 ZygorGuidesViewer:RegisterInclude("wod_dockmaster",[[
 	step
 		This title is gained by completeing the challenge mode Iron Docks with a realm-best time.
@@ -304,23 +256,6 @@ ZygorGuidesViewer:RegisterInclude("wod_ironbane",[[
 		achieve 8973
 	step
 		Congratulations, you now have the _Ironbane_ title!
-]])
-
-ZygorGuidesViewer:RegisterInclude("wod_indomitable",[[
-	step
-		This title is gained by completing every challenge mode dungeon for Warlords of Draenor with a rating of Bronze or better
-		achieve 8897/1
-		achieve 8897/2
-		achieve 8897/3
-		achieve 8897/4
-		achieve 8897/5
-		achieve 8897/6
-		achieve 8897/7
-		achieve 8897/8
-	step
-		achieve 8897
-	step
-		Congratulations, you now have _The Indomitable_ title!
 ]])
 
 ZygorGuidesViewer:RegisterInclude("wod_talonkingqueen",[[

@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("HunterPetA") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Hunter Pets\\Cunning Pets\\Sporebats\\Brown Sporebat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Cunning Pets\\Sporebats\\Brown Sporebat",{
 model={18029},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -14,7 +14,7 @@ You can find more around [40.2,53.6].
 Use your Tame Beast ability on a _Sporebat_. |cast Tame Beast##1515 |goto Zangarmarsh,64.6,55.2
 modeldisplay 18029
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Hunter Pets\\Ferocity Pets\\Carrion Birds\\Two Headed Vulture\\White Two Headed Vulture",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ferocity Pets\\Carrion Birds\\Two Headed Vulture\\White Two Headed Vulture",{
 model={20348},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -25,7 +25,7 @@ Search for Trachela around this area.
 Use your Tame Beast ability on _Trachela_. |cast Tame Beast##1515 |goto Terokkar Forest,43.2,51.6
 modeldisplay 20348
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Hunter Pets\\Ferocity Pets\\Wolves\\Bicolor Worg",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ferocity Pets\\Wolves\\Bicolor Worg",{
 class="HUNTER",
 model={18063},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
@@ -36,7 +36,7 @@ Search for Ironjaw around the area.
 Use your Tame Beast ability on _Ironjaw_. |cast Tame Beast##1515 |goto Terokkar Forest,66.6,35.0
 modeldisplay 18063
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Hunter Pets\\Tenacity Pets\\Beetles\\Green and Red Scarab",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Tenacity Pets\\Beetles\\Green and Red Scarab",{
 model={34912},
 description="This guide will walk you through obtaining miscellaneous hunter pets.",
 },[[
@@ -46,7 +46,7 @@ Search for Emerald Scarab around the area.
 Use your Tame Beast ability on a _Emerald Scarab_. |cast Tame Beast##1515 |goto Uldum,65.6,32.6
 modeldisplay 34912
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Cunning Pets\\Silithids\\Pink Boss Silithid",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Cunning Pets\\Silithids\\Pink Boss Silithid",{
 model={37549},
 description="This guide will walk you through obtaining\nmiscellaneous hunter pets",
 },[[

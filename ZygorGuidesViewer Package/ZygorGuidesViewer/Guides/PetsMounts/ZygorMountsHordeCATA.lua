@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("PetsMountsH") then return end
 ZygorGuidesViewer.GuideMenuTier = "CAT"
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Argent Tournament Mounts\\Mounts\\Argent Warhorse",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Argent Tournament Mounts\\Mounts\\Argent Warhorse",{
 keywords={"argent","warhorse","charger","tournament","ground","mount"},
 condition_end="hasmount(67466)",
 model={28918},
@@ -25,7 +25,7 @@ step
 learnmount Argent Charger##66906 |use Argent Charger##47179 |only Paladin
 learnmount Argent Warhorse##67466 |use Argent Warhorse##47180
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Argent Tournament Mounts\\Mounts\\Darkspear Trolls",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Argent Tournament Mounts\\Mounts\\Darkspear Trolls",{
 keywords={"swift","purple","raptor","darkspear","ground","mount","argent","tournament"},
 condition_end="hasmount(63635) and hasmount(65644)",
 model={29261},
@@ -150,7 +150,7 @@ step
 learnmount Darkspear Raptor##63635 |use Darkspear Raptor##45593
 learnmount Swift Purple Raptor##65644 |use Swift Purple Raptor##46743
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Argent Tournament Mounts\\Mounts\\Orgrimmar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Argent Tournament Mounts\\Mounts\\Orgrimmar",{
 keywords={"swift","burgundy","wolf","orgrimmar","ground","mount","argent","tournament"},
 condition_end="hasmount(63640) and hasmount(65646)",
 model={29879},
@@ -273,7 +273,7 @@ step
 learnmount Orgrimmar Wolf##63640 |use Orgrimmar Wolf##45595
 learnmount Swift Burgundy Wolf##65646 |use Swift Burgundy Wolf##46749
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Argent Tournament Mounts\\Mounts\\Silvermoon City",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Argent Tournament Mounts\\Mounts\\Silvermoon City",{
 keywords={"swift","red","hawkstrider","silvermoon","ground","mount","argent","tournament"},
 condition_end="hasmount(63642) and hasmount(65639)",
 model={29262},
@@ -398,7 +398,7 @@ step
 learnmount Silvermoon Hawkstrider##63642 |use Silvermoon Hawkstrider##45596
 learnmount Swift Red Hawkstrider##65639 |use Swift Red Hawkstrider##46751
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Argent Tournament Mounts\\Mounts\\Sunreaver Hawkstrider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Argent Tournament Mounts\\Mounts\\Sunreaver Hawkstrider",{
 keywords={"sunreaver","hawkstrider","argent","tournament","ground","mount"},
 condition_end="hasmount(66091)",
 model={28889},
@@ -416,7 +416,7 @@ modeldisplay 28889
 step
 learnmount Sunreaver Hawkstrider##66091 |use Sunreaver Hawkstrider##46816
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Argent Tournament Mounts\\Mounts\\Thunder Bluff",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Argent Tournament Mounts\\Mounts\\Thunder Bluff",{
 keywords={"thunder","bluff","great","golden","kodo","argent","tournament","ground","mount"},
 condition_end="hasmount(63641) and hasmount(65641)",
 model={29259},
@@ -540,7 +540,7 @@ step
 learnmount Thunder Bluff Kodo##63641 |use Thunder Bluff Kodo##45592
 learnmount Great Golden Kodo##65641 |use Great Golden Kodo##46750
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Argent Tournament Mounts\\Mounts\\Undercity",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Argent Tournament Mounts\\Mounts\\Undercity",{
 keywords={"argent","tournament","white","skeletal","warhorse","forsaken","ground","mount"},
 condition_end="hasmount(63643) and hasmount(65645)",
 model={29257},
@@ -665,7 +665,7 @@ step
 learnmount Forsaken Warhorse##63643 |use Forsaken Warhorse##45597
 learnmount White Skeletal Warhorse##65645 |use White Skeletal Warhorse##46746
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dailies Mounts\\Darkmoon Faire Mounts",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dailies Mounts\\Darkmoon Faire Mounts",{
 keywords={"darkmoon","dancing","bear","swift","forest","strider","ground","mount"},
 condition_end="hasmount(103081)",
 model={39060},
@@ -691,7 +691,7 @@ step
 learnmount Darkmoon Dancing Bear##103081 |use Darkmoon Dancing Bear##73766
 learnmount Swift Forest Strider##102346 |use Swift Forest Strider##72140
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dailies Mounts\\Venomhide Ravasaur",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dailies Mounts\\Venomhide Ravasaur",{
 keywords={"venomhide","ravasaur","ground","mount"},
 condition_end="hasmount(64659)",
 model={29102},
@@ -778,7 +778,7 @@ modeldisplay 29102
 step
 learnmount Venomhide Ravasaur##64659 |use Whistle of the Venomhide Ravasaur##46102
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dailies Mounts\\White Polar Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dailies Mounts\\White Polar Bear",{
 keywords={"white","polar","bear","ground","mount"},
 condition_end="hasmount(54753)",
 model={28428},
@@ -786,7 +786,7 @@ description="This guide will help you acquire the White Polar Bear mount.",
 },[[
 step
 This mount _requires_ you to have _The Sons of Hodir_ pre-quests completed. |next
-Click here to be routed tot he Sons of Hodir Prequests and Dailies. |next "Zygor's Horde Reputations Guides\\Northrend\\The Sons of Hodir" |confirm |only if ZGV.guidesets["DailiesACATA"]
+Click here to be routed tot he Sons of Hodir Prequests and Dailies. |next "Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\The Sons of Hodir" |confirm |only if ZGV.guidesets["DailiesACATA"]
 confirm
 step
 label "dailies"
@@ -834,7 +834,7 @@ modeldisplay 28428
 step
 learnmount White Polar Bear##54753 |use Reins of the White Polar Bear##43962
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dropped Mounts\\Grey Riding Camel",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dropped Mounts\\Grey Riding Camel",{
 keywords={"grey","riding","camel","ground","mount"},
 condition_end="hasmount(88750)",
 model={35135},
@@ -1147,7 +1147,7 @@ modeldisplay 35135
 _
 learnmount Grey Riding Camel##88750 |use Reins of the Grey Riding Camel##63046
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dungeon Mounts\\Amani Battle Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dungeon Mounts\\Amani Battle Bear",{
 keywords={"amani","battle","bear","ground","mount"},
 condition_end="hasmount(98204)",
 model={38261},
@@ -1176,7 +1176,7 @@ collect 1 Amani Battle Bear##69747
 step
 learnmount Amani Battle Bear##98204 |use Amani Battle Bear##69747
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dungeon Mounts\\Raven Lord",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dungeon Mounts\\Raven Lord",{
 keywords={"raven","lord","ground","mount"},
 condition_end="hasmount(41252)",
 model={21427},
@@ -1198,7 +1198,7 @@ collect 1 Reins of the Raven Lord##32768 |goto 32.1,54.8
 step
 learnmount Raven Lord##41252 |use Reins of the Raven Lord##32768
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dungeon Mounts\\Rivendare's Deathcharger",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dungeon Mounts\\Rivendare's Deathcharger",{
 keywords={"rivendare's","deathcharger","skeletal","warhorse","ground","mount"},
 condition_end="hasmount(17481)",
 model={16937},
@@ -1219,7 +1219,7 @@ collect 1 Deathcharger's Reins##13335
 step
 learnmount Rivendare's Deathcharger##17481 |use Deathcharger's Reins##13335
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dungeon Mounts\\Swift White Hawkstrider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dungeon Mounts\\Swift White Hawkstrider",{
 keywords={"swift","white","hawkstrider","ground","mount"},
 condition_end="hasmount(46628)",
 model={19483},
@@ -1241,7 +1241,7 @@ collect 1 Reins of the Swift White Hawkstrider##35513 |goto 6.9,51.0
 step
 learnmount Swift White Hawkstrider##46628 |use Reins of the Swift White Hawkstrider##35513
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dungeon Mounts\\Swift Zulian Panther and Armored Razzashi Raptor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dungeon Mounts\\Swift Zulian Panther and Armored Razzashi Raptor",{
 keywords={"swift","zulian","panther","armored","razzashi","raptor","ground","mount"},
 condition_end="hasmount(96499) and hasmount(96491)",
 model={37799},
@@ -1274,7 +1274,7 @@ label "end0"
 learnmount Swift Zulian Panther##96499 |use Swift Zulian Panther##68824
 learnmount Armored Razzashi Raptor##96491 |use Armored Razzashi Raptor##68823
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dungeon Mounts\\Wooly Mammoth",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dungeon Mounts\\Wooly Mammoth",{
 keywords={"wooly","mammoth","ground","mount"},
 condition_end="hasmount(59793)",
 model={26424},
@@ -1289,7 +1289,7 @@ talk Mei Francis##32216 |goto Dalaran 58.1,42.1
 buy 1 Reins of the Wooly Mammoth##44231
 learnmount Wooly Mammoth##59793 |use Reins of the Wooly Mammoth##44231
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Event Mounts\\Brewfest\\Brewfest Rams",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Event Mounts\\Brewfest\\Brewfest Rams",{
 author="support@zygorguides.com",
 keywords={"brewfest","ram","swift","ground","mount"},
 condition_end="hasmount(24368)",
@@ -1310,7 +1310,7 @@ step
 learnmount Swift Brewfest Ram##24368 |use Swift Brewfest Ram##33977
 learnmount Brewfest Ram##23588 |use Swift Brewfest Ram##33976
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Event Mounts\\Brewfest\\Great Brewfest Kodo",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Event Mounts\\Brewfest\\Great Brewfest Kodo",{
 author="support@zygorguides.com",
 keywords={"great","brewfest","kodo","ground","mount"},
 condition_end="hasmount(49379)",
@@ -1331,7 +1331,7 @@ modeldisplay 24757
 step
 learnmount Great Brewfest Kodo##49379 |use Great Brewfest Kodo##37828
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Event Mounts\\Darkmoon Faire\\Moonfang",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Event Mounts\\Darkmoon Faire\\Moonfang",{
 keywords={"moonfang","darkmoon","faire","ground","mount"},
 display="49249",
 condition_end="hasmount(145133)",
@@ -1348,7 +1348,7 @@ step
 Use the _Shimmering Moonstone_ in your bags |use Shimmering Moonstone##101675
 learnmount Moonfang##145133
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Event Mounts\\Love is in the Air\\Swift Lovebird",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Event Mounts\\Love is in the Air\\Swift Lovebird",{
 author="support@zygorguides.com",
 keywords={"swift","lovebird","tallstrider","ground","mount"},
 condition_end="hasmount(102350)",
@@ -1367,7 +1367,7 @@ modeldisplay 1961
 step
 learnmount Swift Lovebird##102350 |use Swift Lovebird##72146
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Event Mounts\\Noblegarden\\Swift Springstrider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Event Mounts\\Noblegarden\\Swift Springstrider",{
 author="support@zygorguides.com",
 keywords={"swift","springstrider","tallstrider","ground","mount"},
 condition_end="hasmount(102349)",
@@ -1385,7 +1385,7 @@ modeldisplay 1221
 step
 learnmount Swift Springstrider##102349 |use Swift Springstrider##72145
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Faction Mounts\\Hawkstrider Mounts",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Faction Mounts\\Hawkstrider Mounts",{
 keywords={"swift","green","pink","purple","black","blue","red","hawkstrider","ground","mount"},
 condition_end="hasmount(35025) and hasmount(33660) and hasmount(35027) and hasmount(35022) and hasmount(35020) and hasmount(35018) and hasmount(34795)",
 model={19482},
@@ -1420,7 +1420,7 @@ learnmount Blue Hawkstrider##35020 |use Blue Hawkstrider##29220
 learnmount Purple Hawkstrider##35018 |use Purple Hawkstrider##29222
 learnmount Red Hawkstrider##34795 |use Red Hawkstrider##28927
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Faction Mounts\\Kodo Mounts",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Faction Mounts\\Kodo Mounts",{
 keywords={"great","brown","gray","white","kodo","ground","mount"},
 condition_end="hasmount(64657) and hasmount(18989) and hasmount(23247) and hasmount(23249) and hasmount(23248) and hasmount(18990)",
 model={14349},
@@ -1452,7 +1452,7 @@ learnmount Brown Kodo##18990 |use Brown Kodo##15290
 learnmount Gray Kodo##18989 |use Gray Kodo##15290
 learnmount White Kodo##64657 |use White Kodo##46100
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Faction Mounts\\Raptor Mounts",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Faction Mounts\\Raptor Mounts",{
 keywords={"swift","blue","olive","orange","emerald","turqoise","violet","raptor","ground","mount"},
 condition_end="hasmount(10799) and hasmount(10796) and hasmount(8395) and hasmount(23243) and hasmount(23242) and hasmount(23241)",
 model={14344},
@@ -1486,7 +1486,7 @@ learnmount Emerald Raptor##8395 |use Whistle of the Emerald Raptor##8588
 learnmount Turqoise Raptor##10796 |use Whistle of the Turqoise Raptor##8591
 learnmount Violet Raptor##10799 |use Whistle of the Violet Raptor##8592
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Faction Mounts\\Skeletal Horse Mounts",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Faction Mounts\\Skeletal Horse Mounts",{
 keywords={"warhorse","horse","skeletal","green","ochre","purple","black","blue","brown","red","ground","mount"},
 condition_end="hasmount(17465) and hasmount(66846) and hasmount(23246) and hasmount(64977) and hasmount(17463) and hasmount(17464) and hasmount(17462)",
 model={10720},
@@ -1521,7 +1521,7 @@ learnmount Blue Skeletal Horse##17463 |use Blue Skeletal Horse##13332
 learnmount Brown Skeletal Horse##17464 |use Brown Skeletal Horse##13333
 learnmount Red Skeletal Horses##17462 |use Red Skeletal Horse##13331
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Faction Mounts\\Trike Mounts",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Faction Mounts\\Trike Mounts",{
 keywords={"goblin","trike","turbo","turbo-trike","ground","mount"},
 condition_end="hasmount(87091) and hasmount(87090)",
 model={35250},
@@ -1541,7 +1541,7 @@ step
 learnmount Goblin Trike##87090 |use Goblin Trike Key##62461
 learnmount Goblin Turbo-Trike##87091 |use Goblin Turbo-Trike Key##62462
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Faction Mounts\\Wolf Mounts",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Faction Mounts\\Wolf Mounts",{
 keywords={"wolf","swift","timber","gray","brown","black","dire","ground","mount"},
 condition_end="hasmount(23250) and hasmount(23252) and hasmount(23251) and hasmount(64658) and hasmount(6654) and hasmount(6653) and hasmount(580)",
 model={30047},
@@ -1576,7 +1576,7 @@ learnmount Black Wolf##64658 |use Horn of the Black Wolf##46099
 learnmount Dire Wolf##6653 |use Horn of the Dire Wolf##5665
 learnmount Timber Wolf##580 |use Horn of the Timber Wolf##1132
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Black War Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Black War Bear",{
 keywords={"black","war","bear","ground","mount"},
 condition_end="hasmount(60119)",
 model={27819},
@@ -1590,7 +1590,7 @@ modeldisplay 27819
 step
 learnmount Black War Bear##60119 |use Black War Bear##44224
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Black War Kodo",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Black War Kodo",{
 keywords={"black","war","kodo","ground","mount"},
 condition_end="hasmount(22718)",
 model={19027},
@@ -1609,7 +1609,7 @@ modeldisplay 19027
 step
 learnmount Black War Kodo##22718 |use Black War Kodo##29466
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Black War Mammoth",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Black War Mammoth",{
 keywords={"black","war","mammoth","ground","mount"},
 condition_end="hasmount(59788)",
 model={25450},
@@ -1631,7 +1631,7 @@ modeldisplay 25450
 step
 learnmount Black War Mammoth##59788 |use Reins of the Black War Mammoth##44077
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Black War Raptor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Black War Raptor",{
 keywords={"black","war","raptor","ground","mount"},
 condition_end="hasmount(22721)",
 model={14388},
@@ -1650,7 +1650,7 @@ modeldisplay 14388
 step
 learnmount Black War Raptor##22721 |use Whistle of the Black War Raptor##29472
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Black War Wolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Black War Wolf",{
 keywords={"black","war","wolf","ground","mount"},
 condition_end="hasmount(22724)",
 model={21241},
@@ -1669,7 +1669,7 @@ modeldisplay 21241
 step
 learnmount Black War Wolf##22724 |use Horn of the Black War Wolf##29469
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Dark Talbuk Mounts",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Dark Talbuk Mounts",{
 keywords={"dark","war","riding","talbuk","ground","mount"},
 condition_end="hasmount(34790) and hasmount(39316)",
 model={19303},
@@ -1700,7 +1700,7 @@ step
 learnmount Dark War Talbuk##34790 |use Reins of the Dark War Talbuk##29228
 learnmount Dark Riding Talbuk##39316 |use Reins of the Dark Riding Talbuk##28915
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Frostwolf Howler",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Frostwolf Howler",{
 keywords={"frostwolf","wolf","howler","ground","mount"},
 condition_end="hasmount(23509)",
 model={14776},
@@ -1719,7 +1719,7 @@ modeldisplay 14776
 step
 learnmount Frostwolf Howler##23509 |use Frostwolf Howler##19029
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Red Skeletal Warhorse",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Red Skeletal Warhorse",{
 keywords={"red","skeletal","warhorse","ground","mount"},
 condition_end="hasmount(22722)",
 model={10719},
@@ -1738,7 +1738,7 @@ modeldisplay 10719
 step
 learnmount Red Skeletal Warhorse##22722 |use Red Skeletal Warhorse##29470
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Swift Warstrider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Swift Warstrider",{
 keywords={"swift","warstrider","war","strider","ground","mount"},
 condition_end="hasmount(35028)",
 model={20675},
@@ -1757,7 +1757,7 @@ modeldisplay 20675
 step
 learnmount Swift Warstrider##35028 |use Swift Warstrider##34129
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Profession Mounts\\Archaeology\\Fossilized Raptor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Profession Mounts\\Archaeology\\Fossilized Raptor",{
 keywords={"fossilized","raptor","archaeology","ground","mount"},
 condition_end="hasmount(84751)",
 model={34410},
@@ -1781,7 +1781,7 @@ modeldisplay 34410
 step
 learnmount Fossilized Raptor##84751 |use Fossilized Raptor##60954
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Profession Mounts\\Archaeology\\Ultramarine Qiraji Battle Tank",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Profession Mounts\\Archaeology\\Ultramarine Qiraji Battle Tank",{
 keywords={"silithid","bug","ground","mount"},
 condition_end="hasmount(92155)",
 model={15678},
@@ -1805,7 +1805,7 @@ collect 1 Scepter of Azj'Aqir##64883
 step
 learnmount Ultramarine Qiraji Battle Tank##92155 |use Scepter of Azj'Aqir##64883
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Profession Mounts\\Engineering\\Mechano-Hog",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Profession Mounts\\Engineering\\Mechano-Hog",{
 keywords={"chopper","motorcycle","mechano","mechano-hog","hog","engineering","ground","mount"},
 condition_end="hasmount(55531)",
 model={25871},
@@ -1818,7 +1818,7 @@ Routing to the proper section. |next "auctionhouse" |only if skill("Engineering"
 step
 label levelengineer
 You will need at least _12500 gold_ to obtain this _mount_ |tip This will cost more gold if you do not farm for the required materials
-Click here to proceed to the _Engineering_ guide. |next "Profession Guides\\Engineering\\Engineering 1-600 Leveling Guide" |confirm |only if ZGV.guidesets["ProfessionsH"]
+Click here to proceed to the _Engineering_ guide. |next "Profession Guides\\Engineering\\Leveling Guides\\Engineering 1-600 Leveling Guide" |confirm |only if ZGV.guidesets["ProfessionsH"]
 skill Engineering,450
 Click here if you do not wish to make this mount yourself |confirm |next "auctionhouse"
 step
@@ -1900,7 +1900,7 @@ modeldisplay 25871
 step
 learnmount Mechano-Hog##55531 |use Mechano-Hog##41508 |tip Get to the Choppa!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Raid Mounts\\Flametalon of Alysrazor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Raid Mounts\\Flametalon of Alysrazor",{
 author="support@zygorguides.com",
 keywords={"Flametalon","of","Alysrazor","mount","ground"},
 condition_end="hasmount(101542)",
@@ -1916,7 +1916,7 @@ modeldisplay 38783
 step
 learnmount Flametalon of Alysrazor##101542 |use Flametalon of Alysrazor##71665
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Raid Mounts\\Fiery Warhorse",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Raid Mounts\\Fiery Warhorse",{
 keywords={"fiery","warhorse","horse","karazhan","ground","mount"},
 condition_end="hasmount(36702)",
 model={19640},
@@ -1940,7 +1940,7 @@ modeldisplay 19640
 step
 learnmount Fiery Warhorse##36702 |use Fiery Warhorse's Reins##30480
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Raid Mounts\\Grand Black War Mammoth",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Raid Mounts\\Grand Black War Mammoth",{
 keywords={"grand","black","war","mammoth","vault","archavon","ground","mount"},
 condition_end="hasmount(61467)",
 model={27241},
@@ -1964,7 +1964,7 @@ modeldisplay 27241
 step
 learnmount Grand Black War Mammoth##61467 |use Reins of the Grand Black War Mammoth##44083
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Raid Mounts\\Qiraji Mounts",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Raid Mounts\\Qiraji Mounts",{
 keywords={"blue","green","red","yellow","qiraji","resonating","crystal","battle","tank","ahn'qiraj","fallen","kingdom","ground","mount"},
 condition_end="hasmount(25953) and hasmount(26056) and hasmount(26054) and hasmount(26055)",
 model={15681},
@@ -1996,7 +1996,7 @@ learnmount Red Qiraji Battle Tank##26054 |use Red Qiraji Resonating Crystal##213
 learnmount Yellow Qiraji Battle Tank##26055 |use Yellow Qiraji Resonating Crystal##21324
 |tip You cannot use these outside of this raid instance, but these count towards your mount count
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Camel Mounts",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Camel Mounts",{
 keywords={"camel","brown","riding","tan","ramkahen","exalted","ground","mount"},
 condition_end="hasmount(88748) and hasmount(88749)",
 model={37492},
@@ -2005,7 +2005,7 @@ description="This guide will help you acquire the Brown Riding Camel and Tan Rid
 step
 title +Camel Mounts
 #include main_rep_mount,rep="Ramkahen",tabard="RamkahenTabard"
-Click here to refer to the Ramkahen reputation guide. |next "Zygor's Horde Reputations Guides\\Cataclysm\\Ramkahen" |only if ZGV.guidesets["ReputationsH"]
+Click here to refer to the Ramkahen reputation guide. |next "Zygor's Reputations Guides\\Cataclysm Reputations\\Ramkahen" |only if ZGV.guidesets["ReputationsH"]
 |tip This will take you through the quests and any available daily.
 step
 talk Blacksmith Abasi##48617
@@ -2017,7 +2017,7 @@ step
 learnmount Brown Riding Camel##88748 |use Reins of the Brown Riding Camel##63044
 learnmount Tan Riding Camel##88749 |use Reins of the Tan Riding Camel##63045
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Ice Mommoth and Grand Ice Mammoth",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Ice Mommoth and Grand Ice Mammoth",{
 keywords={"grand","ice","mammoth","the","sons","of","hodir","exalted","ground","mount"},
 achieveid={2082,2083},
 condition_end="hasmount(61469)",
@@ -2042,7 +2042,7 @@ step
 learnmount Ice Mammoth##59799 |use Reins of the Ice Mammoth##43958
 learnmount Grand Ice Mammoth##61470 |use Reins of the Grand Ice Mammoth##43961
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Kor'kron Annihilator",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Kor'kron Annihilator",{
 keywords={"korkron","kor'kron","annihilator","ground","mount","guid","exalted"},
 condition_end="hasmount(93644)",
 model={37138},
@@ -2059,7 +2059,7 @@ modeldisplay 37138
 step
 learnmount Kor'kron Annihilator##93644 |use Reins of the Kor'kron Annihilator##67107
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Spectral Wolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Spectral Wolf",{
 keywords={"spectral","wolf","exalted","hellscream's","reach","hellscreams","tol","barad","ground","mount"},
 condition_end="hasmount(92232)",
 model={37159},
@@ -2316,7 +2316,7 @@ modeldisplay 37159
 step
 learnmount Spectral Wolf##92232 |use Reins of the Spectral Wolf##64999
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Talbuk Mounts",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Talbuk Mounts",{
 keywords={"talbuk","cobalt","war","silver","riding","tan","white","the","mag'har","maghar","exalted","ground","mount"},
 condition_end="hasmount(39315) and hasmount(34896) and hasmount(39317) and hasmount(34898) and hasmount(39318) and hasmount(34899) and hasmount(39319) and hasmount(34897)",
 model={19377},
@@ -2873,7 +2873,7 @@ learnmount Tan War Talbuk##34899 |use Reins of the Tan War Talbuk##29105
 learnmount White Riding Talbuk##39319 |use Reins of the White Riding Talbuk##31835
 learnmount White War Talbuk##34897 |use Reins of the White War Talbuk##29103
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Big Battle Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Big Battle Bear",{
 keywords={"trading","card","game","big","battle","bear","ground","mount"},
 condition_end="hasmount(51412)",
 model={25335},
@@ -2884,7 +2884,7 @@ These mounts can only be obtained by redeeming codes from the World of Warcraft 
 You can also buy this from the AH if available.
 |tip Usually ehy are very expensive.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Magic Rooster",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Magic Rooster",{
 keywords={"trading","card","game","magic","rooster","ground","mount"},
 condition_end="hasmount(65917)",
 model={29344},
@@ -2895,7 +2895,7 @@ These mounts can only be obtained by redeeming codes from the World of Warcraft 
 You can also buy this from the AH if available.
 |tip Usually ehy are very expensive.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Riding Turtle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Riding Turtle",{
 keywords={"trading","card","game","riding","turtle","ground","mount"},
 condition_end="hasmount(30174)",
 model={17158},
@@ -2915,7 +2915,7 @@ kill Frostdeep Cavedweller##81171
 collect Riding Turtle##23720
 |tip The Riding Turtle has an even lower chance to drop off of every Frostdeep Cavedweller.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Savage Raptor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Savage Raptor",{
 keywords={"trading","card","game","savage","raptor","ground","mount"},
 condition_end="hasmount(97581)",
 model={38048},
@@ -2926,7 +2926,7 @@ These mounts can only be obtained by redeeming codes from the World of Warcraft 
 You can also buy this from the AH if available.
 |tip Usually ehy are very expensive.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Spectral Tigers",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Spectral Tigers",{
 keywords={"trading","card","game","spectral","tiger","ground","mount"},
 condition_end="hasmount(42777)",
 model={21974},
@@ -2937,7 +2937,7 @@ These mounts can only be obtained by redeeming codes from the World of Warcraft 
 You can also buy this from the AH if available.
 |tip Usually ehy are very expensive.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Swift Shorestrider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Swift Shorestrider",{
 keywords={"trading","card","game","swift","shorestrider","tallstrider","ground","mount"},
 condition_end="hasmount(101573)",
 model={17011},
@@ -2948,7 +2948,7 @@ These mounts can only be obtained by redeeming codes from the World of Warcraft 
 You can also buy this from the AH if available.
 |tip Usually ehy are very expensive.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\White Riding Camel",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\White Riding Camel",{
 keywords={"trading","card","game","white","riding","camel","ground","mount"},
 condition_end="hasmount(102488)",
 model={35899},
@@ -2959,7 +2959,7 @@ These mounts can only be obtained by redeeming codes from the World of Warcraft 
 You can also buy this from the AH if available.
 |tip Usually ehy are very expensive.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Wooly White Rhino",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Trading Card Mounts\\Wooly White Rhino",{
 keywords={"trading","card","game","wooly","white","rhino","ground","mount"},
 condition_end="hasmount(74918)",
 model={31721},
@@ -2970,7 +2970,7 @@ These mounts can only be obtained by redeeming codes from the World of Warcraft 
 You can also buy this from the AH if available.
 |tip Usually ehy are very expensive.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Amani War Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Amani War Bear",{
 keywords={"amani","war","bear","zul","aman","zul'aman"},
 condition_end="hasmount(43688)",
 model={22464},
@@ -2980,7 +2980,7 @@ step
 The Amani War Bear was the reward for completing the timed even in the original version of Zul'Aman
 This mount was retired from service in patch 3.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Arctic Wolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Arctic Wolf",{
 keywords={"arctic","wolf"},
 condition_end="hasmount(16081)",
 model={1166},
@@ -2990,7 +2990,7 @@ step
 The Arctic Wolf was one of the original level 60 epic mounts
 This mount was retired from service in patch 1.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Black Qiraji Battle Tank",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Black Qiraji Battle Tank",{
 keywords={"black","qiraji","battle","tank","bug"},
 condition_end="hasmount(26656)",
 model={15676},
@@ -3000,7 +3000,7 @@ step
 The Black Qiraji Battle Tank was awarded to anyone who rang the gong within 10 hours on each server to complete the questline required to open the Temple of An'Qiraj
 This mount was retired from service in patch 4.0.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Brewfest Ram",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Brewfest Ram",{
 keywords={"brewfest","brew","fest","ram"},
 condition_end="hasmount(43899)",
 model={22265},
@@ -3010,7 +3010,7 @@ step
 The Brewfest Ram was the original reward for the 2007 Brewfest in-game event.
 This mount is only available if you completed the Brewfest event in 2007, in which case it can be purchased from the mount vendor in Amberstill Ranch.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Crusader's Black Warhorse",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Crusader's Black Warhorse",{
 keywords={"crusaders","crusader's","black","war","horse","warhorse"},
 condition_end="hasmount(68188)",
 model={29938},
@@ -3020,7 +3020,7 @@ step
 The Crusader's Black Warhorse was the reward for completing the achievement "A Tribute to Immortality"
 This mount was retired from service in patch 4.0.3 along with the tribute chest in Trial of the Grand Crusader
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Green Kodo",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Green Kodo",{
 keywords={"green","kodo"},
 condition_end="hasmount(18991)",
 model={12245},
@@ -3030,7 +3030,7 @@ step
 The Green Kodo was one of the original level 60 epic mounts
 This mount was retired from service in patch 1.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Ivory Raptor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Ivory Raptor",{
 keywords={"ivory","raptor"},
 condition_end="hasmount(17450)",
 model={6471},
@@ -3040,7 +3040,7 @@ step
 The Ivory Raptor was one of the original level 60 epic mounts
 This mount was retired from service in patch 1.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Mottled Red Raptor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Mottled Red Raptor",{
 keywords={"mottled","red","raptor"},
 condition_end="hasmount(16084)",
 model={6469},
@@ -3050,7 +3050,7 @@ step
 The Mottled Red Raptor was one of the original level 60 epic mounts
 This mount was retired from service in patch 1.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Red Wolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Red Wolf",{
 keywords={"red","wolf"},
 condition_end="hasmount(16080)",
 model={2326},
@@ -3060,7 +3060,7 @@ step
 The Red Wolf was one of the original level 60 epic mounts
 This mount was retired from service in patch 1.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Swift Horde Wolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Swift Horde Wolf",{
 keywords={"swift","horde","wolf"},
 condition_end="hasmount(68056)",
 model={29283},
@@ -3070,7 +3070,7 @@ step
 The Swift Horde Wolf dropped from the Argent Crusader Tribute Chest in Trial of the Grand Crusader (10H) with all 50 attempts left
 This mount was retired from service in patch 4.0.3 along with the Tribute Chest in Trial of the Grand Crusader
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Teal Kodo",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Teal Kodo",{
 keywords={"teal","kodo"},
 condition_end="hasmount(18992)",
 model={12242},
@@ -3080,7 +3080,7 @@ step
 The Teal Kodo was one of the original level 60 epic mounts
 This mount was retired from service in patch 1.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Vendor Mounts\\Armored Brown Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Vendor Mounts\\Armored Brown Bear",{
 keywords={"armored","brown","bear","ground","mount"},
 condition_end="hasmount(60116)",
 model={27821},
@@ -3097,7 +3097,7 @@ modeldisplay 27821
 step
 learnmount Armored Brown Bear##60116 |use Reins of the Armored Brown Bear##44226
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Ground Mounts\\Vendor Mounts\\Traveler's Tundra Mammoth",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Vendor Mounts\\Traveler's Tundra Mammoth",{
 keywords={"traveler's","tundra","mammoth","vendor","mount","ground"},
 condition_end="hasmount(61447)",
 model={25451},
@@ -3112,7 +3112,7 @@ talk Mei Francis##32216 |goto Dalaran 58.1,42.1
 buy 1 Reins of the Traveler's Tundra Mammoth##44234
 learnmount Traveler's Tundra Mammoth##61447 |use Reins of the Traveler's Tundra Mammoth##44234
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Albino Drake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Albino Drake",{
 keywords={"albino","drake","flying","mount"},
 condition_end="hasmount(60025)",
 model={6372},
@@ -3126,7 +3126,7 @@ modeldisplay 6372
 step
 learnmount Albino Drake##60025 |use Reins of the Albino Drake##44178
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Bloodbathed Frostbrood Vanquisher",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Bloodbathed Frostbrood Vanquisher",{
 keywords={"bloodbathed","frostbrood","vanquisher","flying","mount"},
 condition_end="hasmount(72808)",
 model={31156},
@@ -3140,7 +3140,7 @@ modeldisplay 31156
 step
 learnmount Bloodbathed Frostbrood Vanquisher##72808 |use Reins of the Bloodbathed Frostbrood Vanquisher##51954
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Corrupted Fire Hawk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Corrupted Fire Hawk",{
 keywords={"corrupted","fire","hawk","firehawk","flying","mount"},
 condition_end="hasmount(97560)",
 model={38046},
@@ -3154,7 +3154,7 @@ modeldisplay 38046
 step
 learnmount Corrupted Fire Hawk##97560 |use Corrupted Egg of Millagazor##69230
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Drake of the East Wind",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Drake of the East Wind",{
 keywords={"drake","of","the","east","wind","flying","mount"},
 condition_end="hasmount(88335)",
 model={35757},
@@ -3299,7 +3299,7 @@ modeldisplay 35757
 step
 learnmount Drake of the East Wind##88335 |use Reins of the Drake of the East Wind##62901
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Flameward Hippogryph",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Flameward Hippogryph",{
 keywords={"flameward","hippogryph","flying","mount"},
 condition_end="hasmount(97359)",
 model={38018},
@@ -3316,7 +3316,7 @@ modeldisplay 38018
 step
 learnmount Flameward Hippogryph##97359 |use Flameward Hippogryph##69213
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Green Proto Drake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Green Proto Drake",{
 keywords={"green","proto","drake","proto-drake","the","oracles","exalted","flying","mount"},
 condition_end="hasmount(61294)",
 model={28053},
@@ -3331,7 +3331,7 @@ label "Pre Quests"
 step
 You will need to be Revered with _The Oracles_ in order to obtain the Mysterious Egg.
 Refer to our Dailies and Reputation guides in order to earn rep.
-Click here for the Oracle Reputation section. |next "Zygor's Horde Reputations Guides\\Northrend\\The Oracles" |confirm |only if ZGV.guidesets["ReputationsH"]
+Click here for the Oracle Reputation section. |next "Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\The Oracles" |confirm |only if ZGV.guidesets["ReputationsH"]
 step
 label "Buy_it"
 talk Geen##31910
@@ -3344,7 +3344,7 @@ modeldisplay 28053
 step
 learnmount Green Proto-Drake##61294 |use Reins of the Green Proto-Drake##44707
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Icebound Frostbrood Vanquisher",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Icebound Frostbrood Vanquisher",{
 keywords={"icebound","frostbrood","vanquisher","flying","mount"},
 condition_end="hasmount(72807)",
 model={31154},
@@ -3358,7 +3358,7 @@ modeldisplay 31154
 step
 learnmount Icebound Frostbrood Vanquisher##72807 |use Reins of the Icebound Frostbrood Vanquisher##51955
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Ironbound Proto-Drake ",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Ironbound Proto-Drake ",{
 author="support@zygorguides.com",
 keywords={"ironbound","proto-drake","proto","drake","flying","mount"},
 condition_end="hasmount(63956)",
@@ -3478,7 +3478,7 @@ modeldisplay 28953
 step
 learnmount Ironbound Proto-Drake##63956 |use Reins of the Ironbound Proto-Drake##45801
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Red Dragonhawk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Red Dragonhawk",{
 keywords={"red","dragonhawk","flying","mount"},
 condition_end="hasmount(61997)",
 model={23515},
@@ -3492,7 +3492,7 @@ modeldisplay 23515
 step
 learnmount Red Dragonhawk##61997 |use Red Dragonhawk##44842
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Red Proto-Drake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Red Proto-Drake",{
 keywords={"red","proto-drake","flying","mount"},
 condition_end="hasmount(59961)",
 model={28044},
@@ -3801,7 +3801,7 @@ modeldisplay 28044
 step
 learnmount Red Proto-Drake##59961 |use Reins of the Red Proto-Drake##44160
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Rusted Proto-Drake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Rusted Proto-Drake",{
 keywords={"rusted","proto-drake","proto","drake","flying","mount"},
 condition_end="hasmount(63963)",
 model={28954},
@@ -3920,7 +3920,7 @@ modeldisplay 28954
 step
 learnmount Rusted Proto-Drake##63963 |use Reins of the Rusted Proto-Drake##45802
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Twilight Harbinger",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Twilight Harbinger",{
 keywords={"twilight","harbinger","flying","mount"},
 condition_end="hasmount(107844)",
 model={39562},
@@ -3934,7 +3934,7 @@ modeldisplay 39562
 step
 learnmount Twilight Harbinger##107844 |use Reins of the Twilight Harbinger##77068
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Violet Proto-Drake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Violet Proto-Drake",{
 author="support@zygorguides.com",
 keywords={"violet","proto-drake","proto","drake","flying","mount"},
 model={28043},
@@ -4018,7 +4018,7 @@ modeldisplay 28043
 step
 Congratulations, you have earned the Violet Proto-Drake.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Volcanic Stone Drake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Volcanic Stone Drake",{
 keywords={"volcanic","stone","drake","flying","mount"},
 condition_end="hasmount(88331)",
 model={35551},
@@ -4268,7 +4268,7 @@ modeldisplay 35551
 step
 learnmount Volcanic Stone Drake##88331 |use Reins of the Volcanic Stone Drake##62900
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Argent Tournament Mounts\\Argent Hippogryph",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Argent Tournament Mounts\\Argent Hippogryph",{
 keywords={"argent","tournament","hippogryph","flying","mount"},
 condition_end="hasmount(63844)",
 model={31714},
@@ -4288,7 +4288,7 @@ modeldisplay 31714
 step
 learnmount Argent Hippogryph##63844 |use Argent Hippogryph##45725
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Argent Tournament Mounts\\Sunreaver Dragonhawk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Argent Tournament Mounts\\Sunreaver Dragonhawk",{
 keywords={"sunreaver","dragonhawk","argent","tournament","flying","mount","exalted","the","sunreavers"},
 condition_end="hasmount(66088)",
 model={29696},
@@ -4306,7 +4306,7 @@ modeldisplay 29696
 step
 learnmount Sunreaver Dragonhawk##66088 |use Sunreaver Dragonhawk##46814
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Celestial Steed",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Celestial Steed",{
 author="support@zygorguides.com",
 keywords={"blizzard","store","celestial","steed","flying","mount"},
 condition_end="hasmount(75614)",
@@ -4321,7 +4321,7 @@ modeldisplay 31958
 step
 learnmount Celestial Steed##75614 |use Celestial Steed##54811
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Heart of the Aspects",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Heart of the Aspects",{
 author="support@zygorguides.com",
 keywords={"blizzard","store","heart","of","the","aspects","flying","mount"},
 condition_end="hasmount(110051)",
@@ -4336,7 +4336,7 @@ modeldisplay 40029
 step
 learnmount Heart of the Aspects##110051 |use Heart of the Aspects##78924
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Winged Guardian",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Winged Guardian",{
 author="support@zygorguides.com",
 keywords={"blizzard","store","winged","guardian","flying","mount"},
 condition_end="hasmount(98727)",
@@ -4351,7 +4351,7 @@ modeldisplay 38260
 step
 learnmount Winged Guardian##98727 |use Winged Guardian##69846
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Phosphorescent Stone Drake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Phosphorescent Stone Drake",{
 keywords={"phosphorescent","stone","drake","aeonaxx","flying","mount"},
 condition_end="hasmount(88718)",
 model={35740},
@@ -4369,7 +4369,7 @@ modeldisplay 3574,0
 step
 learnmount Phosphorescent Stone Drake##88718 |use Reins of the Phosphorescent Stone Drake##63042
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Time-Lost Proto Drake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Time-Lost Proto Drake",{
 keywords={"time","lost","proto","drake","flying","mount"},
 condition_end="hasmount(60002)",
 model={26711},
@@ -4388,7 +4388,7 @@ modeldisplay 26711
 step
 learnmount Time-Lost Proto Drake##60002 |use Reins of the Time-Lost Proto-Drake##44168
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dungeon Mounts\\Blue Drake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dungeon Mounts\\Blue Drake",{
 keywords={"blue","drake","cache","of","eregos","flying","mount"},
 condition_end="hasmount(59568)",
 model={25256},
@@ -4407,7 +4407,7 @@ modeldisplay 25256
 step
 learnmount Blue Drake##59568 |use Reins of the Blue Drake##43953
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dungeon Mounts\\Blue Proto Drake", {
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dungeon Mounts\\Blue Proto Drake", {
 keywords={"blue","proto","drake","skadi","the","ruthless","flying","mount"},
 condition_end="hasmount(59996)",
 model={28041},
@@ -4425,7 +4425,7 @@ modeldisplay 28041
 step
 learnmount Blue Protodrake##59996 |use Reins of the Blue Protodrake##44151
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dungeon Mounts\\Bronze Drake", {
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dungeon Mounts\\Bronze Drake", {
 keywords={"bronze","drake","flying","mount"},
 condition_end="hasmount(59569)",
 model={27812},
@@ -4450,7 +4450,7 @@ modeldisplay 27812
 step
 learnmount Bronze Drake##59569 |use Reins of the Bronze Drake##43951
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dungeon Mounts\\Drake of the North Wind",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dungeon Mounts\\Drake of the North Wind",{
 keywords={"drake","of","the","north","wind","flying","mount"},
 condition_end="hasmount(88742)",
 model={35755},
@@ -4469,7 +4469,7 @@ modeldisplay 35755
 step
 learnmount Drake of the North Wind##88742 |use Reins of the Drake of the North Wind##63040
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dungeon Mounts\\Vitreous Stone Drake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dungeon Mounts\\Vitreous Stone Drake",{
 keywords={"vitreous","stone","drake","slabhide","flying","mount"},
 condition_end="hasmount(88746)",
 model={35751},
@@ -4488,7 +4488,7 @@ modeldisplay 35751
 step
 learnmount Vitreous Stone Drake##88746 |use Reins of the Vitreous Stone Drake##63043
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Event Mounts\\Love is in the Air\\Big Love Rocket",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Event Mounts\\Love is in the Air\\Big Love Rocket",{
 keywords={"big","love","rocket","love","is","in","the","air","flying","mount"},
 condition_end="hasmount(38207)",
 model={30989},
@@ -4508,7 +4508,7 @@ modeldisplay 30989
 step
 learnmount Big Love Rocket##71342 |use Big Love Rocket##50250
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Event Mounts\\Hallows End\\Headless Horseman's Mount",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Event Mounts\\Hallows End\\Headless Horseman's Mount",{
 author="support@zygorguides.com",
 keywords={"headless","horsemans","flying","mount"},
 condition_end="hasmount(48025)",
@@ -4528,7 +4528,7 @@ modeldisplay 25159
 step
 learnmount Headless Horseman's Mount##48025 |use The Horseman's Reins##37012
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Event Mounts\\Hallows End\\Magic Broom",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Event Mounts\\Hallows End\\Magic Broom",{
 keywords={"magic","broom","flying","mount"},
 condition_end="hasmount(47977)",
 model={21939},
@@ -4543,7 +4543,7 @@ buy Magic Broom##37011 |goto Undercity,67.8,6.8
 step
 Congratulations, you have obtained the _Magic Broom_ mount!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Obsidian Nightwing",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Obsidian Nightwing",{
 keywords={"recruit","a","friend","recruit-a-friend","flying","mount"},
 model={42498},
 condition_end="hasmount(121820)",
@@ -4557,7 +4557,7 @@ Check your in-game mail for your new mount!
 collect 1 Heart of the Nightwing##83086
 learnmount Obsidian Nightwing##121820 |use Heart of the Nightwing##83086
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\X-53 Touring Rocket",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\X-53 Touring Rocket",{
 author="support@zygorguides.com",
 keywords={"x","53","touring","rocket","recruit","a","friend","recruit-a-friend","flying","mount"},
 condition_end="hasmount(75973)",
@@ -4572,7 +4572,7 @@ modeldisplay 31992
 step
 learnmount X-53 Touring Rocket##75973 |use X-53 Touring Rocket##54860
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Profession Mounts\\Engineering\\Flying Machine",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Profession Mounts\\Engineering\\Flying Machine",{
 keywords={"engineering","flying","mount"},
 condition_end="hasmount(44153)",
 model={22719},
@@ -4628,7 +4628,7 @@ step
 learnmount Flying Machine##44153 |use Flying Machine##34060
 _Warning!_ If you _drop Engineering_ you _will not_ be able to _use this mount anymore_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Profession Mounts\\Engineering\\Turbo-Charged Flying Machine",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Profession Mounts\\Engineering\\Turbo-Charged Flying Machine",{
 keywords={"turbo","charged","flying","machine","engineering","mount"},
 condition_end="hasmount(44151)",
 model={22720},
@@ -4678,7 +4678,7 @@ step
 learnmount Turbo-Charged Flying Machine##44151 |use Turbo-Charged Flying Machine##34061
 _Warning!_ If you _drop Engineering_ you _will not_ be able to _use this mount anymore_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Profession Mounts\\Tailoring\\Flying Carpet",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Profession Mounts\\Tailoring\\Flying Carpet",{
 keywords={"tailoring","flying","carpet","mount","flying"},
 condition_end="hasmount(61451)",
 model={28060},
@@ -4740,14 +4740,14 @@ modeldisplay 28060
 learnmount Flying Carpet##61451 |use Flying Carpet##44554
 _Warning!_ If you _drop Tailoring_ you _will not_ be able to _use this mount anymore_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Profession Mounts\\Tailoring\\Frosty Flying Carpet",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Profession Mounts\\Tailoring\\Frosty Flying Carpet",{
 keywords={"tailoring","frosty","flying","carpet","mount"},
 condition_end="hasmount(75596)",
 model={31837},
 description="This guide will help you acquire the Frost Flying Carpet mount.",
 },[[
 step
-Click here to level your tailoring skill if it is not level 425. |next "Profession Guides\\Tailoring\\Tailoring 1-600 Leveling Guide" |only if ZGV.guidesets["ProfessionsA"] |confirm
+Click here to level your tailoring skill if it is not level 425. |next "Profession Guides\\Tailoring\\Leveling Guides\\Tailoring 1-600 Leveling Guide" |only if ZGV.guidesets["ProfessionsA"] |confirm
 talk Frozo the Renowned##40160
 buy 1 Pattern: Frosty Flying Carpet##54798
 learn Frosty Flying Carpet##75597 |use Pattern: Frosty Flying Carpet##54798
@@ -4780,14 +4780,14 @@ step
 learnmount Frost Flying Carpet##75596 |use Frosty Flying Carpet##54797
 _Warning!_ If you _drop Tailoring_ you _will not_ be able to _use this mount anymore_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Profession Mounts\\Tailoring\\Magnificent Flying Carpet",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Profession Mounts\\Tailoring\\Magnificent Flying Carpet",{
 keywords={"tailoring","magnificent","flying","carpet","mount"},
 condition_end="hasmount(61309)",
 model={28064},
 description="This guide will help you acquire the Magnificent Flying Carpet mount.",
 },[[
 step
-Click here to level your tailoring skill if it is not level 425. |next "Profession Guides\\Tailoring\\Tailoring 1-600 Leveling Guide" |only if ZGV.guidesets["ProfessionsA"] |confirm
+Click here to level your tailoring skill if it is not level 425. |next "Profession Guides\\Tailoring\\Leveling Guides\\Tailoring 1-600 Leveling Guide" |only if ZGV.guidesets["ProfessionsA"] |confirm
 talk Magar##3363
 learn Magnificent Flying Carpet##60971 |goto Orgrimmar/1 60.7,59.1
 step
@@ -4823,7 +4823,7 @@ step
 learnmount Magnificent Flying Carpet##61309 |use Magnificent Flying Carpet##44558
 _Warning!_ If you _drop Tailoring_ you _will not_ be able to _use this mount anymore_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Ashes of Al'ar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Ashes of Al'ar",{
 author="support@zygorguides.com",
 keywords={"mount","ashes","of","al'ar","alar","flying"},
 condition_end="hasmount(40192)",
@@ -4838,7 +4838,7 @@ modeldisplay 17890
 step
 learnmount Ashes of Al'ar##40192 |use Ashes of Al'ar##32458
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Azure Drake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Azure Drake",{
 author="support@zygorguides.com",
 keywords={"azure","drake","mount","flying"},
 condition_end="hasmount(59567)",
@@ -4854,7 +4854,7 @@ modeldisplay 24743
 step
 learnmount Azure Drake##59567 |use Reins of the Azure Drake##43952
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Black Drake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Black Drake",{
 author="support@zygorguides.com",
 keywords={"black","drake","mount","flying"},
 condition_end="hasmount(59650)",
@@ -4868,7 +4868,7 @@ collect Reins of the Black Drake##43986 |goto The Obsidian Sanctum/0 52.9,48.0
 step
 learnmount Black Drake##59650 |use Reins of the Black Drake##43986
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Blazing Drake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Blazing Drake",{
 author="support@zygorguides.com",
 keywords={"blazing","drake","mount","flying"},
 condition_end="hasmount(107842)",
@@ -4884,7 +4884,7 @@ modeldisplay 39561
 step
 learnmount Blazing Drake##107842 |use Reins of the Blazing Drake##77067
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Experiment 12-B",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Experiment 12-B",{
 author="support@zygorguides.com",
 keywords={"experiment","12","b","12-b","flying","mount"},
 condition_end="hasmount(110039)",
@@ -4900,7 +4900,7 @@ modeldisplay 39229
 step
 learnmount Experiment 12-B##110039 |use Experiment 12-B##78919
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Invincible",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Invincible",{
 author="support@zygorguides.com",
 keywords={"invincible","lich","king","mount","flying"},
 condition_end="hasmount(72286)",
@@ -4915,7 +4915,7 @@ modeldisplay 31248
 step
 learnmount Invincible##72286 |use Invincible's Reins##50818
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Life-Binder's Handmaiden",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Life-Binder's Handmaiden",{
 author="support@zygorguides.com",
 keywords={"life","binder's","binders","handmaiden","mount","flying"},
 condition_end="hasmount(107845)",
@@ -4931,7 +4931,7 @@ modeldisplay 39563
 step
 learnmount Life-Binder's Handmaiden##107845 |use Life-Binder's Handmaiden##77069
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Mimiron's Head",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Mimiron's Head",{
 author="support@zygorguides.com",
 keywords={"mimirons","head","mount","flying"},
 condition_end="hasmount(63796)",
@@ -4960,7 +4960,7 @@ step
 label "end"
 learnmount Mimiron's Head##63796 |use Mimiron's Head##45693
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Onyxian Drake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Onyxian Drake",{
 author="support@zygorguides.com",
 keywords={"onyxia","onyxian","drake","mount","flying"},
 condition_end="hasmount(69395)",
@@ -4976,7 +4976,7 @@ modeldisplay 30346
 step
 learnmount Onyxian Drake##69395 |use Reins of the Onyxian Drake##49636
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Pureblood Fire Hawk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Pureblood Fire Hawk",{
 author="support@zygorguides.com",
 keywords={"pureblood","pure","blood","fire","hawk","firehawk","mount","flying"},
 condition_end="hasmount(97493)",
@@ -4993,7 +4993,7 @@ modeldisplay 38031
 step
 learnmount Pureblood Fire Hawk##97493 |use Smoldering Egg of Millagazor##69224
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Twilight Drake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Twilight Drake",{
 author="support@zygorguides.com",
 keywords={"twilight","drake","mount","flying"},
 condition_end="hasmount(59571)",
@@ -5008,7 +5008,7 @@ modeldisplay 27796
 step
 learnmount Twilight Drake##59571 |use Reins of the Twilight Drake##43954
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Drake of the South Wind",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Drake of the South Wind",{
 author="support@zygorguides.com",
 keywords={"south","wind","drake","mount","flying"},
 condition_end="hasmount(88744)",
@@ -5024,7 +5024,7 @@ collect Reins of the Drake of the South Wind##63041 |goto Throne of the Four Win
 step
 learnmount Drake of the South Wind##88744 |use Reins of the Drake of the South Wind##63041
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Cenarion War Hippogryph",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Cenarion War Hippogryph",{
 keywords={"cenarion","war","hippogryph","mount","expedition","exalted","flying"},
 achieveid={893},
 condition_end="hasmount(43927)",
@@ -5429,7 +5429,7 @@ turnin Longtail is the Lynchpin##10893 |goto 49.9,35.9
 accept Meeting at the Blackwing Coven##10722 |goto 49.9,35.9
 step
 kill arakkoas |goto 40.9,20.4 |n
-Get the Understanding Ravenspeech buff |havebuff Interface\Icons\Ability_Hunter_Pet_DragonHawk
+Get the Understanding Ravenspeech buff |havebuff 132188
 Must be within melee range to receive the buff
 The buff lasts for 2 minutes
 Anytime the buff wears off, kill arakkoas again to get it back
@@ -5455,7 +5455,7 @@ from Wyrmcult Scout##21637+, Wyrmcult Acolyte##21383+, Wyrmcult Zealot##21382+
 collect 5 Costume Scraps##31121 |q 10722 |goto 32.3,34.9
 step
 Combine your 5 Costume Scraps to make an Overseer Disguise |use Costume Scraps##31121
-Put on the Overseer Disguise |havebuff Interface\Icons\INV_Chest_Wolf |q 10722 |use Overseer Disguise##31122
+Put on the Overseer Disguise |havebuff 132760 |q 10722 |use Overseer Disguise##31122
 talk Kolphis Darkscale##22019
 Attend the meeting with Kolphis Darkscale |q 10722/1 |goto 32.6,37.5
 step
@@ -5518,7 +5518,7 @@ If you need another one, talk to Wildlord Antelarion at [62.6,39.6]
 Click here to continue. |confirm
 step
 Use your Felsworn Gas Mask to equip it |use Felsworn Gas Mask##31366
-Wear the Felsworn Gas Mask |havebuff Interface\Icons\INV_Helmet_31 |c |q 10819 |goto 73.3,40.1
+Wear the Felsworn Gas Mask |havebuff 133133 |c |q 10819 |goto 73.3,40.1
 Click the Legion Communicator |tip Between 2 big green floating crystals. You must be wearing the Felsworn Gas Mask to use the Legion Communicator
 turnin Felsworn Gas Mask##10819 |goto 73.3,40.1
 accept Deceive thy Enemy##10820 |goto 73.3,40.1
@@ -5527,7 +5527,7 @@ kill 4 Doomforge Attendant |q 10820/1 |goto 74.9,39.9
 kill 4 Doomforge Engineer |q 10820/2 |goto 74.9,39.9
 step
 Use your Felsworn Gas Mask to equip it |use Felsworn Gas Mask##31366
-Wear the Felsworn Gas Mask |havebuff Interface\Icons\INV_Helmet_31 |c |q 10819 |goto 73.3,40.1
+Wear the Felsworn Gas Mask |havebuff 133133 |c |q 10819 |goto 73.3,40.1
 Click the Legion Communicator
 turnin Deceive thy Enemy##10820 |goto 73.3,40.1
 |tip Between 2 big green floating crystals. Click the Legion Communicator. You must be wearing the Felsworn Gas Mask to use the Legion Communicator
@@ -5773,7 +5773,7 @@ turnin The Spare Suit##11565 |goto 43.5,14
 accept Surrender... Not!##11566 |goto 43.5,14
 step
 Go southwest to Winterfin Village |n
-Use King Mrgl-Mrgl's Spare Suit |havebuff INV_Misc_Head_Murloc_01 |use King Mrgl-Mrgl's Spare Suit##34620
+Use King Mrgl-Mrgl's Spare Suit |havebuff 134169 |use King Mrgl-Mrgl's Spare Suit##34620
 step
 Go inside the cave
 talk Glrglrglr##28375
@@ -5836,7 +5836,7 @@ modeldisplay 31542
 step
 learnmount Cenarion War Hippogryph##43927 |use Cenarion War Hippogryph##33999
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Dark Phoenix",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Dark Phoenix",{
 keywords={"dark","phoenix","pheonix","mount","guild","exalted","flying"},
 condition_end="hasmount(88990)",
 model={37145},
@@ -5853,7 +5853,7 @@ modeldisplay 37145
 step
 learnmount Dark Phoenix##88990 |use Reins of the Dark Phoenix##63125
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Drake of the West Wind",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Drake of the West Wind",{
 keywords={"drake","of","the","west","wind","mount","tol","barad","baradin's","baradins","warens","exalted","flying"},
 condition_end="hasmount(88741)",
 model={35754},
@@ -6116,7 +6116,7 @@ modeldisplay 35754
 step
 learnmount Drake of the West Wind##88741 |use Reins of the Drake of the West Wind##65356
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Netherwing Drakes\\Quests & Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Netherwing Drakes\\Quests & Dailies",{
 keywords={"Azure","netherwing","drake","cobalt","violet","purple","veridan","onyx","mount","flying"},
 condition_end="hasmount(41514) and hasmount(41515) and hasmount(41513) and hasmount(41516) and hasmount(41517) and hasmount(41518)",
 model={21524},
@@ -6755,7 +6755,7 @@ learnmount Purple Netherwing Drake##41516 |use Reins of the Purple Netherwing Dr
 learnmount Veridian Netherwing Drake##41517 |use Reins of the Veridian Netherwing Drake##32861
 learnmount Oynx Netherwing Drake##41513 |use Reins of the Onyx Netherwing Drake##32857
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Netherwing Drakes\\Netherwing Egg Hunting - Optimized Path",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Netherwing Drakes\\Netherwing Egg Hunting - Optimized Path",{
 keywords={"Azure","netherwing","drake","cobalt","violet","purple","veridan","onyx","mount","flying"},
 condition_end="hasmount(41514) and hasmount(41515) and hasmount(41513) and hasmount(41516) and hasmount(41517) and hasmount(41518)",
 model={21524},
@@ -6980,7 +6980,7 @@ step
 This is the end of the path.
 Click here to go back to the beginning of the path. |confirm |next "start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Red Drake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Red Drake",{
 keywords={"red","drake","exalted","the","wyrmrest","accord","mount","flying"},
 condition_end="hasmount(59570)",
 model={23522},
@@ -6990,7 +6990,7 @@ step
 This will require you to be _exalted_ with _The Wyrmrest Accord_
 #include "WATabard"
 The tabard will only give you reputation if the enemies in your current dungeon are high enough to give you experience.  |only if rep("The Wyrmrest Accord")<Exalted
-Click here to earn Reputation via quests and dailies. |next "Zygor's Horde Reputations Guides\\Northrend\\The Wyrmrest Accord" |confirm |only if ZGV.guidesets["ReputationsH"]
+Click here to earn Reputation via quests and dailies. |next "Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\The Wyrmrest Accord" |confirm |only if ZGV.guidesets["ReputationsH"]
 _Exalted_ with _The Wyrmrest Accord_ |condition rep("The Wyrmrest Accord")>=Exalted
 next |only if default
 next exalted |only if rep("The Wyrmrest Accord")>=Exalted
@@ -7001,7 +7001,7 @@ modeldisplay 23522
 step
 learnmount Red Drake##59570 |use Reins of the Red Drake##43955
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Riding Nether Ray\\Skyguard Faction Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Riding Nether Ray\\Skyguard Faction Dailies",{
 keywords={"green","red","purple","blue","silver","riding","nether","ray","skyguard","exalted","mount","flying"},
 author="support@zygorguides.com",
 description="This guide will help you acquire the Green Riding Nether Ray, Red Riding Nether Ray, Blue Riding Nether Ray, Purple Riding Nether Ray, and Silver Riding Nether Ray mounts.",
@@ -7030,7 +7030,7 @@ learnmount Blue Riding Nether Ray##39803 |use Blue Riding Nether Ray##32319
 learnmount Purple Riding Nether Ray##39801 |use Purple Riding Nether Ray##32316
 learnmount Silver Riding Nether Ray##39802 |use Silver Riding Nether Ray##32318
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\Amani Dragonhawk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\Amani Dragonhawk",{
 keywords={"trading","card","game","amani","dragonhawk","mount","flying"},
 condition_end="hasmount(96503)",
 model={37800},
@@ -7041,7 +7041,7 @@ These mounts can only be obtained by redeeming codes from the World of Warcraft 
 You can also buy this from the AH if available.
 |tip Usually ehy are very expensive.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\Mottled Drake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\Mottled Drake",{
 keywords={"trading","card","game","mottled","drake","mount","flying"},
 condition_end="hasmount(93623)",
 model={37231},
@@ -7052,7 +7052,7 @@ These mounts can only be obtained by redeeming codes from the World of Warcraft 
 You can also buy this from the AH if available.
 |tip Usually ehy are very expensive.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\Blazing Hippogryph",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\Blazing Hippogryph",{
 keywords={"blazing","hippogryph","mount","trading","card","game","flying"},
 condition_end="hasmount(74856)",
 model={31803},
@@ -7063,7 +7063,7 @@ These mounts can only be obtained by redeeming codes from the World of Warcraft 
 You can also buy this from the AH if available.
 |tip Usually ehy are very expensive.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\Corrupted Hippogryph",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\Corrupted Hippogryph",{
 keywords={"trading","card","game","corrupted","hippogryph","mount","flying"},
 condition_end="hasmount(102514)",
 model={38972},
@@ -7074,7 +7074,7 @@ These mounts can only be obtained by redeeming codes from the World of Warcraft 
 You can also buy this from the AH if available.
 |tip Usually ehy are very expensive.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\X-51 Nether-Rocket",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\X-51 Nether-Rocket",{
 keywords={"x","51","X-51","nether","rocket","nether-rocket","trading","card","game","mount","flying"},
 condition_end="hasmount(46197)",
 model={23656},
@@ -7085,7 +7085,7 @@ These mounts can only be obtained by redeeming codes from the World of Warcraft 
 You can also buy this from the AH if available.
 |tip Usually ehy are very expensive.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\X-51 Nether-Rocket X-TREME",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\X-51 Nether-Rocket X-TREME",{
 keywords={"x-51","x","51","nether","rocket","nether-rocket","x-treme","treme","trading","card","game","mount","flying"},
 condition_end="hasmount(46199)",
 model={23647},
@@ -7096,7 +7096,7 @@ These mounts can only be obtained by redeeming codes from the World of Warcraft 
 You can also buy this from the AH if available.
 |tip Usually ehy are very expensive.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\Feldrake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Trading Card Mounts\\Feldrake",{
 keywords={"Feldrake","trading","card","game","mount","flying"},
 condition_end="hasmount(113120)",
 model={40568},
@@ -7107,7 +7107,7 @@ These mounts can only be obtained by redeeming codes from the World of Warcraft 
 You can also buy this from the AH if available.
 |tip Usually ehy are very expensive.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Black Proto-Drake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Black Proto-Drake",{
 keywords={"black","proto","drake","proto-drake"},
 condition_end="hasmount(59976)",
 model={28040},
@@ -7117,7 +7117,7 @@ step
 The Black Proto-Drake was the reward for completing the achievement "Glory of the Raider (25 Player)"
 This mount was retired from service in patch 3.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Brutal Nether Drake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Brutal Nether Drake",{
 keywords={"brutal","nether","drake","arena"},
 condition_end="hasmount(58615)",
 model={27507},
@@ -7127,7 +7127,7 @@ step
 The Brutal Nether Drake was the reward for top ranking arena teams at the conclusion of Arena Season 4
 This mount was retired from service at the conclusion of Arena Season 4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Cataclysmic Gladiator's Twilight Drake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Cataclysmic Gladiator's Twilight Drake",{
 keywords={"cataclysmic","gladiators","gladiator's","twilight","drake","arena"},
 condition_end="hasmount(124550)",
 model={38757},
@@ -7137,7 +7137,7 @@ step
 The Cataclysmic Gladiator's Twilight Drake was the reward for top ranking arena teams at the conclusion of Arena Season 11
 This mount was retired from service at the conclusion of Arena Season 11
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Deadly Gladiator's Frost Wyrm",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Deadly Gladiator's Frost Wyrm",{
 keywords={"deadly","gladiators","gladiator's","frost","wyrm","arena"},
 condition_end="hasmount(64927)",
 model={25511},
@@ -7147,7 +7147,7 @@ step
 The Deadly Gladiator's Frost Wyrm was the reward for top ranking arena teams at the conclusion of Arena Season 5
 This mount was retired from service at the conclusion of Arena Season 5
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Furious Gladiator's Frost Wyrm",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Furious Gladiator's Frost Wyrm",{
 keywords={"furious","gladiators","gladiator's","frost","wyrm","arena"},
 condition_end="hasmount(65439)",
 model={25593},
@@ -7157,7 +7157,7 @@ step
 The Furious Gladiator's Frost Wyrm was the reward for top ranking arena teams at the conclusion of Arena Season 6
 This mount was retired from service at the conclusion of Arena Season 6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Merciless Nether Drake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Merciless Nether Drake",{
 keywords={"merciless","nether","drake","arena"},
 condition_end="hasmount(44744)",
 model={22620},
@@ -7167,7 +7167,7 @@ step
 The Merciless Nether Drake was the reward for top ranking arena teams at the conclusion of Arena Season 2
 This mount was retired from service at the conclusion of Arena Season 2
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Relentless Gladiator's Frost Wyrm",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Relentless Gladiator's Frost Wyrm",{
 keywords={"relentless","gladiators","gladiator's","frost","wyrm","arena"},
 condition_end="hasmount(67336)",
 model={29794},
@@ -7177,7 +7177,7 @@ step
 The Relentless Gladiator's Frost Wyrm was the reward for top ranking arena teams at the conclusion of Arena Season 7
 This mount was retired from service at the conclusion of Arena Season 7
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Ruthless Gladiator's Twilight Drake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Ruthless Gladiator's Twilight Drake",{
 keywords={"ruthless","gladiators","gladiator's","twilight","drake","arena"},
 condition_end="hasmount(101821)",
 model={38755},
@@ -7187,7 +7187,7 @@ step
 The Ruthless Gladiator's Twilight Drake was the reward for top ranking arena teams at the conclusion of Arena Season 10
 This mount was retired from service at the conclusion of Arena Season 10
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Spectral Wind Rider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Spectral Wind Rider",{
 keywords={"spectral","wind","rider"},
 condition_end="hasmount(107517)",
 model={39547},
@@ -7197,7 +7197,7 @@ step
 The Spectral Wind Rider was the Horde version of the Scroll of Resurrection reward
 This mount was retired from service in patch 5.4.7 with the Scroll of Resurrection program
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Swift Nether Drake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Swift Nether Drake",{
 keywords={"swift","nether","drake","arena"},
 condition_end="hasmount(37015)",
 model={20344},
@@ -7207,7 +7207,7 @@ step
 The Swift Nether Drake was the reward for top ranking arena teams at the conclusion of Arena Season 1
 This mount was retired from service at the conclusion of Arena Season 1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Tyrael's Charger",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Tyrael's Charger",{
 keywords={"tyraels","tyrael's","charger","annual","pass"},
 condition_end="hasmount(107203)",
 model={39530},
@@ -7217,7 +7217,7 @@ step
 Tyrael's Charger was a reward for subscribing to Blizzard's Annual Pass promotion.
 This mount was retired from service in patch 5.4.7
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Vengeful Nether Drake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Vengeful Nether Drake",{
 keywords={"vengeful","nether","drake","arena"},
 condition_end="hasmount(49193)",
 model={24725},
@@ -7227,7 +7227,7 @@ step
 The Vengeful Nether Drake was the reward for top ranking arena teams at the conclusion of Arena Season 3
 This mount was retired from service at the conclusion of Arena Season 3
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Vicious Gladiator's Twilight Drake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Vicious Gladiator's Twilight Drake",{
 keywords={"vicious","gladiators","gladiator's","twilight","drake","arena"},
 condition_end="hasmount(101282)",
 model={38756},
@@ -7237,7 +7237,7 @@ step
 The Vicious Gladiator's Twilight Drake was the reward for top ranking arena teams at the conclusion of Arena Season 9
 This mount was retired from service at the conclusion of Arena Season 9
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Wrathful Gladiator's Frost Wyrm",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Unavailable Mounts\\Wrathful Gladiator's Frost Wyrm",{
 keywords={"wrathful","gladiators","gladiator's","frost","wyrm","arena"},
 condition_end="hasmount(71810)",
 model={31047},
@@ -7247,7 +7247,7 @@ step
 The Wrathful Gladiator's Frost Wyrm was the reward for top ranking arena teams at the conclusion of Arena Season 8
 This mount was retired from service at the conclusion of Arena Season 8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Vendor Mounts\\Armored Blue Wind Rider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Vendor Mounts\\Armored Blue Wind Rider",{
 keywords={"armored","blue","wind","rider","wyvern","flying","mount"},
 condition_end="hasmount(61230)",
 model={24045},
@@ -7264,7 +7264,7 @@ modeldisplay 24045
 step
 learnmount Armored Blue Wind Rider##61230 |use Armored Blue Wind Rider##44690
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Vendor Mounts\\Sandstone Drake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Vendor Mounts\\Sandstone Drake",{
 keywords={"vial","of","the","sands","sandstone","drake","mount","flying"},
 condition_end="hasmount(93326)",
 model={35750},
@@ -7317,7 +7317,7 @@ step
 label "learn"
 learnmount Sandstone Drake##93326 |use Vial of the Sands##65891
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Vendor Mounts\\Wind Riders",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Vendor Mounts\\Wind Riders",{
 keywords={"wind","rider","wyvern","tawny","swift","blue","green","red","purple","yellow","flying","mount"},
 condition_end="hasmount(32243) and hasmount(32245) and hasmount(32244) and hasmount(32296) and hasmount(32246) and hasmount(32297) and hasmount(32295)",
 model={17699,17700,17701,17719,17720,17721,17722,24044},
@@ -7348,7 +7348,7 @@ learnmount Swift Green Wind Rider##32295 |use Swift Green Wind Rider##25531
 learnmount Swift Purple Wind Rider##32297 |use Swift Purple Wind Rider##25533
 learnmount Swift Yellow Wind Rider##32296 |use Swift Yellow Wind Rider##25532
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Vendor Mounts\\Winged Steed of the Ebon Blade",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Vendor Mounts\\Winged Steed of the Ebon Blade",{
 keywords={"death","knight","winged","steed","of","the","ebon","blade","flying","mount"},
 condition_end="hasmount(54729)",
 model={28108},
@@ -7365,7 +7365,7 @@ collect 1 Winged Steed of the Ebon Blade##40775 |goto Eastern Plaguelands 84,49.
 step
 learnmount Winged Steed of the Ebon Blade##54729 |use Winged Steed of the Ebon Blade##40775
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Water Mounts\\Sea Turtle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Water Mounts\\Sea Turtle",{
 keywords={"sea","turtle","aquatic","water","mount"},
 condition_end="hasmount(34187)",
 model={29161},
@@ -7382,7 +7382,7 @@ modeldisplay 29161
 step
 learnmount Sea Turtle##64731 |use Sea Turtle##46109
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Water Mounts\\Subdued Seahorse",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Water Mounts\\Subdued Seahorse",{
 keywords={"subdued","seahorse","aquatic","water","mount"},
 condition_end="hasmount(98718)",
 model={34955},
@@ -7406,7 +7406,7 @@ modeldisplay 34955
 step
 learnmount Subdued Seahorse##98718 |use Reins of Poseidus##67151
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Water Mounts\\Vashj'ir Seahorse",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Water Mounts\\Vashj'ir Seahorse",{
 keywords={"vashj'ir","seahorse","aquatic","water","mount"},
 condition_end="hasmount(75207)",
 model={34956},
@@ -7523,7 +7523,7 @@ modeldisplay 34956
 step
 learnmount Vashj'ir Seahorse##75207 |use Vashj'ir Seahorse##54465
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Crusader Title\\Blood Elf Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Crusader Title\\Blood Elf Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Blood Elf race.\nYou must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section\nin order to be able to complete this guide section.",
 },[[
@@ -7630,7 +7630,7 @@ step
 talk Eressea Dawnsinger##33379
 turnin The Valiant's Challenge##13731 |goto 76.5,23.9
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Crusader Title\\Orc Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Crusader Title\\Orc Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Orc race.\nYou must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section\nin order to be able to complete this guide section.\nYou cannot complete this section if you are an Orc.",
 },[[
@@ -7739,7 +7739,7 @@ step
 Congratulations, you are now a Champion of Orgrimmar!
 |tip This is the end of the Orc Champion Rank Guide for the Crusader Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Crusader Title\\Tauren Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Crusader Title\\Tauren Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Tauren race.\nYou must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section\nin order to be able to complete this guide section.",
 },[[
@@ -7849,7 +7849,7 @@ step
 Congratulations, you are now a Champion of Thunder Bluff!
 |tip This is the end of the Tauren Champion Rank Guide for the Crusader Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Crusader Title\\Troll Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Crusader Title\\Troll Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Troll race.\nYou must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section\nin order to be able to complete this guide section.",
 },[[
@@ -7959,7 +7959,7 @@ step
 Congratulations, you are now a Champion of Sen'jin!
 |tip This is the end of the Troll Champion Rank Guide for the Crusader Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Crusader Title\\Undead Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Crusader Title\\Undead Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Undead race.\nYou must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section\nin order to be able to complete this guide section.",
 },[[
@@ -8064,8 +8064,8 @@ step
 talk Deathstalker Visceri##33373
 turnin The Valiant's Challenge##13729 |goto 76.5,24.2
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Required Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc",{
-next="Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc & Troll (5-13)",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Required Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc",{
+next="Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc & Troll (5-13)",
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted\nreputation with the Darkspear Trolls and\nOrgrimmar factions.\nYou need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 },[[
@@ -8299,7 +8299,7 @@ talk Zureetha Fargaze##3145
 turnin Burning Blade Medallion##25132 |goto Durotar,43.5,67.5
 accept Report to Sen'jin Village##25133 |goto Durotar,43.5,67.5
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Required Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc & Troll",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Required Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc & Troll",{
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted\nreputation with the Darkspear Trolls and\nOrgrimmar factions.\nYou need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 },[[
@@ -8551,7 +8551,7 @@ talk Shin Stonepillar##39380
 accept The Wolf and The Kodo##25205 |goto Durotar,44.9,14.8
 step
 talk Shin Stonepillar##39380
-Ask him to tell you his fable |havebuff Interface\Icons\Ability_Mount_Kodo_03 |q 25205 |goto Durotar,44.9,14.8
+Ask him to tell you his fable |havebuff 132245 |q 25205 |goto Durotar,44.9,14.8
 step
 As the wolf, run to this spot
 |tip If you don't see 2 kodos fighting, look around this area to find some, then go stand next to them.
@@ -8722,8 +8722,8 @@ To continue gaining reputation with the Darkspear Trolls faction:
 You can buy a Darkspear Tabard from Champion Uru'zin in Orgrimmar at [50.0,58.5]
 |tip Wear the Darkspear Tabard and use the Dungeon Finder tool to complete random Azeroth, Northrend, or Cataclysm. The Burning Crusade dungeons will not give any rep when using this tabard.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Required Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Troll",{
-next="Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc & Troll (5-13)",
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Required Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Troll",{
+next="Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc & Troll (5-13)",
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted\nreputation with the Darkspear Trolls and\nOrgrimmar factions.\nYou need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 endlevel=5
@@ -9217,7 +9217,7 @@ talk Vol'jin##10540
 turnin An Ancient Enemy##24814 |goto 61.6,65.91
 accept Sen'jin Village##25073 |goto 61.6,65.91
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Required Home Cities Reputation\\Undercity\\Undead",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Required Home Cities Reputation\\Undercity\\Undead",{
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted\nreputation with the Undercity faction.\nYou need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 },[[
@@ -9869,7 +9869,7 @@ talk Apothecary Wormcrud##44912
 turnin It's Only Poisonous if You Ingest It##27088 |goto 44.8,20.9
 step
 talk Admiral Hatchet##44916
-Tell her that you seem to have misplaced your Sea Pup |havebuff Interface\Icons\Achievement_Character_Orc_Male |q 27069 |goto 44.0,21.4
+Tell her that you seem to have misplaced your Sea Pup |havebuff 236452 |q 27069 |goto 44.0,21.4
 step
 kill 10 Bloodfang Scavenger |q 27073/1 |goto 40.0,26.9
 Click Sea Dog Crates
@@ -10160,7 +10160,7 @@ step
 Click the Ambermill Dimensional Portal
 |tip It's a green portal in the very back of the cave you come to.
 <Use the Ambermill Dimensional Portal.>
-Enter the Transdimensional Shift |havebuff INTERFACE\ICONS\spell_arcane_rune |q 27513 |goto 58.1,69.9
+Enter the Transdimensional Shift |havebuff 252267 |q 27513 |goto 58.1,69.9
 step
 All around the Ambermill town:
 kill Ambermill Watcher##1888+, Ambermill Magister##1914+, Ambermill Warder##1913+, Ambermill Miner##3578+, Ambermill Brewmaster##3577+, Ambermill Witchalok##1889+
@@ -10263,7 +10263,7 @@ To continue gaining reputation with the Undercity faction:
 You can buy an Undercity Tabard from Captain Donald Adams in Undercity at [63.5,48.8]
 |tip Wear the Undercity Tabard and use the Dungeon Finder tool to complete random Azeroth, Northrend, or Cataclysm. The Burning Crusade dungeons will not give any rep when using this tabard.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Required Home Cities Reputation\\Silvermoon City\\Blood Elf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Required Home Cities Reputation\\Silvermoon City\\Blood Elf",{
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted\nreputation with the Silvermoon City faction.\nYou need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 },[[
@@ -11243,7 +11243,7 @@ To continue gaining reputation with the Silvermoon City faction:
 You can buy a Silvermoon City Tabard from Magistrix Nizara in Eversong Woods at [54.5,50.9]
 |tip Wear the Silvermoon City Tabard and use the Dungeon Finder tool to complete random Azeroth, Northrend, or Cataclysm. The Burning Crusade dungeons will not give any rep when using this tabard.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Required Home Cities Reputation\\Thunder Bluff\\Tauren",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Required Home Cities Reputation\\Thunder Bluff\\Tauren",{
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted\nreputation with the Thunder Bluff faction.\nYou need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 },[[
@@ -11826,7 +11826,7 @@ To continue gaining reputation with the Thunder Bluff faction:
 You can buy a Thunder Bluff Tabard from Brave Tuho in Thunder Bluff at [46.7,49.9]
 |tip Wear the Thunder Bluff Tabard and use the Dungeon Finder tool to complete random Azeroth, Northrend, or Cataclysm. The Burning Crusade dungeons will not give any rep when using this tabard.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Argent Tournament Grounds Crusader Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Argent Tournament Grounds Crusader Dailies",{
 author="support@zygorguides.com",
 description="In order to be able to complete the quests in this guide section, you must already be Exalted\nwith the Darkspear Trolls, Orgrimmar, Silvermoon City, Thunder Bluff, and Undercity factions.\nAlso, you must have already become a Champion with each of those factions,\nusing the Crusader Title Guide in the Icecrown section of the Dailies guide.",
 },[[
@@ -11879,7 +11879,7 @@ You will only be able to accept, and turn in, 1 of these 2 daily quests per day:
 turnin Get Kraken!##14108 |goto 69.5,23.1
 turnin The Fate Of The Fallen##14107 |goto 69.5,23.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Aspirant Rank Daillies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Aspirant Rank Daillies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing your race's Aspirant Rank dailies\nin order to achieve Argent Tournament Grounds Valiant Rank with your own race.",
 },[[
@@ -11959,7 +11959,7 @@ step
 talk Magister Edien Sunhollow##33542
 turnin Up To The Challenge##13678 |goto 76.3,24.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Champion Rank Dailies - Death Knight Only",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Champion Rank Dailies - Death Knight Only",{
 author="support@zygorguides.com",
 description="You must be a Death Knight to do the quests in this Argent Tournament Grounds guide section.\nAlso, you must have completed the Argent Tournament Grounds Valiant Rank Dailies guide section.",
 },[[
@@ -12047,7 +12047,7 @@ talk Illyrie Nightfall##33770
 turnin Among the Champions##13814 |goto 73.6,20.1
 only DeathKnight
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Champion Rank Dailies - Non-Death Knight Only",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Champion Rank Dailies - Non-Death Knight Only",{
 author="support@zygorguides.com",
 description="You must NOT be a Death Knight to do the quests in this Argent Tournament Grounds guide section.\nAlso, you must have completed the Argent Tournament Grounds Valiant Rank Dailies guide section.",
 },[[
@@ -12055,17 +12055,17 @@ daily
 step
 talk Luuri##33771
 accept Among the Champions##13811 |goto Icecrown,69.9,23.3
-only !DeathKnight
+only if not DeathKnight
 step
 talk Eadric the Pure##33759
 accept Threat From Above##13809 |goto 70.0,23.4
 |tip You must have turned in the quest The Black Knight's Fall from the ATG Black Knight Quest Chain guide section in order to be able to get this daily quest.
 accept Battle Before The Citadel##13862 |goto 70.0,23.4
-only !DeathKnight
+only if not DeathKnight
 step
 talk Cellian Daybreak##33763
 accept Taking Battle To The Enemy##13810 |goto 69.9,23.5
-only !DeathKnight
+only if not DeathKnight
 step
 Equip the Horde Lance in your bags |use Horde Lance##46070
 Click to mount the Stabled Orgrimmar Wolf |invehicle |q 13811 |goto 72.2,22.5
@@ -12092,50 +12092,50 @@ Tell them you are ready to fight!
 Fight and defeat them
 |tip The best strategy to defeat the Champion riders is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Champion rider (use your Shield-Breaker ability as you circle around to come back to the Champion rider, if possible).  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Champion rider will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back (use your Shield-Breaker ability as you circle around to come back to the Champion rider, if possible), then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
 collect 4 Mark of the Champion |q 13811/1 |goto 71.6,23.8
-only !DeathKnight
+only if not DeathKnight
 step
 Click the red arrow on your hotbar to get off your mount |outvehicle |q 13811
-only !DeathKnight
+only if not DeathKnight
 step
 kill Deathspeaker Kharos##34808, Dark Zealot##34728+, Dark Ritualist##34734+
 kill 15 Cult of the Damned member |q 13810/1 |goto 64.3,21.4
-only !DeathKnight
+only if not DeathKnight
 step
 You will need to get a group of at least 3 people to do the daily quest in the next step of the guide.  Find a group, it should be pretty easy because there are always other players doing this quest.
-only !DeathKnight
+only if not DeathKnight
 step
 This is how this fight will happen:
 |tip You will pull Chillmaw first and fight him until he is at about 75% health.  At that point, a Cultist Bombardier will spawn to help Chillmaw fight.  Kill the Cultist Bombardier IMMEDIATELY, as they do a lot of damage, compared to Chillmaw.  Continuing fighting Chillmaw and 2 other Cultist Bombardiers will spawn: 1 when Chillmaw is at about 50% health, and 1 when Chillmaw is at about 25% health.  Again, kill the Cultist Bombardiers immediately when they spawn and this fight will be a fairly easy one.
 kill Chillmaw |q 13809/1 |goto 44.1,32.6
 |tip Chillmaw is a big skeletal dragon that flies around this area.
 kill 3 Cultist Bombardier |q 13809/2 |goto 44.1,32.6
-only !DeathKnight
+only if not DeathKnight
 step
 Equip the Horde Lance in your bags |use Horde Lance##46070
 Click to mount the Stabled Campaign Warhorse |invehicle |q 13862 |goto Icecrown,48.9,71.4
-only !DeathKnight
+only if not DeathKnight
 step
 kill 3 Boneguard Commander |q 13862/1 |goto 50.1,74.8
 |tip The best strategy to defeat the Boneguard Commanders is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fights.  When the fights begin, immediately use your Charge ability on the Boneguard Commanders (use your Shield-Breaker ability as you circle around to come back to the Boneguard Commanders, if possible).  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Boneguard Commanders will try to run away to get into Charge range.  When they start to run away, start spamming your Charge ability until you charge them in the back (use your Shield-Breaker ability as you circle around to come back to the Boneguard Commanders, if possible), then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until you kill 3 Boneguard Commanders.  Also, it may help you try to party with other players while doing this quest, as it will get done much faster and there are always other players in this area doing this same daily quest.
-only !DeathKnight
+only if not DeathKnight
 step
 Click the red arrow on your hotbar to get off your mount |outvehicle |q 13862 |goto 48.9,71.4
-only !DeathKnight
+only if not DeathKnight
 step
 talk Luuri##33771
 turnin Among the Champions##13811 |goto 69.9,23.3
-only !DeathKnight
+only if not DeathKnight
 step
 talk Eadric the Pure##33759
 turnin Threat From Above##13809 |goto 70.0,23.4
 turnin Battle Before The Citadel##13862 |goto 70.0,23.4
-only !DeathKnight
+only if not DeathKnight
 step
 talk Cellian Daybreak##33763
 turnin Taking Battle To The Enemy##13810 |goto 69.9,23.5
-only !DeathKnight
+only if not DeathKnight
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Pre-Quests",{
 author="support@zygorguides.com",
 description="This guide section contains the pre-quests to unlock most of the daily quests in the Argent Tournament Grounds region of Icecrown.\nYou will need to achieve the Crusader title, using the Crusader Title Guide section in the Icecrown section,\nto unlock more daily quests.",
 },[[
@@ -12191,7 +12191,7 @@ step
 talk Galathia Brightdawn##33659
 turnin Mastery Of The Shield-Breaker##13838 |goto 76.2,24.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Valiant Rank Daillies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Valiant Rank Daillies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing your race's Valiant Rank dailies\nin order to achieve Argent Tournament Grounds Champion Rank with your own race.\nYou must have completed the Argent Tournament Grounds Aspirant Rank Dailies guide section\nin order to have access to the quests in this guide section.",
 },[[
@@ -12783,7 +12783,7 @@ turnin A Champion Rises##13738 |goto 69.7,22.9 |only Tauren
 turnin A Champion Rises##13739 |goto 69.7,22.9 |only Scourge
 turnin A Champion Rises##13740 |goto 69.7,22.9 |only BloodElf
 accept The Scourgebane##13795 |goto 69.7,22.9 |only DeathKnight
-accept Eadric the Pure##13794 |goto 69.7,22.9 |only !DeathKnight
+accept Eadric the Pure##13794 |goto 69.7,22.9 |only if not DeathKnight
 step
 talk Crok Scourgebane##33762
 turnin The Scourgebane##13795 |goto 73.8,20.1
@@ -12791,5 +12791,5 @@ only DeathKnight
 step
 talk Eadric the Pure##33759
 turnin Eadric the Pure##13794 |goto 70.0,23.4
-only !DeathKnight
+only if not DeathKnight
 ]])

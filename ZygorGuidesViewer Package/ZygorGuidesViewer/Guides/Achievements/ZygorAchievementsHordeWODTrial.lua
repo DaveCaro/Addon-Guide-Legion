@@ -9,7 +9,7 @@ talk Arugi##46709 |goto Orgrimmar 56.3,61.5
 ZygorGuidesViewer:RegisterInclude("trainFishing",[[
 talk Lumak##3332 |goto Orgrimmar 66.5,41.5
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Draenor\\Quest Achievements\\Mean and Green",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Draenor\\Quest Achievements\\Mean and Green",{
 condition_end="achieved(9654)",
 description="Reach 10 stacks of Mutagen in the Everbloom Wilds.",
 },[[
@@ -26,7 +26,7 @@ _Gain_ 10 stacks of Mutagen
 step
 Congratulations, you have _earned_ the Mean and Green Achievement!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Draenor\\Exploration Achievements\\Jungle Treasure Hunter/Master",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Draenor\\Exploration Achievements\\Jungle Treasure Hunter/Master",{
 condition_end="achieved(10262)",
 achieveid={10261, 10262},
 description="This guide will walk you through discovering all of the treasures in Tanaan Jungle.",

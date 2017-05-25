@@ -3,172 +3,43 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("ProfessionsHWOD") then return end
 ZygorGuidesViewer.GuideMenuTier = "WOD"
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Mining 600-700 Leveling Guide",{
-description="This guide will walk you through leveling Mining from 600-700.",
-},[[
-step
-Kill any lootable enemies found in Draenor
-collect A Treatise on Mining in Draenor##111349 |n
-use A Treatise on Mining in Draenor##111349
-skillmax Mining,700
-step
-map Frostfire Ridge
-path follow loose; loop on; ants curved
-path	43.0,58.3	40.8,60.5	38.4,59.3
-path	36.0,57.0	34.3,54.6	31.6,54.8
-path	28.5,49.5	27.9,44.6	24.5,39.7
-path	23.9,34.1	27.9,30.9	31.9,27.0
-path	32.6,25.7	33.5,20.5	36.3,21.0
-path	37.8,26.5	41.0,28.9	42.1,30.6
-path	43.0,31.0	44.7,31.2	49.7,35.4
-path	52.4,38.3	54.3,39.5	48.5,50.1
-path	47.6,54.9	46.2,58.3	43.3,57.9
-Make sure you are tracking minerals, and gather all _Blackrock_ and _True Iron_ ore you see as you follow this path
-skill Mining,700
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Herbalism 600-700 Leveling Guide",{
-description="This guide will walk you through leveling Herbalism from 600-700.",
-},[[
-step
-Kill any lootable enemies found in Draenor
-collect A Compendium of the Herbs of Draenor##111350 |n
-use A Compendium of the Herbs of Draenor##111350
-skillmax Herbalism,700
-step
-map Frostfire Ridge
-path follow loose;loop;ants straight;dist 60
-path	31.1,53.3	26.1,53.7	24.2,49.0
-path	23.2,45.2	20.7,39.5	22.2,33.9
-path	21.8,29.7	20.9,25.4	23.1,23.6
-path	25.1,24.6	27.2,22.3	29.7,21.4
-path	31.2,22.0	32.8,21.7	35.1,19.5
-path	36.9,24.3	38.1,26.8	40.8,28.9
-path	41.6,30.6	42.8,29.9	42.9,31.1
-path	44.4,31.1	46.2,31.7	48.9,34.4
-path	51.6,36.9	53.7,35.1	54.5,30.3
-path	56.5,26.1	59.1,28.4	60.0,31.9
-path	61.2,34.9	63.1,40.9	63.4,45.0
-path	60.9,46.9	62.2,52.4	60.3,55.3
-path	57.9,57.5	53.8,55.8	50.6,54.7
-path	47.7,55.6	45.9,58.9	43.1,60.8
-path	40.3,62.1	37.7,58.7	36.5,56.5
-path	35.5,53.3	33.6,49.2	31.1,51.2
-Make sure you have find herbs turned on
-collect Frostweed##109124 |n
-collect Fireweed##109125 |n
-skill Herbalism,700
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Skinning 600-700 Leveling Guide",{
-description="This guide will walk you through leveling Skinning from 600-700.",
-},[[
-step
-Kill any lootable enemies found in Draenor
-collect A Guide to Skinning in Draenor##111351 |n
-use A Guide to Skinning in Draenor##111351
-skillmax Skinning,700
-step
-map Nagrand D
-path follow loose; loop on; ants curved
-path	84.6,61.8	82.3,64.6	79.5,62.3
-path	78.6,58.7	80.1,54.5	82.4,59.6
-Follow the path, killing and skinning any beasts you come across.
-skill Skinning,700
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Talador Orchid Farming",{
-description="This guide will provide you the best area to quickly gather Talador Orchid.",
-},[[
-step
-map Talador
-path follow loose; loop on; ants curved
-path	57.7,46.9	56.3,49.8	54.2,52.0
-path	52.7,50.3	51.2,51.5	49.4,54.8
-path	46.7,52.6	44.5,53.2	41.5,54.4
-path	39.6,53.6	40.7,57.4	40.5,61.5
-path	39.7,63.2	39.2,67.9	39.4,72.9
-path	41.0,76.8	39.4,81.7	40.3,86.7
-path	42.5,88.4	46.0,87.5	48.1,85.9
-path	52.4,85.1	56.0,84.4	57.9,78.8
-path	59.3,77.5	58.8,74.0	60.3,65.7
-path	63.3,64.9	62.8,59.1	61.3,56.6
-path	59.5,53.0	59.1,48.6
-Make sure you have find herbs turned on, and gather all _Talador Orchid_ you see as you follow this path
-collect Talador Orchid##109129 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Gorgrond Flytrap Farming",{
-description="This guide will provide you the best area to quickly gather Gorgrond Flytrap.",
-},[[
-step
-map Gorgrond
-path follow loose; loop on; ants curved
-path	50.5,76.1	52.7,75.6	54.1,72.5
-path	53.7,68.1	55.1,65.2	56.3,64.1
-path	59.3,64.1	61.1,62.6	60.4,59.2
-path	59.2,57.6	57.5,57.8	56.2,60.2
-path	55.9,62.5	54.0,62.6	52.4,62.4
-path	52.1,64.4	50.8,64.8	50.5,67.3
-path	49.4,68.9	48.3,70.6	47.2,70.4
-path	45.4,71.2	44.5,72.2	44.7,74.2
-path	45.0,75.9	45.6,77.0	47.7,76.0
-Make sure you have find herbs turned on, and gather all _Gorgrond Flytrap_ you see as you follow this path
-collect Gorgrond Flytrap##109126 |n
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Alchemy 600-700 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Alchemy\\Leveling Guides\\Alchemy 600-700 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Alchemy",700},
 description="This guide will walk you through leveling your Alchemy skill from 600-700.",
 },[[
 #include "Alchemy_600-700"
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Blacksmithing 600-700 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Archaeology\\Leveling Guides\\Archaeology 600-700 Leveling Guide",{
+description="This guide will walk you through leveling Archaeology from 600-700.",
+},[[
+step
+To unlock a maximum Archaeology skill of 700, you you will need to loot a Brittle Cartography Journal in Draenor
+These have a chance to drop off any mob, so continue killing or questing until you get it
+collect Brittle Cartography Journal##109586 |n
+use Brittle Cartography Journal##109586
+confirm
+step
+Open your world map, find dig sites in Draenor and go to them
+|tip They look like small shovel icons on your world map that spawn in random places. Once you get to the zone where the dig site is located, you will see the dig site on your map as a red highlighted area.
+Use your Survey ability inside the dig site area |cast Survey##80451
+A telescope will appear, follow the direction it points in and continue using your Survey ability to eventually find the artifacts
+|tip Each dig site has 6 artifacts you can find.
+Click the Archaeology Fragments that spawn on the ground
+Open your Archaeology profession window |cast Archaeology##78670
+Click artifacts to open them, then solve them once you have the required amounts of each
+skill Archaeology,700
+step
+Congratulations, you have reached level 700 in Archaeology!
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Blacksmithing 600-700 Leveling Guide",{
 author="support@zygorguides.com",
 completion={"skill","Blacksmithing",700},
 description="This guide will walk you through leveling your Blacksmithing skill from 600-700.",
 },[[
 #include "Blacksmithing_600-700"
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Enchanting 600-700 Leveling Guide",{
-author="support@zygorguides.com",
-completion={"skill","Enchanting",700},
-description="This guide will walk you through leveling your Enchanting skill from 600-700.",
-},[[
-#include "Enchanting_600-700"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Engineering 600-700 Leveling Guide",{
-author="support@zygorguides.com",
-completion={"skill","Engineering",700},
-description="This guide will walk you through leveling your Engineering skill from 600-700.",
-},[[
-#include "Engineering_600-700"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Inscription 600-700 Leveling Guide",{
-author="support@zygorguides.com",
-completion={"skill","Inscription",700},
-description="This guide will walk you through leveling your Inscription skill from 600-700.",
-},[[
-#include "Inscription_600-700"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Jewelcrafting 600-700 Leveling Guide",{
-author="support@zygorguides.com",
-completion={"skill","Jewelcrafting",700},
-description="This guide will walk you through leveling your Jewelcrafting skill from 600-700.",
-},[[
-#include "Jewelcrafting_600-700"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leatherworking 600-700 Leveling Guide",{
-author="support@zygorguides.com",
-completion={"skill","Leatherworking",700},
-description="This guide will walk you through leveling your Leatherworking skill from 600-700.",
-},[[
-#include "Leatherworking_600-700"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Tailoring 600-700 Leveling Guide",{
-author="support@zygorguides.com",
-completion={"skill","Tailoring",700},
-description="This guide will walk you through leveling your Tailoring skill from 600-700.",
-},[[
-#include "Tailoring_600-700"
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Cooking 600-700 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Cooking 600-700 Leveling Guide",{
 description="This guide will walk you through leveling Cooking from 600-700.",
 },[[
 step
@@ -228,7 +99,61 @@ create Jumbo Sea Dog##180759,Cooking,700
 step
 Congratulations, you have reached level 700 in Cooking!
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Fishing 600-700 Leveling Guide",{
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Enchanting 600-700 Leveling Guide",{
+author="support@zygorguides.com",
+completion={"skill","Enchanting",700},
+description="This guide will walk you through leveling your Enchanting skill from 600-700.",
+},[[
+#include "Enchanting_600-700"
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Engineering 600-700 Leveling Guide",{
+author="support@zygorguides.com",
+completion={"skill","Engineering",700},
+description="This guide will walk you through leveling your Engineering skill from 600-700.",
+},[[
+#include "Engineering_600-700"
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\First Aid\\Leveling Guides\\First Aid 600-700 Leveling Guide",{
+description="This guide will walk you through leveling First Aid from 600-700.",
+},[[
+step
+To unlock a maximum First Aid skill of 700, you you will need to loot First Aid in Draenor
+These can drop off any mob, continue killing or questing until you get it
+collect First Aid in Draenor##111364 |n
+use First Aid in Draenor##111364
+learn Healing Tonic##172540
+step
+You will need _200 Sea Scorpion Segments_ to reach level 700 in First Aid
+These can be gathered if you have the Fishing skill, or purchased off the Auction House
+Click here to go Fishing |next "fish" |confirm
+Click here to go to the Auction House |next "buyfish" |confirm
+step
+label "fish"
+Fish in the water here |goto Frostfire Ridge/0 41.5,65.4 |cast Fishing##131474
+use Sea Scorpion Bait##110292
+Use any _Sea Scorpion Bait_ you may have while fishing
+collect Small Sea Scorpion##111658 |n
+use Small Sea Scorpion##111658
+|tip These can only be used in stacks of 5.
+collect Sea Scorpion##111665 |n
+use Sea Scorpion##111665
+|tip These can only be used in stacks of 5.
+collect Enormous Sea Scorpion##111672 |n
+use Enormous Sea Scorpion##111672
+|tip These can only be used in stacks of 5.
+collect 200 Sea Scorpion Segments##109142
+next "craft"
+step
+label "buyfish"
+#include "auctioneer"
+Buy _200 Sea Scorpion Segments_ from the Auction House
+collect 200 Sea Scorpion Segment##109142
+next "craft"
+step
+label "craft"
+create 20 Healing Tonic##172540,First Aid,700
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Leveling Guides\\Fishing 600-700 Leveling Guide",{
 description="This guide will walk you through leveling Fishing from 600-700.",
 endlevel=94
 },[[
@@ -280,92 +205,446 @@ skill Fishing,700
 step
 Congratulations, you have reached level 700 in Fishing!
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking & Fishing\\Cooking & Fishing 600-700 Leveling Guide",{
-description="This guide will walk you through leveling Cooking and Fishing from 600-700.",
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Herbs (Pre-Legion)",{
+author="support@zygorguides.com",
+description="This guide will allow you to farm the various herbs.",
 },[[
-step
-To unlock a maximum Cooking skill of 700, you you will need to loot The Joy of Draenor Cooking
-These can drop off any mob, continue killing or questing until you get it
-collect The Joy of Draenor Cooking##111387 |n
-use The Joy of Draenor Cooking##111387
-learn Grilled Saberfish##161002
-step
-Fish anywhere in the water or lava in Frostfire Ridge |cast Fishing##131474 |goto Frostfire Ridge/0 50.6,60.2
-collect Fishing Guide to Draenor##111356 |n
-use Fishing Guide to Draenor##111356
-confirm
-step
-You can level up by fishing in Frostfire Ridge or in your Garrison, after a short questline
-Click here to fish in Frostfire Ridge |next "frostfire" |confirm
-Click here to fish in your Garrison |next "garrison" |confirm
-step
-label "frostfire"
-Fish anywhere _in the water_ in Frostfire Ridge |cast Fishing##131474
-collect Small Crescent Saberfish##111589 |n
-use Small Crescent Saberfish##111589
-|tip These must be used in stacks of 5.
-collect Crescent Saberfish##111595 |n
-use Crescent Saberfish##111595
-|tip These must be used in stacks of 5.
-collect 250 Crescent Saberfish Flesh##109137
-next "cookto650"
-step
-label "garrison"
-talk Mak'jin##79892
-accept Looking For Help##34758 |goto 38.10,72.53
-|tip You must be at least level 94 to accept this quest.
-step
-talk Mokugg Lagerpounder##79896
-Find a Local Fisherman and Inquire For Help |q Looking For Help##34758/1 |goto Frostfire Ridge/0 55.7,75.2
-step
-talk Mokugg Lagerpounder##79896
-turnin Looking For Help##34758 |goto 55.70,75.24
-accept Icespine Stingers##36141 |goto 55.70,75.24
-step
-_Follow the hill_ back up |goto Frostfire Ridge/0 55.7,74.0 < 10 |only if walking
-kill Icespine Stinger##80782+
-collect 4 Icespine Stinger##114679 |q Icespine Stingers##36141/1 |goto Frostfire Ridge/0 54.72,70.43
-step
-talk Mokugg Lagerpounder##79896
-turnin Icespine Stingers##36141 |goto 55.71,75.28
-accept Proving Your Worth##36131 |goto 55.71,75.28
-step
-use Icespine Stinger Bait##114628
-Fish with the Icespine Stinger Bait |cast Fishing##131474 |goto Frostfire Ridge/0 56.0,75.1
-Catch #5# Zangar Eels |q Proving Your Worth##36131/1 |goto Frostfire Ridge/0 56.0,75.1
-step
-talk Mokugg Lagerpounder##79896
-turnin Proving Your Worth##36131 |goto 55.71,75.26
-accept Anglin' In Our Garrison##36132 |goto 55.71,75.26
-step
-talk Mak'jin##79892
-turnin Anglin' In Our Garrison##36132 |goto 38.16,72.42
-step
-Fish in the water behind your Garrison |cast Fishing##131474 |goto Frostwall/0 38.6,79.2
-collect Small Crescent Saberfish##111589 |n
-use Small Crescent Saberfish##111589
-|tip These must be used in stacks of 5.
-collect Crescent Saberfish##111595 |n
-use Crescent Saberfish##111595
-|tip These must be used in stacks of 5.
-collect 250 Crescent Saberfish Flesh##109137
-next "cookto650"
-step
-label "cookto650"
-Build a Cooking Fire |cast Cooking Fire##818
-create 50 Grilled Saberfishg##161002,Cooking, 50 total
-skill Cooking,650
-step
-Click here to cook Calamari Crepes to 675 |next "calamaricrepes" |confirm
-Click here to cook Frosty Stew to 675 |next "frostystew" |confirm
-step
-label "calamaricrepes"
-You need _5 Nagrand Arrowblooms_
-These can be gathered if you have Herbalism or bought off the Auction House
-Click here to gather Arrowblooms |next "gatherna" |confirm
-Click here to buy them off the Auction House |next "buyna" |confirm
-step
-label "gatherna"
+step "start"
+Click here for Eastern Kingdoms and Kalimdor herbs |confirm |next "ek_kal"
+Click here for Outlands herbs |confirm |next "outland"
+Click here for Northrend herbs |confirm |next "north"
+Click here for Cataclysm herbs |confirm |next "cata"
+Click here for Pandaria herbs |confirm |next "panda" |only if ZGV.guidesets['ProfessionsHMoP']
+Click here for Draenor herbs |confirm |next "draenor"
+step "ek_kal"
+Click here to farm Peacebloom and Silverleaf |confirm |next "peace_silver"
+Click here to farm Mageroyal and Briarthorn |confirm |next "mage_briar"
+Click here to farm Stranglekelp |confirm |next "strangle"
+Click here to farm Kingsblood |confirm |next "king"
+Click here to farm Liferoot |confirm |next "life"
+Click here to farm Goldthorn |confirm |next "gold"
+Click here to farm Wild Steelbloom |confirm |next "wild"
+Click here to farm Khadgar's Whisker and Blindweed |confirm |next "khadgar_blind"
+Click here to farm Sungrass |confirm |next "sun"
+Click here to farm Gromsblood |confirm |next "groms"
+Click here to farm Golden Sansam |confirm |next "goldsan"
+Click here to pick a different herb |confirm |next "start"
+step "outland"
+Click here to farm Felweed |confirm |next "felweed"
+Click here to farm Terocone and Dreaming Glory |confirm |next "tero_dream"
+Click here to farm Netherbloom |confirm |next "nether"
+Click here to pick a different herb |confirm |next "start"
+step "north"
+Click here to farm Goldclover and Deadnettle |confirm |next "gold_dead"
+Click here to farm Talandra's Rose |confirm |next "talandra"
+Click here to farm Tiger Lily |confirm |next "tiger"
+Click here to farm Icethorn and Lichbloom |confirm |next "ice_lich"
+Click here to pick a different herb |confirm |next "start"
+step "cata"
+Click here to farm Cinderbloom and Stormvine |confirm |next "cinder_storm"
+Click here to farm Azshara's Veil |confirm |next "azshara"
+Click here to farm Heartblossom |confirm |next "heart"
+Click here to farm Whiptail |confirm |next "whip"
+Click here to farm Twilight Jasmine |confirm |next "twilight"
+Click here to pick a different herb |confirm |next "start"
+step "panda"
+Click here to farm Green Tea Leaf |confirm |next "green"
+Click here to farm Fool's Cap |confirm |next "fool"
+Click here to farm Snow Lily |confirm |next "snow"
+Click here to pick a different herb |confirm |next "start"
+only if ZGV.guidesets['ProfessionsHMoP']
+step "draenor"
+Click here to farm Fireweed |confirm |next "fireweed"
+Click here to farm Gorgrond Flytrap |confirm |next "flytrap"
+Click here to farm Nagrand Arrowbloom |confirm |next "bloom"
+Click here to farm Talador Orchid |confirm |next "orchid"
+Click here to pick a different herb |confirm |next "start"
+step "peace_silver"
+map Durotar
+path follow loose;loop;ants straight
+path	46.2,17.1	38.8,16.2	38.7,22.1
+path	37.9,30.4	48.5,32.8	51.4,36.5
+path	51.7,52.0	53.6,62.4	55.6,69.7
+path	60.9,69.1	60.7,58.0	57.6,46.9
+path	55.0,32.4	57.8,26.1	53.4,12.5
+#include "follow_path_herbs"
+Click here to pick a different herb |confirm |next "start"
+step "mage_briar"
+map Hillsbrad Foothills
+path 31.8,62.6		33.9,54.0		29.7,44.1
+path 35.5,37.8		34.5,28.2		39.5,21.0
+path 44.2,8.3		51.3,14.0		57.5,20.9
+path 56.1,34.3		49.9,46.2		41.2,46.6
+path 40.1,55.0		41.3,67.4		31.8,71.9
+#include "follow_path_herbs"
+Click here to pick a different herb |confirm |next "start"
+step "strangle"
+map The Cape of Stranglethorn
+path 44.0,86.1		50.6,80.7		59.4,52.6
+path 51.7,8.0		40.7,17.1		39.6,24.9
+path 32.4,32.9		 41.5,41.0		35.1,53.2
+path 36.8,56.2
+#include follow_path_herbs
+Click here to pick a different herb |confirm |next "start"
+step "king"
+map Western Plaguelands
+path 31.8,59.3	43.5,53.2	45.9,44.7
+path 45.2,35.2	49.5,35.1	49.5,35.1
+path 51.0,47.4	61.8,52.0	67.2,44.5
+path 63.6,56.0	56.6,60.1	52.6,67.5
+path 46.4,59.2	33.7,62.7
+#include follow_path_herbs
+.'Click here to pick a different herb |confirm |next "start"
+step "life"
+map Eastern Plaguelands
+path 72.7,57.6		71.8,64.4		64.7,68.6
+path 58.9,76.7		51.2,72.0		44.4,68.7
+path 38.6,66.5		35.8,60.9		44.5,51.6
+path 50.3,42.7		56.8,46.4		66.6,46.5
+#include follow_path_herbs
+tip They are found around the small lake.
+Click here to pick a different herb |confirm |next "start"
+step "gold"
+map Arathi Highlands
+path	43.3,39.0	57.6,29.0	70.6,28.6
+path	73.6,31.7	50.7,74.5	41.0,80.2
+path	28.7,67.9	9.0,70.2	19.9,34.9
+path	29.1,48.4
+#include follow_path_herbs
+tip As you move, cling to the edges of the mountain.
+Click here to pick a different herb |confirm |next "start"
+step "wild"
+map Northern Stranglethorn
+path 64.2,25.4		63.9,39.4		56.2,43.2
+path 42.5,43.9		35.9,32.9		31.5,37.2
+path 23.1,32.3		17.4,24.1
+#include follow_path_herbs
+Click here to pick a different herb |confirm |next "start"
+step "khadgar_blind"
+map Feralas
+path 73.0,42.0		74.4,35.2		70.5,37.1
+path 67.3,45.9		62.5,51.2		55.7,47.6
+path 49.5,41.4		50.2,32.1		49.4,24.1
+path 51.4,14.4		53.8,08.6		49.5,06.2
+path 48.9,11.7		42.4,08.8		37.8,15.3
+path 44.9,23.7		47.7,43.3		53.2,48.3
+path 54.8,53.6		56.0,60.1		55.2,66.6
+path 58.6,64.7		64.4,61.5		63.8,53.6
+path 67.9,51.0		69.0,60.1		71.4,60.0
+path 72.1,57.3		77.8,56.6		77.1,48.2
+path 73.3,50.2
+#include follow_path_herbs
+Click here to pick a different herb |confirm |next "start"
+step "sun"
+map Thousand Needles
+path  7.1,24.1 	 9.0,31.2	 9.3,42.2
+path 16.6,44.5	22.3,48.3	26.1,53.0
+path 31.0,56.3	35.5,59.1	40.3,62.1
+path 44.6,63.4	49.8,63.0	58.6,63.4
+path 66.0,70.9	64.3,79.4	65.1,91.9
+path 77.8,94.3	84.8,91.4	89.8,85.3
+path 94.5,71.8	93.9,58.0	90.8,52.2
+path 86.2,49.2	75.0,47.7	72.3,49.2
+path 54.8,41.3
+#include follow_path_herbs
+Click here to pick a different herb |confirm |next "start"
+step "groms"
+map Felwood
+path 50.5,80.9		47.6,75.8		45.4,71.4
+path 44.9,66.4		42.9,58.3		43.6,52.1
+path 45.2,42.1		49.6,33.6		55.3,24.8
+path 57.5,15.5		54.3,14.1		42.7,21.7
+path 40.0,37.5		40.0,46.5		39.6,56.9
+path 39.1,66.2		38.9,71.3		42.7,84.7
+#include follow_path_herbs
+Click here to pick a different herb |confirm |next "start"
+step "goldsan"
+map Swamp of Sorrows
+path   17.6,52.9		21.6,54.6		30.9,60.7
+path 39.4,56.9		51.7,59.6		64.5,67.3
+path 73.3,81.9		82.0,76.0		85.3,62.6
+path 87.6,39.9		84.9,31.2		80.1,20.6
+path 66.5,22.7		56.8,31.9		47.0,36.0
+path 36.1,39.8		26.9,42.9
+#include follow_path_herbs
+Click here to pick a different herb |confirm |next "start"
+step "felweed"
+map Hellfire Peninsula
+path 80.6,79.9		73.3,67.0		68.6,76.9
+path 56.1,71.6		48.4,75.2		40.7,84.5
+path 36.6,67.4		32.9,65.6		28.0,78.7
+path 22.9,67.5		13.7,63.0		13.5,38.7
+path 23.8,44.6		30.5,33.1		37.8,30.8
+path 55.8,31.1		67.1,27.3
+#include follow_path_herbs
+Click here to pick a different herb |confirm |next "start"
+step "tero_dream"
+map Terokkar Forest
+path 34.4,8.0 		37.5,16.1		41.6,19.9
+path 44.5,11.5		51.0,21.0		48.4,26.9
+path 60.2,22.5		73.1,45.3		61.5,48.6
+path 54.0,37.1		48.0,33.5		39.0,34.8
+path 39.2,44.4		47.3,50.0		47.0,79.8
+path 33.5,76.9		19.6,77.8		21.5,60.7
+path 31.4,39.9		37.4,30.1
+#include follow_path_herbs
+Click here to pick a different herb |confirm |next "start"
+step "nether"
+map Netherstorm
+path 31.5,51.4		25.6,63.5		19.5,67.7
+path 20.3,77.1		40.2,77.2		46.2,82.6
+path 48.0,86.9		58.9,88.8		61.4,79.4
+path 51.6,75.7		46.0,72.1		34.5,55.8
+path 40.1,52.9		50.2,69.0		67.1,60.7
+path 50.8,54.8		46.5,47.1		55.0,39.9
+path 58.5,47.2		62.7,50.3		73.4,40.5
+path 73.2,35.2		62.1,30.5		55.6,31.6
+path 49.8,35.9		48.8,25.5		57.1,24.3
+path 55.5,17.3		49.7,17.4		48.9,12.5
+path 44.9,19.8		42.5,16.2		39.5,15.7
+path 35.7,19.8		32.1,29.2		38.5,42.4
+path 31.1,38.1		23.5,35.4		22.9,44.1
+path 30.2,43.3
+#include follow_path_herbs
+Click here to pick a different herb |confirm |next "start"
+step "gold_dead"
+map Howling Fjord
+path	70.1,47.3	75.5,50.8
+path	80.5,46.2	76.3,42.8	70.3,40.5
+path	66.5,33.5	70.5,32.4	73.6,26.7
+path	69.8,19.2	65.8,26.8	61.8,28.5
+path	58.5,22.7	50.2,16.6	48.7,21.2
+path	26.5,7.9	29.2,12.0
+path	23.8,14.0	26.8,14.5
+path	27.2,20.8	29.0,22.2	27.1,29.6
+path	31.3,33.3	34.8,34.1	41.7,34.2
+path	42.1,27.7	46.3,31.5	47.1,29.0
+path	54.1,32.5	49.0,35.8	58.1,37.0
+path	58.3,40.1	43.3,44.1
+path	40.9,40.2	37.0,39.9	37.0,44.9
+path	34.9,46.2	46.4,54.3
+path	45.9,50.2	51.1,48.3	59.5,51.6
+path	59.0,55.6	45.1,59.4
+path	48.7,62.7	56.9,67.1
+path	46.8,71.6	52.8,71.5	53.4,76.5
+path	60.0,76.8	62.6,80.5	64.8,67.6
+path	67.9,59.7	65.8,72.5	67.1,74.9
+path	69.5,74.5	70.6,66.1	76.4,67.9
+#include follow_path_herbs
+Click here to pick a different herb |confirm |next "start"
+step "talandra"
+map Zul'Drak
+path 21.3,84.1		31.2,68.2		39.3,63.7
+path 29.7,52.6		37.1,40.8		43.6,46.7
+path 43.0,62.9		50.7,62.4		58.2,73.5
+path 52.2,83.3		39.5,87.0
+#include follow_path_herbs
+Click here to pick a different herb |confirm |next "start"
+step "tiger"
+map Sholazar Basin
+path	68.7,66.6	69.4,68.5	71.0,70.3
+path	69.1,73.6	68.1,70.1	65.3,70.5
+path	67.1,75.2	65.3,75.6	61.5,71.2
+path	65.1,79.5	62.9,83.5	59.2,72.5
+path	57.5,83.3	60.1,85.3	51.6,86.5
+path	43.6,75.3	47.9,73.9	50.5,62.6
+path	47.9,60.1	46.2,63.1	46.9,65.5
+path	43.1,62.3	41.3,67.5	37.9,63.6
+path	37.7,66.2	29.8,66.8	31.9,70.1
+path	31.1,71.1	43.7,71.0	40.1,76.5
+path	43.3,77.4	42.5,83.0	41.0,83.9
+path	41.9,86.5	40.8,87.8	37.5,83.3
+path	35.2,87.1	35.2,83.4	28.8,84.8
+path	28.5,79.5	30.5,75.7	28.5,75.5
+path	26.6,77.6	21.6,63.7	22.4,60.3
+path	32.7,64.5	32.4,60.4	29.1,61.7
+path	32.7,64.5	32.4,60.4	29.1,61.7
+path	32.7,64.5	32.4,60.4	29.1,61.7
+path	25.3,59.0	21.5,56.3	25.7,55.9
+path	32.0,41.7	31.2,55.2	28.7,53.5
+path	28.5,60.1	35.2,60.7	35.5,58.7
+path	38.2,60.2	38.6,55.5	41.6,56.2
+path	41.2,58.8	43.5,59.5	49.5,52.3
+path	47.6,49.6	44.6,49.1	46.8,52.1
+path	45.5,51.6	39.6,35.8	33.9,31.6
+path	38.5,29.6	33.8,24.4	35.4,20.9
+path	40.6,26.0	39.9,21.1	43.9,23.5
+path	56.5,31.5	62.7,33.9	57.6,41.3
+path	59.3,42.1	59.6,45.1	57.7,47.2
+path	53.5,44.0	50.5,54.2	52.3,56.8
+path	56.6,54.5	55.6,49.9	64.2,46.4
+path	63.9,48.9
+#include follow_path_herbs
+Click here to pick a different herb |confirm |next "start"
+step "ice_lich"
+map The Storm Peaks
+path	36.8,86.1	40.3,87.9	37.7,94.3
+path	36.6,89.0	32.9,93.8	32.5,86.9
+path	31.4,83.1	40.0,82.3	38.4,80.8
+path	39.4,79.2	43.5,78.0	42.6,75.6
+path	45.4,77.1	45.6,79.1	46.6,78.9
+path	47.0,77.2	49.0,78.4	48.5,73.3
+path	51.4,75.6	52.2,69.5	58.3,72.0
+path	54.3,66.2	58.6,58.3	56.8,66.0
+path	60.1,61.5	62.9,62.7	63.0,59.6
+path	61.8,58.3	64.2,49.5	64.1,54.1
+path	65.0,58.8	66.9,58.5	65.6,63.6
+path	72.5,65.0	71.8,56.0	74.0,49.9
+path	70.9,47.1	72.8,53.1	70.0,49.9
+path	70.9,53.0	68.8,54.7	68.6,47.7
+path	66.4,48.7	65.6,40.6	63.1,41.7
+path	61.8,44.9	57.4,40.9	59.9,45.0
+path	60.9,49.5	56.7,48.5	56.3,52.3
+path	51.1,48.1	50.9,51.9	52.5,53.2
+path	52.0,59.0	50.2,61.5	50.1,58.6
+path	48.6,60.9	47.5,54.4	47.7,63.6
+path	46.6,56.7	42.8,53.0	42.0,54.1
+path	44.0,59.3	43.6,62.0	42.0,60.3
+path	40.3,64.5	39.2,61.9	36.8,64.3
+path	39.0,52.7	38.8,48.4	47.7,36.0
+path	34.0,38.9	37.2,43.7	34.5,42.2
+path	33.5,44.9	35.7,47.1	32.1,50.5
+path	29.4,50.5	29.4,50.5	29.2,37.4
+path	22.2,36.7	22.3,41.1	25.6,41.6
+path	24.3,47.1	28.6,53.1	26.8,55.8
+path	21.6,55.7	22.6,62.8	24.5,62.0
+path	27.3,58.4	27.8,59.9	25.8,67.2
+path	27.2,67.1	27.2,69.7	24.6,72.5
+path	26.6,73.1	28.4,70.8	29.4,64.3
+path	30.7,64.5	29.9,70.9	31.2,70.6
+path	32.8,74.5	35.3,73.5	32.8,66.9
+path	33.5,65.5	37.0,67.7	36.3,72.7
+path	38.2,76.9	38.9,75.1	40.4,77.6
+#include follow_path_herbs
+Click here to pick a different herb |confirm |next "start"
+step "cinder_storm"
+map Mount Hyjal
+path	68.2,23.9	59.2,31.6	57.0,38.9
+path	57.9,17.5	51.5,16.9	52.6,35.5
+path	48.7,36.5	44.0,24.5	39.8,32.5
+path	36.5,21.7	32.3,25.2	34.6,36.9
+path	43.5,42.6	36.2,44.9	25.3,37.8
+path	24.1,31.9	11.8,31.6	14.3,47.0
+path	19.0,58.5	25.6,62.0	31.9,46.7
+path	33.1,65.2	36.9,53.5	42.3,55.9
+path	33.8,65.0	31.3,76.5	33.8,98.2
+path	57.1,80.9	59.2,84.5	59.8,77.8
+path	55.8,74.7	59.8,71.6	49.1,51.6
+path	61.9,60.5	67.1,53.5	74.3,58.8
+path	71.9,68.5	77.3,63.2	83.0,64.2
+path	89.9,49.8	80.9,51.8	77.5,59.5
+#include follow_path_herbs
+Click here to pick a different herb |confirm |next "start"
+step "azshara"
+map Shimmering Expanse
+path	42.2,55.2	37.7,67.1	48.2,81.4
+path	57.8,83.2	58.5,69.6	49.6,59.1
+path	68.0,49.7	63.9,39.4	57.9,39.8
+path	50.6,35.3	41.3,34.8	38.1,44.7
+path	32.5,54.7
+#include follow_path_herbs
+Click here to pick a different herb |confirm |next "start"
+step "heart"
+map Deepholm
+path	69.4,56.0	70.0,60.7	72.9,58.2
+path 	74.7,61.1	75.8,67.5	70.9,62.9
+path 	71.1,70.6	66.0,68.5	26.8,41.5
+path 	26.5,35.6	23.1,35.3	25.9,31.9
+path 	27.5,32.3	27.8,27.0	31.2,32.0
+path 	28.9,35.6	26.8,41.5
+#include "follow_path_herbs"
+Click here to pick a different herb |confirm |next "start"
+step "whip"
+map Uldum
+path	58.4,31.3	56.2,22.6	57.8,14.5
+path 	61.5,14.0	57.1,44.7	60.5,58.3
+path 	69.8,76.5	65.9,75.9	60.0,83.2
+path 	59.0,58.8	55.3,45.8	52.0,45.6
+path 	50.8,42.5	50.8,36.0	50.8,36.0
+#include "follow_path_herbs"
+Click here to pick a different herb |confirm |next "start"
+step "twilight"
+map Twilight Highlands
+path	71.7,48.9	68.1,41.8	61.9,36.0
+path 	53.9,32.0	47.3,40.3	45.6,45.2
+path 	45.3,36.1	41.3,52.0	48.7,54.5
+path 	51.5,45.6	58.2,48.0	59.1,40.1
+path 	70.9,64.8	73.5,64.0	73.7,72.2
+path	69.8,64.7	63.1,60.8	59.5,63.6
+path 	55.3,50.4	57.0,77.5	53.0,79.8
+path 	49.0,70.0	44.2,70.6	47.9,63.4
+path 	33.6,49.9	29.0,40.3	28.6,30.5
+path	46.3,23.2	57.5,27.2	69.1,38.2
+path 	72.9,47.2
+#include "follow_path_herbs"
+Click here to pick a different herb |confirm |next "start"
+step "green"
+map Valley of the Four Winds
+path	81.4,21.5	76.4,29.2	71.1,29.5
+path	69.0,31.0	70.8,34.4	70.6,41.8
+path	65.1,60.1	57.6,65.6	50.8,58.6
+path	47.4,64.9	46.9,61.3	42.5,54.3
+path	33.6,62.1	28.1,72.7	25.7,78.4
+path	24.4,56.0	21.9,53.9	12.8,44.7
+path	14.3,41.2	14.8,35.8	19.6,34.4
+#include "follow_path_herbs"
+Click here to pick a different herb |confirm |next "start"
+only if ZGV.guidesets['ProfessionsHMoP']
+step "fool"
+map Dread Wastes
+path	40.4,56.5	43.9,59.5	43.1,64.4
+path	40.5,69.7	37.4,69.2	33.0,66.4
+path	33.4,61.6	30.0,56.5	35.5,55.1
+#include follow_path_herbs
+Click here to pick a different herb. |confirm |next "start"
+only if ZGV.guidesets['ProfessionsHMoP']
+step "snow"
+map Kun-Lai Summit
+path	39.4,77.3	38.0,75.5	40.1,71.8
+path	43.7,64.5	42.9,60.8	41.1,59.3
+path	33.9,54.9	36.0,75.5
+#include follow_path_herbs
+Click here to pick a different herb |confirm |next "start"
+only if ZGV.guidesets['ProfessionsHMoP']
+step "fireweed"
+map Frostfire Ridge
+path follow loose; loop on; ants curved
+path	31.1,53.3	26.1,53.7	24.2,49.0
+path	23.2,45.2	20.7,39.5	22.2,33.9
+path	21.8,29.7	20.9,25.4	23.1,23.6
+path	25.1,24.6	27.2,22.3	29.7,21.4
+path	31.2,22.0	32.8,21.7	35.1,19.5
+path	36.9,24.3	38.1,26.8	40.8,28.9
+path	41.6,30.6	42.8,29.9	42.9,31.1
+path	44.4,31.1	46.2,31.7	48.9,34.4
+path	51.6,36.9	53.7,35.1	54.5,30.3
+path	56.5,26.1	59.1,28.4	60.0,31.9
+path	61.2,34.9	63.1,40.9	63.4,45.0
+path	60.9,46.9	62.2,52.4	60.3,55.3
+path	57.9,57.5	53.8,55.8	50.6,54.7
+path	47.7,55.6	45.9,58.9	43.1,60.8
+path	40.3,62.1	37.7,58.7	36.5,56.5
+path	35.5,53.3	33.6,49.2	31.1,51.2
+Make sure you have find herbs turned on, and gather all _Frostweed_ and _Fireweed_ you see as you follow this path
+collect Frostweed##109124 |n
+collect Fireweed##109125 |n
+Click here to pick a different herb |confirm |next "start"
+step "flytrap"
+map Gorgrond
+path follow loose; loop on; ants curved
+path	50.5,76.1	52.7,75.6	54.1,72.5
+path	53.7,68.1	55.1,65.2	56.3,64.1
+path	59.3,64.1	61.1,62.6	60.4,59.2
+path	59.2,57.6	57.5,57.8	56.2,60.2
+path	55.9,62.5	54.0,62.6	52.4,62.4
+path	52.1,64.4	50.8,64.8	50.5,67.3
+path	49.4,68.9	48.3,70.6	47.2,70.4
+path	45.4,71.2	44.5,72.2	44.7,74.2
+path	45.0,75.9	45.6,77.0	47.7,76.0
+Make sure you have find herbs turned on, and gather all _Gorgrond Flytrap_ you see as you follow this path
+collect Gorgrond Flytrap##109126 |n
+Click here to pick a different herb |confirm |next "start"
+step "bloom"
 map Nagrand D
 path follow loose; loop; ants curved
 path	87.8,65.2	87.4,63.1	86.4,61.4
@@ -402,88 +681,38 @@ path	68.5,46.7	71.5,48.5	72.8,49.5
 path	71.3,53.7	71.0,56.5	72.4,57.6
 path	75.4,57.5	77.2,58.6	78.2,63.4
 path	80.4,66.2	84.1,68.1	86.3,67.5
-Make sure you are tracking herbs, follow the path and collect all Nagrand Arrowblooms you come across
-collect 5 Nagrand Arrowbloom##109128
-next "1done"
-step
-label "buyna"
-#include "auctioneer"
-Buy 5 Nagrand Arrowblooms off the Auction House
-collect 5 Nagrand Arrowbloom##109128
-next "1done"
-step
-label "1done"
-Next you need _23 Rylak Crepes_
-Click here to gather them |next "gathercrepes" |confirm
-Click here to buy them off the Auction House |next "buycrepes" |confirm
-step
-label "gathercrepes"
-kill Toxicfang Rylak##83740+, Viletongue Rylak##88643+ |goto Spires of Arak/0 55.5,27.4
-Click here for another location |goto Spires of Arak/0 63.8,23.4
-collect 115 Rylak Egg##109133
-step
-Build a Cooking Fire |cast Cooking Fire##818
-create 23 Rylak Crepes##160969,Cooking,23 total |n
-collect 23 Rylak Crepes##111437
-next "2done"
-step
-label "buycrepes"
-#include "auctioneer"
-Buy 125 Rylak Eggs _OR_ 25 Rylak Crepes off the Auction House
-collect 125 Rylak Egg##109133 |or
-collect 25 Rylak Crepes##111437 |or
-next "2done"
-step
-label "2done"
-Last, you need _25 Fiery Calamari_
-These are gained through Fishing or can be bought off the Auction House
-Click here to go fishing |next "gathertent" |confirm
-Click here to buy them off the Auction House |next "buytent" |confirm
-step
-label "gathertent"
-Fish in the lava |cast Fishing##131474 |goto Frostfire Ridge/0 50.6,60.4
-collect Small Fire Ammonite##111656 |n
-use Small Fire Ammonite##111656
-|tip These can only be used in stacks of 5.
-collect Fire Ammonite##111666 |n
-use Fire Ammonite##111666
-|tip These can only be used in stacks of 5.
-collect Enormous Fire Ammonite##111673 |n
-use Enormous Fire Ammonite##111673
-|tip These can only be used in stacks of 5.
-collect 125 Fire Ammonite Tentacle##109141
-next "3done"
-step
-label "buytent"
-#include "auctioneer"
-Buy 125 Fire Ammonite Tentacles _OR_ 25 Fiery Clamari
-collect 125 Fire Ammonite Tentacle##109141 |or
-collect 25 Fiery Calamari##111445 |or
-next "3done"
-step
-label "3done"
-Build a Cooking Fire |cast Cooking Fire##818
-create 25 Fiery Calamari##160982,Cooking,25 total |n
-collect 25 Fiery Calamari##111445
-step
-Build a Cooking Fire |cast Cooking Fire##818
-create 25 Rylak Crepes##160969,Cooking,25 total |n
-collect 25 Rylak Crepes##111437
-step
-Build a Cooking Fire |cast Cooking Fire##818
-create 5 Calamari Crepes##160999,Cooking,5 total |n
-skill Cooking,675
-next "675menu"
-step
-label "frostystew"
-First you need _5 Frostweed_
-These can be gathered with Herbalism or bougth off the Auction House
-Click here to gather Frostweed yourself |next "gatherfw" |confirm
-Click here to buy them off the Auction House |next "buyfw" |confirm
-step
-label "gatherfw"
-map Frostfire Ridge
+Make sure you have find herbs turned on, and gather all _Nagrand Arrowbloom_ you see as you follow this path
+collect Nagrand Arrowbloom##109128 |n
+Click here to pick a different herb |confirm |next "start"
+step "orchid"
+map Talador
 path follow loose; loop on; ants curved
+path	57.7,46.9	56.3,49.8	54.2,52.0
+path	52.7,50.3	51.2,51.5	49.4,54.8
+path	46.7,52.6	44.5,53.2	41.5,54.4
+path	39.6,53.6	40.7,57.4	40.5,61.5
+path	39.7,63.2	39.2,67.9	39.4,72.9
+path	41.0,76.8	39.4,81.7	40.3,86.7
+path	42.5,88.4	46.0,87.5	48.1,85.9
+path	52.4,85.1	56.0,84.4	57.9,78.8
+path	59.3,77.5	58.8,74.0	60.3,65.7
+path	63.3,64.9	62.8,59.1	61.3,56.6
+path	59.5,53.0	59.1,48.6
+Make sure you have find herbs turned on, and gather all _Talador Orchid_ you see as you follow this path
+collect Talador Orchid##109129 |n
+Click here to pick a different herb |confirm |next "start"
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Herbalism 600-700 Leveling Guide",{
+description="This guide will walk you through leveling Herbalism from 600-700.",
+},[[
+step
+Kill any lootable enemies found in Draenor
+collect A Compendium of the Herbs of Draenor##111350 |n
+use A Compendium of the Herbs of Draenor##111350
+skillmax Herbalism,700
+step
+map Frostfire Ridge
+path follow loose;loop;ants straight;dist 60
 path	31.1,53.3	26.1,53.7	24.2,49.0
 path	23.2,45.2	20.7,39.5	22.2,33.9
 path	21.8,29.7	20.9,25.4	23.1,23.6
@@ -500,281 +729,75 @@ path	57.9,57.5	53.8,55.8	50.6,54.7
 path	47.7,55.6	45.9,58.9	43.1,60.8
 path	40.3,62.1	37.7,58.7	36.5,56.5
 path	35.5,53.3	33.6,49.2	31.1,51.2
-Make sure you are tracking Herbs, and gather any Frostweed you see as you follow the path
-collect 5 Frostweed##109124
-next "1done"
-step
-label "buyfw"
-#include "auctioneer"
-Buy 5 Frostweed off the Auction House
-collect 5 Frostweed##109124
-next "1done"
-step
-label "1done"
-Next you need _25 Pan-Seared Talbuk_
-These are gathered from Raw Talbuk Meat in Nagrand
-Click here to gather them yourself |next "gathermeat" |confirm
-Click here to buy it off the Auction House |next "buymeat" |confirm
-step
-label "gathermeat"
-kill Talbuk Stag##17130+, Talbuk Thorngrazer##17131+
-collect 125 Raw Talbuk Meat##109132 |goto Nagrand D 78,42
-step
-Build a Cooking Fire |cast Cooking Fire##818
-create 25 Pan-Seared Talbuk##160966,Cooking,25 total |n
-collect 25 Pan-Seared Talbuk##111434
-next "2done"
-step
-label "buymeat"
-#include "auctioneer"
-Buy 125 Raw Talbuk Meat _OR_ 25 Pan-Seared Talbuk
-collect 125 Raw Talbuk Meat##109132 |or
-collect 25 Pan-Seared Talbuk##111434 |or
-next "2done"
-step
-label "2done"
-Last you need _25 Sturgeon Stew_
-These are gathered through Fishing or can be bought off the Auction House
-Click here to go Fishing |next "gathersf" |confirm
-Click here to buy it off the Auction House |next "buysf" |confirm
-step
-label "gathersf"
-Fish in the water here |goto Shadowmoon Valley D 34,46 |cast Fishing##131474
-collect Small Blind Lake Sturgeon##111652 |n
-use Small Blind Lake Sturgeon##111652
-|tip These can only be used in stacks of 5.
-collect Blind Lake Sturgeon##111667 |n
-use Blind Lake Sturgeon##111667
-|tip These can only be used in stacks of 5.
-collect Enormous Blind Lake Sturgeon##111674 |n
-use Enormous Blind Lake Sturgeon##111674
-|tip These can only be used in stacks of 5.
-collect 250 Blind Lake Sturgeon Flesh##111674
-next "3done"
-step
-label "buysf"
-#include "auctioneer"
-Buy 250 Blind Lake Sturgeon Flesh _OR_ 25 Sturgeon Stew
-collect 250 Blind Lake Sturgeon Flesh##111674 |or
-collect 25 Sturgeon Stew##111442 |or
-next "3done"
-step
-label "3done"
-Build a Cooking Fire |cast Cooking Fire##818
-create 25 Pan-Seared Talbuk##160966,Cooking,25 total |n
-collect 25 Pan-Seared Talbuk##111434
-step
-Build a Cooking Fire |cast Cooking Fire##818
-create 25 Sturgeon Stew##160979,Cooking,25 total |n
-collect 25 Sturgeon Stew##111442
-step
-Build a Cooking Fire |cast Cooking Fire##818
-create 5 Frosty Stew##160987,Cooking,25 total |n
-skill Cooking,675
-next "675menu"
-step
-label "675menu"
-Now you will make _5 Feast of the Waters_ to reach level 700
-You will need the following ingredients:
-collect 50 Sea Scorpion Segment##109142
-Click here to fish for more _Sea Scorpion Segments_ |next "seascorpion" |confirm
-collect 50 Abyssal Gulper Eel Flesh##109143
-Click here to fish more _Abyssal Gulper Eel Flesh_ |next "gulpereel" |confirm
-collect 50 Blind Lake Sturgeon Flesh##109140
-Click here to fish more _Blink Lake Sturgeon Flesh_ |next "blindlake" |confirm
-collect 50 Fat Sleeper Flesh##109139
-Click here to fish more _Fat Sleeper Flesh_ |next "fatsleeper" |confirm
-collect 50 Fire Ammonite Tentacle##109141
-Click here to fish more _Ammonite Tentacle_ |next "fireammonite" |confirm
-collect 50 Jawless Skulker Flesh##109138
-Click here to fish more _Jawless Skulker Flesh_ |next "jawlessskulker" |confirm
-OR click here to buy these off the _Auction House_ |next "ahfinal" |confirm
-next "cooking700"
-step
-label "seascorpion"
-Fish in the water here |goto Frostfire Ridge/0 41.5,65.4 |cast Fishing##131474
-use Sea Scorpion Bait##110292
-Use any _Sea Scorpion Bait_ you may have while fishing
-collect Small Sea Scorpion##111658 |n
-use Small Sea Scorpion##111658
-|tip These can only be used in stacks of 5.
-collect Sea Scorpion##111665 |n
-use Sea Scorpion##111665
-|tip These can only be used in stacks of 5.
-collect Enormous Sea Scorpion##111672 |n
-use Enormous Sea Scorpion##111672 |tip These can only be used in stacks of 5.
-collect 50 Sea Scorpion Segments##109142
-confirm
-next "675menu"
-step
-label "gulpereel"
-Fish in the water here |goto Spires of Arak 52.5,8.7 |cast Fishing##131474
-use Abyssal Gulper Eel Bait####110293
-Use any _Abyssal Gulper Eel Bait_ you may have while fishing
-collect Small Abyssal Gulper Eel##111659 |n
-use Small Abyssal Gulper Eel##111659
-|tip These can only be used in stacks of 5.
-collect Abyssal Gulper Eel##111664 |n
-use Abyssal Gulper Eel##111664
-|tip These can only be used in stacks of 5.
-collect Enormous Abyssal Gulper Eel##111671 |n
-use Enormous Abyssal Gulper Eel##111671
-|tip These can only be used in stacks of 5.
-collect 50 Abyssal Gulper Eel Flesh##109143
-confirm
-next "675menu"
-step
-label "blindlake"
-Fish in the water here |goto Shadowmoon Valley D 34,46 |cast Fishing##131474
-use Blind Lake Sturgeon Bait##110290
-Use any _Lake Sturgeon Bait_ you may have while fishing
-collect Small Blind Lake Sturgeon##111652 |n
-use Small Blind Lake Sturgeon##111652
-|tip These can only be used in stacks of 5.
-collect Blind Lake Sturgeon##111667 |n
-use Blind Lake Sturgeon##111667
-|tip These can only be used in stacks of 5.
-collect Enormous Blind Lake Sturgeon##111674 |n
-use Enormous Blind Lake Sturgeon##111674
-|tip These can only be used in stacks of 5.
-collect 50 Blind Lake Sturgeon Flesh##109140
-confirm
-next "675menu"
-step
-label "fatsleeper"
-Fish in the water here |goto Nagrand D 51.7,43.4 |cast Fishing##131474
-use Fat Sleeper Bait##110289
-Use any _Fat Sleeper Bait_ you may have while fishing
-collect Small Fat Sleeper##111651 |n
-use Small Fat Sleeper##111651
-|tip These can only be used in stacks of 5.
-collect Fat Sleeper##111668 |n
-use Fat Sleeper##111668
-|tip These can only be used in stacks of 5.
-collect Enormous Fat Sleeper##111675 |n
-use Enormous Fat Sleeper##111675
-|tip These can only be used in stacks of 5.
-collect 50 Fat Sleeper Flesh##109139
-confirm
-next "675menu"
-step
-label "fireammonite"
-Fish in the lava |goto Frostfire Ridge/0 50.6,60.4 |cast Fishing##131474
-use Fire Ammonite Bait##110291
-Use any _Fire Ammonite Bait_ you may have while fishing
-collect Small Fire Ammonite##111656 |n
-use Small Fire Ammonite##111656
-|tip These can only be used in stacks of 5.
-collect Fire Ammonite##111666 |n
-use Fire Ammonite##111666
-|tip These can only be used in stacks of 5.
-collect Enormous Fire Ammonite##111673 |n
-use Enormous Fire Ammonite##111673
-|tip These can only be used in stacks of 5.
-collect 50 Fire Ammonite Tentacle##109141
-confirm
-next "675menu"
-step
-label "jawlessskulker"
-Fish in the water here |goto Gorgrond 43.5,81.0 |cast Fishing##131474
-use Jawless Skulker Bait##110274
-Use any _Jawless Skulker Bait_ you may have while fishing
-collect Small Jawless Skulker##111650 |n
-use Small Jawless Skulker##111650
-|tip These can only be used in stacks of 5.
-collect Jawless Skulker##111669 |n
-use Jawless Skulker##111669
-|tip These can only be used in stacks of 5.
-collect Enormous Jawless Skulker##111676 |n
-use Enormous Jawless Skulker##111676
-|tip These can only be used in stacks of 5.
-collect 50 Jawless Skulker Flesh##109138
-confirm
-next "675menu"
-step
-label "ahfinal"
-#include "auctioneer"
-Buy the following cooking ingredients from the Auction House:
-collect 50 Sea Scorpion Segment##109142
-collect 50 Abyssal Gulper Eel Flesh##109143
-collect 50 Blind Lake Sturgeon Flesh##109140
-collect 50 Fat Sleeper Flesh##109139
-collect 50 Fire Ammonite Tentacle##109141
-collect 50 Jawless Skulker Flesh##109138
-next "cooking700"
-Click here if you need to go farm if not all of these are avilable |next "675menu" |confirm
-step
-label "cooking700"
-Build a Cooking Fire |cast Cooking Fire##818
-create 5 Feast of the Waters##173979,Cooking, 5 total
-skill Cooking,700
-step
-label "cookingend"
-Fish anywhere in the water or lava in Frostfire Ridge |cast Fishing##131474 |goto Frostfire Ridge/0 50.6,60.2
-Click here to fish in your Garrison |goto Frostwall/0 38.6,79.2 |only if completedq(36132)
-skill Fishing,700
-step
-Congratulations, you have reached level 700 in Cooking and Fishing!
+Make sure you have find herbs turned on
+collect Frostweed##109124 |n
+collect Fireweed##109125 |n
+skill Herbalism,700
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\First Aid\\First Aid 600-700 Leveling Guide",{
-description="This guide will walk you through leveling First Aid from 600-700.",
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Inscription\\Leveling Guides\\Inscription 600-700 Leveling Guide",{
+author="support@zygorguides.com",
+completion={"skill","Inscription",700},
+description="This guide will walk you through leveling your Inscription skill from 600-700.",
+},[[
+#include "Inscription_600-700"
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 600-700 Leveling Guide",{
+author="support@zygorguides.com",
+completion={"skill","Jewelcrafting",700},
+description="This guide will walk you through leveling your Jewelcrafting skill from 600-700.",
+},[[
+#include "Jewelcrafting_600-700"
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Leatherworking 600-700 Leveling Guide",{
+author="support@zygorguides.com",
+completion={"skill","Leatherworking",700},
+description="This guide will walk you through leveling your Leatherworking skill from 600-700.",
+},[[
+#include "Leatherworking_600-700"
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Mining 600-700 Leveling Guide",{
+description="This guide will walk you through leveling Mining from 600-700.",
 },[[
 step
-To unlock a maximum First Aid skill of 700, you you will need to loot First Aid in Draenor
-These can drop off any mob, continue killing or questing until you get it
-collect First Aid in Draenor##111364 |n
-use First Aid in Draenor##111364
-learn Healing Tonic##172540
+Kill any lootable enemies found in Draenor
+collect A Treatise on Mining in Draenor##111349 |n
+use A Treatise on Mining in Draenor##111349
+skillmax Mining,700
 step
-You will need _200 Sea Scorpion Segments_ to reach level 700 in First Aid
-These can be gathered if you have the Fishing skill, or purchased off the Auction House
-Click here to go Fishing |next "fish" |confirm
-Click here to go to the Auction House |next "buyfish" |confirm
-step
-label "fish"
-Fish in the water here |goto Frostfire Ridge/0 41.5,65.4 |cast Fishing##131474
-use Sea Scorpion Bait##110292
-Use any _Sea Scorpion Bait_ you may have while fishing
-collect Small Sea Scorpion##111658 |n
-use Small Sea Scorpion##111658
-|tip These can only be used in stacks of 5.
-collect Sea Scorpion##111665 |n
-use Sea Scorpion##111665
-|tip These can only be used in stacks of 5.
-collect Enormous Sea Scorpion##111672 |n
-use Enormous Sea Scorpion##111672
-|tip These can only be used in stacks of 5.
-collect 200 Sea Scorpion Segments##109142
-next "craft"
-step
-label "buyfish"
-#include "auctioneer"
-Buy _200 Sea Scorpion Segments_ from the Auction House
-collect 200 Sea Scorpion Segment##109142
-next "craft"
-step
-label "craft"
-create 20 Healing Tonic##172540,First Aid,700
+map Frostfire Ridge
+path follow loose; loop on; ants curved
+path	43.0,58.3	40.8,60.5	38.4,59.3
+path	36.0,57.0	34.3,54.6	31.6,54.8
+path	28.5,49.5	27.9,44.6	24.5,39.7
+path	23.9,34.1	27.9,30.9	31.9,27.0
+path	32.6,25.7	33.5,20.5	36.3,21.0
+path	37.8,26.5	41.0,28.9	42.1,30.6
+path	43.0,31.0	44.7,31.2	49.7,35.4
+path	52.4,38.3	54.3,39.5	48.5,50.1
+path	47.6,54.9	46.2,58.3	43.3,57.9
+Make sure you are tracking minerals, and gather all _Blackrock_ and _True Iron_ ore you see as you follow this path
+skill Mining,700
 ]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Archaeology\\Archaeology 600-700 Leveling Guide",{
-description="This guide will walk you through leveling Archaeology from 600-700.",
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Skinning 600-700 Leveling Guide",{
+description="This guide will walk you through leveling Skinning from 600-700.",
 },[[
 step
-To unlock a maximum Archaeology skill of 700, you you will need to loot a Brittle Cartography Journal in Draenor
-These have a chance to drop off any mob, so continue killing or questing until you get it
-collect Brittle Cartography Journal##109586 |n
-use Brittle Cartography Journal##109586
-confirm
+Kill any lootable enemies found in Draenor
+collect A Guide to Skinning in Draenor##111351 |n
+use A Guide to Skinning in Draenor##111351
+skillmax Skinning,700
 step
-Open your world map, find dig sites in Draenor and go to them
-|tip They look like small shovel icons on your world map that spawn in random places. Once you get to the zone where the dig site is located, you will see the dig site on your map as a red highlighted area.
-Use your Survey ability inside the dig site area |cast Survey##80451
-A telescope will appear, follow the direction it points in and continue using your Survey ability to eventually find the artifacts
-|tip Each dig site has 6 artifacts you can find.
-Click the Archaeology Fragments that spawn on the ground
-Open your Archaeology profession window |cast Archaeology##78670
-Click artifacts to open them, then solve them once you have the required amounts of each
-skill Archaeology,700
-step
-Congratulations, you have reached level 700 in Archaeology!
+map Nagrand D
+path follow loose; loop on; ants curved
+path	84.6,61.8	82.3,64.6	79.5,62.3
+path	78.6,58.7	80.1,54.5	82.4,59.6
+Follow the path, killing and skinning any beasts you come across.
+skill Skinning,700
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Tailoring 600-700 Leveling Guide",{
+author="support@zygorguides.com",
+completion={"skill","Tailoring",700},
+description="This guide will walk you through leveling your Tailoring skill from 600-700.",
+},[[
+#include "Tailoring_600-700"
 ]])

@@ -37,7 +37,7 @@ local classtalents=
 	["MONK"]		= { "Brewmaster","Mistweaver","Windwalker" },
 	["PALADIN"]		= { "Holy","Protection","Retribution" },
 	["HUNTER"]		= { "Beast Mastery","Marksmanship","Survival" },
-	["ROGUE"]		= { "Assassination","Combat","Subtlety" },
+	["ROGUE"]		= { "Assassination","Outlaw","Subtlety" },
 	["PRIEST"]		= { "Discipline","Holy","Shadow" },
 	["MAGE"]		= { "Arcane","Fire","Frost" },
 	["WARLOCK"]		= { "Affliction","Demonology","Destruction" },
@@ -337,6 +337,7 @@ local ConditionEnv = {
 		Parser.ConditionEnv.level = ZGV:GetPlayerPreciseLevel()
 		Parser.ConditionEnv.intlevel = floor(Parser.ConditionEnv.level)
 		if ZGV.db.char.fakelevel and ZGV.db.char.fakelevel>0 then Parser.ConditionEnv.level=ZGV.db.char.fakelevel end
+		Parser.ConditionEnv.walking = Parser.ConditionEnv.iswalking()
 	end,
 
 	_Setup = function()
@@ -500,7 +501,7 @@ local ConditionEnv = {
 
 		return false
 	end,
-	walking = function()
+	iswalking = function()
 		return not IsFlying()
 	end,
 	selected = function(itemname)
@@ -525,8 +526,31 @@ local ConditionEnv = {
 		local q = ZGV.Localizers:GetQuestData(quid)
 		return q
 	end,
-
+	intutorial = function()
+		return IsBoostTutorialScenario()
+	end,
+	inscenario = function()
+		return C_Scenario.IsInScenario()
+	end,
+	scenariostage = function(stage)
+		if not C_Scenario.IsInScenario() then return false end
+		local _,s = C_Scenario.GetInfo()
+		return s==stage
+	end,
 }
+setmetatable(ConditionEnv,{__index=function(t,k) return rawget(t,k:lower()) end})
+-- Store class constants
+ local pcl = select(2,UnitClass("player")):lower()
+ for i=1,GetNumClasses() do  local _,cl=GetClassInfo(i)  cl=cl:lower()  ConditionEnv[cl] = (pcl==cl)  end
+-- Store race constants
+ local pra = select(2,UnitRace("player")):lower()
+ for i,ra in ipairs{"nightelf","dwarf","human","gnome","draenei","worgen", "orc","troll","scourge","tauren","bloodelf","goblin", "pandaren"} do  ConditionEnv[ra] = (pra==ra)  end
+ ConditionEnv['undead']=ConditionEnv['scourge']
+-- Store faction constants
+ local pfa = UnitFactionGroup("player"):lower()
+ for i,fa in ipairs{"alliance","horde","neutral"} do  ConditionEnv[fa] = (pfa==fa)  end
+
+
 Parser.ConditionEnv=ConditionEnv  --DEBUG
 
 local function MakeCondition(cond,forcebool)

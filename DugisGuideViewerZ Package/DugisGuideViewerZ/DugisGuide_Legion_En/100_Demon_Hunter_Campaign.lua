@@ -533,18 +533,18 @@ C Destiny Unfulfilled |QID|44497| |N|Witness True Betrayal in Shadowmoon Valley 
 R The Fel Hammer |TID|44496| |N|Travel to {The Fel Hammer} (58.92, 43.92)| |Z|1052 2|
 T Destiny Unfulfilled |QID|44496| |N|(npc:113857) in {The Fel Hammer} (58.92, 43.92)| |Z|1052 2| |NPC|113857|
 
-R Krasus' Landing |N|Travel to Krasus' Landing} (69.40, 43.99)| |Z|1014 10|
+R Krasus' Landing |QID|46734| |N|Travel to {Krasus' Landing} (69.40, 43.99)| |Z|1014 10|
 A Armies of Legionfall |QID|46730| |N|This quest is available after you unlock World Quests by completing (qid:43341)| |Z|1014 10| |NPC|120215| |O|
 T Armies of Legionfall |QID|46730| |N|(npc:120215), in {Krasus' Landing} (69.37, 43.88)| |Z|1014 10| |NPC|120215| |O|
 A Assault on Broken Shore |QID|46734| |N|(npc:120215) in {Krasus' Landing} (69.40, 43.99)| |Z|1014 10| |NPC|120215|
 N (npc:120215) |QID|46734.1| |N|Speak to (npc:120215) in {Krasus' Landing} (69.40, 43.99)| |Z|1014 10| |NPC|120215|
-N (npc:120752) |SID|35327|1| |N|Mount the (npc:120752) in {Krasus' Landing}| |NPC|120752| |V|
-C Secure the Beach |SID|35327|2| |N|Kill the demons on the beach until you reach 100% to secure the beach (50.86, 69.96)| |Z|1149 0|
-C Defeat Lord Kalgorath |SID|35329|3| |N|Defeat (npc:116291) in {Broken Shore} (44.30, 73.90) (42.04, 72.23) (41.29, 65.12) (41.30, 65.12)| |Z|1149 0| |NPC|116291|
-C Legion portals closed |SID|35495|4| |N|Follow the waypoints and defeat the forces to close the portals in {Broken Shore}(42.95, 58.73)  (46.98, 58.29) (52.15, 52.38)(54.57, 47.99) (57.09, 52.15) (59.09, 51.61) (59.09, 51.61)| |Z|1149 0|
-K (npc:118551) |SID|35497|5| |N|Kill (npc:118551) in {Broken Shore} (55.15, 51.75)| |Z|1149 0| |NPC|118551|
-C Use Gateway |SID|35551|6| |N|Take the Demonic Gateway to the base of Mephistroth's command ship (53.41, 50.42)| |Z|1149 0|
-C Plant Arcane Bombs |SID|36178|7| |N|Plant Arcane Bombs in the command ship in each waypoints, look for the yellow dots in the minimap, you will need to use the portal after planting the first 2| |Z|1149 0|
+N (npc:120752) |SID|35327|1| |N|Mount the (npc:120752) in {Krasus' Landing}| |NPC|120752| |V| |QID|46734| 
+C Secure the Beach |SID|35327|2| |N|Kill the demons on the beach until you reach 100% to secure the beach (50.86, 69.96)| |Z|1149 0| |QID|46734| 
+C Defeat Lord Kalgorath |SID|35329|3| |N|Defeat (npc:116291) in {Broken Shore} (44.30, 73.90) (42.04, 72.23) (41.29, 65.12) (41.30, 65.12)| |Z|1149 0| |NPC|116291| |QID|46734| 
+C Legion portals closed |SID|35495|4| |N|Follow the waypoints and defeat the forces to close the portals in {Broken Shore}(42.95, 58.73)  (46.98, 58.29) (52.15, 52.38)(54.57, 47.99) (57.09, 52.15) (59.09, 51.61) (59.09, 51.61)| |Z|1149 0| |QID|46734| 
+K (npc:118551) |SID|35497|5| |N|Kill (npc:118551) in {Broken Shore} (55.15, 51.75)| |Z|1149 0| |NPC|118551| |QID|46734| 
+C Use Gateway |SID|35551|6| |N|Take the Demonic Gateway to the base of Mephistroth's command ship (53.41, 50.42)| |Z|1149 0| |QID|46734| 
+C Plant Arcane Bombs |SID|36178|7| |N|Plant Arcane Bombs in the command ship in each waypoints, look for the yellow dots in the minimap, you will need to use the portal after planting the first 2| |Z|1149 0| |QID|46734| 
 C Defeat Mephistroth |SID|36179|8| |N|Kill (npc:120746) in {Broken Shore} (50.03, 45.38)| |Z|1149 0| |NPC|120746| |QID|46734.2|
 
 T Assault on Broken Shore |QID|46734| |N|(npc:116302) in {Deliverance Point} (44.71, 63.29)| |Z|1021 0| |NPC|116302|
@@ -560,6 +560,20 @@ R Vengeance Point |QID|46845| |N|Travel to {Vengeance Point} (50.63, 20.77)| |Z|
 N Scout Dreadstalker Point |QID|46845.1| |N|Scout Dreadstalker Point (50.66, 21.41)| |Z|1021 0|
 C Vengeance Point |QID|46845| |N|Kill 4 (npc:120969) and 5 (npc:120748) in {Vengeance Point} (50.63, 20.77)| |Z|1021 0| |NPC|120969, 120748|
 T Vengeance Point |QID|46845| |N|(npc:111323) in {Vengeance Point} (49.69, 21.03)| |Z|1021 0| |NPC|111323|
+C Legionfall Supplies |QID|46286| |N|Complete World Quests or slay Rare Elites on the Broken Shore to earn 100 (cur:1342)|
+T Legionfall Supplies |QID|46286| |N|(npc:120183) in {Deliverance Point} (44.55,63.15)| |Z|1021 0| |NPC|120183|
+A Begin Construction |QID|46245| |N|(npc:120183) in {Deliverance Point} (44.54,63.15)| |Z|1021 0| |NPC|120183|
+C Begin Construction |QID|46245.1| |N|Use the table and Donate Legionfall War Supplies to the construction of the Mage Tower, Nether Disruptor, or Command Center in {Deliverance Point} (44.74, 63.13)| |Z|1021 0|
+T Begin Construction |QID|46245| |N|(npc:120183) in {Deliverance Point} (44.54,63.15)| |Z|1021 0| |NPC|120183|
+A Defending Broken Isles |QID|46247| |N|(npc:116576) in {Deliverance Point} (44.54,63.52)| |Z|1021 0| |NPC|116576| 
+C Defending Broken Isles |QID|46247.1| |N|Defeat a Legion Assault in the Broken Isles, check the Broken Isle map for Legion Assault and complete the World quest for it| |Z|1021 0|
+T Defending Broken Isles |QID|46247| |N|(npc:116576) in {Deliverance Point} (44.54,63.52)| |Z|1021 0| |NPC|116576|
+A Mark of the Sentinax |QID|47139| |N|(npc:117873) in {Deliverance Point} (44.79,63.17)| |Z|1021 0| |NPC|117873|
+C Mark of the Sentinax |QID|47139|  |N|Collect 100 (item:147582) <br/><b>These are collected from Sentinax Portals.<br/><b>Sentinax Beacons summon portals which spawn mobs that you can kill for Marks.<br/><b>Setninax Beacons drop from mobs in Broken Shore.<br/><b>Open your map and look for the Sentinax icon. Use your beacons below the ship. (50.56,43.35)| |Z|1021 0| 
+T Mark of the Sentinax |QID|47139| |N|(npc:117873) in {Deliverance Point} (44.79,63.17)| |Z|1021 0| |NPC|117873|
+A Self-Fulfilling Prophecy |QID|46248| |N|(npc:120372) in {Deliverance Point} (44.57,63.39)| |Z|1021 0| |NPC|120372|
+C Self-Fulfilling Prophecy |QID|46248| |N|Complete 12 world quests on Broken Shore|
+T Self-Fulfilling Prophecy |QID|46248| |N|(npc:120372) in {Deliverance Point} (44.57,63.39)| |Z|1021 0| |NPC|120372|
 
 A Seeking Lost Knowledge |QID|47067| |N|(npc:116302) in {Deliverance Point}<br/><br/>You need at least rank 25 artifact knowledge to receive this quest (44.71, 63.29)| |Z|1021 0| |NPC|116302|
 
@@ -574,8 +588,12 @@ R The Fel Hammer |QID|46940| |N|Travel to {The Fel Hammer} (62.04,75.02)| |Z|105
 T Delivering Lost Knowledge |QID|47078| |N|(npc:111736) in {The Fel Hammer} (62.04,75.02)| |Z|1052 3| |NPC|111736|
 A Using Lost Knowledge |QID|46940| |N|(npc:111736) in {The Fel Hammer} (62.04,75.02)| |Z|1052 3| |NPC|111736|
 N (npc:111736) |QID|46940.1| |N|Speak to (npc:111736) to Start a Research Work Order in {The Fel Hammer} (62.04,75.02)| |Z|1052 3| |NPC|111736|
-
 T Using Lost Knowledge |QID|46940| |N|(npc:111736) in {The Fel Hammer} (62.04,75.02)| |Z|1052 3| |NPC|111736|
+
+R Deliverance Point |QID|46744| |N|Travel to {Deliverance Point} (44.74,63.27)| |Z|1021 0| 
+A Greater Power for Greater Threats |QID|46744| |N|(npc:116302) in {Deliverance Point} (44.74,63.27)| |OID|46765| |NPC|116302| |Z|1021 0| 
+C Greater Power for Greater Threats |QID|46744| |N|Unlock all traits for one of your artifacts. You can earn artifact power by completing world quests, dungeons, and certain quests.|  |OID|46765| |Z|1021 0| 
+T Greater Power for Greater Threats |QID|46744| |N|(npc:116302) in {Deliverance Point} (44.74,63.27)| |OID|46765| |NPC|116302| |Z|1021 0| 
 
 A The Broken Shore: Investigating the Legion |QID|46765| |N|(npc:116302) in {Broken Shore} (44.73,63.27)| |Z|1021 0| |NPC|116302|
 N Discover the Hidden Legion Threat |QID|46765.1| |N|Collect (item:147430), This item has a chance to drop off of any mob in the area. (44.61,49.57)| |Z|1021 0|
@@ -591,7 +609,7 @@ A In Dire Need |QID|44821| |N|(npc:115465) in {Dalaran} (22.20,39.04)| |Z|1014 1
 N Hear the Council's Plea |QID|44821.1| |N|Wait for the dialogue to complete in {Dalaran} (22.29,39.68)| |Z|1014 10|
 T In Dire Need |QID|44821| |N|(npc:115465) in {Dalaran} (22.29,39.64)| |Z|1014 10| |NPC|115465|
 
-N Choose Step |N|Click on the link below depending on your spec<br/><b>(choice:1:Vengeance)<br/><b>(choice:2:Havoc)|
+N Choose Step |N|Click on the link below depending on your spec<br/><br/>(choice:1:Vengeance)<br/>(choice:2:Havoc)|
 --Vengeance
 A Vengeance: Seeking Kor'vas |QID|46314| |N|(npc:115466) in {Dalaran}, for Vengeance specilization (22.46,40.53)| |Z|1014 10| |CHOICE|1| |NPC|115466|
 N (npc:116880) |QID|46314.1| |N|Find (npc:116880) patrolling the streets of Dalaran (49.13,26.03)| |Z|1014 10| |CHOICE|1| |NPC|116880|
@@ -630,22 +648,18 @@ A Havoc: The Thieving Apprentice |QID|47043| |N|(npc:115467) in {Dalaran}, this 
 R Azshara |QID|44915| |N|Travel to {Azshara} (25.02,38.53)| |Z|181 0| |CHOICE|2|
 T Havoc: The Thieving Apprentice |QID|47043| |N|(npc:115791) in {Azshara} (25.02,38.53)| |Z|181 0| |CHOICE|2| |NPC|115791|
 A Professionally Good Looking |QID|44915| |N|(npc:115791) in {Azshara} (25.02,38.53)| |Z|181 0| |CHOICE|2| |NPC|115791|
-
 N Acquire the Fanciful Hat |QID|44915.3| |N|Speak to (npc:115970) and collect a (item:142374) (45.17,18.42)| |Z|181 0| |CHOICE|2| |NPC|115970|
 N Acquire the Well-Tailored Robes |QID|44915.2| |N|Speak to (npc:115946) and collect a (item:142372) (62.45,16.05)| |Z|181 0| |CHOICE|2| |NPC|115946|
 N Acquire the Magnificent Mantle |QID|44915.1| |N|Speak to (npc:115903) and collect a (item:142365) (80.84,32.05)| |Z|181 0| |CHOICE|2| |NPC|115903|
-
 T Professionally Good Looking |QID|44915| |N|(npc:115791) in {Azshara} (25.02,38.53)| |Z|181 0| |CHOICE|2| |NPC|115791|
 A Order of Incantations |QID|44920| |N|(npc:115791) in {Azshara} (25.02,38.53)| |Z|181 0| |CHOICE|2| |NPC|115791|
 N Solve the barrier puzzle |QID|44920.2| |N|Click the gems in this exact order, not following the proper order will result in instant death.<br/><b>Arcane-Imbued Gem<br/><b>Frost-Imbued Gem<br/><b>Fire-Imbued Gem<br/><b>Shadow-Imbued Gem (25.15,38.49)| |Z|181 0| |CHOICE|2|
-
 T Order of Incantations |QID|44920| |N|Field turnin (25.15,38.49)| |Z|181 0| |CHOICE|2|
 A The Archmage Accosted |QID|44924| |N|Auto quest (25.15,38.49)| |Z|181 0| |CHOICE|2|
 N Confront Archmage Xylem |QID|44924.1| |N|Kill (npc:115860) and confront Archmage Xylem  (25.21,38.03)| |Z|181 0| |CHOICE|2| |NPC|115860|
 N Follow through the portal |QID|44924.2| |N|Click Xylem's Portal (25.20,37.97)| |Z|181 0| |CHOICE|2|
-
 T The Archmage Accosted |QID|44924| |N|(npc:116048) in {Azshara} (25.22,37.90)| |Z|181 0| |CHOICE|2| |NPC|116048|
-A A Portal Away |QID|46177| |N|(npc:116048) in {Azshara} (25.22,37.90)| |Z|181 0| |NPC|116048|
+A A Portal Away |QID|46177| |N|(npc:116048) in {Azshara} (25.22,37.90)| |Z|181 0| |CHOICE|2| |NPC|116048|
 
 R Dalaran |TID|46177| |N|Travel to {Dalaran} (28.61,49.90)| |Z|1014 10| |CHOICE|2|
 T A Portal Away |QID|46177| |N|(npc:105081) in {Dalaran} (28.61,49.90)| |Z|1014 10| |CHOICE|2| |NPC|105081|
@@ -653,25 +667,8 @@ A A Gift From the Six |QID|45865| |N|(npc:90418) in {Dalaran} (28.43,48.91)| |Z|
 N Receive the Council's gift |QID|45865.1| |N|Stand in the circle and use the special action button that appears on-screen. (30.42,48.91)| |Z|1014 10| |CHOICE|2|
 T A Gift From the Six |QID|45865| |N|(npc:90418) in {Dalaran} (28.44,48.91)| |Z|1014 10| |CHOICE|2| |NPC|90418|
 
-R The Fel Hammer |QID|46333| |N|Travel to {The Fel Hammer} (59.01,71.67)| |Z|1052 2|
-A Livin' on the Ledge |QID|46333| |N|Auto quest, you will receive this quest automatically  (59.01,71.67)| |Z|1052 2|
-T Livin' on the Ledge |QID|46333| |N|(npc:108784) in {The Fel Hammer} (59.98,48.91)| |Z|1052 2| |NPC|108784|
-A To Fel and Back |QID|46334| |N|(npc:108784) in {The Fel Hammer} (59.98,48.91)| |Z|1052 2| |NPC|108784|
-N (npc:116490) |QID|46334.1| |N|Speak to (npc:116490) (57.73,18.11)| |Z|1052 2| |NPC|116490|
-
-N (npc:119781) |SID|35778|1| |QID|46334| |N|Speak to (npc:119781) in {Felwing Ledge} (42.94,16.77)| |Z|1152 0| |NPC|119781|
-K (npc:119916) |SID|35779|2| |QID|46334| |N|Kill (npc:119916), Move out of the corrosive ground. You will only need to damage Lixahl to around 60%. (43.08,19.10)| |Z|1152 0| |NPC|119916|
-N Track Lixahl |SID|35780|3| |QID|46334| |N|Follow the path and track Lixahl (44.51,21.76) (44.70,28.32) (44.30,34.57) (42.60,39.13)| |Z|1152 0| |NPC|119916|
-K (npc:119916) |SID|35782|4| |QID|46334| |N|Attempt to Subdue (npc:119916) once more, Move out of the corrosive ground. You will only need to damage Lixahl to around 30%. (42.60,39.13)| |Z|1152 0| |NPC|119916| 
-N Continue Tracking Lixahl |SID|35783|5| |QID|46334| |N|Follow the path and track Lixahl (40.67,39.42) (38.63,46.63) (41.69,56.13)| |Z|1152 0| |NPC|119916|
-N Glide to Lixahl |SID|36466|6| |QID|46334| |N|Double Jump and glide to Lixahl. (44.35,62.72)| |Z|1152 0| |NPC|119916
-K (npc:119916) |SID|35784|7| |QID|46334| |N|Interrupt Piercing Screech whenever possible, Move out of the corrosive ground. (52.04,80.55)| |Z|1152 0| |NPC|119916|
-N (npc:119916) |SID|35811|8| |QID|46334| |N|Mount (npc:119916) (51.52,80.08)| |Z|1152 0| |NPC|119916| |V|
-N (npc:119844) |QID|46334.3| |N|Speak to (npc:119844) to Return to {The Fel Hammer} (48.60,17.08)| |Z|1152 0| |NPC|119844|
-T To Fel and Back |QID|46334| |N|(npc:108784) in {The Fel Hammer} (60.03,48.87)| |Z|1052 2| |NPC|108784|
-
 --
-A Defending Broken Isles |QID|46247| |N|(npc:116576) in {The Fel Hammer}, this quest is available (44.54,63.53)| |Z|1052 2| |NPC|116576|
+A Defending Broken Isles |QID|46247| |N|(npc:116576) in {Deliverance Point} (44.54,63.52)| |Z|1021 0| |NPC|116576|
 C Defending Broken Isles |QID|46247.1| |N|Defeat a Legion Assault in the Broken Isles, check the Broken Isle map for Legion Assault and complete the World quest for it| |Z|1021 0|
 T Defending Broken Isles |QID|46247| |N|(npc:116576) in {Deliverance Point} (44.54,63.52)| |Z|1021 0| |NPC|116576|
 A Champions of Legionfall |QID|47137| |N|(npc:116576) in {Deliverance Point} (44.54,63.52)| |Z|1021 0| |NPC|116576|
@@ -716,7 +713,7 @@ T War'zuul the Provoker |QID|45798| |N|(npc:117709) in {The Fel Hammer} (52.14,2
 T Power Outage |QID|46725| |N|(npc:117709) in {The Fel Hammer} (52.14,21.15)| |Z|1052 2| |NPC|108311|
 A Return of the Slayer |QID|46266| |N|(npc:117709) in {The Fel Hammer} (52.14,21.15)| |Z|1052 2| |NPC|108311|
 
-T Return of the Slayer |QID|  | |N|(npc:108311) in {The Fel Hammer} (59.33,57.64)| |Z|1052 2| |NPC|108311|
+T Return of the Slayer |QID|46266| |N|(npc:108311) in {The Fel Hammer} (59.33,57.64)| |Z|1052 2| |NPC|108311|
 A Champion: Lady S'theno |QID|45391| |N|(npc:117481) in {The Fel Hammer} (61.97,54.00)| |Z|1052 2| |NPC|117481| |E|
 
 A Further Advancement |QID|46780| |N|(npc:103732) in {The Fel Hammer} (53.51,46.18)| |Z|1052 3| |NPC|103732|
@@ -725,6 +722,27 @@ T Further Advancement |QID|46780| |N|(npc:103732) in {The Fel Hammer} (53.51,46.
 
 R Deliverance Point |TID|47137| |N|Travel {Deliverance Point} (44.53,63.52)| |Z|1021 0|
 T Champions of Legionfall |QID|47137| |N|(npc:116576) in {Deliverance Point} (44.53,63.52)| |Z|1021 0| |NPC|116576|
+
+A Shard Times |QID|46251| |N|(npc:116302) in {Broken Shore} (44.74,63.27)| |Z|1021 0| |NPC|116302|
+C Shard Times |QID|46251.1| |N|Collect 2500 (cur:1226). These can be obtained by looting rares, treasures, and completing world quests. (44.74,63.27)| |Z|1021 0|
+T Shard Times |QID|46251| |N|(npc:116576) in {Broken Shore} (44.54,63.52)| |Z|1021 0| |NPC|116576|
+
+--R The Fel Hammer |QID|46333| |N|Travel to {The Fel Hammer} (59.01,71.67)| |Z|1052 2|
+--A Livin' on the Ledge |QID|46333| |N|Auto quest, you will receive this quest automatically  (59.01,71.67)| |Z|1052 2|
+--T Livin' on the Ledge |QID|46333| |N|(npc:108784) in {The Fel Hammer} (59.98,48.91)| |Z|1052 2| |NPC|108784|
+--A To Fel and Back |QID|46334| |N|(npc:108784) in {The Fel Hammer} (59.98,48.91)| |Z|1052 2| |NPC|108784|
+--N (npc:116490) |QID|46334.1| |N|Speak to (npc:116490) (57.73,18.11)| |Z|1052 2| |NPC|116490|
+
+--N (npc:119781) |SID|35778|1| |QID|46334| |N|Speak to (npc:119781) in {Felwing Ledge} (42.94,16.77)| |Z|1152 0| |NPC|119781|
+--K (npc:119916) |SID|35779|2| |QID|46334| |N|Kill (npc:119916), Move out of the corrosive ground. You will only need to damage Lixahl to around 60%. (43.08,19.10)| |Z|1152 0| |NPC|119916|
+--N Track Lixahl |SID|35780|3| |QID|46334| |N|Follow the path and track Lixahl (44.51,21.76) (44.70,28.32) (44.30,34.57) (42.60,39.13)| |Z|1152 0| |NPC|119916|
+--K (npc:119916) |SID|35782|4| |QID|46334| |N|Attempt to Subdue (npc:119916) once more, Move out of the corrosive ground. You will only need to damage Lixahl to around 30%. (42.60,39.13)| |Z|1152 0| |NPC|119916| 
+--N Continue Tracking Lixahl |SID|35783|5| |QID|46334| |N|Follow the path and track Lixahl (40.67,39.42) (38.63,46.63) (41.69,56.13)| |Z|1152 0| |NPC|119916|
+--N Glide to Lixahl |SID|36466|6| |QID|46334| |N|Double Jump and glide to Lixahl. (44.35,62.72)| |Z|1152 0| |NPC|119916
+--K (npc:119916) |SID|35784|7| |QID|46334| |N|Interrupt Piercing Screech whenever possible, Move out of the corrosive ground. (52.04,80.55)| |Z|1152 0| |NPC|119916|
+--N (npc:119916) |SID|35811|8| |QID|46334| |N|Mount (npc:119916) (51.52,80.08)| |Z|1152 0| |NPC|119916| |V|
+--N (npc:119844) |QID|46334.3| |N|Speak to (npc:119844) to Return to {The Fel Hammer} (48.60,17.08)| |Z|1152 0| |NPC|119844|
+--T To Fel and Back |QID|46334| |N|(npc:108784) in {The Fel Hammer} (60.03,48.87)| |Z|1052 2| |NPC|108784|
 
 A Champion Armaments |QID|44223| |N|(npc:110433), This quest will only be available if you chose to get the "Fel Armaments" class hall upgrade. (60.10,43.38)| |Z|1052 2| |NPC|110433|
 C Champion Armaments |QID|44223| |N|Speak to (npc:110433) and place a workorder for Champion Armaments in {The Fel Hammer} (60.10,43.38)| |Z|1052 2| |NPC|110433|

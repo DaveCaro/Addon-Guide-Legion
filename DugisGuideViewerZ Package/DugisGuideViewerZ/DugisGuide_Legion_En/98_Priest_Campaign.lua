@@ -470,18 +470,18 @@ C Destiny Unfulfilled |QID|44497| |N|Witness True Betrayal in Shadowmoon Valley 
 R The Hall of Balance |TID|44496| |N|Travel to {The Hall of Balance} (45.32,30.18)| |Z|1040 1|
 T Destiny Unfulfilled |QID|44496| |N|(npc:113857) in {The Hall of Balance} (49.81,26.41)| |Z|1040 1| |NPC|113857|
 
-R Krasus' Landing |N|Travel to Krasus' Landing} (69.40, 43.99)| |Z|1014 10|
+R Krasus' Landing |QID|46734| |N|Travel to {Krasus' Landing} (69.40, 43.99)| |Z|1014 10|
 A Armies of Legionfall |QID|46730| |N|This quest is available after you unlock World Quests by completing (qid:43341)| |Z|1014 10| |NPC|120215| |O|
 T Armies of Legionfall |QID|46730| |N|(npc:120215), in {Krasus' Landing} (69.37, 43.88)| |Z|1014 10| |NPC|120215| |O|
 A Assault on Broken Shore |QID|46734| |N|(npc:120215) in {Krasus' Landing} (69.40, 43.99)| |Z|1014 10| |NPC|120215|
 N (npc:120215) |QID|46734.1| |N|Speak to (npc:120215) in {Krasus' Landing} (69.40, 43.99)| |Z|1014 10| |NPC|120215|
-N (npc:120752) |SID|35327|1| |N|Mount the (npc:120752) in {Krasus' Landing}| |NPC|120752| |V|
-C Secure the Beach |SID|35327|2| |N|Kill the demons on the beach until you reach 100% to secure the beach (50.86, 69.96)| |Z|1149 0|
-C Defeat Lord Kalgorath |SID|35329|3| |N|Defeat (npc:116291) in {Broken Shore} (44.30, 73.90) (42.04, 72.23) (41.29, 65.12) (41.30, 65.12)| |Z|1149 0| |NPC|116291|
-C Legion portals closed |SID|35495|4| |N|Follow the waypoints and defeat the forces to close the portals in {Broken Shore}(42.95, 58.73)  (46.98, 58.29) (52.15, 52.38)(54.57, 47.99) (57.09, 52.15) (59.09, 51.61) (59.09, 51.61)| |Z|1149 0|
-K (npc:118551) |SID|35497|5| |N|Kill (npc:118551) in {Broken Shore} (55.15, 51.75)| |Z|1149 0| |NPC|118551|
-C Use Gateway |SID|35551|6| |N|Take the Demonic Gateway to the base of Mephistroth's command ship (53.41, 50.42)| |Z|1149 0|
-C Plant Arcane Bombs |SID|36178|7| |N|Plant Arcane Bombs in the command ship in each waypoints, look for the yellow dots in the minimap, you will need to use the portal after planting the first 2| |Z|1149 0|
+N (npc:120752) |SID|35327|1| |N|Mount the (npc:120752) in {Krasus' Landing}| |NPC|120752| |V| |QID|46734| 
+C Secure the Beach |SID|35327|2| |N|Kill the demons on the beach until you reach 100% to secure the beach (50.86, 69.96)| |Z|1149 0| |QID|46734| 
+C Defeat Lord Kalgorath |SID|35329|3| |N|Defeat (npc:116291) in {Broken Shore} (44.30, 73.90) (42.04, 72.23) (41.29, 65.12) (41.30, 65.12)| |Z|1149 0| |NPC|116291| |QID|46734| 
+C Legion portals closed |SID|35495|4| |N|Follow the waypoints and defeat the forces to close the portals in {Broken Shore}(42.95, 58.73)  (46.98, 58.29) (52.15, 52.38)(54.57, 47.99) (57.09, 52.15) (59.09, 51.61) (59.09, 51.61)| |Z|1149 0| |QID|46734| 
+K (npc:118551) |SID|35497|5| |N|Kill (npc:118551) in {Broken Shore} (55.15, 51.75)| |Z|1149 0| |NPC|118551| |QID|46734| 
+C Use Gateway |SID|35551|6| |N|Take the Demonic Gateway to the base of Mephistroth's command ship (53.41, 50.42)| |Z|1149 0| |QID|46734| 
+C Plant Arcane Bombs |SID|36178|7| |N|Plant Arcane Bombs in the command ship in each waypoints, look for the yellow dots in the minimap, you will need to use the portal after planting the first 2| |Z|1149 0| |QID|46734| 
 C Defeat Mephistroth |SID|36179|8| |N|Kill (npc:120746) in {Broken Shore} (50.03, 45.38)| |Z|1149 0| |NPC|120746| |QID|46734.2|
 
 T Assault on Broken Shore |QID|46734| |N|(npc:116302) in {Deliverance Point} (44.71, 63.29)| |Z|1021 0| |NPC|116302|
@@ -497,45 +497,41 @@ R Vengeance Point |QID|46845| |N|Travel to {Vengeance Point} (50.63, 20.77)| |Z|
 N Scout Dreadstalker Point |QID|46845.1| |N|Scout Dreadstalker Point (50.66, 21.41)| |Z|1021 0|
 C Vengeance Point |QID|46845| |N|Kill 4 (npc:120969) and 5 (npc:120748) in {Vengeance Point} (50.63, 20.77)| |Z|1021 0| |NPC|120969, 120748|
 T Vengeance Point |QID|46845| |N|(npc:111323) in {Vengeance Point} (49.69, 21.03)| |Z|1021 0| |NPC|111323|
+C Legionfall Supplies |QID|46286| |N|Complete World Quests or slay Rare Elites on the Broken Shore to earn 100 (cur:1342)|
+T Legionfall Supplies |QID|46286| |N|(npc:120183) in {Deliverance Point} (44.55,63.15)| |Z|1021 0| |NPC|120183|
+A Begin Construction |QID|46245| |N|(npc:120183) in {Deliverance Point} (44.54,63.15)| |Z|1021 0| |NPC|120183|
+C Begin Construction |QID|46245.1| |N|Use the table and Donate Legionfall War Supplies to the construction of the Mage Tower, Nether Disruptor, or Command Center in {Deliverance Point} (44.74, 63.13)| |Z|1021 0|
+T Begin Construction |QID|46245| |N|(npc:120183) in {Deliverance Point} (44.54,63.15)| |Z|1021 0| |NPC|120183|
+A Defending Broken Isles |QID|46247| |N|(npc:116576) in {The Fel Hammer}, this quest is available (44.54,63.53)| |Z|1052 2| |NPC|116576|
+C Defending Broken Isles |QID|46247.1| |N|Defeat a Legion Assault in the Broken Isles, check the Broken Isle map for Legion Assault and complete the World quest for it| |Z|1021 0|
+T Defending Broken Isles |QID|46247| |N|(npc:116576) in {Deliverance Point} (44.54,63.52)| |Z|1021 0| |NPC|116576|
+A Mark of the Sentinax |QID|47139| |N|(npc:117873) in {Deliverance Point} (44.79,63.17)| |Z|1021 0| |NPC|117873|
+C Mark of the Sentinax |QID|47139|  |N|Collect 100 (item:147582) <br/><b>These are collected from Sentinax Portals.<br/><b>Sentinax Beacons summon portals which spawn mobs that you can kill for Marks.<br/><b>Setninax Beacons drop from mobs in Broken Shore.<br/><b>Open your map and look for the Sentinax icon. Use your beacons below the ship. (50.56,43.35)| |Z|1021 0| 
+T Mark of the Sentinax |QID|47139| |N|(npc:117873) in {Deliverance Point} (44.79,63.17)| |Z|1021 0| |NPC|117873|
+A Self-Fulfilling Prophecy |QID|46248| |N|(npc:120372) in {Deliverance Point} (44.57,63.39)| |Z|1021 0| |NPC|120372|
+C Self-Fulfilling Prophecy |QID|46248| |N|Complete 12 world quests on Broken Shore|
+T Self-Fulfilling Prophecy |QID|46248| |N|(npc:120372) in {Deliverance Point} (44.57,63.39)| |Z|1021 0| |NPC|120372|
 
+--
 A Seeking Lost Knowledge |QID|47067| |N|(npc:116302) in {Deliverance Point}<br/><br/>You need at least rank 25 artifact knowledge (44.71, 63.29)| |Z|1021 0| |NPC|116302|
-
 N Recover Knowledge from Moonlight Ascent |QID|47067.3| |N|Click Remnant of Lost Knowledge, stand still and wait for the channeling to complete. (71.22,41.78) (75.62,36.27)| |Z|1021 0|
 N Recover Knowledge from Moonlight Ascent |QID|47067.2| |N|Click Remnant of Lost Knowledge, stand still and wait for the channeling to complete. (72.58,40.20)| |Z|1021 0|
 N Recover Knowledge from Moonlight Ascent |QID|47067.1| |N|Click Remnant of Lost Knowledge, stand still and wait for the channeling to complete. (76.45,39.81) (82.57,45.09)| |Z|1021 0|
-
 T Seeking Lost Knowledge |QID|47067| |N|(npc:116302) in {Deliverance Point} (44.71, 63.29)| |Z|1021 0| |NPC|116302|
 A Delivering Lost Knowledge |QID|47077| |N|(npc:116302) in {Deliverance Point} (44.71, 63.29)| |Z|1021 0| |NPC|116302|
-A The Speaker Awaits |QID|45788| |N|(npc:118536) in {Deliverance Point} (44.40,63.66)| |Z|1021 0| |NPC|118536|
 
 T Delivering Lost Knowledge |QID|47077| |N|(npc:111738) in {Netherlight Temple} (59.83,28.11)| |Z|1040 1| |NPC|111738|
 A Using Lost Knowledge |QID|46940| |N|(npc:111738) in {Netherlight Temple} (59.83,28.11)| |Z|1040 1| |NPC|111738|
 C Using Lost Knowledge |QID|46940| |N|Speak to (npc:111738) and start a Research Work Order in {Netherlight Temple} (59.83,28.11)| |Z|1040 1| |NPC|111738|
 T Using Lost Knowledge |QID|46940| |N|(npc:111738) in {Netherlight Temple} (59.83,28.11)| |Z|1040 1| |NPC|111738|
-T The Speaker Awaits |QID|45788| |N|(npc:102709) in {Netherlight Temple}  (47.94,21.89)| |Z|1040 1| |NPC|102709|
-A The Sunken Vault |QID|45789| |N|(npc:102709) in {Netherlight Temple}  (47.94,21.89)| |Z|1040 1| |NPC|102709| 
 
-R Azsuna |QID|45789| |N|Travel to {Azsuna} (44.26,51.24)| |Z|1015 0| 
-N (npc:117694) |QID|45789.1| |N|Speak to (npc:117694) and take the submarine to begin the scenario (44.26,51.24)| |Z|1015 0| |NPC|117694|
-N Locate the lost Titan vault |SID|0|1| |N|Locate the lost Titan vault near the Maelstrom  (47.21,50.67)| |Z|1142 1|
-N Enter the Titan vault |SID|0|2| |N|Enter the Titan vault  (47.21,50.67)| |Z|1142 1|
-N Activate the console |SID|35058|3| |N|Click Control Console (72.89,70.94)| |Z|1142 1|
-N Listen to the custodian's story |SID|0|4| |N|This will take some time to complete. (71.89,65.47)| |Z|1142 1|
- 
-K (npc:117856) |SID|35344|5| |N|Kill (npc:117856) in {Lightless Cavern} (68.65,62.96)| |Z|1142 1| |NPC|117856|
-K (npc:34914) |SID|35061|5| |N|Kill (npc:34914) in {Lightless Cavern} (68.65,62.96)| |Z|1142 1| |NPC|34914|
-K (npc:117538) |SID|35343|5| |N|Kill (npc:117538) in {Lightless Cavern} (68.65,62.96)| |Z|1142 1| |NPC|117538|
-K (npc:117534) |SID|35342|5| |N|Kill (npc:117534) in {Lightless Cavern} (68.65,62.96)| |Z|1142 1| |NPC|117534|
-
-R Dalaran |QID|45789| |N|Speak to (npc:117694) to return to {Dalaran} (69.20,62.12)| |Z|1142 1| |NPC|117694|
-T The Sunken Vault |QID|45789| |N|(npc:102709) in {Netherlight Temple} (49.77,20.64)| |Z|1040 1| |NPC|102709|
+R Deliverance Point |QID|46744| |N|Travel to {Deliverance Point} (44.74,63.27)| |Z|1021 0| 
+A Greater Power for Greater Threats |QID|46744| |N|(npc:116302) in {Deliverance Point} (44.74,63.27)| |OID|46765| |NPC|116302| |Z|1021 0| 
+C Greater Power for Greater Threats |QID|46744| |N|Unlock all traits for one of your artifacts. You can earn artifact power by completing world quests, dungeons, and certain quests.|  |OID|46765| |Z|1021 0| 
+T Greater Power for Greater Threats |QID|46744| |N|(npc:116302) in {Deliverance Point} (44.74,63.27)| |OID|46765| |NPC|116302| |Z|1021 0| 
 A The Broken Shore: Investigating the Legion |QID|46765| |N|(npc:116302) in {Deliverance Point} (44.73,63.27)| |Z|1021 0| |NPC|116302|
-A Defending Broken Isles |QID|46247| |N|(npc:116576) in {Deliverance Point} (44.54,63.53)| |Z|1021 0| |NPC|116576|
-
-A The Broken Shore: Investigating the Legion |QID|46765| |N|(npc:116302) in {Broken Shore} (44.73,63.26)| |Z|1021 0| |NPC|116302|
 N Discover the Hidden Legion Threat |QID|46765.1| |N|Collect (item:147430), This item has a chance to drop off of any mob in the area. (44.61,49.57)| |Z|1021 0|
 T The Broken Shore: Investigating the Legion |QID|46765| |N|(npc:116302) in {Broken Shore} (44.73,63.27)| |Z|1021 0|
-
 A The Council's Call |QID|47000| |N|(npc:116302) in {Deliverance Point} (44.73,63.27)| |Z|1021 0| |NPC|116302|
 
 R Dalaran |QID|44782| |N|Travel to {Dalaran} (28.50,48.33)| |Z|1014 10| 
@@ -546,6 +542,179 @@ T Away From Prying Eyes |QID|44782| |N|(npc:115465) in {Dalaran} (22.20,39.04)| 
 A In Dire Need |QID|44821| |N|(npc:115465) in {Dalaran} (22.20,39.04)| |Z|1014 10| |NPC|115465|
 N Hear the Council's Plea |QID|44821.1| |N|Wait for the dialogue to complete in {Dalaran} (22.29,39.68)| |Z|1014 10|
 T In Dire Need |QID|44821| |N|(npc:115465) in {Dalaran} (22.29,39.64)| |Z|1014 10| |NPC|115465|
+
+N Choose Spec |N|Click on the link below depending on your spec, You must have 35 artifact traits unlocked to start the questline for a specialization. <br/><br/>(choice:1:Shadow)<br/>(choice:2:Holy)<br/>(choice:3:Discipline)|
+--Shadow
+A Shadow: The Twisted Twin |QID|47042| |N|(npc:90463) in {Dalaran} (28.61,47.78), You must have 35 artifact traits unlocked with this specialization to start this questline.| |Z|1014 10| NPC|90463| |CHOICE|1|
+T Shadow: The Twisted Twin |QID|47042| |N|(npc:116175) in {Dalaran} (49.36,39.84)| |Z|1014 10| |NPC|116175| |CHOICE|1|
+A Message from the Shadows |QID|45185| |N|(npc:116175) in {Dalaran} (49.37,39.77)| |Z|1014 10| |NPC|116175| |CHOICE|1|
+C Message from the Shadows |QID|45185.1| |N|Go up the stairs and click A Mysterious Note {Dalaran} (50.67,40.33) (47.02,39.04)| |Z|1014 10| |CHOICE|1|
+T Message from the Shadows |QID|45185| |N|(npc:116175) downstairs in {Dalaran} (49.37,39.77)| |Z|1014 10| |NPC|116175| |CHOICE|1|
+A Secrets in the Underbelly |QID|45187| |N|(npc:116175) in {Dalaran} (49.37,39.77)| |Z|1014 10| |NPC|116175| |CHOICE|1|
+C Secrets in the Underbelly  |QID|45187.1| |N|Speak to (npc:116323) and kill (npc:116322) and collect (item:143496) to search for clues in {The Underbelly} (60.08,45.54)| |Z|1014 11| |NPC|116323, 116322| |CHOICE|1|
+T Secrets in the Underbelly |QID|45187| |N|(npc:116175), next to you| |NPC|116175| |CHOICE|1|
+A The Wisdom of the Council |QID|45188| |N|(npc:116175), next to you| |NPC|116175| |CHOICE|1|
+T The Wisdom of the Council |QID|45188| |N|(npc:90463) in {Dalaran} (28.62,47.78)| |Z|1014 10| |CHOICE|1| |NPC|90463|
+A Where it's Thinnest |QID|45190| |N|(npc:90463) in {Dalaran} (28.62,47.78)| |Z|1014 10| |CHOICE|1| |NPC|90463|
+
+R Broken Shore |QID|45192| |N|Travel to {Broken Shore} (56.45,27.35)| |Z|1021 0| |CHOICE|1|
+T Where it's Thinnest |QID|45190| |N|(npc:116175) {Broken Shore} (56.45,27.35)| |Z|1021 0| |CHOICE|1| |NPC|116175|
+A Runes of Rending |QID|45192| |N|(npc:116175) {Broken Shore} (56.45,27.35)| |Z|1021 0| |CHOICE|1| |NPC|116175|
+C Bypass the Wards |QID|45192.1| |N|Step onto the blue rune to start then follow this pattern:<br/><br/>Up, Left, Right, Left, Right, Right, Down, Right, Up, Up, Left,<br/>Up, Up, Left, Left, Right, Up, Left, Left, Up, Right,<br/>Right, Up, Left, Up, Left, Right, Up {Broken Shore} (57.99,27.18)| |Z|1021 0| |CHOICE|1|
+N Defeat Raest's Minions |QID|45192.2| |N|Kill the enemies in the area and (npc:116393) {Broken Shore} (59.72,27.33)| |Z|1021 0| |CHOICE|1| |NPC|116393|
+T Runes of Rending |QID|45192| |N|(npc:116308) in {Broken Shore} (59.81,27.45)| |Z|1021 0| |CHOICE|1| |NPC|116308|
+A One Step Behind |QID|45193| |N|(npc:116308) in {Broken Shore} (59.81,27.45)| |Z|1021 0| |CHOICE|1| |NPC|116308|
+
+R Dalaran |TID|45193|  |N|Travel to {Dalaran} (37.57,50.17)| |Z|1021 0| |CHOICE|1|
+T One Step Behind |QID|45193| |N|(npc:90417) {Dalaran} (37.57,50.17) (28.56,48.35)| |Z|1021 0| |CHOICE|1|
+A A Gift From the Six |QID|45866| |N|(npc:90418) in {Dalaran} (28.46,48.91)| |Z|1021 0| |CHOICE|1| |NPC|90418|
+C A Gift From the Six |QID|45866| |N|Stand in the circle and use the special action button that appears on-screen. (30.42,48.91)| |Z|1014 10| |CHOICE|1|
+T A Gift From the Six |QID|45866| |N|(npc:90418) in {Dalaran} (28.46,48.91)| |Z|1021 0| |CHOICE|1| |NPC|90418|
+
+--Holy
+A Holy: The Bradensbrook Investigation |QID|46078| |N|(npc:90418) in {Dalaran}, You must have 35 artifact traits unlocked with this specialization to start this questline. (28.43,48.88)| |Z|1018 0| |NPC|90418| |CHOICE|2|
+
+R Val'sharah |QID|46079| |N|Travel to {Val'sharah} (42.24,58.97)| |Z|1018 0| |CHOICE|2|
+T Holy: The Bradensbrook Investigation |QID|46078| |N|(npc:118752) in {Val'sharah} (42.24,58.97)| |Z|1018 0| |NPC|118752| |CHOICE|2|
+A Aid on the Front Lines |QID|46079| |N|(npc:118752) in {Val'sharah} (42.24,58.97)| |Z|1018 0| |NPC|118752| |CHOICE|2|
+C Aid on the Front Lines |QID|46079| |N|Heal (npc:118809) scattered around the field {Val'sharah} (42.29,61.28)| |Z|1018 0| |NPC|118809| |CHOICE|2|
+T Aid on the Front Lines |QID|46079| |N|(npc:118752) in {Val'sharah} (42.28,58.96)| |Z|1018 0| |NPC|118752| |CHOICE|2|
+A Shadowsong's Return |QID|46082| |N|(npc:118752) in {Val'sharah} (42.28,58.96)| |Z|1018 0| |NPC|118752| |CHOICE|2|
+T Shadowsong's Return |QID|46082| |N|(npc:118947) in {Val'sharah} (39.11,58.14)| |Z|1018 0| |NPC|118947| |CHOICE|2|
+A Cutting off the Heads |QID|46106| |N|(npc:118947) in {Val'sharah} (39.11,58.14)| |Z|1018 0| |NPC|118947| |CHOICE|2|
+A Quieting the Spirits |QID|46080| |N|(npc:118947) in {Val'sharah} (39.11,58.14)| |Z|1018 0| |NPC|118947| |CHOICE|2|
+K (npc:118950) |QID|46106.2| |N|Kill (npc:118950) in {Val'sharah} (37.09,58.46)| |Z|1018 0| |NPC|118950| |CHOICE|2|
+K (npc:118951) |QID|46106.3| |N|Kill (npc:118951) in {Val'sharah} (39.22,62.13)| |Z|1018 0| |NPC|118951| |CHOICE|2|
+K (npc:118949) |QID|46106.1| |N|Kill (npc:118949) in {Val'sharah} (36.80,61.33)| |Z|1018 0| |NPC|118949| |CHOICE|2|
+C Quieting the Spirits |QID|46080| |N|Kill any 12 Risen Attackers in {Val'sharah}| |Z|1018 0| |POI| |NPC|118759, 118758, 118754, 118757, 118756| |CHOICE|2|
+T Cutting off the Heads |QID|46106| |N|(npc:118954), next to you| |NPC|118954| |CHOICE|2|
+T Quieting the Spirits |QID|46080| |N|(npc:118954), next to you| |NPC|118954| |CHOICE|2|
+A Source of the Corruption |QID|46107| |N|(npc:118954), next to you| |NPC|118954| |CHOICE|2|
+N Go to Heroes' Rest |QID|46107.1| |N|Follow the path up and Go to Heroes' Rest  (38.63,57.60) (37.83,55.32)| |Z|1018 0| |CHOICE|2|
+N (npc:120156) |QID|46107.2| |N|Release 3 (npc:120156), once clicked these will either be Freed and disappear or get angry and attack you.  (38.42,53.02)| |Z|1018 0| |NPC|120156| |CHOICE|2|
+K (npc:118980) |QID|46107.3| |N|Kill (npc:118980) in {Val'shara} (38.92,51.34)| |Z|1018 0| |NPC|118980| |CHOICE|2|
+T Source of the Corruption |QID|46107| |N|(npc:118954), next to you| |NPC|118954| |CHOICE|2|
+A The Matter Resolved... For Now... |QID|46200| |N|(npc:118954), next to you| |NPC|118954| |CHOICE|2|
+
+R Dalaran |QID|45864| |N|Travel to {Dalaran}  (37.63,50.13)| |Z|1014 10| |CHOICE|2|
+T The Matter Resolved... For Now... |QID|46200| |N|(npc:90418) in {Dalaran} (28.61,48.90)| |Z|1014 10| |NPC|90418| |CHOICE|2|
+A A Gift From the Six |QID|45864| |N|(npc:90418) in {Dalaran} (28.61,48.90)| |Z|1014 10| |NPC|90418| |CHOICE|2|
+C A Gift From the Six |QID|45864| |N|Stand in the circle and use the special action button that appears on-screen (30.43,48.95)| |Z|1014 10| |CHOICE|2|
+T A Gift From the Six |QID|45864| |N|(npc:90418) in {Dalaran} (28.61,48.90)| |Z|1014 10| |NPC|90418| |CHOICE|2|
+
+--Discipline
+A Discipline: Rumblings Near Feltotem |QID|47020| |N|(npc:90418) in {Dalaran} (22.31,39.64)| |Z|1014 10| |NPC|90418| |CHOICE|3|
+
+R Highmountain |QID|45564| |N|Travel to {Highmountain} (40.87,11.50)| |Z|1024 0| |CHOICE|3|
+T Discipline: Rumblings Near Feltotem |QID|47020| |N|(npc:117225) in {Highmountain} (35.74,23.98)| |Z|1024 0| |NPC|117225| |CHOICE|3|
+A The Burning Birds |QID|45564| |N|(npc:117225) in {Highmountain} (35.74,23.98)| |Z|1024 0| |NPC|117225| |CHOICE|3|
+N (item:143778) |QID|143778 |QID|45564.1| |N|Collect 5 (item:143778) in {Highmountain} (35.74,23.98)| |Z|1024 0| |CHOICE|3|
+N (npc:117249) |QID|45564.2| |N|Meet (npc:117249) near Feltotem (31.31,25.14)| |Z|1024 0| |NPC|117249| |CHOICE|3|
+T The Burning Birds |QID|45564| |N|(npc:117249) in {Highmountain} (31.31,25.14)| |Z|1024 0| |NPC|117249| |CHOICE|3|
+A The Tainted Marsh |QID|45726| |N|(npc:117249) in {Highmountain} (31.31,25.14)| |Z|1024 0| |NPC|117249| |CHOICE|3|
+N (npc:117249) |QID|45726.1| |N|Speak to (npc:117249) to get a ride to the Marshlands (31.31,25.14)| |Z|1014 10| |NPC|117249| |V| |CHOICE|3|
+K (npc:102038) |QID|45726.2| |N|Kill (npc:102038) and use (item:143863) on their corpses (27.93,31.94)| |Z|1014 10| |NPC|102038| |U|143863| |CHOICE|3|
+T The Tainted Marsh |QID|45726| |N|(npc:117249) in {Highmountain} (27.78,27.82) (31.30,25.13)| |Z|1024 0| |NPC|117249| |CHOICE|3|
+A Village of the Corruptors |QID|45575| |N|(npc:117249) in {Highmountain} (31.30,25.13)| |Z|1024 0| |NPC|117249| |CHOICE|3|
+K (npc:117353) |QID|45575.1| |N|Kill 4 (npc:117353) inside the huts (30.09,28.49)| |Z|1024 0| |NPC|117353| |CHOICE|3|
+T Village of the Corruptors |QID|45575| |N|(npc:117292), next to you (30.06,28.37)| |Z|1024 0| |NPC|117292| |CHOICE|3|
+A The Feltotem Menace |QID|45587| |N|(npc:117292), next to you (30.06,28.37)| |Z|1024 0| |NPC|117292| |CHOICE|3|
+N Find Tugar Bloodtotem |QID|45587.1| |N|Find Tugar Bloodtotem (30.81,31.49) (32.24,32.68)| |Z|1024 0| |CHOICE|3|
+N Stop Tugar Bloodtotem |QID|45587.2| |N|Wait for the dialogue to complete. (32.38,32.81)| |Z|1024 0| |CHOICE|3|
+T The Feltotem Menace |QID|45587| |N|(npc:117361) in {Highmountain} (31.30,25.14)| |Z|1024 0| |NPC|117361| |CHOICE|3|
+A Destroying the Nest |QID|45796| |N|(npc:117361) in {Highmountain} (31.30,25.14)| |Z|1024 0| |NPC|117361| |CHOICE|3|
+
+R Enter the cave |QID|45796| |N|Go inside the cave in {Highmountain} (33.60,28.08)| |Z|1024 0| |REACH| |CHOICE|3|
+N Enter Feltotem Caverns |QID|45796.1| |N|Enter Feltotem Caverns  in {Highmountain} (49.44,12.85)| |Z|1024 40| |CHOICE|3|
+K (npc:118040) |QID|45796.3| |N|Destroy 50 (npc:118040)  (57.44,52.61)| |Z|1024 40| |NPC|118040| |CHOICE|3|
+K (npc:117984) |QID|45796.4| |N|Kill (npc:117984), and any 15 Legion forces in {Highmountain} (73.74,59.89)| |Z|1024 40| |NPC|117984, 118051, 119495, 118050| |CHOICE|3|
+
+R Leave the cave |QID|45841| |N|Leave the cave to {Highmountain} (33.60,28.07)| |Z|1024 0| |REACH| |CHOICE|3|
+T Destroying the Nest |QID|45796| |N|(npc:117361) in {Highmountain}  (33.60,28.07) (31.31,25.14)| |Z|1024 0| |NPC|117361| |CHOICE|3|
+A A Triumphant Report |QID|45841| |N|(npc:117361) in {Highmountain}  (31.31,25.14)| |Z|1024 0| |NPC|117361| |CHOICE|3|
+
+R Dalaran |QID|45842| |N|Travel to {Dalaran} (28.45,48.90)| |Z|1014 10| |CHOICE|3|
+T A Triumphant Report |QID|45841| |N|(npc:90418) in {Dalaran} (28.45,48.90)| |Z|1014 10| |NPC|90418| |CHOICE|3|
+A A Gift From the Six |QID|45842| |N|(npc:90418) in {Dalaran} (28.45,48.90)| |Z|1014 10| |NPC|90418| |CHOICE|3|
+C A Gift From the Six |QID|45842.1| |N|Stand in the circle and use the special action button that appears on-screen. (30.42,48.93)| |Z|1014 10| |CHOICE|3|
+T A Gift From the Six |QID|45842| |N|(npc:90418) in {Dalaran} (28.45,48.90)| |Z|1014 10| |NPC|90418| |CHOICE|3|
+
+--After spec
+R Netherlight Temple |QID|45343| |N|Travel to {Netherlight Temple} (51.55,47.74)| |Z|1040 1| 
+A A Curious Contagion |QID|45343| |N|(npc:110564) in {Netherlight Temple} (51.55,47.74)| |Z|1040 1| |NPC|110564|
+A Champions of Legionfall |QID|47137| |N|(npc:116576) in {Broken Shore} (44.54,63.52)| |Z|1021 0| |NPC|116576|
+
+R Highmountain |QID|45345|  |N|Travel to {Highmountain}(npc:118528) in {Highmountain} (29.96,55.88)| |Z|1024 0| |NPC|118528|
+T A Curious Contagion |QID|45343| |N|(npc:118528) in {Highmountain}(npc:118528) in {Highmountain} (29.96,55.88)| |Z|1024 0| |NPC|118528| |NPC|118528|
+A Sampling the Source |QID|45344| |N|(npc:118528) in {Highmountain}(npc:118528) in {Highmountain} (29.96,55.88)| |Z|1024 0| |NPC|118528| |NPC|118528|
+A Shambling Specimens |QID|45346| |N|(npc:118528) in {Highmountain}(npc:118528) in {Highmountain} (29.96,55.88)| |Z|1024 0| |NPC|118528| |NPC|118528|
+A Mischievous Sprites |QID|45345| |N|(npc:118528) in {Highmountain}(npc:118528) in {Highmountain} (29.96,55.88)| |Z|1024 0| |NPC|118528| |NPC|118528|
+
+C Mischievous Sprites |QID|45345.1| |N|Kill (npc:116975), use your (spell:528) on them before you kill them and collect 25 (item:143678) (30.50,48.17)| |Z|1024 0| |NPC|116975|
+C Shambling Specimens |QID|45346.1| |N|Use (spell:9484) priest ability on (npc:116982) then use the (item:143718) (28.35,34.85)| |Z|1024 0| |U|143718|
+C Sampling the Source |QID|45344.1| |N|Collect 6 Contaminated Specimens from pools of Gaseous Fel around the western coast of Highmountain.  (28.35,34.85)| |Z|1024 0|
+
+T Sampling the Source |QID|45344| |N|(npc:118528) in {Highmountain} (30.91,35.05) (29.85,52.95) (29.96,55.88)| |Z|1024 0| |NPC|118528|
+T Shambling Specimens |QID|45346| |N|(npc:118528) in {Highmountain} (29.96,55.88)| |Z|1024 0| |NPC|118528|
+T Mischievous Sprites |QID|45345| |N|(npc:118528) in {Highmountain} (29.96,55.88)| |Z|1024 0| |NPC|118528|
+A Crafting a Cure |QID|45347| |N|(npc:118528) in {Highmountain} (29.96,55.88)| |Z|1024 0| |NPC|118528|
+N Add Holy magic to the Untested Cure |QID|45347.1| |N|Click on the untested cure on the table  (30.00,55.87)| |Z|1024 0|
+N (item:117006) |QID|45347.2| |N|Collect the untested cure on the table (30.00,55.87)| |Z|1024 0| |L|117006|
+N (npc:116702)  |QID|45347.2| |N|Administer the Untested Cure on (npc:116702), click on the extra action button (spell:233106) (30.00,55.79)| |Z|1024 0| |NPC|116702|
+N Add Shadow magic to the Untested Cure |QID|45347.3| |N|Click on the untested cure on the table  (30.00,55.87)| |Z|1024 0|
+N (item:117006) |QID|45347.3| |N|Collect the untested cure on the table (30.00,55.87)| |Z|1024 0| |L|117006|
+N (npc:116702)  |QID|45347.4| |N|Administer the Untested Cure on (npc:116702), click on the extra action button (spell:233106) (30.00,55.79)| |Z|1024 0| |NPC|116702|
+N (npc:116702) |QID|45347.5| |N|Click on (npc:116702) to ressurect him (30.00,55.79)| |Z|1024 0| |NPC|116702|
+T Crafting a Cure |QID|45347| |N|(npc:118528) in {Highmountain} (29.96,55.88)| |Z|1024 0| |NPC|118528|
+A Safekeeping |QID|45348| |N|(npc:118528) in {Highmountain} (29.96,55.88)| |Z|1024 0| |NPC|118528|
+
+R Netherlight Temple |QID|45349| |N|Travel to {Netherlight Temple} (51.60,47.81)| |Z|1040 1| |NPC|110564|
+T Safekeeping |QID|45348| |N|(npc:110564) in {Netherlight Temple} (51.60,47.81)| |Z|1040 1| |NPC|110564|
+A To the Broken Shore |QID|45349| |N|(npc:110564) in {Netherlight Temple} (51.60,47.81)| |Z|1040 1| |NPC|110564|
+
+R Broken Shore |QID|45342| |N|Travel to in {Broken Shore} (34.10,52.67) (40.58,61.76) | |Z|1021 0| |
+T To the Broken Shore |QID|45349| |N|(npc:118528) in {Broken Shore} (33.65,49.69)| |Z|1021 0| |NPC|118528|
+A Countering the Contagion |QID|45350| |N|(npc:118528) in {Broken Shore} (33.65,49.69)| |Z|1021 0| |NPC|118528|
+A Administering Aid |QID|45342| |N|(npc:118528) in {Broken Shore} (33.65,49.69)| |Z|1021 0| |NPC|118528|
+
+C Countering the Contagion |QID|45350.1| |N|Counter the contagion by killing (npc:117170) and destroying his fel spreaders. (29.23,63.86)| |Z|1021 0| |NPC|117170| |POI|
+C Administering Aid |QID|45342.1| |N|Use the (item:143773) on 8 (npc:117196) (31.36,60.48)| |Z|1021 0| |NPC|117196|
+
+T Countering the Contagion |QID|45350| |N|(npc:118528) in {Broken Shore} (33.65,49.69)| |Z|1021 0| |NPC|118528|
+T Administering Aid |QID|45342| |N|(npc:118528) in {Broken Shore} (33.65,49.69)| |Z|1021 0| |NPC|118528|
+A Sterile Surroundings |QID|46145| |N|(npc:118528) in {Broken Shore} (33.65,49.69)| |Z|1021 0| |NPC|118528|
+
+R Netherlight Temple |QID|46034| |N|Travel to {Netherlight Temple} (23.92,40.49)| |Z|1040 1|
+T Sterile Surroundings |QID|46145| |N|(npc:120842) in {Netherlight Temple} (23.92,40.49)| |Z|1040 1| |NPC|120842|
+A Champion: Aelthalyste |QID|46034| |N|(npc:120842) in {Netherlight Temple} (23.92,40.49)| |Z|1040 1| |NPC|120842| |E|
+A Further Advancement |QID|46788| |N|(npc:109776) in {Netherlight Temple} (51.42,45.94)| |Z|1040 1| |NPC|109776|
+C Further Advancement |QID|46788.1| |N|Speak to (npc:110725) in {Netherlight Temple} (55.96,40.68)| |Z|1040 1| |NPC|110725|
+T Further Advancement |QID|46788| |N|(npc:109776) in {Netherlight Temple} (51.42,45.94)| |Z|1040 1| |NPC|109776|
+
+R Broken Shore |TID|47137| |N|Travel to {Broken Shore} (44.54,63.52)| |Z|1021 0| 
+T Champions of Legionfall |QID|47137| |N|(npc:116576) in {Broken Shore} (44.54,63.52)| |Z|1021 0| |NPC|116576|
+A Shard Times |QID|46251| |N|(npc:116302) in {Broken Shore} (44.74,63.27)| |Z|1021 0| |NPC|116302|
+C Shard Times |QID|46251.1| |N|Collect 2500 (cur:1226). These can be obtained by looting rares, treasures, and completing world quests. (44.74,63.27)| |Z|1021 0|
+T Shard Times |QID|46251| |N|(npc:116576) in {Broken Shore} (44.54,63.52)| |Z|1021 0| |NPC|116576|
+
+--A The Speaker Awaits |QID|45788| |N|(npc:118536) in {Deliverance Point} (44.40,63.66)| |Z|1021 0| |NPC|118536|
+--T The Speaker Awaits |QID|45788| |N|(npc:102709) in {Netherlight Temple}  (47.94,21.89)| |Z|1040 1| |NPC|102709|
+--A The Sunken Vault |QID|45789| |N|(npc:102709) in {Netherlight Temple}  (47.94,21.89)| |Z|1040 1| |NPC|102709| 
+
+--R Azsuna |QID|45789| |N|Travel to {Azsuna} (44.26,51.24)| |Z|1015 0| 
+--N (npc:117694) |QID|45789.1| |N|Speak to (npc:117694) and take the submarine to begin the scenario (44.26,51.24)| |Z|1015 0| |NPC|117694|
+--N Locate the lost Titan vault |SID|0|1| |N|Locate the lost Titan vault near the Maelstrom  (47.21,50.67)| |Z|1142 1| |QID|45789|
+--N Enter the Titan vault |SID|0|2| |N|Enter the Titan vault  (47.21,50.67)| |Z|1142 1| |QID|45789|
+--N Activate the console |SID|35058|3| |N|Click Control Console (72.89,70.94)| |Z|1142 1| |QID|45789|
+--N Listen to the custodian's story |SID|0|4| |N|This will take some time to complete. (71.89,65.47)| |Z|1142 1| |QID|45789|
+ 
+--K (npc:117856) |SID|35344|5| |N|Kill (npc:117856) in {Lightless Cavern} (68.65,62.96)| |Z|1142 1| |NPC|117856| |QID|45789|
+--K (npc:34914) |SID|35061|5| |N|Kill (npc:34914) in {Lightless Cavern} (68.65,62.96)| |Z|1142 1| |NPC|34914| |QID|45789|
+--K (npc:117538) |SID|35343|5| |N|Kill (npc:117538) in {Lightless Cavern} (68.65,62.96)| |Z|1142 1| |NPC|117538| |QID|45789|
+--K (npc:117534) |SID|35342|5| |N|Kill (npc:117534) in {Lightless Cavern} (68.65,62.96)| |Z|1142 1| |NPC|117534| |QID|45789|
+
+--R Dalaran |QID|45789| |N|Speak to (npc:117694) to return to {Dalaran} (69.20,62.12)| |Z|1142 1| |NPC|117694|
+--T The Sunken Vault |QID|45789| |N|(npc:102709) in {Netherlight Temple} (49.77,20.64)| |Z|1040 1| |NPC|102709|
 
 ----
 A Champion Armaments |QID|44229| |N|(npc:110595) in {The Hall of Balance}. This quest will only be available if you chose to get the "Armaments of Light" class hall upgrade (45.49,26.63)| |Z|1040 1| |NPC|110595|

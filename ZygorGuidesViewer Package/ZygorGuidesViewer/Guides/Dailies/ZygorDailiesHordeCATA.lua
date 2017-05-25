@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("DailiesHCATA") then return end
 ZygorGuidesViewer.GuideMenuTier = "CAT"
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Main Cities\\Main City Cooking Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Main Cities\\Main City Cooking Dailies",{
 author="support@zygorguides.com",
 description="Walks you through completing the\nCooking daily quests in Orgrimmar, Thunder Bluff and Undercity.\nYou must be at least level 10 to\ncomplete the quests in this guide.",
 },[[
@@ -37,7 +37,7 @@ step
 You have reached the end of the dailies for today.
 Click here to go back to the beginning of the Dailies Menu |confirm |next menu
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Main Cities\\Main City Fishing Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Main Cities\\Main City Fishing Dailies",{
 author="support@zygorguides.com",
 description="Walks you through completing the\nFishing daily quests in Orgrimmar.\nYou must be at least level 10 to\ncomplete the quests in this guide.",
 },[[
@@ -68,7 +68,7 @@ step
 You have reached the end of the dailies for today
 Click here to go back to the beginning of the Dailies Menu |confirm |next menu
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Main Cities\\Jewelcrafting Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Main Cities\\Jewelcrafting Dailies",{
 author="support@zygorguides.com",
 description="Walks you through completing the\nJewelcrafting daily quests in\nOrgrimmar.",
 },[[
@@ -124,7 +124,7 @@ turnin Nibbler! No!##25158 |goto Orgrimmar 71.9,35.9
 turnin Ogrezonians in the Mood##25161 |goto Orgrimmar 71.9,35.9
 turnin The Latest Fashion!##25159 |goto Orgrimmar 71.9,35.9
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Borean Tundra\\Aces High with Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Borean Tundra\\Aces High with Pre-Quests",{
 author="support@zygorguides.com",
 description="This guide section contains the pre-quests to unlock the daily quests in the Coldarra region of Borean Tundra.\nThe Kaskala region of Borean Tundra does not have any pre-quests to unlock the daily quest that is available there.",
 },[[
@@ -218,7 +218,7 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Borean Tundra\\Kaskala Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Borean Tundra\\Kaskala Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests in the Kaskala region of Borean Tundra.\nThere are no pre-quests needed to unlock the daily quest offered in this guide section.",
 },[[
@@ -238,7 +238,7 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Dalaran\\Dalaran Cooking Dailies with Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Dalaran\\Dalaran Cooking Dailies with Pre-Quests",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the Cooking daily quests in Dalaran.",
 },[[
@@ -263,7 +263,7 @@ You have completed this daily guide today. You can do more dailies tomorrow.
 Click here to return to the beginning of the guide. |confirm
 next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Dalaran\\Fishing Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Dalaran\\Fishing Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the Fishing daily quests in Dalaran.",
 },[[
@@ -315,7 +315,7 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Dalaran\\Jewelcrafting Dailies with Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Dalaran\\Jewelcrafting Dailies with Pre-Quests",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the Jewelcrafting daily quests in Dalaran.",
 },[[
@@ -433,7 +433,7 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Dragonblight\\Dragonblight Dailies plus Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Dragonblight\\Dragonblight Dailies plus Pre-Quests",{
 author="support@zygorguides.com",
 description="This guide section contains the pre-quests to unlock the daily quests in the Wyrmrest Temple region of Dragonblight.\nThe Moa'ki Harbor region of Dragonblight does not have any pre-quests to unlock the daily quest that is available there.",
 },[[
@@ -604,7 +604,7 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Grizzly Hills\\Blackriver Logging Camp Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Grizzly Hills\\Blackriver Logging Camp Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quest in the Blackriver Logging Camp region of Grizzly Hills.\nThere are no pre-quests needed to unlock the daily quest offered in this guide section.",
 },[[
@@ -690,7 +690,7 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Grizzly Hills\\Blue Sky Logging Grounds Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Grizzly Hills\\Blue Sky Logging Grounds Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests in the Blue Sky Logging Grounds region of Grizzly Hills.\nThere are no pre-quests needed to unlock the daily quests offered in this guide section.",
 },[[
@@ -807,7 +807,7 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Grizzly Hills\\Granite Springs Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Grizzly Hills\\Granite Springs Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quest in the Granite Springs region of Grizzly Hills.",
 },[[
@@ -893,7 +893,7 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Grizzly Hills\\Venture Bay Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Grizzly Hills\\Venture Bay Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests in the Venture Bay region of Grizzly Hills.\nThere are no pre-quests needed to unlock the daily quests offered in this guide section.",
 },[[
@@ -1024,7 +1024,7 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Howling Fjord\\Kamagua Dailies with Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Howling Fjord\\Kamagua Dailies with Pre-Quests",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quest in the Kamagua region of Howling Fjord.",
 },[[
@@ -1098,7 +1098,7 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing your race's Aspirant Rank dailies\nin order to achieve Argent Tournament Grounds Valiant Rank with your own race.",
 },[[
@@ -1237,7 +1237,7 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing your race's Valiant Rank dailies\nin order to achieve Argent Tournament Grounds Champion Rank with your own race.\nYou must have completed the Argent Tournament Grounds Aspirant Rank Dailies guide section\nin order to have access to the quests in this guide section.",
 },[[
@@ -1829,7 +1829,7 @@ turnin A Champion Rises##13738 |goto 69.7,22.9 |only Tauren
 turnin A Champion Rises##13739 |goto 69.7,22.9 |only Scourge
 turnin A Champion Rises##13740 |goto 69.7,22.9 |only BloodElf
 accept The Scourgebane##13795 |goto 69.7,22.9 |only DeathKnight
-accept Eadric the Pure##13794 |goto 69.7,22.9 |only !DeathKnight
+accept Eadric the Pure##13794 |goto 69.7,22.9 |only if not DeathKnight
 step
 talk Crok Scourgebane##33762
 turnin The Scourgebane##13795 |goto 73.8,20.1
@@ -1837,13 +1837,13 @@ only DeathKnight
 step
 talk Eadric the Pure##33759
 turnin Eadric the Pure##13794 |goto 70.0,23.4
-only !DeathKnight
+only if not DeathKnight
 step
 You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Death Knight Only",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Death Knight Only",{
 author="support@zygorguides.com",
 description="You must be a Death Knight to do the quests in this Argent Tournament Grounds guide section.\nAlso, you must have completed the Argent Tournament Grounds Valiant Rank Dailies guide section.",
 },[[
@@ -1936,7 +1936,7 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Non-Death Knight Only",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Non-Death Knight Only",{
 author="support@zygorguides.com",
 description="You must NOT be a Death Knight to do the quests in this Argent Tournament Grounds guide section.\nAlso, you must have completed the Argent Tournament Grounds Valiant Rank Dailies guide section.",
 },[[
@@ -1945,17 +1945,17 @@ step
 label	dailies
 talk Luuri##33771
 accept Among the Champions##13811 |goto Icecrown 69.9,23.3
-only !DeathKnight
+only if not DeathKnight
 step
 talk Eadric the Pure##33759
 accept Threat From Above##13809
 |tip You must have turned in the quest The Black Knight's Fall from the ATG Black Knight Quest Chain guide section in order to be able to get this daily quest.
 accept Battle Before The Citadel##13862 |goto 70.0,23.4
-only !DeathKnight
+only if not DeathKnight
 step
 talk Cellian Daybreak##33763
 accept Taking Battle To The Enemy##13810 |goto 69.9,23.5
-only !DeathKnight
+only if not DeathKnight
 step
 Equip the Horde Lance in your bags |use Horde Lance##46070
 Click to mount the Stabled Orgrimmar Wolf |invehicle |q 13811 |goto 72.2,22.5
@@ -1982,54 +1982,54 @@ Tell them you are ready to fight!
 Fight and defeat them
 |tip The best strategy to defeat the Champion riders is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Champion rider (use your Shield-Breaker ability as you circle around to come back to the Champion rider, if possible).  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Champion rider will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back (use your Shield-Breaker ability as you circle around to come back to the Champion rider, if possible), then get back into melee range and start spamming your Thrust ability again. Keep repeating this process until he is defeated.
 collect 4 Mark of the Champion |q 13811/1 |goto 71.6,23.8
-only !DeathKnight
+only if not DeathKnight
 step
 Click the red arrow on your hotbar to get off your mount|outvehicle |q 13811
-only !DeathKnight
+only if not DeathKnight
 step
 kill Deathspeaker Kharos##34808, Dark Zealot##34728+, Dark Ritualist##34734+
 kill 15 Cult of the Damned member |q 13810/1 |goto 64.3,21.4
-only !DeathKnight
+only if not DeathKnight
 step
 You will need to get a group of at least 3 people to do the daily quest in the next step of the guide.  Find a group, it should be pretty easy because there are always other players doing this quest.
-only !DeathKnight
+only if not DeathKnight
 step
 This is how this fight will happen:
 |tip You will pull Chillmaw first and fight him until he is at about 75% health.  At that point, a Cultist Bombardier will spawn to help Chillmaw fight.  Kill the Cultist Bombardier IMMEDIATELY, as they do a lot of damage, compared to Chillmaw.  Continuing fighting Chillmaw and 2 other Cultist Bombardiers will spawn: 1 when Chillmaw is at about 50% health, and 1 when Chillmaw is at about 25% health.  Again, kill the Cultist Bombardiers immediately when they spawn and this fight will be a fairly easy one.
 kill Chillmaw |q 13809/1 |goto 44.1,32.6
 |tip Chillmaw is a big skeletal dragon that flies around this area.
 kill 3 Cultist Bombardier |q 13809/2 |goto 44.1,32.6
-only !DeathKnight
+only if not DeathKnight
 step
 Equip the Horde Lance in your bags |use Horde Lance##46070
 Click to mount the Stabled Campaign Warhorse |invehicle |q 13862 |goto Icecrown 48.9,71.4
-only !DeathKnight
+only if not DeathKnight
 step
 kill 3 Boneguard Commander |q 13862/1 |goto 50.1,74.8
 |tip The best strategy to defeat the Boneguard Commanders is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fights.  When the fights begin, immediately use your Charge ability on the Boneguard Commanders (use your Shield-Breaker ability as you circle around to come back to the Boneguard Commanders, if possible).  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Boneguard Commanders will try to run away to get into Charge range.  When they start to run away, start spamming your Charge ability until you charge them in the back (use your Shield-Breaker ability as you circle around to come back to the Boneguard Commanders, if possible), then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until you kill 3 Boneguard Commanders.  Also, it may help you try to party with other players while doing this quest, as it will get done much faster and there are always other players in this area doing this same daily quest.
-only !DeathKnight
+only if not DeathKnight
 step
 Click the red arrow on your hotbar to get off your mount |outvehicle |q 13862 |goto 48.9,71.4
-only !DeathKnight
+only if not DeathKnight
 step
 talk Luuri##33771
 turnin Among the Champions##13811 |goto 69.9,23.3
-only !DeathKnight
+only if not DeathKnight
 step
 talk Eadric the Pure##33759
 turnin Threat From Above##13809 |goto 70.0,23.4
 turnin Battle Before The Citadel##13862 |goto 70.0,23.4
-only !DeathKnight
+only if not DeathKnight
 step
 talk Cellian Daybreak##33763
 turnin Taking Battle To The Enemy##13810 |goto 69.9,23.5
-only !DeathKnight
+only if not DeathKnight
 step
 You have completed this daily guide today. You can do more dailies tomorrow.
 Click here to return to the beginning of the guide. |confirm
 next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Crusader Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Crusader Dailies",{
 author="support@zygorguides.com",
 description="In order to be able to complete the quests in this guide section, you must already be Exalted\nwith the Darkspear Trolls, Orgrimmar, Silvermoon City, Thunder Bluff, and Undercity factions.\nAlso, you must have already become a Champion with each of those factions,\nusing the Crusader Title Guide in the Icecrown section of the Dailies guide.",
 },[[
@@ -2087,7 +2087,7 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Black Knight Quest Chain",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Black Knight Quest Chain",{
 author="support@zygorguides.com",
 description="This Argent Tournament Grounds guide section unlocks a Champion Rank group daily quest.\nWe recommend you complete the Argent Tournament Grounds Valiant Rank Dailies guide section,\nand achieve Champion Rank with your race, before doing this quest chain.\nStarting this quest chain when you are already Champion Rank will allow you\nto do the entire quest chain without having to switch back and forth between guide sections,\nallowing you to get it done much faster and more efficiently.\nYou will be unable to get some quests in this quest chain if you are not already\nat Champion Rank with The Argent Tournament Grounds.",
 },[[
@@ -2185,8 +2185,8 @@ You have completed this daily guide today. You can do more dailies tomorrow
 Click here to return to the beginning of the guide |confirm
 next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc (1-5)",{
-next="Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc & Troll (5-13)",
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc (1-5)",{
+next="Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc & Troll (5-13)",
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted\nreputation with the Darkspear Trolls and\nOrgrimmar factions.\nYou need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 },[[
@@ -2418,8 +2418,8 @@ talk Zureetha Fargaze##3145
 turnin Burning Blade Medallion##25132 |goto Durotar 43.5,67.5
 accept Report to Sen'jin Village##25133 |goto Durotar 43.5,67.5
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Troll (1-5)",{
-next="Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc & Troll (5-13)",
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Troll (1-5)",{
+next="Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc & Troll (5-13)",
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted\nreputation with the Darkspear Trolls and\nOrgrimmar factions.\nYou need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 },[[
@@ -2889,7 +2889,7 @@ talk Vol'jin##10540
 turnin An Ancient Enemy##24814 |goto 68.9,88.7
 accept Sen'jin Village##25073 |goto 68.9,88.7
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc & Troll (5-13)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc & Troll (5-13)",{
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted\nreputation with the Darkspear Trolls and\nOrgrimmar factions.\nYou need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 },[[
@@ -3305,7 +3305,7 @@ To continue gaining reputation with the Darkspear Trolls faction:
 You can buy a Darkspear Tabard from Champion Uru'zin in Orgrimmar at [50.0,58.5]
 |tip Wear the Darkspear Tabard and use the Dungeon Finder tool to complete random Azeroth, Northrend, or Cataclysm. The Burning Crusade dungeons will not give any rep when using this tabard.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Undercity\\Undead (1-20)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Undercity\\Undead (1-20)",{
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted\nreputation with the Undercity faction.\nYou need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 },[[
@@ -4360,7 +4360,7 @@ To continue gaining reputation with the Undercity faction:
 You can buy an Undercity Tabard from Captain Donald Adams in Undercity at [63.5,48.8]
 |tip Wear the Undercity Tabard and use the Dungeon Finder tool to complete random Azeroth, Northrend, or Cataclysm. The Burning Crusade dungeons will not give any rep when using this tabard.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Thunder Bluff\\Tauren (1-13)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Thunder Bluff\\Tauren (1-13)",{
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted\nreputation with the Thunder Bluff faction.\nYou need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 },[[
@@ -5014,7 +5014,7 @@ map Thunder Bluff
 'To continue gaining reputation with the Thunder Bluff faction:
 .' You can buy a Thunder Bluff Tabard from Brave Tuho in Thunder Bluff at [46.7,49.9]  |tip Wear the Thunder Bluff Tabard and use the Dungeon Finder tool to complete random Azeroth, Northrend, or Cataclysm. The Burning Crusade dungeons will not give any rep when using this tabard.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Silvermoon City\\Blood Elf (1-20)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Silvermoon City\\Blood Elf (1-20)",{
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted\nreputation with the Silvermoon City faction.\nYou need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 },[[
@@ -6003,7 +6003,7 @@ To continue gaining reputation with the Silvermoon City faction:
 You can buy a Silvermoon City Tabard from Magistrix Nizara in Eversong Woods at [54.5,50.9]
 |tip Wear the Silvermoon City Tabard and use the Dungeon Finder tool to complete random Azeroth, Northrend, or Cataclysm. The Burning Crusade dungeons will not give any rep when using this tabard.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Orc Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Orc Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Orc race.\nYou must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section\nin order to be able to complete this guide section.\nYou cannot complete this section if you are an Orc.",
 },[[
@@ -6111,7 +6111,7 @@ step
 Congratulations, you are now a Champion of Orgrimmar!
 |tip This is the end of the Orc Champion Rank Guide for the Crusader Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Tauren Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Tauren Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Tauren race.\nYou must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section\nin order to be able to complete this guide section.",
 },[[
@@ -6221,7 +6221,7 @@ step
 Congratulations, you are now a Champion of Thunder Bluff!
 |tip This is the end of the Tauren Champion Rank Guide for the Crusader Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Troll Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Troll Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Troll race.\nYou must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section\nin order to be able to complete this guide section.",
 },[[
@@ -6330,7 +6330,7 @@ step
 Congratulations, you are now a Champion of Sen'jin!
 |tip This is the end of the Troll Champion Rank Guide for the Crusader Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Blood Elf Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Blood Elf Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Blood Elf race.\nYou must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section\nin order to be able to complete this guide section.",
 },[[
@@ -6446,7 +6446,7 @@ goto 76.5,23.9
 .talk 33379
 ..turnin 13731
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Undead Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Undead Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Undead race.\nYou must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section\nin order to be able to complete this guide section.",
 },[[
@@ -6552,7 +6552,7 @@ step
 talk Deathstalker Visceri##33373
 turnin The Valiant's Challenge##13729 |goto 76.5,24.2
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Orgrim's Hammer / Ymirheim / Aldur'Thar Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Orgrim's Hammer / Ymirheim / Aldur'Thar Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests in the Orgrim's Hammer, Ymirheim, and Aldur'Thar regions of Icecrown.",
 },[[
@@ -6713,7 +6713,7 @@ You have completed this daily guide today. You can do more dailies tomorrow.
 Click here to return to the beginning of the guide. |confirm
 |next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Shadowvault Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Shadowvault Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests in the Shadowvault region of Icecrown.",
 },[[
@@ -6760,7 +6760,7 @@ You have completed this daily guide today. You can do more dailies tomorrow.
 Click here to return to the beginning of the guide. |confirm
 |next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Death's Rise Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Death's Rise Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests in the Death's Rise region of Icecrown.",
 },[[
@@ -6805,7 +6805,7 @@ You have completed this daily guide today. You can do more dailies tomorrow.
 Click here to return to the beginning of the guide. |confirm
 |next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\The Sunreavers Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\The Sunreavers Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests for The Sunreavers faction\nin the Argent Tournament Grounds area of Icecrown.",
 },[[
@@ -6889,7 +6889,7 @@ You have completed this daily guide today. You can do more dailies tomorrow.
 Click here to return to the beginning of the guide. |confirm
 |next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Sholazar Basin\\Frenzyheart Tribe Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Sholazar Basin\\Frenzyheart Tribe Dailies",{
 author="support@zygorguides.com",
 achieveid={950},
 description="This guide section will walk you through completing the daily quests for the Frenzyheart Tribe faction in Sholazar Basin.",
@@ -7218,7 +7218,7 @@ step
 Click here to go back to the start of the dailies. Note that this will not actually reset the daily quests |confirm
 next "daily"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Sholazar Basin\\The Oracles Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Sholazar Basin\\The Oracles Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests for the The Oracles faction in Sholazar Basin.",
 },[[
@@ -7347,7 +7347,7 @@ step
 After you complete the dailies above, you will need to repeat them in order to attain Exalted.
 Click here to go back to the start of the dailies guide. |confirm |next "daily"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\The Storm Peaks\\The Storm Peaks Full Zone Quest Path (Includes Pre-Quests)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\The Storm Peaks\\The Storm Peaks Full Zone Quest Path (Includes Pre-Quests)",{
 author="support@zygorguides.com",
 description="This guide section contains the quest path for the entire The Storm Peaks zone, which includes the pre-quests\nto unlock the daily quests in the Brunnhildar Village, Dun Niffelem (The Sons of Hodir), and K3 regions of The Storm Peaks.",
 },[[
@@ -8564,7 +8564,7 @@ accept Hodir's Tribute##13559 |n |goto 66.2,61.4
 Click here to return to the beginning of the Dailies |confirm
 |next hub |only if rep('The Sons of Hodir')<=Exalted
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\The Storm Peaks\\Dun Niffelem (The Sons of Hodir) Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\The Storm Peaks\\Dun Niffelem (The Sons of Hodir) Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests in the Brunnhildar Village region of The Storm Peaks.\nIf you are not Revered with The Sons of Hodir, you will not be able to accept some of the quests in this guide section.\nTo become Revered with The Sons of Hodir, use the The Sons of Hodir (Friendly), The Sons of Hodir (Honored) - Pre-Quest,\nand The Sons of Hodir (Honored) guide sections in the Reputation section of the Dailies guide.",
 },[[
@@ -8648,7 +8648,7 @@ Click Hodir's Horn
 |tip It's a huge bone war horn.
 turnin Blowing Hodir's Horn##12977 |goto 64.1,65.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\The Storm Peaks\\K-3 and Brunnhildar Village Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\The Storm Peaks\\K-3 and Brunnhildar Village Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests in the Brunnhildar Village region of The Storm Peaks.",
 },[[
@@ -8707,7 +8707,7 @@ You have completed this daily guide today. You can do more dailies tomorrow.
 Click here to return to the beginning of the guide. |confirm
 |next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Zul'Drak\\The Argent Stand Dailies with Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Zul'Drak\\The Argent Stand Dailies with Pre-Quests",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests in the The Argent Stand region of Zul'Drak.",
 },[[
@@ -8899,7 +8899,7 @@ You have completed this daily guide today. You can do more dailies tomorrow.
 Click here to return to the beginning of the guide. |confirm
 |next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Speed Gold Runs\\Level 80 Dailies Speed Gold Run (No ATG Dailies)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Speed Gold Runs\\Level 80 Dailies Speed Gold Run (No ATG Dailies)",{
 author="support@zygorguides.com",
 description="This guide section will walk you through a 25 daily quest speed gold run at level 80,\nwithout including any Argent Tournament Grounds dailies.\nTo be able to complete all the quests in this guide section, you must have completed\nthe The Storm Peaks Full Zone Guide (Includes Pre-Quests), The Sons of Hodir Reputation (Honored),\nand Icecrown Full Zone Quest Path (Includes Regular Dailies Pre-Quests) guide sections.",
 },[[
@@ -9216,7 +9216,7 @@ talk Chief Engineer Copperclaw##30825
 turnin Volatility##13261
 turnin Retest Now##13357
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Speed Gold Runs\\Level 80 Dailies Speed Gold Run (With ATG Dailies)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Speed Gold Runs\\Level 80 Dailies Speed Gold Run (With ATG Dailies)",{
 author="support@zygorguides.com",
 description="This guide section will walk you through a 25 daily quest speed gold run at level 80.\nTo be able to complete all the quests in this guide section, you must have completed\nthe The Storm Peaks Full Zone Guide (Includes Pre-Quests), The Sons of Hodir Reputation (Honored),\nand Icecrown Full Zone Quest Path (Includes Regular Dailies Pre-Quests) guide sections.",
 },[[
@@ -9252,17 +9252,17 @@ only DeathKnight
 step
 talk Luuri##33771
 accept Among the Champions##13811 |goto 69.9,23.3
-only !DeathKnight
+only if not DeathKnight
 step
 talk Eadric the Pure##33759
 accept Threat From Above##13809 |goto 70.0,23.4
 |tip You must have turned in the quest The Black Knight's Fall from the ATG Black Knight Quest Chain guide section in order to be able to get this daily quest.
 accept Battle Before The Citadel##13862 |goto 70.0,23.4
-only !DeathKnight
+only if not DeathKnight
 step
 talk Cellian Daybreak##33763
 accept Taking Battle To The Enemy##13810 |goto 69.9,23.5
-only !DeathKnight
+only if not DeathKnight
 step
 talk High Crusader Adelard##34882
 You will only be able to accept, and turn in, 1 of these 4 daily quests per day:
@@ -9301,10 +9301,10 @@ Tell them you are ready to fight!
 Fight and defeat them
 |tip The best strategy to defeat the Champion riders is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Champion rider (use your Shield-Breaker ability as you circle around to come back to the Champion rider, if possible).  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Champion rider will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back (use your Shield-Breaker ability as you circle around to come back to the Champion rider, if possible), then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
 collect 4 Mark of the Champion |q 13811/1 |goto 71.6,23.8
-only !DeathKnight
+only if not DeathKnight
 step
 Click the red arrow on your hotbar to get off your mount|outvehicle |q 13811
-only !DeathKnight
+only if not DeathKnight
 step
 Equip the Horde Lance in your bags|use Horde Lance##46070
 Click to mount the Stabled Orgrimmar Wolf|invehicle |q 13814 |goto 72.2,22.5
@@ -9395,7 +9395,7 @@ only DeathKnight
 step
 kill Deathspeaker Kharos##34808, Dark Zealot##34728+, Dark Ritualist##34734+
 kill 15 Cult of the Damned member |q 13810/1 |goto 64.3,21.4
-only !DeathKnight
+only if not DeathKnight
 step
 Orgrim's Hammer flies in a triangular pattern using these points:
 Point 1: 60.6,34.9
@@ -9586,25 +9586,25 @@ Click the red arrow on your hotbar to get off your mount|outvehicle |q 13863 |go
 only DeathKnight
 step
 You will need to get a group of at least 3 people to do the daily quest in the next step of the guide.  Find a group, it should be pretty easy because there are always other players doing this quest.
-only !DeathKnight
+only if not DeathKnight
 step
 This is how this fight will happen:
 |tip You will pull Chillmaw first and fight him until he is at about 75% health.  At that point, a Cultist Bombardier will spawn to help Chillmaw fight.  Kill the Cultist Bombardier IMMEDIATELY, as they do a lot of damage, compared to Chillmaw.  Continuing fighting Chillmaw and 2 other Cultist Bombardiers will spawn: 1 when Chillmaw is at about 50% health, and 1 when Chillmaw is at about 25% health.  Again, kill the Cultist Bombardiers immediately when they spawn and this fight will be a fairly easy one.
 kill Chillmaw |q 13809/1
 |tip Chillmaw is a big skeletal dragon that flies around this area.
 kill 3 Cultist Bombardier |q 13809/2 |goto 44.1,32.6
-only !DeathKnight
+only if not DeathKnight
 step
 Equip the Horde Lance in your bags|use Horde Lance##46070
 Click to mount the Stabled Campaign Warhorse|invehicle |q 13862 |goto Icecrown,48.9,71.4
-only !DeathKnight
+only if not DeathKnight
 step
 kill 3 Boneguard Commander |q 13862/1 |goto 50.1,74.8
 |tip The best strategy to defeat the Boneguard Commanders is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fights.  When the fights begin, immediately use your Charge ability on the Boneguard Commanders (use your Shield-Breaker ability as you circle around to come back to the Boneguard Commanders, if possible).  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Boneguard Commanders will try to run away to get into Charge range.  When they start to run away, start spamming your Charge ability until you charge them in the back (use your Shield-Breaker ability as you circle around to come back to the Boneguard Commanders, if possible), then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until you kill 3 Boneguard Commanders.  Also, it may help you try to party with other players while doing this quest, as it will get done much faster and there are always other players in this area doing this same daily quest.
-only !DeathKnight
+only if not DeathKnight
 step
 Click the red arrow on your hotbar to get off your mount|outvehicle |q 13862 |goto 48.9,71.4
-only !DeathKnight
+only if not DeathKnight
 step
 Orgrim's Hammer flies in a triangular pattern using these points:
 Point 1: 60.6,34.9
@@ -9635,16 +9635,16 @@ turnin Retest Now##13357
 step
 talk Luuri##33771
 turnin Among the Champions##13811 |goto 69.9,23.3
-only !DeathKnight
+only if not DeathKnight
 step
 talk Eadric the Pure##33759
 turnin Threat From Above##13809 |goto 70.0,23.4
 turnin Battle Before The Citadel##13862 |goto 70.0,23.4
-only !DeathKnight
+only if not DeathKnight
 step
 talk Cellian Daybreak##33763
 turnin Taking Battle To The Enemy##13810 |goto 69.9,23.5
-only !DeathKnight
+only if not DeathKnight
 step
 talk High Crusader Adelard##34882
 You will only be able to accept, and turn in, 1 of these 4 daily quests per day:
@@ -9693,7 +9693,7 @@ turnin Breakfast Of Champions##14092 }goto 76.1,24.0
 turnin Gormok Wants His Snobolds##14141 }goto 76.1,24.0
 turnin What Do You Feed a Yeti, Anyway?##14145 }goto 76.1,24.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Outland (60 - 70)\\Netherdrake Mount Guide\\Netherwing Reputation (Neutral)", {
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Outland (60 - 70)\\Netherdrake Mount Guide\\Netherwing Reputation (Neutral)", {
 author="support@zygorguides.com",
 startlevel=80,
 description="This guide section will walk you through getting Friendly reputation with the Netherwing faction.\nYou must have completed the Netherwing Reputation (Neutral) - Pre-Quests guide section\nin order to be able to complete the quests in this guide section.",
@@ -9853,7 +9853,7 @@ Repeat this process daily until you are Friendly with the Netherwing faction.  A
 You have reached the end of the dailies guide. Click here to return to the beginning of the guide. |confirm
 |next hub
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Outland (60 - 70)\\Netherdrake Mount Guide\\Netherwing Reputation (Friendly)", {
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Outland (60 - 70)\\Netherdrake Mount Guide\\Netherwing Reputation (Friendly)", {
 author="support@zygorguides.com",
 startlevel=80,
 description="This guide section will walk you through getting Honored reputation with the Netherwing faction.\nYou must have completed the Netherwing Reputation (Friendly) - Pre-Quests guide section\nin order to be able to complete the quests in this guide section.",
@@ -10006,7 +10006,7 @@ Repeat this process daily until you are Honored with the Netherwing faction.  Al
 You have reached the end of the dailies guide. Click here to return to the beginning of the guide. |confirm
 |next hub
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Outland (60 - 70)\\Netherdrake Mount Guide\\Netherwing Reputation (Honored)", {
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Outland (60 - 70)\\Netherdrake Mount Guide\\Netherwing Reputation (Honored)", {
 author="support@zygorguides.com",
 startlevel=80,
 description="This guide section will walk you through getting Revered reputation with the Netherwing faction.\nYou must have completed the Netherwing Reputation (Honored) - Pre-Quests guide section\nin order to be able to complete the quests in this guide section.",
@@ -10170,7 +10170,7 @@ Repeat this process daily until you are Revered with the Netherwing faction.  Al
 You have reached the end of the dailies guide. Click here to return to the beginning of the guide. |confirm
 |next hub
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Outland (60 - 70)\\Netherdrake Mount Guide\\Netherwing Reputation (Revered)", {
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Outland (60 - 70)\\Netherdrake Mount Guide\\Netherwing Reputation (Revered)", {
 author="support@zygorguides.com",
 startlevel=80,
 description="This guide section will walk you through getting Exalted reputation with the Netherwing faction.\nYou must have completed the Netherwing Reputation (Revered) - Pre-Quests guide section\nin order to be able to complete the quests in this guide section.",
@@ -10328,7 +10328,7 @@ Repeat this process daily until you are Exalted with the Netherwing faction.  Al
 You have reached the end of the dailies guide. Click here to return to the beginning of the guide. |confirm
 |next hub
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Outland (60 - 70)\\Netherdrake Mount Guide\\Netherwing Reputation (Exalted) - Getting Your Netherdrake!", {
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Outland (60 - 70)\\Netherdrake Mount Guide\\Netherwing Reputation (Exalted) - Getting Your Netherdrake!", {
 author="support@zygorguides.com",
 },[[
 description This guide section will walk you through the final steps of getting your Netherdrake Mount,
@@ -10359,7 +10359,7 @@ accept Jorus the Cobalt Netherwing Drake##11109 |instant |or |goto 66.8,17.6
 step
 Congratulations, you are now the proud owner of a Netherdrake Mount!  Enjoy!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Outland\\Netherwing Egg Hunting - Optimized Path", {
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Outland\\Netherwing Egg Hunting - Optimized Path", {
 author="support@zygorguides.com",
 startlevel=80,
 description="This guide section will walk you through an optimized path of collecting Netherwing Eggs,\nwhich you can turn in for 250 Netherwing rep each.\nYou must have completed the Netherwing Reputation (Neutral) - Pre-Quests guide section\nin order to be able to collect and turn in the Netherwing Eggs you find using this guide section.",
@@ -10583,14 +10583,14 @@ step
 This is the end of the path.
 Click here to go back to the beginning of the path. |confirm |next "start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Outland (60 - 70)\\Shattrath Cooking Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Outland (60 - 70)\\Shattrath Cooking Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the Cooking daily quests to earn Shattrath Cooking Awards",
 },[[
 daily
 #include "H_Shattrath_Cooking_Dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Reputation\\Argent Crusade", {
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Reputation\\Argent Crusade", {
 author="support@zygorguides.com",
 startlevel=80,
 description="This guide section will tell you the various ways you can gain reputation with the Argent Crusade faction with this guide.",
@@ -10610,7 +10610,7 @@ Once you earn Friendly reputation with the Argent Crusade faction, you can buy t
 |tip Wear the Tabard of the Argent Crusade and use the Dungeon Finder tool to complete random Lich King Heroics.  You will gain reputation with the Argent Crusade for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
 You can buy the Tabard of the Argent Crusade by talking to Veteran Crusader Aliocha Segard at [Icecrown 87.5,75.6]
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Reputation\\Kirin Tor", {
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Reputation\\Kirin Tor", {
 author="support@zygorguides.com",
 startlevel=80,
 description="This guide section will tell you the various ways you can gain reputation with the Kirin Tor faction with this guide.",
@@ -10628,7 +10628,7 @@ Once you earn Friendly reputation with the Kirin Tor faction, you can buy the Ta
 |tip Wear the Tabard of the Kirin Tor and use the Dungeon Finder tool to complete random Lich King Heroics.  You will gain reputation with the Kirin Tor for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
 You can buy the Tabard of the Argent Crusade by talking to Archmage Alvareaux at [Dalaran 25.2,47.8]
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Reputation\\Knights of the Ebon Blade", {
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Reputation\\Knights of the Ebon Blade", {
 author="support@zygorguides.com",
 startlevel=80,
 description="This guide section will tell you the various ways you can gain reputation with the Knights of the Ebon Blade faction with this guide.",
@@ -10647,7 +10647,7 @@ Once you earn Friendly reputation with the Knights of the Ebon Blade faction, yo
 |tip Wear the Tabard of the Ebon Blade and use the Dungeon Finder tool to complete random Lich King Heroics.  You will gain reputation with the Knights of the Ebon Blade for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
 You can buy the Tabard of the Ebon Blade by talking to Duchess Mynx at [Icecrown 43.4,20.6]
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Reputation\\The Kalu'ak", {
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Reputation\\The Kalu'ak", {
 author="support@zygorguides.com",
 startlevel=80,
 description="This guide section will tell you the various ways you can gain reputation with The Kalu'ak faction with this guide.",
@@ -10662,7 +10662,7 @@ Complete the Kamagua Dailies guide section in the Howling Fjord section.
 |tip Do this daily, if you'd like.
 There is no tabard for The Kalu'ak available at this time.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Reputation\\The Sons of Hodir", {
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Reputation\\The Sons of Hodir", {
 author="support@zygorguides.com",
 startlevel=80,
 description="This guide section will tell you the various ways you can gain reputation with The Sons of Hodir faction with this guide.",
@@ -10674,7 +10674,7 @@ Complete The Sons of Hodir Reputation guide sections in The Storm Peaks section.
 |tip Do this daily, if you'd like.
 There is no tabard for The Sons of Hodir available at this time.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Reputation\\The Wyrmrest Accord", {
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Reputation\\The Wyrmrest Accord", {
 author="support@zygorguides.com",
 startlevel=80,
 description="This guide section will tell you the various ways you can gain reputation with The Wyrmrest Accord faction with this guide.",
@@ -10690,7 +10690,7 @@ Once you earn Friendly reputation with The Wyrmrest Accord faction, you can buy 
 |tip Wear the Tabard of the Wyrmrest Accord and use the Dungeon Finder tool to complete random Lich King Heroics.  You will gain reputation with The Wyrmrest Accord for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
 You can buy the Tabard of the Wyrmrest Accord by talking to Cielstrasza at [Dragonblight 60.0,53.0]
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Reputation\\The Hand of Vengeance", {
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Reputation\\The Hand of Vengeance", {
 author="support@zygorguides.com",
 startlevel=80,
 description="This guide section will tell you the various ways you can gain reputation with The Hand of Vengeance faction with this guide.",
@@ -10706,7 +10706,7 @@ Complete the Orgrim's Hammer / Ymirheim / Aldur'Thar Dailies guide section in th
 There is no tabard for The Hand of Vengeance available at this time.
 |tip Although there is no tabard for The Hand of Vengeance at this time, you can still gain reputation with The Hand of Vengeance by using the Dungeon Finder tool to complete random Lich King Heroics while not wearing any tabard at all.  You will gain reputation with The Hand of Vengeance for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Reputation\\The Sunreavers", {
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Reputation\\The Sunreavers", {
 author="support@zygorguides.com",
 startlevel=80,
 description="This guide section will tell you the various ways you can gain reputation with The Sunreavers faction with this guide.",
@@ -10720,7 +10720,7 @@ Complete the guide sections in the Crusader Title section in the Icecrown sectio
 There is no tabard for The Sunreavers available at this time.
 |tip Although there is no tabard for The Sunreavers at this time, you can still gain reputation with The Sunreavers by using the Dungeon Finder tool to complete random Lich King Heroics while not wearing any tabard at all.  You will gain reputation with The Sunreavers for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Reputation\\The Taunka", {
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Reputation\\The Taunka", {
 author="support@zygorguides.com",
 startlevel=80,
 description="This guide section will tell you the various ways you can gain reputation with The Taunka faction with this guide.",
@@ -10731,7 +10731,7 @@ Complete The Storm Peaks Full Zone Quest Path guide section in The Storm Peaks s
 There is no tabard for The Taunka available at this time.
 |tip Although there is no tabard for The Taunka at this time, you can still gain reputation with The Taunka by using the Dungeon Finder tool to complete random Lich King Heroics while not wearing any tabard at all.  You will gain reputation with The Taunka for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Reputation\\Warsong Offensive", {
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Reputation\\Warsong Offensive", {
 author="support@zygorguides.com",
 startlevel=80,
 description="This guide section will tell you the various ways you can gain reputation with the Warsong Offensive faction with this guide.",
@@ -10747,7 +10747,7 @@ Complete the Orgrim's Hammer / Ymirheim / Aldur'Thar Dailies guide section in th
 There is no tabard for the Warsong Offensive available at this time.
 |tip Although there is no tabard for the Warsong Offensive at this time, you can still gain reputation with the Warsong Offensive by using the Dungeon Finder tool to complete random Lich King Heroics while not wearing any tabard at all.  You will gain reputation with the Warsong Offensive for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Reputation\\Frenzyheart Tribe", {
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Reputation\\Frenzyheart Tribe", {
 author="support@zygorguides.com",
 startlevel=80,
 description="This guide section will tell you the various ways you can gain reputation with the Frenzyheart Tribe faction with this guide.",
@@ -10757,7 +10757,7 @@ To gain reputation with the Frenzyheart Tribe faction:
 Complete the Frenzyheart Tribe Dailies guide section in the Sholazar Basin section.
 |tip Do this daily, if you'd like.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Reputation\\The Oracles", {
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Reputation\\The Oracles", {
 author="support@zygorguides.com",
 startlevel=80,
 description="This guide section will tell you the various ways you can gain reputation with The Oracles faction with this guide.",
@@ -11162,7 +11162,7 @@ description="This guide will help you navigate through the Darkmoon Faire Event"
 },[[
 #include "H_Darkmoon_Faire_Achievements"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Outland (60 - 70)\\Shattered Sun Offensive\\Dailies", {
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Outland (60 - 70)\\Shattered Sun Offensive\\Dailies", {
 author="support@zygorguides.com",
 description="This guide section will walk you through the Shattered Sun Offensive Daily Quests.",
 },[[
@@ -11303,7 +11303,7 @@ step
 talk Vol'jin##86832
 turnin Warning the Warchief##36940 |goto Orgrimmar 48.1,70.5
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Cataclysm (80 - 85)\\Deepholm Dailies with Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Deepholm Dailies with Pre-Quests",{
 description="Contains the pre-quests to unlock\nthe daily quests in Deepholm.\nYou must be at least level 82 to\ncomplete this guide section.",
 },[[
 step
@@ -11319,13 +11319,13 @@ step
 You have reached the end of these dailies. Click here to return to the beginning of the guide. |confirm
 next hub
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Cataclysm (80 - 85)\\Uldum Dailies with Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Uldum Dailies with Pre-Quests",{
 author="support@zygorguides.com",
 description="Contains the pre-quests to unlock\nthe daily quests in Uldum.\nYou must be at least level 83 to\ncomplete this guide section.",
 },[[
 step
 The pre-quests for these dailies are in Uldum. You can quest through the guide, or use our Leveling Guide for help. |only if not ZGV.guidesets['LevelingHCATA']
-Click here to go to the leveling section to work on this rep |confirm |next "Zygor's Horde Leveling Guides\\Cataclysm 80-85\\Uldum (83-84)" |only if ZGV.guidesets['LevelingHCATA']
+Click here to go to the leveling section to work on this rep |confirm |next "Zygor's Leveling Guides\\Cataclysm 80-85\\Uldum (83-84)" |only if ZGV.guidesets['LevelingHCATA']
 only if not completedq(28633)
 step
 label	hub
@@ -11353,13 +11353,13 @@ step
 You have reached the end of these dailies. Click here to return to the beginning of the guide. |confirm
 next hub
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Cataclysm (80 - 85)\\Twighlight Highlands Dailies with Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Twighlight Highlands Dailies with Pre-Quests",{
 author="support@zygorguides.com",
 description="Walks you through completing the\ndaily quests in the Bloodgulch\nregion of Twilight Highlands.",
 },[[
 step
 The pre-quests for these dailies are in Uldum. You can quest through the guide, or use our Leveling Guide for help. |only if not ZGV.guidesets['LevelingHCATA']
-Click here to go to the leveling section to work on this rep |confirm |next "Zygor's Horde Leveling Guides\\Cataclysm 80-85\\Twilight Highlands (84-85)" |only if ZGV.guidesets['LevelingHCATA']
+Click here to go to the leveling section to work on this rep |confirm |next "Zygor's Leveling Guides\\Cataclysm 80-85\\Twilight Highlands (84-85)" |only if ZGV.guidesets['LevelingHCATA']
 only if not completedq(27788)
 daily
 step
@@ -11408,7 +11408,7 @@ step
 talk Malkar##50622
 turnin Crushing the Wildhammer##28871 |goto 54.0,41.9
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Cataclysm (80 - 85)\\Tol Barad Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Tol Barad Dailies",{
 achieveid={4874},
 description="Walks you through completing the\ndaily quests in Tol Barad.",
 },[[
@@ -11660,7 +11660,7 @@ label "end"
 You have reached the end of the dailies for today
 Click here to return to the beginning of the guide |confirm |next "begin"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Cataclysm (80 - 85)\\Reputation\\Guardians of Hyjal",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Reputation\\Guardians of Hyjal",{
 author="support@zygorguides.com",
 description="Walks you through the process\nof obtaining Exalted reputation\nwith the Guardians of Hyjal\nfaction.",
 },[[
@@ -11672,7 +11672,7 @@ Once you earn Friendly reputation with the Guardians of Hyjal faction, you can b
 |tip Wear the Tabard of the Guardians of Hyjal and use the Dungeon Finder tool to complete random Cataclysm Heroics.  You will gain reputation with the Guardians of Hyjal faction for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
 You can buy the Tabard of the Guardians of Hyjal by talking to Provisioner Whitecloud at [Mount Hyjal 62.8,23.9]
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Cataclysm (80 - 85)\\Reputation\\The Earthen Ring",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Reputation\\The Earthen Ring",{
 author="support@zygorguides.com",
 description="Walks you through the process\nof obtaining Exalted reputation\nwith The Earthen Ring faction.",
 },[[
@@ -11686,7 +11686,7 @@ Once you earn Friendly reputation with The Earthen Ring faction, you can buy the
 |tip Wear the Tabard of the Earthen Ring and use the Dungeon Finder tool to complete random Cataclysm Heroics.  You will gain reputation with The Earthen Ring faction for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
 You can buy the Tabard of the Earthen Ring by talking to Provisioner Arok at [Shimmering Expanse 49.1,42.2]
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Cataclysm (80 - 85)\\Reputation\\Therazane",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Reputation\\Therazane",{
 author="support@zygorguides.com",
 description="Walks you through the process\nof obtaining Exalted reputation\nwith the Therazane faction.",
 },[[
@@ -11700,7 +11700,7 @@ Once you earn Friendly reputation with the Therazane faction, you can buy the Ta
 |tip Wear the Tabard of Therazane and use the Dungeon Finder tool to complete random Cataclysm Heroics.  You will gain reputation with the Therazane faction for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
 You can buy the Tabard of Therazane by talking to D'lom the Collector at [Deepholm 56.95,13.08]
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Cataclysm (80 - 85)\\Reputation\\Ramkahen",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Reputation\\Ramkahen",{
 author="support@zygorguides.com",
 description="Walks you through the process\nof obtaining Exalted reputation\nwith the Ramkahen faction.",
 },[[
@@ -11714,7 +11714,7 @@ Once you earn Friendly reputation with the Ramkahen faction, you can buy the Tab
 |tip Wear the Tabard of Ramkahen and use the Dungeon Finder tool to complete random Cataclysm Heroics.  You will gain reputation with the Ramkahen faction for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
 You can buy the Tabard of Ramkahen by talking to Blacksmith Abasi at [Uldum 54.1,33.3]
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Cataclysm (80 - 85)\\Reputation\\Dragonmaw Clan",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Reputation\\Dragonmaw Clan",{
 author="support@zygorguides.com",
 description="Walks you through the process\nof obtaining Exalted reputation\nwith the Dragonmaw Clan faction.",
 },[[
@@ -11728,7 +11728,7 @@ Once you earn Friendly reputation with the Dragonmaw Clan faction, you can buy t
 |tip Wear the Tabard of the Dragonmaw Clan and use the Dungeon Finder tool to complete random Cataclysm Heroics.  You will gain reputation with the Dragonmaw Clan faction for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
 You can buy the Tabard of the Dragonmaw Clan by talking to Grot Deathblow at [Twilight Highlands 53.9,42.1]
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Cataclysm (80 - 85)\\Reputation\\Hellscream's Reach",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Reputation\\Hellscream's Reach",{
 author="support@zygorguides.com",
 description="Walks you through the process\nof obtaining Exalted reputation\nwith the Hellscream's Reach faction.",
 },[[
@@ -11742,7 +11742,7 @@ Complete the Baradin Hold Dailies guide in the Tol Barad section.
 Once you earn Friendly reputation with the Hellscream's Reach faction, you can buy Hellscream's Reach Commendations from Pogg at [54.5,81.3]
 |tip They cost 10 Tol Barad Commendations each and you can use the Hellscream's Reach Commendations to increase your Hellscream's Reach reputation by 250.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Cataclysm (80 - 85)\\Zandalari Menace Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Zandalari Menace Quest Line",{
 author="support@zygorguides.com",
 startlevel=85,
 description="Walks you through completing\nthe Zandalari Menace quest line\nin Stranglethorn Vale.\nYou must be level 85 to be\nable to use this guide.",
@@ -11897,7 +11897,7 @@ To continue with the Zul'Gurub dungeon quest line:
 talk Baron Revilgaz##2496
 accept Booty Bay's Interests##29251 |goto 41.2,73.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Cataclysm (80 - 85)\\Mount Hyjal\\How To Use Firelands Guide Sections - READ FIRST",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Mount Hyjal\\How To Use Firelands Guide Sections - READ FIRST",{
 author="support@zygorguides.com",
 description="Walks you through how to use the\nFirelands guide sections.",
 },[[
@@ -11908,7 +11908,7 @@ _
 You will need to use the Firelands Quests and Firelands Dailies together. Complete as many quests as you can in the Firelands Quests guide section, and use the Firelands Dailies guide section to gain Marks of the World Tree.
 |tip Marks of the World Tree are currency needed to complete certain quests in order to unlock more daily quests.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Cataclysm (80 - 85)\\Mount Hyjal\\Firelands Dailies with Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Mount Hyjal\\Firelands Dailies with Pre-Quests",{
 author="support@zygorguides.com",
 description="Contains the pre-quests to unlock the Firelands quest line and daily quests.\nYou must be at least level 80 to complete this guide section.",
 },[[
@@ -12748,7 +12748,7 @@ step
 label "RestartDailies"
 Click this line to return to the beginning of the Firelands Dailies guide section |confirm |next "firelands"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Cataclysm (80 - 85)\\Mount Hyjal\\The Call of the World-Shaman Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Mount Hyjal\\The Call of the World-Shaman Quest Line",{
 author="support@zygorguides.com",
 description="Walks you through completing the\nCall of the World-Shaman quest\nline.",
 },[[

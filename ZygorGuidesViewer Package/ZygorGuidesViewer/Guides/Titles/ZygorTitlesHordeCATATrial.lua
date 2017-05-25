@@ -3,8 +3,14 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("TitlesH") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Titles\\Miscellaneous Titles\\The Diplomat\\Timbermaw Hold Faction",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\General\\Explorer\\Kalimdor",{
+description="This guide section will walk you through completing\nthe Explorer achievement.",
+},[[
+leechsteps "Zygor's Achievements Guides\\Exploration Achievements\\Kalimdor\\Explore Kalimdor"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\The Diplomat\\Timbermaw Hold Faction",{
 author="support@zygorguides.com",
+keywords={"The, Diplomat"},
 },[[
 step
 talk Nafien##15395
@@ -150,9 +156,4 @@ Exalted with Timbermaw Hold |next "exalted" |condition rep('Timbermaw Hold')==Ex
 step
 label	"exalted"
 Congratulations, you are now Exalted with Timbermaw Hold!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Titles\\Explorer Achievement\\Kalimdor",{
-description="This guide section will walk you through completing\nthe Explorer achievement.",
-},[[
-leechsteps "Zygor's Horde Achievements Guides\\Exploration Achievements\\Kalimdor\\Explore Kalimdor"
 ]])

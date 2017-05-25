@@ -20,6 +20,8 @@ DGV.SmallFrame = SmallFrame
 
 SmallFrame.Frame = CreateFrame("Frame", "DugisSmallFrameContainer", UIParent)
 DugisSmallFrame = SmallFrame.Frame
+DugisSmallFrame:SetFrameStrata("BACKGROUND")
+DugisSmallFrame:SetFrameLevel(9)
 SmallFrame.Frame:SetHeight(52)
 SmallFrame.Frame:SetMovable(true)
 SmallFrame.Frame:SetPoint("CENTER", 0, 220)
@@ -738,8 +740,8 @@ function SmallFrame:Initialize()
 			frame:ClearAllPoints()
 			if setting=="Relative to Watch Frame" and DugisWatchBackground:IsShown() then
 				local anchorFrame = DugisWatchBackground
-				local top, bottom, left, right = frame:GetTop(), frame:GetBottom(), frame:GetLeft(), frame:GetRight()
-				local wfTop, wfBottom, wfLeft, wfRight = anchorFrame:GetTop(), anchorFrame:GetBottom(), anchorFrame:GetLeft(), anchorFrame:GetRight()
+				local top, bottom, left, right = frame:GetTop() or 0, frame:GetBottom() or 0, frame:GetLeft() or 0, frame:GetRight() or 0
+				local wfTop, wfBottom, wfLeft, wfRight = anchorFrame:GetTop() or 0, anchorFrame:GetBottom() or 0, anchorFrame:GetLeft() or 0, anchorFrame:GetRight() or 0
 				local sharedWidth, sharedHeight = math.min(right, wfRight) - math.max(left, wfLeft), math.min(top, wfTop) - math.max(bottom, wfBottom)
 				local sharedSide = math.max(sharedHeight, sharedWidth)
 				sharedSide = sharedSide>0 and sharedSide
@@ -1114,6 +1116,9 @@ function SmallFrame:Initialize()
 	SmallFrame.Load = function()
         if _G["SmallFrameProgressBar"] == nil then
             CreateFrame("StatusBar", "SmallFrameProgressBar", SmallFrame.Frame, "DugisProgressBarTemplate")
+            
+            SmallFrameProgressBar:SetFrameStrata("BACKGROUND")
+            SmallFrameProgressBar:SetFrameLevel(10)
             
             SmallFrameProgressBar:SetScript("OnEnter", function()
                 if not DugisGuideViewer:UserSetting(DGV_DISPLAYGUIDESPROGRESSTEXT) then

@@ -3,13 +3,13 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("DailiesHMOP") then return end
 ZygorGuidesViewer.GuideMenuTier = "MOP"
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\The Anglers Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Anglers Dailies",{
 startlevel=90,
 description="This guide will take you through The Anglers dailies\nBecoming Exalted with The Anglers allows you to purchase a companion pet, fishing poles, and water mounts.",
 },[[
 #include "H_Anglers"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\The August Celestials Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Pandaria (85 - 90)\\The August Celestials Dailies",{
 completion={"quests"},
 startlevel=90,
 description="This guide will take you through The August Celestials dailies\nBecoming Exalted with The August Celestials allows you to purchase flying mounts and armor for your character.",
@@ -19,21 +19,21 @@ step
 label end
 This is the end of the current guide. Click here to go back to the beginning |confirm |next "startaug"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\The Order of the Cloud Serpent Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Order of the Cloud Serpent Dailies",{
 completion={"quests",10,11,18},
 startlevel=90,
 description="This guide will take you through the Order of the Cloud Serpent dailies\nBecoming Exalted with The Order of the Cloud Serpent allows you to purchase flying mounts and designs for companion pets.",
 },[[
 #include "H_Cloud_Serpent"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies",{
 completion={"quests"},
 startlevel=90,
 description="This guide will take you through the Shado-Pan dailies\nBecoming Exalted with The Shado-Pan allows you to purchase ground mounts and armor for your character.",
 },[[
 #include "Shado_Pan_Daily_H"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\The Tillers Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Tillers Dailies",{
 startlevel=90,
 completion={"quests"},
 description="This guide will take you through The Tillers dailies\nBecoming Exalted with The Tillers allows you to purchase ground mounts and recipes for your character.",
@@ -41,7 +41,7 @@ description="This guide will take you through The Tillers dailies\nBecoming Exal
 step
 #include "H_Tillers"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\The Golden Lotus Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Golden Lotus Dailies",{
 achieveid={7315,6546},
 startlevel=90,
 description="This guide will take you through The Golden Lotus dailies\nBecoming Exalted with the Golden Lotus allows you to purchase a crowd control trinket and some armor. At Honored, you can purchase chest armor, rings, and shoulders. At Revered, you can purchase 3 ground mounts.",
@@ -54,13 +54,13 @@ label "prequests"
 #include "Golden_Lotus_PreQuests"
 #include "Golden_Lotus"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\The Klaxxi Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Klaxxi Dailies",{
 startlevel=90,
 description="This guide will take you through The Klaxxi dailies\nBecoming Exalted with The Klaxxi allows you to purchase ground mounts, plans for blacksmithing, armor, and weapons for your character.",
 },[[
 #include "H_Klaxxi"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\Pandaria Cooking Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Pandaria (85 - 90)\\Pandaria Cooking Dailies",{
 completion={"quests"},
 startlevel=90,
 description="This guide will take you through the Cooking dailies",
@@ -75,26 +75,26 @@ step
 label "cookday"
 #include "H_MOP_Cooking_Dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\Dominance Offensive Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Pandaria (85 - 90)\\Dominance Offensive Dailies",{
 startlevel=90,
 description="This guide will take you through The Dominance Offensive dailies\nBecoming Exalted with the Dominance Offensive allows you to purchase an epic flying mount, epic armor, and battle pets for your character.",
 },[[
 #include "Dominance_Offensive"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\Beast Master Dailies (Dominance Offensive)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Pandaria (85 - 90)\\Beast Master Dailies (Dominance Offensive)",{
 startlevel=90,
 description="This guide will take you through the bonus Dominance Offensive Dailies.",
 },[[
 #include "Sturdy_Traps"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\Sunreaver Onslaught Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Pandaria (85 - 90)\\Sunreaver Onslaught Dailies",{
 startlevel=90,
 description="This guide will take you through the Sunreaver Onslaught Dailies.",
 },[[
 step
 #include "Sunreavers_dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\Timeless Isle Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Pandaria (85 - 90)\\Timeless Isle Dailies",{
 startlevel=90,
 description="This guide will help you complete the dailies on the Timeless Isle.\nCompleting these dailies awards you with Timeless Coins.",
 },[[

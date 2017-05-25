@@ -996,7 +996,7 @@ ZygorGuidesViewer:RegisterInclude("A_SSO_PreQuest_Dailies",[[
 		only if skill("Mining")>=300
 	step
 		Click the Multiphase Spectographic Goggles to wear them. |use Multiphase Spectrographic Goggles##35233 |goto Nagrand 38.3,65.3
-		Get the Multiphase Goggles buff |havebuff Interface\Icons\Spell_Magic_LesserInvisibilty 
+		Get the Multiphase Goggles buff |havebuff 135994 --Spell_magic_lesserinvisibility
 		|tip You have to be in the Nagrand zone to correctly get the buff.
 		only if havequest(11880)
 	step
@@ -1012,7 +1012,7 @@ ZygorGuidesViewer:RegisterInclude("A_SSO_PreQuest_Dailies",[[
 		kill Unbound Ethereal##22244+, Bash'ir Raider##22241+, Bash'ir Arcanist##22243+, Bash'ir Spell-Thief##22242+
 		collect 1 Bash'ir Phasing Device##34248 |n
 		Use the Bash'ir Phasing Device |use Bash'ir Phasing Device##34248
-		Become Out of Phase |havebuff Interface\Icons\Ability_Mage_Invisibility
+		Become Out of Phase |havebuff 132220 --Ability_mage_invisibility
 		click Smuggled Mana Cell##7257
 		Collect 10 Smuggled Mana Cell |q 11514/1 |goto Blade's Edge Mountains 54.0,18.1
 	step
@@ -4419,7 +4419,7 @@ ZygorGuidesViewer:RegisterInclude("A_Anglers", [[
 		If this quest is unavailable today, click here |confirm
 	step
 		click Goblin Fishing Raft
-		Ride a Goblin Fishing Raft |goto 67.5,44.8 |havebuff Rafting
+		Ride a Goblin Fishing Raft |goto 67.5,44.8 |havebuff 534592 --Inv_boot_leather_raiddruid_k_01
 		only if havequest(30698)
 	step
 		Use your fishing skill in the Shipwreck Debris pools to fish up 15 Rusty Shipwreck Debris
@@ -4606,7 +4606,7 @@ ZygorGuidesViewer:RegisterInclude("A_Klaxxi", [[
 		only if havequest(31237) or havequest(31231)
 	step
 		Kill creatures until you get the buff:
-		Pheremone Tracking |havebuff Interface\Icons\Ability_Rogue_BloodyEye
+		Pheremone Tracking |havebuff 132284 --Ability_rogue_bloodyeye
 		Locate and kill Eye's of the Empress. 
 		|tip Start looking for red mist on the groud first.
 		kill 6 Eye of the Empress##63783+ |goto 67.9,24.3 |q 31237/1
@@ -5511,7 +5511,7 @@ ZygorGuidesViewer:RegisterInclude("A_Tillers_DailyQuest", [[
 	step
 		talk Gai Lan##57385 |goto 38.5,51.7
 		Ask him, "What Weeds?"
-		Get the Weed War buff. |havebuff Interface\Icons\INV_Misc_Herb_05
+		Get the Weed War buff. |havebuff 134185 --Inv_misc_herb_05
 		only if havequest(30321)
 	step
 		clicknpc Ugly Weed##57306
@@ -5533,7 +5533,7 @@ ZygorGuidesViewer:RegisterInclude("A_Tillers_DailyQuest", [[
 	step
 		talk Wika-Wika##59532 |goto 39.6,45.3
 		Mook-mooks?
-		Get the Pest Problems buff |havebuff Pest Problems
+		Get the Pest Problems buff |havebuff 538518 --spell_nature_insect_swarm2
 		only if havequest(30319)
 	step
 		clicknpc Black-Nose Marmot##59530

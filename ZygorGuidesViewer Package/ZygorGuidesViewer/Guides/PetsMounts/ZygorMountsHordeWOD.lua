@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("PetsMountsHWOD") then return end
 ZygorGuidesViewer.GuideMenuTier = "WOD"
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Ground Mounts\\Achievement Mounts\\Armored Frostboar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Achievement Mounts\\Armored Frostboar",{
 keywords={"armored","frostboar","boar","ground","mount"},
 model={59347},
 condition_end="hasmount(171629)",
@@ -18,7 +18,7 @@ Armored Frostboar should be _delivered via in game mail_
 collect Armored Frostboar##116668
 learnmount Armored Frostboar##171629 |use Armored Frostboar##116668
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Ground Mounts\\Achievement Mounts\\Armored Frostwolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Achievement Mounts\\Armored Frostwolf",{
 keywords={"armored","frostwolf","wolf","ground","mount"},
 model={59753},
 condition_end="hasmount(171838)",
@@ -32,7 +32,7 @@ Armored Frostwolf should be _delivered via in game mail_
 collect Armored Frostwolf##116781
 learnmount Armored Frostwolf##171838 |use Armored Frostwolf##116781
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Ground Mounts\\Achievement Mounts\\Blacksteel Battleboar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Achievement Mounts\\Blacksteel Battleboar",{
 keywords={"blacksteel","battleboar","boar","ground","mount"},
 model={59349},
 condition_end="hasmount(171627)",
@@ -46,7 +46,7 @@ Blacksteel Battleboar should be _delivered via in game mail_
 collect Blacksteel Battleboar##116666
 learnmount Blacksteel Battleboar##171627 |use Blacksteel Battleboar##116666
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Ground Mounts\\Achievement Mounts\\Challenger's War Yeti",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Achievement Mounts\\Challenger's War Yeti",{
 keywords={"challenger","challenger's","war","yeti","ground","mount"},
 model={60577},
 condition_end="hasmount(171848)",
@@ -60,7 +60,7 @@ Challenger's War Yeti should be _delivered via in game mail_
 collect Challenger's War Yeti##116791
 learnmount Challenger's War Yeti##171848 |use Challenger's War Yeti##116791
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Ground Mounts\\Achievement Mounts\\Frostplains Battleboar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Achievement Mounts\\Frostplains Battleboar",{
 keywords={"frostplains","battleboar","boar","ground","mount"},
 model={59344},
 condition_end="hasmount(171632)",
@@ -74,7 +74,7 @@ Frostplains Battleboar should be _delivered via in game mail_
 collect Frostplains Battleboar##116670
 learnmount Frostplains Battleboar##171632 |use Frostplains Battleboar##116670
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Ground Mounts\\Achievement Mounts\\Gorestrider Gronnling",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Achievement Mounts\\Gorestrider Gronnling",{
 keywords={"gorestrider","gronnling","ground","mount"},
 model={59159},
 condition_end="hasmount(171436)",
@@ -88,7 +88,7 @@ Gorestrider Gronnling should be _delivered via in game mail_
 collect Gorestrider Gronnling##116383
 learnmount Gorestrider Gronnling##171436 |use Gorestrider Gronnling##116383
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Achievement Mounts\\Infernal Direwolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Achievement Mounts\\Infernal Direwolf",{
 keywords={"infernal","direwolf","ground","mount"},
 model={63873},
 condition_end="hasmount(186305)",
@@ -102,7 +102,7 @@ Infernal Direwolf should be _delivered via in game mail_
 collect Infernal Direwolf##127140
 learnmount Infernal Direwolf##186305 |use Infernal Direwolf##127140
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Achievement Mounts\\Chauffeured Chopper",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Achievement Mounts\\Chauffeured Chopper",{
 keywords={"chauffeured","chopper","ground","mount"},
 model={61803},
 condition_end="hasmount(9909)",
@@ -118,7 +118,7 @@ collect Chauffeured Chopper##122703
 learnmount Chauffeured Chopper##186305 |use Chauffeured Chopper##122703
 |tip This mount can be used at level 1.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Ground Mounts\\Dailies Mounts\\Trained Icehoof",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dailies Mounts\\Trained Icehoof",{
 keywords={"trained","icehoof","clefthoof","ground","mount"},
 model={59320},
 condition_end="hasmount(171617)",
@@ -220,7 +220,7 @@ step
 collect Trained Icehoof##116656
 learnmount Trained Icehoof##171617 |use Trained Icehoof##37049
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Ground Mounts\\Dailies Mounts\\Trained Meadowstomper",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dailies Mounts\\Trained Meadowstomper",{
 keywords={"trained","meadowstomper","ground","mount"},
 model={59340},
 condition_end="hasmount(171623)",
@@ -291,7 +291,7 @@ step
 collect Trained Meadowstomper##116662
 learnmount Trained Meadowstomper##171623 |use Trained Meadowstomper##116662
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Ground Mounts\\Dailies Mounts\\Trained Riverwallow",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dailies Mounts\\Trained Riverwallow",{
 keywords={"trained","riverwallow","ground","mount"},
 model={59743},
 condition_end="hasmount(171638)",
@@ -374,7 +374,7 @@ step
 collect Trained Riverwallow##116676
 learnmount Trained Riverwallow##171638 |use Trained Riverwallow##116676
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Ground Mounts\\Dailies Mounts\\Trained Rocktusk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dailies Mounts\\Trained Rocktusk",{
 keywords={"trained","rocktusk","ground","mount"},
 model={59735},
 condition_end="hasmount(171637)",
@@ -463,7 +463,7 @@ step
 collect Trained Rocktusk##116675
 learnmount Trained Rocktusk##171637 |use Trained Rocktusk##116675
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Ground Mounts\\Dailies Mounts\\Trained Silverpelt",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dailies Mounts\\Trained Silverpelt",{
 keywords={"trained","silverpelt","talbuk","ground","mount"},
 model={59365},
 condition_end="hasmount(171831)",
@@ -564,7 +564,7 @@ step
 collect Trained Silverpelt##116774
 learnmount Trained Silverpelt##171831 |use Trained Silverpelt##116774
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Ground Mounts\\Dailies Mounts\\Trained Snarler",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dailies Mounts\\Trained Snarler",{
 keywords={"trained","snarler","wolf","ground","mount"},
 model={59757},
 condition_end="hasmount(171841)",
@@ -635,7 +635,7 @@ step
 collect Trained Snarler##116784
 learnmount Trained Snarler##171841 |use Trained Snarler##116784
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Ground Mounts\\Dropped Mounts\\Bloodhoof Bull",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dropped Mounts\\Bloodhoof Bull",{
 keywords={"bloodhoof","bull","clefthoof","ground","mount"},
 model={59323},
 condition_end="hasmount(171620)",
@@ -653,7 +653,7 @@ kill Nakk the Thunderer##50990
 collect Bloodhoof Bull##116659
 learnmount Bloodhoof Bull##171620 |use Bloodhoof Bull##116659
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Ground Mounts\\Dropped Mounts\\Garn Nighthowl",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dropped Mounts\\Garn Nighthowl",{
 keywords={"garn","nighthowl","wolf","ground","mount"},
 model={54114},
 condition_end="hasmount(171851)",
@@ -681,7 +681,7 @@ step
 label "done"
 learnmount Garn Nighthowl##171851 |use Garn Nighthowl##116794
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Ground Mounts\\Dropped Mounts\\Great Greytusk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dropped Mounts\\Great Greytusk",{
 keywords={"great","greytusk","boar","ground","mount"},
 model={59736},
 condition_end="hasmount(171636)",
@@ -699,7 +699,7 @@ kill Gorok##50992
 collect Great Greytusk##116674
 learnmount Great Greytusk##171636 |use Great Greytusk##116674
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Ground Mounts\\Dropped Mounts\\Mottled Meadowstomper",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dropped Mounts\\Mottled Meadowstomper",{
 keywords={"mottled","meadowstomper","ground","mount"},
 model={59339},
 condition_end="hasmount(171622)",
@@ -717,7 +717,7 @@ kill Luk'hok##50981
 collect Mottled Meadowstomper##116661
 learnmount Mottled Meadowstomper##171622 |use Mottled Meadowstomper##116661
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Ground Mounts\\Dropped Mounts\\Sapphire Riverbeast",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dropped Mounts\\Sapphire Riverbeast",{
 keywords={"sapphire","riverbeast","ground","mount"},
 model={59744},
 condition_end="hasmount(171824)",
@@ -734,7 +734,7 @@ kill Silthide##51015
 collect Sapphire Riverbeast##116767
 learnmount Sapphire Riverbeast##171824 |use Sapphire Riverbeast##116767
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Ground Mounts\\Dropped Mounts\\Sunhide Gronnling",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dropped Mounts\\Sunhide Gronnling",{
 keywords={"sunhide","gronnling","ground","mount"},
 model={60578},
 condition_end="hasmount(171849)",
@@ -752,7 +752,7 @@ kill Poundfist##50985
 collect Sunhide Gronnling##116792
 learnmount Sunhide Gronnling##171849 |use Sunhide Gronnling##116792
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Ground Mounts\\Dropped Mounts\\Swift Breezestrider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dropped Mounts\\Swift Breezestrider",{
 keywords={"swift","breezestrider","talbuk","ground","mount"},
 model={59364},
 condition_end="hasmount(171830)",
@@ -771,7 +771,7 @@ kill Pathrunner##50883
 collect Swift Breezestrider##116773
 learnmount Swift Breezestrider##171830 |use Swift Breezestrider##116773
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Ground Mounts\\Dropped Mounts\\Warsong Direfang",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dropped Mounts\\Warsong Direfang",{
 condition_end="hasmount(171837)",
 keywords={"ground","warsong","direfang","ground","mount"},
 model={59752},
@@ -797,7 +797,7 @@ learnmount Warsong Direfang##171837
 step
 Congratulations, you earned the _Warsong Direfang_ mount!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Ground Mounts\\Dropped Mounts\\Armored Razorback",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dropped Mounts\\Armored Razorback",{
 condition_end="hasmount(171630)",
 keywords={"armored","razorback","ground","mount"},
 model={59346},
@@ -823,7 +823,7 @@ learnmount Armored Razorback##171630
 step
 Congratulations, you earned the _Armored Razorback_ mount!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Ground Mounts\\Dropped Mounts\\Tundra Icehoof",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Dropped Mounts\\Tundra Icehoof",{
 condition_end="hasmount(171619)",
 keywords={"tundra","icehoof","ground","mount"},
 model={59324},
@@ -849,7 +849,7 @@ learnmount Tundra Icehoof##171619
 step
 Congratulations, you earned the _Tundra Icehoof_ mount!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Event Mounts\\Minion of Grumpus",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Event Mounts\\Minion of Grumpus",{
 keywords={"Minion","of","Grumpus","ground","event","mount"},
 model={64960},
 condition_end="hasmount(191314)",
@@ -897,7 +897,7 @@ collect Minion of Grumpus##128671
 learnmount Minion of Grumpus##191314 |use Minion of Grumpus##128671
 |modelnpc 128671
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Miscellaneous Mounts\\Voidtalon of the Dark Star",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Miscellaneous Mounts\\Voidtalon of the Dark Star",{
 keywords={"void","talon","dark","star","ground","miscellaneous","mount"},
 model={38783},
 condition_end="hasmount(179478)",
@@ -927,7 +927,7 @@ learnmount Voidtalon of the Dark Star##179478 |use Voidtalon of the Dark Star#12
 step
 Congratulations, you have attained the _Voidtalon of the Dark Star_ mount!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Miscellaneous Mounts\\Illidari Felstalker",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Miscellaneous Mounts\\Illidari Felstalker",{
 keywords={"Illidari","Felstalker","collector's","collectors","edition","ground","mount"},
 model={64582},
 condition_end="hasmount(189998)",
@@ -941,7 +941,7 @@ learnmount Illidari Felstalker##189998 |use Reins of the Illidari Felstalker#128
 step
 Congratulations, you have attained the _Illidari Felstalker_ mount!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Player vs. Player Mounts\\Vicious Skeletal Warhorse",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Vicious Skeletal Warhorse",{
 keywords={"vicious","skeletal","warhorse","ground","mount"},
 model={51048},
 condition_end="hasmount(146622)",
@@ -961,7 +961,7 @@ step
 Use the _Reins of the Vicious Skeletal Warhorse_ in your bags |use Reins of the Vicious Skeletal Warhorse##102533
 learnmount Vicious Skeletal Warhorse##146622
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Player vs. Player Mounts\\Vicious War Wolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Vicious War Wolf",{
 keywords={"vicious","war","wolf","ground","mount"},
 condition_end="hasmount(100333)",
 model={38607},
@@ -981,7 +981,7 @@ buy 1 Vicious War Wolf##70910 |goto Orgrimmar/1 41.9,73.2
 step
 learnmount Vicious War Wolf##100333 |use Vicious War Wolf##70910
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Player vs. Player Mounts\\Vicious War Raptor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Vicious War Raptor",{
 keywords={"vicious","war","raptor","player","ground","mount"},
 model={60575},
 condition_end="hasmount(171835)",
@@ -1004,7 +1004,7 @@ learnmount Vicious War Raptor##171835
 step
 Congratulations, you earned the _Vicious War Raptor_ mount!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Player vs. Player Mounts\\Vicious War Kodo",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Vicious War Kodo",{
 model={63580},
 keywords={"vicious","war","kodo","player","ground","mount"},
 condition_end="hasmount(185052)",
@@ -1027,7 +1027,7 @@ learnmount Vicious War Kodo##185052
 step
 Congratulations, you earned the _Vicious War Kodo_ mount!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Player vs. Player Mounts\\Wild Gladiator's Felblood Gronnling",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Wild Gladiator's Felblood Gronnling",{
 keywords={"wild","gladiator's","felblood","gronnling","pvp","rated","battlegrounds","arena","ground","mount"},
 model={64378},
 condition_end="hasmount(189043)",
@@ -1039,7 +1039,7 @@ Earn the title Gladiator |achieve 2091
 |tip To do this, press "I", then select the "Player vs. Player" tab, then select the "Rated" section.
 |tip This mount is rewarded at the end of season 2.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Profession Mounts\\Leatherworking\\Dustmane Direwolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Profession Mounts\\Leatherworking\\Dustmane Direwolf",{
 keywords={"leatherworking","dustmane","direwolf","wolf","ground","mount"},
 model={59762},
 condition_end="hasmount(171844)",
@@ -1096,7 +1096,7 @@ step
 create 1 Riding Harness##171844,Leatherworking,600
 learnmount Dustmane Direwolf##171844 |use Riding Harness##108883
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Ground Mounts\\Raid Mounts\\Felsteel Annihilator",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Raid Mounts\\Felsteel Annihilator",{
 condition_end="hasmount(182912)",
 model={62893},
 description="This guide will help you acquire the Felsteel Annihilator mount.",
@@ -1113,7 +1113,7 @@ learnmount Felsteel Annihilator##182912
 step
 Congratulations, you earned the _Felsteel Annihilator_ mount!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Ground Mounts\\Raid Mounts\\Ironhoof Destroyer",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Raid Mounts\\Ironhoof Destroyer",{
 condition_end="hasmount(171621)",
 model={59837},
 description="This guide will help you acquire the Ironhoof Destroyer mount.",
@@ -1130,7 +1130,7 @@ learnmount Felsteel Annihilator##171621
 step
 Congratulations, you earned the _Ironhoof Destroyer_ mount!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Reputation Mounts\\Breezestrider Stallion",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Breezestrider Stallion",{
 keywords={"breezestrider","stallion","ground","mount"},
 model={59366},
 condition_end="hasmount(171832)",
@@ -1138,14 +1138,14 @@ description="This guide will help you acquire the Breezestrider Stallion mount."
 },[[
 step
 This mount is _Horde only_ and requires you to be _Exalted_ with the _Vol'jin's Spear_
-_Click here_ for the reputation guide. |confirm |next "Zygor's Horde Reputations Guides\\Warlords of Draenor\\Vol'jin's Spear"
+_Click here_ for the reputation guide. |confirm |next "Zygor's Reputations Guides\\Warlords of Draenor\\Vol'jin's Spear"
 |confirm
 step
 talk Dazzerian##85115 |goto Warspear 47.0,21.4
 buy Breezestrider Stallion##116775
 learnmount Breezestrider Stallion##171832 |use Breezestrider Stallion##116775
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Reputation Mounts\\Domesticated Razorback",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Domesticated Razorback",{
 keywords={"domesticated","razorback","boar","exalted","the","steamwheedle","preservation","society","ground","mount"},
 model={59738},
 condition_end="hasmount(171634)",
@@ -1153,14 +1153,14 @@ description="This guide will help you acquire the Domesticated Razorback mount."
 },[[
 step
 This mount requires you to be _Exalted_ with the _Steamwheedle "Preservation" Society_
-_Click here_ for the reputation guide |confirm |next "Zygor's Horde Reputations Guides\\Warlords of Draenor\\Steamwheedle Preservation Society"
+_Click here_ for the reputation guide |confirm |next "Zygor's Reputations Guides\\Warlords of Draenor\\Steamwheedle Preservation Society"
 |confirm
 step
 talk Gazrix Gearlock##88482 |goto Stormshield 43.2,77.4
 buy Domesticated Razorback##116672
 learnmount Domesticated Razorback##171634 |use Domesticated Razorback##116672
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Reputation Mounts\\Ironside Warwolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Ironside Warwolf",{
 keywords={"ironside","warwolf","wolf","ground","mount"},
 model={59754},
 condition_end="hasmount(171839)",
@@ -1168,14 +1168,14 @@ description="This guide will help you acquire the Ironside Warwolf mount.",
 },[[
 step
 This mount is _Horde only_ and requires you to be _Exalted_ with the _Laughing Skull Orcs_
-_Click here_ for the reputation guide. |confirm |next "Zygor's Horde Reputations Guides\\Warlords of Draenor\\Laughing Skull Orcs"
+_Click here_ for the reputation guide. |confirm |next "Zygor's Reputations Guides\\Warlords of Draenor\\Laughing Skull Orcs"
 |confirm
 step
 talk Kil'rip##86698 |goto Frostwall 58.6,26.6
 buy Ironside Warwolf##116782
 learnmount Ironside Warwolf##171839 |use Ironside Warwolf##116782
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Reputation Mounts\\Shadowmane Charger",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Shadowmane Charger",{
 keywords={"horse","warhorse","shadowmane","charger","exalted","the","arakkoa","outcasts","ground","mount"},
 model={59363},
 condition_end="hasmount(171829)",
@@ -1183,14 +1183,14 @@ description="This guide will help you acquire the Shadowmane Charger mount.",
 },[[
 step
 This mount requires you to be _Exalted_ with the _Arakkoa Outcasts_
-_Click here_ for the reputation guide. |confirm |next "Zygor's Horde Reputations Guides\\Warlords of Draenor\\Arakkoa Outcasts"
+_Click here_ for the reputation guide. |confirm |next "Zygor's Reputations Guides\\Warlords of Draenor\\Arakkoa Outcasts"
 |confirm
 step
 talk Ravenspeaker Skeega##86037 |goto Warspear 54.0,61.0
 buy Shadowmane Charger##116772
 learnmount Shadowmane Charger##171829 |use Shadowmane Charger##116772
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Reputation Mounts\\Swift Frostwolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Swift Frostwolf",{
 keywords={"swift","frostwolf","wolf","exalted","frostwolf","orcs","ground","mount"},
 model={59759},
 condition_end="hasmount(171842)",
@@ -1198,14 +1198,14 @@ description="This guide will help you acquire the Swift Frostwolf mount.",
 },[[
 step
 This mount is _Horde only_ and requires you to be _Exalted_ with the _Frostwolf Orcs_
-_Click here_ for the reputation guide. |confirm |next "Zygor's Horde Reputations Guides\\Warlords of Draenor\\Frostwolf Orcs"
+_Click here_ for the reputation guide. |confirm |next "Zygor's Reputations Guides\\Warlords of Draenor\\Frostwolf Orcs"
 |confirm
 step
 talk Beska Redtusk##86036 |goto Warspear 53.6,62.6
 buy Swift Frostwolf##116785
 learnmount Swift Frostwolf##171842 |use Swift Frostwolf##116785
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Reputation Mounts\\Wild Goretusk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Wild Goretusk",{
 keywords={"wild","gore","tusk","ground","mount","reputation"},
 model={59739},
 condition_end="hasmount(171633)",
@@ -1224,7 +1224,7 @@ learnmount Wild Goretusk##171633
 step
 Congratulations, you earned the _Wild Goretusk_ mount!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Reputation Mounts\\Bristling Hellboar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Bristling Hellboar",{
 keywords={"bristling","hell","boar","ground","mount","reputation"},
 model={64726},
 condition_end="hasmount(190690)",
@@ -1243,7 +1243,7 @@ learnmount Bristling Hellboar##190690
 step
 Congratulations, you earned the _Bristling Hellboar_ mount!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Reputation Mounts\\Deathtusk Felboar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Reputation Mounts\\Deathtusk Felboar",{
 keywords={"death","tusk","fel","boar","ground","mount","reputation"},
 model={64849},
 condition_end="hasmount(190977)",
@@ -1262,7 +1262,7 @@ learnmount Deathtusk Felboar##190977
 step
 Congratulations, you earned the _Deathtusk Felboar_ mount!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Garrison Mounts\\Mudback Riverbeast",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Garrison Mounts\\Mudback Riverbeast",{
 keywords={"mudback","river","beast","ground","garrison","mount"},
 model={59746},
 condition_end="hasmount(171826)",
@@ -1278,7 +1278,7 @@ learnpet Mudback Riverbeast##171826 |goto Frostfire Ridge/0 42.1,70.9
 step
 Congratulations, you earned the _Mudback Riverbeast_ mount!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Garrison Mounts\\Coalfist Gronnling",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Garrison Mounts\\Coalfist Gronnling",{
 keywords={"coalfist","gronnling","ground","mount","garrison"},
 model={64426},
 condition_end="hasmount(189364)",
@@ -1294,7 +1294,7 @@ learnpet Coalfist Gronnling##189364
 step
 Congratulations, you earned the _Coalfist Gronnling_ mount!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Garrison Mounts\\Garn Steelmaw",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Garrison Mounts\\Garn Steelmaw",{
 keywords={"garn","steelmaw","wolf","ground","mount"},
 model={59756},
 condition_end="hasmount(171836)",
@@ -1308,7 +1308,7 @@ Open the _Routed Invader's Crate of Spoils_ |use Routed Invader's Cache of Spoil
 collect Garn Steelmaw##116779
 learnmount Garn Steelmaw##171836 |use Garn Steelmaw##116779
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Garrison Mounts\\Giant Coldsnout",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Garrison Mounts\\Giant Coldsnout",{
 keywords={"giant","coldsnout","boar","ground","mount"},
 model={59737},
 condition_end="hasmount(171635)",
@@ -1322,7 +1322,7 @@ Open the _Routed Invader's Crate of Spoils_ |use Routed Invader's Cache of Spoil
 collect Giant Coldsnout##116673
 learnmount Giant Coldsnout##171635 |use Giant Coldsnout##116673
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Garrison Mounts\\Shadowhide Pearltusk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Garrison Mounts\\Shadowhide Pearltusk",{
 keywords={"shadowhide","pearltusk","ground","mount"},
 model={59341},
 condition_end="hasmount(171624)",
@@ -1336,7 +1336,7 @@ Open the _Routed Invader's Crate of Spoils_ |use Routed Invader's Cache of Spoil
 collect Shadowhide Pearltusk##116663
 learnmount Shadowhide Pearltusk##171624 |use Shadowhide Pearltusk##116663
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Garrison Mounts\\Smoky Direwolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Garrison Mounts\\Smoky Direwolf",{
 keywords={"smoky","direwolf","smokey","wolf","ground","mount"},
 model={59760},
 condition_end="hasmount(171633)",
@@ -1350,7 +1350,7 @@ Open the _Routed Invader's Crate of Spoils_ |use Routed Invader's Cache of Spoil
 collect Smoky Direwolf##116786
 learnmount Smoky Direwolf##171843 |use Smoky Direwolf##116786
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Unavailable Mounts\\Core Hound",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Core Hound",{
 keywords={"core","hound","corehound","molten"},
 model={11997},
 condition_end="hasmount(170347)",
@@ -1360,7 +1360,7 @@ step
 The Core Hound was a limited-time reward for completing the new Molten Core upon the launch of Warlords of Draenor
 This mount was retired from service on January 13, 2015
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Unavailable Mounts\\Primal Gladiator's Felblood Gronnling",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Primal Gladiator's Felblood Gronnling",{
 keywords={"primal","gladiator","felblood","gronnling","mount","unavailable","ground"},
 model={63956},
 condition_end="hasmount(186828)",
@@ -1370,7 +1370,7 @@ step
 The Primal Gladiator's Felblood Gronnling was givin to the top .05% of pvp players with at least 50 arena wins at the end of the season
 The season ended June 23rd, 2015
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Unavailable Mounts\\Warlord's Deathwheel",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Unavailable Mounts\\Warlord's Deathwheel",{
 keywords={"warlord","deathwheel","mount","unavailable","ground"},
 model={60208},
 condition_end="hasmount(171845)",
@@ -1380,7 +1380,7 @@ step
 The Warlord's Deathwheel was a reward given to only the horde for winning the Azerith Choppers competition
 If you logged into a horde character between July 25th, 2014 and September 30th, 2014 you recieved this mount via in-game mail
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Vendor Mounts\\Crimson Water Strider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Vendor Mounts\\Crimson Water Strider",{
 keywords={"crimson","water","strider","waterwalking","nat","pagle","ground","mount"},
 model={43713},
 condition_end="hasmount(127271)",
@@ -1398,7 +1398,7 @@ learnmount Crimson Water Strider##127271 |use Reins of the Crimson Water Strider
 step
 Congratulations, you earned the _Crimson Water Strider_ mount!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Vendor Mounts\\Mosshide Riverwallow",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Vendor Mounts\\Mosshide Riverwallow",{
 keyword={"mosshide","riverwallow","ground","mount"},
 model={59745},
 condition_end="hasmount(171825)",
@@ -1412,7 +1412,7 @@ learnmount Mosshide Riverwallow##171825 |use Mosshide Riverwallow##116768
 step
 Congratulations, you earned the _Mosshide Riverswallow_ mount!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Vendor Mounts\\Rocktusk Battleboar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Vendor Mounts\\Rocktusk Battleboar",{
 keywords={"battleboar","rocktusk","mount","ground","vendor"},
 model={59348},
 condition_end="hasmount(171628)",
@@ -1428,7 +1428,7 @@ learnmount Rocktusk Battleboar##171628
 step
 Congratulations, you earned the _Rocktusk Battleboar_ mount!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Ground Mounts\\Vendor Mounts\\Witherhide Cliffstomper",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Ground Mounts\\Vendor Mounts\\Witherhide Cliffstomper",{
 keywords={"witherhide","cilffstomper","ground","mount","vendor"},
 model={59321},
 condition_end="hasmount(171616)",
@@ -1444,7 +1444,7 @@ learnmount Witherhide Cliffstomper##171616
 step
 Congratulations, you earned the _Witherhide Cliffstomper_ mount!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Flying Mounts\\Achievement Mounts\\Felfire Hawk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Felfire Hawk",{
 keywords={"felfire","hawk","ground","mount"},
 model={38032},
 condition_end="hasmount(97501)",
@@ -1458,7 +1458,7 @@ Felfire Hawk should be _delivered via in game mail_
 collect Felfire Hawk##69226
 learnmount Felfire Hawk##97501 |use Felfire Hawk##69226
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Flying Mounts\\Achievement Mounts\\Soaring Skyterror",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Soaring Skyterror",{
 keywords={"soaring","skyterror","flying","mount","achievement"},
 model={65040},
 condition_end="hasmount(191633)",
@@ -1474,7 +1474,7 @@ learnmount Soaring Skyterror##191633
 step
 Congratulations, you earned the _Soaring Skyterror_ mount!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Flying Mounts\\Achievement Mounts\\Emerald Drake",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Emerald Drake",{
 keywords={"emerald","drake","flying","mount"},
 model={25834},
 condition_end="hasmount(175700)",
@@ -1490,7 +1490,7 @@ learnmount Reins of the Emerald Drake##175700 |use Reins of the Emerald Drake##1
 step
 Congratulations, you earned the _Emerald Drake_ mount!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Flying Mounts\\Achievement Mounts\\Reins of the Heavenly Azure Cloud Serpent",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Achievement Mounts\\Reins of the Heavenly Azure Cloud Serpent",{
 keywords={"Reins","of","the","Heavenly","Azure","Cloud","Serpent","flying","mount"},
 model={43697},
 condition_end="hasmount(127169)",
@@ -1506,7 +1506,7 @@ learnmount Reins of the Heavenly Azure Cloud Serpent##127169 |use Reins of the H
 step
 Congratulations, you earned the _Reins of the Heavenly Azure Cloud Serpent_ mount!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Flying Mounts\\Blizzard Store Mounts\\Grinning Reaver",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Grinning Reaver",{
 keywords={"blizzard","store","grinning","reaver","flying","mount"},
 model={55907},
 condition_end="hasmount(163025)",
@@ -1520,7 +1520,7 @@ step
 collect Grinning Reaver##112327
 learnmount Grinning Reaver##163025 |use Grinning Reaver##112327
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Flying Mounts\\Blizzard Store Mounts\\Mystic Runesaber",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Mystic Runesaber",{
 keywords={"blizzard","store","mystic","runesaber","flying","mount"},
 model={62148},
 condition_end="hasmount(180545)",
@@ -1534,7 +1534,7 @@ step
 collect Grinning Reaver##122469
 learnmount Grinning Reaver##180545 |use Grinning Reaver##122469
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Flying Mounts\\Dropped Mounts\\Solar Spirehawk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Solar Spirehawk",{
 keywords={"solar","spirehawk","ground","mount"},
 model={59751},
 condition_end="hasmount(171828)",
@@ -1549,7 +1549,7 @@ kill Rukhmar##87493
 collect Solar Spirehawk##116771 |goto Spires of Arak 40.0,43.0
 learnmount Solar Spirehawk##171828 |use Solar Spirehawk##116771
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Flying Mounts\\Dropped Mounts\\Infinite Timereaver",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dropped Mounts\\Infinite Timereaver",{
 keywords={"infinite","timereaver","flying","mount"},
 model={67594},
 condition_end="hasmount(201098)",
@@ -1564,7 +1564,7 @@ step
 collect Infinite Timereaver##133543
 learnmount Infinite Timereaver##201098 |use Infinite Timereaver##133543
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Flying Mounts\\Miscellaneous Mounts\\Dread Raven",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Dread Raven",{
 keywords={"dread","raven","collector's","collectors","edition","flying","mount"},
 model={53774},
 condition_end="hasmount(155741)",
@@ -1578,7 +1578,7 @@ learnmount Dread Raven##155741 |use Reins of the Dread Raven#109013
 step
 Congratulations, you have attained the Dread Raven mount!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Flying Mounts\\Miscellaneous Mounts\\Cindermane Charger",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Cindermane Charger",{
 keywords={"cindermane","charger","miscellaneous","flying","mount"},
 model={61363},
 condition_end="hasmount(171847)",
@@ -1593,7 +1593,7 @@ learnmount Cindermane Charger##171847 |use Cindermane Charger#118515
 step
 Congratulations, you have attained the _Cindermane Charger_ mount!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Flying Mounts\\Miscellaneous Mounts\\Grove Warden",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Grove Warden",{
 keywords={"Grove","Warden","miscellaneous","flying","mount"},
 model={64583},
 condition_end="hasmount(189999)",
@@ -1602,7 +1602,7 @@ description="This guide will help you acquire the Grove Warden mount.",
 step
 This mount is no longer obtainable.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Flying Mounts\\Profession Mounts\\Tailoring\\Creeping Carpet",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Profession Mounts\\Tailoring\\Creeping Carpet",{
 keywords={"tailoring","creeping","carpet","ground","mount"},
 model={46453},
 condition_end="hasmount(169952)",
@@ -1656,7 +1656,7 @@ step
 create 1 Creeping Carpet##169952,Tailoring,600
 learnmount Creeping Carpet##169952 |use Creeping Carpet##115363
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\Flying Mounts\\Reputation Mounts\\Corrupted Dreadwing",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Corrupted Dreadwing",{
 keywords={"corrupted","dreadwing","flying","mount","reputation"},
 model={63032},
 condition_end="hasmount(183117)",
@@ -1675,7 +1675,7 @@ learnmount Corrupted Dreadwing##183117
 step
 Congratulations, you earned the _Corrupted Dreadwing_ mount!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Flying Mounts\\Vendor Mounts\\Bridle of the Ironbound Wraithcharger",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Vendor Mounts\\Bridle of the Ironbound Wraithcharger",{
 keywords={"Bridle","of","the","Ironbound","Wraithcharger","ground","mount","vendor"},
 model={48946},
 condition_end="hasmount(142910)",
@@ -1693,7 +1693,7 @@ learnmount Bridle of the Ironbound Wraithcharger##142910
 step
 Congratulations, you earned the _Bridle of the Ironbound Wraithcharger_ mount!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Draenor Mounts\\\\Flying Mounts\\Vendor Mounts\\Reins of the Eclipse Dragonhawk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Vendor Mounts\\Reins of the Eclipse Dragonhawk",{
 keywords={"Reins","of","the","Eclipse","Dragonhawk","ground","mount","vendor"},
 model={27525},
 condition_end="hasmount(194464)",

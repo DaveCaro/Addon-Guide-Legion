@@ -9937,7 +9937,7 @@ ZygorGuidesViewer:RegisterInclude("H_Master_Angler_of_Azeroth",[[
 		Congratulations, you have _earned_ the _Master Angler of Azeroth_ achievement!
 ]])
 ZygorGuidesViewer:RegisterInclude("H_Grand_Master_Fisherman",[[
-		next "Profession Guides\\Fishing\\Fishing 1-600 Leveling Guide"
+		next "Profession Guides\\Fishing\\Leveling Guides\\Fishing 1-600 Leveling Guide"
 	step
 		Obtain 450 skill points in fishing |achieve 130
 	step

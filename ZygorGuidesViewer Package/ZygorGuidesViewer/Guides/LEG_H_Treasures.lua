@@ -4,7 +4,7 @@ if UnitFactionGroup("player")~="Horde" then return end
 
 ZygorGuidesViewer.GuideMenuTier = "LEG"
  
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\POI Legion Treasures",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\POI Legion Treasures",{
 	hidden=true,
 	poi=true,
 	poitype=treasure,
@@ -16,9 +16,9 @@ step //1
 	|poiquest 37980
 	|poiitem 131751
 	|poicurrency OR
-	Go up the stairs |goto Azsuna/0 58.24,16.06 < 8
-	Cross the bridge |goto 58.35,15.28 < 8
-	click Ley Portal |goto 58.69,14.13 < 5 |walk
+	Go up the stairs |goto Azsuna/0 58.24,16.06 < 8 |only if walking
+	Cross the bridge |goto 58.35,15.28 < 8 |only if walking
+	click Ley Portal |goto 58.69,14.13 < 5 |only if walking
 	click Treasure Chest##251751 |q 37980 |future |goto Azsuna 58.38,12.29
 step //2
 	|poi_treasure Treasure Chest
@@ -33,7 +33,7 @@ step //3
 	|poiquest 42289
 	|poiitem 138885
 	|poicurrency OR
-	Enter the cave |goto Azsuna 47.8,23.7 < 10
+	Enter the cave |goto Azsuna 47.8,23.7 < 10 |walk
 	click Treasure Chest##251751 |q 42289 |future |goto Azsuna 51.50,24.35
 	|tip It is all the way in the back of the cave.
 step //4
@@ -117,7 +117,7 @@ step //13
 	|poiquest 42283
 	|poicurrency OR
 	|poiitem 138783
-	Go up the stairs |goto Azsuna/0 51.60,44.63 < 10
+	Go up the stairs |goto Azsuna/0 51.60,44.63 < 10 |only if walking
 	click Small Treasure Chest##233107 |q 42283 |future |goto Azsuna 53.50,45.45
 step //14
 	|poi_treasure Small Treasure Chest
@@ -234,7 +234,7 @@ step //28
 	|poiquest 42272
 	|poicurrency OR
 	|poiitem 138783
-	Go up the path |goto Azsuna/0 59.42,61.98 < 10
+	Go up the path |goto Azsuna/0 59.42,61.98 < 10 |only if walking
 	click Small Treasure Chest##233107 |q 42272 |future |goto Azsuna 59.87,63.16
 step //29
 	|poi_treasure Seemingly Unguarded Treasure
@@ -356,9 +356,9 @@ step //44
 	|poiquest 42297
 	|poicurrency OR
 	|poiitem 138783
-	Follow the path |goto Azsuna 39.24,32.65 < 10
-	Continue up the mountain |goto Azsuna/0 37.21,30.67 < 10
-	Follow the path up the mountain |goto Azsuna/0 41.70,23.76 < 10
+	Follow the path |goto Azsuna 39.24,32.65 < 10 |only if walking
+	Continue up the mountain |goto Azsuna/0 37.21,30.67 < 10 |only if walking
+	Follow the path up the mountain |goto Azsuna/0 41.70,23.76 < 10 |only if walking
 	kill Felguard Sentinel##107168+
 	click Glimmering Treasure Chest##240637 |q 42297 |future |goto Azsuna 43.39,22.42
 	|tip The chest is guarded by two level 110 Elite Felguards.
@@ -434,7 +434,7 @@ step //53
 	|poiquest 39083
 	|poicurrency OR
 	|poiitem 138783
-	Jump to the tree from here |goto Val'sharah/0 44.81,61.49 < 5
+	Jump to the tree from here |goto Val'sharah/0 44.81,61.49 < 5 |only if walking
 	click Small Treasure Chest##233107 |q 39083 |future |goto Val'sharah 45.10,61.14
 	|tip It is up on the tree.
 step //54
@@ -561,8 +561,8 @@ step //69
 	|poiquest 39084
 	|poiitem 138783
 	|poicurrency OR
-	Cross the bridge to Black Rook Hold |goto Val'sharah/0 46.69,50.26 < 10
-	Follow the path |goto 44.29,50.67 < 6
+	Cross the bridge to Black Rook Hold |goto Val'sharah/0 46.69,50.26 < 10 |only if walking
+	Follow the path |goto 44.29,50.67 < 6 |only if walking
 	click Treasure Chest##251751 |q 39084 |future |goto Val'sharah 43.22,54.88
 step //70
 	|poi_treasure Small Treasure Chest
@@ -570,7 +570,7 @@ step //70
 	|poiquest 38369
 	|poicurrency OR
 	|poiitem 138783
-	Go up the stairs |goto Val'sharah/0 39.74,53.03 < 10
+	Go up the stairs |goto Val'sharah/0 39.74,53.03 < 10 |only if walking
 	click Small Treasure Chest##233107 |q 38369 |future |goto Val'sharah 39.94,54.60
 step //71
 	|poi_treasure Small Treasure Chest
@@ -579,11 +579,11 @@ step //71
 	|poiquest 39085
 	|poicurrency OR
 	|poiitem 138783
-	Go up the stairs |goto Val'sharah/0 39.47,51.35 < 10
-	Cross the bridge |goto 41.72,50.43 < 10
-	Follow the path |goto 44.30,49.98 < 10
-	Enter the Darkpens |goto 41.42,45.59 < 5
-	Jump down to the water below |goto 40.56,44.97 < 5
+	Go up the stairs |goto Val'sharah/0 39.47,51.35 < 10 |only if walking
+	Cross the bridge |goto 41.72,50.43 < 10 |only if walking
+	Follow the path |goto 44.30,49.98 < 10 |only if walking
+	Enter the Darkpens |goto 41.42,45.59 < 5 |walk
+	Jump down to the water below |goto 40.56,44.97 < 5 |walk
 	click Small Treasure Chest##233107 |q 39085 |future |goto Val'sharah/13 41.97,88.20
 	|tip It is in the water at the bottom of the tower staircase.
 step //72
@@ -593,10 +593,10 @@ step //72
 	|poiquest 39086
 	|poicurrency OR
 	|poiitem 138783
-	Enter the Darkpens |goto 41.42,45.59 < 5
-	Jump down to the water below |goto 40.56,44.97 < 5
-	Go through the doorway |goto Val'sharah/13 45.70,78.55 < 5
-	Go up the stairs |goto 39.53,43.80 < 5
+	Enter the Darkpens |goto 41.42,45.59 < 5 |walk
+	Jump down to the water below |goto 40.56,44.97 < 5 |walk
+	Go through the doorway |goto Val'sharah/13 45.70,78.55 < 5 |walk
+	Go up the stairs |goto 39.53,43.80 < 5 |walk
 	click Glimmering Treasure Chest##240637 |q 39086 |future |goto Val'sharah/13 51.07,52.05
 step //73
 	|poi_treasure Unguarded Thistlemaw Treasure
@@ -883,7 +883,7 @@ step //106
 	|poispot Highmountain 49.63,37.75
 	|poiquest 39466
 	|poiitem 131927
-	Follow the path |goto Highmountain/0 49.49,36.84 < 10
+	Follow the path |goto Highmountain/0 49.49,36.84 < 10 |only if walking
 	click Treasure Chest##251751 |q 39466 |future |goto Highmountain 49.63,37.75
 step //107
 	|poi_treasure Small Treasure Chest
@@ -891,7 +891,7 @@ step //107
 	|poiquest 40480
 	|poicurrency OR
 	|poiitem 138783
-	Run across the tree trunk |goto Highmountain/0 42.01,34.69 < 10
+	Run across the tree trunk |goto Highmountain/0 42.01,34.69 < 10 |only if walking
 	click Small Treasure Chest##233107 |q 40480 |future |goto Highmountain 42.49,35.03
 step //108
 	|poi_treasure Small Treasure Chest
@@ -899,7 +899,7 @@ step //108
 	|poiquest 40477
 	|poicurrency OR
 	|poiitem 138783
-	Follow the path through the camp |goto Highmountain/0 39.46,35.03 < 10
+	Follow the path through the camp |goto Highmountain/0 39.46,35.03 < 10 |only if walking
 	click Small Treasure Chest##233107 |q 40477 |future |goto Highmountain 37.35,33.81
 step //109
 	|poi_treasure Small Treasure Chest
@@ -937,7 +937,7 @@ step //112
 	|poiquest 40510
 	|poicurrency OR
 	|poiitem 138783
-	Go up the path |goto Highmountain/0 41.94,70.97 < 10
+	Go up the path |goto Highmountain/0 41.94,70.97 < 10 |only if walking
 	click Small Treasure Chest##233107 |q 40510 |future |goto Highmountain 43.75,72.75
 step //113
 	|poi_treasure Treasure Chest
@@ -961,8 +961,8 @@ step //115
 	|poiquest 39766
 	|poiitem 131802
 	|poicurrency OR
-	Follow the path |goto Highmountain/0 53.13,55.78 < 10
-	Continue up the narrow path |goto Highmountain/0 53.56,53.39 < 5
+	Follow the path |goto Highmountain/0 53.13,55.78 < 10 |only if walking
+	Continue up the narrow path |goto Highmountain/0 53.56,53.39 < 5 |only if walking
 	click Totally Safe Treasure Chest##244429
 	kill Ram'Pag##97102
 	click Actually Safe Treasure Chest##3365 |q 39766 |future |goto Highmountain 52.30,51.41
@@ -987,9 +987,9 @@ step //118
 	|poiquest 40482
 	|poicurrency OR
 	|poiitem 138783
-	Go up the path |goto Highmountain/0 46.34,24.98 < 10
-	Cross the bridge |goto 47.21,25.09 < 10
-	Jump up the rocks |goto 47.59,27.47 < 5
+	Go up the path |goto Highmountain/0 46.34,24.98 < 10 |only if walking
+	Cross the bridge |goto 47.21,25.09 < 10 |only if walking
+	Jump up the rocks |goto 47.59,27.47 < 5 |only if walking
 	click Glimmering Treasure Chest##240637 |q 40482 |future |goto Highmountain 46.68,28.10
 step //119
 	|poi_treasure Treasure Chest
@@ -1017,8 +1017,8 @@ step //121
 	|poiquest 40506
 	|poicurrency OR
 	|poiitem 138783
-	Follow the path up |goto Highmountain/0 51.94,34.09 < 10
-	Reach the top |goto 49.66,35.55 < 5
+	Follow the path up |goto Highmountain/0 51.94,34.09 < 10 |only if walking
+	Reach the top |goto 49.66,35.55 < 5 |only if walking
 	click Small Treasure Chest##233107 |q 40506 |future |goto Highmountain 50.81,35.04
 step //122
 	|poi_treasure Small Treasure Chest
@@ -1034,7 +1034,7 @@ step //123
 	|poiquest 39503
 	|poiitem 131926
 	|poicurrency OR
-	Go up the path |goto Highmountain/0 47.38,44.59 < 10
+	Go up the path |goto Highmountain/0 47.38,44.59 < 10 |only if walking
 	click Treasure Chest##251751 |q 39503 |future |goto Highmountain 47.64,44.06
 step //124
 	|poi_treasure Treasure Chest
@@ -1043,8 +1043,8 @@ step //124
 	|poiquest 39824
 	|poiitem 131810
 	|poicurrency OR
-	Follow the path along the mountain |goto Highmountain/0 55.34,52.70 < 10
-	Jump onto the rock and branch below |goto Highmountain 53.48,51.38 < 5
+	Follow the path along the mountain |goto Highmountain/0 55.34,52.70 < 10 |only if walking
+	Jump onto the rock and branch below |goto Highmountain 53.48,51.38 < 5 |only if walking
 	click Treasure Chest##251751 |q 39824 |future |goto Highmountain 53.61,51.03
 step //125
 	|poi_treasure Whitewater Wash Treasure
@@ -1060,8 +1060,8 @@ step //126
 	|poiquest 39471
 	|poiitem 138783
 	|poicurrency OR
-	Go up the hill |goto Highmountain/0 53.11,48.14 < 10
-	Follow the narrow path along the mountain |goto 50.62,51.71 < 5
+	Go up the hill |goto Highmountain/0 53.11,48.14 < 10 |only if walking
+	Follow the narrow path along the mountain |goto 50.62,51.71 < 5 |only if walking
 	click Glimmering Treasure Chest##3365 |q 39471 |future |goto Highmountain 51.17,53.05
 step //127
 	|poi_treasure Treasure Chest
@@ -1109,7 +1109,7 @@ step //132
 	|poiquest 40472
 	|poicurrency OR
 	|poiitem 138783
-	Cross the bridge |goto Thunder Totem/0 57.77,67.65 < 10
+	Cross the bridge |goto Thunder Totem/0 57.77,67.65 < 10 |only if walking
 	click Small Treasure Chest##233107 |q 40472 |future |goto Thunder Totem/0 50.66,75.30
 step //133
 	|poi_treasure Thunder Totem Stolen Goods
@@ -1117,7 +1117,7 @@ step //133
 	|poiquest 40475
 	|poicurrency OR
 	|poiitem 138783
-	Follow the road north |goto Highmountain/0 47.86,52.92 < 10
+	Follow the road north |goto Highmountain/0 47.86,52.92 < 10 |only if walking
 	Enter the cave |goto Highmountain/0 48.66,50.01 < 10 |walk
 	click Thunder Totem Stolen Goods##244473 |q 40475 |future |goto Highmountain 49.20,49.78
 	|tip You must have the BeastMaster Pao'lek quest in your log or have already completed it to get this treasure.
@@ -1155,7 +1155,7 @@ step //137
 	|poiquest 38676
 	|poiitem 138783
 	|poicurrency OR
-	Cross the bridge |goto Stormheim/0 31.72,54.78 < 10
+	Cross the bridge |goto Stormheim/0 31.72,54.78 < 10 |only if walking
 	click Small Treasure Chest##233107 |q 38676 |future |goto Stormheim 31.10,56.00
 	|tip It is on the first floor of the wrecked ship.
 step //138
@@ -1164,7 +1164,7 @@ step //138
 	|poiquest 38529
 	|poiitem 138783
 	|poicurrency OR
-	Cross the bridge and up the crashed ship |goto Stormheim/0 31.74,54.65 < 10
+	Cross the bridge and up the crashed ship |goto Stormheim/0 31.74,54.65 < 10 |only if walking
 	Enter the cave |goto Stormheim 31.4,57.1 < 10 |walk
 	Follow the path around |goto Stormheim/9 28.79,33.52 < 10 |walk
 	click Treasure Chest##251751 |q 38529 |future |goto Stormheim/9 20.04,41.07
@@ -1174,9 +1174,9 @@ step //139
 	|poiquest 43196
 	|poiitem 138783
 	|poicurrency OR
-	Go up the hill |goto Stormheim/0 34.72,45.74 < 10
-	Continue up the path |goto 33.31,47.62 < 10
-	Enter the cave |goto 32.75,47.96 < 10 |walk
+	Go up the hill |goto Stormheim/0 34.72,45.74 < 10 |only if walking
+	Continue up the path |goto 33.31,47.62 < 10 |only if walking
+	Enter the cave |goto 32.75,47.96 < 10 |walk 
 	click Treasure Chest##251751 |q 43196 |future |goto Stormheim 32.05,47.19
 step //140
 	|poi_treasure Small Treasure Chest
@@ -1216,11 +1216,11 @@ step //144
 	|poiitem 138783
 	|poicurrency OR
 	Reach the bridge |goto Stormheim/0 44.84,77.82 < 5 |only if walking
-	click Grapple Points
-	|tip It's across the chasm.
-	Grapple across the Broken Bridge |goto 45.21,78.82 < 5
-	Grapple up the first rock |goto Stormheim/0 46.54,79.35 < 5
-	Grapple to the second rock |goto 46.91,80.39 < 5
+	click Grapple Points |only if walking
+	|tip It's across the chasm. |only if walking
+	Grapple across the Broken Bridge |goto 45.21,78.82 < 5 |only if walking
+	Grapple up the first rock |goto Stormheim/0 46.54,79.35 < 5 |only if walking
+	Grapple to the second rock |goto 46.91,80.39 < 5 |only if walking
 	click Treasure Chest##251751 |q 38481 |future |goto Stormheim 46.76,80.40
 	|tip It is up on a high rock ledge.
 step //145
@@ -1262,8 +1262,8 @@ step //149
 	|poiquest 38637
 	|poicurrency OR
 	|poiitem 138783
-	click Grapple Point
-	Grapple up the rock |goto Stormheim/0 69.34,44.96 < 5
+	click Grapple Point |only if walking
+	Grapple up the rock |goto Stormheim/0 69.34,44.96 < 5 |only if walking
 	click Small Treasure Chest##233107 |q 38637 |future |goto Stormheim 69.14,44.78
 step //150
 	|poi_treasure Small Treasure Chest
@@ -1294,9 +1294,9 @@ step //153
 	|poiquest 38485
 	|poicurrency OR
 	|poiitem 138783
-	Walk to the edge of the cliff |goto Stormheim/0 49.28,77.09 < 5
-	click Grapple Point
-	Grapple to the ledge |goto Stormheim/0 49.78,77.85 < 5
+	Walk to the edge of the cliff |goto Stormheim/0 49.28,77.09 < 5 |only if walking
+	click Grapple Point |only if walking
+	Grapple to the ledge |goto Stormheim/0 49.78,77.85 < 5 |only if walking
 	click Small Treasure Chest##233107 |q 38485 |future |goto Stormheim 49.77,78.01
 step //154
 	|poi_treasure Small Treasure Chest
@@ -1311,9 +1311,9 @@ step //155
 	|poiquest 38480
 	|poicurrency OR
 	|poiitem 138783
-	Go up the hill |goto Stormheim/0 54.08,85.59 < 10
-	Follow the rock path |goto 53.54,83.37 < 10
-	Pass through the gap here |goto 53.01,82.18 < 10
+	Go up the hill |goto Stormheim/0 54.08,85.59 < 10 |only if walking
+	Follow the rock path |goto 53.54,83.37 < 10 |only if walking
+	Pass through the gap here |goto 53.01,82.18 < 10 |only if walking
 	click Small Treasure Chest##233107 |q 38480 |future |goto Stormheim 52.01,80.58
 step //156
 	|poi_treasure Small Treasure Chest
@@ -1386,10 +1386,10 @@ step //164
 	|poiquest 43238
 	|poicurrency OR
 	|poiitem 138783
-	Follow the path up and around |goto Stormheim/0 42.03,39.67 < 10
-	Jump down to the rock below |goto 43.34,39.11 < 5
-	click Grapple Point
-	Grapple to the rock ledge |goto 43.23,40.51 < 5
+	Follow the path up and around |goto Stormheim/0 42.03,39.67 < 10 |only if walking
+	Jump down to the rock below |goto 43.34,39.11 < 5 |only if walking
+	click Grapple Point |only if walking
+	Grapple to the rock ledge |goto 43.23,40.51 < 5 |only if walking
 	click Small Treasure Chest##233107 |q 43238 |future |goto Stormheim 43.16,40.49
 step //165
 	|poi_treasure Small Treasure Chest
@@ -1397,9 +1397,9 @@ step //165
 	|poiquest 43240
 	|poicurrency OR
 	|poiitem 138783
-	click Grapple Points
-	Grapple to the first rock |goto Stormheim/0 44.26,37.94 < 5
-	Grapple up to the second rock |goto 44.80,37.91 < 5
+	click Grapple Points |only if walking
+	Grapple to the first rock |goto Stormheim/0 44.26,37.94 < 5 |only if walking
+	Grapple up to the second rock |goto 44.80,37.91 < 5 |only if walking
 	click Small Treasure Chest##233107 |q 43240 |future |goto Stormheim 44.98,38.23
 step //166
 	|poi_treasure Small Treasure Chest
@@ -1408,12 +1408,12 @@ step //166
 	|poiquest 43255
 	|poicurrency OR
 	|poiitem 138783
-	Go up the path |goto Stormheim/0 44.18,31.39 < 10
-	click Grapple Points
-	Grapple up the ledge |goto 45.68,32.90 < 5
-	Grapple to the second rock |goto 46.29,33.12 < 5
-	Grapple up the third rock |goto 46.49,34.09 < 5
-	Grapple across |goto 47.40,34.08 < 5
+	Go up the path |goto Stormheim/0 44.18,31.39 < 10 |only if walking
+	click Grapple Points |only if walking
+	Grapple up the ledge |goto 45.68,32.90 < 5 |only if walking
+	Grapple to the second rock |goto 46.29,33.12 < 5 |only if walking
+	Grapple up the third rock |goto 46.49,34.09 < 5 |only if walking
+	Grapple across |goto 47.40,34.08 < 5 |only if walking
 	click Treasure Chest##3365 |q 43255 |future |goto Stormheim 47.46,34.12
 step //167
 	|poi_treasure Treasure Chest
@@ -1421,9 +1421,9 @@ step //167
 	|poiquest 43189
 	|poiitem 141896
 	|poicurrency OR
-	Jump up the rocks |goto Stormheim/0 42.13,35.66 < 10
-	Enter the statue |goto Stormheim 42.24,34.87 < 5
-	Go up the tower |goto Stormheim/0 42.65,33.66 < 5
+	Jump up the rocks |goto Stormheim/0 42.13,35.66 < 10 |only if walking
+	Enter the statue |goto Stormheim 42.24,34.87 < 5 |walk
+	Go up the tower |goto Stormheim/0 42.65,33.66 < 5 |Walk
 	click Glimmering Treasure Chest##3365 |q 43189 |future |goto Stormheim 42.47,34.07
 step //168
 	|poi_treasure Small Treasure Chest
@@ -1448,12 +1448,12 @@ step //170
 	|poiquest 40108
 	|poiitem 138783
 	|poicurrency OR
-	click Grapple Point |goto Stormheim/0 68.67,20.17 < 5
-	Reach the top of the hill |goto 69.81,21.17 < 10
-	Grapple across |goto Stormheim/0 69.96,22.38 < 5
-	Grapple up the first rock |goto 69.78,23.08 < 5
-	Grapple to the second rock |goto 69.43,23.08 < 5
-	Carefully cross the small bridge |goto Stormheim/0 68.72,29.24 < 5
+	click Grapple Point |goto Stormheim/0 68.67,20.17 < 5 |only if walking
+	Reach the top of the hill |goto 69.81,21.17 < 10 |only if walking
+	Grapple across |goto Stormheim/0 69.96,22.38 < 5 |only if walking
+	Grapple up the first rock |goto 69.78,23.08 < 5 |only if walking
+	Grapple to the second rock |goto 69.43,23.08 < 5 |only if walking
+	Carefully cross the small bridge |goto Stormheim/0 68.72,29.24 < 5 |only if walking
 	click Glimmering Treasure Chest##3365 |q 40108 |future |goto Stormheim 68.46,29.59
 step //171
 	|poi_treasure Small Treasure Chest
@@ -1461,7 +1461,7 @@ step //171
 	|poiquest 40082
 	|poicurrency OR
 	|poiitem 138783
-	Enter the tower |goto Stormheim/0 58.16,47.55 < 5
+	Enter the tower |goto Stormheim/0 58.16,47.55 < 5 |walk
 	click Small Treasure Chest##233107 |q 40082 |future |goto Stormheim 58.04,47.51
 	|tip It is at the top of the tower.
 step //172
@@ -1470,7 +1470,7 @@ step //172
 	|poiquest 43302
 	|poicurrency OR
 	|poiitem 138783
-	Follow the narrow path |goto Stormheim/0 64.22,41.63 < 5
+	Follow the narrow path |goto Stormheim/0 64.22,41.63 < 5 |only if walking
 	click Small Treasure Chest##233107 |q 43302 |future |goto Stormheim 64.29,39.56
 step //173
 	|poi_treasure Small Treasure Chest
@@ -1487,7 +1487,7 @@ step //174
 	|poiquest 43306
 	|poicurrency OR
 	|poiitem 138783
-	click Grapple Point |goto Stormheim/0 74.12,42.43 < 5
+	click Grapple Point |goto Stormheim/0 74.12,42.43 < 5 |only if walking
 	click Small Treasure Chest##233107 |q 43306 |future |goto Stormheim 74.41,41.82
 step //175
 	|poi_treasure Small Treasure Chest
@@ -1495,8 +1495,8 @@ step //175
 	|poiquest 43305
 	|poicurrency OR
 	|poiitem 138783
-	click Grapple Point |goto Stormheim/0 72.24,43.75 < 5
-	Grapple to the second point |goto 71.91,44.07 < 5
+	click Grapple Point |goto Stormheim/0 72.24,43.75 < 5 |only if walking
+	Grapple to the second point |goto 71.91,44.07 < 5 |only if walking
 	click Small Treasure Chest##233107 |q 43305 |future |goto Stormheim 71.92,44.25
 step //176
 	|poi_treasure Small Treasure Chest
@@ -1512,9 +1512,9 @@ step //177
 	|poiquest 42632
 	|poicurrency OR
 	|poiitem 138783
-	click Grapple Point |goto Stormheim/0 74.47,52.76 < 5
-	|tip It is up on the rock.
-	Grapple to the next rock |goto 73.97,52.17 < 5
+	click Grapple Point |goto Stormheim/0 74.47,52.76 < 5 |only if walking
+	|tip It is up on the rock. |only if walking
+	Grapple to the next rock |goto 73.97,52.17 < 5 |only if walking
 	click Small Treasure Chest##233107 |q 42632 |future |goto Stormheim 73.96,52.23
 step //178
 	|poi_treasure Treasure Chest
@@ -1522,8 +1522,8 @@ step //178
 	|poiquest 42629
 	|poiitem 138783
 	|poicurrency OR
-	click Grapple Point |goto Stormheim/0 75.15,49.78 < 5
-	Grapple to the top of the mast |goto Stormheim/0 75.18,49.52 < 5
+	click Grapple Point |goto Stormheim/0 75.15,49.78 < 5 |only if walking
+	Grapple to the top of the mast |goto Stormheim/0 75.18,49.52 < 5 |only if walking
 	|tip It is all the way at the top of the sail.
 	click Treasure Chest##251751 |q 42629 |future |goto Stormheim 75.16,49.49
 step //179
@@ -1539,7 +1539,7 @@ step //180
 	|poiquest 43304
 	|poicurrency OR
 	|poiitem 138783
-	click Grapple Point |goto Stormheim/0 75.59,60.56 < 5
+	click Grapple Point |goto Stormheim/0 75.59,60.56 < 5 |only if walking
 	click Small Treasure Chest##233107 |q 43304 |future |goto Stormheim 75.67,60.60
 step //181
 	|poi_treasure Small Treasure Chest
@@ -1563,7 +1563,7 @@ step //183
 	|poiquest 43188
 	|poicurrency OR
 	|poiitem 138783
-	Cross the bridge |goto Stormheim/0 64.34,60.37 < 10
+	Cross the bridge |goto Stormheim/0 64.34,60.37 < 10 |only if walking
 	click Small Treasure Chest##233107 |q 43188 |future |goto Stormheim 69.98,67.19
 step //184
 	|poi_treasure Treasure Chest
@@ -1580,14 +1580,14 @@ step //185
 	|poiquest 43307
 	|poiitem 138783
 	|poicurrency OR
-	click Grapple Point |goto Stormheim/0 75.83,64.23 < 5
-	click Grapple Point |goto 76.05,65.05 < 5
-	click Grapple Point |goto 76.91,66.17 < 5
-	click Grapple Point |goto 77.25,67.18 < 5
-	Jump down to the lower rock |goto 77.33,68.16 < 5
-	click Grapple Point |goto 77.12,69.29 < 5
-	Run up the rocks |goto 77.75,69.86 < 5
-	click Grapple Point |goto 78.57,70.33 < 5
+	click Grapple Point |goto Stormheim/0 75.83,64.23 < 5 |only if walking
+	click Grapple Point |goto 76.05,65.05 < 5 |only if walking
+	click Grapple Point |goto 76.91,66.17 < 5 |only if walking
+	click Grapple Point |goto 77.25,67.18 < 5 |only if walking
+	Jump down to the lower rock |goto 77.33,68.16 < 5 |only if walking
+	click Grapple Point |goto 77.12,69.29 < 5 |only if walking
+	Run up the rocks |goto 77.75,69.86 < 5 |only if walking
+	click Grapple Point |goto 78.57,70.33 < 5 |only if walking
 	click Treasure Chest##251751 |q 43307 |future |goto Stormheim 78.42,71.38
 step //186
 	|poi_treasure Small Treasure Chest
@@ -1595,10 +1595,10 @@ step //186
 	|poiquest 43246
 	|poicurrency OR
 	|poiitem 138783
-	click Grapple Point |goto Stormheim/0 48.89,40.92 < 5
-	click Grapple Point |goto 49.52,40.96 < 5
-	click Grapple Point |goto 50.14,40.77 < 5
-	click Grapple Point |goto 50.43,41.25 < 5
+	click Grapple Point |goto Stormheim/0 48.89,40.92 < 5 |only if walking
+	click Grapple Point |goto 49.52,40.96 < 5 |only if walking
+	click Grapple Point |goto 50.14,40.77 < 5 |only if walking
+	click Grapple Point |goto 50.43,41.25 < 5 |only if walking
 	click Small Treasure Chest##233107 |q 43246 |future |goto Stormheim 50.55,41.25
 step //187
 	|poi_treasure Treasure Chest
@@ -1623,8 +1623,8 @@ step //189
 	|poiquest 38475
 	|poicurrency OR
 	|poiitem 138783
-	click Grapple Point |goto Stormheim/0 39.73,67.42 < 5
-	click Grapple Point |goto 40.32,67.84 < 5
+	click Grapple Point |goto Stormheim/0 39.73,67.42 < 5 |only if walking
+	click Grapple Point |goto 40.32,67.84 < 5 |only if walking
 	click Small Treasure Chest##233107 |q 38475 |future |goto Stormheim 40.65,68.52
 step //190
 	|poi_treasure Small Treasure Chest
@@ -1632,7 +1632,7 @@ step //190
 	|poiquest 38489
 	|poicurrency OR
 	|poiitem 138783
-	click Grapple Point |goto Stormheim/0 44.00,70.12 < 5
+	click Grapple Point |goto Stormheim/0 44.00,70.12 < 5 |only if walking
 	|tip It is on top of this building.
 	click Small Treasure Chest##233107 |q 38489 |future |goto Stormheim 44.16,69.97
 step //191
@@ -1641,9 +1641,9 @@ step //191
 	|poiquest 43239
 	|poicurrency OR
 	|poiitem 138783
-	click Grapple Point |goto Stormheim/0 43.77,80.58 < 5
-	click Grapple Point |goto 43.14,80.46 < 5
-	click Grapple Point |goto 43.54,80.20 < 5
+	click Grapple Point |goto Stormheim/0 43.77,80.58 < 5 |only if walking
+	click Grapple Point |goto 43.14,80.46 < 5 |only if walking
+	click Grapple Point |goto 43.54,80.20 < 5 |only if walking
 	click Small Treasure Chest##233107 |q 43239 |future |goto Stormheim 43.70,80.09
 step //192
 	|poi_treasure Small Treasure Chest
@@ -1771,7 +1771,7 @@ step //206
 	|poiquest 43850
 	|poiitem 138783
 	|poicurrency OR
-	Go up the path |goto Suramar/0 45.40,26.69 < 10
+	Go up the path |goto Suramar/0 45.40,26.69 < 10 |only if walking
 	click Treasure Chest##251751 |q 43850 |future |goto Suramar 44.30,22.89
 step //207
 	|poi_treasure Small Treasure Chest
@@ -1804,7 +1804,7 @@ step //210
 	|poiquest 43844
 	|poiitem 138783
 	|poicurrency OR
-	Go up the stairs |goto Suramar/0 16.94,54.44 < 5
+	Go up the stairs |goto Suramar/0 16.94,54.44 < 5 |only if walking
 	click Treasure Chest##251751 |q 43844 |future |goto Suramar 17.27,54.62
 step //211
 	|poi_treasure Glimmering Treasure Chest
@@ -1823,9 +1823,9 @@ step //212
 	|poiitem 138783
 	|poicurrency OR
 	|poicurrency AM
-	Go up the stairs |goto Suramar/0 31.31,18.80 < 10
-	Go up the stairs |goto 32.16,21.86 < 10
-	Cross the bridge |goto 32.82,17.97 < 10
+	Go up the stairs |goto Suramar/0 31.31,18.80 < 10 |only if walking
+	Go up the stairs |goto 32.16,21.86 < 10 |only if walking
+	Cross the bridge |goto 32.82,17.97 < 10 |only if walking
 	Enter the tower |goto 30.48,15.94 < 10 |walk
 	click Treasure Chest##251751 |q 43848 |future |goto Suramar 29.27,16.22
 step //213
@@ -1834,7 +1834,7 @@ step //213
 	|poispot Suramar 35.56,12.09
 	|poiquest 43989
 	|poiitem 140329
-	Go up the stairs |goto Suramar/0 31.11,9.12 < 10
+	Go up the stairs |goto Suramar/0 31.11,9.12 < 10 |only if walking
 	click Arcane Power Unit##254023
 	use Infinite Stone##140329 |q 43989 |future |goto Suramar 35.56,12.09
 step //214
@@ -1843,8 +1843,8 @@ step //214
 	|poispot Suramar 41.96,19.19
 	|poiquest 43746
 	|poiitem 139786
-	Go up the stairs |goto Suramar/0 31.11,9.12 < 10
-	Cross the bridge |goto Suramar/0 36.70,12.59 < 10
+	Go up the stairs |goto Suramar/0 31.11,9.12 < 10 |only if walking
+	Cross the bridge |goto Suramar/0 36.70,12.59 < 10 |only if walking
 	click Shimmering Ancient Mana Cluster##252432 |q 43746 |future |goto Suramar 41.96,19.19
 step //215
 	|poi_treasure Glimmering Treasure Chest
@@ -1853,11 +1853,11 @@ step //215
 	|poiquest 43849
 	|poicurrency OR
 	|poiitem 139786
-	Go up the stairs |goto Suramar/0 31.11,9.12 < 10
-	Cross the bridge |goto Suramar/0 36.70,12.59 < 10
-	Jump up the rocks |goto Suramar/0 41.24,21.37 < 5
-	Go up the path |goto 41.57,21.22 < 5
-	Jump up here |goto 42.35,20.93 < 5
+	Go up the stairs |goto Suramar/0 31.11,9.12 < 10 |only if walking
+	Cross the bridge |goto Suramar/0 36.70,12.59 < 10 |only if walking
+	Jump up the rocks |goto Suramar/0 41.24,21.37 < 5 |only if walking
+	Go up the path |goto 41.57,21.22 < 5 |only if walking
+	Jump up here |goto 42.35,20.93 < 5 |only if walking
 	click Glimmering Treasure Chest##240637 |q 43849 |future |goto Suramar 42.48,20.48
 step //216
 	|poi_treasure Small Treasure Chest
@@ -1933,7 +1933,7 @@ step //225
 	|poispot Suramar 57.32,60.39
 	|poiquest 43873
 	|poiitem 138783
-	Go up the stairs |goto Suramar/0 56.86,57.85 < 10
+	Go up the stairs |goto Suramar/0 56.86,57.85 < 10 |only if walking
 	click Treasure Chest##251751 |q 43873 |future |goto Suramar 57.32,60.39
 step //226
 	|poi_treasure Glimmering Treasure Chest
@@ -1951,8 +1951,8 @@ step //227
 	|poiquest 43864
 	|poicurrency OR
 	|poiitem 138783
-	Reach this spot |goto Suramar/0 50.23,83.98 < 10
-	click Grapple Point |goto Suramar 50.06,84.46 < 5
+	Reach this spot |goto Suramar/0 50.23,83.98 < 10 |only if walking
+	click Grapple Point |goto Suramar 50.06,84.46 < 5 |only if walking
 	|tip It is up on top of the building.
 	click Small Treasure Chest##233107 |q 43864 |future |goto Suramar 49.98,84.93
 step //228
@@ -1961,7 +1961,7 @@ step //228
 	|poiquest 43865
 	|poicurrency OR
 	|poiitem 138783
-	click Grapple Point |goto Suramar/0 48.50,73.27 < 5
+	click Grapple Point |goto Suramar/0 48.50,73.27 < 5 |only if walking
 	|tip It is up on top of the building.
 	click Small Treasure Chest##233107 |q 43865 |future |goto Suramar 48.11,73.21
 step //229
@@ -1971,7 +1971,7 @@ step //229
 	|poicurrency OR
 	|poiitem 138783
 	|poicurrency AM
-	click Grapple Point |goto Suramar 48.39,82.23 < 5
+	click Grapple Point |goto Suramar 48.39,82.23 < 5 |only if walking
 	|tip It is up on top of the building.
 	click Small Treasure Chest##233107 |q 43866 |future |goto Suramar 48.28,82.61
 step //230
@@ -2006,7 +2006,7 @@ step //233
 	|poiquest 43870
 	|poicurrency OR
 	|poiitem 138783
-	Follow the path |goto Suramar/0 39.75,69.76 < 10
+	Follow the path |goto Suramar/0 39.75,69.76 < 10 |only if walking
 	Enter the building |goto 42.45,76.48 < 5 |walk
 	Go up the stairs |goto 42.64,76.92 < 5 |walk
 	click Small Treasure Chest##233107 |q 43870 |future |goto Suramar 42.57,76.68
@@ -2047,8 +2047,8 @@ step //237
 	|poiquest 43871
 	|poicurrency OR
 	|poiitem 138783
-	Go up the stairs |goto Suramar/0 53.77,52.13 < 5
-	Cross the bridges |goto 49.97,53.78 < 10
+	Go up the stairs |goto Suramar/0 53.77,52.13 < 5 |only if walking
+	Cross the bridges |goto 49.97,53.78 < 10 |only if walking
 	click Small Treasure Chest##233107 |q 43871 |future |goto Suramar 55.68,54.80
 step //238
 	|poi_treasure Small Treasure Chest
@@ -2069,7 +2069,7 @@ step //239
 	|poispot Suramar 26.87,70.73
 	|poiquest 43987
 	|poiitem 140327
-	Follow the path |goto Suramar/0 28.97,72.16 < 10
+	Follow the path |goto Suramar/0 28.97,72.16 < 10 |only if walking
 	Enter the cave |goto Suramar 27.29,72.87 < 10 |walk
 	click Kyrtos's Research Notes##254008
 	use Kyrtos's Research Notes##140327 |q 43987 |future |goto Suramar 26.87,70.73
@@ -2111,7 +2111,7 @@ step //243
 	|poiquest 43857
 	|poicurrency OR
 	|poiitem 138783
-	Enter the cave |goto Suramar/0 63.52,49.08 < 5 |only if walking
+	Enter the cave |goto Suramar/0 63.52,49.08 < 5 |walk
 	click Small Treasure Chest##233107 |q 43857 |future |goto 63.03,49.12
 step //244
 	|poi_treasure Small Treasure Chest
@@ -2127,7 +2127,7 @@ step //245
 	|poispot Suramar 32.27,77.08
 	|poiquest 43834
 	|poiitem 138783
-	Go up the ramp |goto Suramar/0 31.38,83.79 < 10
+	Go up the ramp |goto Suramar/0 31.38,83.79 < 10 |only if walking
 	click Legion Portal |goto Suramar 31.0,85.1 < 5 |walk
 	click Treasure Chest##251751 |q 43834 |future |goto Suramar 32.27,77.08
 	only if completedq(40412)
